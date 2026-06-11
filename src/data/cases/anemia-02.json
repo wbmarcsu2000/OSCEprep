@@ -1,0 +1,591 @@
+{
+  "id": "anemia-02",
+  "category": "Anemia",
+  "difficulty": "moderate",
+  "title": "Dizziness with black tarry stools",
+  "diagnosis": "Acute upper GI bleed",
+  "chart": {
+    "ageSex": "60M",
+    "cc": "Dizziness and black stools",
+    "oneLiner": "60M presents with lightheadedness, fatigue, and several days of black tarry stools; he takes daily NSAIDs and drinks alcohol regularly.",
+    "vitals": {
+      "BP": "104/66",
+      "HR": "110",
+      "RR": "18",
+      "Temp": "36.9°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've been dizzy and worn out, and my stools have turned black.",
+  "patientFile": "PERSONA: 60-year-old man, pale, mildly tachycardic, fatigued. Good historian once asked.\n\nHPI: Several days of BLACK, TARRY stools (melena) and worsening fatigue/lightheadedness. Epigastric burning pain for weeks (only if asked). One episode of coffee-ground emesis (only if asked). Takes ibuprofen daily for back pain; drinks 4–5 beers most nights. NO bright red blood per rectum, NO weight loss mentioned.\nPMH: osteoarthritis, hypertension. MEDS: daily ibuprofen, occasional antacids. SOCIAL: regular alcohol, former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, fatigued, mild distress.\n- Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked.\n- Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).\n- STOOL (documented on chart/nursing): melena (black, tarry stool) — surfaced in the diagnostic results; no sensitive exam is required. Conjunctival pallor if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the NSAID/alcohol use, epigastric pain, or coffee-ground emesis unless asked about medications/alcohol, abdominal symptoms, or vomiting.\n- The melena finding is provided in the diagnostic results (stool evaluation) and does NOT require a student-performed sensitive exam.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 8.0 (may be falsely reassuring early), MCV normal, Plt 250.",
+      "BMP": "BUN 44, Cr 1.0 — elevated BUN:Cr ratio supports an upper GI source.",
+      "Coags": "INR normal (not anticoagulated).",
+      "LFTs": "Normal (argues against variceal source from cirrhosis).",
+      "TypeCross": "Type and crossmatch sent.",
+      "StoolEvaluation": "Melena (black, tarry stool) is documented on the chart — consistent with an upper GI source. Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Right axis deviation, dominant R in V1, right atrial enlargement (peaked P).",
+      "verify": "Source a study matching: Right axis deviation, dominant R in V1, right atrial enlargement (peaked P). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing right ventricular hypertrophy",
+      "searchTerms": [
+        "right ventricular hypertrophy ECG",
+        "RVH dominant R V1"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Short horizontal peripheral septal (Kerley B) lines at the bases with mild interstitial prominence.",
+      "verify": "Source a study matching: Short horizontal peripheral septal (Kerley B) lines at the bases with mild interstitial prominence. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing Kerley B lines",
+      "searchTerms": [
+        "Kerley B lines chest x-ray",
+        "septal lines interstitial edema radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Coags",
+    "LFTs",
+    "TypeCross",
+    "ekg",
+    "cxr",
+    "StoolEvaluation"
+  ],
+  "essential": [
+    "CBC",
+    "BMP",
+    "StoolEvaluation"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Acute upper GI bleed — peptic ulcer (leading & CANT-MISS,8). Variceal bleed (CANT-MISS,4). Gastritis/erosions (core,3). Malignancy (CANT-MISS to consider,3). Lower GI source (core,2). Connects melena + elevated BUN:Cr + NSAID/alcohol to an upper GI source (core,5).",
+      "idealAnswer": "Leading diagnosis: Acute upper GI bleed — peptic ulcer. Must-not-miss diagnoses to exclude: Variceal bleed; Malignancy. Also reasonable: Gastritis/erosions; Lower GI source.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute upper GI bleed — peptic ulcer",
+            "points": 8
+          },
+          {
+            "item": "Variceal bleed",
+            "points": 4
+          },
+          {
+            "item": "Malignancy",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Gastritis/erosions",
+            "points": 3
+          },
+          {
+            "item": "Lower GI source",
+            "points": 2
+          },
+          {
+            "item": "Connects melena + elevated BUN:Cr + NSAID/alcohol to an upper GI source",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Variceal bleed",
+        "Malignancy"
+      ],
+      "acceptableAlternatives": [
+        "Gastritis/erosions",
+        "Lower GI source"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want? (Include the bedside.)",
+      "rubric": "CBC (CANT-MISS,3). Recognizes GI bleeding and reviews the documented stool finding / melena (CANT-MISS,3). BMP — BUN:Cr (2). Coags (2). Type and crossmatch (3). LFTs to assess for variceal/liver cause (1). Risk score e.g. Glasgow-Blatchford (1). PENALTY: not resuscitating or omitting type & cross in active bleeding (-2).",
+      "idealAnswer": "Order: CBC; Recognizes GI bleeding and reviews the documented stool finding / melena.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC",
+            "points": 3
+          },
+          {
+            "item": "Recognizes GI bleeding and reviews the documented stool finding / melena",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "not resuscitating or omitting type & cross in active bleeding",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC",
+        "Recognizes GI bleeding and reviews the documented stool finding / melena"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "not resuscitating or omitting type & cross in active bleeding"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, possible demand changes, no STEMI. CREDIT: rate & rhythm (6); recognizes demand changes are secondary to anemia not primary ACS (5); excludes STEMI (2); systematic read (2). PENALTY: calling a primary STEMI (-3).",
+      "keyFindings": [
+        "right axis deviation with dominant R in V1",
+        "right atrial enlargement"
+      ],
+      "criticalFindings": [
+        "Right ventricular hypertrophy pattern."
+      ],
+      "commonMistakes": [
+        "mistaking dominant R in V1 for posterior MI or RBBB"
+      ],
+      "idealAnswer": "Right ventricular hypertrophy: right axis deviation, tall R in V1, signs of right atrial enlargement.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Right ventricular hypertrophy pattern."
+        ],
+        "coreActions": [
+          "right axis deviation with dominant R in V1",
+          "right atrial enlargement"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies Kerley B lines",
+        "links septal lines to interstitial edema"
+      ],
+      "criticalFindings": [
+        "Kerley B lines (interstitial edema)."
+      ],
+      "commonMistakes": [
+        "overlooking subtle septal lines",
+        "confusing them with fibrosis"
+      ],
+      "idealAnswer": "Kerley B lines: short horizontal peripheral septal lines reflecting interstitial fluid.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Kerley B lines (interstitial edema)."
+        ],
+        "coreActions": [
+          "identifies Kerley B lines",
+          "links septal lines to interstitial edema"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Hgb 8.0 with elevated BUN:Cr and melena. What is your diagnosis and likely cause?",
+      "rubric": "Acute upper GI bleed, likely NSAID-related peptic ulcer (6). Cites melena + BUN:Cr + NSAID use; normal LFTs make a variceal source less likely (4).",
+      "idealAnswer": "Acute upper GI bleed. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Two large-bore IVs and fluid resuscitation (CANT-MISS,6). Transfuse PRBCs per a restrictive threshold/hemodynamics (CANT-MISS,5). IV proton pump inhibitor (5). Hold NSAID; reverse any coagulopathy (3). Urgent GI consult for upper endoscopy (5). If variceal suspected: octreotide + prophylactic antibiotics (1). PENALTY: discharging or failing to resuscitate (-4).",
+      "idealAnswer": "Plan: Two large-bore IVs and fluid resuscitation; Transfuse PRBCs per a restrictive threshold/hemodynamics.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Two large-bore IVs and fluid resuscitation",
+            "points": 6
+          },
+          {
+            "item": "Transfuse PRBCs per a restrictive threshold/hemodynamics",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging or failing to resuscitate",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Two large-bore IVs and fluid resuscitation",
+        "Transfuse PRBCs per a restrictive threshold/hemodynamics"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "discharging or failing to resuscitate"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "60-year-old man, pale, mildly tachycardic, fatigued. Good historian once asked.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "palpate_all_quadrants_finding_1",
+      "finding": "Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No epigastric tenderness."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_2",
+      "finding": "STOOL (documented on chart/nursing): melena (black, tarry stool) — surfaced in the diagnostic results; no sensitive exam is required. Conjunctival pallor if exa",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No conjunctival pallor."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_3",
+      "finding": "Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic drop."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Acute upper GI bleed",
+    "diagnosticFramework": "60M presents with lightheadedness, fatigue, and several days of black tarry stools; he takes daily NSAIDs and drinks alcohol regularly. The diagnosis is Acute upper GI bleed, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).",
+      "STOOL (documented on chart/nursing): melena (black, tarry stool) — surfaced in the diagnostic results; no sensitive exam is required. Conjunctival pallor if exa",
+      "Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Coags",
+      "LFTs",
+      "TypeCross",
+      "StoolEvaluation"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Acute upper GI bleed while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Acute upper GI bleed and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "discharging or failing to resuscitate"
+    ],
+    "managementPearls": [
+      "Two large-bore IVs and fluid resuscitation",
+      "Transfuse PRBCs per a restrictive threshold/hemodynamics"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "obtain_orthostatic_vitals"
+    ],
+    "criticalWorkupItems": [
+      "CBC",
+      "Recognizes GI bleeding and reviews the documented stool finding / melena"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; possible demand-related ST changes from anemia; no STEMI.",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Two large-bore IVs and fluid resuscitation",
+      "Transfuse PRBCs per a restrictive threshold/hemodynamics"
+    ],
+    "keyImageInterpretationFindings": [
+      "Right ventricular hypertrophy pattern.",
+      "Kerley B lines (interstitial edema)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Right ventricular hypertrophy pattern.",
+      "Kerley B lines (interstitial edema)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "id": "chestpain-04",
+  "category": "Chest Pain",
+  "difficulty": "moderate",
+  "title": "Sharp positional chest pain after a viral illness",
+  "diagnosis": "Acute pericarditis",
+  "chart": {
+    "ageSex": "30M",
+    "cc": "Sharp chest pain",
+    "oneLiner": "30M presents with 2 days of sharp central chest pain that is worse lying flat and better leaning forward, one week after a viral upper respiratory illness.",
+    "vitals": {
+      "BP": "124/78",
+      "HR": "98",
+      "RR": "16",
+      "Temp": "37.6°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've got this sharp pain in the middle of my chest. It's worse when I lie down and eases up when I sit forward.",
+  "patientFile": "PERSONA: 30-year-old man, uncomfortable but not in severe distress, sitting leaning forward. Cooperative.\n\nHPI:\n- Sharp, central/retrosternal chest pain for 2 days.\n- POSITIONAL: worse lying supine, better sitting up and leaning forward. PLEURITIC: worse with deep breath.\n- Sometimes radiates to the left trapezius ridge (only if asked).\n- Had a viral upper respiratory illness (cough, runny nose, low-grade fevers) about a week ago that has mostly resolved (only if asked about recent illness).\n- NO exertional trigger, NO pressure/heaviness, NO diaphoresis, NO tearing quality, NO leg swelling, NO recent travel.\n\nOLDCARTS: onset 2 days ago; central chest; constant with pleuritic/positional exacerbation; sharp; worse supine and with inspiration, better leaning forward; severity 5/10.\n\nPMH: none. MEDICATIONS: none. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: nonsmoker, social alcohol, graduate student.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: alert, comfortable when leaning forward.\n- Vitals: BP 124/78, HR 98, RR 16, 37.6°C, SpO2 99% RA.\n- Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward; normal S1/S2, no murmur.\n- Lungs: clear bilaterally.\n- Chest wall: NO reproducible tenderness.\n- Neck: JVP normal, no pulsus paradoxus appreciated.\n- Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the recent viral illness or the trapezius radiation unless asked about recent illness or where the pain travels.\n- The friction rub is only revealed if the student auscultates the heart (ideally with the patient leaning forward).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 9.8 (mildly elevated), Hgb 14.6, Plt 260.",
+      "BMP": "Within normal limits.",
+      "Troponin": "Mildly elevated at 0.10 ng/mL (suggesting some myocardial involvement — myopericarditis).",
+      "Inflammatory": "ESR and CRP elevated.",
+      "echo": "Trivial pericardial effusion, normal biventricular function, no tamponade physiology."
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Troponin",
+    "Inflammatory",
+    "ekg",
+    "cxr",
+    "echo"
+  ],
+  "essential": [
+    "ekg",
+    "Troponin"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Acute pericarditis (leading, 9; accepts pericarditis/myopericarditis). Acute coronary syndrome (CANT-MISS,5). Pulmonary embolism (CANT-MISS,3). Pneumonia/pleuritis (core,2). Musculoskeletal (core,2). GERD (bonus,1). Names pericarditis with supporting features — positional pleuritic pain, friction rub, recent viral illness (core,4).",
+      "idealAnswer": "Leading diagnosis: Acute pericarditis. Must-not-miss diagnoses to exclude: Acute coronary syndrome; Pulmonary embolism. Also reasonable: Pneumonia/pleuritis; Musculoskeletal.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome",
+            "points": 5
+          },
+          {
+            "item": "Pulmonary embolism",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Pneumonia/pleuritis",
+            "points": 2
+          },
+          {
+            "item": "Musculoskeletal",
+            "points": 2
+          },
+          {
+            "item": "Names pericarditis with supporting features — positional pleuritic pain, friction rub, recent viral illness",
+            "points": 4
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "GERD",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome",
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Pneumonia/pleuritis",
+        "Musculoskeletal"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "EKG (CANT-MISS,4). Troponin to assess myocardial involvement (core,3). CXR (core,2). Inflammatory markers ESR/CRP (core,2). CBC (core,2). Echocardiogram to assess for effusion/tamponade (bonus,1). PENALTY: no EKG (-2).",
+      "reveal": true,
+      "idealAnswer": "Order: EKG; Troponin to assess myocardial involvement; CXR; Inflammatory markers ESR/CRP; CBC.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Troponin to assess myocardial involvement",
+            "points": 3
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory markers ESR/CRP",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Echocardiogram to assess for effusion/tamponade",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "no EKG",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "EKG"
+      ],
+      "optionalTests": [
+        "Troponin to assess myocardial involvement",
+        "CXR",
+        "Inflammatory markers ESR/CRP",
+        "CBC"
+      ],
+      "contraindicatedTests": [
+        "no EKG"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = diffuse concave-upward ST elevation with PR-segment depression; reciprocal change in aVR. CREDIT: rate & rhythm (3); identifies WIDESPREAD (non-territorial) ST elevation with PR depression (6); distinguishes from STEMI - diffuse rather than a single coronary territory (4); systematic read (2). PENALTY: misreading as an acute STEMI and activating the cath lab (-3).",
+      "type": "read",
+      "image": "ekg",
+      "keyFindings": [
+        "rate & rhythm",
+        "ST elevation with PR depression",
+        "distinguishes from STEMI - diffuse rather than a single coronary territory",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR."
+      ],
+      "commonMistakes": [
+        "misreading as an acute STEMI and activating the cath lab"
+      ],
+      "idealAnswer": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "rate & rhythm",
+            "points": 3
+          },
+          {
+            "item": "ST elevation with PR depression",
+            "points": 6
+          },
+          {
+            "item": "distinguishes from STEMI - diffuse rather than a single coronary territory",
+            "points": 4
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "misreading as an acute STEMI and activating the cath lab",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = normal cardiac silhouette, clear lung fields. CREDIT: identifies a normal film (6); comments on assessing the cardiac silhouette for a pericardial effusion (4). PENALTY: inventing pathology (-2).",
+      "type": "read",
+      "image": "cxr",
+      "keyFindings": [
+        "bilateral perihilar alveolar opacities",
+        "cephalization / signs of pulmonary edema"
+      ],
+      "criticalFindings": [
+        "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+      ],
+      "commonMistakes": [
+        "mistaking edema for bilateral pneumonia",
+        "missing upper-lobe vascular redistribution"
+      ],
+      "idealAnswer": "Cardiogenic pulmonary edema: bilateral perihilar bat-wing opacities with vascular redistribution.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+        ],
+        "coreActions": [
+          "bilateral perihilar alveolar opacities",
+          "cephalization / signs of pulmonary edema"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the diffuse ST elevation with PR depression and mild troponin rise, what is your diagnosis and how do you distinguish it from STEMI?",
+      "rubric": "Acute pericarditis (with myocardial involvement / myopericarditis given mild troponin) (8). Distinguishes from STEMI: DIFFUSE (not territorial) ST elevation, PR depression, no reciprocal changes except aVR, friction rub (5). Notes the small effusion without tamponade (2).",
+      "idealAnswer": "Acute pericarditis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "High-dose NSAID — e.g., ibuprofen or aspirin (CANT-MISS,7). Colchicine to reduce recurrence (7). Activity restriction until symptom/marker resolution (4). Treat/identify underlying cause (3). Monitor for effusion/tamponade; arrange follow-up echo (4). PPI for gastric protection with NSAID (2). PENALTY: anticoagulation (raises hemorrhagic effusion risk) (-2); discharging without follow-up given troponin elevation (-2).",
+      "idealAnswer": "Plan: ibuprofen or aspirin.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "ibuprofen or aspirin",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anticoagulation (raises hemorrhagic effusion risk)",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "ibuprofen or aspirin"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "anticoagulation (raises hemorrhagic effusion risk)"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/pericarditis-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "verify": "From the LITFL 'Pericarditis' library page - download a tracing matching: Diffuse concave-upward ST-segment elevation across multiple leads with PR-segmen ... self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "searchTerms": [
+        "12-lead EKG Diffuse concave-upward ST-segment elevation"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons - verify file license",
+      "findings": "Bilateral perihilar 'bat-wing' alveolar opacities, vascular redistribution, peribronchial cuffing.",
+      "verify": "Source a study matching: Bilateral perihilar 'bat-wing' alveolar opacities, vascular redistribution, peribronchial cuffing. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing pulmonary edema bat wing",
+      "searchTerms": [
+        "pulmonary edema chest x-ray",
+        "bat wing pulmonary oedema radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "30-year-old man, uncomfortable but not in severe distress, sitting leaning forward. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward; normal S1/S2, no murmur.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_jvp_finding_2",
+      "finding": "Neck: JVP normal, no pulsus paradoxus appreciated.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "assess_edema_finding_3",
+      "finding": "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_4",
+      "finding": "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Acute pericarditis",
+    "diagnosticFramework": "30M presents with 2 days of sharp central chest pain that is worse lying flat and better leaning forward, one week after a viral upper respiratory illness. The diagnosis is Acute pericarditis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward; normal S1/S2, no murmur.",
+      "Neck: JVP normal, no pulsus paradoxus appreciated.",
+      "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.",
+      "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Troponin",
+      "Inflammatory",
+      "echo"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Acute pericarditis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Acute pericarditis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "anticoagulation (raises hemorrhagic effusion risk)"
+    ],
+    "managementPearls": [
+      "ibuprofen or aspirin"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "EKG"
+    ],
+    "criticalInterpretationItems": [
+      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "Normal cardiac silhouette, clear lung fields."
+    ],
+    "criticalManagementItems": [
+      "ibuprofen or aspirin"
+    ],
+    "keyImageInterpretationFindings": [
+      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

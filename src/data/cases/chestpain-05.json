@@ -1,0 +1,589 @@
+{
+  "id": "chestpain-05",
+  "category": "Chest Pain",
+  "difficulty": "easy",
+  "title": "Burning chest discomfort after meals",
+  "diagnosis": "GERD",
+  "chart": {
+    "ageSex": "50F",
+    "cc": "Burning chest discomfort",
+    "oneLiner": "50F presents with several weeks of intermittent burning retrosternal discomfort, worse after large meals and when lying down, relieved by antacids.",
+    "vitals": {
+      "BP": "126/80",
+      "HR": "76",
+      "RR": "14",
+      "Temp": "36.9°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I keep getting this burning feeling in my chest, usually after I eat. Tums help a bit.",
+  "patientFile": "PERSONA: 50-year-old woman, comfortable, not distressed. Conversational.\n\nHPI:\n- Intermittent BURNING retrosternal discomfort for several weeks.\n- Clearly worse AFTER large or fatty meals and when LYING DOWN at night; relieved by sitting up and by antacids.\n- Associated sour/acid taste in the mouth and occasional regurgitation (only if asked).\n- NOT exertional — comes on at rest, often relating to meals, not activity.\n- NO radiation to arm/jaw, NO diaphoresis, NO dyspnea, NO pleuritic or positional-with-breath component, NO tearing quality.\n- NO weight loss, NO trouble swallowing, NO vomiting blood or black stools (these alarm features are negative — only if asked).\n\nOLDCARTS: intermittent over weeks; retrosternal; episodic lasting up to an hour; burning; worse postprandial and supine, relieved by antacids; severity 4/10.\n\nPMH: obesity, GERD-type symptoms in the past. MEDICATIONS: occasional over-the-counter antacids. ALLERGIES: none. FAMILY: noncontributory for early heart disease. SOCIAL: nonsmoker, occasional wine (worsens symptoms), drinks coffee.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: well-appearing, comfortable.\n- Vitals: BP 126/80, HR 76, RR 14, 36.9°C, SpO2 99% RA.\n- Cardiac: regular, normal S1/S2, no murmur or rub.\n- Lungs: clear bilaterally.\n- Chest wall: no reproducible tenderness.\n- Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the regurgitation/sour taste or the negative alarm features unless asked about associated symptoms, swallowing, weight loss, or GI bleeding.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Normal.",
+      "BMP": "Normal.",
+      "Troponin": "Normal — not elevated."
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Troponin",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "Troponin"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "GERD / esophageal reflux (leading, 7; accepts reflux/esophagitis/peptic). Acute coronary syndrome (CANT-MISS — must still be considered and excluded, 8; credit for explicitly ruling out cardiac causes before anchoring). Esophageal spasm (core,2). Peptic ulcer disease (core,2). Musculoskeletal (bonus,2). Pericarditis (bonus,2). Names a leading benign cause WHILE acknowledging cardiac must be excluded (core,4). PENALTY: anchoring on GERD without considering cardiac causes (-3).",
+      "idealAnswer": "Leading diagnosis: GERD. Must-not-miss diagnoses to exclude: none specific. Also reasonable: Esophageal spasm; Peptic ulcer disease.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [],
+        "coreActions": [
+          {
+            "item": "Esophageal spasm",
+            "points": 2
+          },
+          {
+            "item": "Peptic ulcer disease",
+            "points": 2
+          },
+          {
+            "item": "Names a leading benign cause WHILE acknowledging cardiac must be excluded",
+            "points": 4
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Musculoskeletal",
+            "points": 2
+          },
+          {
+            "item": "Pericarditis",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "anchoring on GERD without considering cardiac causes",
+            "points": -3
+          }
+        ]
+      },
+      "mustNotMiss": [],
+      "acceptableAlternatives": [
+        "Esophageal spasm",
+        "Peptic ulcer disease"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "EKG to exclude cardiac cause (CANT-MISS,5). Troponin (core,3). CBC to screen for anemia/GI bleed (core,2). Considers an empiric PPI trial as both diagnostic and therapeutic (core,2). CXR (bonus,1). Notes upper endoscopy if alarm features or refractory (bonus,1). PENALTY: extensive cardiac workup with zero risk factors and a classic reflux story is over-testing, but FAILING to get a basic EKG/troponin is the bigger error (-2 for skipping EKG).",
+      "reveal": true,
+      "idealAnswer": "Order: EKG to exclude cardiac cause; Troponin; CBC to screen for anemia/GI bleed; Considers an empiric PPI trial as both diagnostic and therapeutic.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG to exclude cardiac cause",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Troponin",
+            "points": 3
+          },
+          {
+            "item": "CBC to screen for anemia/GI bleed",
+            "points": 2
+          },
+          {
+            "item": "Considers an empiric PPI trial as both diagnostic and therapeutic",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "CXR",
+            "points": 1
+          },
+          {
+            "item": "Notes upper endoscopy if alarm features or refractory",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      },
+      "requiredTests": [
+        "EKG to exclude cardiac cause"
+      ],
+      "optionalTests": [
+        "Troponin",
+        "CBC to screen for anemia/GI bleed",
+        "Considers an empiric PPI trial as both diagnostic and therapeutic"
+      ],
+      "contraindicatedTests": [],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no ischemic changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "type": "read",
+      "image": "ekg",
+      "keyFindings": [
+        "J-point notching with concave ST elevation",
+        "distinguishes benign early repolarization from STEMI/pericarditis"
+      ],
+      "criticalFindings": [
+        "Benign early repolarization pattern."
+      ],
+      "commonMistakes": [
+        "over-calling the J-point ST elevation as a STEMI"
+      ],
+      "idealAnswer": "Benign early repolarization: concave ST elevation with J-point notching, no reciprocal change.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Benign early repolarization pattern."
+        ],
+        "coreActions": [
+          "J-point notching with concave ST elevation",
+          "distinguishes benign early repolarization from STEMI/pericarditis"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute cardiopulmonary process. CREDIT: identifies a normal film (6); notes it excludes other causes (4). PENALTY: inventing pathology (-2).",
+      "type": "read",
+      "image": "cxr",
+      "keyFindings": [
+        "retrocardiac air-fluid level",
+        "identifies a hiatal hernia as benign"
+      ],
+      "criticalFindings": [
+        "Hiatal hernia (retrocardiac air-fluid level)."
+      ],
+      "commonMistakes": [
+        "mistaking the retrocardiac gas shadow for a cavitary lesion or abscess"
+      ],
+      "idealAnswer": "Hiatal hernia: retrocardiac soft-tissue density with an air-fluid level — a benign incidental finding.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Hiatal hernia (retrocardiac air-fluid level)."
+        ],
+        "coreActions": [
+          "retrocardiac air-fluid level",
+          "identifies a hiatal hernia as benign"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "The EKG and troponin are normal. What is your leading diagnosis now and your reasoning?",
+      "rubric": "GERD as the most likely diagnosis (8). Justifies with the postprandial/positional burning pattern, antacid response, and a reassuring cardiac workup (5). Notes red-flag features that would change the plan (dysphagia, weight loss, GI bleeding, anemia) (2).",
+      "idealAnswer": "GERD. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Trial of a proton pump inhibitor (CANT-MISS,7). Lifestyle measures — weight loss, avoid late/large/fatty meals, elevate head of bed, reduce alcohol/coffee (8). Outpatient follow-up to assess response (5). Endoscopy if alarm features or PPI-refractory (5). Patient counseling/reassurance after cardiac exclusion (4).",
+      "idealAnswer": "Plan: Trial of a proton pump inhibitor.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Trial of a proton pump inhibitor",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "requiredActions": [
+        "Trial of a proton pump inhibitor"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Concave ST elevation with J-point notching/slurring in mid-precordial leads; benign pattern.",
+      "verify": "Source a study matching: Concave ST elevation with J-point notching/slurring in mid-precordial leads; benign pattern. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing benign early repolarization",
+      "searchTerms": [
+        "early repolarization ECG",
+        "J point notching benign ST elevation"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons - verify file license",
+      "findings": "Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia).",
+      "verify": "Source a study matching: Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing hiatal hernia retrocardiac",
+      "searchTerms": [
+        "hiatal hernia chest x-ray air fluid level",
+        "retrocardiac hiatal hernia radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "standardizedPatient": {
+    "demeanor": "distress",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "50-year-old woman, comfortable, not distressed. Conversational.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_guarding_finding_1",
+      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No guarding."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_2",
+      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No epigastric tenderness."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_3",
+      "finding": "Cardiac: regular, normal S1/S2, no murmur or rub.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_edema_finding_4",
+      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "GERD",
+    "diagnosticFramework": "50F presents with several weeks of intermittent burning retrosternal discomfort, worse after large meals and when lying down, relieved by antacids. The diagnosis is GERD, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
+      "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
+      "Cardiac: regular, normal S1/S2, no murmur or rub.",
+      "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Troponin"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by GERD while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to GERD and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Anchoring before excluding dangerous alternatives"
+    ],
+    "managementPearls": [
+      "Trial of a proton pump inhibitor"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "EKG to exclude cardiac cause"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm, no ischemic changes.",
+      "No acute cardiopulmonary process."
+    ],
+    "criticalManagementItems": [
+      "Trial of a proton pump inhibitor"
+    ],
+    "keyImageInterpretationFindings": [
+      "Benign early repolarization pattern.",
+      "Hiatal hernia (retrocardiac air-fluid level)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Benign early repolarization pattern.",
+      "Hiatal hernia (retrocardiac air-fluid level)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

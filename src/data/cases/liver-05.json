@@ -1,0 +1,592 @@
+{
+  "id": "liver-05",
+  "category": "Abnormal Liver Enzymes",
+  "difficulty": "easy",
+  "title": "Incidental mildly elevated liver enzymes",
+  "diagnosis": "NAFLD / NASH",
+  "chart": {
+    "ageSex": "48M",
+    "cc": "Abnormal liver tests on routine labs",
+    "oneLiner": "48M with obesity and type 2 diabetes is referred for mildly elevated liver enzymes found on routine screening; he feels well.",
+    "vitals": {
+      "BP": "136/86",
+      "HR": "78",
+      "RR": "14",
+      "Temp": "36.8°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My doctor said my liver numbers were a bit high on a routine blood test. I feel fine, though.",
+  "patientFile": "PERSONA: 48-year-old man, asymptomatic, well-appearing, somewhat surprised. Good historian.\n\nHPI: No symptoms — no jaundice, no abdominal pain, no dark urine. Mildly elevated transaminases found on routine labs. On asking: known obesity, type 2 diabetes, high cholesterol, and a sedentary lifestyle (metabolic syndrome). Minimal alcohol (quantify to exclude alcoholic liver disease). No new medications or supplements/herbals (verify). NO IV drug use, NO risky exposures, NO family history of liver disease.\nPMH: type 2 diabetes, obesity, dyslipidemia. MEDS: metformin, atorvastatin (note: statins are generally safe to continue). SOCIAL: 1–2 drinks per week, nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: obese, well-appearing, no jaundice.\n- Vitals: BP 136/86, HR 78, RR 14, 36.8°C, SpO2 99% RA.\n- Abdomen: soft; mild hepatomegaly if examined; NO stigmata of chronic liver disease (no spider angiomata/ascites).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer alcohol quantity, supplements, or metabolic history unless asked about alcohol, medications/supplements, or medical history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "LFTs": "AST 48, ALT 70 (mild elevation, ALT>AST — typical of NAFLD), Alk Phos normal.",
+      "ViralSerologies": "Hepatitis B and C negative.",
+      "Metabolic": "A1c elevated, triglycerides high, LDL high — metabolic syndrome.",
+      "OtherCauses": "Iron studies, ceruloplasmin, autoimmune markers, and TSH sent to exclude hemochromatosis/Wilson/autoimmune/thyroid; unremarkable.",
+      "US": "RUQ ultrasound: increased echogenicity consistent with hepatic steatosis (fatty liver).",
+      "Fibrosis": "Non-invasive fibrosis assessment (FIB-4 / elastography) to stage."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Short PR, delta wave (slurred QRS upstroke), widened QRS.",
+      "verify": "Source a study matching: Short PR, delta wave (slurred QRS upstroke), widened QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing WPW delta wave pre-excitation",
+      "searchTerms": [
+        "WPW delta wave ECG",
+        "Wolff Parkinson White pre-excitation 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Thin apical pleural line with absent lung markings peripherally; small apical pneumothorax.",
+      "verify": "Source a study matching: Thin apical pleural line with absent lung markings peripherally; small apical pneumothorax. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing small apical pneumothorax",
+      "searchTerms": [
+        "apical pneumothorax chest x-ray",
+        "small pneumothorax pleural line radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "LFTs",
+    "ViralSerologies",
+    "Metabolic",
+    "OtherCauses",
+    "US",
+    "Fibrosis",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "LFTs",
+    "ViralSerologies"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on the history and labs, list your differential for the mildly elevated transaminases (note your leading diagnosis).",
+      "rubric": "Non-alcoholic fatty liver disease / NASH (leading,7). Alcoholic liver disease (must quantify alcohol,4). Chronic viral hepatitis (CANT-MISS to exclude,4). Drug/supplement-induced (core,3). Hemochromatosis / Wilson / autoimmune hepatitis (core,2). Thyroid/celiac as secondary causes (bonus,2). Names NAFLD while committing to exclude other causes (core,3).",
+      "idealAnswer": "Leading diagnosis: Non-alcoholic fatty liver disease / NASH. Must-not-miss diagnoses to exclude: Chronic viral hepatitis. Also reasonable: Alcoholic liver disease; Drug/supplement-induced; Hemochromatosis / Wilson / autoimmune hepatitis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Non-alcoholic fatty liver disease / NASH",
+            "points": 7
+          },
+          {
+            "item": "Chronic viral hepatitis",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Alcoholic liver disease",
+            "points": 4
+          },
+          {
+            "item": "Drug/supplement-induced",
+            "points": 3
+          },
+          {
+            "item": "Hemochromatosis / Wilson / autoimmune hepatitis",
+            "points": 2
+          },
+          {
+            "item": "Names NAFLD while committing to exclude other causes",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Thyroid/celiac as secondary causes",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Chronic viral hepatitis"
+      ],
+      "acceptableAlternatives": [
+        "Alcoholic liver disease",
+        "Drug/supplement-induced",
+        "Hemochromatosis / Wilson / autoimmune hepatitis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Confirm/trend LFTs (2). Viral hepatitis serologies B and C (CANT-MISS,3). Metabolic workup — A1c, lipids (2). Iron studies, ceruloplasmin (if young), autoimmune markers, TSH to exclude other causes (3). RUQ ultrasound (2). Non-invasive fibrosis assessment — FIB-4 / elastography (2). PENALTY: diagnosing NAFLD without excluding other causes (-2).",
+      "idealAnswer": "Order: Viral hepatitis serologies B and C.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Viral hepatitis serologies B and C",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "diagnosing NAFLD without excluding other causes",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Viral hepatitis serologies B and C"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "diagnosing NAFLD without excluding other causes"
+      ],
+      "orderSensitiveActions": [
+        "diagnosing NAFLD without excluding other causes"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "keyFindings": [
+        "short PR interval",
+        "delta wave / slurred QRS upstroke"
+      ],
+      "criticalFindings": [
+        "Wolff-Parkinson-White pre-excitation pattern."
+      ],
+      "commonMistakes": [
+        "mistaking the delta-wave widening for bundle branch block or ventricular rhythm"
+      ],
+      "idealAnswer": "WPW pre-excitation: short PR, delta wave, broad QRS.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Wolff-Parkinson-White pre-excitation pattern."
+        ],
+        "coreActions": [
+          "short PR interval",
+          "delta wave / slurred QRS upstroke"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "visceral pleural line with absent peripheral markings",
+        "identifies a (small) pneumothorax"
+      ],
+      "criticalFindings": [
+        "Apical pneumothorax (pleural line, absent peripheral lung markings)."
+      ],
+      "commonMistakes": [
+        "missing a small apical pneumothorax",
+        "mistaking a skin fold for the pleural line"
+      ],
+      "idealAnswer": "Small apical pneumothorax: a thin visceral pleural line with no lung markings beyond it.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Apical pneumothorax (pleural line, absent peripheral lung markings)."
+        ],
+        "coreActions": [
+          "visceral pleural line with absent peripheral markings",
+          "identifies a (small) pneumothorax"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Mild ALT>AST elevation, negative viral/other workup, steatosis on ultrasound, and metabolic syndrome. What is your diagnosis and next assessment?",
+      "rubric": "Non-alcoholic fatty liver disease (likely NASH given diabetes) (6). Stages fibrosis with a non-invasive tool (FIB-4 / elastography) to identify those needing closer follow-up (4).",
+      "idealAnswer": "NAFLD / NASH. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise (CANT-MISS,8). Optimize metabolic risk factors — diabetes and lipid control (6). Limit alcohol and avoid hepatotoxins; statins can generally be continued (4). Stage fibrosis and arrange monitoring; refer to hepatology if advanced fibrosis (4). Vaccinate against hepatitis A/B if non-immune (3). PENALTY: anchoring on NAFLD without excluding other causes or without assessing fibrosis (-3).",
+      "idealAnswer": "Plan: Lifestyle as the cornerstone — gradual weight loss, diet, and exercise.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise",
+            "points": 8
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anchoring on NAFLD without excluding other causes or without assessing fibrosis",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "anchoring on NAFLD without excluding other causes or without assessing fibrosis"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "well-appearing",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "drug_use",
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "48-year-old man, asymptomatic, well-appearing, somewhat surprised. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "drug_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "drug use",
+        "substance use",
+        "injection drugs",
+        "recreational drugs",
+        "iv drug use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_shifting_dullness_finding_1",
+      "finding": "Abdomen: soft; mild hepatomegaly if examined; NO stigmata of chronic liver disease (no spider angiomata/ascites).",
+      "revealedBy": [
+        "assess_shifting_dullness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No ascites."
+    },
+    {
+      "id": "inspect_sclera_finding_2",
+      "finding": "General: obese, well-appearing, no jaundice.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "NAFLD / NASH",
+    "diagnosticFramework": "48M with obesity and type 2 diabetes is referred for mildly elevated liver enzymes found on routine screening; he feels well. The diagnosis is NAFLD / NASH, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "drug use"
+    ],
+    "keyPhysicalExamFindings": [
+      "Abdomen: soft; mild hepatomegaly if examined; NO stigmata of chronic liver disease (no spider angiomata/ascites).",
+      "General: obese, well-appearing, no jaundice."
+    ],
+    "keyDiagnosticFindings": [
+      "LFTs",
+      "ViralSerologies",
+      "Metabolic",
+      "OtherCauses",
+      "US",
+      "Fibrosis"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by NAFLD / NASH while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to NAFLD / NASH and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "anchoring on NAFLD without excluding other causes or without assessing fibrosis"
+    ],
+    "managementPearls": [
+      "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise"
+    ],
+    "criticalHistoryItems": [
+      "drug_use"
+    ],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [
+      "Viral hepatitis serologies B and C"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes (also documents cardiovascular risk context).",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise"
+    ],
+    "keyImageInterpretationFindings": [
+      "Wolff-Parkinson-White pre-excitation pattern.",
+      "Apical pneumothorax (pleural line, absent peripheral lung markings)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Wolff-Parkinson-White pre-excitation pattern.",
+      "Apical pneumothorax (pleural line, absent peripheral lung markings)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

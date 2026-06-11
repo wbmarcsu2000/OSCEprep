@@ -1,0 +1,547 @@
+{
+  "id": "diarrhea-03",
+  "category": "Diarrhea",
+  "difficulty": "moderate",
+  "title": "Bloody diarrhea in a young adult",
+  "diagnosis": "Ulcerative colitis flare",
+  "chart": {
+    "ageSex": "26F",
+    "cc": "Bloody diarrhea",
+    "oneLiner": "26F presents with several weeks of bloody diarrhea with mucus, urgency, and crampy lower abdominal pain, with recent weight loss.",
+    "vitals": {
+      "BP": "112/70",
+      "HR": "98",
+      "RR": "16",
+      "Temp": "37.6°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I keep passing blood and mucus, and I feel like I always have to run to the bathroom.",
+  "patientFile": "PERSONA: 26-year-old woman, fatigued, frustrated by symptoms. Good historian.\n\nHPI: 4–6 weeks of frequent BLOODY diarrhea with mucus, fecal URGENCY, TENESMUS, and crampy lower abdominal pain. Up several times at night. ~5 lb weight loss, fatigue. Sometimes joint aches (extraintestinal) and a painful red eye recently (only if asked). NO recent antibiotics, NO travel, NO clear food exposure.\nPMH: none. MEDS: none. SOCIAL: nonsmoker; family member with inflammatory bowel disease (if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, mildly fatigued.\n- Vitals: BP 112/70, HR 98, RR 16, 37.6°C, SpO2 99% RA.\n- Abdomen: lower abdominal tenderness, no rebound/rigidity (would worsen with toxic megacolon); active bowel sounds.\n- Possible aphthous ulcers, joint or eye findings if specifically examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the extraintestinal symptoms or family history unless asked about joint/eye/skin symptoms or family history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 10.5 (anemia), WBC 12.0, Plt 480 (reactive thrombocytosis).",
+      "Inflammatory": "CRP and ESR elevated; albumin low.",
+      "FecalCalprotectin": "Markedly elevated (intestinal inflammation).",
+      "StoolStudies": "Stool cultures and C. difficile toxin NEGATIVE (infection excluded).",
+      "Endoscopy": "Flexible sigmoidoscopy/colonoscopy: continuous, circumferential mucosal inflammation, friability, and ulceration beginning at the rectum — consistent with ulcerative colitis; biopsies pending."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "rSR' in V1 with QRS duration <120 ms (incomplete RBBB).",
+      "verify": "Source a study matching: rSR' in V1 with QRS duration <120 ms (incomplete RBBB). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing incomplete right bundle branch block",
+      "searchTerms": [
+        "incomplete RBBB ECG",
+        "rSR V1 narrow QRS"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Abdominal X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20abdominal%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "No colonic dilation here (used to screen for toxic megacolon in severe flares).",
+      "verify": "Pick a CC abdominal film that is normal/non-dilated.",
+      "assetNeeded": true,
+      "imageDescription": "No colonic dilation here (used to screen for toxic megacolon in severe flares).",
+      "searchTerms": [
+        "chest radiograph colonic dilation here (used"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Inflammatory",
+    "FecalCalprotectin",
+    "StoolStudies",
+    "Endoscopy",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "StoolStudies",
+    "CBC"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Ulcerative colitis flare (leading,7). Infectious colitis — must EXCLUDE first, incl. C. difficile (CANT-MISS,5). Crohn's disease (core,3). Ischemic colitis (core,2). Colorectal neoplasm (CANT-MISS to consider,2). Names IBD/UC while prioritizing exclusion of infection (core,6).",
+      "idealAnswer": "Leading diagnosis: Ulcerative colitis flare. Must-not-miss diagnoses to exclude: difficile; Colorectal neoplasm. Also reasonable: Crohn's disease; Ischemic colitis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Ulcerative colitis flare",
+            "points": 7
+          },
+          {
+            "item": "difficile",
+            "points": 5
+          },
+          {
+            "item": "Colorectal neoplasm",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Crohn's disease",
+            "points": 3
+          },
+          {
+            "item": "Ischemic colitis",
+            "points": 2
+          },
+          {
+            "item": "Names IBD/UC while prioritizing exclusion of infection",
+            "points": 6
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "difficile",
+        "Colorectal neoplasm"
+      ],
+      "acceptableAlternatives": [
+        "Crohn's disease",
+        "Ischemic colitis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Stool studies incl. cultures and C. difficile toxin to EXCLUDE infection (CANT-MISS,4). CBC (2). Inflammatory markers — CRP/ESR, albumin (2). Fecal calprotectin (2). Flexible sigmoidoscopy/colonoscopy with biopsy (3). Abdominal imaging if severe (megacolon screen) (2). PENALTY: starting steroids/immunosuppression before excluding infection (-2 — addressed in management).",
+      "idealAnswer": "Order: difficile toxin to EXCLUDE infection.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "difficile toxin to EXCLUDE infection",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "requiredTests": [
+        "difficile toxin to EXCLUDE infection"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm; possible electrolyte effects; no acute ischemia. CREDIT: rate & rhythm (6); recognizes a normal tracing and the need to watch electrolytes (5); systematic read (4). PENALTY: over-reading (-2).",
+      "keyFindings": [
+        "rSR' in V1",
+        "QRS <120 ms — incomplete rather than complete RBBB"
+      ],
+      "criticalFindings": [
+        "Incomplete right bundle branch block."
+      ],
+      "commonMistakes": [
+        "calling it complete RBBB without measuring the QRS width"
+      ],
+      "idealAnswer": "Incomplete RBBB: rSR' in V1 with QRS under 120 ms.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Incomplete right bundle branch block."
+        ],
+        "coreActions": [
+          "rSR' in V1",
+          "QRS <120 ms — incomplete rather than complete RBBB"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read X-ray",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's abdominal film. Describe your findings.",
+      "rubric": "Findings = no colonic dilation. CREDIT: assesses colonic caliber (5); explicitly screens for/excludes toxic megacolon (5). PENALTY: missing the purpose (-1).",
+      "keyFindings": [
+        "assesses colonic caliber",
+        "explicitly screens for/excludes toxic megacolon"
+      ],
+      "criticalFindings": [
+        "No colonic dilation here (used to screen for toxic megacolon in severe flares)."
+      ],
+      "commonMistakes": [
+        "missing the purpose"
+      ],
+      "idealAnswer": "No colonic dilation here (used to screen for toxic megacolon in severe flares).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: No colonic dilation here (used to screen for toxic megacolon in severe flares).",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "assesses colonic caliber",
+            "points": 5
+          },
+          {
+            "item": "explicitly screens for/excludes toxic megacolon",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing the purpose",
+            "points": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Infection is excluded; endoscopy shows continuous mucosal inflammation from the rectum. What is your diagnosis?",
+      "rubric": "Ulcerative colitis flare (6). Cites continuous, rectum-up inflammation with negative infectious workup and elevated inflammatory markers/calprotectin (4).",
+      "idealAnswer": "Ulcerative colitis flare. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "EXCLUDE infection first, then treat the flare (CANT-MISS,5). Corticosteroids (oral or IV depending on severity) for the acute flare (7). 5-aminosalicylates for mild-moderate disease / maintenance (4). IV fluids, correct anemia/electrolytes, VTE prophylaxis (3). Monitor for toxic megacolon; involve gastroenterology; biologics for steroid-refractory disease (4). Avoid antimotility agents (2). PENALTY: immunosuppressing before excluding infection (-3); antimotility agents (megacolon risk) (-2).",
+      "idealAnswer": "Plan: EXCLUDE infection first, then treat the flare.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "EXCLUDE infection first, then treat the flare",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "immunosuppressing before excluding infection",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "EXCLUDE infection first, then treat the flare"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "immunosuppressing before excluding infection"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "26-year-old woman, fatigued, frustrated by symptoms. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_rebound_tenderness_finding_1",
+      "finding": "Abdomen: lower abdominal tenderness, no rebound/rigidity (would worsen with toxic megacolon); active bowel sounds.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_2",
+      "finding": "Abdomen: lower abdominal tenderness, no rebound/rigidity (would worsen with toxic megacolon); active bowel sounds.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Ulcerative colitis flare",
+    "diagnosticFramework": "26F presents with several weeks of bloody diarrhea with mucus, urgency, and crampy lower abdominal pain, with recent weight loss. The diagnosis is Ulcerative colitis flare, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: lower abdominal tenderness, no rebound/rigidity (would worsen with toxic megacolon); active bowel sounds.",
+      "Abdomen: lower abdominal tenderness, no rebound/rigidity (would worsen with toxic megacolon); active bowel sounds."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Inflammatory",
+      "FecalCalprotectin",
+      "StoolStudies",
+      "Endoscopy"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Ulcerative colitis flare while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Ulcerative colitis flare and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "immunosuppressing before excluding infection"
+    ],
+    "managementPearls": [
+      "EXCLUDE infection first, then treat the flare"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "difficile toxin to EXCLUDE infection"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes (watch for electrolyte effects with severe diarrhea).",
+      "No colonic dilation here (used to screen for toxic megacolon in severe flares)."
+    ],
+    "criticalManagementItems": [
+      "EXCLUDE infection first, then treat the flare"
+    ],
+    "keyImageInterpretationFindings": [
+      "Incomplete right bundle branch block.",
+      "No colonic dilation here (used to screen for toxic megacolon in severe flares)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Incomplete right bundle branch block.",
+      "No colonic dilation here (used to screen for toxic megacolon in severe flares)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

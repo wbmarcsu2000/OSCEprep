@@ -1,0 +1,613 @@
+{
+  "id": "ams-06",
+  "category": "Altered Mental Status",
+  "difficulty": "moderate",
+  "title": "Agitation and tremor two days after admission",
+  "diagnosis": "Alcohol withdrawal / delirium tremens",
+  "chart": {
+    "ageSex": "55M",
+    "cc": "Agitation and confusion",
+    "oneLiner": "55M, admitted 2 days ago after a fall, becomes acutely agitated, tremulous, diaphoretic, and confused with visual hallucinations.",
+    "vitals": {
+      "BP": "168/98",
+      "HR": "122",
+      "RR": "22",
+      "Temp": "38.1°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "Get them off me — there are bugs everywhere! Why am I here?",
+  "patientFile": "PERSONA: 55-year-old man, agitated, tremulous, diaphoretic, disoriented, picking at the sheets, frightened by visual hallucinations. Poor historian.\n\nCOLLATERAL (provide ONLY if the student asks family/nursing/chart/medication list): Admitted 2 days ago after a mechanical fall. Family reports he drinks heavily every day (a pint of liquor daily) and his last drink was ~2 days ago, around admission. He had mild tremor and anxiety yesterday that has now escalated. No prior withdrawal seizures known. No new infection identified yet but he is febrile. MEDS: none regular; received acetaminophen for pain.\n\nHPI (from patient — limited): agitated, not oriented, reports seeing bugs/insects.\nPMH: hypertension, prior alcohol use. SOCIAL: heavy daily alcohol use.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: agitated, diaphoretic, coarse tremor, hypervigilant.\n- Vitals: BP 168/98, HR 122, RR 22, 38.1°C, SpO2 97% RA (autonomic hyperactivity).\n- Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.\n- No obvious new head trauma since admission; pupils equal/reactive.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is agitated/confused: give disjointed, hallucination-tinged answers. Provide COLLATERAL (heavy daily drinking, last drink ~2 days ago, admission timeline) only when the student explicitly asks family/nursing/chart/what happened.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 104 — normal.",
+      "BMP": "Na 137, K 3.2 (low), Mg 1.3 (low), Phos 1.8 (low), Cr 0.9 — typical electrolyte derangements.",
+      "CBC": "WBC 11.0, Hgb 13.0, Plt 110 (alcohol-related).",
+      "LFTs": "AST > ALT pattern, mildly elevated.",
+      "Infection_workup": "Cultures/UA/CXR to exclude infection driving the picture — no clear source found.",
+      "CT_head": "If focal deficit or unclear: CT head — no acute intracranial process."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Regular narrow-complex tachycardia ~180 with no clearly visible P waves (retrograde P possible).",
+      "verify": "Source a study matching: Regular narrow-complex tachycardia ~180 with no clearly visible P waves (retrograde P possible). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing AVNRT / SVT narrow complex tachycardia",
+      "searchTerms": [
+        "SVT AVNRT 12 lead ECG",
+        "narrow complex tachycardia 180 ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+      "verify": "Pick a CC normal PA chest film.",
+      "assetNeeded": true,
+      "imageDescription": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+      "searchTerms": [
+        "chest radiograph Clear possible aspiration; obtained"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "BMP",
+    "CBC",
+    "LFTs",
+    "Infection_workup",
+    "CT_head",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Glucose",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your assessment, list your differential for this acute agitation/confusion (note your leading diagnosis).",
+      "rubric": "Alcohol withdrawal / delirium tremens (leading,7). Infection/sepsis (CANT-MISS,4). Hypoglycemia (CANT-MISS,3). Intracranial process — subdural after the fall (CANT-MISS,4). Wernicke encephalopathy (core,3). Other drug withdrawal/intoxication or electrolyte derangement (core,2). Named leading dx w/ justification — heavy drinking, last drink ~2 days ago, autonomic hyperactivity, hallucinations (core,2).",
+      "idealAnswer": "Leading diagnosis: Alcohol withdrawal / delirium tremens. Must-not-miss diagnoses to exclude: Infection/sepsis; Hypoglycemia; Intracranial process — subdural after the fall. Also reasonable: Wernicke encephalopathy; Other drug withdrawal/intoxication or electrolyte derangement.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Alcohol withdrawal / delirium tremens",
+            "points": 7
+          },
+          {
+            "item": "Infection/sepsis",
+            "points": 4
+          },
+          {
+            "item": "Hypoglycemia",
+            "points": 3
+          },
+          {
+            "item": "Intracranial process — subdural after the fall",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Wernicke encephalopathy",
+            "points": 3
+          },
+          {
+            "item": "Other drug withdrawal/intoxication or electrolyte derangement",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — heavy drinking, last drink ~2 days ago, autonomic hyperactivity, hallucinations",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Infection/sepsis",
+        "Hypoglycemia",
+        "Intracranial process — subdural after the fall"
+      ],
+      "acceptableAlternatives": [
+        "Wernicke encephalopathy",
+        "Other drug withdrawal/intoxication or electrolyte derangement"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Fingerstick glucose (CANT-MISS,3). BMP incl. magnesium, potassium, phosphate (CANT-MISS,3). CBC (2). LFTs (1). Infection screen — cultures/UA/CXR (2). CT head given the recent fall + confusion (CANT-MISS,3). Formal withdrawal scoring (CIWA-Ar) (1). PENALTY: anchoring on withdrawal without excluding infection or intracranial bleed (-2).",
+      "idealAnswer": "Order: Fingerstick glucose; magnesium, potassium, phosphate; CT head given the recent fall + confusion.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Fingerstick glucose",
+            "points": 3
+          },
+          {
+            "item": "magnesium, potassium, phosphate",
+            "points": 3
+          },
+          {
+            "item": "CT head given the recent fall + confusion",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anchoring on withdrawal without excluding infection or intracranial bleed",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Fingerstick glucose",
+        "magnesium, potassium, phosphate",
+        "CT head given the recent fall + confusion"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "anchoring on withdrawal without excluding infection or intracranial bleed"
+      ],
+      "orderSensitiveActions": [
+        "anchoring on withdrawal without excluding infection or intracranial bleed"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia; consider QT with low Mg/K; no acute ischemia. CREDIT: rate & rhythm (6); comments on checking QT given electrolyte derangements (4); no acute ischemia (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "regular narrow-complex tachycardia",
+        "no clearly identifiable sinus P waves"
+      ],
+      "criticalFindings": [
+        "Supraventricular tachycardia (regular, narrow, rate ~180)."
+      ],
+      "commonMistakes": [
+        "mistaking SVT for sinus tachycardia",
+        "not noting the absence of preceding P waves"
+      ],
+      "idealAnswer": "Paroxysmal SVT: regular narrow-complex tachycardia at ~180 without visible sinus P waves.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Supraventricular tachycardia (regular, narrow, rate ~180)."
+        ],
+        "coreActions": [
+          "regular narrow-complex tachycardia",
+          "no clearly identifiable sinus P waves"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear or possible aspiration. CREDIT: identifies a clear/near-clear film (6); notes it screens for an infectious precipitant/aspiration (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a clear/near-clear film",
+        "notes it screens for an infectious precipitant/aspiration"
+      ],
+      "criticalFindings": [
+        "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+      ],
+      "commonMistakes": [
+        "inventing pathology"
+      ],
+      "idealAnswer": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a clear/near-clear film",
+            "points": 6
+          },
+          {
+            "item": "notes it screens for an infectious precipitant/aspiration",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "With a normal glucose, no intracranial bleed, and this presentation, what is your diagnosis?",
+      "rubric": "Delirium tremens / severe alcohol withdrawal (6). Cites autonomic hyperactivity + hallucinations + tremor + timing from last drink (3). Notes DTs is a medical emergency with significant mortality (bonus,1).",
+      "idealAnswer": "Alcohol withdrawal / delirium tremens. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes DTs is a medical emergency with significant mortality",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Benzodiazepines, ideally symptom-triggered by CIWA (CANT-MISS,8). Thiamine BEFORE/with glucose to prevent Wernicke (CANT-MISS,5). Replete magnesium, potassium, phosphate (4). Supportive care in a monitored/ICU setting; treat fever/infection (4). Reassess frequently; reserve antipsychotics only as adjunct (they lower seizure threshold) (2). PENALTY: giving glucose before thiamine (-3); antipsychotic monotherapy or inadequate benzodiazepines (-2).",
+      "idealAnswer": "Plan: Benzodiazepines, ideally symptom-triggered by CIWA; Thiamine BEFORE/with glucose to prevent Wernicke.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Benzodiazepines, ideally symptom-triggered by CIWA",
+            "points": 8
+          },
+          {
+            "item": "Thiamine BEFORE/with glucose to prevent Wernicke",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "giving glucose before thiamine",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Benzodiazepines, ideally symptom-triggered by CIWA",
+        "Thiamine BEFORE/with glucose to prevent Wernicke"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "giving glucose before thiamine"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "agitated",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "very brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
+    "affect": "55-year-old man, agitated, tremulous, diaphoretic, disoriented, picking at the sheets, frightened by visual hallucinatio",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_neck_stiffness_finding_1",
+      "finding": "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No nuchal rigidity."
+    },
+    {
+      "id": "assess_motor_strength_finding_2",
+      "finding": "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    },
+    {
+      "id": "assess_general_appearance_finding_3",
+      "finding": "General: agitated, diaphoretic, coarse tremor, hypervigilant.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No tremor or diaphoresis."
+    },
+    {
+      "id": "assess_mental_status_finding_4",
+      "finding": "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and oriented."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Alcohol withdrawal / delirium tremens",
+    "diagnosticFramework": "55M, admitted 2 days ago after a fall, becomes acutely agitated, tremulous, diaphoretic, and confused with visual hallucinations. The diagnosis is Alcohol withdrawal / delirium tremens, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "General: agitated, diaphoretic, coarse tremor, hypervigilant.",
+      "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "BMP",
+      "CBC",
+      "LFTs",
+      "Infection_workup",
+      "CT_head"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Alcohol withdrawal / delirium tremens while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Alcohol withdrawal / delirium tremens and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "giving glucose before thiamine"
+    ],
+    "managementPearls": [
+      "Benzodiazepines, ideally symptom-triggered by CIWA",
+      "Thiamine BEFORE/with glucose to prevent Wernicke"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_neck_stiffness"
+    ],
+    "criticalWorkupItems": [
+      "Fingerstick glucose",
+      "magnesium, potassium, phosphate",
+      "CT head given the recent fall + confusion"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; watch QT with low magnesium/potassium; no acute ischemia.",
+      "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+    ],
+    "criticalManagementItems": [
+      "Benzodiazepines, ideally symptom-triggered by CIWA",
+      "Thiamine BEFORE/with glucose to prevent Wernicke"
+    ],
+    "keyImageInterpretationFindings": [
+      "Supraventricular tachycardia (regular, narrow, rate ~180).",
+      "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Supraventricular tachycardia (regular, narrow, rate ~180).",
+      "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

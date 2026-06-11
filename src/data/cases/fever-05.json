@@ -1,0 +1,575 @@
+{
+  "id": "fever-05",
+  "category": "Fever",
+  "difficulty": "hard",
+  "title": "Fever, headache, and neck stiffness",
+  "diagnosis": "Bacterial meningitis",
+  "chart": {
+    "ageSex": "22M",
+    "cc": "Severe headache and fever",
+    "oneLiner": "22M college student presents with one day of high fever, severe headache, neck stiffness, photophobia, and new lethargy.",
+    "vitals": {
+      "BP": "112/70",
+      "HR": "112",
+      "RR": "20",
+      "Temp": "39.2°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My head is pounding, the light hurts, and my neck is so stiff I can barely move it.",
+  "patientFile": "PERSONA: 22-year-old man, ill-appearing, photophobic, increasingly drowsy. Limited historian as he becomes more lethargic.\n\nCOLLATERAL (provide ONLY if the student asks friends/roommates/chart): Rapidly progressive over ~12–24h — fever, worsening headache, neck stiffness, vomiting, and confusion. Lives in a dormitory; a classmate was recently ill. Not vaccinated against meningococcus (only if asked). No head trauma.\n\nHPI (from patient — limited): severe headache, light hurts, neck stiff, feels awful.\nPMH: none. MEDS: none. SOCIAL: college dorm.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill, photophobic, lethargic.\n- Vitals: BP 112/70, HR 112, RR 20, 39.2°C, SpO2 98% RA.\n- Neck: NUCHAL RIGIDITY; positive Kernig and Brudzinski signs if tested.\n- Neuro: lethargic/confused; no clear focal deficit; pupils reactive.\n- Skin: a non-blanching PETECHIAL/purpuric rash if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide COLLATERAL (dorm exposure, vaccination status, timeline) only when the student explicitly asks roommates/chart/exposures.\n- Meningeal signs and the rash are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "BloodCultures": "Two sets drawn immediately.",
+      "CBC": "WBC 19.0 with marked left shift.",
+      "BMP": "Mild changes; glucose 110.",
+      "Coags": "Mild abnormalities (watch for DIC).",
+      "CT_head": "If indicated (focal deficit, papilledema, immunocompromise, seizure, significantly depressed consciousness): no mass/shift — safe to proceed to LP.",
+      "LP_CSF": "Lumbar puncture CSF: high opening pressure; neutrophilic pleocytosis (high WBC); HIGH protein; LOW glucose; Gram stain shows organisms — a bacterial pattern."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus rhythm with uniformly prolonged PR interval (~280 ms); every P conducts.",
+      "verify": "Source a study matching: Sinus rhythm with uniformly prolonged PR interval (~280 ms); every P conducts. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing first-degree AV block, long PR",
+      "searchTerms": [
+        "first degree AV block ECG",
+        "prolonged PR interval 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Right lower lobe airspace consolidation with air bronchograms; preserved right heart border.",
+      "verify": "Source a study matching: Right lower lobe airspace consolidation with air bronchograms; preserved right heart border. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing right lower lobe pneumonia",
+      "searchTerms": [
+        "right lower lobe pneumonia x-ray",
+        "lobar consolidation air bronchogram radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "BloodCultures",
+    "CBC",
+    "BMP",
+    "Coags",
+    "CT_head",
+    "LP_CSF",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BloodCultures",
+    "LP_CSF"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your assessment, list your differential (note your leading diagnosis).",
+      "rubric": "Bacterial meningitis (leading & CANT-MISS,9). Viral meningitis/encephalitis (CANT-MISS,4). Subarachnoid hemorrhage (CANT-MISS,4). Brain abscess (core,2). Sepsis from another source (core,2). Connects fever + headache + meningismus + altered mental status (± petechial rash) to bacterial meningitis (core,4).",
+      "idealAnswer": "Leading diagnosis: Bacterial meningitis. Must-not-miss diagnoses to exclude: Viral meningitis/encephalitis; Subarachnoid hemorrhage. Also reasonable: Brain abscess; Sepsis from another source.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Bacterial meningitis",
+            "points": 9
+          },
+          {
+            "item": "Viral meningitis/encephalitis",
+            "points": 4
+          },
+          {
+            "item": "Subarachnoid hemorrhage",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Brain abscess",
+            "points": 2
+          },
+          {
+            "item": "Sepsis from another source",
+            "points": 2
+          },
+          {
+            "item": "Connects fever + headache + meningismus + altered mental status (± petechial rash) to bacterial meningitis",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Viral meningitis/encephalitis",
+        "Subarachnoid hemorrhage"
+      ],
+      "acceptableAlternatives": [
+        "Brain abscess",
+        "Sepsis from another source"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What is your workup, and in what ORDER? (Sequencing matters.)",
+      "rubric": "Blood cultures immediately (CANT-MISS,4). Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture (CANT-MISS,5). CT head BEFORE LP only if indicated (focal deficit, papilledema, immunocompromise, seizure, depressed consciousness) (3). CBC, coags (2). Recognizes that imaging/LP must NOT delay antibiotics (1). PENALTY: routine CT before LP in everyone delaying treatment (-2).",
+      "idealAnswer": "Order: Blood cultures immediately; Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Blood cultures immediately",
+            "points": 4
+          },
+          {
+            "item": "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "routine CT before LP in everyone delaying treatment",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Blood cultures immediately",
+        "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "routine CT before LP in everyone delaying treatment"
+      ],
+      "orderSensitiveActions": [
+        "routine CT before LP in everyone delaying treatment"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "measures the PR interval",
+        "PR >200 ms with 1:1 conduction"
+      ],
+      "criticalFindings": [
+        "First-degree AV block (PR ~280 ms, every P conducts)."
+      ],
+      "commonMistakes": [
+        "overlooking the prolonged PR and calling it normal sinus",
+        "confusing it with higher-grade block"
+      ],
+      "idealAnswer": "First-degree AV block: sinus rhythm, fixed prolonged PR (~280 ms), each P wave conducts.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "First-degree AV block (PR ~280 ms, every P conducts)."
+        ],
+        "coreActions": [
+          "measures the PR interval",
+          "PR >200 ms with 1:1 conduction"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it screens for a pulmonary source (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "lobar consolidation with air bronchograms",
+        "localizes it to the right lower lobe"
+      ],
+      "criticalFindings": [
+        "Right lower lobe consolidation (pneumonia)."
+      ],
+      "commonMistakes": [
+        "mislocalizing the lobe",
+        "missing a retrocardiac consolidation"
+      ],
+      "idealAnswer": "Right lower lobe consolidation with air bronchograms, consistent with pneumonia.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Right lower lobe consolidation (pneumonia)."
+        ],
+        "coreActions": [
+          "lobar consolidation with air bronchograms",
+          "localizes it to the right lower lobe"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "CSF shows neutrophilic pleocytosis, high protein, low glucose, and a positive Gram stain. What is your diagnosis?",
+      "rubric": "Bacterial meningitis (6). Interprets the bacterial CSF pattern — neutrophils, high protein, LOW glucose, positive Gram stain (4).",
+      "idealAnswer": "Bacterial meningitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan? (Timing is critical.)",
+      "rubric": "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant) (CANT-MISS,9). Dexamethasone with or just before the first antibiotic dose (CANT-MISS,5). Droplet isolation (3). Blood cultures/LP as able without delaying treatment (3). ID consult, supportive care, monitor for complications; chemoprophylaxis for close contacts (3). PENALTY: delaying antibiotics for imaging/LP (-5); omitting dexamethasone (-2).",
+      "idealAnswer": "Plan: Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant); Dexamethasone with or just before the first antibiotic dose.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
+            "points": 9
+          },
+          {
+            "item": "Dexamethasone with or just before the first antibiotic dose",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "delaying antibiotics for imaging/LP",
+            "points": -5
+          }
+        ]
+      },
+      "requiredActions": [
+        "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
+        "Dexamethasone with or just before the first antibiotic dose"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "delaying antibiotics for imaging/LP"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "drowsy",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "very brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [],
+    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
+    "affect": "22-year-old man, ill-appearing, photophobic, increasingly drowsy. Limited historian as he becomes more lethargic.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_neck_stiffness_finding_1",
+      "finding": "Neck: NUCHAL RIGIDITY; positive Kernig and Brudzinski signs if tested.",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No nuchal rigidity."
+    },
+    {
+      "id": "assess_for_petechiae_finding_2",
+      "finding": "Skin: a non-blanching PETECHIAL/purpuric rash if examined.",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No petechiae or purpura."
+    },
+    {
+      "id": "assess_motor_strength_finding_3",
+      "finding": "Neuro: lethargic/confused; no clear focal deficit; pupils reactive.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    },
+    {
+      "id": "assess_mental_status_finding_4",
+      "finding": "General: ill, photophobic, lethargic.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No photophobia."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Bacterial meningitis",
+    "diagnosticFramework": "22M college student presents with one day of high fever, severe headache, neck stiffness, photophobia, and new lethargy. The diagnosis is Bacterial meningitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Neck: NUCHAL RIGIDITY; positive Kernig and Brudzinski signs if tested.",
+      "Skin: a non-blanching PETECHIAL/purpuric rash if examined.",
+      "Neuro: lethargic/confused; no clear focal deficit; pupils reactive.",
+      "General: ill, photophobic, lethargic."
+    ],
+    "keyDiagnosticFindings": [
+      "BloodCultures",
+      "CBC",
+      "BMP",
+      "Coags",
+      "CT_head",
+      "LP_CSF"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Bacterial meningitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Bacterial meningitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "delaying antibiotics for imaging/LP"
+    ],
+    "managementPearls": [
+      "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
+      "Dexamethasone with or just before the first antibiotic dose"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_neck_stiffness",
+      "assess_for_petechiae"
+    ],
+    "criticalWorkupItems": [
+      "Blood cultures immediately",
+      "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute process (screens for a pulmonary source)."
+    ],
+    "criticalManagementItems": [
+      "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
+      "Dexamethasone with or just before the first antibiotic dose"
+    ],
+    "keyImageInterpretationFindings": [
+      "First-degree AV block (PR ~280 ms, every P conducts).",
+      "Right lower lobe consolidation (pneumonia)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "First-degree AV block (PR ~280 ms, every P conducts).",
+      "Right lower lobe consolidation (pneumonia)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Elicits the patient's concerns / ICE",
+        "points": 1
+      },
+      {
+        "item": "Avoids medical jargon; checks understanding",
+        "points": 1
+      },
+      {
+        "item": "Signposts and structures the encounter",
+        "points": 1
+      },
+      {
+        "item": "Demonstrates empathy and acknowledges affect",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

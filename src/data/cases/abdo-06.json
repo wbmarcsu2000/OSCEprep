@@ -1,0 +1,601 @@
+{
+  "id": "abdo-06",
+  "category": "Abdominal Pain",
+  "difficulty": "hard",
+  "title": "Severe pain out of proportion to exam",
+  "diagnosis": "Acute mesenteric ischemia",
+  "chart": {
+    "ageSex": "72F",
+    "cc": "Severe abdominal pain",
+    "oneLiner": "72F with atrial fibrillation presents with sudden, severe, diffuse abdominal pain that seems out of proportion to a relatively benign abdominal exam.",
+    "vitals": {
+      "BP": "108/66",
+      "HR": "118 (irregular)",
+      "RR": "22",
+      "Temp": "37.6°C",
+      "SpO2": "96% RA"
+    },
+    "timer": 180
+  },
+  "opening": "The pain came on all of a sudden and it's unbearable — but the doctor barely pressing on my belly doesn't seem to match how bad it feels.",
+  "patientFile": "PERSONA: 72-year-old woman, in severe distress from pain, restless. Cooperative.\n\nHPI: SUDDEN onset of severe, diffuse, constant abdominal pain ~3h ago, far worse than the exam findings suggest. Associated nausea, vomiting, and one loose (later bloody) stool. Known atrial fibrillation; admits she stopped her blood thinner a couple weeks ago (only if asked about medications/anticoagulation).\nPMH: atrial fibrillation, hypertension, prior TIA. MEDS: was on apixaban — self-discontinued; metoprolol; amlodipine. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: distressed, pale, diaphoretic.\n- Vitals: BP 108/66, HR 118 IRREGULARLY irregular, RR 22, 37.6°C, SpO2 96% RA.\n- Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop late once infarction occurs.)\n- Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the stopped anticoagulation unless asked about medications, blood thinners, or adherence.\n- The irregular pulse and the pain-out-of-proportion discrepancy are key — reveal the rhythm if the pulse/heart is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Lactate": "Elevated (e.g., 4.5) — a critical clue to bowel ischemia.",
+      "CBC": "WBC 18.0 with left shift, Hgb 13.5, Plt 250.",
+      "BMP": "HCO3 low with metabolic acidosis; Cr 1.3.",
+      "LFTs": "Mild elevations.",
+      "CTA_abdomen": "CT angiography of the abdomen: filling defect/occlusion of the superior mesenteric artery; segmental bowel wall changes; no free air yet.",
+      "StoolEvaluation": "Blood in the stool is documented (consistent with mucosal ischemia). Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "verify": "From the LITFL 'Atrial Fibrillation' library page — download an example tracing that matches: Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic sour … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "searchTerms": [
+        "12-lead EKG Atrial fibrillation (irregularly irregular"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20upright&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
+      "verify": "Pick a CC normal upright chest film (no subdiaphragmatic free air).",
+      "assetNeeded": true,
+      "imageDescription": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
+      "searchTerms": [
+        "chest radiograph Nonspecific; importantly free early"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Lactate",
+    "CBC",
+    "BMP",
+    "LFTs",
+    "CTA_abdomen",
+    "ekg",
+    "cxr",
+    "StoolEvaluation"
+  ],
+  "essential": [
+    "Lactate",
+    "ekg",
+    "CTA_abdomen"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Acute mesenteric ischemia (leading & CANT-MISS,9; accepts mesenteric ischemia/SMA embolus). Perforated viscus (CANT-MISS,4). Ruptured AAA (CANT-MISS,3). Bowel obstruction (core,2). Pancreatitis (core,2). Names mesenteric ischemia with the key clue — pain out of proportion + AF + embolic risk (core,5).",
+      "idealAnswer": "Leading diagnosis: Acute mesenteric ischemia. Must-not-miss diagnoses to exclude: Perforated viscus; Ruptured AAA. Also reasonable: Bowel obstruction; Pancreatitis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Perforated viscus",
+            "points": 4
+          },
+          {
+            "item": "Ruptured AAA",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Bowel obstruction",
+            "points": 2
+          },
+          {
+            "item": "Pancreatitis",
+            "points": 2
+          },
+          {
+            "item": "Names mesenteric ischemia with the key clue — pain out of proportion + AF + embolic risk",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Perforated viscus",
+        "Ruptured AAA"
+      ],
+      "acceptableAlternatives": [
+        "Bowel obstruction",
+        "Pancreatitis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Serum lactate (CANT-MISS,4). CT angiography of the abdomen (CANT-MISS,5). EKG (3). CBC (2). BMP / blood gas for acidosis (1). PENALTY: relying on plain films alone or delaying CTA (-3); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: Serum lactate; CT angiography of the abdomen.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Serum lactate",
+            "points": 4
+          },
+          {
+            "item": "CT angiography of the abdomen",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "relying on plain films alone or delaying CTA",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Serum lactate",
+        "CT angiography of the abdomen"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "relying on plain films alone or delaying CTA"
+      ],
+      "orderSensitiveActions": [
+        "relying on plain films alone or delaying CTA"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = atrial fibrillation (irregularly irregular, no P waves); no acute ST elevation. CREDIT: identifies atrial fibrillation (7); recognizes it as the likely embolic source for mesenteric ischemia (4); no acute STEMI (2); systematic read (2). PENALTY: missing/ misidentifying the AF (-3).",
+      "keyFindings": [
+        "identifies atrial fibrillation",
+        "recognizes it as the likely embolic source for mesenteric ischemia",
+        "no acute STEMI",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation."
+      ],
+      "commonMistakes": [
+        "missing/ misidentifying the AF"
+      ],
+      "idealAnswer": "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies atrial fibrillation",
+            "points": 7
+          },
+          {
+            "item": "recognizes it as the likely embolic source for mesenteric ischemia",
+            "points": 4
+          },
+          {
+            "item": "no acute STEMI",
+            "points": 2
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing/ misidentifying the AF",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = nonspecific/normal; no free air early. CREDIT: identifies a normal/nonspecific film (5); explicitly looks for and excludes free air (perforation) (5). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal/nonspecific film"
+      ],
+      "criticalFindings": [
+        "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+      ],
+      "commonMistakes": [
+        "inventing pathology"
+      ],
+      "idealAnswer": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a normal/nonspecific film",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the elevated lactate and CTA, what is your diagnosis and reasoning?",
+      "rubric": "Acute mesenteric ischemia, likely embolic (SMA) (6). Links AF + stopped anticoagulation → embolus; lactate + acidosis indicate ischemia (4).",
+      "idealAnswer": "Acute mesenteric ischemia. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Emergent surgical + vascular/IR consultation for revascularization (CANT-MISS,8). Aggressive IV fluid resuscitation (4). Broad-spectrum IV antibiotics (4). Systemic anticoagulation (heparin) (4). NPO, NG decompression, analgesia (3). PENALTY: observation/discharge or attributing to simple gastroenteritis (delay is fatal) (-5).",
+      "idealAnswer": "Plan: Emergent surgical + vascular/IR consultation for revascularization.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Emergent surgical + vascular/IR consultation for revascularization",
+            "points": 8
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "observation/discharge or attributing to simple gastroenteritis (delay is fatal)",
+            "points": -5
+          }
+        ]
+      },
+      "requiredActions": [
+        "Emergent surgical + vascular/IR consultation for revascularization"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "observation/discharge or attributing to simple gastroenteritis (delay is fatal)"
+      ],
+      "consults": [
+        "Emergent surgical + vascular/IR consultation for revascularization"
+      ],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "distress",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "72-year-old woman, in severe distress from pain, restless. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_rebound_tenderness_finding_1",
+      "finding": "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_2",
+      "finding": "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_3",
+      "finding": "Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
+      "finding": "General: distressed, pale, diaphoretic.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No tremor or diaphoresis."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Acute mesenteric ischemia",
+    "diagnosticFramework": "72F with atrial fibrillation presents with sudden, severe, diffuse abdominal pain that seems out of proportion to a relatively benign abdominal exam. The diagnosis is Acute mesenteric ischemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.",
+      "General: distressed, pale, diaphoretic."
+    ],
+    "keyDiagnosticFindings": [
+      "Lactate",
+      "CBC",
+      "BMP",
+      "LFTs",
+      "CTA_abdomen",
+      "StoolEvaluation"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Acute mesenteric ischemia while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Acute mesenteric ischemia and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "observation/discharge or attributing to simple gastroenteritis (delay is fatal)"
+    ],
+    "managementPearls": [
+      "Emergent surgical + vascular/IR consultation for revascularization"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_rebound_tenderness",
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "Serum lactate",
+      "CT angiography of the abdomen"
+    ],
+    "criticalInterpretationItems": [
+      "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+    ],
+    "criticalManagementItems": [
+      "Emergent surgical + vascular/IR consultation for revascularization"
+    ],
+    "keyImageInterpretationFindings": [
+      "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

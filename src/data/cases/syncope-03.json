@@ -1,0 +1,587 @@
+{
+  "id": "syncope-03",
+  "category": "Syncope",
+  "difficulty": "hard",
+  "title": "Sudden collapse without warning",
+  "diagnosis": "Complete heart block",
+  "chart": {
+    "ageSex": "78M",
+    "cc": "Sudden collapse",
+    "oneLiner": "78M presents after a sudden loss of consciousness with NO warning, on a background of recurrent near-fainting and fatigue.",
+    "vitals": {
+      "BP": "104/64",
+      "HR": "38",
+      "RR": "16",
+      "Temp": "36.9°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I just dropped — no warning at all. One second I was fine, then I woke up on the floor.",
+  "patientFile": "PERSONA: 78-year-old man, now alert but fatigued. Good historian.\n\nHPI: ABRUPT loss of consciousness with NO prodrome (no nausea, no warmth, no lightheadedness beforehand). Quick recovery without confusion. Several recent episodes of near-fainting and increasing fatigue, exertional tiredness, and a 'slow pulse' noticed by his home BP cuff. NO chest pain, NO seizure activity, NO incontinence. The absence of any warning is a red flag for a cardiac cause.\nPMH: hypertension, coronary artery disease, prior MI. MEDS: metoprolol, lisinopril, aspirin, atorvastatin. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, fatigued-appearing.\n- Vitals: BP 104/64, HR ~38 and regular, RR 16, 36.9°C, SpO2 97% RA.\n- Cardiac: BRADYCARDIC, regular; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) if specifically examined.\n- Neuro: no focal deficit, oriented.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize (only if asked about prodrome/warning) that there was NO warning before the collapse.\n- The bradycardia, cannon a-waves, and variable S1 are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 98 — normal.",
+      "Troponin": "Mildly elevated, stable — no acute infarct pattern.",
+      "BMP": "Na 139, K 4.6 (not hyperkalemic), Cr 1.1, Mg normal.",
+      "TSH": "Normal.",
+      "Echo": "Echo (later): prior inferior wall motion abnormality, preserved-to-mildly-reduced EF, no critical valve lesion."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Complete-heart-block-CHB.jpg",
+      "source": "https://litfl.com/av-block-3rd-degree-complete-heart-block/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "verify": "From the LITFL 'Complete Heart Block (3rd degree AV block)' library page — download an example tracing that matches: Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial ra … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "searchTerms": [
+        "12-lead EKG Third-degree (complete) block: waves"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Enlarged cardiac silhouette (cardiothoracic ratio >0.5) on a PA film; lungs otherwise clear.",
+      "verify": "Source a study matching: Enlarged cardiac silhouette (cardiothoracic ratio >0.5) on a PA film; lungs otherwise clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "PA chest radiograph showing cardiomegaly",
+      "searchTerms": [
+        "cardiomegaly chest x-ray PA",
+        "enlarged cardiac silhouette radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "Troponin",
+    "BMP",
+    "TSH",
+    "Echo",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "Troponin",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Cardiac syncope due to bradyarrhythmia / high-grade AV block (leading & CANT-MISS,9). Tachyarrhythmia (VT) (CANT-MISS,4). Structural cardiac disease/aortic stenosis (CANT-MISS,3). Vasovagal (much less likely — NO prodrome) (core,2). Seizure (core,2). Recognizes that abrupt syncope without prodrome + bradycardia points to a conduction problem (core,5).",
+      "idealAnswer": "Leading diagnosis: Cardiac syncope due to bradyarrhythmia / high-grade AV block. Must-not-miss diagnoses to exclude: Tachyarrhythmia (VT); Structural cardiac disease/aortic stenosis. Also reasonable: Vasovagal (much less likely — NO prodrome); Seizure.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Cardiac syncope due to bradyarrhythmia / high-grade AV block",
+            "points": 9
+          },
+          {
+            "item": "Tachyarrhythmia (VT)",
+            "points": 4
+          },
+          {
+            "item": "Structural cardiac disease/aortic stenosis",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Vasovagal (much less likely — NO prodrome)",
+            "points": 2
+          },
+          {
+            "item": "Seizure",
+            "points": 2
+          },
+          {
+            "item": "Recognizes that abrupt syncope without prodrome + bradycardia points to a conduction problem",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Tachyarrhythmia (VT)",
+        "Structural cardiac disease/aortic stenosis"
+      ],
+      "acceptableAlternatives": [
+        "Vasovagal (much less likely — NO prodrome)",
+        "Seizure"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "EKG immediately (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring (CANT-MISS,4). Troponin (2). BMP incl. potassium/magnesium and review for AV-nodal-blocking drugs (2). TSH (1). PENALTY: discharging or failing to place the patient on a monitor (-3).",
+      "idealAnswer": "Order: EKG immediately; Continuous telemetry / cardiac monitoring.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG immediately",
+            "points": 6
+          },
+          {
+            "item": "Continuous telemetry / cardiac monitoring",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging or failing to place the patient on a monitor",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "EKG immediately",
+        "Continuous telemetry / cardiac monitoring"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "discharging or failing to place the patient on a monitor"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (be specific about the rhythm).",
+      "rubric": "Findings = third-degree (complete) AV block with AV dissociation and a slow ventricular escape. CREDIT: identifies bradycardia (3); recognizes P waves and QRS are DISSOCIATED / independent (6); names complete/third-degree AV block (4); systematic read (2). PENALTY: misreading as sinus bradycardia or 1st/2nd-degree block (-3).",
+      "keyFindings": [
+        "identifies bradycardia",
+        "recognizes P waves and QRS are DISSOCIATED / independent",
+        "names complete/third-degree AV block",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm."
+      ],
+      "commonMistakes": [
+        "misreading as sinus bradycardia or 1st/2nd-degree block"
+      ],
+      "idealAnswer": "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies bradycardia",
+            "points": 3
+          },
+          {
+            "item": "recognizes P waves and QRS are DISSOCIATED / independent",
+            "points": 6
+          },
+          {
+            "item": "names complete/third-degree AV block",
+            "points": 4
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "misreading as sinus bradycardia or 1st/2nd-degree block",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal/near-normal film (6); comments on heart size / excluding other causes (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "measures the cardiothoracic ratio",
+        "identifies cardiomegaly on a PA film"
+      ],
+      "criticalFindings": [
+        "Cardiomegaly (cardiothoracic ratio >0.5)."
+      ],
+      "commonMistakes": [
+        "calling a normal heart enlarged on an AP/portable film",
+        "not checking film projection"
+      ],
+      "idealAnswer": "Cardiomegaly with a cardiothoracic ratio >0.5 on an adequate PA film.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Cardiomegaly (cardiothoracic ratio >0.5)."
+        ],
+        "coreActions": [
+          "measures the cardiothoracic ratio",
+          "identifies cardiomegaly on a PA film"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the EKG, what is your diagnosis and why is this dangerous?",
+      "rubric": "Complete (third-degree) heart block causing cardiac syncope (6). Explains the risk — unreliable escape rhythm, risk of asystole/sudden death (4).",
+      "idealAnswer": "Complete heart block. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Admit to a monitored/telemetry setting (CANT-MISS,4). Identify and stop reversible causes — hold AV-nodal blockers (e.g., metoprolol), correct electrolytes (5). If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing (CANT-MISS,6). Urgent cardiology consult for PERMANENT PACEMAKER (CANT-MISS,7). Treat any ischemia (3). PENALTY: discharging the patient (-5); giving more AV-nodal-blocking agents (-2).",
+      "idealAnswer": "Plan: Admit to a monitored/telemetry setting; If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing; Urgent cardiology consult for PERMANENT PACEMAKER.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Admit to a monitored/telemetry setting",
+            "points": 4
+          },
+          {
+            "item": "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
+            "points": 6
+          },
+          {
+            "item": "Urgent cardiology consult for PERMANENT PACEMAKER",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging the patient",
+            "points": -5
+          }
+        ]
+      },
+      "requiredActions": [
+        "Admit to a monitored/telemetry setting",
+        "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
+        "Urgent cardiology consult for PERMANENT PACEMAKER"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "discharging the patient"
+      ],
+      "consults": [
+        "Urgent cardiology consult for PERMANENT PACEMAKER"
+      ],
+      "disposition": "Admit to a monitored/telemetry setting"
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "78-year-old man, now alert but fatigued. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_jvp_finding_1",
+      "finding": "Cardiac: BRADYCARDIC, regular; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) if specifically examined.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "assess_motor_strength_finding_2",
+      "finding": "Neuro: no focal deficit, oriented.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Complete heart block",
+    "diagnosticFramework": "78M presents after a sudden loss of consciousness with NO warning, on a background of recurrent near-fainting and fatigue. The diagnosis is Complete heart block, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: BRADYCARDIC, regular; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) if specifically examined.",
+      "Neuro: no focal deficit, oriented."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "Troponin",
+      "BMP",
+      "TSH",
+      "Echo"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Complete heart block while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Complete heart block and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "discharging the patient"
+    ],
+    "managementPearls": [
+      "Admit to a monitored/telemetry setting",
+      "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
+      "Urgent cardiology consult for PERMANENT PACEMAKER"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [
+      "EKG immediately",
+      "Continuous telemetry / cardiac monitoring"
+    ],
+    "criticalInterpretationItems": [
+      "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "No acute cardiopulmonary process (mainly to assess heart size / exclude other causes)."
+    ],
+    "criticalManagementItems": [
+      "Admit to a monitored/telemetry setting",
+      "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
+      "Urgent cardiology consult for PERMANENT PACEMAKER"
+    ],
+    "keyImageInterpretationFindings": [
+      "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "Cardiomegaly (cardiothoracic ratio >0.5)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "Cardiomegaly (cardiothoracic ratio >0.5)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

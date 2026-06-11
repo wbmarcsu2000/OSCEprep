@@ -1,0 +1,591 @@
+{
+  "id": "anemia-05",
+  "category": "Anemia",
+  "difficulty": "hard",
+  "title": "Fatigue, jaundice, and dark urine",
+  "diagnosis": "Autoimmune hemolytic anemia",
+  "chart": {
+    "ageSex": "45F",
+    "cc": "Fatigue and yellow eyes",
+    "oneLiner": "45F presents with one week of rapidly worsening fatigue, jaundice, and dark urine.",
+    "vitals": {
+      "BP": "118/72",
+      "HR": "112",
+      "RR": "18",
+      "Temp": "37.4°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've gone really pale and tired this week, my eyes have turned yellow, and my urine looks dark.",
+  "patientFile": "PERSONA: 45-year-old woman, pale and mildly jaundiced, tired. Cooperative.\n\nHPI: Rapidly progressive fatigue, breathlessness, and lightheadedness over a week. Noticed yellowing of the eyes and dark (tea-colored) urine. Recent viral upper respiratory illness; started a new antibiotic recently (only if asked about recent illness/medications). NO black/bloody stools, NO heavy menses, NO known liver disease.\nPMH: none significant; possible underlying autoimmune tendency. MEDS: a recently started antibiotic (if asked). SOCIAL: minimal alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale with scleral icterus/jaundice.\n- Vitals: BP 118/72, HR 112, RR 18, 37.4°C, SpO2 98% RA.\n- Abdomen: mild splenomegaly if examined; no marked tenderness.\n- Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent illness or new antibiotic unless asked about recent infections or medications.\n- Splenomegaly is revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 7.2, MCV 102 (elevated due to reticulocytosis), WBC normal, Plt 240 (NORMAL platelets — important).",
+      "Reticulocyte": "Markedly elevated (appropriate marrow response).",
+      "Smear": "Spherocytes and polychromasia; NO schistocytes (argues against microangiopathy).",
+      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW — a hemolytic pattern.",
+      "Coombs": "Direct antiglobulin (Coombs) test POSITIVE — confirms autoimmune hemolysis.",
+      "BMP": "Cr normal (no renal involvement to suggest HUS)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "RBBB morphology plus left axis deviation (left anterior fascicular block).",
+      "verify": "Source a study matching: RBBB morphology plus left axis deviation (left anterior fascicular block). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing bifascicular block RBBB LAFB",
+      "searchTerms": [
+        "bifascicular block ECG",
+        "RBBB left anterior fascicular block"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Elevated right hemidiaphragm with otherwise clear lungs (incidental).",
+      "verify": "Source a study matching: Elevated right hemidiaphragm with otherwise clear lungs (incidental). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing elevated hemidiaphragm",
+      "searchTerms": [
+        "elevated hemidiaphragm chest x-ray",
+        "raised right hemidiaphragm radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Reticulocyte",
+    "Smear",
+    "Hemolysis",
+    "Coombs",
+    "BMP",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC",
+    "Coombs",
+    "Smear"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this anemia (note your leading diagnosis).",
+      "rubric": "Hemolytic anemia — autoimmune (leading,7). Microangiopathic hemolysis — TTP/HUS (CANT-MISS to exclude,5). Hereditary hemolysis (G6PD/spherocytosis) (core,3). Drug-induced hemolysis (core,3). Bleeding (core,2). Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS (core,5).",
+      "idealAnswer": "Leading diagnosis: Hemolytic anemia — autoimmune. Must-not-miss diagnoses to exclude: Microangiopathic hemolysis — TTP/HUS. Also reasonable: Hereditary hemolysis (G6PD/spherocytosis); Drug-induced hemolysis; Bleeding.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Hemolytic anemia — autoimmune",
+            "points": 7
+          },
+          {
+            "item": "Microangiopathic hemolysis — TTP/HUS",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Hereditary hemolysis (G6PD/spherocytosis)",
+            "points": 3
+          },
+          {
+            "item": "Drug-induced hemolysis",
+            "points": 3
+          },
+          {
+            "item": "Bleeding",
+            "points": 2
+          },
+          {
+            "item": "Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Microangiopathic hemolysis — TTP/HUS"
+      ],
+      "acceptableAlternatives": [
+        "Hereditary hemolysis (G6PD/spherocytosis)",
+        "Drug-induced hemolysis",
+        "Bleeding"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — spherocytes vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (3). Direct antiglobulin (Coombs) test (CANT-MISS,3). Renal function/platelets to exclude TTP/HUS (2). PENALTY: starting steroids before excluding TTP (which needs plasma exchange, not steroids) (-2).",
+      "idealAnswer": "Order: CBC + reticulocyte count; Peripheral smear — spherocytes vs schistocytes; Direct antiglobulin (Coombs) test.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC + reticulocyte count",
+            "points": 3
+          },
+          {
+            "item": "Peripheral smear — spherocytes vs schistocytes",
+            "points": 4
+          },
+          {
+            "item": "Direct antiglobulin (Coombs) test",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "starting steroids before excluding TTP (which needs plasma exchange, not steroids)",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC + reticulocyte count",
+        "Peripheral smear — spherocytes vs schistocytes",
+        "Direct antiglobulin (Coombs) test"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "starting steroids before excluding TTP (which needs plasma exchange, not steroids)"
+      ],
+      "orderSensitiveActions": [
+        "starting steroids before excluding TTP (which needs plasma exchange, not steroids)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "RBBB pattern plus marked left axis deviation",
+        "names it as bifascicular block"
+      ],
+      "criticalFindings": [
+        "Bifascicular block (RBBB + left anterior fascicular block)."
+      ],
+      "commonMistakes": [
+        "reporting only the RBBB and missing the axis/fascicular component"
+      ],
+      "idealAnswer": "Bifascicular block: RBBB plus left anterior fascicular block (left axis deviation).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Bifascicular block (RBBB + left anterior fascicular block)."
+        ],
+        "coreActions": [
+          "RBBB pattern plus marked left axis deviation",
+          "names it as bifascicular block"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it can screen for a secondary cause (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies the elevated hemidiaphragm",
+        "gives a brief differential (eventration, phrenic palsy)"
+      ],
+      "criticalFindings": [
+        "Elevated right hemidiaphragm."
+      ],
+      "commonMistakes": [
+        "mistaking the elevated diaphragm for a basal effusion or mass"
+      ],
+      "idealAnswer": "Elevated right hemidiaphragm; consider eventration or phrenic nerve palsy.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Elevated right hemidiaphragm."
+        ],
+        "coreActions": [
+          "identifies the elevated hemidiaphragm",
+          "gives a brief differential (eventration, phrenic palsy)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, spherocytes, NO schistocytes, normal platelets, and a positive Coombs. What is your diagnosis and what did you rule out?",
+      "rubric": "Autoimmune hemolytic anemia (warm type) (6). Cites a positive DAT with hemolysis markers; explicitly rules out TTP/HUS via the absence of schistocytes, normal platelets, and normal renal function (4).",
+      "idealAnswer": "Autoimmune hemolytic anemia. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Corticosteroids — first-line for warm AIHA (CANT-MISS,8). Folic acid supplementation (3). Identify and stop any offending drug / treat the underlying cause (5). Transfuse cautiously if hemodynamically compromised, in consultation with the blood bank (4). Hematology consultation; consider rituximab or splenectomy for refractory disease (3). PENALTY: missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange (-4).",
+      "idealAnswer": "Plan: Corticosteroids — first-line for warm AIHA.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Corticosteroids — first-line for warm AIHA",
+            "points": 8
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Corticosteroids — first-line for warm AIHA"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "jaundiced",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "45-year-old woman, pale and mildly jaundiced, tired. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_splenomegaly_finding_1",
+      "finding": "Abdomen: mild splenomegaly if examined; no marked tenderness.",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_2",
+      "finding": "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "inspect_sclera_finding_3",
+      "finding": "General: pale with scleral icterus/jaundice.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "assess_for_petechiae_finding_4",
+      "finding": "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No petechiae or purpura."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Autoimmune hemolytic anemia",
+    "diagnosticFramework": "45F presents with one week of rapidly worsening fatigue, jaundice, and dark urine. The diagnosis is Autoimmune hemolytic anemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: mild splenomegaly if examined; no marked tenderness.",
+      "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.",
+      "General: pale with scleral icterus/jaundice.",
+      "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Reticulocyte",
+      "Smear",
+      "Hemolysis",
+      "Coombs",
+      "BMP"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Autoimmune hemolytic anemia while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Autoimmune hemolytic anemia and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange"
+    ],
+    "managementPearls": [
+      "Corticosteroids — first-line for warm AIHA"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area",
+      "assess_for_petechiae"
+    ],
+    "criticalWorkupItems": [
+      "CBC + reticulocyte count",
+      "Peripheral smear — spherocytes vs schistocytes",
+      "Direct antiglobulin (Coombs) test"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute process (may screen for an underlying lymphoproliferative/secondary cause)."
+    ],
+    "criticalManagementItems": [
+      "Corticosteroids — first-line for warm AIHA"
+    ],
+    "keyImageInterpretationFindings": [
+      "Bifascicular block (RBBB + left anterior fascicular block).",
+      "Elevated right hemidiaphragm."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Bifascicular block (RBBB + left anterior fascicular block).",
+      "Elevated right hemidiaphragm."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

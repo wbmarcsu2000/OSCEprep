@@ -1,0 +1,582 @@
+{
+  "id": "abdo-04",
+  "category": "Abdominal Pain",
+  "difficulty": "moderate",
+  "title": "Cramping pain with vomiting and no stool",
+  "diagnosis": "Small bowel obstruction",
+  "chart": {
+    "ageSex": "60F",
+    "cc": "Crampy abdominal pain and vomiting",
+    "oneLiner": "60F with prior abdominal surgery presents with a day of crampy abdominal pain, distension, bilious vomiting, and inability to pass stool or gas.",
+    "vitals": {
+      "BP": "118/72",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "37.4°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My belly's all crampy and swollen, I keep throwing up, and I haven't been able to go to the bathroom.",
+  "patientFile": "PERSONA: 60-year-old woman, uncomfortable in waves (colicky), abdomen visibly distended. Cooperative.\n\nHPI: ~24h of crampy, intermittent (colicky) abdominal pain that comes in waves, progressive abdominal distension, multiple episodes of vomiting (now bilious), and OBSTIPATION — no flatus or stool since yesterday. Prior open hysterectomy years ago (adhesions; only if asked about surgeries). NO fever initially, NO bloody stool.\nPMH: hysterectomy (open), hypertension. MEDS: amlodipine. SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mild dehydration.\n- Vitals: BP 118/72, HR 104, RR 18, 37.4°C, SpO2 98% RA.\n- Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed midline surgical scar. No hernias palpable (check groin).\n- Mucous membranes dry.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior surgery unless asked about past operations or scars.\n- Bowel sounds, distension, and the scar are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "BMP": "Na 134, K 3.3, Cl 92, HCO3 30 — hypochloremic, hypokalemic metabolic alkalosis from vomiting; BUN 28, Cr 1.2 (prerenal).",
+      "CBC": "WBC 11.5, Hgb 14.0, Plt 270.",
+      "Lactate": "1.6 — normal (a rising lactate would raise concern for strangulation/ischemia).",
+      "CT_abdomen": "CT abdomen/pelvis: dilated proximal small-bowel loops with a transition point and collapsed distal bowel; findings consistent with adhesive small bowel obstruction; no free air or pneumatosis."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "verify": "From the LITFL 'Hypokalaemia' library page — download an example tracing that matches: Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute is … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "searchTerms": [
+        "12-lead EKG Sinus rhythm; possible changes"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Abdominal/chest X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=small%20bowel%20obstruction%20abdominal%20xray%20air%20fluid%20levels&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+      "verify": "Pick a CC plain film showing dilated small-bowel loops with air-fluid levels (SBO); must NOT show free air.",
+      "assetNeeded": true,
+      "imageDescription": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+      "searchTerms": [
+        "chest radiograph Multiple dilated small-bowel loops"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "BMP",
+    "CBC",
+    "Lactate",
+    "CT_abdomen",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "cxr",
+    "BMP",
+    "CT_abdomen"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Small bowel obstruction (leading,8; accepts bowel obstruction). Adynamic ileus (core,3). Large bowel obstruction (core,3). Strangulation/ischemia (CANT-MISS,4). Incarcerated hernia (core,2). Volvulus (bonus,2). Named leading dx w/ justification — colicky pain, distension, obstipation, prior surgery (core,3).",
+      "idealAnswer": "Leading diagnosis: Small bowel obstruction. Must-not-miss diagnoses to exclude: Strangulation/ischemia. Also reasonable: Adynamic ileus; Large bowel obstruction; Incarcerated hernia.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Strangulation/ischemia",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Adynamic ileus",
+            "points": 3
+          },
+          {
+            "item": "Large bowel obstruction",
+            "points": 3
+          },
+          {
+            "item": "Incarcerated hernia",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — colicky pain, distension, obstipation, prior surgery",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Volvulus",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Strangulation/ischemia"
+      ],
+      "acceptableAlternatives": [
+        "Adynamic ileus",
+        "Large bowel obstruction",
+        "Incarcerated hernia"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Upright abdominal/chest X-ray (CANT-MISS,4). CT abdomen/pelvis to confirm and find transition point (CANT-MISS,4). BMP (3). CBC (2). Lactate to assess for ischemia (2). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: Upright abdominal/chest X-ray; CT abdomen/pelvis to confirm and find transition point.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Upright abdominal/chest X-ray",
+            "points": 4
+          },
+          {
+            "item": "CT abdomen/pelvis to confirm and find transition point",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Upright abdominal/chest X-ray",
+        "CT abdomen/pelvis to confirm and find transition point"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus rhythm; possible hypokalemic changes (flat T/U waves); no acute ischemia. CREDIT: rate & rhythm (6); no acute ischemic changes (4); recognizes possible electrolyte (hypokalemia) effect (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "rate & rhythm",
+        "no acute ischemic changes",
+        "effect",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia."
+      ],
+      "commonMistakes": [
+        "over-calling ischemia"
+      ],
+      "idealAnswer": "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "rate & rhythm",
+            "points": 6
+          },
+          {
+            "item": "no acute ischemic changes",
+            "points": 4
+          },
+          {
+            "item": "effect",
+            "points": 3
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling ischemia",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read X-ray",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's upright film. Describe your findings.",
+      "rubric": "Findings = dilated small-bowel loops with air-fluid levels (step-ladder); no free air. CREDIT: identifies dilated bowel loops with air-fluid levels (5); recognizes the obstructive pattern (small bowel) (3); excludes free air (perforation) (2).",
+      "keyFindings": [
+        "identifies dilated bowel loops with air-fluid levels"
+      ],
+      "criticalFindings": [
+        "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+      ],
+      "commonMistakes": [
+        "Over-reading a normal study",
+        "Failing to comment on rate/rhythm or exposure"
+      ],
+      "idealAnswer": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies dilated bowel loops with air-fluid levels",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the CT, what is your diagnosis and what raises concern for the bowel being compromised?",
+      "rubric": "Adhesive small bowel obstruction (5). Notes a transition point with proximal dilation/distal collapse (3). Flags strangulation warning signs — rising lactate, fever, peritonitis, pneumatosis — that mandate surgery (bonus,2).",
+      "idealAnswer": "Small bowel obstruction. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Flags strangulation warning signs — rising lactate, fever, peritonitis, pneumatosis — that mandate surgery",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "NPO (3). Nasogastric tube decompression (CANT-MISS,6). IV fluid resuscitation (5). Correct electrolytes (replace potassium/chloride) (4). Analgesia/antiemetics (2). Surgical consultation; trial of non-operative management for adhesive SBO but operate for strangulation/ischemia or failure to resolve (4). PENALTY: feeding the patient / missing signs of strangulation (-4).",
+      "idealAnswer": "Plan: Nasogastric tube decompression.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Nasogastric tube decompression",
+            "points": 6
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "feeding the patient / missing signs of strangulation",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Nasogastric tube decompression"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "feeding the patient / missing signs of strangulation"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "60-year-old woman, uncomfortable in waves (colicky), abdomen visibly distended. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_abdomen_finding_1",
+      "finding": "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_2",
+      "finding": "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "assess_general_appearance_finding_3",
+      "finding": "General: uncomfortable, mild dehydration.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Well hydrated."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Small bowel obstruction",
+    "diagnosticFramework": "60F with prior abdominal surgery presents with a day of crampy abdominal pain, distension, bilious vomiting, and inability to pass stool or gas. The diagnosis is Small bowel obstruction, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "General: uncomfortable, mild dehydration."
+    ],
+    "keyDiagnosticFindings": [
+      "BMP",
+      "CBC",
+      "Lactate",
+      "CT_abdomen"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Small bowel obstruction while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Small bowel obstruction and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "feeding the patient / missing signs of strangulation"
+    ],
+    "managementPearls": [
+      "Nasogastric tube decompression"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [
+      "Upright abdominal/chest X-ray",
+      "CT abdomen/pelvis to confirm and find transition point"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+    ],
+    "criticalManagementItems": [
+      "Nasogastric tube decompression"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

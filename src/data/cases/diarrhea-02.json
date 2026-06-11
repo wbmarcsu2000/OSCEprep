@@ -1,0 +1,527 @@
+{
+  "id": "diarrhea-02",
+  "category": "Diarrhea",
+  "difficulty": "easy",
+  "title": "Acute diarrhea after eating out",
+  "diagnosis": "Bacterial gastroenteritis",
+  "chart": {
+    "ageSex": "30M",
+    "cc": "Diarrhea and cramps",
+    "oneLiner": "30M presents with 2 days of frequent diarrhea (now with some blood), crampy abdominal pain, fever, and nausea after a barbecue.",
+    "vitals": {
+      "BP": "116/72",
+      "HR": "100",
+      "RR": "16",
+      "Temp": "38.4°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had bad diarrhea and stomach cramps since the weekend — there's been a bit of blood the last day.",
+  "patientFile": "PERSONA: 30-year-old man, uncomfortable, dehydrated. Good historian.\n\nHPI: 2 days of frequent loose stools (8–10x/day), now with streaks of blood and mucus, crampy abdominal pain, fever, and nausea. Ate undercooked chicken at a barbecue ~2 days before onset (only if asked about food/exposures). A couple of other attendees got sick too (only if asked about sick contacts). NO recent antibiotics, NO recent travel abroad, NO immunosuppression.\nPMH: none. MEDS: none. SOCIAL: healthy, no recent travel.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, dehydrated (dry mucous membranes).\n- Vitals: BP 116/72, HR 100, RR 16, 38.4°C, SpO2 99% RA.\n- Abdomen: diffuse mild tenderness, active/hyperactive bowel sounds, no peritonism.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the undercooked chicken or sick contacts unless asked about food/exposures or sick contacts.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "StoolStudies": "Stool culture and a multiplex pathogen panel sent; fecal leukocytes present (inflammatory diarrhea). (Culture later: Campylobacter.)",
+      "CBC": "WBC 13.0 with left shift, Hgb 14.5, Plt 250.",
+      "BMP": "Na 138, K 3.5, BUN 22, Cr 1.1 — mild dehydration.",
+      "Cdiff": "C. difficile toxin negative.",
+      "BloodCultures": "Drawn given fever; pending."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Deep symmetric or biphasic T-wave inversions in V2-V3 with preserved R waves; pain-free.",
+      "verify": "Source a study matching: Deep symmetric or biphasic T-wave inversions in V2-V3 with preserved R waves; pain-free. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing Wellens syndrome T wave",
+      "searchTerms": [
+        "Wellens syndrome ECG",
+        "biphasic T wave V2 V3 Wellens"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Left lower lobe volume loss with a linear opacity and slight mediastinal shift toward the opacity.",
+      "verify": "Source a study matching: Left lower lobe volume loss with a linear opacity and slight mediastinal shift toward the opacity. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing atelectasis volume loss",
+      "searchTerms": [
+        "atelectasis chest x-ray",
+        "linear atelectasis volume loss radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "StoolStudies",
+    "CBC",
+    "BMP",
+    "Cdiff",
+    "BloodCultures",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "StoolStudies",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Bacterial (inflammatory) gastroenteritis — e.g., Campylobacter/Salmonella/Shigella (leading,7). Shiga-toxin E. coli (CANT-MISS — affects management,4). Viral gastroenteritis (core,3). C. difficile (core,2). Inflammatory bowel disease (core,3). Appendicitis (CANT-MISS to consider,2). Names an infectious inflammatory diarrhea with food exposure (core,4).",
+      "idealAnswer": "Leading diagnosis: Campylobacter/Salmonella/Shigella. Must-not-miss diagnoses to exclude: coli; Appendicitis. Also reasonable: Viral gastroenteritis; difficile; Inflammatory bowel disease.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Campylobacter/Salmonella/Shigella",
+            "points": 7
+          },
+          {
+            "item": "coli",
+            "points": 4
+          },
+          {
+            "item": "Appendicitis",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Viral gastroenteritis",
+            "points": 3
+          },
+          {
+            "item": "difficile",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory bowel disease",
+            "points": 3
+          },
+          {
+            "item": "Names an infectious inflammatory diarrhea with food exposure",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "coli",
+        "Appendicitis"
+      ],
+      "acceptableAlternatives": [
+        "Viral gastroenteritis",
+        "difficile",
+        "Inflammatory bowel disease"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Stool studies — culture and/or pathogen panel (CANT-MISS,5). CBC (2). BMP for hydration/electrolytes (3). C. difficile toxin if risk factors (2). Blood cultures if febrile/toxic (2). Consider ova & parasites only if indicated (1). PENALTY: empiric antibiotics before considering Shiga-toxin E. coli (-2 — addressed in management).",
+      "idealAnswer": "Order: Stool studies — culture and/or pathogen panel.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Stool studies — culture and/or pathogen panel",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "requiredTests": [
+        "Stool studies — culture and/or pathogen panel"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "biphasic / deep T inversions in V2-V3",
+        "recognizes the proximal LAD warning pattern"
+      ],
+      "criticalFindings": [
+        "Wellens syndrome (critical LAD stenosis warning pattern)."
+      ],
+      "commonMistakes": [
+        "dismissing the T-wave changes because the patient is currently pain-free"
+      ],
+      "idealAnswer": "Wellens pattern: biphasic or deeply inverted T waves in V2-V3 — a warning for critical proximal LAD stenosis.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Wellens syndrome (critical LAD stenosis warning pattern)."
+        ],
+        "coreActions": [
+          "biphasic / deep T inversions in V2-V3",
+          "recognizes the proximal LAD warning pattern"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "linear/band opacity with volume loss",
+        "distinguishes atelectasis from consolidation"
+      ],
+      "criticalFindings": [
+        "Atelectasis (volume loss, no air bronchograms)."
+      ],
+      "commonMistakes": [
+        "calling collapse pneumonia",
+        "missing the volume-loss signs"
+      ],
+      "idealAnswer": "Atelectasis: left basal linear opacity with volume loss and ipsilateral mediastinal shift.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Atelectasis (volume loss, no air bronchograms)."
+        ],
+        "coreActions": [
+          "linear/band opacity with volume loss",
+          "distinguishes atelectasis from consolidation"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Stool shows inflammatory diarrhea with a likely bacterial pathogen after undercooked poultry. What is your diagnosis and one key management caution?",
+      "rubric": "Bacterial gastroenteritis (e.g., Campylobacter) (6). Notes the caution — avoid empiric antibiotics if Shiga-toxin E. coli is possible (HUS risk), and avoid antimotility agents in bloody/febrile diarrhea (4).",
+      "idealAnswer": "Bacterial gastroenteritis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Oral or IV rehydration — the mainstay (CANT-MISS,9). Supportive care, electrolyte correction (5). Reserve antibiotics for severe/toxic disease, immunocompromise, or specific pathogens; avoid them if Shiga-toxin E. coli is suspected (5). Avoid antimotility agents in inflammatory/bloody diarrhea (4). Return precautions and public-health considerations (2). PENALTY: empiric antibiotics with possible EHEC (HUS risk) (-3); antimotility agents in bloody/febrile diarrhea (-2).",
+      "idealAnswer": "Plan: Oral or IV rehydration — the mainstay.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Oral or IV rehydration — the mainstay",
+            "points": 9
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "empiric antibiotics with possible EHEC (HUS risk)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Oral or IV rehydration — the mainstay"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "empiric antibiotics with possible EHEC (HUS risk)"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "30-year-old man, uncomfortable, dehydrated. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_bowel_sounds_finding_1",
+      "finding": "Abdomen: diffuse mild tenderness, active/hyperactive bowel sounds, no peritonism.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "assess_general_appearance_finding_2",
+      "finding": "General: uncomfortable, dehydrated (dry mucous membranes).",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Well hydrated."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Bacterial gastroenteritis",
+    "diagnosticFramework": "30M presents with 2 days of frequent diarrhea (now with some blood), crampy abdominal pain, fever, and nausea after a barbecue. The diagnosis is Bacterial gastroenteritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: diffuse mild tenderness, active/hyperactive bowel sounds, no peritonism.",
+      "General: uncomfortable, dehydrated (dry mucous membranes)."
+    ],
+    "keyDiagnosticFindings": [
+      "StoolStudies",
+      "CBC",
+      "BMP",
+      "Cdiff",
+      "BloodCultures"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Bacterial gastroenteritis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Bacterial gastroenteritis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "empiric antibiotics with possible EHEC (HUS risk)"
+    ],
+    "managementPearls": [
+      "Oral or IV rehydration — the mainstay"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [
+      "Stool studies — culture and/or pathogen panel"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Oral or IV rehydration — the mainstay"
+    ],
+    "keyImageInterpretationFindings": [
+      "Wellens syndrome (critical LAD stenosis warning pattern).",
+      "Atelectasis (volume loss, no air bronchograms)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Wellens syndrome (critical LAD stenosis warning pattern).",
+      "Atelectasis (volume loss, no air bronchograms)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Elicits the patient's concerns / ICE",
+        "points": 1
+      },
+      {
+        "item": "Avoids medical jargon; checks understanding",
+        "points": 1
+      },
+      {
+        "item": "Signposts and structures the encounter",
+        "points": 1
+      },
+      {
+        "item": "Demonstrates empathy and acknowledges affect",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

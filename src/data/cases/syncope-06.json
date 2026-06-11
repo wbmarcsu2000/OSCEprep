@@ -1,0 +1,594 @@
+{
+  "id": "syncope-06",
+  "category": "Syncope",
+  "difficulty": "moderate",
+  "title": "Fainting with black stools",
+  "diagnosis": "Syncope from occult GI bleed",
+  "chart": {
+    "ageSex": "70M",
+    "cc": "Passed out",
+    "oneLiner": "70M presents after fainting at home; he has felt increasingly tired and lightheaded and takes daily NSAIDs for joint pain.",
+    "vitals": {
+      "BP": "102/64",
+      "HR": "108",
+      "RR": "18",
+      "Temp": "36.9°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I stood up, went lightheaded, and the next thing I knew I was on the floor.",
+  "patientFile": "PERSONA: 70-year-old man, pale and tired-looking. Good historian once prompted.\n\nHPI: Several days of fatigue and lightheadedness, today a syncopal episode when standing. On asking: he has noticed BLACK, TARRY stools for a few days (melena) and mild epigastric discomfort. Takes ibuprofen daily for knee arthritis and is on aspirin. NO frank hematemesis, NO chest pain, NO palpitations. The faint was preceded by lightheadedness on standing (hypovolemic).\nPMH: osteoarthritis, hypertension, coronary disease. MEDS: daily ibuprofen, aspirin, lisinopril. SOCIAL: occasional alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, mildly tachycardic, looks fatigued.\n- Vitals: BP 102/64, HR 108, RR 18, 36.9°C, SpO2 98% RA; orthostatic drop if checked.\n- Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.\n- RECTAL EXAM: melena (black tarry stool) on the glove if performed — the key finding.\n- Conjunctival pallor if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the black stools, NSAID/aspirin use, or epigastric discomfort unless asked about stool color/GI symptoms, medications/pain relievers, or abdominal symptoms.\n- The melena is revealed only if the student performs (or asks for) a rectal exam.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 96 — normal.",
+      "CBC": "Hgb 7.6 (low), MCV low-normal, WBC 8.0, Plt 280 — significant anemia.",
+      "BMP": "BUN 42, Cr 1.1 — elevated BUN:Cr ratio consistent with an upper GI bleed.",
+      "Coags": "INR normal (not on warfarin).",
+      "TypeCross": "Type and crossmatch sent.",
+      "Orthostatics": "Positive orthostatic drop with symptoms.",
+      "StoolEvaluation": "Melena (black, tarry stool) is documented on the chart — indicates a GI bleeding source. Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS.",
+      "verify": "Source a study matching: Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing hyperkalemia peaked T waves",
+      "searchTerms": [
+        "hyperkalemia peaked T waves ECG",
+        "hyperkalaemia ECG sine wave"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Healed/healing rib fractures with callus along the lateral ribs; lungs clear.",
+      "verify": "Source a study matching: Healed/healing rib fractures with callus along the lateral ribs; lungs clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing old healed rib fractures",
+      "searchTerms": [
+        "healed rib fractures chest x-ray",
+        "old rib fracture callus radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "CBC",
+    "BMP",
+    "Coags",
+    "TypeCross",
+    "Orthostatics",
+    "ekg",
+    "cxr",
+    "StoolEvaluation"
+  ],
+  "essential": [
+    "CBC",
+    "BMP",
+    "StoolEvaluation"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for the syncope (note your leading diagnosis).",
+      "rubric": "Hypovolemic syncope from acute GI blood loss (leading & CANT-MISS,8). Orthostatic hypotension (core,3). Cardiac arrhythmia (CANT-MISS,4). Anemia of other cause (core,3). Vasovagal (less likely) (core,2). Connects pallor + tachycardia + (on history) melena/NSAID use to occult GI bleeding (core,5).",
+      "idealAnswer": "Leading diagnosis: Hypovolemic syncope from acute GI blood loss. Must-not-miss diagnoses to exclude: Cardiac arrhythmia. Also reasonable: Orthostatic hypotension; Anemia of other cause; Vasovagal (less likely).",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Hypovolemic syncope from acute GI blood loss",
+            "points": 8
+          },
+          {
+            "item": "Cardiac arrhythmia",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Orthostatic hypotension",
+            "points": 3
+          },
+          {
+            "item": "Anemia of other cause",
+            "points": 3
+          },
+          {
+            "item": "Vasovagal (less likely)",
+            "points": 2
+          },
+          {
+            "item": "Connects pallor + tachycardia + (on history) melena/NSAID use to occult GI bleeding",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Cardiac arrhythmia"
+      ],
+      "acceptableAlternatives": [
+        "Orthostatic hypotension",
+        "Anemia of other cause",
+        "Vasovagal (less likely)"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order? (Don't forget the bedside.)",
+      "rubric": "CBC for anemia (CANT-MISS,4). Recognizes GI bleeding and reviews the documented stool finding / melena (CANT-MISS,4). BMP — note BUN:Cr ratio (2). Type and crossmatch (2). Coagulation studies (1). EKG (1). Orthostatic vitals (1). PENALTY: working up syncope without a rectal exam / not checking a hemoglobin (-3).",
+      "idealAnswer": "Order: CBC for anemia; Recognizes GI bleeding and reviews the documented stool finding / melena.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC for anemia",
+            "points": 4
+          },
+          {
+            "item": "Recognizes GI bleeding and reviews the documented stool finding / melena",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "working up syncope without a rectal exam / not checking a hemoglobin",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC for anemia",
+        "Recognizes GI bleeding and reviews the documented stool finding / melena"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "working up syncope without a rectal exam / not checking a hemoglobin"
+      ],
+      "orderSensitiveActions": [
+        "working up syncope without a rectal exam / not checking a hemoglobin"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, possible demand-related ST changes from anemia, no STEMI. CREDIT: rate & rhythm (6); recognizes any demand ST changes are secondary to anemia, not primary ACS (5); excludes STEMI (2); systematic read (2). PENALTY: calling a primary STEMI (-3).",
+      "keyFindings": [
+        "peaked T waves",
+        "recognizes a hyperkalemia pattern as urgent"
+      ],
+      "criticalFindings": [
+        "Hyperkalemia pattern: peaked T waves with QRS widening."
+      ],
+      "commonMistakes": [
+        "dismissing peaked T waves as a normal variant",
+        "missing the loss of P waves"
+      ],
+      "idealAnswer": "Hyperkalemia: tall peaked T waves, P-wave flattening, widening QRS — a time-critical pattern.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Hyperkalemia pattern: peaked T waves with QRS widening."
+        ],
+        "coreActions": [
+          "peaked T waves",
+          "recognizes a hyperkalemia pattern as urgent"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield here (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies healed rib fractures with callus",
+        "recognizes them as old"
+      ],
+      "criticalFindings": [
+        "Old healed rib fractures (callus)."
+      ],
+      "commonMistakes": [
+        "mistaking callus for a pulmonary or pleural lesion"
+      ],
+      "idealAnswer": "Old healed rib fractures with bony callus along the lateral ribs.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Old healed rib fractures (callus)."
+        ],
+        "coreActions": [
+          "identifies healed rib fractures with callus",
+          "recognizes them as old"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Hgb is 7.6 with an elevated BUN:Cr and melena on rectal exam. What is your diagnosis and reasoning?",
+      "rubric": "Syncope from an acute (likely upper) GI bleed causing hypovolemia/anemia (6). Cites melena + elevated BUN:Cr + NSAID/aspirin use as the source (4).",
+      "idealAnswer": "Syncope from occult GI bleed. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Two large-bore IV lines and IV fluid resuscitation (CANT-MISS,6). Transfuse packed red cells per a restrictive threshold / hemodynamics (CANT-MISS,5). Hold the NSAID and reassess aspirin; reverse any coagulopathy (4). IV proton pump inhibitor (4). Urgent GI consultation for endoscopy (5). Admit and monitor (1). PENALTY: discharging or failing to resuscitate/transfuse (-4).",
+      "idealAnswer": "Plan: Two large-bore IV lines and IV fluid resuscitation; Transfuse packed red cells per a restrictive threshold / hemodynamics.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Two large-bore IV lines and IV fluid resuscitation",
+            "points": 6
+          },
+          {
+            "item": "Transfuse packed red cells per a restrictive threshold / hemodynamics",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging or failing to resuscitate/transfuse",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Two large-bore IV lines and IV fluid resuscitation",
+        "Transfuse packed red cells per a restrictive threshold / hemodynamics"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "discharging or failing to resuscitate/transfuse"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "70-year-old man, pale and tired-looking. Good historian once prompted.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "palpate_all_quadrants_finding_1",
+      "finding": "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No epigastric tenderness."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_2",
+      "finding": "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_3",
+      "finding": "Conjunctival pallor if examined.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No conjunctival pallor."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_4",
+      "finding": "Vitals: BP 102/64, HR 108, RR 18, 36.9°C, SpO2 98% RA; orthostatic drop if checked.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic drop."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Syncope from occult GI bleed",
+    "diagnosticFramework": "70M presents after fainting at home; he has felt increasingly tired and lightheaded and takes daily NSAIDs for joint pain. The diagnosis is Syncope from occult GI bleed, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
+      "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
+      "Conjunctival pallor if examined.",
+      "Vitals: BP 102/64, HR 108, RR 18, 36.9°C, SpO2 98% RA; orthostatic drop if checked."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "CBC",
+      "BMP",
+      "Coags",
+      "TypeCross",
+      "Orthostatics",
+      "StoolEvaluation"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Syncope from occult GI bleed while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Syncope from occult GI bleed and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "discharging or failing to resuscitate/transfuse"
+    ],
+    "managementPearls": [
+      "Two large-bore IV lines and IV fluid resuscitation",
+      "Transfuse packed red cells per a restrictive threshold / hemodynamics"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area",
+      "obtain_orthostatic_vitals"
+    ],
+    "criticalWorkupItems": [
+      "CBC for anemia",
+      "Recognizes GI bleeding and reviews the documented stool finding / melena"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; possible demand-related ST changes given anemia; no acute STEMI.",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Two large-bore IV lines and IV fluid resuscitation",
+      "Transfuse packed red cells per a restrictive threshold / hemodynamics"
+    ],
+    "keyImageInterpretationFindings": [
+      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Old healed rib fractures (callus)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Old healed rib fractures (callus)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

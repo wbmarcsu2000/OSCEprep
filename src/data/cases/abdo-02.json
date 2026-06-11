@@ -1,0 +1,633 @@
+{
+  "id": "abdo-02",
+  "category": "Abdominal Pain",
+  "difficulty": "easy",
+  "title": "Right upper quadrant pain after a fatty meal",
+  "diagnosis": "Acute cholecystitis",
+  "chart": {
+    "ageSex": "45F",
+    "cc": "Right upper abdominal pain",
+    "oneLiner": "45F presents with 12 hours of constant right upper quadrant pain that began after a fatty meal, with nausea, vomiting, and fever.",
+    "vitals": {
+      "BP": "132/80",
+      "HR": "98",
+      "RR": "18",
+      "Temp": "38.2°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've got this constant pain under my right ribs — it started after dinner and won't go away.",
+  "patientFile": "PERSONA: 45-year-old woman, uncomfortable, holding her right side. Cooperative.\n\nHPI: Constant RUQ pain for ~12h that began after a fatty meal, radiating to the right scapula/shoulder. Nausea and several episodes of vomiting. Subjective fevers. Has had briefer episodes of similar pain after meals in the past that resolved (biliary colic) — only if asked. NO black/pale stools, NO dark urine, NO jaundice noticed (only if asked).\nPMH: obesity. MEDS: none. SOCIAL: 3 children, occasional alcohol, nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mild distress.\n- Vitals: BP 132/80, HR 98, RR 18, 38.2°C, SpO2 99% RA.\n- Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.\n- No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior post-meal episodes or absence of jaundice/dark urine unless asked about prior episodes, jaundice, stool/urine color.\n- Murphy's sign is revealed only if the abdomen is examined appropriately.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 13.6 with left shift, Hgb 13.4, Plt 290.",
+      "LFTs": "AST 48, ALT 52, Alk Phos 130 (mildly elevated), total bilirubin 1.2 (near normal) — mild, NOT an obstructive/cholestatic picture.",
+      "Lipase": "Normal.",
+      "BMP": "Within normal limits.",
+      "RUQ_US": "RUQ ultrasound: gallstones, gallbladder wall thickening (>3 mm), pericholecystic fluid, sonographic Murphy sign; common bile duct not dilated."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Progressive PR prolongation culminating in a non-conducted P wave (dropped QRS); grouped beating.",
+      "verify": "Source a study matching: Progressive PR prolongation culminating in a non-conducted P wave (dropped QRS); grouped beating. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead rhythm strip showing Wenckebach Mobitz I",
+      "searchTerms": [
+        "Mobitz I Wenckebach ECG",
+        "second degree AV block type 1 strip"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia).",
+      "verify": "Source a study matching: Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing hiatal hernia retrocardiac",
+      "searchTerms": [
+        "hiatal hernia chest x-ray air fluid level",
+        "retrocardiac hiatal hernia radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "LFTs",
+    "Lipase",
+    "BMP",
+    "RUQ_US",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC",
+    "RUQ_US"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Acute cholecystitis (leading,7). Biliary colic (core,3). Choledocholithiasis / ascending cholangitis (CANT-MISS,4). Acute pancreatitis (core,3). Peptic ulcer disease (core,2). Acute coronary syndrome / inferior MI (CANT-MISS to consider,3). Named leading dx w/ justification — post-fatty-meal RUQ pain, Murphy's (core,3).",
+      "idealAnswer": "Leading diagnosis: Acute cholecystitis. Must-not-miss diagnoses to exclude: Choledocholithiasis / ascending cholangitis; Acute coronary syndrome / inferior MI. Also reasonable: Biliary colic; Acute pancreatitis; Peptic ulcer disease.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute cholecystitis",
+            "points": 7
+          },
+          {
+            "item": "Choledocholithiasis / ascending cholangitis",
+            "points": 4
+          },
+          {
+            "item": "Acute coronary syndrome / inferior MI",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Biliary colic",
+            "points": 3
+          },
+          {
+            "item": "Acute pancreatitis",
+            "points": 3
+          },
+          {
+            "item": "Peptic ulcer disease",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — post-fatty-meal RUQ pain, Murphy's",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Choledocholithiasis / ascending cholangitis",
+        "Acute coronary syndrome / inferior MI"
+      ],
+      "acceptableAlternatives": [
+        "Biliary colic",
+        "Acute pancreatitis",
+        "Peptic ulcer disease"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "RUQ ultrasound (CANT-MISS,5). CBC (3). LFTs (3). Lipase (2). BMP (1). EKG to exclude cardiac cause (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: RUQ ultrasound.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "RUQ ultrasound",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "EKG to exclude cardiac cause",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "RUQ ultrasound"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute ischemia. CREDIT: rate & rhythm (7); recognizes no acute ischemic changes / why we checked (inferior MI can mimic RUQ pain) (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "keyFindings": [
+        "progressive PR prolongation before a dropped beat",
+        "grouped beating pattern"
+      ],
+      "criticalFindings": [
+        "Mobitz I (Wenckebach) second-degree AV block."
+      ],
+      "commonMistakes": [
+        "missing the progressive PR lengthening",
+        "mislabeling as Mobitz II"
+      ],
+      "idealAnswer": "Mobitz I (Wenckebach): progressively lengthening PR until a P wave is dropped, then the cycle repeats.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Mobitz I (Wenckebach) second-degree AV block."
+        ],
+        "coreActions": [
+          "progressive PR prolongation before a dropped beat",
+          "grouped beating pattern"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no free air, clear bases. CREDIT: identifies a normal film (5); excludes free air (perforation) and basal pneumonia (5). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "retrocardiac air-fluid level",
+        "identifies a hiatal hernia as benign"
+      ],
+      "criticalFindings": [
+        "Hiatal hernia (retrocardiac air-fluid level)."
+      ],
+      "commonMistakes": [
+        "mistaking the retrocardiac gas shadow for a cavitary lesion or abscess"
+      ],
+      "idealAnswer": "Hiatal hernia: retrocardiac soft-tissue density with an air-fluid level — a benign incidental finding.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Hiatal hernia (retrocardiac air-fluid level)."
+        ],
+        "coreActions": [
+          "retrocardiac air-fluid level",
+          "identifies a hiatal hernia as benign"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the ultrasound and labs, what is your diagnosis and reasoning?",
+      "rubric": "Acute cholecystitis (6). Cites gallstones + wall thickening + pericholecystic fluid + sonographic Murphy, with a non-dilated CBD and near-normal bilirubin arguing against choledocholithiasis (4).",
+      "idealAnswer": "Acute cholecystitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "NPO (3). IV fluids (4). Analgesia and antiemetics (4). IV antibiotics (5). Surgical consult for cholecystectomy, ideally early (CANT-MISS,7). Admit (2). PENALTY: discharging without surgical evaluation (-3).",
+      "idealAnswer": "Plan: Surgical consult for cholecystectomy, ideally early.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Surgical consult for cholecystectomy, ideally early",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging without surgical evaluation",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Surgical consult for cholecystectomy, ideally early"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "discharging without surgical evaluation"
+      ],
+      "consults": [
+        "Surgical consult for cholecystectomy, ideally early"
+      ],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "45-year-old woman, uncomfortable, holding her right side. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "perform_murphy_sign_finding_1",
+      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "revealedBy": [
+        "perform_murphy_sign"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Negative Murphy sign."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_2",
+      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "assess_guarding_finding_3",
+      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No guarding."
+    },
+    {
+      "id": "palpate_ruq_finding_4",
+      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "revealedBy": [
+        "palpate_ruq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No RUQ tenderness."
+    },
+    {
+      "id": "inspect_abdomen_finding_5",
+      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_6",
+      "finding": "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "inspect_sclera_finding_7",
+      "finding": "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Acute cholecystitis",
+    "diagnosticFramework": "45F presents with 12 hours of constant right upper quadrant pain that began after a fatty meal, with nausea, vomiting, and fever. The diagnosis is Acute cholecystitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.",
+      "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "LFTs",
+      "Lipase",
+      "BMP",
+      "RUQ_US"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Acute cholecystitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Acute cholecystitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "discharging without surgical evaluation"
+    ],
+    "managementPearls": [
+      "Surgical consult for cholecystectomy, ideally early"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "perform_murphy_sign",
+      "assess_rebound_tenderness",
+      "palpate_ruq"
+    ],
+    "criticalWorkupItems": [
+      "RUQ ultrasound"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes (obtained to exclude a cardiac cause of upper-abdominal pain).",
+      "No free air under the diaphragm; clear lung bases (excludes perforation and lower-lobe pneumonia)."
+    ],
+    "criticalManagementItems": [
+      "Surgical consult for cholecystectomy, ideally early"
+    ],
+    "keyImageInterpretationFindings": [
+      "Mobitz I (Wenckebach) second-degree AV block.",
+      "Hiatal hernia (retrocardiac air-fluid level)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Mobitz I (Wenckebach) second-degree AV block.",
+      "Hiatal hernia (retrocardiac air-fluid level)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

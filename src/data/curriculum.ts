@@ -1,0 +1,1030 @@
+/**
+ * Per-category teaching curriculum, modeled on the clerkship OSCE review
+ * session format: a broad differential organized into "buckets", the standard
+ * focused-history questions, a targeted exam, a general work-up MENU (labs +
+ * imaging with indications), worked practice cases (vignette → DDx → work-up →
+ * results twist → updated DDx + next step), quick-and-dirty management, and
+ * references.
+ *
+ * The OSCE grades thoroughness, not the single "right answer" — the ability to
+ * generate a problem list, a broad differential, and a management plan. This
+ * is an EDUCATIONAL reference layer, separate from the engine's clinical source
+ * of truth (the case JSON). It never feeds reveals or scoring; it is shown only
+ * at the end of a station. References name real societies/resources as study
+ * starting points, not citations for any single statement.
+ */
+
+export interface CurriculumRef {
+  label: string;
+  source: string;
+  url?: string;
+}
+
+export interface DiffGroup {
+  group: string;
+  items: string[];
+}
+
+export interface QuestionTheme {
+  theme: string;
+  questions: string[];
+}
+
+export interface WorkupMenuItem {
+  test: string;
+  indication: string;
+}
+
+export interface WorkupMenu {
+  labs: WorkupMenuItem[];
+  imaging: WorkupMenuItem[];
+}
+
+/** A worked practice case in the OSCE-review format. */
+export interface PracticeCase {
+  vignette: string;
+  ddx: string[];
+  workup: string[];
+  /** The results-twist prompt ("X comes back… now what?"). */
+  twist?: string;
+  updatedDdx?: string[];
+  nextStep?: string;
+}
+
+export interface ManagementPearl {
+  scenario: string;
+  plan: string;
+}
+
+/** A named clinical-reasoning schema (how an expert organizes the problem). */
+export interface ReasoningFramework {
+  name: string;
+  what: string;
+  mnemonic?: string;
+}
+
+export const FRAMEWORKS: ReasoningFramework[] = [
+  {
+    name: "Differential buckets",
+    what: "For a presenting complaint, generate broad categories first — by organ system or by mechanism — then populate each bucket. For abdominal pain, walk every organ that could refer there; for a metabolic complaint, walk the systems. Buckets prevent premature anchoring and make the list look complete to the examiner.",
+  },
+  {
+    name: "Problem representation",
+    what: "Compress the case into one sentence with semantic qualifiers (age/sex, tempo, key features) — 'an older man with acute, exertional, pressure-like chest pain and cardiac risk factors'. The one-liner activates the right illness scripts.",
+  },
+  {
+    name: "Must-not-miss first (dual-process)",
+    what: "Generate a fast leading diagnosis, then deliberately run the checklist of immediately dangerous causes and ask 'what would I lose by missing this?' before narrowing.",
+  },
+  {
+    name: "The surgical sieve (VINDICATE)",
+    what: "When the buckets run dry, generate categories systematically instead of free-associating.",
+    mnemonic: "Vascular · Infective · Neoplastic · Degenerative · Iatrogenic/drugs · Congenital · Autoimmune · Traumatic · Endocrine/metabolic",
+  },
+  {
+    name: "Show your thinking",
+    what: "The OSCE grades clinical reasoning, not the right answer. Write/say EVERYTHING you're considering — the broad differential, the work-up you'd order and why, and how results change your plan. A thorough, well-justified wrong leading diagnosis outscores a bare correct guess.",
+  },
+];
+
+export interface CategoryCurriculum {
+  category: string;
+  /** Which reasoning schema(s) best structure this complaint. */
+  framework: string;
+  /** One-line strategy: how to frame this complaint on entry. */
+  strategy: string;
+  cantMiss: string[];
+  differential: DiffGroup[];
+  keyQuestions: QuestionTheme[];
+  examFocus: string[];
+  workupMenu: WorkupMenu;
+  tools: string[];
+  practiceCases: PracticeCase[];
+  quickManagement: ManagementPearl[];
+  references: CurriculumRef[];
+}
+
+const MDCALC = "https://www.mdcalc.com/";
+const LITFL_ECG = "https://litfl.com/top-100/ecg/";
+const LITFL_CXR = "https://litfl.com/top-100/cxr/";
+const RADIOPAEDIA = "https://radiopaedia.org/";
+
+const OLDCARTS: QuestionTheme = {
+  theme: "Characterize the symptom (OLDCARTS)",
+  questions: [
+    "Onset — what were you doing when it started? Sudden or gradual?",
+    "Location and radiation",
+    "Duration and time course — constant, waxing/waning, worsening?",
+    "Character — in the patient's own words",
+    "Aggravating / alleviating factors",
+    "Timing and prior similar episodes",
+    "Severity (0–10) and functional impact",
+  ],
+};
+
+export const CURRICULUM: CategoryCurriculum[] = [
+  // ---------------------------------------------------------------- Chest Pain
+  {
+    category: "Chest Pain",
+    framework: "Anatomic (chest wall → pleura → lung → vessels → heart → esophagus) over must-not-miss-first.",
+    strategy:
+      "In every chest-pain patient, actively exclude the immediately life-threatening causes before settling on a benign one.",
+    cantMiss: [
+      "ACS (STEMI / NSTEMI / unstable angina)",
+      "Aortic dissection",
+      "Pulmonary embolism",
+      "Tension pneumothorax",
+      "Esophageal rupture (Boerhaave)",
+      "Pericarditis with tamponade",
+    ],
+    differential: [
+      { group: "Cardiac", items: ["ACS", "Stable / vasospastic angina", "Pericarditis / myocarditis", "Aortic stenosis", "Heart failure"] },
+      { group: "Vascular", items: ["Aortic dissection"] },
+      { group: "Pulmonary", items: ["PE", "Pneumothorax", "Pneumonia / pleurisy"] },
+      { group: "GI", items: ["GERD / esophageal spasm", "Peptic ulcer / perforation", "Biliary disease", "Pancreatitis"] },
+      { group: "MSK / Skin", items: ["Costochondritis", "Muscle strain", "Rib injury", "Herpes zoster"] },
+      { group: "Other", items: ["Anxiety / panic", "Anemia (demand ischemia)"] },
+    ],
+    keyQuestions: [
+      OLDCARTS,
+      {
+        theme: "Quality clues that separate the can't-miss causes",
+        questions: [
+          "Pressure/heaviness, exertional, radiating to arm/jaw, diaphoresis, nausea → ACS",
+          "Sudden tearing pain to the back, maximal at onset → dissection",
+          "Pleuritic + dyspnea ± calf pain, recent travel/immobility → PE",
+          "Sharp, positional, relieved leaning forward → pericarditis",
+          "Reproducible with palpation → MSK (does not exclude ACS)",
+        ],
+      },
+      {
+        theme: "Risk factors & red flags",
+        questions: [
+          "Cardiac risk: HTN, hyperlipidemia, diabetes, smoking, family history of early CAD",
+          "VTE risk: surgery/immobility, malignancy, prior clot, estrogen/OCPs",
+          "Connective-tissue disease, uncontrolled HTN (dissection)",
+          "Syncope, focal neuro deficit, pulse/BP asymmetry",
+        ],
+      },
+    ],
+    examFocus: [
+      "Vitals incl. bilateral BP; SpO₂; respiratory distress",
+      "Cardiac — murmur, rub, S3/S4, JVP",
+      "Lungs — asymmetry, crackles, absent breath sounds",
+      "Legs — unilateral calf swelling/tenderness (DVT)",
+      "Chest wall — reproducible tenderness; skin (zoster)",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "Troponin (serial)", indication: "ACS, demand ischemia — trend to peak" },
+        { test: "CBC", indication: "anemia, infection" },
+        { test: "BMP", indication: "electrolytes, renal function (esp. before cath)" },
+        { test: "BNP", indication: "heart failure" },
+        { test: "D-dimer", indication: "PE only when pre-test probability is low (PERC/Wells first)" },
+        { test: "Lipase", indication: "epigastric radiation — pancreatitis" },
+      ],
+      imaging: [
+        { test: "EKG (within 10 min)", indication: "every chest-pain patient" },
+        { test: "Chest X-ray", indication: "pneumothorax, widened mediastinum, effusion, pneumonia" },
+        { test: "CT angiography", indication: "dissection or PE" },
+        { test: "Echocardiography", indication: "wall-motion, valve disease, effusion/tamponade" },
+        { test: "Stress test", indication: "risk stratification once ACS excluded" },
+      ],
+    },
+    tools: ["HEART score", "TIMI / GRACE (ACS)", "Wells + PERC (PE)", "Age-adjusted D-dimer"],
+    practiceCases: [
+      {
+        vignette: "54 M, squeezing chest pain ×2 months, worse with exertion / better with rest, new episode today.",
+        ddx: ["Stable angina", "Unstable angina / ACS", "Vasospastic angina", "Heart failure", "COPD/asthma", "Anemia"],
+        workup: ["EKG", "Troponin", "CBC", "CXR", "± BNP"],
+        twist: "Troponin 50, EKG normal — leading diagnosis and next steps?",
+        updatedDdx: ["NSTEMI (trend troponin to peak)"],
+        nextStep:
+          "If troponin rising → admit, DAPT, sublingual nitro (unless hypotensive), heparin, β-blocker if HDS, cardiology for non-emergent cath; high-intensity statin + ACE/ARB. If stable → non-invasive testing (stress/echo); HEART score to risk-stratify.",
+      },
+      {
+        vignette: "70 F, chest discomfort, syncope, dyspnea, SpO₂ in the 80s.",
+        ddx: ["Arrhythmia (AFib)", "ACS", "Saddle PE", "Pneumothorax / tamponade", "Pneumonia", "Aortic stenosis", "Heart failure", "Anemia"],
+        workup: ["CBC", "BMP", "Troponin", "EKG", "CXR", "± CTPE or D-dimer", "± BNP"],
+        twist: "Troponin negative, EKG and CXR unremarkable, persistently hypoxic — now what?",
+        updatedDdx: ["PE", "Pulmonary HTN", "Aortic stenosis", "ADHF", "Occult arrhythmia"],
+        nextStep:
+          "POCUS, assess PE risk / Wells; D-dimer if low pre-test probability, otherwise proceed to CTPE. Supplemental O₂. Likely admission for echo ± Holter.",
+      },
+      {
+        vignette: "50 M, severe acute chest pain radiating to the back.",
+        ddx: ["Aortic dissection", "Esophageal rupture", "ACS", "Pancreatitis", "Ruptured peptic ulcer", "Pneumothorax", "Pericarditis"],
+        workup: ["CBC", "BMP", "Troponin", "EKG", "CXR", "Lipase"],
+        twist: "EKG/troponin/lipase/CBC/BMP normal; CXR with mediastinal widening — leading diagnosis?",
+        updatedDdx: ["Aortic dissection"],
+        nextStep:
+          "Two large-bore IVs; CTA if HDS, TEE if unstable. Type A → surgical emergency. Type B → IV labetalol/esmolol, ICU for close monitoring.",
+      },
+    ],
+    quickManagement: [
+      {
+        scenario: "Troponin 400, new STEMI in V5–V6/aVL",
+        plan: "Activate cath lab within 90 min (thrombolysis if >120 min to PCI); aspirin 324 mg, heparin, nitro, O₂ if hypoxic, morphine if refractory. D/C on β-blocker, ACEi, statin + clopidogrel/ticagrelor ×1 yr if stented.",
+      },
+      {
+        scenario: "Pleuritic pain, CTPE with segmental occlusion",
+        plan: "Heparin/LMWH (or outpatient DOAC if low-risk); tPA if massive PE (unstable) vs thrombectomy.",
+      },
+      {
+        scenario: "Volume-overloaded, ↑BNP, ACS work-up negative",
+        plan: "Diurese (Lasix 40 IV BID if naïve, else 1–2× home oral dose IV), daily weights, strict I/Os, echo. GDMT: ARNI/ARB, β-blocker, SGLT2, MRA (HFpEF: SGLT2 ± MRA/ARNI).",
+      },
+    ],
+    references: [
+      { label: "Evaluation & diagnosis of chest pain", source: "2021 AHA/ACC Chest Pain Guideline (Gulati et al., Circulation 2021;144:e368)" },
+      { label: "Acute PE diagnosis & management", source: "ESC 2019 Acute Pulmonary Embolism Guideline" },
+      { label: "HEART / Wells / PERC calculators", source: "MDCalc", url: MDCALC },
+      { label: "Ischemia ECG patterns", source: "LITFL Top 100 ECG", url: LITFL_ECG },
+    ],
+  },
+
+  // ------------------------------------------------------------- Abdominal Pain
+  {
+    category: "Abdominal Pain",
+    framework: "Buckets by location + organ system, screening for the surgical / vascular abdomen.",
+    strategy:
+      "Let location plus onset narrow the field, but for any abdominal pain walk every organ system that could refer there, and always screen for the emergencies that need the OR or IR.",
+    cantMiss: [
+      "Ruptured AAA",
+      "Mesenteric ischemia",
+      "Perforated viscus",
+      "Bowel obstruction with strangulation",
+      "Ruptured ectopic pregnancy",
+      "ACS presenting as epigastric pain",
+    ],
+    differential: [
+      { group: "RUQ", items: ["Cholecystitis / biliary colic", "Cholangitis", "Hepatitis", "Hepatic abscess"] },
+      { group: "Epigastric", items: ["Pancreatitis", "PUD ± perforation", "Gastritis", "Referred MI"] },
+      { group: "RLQ", items: ["Appendicitis", "Ectopic / ovarian torsion", "PID", "Crohn's"] },
+      { group: "LLQ", items: ["Diverticulitis", "Sigmoid volvulus", "Colitis"] },
+      { group: "Diffuse / vascular", items: ["SBO", "Mesenteric ischemia", "Ruptured AAA", "Peritonitis / SBP"] },
+      { group: "Medical mimics", items: ["DKA", "Adrenal crisis", "Lower-lobe pneumonia", "Pyelonephritis / stone"] },
+    ],
+    keyQuestions: [
+      OLDCARTS,
+      {
+        theme: "Localizing & danger features",
+        questions: [
+          "Pain out of proportion to exam → mesenteric ischemia",
+          "Tearing pain to back + syncope → AAA",
+          "Periumbilical → RLQ migration → appendicitis",
+          "Colicky pain, vomiting, distension, no flatus → obstruction",
+          "Fever + RUQ pain + jaundice (Charcot) → cholangitis",
+        ],
+      },
+      {
+        theme: "Associated & background",
+        questions: [
+          "Nausea/vomiting, bowel-habit change, GI bleeding, anorexia",
+          "Relation to meals; alcohol (pancreatitis); fatty foods (biliary)",
+          "Prior surgery (adhesions), AF/vascular disease (ischemia), LMP (ectopic)",
+        ],
+      },
+    ],
+    examFocus: [
+      "Vitals — fever, tachycardia, hypotension (peritonitis/sepsis)",
+      "Inspection, auscultation, percussion, palpation by quadrant",
+      "Peritoneal signs — guarding, rigidity, rebound; CVA tenderness",
+      "Special tests: Murphy (cholecystitis); psoas / Rovsing / obturator (appendicitis); fluid wave",
+      "Pulsatile mass; hernia orifices; rectal/pelvic exam as indicated",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "CBC", indication: "leukocytosis (infection/inflammation), hemoglobin" },
+        { test: "BMP", indication: "dehydration, electrolytes, renal function" },
+        { test: "LFTs", indication: "hepatitis, biliary disease, gallstone pancreatitis" },
+        { test: "Lipase", indication: "epigastric pain — pancreatitis" },
+        { test: "Pregnancy test (β-hCG)", indication: "anyone with pregnancy potential" },
+        { test: "UA", indication: "hematuria, dysuria, flank pain; GC/chlamydia NAAT if PID" },
+      ],
+      imaging: [
+        { test: "RUQ ultrasound", indication: "RUQ / epigastric pain — first-line biliary" },
+        { test: "Abdominal X-ray / KUB", indication: "free air, initial SBO evaluation" },
+        { test: "CT abdomen/pelvis", indication: "diverticulitis (PO+IV), appendicitis (IV), non-contrast for stone" },
+        { test: "CT angiogram", indication: "concern for mesenteric ischemia" },
+        { test: "Transvaginal ultrasound", indication: "ectopic / ovarian / tubo-ovarian pathology" },
+      ],
+    },
+    tools: ["Alvarado score (appendicitis)", "Glasgow-Imrie / Ranson (pancreatitis)", "Tokyo criteria (cholecystitis)"],
+    practiceCases: [
+      {
+        vignette: "65 M, severe epigastric pain, anorexia, nausea, history of alcohol use.",
+        ddx: ["Pancreatitis", "PUD ± perforation", "Gastritis", "Biliary disease", "Referred MI"],
+        workup: ["CBC", "BMP", "LFTs", "Lipase", "EKG", "Troponin", "RUQ US"],
+        twist: "Leukocytosis; BMP/EKG/trop unremarkable; ↑alk phos; lipase ~450 (nl 24–151) — differential and next step?",
+        updatedDdx: ["Acute pancreatitis — gallstone vs alcohol-associated"],
+        nextStep:
+          "RUQ US, NPO, analgesia, antiemetics, IVF. If US equivocal → MRCP or CTAP with contrast, check triglycerides. If gallstones → surgery for cholecystectomy.",
+      },
+      {
+        vignette: "31 F, RLQ pain, nausea, vomiting, BP 100/72.",
+        ddx: ["Appendicitis", "Ruptured ectopic", "Ovarian torsion", "PID", "Ureterolithiasis", "Pyelonephritis", "Inguinal hernia"],
+        workup: ["CBC", "BMP", "β-hCG", "UA", "CT A/P (IV) vs transvaginal US (if +hCG or gyn suspicion)", "± pelvic exam + GC/chlamydia NAAT"],
+        twist: "CT shows fat stranding and appendiceal inflammation.",
+        updatedDdx: ["Acute appendicitis"],
+        nextStep: "Consult surgery for appendectomy; NPO, IVF, analgesia, antibiotics.",
+      },
+      {
+        vignette: "83 F, 3 days periumbilical pain, nausea, vomiting, prior abdominal surgery.",
+        ddx: ["Small bowel obstruction", "Incarcerated hernia", "Strangulated / ischemic bowel", "Mesenteric ischemia", "Gastroenteritis", "Early appendicitis", "SBP"],
+        workup: ["CBC", "BMP", "Lactate", "KUB / abdominal X-ray", "CT A/P", "CT angiogram if high ischemia suspicion"],
+      },
+    ],
+    quickManagement: [
+      {
+        scenario: "Diverticulitis",
+        plan: "Outpatient: liquid diet, oral analgesia, often no antibiotics, return in 1 week. Inpatient (elderly/sick/can't tolerate PO/complicated): NPO, IV analgesia, IVF, IV antibiotics covering GNRs + anaerobes (ceftriaxone + metronidazole or piperacillin-tazobactam).",
+      },
+      {
+        scenario: "Suspected variceal bleed",
+        plan: "Two large-bore IVs, IVF, type & screen, transfuse for Hgb <7, NPO for possible procedure; IV PPI (pantoprazole 40 BID), octreotide, ceftriaxone; GI consult → EGD.",
+      },
+    ],
+    references: [
+      { label: "Acute pancreatitis", source: "ACG 2013 Acute Pancreatitis Guideline; Revised Atlanta classification" },
+      { label: "Acute cholecystitis / cholangitis", source: "Tokyo Guidelines (TG18)" },
+      { label: "Diverticulitis", source: "ACG 2021 Diverticulitis Guideline" },
+      { label: "Abdominal CT/US findings", source: "Radiopaedia", url: RADIOPAEDIA },
+    ],
+  },
+
+  // ------------------------------------------------------------------- Syncope
+  {
+    category: "Syncope",
+    framework: "Mechanistic branch point: reflex vs orthostatic vs cardiac vs non-syncope mimic.",
+    strategy:
+      "Transient global hypoperfusion — separate benign reflex syncope from cardiac syncope (the lethal subset) and from mimics. Don't forget orthostatics and an EKG on everyone.",
+    cantMiss: [
+      "Ventricular arrhythmia / structural heart disease",
+      "High-grade AV block",
+      "Aortic stenosis / HOCM",
+      "Massive PE",
+      "Aortic dissection",
+      "Occult hemorrhage (GI bleed, ruptured AAA, ectopic)",
+    ],
+    differential: [
+      { group: "Reflex (neurally mediated)", items: ["Vasovagal", "Situational", "Carotid sinus"] },
+      { group: "Orthostatic", items: ["Volume depletion", "Drug-induced", "Autonomic failure (Parkinson's, DM)"] },
+      { group: "Cardiac — arrhythmic", items: ["AV block / bradycardia", "VT/VF", "SVT / AFib", "Channelopathy (long QT, Brugada)"] },
+      { group: "Cardiac — structural/obstructive", items: ["Aortic stenosis", "HOCM", "PE", "Tamponade", "Dissection"] },
+      { group: "Mimics", items: ["Seizure", "Hypoglycemia", "Stroke/TIA (rare)", "Psychogenic"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "The event — before, during, after",
+        questions: [
+          "Prodrome: nausea/warmth/tunnel vision (reflex) vs none (cardiac)",
+          "Trigger: prolonged standing, micturition, cough (reflex) vs exertion (cardiac/AS)",
+          "Position; exertional or supine syncope is a red flag",
+          "Witnessed movements, tongue biting, post-ictal confusion → seizure",
+          "Rapid recovery (syncope) vs prolonged confusion (seizure)",
+        ],
+      },
+      {
+        theme: "Red flags & volume/bleeding",
+        questions: [
+          "Palpitations preceding, no prodrome, injury from the fall",
+          "Family history of sudden death / inherited arrhythmia; known structural disease",
+          "Melena, hematemesis, abdominal/back pain (occult bleed)",
+          "Poor intake, diuretics, antihypertensives, QT-prolonging drugs",
+        ],
+      },
+    ],
+    examFocus: [
+      "Orthostatic vitals (supine → standing BP/HR)",
+      "Cardiac murmurs — crescendo-decrescendo of AS, HOCM; irregular rhythm",
+      "HEENT — tongue bites; carotid bruit",
+      "Neuro — focal deficits; extremities — skin turgor, warmth, cap refill, edema",
+      "Rectal exam for melena if bleeding suspected",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "BMP + glucose", indication: "electrolytes, hypoglycemia" },
+        { test: "CBC", indication: "anemia / occult bleed" },
+        { test: "± Troponin", indication: "if ACS suspected" },
+        { test: "± D-dimer", indication: "if PE suspected (low pre-test probability)" },
+        { test: "Pregnancy test", indication: "ectopic in anyone who can be pregnant" },
+      ],
+      imaging: [
+        { test: "EKG (± Holter on discharge)", indication: "every syncope patient" },
+        { test: "Echocardiography", indication: "LVOT obstruction, valvular disease" },
+        { test: "Carotid ultrasound", indication: "bruit / suspected cerebrovascular" },
+        { test: "CT/MR brain", indication: "concern for stroke/TIA or seizure; EEG if seizure" },
+        { test: "Stress test / CTPE", indication: "exertional syncope / PE concern" },
+      ],
+    },
+    tools: ["Canadian Syncope Risk Score", "San Francisco Syncope Rule"],
+    practiceCases: [
+      {
+        vignette: "70 M, syncope while walking up stairs, returned to baseline immediately; murmur + irregular rhythm on exam.",
+        ddx: ["Aortic stenosis", "ACS", "Carotid insufficiency", "Arrhythmia / AFib"],
+        workup: ["BMP", "Troponin", "EKG", "Echo"],
+        twist: "BMP/trop/EKG normal, echo negative; team plans discharge — differential and work-up?",
+        updatedDdx: ["Arrhythmia", "Orthostasis", "Unstable angina"],
+        nextStep: "Orthostatic vitals, Holter monitor on discharge; consider stress testing if work-up remains negative.",
+      },
+      {
+        vignette: "85 M (HTN, DM, Parkinson's), syncope on standing from bed.",
+        ddx: ["Medication-induced orthostasis", "Autonomic instability (Parkinson's/DM)", "Hypovolemia", "Cardiac"],
+        workup: ["BMP", "EKG", "Extensive medication reconciliation", "Orthostatic vitals", "± echo"],
+      },
+      {
+        vignette: "65 F (HLD), 1 min of syncope with severe chest pain and left-sided weakness, both fully resolved.",
+        ddx: ["TIA", "ACS", "Valvular disease", "PE", "Aortic dissection involving carotid"],
+        workup: ["Troponin", "EKG", "CT brain", "CTA head/neck", "± MR brain", "Echo"],
+        twist: "Trop negative, EKG normal, CT brain negative, CTA with 80% right carotid stenosis.",
+        updatedDdx: ["TIA (symptomatic carotid stenosis)"],
+        nextStep:
+          "Admit for MRI brain; echo to exclude cardioembolic source; lipids + A1c; DAPT + high-intensity statin; carotid endarterectomy for symptomatic stenosis >70%.",
+      },
+    ],
+    quickManagement: [
+      {
+        scenario: "New AFib on EKG, hemodynamically stable",
+        plan: "Rate control (metoprolol — avoid in ADHF; diltiazem/verapamil — avoid in HFrEF). Treat underlying cause (sepsis, thyroid, alcohol withdrawal). Rhythm control if new/symptomatic (electrical or chemical; if >48 h/unknown duration → TEE-guided or anticoagulate 3 wk then cardiovert, then ≥4 wk anticoagulation). Anticoagulate if CHA₂DS₂-VASc ≥2 (men) / ≥3 (women), DOAC > warfarin.",
+      },
+      {
+        scenario: "New AFib, BP 83/50, HR 165",
+        plan: "Urgent synchronized cardioversion + rate control + anticoagulation.",
+      },
+    ],
+    references: [
+      { label: "Syncope evaluation & management", source: "2017 ACC/AHA/HRS Syncope Guideline (Shen et al., Circulation 2017)" },
+      { label: "ESC perspective", source: "ESC 2018 Syncope Guideline" },
+      { label: "AV block & arrhythmia ECGs", source: "LITFL Top 100 ECG", url: LITFL_ECG },
+      { label: "Risk scores", source: "MDCalc", url: MDCALC },
+    ],
+  },
+
+  // ------------------------------------------------------- Altered Mental Status
+  {
+    category: "Altered Mental Status",
+    framework: "Structured cause search — metabolic / infectious / structural / toxins — prioritizing reversible causes.",
+    strategy:
+      "AMS is a syndrome, not a diagnosis. Check a glucose and exclude hypoxia immediately, then run the buckets: metabolic, infectious, structural, toxic. Collateral history is everything.",
+    cantMiss: [
+      "Hypoglycemia",
+      "Hypoxia / hypercapnia",
+      "Meningitis / encephalitis",
+      "Intracranial hemorrhage / stroke",
+      "Sepsis",
+      "Toxic ingestion / opioid (give-able antidotes: glucose, naloxone, thiamine)",
+    ],
+    differential: [
+      { group: "Metabolic", items: ["Hypo/hyperglycemia", "Hypo/hypernatremia", "Uremia", "Hepatic encephalopathy", "Thyroid (storm/myxedema)", "B12/thiamine"] },
+      { group: "Infectious", items: ["Sepsis (UTI/pneumonia in elderly)", "Meningitis / encephalitis"] },
+      { group: "Structural", items: ["Stroke / ICH", "Subdural", "Seizure / postictal", "NPH", "Raised ICP"] },
+      { group: "Toxic", items: ["Alcohol intox/withdrawal", "Opioids / sedatives", "Stimulants", "CO", "Serotonin syndrome"] },
+      { group: "Oxygenation/perfusion", items: ["Hypoxia", "Hypercapnia", "Shock"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Collateral history (after OLDCARTS)",
+        questions: [
+          "Time course and baseline mental status (family/EMS/chart)",
+          "Medications — insulin, sulfonylureas, opioids, sedatives, anticoagulants",
+          "Last known well; focal deficit, seizure, fall/head strike",
+          "Alcohol/substance use; recent illness, fever, missed dialysis",
+        ],
+      },
+      {
+        theme: "Symptom screen for the source",
+        questions: [
+          "Fever, headache, neck stiffness, photophobia (CNS infection)",
+          "Dysuria/cough/diarrhea (occult sepsis source)",
+          "Diabetic? skipped meals, med changes, renal function (hypoglycemia risk)",
+        ],
+      },
+    ],
+    examFocus: [
+      "Point-of-care glucose FIRST; vitals incl. SpO₂, temperature, RR",
+      "HEENT — pupils, lymphadenopathy; neck stiffness",
+      "Cardiac (irregular rhythm), lungs (fremitus), abdomen (distension/tenderness)",
+      "Neuro — orientation, nystagmus, focal deficits, gait",
+      "Special — asterixis; skin (track marks, jaundice, petechiae); breath odor",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "Fingerstick glucose", indication: "first test in any AMS" },
+        { test: "BMP, hepatic panel, ABG/VBG", indication: "metabolic causes; ammonia if cirrhotic" },
+        { test: "CBC w/ diff", indication: "infection" },
+        { test: "B12 / folate / thiamine, TSH/T4", indication: "metabolic / endocrine" },
+        { test: "UA ± blood cultures", indication: "occult infection source" },
+        { test: "UDS, ethanol level, salicylate/acetaminophen", indication: "toxic ingestion" },
+      ],
+      imaging: [
+        { test: "EKG", indication: "arrhythmia, ischemia, electrolyte effect" },
+        { test: "CXR", indication: "pneumonia as sepsis source" },
+        { test: "CT/MRI brain", indication: "focal deficit, trauma, anticoagulation, unexplained AMS" },
+        { test: "Lumbar puncture", indication: "meningitis (after imaging if focal/↑ICP)" },
+        { test: "EEG", indication: "concern for seizure / non-convulsive status" },
+      ],
+    },
+    tools: ["GCS", "CAM (delirium)", "CIWA-Ar (alcohol withdrawal)"],
+    practiceCases: [
+      {
+        vignette: "58 M, shortness of breath and somnolence.",
+        ddx: ["Causes of hypercarbia/hypoxia/hypotension: COPD", "Pneumonia", "ACS", "Sedative overdose", "Hypoglycemia"],
+        workup: ["CBC", "BMP", "ABG", "Troponin", "EKG", "CXR"],
+        twist: "BMP with Cr 1.3, ABG with metabolic acidosis, new fever.",
+        updatedDdx: ["Sepsis — pneumonia, UTI, or GI source"],
+        nextStep: "Blood cultures ×2, lactate, stat CXR, sputum culture, UA if localizing.",
+      },
+      {
+        vignette: "28 F, tachycardic to 150s, hypertensive 160/100, somnolent, tremors.",
+        ddx: ["Alcohol withdrawal", "Opioid withdrawal", "Stimulant intoxication", "Thyroid storm", "Hypo/hyperglycemia"],
+        workup: ["CBC", "BMP", "UDS", "Serum alcohol", "TSH reflex fT4", "Troponin", "EKG"],
+        twist: "WBC 11, BMP wnl, UDS/ethanol negative, TSH 0.01, fT4 elevated, sinus tach.",
+        updatedDdx: ["Thyroid storm"],
+        nextStep: "Propranolol, PTU, iodine (after PTU), steroids; ICU admission for monitoring.",
+      },
+      {
+        vignette: "54 F, abdominal distension, A&Ox0, asterixis.",
+        ddx: ["Hepatic encephalopathy", "Uremia", "SBP", "Electrolyte abnormality", "Cholangitis"],
+        workup: ["CBC", "BMP", "LFTs", "Serum ammonia", "UA", "UDS", "ethanol", "POCUS/RUQ US"],
+        twist: "BMP wnl, LFTs elevated, POCUS with ascites.",
+        updatedDdx: ["SBP complicated by hepatic encephalopathy"],
+        nextStep:
+          "Paracentesis (cell count w/ diff, culture, albumin); start ceftriaxone + lactulose; consider albumin; CT for secondary peritonitis if indicated.",
+      },
+    ],
+    quickManagement: [
+      { scenario: "1 mm pupils, somnolent, RR 7, SpO₂ 92%", plan: "Naloxone (opioid reversal); support airway." },
+      { scenario: "New tremor, anxiety, tachycardia, hallucinations", plan: "CIWA-Ar protocol; benzodiazepines (diazepam/lorazepam); thiamine." },
+      { scenario: "Cr bump, FENa >1%, suprapubic tenderness", plan: "Bladder scan → Foley for retention." },
+      {
+        scenario: "pH <7.1, K >6.5",
+        plan: "HyperK: EKG, telemetry, IV calcium gluconate (membrane stabilization), insulin + glucose (shift), albuterol/bicarb, then loop diuretic / patiromer to remove. Give bicarb for pH <7.1. Nephrology for HD if symptomatic uremia / refractory.",
+      },
+    ],
+    references: [
+      { label: "Delirium framework", source: "AGS / NICE Delirium Guidance" },
+      { label: "Bacterial meningitis", source: "IDSA Bacterial Meningitis Guideline" },
+      { label: "Hyperglycemic crises (DKA/HHS)", source: "ADA Standards of Care" },
+      { label: "Hyponatremia", source: "European Hyponatraemia Guideline 2014" },
+    ],
+  },
+
+  // -------------------------------------------------------------------- Dyspnea
+  {
+    category: "Dyspnea",
+    framework: "Localize by system (cardiac vs pulmonary vs other) + onset tempo, with must-not-miss-first.",
+    strategy:
+      "Localize to a system, then exclude the acutely lethal causes; acuity of onset is the highest-yield discriminator.",
+    cantMiss: [
+      "Pulmonary embolism",
+      "Tension pneumothorax",
+      "Acute pulmonary edema / cardiogenic shock",
+      "Anaphylaxis / airway obstruction",
+      "Impending respiratory failure (severe asthma/COPD)",
+    ],
+    differential: [
+      { group: "Cardiac", items: ["Acute decompensated HF", "ACS", "Tamponade", "Valvular disease"] },
+      { group: "Pulmonary — airway", items: ["Asthma", "COPD exacerbation"] },
+      { group: "Pulmonary — parenchyma/pleura", items: ["Pneumonia", "Pleural effusion", "Pneumothorax", "ILD"] },
+      { group: "Vascular", items: ["Pulmonary embolism"] },
+      { group: "Other", items: ["Anemia", "Metabolic acidosis", "Anxiety", "Neuromuscular weakness"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Onset & pattern",
+        questions: [
+          "Sudden (minutes) → PE, pneumothorax, flash pulmonary edema",
+          "Subacute (days) → pneumonia, effusion, decompensated HF, COPD/asthma",
+          "Exertional tolerance — how far can you walk now vs a month ago?",
+        ],
+      },
+      {
+        theme: "Cardiac vs pulmonary discriminators",
+        questions: [
+          "Orthopnea, PND, leg swelling, weight gain → heart failure",
+          "Wheeze, cough, sputum, triggers, known airway disease → asthma/COPD",
+          "Fever, productive cough, pleuritic pain → pneumonia",
+          "Pleuritic pain + calf swelling + VTE risk → PE",
+        ],
+      },
+    ],
+    examFocus: [
+      "Vitals + SpO₂ + work of breathing; ability to speak in full sentences",
+      "JVP, S3 gallop, displaced PMI (HF)",
+      "Lungs — crackles, wheeze, focal consolidation, absent breath sounds, fremitus",
+      "Bilateral pitting edema; unilateral calf swelling",
+      "Hepatojugular reflux",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "BNP/NT-proBNP", indication: "heart failure" },
+        { test: "Troponin", indication: "ACS / strain" },
+        { test: "CBC, BMP", indication: "anemia, electrolytes, renal function" },
+        { test: "ABG/VBG", indication: "respiratory failure, A–a gradient" },
+        { test: "D-dimer", indication: "PE when pre-test probability is low" },
+      ],
+      imaging: [
+        { test: "Chest X-ray", indication: "first-line: edema, consolidation, effusion, pneumothorax" },
+        { test: "EKG", indication: "ischemia, strain, arrhythmia" },
+        { test: "CT-PA", indication: "PE" },
+        { test: "Echocardiography", indication: "new HF, valve disease, effusion" },
+        { test: "POCUS lung", indication: "B-lines (edema), effusion, sliding (pneumothorax)" },
+      ],
+    },
+    tools: ["Wells + PERC (PE)", "CURB-65 (pneumonia)", "BNP interpretation"],
+    practiceCases: [
+      {
+        vignette: "68 M, 1 week of progressive dyspnea on exertion, orthopnea, leg swelling, ran out of his 'water pill'.",
+        ddx: ["Acute decompensated heart failure", "COPD exacerbation", "Pneumonia", "PE", "Anemia"],
+        workup: ["BNP", "Troponin", "CBC", "BMP", "EKG", "CXR"],
+        twist: "↑BNP, CXR with cephalization + Kerley B lines, troponin negative.",
+        updatedDdx: ["ADHF (medication non-adherence / dietary indiscretion)"],
+        nextStep: "Diurese (IV furosemide), daily weights, strict I/Os, echo; restart GDMT; reconcile diuretic adherence.",
+      },
+      {
+        vignette: "55 M smoker, increasing cough and breathlessness, wheezing.",
+        ddx: ["COPD exacerbation", "Pneumonia", "ACS", "PE", "Heart failure"],
+        workup: ["CXR", "ABG/VBG", "CBC", "BMP", "EKG", "± BNP"],
+      },
+    ],
+    quickManagement: [
+      { scenario: "COPD exacerbation", plan: "Short-acting bronchodilators (albuterol/ipratropium), systemic steroids, antibiotics if ↑sputum purulence/volume; NIPPV for hypercapnic respiratory failure; controlled O₂ to SpO₂ 88–92%." },
+      { scenario: "Pulmonary edema (ADHF)", plan: "Sit upright, supplemental O₂/NIPPV, IV loop diuretic, nitrates if hypertensive; treat the trigger; GDMT once stabilized." },
+    ],
+    references: [
+      { label: "Heart failure management", source: "2022 AHA/ACC/HFSA Heart Failure Guideline" },
+      { label: "COPD diagnosis & exacerbations", source: "GOLD Report (current year)", url: "https://goldcopd.org/" },
+      { label: "Community-acquired pneumonia", source: "2019 ATS/IDSA CAP Guideline" },
+      { label: "Chest radiograph interpretation", source: "LITFL CXR Top 100", url: LITFL_CXR },
+    ],
+  },
+
+  // ---------------------------------------------------------------------- Fever
+  {
+    category: "Fever",
+    framework: "Head-to-toe source search with a host-risk overlay, running the sepsis screen in parallel.",
+    strategy:
+      "Find the source while screening for sepsis. Use a head-to-toe review of systems, recognize high-risk hosts (immunocompromised, prosthetic material, recent procedures), and start the sepsis clock early.",
+    cantMiss: [
+      "Sepsis / septic shock",
+      "Bacterial meningitis",
+      "Infective endocarditis",
+      "Necrotizing soft-tissue infection",
+      "Neutropenic fever",
+    ],
+    differential: [
+      { group: "Respiratory", items: ["Pneumonia", "Influenza / COVID", "Empyema"] },
+      { group: "Genitourinary", items: ["Pyelonephritis", "Complicated UTI", "Prostatitis"] },
+      { group: "Skin / soft tissue", items: ["Cellulitis", "Abscess", "Necrotizing fasciitis"] },
+      { group: "CNS", items: ["Meningitis", "Encephalitis"] },
+      { group: "Cardiovascular", items: ["Endocarditis", "Line/device infection"] },
+      { group: "Intra-abdominal", items: ["Cholangitis", "Diverticulitis", "Abscess"] },
+      { group: "Non-infectious", items: ["VTE", "Drug fever", "Inflammatory / malignancy"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Localize the source (review of systems)",
+        questions: [
+          "Cough/sputum/pleuritic pain (lung); dysuria/flank pain (GU)",
+          "Headache/neck stiffness/photophobia (CNS); rash/wound/redness (skin)",
+          "Abdominal pain/diarrhea (GI); new murmur / IVDU (endocarditis)",
+        ],
+      },
+      {
+        theme: "Host & exposure risk",
+        questions: [
+          "Immunosuppression, chemotherapy/neutropenia, asplenia, diabetes",
+          "Indwelling devices, prosthetics, recent surgery/procedure/catheter",
+          "Travel, sick contacts, animal/insect exposure, TB risk; injection drug use",
+        ],
+      },
+    ],
+    examFocus: [
+      "Full vitals incl. temperature, MAP, mentation (sepsis screen)",
+      "Skin/soft tissue — erythema, fluctuance, crepitus, pain out of proportion",
+      "Lungs, abdomen, CVA tenderness, neck stiffness",
+      "New murmur, peripheral stigmata of endocarditis, lines/wounds",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "Lactate", indication: "sepsis / hypoperfusion" },
+        { test: "Blood cultures ×2 (before antibiotics)", indication: "bacteremia / endocarditis" },
+        { test: "CBC w/ diff", indication: "leukocytosis, neutropenia" },
+        { test: "BMP, LFTs", indication: "organ dysfunction, biliary source" },
+        { test: "Urinalysis + culture", indication: "GU source" },
+      ],
+      imaging: [
+        { test: "Chest X-ray", indication: "pneumonia / effusion" },
+        { test: "Echocardiography", indication: "endocarditis (Duke criteria)" },
+        { test: "CT", indication: "deep collection / abscess" },
+        { test: "Lumbar puncture", indication: "suspected meningitis" },
+      ],
+    },
+    tools: ["qSOFA / SOFA", "Surviving Sepsis bundle", "Modified Duke criteria"],
+    practiceCases: [
+      {
+        vignette: "72 F, fever, dysuria, flank pain, confusion, BP 92/54.",
+        ddx: ["Pyelonephritis / urosepsis", "Pneumonia", "Intra-abdominal source", "Meningitis"],
+        workup: ["Lactate", "Blood cultures ×2", "CBC", "BMP", "UA + culture", "CXR"],
+        twist: "Lactate 3.2, UA with pyuria + nitrites, WBC 18k.",
+        updatedDdx: ["Urosepsis"],
+        nextStep: "Sepsis bundle: cultures before antibiotics → empiric broad-spectrum antibiotics within 1 h, 30 mL/kg crystalloid, reassess perfusion/lactate; source control as needed.",
+      },
+      {
+        vignette: "35 M with IV drug use, fever, new murmur, splinter hemorrhages.",
+        ddx: ["Infective endocarditis", "Septic emboli", "Cellulitis/abscess", "Pneumonia"],
+        workup: ["Blood cultures ×3", "Echocardiography (TTE → TEE)", "CBC", "BMP", "CXR", "EKG"],
+      },
+    ],
+    quickManagement: [
+      { scenario: "Septic shock", plan: "Cultures before antibiotics, then broad-spectrum antibiotics within 1 h; 30 mL/kg balanced crystalloid; norepinephrine for MAP <65 after fluids; source control; trend lactate." },
+      { scenario: "Neutropenic fever", plan: "Emergency — empiric anti-pseudomonal β-lactam (cefepime / piperacillin-tazobactam / meropenem) within 1 h; add vancomycin for line/skin/hemodynamic instability." },
+    ],
+    references: [
+      { label: "Sepsis management", source: "Surviving Sepsis Campaign 2021" },
+      { label: "Community-acquired pneumonia", source: "2019 ATS/IDSA CAP Guideline" },
+      { label: "Infective endocarditis", source: "AHA 2015 / ESC 2023 IE Guidelines; Modified Duke criteria" },
+      { label: "Febrile neutropenia", source: "IDSA Febrile Neutropenia Guideline" },
+    ],
+  },
+
+  // -------------------------------------------------------------------- Anemia
+  {
+    category: "Anemia",
+    framework: "Two-axis: acute-vs-chronic / bleeding-vs-not, crossed with the MCV + reticulocyte (kinetic) classification.",
+    strategy:
+      "Two questions organize everything: is the patient bleeding (hemodynamic stability + source), and what does the MCV say — micro-, normo-, or macrocytic.",
+    cantMiss: [
+      "Acute hemorrhage with shock (GI bleed, ruptured ectopic/AAA)",
+      "Hemolytic crisis (TTP/HUS)",
+      "Pancytopenia / marrow failure / leukemia",
+    ],
+    differential: [
+      { group: "Microcytic", items: ["Iron deficiency (often occult GI loss)", "Thalassemia", "Anemia of chronic disease (late)"] },
+      { group: "Normocytic", items: ["Acute blood loss", "Anemia of chronic disease", "Renal (low EPO)", "Mixed deficiency"] },
+      { group: "Macrocytic", items: ["B12/folate deficiency", "Alcohol / liver disease", "Hypothyroid", "MDS", "Drugs"] },
+      { group: "Hemolytic", items: ["Autoimmune", "Microangiopathic (TTP/HUS)", "Hereditary (sickle, G6PD, spherocytosis)"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Bleeding source",
+        questions: [
+          "Melena, hematochezia, hematemesis; NSAID/anticoagulant use",
+          "Menorrhagia; hematuria; recent trauma/surgery",
+          "Dyspepsia, weight loss, change in bowel habit (malignancy)",
+        ],
+      },
+      {
+        theme: "Mechanism clues",
+        questions: [
+          "Diet (vegetarian/vegan → B12; restricted → iron/folate); alcohol",
+          "Jaundice, dark urine, known hemolytic disorder",
+          "Numbness/paresthesias, gait/balance (B12 myelopathy)",
+          "Chronic disease: CKD, inflammatory conditions, malignancy",
+        ],
+      },
+    ],
+    examFocus: [
+      "Vitals incl. orthostatics; signs of shock",
+      "Conjunctival/palmar pallor, jaundice",
+      "Glossitis, koilonychia (iron); neuro incl. proprioception (B12)",
+      "Splenomegaly, lymphadenopathy; rectal exam for melena",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "CBC with indices + MCV", indication: "classify size; check WBC/platelets" },
+        { test: "Reticulocyte count", indication: "production (hypo) vs destruction/loss (hyper)" },
+        { test: "Peripheral smear", indication: "schistocytes, spherocytes, blasts, hypersegmentation" },
+        { test: "Iron studies (ferritin, TIBC, sat)", indication: "microcytic anemia" },
+        { test: "B12, folate, TSH, LFTs", indication: "macrocytic anemia" },
+        { test: "LDH, haptoglobin, bilirubin, DAT", indication: "suspected hemolysis" },
+      ],
+      imaging: [
+        { test: "EGD / colonoscopy", indication: "iron deficiency — GI source evaluation" },
+        { test: "± CT / capsule study", indication: "obscure GI bleeding" },
+      ],
+    },
+    tools: ["MCV classification", "Reticulocyte index", "Glasgow-Blatchford (upper GI bleed)"],
+    practiceCases: [
+      {
+        vignette: "62 M, fatigue and black stools, BP 96/60, HR 110.",
+        ddx: ["Acute upper GI bleed (PUD, varices)", "Lower GI bleed", "Malignancy", "Iron-deficiency from chronic loss"],
+        workup: ["CBC", "BMP (BUN:Cr)", "Type & screen", "Coags", "Iron studies", "Lactate"],
+        twist: "Hgb 7.1, MCV 72, BUN:Cr elevated, hemodynamically borderline.",
+        updatedDdx: ["Acute upper GI bleed on a background of iron deficiency"],
+        nextStep: "Two large-bore IVs, resuscitate, transfuse to Hgb ≥7, IV PPI, type & screen; GI consult → EGD; hold anticoagulants.",
+      },
+      {
+        vignette: "34 F, vegan, fatigue and paresthesias, unsteady gait.",
+        ddx: ["B12 deficiency", "Folate deficiency", "Hypothyroidism", "MDS"],
+        workup: ["CBC + MCV", "Reticulocytes", "Smear", "B12 ± methylmalonic acid", "Folate", "TSH"],
+      },
+    ],
+    quickManagement: [
+      { scenario: "Iron-deficiency anemia", plan: "Oral (or IV) iron repletion; identify and treat the source — GI evaluation in men and post-menopausal women." },
+      { scenario: "Symptomatic / acute blood-loss anemia", plan: "Resuscitate, restrictive transfusion threshold (Hgb 7; higher in active ACS), reverse anticoagulation, source control." },
+    ],
+    references: [
+      { label: "Iron deficiency / GI evaluation", source: "ACG/AGA Iron-Deficiency Anemia Guidance" },
+      { label: "Upper GI bleeding", source: "ACG 2021 Upper GI Bleeding Guideline" },
+      { label: "Transfusion thresholds", source: "AABB Red Cell Transfusion Guidelines" },
+      { label: "Smear morphology", source: "ASH Image Bank", url: "https://imagebank.hematology.org/" },
+    ],
+  },
+
+  // ------------------------------------------------------------------- Diarrhea
+  {
+    category: "Diarrhea",
+    framework: "Acute-vs-chronic split, then inflammatory/invasive vs secretory/osmotic features.",
+    strategy:
+      "Separate acute (<2 weeks, usually infectious/self-limited) from chronic, and screen for the inflammatory/invasive features and dehydration that change management.",
+    cantMiss: [
+      "Severe dehydration / hypovolemic shock",
+      "Toxic megacolon",
+      "C. difficile colitis",
+      "Ischemic colitis",
+      "GI bleed",
+    ],
+    differential: [
+      { group: "Acute infectious", items: ["Viral", "Bacterial (Salmonella, Shigella, Campylobacter, EHEC)", "C. difficile", "Parasitic"] },
+      { group: "Inflammatory", items: ["UC / Crohn's flare", "Ischemic colitis", "Microscopic colitis"] },
+      { group: "Malabsorptive / chronic", items: ["Celiac disease", "Pancreatic insufficiency", "Bile-acid", "IBS"] },
+      { group: "Other", items: ["Medication / laxative", "Hyperthyroid", "Overflow from constipation"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Characterize the stool & course",
+        questions: [
+          "Duration; frequency and volume; large watery vs small frequent",
+          "Blood or mucus (inflammatory/invasive); nocturnal diarrhea (organic)",
+          "Weight loss; relation to fasting (secretory vs osmotic)",
+        ],
+      },
+      {
+        theme: "Exposures & red flags",
+        questions: [
+          "Recent antibiotics or hospitalization (C. diff); sick contacts, travel, food/water",
+          "Fever, severe abdominal pain, dehydration symptoms",
+          "Immunosuppression; new medications; family history of IBD/celiac",
+        ],
+      },
+    ],
+    examFocus: [
+      "Volume status — mucous membranes, skin turgor, orthostatics, cap refill",
+      "Abdominal exam — tenderness, distension, peritoneal signs",
+      "Rectal exam — blood, tenderness",
+      "Extra-intestinal IBD signs (oral ulcers, joints, skin, eyes)",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "CBC, BMP", indication: "electrolytes, renal function, dehydration" },
+        { test: "C. difficile toxin/PCR", indication: "antibiotic / hospital exposure" },
+        { test: "Stool culture / multiplex PCR", indication: "bloody/severe/dysentery" },
+        { test: "Fecal calprotectin / leukocytes", indication: "inflammatory vs functional" },
+        { test: "tTG-IgA", indication: "chronic — celiac disease" },
+        { test: "Lactate", indication: "ischemia/sepsis concern" },
+      ],
+      imaging: [
+        { test: "Abdominal X-ray", indication: "toxic megacolon, obstruction" },
+        { test: "CT abdomen/pelvis", indication: "colitis / ischemia / complications" },
+        { test: "Colonoscopy", indication: "chronic / inflammatory / IBD evaluation" },
+      ],
+    },
+    tools: ["Bristol Stool Scale", "Fecal calprotectin"],
+    practiceCases: [
+      {
+        vignette: "68 M, bloody diarrhea and crampy abdominal pain 2 days after a hospitalization on antibiotics.",
+        ddx: ["C. difficile colitis", "Ischemic colitis", "Infectious colitis (EHEC, Shigella)", "IBD flare"],
+        workup: ["CBC", "BMP", "Lactate", "C. difficile PCR/toxin", "Stool studies", "± CT A/P"],
+        twist: "WBC 18k, C. diff PCR positive, abdomen distended.",
+        updatedDdx: ["C. difficile colitis (assess for fulminant disease)"],
+        nextStep: "Oral vancomycin (or fidaxomicin); add IV metronidazole + consider surgery if fulminant/toxic megacolon; isolate; stop the inciting antibiotic; avoid antimotility agents.",
+      },
+      {
+        vignette: "29 F, chronic non-bloody diarrhea, weight loss, bloating, iron-deficiency anemia.",
+        ddx: ["Celiac disease", "IBS", "Microscopic colitis", "Pancreatic insufficiency", "Hyperthyroid"],
+        workup: ["tTG-IgA + total IgA", "CBC + iron studies", "TSH", "Fecal calprotectin", "Colonoscopy with biopsies if indicated"],
+      },
+    ],
+    quickManagement: [
+      { scenario: "Acute watery diarrhea, mild, non-bloody", plan: "Oral rehydration, supportive care, no testing or antibiotics; return precautions." },
+      { scenario: "C. difficile colitis", plan: "Oral vancomycin or fidaxomicin; stop offending antibiotic; isolate; surgery for fulminant/toxic megacolon." },
+    ],
+    references: [
+      { label: "Acute infectious diarrhea", source: "ACG 2016 Acute Diarrheal Infections Guideline; IDSA 2017" },
+      { label: "C. difficile infection", source: "IDSA/SHEA C. difficile Guideline (2021 update)" },
+      { label: "IBD management", source: "ACG Ulcerative Colitis / Crohn's Guidelines" },
+      { label: "Celiac disease", source: "ACG 2023 Celiac Disease Guideline" },
+    ],
+  },
+
+  // ------------------------------------------------------- Abnormal Liver Enzymes
+  {
+    category: "Abnormal Liver Enzymes",
+    framework: "Pattern recognition: hepatocellular vs cholestatic vs mixed (R-factor), then cause within the pattern.",
+    strategy:
+      "First classify the pattern — hepatocellular (ALT/AST ↑↑) vs cholestatic (ALP/bilirubin ↑↑) vs mixed — then build a pattern-specific differential and assess for liver failure (INR, encephalopathy).",
+    cantMiss: [
+      "Acute liver failure (coagulopathy + encephalopathy)",
+      "Acetaminophen toxicity",
+      "Ascending cholangitis",
+      "Acute biliary obstruction",
+      "Ischemic hepatitis / Budd-Chiari",
+    ],
+    differential: [
+      { group: "Hepatocellular", items: ["Viral hepatitis (A/B/C/E)", "Drug-induced (acetaminophen)", "Alcoholic hepatitis", "NAFLD/NASH", "Autoimmune", "Ischemic"] },
+      { group: "Cholestatic", items: ["Choledocholithiasis", "Malignant obstruction", "PBC / PSC", "Drug-induced cholestasis"] },
+      { group: "Infiltrative (isolated ALP)", items: ["Malignancy", "Granulomatous disease"] },
+      { group: "Non-hepatic ALP", items: ["Bone disease", "Pregnancy"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Exposures & risk",
+        questions: [
+          "All medications/supplements/herbals; acetaminophen dose & timing (staggered?)",
+          "Alcohol quantity and pattern",
+          "Viral risk: IV drug use, transfusions, tattoos, sexual exposures, travel, shellfish",
+          "Metabolic risk: obesity, diabetes, dyslipidemia (NAFLD)",
+        ],
+      },
+      {
+        theme: "Symptoms & severity",
+        questions: [
+          "Jaundice, dark urine, pale stools, pruritus (cholestasis)",
+          "RUQ pain, fever (biliary infection)",
+          "Confusion, bleeding/bruising, distension (decompensation / failure)",
+        ],
+      },
+    ],
+    examFocus: [
+      "Scleral icterus, jaundice",
+      "Stigmata of chronic liver disease — spider nevi, palmar erythema, gynecomastia, caput",
+      "Hepatomegaly/tenderness, splenomegaly, ascites (shifting dullness/fluid wave)",
+      "Asterixis, encephalopathy",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "Repeat LFTs with fractionated bilirubin + GGT", indication: "compute R-factor; confirm hepatic ALP" },
+        { test: "INR, albumin", indication: "synthetic function — ALF if coagulopathy + encephalopathy" },
+        { test: "Acetaminophen level", indication: "plot on Rumack-Matthew; treat with NAC" },
+        { test: "Viral hepatitis panel", indication: "hepatocellular pattern" },
+        { test: "Autoimmune markers (ANA, ASMA, IgG)", indication: "autoimmune hepatitis" },
+        { test: "Lipase, serum/urine tox", indication: "co-pathology / ingestion" },
+      ],
+      imaging: [
+        { test: "RUQ ultrasound", indication: "ducts, parenchyma, vascular flow" },
+        { test: "MRCP", indication: "biliary obstruction" },
+        { test: "ERCP", indication: "therapeutic — stone extraction / decompression" },
+      ],
+    },
+    tools: ["R-factor", "Maddrey DF (alcoholic hepatitis)", "MELD-Na"],
+    practiceCases: [
+      {
+        vignette: "28 M, RUQ pain, fever, anorexia, nausea.",
+        ddx: ["Cholecystitis", "Cholangitis", "Hepatitis", "Hepatic abscess", "Pneumonia", "Pyelonephritis", "Nephrolithiasis"],
+        workup: ["CBC", "BMP", "LFTs", "Lipase", "UA", "RUQ US", "EKG", "Troponin"],
+        twist: "AST/ALT in the 1000s; WBC 13k; lipase/UA/EKG/troponin unremarkable; imaging pending.",
+        updatedDdx: ["Viral hepatitis", "Drug-induced (acetaminophen)", "Acute obstruction", "Ischemic", "less likely autoimmune / Wilson's / acute MI"],
+        nextStep: "Viral hepatitis panel, RUQ US, acetaminophen level + serum/urine tox; check INR/albumin and mental status for acute liver failure.",
+      },
+      {
+        vignette: "55 F, painless jaundice, dark urine, pale stools, pruritus.",
+        ddx: ["Malignant biliary obstruction", "Choledocholithiasis", "PBC/PSC", "Drug-induced cholestasis"],
+        workup: ["LFTs (cholestatic pattern)", "RUQ US", "MRCP", "± ERCP", "Tumor markers if mass"],
+      },
+    ],
+    quickManagement: [
+      { scenario: "Acetaminophen toxicity", plan: "N-acetylcysteine guided by the Rumack-Matthew nomogram / staggered-ingestion criteria; consult toxicology / transplant if ALF." },
+      { scenario: "Ascending cholangitis", plan: "IV fluids + broad-spectrum antibiotics, then biliary decompression (ERCP) — Charcot triad / Reynolds pentad; urgent if septic." },
+    ],
+    references: [
+      { label: "Abnormal liver chemistries — approach", source: "ACG 2017 Guideline on Liver Chemistries" },
+      { label: "Acetaminophen overdose", source: "Rumack-Matthew nomogram; AASLD ALF guidance" },
+      { label: "Alcohol-associated liver disease", source: "AASLD 2019 ALD Guideline" },
+      { label: "Calculators (MELD, Maddrey)", source: "MDCalc", url: MDCALC },
+    ],
+  },
+];
+
+export const CURRICULUM_BY_CATEGORY: ReadonlyMap<string, CategoryCurriculum> = new Map(
+  CURRICULUM.map((c) => [c.category, c]),
+);
+
+/**
+ * Broad framework items to credit per post-encounter step, keyed by stepId:
+ * the differential step accepts the full category differential buckets; the
+ * workup step accepts the full work-up menu (labs + imaging). Lets a wide
+ * differential and broad work-up earn credit, matching the end-of-station
+ * framework. Returns {} for categories without a curriculum entry.
+ */
+export function breadthCreditForCategory(category: string): Record<string, string[]> {
+  const c = CURRICULUM_BY_CATEGORY.get(category);
+  if (!c) return {};
+  const differential = c.differential.flatMap((g) => g.items);
+  const workup = [
+    ...c.workupMenu.labs.map((l) => l.test),
+    ...c.workupMenu.imaging.map((i) => i.test),
+  ];
+  return { differential, workup, revised: differential };
+}

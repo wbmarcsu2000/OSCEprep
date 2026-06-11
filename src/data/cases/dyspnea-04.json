@@ -1,0 +1,597 @@
+{
+  "id": "dyspnea-04",
+  "category": "Dyspnea",
+  "difficulty": "hard",
+  "title": "Sudden breathlessness post-op",
+  "diagnosis": "Pulmonary embolism",
+  "chart": {
+    "ageSex": "58F",
+    "cc": "Sudden shortness of breath",
+    "oneLiner": "58F presents with sudden dyspnea and right-sided pleuritic chest pain, 5 days after a total hip replacement.",
+    "vitals": {
+      "BP": "108/68",
+      "HR": "116",
+      "RR": "26",
+      "Temp": "37.3°C",
+      "SpO2": "89% RA"
+    },
+    "timer": 180
+  },
+  "opening": "All of a sudden I couldn't catch my breath, and it hurts when I breathe in.",
+  "patientFile": "PERSONA: 58-year-old woman, anxious, tachypneic. Recovering from recent surgery, limited mobility. Cooperative.\n\nHPI: Abrupt onset of dyspnea and right-sided pleuritic chest pain this afternoon. Five days post total hip replacement, mostly bedbound since. Mild right calf discomfort for a day (only if asked / examined). NO fever, NO purulent cough, NO orthopnea, NO prior cardiac history.\nPMH: osteoarthritis (s/p right THR 5 days ago), obesity. MEDS: acetaminophen, oxycodone PRN; was supposed to get DVT prophylaxis (only if asked). SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, tachypneic, mild distress.\n- Vitals: BP 108/68, HR 116, RR 26, 37.3°C, SpO2 89% RA.\n- Lungs: clear bilaterally, no focal crackles or consolidation.\n- Cardiac: tachycardic, regular; loud P2 if specifically auscultated.\n- Extremities: RIGHT calf mildly swollen and tender, surgical dressing intact on right hip; left leg normal.\n- Neck: JVP mildly elevated if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the calf symptoms, the missed prophylaxis, or the immobility unless asked about leg symptoms, blood thinners/prophylaxis, or activity/mobility.\n- The calf findings and loud P2 are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 9.0, Hgb 11.5 (post-op), Plt 240.",
+      "BMP": "Within normal limits.",
+      "Troponin": "0.06 ng/mL — mildly elevated (right heart strain).",
+      "Ddimer": "Markedly elevated (low specificity post-op).",
+      "ABG": "pH 7.49, PaCO2 29, PaO2 60 — hypoxemia with respiratory alkalosis.",
+      "CTPE": "CT pulmonary angiogram: bilateral segmental pulmonary emboli; RV/LV ratio borderline."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Massive-bilateral-pulmonary-embolus-2.jpeg",
+      "source": "https://litfl.com/ecg-changes-in-pulmonary-embolism/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "verify": "From the LITFL 'ECG Changes in Pulmonary Embolism' library page — download an example tracing that matches: Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possib … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "searchTerms": [
+        "12-lead EKG Sinus tachycardia; S1Q3T3 pattern"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (PA)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+      "verify": "Pick a CC normal/near-normal PA chest film (the point is a clear film despite hypoxemia).",
+      "assetNeeded": true,
+      "imageDescription": "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+      "searchTerms": [
+        "chest radiograph Essentially clear consolidation effusion"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Troponin",
+    "Ddimer",
+    "ABG",
+    "CTPE",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "cxr",
+    "CTPE"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Pulmonary embolism (leading & CANT-MISS,9; accepts PE). Acute coronary syndrome (CANT-MISS,4). Pneumonia/atelectasis (core,3). Heart failure (core,2). Post-op atelectasis (bonus,2). Names PE with risk factors — recent surgery, immobility (core,5).",
+      "idealAnswer": "Leading diagnosis: Pulmonary embolism. Must-not-miss diagnoses to exclude: Acute coronary syndrome. Also reasonable: Pneumonia/atelectasis; Heart failure.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Pneumonia/atelectasis",
+            "points": 3
+          },
+          {
+            "item": "Heart failure",
+            "points": 2
+          },
+          {
+            "item": "Names PE with risk factors — recent surgery, immobility",
+            "points": 5
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Post-op atelectasis",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome"
+      ],
+      "acceptableAlternatives": [
+        "Pneumonia/atelectasis",
+        "Heart failure"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order? (Consider pretest probability.)",
+      "rubric": "CT pulmonary angiogram (CANT-MISS,6; accepts CTPE/CTA). EKG (core,3). CXR (core,3). Troponin (core,2). Recognizes high pretest probability — go to imaging; D-dimer unhelpful post-op (bonus,3). PENALTY: relying on a D-dimer to exclude PE in a high-probability post-op patient (-3).",
+      "idealAnswer": "Order: EKG; CXR; Troponin.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 3
+          },
+          {
+            "item": "CXR",
+            "points": 3
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Recognizes high pretest probability — go to imaging; D-dimer unhelpful post-op",
+            "points": 3
+          }
+        ],
+        "penalties": [
+          {
+            "item": "relying on a D-dimer to exclude PE in a high-probability post-op patient",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [],
+      "optionalTests": [
+        "EKG",
+        "CXR",
+        "Troponin"
+      ],
+      "contraindicatedTests": [
+        "relying on a D-dimer to exclude PE in a high-probability post-op patient"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia; possible S1Q3T3 / right heart strain; no acute STEMI. CREDIT: rate & rhythm (sinus tachy) (6); recognizes right-heart-strain pattern or S1Q3T3 if present (5); no acute ST-elevation MI (2); systematic read (2). PENALTY: calling a STEMI (-3).",
+      "keyFindings": [
+        "recognizes right-heart-strain pattern or S1Q3T3 if present",
+        "no acute ST-elevation MI",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation."
+      ],
+      "commonMistakes": [
+        "calling a STEMI"
+      ],
+      "idealAnswer": "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "recognizes right-heart-strain pattern or S1Q3T3 if present",
+            "points": 5
+          },
+          {
+            "item": "no acute ST-elevation MI",
+            "points": 2
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "calling a STEMI",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = essentially clear film. CREDIT: correctly identifies no consolidation/effusion/pneumothorax (6); notes the clinically important mismatch — clear film with significant hypoxemia points toward PE (4). PENALTY: inventing an infiltrate (-2).",
+      "keyFindings": [
+        "correctly identifies no consolidation/effusion/pneumothorax",
+        "notes the clinically important mismatch — clear film with significant hypoxemia points toward PE"
+      ],
+      "criticalFindings": [
+        "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate"
+      ],
+      "idealAnswer": "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "correctly identifies no consolidation/effusion/pneumothorax",
+            "points": 6
+          },
+          {
+            "item": "notes the clinically important mismatch — clear film with significant hypoxemia points toward PE",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing an infiltrate",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the CTPE result, what is your diagnosis and how do you risk-stratify?",
+      "rubric": "Acute pulmonary embolism (5). Assesses hemodynamic stability / RV strain to classify (low-risk vs submassive vs massive) (3). Links mild troponin + tachycardia to RV strain (bonus,2).",
+      "idealAnswer": "Pulmonary embolism. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Links mild troponin + tachycardia to RV strain",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Therapeutic anticoagulation — heparin/LMWH (CANT-MISS,9; note recent surgery affects agent/bleeding risk). Supplemental O2 (4). Risk-stratify; reserve thrombolysis for massive/unstable PE (5). Admit with monitoring (4). Assess bleeding risk given recent surgery before anticoagulating (3). PENALTY: no anticoagulation (-6); reflexive thrombolytics in a stable post-op patient (-4).",
+      "idealAnswer": "Plan: .",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "no anticoagulation",
+            "points": -6
+          }
+        ]
+      },
+      "requiredActions": [],
+      "optionalActions": [],
+      "unsafeActions": [
+        "no anticoagulation"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "58-year-old woman, anxious, tachypneic. Recovering from recent surgery, limited mobility. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_jvp_finding_1",
+      "finding": "Neck: JVP mildly elevated if examined.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_2",
+      "finding": "Lungs: clear bilaterally, no focal crackles or consolidation.",
+      "revealedBy": [
+        "auscultate_posterior_lungs",
+        "auscultate_anterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear."
+    },
+    {
+      "id": "percuss_posterior_lungs_finding_3",
+      "finding": "Lungs: clear bilaterally, no focal crackles or consolidation.",
+      "revealedBy": [
+        "percuss_posterior_lungs",
+        "assess_egophony",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No consolidation."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_4",
+      "finding": "Extremities: RIGHT calf mildly swollen and tender, surgical dressing intact on right hip; left leg normal.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Pulmonary embolism",
+    "diagnosticFramework": "58F presents with sudden dyspnea and right-sided pleuritic chest pain, 5 days after a total hip replacement. The diagnosis is Pulmonary embolism, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Neck: JVP mildly elevated if examined.",
+      "Lungs: clear bilaterally, no focal crackles or consolidation.",
+      "Lungs: clear bilaterally, no focal crackles or consolidation.",
+      "Extremities: RIGHT calf mildly swollen and tender, surgical dressing intact on right hip; left leg normal."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Troponin",
+      "Ddimer",
+      "ABG",
+      "CTPE"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Pulmonary embolism while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Pulmonary embolism and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "no anticoagulation"
+    ],
+    "managementPearls": [],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+    ],
+    "criticalManagementItems": [],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

@@ -1,0 +1,603 @@
+{
+  "id": "syncope-04",
+  "category": "Syncope",
+  "difficulty": "moderate",
+  "title": "Syncope on exertion with a murmur",
+  "diagnosis": "Aortic stenosis",
+  "chart": {
+    "ageSex": "72M",
+    "cc": "Passed out while exerting",
+    "oneLiner": "72M presents after passing out while climbing stairs; he also reports months of exertional breathlessness and chest tightness.",
+    "vitals": {
+      "BP": "118/86",
+      "HR": "78",
+      "RR": "16",
+      "Temp": "36.8°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I blacked out going up the stairs. Lately I've been getting winded and my chest gets tight when I push myself.",
+  "patientFile": "PERSONA: 72-year-old man, calm now, concerned. Good historian.\n\nHPI: Syncope occurred DURING exertion (climbing stairs) — a high-risk feature. Over the past few months: exertional dyspnea and exertional chest tightness/angina, plus reduced exercise tolerance (the classic triad). Quick recovery after the faint, no confusion. NO clear prodrome of warmth/nausea. NO palpitations.\nPMH: hypertension, hyperlipidemia. MEDS: amlodipine, atorvastatin. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing at rest.\n- Vitals: BP 118/86 (narrow pulse pressure), HR 78, RR 16, 36.8°C, SpO2 97% RA.\n- Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus) if specifically examined.\n- Lungs: clear. Neuro: no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize the EXERTIONAL nature of the syncope only if asked when/during what it happened.\n- The murmur, radiation, soft S2, and delayed carotid upstroke are revealed only if the heart/carotids are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 95 — normal.",
+      "Troponin": "Normal — no acute infarct.",
+      "BMP": "Within normal limits.",
+      "BNP": "Mildly elevated.",
+      "Echo": "Echocardiogram: severe aortic stenosis (small valve area, elevated gradient) with left ventricular hypertrophy and preserved EF."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Left-ventricular-hypertrophy-LVH-2.jpg",
+      "source": "https://litfl.com/left-ventricular-hypertrophy-lvh-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "verify": "From the LITFL 'Left Ventricular Hypertrophy' library page — download an example tracing that matches: Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm;  … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "searchTerms": [
+        "12-lead EKG Left ventricular hypertrophy with"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Possible cardiomegaly / aortic valve calcification; lungs clear.",
+      "verify": "Pick a CC PA chest film that is normal or shows mild cardiomegaly; nothing acute.",
+      "assetNeeded": true,
+      "imageDescription": "Possible cardiomegaly / aortic valve calcification; lungs clear.",
+      "searchTerms": [
+        "chest radiograph Possible cardiomegaly aortic valve"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "Troponin",
+    "BMP",
+    "BNP",
+    "Echo",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "Echo"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Aortic stenosis causing exertional syncope (leading & CANT-MISS,9). Arrhythmia (CANT-MISS,4). Hypertrophic cardiomyopathy (core,3). Vasovagal (less likely — exertional) (core,2). Pulmonary embolism (CANT-MISS,2). Connects exertional syncope + systolic murmur radiating to carotids to outflow obstruction (core,5).",
+      "idealAnswer": "Leading diagnosis: Aortic stenosis causing exertional syncope. Must-not-miss diagnoses to exclude: Arrhythmia; Pulmonary embolism. Also reasonable: Hypertrophic cardiomyopathy; Vasovagal (less likely — exertional).",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Aortic stenosis causing exertional syncope",
+            "points": 9
+          },
+          {
+            "item": "Arrhythmia",
+            "points": 4
+          },
+          {
+            "item": "Pulmonary embolism",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Hypertrophic cardiomyopathy",
+            "points": 3
+          },
+          {
+            "item": "Vasovagal (less likely — exertional)",
+            "points": 2
+          },
+          {
+            "item": "Connects exertional syncope + systolic murmur radiating to carotids to outflow obstruction",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Arrhythmia",
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Hypertrophic cardiomyopathy",
+        "Vasovagal (less likely — exertional)"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "EKG (CANT-MISS,4). Echocardiogram — the key diagnostic test (CANT-MISS,6). Telemetry (2). Troponin (1). BNP (1). CXR (1). PENALTY: discharging an exertional syncope with a concerning murmur without an echo (-3).",
+      "idealAnswer": "Order: EKG; Echocardiogram — the key diagnostic test.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG",
+            "points": 4
+          },
+          {
+            "item": "Echocardiogram — the key diagnostic test",
+            "points": 6
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging an exertional syncope with a concerning murmur without an echo",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "EKG",
+        "Echocardiogram — the key diagnostic test"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "discharging an exertional syncope with a concerning murmur without an echo"
+      ],
+      "orderSensitiveActions": [
+        "discharging an exertional syncope with a concerning murmur without an echo"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = LVH with possible strain; sinus rhythm; no acute ischemia. CREDIT: rate & rhythm (4); identifies LVH (high voltages) (6); notes strain/repolarization changes and no acute STEMI (3); systematic read (2). PENALTY: over-calling acute ischemia (-3).",
+      "keyFindings": [
+        "rate & rhythm",
+        "notes strain/repolarization changes and no acute STEMI",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation."
+      ],
+      "commonMistakes": [
+        "over-calling acute ischemia"
+      ],
+      "idealAnswer": "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "rate & rhythm",
+            "points": 4
+          },
+          {
+            "item": "notes strain/repolarization changes and no acute STEMI",
+            "points": 3
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling acute ischemia",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear lungs, possible cardiomegaly/valve calcification. CREDIT: identifies a normal or mildly enlarged heart (5); excludes acute pulmonary pathology (3); notes possible valve calcification (2). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal or mildly enlarged heart",
+        "excludes acute pulmonary pathology",
+        "notes possible valve calcification"
+      ],
+      "criticalFindings": [
+        "Possible cardiomegaly / aortic valve calcification; lungs clear."
+      ],
+      "commonMistakes": [
+        "inventing pathology"
+      ],
+      "idealAnswer": "Possible cardiomegaly / aortic valve calcification; lungs clear.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Possible cardiomegaly / aortic valve calcification; lungs clear.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a normal or mildly enlarged heart",
+            "points": 5
+          },
+          {
+            "item": "excludes acute pulmonary pathology",
+            "points": 3
+          },
+          {
+            "item": "notes possible valve calcification",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the echo showing severe AS, what is your diagnosis and why is exertional syncope significant?",
+      "rubric": "Severe aortic stenosis with exertional syncope (6). Recognizes that the onset of syncope/angina/heart failure in severe AS signals a poor prognosis and the need for valve intervention (4).",
+      "idealAnswer": "Aortic stenosis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Echocardiography to confirm severity (4). Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR) (CANT-MISS,8). Telemetry/admission given high-risk syncope (4). CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope (CANT-MISS,6). Treat symptoms; activity guidance (3). PENALTY: giving nitrates/vasodilators in severe AS (-4).",
+      "idealAnswer": "Plan: Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR); CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
+            "points": 8
+          },
+          {
+            "item": "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope",
+            "points": 6
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "giving nitrates/vasodilators in severe AS",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
+        "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "giving nitrates/vasodilators in severe AS"
+      ],
+      "consults": [
+        "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)"
+      ],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "72-year-old man, calm now, concerned. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_carotids_finding_1",
+      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "revealedBy": [
+        "auscultate_carotids",
+        "assess_murmur_radiation"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal carotid upstroke."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_2",
+      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_motor_strength_finding_3",
+      "finding": "Lungs: clear. Neuro: no focal deficit.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Aortic stenosis",
+    "diagnosticFramework": "72M presents after passing out while climbing stairs; he also reports months of exertional breathlessness and chest tightness. The diagnosis is Aortic stenosis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "Lungs: clear. Neuro: no focal deficit."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "Troponin",
+      "BMP",
+      "BNP",
+      "Echo"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Aortic stenosis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Aortic stenosis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "giving nitrates/vasodilators in severe AS"
+    ],
+    "managementPearls": [
+      "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
+      "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "EKG",
+      "Echocardiogram — the key diagnostic test"
+    ],
+    "criticalInterpretationItems": [
+      "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "Possible cardiomegaly / aortic valve calcification; lungs clear."
+    ],
+    "criticalManagementItems": [
+      "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
+      "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope"
+    ],
+    "keyImageInterpretationFindings": [
+      "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "Possible cardiomegaly / aortic valve calcification; lungs clear."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "Possible cardiomegaly / aortic valve calcification; lungs clear."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

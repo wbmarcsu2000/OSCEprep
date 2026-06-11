@@ -1,0 +1,591 @@
+{
+  "id": "anemia-03",
+  "category": "Anemia",
+  "difficulty": "moderate",
+  "title": "Fatigue with numbness and imbalance",
+  "diagnosis": "B12 deficiency",
+  "chart": {
+    "ageSex": "65F",
+    "cc": "Fatigue and tingling feet",
+    "oneLiner": "65F presents with months of fatigue, numbness and tingling in the feet, and unsteadiness on her feet.",
+    "vitals": {
+      "BP": "126/76",
+      "HR": "84",
+      "RR": "14",
+      "Temp": "36.8°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've been so tired, and my feet feel numb and tingly — I'm unsteady walking.",
+  "patientFile": "PERSONA: 65-year-old woman, tired, slightly unsteady. Good historian.\n\nHPI: Months of fatigue plus symmetric numbness/tingling in the feet, worsening balance (especially in the dark), and some memory fuzziness. Sore, smooth tongue. On asking: a strict vegan diet for years and a history of autoimmune thyroid disease (suggesting possible pernicious anemia). NO bleeding, NO weight loss.\nPMH: hypothyroidism (autoimmune). MEDS: levothyroxine. SOCIAL: vegan diet, no alcohol excess.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, mild glossitis (smooth, beefy tongue) if examined.\n- Vitals: BP 126/76, HR 84, RR 14, 36.8°C, SpO2 99% RA.\n- Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.\n- Cardiac: regular, soft flow murmur.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the vegan diet or thyroid/autoimmune history unless asked about diet or medical/autoimmune history.\n- The dorsal-column neuro findings and glossitis are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 9.5, MCV 112 (macrocytic), WBC low-normal, Plt low-normal — macrocytic anemia, possible mild pancytopenia.",
+      "Smear": "Macro-ovalocytes and HYPERSEGMENTED neutrophils.",
+      "B12": "Low serum B12.",
+      "MMA_Homocysteine": "Methylmalonic acid AND homocysteine both elevated (confirms B12 deficiency).",
+      "Folate": "Normal.",
+      "Other": "LDH elevated and indirect bilirubin mildly elevated (ineffective erythropoiesis); TSH normal; intrinsic-factor antibodies positive (pernicious anemia)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "QRS >120 ms, rSR' ('M') in V1, wide slurred S in I and V6.",
+      "verify": "Source a study matching: QRS >120 ms, rSR' ('M') in V1, wide slurred S in I and V6. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing right bundle branch block",
+      "searchTerms": [
+        "RBBB 12 lead ECG",
+        "right bundle branch block rSR V1"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Tortuous, unfolded thoracic aorta with calcification of the aortic knob.",
+      "verify": "Source a study matching: Tortuous, unfolded thoracic aorta with calcification of the aortic knob. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing tortuous calcified aorta",
+      "searchTerms": [
+        "tortuous aorta chest x-ray",
+        "aortic knob calcification radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Smear",
+    "B12",
+    "MMA_Homocysteine",
+    "Folate",
+    "Other",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC",
+    "B12"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this anemia (note your leading diagnosis).",
+      "rubric": "B12 (cobalamin) deficiency (leading,8). Folate deficiency (core,3). Hypothyroidism (core,3). Myelodysplastic syndrome (CANT-MISS to consider,3). Alcohol/medication effect (core,2). Connects MACROCYTIC anemia + dorsal-column neurologic signs to B12 deficiency (core,6).",
+      "idealAnswer": "Leading diagnosis: B12 (cobalamin) deficiency. Must-not-miss diagnoses to exclude: Myelodysplastic syndrome. Also reasonable: Folate deficiency; Hypothyroidism; Alcohol/medication effect.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "B12 (cobalamin) deficiency",
+            "points": 8
+          },
+          {
+            "item": "Myelodysplastic syndrome",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Folate deficiency",
+            "points": 3
+          },
+          {
+            "item": "Hypothyroidism",
+            "points": 3
+          },
+          {
+            "item": "Alcohol/medication effect",
+            "points": 2
+          },
+          {
+            "item": "Connects MACROCYTIC anemia + dorsal-column neurologic signs to B12 deficiency",
+            "points": 6
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Myelodysplastic syndrome"
+      ],
+      "acceptableAlternatives": [
+        "Folate deficiency",
+        "Hypothyroidism",
+        "Alcohol/medication effect"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC with indices + peripheral smear (CANT-MISS,4). Serum B12 (CANT-MISS,4). Methylmalonic acid and homocysteine (confirmatory) (3). Folate (2). TSH (1). Intrinsic-factor antibodies if pernicious anemia suspected (1). PENALTY: not measuring B12 in a macrocytic anemia with neuro signs (-2).",
+      "idealAnswer": "Order: CBC with indices + peripheral smear; Serum B12.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC with indices + peripheral smear",
+            "points": 4
+          },
+          {
+            "item": "Serum B12",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "not measuring B12 in a macrocytic anemia with neuro signs",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC with indices + peripheral smear",
+        "Serum B12"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "not measuring B12 in a macrocytic anemia with neuro signs"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "keyFindings": [
+        "wide QRS >120 ms",
+        "rSR' in V1 / slurred S in lateral leads"
+      ],
+      "criticalFindings": [
+        "Right bundle branch block."
+      ],
+      "commonMistakes": [
+        "calling the wide QRS ventricular in origin",
+        "missing the rSR' morphology in V1"
+      ],
+      "idealAnswer": "Right bundle branch block: QRS >120 ms, rSR' in V1, broad terminal S waves in I and V6.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Right bundle branch block."
+        ],
+        "coreActions": [
+          "wide QRS >120 ms",
+          "rSR' in V1 / slurred S in lateral leads"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "tortuous/unfolded aorta with calcification",
+        "recognizes it as chronic atherosclerotic change"
+      ],
+      "criticalFindings": [
+        "Aortic tortuosity with calcification (atherosclerosis)."
+      ],
+      "commonMistakes": [
+        "mistaking an unfolded aorta for mediastinal widening from dissection"
+      ],
+      "idealAnswer": "Atherosclerotic, tortuous thoracic aorta with a calcified aortic knob.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Aortic tortuosity with calcification (atherosclerosis)."
+        ],
+        "coreActions": [
+          "tortuous/unfolded aorta with calcification",
+          "recognizes it as chronic atherosclerotic change"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Macrocytic anemia with low B12, elevated MMA/homocysteine, and dorsal-column signs. What is your diagnosis and likely cause?",
+      "rubric": "B12 deficiency with subacute combined degeneration (6). Identifies the cause — pernicious anemia (positive IF antibodies) and/or vegan diet (4).",
+      "idealAnswer": "B12 deficiency. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "B12 replacement — IM (then maintenance), especially with neurologic involvement (CANT-MISS,8). Identify and treat the cause — pernicious anemia vs dietary, with lifelong replacement if pernicious (5). Co-administer folate only AFTER confirming B12 is being replaced (4). Monitor for hypokalemia during repletion and track hematologic/neurologic recovery (4). Replace other deficiencies; dietary counseling (2). PENALTY: giving folate ALONE — can correct the anemia while the neurologic deficits progress (-4).",
+      "idealAnswer": "Plan: B12 replacement — IM (then maintenance), especially with neurologic involvement.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "B12 replacement — IM (then maintenance), especially with neurologic involvement",
+            "points": 8
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "giving folate ALONE — can correct the anemia while the neurologic deficits progress",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "B12 replacement — IM (then maintenance), especially with neurologic involvement"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "giving folate ALONE — can correct the anemia while the neurologic deficits progress"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "65-year-old woman, tired, slightly unsteady. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: regular, soft flow murmur.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_sensation_finding_2",
+      "finding": "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "revealedBy": [
+        "assess_sensation"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal sensation."
+    },
+    {
+      "id": "assess_coordination_finding_3",
+      "finding": "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "revealedBy": [
+        "assess_coordination"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Negative Romberg."
+    },
+    {
+      "id": "assess_gait_finding_4",
+      "finding": "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "revealedBy": [
+        "assess_gait"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal gait."
+    },
+    {
+      "id": "assess_reflexes_finding_5",
+      "finding": "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "revealedBy": [
+        "assess_reflexes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal reflexes."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "B12 deficiency",
+    "diagnosticFramework": "65F presents with months of fatigue, numbness and tingling in the feet, and unsteadiness on her feet. The diagnosis is B12 deficiency, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: regular, soft flow murmur.",
+      "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern.",
+      "Neuro: decreased VIBRATION and PROPRIOCEPTION in the feet; positive Romberg; reflexes variable; gait unsteady — a subacute combined degeneration pattern."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Smear",
+      "B12",
+      "MMA_Homocysteine",
+      "Folate",
+      "Other"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by B12 deficiency while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to B12 deficiency and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "giving folate ALONE — can correct the anemia while the neurologic deficits progress"
+    ],
+    "managementPearls": [
+      "B12 replacement — IM (then maintenance), especially with neurologic involvement"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "CBC with indices + peripheral smear",
+      "Serum B12"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes.",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "B12 replacement — IM (then maintenance), especially with neurologic involvement"
+    ],
+    "keyImageInterpretationFindings": [
+      "Right bundle branch block.",
+      "Aortic tortuosity with calcification (atherosclerosis)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Right bundle branch block.",
+      "Aortic tortuosity with calcification (atherosclerosis)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

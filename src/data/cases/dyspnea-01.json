@@ -1,0 +1,758 @@
+{
+  "id": "dyspnea-01",
+  "category": "Dyspnea",
+  "difficulty": "moderate",
+  "title": "Progressive dyspnea and leg swelling",
+  "diagnosis": "Acute decompensated heart failure (HFrEF)",
+  "chart": {
+    "ageSex": "68M",
+    "cc": "Shortness of breath",
+    "oneLiner": "68M with HTN, prior MI, and T2DM presents with one week of progressive dyspnea on exertion and bilateral leg swelling.",
+    "vitals": {
+      "BP": "158/92",
+      "HR": "98",
+      "RR": "22",
+      "Temp": "37.0°C",
+      "SpO2": "90% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I just can't catch my breath like I used to, doc — and my legs have blown up.",
+  "patientFile": "PERSONA: 68-year-old man, tired and mildly anxious, breathing a little hard. Short, natural sentences. Cooperative, reliable historian. Retired mechanic, lives alone.\n\nHPI:\n- Dyspnea on exertion worsening over ~1 week, much worse the last 3 days. A month ago fine; now winded crossing a room.\n- Orthopnea (3 pillows / recliner) and PND (wakes ~1hr after lying down gasping, relieved by sitting up).\n- Bilateral leg swelling to the shins, worse by evening.\n- Mild dry cough, no sputum, no wheeze, no hemoptysis.\n- ~6 lb weight gain this week; clothes tight; mild early satiety; less urine output.\n- NO chest pain, NO pleuritic pain, NO fever/chills, NO calf pain, NO recent travel/immobilization, NO palpitations, NO syncope.\n\nOLDCARTS: gradual onset over a week; 'air hunger' not pain/tightness; constant, worse with exertion & lying flat; relieved by rest & sitting up; worse at night.\n\nPMH: hypertension, type 2 diabetes, prior inferior MI ~4 yrs ago (stent placed), hyperlipidemia.\nMEDICATIONS: lisinopril 20mg, metoprolol succinate 50mg, atorvastatin 40mg, metformin 1000mg BID, aspirin 81mg, AND furosemide 40mg daily — BUT ran out ~10 days ago and never refilled.\nADHERENCE/WHAT CHANGED: ran out of the water pill (furosemide) ~10 days ago; ate salty holiday meal + lots of takeout last week.\nALLERGIES: none. FAMILY: father MI at 60, mother HTN.\nSOCIAL: former smoker (quit 4 yrs, ~20 pack-yr), 1–2 beers weekends, no drugs, recent high-salt diet, independent.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: older man, mild resp effort at rest, alert.\n- Vitals: BP 158/92, HR 98 reg, RR 22, 37.0°C, SpO2 90% RA (95% on 2L).\n- HEENT: mucous membranes moist, no scleral icterus.\n- Neck: JVP elevated ~10 cm, no carotid bruits.\n- Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.\n- Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.\n- Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.\n- Extremities: 2+ pitting edema to knees bilaterally, warm, no calf tenderness/asymmetry.\n- Skin: no rash/cyanosis. Neuro: A&Ox3, no focal deficits.\n- Special: hepatojugular reflux POSITIVE; orthostatics no change; calf tenderness/Homans negative.\n\nHIDDEN RULES:\n- NEVER state, suggest, or hint at a diagnosis.\n- Answer ONLY what is asked; focused realistic answers, not a data dump.\n- Do NOT volunteer the missed furosemide or dietary salt unless asked about medications, refills, adherence, what changed, or diet.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 7.2, Hgb 13.8, Plt 240 — unremarkable.",
+      "BMP": "Na 136, K 4.2, Cl 101, HCO3 26, BUN 28, Cr 1.4 (baseline 1.1), Glu 162 — mild Cr bump.",
+      "BNP": "1850 pg/mL — markedly elevated.",
+      "Troponin": "0.04 ng/mL, mildly elevated, STABLE on repeat — demand, not rising.",
+      "Lactate": "1.4 — normal."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/12%20lead%20generated%20inferior%20MI.JPG",
+      "source": "https://litfl.com/q-wave-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "findings": "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "verify": "From the LITFL 'Q Waves / old infarct' library page — download an example tracing that matches: Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or is … and self-host with credit to litfl.com.",
+      "assetNeeded": true,
+      "imageDescription": "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "searchTerms": [
+        "12-lead EKG Sinus rhythm ~96. inferior"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (PA)",
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Chest%20radiograph%20with%20signs%20of%20congestive%20heart%20failure%20-%20annotated.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_with_signs_of_congestive_heart_failure_-_annotated.svg",
+      "license": "CC0 1.0 (public domain)",
+      "attribution": "Mikael Häggström, MD (CC0 1.0)",
+      "findings": "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
+      "verify": "GOOD MATCH for CHF. This is the ANNOTATED version — swap for the non-annotated base file so the student reads it unaided.",
+      "assetNeeded": true,
+      "imageDescription": "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
+      "searchTerms": [
+        "chest radiograph Cardiomegaly cephalization Kerley lines"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "BNP",
+    "Troponin",
+    "Lactate",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "Troponin",
+    "cxr",
+    "BNP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "ADHF (leading,7; accepts CHF exacerbation/HFrEF/volume overload). ACS (CANT-MISS,5). PE (CANT-MISS,5). Pneumonia (core,2). COPD exacerbation (core,2). Anemia (bonus,1). Named leading dx w/ justification (core,3).",
+      "idealAnswer": "Leading diagnosis: Acute decompensated heart failure (HFrEF). Must-not-miss diagnoses to exclude: ACS; PE. Also reasonable: Pneumonia; COPD exacerbation.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "ACS",
+            "points": 5
+          },
+          {
+            "item": "PE",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Pneumonia",
+            "points": 2
+          },
+          {
+            "item": "COPD exacerbation",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Anemia",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "ACS",
+        "PE"
+      ],
+      "acceptableAlternatives": [
+        "Pneumonia",
+        "COPD exacerbation"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "EKG (CANT-MISS,3). Troponin (CANT-MISS,2). CXR (core,3). BNP (core,3). BMP (core,2). CBC (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: EKG; Troponin; CXR; BNP; BMP; CBC.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG",
+            "points": 3
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "CXR",
+            "points": 3
+          },
+          {
+            "item": "BNP",
+            "points": 3
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "EKG",
+        "Troponin"
+      ],
+      "optionalTests": [
+        "CXR",
+        "BNP",
+        "BMP",
+        "CBC"
+      ],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings systematically.",
+      "rubric": "EKG findings = sinus rhythm ~96, OLD inferior infarct Q waves in II/III/aVF, NO acute ST elevation/ischemia. CREDIT: states rate & rhythm (4); identifies old inferior Q waves / prior infarct (5); correctly notes NO acute ST-elevation/ischemia (4); systematic coherent read (2). PENALTY: over-calling an acute STEMI/acute ischemia (-3).",
+      "keyFindings": [
+        "states rate & rhythm",
+        "identifies old inferior Q waves / prior infarct",
+        "correctly notes NO acute ST-elevation/ischemia",
+        "systematic coherent read"
+      ],
+      "criticalFindings": [
+        "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia."
+      ],
+      "commonMistakes": [
+        "over-calling an acute STEMI/acute ischemia"
+      ],
+      "idealAnswer": "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "states rate & rhythm",
+            "points": 4
+          },
+          {
+            "item": "identifies old inferior Q waves / prior infarct",
+            "points": 5
+          },
+          {
+            "item": "correctly notes NO acute ST-elevation/ischemia",
+            "points": 4
+          },
+          {
+            "item": "systematic coherent read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling an acute STEMI/acute ischemia",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "CXR findings = cardiomegaly, pulmonary venous congestion/cephalization, interstitial edema, Kerley B lines, small bilateral pleural effusions. CREDIT: cardiomegaly (2); pulmonary congestion/cephalization/interstitial edema (4); Kerley B lines (2); bilateral pleural effusions (2).",
+      "keyFindings": [
+        "cardiomegaly",
+        "pulmonary congestion/cephalization/interstitial edema",
+        "Kerley B lines",
+        "bilateral pleural effusions"
+      ],
+      "criticalFindings": [
+        "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+      ],
+      "commonMistakes": [
+        "Over-reading a normal study",
+        "Failing to comment on rate/rhythm or exposure"
+      ],
+      "idealAnswer": "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "cardiomegaly",
+            "points": 2
+          },
+          {
+            "item": "pulmonary congestion/cephalization/interstitial edema",
+            "points": 4
+          },
+          {
+            "item": "Kerley B lines",
+            "points": 2
+          },
+          {
+            "item": "bilateral pleural effusions",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Pulling together the labs and your EKG/CXR reads, what is your leading diagnosis and reasoning?",
+      "rubric": "Commits to ADHF as leading (5). Explains mild troponin as demand not primary ACS (3). Identifies precipitant — missed diuretic/dietary salt (bonus,2).",
+      "idealAnswer": "Acute decompensated heart failure (HFrEF). ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Identifies precipitant — missed diuretic/dietary salt",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "IV loop diuretic (CANT-MISS,6; accepts IV furosemide/Lasix/diuresis). Daily weights & strict I/Os (3). Supplemental O2 prn (2). Na & fluid restriction (3). Order echo (3). GDMT optimization (4; ARNI/ACE/ARB/beta blocker/MRA/SGLT2). Address precipitant + adherence counseling (2). Telemetry/cards follow-up (bonus,2). PENALTY: IV fluids/bolus to a volume-overloaded patient (-4).",
+      "idealAnswer": "Plan: .",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Telemetry/cards follow-up",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "IV fluids/bolus to a volume-overloaded patient",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [],
+      "optionalActions": [],
+      "unsafeActions": [
+        "IV fluids/bolus to a volume-overloaded patient"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use",
+      "medication_nonadherence"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "68-year-old man, tired and mildly anxious, breathing a little hard. Short, natural sentences. Cooperative, reliable hist",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_nonadherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "medication adherence",
+        "missed doses",
+        "ran out",
+        "taking your medications"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "palpate_ruq_finding_1",
+      "finding": "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
+      "revealedBy": [
+        "palpate_ruq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No RUQ tenderness."
+    },
+    {
+      "id": "assess_fluid_wave_finding_2",
+      "finding": "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
+      "revealedBy": [
+        "assess_fluid_wave"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No fluid wave."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_3",
+      "finding": "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_jvp_finding_4",
+      "finding": "Neck: JVP elevated ~10 cm, no carotid bruits.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_with_bell"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No gallop."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_6",
+      "finding": "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
+      "revealedBy": [
+        "auscultate_posterior_lungs",
+        "auscultate_anterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_7",
+      "finding": "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No wheezing."
+    },
+    {
+      "id": "inspect_sclera_finding_8",
+      "finding": "HEENT: mucous membranes moist, no scleral icterus.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "assess_edema_finding_9",
+      "finding": "Extremities: 2+ pitting edema to knees bilaterally, warm, no calf tenderness/asymmetry.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_10",
+      "finding": "Extremities: 2+ pitting edema to knees bilaterally, warm, no calf tenderness/asymmetry.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_11",
+      "finding": "Special: hepatojugular reflux POSITIVE; orthostatics no change; calf tenderness/Homans negative.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic drop."
+    },
+    {
+      "id": "assess_motor_strength_finding_12",
+      "finding": "Skin: no rash/cyanosis. Neuro: A&Ox3, no focal deficits.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Acute decompensated heart failure (HFrEF)",
+    "diagnosticFramework": "68M with HTN, prior MI, and T2DM presents with one week of progressive dyspnea on exertion and bilateral leg swelling. The diagnosis is Acute decompensated heart failure (HFrEF), reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "medication adherence"
+    ],
+    "keyPhysicalExamFindings": [
+      "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
+      "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
+      "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
+      "Neck: JVP elevated ~10 cm, no carotid bruits.",
+      "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
+      "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
+      "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
+      "HEENT: mucous membranes moist, no scleral icterus."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "BNP",
+      "Troponin",
+      "Lactate"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Acute decompensated heart failure (HFrEF) while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Acute decompensated heart failure (HFrEF) and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "IV fluids/bolus to a volume-overloaded patient"
+    ],
+    "managementPearls": [],
+    "criticalHistoryItems": [
+      "medication_nonadherence"
+    ],
+    "criticalExamItems": [
+      "palpate_ruq",
+      "auscultate_aortic_area",
+      "obtain_orthostatic_vitals"
+    ],
+    "criticalWorkupItems": [
+      "EKG",
+      "Troponin"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+    ],
+    "criticalManagementItems": [],
+    "keyImageInterpretationFindings": [
+      "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

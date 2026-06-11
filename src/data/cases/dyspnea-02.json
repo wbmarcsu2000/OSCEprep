@@ -1,0 +1,654 @@
+{
+  "id": "dyspnea-02",
+  "category": "Dyspnea",
+  "difficulty": "moderate",
+  "title": "Worsening cough and breathlessness in a smoker",
+  "diagnosis": "COPD exacerbation",
+  "chart": {
+    "ageSex": "64F",
+    "cc": "Worsening breathlessness",
+    "oneLiner": "64F with a long smoking history and known COPD presents with 3 days of worsening dyspnea, increased cough, and a change to purulent sputum.",
+    "vitals": {
+      "BP": "138/84",
+      "HR": "104",
+      "RR": "26",
+      "Temp": "37.8°C",
+      "SpO2": "88% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My breathing's gotten much worse the last few days, and I'm coughing up a lot more gunk than usual.",
+  "patientFile": "PERSONA: 64-year-old woman, pursed-lip breathing, sitting forward, speaking in short phrases. Cooperative.\n\nHPI: Over 3 days, dyspnea worse than her usual baseline, increased cough with a change from clear to thick yellow-green sputum, and more wheeze. Had a head cold last week. Uses her inhalers more often with less relief. NO chest pain, NO orthopnea/PND, NO leg swelling, NO fever chills beyond feeling warm, NO hemoptysis, NO calf pain/travel.\nBASELINE: known COPD, chronic morning cough, gets short of breath walking one block at baseline.\nPMH: COPD, hypertension. MEDS: tiotropium, albuterol PRN, lisinopril. Generally adherent.\nSOCIAL: current smoker, ~45 pack-years. Lives with spouse.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mild-moderate distress, accessory muscle use, pursed-lip breathing. Barrel chest.\n- Vitals: BP 138/84, HR 104, RR 26, 37.8°C, SpO2 88% RA.\n- Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.\n- Cardiac: tachycardic, regular, distant heart sounds, no murmur.\n- Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the smoking amount or the recent cold unless asked about smoking or recent illness.\n- The absent JVD/edema are revealed only if those are examined (they help distinguish from heart failure).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 12.8 with neutrophilia, Hgb 14.9, Plt 280.",
+      "BMP": "Na 139, K 4.0, HCO3 30 (chronically elevated), Cr 0.8.",
+      "ABG": "pH 7.34, PaCO2 55, PaO2 58, HCO3 30 — chronic respiratory acidosis with metabolic compensation, acute-on-chronic.",
+      "BNP": "85 pg/mL — not elevated (argues against heart failure).",
+      "Troponin": "Normal."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/ecg-in-chronic-obstructive-pulmonary-disease/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "verify": "From the LITFL 'ECG in Chronic Lung Disease (COPD)' library page — download an example tracing that matches: Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes. … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "searchTerms": [
+        "12-lead EKG Sinus tachycardia. Possible pulmonale"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (PA)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=COPD%20emphysema%20chest%20xray%20hyperinflation&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
+      "verify": "Pick a CC file showing emphysematous hyperinflation (flattened diaphragms), NOT a lobar infiltrate or CHF pattern.",
+      "assetNeeded": true,
+      "imageDescription": "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
+      "searchTerms": [
+        "chest radiograph Hyperinflation with flattened diaphragms"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "ABG",
+    "BNP",
+    "Troponin",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "cxr",
+    "ABG",
+    "ekg"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "COPD exacerbation (leading,7; accepts AECOPD/COPD flare). Pneumonia (core,4). Pulmonary embolism (CANT-MISS,5). Acute coronary syndrome (CANT-MISS,4). Heart failure (core,3). Named leading dx w/ justification (core,2).",
+      "idealAnswer": "Leading diagnosis: COPD exacerbation. Must-not-miss diagnoses to exclude: Pulmonary embolism; Acute coronary syndrome. Also reasonable: Pneumonia; Heart failure.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Pulmonary embolism",
+            "points": 5
+          },
+          {
+            "item": "Acute coronary syndrome",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Pneumonia",
+            "points": 4
+          },
+          {
+            "item": "Heart failure",
+            "points": 3
+          },
+          {
+            "item": "Named leading dx w/ justification",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Pulmonary embolism",
+        "Acute coronary syndrome"
+      ],
+      "acceptableAlternatives": [
+        "Pneumonia",
+        "Heart failure"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "CXR (CANT-MISS,4). ABG / VBG (core,3). CBC (core,2). BMP (core,2). EKG (core,2). BNP to help exclude heart failure (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: CXR; ABG / VBG; CBC; BMP; EKG; BNP to help exclude heart failure.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CXR",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "ABG / VBG",
+            "points": 3
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "BNP to help exclude heart failure",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CXR"
+      ],
+      "optionalTests": [
+        "ABG / VBG",
+        "CBC",
+        "BMP",
+        "EKG",
+        "BNP to help exclude heart failure"
+      ],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, possible P pulmonale/low voltage, NO acute ischemia. CREDIT: rate & rhythm (sinus tachy) (6); recognizes no acute ischemic ST changes (5); notes any right-heart/COPD features e.g. P pulmonale (2); systematic read (2). PENALTY: over-calling acute ischemia (-3).",
+      "keyFindings": [
+        "recognizes no acute ischemic ST changes",
+        "notes any right-heart/COPD features e.g. P pulmonale",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes."
+      ],
+      "commonMistakes": [
+        "over-calling acute ischemia"
+      ],
+      "idealAnswer": "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "recognizes no acute ischemic ST changes",
+            "points": 5
+          },
+          {
+            "item": "notes any right-heart/COPD features e.g. P pulmonale",
+            "points": 2
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling acute ischemia",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = hyperinflation, flattened diaphragms, increased AP diameter, NO focal consolidation or pulmonary edema. CREDIT: hyperinflation/flattened diaphragms (5); increased lucency/AP diameter (2); correctly notes NO consolidation or congestion (3). PENALTY: calling a pneumonia or CHF that isn't there (-2).",
+      "keyFindings": [
+        "hyperinflation/flattened diaphragms",
+        "increased lucency/AP diameter",
+        "correctly notes NO consolidation or congestion"
+      ],
+      "criticalFindings": [
+        "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+      ],
+      "commonMistakes": [
+        "calling a pneumonia or CHF that isn't there"
+      ],
+      "idealAnswer": "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "hyperinflation/flattened diaphragms",
+            "points": 5
+          },
+          {
+            "item": "increased lucency/AP diameter",
+            "points": 2
+          },
+          {
+            "item": "correctly notes NO consolidation or congestion",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "calling a pneumonia or CHF that isn't there",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Pulling the data together, what is your leading diagnosis and reasoning?",
+      "rubric": "COPD exacerbation (5). Uses the normal BNP / absent JVD-edema to argue against heart failure and the clear film to argue against pneumonia (3). Notes acute-on-chronic respiratory acidosis on ABG (bonus,2).",
+      "idealAnswer": "COPD exacerbation. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes acute-on-chronic respiratory acidosis on ABG",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "CONTROLLED supplemental O2 targeting SpO2 88–92% (CANT-MISS,6). Inhaled bronchodilators — SABA + SAMA (6). Systemic corticosteroids (5). Antibiotics given purulent sputum / increased dyspnea (4). Consider non-invasive ventilation for respiratory acidosis (3). Smoking cessation counseling (bonus,1). PENALTY: high-flow/100% O2 risking CO2 narcosis (-4).",
+      "idealAnswer": "Plan: CONTROLLED supplemental O2 targeting SpO2 88–92%.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "CONTROLLED supplemental O2 targeting SpO2 88–92%",
+            "points": 6
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Smoking cessation counseling",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "high-flow/100% O2 risking CO2 narcosis",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "CONTROLLED supplemental O2 targeting SpO2 88–92%"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "high-flow/100% O2 risking CO2 narcosis"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "64-year-old woman, pursed-lip breathing, sitting forward, speaking in short phrases. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: tachycardic, regular, distant heart sounds, no murmur.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_jvp_finding_2",
+      "finding": "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_3",
+      "finding": "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No wheezing."
+    },
+    {
+      "id": "percuss_posterior_lungs_finding_4",
+      "finding": "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
+      "revealedBy": [
+        "percuss_posterior_lungs",
+        "assess_egophony",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No consolidation."
+    },
+    {
+      "id": "assess_edema_finding_5",
+      "finding": "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_6",
+      "finding": "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "COPD exacerbation",
+    "diagnosticFramework": "64F with a long smoking history and known COPD presents with 3 days of worsening dyspnea, increased cough, and a change to purulent sputum. The diagnosis is COPD exacerbation, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: tachycardic, regular, distant heart sounds, no murmur.",
+      "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
+      "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
+      "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "ABG",
+      "BNP",
+      "Troponin"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by COPD exacerbation while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to COPD exacerbation and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "high-flow/100% O2 risking CO2 narcosis"
+    ],
+    "managementPearls": [
+      "CONTROLLED supplemental O2 targeting SpO2 88–92%"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "CXR"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+    ],
+    "criticalManagementItems": [
+      "CONTROLLED supplemental O2 targeting SpO2 88–92%"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

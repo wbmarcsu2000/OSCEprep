@@ -1,0 +1,592 @@
+{
+  "id": "dyspnea-05",
+  "category": "Dyspnea",
+  "difficulty": "easy",
+  "title": "Acute wheeze and chest tightness",
+  "diagnosis": "Asthma exacerbation",
+  "chart": {
+    "ageSex": "24F",
+    "cc": "Wheezing and chest tightness",
+    "oneLiner": "24F with a history of asthma presents with several hours of progressive wheeze, cough, and chest tightness after a viral cold.",
+    "vitals": {
+      "BP": "124/76",
+      "HR": "110",
+      "RR": "28",
+      "Temp": "37.1°C",
+      "SpO2": "93% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My chest feels really tight and I can't stop wheezing — my inhaler isn't cutting it.",
+  "patientFile": "PERSONA: 24-year-old woman, anxious, speaking in short phrases between breaths, using her albuterol frequently. Cooperative.\n\nHPI: Several hours of worsening wheeze, dry cough, and chest tightness, triggered by a head cold over the past 2 days. Albuterol giving only brief relief. Similar but milder episodes in the past. NO fever, NO purulent sputum, NO pleuritic chest pain, NO leg swelling/calf pain, NO known cardiac disease.\nPMH: asthma (a prior ED visit, never intubated). MEDS: albuterol PRN, inhaled corticosteroid (admits poor adherence if asked). SOCIAL: nonsmoker, cat at home (trigger).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mild-moderate distress, speaking in phrases, mild accessory muscle use.\n- Vitals: BP 124/76, HR 110, RR 28, 37.1°C, SpO2 93% RA.\n- Lungs: diffuse expiratory WHEEZE bilaterally, prolonged expiratory phase, good air entry (air entry would be the worry if it dropped).\n- Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.\n- Peak expiratory flow: reduced to ~50% of her personal best (if measured).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the inhaled-steroid nonadherence or the cat unless asked about adherence/medications or triggers.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 8.0 with mild eosinophilia, Hgb 13.5, Plt 250.",
+      "ABG": "pH 7.46, PaCO2 32, PaO2 80 — respiratory alkalosis. (A NORMAL or RISING PaCO2 would be an ominous sign of fatigue.)",
+      "BMP": "Within normal limits.",
+      "PEF": "~50% of personal best."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia, S1Q3T3, and T-wave inversions in V1-V3 (right heart strain).",
+      "verify": "Source a study matching: Sinus tachycardia, S1Q3T3, and T-wave inversions in V1-V3 (right heart strain). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing right heart strain S1Q3T3",
+      "searchTerms": [
+        "right heart strain ECG",
+        "S1Q3T3 pulmonary embolism ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Hyperinflated lungs, flattened hemidiaphragms, increased retrosternal air, narrow cardiac shadow.",
+      "verify": "Source a study matching: Hyperinflated lungs, flattened hemidiaphragms, increased retrosternal air, narrow cardiac shadow. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing emphysema hyperinflation",
+      "searchTerms": [
+        "emphysema hyperinflation chest x-ray",
+        "flattened diaphragm COPD radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "ABG",
+    "BMP",
+    "PEF",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "PEF"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Asthma exacerbation (leading,8; accepts acute asthma/reactive airways). Anaphylaxis (CANT-MISS to consider,4). Pulmonary embolism (CANT-MISS,4). COPD/bronchitis (core,3). Heart failure (less likely; core,2). Inhaled foreign body (bonus,2). Named leading dx w/ justification (core,2).",
+      "idealAnswer": "Leading diagnosis: Asthma exacerbation. Must-not-miss diagnoses to exclude: Anaphylaxis; Pulmonary embolism. Also reasonable: COPD/bronchitis; Heart failure.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Anaphylaxis",
+            "points": 4
+          },
+          {
+            "item": "Pulmonary embolism",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "COPD/bronchitis",
+            "points": 3
+          },
+          {
+            "item": "Heart failure",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Inhaled foreign body",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Anaphylaxis",
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "COPD/bronchitis",
+        "Heart failure"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial assessment/workup do you want? (Consider what changes management.)",
+      "rubric": "Peak expiratory flow / spirometry (CANT-MISS,5). Continuous pulse oximetry (3). ABG if severe or not improving (3). CXR if atypical features or to exclude complication (2). CBC (2). PENALTY: extensive cardiac/CT workup with no indication in a classic young asthmatic (-2).",
+      "idealAnswer": "Order: Peak expiratory flow / spirometry.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Peak expiratory flow / spirometry",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "extensive cardiac/CT workup with no indication in a classic young asthmatic",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Peak expiratory flow / spirometry"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "extensive cardiac/CT workup with no indication in a classic young asthmatic"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic ST changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "recognizes a right-heart-strain pattern",
+        "names S1Q3T3 and anterior T inversions"
+      ],
+      "criticalFindings": [
+        "Right heart strain pattern (S1Q3T3, anterior T-wave inversions)."
+      ],
+      "commonMistakes": [
+        "treating S1Q3T3 as diagnostic in isolation",
+        "missing the anterior T-wave inversions"
+      ],
+      "idealAnswer": "Right heart strain: sinus tachycardia with S1Q3T3 and T-wave inversions in V1-V3.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Right heart strain pattern (S1Q3T3, anterior T-wave inversions)."
+        ],
+        "coreActions": [
+          "recognizes a right-heart-strain pattern",
+          "names S1Q3T3 and anterior T inversions"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = normal or mildly hyperinflated, no consolidation/effusion/pneumothorax. CREDIT: correctly identifies a normal/hyperinflated film (5); explicitly excludes pneumothorax and consolidation as complications (5). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "flattened diaphragms / hyperinflation",
+        "recognizes an emphysema/COPD pattern"
+      ],
+      "criticalFindings": [
+        "Hyperinflation with flattened diaphragms (emphysema)."
+      ],
+      "commonMistakes": [
+        "counting rib spaces incorrectly and missing hyperinflation"
+      ],
+      "idealAnswer": "Emphysematous hyperinflation: flattened hemidiaphragms, increased retrosternal lucency, >6 anterior ribs.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Hyperinflation with flattened diaphragms (emphysema)."
+        ],
+        "coreActions": [
+          "flattened diaphragms / hyperinflation",
+          "recognizes an emphysema/COPD pattern"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "What is your leading diagnosis and how do you gauge severity?",
+      "rubric": "Asthma exacerbation (5). Uses PEF, work of breathing, and ABG to grade severity (3). Recognizes a normalizing/rising PaCO2 as a sign of impending respiratory failure (bonus,2).",
+      "idealAnswer": "Asthma exacerbation. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Recognizes a normalizing/rising PaCO2 as a sign of impending respiratory failure",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Inhaled SABA, repeated/continuous (CANT-MISS,7). Add ipratropium for moderate-severe (4). Systemic corticosteroids early (6). Controlled supplemental O2 to keep SpO2 >92% (3). IV magnesium for severe/refractory (3). Reassess response with PEF/exam; escalate if deteriorating (2). PENALTY: discharging without reassessment or missing rising PaCO2 as respiratory fatigue (-3).",
+      "idealAnswer": "Plan: Inhaled SABA, repeated/continuous.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Inhaled SABA, repeated/continuous",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "discharging without reassessment or missing rising PaCO2 as respiratory fatigue",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Inhaled SABA, repeated/continuous"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "discharging without reassessment or missing rising PaCO2 as respiratory fatigue"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use",
+      "medication_nonadherence"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "24-year-old woman, anxious, speaking in short phrases between breaths, using her albuterol frequently. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_nonadherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "medication adherence",
+        "missed doses",
+        "ran out",
+        "taking your medications"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_2",
+      "finding": "Lungs: diffuse expiratory WHEEZE bilaterally, prolonged expiratory phase, good air entry (air entry would be the worry if it dropped).",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No wheezing."
+    },
+    {
+      "id": "assess_edema_finding_3",
+      "finding": "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_4",
+      "finding": "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Asthma exacerbation",
+    "diagnosticFramework": "24F with a history of asthma presents with several hours of progressive wheeze, cough, and chest tightness after a viral cold. The diagnosis is Asthma exacerbation, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "medication adherence"
+    ],
+    "keyPhysicalExamFindings": [
+      "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "Lungs: diffuse expiratory WHEEZE bilaterally, prolonged expiratory phase, good air entry (air entry would be the worry if it dropped).",
+      "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "ABG",
+      "BMP",
+      "PEF"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Asthma exacerbation while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Asthma exacerbation and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "discharging without reassessment or missing rising PaCO2 as respiratory fatigue"
+    ],
+    "managementPearls": [
+      "Inhaled SABA, repeated/continuous"
+    ],
+    "criticalHistoryItems": [
+      "medication_nonadherence"
+    ],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "Peak expiratory flow / spirometry"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia. No acute ischemic changes.",
+      "Normal or mild hyperinflation; NO consolidation, effusion, or pneumothorax. (CXR mainly to exclude complications.)"
+    ],
+    "criticalManagementItems": [
+      "Inhaled SABA, repeated/continuous"
+    ],
+    "keyImageInterpretationFindings": [
+      "Right heart strain pattern (S1Q3T3, anterior T-wave inversions).",
+      "Hyperinflation with flattened diaphragms (emphysema)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Right heart strain pattern (S1Q3T3, anterior T-wave inversions).",
+      "Hyperinflation with flattened diaphragms (emphysema)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

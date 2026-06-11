@@ -1,0 +1,567 @@
+{
+  "id": "diarrhea-01",
+  "category": "Diarrhea",
+  "difficulty": "easy",
+  "title": "Watery diarrhea after antibiotics",
+  "diagnosis": "C. difficile colitis",
+  "chart": {
+    "ageSex": "68F",
+    "cc": "Profuse watery diarrhea",
+    "oneLiner": "68F presents with several days of frequent watery diarrhea, crampy abdominal pain, and low-grade fever, two weeks after a course of antibiotics.",
+    "vitals": {
+      "BP": "108/66",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "38.1°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I can't stop going to the bathroom — watery diarrhea, ten times a day, with cramps.",
+  "patientFile": "PERSONA: 68-year-old woman, tired and dehydrated. Cooperative.\n\nHPI: 4 days of profuse, non-bloody WATERY diarrhea (8–10x/day) with lower abdominal cramping and low-grade fevers. Recently finished a course of clindamycin for a dental infection and was briefly hospitalized last month (only if asked about recent antibiotics/hospitalization). NO recent travel, NO sick contacts, NO large amounts of blood.\nPMH: hypertension. MEDS: lisinopril; recent clindamycin (completed). SOCIAL: lives independently.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: dehydrated (dry mucous membranes), mild distress.\n- Vitals: BP 108/66, HR 104, RR 18, 38.1°C, SpO2 98% RA.\n- Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent antibiotics or hospitalization unless asked about recent medications, antibiotics, or healthcare exposure.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "StoolCdiff": "Stool C. difficile toxin/PCR POSITIVE.",
+      "CBC": "WBC 18.0 with left shift (marked leukocytosis is a severity marker).",
+      "BMP": "K 3.2 (low from losses), BUN 30, Cr 1.5 (baseline 0.9 — AKI), HCO3 low.",
+      "Lactate": "1.9 — mildly elevated.",
+      "OtherStool": "Routine stool cultures negative."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "verify": "From the LITFL 'Hypokalaemia' library page — download an example tracing that matches: Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute isc … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "searchTerms": [
+        "12-lead EKG Sinus tachycardia; possible hypokalemic"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Abdominal X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20abdominal%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "verify": "Pick a CC abdominal film that is normal/non-dilated (to contrast with toxic megacolon).",
+      "assetNeeded": true,
+      "imageDescription": "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "searchTerms": [
+        "chest radiograph Here: marked colonic dilation"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "StoolCdiff",
+    "CBC",
+    "BMP",
+    "Lactate",
+    "OtherStool",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "StoolCdiff",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "C. difficile colitis (leading,8). Other infectious diarrhea (core,3). Antibiotic-associated diarrhea (non-C.diff) (core,3). Inflammatory bowel disease (core,3). Considers complications — toxic megacolon/fulminant colitis (CANT-MISS,3). Connects recent antibiotics + healthcare exposure + watery diarrhea to C. difficile (core,3).",
+      "idealAnswer": "Leading diagnosis: difficile colitis. Must-not-miss diagnoses to exclude: Considers complications — toxic megacolon/fulminant colitis. Also reasonable: Other infectious diarrhea; diff); Inflammatory bowel disease; difficile.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "difficile colitis",
+            "points": 8
+          },
+          {
+            "item": "Considers complications — toxic megacolon/fulminant colitis",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Other infectious diarrhea",
+            "points": 3
+          },
+          {
+            "item": "diff)",
+            "points": 3
+          },
+          {
+            "item": "Inflammatory bowel disease",
+            "points": 3
+          },
+          {
+            "item": "difficile",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Considers complications — toxic megacolon/fulminant colitis"
+      ],
+      "acceptableAlternatives": [
+        "Other infectious diarrhea",
+        "diff)",
+        "Inflammatory bowel disease",
+        "difficile"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Stool C. difficile toxin/PCR (CANT-MISS,5). CBC — WBC as a severity marker (3). BMP — potassium, renal function (3). Lactate (2). Abdominal imaging if severe to assess for megacolon (2). PENALTY: ordering antimotility agents as part of management (-2 — addressed in management).",
+      "idealAnswer": "Order: difficile toxin/PCR.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "difficile toxin/PCR",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "requiredTests": [
+        "difficile toxin/PCR"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, possible hypokalemic changes (U waves/flat T), no acute ischemia. CREDIT: rate & rhythm (5); recognizes possible hypokalemic changes from diarrheal losses (5); no acute ischemia (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "rate & rhythm",
+        "recognizes possible hypokalemic changes from diarrheal losses",
+        "no acute ischemia",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia."
+      ],
+      "commonMistakes": [
+        "over-calling ischemia"
+      ],
+      "idealAnswer": "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "rate & rhythm",
+            "points": 5
+          },
+          {
+            "item": "recognizes possible hypokalemic changes from diarrheal losses",
+            "points": 5
+          },
+          {
+            "item": "no acute ischemia",
+            "points": 3
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling ischemia",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read X-ray",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's abdominal film. Describe your findings.",
+      "rubric": "Findings = no marked colonic dilation. CREDIT: assesses colonic caliber (5); explicitly looks for/excludes toxic megacolon (transverse colon >6 cm) (5). PENALTY: missing the purpose (megacolon screen) (-1).",
+      "keyFindings": [
+        "assesses colonic caliber"
+      ],
+      "criticalFindings": [
+        "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      ],
+      "commonMistakes": [
+        "missing the purpose (megacolon screen)"
+      ],
+      "idealAnswer": "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "assesses colonic caliber",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing the purpose (megacolon screen)",
+            "points": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Stool C. diff is positive with marked leukocytosis and an AKI. What is your diagnosis and severity?",
+      "rubric": "C. difficile colitis, severe (6). Cites positive toxin/PCR plus severity markers — WBC >15, rising creatinine (4).",
+      "idealAnswer": "C. difficile colitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Stop the offending antibiotic if possible (CANT-MISS,5). Oral vancomycin OR fidaxomicin as first-line (CANT-MISS,7; note metronidazole is no longer preferred first-line for non-mild disease). Contact precautions / isolation, hand hygiene with soap and water (4). IV fluids and electrolyte (potassium) repletion (4). AVOID antimotility agents (3). Surgical consult / colectomy for fulminant disease or toxic megacolon (2). PENALTY: loperamide/antimotility agents (megacolon risk) (-3); choosing metronidazole first-line for severe disease (-2).",
+      "idealAnswer": "Plan: Stop the offending antibiotic if possible.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Stop the offending antibiotic if possible",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "loperamide/antimotility agents (megacolon risk)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Stop the offending antibiotic if possible"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "loperamide/antimotility agents (megacolon risk)"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "68-year-old woman, tired and dehydrated. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_rebound_tenderness_finding_1",
+      "finding": "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "inspect_abdomen_finding_2",
+      "finding": "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_3",
+      "finding": "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
+      "finding": "General: dehydrated (dry mucous membranes), mild distress.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Well hydrated."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "C. difficile colitis",
+    "diagnosticFramework": "68F presents with several days of frequent watery diarrhea, crampy abdominal pain, and low-grade fever, two weeks after a course of antibiotics. The diagnosis is C. difficile colitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "General: dehydrated (dry mucous membranes), mild distress."
+    ],
+    "keyDiagnosticFindings": [
+      "StoolCdiff",
+      "CBC",
+      "BMP",
+      "Lactate",
+      "OtherStool"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by C. difficile colitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to C. difficile colitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "loperamide/antimotility agents (megacolon risk)"
+    ],
+    "managementPearls": [
+      "Stop the offending antibiotic if possible"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "difficile toxin/PCR"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+    ],
+    "criticalManagementItems": [
+      "Stop the offending antibiotic if possible"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Elicits the patient's concerns / ICE",
+        "points": 1
+      },
+      {
+        "item": "Avoids medical jargon; checks understanding",
+        "points": 1
+      },
+      {
+        "item": "Signposts and structures the encounter",
+        "points": 1
+      },
+      {
+        "item": "Demonstrates empathy and acknowledges affect",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

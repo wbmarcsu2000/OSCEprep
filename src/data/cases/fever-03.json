@@ -1,0 +1,612 @@
+{
+  "id": "fever-03",
+  "category": "Fever",
+  "difficulty": "hard",
+  "title": "Persistent fevers with a new murmur",
+  "diagnosis": "Infective endocarditis",
+  "chart": {
+    "ageSex": "45M",
+    "cc": "Weeks of fevers and malaise",
+    "oneLiner": "45M presents with 3 weeks of intermittent fevers, night sweats, fatigue, and weight loss; a new heart murmur is noted.",
+    "vitals": {
+      "BP": "118/64",
+      "HR": "100",
+      "RR": "18",
+      "Temp": "38.5°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had fevers and night sweats for weeks, I'm wiped out, and I've lost weight.",
+  "patientFile": "PERSONA: 45-year-old man, chronically unwell-appearing, fatigued. Good historian.\n\nHPI: 3 weeks of intermittent fevers, drenching night sweats, malaise, and ~8 lb weight loss. On asking: a history of injection drug use (or a recent dental procedure / known valve disease) — only if asked about drug use, dental work, or heart history. NO localizing symptoms initially. May report transient neurologic symptoms or back pain (embolic phenomena) if asked.\nPMH: possible prior valve disease. MEDS: none regular. SOCIAL: injection drug use (only if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, febrile.\n- Vitals: BP 118/64, HR 100, RR 18, 38.5°C, SpO2 97% RA.\n- Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.\n- Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/Roth spots.\n- Splenomegaly if examined. Skin: track marks if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer injection drug use, dental work, or valve history unless asked about drug use, recent procedures, or heart history.\n- The murmur, peripheral stigmata, splenomegaly, and track marks are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "BloodCultures": "THREE sets of blood cultures from separate sites drawn BEFORE antibiotics; growing gram-positive cocci (e.g., Staph aureus).",
+      "CBC": "Anemia of chronic disease; mild leukocytosis.",
+      "Inflammatory": "ESR and CRP markedly elevated.",
+      "UA": "Microscopic hematuria (immune complex / embolic).",
+      "Echo": "Echocardiogram (TTE then TEE): valvular vegetation with associated regurgitation; assess for abscess.",
+      "Duke": "Findings applied to the modified Duke criteria."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/first-degree-heart-block-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "verify": "From the LITFL 'First Degree AV Block' library page — download an example tracing that matches: Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular ( … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "searchTerms": [
+        "12-lead EKG Sinus tachycardia; prolongation conduction"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=septic%20emboli%20chest%20xray%20nodules&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
+      "verify": "Pick a CC chest film showing multiple nodular opacities (septic emboli) OR a normal film; label which it is.",
+      "assetNeeded": true,
+      "imageDescription": "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
+      "searchTerms": [
+        "chest radiograph show multiple peripheral nodular"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "BloodCultures",
+    "CBC",
+    "Inflammatory",
+    "UA",
+    "Echo",
+    "Duke",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BloodCultures",
+    "Echo"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Infective endocarditis (leading & CANT-MISS,9). Occult bacteremia/sepsis from another source (CANT-MISS,3). Malignancy/lymphoma (core,3). Tuberculosis or other chronic infection (core,2). Autoimmune/vasculitis (core,2). Connects prolonged fever + new murmur + risk factor (IVDU/valve) + embolic stigmata to endocarditis (core,6).",
+      "idealAnswer": "Leading diagnosis: Infective endocarditis. Must-not-miss diagnoses to exclude: Occult bacteremia/sepsis from another source. Also reasonable: Malignancy/lymphoma; Tuberculosis or other chronic infection; Autoimmune/vasculitis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Infective endocarditis",
+            "points": 9
+          },
+          {
+            "item": "Occult bacteremia/sepsis from another source",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Malignancy/lymphoma",
+            "points": 3
+          },
+          {
+            "item": "Tuberculosis or other chronic infection",
+            "points": 2
+          },
+          {
+            "item": "Autoimmune/vasculitis",
+            "points": 2
+          },
+          {
+            "item": "Connects prolonged fever + new murmur + risk factor (IVDU/valve) + embolic stigmata to endocarditis",
+            "points": 6
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Occult bacteremia/sepsis from another source"
+      ],
+      "acceptableAlternatives": [
+        "Malignancy/lymphoma",
+        "Tuberculosis or other chronic infection",
+        "Autoimmune/vasculitis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order? (Order matters here.)",
+      "rubric": "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient (CANT-MISS,5). Echocardiogram — TTE then TEE (CANT-MISS,4). CBC, ESR/CRP (2). Urinalysis (1). EKG to look for conduction block/abscess (2). Apply the modified Duke criteria (1). PENALTY: starting antibiotics before drawing cultures in a stable patient (-3).",
+      "idealAnswer": "Order: At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient; Echocardiogram — TTE then TEE.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient",
+            "points": 5
+          },
+          {
+            "item": "Echocardiogram — TTE then TEE",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "starting antibiotics before drawing cultures in a stable patient",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient",
+        "Echocardiogram — TTE then TEE"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "starting antibiotics before drawing cultures in a stable patient"
+      ],
+      "orderSensitiveActions": [
+        "starting antibiotics before drawing cultures in a stable patient"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (look for a clue to a complication).",
+      "rubric": "Findings = sinus tachycardia ± new PR prolongation. CREDIT: rate & rhythm (5); identifies PR prolongation/conduction delay if present (5); recognizes a NEW conduction abnormality suggests a perivalvular/aortic-root abscess (3); systematic read (2). PENALTY: missing the conduction clue (-2).",
+      "keyFindings": [
+        "rate & rhythm",
+        "identifies PR prolongation/conduction delay if present",
+        "recognizes a NEW conduction abnormality suggests a perivalvular/aortic-root abscess",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for."
+      ],
+      "commonMistakes": [
+        "missing the conduction clue"
+      ],
+      "idealAnswer": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "rate & rhythm",
+            "points": 5
+          },
+          {
+            "item": "identifies PR prolongation/conduction delay if present",
+            "points": 5
+          },
+          {
+            "item": "recognizes a NEW conduction abnormality suggests a perivalvular/aortic-root abscess",
+            "points": 3
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing the conduction clue",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = multiple nodular opacities (septic emboli) in right-sided IE, or clear. CREDIT: identifies nodular opacities/septic emboli OR a normal film (6); links nodules to septic pulmonary emboli in right-sided endocarditis (4). PENALTY: inventing unrelated pathology (-2).",
+      "keyFindings": [
+        "identifies nodular opacities/septic emboli OR a normal film",
+        "links nodules to septic pulmonary emboli in right-sided endocarditis"
+      ],
+      "criticalFindings": [
+        "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+      ],
+      "commonMistakes": [
+        "inventing unrelated pathology"
+      ],
+      "idealAnswer": "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies nodular opacities/septic emboli OR a normal film",
+            "points": 6
+          },
+          {
+            "item": "links nodules to septic pulmonary emboli in right-sided endocarditis",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing unrelated pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Positive blood cultures, a vegetation on echo, fever, and a new murmur. What is your diagnosis and framework?",
+      "rubric": "Infective endocarditis (6). Applies the modified Duke criteria — major (positive cultures, echo vegetation) plus minor criteria (fever, predisposition, vascular/immunologic phenomena) (4).",
+      "idealAnswer": "Infective endocarditis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "After cultures, prolonged IV antibiotics — empiric coverage for staph (incl. MRSA) and strep, then tailored to cultures/sensitivities (CANT-MISS,8). Cardiology AND infectious disease consultation (5). Echocardiography to assess vegetation/abscess/valve function (4). Surgical evaluation for heart failure, perivalvular abscess, large/mobile vegetations, or refractory infection (4). Address the source; monitor for embolic complications (3). PENALTY: short-course oral antibiotics or failing to involve cardiology/surgery for complications (-2).",
+      "idealAnswer": "Plan: MRSA) and strep, then tailored to cultures/sensitivities.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "MRSA) and strep, then tailored to cultures/sensitivities",
+            "points": 8
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "short-course oral antibiotics or failing to involve cardiology/surgery for complications",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "MRSA) and strep, then tailored to cultures/sensitivities"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "short-course oral antibiotics or failing to involve cardiology/surgery for complications"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "well-appearing",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "drug_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "45-year-old man, chronically unwell-appearing, fatigued. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "drug_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "drug use",
+        "substance use",
+        "injection drugs",
+        "recreational drugs",
+        "iv drug use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_splenomegaly_finding_1",
+      "finding": "Splenomegaly if examined. Skin: track marks if examined.",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_2",
+      "finding": "Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_for_track_marks_finding_3",
+      "finding": "Splenomegaly if examined. Skin: track marks if examined.",
+      "revealedBy": [
+        "assess_for_track_marks"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No track marks."
+    },
+    {
+      "id": "inspect_nails_finding_4",
+      "finding": "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/R",
+      "revealedBy": [
+        "inspect_nails",
+        "inspect_palms_and_soles"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral stigmata."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Infective endocarditis",
+    "diagnosticFramework": "45M presents with 3 weeks of intermittent fevers, night sweats, fatigue, and weight loss; a new heart murmur is noted. The diagnosis is Infective endocarditis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "drug use"
+    ],
+    "keyPhysicalExamFindings": [
+      "Splenomegaly if examined. Skin: track marks if examined.",
+      "Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.",
+      "Splenomegaly if examined. Skin: track marks if examined.",
+      "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/R"
+    ],
+    "keyDiagnosticFindings": [
+      "BloodCultures",
+      "CBC",
+      "Inflammatory",
+      "UA",
+      "Echo",
+      "Duke"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Infective endocarditis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Infective endocarditis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "short-course oral antibiotics or failing to involve cardiology/surgery for complications"
+    ],
+    "managementPearls": [
+      "MRSA) and strep, then tailored to cultures/sensitivities"
+    ],
+    "criticalHistoryItems": [
+      "drug_use"
+    ],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient",
+      "Echocardiogram — TTE then TEE"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+    ],
+    "criticalManagementItems": [
+      "MRSA) and strep, then tailored to cultures/sensitivities"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

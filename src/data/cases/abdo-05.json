@@ -1,0 +1,597 @@
+{
+  "id": "abdo-05",
+  "category": "Abdominal Pain",
+  "difficulty": "easy",
+  "title": "Left lower quadrant pain and fever",
+  "diagnosis": "Diverticulitis",
+  "chart": {
+    "ageSex": "58M",
+    "cc": "Left lower abdominal pain",
+    "oneLiner": "58M presents with 3 days of constant left lower quadrant pain, low-grade fever, and a change in bowel habits.",
+    "vitals": {
+      "BP": "134/82",
+      "HR": "92",
+      "RR": "16",
+      "Temp": "38.0°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had a steady ache in my lower left belly for a few days, and I've been running a fever.",
+  "patientFile": "PERSONA: 58-year-old man, mildly uncomfortable. Cooperative.\n\nHPI: 3 days of constant left lower quadrant pain, low-grade fevers, mild nausea, and altered bowel habits (some constipation then loose stools). Reduced appetite. NO large-volume rectal bleeding, NO vomiting, NO prior similar episodes (mention prior episode only if asked).\nPMH: hypertension; low-fiber diet. MEDS: lisinopril. SOCIAL: nonsmoker, social alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable at rest, mild distress on exam.\n- Vitals: BP 134/82, HR 92, RR 16, 38.0°C, SpO2 99% RA.\n- Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.\n- No costovertebral angle tenderness. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the low-fiber diet or any prior episode unless asked about diet or prior similar pain.\n- LLQ findings are revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 13.0 with left shift, Hgb 14.2, Plt 280.",
+      "BMP": "Within normal limits.",
+      "UA": "Unremarkable (no significant pyuria/hematuria).",
+      "CT_abdomen": "CT abdomen/pelvis with contrast: sigmoid colon diverticula with wall thickening and pericolic fat stranding; NO abscess, free air, or fistula — uncomplicated diverticulitis."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus rhythm interrupted by frequent premature atrial complexes with abnormal P morphology and noncompensatory pauses.",
+      "verify": "Source a study matching: Sinus rhythm interrupted by frequent premature atrial complexes with abnormal P morphology and noncompensatory pauses. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing frequent premature atrial complexes",
+      "searchTerms": [
+        "premature atrial complexes ECG",
+        "frequent PACs rhythm strip"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA%20upright&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Healed/healing rib fractures with callus along the lateral ribs; lungs clear.",
+      "verify": "Source a study matching: Healed/healing rib fractures with callus along the lateral ribs; lungs clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing old healed rib fractures",
+      "searchTerms": [
+        "healed rib fractures chest x-ray",
+        "old rib fracture callus radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "UA",
+    "CT_abdomen",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC",
+    "CT_abdomen"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Acute diverticulitis (leading,8). Colorectal cancer (CANT-MISS to consider/exclude later,4). Inflammatory bowel disease / colitis (core,3). Ischemic colitis (core,3). Urinary cause (core,2). In appropriate patients, gynecologic causes (bonus,2). Named leading dx w/ justification — LLQ pain, fever, leukocytosis (core,3).",
+      "idealAnswer": "Leading diagnosis: Acute diverticulitis. Must-not-miss diagnoses to exclude: Colorectal cancer. Also reasonable: Inflammatory bowel disease / colitis; Ischemic colitis; Urinary cause.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute diverticulitis",
+            "points": 8
+          },
+          {
+            "item": "Colorectal cancer",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Inflammatory bowel disease / colitis",
+            "points": 3
+          },
+          {
+            "item": "Ischemic colitis",
+            "points": 3
+          },
+          {
+            "item": "Urinary cause",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — LLQ pain, fever, leukocytosis",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "In appropriate patients, gynecologic causes",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Colorectal cancer"
+      ],
+      "acceptableAlternatives": [
+        "Inflammatory bowel disease / colitis",
+        "Ischemic colitis",
+        "Urinary cause"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "CT abdomen/pelvis with contrast (CANT-MISS,5). CBC (3). BMP (2). Urinalysis (2). Considers stool studies if diarrhea predominant (bonus,1). PENALTY: colonoscopy DURING acute diverticulitis (perforation risk) (-3); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: CT abdomen/pelvis with contrast.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CT abdomen/pelvis with contrast",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Considers stool studies if diarrhea predominant",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "colonoscopy DURING acute diverticulitis (perforation risk)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "CT abdomen/pelvis with contrast"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "colonoscopy DURING acute diverticulitis (perforation risk)"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "keyFindings": [
+        "identifies premature atrial complexes",
+        "distinguishes PACs from PVCs (narrow, abnormal P)"
+      ],
+      "criticalFindings": [
+        "Frequent premature atrial complexes."
+      ],
+      "commonMistakes": [
+        "mistaking PACs for an irregular sustained atrial arrhythmia"
+      ],
+      "idealAnswer": "Sinus rhythm with frequent premature atrial complexes (early abnormal P waves, narrow QRS).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Frequent premature atrial complexes."
+        ],
+        "coreActions": [
+          "identifies premature atrial complexes",
+          "distinguishes PACs from PVCs (narrow, abnormal P)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no free air, clear bases. CREDIT: identifies a normal film (5); excludes free air (perforation) (5). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies healed rib fractures with callus",
+        "recognizes them as old"
+      ],
+      "criticalFindings": [
+        "Old healed rib fractures (callus)."
+      ],
+      "commonMistakes": [
+        "mistaking callus for a pulmonary or pleural lesion"
+      ],
+      "idealAnswer": "Old healed rib fractures with bony callus along the lateral ribs.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Old healed rib fractures (callus)."
+        ],
+        "coreActions": [
+          "identifies healed rib fractures with callus",
+          "recognizes them as old"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the CT, what is your diagnosis and severity?",
+      "rubric": "Uncomplicated acute (sigmoid) diverticulitis (6). Cites diverticula + wall thickening + fat stranding WITHOUT abscess/perforation (3). Notes the plan for interval colonoscopy after resolution to exclude malignancy (bonus,1).",
+      "idealAnswer": "Diverticulitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes the plan for interval colonoscopy after resolution to exclude malignancy",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Uncomplicated: bowel rest / clear liquids, analgesia (6). Antibiotics for selected patients (e.g., systemic symptoms/comorbidity) — note evidence supports selective use (6). Outpatient vs admission decision based on tolerance/comorbidity (5). Interval colonoscopy 6–8 weeks after resolution (4). Complicated disease (abscess → drainage; perforation → surgery) (3). PENALTY: urgent colonoscopy during the acute episode (-3).",
+      "idealAnswer": "Plan: .",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "urgent colonoscopy during the acute episode",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [],
+      "optionalActions": [],
+      "unsafeActions": [
+        "urgent colonoscopy during the acute episode"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "58-year-old man, mildly uncomfortable. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_cva_tenderness_finding_1",
+      "finding": "No costovertebral angle tenderness. Cardiac/lungs: normal.",
+      "revealedBy": [
+        "assess_cva_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No CVA tenderness."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_2",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "assess_guarding_finding_3",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No guarding."
+    },
+    {
+      "id": "palpate_llq_finding_4",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "revealedBy": [
+        "palpate_llq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No LLQ tenderness."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_5",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Diverticulitis",
+    "diagnosticFramework": "58M presents with 3 days of constant left lower quadrant pain, low-grade fever, and a change in bowel habits. The diagnosis is Diverticulitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "No costovertebral angle tenderness. Cardiac/lungs: normal.",
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "UA",
+      "CT_abdomen"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Diverticulitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Diverticulitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "urgent colonoscopy during the acute episode"
+    ],
+    "managementPearls": [],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_cva_tenderness",
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "CT abdomen/pelvis with contrast"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes.",
+      "No free air under the diaphragm; clear lung bases (excludes perforation)."
+    ],
+    "criticalManagementItems": [],
+    "keyImageInterpretationFindings": [
+      "Frequent premature atrial complexes.",
+      "Old healed rib fractures (callus)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Frequent premature atrial complexes.",
+      "Old healed rib fractures (callus)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

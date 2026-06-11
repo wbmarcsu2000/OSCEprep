@@ -1,0 +1,613 @@
+{
+  "id": "chestpain-03",
+  "category": "Chest Pain",
+  "difficulty": "hard",
+  "title": "Sudden tearing chest pain to the back",
+  "diagnosis": "Aortic dissection",
+  "chart": {
+    "ageSex": "58M",
+    "cc": "Severe tearing chest pain",
+    "oneLiner": "58M with poorly controlled hypertension presents with sudden, severe, tearing chest pain radiating to the back that began 1 hour ago.",
+    "vitals": {
+      "BP": "188/104 (right arm)",
+      "HR": "96",
+      "RR": "20",
+      "Temp": "37.0°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "It came on all at once — the worst pain of my life, like something ripped in my chest and went right through to my back.",
+  "patientFile": "PERSONA: 58-year-old man, in severe distress, restless, sweating. Frightened.\n\nHPI:\n- Sudden, MAXIMAL-at-onset, severe chest pain ~1 hour ago, described as TEARING/RIPPING, radiating straight through to the back between the shoulder blades.\n- Pain was at its worst immediately (not crescendo). Migrated downward toward the abdomen over time (only if asked).\n- NO exertional trigger, NO relief with rest, NO pleuritic quality, NO cough/fever.\n- Known hypertension, frequently misses his medications and hasn't checked his BP in months (only mentions poor control if asked about adherence).\n\nOLDCARTS: abrupt onset 1h ago, maximal immediately; retrosternal radiating to back; constant; tearing/ripping; not positional or pleuritic; severity 10/10.\n\nPMH: hypertension (poorly controlled), hyperlipidemia. MEDICATIONS: lisinopril and amlodipine — frequently nonadherent. ALLERGIES: none. FAMILY: father had an 'aneurysm' (only if asked). SOCIAL: current smoker ~40 pack-years, occasional alcohol.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: diaphoretic, in severe pain, restless.\n- Vitals: BP 188/104 in the RIGHT arm, 150/82 in the LEFT arm (pulse/pressure differential); HR 96.\n- Cardiac: regular; soft early diastolic murmur at the left sternal border if specifically auscultated (aortic regurgitation).\n- Lungs: clear bilaterally.\n- Pulses: right radial fuller than left; both lower extremity pulses present but diminished if checked.\n- Chest wall: NO reproducible tenderness. Abdomen: soft, mild discomfort. Neuro: intact.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the medication nonadherence, the smoking, the family history, or that the pain migrated unless specifically asked.\n- The BP differential and the murmur are only revealed if the student measures BP in both arms or auscultates the heart.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 13.8, WBC 9.0, Plt 240 — unremarkable.",
+      "BMP": "Cr 1.1, electrolytes normal.",
+      "Troponin": "Normal — not elevated.",
+      "Ddimer": "Elevated (nonspecific).",
+      "ctangio": "CT angiogram of the chest: intimal flap in the ascending aorta extending into the arch — Stanford type A aortic dissection."
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Troponin",
+    "Ddimer",
+    "ekg",
+    "cxr",
+    "ctangio"
+  ],
+  "essential": [
+    "ekg",
+    "cxr",
+    "ctangio"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Aortic dissection (leading & CANT-MISS, 10; accepts dissecting aneurysm). Acute coronary syndrome / STEMI (CANT-MISS,5). Pulmonary embolism (CANT-MISS,3). Pericarditis (core,2). Esophageal rupture (bonus,2). Names dissection and the features that point to it — tearing pain, BP differential, abrupt maximal onset (core,4).",
+      "idealAnswer": "Leading diagnosis: Aortic dissection. Must-not-miss diagnoses to exclude: Acute coronary syndrome / STEMI; Pulmonary embolism. Also reasonable: Pericarditis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome / STEMI",
+            "points": 5
+          },
+          {
+            "item": "Pulmonary embolism",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Pericarditis",
+            "points": 2
+          },
+          {
+            "item": "Names dissection and the features that point to it — tearing pain, BP differential, abrupt maximal onset",
+            "points": 4
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Esophageal rupture",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome / STEMI",
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Pericarditis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "prompt": "What workup do you want? (And what must you check at the bedside?)",
+      "rubric": "Bilateral arm BP / pulse exam (CANT-MISS,3). EKG to exclude STEMI (core,2). CXR (core,2). CT angiogram of chest/aorta (CANT-MISS, 8; accepts CTA or TEE). Troponin (core,1). Type and crossmatch blood (bonus,1). PENALTY: anticoagulating before excluding dissection (-2).",
+      "reveal": true,
+      "idealAnswer": "Order: Bilateral arm BP / pulse exam; EKG to exclude STEMI; CXR; Troponin.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Bilateral arm BP / pulse exam",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "EKG to exclude STEMI",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Type and crossmatch blood",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "anticoagulating before excluding dissection",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Bilateral arm BP / pulse exam"
+      ],
+      "optionalTests": [
+        "EKG to exclude STEMI",
+        "CXR",
+        "Troponin"
+      ],
+      "contraindicatedTests": [
+        "anticoagulating before excluding dissection"
+      ],
+      "orderSensitiveActions": [
+        "anticoagulating before excluding dissection"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus rhythm, nonspecific changes, NO ST elevation. CREDIT: rate & rhythm (4); EXPLICITLY recognizes there is no STEMI - essential before any anticoagulation/thrombolysis (7); systematic read (2). PENALTY: misreading as a STEMI and giving thrombolytics/anticoagulation (-3).",
+      "type": "read",
+      "image": "ekg",
+      "keyFindings": [
+        "applies LVH voltage criteria",
+        "recognizes a strain pattern, not acute STEMI"
+      ],
+      "criticalFindings": [
+        "Left ventricular hypertrophy with strain pattern (not an acute STEMI)."
+      ],
+      "commonMistakes": [
+        "reading the strain repolarization changes as acute ischemia/STEMI"
+      ],
+      "idealAnswer": "Left ventricular hypertrophy by voltage with a lateral strain pattern; not an acute STEMI.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Left ventricular hypertrophy with strain pattern (not an acute STEMI)."
+        ],
+        "coreActions": [
+          "applies LVH voltage criteria",
+          "recognizes a strain pattern, not acute STEMI"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = WIDENED MEDIASTINUM with an enlarged aortic knob. CREDIT: identifies the widened mediastinum (6); links it to suspected aortic dissection (4). PENALTY: calling the film normal / missing the widened mediastinum (-3).",
+      "type": "read",
+      "image": "cxr",
+      "keyFindings": [
+        "identifies the widened mediastinum",
+        "links it to suspected aortic dissection"
+      ],
+      "criticalFindings": [
+        "Widened mediastinum; enlarged aortic knob."
+      ],
+      "commonMistakes": [
+        "calling the film normal / missing the widened mediastinum"
+      ],
+      "idealAnswer": "Widened mediastinum; enlarged aortic knob.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Widened mediastinum; enlarged aortic knob.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies the widened mediastinum",
+            "points": 6
+          },
+          {
+            "item": "links it to suspected aortic dissection",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "calling the film normal / missing the widened mediastinum",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the widened mediastinum and CT findings, what is your diagnosis and why does the location matter?",
+      "rubric": "Stanford type A aortic dissection (8; accepts ascending aortic dissection). Recognizes type A involves the ascending aorta and is a surgical emergency (4). Notes complications — aortic regurgitation, tamponade, malperfusion (3).",
+      "idealAnswer": "Aortic dissection. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Emergent cardiothoracic/vascular surgery consult — type A is surgical (CANT-MISS,7). Rapid impulse/BP control: IV beta blocker (esmolol/labetalol) FIRST to lower heart rate and dP/dt, then vasodilator if needed (8). Pain control (3). Target HR <60 and SBP ~100–120 (3). Type and crossmatch, large-bore IV access (3). PENALTY: thrombolytics or anticoagulation (-5); vasodilator before rate control causing reflex tachycardia (-2).",
+      "idealAnswer": "Plan: Emergent cardiothoracic/vascular surgery consult — type A is surgical.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Emergent cardiothoracic/vascular surgery consult — type A is surgical",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "thrombolytics or anticoagulation",
+            "points": -5
+          }
+        ]
+      },
+      "requiredActions": [
+        "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "thrombolytics or anticoagulation"
+      ],
+      "consults": [
+        "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+      ],
+      "disposition": ""
+    }
+  ],
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with lateral strain (ST depression / T inversion I, aVL, V5-6). No acute STEMI.",
+      "verify": "Source a study matching: Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with lateral strain (ST depression / T inversion I, aVL, V5-6). No acute STEMI. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing LVH with strain pattern",
+      "searchTerms": [
+        "LVH strain pattern ECG",
+        "left ventricular hypertrophy voltage 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=widened%20mediastinum%20aortic%20dissection%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons - verify file license",
+      "findings": "Widened mediastinum; enlarged aortic knob.",
+      "verify": "Pick a CC chest film matching: Widened mediastinum; enlarged aortic knob..",
+      "assetNeeded": true,
+      "imageDescription": "Widened mediastinum; enlarged aortic knob.",
+      "searchTerms": [
+        "chest radiograph Widened mediastinum; enlarged aortic"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "standardizedPatient": {
+    "demeanor": "distress",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use",
+      "medication_nonadherence"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "58-year-old man, in severe distress, restless, sweating. Frightened.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_nonadherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "medication adherence",
+        "missed doses",
+        "ran out",
+        "taking your medications"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: regular; soft early diastolic murmur at the left sternal border if specifically auscultated (aortic regurgitation).",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_general_appearance_finding_2",
+      "finding": "General: diaphoretic, in severe pain, restless.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No tremor or diaphoresis."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Aortic dissection",
+    "diagnosticFramework": "58M with poorly controlled hypertension presents with sudden, severe, tearing chest pain radiating to the back that began 1 hour ago. The diagnosis is Aortic dissection, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "medication adherence"
+    ],
+    "keyPhysicalExamFindings": [
+      "Cardiac: regular; soft early diastolic murmur at the left sternal border if specifically auscultated (aortic regurgitation).",
+      "General: diaphoretic, in severe pain, restless."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Troponin",
+      "Ddimer",
+      "ctangio"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Aortic dissection while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Aortic dissection and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "thrombolytics or anticoagulation"
+    ],
+    "managementPearls": [
+      "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+    ],
+    "criticalHistoryItems": [
+      "medication_nonadherence"
+    ],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "Bilateral arm BP / pulse exam"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus rhythm; nonspecific changes; NO ST-segment elevation (important: this is not a STEMI).",
+      "Widened mediastinum; enlarged aortic knob."
+    ],
+    "criticalManagementItems": [
+      "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+    ],
+    "keyImageInterpretationFindings": [
+      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
+      "Widened mediastinum; enlarged aortic knob."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
+      "Widened mediastinum; enlarged aortic knob."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

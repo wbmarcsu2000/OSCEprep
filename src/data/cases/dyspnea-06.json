@@ -1,0 +1,618 @@
+{
+  "id": "dyspnea-06",
+  "category": "Dyspnea",
+  "difficulty": "moderate",
+  "title": "Progressive breathlessness with weight loss",
+  "diagnosis": "Malignant pleural effusion",
+  "chart": {
+    "ageSex": "67M",
+    "cc": "Breathlessness",
+    "oneLiner": "67M, former heavy smoker, presents with several weeks of progressive exertional dyspnea, a dry cough, and unintentional weight loss.",
+    "vitals": {
+      "BP": "128/78",
+      "HR": "94",
+      "RR": "22",
+      "Temp": "37.1°C",
+      "SpO2": "92% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My breathing's been getting worse over a few weeks, and I've lost weight without trying.",
+  "patientFile": "PERSONA: 67-year-old man, thin, mildly breathless on exertion. Calm, good historian.\n\nHPI: Several weeks of slowly progressive exertional dyspnea and a dry cough. ~10 lb unintentional weight loss over 2 months, reduced appetite, fatigue. NO fever, NO orthopnea/PND, NO leg swelling, NO acute chest pain, NO hemoptysis (mention only if asked).\nPMH: hypertension. MEDS: amlodipine. SOCIAL: former smoker ~40 pack-years (quit 5 yrs ago); worked in construction (asbestos exposure if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: cachectic-appearing, comfortable at rest.\n- Vitals: BP 128/78, HR 94, RR 22, 37.1°C, SpO2 92% RA.\n- Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.\n- Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness, mild clubbing if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the asbestos exposure, the weight loss specifics, or clubbing unless asked about occupation, weight, or examined.\n- The left-base effusion findings are revealed only if the lungs are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 10.8 (mild anemia), WBC 7.8, Plt 360.",
+      "BMP": "Within normal limits.",
+      "BNP": "Normal — argues against a heart-failure effusion.",
+      "Thoracentesis": "Pleural fluid EXUDATE by Light's criteria (high protein and LDH); lymphocyte-predominant; cytology positive for malignant cells.",
+      "CTchest": "Large left pleural effusion with pleural nodularity and an underlying lung mass."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "QRS amplitude <5 mm in all limb leads / <10 mm in precordial leads.",
+      "verify": "Source a study matching: QRS amplitude <5 mm in all limb leads / <10 mm in precordial leads. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing low voltage QRS",
+      "searchTerms": [
+        "low voltage QRS ECG",
+        "low voltage 12 lead criteria"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (PA)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=large%20pleural%20effusion%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift.",
+      "verify": "Pick a CC file showing a large unilateral pleural effusion (meniscus sign).",
+      "assetNeeded": true,
+      "imageDescription": "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift.",
+      "searchTerms": [
+        "chest radiograph Large left-sided pleural effusion"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "BNP",
+    "Thoracentesis",
+    "CTchest",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "cxr"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Pleural effusion, likely malignant (leading,7; accepts malignant effusion/lung cancer with effusion). Parapneumonic effusion/empyema (core,3). Heart-failure (transudative) effusion (core,3). Tuberculous effusion (core,3). Pulmonary embolism (CANT-MISS,4). Identifies need to characterize the effusion (transudate vs exudate) (core,5).",
+      "idealAnswer": "Leading diagnosis: Malignant pleural effusion. Must-not-miss diagnoses to exclude: Pulmonary embolism. Also reasonable: Parapneumonic effusion/empyema; Heart-failure (transudative) effusion; Tuberculous effusion.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Pulmonary embolism",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Parapneumonic effusion/empyema",
+            "points": 3
+          },
+          {
+            "item": "Heart-failure (transudative) effusion",
+            "points": 3
+          },
+          {
+            "item": "Tuberculous effusion",
+            "points": 3
+          },
+          {
+            "item": "Identifies need to characterize the effusion (transudate vs exudate)",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Parapneumonic effusion/empyema",
+        "Heart-failure (transudative) effusion",
+        "Tuberculous effusion"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "CXR (CANT-MISS,4). Diagnostic thoracentesis with pleural fluid analysis + Light's criteria + cytology (CANT-MISS,5). CBC (2). BNP to assess for CHF cause (2). CT chest (2). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: CXR; Diagnostic thoracentesis with pleural fluid analysis + Light's criteria + cytology.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CXR",
+            "points": 4
+          },
+          {
+            "item": "Diagnostic thoracentesis with pleural fluid analysis + Light's criteria + cytology",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CXR",
+        "Diagnostic thoracentesis with pleural fluid analysis + Light's criteria + cytology"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm / no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling pathology (-3).",
+      "keyFindings": [
+        "recognizes diffusely low QRS voltage",
+        "lists a differential (effusion, infiltrative, COPD, obesity)"
+      ],
+      "criticalFindings": [
+        "Low QRS voltage."
+      ],
+      "commonMistakes": [
+        "not appreciating the global low voltage and calling it normal"
+      ],
+      "idealAnswer": "Diffusely low QRS voltage across limb and precordial leads.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Low QRS voltage."
+        ],
+        "coreActions": [
+          "recognizes diffusely low QRS voltage",
+          "lists a differential (effusion, infiltrative, COPD, obesity)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = large unilateral (left) pleural effusion, blunted costophrenic angle, meniscus sign. CREDIT: identifies a pleural effusion (5); localizes the side and notes size/meniscus/blunted angle (3); comments on possible mediastinal shift or underlying opacity (2).",
+      "keyFindings": [
+        "identifies a pleural effusion",
+        "localizes the side and notes size/meniscus/blunted angle",
+        "comments on possible mediastinal shift or underlying opacity"
+      ],
+      "criticalFindings": [
+        "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift."
+      ],
+      "commonMistakes": [
+        "Over-reading a normal study",
+        "Failing to comment on rate/rhythm or exposure"
+      ],
+      "idealAnswer": "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a pleural effusion",
+            "points": 5
+          },
+          {
+            "item": "localizes the side and notes size/meniscus/blunted angle",
+            "points": 3
+          },
+          {
+            "item": "comments on possible mediastinal shift or underlying opacity",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given an EXUDATIVE effusion with positive cytology, what is your diagnosis and reasoning?",
+      "rubric": "Malignant pleural effusion (5). Applies Light's criteria to classify as exudate (3). Links to the underlying mass / smoking history (bonus,2).",
+      "idealAnswer": "Malignant pleural effusion. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Links to the underlying mass / smoking history",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Therapeutic thoracentesis / drainage to relieve dyspnea (CANT-MISS,7). Send pleural fluid for cytology, cell count, protein/LDH, culture (5). CT chest and tissue diagnosis; oncology referral (6). Consider indwelling pleural catheter or pleurodesis for recurrence (3). Supportive care / symptom management (3). PENALTY: treating as heart failure with diuretics (an exudate is not a volume problem) (-3); large-volume tap >1–1.5 L at once risking re-expansion edema (-1).",
+      "idealAnswer": "Plan: Therapeutic thoracentesis / drainage to relieve dyspnea.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Therapeutic thoracentesis / drainage to relieve dyspnea",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "treating as heart failure with diuretics (an exudate is not a volume problem)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Therapeutic thoracentesis / drainage to relieve dyspnea"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "treating as heart failure with diuretics (an exudate is not a volume problem)"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "breathless",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use",
+      "suicidal_ideation"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "67-year-old man, thin, mildly breathless on exertion. Calm, good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "suicidal_ideation",
+      "category": "psychiatric",
+      "triggerConcepts": [
+        "how much did you take",
+        "intent",
+        "self-harm",
+        "were you trying to hurt yourself",
+        "mood"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_2",
+      "finding": "Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No wheezing."
+    },
+    {
+      "id": "percuss_posterior_lungs_finding_3",
+      "finding": "Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.",
+      "revealedBy": [
+        "percuss_posterior_lungs",
+        "assess_egophony",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No consolidation."
+    },
+    {
+      "id": "assess_edema_finding_4",
+      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_5",
+      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Malignant pleural effusion",
+    "diagnosticFramework": "67M, former heavy smoker, presents with several weeks of progressive exertional dyspnea, a dry cough, and unintentional weight loss. The diagnosis is Malignant pleural effusion, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "how much did you take"
+    ],
+    "keyPhysicalExamFindings": [
+      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.",
+      "Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.",
+      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende"
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "BNP",
+      "Thoracentesis",
+      "CTchest"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Malignant pleural effusion while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Malignant pleural effusion and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "treating as heart failure with diuretics (an exudate is not a volume problem)"
+    ],
+    "managementPearls": [
+      "Therapeutic thoracentesis / drainage to relieve dyspnea"
+    ],
+    "criticalHistoryItems": [
+      "suicidal_ideation"
+    ],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "CXR",
+      "Diagnostic thoracentesis with pleural fluid analysis + Light's criteria + cytology"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes (sinus tachycardia possible).",
+      "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift."
+    ],
+    "criticalManagementItems": [
+      "Therapeutic thoracentesis / drainage to relieve dyspnea"
+    ],
+    "keyImageInterpretationFindings": [
+      "Low QRS voltage.",
+      "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Low QRS voltage.",
+      "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

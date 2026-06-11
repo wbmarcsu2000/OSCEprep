@@ -1,0 +1,571 @@
+{
+  "id": "diarrhea-04",
+  "category": "Diarrhea",
+  "difficulty": "moderate",
+  "title": "Chronic diarrhea with weight loss",
+  "diagnosis": "Celiac disease",
+  "chart": {
+    "ageSex": "35F",
+    "cc": "Chronic diarrhea",
+    "oneLiner": "35F presents with months of loose, bulky, foul-smelling stools, bloating, fatigue, and unintentional weight loss.",
+    "vitals": {
+      "BP": "112/72",
+      "HR": "84",
+      "RR": "14",
+      "Temp": "36.8°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had loose stools and bloating for months, I'm tired all the time, and I've lost weight.",
+  "patientFile": "PERSONA: 35-year-old woman, thin, fatigued. Good historian.\n\nHPI: Several months of loose, bulky, greasy/foul-smelling stools (steatorrhea), bloating, and excessive gas; symptoms worse with bread/pasta (only if asked about diet/triggers). Fatigue and ~12 lb unintentional weight loss. An itchy, blistering rash on the elbows/knees (dermatitis herpetiformis) — only if asked or examined. NO nocturnal bloody diarrhea, NO recent travel, NO antibiotics.\nPMH: prior iron-deficiency anemia not explained; possible autoimmune thyroid disease. FAMILY: a sister with celiac disease (if asked). MEDS: none. SOCIAL: minimal alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: thin, pale.\n- Vitals: BP 112/72, HR 84, RR 14, 36.8°C, SpO2 99% RA.\n- Abdomen: soft, mildly distended, nontender; active bowel sounds.\n- Skin: grouped vesicles/excoriations on extensor surfaces if examined. Angular cheilitis if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gluten/diet trigger, the rash, or the family history unless asked about diet/triggers, skin symptoms, or family history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 10.8 with low MCV — iron-deficiency-pattern anemia.",
+      "Serology": "Tissue transglutaminase IgA (tTG-IgA) strongly POSITIVE; total IgA normal (so the IgA-based test is valid).",
+      "Nutrition": "Low ferritin, low vitamin D, mildly low folate — malabsorption pattern.",
+      "Biopsy": "Duodenal biopsy (on a gluten-containing diet): villous atrophy, crypt hyperplasia, intraepithelial lymphocytosis — consistent with celiac disease.",
+      "StoolStudies": "Infectious workup negative."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Abnormally short QTc (~330 ms) with tall peaked T waves.",
+      "verify": "Source a study matching: Abnormally short QTc (~330 ms) with tall peaked T waves. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing short QT interval",
+      "searchTerms": [
+        "short QT syndrome ECG",
+        "short QTc 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Diffuse bilateral reticulonodular interstitial opacities (chronic interstitial lung disease).",
+      "verify": "Source a study matching: Diffuse bilateral reticulonodular interstitial opacities (chronic interstitial lung disease). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing chronic interstitial lung disease",
+      "searchTerms": [
+        "interstitial lung disease chest x-ray",
+        "reticulonodular pattern radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Serology",
+    "Nutrition",
+    "Biopsy",
+    "StoolStudies",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Serology",
+    "CBC"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this chronic diarrhea (note your leading diagnosis).",
+      "rubric": "Celiac disease (leading,7). Irritable bowel syndrome (core,3). Inflammatory bowel disease (core,3). Lactose/carbohydrate intolerance (core,2). Pancreatic exocrine insufficiency (core,3). Microscopic colitis (bonus,2). Connects chronic steatorrhea + weight loss + unexplained iron deficiency to a malabsorptive process / celiac (core,5).",
+      "idealAnswer": "Leading diagnosis: Celiac disease. Must-not-miss diagnoses to exclude: none specific. Also reasonable: Irritable bowel syndrome; Inflammatory bowel disease; Lactose/carbohydrate intolerance; Pancreatic exocrine insufficiency.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Celiac disease",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Irritable bowel syndrome",
+            "points": 3
+          },
+          {
+            "item": "Inflammatory bowel disease",
+            "points": 3
+          },
+          {
+            "item": "Lactose/carbohydrate intolerance",
+            "points": 2
+          },
+          {
+            "item": "Pancreatic exocrine insufficiency",
+            "points": 3
+          },
+          {
+            "item": "Connects chronic steatorrhea + weight loss + unexplained iron deficiency to a malabsorptive process / celiac",
+            "points": 5
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Microscopic colitis",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [],
+      "acceptableAlternatives": [
+        "Irritable bowel syndrome",
+        "Inflammatory bowel disease",
+        "Lactose/carbohydrate intolerance",
+        "Pancreatic exocrine insufficiency"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten (CANT-MISS,5). CBC and iron studies (3). Nutritional labs — ferritin, vitamin D, folate, B12 (2). Upper endoscopy with duodenal biopsy to confirm (3). Stool studies to exclude infection (2). PENALTY: starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy) (-3).",
+      "idealAnswer": "Order: Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy)"
+      ],
+      "orderSensitiveActions": [
+        "starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "keyFindings": [
+        "measures a short QTc",
+        "recognizes short QT as an arrhythmia substrate"
+      ],
+      "criticalFindings": [
+        "Short QT interval (~330 ms)."
+      ],
+      "commonMistakes": [
+        "not measuring QT and calling the tracing normal"
+      ],
+      "idealAnswer": "Short QT interval (QTc ~330 ms) with tall T waves.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Short QT interval (~330 ms)."
+        ],
+        "coreActions": [
+          "measures a short QTc",
+          "recognizes short QT as an arrhythmia substrate"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "diffuse reticulonodular pattern",
+        "recognizes a chronic interstitial process"
+      ],
+      "criticalFindings": [
+        "Chronic interstitial lung disease (reticulonodular pattern)."
+      ],
+      "commonMistakes": [
+        "calling diffuse chronic changes an acute infection"
+      ],
+      "idealAnswer": "Chronic interstitial lung disease: diffuse bilateral reticulonodular opacities.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Chronic interstitial lung disease (reticulonodular pattern)."
+        ],
+        "coreActions": [
+          "diffuse reticulonodular pattern",
+          "recognizes a chronic interstitial process"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Positive tTG-IgA with normal total IgA and duodenal villous atrophy on biopsy. What is your diagnosis?",
+      "rubric": "Celiac disease (6). Cites positive serology with a valid IgA level plus confirmatory villous atrophy on biopsy; notes the dermatitis herpetiformis association (4).",
+      "idealAnswer": "Celiac disease. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Lifelong strict GLUTEN-FREE diet — the definitive treatment (CANT-MISS,9). Dietitian referral (4). Replace deficiencies — iron, vitamin D, folate, B12 as needed (5). Screen for associated conditions (e.g., thyroid disease) and assess bone density (3). Monitor symptoms and serology response on the diet (4). PENALTY: recommending a gluten-free diet before completing diagnostic testing (-3).",
+      "idealAnswer": "Plan: Lifelong strict GLUTEN-FREE diet — the definitive treatment.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Lifelong strict GLUTEN-FREE diet — the definitive treatment",
+            "points": 9
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "recommending a gluten-free diet before completing diagnostic testing",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Lifelong strict GLUTEN-FREE diet — the definitive treatment"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "recommending a gluten-free diet before completing diagnostic testing"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "suicidal_ideation"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "35-year-old woman, thin, fatigued. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "suicidal_ideation",
+      "category": "psychiatric",
+      "triggerConcepts": [
+        "how much did you take",
+        "intent",
+        "self-harm",
+        "were you trying to hurt yourself",
+        "mood"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_abdomen_finding_1",
+      "finding": "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_2",
+      "finding": "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Celiac disease",
+    "diagnosticFramework": "35F presents with months of loose, bulky, foul-smelling stools, bloating, fatigue, and unintentional weight loss. The diagnosis is Celiac disease, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "how much did you take"
+    ],
+    "keyPhysicalExamFindings": [
+      "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
+      "Abdomen: soft, mildly distended, nontender; active bowel sounds."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Serology",
+      "Nutrition",
+      "Biopsy",
+      "StoolStudies"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Celiac disease while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Celiac disease and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "recommending a gluten-free diet before completing diagnostic testing"
+    ],
+    "managementPearls": [
+      "Lifelong strict GLUTEN-FREE diet — the definitive treatment"
+    ],
+    "criticalHistoryItems": [
+      "suicidal_ideation"
+    ],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [
+      "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes.",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Lifelong strict GLUTEN-FREE diet — the definitive treatment"
+    ],
+    "keyImageInterpretationFindings": [
+      "Short QT interval (~330 ms).",
+      "Chronic interstitial lung disease (reticulonodular pattern)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Short QT interval (~330 ms).",
+      "Chronic interstitial lung disease (reticulonodular pattern)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

@@ -1,0 +1,562 @@
+{
+  "id": "diarrhea-05",
+  "category": "Diarrhea",
+  "difficulty": "hard",
+  "title": "Bloody diarrhea with abdominal pain in an older adult",
+  "diagnosis": "Ischemic colitis",
+  "chart": {
+    "ageSex": "72M",
+    "cc": "Abdominal pain and bloody diarrhea",
+    "oneLiner": "72M with cardiovascular disease presents with sudden crampy left-sided abdominal pain followed within hours by bloody diarrhea.",
+    "vitals": {
+      "BP": "118/74",
+      "HR": "98",
+      "RR": "18",
+      "Temp": "37.6°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I got this sudden cramp in my left side, and then I started passing bloody stool.",
+  "patientFile": "PERSONA: 72-year-old man, uncomfortable, anxious. Good historian.\n\nHPI: Abrupt onset of crampy LEFT-sided abdominal pain, followed within a few hours by loose stools mixed with dark/bright blood. Recently had an episode of dehydration/low blood pressure from a stomach bug, and has known atherosclerotic disease (only if asked about recent illness/cardiovascular history). NO prior similar episodes, NO recent antibiotics, NO foreign travel.\nPMH: hypertension, coronary artery disease, atrial fibrillation. MEDS: aspirin, metoprolol, a statin; anticoagulation status variable (if asked). SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable but not toxic early.\n- Vitals: BP 118/74, HR 98 (note rhythm if examined), RR 18, 37.6°C, SpO2 97% RA.\n- Abdomen: tenderness over the LEFT/lower abdomen, mild; NO rigidity or rebound early (peritoneal signs would indicate transmural infarction).\n- Rectal: blood present if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent hypotension/dehydration or cardiovascular history unless asked about recent illness, blood pressure, or heart history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 14.0 with left shift, Hgb 12.8, Plt 250.",
+      "Lactate": "2.6 — mildly elevated (a markedly high lactate or peritonitis would suggest transmural/gangrenous disease).",
+      "BMP": "Mild metabolic changes; Cr 1.2.",
+      "StoolStudies": "Sent; infectious panel negative.",
+      "CT_abdomen": "CT abdomen/pelvis with contrast: segmental colonic wall thickening in a watershed distribution (splenic flexure / descending colon); no free air or pneumatosis."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "verify": "From the LITFL 'Atrial Fibrillation' library page — download an example tracing that matches: Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease a … and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "searchTerms": [
+        "12-lead EKG Atrial fibrillation sinus rhythm);"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Abdominal X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20abdominal%20xray%20upright&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
+      "verify": "Pick a CC abdominal film showing thumbprinting OR a normal/nonspecific film; must NOT show free air.",
+      "assetNeeded": true,
+      "imageDescription": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
+      "searchTerms": [
+        "chest radiograph Nonspecific; show 'thumbprinting' (mucosal"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Lactate",
+    "BMP",
+    "StoolStudies",
+    "CT_abdomen",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Lactate",
+    "CT_abdomen"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Ischemic colitis (leading & CANT-MISS,8). Acute MESENTERIC ischemia — small-bowel, far more severe (CANT-MISS to distinguish,4). Infectious colitis (core,3). Inflammatory bowel disease (core,2). Diverticular bleed/diverticulitis (core,3). Connects sudden pain-then-bloody-diarrhea + vascular risk + recent hypotension to colonic ischemia (core,5).",
+      "idealAnswer": "Leading diagnosis: Ischemic colitis. Must-not-miss diagnoses to exclude: Acute MESENTERIC ischemia — small-bowel, far more severe. Also reasonable: Infectious colitis; Inflammatory bowel disease; Diverticular bleed/diverticulitis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Ischemic colitis",
+            "points": 8
+          },
+          {
+            "item": "Acute MESENTERIC ischemia — small-bowel, far more severe",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Infectious colitis",
+            "points": 3
+          },
+          {
+            "item": "Inflammatory bowel disease",
+            "points": 2
+          },
+          {
+            "item": "Diverticular bleed/diverticulitis",
+            "points": 3
+          },
+          {
+            "item": "Connects sudden pain-then-bloody-diarrhea + vascular risk + recent hypotension to colonic ischemia",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute MESENTERIC ischemia — small-bowel, far more severe"
+      ],
+      "acceptableAlternatives": [
+        "Infectious colitis",
+        "Inflammatory bowel disease",
+        "Diverticular bleed/diverticulitis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC (2). Serum lactate (CANT-MISS,3). BMP (2). Stool studies to exclude infection (2). CT abdomen/pelvis with contrast (CANT-MISS,4). EKG (1). Colonoscopy is diagnostic but performed after stabilization (1). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: Serum lactate; CT abdomen/pelvis with contrast.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Serum lactate",
+            "points": 3
+          },
+          {
+            "item": "CT abdomen/pelvis with contrast",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Serum lactate",
+        "CT abdomen/pelvis with contrast"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = atrial fibrillation (or sinus); no acute STEMI. CREDIT: identifies the rhythm — AF vs sinus (6); links AF/cardiovascular disease as a risk factor for ischemia (4); no acute STEMI (3); systematic read (2). PENALTY: missing AF if present (-2).",
+      "keyFindings": [
+        "identifies the rhythm — AF vs sinus",
+        "links AF/cardiovascular disease as a risk factor for ischemia",
+        "no acute STEMI",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)"
+      ],
+      "commonMistakes": [
+        "missing AF if present"
+      ],
+      "idealAnswer": "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies the rhythm — AF vs sinus",
+            "points": 6
+          },
+          {
+            "item": "links AF/cardiovascular disease as a risk factor for ischemia",
+            "points": 4
+          },
+          {
+            "item": "no acute STEMI",
+            "points": 3
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing AF if present",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read X-ray",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's abdominal film. Describe your findings.",
+      "rubric": "Findings = nonspecific; possible thumbprinting; NO free air. CREDIT: identifies thumbprinting (mucosal edema) or a nonspecific film (5); explicitly excludes free air (perforation) (5). PENALTY: missing the free-air check (-1).",
+      "keyFindings": [
+        "or a nonspecific film"
+      ],
+      "criticalFindings": [
+        "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+      ],
+      "commonMistakes": [
+        "missing the free-air check"
+      ],
+      "idealAnswer": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "or a nonspecific film",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing the free-air check",
+            "points": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "CT shows segmental colonic wall thickening in a watershed area without perforation. What is your diagnosis and how does it differ from acute mesenteric ischemia?",
+      "rubric": "Ischemic colitis (6). Distinguishes from acute mesenteric ischemia — colonic (often watershed) and usually less catastrophic, vs small-bowel SMA occlusion with pain out of proportion and a worse prognosis (4).",
+      "idealAnswer": "Ischemic colitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Supportive care — IV fluid resuscitation and bowel rest (CANT-MISS,7). Correct the precipitant — restore perfusion, manage hypotension/arrhythmia, avoid vasoconstrictors (6). Broad-spectrum antibiotics for moderate-severe disease (4). Serial abdominal exams and lactate; most non-gangrenous cases resolve (4). Surgery for peritonitis, gangrene, perforation, or clinical deterioration (3). PENALTY: missing peritoneal signs/gangrene requiring surgery (-3); giving vasoconstrictors (-2).",
+      "idealAnswer": "Plan: Supportive care — IV fluid resuscitation and bowel rest.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Supportive care — IV fluid resuscitation and bowel rest",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing peritoneal signs/gangrene requiring surgery",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Supportive care — IV fluid resuscitation and bowel rest"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "missing peritoneal signs/gangrene requiring surgery"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "72-year-old man, uncomfortable, anxious. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_rebound_tenderness_finding_1",
+      "finding": "Abdomen: tenderness over the LEFT/lower abdomen, mild; NO rigidity or rebound early (peritoneal signs would indicate transmural infarction).",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Ischemic colitis",
+    "diagnosticFramework": "72M with cardiovascular disease presents with sudden crampy left-sided abdominal pain followed within hours by bloody diarrhea. The diagnosis is Ischemic colitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: tenderness over the LEFT/lower abdomen, mild; NO rigidity or rebound early (peritoneal signs would indicate transmural infarction)."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Lactate",
+      "BMP",
+      "StoolStudies",
+      "CT_abdomen"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Ischemic colitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Ischemic colitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "missing peritoneal signs/gangrene requiring surgery"
+    ],
+    "managementPearls": [
+      "Supportive care — IV fluid resuscitation and bowel rest"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "Serum lactate",
+      "CT abdomen/pelvis with contrast"
+    ],
+    "criticalInterpretationItems": [
+      "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+    ],
+    "criticalManagementItems": [
+      "Supportive care — IV fluid resuscitation and bowel rest"
+    ],
+    "keyImageInterpretationFindings": [
+      "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

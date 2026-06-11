@@ -1,0 +1,557 @@
+{
+  "id": "syncope-02",
+  "category": "Syncope",
+  "difficulty": "easy",
+  "title": "Lightheaded on standing",
+  "diagnosis": "Orthostatic hypotension",
+  "chart": {
+    "ageSex": "75M",
+    "cc": "Dizziness and a fall",
+    "oneLiner": "75M presents after feeling lightheaded and briefly passing out when standing up from a chair; he has several blood-pressure medications and has been eating and drinking poorly.",
+    "vitals": {
+      "BP": "124/74 (seated)",
+      "HR": "82",
+      "RR": "16",
+      "Temp": "36.8°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "Every time I stand up I get dizzy, and this time I went down.",
+  "patientFile": "PERSONA: 75-year-old man, well when seated, worried about falling. Good historian.\n\nHPI: Lightheadedness specifically on STANDING for the past week, today with a brief faint as he rose from a chair; recovered quickly once lying down, no confusion afterward. Reduced oral intake and a recent stomach bug with some diarrhea (volume depletion) — only if asked. Recently had a diuretic dose increased (only if asked about med changes). NO chest pain, NO palpitations, NO exertional symptoms, NO black stools (only if asked).\nPMH: hypertension, BPH. MEDS: hydrochlorothiazide (recently increased), lisinopril, tamsulosin, amlodipine. SOCIAL: lives alone.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing seated; mucous membranes slightly dry.\n- Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic drop.\n- Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the diuretic increase, poor intake, or recent diarrhea unless asked about medication changes, intake, or GI symptoms.\n- The orthostatic vitals are revealed only if the student specifically checks them.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 92 — normal.",
+      "BMP": "Na 141, K 3.3, BUN 30, Cr 1.3 (prerenal), HCO3 30 — consistent with volume depletion.",
+      "CBC": "Hgb 13.8 — normal (no anemia/occult bleed).",
+      "Orthostatics": "SBP falls >20 mmHg on standing with symptom reproduction — positive."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Intermittently non-conducted P waves with a CONSTANT PR on conducted beats; often wide QRS.",
+      "verify": "Source a study matching: Intermittently non-conducted P waves with a CONSTANT PR on conducted beats; often wide QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing Mobitz II second degree AV block",
+      "searchTerms": [
+        "Mobitz II ECG",
+        "second degree AV block type 2 strip"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Single well-circumscribed pulmonary nodule (~1.5 cm) in the mid lung zone.",
+      "verify": "Source a study matching: Single well-circumscribed pulmonary nodule (~1.5 cm) in the mid lung zone. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing solitary pulmonary nodule",
+      "searchTerms": [
+        "solitary pulmonary nodule x-ray",
+        "lung nodule chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "BMP",
+    "CBC",
+    "Orthostatics",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Orthostatics",
+    "ekg"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Orthostatic hypotension (leading,7; medication- and volume-related). Cardiac arrhythmia (CANT-MISS,4). Structural cardiac disease (CANT-MISS,3). Occult GI bleed / anemia (CANT-MISS,3). Vasovagal (core,2). Autonomic dysfunction (core,2). Named leading dx w/ justification — symptoms on standing, polypharmacy, volume loss (core,4).",
+      "idealAnswer": "Leading diagnosis: Orthostatic hypotension. Must-not-miss diagnoses to exclude: Cardiac arrhythmia; Structural cardiac disease; Occult GI bleed / anemia. Also reasonable: Vasovagal; Autonomic dysfunction.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Cardiac arrhythmia",
+            "points": 4
+          },
+          {
+            "item": "Structural cardiac disease",
+            "points": 3
+          },
+          {
+            "item": "Occult GI bleed / anemia",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Vasovagal",
+            "points": 2
+          },
+          {
+            "item": "Autonomic dysfunction",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — symptoms on standing, polypharmacy, volume loss",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Cardiac arrhythmia",
+        "Structural cardiac disease",
+        "Occult GI bleed / anemia"
+      ],
+      "acceptableAlternatives": [
+        "Vasovagal",
+        "Autonomic dysfunction"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Orthostatic vital signs (CANT-MISS,5). EKG to exclude arrhythmia (CANT-MISS,4). BMP for volume/electrolytes (2). CBC to exclude anemia/bleed (2). Careful medication review (2). PENALTY: skipping orthostatics or the medication review (-2).",
+      "idealAnswer": "Order: Orthostatic vital signs; EKG to exclude arrhythmia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Orthostatic vital signs",
+            "points": 5
+          },
+          {
+            "item": "EKG to exclude arrhythmia",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "skipping orthostatics or the medication review",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Orthostatic vital signs",
+        "EKG to exclude arrhythmia"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "skipping orthostatics or the medication review"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus rhythm, no block/arrhythmia/ischemia. CREDIT: rate & rhythm (6); excludes conduction disease/arrhythmia and ischemia (6); systematic read (3). PENALTY: over-reading (-2).",
+      "keyFindings": [
+        "dropped QRS with constant PR on conducted beats",
+        "recognizes high risk of progression to complete block"
+      ],
+      "criticalFindings": [
+        "Mobitz II second-degree AV block."
+      ],
+      "commonMistakes": [
+        "confusing constant-PR drop (Mobitz II) with progressive-PR Wenckebach",
+        "underestimating the risk"
+      ],
+      "idealAnswer": "Mobitz II: intermittent non-conducted P waves with a fixed PR on conducted beats — high risk for progression to complete block.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Mobitz II second-degree AV block."
+        ],
+        "coreActions": [
+          "dropped QRS with constant PR on conducted beats",
+          "recognizes high risk of progression to complete block"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = normal. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a solitary pulmonary nodule",
+        "recommends comparison with priors / follow-up"
+      ],
+      "criticalFindings": [
+        "Solitary pulmonary nodule."
+      ],
+      "commonMistakes": [
+        "dismissing the nodule as a nipple shadow without confirmation",
+        "missing it on a busy film"
+      ],
+      "idealAnswer": "Solitary pulmonary nodule (~1.5 cm); recommend comparison with prior imaging and structured follow-up.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Solitary pulmonary nodule."
+        ],
+        "coreActions": [
+          "identifies a solitary pulmonary nodule",
+          "recommends comparison with priors / follow-up"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the positive orthostatics and prerenal labs, what is your diagnosis and the contributors?",
+      "rubric": "Orthostatic hypotension (6). Identifies contributors — volume depletion (diarrhea/poor intake) plus antihypertensives/diuretic (4).",
+      "idealAnswer": "Orthostatic hypotension. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Volume repletion — IV/oral fluids (CANT-MISS,6). Review and hold/reduce offending medications, especially the diuretic and other antihypertensives (CANT-MISS,7). Counsel on slow positional changes and adequate hydration/salt (5). Treat the precipitant (e.g., gastroenteritis) (4). Fall-risk assessment and follow-up (3). PENALTY: continuing all antihypertensives unchanged (-3).",
+      "idealAnswer": "Plan: Volume repletion — IV/oral fluids; Review and hold/reduce offending medications, especially the diuretic and other antihypertensives.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Volume repletion — IV/oral fluids",
+            "points": 6
+          },
+          {
+            "item": "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives",
+            "points": 7
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "continuing all antihypertensives unchanged",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Volume repletion — IV/oral fluids",
+        "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "continuing all antihypertensives unchanged"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "75-year-old man, well when seated, worried about falling. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined).",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_2",
+      "finding": "Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic dro",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic drop."
+    },
+    {
+      "id": "assess_motor_strength_finding_3",
+      "finding": "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined).",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Orthostatic hypotension",
+    "diagnosticFramework": "75M presents after feeling lightheaded and briefly passing out when standing up from a chair; he has several blood-pressure medications and has been eating and drinking poorly. The diagnosis is Orthostatic hypotension, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined).",
+      "Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic dro",
+      "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined)."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "BMP",
+      "CBC",
+      "Orthostatics"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Orthostatic hypotension while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Orthostatic hypotension and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "continuing all antihypertensives unchanged"
+    ],
+    "managementPearls": [
+      "Volume repletion — IV/oral fluids",
+      "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area",
+      "obtain_orthostatic_vitals"
+    ],
+    "criticalWorkupItems": [
+      "Orthostatic vital signs",
+      "EKG to exclude arrhythmia"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus rhythm; no arrhythmia, block, or ischemia (obtained to exclude cardiac syncope).",
+      "Normal (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Volume repletion — IV/oral fluids",
+      "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives"
+    ],
+    "keyImageInterpretationFindings": [
+      "Mobitz II second-degree AV block.",
+      "Solitary pulmonary nodule."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Mobitz II second-degree AV block.",
+      "Solitary pulmonary nodule."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Elicits the patient's concerns / ICE",
+        "points": 1
+      },
+      {
+        "item": "Avoids medical jargon; checks understanding",
+        "points": 1
+      },
+      {
+        "item": "Signposts and structures the encounter",
+        "points": 1
+      },
+      {
+        "item": "Demonstrates empathy and acknowledges affect",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

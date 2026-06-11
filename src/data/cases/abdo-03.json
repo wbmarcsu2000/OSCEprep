@@ -1,0 +1,623 @@
+{
+  "id": "abdo-03",
+  "category": "Abdominal Pain",
+  "difficulty": "moderate",
+  "title": "Epigastric pain radiating to the back",
+  "diagnosis": "Acute pancreatitis",
+  "chart": {
+    "ageSex": "50M",
+    "cc": "Severe epigastric pain",
+    "oneLiner": "50M presents with 8 hours of severe constant epigastric pain radiating to the back, with nausea and vomiting, on a background of heavy alcohol use.",
+    "vitals": {
+      "BP": "126/78",
+      "HR": "108",
+      "RR": "20",
+      "Temp": "37.9°C",
+      "SpO2": "96% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've got this terrible pain in the pit of my stomach that bores straight through to my back.",
+  "patientFile": "PERSONA: 50-year-old man, in significant pain, sitting forward/curled up. Cooperative but distracted by pain.\n\nHPI: 8h of severe, constant epigastric pain boring through to the back, WORSE lying flat, somewhat better leaning forward. Persistent nausea and vomiting. Drank heavily over the weekend (only volunteers heavy alcohol if asked about alcohol). NO hematemesis, NO black stools, NO chest pain radiating to arm/jaw.\nPMH: prior similar admission; hypertriglyceridemia (if asked). MEDS: none regularly. SOCIAL: drinks ~6–8 beers most days, escalating recently; smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: distressed, diaphoretic, tachycardic.\n- Vitals: BP 126/78, HR 108, RR 20, 37.9°C, SpO2 96% RA.\n- Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.\n- Cardiac: tachycardic, regular. Lungs: clear (reduced left base if examined).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the heavy alcohol use or hypertriglyceridemia unless asked about alcohol, diet, or medical history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Lipase": "Lipase >3x the upper limit of normal — markedly elevated.",
+      "CBC": "WBC 15.0, Hgb 16.0 (hemoconcentration), Plt 230.",
+      "BMP": "BUN 26, Cr 1.3 (prerenal), glucose 180, calcium low-normal.",
+      "LFTs": "AST 70, ALT 60, bilirubin normal (alcohol pattern; ALT not >150 so gallstone cause less likely).",
+      "Triglycerides": "Elevated.",
+      "CT_abdomen": "CT (if obtained, usually not needed early): pancreatic edema/peripancreatic stranding; no necrosis on initial scan."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS.",
+      "verify": "Source a study matching: Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing hyperkalemia peaked T waves",
+      "searchTerms": [
+        "hyperkalemia peaked T waves ECG",
+        "hyperkalaemia ECG sine wave"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=small%20pleural%20effusion%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+      "verify": "Pick a CC file showing a small basal/left pleural effusion or a normal upright film; must NOT show free air.",
+      "assetNeeded": true,
+      "imageDescription": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+      "searchTerms": [
+        "chest radiograph Possible small left pleural"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Lipase",
+    "CBC",
+    "BMP",
+    "LFTs",
+    "Triglycerides",
+    "CT_abdomen",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Lipase",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Acute pancreatitis (leading,8). Perforated peptic ulcer (CANT-MISS,4). Acute cholecystitis / choledocholithiasis (core,3). Inferior MI (CANT-MISS,3). Mesenteric ischemia (CANT-MISS,3). Ruptured AAA (bonus,2). Named leading dx w/ justification — epigastric-to-back pain, alcohol (core,2).",
+      "idealAnswer": "Leading diagnosis: Acute pancreatitis. Must-not-miss diagnoses to exclude: Perforated peptic ulcer; Inferior MI; Mesenteric ischemia. Also reasonable: Acute cholecystitis / choledocholithiasis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute pancreatitis",
+            "points": 8
+          },
+          {
+            "item": "Perforated peptic ulcer",
+            "points": 4
+          },
+          {
+            "item": "Inferior MI",
+            "points": 3
+          },
+          {
+            "item": "Mesenteric ischemia",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Acute cholecystitis / choledocholithiasis",
+            "points": 3
+          },
+          {
+            "item": "Named leading dx w/ justification — epigastric-to-back pain, alcohol",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Ruptured AAA",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Perforated peptic ulcer",
+        "Inferior MI",
+        "Mesenteric ischemia"
+      ],
+      "acceptableAlternatives": [
+        "Acute cholecystitis / choledocholithiasis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Lipase (CANT-MISS,5). CBC (2). BMP incl. calcium/glucose (3). LFTs (2). Triglycerides (1). Right upper quadrant ultrasound to assess gallstone etiology (1). EKG (1). PENALTY: routine early CT in clear-cut mild pancreatitis (low yield) (-1); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: Lipase.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Lipase",
+            "points": 5
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "routine early CT in clear-cut mild pancreatitis (low yield)",
+            "points": -1
+          }
+        ]
+      },
+      "requiredTests": [
+        "Lipase"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "routine early CT in clear-cut mild pancreatitis (low yield)"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes / rationale (epigastric pain can be cardiac) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "peaked T waves",
+        "recognizes a hyperkalemia pattern as urgent"
+      ],
+      "criticalFindings": [
+        "Hyperkalemia pattern: peaked T waves with QRS widening."
+      ],
+      "commonMistakes": [
+        "dismissing peaked T waves as a normal variant",
+        "missing the loss of P waves"
+      ],
+      "idealAnswer": "Hyperkalemia: tall peaked T waves, P-wave flattening, widening QRS — a time-critical pattern.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Hyperkalemia pattern: peaked T waves with QRS widening."
+        ],
+        "coreActions": [
+          "peaked T waves",
+          "recognizes a hyperkalemia pattern as urgent"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = small basal/left effusion or atelectasis; NO free air. CREDIT: identifies a small effusion/atelectasis or a normal film (5); specifically excludes free air (perforation) (5). PENALTY: missing the importance of excluding free air (-1).",
+      "keyFindings": [
+        "identifies a small effusion/atelectasis or a normal film"
+      ],
+      "criticalFindings": [
+        "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
+      ],
+      "commonMistakes": [
+        "missing the importance of excluding free air"
+      ],
+      "idealAnswer": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a small effusion/atelectasis or a normal film",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing the importance of excluding free air",
+            "points": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the labs, what is your diagnosis and how do you assess severity?",
+      "rubric": "Acute pancreatitis, likely alcohol-induced (5). Diagnosis = 2 of 3: characteristic pain, lipase >3x ULN, imaging (3). Assesses severity (BUN/creatinine, hemoconcentration, SIRS) (bonus,2).",
+      "idealAnswer": "Acute pancreatitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Assesses severity (BUN/creatinine, hemoconcentration, SIRS)",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Aggressive IV fluid resuscitation (CANT-MISS,8). Analgesia and antiemetics (5). NPO initially, then EARLY enteral feeding as tolerated (4). Identify/treat cause — alcohol cessation, manage triglycerides (3). Monitor for complications; ICU if severe (3). PENALTY: prophylactic antibiotics in mild/uncomplicated pancreatitis (-3); withholding fluids (-2).",
+      "idealAnswer": "Plan: Aggressive IV fluid resuscitation.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Aggressive IV fluid resuscitation",
+            "points": 8
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "prophylactic antibiotics in mild/uncomplicated pancreatitis",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Aggressive IV fluid resuscitation"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "prophylactic antibiotics in mild/uncomplicated pancreatitis"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "50-year-old man, in significant pain, sitting forward/curled up. Cooperative but distracted by pain.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_rebound_tenderness_finding_1",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "assess_guarding_finding_2",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No guarding."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_3",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No epigastric tenderness."
+    },
+    {
+      "id": "inspect_abdomen_finding_4",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_5",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: distressed, diaphoretic, tachycardic.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No tremor or diaphoresis."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Acute pancreatitis",
+    "diagnosticFramework": "50M presents with 8 hours of severe constant epigastric pain radiating to the back, with nausea and vomiting, on a background of heavy alcohol use. The diagnosis is Acute pancreatitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "General: distressed, diaphoretic, tachycardic."
+    ],
+    "keyDiagnosticFindings": [
+      "Lipase",
+      "CBC",
+      "BMP",
+      "LFTs",
+      "Triglycerides",
+      "CT_abdomen"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Acute pancreatitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Acute pancreatitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "prophylactic antibiotics in mild/uncomplicated pancreatitis"
+    ],
+    "managementPearls": [
+      "Aggressive IV fluid resuscitation"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "Lipase"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes (checked because epigastric pain can be cardiac).",
+      "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
+    ],
+    "criticalManagementItems": [
+      "Aggressive IV fluid resuscitation"
+    ],
+    "keyImageInterpretationFindings": [
+      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

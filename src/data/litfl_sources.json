@@ -1,0 +1,302 @@
+{
+  "_comment": "Source manifest for LITFL ECG Library images used by the OSCE case bank. Used by fetch_litfl_assets.py to download + self-host each ECG with attribution. ECGs only — LITFL has no by-diagnosis CXR library; source chest films from Radiopaedia or Wikimedia separately.",
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "usage_terms": "LITFL ECGs are free to reproduce for educational, not-for-profit teaching, provided (1) the image is credited to litfl.com, (2) use is not-for-profit, and (3) the image is not otherwise labelled as belonging to a third party. NonCommercial: do NOT use if this app is ever monetized/sold without seeking permission from LITFL.",
+  "attribution_template": "ECG: {topic} — © Life in the Fast Lane (litfl.com), CC BY-NC-SA 4.0",
+  "topics": {
+    "nsr": {
+      "title": "Normal Sinus Rhythm",
+      "page": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "image_url": null
+    },
+    "tachy": {
+      "title": "Sinus Tachycardia",
+      "page": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "image_url": null
+    },
+    "qwave": {
+      "title": "Q Waves (old infarct)",
+      "page": "https://litfl.com/q-wave-ecg-library/",
+      "image_url": null
+    },
+    "isch": {
+      "title": "Myocardial Ischaemia (NSTEMI)",
+      "page": "https://litfl.com/myocardial-ischaemia-ecg-library/",
+      "image_url": null
+    },
+    "pe": {
+      "title": "Pulmonary Embolism (S1Q3T3)",
+      "page": "https://litfl.com/ecg-changes-in-pulmonary-embolism/",
+      "image_url": "https://litfl.com/wp-content/uploads/2018/08/ECG-Massive-bilateral-pulmonary-embolus-2.jpeg"
+    },
+    "peri": {
+      "title": "Pericarditis",
+      "page": "https://litfl.com/pericarditis-ecg-library/",
+      "image_url": null
+    },
+    "copd": {
+      "title": "ECG in Chronic Lung Disease",
+      "page": "https://litfl.com/ecg-in-chronic-obstructive-pulmonary-disease/",
+      "image_url": null
+    },
+    "hypok": {
+      "title": "Hypokalaemia",
+      "page": "https://litfl.com/hypokalaemia-ecg-library/",
+      "image_url": null
+    },
+    "af": {
+      "title": "Atrial Fibrillation",
+      "page": "https://litfl.com/atrial-fibrillation-ecg-library/",
+      "image_url": null
+    },
+    "chb": {
+      "title": "Complete Heart Block",
+      "page": "https://litfl.com/av-block-3rd-degree-complete-heart-block/",
+      "image_url": "https://litfl.com/wp-content/uploads/2018/08/ECG-Complete-heart-block-CHB.jpg"
+    },
+    "lvh": {
+      "title": "Left Ventricular Hypertrophy",
+      "page": "https://litfl.com/left-ventricular-hypertrophy-lvh-ecg-library/",
+      "image_url": "https://litfl.com/wp-content/uploads/2018/08/ECG-Left-ventricular-hypertrophy-LVH-2.jpg"
+    },
+    "avb1": {
+      "title": "First Degree AV Block",
+      "page": "https://litfl.com/first-degree-heart-block-ecg-library/",
+      "image_url": null
+    },
+    "afib": {
+      "title": "Atrial fibrillation with rapid ventricular response",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "mobitz1": {
+      "title": "Mobitz I (Wenckebach) second-degree AV block",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "frequent_pacs": {
+      "title": "Frequent premature atrial complexes",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "biatrial_enlargement": {
+      "title": "Biatrial enlargement",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "long_qt": {
+      "title": "Prolonged QTc (~520 ms)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "rbbb": {
+      "title": "Right bundle branch block",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "lbbb": {
+      "title": "Left bundle branch block",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "early_repol": {
+      "title": "Benign early repolarization pattern",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "nonspecific_twi": {
+      "title": "Nonspecific lateral T-wave inversions",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "incomplete_rbbb": {
+      "title": "Incomplete right bundle branch block",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "short_qt": {
+      "title": "Short QT interval (~330 ms)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "low_voltage": {
+      "title": "Low QRS voltage",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "sinus_brady_jpoint": {
+      "title": "Sinus bradycardia",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "poor_r_progression": {
+      "title": "Poor R-wave progression across the precordium",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "lafb": {
+      "title": "Left anterior fascicular block",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "prior_inferior_mi": {
+      "title": "Evidence of prior inferior myocardial infarction (Q waves, no acute changes)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "junctional": {
+      "title": "Junctional escape rhythm",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "wpw": {
+      "title": "Wolff-Parkinson-White pre-excitation pattern",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "pvc_bigeminy": {
+      "title": "Ventricular bigeminy (frequent PVCs)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "mobitz2": {
+      "title": "Mobitz II second-degree AV block",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "hyperk": {
+      "title": "Hyperkalemia pattern: peaked T waves with QRS widening",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "electrical_alternans": {
+      "title": "Electrical alternans with low voltage (suggests large pericardial effusion)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "mat": {
+      "title": "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "svt": {
+      "title": "Supraventricular tachycardia (regular, narrow, rate ~180)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "aflutter": {
+      "title": "Atrial flutter with 2:1 AV conduction (ventricular rate ~150)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "rvh": {
+      "title": "Right ventricular hypertrophy pattern",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "bifascicular": {
+      "title": "Bifascicular block (RBBB + left anterior fascicular block)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "wellens": {
+      "title": "Wellens syndrome (critical LAD stenosis warning pattern)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "pericarditis": {
+      "title": "Acute pericarditis pattern (diffuse ST elevation + PR depression)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    },
+    "right_heart_strain": {
+      "title": "Right heart strain pattern (S1Q3T3, anterior T-wave inversions)",
+      "page": null,
+      "image_url": null,
+      "needs_sourcing": true
+    }
+  },
+  "case_topic": {
+    "chestpain-01": "isch",
+    "chestpain-02": "pe",
+    "chestpain-03": "lvh",
+    "chestpain-04": "peri",
+    "chestpain-05": "early_repol",
+    "chestpain-06": "nonspecific_twi",
+    "dyspnea-01": "qwave",
+    "dyspnea-02": "copd",
+    "dyspnea-03": "pericarditis",
+    "dyspnea-04": "pe",
+    "dyspnea-05": "right_heart_strain",
+    "dyspnea-06": "low_voltage",
+    "abdo-01": "afib",
+    "abdo-02": "mobitz1",
+    "abdo-03": "hyperk",
+    "abdo-04": "hypok",
+    "abdo-05": "frequent_pacs",
+    "abdo-06": "af",
+    "ams-01": "biatrial_enlargement",
+    "ams-02": "electrical_alternans",
+    "ams-03": "hypok",
+    "ams-04": "mat",
+    "ams-05": "long_qt",
+    "ams-06": "svt",
+    "syncope-01": "pvc_bigeminy",
+    "syncope-02": "mobitz2",
+    "syncope-03": "chb",
+    "syncope-04": "lvh",
+    "syncope-05": "pe",
+    "syncope-06": "hyperk",
+    "anemia-01": "aflutter",
+    "anemia-02": "rvh",
+    "anemia-03": "rbbb",
+    "anemia-04": "lbbb",
+    "anemia-05": "bifascicular",
+    "diarrhea-01": "hypok",
+    "diarrhea-02": "wellens",
+    "diarrhea-03": "incomplete_rbbb",
+    "diarrhea-04": "short_qt",
+    "diarrhea-05": "af",
+    "fever-01": "afib",
+    "fever-02": "sinus_brady_jpoint",
+    "fever-03": "avb1",
+    "fever-04": "lvh",
+    "fever-05": "avb1",
+    "liver-01": "poor_r_progression",
+    "liver-02": "lafb",
+    "liver-03": "prior_inferior_mi",
+    "liver-04": "junctional",
+    "liver-05": "wpw"
+  },
+  "_upgrade_note": "EKG topics for normal/near-normal cases were reassigned to teaching pathologies (schema 2.1). Entries with needs_sourcing=true require a real CC-licensed tracing; no URLs were fabricated. CXR assets are specified per-case (images.cxr.searchTerms) — LITFL has no CXR library."
+}

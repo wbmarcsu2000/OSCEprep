@@ -1,0 +1,589 @@
+{
+  "id": "fever-01",
+  "category": "Fever",
+  "difficulty": "easy",
+  "title": "Fever with flank pain and dysuria",
+  "diagnosis": "Pyelonephritis",
+  "chart": {
+    "ageSex": "35F",
+    "cc": "Fever and flank pain",
+    "oneLiner": "35F presents with 2 days of fever, chills, right flank pain, and urinary frequency and burning, with nausea and vomiting.",
+    "vitals": {
+      "BP": "110/68",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "38.9°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had a high fever and chills, pain in my back on the right, and it burns when I pee.",
+  "patientFile": "PERSONA: 35-year-old woman, febrile, uncomfortable. Good historian.\n\nHPI: 2 days of fever, rigors, right flank/back pain, urinary frequency, urgency, and dysuria; nausea with a couple episodes of vomiting. Started as lower urinary symptoms that ascended. NO vaginal discharge, NO recent instrumentation, NO known kidney stones (only if asked). Last menstrual period normal (if asked).\nPMH: prior uncomplicated UTIs. MEDS: none. SOCIAL: sexually active.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: febrile, mildly ill-appearing.\n- Vitals: BP 110/68, HR 104, RR 18, 38.9°C, SpO2 98% RA.\n- Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.\n- No peritonism. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- CVA tenderness is revealed only if the back/flanks are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "UA": "Cloudy; large leukocyte esterase, positive nitrites, many WBCs and bacteria; WBC casts.",
+      "UrineCulture": "Sent; pending (gram-negative rods likely).",
+      "CBC": "WBC 16.0 with left shift.",
+      "BMP": "Cr 1.0 — normal renal function.",
+      "Lactate": "1.7 — mildly elevated.",
+      "BloodCultures": "Drawn given systemic illness; pending.",
+      "Pregnancy": "Negative."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Irregularly irregular rhythm, absent P waves, fibrillatory baseline; ventricular rate ~110.",
+      "verify": "Source a study matching: Irregularly irregular rhythm, absent P waves, fibrillatory baseline; ventricular rate ~110. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing atrial fibrillation with RVR",
+      "searchTerms": [
+        "atrial fibrillation 12 lead ECG",
+        "AF rapid ventricular response ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "No consolidation (obtained to exclude pneumonia as the fever source).",
+      "verify": "Pick a CC normal PA chest film.",
+      "assetNeeded": true,
+      "imageDescription": "No consolidation (obtained to exclude pneumonia as the fever source).",
+      "searchTerms": [
+        "chest radiograph consolidation (obtained exclude pneumonia"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "UA",
+    "UrineCulture",
+    "CBC",
+    "BMP",
+    "Lactate",
+    "BloodCultures",
+    "Pregnancy",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "UA",
+    "CBC"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Acute pyelonephritis (leading,8). Lower UTI / cystitis (core,3). Obstructing stone with infection (CANT-MISS,4). Pelvic inflammatory disease (core,3). Appendicitis (CANT-MISS to consider,2). Nephrolithiasis (core,2). Names pyelonephritis with supporting features — fever + CVA tenderness + pyuria (core,3).",
+      "idealAnswer": "Leading diagnosis: Acute pyelonephritis. Must-not-miss diagnoses to exclude: Obstructing stone with infection; Appendicitis. Also reasonable: Lower UTI / cystitis; Pelvic inflammatory disease; Nephrolithiasis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute pyelonephritis",
+            "points": 8
+          },
+          {
+            "item": "Obstructing stone with infection",
+            "points": 4
+          },
+          {
+            "item": "Appendicitis",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Lower UTI / cystitis",
+            "points": 3
+          },
+          {
+            "item": "Pelvic inflammatory disease",
+            "points": 3
+          },
+          {
+            "item": "Nephrolithiasis",
+            "points": 2
+          },
+          {
+            "item": "Names pyelonephritis with supporting features — fever + CVA tenderness + pyuria",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Obstructing stone with infection",
+        "Appendicitis"
+      ],
+      "acceptableAlternatives": [
+        "Lower UTI / cystitis",
+        "Pelvic inflammatory disease",
+        "Nephrolithiasis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Urinalysis (CANT-MISS,4) and urine culture (3). CBC (2). BMP (1). Lactate (1). Blood cultures if systemically ill (2). Pregnancy test in a woman of childbearing age (1). Imaging (CT/US) if obstruction/stone suspected or not improving (1). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: Urinalysis.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Urinalysis",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Urinalysis"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "irregularly irregular rhythm",
+        "absence of organized P waves"
+      ],
+      "criticalFindings": [
+        "Atrial fibrillation with rapid ventricular response."
+      ],
+      "commonMistakes": [
+        "calling it sinus when the rhythm is irregularly irregular",
+        "missing the absent P waves"
+      ],
+      "idealAnswer": "Atrial fibrillation with rapid ventricular response (rate ~110); irregularly irregular, no discernible P waves.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Atrial fibrillation with rapid ventricular response."
+        ],
+        "coreActions": [
+          "irregularly irregular rhythm",
+          "absence of organized P waves"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no consolidation. CREDIT: identifies a normal film (6); notes it excludes pneumonia as the fever source (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal film",
+        "notes it excludes pneumonia as the fever source"
+      ],
+      "criticalFindings": [
+        "No consolidation (obtained to exclude pneumonia as the fever source)."
+      ],
+      "commonMistakes": [
+        "inventing pathology"
+      ],
+      "idealAnswer": "No consolidation (obtained to exclude pneumonia as the fever source).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: No consolidation (obtained to exclude pneumonia as the fever source).",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a normal film",
+            "points": 6
+          },
+          {
+            "item": "notes it excludes pneumonia as the fever source",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Pyuria with WBC casts, nitrites, leukocytosis, and CVA tenderness. What is your diagnosis?",
+      "rubric": "Acute pyelonephritis (6). Cites upper-tract features — CVA tenderness, systemic illness, WBC casts (4).",
+      "idealAnswer": "Pyelonephritis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Obtain urine (and blood) cultures, then empiric antibiotics covering gram-negatives — e.g., ceftriaxone or a fluoroquinolone per local resistance (CANT-MISS,8). IV fluids and antipyretics/analgesia (5). Disposition — admit if septic, pregnant, vomiting/unable to tolerate oral, or complicated; otherwise outpatient (5). Image for obstruction/stone if not improving in 48–72h (CANT-MISS to consider,4). Tailor antibiotics to culture (3). PENALTY: missing an obstructed/infected system needing urgent drainage (-3).",
+      "idealAnswer": "Plan: ceftriaxone or a fluoroquinolone per local resistance; Image for obstruction/stone if not improving in 48–72h.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "ceftriaxone or a fluoroquinolone per local resistance",
+            "points": 8
+          },
+          {
+            "item": "Image for obstruction/stone if not improving in 48–72h",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing an obstructed/infected system needing urgent drainage",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "ceftriaxone or a fluoroquinolone per local resistance",
+        "Image for obstruction/stone if not improving in 48–72h"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "missing an obstructed/infected system needing urgent drainage"
+      ],
+      "consults": [],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "sexual_history",
+      "pregnancy_possibility"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "35-year-old woman, febrile, uncomfortable. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "sexual_history",
+      "category": "sexual_history",
+      "triggerConcepts": [
+        "sexual history",
+        "sexually active",
+        "new partners",
+        "protection",
+        "tattoo"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pregnancy_possibility",
+      "category": "ob_gyn",
+      "triggerConcepts": [
+        "pregnancy",
+        "could you be pregnant",
+        "last menstrual period",
+        "lmp"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_cva_tenderness_finding_1",
+      "finding": "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.",
+      "revealedBy": [
+        "assess_cva_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No CVA tenderness."
+    },
+    {
+      "id": "assess_suprapubic_tenderness_finding_2",
+      "finding": "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.",
+      "revealedBy": [
+        "assess_suprapubic_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No suprapubic tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Pyelonephritis",
+    "diagnosticFramework": "35F presents with 2 days of fever, chills, right flank pain, and urinary frequency and burning, with nausea and vomiting. The diagnosis is Pyelonephritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.",
+      "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness."
+    ],
+    "keyDiagnosticFindings": [
+      "UA",
+      "UrineCulture",
+      "CBC",
+      "BMP",
+      "Lactate",
+      "BloodCultures",
+      "Pregnancy"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Pyelonephritis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Pyelonephritis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "missing an obstructed/infected system needing urgent drainage"
+    ],
+    "managementPearls": [
+      "ceftriaxone or a fluoroquinolone per local resistance",
+      "Image for obstruction/stone if not improving in 48–72h"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_cva_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "Urinalysis"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No consolidation (obtained to exclude pneumonia as the fever source)."
+    ],
+    "criticalManagementItems": [
+      "ceftriaxone or a fluoroquinolone per local resistance",
+      "Image for obstruction/stone if not improving in 48–72h"
+    ],
+    "keyImageInterpretationFindings": [
+      "Atrial fibrillation with rapid ventricular response.",
+      "No consolidation (obtained to exclude pneumonia as the fever source)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Atrial fibrillation with rapid ventricular response.",
+      "No consolidation (obtained to exclude pneumonia as the fever source)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

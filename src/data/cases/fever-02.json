@@ -1,0 +1,538 @@
+{
+  "id": "fever-02",
+  "category": "Fever",
+  "difficulty": "easy",
+  "title": "Fever with a red, painful leg",
+  "diagnosis": "Cellulitis",
+  "chart": {
+    "ageSex": "60M",
+    "cc": "Red, painful, swollen leg",
+    "oneLiner": "60M presents with 2 days of an expanding red, warm, painful area on the lower left leg, with fever.",
+    "vitals": {
+      "BP": "132/80",
+      "HR": "96",
+      "RR": "16",
+      "Temp": "38.3°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My lower leg has gone red, hot, and painful, and it's been spreading.",
+  "patientFile": "PERSONA: 60-year-old man, uncomfortable, limping. Good historian.\n\nHPI: 2 days of an expanding area of redness, warmth, swelling, and pain over the left shin, with fever. A small cut/scratch from gardening a few days ago served as a portal of entry (only if asked). Has athlete's foot between the toes (only if asked/examined). NO severe pain out of proportion, NO skin necrosis/bullae, NO crepitus, NO rapidly advancing margins by the hour (these would suggest necrotizing infection).\nPMH: type 2 diabetes, venous insufficiency. MEDS: metformin. SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable except for the leg.\n- Vitals: BP 132/80, HR 96, RR 16, 38.3°C, SpO2 98% RA.\n- Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO cord/severe calf tenderness (helps distinguish DVT).\n- Tinea/maceration between the toes if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gardening cut or athlete's foot unless asked about skin breaks/portal of entry or foot problems.\n- The absence of necrotizing features and the portal of entry are revealed only if examined/asked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 13.0 with neutrophilia.",
+      "BMP": "Glucose 180; renal function normal.",
+      "Lactate": "1.5 — normal (a high lactate/toxicity would raise concern for necrotizing infection).",
+      "BloodCultures": "Drawn given fever; low yield in uncomplicated cellulitis.",
+      "Imaging": "Ultrasound if abscess or DVT suspected — here no drainable collection, no DVT."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus bradycardia ~46 with subtle J-point elevation; otherwise no acute changes.",
+      "verify": "Source a study matching: Sinus bradycardia ~46 with subtle J-point elevation; otherwise no acute changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus bradycardia",
+      "searchTerms": [
+        "sinus bradycardia ECG",
+        "sinus bradycardia 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Blunting of the costophrenic angle with a meniscus and homogeneous basal opacity.",
+      "verify": "Source a study matching: Blunting of the costophrenic angle with a meniscus and homogeneous basal opacity. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing pleural effusion meniscus",
+      "searchTerms": [
+        "pleural effusion chest x-ray",
+        "costophrenic angle blunting radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Lactate",
+    "BloodCultures",
+    "Imaging",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
+      "rubric": "Cellulitis (leading,7). NECROTIZING fasciitis (CANT-MISS — exclude,5). Abscess requiring drainage (CANT-MISS,3). Deep vein thrombosis (CANT-MISS to distinguish,4). Stasis dermatitis / contact dermatitis (core,2). Gout/septic arthritis (core,2). Names cellulitis while explicitly screening for necrotizing features and abscess/DVT (core,2).",
+      "idealAnswer": "Leading diagnosis: Cellulitis. Must-not-miss diagnoses to exclude: NECROTIZING fasciitis; Abscess requiring drainage; Deep vein thrombosis. Also reasonable: Stasis dermatitis / contact dermatitis; Gout/septic arthritis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Cellulitis",
+            "points": 7
+          },
+          {
+            "item": "NECROTIZING fasciitis",
+            "points": 5
+          },
+          {
+            "item": "Abscess requiring drainage",
+            "points": 3
+          },
+          {
+            "item": "Deep vein thrombosis",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Stasis dermatitis / contact dermatitis",
+            "points": 2
+          },
+          {
+            "item": "Gout/septic arthritis",
+            "points": 2
+          },
+          {
+            "item": "Names cellulitis while explicitly screening for necrotizing features and abscess/DVT",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "NECROTIZING fasciitis",
+        "Abscess requiring drainage",
+        "Deep vein thrombosis"
+      ],
+      "acceptableAlternatives": [
+        "Stasis dermatitis / contact dermatitis",
+        "Gout/septic arthritis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order? (Cellulitis is largely a clinical diagnosis.)",
+      "rubric": "Recognizes cellulitis is mainly CLINICAL; mark the borders to track progression (4). CBC (2). Assess for necrotizing features and abscess at the bedside (4). Ultrasound if abscess/DVT suspected (3). Blood cultures only if systemically ill (2). PENALTY: routine broad imaging/cultures in uncomplicated cellulitis (-2).",
+      "idealAnswer": "Order: ",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "routine broad imaging/cultures in uncomplicated cellulitis",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "routine broad imaging/cultures in uncomplicated cellulitis"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus rhythm/mild tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-reading (-2).",
+      "keyFindings": [
+        "recognizes sinus bradycardia",
+        "systematic read confirming no ischemia"
+      ],
+      "criticalFindings": [
+        "Sinus bradycardia."
+      ],
+      "commonMistakes": [
+        "pathologizing benign sinus bradycardia / missing the slow rate"
+      ],
+      "idealAnswer": "Sinus bradycardia (~46) with benign J-point elevation; no acute ischemic change.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus bradycardia."
+        ],
+        "coreActions": [
+          "recognizes sinus bradycardia",
+          "systematic read confirming no ischemia"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "blunted costophrenic angle with meniscus",
+        "identifies a pleural effusion"
+      ],
+      "criticalFindings": [
+        "Pleural effusion (meniscus, costophrenic-angle blunting)."
+      ],
+      "commonMistakes": [
+        "mistaking effusion for basal consolidation",
+        "missing a small effusion"
+      ],
+      "idealAnswer": "Pleural effusion: costophrenic-angle blunting with a meniscus sign.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Pleural effusion (meniscus, costophrenic-angle blunting)."
+        ],
+        "coreActions": [
+          "blunted costophrenic angle with meniscus",
+          "identifies a pleural effusion"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Spreading erythema/warmth/tenderness with a portal of entry, no necrotizing features. What is your diagnosis and what did you rule out?",
+      "rubric": "Cellulitis (6). Explicitly excludes necrotizing fasciitis (no pain out of proportion, crepitus, bullae, or systemic toxicity) and abscess/DVT (4).",
+      "idealAnswer": "Cellulitis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors (CANT-MISS,8). Elevate the limb; mark and monitor the borders (5). Treat the portal of entry (e.g., tinea) and optimize diabetes (4). Disposition — oral outpatient vs IV/admission based on systemic illness/comorbidity (4). URGENT surgical consult if necrotizing infection is suspected; I&D for abscess (CANT-MISS,4). PENALTY: missing necrotizing fasciitis / failing to drain an abscess (-4).",
+      "idealAnswer": "Plan: Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors; URGENT surgical consult if necrotizing infection is suspected; I&D for abscess.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
+            "points": 8
+          },
+          {
+            "item": "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "missing necrotizing fasciitis / failing to drain an abscess",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
+        "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+      ],
+      "optionalActions": [],
+      "unsafeActions": [
+        "missing necrotizing fasciitis / failing to drain an abscess"
+      ],
+      "consults": [
+        "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+      ],
+      "disposition": ""
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "60-year-old man, uncomfortable, limping. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_calf_tenderness_finding_1",
+      "finding": "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bul",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Cellulitis",
+    "diagnosticFramework": "60M presents with 2 days of an expanding red, warm, painful area on the lower left leg, with fever. The diagnosis is Cellulitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bul"
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Lactate",
+      "BloodCultures",
+      "Imaging"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Cellulitis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Cellulitis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "missing necrotizing fasciitis / failing to drain an abscess"
+    ],
+    "managementPearls": [
+      "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
+      "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [],
+    "criticalWorkupItems": [],
+    "criticalInterpretationItems": [
+      "Sinus rhythm/mild tachycardia; no acute ischemic changes.",
+      "No acute process (low yield)."
+    ],
+    "criticalManagementItems": [
+      "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
+      "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus bradycardia.",
+      "Pleural effusion (meniscus, costophrenic-angle blunting)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus bradycardia.",
+      "Pleural effusion (meniscus, costophrenic-angle blunting)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}
