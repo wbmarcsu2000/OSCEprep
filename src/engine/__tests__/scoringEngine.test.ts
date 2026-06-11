@@ -129,9 +129,11 @@ describe("scoring math (§11.3)", () => {
 
   it("LLM matches only ADD case-defined items; unknown items are ignored", () => {
     const step = cp01.steps.find((s) => s.id === "management")!;
+    // Neutral answer so no item matches deterministically — only the LLM's
+    // matches should be credited, and only those that name a defined item.
     const res = gradeStep(
       step,
-      "blood thinner now",
+      "placeholder answer",
       { llmItems: ["Aspirin", "Totally Invented Item Worth 50"] },
       cp01.diagnosis,
     );

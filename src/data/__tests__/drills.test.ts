@@ -62,4 +62,26 @@ describe("drill coverage matcher (looseCovered)", () => {
     expect(looseCovered("ordered a troponin", "serial troponin")).toBe(true);
     expect(looseCovered("get a chest xray", "CXR")).toBe(true);
   });
+
+  // Regression for the chest-pain differential drill: framework items that list
+  // alternatives with "/" must be credited when the student names ANY one side,
+  // and a more-specific instance must credit a generic-noun concept.
+  it("credits any one slash-separated alternative", () => {
+    const ddx = "stable angina, pericarditis, pneumonia, GERD, anxiety attack, rib fracture";
+    expect(looseCovered(ddx, "Stable / vasospastic angina")).toBe(true);
+    expect(looseCovered(ddx, "Pericarditis / myocarditis")).toBe(true);
+    expect(looseCovered(ddx, "Pneumonia / pleurisy")).toBe(true);
+    expect(looseCovered(ddx, "GERD / esophageal spasm")).toBe(true);
+    expect(looseCovered(ddx, "Anxiety / panic")).toBe(true);
+    expect(looseCovered(ddx, "Rib injury")).toBe(true);
+    // genuinely unnamed concepts are still not credited
+    expect(looseCovered(ddx, "Aortic dissection")).toBe(false);
+    expect(looseCovered(ddx, "Heart failure")).toBe(false);
+  });
+
+  it("credits anticoagulant and steroid agents by name", () => {
+    expect(looseCovered("start heparin", "Anticoagulation (heparin/LMWH)")).toBe(true);
+    expect(looseCovered("give apixaban", "Anticoagulation")).toBe(true);
+    expect(looseCovered("prednisone 40 mg", "Systemic corticosteroids")).toBe(true);
+  });
 });

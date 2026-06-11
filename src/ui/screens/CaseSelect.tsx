@@ -154,20 +154,26 @@ export function CaseSelect() {
 
           {/* Model picker for the active provider. */}
           {activeProvider && (
-            <div className="flex items-center gap-2 pt-1">
-              <span className="panel-label">Model</span>
-              <select
-                className="input text-[13px] py-1.5"
-                value={resolveModel(activeProvider)}
-                onChange={(e) => setModel(e.target.value)}
-                aria-label="AI model"
-              >
-                {modelsForProvider(activeProvider).map((m) => (
-                  <option key={m.id} value={m.id}>
-                    {m.label} — {m.note}
-                  </option>
-                ))}
-              </select>
+            <div className="space-y-1 pt-1">
+              <div className="flex items-center gap-2">
+                <span className="panel-label">Model</span>
+                <select
+                  className="input text-[13px] py-1.5"
+                  value={resolveModel(activeProvider)}
+                  onChange={(e) => setModel(e.target.value)}
+                  aria-label="AI model"
+                >
+                  {modelsForProvider(activeProvider).map((m) => (
+                    <option key={m.id} value={m.id}>
+                      {m.label} — {m.note}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <p className="hint">
+                Sets the speed of the patient conversation. Grading &amp; coaching always use a more
+                capable model for accuracy, regardless of this choice.
+              </p>
             </div>
           )}
 

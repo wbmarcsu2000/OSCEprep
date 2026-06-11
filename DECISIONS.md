@@ -273,3 +273,21 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     "📖 MGH p. NN" page. Pages match the per-case management citations, so a drill
     and its matching station now teach from the same source. Tests assert every
     category has manual refs and every pearl cites a page.
+41. **Grading-system robustness pass.** (a) Drill matcher (`looseCovered`) now
+    splits "/"-alternative items so naming ANY one side credits the concept
+    ("stable angina" → "Stable / vasospastic angina", "GERD" → "GERD /
+    esophageal spasm"); treats generic nouns (injury/disease/syndrome) and
+    clinical modifiers (systemic/empiric/supplemental/broad-spectrum/…) as
+    optional like leading qualifiers ("rib fracture" → "Rib injury",
+    "prednisone" → "Systemic corticosteroids"); and added anticoagulant- and
+    steroid-agent synonym groups so a named drug credits the action. This fixed
+    the over-strict differential drill (5/19 → ~12/19 on a strong answer) without
+    re-introducing the metabolic-acidosis→alkalosis over-credit. (b) AI grading
+    now routes `classifyIntent` + `coachAnswer` through a stronger model
+    (`gradingModelFor` → at least the "balanced" tier, or the user's choice if
+    higher) at medium effort, while patient replies stay on the fast model;
+    `verify` still uses the fast model so enabling AI never false-fails. The
+    classify prompt was rewritten to grade generously (credit alternatives,
+    synonyms, abbreviations, more-specific instances). (c) `gradeCoverage` already
+    unions LLM + deterministic, so the now-robust deterministic floor backstops
+    the LLM. The model picker explains that grading always uses a capable model.

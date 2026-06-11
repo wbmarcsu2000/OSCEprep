@@ -134,7 +134,13 @@ const SYNONYM_GROUPS: string[][] = [
   ["urinalysis", "ua", "urine"],
   ["dyspnea", "breathless", "breathlessness", "winded"],
   ["severe", "severity", "bad"],
-  ["anticoagulant", "anticoagulation"],
+  // Anticoagulant family — naming the agent credits the "anticoagulation" action.
+  ["anticoagulant", "anticoagulation", "anticoagulate", "heparin", "lmwh", "enoxaparin",
+   "warfarin", "doac", "apixaban", "rivaroxaban", "fondaparinux"],
+  // Systemic steroid family (dexamethasone left out — it is a distinct graded
+  // item in bacterial meningitis).
+  ["steroid", "steroids", "prednisone", "prednisolone", "methylprednisolone",
+   "glucocorticoid", "glucocorticoids", "corticosteroid", "corticosteroids"],
   ["syncope", "faint", "fainted", "fainting", "collapse", "collapsed"],
   ["vomiting", "vomit", "emesis"],
   ["nausea", "nauseous", "nauseated"],
@@ -212,19 +218,30 @@ export function fuzzyHas(set: Set<string>, token: string): boolean {
 export function looseCovered(answer: string, item: string): boolean {
   if (answer.trim().length === 0) return false;
   const ans = expandStems(stemmedTokenSet(answer));
-  const itemToks = [...stemmedTokenSet(item)].filter((t) => t.length >= 3);
+  // Framework items often list alternatives with "/" — "GERD / esophageal
+  // spasm", "Pericarditis / myocarditis", "Pneumonia / pleurisy", "Anxiety /
+  // panic", "Stable / vasospastic angina". Naming ANY ONE alternative counts.
+  const alts = item.includes("/")
+    ? item.split("/").map((s) => s.trim()).filter(Boolean)
+    : [item];
+  return alts.some((alt) => coversPhrase(ans, alt));
+}
+
+/** True when every distinctive (non-qualifier, non-generic) content token of a
+ *  single phrase is present in the (synonym/stem-expanded) answer. */
+function coversPhrase(ans: Set<string>, phrase: string): boolean {
+  const itemToks = [...stemmedTokenSet(phrase)].filter((t) => t.length >= 3);
   if (itemToks.length === 0) {
     // very short item (e.g. "PE") — require the exact token, synonym-expanded
-    for (const t of stemmedTokenSet(item)) if (fuzzyHas(ans, t)) return true;
+    for (const t of stemmedTokenSet(phrase)) if (fuzzyHas(ans, t)) return true;
     return false;
   }
-  // Require every distinctive (non-qualifier) content token, synonym/stem
-  // expanded. Leading qualifiers (high/appropriate/serial/acute…) are optional,
-  // so "respiratory compensation" credits "appropriate respiratory compensation"
-  // and "troponin" credits "serial troponin" — but "metabolic acidosis" does
-  // NOT credit "metabolic alkalosis" ("alkalosis" is absent), where the old
-  // single-shared-token rule over-credited.
-  const content = itemToks.filter((t) => !HEAD_QUALIFIERS.has(t));
+  // Drop qualifiers (high/acute/serial…) and generic nouns (disease/injury/…),
+  // then require the remaining distinctive tokens, synonym/stem expanded. So
+  // "respiratory compensation" credits "appropriate respiratory compensation"
+  // and "rib fracture" credits "Rib injury", but "metabolic acidosis" does NOT
+  // credit "metabolic alkalosis" (the distinctive "alkalosis" is absent).
+  const content = itemToks.filter((t) => !HEAD_QUALIFIERS.has(t) && !GENERIC_NOUNS.has(t));
   const pool = content.length > 0 ? content : itemToks;
   return pool.every((t) => fuzzyHas(ans, t));
 }
@@ -235,7 +252,19 @@ const HEAD_QUALIFIERS = new Set(
     "high", "low", "elevated", "decreased", "mild", "moderate", "severe",
     "acute", "chronic", "appropriate", "adequate", "concurrent", "primary",
     "secondary", "partial", "complete", "serial", "early", "late", "initial",
+    // clinical modifiers that don't distinguish one action from another
+    "systemic", "empiric", "empirical", "supplemental", "oral", "intravenous",
+    "broad", "spectrum", "prophylactic", "urgent", "emergent", "immediate",
+    "stat", "aggressive", "controlled", "inhaled", "additional",
   ].map(stem),
+);
+
+/** Generic category nouns that don't distinguish one diagnosis from another —
+ *  "Rib injury" should accept "rib fracture", "Biliary disease" → "biliary
+ *  colic". Treated as optional like qualifiers (kept only if nothing else
+ *  remains). */
+const GENERIC_NOUNS = new Set(
+  ["injury", "disease", "disorder", "syndrome", "attack", "problem", "issue", "process"].map(stem),
 );
 
 /**
