@@ -281,7 +281,7 @@
             "points": 4
           },
           {
-            "item": "GI consult for EGD within",
+            "item": "GI consult for EGD",
             "points": 4
           },
           {
@@ -312,7 +312,7 @@
       ],
       "optionalActions": [
         "IV PPI (pantoprazole)",
-        "GI consult for EGD within",
+        "GI consult for EGD",
         "Correct coagulopathy",
         "Octreotide + ceftriaxone if cirrhosis",
         "Hold/reverse anticoagulants"

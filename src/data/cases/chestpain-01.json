@@ -288,7 +288,7 @@
             "points": 3
           },
           {
-            "item": "Beta blocker within",
+            "item": "Beta blocker within 24h",
             "points": 3
           },
           {
@@ -324,7 +324,7 @@
       ],
       "optionalActions": [
         "High-intensity statin",
-        "Beta blocker within",
+        "Beta blocker within 24h",
         "ACEi/ARB",
         "Telemetry and serial troponin",
         "Nitrates for ischemic pain",
