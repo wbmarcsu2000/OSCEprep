@@ -59,7 +59,7 @@ export function Analytics() {
   }, [attempts]);
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-7 space-y-4">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="card p-4 flex items-center justify-between">
         <div>
           <div className="panel-label">Longitudinal Performance</div>
@@ -97,7 +97,7 @@ export function Analytics() {
         )}
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="card p-3">
           <div className="panel-label mb-2">Average performance by domain</div>
           <div className="space-y-1.5">
@@ -140,7 +140,7 @@ export function Analytics() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <FreqTable
           title="Most-missed diagnoses (low-scoring cases)"
           rows={topByFrequency(attempts.filter((a) => a.overall < 70).map((a) => a.diagnosis))}

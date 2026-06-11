@@ -38,9 +38,9 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
   ];
 
   return (
-    <div className="h-full grid grid-cols-[minmax(320px,380px)_1.6fr] gap-4 p-4 min-h-0 max-w-[1400px] mx-auto w-full">
+    <div className="lg:h-full grid grid-cols-1 lg:grid-cols-[minmax(320px,380px)_1.6fr] gap-4 p-3 sm:p-4 lg:min-h-0 max-w-[1400px] mx-auto w-full">
       {/* Left: preserved encounter record */}
-      <div className="flex flex-col gap-3 min-h-0">
+      <div className="flex flex-col gap-3 min-h-0 h-[50vh] lg:h-auto">
         <div
           className="rounded-lg border px-3.5 py-2 text-[12.5px] font-bold flex items-center gap-2"
           style={{

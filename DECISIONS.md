@@ -227,3 +227,15 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
 36. **`revealKeys` / diagnostics.** The post-encounter workup step (`reveal: true`) unlocks the
     `dx.labs` results named in `revealKeys` after the student commits their workup answer — labs are
     shown verbatim from case JSON in a "Diagnostic Results" reader, with EKG/CXR shown in read steps.
+37. **Full-web-app polish pass (responsive + resilience).** Every screen was made
+    responsive: the encounter and post-encounter stack to a single column below
+    `lg` (fixing a critical bug where the right exam rail pushed the conversation
+    off-screen on phones), all `grid-cols-N` became `grid-cols-1 sm:grid-cols-N`,
+    the station table scrolls horizontally in a `min-w` container, and the phase
+    header collapses chips/labels at small widths. A persistent `HeaderNav`
+    (Stations / Drills / Skills / Performance, with `aria-current`) appears
+    outside stations; the logo is a Home button. An `ErrorBoundary` wraps the app
+    so a render crash shows a recoverable card (Reload / Reset current session)
+    instead of a blank page. PWA manifest (`public/manifest.webmanifest`,
+    installable, standalone) plus SEO/Open-Graph/Twitter meta and theme-color
+    were added to `index.html`. Verified on desktop (1440px) and mobile (390px).

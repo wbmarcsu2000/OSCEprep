@@ -31,7 +31,7 @@ export function PhaseHeader({
   const idx = PHASES.findIndex((p) => p.key === engine.currentState);
   return (
     <div
-      className="border-b px-5 py-2.5 flex items-center justify-between gap-6 bg-white shrink-0"
+      className="border-b px-3 sm:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-3 sm:gap-6 bg-white shrink-0 flex-wrap"
       style={{ borderColor: "var(--color-exam-border)" }}
     >
       <ol className="flex items-center" aria-label="Station phases">
@@ -43,7 +43,7 @@ export function PhaseHeader({
               {i > 0 && (
                 <span
                   aria-hidden
-                  className="mx-2.5 h-px w-7"
+                  className="mx-1.5 sm:mx-2.5 h-px w-3 sm:w-7"
                   style={{ background: past || active ? "var(--color-exam-accent)" : "var(--color-exam-border-strong)" }}
                 />
               )}
@@ -72,7 +72,7 @@ export function PhaseHeader({
                   {past ? "✓" : i + 1}
                 </span>
                 <span
-                  className="text-[13px] font-semibold whitespace-nowrap"
+                  className={`text-[13px] font-semibold whitespace-nowrap ${active ? "inline" : "hidden md:inline"}`}
                   style={{
                     color: active
                       ? "var(--color-exam-ink)"
@@ -89,9 +89,9 @@ export function PhaseHeader({
           );
         })}
       </ol>
-      <div className="flex items-center gap-2.5">
-        <span className="chip">{caseModel.category}</span>
-        <span className="chip capitalize">{caseModel.difficulty}</span>
+      <div className="flex items-center gap-2 sm:gap-2.5">
+        <span className="chip hidden md:inline-flex">{caseModel.category}</span>
+        <span className="chip capitalize hidden sm:inline-flex">{caseModel.difficulty}</span>
         <span className={engine.mode === "STRICT_OSCE" ? "chip chip-danger" : "chip"}>
           {engine.mode === "STRICT_OSCE" ? "Strict OSCE" : "Practice"}
         </span>

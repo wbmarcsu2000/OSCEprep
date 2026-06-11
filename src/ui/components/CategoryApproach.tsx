@@ -26,7 +26,7 @@ export function CategoryApproach({ category }: { category: string }) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="card p-4">
           <div className="panel-label mb-2" style={{ color: "var(--color-exam-danger)" }}>
             Can't-miss — exclude these first
@@ -55,7 +55,7 @@ export function CategoryApproach({ category }: { category: string }) {
 
       <div className="card p-4">
         <div className="panel-label mb-2">Standard key questions to carry into every room</div>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
           {c.keyQuestions.map((qt) => (
             <div key={qt.theme}>
               <div className="text-[13px] font-semibold mb-1">{qt.theme}</div>
@@ -72,7 +72,7 @@ export function CategoryApproach({ category }: { category: string }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="card p-4">
           <div className="panel-label mb-2">Targeted exam</div>
           <ul className="space-y-1 text-[13px] leading-relaxed">

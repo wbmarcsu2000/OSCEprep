@@ -97,7 +97,7 @@ export function Drills() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-6 py-7 space-y-4">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="flex items-start justify-between gap-6">
         <div className="space-y-0.5">
           <div className="panel-label">Learning tool</div>

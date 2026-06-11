@@ -225,7 +225,7 @@ export function FeedbackView({ data }: { data: FeedbackData }) {
   const { report } = data;
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-7 space-y-4">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="flex items-start justify-between gap-6">
         <div className="space-y-0.5">
           <div className="panel-label">{data.isReview ? "Case review" : "Station complete"}</div>
@@ -250,13 +250,13 @@ export function FeedbackView({ data }: { data: FeedbackData }) {
       <Scorecard report={report} />
 
       {(report.criticalMisses.length > 0 || report.unsafeActions.length > 0) && (
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <MissList title="Critical misses" items={report.criticalMisses} tone="danger" />
           <MissList title="Unsafe actions" items={report.unsafeActions} tone="danger" />
         </div>
       )}
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <MissList
           title="History you never elicited"
           items={report.missedHistory.map(
@@ -293,7 +293,7 @@ export function FeedbackView({ data }: { data: FeedbackData }) {
       </div>
 
       {(report.pearls.length > 0 || report.pitfalls.length > 0) && (
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <MissList title="Teaching pearls" items={report.pearls} />
           <MissList title="Common pitfalls" items={report.pitfalls} />
         </div>

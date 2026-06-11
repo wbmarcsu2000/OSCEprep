@@ -13,6 +13,40 @@ import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
 import { useState } from "react";
 
+type View = ReturnType<typeof useAppStore.getState>["view"];
+
+/** Persistent section nav shown in the header outside a station. */
+function HeaderNav({ view }: { view: View }) {
+  const showStations = useAppStore((s) => s.showStations);
+  const showDrills = useAppStore((s) => s.showDrills);
+  const showSkills = useAppStore((s) => s.showSkills);
+  const showAnalytics = useAppStore((s) => s.showAnalytics);
+  const items: { label: string; active: boolean; onClick: () => void }[] = [
+    { label: "Stations", active: view === "select", onClick: showStations },
+    { label: "Drills", active: view === "drills", onClick: showDrills },
+    { label: "Skills", active: view === "skills", onClick: showSkills },
+    { label: "Performance", active: view === "analytics", onClick: showAnalytics },
+  ];
+  return (
+    <nav className="flex items-center gap-0.5 sm:gap-1 overflow-x-auto scroll-quiet" aria-label="Sections">
+      {items.map((it) => (
+        <button
+          key={it.label}
+          onClick={it.onClick}
+          aria-current={it.active ? "page" : undefined}
+          className="text-[12.5px] font-semibold rounded-md px-2.5 sm:px-3 py-1.5 whitespace-nowrap transition-colors"
+          style={{
+            background: it.active ? "rgba(255,255,255,0.16)" : "transparent",
+            color: it.active ? "#fff" : "rgba(255,255,255,0.7)",
+          }}
+        >
+          {it.label}
+        </button>
+      ))}
+    </nav>
+  );
+}
+
 export default function App() {
   const view = useAppStore((s) => s.view);
   const caseModel = useAppStore((s) => s.caseModel);
@@ -68,13 +102,15 @@ export default function App() {
           </button>
           {inStation && (
             <span
-              className="ml-3 pl-4 text-[13px] opacity-85 truncate"
+              className="ml-3 pl-4 text-[13px] opacity-85 truncate hidden sm:inline"
               style={{ borderLeft: "1px solid rgba(255,255,255,0.18)" }}
             >
               {caseModel.chart.ageSex} — {caseModel.chart.cc}
             </span>
           )}
         </div>
+        {/* Persistent section nav (outside a station). */}
+        {!inStation && <HeaderNav view={view} />}
         {inStation &&
           (engine.currentState === "FEEDBACK" ? (
             <button

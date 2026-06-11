@@ -21,9 +21,11 @@ export function Encounter({ caseModel }: { caseModel: CaseModel }) {
   ];
 
   return (
-    <div className="h-full grid grid-cols-[1.5fr_minmax(360px,1fr)] gap-4 p-4 min-h-0 max-w-[1400px] mx-auto w-full">
-      <SpConversation />
-      <div className="flex flex-col gap-3 min-h-0">
+    <div className="lg:h-full grid grid-cols-1 lg:grid-cols-[1.5fr_minmax(360px,1fr)] gap-4 p-3 sm:p-4 lg:min-h-0 max-w-[1400px] mx-auto w-full">
+      <div className="h-[60vh] lg:h-auto min-h-0">
+        <SpConversation />
+      </div>
+      <div className="flex flex-col gap-3 min-h-0 h-[70vh] lg:h-auto">
         <div className="card flex flex-col min-h-0 flex-1 overflow-hidden">
           <div
             role="tablist"

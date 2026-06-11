@@ -54,7 +54,7 @@ export function Home() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10 space-y-8">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-8">
       {/* Hero */}
       <div className="text-center space-y-3">
         <div
@@ -88,7 +88,7 @@ export function Home() {
       </div>
 
       {/* Use-case cards */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {cases.map((c) => (
           <button
             key={c.title}
@@ -116,7 +116,7 @@ export function Home() {
       {/* How a station works */}
       <div className="card p-5">
         <div className="panel-label mb-3">How a station works</div>
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {[
             ["1 · Chart review", "3 min", "Door chart and vitals only — plan your approach."],
             ["2 · Encounter", "20 min", "Interview the patient and perform exact exam maneuvers; they reveal only what you elicit."],

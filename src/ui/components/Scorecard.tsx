@@ -11,9 +11,9 @@ export function Scorecard({ report }: { report: ScoreReport }) {
         : "var(--color-exam-danger)";
   return (
     <div className="card overflow-hidden">
-      <div className="grid grid-cols-[200px_1fr]">
+      <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr]">
         <div
-          className="flex flex-col items-center justify-center gap-1.5 py-7 border-r"
+          className="flex flex-col items-center justify-center gap-1.5 py-7 sm:border-r border-b sm:border-b-0"
           style={{ borderColor: "var(--color-exam-border)", background: "#fafbfd" }}
         >
           <div className="relative h-28 w-28" role="img" aria-label={`Overall score ${report.overall} out of 100`}>

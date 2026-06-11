@@ -15,9 +15,6 @@ export function CaseSelect() {
   const startCase = useAppStore((s) => s.startCase);
   const startRandomCase = useAppStore((s) => s.startRandomCase);
   const openReview = useAppStore((s) => s.openReview);
-  const showAnalytics = useAppStore((s) => s.showAnalytics);
-  const showSkills = useAppStore((s) => s.showSkills);
-  const showDrills = useAppStore((s) => s.showDrills);
   const setApiKey = useAppStore((s) => s.setApiKey);
   const setModel = useAppStore((s) => s.setModel);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
@@ -31,7 +28,8 @@ export function CaseSelect() {
   const [category, setCategory] = useState("all");
   const [difficulty, setDifficulty] = useState("all");
   const [starting, setStarting] = useState<string | null>(null);
-  const [showKey, setShowKey] = useState(false);
+  // Open the AI panel immediately if arriving from the home "Enable AI" button.
+  const [showKey, setShowKey] = useState(() => useAppStore.getState().pendingAiPanel);
   const [keyDraft, setKeyDraft] = useState("");
 
   // CaseSelect remounts whenever the user returns from a station, so reading
@@ -65,12 +63,9 @@ export function CaseSelect() {
     void startRandomCase(mode, candidates).finally(() => setStarting(null));
   };
 
-  // Opened "Enable AI" from the home screen → show the key panel on mount.
+  // Clear the one-shot flag after consuming it at mount (above).
   useEffect(() => {
-    if (pendingAiPanel) {
-      setShowKey(true);
-      clearPendingAiPanel();
-    }
+    if (pendingAiPanel) clearPendingAiPanel();
   }, [pendingAiPanel, clearPendingAiPanel]);
 
   const doneCount = manifest.cases.filter((c) => completed.has(c.id)).length;
@@ -80,8 +75,8 @@ export function CaseSelect() {
   const activeProvider = draftProvider ?? providerKind;
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8 space-y-5">
-      <div className="flex items-start justify-between gap-6">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-5">
+      <div className="flex flex-col sm:flex-row items-start justify-between gap-3 sm:gap-6">
         <div className="space-y-1">
           <h1 className="text-[22px] font-bold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
             Station Library
@@ -94,21 +89,10 @@ export function CaseSelect() {
             For medical education and OSCE practice only — not for clinical decision-making.
           </p>
         </div>
-        <div className="flex flex-col items-end gap-2">
-          <div className="flex gap-2">
-            <button className="btn" onClick={() => setShowKey((v) => !v)}>
-              {llmEnabled ? "🟢 AI on" : "○ Enable AI"}
-            </button>
-            <button className="btn" onClick={showDrills}>
-              🎯 Drills
-            </button>
-            <button className="btn" onClick={showSkills}>
-              📖 Skills
-            </button>
-            <button className="btn" onClick={showAnalytics}>
-              📊 Performance
-            </button>
-          </div>
+        <div className="flex flex-col items-start sm:items-end gap-2 shrink-0">
+          <button className="btn" onClick={() => setShowKey((v) => !v)}>
+            {llmEnabled ? "🟢 AI on" : "○ Enable AI"}
+          </button>
           <span className="hint">
             Progress: {doneCount} / {manifest.cases.length}
           </span>
@@ -270,7 +254,8 @@ export function CaseSelect() {
       </div>
 
       <div className="card overflow-hidden">
-        <table className="w-full text-sm">
+        <div className="overflow-x-auto scroll-quiet">
+        <table className="w-full text-sm min-w-[560px]">
           <thead>
             <tr style={{ background: "#fafbfd" }}>
               {["Station", "Category", "Difficulty", "", ""].map((h, i) => (
@@ -341,6 +326,7 @@ export function CaseSelect() {
             })}
           </tbody>
         </table>
+        </div>
       </div>
 
       <p className="hint text-center">
