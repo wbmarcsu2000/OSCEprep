@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES } from "../skillDrills";
+import { CURRICULUM } from "../curriculum";
 import { itemMatches, looseCovered } from "../../engine/textMatch";
 
 describe("skill drills", () => {
@@ -21,6 +22,26 @@ describe("differential abbreviation matching", () => {
     expect(itemMatches("acute coronary syndrome", "ACS")).toBe(true);
     // unrelated diagnoses still don't cross-match
     expect(itemMatches("pneumonia", "Pneumothorax")).toBe(false);
+  });
+});
+
+describe("curriculum cites the MGH manual", () => {
+  it("every category has manual sections with valid pages", () => {
+    for (const c of CURRICULUM) {
+      expect(c.manual.length, `${c.category} has manual refs`).toBeGreaterThan(0);
+      for (const r of c.manual) {
+        expect(r.section.length).toBeGreaterThan(0);
+        expect(r.page).toBeGreaterThan(0);
+        expect(r.page).toBeLessThanOrEqual(273); // manual has 273 pages
+      }
+    }
+  });
+  it("every quick-management pearl cites a manual page", () => {
+    for (const c of CURRICULUM) {
+      for (const m of c.quickManagement) {
+        expect(m.manualPage, `${c.category}: "${m.scenario}" cites a page`).toBeGreaterThan(0);
+      }
+    }
   });
 });
 

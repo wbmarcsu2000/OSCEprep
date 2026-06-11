@@ -261,3 +261,15 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     NOT credit "metabolic alkalosis"; and `store.gradeCoverage` now *unions* the
     LLM's semantic matches with the deterministic matches so a clearly-named
     concept is always credited even when the LLM under-reports.
+40. **Manual alignment extended to the framework drills.** The drills run on a
+    separate teaching dataset (`curriculum.ts` + `skillDrills.ts`), so the
+    per-case MGH alignment did not reach them. Added `manual: ManualRef[]` to each
+    of the 9 category curricula (relevant manual sections + PDF pages) and a
+    `manualPage` to each quick-management pearl, injected at module load via
+    `MANUAL_BY_CATEGORY` so the big category objects stay untouched. A shared
+    `ManualRefs` component renders the "📖 MGH Housestaff Manual — <section>,
+    p.NN" block in both the post-station teaching (`CategoryApproach`) and the
+    differential + work-up drills; each quick-management pearl shows its
+    "📖 MGH p. NN" page. Pages match the per-case management citations, so a drill
+    and its matching station now teach from the same source. Tests assert every
+    category has manual refs and every pearl cites a page.

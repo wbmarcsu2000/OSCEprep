@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../data/curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
 import { useAppStore } from "../store";
+import { ManualRefs } from "../components/ManualRefs";
 
 /**
  * Standalone learning drills (no full case). Get reps on the frameworks:
@@ -416,6 +417,7 @@ function DifferentialDrill({
               {category.framework} {category.strategy}
             </p>
           </div>
+          <ManualRefs manual={category.manual} compact />
         </div>
       )}
     </div>
@@ -643,6 +645,31 @@ function WorkupDrill({
               )}
             </div>
           )}
+
+          {/* Management teaching — same source the matching station cites. */}
+          {category.quickManagement.length > 0 && (
+            <div className="card p-4">
+              <div className="panel-label mb-2">
+                Quick &amp; dirty management
+                <span className="hint ml-2">aligned to the MGH Housestaff Manual</span>
+              </div>
+              <div className="space-y-2.5">
+                {category.quickManagement.map((m, i) => (
+                  <div key={i} className="text-[13px] leading-relaxed">
+                    <div className="font-semibold">
+                      {m.scenario}
+                      {m.manualPage && (
+                        <span className="hint ml-2 font-normal">📖 MGH p.&nbsp;{m.manualPage}</span>
+                      )}
+                    </div>
+                    <div style={{ color: "var(--color-exam-muted)" }}>{m.plan}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <ManualRefs manual={category.manual} compact />
         </>
       )}
     </div>

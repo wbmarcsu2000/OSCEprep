@@ -54,7 +54,17 @@ export interface PracticeCase {
 export interface ManagementPearl {
   scenario: string;
   plan: string;
+  /** Page in the MGH Housestaff Manual 2024–2025 this plan follows. */
+  manualPage?: number;
 }
+
+/** A citation into the MGH Housestaff Manual 2024–2025 (PDF page). */
+export interface ManualRef {
+  section: string;
+  page: number;
+}
+
+export const MGH_MANUAL = "MGH Housestaff Manual 2024–2025";
 
 /** A named clinical-reasoning schema (how an expert organizes the problem). */
 export interface ReasoningFramework {
@@ -102,6 +112,9 @@ export interface CategoryCurriculum {
   practiceCases: PracticeCase[];
   quickManagement: ManagementPearl[];
   references: CurriculumRef[];
+  /** Relevant MGH Housestaff Manual sections + pages for this complaint, so the
+   *  drills and stations cite the same source. Injected at module load. */
+  manual: ManualRef[];
 }
 
 const MDCALC = "https://www.mdcalc.com/";
@@ -122,7 +135,9 @@ const OLDCARTS: QuestionTheme = {
   ],
 };
 
-export const CURRICULUM: CategoryCurriculum[] = [
+type RawCurriculum = Omit<CategoryCurriculum, "manual">;
+
+const RAW_CURRICULUM: RawCurriculum[] = [
   // ---------------------------------------------------------------- Chest Pain
   {
     category: "Chest Pain",
@@ -224,7 +239,7 @@ export const CURRICULUM: CategoryCurriculum[] = [
     quickManagement: [
       {
         scenario: "Troponin 400, new STEMI in V5–V6/aVL",
-        plan: "Activate cath lab within 90 min (thrombolysis if >120 min to PCI); aspirin 324 mg, heparin, nitro, O₂ if hypoxic, morphine if refractory. D/C on β-blocker, ACEi, statin + clopidogrel/ticagrelor ×1 yr if stented.",
+        plan: "Activate cath lab, aim <90 min to wire crossing (fibrinolysis if PCI >120 min away); aspirin 325 mg load, anticoagulation (heparin), high-intensity statin (atorvastatin 80), nitrates for pain, O₂ if hypoxic. Hold the P2Y12 load until discussed with cardiology. D/C on β-blocker, ACEi, statin + P2Y12 ×1 yr if stented.",
       },
       {
         scenario: "Pleuritic pain, CTPE with segmental occlusion",
@@ -1006,6 +1021,114 @@ export const CURRICULUM: CategoryCurriculum[] = [
     ],
   },
 ];
+
+/**
+ * MGH Housestaff Manual 2024–2025 alignment, keyed by category. `manual` lists
+ * the relevant sections + PDF pages; `pearlPages` is parallel to that category's
+ * `quickManagement` array — each entry is the page that pearl's plan follows.
+ * Pages were taken from the manual PDF and match the per-case management
+ * citations, so a drill and its matching station teach from the same source.
+ */
+const MANUAL_BY_CATEGORY: Record<string, { manual: ManualRef[]; pearlPages: number[] }> = {
+  "Chest Pain": {
+    manual: [
+      { section: "Chest Pain (approach)", page: 16 },
+      { section: "Acute Coronary Syndrome", page: 18 },
+      { section: "Aortic Disease", page: 35 },
+      { section: "Pericardial Disease", page: 34 },
+      { section: "VTE Management", page: 55 },
+    ],
+    pearlPages: [18, 55, 26],
+  },
+  "Abdominal Pain": {
+    manual: [
+      { section: "Abdominal Pain", page: 72 },
+      { section: "Pancreatitis", page: 85 },
+      { section: "Biliary Disease", page: 88 },
+      { section: "Upper GI Bleeding", page: 70 },
+    ],
+    pearlPages: [72, 70],
+  },
+  Syncope: {
+    manual: [
+      { section: "Syncope", page: 37 },
+      { section: "Valvular Heart Disease", page: 32 },
+      { section: "Atrial Fibrillation / Flutter", page: 13 },
+      { section: "ACLS: Cardioversion / Pacing", page: 8 },
+    ],
+    pearlPages: [13, 8],
+  },
+  "Altered Mental Status": {
+    manual: [
+      { section: "Altered Mental Status", page: 196 },
+      { section: "Sepsis", page: 65 },
+      { section: "DKA / HHS", page: 184 },
+      { section: "Sodium Disorders", page: 107 },
+      { section: "Alcohol Use Disorder & Withdrawal", page: 212 },
+      { section: "Opioid Use Disorder", page: 215 },
+    ],
+    pearlPages: [215, 212, 65, 110],
+  },
+  Dyspnea: {
+    manual: [
+      { section: "Inpatient Heart Failure (ADHF)", page: 26 },
+      { section: "COPD", page: 51 },
+      { section: "Community Acquired Pneumonia", page: 116 },
+      { section: "PFTs & Asthma", page: 50 },
+      { section: "VTE Management", page: 55 },
+    ],
+    pearlPages: [51, 26],
+  },
+  Fever: {
+    manual: [
+      { section: "Empiric Antibiotics & Antibiogram", page: 112 },
+      { section: "Sepsis", page: 65 },
+      { section: "Community Acquired Pneumonia", page: 116 },
+      { section: "Skin & Soft Tissue Infections", page: 120 },
+      { section: "Meningitis & Encephalitis", page: 123 },
+      { section: "Febrile Neutropenia", page: 161 },
+    ],
+    pearlPages: [65, 161],
+  },
+  Anemia: {
+    manual: [
+      { section: "Pancytopenia & Anemia", page: 136 },
+      { section: "Upper GI Bleeding", page: 70 },
+      { section: "Transfusion Medicine", page: 144 },
+    ],
+    pearlPages: [136, 144],
+  },
+  Diarrhea: {
+    manual: [
+      { section: "Diarrhea", page: 77 },
+      { section: "C. Difficile Infection", page: 124 },
+      { section: "Inflammatory Bowel Disease", page: 81 },
+    ],
+    pearlPages: [77, 124],
+  },
+  "Abnormal Liver Enzymes": {
+    manual: [
+      { section: "Liver Chemistry Tests", page: 87 },
+      { section: "Acute Liver Injury & Failure", page: 89 },
+      { section: "Viral Hepatitis", page: 90 },
+      { section: "Biliary Disease", page: 88 },
+      { section: "MASLD / NAFLD", page: 92 },
+    ],
+    pearlPages: [89, 88],
+  },
+};
+
+export const CURRICULUM: CategoryCurriculum[] = RAW_CURRICULUM.map((c) => {
+  const ref = MANUAL_BY_CATEGORY[c.category];
+  return {
+    ...c,
+    manual: ref?.manual ?? [],
+    quickManagement: c.quickManagement.map((m, i) => ({
+      ...m,
+      manualPage: m.manualPage ?? ref?.pearlPages[i],
+    })),
+  };
+});
 
 export const CURRICULUM_BY_CATEGORY: ReadonlyMap<string, CategoryCurriculum> = new Map(
   CURRICULUM.map((c) => [c.category, c]),

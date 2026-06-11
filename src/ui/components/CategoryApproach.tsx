@@ -1,4 +1,5 @@
 import { CURRICULUM_BY_CATEGORY, FRAMEWORKS, type PracticeCase } from "../../data/curriculum";
+import { ManualRefs } from "./ManualRefs";
 
 /**
  * End-of-station teaching, modeled on the clerkship OSCE review session:
@@ -127,17 +128,27 @@ export function CategoryApproach({ category }: { category: string }) {
 
       {c.quickManagement.length > 0 && (
         <div className="card p-4">
-          <div className="panel-label mb-2">Quick &amp; dirty management</div>
+          <div className="panel-label mb-2">
+            Quick &amp; dirty management
+            <span className="hint ml-2">aligned to the MGH Housestaff Manual</span>
+          </div>
           <div className="space-y-2.5">
             {c.quickManagement.map((m, i) => (
               <div key={i} className="text-[13px] leading-relaxed">
-                <div className="font-semibold">{m.scenario}</div>
+                <div className="font-semibold">
+                  {m.scenario}
+                  {m.manualPage && (
+                    <span className="hint ml-2 font-normal">📖 MGH p.&nbsp;{m.manualPage}</span>
+                  )}
+                </div>
                 <div style={{ color: "var(--color-exam-muted)" }}>{m.plan}</div>
               </div>
             ))}
           </div>
         </div>
       )}
+
+      <ManualRefs manual={c.manual} />
 
       <div className="card p-4">
         <div className="panel-label mb-2">References &amp; further reading</div>
