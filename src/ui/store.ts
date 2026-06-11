@@ -48,7 +48,9 @@ let providerKind: ProviderKind | null;
 ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
 
 interface AppState {
-  view: "select" | "station" | "analytics" | "review" | "skills" | "drills";
+  view: "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills";
+  /** When set, the Case Select screen opens the Enable-AI panel on mount. */
+  pendingAiPanel: boolean;
   caseModel: CaseModel | null;
   engine: EngineState | null;
   llmEnabled: boolean;
@@ -65,9 +67,13 @@ interface AppState {
   startRandomCase: (mode: Mode, candidateIds: string[]) => Promise<void>;
   resumeSession: () => Promise<boolean>;
   exitToSelect: () => void;
+  showHome: () => void;
+  showStations: () => void;
   showAnalytics: () => void;
   showSkills: () => void;
   showDrills: () => void;
+  showEnableAi: () => void;
+  clearPendingAiPanel: () => void;
   openReview: (caseId: string) => void;
   setApiKey: (key: string) => void;
   setModel: (model: string) => void;
@@ -197,7 +203,8 @@ async function collectCoaching(
 }
 
 export const useAppStore = create<AppState>((set, get) => ({
-  view: "select",
+  view: "home",
+  pendingAiPanel: false,
   caseModel: null,
   engine: null,
   llmEnabled,
@@ -306,6 +313,14 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ view: "select", caseModel: null, engine: null, review: null });
   },
 
+  showHome() {
+    set({ view: "home" });
+  },
+
+  showStations() {
+    set({ view: "select" });
+  },
+
   showAnalytics() {
     set({ view: "analytics" });
   },
@@ -316,6 +331,14 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   showDrills() {
     set({ view: "drills" });
+  },
+
+  showEnableAi() {
+    set({ view: "select", pendingAiPanel: true });
+  },
+
+  clearPendingAiPanel() {
+    set({ pendingAiPanel: false });
   },
 
   tick() {

@@ -8,6 +8,7 @@ import { Feedback, ReviewScreen } from "./ui/screens/Feedback";
 import { Analytics } from "./ui/screens/Analytics";
 import { Skills } from "./ui/screens/Skills";
 import { Drills } from "./ui/screens/Drills";
+import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
 import { useState } from "react";
@@ -19,6 +20,7 @@ export default function App() {
   const tick = useAppStore((s) => s.tick);
   const resumeSession = useAppStore((s) => s.resumeSession);
   const exitToSelect = useAppStore((s) => s.exitToSelect);
+  const showHome = useAppStore((s) => s.showHome);
   const [confirmExit, setConfirmExit] = useState(false);
 
   useEffect(() => {
@@ -46,17 +48,24 @@ export default function App() {
         style={{ background: "var(--color-exam-header)" }}
       >
         <div className="flex items-center gap-3.5 min-w-0">
-          <span
-            className="flex h-7 w-7 items-center justify-center rounded-md text-[13px] font-extrabold shrink-0"
-            style={{ background: "var(--color-exam-accent)" }}
-            aria-hidden
+          <button
+            className="flex items-center gap-3.5 min-w-0 text-left disabled:cursor-default"
+            onClick={showHome}
+            disabled={!!inStation}
+            title={inStation ? undefined : "Home"}
           >
-            ✚
-          </span>
-          <div className="leading-tight min-w-0">
-            <div className="font-bold text-[13.5px] tracking-wide">OSCE SIMULATOR</div>
-            <div className="text-[11px] opacity-60">Internal Medicine Clerkship</div>
-          </div>
+            <span
+              className="flex h-7 w-7 items-center justify-center rounded-md text-[13px] font-extrabold shrink-0"
+              style={{ background: "var(--color-exam-accent)" }}
+              aria-hidden
+            >
+              ✚
+            </span>
+            <div className="leading-tight min-w-0">
+              <div className="font-bold text-[13.5px] tracking-wide">OSCEPREP</div>
+              <div className="text-[11px] opacity-60">Internal Medicine Clerkship</div>
+            </div>
+          </button>
           {inStation && (
             <span
               className="ml-3 pl-4 text-[13px] opacity-85 truncate"
@@ -110,6 +119,7 @@ export default function App() {
       {inStation && <PhaseHeader caseModel={caseModel} engine={engine} />}
 
       <main className="flex-1 min-h-0 overflow-y-auto scroll-quiet">
+        {view === "home" && <Home />}
         {view === "select" && <CaseSelect />}
         {view === "analytics" && <Analytics />}
         {view === "skills" && <Skills />}

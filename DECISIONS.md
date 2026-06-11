@@ -203,6 +203,27 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     also gained an interactive "the results come back" follow-up — the student
     types their re-prioritized differential + next step and it's graded against
     the worked case's updated ddx, then the expert next step is shown.
-33. **`revealKeys` / diagnostics.** The post-encounter workup step (`reveal: true`) unlocks the
+33. **Real LITFL studies in read steps (`src/data/litflStudies.ts`).** The first
+    50 LITFL Top-100 ECG and CXR cases (number, URL, diagnosis, hallmark
+    findings) are assigned to read steps by catalog index; the step links to the
+    specific case (litfl.com/ecg-case-NNN / cxr-case-NNN) and grades the
+    student's read against that study's known answer.
+34. **Multi-provider AI.** `LlmAdapter` now supports Anthropic (Claude) AND
+    OpenAI (GPT) behind one `LlmProvider` interface; `createProvider` routes by
+    key prefix (`sk-ant-`→Claude, `sk-`/`sk-proj-`→OpenAI) with per-provider
+    default models. Keys are verified on save (a tiny test call) and the panel
+    shows truthful status ("✓ AI verified" / "✕ Key rejected"). Prompts are
+    shared across providers and rewritten to be conversational (first-person,
+    no chart-speak, pertinent negatives spoken naturally); the content guard was
+    relaxed with a lay-descriptor allowlist so natural paraphrases aren't forced
+    back to verbatim. The deterministic fallback also collapses "NO x, NO y"
+    chart runs into a natural denial. Drill grading routes through
+    `store.gradeCoverage` (semantic AI when on, lenient match otherwise).
+35. **Deployment.** Static SPA, Vite `base: './'` (portable to any host),
+    GitHub Pages workflow (`.github/workflows/deploy.yml`) builds+tests+deploys
+    on push to main. Home landing screen (`src/ui/screens/Home.tsx`) explains the
+    app with use-case buttons. Per-student bring-your-own-key model — no server
+    secret. README documents the student + deploy flow.
+36. **`revealKeys` / diagnostics.** The post-encounter workup step (`reveal: true`) unlocks the
     `dx.labs` results named in `revealKeys` after the student commits their workup answer — labs are
     shown verbatim from case JSON in a "Diagnostic Results" reader, with EKG/CXR shown in read steps.

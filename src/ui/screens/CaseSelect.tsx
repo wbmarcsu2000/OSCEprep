@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { manifest } from "../../data/loader";
 import type { Mode } from "../../engine/types";
 import { completedCaseIds } from "../../analytics/store";
@@ -24,6 +24,8 @@ export function CaseSelect() {
   const providerKind = useAppStore((s) => s.providerKind);
   const aiStatus = useAppStore((s) => s.aiStatus);
   const aiError = useAppStore((s) => s.aiError);
+  const pendingAiPanel = useAppStore((s) => s.pendingAiPanel);
+  const clearPendingAiPanel = useAppStore((s) => s.clearPendingAiPanel);
 
   const [mode, setMode] = useState<Mode>("STRICT_OSCE");
   const [category, setCategory] = useState("all");
@@ -62,6 +64,14 @@ export function CaseSelect() {
     setStarting("__random__");
     void startRandomCase(mode, candidates).finally(() => setStarting(null));
   };
+
+  // Opened "Enable AI" from the home screen → show the key panel on mount.
+  useEffect(() => {
+    if (pendingAiPanel) {
+      setShowKey(true);
+      clearPendingAiPanel();
+    }
+  }, [pendingAiPanel, clearPendingAiPanel]);
 
   const doneCount = manifest.cases.filter((c) => completed.has(c.id)).length;
   const draftProvider = detectProvider(keyDraft);
