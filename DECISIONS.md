@@ -291,3 +291,20 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     synonyms, abbreviations, more-specific instances). (c) `gradeCoverage` already
     unions LLM + deterministic, so the now-robust deterministic floor backstops
     the LLM. The model picker explains that grading always uses a capable model.
+42. **Patient replies focused (no chart dumps).** A single question used to return
+    its real answer PLUS loosely-related history (a chart dump with repeated "No,
+    nothing like that."). Root causes, all fixed: (a) `assignSegments` now prefers
+    the segment whose SECTION matches the trigger (MEDS→medications, PMH→pmh)
+    instead of letting a narrative COLLATERAL block be claimed by many triggers;
+    (b) the content-aware match ban list gained framing words (history/long/heavy/
+    feeling/…) so "past medical history" no longer matches the onset trigger via
+    the word "history"; (c) history segments split on sentence boundaries (not
+    just ";"), so a COLLATERAL narrative is one segment per fact; (d) the generic
+    overlap reveal runs ONLY when no trigger answered; (e) a `focusReveal` ranks
+    and caps the kept facts; (f) deterministic phrasing dedupes repeated
+    sentences. Collateral is still fully revealed when the student explicitly asks
+    for family/EMS/chart/"what happened"/med-list (`asksForCollateral`).
+43. **Diagnostic results formatting.** The results reader replaced a cramped
+    110px-label + monospace layout (prose values wrapped badly) with an
+    accent-colored uppercase label column (136px, stacks on mobile) and readable
+    sans-serif `tabular-nums` values, plus an "N ordered" count.

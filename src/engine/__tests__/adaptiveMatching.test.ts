@@ -3,9 +3,11 @@ import { adaptCase } from "../schemaAdapter";
 import { askHistoryQuestion, neutralNegative } from "../revealEngine";
 import { chestpain01 } from "./fixtures";
 import ams03Json from "../../data/cases/ams-03.json";
+import ams01Json from "../../data/cases/ams-01.json";
 import type { RawCase } from "../types";
 
 const ams03 = adaptCase(ams03Json as unknown as RawCase);
+const ams01 = adaptCase(ams01Json as unknown as RawCase);
 
 // Regression tests for the transcript where the SP failed to adapt:
 // "pmh" / "past medical diagnoses?" / "medical history?" → neutral negative,
@@ -77,6 +79,21 @@ describe("poor-historian fallback (ams-03)", () => {
     const revealed = r.revealedContent.join(" ").toLowerCase();
     expect(revealed).toContain("insulin");
     expect(revealed).toContain("skipped lunch");
+  });
+
+  it("a focused question gets a focused answer, not a chart dump", () => {
+    // "what meds are you on" → the med list, NOT the collateral narrative or PMH.
+    const meds = askHistoryQuestion("what meds are you on", ams01, []).revealedContent
+      .join(" ").toLowerCase();
+    expect(meds).toContain("lactulose");
+    expect(meds).not.toContain("confusion"); // collateral narrative excluded
+    expect(meds).not.toContain("foggy"); // HPI excluded
+    // "past medical history" → the PMH, NOT the HPI/social/collateral.
+    const pmh = askHistoryQuestion("past medical history", ams01, []).revealedContent
+      .join(" ").toLowerCase();
+    expect(pmh).toContain("cirrhosis");
+    expect(pmh).not.toContain("foggy");
+    expect(pmh).not.toContain("alcohol");
   });
 });
 

@@ -136,19 +136,27 @@ export function LabResults({ caseModel }: { caseModel: CaseModel }) {
     <div className="card overflow-hidden">
       <div className="card-header" style={{ background: "#fafbfd" }}>
         <span className="panel-label">Diagnostic Results</span>
+        <span className="hint">{keys.length} ordered</span>
       </div>
       <div>
         {keys.map((k, i) => (
           <div
             key={k}
-            className="grid grid-cols-[110px_1fr] gap-3 px-4 py-2.5"
+            className="px-4 py-3 sm:grid sm:grid-cols-[136px_1fr] sm:gap-4"
             style={{
               borderTop: i > 0 ? "1px solid var(--color-exam-border)" : "none",
             }}
             onMouseEnter={() => markViewed(k)}
           >
-            <span className="text-[12.5px] font-bold pt-0.5">{k}</span>
-            <span className="font-mono text-[13px] leading-relaxed">{caseModel.labs[k]}</span>
+            <div
+              className="text-[11.5px] font-bold uppercase tracking-wide mb-1 sm:mb-0 sm:pt-0.5"
+              style={{ color: "var(--color-exam-accent-deep)" }}
+            >
+              {k}
+            </div>
+            <div className="text-[13.5px] leading-relaxed tabular-nums" style={{ color: "var(--color-exam-ink)" }}>
+              {caseModel.labs[k]}
+            </div>
           </div>
         ))}
       </div>

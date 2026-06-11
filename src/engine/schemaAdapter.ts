@@ -129,7 +129,13 @@ export function parsePatientFile(file: string): {
         }
         if (chunk.text.length === 0) continue;
         const sectionName = section.split(/[\s(]/)[0];
-        const semiParts = chunk.text.split(";").map((s) => s.trim()).filter(Boolean);
+        // Split on ";" AND sentence boundaries, so a multi-sentence block (e.g.
+        // a COLLATERAL narrative) becomes one segment per fact rather than a
+        // single blob that gets dumped wholesale when the section is asked.
+        const semiParts = chunk.text
+          .split(/;|(?<=[.!?])\s+(?=[A-Z(])/)
+          .map((s) => s.trim())
+          .filter(Boolean);
         for (const part of semiParts) {
           const finalParts = ENUMERATED_SECTIONS.has(sectionName)
             ? splitTopLevelCommas(part)
@@ -191,14 +197,25 @@ function assignSegments(
   segments: FileSegment[],
 ): FileSegment[] {
   const keywords = triggerKeywordStems(trigger);
-  const matched: FileSegment[] = [];
+  const sectionMatches: FileSegment[] = [];
+  const textMatches: FileSegment[] = [];
   for (const seg of segments) {
-    const segToks = stemmedTokenSet(`${seg.section} ${seg.text}`);
+    // Section affinity: the segment's section name (e.g. "MEDS", "PMH") maps to
+    // this trigger via its keywords/synonyms. This binds the medications trigger
+    // to the MEDS line and the pmh trigger to the PMH line, instead of letting a
+    // narrative COLLATERAL block get claimed by half a dozen triggers.
+    const sectionToks = expandStems(stemmedTokenSet(seg.section.split(/[\s(]/)[0]));
+    const hasSectionAffinity = [...sectionToks].some((t) => keywords.has(t));
+    const segToks = stemmedTokenSet(seg.text);
     let hits = 0;
     for (const k of keywords) if (segToks.has(k)) hits++;
-    if (hits > 0) matched.push(seg);
+    if (hasSectionAffinity) sectionMatches.push(seg);
+    else if (hits > 0) textMatches.push(seg);
   }
-  return matched;
+  // Prefer the section-matched fact(s); only fall back to text-keyword matches
+  // when this trigger has no section of its own (so generic ROS-style triggers
+  // still work).
+  return sectionMatches.length > 0 ? sectionMatches : textMatches;
 }
 
 export function adaptTriggers(

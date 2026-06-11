@@ -52,6 +52,15 @@ export interface HistoryRevealResult {
 /** Abbreviation-style trigger ids students actually type ("pmh", "ros"). */
 const GENERIC_ID_TOKENS = new Set(["use", "history", "hpi", "ros", "symptom", "symptoms"]);
 
+/** True when the question explicitly seeks collateral history (family/EMS/chart
+ *  account, "what happened", or the medication list) rather than asking the
+ *  patient a focused question. */
+function asksForCollateral(question: string): boolean {
+  return /\b(family|families|collateral|ems|witness|witnesses|chart|records?|nursing|caregiver|daughter|son|wife|husband|spouse|partner|friend|what happened|med(ication)?s? list|list of (his|her|your|their)? ?med)/i.test(
+    question.toLowerCase(),
+  );
+}
+
 export function triggerMatchesQuestion(
   question: string,
   trigger: HistoryTriggerModel,
@@ -104,7 +113,12 @@ const COMMON_CONTENT_TOKENS = new Set(
    "slightly", "several", "things", "going", "really", "daily", "weekly",
    "partial", "partially", "since", "after", "while", "during", "without",
    "worse", "better", "good", "first", "last", "month", "today", "tonight",
-   "still", "constant", "mild", "moderate"].map((w) => w),
+   "still", "constant", "mild", "moderate",
+   // Question-framing / duration filler words that appear inside many file
+   // segments ("long history of …") and must not drive a content match —
+   // otherwise "past medical history" hits any segment containing "history".
+   "history", "long", "heavy", "feeling", "admits", "denies", "reports",
+   "started", "noticed", "about", "around", "much", "given", "known"].map((w) => w),
 );
 
 /**
@@ -161,6 +175,18 @@ export function askHistoryQuestion(
     }
   }
 
+  // Collateral: a COLLATERAL/family/EMS section is information the student must
+  // explicitly request (per the file's own "provide ONLY if asked …" rule). A
+  // question naming family/EMS/chart/witness/"what happened"/med-list surfaces
+  // the whole collateral narrative; a focused question ("what meds") does NOT
+  // (that is routed to its own structured line by section affinity).
+  const collateralSegs = caseModel.historySegments.filter((s) =>
+    /^(collateral|family|ems|witness|nursing|chart)/i.test(s.section),
+  );
+  if (collateralSegs.length > 0 && asksForCollateral(question)) {
+    for (const s of collateralSegs) push(s.text);
+  }
+
   // A legitimate HPI/ROS question whose trigger has no authored detail (e.g. a
   // confused poor historian whose timeline lives in collateral) answers with
   // the patient's own HPI self-description instead of a bare negative —
@@ -172,19 +198,51 @@ export function askHistoryQuestion(
     for (const s of hpiSelf) push(s.text);
   }
 
-  // Grounded generic reveal for question content no trigger covers.
-  if (caseModel.historySegments.length > 0) {
+  // Grounded generic reveal ONLY when no trigger already answered — otherwise a
+  // focused question ("what meds are you on") would get its real answer PLUS a
+  // pile of loosely-overlapping HPI segments (a chart dump). When a trigger
+  // matched, its content is the answer; nothing more is appended.
+  if (revealedContent.length === 0 && caseModel.historySegments.length > 0) {
     for (const text of genericSegmentMatches(question, caseModel)) {
       if (!revealedContent.includes(text)) revealedContent.push(text);
     }
   }
 
+  // Keep replies focused: a patient answers a question with the one or two most
+  // relevant facts, not every loosely-related line. Rank by overlap with the
+  // question and cap the rest — EXCEPT when the student explicitly asked for the
+  // full collateral account, where multiple facts are the expected answer.
+  const focused = asksForCollateral(question)
+    ? [...new Set(revealedContent)]
+    : focusReveal(question, revealedContent);
+
   const matchedIds = matched.map((t) => t.id);
   return {
     matchedTriggerIds: matchedIds,
-    revealedContent,
+    revealedContent: focused,
     newlyUnlocked: matchedIds.filter((id) => !alreadyUnlocked.includes(id)),
   };
+}
+
+/** Rank revealed segments by token overlap with the question and keep the top
+ *  few, so a single question yields a focused answer instead of a chart dump.
+ *  Order within the kept set follows the original reveal order. */
+function focusReveal(question: string, content: string[], cap = 2): string[] {
+  if (content.length <= cap) return content;
+  const qToks = expandStems(stemmedTokenSet(question));
+  const scored = content.map((text, i) => {
+    const segToks = stemmedTokenSet(text);
+    let hits = 0;
+    for (const t of qToks) if (t.length >= 4 && segToks.has(t)) hits++;
+    return { text, i, hits };
+  });
+  const kept = scored
+    .slice()
+    .sort((a, b) => b.hits - a.hits || a.i - b.i)
+    .slice(0, cap)
+    .sort((a, b) => a.i - b.i)
+    .map((s) => s.text);
+  return kept;
 }
 
 // ---------------------------------------------------------------------------

@@ -106,9 +106,18 @@ function layifySegment(segment: string): string {
 /** Deterministic patient phrasing: verbatim content words, presented as
  *  speech rather than chart text. */
 export function phrasePatientReplyDeterministic(approvedContent: string): string {
+  const seen = new Set<string>();
   const parts = approvedContent
     .split(/(?<=[.!?])\s+|\n+/)
     .map(layifySegment)
-    .filter(Boolean);
+    .filter(Boolean)
+    // Drop duplicate sentences so collapsed negatives don't repeat ("No,
+    // nothing like that. No, nothing like that.").
+    .filter((s) => {
+      const key = s.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   return parts.join(" ") || approvedContent;
 }
