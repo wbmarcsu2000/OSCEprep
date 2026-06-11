@@ -268,36 +268,69 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Surgical consultation for appendectomy (CANT-MISS,8). NPO (3). IV fluids (4). IV antibiotics (5). Analgesia and antiemetics (4). Admit / serial exams (1). PENALTY: discharging home without surgical evaluation (-4).",
-      "idealAnswer": "Plan: Surgical consultation for appendectomy.",
+      "rubric": "Per MGH abdominal pain / surgical abdomen: NPO + IV fluids (CANT-MISS,5); broad-spectrum antibiotics (ceftriaxone + metronidazole) (5); urgent surgery consult for appendectomy (CANT-MISS,6); analgesia + antiemetics (4); serial abdominal exams (3). PENALTY: discharging a surgical abdomen (-4); delaying surgical consult / source control (-2).",
+      "idealAnswer": "NPO, IV fluids, analgesia, antiemetics. Broad-spectrum antibiotics (e.g. ceftriaxone + metronidazole). Urgent surgical consultation for appendectomy. Serial abdominal exams.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Surgical consultation for appendectomy",
-            "points": 8
+            "item": "NPO and IV fluids",
+            "points": 5
+          },
+          {
+            "item": "Surgery consult for appendectomy",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Broad-spectrum antibiotics",
+            "points": 5
+          },
+          {
+            "item": "Analgesia and antiemetics",
+            "points": 4
+          },
+          {
+            "item": "Serial abdominal exams",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Type and screen pre-op",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging home without surgical evaluation",
+            "item": "Discharging a surgical abdomen",
             "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Surgical consultation for appendectomy"
+        "NPO and IV fluids",
+        "Surgery consult for appendectomy"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Broad-spectrum antibiotics",
+        "Analgesia and antiemetics",
+        "Serial abdominal exams",
+        "Type and screen pre-op"
+      ],
       "unsafeActions": [
-        "discharging home without surgical evaluation"
+        "Discharging a surgical abdomen"
       ],
       "consults": [
-        "Surgical consultation for appendectomy"
+        "Surgery"
       ],
-      "disposition": ""
+      "disposition": "Admit; OR",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Abdominal Pain (Appendicitis)",
+        "page": 72
+      }
     }
   ],
   "standardizedPatient": {
@@ -551,10 +584,11 @@
       "Commit to Acute appendicitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging home without surgical evaluation"
+      "Discharging a surgical abdomen"
     ],
     "managementPearls": [
-      "Surgical consultation for appendectomy"
+      "NPO and IV fluids",
+      "Surgery consult for appendectomy"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -570,7 +604,8 @@
       "No free air under the diaphragm; clear lung bases (mainly to exclude perforation and basal pneumonia)."
     ],
     "criticalManagementItems": [
-      "Surgical consultation for appendectomy"
+      "NPO and IV fluids",
+      "Surgery consult for appendectomy"
     ],
     "keyImageInterpretationFindings": [
       "Atrial fibrillation with rapid ventricular response.",

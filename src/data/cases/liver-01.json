@@ -266,39 +266,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Supportive care; avoid hepatotoxins and alcohol; cautious acetaminophen use (CANT-MISS,6). Monitor INR and mental status for acute liver failure — escalate/transfer to a transplant center if synthetic failure or encephalopathy develops (CANT-MISS,7). Specific antivirals where indicated (e.g., chronic Hep B/C); Hep A is usually self-limited (4). Public-health notification; counsel on transmission and vaccinate/prophylax contacts (5). Hepatology follow-up (3). PENALTY: missing evolving acute liver failure (-3).",
-      "idealAnswer": "Plan: Supportive care; avoid hepatotoxins and alcohol; cautious acetaminophen use; Monitor INR and mental status for acute liver failure — escalate/transfer to a transplant center if synthetic failure or encephalopathy develops.",
+      "rubric": "Per MGH viral hepatitis: supportive care – hydration, antiemetics, avoid hepatotoxins (CANT-MISS,6); confirm type with serologies (CANT-MISS,4); monitor INR/mental status for ALF (5); hepatology referral / transplant evaluation if coagulopathy or HE (4); counsel on transmission + vaccinate contacts / public-health reporting (3). PENALTY: continued hepatotoxins (alcohol/APAP) (-3); missing progression to acute liver failure (-3).",
+      "idealAnswer": "Acute viral hepatitis (A/B) is usually supportive: hydration, antiemetics, rest, and avoid hepatotoxins (alcohol, acetaminophen dosing caution). Confirm the type with serologies (anti-HAV IgM; HBsAg/anti-HBc IgM). Monitor INR and mental status for acute liver failure – escalate to hepatology/transplant if coagulopathy or encephalopathy. Counsel on transmission; vaccinate contacts; report to public health.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Supportive care; avoid hepatotoxins and alcohol; cautious acetaminophen use",
+            "item": "Supportive care and avoid hepatotoxins",
             "points": 6
           },
           {
-            "item": "Monitor INR and mental status for acute liver failure — escalate/transfer to a transplant center if synthetic failure or encephalopathy develops",
-            "points": 7
+            "item": "Confirm type with serologies",
+            "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Monitor INR and mental status for ALF",
+            "points": 5
+          },
+          {
+            "item": "Hepatology referral if coagulopathy/encephalopathy",
+            "points": 4
+          },
+          {
+            "item": "Counsel on transmission and vaccinate contacts",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Public-health reporting",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "missing evolving acute liver failure",
+            "item": "Continued hepatotoxins",
+            "points": -3
+          },
+          {
+            "item": "Missing acute liver failure",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Supportive care; avoid hepatotoxins and alcohol; cautious acetaminophen use",
-        "Monitor INR and mental status for acute liver failure — escalate/transfer to a transplant center if synthetic failure or encephalopathy develops"
+        "Supportive care and avoid hepatotoxins",
+        "Confirm type with serologies"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Monitor INR and mental status for ALF",
+        "Hepatology referral if coagulopathy/encephalopathy",
+        "Counsel on transmission and vaccinate contacts",
+        "Public-health reporting"
+      ],
       "unsafeActions": [
-        "missing evolving acute liver failure"
+        "Continued hepatotoxins",
+        "Missing acute liver failure"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Usually outpatient; admit if severe/ALF",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Viral Hepatitis",
+        "page": 90
+      }
     }
   ],
   "standardizedPatient": {
@@ -555,11 +588,12 @@
       "Commit to Acute viral hepatitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "missing evolving acute liver failure"
+      "Continued hepatotoxins",
+      "Missing acute liver failure"
     ],
     "managementPearls": [
-      "Supportive care; avoid hepatotoxins and alcohol; cautious acetaminophen use",
-      "Monitor INR and mental status for acute liver failure — escalate/transfer to a transplant center if synthetic failure or encephalopathy develops"
+      "Supportive care and avoid hepatotoxins",
+      "Confirm type with serologies"
     ],
     "criticalHistoryItems": [
       "drug_use"
@@ -577,8 +611,8 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Supportive care; avoid hepatotoxins and alcohol; cautious acetaminophen use",
-      "Monitor INR and mental status for acute liver failure — escalate/transfer to a transplant center if synthetic failure or encephalopathy develops"
+      "Supportive care and avoid hepatotoxins",
+      "Confirm type with serologies"
     ],
     "keyImageInterpretationFindings": [
       "Poor R-wave progression across the precordium.",

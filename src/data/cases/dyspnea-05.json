@@ -256,34 +256,77 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Inhaled SABA, repeated/continuous (CANT-MISS,7). Add ipratropium for moderate-severe (4). Systemic corticosteroids early (6). Controlled supplemental O2 to keep SpO2 >92% (3). IV magnesium for severe/refractory (3). Reassess response with PEF/exam; escalate if deteriorating (2). PENALTY: discharging without reassessment or missing rising PaCO2 as respiratory fatigue (-3).",
-      "idealAnswer": "Plan: Inhaled SABA, repeated/continuous.",
+      "rubric": "Per MGH asthma exacerbation: inhaled albuterol ± ipratropium q20min ×3 (CANT-MISS,6); systemic corticosteroids prednisone 40-60 mg ×5-7 d (CANT-MISS,6); O2 to SpO2 ≥92% (3); IV magnesium 2 g for severe (3); escalate to continuous nebs / ICU if impending failure (3); identify trigger (2). PENALTY: discharging a still-symptomatic severe exacerbation (-3); LABA monotherapy / no steroid (-2).",
+      "idealAnswer": "Asthma exacerbation: inhaled albuterol ± ipratropium q20min ×3, systemic corticosteroids (prednisone 40–60 mg × 5–7 d), titrate O2 to ≥92%. For severe/impending failure: IV magnesium 2 g, continuous nebs, methylprednisolone 60–125 mg IV q6h, ICU transfer; mechanical ventilation with permissive hypercapnia if needed.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Inhaled SABA, repeated/continuous",
-            "points": 7
+            "item": "Inhaled albuterol +/- ipratropium",
+            "points": 6
+          },
+          {
+            "item": "Systemic corticosteroids",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Oxygen to SpO2 >=92%",
+            "points": 3
+          },
+          {
+            "item": "IV magnesium if severe",
+            "points": 3
+          },
+          {
+            "item": "Escalate / ICU if impending failure",
+            "points": 3
+          },
+          {
+            "item": "Identify and avoid trigger",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Inhaled corticosteroid on discharge",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging without reassessment or missing rising PaCO2 as respiratory fatigue",
+            "item": "Discharging a still-severe exacerbation",
             "points": -3
+          },
+          {
+            "item": "No systemic steroid",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Inhaled SABA, repeated/continuous"
+        "Inhaled albuterol +/- ipratropium",
+        "Systemic corticosteroids"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Oxygen to SpO2 >=92%",
+        "IV magnesium if severe",
+        "Escalate / ICU if impending failure",
+        "Identify and avoid trigger",
+        "Inhaled corticosteroid on discharge"
+      ],
       "unsafeActions": [
-        "discharging without reassessment or missing rising PaCO2 as respiratory fatigue"
+        "Discharging a still-severe exacerbation",
+        "No systemic steroid"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit; ICU if severe/impending failure",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "PFTs & Asthma",
+        "page": 50
+      }
     }
   ],
   "standardizedPatient": {
@@ -521,10 +564,12 @@
       "Commit to Asthma exacerbation and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging without reassessment or missing rising PaCO2 as respiratory fatigue"
+      "Discharging a still-severe exacerbation",
+      "No systemic steroid"
     ],
     "managementPearls": [
-      "Inhaled SABA, repeated/continuous"
+      "Inhaled albuterol +/- ipratropium",
+      "Systemic corticosteroids"
     ],
     "criticalHistoryItems": [
       "medication_nonadherence"
@@ -540,7 +585,8 @@
       "Normal or mild hyperinflation; NO consolidation, effusion, or pneumothorax. (CXR mainly to exclude complications.)"
     ],
     "criticalManagementItems": [
-      "Inhaled SABA, repeated/continuous"
+      "Inhaled albuterol +/- ipratropium",
+      "Systemic corticosteroids"
     ],
     "keyImageInterpretationFindings": [
       "Right heart strain pattern (S1Q3T3, anterior T-wave inversions).",

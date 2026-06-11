@@ -55,6 +55,18 @@ export interface SectionScoring {
   penalties: RawScoringItem[];
 }
 
+/** Citation into a clinical reference (e.g. the MGH Housestaff Manual). Purely
+ *  informational — surfaced in feedback so students can read the source for the
+ *  management plan. Not used in scoring. */
+export interface MghReference {
+  /** Source title, e.g. "MGH Housestaff Manual 2024–2025". */
+  manual: string;
+  /** Chapter/section the management is drawn from. */
+  section: string;
+  /** Page in the source the case management is aligned to. */
+  page: number;
+}
+
 export interface RawStep {
   id: string;
   label: string;
@@ -63,6 +75,8 @@ export interface RawStep {
   rubric?: string;
   idealAnswer?: string;
   scoring?: RawSectionScoring;
+  /** Clinical-reference citation for this step's content (management). */
+  mghReference?: MghReference;
   // read steps
   type?: string;
   image?: string;
@@ -268,6 +282,7 @@ export interface StepModel {
   unsafeActions: string[];
   consults: string[];
   disposition: string | null;
+  mghReference: MghReference | null;
 }
 
 export type DomainKey =
@@ -437,6 +452,8 @@ export interface SectionResult {
   credited: CreditedItem[];
   missed: CreditedItem[];
   penaltiesApplied: CreditedItem[];
+  /** Clinical-reference citation for the section (management steps). */
+  mghReference?: MghReference | null;
 }
 
 export interface ScoreReport {

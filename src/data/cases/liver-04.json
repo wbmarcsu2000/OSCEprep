@@ -273,34 +273,75 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "If cholangitis: IV fluids, blood cultures, and IV antibiotics, then URGENT biliary decompression — ERCP with stone extraction (CANT-MISS,8). For an uncomplicated CBD stone: ERCP for stone removal (5). Analgesia/antiemetics, NPO (3). Cholecystectomy (often during the same admission) to prevent recurrence (5). Monitor for pancreatitis/sepsis (2). PENALTY: missing cholangitis/sepsis requiring urgent ERCP drainage (-4).",
-      "idealAnswer": "Plan: If cholangitis: IV fluids, blood cultures, and IV antibiotics, then URGENT biliary decompression — ERCP with stone extraction.",
+      "rubric": "Per MGH biliary disease: NPO + IV fluids (CANT-MISS,4); broad-spectrum antibiotics (Zosyn or CTX/metronidazole) (CANT-MISS,5); urgent ERCP for biliary decompression/stone extraction (CANT-MISS,6); percutaneous drainage if ERCP not feasible (3); interval cholecystectomy (2); GI/surgery consult (2). PENALTY: managing cholangitis with antibiotics alone without decompression (-3).",
+      "idealAnswer": "Choledocholithiasis with cholangitis: NPO, IV fluids, and broad-spectrum antibiotics (piperacillin-tazobactam, or ceftriaxone + metronidazole). Biliary decompression by urgent ERCP with stone extraction – within 24–48 h if severe/septic or failing antibiotics; percutaneous drainage if ERCP not feasible. Interval cholecystectomy for gallstones. GI/surgery consult.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "If cholangitis: IV fluids, blood cultures, and IV antibiotics, then URGENT biliary decompression — ERCP with stone extraction",
-            "points": 8
+            "item": "NPO and IV fluids",
+            "points": 4
+          },
+          {
+            "item": "Broad-spectrum antibiotics",
+            "points": 5
+          },
+          {
+            "item": "Urgent ERCP for decompression",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Percutaneous drainage if ERCP not feasible",
+            "points": 3
+          },
+          {
+            "item": "Interval cholecystectomy",
+            "points": 2
+          },
+          {
+            "item": "GI / surgery consult",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Analgesia",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "missing cholangitis/sepsis requiring urgent ERCP drainage",
-            "points": -4
+            "item": "Antibiotics alone without decompression",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "If cholangitis: IV fluids, blood cultures, and IV antibiotics, then URGENT biliary decompression — ERCP with stone extraction"
+        "NPO and IV fluids",
+        "Broad-spectrum antibiotics",
+        "Urgent ERCP for decompression"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Percutaneous drainage if ERCP not feasible",
+        "Interval cholecystectomy",
+        "GI / surgery consult",
+        "Analgesia"
+      ],
       "unsafeActions": [
-        "missing cholangitis/sepsis requiring urgent ERCP drainage"
+        "Antibiotics alone without decompression"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Gastroenterology",
+        "Surgery"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Biliary Disease (Choledocholithiasis/Cholangitis)",
+        "page": 88
+      }
     }
   ],
   "standardizedPatient": {
@@ -512,10 +553,12 @@
       "Commit to Choledocholithiasis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "missing cholangitis/sepsis requiring urgent ERCP drainage"
+      "Antibiotics alone without decompression"
     ],
     "managementPearls": [
-      "If cholangitis: IV fluids, blood cultures, and IV antibiotics, then URGENT biliary decompression — ERCP with stone extraction"
+      "NPO and IV fluids",
+      "Broad-spectrum antibiotics",
+      "Urgent ERCP for decompression"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -531,7 +574,9 @@
       "No free air; clear bases (excludes perforation and basal pneumonia)."
     ],
     "criticalManagementItems": [
-      "If cholangitis: IV fluids, blood cultures, and IV antibiotics, then URGENT biliary decompression — ERCP with stone extraction"
+      "NPO and IV fluids",
+      "Broad-spectrum antibiotics",
+      "Urgent ERCP for decompression"
     ],
     "keyImageInterpretationFindings": [
       "Junctional escape rhythm.",

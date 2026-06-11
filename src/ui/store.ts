@@ -278,20 +278,23 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   async gradeCoverage(answer, items) {
     if (!answer.trim() || items.length === 0) return [];
+    const deterministic = items.filter((i) => looseCovered(answer, i));
     if (llmEnabled) {
       try {
         const ids = await provider.classifyIntent(
           answer,
           items.map((i) => ({ id: i, concepts: [i] })),
         );
-        if (ids.length > 0) return ids;
-        // empty result with AI on can be a miss OR a flake — fall through to
-        // the deterministic match so the student isn't under-credited.
+        // Union the LLM's semantic matches with the deterministic keyword
+        // matches: the LLM catches paraphrases the matcher misses, while the
+        // matcher guarantees a clearly-named concept (e.g. "respiratory
+        // compensation") is credited even when the LLM under-reports.
+        return [...new Set([...ids, ...deterministic])];
       } catch {
         // fall through to deterministic
       }
     }
-    return items.filter((i) => looseCovered(answer, i));
+    return deterministic;
   },
 
   async resumeSession() {

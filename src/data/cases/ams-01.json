@@ -275,39 +275,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Identify and treat the precipitant (CANT-MISS,6). Lactulose titrated to 2–3 soft stools/day (CANT-MISS,7). Add rifaximin (4). Treat any infection/GI bleed found (4). Avoid sedatives/benzodiazepines (2). Supportive care, monitor airway/mental status (2). PENALTY: sedating the patient (-3).",
-      "idealAnswer": "Plan: Identify and treat the precipitant; Lactulose titrated to 2–3 soft stools/day.",
+      "rubric": "Per MGH ESLD/HE: identify and treat precipitant – GIB, SBP/infection, constipation, electrolytes, sedatives (CANT-MISS,6); lactulose titrated to 2-3 soft stools/day (CANT-MISS,6); rifaximin add-on (4); airway protection if obtunded (3); correct hypokalemia (2). PENALTY: sedatives/benzodiazepines in HE (-3); missing/not treating a precipitant such as SBP or GI bleed (-3).",
+      "idealAnswer": "Identify and treat the precipitant (GI bleed, infection/SBP, constipation, dehydration, electrolytes, sedatives). Lactulose titrated to 2–3 soft stools/day (PO or via rectal enema if obtunded); add rifaximin. Protect the airway if obtunded. Correct hypokalemia/alkalosis. Avoid sedatives.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Identify and treat the precipitant",
+            "item": "Identify and treat precipitant",
             "points": 6
           },
           {
-            "item": "Lactulose titrated to 2–3 soft stools/day",
-            "points": 7
+            "item": "Lactulose",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Rifaximin",
+            "points": 4
+          },
+          {
+            "item": "Airway protection if obtunded",
+            "points": 3
+          },
+          {
+            "item": "Correct electrolytes (hypokalemia)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Evaluate for SBP (diagnostic paracentesis)",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "sedating the patient",
+            "item": "Sedatives/benzodiazepines",
+            "points": -3
+          },
+          {
+            "item": "Missing precipitant",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Identify and treat the precipitant",
-        "Lactulose titrated to 2–3 soft stools/day"
+        "Identify and treat precipitant",
+        "Lactulose"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Rifaximin",
+        "Airway protection if obtunded",
+        "Correct electrolytes (hypokalemia)",
+        "Evaluate for SBP (diagnostic paracentesis)"
+      ],
       "unsafeActions": [
-        "sedating the patient"
+        "Sedatives/benzodiazepines",
+        "Missing precipitant"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Hepatology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "End Stage Liver Disease (Hepatic Encephalopathy)",
+        "page": 93
+      }
     }
   ],
   "standardizedPatient": {
@@ -581,11 +616,12 @@
       "Commit to Hepatic encephalopathy and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "sedating the patient"
+      "Sedatives/benzodiazepines",
+      "Missing precipitant"
     ],
     "managementPearls": [
-      "Identify and treat the precipitant",
-      "Lactulose titrated to 2–3 soft stools/day"
+      "Identify and treat precipitant",
+      "Lactulose"
     ],
     "criticalHistoryItems": [
       "medication_nonadherence"
@@ -601,8 +637,8 @@
       "No consolidation or effusion (obtained to screen for an infectious precipitant)."
     ],
     "criticalManagementItems": [
-      "Identify and treat the precipitant",
-      "Lactulose titrated to 2–3 soft stools/day"
+      "Identify and treat precipitant",
+      "Lactulose"
     ],
     "keyImageInterpretationFindings": [
       "Biatrial enlargement.",

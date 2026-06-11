@@ -267,34 +267,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Alcohol cessation and manage withdrawal; thiamine before glucose (CANT-MISS,6). Nutritional support — adequate calories/protein (5). Corticosteroids for SEVERE disease (high Maddrey/MELD) AFTER excluding active infection and GI bleeding (5). Identify and treat infection/other complications (4). Hepatology involvement; monitor INR/encephalopathy/renal (hepatorenal) (3). PENALTY: giving steroids without assessing for infection/contraindications (-3); missing concurrent infection (-2).",
-      "idealAnswer": "Plan: Alcohol cessation and manage withdrawal; thiamine before glucose.",
+      "rubric": "Per MGH acute liver injury (alcoholic hepatitis): alcohol cessation + supportive care/nutrition (CANT-MISS,6); thiamine/vitamins + manage withdrawal (4); risk-stratify with discriminant function/MELD (3); corticosteroids if severe (DF≥32) after excluding infection/bleed (4); screen for and treat infection (3); hepatology consult (2). PENALTY: steroids with untreated infection/active GI bleed (-3); ongoing alcohol/hepatotoxins (-2).",
+      "idealAnswer": "Alcohol cessation and supportive care: nutrition (high protein/calorie), thiamine and vitamins, treat the alcohol withdrawal, and manage volume/electrolytes. Calculate discriminant function/MELD; if severe (DF ≥32), corticosteroids (prednisolone) after excluding active infection/GI bleed, reassess with Lille score. Screen for and treat infection. Hepatology consult; avoid further hepatotoxins.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Alcohol cessation and manage withdrawal; thiamine before glucose",
+            "item": "Alcohol cessation and supportive nutrition",
             "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Thiamine/vitamins and manage withdrawal",
+            "points": 4
+          },
+          {
+            "item": "Corticosteroids if severe (after excluding infection/bleed)",
+            "points": 4
+          },
+          {
+            "item": "Risk-stratify (discriminant function/MELD)",
+            "points": 3
+          },
+          {
+            "item": "Screen for and treat infection",
+            "points": 3
+          },
+          {
+            "item": "Hepatology consult",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Monitor for hepatorenal syndrome",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "giving steroids without assessing for infection/contraindications",
+            "item": "Steroids with untreated infection or GI bleed",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Alcohol cessation and manage withdrawal; thiamine before glucose"
+        "Alcohol cessation and supportive nutrition"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Thiamine/vitamins and manage withdrawal",
+        "Corticosteroids if severe (after excluding infection/bleed)",
+        "Risk-stratify (discriminant function/MELD)",
+        "Screen for and treat infection",
+        "Hepatology consult",
+        "Monitor for hepatorenal syndrome"
+      ],
       "unsafeActions": [
-        "giving steroids without assessing for infection/contraindications"
+        "Steroids with untreated infection or GI bleed"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Hepatology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Acute Liver Injury & Failure (Alcoholic Hepatitis)",
+        "page": 89
+      }
     }
   ],
   "standardizedPatient": {
@@ -507,10 +547,10 @@
       "Commit to Alcoholic hepatitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "giving steroids without assessing for infection/contraindications"
+      "Steroids with untreated infection or GI bleed"
     ],
     "managementPearls": [
-      "Alcohol cessation and manage withdrawal; thiamine before glucose"
+      "Alcohol cessation and supportive nutrition"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -525,7 +565,7 @@
       "No acute process (may screen for aspiration/infection)."
     ],
     "criticalManagementItems": [
-      "Alcohol cessation and manage withdrawal; thiamine before glucose"
+      "Alcohol cessation and supportive nutrition"
     ],
     "keyImageInterpretationFindings": [
       "Left anterior fascicular block.",

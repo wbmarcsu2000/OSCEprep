@@ -260,34 +260,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "B12 replacement — IM (then maintenance), especially with neurologic involvement (CANT-MISS,8). Identify and treat the cause — pernicious anemia vs dietary, with lifelong replacement if pernicious (5). Co-administer folate only AFTER confirming B12 is being replaced (4). Monitor for hypokalemia during repletion and track hematologic/neurologic recovery (4). Replace other deficiencies; dietary counseling (2). PENALTY: giving folate ALONE — can correct the anemia while the neurologic deficits progress (-4).",
-      "idealAnswer": "Plan: B12 replacement — IM (then maintenance), especially with neurologic involvement.",
+      "rubric": "Per MGH anemia work-up (B12): B12/cobalamin replacement, IM if neurologic involvement (CANT-MISS,7); identify cause – pernicious anemia/malabsorption/diet/metformin (5); check folate and treat (do not give folate alone) (4); monitor reticulocyte response + potassium (3); neurologic assessment (2). PENALTY: giving folate without B12 in combined deficiency (-3).",
+      "idealAnswer": "Replace vitamin B12 (cobalamin) – IM for severe deficiency/neurologic involvement, then maintenance (IM or high-dose oral). Identify the cause (pernicious anemia, malabsorption, diet, metformin). Check/replete folate but do NOT give folate alone (can precipitate neurologic worsening). Monitor reticulocyte/CBC response and potassium.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "B12 replacement — IM (then maintenance), especially with neurologic involvement",
-            "points": 8
+            "item": "B12 / cobalamin replacement",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Identify the cause (pernicious anemia/malabsorption)",
+            "points": 5
+          },
+          {
+            "item": "Check and treat folate (not alone)",
+            "points": 4
+          },
+          {
+            "item": "Monitor reticulocyte response and potassium",
+            "points": 3
+          },
+          {
+            "item": "Assess for neurologic involvement",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Anti-IF / parietal cell antibodies",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "giving folate ALONE — can correct the anemia while the neurologic deficits progress",
-            "points": -4
+            "item": "Folate without B12",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "B12 replacement — IM (then maintenance), especially with neurologic involvement"
+        "B12 / cobalamin replacement"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Identify the cause (pernicious anemia/malabsorption)",
+        "Check and treat folate (not alone)",
+        "Monitor reticulocyte response and potassium",
+        "Assess for neurologic involvement",
+        "Anti-IF / parietal cell antibodies"
+      ],
       "unsafeActions": [
-        "giving folate ALONE — can correct the anemia while the neurologic deficits progress"
+        "Folate without B12"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancytopenia & Anemia (B12 Deficiency)",
+        "page": 137
+      }
     }
   ],
   "standardizedPatient": {
@@ -521,10 +554,10 @@
       "Commit to B12 deficiency and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "giving folate ALONE — can correct the anemia while the neurologic deficits progress"
+      "Folate without B12"
     ],
     "managementPearls": [
-      "B12 replacement — IM (then maintenance), especially with neurologic involvement"
+      "B12 / cobalamin replacement"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -539,7 +572,7 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "B12 replacement — IM (then maintenance), especially with neurologic involvement"
+      "B12 / cobalamin replacement"
     ],
     "keyImageInterpretationFindings": [
       "Right bundle branch block.",

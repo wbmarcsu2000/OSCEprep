@@ -265,39 +265,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Two large-bore IV lines and IV fluid resuscitation (CANT-MISS,6). Transfuse packed red cells per a restrictive threshold / hemodynamics (CANT-MISS,5). Hold the NSAID and reassess aspirin; reverse any coagulopathy (4). IV proton pump inhibitor (4). Urgent GI consultation for endoscopy (5). Admit and monitor (1). PENALTY: discharging or failing to resuscitate/transfuse (-4).",
-      "idealAnswer": "Plan: Two large-bore IV lines and IV fluid resuscitation; Transfuse packed red cells per a restrictive threshold / hemodynamics.",
+      "rubric": "Per MGH GI bleed: resuscitate – 2 large-bore IVs + crystalloid + type & screen (CANT-MISS,6); transfuse restrictive Hgb>7 (>8 if CAD) (CANT-MISS,5); GI consult for endoscopy to localize/treat (5); IV PPI (3); correct coagulopathy / hold anticoagulants (3); serial Hgb monitoring (2). PENALTY: attributing syncope to vasovagal and discharging without recognizing the bleed (-4); over-transfusion (-1).",
+      "idealAnswer": "Syncope from occult GI bleed: resuscitate – 2 large-bore IVs, isotonic crystalloid, type & screen, transfuse pRBCs to a restrictive threshold (Hgb >7, or >8 if CAD). NPO. IV PPI. GI consult for endoscopy (EGD; colonoscopy if lower source) to localize and treat. Correct coagulopathy; hold/reverse anticoagulants. Serial Hgb (lags 24–72 h).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Two large-bore IV lines and IV fluid resuscitation",
+            "item": "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
             "points": 6
           },
           {
-            "item": "Transfuse packed red cells per a restrictive threshold / hemodynamics",
+            "item": "Transfuse to restrictive threshold (Hgb>7)",
             "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "GI consult for endoscopy",
+            "points": 5
+          },
+          {
+            "item": "IV PPI",
+            "points": 3
+          },
+          {
+            "item": "Correct coagulopathy / hold anticoagulants",
+            "points": 3
+          },
+          {
+            "item": "Serial hemoglobin monitoring",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "NPO",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging or failing to resuscitate/transfuse",
+            "item": "Missing the occult bleed / discharging",
             "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Two large-bore IV lines and IV fluid resuscitation",
-        "Transfuse packed red cells per a restrictive threshold / hemodynamics"
+        "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+        "Transfuse to restrictive threshold (Hgb>7)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "GI consult for endoscopy",
+        "IV PPI",
+        "Correct coagulopathy / hold anticoagulants",
+        "Serial hemoglobin monitoring",
+        "NPO"
+      ],
       "unsafeActions": [
-        "discharging or failing to resuscitate/transfuse"
+        "Missing the occult bleed / discharging"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Gastroenterology"
+      ],
+      "disposition": "Admit; ICU if unstable",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Upper GI Bleeding (occult)",
+        "page": 70
+      }
     }
   ],
   "standardizedPatient": {
@@ -521,11 +556,11 @@
       "Commit to Syncope from occult GI bleed and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging or failing to resuscitate/transfuse"
+      "Missing the occult bleed / discharging"
     ],
     "managementPearls": [
-      "Two large-bore IV lines and IV fluid resuscitation",
-      "Transfuse packed red cells per a restrictive threshold / hemodynamics"
+      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+      "Transfuse to restrictive threshold (Hgb>7)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -541,8 +576,8 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Two large-bore IV lines and IV fluid resuscitation",
-      "Transfuse packed red cells per a restrictive threshold / hemodynamics"
+      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+      "Transfuse to restrictive threshold (Hgb>7)"
     ],
     "keyImageInterpretationFindings": [
       "Hyperkalemia pattern: peaked T waves with QRS widening.",

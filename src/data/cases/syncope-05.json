@@ -282,34 +282,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Therapeutic anticoagulation — heparin (CANT-MISS,9). Supplemental oxygen (4). Admit to a monitored setting; close hemodynamic monitoring given submassive PE (5). Consider thrombolysis/escalation if the patient becomes hemodynamically unstable (4). Treat underlying provoking factors; address cancer-associated thrombosis (3). PENALTY: no anticoagulation (-6).",
-      "idealAnswer": "Plan: Therapeutic anticoagulation — heparin.",
+      "rubric": "Per MGH VTE Management: anticoagulation, DOAC preferred (CANT-MISS,6); risk-stratify, recognize syncopal PE as higher-risk (4); PERT consult (3); thrombolysis (tPA) if high-risk/unstable (5); supportive care – O2, cautious IVF, norepinephrine (3); IVC filter only if AC contraindicated (2). PENALTY: discharging a syncopal PE (-3); IVC filter instead of AC without contraindication (-3).",
+      "idealAnswer": "PE causing syncope implies at least intermediate-high risk. Anticoagulate unless contraindicated – DOAC preferred. Risk-stratify; activate PERT. Systemic thrombolysis (tPA) for high-risk/hemodynamically unstable PE. Supportive O2, cautious IVF, norepinephrine for shock. IVC filter only if anticoagulation contraindicated.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Therapeutic anticoagulation — heparin",
-            "points": 9
+            "item": "Anticoagulation (DOAC preferred)",
+            "points": 6
+          },
+          {
+            "item": "Risk-stratify PE severity",
+            "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Thrombolysis (tPA) if high-risk/unstable",
+            "points": 5
+          },
+          {
+            "item": "PERT consult",
+            "points": 3
+          },
+          {
+            "item": "Supportive care (O2, IVF, norepinephrine)",
+            "points": 3
+          },
+          {
+            "item": "Admit/monitor",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "IVC filter only if AC contraindicated",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "no anticoagulation",
-            "points": -6
+            "item": "Discharging a syncopal PE",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Therapeutic anticoagulation — heparin"
+        "Anticoagulation (DOAC preferred)",
+        "Risk-stratify PE severity"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Thrombolysis (tPA) if high-risk/unstable",
+        "PERT consult",
+        "Supportive care (O2, IVF, norepinephrine)",
+        "Admit/monitor",
+        "IVC filter only if AC contraindicated"
+      ],
       "unsafeActions": [
-        "no anticoagulation"
+        "Discharging a syncopal PE"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "PERT"
+      ],
+      "disposition": "Admit; ICU/step-down",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "VTE Management",
+        "page": 55
+      }
     }
   ],
   "standardizedPatient": {
@@ -508,10 +548,11 @@
       "Commit to Pulmonary embolism and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "no anticoagulation"
+      "Discharging a syncopal PE"
     ],
     "managementPearls": [
-      "Therapeutic anticoagulation — heparin"
+      "Anticoagulation (DOAC preferred)",
+      "Risk-stratify PE severity"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -523,7 +564,8 @@
       "Often clear — a clear film with marked hypoxemia is itself a clue toward PE."
     ],
     "criticalManagementItems": [
-      "Therapeutic anticoagulation — heparin"
+      "Anticoagulation (DOAC preferred)",
+      "Risk-stratify PE severity"
     ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",

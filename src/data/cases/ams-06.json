@@ -285,39 +285,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Benzodiazepines, ideally symptom-triggered by CIWA (CANT-MISS,8). Thiamine BEFORE/with glucose to prevent Wernicke (CANT-MISS,5). Replete magnesium, potassium, phosphate (4). Supportive care in a monitored/ICU setting; treat fever/infection (4). Reassess frequently; reserve antipsychotics only as adjunct (they lower seizure threshold) (2). PENALTY: giving glucose before thiamine (-3); antipsychotic monotherapy or inadequate benzodiazepines (-2).",
-      "idealAnswer": "Plan: Benzodiazepines, ideally symptom-triggered by CIWA; Thiamine BEFORE/with glucose to prevent Wernicke.",
+      "rubric": "Per MGH alcohol withdrawal: symptom-triggered benzodiazepines per CIWA-Ar (CANT-MISS,7); thiamine BEFORE glucose to prevent Wernicke (CANT-MISS,5); folate/multivitamin (2); repair electrolytes – K, Mg, phosphate (3); escalate (ICU/phenobarbital) for severe DTs (3); monitor for seizures (2); address AUD / supportive care (2). PENALTY: giving glucose before thiamine (-3); under-treating severe DTs (-2).",
+      "idealAnswer": "Symptom-triggered benzodiazepines guided by CIWA-Ar (e.g. lorazepam/diazepam) for withdrawal/DTs; escalate for severe DTs and consider ICU/phenobarbital. Thiamine BEFORE glucose (prevent Wernicke), plus folate and multivitamin; repair electrolytes (K, Mg, phosphate). Supportive care, monitor for seizures. Address the underlying alcohol use disorder.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Benzodiazepines, ideally symptom-triggered by CIWA",
-            "points": 8
+            "item": "Symptom-triggered benzodiazepines (CIWA-Ar)",
+            "points": 7
           },
           {
-            "item": "Thiamine BEFORE/with glucose to prevent Wernicke",
+            "item": "Thiamine before glucose",
             "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Electrolyte repletion (K, Mg, phosphate)",
+            "points": 3
+          },
+          {
+            "item": "Escalate for severe DTs (ICU/phenobarbital)",
+            "points": 3
+          },
+          {
+            "item": "Folate / multivitamin",
+            "points": 2
+          },
+          {
+            "item": "Monitor for seizures",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Address alcohol use disorder",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "giving glucose before thiamine",
+            "item": "Glucose before thiamine",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Benzodiazepines, ideally symptom-triggered by CIWA",
-        "Thiamine BEFORE/with glucose to prevent Wernicke"
+        "Symptom-triggered benzodiazepines (CIWA-Ar)",
+        "Thiamine before glucose"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Electrolyte repletion (K, Mg, phosphate)",
+        "Escalate for severe DTs (ICU/phenobarbital)",
+        "Folate / multivitamin",
+        "Monitor for seizures",
+        "Address alcohol use disorder"
+      ],
       "unsafeActions": [
-        "giving glucose before thiamine"
+        "Glucose before thiamine"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit; ICU if severe DTs",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Alcohol Use Disorder & Withdrawal",
+        "page": 212
+      }
     }
   ],
   "standardizedPatient": {
@@ -540,11 +573,11 @@
       "Commit to Alcohol withdrawal / delirium tremens and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "giving glucose before thiamine"
+      "Glucose before thiamine"
     ],
     "managementPearls": [
-      "Benzodiazepines, ideally symptom-triggered by CIWA",
-      "Thiamine BEFORE/with glucose to prevent Wernicke"
+      "Symptom-triggered benzodiazepines (CIWA-Ar)",
+      "Thiamine before glucose"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -560,8 +593,8 @@
       "Clear or possible aspiration; obtained to exclude an infectious precipitant."
     ],
     "criticalManagementItems": [
-      "Benzodiazepines, ideally symptom-triggered by CIWA",
-      "Thiamine BEFORE/with glucose to prevent Wernicke"
+      "Symptom-triggered benzodiazepines (CIWA-Ar)",
+      "Thiamine before glucose"
     ],
     "keyImageInterpretationFindings": [
       "Supraventricular tachycardia (regular, narrow, rate ~180).",

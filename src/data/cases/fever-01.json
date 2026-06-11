@@ -270,39 +270,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Obtain urine (and blood) cultures, then empiric antibiotics covering gram-negatives — e.g., ceftriaxone or a fluoroquinolone per local resistance (CANT-MISS,8). IV fluids and antipyretics/analgesia (5). Disposition — admit if septic, pregnant, vomiting/unable to tolerate oral, or complicated; otherwise outpatient (5). Image for obstruction/stone if not improving in 48–72h (CANT-MISS to consider,4). Tailor antibiotics to culture (3). PENALTY: missing an obstructed/infected system needing urgent drainage (-3).",
-      "idealAnswer": "Plan: ceftriaxone or a fluoroquinolone per local resistance; Image for obstruction/stone if not improving in 48–72h.",
+      "rubric": "Per MGH empiric antibiotics (pyelonephritis): urine + blood cultures before antibiotics (CANT-MISS,4); empiric IV antibiotics ceftriaxone (CANT-MISS,6); IV fluids (3); admit if septic/unable to tolerate PO/pregnant/complicated (3); de-escalate by culture, treat 7-14 d (3); imaging if obstruction/abscess suspected (2). PENALTY: nitrofurantoin/fosfomycin for pyelonephritis (no tissue levels) (-3); no cultures before antibiotics (-2).",
+      "idealAnswer": "Obtain blood and urine cultures, then empiric IV antibiotics – ceftriaxone (cover resistant GNR/enterococcus if complicated or prior resistance). IV fluids. Admit if unable to tolerate PO, septic, pregnant, or complicated; otherwise a fluoroquinolone may treat select outpatients. De-escalate per culture/susceptibility; treat 7–14 days. Image (CT) if obstruction/abscess suspected or not improving.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "ceftriaxone or a fluoroquinolone per local resistance",
-            "points": 8
+            "item": "Urine and blood cultures",
+            "points": 4
           },
           {
-            "item": "Image for obstruction/stone if not improving in 48–72h",
-            "points": 4
+            "item": "Empiric IV antibiotics",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "IV fluids",
+            "points": 3
+          },
+          {
+            "item": "Admit if septic/complicated",
+            "points": 3
+          },
+          {
+            "item": "De-escalate by culture; 7-14 day course",
+            "points": 3
+          },
+          {
+            "item": "Imaging if obstruction/abscess suspected",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Antipyretics/analgesia",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "missing an obstructed/infected system needing urgent drainage",
+            "item": "Nitrofurantoin/fosfomycin for pyelonephritis",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "ceftriaxone or a fluoroquinolone per local resistance",
-        "Image for obstruction/stone if not improving in 48–72h"
+        "Urine and blood cultures",
+        "Empiric IV antibiotics"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "IV fluids",
+        "Admit if septic/complicated",
+        "De-escalate by culture; 7-14 day course",
+        "Imaging if obstruction/abscess suspected",
+        "Antipyretics/analgesia"
+      ],
       "unsafeActions": [
-        "missing an obstructed/infected system needing urgent drainage"
+        "Nitrofurantoin/fosfomycin for pyelonephritis"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit if complicated; else treat outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Empiric Antibiotics & Antibiogram (Pyelonephritis)",
+        "page": 113
+      }
     }
   ],
   "standardizedPatient": {
@@ -518,11 +551,11 @@
       "Commit to Pyelonephritis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "missing an obstructed/infected system needing urgent drainage"
+      "Nitrofurantoin/fosfomycin for pyelonephritis"
     ],
     "managementPearls": [
-      "ceftriaxone or a fluoroquinolone per local resistance",
-      "Image for obstruction/stone if not improving in 48–72h"
+      "Urine and blood cultures",
+      "Empiric IV antibiotics"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -536,8 +569,8 @@
       "No consolidation (obtained to exclude pneumonia as the fever source)."
     ],
     "criticalManagementItems": [
-      "ceftriaxone or a fluoroquinolone per local resistance",
-      "Image for obstruction/stone if not improving in 48–72h"
+      "Urine and blood cultures",
+      "Empiric IV antibiotics"
     ],
     "keyImageInterpretationFindings": [
       "Atrial fibrillation with rapid ventricular response.",

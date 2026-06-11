@@ -43,6 +43,25 @@ describe("full case library", () => {
     }
   });
 
+  it("every case's management cites the MGH manual and has scored actions", async () => {
+    for (const entry of manifest.cases) {
+      const m = adaptCase(await loadRawCase(entry.id));
+      const mgmt = m.steps.find((s) => s.id === "management");
+      expect(mgmt, `${entry.id} has a management step`).toBeTruthy();
+      const ref = mgmt!.mghReference;
+      expect(ref, `${entry.id} management cites a reference`).toBeTruthy();
+      expect(ref!.manual).toContain("MGH Housestaff Manual");
+      expect(ref!.page, `${entry.id} reference page`).toBeGreaterThan(0);
+      expect(ref!.section.length, `${entry.id} reference section`).toBeGreaterThan(0);
+      // Management is itemized (not graded purely by ideal-answer overlap).
+      const sc = mgmt!.scoring!;
+      expect(sc.criticalActions.length, `${entry.id} has critical actions`).toBeGreaterThan(0);
+      const itemized =
+        [...sc.criticalActions, ...sc.coreActions].reduce((a, b) => a + b.points, 0);
+      expect(itemized, `${entry.id} management is substantially itemized`).toBeGreaterThanOrEqual(15);
+    }
+  });
+
   it("a representative case from each category completes end-to-end", async () => {
     const byCategory = new Map<string, string>();
     for (const c of manifest.cases) {

@@ -259,34 +259,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Treat the source — evaluate/manage menorrhagia (gynecology) (CANT-MISS,7). Oral iron supplementation (or IV iron if intolerant/malabsorptive) (8). Recheck CBC/reticulocyte response and continue iron to replete stores (5). Dietary counseling (3). In appropriate patients (e.g., no clear source / older age), GI evaluation to exclude malignancy (2). PENALTY: starting iron without identifying a source when GI workup is indicated (-3).",
-      "idealAnswer": "Plan: Treat the source — evaluate/manage menorrhagia (gynecology).",
+      "rubric": "Per MGH anemia work-up: iron repletion – oral ferrous sulfate or IV iron (CANT-MISS,6); identify and treat source of blood loss – GI work-up / menstrual history (CANT-MISS,6); confirm iron studies (low ferritin) (3); transfuse only if symptomatic/unstable (3); recheck CBC/retic response (2). PENALTY: transfusing a stable iron-deficient patient without indication (-2); failing to pursue the bleeding source (-3).",
+      "idealAnswer": "Replace iron – oral ferrous sulfate (every-other-day dosing improves absorption) or IV iron if intolerant/malabsorption/ongoing loss/need for rapid repletion. Critically: identify and treat the source of blood loss – GI evaluation (EGD/colonoscopy) in adults, menstrual history in women. Transfuse only if symptomatic/unstable. Recheck CBC/retic.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Treat the source — evaluate/manage menorrhagia (gynecology)",
-            "points": 7
+            "item": "Iron repletion (oral or IV iron)",
+            "points": 6
+          },
+          {
+            "item": "Identify and treat source of blood loss",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Confirm iron studies (ferritin)",
+            "points": 3
+          },
+          {
+            "item": "Transfuse only if symptomatic/unstable",
+            "points": 3
+          },
+          {
+            "item": "Recheck CBC/reticulocyte response",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Dietary counseling",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "starting iron without identifying a source when GI workup is indicated",
+            "item": "Failing to pursue bleeding source",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Treat the source — evaluate/manage menorrhagia (gynecology)"
+        "Iron repletion (oral or IV iron)",
+        "Identify and treat source of blood loss"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Confirm iron studies (ferritin)",
+        "Transfuse only if symptomatic/unstable",
+        "Recheck CBC/reticulocyte response",
+        "Dietary counseling"
+      ],
       "unsafeActions": [
-        "starting iron without identifying a source when GI workup is indicated"
+        "Failing to pursue bleeding source"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Usually outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancytopenia & Anemia (Iron Deficiency)",
+        "page": 136
+      }
     }
   ],
   "standardizedPatient": {
@@ -501,10 +534,11 @@
       "Commit to Iron deficiency anemia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "starting iron without identifying a source when GI workup is indicated"
+      "Failing to pursue bleeding source"
     ],
     "managementPearls": [
-      "Treat the source — evaluate/manage menorrhagia (gynecology)"
+      "Iron repletion (oral or IV iron)",
+      "Identify and treat source of blood loss"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -519,7 +553,8 @@
       "No acute cardiopulmonary process (low yield)."
     ],
     "criticalManagementItems": [
-      "Treat the source — evaluate/manage menorrhagia (gynecology)"
+      "Iron repletion (oral or IV iron)",
+      "Identify and treat source of blood loss"
     ],
     "keyImageInterpretationFindings": [
       "Atrial flutter with 2:1 AV conduction (ventricular rate ~150).",

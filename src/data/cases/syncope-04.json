@@ -285,41 +285,69 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Echocardiography to confirm severity (4). Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR) (CANT-MISS,8). Telemetry/admission given high-risk syncope (4). CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope (CANT-MISS,6). Treat symptoms; activity guidance (3). PENALTY: giving nitrates/vasodilators in severe AS (-4).",
-      "idealAnswer": "Plan: Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR); CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope.",
+      "rubric": "Per MGH valvular disease (AS): refer for aortic valve replacement – AS is a surgical disease (CANT-MISS,7); echocardiogram to confirm severity/EF (5); cardiology/structural consult (4); avoid aggressive preload reduction – nitrates/diuretics (4); cautious BP management, maintain narrow volume range (3). PENALTY: nitrates/aggressive diuresis/vasodilators causing hypotension in severe AS (-3); medical management alone for symptomatic severe AS (-2).",
+      "idealAnswer": "Symptomatic severe AS (syncope) is a surgical disease – refer for aortic valve replacement (SAVR vs TAVI by surgical risk). Echocardiography to confirm severity and EF. Cardiology/structural consult. Manage hypertension cautiously (start low, go slow) and keep within a narrow volume range – avoid aggressive preload reduction (nitrates/diuretics) and vasodilators. Avoid hypotension.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
-            "points": 8
-          },
-          {
-            "item": "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope",
-            "points": 6
+            "item": "Refer for aortic valve replacement (AVR/TAVI)",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Echocardiogram to confirm severity and EF",
+            "points": 5
+          },
+          {
+            "item": "Cardiology / structural consult",
+            "points": 4
+          },
+          {
+            "item": "Avoid aggressive preload reduction (nitrates/diuretics)",
+            "points": 4
+          },
+          {
+            "item": "Cautious BP / volume management",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Treat coexisting hypertension cautiously",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "giving nitrates/vasodilators in severe AS",
-            "points": -4
+            "item": "Vasodilators/diuretics causing hypotension in severe AS",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
-        "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope"
+        "Refer for aortic valve replacement (AVR/TAVI)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Echocardiogram to confirm severity and EF",
+        "Cardiology / structural consult",
+        "Avoid aggressive preload reduction (nitrates/diuretics)",
+        "Cautious BP / volume management",
+        "Treat coexisting hypertension cautiously"
+      ],
       "unsafeActions": [
-        "giving nitrates/vasodilators in severe AS"
+        "Vasodilators/diuretics causing hypotension in severe AS"
       ],
       "consults": [
-        "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)"
+        "Cardiology / Cardiac Surgery"
       ],
-      "disposition": ""
+      "disposition": "Admit; expedite AVR work-up",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Valvular Heart Disease (Aortic Stenosis)",
+        "page": 32
+      }
     }
   ],
   "standardizedPatient": {
@@ -531,11 +559,10 @@
       "Commit to Aortic stenosis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "giving nitrates/vasodilators in severe AS"
+      "Vasodilators/diuretics causing hypotension in severe AS"
     ],
     "managementPearls": [
-      "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
-      "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope"
+      "Refer for aortic valve replacement (AVR/TAVI)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -550,8 +577,7 @@
       "Possible cardiomegaly / aortic valve calcification; lungs clear."
     ],
     "criticalManagementItems": [
-      "Cardiology / cardiac surgery referral for aortic valve replacement (AVR/TAVR)",
-      "CAUTION with preload/afterload reducers — avoid nitrates and aggressive vasodilators that can precipitate hypotension/syncope"
+      "Refer for aortic valve replacement (AVR/TAVI)"
     ],
     "keyImageInterpretationFindings": [
       "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",

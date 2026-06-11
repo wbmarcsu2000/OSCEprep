@@ -267,34 +267,69 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Corticosteroids — first-line for warm AIHA (CANT-MISS,8). Folic acid supplementation (3). Identify and stop any offending drug / treat the underlying cause (5). Transfuse cautiously if hemodynamically compromised, in consultation with the blood bank (4). Hematology consultation; consider rituximab or splenectomy for refractory disease (3). PENALTY: missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange (-4).",
-      "idealAnswer": "Plan: Corticosteroids — first-line for warm AIHA.",
+      "rubric": "Per MGH hemolytic anemia: corticosteroids first-line for warm AIHA (CANT-MISS,7); folate supplementation (3); identify/treat underlying trigger (4); transfuse least-incompatible units if life-threatening (4); hematology consult (3); escalate – rituximab/IVIG/splenectomy if refractory (2). PENALTY: withholding life-saving transfusion for crossmatch incompatibility (-3); steroids for cold agglutinin without addressing cold avoidance/cause (-1).",
+      "idealAnswer": "Warm AIHA: corticosteroids (prednisone 1 mg/kg) first-line; folate supplementation; treat any underlying trigger (lymphoproliferative disorder, drug, infection). For severe/refractory: rituximab, IVIG, or splenectomy. Transfuse if life-threatening (least-incompatible units, do not withhold for fear of crossmatch). Hematology consult. Avoid cold exposure if cold agglutinin type.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Corticosteroids — first-line for warm AIHA",
-            "points": 8
+            "item": "Corticosteroids (warm AIHA)",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Identify and treat underlying trigger",
+            "points": 4
+          },
+          {
+            "item": "Transfuse least-incompatible units if life-threatening",
+            "points": 4
+          },
+          {
+            "item": "Folate supplementation",
+            "points": 3
+          },
+          {
+            "item": "Hematology consult",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Escalation (rituximab/IVIG/splenectomy) if refractory",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange",
-            "points": -4
+            "item": "Withholding life-saving transfusion",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Corticosteroids — first-line for warm AIHA"
+        "Corticosteroids (warm AIHA)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Identify and treat underlying trigger",
+        "Transfuse least-incompatible units if life-threatening",
+        "Folate supplementation",
+        "Hematology consult",
+        "Escalation (rituximab/IVIG/splenectomy) if refractory"
+      ],
       "unsafeActions": [
-        "missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange"
+        "Withholding life-saving transfusion"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Hematology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancytopenia & Anemia (Autoimmune Hemolytic Anemia)",
+        "page": 137
+      }
     }
   ],
   "standardizedPatient": {
@@ -519,10 +554,10 @@
       "Commit to Autoimmune hemolytic anemia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "missing TTP — giving steroids when schistocytes + thrombocytopenia are present instead of urgent plasma exchange"
+      "Withholding life-saving transfusion"
     ],
     "managementPearls": [
-      "Corticosteroids — first-line for warm AIHA"
+      "Corticosteroids (warm AIHA)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -539,7 +574,7 @@
       "No acute process (may screen for an underlying lymphoproliferative/secondary cause)."
     ],
     "criticalManagementItems": [
-      "Corticosteroids — first-line for warm AIHA"
+      "Corticosteroids (warm AIHA)"
     ],
     "keyImageInterpretationFindings": [
       "Bifascicular block (RBBB + left anterior fascicular block).",

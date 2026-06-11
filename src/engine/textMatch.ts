@@ -218,8 +218,25 @@ export function looseCovered(answer: string, item: string): boolean {
     for (const t of stemmedTokenSet(item)) if (fuzzyHas(ans, t)) return true;
     return false;
   }
-  return itemToks.some((t) => fuzzyHas(ans, t));
+  // Require every distinctive (non-qualifier) content token, synonym/stem
+  // expanded. Leading qualifiers (high/appropriate/serial/acute…) are optional,
+  // so "respiratory compensation" credits "appropriate respiratory compensation"
+  // and "troponin" credits "serial troponin" — but "metabolic acidosis" does
+  // NOT credit "metabolic alkalosis" ("alkalosis" is absent), where the old
+  // single-shared-token rule over-credited.
+  const content = itemToks.filter((t) => !HEAD_QUALIFIERS.has(t));
+  const pool = content.length > 0 ? content : itemToks;
+  return pool.every((t) => fuzzyHas(ans, t));
 }
+
+/** Lead qualifiers carry little distinctive meaning — the head noun does. */
+const HEAD_QUALIFIERS = new Set(
+  [
+    "high", "low", "elevated", "decreased", "mild", "moderate", "severe",
+    "acute", "chronic", "appropriate", "adequate", "concurrent", "primary",
+    "secondary", "partial", "complete", "serial", "early", "late", "initial",
+  ].map(stem),
+);
 
 /**
  * Does the student text match a case-authored concept phrase?

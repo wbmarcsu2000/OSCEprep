@@ -251,34 +251,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Treat immediately — oral fast-acting carbohydrate if able to protect airway, otherwise IV dextrose (D50) (CANT-MISS,8). Recheck glucose and re-treat as needed (5). Because of the sulfonylurea + CKD, observe for PROLONGED/recurrent hypoglycemia; consider octreotide for refractory sulfonylurea-induced hypoglycemia (5). Provide a longer-acting carbohydrate once alert (3). Adjust diabetes regimen and counsel on the precipitant (4). PENALTY: discharging early without prolonged observation given sulfonylurea + CKD (-4).",
-      "idealAnswer": "Plan: Treat immediately — oral fast-acting carbohydrate if able to protect airway, otherwise IV dextrose (D50).",
+      "rubric": "Per MGH inpatient glycemic management: immediate treatment – PO carbohydrate or IV dextrose (D50)/IM glucagon (CANT-MISS,8); recheck glucose in 15 min and repeat (4); identify and treat cause – insulin/sulfonylurea/missed meal/renal/EtOH (5); hold offending agent (3); consider octreotide for sulfonylurea overdose (2); give thiamine before glucose if alcohol use suspected (1). PENALTY: failing to recheck glucose (-2); discharging sulfonylurea hypoglycemia early (-2).",
+      "idealAnswer": "Treat hypoglycemia immediately: if able to take PO, 15–20 g fast carbohydrate; if unable/severe, IV dextrose (D50) or IM glucagon. Recheck glucose in 15 minutes and repeat until >70–80. Identify and treat the cause (insulin/sulfonylurea, missed meal, renal failure, alcohol). Hold the offending agent; for sulfonylurea-induced, observe and consider octreotide.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Treat immediately — oral fast-acting carbohydrate if able to protect airway, otherwise IV dextrose (D50)",
+            "item": "Immediate dextrose/glucagon or oral carbohydrate",
             "points": 8
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Identify and treat the cause",
+            "points": 5
+          },
+          {
+            "item": "Recheck glucose in 15 min and repeat",
+            "points": 4
+          },
+          {
+            "item": "Hold offending agent",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Octreotide for sulfonylurea overdose",
+            "points": 2
+          },
+          {
+            "item": "Thiamine before glucose if alcohol use",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging early without prolonged observation given sulfonylurea + CKD",
-            "points": -4
+            "item": "Failing to recheck glucose",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Treat immediately — oral fast-acting carbohydrate if able to protect airway, otherwise IV dextrose (D50)"
+        "Immediate dextrose/glucagon or oral carbohydrate"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Identify and treat the cause",
+        "Recheck glucose in 15 min and repeat",
+        "Hold offending agent",
+        "Octreotide for sulfonylurea overdose",
+        "Thiamine before glucose if alcohol use"
+      ],
       "unsafeActions": [
-        "discharging early without prolonged observation given sulfonylurea + CKD"
+        "Failing to recheck glucose"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Observe; admit if recurrent/sulfonylurea",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Inpatient Diabetes (Hypoglycemia)",
+        "page": 183
+      }
     }
   ],
   "standardizedPatient": {
@@ -487,10 +520,10 @@
       "Commit to Hypoglycemia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging early without prolonged observation given sulfonylurea + CKD"
+      "Failing to recheck glucose"
     ],
     "managementPearls": [
-      "Treat immediately — oral fast-acting carbohydrate if able to protect airway, otherwise IV dextrose (D50)"
+      "Immediate dextrose/glucagon or oral carbohydrate"
     ],
     "criticalHistoryItems": [
       "medication_nonadherence"
@@ -506,7 +539,7 @@
       "No acute cardiopulmonary process (low yield here; obtained if aspiration suspected)."
     ],
     "criticalManagementItems": [
-      "Treat immediately — oral fast-acting carbohydrate if able to protect airway, otherwise IV dextrose (D50)"
+      "Immediate dextrose/glucagon or oral carbohydrate"
     ],
     "keyImageInterpretationFindings": [
       "Hypokalemia pattern (U waves, ST depression).",

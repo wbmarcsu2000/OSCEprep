@@ -194,6 +194,7 @@ export function gradeStep(
     credited,
     missed,
     penaltiesApplied,
+    mghReference: step.mghReference ?? null,
   };
 }
 

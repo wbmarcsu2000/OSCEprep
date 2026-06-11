@@ -258,34 +258,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Lifelong strict GLUTEN-FREE diet — the definitive treatment (CANT-MISS,9). Dietitian referral (4). Replace deficiencies — iron, vitamin D, folate, B12 as needed (5). Screen for associated conditions (e.g., thyroid disease) and assess bone density (3). Monitor symptoms and serology response on the diet (4). PENALTY: recommending a gluten-free diet before completing diagnostic testing (-3).",
-      "idealAnswer": "Plan: Lifelong strict GLUTEN-FREE diet — the definitive treatment.",
+      "rubric": "Per MGH diarrhea / malabsorption (celiac): lifelong strict gluten-free diet with dietitian referral (CANT-MISS,8); confirm diagnosis – tTG-IgA + biopsy before diet (5); replete deficiencies – iron/B12/folate/vit D/calcium (4); screen for associated autoimmune disease and bone density (3); monitor response (serology/symptoms) (2). PENALTY: starting a gluten-free diet before confirmatory testing (-2); immunosuppression for uncomplicated celiac (-2).",
+      "idealAnswer": "Lifelong strict gluten-free diet is the treatment – refer to a dietitian. Confirm with serology (tTG-IgA with total IgA) and duodenal biopsy before committing to the diet. Replete deficiencies (iron, B12, folate, vitamin D, calcium). Screen for associated conditions (thyroid, type 1 DM) and osteoporosis. Monitor serologies/symptoms for response.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Lifelong strict GLUTEN-FREE diet — the definitive treatment",
-            "points": 9
+            "item": "Lifelong gluten-free diet (dietitian referral)",
+            "points": 8
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Confirm diagnosis before diet (tTG-IgA + biopsy)",
+            "points": 5
+          },
+          {
+            "item": "Replete nutritional deficiencies",
+            "points": 4
+          },
+          {
+            "item": "Screen for associated disease and osteoporosis",
+            "points": 3
+          },
+          {
+            "item": "Monitor response",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Vaccination/health maintenance",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "recommending a gluten-free diet before completing diagnostic testing",
-            "points": -3
+            "item": "Gluten-free diet before confirmatory testing",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Lifelong strict GLUTEN-FREE diet — the definitive treatment"
+        "Lifelong gluten-free diet (dietitian referral)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Confirm diagnosis before diet (tTG-IgA + biopsy)",
+        "Replete nutritional deficiencies",
+        "Screen for associated disease and osteoporosis",
+        "Monitor response",
+        "Vaccination/health maintenance"
+      ],
       "unsafeActions": [
-        "recommending a gluten-free diet before completing diagnostic testing"
+        "Gluten-free diet before confirmatory testing"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Diarrhea (Celiac Disease)",
+        "page": 77
+      }
     }
   ],
   "standardizedPatient": {
@@ -502,10 +535,10 @@
       "Commit to Celiac disease and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "recommending a gluten-free diet before completing diagnostic testing"
+      "Gluten-free diet before confirmatory testing"
     ],
     "managementPearls": [
-      "Lifelong strict GLUTEN-FREE diet — the definitive treatment"
+      "Lifelong gluten-free diet (dietitian referral)"
     ],
     "criticalHistoryItems": [
       "suicidal_ideation"
@@ -519,7 +552,7 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Lifelong strict GLUTEN-FREE diet — the definitive treatment"
+      "Lifelong gluten-free diet (dietitian referral)"
     ],
     "keyImageInterpretationFindings": [
       "Short QT interval (~330 ms).",

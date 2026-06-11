@@ -266,34 +266,70 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Therapeutic thoracentesis / drainage to relieve dyspnea (CANT-MISS,7). Send pleural fluid for cytology, cell count, protein/LDH, culture (5). CT chest and tissue diagnosis; oncology referral (6). Consider indwelling pleural catheter or pleurodesis for recurrence (3). Supportive care / symptom management (3). PENALTY: treating as heart failure with diuretics (an exudate is not a volume problem) (-3); large-volume tap >1–1.5 L at once risking re-expansion edema (-1).",
-      "idealAnswer": "Plan: Therapeutic thoracentesis / drainage to relieve dyspnea.",
+      "rubric": "Per MGH thoracentesis / pleural fluid: therapeutic thoracentesis for symptomatic relief (CANT-MISS,6); send pleural fluid for cytology + Light's criteria (4); definitive control – indwelling pleural catheter or pleurodesis for recurrence (5); treat underlying malignancy / oncology referral (4); interventional pulmonary consult (3). PENALTY: removing very large volume at once risking re-expansion edema without monitoring (-2); anticoagulation/diuresis as primary therapy for a malignant effusion (-2).",
+      "idealAnswer": "Malignant pleural effusion: therapeutic (large-volume) thoracentesis for symptomatic relief, with pleural fluid analysis (cytology, Light's criteria – exudate). For recurrent symptomatic effusion, definitive management with indwelling pleural catheter or chemical pleurodesis. Treat the underlying malignancy; involve oncology and interventional pulmonary.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Therapeutic thoracentesis / drainage to relieve dyspnea",
-            "points": 7
+            "item": "Therapeutic thoracentesis for relief",
+            "points": 6
+          },
+          {
+            "item": "Pleural fluid analysis (cytology, Light's criteria)",
+            "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Indwelling pleural catheter or pleurodesis",
+            "points": 5
+          },
+          {
+            "item": "Treat underlying malignancy / oncology referral",
+            "points": 4
+          },
+          {
+            "item": "Interventional pulmonary consult",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Symptom palliation",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "treating as heart failure with diuretics (an exudate is not a volume problem)",
-            "points": -3
+            "item": "Misclassifying as transudate / diuresis only",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Therapeutic thoracentesis / drainage to relieve dyspnea"
+        "Therapeutic thoracentesis for relief",
+        "Pleural fluid analysis (cytology, Light's criteria)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Indwelling pleural catheter or pleurodesis",
+        "Treat underlying malignancy / oncology referral",
+        "Interventional pulmonary consult",
+        "Symptom palliation"
+      ],
       "unsafeActions": [
-        "treating as heart failure with diuretics (an exudate is not a volume problem)"
+        "Misclassifying as transudate / diuresis only"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Interventional Pulmonary",
+        "Oncology"
+      ],
+      "disposition": "Depends on symptom burden",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Thoracentesis & Pleural Fluid",
+        "page": 261
+      }
     }
   ],
   "standardizedPatient": {
@@ -546,10 +582,11 @@
       "Commit to Malignant pleural effusion and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "treating as heart failure with diuretics (an exudate is not a volume problem)"
+      "Misclassifying as transudate / diuresis only"
     ],
     "managementPearls": [
-      "Therapeutic thoracentesis / drainage to relieve dyspnea"
+      "Therapeutic thoracentesis for relief",
+      "Pleural fluid analysis (cytology, Light's criteria)"
     ],
     "criticalHistoryItems": [
       "suicidal_ideation"
@@ -566,7 +603,8 @@
       "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift."
     ],
     "criticalManagementItems": [
-      "Therapeutic thoracentesis / drainage to relieve dyspnea"
+      "Therapeutic thoracentesis for relief",
+      "Pleural fluid analysis (cytology, Light's criteria)"
     ],
     "keyImageInterpretationFindings": [
       "Low QRS voltage.",

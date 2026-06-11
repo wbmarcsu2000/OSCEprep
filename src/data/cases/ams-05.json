@@ -274,39 +274,69 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Because she is symptomatic and severe: careful hypertonic (3%) saline to raise sodium a small, controlled amount to relieve symptoms (CANT-MISS,7). Correct SLOWLY — respect the correction limit (~6–8 mmol/L per 24h) to avoid osmotic demyelination (CANT-MISS,7). Frequent serial sodium checks (4). Stop the thiazide and address free-water intake (4). Treat underlying cause; admit to monitored setting (3). PENALTY: rapid overcorrection (-4); fluid restriction alone for a severely symptomatic patient (-2).",
-      "idealAnswer": "Plan: Because she is symptomatic and severe: careful hypertonic (3%) saline to raise sodium a small, controlled amount to relieve symptoms; Correct SLOWLY — respect the correction limit (~6–8 mmol/L per 24h) to avoid osmotic demyelination.",
+      "rubric": "Per MGH sodium disorders: 3% hypertonic saline 100 mL bolus for severe symptoms (CANT-MISS,7); limit correction to 6-8 mEq/L per 24 h, avoid ODS (CANT-MISS,6); frequent Na monitoring q2-4h (4); treat underlying cause by volume status (3); DDAVP clamp / relower if overcorrecting (3); nephrology consult for 3% saline (2). PENALTY: overcorrecting >8 mEq/24h / rapid correction (-4); fluid-restricting a seizing patient instead of hypertonic saline (-2).",
+      "idealAnswer": "Severe symptomatic hyponatremia (seizure/AMS): 3% hypertonic saline 100 mL bolus over 10 min, repeat up to 3× until symptoms resolve or Na rises 4–6. Correct no faster than 6–8 mEq/L per 24 h to avoid osmotic demyelination; check Na q2–4h. Treat the underlying cause by volume status (SIADH vs hypovolemia). Use a DDAVP clamp if overcorrecting. Nephrology consult for 3% saline.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Because she is symptomatic and severe: careful hypertonic (3%) saline to raise sodium a small, controlled amount to relieve symptoms",
+            "item": "3% hypertonic saline for severe symptoms",
             "points": 7
           },
           {
-            "item": "Correct SLOWLY — respect the correction limit (~6–8 mmol/L per 24h) to avoid osmotic demyelination",
-            "points": 7
+            "item": "Limit sodium correction rate (avoid ODS)",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Frequent sodium monitoring",
+            "points": 4
+          },
+          {
+            "item": "Treat underlying cause by volume status",
+            "points": 3
+          },
+          {
+            "item": "DDAVP clamp / relower if overcorrecting",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Nephrology consult",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "rapid overcorrection",
+            "item": "Overcorrecting sodium too fast",
             "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Because she is symptomatic and severe: careful hypertonic (3%) saline to raise sodium a small, controlled amount to relieve symptoms",
-        "Correct SLOWLY — respect the correction limit (~6–8 mmol/L per 24h) to avoid osmotic demyelination"
+        "3% hypertonic saline for severe symptoms",
+        "Limit sodium correction rate (avoid ODS)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Frequent sodium monitoring",
+        "Treat underlying cause by volume status",
+        "DDAVP clamp / relower if overcorrecting",
+        "Nephrology consult"
+      ],
       "unsafeActions": [
-        "rapid overcorrection"
+        "Overcorrecting sodium too fast"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Nephrology"
+      ],
+      "disposition": "Admit; ICU/step-down for 3% saline",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Sodium Disorders (Hyponatremia)",
+        "page": 107
+      }
     }
   ],
   "standardizedPatient": {
@@ -539,11 +569,11 @@
       "Commit to Severe hyponatremia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "rapid overcorrection"
+      "Overcorrecting sodium too fast"
     ],
     "managementPearls": [
-      "Because she is symptomatic and severe: careful hypertonic (3%) saline to raise sodium a small, controlled amount to relieve symptoms",
-      "Correct SLOWLY — respect the correction limit (~6–8 mmol/L per 24h) to avoid osmotic demyelination"
+      "3% hypertonic saline for severe symptoms",
+      "Limit sodium correction rate (avoid ODS)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -558,8 +588,8 @@
       "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here."
     ],
     "criticalManagementItems": [
-      "Because she is symptomatic and severe: careful hypertonic (3%) saline to raise sodium a small, controlled amount to relieve symptoms",
-      "Correct SLOWLY — respect the correction limit (~6–8 mmol/L per 24h) to avoid osmotic demyelination"
+      "3% hypertonic saline for severe symptoms",
+      "Limit sodium correction rate (avoid ODS)"
     ],
     "keyImageInterpretationFindings": [
       "Prolonged QTc (~520 ms).",

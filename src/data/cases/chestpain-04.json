@@ -267,34 +267,77 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "High-dose NSAID — e.g., ibuprofen or aspirin (CANT-MISS,7). Colchicine to reduce recurrence (7). Activity restriction until symptom/marker resolution (4). Treat/identify underlying cause (3). Monitor for effusion/tamponade; arrange follow-up echo (4). PPI for gastric protection with NSAID (2). PENALTY: anticoagulation (raises hemorrhagic effusion risk) (-2); discharging without follow-up given troponin elevation (-2).",
-      "idealAnswer": "Plan: ibuprofen or aspirin.",
+      "rubric": "Per MGH pericardial disease: NSAID (high-dose ibuprofen/ASA) (CANT-MISS,6); colchicine added to NSAID, reduces recurrence (CANT-MISS,6); PPI gastroprotection (2); activity restriction (2); echocardiogram to assess for effusion/tamponade (3); treat underlying cause (2). PENALTY: corticosteroids first-line (increase recurrence) (-3); anticoagulation with a pericardial effusion (-3).",
+      "idealAnswer": "High-dose NSAID (ibuprofen/aspirin) PLUS colchicine as first-line therapy, with a PPI for gastric protection. Activity restriction. Treat the underlying cause; avoid anticoagulation. Echocardiography to exclude effusion/tamponade. Reserve corticosteroids for refractory or specific etiologies.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "ibuprofen or aspirin",
-            "points": 7
+            "item": "NSAID (high-dose ibuprofen/ASA)",
+            "points": 6
+          },
+          {
+            "item": "Colchicine",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Echocardiogram for effusion/tamponade",
+            "points": 3
+          },
+          {
+            "item": "PPI gastroprotection",
+            "points": 2
+          },
+          {
+            "item": "Activity restriction",
+            "points": 2
+          },
+          {
+            "item": "Treat underlying cause",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Outpatient follow-up",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "anticoagulation (raises hemorrhagic effusion risk)",
-            "points": -2
+            "item": "Corticosteroids first-line",
+            "points": -3
+          },
+          {
+            "item": "Anticoagulation with effusion",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "ibuprofen or aspirin"
+        "NSAID (high-dose ibuprofen/ASA)",
+        "Colchicine"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Echocardiogram for effusion/tamponade",
+        "PPI gastroprotection",
+        "Activity restriction",
+        "Treat underlying cause",
+        "Outpatient follow-up"
+      ],
       "unsafeActions": [
-        "anticoagulation (raises hemorrhagic effusion risk)"
+        "Corticosteroids first-line",
+        "Anticoagulation with effusion"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Usually outpatient; admit if high-risk features",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pericardial Disease",
+        "page": 34
+      }
     }
   ],
   "images": {
@@ -563,10 +606,12 @@
       "Commit to Acute pericarditis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "anticoagulation (raises hemorrhagic effusion risk)"
+      "Corticosteroids first-line",
+      "Anticoagulation with effusion"
     ],
     "managementPearls": [
-      "ibuprofen or aspirin"
+      "NSAID (high-dose ibuprofen/ASA)",
+      "Colchicine"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -580,7 +625,8 @@
       "Normal cardiac silhouette, clear lung fields."
     ],
     "criticalManagementItems": [
-      "ibuprofen or aspirin"
+      "NSAID (high-dose ibuprofen/ASA)",
+      "Colchicine"
     ],
     "keyImageInterpretationFindings": [
       "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",

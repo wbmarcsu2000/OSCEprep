@@ -287,34 +287,75 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "After cultures, prolonged IV antibiotics — empiric coverage for staph (incl. MRSA) and strep, then tailored to cultures/sensitivities (CANT-MISS,8). Cardiology AND infectious disease consultation (5). Echocardiography to assess vegetation/abscess/valve function (4). Surgical evaluation for heart failure, perivalvular abscess, large/mobile vegetations, or refractory infection (4). Address the source; monitor for embolic complications (3). PENALTY: short-course oral antibiotics or failing to involve cardiology/surgery for complications (-2).",
-      "idealAnswer": "Plan: MRSA) and strep, then tailored to cultures/sensitivities.",
+      "rubric": "Per MGH empiric antibiotics (endocarditis): obtain ≥3 sets of blood cultures from separate sites before antibiotics (CANT-MISS,5); empiric vancomycin + ceftriaxone (native) (CANT-MISS,6); echocardiography TTE→TEE (4); early ID consult (4); assess surgical indications – HF/abscess/persistent bacteremia (3); evaluate embolic foci (2). PENALTY: starting antibiotics before cultures in a stable patient (-3); MSSA treated with vancomycin when beta-lactam available (-1).",
+      "idealAnswer": "Obtain ≥3 sets of blood cultures from separate sites before antibiotics. Empiric therapy for native-valve IE: vancomycin + ceftriaxone (prosthetic: add gentamicin + rifampin – ask ID). Echocardiography (TTE then TEE). Early Infectious Disease consult improves mortality. Evaluate for embolic/metastatic foci and indications for surgery (HF, abscess, persistent bacteremia, large vegetation).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "MRSA) and strep, then tailored to cultures/sensitivities",
-            "points": 8
+            "item": "Multiple blood cultures before antibiotics",
+            "points": 5
+          },
+          {
+            "item": "Empiric vancomycin + ceftriaxone",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Echocardiography (TTE then TEE)",
+            "points": 4
+          },
+          {
+            "item": "Early ID consult",
+            "points": 4
+          },
+          {
+            "item": "Assess surgical indications",
+            "points": 3
+          },
+          {
+            "item": "Evaluate for embolic foci",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Source/dental evaluation",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "short-course oral antibiotics or failing to involve cardiology/surgery for complications",
-            "points": -2
+            "item": "Antibiotics before cultures (stable patient)",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "MRSA) and strep, then tailored to cultures/sensitivities"
+        "Multiple blood cultures before antibiotics",
+        "Empiric vancomycin + ceftriaxone"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Echocardiography (TTE then TEE)",
+        "Early ID consult",
+        "Assess surgical indications",
+        "Evaluate for embolic foci",
+        "Source/dental evaluation"
+      ],
       "unsafeActions": [
-        "short-course oral antibiotics or failing to involve cardiology/surgery for complications"
+        "Antibiotics before cultures (stable patient)"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Infectious Disease",
+        "Cardiology / Cardiac Surgery"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Empiric Antibiotics & Antibiogram (Endocarditis)",
+        "page": 113
+      }
     }
   ],
   "standardizedPatient": {
@@ -540,10 +581,11 @@
       "Commit to Infective endocarditis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "short-course oral antibiotics or failing to involve cardiology/surgery for complications"
+      "Antibiotics before cultures (stable patient)"
     ],
     "managementPearls": [
-      "MRSA) and strep, then tailored to cultures/sensitivities"
+      "Multiple blood cultures before antibiotics",
+      "Empiric vancomycin + ceftriaxone"
     ],
     "criticalHistoryItems": [
       "drug_use"
@@ -560,7 +602,8 @@
       "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
     ],
     "criticalManagementItems": [
-      "MRSA) and strep, then tailored to cultures/sensitivities"
+      "Multiple blood cultures before antibiotics",
+      "Empiric vancomycin + ceftriaxone"
     ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",

@@ -253,34 +253,80 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "EXCLUDE infection first, then treat the flare (CANT-MISS,5). Corticosteroids (oral or IV depending on severity) for the acute flare (7). 5-aminosalicylates for mild-moderate disease / maintenance (4). IV fluids, correct anemia/electrolytes, VTE prophylaxis (3). Monitor for toxic megacolon; involve gastroenterology; biologics for steroid-refractory disease (4). Avoid antimotility agents (2). PENALTY: immunosuppressing before excluding infection (-3); antimotility agents (megacolon risk) (-2).",
-      "idealAnswer": "Plan: EXCLUDE infection first, then treat the flare.",
+      "rubric": "Per MGH IBD: IV corticosteroids first-line for severe flare (CANT-MISS,7); rule out infection/C. diff before escalating (CANT-MISS,4); VTE prophylaxis (3); avoid antimotility/opioids/NSAIDs (3); rescue therapy (infliximab/cyclosporine) if steroid-refractory (4); surgery consult for toxic megacolon/perforation/refractory (2); GI consult (2). PENALTY: antimotility/opioids precipitating toxic megacolon (-3); escalating immunosuppression without excluding infection (-2).",
+      "idealAnswer": "Acute severe UC flare: admit; IV corticosteroids (methylprednisolone) first-line. Rule out infection (stool studies, C. diff) and toxic megacolon (abdominal imaging). VTE prophylaxis (high thrombotic risk). Avoid antimotility/opioids/NSAIDs. If steroid-refractory by day 3–5: rescue with infliximab or cyclosporine; surgery consult for refractory disease/perforation/toxic megacolon. GI consult.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "EXCLUDE infection first, then treat the flare",
-            "points": 5
+            "item": "IV corticosteroids",
+            "points": 7
+          },
+          {
+            "item": "Exclude infection / C. diff",
+            "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Rescue therapy (infliximab/cyclosporine) if refractory",
+            "points": 4
+          },
+          {
+            "item": "VTE prophylaxis",
+            "points": 3
+          },
+          {
+            "item": "Avoid antimotility/opioids/NSAIDs",
+            "points": 3
+          },
+          {
+            "item": "Surgery consult for toxic megacolon/refractory",
+            "points": 2
+          },
+          {
+            "item": "GI consult",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Nutrition / supportive care",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "immunosuppressing before excluding infection",
+            "item": "Antimotility precipitating toxic megacolon",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "EXCLUDE infection first, then treat the flare"
+        "IV corticosteroids",
+        "Exclude infection / C. diff"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Rescue therapy (infliximab/cyclosporine) if refractory",
+        "VTE prophylaxis",
+        "Avoid antimotility/opioids/NSAIDs",
+        "Surgery consult for toxic megacolon/refractory",
+        "GI consult",
+        "Nutrition / supportive care"
+      ],
       "unsafeActions": [
-        "immunosuppressing before excluding infection"
+        "Antimotility precipitating toxic megacolon"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Gastroenterology",
+        "Surgery"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Inflammatory Bowel Disease (UC flare)",
+        "page": 81
+      }
     }
   ],
   "standardizedPatient": {
@@ -478,10 +524,11 @@
       "Commit to Ulcerative colitis flare and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "immunosuppressing before excluding infection"
+      "Antimotility precipitating toxic megacolon"
     ],
     "managementPearls": [
-      "EXCLUDE infection first, then treat the flare"
+      "IV corticosteroids",
+      "Exclude infection / C. diff"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -495,7 +542,8 @@
       "No colonic dilation here (used to screen for toxic megacolon in severe flares)."
     ],
     "criticalManagementItems": [
-      "EXCLUDE infection first, then treat the flare"
+      "IV corticosteroids",
+      "Exclude infection / C. diff"
     ],
     "keyImageInterpretationFindings": [
       "Incomplete right bundle branch block.",

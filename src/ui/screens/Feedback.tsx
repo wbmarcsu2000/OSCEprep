@@ -108,6 +108,23 @@ function SectionDetail({
             </p>
           </div>
         )}
+        {section.mghReference && (
+          <div>
+            <div className="panel-label mb-1.5">Reference</div>
+            <div
+              className="rounded-lg border p-3 text-[13px] leading-relaxed flex items-start gap-2"
+              style={{ borderColor: "var(--color-exam-border)", background: "#fafbfd" }}
+            >
+              <span aria-hidden>📖</span>
+              <span>
+                Management aligned to the{" "}
+                <span className="font-semibold">{section.mghReference.manual}</span> —{" "}
+                {section.mghReference.section},{" "}
+                <span className="font-semibold">p.&nbsp;{section.mghReference.page}</span>.
+              </span>
+            </div>
+          </div>
+        )}
         {breadth && (
           <div>
             <div className="panel-label mb-2">

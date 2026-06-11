@@ -190,27 +190,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "NSAIDs for analgesia (CANT-MISS,7). Activity modification / relative rest, local heat (6). Reassurance and clear return precautions (8). Outpatient follow-up if not improving (4). Avoids unnecessary admission or cardiac procedures (4).",
-      "idealAnswer": "Plan: NSAIDs for analgesia.",
+      "rubric": "Per MGH chest pain algorithm (MSK/costochondritis): reassurance once dangerous causes excluded (CANT-MISS,6); NSAIDs/acetaminophen for analgesia (6); activity modification / local heat (3); confirm reproducible chest-wall tenderness, low-risk features (4); return precautions (2). PENALTY: anticoagulation or admission for a benign MSK cause (-3); ordering serial troponins/CTA without indication (-2).",
+      "idealAnswer": "Reassurance after exclusion of cardiac/pulmonary causes. NSAIDs or acetaminophen for pain. Activity modification and local heat. No cardiac workup beyond what excludes dangerous causes. Return precautions.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "NSAIDs for analgesia",
-            "points": 7
+            "item": "Reassurance after excluding dangerous causes",
+            "points": 6
+          },
+          {
+            "item": "NSAIDs/acetaminophen",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
-        "penalties": []
+        "coreActions": [
+          {
+            "item": "Confirm reproducible chest-wall tenderness",
+            "points": 4
+          },
+          {
+            "item": "Activity modification / local heat",
+            "points": 3
+          },
+          {
+            "item": "Return precautions",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Patient education on benign course",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Unnecessary admission/anticoagulation",
+            "points": -3
+          },
+          {
+            "item": "Unnecessary cardiac imaging",
+            "points": -2
+          }
+        ]
       },
       "requiredActions": [
-        "NSAIDs for analgesia"
+        "Reassurance after excluding dangerous causes",
+        "NSAIDs/acetaminophen"
       ],
-      "optionalActions": [],
-      "unsafeActions": [],
+      "optionalActions": [
+        "Confirm reproducible chest-wall tenderness",
+        "Activity modification / local heat",
+        "Return precautions",
+        "Patient education on benign course"
+      ],
+      "unsafeActions": [
+        "Unnecessary admission/anticoagulation",
+        "Unnecessary cardiac imaging"
+      ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Discharge home",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Chest Pain (musculoskeletal causes)",
+        "page": 16
+      }
     }
   ],
   "images": {
@@ -466,10 +511,12 @@
       "Commit to Costochondritis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "Anchoring before excluding dangerous alternatives"
+      "Unnecessary admission/anticoagulation",
+      "Unnecessary cardiac imaging"
     ],
     "managementPearls": [
-      "NSAIDs for analgesia"
+      "Reassurance after excluding dangerous causes",
+      "NSAIDs/acetaminophen"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -481,7 +528,8 @@
       "No acute cardiopulmonary process (if ordered)."
     ],
     "criticalManagementItems": [
-      "NSAIDs for analgesia"
+      "Reassurance after excluding dangerous causes",
+      "NSAIDs/acetaminophen"
     ],
     "keyImageInterpretationFindings": [
       "Nonspecific lateral T-wave inversions.",

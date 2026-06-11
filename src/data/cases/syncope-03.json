@@ -277,46 +277,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Admit to a monitored/telemetry setting (CANT-MISS,4). Identify and stop reversible causes — hold AV-nodal blockers (e.g., metoprolol), correct electrolytes (5). If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing (CANT-MISS,6). Urgent cardiology consult for PERMANENT PACEMAKER (CANT-MISS,7). Treat any ischemia (3). PENALTY: discharging the patient (-5); giving more AV-nodal-blocking agents (-2).",
-      "idealAnswer": "Plan: Admit to a monitored/telemetry setting; If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing; Urgent cardiology consult for PERMANENT PACEMAKER.",
+      "rubric": "Per MGH syncope / pacing: continuous telemetry monitoring (CANT-MISS,4); transcutaneous/transvenous pacing for unstable bradycardia (CANT-MISS,6); cardiology consult for permanent pacemaker (CANT-MISS,5); atropine as temporizing (3); hold AV-nodal blocking agents (3); treat reversible causes (2). PENALTY: discharging complete heart block (-4); giving more AV-nodal blockers (-2).",
+      "idealAnswer": "Telemetry and continuous monitoring. For symptomatic/unstable bradycardia: atropine, then transcutaneous pacing, and a temporary transvenous pacer as a bridge. Hold AV-nodal blocking agents. Cardiology consult for permanent pacemaker (definitive therapy). Treat reversible causes (ischemia, electrolytes, drug toxicity).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Admit to a monitored/telemetry setting",
+            "item": "Continuous telemetry monitoring",
             "points": 4
           },
           {
-            "item": "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
+            "item": "Pacing (transcutaneous/transvenous)",
             "points": 6
           },
           {
-            "item": "Urgent cardiology consult for PERMANENT PACEMAKER",
-            "points": 7
+            "item": "Cardiology consult for permanent pacemaker",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Atropine as temporizing measure",
+            "points": 3
+          },
+          {
+            "item": "Hold AV-nodal blocking agents",
+            "points": 3
+          },
+          {
+            "item": "Treat reversible causes",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Identify ischemia as cause",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging the patient",
-            "points": -5
+            "item": "Discharging complete heart block",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Admit to a monitored/telemetry setting",
-        "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
-        "Urgent cardiology consult for PERMANENT PACEMAKER"
+        "Continuous telemetry monitoring",
+        "Pacing (transcutaneous/transvenous)",
+        "Cardiology consult for permanent pacemaker"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Atropine as temporizing measure",
+        "Hold AV-nodal blocking agents",
+        "Treat reversible causes",
+        "Identify ischemia as cause"
+      ],
       "unsafeActions": [
-        "discharging the patient"
+        "Discharging complete heart block"
       ],
       "consults": [
-        "Urgent cardiology consult for PERMANENT PACEMAKER"
+        "Cardiology / EP"
       ],
-      "disposition": "Admit to a monitored/telemetry setting"
+      "disposition": "Admit; monitored bed",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Syncope (Complete Heart Block)",
+        "page": 37
+      }
     }
   ],
   "standardizedPatient": {
@@ -515,12 +543,12 @@
       "Commit to Complete heart block and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging the patient"
+      "Discharging complete heart block"
     ],
     "managementPearls": [
-      "Admit to a monitored/telemetry setting",
-      "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
-      "Urgent cardiology consult for PERMANENT PACEMAKER"
+      "Continuous telemetry monitoring",
+      "Pacing (transcutaneous/transvenous)",
+      "Cardiology consult for permanent pacemaker"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -533,9 +561,9 @@
       "No acute cardiopulmonary process (mainly to assess heart size / exclude other causes)."
     ],
     "criticalManagementItems": [
-      "Admit to a monitored/telemetry setting",
-      "If unstable/symptomatic bradycardia: atropine and TRANSCUTANEOUS pacing, prepare for transvenous pacing",
-      "Urgent cardiology consult for PERMANENT PACEMAKER"
+      "Continuous telemetry monitoring",
+      "Pacing (transcutaneous/transvenous)",
+      "Cardiology consult for permanent pacemaker"
     ],
     "keyImageInterpretationFindings": [
       "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",

@@ -320,32 +320,84 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "IV loop diuretic (CANT-MISS,6; accepts IV furosemide/Lasix/diuresis). Daily weights & strict I/Os (3). Supplemental O2 prn (2). Na & fluid restriction (3). Order echo (3). GDMT optimization (4; ARNI/ACE/ARB/beta blocker/MRA/SGLT2). Address precipitant + adherence counseling (2). Telemetry/cards follow-up (bonus,2). PENALTY: IV fluids/bolus to a volume-overloaded patient (-4).",
-      "idealAnswer": "Plan: .",
+      "rubric": "Per MGH ADHF management: IV loop diuretic 2-2.5× home dose, IV (CANT-MISS,7); strict I/O + daily standing weights (3); 2 g Na-restricted diet (2); O2 / NIPPV for pulmonary edema (3); continue GDMT, do NOT newly initiate beta blocker while decompensated (4); identify and treat precipitant (3); DVT prophylaxis (1). PENALTY: newly starting/uptitrating a beta blocker during decompensation (-3); CCB/NSAID in HFrEF (-2); aggressive IVF bolus in a wet patient (-2).",
+      "idealAnswer": "IV loop diuretic at 2–2.5× the home oral dose (furosemide/torsemide/bumetanide) with strict I/Os and daily weights; 2 g Na restriction; daily NT-proBNP/weights. Supplemental O2, NIPPV if pulmonary edema. Continue/optimize GDMT (do not newly start a beta blocker during decompensation). Identify and treat the precipitant. Avoid CCB/NSAIDs. DVT prophylaxis.",
       "scoring": {
         "maxPoints": 25,
-        "criticalActions": [],
-        "coreActions": [],
+        "criticalActions": [
+          {
+            "item": "IV loop diuretic",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Strict I/O and daily weights",
+            "points": 3
+          },
+          {
+            "item": "Supplemental O2 / NIPPV",
+            "points": 3
+          },
+          {
+            "item": "Continue/optimize GDMT",
+            "points": 4
+          },
+          {
+            "item": "Identify and treat precipitant",
+            "points": 3
+          },
+          {
+            "item": "Sodium restriction",
+            "points": 2
+          }
+        ],
         "bonusActions": [
           {
-            "item": "Telemetry/cards follow-up",
-            "points": 2
+            "item": "DVT prophylaxis",
+            "points": 1
+          },
+          {
+            "item": "Screen and treat iron deficiency",
+            "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "IV fluids/bolus to a volume-overloaded patient",
-            "points": -4
+            "item": "Newly starting beta blocker while decompensated",
+            "points": -3
+          },
+          {
+            "item": "CCB or NSAID in HFrEF",
+            "points": -2
           }
         ]
       },
-      "requiredActions": [],
-      "optionalActions": [],
-      "unsafeActions": [
-        "IV fluids/bolus to a volume-overloaded patient"
+      "requiredActions": [
+        "IV loop diuretic"
       ],
-      "consults": [],
-      "disposition": ""
+      "optionalActions": [
+        "Strict I/O and daily weights",
+        "Supplemental O2 / NIPPV",
+        "Continue/optimize GDMT",
+        "Identify and treat precipitant",
+        "Sodium restriction",
+        "DVT prophylaxis",
+        "Screen and treat iron deficiency"
+      ],
+      "unsafeActions": [
+        "Newly starting beta blocker while decompensated",
+        "CCB or NSAID in HFrEF"
+      ],
+      "consults": [
+        "Cardiology"
+      ],
+      "disposition": "Admit (SDU if EF<25, NTproBNP≥2500, or arrhythmia)",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Inpatient Heart Failure (ADHF)",
+        "page": 26
+      }
     }
   ],
   "standardizedPatient": {
@@ -688,9 +740,12 @@
       "Commit to Acute decompensated heart failure (HFrEF) and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "IV fluids/bolus to a volume-overloaded patient"
+      "Newly starting beta blocker while decompensated",
+      "CCB or NSAID in HFrEF"
     ],
-    "managementPearls": [],
+    "managementPearls": [
+      "IV loop diuretic"
+    ],
     "criticalHistoryItems": [
       "medication_nonadherence"
     ],
@@ -707,7 +762,9 @@
       "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
       "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
     ],
-    "criticalManagementItems": [],
+    "criticalManagementItems": [
+      "IV loop diuretic"
+    ],
     "keyImageInterpretationFindings": [
       "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
       "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."

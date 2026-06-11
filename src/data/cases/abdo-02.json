@@ -263,36 +263,69 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "NPO (3). IV fluids (4). Analgesia and antiemetics (4). IV antibiotics (5). Surgical consult for cholecystectomy, ideally early (CANT-MISS,7). Admit (2). PENALTY: discharging without surgical evaluation (-3).",
-      "idealAnswer": "Plan: Surgical consult for cholecystectomy, ideally early.",
+      "rubric": "Per MGH biliary disease: NPO + IV fluids (CANT-MISS,4); antibiotics – Zosyn or CTX/metronidazole (CANT-MISS,5); early laparoscopic cholecystectomy during admission (6); surgery consult (4); percutaneous cholecystostomy if high surgical risk and failing abx (3); analgesia (2). PENALTY: discharging without source-control plan (-3).",
+      "idealAnswer": "NPO, IV fluids, analgesia. Antibiotics – piperacillin-tazobactam OR ceftriaxone + metronidazole. Early (<7 day) laparoscopic cholecystectomy during the admission; percutaneous cholecystostomy if too high-risk for surgery and failing antibiotics. Surgery consult.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Surgical consult for cholecystectomy, ideally early",
-            "points": 7
+            "item": "NPO and IV fluids",
+            "points": 4
+          },
+          {
+            "item": "Antibiotics",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Early laparoscopic cholecystectomy",
+            "points": 6
+          },
+          {
+            "item": "Surgery consult",
+            "points": 4
+          },
+          {
+            "item": "Analgesia",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Percutaneous cholecystostomy if high-risk",
+            "points": 3
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging without surgical evaluation",
+            "item": "No source-control plan",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Surgical consult for cholecystectomy, ideally early"
+        "NPO and IV fluids",
+        "Antibiotics"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Early laparoscopic cholecystectomy",
+        "Surgery consult",
+        "Analgesia",
+        "Percutaneous cholecystostomy if high-risk"
+      ],
       "unsafeActions": [
-        "discharging without surgical evaluation"
+        "No source-control plan"
       ],
       "consults": [
-        "Surgical consult for cholecystectomy, ideally early"
+        "Surgery"
       ],
-      "disposition": ""
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Biliary Disease (Cholecystitis)",
+        "page": 88
+      }
     }
   ],
   "standardizedPatient": {
@@ -562,10 +595,11 @@
       "Commit to Acute cholecystitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging without surgical evaluation"
+      "No source-control plan"
     ],
     "managementPearls": [
-      "Surgical consult for cholecystectomy, ideally early"
+      "NPO and IV fluids",
+      "Antibiotics"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -581,7 +615,8 @@
       "No free air under the diaphragm; clear lung bases (excludes perforation and lower-lobe pneumonia)."
     ],
     "criticalManagementItems": [
-      "Surgical consult for cholecystectomy, ideally early"
+      "NPO and IV fluids",
+      "Antibiotics"
     ],
     "keyImageInterpretationFindings": [
       "Mobitz I (Wenckebach) second-degree AV block.",

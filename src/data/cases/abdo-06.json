@@ -279,36 +279,75 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Emergent surgical + vascular/IR consultation for revascularization (CANT-MISS,8). Aggressive IV fluid resuscitation (4). Broad-spectrum IV antibiotics (4). Systemic anticoagulation (heparin) (4). NPO, NG decompression, analgesia (3). PENALTY: observation/discharge or attributing to simple gastroenteritis (delay is fatal) (-5).",
-      "idealAnswer": "Plan: Emergent surgical + vascular/IR consultation for revascularization.",
+      "rubric": "Per MGH abdominal pain (vascular infarct, 'can't-miss'): aggressive IV fluid resuscitation (CANT-MISS,5); STAT surgery + vascular/IR consult for revascularization (CANT-MISS,6); broad-spectrum antibiotics (4); systemic anticoagulation/heparin (4); NPO + NG decompression (3); CT angiography (2). PENALTY: discharging 'pain out of proportion' (-4); splanchnic vasoconstrictors worsening ischemia (-2).",
+      "idealAnswer": "Surgical/vascular emergency: pain out of proportion to exam. Aggressive IV fluid resuscitation, broad-spectrum antibiotics, NPO, NG decompression. Systemic anticoagulation (heparin). STAT surgery and vascular/IR consults for revascularization or resection. CT angiography. Avoid vasopressors that worsen splanchnic flow.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Emergent surgical + vascular/IR consultation for revascularization",
-            "points": 8
+            "item": "Aggressive IV fluid resuscitation",
+            "points": 5
+          },
+          {
+            "item": "STAT surgery / vascular consult for revascularization",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Broad-spectrum antibiotics",
+            "points": 4
+          },
+          {
+            "item": "Systemic anticoagulation (heparin)",
+            "points": 4
+          },
+          {
+            "item": "NPO and NG decompression",
+            "points": 3
+          },
+          {
+            "item": "CT angiography",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Serial lactate monitoring",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "observation/discharge or attributing to simple gastroenteritis (delay is fatal)",
-            "points": -5
+            "item": "Discharging pain out of proportion",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Emergent surgical + vascular/IR consultation for revascularization"
+        "Aggressive IV fluid resuscitation",
+        "STAT surgery / vascular consult for revascularization"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Broad-spectrum antibiotics",
+        "Systemic anticoagulation (heparin)",
+        "NPO and NG decompression",
+        "CT angiography",
+        "Serial lactate monitoring"
+      ],
       "unsafeActions": [
-        "observation/discharge or attributing to simple gastroenteritis (delay is fatal)"
+        "Discharging pain out of proportion"
       ],
       "consults": [
-        "Emergent surgical + vascular/IR consultation for revascularization"
+        "Surgery",
+        "Vascular Surgery / IR"
       ],
-      "disposition": ""
+      "disposition": "Emergent; OR",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Abdominal Pain (Mesenteric Ischemia)",
+        "page": 72
+      }
     }
   ],
   "standardizedPatient": {
@@ -530,10 +569,11 @@
       "Commit to Acute mesenteric ischemia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "observation/discharge or attributing to simple gastroenteritis (delay is fatal)"
+      "Discharging pain out of proportion"
     ],
     "managementPearls": [
-      "Emergent surgical + vascular/IR consultation for revascularization"
+      "Aggressive IV fluid resuscitation",
+      "STAT surgery / vascular consult for revascularization"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -549,7 +589,8 @@
       "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
     ],
     "criticalManagementItems": [
-      "Emergent surgical + vascular/IR consultation for revascularization"
+      "Aggressive IV fluid resuscitation",
+      "STAT surgery / vascular consult for revascularization"
     ],
     "keyImageInterpretationFindings": [
       "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",

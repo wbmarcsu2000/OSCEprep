@@ -265,27 +265,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Uncomplicated: bowel rest / clear liquids, analgesia (6). Antibiotics for selected patients (e.g., systemic symptoms/comorbidity) — note evidence supports selective use (6). Outpatient vs admission decision based on tolerance/comorbidity (5). Interval colonoscopy 6–8 weeks after resolution (4). Complicated disease (abscess → drainage; perforation → surgery) (3). PENALTY: urgent colonoscopy during the acute episode (-3).",
-      "idealAnswer": "Plan: .",
+      "rubric": "Per MGH abdominal pain / intra-abdominal infection: antibiotics covering GNR + anaerobes – cipro+metronidazole or amox-clav (CANT-MISS,6); bowel rest / diet advancement (4); analgesia (3); CT + drainage + surgery if complicated (abscess/perforation) (5); interval colonoscopy after resolution (3). PENALTY: missing complicated disease needing drainage/surgery (-3).",
+      "idealAnswer": "Uncomplicated diverticulitis: bowel rest/clear liquids, analgesia, and antibiotics covering GNRs + anaerobes (ciprofloxacin + metronidazole, or amoxicillin-clavulanate). Complicated disease (abscess, perforation, obstruction) → CT, IV antibiotics, drainage of abscess, surgical evaluation. Outpatient colonoscopy 6–8 weeks after resolution.",
       "scoring": {
         "maxPoints": 25,
-        "criticalActions": [],
-        "coreActions": [],
-        "bonusActions": [],
+        "criticalActions": [
+          {
+            "item": "Antibiotics",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Bowel rest / diet advancement",
+            "points": 4
+          },
+          {
+            "item": "CT and drainage/surgery if complicated",
+            "points": 5
+          },
+          {
+            "item": "Analgesia",
+            "points": 3
+          },
+          {
+            "item": "Interval colonoscopy after resolution",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Outpatient management if uncomplicated",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "urgent colonoscopy during the acute episode",
+            "item": "Missing complicated disease",
             "points": -3
           }
         ]
       },
-      "requiredActions": [],
-      "optionalActions": [],
+      "requiredActions": [
+        "Antibiotics"
+      ],
+      "optionalActions": [
+        "Bowel rest / diet advancement",
+        "CT and drainage/surgery if complicated",
+        "Analgesia",
+        "Interval colonoscopy after resolution",
+        "Outpatient management if uncomplicated"
+      ],
       "unsafeActions": [
-        "urgent colonoscopy during the acute episode"
+        "Missing complicated disease"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit if complicated/unable to tolerate PO",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Abdominal Pain (Diverticulitis)",
+        "page": 72
+      }
     }
   ],
   "standardizedPatient": {
@@ -531,9 +571,11 @@
       "Commit to Diverticulitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "urgent colonoscopy during the acute episode"
+      "Missing complicated disease"
     ],
-    "managementPearls": [],
+    "managementPearls": [
+      "Antibiotics"
+    ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "assess_cva_tenderness",
@@ -546,7 +588,9 @@
       "Normal sinus rhythm; no acute changes.",
       "No free air under the diaphragm; clear lung bases (excludes perforation)."
     ],
-    "criticalManagementItems": [],
+    "criticalManagementItems": [
+      "Antibiotics"
+    ],
     "keyImageInterpretationFindings": [
       "Frequent premature atrial complexes.",
       "Old healed rib fractures (callus)."

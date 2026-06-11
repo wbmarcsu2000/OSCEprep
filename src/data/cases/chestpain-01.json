@@ -264,34 +264,84 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Aspirin (CANT-MISS,4). P2Y12 inhibitor / dual antiplatelet (5). Anticoagulation — heparin/LMWH (5). High-intensity statin (3). Anti-anginal: beta blocker and/or nitrates (4; caution if hypotensive). Cardiology consult / risk-stratify for catheterization (5). Telemetry and serial troponins (3). PENALTY: thrombolytics for NSTEMI (-3); discharging the patient (-3).",
-      "idealAnswer": "Plan: Aspirin.",
+      "rubric": "Per MGH ACS adjuncts: ASA load (CANT-MISS,4); anticoagulation – UFH/LMWH/fondaparinux started on dx (5); high-intensity statin atorvastatin 80 (3); beta blocker within 24 h, caution in decompensated HF/bradycardia/hypotension (3); ACEi/ARB within 24 h (2); nitrates for ischemic pain (2); cardiology consult / early invasive (GRACE) cath (5); telemetry + serial troponin (2); P2Y12 only with cardiology (1). PENALTY: thrombolytics for NSTEMI (-4); beta blocker in shock/cocaine/decompensated HF (-2).",
+      "idealAnswer": "Aspirin 325 mg load; start anticoagulation (UFH/LMWH) on diagnosis of ACS; high-intensity statin (atorvastatin 80 mg); beta blocker within 24 h (if no contraindication); ACEi/ARB within 24 h; nitrates for ongoing pain; hold P2Y12 load until discussed with cardiology; cardiology consult for early invasive risk stratification (GRACE) and catheterization; telemetry with serial troponins.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Aspirin",
             "points": 4
+          },
+          {
+            "item": "Anticoagulation (heparin/LMWH)",
+            "points": 5
+          },
+          {
+            "item": "Cardiology consult / early invasive cath",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "High-intensity statin",
+            "points": 3
+          },
+          {
+            "item": "Beta blocker within",
+            "points": 3
+          },
+          {
+            "item": "ACEi/ARB",
+            "points": 2
+          },
+          {
+            "item": "Telemetry and serial troponin",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Nitrates for ischemic pain",
+            "points": 1
+          },
+          {
+            "item": "P2Y12 inhibitor with cardiology",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "thrombolytics for NSTEMI",
-            "points": -3
+            "item": "Thrombolytics for NSTEMI",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Aspirin"
+        "Aspirin",
+        "Anticoagulation (heparin/LMWH)",
+        "Cardiology consult / early invasive cath"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "High-intensity statin",
+        "Beta blocker within",
+        "ACEi/ARB",
+        "Telemetry and serial troponin",
+        "Nitrates for ischemic pain",
+        "P2Y12 inhibitor with cardiology"
+      ],
       "unsafeActions": [
-        "thrombolytics for NSTEMI"
+        "Thrombolytics for NSTEMI"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Cardiology"
+      ],
+      "disposition": "Admit to telemetry/cardiology",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Acute Coronary Syndrome",
+        "page": 18
+      }
     }
   ],
   "images": {
@@ -559,10 +609,12 @@
       "Commit to NSTEMI and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "thrombolytics for NSTEMI"
+      "Thrombolytics for NSTEMI"
     ],
     "managementPearls": [
-      "Aspirin"
+      "Aspirin",
+      "Anticoagulation (heparin/LMWH)",
+      "Cardiology consult / early invasive cath"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -577,7 +629,9 @@
       "No acute cardiopulmonary process; normal cardiac silhouette."
     ],
     "criticalManagementItems": [
-      "Aspirin"
+      "Aspirin",
+      "Anticoagulation (heparin/LMWH)",
+      "Cardiology consult / early invasive cath"
     ],
     "keyImageInterpretationFindings": [
       "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",

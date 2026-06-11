@@ -256,34 +256,70 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "N-ACETYLCYSTEINE — start promptly based on the nomogram/risk; do NOT delay in established injury or high-risk ingestion (CANT-MISS,9). Activated charcoal only if very early after ingestion and airway protected (3). Monitor LFTs, INR, glucose, renal function, acid-base (4). Apply King's College criteria and involve a transplant center early for liver failure (5). Psychiatric evaluation and safety planning for an intentional ingestion (4). PENALTY: delaying or withholding NAC (-5).",
-      "idealAnswer": "Plan: N-ACETYLCYSTEINE — start promptly based on the nomogram/risk; do NOT delay in established injury or high-risk ingestion.",
+      "rubric": "Per MGH acute liver failure (APAP): N-acetylcysteine, give empirically for toxic ingestion / deranged LFTs (CANT-MISS,8); activated charcoal if ingestion <4 h (3); plot timed level on Rumack-Matthew nomogram (3); monitor INR/pH/Cr/lactate/mental status – King's College criteria (4); hepatology/transplant referral for ALF (3). PENALTY: delaying NAC awaiting nomogram in a late/large ingestion (-4); missing transplant criteria (-2).",
+      "idealAnswer": "N-acetylcysteine is the antidote – give without delay for toxic ingestion/rising level or deranged transaminases (do not wait for nomogram if presentation is late or amount large). Activated charcoal if ingestion <4 h. Use the Rumack-Matthew nomogram for timed single ingestions. Monitor INR, pH, creatinine, lactate, and mental status; apply King's College criteria – contact hepatology/transplant for acute liver failure.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "N-ACETYLCYSTEINE — start promptly based on the nomogram/risk; do NOT delay in established injury or high-risk ingestion",
-            "points": 9
+            "item": "N-acetylcysteine (give empirically)",
+            "points": 8
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Monitor INR/pH/Cr/lactate and mental status (King's College)",
+            "points": 4
+          },
+          {
+            "item": "Activated charcoal if <",
+            "points": 3
+          },
+          {
+            "item": "Rumack-Matthew nomogram for timed level",
+            "points": 3
+          },
+          {
+            "item": "Hepatology/transplant referral for ALF",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Psychiatric evaluation if intentional",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "delaying or withholding NAC",
-            "points": -5
+            "item": "Delaying NAC",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "N-ACETYLCYSTEINE — start promptly based on the nomogram/risk; do NOT delay in established injury or high-risk ingestion"
+        "N-acetylcysteine (give empirically)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Monitor INR/pH/Cr/lactate and mental status (King's College)",
+        "Activated charcoal if <",
+        "Rumack-Matthew nomogram for timed level",
+        "Hepatology/transplant referral for ALF",
+        "Psychiatric evaluation if intentional"
+      ],
       "unsafeActions": [
-        "delaying or withholding NAC"
+        "Delaying NAC"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Hepatology",
+        "Toxicology / Poison Control"
+      ],
+      "disposition": "Admit; ICU if ALF",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Acute Liver Injury & Failure (Acetaminophen)",
+        "page": 89
+      }
     }
   ],
   "standardizedPatient": {
@@ -512,10 +548,10 @@
       "Commit to Acetaminophen-induced liver injury and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "delaying or withholding NAC"
+      "Delaying NAC"
     ],
     "managementPearls": [
-      "N-ACETYLCYSTEINE — start promptly based on the nomogram/risk; do NOT delay in established injury or high-risk ingestion"
+      "N-acetylcysteine (give empirically)"
     ],
     "criticalHistoryItems": [
       "suicidal_ideation"
@@ -533,7 +569,7 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "N-ACETYLCYSTEINE — start promptly based on the nomogram/risk; do NOT delay in established injury or high-risk ingestion"
+      "N-acetylcysteine (give empirically)"
     ],
     "keyImageInterpretationFindings": [
       "Evidence of prior inferior myocardial infarction (Q waves, no acute changes).",

@@ -267,34 +267,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Stop the offending antibiotic if possible (CANT-MISS,5). Oral vancomycin OR fidaxomicin as first-line (CANT-MISS,7; note metronidazole is no longer preferred first-line for non-mild disease). Contact precautions / isolation, hand hygiene with soap and water (4). IV fluids and electrolyte (potassium) repletion (4). AVOID antimotility agents (3). Surgical consult / colectomy for fulminant disease or toxic megacolon (2). PENALTY: loperamide/antimotility agents (megacolon risk) (-3); choosing metronidazole first-line for severe disease (-2).",
-      "idealAnswer": "Plan: Stop the offending antibiotic if possible.",
+      "rubric": "Per MGH C. difficile (IDSA): oral vancomycin or fidaxomicin (CANT-MISS,7); stop offending antibiotic and antimotility agents (CANT-MISS,5); fulminant → PO/PR vanc + IV metronidazole + surgery consult (4); contact precautions + soap-and-water hand hygiene (3); supportive fluids/electrolytes (2); do not retest/test-for-cure (1). PENALTY: IV vancomycin for C. diff colitis (no lumen levels) (-3); giving loperamide/antimotility (-2).",
+      "idealAnswer": "Stop the offending antibiotic and any antimotility agents. Treat with oral vancomycin 125 mg q6h ×10 d OR fidaxomicin 200 mg BID ×10 d (metronidazole only if these unavailable). Fulminant disease (hypotension, ileus, megacolon): high-dose PO/PR vancomycin + IV metronidazole and STAT surgical consult. Contact precautions; hand hygiene with soap and water. Do not test for cure.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Stop the offending antibiotic if possible",
+            "item": "Oral vancomycin or fidaxomicin",
+            "points": 7
+          },
+          {
+            "item": "Stop offending antibiotic and antimotility agents",
             "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Fulminant: PO/PR vanc + IV metronidazole + surgery consult",
+            "points": 4
+          },
+          {
+            "item": "Contact precautions and hand hygiene",
+            "points": 3
+          },
+          {
+            "item": "Supportive fluids and electrolytes",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Do not test for cure",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "loperamide/antimotility agents (megacolon risk)",
+            "item": "IV vancomycin for C. diff",
             "points": -3
+          },
+          {
+            "item": "Antimotility agents",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Stop the offending antibiotic if possible"
+        "Oral vancomycin or fidaxomicin",
+        "Stop offending antibiotic and antimotility agents"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Fulminant: PO/PR vanc + IV metronidazole + surgery consult",
+        "Contact precautions and hand hygiene",
+        "Supportive fluids and electrolytes",
+        "Do not test for cure"
+      ],
       "unsafeActions": [
-        "loperamide/antimotility agents (megacolon risk)"
+        "IV vancomycin for C. diff",
+        "Antimotility agents"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Per severity",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "C. Difficile Infection",
+        "page": 124
+      }
     }
   ],
   "standardizedPatient": {
@@ -498,10 +536,12 @@
       "Commit to C. difficile colitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "loperamide/antimotility agents (megacolon risk)"
+      "IV vancomycin for C. diff",
+      "Antimotility agents"
     ],
     "managementPearls": [
-      "Stop the offending antibiotic if possible"
+      "Oral vancomycin or fidaxomicin",
+      "Stop offending antibiotic and antimotility agents"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -515,7 +555,8 @@
       "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
     ],
     "criticalManagementItems": [
-      "Stop the offending antibiotic if possible"
+      "Oral vancomycin or fidaxomicin",
+      "Stop offending antibiotic and antimotility agents"
     ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",

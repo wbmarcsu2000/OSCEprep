@@ -261,39 +261,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Two large-bore IVs and fluid resuscitation (CANT-MISS,6). Transfuse PRBCs per a restrictive threshold/hemodynamics (CANT-MISS,5). IV proton pump inhibitor (5). Hold NSAID; reverse any coagulopathy (3). Urgent GI consult for upper endoscopy (5). If variceal suspected: octreotide + prophylactic antibiotics (1). PENALTY: discharging or failing to resuscitate (-4).",
-      "idealAnswer": "Plan: Two large-bore IVs and fluid resuscitation; Transfuse PRBCs per a restrictive threshold/hemodynamics.",
+      "rubric": "Per MGH upper GI bleed: resuscitate – 2 large-bore IVs + crystalloid + type & screen (CANT-MISS,5); transfuse pRBC restrictive Hgb>7 (>8 if CAD) (CANT-MISS,5); IV PPI pantoprazole (4); GI consult for EGD <24 h (4); correct coagulopathy (plt>50, PCC for INR>2) (3); octreotide + ceftriaxone if cirrhosis (2). PENALTY: liberal/over-transfusion raising portal pressure (-2); transfusion threshold set too high (-2).",
+      "idealAnswer": "Resuscitate: 2 large-bore IVs, isotonic crystalloid, type & screen; transfuse pRBCs to a restrictive threshold (Hgb >7, or >8 if CAD). Correct coagulopathy (platelets >50k; PCC for INR >2; avoid FFP in cirrhosis). IV PPI (pantoprazole). If cirrhosis: octreotide + ceftriaxone prophylaxis. GI consult for EGD within 24 h. Hold/reverse anticoagulants.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Two large-bore IVs and fluid resuscitation",
-            "points": 6
+            "item": "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+            "points": 5
           },
           {
-            "item": "Transfuse PRBCs per a restrictive threshold/hemodynamics",
+            "item": "Transfuse to restrictive threshold (Hgb>7)",
             "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "IV PPI (pantoprazole)",
+            "points": 4
+          },
+          {
+            "item": "GI consult for EGD within",
+            "points": 4
+          },
+          {
+            "item": "Correct coagulopathy",
+            "points": 3
+          },
+          {
+            "item": "Octreotide + ceftriaxone if cirrhosis",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Hold/reverse anticoagulants",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging or failing to resuscitate",
-            "points": -4
+            "item": "Over-transfusion",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Two large-bore IVs and fluid resuscitation",
-        "Transfuse PRBCs per a restrictive threshold/hemodynamics"
+        "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+        "Transfuse to restrictive threshold (Hgb>7)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "IV PPI (pantoprazole)",
+        "GI consult for EGD within",
+        "Correct coagulopathy",
+        "Octreotide + ceftriaxone if cirrhosis",
+        "Hold/reverse anticoagulants"
+      ],
       "unsafeActions": [
-        "discharging or failing to resuscitate"
+        "Over-transfusion"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Gastroenterology"
+      ],
+      "disposition": "Admit; ICU if unstable",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Upper GI Bleeding",
+        "page": 70
+      }
     }
   ],
   "standardizedPatient": {
@@ -519,11 +554,11 @@
       "Commit to Acute upper GI bleed and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "discharging or failing to resuscitate"
+      "Over-transfusion"
     ],
     "managementPearls": [
-      "Two large-bore IVs and fluid resuscitation",
-      "Transfuse PRBCs per a restrictive threshold/hemodynamics"
+      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+      "Transfuse to restrictive threshold (Hgb>7)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -538,8 +573,8 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Two large-bore IVs and fluid resuscitation",
-      "Transfuse PRBCs per a restrictive threshold/hemodynamics"
+      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+      "Transfuse to restrictive threshold (Hgb>7)"
     ],
     "keyImageInterpretationFindings": [
       "Right ventricular hypertrophy pattern.",

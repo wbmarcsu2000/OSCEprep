@@ -312,6 +312,13 @@ function adaptStep(s: RawStep): StepModel {
     unsafeActions: s.unsafeActions ?? [],
     consults: s.consults ?? [],
     disposition: s.disposition || null,
+    mghReference: s.mghReference
+      ? {
+          manual: s.mghReference.manual || "MGH Housestaff Manual 2024–2025",
+          section: s.mghReference.section,
+          page: s.mghReference.page,
+        }
+      : null,
   };
 }
 

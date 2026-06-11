@@ -278,34 +278,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Supportive care — IV fluid resuscitation and bowel rest (CANT-MISS,7). Correct the precipitant — restore perfusion, manage hypotension/arrhythmia, avoid vasoconstrictors (6). Broad-spectrum antibiotics for moderate-severe disease (4). Serial abdominal exams and lactate; most non-gangrenous cases resolve (4). Surgery for peritonitis, gangrene, perforation, or clinical deterioration (3). PENALTY: missing peritoneal signs/gangrene requiring surgery (-3); giving vasoconstrictors (-2).",
-      "idealAnswer": "Plan: Supportive care — IV fluid resuscitation and bowel rest.",
+      "rubric": "Per MGH approach (ischemic colitis): supportive care – bowel rest + IV fluid resuscitation (CANT-MISS,6); broad-spectrum antibiotics (4); optimize perfusion / stop vasoconstrictors (4); serial exams and lactate (3); surgery consult + CT if peritonitis/gangrene/perforation (4). PENALTY: missing transmural/gangrenous colitis needing surgery (-3); vasopressors worsening colonic ischemia without addressing cause (-2).",
+      "idealAnswer": "Largely supportive: bowel rest, IV fluid resuscitation, and broad-spectrum antibiotics. Optimize perfusion – stop vasoconstrictors and minimize precipitants; correct hypotension. Serial abdominal exams and lactate. Surgical consult and CT for peritonitis, gangrene, perforation, or clinical deterioration. Most non-gangrenous cases resolve with supportive care.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Supportive care — IV fluid resuscitation and bowel rest",
-            "points": 7
+            "item": "Supportive care (bowel rest, IV fluids)",
+            "points": 6
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Broad-spectrum antibiotics",
+            "points": 4
+          },
+          {
+            "item": "Optimize perfusion / stop vasoconstrictors",
+            "points": 4
+          },
+          {
+            "item": "Surgery consult + CT if peritonitis/gangrene",
+            "points": 4
+          },
+          {
+            "item": "Serial exams and lactate",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Identify and treat precipitant",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "missing peritoneal signs/gangrene requiring surgery",
+            "item": "Missing gangrenous colitis",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Supportive care — IV fluid resuscitation and bowel rest"
+        "Supportive care (bowel rest, IV fluids)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Broad-spectrum antibiotics",
+        "Optimize perfusion / stop vasoconstrictors",
+        "Surgery consult + CT if peritonitis/gangrene",
+        "Serial exams and lactate",
+        "Identify and treat precipitant"
+      ],
       "unsafeActions": [
-        "missing peritoneal signs/gangrene requiring surgery"
+        "Missing gangrenous colitis"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Diarrhea (Ischemic Colitis)",
+        "page": 77
+      }
     }
   ],
   "standardizedPatient": {
@@ -492,10 +525,10 @@
       "Commit to Ischemic colitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "missing peritoneal signs/gangrene requiring surgery"
+      "Missing gangrenous colitis"
     ],
     "managementPearls": [
-      "Supportive care — IV fluid resuscitation and bowel rest"
+      "Supportive care (bowel rest, IV fluids)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -510,7 +543,7 @@
       "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
     ],
     "criticalManagementItems": [
-      "Supportive care — IV fluid resuscitation and bowel rest"
+      "Supportive care (bowel rest, IV fluids)"
     ],
     "keyImageInterpretationFindings": [
       "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",

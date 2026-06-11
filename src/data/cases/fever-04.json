@@ -278,39 +278,77 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Obtain cultures, then prompt empiric antibiotics per severe-CAP guidelines — e.g., beta-lactam + macrolide or a respiratory fluoroquinolone (CANT-MISS,8). Supplemental O2 and IV fluids for sepsis (5). ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need (CANT-MISS,5). Monitor lactate/perfusion; supportive care (4). Reassess and de-escalate per cultures (3). PENALTY: no antibiotics (-5); discharging a high-severity/septic elderly patient (-3).",
-      "idealAnswer": "Plan: beta-lactam + macrolide or a respiratory fluoroquinolone; ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need.",
+      "rubric": "Per MGH/IDSA-ATS CAP: empiric ceftriaxone + azithromycin OR levofloxacin (CANT-MISS,7); broaden to vanc+cefepime if MRSA/PsA risk (4); cultures/MRSA swab to de-escalate (3); supplemental O2 (3); CURB-65/PSI triage (2); ~5-day course, IV→PO (3). PENALTY: daptomycin for pneumonia (-3); no atypical coverage (-2).",
+      "idealAnswer": "Inpatient non-severe CAP: ceftriaxone PLUS azithromycin, OR levofloxacin monotherapy. MRSA/Pseudomonas risk: vancomycin + cefepime, with cultures + MRSA swab to de-escalate. Supplemental O2; CURB-65/PSI to triage; consider steroids in severe CAP. Treat ~5 days if stable; convert IV→PO when improving.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "beta-lactam + macrolide or a respiratory fluoroquinolone",
-            "points": 8
-          },
-          {
-            "item": "ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need",
-            "points": 5
+            "item": "Empiric antibiotics",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Broaden to vanc+cefepime if MRSA/PsA risk",
+            "points": 4
+          },
+          {
+            "item": "Cultures / MRSA swab to de-escalate",
+            "points": 3
+          },
+          {
+            "item": "Supplemental oxygen",
+            "points": 3
+          },
+          {
+            "item": "CURB-65/PSI triage",
+            "points": 2
+          },
+          {
+            "item": "Duration ~5 days IV to PO",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Consider steroids in severe CAP",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "no antibiotics",
-            "points": -5
+            "item": "Daptomycin for pneumonia",
+            "points": -3
+          },
+          {
+            "item": "No atypical coverage",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "beta-lactam + macrolide or a respiratory fluoroquinolone",
-        "ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need"
+        "Empiric antibiotics"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Broaden to vanc+cefepime if MRSA/PsA risk",
+        "Cultures / MRSA swab to de-escalate",
+        "Supplemental oxygen",
+        "CURB-65/PSI triage",
+        "Duration ~5 days IV to PO",
+        "Consider steroids in severe CAP"
+      ],
       "unsafeActions": [
-        "no antibiotics"
+        "Daptomycin for pneumonia",
+        "No atypical coverage"
       ],
       "consults": [],
-      "disposition": "ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need"
+      "disposition": "Admit (per CURB-65/PSI)",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Community Acquired Pneumonia",
+        "page": 116
+      }
     }
   ],
   "standardizedPatient": {
@@ -551,11 +589,11 @@
       "Commit to Community-acquired pneumonia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "no antibiotics"
+      "Daptomycin for pneumonia",
+      "No atypical coverage"
     ],
     "managementPearls": [
-      "beta-lactam + macrolide or a respiratory fluoroquinolone",
-      "ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need"
+      "Empiric antibiotics"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -568,8 +606,7 @@
       "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion."
     ],
     "criticalManagementItems": [
-      "beta-lactam + macrolide or a respiratory fluoroquinolone",
-      "ADMIT — severity score and confusion/hypotension favor inpatient, assess ICU need"
+      "Empiric antibiotics"
     ],
     "keyImageInterpretationFindings": [
       "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",

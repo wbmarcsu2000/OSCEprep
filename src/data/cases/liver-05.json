@@ -262,34 +262,62 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise (CANT-MISS,8). Optimize metabolic risk factors — diabetes and lipid control (6). Limit alcohol and avoid hepatotoxins; statins can generally be continued (4). Stage fibrosis and arrange monitoring; refer to hepatology if advanced fibrosis (4). Vaccinate against hepatitis A/B if non-immune (3). PENALTY: anchoring on NAFLD without excluding other causes or without assessing fibrosis (-3).",
-      "idealAnswer": "Plan: Lifestyle as the cornerstone — gradual weight loss, diet, and exercise.",
+      "rubric": "Per MGH MASLD/NAFLD: lifestyle weight loss 7-10% – diet and exercise (CANT-MISS,7); manage metabolic comorbidities – DM/dyslipidemia/HTN, statins safe (5); alcohol avoidance (3); stage fibrosis (FIB-4) and refer if advanced (3); consider GLP-1/metabolic therapy + vaccinate (2). PENALTY: withholding a statin out of unfounded fear of liver injury (-2); no attention to metabolic risk factors (-2).",
+      "idealAnswer": "Lifestyle-based weight loss is first-line: 7–10% body-weight loss reduces steatohepatitis/fibrosis; diet and exercise. Aggressively manage metabolic comorbidities – diabetes, dyslipidemia, hypertension; statins are safe. Avoid alcohol. Stage fibrosis (FIB-4) and refer to hepatology if advanced. Consider GLP-1 agonist/metabolic therapy and vaccinate (HAV/HBV).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise",
-            "points": 8
+            "item": "Lifestyle weight loss (diet and exercise)",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Manage metabolic comorbidities (DM/lipids/HTN)",
+            "points": 5
+          },
+          {
+            "item": "Alcohol avoidance",
+            "points": 3
+          },
+          {
+            "item": "Stage fibrosis (FIB-4) and refer if advanced",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "GLP-1 / metabolic therapy and vaccination",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "anchoring on NAFLD without excluding other causes or without assessing fibrosis",
-            "points": -3
+            "item": "Withholding statin unnecessarily",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise"
+        "Lifestyle weight loss (diet and exercise)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Manage metabolic comorbidities (DM/lipids/HTN)",
+        "Alcohol avoidance",
+        "Stage fibrosis (FIB-4) and refer if advanced",
+        "GLP-1 / metabolic therapy and vaccination"
+      ],
       "unsafeActions": [
-        "anchoring on NAFLD without excluding other causes or without assessing fibrosis"
+        "Withholding statin unnecessarily"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "MASLD / NAFLD",
+        "page": 92
+      }
     }
   ],
   "standardizedPatient": {
@@ -523,10 +551,10 @@
       "Commit to NAFLD / NASH and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "anchoring on NAFLD without excluding other causes or without assessing fibrosis"
+      "Withholding statin unnecessarily"
     ],
     "managementPearls": [
-      "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise"
+      "Lifestyle weight loss (diet and exercise)"
     ],
     "criticalHistoryItems": [
       "drug_use"
@@ -540,7 +568,7 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Lifestyle as the cornerstone — gradual weight loss, diet, and exercise"
+      "Lifestyle weight loss (diet and exercise)"
     ],
     "keyImageInterpretationFindings": [
       "Wolff-Parkinson-White pre-excitation pattern.",

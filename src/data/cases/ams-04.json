@@ -276,39 +276,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Aggressive IV fluid resuscitation FIRST — the cornerstone (CANT-MISS,8). Check and replete potassium BEFORE/with insulin (CANT-MISS,5). IV insulin infusion after fluids started and K adequate (5). Identify and treat the precipitant (3). Monitor glucose/electrolytes; correct osmolality SLOWLY to avoid cerebral edema (3). Frequent reassessment (1). PENALTY: starting insulin before fluids or before confirming K (-4); correcting glucose/osmolality too rapidly (-1).",
-      "idealAnswer": "Plan: Aggressive IV fluid resuscitation FIRST — the cornerstone; Check and replete potassium BEFORE/with insulin.",
+      "rubric": "Per MGH DKA/HHS: aggressive IV fluid resuscitation, LR/NS (CANT-MISS,7); potassium repletion/monitoring – hold insulin if K<3.3 (CANT-MISS,5); IV insulin infusion after K safe (5); add dextrose when glucose <300 (3); identify and treat precipitant (3); frequent BMP/glucose monitoring (2). PENALTY: starting insulin before checking/repleting K (-4); insulin without fluids (-2).",
+      "idealAnswer": "HHS: prioritize ABCs and volume status, then potassium, then glucose. Aggressive IV fluids (LR 15–20 mL/kg/h initially; ~average 8–10 L deficit), then ½NS/LR based on corrected sodium; add D5 when glucose <300. Replete and monitor potassium (give K if <5.3, hold insulin if <3.3). IV insulin infusion after K is safe. Find and treat the precipitant. Frequent BMP/glucose.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Aggressive IV fluid resuscitation FIRST — the cornerstone",
-            "points": 8
+            "item": "Aggressive IV fluid resuscitation",
+            "points": 7
           },
           {
-            "item": "Check and replete potassium BEFORE/with insulin",
+            "item": "Potassium repletion and monitoring",
             "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "IV insulin infusion after K is safe",
+            "points": 5
+          },
+          {
+            "item": "Add dextrose when glucose <300",
+            "points": 3
+          },
+          {
+            "item": "Identify and treat precipitant",
+            "points": 3
+          },
+          {
+            "item": "Frequent BMP/glucose monitoring",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Monitor for euglycemic DKA if on SGLT2i",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "starting insulin before fluids or before confirming K",
+            "item": "Insulin before repleting potassium",
             "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Aggressive IV fluid resuscitation FIRST — the cornerstone",
-        "Check and replete potassium BEFORE/with insulin"
+        "Aggressive IV fluid resuscitation",
+        "Potassium repletion and monitoring"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "IV insulin infusion after K is safe",
+        "Add dextrose when glucose <300",
+        "Identify and treat precipitant",
+        "Frequent BMP/glucose monitoring",
+        "Monitor for euglycemic DKA if on SGLT2i"
+      ],
       "unsafeActions": [
-        "starting insulin before fluids or before confirming K"
+        "Insulin before repleting potassium"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit; ICU often required",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "DKA / HHS",
+        "page": 184
+      }
     }
   ],
   "standardizedPatient": {
@@ -532,11 +565,11 @@
       "Commit to Hyperosmolar hyperglycemic state and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "starting insulin before fluids or before confirming K"
+      "Insulin before repleting potassium"
     ],
     "managementPearls": [
-      "Aggressive IV fluid resuscitation FIRST — the cornerstone",
-      "Check and replete potassium BEFORE/with insulin"
+      "Aggressive IV fluid resuscitation",
+      "Potassium repletion and monitoring"
     ],
     "criticalHistoryItems": [
       "medication_nonadherence"
@@ -553,8 +586,8 @@
       "Screen for pneumonia as a precipitant; here essentially clear."
     ],
     "criticalManagementItems": [
-      "Aggressive IV fluid resuscitation FIRST — the cornerstone",
-      "Check and replete potassium BEFORE/with insulin"
+      "Aggressive IV fluid resuscitation",
+      "Potassium repletion and monitoring"
     ],
     "keyImageInterpretationFindings": [
       "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100).",

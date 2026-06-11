@@ -298,34 +298,77 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Empiric antibiotics per CAP guidelines — e.g., ceftriaxone + a macrolide, or a respiratory fluoroquinolone (CANT-MISS,8). Obtain cultures before antibiotics when feasible (3). Supplemental O2 as needed (3). IV fluids for dehydration (3). Determine admission vs outpatient using a severity score (4). Antipyretics/supportive care; follow-up (4). PENALTY: no antibiotics (-6).",
-      "idealAnswer": "Plan: ceftriaxone + a macrolide, or a respiratory fluoroquinolone.",
+      "rubric": "Per MGH/IDSA-ATS CAP: empiric ceftriaxone + azithromycin OR levofloxacin monotherapy (CANT-MISS,7); add vancomycin + cefepime if MRSA/PsA risk (4); cultures/MRSA swab to guide de-escalation (3); supplemental O2 (3); duration ~5 d, IV→PO when stable (3); CURB-65/PSI triage (2). PENALTY: daptomycin for pneumonia (inactivated in lung) (-3); no atypical coverage (-2).",
+      "idealAnswer": "Inpatient non-severe CAP: ceftriaxone PLUS azithromycin, OR levofloxacin monotherapy. If MRSA/Pseudomonas risk factors: vancomycin + cefepime (+ obtain cultures and MRSA nasal swab to de-escalate). Supplemental O2; consider steroids in severe CAP. Treat 5 days if clinically stable; convert IV→PO when improving.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "ceftriaxone + a macrolide, or a respiratory fluoroquinolone",
-            "points": 8
+            "item": "Empiric antibiotics",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Broaden to vanc+cefepime if MRSA/PsA risk",
+            "points": 4
+          },
+          {
+            "item": "Cultures / MRSA swab to de-escalate",
+            "points": 3
+          },
+          {
+            "item": "Supplemental oxygen",
+            "points": 3
+          },
+          {
+            "item": "Duration ~5 days, IV to PO",
+            "points": 3
+          },
+          {
+            "item": "CURB-65/PSI severity triage",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Consider steroids in severe CAP",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "no antibiotics",
-            "points": -6
+            "item": "Daptomycin for pneumonia",
+            "points": -3
+          },
+          {
+            "item": "No atypical coverage",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "ceftriaxone + a macrolide, or a respiratory fluoroquinolone"
+        "Empiric antibiotics"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Broaden to vanc+cefepime if MRSA/PsA risk",
+        "Cultures / MRSA swab to de-escalate",
+        "Supplemental oxygen",
+        "Duration ~5 days, IV to PO",
+        "CURB-65/PSI severity triage",
+        "Consider steroids in severe CAP"
+      ],
       "unsafeActions": [
-        "no antibiotics"
+        "Daptomycin for pneumonia",
+        "No atypical coverage"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit (per CURB-65/PSI)",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Community Acquired Pneumonia",
+        "page": 116
+      }
     }
   ],
   "standardizedPatient": {
@@ -587,10 +630,11 @@
       "Commit to Community-acquired pneumonia and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "no antibiotics"
+      "Daptomycin for pneumonia",
+      "No atypical coverage"
     ],
     "managementPearls": [
-      "ceftriaxone + a macrolide, or a respiratory fluoroquinolone"
+      "Empiric antibiotics"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -604,7 +648,7 @@
       "Right lower lobe consolidation / lobar infiltrate with air bronchograms; no large effusion."
     ],
     "criticalManagementItems": [
-      "ceftriaxone + a macrolide, or a respiratory fluoroquinolone"
+      "Empiric antibiotics"
     ],
     "keyImageInterpretationFindings": [
       "Acute pericarditis pattern (diffuse ST elevation + PR depression).",

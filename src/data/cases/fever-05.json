@@ -263,39 +263,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan? (Timing is critical.)",
-      "rubric": "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant) (CANT-MISS,9). Dexamethasone with or just before the first antibiotic dose (CANT-MISS,5). Droplet isolation (3). Blood cultures/LP as able without delaying treatment (3). ID consult, supportive care, monitor for complications; chemoprophylaxis for close contacts (3). PENALTY: delaying antibiotics for imaging/LP (-5); omitting dexamethasone (-2).",
-      "idealAnswer": "Plan: Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant); Dexamethasone with or just before the first antibiotic dose.",
+      "rubric": "Per MGH meningitis: empiric vancomycin + ceftriaxone without delay (CANT-MISS,7); dexamethasone with/before first antibiotic dose (CANT-MISS,4); add ampicillin if Listeria risk (>50/immunocompromised/EtOH) (3); add acyclovir if HSV possible (3); blood cultures then LP, do not delay antibiotics (4); droplet precautions / ID consult (2). PENALTY: delaying antibiotics for CT/LP (-4); omitting Listeria coverage in an at-risk patient (-2).",
+      "idealAnswer": "Bacterial meningitis is an emergency: do not delay antibiotics for the LP/CT. Give dexamethasone WITH/just before the first antibiotic dose, then empiric vancomycin + ceftriaxone; ADD ampicillin if >50/immunocompromised/alcohol (Listeria); ADD acyclovir if HSV encephalitis possible. Blood cultures, then LP (CT first only if focal deficit/papilledema/immunocompromised). Droplet precautions; ID consult.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
-            "points": 9
+            "item": "Empiric vancomycin + ceftriaxone immediately",
+            "points": 7
           },
           {
-            "item": "Dexamethasone with or just before the first antibiotic dose",
-            "points": 5
+            "item": "Dexamethasone with/before first dose",
+            "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Blood cultures then LP without delaying antibiotics",
+            "points": 4
+          },
+          {
+            "item": "Add ampicillin if Listeria risk",
+            "points": 3
+          },
+          {
+            "item": "Add acyclovir if HSV possible",
+            "points": 3
+          },
+          {
+            "item": "Droplet precautions / ID consult",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "CT before LP only if focal deficit/immunocompromised",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "delaying antibiotics for imaging/LP",
-            "points": -5
+            "item": "Delaying antibiotics for imaging/LP",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
-        "Dexamethasone with or just before the first antibiotic dose"
+        "Empiric vancomycin + ceftriaxone immediately",
+        "Dexamethasone with/before first dose"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Blood cultures then LP without delaying antibiotics",
+        "Add ampicillin if Listeria risk",
+        "Add acyclovir if HSV possible",
+        "Droplet precautions / ID consult",
+        "CT before LP only if focal deficit/immunocompromised"
+      ],
       "unsafeActions": [
-        "delaying antibiotics for imaging/LP"
+        "Delaying antibiotics for imaging/LP"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Infectious Disease"
+      ],
+      "disposition": "Admit; ICU monitoring",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Meningitis & Encephalitis",
+        "page": 123
+      }
     }
   ],
   "standardizedPatient": {
@@ -502,11 +537,11 @@
       "Commit to Bacterial meningitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "delaying antibiotics for imaging/LP"
+      "Delaying antibiotics for imaging/LP"
     ],
     "managementPearls": [
-      "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
-      "Dexamethasone with or just before the first antibiotic dose"
+      "Empiric vancomycin + ceftriaxone immediately",
+      "Dexamethasone with/before first dose"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -522,8 +557,8 @@
       "No acute process (screens for a pulmonary source)."
     ],
     "criticalManagementItems": [
-      "Empiric IV antibiotics IMMEDIATELY and do NOT delay for CT/LP — ceftriaxone + vancomycin (add ampicillin if Listeria risk: very young/old, immunocompromised, pregnant)",
-      "Dexamethasone with or just before the first antibiotic dose"
+      "Empiric vancomycin + ceftriaxone immediately",
+      "Dexamethasone with/before first dose"
     ],
     "keyImageInterpretationFindings": [
       "First-degree AV block (PR ~280 ms, every P conducts).",

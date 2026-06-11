@@ -249,36 +249,79 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Emergent cardiothoracic/vascular surgery consult — type A is surgical (CANT-MISS,7). Rapid impulse/BP control: IV beta blocker (esmolol/labetalol) FIRST to lower heart rate and dP/dt, then vasodilator if needed (8). Pain control (3). Target HR <60 and SBP ~100–120 (3). Type and crossmatch, large-bore IV access (3). PENALTY: thrombolytics or anticoagulation (-5); vasodilator before rate control causing reflex tachycardia (-2).",
-      "idealAnswer": "Plan: Emergent cardiothoracic/vascular surgery consult — type A is surgical.",
+      "rubric": "Per MGH Acute Aortic Syndromes: rate control FIRST with IV beta blocker (esmolol/labetalol), HR <60 (CANT-MISS,6); THEN BP control SBP 100-120, nitroprusside after beta blockade (5); STAT cardiothoracic surgery consult (CANT-MISS,5); type A → emergent surgery, type B → medical (3); pain control (2); large-bore IV access + type & screen (2). PENALTY: vasodilator (nitroprusside) before beta blocker → reflex tachycardia/shear (-3); anticoagulation/thrombolytics (-4).",
+      "idealAnswer": "Emergency. Control heart rate first (IV beta blocker, e.g. esmolol, target HR <60) THEN blood pressure (target SBP 100–120, add nitroprusside) to reduce aortic wall stress. Pain control. STAT cardiac surgery consult – Stanford type A (ascending) is a surgical emergency; type B (descending) is usually managed medically. Type & screen, two large-bore IVs.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Emergent cardiothoracic/vascular surgery consult — type A is surgical",
-            "points": 7
+            "item": "IV beta blocker for rate control (HR<60)",
+            "points": 6
+          },
+          {
+            "item": "Cardiothoracic surgery consult (STAT)",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Blood pressure control (nitroprusside after BB)",
+            "points": 5
+          },
+          {
+            "item": "Type A surgical / type B medical",
+            "points": 3
+          },
+          {
+            "item": "Pain control",
+            "points": 2
+          },
+          {
+            "item": "Large-bore IV access and type & screen",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Blood pressure target SBP 100-120",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "thrombolytics or anticoagulation",
-            "points": -5
+            "item": "Vasodilator before beta blockade",
+            "points": -3
+          },
+          {
+            "item": "Anticoagulation or thrombolytics",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+        "IV beta blocker for rate control (HR<60)",
+        "Cardiothoracic surgery consult (STAT)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Blood pressure control (nitroprusside after BB)",
+        "Type A surgical / type B medical",
+        "Pain control",
+        "Large-bore IV access and type & screen",
+        "Blood pressure target SBP 100-120"
+      ],
       "unsafeActions": [
-        "thrombolytics or anticoagulation"
+        "Vasodilator before beta blockade",
+        "Anticoagulation or thrombolytics"
       ],
       "consults": [
-        "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+        "Cardiac Surgery"
       ],
-      "disposition": ""
+      "disposition": "Emergent; ICU / OR",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Aortic Disease (Acute Aortic Syndromes)",
+        "page": 35
+      }
     }
   ],
   "images": {
@@ -542,10 +585,12 @@
       "Commit to Aortic dissection and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "thrombolytics or anticoagulation"
+      "Vasodilator before beta blockade",
+      "Anticoagulation or thrombolytics"
     ],
     "managementPearls": [
-      "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+      "IV beta blocker for rate control (HR<60)",
+      "Cardiothoracic surgery consult (STAT)"
     ],
     "criticalHistoryItems": [
       "medication_nonadherence"
@@ -561,7 +606,8 @@
       "Widened mediastinum; enlarged aortic knob."
     ],
     "criticalManagementItems": [
-      "Emergent cardiothoracic/vascular surgery consult — type A is surgical"
+      "IV beta blocker for rate control (HR<60)",
+      "Cardiothoracic surgery consult (STAT)"
     ],
     "keyImageInterpretationFindings": [
       "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",

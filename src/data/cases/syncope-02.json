@@ -258,39 +258,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Volume repletion — IV/oral fluids (CANT-MISS,6). Review and hold/reduce offending medications, especially the diuretic and other antihypertensives (CANT-MISS,7). Counsel on slow positional changes and adequate hydration/salt (5). Treat the precipitant (e.g., gastroenteritis) (4). Fall-risk assessment and follow-up (3). PENALTY: continuing all antihypertensives unchanged (-3).",
-      "idealAnswer": "Plan: Volume repletion — IV/oral fluids; Review and hold/reduce offending medications, especially the diuretic and other antihypertensives.",
+      "rubric": "Per MGH syncope (orthostatic): identify and treat underlying cause/volume (CANT-MISS,6); review and adjust offending medications (CANT-MISS,5); non-pharmacologic measures – slow changes, compression stockings (4); liberalize salt/fluids (3); midodrine/fludrocortisone if refractory (3). PENALTY: missing GI bleed/hypovolemia as cause (-3); adding pressor agent before addressing meds/volume (-1).",
+      "idealAnswer": "Review and remove/reduce offending medications (antihypertensives, diuretics, alpha-blockers). Volume repletion; liberalize salt and fluids. Non-pharmacologic measures – slow position changes, compression stockings, physical counter-pressure. Treat the underlying cause (dehydration, bleeding, autonomic failure). Add midodrine or fludrocortisone only if refractory.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Volume repletion — IV/oral fluids",
+            "item": "Identify and treat cause / volume repletion",
             "points": 6
           },
           {
-            "item": "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives",
-            "points": 7
+            "item": "Review and adjust offending medications",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Non-pharmacologic measures (compression, slow changes)",
+            "points": 4
+          },
+          {
+            "item": "Liberalize salt and fluids",
+            "points": 3
+          },
+          {
+            "item": "Midodrine/fludrocortisone if refractory",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Orthostatic vital sign monitoring",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "continuing all antihypertensives unchanged",
+            "item": "Missing hypovolemia / occult bleed",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Volume repletion — IV/oral fluids",
-        "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives"
+        "Identify and treat cause / volume repletion",
+        "Review and adjust offending medications"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Non-pharmacologic measures (compression, slow changes)",
+        "Liberalize salt and fluids",
+        "Midodrine/fludrocortisone if refractory",
+        "Orthostatic vital sign monitoring"
+      ],
       "unsafeActions": [
-        "continuing all antihypertensives unchanged"
+        "Missing hypovolemia / occult bleed"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Per cause",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Syncope (Orthostatic Hypotension)",
+        "page": 37
+      }
     }
   ],
   "standardizedPatient": {
@@ -484,11 +512,11 @@
       "Commit to Orthostatic hypotension and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "continuing all antihypertensives unchanged"
+      "Missing hypovolemia / occult bleed"
     ],
     "managementPearls": [
-      "Volume repletion — IV/oral fluids",
-      "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives"
+      "Identify and treat cause / volume repletion",
+      "Review and adjust offending medications"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -504,8 +532,8 @@
       "Normal (low yield)."
     ],
     "criticalManagementItems": [
-      "Volume repletion — IV/oral fluids",
-      "Review and hold/reduce offending medications, especially the diuretic and other antihypertensives"
+      "Identify and treat cause / volume repletion",
+      "Review and adjust offending medications"
     ],
     "keyImageInterpretationFindings": [
       "Mobitz II second-degree AV block.",

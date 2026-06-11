@@ -250,41 +250,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors (CANT-MISS,8). Elevate the limb; mark and monitor the borders (5). Treat the portal of entry (e.g., tinea) and optimize diabetes (4). Disposition — oral outpatient vs IV/admission based on systemic illness/comorbidity (4). URGENT surgical consult if necrotizing infection is suspected; I&D for abscess (CANT-MISS,4). PENALTY: missing necrotizing fasciitis / failing to drain an abscess (-4).",
-      "idealAnswer": "Plan: Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors; URGENT surgical consult if necrotizing infection is suspected; I&D for abscess.",
+      "rubric": "Per MGH SSTI: antibiotics by purulence – cephalexin/cefazolin nonpurulent, add MRSA coverage if purulent (CANT-MISS,7); incision & drainage of any abscess (CANT-MISS,5); mark borders and elevate limb (3); treat predisposing factor – tinea/edema (3); ~5-day course (2). PENALTY: broad MRSA coverage for simple nonpurulent cellulitis (-2); missing an abscess that needs drainage (-3).",
+      "idealAnswer": "Nonpurulent cellulitis: cover streptococci/MSSA – cephalexin or cefazolin (IV if systemic). Purulent cellulitis/abscess: incision & drainage PLUS MRSA coverage (TMP-SMX or doxycycline PO; vancomycin IV if severe). Elevate and mark the borders; treat the predisposing factor (tinea, edema). Antibiotics for ~5 days. Blood cultures only if systemic toxicity/immunocompromise.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
-            "points": 8
+            "item": "Antibiotics appropriate to purulence",
+            "points": 7
           },
           {
-            "item": "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess",
-            "points": 4
+            "item": "Incision & drainage of abscess",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Mark borders and elevate limb",
+            "points": 3
+          },
+          {
+            "item": "Treat predisposing factor (tinea/edema)",
+            "points": 3
+          },
+          {
+            "item": "Appropriate duration (~5 days)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Blood cultures if systemic toxicity",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "missing necrotizing fasciitis / failing to drain an abscess",
-            "points": -4
+            "item": "Missing an abscess needing drainage",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
-        "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+        "Antibiotics appropriate to purulence",
+        "Incision & drainage of abscess"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Mark borders and elevate limb",
+        "Treat predisposing factor (tinea/edema)",
+        "Appropriate duration (~5 days)",
+        "Blood cultures if systemic toxicity"
+      ],
       "unsafeActions": [
-        "missing necrotizing fasciitis / failing to drain an abscess"
+        "Missing an abscess needing drainage"
       ],
-      "consults": [
-        "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
-      ],
-      "disposition": ""
+      "consults": [],
+      "disposition": "Outpatient; admit if systemic toxicity",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Skin & Soft Tissue Infections (Cellulitis)",
+        "page": 120
+      }
     }
   ],
   "standardizedPatient": {
@@ -471,11 +497,11 @@
       "Commit to Cellulitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "missing necrotizing fasciitis / failing to drain an abscess"
+      "Missing an abscess needing drainage"
     ],
     "managementPearls": [
-      "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
-      "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+      "Antibiotics appropriate to purulence",
+      "Incision & drainage of abscess"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -485,8 +511,8 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Antibiotics targeting streptococci/staphylococci — non-purulent favors strep coverage; cover MRSA if purulent or risk factors",
-      "URGENT surgical consult if necrotizing infection is suspected; I&D for abscess"
+      "Antibiotics appropriate to purulence",
+      "Incision & drainage of abscess"
     ],
     "keyImageInterpretationFindings": [
       "Sinus bradycardia.",

@@ -263,34 +263,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Treat the underlying disease — optimize rheumatoid arthritis control (CANT-MISS,9). Give iron ONLY if a true concurrent deficiency is confirmed (5). Avoid unnecessary transfusion in a stable patient (5). Consider erythropoiesis-stimulating agents only in selected settings (e.g., CKD) (3). Monitor response and reassess for other causes if not improving (3). PENALTY: empiric iron loading without confirming deficiency (-3).",
-      "idealAnswer": "Plan: Treat the underlying disease — optimize rheumatoid arthritis control.",
+      "rubric": "Per MGH anemia of chronic disease: treat the underlying disease (CANT-MISS,7); confirm iron studies distinguishing ACD from IDA (5); transfuse only if symptomatic/unstable (4); iron only if concurrent true deficiency (3); ESA only in select settings with specialist input (2). PENALTY: transfusing/ironing a stable ACD patient reflexively (-2); missing an underlying malignancy/infection (-2).",
+      "idealAnswer": "Treat the underlying chronic inflammatory/infectious/malignant disease – that is the primary therapy. Confirm with iron studies (low iron, normal/high ferritin). Avoid unnecessary transfusion; transfuse only if symptomatic. Replace iron only if coexisting true iron deficiency. Consider ESAs only in specific settings (e.g. CKD) with hematology input.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Treat the underlying disease — optimize rheumatoid arthritis control",
-            "points": 9
+            "item": "Treat the underlying chronic disease",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Confirm iron studies (distinguish from IDA)",
+            "points": 5
+          },
+          {
+            "item": "Transfuse only if symptomatic",
+            "points": 4
+          },
+          {
+            "item": "Iron only if concurrent deficiency",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Consider ESA in select settings (e.g. CKD)",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "empiric iron loading without confirming deficiency",
-            "points": -3
+            "item": "Reflexive transfusion without indication",
+            "points": -2
+          },
+          {
+            "item": "Missing underlying disease",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Treat the underlying disease — optimize rheumatoid arthritis control"
+        "Treat the underlying chronic disease"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Confirm iron studies (distinguish from IDA)",
+        "Transfuse only if symptomatic",
+        "Iron only if concurrent deficiency",
+        "Consider ESA in select settings (e.g. CKD)"
+      ],
       "unsafeActions": [
-        "empiric iron loading without confirming deficiency"
+        "Reflexive transfusion without indication",
+        "Missing underlying disease"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Outpatient / per underlying disease",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancytopenia & Anemia (Anemia of Chronic Disease)",
+        "page": 136
+      }
     }
   ],
   "standardizedPatient": {
@@ -506,10 +539,11 @@
       "Commit to Anemia of chronic disease and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "empiric iron loading without confirming deficiency"
+      "Reflexive transfusion without indication",
+      "Missing underlying disease"
     ],
     "managementPearls": [
-      "Treat the underlying disease — optimize rheumatoid arthritis control"
+      "Treat the underlying chronic disease"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -524,7 +558,7 @@
       "No acute process (may screen for an inflammatory/infectious driver)."
     ],
     "criticalManagementItems": [
-      "Treat the underlying disease — optimize rheumatoid arthritis control"
+      "Treat the underlying chronic disease"
     ],
     "keyImageInterpretationFindings": [
       "Left bundle branch block.",

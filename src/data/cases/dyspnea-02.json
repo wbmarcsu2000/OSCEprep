@@ -307,39 +307,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "CONTROLLED supplemental O2 targeting SpO2 88–92% (CANT-MISS,6). Inhaled bronchodilators — SABA + SAMA (6). Systemic corticosteroids (5). Antibiotics given purulent sputum / increased dyspnea (4). Consider non-invasive ventilation for respiratory acidosis (3). Smoking cessation counseling (bonus,1). PENALTY: high-flow/100% O2 risking CO2 narcosis (-4).",
-      "idealAnswer": "Plan: CONTROLLED supplemental O2 targeting SpO2 88–92%.",
+      "rubric": "Per MGH COPD: short-acting bronchodilators albuterol + ipratropium (CANT-MISS,5); systemic steroids prednisone 40 mg ×5 d (CANT-MISS,5); antibiotics if ↑dyspnea/sputum/purulence (4); controlled O2 to SpO2 88-92% (4); NIV/BiPAP for hypercapnic respiratory failure (4); treat trigger (2). PENALTY: high-flow O2 driving CO2 retention without monitoring (-3); failing to consider NIV in a tiring hypercapnic patient (-2).",
+      "idealAnswer": "COPD exacerbation: inhaled short-acting bronchodilators (albuterol + ipratropium), systemic corticosteroids (prednisone 40 mg × 5 days), antibiotics if increased dyspnea/sputum volume/purulence (e.g. azithromycin or doxycycline). Controlled O2 to SpO2 88–92%. NIV (BiPAP) for hypercapnic respiratory failure/acidosis. Treat triggers.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "CONTROLLED supplemental O2 targeting SpO2 88–92%",
-            "points": 6
+            "item": "Bronchodilators (albuterol + ipratropium)",
+            "points": 5
+          },
+          {
+            "item": "Systemic corticosteroids",
+            "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "Antibiotics if increased sputum/purulence",
+            "points": 4
+          },
+          {
+            "item": "Controlled O2 to SpO2 88-92%",
+            "points": 4
+          },
+          {
+            "item": "NIV (BiPAP) if hypercapnic failure",
+            "points": 4
+          }
+        ],
         "bonusActions": [
           {
-            "item": "Smoking cessation counseling",
-            "points": 1
+            "item": "Treat trigger / smoking cessation counseling",
+            "points": 2
           }
         ],
         "penalties": [
           {
-            "item": "high-flow/100% O2 risking CO2 narcosis",
-            "points": -4
+            "item": "Uncontrolled high-flow O2",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "CONTROLLED supplemental O2 targeting SpO2 88–92%"
+        "Bronchodilators (albuterol + ipratropium)",
+        "Systemic corticosteroids"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Antibiotics if increased sputum/purulence",
+        "Controlled O2 to SpO2 88-92%",
+        "NIV (BiPAP) if hypercapnic failure",
+        "Treat trigger / smoking cessation counseling"
+      ],
       "unsafeActions": [
-        "high-flow/100% O2 risking CO2 narcosis"
+        "Uncontrolled high-flow O2"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit; ICU if respiratory failure",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "COPD",
+        "page": 51
+      }
     }
   ],
   "standardizedPatient": {
@@ -585,10 +613,11 @@
       "Commit to COPD exacerbation and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "high-flow/100% O2 risking CO2 narcosis"
+      "Uncontrolled high-flow O2"
     ],
     "managementPearls": [
-      "CONTROLLED supplemental O2 targeting SpO2 88–92%"
+      "Bronchodilators (albuterol + ipratropium)",
+      "Systemic corticosteroids"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -602,7 +631,8 @@
       "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
     ],
     "criticalManagementItems": [
-      "CONTROLLED supplemental O2 targeting SpO2 88–92%"
+      "Bronchodilators (albuterol + ipratropium)",
+      "Systemic corticosteroids"
     ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",

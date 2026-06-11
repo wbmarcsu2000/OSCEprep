@@ -271,27 +271,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Anticoagulation — heparin/LMWH or DOAC (CANT-MISS, 10; accepts therapeutic anticoagulation). Supplemental oxygen (4). Risk stratify; reserve thrombolysis for massive/hemodynamically unstable PE (5). Admit with monitoring (4). Investigate provoking factors / counsel (3). Assess bleeding risk before anticoagulating (4). PENALTY: no anticoagulation (-5); reflexive thrombolytics in a stable patient (-2).",
-      "idealAnswer": "Plan: .",
+      "rubric": "Per MGH VTE Management: anticoagulation, DOAC preferred (CANT-MISS,6); risk-stratify low/intermediate/high (4); PERT consult for intermediate-high/high risk (3); systemic thrombolysis (tPA) for high-risk/unstable PE (5); supplemental O2 / supportive care (3); IVC filter ONLY if AC contraindicated (2); admit/monitor (2). PENALTY: IVC filter instead of anticoagulation when AC not contraindicated (-3); full-dose lytics in a stable low-risk PE (-3).",
+      "idealAnswer": "Risk-stratify the PE (low / intermediate / high). Anticoagulate unless contraindicated – DOAC preferred over LMWH/VKA. For high-risk (hemodynamic instability) give systemic thrombolysis (tPA) and activate the PERT/SHOCK team. IVC filter only if anticoagulation is contraindicated. Supportive O2; cautious IVF.",
       "scoring": {
         "maxPoints": 25,
-        "criticalActions": [],
-        "coreActions": [],
-        "bonusActions": [],
+        "criticalActions": [
+          {
+            "item": "Anticoagulation (DOAC preferred)",
+            "points": 6
+          },
+          {
+            "item": "Risk-stratify PE severity",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Thrombolysis (tPA) if high-risk/unstable",
+            "points": 5
+          },
+          {
+            "item": "PERT consult",
+            "points": 3
+          },
+          {
+            "item": "Supplemental oxygen / supportive care",
+            "points": 3
+          },
+          {
+            "item": "Admit and monitor",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "IVC filter only if AC contraindicated",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "no anticoagulation",
-            "points": -5
+            "item": "IVC filter instead of anticoagulation",
+            "points": -3
           }
         ]
       },
-      "requiredActions": [],
-      "optionalActions": [],
-      "unsafeActions": [
-        "no anticoagulation"
+      "requiredActions": [
+        "Anticoagulation (DOAC preferred)",
+        "Risk-stratify PE severity"
       ],
-      "consults": [],
-      "disposition": ""
+      "optionalActions": [
+        "Thrombolysis (tPA) if high-risk/unstable",
+        "PERT consult",
+        "Supplemental oxygen / supportive care",
+        "Admit and monitor",
+        "IVC filter only if AC contraindicated"
+      ],
+      "unsafeActions": [
+        "IVC filter instead of anticoagulation"
+      ],
+      "consults": [
+        "PERT (Pulmonary Embolism Response Team)"
+      ],
+      "disposition": "Admit; ICU if intermediate-high or high risk",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "VTE Management",
+        "page": 55
+      }
     }
   ],
   "images": {
@@ -578,9 +625,12 @@
       "Commit to Pulmonary embolism and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "no anticoagulation"
+      "IVC filter instead of anticoagulation"
     ],
-    "managementPearls": [],
+    "managementPearls": [
+      "Anticoagulation (DOAC preferred)",
+      "Risk-stratify PE severity"
+    ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "auscultate_aortic_area"
@@ -590,7 +640,10 @@
       "Sinus tachycardia at 112. Classic S1Q3T3 pattern present; otherwise no acute ST changes.",
       "No consolidation, no pneumothorax, no effusion — essentially clear."
     ],
-    "criticalManagementItems": [],
+    "criticalManagementItems": [
+      "Anticoagulation (DOAC preferred)",
+      "Risk-stratify PE severity"
+    ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia at 112. Classic S1Q3T3 pattern present; otherwise no acute ST changes.",
       "No consolidation, no pneumothorax, no effusion — essentially clear."

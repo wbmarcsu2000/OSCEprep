@@ -292,27 +292,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Therapeutic anticoagulation — heparin/LMWH (CANT-MISS,9; note recent surgery affects agent/bleeding risk). Supplemental O2 (4). Risk-stratify; reserve thrombolysis for massive/unstable PE (5). Admit with monitoring (4). Assess bleeding risk given recent surgery before anticoagulating (3). PENALTY: no anticoagulation (-6); reflexive thrombolytics in a stable post-op patient (-4).",
-      "idealAnswer": "Plan: .",
+      "rubric": "Per MGH VTE Management: anticoagulation, DOAC preferred (CANT-MISS,6); risk-stratify low/intermediate/high (4); thrombolysis (tPA) for high-risk/unstable (5); PERT consult (3); O2/supportive care, cautious IVF (3); IVC filter only if AC contraindicated (2); admit/monitor (2). PENALTY: IVC filter instead of AC when AC not contraindicated (-3); lytics in stable low-risk PE (-3).",
+      "idealAnswer": "Risk-stratify the PE. Anticoagulate unless contraindicated – DOAC preferred. Systemic thrombolysis (tPA) and PERT/SHOCK activation for high-risk (hemodynamically unstable) PE. Supplemental O2 (HFNC preferred); cautious IVF; norepinephrine for shock. IVC filter only if anticoagulation contraindicated.",
       "scoring": {
         "maxPoints": 25,
-        "criticalActions": [],
-        "coreActions": [],
-        "bonusActions": [],
+        "criticalActions": [
+          {
+            "item": "Anticoagulation (DOAC preferred)",
+            "points": 6
+          },
+          {
+            "item": "Risk-stratify PE severity",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Thrombolysis (tPA) if high-risk/unstable",
+            "points": 5
+          },
+          {
+            "item": "PERT consult",
+            "points": 3
+          },
+          {
+            "item": "Supportive care (O2, cautious IVF)",
+            "points": 3
+          },
+          {
+            "item": "Admit and monitor",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "IVC filter only if AC contraindicated",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "no anticoagulation",
-            "points": -6
+            "item": "IVC filter instead of anticoagulation",
+            "points": -3
           }
         ]
       },
-      "requiredActions": [],
-      "optionalActions": [],
-      "unsafeActions": [
-        "no anticoagulation"
+      "requiredActions": [
+        "Anticoagulation (DOAC preferred)",
+        "Risk-stratify PE severity"
       ],
-      "consults": [],
-      "disposition": ""
+      "optionalActions": [
+        "Thrombolysis (tPA) if high-risk/unstable",
+        "PERT consult",
+        "Supportive care (O2, cautious IVF)",
+        "Admit and monitor",
+        "IVC filter only if AC contraindicated"
+      ],
+      "unsafeActions": [
+        "IVC filter instead of anticoagulation"
+      ],
+      "consults": [
+        "PERT"
+      ],
+      "disposition": "Admit; ICU if intermediate-high/high risk",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "VTE Management",
+        "page": 55
+      }
     }
   ],
   "standardizedPatient": {
@@ -536,9 +583,12 @@
       "Commit to Pulmonary embolism and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "no anticoagulation"
+      "IVC filter instead of anticoagulation"
     ],
-    "managementPearls": [],
+    "managementPearls": [
+      "Anticoagulation (DOAC preferred)",
+      "Risk-stratify PE severity"
+    ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
     "criticalWorkupItems": [],
@@ -546,7 +596,10 @@
       "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
       "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
     ],
-    "criticalManagementItems": [],
+    "criticalManagementItems": [
+      "Anticoagulation (DOAC preferred)",
+      "Risk-stratify PE severity"
+    ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
       "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."

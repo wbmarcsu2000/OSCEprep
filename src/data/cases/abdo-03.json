@@ -268,34 +268,72 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Aggressive IV fluid resuscitation (CANT-MISS,8). Analgesia and antiemetics (5). NPO initially, then EARLY enteral feeding as tolerated (4). Identify/treat cause — alcohol cessation, manage triglycerides (3). Monitor for complications; ICU if severe (3). PENALTY: prophylactic antibiotics in mild/uncomplicated pancreatitis (-3); withholding fluids (-2).",
-      "idealAnswer": "Plan: Aggressive IV fluid resuscitation.",
+      "rubric": "Per MGH pancreatitis (WATERFALL): controlled IV fluids – lactated Ringer's, titrate to BUN/HCT (CANT-MISS,7); analgesia (4); antiemetics (2); early enteral nutrition as tolerated (4); treat underlying cause / ERCP if gallstone + cholangitis (4); monitor for severity (SIRS, organ failure) (2). PENALTY: prophylactic antibiotics in uncomplicated pancreatitis (-3); prolonged NPO / over-aggressive late fluids (-2).",
+      "idealAnswer": "Aggressive but controlled IV fluid resuscitation – lactated Ringer's preferred (avoid LR if hypercalcemia), ~3–4 L in first 24 h titrated to keep BUN/HCT from rising; avoid over-resuscitation after 24–48 h. Analgesia and antiemetics. Early enteral feeding as tolerated. Treat the cause (e.g. ERCP for gallstone pancreatitis with cholangitis). No prophylactic antibiotics.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Aggressive IV fluid resuscitation",
-            "points": 8
+            "item": "IV fluid resuscitation (lactated Ringer's)",
+            "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Analgesia",
+            "points": 4
+          },
+          {
+            "item": "Early enteral nutrition as tolerated",
+            "points": 4
+          },
+          {
+            "item": "Treat underlying cause / ERCP if indicated",
+            "points": 4
+          },
+          {
+            "item": "Antiemetics",
+            "points": 2
+          },
+          {
+            "item": "Monitor severity (SIRS/organ failure)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Lipid/triglyceride or calcium workup if indicated",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "prophylactic antibiotics in mild/uncomplicated pancreatitis",
+            "item": "Prophylactic antibiotics without infection",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Aggressive IV fluid resuscitation"
+        "IV fluid resuscitation (lactated Ringer's)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Analgesia",
+        "Early enteral nutrition as tolerated",
+        "Treat underlying cause / ERCP if indicated",
+        "Antiemetics",
+        "Monitor severity (SIRS/organ failure)",
+        "Lipid/triglyceride or calcium workup if indicated"
+      ],
       "unsafeActions": [
-        "prophylactic antibiotics in mild/uncomplicated pancreatitis"
+        "Prophylactic antibiotics without infection"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit; ICU if severe",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancreatitis",
+        "page": 85
+      }
     }
   ],
   "standardizedPatient": {
@@ -554,10 +592,10 @@
       "Commit to Acute pancreatitis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "prophylactic antibiotics in mild/uncomplicated pancreatitis"
+      "Prophylactic antibiotics without infection"
     ],
     "managementPearls": [
-      "Aggressive IV fluid resuscitation"
+      "IV fluid resuscitation (lactated Ringer's)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -571,7 +609,7 @@
       "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
     ],
     "criticalManagementItems": [
-      "Aggressive IV fluid resuscitation"
+      "IV fluid resuscitation (lactated Ringer's)"
     ],
     "keyImageInterpretationFindings": [
       "Hyperkalemia pattern: peaked T waves with QRS widening.",

@@ -251,34 +251,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Oral or IV rehydration — the mainstay (CANT-MISS,9). Supportive care, electrolyte correction (5). Reserve antibiotics for severe/toxic disease, immunocompromise, or specific pathogens; avoid them if Shiga-toxin E. coli is suspected (5). Avoid antimotility agents in inflammatory/bloody diarrhea (4). Return precautions and public-health considerations (2). PENALTY: empiric antibiotics with possible EHEC (HUS risk) (-3); antimotility agents in bloody/febrile diarrhea (-2).",
-      "idealAnswer": "Plan: Oral or IV rehydration — the mainstay.",
+      "rubric": "Per MGH diarrhea: volume and electrolyte repletion (CANT-MISS,7); selective empiric antibiotics for severe/septic/high-risk/bloody (4); AVOID antibiotics if STEC suspected, HUS risk (CANT-MISS,4); antimotility (loperamide) only if no fever/blood (3); stool studies if severe/bloody/high-risk (3). PENALTY: antibiotics in suspected EHEC/STEC (-4); antimotility in febrile bloody diarrhea (-2).",
+      "idealAnswer": "Most acute infectious diarrhea is self-limited: volume and electrolyte repletion (oral or IV). Empiric antibiotics (fluoroquinolone or azithromycin) only for severe disease, sepsis, high-risk hosts, age ≥70, or bloody diarrhea – and AVOID antibiotics if Shiga-toxin E. coli is suspected (HUS risk). Loperamide only if no fever/blood. Stool studies if severe/bloody/high-risk.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Oral or IV rehydration — the mainstay",
-            "points": 9
+            "item": "Volume and electrolyte repletion",
+            "points": 7
+          },
+          {
+            "item": "Avoid antibiotics if STEC suspected (HUS risk)",
+            "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Selective empiric antibiotics for severe/high-risk",
+            "points": 4
+          },
+          {
+            "item": "Antimotility only if no fever/blood",
+            "points": 3
+          },
+          {
+            "item": "Stool studies if severe/bloody/high-risk",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Dietary advice (BRAT-type)",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "empiric antibiotics with possible EHEC (HUS risk)",
-            "points": -3
+            "item": "Antibiotics in suspected STEC",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
-        "Oral or IV rehydration — the mainstay"
+        "Volume and electrolyte repletion",
+        "Avoid antibiotics if STEC suspected (HUS risk)"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Selective empiric antibiotics for severe/high-risk",
+        "Antimotility only if no fever/blood",
+        "Stool studies if severe/bloody/high-risk",
+        "Dietary advice (BRAT-type)"
+      ],
       "unsafeActions": [
-        "empiric antibiotics with possible EHEC (HUS risk)"
+        "Antibiotics in suspected STEC"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Usually outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Diarrhea (Bacterial Gastroenteritis)",
+        "page": 77
+      }
     }
   ],
   "standardizedPatient": {
@@ -460,10 +493,11 @@
       "Commit to Bacterial gastroenteritis and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "empiric antibiotics with possible EHEC (HUS risk)"
+      "Antibiotics in suspected STEC"
     ],
     "managementPearls": [
-      "Oral or IV rehydration — the mainstay"
+      "Volume and electrolyte repletion",
+      "Avoid antibiotics if STEC suspected (HUS risk)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -475,7 +509,8 @@
       "No acute process (low yield)."
     ],
     "criticalManagementItems": [
-      "Oral or IV rehydration — the mainstay"
+      "Volume and electrolyte repletion",
+      "Avoid antibiotics if STEC suspected (HUS risk)"
     ],
     "keyImageInterpretationFindings": [
       "Wellens syndrome (critical LAD stenosis warning pattern).",

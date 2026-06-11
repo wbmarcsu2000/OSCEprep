@@ -232,27 +232,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Trial of a proton pump inhibitor (CANT-MISS,7). Lifestyle measures — weight loss, avoid late/large/fatty meals, elevate head of bed, reduce alcohol/coffee (8). Outpatient follow-up to assess response (5). Endoscopy if alarm features or PPI-refractory (5). Patient counseling/reassurance after cardiac exclusion (4).",
-      "idealAnswer": "Plan: Trial of a proton pump inhibitor.",
+      "rubric": "Per MGH GERD: PPI trial, e.g. omeprazole 20 mg, 8 weeks (CANT-MISS,7); lifestyle modification – weight loss, trigger avoidance, no meals before bed, HOB elevation (5); reassess/uptitrate then BID if no relief (3); EGD if alarm symptoms or refractory (4); reassure / exclude cardiac cause first (3). PENALTY: invasive cardiac workup without indication (-2); missing alarm features that warrant EGD (-2).",
+      "idealAnswer": "After cardiac causes are excluded: start a PPI (e.g. omeprazole 20 mg before breakfast), 8-week trial. Lifestyle modification – weight loss, avoid trigger foods/late meals, elevate head of bed, tobacco/alcohol reduction. EGD if alarm features (dysphagia, weight loss, GI bleed, anemia, age ≥60) or no response.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Trial of a proton pump inhibitor",
+            "item": "PPI trial (omeprazole)",
             "points": 7
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
-        "penalties": []
+        "coreActions": [
+          {
+            "item": "Lifestyle modification",
+            "points": 5
+          },
+          {
+            "item": "EGD if alarm symptoms or refractory",
+            "points": 4
+          },
+          {
+            "item": "Reassess and uptitrate PPI",
+            "points": 3
+          },
+          {
+            "item": "Exclude cardiac cause first",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "H2 blocker as adjunct",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Missing alarm features",
+            "points": -2
+          }
+        ]
       },
       "requiredActions": [
-        "Trial of a proton pump inhibitor"
+        "PPI trial (omeprazole)"
       ],
-      "optionalActions": [],
-      "unsafeActions": [],
+      "optionalActions": [
+        "Lifestyle modification",
+        "EGD if alarm symptoms or refractory",
+        "Reassess and uptitrate PPI",
+        "Exclude cardiac cause first",
+        "H2 blocker as adjunct"
+      ],
+      "unsafeActions": [
+        "Missing alarm features"
+      ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "GERD & Peptic Ulcer Disease",
+        "page": 73
+      }
     }
   ],
   "images": {
@@ -520,10 +560,10 @@
       "Commit to GERD and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "Anchoring before excluding dangerous alternatives"
+      "Missing alarm features"
     ],
     "managementPearls": [
-      "Trial of a proton pump inhibitor"
+      "PPI trial (omeprazole)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -537,7 +577,7 @@
       "No acute cardiopulmonary process."
     ],
     "criticalManagementItems": [
-      "Trial of a proton pump inhibitor"
+      "PPI trial (omeprazole)"
     ],
     "keyImageInterpretationFindings": [
       "Benign early repolarization pattern.",

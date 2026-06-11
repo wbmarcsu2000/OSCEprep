@@ -239,3 +239,25 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     instead of a blank page. PWA manifest (`public/manifest.webmanifest`,
     installable, standalone) plus SEO/Open-Graph/Twitter meta and theme-color
     were added to `index.html`. Verified on desktop (1440px) and mobile (390px).
+38. **Management aligned to the MGH Housestaff Manual 2024–2025.** Every case's
+    `management` step was rewritten so its plan matches the manual's approach for
+    that diagnosis, and each carries an `mghReference` (`{manual, section, page}`)
+    rendered in the feedback's Management section ("📖 Management aligned to the
+    MGH Housestaff Manual 2024–2025 — <section>, p. <N>"; page = PDF page). The
+    scoring was enriched from 0–3 thin items to itemized critical/core/bonus +
+    penalties summing toward the 25-pt section, with manual-specific drugs/doses
+    living in the rubric and idealAnswer (the matched item *names* stay clean
+    clinical concepts, e.g. "Aspirin", so a student's "aspirin" still credits).
+    Reference is threaded RawStep → StepModel → SectionResult → Feedback;
+    informational only, never used in scoring. Source pages were extracted from
+    the manual PDF (e.g. ACS p.18, Sepsis p.65, CAP p.116, C. diff p.124).
+39. **Drill coverage matcher precision (`looseCovered`).** The drill grader
+    over-credited (a single shared token: "metabolic" credited "metabolic
+    alkalosis") and, with AI on, under-credited (the LLM returned only its single
+    best match). Fixed both: `looseCovered` now requires every *distinctive*
+    (non-qualifier) content token of a concept — leading qualifiers
+    (high/appropriate/serial/acute…) are optional — so "respiratory compensation"
+    credits "appropriate respiratory compensation" but "metabolic acidosis" does
+    NOT credit "metabolic alkalosis"; and `store.gradeCoverage` now *unions* the
+    LLM's semantic matches with the deterministic matches so a clearly-named
+    concept is always credited even when the LLM under-reports.

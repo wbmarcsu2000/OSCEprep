@@ -279,34 +279,74 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "NPO (3). Nasogastric tube decompression (CANT-MISS,6). IV fluid resuscitation (5). Correct electrolytes (replace potassium/chloride) (4). Analgesia/antiemetics (2). Surgical consultation; trial of non-operative management for adhesive SBO but operate for strangulation/ischemia or failure to resolve (4). PENALTY: feeding the patient / missing signs of strangulation (-4).",
-      "idealAnswer": "Plan: Nasogastric tube decompression.",
+      "rubric": "Per MGH abdominal pain (obstruction): NPO + NG-tube decompression (CANT-MISS,6); IV fluid resuscitation + electrolyte correction (5); surgery consult (5); analgesia/antiemetics (3); urgent surgery if strangulation/ischemia/closed-loop (4); serial exams (2). PENALTY: feeding / no decompression in obstruction (-3); missing signs of strangulation (-2).",
+      "idealAnswer": "NPO, nasogastric tube decompression, IV fluid resuscitation, correct electrolytes. Analgesia and antiemetics. Surgery consult. Non-operative trial for partial/adhesive SBO; urgent surgery for strangulation/ischemia/closed-loop or failure to resolve. Serial exams and imaging.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Nasogastric tube decompression",
+            "item": "NPO and nasogastric decompression",
             "points": 6
+          },
+          {
+            "item": "Surgery consult",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "IV fluids and electrolyte correction",
+            "points": 5
+          },
+          {
+            "item": "Urgent surgery if strangulation/ischemia",
+            "points": 4
+          },
+          {
+            "item": "Analgesia and antiemetics",
+            "points": 3
+          },
+          {
+            "item": "Serial exams",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Trial of non-operative management if uncomplicated",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "feeding the patient / missing signs of strangulation",
-            "points": -4
+            "item": "Feeding without decompression",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Nasogastric tube decompression"
+        "NPO and nasogastric decompression",
+        "Surgery consult"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "IV fluids and electrolyte correction",
+        "Urgent surgery if strangulation/ischemia",
+        "Analgesia and antiemetics",
+        "Serial exams",
+        "Trial of non-operative management if uncomplicated"
+      ],
       "unsafeActions": [
-        "feeding the patient / missing signs of strangulation"
+        "Feeding without decompression"
       ],
-      "consults": [],
-      "disposition": ""
+      "consults": [
+        "Surgery"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Abdominal Pain (Small Bowel Obstruction)",
+        "page": 72
+      }
     }
   ],
   "standardizedPatient": {
@@ -514,10 +554,11 @@
       "Commit to Small bowel obstruction and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "feeding the patient / missing signs of strangulation"
+      "Feeding without decompression"
     ],
     "managementPearls": [
-      "Nasogastric tube decompression"
+      "NPO and nasogastric decompression",
+      "Surgery consult"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -530,7 +571,8 @@
       "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
     ],
     "criticalManagementItems": [
-      "Nasogastric tube decompression"
+      "NPO and nasogastric decompression",
+      "Surgery consult"
     ],
     "keyImageInterpretationFindings": [
       "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",

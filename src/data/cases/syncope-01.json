@@ -257,27 +257,67 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Reassurance and education on the benign nature (6). Teach trigger avoidance and recognizing the prodrome (6). Physical counter-pressure maneuvers; lie down/sit at prodrome (5). Maintain hydration and salt intake (4). Discharge with outpatient follow-up — admission not required for low-risk syncope (4). PENALTY: unnecessary admission or invasive cardiac workup (-3).",
-      "idealAnswer": "Plan: .",
+      "rubric": "Per MGH syncope (reflex): reassurance/education – benign (CANT-MISS,6); trigger avoidance (5); physical counter-pressure maneuvers (4); ensure hydration/salt (3); confirm low-risk features + normal ECG before discharge (4). PENALTY: admitting/over-testing a clear low-risk vasovagal event (-2); missing a high-risk feature (exertional, no prodrome, abnormal ECG) (-3).",
+      "idealAnswer": "Reassurance and education – benign prognosis. Counsel on avoiding triggers (prolonged standing, heat, dehydration), recognizing prodrome, and physical counter-pressure maneuvers (leg crossing, hand grip). Ensure hydration and salt intake. No cardiac admission if low-risk history and normal ECG. Reserve medications for recurrent refractory cases.",
       "scoring": {
         "maxPoints": 25,
-        "criticalActions": [],
-        "coreActions": [],
-        "bonusActions": [],
+        "criticalActions": [
+          {
+            "item": "Reassurance and patient education",
+            "points": 6
+          },
+          {
+            "item": "Trigger avoidance counseling",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Physical counter-pressure maneuvers",
+            "points": 4
+          },
+          {
+            "item": "Confirm low-risk features and normal ECG",
+            "points": 4
+          },
+          {
+            "item": "Hydration and salt intake",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Consider medication only if recurrent/refractory",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "unnecessary admission or invasive cardiac workup",
+            "item": "Missing a high-risk feature",
             "points": -3
           }
         ]
       },
-      "requiredActions": [],
-      "optionalActions": [],
+      "requiredActions": [
+        "Reassurance and patient education",
+        "Trigger avoidance counseling"
+      ],
+      "optionalActions": [
+        "Physical counter-pressure maneuvers",
+        "Confirm low-risk features and normal ECG",
+        "Hydration and salt intake",
+        "Consider medication only if recurrent/refractory"
+      ],
       "unsafeActions": [
-        "unnecessary admission or invasive cardiac workup"
+        "Missing a high-risk feature"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Discharge if low-risk",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Syncope (Vasovagal)",
+        "page": 37
+      }
     }
   ],
   "standardizedPatient": {
@@ -504,9 +544,12 @@
       "Commit to Vasovagal syncope and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "unnecessary admission or invasive cardiac workup"
+      "Missing a high-risk feature"
     ],
-    "managementPearls": [],
+    "managementPearls": [
+      "Reassurance and patient education",
+      "Trigger avoidance counseling"
+    ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "auscultate_aortic_area",
@@ -519,7 +562,10 @@
       "Normal sinus rhythm; normal intervals; no pre-excitation, long QT, or block.",
       "Normal (low yield; not routinely required)."
     ],
-    "criticalManagementItems": [],
+    "criticalManagementItems": [
+      "Reassurance and patient education",
+      "Trigger avoidance counseling"
+    ],
     "keyImageInterpretationFindings": [
       "Ventricular bigeminy (frequent PVCs).",
       "Aortic tortuosity with calcification (atherosclerosis)."

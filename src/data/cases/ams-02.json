@@ -286,39 +286,77 @@
       "label": "Management",
       "max": 25,
       "prompt": "What is your management plan?",
-      "rubric": "Early IV fluid resuscitation for sepsis/hypotension (CANT-MISS,7). Obtain cultures then empiric IV antibiotics promptly (CANT-MISS,7). Source control (4). Monitor lactate/urine output/MAP (3). Non-pharmacologic delirium measures; reserve antipsychotics for severe agitation (2). Reassess and admit (2). PENALTY: delaying antibiotics/fluids (-4).",
-      "idealAnswer": "Plan: Early IV fluid resuscitation for sepsis/hypotension; Obtain cultures then empiric IV antibiotics promptly.",
+      "rubric": "Per MGH sepsis (Surviving Sepsis): cultures then empiric broad-spectrum IV antibiotics within 1 h (CANT-MISS,7); IV crystalloid resuscitation 30 mL/kg (CANT-MISS,5); norepinephrine first-line for MAP<65 after fluids (4); source control – relieve obstruction/remove line (3); serial lactate (2); treat delirium non-pharmacologically (2). PENALTY: delaying antibiotics for tests (-4); dopamine as first-line pressor (-2).",
+      "idealAnswer": "Urosepsis: obtain blood and urine cultures, then give empiric broad-spectrum IV antibiotics within 1 hour (e.g. ceftriaxone; cover resistant GNR if risk). 30 mL/kg balanced crystalloid for hypoperfusion. Norepinephrine first-line if MAP <65 after fluids. Source control (relieve obstruction, remove catheter). Serial lactate. Treat delirium non-pharmacologically.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Early IV fluid resuscitation for sepsis/hypotension",
+            "item": "Empiric broad-spectrum antibiotics",
             "points": 7
           },
           {
-            "item": "Obtain cultures then empiric IV antibiotics promptly",
-            "points": 7
+            "item": "IV crystalloid resuscitation",
+            "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "Blood and urine cultures before antibiotics",
+            "points": 3
+          },
+          {
+            "item": "Norepinephrine first-line if MAP<65",
+            "points": 4
+          },
+          {
+            "item": "Source control",
+            "points": 3
+          },
+          {
+            "item": "Serial lactate",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Non-pharmacologic delirium management",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "delaying antibiotics/fluids",
+            "item": "Delaying antibiotics",
             "points": -4
+          },
+          {
+            "item": "Dopamine first-line",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Early IV fluid resuscitation for sepsis/hypotension",
-        "Obtain cultures then empiric IV antibiotics promptly"
+        "Empiric broad-spectrum antibiotics",
+        "IV crystalloid resuscitation"
       ],
-      "optionalActions": [],
+      "optionalActions": [
+        "Blood and urine cultures before antibiotics",
+        "Norepinephrine first-line if MAP<65",
+        "Source control",
+        "Serial lactate",
+        "Non-pharmacologic delirium management"
+      ],
       "unsafeActions": [
-        "delaying antibiotics/fluids"
+        "Delaying antibiotics",
+        "Dopamine first-line"
       ],
       "consults": [],
-      "disposition": ""
+      "disposition": "Admit; ICU if septic shock",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Sepsis",
+        "page": 65
+      }
     }
   ],
   "standardizedPatient": {
@@ -561,11 +599,12 @@
       "Commit to Urosepsis with delirium and manage with stabilization, definitive treatment, consults, and disposition."
     ],
     "commonPitfalls": [
-      "delaying antibiotics/fluids"
+      "Delaying antibiotics",
+      "Dopamine first-line"
     ],
     "managementPearls": [
-      "Early IV fluid resuscitation for sepsis/hypotension",
-      "Obtain cultures then empiric IV antibiotics promptly"
+      "Empiric broad-spectrum antibiotics",
+      "IV crystalloid resuscitation"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -581,8 +620,8 @@
       "No consolidation or effusion (obtained to exclude pneumonia as the infectious source)."
     ],
     "criticalManagementItems": [
-      "Early IV fluid resuscitation for sepsis/hypotension",
-      "Obtain cultures then empiric IV antibiotics promptly"
+      "Empiric broad-spectrum antibiotics",
+      "IV crystalloid resuscitation"
     ],
     "keyImageInterpretationFindings": [
       "Electrical alternans with low voltage (suggests large pericardial effusion).",
