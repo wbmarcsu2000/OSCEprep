@@ -105,7 +105,9 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
       </div>
 
       {/* Right: sequential steps */}
-      <div className="flex flex-col gap-3 min-h-0 overflow-y-auto scroll-quiet pr-0.5">
+      {/* Block flow (not flex) so tall cards keep their natural height and the
+          column scrolls — a flex column was collapsing the results card to 0. */}
+      <div className="space-y-3 min-h-0 overflow-y-auto scroll-quiet pr-0.5">
         {/* Progress + AI status */}
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <nav aria-label="Post-encounter steps" className="flex gap-1.5 flex-wrap">

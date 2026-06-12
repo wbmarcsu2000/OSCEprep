@@ -52,31 +52,28 @@ export function StepTeaching({ category, stepId }: { category: string; stepId: s
     );
   } else if (stepId === "revised") {
     heading = "💡 Narrowing to the diagnosis";
-    const ct = chalk[0];
-    body = ct ? (
-      <div className="space-y-1">
-        <p className="font-bold">{ct.title}</p>
-        <ul className="space-y-1">
-          {ct.points.slice(0, 4).map((p, i) => (
-            <li key={i} className="flex gap-2">
-              <span aria-hidden style={{ color: "var(--color-pop-teal)" }}>•</span>
-              <span>{p}</span>
-            </li>
-          ))}
-        </ul>
-        <a className="text-[12px] font-semibold underline underline-offset-2" style={{ color: "#076a5b" }} href={ct.url} target="_blank" rel="noopener noreferrer">
-          {ct.source} ↗
-        </a>
+    body = (
+      <div className="space-y-2 text-[13px]">
+        <p style={{ color: "var(--color-exam-muted)" }}>
+          Match the results to your leading diagnosis: which findings confirm it, and which of the
+          must-not-miss alternatives can you now safely drop?
+        </p>
+        {c.cantMiss.length > 0 && (
+          <p>
+            <span className="font-bold" style={{ color: "var(--color-exam-danger)" }}>
+              Before you commit, be sure you've excluded:{" "}
+            </span>
+            {c.cantMiss.join(" · ")}
+          </p>
+        )}
       </div>
-    ) : (
-      <p style={{ color: "var(--color-exam-muted)" }}>
-        Re-run the differential against the results: which diagnosis do they confirm, and which can you now drop?
-      </p>
     );
   } else if (stepId === "management") {
     heading = "💡 Management";
     const pearls = c.quickManagement.slice(0, 4);
     const mref = c.manual[0];
+    // Category chalk talks are management/treatment-oriented — surface one here.
+    const ct = chalk[0];
     body = (
       <div className="space-y-2 text-[12.5px]">
         {pearls.length > 0 && (
@@ -100,9 +97,25 @@ export function StepTeaching({ category, stepId }: { category: string; stepId: s
           </ul>
         )}
         {mref && (
-          <a className="font-semibold underline underline-offset-2" style={{ color: "var(--color-exam-accent)" }} href={mghPdfUrl(mref.page)} target="_blank" rel="noopener noreferrer">
+          <a className="font-semibold underline underline-offset-2 block" style={{ color: "var(--color-exam-accent)" }} href={mghPdfUrl(mref.page)} target="_blank" rel="noopener noreferrer">
             📖 {mref.section} — MGH p.&nbsp;{mref.page} ↗
           </a>
+        )}
+        {ct && (
+          <div className="pt-1 mt-1 border-t" style={{ borderColor: "var(--color-pop-teal)" }}>
+            <p className="font-bold mb-0.5">{ct.title}</p>
+            <ul className="space-y-1">
+              {ct.points.slice(0, 4).map((pt, i) => (
+                <li key={i} className="flex gap-2">
+                  <span aria-hidden style={{ color: "var(--color-pop-teal)" }}>•</span>
+                  <span>{pt}</span>
+                </li>
+              ))}
+            </ul>
+            <a className="font-semibold underline underline-offset-2" style={{ color: "#076a5b" }} href={ct.url} target="_blank" rel="noopener noreferrer">
+              {ct.source} ↗
+            </a>
+          </div>
         )}
       </div>
     );
