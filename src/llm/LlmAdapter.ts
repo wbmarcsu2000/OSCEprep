@@ -264,7 +264,9 @@ export class AnthropicProvider implements LlmProvider {
   private examinerSystem: string;
 
   constructor(opts: ProviderOpts) {
-    this.client = new Anthropic({ apiKey: opts.apiKey, dangerouslyAllowBrowser: true });
+    // maxRetries 4: Tier-1 keys have tight per-minute limits; the SDK backs off
+    // and honors retry-after, so brief 429 bursts heal instead of degrading.
+    this.client = new Anthropic({ apiKey: opts.apiKey, dangerouslyAllowBrowser: true, maxRetries: 4 });
     this.model = opts.model;
     this.gradingModel = opts.gradingModel;
     this.patientSystem = opts.patientSystemWrapper;
@@ -297,7 +299,7 @@ export class AnthropicProvider implements LlmProvider {
     try {
       const text = await this.complete(
         classifyPrompt(this.examinerSystem, studentText, candidates),
-        2048,
+        1024,
         IDS_SCHEMA as unknown as Record<string, unknown>,
         { model: this.gradingModel, effort: "medium" },
       );
@@ -360,7 +362,7 @@ export class OpenAiProvider implements LlmProvider {
   private examinerSystem: string;
 
   constructor(opts: ProviderOpts) {
-    this.client = new OpenAI({ apiKey: opts.apiKey, dangerouslyAllowBrowser: true });
+    this.client = new OpenAI({ apiKey: opts.apiKey, dangerouslyAllowBrowser: true, maxRetries: 4 });
     this.model = opts.model;
     this.gradingModel = opts.gradingModel;
     this.patientSystem = opts.patientSystemWrapper;

@@ -244,6 +244,19 @@ function phaseRemaining(engine: EngineState): number {
   }
 }
 
+/** Run thunks with bounded concurrency. Submitting a station used to fire a
+ *  dozen API calls at once — instant 429s on a fresh (Tier-1) API key, which
+ *  surfaced as "AI degraded" even though the key was fine. */
+async function mapLimit(jobs: (() => Promise<void>)[], limit: number): Promise<void> {
+  const queue = [...jobs];
+  const workers = Array.from({ length: Math.min(limit, queue.length) }, async () => {
+    for (let job = queue.shift(); job; job = queue.shift()) {
+      await job();
+    }
+  });
+  await Promise.all(workers);
+}
+
 /** Collect LLM-assisted rubric matches for grading. Deterministic matching in
  *  the engine always runs regardless; this only ADDs semantic matches, each
  *  validated against case metadata inside the scoring engine. */
@@ -253,7 +266,7 @@ async function collectLlmMatches(
 ): Promise<LlmMatches> {
   if (!llmEnabled) return {};
   const matches: LlmMatches = {};
-  const jobs: Promise<void>[] = [];
+  const jobs: (() => Promise<void>)[] = [];
   for (const step of caseModel.steps) {
     const answer = engine.postEncounterAnswers[step.id] ?? "";
     if (!answer || !step.scoring) continue;
@@ -263,7 +276,7 @@ async function collectLlmMatches(
       ...step.scoring.bonusActions,
     ].map((i) => ({ id: i.item, concepts: [i.item] }));
     if (items.length === 0) continue;
-    jobs.push(
+    jobs.push(() =>
       provider
         .classifyIntent(answer, items)
         .then((ids) => {
@@ -279,7 +292,7 @@ async function collectLlmMatches(
       .map((t) => t.text)
       .join("\n");
     if (turns) {
-      jobs.push(
+      jobs.push(() =>
         provider
           .classifyIntent(
             turns,
@@ -292,7 +305,7 @@ async function collectLlmMatches(
       );
     }
   }
-  await Promise.all(jobs);
+  await mapLimit(jobs, 3);
   return matches;
 }
 
@@ -303,8 +316,8 @@ async function collectCoaching(
 ): Promise<Record<string, string>> {
   if (!llmEnabled) return {};
   const out: Record<string, string> = {};
-  await Promise.all(
-    caseModel.steps.map(async (step) => {
+  await mapLimit(
+    caseModel.steps.map((step) => async () => {
       const answer = engine.postEncounterAnswers[step.id] ?? "";
       if (!step.idealAnswer) return;
       const note = await provider.coachAnswer({
@@ -316,6 +329,7 @@ async function collectCoaching(
       });
       if (note) out[step.id] = note;
     }),
+    2,
   );
   return out;
 }
@@ -786,7 +800,11 @@ setLlmFallbackListener((op, detail) => {
     if (s.aiDegraded !== null) useAppStore.setState({ aiDegraded: null, aiDegradedDetail: null });
     return;
   }
-  if (s.llmEnabled && (s.aiDegraded !== op || s.aiDegradedDetail !== (detail ?? null))) {
-    useAppStore.setState({ aiDegraded: op, aiDegradedDetail: detail ?? null });
+  const friendly =
+    detail && /429|rate.?limit/i.test(detail)
+      ? "rate-limited by the provider — recovers on its own in under a minute"
+      : detail ?? null;
+  if (s.llmEnabled && (s.aiDegraded !== op || s.aiDegradedDetail !== friendly)) {
+    useAppStore.setState({ aiDegraded: op, aiDegradedDetail: friendly });
   }
 });
