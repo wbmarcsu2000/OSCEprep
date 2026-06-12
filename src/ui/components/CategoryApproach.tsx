@@ -1,4 +1,5 @@
 import { CURRICULUM_BY_CATEGORY, FRAMEWORKS, type PracticeCase } from "../../data/curriculum";
+import { mghPdfUrl } from "../../data/mghManual";
 import { ManualRefs } from "./ManualRefs";
 
 /**
@@ -153,10 +154,61 @@ export function CategoryApproach({ category }: { category: string }) {
                 <div className="font-semibold">
                   {m.scenario}
                   {m.manualPage && (
-                    <span className="hint ml-2 font-normal">📖 MGH p.&nbsp;{m.manualPage}</span>
+                    <a
+                      className="hint ml-2 font-normal underline underline-offset-2"
+                      style={{ color: "var(--color-exam-accent)" }}
+                      href={mghPdfUrl(m.manualPage)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={`Open the manual PDF at page ${m.manualPage}`}
+                    >
+                      📖 MGH p.&nbsp;{m.manualPage} ↗
+                    </a>
                   )}
                 </div>
                 <div style={{ color: "var(--color-exam-muted)" }}>{m.plan}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {c.chalkTalks.length > 0 && (
+        <div className="card p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="icon-tile h-8 w-8 text-base" style={{ background: "var(--grad-teal)" }} aria-hidden>💡</span>
+            <div>
+              <div className="panel-label">Teaching frameworks</div>
+              <div className="hint">Distilled from TeachIM chalk talks</div>
+            </div>
+          </div>
+          <div className="space-y-2.5">
+            {c.chalkTalks.map((ct, i) => (
+              <div
+                key={i}
+                className="rounded-xl border p-3"
+                style={{ borderColor: "var(--color-pop-teal-soft)", background: "var(--color-pop-teal-soft)" }}
+              >
+                <div className="text-[13.5px] font-bold mb-1.5" style={{ color: "#076a5b" }}>
+                  {ct.title}
+                </div>
+                <ul className="space-y-1 text-[13px] leading-relaxed">
+                  {ct.points.map((p, j) => (
+                    <li key={j} className="flex gap-2">
+                      <span aria-hidden style={{ color: "var(--color-pop-teal)" }}>•</span>
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  className="text-[12px] font-semibold underline underline-offset-2 mt-1.5 inline-block"
+                  style={{ color: "#076a5b" }}
+                  href={ct.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {ct.source} ↗
+                </a>
               </div>
             ))}
           </div>

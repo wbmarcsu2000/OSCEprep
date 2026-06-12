@@ -66,6 +66,15 @@ export interface ManualRef {
 
 export const MGH_MANUAL = "MGH Housestaff Manual 2024–2025";
 
+/** A teaching framework distilled from a TeachIM chalk talk, cited to its
+ *  source page. Shown in the end-of-station teaching for the category. */
+export interface ChalkTalk {
+  title: string;
+  points: string[];
+  source: string;
+  url: string;
+}
+
 /** A named clinical-reasoning schema (how an expert organizes the problem). */
 export interface ReasoningFramework {
   name: string;
@@ -115,6 +124,9 @@ export interface CategoryCurriculum {
   /** Relevant MGH Housestaff Manual sections + pages for this complaint, so the
    *  drills and stations cite the same source. Injected at module load. */
   manual: ManualRef[];
+  /** Teaching frameworks distilled from TeachIM chalk talks. Injected at
+   *  module load (keyed by category). */
+  chalkTalks: ChalkTalk[];
 }
 
 const MDCALC = "https://www.mdcalc.com/";
@@ -135,7 +147,7 @@ const OLDCARTS: QuestionTheme = {
   ],
 };
 
-type RawCurriculum = Omit<CategoryCurriculum, "manual">;
+type RawCurriculum = Omit<CategoryCurriculum, "manual" | "chalkTalks">;
 
 const RAW_CURRICULUM: RawCurriculum[] = [
   // ---------------------------------------------------------------- Chest Pain
@@ -1118,11 +1130,112 @@ const MANUAL_BY_CATEGORY: Record<string, { manual: ManualRef[]; pearlPages: numb
   },
 };
 
+/**
+ * TeachIM chalk-talk frameworks, paraphrased into succinct teaching points and
+ * cited to the source page, keyed by category. Shown in the end-of-station
+ * teaching. Source: teachim.org (free open-access IM teaching).
+ */
+const CHALK_TALKS_BY_CATEGORY: Record<string, ChalkTalk[]> = {
+  Anemia: [
+    {
+      title: "Work-up: reticulocyte index first, then MCV",
+      points: [
+        "Step 1 — reticulocyte index: >3 = overproduction (blood loss, hemolysis, sequestration); low = underproduction (marrow problem).",
+        "Underproduction branches by MCV: microcytic <80, normocytic 80–100, macrocytic >100.",
+        "Microcytic: iron studies separate iron deficiency from anemia of chronic disease (ACD).",
+        "Fe deficiency: low Fe, high TIBC, Tsat <20% (<10% diagnostic), ferritin <30 ng/mL diagnostic.",
+        "ACD: low Fe, low-normal TIBC, ferritin normal–high.",
+        "Caveat: ferritin is an acute-phase reactant — unreliable in acute illness.",
+      ],
+      source: "TeachIM — Work-up of Anemia Chalk Talk",
+      url: "https://teachim.org/teaching_material/work-up-of-anemia-chalk-talk-teachim/",
+    },
+    {
+      title: "Hemolysis branch: the DAT splits immune vs non-immune",
+      points: [
+        "Confirm hemolysis: high LDH, low haptoglobin, high indirect bilirubin, smear.",
+        "DAT (direct antiglobulin test) splits immune (AIHA) from non-immune.",
+        "Warm AIHA: IgG — malignancy, autoimmune. Cold AIHA: IgM — lymphoma, mycoplasma, mono.",
+        "Non-immune + schistocytes = MAHA → think TTP, HUS, DIC, HELLP.",
+        "Non-immune, no schistocytes: extrinsic (liver disease, infection, meds) vs intrinsic (membrane, hemoglobinopathy, enzyme).",
+      ],
+      source: "TeachIM — Work-up of Anemia Chalk Talk",
+      url: "https://teachim.org/teaching_material/work-up-of-anemia-chalk-talk-teachim/",
+    },
+  ],
+  Fever: [
+    {
+      title: "CAP: severity scoring & disposition",
+      points: [
+        "CURB-65 (1 pt each: Confusion, Urea >7, RR ≥30, low BP, age ≥65): 0–1 outpatient, 2 inpatient, 3–5 severe.",
+        "PSI (demographics, comorbidities, exam, labs): class I–II outpatient, IV–V inpatient.",
+        "ICU if ≥1 ATS major criterion (septic shock, mechanical ventilation) or ≥3 minor criteria.",
+        "MDR risk → cover MRSA + Pseudomonas: prior colonization/infection, or hospitalization + IV abx within 90 d.",
+      ],
+      source: "TeachIM — Community-Acquired Pneumonia Chalk Talk",
+      url: "https://teachim.org/teaching_material/cap/",
+    },
+    {
+      title: "CAP: empiric antibiotics & duration",
+      points: [
+        "Outpatient, healthy: amoxicillin 1 g TID (avoid macrolide monotherapy — S. pneumo resistance).",
+        "Outpatient + comorbidities: amox-clav or cephalosporin + azithro/doxy, or a respiratory FQ alone.",
+        "Inpatient non-severe: IV beta-lactam (amp-sulbactam or ceftriaxone) + azithro/doxy; alt respiratory FQ.",
+        "Severe: add MRSA (vancomycin) + Pseudomonas (pip-tazo/cefepime) cover; send Legionella & pneumococcal urine antigens.",
+        "Treat 5–7 d; extend for Pseudomonas, necrotizing PNA, abscess/empyema.",
+      ],
+      source: "TeachIM — Community-Acquired Pneumonia Chalk Talk",
+      url: "https://teachim.org/teaching_material/cap/",
+    },
+  ],
+  Dyspnea: [
+    {
+      title: "Inpatient hypoxemia: buckets + test toolbox",
+      points: [
+        "Define terms: hypoxia = low tissue O₂; hypoxemia = low PaO₂; dyspnea = subjective SOB.",
+        "DDx in 4 buckets: respiratory (airways/alveoli/vessels), cardiac, musculoskeletal, plus the 3 A's — anemia, anxiety, acidosis.",
+        "First-line toolbox: CXR, CBC, EKG, blood gas — order selectively by suspected bucket.",
+        "Use an ABG (not VBG) when you need the PaO₂, e.g. to compute the A–a gradient.",
+        "Sort mechanisms by A–a gradient: hypoventilation, V/Q mismatch, shunt.",
+      ],
+      source: "TeachIM — Inpatient Evaluation of Hypoxemia Chalk Talk",
+      url: "https://teachim.org/teaching_material/inpatient-evaluation-of-hypoxia/",
+    },
+    {
+      title: "Pleural effusions: transudate vs exudate + parapneumonic",
+      points: [
+        "Light's criteria (pleural-to-serum LDH & protein): exudate if ANY one met.",
+        "Light's mislabels with diuresis/bloody taps; serum–pleural albumin gradient >1.2 supports a transudate.",
+        "Transudate: heart failure, renal failure/volume overload, cirrhosis, hypoalbuminemia.",
+        "Exudate: parapneumonic/infection, malignancy, TB, autoimmune.",
+        "Uncomplicated parapneumonic → antibiotics alone; complicated (loculations, pH <7.2, low glucose) → drainage; empyema (pus/+culture) → drainage ± VATS.",
+      ],
+      source: "TeachIM — Pleural Effusions Chalk Talk",
+      url: "https://teachim.org/teaching_material/pleural-effusions/",
+    },
+  ],
+  "Chest Pain": [
+    {
+      title: "VTE (DVT/PE): the four-decision framework",
+      points: [
+        "Frame VTE as 4 decisions: IF anticoagulation is warranted, WHERE to treat, WHICH agent, HOW LONG.",
+        "Low-risk below-knee DVT: may hold AC and repeat duplex in 1–2 weeks.",
+        "Uncomplicated PE with PESI <85 may be treated as an outpatient.",
+        "DOACs are first-line for stable VTE, including most cancer-associated VTE.",
+        "Unprovoked VTE without high bleed risk → indefinite anticoagulation.",
+      ],
+      source: "TeachIM — Venous Thromboembolism (VTE) Chalk Talk",
+      url: "https://teachim.org/teaching_material/venous-thromboembolism-vte/",
+    },
+  ],
+};
+
 export const CURRICULUM: CategoryCurriculum[] = RAW_CURRICULUM.map((c) => {
   const ref = MANUAL_BY_CATEGORY[c.category];
   return {
     ...c,
     manual: ref?.manual ?? [],
+    chalkTalks: CHALK_TALKS_BY_CATEGORY[c.category] ?? [],
     quickManagement: c.quickManagement.map((m, i) => ({
       ...m,
       manualPage: m.manualPage ?? ref?.pearlPages[i],

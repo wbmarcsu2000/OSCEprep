@@ -220,23 +220,35 @@ function SkillCardView({ card, index }: { card: SkillCard; index: number }) {
         </div>
       ))}
 
-      {card.example && (
-        <div
-          className="rounded-xl border p-3 space-y-1"
-          style={{ borderColor: "var(--color-exam-accent-line)", background: "var(--color-exam-accent-soft)" }}
-        >
+      {card.examples && card.examples.length > 0 && (
+        <div className="space-y-2">
           <div className="panel-label" style={{ color: "var(--color-exam-accent-deep)" }}>
-            Worked example
+            Worked examples <span className="hint ml-1 font-normal">{card.examples.length} to practice</span>
           </div>
-          <div className="text-[13px] font-mono" style={{ color: "var(--color-exam-accent-deep)" }}>{card.example.prompt}</div>
-          <ul className="text-[13px] leading-relaxed space-y-0.5" style={{ color: "var(--color-exam-accent-deep)" }}>
-            {card.example.lines.map((l, i) => (
-              <li key={i} className="flex gap-2">
-                <span aria-hidden>→</span>
-                {l}
-              </li>
-            ))}
-          </ul>
+          {card.examples.map((ex, ei) => (
+            <details
+              key={ei}
+              className="rounded-xl border"
+              style={{ borderColor: "var(--color-exam-accent-line)", background: "var(--color-exam-accent-soft)" }}
+              open={ei === 0}
+            >
+              <summary
+                className="px-3 py-2 text-[13px] font-mono font-semibold flex items-center gap-2 cursor-pointer"
+                style={{ color: "var(--color-exam-accent-deep)" }}
+              >
+                <span aria-hidden className="caret text-[10px]">▶</span>
+                {ex.prompt}
+              </summary>
+              <ul className="px-3 pb-3 text-[13px] leading-relaxed space-y-0.5" style={{ color: "var(--color-exam-accent-deep)" }}>
+                {ex.lines.map((l, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span aria-hidden>→</span>
+                    {l}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
         </div>
       )}
 

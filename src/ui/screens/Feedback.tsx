@@ -7,6 +7,7 @@ import { MANEUVER_BY_ID } from "../../engine/maneuvers";
 import { itemMatches } from "../../engine/textMatch";
 import { CURRICULUM_BY_CATEGORY } from "../../data/curriculum";
 import { manifest } from "../../data/loader";
+import { mghPdfUrl } from "../../data/mghManual";
 import { loadAttempts } from "../../analytics/store";
 import { newlyEarnedBadges, streakDays, xpForAttempt, type Badge } from "../gamification";
 import { useMountNow } from "../useMountNow";
@@ -129,7 +130,17 @@ function SectionDetail({
                 Management aligned to the{" "}
                 <span className="font-semibold">{section.mghReference.manual}</span> —{" "}
                 {section.mghReference.section},{" "}
-                <span className="font-semibold">p.&nbsp;{section.mghReference.page}</span>.
+                <a
+                  className="font-semibold underline underline-offset-2"
+                  style={{ color: "var(--color-exam-accent)" }}
+                  href={mghPdfUrl(section.mghReference.page)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`Open the manual PDF at page ${section.mghReference.page}`}
+                >
+                  p.&nbsp;{section.mghReference.page} ↗
+                </a>
+                .
               </span>
             </div>
           </div>

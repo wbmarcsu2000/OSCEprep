@@ -41,7 +41,7 @@ export interface SkillCard {
   steps?: SkillStep[];
   sections?: SkillSection[];
   tables?: SkillTable[];
-  example?: SkillExample;
+  examples?: SkillExample[];
   references?: SkillRef[];
 }
 
@@ -87,16 +87,37 @@ export const SKILLS: SkillCard[] = [
         ],
       },
     ],
-    example: {
-      prompt: "pH 7.23 · PaCO₂ 23 · HCO₃⁻ 11 · Na 145 · Cl 100 · HCO₃⁻(BMP) 15",
-      lines: [
-        "Acidemia (pH 7.23) and HCO₃⁻ is low with pH → metabolic acidosis.",
-        "Anion gap = 145 − 100 − 15 = 30 → high-anion-gap metabolic acidosis.",
-        "Δ-Δ = (30 − 10) + 11 = 31 → > 30, so a concurrent metabolic alkalosis.",
-        "Winter's = 1.5 × 11 + 8 = 24.5 ± 2; actual PaCO₂ 23 → appropriate respiratory compensation.",
-        "Final: HAGMA + concurrent metabolic alkalosis, with appropriate respiratory compensation.",
-      ],
-    },
+    examples: [
+      {
+        prompt: "pH 7.23 · PaCO₂ 23 · HCO₃⁻ 11 · Na 145 · Cl 100 · HCO₃⁻(BMP) 15",
+        lines: [
+          "Acidemia (pH 7.23) and HCO₃⁻ is low with pH → metabolic acidosis.",
+          "Anion gap = 145 − 100 − 15 = 30 → high-anion-gap metabolic acidosis.",
+          "Δ-Δ = (30 − 10) + 11 = 31 → > 30, so a concurrent metabolic alkalosis.",
+          "Winter's = 1.5 × 11 + 8 = 24.5 ± 2; actual PaCO₂ 23 → appropriate respiratory compensation.",
+          "Final: HAGMA + concurrent metabolic alkalosis, with appropriate respiratory compensation.",
+        ],
+      },
+      {
+        prompt: "pH 7.52 · PaCO₂ 48 · HCO₃⁻ 38",
+        lines: [
+          "Alkalemia (pH 7.52); HCO₃⁻ is high and moves the SAME direction as pH → metabolic alkalosis.",
+          "Compensation is hypoventilation: expected PaCO₂ = 0.7 × (HCO₃⁻ − 24) + 40 = 0.7 × 14 + 40 ≈ 50 (± 2); actual 48 → appropriate.",
+          "Causes: vomiting / NG suction, diuretics, or hyperaldosteronism — check urine chloride (< 20 = saline-responsive; > 20 = saline-resistant aldosterone excess).",
+          "Final: primary metabolic alkalosis with appropriate respiratory compensation.",
+        ],
+      },
+      {
+        prompt: "pH 7.21 · PaCO₂ 70 · HCO₃⁻ 27",
+        lines: [
+          "Acidemia (pH 7.21); PaCO₂ is high and moves OPPOSITE to pH → primary respiratory acidosis (hypoventilation).",
+          "Acute vs chronic: HCO₃⁻ rises ~1 per 10 mmHg acutely, ~3.5–4 per 10 chronically.",
+          "PaCO₂ rose 30 above 40 → acute predicts HCO₃⁻ ≈ 24 + 3 = 27; chronic would predict ≈ 35.",
+          "Measured HCO₃⁻ 27 matches the ACUTE prediction → acute respiratory acidosis (opioid/sedative, acute CNS depression).",
+          "Final: acute respiratory acidosis, no renal compensation yet.",
+        ],
+      },
+    ],
     references: [
       { label: "Acid-base interpretation", source: "First Aid Clinical Pattern Recognition (Step 2 CK)" },
       { label: "Acid-base & electrolyte teaching", source: "MDCalc — Anion Gap, Winter's Formula", url: "https://www.mdcalc.com/" },
@@ -137,6 +158,26 @@ export const SKILLS: SkillCard[] = [
         ],
       },
     ],
+    examples: [
+      {
+        prompt: "FEV₁ 1.50 L · FVC 3.13 L · FEV₁/FVC 0.48 · post-bronchodilator FEV₁ +5% (~75 mL) · DLCO reduced",
+        lines: [
+          "FEV₁/FVC = 1.50 / 3.13 = 0.48 (< 0.70) → obstructive.",
+          "Post-bronchodilator FEV₁ rises ~75 mL (5%) — below BOTH the ≥ 12% and ≥ 200 mL thresholds → not significantly reversible.",
+          "DLCO reduced → loss of alveolar–capillary surface (emphysema).",
+          "Pattern: irreversible obstruction with low DLCO → COPD / emphysema (asthma reverses and spares DLCO).",
+        ],
+      },
+      {
+        prompt: "FEV₁ 2.05 L · FVC 2.50 L · FEV₁/FVC 0.82 · TLC reduced · DLCO normal",
+        lines: [
+          "FEV₁/FVC = 2.05 / 2.50 = 0.82 (≥ 0.70) → not obstructive.",
+          "Reduced FVC with a reduced TLC → restrictive (confirm with TLC, not spirometry alone).",
+          "DLCO normal → gas-exchange surface intact, so the restriction is extra-parenchymal.",
+          "Pattern: restriction with preserved DLCO → neuromuscular weakness, chest-wall disease, or obesity (ILD lowers DLCO).",
+        ],
+      },
+    ],
     references: [{ label: "Spirometry interpretation", source: "ATS/ERS Standardization of Spirometry" }],
   },
 
@@ -164,13 +205,32 @@ export const SKILLS: SkillCard[] = [
         ],
       },
     ],
-    example: {
-      prompt: "Serum albumin 4.0 · ascitic-fluid albumin 2.0",
-      lines: [
-        "SAAG = 4.0 − 2.0 = 2.0 g/dL (≥ 1.1).",
-        "→ Portal hypertension: cirrhosis, heart failure, or Budd-Chiari. Pair with the ascitic protein and clinical picture to narrow.",
-      ],
-    },
+    examples: [
+      {
+        prompt: "Serum albumin 4.0 · ascitic-fluid albumin 2.0",
+        lines: [
+          "SAAG = 4.0 − 2.0 = 2.0 g/dL (≥ 1.1).",
+          "→ Portal hypertension: cirrhosis, heart failure, or Budd-Chiari. Pair with the ascitic protein and clinical picture to narrow.",
+        ],
+      },
+      {
+        prompt: "Serum albumin 3.6 · ascitic-fluid albumin 1.8 · ascitic total protein 3.0",
+        lines: [
+          "SAAG = 3.6 − 1.8 = 1.8 g/dL (≥ 1.1) → portal-hypertension physiology.",
+          "But ascitic total protein 3.0 (> 2.5) → a high-protein, high-SAAG fluid.",
+          "High SAAG + high protein points to a post-sinusoidal/cardiac cause (heart failure, constrictive pericarditis, Budd-Chiari) rather than cirrhosis (protein usually < 2.5).",
+          "Next: echo / JVP assessment and treat the cardiac cause.",
+        ],
+      },
+      {
+        prompt: "Serum albumin 3.8 · ascitic-fluid albumin 3.0",
+        lines: [
+          "SAAG = 3.8 − 3.0 = 0.8 g/dL (< 1.1) → non-portal (fluid is leaking/exuding, not pushed by portal pressure).",
+          "Low-SAAG causes: peritoneal carcinomatosis, TB peritonitis, pancreatic ascites, nephrotic syndrome.",
+          "Next: ascitic cytology, total protein (often > 2.5 here), and — by suspicion — amylase (pancreatic) or ADA (TB).",
+        ],
+      },
+    ],
     references: [{ label: "Ascitic fluid analysis / SBP", source: "AASLD Ascites & SBP Guidance" }],
   },
 
@@ -205,6 +265,26 @@ export const SKILLS: SkillCard[] = [
           ["Heart failure", "Parapneumonic / empyema"],
           ["Cirrhosis (hepatic hydrothorax)", "Malignancy"],
           ["Nephrotic syndrome", "Pulmonary embolism · TB · pancreatitis"],
+        ],
+      },
+    ],
+    examples: [
+      {
+        prompt: "Pleural protein 4.5 (serum 7.0) · pleural LDH 500 (serum LDH 200, ULN 220) · pleural pH 7.10",
+        lines: [
+          "Protein ratio = 4.5 / 7.0 = 0.64 (> 0.5) ✓.",
+          "LDH ratio = 500 / 200 = 2.5 (> 0.6) ✓; pleural LDH 500 > ⅔ × ULN (⅔ × 220 = 147) ✓.",
+          "Any one Light's criterion → exudate; all three met here.",
+          "Pleural pH 7.10 (< 7.20) in a parapneumonic effusion → complicated effusion / empyema → chest-tube drainage plus antibiotics.",
+        ],
+      },
+      {
+        prompt: "Pleural protein 2.0 (serum 6.8) · pleural LDH 90 (serum LDH 190, ULN 220)",
+        lines: [
+          "Protein ratio = 2.0 / 6.8 = 0.29 (< 0.5) ✗.",
+          "LDH ratio = 90 / 190 = 0.47 (< 0.6) ✗; pleural LDH 90 < ⅔ × ULN (147) ✗.",
+          "No criterion met → transudate: heart failure, cirrhosis, or nephrotic syndrome — treat the underlying cause.",
+          "If a diuresed patient sits just over a cutoff, a serum-to-effusion albumin gradient > 1.2 g/dL reclassifies it as a transudate.",
         ],
       },
     ],
