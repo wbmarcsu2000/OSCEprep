@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { manifest } from "../../data/loader";
 import { loadAttempts } from "../../analytics/store";
-import { levelFor, totalXp, streakDays, streakAtRisk, recommendNext, categoryFlair } from "../gamification";
+import { levelFor, totalXp, streakDays, streakAtRisk } from "../gamification";
 import { useMountNow } from "../useMountNow";
 import { useAppStore } from "../store";
 
@@ -49,10 +49,8 @@ function StatTile({
 export function Home() {
   const setView = useAppStore((s) => s.setView);
   const showEnableAi = useAppStore((s) => s.showEnableAi);
-  const browseCategory = useAppStore((s) => s.browseCategory);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
   const preferredMode = useAppStore((s) => s.preferredMode);
-  const startCase = useAppStore((s) => s.startCase);
   const startRandomUnattempted = useAppStore((s) => s.startRandomUnattempted);
 
   const now = useMountNow();
@@ -71,13 +69,8 @@ export function Home() {
       streak: streakDays(attempts, now),
       atRisk: streakAtRisk(attempts, now),
       level: levelFor(totalXp(attempts)),
-      rec: recommendNext(attempts, manifest.cases),
     };
   }, [now]);
-
-  const rec = stats.rec;
-  const recCase = rec ? manifest.cases.find((c) => c.id === rec.caseId) : undefined;
-  const recFlair = rec ? categoryFlair(rec.category) : null;
 
   const quickStart = () => {
     void startRandomUnattempted(preferredMode);
@@ -88,7 +81,7 @@ export function Home() {
       icon: "🩺",
       grad: "var(--grad-primary)",
       title: "Practice a station",
-      body: "The full OSCE: 3-min chart review, a 20-min standardized-patient encounter where the patient answers only what you ask, exact exam maneuvers, then locked post-encounter questions and grounded feedback.",
+      body: "Work a full case end to end: read the chart, interview and examine the patient, then commit to a diagnosis and plan. Scored with feedback at the end.",
       cta: `${manifest.cases.length} stations · ${stats.done} done`,
       onClick: () => setView("select"),
     },
@@ -96,7 +89,7 @@ export function Home() {
       icon: "🎯",
       grad: "var(--grad-teal)",
       title: "Framework drills",
-      body: "Quick reps without a full case — write the broad differential, key questions, or work-up for a stem and get graded instantly against the framework.",
+      body: "Short reps, no full case. Build a differential, list your key questions, or plan a work-up — and get instant feedback.",
       cta: "Differential · Work-up · Skills",
       onClick: () => setView("drills"),
     },
@@ -104,7 +97,7 @@ export function Home() {
       icon: "📖",
       grad: "var(--grad-sky)",
       title: "Special skills",
-      body: "Systematic reads and lab interpretation: EKG 6-step, CXR RIP-ABCDE, ABG/acid-base, SAAG, Light's criteria, and PFTs — with formulas and worked examples.",
+      body: "Step-by-step guides for reading EKGs and chest X-rays and interpreting labs (ABG, ascitic/pleural fluid, PFTs), with worked examples.",
       cta: "EKG · CXR · ABG · SAAG · PFT",
       onClick: () => setView("skills"),
     },
@@ -112,7 +105,7 @@ export function Home() {
       icon: "📊",
       grad: "var(--grad-sun)",
       title: "Track your progress",
-      body: "Score over time, performance by domain and chief complaint, most-missed items, badges, and your level. Re-open any completed case to review.",
+      body: "See your scores over time, your strong and weak areas, badges, and level. Revisit any case you've finished.",
       cta: "Performance dashboard",
       onClick: () => setView("analytics"),
     },
@@ -212,38 +205,6 @@ export function Home() {
           </div>
         </div>
       </div>
-
-      {/* Coach's pick: the most useful next station, from the attempt history. */}
-      {rec && recCase && recFlair && (
-        <div className="card overflow-hidden">
-          <div aria-hidden className="h-1.5 shrink-0" style={{ background: recFlair.grad }} />
-          <div className="p-4 sm:p-5 flex flex-wrap items-center gap-x-4 gap-y-3">
-            <span className="icon-tile" style={{ background: recFlair.grad }} aria-hidden>
-              {recFlair.emoji}
-            </span>
-            <div className="min-w-0 flex-1 space-y-0.5">
-              <div className="panel-label">Coach's pick</div>
-              <div className="text-[15px] font-extrabold tracking-tight leading-snug">
-                {recCase.title}
-              </div>
-              <div className="text-[12.5px]" style={{ color: "var(--color-exam-muted)" }}>
-                {rec.reason}
-              </div>
-            </div>
-            <div className="flex items-center gap-2 shrink-0 flex-wrap">
-              <button
-                className="btn btn-primary"
-                onClick={() => void startCase(rec.caseId, preferredMode)}
-              >
-                Start station
-              </button>
-              <button className="btn" onClick={() => browseCategory(rec.category)}>
-                See all {rec.category}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Use-case cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
