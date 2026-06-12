@@ -350,32 +350,108 @@ function ReadingGuide({ imageKey }: { imageKey: string }) {
 /** Per-step answer key: the model answer, an expert read (for studies), and an
  *  instant deterministic self-check of which key items you named. No AI call.
  *  Practice mode only — strict OSCE keeps answers sealed until feedback. */
+/** The reveal as a teaching moment: your words and the model side by side,
+ *  then a succinct "you covered / add next time" checklist. Long expert reads
+ *  stay behind a disclosure so the comparison leads. */
 function AnswerKey({ step, answer, expertRead }: { step: StepModel; answer: string; expertRead?: string }) {
   const items = [
     ...(step.scoring?.criticalActions ?? []).map((a) => ({ item: a.item, critical: true })),
     ...(step.scoring?.coreActions ?? []).map((a) => ({ item: a.item, critical: false })),
   ];
   const has = answer.trim().length > 0;
+  const hit = items.filter((it) => has && itemMatches(answer, it.item));
+  const missed = items.filter((it) => !(has && itemMatches(answer, it.item)));
   return (
-    <div className="space-y-3 pt-1">
-      {step.idealAnswer && (
+    <div className="space-y-3 pt-1 fade-up">
+      {/* Side-by-side compare: what you wrote vs the model. */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+        <div>
+          <div className="panel-label mb-1.5">You wrote</div>
+          <p
+            className="rounded-xl border p-3 text-[13.5px] leading-relaxed whitespace-pre-wrap h-full"
+            style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)" }}
+          >
+            {has ? answer : <span className="italic" style={{ color: "var(--color-exam-faint)" }}>— left blank —</span>}
+          </p>
+        </div>
         <div>
           <div className="panel-label mb-1.5" style={{ color: "var(--color-exam-ok)" }}>Model answer</div>
           <p
-            className="rounded-lg border p-3 text-[13.5px] leading-relaxed"
+            className="rounded-xl border p-3 text-[13.5px] leading-relaxed h-full"
             style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
           >
-            {step.idealAnswer}
+            {step.idealAnswer ?? <span className="italic">See key points below.</span>}
           </p>
         </div>
+      </div>
+
+      {/* Succinct checklist, split into the two things that matter. */}
+      {items.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          <div className="rounded-xl border p-3" style={{ borderColor: "var(--color-exam-ok-line)" }}>
+            <div className="panel-label mb-1.5" style={{ color: "var(--color-exam-ok)" }}>
+              ✓ You covered ({hit.length}/{items.length})
+            </div>
+            {hit.length === 0 ? (
+              <p className="text-[12.5px] italic" style={{ color: "var(--color-exam-faint)" }}>
+                Nothing from the checklist yet.
+              </p>
+            ) : (
+              <ul className="space-y-1 text-[13px] leading-relaxed">
+                {hit.map((it, i) => (
+                  <li key={i} className="flex items-baseline gap-2">
+                    <span aria-hidden className="shrink-0" style={{ color: "var(--color-exam-ok)" }}>✓</span>
+                    <span className="font-semibold">
+                      {it.critical && <span className="chip chip-danger mr-1.5">critical</span>}
+                      {it.item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <div className="rounded-xl border p-3" style={{ borderColor: "var(--color-exam-warn-line)", background: "var(--color-exam-warn-soft)" }}>
+            <div className="panel-label mb-1.5" style={{ color: "var(--color-exam-warn)" }}>
+              ○ Add next time ({missed.length})
+            </div>
+            {missed.length === 0 ? (
+              <p className="text-[12.5px] font-bold" style={{ color: "var(--color-exam-ok)" }}>
+                🎉 Nothing — you covered the full checklist.
+              </p>
+            ) : (
+              <ul className="space-y-1 text-[13px] leading-relaxed">
+                {missed.map((it, i) => (
+                  <li key={i} className="flex items-baseline gap-2">
+                    <span aria-hidden className="shrink-0" style={{ color: "var(--color-exam-warn)" }}>○</span>
+                    <span style={{ color: "var(--color-exam-ink)" }}>
+                      {it.critical && <span className="chip chip-danger mr-1.5">critical</span>}
+                      {it.item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
       )}
+      {items.length > 0 && (
+        <p className="hint">
+          Self-check is a keyword match — phrased differently? Trust your read; grading on submit is
+          smarter.
+        </p>
+      )}
+
+      {/* The full expert read is depth, not the headline — keep it on demand. */}
       {expertRead && (
-        <div>
-          <div className="panel-label mb-1.5">Expert interpretation</div>
-          <div
-            className="rounded-lg border p-3 text-[13px] leading-relaxed space-y-1"
-            style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)" }}
+        <details className="rounded-xl border" style={{ borderColor: "var(--color-exam-border)" }}>
+          <summary
+            className="px-3 py-2 text-[12.5px] font-semibold flex items-center gap-2 cursor-pointer"
+            style={{ color: "var(--color-exam-accent-deep)", background: "var(--color-exam-accent-soft)", borderRadius: "10px" }}
           >
+            <span aria-hidden className="caret text-[10px]">▶</span>
+            🔬 Reveal the expert interpretation
+          </summary>
+          <div className="p-3 text-[13px] leading-relaxed space-y-1">
             {expertRead.split(/\s*•\s*/).filter(Boolean).map((line, i) => (
               <div key={i} className={i === 0 ? "" : "flex gap-2"}>
                 {i > 0 && <span aria-hidden style={{ color: "var(--color-exam-ghost)" }}>•</span>}
@@ -383,30 +459,7 @@ function AnswerKey({ step, answer, expertRead }: { step: StepModel; answer: stri
               </div>
             ))}
           </div>
-        </div>
-      )}
-      {items.length > 0 && (
-        <div>
-          <div className="panel-label mb-1.5">
-            Key points to hit <span className="hint ml-1">✓ = in your answer (self-check)</span>
-          </div>
-          <ul className="space-y-1 text-[13px] leading-relaxed">
-            {items.map((it, i) => {
-              const covered = has && itemMatches(answer, it.item);
-              return (
-                <li key={i} className="flex items-baseline gap-2">
-                  <span aria-hidden className="shrink-0" style={{ color: covered ? "var(--color-exam-ok)" : "var(--color-exam-ghost)" }}>
-                    {covered ? "✓" : "○"}
-                  </span>
-                  <span style={{ color: covered ? "var(--color-exam-ink)" : "var(--color-exam-muted)", fontWeight: covered ? 600 : 400 }}>
-                    {it.critical && <span className="chip chip-danger mr-1.5">critical</span>}
-                    {it.item}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        </details>
       )}
     </div>
   );
