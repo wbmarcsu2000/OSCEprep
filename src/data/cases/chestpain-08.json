@@ -1,0 +1,724 @@
+{
+  "id": "chestpain-08",
+  "category": "Chest Pain",
+  "difficulty": "hard",
+  "title": "Severe chest pain after violent vomiting",
+  "diagnosis": "Esophageal rupture (Boerhaave syndrome)",
+  "chart": {
+    "ageSex": "54M",
+    "cc": "Severe chest pain after vomiting",
+    "oneLiner": "54M with a heavy alcohol binge presents with sudden, severe lower chest and epigastric pain that began immediately after a bout of forceful retching and vomiting 3 hours ago.",
+    "vitals": {
+      "BP": "104/68",
+      "HR": "118",
+      "RR": "26",
+      "Temp": "38.1°C",
+      "SpO2": "92% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I was throwing up really hard after drinking, and all of a sudden it felt like something tore in my chest — it hurts down here and into my back, and it's hard to breathe.",
+  "patientFile": "PERSONA: 54-year-old man, anxious and uncomfortable, sweaty, breathing fast and shallow because deep breaths hurt. Smells of alcohol.\n\nHPI:\n- Severe, constant lower-chest and upper-abdominal (epigastric) pain that came on SUDDENLY right after a bout of violent, forceful vomiting/retching about 3 hours ago, at the end of a heavy drinking session and a large meal.\n- Pain radiates through to the back and to the left shoulder; worse with swallowing and with deep breaths (only if asked).\n- Vomited several times; one of the last episodes had a little blood-streaked material (only if asked about vomiting/blood).\n- Feels short of breath and feverish/sweaty. Hasn't been able to keep anything down since.\n- NO exertional onset, NO crushing/pressure quality typical of cardiac pain, NO leg swelling or calf pain, NO recent travel/immobility, NO known ulcer disease but does get heartburn.\n\nOLDCARTS: abrupt onset 3h ago immediately after forceful vomiting; lower retrosternal/epigastric radiating to back and left shoulder; constant and severe; tearing/sharp; worse with swallowing and deep inspiration; severity 9/10; partial nothing relieves it.\n\nPMH: GERD/heartburn, hypertension. MEDICATIONS: omeprazole intermittently, amlodipine. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: drinks heavily, especially on weekends — about a 12-pack of beer plus liquor on a binge day (only if asked about alcohol); current smoker ~20 pack-years (only if asked); no drug use.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: ill-appearing, diaphoretic, tachypneic, splinting with breaths, anxious.\n- Vitals: BP 104/68, HR 118, RR 26, Temp 38.1°C, SpO2 92% RA.\n- Skin/Chest wall: subcutaneous emphysema — crepitus (crackling) palpable over the lower anterior chest and base of the neck if palpated.\n- Lungs: decreased breath sounds at the LEFT base with dullness (left pleural effusion); a crunching sound synchronous with the heartbeat over the precordium if carefully auscultated (Hamman crunch / mediastinal crepitus).\n- Cardiac: tachycardic, regular, no murmur; pulses symmetric in both arms (NO inter-arm BP differential).\n- Abdomen: epigastric tenderness with mild voluntary guarding; not rigid/peritonitic; bowel sounds present.\n- Neuro: intact.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the heavy alcohol binge, the smoking, the blood-streaked vomit, the pain-with-swallowing, or that the pain started exactly after forceful vomiting unless specifically asked.\n- Subcutaneous emphysema/crepitus, the decreased left base breath sounds, and the Hamman crunch are revealed only if the relevant maneuver is performed.\n- Pulses and BP are equal in both arms (a pertinent negative against dissection) — reveal only if checked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 17.5 (neutrophil-predominant leukocytosis), Hgb 14.2, Plt 230 — leukocytosis consistent with mediastinitis/inflammation.",
+      "BMP": "Cr 1.3, mild metabolic acidosis with elevated lactate; consistent with volume depletion and sepsis from a perforation.",
+      "Troponin": "Normal — not elevated (argues against ACS as the primary cause).",
+      "Lipase": "Mildly elevated but not pancreatitis-range; not explanatory for the pneumomediastinum.",
+      "Pleural_fluid": "Left thoracentesis fluid: LOW pH (<6.0), markedly HIGH amylase, and undigested food particles — diagnostic of esophageal contents in the pleural space.",
+      "CT_esophagram": "CT chest with water-soluble (Gastrografin) contrast esophagram: contrast extravasation from the distal esophagus with pneumomediastinum and a left pleural effusion — confirms esophageal perforation (Boerhaave)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~118 bpm with nonspecific changes; NO ST-segment elevation and no reciprocal changes to suggest acute STEMI.",
+      "verify": "Source a study matching: Sinus tachycardia with nonspecific changes and no ST elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia without ST elevation",
+      "searchTerms": [
+        "sinus tachycardia ECG 12 lead",
+        "sinus tachycardia no ST elevation"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=pneumomediastinum%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Pneumomediastinum with a left pleural effusion and subcutaneous/mediastinal air; left hydropneumothorax may be present (V sign of Naclerio).",
+      "verify": "Pick a CC chest film matching: Pneumomediastinum with left pleural effusion and mediastinal/subcutaneous air.",
+      "assetNeeded": true,
+      "imageDescription": "Chest radiograph showing pneumomediastinum and left pleural effusion",
+      "searchTerms": [
+        "pneumomediastinum chest x-ray",
+        "left pleural effusion pneumomediastinum radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Troponin",
+    "Lipase",
+    "Pleural_fluid",
+    "CT_esophagram",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CT_esophagram",
+    "cxr",
+    "Pleural_fluid"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Esophageal rupture / Boerhaave syndrome (leading & CANT-MISS,10; accepts esophageal perforation). Acute coronary syndrome / MI (CANT-MISS,4). Aortic dissection (CANT-MISS,3). Perforated peptic ulcer (core,2). Pulmonary embolism / tension pneumothorax (core,2). Names the link between forceful vomiting, chest pain, and subcutaneous emphysema (Mackler triad) pointing to esophageal rupture (core,4). PENALTY: anchoring on a benign cause (e.g., GERD/musculoskeletal) and not naming a life-threat (-2).",
+      "idealAnswer": "Leading diagnosis: Esophageal rupture (Boerhaave syndrome). Must-not-miss diagnoses to exclude: Acute coronary syndrome / MI; Aortic dissection. Also reasonable: Perforated peptic ulcer; Pulmonary embolism / pneumothorax.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome / MI",
+            "points": 4
+          },
+          {
+            "item": "Aortic dissection",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Perforated peptic ulcer",
+            "points": 2
+          },
+          {
+            "item": "Pulmonary embolism / pneumothorax",
+            "points": 2
+          },
+          {
+            "item": "Names the link between forceful vomiting, chest pain, and subcutaneous emphysema (Mackler triad) pointing to esophageal rupture",
+            "points": 4
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Esophageal rupture / Boerhaave syndrome",
+            "points": 10
+          }
+        ],
+        "penalties": [
+          {
+            "item": "anchoring on a benign cause (GERD/musculoskeletal) without naming a life-threat",
+            "points": -2
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome / MI",
+        "Aortic dissection"
+      ],
+      "acceptableAlternatives": [
+        "Perforated peptic ulcer",
+        "Pulmonary embolism / pneumothorax"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What workup do you want? (And what must you check at the bedside?)",
+      "rubric": "CXR looking for pneumomediastinum/pleural effusion (CANT-MISS,4). CT chest with water-soluble (Gastrografin) contrast esophagram — confirmatory (CANT-MISS,5). EKG and troponin to exclude ACS (core,2). CBC/BMP/lactate (core,2). Pleural fluid analysis (pH, amylase) if effusion tapped (core,2). PENALTY: ordering a BARIUM swallow (mediastinal barium is harmful in suspected perforation) (-3); giving the patient anything by mouth / oral barium (-2).",
+      "idealAnswer": "Order: CXR (pneumomediastinum, pleural effusion); CT chest with water-soluble Gastrografin esophagram (confirmatory); EKG and troponin to exclude ACS; CBC, BMP, lactate.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CXR looking for pneumomediastinum / pleural effusion",
+            "points": 4
+          },
+          {
+            "item": "CT chest with water-soluble (Gastrografin) contrast esophagram",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "EKG and troponin to exclude ACS",
+            "points": 2
+          },
+          {
+            "item": "CBC, BMP, lactate",
+            "points": 2
+          },
+          {
+            "item": "Pleural fluid analysis (pH, amylase)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "ordering a barium swallow (mediastinal barium is harmful in suspected perforation)",
+            "points": -3
+          },
+          {
+            "item": "giving the patient oral barium / anything by mouth",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CXR looking for pneumomediastinum / pleural effusion",
+        "CT chest with water-soluble (Gastrografin) contrast esophagram"
+      ],
+      "optionalTests": [
+        "EKG and troponin to exclude ACS",
+        "CBC, BMP, lactate",
+        "Pleural fluid analysis (pH, amylase)"
+      ],
+      "contraindicatedTests": [
+        "ordering a barium swallow (mediastinal barium is harmful in suspected perforation)"
+      ],
+      "orderSensitiveActions": [
+        "ordering a barium swallow (mediastinal barium is harmful in suspected perforation)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (5); EXPLICITLY recognizes there is NO ST elevation / no STEMI, so ACS is not the primary driver (7); systematic read (3). PENALTY: over-calling ischemia and diverting to a cath lab / thrombolytics (-3).",
+      "keyFindings": [
+        "identifies sinus tachycardia",
+        "recognizes no ST elevation — not a STEMI"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia without ST-segment elevation (not an acute STEMI)."
+      ],
+      "commonMistakes": [
+        "over-reading nonspecific changes as acute ischemia and anchoring on ACS"
+      ],
+      "idealAnswer": "Sinus tachycardia with nonspecific changes; no ST-segment elevation — this is not an acute STEMI.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia without ST-segment elevation (not an acute STEMI)."
+        ],
+        "coreActions": [
+          "identifies sinus tachycardia",
+          "recognizes no ST elevation — not a STEMI"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls ischemia / misreads as STEMI",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = PNEUMOMEDIASTINUM with a left pleural effusion and mediastinal/subcutaneous air. CREDIT: identifies the pneumomediastinum / left effusion (6); links it to a suspected esophageal perforation (4). PENALTY: calling the film normal / missing the free air (-3).",
+      "keyFindings": [
+        "identifies the pneumomediastinum and left pleural effusion",
+        "links it to suspected esophageal perforation"
+      ],
+      "criticalFindings": [
+        "Pneumomediastinum with left pleural effusion and mediastinal/subcutaneous air."
+      ],
+      "commonMistakes": [
+        "calling the film normal or attributing the effusion to simple pneumonia and missing the free air"
+      ],
+      "idealAnswer": "Pneumomediastinum with a left pleural effusion and mediastinal/subcutaneous air — concerning for esophageal perforation.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Pneumomediastinum with left pleural effusion and mediastinal/subcutaneous air.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies the pneumomediastinum and left pleural effusion",
+            "points": 6
+          },
+          {
+            "item": "links it to suspected esophageal perforation",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "calling the film normal / missing the free air",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the pneumomediastinum, left effusion, and a CT esophagram showing contrast extravasation from the distal esophagus, what is your diagnosis and why does it matter?",
+      "rubric": "Esophageal rupture / Boerhaave syndrome (6; accepts spontaneous esophageal perforation). Recognizes it is a surgical emergency with high mortality and risk of mediastinitis/sepsis that rises sharply with delayed treatment; ties pleural fluid (low pH, high amylase, food particles) and the Mackler triad to the diagnosis (4).",
+      "idealAnswer": "Esophageal rupture (Boerhaave syndrome). ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome / MI",
+        "Aortic dissection"
+      ],
+      "acceptableAlternatives": [
+        "Iatrogenic / traumatic esophageal perforation"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH approach to esophageal perforation: keep NPO and place an NG/decompress carefully (CANT-MISS,4); broad-spectrum IV antibiotics PLUS antifungal coverage for mediastinitis (CANT-MISS,5); STAT thoracic/general surgery consult — early operative repair (<24h) markedly improves survival (CANT-MISS,5); aggressive IV fluid resuscitation +/- vasopressors for sepsis (4); IV PPI and pain control (2); pleural/mediastinal drainage (chest tube) (3); admit to ICU (2). PENALTY: oral intake or BARIUM contrast (-3); discharging / treating as benign GERD (-3).",
+      "idealAnswer": "Treat as a surgical emergency. Keep the patient strictly NPO; resuscitate with IV fluids (and pressors if septic). Start broad-spectrum IV antibiotics with antifungal coverage for mediastinitis. STAT thoracic/general surgery consult for early operative repair — primary repair within 24 hours dramatically improves survival; endoscopic stenting/drainage if not an operative candidate. IV PPI, pain control, and chest-tube/mediastinal drainage of the contaminated pleural space. Admit to the ICU. Avoid oral intake and any barium contrast.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Broad-spectrum IV antibiotics plus antifungal coverage",
+            "points": 5
+          },
+          {
+            "item": "STAT thoracic / general surgery consult for early operative repair",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Keep strictly NPO",
+            "points": 4
+          },
+          {
+            "item": "Aggressive IV fluid resuscitation (pressors if septic)",
+            "points": 4
+          },
+          {
+            "item": "Pleural / mediastinal drainage (chest tube)",
+            "points": 3
+          },
+          {
+            "item": "IV PPI and pain control",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Admit to ICU",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Oral intake or barium contrast",
+            "points": -3
+          },
+          {
+            "item": "Discharging / treating as benign GERD",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Broad-spectrum IV antibiotics plus antifungal coverage",
+        "STAT thoracic / general surgery consult for early operative repair"
+      ],
+      "optionalActions": [
+        "Keep strictly NPO",
+        "Aggressive IV fluid resuscitation (pressors if septic)",
+        "Pleural / mediastinal drainage (chest tube)",
+        "IV PPI and pain control",
+        "Admit to ICU"
+      ],
+      "unsafeActions": [
+        "Oral intake or barium contrast",
+        "Discharging / treating as benign GERD"
+      ],
+      "consults": [
+        "Thoracic Surgery"
+      ],
+      "disposition": "Emergent; ICU / OR",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Esophageal Emergencies (Esophageal Perforation / Boerhaave Syndrome)",
+        "page": 88
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "distress",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "54-year-old man, ill-appearing, diaphoretic, tachypneic and splinting with breaths, anxious; smells of alcohol.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use",
+        "were you drinking"
+      ],
+      "response": "Yeah, I'd been drinking a lot — a 12-pack and some liquor that night. It happens most weekends.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "I smoke about half a pack a day, have for years.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "vomiting_trigger",
+      "category": "hpi",
+      "triggerConcepts": [
+        "were you vomiting",
+        "did you throw up",
+        "retching",
+        "what were you doing when it started",
+        "vomiting before the pain"
+      ],
+      "response": "Yes — I was throwing up really hard, over and over, and the pain hit right in the middle of one of those heaves.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "hematemesis",
+      "category": "hpi",
+      "triggerConcepts": [
+        "blood in the vomit",
+        "vomiting blood",
+        "hematemesis",
+        "was there blood",
+        "color of the vomit"
+      ],
+      "response": "The last couple times there were some streaks of blood in it, not a lot.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "dysphagia_odynophagia",
+      "category": "hpi",
+      "triggerConcepts": [
+        "pain with swallowing",
+        "trouble swallowing",
+        "hurts to swallow",
+        "odynophagia",
+        "dysphagia"
+      ],
+      "response": "It really hurts to swallow now, and even swallowing my own spit is painful.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration",
+        "sudden or gradual"
+      ],
+      "response": "It came on all at once about three hours ago — the second the pain started I knew something was wrong.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character_radiation",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "character",
+        "where does it go",
+        "radiate"
+      ],
+      "response": "It's a sharp, tearing pain low in my chest and up top of my belly, and it goes through to my back and into my left shoulder.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "shortness of breath",
+        "fever",
+        "anything else"
+      ],
+      "response": "I'm short of breath, sweaty, and I feel feverish and shaky.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "cardiac_pe_negatives",
+      "category": "ros",
+      "triggerConcepts": [
+        "exertion",
+        "chest pressure with activity",
+        "leg swelling",
+        "calf pain",
+        "recent travel",
+        "long flight"
+      ],
+      "response": "No, it didn't start with exercise, it's not a squeezing pressure, and I haven't had any leg swelling or long trips lately.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh_meds",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "medications",
+        "what do you take",
+        "conditions"
+      ],
+      "response": "I get heartburn and have high blood pressure. I take omeprazole on and off and amlodipine.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "palpate_chest_wall_finding_1",
+      "finding": "Skin/Chest wall: subcutaneous emphysema — crepitus (crackling) palpable over the lower anterior chest and base of the neck.",
+      "revealedBy": [
+        "palpate_chest_wall",
+        "inspect_skin"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No subcutaneous crepitus appreciated."
+    },
+    {
+      "id": "auscultate_lungs_finding_2",
+      "finding": "Lungs: decreased breath sounds at the LEFT base with dullness (left pleural effusion); a crunching sound synchronous with the heartbeat over the precordium (Hamman crunch / mediastinal crepitus).",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Breath sounds clear and equal bilaterally; no added sounds."
+    },
+    {
+      "id": "assess_general_appearance_finding_3",
+      "finding": "General: ill-appearing, diaphoretic, tachypneic, splinting with breaths, anxious.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Patient appears comfortable and in no distress."
+    },
+    {
+      "id": "palpate_abdomen_finding_4",
+      "finding": "Abdomen: epigastric tenderness with mild voluntary guarding; not rigid/peritonitic; bowel sounds present.",
+      "revealedBy": [
+        "palpate_all_quadrants",
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen soft and nontender."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_5",
+      "finding": "Cardiac: tachycardic, regular, no murmur; pulses symmetric in both arms (no inter-arm BP differential).",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No murmur; pulses symmetric."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Esophageal rupture (Boerhaave syndrome)",
+    "diagnosticFramework": "54M with a heavy alcohol binge presents with sudden, severe lower chest and epigastric pain that began immediately after forceful retching and vomiting 3 hours ago. The diagnosis is Esophageal rupture (Boerhaave syndrome), reached by eliciting the focused history (forceful vomiting preceding the pain), performing the targeted exam (subcutaneous crepitus, Hamman crunch, left effusion), and interpreting the directed workup (CXR pneumomediastinum, CT water-soluble esophagram) while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "forceful vomiting immediately before the pain",
+      "pain with swallowing",
+      "heavy alcohol binge"
+    ],
+    "keyPhysicalExamFindings": [
+      "Skin/Chest wall: subcutaneous emphysema — crepitus palpable over the lower anterior chest and base of the neck.",
+      "Lungs: decreased breath sounds at the LEFT base with dullness; Hamman crunch over the precordium.",
+      "General: ill-appearing, diaphoretic, tachypneic, splinting with breaths, anxious.",
+      "Abdomen: epigastric tenderness with mild voluntary guarding; not rigid."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Troponin",
+      "Lipase",
+      "Pleural_fluid",
+      "CT_esophagram"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning — especially that forceful vomiting preceded the pain.",
+      "Perform the targeted physical exam maneuvers to reveal subcutaneous crepitus, a left effusion, and a Hamman crunch.",
+      "Build a differential led by Esophageal rupture (Boerhaave syndrome) while explicitly excluding ACS and aortic dissection.",
+      "Order a focused, order-sensitive workup (CXR, CT water-soluble esophagram) and interpret EKG/CXR and labs; avoid barium.",
+      "Commit to Esophageal rupture (Boerhaave syndrome) and manage with NPO, fluids, broad antibiotics + antifungal, drainage, and an emergent surgical consult."
+    ],
+    "commonPitfalls": [
+      "Oral intake or barium contrast",
+      "Discharging / treating as benign GERD"
+    ],
+    "managementPearls": [
+      "Broad-spectrum IV antibiotics plus antifungal coverage",
+      "STAT thoracic / general surgery consult for early operative repair"
+    ],
+    "criticalHistoryItems": [
+      "vomiting_trigger",
+      "alcohol_use"
+    ],
+    "criticalExamItems": [
+      "palpate_chest_wall",
+      "auscultate_anterior_lungs"
+    ],
+    "criticalWorkupItems": [
+      "CXR looking for pneumomediastinum / pleural effusion",
+      "CT chest with water-soluble (Gastrografin) contrast esophagram"
+    ],
+    "criticalManagementItems": [
+      "Broad-spectrum IV antibiotics plus antifungal coverage",
+      "STAT thoracic / general surgery consult for early operative repair"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia without ST-segment elevation (not an acute STEMI).",
+      "Pneumomediastinum with left pleural effusion and mediastinal/subcutaneous air."
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia without ST-segment elevation (not an acute STEMI).",
+      "Pneumomediastinum with left pleural effusion and mediastinal/subcutaneous air."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia without ST-segment elevation (not an acute STEMI).",
+      "Pneumomediastinum with left pleural effusion and mediastinal/subcutaneous air."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

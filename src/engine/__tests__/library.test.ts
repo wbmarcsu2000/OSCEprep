@@ -14,8 +14,8 @@ import { MANEUVERS } from "../maneuvers";
 const T0 = 1_700_000_000_000;
 
 describe("full case library", () => {
-  it("manifest lists 50 cases with required catalog fields", () => {
-    expect(manifest.cases.length).toBe(50);
+  it("manifest lists the full case library with required catalog fields", () => {
+    expect(manifest.cases.length).toBe(68);
     for (const c of manifest.cases) {
       expect(c.id).toBeTruthy();
       expect(c.file).toBeTruthy();

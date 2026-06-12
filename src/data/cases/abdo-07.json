@@ -1,0 +1,670 @@
+{
+  "id": "abdo-07",
+  "category": "Abdominal Pain",
+  "difficulty": "hard",
+  "title": "Sudden tearing belly and back pain with near-collapse",
+  "diagnosis": "Ruptured abdominal aortic aneurysm",
+  "chart": {
+    "ageSex": "74M",
+    "cc": "Sudden severe abdominal and back pain",
+    "oneLiner": "74M smoker with hypertension presents with sudden, severe, tearing abdominal and flank/back pain and a near-syncopal episode.",
+    "vitals": {
+      "BP": "88/54",
+      "HR": "122",
+      "RR": "24",
+      "Temp": "36.7°C",
+      "SpO2": "95% RA"
+    },
+    "timer": 180
+  },
+  "opening": "It hit me all of a sudden — a tearing pain in my belly that goes straight through to my back, and I nearly passed out.",
+  "patientFile": "PERSONA: 74-year-old man, pale, clammy, and clearly unwell. Anxious but cooperative.\n\nHPI: SUDDEN onset ~1h ago of severe, constant, tearing/ripping abdominal pain radiating to the flank and back. Felt lightheaded and nearly fainted when standing. NO trauma. NO vomiting blood or black stools. NO fever or urinary symptoms. He thinks he may have felt a 'pulsing' lump in his belly over recent months but never had it checked (only if asked about abdominal swelling/lumps or prior screening).\nPMH: long-standing hypertension (poorly controlled), known COPD, hyperlipidemia, peripheral arterial disease. He recalls being told years ago of a 'bulge on the main blood vessel' that needed watching but missed follow-up (only if asked about aneurysm/prior scans/screening). MEDS: amlodipine (admits poor adherence), atorvastatin, albuterol inhaler. SOCIAL: 50 pack-year smoker, still smoking; occasional alcohol. FAMILY: father died of a 'burst blood vessel in the belly' (only if asked about family history).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, diaphoretic, in distress, restless.\n- Vitals: BP 88/54, HR 122, RR 24, 36.7°C, SpO2 95% RA.\n- Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.\n- Cardiac: tachycardic, regular, no murmur.\n- Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior aneurysm/'bulge' history or the pulsing lump unless asked about aneurysms, prior scans/screening, or abdominal swelling.\n- Do NOT volunteer the family history of a 'burst blood vessel' unless asked about family history.\n- The pulsatile expansile mass, hypotension/tachycardia, and asymmetric pulses are key — reveal the mass only if the abdomen is palpated and the pulses only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "POCUS_aorta": "Bedside ultrasound (FAST/aorta): infrarenal abdominal aorta dilated to ~7 cm with surrounding/retroperitoneal free fluid — diagnostic of a leaking/ruptured AAA.",
+      "CBC": "Hgb 9.8 (dropping from baseline), WBC 14.0, Plt 240 — consistent with acute blood loss.",
+      "BMP": "Cr 1.6 (acute kidney injury from hypoperfusion); electrolytes otherwise notable for evolving lactic acidosis.",
+      "Lactate": "Elevated (e.g., 4.2) — reflects hypoperfusion/hemorrhagic shock.",
+      "Coags_Type": "Type & crossmatch sent; coagulation panel drawn to guide massive transfusion. INR mildly elevated.",
+      "CTA_abdomen": "CT angiography (only if hemodynamically stabilizable): infrarenal AAA ~7 cm with active contrast extravasation and retroperitoneal hematoma — confirms rupture and maps anatomy for repair."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "verify": "From the LITFL 'Sinus Tachycardia' library page — download an example tracing that matches: Sinus tachycardia, no acute ischemic changes (compensatory to hypovolemia) and self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia without acute ischemic changes",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12-lead no ischemia"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray (upright)",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20upright&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA.",
+      "verify": "Pick a CC normal upright chest film (no subdiaphragmatic free air, no mediastinal widening).",
+      "assetNeeded": true,
+      "imageDescription": "upright chest radiograph, no free air, normal mediastinum",
+      "searchTerms": [
+        "normal upright chest x-ray",
+        "chest radiograph no free air no mediastinal widening"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "POCUS_aorta",
+    "CBC",
+    "BMP",
+    "Lactate",
+    "Coags_Type",
+    "CTA_abdomen",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "POCUS_aorta",
+    "CTA_abdomen",
+    "Coags_Type"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Ruptured abdominal aortic aneurysm (leading & CANT-MISS,9; accepts ruptured/leaking AAA). Aortic dissection (CANT-MISS,4). Perforated viscus (CANT-MISS,3). Renal colic / nephrolithiasis (core,2). Acute mesenteric ischemia (core,2). Names ruptured AAA with the key clue — sudden tearing pain + pulsatile mass + hypotension in an elderly smoker (core,5).",
+      "idealAnswer": "Leading diagnosis: Ruptured abdominal aortic aneurysm. Must-not-miss diagnoses to exclude: Aortic dissection; Perforated viscus. Also reasonable: Renal colic / nephrolithiasis; Acute mesenteric ischemia.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Aortic dissection",
+            "points": 4
+          },
+          {
+            "item": "Perforated viscus",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Renal colic / nephrolithiasis",
+            "points": 2
+          },
+          {
+            "item": "Acute mesenteric ischemia",
+            "points": 2
+          },
+          {
+            "item": "Names ruptured AAA with the key clue — sudden tearing pain + pulsatile mass + hypotension in an elderly smoker",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Aortic dissection",
+        "Perforated viscus"
+      ],
+      "acceptableAlternatives": [
+        "Renal colic / nephrolithiasis",
+        "Acute mesenteric ischemia"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Bedside aortic ultrasound / POCUS (CANT-MISS,5). Type & crossmatch + activate massive transfusion (CANT-MISS,4). CT angiography of the abdomen if hemodynamically stabilizable (3). CBC (2). BMP / lactate for perfusion (1). PENALTY: sending an unstable patient to CT or delaying repair for non-essential imaging (-3); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: Bedside aortic ultrasound (POCUS); Type & crossmatch with massive transfusion protocol; CT angiography of the abdomen only if hemodynamically stabilizable.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Bedside aortic ultrasound (POCUS)",
+            "points": 5
+          },
+          {
+            "item": "Type & crossmatch / activate massive transfusion",
+            "points": 4
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "sending an unstable patient to CT or delaying definitive repair for non-essential imaging",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Bedside aortic ultrasound (POCUS)",
+        "Type & crossmatch / activate massive transfusion"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "sending an unstable patient to CT or delaying definitive repair for non-essential imaging"
+      ],
+      "orderSensitiveActions": [
+        "sending an unstable patient to CT or delaying definitive repair for non-essential imaging"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: identifies sinus tachycardia (7); recognizes it as compensatory to hypovolemia/hemorrhage rather than a primary cardiac event (4); no acute STEMI (2); systematic read (2). PENALTY: over-calling ischemia / treating as ACS (-3).",
+      "keyFindings": [
+        "identifies sinus tachycardia",
+        "recognizes it as compensatory to hypovolemia/hemorrhage",
+        "no acute STEMI",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event."
+      ],
+      "commonMistakes": [
+        "over-calling ischemia and treating this as ACS"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies sinus tachycardia",
+            "points": 7
+          },
+          {
+            "item": "recognizes it as compensatory to hypovolemia/hemorrhage",
+            "points": 4
+          },
+          {
+            "item": "no acute STEMI",
+            "points": 2
+          },
+          {
+            "item": "systematic read",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling ischemia and treating this as ACS",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process; no free air; mediastinum not widened. CREDIT: identifies a normal/nonspecific film (5); explicitly looks for and excludes free air (perforation) and a widened mediastinum (thoracic aortic catastrophe) (5). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal/nonspecific film",
+        "excludes free air and a widened mediastinum"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
+      ],
+      "commonMistakes": [
+        "inventing pathology or expecting the CXR to show the AAA"
+      ],
+      "idealAnswer": "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a normal/nonspecific film",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the hypotension, dropping hemoglobin, and a bedside ultrasound showing a 7 cm aorta with free fluid, what is your diagnosis and reasoning?",
+      "rubric": "Ruptured (leaking) abdominal aortic aneurysm (6). Links sudden tearing pain + pulsatile mass + hypotension + POCUS findings (dilated aorta with free/retroperitoneal fluid); recognizes this as a surgical emergency and excludes dissection/perforation (4).",
+      "idealAnswer": "Ruptured abdominal aortic aneurysm. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Aortic dissection",
+        "Perforated viscus"
+      ],
+      "acceptableAlternatives": [
+        "Symptomatic (contained/leaking) AAA"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH abdominal/vascular emergency ('can't-miss' ruptured AAA): immediate STAT vascular surgery consult for emergent open or endovascular (EVAR) repair (CANT-MISS,7); activate massive transfusion / balanced blood products with permissive hypotension (CANT-MISS,6); large-bore IV access and type-specific/uncrossmatched blood (4); avoid over-resuscitation — target permissive hypotension (SBP ~70-90 / mentating) until repair (4); NPO, continuous monitoring, two large-bore IVs, OR activation (2); analgesia and reverse anticoagulation/coagulopathy (2). PENALTY: aggressive crystalloid/large-volume fluid bolus driving up BP and worsening hemorrhage (-4); discharging or delaying surgery for additional imaging in an unstable patient (-3).",
+      "idealAnswer": "Surgical emergency. Immediate STAT vascular surgery consult for emergent open or endovascular (EVAR) repair. Two large-bore IVs, type & crossmatch, activate massive transfusion protocol with balanced blood products. Practice PERMISSIVE HYPOTENSION (target SBP ~70-90 or mentating) and avoid aggressive crystalloid that raises BP and worsens bleeding. Reverse any coagulopathy/anticoagulation, provide analgesia, keep NPO, continuous monitoring, and move to the OR. Do NOT delay definitive repair for non-essential imaging in an unstable patient.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "STAT vascular surgery consult for emergent open / EVAR repair",
+            "points": 7
+          },
+          {
+            "item": "Activate massive transfusion / balanced blood products",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Large-bore IV access and type-specific/uncrossmatched blood",
+            "points": 4
+          },
+          {
+            "item": "Permissive hypotension (target SBP ~70-90 / mentating) until repair",
+            "points": 4
+          },
+          {
+            "item": "NPO, continuous monitoring, OR activation",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Reverse anticoagulation/coagulopathy and provide analgesia",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Aggressive crystalloid bolus raising BP and worsening hemorrhage",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "STAT vascular surgery consult for emergent open / EVAR repair",
+        "Activate massive transfusion / balanced blood products"
+      ],
+      "optionalActions": [
+        "Large-bore IV access and type-specific/uncrossmatched blood",
+        "Permissive hypotension (target SBP ~70-90 / mentating) until repair",
+        "NPO, continuous monitoring, OR activation",
+        "Reverse anticoagulation/coagulopathy and provide analgesia"
+      ],
+      "unsafeActions": [
+        "Aggressive crystalloid bolus raising BP and worsening hemorrhage"
+      ],
+      "consults": [
+        "Vascular Surgery",
+        "Anesthesia / OR"
+      ],
+      "disposition": "Emergent; OR",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Abdominal Pain (Ruptured Abdominal Aortic Aneurysm)",
+        "page": 74
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "distress",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "tobacco_use",
+      "medication_adherence"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "74-year-old man, pale, clammy, and clearly unwell. Anxious but cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke",
+        "pack years"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "how did it come on",
+        "sudden or gradual"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character_radiation",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "tearing or ripping",
+        "does it go anywhere",
+        "radiate to your back"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "syncope_lightheadedness",
+      "category": "ros",
+      "triggerConcepts": [
+        "did you faint",
+        "feel lightheaded",
+        "dizzy",
+        "nearly pass out",
+        "syncope"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pulsatile_mass_aneurysm_history",
+      "category": "hpi",
+      "triggerConcepts": [
+        "lump or swelling in your belly",
+        "pulsing in your abdomen",
+        "ever been told of an aneurysm",
+        "bulge on the blood vessel",
+        "prior ultrasound or scan of your aorta"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in your family",
+        "did a relative have an aneurysm",
+        "burst blood vessel in the family"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "high blood pressure",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "do you take them as prescribed",
+        "adherence"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pertinent_negatives",
+      "category": "ros",
+      "triggerConcepts": [
+        "any vomiting blood",
+        "black or bloody stools",
+        "fever",
+        "urinary symptoms",
+        "recent trauma"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "palpate_all_quadrants_finding_1",
+      "finding": "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Abdomen soft, no palpable mass or tenderness."
+    },
+    {
+      "id": "inspect_abdomen_finding_2",
+      "finding": "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen flat, no distension or visible pulsation."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_3",
+      "finding": "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Peripheral pulses 2+ and symmetric."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
+      "finding": "General: pale, diaphoretic, in distress, restless.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Patient is alert and in no acute distress."
+    },
+    {
+      "id": "assess_capillary_refill_finding_5",
+      "finding": "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.",
+      "revealedBy": [
+        "assess_capillary_refill"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Capillary refill under 2 seconds."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Ruptured abdominal aortic aneurysm",
+    "diagnosticFramework": "74M smoker with hypertension presents with sudden, severe, tearing abdominal and flank/back pain and a near-syncopal episode. The diagnosis is Ruptured abdominal aortic aneurysm, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.",
+      "General: pale, diaphoretic, in distress, restless."
+    ],
+    "keyDiagnosticFindings": [
+      "POCUS_aorta",
+      "CBC",
+      "BMP",
+      "Lactate",
+      "Coags_Type",
+      "CTA_abdomen"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Ruptured abdominal aortic aneurysm while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Ruptured abdominal aortic aneurysm and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Aggressive crystalloid bolus raising BP and worsening hemorrhage",
+      "Delaying definitive repair to obtain non-essential imaging in an unstable patient"
+    ],
+    "managementPearls": [
+      "STAT vascular surgery consult for emergent open / EVAR repair",
+      "Activate massive transfusion / balanced blood products",
+      "Permissive hypotension until repair"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "palpate_all_quadrants",
+      "assess_peripheral_pulses"
+    ],
+    "criticalWorkupItems": [
+      "Bedside aortic ultrasound (POCUS)",
+      "Type & crossmatch / activate massive transfusion"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
+    ],
+    "criticalManagementItems": [
+      "STAT vascular surgery consult for emergent open / EVAR repair",
+      "Activate massive transfusion / balanced blood products"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

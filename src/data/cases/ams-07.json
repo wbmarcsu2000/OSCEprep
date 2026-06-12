@@ -1,0 +1,725 @@
+{
+  "id": "ams-07",
+  "category": "Altered Mental Status",
+  "difficulty": "hard",
+  "title": "Confusion and unsteadiness in a malnourished man",
+  "diagnosis": "Wernicke encephalopathy",
+  "chart": {
+    "ageSex": "58M",
+    "cc": "Confusion and unsteady walking",
+    "oneLiner": "58M with heavy alcohol use and recent poor intake presents with several days of progressive confusion, double vision, and an unsteady, wide-based gait.",
+    "vitals": {
+      "BP": "104/64",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "36.4°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "Everything is spinning and I keep seeing double, and I can't walk straight — I feel all mixed up.",
+  "patientFile": "PERSONA: 58-year-old man, thin and disheveled, mildly drowsy but rousable, inattentive and slow to answer. Looks malnourished. Cooperative but a poor historian; tends to lose track of the question.\n\nCOLLATERAL (provide ONLY if the student asks family/friend/chart/medication list/EMS): Brought in by a friend who says he has been drinking heavily for years and has barely eaten for a few weeks after losing his housing. Over the past several days he has become increasingly muddled, complains his eyes won't work together, and has been staggering and falling against the furniture. He has NOT had a witnessed seizure. He vomited repeatedly last week. No known head trauma. MEDS: none regular; no recent glucose-containing IV fluids before arrival per EMS.\n\nHPI (from patient — limited): feels confused and 'foggy,' sees double, the room feels like it is moving, and he cannot walk straight without holding on. Denies headache, denies fever, denies chest pain. Last drink was about a day ago.\nPMH: heavy alcohol use disorder; prior episodes of poor nutrition; no diabetes. SOCIAL: chronic heavy daily alcohol, recent homelessness, very poor oral intake.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: cachectic, disheveled, mildly drowsy and inattentive; no diaphoresis, no coarse tremor, NOT agitated.\n- Vitals: BP 104/64, HR 104, RR 18, 36.4°C, SpO2 97% RA.\n- Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with a complaint of double vision — ophthalmoplegia; pupils equal and reactive.\n- Gait/coordination: wide-based, ataxic, unsteady gait; truncal ataxia; cannot tandem walk.\n- Neuro otherwise: disoriented and inattentive (global confusion); no focal motor weakness, no asterixis, no neck stiffness; reflexes symmetric, distal sensory loss in feet consistent with peripheral neuropathy.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Patient is inattentive/confused: give short, vague, sometimes off-track answers. Provide COLLATERAL (years of heavy drinking, weeks of poor eating, the vomiting, the staggering and double vision, no seizure, no head trauma) only when the student explicitly asks family/friend/chart/what happened/EMS.\n- Do NOT volunteer the eye findings or gait problem unless those areas are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 92 — normal (excludes hypoglycemia as the cause).",
+      "BMP": "Na 136, K 3.3 (low), Mg 1.4 (low), Phos 2.0 (low), Cr 0.8 — mild electrolyte derangements of malnutrition; watch for refeeding.",
+      "Thiamine_level": "Whole-blood thiamine drawn BEFORE giving thiamine, but do NOT wait for the result — returns LOW, confirming deficiency.",
+      "Ammonia_LFTs": "Ammonia normal and LFTs only mildly abnormal — argues against hepatic encephalopathy as the primary driver.",
+      "CT_head": "Non-contrast CT head — no acute intracranial hemorrhage, mass, or large infarct (excludes structural cause / subdural).",
+      "Tox_TSH": "Serum/urine tox and ethanol low/negative; TSH normal — excludes acute intoxication and thyroid cause."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with a borderline-prolonged QT interval in the setting of low magnesium and potassium; no acute ischemic changes.",
+      "verify": "Source a study matching: Sinus tachycardia with a borderline-prolonged QT interval in the setting of low magnesium and potassium; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with borderline long QT from electrolyte derangement",
+      "searchTerms": [
+        "sinus tachycardia long QT ECG",
+        "hypomagnesemia hypokalemia prolonged QT 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields with no consolidation or effusion; obtained to screen for aspiration/infection as a precipitant of the confusion.",
+      "verify": "Pick a CC normal PA chest film.",
+      "assetNeeded": true,
+      "imageDescription": "near-normal chest radiograph obtained to exclude an infectious/aspiration precipitant",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "clear chest radiograph no consolidation"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "BMP",
+    "Thiamine_level",
+    "Ammonia_LFTs",
+    "CT_head",
+    "Tox_TSH",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Glucose",
+    "CT_head",
+    "Thiamine_level"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this confusion with eye findings and unsteady gait (note your leading diagnosis).",
+      "rubric": "Wernicke encephalopathy (leading,7). Hypoglycemia (CANT-MISS,4). Intracranial process — subdural/stroke (CANT-MISS,4). CNS infection — meningitis/encephalitis (CANT-MISS,3). Hepatic encephalopathy (core,2). Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause (core,2). Names the classic triad (encephalopathy + ophthalmoplegia/nystagmus + gait ataxia) in a malnourished drinker as the justification (core,3).",
+      "idealAnswer": "Leading diagnosis: Wernicke encephalopathy. Must-not-miss diagnoses to exclude: Hypoglycemia; Intracranial process — subdural/stroke; CNS infection — meningitis/encephalitis. Also reasonable: Hepatic encephalopathy; Alcohol intoxication/withdrawal or other toxic-metabolic cause.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Wernicke encephalopathy",
+            "points": 7
+          },
+          {
+            "item": "Hypoglycemia",
+            "points": 4
+          },
+          {
+            "item": "Intracranial process — subdural/stroke",
+            "points": 4
+          },
+          {
+            "item": "CNS infection — meningitis/encephalitis",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Hepatic encephalopathy",
+            "points": 2
+          },
+          {
+            "item": "Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause",
+            "points": 2
+          },
+          {
+            "item": "Names the classic triad (encephalopathy + ophthalmoplegia/nystagmus + gait ataxia) in a malnourished drinker as the justification",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Hypoglycemia",
+        "Intracranial process — subdural/stroke",
+        "CNS infection — meningitis/encephalitis"
+      ],
+      "acceptableAlternatives": [
+        "Hepatic encephalopathy",
+        "Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Fingerstick glucose (CANT-MISS,3). Non-contrast CT head to exclude bleed/structural cause (CANT-MISS,4). BMP incl. magnesium, potassium, phosphate (CANT-MISS,3). Whole-blood thiamine level drawn before treating — but do NOT delay thiamine for the result (2). Ammonia/LFTs to assess hepatic encephalopathy (1). Tox screen/ethanol/TSH (1). Infection screen if febrile/LP if meningitis suspected (1). PENALTY: giving IV glucose/dextrose before thiamine and precipitating/worsening Wernicke (-3). PENALTY: delaying empiric thiamine while awaiting the thiamine level (-2).",
+      "idealAnswer": "Order: Fingerstick glucose; non-contrast CT head; magnesium, potassium, phosphate; whole-blood thiamine level (drawn before treatment but do not wait for it).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Fingerstick glucose",
+            "points": 3
+          },
+          {
+            "item": "Non-contrast CT head to exclude bleed/structural cause",
+            "points": 4
+          },
+          {
+            "item": "magnesium, potassium, phosphate",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Whole-blood thiamine level drawn before treating (do not delay thiamine for the result)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "giving IV glucose/dextrose before thiamine",
+            "points": -3
+          },
+          {
+            "item": "delaying empiric thiamine while awaiting the thiamine level",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Fingerstick glucose",
+        "Non-contrast CT head to exclude bleed/structural cause",
+        "magnesium, potassium, phosphate"
+      ],
+      "optionalTests": [
+        "Whole-blood thiamine level drawn before treating (do not delay thiamine for the result)"
+      ],
+      "contraindicatedTests": [
+        "giving IV glucose/dextrose before thiamine",
+        "delaying empiric thiamine while awaiting the thiamine level"
+      ],
+      "orderSensitiveActions": [
+        "giving IV glucose/dextrose before thiamine",
+        "delaying empiric thiamine while awaiting the thiamine level"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia with a borderline-prolonged QT from low Mg/K; no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (6); recognizes the prolonged/borderline QT and links it to low magnesium/potassium (4); no acute ischemic changes (3); systematic read (2). PENALTY: over-calling ischemia or missing the QT (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "borderline/prolonged QT interval with low magnesium and potassium"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia."
+      ],
+      "commonMistakes": [
+        "missing the prolonged QT and the electrolyte link",
+        "over-calling acute ischemia"
+      ],
+      "idealAnswer": "Sinus tachycardia with a borderline-prolonged QT interval in the setting of low magnesium/potassium; no acute ischemic changes.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia."
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "borderline/prolonged QT interval with low magnesium and potassium"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear film, no acute process. CREDIT: identifies a clear/near-clear film (6); notes it screens for an infectious/aspiration precipitant of the confusion (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a clear/near-clear film",
+        "notes it screens for an infectious/aspiration precipitant"
+      ],
+      "criticalFindings": [
+        "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
+      ],
+      "commonMistakes": [
+        "inventing pathology"
+      ],
+      "idealAnswer": "Clear lung fields with no consolidation or effusion; obtained to exclude an infectious/aspiration precipitant of the confusion.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a clear/near-clear film",
+            "points": 6
+          },
+          {
+            "item": "notes it screens for an infectious/aspiration precipitant",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "With a normal glucose, no intracranial bleed on CT, a low thiamine level, and the classic triad in a malnourished drinker, what is your diagnosis and what did you rule out?",
+      "rubric": "Wernicke encephalopathy (6). Cites the triad — encephalopathy, ophthalmoplegia/nystagmus, gait ataxia — in a thiamine-deficient malnourished drinker, and explicitly excludes hypoglycemia, intracranial bleed, and CNS infection (3). Notes it is a clinical diagnosis requiring immediate empiric thiamine and that untreated it can progress to irreversible Korsakoff syndrome (bonus,1).",
+      "idealAnswer": "Wernicke encephalopathy. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes Wernicke is a clinical diagnosis needing immediate empiric thiamine and can progress to irreversible Korsakoff syndrome",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Hypoglycemia",
+        "Intracranial process — subdural/stroke",
+        "CNS infection — meningitis/encephalitis"
+      ],
+      "acceptableAlternatives": [
+        "Hepatic encephalopathy",
+        "Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH alcohol/nutrition guidance: immediate high-dose IV thiamine BEFORE any glucose (CANT-MISS,8); give thiamine empirically without waiting for the level and continue a multi-day high-dose course (CANT-MISS,4); repair electrolytes — magnesium (cofactor), potassium, phosphate (4); folate/multivitamin and nutritional support, watch for refeeding syndrome (3); monitor for/treat concurrent alcohol withdrawal (3); admit and reassess neuro status, neuro consult if not improving (2); address alcohol use disorder/social needs (1). PENALTY: giving glucose/dextrose before thiamine (-3); under-dosing oral thiamine when high-dose IV is indicated (-2).",
+      "idealAnswer": "Immediate high-dose IV thiamine (e.g. 500 mg IV three times daily) given BEFORE any glucose, empirically and without waiting for the thiamine level, continued for several days then tapered. Replete magnesium (a required cofactor), potassium, and phosphate; give folate/multivitamin and nutritional support while watching for refeeding syndrome. Monitor for and treat concurrent alcohol withdrawal. Admit, serially reassess neuro status, and obtain neurology consult if not improving. Address the underlying alcohol use disorder and social needs.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "High-dose IV thiamine before any glucose",
+            "points": 8
+          },
+          {
+            "item": "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Electrolyte repletion (magnesium cofactor, potassium, phosphate)",
+            "points": 4
+          },
+          {
+            "item": "Folate/multivitamin and nutrition; watch for refeeding syndrome",
+            "points": 3
+          },
+          {
+            "item": "Monitor for and treat concurrent alcohol withdrawal",
+            "points": 3
+          },
+          {
+            "item": "Admit, serial neuro reassessment, neurology consult if not improving",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Address alcohol use disorder and social needs",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Glucose/dextrose before thiamine",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "High-dose IV thiamine before any glucose",
+        "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course"
+      ],
+      "optionalActions": [
+        "Electrolyte repletion (magnesium cofactor, potassium, phosphate)",
+        "Folate/multivitamin and nutrition; watch for refeeding syndrome",
+        "Monitor for and treat concurrent alcohol withdrawal",
+        "Admit, serial neuro reassessment, neurology consult if not improving",
+        "Address alcohol use disorder and social needs"
+      ],
+      "unsafeActions": [
+        "Glucose/dextrose before thiamine"
+      ],
+      "consults": [
+        "Neurology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Alcohol Use Disorder & Withdrawal (Wernicke Encephalopathy / Thiamine Deficiency)",
+        "page": 213
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "drowsy",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "very brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "confused and inattentive; gives short, vague answers and needs collateral",
+    "affect": "58-year-old man, thin and disheveled, mildly drowsy but rousable, inattentive and slow to answer; malnourished.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "I drink most every day, a lot, for years now. My last drink was about a day ago.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "nutrition_intake",
+      "category": "social",
+      "triggerConcepts": [
+        "eating",
+        "appetite",
+        "nutrition",
+        "diet",
+        "how have you been eating",
+        "weight loss",
+        "meals"
+      ],
+      "response": "I've barely eaten anything for a few weeks — I lost my place to stay and money's been tight. I've lost weight.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "vision_double",
+      "category": "hpi",
+      "triggerConcepts": [
+        "vision",
+        "double vision",
+        "eyes",
+        "seeing double",
+        "blurry",
+        "diplopia"
+      ],
+      "response": "Yeah, I'm seeing double, and my eyes feel like they won't move together right.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "gait_balance",
+      "category": "hpi",
+      "triggerConcepts": [
+        "walking",
+        "balance",
+        "unsteady",
+        "falling",
+        "gait",
+        "staggering",
+        "dizzy on your feet"
+      ],
+      "response": "I can't walk straight — I keep staggering and I've bumped into the furniture and nearly fallen.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "It's been getting worse over the last several days — the confusion, the eyes, and the walking.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "head_trauma",
+      "category": "hpi",
+      "triggerConcepts": [
+        "head injury",
+        "hit your head",
+        "fall and hit",
+        "trauma",
+        "head trauma"
+      ],
+      "response": "No, I don't remember hitting my head. No big falls onto my head that I know of.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "seizure_fever",
+      "category": "ros",
+      "triggerConcepts": [
+        "seizure",
+        "convulsion",
+        "fever",
+        "stiff neck",
+        "headache",
+        "shaking spells"
+      ],
+      "response": "No seizures that anyone saw, no fever, no bad headache, and my neck doesn't feel stiff.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "vomiting",
+      "category": "hpi",
+      "triggerConcepts": [
+        "vomiting",
+        "throwing up",
+        "nausea",
+        "kept food down"
+      ],
+      "response": "I was throwing up a lot last week and couldn't keep much down.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "diabetes"
+      ],
+      "response": "Mostly just the drinking. No sugar problem that I know of — no diabetes.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "vitamins"
+      ],
+      "response": "I don't take any regular medicines or vitamins.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_cranial_nerves_finding_1",
+      "finding": "Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with double vision — ophthalmoplegia; pupils equal and reactive.",
+      "revealedBy": [
+        "assess_cranial_nerves"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Extraocular movements intact, no nystagmus."
+    },
+    {
+      "id": "assess_gait_finding_2",
+      "finding": "Gait/coordination: wide-based, ataxic, unsteady gait; truncal ataxia; cannot tandem walk.",
+      "revealedBy": [
+        "assess_gait",
+        "assess_coordination"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Normal, steady gait."
+    },
+    {
+      "id": "assess_mental_status_finding_3",
+      "finding": "Neuro: disoriented and inattentive (global confusion); no focal motor weakness, no asterixis, no neck stiffness.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and oriented, attentive."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
+      "finding": "General: cachectic, disheveled, mildly drowsy and inattentive; no diaphoresis, no coarse tremor, NOT agitated.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Well-nourished, well-appearing."
+    },
+    {
+      "id": "assess_neck_stiffness_finding_5",
+      "finding": "Neuro: no neck stiffness/meningismus (argues against CNS infection).",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No nuchal rigidity."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Wernicke encephalopathy",
+    "diagnosticFramework": "58M with heavy alcohol use and recent poor intake presents with several days of progressive confusion, double vision, and an unsteady, wide-based gait. The diagnosis is Wernicke encephalopathy, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "Years of heavy daily alcohol use with weeks of very poor oral intake and weight loss (thiamine deficiency).",
+      "Repeated vomiting last week worsening the malnutrition.",
+      "Subacute progressive confusion, double vision, and staggering gait — the classic triad.",
+      "No witnessed seizure, no fever/stiff neck, and no head trauma (pertinent negatives)."
+    ],
+    "keyPhysicalExamFindings": [
+      "Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with double vision — ophthalmoplegia; pupils equal and reactive.",
+      "Gait/coordination: wide-based, ataxic, unsteady gait; truncal ataxia; cannot tandem walk.",
+      "Neuro: disoriented and inattentive (global confusion); no focal motor weakness, no asterixis, no neck stiffness.",
+      "General: cachectic, disheveled, mildly drowsy and inattentive; no diaphoresis, no coarse tremor, NOT agitated."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "BMP",
+      "Thiamine_level",
+      "Ammonia_LFTs",
+      "CT_head",
+      "Tox_TSH"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Wernicke encephalopathy while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Wernicke encephalopathy and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Glucose/dextrose before thiamine",
+      "Delaying empiric thiamine while awaiting the thiamine level",
+      "Anchoring on simple intoxication/withdrawal and missing the triad"
+    ],
+    "managementPearls": [
+      "High-dose IV thiamine before any glucose",
+      "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course"
+    ],
+    "criticalHistoryItems": [
+      "alcohol_use",
+      "nutrition_intake",
+      "vision_double",
+      "gait_balance"
+    ],
+    "criticalExamItems": [
+      "assess_cranial_nerves",
+      "assess_gait"
+    ],
+    "criticalWorkupItems": [
+      "Fingerstick glucose",
+      "Non-contrast CT head to exclude bleed/structural cause",
+      "magnesium, potassium, phosphate"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia.",
+      "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
+    ],
+    "criticalManagementItems": [
+      "High-dose IV thiamine before any glucose",
+      "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia.",
+      "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia.",
+      "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

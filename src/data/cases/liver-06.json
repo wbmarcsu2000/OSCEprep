@@ -1,0 +1,685 @@
+{
+  "id": "liver-06",
+  "category": "Abnormal Liver Enzymes",
+  "difficulty": "hard",
+  "title": "A young adult with worsening tremor and abnormal liver tests",
+  "diagnosis": "Wilson disease",
+  "chart": {
+    "ageSex": "22M",
+    "cc": "Hand tremor and fatigue",
+    "oneLiner": "22M presents with several months of a worsening hand tremor, slurred speech, mood changes, and incidentally noted abnormal liver enzymes.",
+    "vitals": {
+      "BP": "118/74",
+      "HR": "78",
+      "RR": "14",
+      "Temp": "36.9°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My hands have been shaking for months, my speech is getting slurred, and a clinic told me my liver tests were off.",
+  "patientFile": "PERSONA: 22-year-old man, anxious, with a coarse resting/postural tremor and mildly slurred speech. Cooperative but somewhat flat in affect. Good historian once asked.\n\nHPI: Over 4-6 months, a progressively worsening tremor of both hands (worse with posture and action), slurring of speech (dysarthria), occasional drooling, clumsiness/handwriting deterioration, and difficulty with fine tasks. Family and a college counselor noted personality and mood changes — irritability, declining grades, and a brief depressive episode. He was started on an SSRI a few weeks ago. A recent walk-in clinic checked labs for fatigue and told him his \"liver numbers were a bit high\" (only mention the abnormal liver tests, mood changes, and SSRI if asked). NO jaundice that he has noticed, NO confusion or altered behavior at home, NO black/bloody stools, NO abdominal swelling.\nPMH: an episode of \"hepatitis\" or transient jaundice in his late teens that resolved without clear diagnosis (only if asked about prior liver problems). No known chronic disease.\nFAMILY HISTORY: a younger sibling has unexplained \"liver trouble\"; a maternal uncle reportedly had a movement disorder and \"died of liver failure\" young; parents are second cousins (consanguinity) — only reveal on direct family-history questioning.\nMEDS: a recently started SSRI (sertraline) for mood (if asked). No herbal/over-the-counter hepatotoxins, minimal acetaminophen.\nSOCIAL: occasional/social alcohol only; NO IV drug use; no tattoos; no high-risk sexual exposures; college student.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, anxious; coarse resting and postural tremor of the hands; mild dysarthria.\n- Vitals: BP 118/74, HR 78, RR 14, 36.9°C, SpO2 99% RA.\n- Eyes: golden-brown ring at the corneal margin (Kayser-Fleischer ring) on close inspection; sclera not overtly icteric.\n- Neuro: tremor (wing-beating with arms outstretched), mild dystonia/rigidity and bradykinesia, dysarthria; gait slightly unsteady; cognition grossly intact, NO asterixis.\n- Abdomen: mild hepatomegaly; spleen tip palpable (mild splenomegaly); no ascites, no marked tenderness; no overt jaundice.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history (sibling/uncle/consanguinity), the prior \"hepatitis\"/jaundice episode, the mood changes, or the new SSRI unless asked about family history, prior liver problems, mood/psychiatric symptoms, or medications.\n- The Kayser-Fleischer ring, hepatomegaly, splenomegaly, and neuro signs are revealed only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "LFTs": "AST 95, ALT 70 (modest hepatocellular elevation; AST slightly > ALT), Alk Phos LOW-normal (a low ALP with high bilirubin is a clue to Wilson).",
+      "Ceruloplasmin": "Serum ceruloplasmin LOW (<14 mg/dL) — supports Wilson disease.",
+      "Copper": "LOW serum total copper but HIGH free (non-ceruloplasmin-bound) copper; 24-hour urinary copper markedly ELEVATED (>100 mcg/24h).",
+      "SlitLamp": "Slit-lamp exam confirms bilateral Kayser-Fleischer rings (copper in Descemet membrane).",
+      "CBCCoombs": "Mild Coombs-NEGATIVE hemolytic anemia with low haptoglobin (non-immune hemolysis from copper); platelets mildly low (hypersplenism).",
+      "MRIBrain": "MRI brain: T2 hyperintensity of the basal ganglia (putamen) with the 'face of the giant panda' sign in the midbrain."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus rhythm with a normal tracing; no acute ischemic changes (a near-normal screening EKG in a young patient).",
+      "verify": "Source a study matching: Sinus rhythm with a normal tracing; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing normal sinus rhythm",
+      "searchTerms": [
+        "normal sinus rhythm ECG",
+        "normal 12 lead ECG young adult"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields with a normal cardiomediastinal silhouette; no acute cardiopulmonary process (a normal screening film).",
+      "verify": "Source a study matching: Clear lung fields with a normal cardiomediastinal silhouette; no acute cardiopulmonary process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph young adult"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "LFTs",
+    "Ceruloplasmin",
+    "Copper",
+    "SlitLamp",
+    "CBCCoombs",
+    "MRIBrain",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Ceruloplasmin",
+    "Copper",
+    "SlitLamp"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for a young adult with a movement disorder plus abnormal liver enzymes (note your leading diagnosis).",
+      "rubric": "Wilson disease (leading,7). Acute liver failure / fulminant Wilsonian crisis with hemolysis (CANT-MISS — must exclude in any young patient with liver disease + Coombs-negative hemolysis,5). Autoimmune hepatitis (core,3). Viral/drug-induced hepatitis (core,2). Primary movement disorder (juvenile Parkinsonism, drug-induced tremor, essential tremor) (core,2). Names the combination of a movement disorder/neuropsychiatric change WITH liver disease in a young person and the imperative to check ceruloplasmin/urinary copper and a slit-lamp exam (core,4).",
+      "idealAnswer": "Leading diagnosis: Wilson disease. Must-not-miss diagnoses to exclude: Acute (fulminant) liver failure / Wilsonian crisis with Coombs-negative hemolysis. Also reasonable: Autoimmune hepatitis; Viral/drug-induced hepatitis; Primary movement disorder (juvenile Parkinsonism, drug-induced tremor, essential tremor).",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Wilson disease",
+            "points": 7
+          },
+          {
+            "item": "Acute liver failure / Wilsonian crisis with hemolysis",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Autoimmune hepatitis",
+            "points": 3
+          },
+          {
+            "item": "Viral/drug-induced hepatitis",
+            "points": 2
+          },
+          {
+            "item": "Primary movement disorder (juvenile Parkinsonism/essential/drug-induced tremor)",
+            "points": 2
+          },
+          {
+            "item": "Names the movement-disorder-plus-liver-disease combination in a young person and the imperative to check ceruloplasmin/urinary copper and slit-lamp",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute liver failure / Wilsonian crisis with hemolysis"
+      ],
+      "acceptableAlternatives": [
+        "Autoimmune hepatitis",
+        "Viral/drug-induced hepatitis",
+        "Primary movement disorder (juvenile Parkinsonism, essential tremor, drug-induced tremor)"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Serum ceruloplasmin (CANT-MISS,3). 24-hour urinary copper + serum free copper (CANT-MISS,4). Slit-lamp exam for Kayser-Fleischer rings (ophthalmology) (3). LFTs with fractionated bilirubin and ALP:bilirubin ratio (2). CBC/haptoglobin/Coombs for hemolysis (2). MRI brain for neuro involvement (1). PENALTY: anchoring on a primary psychiatric/movement disorder and starting an SSRI or dopaminergic agent without screening for Wilson in a young patient with liver disease (-2).",
+      "idealAnswer": "Order: Serum ceruloplasmin; 24-hour urinary copper (with serum free copper); slit-lamp examination for Kayser-Fleischer rings.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Serum ceruloplasmin",
+            "points": 3
+          },
+          {
+            "item": "24-hour urinary copper (with serum free copper)",
+            "points": 4
+          },
+          {
+            "item": "Slit-lamp exam for Kayser-Fleischer rings",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anchoring on a primary psychiatric/movement disorder without screening for Wilson in a young patient with liver disease",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Serum ceruloplasmin",
+        "24-hour urinary copper (with serum free copper)",
+        "Slit-lamp exam for Kayser-Fleischer rings"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "anchoring on a primary psychiatric/movement disorder without screening for Wilson in a young patient with liver disease"
+      ],
+      "orderSensitiveActions": [
+        "anchoring on a primary psychiatric/movement disorder without screening for Wilson in a young patient with liver disease"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading / inventing pathology (-2).",
+      "keyFindings": [
+        "recognizes a normal sinus rhythm with no acute changes",
+        "reads systematically (rate, rhythm, axis, intervals, ST/T)"
+      ],
+      "criticalFindings": [
+        "Normal sinus rhythm; no acute ischemic changes."
+      ],
+      "commonMistakes": [
+        "over-reading a normal tracing and inventing ischemia or a block"
+      ],
+      "idealAnswer": "Normal sinus rhythm with no acute ischemic changes — a normal screening EKG in a young patient.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Normal sinus rhythm; no acute ischemic changes."
+        ],
+        "coreActions": [
+          "recognizes a normal sinus rhythm with no acute changes",
+          "reads systematically (rate, rhythm, axis, intervals, ST/T)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-reads a normal study / invents pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield in this presentation (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal film with clear lungs and normal cardiomediastinal silhouette",
+        "notes it is low-yield here but reasonable as a baseline screen"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process (normal film)."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate or effusion on a normal film"
+      ],
+      "idealAnswer": "Clear lungs with a normal cardiomediastinal silhouette — no acute process; a low-yield but reasonable baseline screen.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "No acute cardiopulmonary process (normal film)."
+        ],
+        "coreActions": [
+          "identifies a normal film with clear lungs and normal cardiomediastinal silhouette",
+          "notes it is low-yield here but reasonable as a baseline screen"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents pathology on a normal study",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "A low ceruloplasmin, markedly elevated 24-hour urinary copper, bilateral Kayser-Fleischer rings on slit lamp, a Coombs-negative hemolytic anemia, and basal-ganglia changes on MRI. What is your diagnosis and what did you rule out?",
+      "rubric": "Wilson disease (hepatolenticular degeneration) (6). Cites low ceruloplasmin + high urinary copper + Kayser-Fleischer rings; explicitly excludes autoimmune/viral hepatitis and a primary psychiatric/movement disorder, and notes the Coombs-NEGATIVE hemolysis argues against autoimmune hemolytic anemia and flags risk of a Wilsonian (fulminant) crisis (4).",
+      "idealAnswer": "Wilson disease. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute liver failure / Wilsonian crisis with hemolysis"
+      ],
+      "acceptableAlternatives": [
+        "Autoimmune hepatitis",
+        "Viral/drug-induced hepatitis",
+        "Primary movement disorder (juvenile Parkinsonism, essential tremor, drug-induced tremor)"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH approach to Wilson disease: chelation therapy — D-penicillamine or tridentine (CANT-MISS,7); add oral zinc (blocks intestinal copper absorption) and confirm a low-copper diet (4); hepatology referral and consider genetic testing (ATP7B) plus screening of first-degree relatives (4); monitor for neurologic worsening when initiating chelation and avoid further hepatotoxins (4); supportive/neurology co-management and consider transplant evaluation for fulminant failure or decompensated cirrhosis (3); pyridoxine with D-penicillamine (2). PENALTY: missing/failing to treat a fulminant Wilsonian crisis (which needs urgent transplant evaluation) (-3); leaving copper overload untreated or treating only the psychiatric symptoms (-2).",
+      "idealAnswer": "Wilson disease: start copper-removal therapy — a chelator (D-penicillamine, with pyridoxine; or trientine, often better tolerated) and/or oral zinc to block intestinal copper absorption; counsel a low-copper diet (avoid shellfish, liver, nuts, chocolate). Refer to hepatology; send ATP7B genetic testing and screen first-degree relatives (the sibling). Monitor closely for paradoxical neurologic worsening when starting a chelator, follow LFTs/copper studies, and avoid hepatotoxins. Co-manage with neurology. For a fulminant Wilsonian crisis or decompensated cirrhosis, urgent liver transplant evaluation (transplant is curative as it corrects the metabolic defect).",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Copper chelation (D-penicillamine or trientine)",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Oral zinc and low-copper diet",
+            "points": 4
+          },
+          {
+            "item": "Hepatology referral, ATP7B genetic testing, screen first-degree relatives",
+            "points": 4
+          },
+          {
+            "item": "Monitor for neurologic worsening on chelation and avoid hepatotoxins",
+            "points": 4
+          },
+          {
+            "item": "Neurology co-management",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Transplant evaluation for fulminant failure / decompensated cirrhosis (curative)",
+            "points": 3
+          },
+          {
+            "item": "Pyridoxine with D-penicillamine",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Missing/failing to treat a fulminant Wilsonian crisis",
+            "points": -3
+          },
+          {
+            "item": "Leaving copper overload untreated / treating only the psychiatric symptoms",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Copper chelation (D-penicillamine or trientine)"
+      ],
+      "optionalActions": [
+        "Oral zinc and low-copper diet",
+        "Hepatology referral, ATP7B genetic testing, screen first-degree relatives",
+        "Monitor for neurologic worsening on chelation and avoid hepatotoxins",
+        "Neurology co-management",
+        "Transplant evaluation for fulminant failure / decompensated cirrhosis (curative)",
+        "Pyridoxine with D-penicillamine"
+      ],
+      "unsafeActions": [
+        "Missing/failing to treat a fulminant Wilsonian crisis",
+        "Leaving copper overload untreated / treating only the psychiatric symptoms"
+      ],
+      "consults": [
+        "Hepatology",
+        "Neurology"
+      ],
+      "disposition": "Outpatient if stable; admit and urgent transplant evaluation if fulminant failure or decompensation",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Cirrhosis & Inherited Liver Disease (Wilson Disease)",
+        "page": 95
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "mental_health",
+      "alcohol_use",
+      "family_history"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "22-year-old man, anxious, with a coarse tremor and mild slurred speech. Cooperative but somewhat flat.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "family_history",
+      "category": "family_history",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "relatives with liver problems",
+        "is your family related",
+        "consanguinity",
+        "siblings health",
+        "inherited conditions"
+      ],
+      "response": "A younger sibling has some unexplained liver trouble, and a maternal uncle had a movement problem and died young of liver failure. My parents are second cousins.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "mental_health",
+      "category": "psychiatric",
+      "triggerConcepts": [
+        "mood",
+        "depression",
+        "anxiety",
+        "personality change",
+        "psychiatric symptoms",
+        "how have you been feeling emotionally",
+        "school or work changes"
+      ],
+      "response": "I've been irritable and a bit down, my grades dropped, and a counselor started me on a mood medicine a few weeks ago.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "prior_liver_episode",
+      "category": "pmh",
+      "triggerConcepts": [
+        "prior liver problems",
+        "ever had hepatitis",
+        "previous jaundice",
+        "yellow eyes before",
+        "past liver illness"
+      ],
+      "response": "A couple of years ago I had something they called hepatitis with yellow eyes for a while, but it cleared up and they never figured out the cause.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "any new medicines",
+        "supplements or herbals",
+        "acetaminophen tylenol use"
+      ],
+      "response": "Just a mood medicine (an SSRI) started a few weeks ago. I rarely take Tylenol, no herbal products.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "The shaking and slurred speech have been building up over the last four to six months and are getting worse.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "neuro_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "tremor details",
+        "slurred speech",
+        "trouble swallowing or drooling",
+        "clumsiness handwriting",
+        "movement symptoms"
+      ],
+      "response": "My hands shake worse when I hold them out or use them, my speech slurs, I sometimes drool, and my handwriting has gotten messy and clumsy.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "Just the occasional drink socially, nothing heavy.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "exposures",
+      "category": "social",
+      "triggerConcepts": [
+        "iv drug use",
+        "tattoos",
+        "sexual history",
+        "travel",
+        "risk exposures"
+      ],
+      "response": "No injection drugs, no tattoos, no high-risk sexual exposures, and no notable travel.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "abdominal swelling or jaundice"
+      ],
+      "response": "Mostly fatigue. I haven't noticed yellow eyes, belly swelling, confusion, or black or bloody stools.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_sclera_finding_1",
+      "finding": "Eyes: golden-brown ring at the corneal margin (Kayser-Fleischer ring) on close inspection; sclera not overtly icteric.",
+      "revealedBy": [
+        "inspect_sclera",
+        "inspect_conjunctiva",
+        "assess_for_jaundice"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No Kayser-Fleischer ring noted on bedside inspection; no scleral icterus."
+    },
+    {
+      "id": "assess_coordination_finding_2",
+      "finding": "Neuro: coarse resting/postural (wing-beating) tremor, mild dystonia/rigidity and bradykinesia, dysarthria.",
+      "revealedBy": [
+        "assess_coordination",
+        "assess_gait"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No tremor or coordination deficit appreciated."
+    },
+    {
+      "id": "assess_hepatomegaly_finding_3",
+      "finding": "Abdomen: mild hepatomegaly; no marked tenderness; no overt jaundice.",
+      "revealedBy": [
+        "assess_hepatomegaly",
+        "palpate_ruq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No hepatomegaly."
+    },
+    {
+      "id": "assess_splenomegaly_finding_4",
+      "finding": "Abdomen: spleen tip palpable (mild splenomegaly), suggesting portal hypertension/hypersplenism.",
+      "revealedBy": [
+        "assess_splenomegaly",
+        "palpate_luq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "assess_asterixis_finding_5",
+      "finding": "Neuro: cognition grossly intact, NO asterixis (no overt hepatic encephalopathy).",
+      "revealedBy": [
+        "assess_asterixis"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No asterixis."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Wilson disease",
+    "diagnosticFramework": "22M presents with several months of a worsening hand tremor, slurred speech, mood changes, and incidentally noted abnormal liver enzymes. The diagnosis is Wilson disease, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "family history",
+      "prior liver episode",
+      "mental health change"
+    ],
+    "keyPhysicalExamFindings": [
+      "Eyes: golden-brown ring at the corneal margin (Kayser-Fleischer ring) on close inspection; sclera not overtly icteric.",
+      "Neuro: coarse resting/postural (wing-beating) tremor, mild dystonia/rigidity and bradykinesia, dysarthria.",
+      "Abdomen: mild hepatomegaly; no marked tenderness; no overt jaundice.",
+      "Abdomen: spleen tip palpable (mild splenomegaly), suggesting portal hypertension/hypersplenism.",
+      "Neuro: cognition grossly intact, NO asterixis (no overt hepatic encephalopathy)."
+    ],
+    "keyDiagnosticFindings": [
+      "LFTs",
+      "Ceruloplasmin",
+      "Copper",
+      "SlitLamp",
+      "CBCCoombs",
+      "MRIBrain"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items (family history, prior liver episode, mood changes, medications) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (Kayser-Fleischer ring, neuro signs, hepatosplenomegaly).",
+      "Build a differential led by Wilson disease while explicitly excluding must-not-miss causes (fulminant Wilsonian crisis with hemolysis).",
+      "Order a focused, order-sensitive workup (ceruloplasmin, 24-hour urinary copper, slit-lamp) and interpret EKG/CXR and labs.",
+      "Commit to Wilson disease and manage with copper removal (chelation/zinc), family screening, neurology/hepatology co-management, and transplant evaluation if fulminant."
+    ],
+    "commonPitfalls": [
+      "Missing/failing to treat a fulminant Wilsonian crisis",
+      "Leaving copper overload untreated / treating only the psychiatric symptoms",
+      "Anchoring on a primary psychiatric or movement disorder without screening for Wilson in a young patient with liver disease"
+    ],
+    "managementPearls": [
+      "Copper chelation (D-penicillamine or trientine)",
+      "Oral zinc and low-copper diet",
+      "Screen first-degree relatives with ATP7B testing"
+    ],
+    "criticalHistoryItems": [
+      "family_history"
+    ],
+    "criticalExamItems": [
+      "inspect_sclera",
+      "assess_coordination"
+    ],
+    "criticalWorkupItems": [
+      "Serum ceruloplasmin",
+      "24-hour urinary copper (with serum free copper)",
+      "Slit-lamp exam for Kayser-Fleischer rings"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute changes.",
+      "No acute process (low yield in this presentation)."
+    ],
+    "criticalManagementItems": [
+      "Copper chelation (D-penicillamine or trientine)"
+    ],
+    "keyImageInterpretationFindings": [
+      "Normal sinus rhythm; no acute ischemic changes.",
+      "No acute cardiopulmonary process (normal film)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Normal sinus rhythm; no acute ischemic changes.",
+      "No acute cardiopulmonary process (normal film)."
+    ],
+    "imageInterpretationPearls": [
+      "A normal study is a legitimate read — name the pertinent negatives and judge the study's yield for the presentation.",
+      "Read every study systematically before committing.",
+      "Do not invent pathology to fit an expected diagnosis; the lesions in Wilson disease are biochemical and on brain MRI, not on the EKG/CXR."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

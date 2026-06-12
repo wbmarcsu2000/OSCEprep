@@ -27,114 +27,6 @@
   },
   "cases": [
     {
-      "id": "chestpain-01",
-      "file": "chestpain-01.json",
-      "category": "Chest Pain",
-      "difficulty": "moderate",
-      "title": "Exertional chest pressure with diaphoresis",
-      "diagnosis": "NSTEMI",
-      "cantMiss": true
-    },
-    {
-      "id": "chestpain-02",
-      "file": "chestpain-02.json",
-      "category": "Chest Pain",
-      "difficulty": "hard",
-      "title": "Pleuritic chest pain after a long flight",
-      "diagnosis": "Pulmonary embolism",
-      "cantMiss": true
-    },
-    {
-      "id": "chestpain-03",
-      "file": "chestpain-03.json",
-      "category": "Chest Pain",
-      "difficulty": "hard",
-      "title": "Sudden tearing chest pain to the back",
-      "diagnosis": "Aortic dissection",
-      "cantMiss": true
-    },
-    {
-      "id": "chestpain-04",
-      "file": "chestpain-04.json",
-      "category": "Chest Pain",
-      "difficulty": "moderate",
-      "title": "Sharp positional chest pain after a viral illness",
-      "diagnosis": "Acute pericarditis",
-      "cantMiss": false
-    },
-    {
-      "id": "chestpain-05",
-      "file": "chestpain-05.json",
-      "category": "Chest Pain",
-      "difficulty": "easy",
-      "title": "Burning chest discomfort after meals",
-      "diagnosis": "GERD",
-      "cantMiss": false
-    },
-    {
-      "id": "chestpain-06",
-      "file": "chestpain-06.json",
-      "category": "Chest Pain",
-      "difficulty": "easy",
-      "title": "Reproducible chest pain after lifting",
-      "diagnosis": "Costochondritis",
-      "cantMiss": false
-    },
-    {
-      "id": "dyspnea-01",
-      "file": "dyspnea-01.json",
-      "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Progressive dyspnea and leg swelling",
-      "diagnosis": "Acute decompensated heart failure (HFrEF)",
-      "cantMiss": false
-    },
-    {
-      "id": "dyspnea-02",
-      "file": "dyspnea-02.json",
-      "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Worsening cough and breathlessness in a smoker",
-      "diagnosis": "COPD exacerbation",
-      "cantMiss": false
-    },
-    {
-      "id": "dyspnea-03",
-      "file": "dyspnea-03.json",
-      "category": "Dyspnea",
-      "difficulty": "easy",
-      "title": "Fever, cough, and breathlessness",
-      "diagnosis": "Community-acquired pneumonia",
-      "cantMiss": false
-    },
-    {
-      "id": "dyspnea-04",
-      "file": "dyspnea-04.json",
-      "category": "Dyspnea",
-      "difficulty": "hard",
-      "title": "Sudden breathlessness post-op",
-      "diagnosis": "Pulmonary embolism",
-      "cantMiss": true
-    },
-    {
-      "id": "dyspnea-05",
-      "file": "dyspnea-05.json",
-      "category": "Dyspnea",
-      "difficulty": "easy",
-      "title": "Acute wheeze and chest tightness",
-      "diagnosis": "Asthma exacerbation",
-      "cantMiss": false
-    },
-    {
-      "id": "dyspnea-06",
-      "file": "dyspnea-06.json",
-      "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Progressive breathlessness with weight loss",
-      "diagnosis": "Malignant pleural effusion",
-      "cantMiss": false
-    },
-    {
       "id": "abdo-01",
       "file": "abdo-01.json",
       "category": "Abdominal Pain",
@@ -186,6 +78,24 @@
       "difficulty": "hard",
       "title": "Severe pain out of proportion to exam",
       "diagnosis": "Acute mesenteric ischemia",
+      "cantMiss": true
+    },
+    {
+      "id": "abdo-07",
+      "file": "abdo-07.json",
+      "category": "Abdominal Pain",
+      "difficulty": "hard",
+      "title": "Sudden tearing belly and back pain with near-collapse",
+      "diagnosis": "Ruptured abdominal aortic aneurysm",
+      "cantMiss": true
+    },
+    {
+      "id": "abdo-08",
+      "file": "abdo-08.json",
+      "category": "Abdominal Pain",
+      "difficulty": "hard",
+      "title": "Abdominal pain, vomiting, and rapid breathing",
+      "diagnosis": "Diabetic ketoacidosis presenting as abdominal pain",
       "cantMiss": true
     },
     {
@@ -243,6 +153,420 @@
       "cantMiss": true
     },
     {
+      "id": "ams-07",
+      "file": "ams-07.json",
+      "category": "Altered Mental Status",
+      "difficulty": "hard",
+      "title": "Confusion and unsteadiness in a malnourished man",
+      "diagnosis": "Wernicke encephalopathy",
+      "cantMiss": true
+    },
+    {
+      "id": "ams-08",
+      "file": "ams-08.json",
+      "category": "Altered Mental Status",
+      "difficulty": "hard",
+      "title": "Agitation, sweating, and twitching after a medication change",
+      "diagnosis": "Serotonin syndrome",
+      "cantMiss": true
+    },
+    {
+      "id": "anemia-01",
+      "file": "anemia-01.json",
+      "category": "Anemia",
+      "difficulty": "easy",
+      "title": "Fatigue and pallor with heavy periods",
+      "diagnosis": "Iron deficiency anemia",
+      "cantMiss": false
+    },
+    {
+      "id": "anemia-02",
+      "file": "anemia-02.json",
+      "category": "Anemia",
+      "difficulty": "moderate",
+      "title": "Dizziness with black tarry stools",
+      "diagnosis": "Acute upper GI bleed",
+      "cantMiss": true
+    },
+    {
+      "id": "anemia-03",
+      "file": "anemia-03.json",
+      "category": "Anemia",
+      "difficulty": "moderate",
+      "title": "Fatigue with numbness and imbalance",
+      "diagnosis": "B12 deficiency",
+      "cantMiss": false
+    },
+    {
+      "id": "anemia-04",
+      "file": "anemia-04.json",
+      "category": "Anemia",
+      "difficulty": "moderate",
+      "title": "Chronic fatigue with a known inflammatory condition",
+      "diagnosis": "Anemia of chronic disease",
+      "cantMiss": false
+    },
+    {
+      "id": "anemia-05",
+      "file": "anemia-05.json",
+      "category": "Anemia",
+      "difficulty": "hard",
+      "title": "Fatigue, jaundice, and dark urine",
+      "diagnosis": "Autoimmune hemolytic anemia",
+      "cantMiss": false
+    },
+    {
+      "id": "anemia-06",
+      "file": "anemia-06.json",
+      "category": "Anemia",
+      "difficulty": "hard",
+      "title": "Confusion, bruising, and fatigue",
+      "diagnosis": "Thrombotic thrombocytopenic purpura (TTP)",
+      "cantMiss": true
+    },
+    {
+      "id": "anemia-07",
+      "file": "anemia-07.json",
+      "category": "Anemia",
+      "difficulty": "hard",
+      "title": "Sudden fatigue and dark urine after starting a new medication",
+      "diagnosis": "G6PD deficiency hemolysis",
+      "cantMiss": false
+    },
+    {
+      "id": "chestpain-01",
+      "file": "chestpain-01.json",
+      "category": "Chest Pain",
+      "difficulty": "moderate",
+      "title": "Exertional chest pressure with diaphoresis",
+      "diagnosis": "NSTEMI",
+      "cantMiss": true
+    },
+    {
+      "id": "chestpain-02",
+      "file": "chestpain-02.json",
+      "category": "Chest Pain",
+      "difficulty": "hard",
+      "title": "Pleuritic chest pain after a long flight",
+      "diagnosis": "Pulmonary embolism",
+      "cantMiss": true
+    },
+    {
+      "id": "chestpain-03",
+      "file": "chestpain-03.json",
+      "category": "Chest Pain",
+      "difficulty": "hard",
+      "title": "Sudden tearing chest pain to the back",
+      "diagnosis": "Aortic dissection",
+      "cantMiss": true
+    },
+    {
+      "id": "chestpain-04",
+      "file": "chestpain-04.json",
+      "category": "Chest Pain",
+      "difficulty": "moderate",
+      "title": "Sharp positional chest pain after a viral illness",
+      "diagnosis": "Acute pericarditis",
+      "cantMiss": false
+    },
+    {
+      "id": "chestpain-05",
+      "file": "chestpain-05.json",
+      "category": "Chest Pain",
+      "difficulty": "easy",
+      "title": "Burning chest discomfort after meals",
+      "diagnosis": "GERD",
+      "cantMiss": false
+    },
+    {
+      "id": "chestpain-06",
+      "file": "chestpain-06.json",
+      "category": "Chest Pain",
+      "difficulty": "easy",
+      "title": "Reproducible chest pain after lifting",
+      "diagnosis": "Costochondritis",
+      "cantMiss": false
+    },
+    {
+      "id": "chestpain-07",
+      "file": "chestpain-07.json",
+      "category": "Chest Pain",
+      "difficulty": "hard",
+      "title": "Progressive breathlessness and chest pressure with hypotension",
+      "diagnosis": "Cardiac tamponade",
+      "cantMiss": true
+    },
+    {
+      "id": "chestpain-08",
+      "file": "chestpain-08.json",
+      "category": "Chest Pain",
+      "difficulty": "hard",
+      "title": "Severe chest pain after violent vomiting",
+      "diagnosis": "Esophageal rupture (Boerhaave syndrome)",
+      "cantMiss": true
+    },
+    {
+      "id": "diarrhea-01",
+      "file": "diarrhea-01.json",
+      "category": "Diarrhea",
+      "difficulty": "easy",
+      "title": "Watery diarrhea after antibiotics",
+      "diagnosis": "C. difficile colitis",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-02",
+      "file": "diarrhea-02.json",
+      "category": "Diarrhea",
+      "difficulty": "easy",
+      "title": "Acute diarrhea after eating out",
+      "diagnosis": "Bacterial gastroenteritis",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-03",
+      "file": "diarrhea-03.json",
+      "category": "Diarrhea",
+      "difficulty": "moderate",
+      "title": "Bloody diarrhea in a young adult",
+      "diagnosis": "Ulcerative colitis flare",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-04",
+      "file": "diarrhea-04.json",
+      "category": "Diarrhea",
+      "difficulty": "moderate",
+      "title": "Chronic diarrhea with weight loss",
+      "diagnosis": "Celiac disease",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-05",
+      "file": "diarrhea-05.json",
+      "category": "Diarrhea",
+      "difficulty": "hard",
+      "title": "Bloody diarrhea with abdominal pain in an older adult",
+      "diagnosis": "Ischemic colitis",
+      "cantMiss": true
+    },
+    {
+      "id": "diarrhea-06",
+      "file": "diarrhea-06.json",
+      "category": "Diarrhea",
+      "difficulty": "moderate",
+      "title": "Two weeks of greasy, foul-smelling diarrhea and bloating",
+      "diagnosis": "Giardiasis",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-07",
+      "file": "diarrhea-07.json",
+      "category": "Diarrhea",
+      "difficulty": "hard",
+      "title": "Watery diarrhea with episodic flushing",
+      "diagnosis": "Carcinoid syndrome",
+      "cantMiss": false
+    },
+    {
+      "id": "dyspnea-01",
+      "file": "dyspnea-01.json",
+      "category": "Dyspnea",
+      "difficulty": "moderate",
+      "title": "Progressive dyspnea and leg swelling",
+      "diagnosis": "Acute decompensated heart failure (HFrEF)",
+      "cantMiss": false
+    },
+    {
+      "id": "dyspnea-02",
+      "file": "dyspnea-02.json",
+      "category": "Dyspnea",
+      "difficulty": "moderate",
+      "title": "Worsening cough and breathlessness in a smoker",
+      "diagnosis": "COPD exacerbation",
+      "cantMiss": false
+    },
+    {
+      "id": "dyspnea-03",
+      "file": "dyspnea-03.json",
+      "category": "Dyspnea",
+      "difficulty": "easy",
+      "title": "Fever, cough, and breathlessness",
+      "diagnosis": "Community-acquired pneumonia",
+      "cantMiss": false
+    },
+    {
+      "id": "dyspnea-04",
+      "file": "dyspnea-04.json",
+      "category": "Dyspnea",
+      "difficulty": "hard",
+      "title": "Sudden breathlessness post-op",
+      "diagnosis": "Pulmonary embolism",
+      "cantMiss": true
+    },
+    {
+      "id": "dyspnea-05",
+      "file": "dyspnea-05.json",
+      "category": "Dyspnea",
+      "difficulty": "easy",
+      "title": "Acute wheeze and chest tightness",
+      "diagnosis": "Asthma exacerbation",
+      "cantMiss": false
+    },
+    {
+      "id": "dyspnea-06",
+      "file": "dyspnea-06.json",
+      "category": "Dyspnea",
+      "difficulty": "moderate",
+      "title": "Progressive breathlessness with weight loss",
+      "diagnosis": "Malignant pleural effusion",
+      "cantMiss": false
+    },
+    {
+      "id": "dyspnea-07",
+      "file": "dyspnea-07.json",
+      "category": "Dyspnea",
+      "difficulty": "hard",
+      "title": "Sudden breathlessness, throat tightness, and a body rash",
+      "diagnosis": "Anaphylaxis",
+      "cantMiss": true
+    },
+    {
+      "id": "dyspnea-08",
+      "file": "dyspnea-08.json",
+      "category": "Dyspnea",
+      "difficulty": "hard",
+      "title": "Blue lips and breathlessness after a dental procedure",
+      "diagnosis": "Methemoglobinemia",
+      "cantMiss": true
+    },
+    {
+      "id": "fever-01",
+      "file": "fever-01.json",
+      "category": "Fever",
+      "difficulty": "easy",
+      "title": "Fever with flank pain and dysuria",
+      "diagnosis": "Pyelonephritis",
+      "cantMiss": false
+    },
+    {
+      "id": "fever-02",
+      "file": "fever-02.json",
+      "category": "Fever",
+      "difficulty": "easy",
+      "title": "Fever with a red, painful leg",
+      "diagnosis": "Cellulitis",
+      "cantMiss": false
+    },
+    {
+      "id": "fever-03",
+      "file": "fever-03.json",
+      "category": "Fever",
+      "difficulty": "hard",
+      "title": "Persistent fevers with a new murmur",
+      "diagnosis": "Infective endocarditis",
+      "cantMiss": true
+    },
+    {
+      "id": "fever-04",
+      "file": "fever-04.json",
+      "category": "Fever",
+      "difficulty": "easy",
+      "title": "Fever, productive cough, and pleuritic pain",
+      "diagnosis": "Community-acquired pneumonia",
+      "cantMiss": false
+    },
+    {
+      "id": "fever-05",
+      "file": "fever-05.json",
+      "category": "Fever",
+      "difficulty": "hard",
+      "title": "Fever, headache, and neck stiffness",
+      "diagnosis": "Bacterial meningitis",
+      "cantMiss": true
+    },
+    {
+      "id": "fever-06",
+      "file": "fever-06.json",
+      "category": "Fever",
+      "difficulty": "hard",
+      "title": "Fevers and chills after a trip abroad",
+      "diagnosis": "Malaria in a returning traveler",
+      "cantMiss": true
+    },
+    {
+      "id": "fever-07",
+      "file": "fever-07.json",
+      "category": "Fever",
+      "difficulty": "hard",
+      "title": "High fever, rash, and lightheadedness",
+      "diagnosis": "Toxic shock syndrome",
+      "cantMiss": true
+    },
+    {
+      "id": "liver-01",
+      "file": "liver-01.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "moderate",
+      "title": "Jaundice and fatigue after travel",
+      "diagnosis": "Acute viral hepatitis",
+      "cantMiss": false
+    },
+    {
+      "id": "liver-02",
+      "file": "liver-02.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "moderate",
+      "title": "Jaundice and RUQ tenderness with heavy drinking",
+      "diagnosis": "Alcoholic hepatitis",
+      "cantMiss": false
+    },
+    {
+      "id": "liver-03",
+      "file": "liver-03.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "hard",
+      "title": "Nausea and markedly elevated transaminases",
+      "diagnosis": "Acetaminophen-induced liver injury",
+      "cantMiss": true
+    },
+    {
+      "id": "liver-04",
+      "file": "liver-04.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "moderate",
+      "title": "Jaundice with RUQ pain and pale stools",
+      "diagnosis": "Choledocholithiasis",
+      "cantMiss": false
+    },
+    {
+      "id": "liver-05",
+      "file": "liver-05.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "easy",
+      "title": "Incidental mildly elevated liver enzymes",
+      "diagnosis": "NAFLD / NASH",
+      "cantMiss": false
+    },
+    {
+      "id": "liver-06",
+      "file": "liver-06.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "hard",
+      "title": "A young adult with worsening tremor and abnormal liver tests",
+      "diagnosis": "Wilson disease",
+      "cantMiss": false
+    },
+    {
+      "id": "liver-07",
+      "file": "liver-07.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "hard",
+      "title": "Abdominal swelling and right upper quadrant pain in a young woman",
+      "diagnosis": "Budd-Chiari syndrome",
+      "cantMiss": true
+    },
+    {
       "id": "syncope-01",
       "file": "syncope-01.json",
       "category": "Syncope",
@@ -297,184 +621,22 @@
       "cantMiss": false
     },
     {
-      "id": "anemia-01",
-      "file": "anemia-01.json",
-      "category": "Anemia",
-      "difficulty": "easy",
-      "title": "Fatigue and pallor with heavy periods",
-      "diagnosis": "Iron deficiency anemia",
-      "cantMiss": false
-    },
-    {
-      "id": "anemia-02",
-      "file": "anemia-02.json",
-      "category": "Anemia",
-      "difficulty": "moderate",
-      "title": "Dizziness with black tarry stools",
-      "diagnosis": "Acute upper GI bleed",
+      "id": "syncope-07",
+      "file": "syncope-07.json",
+      "category": "Syncope",
+      "difficulty": "hard",
+      "title": "Collapse during a startling alarm",
+      "diagnosis": "Long QT syndrome with torsades de pointes",
       "cantMiss": true
     },
     {
-      "id": "anemia-03",
-      "file": "anemia-03.json",
-      "category": "Anemia",
-      "difficulty": "moderate",
-      "title": "Fatigue with numbness and imbalance",
-      "diagnosis": "B12 deficiency",
-      "cantMiss": false
-    },
-    {
-      "id": "anemia-04",
-      "file": "anemia-04.json",
-      "category": "Anemia",
-      "difficulty": "moderate",
-      "title": "Chronic fatigue with a known inflammatory condition",
-      "diagnosis": "Anemia of chronic disease",
-      "cantMiss": false
-    },
-    {
-      "id": "anemia-05",
-      "file": "anemia-05.json",
-      "category": "Anemia",
+      "id": "syncope-08",
+      "file": "syncope-08.json",
+      "category": "Syncope",
       "difficulty": "hard",
-      "title": "Fatigue, jaundice, and dark urine",
-      "diagnosis": "Autoimmune hemolytic anemia",
-      "cantMiss": false
-    },
-    {
-      "id": "diarrhea-01",
-      "file": "diarrhea-01.json",
-      "category": "Diarrhea",
-      "difficulty": "easy",
-      "title": "Watery diarrhea after antibiotics",
-      "diagnosis": "C. difficile colitis",
-      "cantMiss": false
-    },
-    {
-      "id": "diarrhea-02",
-      "file": "diarrhea-02.json",
-      "category": "Diarrhea",
-      "difficulty": "easy",
-      "title": "Acute diarrhea after eating out",
-      "diagnosis": "Bacterial gastroenteritis",
-      "cantMiss": false
-    },
-    {
-      "id": "diarrhea-03",
-      "file": "diarrhea-03.json",
-      "category": "Diarrhea",
-      "difficulty": "moderate",
-      "title": "Bloody diarrhea in a young adult",
-      "diagnosis": "Ulcerative colitis flare",
-      "cantMiss": false
-    },
-    {
-      "id": "diarrhea-04",
-      "file": "diarrhea-04.json",
-      "category": "Diarrhea",
-      "difficulty": "moderate",
-      "title": "Chronic diarrhea with weight loss",
-      "diagnosis": "Celiac disease",
-      "cantMiss": false
-    },
-    {
-      "id": "diarrhea-05",
-      "file": "diarrhea-05.json",
-      "category": "Diarrhea",
-      "difficulty": "hard",
-      "title": "Bloody diarrhea with abdominal pain in an older adult",
-      "diagnosis": "Ischemic colitis",
+      "title": "Collapse during basketball in a young athlete",
+      "diagnosis": "Hypertrophic obstructive cardiomyopathy",
       "cantMiss": true
-    },
-    {
-      "id": "fever-01",
-      "file": "fever-01.json",
-      "category": "Fever",
-      "difficulty": "easy",
-      "title": "Fever with flank pain and dysuria",
-      "diagnosis": "Pyelonephritis",
-      "cantMiss": false
-    },
-    {
-      "id": "fever-02",
-      "file": "fever-02.json",
-      "category": "Fever",
-      "difficulty": "easy",
-      "title": "Fever with a red, painful leg",
-      "diagnosis": "Cellulitis",
-      "cantMiss": false
-    },
-    {
-      "id": "fever-03",
-      "file": "fever-03.json",
-      "category": "Fever",
-      "difficulty": "hard",
-      "title": "Persistent fevers with a new murmur",
-      "diagnosis": "Infective endocarditis",
-      "cantMiss": true
-    },
-    {
-      "id": "fever-04",
-      "file": "fever-04.json",
-      "category": "Fever",
-      "difficulty": "easy",
-      "title": "Fever, productive cough, and pleuritic pain",
-      "diagnosis": "Community-acquired pneumonia",
-      "cantMiss": false
-    },
-    {
-      "id": "fever-05",
-      "file": "fever-05.json",
-      "category": "Fever",
-      "difficulty": "hard",
-      "title": "Fever, headache, and neck stiffness",
-      "diagnosis": "Bacterial meningitis",
-      "cantMiss": true
-    },
-    {
-      "id": "liver-01",
-      "file": "liver-01.json",
-      "category": "Abnormal Liver Enzymes",
-      "difficulty": "moderate",
-      "title": "Jaundice and fatigue after travel",
-      "diagnosis": "Acute viral hepatitis",
-      "cantMiss": false
-    },
-    {
-      "id": "liver-02",
-      "file": "liver-02.json",
-      "category": "Abnormal Liver Enzymes",
-      "difficulty": "moderate",
-      "title": "Jaundice and RUQ tenderness with heavy drinking",
-      "diagnosis": "Alcoholic hepatitis",
-      "cantMiss": false
-    },
-    {
-      "id": "liver-03",
-      "file": "liver-03.json",
-      "category": "Abnormal Liver Enzymes",
-      "difficulty": "hard",
-      "title": "Nausea and markedly elevated transaminases",
-      "diagnosis": "Acetaminophen-induced liver injury",
-      "cantMiss": true
-    },
-    {
-      "id": "liver-04",
-      "file": "liver-04.json",
-      "category": "Abnormal Liver Enzymes",
-      "difficulty": "moderate",
-      "title": "Jaundice with RUQ pain and pale stools",
-      "diagnosis": "Choledocholithiasis",
-      "cantMiss": false
-    },
-    {
-      "id": "liver-05",
-      "file": "liver-05.json",
-      "category": "Abnormal Liver Enzymes",
-      "difficulty": "easy",
-      "title": "Incidental mildly elevated liver enzymes",
-      "diagnosis": "NAFLD / NASH",
-      "cantMiss": false
     }
   ],
   "upgradeNote": "2.1 adds a pathology-forward image-interpretation curriculum (every EKG/CXR now carries a teaching abnormality, presented as a standalone read), per-image asset sourcing blocks, and backfilled communicationScoring. Fully backward compatible with 2.0 consumers."

@@ -1,0 +1,685 @@
+{
+  "id": "anemia-07",
+  "category": "Anemia",
+  "difficulty": "hard",
+  "title": "Sudden fatigue and dark urine after starting a new medication",
+  "diagnosis": "G6PD deficiency hemolysis",
+  "chart": {
+    "ageSex": "28M",
+    "cc": "Tiredness and very dark urine",
+    "oneLiner": "28M of Mediterranean descent presents with two days of fatigue, jaundice, and dark (cola-colored) urine that began shortly after starting a new antibiotic for a urinary tract infection.",
+    "vitals": {
+      "BP": "122/74",
+      "HR": "108",
+      "RR": "18",
+      "Temp": "37.2°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've felt wiped out and short of breath for a couple of days, my eyes look a bit yellow, and my urine has turned almost like cola.",
+  "patientFile": "PERSONA: 28-year-old man of Mediterranean (Greek) descent, mildly jaundiced and tired-appearing. Cooperative, mildly anxious about the dark urine.\n\nHPI: Acute onset over 48 hours of fatigue, dyspnea on exertion, and lightheadedness. Noticed scleral yellowing and dark cola-colored urine. Symptoms started two to three days after beginning a new antibiotic for a urinary tract infection (only volunteer the antibiotic if asked about recent medications/new drugs). Mild back/flank discomfort with the dark urine. NO frank red blood in urine, NO dysuria now, NO black/bloody stools, NO trauma. Reports a similar but milder episode years ago after eating fava beans, which he otherwise avoids (only if asked about prior episodes or diet/food triggers).\nPMH: otherwise healthy; episode of neonatal jaundice per his mother (only if asked). A maternal uncle has 'a blood problem with certain drugs' (family history, only if asked). MEDS: recently started antibiotic for UTI — when asked, identify it as a sulfa antibiotic (trimethoprim-sulfamethoxazole). No regular medications. ALLERGIES: none known. SOCIAL: occasional alcohol; non-smoker; no IV drugs; recently ate at a relative's home (fava beans served — only if asked about diet).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired-appearing, mildly jaundiced, not in distress.\n- Vitals: BP 122/74, HR 108, RR 18, 37.2°C, SpO2 99% RA.\n- HEENT: scleral icterus; conjunctival pallor.\n- Abdomen: soft; spleen tip only minimally palpable / generally not enlarged; no marked tenderness.\n- Cardiac: tachycardic, regular, soft systolic flow murmur. No petechiae/purpura; no focal neuro deficit.\n- Skin: no petechiae, no purpura, no rash.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the new antibiotic, the fava bean exposure, the neonatal jaundice, or the family history unless asked about recent medications, diet/food, prior episodes, or family history respectively.\n- The spleen finding is revealed only if the abdomen/spleen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 8.4, MCV 88 (normocytic), WBC normal, Plt 265 (NORMAL platelets — important to exclude TTP/HUS).",
+      "Reticulocyte": "Elevated reticulocyte count (appropriate marrow response to hemolysis).",
+      "Smear": "Bite cells and blister cells; with supravital stain Heinz bodies present; NO schistocytes (argues against microangiopathy); polychromasia.",
+      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW, plasma/urine free hemoglobin present — an intravascular hemolytic pattern.",
+      "Coombs": "Direct antiglobulin (Coombs) test NEGATIVE — argues against autoimmune hemolysis.",
+      "G6PD": "G6PD enzyme activity LOW once the acute episode/reticulocytosis settles (may be falsely normal during the acute crisis because young reticulocytes are enzyme-replete — repeat in 2–3 months)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with no acute ischemic changes (compensatory response to anemia).",
+      "verify": "Source a study matching: sinus tachycardia with no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia, otherwise unremarkable",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12 lead normal"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "No acute cardiopulmonary process; clear lungs with normal cardiac silhouette.",
+      "verify": "Source a study matching: normal chest radiograph with no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal chest radiograph, clear lungs",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph clear lungs"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Reticulocyte",
+    "Smear",
+    "Hemolysis",
+    "Coombs",
+    "G6PD",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Smear",
+    "Coombs",
+    "G6PD"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this acute anemia (note your leading diagnosis).",
+      "rubric": "Acute hemolytic anemia — oxidative/drug- or food-triggered (G6PD deficiency) (leading,7). Microangiopathic hemolysis — TTP/HUS (CANT-MISS to exclude,5). Autoimmune hemolytic anemia (core,3). Drug-induced hemolysis (other mechanisms) (core,3). Hemoglobinuria from other causes (e.g., rhabdomyolysis, transfusion) (core,2). Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS (core,5).",
+      "idealAnswer": "Leading diagnosis: Acute hemolytic anemia from oxidative stress (G6PD deficiency) triggered by a new drug/fava beans. Must-not-miss diagnoses to exclude: Microangiopathic hemolysis — TTP/HUS. Also reasonable: Autoimmune hemolytic anemia; Drug-induced hemolysis by other mechanisms; Other causes of hemoglobinuria.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute hemolytic anemia — oxidative/drug- or food-triggered (G6PD deficiency)",
+            "points": 7
+          },
+          {
+            "item": "Microangiopathic hemolysis — TTP/HUS",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Autoimmune hemolytic anemia",
+            "points": 3
+          },
+          {
+            "item": "Drug-induced hemolysis (other mechanisms)",
+            "points": 3
+          },
+          {
+            "item": "Hemoglobinuria from other causes (rhabdomyolysis, transfusion reaction)",
+            "points": 2
+          },
+          {
+            "item": "Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Microangiopathic hemolysis — TTP/HUS"
+      ],
+      "acceptableAlternatives": [
+        "Autoimmune hemolytic anemia",
+        "Drug-induced hemolysis (other mechanisms)",
+        "Hemoglobinuria from other causes (rhabdomyolysis, transfusion reaction)"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, urine hemoglobin (2). Direct antiglobulin (Coombs) test — expected NEGATIVE (CANT-MISS,3). G6PD enzyme assay (confirmatory, repeat after acute episode) plus renal function/platelets to exclude TTP/HUS (3). PENALTY: relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis (-2).",
+      "idealAnswer": "Order: CBC + reticulocyte count; Peripheral smear — bite/blister cells and Heinz bodies vs schistocytes; Direct antiglobulin (Coombs) test; G6PD enzyme assay (with awareness it can be falsely normal during the acute episode and should be repeated in 2–3 months).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC + reticulocyte count",
+            "points": 3
+          },
+          {
+            "item": "Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes",
+            "points": 4
+          },
+          {
+            "item": "Direct antiglobulin (Coombs) test",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "G6PD enzyme assay (repeat after acute episode) plus platelets/renal function to exclude TTP/HUS",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC + reticulocyte count",
+        "Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes",
+        "Direct antiglobulin (Coombs) test"
+      ],
+      "optionalTests": [
+        "G6PD enzyme assay (repeat after acute episode) plus platelets/renal function to exclude TTP/HUS"
+      ],
+      "contraindicatedTests": [
+        "relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis"
+      ],
+      "orderSensitiveActions": [
+        "relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia from anemia) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "no acute ischemic ST/T changes (compensatory for anemia)"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia; no acute ischemic changes."
+      ],
+      "commonMistakes": [
+        "over-calling ischemia from rate-related ST/T changes"
+      ],
+      "idealAnswer": "Sinus tachycardia with no acute ischemic changes — a compensatory response to anemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia; no acute ischemic changes."
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "no acute ischemic ST/T changes (compensatory for anemia)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls ischemia / misreads the tracing",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it helps exclude an alternate cause of dyspnea (pneumonia, effusion) (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal chest film",
+        "notes it excludes pneumonia/effusion as a cause of dyspnea"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate or effusion that is not present"
+      ],
+      "idealAnswer": "No acute cardiopulmonary process; clear lungs and normal cardiac silhouette, excluding pneumonia or effusion as the cause of dyspnea.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "No acute cardiopulmonary process."
+        ],
+        "coreActions": [
+          "identifies a normal chest film",
+          "notes it excludes pneumonia/effusion as a cause of dyspnea"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents pathology / misreads the film",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, bite cells and Heinz bodies, NO schistocytes, normal platelets, a NEGATIVE Coombs, and a recent oxidant drug/fava bean exposure. What is your diagnosis and what did you rule out?",
+      "rubric": "G6PD deficiency with acute oxidative hemolysis (6). Cites bite cells/Heinz bodies with a NEGATIVE DAT and an oxidant trigger; explicitly rules out TTP/HUS via the absence of schistocytes, normal platelets, and normal renal function, and rules out autoimmune hemolysis via the negative Coombs (4).",
+      "idealAnswer": "G6PD deficiency causing acute oxidative (drug/fava-bean triggered) hemolysis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Microangiopathic hemolysis — TTP/HUS"
+      ],
+      "acceptableAlternatives": [
+        "Autoimmune hemolytic anemia",
+        "Drug-induced hemolysis (other mechanisms)"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH hemolytic anemia: immediately STOP/avoid the offending oxidant drug and counsel on triggers (CANT-MISS,7); supportive care with hydration to protect kidneys from hemoglobinuria and monitor Hgb/renal function (4); transfuse if symptomatic/severe anemia (4); folate supplementation (3); patient education + provide an avoid-list of oxidant drugs/foods and screen family (3); hematology consult, confirm with repeat G6PD assay after recovery (2). PENALTY: continuing or re-prescribing the oxidant drug or giving another oxidant (e.g., nitrofurantoin, dapsone, rasburicase, primaquine) (-3); reflexively starting steroids as if this were autoimmune hemolysis (-1).",
+      "idealAnswer": "G6PD oxidative hemolysis: immediately discontinue and avoid the offending oxidant drug (here a sulfa antibiotic) and remove other triggers (fava beans, naphthalene). Supportive care: IV hydration to maintain urine output and protect against hemoglobinuria-related renal injury; serial Hgb and renal monitoring. Transfuse packed red cells if anemia is severe or symptomatic. Folate supplementation. Patient education with a written list of oxidant drugs/foods to avoid, and consider screening at-risk family members. Hematology consult; confirm with a repeat G6PD enzyme assay 2–3 months after the acute episode (it can be falsely normal during reticulocytosis). Most episodes are self-limited as older RBCs are cleared.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Stop/avoid the offending oxidant drug and counsel on triggers",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Supportive care — hydration to protect kidneys, monitor Hgb/renal function",
+            "points": 4
+          },
+          {
+            "item": "Transfuse if anemia severe/symptomatic",
+            "points": 4
+          },
+          {
+            "item": "Folate supplementation",
+            "points": 3
+          },
+          {
+            "item": "Patient education with oxidant avoid-list; screen at-risk family",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Hematology consult; confirm with repeat G6PD assay after recovery",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Continuing or re-prescribing the oxidant drug / giving another oxidant",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Stop/avoid the offending oxidant drug and counsel on triggers"
+      ],
+      "optionalActions": [
+        "Supportive care — hydration to protect kidneys, monitor Hgb/renal function",
+        "Transfuse if anemia severe/symptomatic",
+        "Folate supplementation",
+        "Patient education with oxidant avoid-list; screen at-risk family",
+        "Hematology consult; confirm with repeat G6PD assay after recovery"
+      ],
+      "unsafeActions": [
+        "Continuing or re-prescribing the oxidant drug / giving another oxidant"
+      ],
+      "consults": [
+        "Hematology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancytopenia & Anemia (Hemolytic Anemia — G6PD Deficiency)",
+        "page": 138
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "jaundiced",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "28-year-old man of Mediterranean descent, mildly jaundiced and tired. Cooperative, mildly anxious about the dark urine.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "new_medication",
+      "category": "meds",
+      "triggerConcepts": [
+        "any new medications",
+        "did you start a new drug",
+        "new prescription",
+        "antibiotic",
+        "recently started a medication"
+      ],
+      "response": "Yes — I just started an antibiotic a couple of days ago for a bladder infection. I think it was a sulfa one.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "food_triggers",
+      "category": "hpi",
+      "triggerConcepts": [
+        "any unusual foods",
+        "did you eat fava beans",
+        "beans",
+        "diet",
+        "what have you eaten recently"
+      ],
+      "response": "Now that you mention it, I had some fava beans at a relative's house a few days ago. I usually steer clear of them.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time",
+        "ever had dark urine before"
+      ],
+      "response": "Something like this happened once years ago, milder, after I ate those beans. It went away on its own.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family_history",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "relatives with blood problems",
+        "inherited condition"
+      ],
+      "response": "An uncle on my mom's side has some kind of blood problem with certain drugs. My mom said I was yellow as a newborn.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "urine_character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe your urine",
+        "what color is your urine",
+        "blood in urine",
+        "dark urine"
+      ],
+      "response": "It's dark, almost like cola or strong tea. I don't see actual red blood in it, and it doesn't burn anymore.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "It came on fast — over the last two days, right after I started the antibiotic.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "shortness of breath"
+      ],
+      "response": "I'm short of breath when I move around and a bit lightheaded. Some dull ache in my back. No chest pain.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "bleeding_history",
+      "category": "ros",
+      "triggerConcepts": [
+        "any bleeding",
+        "blood in stool",
+        "black stools",
+        "bruising",
+        "nosebleeds"
+      ],
+      "response": "No, I haven't had any black or bloody stools, no nosebleeds, and I'm not bruising.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "infection_neuro_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "fevers",
+        "confusion",
+        "neurological symptoms",
+        "headache",
+        "diarrhea"
+      ],
+      "response": "No real fevers, no confusion, no bad headaches, and no diarrhea.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "Just the occasional drink, nothing heavy.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_sclera_finding_1",
+      "finding": "HEENT: scleral icterus; conjunctival pallor.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Sclerae anicteric."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_2",
+      "finding": "HEENT: conjunctival pallor consistent with anemia.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Conjunctivae pink, no pallor."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_3",
+      "finding": "Cardiac: tachycardic, regular, soft systolic flow murmur. No focal neuro deficit.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate and rhythm, no murmur."
+    },
+    {
+      "id": "assess_for_petechiae_finding_4",
+      "finding": "Skin: no petechiae, no purpura, no rash (pertinent negative against TTP/HUS).",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No petechiae or purpura."
+    },
+    {
+      "id": "assess_splenomegaly_finding_5",
+      "finding": "Abdomen: soft; spleen tip only minimally palpable / generally not enlarged; no marked tenderness.",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Spleen not palpable."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "G6PD deficiency hemolysis",
+    "diagnosticFramework": "28M of Mediterranean descent presents with two days of fatigue, jaundice, and cola-colored urine after starting a new oxidant drug. The diagnosis is G6PD deficiency with acute oxidative hemolysis, reached by eliciting the trigger history, performing the targeted exam, and interpreting the directed workup (bite cells/Heinz bodies, negative Coombs, hemolytic markers) while excluding the must-not-miss alternative TTP/HUS.",
+    "keyHistoryClues": [
+      "Recent new oxidant drug (sulfa antibiotic) two to three days before symptoms",
+      "Fava bean ingestion and prior milder self-limited episode",
+      "Mediterranean ancestry, neonatal jaundice, and X-linked family history",
+      "Cola-colored urine without frank hematuria (intravascular hemolysis/hemoglobinuria)"
+    ],
+    "keyPhysicalExamFindings": [
+      "HEENT: scleral icterus; conjunctival pallor.",
+      "HEENT: conjunctival pallor consistent with anemia.",
+      "Cardiac: tachycardic, regular, soft systolic flow murmur. No focal neuro deficit.",
+      "Skin: no petechiae, no purpura, no rash (pertinent negative against TTP/HUS).",
+      "Abdomen: soft; spleen tip only minimally palpable / generally not enlarged; no marked tenderness."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Reticulocyte",
+      "Smear",
+      "Hemolysis",
+      "Coombs",
+      "G6PD"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, drawing out the oxidant drug/fava bean trigger, ancestry, and family history only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal jaundice, pallor, and the pertinent-negative absence of petechiae/purpura.",
+      "Build a differential led by G6PD oxidative hemolysis while explicitly excluding must-not-miss TTP/HUS.",
+      "Order a focused workup (CBC + retic, smear for bite cells/Heinz bodies, Coombs, G6PD assay) and interpret EKG/CXR and labs, recognizing G6PD can be falsely normal during the crisis.",
+      "Commit to G6PD deficiency hemolysis and manage by stopping the trigger, supportive hydration, selective transfusion, education, and hematology follow-up."
+    ],
+    "commonPitfalls": [
+      "Continuing or re-prescribing the oxidant drug / giving another oxidant",
+      "Relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis",
+      "Reflexively starting steroids as if this were autoimmune hemolysis"
+    ],
+    "managementPearls": [
+      "Stop/avoid the offending oxidant drug and counsel on triggers",
+      "Supportive hydration protects against hemoglobinuria-related renal injury",
+      "Repeat the G6PD assay 2–3 months after recovery to confirm"
+    ],
+    "criticalHistoryItems": [
+      "new_medication",
+      "food_triggers"
+    ],
+    "criticalExamItems": [
+      "assess_for_petechiae"
+    ],
+    "criticalWorkupItems": [
+      "CBC + reticulocyte count",
+      "Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes",
+      "Direct antiglobulin (Coombs) test"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute cardiopulmonary process (excludes pneumonia/effusion as a cause of dyspnea)."
+    ],
+    "criticalManagementItems": [
+      "Stop/avoid the offending oxidant drug and counsel on triggers"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute cardiopulmonary process."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute cardiopulmonary process."
+    ],
+    "imageInterpretationPearls": [
+      "A near-normal study is an interpretation task in its own right — name what is and is not present, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

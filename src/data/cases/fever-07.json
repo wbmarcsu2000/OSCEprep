@@ -1,0 +1,702 @@
+{
+  "id": "fever-07",
+  "category": "Fever",
+  "difficulty": "hard",
+  "title": "High fever, rash, and lightheadedness",
+  "diagnosis": "Toxic shock syndrome",
+  "chart": {
+    "ageSex": "23F",
+    "cc": "Fever, diffuse rash, and feeling faint",
+    "oneLiner": "23F presents with about a day of high fever, a diffuse sunburn-like rash, vomiting/diarrhea, myalgias, and lightheadedness, now hypotensive.",
+    "vitals": {
+      "BP": "82/48",
+      "HR": "126",
+      "RR": "24",
+      "Temp": "39.6°C",
+      "SpO2": "96% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I spiked a high fever last night, my whole body looks like a sunburn, and I keep feeling like I'm going to pass out.",
+  "patientFile": "PERSONA: 23-year-old woman, ill-appearing, flushed, and lightheaded. Cooperative but feels awful and is a little dazed.\n\nHPI: About 24 hours of abrupt high fever and chills, diffuse muscle aches, headache, sore throat, vomiting and watery diarrhea, and worsening lightheadedness/near-syncope when she stands. Noticed a red 'sunburn' rash spreading over her trunk and limbs today. She has been menstruating and has been using high-absorbency tampons, leaving the last one in much longer than usual (only if asked about menstruation/tampon use/recent gynecologic history). NO recent travel, NO tick exposure, NO sick contacts, NO new medications/antibiotics (argues against a drug reaction), NO neck stiffness or photophobia (only if asked). She has not yet noticed any peeling of the skin (desquamation typically comes 1–2 weeks later).\nPMH: healthy, no chronic illness. MEDS: combined oral contraceptive only; NO recent new drugs. ALLERGIES: none. SOCIAL: occasional alcohol, nonsmoker, in a monogamous relationship. GYN: regular menses, currently menstruating, uses tampons.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, flushed, diaphoretic, mildly confused/dazed but able to answer.\n- Vitals: BP 82/48, HR 126, RR 24, 39.6°C, SpO2 96% RA; appears hypotensive with a wide pulse and warm extremities (distributive/warm shock).\n- Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet.\n- HEENT: conjunctival injection (red eyes) without discharge; oropharyngeal hyperemia ('strawberry'-appearing red tongue/throat); mucous membranes dry.\n- Neuro: drowsy/mildly confused but no focal deficit; neck supple, NO meningismus.\n- Cardiac: tachycardic, regular, no murmur; warm, well-perfused extremities with brisk capillary refill despite hypotension.\n- Lungs: clear. Abdomen: soft, mildly diffusely tender, no peritoneal signs.\n- Pelvic (if performed): retained tampon in the vaginal vault with surrounding erythema/discharge; no abscess.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the tampon use / retained tampon unless asked about menstruation, tampon or sanitary-product use, recent gynecologic history, or a pelvic exam is performed.\n- The rash distribution (palms/soles), conjunctival injection, strawberry tongue, and warm-shock perfusion are revealed only if specifically examined.\n- Desquamation has NOT happened yet; if asked about skin peeling, say it has not peeled.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 18.5 with marked left shift (bandemia); Hgb normal; Plt 95 (mild thrombocytopenia).",
+      "BMP_Renal": "Cr 2.1 (acute kidney injury, baseline normal); BUN elevated; mild metabolic acidosis — supports multi-organ involvement.",
+      "LFTs_CK": "AST/ALT and total bilirubin elevated (>2x normal); CK elevated from myositis — multi-system involvement (a TSS criterion).",
+      "Lactate_Coags": "Lactate elevated (~3.5) consistent with shock; INR/PTT mildly prolonged, fibrinogen preserved (early; watch for DIC).",
+      "Cultures_Workup": "Blood cultures drawn (often NEGATIVE in staphylococcal TSS — toxin-mediated); vaginal/wound and throat cultures sent; urine HCG NEGATIVE; menstrual history positive for tampon use with a retained tampon found on pelvic exam.",
+      "Serologies": "Acute hepatitis panel, monospot, and Rocky Mountain spotted fever/leptospirosis serologies pending/negative — help exclude mimics."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia (~125) with no acute ischemic changes; nonspecific findings consistent with fever and distributive shock.",
+      "verify": "Source a study matching: Sinus tachycardia (~125) with no acute ischemic changes; nonspecific findings consistent with fever and distributive shock. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lungs without consolidation or effusion; an early study may be normal (watch for ARDS/pulmonary edema if shock progresses).",
+      "verify": "Source a study matching: Clear lungs without consolidation or effusion; an early study may be normal (watch for ARDS/pulmonary edema if shock progresses). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph with clear lungs",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "clear lungs radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP_Renal",
+    "LFTs_CK",
+    "Lactate_Coags",
+    "Cultures_Workup",
+    "Serologies",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BMP_Renal",
+    "Cultures_Workup",
+    "Lactate_Coags"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this febrile young woman with a diffuse rash and hypotension (note your leading diagnosis).",
+      "rubric": "Toxic shock syndrome (leading,7). Septic shock from another source / meningococcemia (CANT-MISS to exclude,5). Necrotizing soft-tissue infection / occult source (CANT-MISS,3). Rocky Mountain spotted fever or other tick-borne/severe rash-illness (core,2). Drug reaction (DRESS/SJS-TEN) (core,3). Other viral exanthem or scarlet fever (core,2). Names a toxin-mediated distributive shock and the imperative to find and remove the source (e.g., retained tampon) (core,3).",
+      "idealAnswer": "Leading diagnosis: Toxic shock syndrome. Must-not-miss diagnoses to exclude: Septic shock / meningococcemia; Necrotizing soft-tissue infection or other occult source. Also reasonable: Rocky Mountain spotted fever / tick-borne illness; Severe drug reaction (DRESS/SJS-TEN); Other viral exanthem or scarlet fever.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Toxic shock syndrome",
+            "points": 7
+          },
+          {
+            "item": "Septic shock / meningococcemia",
+            "points": 5
+          },
+          {
+            "item": "Necrotizing soft-tissue infection or occult source",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Rocky Mountain spotted fever / tick-borne illness",
+            "points": 2
+          },
+          {
+            "item": "Severe drug reaction (DRESS/SJS-TEN)",
+            "points": 3
+          },
+          {
+            "item": "Other viral exanthem or scarlet fever",
+            "points": 2
+          },
+          {
+            "item": "Names toxin-mediated distributive shock and the imperative to find and remove the source (e.g., retained tampon)",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Septic shock / meningococcemia",
+        "Necrotizing soft-tissue infection or occult source"
+      ],
+      "acceptableAlternatives": [
+        "Rocky Mountain spotted fever / tick-borne illness",
+        "Severe drug reaction (DRESS/SJS-TEN)",
+        "Other viral exanthem or scarlet fever"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC with differential and platelets (2). Comprehensive metabolic panel / renal and hepatic function (CANT-MISS — document multi-organ involvement,3). CK for myositis (2). Lactate and coagulation studies (CANT-MISS,3). Blood, vaginal/wound, and throat cultures plus urine HCG and source identification, including pelvic exam for a retained tampon (CANT-MISS,3). Serologies to exclude mimics (RMSF, hepatitis, monospot) (2). PENALTY: failing to look for and remove the source / not performing a pelvic exam in a menstruating woman (-3).",
+      "idealAnswer": "Order: CBC with differential; comprehensive metabolic panel (renal and hepatic function); CK; lactate and coagulation studies; blood cultures plus vaginal/wound and throat cultures and urine HCG; pelvic exam to find and remove a retained tampon; serologies to exclude mimics.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Comprehensive metabolic panel (renal and hepatic function)",
+            "points": 3
+          },
+          {
+            "item": "Lactate and coagulation studies",
+            "points": 3
+          },
+          {
+            "item": "Cultures plus source identification and pelvic exam for retained tampon",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "CBC with differential and platelets",
+            "points": 2
+          },
+          {
+            "item": "CK for myositis",
+            "points": 2
+          },
+          {
+            "item": "Serologies to exclude mimics",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Failing to identify/remove the source or not performing a pelvic exam in a menstruating woman",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Comprehensive metabolic panel (renal and hepatic function)",
+        "Lactate and coagulation studies",
+        "Cultures plus source identification and pelvic exam for retained tampon"
+      ],
+      "optionalTests": [
+        "CBC with differential and platelets",
+        "CK for myositis",
+        "Serologies to exclude mimics"
+      ],
+      "contraindicatedTests": [
+        "Failing to identify/remove the source or not performing a pelvic exam in a menstruating woman"
+      ],
+      "orderSensitiveActions": [
+        "Failing to identify/remove the source or not performing a pelvic exam in a menstruating woman"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); recognizes compensatory sinus tachycardia from fever/shock with no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia or missing the rate (-3).",
+      "keyFindings": [
+        "recognizes sinus tachycardia",
+        "systematic read confirming no acute ischemic change"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia (compensatory; no acute ischemia)."
+      ],
+      "commonMistakes": [
+        "over-reading nonspecific changes as ischemia",
+        "failing to attribute the tachycardia to fever/distributive shock"
+      ],
+      "idealAnswer": "Sinus tachycardia (~125) without acute ischemic changes; a compensatory response to fever and distributive shock.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia (compensatory; no acute ischemia)."
+        ],
+        "coreActions": [
+          "recognizes sinus tachycardia",
+          "systematic read confirming no acute ischemic change"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a clear/normal film (6); notes it screens for a pulmonary source and a baseline to watch for ARDS as shock evolves (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies clear lungs / no acute process",
+        "notes value as a baseline and to exclude a pulmonary source"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process (clear lungs)."
+      ],
+      "commonMistakes": [
+        "inventing consolidation or effusion on a normal film",
+        "failing to use it as a baseline for evolving ARDS"
+      ],
+      "idealAnswer": "Clear lungs with no consolidation or effusion; a normal baseline that also helps exclude a pulmonary source and to monitor for ARDS.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "No acute cardiopulmonary process (clear lungs)."
+        ],
+        "coreActions": [
+          "identifies clear lungs / no acute process",
+          "notes value as a baseline and to exclude a pulmonary source"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "High fever, hypotension, diffuse macular erythroderma involving palms/soles, mucosal hyperemia, vomiting/diarrhea, myalgias with high CK, AKI and transaminitis, thrombocytopenia, negative blood cultures, and a retained tampon. What is your diagnosis and what did you rule out?",
+      "rubric": "Toxic shock syndrome (menstrual, staphylococcal) (6). Cites the clinical criteria — fever, diffuse macular erythroderma, hypotension, and >=3 organ-system involvement with a likely toxin source (retained tampon) and negative blood cultures; explicitly excludes meningococcemia/other septic source, RMSF, and a severe drug reaction (4).",
+      "idealAnswer": "Toxic shock syndrome (staphylococcal, menstrual). ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Septic shock / meningococcemia",
+        "Necrotizing soft-tissue infection or occult source"
+      ],
+      "acceptableAlternatives": [
+        "Streptococcal toxic shock syndrome",
+        "Severe drug reaction (DRESS/SJS-TEN)"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH sepsis/TSS: aggressive IV fluid resuscitation with vasopressors (e.g., norepinephrine) for refractory shock (CANT-MISS,6); SOURCE CONTROL — remove the tampon/debride/drain the focus (CANT-MISS,6); empiric antibiotics combining an antistaphylococcal/antistreptococcal agent (vancomycin) WITH a protein-synthesis inhibitor to suppress toxin (clindamycin or linezolid) (CANT-MISS,6); consider IVIG for severe/refractory disease (3); ICU admission and monitoring for multi-organ failure/DIC (2); blood cultures before antibiotics if it does not delay therapy (2). PENALTY: failing to obtain source control (-3); giving a beta-lactam alone without a toxin-suppressing agent (-2).",
+      "idealAnswer": "Resuscitate: large-volume IV crystalloid and norepinephrine for fluid-refractory distributive shock; ICU admission. Achieve source control immediately — remove the retained tampon and debride/drain any infectious focus. Empiric antibiotics: vancomycin (cover MRSA/strep) PLUS clindamycin or linezolid to suppress toxin production (add a beta-lactam if streptococcal TSS). Consider IVIG in severe/refractory cases. Draw cultures before antibiotics if it does not delay care. Monitor and support for multi-organ failure and DIC. Counsel to avoid high-absorbency tampons.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Source control (remove tampon / debride or drain focus)",
+            "points": 6
+          },
+          {
+            "item": "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
+            "points": 6
+          },
+          {
+            "item": "Aggressive fluids and vasopressors for shock",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "ICU admission with monitoring for multi-organ failure/DIC",
+            "points": 2
+          },
+          {
+            "item": "Blood cultures before antibiotics if no delay",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "IVIG for severe/refractory disease",
+            "points": 3
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Failing to obtain source control",
+            "points": -3
+          },
+          {
+            "item": "Beta-lactam alone without a toxin-suppressing agent",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Source control (remove tampon / debride or drain focus)",
+        "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
+        "Aggressive fluids and vasopressors for shock"
+      ],
+      "optionalActions": [
+        "ICU admission with monitoring for multi-organ failure/DIC",
+        "Blood cultures before antibiotics if no delay",
+        "IVIG for severe/refractory disease"
+      ],
+      "unsafeActions": [
+        "Failing to obtain source control",
+        "Beta-lactam alone without a toxin-suppressing agent"
+      ],
+      "consults": [
+        "Infectious Disease",
+        "Critical Care",
+        "Gynecology"
+      ],
+      "disposition": "Admit to ICU",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Sepsis & Toxin-Mediated Syndromes (Toxic Shock Syndrome)",
+        "page": 118
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "ill-appearing",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "menstrual_tampon_use",
+      "sexual_history"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; feels unwell and is a little dazed",
+    "affect": "23-year-old woman, ill-appearing, flushed, and lightheaded. Cooperative but feels awful and mildly dazed.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "menstrual_tampon_use",
+      "category": "gyn_history",
+      "triggerConcepts": [
+        "are you on your period",
+        "menstruation",
+        "tampon",
+        "sanitary products",
+        "pads or tampons",
+        "menstrual",
+        "last period"
+      ],
+      "response": "Yes, I'm on my period right now. I've been using the super-absorbent tampons and I think I left the last one in way too long — I forgot about it for almost a day.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "sexual_history",
+      "category": "sexual_history",
+      "triggerConcepts": [
+        "are you sexually active",
+        "sexual history",
+        "partners",
+        "could you be pregnant",
+        "contraception"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "It came on really fast — the fever and feeling awful started last night, only about a day ago, and the rash showed up today.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "rash_character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the rash",
+        "what does the rash look like",
+        "rash",
+        "skin",
+        "peeling"
+      ],
+      "response": "My whole body looks like a bad sunburn — it's red all over, even my palms. It hasn't blistered or peeled.",
+      "importance": "important",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "vomiting or diarrhea",
+        "muscle aches"
+      ],
+      "response": "I've been throwing up and having watery diarrhea, my muscles ache all over, my head hurts, and my throat is sore. I keep feeling like I'll faint when I stand.",
+      "importance": "important",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "any new medicines",
+        "antibiotics",
+        "new drugs"
+      ],
+      "response": "I only take the birth control pill. I haven't started any new medicines or antibiotics.",
+      "importance": "important",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "exposures_travel",
+      "category": "ros",
+      "triggerConcepts": [
+        "recent travel",
+        "tick bites",
+        "outdoors or hiking",
+        "sick contacts",
+        "exposures"
+      ],
+      "response": "No travel, no hiking, no tick bites that I know of, and no one around me has been sick.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "meningismus_check",
+      "category": "ros",
+      "triggerConcepts": [
+        "stiff neck",
+        "neck stiffness",
+        "light hurts your eyes",
+        "photophobia",
+        "headache with neck"
+      ],
+      "response": "My head aches but my neck doesn't feel stiff and bright lights don't bother me especially.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "wounds or surgery"
+      ],
+      "response": "I'm generally healthy with no medical problems, no recent surgery, and no wounds.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_skin_finding_1",
+      "finding": "Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet.",
+      "revealedBy": [
+        "inspect_skin",
+        "inspect_palms_and_soles"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rash; skin warm and dry."
+    },
+    {
+      "id": "assess_for_petechiae_finding_2",
+      "finding": "Skin: NO petechiae and NO purpura (argues against meningococcemia/DIC-driven purpura).",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura"
+      ],
+      "importance": "critical",
+      "points": 4,
+      "normalIfNotPresent": "No petechiae or purpura."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_3",
+      "finding": "HEENT: bilateral conjunctival injection (red eyes) without discharge.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "important",
+      "points": 2,
+      "normalIfNotPresent": "Conjunctivae clear, no injection."
+    },
+    {
+      "id": "inspect_oropharynx_finding_4",
+      "finding": "HEENT: oropharyngeal hyperemia with a strawberry-appearing red tongue/throat; mucous membranes dry.",
+      "revealedBy": [
+        "inspect_oropharynx",
+        "assess_mucous_membranes"
+      ],
+      "importance": "important",
+      "points": 2,
+      "normalIfNotPresent": "Oropharynx clear, mucous membranes moist."
+    },
+    {
+      "id": "assess_neck_stiffness_finding_5",
+      "finding": "Neck supple with NO meningismus (helps argue against meningococcal meningitis).",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Neck supple, no meningismus."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Toxic shock syndrome",
+    "diagnosticFramework": "23F presents with about a day of high fever, a diffuse sunburn-like rash, vomiting/diarrhea, myalgias, and lightheadedness, now hypotensive. The diagnosis is Toxic shock syndrome, reached by eliciting the focused history (including menstrual/tampon use), performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "Abrupt high fever with diffuse macular sunburn-like rash and hypotension",
+      "Vomiting, diarrhea, myalgias, and mucosal symptoms (multi-system)",
+      "Menstrual tampon use with a retained, prolonged-dwell tampon",
+      "No new medications, no travel/tick exposure (argues against drug reaction and tick-borne illness)"
+    ],
+    "keyPhysicalExamFindings": [
+      "Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet.",
+      "Skin: NO petechiae and NO purpura (argues against meningococcemia/DIC-driven purpura).",
+      "HEENT: bilateral conjunctival injection (red eyes) without discharge.",
+      "HEENT: oropharyngeal hyperemia with a strawberry-appearing red tongue/throat; mucous membranes dry.",
+      "Neck supple with NO meningismus (helps argue against meningococcal meningitis)."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP_Renal",
+      "LFTs_CK",
+      "Lactate_Coags",
+      "Cultures_Workup",
+      "Serologies"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items (menstrual/tampon use, sexual history) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Toxic shock syndrome while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Toxic shock syndrome and manage with stabilization, source control, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Failing to obtain source control",
+      "Beta-lactam alone without a toxin-suppressing agent"
+    ],
+    "managementPearls": [
+      "Source control (remove tampon / debride or drain focus)",
+      "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
+      "Aggressive fluids and vasopressors for shock"
+    ],
+    "criticalHistoryItems": [
+      "menstrual_tampon_use"
+    ],
+    "criticalExamItems": [
+      "inspect_skin",
+      "assess_for_petechiae"
+    ],
+    "criticalWorkupItems": [
+      "Comprehensive metabolic panel (renal and hepatic function)",
+      "Lactate and coagulation studies",
+      "Cultures plus source identification and pelvic exam for retained tampon"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute process (clear baseline; watch for evolving ARDS)."
+    ],
+    "criticalManagementItems": [
+      "Source control (remove tampon / debride or drain focus)",
+      "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
+      "Aggressive fluids and vasopressors for shock"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia (compensatory; no acute ischemia).",
+      "No acute cardiopulmonary process (clear lungs)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia (compensatory; no acute ischemia).",
+      "No acute cardiopulmonary process (clear lungs)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental or near-normal study is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

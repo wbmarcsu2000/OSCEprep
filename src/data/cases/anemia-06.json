@@ -1,0 +1,684 @@
+{
+  "id": "anemia-06",
+  "category": "Anemia",
+  "difficulty": "hard",
+  "title": "Confusion, bruising, and fatigue",
+  "diagnosis": "Thrombotic thrombocytopenic purpura (TTP)",
+  "chart": {
+    "ageSex": "38F",
+    "cc": "Confusion and easy bruising",
+    "oneLiner": "38F brought in with a few days of bruising, fatigue, intermittent confusion, and a low-grade fever.",
+    "vitals": {
+      "BP": "138/84",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "38.1°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've been getting these bruises out of nowhere, I'm exhausted, and my family says I keep getting confused.",
+  "patientFile": "PERSONA: 38-year-old woman, pale and tired, intermittently slow to answer questions but rousable and oriented. Cooperative but mildly anxious.\n\nHPI: Over the past 3-4 days she has noticed scattered bruises and tiny red spots on her legs, worsening fatigue, and a couple of brief episodes of confusion and a bad headache that her partner noticed (only if asked about neurologic symptoms/confusion). Low-grade fevers at home. Urine is slightly darker but normal volume. NO black/bloody stools, NO recent bloody diarrhea, NO heavy menses this cycle, NO known liver disease, NOT pregnant (LMP 2 weeks ago, negative home test).\nPMH: none significant. MEDS: none regular; took some ibuprofen for the headache (if asked). No new prescription drugs, no quinine, no recent chemotherapy. SOCIAL: minimal alcohol, no IV drug use, no recent travel. FAMILY: no known bleeding or clotting disorders.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, mildly icteric, intermittently slow to answer but arousable and oriented x3.\n- Vitals: BP 138/84, HR 104, RR 18, 38.1°C, SpO2 98% RA.\n- Skin: scattered petechiae over the lower legs and a few ecchymoses on the arms.\n- HEENT: mild scleral icterus.\n- Neuro: fluctuating attention, no focal motor or sensory deficit, no neck stiffness.\n- Abdomen: soft, nontender, no splenomegaly.\n- Cardiac: tachycardic, regular, soft flow murmur.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the confusion/headache episodes unless asked about neurologic or mental symptoms.\n- Do NOT volunteer the ibuprofen unless asked about medications.\n- Petechiae/ecchymoses are revealed only if the skin is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 7.6, MCV 90, WBC normal, Plt 14 (SEVERE thrombocytopenia — important).",
+      "Smear": "Numerous schistocytes (helmet/fragmented RBCs) with polychromasia and low platelets — a microangiopathic picture.",
+      "Hemolysis": "LDH markedly HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW, reticulocytes elevated — a hemolytic pattern.",
+      "Coags": "PT, aPTT, fibrinogen and D-dimer essentially NORMAL (argues against DIC).",
+      "Coombs": "Direct antiglobulin (Coombs) test NEGATIVE (non-immune hemolysis — argues against AIHA/Evans).",
+      "ADAMTS13": "ADAMTS13 activity SEVERELY reduced (<10%) with an inhibitor present, and Cr only mildly elevated (1.2) — confirms acquired TTP rather than predominant renal HUS."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia.",
+      "verify": "Source a study matching: Sinus tachycardia with nonspecific ST-T changes; no acute ischemia. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with nonspecific ST-T changes",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "nonspecific ST-T changes ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lungs with a normal cardiomediastinal silhouette; no acute process.",
+      "verify": "Source a study matching: Clear lungs with a normal cardiomediastinal silhouette; no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Smear",
+    "Hemolysis",
+    "Coags",
+    "Coombs",
+    "ADAMTS13",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Smear",
+    "ADAMTS13",
+    "CBC"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this anemia with thrombocytopenia (note your leading diagnosis).",
+      "rubric": "Thrombotic thrombocytopenic purpura (TTP) (leading,7). Hemolytic uremic syndrome (HUS) (CANT-MISS to exclude,5). DIC (core,3). Autoimmune hemolytic anemia/Evans syndrome (core,3). Drug-induced thrombotic microangiopathy or HELLP/pregnancy-associated TMA (core,2). Recognizes MAHA + thrombocytopenia as a hematologic emergency requiring urgent schistocyte check and ADAMTS13 (core,5).",
+      "idealAnswer": "Leading diagnosis: Thrombotic thrombocytopenic purpura (TTP). Must-not-miss diagnoses to exclude: Hemolytic uremic syndrome (HUS). Also reasonable: DIC; Autoimmune hemolytic anemia/Evans syndrome; Drug-induced TMA or HELLP/pregnancy-associated TMA.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Thrombotic thrombocytopenic purpura (TTP)",
+            "points": 7
+          },
+          {
+            "item": "Hemolytic uremic syndrome (HUS)",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Disseminated intravascular coagulation (DIC)",
+            "points": 3
+          },
+          {
+            "item": "Autoimmune hemolytic anemia / Evans syndrome",
+            "points": 3
+          },
+          {
+            "item": "Drug-induced TMA or HELLP/pregnancy-associated TMA",
+            "points": 2
+          },
+          {
+            "item": "Recognizes MAHA + thrombocytopenia as an emergency requiring urgent schistocyte check and ADAMTS13",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Hemolytic uremic syndrome (HUS)"
+      ],
+      "acceptableAlternatives": [
+        "Disseminated intravascular coagulation (DIC)",
+        "Autoimmune hemolytic anemia / Evans syndrome",
+        "Drug-induced TMA or HELLP/pregnancy-associated TMA"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC with platelet count (CANT-MISS,3). Peripheral smear for schistocytes (CANT-MISS,4). ADAMTS13 activity and inhibitor BEFORE plasma exchange (CANT-MISS,3). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, reticulocytes (2). Coags (PT/aPTT/fibrinogen/D-dimer) and Coombs to exclude DIC/AIHA, plus renal function (1). Pregnancy test (1). PENALTY: transfusing platelets for the thrombocytopenia outside of life-threatening hemorrhage (can worsen microvascular thrombosis) (-3).",
+      "idealAnswer": "Order: CBC with platelet count; Peripheral smear for schistocytes; ADAMTS13 activity and inhibitor (draw before plasma exchange).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC with platelet count",
+            "points": 3
+          },
+          {
+            "item": "Peripheral smear for schistocytes",
+            "points": 4
+          },
+          {
+            "item": "ADAMTS13 activity and inhibitor before plasma exchange",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Hemolysis labs (LDH, haptoglobin, indirect bilirubin, reticulocytes)",
+            "points": 2
+          },
+          {
+            "item": "Coags and Coombs to exclude DIC/AIHA, plus renal function and pregnancy test",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "transfusing platelets outside of life-threatening hemorrhage (can worsen microvascular thrombosis)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC with platelet count",
+        "Peripheral smear for schistocytes",
+        "ADAMTS13 activity and inhibitor before plasma exchange"
+      ],
+      "optionalTests": [
+        "Hemolysis labs (LDH, haptoglobin, indirect bilirubin, reticulocytes)",
+        "Coags and Coombs to exclude DIC/AIHA, plus renal function and pregnancy test"
+      ],
+      "contraindicatedTests": [
+        "transfusing platelets outside of life-threatening hemorrhage (can worsen microvascular thrombosis)"
+      ],
+      "orderSensitiveActions": [
+        "transfusing platelets outside of life-threatening hemorrhage (can worsen microvascular thrombosis)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia with nonspecific ST-T changes, no acute ischemia. CREDIT: rate & rhythm (7); recognizes nonspecific ST-T changes without acute ischemia (compensatory tachycardia from anemia) (5); systematic read (3). PENALTY: over-calling ischemia/ACS (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "nonspecific ST-T changes without acute ischemia"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia."
+      ],
+      "commonMistakes": [
+        "over-calling the nonspecific ST-T changes as ischemia/ACS"
+      ],
+      "idealAnswer": "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia (compensatory tachycardia from anemia).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia."
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "nonspecific ST-T changes without acute ischemia"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls ischemia / invents acute changes",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it helps exclude an alternative cause of decompensation (e.g., infection, effusion) (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal/clear film",
+        "states pertinent negatives (no consolidation, effusion, or cardiomegaly)"
+      ],
+      "criticalFindings": [
+        "Clear lungs with a normal cardiomediastinal silhouette; no acute process."
+      ],
+      "commonMistakes": [
+        "inventing an effusion or infiltrate on a normal film"
+      ],
+      "idealAnswer": "Clear lungs with a normal cardiomediastinal silhouette; no acute process — helps exclude an alternative cause.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Clear lungs with a normal cardiomediastinal silhouette; no acute process."
+        ],
+        "coreActions": [
+          "identifies a normal/clear film",
+          "states pertinent negatives (no consolidation, effusion, or cardiomegaly)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study abnormal / invents pathology",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Severe thrombocytopenia (Plt 14), schistocytes on smear, high LDH and indirect bilirubin with low haptoglobin, NEGATIVE Coombs, NORMAL coags/fibrinogen, only mildly elevated creatinine, and ADAMTS13 activity <10% with an inhibitor. What is your diagnosis and what did you rule out?",
+      "rubric": "Acquired (immune) thrombotic thrombocytopenic purpura (TTP) (6). Cites MAHA + thrombocytopenia with severe ADAMTS13 deficiency; explicitly rules out DIC (normal coags/fibrinogen), AIHA/Evans (negative Coombs), and predominant HUS (only mild renal involvement) (4).",
+      "idealAnswer": "Acquired (immune) thrombotic thrombocytopenic purpura (TTP).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Hemolytic uremic syndrome (HUS)"
+      ],
+      "acceptableAlternatives": [
+        "Acquired (immune) TTP",
+        "Immune-mediated thrombotic microangiopathy"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH approach to thrombotic microangiopathy: URGENT therapeutic plasma exchange (PLEX) — do not wait for ADAMTS13 result (CANT-MISS,8); high-dose corticosteroids (5); add caplacizumab for confirmed/high-suspicion acquired TTP (3); rituximab for immune TTP (3); folate supplementation and supportive care (2); urgent hematology consult and admit to ICU/monitored bed (3). PENALTY: prophylactic platelet transfusion (may precipitate microvascular thrombosis) unless life-threatening hemorrhage (-3); delaying PLEX to await ADAMTS13 (-1).",
+      "idealAnswer": "Treat as TTP emergency: start URGENT therapeutic plasma exchange (PLEX) immediately (use plasma infusion if PLEX is delayed) — do not wait for the ADAMTS13 result. Add high-dose corticosteroids; caplacizumab and rituximab for acquired/immune TTP. Folate supplementation and supportive care. AVOID prophylactic platelet transfusions (may worsen thrombosis) unless life-threatening bleeding. Urgent hematology consult; admit to ICU/monitored bed.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Urgent therapeutic plasma exchange (PLEX)",
+            "points": 8
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "High-dose corticosteroids",
+            "points": 5
+          },
+          {
+            "item": "Caplacizumab for confirmed/high-suspicion acquired TTP",
+            "points": 3
+          },
+          {
+            "item": "Rituximab for immune TTP",
+            "points": 3
+          },
+          {
+            "item": "Urgent hematology consult and ICU/monitored admission",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Folate supplementation and supportive care",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Prophylactic platelet transfusion (may precipitate microvascular thrombosis)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Urgent therapeutic plasma exchange (PLEX)"
+      ],
+      "optionalActions": [
+        "High-dose corticosteroids",
+        "Caplacizumab for confirmed/high-suspicion acquired TTP",
+        "Rituximab for immune TTP",
+        "Urgent hematology consult and ICU/monitored admission",
+        "Folate supplementation and supportive care"
+      ],
+      "unsafeActions": [
+        "Prophylactic platelet transfusion (may precipitate microvascular thrombosis)"
+      ],
+      "consults": [
+        "Hematology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Thrombotic Microangiopathies (Thrombotic Thrombocytopenic Purpura)",
+        "page": 141
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "substance_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "38-year-old woman, pale and tired, intermittently slow to answer but oriented. Cooperative but mildly anxious.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "neuro_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "confusion",
+        "are you confused",
+        "headache",
+        "trouble thinking",
+        "neurologic symptoms",
+        "any weakness or numbness",
+        "vision changes",
+        "seizure"
+      ],
+      "response": "Now that you mention it, I've had a couple of moments where I felt really foggy and confused, and a bad headache. My partner says I wasn't making sense for a few minutes. No weakness, no trouble seeing, no seizures.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "bleeding_bruising",
+      "category": "hpi",
+      "triggerConcepts": [
+        "bruising",
+        "bleeding",
+        "easy bruising",
+        "bruises",
+        "blood spots",
+        "nosebleeds",
+        "gums bleeding"
+      ],
+      "response": "I keep getting bruises without bumping into anything, and there are little red spots on my lower legs. No nosebleeds, no blood in my stool or vomit.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "It all came on over the last three or four days and has been getting worse.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "fever",
+      "category": "ros",
+      "triggerConcepts": [
+        "fever",
+        "any fevers",
+        "chills",
+        "temperature",
+        "feeling hot"
+      ],
+      "response": "I've had some low-grade fevers at home, nothing too high.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "diarrhea",
+      "category": "ros",
+      "triggerConcepts": [
+        "diarrhea",
+        "bloody diarrhea",
+        "loose stools",
+        "stomach bug",
+        "gi illness",
+        "any recent diarrhea"
+      ],
+      "response": "No, I haven't had any diarrhea or a stomach bug, and definitely no bloody stools.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "any new medications",
+        "quinine",
+        "chemotherapy"
+      ],
+      "response": "I don't take anything regularly. I took a couple of ibuprofen for the headache. No new prescriptions, no quinine, no chemo.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pregnancy",
+      "category": "hpi",
+      "triggerConcepts": [
+        "pregnant",
+        "could you be pregnant",
+        "last menstrual period",
+        "lmp",
+        "missed period"
+      ],
+      "response": "I'm not pregnant — my period was about two weeks ago and I took a home test that was negative.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time",
+        "family history of clotting or bleeding"
+      ],
+      "response": "No, this has never happened before, and no one in my family has bleeding or clotting problems.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "iv drug use",
+        "recreational drugs"
+      ],
+      "response": "I barely drink, maybe a glass of wine a month, and I don't use any drugs.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_for_petechiae_finding_1",
+      "finding": "Skin: scattered petechiae over the lower legs and a few ecchymoses on the arms.",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No petechiae or purpura."
+    },
+    {
+      "id": "assess_mental_status_finding_2",
+      "finding": "Neuro: fluctuating attention, no focal motor or sensory deficit, no neck stiffness.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Alert and fully oriented; attention normal."
+    },
+    {
+      "id": "inspect_sclera_finding_3",
+      "finding": "HEENT: mild scleral icterus.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Sclerae anicteric."
+    },
+    {
+      "id": "assess_neck_stiffness_finding_4",
+      "finding": "Neuro: fluctuating attention, no focal motor or sensory deficit, no neck stiffness.",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Neck supple, no meningismus."
+    },
+    {
+      "id": "assess_splenomegaly_finding_5",
+      "finding": "Abdomen: soft, nontender, no splenomegaly.",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Spleen not palpable."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Thrombotic thrombocytopenic purpura (TTP)",
+    "diagnosticFramework": "38F presents with several days of bruising, fatigue, intermittent confusion, and low-grade fever. The diagnosis is Thrombotic thrombocytopenic purpura (TTP), reached by recognizing microangiopathic hemolytic anemia with severe thrombocytopenia, eliciting the focused history and targeted exam, and interpreting the directed workup (schistocytes, severe ADAMTS13 deficiency) while excluding the must-not-miss alternatives such as HUS and DIC.",
+    "keyHistoryClues": [
+      "Subacute bruising and petechiae with fatigue",
+      "Intermittent confusion and headache (neurologic involvement)",
+      "Low-grade fever without preceding bloody diarrhea (argues against typical HUS)",
+      "No new TMA-associated drug, not pregnant"
+    ],
+    "keyPhysicalExamFindings": [
+      "Skin: scattered petechiae over the lower legs and a few ecchymoses on the arms.",
+      "Neuro: fluctuating attention, no focal motor or sensory deficit, no neck stiffness.",
+      "HEENT: mild scleral icterus.",
+      "Abdomen: soft, nontender, no splenomegaly."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Smear",
+      "Hemolysis",
+      "Coags",
+      "Coombs",
+      "ADAMTS13"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including neurologic symptoms and sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal petechiae and the fluctuating mental status.",
+      "Build a differential led by TTP while explicitly excluding must-not-miss causes such as HUS and DIC.",
+      "Order a focused, order-sensitive workup (smear, ADAMTS13 before PLEX) and interpret EKG/CXR and labs.",
+      "Commit to TTP and manage with urgent plasma exchange, corticosteroids/caplacizumab/rituximab, consults, and ICU disposition."
+    ],
+    "commonPitfalls": [
+      "Prophylactic platelet transfusion (may precipitate microvascular thrombosis)",
+      "Delaying plasma exchange to await the ADAMTS13 result"
+    ],
+    "managementPearls": [
+      "Urgent therapeutic plasma exchange (PLEX)"
+    ],
+    "criticalHistoryItems": [
+      "neuro_symptoms",
+      "bleeding_bruising",
+      "diarrhea"
+    ],
+    "criticalExamItems": [
+      "assess_for_petechiae",
+      "assess_mental_status"
+    ],
+    "criticalWorkupItems": [
+      "CBC with platelet count",
+      "Peripheral smear for schistocytes",
+      "ADAMTS13 activity and inhibitor before plasma exchange"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia.",
+      "No acute process on chest film (helps exclude an alternative cause)."
+    ],
+    "criticalManagementItems": [
+      "Urgent therapeutic plasma exchange (PLEX)"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia.",
+      "Clear lungs with a normal cardiomediastinal silhouette; no acute process."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with nonspecific ST-T changes; no acute ischemia.",
+      "Clear lungs with a normal cardiomediastinal silhouette; no acute process."
+    ],
+    "imageInterpretationPearls": [
+      "A near-normal study is an interpretation task in its own right — commit to the read and state pertinent negatives.",
+      "Read every study systematically before committing.",
+      "Use the chest film to exclude an alternative cause of decompensation."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

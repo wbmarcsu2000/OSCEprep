@@ -1,0 +1,687 @@
+{
+  "id": "liver-07",
+  "category": "Abnormal Liver Enzymes",
+  "difficulty": "hard",
+  "title": "Abdominal swelling and right upper quadrant pain in a young woman",
+  "diagnosis": "Budd-Chiari syndrome",
+  "chart": {
+    "ageSex": "32F",
+    "cc": "Abdominal swelling and right upper quadrant pain",
+    "oneLiner": "32F on combined oral contraceptives presents with 3 weeks of progressive abdominal distension, right upper quadrant pain, and leg swelling.",
+    "vitals": {
+      "BP": "108/70",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "37.2°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My belly has been swelling up and aching on the right side for a few weeks, and now my legs are puffy too.",
+  "patientFile": "PERSONA: 32-year-old woman, uncomfortable from a distended abdomen, anxious about the swelling. Cooperative and a good historian once asked.\n\nHPI: 3 weeks of progressive abdominal distension with dull, constant right upper quadrant pain and early satiety. Legs have become swollen over the last week. Mild nausea; no vomiting. NO confusion at baseline (watch for encephalopathy). NO black/bloody stools or hematemesis (watch for variceal bleeding). She has had two early miscarriages in the past (only mentions if asked about pregnancy/obstetric history). She started a combined oral contraceptive pill about 8 months ago (only quantifies/mentions if asked about medications or contraception).\nPMH: two first-trimester pregnancy losses; otherwise healthy; NO known liver disease, NO prior clots that she knows of. FAMILY: a sister with blood clots in the legs and a brother with a \"thick blood\" disorder (only if asked about family history of clots). MEDS: combined oral contraceptive pill for 8 months (if asked). SOCIAL: minimal alcohol (a few drinks per month), no IV drugs, no tattoos, no high-risk exposures.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable at rest but visibly distended abdomen; mild scleral icterus.\n- Vitals: BP 108/70, HR 104, RR 18, 37.2°C, SpO2 98% RA.\n- Abdomen: tender, smooth hepatomegaly in the RUQ; tense ascites with shifting dullness and a fluid wave if examined; no splenomegaly appreciated.\n- Extremities: bilateral lower-extremity pitting edema.\n- Neuro: alert and oriented; NO asterixis if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the oral contraceptive use, the prior miscarriages, or the family history of clots unless asked about medications/contraception, obstetric history, or family clotting history respectively.\n- Ascites, hepatomegaly, and edema are revealed only if the relevant area is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "LFTs": "AST 180, ALT 165 (modest hepatocellular elevation); ALP and GGT mildly elevated; an acute ischemic-hepatitis pattern can also occur with rapid outflow obstruction.",
+      "Bilirubin": "Total bilirubin mildly-to-moderately elevated; albumin low-normal.",
+      "INR": "Mildly prolonged (early impaired synthetic function); platelets often normal or HIGH.",
+      "AscitesFluid": "Diagnostic paracentesis: SAAG HIGH (>=1.1 g/dL, portal hypertension) with a HIGH ascitic total protein (>2.5 g/dL) — pattern typical of post-sinusoidal/hepatic outflow obstruction.",
+      "DopplerUS": "Hepatic vein Doppler ultrasound: absent/reversed/turbulent flow in the hepatic veins with hepatic vein and/or IVC thrombosis, caudate lobe hypertrophy, and ascites — CONFIRMS hepatic venous outflow obstruction.",
+      "Thrombophilia": "JAK2 V617F mutation POSITIVE (occult myeloproliferative neoplasm); antiphospholipid antibodies sent — establishes the underlying prothrombotic cause."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~104 bpm with low QRS voltage in the limb leads from the large-volume ascites; no acute ischemic changes.",
+      "verify": "Source a study matching: Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with low limb-lead voltage",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "low voltage QRS limb leads ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Elevated hemidiaphragms with low lung volumes from abdominal distension and a small right pleural effusion (hepatic hydrothorax); no consolidation.",
+      "verify": "Source a study matching: Elevated hemidiaphragms with low lung volumes and a small right pleural effusion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph with elevated hemidiaphragms and small right pleural effusion",
+      "searchTerms": [
+        "small right pleural effusion chest x-ray",
+        "elevated hemidiaphragm low lung volumes radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "LFTs",
+    "Bilirubin",
+    "INR",
+    "AscitesFluid",
+    "DopplerUS",
+    "Thrombophilia",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "DopplerUS",
+    "AscitesFluid",
+    "Thrombophilia"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this new-onset ascites and hepatomegaly (note your leading diagnosis).",
+      "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction) (leading,7). Acute/fulminant viral or toxic hepatitis (CANT-MISS to exclude,4). Cirrhosis with decompensation / portal vein thrombosis (CANT-MISS,3). Right-heart failure / constrictive pericarditis (CANT-MISS,3). Malignancy with hepatic vein invasion (e.g., HCC) or peritoneal disease (core,3). Names hepatic venous outflow obstruction with the triad of abdominal pain, ascites, and tender hepatomegaly in a prothrombotic young woman (core,5).",
+      "idealAnswer": "Leading diagnosis: Budd-Chiari syndrome (hepatic venous outflow obstruction). Must-not-miss diagnoses to exclude: Acute/fulminant viral or toxic hepatitis; Cirrhosis with decompensation / portal vein thrombosis; Right-heart failure / constrictive pericarditis. Also reasonable: Malignancy with hepatic vein invasion (e.g., HCC) or peritoneal carcinomatosis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Budd-Chiari syndrome (hepatic venous outflow obstruction)",
+            "points": 7
+          },
+          {
+            "item": "Acute/fulminant viral or toxic hepatitis",
+            "points": 4
+          },
+          {
+            "item": "Cirrhosis with decompensation / portal vein thrombosis",
+            "points": 3
+          },
+          {
+            "item": "Right-heart failure / constrictive pericarditis",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis",
+            "points": 3
+          },
+          {
+            "item": "Names hepatic venous outflow obstruction with the triad of pain, ascites, and tender hepatomegaly in a prothrombotic young woman",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute/fulminant viral or toxic hepatitis",
+        "Cirrhosis with decompensation / portal vein thrombosis",
+        "Right-heart failure / constrictive pericarditis"
+      ],
+      "acceptableAlternatives": [
+        "Malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Hepatic vein/IVC Doppler ultrasound — first-line imaging for outflow obstruction (CANT-MISS,4). Diagnostic paracentesis with SAAG and ascitic protein (CANT-MISS,3). LFTs, bilirubin, INR/albumin — pattern and synthetic function (2). CBC and thrombophilia workup incl. JAK2 V617F and antiphospholipid antibodies (CANT-MISS,3). Viral hepatitis serologies / acetaminophen level to exclude other hepatocellular injury (2). Echocardiogram if right-heart failure suspected (1). PENALTY: anchoring on simple cirrhosis and not imaging the hepatic veins (-2).",
+      "idealAnswer": "Order: Hepatic vein/IVC Doppler ultrasound; Diagnostic paracentesis with SAAG and ascitic protein; Thrombophilia workup including JAK2 V617F.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Hepatic vein/IVC Doppler ultrasound",
+            "points": 4
+          },
+          {
+            "item": "Diagnostic paracentesis with SAAG and ascitic protein",
+            "points": 3
+          },
+          {
+            "item": "Thrombophilia workup including JAK2 V617F",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anchoring on simple cirrhosis and not imaging the hepatic veins",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Hepatic vein/IVC Doppler ultrasound",
+        "Diagnostic paracentesis with SAAG and ascitic protein",
+        "Thrombophilia workup including JAK2 V617F"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "anchoring on simple cirrhosis and not imaging the hepatic veins"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia with low limb-lead voltage from large-volume ascites; no acute ischemia. CREDIT: rate & rhythm (sinus tachycardia) (7); recognizes low voltage and attributes it to body habitus/effusion/ascites rather than cardiac pathology, and notes no acute ischemia (5); systematic read (3). PENALTY: over-calling ischemia or pericardial disease without correlation (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "low QRS voltage in the limb leads attributable to ascites/effusion"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes."
+      ],
+      "commonMistakes": [
+        "calling low voltage a primary cardiac/pericardial process without clinical correlation"
+      ],
+      "idealAnswer": "Sinus tachycardia with low QRS voltage in the limb leads (large-volume ascites/effusion); no acute ischemic changes.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes."
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "low QRS voltage in the limb leads attributable to ascites/effusion"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = elevated hemidiaphragms with low lung volumes and a small right pleural effusion (hepatic hydrothorax); no consolidation. CREDIT: identifies the small effusion / elevated hemidiaphragms (6); links it to the abdominal distension / hepatic hydrothorax (4). PENALTY: inventing consolidation/pneumonia (-2).",
+      "keyFindings": [
+        "small right pleural effusion",
+        "elevated hemidiaphragms with low lung volumes from ascites"
+      ],
+      "criticalFindings": [
+        "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+      ],
+      "commonMistakes": [
+        "mistaking the small effusion or raised diaphragm for basal consolidation"
+      ],
+      "idealAnswer": "Elevated hemidiaphragms with low lung volumes and a small right pleural effusion (hepatic hydrothorax); lungs otherwise clear.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+        ],
+        "coreActions": [
+          "small right pleural effusion",
+          "elevated hemidiaphragms with low lung volumes from ascites"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Doppler shows absent/reversed flow in the hepatic veins with caudate lobe hypertrophy, ascites is a high-SAAG high-protein fluid, and JAK2 V617F is positive. What is your diagnosis and what did you rule out?",
+      "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction), with an underlying myeloproliferative neoplasm (JAK2-positive) as the prothrombotic driver (6). Cites the Doppler outflow obstruction plus the high-SAAG/high-protein ascites; explicitly excludes simple cirrhosis, viral/toxic hepatitis, and right-heart failure (4).",
+      "idealAnswer": "Budd-Chiari syndrome (hepatic venous outflow obstruction) secondary to an underlying myeloproliferative neoplasm. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Cirrhosis with decompensation / portal vein thrombosis",
+        "Acute/fulminant viral or toxic hepatitis",
+        "Right-heart failure / constrictive pericarditis"
+      ],
+      "acceptableAlternatives": [
+        "Malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH approach to hepatic venous outflow obstruction: start anticoagulation promptly (heparin then long-term) once bleeding is excluded (CANT-MISS,7); identify and treat the underlying prothrombotic disorder / MPN with hematology (4); manage ascites with sodium restriction and diuretics +/- therapeutic paracentesis (4); stepwise escalation — angioplasty/stenting or TIPS for refractory disease, transplant for fulminant failure (4); hepatology +/- interventional radiology consult (3); stop the oral contraceptive and avoid further prothrombotic exposures (3). PENALTY: anticoagulating in the face of active variceal/GI bleeding without addressing it (-3); leaving the patient on the estrogen-containing contraceptive (-2).",
+      "idealAnswer": "Anticoagulation is the cornerstone: start heparin (transition to long-term anticoagulation) once active bleeding/varices are excluded. Identify and treat the underlying thrombophilia/myeloproliferative neoplasm with hematology. Manage ascites with sodium restriction, diuretics, and therapeutic paracentesis as needed. Escalate in a stepwise fashion: angioplasty/stenting of a focal stenosis or TIPS for refractory disease, and liver transplant for fulminant hepatic failure. Stop the estrogen-containing oral contraceptive. Hepatology and interventional radiology consults; admit.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Anticoagulation once bleeding excluded",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Identify and treat the underlying prothrombotic disorder / MPN",
+            "points": 4
+          },
+          {
+            "item": "Manage ascites (sodium restriction, diuretics, therapeutic paracentesis)",
+            "points": 4
+          },
+          {
+            "item": "Stepwise escalation (angioplasty/stent or TIPS; transplant for fulminant failure)",
+            "points": 4
+          },
+          {
+            "item": "Hepatology +/- interventional radiology consult",
+            "points": 3
+          },
+          {
+            "item": "Stop the estrogen-containing oral contraceptive",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anticoagulating with active variceal/GI bleed without addressing it",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Anticoagulation once bleeding excluded"
+      ],
+      "optionalActions": [
+        "Identify and treat the underlying prothrombotic disorder / MPN",
+        "Manage ascites (sodium restriction, diuretics, therapeutic paracentesis)",
+        "Stepwise escalation (angioplasty/stent or TIPS; transplant for fulminant failure)",
+        "Hepatology +/- interventional radiology consult",
+        "Stop the estrogen-containing oral contraceptive",
+        "Surveillance for hepatocellular carcinoma and varices over time"
+      ],
+      "unsafeActions": [
+        "Anticoagulating with active variceal/GI bleed without addressing it"
+      ],
+      "consults": [
+        "Hepatology",
+        "Interventional Radiology",
+        "Hematology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Acute Liver Injury & Failure (Budd-Chiari / Hepatic Venous Outflow Obstruction)",
+        "page": 92
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "obstetric_history",
+      "contraception"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "32-year-old woman, uncomfortable from a distended abdomen, anxious about the swelling. Good historian once asked.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "The belly swelling and the ache on the right side came on gradually over about three weeks, and my legs started swelling in the last week.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "character",
+        "quality of the pain"
+      ],
+      "response": "It's a dull, constant ache up under my right ribs, and my belly feels tight and full. I get full quickly when I eat.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "nausea or vomiting"
+      ],
+      "response": "I've felt a bit nauseous and my appetite is poor. No vomiting. I've noticed my eyes look a little yellow.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "contraception",
+      "category": "meds",
+      "triggerConcepts": [
+        "birth control",
+        "oral contraceptive",
+        "the pill",
+        "contraception",
+        "estrogen",
+        "hormones"
+      ],
+      "response": "Yes, I started a combined birth control pill about eight months ago. I take it every day.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "obstetric_history",
+      "category": "obgyn",
+      "triggerConcepts": [
+        "pregnancies",
+        "miscarriage",
+        "obstetric history",
+        "ever been pregnant",
+        "pregnancy losses"
+      ],
+      "response": "I've had two early miscarriages, both in the first few months. We've never had a successful pregnancy.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_clotting_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "clots in the family",
+        "blood clots relatives",
+        "thrombosis family",
+        "thick blood family"
+      ],
+      "response": "My sister has had blood clots in her legs, and my brother was told he has some kind of 'thick blood' disorder.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "bleeding_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "black stools",
+        "blood in stool",
+        "vomiting blood",
+        "melena",
+        "hematemesis",
+        "GI bleeding"
+      ],
+      "response": "No, I haven't had any black or bloody stools, and I've never vomited blood.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "I barely drink — maybe a couple of glasses of wine in a whole month.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "confusion_mental_status",
+      "category": "ros",
+      "triggerConcepts": [
+        "confusion",
+        "drowsy",
+        "mental status",
+        "thinking clearly",
+        "sleepy",
+        "encephalopathy"
+      ],
+      "response": "No, my thinking is clear. I haven't been confused or unusually sleepy.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "liver_risk_factors",
+      "category": "pmh",
+      "triggerConcepts": [
+        "liver disease",
+        "hepatitis",
+        "IV drugs",
+        "tattoos",
+        "transfusions",
+        "risk factors hepatitis"
+      ],
+      "response": "No known liver problems, no hepatitis that I'm aware of, no IV drugs, no tattoos, and no blood transfusions.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_hepatomegaly_finding_1",
+      "finding": "Abdomen: tender, smooth hepatomegaly in the RUQ.",
+      "revealedBy": [
+        "assess_hepatomegaly",
+        "palpate_ruq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No hepatomegaly; non-tender."
+    },
+    {
+      "id": "assess_shifting_dullness_finding_2",
+      "finding": "Abdomen: tense ascites with shifting dullness and a positive fluid wave if examined.",
+      "revealedBy": [
+        "assess_shifting_dullness",
+        "assess_fluid_wave"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No ascites."
+    },
+    {
+      "id": "assess_edema_finding_3",
+      "finding": "Extremities: bilateral lower-extremity pitting edema.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "inspect_sclera_finding_4",
+      "finding": "General: mild scleral icterus.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "assess_asterixis_finding_5",
+      "finding": "Neuro: alert and oriented; NO asterixis (no encephalopathy).",
+      "revealedBy": [
+        "assess_asterixis"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No asterixis."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Budd-Chiari syndrome",
+    "diagnosticFramework": "32F on combined oral contraceptives presents with 3 weeks of progressive abdominal distension, right upper quadrant pain, and leg swelling. The diagnosis is Budd-Chiari syndrome (hepatic venous outflow obstruction), reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "Combined oral contraceptive use (prothrombotic exposure)",
+      "Two first-trimester pregnancy losses (possible antiphospholipid syndrome)",
+      "Family history of venous thrombosis and a 'thick blood' disorder (inherited/myeloproliferative thrombophilia)",
+      "Subacute triad of abdominal pain, distension/ascites, and tender hepatomegaly"
+    ],
+    "keyPhysicalExamFindings": [
+      "Abdomen: tender, smooth hepatomegaly in the RUQ.",
+      "Abdomen: tense ascites with shifting dullness and a positive fluid wave if examined.",
+      "Extremities: bilateral lower-extremity pitting edema.",
+      "General: mild scleral icterus."
+    ],
+    "keyDiagnosticFindings": [
+      "LFTs",
+      "Bilirubin",
+      "INR",
+      "AscitesFluid",
+      "DopplerUS",
+      "Thrombophilia"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Budd-Chiari syndrome while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Budd-Chiari syndrome and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Anchoring on simple cirrhosis and never imaging the hepatic veins",
+      "Anticoagulating with active variceal/GI bleed without addressing it",
+      "Leaving the patient on the estrogen-containing oral contraceptive"
+    ],
+    "managementPearls": [
+      "Anticoagulation once bleeding excluded",
+      "Identify and treat the underlying prothrombotic disorder / MPN",
+      "Stepwise escalation (angioplasty/stent or TIPS; transplant for fulminant failure)"
+    ],
+    "criticalHistoryItems": [
+      "contraception",
+      "obstetric_history",
+      "family_clotting_history"
+    ],
+    "criticalExamItems": [
+      "assess_hepatomegaly",
+      "assess_shifting_dullness"
+    ],
+    "criticalWorkupItems": [
+      "Hepatic vein/IVC Doppler ultrasound",
+      "Diagnostic paracentesis with SAAG and ascitic protein",
+      "Thrombophilia workup including JAK2 V617F"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes.",
+      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+    ],
+    "criticalManagementItems": [
+      "Anticoagulation once bleeding excluded"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes.",
+      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes.",
+      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

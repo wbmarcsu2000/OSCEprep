@@ -1,0 +1,716 @@
+{
+  "id": "abdo-08",
+  "category": "Abdominal Pain",
+  "difficulty": "hard",
+  "title": "Abdominal pain, vomiting, and rapid breathing",
+  "diagnosis": "Diabetic ketoacidosis presenting as abdominal pain",
+  "chart": {
+    "ageSex": "22F",
+    "cc": "Belly pain and vomiting",
+    "oneLiner": "22F with type 1 diabetes presents with one day of diffuse abdominal pain, nausea/vomiting, and rapid breathing after a recent flu-like illness.",
+    "vitals": {
+      "BP": "104/66",
+      "HR": "122",
+      "RR": "28",
+      "Temp": "37.6°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My stomach has been killing me and I can't stop throwing up, and I feel like I just can't catch my breath.",
+  "patientFile": "PERSONA: 22-year-old woman with type 1 diabetes, looks unwell and dehydrated, breathing fast and deep. Tired and a bit anxious but cooperative; answers slowly.\n\nHPI: ~24h of diffuse, crampy abdominal pain with persistent nausea and frequent vomiting. Over the same time she has felt very thirsty, has been urinating large amounts, and feels increasingly weak and breathless even at rest. A friend said her breath smells fruity. She had a flu-like illness (fever, sore throat, poor appetite) over the past 3-4 days. Because she felt sick and was not eating, she SKIPPED several of her insulin doses (only volunteers this if asked about insulin/medication adherence or recent illness). NO hematemesis, NO black or bloody stools, NO localized RLQ pain or pain with movement, NO dysuria, NO vaginal discharge, NO chest pain. Last menstrual period was normal/on time (no chance of pregnancy by her account).\nPMH: Type 1 diabetes mellitus diagnosed at age 14, on a basal-bolus insulin regimen; one prior similar hospitalization a few years ago when she was sick and stopped her insulin (if asked). No prior abdominal surgery. MEDS: insulin glargine at night and insulin aspart with meals (recently skipped, if asked). No NSAIDs, no new medications. SOCIAL: college student; rare alcohol; non-smoker; not sexually active currently. FHx: father has type 2 diabetes.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, fatigued, breathing deeply and rapidly (Kussmaul respirations); fruity/acetone odor on the breath.\n- Vitals: BP 104/66, HR 122, RR 28, 37.6C, SpO2 99% RA.\n- HEENT/skin: dry mucous membranes, poor skin turgor (volume depletion).\n- Abdomen: mild, diffuse tenderness on deep palpation WITHOUT rebound, guarding, or rigidity; soft, bowel sounds present; no localized RLQ/RUQ tenderness, negative Murphy and psoas signs.\n- Neuro: alert and oriented, mildly drowsy/fatigued but no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the skipped insulin doses or the polyuria/polydipsia unless asked about insulin adherence, diabetes control, urination, thirst, or the recent illness.\n- Do NOT volunteer the fruity breath; if the examiner comments on or examines the breath/general appearance, confirm it.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "BMP": "Glucose 480, anion gap WIDE at 24 (Na 132, Cl 96, HCO3 12), K 5.4 (total body potassium DEPLETED despite this value), BUN 28, Cr 1.2 (prerenal).",
+      "VBG": "pH 7.18, HCO3 11, pCO2 24 — a high anion gap metabolic acidosis with respiratory compensation.",
+      "Ketones": "Serum beta-hydroxybutyrate markedly ELEVATED; urine ketones large/3+ — confirms ketosis.",
+      "CBC": "WBC 14.5 (stress/demargination, can be elevated without infection), Hgb/Hct mildly elevated from hemoconcentration, Plt normal.",
+      "Lipase": "Normal or only mildly elevated — argues against primary pancreatitis as the cause of the pain.",
+      "UA_hCG": "Urinalysis with large ketones and glucosuria, no nitrites/leukocyte esterase (no UTI); urine beta-hCG NEGATIVE (excludes pregnancy)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with peaked T waves reflecting hyperkalemia; no acute ischemic ST changes.",
+      "verify": "Source a study matching: Sinus tachycardia with peaked T waves reflecting hyperkalemia; no acute ischemic ST changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with peaked T waves of hyperkalemia",
+      "searchTerms": [
+        "hyperkalemia peaked T waves ECG",
+        "sinus tachycardia peaked T waves"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lungs with no consolidation, effusion, or free air under the diaphragm; normal cardiac silhouette.",
+      "verify": "Pick a CC file showing a normal PA chest film; must NOT show free air, consolidation, or effusion.",
+      "assetNeeded": true,
+      "imageDescription": "normal chest radiograph, clear lungs, no free air",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "BMP",
+    "VBG",
+    "Ketones",
+    "CBC",
+    "Lipase",
+    "UA_hCG",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BMP",
+    "Ketones",
+    "VBG"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this young diabetic woman's abdominal pain (note your leading diagnosis).",
+      "rubric": "Diabetic ketoacidosis (leading,8). Surgical abdomen — appendicitis/perforation (CANT-MISS,4). Ectopic pregnancy (CANT-MISS,3). Other high anion gap acidosis — lactic acidosis/sepsis, toxic alcohol/salicylate ingestion (CANT-MISS,3). Acute pancreatitis (core,2). Gastroenteritis (core,2). Names that DKA itself causes abdominal pain and that the gap and ketones must be checked (core,3).",
+      "idealAnswer": "Leading diagnosis: Diabetic ketoacidosis (a known cause of abdominal pain in a type 1 diabetic who skipped insulin during illness). Must-not-miss diagnoses to exclude: a surgical abdomen (appendicitis/perforation); ectopic pregnancy in a woman of childbearing age; another cause of a high anion gap acidosis (lactic acidosis/sepsis, toxic alcohol or salicylate ingestion). Also reasonable: acute pancreatitis; gastroenteritis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Diabetic ketoacidosis",
+            "points": 8
+          },
+          {
+            "item": "Surgical abdomen (appendicitis/perforation)",
+            "points": 4
+          },
+          {
+            "item": "Ectopic pregnancy",
+            "points": 3
+          },
+          {
+            "item": "Other high anion gap acidosis (lactic acidosis/sepsis, toxic alcohol/salicylate)",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Acute pancreatitis",
+            "points": 2
+          },
+          {
+            "item": "Gastroenteritis",
+            "points": 2
+          },
+          {
+            "item": "Names that DKA causes abdominal pain and that gap/ketones must be checked",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Surgical abdomen (appendicitis/perforation)",
+        "Ectopic pregnancy",
+        "Other high anion gap acidosis (lactic acidosis/sepsis, toxic alcohol/salicylate)"
+      ],
+      "acceptableAlternatives": [
+        "Acute pancreatitis",
+        "Gastroenteritis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Fingerstick/serum glucose + BMP for anion gap and potassium (CANT-MISS,4). Serum/urine ketones (beta-hydroxybutyrate) (CANT-MISS,4). Venous blood gas for pH (3). Urine beta-hCG to exclude pregnancy (2). CBC, lipase, UA, lactate to look for a trigger/alternative cause (1). EKG for hyperkalemia (1). PENALTY: rushing to insulin before checking potassium and starting fluids (-2); ordering early abdominal CT for the pain before checking the gap/ketones (-1).",
+      "idealAnswer": "Order: Fingerstick/serum glucose + BMP (anion gap, potassium); Serum/urine ketones (beta-hydroxybutyrate); Venous blood gas for pH; Urine beta-hCG.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Glucose + BMP (anion gap, potassium)",
+            "points": 4
+          },
+          {
+            "item": "Serum/urine ketones (beta-hydroxybutyrate)",
+            "points": 4
+          },
+          {
+            "item": "Venous blood gas for pH",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Urine beta-hCG",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "rushing to insulin before checking potassium and starting fluids",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Glucose + BMP (anion gap, potassium)",
+        "Serum/urine ketones (beta-hydroxybutyrate)",
+        "Venous blood gas for pH"
+      ],
+      "optionalTests": [
+        "Urine beta-hCG"
+      ],
+      "contraindicatedTests": [
+        "ordering early abdominal CT for the pain before checking the gap/ketones"
+      ],
+      "orderSensitiveActions": [
+        "rushing to insulin before checking potassium and starting fluids"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia with peaked T waves of hyperkalemia. CREDIT: rate & rhythm — sinus tachycardia (5); recognizes peaked T waves / hyperkalemia pattern and ties it to the DKA potassium picture (7); systematic read, no acute ischemia (3). PENALTY: calling the study normal / missing peaked T waves (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "peaked T waves reflecting hyperkalemia"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with peaked T waves of hyperkalemia."
+      ],
+      "commonMistakes": [
+        "dismissing peaked T waves as a normal variant",
+        "not linking the EKG hyperkalemia to the total-body potassium deficit in DKA"
+      ],
+      "idealAnswer": "Sinus tachycardia with peaked, symmetric T waves consistent with hyperkalemia; no acute ischemic ST changes. Important because the serum K is high but total body potassium is depleted and will fall with insulin/fluids.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with peaked T waves of hyperkalemia."
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "peaked T waves reflecting hyperkalemia"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear film, no acute process. CREDIT: identifies a normal film with clear lungs (5); explicitly excludes a precipitant/mimic — pneumonia (infectious trigger) and free air (perforation) (5). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal/clear film",
+        "excludes pneumonia and free air"
+      ],
+      "criticalFindings": [
+        "Clear lungs; no consolidation, effusion, or free air under the diaphragm."
+      ],
+      "commonMistakes": [
+        "over-calling basal atelectasis as pneumonia",
+        "forgetting the CXR helps screen for an infectious DKA trigger"
+      ],
+      "idealAnswer": "Clear lungs with no consolidation, effusion, or free air under the diaphragm; normal cardiac silhouette. Useful to exclude pneumonia as a DKA precipitant and free air from perforation.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: clear lungs; no consolidation, effusion, or free air under the diaphragm.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "excludes pneumonia (infectious trigger) and free air (perforation)",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Glucose 480, anion gap 24, pH 7.18 with low bicarbonate, large serum/urine ketones, near-normal lipase, and a negative beta-hCG. What is your diagnosis and what did you rule out?",
+      "rubric": "Diabetic ketoacidosis (6). Cites the triad — hyperglycemia, high anion gap metabolic acidosis, and ketonemia/ketonuria — and explains the abdominal pain is from the DKA itself; explicitly rules out pregnancy (negative hCG), primary pancreatitis (normal lipase), and a surgical abdomen (benign exam) (4).",
+      "idealAnswer": "Diabetic ketoacidosis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Surgical abdomen (appendicitis/perforation)",
+        "Ectopic pregnancy"
+      ],
+      "acceptableAlternatives": [
+        "Hyperosmolar hyperglycemic state",
+        "Mixed DKA/HHS"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH DKA protocol: aggressive isotonic IV fluids — normal saline first (CANT-MISS,6); check and REPLETE potassium before/with insulin, hold insulin if K < 3.3 (CANT-MISS,6); IV regular insulin infusion after fluids/K addressed (5); add dextrose when glucose ~200 and continue insulin until the gap closes (3); identify/treat the precipitant — here missed insulin during illness (3); frequent monitoring of glucose, gap, and electrolytes; transition to SC insulin with overlap once gap closed (2). PENALTY: giving insulin before checking/repleting potassium (-3); bicarbonate for mild-moderate acidosis (-2); stopping the insulin drip on glucose normalization before the gap closes (-2).",
+      "idealAnswer": "Resuscitate with isotonic IV fluids (normal saline) first. CHECK potassium before insulin: if K < 3.3 hold insulin and replete K; if K 3.3-5.2 give insulin with K added to fluids; if K > 5.2 start insulin and recheck. Start an IV regular insulin infusion once fluids/K are addressed; add dextrose-containing fluids when glucose reaches ~200 and continue insulin until the anion gap normalizes. Treat the precipitant (missed insulin during a viral illness). Monitor glucose hourly and the gap/electrolytes q2-4h. Avoid bicarbonate unless pH is very low. Transition to subcutaneous insulin with overlap once eating and the gap has closed.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Isotonic IV fluid resuscitation (normal saline)",
+            "points": 6
+          },
+          {
+            "item": "Check and replete potassium before/with insulin (hold insulin if K < 3.3)",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "IV regular insulin infusion after fluids/K addressed",
+            "points": 5
+          },
+          {
+            "item": "Add dextrose at glucose ~200 and continue insulin until gap closes",
+            "points": 3
+          },
+          {
+            "item": "Identify and treat the precipitant (missed insulin during illness)",
+            "points": 3
+          },
+          {
+            "item": "Frequent monitoring; transition to SC insulin with overlap once gap closed",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Giving insulin before checking/repleting potassium",
+            "points": -3
+          },
+          {
+            "item": "Routine bicarbonate for mild-moderate acidosis",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Isotonic IV fluid resuscitation (normal saline)",
+        "Check and replete potassium before/with insulin (hold insulin if K < 3.3)"
+      ],
+      "optionalActions": [
+        "IV regular insulin infusion after fluids/K addressed",
+        "Add dextrose at glucose ~200 and continue insulin until gap closes",
+        "Identify and treat the precipitant (missed insulin during illness)",
+        "Frequent monitoring; transition to SC insulin with overlap once gap closed"
+      ],
+      "unsafeActions": [
+        "Giving insulin before checking/repleting potassium",
+        "Routine bicarbonate for mild-moderate acidosis"
+      ],
+      "consults": [
+        "Endocrinology"
+      ],
+      "disposition": "Admit (step-down/ICU if severe acidosis or altered mental status)",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024-2025",
+        "section": "Diabetic Ketoacidosis & Hyperglycemic Emergencies",
+        "page": 178
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "medication_adherence",
+      "sexual_history"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "22-year-old woman with type 1 diabetes, looks unwell and dehydrated, breathing fast and deep. Tired and a bit anxious but cooperative; answers slowly.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "are you taking your insulin",
+        "insulin doses",
+        "did you skip",
+        "medication adherence",
+        "missed any medicine"
+      ],
+      "response": "I felt so sick and wasn't eating, so I skipped a few of my insulin shots over the last couple of days.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diabetes_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "diabetes",
+        "blood sugar",
+        "are you diabetic",
+        "type 1 diabetes",
+        "any medical conditions"
+      ],
+      "response": "I've had type 1 diabetes since I was 14 and I'm usually on insulin every day.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "polyuria_polydipsia",
+      "category": "ros",
+      "triggerConcepts": [
+        "urinating a lot",
+        "peeing more",
+        "extra thirsty",
+        "drinking a lot of water",
+        "polyuria",
+        "polydipsia"
+      ],
+      "response": "Now that you ask, I've been incredibly thirsty and peeing way more than usual for the last day.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_illness",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "any infection",
+        "been sick recently",
+        "fever or cold",
+        "sore throat"
+      ],
+      "response": "I had what felt like the flu for the last few days, with a fever and sore throat, and I lost my appetite.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "The belly pain and vomiting started about a day ago and have gotten worse.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character_location",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "where is the pain",
+        "what does it feel like",
+        "character",
+        "location"
+      ],
+      "response": "It's a crampy ache all over my belly, not in one spot, and moving around doesn't seem to make it worse.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "breathing",
+      "category": "ros",
+      "triggerConcepts": [
+        "shortness of breath",
+        "breathing",
+        "breathless",
+        "trouble breathing"
+      ],
+      "response": "I feel like I keep needing to take big, deep breaths even when I'm just sitting still.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "gi_red_flags",
+      "category": "ros",
+      "triggerConcepts": [
+        "blood in vomit",
+        "blood in stool",
+        "black stools",
+        "vomiting blood",
+        "melena"
+      ],
+      "response": "No, there's no blood in the vomit and my bowel movements look normal, not black or bloody.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pregnancy_sexual_history",
+      "category": "social",
+      "triggerConcepts": [
+        "last menstrual period",
+        "could you be pregnant",
+        "sexually active",
+        "any chance of pregnancy",
+        "periods"
+      ],
+      "response": "My last period was on time and normal, and I'm not sexually active right now, so I don't think I could be pregnant.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time",
+        "ever hospitalized for this"
+      ],
+      "response": "Something like this put me in the hospital once a few years ago when I was sick and stopped my insulin.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_general_appearance_finding_1",
+      "finding": "General: ill-appearing, fatigued, breathing deeply and rapidly (Kussmaul respirations); fruity/acetone odor on the breath.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Comfortable, breathing normally, no unusual breath odor."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_2",
+      "finding": "HEENT/skin: dry mucous membranes (volume depletion).",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Mucous membranes moist."
+    },
+    {
+      "id": "assess_skin_turgor_finding_3",
+      "finding": "Skin: poor skin turgor consistent with dehydration.",
+      "revealedBy": [
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Skin turgor normal."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_4",
+      "finding": "Abdomen: mild, diffuse tenderness on deep palpation WITHOUT rebound, guarding, or rigidity; soft, bowel sounds present; no localized tenderness.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen soft and nontender."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_5",
+      "finding": "Abdomen: NO rebound tenderness, guarding, or rigidity (argues against a surgical/peritonitic abdomen).",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "assess_mental_status_finding_6",
+      "finding": "Neuro: alert and oriented, mildly drowsy/fatigued but no focal deficit.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and fully oriented."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Diabetic ketoacidosis presenting as abdominal pain",
+    "diagnosticFramework": "22F with type 1 diabetes presents with one day of diffuse abdominal pain, nausea/vomiting, and rapid breathing after a recent flu-like illness during which she skipped insulin. The diagnosis is Diabetic ketoacidosis presenting as abdominal pain, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives (surgical abdomen, ectopic pregnancy, and other causes of a high anion gap acidosis).",
+    "keyHistoryClues": [
+      "Type 1 diabetes with insulin doses skipped during a recent viral illness",
+      "Polyuria and polydipsia preceding the abdominal pain",
+      "Diffuse non-localizing crampy pain with deep rapid breathing"
+    ],
+    "keyPhysicalExamFindings": [
+      "General: ill-appearing, fatigued, breathing deeply and rapidly (Kussmaul respirations); fruity/acetone odor on the breath.",
+      "HEENT/skin: dry mucous membranes (volume depletion).",
+      "Skin: poor skin turgor consistent with dehydration.",
+      "Abdomen: mild, diffuse tenderness on deep palpation WITHOUT rebound, guarding, or rigidity; soft, bowel sounds present; no localized tenderness.",
+      "Abdomen: NO rebound tenderness, guarding, or rigidity (argues against a surgical/peritonitic abdomen).",
+      "Neuro: alert and oriented, mildly drowsy/fatigued but no focal deficit."
+    ],
+    "keyDiagnosticFindings": [
+      "BMP",
+      "VBG",
+      "Ketones",
+      "CBC",
+      "Lipase",
+      "UA_hCG"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals (tachycardia, tachypnea, volume depletion in a young type 1 diabetic).",
+      "Elicit the focused history, including the skipped insulin, recent illness, and polyuria/polydipsia only on direct questioning.",
+      "Perform the targeted physical exam: recognize Kussmaul breathing and dehydration, and confirm the abdomen lacks peritoneal signs.",
+      "Build a differential led by Diabetic ketoacidosis while explicitly excluding a surgical abdomen, ectopic pregnancy, and other high anion gap acidoses.",
+      "Order a focused workup (glucose/BMP, ketones, VBG, beta-hCG), interpret the EKG/CXR, and confirm the hyperglycemia + high anion gap acidosis + ketosis triad.",
+      "Commit to Diabetic ketoacidosis and manage with fluids first, potassium repletion before insulin, an insulin infusion, treating the precipitant, and appropriate disposition."
+    ],
+    "commonPitfalls": [
+      "Giving insulin before checking/repleting potassium",
+      "Routine bicarbonate for mild-moderate acidosis",
+      "Pursuing an early abdominal CT for the pain instead of checking the gap and ketones",
+      "Stopping the insulin drip when glucose normalizes before the anion gap closes"
+    ],
+    "managementPearls": [
+      "Isotonic IV fluid resuscitation (normal saline)",
+      "Check and replete potassium before/with insulin (hold insulin if K < 3.3)",
+      "The abdominal pain of DKA typically resolves as the acidosis clears"
+    ],
+    "criticalHistoryItems": [
+      "medication_adherence",
+      "diabetes_history"
+    ],
+    "criticalExamItems": [
+      "assess_general_appearance",
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "Glucose + BMP (anion gap, potassium)",
+      "Serum/urine ketones (beta-hydroxybutyrate)",
+      "Venous blood gas for pH"
+    ],
+    "criticalManagementItems": [
+      "Isotonic IV fluid resuscitation (normal saline)",
+      "Check and replete potassium before/with insulin (hold insulin if K < 3.3)"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with peaked T waves of hyperkalemia.",
+      "Clear lungs; no consolidation, effusion, or free air under the diaphragm."
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with peaked T waves of hyperkalemia.",
+      "Clear lungs; no consolidation, effusion, or free air under the diaphragm."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with peaked T waves of hyperkalemia.",
+      "Clear lungs; no consolidation, effusion, or free air under the diaphragm."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

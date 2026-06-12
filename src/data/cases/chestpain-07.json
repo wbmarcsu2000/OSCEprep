@@ -1,0 +1,710 @@
+{
+  "id": "chestpain-07",
+  "category": "Chest Pain",
+  "difficulty": "hard",
+  "title": "Progressive breathlessness and chest pressure with hypotension",
+  "diagnosis": "Cardiac tamponade",
+  "chart": {
+    "ageSex": "58F",
+    "cc": "Shortness of breath and chest pressure",
+    "oneLiner": "58F presents with several days of progressive dyspnea, vague chest pressure, and lightheadedness, now hypotensive and tachycardic.",
+    "vitals": {
+      "BP": "86/68",
+      "HR": "124",
+      "RR": "24",
+      "Temp": "37.3°C",
+      "SpO2": "95% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I can't catch my breath and my chest feels tight and heavy. I keep feeling like I'm going to pass out.",
+  "patientFile": "PERSONA: 58-year-old woman, anxious and uncomfortable, sitting upright and breathing fast. Speaks in short sentences. Cooperative but tires easily.\n\nHPI:\n- Several days of progressive shortness of breath, now present at rest and worse when lying flat.\n- Dull central chest pressure/heaviness, not sharply positional, no clear exertional trigger.\n- Lightheadedness and a near-fainting feeling, especially on standing.\n- Reduced exercise tolerance and fatigue over the past week or two.\n- Had a 'flu-like' viral illness about two weeks ago (only if asked about recent illness).\n- Treated for breast cancer 3 years ago and recently told it may have come back; has been having scans (only if asked about cancer history / recent medical workup).\n- NO tearing/ripping pain, NO pain radiating to the back, NO calf pain or swelling, NO recent long travel or surgery, NO fevers/chills now, NO cough productive of blood, NO crushing exertional pain or diaphoresis.\n\nOLDCARTS: onset gradual over several days; central chest; constant pressure with associated breathlessness; dull/heavy quality; worse lying flat and with exertion, no clear relief; severity 5/10 pressure but very breathless and faint.\n\nPMH: breast cancer (treated 3 years ago, possible recurrence under workup), hypertension. MEDICATIONS: amlodipine; no anticoagulants. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: never-smoker, rare alcohol, retired teacher.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, mildly diaphoretic, tachypneic, sitting forward.\n- Vitals: BP 86/68, HR 124, RR 24, 37.3°C, SpO2 95% RA. A PULSUS PARADOXUS of about 18 mmHg is present (systolic drops markedly on inspiration) — revealed on careful blood-pressure measurement / checking pulsus.\n- Neck: JVP MARKEDLY ELEVATED with a prominent x descent and blunted y descent (revealed if JVP examined).\n- Cardiac: HEART SOUNDS are DISTANT/MUFFLED; tachycardic, regular; no friction rub today; PMI difficult to palpate.\n- Lungs: CLEAR bilaterally to auscultation (important pertinent negative — no rales/edema despite dyspnea).\n- Extremities: cool peripheries with sluggish capillary refill; NO peripheral edema, NO calf tenderness or asymmetric swelling.\n- Abdomen: soft, nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the recent viral illness or the cancer history/possible recurrence unless asked about recent illness, cancer, or recent medical workup.\n- The elevated JVP is revealed only if the neck/JVP is examined; the muffled heart sounds only if the heart is auscultated; the pulsus paradoxus only if blood pressure/pulsus is carefully checked.\n- Lungs are CLEAR — say so if the chest is auscultated (this is a key negative).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Troponin": "Mildly elevated at 0.06 ng/mL, flat on serial draws (no rising/dynamic pattern to suggest evolving MI).",
+      "BNP": "Mildly elevated, nonspecific; does not explain the degree of shock.",
+      "BMP": "Cr mildly elevated consistent with poor forward flow/prerenal state; otherwise unremarkable.",
+      "Ddimer": "Elevated but nonspecific; CT pulmonary angiogram (if obtained) shows NO pulmonary embolism and incidentally notes a large pericardial effusion.",
+      "echo": "Large circumferential pericardial effusion with TAMPONADE PHYSIOLOGY: diastolic collapse of the right atrium and right ventricle, exaggerated respiratory variation in transvalvular inflow, and a dilated, non-collapsing (plethoric) IVC. Confirms the diagnosis.",
+      "CBC": "WBC and Hgb within normal range; no leukocytosis to suggest purulent pericarditis."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/pericardial-effusion-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with low QRS voltage and beat-to-beat electrical alternans of the QRS amplitude.",
+      "verify": "Source a tracing matching: sinus tachycardia with low QRS voltage and electrical alternans. Self-host with credit to litfl.com; do not reuse the prior tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead EKG showing sinus tachycardia, low voltage, and electrical alternans",
+      "searchTerms": [
+        "electrical alternans pericardial effusion ECG",
+        "low voltage QRS tamponade EKG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=water%20bottle%20cardiac%20silhouette&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Enlarged, globular 'water-bottle' cardiac silhouette with clear lung fields (no pulmonary edema).",
+      "verify": "Source a study matching: enlarged globular water-bottle cardiac silhouette with clear lungs. Self-host with appropriate credit; do not reuse the prior tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing enlarged globular water-bottle cardiac silhouette with clear lungs",
+      "searchTerms": [
+        "water bottle cardiac silhouette pericardial effusion",
+        "globular heart chest x-ray pericardial effusion"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Troponin",
+    "BNP",
+    "BMP",
+    "Ddimer",
+    "echo",
+    "CBC",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "echo",
+    "ekg"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this dyspnea/chest pressure with hypotension (note your leading diagnosis).",
+      "rubric": "Cardiac tamponade / large pericardial effusion (leading, 9). Acute coronary syndrome with cardiogenic shock (CANT-MISS, 5). Massive pulmonary embolism (CANT-MISS, 3). Tension pneumothorax (core, 2). Acute decompensated heart failure (core, 2). Sepsis/other distributive shock (bonus, 1). Names obstructive shock with elevated JVP, muffled heart sounds, hypotension, and pulsus paradoxus pointing to tamponade (core, 3).",
+      "idealAnswer": "Leading diagnosis: Cardiac tamponade (large pericardial effusion causing obstructive shock). Must-not-miss diagnoses to exclude: Acute coronary syndrome with cardiogenic shock; Massive pulmonary embolism. Also reasonable: Tension pneumothorax; Acute decompensated heart failure.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome with cardiogenic shock",
+            "points": 5
+          },
+          {
+            "item": "Massive pulmonary embolism",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Tension pneumothorax",
+            "points": 2
+          },
+          {
+            "item": "Acute decompensated heart failure",
+            "points": 2
+          },
+          {
+            "item": "Names obstructive shock with elevated JVP, muffled heart sounds, hypotension, and pulsus paradoxus pointing to tamponade",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Sepsis/other distributive shock",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome with cardiogenic shock",
+        "Massive pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Tension pneumothorax",
+        "Acute decompensated heart failure"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Bedside/urgent echocardiogram to assess for effusion and tamponade physiology (CANT-MISS, 5). EKG (core, 3). CXR (core, 2). Troponin and serial cardiac biomarkers (core, 2). BMP/renal function and CBC (core, 2). D-dimer or CTPA if PE still considered (bonus, 1). PENALTY: giving a diuretic or nitrate for presumed heart failure before excluding tamponade (worsens preload-dependent shock) (-3).",
+      "idealAnswer": "Order: urgent bedside echocardiogram to assess for pericardial effusion and tamponade physiology; EKG; CXR; troponin; BMP and CBC. Consider CTPA only if PE remains a concern after echo.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Urgent echocardiogram for effusion/tamponade physiology",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 3
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "BMP and CBC",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "D-dimer or CTPA if PE still considered",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Urgent echocardiogram for effusion/tamponade physiology"
+      ],
+      "optionalTests": [
+        "EKG",
+        "CXR",
+        "Troponin",
+        "BMP and CBC",
+        "D-dimer or CTPA if PE still considered"
+      ],
+      "contraindicatedTests": [
+        "giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)"
+      ],
+      "orderSensitiveActions": [
+        "giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia with low QRS voltage and electrical alternans. CREDIT: rate & rhythm — sinus tachycardia (3); identifies LOW QRS VOLTAGE (4); recognizes ELECTRICAL ALTERNANS — beat-to-beat QRS amplitude variation (4); links the triad to a large effusion/tamponade (2); systematic read (2). PENALTY: misreading as STEMI and activating the cath lab, or calling it normal (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "low QRS voltage",
+        "electrical alternans (beat-to-beat QRS amplitude variation)",
+        "links findings to large pericardial effusion/tamponade"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with low QRS voltage and electrical alternans — classic for a large pericardial effusion with tamponade."
+      ],
+      "commonMistakes": [
+        "missing the electrical alternans and reporting only sinus tachycardia",
+        "misreading as an acute STEMI and activating the cath lab"
+      ],
+      "idealAnswer": "Sinus tachycardia with low QRS voltage and beat-to-beat electrical alternans — the classic triad of a large pericardial effusion with tamponade.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: sinus tachycardia with low QRS voltage and electrical alternans suggesting a large effusion/tamponade.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "low QRS voltage",
+          "electrical alternans (beat-to-beat QRS amplitude variation)",
+          "links findings to large pericardial effusion/tamponade"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misreads as STEMI",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = enlarged globular 'water-bottle' cardiac silhouette with clear lungs. CREDIT: identifies the enlarged/globular cardiac silhouette (6); notes clear lungs without pulmonary edema (a key negative arguing against LV failure) and that a large effusion is suggested (4). PENALTY: calling it normal or mistaking it for cardiomegaly from heart failure with edema (-3).",
+      "keyFindings": [
+        "enlarged globular water-bottle cardiac silhouette",
+        "clear lung fields without pulmonary edema (argues against LV failure)"
+      ],
+      "criticalFindings": [
+        "Enlarged, globular 'water-bottle' cardiac silhouette with clear lungs, suggesting a large pericardial effusion."
+      ],
+      "commonMistakes": [
+        "calling the film normal",
+        "mistaking the silhouette for cardiomegaly of heart failure and expecting pulmonary edema"
+      ],
+      "idealAnswer": "Enlarged, globular 'water-bottle' cardiac silhouette with clear lung fields — suggestive of a large pericardial effusion; the clear lungs argue against LV failure.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Enlarged, globular 'water-bottle' cardiac silhouette with clear lungs, suggesting a large pericardial effusion."
+        ],
+        "coreActions": [
+          "enlarged globular water-bottle cardiac silhouette",
+          "clear lung fields without pulmonary edema (argues against LV failure)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Hypotension with pulsus paradoxus, elevated JVP, muffled heart sounds, clear lungs, EKG with low voltage and electrical alternans, a water-bottle heart on CXR, and an echo showing a large effusion with right-heart diastolic collapse and a plethoric IVC. What is your diagnosis and what did you rule out?",
+      "rubric": "Cardiac tamponade from a large pericardial effusion (obstructive shock) (6). Cites Beck's triad plus pulsus paradoxus and the echo tamponade physiology; explicitly excludes ACS (flat troponin, no dynamic ischemic EKG) and PE (no PE on imaging), and notes clear lungs argue against LV failure (4).",
+      "idealAnswer": "Cardiac tamponade. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome with cardiogenic shock",
+        "Massive pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Acute decompensated heart failure",
+        "Tension pneumothorax"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH pericardial disease/tamponade: urgent pericardiocentesis (echo-guided) is the definitive treatment (CANT-MISS, 8); IV volume expansion to support a preload-dependent circulation as a temporizing measure (CANT-MISS, 5); urgent cardiology/cardiac surgery consult (4); continuous monitoring in a high-acuity setting with avoidance of intubation/positive-pressure ventilation if possible (3); send pericardial fluid for analysis and treat the underlying cause, e.g. malignant effusion (3); pericardial drain/window for recurrent or malignant effusion (2). PENALTY: diuretics or vasodilators/nitrates that drop preload (-3); delaying drainage in an unstable patient to obtain further imaging (-3).",
+      "idealAnswer": "This is decompensating tamponade: resuscitate and drain. Give IV fluids to support preload while arranging URGENT echo-guided pericardiocentesis (definitive). Call cardiology/cardiac surgery immediately. Manage in a high-acuity/monitored setting; avoid diuretics, nitrates, and (if possible) positive-pressure ventilation, all of which reduce preload. Send pericardial fluid for cytology/culture and treat the underlying cause (likely malignant effusion given breast-cancer history); consider a pericardial drain or surgical window for recurrent/malignant effusions.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Urgent echo-guided pericardiocentesis (definitive)",
+            "points": 8
+          },
+          {
+            "item": "IV volume expansion to support preload (temporizing)",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Urgent cardiology/cardiac surgery consult",
+            "points": 4
+          },
+          {
+            "item": "High-acuity monitoring; avoid positive-pressure ventilation if possible",
+            "points": 3
+          },
+          {
+            "item": "Pericardial fluid analysis and treat underlying cause (malignant effusion)",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Pericardial drain/window for recurrent or malignant effusion",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Diuretics or vasodilators/nitrates that drop preload",
+            "points": -3
+          },
+          {
+            "item": "Delaying drainage in an unstable patient for further imaging",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Urgent echo-guided pericardiocentesis (definitive)",
+        "IV volume expansion to support preload (temporizing)"
+      ],
+      "optionalActions": [
+        "Urgent cardiology/cardiac surgery consult",
+        "High-acuity monitoring; avoid positive-pressure ventilation if possible",
+        "Pericardial fluid analysis and treat underlying cause (malignant effusion)",
+        "Pericardial drain/window for recurrent or malignant effusion"
+      ],
+      "unsafeActions": [
+        "Diuretics or vasodilators/nitrates that drop preload",
+        "Delaying drainage in an unstable patient for further imaging"
+      ],
+      "consults": [
+        "Cardiology",
+        "Cardiac Surgery"
+      ],
+      "disposition": "Admit to ICU/CCU",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pericardial Disease (Pericardial Effusion & Tamponade)",
+        "page": 35
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "cancer_history",
+      "alcohol_use"
+    ],
+    "communicationStyle": "answers questions asked in short sentences; tires easily and does not volunteer diagnostic clues",
+    "affect": "58-year-old woman, anxious and breathless, sitting upright and speaking in short sentences. Cooperative but fatigued.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "cancer_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "cancer",
+        "tumor",
+        "malignancy",
+        "any history of cancer",
+        "breast cancer",
+        "recent scans or workup"
+      ],
+      "response": "[Reveal the breast-cancer history and possible recurrence from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_illness",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "been sick recently",
+        "any infections",
+        "viral illness",
+        "cold or flu"
+      ],
+      "response": "[Reveal the recent flu-like viral illness from patientFile only when asked about recent illness; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "shortness of breath",
+        "lightheaded or faint"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating",
+        "worse lying flat"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pertinent_negatives",
+      "category": "ros",
+      "triggerConcepts": [
+        "tearing pain",
+        "pain to the back",
+        "calf pain or swelling",
+        "leg swelling",
+        "recent travel or surgery",
+        "coughing blood"
+      ],
+      "response": "[Confirm the relevant pertinent negatives from patientFile (no tearing/back pain, no calf swelling, no recent travel/surgery, no hemoptysis); phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "blood thinners",
+        "anticoagulants"
+      ],
+      "response": "[Answer from patientFile if applicable (amlodipine, no anticoagulants); otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "other health problems"
+      ],
+      "response": "[Answer from patientFile if applicable (hypertension); reveal cancer history only if asked about cancer.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_jvp_finding_1",
+      "finding": "Neck: JVP MARKEDLY ELEVATED with a prominent x descent and blunted y descent.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_heart_finding_2",
+      "finding": "Cardiac: HEART SOUNDS are DISTANT/MUFFLED; tachycardic, regular; no friction rub today; PMI difficult to palpate.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Normal-intensity heart sounds, no murmur."
+    },
+    {
+      "id": "pulsus_paradoxus_finding_3",
+      "finding": "Vitals: a PULSUS PARADOXUS of about 18 mmHg is present (systolic drops markedly on inspiration).",
+      "revealedBy": [
+        "repeat_vitals",
+        "assess_peripheral_pulses"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No significant pulsus paradoxus."
+    },
+    {
+      "id": "auscultate_lungs_finding_4",
+      "finding": "Lungs: CLEAR bilaterally to auscultation (no rales/edema despite dyspnea).",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear bilaterally."
+    },
+    {
+      "id": "assess_perfusion_finding_5",
+      "finding": "Extremities: cool peripheries with sluggish capillary refill; NO peripheral edema, NO calf tenderness.",
+      "revealedBy": [
+        "assess_capillary_refill",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Warm extremities, brisk capillary refill, no edema."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Cardiac tamponade",
+    "diagnosticFramework": "58F presents with several days of progressive dyspnea, vague chest pressure, and lightheadedness, now hypotensive and tachycardic. The diagnosis is Cardiac tamponade, reached by eliciting the focused history (including a malignancy/recurrence and recent viral illness), performing the targeted exam (elevated JVP, muffled heart sounds, pulsus paradoxus, clear lungs), and interpreting the directed workup (EKG low voltage with electrical alternans, water-bottle CXR, confirmatory echo) while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Neck: JVP MARKEDLY ELEVATED with a prominent x descent and blunted y descent.",
+      "Cardiac: HEART SOUNDS are DISTANT/MUFFLED; tachycardic, regular; no friction rub today; PMI difficult to palpate.",
+      "Vitals: a PULSUS PARADOXUS of about 18 mmHg is present (systolic drops markedly on inspiration).",
+      "Lungs: CLEAR bilaterally to auscultation (no rales/edema despite dyspnea)."
+    ],
+    "keyDiagnosticFindings": [
+      "Troponin",
+      "BNP",
+      "BMP",
+      "Ddimer",
+      "echo",
+      "CBC"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items (cancer/recurrence, recent viral illness) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (elevated JVP, muffled heart sounds, pulsus paradoxus, clear lungs).",
+      "Build a differential led by Cardiac tamponade while explicitly excluding must-not-miss causes (ACS, massive PE).",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and the confirmatory echo.",
+      "Commit to Cardiac tamponade and manage with stabilization (IV fluids), definitive drainage (pericardiocentesis), consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Diuretics or vasodilators/nitrates that drop preload",
+      "Delaying drainage in an unstable patient for further imaging"
+    ],
+    "managementPearls": [
+      "Urgent echo-guided pericardiocentesis (definitive)",
+      "IV volume expansion to support preload (temporizing)"
+    ],
+    "criticalHistoryItems": [
+      "cancer_history"
+    ],
+    "criticalExamItems": [
+      "assess_jvp",
+      "auscultate_aortic_area",
+      "repeat_vitals"
+    ],
+    "criticalWorkupItems": [
+      "Urgent echocardiogram for effusion/tamponade physiology"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with low QRS voltage and electrical alternans — classic for a large pericardial effusion with tamponade.",
+      "Enlarged, globular 'water-bottle' cardiac silhouette with clear lungs, suggesting a large pericardial effusion."
+    ],
+    "criticalManagementItems": [
+      "Urgent echo-guided pericardiocentesis (definitive)",
+      "IV volume expansion to support preload (temporizing)"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with low QRS voltage and electrical alternans — classic for a large pericardial effusion with tamponade.",
+      "Enlarged, globular 'water-bottle' cardiac silhouette with clear lungs, suggesting a large pericardial effusion."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with low QRS voltage and electrical alternans — classic for a large pericardial effusion with tamponade.",
+      "Enlarged, globular 'water-bottle' cardiac silhouette with clear lungs, suggesting a large pericardial effusion."
+    ],
+    "imageInterpretationPearls": [
+      "Low voltage plus electrical alternans on the EKG is a high-yield clue to a large effusion — name it explicitly.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives — clear lungs with shock points away from LV failure."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

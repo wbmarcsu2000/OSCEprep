@@ -1,0 +1,689 @@
+{
+  "id": "dyspnea-07",
+  "category": "Dyspnea",
+  "difficulty": "hard",
+  "title": "Sudden breathlessness, throat tightness, and a body rash",
+  "diagnosis": "Anaphylaxis",
+  "chart": {
+    "ageSex": "32F",
+    "cc": "Trouble breathing and an itchy rash",
+    "oneLiner": "32F with sudden difficulty breathing, throat tightness, and a spreading hives rash minutes after eating at a restaurant.",
+    "vitals": {
+      "BP": "86/54",
+      "HR": "124",
+      "RR": "26",
+      "Temp": "37.0°C",
+      "SpO2": "91% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My throat feels like it's closing up, I can't catch my breath, and I'm covered in this itchy rash.",
+  "patientFile": "PERSONA: 32-year-old woman, anxious and distressed, speaking in short phrases, scratching at hives on her arms and chest. Cooperative but frightened.\n\nHPI: About 15-20 minutes ago, partway through dinner at a restaurant, she developed sudden generalized itching and hives, a tight/swollen sensation in her throat and lips, wheeze, breathlessness, and a feeling of light-headedness as if she might pass out. She also has crampy abdominal pain and one episode of vomiting. Symptoms came on FAST and are still worsening. She thinks the dish may have contained nuts (only if asked about what she ate / possible triggers). NO chest pain, NO fevers, NO recent immobility/long travel, NO calf pain or leg swelling, NO prior cardiac or lung disease.\nPMH: seasonal allergies and mild eczema; one prior milder reaction to nuts years ago (if asked). MEDS: occasional cetirizine; NO regular medications; she does NOT carry an epinephrine auto-injector (admits this only if asked). ALLERGIES: tree nuts (known, if asked). SOCIAL: nonsmoker, social alcohol, works as a teacher. FAMILY: father has food allergies.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, flushed, mild-moderate respiratory distress, speaking in short phrases.\n- Vitals: BP 86/54, HR 124, RR 26, 37.0°C, SpO2 91% RA.\n- Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.\n- HEENT: swollen lips and tongue (angioedema); audible inspiratory stridor at the throat; oropharynx without exudate.\n- Lungs: diffuse expiratory WHEEZE bilaterally with a prolonged expiratory phase.\n- Cardiac: tachycardic, regular, no murmur; extremities warm, no edema, no calf tenderness.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the nut exposure, the prior reaction, or that she has no epinephrine auto-injector unless asked about triggers/diet, prior episodes, or her medications/allergy plan.\n- Angioedema and stridor are revealed only if the mouth/throat is examined; urticaria only if the skin is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Tryptase": "Serum tryptase ELEVATED, drawn within 1-2 h of onset (supports mast-cell activation; a normal level does NOT exclude anaphylaxis).",
+      "CBC": "WBC 11.0, Hgb 13.8, Plt 260 — no leukocytosis to suggest infection.",
+      "BMP": "Within normal limits; bicarbonate at the low-normal range with the acute illness.",
+      "Troponin": "NEGATIVE — no evidence of acute coronary ischemia driving the hypotension.",
+      "Lactate": "Mildly elevated, consistent with hypoperfusion/distributive shock; expected to clear with treatment."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~124 bpm with no acute ST-segment or T-wave changes; normal axis and intervals.",
+      "verify": "Source a study matching: Sinus tachycardia at ~124 bpm with no acute ST-segment or T-wave changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia without ischemia",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12 lead normal axis"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields with no consolidation, effusion, pneumothorax, or pulmonary edema; normal cardiac silhouette.",
+      "verify": "Source a study matching: Clear lung fields with no consolidation, effusion, pneumothorax, or pulmonary edema. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal chest radiograph clear lungs",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph clear lungs"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Tryptase",
+    "CBC",
+    "BMP",
+    "Troponin",
+    "Lactate",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Tryptase",
+    "Troponin"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Anaphylaxis (leading,8; accepts anaphylactic reaction). Acute asthma/bronchospasm (CANT-MISS to consider,4). Angioedema (ACE-inhibitor/hereditary) without anaphylaxis (CANT-MISS,4). Vasovagal/septic/other distributive shock (core,3). Acute coronary syndrome causing shock (core,2). Panic attack (bonus,2). Named leading dx w/ recognition that this is a clinical, time-critical diagnosis (core,2).",
+      "idealAnswer": "Leading diagnosis: Anaphylaxis. Must-not-miss diagnoses to consider/exclude: severe acute asthma/bronchospasm; isolated angioedema (ACE-inhibitor or hereditary). Also reasonable: other distributive/septic shock; acute coronary syndrome; panic attack.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute asthma / bronchospasm",
+            "points": 4
+          },
+          {
+            "item": "Angioedema (ACE-inhibitor / hereditary) without anaphylaxis",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Vasovagal / septic / other distributive shock",
+            "points": 3
+          },
+          {
+            "item": "Acute coronary syndrome causing shock",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ recognition that this is a clinical, time-critical diagnosis",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Panic attack",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute asthma / bronchospasm",
+        "Angioedema (ACE-inhibitor / hereditary) without anaphylaxis"
+      ],
+      "acceptableAlternatives": [
+        "Vasovagal / septic / other distributive shock",
+        "Acute coronary syndrome causing shock"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial assessment/workup do you want? (Consider what changes management — and what should NOT delay treatment.)",
+      "rubric": "Recognize that anaphylaxis is a CLINICAL diagnosis and treat immediately — do NOT wait for labs (CANT-MISS,5). Continuous pulse oximetry and cardiac monitoring (3). Serum tryptase within 1-2 h to support the diagnosis (3). IV access + bloods (CBC, BMP, lactate, troponin) to assess shock/exclude mimics (2). ECG given hypotension/tachycardia (2). PENALTY: delaying epinephrine to obtain a CXR/CT or to await tryptase results (-3).",
+      "idealAnswer": "Treat clinically and immediately; do not delay for tests. Place on continuous pulse oximetry and cardiac monitoring, establish IV access, and draw serum tryptase within 1-2 h. Send CBC, BMP, lactate, and troponin and obtain an ECG to assess shock and exclude mimics — none of which should delay epinephrine.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognize anaphylaxis is a clinical diagnosis — treat immediately, do not wait for labs",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Continuous pulse oximetry and cardiac monitoring",
+            "points": 3
+          },
+          {
+            "item": "Serum tryptase within 1-2 h",
+            "points": 3
+          },
+          {
+            "item": "IV access + bloods (CBC, BMP, lactate, troponin)",
+            "points": 2
+          },
+          {
+            "item": "ECG given hypotension/tachycardia",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Delaying epinephrine to obtain imaging or await tryptase results",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Recognize anaphylaxis is a clinical diagnosis — treat immediately, do not wait for labs"
+      ],
+      "optionalTests": [
+        "Continuous pulse oximetry and cardiac monitoring",
+        "Serum tryptase within 1-2 h",
+        "IV access + bloods (CBC, BMP, lactate, troponin)",
+        "ECG given hypotension/tachycardia"
+      ],
+      "contraindicatedTests": [
+        "Delaying epinephrine to obtain imaging or await tryptase results"
+      ],
+      "orderSensitiveActions": [
+        "Delaying epinephrine to obtain imaging or await tryptase results"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (7); no acute ischemic ST/T changes, normal axis/intervals (5); systematic read (3). PENALTY: over-calling ischemia or attributing the hypotension to a primary cardiac cause (-3).",
+      "keyFindings": [
+        "identifies sinus tachycardia",
+        "states there are no acute ischemic ST/T changes"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia without acute ischemic changes."
+      ],
+      "commonMistakes": [
+        "over-calling rate-related ST changes as ischemia",
+        "attributing the shock to a primary cardiac event rather than distributive shock"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~124 bpm with no acute ST-segment or T-wave changes and normal axis/intervals — consistent with compensatory tachycardia from distributive shock, not primary ischemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia without acute ischemic changes."
+        ],
+        "coreActions": [
+          "identifies sinus tachycardia",
+          "states there are no acute ischemic ST/T changes"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls ischemia / attributes shock to a primary cardiac cause",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear film, no acute process. CREDIT: correctly identifies a normal/clear film (6); explicitly excludes pneumothorax, consolidation, effusion, and pulmonary edema as mimics (4). PENALTY: inventing pathology or letting the CXR delay treatment (-2).",
+      "keyFindings": [
+        "identifies a clear/normal film",
+        "explicitly excludes pneumothorax, consolidation, effusion, and pulmonary edema"
+      ],
+      "criticalFindings": [
+        "Clear lung fields with no acute cardiopulmonary process."
+      ],
+      "commonMistakes": [
+        "inventing infiltrates or edema to fit a respiratory complaint",
+        "delaying epinephrine to obtain or scrutinize the film"
+      ],
+      "idealAnswer": "Clear lung fields with a normal cardiac silhouette; no consolidation, effusion, pneumothorax, or pulmonary edema — the CXR is to exclude mimics and should not delay treatment.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Clear lung fields with no acute cardiopulmonary process."
+        ],
+        "coreActions": [
+          "identifies a clear/normal film",
+          "explicitly excludes pneumothorax, consolidation, effusion, and pulmonary edema"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents pathology / lets the CXR delay treatment",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Sudden urticaria, angioedema, stridor and wheeze, hypotension, and GI symptoms minutes after a likely nut exposure, with an elevated tryptase, a negative troponin, and a near-normal EKG/CXR. What is your diagnosis and what did you rule out?",
+      "rubric": "Anaphylaxis — multi-system involvement (skin/mucosa + respiratory + cardiovascular + GI) after a likely allergen (6). Cites the supportive elevated tryptase while noting a normal tryptase would not exclude it; explicitly excludes a primary cardiac event (negative troponin, no ischemia on EKG) and isolated angioedema/asthma (4).",
+      "idealAnswer": "Anaphylaxis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes a normal tryptase would not exclude anaphylaxis",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute asthma / bronchospasm",
+        "Angioedema (ACE-inhibitor / hereditary) without anaphylaxis"
+      ],
+      "acceptableAlternatives": [
+        "Vasovagal / septic / other distributive shock",
+        "Acute coronary syndrome causing shock"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH anaphylaxis: IM epinephrine 0.3-0.5 mg (1:1000) into the anterolateral thigh, repeat q5-15 min PRN — FIRST-LINE (CANT-MISS,8); position supine with legs elevated and give high-flow oxygen (3); aggressive IV crystalloid bolus for hypotension (3); protect the airway / prepare for early intubation given stridor & angioedema (3); adjuncts H1/H2 antihistamines and corticosteroids as SECOND-LINE only (2); start an epinephrine infusion / glucagon if refractory (esp. on beta-blockers) (2); observe for biphasic reaction, prescribe an epinephrine auto-injector, allergy referral, and avoidance counseling at discharge (2). PENALTY: giving antihistamines/steroids INSTEAD of or BEFORE epinephrine (-3); discharging without an epinephrine auto-injector / observation (-2).",
+      "idealAnswer": "Give IM epinephrine 0.3-0.5 mg of 1:1000 into the anterolateral thigh immediately and repeat every 5-15 min as needed — this is first-line and the only treatment that reverses the reaction. Place supine with legs elevated, give high-flow oxygen, and bolus IV crystalloid for hypotension. Protect the airway and prepare for early intubation given stridor and angioedema. Add H1/H2 antihistamines and corticosteroids as second-line adjuncts only. For refractory shock start an epinephrine infusion (consider glucagon if on a beta-blocker). Observe for a biphasic reaction (typically up to 4-6+ h), then discharge with an epinephrine auto-injector prescription, allergy/immunology referral, and trigger-avoidance counseling.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "IM epinephrine into the anterolateral thigh (first-line), repeat PRN",
+            "points": 8
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Supine with legs elevated + high-flow oxygen",
+            "points": 3
+          },
+          {
+            "item": "Aggressive IV crystalloid bolus for hypotension",
+            "points": 3
+          },
+          {
+            "item": "Protect airway / prepare for early intubation",
+            "points": 3
+          },
+          {
+            "item": "H1/H2 antihistamines and corticosteroids as second-line adjuncts",
+            "points": 2
+          },
+          {
+            "item": "Epinephrine infusion / glucagon if refractory",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Observe for biphasic reaction; discharge with auto-injector, allergy referral, avoidance counseling",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Antihistamines/steroids instead of or before epinephrine",
+            "points": -3
+          },
+          {
+            "item": "Discharging without an epinephrine auto-injector / observation",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "IM epinephrine into the anterolateral thigh (first-line), repeat PRN"
+      ],
+      "optionalActions": [
+        "Supine with legs elevated + high-flow oxygen",
+        "Aggressive IV crystalloid bolus for hypotension",
+        "Protect airway / prepare for early intubation",
+        "H1/H2 antihistamines and corticosteroids as second-line adjuncts",
+        "Epinephrine infusion / glucagon if refractory",
+        "Observe for biphasic reaction; discharge with auto-injector, allergy referral, avoidance counseling"
+      ],
+      "unsafeActions": [
+        "Antihistamines/steroids instead of or before epinephrine",
+        "Discharging without an epinephrine auto-injector / observation"
+      ],
+      "consults": [
+        "Allergy/Immunology"
+      ],
+      "disposition": "Admit/observe; ICU if refractory shock or airway compromise",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Allergy & Anaphylaxis",
+        "page": 62
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "distressed",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "medication_nonadherence"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "32-year-old woman, anxious and distressed, speaking in short phrases, scratching at hives on her arms and chest. Cooperative but frightened.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "trigger_exposure",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what did you eat",
+        "any new foods",
+        "allergic to anything",
+        "bee sting",
+        "new medication",
+        "possible trigger",
+        "exposure"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language — the dish may have had nuts.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "no_epipen",
+      "category": "meds",
+      "triggerConcepts": [
+        "epinephrine auto-injector",
+        "epipen",
+        "do you carry",
+        "allergy action plan",
+        "rescue medication"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; she does not carry an auto-injector.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration",
+        "how fast"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "throat tightness",
+        "lightheaded",
+        "nausea or vomiting",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time",
+        "ever reacted before"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply — one milder nut reaction years ago.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "cardiopulmonary_negatives",
+      "category": "ros",
+      "triggerConcepts": [
+        "chest pain",
+        "leg swelling",
+        "calf pain",
+        "recent travel",
+        "immobility",
+        "fevers"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply — no chest pain, no calf/leg symptoms, no recent travel, no fevers.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "allergies or asthma"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "beta blocker"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_skin_finding_1",
+      "finding": "Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Skin warm and dry, no rash."
+    },
+    {
+      "id": "inspect_oropharynx_finding_2",
+      "finding": "HEENT: swollen lips and tongue (angioedema); audible inspiratory stridor at the throat; oropharynx without exudate.",
+      "revealedBy": [
+        "inspect_oropharynx"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Lips and tongue not swollen; no stridor; oropharynx clear."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_3",
+      "finding": "Lungs: diffuse expiratory WHEEZE bilaterally with a prolonged expiratory phase.",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 3,
+      "normalIfNotPresent": "No wheezing."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_4",
+      "finding": "Cardiac: tachycardic, regular, no murmur; extremities warm, no edema, no calf tenderness.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No murmur appreciated; rate at the upper limit of normal."
+    },
+    {
+      "id": "assess_for_purpura_finding_5",
+      "finding": "Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.",
+      "revealedBy": [
+        "assess_for_purpura",
+        "assess_for_petechiae"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No purpura or petechiae."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Anaphylaxis",
+    "diagnosticFramework": "32F with sudden difficulty breathing, throat tightness, and a spreading hives rash minutes after eating at a restaurant. The diagnosis is Anaphylaxis, reached by recognizing acute multi-system involvement (skin/mucosa, respiratory, cardiovascular, GI) after a likely allergen, performing the targeted exam, and treating immediately while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "what did you eat / possible trigger",
+      "epinephrine auto-injector / allergy action plan"
+    ],
+    "keyPhysicalExamFindings": [
+      "Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.",
+      "HEENT: swollen lips and tongue (angioedema); audible inspiratory stridor at the throat; oropharynx without exudate.",
+      "Lungs: diffuse expiratory WHEEZE bilaterally with a prolonged expiratory phase.",
+      "Cardiac: tachycardic, regular, no murmur; extremities warm, no edema, no calf tenderness."
+    ],
+    "keyDiagnosticFindings": [
+      "Tryptase",
+      "CBC",
+      "BMP",
+      "Troponin",
+      "Lactate"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Anaphylaxis while explicitly excluding must-not-miss causes.",
+      "Recognize anaphylaxis as a clinical diagnosis and treat immediately; order a focused workup and interpret EKG/CXR and labs without delaying treatment.",
+      "Commit to Anaphylaxis and manage with IM epinephrine, stabilization, adjuncts, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Antihistamines/steroids instead of or before epinephrine",
+      "Discharging without an epinephrine auto-injector / observation"
+    ],
+    "managementPearls": [
+      "IM epinephrine into the anterolateral thigh (first-line), repeat PRN"
+    ],
+    "criticalHistoryItems": [
+      "trigger_exposure",
+      "no_epipen"
+    ],
+    "criticalExamItems": [
+      "inspect_skin",
+      "inspect_oropharynx"
+    ],
+    "criticalWorkupItems": [
+      "Recognize anaphylaxis is a clinical diagnosis — treat immediately, do not wait for labs"
+    ],
+    "criticalManagementItems": [
+      "IM epinephrine into the anterolateral thigh (first-line), repeat PRN"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "Clear film; NO consolidation, effusion, pneumothorax, or pulmonary edema. (CXR mainly to exclude mimics.)"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia without acute ischemic changes.",
+      "Clear lung fields with no acute cardiopulmonary process."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia without acute ischemic changes.",
+      "Clear lung fields with no acute cardiopulmonary process."
+    ],
+    "imageInterpretationPearls": [
+      "A near-normal study is an interpretation task in its own right — confirm it is clean and judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives.",
+      "Do not let confirmatory imaging delay a time-critical, clinical treatment."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's fear and distress",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

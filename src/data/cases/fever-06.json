@@ -1,0 +1,678 @@
+{
+  "id": "fever-06",
+  "category": "Fever",
+  "difficulty": "hard",
+  "title": "Fevers and chills after a trip abroad",
+  "diagnosis": "Malaria in a returning traveler",
+  "chart": {
+    "ageSex": "34M",
+    "cc": "Fevers, chills, and headache since returning from travel",
+    "oneLiner": "34M presents with 5 days of cyclical fevers, rigors, headache, and myalgias that began about a week after returning from West Africa.",
+    "vitals": {
+      "BP": "104/66",
+      "HR": "118",
+      "RR": "22",
+      "Temp": "39.4°C",
+      "SpO2": "96% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I keep getting these terrible fevers and shaking chills since I got back from my trip, and my whole body aches.",
+  "patientFile": "PERSONA: 34-year-old man, flushed and diaphoretic, looks unwell and uncomfortable but is alert. Good historian.\n\nHPI: 5 days of fevers reaching 39-40°C with drenching sweats and bone-shaking rigors, often coming and going every day or two. Severe frontal headache, diffuse myalgias, fatigue, poor appetite, and a few episodes of nausea and loose stools. Returned ~9 days ago from a 3-week trip to rural Nigeria (West Africa) visiting family (only if asked about travel). Took a few doses of malaria prophylaxis early in the trip but stopped because of nausea and did NOT complete it (only if asked specifically about prophylaxis/pills to prevent malaria). Slept in a village without bed nets or air conditioning and had many mosquito bites (only if asked about mosquito exposure/precautions). NO cough, NO dysuria, NO neck stiffness, NO rash, NO bleeding, NO confusion currently. No sick contacts with similar illness.\nPMH: healthy, no chronic illness. MEDS: stopped antimalarial prophylaxis (if asked); no other regular meds. ALLERGIES: none. SOCIAL: works as an engineer; minimal alcohol; no injection drug use; monogamous. IMMUNIZATIONS: had yellow fever and typhoid vaccines before travel, hepatitis A series complete (if asked about vaccines).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented (NO confusion/obtundation).\n- Vitals: BP 104/66, HR 118, RR 22, 39.4°C, SpO2 96% RA.\n- Abdomen: mild splenomegaly and mild tenderness in the left upper quadrant if examined; no peritoneal signs.\n- HEENT/Skin: mild scleral icterus if examined; NO rash, NO petechiae, NO eschar, NO jaundice of the skin.\n- Neuro: alert and oriented, no meningismus, no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the travel history, incomplete prophylaxis, or mosquito exposure unless asked about travel, pills/precautions to prevent malaria, or insect exposure.\n- Splenomegaly and scleral icterus are revealed only if the abdomen/eyes are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "BloodSmear": "Thick and thin Giemsa-stained blood smears: intraerythrocytic ring-form trophozoites of Plasmodium falciparum; parasitemia ~3% on the thin film (quantified). NO Schuffner dots / no banana-shaped gametocytes mandatory but falciparum favored.",
+      "RDT": "Rapid diagnostic test POSITIVE for P. falciparum HRP-2 antigen (confirms species while smear is being read).",
+      "CBC": "Hgb 10.8, Plt 78 (thrombocytopenia — common and supportive), WBC normal (no leukocytosis). Mild anemia.",
+      "Chemistry": "Cr 1.0 (normal renal function), glucose 92 (no hypoglycemia), lactate 1.8 (normal) — these screen for SEVERE malaria; bilirubin mildly elevated (indirect, from hemolysis).",
+      "BloodCultures": "Bacterial blood cultures drawn and PENDING — NO growth (helps exclude typhoid/enteric fever and bacterial sepsis as the cause)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with an otherwise normal tracing; note the baseline QTc because some antimalarials (e.g., quinine, chloroquine, lumefantrine) prolong the QT interval.",
+      "verify": "Source a study matching: Sinus tachycardia with an otherwise normal tracing; useful as a baseline QTc before QT-prolonging antimalarials. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with normal intervals (baseline QTc before antimalarials)",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "normal QTc baseline 12-lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema, a feature of SEVERE malaria.",
+      "verify": "Source a CC chest film that is clear/normal, OR one showing bilateral infiltrates (ARDS); label which it is. Self-host with appropriate credit.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph with clear lung fields (screening for malaria-associated ARDS)",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "ARDS bilateral infiltrates chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "BloodSmear",
+    "RDT",
+    "CBC",
+    "Chemistry",
+    "BloodCultures",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BloodSmear",
+    "RDT",
+    "Chemistry"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this febrile returning traveler (note your leading diagnosis).",
+      "rubric": "Malaria (leading & CANT-MISS,9). Typhoid/enteric fever (CANT-MISS,3). Viral hemorrhagic fever / arboviral illness (dengue, etc.) (core,3). Bacterial sepsis/occult bacteremia (core,2). Acute viral hepatitis or other cosmopolitan infection (core,2). Connects fever pattern + endemic travel + incomplete prophylaxis + splenomegaly/thrombocytopenia to malaria and states malaria must be excluded urgently in any febrile traveler (core,6).",
+      "idealAnswer": "Leading diagnosis: Malaria. Must-not-miss diagnoses to exclude: Typhoid/enteric fever. Also reasonable: Viral hemorrhagic fever / arboviral illness (dengue); Bacterial sepsis/occult bacteremia; Acute viral hepatitis or other cosmopolitan infection.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Malaria",
+            "points": 9
+          },
+          {
+            "item": "Typhoid/enteric fever",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Viral hemorrhagic fever / arboviral illness (dengue)",
+            "points": 3
+          },
+          {
+            "item": "Bacterial sepsis/occult bacteremia",
+            "points": 2
+          },
+          {
+            "item": "Acute viral hepatitis or other cosmopolitan infection",
+            "points": 2
+          },
+          {
+            "item": "Connects fever pattern + endemic travel + incomplete prophylaxis + splenomegaly/thrombocytopenia to malaria and states malaria must be excluded urgently in any febrile traveler",
+            "points": 6
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Typhoid/enteric fever"
+      ],
+      "acceptableAlternatives": [
+        "Viral hemorrhagic fever / arboviral illness (dengue)",
+        "Bacterial sepsis/occult bacteremia",
+        "Acute viral hepatitis or other cosmopolitan infection"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Thick and thin blood smears for malaria parasites with species ID and parasitemia (CANT-MISS,5). Rapid diagnostic test (RDT) for malaria antigen (CANT-MISS,3). CBC with platelets (2). Chemistry/glucose/lactate/bilirubin to assess for SEVERE malaria (2). Blood cultures to exclude typhoid/bacterial sepsis (2). Repeat smears q12-24h x3 if first is negative (1). PENALTY: ruling out malaria on a single negative smear without repeating (-2).",
+      "idealAnswer": "Order: Thick and thin blood smears for malaria parasites with species ID and parasitemia; Rapid diagnostic test (RDT) for malaria antigen; Chemistry/glucose/lactate/bilirubin to assess for SEVERE malaria.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Thick and thin blood smears with species ID and parasitemia",
+            "points": 5
+          },
+          {
+            "item": "Rapid diagnostic test (RDT) for malaria antigen",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "ruling out malaria on a single negative smear without repeating q12-24h x3",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Thick and thin blood smears with species ID and parasitemia",
+        "Rapid diagnostic test (RDT) for malaria antigen"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "ruling out malaria on a single negative smear without repeating q12-24h x3"
+      ],
+      "orderSensitiveActions": [
+        "ruling out malaria on a single negative smear without repeating q12-24h x3"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (consider what you need before treatment).",
+      "rubric": "Findings = sinus tachycardia, otherwise normal; document a baseline QTc. CREDIT: rate & rhythm (5); recognizes a normal/near-normal tracing with sinus tachycardia (5); notes the need for baseline QTc before QT-prolonging antimalarials (quinine, chloroquine, lumefantrine) (3); systematic read (2). PENALTY: missing that the QT matters before antimalarial therapy (-2).",
+      "keyFindings": [
+        "rate & rhythm (sinus tachycardia)",
+        "recognizes a normal/near-normal tracing",
+        "notes the need to document baseline QTc before QT-prolonging antimalarials",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc because some antimalarials prolong the QT interval."
+      ],
+      "commonMistakes": [
+        "ignoring the QT interval before starting an antimalarial that prolongs it"
+      ],
+      "idealAnswer": "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc because antimalarials (quinine, chloroquine, lumefantrine) can prolong the QT.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "rate & rhythm (sinus tachycardia)",
+            "points": 5
+          },
+          {
+            "item": "recognizes a normal/near-normal tracing",
+            "points": 3
+          },
+          {
+            "item": "notes the need to document baseline QTc before QT-prolonging antimalarials",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "ignoring the QT interval before starting an antimalarial that prolongs it",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear lungs; new bilateral infiltrates would suggest malaria-associated ARDS (a severe feature). CREDIT: identifies a clear/normal film (6); recognizes that bilateral infiltrates would indicate malaria-associated ARDS / severe disease (4). PENALTY: inventing pneumonia/consolidation that is not present (-2).",
+      "keyFindings": [
+        "identifies a clear/normal film",
+        "recognizes that bilateral infiltrates would indicate malaria-associated ARDS / severe disease"
+      ],
+      "criticalFindings": [
+        "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema (severe malaria)."
+      ],
+      "commonMistakes": [
+        "inventing pneumonia/consolidation that is not present"
+      ],
+      "idealAnswer": "Clear lung fields; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema, a feature of severe malaria.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria).",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "identifies a clear/normal film",
+            "points": 6
+          },
+          {
+            "item": "recognizes that bilateral infiltrates would indicate malaria-associated ARDS / severe disease",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pneumonia/consolidation that is not present",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Blood smear shows intraerythrocytic ring forms of P. falciparum at ~3% parasitemia, RDT positive, thrombocytopenia, mild anemia, with normal creatinine, glucose, and lactate. What is your diagnosis and what did you rule out?",
+      "rubric": "Malaria — Plasmodium falciparum (6). Cites positive smear/RDT with species and parasitemia; explicitly assesses severity (here UNCOMPLICATED: parasitemia <5%, no end-organ dysfunction, no cerebral/renal/pulmonary involvement, normal lactate/glucose) and notes blood cultures help exclude typhoid/bacterial sepsis (4).",
+      "idealAnswer": "Malaria due to Plasmodium falciparum (currently uncomplicated). ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH approach to malaria: confirm species and parasitemia and assess severity FIRST (CANT-MISS,5); for uncomplicated falciparum start an oral artemisinin-based combination therapy (ACT, e.g., artemether-lumefantrine or atovaquone-proguanil) (CANT-MISS,6); for SEVERE malaria give IV artesunate (4); admit and monitor parasitemia and for complications (hypoglycemia, ARDS, AKI, cerebral malaria) (4); Infectious Disease consult and report to public health (3); supportive care and antipyretics, follow QTc on therapy (2). PENALTY: treating presumed falciparum with chloroquine alone in a region of widespread resistance (-3); discharging a patient with falciparum malaria without confirming species/severity (-1).",
+      "idealAnswer": "Confirm species and quantify parasitemia and assess severity first. Uncomplicated P. falciparum: oral artemisinin-based combination therapy (ACT — artemether-lumefantrine, or atovaquone-proguanil). Severe malaria (parasitemia ≥5%, impaired consciousness, shock, ARDS, AKI, acidosis, hypoglycemia, or significant bleeding): IV artesunate, admit to a monitored/ICU setting. Admit and follow serial parasitemia and complications; treat hypoglycemia; supportive care and antipyretics; monitor QTc on QT-prolonging agents. Infectious Disease consult and notify public health. Do NOT use chloroquine monotherapy for falciparum from a resistant region.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Confirm species/parasitemia and assess severity first",
+            "points": 5
+          },
+          {
+            "item": "Artemisinin-based combination therapy for uncomplicated falciparum",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "IV artesunate for severe malaria",
+            "points": 4
+          },
+          {
+            "item": "Admit and monitor parasitemia and for complications",
+            "points": 4
+          },
+          {
+            "item": "Infectious Disease consult and public health notification",
+            "points": 3
+          },
+          {
+            "item": "Supportive care/antipyretics and follow QTc on therapy",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Counsel on prophylaxis adherence and bed nets for future travel",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Chloroquine monotherapy for falciparum from a resistant region",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Confirm species/parasitemia and assess severity first",
+        "Artemisinin-based combination therapy for uncomplicated falciparum"
+      ],
+      "optionalActions": [
+        "IV artesunate for severe malaria",
+        "Admit and monitor parasitemia and for complications",
+        "Infectious Disease consult and public health notification",
+        "Supportive care/antipyretics and follow QTc on therapy",
+        "Counsel on prophylaxis adherence and bed nets for future travel"
+      ],
+      "unsafeActions": [
+        "Chloroquine monotherapy for falciparum from a resistant region"
+      ],
+      "consults": [
+        "Infectious Disease"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Approach to Fever in the Returning Traveler (Malaria)",
+        "page": 119
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "ill-appearing",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "travel_adherence"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "34-year-old man, flushed and diaphoretic, looks unwell but alert. Good historian.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "travel_history",
+      "category": "exposures",
+      "triggerConcepts": [
+        "travel",
+        "been abroad",
+        "trip",
+        "where have you traveled",
+        "out of the country",
+        "recent travel"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "malaria_prophylaxis",
+      "category": "meds",
+      "triggerConcepts": [
+        "malaria pills",
+        "prophylaxis",
+        "did you take anything to prevent malaria",
+        "antimalarial",
+        "preventive medication for the trip"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "mosquito_exposure",
+      "category": "exposures",
+      "triggerConcepts": [
+        "mosquito bites",
+        "bed nets",
+        "insect repellent",
+        "were you bitten",
+        "insect exposure"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "fever_pattern",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "fever pattern",
+        "does it come and go",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "headache nausea diarrhea"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "infectious_red_flags",
+      "category": "ros",
+      "triggerConcepts": [
+        "neck stiffness",
+        "confusion",
+        "rash",
+        "bleeding",
+        "cough",
+        "trouble breathing"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "immunizations",
+      "category": "exposures",
+      "triggerConcepts": [
+        "vaccines",
+        "immunizations",
+        "shots before travel",
+        "yellow fever typhoid vaccine"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "social_exposures",
+      "category": "social",
+      "triggerConcepts": [
+        "sick contacts",
+        "food and water",
+        "freshwater swimming",
+        "sexual history",
+        "animal contact"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_splenomegaly_finding_1",
+      "finding": "Abdomen: mild splenomegaly and mild tenderness in the left upper quadrant if examined; no peritoneal signs.",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "inspect_sclera_finding_2",
+      "finding": "HEENT/Skin: mild scleral icterus if examined; no rash, no petechiae, no eschar.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Sclerae anicteric."
+    },
+    {
+      "id": "assess_general_appearance_finding_3",
+      "finding": "General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Patient is alert and in no acute distress."
+    },
+    {
+      "id": "assess_mental_status_finding_4",
+      "finding": "Neuro: alert and oriented, no meningismus, no focal deficit (NO confusion/obtundation to suggest cerebral malaria).",
+      "revealedBy": [
+        "assess_mental_status",
+        "assess_neck_stiffness"
+      ],
+      "importance": "critical",
+      "points": 4,
+      "normalIfNotPresent": "Alert and oriented; mental status grossly normal."
+    },
+    {
+      "id": "assess_for_petechiae_finding_5",
+      "finding": "HEENT/Skin: no rash, no petechiae, no eschar, no jaundice of the skin.",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No petechiae."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Malaria in a returning traveler",
+    "diagnosticFramework": "34M presents with 5 days of cyclical fevers, rigors, headache, and myalgias that began about a week after returning from West Africa. The diagnosis is Malaria in a returning traveler, reached by eliciting the focused travel/exposure history, performing the targeted exam, and interpreting the directed workup (blood smear, RDT, severity labs) while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "travel to a malaria-endemic region (West Africa)",
+      "incomplete malaria prophylaxis",
+      "mosquito exposure without bed nets"
+    ],
+    "keyPhysicalExamFindings": [
+      "Abdomen: mild splenomegaly and mild tenderness in the left upper quadrant if examined; no peritoneal signs.",
+      "HEENT/Skin: mild scleral icterus if examined; no rash, no petechiae, no eschar.",
+      "General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented.",
+      "Neuro: alert and oriented, no meningismus, no focal deficit (NO confusion/obtundation to suggest cerebral malaria)."
+    ],
+    "keyDiagnosticFindings": [
+      "BloodSmear",
+      "RDT",
+      "CBC",
+      "Chemistry",
+      "BloodCultures"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items (travel, prophylaxis, exposures) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (splenomegaly, mental status, scleral icterus).",
+      "Build a differential led by Malaria while explicitly excluding must-not-miss causes (typhoid/enteric fever).",
+      "Order a focused workup (thick/thin smears, RDT, severity labs) and interpret EKG/CXR and labs.",
+      "Commit to Malaria, assess severity, and manage with species-appropriate therapy, monitoring, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Chloroquine monotherapy for falciparum from a resistant region",
+      "Ruling out malaria on a single negative smear without repeating"
+    ],
+    "managementPearls": [
+      "Confirm species/parasitemia and assess severity first",
+      "Artemisinin-based combination therapy for uncomplicated falciparum"
+    ],
+    "criticalHistoryItems": [
+      "travel_history",
+      "malaria_prophylaxis"
+    ],
+    "criticalExamItems": [
+      "assess_splenomegaly",
+      "assess_mental_status"
+    ],
+    "criticalWorkupItems": [
+      "Thick and thin blood smears with species ID and parasitemia",
+      "Rapid diagnostic test (RDT) for malaria antigen"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+      "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria)."
+    ],
+    "criticalManagementItems": [
+      "Confirm species/parasitemia and assess severity first",
+      "Artemisinin-based combination therapy for uncomplicated falciparum"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+      "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+      "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

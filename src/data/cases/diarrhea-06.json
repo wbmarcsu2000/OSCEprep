@@ -1,0 +1,694 @@
+{
+  "id": "diarrhea-06",
+  "category": "Diarrhea",
+  "difficulty": "moderate",
+  "title": "Two weeks of greasy, foul-smelling diarrhea and bloating",
+  "diagnosis": "Giardiasis",
+  "chart": {
+    "ageSex": "34M",
+    "cc": "Prolonged diarrhea and bloating",
+    "oneLiner": "34M presents with about two weeks of greasy, foul-smelling diarrhea, bloating, excessive gas, cramps, and a few pounds of weight loss after a backcountry camping trip.",
+    "vitals": {
+      "BP": "122/76",
+      "HR": "84",
+      "RR": "14",
+      "Temp": "37.0°C",
+      "SpO2": "99% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had this awful diarrhea for a couple of weeks now — it's really greasy and smells terrible, and I'm so bloated and gassy I can't get comfortable.",
+  "patientFile": "PERSONA: 34-year-old man, mildly tired but well-appearing, a bit thinner than usual. Good historian, slightly embarrassed about the gas and smell.\n\nHPI: About 2 weeks of loose, greasy, foul-smelling, sometimes floating stools (4–6x/day), with marked bloating, belching, sulfur-tasting ('rotten egg') burps, abdominal cramping, and a lot of flatulence. Reports roughly 3–4 lb (1.5 kg) of weight loss and reduced appetite. Symptoms are subacute and persistent (NOT acute and self-limited). Went on a week-long backcountry hiking/camping trip ~3 weeks ago and drank water from a mountain stream filtered only with a basic cloth, not boiled or treated (only if asked about travel/outdoor exposure/water source). No daycare contact but has a toddler nephew he sees often (only if asked about sick contacts/childcare). NO blood in stool, NO mucus, NO high fever, NO nocturnal diarrhea waking him, NO recent antibiotics, NO international travel, NO immunosuppression/HIV risk factors. Lactose intolerance has worsened — dairy now makes the bloating much worse (only if asked about diet/triggers).\nPMH: none significant. MEDS: none; no recent antibiotics; takes occasional ibuprofen for headaches. SOCIAL: drinks 2–3 beers on weekends; non-smoker; works in IT; monogamous, no high-risk sexual exposures. FAMILY: no IBD or celiac disease known.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, mildly fatigued, slightly thin; afebrile.\n- Vitals: BP 122/76, HR 84, RR 14, 37.0°C, SpO2 99% RA.\n- Mucous membranes: slightly dry but no severe dehydration.\n- Abdomen: soft, mildly distended/bloated with hyperactive bowel sounds and mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the camping trip or untreated stream water unless asked about travel, the outdoors, or water source/exposures.\n- Do NOT volunteer the toddler nephew unless asked about sick contacts or childcare exposure.\n- Do NOT volunteer the worsened dairy intolerance unless asked about diet or what makes symptoms worse.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "StoolOvaParasites": "Stool ova & parasites: Giardia lamblia trophozoites and cysts seen on microscopy (sensitivity improves with repeat sampling).",
+      "StoolGiardiaAntigen": "Stool Giardia antigen (EIA/immunoassay) POSITIVE — confirms giardiasis (more sensitive than single O&P).",
+      "StoolCultureAndPanel": "Routine bacterial stool culture NEGATIVE; multiplex GI pathogen panel positive for Giardia, negative for Salmonella/Shigella/Campylobacter/STEC.",
+      "FecalLeukocytesAndCdiff": "Fecal leukocytes ABSENT and fecal occult blood NEGATIVE (non-inflammatory diarrhea); C. difficile toxin NEGATIVE.",
+      "CBC": "WBC normal (no significant eosinophilia), Hgb 14.6, Plt 255 — no leukocytosis.",
+      "BMP": "Na 139, K 4.0, BUN 16, Cr 0.9 — mild dehydration only, normal renal function."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Normal sinus rhythm at ~80 bpm; normal axis and intervals; no acute ischemic changes or chamber abnormality.",
+      "verify": "Source a study matching: Normal sinus rhythm at ~80 bpm; normal axis and intervals; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing normal sinus rhythm without acute changes",
+      "searchTerms": [
+        "normal sinus rhythm ECG",
+        "normal 12-lead ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields, normal cardiomediastinal silhouette, no free air under the diaphragm, no consolidation or effusion.",
+      "verify": "Source a study matching: Clear lung fields, normal cardiomediastinal silhouette, no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph with no acute process",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph no acute process"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "StoolOvaParasites",
+    "StoolGiardiaAntigen",
+    "StoolCultureAndPanel",
+    "FecalLeukocytesAndCdiff",
+    "CBC",
+    "BMP",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "StoolGiardiaAntigen",
+    "StoolOvaParasites",
+    "FecalLeukocytesAndCdiff"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this prolonged diarrhea (note your leading diagnosis).",
+      "rubric": "Giardiasis / protozoal parasitic diarrhea after untreated water (leading,7). Inflammatory bowel disease — Crohn's/UC (CANT-MISS to exclude,4). Celiac disease / malabsorption (CANT-MISS to exclude,3). Other parasites (Cryptosporidium, Cyclospora, Entamoeba) (core,3). Post-infectious IBS / secondary lactose intolerance (core,3). Names a non-inflammatory malabsorptive diarrhea with water/outdoor exposure and the imperative to exclude IBD and celiac (core,5).",
+      "idealAnswer": "Leading diagnosis: Giardiasis (protozoal parasitic diarrhea after untreated stream water). Must-not-miss diagnoses to exclude: Inflammatory bowel disease (Crohn's/UC); Celiac disease/malabsorption. Also reasonable: other parasites (Cryptosporidium, Cyclospora, Entamoeba); post-infectious IBS or secondary lactose intolerance.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Giardiasis / protozoal parasitic diarrhea",
+            "points": 7
+          },
+          {
+            "item": "Inflammatory bowel disease (Crohn's/UC)",
+            "points": 4
+          },
+          {
+            "item": "Celiac disease / malabsorption",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Other parasites (Cryptosporidium, Cyclospora, Entamoeba)",
+            "points": 3
+          },
+          {
+            "item": "Post-infectious IBS / secondary lactose intolerance",
+            "points": 3
+          },
+          {
+            "item": "Names a non-inflammatory malabsorptive diarrhea with water/outdoor exposure and the need to exclude IBD and celiac",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Inflammatory bowel disease (Crohn's/UC)",
+        "Celiac disease / malabsorption"
+      ],
+      "acceptableAlternatives": [
+        "Other parasites (Cryptosporidium, Cyclospora, Entamoeba)",
+        "Post-infectious IBS / secondary lactose intolerance"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Stool Giardia antigen (EIA) and/or stool ova & parasites (CANT-MISS,5). Stool studies — culture and multiplex GI pathogen panel to exclude bacterial causes (3). Fecal leukocytes / occult blood and C. difficile toxin to characterize as non-inflammatory (2). CBC (1). BMP for hydration/electrolytes (2). Consider celiac serologies (tTG-IgA) if symptoms persist (1). Consider O&P x3 or repeat antigen given intermittent shedding (1). PENALTY: empiric broad-spectrum antibiotics or steroids before stool testing (-2).",
+      "idealAnswer": "Order: Stool Giardia antigen (EIA) and/or stool ova & parasites; Stool culture and multiplex GI pathogen panel; Fecal leukocytes/occult blood and C. difficile toxin.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Stool Giardia antigen (EIA) and/or stool ova & parasites",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Stool culture and multiplex GI pathogen panel",
+            "points": 3
+          },
+          {
+            "item": "Fecal leukocytes/occult blood and C. difficile toxin",
+            "points": 2
+          },
+          {
+            "item": "BMP for hydration/electrolytes",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Repeat O&P x3 or repeat antigen given intermittent cyst shedding",
+            "points": 1
+          },
+          {
+            "item": "Celiac serologies (tTG-IgA) if symptoms persist",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Empiric broad-spectrum antibiotics or steroids before stool testing",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Stool Giardia antigen (EIA) and/or stool ova & parasites"
+      ],
+      "optionalTests": [
+        "Stool culture and multiplex GI pathogen panel",
+        "Fecal leukocytes/occult blood and C. difficile toxin",
+        "BMP for hydration/electrolytes",
+        "CBC",
+        "Repeat O&P x3 or repeat antigen given intermittent cyst shedding",
+        "Celiac serologies (tTG-IgA) if symptoms persist"
+      ],
+      "contraindicatedTests": [
+        "Empiric broad-spectrum antibiotics or steroids before stool testing"
+      ],
+      "orderSensitiveActions": [
+        "Empiric broad-spectrum antibiotics or steroids before stool testing"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = normal sinus rhythm, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes or electrolyte effect (5); systematic read (3). PENALTY: inventing pathology / over-calling ischemia (-3).",
+      "keyFindings": [
+        "normal sinus rhythm at ~80 bpm with normal axis and intervals",
+        "no acute ischemic changes; comments on absence of electrolyte effect"
+      ],
+      "criticalFindings": [
+        "Normal sinus rhythm; no acute ischemic or electrolyte abnormality."
+      ],
+      "commonMistakes": [
+        "over-calling nonspecific changes as ischemia",
+        "failing to comment on electrolyte effects in a patient with GI losses"
+      ],
+      "idealAnswer": "Normal sinus rhythm at ~80 bpm, normal axis and intervals, no acute ischemic changes; a useful baseline and screen for electrolyte effects given GI losses.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Normal sinus rhythm; no acute ischemic or electrolyte abnormality."
+        ],
+        "coreActions": [
+          "normal sinus rhythm at ~80 bpm with normal axis and intervals",
+          "no acute ischemic changes; comments on absence of electrolyte effect"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents pathology / over-calls ischemia",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield in this presentation and absence of free air (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "clear lungs, normal cardiomediastinal silhouette",
+        "no free air under the diaphragm; low yield in this presentation"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process; no free air."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate or effusion on a normal film",
+        "ordering it reflexively without a clear indication"
+      ],
+      "idealAnswer": "Normal chest film: clear lungs, normal cardiomediastinal silhouette, and no free air under the diaphragm; low yield in a non-toxic patient with diarrhea but reassuring against a surgical abdomen.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "No acute cardiopulmonary process; no free air."
+        ],
+        "coreActions": [
+          "clear lungs, normal cardiomediastinal silhouette",
+          "no free air under the diaphragm; low yield in this presentation"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study abnormal / invents pathology",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Stool shows a positive Giardia antigen with cysts/trophozoites on O&P, absent fecal leukocytes, no occult blood, negative bacterial culture, and negative C. difficile. What is your diagnosis and what did you rule out?",
+      "rubric": "Giardiasis (6). Cites the positive Giardia antigen/O&P with a non-inflammatory pattern (absent fecal leukocytes, no occult blood) and explicitly rules out bacterial gastroenteritis and inflammatory causes (IBD); notes celiac remains a consideration only if symptoms persist after treatment (4).",
+      "idealAnswer": "Giardiasis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH diarrhea/parasitic infection: first-line anti-Giardia therapy — tinidazole single dose or metronidazole 5–7 days (nitazoxanide alternative) (CANT-MISS,7); oral rehydration and electrolyte repletion (4); counsel to avoid alcohol with metronidazole/tinidazole (disulfiram-like reaction) (3); treat transient lactose intolerance with temporary dairy avoidance (3); public health/exposure counseling — water treatment (boil/filter/treat), hand hygiene to prevent fecal-oral spread (3); arrange follow-up and re-treat or test for resistance if symptoms persist (2). PENALTY: empiric fluoroquinolone/antibacterial as if bacterial (-2); prescribing metronidazole/tinidazole without alcohol-avoidance counseling (-2).",
+      "idealAnswer": "Treat with anti-Giardia therapy: tinidazole 2 g single dose (or metronidazole 250 mg TID for 5–7 days; nitazoxanide is an alternative, especially in children). Provide oral rehydration and electrolyte repletion. Counsel strict alcohol avoidance during and for 3 days after metronidazole/tinidazole (disulfiram-like reaction). Advise temporary dairy avoidance for the transient post-Giardia lactose intolerance. Give exposure/public-health counseling: treat or boil backcountry water, good hand hygiene, and care around the toddler to prevent fecal-oral spread. Arrange follow-up; if symptoms persist, re-treat (consider an alternate agent for resistance) and reconsider celiac disease.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Oral rehydration and electrolyte repletion",
+            "points": 4
+          },
+          {
+            "item": "Counsel alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction)",
+            "points": 3
+          },
+          {
+            "item": "Temporary dairy avoidance for transient lactose intolerance",
+            "points": 3
+          },
+          {
+            "item": "Exposure/public-health counseling — water treatment and hand hygiene",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Follow-up and re-treatment / resistance consideration if symptoms persist",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Empiric antibacterial therapy as if bacterial gastroenteritis",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)"
+      ],
+      "optionalActions": [
+        "Oral rehydration and electrolyte repletion",
+        "Counsel alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction)",
+        "Temporary dairy avoidance for transient lactose intolerance",
+        "Exposure/public-health counseling — water treatment and hand hygiene",
+        "Follow-up and re-treatment / resistance consideration if symptoms persist"
+      ],
+      "unsafeActions": [
+        "Empiric antibacterial therapy as if bacterial gastroenteritis"
+      ],
+      "consults": [],
+      "disposition": "Outpatient",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Diarrhea (Parasitic / Giardiasis)",
+        "page": 78
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "frustrated",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "sexual_history"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information; slightly embarrassed about gas and odor",
+    "affect": "34-year-old man, mildly tired but well-appearing, slightly thin. Good historian, a bit embarrassed.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "how long",
+        "onset",
+        "duration"
+      ],
+      "response": "It's been going on for about two weeks now — it just won't quit.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "stool_character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the stool",
+        "what does it look like",
+        "greasy or watery",
+        "blood or mucus",
+        "character of the diarrhea",
+        "does it float"
+      ],
+      "response": "It's loose and really greasy — kind of pale and it sometimes floats, and it smells absolutely terrible. There's no blood or slime in it, though.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "bloating_gas_burps",
+      "category": "hpi",
+      "triggerConcepts": [
+        "bloating",
+        "gas",
+        "belching",
+        "burping",
+        "rotten egg burps",
+        "flatulence",
+        "associated symptoms"
+      ],
+      "response": "I'm hugely bloated and gassy, and I keep getting these awful burps that taste like rotten eggs or sulfur. The cramps come and go.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "water_outdoor_exposure",
+      "category": "exposures",
+      "triggerConcepts": [
+        "travel",
+        "camping",
+        "hiking",
+        "outdoors",
+        "drinking water",
+        "stream or lake water",
+        "untreated water",
+        "where did you get your water"
+      ],
+      "response": "I did a week-long backcountry camping trip about three weeks ago. I drank water straight from a mountain stream — I only ran it through a cloth, I didn't boil or treat it.",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "sick_contacts_childcare",
+      "category": "exposures",
+      "triggerConcepts": [
+        "sick contacts",
+        "anyone else sick",
+        "daycare",
+        "children",
+        "childcare exposure"
+      ],
+      "response": "No daycare myself, but I babysit my toddler nephew a lot — I change his diapers sometimes. No one else has been sick that I know of.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diet_triggers",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "diet",
+        "dairy or milk",
+        "food triggers",
+        "aggravating"
+      ],
+      "response": "Dairy seems to make the bloating and gas way worse lately — milk and cheese really set me off, more than they used to.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "weight_appetite",
+      "category": "ros",
+      "triggerConcepts": [
+        "weight loss",
+        "appetite",
+        "have you lost weight",
+        "eating less"
+      ],
+      "response": "I've lost maybe three or four pounds and I just don't feel that hungry.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "red_flag_negatives",
+      "category": "ros",
+      "triggerConcepts": [
+        "fever",
+        "blood in stool",
+        "night-time diarrhea",
+        "waking at night",
+        "high fever"
+      ],
+      "response": "No real fever, no blood in the stool, and it doesn't wake me up at night.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "recent antibiotics",
+        "what do you take",
+        "any new drugs"
+      ],
+      "response": "I don't take anything regular and I haven't had any antibiotics. Just the odd ibuprofen for a headache.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "social_alcohol_sexual",
+      "category": "social",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "sexual history",
+        "hiv risk"
+      ],
+      "response": "I have two or three beers on the weekend. I'm in a monogamous relationship — no risky sexual stuff, and no reason to think I'd have HIV.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_general_appearance_finding_1",
+      "finding": "General: well-appearing, mildly fatigued, slightly thin; afebrile.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Well-appearing, no distress."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_2",
+      "finding": "Mucous membranes: slightly dry but no severe dehydration.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes, well hydrated."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_3",
+      "finding": "Abdomen: hyperactive bowel sounds with mild distension/bloating.",
+      "revealedBy": [
+        "auscultate_bowel_sounds",
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds; abdomen flat."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_4",
+      "finding": "Abdomen: soft with mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly.",
+      "revealedBy": [
+        "palpate_all_quadrants",
+        "assess_guarding"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Soft, non-tender, no peritoneal signs."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Giardiasis",
+    "diagnosticFramework": "34M presents with about two weeks of greasy, foul-smelling diarrhea, bloating, sulfur burps, cramps, and weight loss after a backcountry camping trip with untreated stream water. The diagnosis is Giardiasis, reached by eliciting the focused history (subacute non-inflammatory malabsorptive diarrhea with a clear water exposure), performing the targeted abdominal/hydration exam, and interpreting the directed stool workup while excluding the must-not-miss alternatives (IBD and celiac disease).",
+    "keyHistoryClues": [
+      "Subacute (>1 week) greasy, foul-smelling, floating stools without blood or mucus",
+      "Marked bloating, flatulence, and sulfur/rotten-egg belching",
+      "Untreated mountain stream water on a backcountry trip ~3 weeks ago",
+      "Weight loss with new/worsened dairy (lactose) intolerance suggesting malabsorption",
+      "Absence of fever, blood, and nocturnal diarrhea"
+    ],
+    "keyPhysicalExamFindings": [
+      "General: well-appearing, mildly fatigued, slightly thin; afebrile.",
+      "Mucous membranes: slightly dry but no severe dehydration.",
+      "Abdomen: hyperactive bowel sounds with mild distension/bloating.",
+      "Abdomen: soft with mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly."
+    ],
+    "keyDiagnosticFindings": [
+      "StoolOvaParasites",
+      "StoolGiardiaAntigen",
+      "StoolCultureAndPanel",
+      "FecalLeukocytesAndCdiff",
+      "CBC",
+      "BMP"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including the water/outdoor exposure and dietary triggers only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal a soft, non-peritoneal, bloated abdomen and mild dehydration.",
+      "Build a differential led by Giardiasis while explicitly excluding must-not-miss causes (IBD and celiac disease).",
+      "Order a focused, order-sensitive workup (stool Giardia antigen/O&P, bacterial studies, fecal leukocytes) and interpret EKG/CXR and labs.",
+      "Commit to Giardiasis and manage with anti-Giardia therapy, rehydration, alcohol/dairy counseling, exposure prevention, and follow-up."
+    ],
+    "commonPitfalls": [
+      "Empiric antibacterial therapy as if bacterial gastroenteritis",
+      "Prescribing metronidazole/tinidazole without counseling alcohol avoidance (disulfiram-like reaction)",
+      "Sending a single O&P and stopping when negative despite intermittent cyst shedding",
+      "Missing the water/outdoor exposure history",
+      "Failing to consider celiac/IBD as persistent-symptom mimics"
+    ],
+    "managementPearls": [
+      "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)",
+      "Counsel alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction)",
+      "Temporary dairy avoidance for transient post-Giardia lactose intolerance"
+    ],
+    "criticalHistoryItems": [
+      "stool_character",
+      "bloating_gas_burps",
+      "water_outdoor_exposure"
+    ],
+    "criticalExamItems": [
+      "palpate_all_quadrants"
+    ],
+    "criticalWorkupItems": [
+      "Stool Giardia antigen (EIA) and/or stool ova & parasites"
+    ],
+    "criticalInterpretationItems": [
+      "Normal sinus rhythm; no acute ischemic or electrolyte abnormality.",
+      "No acute cardiopulmonary process; no free air (low yield)."
+    ],
+    "criticalManagementItems": [
+      "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)"
+    ],
+    "keyImageInterpretationFindings": [
+      "Normal sinus rhythm; no acute ischemic or electrolyte abnormality.",
+      "No acute cardiopulmonary process; no free air."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Normal sinus rhythm; no acute ischemic or electrolyte abnormality.",
+      "No acute cardiopulmonary process; no free air."
+    ],
+    "imageInterpretationPearls": [
+      "A normal study is an interpretation task in its own right — confirm it systematically and state its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Normalizes embarrassing symptoms (gas, odor) to put the patient at ease",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions (alcohol, sexual history)",
+        "points": 1
+      },
+      {
+        "item": "Explains the diagnosis and treatment in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding and counsels on exposure prevention",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

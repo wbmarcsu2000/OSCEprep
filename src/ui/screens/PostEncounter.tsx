@@ -3,6 +3,7 @@ import type { CaseModel, StepModel } from "../../engine/types";
 import { ChartSummary } from "../components/ChartSummary";
 import { Scratchpad } from "../components/Scratchpad";
 import { StudyImage, LabResults } from "../components/DiagnosticReader";
+import { StepTeaching } from "../components/StepTeaching";
 import { RailTabs, panelId } from "../components/RailTabs";
 import { readingGuideFor } from "../../data/readingGuides";
 import { itemMatches } from "../../engine/textMatch";
@@ -186,34 +187,62 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
               onClick={commitWorkupStep}
               title="Locks in your orders and releases results"
             >
-              📋 Commit orders &amp; receive results
+              📋 Commit orders &amp; reveal results
             </button>
           )}
 
-          {/* Action row */}
-          <div className="flex justify-between items-center gap-3 pt-1 flex-wrap">
-            <div className="flex gap-2 items-center">
-              <button className="btn btn-ghost" disabled={stepIdx === 0 || grading} onClick={() => goto(stepIdx - 1)}>
-                ← Previous
-              </button>
-              {isPractice ? (
-                <button
-                  className="btn"
-                  disabled={grading}
-                  onClick={() => setRevealed((r) => ({ ...r, [step.id]: !r[step.id] }))}
-                  style={revealed[step.id] ? undefined : { color: "var(--color-exam-accent-deep)", borderColor: "var(--color-exam-accent)" }}
-                >
-                  {revealed[step.id] ? "Hide answer" : "Show correct answer"}
-                </button>
-              ) : (
-                <span className="chip" title="Strict OSCE: model answers are shown in feedback after you submit">
-                  🔒 answers unlock in feedback
-                </span>
-              )}
-            </div>
-            {!isLast ? (
-              <button className="btn btn-primary" disabled={grading} onClick={() => goto(stepIdx + 1)}>Next step →</button>
-            ) : confirmSubmit ? (
+          {/* Action row. In Practice the step is a guided answer → reveal →
+              learn loop: you reveal the model answer + teaching before moving
+              on. In Strict the answers stay locked until final feedback. */}
+          {(() => {
+            const isWorkupStep = step.revealsDiagnostics;
+            const stepRevealed = isWorkupStep ? engine.labsRevealed : !!revealed[step.id];
+            const canAdvance = !isPractice || stepRevealed;
+            return (
+              <div className="flex justify-between items-center gap-3 pt-1 flex-wrap">
+                <div className="flex gap-2 items-center">
+                  <button className="btn btn-ghost" disabled={stepIdx === 0 || grading} onClick={() => goto(stepIdx - 1)}>
+                    ← Previous
+                  </button>
+                  {isPractice ? (
+                    isWorkupStep ? null : !stepRevealed ? (
+                      <button
+                        className="btn btn-primary"
+                        disabled={grading}
+                        onClick={() => setRevealed((r) => ({ ...r, [step.id]: true }))}
+                        title="See the model answer and the teaching for this step"
+                      >
+                        ✨ Reveal answer &amp; teaching
+                      </button>
+                    ) : (
+                      <button
+                        className="btn btn-ghost text-[12.5px]"
+                        disabled={grading}
+                        onClick={() => setRevealed((r) => ({ ...r, [step.id]: false }))}
+                      >
+                        Hide
+                      </button>
+                    )
+                  ) : (
+                    <span className="chip" title="Strict OSCE: model answers are shown in feedback after you submit">
+                      🔒 answers unlock in feedback
+                    </span>
+                  )}
+                </div>
+                {!isLast ? (
+                  <span className="flex items-center gap-2">
+                    {isPractice && !canAdvance && (
+                      <span className="hint">reveal to continue</span>
+                    )}
+                    <button
+                      className="btn btn-primary"
+                      disabled={grading || !canAdvance}
+                      onClick={() => goto(stepIdx + 1)}
+                    >
+                      Next step →
+                    </button>
+                  </span>
+                ) : confirmSubmit ? (
               <span
                 className="flex gap-2 items-center flex-wrap justify-end"
                 role="alertdialog"
@@ -234,20 +263,31 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
                 </button>
                 <button autoFocus className="btn" disabled={grading} onClick={() => setConfirmSubmit(false)}>Not yet</button>
               </span>
-            ) : (
-              <button className="btn btn-primary" disabled={grading} onClick={() => setConfirmSubmit(true)}>Finish &amp; submit →</button>
-            )}
-          </div>
+                ) : (
+                  <button className="btn btn-primary" disabled={grading} onClick={() => setConfirmSubmit(true)}>Finish &amp; submit →</button>
+                )}
+              </div>
+            );
+          })()}
 
-          {isPractice && revealed[step.id] && <AnswerKey step={step} answer={answer} expertRead={image?.expertRead} />}
+          {/* Reveal panel (Practice): model answer comparison + the teaching for
+              this waypoint. The workup step reveals via committing orders. */}
+          {isPractice && (revealed[step.id] || (step.revealsDiagnostics && engine.labsRevealed)) && (
+            <div className="space-y-3">
+              <AnswerKey step={step} answer={answer} expertRead={image?.expertRead} />
+              <StepTeaching category={caseModel.category} stepId={step.id} />
+            </div>
+          )}
         </div>
 
         <LabResults caseModel={caseModel} />
 
         <p className="hint text-center">
           {answeredCount}/{steps.length} answered ·{" "}
-          {isPractice ? "“Show correct answer” is a study aid" : "answers stay locked until feedback"} — your
-          score and {llmEnabled ? "AI coaching" : "feedback"} come when you submit.
+          {isPractice
+            ? "answer each step, then reveal the model answer + teaching before moving on"
+            : "answers stay locked until feedback"}{" "}
+          — your score and {llmEnabled ? "AI coaching" : "feedback"} come when you submit.
         </p>
       </div>
 
