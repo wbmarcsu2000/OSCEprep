@@ -196,15 +196,15 @@ export function Home() {
               →
             </button>
             <button
-              className="btn px-5 py-2.5 text-sm text-white"
-              style={{ background: "rgba(255,255,255,0.14)", borderColor: "rgba(255,255,255,0.35)" }}
+              className="btn px-5 py-2.5 text-sm"
+              style={{ background: "rgba(255,255,255,0.22)", borderColor: "rgba(255,255,255,0.6)", color: "#fff" }}
               onClick={() => setView("select")}
             >
               Browse all {manifest.cases.length}
             </button>
             <button
-              className="btn px-5 py-2.5 text-sm text-white"
-              style={{ background: "rgba(255,255,255,0.14)", borderColor: "rgba(255,255,255,0.35)" }}
+              className="btn px-5 py-2.5 text-sm"
+              style={{ background: "rgba(255,255,255,0.22)", borderColor: "rgba(255,255,255,0.6)", color: "#fff" }}
               onClick={showEnableAi}
             >
               {llmEnabled ? "🟢 AI on" : "Enable AI (Claude / GPT)"}
