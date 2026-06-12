@@ -322,3 +322,53 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     — no AI call, so AI usage stays batched at final submit. An AI status chip
     states where AI is used; the deterministic self-check keeps the formative
     loop instant while grading/coaching run once on submit.
+45. **UI v3 — "Vivid" design language + light gamification.** Full visual
+    redesign for energy and return-visits without touching the engine. Tokens
+    (`src/index.css`) keep their v2 names so every screen reskins centrally:
+    electric-violet primary (#6D4AFF) on lavender-white (#F5F4FC), a pop palette
+    (teal/coral/sun/sky/pink) reserved for category coding + celebration, Nunito
+    rounded type, 16px-radius cards with violet-tinted shadows, pill buttons with
+    gradient primary, and motion primitives (pop-in, shimmer progress, flame
+    flicker, confetti, count-up) gated behind `prefers-reduced-motion`.
+    Gamification (`src/ui/gamification.ts`, pure + tested) derives everything
+    from the existing attempt log — XP (score + excellence/safety bonuses), a
+    10-level Observer→Attending ladder, calendar-day streaks (alive-until-
+    midnight grace), and 13 deterministic badges — so there is no new
+    persistence. Surfaces: header streak/level chip, Home stats row + gradient
+    hero, Station Library as a category-color card grid with best-score stars +
+    search, staged timer urgency (amber <2 min, red pulse <1 min), an animated
+    scorecard, a band-toned celebration hero on Feedback (+XP, new badges,
+    confetti only at ≥70, supportive sky tone below 55 — never punitive red),
+    and an Analytics badge wall. Clinical surfaces stay restrained: vitals,
+    timers, and scores remain mono-on-neutral; the pop palette never carries
+    rubric meaning.
+46. **Round 5 — workflow/structure/a11y overhaul (full-app audit → fix).** A
+    6-dimension audit (bugs/UX/design/a11y/quality/gaps) drove this round.
+    Integrity fixes: (a) resume is now OPT-IN — an interrupted session surfaces
+    as a banner (Resume/Discard) instead of silently re-entering, because a
+    stale strict-mode wall-clock deadline used to auto-submit a half-empty
+    attempt into analytics on the first tick; accepting re-bases the deadline
+    (timer pauses while away, min 5s grace). (b) Post-encounter timer expiry
+    now routes through the SAME submission pipeline as the button (AI rubric
+    matching + coaching) instead of the engine's bare deterministic
+    auto-submit; a grading overlay (store.grading) discloses the wait and
+    freezes inputs; double-submit guarded by re-reading state post-await.
+    (c) "Show correct answer" is Practice-only; Strict shows "🔒 answers unlock
+    in feedback" and discloses auto-submit. (d) LLM failures are no longer
+    silent: provider catch blocks report through setLlmFallbackListener →
+    store.aiDegraded → amber notices (SpConversation strip, AiChip), and
+    coaching persists onto the saved review (attachCoaching) with a stale-case
+    guard. Structure: hash routing (#/stations, #/review/<id>…) with
+    Back-button support (backing out of a live station opens the confirm-exit
+    flow); setView replaced five showX actions; mode preference persisted
+    (osce.mode, first-run defaults to Practice); EnableAiPanel + RailTabs
+    (real tablist semantics) extracted. Learning loop: Coach's pick
+    (recommendNext: weakest category → retry-your-worst → fresh) on Home +
+    Analytics; per-case attempt trends on cards and review; review deep links.
+    A11y: WCAG contrast pass (faint→#6e6b8a (AA on white AND the lavender surfaces), ghost token for decorative
+    glyphs, dark-ink text on light gradient heroes, categoryFlair.deep tones),
+    aria-live conversation log, roving-tabindex tabs, focus-managed confirms,
+    dvh-based panel heights, reduced-motion coverage. PWA: self-hosted Nunito,
+    real PNG icon set (any+maskable+apple-touch), network-first service worker
+    (prod only), Analytics data export/import/reset. 103 tests (store
+    orchestration + recommendation/streak edges added).

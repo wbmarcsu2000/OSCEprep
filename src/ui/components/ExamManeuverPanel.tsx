@@ -24,7 +24,7 @@ export function ExamManeuverPanel() {
     return (
       <button
         key={m.id}
-        className="w-full text-left px-3.5 py-2 text-[13.5px] flex items-center justify-between gap-2 transition-colors hover:bg-[#f4f7fb] disabled:opacity-50 group"
+        className="w-full text-left px-3.5 py-2 text-[13.5px] flex items-center justify-between gap-2 transition-colors hover:bg-[var(--color-exam-accent-soft)] focus-visible:bg-[var(--color-exam-accent-soft)] disabled:opacity-50 group"
         disabled={locked}
         onClick={() => performManeuver(m.id)}
       >
@@ -37,7 +37,7 @@ export function ExamManeuverPanel() {
           </span>
         ) : (
           <span
-            className="text-[11px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity shrink-0"
+            className="text-[11px] font-semibold opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity shrink-0"
             style={{ color: "var(--color-exam-accent)" }}
           >
             perform →
@@ -52,7 +52,7 @@ export function ExamManeuverPanel() {
       <div className="px-3 pt-3 pb-2">
         <input
           className="input w-full text-[13px]"
-          placeholder="Search 58 maneuvers — Murphy, JVP, egophony…"
+          placeholder={`Search ${MANEUVERS.length} maneuvers — Murphy, JVP, egophony…`}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           aria-label="Search exam maneuvers"
@@ -75,7 +75,7 @@ export function ExamManeuverPanel() {
             return (
               <div key={system}>
                 <button
-                  className="w-full text-left px-3.5 py-2 flex items-center justify-between transition-colors hover:bg-[#f4f7fb]"
+                  className="w-full text-left px-3.5 py-2 flex items-center justify-between transition-colors hover:bg-[var(--color-exam-accent-soft)]"
                   onClick={() => setOpenSystem(open ? null : system)}
                   aria-expanded={open}
                 >
@@ -84,7 +84,7 @@ export function ExamManeuverPanel() {
                       aria-hidden
                       className="text-[10px] transition-transform"
                       style={{
-                        color: "var(--color-exam-faint)",
+                        color: "var(--color-exam-ghost)",
                         transform: open ? "rotate(90deg)" : "none",
                         display: "inline-block",
                       }}
@@ -95,7 +95,14 @@ export function ExamManeuverPanel() {
                   </span>
                   <span
                     className="text-[11.5px] font-mono tabular-nums"
-                    style={{ color: doneCount > 0 ? "var(--color-exam-ok)" : "var(--color-exam-faint)" }}
+                    style={{
+                      color:
+                        doneCount === group.length
+                          ? "var(--color-exam-ok)"
+                          : doneCount > 0
+                            ? "var(--color-exam-accent)"
+                            : "var(--color-exam-faint)",
+                    }}
                   >
                     {doneCount}/{group.length}
                   </span>

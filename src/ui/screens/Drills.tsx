@@ -3,6 +3,7 @@ import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../da
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
 import { useAppStore } from "../store";
 import { ManualRefs } from "../components/ManualRefs";
+import { Segmented } from "../components/Segmented";
 
 /**
  * Standalone learning drills (no full case). Get reps on the frameworks:
@@ -53,6 +54,7 @@ function useGrader() {
 
 export function Drills() {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
+  const llmEnabled = useAppStore((s) => s.llmEnabled);
   const [type, setType] = useState<DrillType>("differential");
   const [categoryName, setCategoryName] = useState(CURRICULUM[0].category);
   const [skillFilter, setSkillFilter] = useState<string>("All");
@@ -97,55 +99,56 @@ export function Drills() {
     reset();
   };
 
+  /** Cycle to the next curriculum category so "New rep" serves a fresh prompt
+   *  instead of re-serving the one just graded. */
+  const nextCategory = () => {
+    const idx = CURRICULUM.findIndex((c) => c.category === categoryName);
+    return CURRICULUM[(idx + 1) % CURRICULUM.length].category;
+  };
+
+  /** Re-attempt the same prompt: keep the typed answer, just re-open grading. */
+  const retry = () => setGraded(false);
+
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="flex items-start justify-between gap-6">
-        <div className="space-y-0.5">
-          <div className="panel-label">Learning tool</div>
-          <h2 className="text-[20px] font-bold tracking-tight">Framework Drills</h2>
-          <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            Quick reps on the differential, key questions, and work-up — no full station. Graded
-            instantly against the category framework.
-          </p>
+        <div className="flex items-start gap-3">
+          <span className="icon-tile" style={{ background: "var(--grad-teal)" }} aria-hidden="true">
+            🎯
+          </span>
+          <div className="space-y-0.5">
+            <div className="panel-label">Learning tool</div>
+            <h2
+              className="text-[24px] font-extrabold tracking-tight"
+              style={{ color: "var(--color-exam-header)" }}
+            >
+              Framework Drills
+            </h2>
+            <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
+              Quick reps on the differential, key questions, and work-up — no full station. Graded
+              instantly against the category framework.
+            </p>
+          </div>
         </div>
-        <button className="btn btn-primary shrink-0" onClick={exitToSelect}>
+        <button className="btn btn-ghost shrink-0" onClick={exitToSelect}>
           Station list →
         </button>
       </div>
 
       <div className="card px-4 py-3 flex flex-wrap items-center gap-x-5 gap-y-3">
-        <div
-          role="radiogroup"
-          aria-label="Drill type"
-          className="flex rounded-lg border p-0.5"
-          style={{ borderColor: "var(--color-exam-border-strong)", background: "#f1f4f7" }}
-        >
-          {(
-            [
-              ["differential", "Differential & questions"],
-              ["workup", "Work-up"],
-              ["skills", "Skills"],
-            ] as [DrillType, string][]
-          ).map(([t, label]) => (
-            <button
-              key={t}
-              role="radio"
-              aria-checked={type === t}
-              className="px-3.5 py-1.5 text-[13px] font-semibold rounded-md transition-all"
-              style={{
-                background: type === t ? "#fff" : "transparent",
-                color: type === t ? "var(--color-exam-ink)" : "var(--color-exam-muted)",
-                boxShadow: type === t ? "var(--shadow-card)" : "none",
-              }}
-              onClick={() => {
-                setType(t);
-                reset();
-              }}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        <Segmented
+          label="Drill type"
+          options={[
+            { value: "differential", label: "🧠 Differential" },
+            { value: "workup", label: "🧪 Work-up" },
+            { value: "skills", label: "📐 Skills" },
+          ]}
+          value={type}
+          onChange={(t: DrillType) => {
+            setType(t);
+            reset();
+          }}
+        />
         {type === "skills" ? (
           <label className="text-sm flex items-center gap-2">
             <span className="panel-label">Skill</span>
@@ -195,6 +198,7 @@ export function Drills() {
 
       {type === "differential" && (
         <DifferentialDrill
+          key={categoryName}
           category={category}
           ddx={ddx}
           setDdx={setDdx}
@@ -202,34 +206,40 @@ export function Drills() {
           setQuestions={setQuestions}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep("differential")}
+          onNew={() => newRep("differential", nextCategory())}
+          onRetry={retry}
         />
       )}
       {type === "workup" && (
         <WorkupDrill
+          key={`${categoryName}:${stemIdx}`}
           category={category}
           stem={stem}
           workup={workup}
           setWorkup={setWorkup}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep("workup")}
+          onNew={() => newRep("workup", nextCategory())}
+          onRetry={retry}
         />
       )}
       {type === "skills" && (
         <SkillDrill
+          key={`${skillFilter}:${stemIdx}`}
           problem={skillProblem}
           answer={skillAnswer}
           setAnswer={setSkillAnswer}
           graded={graded}
           onGrade={() => setGraded(true)}
           onNew={() => newRep("skills")}
+          onRetry={retry}
         />
       )}
 
       <p className="hint text-center">
-        Grading is keyword/synonym matching against the framework — a thorough answer phrased
-        differently may not register every item; use the framework/explanation to self-check.
+        {llmEnabled
+          ? "Graded semantically by AI — use the framework/explanation to self-check anything it misses."
+          : "Graded by lenient keyword match — enable AI for semantic grading. A thorough answer phrased differently may not register every item; use the framework/explanation to self-check."}
       </p>
     </div>
   );
@@ -237,17 +247,29 @@ export function Drills() {
 
 function ScoreBar({ named, total, label }: { named: number; total: number; label: string }) {
   const pct = total > 0 ? Math.round((named / total) * 100) : 0;
-  const color = pct >= 70 ? "var(--color-exam-ok)" : pct >= 40 ? "var(--color-exam-warn)" : "var(--color-exam-danger)";
+  const band = pct >= 70 ? "var(--grad-teal)" : pct >= 40 ? "var(--grad-sun)" : "var(--grad-coral)";
+  const tone =
+    pct >= 70 ? "var(--color-exam-ok)" : pct >= 40 ? "var(--color-exam-warn)" : "var(--color-exam-danger)";
   return (
     <div className="flex items-center gap-3">
       <span className="text-[13px] font-semibold w-40">{label}</span>
-      <div className="h-2.5 rounded-full overflow-hidden flex-1" style={{ background: "#eef1f5" }}>
-        <div className="h-full rounded-full" style={{ width: `${pct}%`, background: color }} />
+      <div className="progress-track flex-1">
+        <div className="progress-fill" style={{ width: `${pct}%`, background: band }} />
       </div>
-      <span className="font-mono text-[13px] tabular-nums w-20 text-right" style={{ color }}>
+      <span className="font-mono text-[13px] tabular-nums w-20 text-right" style={{ color: tone }}>
         {named}/{total} · {pct}%
       </span>
     </div>
+  );
+}
+
+/** Celebration / encouragement chip shown beside the graded score. */
+function ResultChip({ named, total }: { named: number; total: number }) {
+  const pct = total > 0 ? (named / total) * 100 : 0;
+  return pct >= 70 ? (
+    <span className="chip chip-ok">🎉 strong coverage</span>
+  ) : (
+    <span className="chip chip-warn">keep going</span>
   );
 }
 
@@ -288,6 +310,7 @@ function GradeButton({
   disabled,
   onGrade,
   onNew,
+  onRetry,
   newLabel,
 }: {
   graded: boolean;
@@ -295,14 +318,20 @@ function GradeButton({
   disabled: boolean;
   onGrade: () => void;
   onNew: () => void;
+  onRetry: () => void;
   newLabel: string;
 }) {
   const llmEnabled = useAppStore((s) => s.llmEnabled);
   if (graded) {
     return (
-      <button className="btn" onClick={onNew}>
-        {newLabel}
-      </button>
+      <div className="flex items-center gap-2">
+        <button className="btn" onClick={onNew}>
+          {newLabel}
+        </button>
+        <button className="btn btn-ghost" onClick={onRetry}>
+          Try again
+        </button>
+      </div>
     );
   }
   return (
@@ -324,6 +353,7 @@ function DifferentialDrill({
   graded,
   onGrade,
   onNew,
+  onRetry,
 }: {
   category: CategoryCurriculum;
   ddx: string;
@@ -333,6 +363,7 @@ function DifferentialDrill({
   graded: boolean;
   onGrade: () => void;
   onNew: () => void;
+  onRetry: () => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -399,13 +430,21 @@ function DifferentialDrill({
           disabled={!ddx.trim() && !questions.trim()}
           onGrade={doGrade}
           onNew={onNew}
+          onRetry={onRetry}
           newLabel="New rep →"
         />
       </div>
 
       {graded && (
-        <div className="card p-4 space-y-4">
+        <div className="card p-4 space-y-4 pop-in">
           <div className="space-y-2">
+            <div className="flex items-center justify-between gap-3">
+              <div className="panel-label">Coverage</div>
+              <ResultChip
+                named={ddxResult.named + qResult.named}
+                total={ddxResult.total + qResult.total}
+              />
+            </div>
             <ScoreBar named={ddxResult.named} total={ddxResult.total} label="Differential coverage" />
             <ScoreBar named={qResult.named} total={qResult.total} label="Key-question coverage" />
           </div>
@@ -431,6 +470,7 @@ function SkillDrill({
   graded,
   onGrade,
   onNew,
+  onRetry,
 }: {
   problem: SkillDrillProblem | null;
   answer: string;
@@ -438,6 +478,7 @@ function SkillDrill({
   graded: boolean;
   onGrade: () => void;
   onNew: () => void;
+  onRetry: () => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -481,19 +522,24 @@ function SkillDrill({
           disabled={!answer.trim()}
           onGrade={doGrade}
           onNew={onNew}
+          onRetry={onRetry}
           newLabel="Next problem →"
         />
       </div>
 
       {graded && (
-        <div className="card p-4 space-y-4">
+        <div className="card p-4 space-y-4 pop-in">
+          <div className="flex items-center justify-between gap-3">
+            <div className="panel-label">Coverage</div>
+            <ResultChip named={result.named} total={result.total} />
+          </div>
           <ScoreBar named={result.named} total={result.total} label="Key concepts" />
           <CoverageView title="Expected concepts" coverage={result.coverage} />
           <div>
             <div className="panel-label mb-1">Worked explanation</div>
             <p
               className="rounded-lg border p-3 text-[13px] leading-relaxed"
-              style={{ borderColor: "#cfe9db", background: "var(--color-exam-ok-soft)" }}
+              style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
             >
               {problem.explanation}
             </p>
@@ -512,6 +558,7 @@ function WorkupDrill({
   graded,
   onGrade,
   onNew,
+  onRetry,
 }: {
   category: CategoryCurriculum;
   stem: PracticeCase | null;
@@ -520,6 +567,7 @@ function WorkupDrill({
   graded: boolean;
   onGrade: () => void;
   onNew: () => void;
+  onRetry: () => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -590,20 +638,25 @@ function WorkupDrill({
           disabled={!workup.trim()}
           onGrade={doGrade}
           onNew={onNew}
+          onRetry={onRetry}
           newLabel="New rep →"
         />
       </div>
 
       {graded && (
         <>
-          <div className="card p-4 space-y-4">
+          <div className="card p-4 space-y-4 pop-in">
+            <div className="flex items-center justify-between gap-3">
+              <div className="panel-label">Coverage</div>
+              <ResultChip named={result.named} total={result.total} />
+            </div>
             <ScoreBar named={result.named} total={result.total} label="Work-up coverage" />
             <CoverageView title="Broad work-up menu" coverage={result.coverage} />
           </div>
 
           {/* Interactive: how the results steer you. */}
           {stem?.twist && (
-            <div className="card p-4 space-y-3">
+            <div className="card p-4 space-y-3 pop-in">
               <div>
                 <div className="panel-label mb-1" style={{ color: "var(--color-exam-accent-deep)" }}>
                   The results come back
@@ -635,7 +688,7 @@ function WorkupDrill({
                   {stem.nextStep && (
                     <div
                       className="rounded-lg px-3 py-2.5 text-[13px] leading-relaxed"
-                      style={{ background: "var(--color-exam-accent-soft)", color: "#18305f" }}
+                      style={{ background: "var(--color-exam-accent-soft)", color: "var(--color-exam-accent-deep)" }}
                     >
                       <span className="font-semibold">Expert next step: </span>
                       {stem.nextStep}
@@ -648,7 +701,7 @@ function WorkupDrill({
 
           {/* Management teaching — same source the matching station cites. */}
           {category.quickManagement.length > 0 && (
-            <div className="card p-4">
+            <div className="card p-4 pop-in">
               <div className="panel-label mb-2">
                 Quick &amp; dirty management
                 <span className="hint ml-2">aligned to the MGH Housestaff Manual</span>

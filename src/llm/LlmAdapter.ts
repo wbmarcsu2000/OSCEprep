@@ -214,6 +214,24 @@ export function guardParaphrase(
 // Providers
 // ---------------------------------------------------------------------------
 
+/**
+ * Degradation reporting. Every provider method falls back gracefully (canned
+ * replies / keyword matching) when the API errors — but the UI must be able to
+ * tell the student their session is degraded instead of silently asserting
+ * "AI on". The store registers a listener; provider catches report through it.
+ */
+let fallbackListener: ((op: string) => void) | null = null;
+export function setLlmFallbackListener(fn: ((op: string) => void) | null): void {
+  fallbackListener = fn;
+}
+function reportFallback(op: string): void {
+  try {
+    fallbackListener?.(op);
+  } catch {
+    // a listener bug must never break the patient reply itself
+  }
+}
+
 type ProviderOpts = {
   apiKey: string;
   model: string;
@@ -272,6 +290,7 @@ export class AnthropicProvider implements LlmProvider {
       const ids = Array.isArray(parsed.ids) ? parsed.ids : [];
       return ids.filter((id): id is string => typeof id === "string" && validIds.has(id));
     } catch {
+      reportFallback("answer matching");
       return classifyIntentDeterministic(studentText, candidates);
     }
   }
@@ -281,6 +300,7 @@ export class AnthropicProvider implements LlmProvider {
       const text = await this.complete(phrasePrompt(this.patientSystem, approvedContent, persona, studentQuestion), 512);
       return guardParaphrase(approvedContent, text.trim(), persona, studentQuestion);
     } catch {
+      reportFallback("patient replies");
       return phrasePatientReplyDeterministic(approvedContent);
     }
   }
@@ -291,6 +311,7 @@ export class AnthropicProvider implements LlmProvider {
       const guarded = guardParaphrase(studentQuestion, text.trim(), persona, studentQuestion);
       return guarded === phrasePatientReplyDeterministic(studentQuestion) ? null : guarded;
     } catch {
+      reportFallback("patient replies");
       return null;
     }
   }
@@ -302,6 +323,7 @@ export class AnthropicProvider implements LlmProvider {
       });
       return text.trim() || null;
     } catch {
+      reportFallback("coaching");
       return null;
     }
   }
@@ -368,6 +390,7 @@ export class OpenAiProvider implements LlmProvider {
       const ids = Array.isArray(parsed.ids) ? parsed.ids : [];
       return ids.filter((id): id is string => typeof id === "string" && validIds.has(id));
     } catch {
+      reportFallback("answer matching");
       return classifyIntentDeterministic(studentText, candidates);
     }
   }
@@ -377,6 +400,7 @@ export class OpenAiProvider implements LlmProvider {
       const text = await this.complete(phrasePrompt(this.patientSystem, approvedContent, persona, studentQuestion), 512);
       return guardParaphrase(approvedContent, text.trim(), persona, studentQuestion);
     } catch {
+      reportFallback("patient replies");
       return phrasePatientReplyDeterministic(approvedContent);
     }
   }
@@ -387,6 +411,7 @@ export class OpenAiProvider implements LlmProvider {
       const guarded = guardParaphrase(studentQuestion, text.trim(), persona, studentQuestion);
       return guarded === phrasePatientReplyDeterministic(studentQuestion) ? null : guarded;
     } catch {
+      reportFallback("patient replies");
       return null;
     }
   }
@@ -398,6 +423,7 @@ export class OpenAiProvider implements LlmProvider {
       });
       return text.trim() || null;
     } catch {
+      reportFallback("coaching");
       return null;
     }
   }

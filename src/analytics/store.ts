@@ -3,7 +3,8 @@
  * scores, and miss patterns from an anonymous local profile.
  */
 
-import type { CaseModel, EngineState, ScoreReport } from "../engine/types";
+import type { CaseModel, EngineState, Mode, ScoreReport } from "../engine/types";
+import { SESSION_STORAGE_KEY } from "../engine/stateMachine";
 
 export const ANALYTICS_STORAGE_KEY = "osce.analytics.v1";
 /** Full per-case review payloads (last attempt wins), keyed by case id. */
@@ -20,6 +21,8 @@ export interface CaseReview {
   postEncounterAnswers: Record<string, string>;
   historyRevealed: string[];
   examFindingTexts: string[];
+  /** AI coach notes by sectionId — attached asynchronously after grading. */
+  coaching?: Record<string, string>;
 }
 
 export function loadReviews(): Record<string, CaseReview> {
@@ -37,9 +40,19 @@ export function loadReview(caseId: string): CaseReview | null {
   return loadReviews()[caseId] ?? null;
 }
 
-/** Case ids with at least one recorded attempt. */
-export function completedCaseIds(): Set<string> {
-  return new Set(loadAttempts().map((a) => a.caseId));
+/** Merge late-arriving AI coaching into the persisted review so it survives
+ *  leaving the feedback screen and shows up on later re-reads. */
+export function attachCoaching(caseId: string, coaching: Record<string, string>): void {
+  if (Object.keys(coaching).length === 0) return;
+  try {
+    const all = loadReviews();
+    const review = all[caseId];
+    if (!review) return;
+    all[caseId] = { ...review, coaching };
+    localStorage.setItem(REVIEW_STORAGE_KEY, JSON.stringify(all));
+  } catch {
+    // storage unavailable — coaching just won't persist
+  }
 }
 
 function saveReview(caseModel: CaseModel, engine: EngineState): void {
@@ -69,7 +82,7 @@ export interface AttemptRecord {
   category: string;
   difficulty: string;
   diagnosis: string;
-  mode: string;
+  mode: Mode;
   completedAt: number;
   overall: number;
   band: string;
@@ -121,6 +134,51 @@ export function recordAttempt(caseModel: CaseModel, engine: EngineState): void {
     // storage unavailable — analytics silently skipped
   }
   saveReview(caseModel, engine);
+}
+
+// ---- Data management ---------------------------------------------------------
+
+const ALL_KEYS = [ANALYTICS_STORAGE_KEY, REVIEW_STORAGE_KEY, SESSION_STORAGE_KEY];
+
+/** All progress as a single portable JSON document. */
+export function exportAllData(): string {
+  const out: Record<string, unknown> = { exportedAt: Date.now(), version: 1 };
+  for (const key of ALL_KEYS) {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) out[key] = JSON.parse(raw);
+    } catch {
+      // skip unreadable keys
+    }
+  }
+  return JSON.stringify(out, null, 2);
+}
+
+/** Restore an exported document. Returns the number of keys imported. */
+export function importAllData(json: string): number {
+  let imported = 0;
+  const parsed: unknown = JSON.parse(json); // caller handles throw
+  if (!parsed || typeof parsed !== "object") throw new Error("Not an OSCEprep export");
+  const doc = parsed as Record<string, unknown>;
+  for (const key of ALL_KEYS) {
+    const value = doc[key];
+    if (value === undefined) continue;
+    if (key === ANALYTICS_STORAGE_KEY && !Array.isArray(value)) continue;
+    localStorage.setItem(key, JSON.stringify(value));
+    imported += 1;
+  }
+  return imported;
+}
+
+/** Erase attempts, reviews, and any in-progress session (not the AI key). */
+export function clearAllData(): void {
+  for (const key of ALL_KEYS) {
+    try {
+      localStorage.removeItem(key);
+    } catch {
+      // ignore
+    }
+  }
 }
 
 export interface FrequencyRow {

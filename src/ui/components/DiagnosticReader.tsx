@@ -1,16 +1,13 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { CaseModel, RawImage } from "../../engine/types";
 import { litflCollectionFor } from "../../data/readingGuides";
 import { useAppStore } from "../store";
 
 /**
- * Renders a study image, or a labeled placeholder for un-sourced assets.
- * With `conceal` (used during graded read steps), the authored description —
- * which often names the diagnosis — stays hidden behind an explicit reveal,
- * framed as a stand-in for the missing image. Images are never fabricated.
+ * Renders a study image, or a labeled written stand-in for un-sourced assets.
+ * Images are never fabricated.
  */
-export function StudyImage({ image, conceal = false }: { image: RawImage; conceal?: boolean }) {
-  const [revealed, setRevealed] = useState(false);
+export function StudyImage({ image }: { image: RawImage }) {
   const [imgFailed, setImgFailed] = useState(false);
 
   // Real tracing/film embedded inline — the student reads it directly, no
@@ -40,7 +37,7 @@ export function StudyImage({ image, conceal = false }: { image: RawImage; concea
               />
               <span
                 className="absolute bottom-1.5 right-1.5 text-[10.5px] font-semibold px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity"
-                style={{ background: "rgba(21,33,46,0.78)", color: "#fff" }}
+                style={{ background: "rgba(42,34,83,0.8)", color: "#fff" }}
               >
                 ⤢ full size
               </span>
@@ -65,38 +62,10 @@ export function StudyImage({ image, conceal = false }: { image: RawImage; concea
     ? `LITFL ECG Case ${caseNo}`
     : `LITFL CXR Case ${caseNo}`;
   const openLabel = isLitfl ? `Open ${studyName} ↗` : `Open a representative ${image.label} ↗`;
-  if (conceal && !revealed) {
-    return (
-      <div
-        className="rounded-lg border-2 border-dashed px-6 py-7 text-center space-y-3"
-        style={{ borderColor: "var(--color-exam-border-strong)", background: "#fafbfd" }}
-      >
-        <div className="panel-label">
-          {image.label} — {isLitfl ? studyName : "read this study"}
-        </div>
-        <p className="text-[13px] max-w-md mx-auto leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
-          {isLitfl
-            ? "Open the linked study, read it systematically, and write your interpretation below. The LITFL page shows the answer further down — read first, then scroll to self-check. (A written description is also available here but names the findings directly.)"
-            : "Open a representative study to read, then write your formal interpretation below. A written description is also available but names the findings directly."}
-        </p>
-        <div className="flex items-center justify-center gap-2 flex-wrap">
-          {viewUrl && (
-            <a className="btn btn-primary" href={viewUrl} target="_blank" rel="noopener noreferrer">
-              {openLabel}
-            </a>
-          )}
-          <button className="btn" onClick={() => setRevealed(true)}>
-            Reveal written description
-          </button>
-        </div>
-        <p className="hint">{image.attribution ?? image.recommendedSource ?? ""}</p>
-      </div>
-    );
-  }
   return (
     <div
       className="rounded-lg border-2 border-dashed px-6 py-8 text-center space-y-2"
-      style={{ borderColor: "var(--color-exam-border-strong)", background: "#fafbfd" }}
+      style={{ borderColor: "var(--color-exam-border-strong)", background: "var(--color-exam-soft)" }}
       role="img"
       aria-label={`${image.label} description`}
     >
@@ -151,7 +120,18 @@ function litflCaseNumber(image: RawImage): string | null {
 export function LabResults({ caseModel }: { caseModel: CaseModel }) {
   const labsRevealed = useAppStore((s) => s.engine?.labsRevealed ?? false);
   const markViewed = useAppStore((s) => s.markDiagnosticViewed);
-  const keys = caseModel.revealKeys.filter((k) => caseModel.labs[k] !== undefined);
+  const keys = useMemo(
+    () => caseModel.revealKeys.filter((k) => caseModel.labs[k] !== undefined),
+    [caseModel],
+  );
+
+  // Every revealed result renders on screen at once, so all keys count as
+  // viewed the moment labs unlock (hover was a mouse-only proxy).
+  useEffect(() => {
+    if (!labsRevealed) return;
+    for (const k of keys) markViewed(k);
+  }, [labsRevealed, keys, markViewed]);
+
   if (keys.length === 0) return null;
   if (!labsRevealed) {
     return (
@@ -168,7 +148,7 @@ export function LabResults({ caseModel }: { caseModel: CaseModel }) {
   }
   return (
     <div className="card overflow-hidden">
-      <div className="card-header" style={{ background: "#fafbfd" }}>
+      <div className="card-header" style={{ background: "var(--color-exam-soft)" }}>
         <span className="panel-label">Diagnostic Results</span>
         <span className="hint">{keys.length} ordered</span>
       </div>
@@ -180,7 +160,6 @@ export function LabResults({ caseModel }: { caseModel: CaseModel }) {
             style={{
               borderTop: i > 0 ? "1px solid var(--color-exam-border)" : "none",
             }}
-            onMouseEnter={() => markViewed(k)}
           >
             <div
               className="text-[11.5px] font-bold uppercase tracking-wide mb-1 sm:mb-0 sm:pt-0.5"

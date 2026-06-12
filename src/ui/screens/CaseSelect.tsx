@@ -1,58 +1,103 @@
 import { useEffect, useMemo, useState } from "react";
 import { manifest } from "../../data/loader";
 import type { Mode } from "../../engine/types";
-import { completedCaseIds } from "../../analytics/store";
-import { detectProvider, modelsForProvider, resolveModel } from "../../llm/LlmAdapter";
+import { loadAttempts, loadReviews } from "../../analytics/store";
+import { categoryFlair } from "../gamification";
+import { EnableAiPanel } from "../components/EnableAiPanel";
+import { Segmented } from "../components/Segmented";
 import { useAppStore } from "../store";
 
-const DIFFICULTY_DOT: Record<string, string> = {
-  easy: "var(--color-exam-ok)",
-  moderate: "var(--color-exam-warn)",
-  hard: "var(--color-exam-danger)",
+const DIFFICULTY_PIPS: Record<string, { n: number; color: string }> = {
+  easy: { n: 1, color: "var(--color-exam-ok)" },
+  moderate: { n: 2, color: "var(--color-exam-warn)" },
+  hard: { n: 3, color: "var(--color-exam-danger)" },
+};
+
+function DifficultyPips({ difficulty }: { difficulty: string }) {
+  const pip = DIFFICULTY_PIPS[difficulty] ?? { n: 0, color: "var(--color-exam-faint)" };
+  return (
+    <span className="inline-flex items-center gap-1 capitalize text-[11.5px] font-bold" style={{ color: "var(--color-exam-muted)" }}>
+      <span className="inline-flex gap-0.5" aria-hidden>
+        {[0, 1, 2].map((i) => (
+          <span
+            key={i}
+            className="h-1.5 w-1.5 rounded-full inline-block"
+            style={{ background: i < pip.n ? pip.color : "var(--color-exam-border-strong)" }}
+          />
+        ))}
+      </span>
+      {difficulty}
+    </span>
+  );
+}
+
+function scoreColor(score: number): string {
+  return score >= 70 ? "var(--color-exam-ok)" : score >= 55 ? "var(--color-exam-warn)" : "var(--color-exam-danger)";
+}
+
+const MODE_CAPTIONS: Record<Mode, string> = {
+  STRICT_OSCE: "Timed · phases auto-advance · answer key locked until feedback",
+  PRACTICE: "Untimed · same hidden info and scoring · answer key available while you work",
 };
 
 export function CaseSelect() {
   const startCase = useAppStore((s) => s.startCase);
   const startRandomCase = useAppStore((s) => s.startRandomCase);
   const openReview = useAppStore((s) => s.openReview);
-  const setApiKey = useAppStore((s) => s.setApiKey);
-  const setModel = useAppStore((s) => s.setModel);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
-  const providerKind = useAppStore((s) => s.providerKind);
   const aiStatus = useAppStore((s) => s.aiStatus);
-  const aiError = useAppStore((s) => s.aiError);
+  const preferredMode = useAppStore((s) => s.preferredMode);
+  const setPreferredMode = useAppStore((s) => s.setPreferredMode);
   const pendingAiPanel = useAppStore((s) => s.pendingAiPanel);
   const clearPendingAiPanel = useAppStore((s) => s.clearPendingAiPanel);
+  const pendingCategoryFilter = useAppStore((s) => s.pendingCategoryFilter);
+  const clearPendingCategoryFilter = useAppStore((s) => s.clearPendingCategoryFilter);
 
-  const [mode, setMode] = useState<Mode>("STRICT_OSCE");
-  const [category, setCategory] = useState("all");
+  // Pre-apply a category filter if arriving from a "See all {category}" link.
+  const [category, setCategory] = useState(
+    () => useAppStore.getState().pendingCategoryFilter ?? "all",
+  );
   const [difficulty, setDifficulty] = useState("all");
+  const [query, setQuery] = useState("");
   const [starting, setStarting] = useState<string | null>(null);
   // Open the AI panel immediately if arriving from the home "Enable AI" button.
   const [showKey, setShowKey] = useState(() => useAppStore.getState().pendingAiPanel);
-  const [keyDraft, setKeyDraft] = useState("");
 
   // CaseSelect remounts whenever the user returns from a station, so reading
-  // completed ids once on mount reflects the latest attempts.
-  const completed = useMemo(() => completedCaseIds(), []);
+  // attempts once on mount reflects the latest scores. Chronological per case,
+  // so cards can show both the best score and the first→latest trend.
+  const scoresByCase = useMemo(() => {
+    const scores = new Map<string, number[]>();
+    for (const a of loadAttempts()) {
+      const list = scores.get(a.caseId);
+      if (list) list.push(a.overall);
+      else scores.set(a.caseId, [a.overall]);
+    }
+    return scores;
+  }, []);
+  const completed = useMemo(() => new Set(scoresByCase.keys()), [scoresByCase]);
+  // A review payload exists only for cases completed in this browser — gate
+  // the button on the actual record, not just the attempt log.
+  const reviewable = useMemo(() => new Set(Object.keys(loadReviews())), []);
 
   const categories = useMemo(
     () => [...new Set(manifest.cases.map((c) => c.category))].sort(),
     [],
   );
-  const difficulties = useMemo(
-    () => [...new Set(manifest.cases.map((c) => c.difficulty))].sort(),
-    [],
+  const difficulties = ["easy", "moderate", "hard"].filter((d) =>
+    manifest.cases.some((c) => c.difficulty === d),
   );
+  const q = query.trim().toLowerCase();
   const filtered = manifest.cases.filter(
     (c) =>
       (category === "all" || c.category === category) &&
-      (difficulty === "all" || c.difficulty === difficulty),
+      (difficulty === "all" || c.difficulty === difficulty) &&
+      (q === "" || c.title.toLowerCase().includes(q) || c.category.toLowerCase().includes(q)),
   );
 
   const begin = (id: string) => {
     setStarting(id);
-    void startCase(id, mode).finally(() => setStarting(null));
+    void startCase(id, preferredMode).finally(() => setStarting(null));
   };
   const random = () => {
     // Prefer unattempted within the current filter; else any in filter.
@@ -60,191 +105,87 @@ export function CaseSelect() {
     const unattempted = pool.filter((id) => !completed.has(id));
     const candidates = unattempted.length > 0 ? unattempted : pool;
     setStarting("__random__");
-    void startRandomCase(mode, candidates).finally(() => setStarting(null));
+    void startRandomCase(preferredMode, candidates).finally(() => setStarting(null));
   };
 
-  // Clear the one-shot flag after consuming it at mount (above).
+  // Clear the one-shot flags after consuming them at mount (above).
   useEffect(() => {
     if (pendingAiPanel) clearPendingAiPanel();
   }, [pendingAiPanel, clearPendingAiPanel]);
+  useEffect(() => {
+    if (pendingCategoryFilter) clearPendingCategoryFilter();
+  }, [pendingCategoryFilter, clearPendingCategoryFilter]);
 
   const doneCount = manifest.cases.filter((c) => completed.has(c.id)).length;
-  const draftProvider = detectProvider(keyDraft);
-  // Which provider's models to show: the draft key's provider if typing, else
-  // the configured one (default to Anthropic for the picker before any key).
-  const activeProvider = draftProvider ?? providerKind;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-5">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-5">
       <div className="flex flex-col sm:flex-row items-start justify-between gap-3 sm:gap-6">
-        <div className="space-y-1">
-          <h1 className="text-[22px] font-bold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
+        <div className="space-y-1.5 min-w-0">
+          <h1 className="text-[24px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
             Station Library
           </h1>
           <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            {manifest.cases.length} standardized-patient stations · {doneCount} completed · 3 min
-            chart review · 20 min encounter · 20 min post-encounter
+            {manifest.cases.length} standardized-patient stations · 3 min chart review · 20 min
+            encounter · 20 min post-encounter
           </p>
-          <p className="hint">
-            For medical education and OSCE practice only — not for clinical decision-making.
-          </p>
+          <div className="flex items-center gap-2.5 pt-0.5">
+            <div className="progress-track w-44">
+              <div
+                className="progress-fill"
+                style={{ width: `${Math.round((doneCount / Math.max(1, manifest.cases.length)) * 100)}%` }}
+              />
+            </div>
+            <span className="text-[12px] font-bold tabular-nums" style={{ color: "var(--color-exam-accent-deep)" }}>
+              {doneCount} / {manifest.cases.length} completed
+            </span>
+          </div>
         </div>
-        <div className="flex flex-col items-start sm:items-end gap-2 shrink-0">
-          <button className="btn" onClick={() => setShowKey((v) => !v)}>
-            {llmEnabled ? "🟢 AI on" : "○ Enable AI"}
-          </button>
-          <span className="hint">
-            Progress: {doneCount} / {manifest.cases.length}
-          </span>
-        </div>
+        <button
+          className="btn shrink-0"
+          aria-expanded={showKey}
+          aria-controls="enable-ai-panel"
+          style={
+            aiStatus === "error"
+              ? { color: "var(--color-exam-warn)", borderColor: "var(--color-exam-warn-line)" }
+              : undefined
+          }
+          onClick={() => setShowKey((v) => !v)}
+        >
+          {aiStatus === "error" ? "⚠️ AI key error" : llmEnabled ? "🟢 AI on" : "○ Enable AI"}
+        </button>
       </div>
 
-      {showKey && (
-        <div className="card p-4 space-y-2">
-          <div className="panel-label">Enable the AI patient &amp; coaching</div>
-          <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
-            Paste an <span className="font-semibold">Anthropic</span> (Claude, <code>sk-ant-…</code>)
-            or <span className="font-semibold">OpenAI</span> (<code>sk-…</code> / <code>sk-proj-…</code>)
-            API key to turn on natural-language patient replies, smart grading, and coaching. The key is
-            stored only in this browser, sent only to that provider, and verified on save. The app is
-            fully usable without it on the deterministic engine.
-          </p>
-          <div className="flex gap-2">
-            <input
-              className="input flex-1 font-mono text-[13px]"
-              type="password"
-              placeholder={llmEnabled ? "AI enabled — paste a new key to replace" : "sk-ant-… or sk-…"}
-              value={keyDraft}
-              onChange={(e) => setKeyDraft(e.target.value)}
-              aria-label="API key"
+      {showKey && <EnableAiPanel />}
+
+      {/* Controls: mode, random, search, difficulty */}
+      <div className="card px-4 py-3 flex flex-wrap items-start gap-x-5 gap-y-3">
+        <div className="flex flex-col gap-1">
+          <div className="self-start">
+            <Segmented
+              label="Station mode"
+              options={[
+                { value: "STRICT_OSCE", label: "⏱️ Strict OSCE" },
+                { value: "PRACTICE", label: "🌱 Practice" },
+              ]}
+              value={preferredMode}
+              onChange={setPreferredMode}
             />
-            <button
-              className="btn btn-primary"
-              disabled={keyDraft.trim() !== "" && detectProvider(keyDraft) === null}
-              onClick={() => {
-                setApiKey(keyDraft);
-                setKeyDraft("");
-              }}
-            >
-              Save
-            </button>
-            {llmEnabled && (
-              <button
-                className="btn"
-                onClick={() => {
-                  setApiKey("");
-                  setKeyDraft("");
-                }}
-              >
-                Turn off
-              </button>
-            )}
           </div>
-
-          {/* Live provider detection on the draft key. */}
-          {keyDraft.trim() !== "" && (
-            <p className="hint">
-              {draftProvider === "anthropic"
-                ? "Detected: Anthropic (Claude)"
-                : draftProvider === "openai"
-                  ? "Detected: OpenAI (GPT)"
-                  : "Unrecognized key format — expected sk-ant-… (Anthropic) or sk-… (OpenAI)."}
-            </p>
-          )}
-
-          {/* Model picker for the active provider. */}
-          {activeProvider && (
-            <div className="space-y-1 pt-1">
-              <div className="flex items-center gap-2">
-                <span className="panel-label">Model</span>
-                <select
-                  className="input text-[13px] py-1.5"
-                  value={resolveModel(activeProvider)}
-                  onChange={(e) => setModel(e.target.value)}
-                  aria-label="AI model"
-                >
-                  {modelsForProvider(activeProvider).map((m) => (
-                    <option key={m.id} value={m.id}>
-                      {m.label} — {m.note}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <p className="hint">
-                Sets the speed of the patient conversation. Grading &amp; coaching always use a more
-                capable model for accuracy, regardless of this choice.
-              </p>
-            </div>
-          )}
-
-          {/* Verification status. */}
-          {llmEnabled && (
-            <p
-              className="text-[13px]"
-              style={{
-                color:
-                  aiStatus === "ok"
-                    ? "var(--color-exam-ok)"
-                    : aiStatus === "error"
-                      ? "var(--color-exam-danger)"
-                      : "var(--color-exam-muted)",
-              }}
-            >
-              {aiStatus === "verifying" && "Verifying key…"}
-              {aiStatus === "ok" &&
-                `✓ AI verified — ${providerKind === "anthropic" ? "Claude" : "OpenAI"}`}
-              {aiStatus === "error" && `✕ Key rejected: ${aiError ?? "verification failed"}`}
-              {aiStatus === "idle" && "Key configured."}
-            </p>
-          )}
-        </div>
-      )}
-
-      <div className="card px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-3">
-        <div
-          role="radiogroup"
-          aria-label="Station mode"
-          className="flex rounded-lg border p-0.5"
-          style={{ borderColor: "var(--color-exam-border-strong)", background: "#f1f4f7" }}
-        >
-          {(
-            [
-              ["STRICT_OSCE", "Strict OSCE"],
-              ["PRACTICE", "Practice"],
-            ] as [Mode, string][]
-          ).map(([m, label]) => (
-            <button
-              key={m}
-              role="radio"
-              aria-checked={mode === m}
-              className="px-4 py-1.5 text-[13px] font-semibold rounded-md transition-all"
-              style={{
-                background: mode === m ? "#fff" : "transparent",
-                color: mode === m ? "var(--color-exam-ink)" : "var(--color-exam-muted)",
-                boxShadow: mode === m ? "var(--shadow-card)" : "none",
-              }}
-              onClick={() => setMode(m)}
-            >
-              {label}
-            </button>
-          ))}
+          <p className="hint pl-1">{MODE_CAPTIONS[preferredMode]}</p>
         </div>
         <button className="btn btn-primary" onClick={random} disabled={starting !== null || filtered.length === 0}>
           🎲 {starting === "__random__" ? "Loading…" : "Random case"}
         </button>
-        <span className="hint -ml-3">prefers ones you haven't done</span>
-        <div className="flex items-center gap-2 ml-auto">
-          <select
-            className="input text-[13px] py-1.5"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            aria-label="Filter by category"
-          >
-            <option value="all">All categories</option>
-            {categories.map((c) => (
-              <option key={c}>{c}</option>
-            ))}
-          </select>
+        <span className="hint -ml-3 hidden sm:inline self-center">prefers ones you haven't done</span>
+        <div className="flex items-center gap-2 ml-auto flex-wrap">
+          <input
+            className="input text-[13px] py-1.5 w-44"
+            placeholder="🔍 Search stations…"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            aria-label="Search stations"
+          />
           <select
             className="input text-[13px] py-1.5 capitalize"
             value={difficulty}
@@ -259,84 +200,115 @@ export function CaseSelect() {
         </div>
       </div>
 
-      <div className="card overflow-hidden">
-        <div className="overflow-x-auto scroll-quiet">
-        <table className="w-full text-sm min-w-[560px]">
-          <thead>
-            <tr style={{ background: "#fafbfd" }}>
-              {["Station", "Category", "Difficulty", "", ""].map((h, i) => (
-                <th
-                  key={i}
-                  className="text-left px-4 py-2.5 border-b panel-label"
-                  style={{ borderColor: "var(--color-exam-border)" }}
-                >
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {filtered.map((c) => {
-              const done = completed.has(c.id);
-              return (
-                <tr
-                  key={c.id}
-                  className="border-b last:border-b-0 transition-colors hover:bg-[#f7f9fc]"
-                  style={{ borderColor: "var(--color-exam-border)" }}
-                >
-                  <td className="px-4 py-3 font-medium">
-                    <span className="flex items-center gap-2">
-                      {done && (
-                        <span
-                          className="inline-flex h-4 w-4 items-center justify-center rounded-full text-[10px] font-bold shrink-0"
-                          style={{ background: "var(--color-exam-ok-soft)", color: "var(--color-exam-ok)" }}
-                          title="Completed"
-                        >
-                          ✓
-                        </span>
-                      )}
-                      {c.title}
+      {/* Category chips */}
+      <div className="flex flex-wrap gap-1.5" role="group" aria-label="Filter by category">
+        <button
+          aria-pressed={category === "all"}
+          className="chip chip-btn"
+          style={
+            category === "all"
+              ? { background: "var(--color-exam-ink)", color: "#fff", borderColor: "var(--color-exam-ink)" }
+              : undefined
+          }
+          onClick={() => setCategory("all")}
+        >
+          All
+        </button>
+        {categories.map((c) => {
+          const flair = categoryFlair(c);
+          const active = category === c;
+          return (
+            <button
+              key={c}
+              aria-pressed={active}
+              className="chip chip-btn"
+              style={
+                active
+                  ? { background: flair.deep, color: "#fff", borderColor: flair.deep }
+                  : { color: flair.deep, borderColor: flair.soft, background: flair.soft }
+              }
+              onClick={() => setCategory(active ? "all" : c)}
+            >
+              {flair.emoji} {c}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Station cards */}
+      {filtered.length === 0 ? (
+        <p className="text-sm italic text-center py-10" style={{ color: "var(--color-exam-faint)" }}>
+          No stations match — try clearing the search or filters.
+        </p>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+          {filtered.map((c) => {
+            const flair = categoryFlair(c.category);
+            const scores = scoresByCase.get(c.id);
+            const done = scores !== undefined && scores.length > 0;
+            const best = done ? Math.max(...scores) : undefined;
+            return (
+              <div key={c.id} className="card card-pop overflow-hidden flex flex-col">
+                <div aria-hidden className="h-1.5 shrink-0" style={{ background: flair.grad }} />
+                <div className="p-4 flex flex-col gap-2.5 flex-1">
+                  <div className="flex items-start justify-between gap-2">
+                    <span
+                      className="chip"
+                      style={{ color: flair.deep, borderColor: flair.soft, background: flair.soft }}
+                    >
+                      {flair.emoji} {c.category}
                     </span>
-                  </td>
-                  <td className="px-4 py-3" style={{ color: "var(--color-exam-muted)" }}>
-                    {c.category}
-                  </td>
-                  <td className="px-4 py-3">
-                    <span className="inline-flex items-center gap-1.5 capitalize" style={{ color: "var(--color-exam-muted)" }}>
+                    {best !== undefined && (
                       <span
-                        className="h-2 w-2 rounded-full inline-block"
-                        style={{ background: DIFFICULTY_DOT[c.difficulty] ?? "var(--color-exam-faint)" }}
-                      />
-                      {c.difficulty}
-                    </span>
-                  </td>
-                  <td className="px-4 py-3">
+                        className="text-[12px] font-extrabold font-mono tabular-nums px-2 py-0.5 rounded-full shrink-0"
+                        style={{ color: scoreColor(best), background: "var(--color-exam-soft)" }}
+                        title={`Best score: ${best}/100`}
+                      >
+                        ★ {best}
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-[14.5px] font-extrabold leading-snug">{c.title}</div>
+                  <div className="flex items-center gap-3 mt-auto pt-1">
+                    <DifficultyPips difficulty={c.difficulty} />
                     {c.cantMiss && <span className="chip chip-danger">can't-miss</span>}
-                  </td>
-                  <td className="px-4 py-3 text-right whitespace-nowrap">
-                    {done && (
+                  </div>
+                  {scores && scores.length >= 2 && (
+                    <div
+                      className="text-[11px] font-medium tabular-nums"
+                      style={{ color: "var(--color-exam-muted)" }}
+                    >
+                      {scores.length} attempts · {scores[0]} → {scores[scores.length - 1]}
+                    </div>
+                  )}
+                  <div className="flex items-center gap-2 pt-1.5">
+                    <button
+                      className="btn btn-primary flex-1"
+                      disabled={starting !== null}
+                      onClick={() => begin(c.id)}
+                    >
+                      {starting === c.id ? "Loading…" : done ? "Retry" : "Begin"}
+                    </button>
+                    {reviewable.has(c.id) && (
                       <button
-                        className="btn btn-ghost mr-1.5"
+                        className="btn btn-ghost"
                         onClick={() => openReview(c.id)}
                         style={{ color: "var(--color-exam-accent)" }}
                       >
                         Review
                       </button>
                     )}
-                    <button className="btn btn-primary" disabled={starting !== null} onClick={() => begin(c.id)}>
-                      {starting === c.id ? "Loading…" : done ? "Retry" : "Begin"}
-                    </button>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </div>
+      )}
 
       <p className="hint text-center">
-        Patient interface: {llmEnabled ? "natural-language (AI-assisted, engine-gated)" : "deterministic engine"}
+        Patient interface: {llmEnabled ? "natural-language (AI-assisted, engine-gated)" : "deterministic engine"} ·
+        For medical education and OSCE practice only — not for clinical decision-making.
       </p>
     </div>
   );

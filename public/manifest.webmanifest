@@ -1,18 +1,36 @@
 {
-  "name": "OSCEprep — IM OSCE Simulator",
+  "name": "OSCEprep \u2014 IM OSCE Simulator",
   "short_name": "OSCEprep",
   "description": "Practice Internal Medicine clerkship OSCE stations end-to-end, with feedback, teaching, and drills. For medical education only.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f4f6f9",
-  "theme_color": "#15212e",
+  "background_color": "#f5f4fc",
+  "theme_color": "#2b1c6e",
   "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
     {
       "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }

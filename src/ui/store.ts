@@ -1,8 +1,9 @@
 /**
  * App store: thin orchestration over the pure engine. All clinical gating and
  * scoring decisions happen in src/engine; this store sequences async LLM
- * assistance (classification + phrasing) around those engine calls and
- * persists state for refresh-resume.
+ * assistance (classification + phrasing) around those engine calls, persists
+ * state for refresh-resume, and mirrors the current view into the URL hash so
+ * browser Back/refresh/deep-links behave.
  */
 
 import { create } from "zustand";
@@ -28,12 +29,19 @@ import { loadCase, manifest, scoreBands } from "../data/loader";
 import { breadthCreditForCategory } from "../data/curriculum";
 import {
   createProvider,
+  setLlmFallbackListener,
   LLM_KEY_STORAGE,
   LLM_MODEL_STORAGE,
   type LlmProvider,
   type ProviderKind,
 } from "../llm/LlmAdapter";
-import { recordAttempt, loadReview, type CaseReview } from "../analytics/store";
+import {
+  attachCoaching,
+  loadAttempts,
+  recordAttempt,
+  loadReview,
+  type CaseReview,
+} from "../analytics/store";
 import { looseCovered } from "../engine/textMatch";
 
 const WRAPPERS = {
@@ -47,34 +55,73 @@ let llmEnabled: boolean;
 let providerKind: ProviderKind | null;
 ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
 
+export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills";
+
+/** Last-chosen station mode, persisted so Practice users stay in Practice.
+ *  First-run (no attempts) defaults to the gentler untimed mode. */
+const MODE_STORAGE = "osce.mode";
+function initialMode(): Mode {
+  try {
+    const stored = localStorage.getItem(MODE_STORAGE);
+    if (stored === "STRICT_OSCE" || stored === "PRACTICE") return stored;
+    return loadAttempts().length === 0 ? "PRACTICE" : "STRICT_OSCE";
+  } catch {
+    return "PRACTICE";
+  }
+}
+
+/** An interrupted station found in storage — surfaced as a banner, never
+ *  silently re-entered (a stale strict-mode deadline would instantly
+ *  auto-submit a half-empty attempt into the analytics). */
+export interface PendingResume {
+  engine: EngineState;
+  caseModel: CaseModel;
+}
+
 interface AppState {
-  view: "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills";
+  view: View;
   /** When set, the Case Select screen opens the Enable-AI panel on mount. */
   pendingAiPanel: boolean;
+  /** When set, the Case Select screen pre-applies this category filter. */
+  pendingCategoryFilter: string | null;
   caseModel: CaseModel | null;
   engine: EngineState | null;
+  pendingResume: PendingResume | null;
+  /** Sticky station mode (Strict vs Practice), persisted across sessions. */
+  preferredMode: Mode;
   llmEnabled: boolean;
   providerKind: ProviderKind | null;
   /** Verification of the configured key: a one-shot test call result. */
   aiStatus: "idle" | "verifying" | "ok" | "error";
   aiError: string | null;
+  /** Set when an AI call failed mid-session and the engine fallback answered
+   *  instead (e.g. "patient replies") — surfaced so "AI on" never lies. */
+  aiDegraded: string | null;
   spThinking: boolean;
+  /** Submission in flight (AI rubric matching can take seconds). */
+  grading: boolean;
+  /** The post-encounter clock ran out — grading was started automatically. */
+  timeExpired: boolean;
   /** AI coaching notes by stepId (when AI enabled), shown in feedback. */
   coaching: Record<string, string>;
+  coachingPending: boolean;
   /** A completed case opened for review (read-only feedback). */
   review: CaseReview | null;
+  setView: (view: View) => void;
   startCase: (id: string, mode: Mode) => Promise<void>;
   startRandomCase: (mode: Mode, candidateIds: string[]) => Promise<void>;
+  /** Random pick preferring never-attempted cases; pool defaults to the whole library. */
+  startRandomUnattempted: (mode: Mode, pool?: string[]) => Promise<void>;
   resumeSession: () => Promise<boolean>;
+  acceptResume: () => void;
+  discardResume: () => void;
   exitToSelect: () => void;
-  showHome: () => void;
-  showStations: () => void;
-  showAnalytics: () => void;
-  showSkills: () => void;
-  showDrills: () => void;
   showEnableAi: () => void;
   clearPendingAiPanel: () => void;
+  browseCategory: (category: string) => void;
+  clearPendingCategoryFilter: () => void;
   openReview: (caseId: string) => void;
+  setPreferredMode: (mode: Mode) => void;
   setApiKey: (key: string) => void;
   setModel: (model: string) => void;
   verifyAi: () => Promise<void>;
@@ -96,6 +143,60 @@ interface AppState {
   devFillIdeal: () => void;
   devAutocompleteStation: () => Promise<void>;
 }
+
+// ---- URL hash routing ---------------------------------------------------------
+
+const VIEW_HASH: Record<View, string> = {
+  home: "#/",
+  select: "#/stations",
+  drills: "#/drills",
+  skills: "#/skills",
+  analytics: "#/performance",
+  review: "#/review",
+  station: "#/station",
+};
+
+function hashFor(view: View, review: CaseReview | null): string {
+  if (view === "review" && review) return `#/review/${encodeURIComponent(review.caseId)}`;
+  return VIEW_HASH[view];
+}
+
+/** Mirror the store view into the URL (no-op when already there). */
+function syncHash(): void {
+  try {
+    const { view, review } = useAppStore.getState();
+    const target = hashFor(view, review);
+    const current = window.location.hash || "#/";
+    if (current !== target) window.history.pushState(null, "", target);
+  } catch {
+    // non-browser environment (tests) — routing is cosmetic there
+  }
+}
+
+/** Apply a URL hash to the store (initial load + popstate). */
+export function applyHash(hash: string): void {
+  const h = hash || "#/";
+  const s = useAppStore.getState();
+  if (h.startsWith("#/review/")) {
+    s.openReview(decodeURIComponent(h.slice("#/review/".length)));
+    return;
+  }
+  const entry = (Object.entries(VIEW_HASH) as [View, string][]).find(([, v]) => v === h);
+  const view: View = entry?.[0] ?? "home";
+  if (view === "station") {
+    // Stations aren't deep-linkable; show a live one, else land on the library.
+    if (s.engine && s.caseModel) s.setView("station");
+    else s.setView("select");
+    return;
+  }
+  if (view === "review") {
+    s.setView("select"); // bare #/review without a case id
+    return;
+  }
+  s.setView(view);
+}
+
+// ---- Persistence helpers --------------------------------------------------------
 
 function persist(engine: EngineState | null) {
   try {
@@ -124,6 +225,20 @@ function withOpening(engine: EngineState, caseModel: CaseModel): EngineState {
     ...engine,
     conversation: [{ role: "patient", text: caseModel.opening, kind: "speech" }],
   };
+}
+
+/** Seconds left in the engine's current phase (its own bookkeeping fields). */
+function phaseRemaining(engine: EngineState): number {
+  switch (engine.currentState) {
+    case "CHART_REVIEW":
+      return engine.chartReviewTimeRemaining;
+    case "PATIENT_ENCOUNTER":
+      return engine.encounterTimeRemaining;
+    case "POST_ENCOUNTER":
+      return engine.postEncounterTimeRemaining;
+    case "FEEDBACK":
+      return 0;
+  }
 }
 
 /** Collect LLM-assisted rubric matches for grading. Deterministic matching in
@@ -205,21 +320,46 @@ async function collectCoaching(
 export const useAppStore = create<AppState>((set, get) => ({
   view: "home",
   pendingAiPanel: false,
+  pendingCategoryFilter: null,
   caseModel: null,
   engine: null,
+  pendingResume: null,
+  preferredMode: initialMode(),
   llmEnabled,
   providerKind,
   aiStatus: "idle",
   aiError: null,
+  aiDegraded: null,
   spThinking: false,
+  grading: false,
+  timeExpired: false,
   coaching: {},
+  coachingPending: false,
   review: null,
+
+  setView(view) {
+    set({ view });
+    syncHash();
+  },
 
   async startCase(id, mode) {
     const caseModel = await loadCase(id);
     const engine = createSession(caseModel, mode, Date.now());
     persist(engine);
-    set({ caseModel, engine, view: "station", coaching: {}, review: null });
+    get().setPreferredMode(mode);
+    set({
+      caseModel,
+      engine,
+      view: "station",
+      coaching: {},
+      coachingPending: false,
+      review: null,
+      pendingResume: null,
+      aiDegraded: null,
+      timeExpired: false,
+      grading: false,
+    });
+    syncHash();
   },
 
   async startRandomCase(mode, candidateIds) {
@@ -230,9 +370,27 @@ export const useAppStore = create<AppState>((set, get) => ({
     await get().startCase(candidateIds[idx], mode);
   },
 
+  async startRandomUnattempted(mode, pool) {
+    const candidates = pool ?? manifest.cases.map((c) => c.id);
+    const done = new Set(loadAttempts().map((a) => a.caseId));
+    const unattempted = candidates.filter((id) => !done.has(id));
+    await get().startRandomCase(mode, unattempted.length > 0 ? unattempted : candidates);
+  },
+
   openReview(caseId) {
     const review = loadReview(caseId);
     if (review) set({ view: "review", review });
+    else set({ view: "select" });
+    syncHash();
+  },
+
+  setPreferredMode(mode) {
+    try {
+      localStorage.setItem(MODE_STORAGE, mode);
+    } catch {
+      // ignore storage failure
+    }
+    set({ preferredMode: mode });
   },
 
   setApiKey(key) {
@@ -244,7 +402,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       // ignore storage failure
     }
     ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
-    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null });
+    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null });
     if (llmEnabled) void get().verifyAi();
   },
 
@@ -256,7 +414,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       // ignore storage failure
     }
     ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
-    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null });
+    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null });
     if (llmEnabled) void get().verifyAi();
   },
 
@@ -268,7 +426,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ aiStatus: "verifying", aiError: null });
     try {
       await provider.verify();
-      set({ aiStatus: "ok", aiError: null });
+      set({ aiStatus: "ok", aiError: null, aiDegraded: null });
     } catch (e) {
       const msg = e instanceof Error ? e.message : String(e);
       // Trim the often-verbose SDK error to something readable.
@@ -304,50 +462,97 @@ export const useAppStore = create<AppState>((set, get) => ({
       const engine = deserializeSession(raw);
       if (!engine) return false;
       const caseModel = await loadCase(engine.caseId);
-      set({ caseModel, engine, view: "station" });
+      // Never jump straight into the station: a stale strict-mode deadline
+      // would auto-submit a half-empty attempt on the first tick. Offer it.
+      set({ pendingResume: { engine, caseModel } });
       return true;
     } catch {
       return false;
     }
   },
 
+  acceptResume() {
+    const { pendingResume } = get();
+    if (!pendingResume) return;
+    let { engine } = pendingResume;
+    // Re-base the wall-clock deadline so the timer paused while the tab was
+    // closed instead of silently expiring phases (min 5s grace).
+    if (engine.phaseDeadline !== null && engine.currentState !== "FEEDBACK") {
+      engine = {
+        ...engine,
+        phaseDeadline: Date.now() + Math.max(5, phaseRemaining(engine)) * 1000,
+      };
+    }
+    const caseModel = pendingResume.caseModel;
+    persist(engine);
+    set({
+      pendingResume: null,
+      caseModel,
+      engine: withOpening(engine, caseModel),
+      view: "station",
+      coaching: {},
+      coachingPending: false,
+      review: null,
+      timeExpired: false,
+      grading: false,
+    });
+    syncHash();
+  },
+
+  discardResume() {
+    persist(null);
+    set({ pendingResume: null });
+  },
+
   exitToSelect() {
     persist(null);
-    set({ view: "select", caseModel: null, engine: null, review: null });
-  },
-
-  showHome() {
-    set({ view: "home" });
-  },
-
-  showStations() {
-    set({ view: "select" });
-  },
-
-  showAnalytics() {
-    set({ view: "analytics" });
-  },
-
-  showSkills() {
-    set({ view: "skills" });
-  },
-
-  showDrills() {
-    set({ view: "drills" });
+    set({
+      view: "select",
+      caseModel: null,
+      engine: null,
+      review: null,
+      grading: false,
+      timeExpired: false,
+    });
+    syncHash();
   },
 
   showEnableAi() {
     set({ view: "select", pendingAiPanel: true });
+    syncHash();
   },
 
   clearPendingAiPanel() {
     set({ pendingAiPanel: false });
   },
 
+  browseCategory(category) {
+    set({ view: "select", pendingCategoryFilter: category });
+    syncHash();
+  },
+
+  clearPendingCategoryFilter() {
+    set({ pendingCategoryFilter: null });
+  },
+
   tick() {
-    const { engine, caseModel } = get();
+    const { engine, caseModel, grading } = get();
     if (!engine || !caseModel) return;
-    const wasPost = engine.currentState === "POST_ENCOUNTER";
+    // Post-encounter expiry goes through the SAME submission pipeline as the
+    // button (LLM rubric matching + coaching) — never the engine's bare
+    // deterministic auto-submit, which would silently grade differently.
+    if (
+      engine.currentState === "POST_ENCOUNTER" &&
+      engine.phaseDeadline !== null &&
+      Date.now() >= engine.phaseDeadline &&
+      !engine.submitted
+    ) {
+      if (!grading) {
+        set({ timeExpired: true });
+        void get().submitStation();
+      }
+      return;
+    }
     const next = engineTick(
       engine,
       caseModel,
@@ -357,9 +562,6 @@ export const useAppStore = create<AppState>((set, get) => ({
       breadthCreditForCategory(caseModel.category),
     );
     if (next === engine) return;
-    if (wasPost && next.submitted && !engine.submitted) {
-      recordAttempt(caseModel, next);
-    }
     setEngine(set, withOpening(next, caseModel));
   },
 
@@ -529,26 +731,50 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   async submitStation() {
-    const { engine, caseModel } = get();
-    if (!engine || !caseModel || engine.submitted) return;
-    const llmMatches = await collectLlmMatches(caseModel, engine);
-    const next = submit(
-      engine,
-      caseModel,
-      scoreBands,
-      Date.now(),
-      llmMatches,
-      breadthCreditForCategory(caseModel.category),
-    );
-    if (next.submitted && !engine.submitted) {
-      recordAttempt(caseModel, next);
-    }
-    setEngine(set, next);
-    // AI coaching notes load in the background and fill in once ready.
-    if (llmEnabled) {
-      collectCoaching(caseModel, next)
-        .then((coaching) => set({ coaching }))
-        .catch(() => {});
+    const { engine, caseModel, grading } = get();
+    if (!engine || !caseModel || engine.submitted || grading) return;
+    set({ grading: true });
+    try {
+      const llmMatches = await collectLlmMatches(caseModel, engine);
+      // Re-read after the await: guards a double submit (e.g. tick racing the
+      // button) and grades any text typed while matching was in flight.
+      const current = get().engine;
+      if (!current || current.submitted) return;
+      const next = submit(
+        current,
+        caseModel,
+        scoreBands,
+        Date.now(),
+        llmMatches,
+        breadthCreditForCategory(caseModel.category),
+      );
+      if (next.submitted && !current.submitted) {
+        recordAttempt(caseModel, next);
+      }
+      setEngine(set, next);
+      // AI coaching notes load in the background, fill in once ready, and are
+      // persisted onto the saved review so they survive leaving this screen.
+      if (llmEnabled) {
+        set({ coachingPending: true });
+        collectCoaching(caseModel, next)
+          .then((coaching) => {
+            attachCoaching(caseModel.id, coaching);
+            if (get().caseModel?.id === caseModel.id) {
+              set({ coaching, coachingPending: false });
+            }
+          })
+          .catch(() => {
+            if (get().caseModel?.id === caseModel.id) set({ coachingPending: false });
+          });
+      }
+    } finally {
+      set({ grading: false });
     }
   },
 }));
+
+// Surface provider fallbacks ("AI on" must never lie about a degraded session).
+setLlmFallbackListener((op) => {
+  const s = useAppStore.getState();
+  if (s.llmEnabled && s.aiDegraded !== op) useAppStore.setState({ aiDegraded: op });
+});

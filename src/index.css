@@ -1,31 +1,98 @@
 @import "tailwindcss";
 
-@theme {
-  /* Clinical neutrals + one accent. Calm, layered, exam-software register. */
-  --color-exam-bg: #f4f6f9;
-  --color-exam-panel: #ffffff;
-  --color-exam-border: #e3e8ee;
-  --color-exam-border-strong: #cbd3dc;
-  --color-exam-header: #15212e;
-  --color-exam-ink: #1c2733;
-  --color-exam-muted: #66737f;
-  --color-exam-faint: #98a3ae;
-  --color-exam-accent: #2257d6;
-  --color-exam-accent-deep: #1a46b0;
-  --color-exam-accent-soft: #edf2fd;
-  --color-exam-warn: #b45309;
-  --color-exam-warn-soft: #fff8e9;
-  --color-exam-danger: #c03434;
-  --color-exam-danger-soft: #fdf1f1;
-  --color-exam-ok: #1b7f4d;
-  --color-exam-ok-soft: #eefaf3;
+/* Self-hosted Nunito (latin, variable 200–1000) — no third-party request, and
+ * the installed PWA keeps its typeface offline. */
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito-variable.woff2") format("woff2-variations");
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito-variable-italic.woff2") format("woff2-variations");
+  font-weight: 200 1000;
+  font-style: italic;
+  font-display: swap;
+}
 
-  --font-sans: "Avenir Next", "Segoe UI Variable", "Segoe UI", -apple-system, "Helvetica Neue", system-ui, sans-serif;
+/*
+ * OSCEprep "Vivid" design language (v3).
+ *
+ * Energetic but credible: electric-violet primary on lavender-white, with a
+ * small pop palette (teal/coral/sun/sky) reserved for category coding, streaks,
+ * and celebration. Clinical data (vitals, timers, scores) always renders in
+ * mono on neutral surfaces so the playfulness never costs legibility.
+ *
+ * Var names are unchanged from v2 (--color-exam-*) so every screen reskins
+ * from this file alone; new tokens are additive.
+ */
+
+@theme {
+  /* Neutrals — lavender-tinted, never pure gray */
+  --color-exam-bg: #f5f4fc;
+  --color-exam-panel: #ffffff;
+  --color-exam-soft: #f8f7fe;
+  --color-exam-border: #e8e5f6;
+  --color-exam-border-strong: #d5d0ee;
+  --color-exam-header: #2a2253;
+  --color-exam-ink: #292347;
+  --color-exam-muted: #6b6786;
+  /* Lightest *readable* text (≥4.5:1 on white AND the lavender bg/soft
+   * surfaces). For purely decorative glyphs (aria-hidden bullets/carets) use
+   * --color-exam-ghost. */
+  --color-exam-faint: #6e6b8a;
+  --color-exam-ghost: #a29dbe;
+  --color-exam-track: #eceaf7;
+  --color-exam-danger-deep: #c0262c;
+
+  /* Primary — electric violet */
+  --color-exam-accent: #6d4aff;
+  --color-exam-accent-deep: #5634e0;
+  --color-exam-accent-soft: #f0ebff;
+  --color-exam-accent-line: #dcd2ff;
+
+  /* Semantic */
+  --color-exam-warn: #d97706;
+  --color-exam-warn-soft: #fff4e0;
+  --color-exam-warn-line: #f8dcae;
+  --color-exam-danger: #e5484d;
+  --color-exam-danger-soft: #feeeee;
+  --color-exam-danger-line: #f7cbce;
+  --color-exam-ok: #0ca678;
+  --color-exam-ok-soft: #e6faf2;
+  --color-exam-ok-line: #bfefd9;
+
+  /* Pop palette — category coding, streaks, badges, celebration */
+  --color-pop-teal: #00bfa6;
+  --color-pop-teal-soft: #dff9f4;
+  --color-pop-coral: #ff6b6b;
+  --color-pop-coral-soft: #ffecec;
+  --color-pop-sun: #ffb020;
+  --color-pop-sun-soft: #fff3d6;
+  --color-pop-sky: #3b9eff;
+  --color-pop-sky-soft: #e3f1ff;
+  --color-pop-pink: #f25eb0;
+  --color-pop-pink-soft: #fde9f4;
+
+  --font-sans: "Nunito", "Avenir Next", "Segoe UI Variable", "Segoe UI", -apple-system, system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Consolas", monospace;
 
-  --radius-card: 10px;
-  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.05), 0 1px 3px rgba(16, 24, 40, 0.04);
-  --shadow-raised: 0 4px 12px rgba(16, 24, 40, 0.08), 0 1px 3px rgba(16, 24, 40, 0.05);
+  --radius-card: 16px;
+  --shadow-card: 0 2px 8px rgba(86, 52, 224, 0.06), 0 1px 2px rgba(41, 35, 71, 0.05);
+  --shadow-raised: 0 12px 28px rgba(86, 52, 224, 0.14), 0 2px 6px rgba(41, 35, 71, 0.06);
+}
+
+:root {
+  /* Gradients (plain vars — not theme tokens) */
+  --grad-primary: linear-gradient(135deg, #6d4aff 0%, #9b4dff 60%, #c44dff 100%);
+  --grad-header: linear-gradient(115deg, #2b1c6e 0%, #4b2bb3 55%, #6d3fd4 100%);
+  --grad-teal: linear-gradient(135deg, #00bfa6, #00d9c5);
+  --grad-sun: linear-gradient(135deg, #ff9f1a, #ffc14d);
+  --grad-coral: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  --grad-sky: linear-gradient(135deg, #3b9eff, #6cc0ff);
+  --grad-pink: linear-gradient(135deg, #f25eb0, #ff8ccd);
 }
 
 html, body, #root {
@@ -45,9 +112,10 @@ body {
 }
 
 *:focus-visible {
+  /* The outline follows each element's own border-radius — never force one
+   * here (it visibly deformed pill controls on keyboard focus). */
   outline: 2px solid var(--color-exam-accent);
   outline-offset: 1px;
-  border-radius: 4px;
 }
 
 /* ---- Surfaces ---------------------------------------------------------- */
@@ -58,6 +126,17 @@ body {
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-card);
 }
+
+/* Interactive card: lifts on hover. */
+.card-pop {
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.card-pop:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-raised);
+  border-color: var(--color-exam-accent-line);
+}
+.card-pop:active { transform: translateY(-1px); }
 
 .card-header {
   display: flex;
@@ -71,7 +150,7 @@ body {
 /* Small-caps section label */
 .panel-label {
   font-size: 0.6875rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--color-exam-muted);
@@ -80,6 +159,20 @@ body {
 .hint {
   font-size: 0.75rem;
   color: var(--color-exam-faint);
+}
+
+/* Gradient icon tile (mode cards, stat tiles) */
+.icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 14px;
+  font-size: 1.25rem;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(86, 52, 224, 0.22);
+  flex-shrink: 0;
 }
 
 /* ---- Controls ---------------------------------------------------------- */
@@ -91,30 +184,35 @@ body {
   gap: 0.375rem;
   border: 1px solid var(--color-exam-border-strong);
   background: #fff;
-  padding: 0.4375rem 0.875rem;
+  padding: 0.4375rem 1rem;
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-exam-ink);
-  border-radius: 8px;
+  border-radius: 999px;
   cursor: pointer;
-  transition: background 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+  transition: background 130ms ease, border-color 130ms ease, box-shadow 130ms ease, transform 100ms ease;
 }
-.btn:hover { background: #f6f8fa; }
-.btn:active { background: #eef1f4; }
-.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:hover { background: var(--color-exam-soft); border-color: var(--color-exam-accent-line); }
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
 
 .btn-primary {
-  background: var(--color-exam-accent);
-  border-color: var(--color-exam-accent);
+  background: var(--grad-primary);
+  border-color: transparent;
   color: #fff;
-  box-shadow: 0 1px 2px rgba(34, 87, 214, 0.35);
+  box-shadow: 0 4px 12px rgba(109, 74, 255, 0.35);
 }
-.btn-primary:hover { background: var(--color-exam-accent-deep); border-color: var(--color-exam-accent-deep); }
-.btn-primary:active { background: #163b94; }
+.btn-primary:hover {
+  background: var(--grad-primary);
+  filter: brightness(1.07);
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(109, 74, 255, 0.45);
+}
+.btn-primary:active { filter: brightness(0.97); }
 
 .btn-danger {
   background: #fff;
-  border-color: #ecc8c8;
+  border-color: var(--color-exam-danger-line);
   color: var(--color-exam-danger);
 }
 .btn-danger:hover { background: var(--color-exam-danger-soft); border-color: var(--color-exam-danger); }
@@ -123,11 +221,11 @@ body {
   border-color: transparent;
   background: transparent;
 }
-.btn-ghost:hover { background: #f0f3f6; }
+.btn-ghost:hover { background: var(--color-exam-accent-soft); }
 
 .input {
   border: 1px solid var(--color-exam-border-strong);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   background: #fff;
@@ -138,7 +236,7 @@ body {
 .input:focus {
   outline: none;
   border-color: var(--color-exam-accent);
-  box-shadow: 0 0 0 3px rgba(34, 87, 214, 0.12);
+  box-shadow: 0 0 0 3px rgba(109, 74, 255, 0.14);
 }
 
 /* ---- Chips & badges ----------------------------------------------------- */
@@ -149,7 +247,7 @@ body {
   gap: 0.3rem;
   padding: 0.125rem 0.625rem;
   font-size: 0.6875rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.04em;
   border-radius: 999px;
   border: 1px solid var(--color-exam-border);
@@ -158,53 +256,216 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.chip-danger { color: var(--color-exam-danger); border-color: #f0d4d4; background: var(--color-exam-danger-soft); }
-.chip-accent { color: var(--color-exam-accent-deep); border-color: #d3def7; background: var(--color-exam-accent-soft); }
-.chip-ok { color: var(--color-exam-ok); border-color: #cfe9db; background: var(--color-exam-ok-soft); }
+.chip-danger { color: var(--color-exam-danger); border-color: var(--color-exam-danger-line); background: var(--color-exam-danger-soft); }
+.chip-accent { color: var(--color-exam-accent-deep); border-color: var(--color-exam-accent-line); background: var(--color-exam-accent-soft); }
+.chip-ok { color: var(--color-exam-ok); border-color: var(--color-exam-ok-line); background: var(--color-exam-ok-soft); }
+.chip-warn { color: var(--color-exam-warn); border-color: var(--color-exam-warn-line); background: var(--color-exam-warn-soft); }
+.chip-teal { color: #076a5b; border-color: #b3ede4; background: var(--color-pop-teal-soft); }
+
+/* Interactive chip: same look, WCAG-sized hit target. */
+.chip-btn {
+  padding: 0.375rem 0.75rem;
+  min-height: 28px;
+  cursor: pointer;
+  transition: background 130ms ease, color 130ms ease, border-color 130ms ease, transform 100ms ease;
+}
+.chip-btn:active { transform: scale(0.96); }
+
+/* ---- Tabs (rail panels) --------------------------------------------------- */
+
+.tab-pill {
+  padding: 0.375rem 0.875rem;
+  font-size: 12.5px;
+  font-weight: 700;
+  border-radius: 999px;
+  white-space: nowrap;
+  color: var(--color-exam-muted);
+  background: transparent;
+  transition: background 130ms ease, color 130ms ease;
+}
+.tab-pill:hover { background: var(--color-exam-soft); }
+.tab-pill[aria-selected="true"] {
+  background: var(--color-exam-accent-soft);
+  color: var(--color-exam-accent-deep);
+}
+
+/* ---- Progress ------------------------------------------------------------ */
+
+.progress-track {
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--color-exam-track);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--grad-primary);
+  transition: width 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+}
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: shimmer 2.2s infinite linear;
+}
 
 /* ---- Conversation bubbles ----------------------------------------------- */
 
 .bubble {
   max-width: 78%;
-  border-radius: 14px;
-  padding: 0.5625rem 0.875rem;
+  border-radius: 18px;
+  padding: 0.5625rem 0.9375rem;
   font-size: 0.9rem;
   line-height: 1.45;
   white-space: pre-wrap;
 }
 .bubble-patient {
-  background: #f1f4f8;
+  background: #fff;
   border: 1px solid var(--color-exam-border);
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 6px;
   align-self: flex-start;
+  box-shadow: var(--shadow-card);
 }
 .bubble-student {
-  background: var(--color-exam-accent-soft);
-  border: 1px solid #d8e2fa;
-  border-bottom-right-radius: 4px;
+  background: var(--grad-primary);
+  border: none;
+  border-bottom-right-radius: 6px;
   align-self: flex-end;
-  color: #18305f;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(109, 74, 255, 0.28);
 }
 .bubble-exam {
   align-self: stretch;
   max-width: 100%;
-  background: #fbfcfe;
-  border: 1px solid var(--color-exam-border);
-  border-left: 3px solid var(--color-exam-accent);
-  border-radius: 8px;
+  background: var(--color-pop-teal-soft);
+  border: 1px solid #b3ede4;
+  border-left: 3px solid var(--color-pop-teal);
+  border-radius: 10px;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
+  color: #0b5e51;
 }
 
-/* ---- Misc ---------------------------------------------------------------- */
+/* ---- Gamification -------------------------------------------------------- */
 
-.scroll-quiet { scrollbar-width: thin; scrollbar-color: #c8d0d9 transparent; }
+.flame {
+  display: inline-block;
+  animation: flame-flicker 1.6s ease-in-out infinite;
+  transform-origin: 50% 85%;
+}
+
+.badge-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--color-exam-border);
+  background: #fff;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.badge-tile.earned { border-color: var(--color-exam-accent-line); background: var(--color-exam-accent-soft); }
+.badge-tile.earned:hover { transform: translateY(-2px) rotate(-1deg); box-shadow: var(--shadow-raised); }
+.badge-tile.locked { opacity: 0.45; filter: grayscale(1); }
+
+/* Confetti pieces (Feedback celebration) */
+.confetti-piece {
+  position: absolute;
+  top: -12px;
+  width: 8px;
+  height: 14px;
+  border-radius: 2px;
+  opacity: 0;
+  animation: confetti-fall 2.8s ease-in forwards;
+}
+
+/* ---- Motion --------------------------------------------------------------- */
+
+.scroll-quiet { scrollbar-width: thin; scrollbar-color: #cfc9e8 transparent; }
 
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(3px); }
+  from { opacity: 0; transform: translateY(4px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.fade-up { animation: fade-up 160ms ease-out; }
+.fade-up { animation: fade-up 180ms ease-out; }
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.92); }
+  70% { transform: scale(1.03); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.pop-in { animation: pop-in 320ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+@keyframes flame-flicker {
+  0%, 100% { transform: scale(1) rotate(-2deg); }
+  35% { transform: scale(1.12) rotate(2deg); }
+  70% { transform: scale(0.96) rotate(-1deg); }
+}
+
+@keyframes confetti-fall {
+  0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(46vh) rotate(540deg); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.82); }
+}
+.pulse-urgent { animation: pulse-dot 1s infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .pop-in, .flame, .confetti-piece, .progress-fill::after,
+  .pulse-urgent, .animate-bounce {
+    animation: none !important;
+  }
+  .card-pop, .card-pop:hover, .badge-tile.earned:hover, .chip-btn:active, .btn:active { transform: none; }
+  .progress-fill { transition: none; }
+  details > summary .caret { transition: none; }
+}
 
 details > summary { list-style: none; cursor: pointer; }
 details > summary::-webkit-details-marker { display: none; }
+
+/* Rotating disclosure caret: <span className="caret" aria-hidden>▶</span> */
+details > summary .caret {
+  display: inline-block;
+  transition: transform 160ms ease;
+}
+details[open] > summary .caret { transform: rotate(90deg); }
+
+/* ---- Overlays --------------------------------------------------------------- */
+
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(42, 34, 83, 0.45);
+  backdrop-filter: blur(2px);
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  border: 3px solid var(--color-exam-accent-soft);
+  border-top-color: var(--color-exam-accent);
+  animation: spin 0.8s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation-duration: 1.6s; }
+}

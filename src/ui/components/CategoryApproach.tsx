@@ -14,8 +14,23 @@ export function CategoryApproach({ category }: { category: string }) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-baseline justify-between">
-        <h3 className="text-[15px] font-bold tracking-tight">Approach to {category}</h3>
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2.5">
+          <span
+            className="icon-tile h-9 w-9 text-base"
+            style={{
+              background: "var(--grad-primary)",
+              width: "2.25rem",
+              height: "2.25rem",
+              fontSize: "1rem",
+              borderRadius: 12,
+            }}
+            aria-hidden
+          >
+            🧭
+          </span>
+          <h3 className="text-[15px] font-bold tracking-tight">Approach to {category}</h3>
+        </div>
         <span className="hint">Transferable strategy · not specific to this patient</span>
       </div>
 
@@ -63,7 +78,7 @@ export function CategoryApproach({ category }: { category: string }) {
               <ul className="space-y-1 text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
                 {qt.questions.map((q, i) => (
                   <li key={i} className="flex gap-2">
-                    <span aria-hidden style={{ color: "var(--color-exam-accent)" }}>•</span>
+                    <span aria-hidden style={{ color: "var(--color-exam-ghost)" }}>•</span>
                     {q}
                   </li>
                 ))}
@@ -79,7 +94,7 @@ export function CategoryApproach({ category }: { category: string }) {
           <ul className="space-y-1 text-[13px] leading-relaxed">
             {c.examFocus.map((e, i) => (
               <li key={i} className="flex gap-2">
-                <span aria-hidden style={{ color: "var(--color-exam-accent)" }}>•</span>
+                <span aria-hidden style={{ color: "var(--color-exam-ghost)" }}>•</span>
                 {e}
               </li>
             ))}
@@ -155,7 +170,7 @@ export function CategoryApproach({ category }: { category: string }) {
         <ul className="space-y-1.5 text-[13px] leading-relaxed">
           {c.references.map((r, i) => (
             <li key={i} className="flex gap-2">
-              <span aria-hidden style={{ color: "var(--color-exam-faint)" }}>§</span>
+              <span aria-hidden style={{ color: "var(--color-exam-ghost)" }}>§</span>
               <span>
                 <span className="font-medium">{r.label}</span>
                 {" — "}
@@ -177,9 +192,9 @@ export function CategoryApproach({ category }: { category: string }) {
       </div>
 
       <details className="card overflow-hidden">
-        <summary className="card-header hover:bg-[#fafbfd] transition-colors" style={{ borderBottom: "none" }}>
+        <summary className="card-header hover:bg-[var(--color-exam-soft)] transition-colors" style={{ borderBottom: "none" }}>
           <span className="flex items-center gap-2.5">
-            <span aria-hidden className="text-[10px]" style={{ color: "var(--color-exam-faint)" }}>▶</span>
+            <span aria-hidden className="caret text-[10px]" style={{ color: "var(--color-exam-ghost)" }}>▶</span>
             <span className="text-[13.5px] font-semibold">General reasoning frameworks</span>
           </span>
           <span className="hint">how experts structure any case</span>
@@ -203,8 +218,8 @@ export function CategoryApproach({ category }: { category: string }) {
 function PracticeCaseCard({ pc }: { pc: PracticeCase }) {
   return (
     <div
-      className="rounded-lg border p-3.5 space-y-2"
-      style={{ borderColor: "var(--color-exam-border)", background: "#fafbfd" }}
+      className="rounded-xl border p-3.5 space-y-2"
+      style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)" }}
     >
       <p className="text-[13.5px] font-semibold leading-relaxed">{pc.vignette}</p>
       <div className="text-[13px] leading-relaxed">
@@ -218,7 +233,7 @@ function PracticeCaseCard({ pc }: { pc: PracticeCase }) {
       {pc.twist && (
         <div
           className="rounded-md px-2.5 py-2 text-[13px] leading-relaxed"
-          style={{ background: "var(--color-exam-accent-soft)", color: "#18305f" }}
+          style={{ background: "var(--color-exam-accent-soft)", color: "var(--color-exam-accent-deep)" }}
         >
           <span className="font-semibold">Results: </span>
           {pc.twist}

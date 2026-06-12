@@ -35,7 +35,7 @@ export function ChartSummary({
             <div
               key={k}
               className="rounded-lg border px-2 py-1.5 text-center"
-              style={{ borderColor: "var(--color-exam-border)", background: "#fafbfd" }}
+              style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)" }}
             >
               <div className="text-[10.5px] font-bold uppercase tracking-wide" style={{ color: "var(--color-exam-faint)" }}>
                 {k}
@@ -56,7 +56,7 @@ export function ChartSummary({
   if (bare) return body;
   return (
     <div className="card overflow-hidden">
-      <div className="card-header" style={{ background: "#fafbfd" }}>
+      <div className="card-header" style={{ background: "var(--color-exam-soft)" }}>
         <span className="panel-label">Door Chart</span>
       </div>
       {body}

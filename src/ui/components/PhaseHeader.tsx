@@ -1,4 +1,5 @@
 import type { CaseModel, EngineState, Phase } from "../../engine/types";
+import { categoryFlair } from "../gamification";
 import { Timer } from "./Timer";
 
 const PHASES: { key: Phase; label: string }[] = [
@@ -43,8 +44,8 @@ export function PhaseHeader({
               {i > 0 && (
                 <span
                   aria-hidden
-                  className="mx-1.5 sm:mx-2.5 h-px w-3 sm:w-7"
-                  style={{ background: past || active ? "var(--color-exam-accent)" : "var(--color-exam-border-strong)" }}
+                  className="mx-1.5 sm:mx-2.5 h-1 w-3 sm:w-7 rounded-full"
+                  style={{ background: past || active ? "var(--grad-primary)" : "var(--color-exam-border)" }}
                 />
               )}
               <span
@@ -52,12 +53,12 @@ export function PhaseHeader({
                 aria-current={active ? "step" : undefined}
               >
                 <span
-                  className="flex h-5.5 w-5.5 items-center justify-center rounded-full text-[11px] font-bold"
+                  className="flex h-5.5 w-5.5 items-center justify-center rounded-full text-[11px] font-extrabold"
                   style={{
                     width: 22,
                     height: 22,
                     background: active
-                      ? "var(--color-exam-accent)"
+                      ? "var(--grad-primary)"
                       : past
                         ? "var(--color-exam-accent-soft)"
                         : "#fff",
@@ -66,7 +67,8 @@ export function PhaseHeader({
                       : past
                         ? "var(--color-exam-accent-deep)"
                         : "var(--color-exam-faint)",
-                    border: active ? "none" : `1px solid ${past ? "#d3def7" : "var(--color-exam-border-strong)"}`,
+                    border: active ? "none" : `1px solid ${past ? "var(--color-exam-accent-line)" : "var(--color-exam-border-strong)"}`,
+                    boxShadow: active ? "0 2px 8px rgba(109, 74, 255, 0.35)" : "none",
                   }}
                 >
                   {past ? "✓" : i + 1}
@@ -90,7 +92,17 @@ export function PhaseHeader({
         })}
       </ol>
       <div className="flex items-center gap-2 sm:gap-2.5">
-        <span className="chip hidden md:inline-flex">{caseModel.category}</span>
+        {(() => {
+          const flair = categoryFlair(caseModel.category);
+          return (
+            <span
+              className="chip hidden md:inline-flex"
+              style={{ color: flair.deep, background: flair.soft, borderColor: flair.soft }}
+            >
+              {flair.emoji} {caseModel.category}
+            </span>
+          );
+        })()}
         <span className="chip capitalize hidden sm:inline-flex">{caseModel.difficulty}</span>
         <span className={engine.mode === "STRICT_OSCE" ? "chip chip-danger" : "chip"}>
           {engine.mode === "STRICT_OSCE" ? "Strict OSCE" : "Practice"}

@@ -1,4 +1,5 @@
 import { Component, type ErrorInfo, type ReactNode } from "react";
+import { SESSION_STORAGE_KEY } from "../../engine/stateMachine";
 
 interface Props {
   children: ReactNode;
@@ -25,16 +26,18 @@ export class ErrorBoundary extends Component<Props, State> {
     if (!this.state.error) return this.props.children;
     return (
       <div className="h-full flex items-center justify-center p-6" style={{ background: "var(--color-exam-bg)" }}>
-        <div className="card p-6 max-w-md text-center space-y-3">
-          <div className="text-2xl" aria-hidden>⚠️</div>
-          <h1 className="text-[17px] font-bold">Something went wrong</h1>
+        <div className="card pop-in p-8 max-w-md w-full text-center space-y-4">
+          <div className="text-[48px] leading-none" aria-hidden>🩹</div>
+          <h1 className="text-[24px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
+            Something broke — your progress is safe
+          </h1>
           <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
-            The app hit an unexpected error. Reloading usually fixes it. Your saved progress is kept;
-            if the problem persists you can reset local data.
+            The app hit an unexpected error. Reloading usually fixes it, and your completed
+            attempts and reviews are kept. If it keeps happening, reset the current session.
           </p>
           <pre
             className="text-left text-[11px] font-mono whitespace-pre-wrap rounded-lg border p-2 max-h-28 overflow-auto"
-            style={{ borderColor: "var(--color-exam-border)", background: "#fafbfd", color: "var(--color-exam-danger)" }}
+            style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)", color: "var(--color-exam-danger)" }}
           >
             {this.state.error.message}
           </pre>
@@ -47,7 +50,7 @@ export class ErrorBoundary extends Component<Props, State> {
               onClick={() => {
                 try {
                   // Clear only the in-progress session, not analytics/reviews.
-                  localStorage.removeItem("osce.session.v1");
+                  localStorage.removeItem(SESSION_STORAGE_KEY);
                 } catch {
                   /* ignore */
                 }
