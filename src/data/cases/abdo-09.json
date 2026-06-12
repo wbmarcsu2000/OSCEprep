@@ -1,0 +1,711 @@
+{
+  "id": "abdo-09",
+  "category": "Abdominal Pain",
+  "difficulty": "hard",
+  "title": "Sudden severe upper abdominal pain",
+  "diagnosis": "Perforated peptic ulcer",
+  "chart": {
+    "ageSex": "58M",
+    "cc": "Sudden severe stomach pain",
+    "oneLiner": "58M presents with the abrupt onset 4 hours ago of severe, constant epigastric pain that rapidly spread across the whole abdomen, now lying rigidly still.",
+    "vitals": {
+      "BP": "104/68",
+      "HR": "118",
+      "RR": "24",
+      "Temp": "38.1°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "It hit me out of nowhere a few hours ago — a stabbing pain in the pit of my stomach, and now it hurts everywhere and I can't move without it getting worse.",
+  "patientFile": "PERSONA: 58-year-old man, lying very still on the stretcher with knees drawn up, breathing shallowly (deep breaths and any movement worsen the pain), guarding his abdomen. Anxious but cooperative.\n\nHPI: Pain began ABRUPTLY about 4 hours ago — he can name the exact moment — as a sudden, severe, stabbing pain in the epigastrium. Within an hour it spread to involve the WHOLE abdomen and is now constant and “knife-like.” Movement, coughing, and the ambulance ride all made it dramatically worse; lying perfectly still helps a little. Nausea, no significant vomiting. He has had weeks of intermittent gnawing epigastric “burning” before meals relieved by antacids (only if asked about prior stomach symptoms). Takes ibuprofen most days for chronic back pain and bought more over the counter recently (only if asked about medications/painkillers). NO black or bloody stools that he has noticed, NO prior abdominal surgery, NO chest pain or exertional component, NO recent fatty-meal trigger, NO jaundice, NO change in bowels today, NO known gallstones.\nPMH: chronic low back pain; mild hypertension. MEDS: over-the-counter ibuprofen most days (if asked); occasional antacids. SOCIAL: smokes ~1 pack/day for 30 years; drinks 3–4 beers most evenings (sensitive — only if asked directly); no recreational drugs. FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: diaphoretic, lying rigidly still, in obvious distress.\n- Vitals: BP 104/68, HR 118, RR 24, 38.1°C, SpO2 97% RA.\n- Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds ABSENT/markedly reduced. No distension yet; no surgical scars.\n- Cardiac: tachycardic, regular, no murmur. Lungs: clear, shallow respirations.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the NSAID/ibuprofen use or the weeks of prior dyspepsia unless asked about medications, painkillers, or prior stomach symptoms.\n- Do NOT volunteer the alcohol amount unless asked directly about drinking.\n- The peritoneal signs (rigidity, guarding, rebound, absent bowel sounds) are revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 16.8 with neutrophil predominance and left shift, Hgb 14.6, Plt 280 (leukocytosis consistent with peritonitis).",
+      "BMP": "Mild prerenal azotemia (BUN/Cr mildly up), HCO3 19 with anion gap — early lactic/metabolic derangement from peritonitis/hypoperfusion.",
+      "Lipase": "Mildly elevated but NOT in the thousands — argues against primary acute pancreatitis as the cause.",
+      "LFTs": "Within normal limits; no obstructive pattern (argues against biliary obstruction/cholangitis).",
+      "Lactate": "Elevated at 3.2 mmol/L — marker of hypoperfusion/peritonitis, supports urgent source control.",
+      "CT_abdomen": "CT abdomen/pelvis with IV contrast: free intraperitoneal air and a small amount of free fluid, with focal wall discontinuity of the duodenal bulb/gastric antrum — consistent with a perforated peptic ulcer. No bowel-wall pneumatosis or mesenteric occlusion."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~118 bpm; no ST-elevation, no ischemic ST/T changes — a reactive tachycardia, not an acute coronary event.",
+      "verify": "Source a study matching: Sinus tachycardia at ~118 bpm with no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia without ischemic changes",
+      "searchTerms": [
+        "sinus tachycardia 12 lead ECG",
+        "sinus tachycardia no ischemia ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=pneumoperitoneum%20free%20air%20under%20diaphragm%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Free air under the right hemidiaphragm (pneumoperitoneum) on the upright film; lungs clear, no consolidation — the classic radiographic sign of a perforated viscus.",
+      "verify": "Source a study matching: Free air under the diaphragm (pneumoperitoneum) on an upright chest film with clear lungs. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "upright chest radiograph showing free air under the diaphragm (pneumoperitoneum)",
+      "searchTerms": [
+        "free air under diaphragm chest x-ray",
+        "pneumoperitoneum upright chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "Lipase",
+    "LFTs",
+    "Lactate",
+    "CT_abdomen",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CT_abdomen",
+    "cxr",
+    "CBC"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Perforated peptic ulcer / perforated viscus (leading,8). Mesenteric ischemia (CANT-MISS to exclude in a vasculopath with peritonitis and lactate,5). Acute pancreatitis (core,3). Ruptured/symptomatic abdominal aortic aneurysm (core,2). Acute cholecystitis/biliary disease (core,2). Names a surgical abdomen / peritonitis and the imperative to obtain urgent imaging for free air and a surgical opinion (core,5).",
+      "idealAnswer": "Leading diagnosis: Perforated peptic ulcer (perforated viscus). Must-not-miss diagnoses to exclude: Mesenteric ischemia. Also reasonable: Acute pancreatitis; Ruptured/symptomatic abdominal aortic aneurysm; Acute cholecystitis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Perforated peptic ulcer / perforated viscus",
+            "points": 8
+          },
+          {
+            "item": "Mesenteric ischemia",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Acute pancreatitis",
+            "points": 3
+          },
+          {
+            "item": "Ruptured/symptomatic abdominal aortic aneurysm",
+            "points": 2
+          },
+          {
+            "item": "Acute cholecystitis/biliary disease",
+            "points": 2
+          },
+          {
+            "item": "Names a surgical abdomen / peritonitis and the imperative to obtain urgent imaging for free air and a surgical opinion",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Mesenteric ischemia"
+      ],
+      "acceptableAlternatives": [
+        "Acute pancreatitis",
+        "Ruptured/symptomatic abdominal aortic aneurysm",
+        "Acute cholecystitis/biliary disease"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Upright chest X-ray (or upright/lateral decubitus abdominal film) for free air (CANT-MISS,4). CT abdomen/pelvis with contrast (CANT-MISS,5). CBC (2). BMP with lactate (2). Lipase to assess for pancreatitis (1). Type & screen / coags pre-op (bonus,1). PENALTY: ordering an upper GI series with barium in a suspected perforation (barium peritonitis) (-2).",
+      "idealAnswer": "Order: Upright chest X-ray for free air; CT abdomen/pelvis with contrast; CBC; BMP with lactate.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Upright chest X-ray (or decubitus abdominal film) for free air",
+            "points": 4
+          },
+          {
+            "item": "CT abdomen/pelvis with contrast",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP with lactate",
+            "points": 2
+          },
+          {
+            "item": "Lipase",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Type & screen / coags pre-op",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Barium upper GI series in suspected perforation (risk of barium peritonitis)",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Upright chest X-ray (or decubitus abdominal film) for free air",
+        "CT abdomen/pelvis with contrast"
+      ],
+      "optionalTests": [
+        "CBC",
+        "BMP with lactate",
+        "Lipase",
+        "Type & screen / coags pre-op"
+      ],
+      "contraindicatedTests": [
+        "Barium upper GI series in suspected perforation (risk of barium peritonitis)"
+      ],
+      "orderSensitiveActions": [
+        "Barium upper GI series in suspected perforation (risk of barium peritonitis)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); recognizes no acute ischemic changes — a reactive tachycardia (5); systematic read (3). PENALTY: over-calling ischemia / mislabeling as ACS (-3).",
+      "keyFindings": [
+        "sinus tachycardia at ~118 bpm",
+        "no acute ST-segment or T-wave ischemic changes"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis)."
+      ],
+      "commonMistakes": [
+        "over-calling subtle ST/T changes as an acute coronary syndrome",
+        "attributing the abdominal pain to a cardiac cause"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~118 bpm; no acute ST-elevation or ischemic ST/T changes — a reactive tachycardia from pain and peritonitis, not ACS.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis)."
+        ],
+        "coreActions": [
+          "sinus tachycardia at ~118 bpm",
+          "no acute ST-segment or T-wave ischemic changes"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls ischemia / mislabels as ACS",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's upright chest X-ray. Describe your findings.",
+      "rubric": "Findings = free air under the diaphragm (pneumoperitoneum). CREDIT: identifies free air under the diaphragm (6); recognizes it as evidence of a perforated viscus needing urgent surgery (4). PENALTY: calling the film normal / missing the free air (-3).",
+      "keyFindings": [
+        "free air (lucency) under the right hemidiaphragm",
+        "recognizes this as pneumoperitoneum from a perforated viscus"
+      ],
+      "criticalFindings": [
+        "Free air under the diaphragm (pneumoperitoneum) — perforated viscus."
+      ],
+      "commonMistakes": [
+        "mistaking the subdiaphragmatic free air for bowel gas (Chilaiditi) or calling the film normal",
+        "missing the crescent of air on an underpenetrated film"
+      ],
+      "idealAnswer": "Free air under the right hemidiaphragm (pneumoperitoneum) on the upright film with clear lungs — diagnostic of a perforated hollow viscus requiring urgent surgical evaluation.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Free air under the diaphragm (pneumoperitoneum) — perforated viscus."
+        ],
+        "coreActions": [
+          "free air (lucency) under the right hemidiaphragm",
+          "recognizes this as pneumoperitoneum from a perforated viscus"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Free air under the diaphragm on CXR, free intraperitoneal air with focal duodenal/antral wall discontinuity on CT, leukocytosis, elevated lactate, and only mildly elevated lipase. What is your diagnosis and what did you rule out?",
+      "rubric": "Perforated peptic ulcer (perforated viscus) (6). Cites free air plus focal wall defect with leukocytosis; explicitly excludes primary pancreatitis (lipase not markedly elevated) and mesenteric ischemia (no vascular occlusion/pneumatosis on CT) (4).",
+      "idealAnswer": "Perforated peptic ulcer. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Mesenteric ischemia"
+      ],
+      "acceptableAlternatives": [
+        "Acute pancreatitis",
+        "Ruptured/symptomatic abdominal aortic aneurysm",
+        "Acute cholecystitis/biliary disease"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH surgical abdomen / GI bleed & PUD: NPO, large-bore IV access, aggressive IV fluid resuscitation (CANT-MISS,6); urgent surgical consult for operative repair (omental/Graham patch) (CANT-MISS,6); broad-spectrum IV antibiotics covering gut flora (e.g., piperacillin-tazobactam) (4); nasogastric decompression and IV PPI (3); analgesia, antiemetics, type & screen, monitor (3); test/treat H. pylori and stop NSAIDs on recovery (3). PENALTY: discharging or observing a peritonitic patient with free air (-4); delaying surgical consult / source control (-2); barium study (-1).",
+      "idealAnswer": "Resuscitate: NPO, two large-bore IVs, aggressive crystalloid resuscitation, monitor. Urgent surgical consultation for operative repair (Graham omental patch) and peritoneal washout. Broad-spectrum IV antibiotics covering enteric flora (e.g., piperacillin-tazobactam). Nasogastric tube decompression and IV proton-pump inhibitor. Analgesia, antiemetics, type & screen, foley to monitor output. On recovery: stop NSAIDs and test/treat H. pylori.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "NPO, IV access, aggressive fluid resuscitation",
+            "points": 6
+          },
+          {
+            "item": "Urgent surgical consult for operative repair",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Broad-spectrum IV antibiotics covering gut flora",
+            "points": 4
+          },
+          {
+            "item": "Nasogastric decompression and IV PPI",
+            "points": 3
+          },
+          {
+            "item": "Analgesia, antiemetics, type & screen, monitoring",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Stop NSAIDs and test/treat H. pylori on recovery",
+            "points": 3
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Discharging/observing a peritonitic patient with free air",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "NPO, IV access, aggressive fluid resuscitation",
+        "Urgent surgical consult for operative repair"
+      ],
+      "optionalActions": [
+        "Broad-spectrum IV antibiotics covering gut flora",
+        "Nasogastric decompression and IV PPI",
+        "Analgesia, antiemetics, type & screen, monitoring",
+        "Stop NSAIDs and test/treat H. pylori on recovery"
+      ],
+      "unsafeActions": [
+        "Discharging/observing a peritonitic patient with free air"
+      ],
+      "consults": [
+        "Surgery"
+      ],
+      "disposition": "Admit; OR",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Abdominal Pain (Perforated Viscus / Peptic Ulcer Disease)",
+        "page": 74
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "guarded",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "nsaid_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; speaks in short sentences because deep breaths hurt",
+    "affect": "58-year-old man, diaphoretic and lying rigidly still with knees drawn up, in obvious distress. Anxious but cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "did it come on suddenly",
+        "sudden or gradual"
+      ],
+      "response": "It came on completely out of the blue about four hours ago — I can tell you the exact minute it hit me.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "character",
+        "quality",
+        "sharp or dull"
+      ],
+      "response": "It started as a stabbing pain right in the pit of my stomach, and now it's a constant knife-like pain across my whole belly.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating",
+        "does moving hurt"
+      ],
+      "response": "Any movement, coughing, or a deep breath makes it much worse — lying perfectly still is the only thing that helps even a little.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_dyspepsia",
+      "category": "hpi",
+      "triggerConcepts": [
+        "stomach problems before",
+        "heartburn",
+        "indigestion",
+        "burning before meals",
+        "prior ulcer symptoms",
+        "any prior stomach symptoms"
+      ],
+      "response": "Now that you mention it, for the last few weeks I've had a gnawing, burning feeling in my upper stomach before meals — antacids took the edge off.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "nsaid_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "painkillers",
+        "ibuprofen",
+        "advil",
+        "anti-inflammatory",
+        "nsaid",
+        "what do you take for your back"
+      ],
+      "response": "I take ibuprofen most days for my back pain — I picked up a big bottle from the pharmacy recently and have been using it more than usual.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "gi_bleeding",
+      "category": "ros",
+      "triggerConcepts": [
+        "black stools",
+        "blood in stool",
+        "melena",
+        "vomiting blood",
+        "tarry stools"
+      ],
+      "response": "No, I haven't noticed any black or bloody stools and I haven't thrown up any blood.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "I usually have three or four beers most evenings.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cardiac_pulmonary_review",
+      "category": "ros",
+      "triggerConcepts": [
+        "chest pain",
+        "shortness of breath with exertion",
+        "any chest discomfort",
+        "pain with exertion",
+        "cardiac symptoms"
+      ],
+      "response": "No chest pain and nothing brought it on with effort — it's all in my belly.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "any surgeries",
+        "prior operations"
+      ],
+      "response": "I have chronic low back pain and slightly high blood pressure. I've never had any abdominal surgery.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "smoking",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "do you smoke",
+        "tobacco",
+        "cigarettes"
+      ],
+      "response": "Yes, about a pack a day for thirty years.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_guarding_finding_1",
+      "finding": "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No guarding; abdomen soft."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_2",
+      "finding": "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_3",
+      "finding": "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "revealedBy": [
+        "palpate_all_quadrants",
+        "palpate_ruq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Abdomen soft and nontender."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_4",
+      "finding": "Bowel sounds absent/markedly reduced; cardiac tachycardic, regular, no murmur; lungs clear with shallow respirations.",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "inspect_abdomen_finding_5",
+      "finding": "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended; no scars."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: diaphoretic, lying rigidly still, in obvious distress; tachycardic and tachypneic with shallow breathing.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Comfortable, in no distress."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Perforated peptic ulcer",
+    "diagnosticFramework": "58M presents with the abrupt onset 4 hours ago of severe, constant epigastric pain that rapidly spread across the whole abdomen, now lying rigidly still. The diagnosis is Perforated peptic ulcer, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "Bowel sounds absent/markedly reduced; cardiac tachycardic, regular, no murmur; lungs clear with shallow respirations.",
+      "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
+      "General: diaphoretic, lying rigidly still, in obvious distress; tachycardic and tachypneic with shallow breathing."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "Lipase",
+      "LFTs",
+      "Lactate",
+      "CT_abdomen"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Perforated peptic ulcer while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Perforated peptic ulcer and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Discharging/observing a peritonitic patient with free air"
+    ],
+    "managementPearls": [
+      "NPO, IV access, aggressive fluid resuscitation",
+      "Urgent surgical consult for operative repair"
+    ],
+    "criticalHistoryItems": [
+      "onset",
+      "aggravating_alleviating",
+      "prior_dyspepsia",
+      "nsaid_use"
+    ],
+    "criticalExamItems": [
+      "assess_guarding",
+      "assess_rebound_tenderness",
+      "palpate_all_quadrants"
+    ],
+    "criticalWorkupItems": [
+      "Upright chest X-ray (or decubitus abdominal film) for free air",
+      "CT abdomen/pelvis with contrast"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "Free air under the diaphragm (pneumoperitoneum) indicating a perforated viscus."
+    ],
+    "criticalManagementItems": [
+      "NPO, IV access, aggressive fluid resuscitation",
+      "Urgent surgical consult for operative repair"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis).",
+      "Free air under the diaphragm (pneumoperitoneum) — perforated viscus."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis).",
+      "Free air under the diaphragm (pneumoperitoneum) — perforated viscus."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

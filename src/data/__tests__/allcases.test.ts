@@ -14,7 +14,7 @@ describe("every case loads, adapts, and scores", () => {
     for (const c of manifest.cases) {
       expect(modules[`../cases/${c.file}`], `missing file for ${c.id}`).toBeTruthy();
     }
-    expect(manifest.cases.length).toBe(68);
+    expect(manifest.cases.length).toBe(77);
   });
 
   for (const [path, mod] of Object.entries(modules)) {

@@ -1,0 +1,677 @@
+{
+  "id": "anemia-08",
+  "category": "Anemia",
+  "difficulty": "hard",
+  "title": "Severe whole-body pain and dark urine",
+  "diagnosis": "Sickle cell disease with vaso-occlusive crisis and hemolysis",
+  "chart": {
+    "ageSex": "24M",
+    "cc": "Severe pain all over",
+    "oneLiner": "24M with a history of sickle cell disease presents with two days of severe diffuse bone and back pain, fatigue, and dark urine.",
+    "vitals": {
+      "BP": "126/78",
+      "HR": "118",
+      "RR": "22",
+      "Temp": "38.1°C",
+      "SpO2": "94% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've got this deep aching pain all over my arms, legs, and back that won't quit, and my pee has gone really dark.",
+  "patientFile": "PERSONA: 24-year-old man, visibly uncomfortable and guarding, mildly jaundiced. Cooperative but distracted by pain.\n\nHPI: Two days of severe deep aching pain in the back, arms, legs, and chest — the same pattern as his prior sickle cell pain crises but worse. Pain 9/10, constant, not relieved by his usual home opioids. Triggered by a recent cold/dehydration and a long flight last week (only if asked about triggers). Feels short of breath and very tired; noticed dark (tea-colored) urine and that his eyes look more yellow. Low-grade fever today. NO chest pain that is pleuritic/sharp, NO cough or new sputum at this moment (important pertinent negatives — but ask), NO black/bloody stools, NO recent rash, NO neuro deficits or facial droop.\nPMH: Sickle cell disease (HbSS) diagnosed in childhood, multiple prior pain crises and two prior hospital admissions, history of acute chest syndrome once, cholecystectomy for pigment gallstones. Up to date on pneumococcal vaccines, on penicillin prophylaxis as a child (asplenic functionally). MEDS: hydroxyurea (admits poor adherence the last month if asked), folic acid, as-needed oxycodone at home. ALLERGIES: none. SOCIAL: no tobacco, occasional alcohol, no IV drugs; works as a student. FAMILY: parents both sickle trait; a sibling with sickle cell disease.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mildly jaundiced, in pain but alert and oriented.\n- Vitals: BP 126/78, HR 118, RR 22, 38.1°C, SpO2 94% RA.\n- HEENT: scleral icterus present; mucous membranes dry (dehydrated).\n- Cardiac: tachycardic, regular, soft flow murmur; no rub.\n- Pulmonary: lungs clear to auscultation, no focal crackles or dullness at this time; no chest wall tenderness reproducible.\n- Abdomen: soft, mildly tender diffusely, NO splenomegaly (functionally asplenic), well-healed cholecystectomy scar.\n- Extremities: diffuse long-bone and joint tenderness, no warmth/erythema/effusion of any single joint, no swelling to suggest dactylitis in this adult.\n- Neuro: nonfocal, no weakness, no facial droop.\n- Skin: no rash, no petechiae or purpura.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent dehydration/flight trigger or hydroxyurea nonadherence unless asked about triggers or medications/adherence.\n- Splenomegaly is ABSENT (functionally asplenic) — say so only if the abdomen/spleen is examined.\n- Pulmonary exam is clear right now — reveal only if lungs are examined; do not hint at acute chest syndrome.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 6.8 (baseline ~8.5), MCV 88, WBC 15.2 (mild leukocytosis with crisis), Plt 410 (reactive thrombocytosis — consistent with functional asplenia).",
+      "Reticulocyte": "Markedly elevated reticulocyte count (~12%) — appropriate marrow response, argues AGAINST aplastic crisis.",
+      "Smear": "Sickle cells, target cells, Howell-Jolly bodies (functional asplenia), polychromasia; NO schistocytes.",
+      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW, reticulocytosis — a hemolytic pattern.",
+      "Hemoglobin_electrophoresis": "Predominant HbS with absent HbA — confirms HbSS (sickle cell disease, not trait).",
+      "BMP": "Cr normal, electrolytes normal; LFTs with isolated indirect hyperbilirubinemia (no obstructive pattern)."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~118 bpm; no acute ischemic changes or ST/T abnormalities.",
+      "verify": "Source a study matching: Sinus tachycardia at ~118 bpm; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia, no acute ischemia",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12 lead normal axis"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields with no focal infiltrate, consolidation, or effusion; cardiac silhouette normal (no acute chest syndrome on this baseline film).",
+      "verify": "Source a study matching: Clear lung fields, no focal infiltrate or effusion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph with clear lung fields, no infiltrate",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "clear lung fields chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Reticulocyte",
+    "Smear",
+    "Hemolysis",
+    "Hemoglobin_electrophoresis",
+    "BMP",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC",
+    "Smear",
+    "Hemolysis"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this anemia and pain presentation (note your leading diagnosis).",
+      "rubric": "Sickle cell vaso-occlusive crisis with hemolysis (leading,7). Acute chest syndrome (CANT-MISS to exclude,5). Infection/sepsis or osteomyelitis in a functionally asplenic patient (core,3). Aplastic crisis (parvovirus B19) (core,3). Splenic/hepatic sequestration or hyperhemolytic crisis (core,2). Names hemolysis and the imperative to screen for acute chest syndrome (hypoxia, new infiltrate) and serious infection (core,5).",
+      "idealAnswer": "Leading diagnosis: Sickle cell disease with vaso-occlusive crisis and hemolysis. Must-not-miss diagnoses to exclude: Acute chest syndrome. Also reasonable: Infection/sepsis or osteomyelitis (functional asplenia); Aplastic crisis (parvovirus B19); Splenic/hepatic sequestration or hyperhemolytic crisis.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Sickle cell vaso-occlusive crisis with hemolysis",
+            "points": 7
+          },
+          {
+            "item": "Acute chest syndrome",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Infection/sepsis or osteomyelitis (functional asplenia)",
+            "points": 3
+          },
+          {
+            "item": "Aplastic crisis (parvovirus B19)",
+            "points": 3
+          },
+          {
+            "item": "Splenic/hepatic sequestration or hyperhemolytic crisis",
+            "points": 2
+          },
+          {
+            "item": "Names hemolysis and the imperative to screen for acute chest syndrome and serious infection",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute chest syndrome"
+      ],
+      "acceptableAlternatives": [
+        "Infection/sepsis or osteomyelitis (functional asplenia)",
+        "Aplastic crisis (parvovirus B19)",
+        "Splenic/hepatic sequestration or hyperhemolytic crisis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "CBC + reticulocyte count, compared to baseline (CANT-MISS,3). Peripheral smear — sickle cells vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (3). Type & screen / crossmatch and chemistries with renal/LFTs (3). Pulse oximetry plus CXR to screen for acute chest syndrome; blood cultures if febrile (2). PENALTY: ordering an empiric exchange transfusion or simple transfusion to baseline Hgb without an indication (acute chest, stroke, symptomatic anemia) — over-transfusion raises hyperviscosity risk (-2).",
+      "idealAnswer": "Order: CBC + reticulocyte count compared to baseline; Peripheral smear — sickle cells vs schistocytes; Hemolysis labs (LDH, haptoglobin, indirect bilirubin).",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC + reticulocyte count compared to baseline",
+            "points": 3
+          },
+          {
+            "item": "Peripheral smear — sickle cells vs schistocytes",
+            "points": 4
+          },
+          {
+            "item": "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Empiric transfusion to baseline Hgb without an indication (hyperviscosity risk)",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC + reticulocyte count compared to baseline",
+        "Peripheral smear — sickle cells vs schistocytes",
+        "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "Empiric transfusion to baseline Hgb without an indication (hyperviscosity risk)"
+      ],
+      "orderSensitiveActions": [
+        "Empiric transfusion to baseline Hgb without an indication (hyperviscosity risk)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: identifies rate & rhythm as sinus tachycardia (7); states no acute ischemic ST/T changes — tachycardia is from pain, fever, and anemia (5); systematic read with pertinent negatives (3). PENALTY: over-calling ischemia or a primary cardiac event (-3).",
+      "keyFindings": [
+        "sinus tachycardia at ~118 bpm",
+        "no acute ischemic ST/T changes"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia)."
+      ],
+      "commonMistakes": [
+        "over-calling ischemia or attributing the tachycardia to a primary cardiac problem"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~118 bpm with no acute ischemic changes; consistent with pain, fever, and anemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia)."
+        ],
+        "coreActions": [
+          "sinus tachycardia at ~118 bpm",
+          "no acute ischemic ST/T changes"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls ischemia / a primary cardiac event",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process; clear lungs. CREDIT: identifies a normal/clear film with no infiltrate or effusion (6); recognizes the film is screening for acute chest syndrome and must be repeated if hypoxia/symptoms evolve (4). PENALTY: inventing an infiltrate, or falsely reassuring that acute chest syndrome is excluded for the whole admission (-2).",
+      "keyFindings": [
+        "clear lung fields, no focal infiltrate or effusion",
+        "screening film for acute chest syndrome — repeat if hypoxia or respiratory symptoms develop"
+      ],
+      "criticalFindings": [
+        "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate, or assuming a single clear film rules out acute chest syndrome for the rest of the admission"
+      ],
+      "idealAnswer": "Clear lung fields, no focal infiltrate or effusion; no acute chest syndrome on this film, but repeat if hypoxia or respiratory symptoms develop.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+        ],
+        "coreActions": [
+          "clear lung fields, no focal infiltrate or effusion",
+          "screening film for acute chest syndrome — repeat if hypoxia or respiratory symptoms develop"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents an infiltrate / falsely excludes acute chest syndrome for the whole admission",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Hgb 6.8 below baseline, reticulocytosis ~12%, low haptoglobin, high LDH and indirect bilirubin, sickle cells and Howell-Jolly bodies on smear, NO schistocytes, HbSS on electrophoresis, clear CXR, SpO2 94%. What is your diagnosis and what did you rule out?",
+      "rubric": "Sickle cell disease (HbSS) with vaso-occlusive crisis and hemolysis (6). Cites the hemolytic markers with reticulocytosis (excludes aplastic crisis), sickle cells without schistocytes (excludes TTP/microangiopathy), and a clear CXR with maintained oxygenation (no acute chest syndrome on this film, with ongoing monitoring) (4).",
+      "idealAnswer": "Sickle cell disease with vaso-occlusive crisis and hemolysis.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute chest syndrome"
+      ],
+      "acceptableAlternatives": [
+        "Infection/sepsis or osteomyelitis (functional asplenia)",
+        "Aplastic crisis (parvovirus B19)",
+        "Splenic/hepatic sequestration or hyperhemolytic crisis"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH sickle cell crisis: prompt multimodal analgesia with IV opioids titrated to pain (CANT-MISS,7); IV hydration (euvolemic, avoid over-hydration) (4); supplemental oxygen to keep SpO2 >=95% and incentive spirometry to prevent acute chest syndrome (4); evaluate and empirically treat for infection if febrile, give VTE prophylaxis (3); continue/restart hydroxyurea and folate, hematology consult (3); transfuse only for a clear indication (acute chest, stroke, symptomatic/aplastic anemia), exchange transfusion for severe acute chest syndrome (2). PENALTY: under-treating pain or delaying opioids over addiction concerns (-3); over-transfusing to baseline Hgb without indication (hyperviscosity) (-1).",
+      "idealAnswer": "Vaso-occlusive crisis: prompt multimodal analgesia with IV opioids titrated to pain (do not under-treat); IV fluids targeting euvolemia (avoid over-hydration which worsens acute chest syndrome); supplemental oxygen to keep SpO2 >=95% with incentive spirometry to prevent acute chest syndrome; assess for and empirically cover infection if febrile, plus VTE prophylaxis; folate and continue/restart hydroxyurea; hematology consult. Transfuse only for a clear indication (acute chest syndrome, stroke, symptomatic or aplastic anemia); exchange transfusion for severe acute chest syndrome. Avoid over-transfusion to baseline (hyperviscosity).",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Prompt multimodal analgesia with IV opioids titrated to pain",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "IV hydration targeting euvolemia (avoid over-hydration)",
+            "points": 4
+          },
+          {
+            "item": "Supplemental oxygen and incentive spirometry to prevent acute chest syndrome",
+            "points": 4
+          },
+          {
+            "item": "Evaluate/empirically treat infection if febrile; VTE prophylaxis",
+            "points": 3
+          },
+          {
+            "item": "Folate, continue/restart hydroxyurea, hematology consult",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Transfuse only for a clear indication; exchange transfusion for severe acute chest syndrome",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Under-treating pain / delaying opioids over addiction concerns",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Prompt multimodal analgesia with IV opioids titrated to pain"
+      ],
+      "optionalActions": [
+        "IV hydration targeting euvolemia (avoid over-hydration)",
+        "Supplemental oxygen and incentive spirometry to prevent acute chest syndrome",
+        "Evaluate/empirically treat infection if febrile; VTE prophylaxis",
+        "Folate, continue/restart hydroxyurea, hematology consult",
+        "Transfuse only for a clear indication; exchange transfusion for severe acute chest syndrome"
+      ],
+      "unsafeActions": [
+        "Under-treating pain / delaying opioids over addiction concerns"
+      ],
+      "consults": [
+        "Hematology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Hematology (Sickle Cell Disease — Vaso-Occlusive Crisis)",
+        "page": 141
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "in pain",
+    "emotionalState": "distressed",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "medication_adherence",
+      "opioid_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "24-year-old man, visibly uncomfortable and guarding, mildly jaundiced. Cooperative but distracted by pain.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset_and_pattern",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "is this like before",
+        "same as previous crises"
+      ],
+      "response": "It came on over the last two days. It's the same deep aching pain I get with my sickle cell crises, but worse than usual, and my home pain pills haven't touched it.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pain_character_location",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "where is the pain",
+        "location of pain",
+        "character"
+      ],
+      "response": "It's a deep, throbbing ache in my back, arms, legs, and a bit in my chest. It's there all the time, about 9 out of 10.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "triggers",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what brought it on",
+        "any triggers",
+        "dehydration",
+        "cold or travel",
+        "recent flight"
+      ],
+      "response": "I had a cold last week and took a long flight, and I don't think I drank enough water during it.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "respiratory_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any cough",
+        "shortness of breath",
+        "chest pain",
+        "trouble breathing",
+        "sputum"
+      ],
+      "response": "I feel a little short of breath and tired, but I don't have a cough or sharp stabbing chest pain right now.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "fever_infection",
+      "category": "ros",
+      "triggerConcepts": [
+        "any fever",
+        "chills",
+        "infection",
+        "feeling hot",
+        "sick contacts"
+      ],
+      "response": "I've felt a bit feverish today, no shaking chills though.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "dark_urine_jaundice",
+      "category": "hpi",
+      "triggerConcepts": [
+        "urine color",
+        "dark urine",
+        "yellow eyes",
+        "jaundice",
+        "skin color"
+      ],
+      "response": "My pee has gone really dark, like tea, and my friends said my eyes look more yellow than usual.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh_sickle",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "any conditions",
+        "prior hospitalizations",
+        "sickle cell history"
+      ],
+      "response": "I've had sickle cell disease since I was a kid. I've been admitted a couple of times for pain, had a lung complication once, and had my gallbladder out for stones.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "hydroxyurea",
+        "are you taking it regularly",
+        "adherence"
+      ],
+      "response": "I'm supposed to take hydroxyurea and folic acid, and oxycodone when I'm in pain. To be honest, I've missed most of my hydroxyurea this past month.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "relatives with sickle cell",
+        "parents",
+        "siblings"
+      ],
+      "response": "Both my parents carry the sickle cell trait and one of my siblings has sickle cell disease like me.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "neuro_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any weakness",
+        "numbness",
+        "facial droop",
+        "trouble speaking",
+        "vision changes"
+      ],
+      "response": "No, I don't have any weakness, numbness, trouble talking, or changes in my vision.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_sclera_finding_1",
+      "finding": "HEENT: scleral icterus present; mucous membranes dry (dehydrated).",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Sclerae anicteric."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_2",
+      "finding": "Pulmonary: lungs clear to auscultation, no focal crackles or dullness at this time.",
+      "revealedBy": [
+        "auscultate_posterior_lungs",
+        "auscultate_anterior_lungs"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Lungs clear to auscultation bilaterally."
+    },
+    {
+      "id": "assess_splenomegaly_finding_3",
+      "finding": "Abdomen: soft, mildly tender diffusely, NO splenomegaly (functionally asplenic).",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Spleen not palpable."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_4",
+      "finding": "Cardiac: tachycardic, regular, soft flow murmur; no rub.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate and rhythm, no murmur."
+    },
+    {
+      "id": "assess_for_petechiae_finding_5",
+      "finding": "Skin: no rash, no petechiae or purpura.",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No petechiae or purpura."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Sickle cell disease with vaso-occlusive crisis and hemolysis",
+    "diagnosticFramework": "24M with known sickle cell disease presents with two days of severe diffuse bone and back pain, fatigue, and dark urine. The diagnosis is Sickle cell disease with vaso-occlusive crisis and hemolysis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives, especially acute chest syndrome and serious infection in a functionally asplenic patient.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "HEENT: scleral icterus present; mucous membranes dry (dehydrated).",
+      "Pulmonary: lungs clear to auscultation, no focal crackles or dullness at this time.",
+      "Abdomen: soft, mildly tender diffusely, NO splenomegaly (functionally asplenic).",
+      "Cardiac: tachycardic, regular, soft flow murmur; no rub."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Reticulocyte",
+      "Smear",
+      "Hemolysis",
+      "Hemoglobin_electrophoresis",
+      "BMP"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Sickle cell disease with vaso-occlusive crisis and hemolysis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Sickle cell disease with vaso-occlusive crisis and hemolysis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Under-treating pain / delaying opioids over addiction concerns"
+    ],
+    "managementPearls": [
+      "Prompt multimodal analgesia with IV opioids titrated to pain"
+    ],
+    "criticalHistoryItems": [
+      "onset_and_pattern",
+      "respiratory_symptoms",
+      "pmh_sickle"
+    ],
+    "criticalExamItems": [
+      "auscultate_posterior_lungs"
+    ],
+    "criticalWorkupItems": [
+      "CBC + reticulocyte count compared to baseline",
+      "Peripheral smear — sickle cells vs schistocytes",
+      "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+    ],
+    "criticalManagementItems": [
+      "Prompt multimodal analgesia with IV opioids titrated to pain"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia).",
+      "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia).",
+      "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+    ],
+    "imageInterpretationPearls": [
+      "A near-normal study is an interpretation task in its own right — name the pertinent negatives and judge their relevance.",
+      "Read every study systematically before committing.",
+      "A single clear chest film does not exclude evolving acute chest syndrome — repeat if hypoxia or symptoms progress."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Acknowledges and validates the patient's pain",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions (adherence, opioid use)",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

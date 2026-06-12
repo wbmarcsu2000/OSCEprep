@@ -1,0 +1,676 @@
+{
+  "id": "liver-08",
+  "category": "Abnormal Liver Enzymes",
+  "difficulty": "hard",
+  "title": "Sudden sky-high liver enzymes after a cardiac arrest",
+  "diagnosis": "Ischemic hepatitis (shock liver)",
+  "chart": {
+    "ageSex": "68M",
+    "cc": "Abnormal liver tests after collapse",
+    "oneLiner": "68M with heart failure, admitted after a witnessed cardiac arrest and prolonged hypotension, now with markedly elevated transaminases noted on labs 24 hours later.",
+    "vitals": {
+      "BP": "92/58",
+      "HR": "104",
+      "RR": "20",
+      "Temp": "36.8°C",
+      "SpO2": "94% on 2L NC"
+    },
+    "timer": 180
+  },
+  "opening": "I'm wiped out and a bit short of breath since my heart stopped yesterday — now the nurses say my liver numbers are way off.",
+  "patientFile": "PERSONA: 68-year-old man, fatigued and mildly breathless, recovering on a monitored floor after resuscitation. Cooperative but tires easily; defers technical detail to the chart.\n\nHPI: Yesterday he collapsed at home with a witnessed cardiac arrest from his known heart failure; bystander CPR, EMS found him in a low-output state and he was profoundly hypotensive (SBP in the 60s) for roughly 30–45 minutes before perfusion was restored. Since then he has been weak, slightly breathless, and mildly nauseated, with reduced urine output overnight (only if asked). NO abdominal pain to speak of, NO right-upper-quadrant pain, NO dark urine, NO fevers or chills, NO recent travel, NO new sexual contacts, NO IV drug use. He has NOT taken any extra acetaminophen and denies any large overdose (only if asked about Tylenol/paracetamol/overdose). NO heavy alcohol use (a beer at holidays). NO prior liver disease, NO known hepatitis, NO blood transfusions, NO mushroom ingestion or new herbal supplements.\nPMH: ischemic cardiomyopathy with HFrEF (EF ~25%), prior MI, CKD stage 3, hypertension, type 2 diabetes. MEDS: furosemide, carvedilol, lisinopril, atorvastatin, aspirin, metformin; occasional acetaminophen for knees (a couple of tablets, not recently). SOCIAL: retired, lives with wife, minimal alcohol, never smoker, no recreational drugs.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired, mildly breathless, no acute distress at rest; not jaundiced.\n- Vitals: BP 92/58, HR 104, RR 20, 36.8°C, SpO2 94% on 2L; orthostatic/marginal perfusion if checked.\n- Cardiac: elevated JVP, soft S3 gallop; cool extremities with delayed capillary refill if examined; thready peripheral pulses.\n- Abdomen: soft; mild non-tender hepatomegaly possible; NO RUQ tenderness, NO Murphy sign, NO ascites.\n- Extremities: mild lower-limb edema; cool to touch.\n- Neuro: alert and oriented; no asterixis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the duration of hypotension, the low urine output, or the acetaminophen detail unless asked about the arrest/blood pressure, urine output, or medications/overdose respectively.\n- Stigmata of low cardiac output (cool extremities, delayed capillary refill, elevated JVP, S3) and hepatomegaly are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "LFTs": "AST 4200, ALT 3100 — massive transaminase elevation (>25–50x ULN) that rose rapidly and on repeat 48–72h later falls rapidly toward baseline once perfusion restored; alkaline phosphatase only mildly up.",
+      "Bilirubin": "Total bilirubin mildly elevated (~2.5) — disproportionately low relative to the huge transaminases.",
+      "LDH": "LDH markedly elevated; ALT:LDH ratio LOW (<1.5) — favors ischemic over viral injury.",
+      "Acetaminophen": "Acetaminophen level UNDETECTABLE (excludes APAP toxicity — the key mimic).",
+      "ViralHepNAT": "Hepatitis A IgM, B surface antigen/core IgM, and C viral load all NEGATIVE (excludes acute viral hepatitis).",
+      "RenalCoags": "Cr risen from baseline (acute kidney injury); INR transiently prolonged; lactate elevated — consistent with the same hypoperfusion insult."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with low QRS voltage and old anteroseptal Q waves (prior MI); no acute ST-elevation.",
+      "verify": "Source a study matching: Sinus tachycardia with low QRS voltage and old anteroseptal Q waves (prior MI); no acute ST-elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia, low voltage, old anteroseptal Q waves",
+      "searchTerms": [
+        "sinus tachycardia low voltage ECG",
+        "old anteroseptal infarction Q waves ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — pulmonary edema/congestion.",
+      "verify": "Source a study matching: Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — pulmonary edema/congestion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph cardiomegaly pulmonary edema small effusions",
+      "searchTerms": [
+        "cardiomegaly pulmonary edema chest x-ray",
+        "cardiogenic pulmonary congestion radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "LFTs",
+    "Bilirubin",
+    "LDH",
+    "Acetaminophen",
+    "ViralHepNAT",
+    "RenalCoags",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "LFTs",
+    "LDH",
+    "Acetaminophen"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for these markedly elevated transaminases (note your leading diagnosis).",
+      "rubric": "Ischemic hepatitis (shock liver) (leading,7). Acetaminophen hepatotoxicity (CANT-MISS to exclude,5). Acute viral hepatitis (CANT-MISS,3). Acute Budd-Chiari/venous outflow obstruction (CANT-MISS,3). Autoimmune hepatitis / drug-induced (toxin) injury (core,2). Acute biliary obstruction (core,2). Names the picture as hypoperfusion injury — massive transaminases with low ALT:LDH ratio after a hemodynamic insult (core,3).",
+      "idealAnswer": "Leading diagnosis: Ischemic hepatitis (shock liver). Must-not-miss diagnoses to exclude: Acetaminophen hepatotoxicity; Acute viral hepatitis; Acute Budd-Chiari/venous outflow obstruction. Also reasonable: Autoimmune/drug-induced (toxin) hepatitis; Acute biliary obstruction.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Ischemic hepatitis (shock liver)",
+            "points": 7
+          },
+          {
+            "item": "Acetaminophen hepatotoxicity",
+            "points": 5
+          },
+          {
+            "item": "Acute viral hepatitis",
+            "points": 3
+          },
+          {
+            "item": "Acute Budd-Chiari/venous outflow obstruction",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Autoimmune/drug-induced (toxin) hepatitis",
+            "points": 2
+          },
+          {
+            "item": "Acute biliary obstruction",
+            "points": 2
+          },
+          {
+            "item": "Names the picture as hypoperfusion injury (massive transaminases with low ALT:LDH ratio after a hemodynamic insult)",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acetaminophen hepatotoxicity",
+        "Acute viral hepatitis",
+        "Acute Budd-Chiari/venous outflow obstruction"
+      ],
+      "acceptableAlternatives": [
+        "Autoimmune/drug-induced (toxin) hepatitis",
+        "Acute biliary obstruction"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "LFTs with AST/ALT trend and LDH (ALT:LDH ratio) (CANT-MISS,3). Acetaminophen level (CANT-MISS,3). Viral hepatitis serologies/NAT (2). Bilirubin and INR/albumin — synthetic function (2). Renal function and lactate — assess the perfusion insult (2). RUQ ultrasound with Doppler — exclude Budd-Chiari/biliary obstruction (2). Repeat LFTs to confirm rapid downtrend (1). PENALTY: anchoring on shock liver without checking an acetaminophen level / excluding viral causes (-2).",
+      "idealAnswer": "Order: LFTs with AST/ALT trend and LDH (ALT:LDH ratio); Acetaminophen level; RUQ ultrasound with Doppler.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "LFTs with AST/ALT trend and LDH (ALT:LDH ratio)",
+            "points": 3
+          },
+          {
+            "item": "Acetaminophen level",
+            "points": 3
+          },
+          {
+            "item": "RUQ ultrasound with Doppler",
+            "points": 2
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anchoring on shock liver without checking an acetaminophen level / excluding viral causes",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "LFTs with AST/ALT trend and LDH (ALT:LDH ratio)",
+        "Acetaminophen level",
+        "RUQ ultrasound with Doppler"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "anchoring on shock liver without checking an acetaminophen level / excluding viral causes"
+      ],
+      "orderSensitiveActions": [
+        "anchoring on shock liver without checking an acetaminophen level / excluding viral causes"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, low voltage, old anteroseptal Q waves, no acute STEMI. CREDIT: rate & rhythm (7); recognizes old infarct/low voltage and absence of acute ST-elevation (5); systematic read (3). PENALTY: over-calling an acute STEMI / missing the old infarct (-3).",
+      "keyFindings": [
+        "sinus tachycardia with low QRS voltage",
+        "old anteroseptal Q waves without acute ST-elevation"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation."
+      ],
+      "commonMistakes": [
+        "calling the old anteroseptal Q waves an acute STEMI"
+      ],
+      "idealAnswer": "Sinus tachycardia with low QRS voltage and old anteroseptal Q waves from prior MI; no acute ST-elevation.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation."
+        ],
+        "coreActions": [
+          "sinus tachycardia with low QRS voltage",
+          "old anteroseptal Q waves without acute ST-elevation"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = cardiomegaly with pulmonary congestion. CREDIT: identifies cardiomegaly with pulmonary edema/effusions (6); links congestion to the low-output state driving the liver injury (4). PENALTY: calling the film normal / inventing a pneumonia (-2).",
+      "keyFindings": [
+        "cardiomegaly with pulmonary vascular redistribution",
+        "small bilateral effusions consistent with congestion"
+      ],
+      "criticalFindings": [
+        "Cardiomegaly with pulmonary edema/congestion and small effusions."
+      ],
+      "commonMistakes": [
+        "mistaking pulmonary congestion for multifocal pneumonia"
+      ],
+      "idealAnswer": "Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — cardiogenic congestion, consistent with the low-output state.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Cardiomegaly with pulmonary edema/congestion and small effusions."
+        ],
+        "coreActions": [
+          "cardiomegaly with pulmonary vascular redistribution",
+          "small bilateral effusions consistent with congestion"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Massive transaminases (AST 4200/ALT 3100) with disproportionately mild bilirubin, markedly elevated LDH with a low ALT:LDH ratio, undetectable acetaminophen, negative viral serologies, AKI/elevated lactate, and a documented period of profound hypotension. What is your diagnosis and what did you rule out?",
+      "rubric": "Ischemic hepatitis (shock liver) (6). Cites the hypoperfusion insult with massive transaminases, low ALT:LDH ratio, and disproportionately mild bilirubin; explicitly excludes acetaminophen toxicity (undetectable level) and acute viral hepatitis (negative serologies), and expects a rapid downtrend with restored perfusion (4).",
+      "idealAnswer": "Ischemic hepatitis (shock liver). ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acetaminophen hepatotoxicity",
+        "Acute viral hepatitis",
+        "Acute Budd-Chiari/venous outflow obstruction"
+      ],
+      "acceptableAlternatives": [
+        "Autoimmune/drug-induced (toxin) hepatitis",
+        "Acute biliary obstruction"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH acute liver injury / shock physiology: restore and optimize hepatic perfusion — treat the underlying cardiogenic shock/low-output state (CANT-MISS,7); supportive care and serial LFT/INR/lactate monitoring expecting rapid improvement (4); avoid/adjust hepatotoxic and renally-cleared drugs, hold nephrotoxins (4); treat precipitants and decompensated heart failure with cardiology input (4); monitor for and manage acute kidney injury and hypoglycemia (3); hepatology consult and avoid unnecessary steroids/empiric NAC unless APAP not yet excluded (3). PENALTY: giving fluids/pressors blindly without addressing the cardiac low-output cause, worsening congestion (-3); attributing the liver injury to a primary hepatic disease and delaying hemodynamic resuscitation (-2).",
+      "idealAnswer": "The liver injury is a marker of hypoperfusion — the priority is to restore hepatic perfusion by treating the underlying cardiogenic shock/low-output heart failure (inotropic/afterload support as appropriate, optimize cardiac output, correct hypoxemia and anemia) with cardiology. Provide supportive care with serial LFTs, INR, and lactate, expecting a rapid downtrend. Avoid and dose-adjust hepatotoxic/renally-cleared drugs, hold nephrotoxins, and monitor for AKI and hypoglycemia. Hepatology consult; avoid empiric steroids and reserve NAC for cases where acetaminophen has not been excluded.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Supportive care with serial LFT/INR/lactate monitoring",
+            "points": 4
+          },
+          {
+            "item": "Avoid/adjust hepatotoxic and renally-cleared drugs; hold nephrotoxins",
+            "points": 4
+          },
+          {
+            "item": "Treat precipitants and decompensated heart failure with cardiology input",
+            "points": 4
+          },
+          {
+            "item": "Monitor for and manage AKI and hypoglycemia",
+            "points": 2
+          },
+          {
+            "item": "Hepatology consult",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Reserve NAC for cases where acetaminophen has not been excluded",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state"
+      ],
+      "optionalActions": [
+        "Supportive care with serial LFT/INR/lactate monitoring",
+        "Avoid/adjust hepatotoxic and renally-cleared drugs; hold nephrotoxins",
+        "Treat precipitants and decompensated heart failure with cardiology input",
+        "Monitor for and manage AKI and hypoglycemia",
+        "Hepatology consult",
+        "Reserve NAC for cases where acetaminophen has not been excluded"
+      ],
+      "unsafeActions": [
+        "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)"
+      ],
+      "consults": [
+        "Cardiology",
+        "Hepatology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Acute Liver Injury & Failure (Ischemic Hepatitis)",
+        "page": 91
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "68-year-old man, fatigued and mildly breathless, recovering after resuscitation. Cooperative but tires easily.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "arrest_hypotension",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what happened when you collapsed",
+        "low blood pressure",
+        "how long was your pressure low",
+        "cardiac arrest",
+        "shock",
+        "hypotension"
+      ],
+      "response": "[Reveal the prolonged hypotension/low-output detail from patientFile only when asked about the arrest or blood pressure; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "acetaminophen_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "tylenol",
+        "acetaminophen",
+        "paracetamol",
+        "did you take an overdose",
+        "pain pills",
+        "how many tablets"
+      ],
+      "response": "[Reveal the acetaminophen detail from patientFile only when asked about Tylenol/paracetamol/overdose; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "urine_output",
+      "category": "ros",
+      "triggerConcepts": [
+        "how much urine",
+        "passing water",
+        "urine output",
+        "peeing less",
+        "kidney"
+      ],
+      "response": "[Reveal the reduced urine output from patientFile only when asked; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "abdominal_pain",
+      "category": "hpi",
+      "triggerConcepts": [
+        "belly pain",
+        "abdominal pain",
+        "right upper quadrant pain",
+        "does your stomach hurt",
+        "tummy pain"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "viral_risk_factors",
+      "category": "ros",
+      "triggerConcepts": [
+        "recent travel",
+        "new sexual partners",
+        "iv drug use",
+        "blood transfusions",
+        "hepatitis exposure"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "cardiac_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "heart problems",
+        "heart failure",
+        "prior heart attack",
+        "past medical history",
+        "cardiac history"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "supplements",
+        "herbal remedies"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "fevers or chills",
+        "nausea"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "obtain_orthostatic_vitals_finding_1",
+      "finding": "Vitals: BP 92/58, HR 104, marginal perfusion; persistent low-output state on reassessment.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals",
+        "repeat_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Hemodynamics within normal limits."
+    },
+    {
+      "id": "assess_capillary_refill_finding_2",
+      "finding": "Cardiac/extremities: cool extremities with delayed capillary refill and thready peripheral pulses — low-output perfusion.",
+      "revealedBy": [
+        "assess_capillary_refill",
+        "assess_peripheral_pulses"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Warm extremities with brisk capillary refill and normal pulses."
+    },
+    {
+      "id": "assess_jvp_finding_3",
+      "finding": "Cardiac: elevated JVP with a soft S3 gallop — volume overload/low-output heart failure.",
+      "revealedBy": [
+        "assess_jvp",
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal JVP; no S3."
+    },
+    {
+      "id": "assess_hepatomegaly_finding_4",
+      "finding": "Abdomen: soft with mild non-tender hepatomegaly; NO RUQ tenderness, NO Murphy sign, NO ascites.",
+      "revealedBy": [
+        "assess_hepatomegaly",
+        "palpate_ruq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen soft and non-tender; no hepatomegaly."
+    },
+    {
+      "id": "inspect_sclera_finding_5",
+      "finding": "General: not jaundiced; only mild scleral changes if any.",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No jaundice."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Ischemic hepatitis (shock liver)",
+    "diagnosticFramework": "68M with heart failure, admitted after a witnessed cardiac arrest and prolonged hypotension, now with markedly elevated transaminases noted on labs 24 hours later. The diagnosis is Ischemic hepatitis (shock liver), reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Vitals: BP 92/58, HR 104, marginal perfusion; persistent low-output state on reassessment.",
+      "Cardiac/extremities: cool extremities with delayed capillary refill and thready peripheral pulses — low-output perfusion.",
+      "Cardiac: elevated JVP with a soft S3 gallop — volume overload/low-output heart failure.",
+      "Abdomen: soft with mild non-tender hepatomegaly; NO RUQ tenderness, NO Murphy sign, NO ascites."
+    ],
+    "keyDiagnosticFindings": [
+      "LFTs",
+      "Bilirubin",
+      "LDH",
+      "Acetaminophen",
+      "ViralHepNAT",
+      "RenalCoags"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Ischemic hepatitis (shock liver) while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Ischemic hepatitis (shock liver) and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)"
+    ],
+    "managementPearls": [
+      "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state"
+    ],
+    "criticalHistoryItems": [
+      "arrest_hypotension",
+      "acetaminophen_use"
+    ],
+    "criticalExamItems": [
+      "obtain_orthostatic_vitals",
+      "assess_capillary_refill"
+    ],
+    "criticalWorkupItems": [
+      "LFTs with AST/ALT trend and LDH (ALT:LDH ratio)",
+      "Acetaminophen level",
+      "RUQ ultrasound with Doppler"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation.",
+      "Cardiomegaly with pulmonary edema/congestion and small effusions."
+    ],
+    "criticalManagementItems": [
+      "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation.",
+      "Cardiomegaly with pulmonary edema/congestion and small effusions."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation.",
+      "Cardiomegaly with pulmonary edema/congestion and small effusions."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

@@ -1,0 +1,671 @@
+{
+  "id": "fever-08",
+  "category": "Fever",
+  "difficulty": "moderate",
+  "title": "Fever with a hot, swollen knee",
+  "diagnosis": "Septic arthritis",
+  "chart": {
+    "ageSex": "58M",
+    "cc": "Painful, swollen, hot knee",
+    "oneLiner": "58M presents with 2 days of a rapidly swelling, hot, exquisitely painful right knee and fever, now unable to bear weight.",
+    "vitals": {
+      "BP": "124/76",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "38.6°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My right knee blew up over a couple of days, it's hot and so painful I can't put any weight on it, and I've been feverish.",
+  "patientFile": "PERSONA: 58-year-old man, uncomfortable, guarding the right knee and reluctant to move it. Cooperative but in pain.\n\nHPI: 2 days of rapidly worsening pain, swelling, warmth, and redness over the RIGHT knee, with fevers and chills. The pain is severe and constant, much worse with any movement; he cannot bear weight. NO antecedent trauma. He has gout and was treated for a flare a few weeks ago, but says this feels far worse and came with fevers (only if asked). He had a dental procedure about 10 days ago (only if asked about recent procedures/infections). NO other hot/swollen joints, NO back pain, NO new sexual partners or urethral discharge, NO rash, NO tick exposure or recent travel (these help sort the differential). Single joint only.\nPMH: gout, type 2 diabetes, hypertension. MEDS: allopurinol, metformin, lisinopril; took ibuprofen for the pain with little relief. SOCIAL: drinks 2-3 beers most nights; nonsmoker; no injection drug use.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, lying still, holding the right knee slightly flexed.\n- Vitals: BP 124/76, HR 104, RR 18, 38.6°C, SpO2 97% RA.\n- Right knee: markedly swollen with a tense effusion, warm and erythematous; exquisitely tender; holds it in slight flexion and resists/refuses any passive or active range of motion because of pain. Overlying skin intact, NO laceration or puncture, NO crepitus, NO fluctuant abscess.\n- Calf soft, NO cord or severe calf tenderness (helps distinguish DVT). Distal pulses intact, foot well perfused.\n- No other joint swelling; no tophi acutely visible; no rash; no track marks.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior gout flare, the recent dental procedure, or the alcohol use unless asked about prior joint problems, recent procedures/infections, or alcohol respectively.\n- The intact overlying skin, absence of other joints involved, and absence of necrotizing/crepitus features are revealed only if examined/asked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "SynovialFluid": "Arthrocentesis: cloudy/purulent fluid, WBC 78,000/µL with 92% neutrophils — strongly suggests septic arthritis. NO crystals seen.",
+      "SynovialGramStainCulture": "Gram stain: gram-positive cocci in clusters; culture pending (Staphylococcus aureus most likely). Send for routine culture.",
+      "CBC": "WBC 16.5 with neutrophilia and left shift.",
+      "Inflammatory": "ESR 88 and CRP 19 — markedly elevated.",
+      "BloodCultures": "Two sets drawn before antibiotics; may be positive (bacteremic seeding) — important to obtain first.",
+      "UricAcid": "7.8 — mildly elevated but a normal/high serum uric acid neither confirms nor excludes gout, and does NOT exclude infection."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia ~104 with normal axis and intervals; no acute ischemic ST/T changes.",
+      "verify": "Source a study matching: Sinus tachycardia ~104 with normal axis and intervals; no acute ischemic ST/T changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields, no consolidation or effusion, normal cardiomediastinal silhouette — no acute process.",
+      "verify": "Source a study matching: Clear lung fields, no consolidation or effusion, normal cardiomediastinal silhouette — no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "SynovialFluid",
+    "SynovialGramStainCulture",
+    "CBC",
+    "Inflammatory",
+    "BloodCultures",
+    "UricAcid",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "SynovialFluid",
+    "SynovialGramStainCulture",
+    "BloodCultures"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this acute monoarthritis (note your leading diagnosis).",
+      "rubric": "Septic arthritis (leading,7). Crystal arthropathy — gout/pseudogout (CANT-MISS to distinguish,5). Disseminated gonococcal/Lyme arthritis (core,3). Hemarthrosis/trauma (core,2). Reactive arthritis or acute monoarticular flare of inflammatory arthritis (core,2). Names septic arthritis and the imperative to aspirate the joint to distinguish infection from crystals (core,6).",
+      "idealAnswer": "Leading diagnosis: Septic arthritis. Must-not-miss/must-distinguish: Crystal arthropathy — gout/pseudogout. Also reasonable: Disseminated gonococcal/Lyme arthritis; Hemarthrosis/trauma; Reactive arthritis or monoarticular inflammatory flare. Key point: an acute hot swollen joint is septic until arthrocentesis proves otherwise.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Septic arthritis",
+            "points": 7
+          },
+          {
+            "item": "Crystal arthropathy — gout/pseudogout",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Disseminated gonococcal/Lyme arthritis",
+            "points": 3
+          },
+          {
+            "item": "Hemarthrosis/trauma",
+            "points": 2
+          },
+          {
+            "item": "Reactive arthritis or monoarticular inflammatory flare",
+            "points": 2
+          },
+          {
+            "item": "Names septic arthritis and the imperative to aspirate the joint to distinguish infection from crystals",
+            "points": 6
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Crystal arthropathy — gout/pseudogout"
+      ],
+      "acceptableAlternatives": [
+        "Disseminated gonococcal/Lyme arthritis",
+        "Hemarthrosis/trauma",
+        "Reactive arthritis or monoarticular inflammatory flare"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order?",
+      "rubric": "Arthrocentesis with synovial fluid cell count/differential (CANT-MISS,4). Synovial Gram stain, culture, AND crystal analysis (CANT-MISS,4). Blood cultures BEFORE antibiotics (CANT-MISS,3). CBC + ESR/CRP (2). Serum uric acid is NOT useful to exclude infection (2). PENALTY: starting antibiotics before drawing blood cultures and aspirating the joint (delays/obscures diagnosis) (-3).",
+      "idealAnswer": "Order: Arthrocentesis with synovial fluid cell count and differential; Synovial Gram stain, culture, and crystal analysis; Blood cultures drawn BEFORE antibiotics. Supportive: CBC, ESR/CRP. Do not rely on serum uric acid to rule infection in or out.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Arthrocentesis with synovial fluid cell count and differential",
+            "points": 4
+          },
+          {
+            "item": "Synovial Gram stain, culture, and crystal analysis",
+            "points": 4
+          },
+          {
+            "item": "Blood cultures before antibiotics",
+            "points": 3
+          }
+        ],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "starting antibiotics before drawing blood cultures and aspirating the joint",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Arthrocentesis with synovial fluid cell count and differential",
+        "Synovial Gram stain, culture, and crystal analysis",
+        "Blood cultures before antibiotics"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "starting antibiotics before drawing blood cultures and aspirating the joint"
+      ],
+      "orderSensitiveActions": [
+        "starting antibiotics before drawing blood cultures and aspirating the joint"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia from fever/pain) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "keyFindings": [
+        "recognizes sinus tachycardia",
+        "systematic read confirming no acute ischemia"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia; no acute ischemic changes."
+      ],
+      "commonMistakes": [
+        "over-reading benign rate-related ST/T changes as ischemia"
+      ],
+      "idealAnswer": "Sinus tachycardia (~104), normal axis and intervals; no acute ischemic ST/T changes — a compensatory response to fever and pain.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia; no acute ischemic changes."
+        ],
+        "coreActions": [
+          "recognizes sinus tachycardia",
+          "systematic read confirming no acute ischemia"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it screens for a pulmonary source of bacteremia (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal chest film",
+        "notes it screens for a pulmonary source/septic emboli"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate or effusion that is not there"
+      ],
+      "idealAnswer": "No acute process: clear lungs, normal cardiomediastinal silhouette. Useful to screen for a pulmonary source of bacteremia or septic emboli.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "No acute cardiopulmonary process."
+        ],
+        "coreActions": [
+          "identifies a normal chest film",
+          "notes it screens for a pulmonary source/septic emboli"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Synovial fluid is purulent with WBC 78,000 (92% neutrophils), gram-positive cocci in clusters on Gram stain, and NO crystals; ESR/CRP markedly elevated. What is your diagnosis and what did you rule out?",
+      "rubric": "Septic arthritis (likely Staphylococcus aureus) (6). Cites the markedly elevated synovial WBC with neutrophil predominance and positive Gram stain; explicitly excludes crystal arthropathy by the ABSENCE of crystals (and notes infection and crystals can coexist) (4).",
+      "idealAnswer": "Septic arthritis, most likely Staphylococcus aureus. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH septic arthritis: URGENT joint drainage — orthopedics/rheumatology for arthroscopic/surgical washout or serial aspiration (CANT-MISS,7); empiric IV antibiotics AFTER cultures, covering Staphylococcus including MRSA — vancomycin (CANT-MISS,7); add gram-negative coverage (e.g., ceftriaxone/cefepime) if at risk or Gram stain suggests (3); admit and consult orthopedics (4); narrow therapy by culture and complete ~3-4 week course (2); analgesia and treat sepsis/source (2). PENALTY: relying on antibiotics alone without joint drainage (-3); treating as a simple gout flare and discharging (-3).",
+      "idealAnswer": "Admit. Urgent joint drainage (orthopedic surgical washout or serial therapeutic aspiration) — antibiotics alone are inadequate. Empiric IV antibiotics started AFTER blood and synovial cultures: vancomycin for staph/MRSA coverage; add gram-negative coverage (ceftriaxone, or cefepime/antipseudomonal if immunocompromised/at risk) guided by Gram stain. Consult orthopedics. Narrow therapy once cultures return; typical total course ~3-4 weeks. Analgesia, source control, and treat any associated sepsis. Do not anchor on a gout flare.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Urgent joint drainage (surgical washout or serial aspiration)",
+            "points": 7
+          },
+          {
+            "item": "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures",
+            "points": 7
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Admit and consult orthopedics",
+            "points": 4
+          },
+          {
+            "item": "Add gram-negative coverage if at risk or per Gram stain",
+            "points": 3
+          },
+          {
+            "item": "Narrow by culture and complete ~3-4 week course",
+            "points": 2
+          },
+          {
+            "item": "Analgesia and treat sepsis/source",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Relying on antibiotics alone without joint drainage",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Urgent joint drainage (surgical washout or serial aspiration)",
+        "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures"
+      ],
+      "optionalActions": [
+        "Admit and consult orthopedics",
+        "Add gram-negative coverage if at risk or per Gram stain",
+        "Narrow by culture and complete ~3-4 week course",
+        "Analgesia and treat sepsis/source"
+      ],
+      "unsafeActions": [
+        "Relying on antibiotics alone without joint drainage"
+      ],
+      "consults": [
+        "Orthopedic Surgery",
+        "Rheumatology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Bone & Joint Infections (Septic Arthritis)",
+        "page": 124
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "uncomfortable",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "sexual_history"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "58-year-old man, uncomfortable, guarding the right knee and reluctant to move it. Cooperative but in pain.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "I usually have a couple of beers, maybe two or three most nights.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "It came on fast — over about two days the knee swelled up and got really hot and painful.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "trauma",
+      "category": "hpi",
+      "triggerConcepts": [
+        "any injury",
+        "did you hurt it",
+        "trauma",
+        "fall",
+        "twist it"
+      ],
+      "response": "No, I didn't injure it or twist it — nothing like that happened.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_joint_problems",
+      "category": "pmh",
+      "triggerConcepts": [
+        "joint problems before",
+        "gout",
+        "arthritis",
+        "had this before",
+        "prior flares"
+      ],
+      "response": "I do get gout, and I had a flare treated a few weeks ago — but this feels way worse and I've had fevers with it.",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_procedure_infection",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent procedure",
+        "dental work",
+        "any infections",
+        "surgery",
+        "skin infection lately"
+      ],
+      "response": "I had a dental procedure about ten days ago. No skin infections or other surgeries that I can think of.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "other_joints",
+      "category": "ros",
+      "triggerConcepts": [
+        "other joints",
+        "any other joint",
+        "multiple joints",
+        "joints elsewhere"
+      ],
+      "response": "No, it's just this one knee — no other joints are bothering me.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "fever_chills",
+      "category": "ros",
+      "triggerConcepts": [
+        "fever",
+        "chills",
+        "feverish",
+        "sweats",
+        "temperature"
+      ],
+      "response": "Yes, I've been feverish with chills since this started.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "sexual_history",
+      "category": "sexual_history",
+      "triggerConcepts": [
+        "sexual history",
+        "new partners",
+        "sexually active",
+        "urethral discharge",
+        "STI symptoms"
+      ],
+      "response": "I've been with the same partner for years, no new partners, and no discharge or burning when I pee.",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tick_travel_rash",
+      "category": "ros",
+      "triggerConcepts": [
+        "tick bite",
+        "rash",
+        "recent travel",
+        "outdoors",
+        "Lyme exposure"
+      ],
+      "response": "No tick bites, no rash, and I haven't traveled anywhere recently.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "I take allopurinol for gout, metformin for diabetes, and lisinopril for blood pressure. I tried ibuprofen for this but it barely helped.",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_edema_finding_1",
+      "finding": "Right knee: markedly swollen with a tense effusion, warm and erythematous; exquisitely tender; holds it in slight flexion and resists/refuses any passive or active range of motion because of pain.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No joint swelling or effusion."
+    },
+    {
+      "id": "inspect_skin_finding_2",
+      "finding": "Right knee: warm and erythematous overlying skin that is intact — NO laceration, puncture, crepitus, or fluctuant abscess.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 3,
+      "normalIfNotPresent": "Overlying skin intact and unremarkable."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_3",
+      "finding": "Calf soft, NO cord or severe calf tenderness; symmetric — helps distinguish DVT.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Calves soft and nontender, symmetric."
+    },
+    {
+      "id": "assess_gait_finding_4",
+      "finding": "Unable to bear weight on the right leg; refuses to ambulate because of severe knee pain.",
+      "revealedBy": [
+        "assess_gait"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Gait steady and narrow-based."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_5",
+      "finding": "Distal pulses intact, foot well perfused; no limb-threatening ischemia.",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Peripheral pulses 2+ and symmetric."
+    },
+    {
+      "id": "assess_for_track_marks_finding_6",
+      "finding": "No injection track marks; no peripheral stigmata of injection drug use or endocarditis.",
+      "revealedBy": [
+        "assess_for_track_marks"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No track marks or injection stigmata."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Septic arthritis",
+    "diagnosticFramework": "58M presents with 2 days of a rapidly swelling, hot, exquisitely painful right knee and fever, now unable to bear weight. The diagnosis is Septic arthritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup (arthrocentesis) while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Right knee: markedly swollen with a tense effusion, warm and erythematous; exquisitely tender; holds it in slight flexion and resists/refuses any passive or active range of motion because of pain.",
+      "Right knee: warm and erythematous overlying skin that is intact — NO laceration, puncture, crepitus, or fluctuant abscess.",
+      "Calf soft, NO cord or severe calf tenderness; symmetric — helps distinguish DVT.",
+      "Unable to bear weight on the right leg; refuses to ambulate because of severe knee pain."
+    ],
+    "keyDiagnosticFindings": [
+      "SynovialFluid",
+      "SynovialGramStainCulture",
+      "CBC",
+      "Inflammatory",
+      "BloodCultures",
+      "UricAcid"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Septic arthritis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Septic arthritis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Relying on antibiotics alone without joint drainage"
+    ],
+    "managementPearls": [
+      "Urgent joint drainage (surgical washout or serial aspiration)",
+      "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures"
+    ],
+    "criticalHistoryItems": [
+      "prior_joint_problems"
+    ],
+    "criticalExamItems": [
+      "assess_edema"
+    ],
+    "criticalWorkupItems": [
+      "Arthrocentesis with synovial fluid cell count and differential",
+      "Synovial Gram stain, culture, and crystal analysis",
+      "Blood cultures before antibiotics"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute process (screens for a pulmonary source of bacteremia)."
+    ],
+    "criticalManagementItems": [
+      "Urgent joint drainage (surgical washout or serial aspiration)",
+      "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute cardiopulmonary process."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia; no acute ischemic changes.",
+      "No acute cardiopulmonary process."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's pain and concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

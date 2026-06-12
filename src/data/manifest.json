@@ -99,6 +99,15 @@
       "cantMiss": true
     },
     {
+      "id": "abdo-09",
+      "file": "abdo-09.json",
+      "category": "Abdominal Pain",
+      "difficulty": "hard",
+      "title": "Sudden severe upper abdominal pain",
+      "diagnosis": "Perforated peptic ulcer",
+      "cantMiss": true
+    },
+    {
       "id": "ams-01",
       "file": "ams-01.json",
       "category": "Altered Mental Status",
@@ -171,6 +180,15 @@
       "cantMiss": true
     },
     {
+      "id": "ams-09",
+      "file": "ams-09.json",
+      "category": "Altered Mental Status",
+      "difficulty": "hard",
+      "title": "Agitation, fever, and a racing heart",
+      "diagnosis": "Thyroid storm",
+      "cantMiss": true
+    },
+    {
       "id": "anemia-01",
       "file": "anemia-01.json",
       "category": "Anemia",
@@ -232,6 +250,15 @@
       "title": "Sudden fatigue and dark urine after starting a new medication",
       "diagnosis": "G6PD deficiency hemolysis",
       "cantMiss": false
+    },
+    {
+      "id": "anemia-08",
+      "file": "anemia-08.json",
+      "category": "Anemia",
+      "difficulty": "hard",
+      "title": "Severe whole-body pain and dark urine",
+      "diagnosis": "Sickle cell disease with vaso-occlusive crisis and hemolysis",
+      "cantMiss": true
     },
     {
       "id": "chestpain-01",
@@ -306,6 +333,15 @@
       "cantMiss": true
     },
     {
+      "id": "chestpain-09",
+      "file": "chestpain-09.json",
+      "category": "Chest Pain",
+      "difficulty": "hard",
+      "title": "Sudden severe chest pressure in a young adult",
+      "diagnosis": "Cocaine-associated chest pain with coronary vasospasm",
+      "cantMiss": true
+    },
+    {
       "id": "diarrhea-01",
       "file": "diarrhea-01.json",
       "category": "Diarrhea",
@@ -366,6 +402,15 @@
       "difficulty": "hard",
       "title": "Watery diarrhea with episodic flushing",
       "diagnosis": "Carcinoid syndrome",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-08",
+      "file": "diarrhea-08.json",
+      "category": "Diarrhea",
+      "difficulty": "moderate",
+      "title": "Chronic watery diarrhea in an older woman",
+      "diagnosis": "Microscopic colitis",
       "cantMiss": false
     },
     {
@@ -441,6 +486,15 @@
       "cantMiss": true
     },
     {
+      "id": "dyspnea-09",
+      "file": "dyspnea-09.json",
+      "category": "Dyspnea",
+      "difficulty": "moderate",
+      "title": "Sudden chest pain and breathlessness",
+      "diagnosis": "Spontaneous pneumothorax",
+      "cantMiss": true
+    },
+    {
       "id": "fever-01",
       "file": "fever-01.json",
       "category": "Fever",
@@ -504,6 +558,15 @@
       "cantMiss": true
     },
     {
+      "id": "fever-08",
+      "file": "fever-08.json",
+      "category": "Fever",
+      "difficulty": "moderate",
+      "title": "Fever with a hot, swollen knee",
+      "diagnosis": "Septic arthritis",
+      "cantMiss": true
+    },
+    {
       "id": "liver-01",
       "file": "liver-01.json",
       "category": "Abnormal Liver Enzymes",
@@ -564,6 +627,15 @@
       "difficulty": "hard",
       "title": "Abdominal swelling and right upper quadrant pain in a young woman",
       "diagnosis": "Budd-Chiari syndrome",
+      "cantMiss": true
+    },
+    {
+      "id": "liver-08",
+      "file": "liver-08.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "hard",
+      "title": "Sudden sky-high liver enzymes after a cardiac arrest",
+      "diagnosis": "Ischemic hepatitis (shock liver)",
       "cantMiss": true
     },
     {
@@ -636,6 +708,15 @@
       "difficulty": "hard",
       "title": "Collapse during basketball in a young athlete",
       "diagnosis": "Hypertrophic obstructive cardiomyopathy",
+      "cantMiss": true
+    },
+    {
+      "id": "syncope-09",
+      "file": "syncope-09.json",
+      "category": "Syncope",
+      "difficulty": "hard",
+      "title": "Collapse during a febrile illness, overnight",
+      "diagnosis": "Brugada syndrome",
       "cantMiss": true
     }
   ],

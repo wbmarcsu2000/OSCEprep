@@ -1,0 +1,706 @@
+{
+  "id": "chestpain-09",
+  "category": "Chest Pain",
+  "difficulty": "hard",
+  "title": "Sudden severe chest pressure in a young adult",
+  "diagnosis": "Cocaine-associated chest pain with coronary vasospasm",
+  "chart": {
+    "ageSex": "34M",
+    "cc": "Chest pain",
+    "oneLiner": "34M with no cardiac history presents with 1 hour of severe substernal chest pressure that began at a party, with palpitations, anxiety, and diaphoresis.",
+    "vitals": {
+      "BP": "168/98",
+      "HR": "116",
+      "RR": "20",
+      "Temp": "37.6°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My chest suddenly got really tight and heavy, my heart is racing, and I feel like I can't calm down.",
+  "patientFile": "PERSONA: 34-year-old man, anxious and restless, fidgety and hyperalert, speaking quickly. Mildly defensive when asked about drugs. Cooperative once reassured of confidentiality.\n\nHPI:\n- Substernal chest PRESSURE/tightness (\"like a band around my chest\") that began about 1 hour ago at a party. Came on suddenly while he was sitting, NOT with exertion.\n- Associated palpitations, a racing heart, anxiety, sweating, and a feeling of dread. Mild shortness of breath.\n- Used cocaine (insufflated/snorted, several lines) about 1-2 hours before the pain started — only admits this if asked specifically and non-judgmentally about recreational/illicit drug use. Also drank several beers tonight.\n- The pain has waxed and waned; partially eased after he sat down and tried to relax.\n- NO pleuritic/positional quality, NO tearing or ripping quality, NO pain radiating to the back, NO fever, NO cough, NO leg swelling or calf pain, NO recent long travel/immobility, NO trauma.\n\nOLDCARTS: sudden onset ~1h ago at rest; substernal; waxing/waning; pressure/tightness with palpitations; not clearly exertional; severity 7/10.\n\nPMH: none; occasional anxiety. No known CAD, HTN, or diabetes.\nMEDICATIONS: none regular; no daily aspirin.\nALLERGIES: none. FAMILY: no early MI or sudden death that he knows of. SOCIAL: uses cocaine occasionally on weekends (snorts it); smokes ~half a pack/day; drinks socially; no IV drug use; works in construction.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, restless, diaphoretic, mildly agitated and hyperalert; no acute distress at rest.\n- Vitals: BP 168/98, HR 116 regular, RR 20, 37.6°C, SpO2 98% RA. Pupils mildly dilated.\n- Cardiac: tachycardic, regular, normal S1/S2, no murmur, no rub, no gallop.\n- Lungs: clear bilaterally; no wheeze.\n- Chest wall: NO reproducible tenderness on palpation.\n- Skin/extremities: diaphoretic; NO track marks or injection sites; no edema, no calf tenderness, symmetric pulses (equal in both arms).\n- Nose: dried blood/irritation at the nasal septum if inspected.\n- Abdomen: soft, nontender. Neuro: alert, grossly intact, no focal deficit. \n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the cocaine use, the alcohol, the smoking, or the nasal findings unless asked specifically about recreational/illicit drug use, alcohol, smoking, or the relevant exam.\n- The cocaine history is sensitive: only disclose if asked directly and non-judgmentally; be initially guarded but truthful when reassured.\n- Track marks, nasal findings, and pupil findings are revealed only if those areas are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Troponin": "0.02 ng/mL initial, 0.03 ng/mL on 3-hour repeat — not significantly elevated (argues against completed infarction).",
+      "ECG_serial": "Initial sinus tachycardia with subtle ST changes that NORMALIZE on repeat as pain resolves — consistent with transient vasospasm rather than fixed occlusion.",
+      "BMP": "Na 139, K 4.0, Cr 0.9, Glu 108 — unremarkable; no renal injury.",
+      "UDS": "Urine toxicology POSITIVE for cocaine; otherwise negative — confirms recent cocaine exposure.",
+      "CBC": "WBC 9.4, Hgb 14.8, Plt 232 — unremarkable.",
+      "CK_CKMB": "CK mildly elevated, CK-MB normal; no rhabdomyolysis pattern."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with subtle, diffuse upsloping ST changes and no ST-segment elevation; transient and resolving — no fixed STEMI pattern.",
+      "verify": "Source a study matching: sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with subtle non-specific ST changes, no ST elevation",
+      "searchTerms": [
+        "sinus tachycardia ECG",
+        "nonspecific ST changes no ST elevation ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)"
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "No acute cardiopulmonary process; normal cardiomediastinal silhouette; no widened mediastinum and no pneumothorax.",
+      "verify": "Source a study matching: a normal PA chest radiograph with a normal mediastinum and no pneumothorax. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph, normal mediastinum, no pneumothorax",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph normal mediastinum"
+      ],
+      "recommendedSource": "Radiopaedia.org"
+    }
+  },
+  "revealKeys": [
+    "Troponin",
+    "ECG_serial",
+    "BMP",
+    "UDS",
+    "CBC",
+    "CK_CKMB",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "UDS",
+    "Troponin"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this chest pain (note your leading diagnosis).",
+      "rubric": "Cocaine-associated chest pain / coronary vasospasm (leading,7; accepts cocaine-induced ischemia/vasospasm/ACS). Acute coronary syndrome / cocaine-associated MI (CANT-MISS,5). Aortic dissection (CANT-MISS,3). Pulmonary embolism (CANT-MISS,2). Panic/anxiety (core,2). GERD/musculoskeletal (core,1). Names that a sympathomimetic toxidrome can cause vasospasm/ischemia and demand a drug history (core,5).",
+      "idealAnswer": "Leading diagnosis: Cocaine-associated chest pain with coronary vasospasm. Must-not-miss diagnoses to exclude: Cocaine-associated ACS/MI; Aortic dissection; Pulmonary embolism. Also reasonable: Panic/anxiety; GERD/musculoskeletal.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Cocaine-associated chest pain / coronary vasospasm",
+            "points": 7
+          },
+          {
+            "item": "Cocaine-associated ACS/MI",
+            "points": 5
+          },
+          {
+            "item": "Aortic dissection",
+            "points": 3
+          },
+          {
+            "item": "Pulmonary embolism",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Panic/anxiety",
+            "points": 2
+          },
+          {
+            "item": "GERD/musculoskeletal",
+            "points": 1
+          },
+          {
+            "item": "Names that a sympathomimetic toxidrome can cause vasospasm/ischemia and demands a drug history",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Cocaine-associated ACS/MI",
+        "Aortic dissection",
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Panic/anxiety",
+        "GERD/musculoskeletal"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "EKG, ideally immediately, with serial tracings (CANT-MISS,4). Serial troponin (CANT-MISS,4). Urine toxicology / drug screen (core,2). CXR to screen for dissection/pneumothorax (core,2). BMP (core,1). CBC (core,1). PENALTY: no EKG/troponin ordered (-3); giving a beta blocker as part of the workup before excluding cocaine (-2).",
+      "idealAnswer": "Order: EKG immediately with serial tracings; Serial troponin; Urine toxicology; CXR; BMP; CBC.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG, ideally immediately, with serial tracings",
+            "points": 4
+          },
+          {
+            "item": "Serial troponin",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Urine toxicology / drug screen",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 1
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "no EKG/troponin ordered",
+            "points": -3
+          },
+          {
+            "item": "giving a beta blocker before excluding cocaine",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "EKG, ideally immediately, with serial tracings",
+        "Serial troponin"
+      ],
+      "optionalTests": [
+        "Urine toxicology / drug screen",
+        "CXR",
+        "BMP",
+        "CBC"
+      ],
+      "contraindicatedTests": [
+        "no EKG/troponin ordered"
+      ],
+      "orderSensitiveActions": [
+        "giving a beta blocker before excluding cocaine"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation, resolving on serial tracing. CREDIT: rate & rhythm — sinus tachycardia (4); identifies only subtle/non-specific ST changes with NO ST elevation (6); recognizes transient/resolving pattern consistent with vasospasm rather than fixed occlusion (3); systematic read (2). PENALTY: over-calling a STEMI / activating thrombolytics for non-specific ST changes (-3).",
+      "keyFindings": [
+        "rate & rhythm — sinus tachycardia",
+        "identifies only subtle/non-specific ST changes with NO ST elevation",
+        "recognizes the transient/resolving pattern consistent with vasospasm",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation."
+      ],
+      "commonMistakes": [
+        "over-calling a STEMI / activating thrombolytics for non-specific ST changes"
+      ],
+      "idealAnswer": "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation; the changes resolve on serial tracing as the pain settles, consistent with transient vasospasm.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation."
+        ],
+        "coreActions": [
+          "rate & rhythm — sinus tachycardia",
+          "identifies only subtle/non-specific ST changes with NO ST elevation",
+          "recognizes the transient/resolving pattern consistent with vasospasm",
+          "systematic read"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-calls a STEMI / activates thrombolytics for non-specific ST changes",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no acute process; normal mediastinum; no pneumothorax. CREDIT: identifies a normal film (6); notes it helps exclude dissection (widened mediastinum) and pneumothorax (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal film",
+        "notes a normal mediastinum and no pneumothorax help exclude dissection/pneumothorax"
+      ],
+      "criticalFindings": [
+        "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
+      ],
+      "commonMistakes": [
+        "inventing pathology or missing that the normal mediastinum is itself reassuring against dissection"
+      ],
+      "idealAnswer": "No acute cardiopulmonary process; normal cardiomediastinal silhouette with no widened mediastinum and no pneumothorax — helps exclude dissection and pneumothorax.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
+        ],
+        "coreActions": [
+          "identifies a normal film",
+          "notes a normal mediastinum and no pneumothorax help exclude dissection/pneumothorax"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents pathology / over-reads the film",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "The patient reports recent cocaine use, the troponin stays flat, the ECG changes resolve as the pain settles, the urine screen is positive for cocaine, and the CXR is unremarkable. What is your diagnosis and what did you rule out?",
+      "rubric": "Cocaine-associated chest pain with coronary vasospasm (6; accepts cocaine-induced chest pain/vasospasm). Cites the recent cocaine use with a positive drug screen, transient resolving ECG changes, and flat troponin; explicitly rules out completed MI (flat troponin), aortic dissection (normal mediastinum, equal pulses, no tearing/back pain), and PE (no risk factors, normal SpO2) (4).",
+      "idealAnswer": "Cocaine-associated chest pain with coronary vasospasm.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Cocaine-associated ACS/MI",
+        "Aortic dissection",
+        "Pulmonary embolism"
+      ],
+      "acceptableAlternatives": [
+        "Panic/anxiety",
+        "GERD/musculoskeletal"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH cocaine-associated chest pain: benzodiazepines first-line for agitation/tachycardia/hypertension and to relieve ischemia (CANT-MISS,6); aspirin (4); nitrates for ischemic pain (3); calcium channel blocker / phentolamine for refractory hypertension or vasospasm (3); serial ECG and troponin with telemetry monitoring (3); counseling on cocaine cessation and addiction resources (2); cardiology consult if true ACS/positive troponin (2). PENALTY: giving a non-selective beta blocker (unopposed alpha stimulation/worsened vasospasm) (-4); discharging without observation or substance-use counseling (-2).",
+      "idealAnswer": "Benzodiazepine (e.g., lorazepam/diazepam) first-line to reduce sympathetic drive, agitation, tachycardia, hypertension, and ischemia; aspirin; nitroglycerin for ongoing ischemic pain; calcium channel blocker or phentolamine for refractory hypertension/vasospasm; AVOID beta blockers due to unopposed alpha-mediated vasoconstriction; telemetry with serial ECG and troponin; cardiology consult if troponin positive or true ACS; counsel on cocaine cessation and offer addiction/substance-use resources.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Benzodiazepine first-line",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Aspirin",
+            "points": 4
+          },
+          {
+            "item": "Nitrates for ischemic pain",
+            "points": 3
+          },
+          {
+            "item": "Calcium channel blocker / phentolamine for refractory hypertension or vasospasm",
+            "points": 3
+          },
+          {
+            "item": "Telemetry with serial ECG and troponin",
+            "points": 3
+          },
+          {
+            "item": "Cocaine cessation counseling / addiction resources",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Cardiology consult if positive troponin / true ACS",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Non-selective beta blocker (unopposed alpha stimulation)",
+            "points": -4
+          }
+        ]
+      },
+      "requiredActions": [
+        "Benzodiazepine first-line"
+      ],
+      "optionalActions": [
+        "Aspirin",
+        "Nitrates for ischemic pain",
+        "Calcium channel blocker / phentolamine for refractory hypertension or vasospasm",
+        "Telemetry with serial ECG and troponin",
+        "Cocaine cessation counseling / addiction resources",
+        "Cardiology consult if positive troponin / true ACS"
+      ],
+      "unsafeActions": [
+        "Non-selective beta blocker (unopposed alpha stimulation)"
+      ],
+      "consults": [
+        "Cardiology"
+      ],
+      "disposition": "Observe on telemetry with serial troponin/ECG",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Acute Coronary Syndrome (Cocaine-Associated Chest Pain)",
+        "page": 22
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "agitated",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "moderate",
+    "sensitiveTopics": [
+      "drug_use",
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; initially guarded about drug use",
+    "affect": "34-year-old man, anxious and restless, fidgety and hyperalert, speaking quickly; mildly defensive about drugs.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Disclose drug use only if asked directly and non-judgmentally, after reassurance of confidentiality",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "drug_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "do you use any drugs",
+        "recreational drugs",
+        "cocaine",
+        "stimulants",
+        "any illicit drug use",
+        "did you take anything tonight"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly and non-judgmentally; phrase in lay language. Patient admits he snorted some cocaine at the party about an hour or two before the pain started.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language. He had several beers tonight.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language. He smokes about half a pack a day.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "what were you doing when it started",
+        "duration"
+      ],
+      "response": "[Answer from patientFile: sudden onset about an hour ago while sitting at a party, not with exertion.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "character",
+        "tearing or ripping",
+        "quality"
+      ],
+      "response": "[Answer from patientFile: pressure/tightness like a band; NOT tearing or ripping.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "radiation",
+      "category": "hpi",
+      "triggerConcepts": [
+        "does it move anywhere",
+        "radiate",
+        "go to your back",
+        "into your arm or jaw"
+      ],
+      "response": "[Answer from patientFile: stays in the center of the chest; does NOT radiate to the back.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "palpitations",
+        "shortness of breath",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile: palpitations, racing heart, sweating, anxiety, mild shortness of breath; no fever, no cough, no leg swelling.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "heart problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile: no known heart disease, high blood pressure, or diabetes; occasional anxiety.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "do you take aspirin",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile: takes no regular medications and no daily aspirin.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "heart disease in the family",
+        "early heart attack",
+        "sudden death"
+      ],
+      "response": "[Answer from patientFile: no early heart attacks or sudden deaths in the family that he knows of.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_for_track_marks_finding_1",
+      "finding": "Skin/extremities: diaphoretic; NO track marks or injection sites.",
+      "revealedBy": [
+        "assess_for_track_marks"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No track marks or injection sites."
+    },
+    {
+      "id": "assess_general_appearance_finding_2",
+      "finding": "General: anxious, restless, diaphoretic, mildly agitated and hyperalert; pupils mildly dilated.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No agitation, diaphoresis, or pupillary changes."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_3",
+      "finding": "Cardiac: tachycardic, regular, normal S1/S2, no murmur, no rub, no gallop.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur, rub, or gallop appreciated."
+    },
+    {
+      "id": "palpate_chest_wall_finding_4",
+      "finding": "Chest wall: NO reproducible tenderness on palpation.",
+      "revealedBy": [
+        "palpate_chest_wall"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No reproducible chest wall tenderness."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_5",
+      "finding": "Extremities: symmetric pulses, equal in both arms (argues against dissection).",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Symmetric, equal peripheral pulses."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Cocaine-associated chest pain with coronary vasospasm",
+    "diagnosticFramework": "34M with no cardiac history presents with 1 hour of severe substernal chest pressure that began at a party, with palpitations, anxiety, and diaphoresis. The diagnosis is Cocaine-associated chest pain with coronary vasospasm, reached by eliciting the focused history (including a non-judgmental drug history), performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Skin/extremities: diaphoretic; NO track marks or injection sites.",
+      "General: anxious, restless, diaphoretic, mildly agitated and hyperalert; pupils mildly dilated.",
+      "Cardiac: tachycardic, regular, normal S1/S2, no murmur, no rub, no gallop.",
+      "Extremities: symmetric pulses, equal in both arms (argues against dissection)."
+    ],
+    "keyDiagnosticFindings": [
+      "Troponin",
+      "ECG_serial",
+      "BMP",
+      "UDS",
+      "CBC",
+      "CK_CKMB"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items (especially drug use) only on direct, non-judgmental questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Cocaine-associated chest pain with coronary vasospasm while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Cocaine-associated chest pain with coronary vasospasm and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Non-selective beta blocker (unopposed alpha stimulation)"
+    ],
+    "managementPearls": [
+      "Benzodiazepine first-line"
+    ],
+    "criticalHistoryItems": [
+      "drug_use"
+    ],
+    "criticalExamItems": [
+      "assess_general_appearance",
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [
+      "EKG, ideally immediately, with serial tracings",
+      "Serial troponin"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation.",
+      "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
+    ],
+    "criticalManagementItems": [
+      "Benzodiazepine first-line"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation.",
+      "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation.",
+      "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
+    ],
+    "imageInterpretationPearls": [
+      "A near-normal study is an interpretation task in its own right — state the pertinent negatives that exclude STEMI, dissection, and pneumothorax.",
+      "Read every study systematically before committing, and use serial tracings to capture transient vasospasm.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks about drug use in a non-judgmental, confidential manner",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}
