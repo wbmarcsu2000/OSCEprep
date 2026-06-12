@@ -57,17 +57,18 @@ let providerKind: ProviderKind | null;
 
 export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills";
 
-/** Last-chosen station mode, persisted so Practice users stay in Practice.
- *  First-run (no attempts) defaults to the gentler untimed mode. */
+/** Last-chosen station mode, persisted so a chosen mode sticks. Defaults to
+ *  Practice (the guided reveal+teach tutor) until the user explicitly picks
+ *  Strict OSCE; Strict is opt-in for timed-exam rehearsal. */
 const MODE_STORAGE = "osce.mode";
 function initialMode(): Mode {
   try {
     const stored = localStorage.getItem(MODE_STORAGE);
     if (stored === "STRICT_OSCE" || stored === "PRACTICE") return stored;
-    return loadAttempts().length === 0 ? "PRACTICE" : "STRICT_OSCE";
   } catch {
-    return "PRACTICE";
+    // localStorage unavailable — fall through to the default
   }
+  return "PRACTICE";
 }
 
 /** An interrupted station found in storage — surfaced as a banner, never
