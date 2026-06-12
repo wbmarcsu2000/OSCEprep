@@ -103,6 +103,11 @@ export interface RawStep {
 export interface RawImage {
   label: string;
   asset: string | null;
+  /** Optional second view (e.g. lateral CXR, right-sided ECG leads). */
+  asset2?: string | null;
+  /** Authoritative expert interpretation (the pathology + systematic read),
+   *  shown when the student reveals the answer on a read step. */
+  expertRead?: string;
   source?: string;
   license?: string;
   findings?: string;

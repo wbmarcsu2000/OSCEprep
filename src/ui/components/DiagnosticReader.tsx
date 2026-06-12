@@ -11,16 +11,50 @@ import { useAppStore } from "../store";
  */
 export function StudyImage({ image, conceal = false }: { image: RawImage; conceal?: boolean }) {
   const [revealed, setRevealed] = useState(false);
-  if (image.asset) {
+  const [imgFailed, setImgFailed] = useState(false);
+
+  // Real tracing/film embedded inline — the student reads it directly, no
+  // click-out. The image is the QUESTION (it doesn't name the answer), so it is
+  // always shown; the written answer is revealed separately on the step.
+  if (image.asset && !imgFailed) {
+    const viewUrl = viewableUrl(image);
     return (
-      <figure className="space-y-1.5">
-        <img
-          src={image.asset}
-          alt={image.label}
-          className="w-full rounded-lg border"
-          style={{ borderColor: "var(--color-exam-border)" }}
-        />
-        {image.attribution && <figcaption className="hint">{image.attribution}</figcaption>}
+      <figure className="space-y-2">
+        <div className="flex flex-col sm:flex-row gap-2">
+          {[image.asset, image.asset2].filter(Boolean).map((src, i) => (
+            <a
+              key={i}
+              href={src as string}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block flex-1 rounded-lg border overflow-hidden bg-white group relative"
+              style={{ borderColor: "var(--color-exam-border-strong)" }}
+              title="Open full size in a new tab"
+            >
+              <img
+                src={src as string}
+                alt={`${image.label}${i > 0 ? " (additional view)" : ""}`}
+                loading="lazy"
+                onError={() => i === 0 && setImgFailed(true)}
+                className="w-full max-h-[460px] object-contain"
+              />
+              <span
+                className="absolute bottom-1.5 right-1.5 text-[10.5px] font-semibold px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity"
+                style={{ background: "rgba(21,33,46,0.78)", color: "#fff" }}
+              >
+                ⤢ full size
+              </span>
+            </a>
+          ))}
+        </div>
+        <figcaption className="hint flex items-center justify-between gap-2 flex-wrap">
+          <span>{image.attribution}</span>
+          {viewUrl && (
+            <a className="underline" style={{ color: "var(--color-exam-accent)" }} href={viewUrl} target="_blank" rel="noopener noreferrer">
+              View on LITFL ↗
+            </a>
+          )}
+        </figcaption>
       </figure>
     );
   }

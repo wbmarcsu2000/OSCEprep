@@ -142,6 +142,7 @@ export function litflStudyUrl(kind: "ecg" | "cxr", n: number): string {
 // ---------------------------------------------------------------------------
 
 import type { CaseModel, SectionScoring, StepModel } from "../engine/types";
+import { LITFL_MEDIA } from "./litflMedia";
 
 /** Build a read-step rubric: recognize the diagnosis (critical) + name the
  *  hallmark findings and read systematically (core) + a normal-call penalty. */
@@ -160,14 +161,14 @@ function buildReadScoring(study: LitflStudy, max: number): SectionScoring {
 }
 
 function applyStudyToStep(step: StepModel, study: LitflStudy, kind: "ecg" | "cxr"): StepModel {
-  const label = kind === "ecg" ? `LITFL ECG Case ${study.n}` : `LITFL CXR Case ${study.n}`;
   const modality = kind === "ecg" ? "12-lead ECG" : "chest X-ray";
   return {
     ...step,
-    prompt: `Open and interpret the linked ${modality} (${label}). Describe your findings systematically, then give your interpretation.`,
+    prompt: `Reading practice — interpret the ${modality} shown below. Read it systematically, then commit to a diagnosis (the underlying pathology, not just the pattern).`,
     criticalFindings: [study.diagnosis],
     keyFindings: study.findings,
-    idealAnswer: `${study.diagnosis}. Key findings: ${study.findings.join("; ")}.`,
+    // Lead with the pathology (diagnosis), then the supporting features.
+    idealAnswer: `Diagnosis: ${study.diagnosis}. Supporting features: ${study.findings.join("; ")}.`,
     commonMistakes: ["calling the study normal / missing the abnormality"],
     scoring: buildReadScoring(study, step.max),
   };
@@ -180,19 +181,27 @@ function applyStudyToStep(step: StepModel, study: LitflStudy, kind: "ecg" | "cxr
  * the first 50 of each collection.
  */
 export function applyLitflStudies(model: CaseModel, index: number): CaseModel {
-  const ecg = LITFL_ECG_STUDIES[index % LITFL_ECG_STUDIES.length];
-  const cxr = LITFL_CXR_STUDIES[index % LITFL_CXR_STUDIES.length];
+  const ecgN = (index % LITFL_ECG_STUDIES.length);
+  const cxrN = (index % LITFL_CXR_STUDIES.length);
+  const ecg = LITFL_ECG_STUDIES[ecgN];
+  const cxr = LITFL_CXR_STUDIES[cxrN];
   const images = { ...model.images };
   const steps = model.steps.map((step) => {
     if (step.type !== "read" || !step.imageKey) return step;
     const isEcg = /ekg|ecg/i.test(step.imageKey);
     const study = isEcg ? ecg : cxr;
     const kind: "ecg" | "cxr" = isEcg ? "ecg" : "cxr";
+    const media = isEcg ? LITFL_MEDIA.ecg[study.n] : LITFL_MEDIA.cxr[study.n];
     const existing = images[step.imageKey];
     images[step.imageKey] = {
       ...existing,
       label: kind === "ecg" ? "12-lead EKG" : "Chest X-ray",
-      asset: null,
+      // Embed the real tracing/film inline (hotlinked from LITFL); fall back to
+      // the written description if it ever fails to load.
+      asset: media?.img ?? null,
+      asset2: media?.img2 ?? null,
+      // Authoritative LITFL interpretation (pathology + systematic read).
+      expertRead: media?.read || `${study.diagnosis}. ${study.findings.join("; ")}.`,
       source: litflStudyUrl(kind, study.n),
       attribution: `LITFL ${kind === "ecg" ? "ECG" : "CXR"} Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0`,
       imageDescription: `${study.diagnosis}. ${study.findings.join("; ")}.`,

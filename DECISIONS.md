@@ -308,3 +308,17 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     110px-label + monospace layout (prose values wrapped badly) with an
     accent-colored uppercase label column (136px, stacks on mobile) and readable
     sans-serif `tabular-nums` values, plus an "N ordered" count.
+44. **Station overhaul — inline EKG/CXR + per-step answer reveal.** The read
+    steps no longer force a click-out to LITFL. `src/data/litflMedia.ts` (scraped
+    from the public LITFL Top-100 pages, © LITFL CC BY-NC-SA 4.0) carries, per
+    case, the real tracing/film image URL(s) and the page's own authoritative
+    interpretation. `applyLitflStudies` wires `asset`/`asset2`/`expertRead` onto
+    the read step's image; `StudyImage` embeds the real study inline (frontal CXR
+    first, second view beside it, click-to-zoom) with a graceful onError fallback
+    to the written description + link. Read prompts/ideal answers now lead with
+    the PATHOLOGY (diagnosis), not just the descriptor. PostEncounter gained a
+    per-step "Show correct answer" that instantly reveals the model answer, the
+    expert interpretation, and a deterministic self-check (✓ key points you hit)
+    — no AI call, so AI usage stays batched at final submit. An AI status chip
+    states where AI is used; the deterministic self-check keeps the formative
+    loop instant while grading/coaching run once on submit.

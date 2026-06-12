@@ -47,8 +47,10 @@ describe("screens hide what must be hidden", () => {
     engine = transition(engine, "POST_ENCOUNTER", cp01, T0);
     useAppStore.setState({ caseModel: cp01, engine, view: "station" });
     render(<PostEncounter caseModel={cp01} />);
-    expect(screen.getByText(/Patient access locked/i)).toBeInTheDocument();
+    expect(screen.getByText(/Patient locked/i)).toBeInTheDocument();
     const html = document.body.innerHTML;
+    // The model answer is available on demand via "Show correct answer" but is
+    // hidden by default (no step revealed on mount).
     for (const step of cp01.steps) {
       if (step.idealAnswer && step.idealAnswer.length > 12) {
         expect(html).not.toContain(step.idealAnswer);
