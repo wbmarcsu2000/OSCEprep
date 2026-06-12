@@ -1,4 +1,5 @@
 import { SKILLS, type SkillCard } from "../../data/skills";
+import { TEACHIM_BY_SKILL } from "../../data/teachim";
 import {
   EKG_SIX_STEPS,
   CXR_RIP_ABCDE,
@@ -268,6 +269,18 @@ function SkillCardView({ card, index }: { card: SkillCard; index: number }) {
             </li>
           ))}
         </ul>
+      )}
+
+      {TEACHIM_BY_SKILL[card.id] && (
+        <a
+          className="text-[12.5px] font-semibold underline underline-offset-2 inline-flex items-center gap-1"
+          style={{ color: "#076a5b" }}
+          href={TEACHIM_BY_SKILL[card.id].url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          📖 TeachIM chalk talk: {TEACHIM_BY_SKILL[card.id].title} ↗
+        </a>
       )}
     </div>
   );

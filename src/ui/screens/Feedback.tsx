@@ -8,6 +8,7 @@ import { itemMatches } from "../../engine/textMatch";
 import { CURRICULUM_BY_CATEGORY } from "../../data/curriculum";
 import { manifest } from "../../data/loader";
 import { mghPdfUrl } from "../../data/mghManual";
+import { TEACHIM_BY_CASE } from "../../data/teachim";
 import { loadAttempts } from "../../analytics/store";
 import { newlyEarnedBadges, streakDays, xpForAttempt, type Badge } from "../gamification";
 import { useMountNow } from "../useMountNow";
@@ -538,6 +539,25 @@ export function FeedbackView({ data }: { data: FeedbackData }) {
           <div className="panel-label mb-1.5">Reasoning pathway for this case</div>
           <p className="text-[13px] leading-relaxed">{data.reasoningPathway}</p>
         </div>
+      )}
+
+      {/* Per-case TeachIM deep-dive for this specific diagnosis. */}
+      {TEACHIM_BY_CASE[data.caseId] && (
+        <a
+          className="card card-pop p-4 flex items-center gap-3 no-underline"
+          href={TEACHIM_BY_CASE[data.caseId].url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="icon-tile h-9 w-9 text-base" style={{ background: "var(--grad-teal)" }} aria-hidden>📖</span>
+          <span className="min-w-0">
+            <span className="panel-label" style={{ color: "#076a5b" }}>Go deeper — TeachIM chalk talk</span>
+            <span className="block text-[14px] font-bold" style={{ color: "var(--color-exam-ink)" }}>
+              {TEACHIM_BY_CASE[data.caseId].title} ↗
+            </span>
+            <span className="hint">Free open-access teaching on this diagnosis (teachim.org)</span>
+          </span>
+        </a>
       )}
 
       {/* End-of-station teaching: the transferable approach to this complaint. */}
