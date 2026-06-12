@@ -13,6 +13,7 @@ export function SpConversation() {
   const locked = useAppStore((s) => s.engine?.patientLocked ?? false);
   const ask = useAppStore((s) => s.ask);
   const aiDegraded = useAppStore((s) => s.aiDegraded);
+  const aiDegradedDetail = useAppStore((s) => s.aiDegradedDetail);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
   const [draft, setDraft] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -56,6 +57,9 @@ export function SpConversation() {
         >
           <span aria-hidden>⚠️ </span>
           AI unreachable — scripted patient replies in use (grading still works)
+          {aiDegradedDetail && (
+            <span className="font-normal opacity-80"> · {aiDegradedDetail}</span>
+          )}
         </div>
       )}
       <div

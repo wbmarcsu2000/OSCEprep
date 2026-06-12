@@ -218,17 +218,31 @@ export function guardParaphrase(
  * Degradation reporting. Every provider method falls back gracefully (canned
  * replies / keyword matching) when the API errors — but the UI must be able to
  * tell the student their session is degraded instead of silently asserting
- * "AI on". The store registers a listener; provider catches report through it.
+ * "AI on". The store registers a listener; provider catches report through it
+ * with a short failure detail, and successful calls report recovery (op null)
+ * so a transient blip doesn't show a permanent warning.
  */
-let fallbackListener: ((op: string) => void) | null = null;
-export function setLlmFallbackListener(fn: ((op: string) => void) | null): void {
+let fallbackListener: ((op: string | null, detail?: string) => void) | null = null;
+export function setLlmFallbackListener(
+  fn: ((op: string | null, detail?: string) => void) | null,
+): void {
   fallbackListener = fn;
 }
-function reportFallback(op: string): void {
+function reportFallback(op: string, err: unknown): void {
   try {
-    fallbackListener?.(op);
+    const raw = err instanceof Error ? err.message : String(err);
+    // First line, trimmed — SDK errors often embed whole JSON bodies.
+    const detail = raw.split("\n")[0].slice(0, 120);
+    fallbackListener?.(op, detail);
   } catch {
     // a listener bug must never break the patient reply itself
+  }
+}
+function reportRecovered(): void {
+  try {
+    fallbackListener?.(null);
+  } catch {
+    // ignore
   }
 }
 
@@ -274,6 +288,7 @@ export class AnthropicProvider implements LlmProvider {
       messages: [{ role: "user", content: p.user }],
     });
     const block = response.content.find((b) => b.type === "text");
+    reportRecovered();
     return block && block.type === "text" ? block.text : "";
   }
 
@@ -289,8 +304,8 @@ export class AnthropicProvider implements LlmProvider {
       const parsed = JSON.parse(text) as { ids?: unknown };
       const ids = Array.isArray(parsed.ids) ? parsed.ids : [];
       return ids.filter((id): id is string => typeof id === "string" && validIds.has(id));
-    } catch {
-      reportFallback("answer matching");
+    } catch (err) {
+      reportFallback("answer matching", err);
       return classifyIntentDeterministic(studentText, candidates);
     }
   }
@@ -299,8 +314,8 @@ export class AnthropicProvider implements LlmProvider {
     try {
       const text = await this.complete(phrasePrompt(this.patientSystem, approvedContent, persona, studentQuestion), 512);
       return guardParaphrase(approvedContent, text.trim(), persona, studentQuestion);
-    } catch {
-      reportFallback("patient replies");
+    } catch (err) {
+      reportFallback("patient replies", err);
       return phrasePatientReplyDeterministic(approvedContent);
     }
   }
@@ -310,8 +325,8 @@ export class AnthropicProvider implements LlmProvider {
       const text = await this.complete(offTargetPrompt(this.patientSystem, persona, studentQuestion), 256);
       const guarded = guardParaphrase(studentQuestion, text.trim(), persona, studentQuestion);
       return guarded === phrasePatientReplyDeterministic(studentQuestion) ? null : guarded;
-    } catch {
-      reportFallback("patient replies");
+    } catch (err) {
+      reportFallback("patient replies", err);
       return null;
     }
   }
@@ -322,8 +337,8 @@ export class AnthropicProvider implements LlmProvider {
         model: this.gradingModel,
       });
       return text.trim() || null;
-    } catch {
-      reportFallback("coaching");
+    } catch (err) {
+      reportFallback("coaching", err);
       return null;
     }
   }
@@ -374,6 +389,7 @@ export class OpenAiProvider implements LlmProvider {
           }
         : {}),
     });
+    reportRecovered();
     return response.choices[0]?.message?.content ?? "";
   }
 
@@ -389,8 +405,8 @@ export class OpenAiProvider implements LlmProvider {
       const parsed = JSON.parse(text) as { ids?: unknown };
       const ids = Array.isArray(parsed.ids) ? parsed.ids : [];
       return ids.filter((id): id is string => typeof id === "string" && validIds.has(id));
-    } catch {
-      reportFallback("answer matching");
+    } catch (err) {
+      reportFallback("answer matching", err);
       return classifyIntentDeterministic(studentText, candidates);
     }
   }
@@ -399,8 +415,8 @@ export class OpenAiProvider implements LlmProvider {
     try {
       const text = await this.complete(phrasePrompt(this.patientSystem, approvedContent, persona, studentQuestion), 512);
       return guardParaphrase(approvedContent, text.trim(), persona, studentQuestion);
-    } catch {
-      reportFallback("patient replies");
+    } catch (err) {
+      reportFallback("patient replies", err);
       return phrasePatientReplyDeterministic(approvedContent);
     }
   }
@@ -410,8 +426,8 @@ export class OpenAiProvider implements LlmProvider {
       const text = await this.complete(offTargetPrompt(this.patientSystem, persona, studentQuestion), 256);
       const guarded = guardParaphrase(studentQuestion, text.trim(), persona, studentQuestion);
       return guarded === phrasePatientReplyDeterministic(studentQuestion) ? null : guarded;
-    } catch {
-      reportFallback("patient replies");
+    } catch (err) {
+      reportFallback("patient replies", err);
       return null;
     }
   }
@@ -422,8 +438,8 @@ export class OpenAiProvider implements LlmProvider {
         model: this.gradingModel,
       });
       return text.trim() || null;
-    } catch {
-      reportFallback("coaching");
+    } catch (err) {
+      reportFallback("coaching", err);
       return null;
     }
   }

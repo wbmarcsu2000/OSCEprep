@@ -95,8 +95,11 @@ interface AppState {
   aiStatus: "idle" | "verifying" | "ok" | "error";
   aiError: string | null;
   /** Set when an AI call failed mid-session and the engine fallback answered
-   *  instead (e.g. "patient replies") — surfaced so "AI on" never lies. */
+   *  instead (e.g. "patient replies") — surfaced so "AI on" never lies.
+   *  Cleared automatically when a later AI call succeeds. */
   aiDegraded: string | null;
+  /** Short failure detail from the last degraded call (e.g. "401 …"). */
+  aiDegradedDetail: string | null;
   spThinking: boolean;
   /** Submission in flight (AI rubric matching can take seconds). */
   grading: boolean;
@@ -330,6 +333,7 @@ export const useAppStore = create<AppState>((set, get) => ({
   aiStatus: "idle",
   aiError: null,
   aiDegraded: null,
+  aiDegradedDetail: null,
   spThinking: false,
   grading: false,
   timeExpired: false,
@@ -356,6 +360,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       review: null,
       pendingResume: null,
       aiDegraded: null,
+      aiDegradedDetail: null,
       timeExpired: false,
       grading: false,
     });
@@ -402,7 +407,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       // ignore storage failure
     }
     ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
-    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null });
+    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null, aiDegradedDetail: null });
     if (llmEnabled) void get().verifyAi();
   },
 
@@ -414,7 +419,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       // ignore storage failure
     }
     ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
-    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null });
+    set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null, aiDegradedDetail: null });
     if (llmEnabled) void get().verifyAi();
   },
 
@@ -426,7 +431,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ aiStatus: "verifying", aiError: null });
     try {
       await provider.verify();
-      set({ aiStatus: "ok", aiError: null, aiDegraded: null });
+      set({ aiStatus: "ok", aiError: null, aiDegraded: null, aiDegradedDetail: null });
     } catch (e) {
       const msg = e instanceof Error ? e.message : String(e);
       // Trim the often-verbose SDK error to something readable.
@@ -773,8 +778,15 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 }));
 
-// Surface provider fallbacks ("AI on" must never lie about a degraded session).
-setLlmFallbackListener((op) => {
+// Surface provider fallbacks ("AI on" must never lie about a degraded session);
+// a later successful call (op === null) clears the warning automatically.
+setLlmFallbackListener((op, detail) => {
   const s = useAppStore.getState();
-  if (s.llmEnabled && s.aiDegraded !== op) useAppStore.setState({ aiDegraded: op });
+  if (op === null) {
+    if (s.aiDegraded !== null) useAppStore.setState({ aiDegraded: null, aiDegradedDetail: null });
+    return;
+  }
+  if (s.llmEnabled && (s.aiDegraded !== op || s.aiDegradedDetail !== (detail ?? null))) {
+    useAppStore.setState({ aiDegraded: op, aiDegradedDetail: detail ?? null });
+  }
 });

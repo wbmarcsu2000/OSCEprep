@@ -152,19 +152,41 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
           {image && <StudyImage image={image} />}
           {step.imageKey && <ReadingGuide imageKey={step.imageKey} />}
 
-          <textarea
-            className="input w-full resize-y leading-relaxed text-[14px]"
-            rows={image ? 5 : 7}
-            value={answer}
-            disabled={grading}
-            onChange={(e) => saveStepAnswer(step.id, e.target.value)}
-            aria-label={`Answer for ${step.label}`}
-            placeholder={step.type === "read" ? "Describe what you see, then name the diagnosis…" : "Type your answer…"}
-          />
+          {(() => {
+            // Once orders are committed and results released, the order sheet
+            // is sealed — editing it after seeing results would be cheating.
+            const ordersLocked = step.revealsDiagnostics && engine.labsRevealed;
+            return (
+              <>
+                <textarea
+                  className="input w-full resize-y leading-relaxed text-[14px]"
+                  rows={image ? 5 : 7}
+                  value={answer}
+                  disabled={grading}
+                  readOnly={ordersLocked}
+                  style={ordersLocked ? { background: "var(--color-exam-soft)", cursor: "not-allowed" } : undefined}
+                  onChange={(e) => saveStepAnswer(step.id, e.target.value)}
+                  aria-label={`Answer for ${step.label}`}
+                  placeholder={step.type === "read" ? "Describe what you see, then name the diagnosis…" : "Type your answer…"}
+                />
+                {ordersLocked && (
+                  <p className="text-[12.5px] font-bold flex items-center gap-1.5" style={{ color: "var(--color-exam-muted)" }}>
+                    <span aria-hidden>🔒</span> Orders committed — results released below. Check which
+                    studies you named (and missed) on the results card.
+                  </p>
+                )}
+              </>
+            );
+          })()}
 
           {step.revealsDiagnostics && !engine.labsRevealed && (
-            <button className="btn" disabled={!answer.trim() || grading} onClick={commitWorkupStep} title="Locks in your orders and releases results">
-              Commit orders &amp; receive results
+            <button
+              className="btn btn-primary"
+              disabled={!answer.trim() || grading}
+              onClick={commitWorkupStep}
+              title="Locks in your orders and releases results"
+            >
+              📋 Commit orders &amp; receive results
             </button>
           )}
 
@@ -272,13 +294,14 @@ function AiChip({
     );
   }
   if (aiDegraded) {
+    const detail = useAppStore.getState().aiDegradedDetail;
     return (
       <span
         className={base}
         style={{ background: "var(--color-exam-warn-soft)", color: "var(--color-exam-warn)" }}
-        title={`An AI call failed mid-session (${aiDegraded}) — the deterministic engine answered instead.`}
+        title={`An AI call failed mid-session (${aiDegraded}${detail ? `: ${detail}` : ""}) — the deterministic engine answered instead. It recovers automatically when calls succeed again.`}
       >
-        ⚠️ AI degraded — deterministic fallback in use
+        ⚠️ AI degraded{detail ? ` · ${detail}` : " — deterministic fallback in use"}
       </span>
     );
   }
@@ -304,13 +327,13 @@ function ReadingGuide({ imageKey }: { imageKey: string }) {
   const guide = readingGuideFor(imageKey);
   if (!guide) return null;
   return (
-    <details className="rounded-lg border" style={{ borderColor: "var(--color-exam-border)" }} open>
+    <details className="rounded-lg border" style={{ borderColor: "var(--color-exam-border)" }}>
       <summary
         className="px-3 py-2 text-[12.5px] font-semibold flex items-center gap-2 cursor-pointer"
         style={{ color: "var(--color-exam-accent-deep)", background: "var(--color-exam-accent-soft)", borderRadius: "7px" }}
       >
         <span aria-hidden className="caret text-[10px]">▶</span>
-        {guide.title} — read it systematically
+        💡 Reveal the systematic method — {guide.title}
       </summary>
       <ol className="px-4 py-3 space-y-1.5 text-[12.5px] leading-relaxed list-decimal list-inside">
         {guide.steps.map((s, i) => (
