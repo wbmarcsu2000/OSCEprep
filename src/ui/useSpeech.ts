@@ -50,14 +50,14 @@ const TTS_STORAGE = "osce.tts";
 
 /** Single-utterance dictation. `onInterim` streams the live transcript;
  *  `onFinal` fires once with the completed utterance. */
-export function useDictation(opts: { onInterim?: (t: string) => void; onFinal: (t: string) => void }) {
+export function useDictation(opts: { onTranscript: (text: string) => void }) {
   // `listening` is the desired state; the recognition object's whole lifecycle
-  // lives in the effect below (created on start, aborted on stop/unmount), so
-  // no ref is read or written outside an effect.
+  // lives in the effect below (created on start, stopped on toggle-off/unmount),
+  // so no ref is read or written outside an effect.
   const [listening, setListening] = useState(false);
   const optsRef = useRef(opts);
-  // Keep the latest callbacks in a ref (updated post-commit, never during
-  // render) so the recognition handlers below always call the current ones.
+  // Keep the latest callback in a ref (updated post-commit, never during
+  // render) so the recognition handlers below always call the current one.
   useEffect(() => {
     optsRef.current = opts;
   });
@@ -67,30 +67,58 @@ export function useDictation(opts: { onInterim?: (t: string) => void; onFinal: (
     const rec = new SRClass();
     rec.lang = "en-US";
     rec.interimResults = true;
-    rec.continuous = false;
+    // continuous: keep the mic open while the student talks instead of ending
+    // after the first pause (which read as "opens for a sec then stops").
+    rec.continuous = true;
     rec.maxAlternatives = 1;
+
+    // Accumulate completed segments; append the live interim so the input box
+    // streams the full transcript as they speak.
+    let finalText = "";
+    let stopped = false;
     rec.onresult = (e) => {
       let interim = "";
-      let final = "";
       for (let i = e.resultIndex; i < e.results.length; i++) {
         const r = e.results[i];
         const t = r[0]?.transcript ?? "";
-        if (r.isFinal) final += t;
+        if (r.isFinal) finalText += (finalText && !finalText.endsWith(" ") ? " " : "") + t.trim();
         else interim += t;
       }
-      if (interim) optsRef.current.onInterim?.(interim);
-      if (final.trim()) optsRef.current.onFinal(final.trim());
+      optsRef.current.onTranscript((finalText + " " + interim).trim());
     };
-    // A finished utterance (onend) or error returns us to the idle state, which
-    // re-runs this effect's cleanup to release the recognizer.
-    rec.onend = () => setListening(false);
-    rec.onerror = () => setListening(false);
-    rec.start();
+    // Chrome can end recognition on its own (silence/network). While the
+    // student still wants to listen, transparently restart; a real stop
+    // (toggle-off → cleanup) sets `stopped` first so we don't fight it.
+    rec.onend = () => {
+      if (!stopped) {
+        try {
+          rec.start();
+        } catch {
+          setListening(false);
+        }
+      }
+    };
+    rec.onerror = (ev) => {
+      // Permission/device errors are terminal; transient ones (no-speech,
+      // aborted, network) let onend's restart handle continuity.
+      const code = (ev as { error?: string })?.error;
+      if (code === "not-allowed" || code === "service-not-allowed" || code === "audio-capture") {
+        stopped = true;
+        setListening(false);
+      }
+    };
+    try {
+      rec.start();
+    } catch {
+      // Defer so the failure state isn't set synchronously inside the effect.
+      queueMicrotask(() => setListening(false));
+    }
     return () => {
+      stopped = true;
       rec.onend = null;
       rec.onerror = null;
       rec.onresult = null;
-      rec.abort();
+      rec.stop();
     };
   }, [listening]);
 

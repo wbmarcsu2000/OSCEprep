@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../data/curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
 import { useAppStore } from "../store";
@@ -270,6 +270,65 @@ function ResultChip({ named, total }: { named: number; total: number }) {
     <span className="chip chip-ok">🎉 strong coverage</span>
   ) : (
     <span className="chip chip-warn">keep going</span>
+  );
+}
+
+/** A qualitative AI grade of a free-text drill answer (e.g. the work-up plan),
+ *  fetched once when it mounts. Renders nothing when AI is off or returns null;
+ *  shows a "writing…" placeholder while the call is in flight. */
+function AiCoachNote({
+  prompt,
+  studentAnswer,
+  idealAnswer,
+  rubric,
+}: {
+  prompt: string;
+  studentAnswer: string;
+  idealAnswer: string;
+  rubric: string;
+}) {
+  const coachDrill = useAppStore((s) => s.coachDrill);
+  const llmEnabled = useAppStore((s) => s.llmEnabled);
+  const [note, setNote] = useState<string | null>(null);
+  const [pending, setPending] = useState(llmEnabled);
+
+  useEffect(() => {
+    if (!llmEnabled) return;
+    let live = true;
+    void coachDrill({ prompt, studentAnswer, idealAnswer, rubric })
+      .then((n) => {
+        if (live) setNote(n);
+      })
+      .finally(() => {
+        if (live) setPending(false);
+      });
+    return () => {
+      live = false;
+    };
+    // Fetch once for this graded answer; inputs are stable for a given rep.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (!llmEnabled) return null;
+  if (!pending && !note) return null;
+  return (
+    <div
+      className="rounded-xl border p-3"
+      style={{ borderColor: "var(--color-exam-accent-line)", background: "var(--color-exam-accent-soft)" }}
+    >
+      <div className="panel-label mb-1" style={{ color: "var(--color-exam-accent-deep)" }}>
+        Coach's note <span className="chip chip-accent ml-1">AI</span>
+      </div>
+      {pending ? (
+        <p className="text-[12.5px] italic" style={{ color: "var(--color-exam-muted)" }}>
+          🤖 Grading your plan…
+        </p>
+      ) : (
+        <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-accent-deep)" }}>
+          {note}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -611,6 +670,12 @@ function WorkupDrill({
   const result = buildCoverage(groups, matched);
   const steerResult = buildCoverage(steerGroups, steerMatched);
 
+  // Inputs for the qualitative AI grade of the work-up plan.
+  const menuTests = [...category.workupMenu.labs, ...category.workupMenu.imaging];
+  const workupIdeal = stem?.workup?.length ? stem.workup.join("; ") : menuTests.map((t) => t.test).join("; ");
+  const workupRubric = menuTests.map((t) => `${t.test} — ${t.indication}`).join("; ");
+  const workupPrompt = `${stem ? stem.vignette : `A patient presents with ${category.category.toLowerCase()}.`} What initial work-up (labs + imaging) would you order, and why?`;
+
   return (
     <div className="space-y-3">
       <div className="card p-4">
@@ -652,6 +717,12 @@ function WorkupDrill({
             </div>
             <ScoreBar named={result.named} total={result.total} label="Work-up coverage" />
             <CoverageView title="Broad work-up menu" coverage={result.coverage} />
+            <AiCoachNote
+              prompt={workupPrompt}
+              studentAnswer={workup}
+              idealAnswer={workupIdeal}
+              rubric={workupRubric}
+            />
           </div>
 
           {/* Interactive: how the results steer you. */}
@@ -693,6 +764,14 @@ function WorkupDrill({
                       <span className="font-semibold">Expert next step: </span>
                       {stem.nextStep}
                     </div>
+                  )}
+                  {stem.nextStep && (
+                    <AiCoachNote
+                      prompt={`The results came back: ${stem.twist} What is your re-prioritized differential and next step?`}
+                      studentAnswer={steer}
+                      idealAnswer={stem.nextStep}
+                      rubric={`Re-prioritized differential: ${(stem.updatedDdx ?? []).join(", ")}. Expert next step: ${stem.nextStep}`}
+                    />
                   )}
                 </div>
               )}

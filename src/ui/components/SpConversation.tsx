@@ -28,14 +28,14 @@ export function SpConversation() {
     void ask(t);
     inputRef.current?.focus();
   };
-  const send = () => sendText(draft);
-
-  // Dictation: live transcript streams into the box; the completed utterance is
-  // sent automatically so the student can hold the interview hands-free.
-  const dictation = useDictation({
-    onInterim: (t) => setDraft(t),
-    onFinal: (t) => sendText(t),
-  });
+  // Dictation streams the live transcript into the input box; the student
+  // reviews and sends with Ask/Enter (so a mistranscription is editable, not
+  // fired off). The mic stays open until they click it again.
+  const dictation = useDictation({ onTranscript: (t) => setDraft(t) });
+  const send = () => {
+    if (dictation.listening) dictation.stop(); // sending ends dictation
+    sendText(draft);
+  };
   const micDown = () => {
     tts.cancel(); // don't talk over the student
     dictation.toggle();

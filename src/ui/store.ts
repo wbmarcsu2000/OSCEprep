@@ -132,6 +132,10 @@ interface AppState {
   /** Which of `items` the answer covers — semantic (AI) when enabled, else a
    *  lenient deterministic match. Used by the Drills learning tool. */
   gradeCoverage: (answer: string, items: string[]) => Promise<string[]>;
+  /** A short AI coaching note on a free-text drill answer (work-up, etc.) —
+   *  what was good and the single most important thing to add. null when AI is
+   *  off, the answer/ideal are empty, or the call fails. */
+  coachDrill: (input: { prompt: string; studentAnswer: string; idealAnswer: string; rubric: string }) => Promise<string | null>;
   tick: () => void;
   beginEncounter: () => void;
   endEncounterEarly: () => void;
@@ -473,6 +477,15 @@ export const useAppStore = create<AppState>((set, get) => ({
       }
     }
     return deterministic;
+  },
+
+  async coachDrill(input) {
+    if (!llmEnabled || !input.studentAnswer.trim() || !input.idealAnswer.trim()) return null;
+    try {
+      return await provider.coachAnswer({ step: "Work-up", ...input });
+    } catch {
+      return null;
+    }
   },
 
   async resumeSession() {
