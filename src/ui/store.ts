@@ -644,32 +644,39 @@ export const useAppStore = create<AppState>((set, get) => ({
       const result = askQuestion(withStudent, caseModel, trimmed, classified);
       withStudent = result.state;
 
+      // Recent spoken dialogue (before this question) gives the LLM continuity
+      // so replies flow like a conversation — refer back, don't repeat. It's
+      // context only: the engine still decides what's revealed and the guard
+      // still blocks any new clinical fact.
+      const history = engine.conversation
+        .filter((t) => t.kind === "speech")
+        .map((t) => ({ role: t.role === "student" ? ("doctor" as const) : ("patient" as const), text: t.text }));
+
       let replyText: string;
       if (result.revealedContent.length === 0) {
         // Open-ended prompts with no specific match re-anchor on the authored
         // opening statement (verbatim case content); everything else gets a
-        // fixed neutral negative.
+        // natural off-target reply or a fixed neutral negative.
         const openEnded =
           /\b(what brings|tell me|describe|go on|how are you|what'?s going on|more about|start from the beginning)\b/i.test(
             trimmed,
           );
         if (openEnded) {
-          const repeated = withStudent.conversation.some(
-            (t) => t.role === "patient" && t.text.includes(caseModel.opening),
-          );
-          const phrased = await provider.phrasePatientReply(caseModel.opening, caseModel.sp, trimmed);
-          replyText = repeated ? `Like I said — ${phrased}` : phrased;
+          // History-aware: the patient naturally says "like I said…" if they've
+          // already opened, so no hardcoded prefix is needed. The diagnosis is
+          // passed so the guard can block the patient ever naming it.
+          replyText = await provider.phrasePatientReply(caseModel.opening, caseModel.sp, trimmed, history, caseModel.diagnosis);
         } else {
           // With AI on, answer the off-target question in character (a natural
-          // reasonable-negative grounded only in the question/persona — see
-          // answerOffTarget). Falls back to a fixed neutral line otherwise.
-          const ai = llmEnabled ? await provider.answerOffTarget(caseModel.sp, trimmed) : null;
+          // reasonable-negative grounded only in the question/persona/dialogue —
+          // see answerOffTarget). Falls back to a fixed neutral line otherwise.
+          const ai = llmEnabled ? await provider.answerOffTarget(caseModel.sp, trimmed, history, caseModel.diagnosis) : null;
           replyText = ai ?? neutralNegative(trimmed);
         }
       } else {
         // Newline-separated so each fact phrases as its own sentence.
         const approved = result.revealedContent.join("\n");
-        replyText = await provider.phrasePatientReply(approved, caseModel.sp, trimmed);
+        replyText = await provider.phrasePatientReply(approved, caseModel.sp, trimmed, history, caseModel.diagnosis);
       }
       const next: EngineState = {
         ...withStudent,

@@ -8,6 +8,31 @@ const STARTER_QUESTIONS = [
   "Any other symptoms?",
 ];
 
+const prefersReducedMotion = () =>
+  typeof window !== "undefined" &&
+  typeof window.matchMedia === "function" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/** Types text out on mount (a chat-like reveal) for a NEW patient reply; older
+ *  replies and reduced-motion users get the full text immediately. The text is
+ *  already final and guarded — this is purely a display effect. */
+function TypedText({ text, animate }: { text: string; animate: boolean }) {
+  const shouldAnimate = animate && !prefersReducedMotion();
+  const [shown, setShown] = useState(() => (shouldAnimate ? "" : text));
+  useEffect(() => {
+    if (!shouldAnimate) return; // full text already shown via initial state
+    const per = Math.max(2, Math.ceil(text.length / 40)); // finish in ~0.8s regardless of length
+    let i = 0;
+    const id = window.setInterval(() => {
+      i += per;
+      setShown(text.slice(0, i));
+      if (i >= text.length) window.clearInterval(id);
+    }, 20);
+    return () => window.clearInterval(id);
+  }, [text, shouldAnimate]);
+  return <>{shown}</>;
+}
+
 export function SpConversation() {
   const conversation = useAppStore((s) => s.engine?.conversation ?? []);
   const spThinking = useAppStore((s) => s.spThinking);
@@ -22,6 +47,10 @@ export function SpConversation() {
 
   const tts = useTts();
   const [convo, setConvo] = useState(false);
+  // Turns present at mount render instantly; only replies that arrive during
+  // this session get the typing reveal. useState initializer captures the
+  // mount-time length once (reading it during render is safe; a ref isn't).
+  const [initialLen] = useState(conversation.length);
 
   // Refs let the dictation callbacks read the latest state without re-subscribing.
   const convoRef = useRef(false);
@@ -242,7 +271,11 @@ export function SpConversation() {
               key={i}
               className={`bubble fade-up ${turn.role === "student" ? "bubble-student" : "bubble-patient"}`}
             >
-              {turn.text}
+              {turn.role === "patient" ? (
+                <TypedText text={turn.text} animate={turn.kind === "speech" && i >= initialLen} />
+              ) : (
+                turn.text
+              )}
             </div>
           ),
         )}

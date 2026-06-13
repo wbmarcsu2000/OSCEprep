@@ -118,6 +118,55 @@ describe("paraphrase guard (hallucination structurally impossible)", () => {
     expect(guardParaphrase(approved, "", persona, "q")).toBe(grounded);
     expect(guardParaphrase(approved, "blah ".repeat(500), persona, "q")).toBe(grounded);
   });
+
+  it("lets the reply refer back to what the PATIENT already said, but still blocks new facts", () => {
+    // patientHistory = the patient's OWN prior reply (guard-approved already).
+    const patientHistory = "Yeah, I've been pretty nauseous all morning.";
+    const ok = guardParaphrase(
+      approved,
+      "It's a heavy pressure, and like I said, I've been nauseous.",
+      persona,
+      "describe the pain",
+      patientHistory,
+    );
+    expect(ok).toContain("nauseous");
+    // A brand-new clinical fact is still rejected even with history present.
+    const bad = guardParaphrase(
+      approved,
+      "It's a heavy pressure, and I've been having palpitations.",
+      persona,
+      "describe the pain",
+      patientHistory,
+    );
+    expect(bad).toBe(grounded);
+    expect(bad).not.toContain("palpitations");
+  });
+
+  it("blocks the diagnosis and doctor-injected findings, even when the doctor named them", () => {
+    // The doctor floats a diagnosis; the patient must never confirm it.
+    const dx = guardParaphrase(
+      approved,
+      "Honestly, I think it's the tamponade you mentioned.",
+      persona,
+      "could this be a cardiac tamponade?",
+      "",
+      "Cardiac tamponade",
+    );
+    expect(dx).toBe(grounded);
+    expect(dx).not.toContain("tamponade");
+    // The doctor names a symptom in the question; the patient can't assert it as
+    // real unless it was actually revealed (it's not in approved or patient history).
+    const inject = guardParaphrase(
+      approved,
+      "Yes, I've been having palpitations like you said.",
+      persona,
+      "have you had any palpitations?",
+      "",
+      "Cardiac tamponade",
+    );
+    expect(inject).toBe(grounded);
+    expect(inject).not.toContain("palpitations");
+  });
 });
 
 describe("off-target guard (questions with no case data)", () => {
@@ -154,5 +203,26 @@ describe("off-target guard (questions with no case data)", () => {
     expect(guardOffTarget('"Pretty normal, I guess."', "what is your diet")).toBe("Pretty normal, I guess.");
     expect(guardOffTarget("", "q")).toBeNull();
     expect(guardOffTarget("blah ".repeat(200), "q")).toBeNull();
+  });
+
+  it("may echo a previously-discussed symptom, but not a brand-new one", () => {
+    const patientHistory = "No, no chest pain.";
+    // Echoing something already discussed keeps the reply coherent.
+    expect(
+      guardOffTarget("No, and like I said, no chest pain.", "what's your diet?", patientHistory),
+    ).not.toBeNull();
+    // A new volunteered symptom is still blocked.
+    expect(guardOffTarget("No, but I've been having palpitations.", "what's your diet?", patientHistory)).toBeNull();
+  });
+
+  it("never confirms the diagnosis off-target, even if the doctor suggested it", () => {
+    expect(
+      guardOffTarget(
+        "Yeah, maybe it's that pulmonary embolism you mentioned.",
+        "could this be a pulmonary embolism?",
+        "",
+        "Pulmonary embolism",
+      ),
+    ).toBeNull();
   });
 });
