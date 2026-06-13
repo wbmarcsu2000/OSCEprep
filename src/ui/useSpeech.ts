@@ -46,6 +46,30 @@ export const ttsSupported = typeof window !== "undefined" && "speechSynthesis" i
 
 const TTS_STORAGE = "osce.tts";
 
+/** Pick the most natural-sounding English voice the device offers. The default
+ *  voice is often the old robotic one; modern browsers ship far better neural
+ *  voices (Google/Apple/Microsoft) — prefer those by name, newest-gen first. */
+function pickNaturalVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null {
+  const en = voices.filter((v) => /^en(-|_|$)/i.test(v.lang));
+  if (en.length === 0) return null;
+  // Highest-quality named voices across platforms, in rough preference order.
+  const prefer = [
+    /Google US English/i,
+    /Microsoft .*(Online|Natural)/i,
+    /\((Premium|Enhanced)\)/i, // Apple premium/enhanced packs
+    /\b(Ava|Zoe|Samantha|Allison|Serena|Evan|Nathan|Joelle)\b/i,
+    /\b(Aria|Jenny|Guy|Emma|Michelle)\b/i, // Microsoft neural
+    /Google/i,
+  ];
+  for (const re of prefer) {
+    const m = en.find((v) => re.test(v.name));
+    if (m) return m;
+  }
+  // Fall back to an online (non-local, usually better) en-US voice, then default.
+  const us = en.filter((v) => /en[-_]US/i.test(v.lang));
+  return en.find((v) => !v.localService) ?? us.find((v) => v.default) ?? us[0] ?? en[0];
+}
+
 // ---- Speech-to-text (dictation) ---------------------------------------------
 
 /** Single-utterance dictation. `onInterim` streams the live transcript;
@@ -131,7 +155,9 @@ export function useDictation(opts: { onTranscript: (text: string) => void }) {
 
 // ---- Text-to-speech ----------------------------------------------------------
 
-/** Patient-reply read-aloud. `enabled` persists across sessions. */
+/** Patient-reply read-aloud. `enabled` persists across sessions; `speaking`
+ *  reflects whether an utterance is in flight; `speak` takes an optional
+ *  onEnd callback (used by conversation mode to re-open the mic afterward). */
 export function useTts() {
   const [enabled, setEnabledState] = useState<boolean>(() => {
     try {
@@ -140,6 +166,19 @@ export function useTts() {
       return false;
     }
   });
+  const [speaking, setSpeaking] = useState(false);
+  // The chosen natural voice (loaded async — getVoices() is often empty on first
+  // call until the browser fires `voiceschanged`).
+  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
+  useEffect(() => {
+    if (!ttsSupported) return;
+    const load = () => {
+      voiceRef.current = pickNaturalVoice(window.speechSynthesis.getVoices());
+    };
+    load();
+    window.speechSynthesis.addEventListener("voiceschanged", load);
+    return () => window.speechSynthesis.removeEventListener("voiceschanged", load);
+  }, []);
 
   const setEnabled = useCallback((v: boolean) => {
     setEnabledState(v);
@@ -151,22 +190,36 @@ export function useTts() {
     if (!v && ttsSupported) window.speechSynthesis.cancel();
   }, []);
 
-  const speak = useCallback((text: string) => {
-    if (!ttsSupported || !text.trim()) return;
+  const speak = useCallback((text: string, onEnd?: () => void) => {
+    if (!ttsSupported || !text.trim()) {
+      onEnd?.();
+      return;
+    }
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
+    if (voiceRef.current) u.voice = voiceRef.current;
+    u.lang = voiceRef.current?.lang ?? "en-US";
     u.rate = 1;
     u.pitch = 1;
+    u.onend = () => {
+      setSpeaking(false);
+      onEnd?.();
+    };
+    u.onerror = () => {
+      setSpeaking(false);
+      onEnd?.();
+    };
     window.speechSynthesis.cancel(); // never overlap replies
+    setSpeaking(true);
     window.speechSynthesis.speak(u);
   }, []);
 
   const cancel = useCallback(() => {
     if (ttsSupported) window.speechSynthesis.cancel();
+    setSpeaking(false);
   }, []);
 
   // Stop any in-flight speech if the component unmounts (leaving the station).
   useEffect(() => () => cancel(), [cancel]);
 
-  return { supported: ttsSupported, enabled, setEnabled, speak, cancel };
+  return { supported: ttsSupported, enabled, setEnabled, speaking, speak, cancel };
 }

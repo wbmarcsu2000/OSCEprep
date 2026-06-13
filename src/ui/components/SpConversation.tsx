@@ -21,6 +21,22 @@ export function SpConversation() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const tts = useTts();
+  const [convo, setConvo] = useState(false);
+
+  // Refs let the dictation callback + timers read the latest state without
+  // re-subscribing, and let handleTranscript (defined before useDictation)
+  // reach the recognizer's controls.
+  const convoRef = useRef(false);
+  const lockedRef = useRef(locked);
+  const thinkingRef = useRef(spThinking);
+  const ctlRef = useRef<{ start: () => void; stop: () => void }>({ start: () => {}, stop: () => {} });
+  const silenceTimer = useRef<number | undefined>(undefined);
+  useEffect(() => {
+    convoRef.current = convo;
+    lockedRef.current = locked;
+    thinkingRef.current = spThinking;
+  });
+
   const sendText = (text: string) => {
     const t = text.trim();
     if (!t || spThinking || locked) return;
@@ -28,10 +44,28 @@ export function SpConversation() {
     void ask(t);
     inputRef.current?.focus();
   };
-  // Dictation streams the live transcript into the input box; the student
-  // reviews and sends with Ask/Enter (so a mistranscription is editable, not
-  // fired off). The mic stays open until they click it again.
-  const dictation = useDictation({ onTranscript: (t) => setDraft(t) });
+
+  // Dictation streams the live transcript into the box. In manual mode the
+  // student edits and sends with Ask. In conversation mode, a pause (~1.4s of
+  // silence) auto-sends the question, the mic closes, and it re-opens once the
+  // patient's spoken reply finishes — a hands-free back-and-forth.
+  function handleTranscript(t: string) {
+    setDraft(t);
+    if (!convoRef.current) return;
+    if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
+    silenceTimer.current = window.setTimeout(() => {
+      const text = t.trim();
+      if (!text || lockedRef.current || thinkingRef.current) return;
+      ctlRef.current.stop(); // close the mic so it doesn't hear the patient reply
+      setDraft("");
+      void ask(text);
+    }, 1400);
+  }
+  const dictation = useDictation({ onTranscript: handleTranscript });
+  useEffect(() => {
+    ctlRef.current = { start: dictation.start, stop: dictation.stop };
+  });
+
   const send = () => {
     if (dictation.listening) dictation.stop(); // sending ends dictation
     sendText(draft);
@@ -41,6 +75,27 @@ export function SpConversation() {
     dictation.toggle();
   };
 
+  const toggleConvo = () => {
+    const next = !convo;
+    setConvo(next);
+    if (next) {
+      if (tts.supported) tts.setEnabled(true); // replies must be spoken in convo mode
+      dictation.start();
+    } else {
+      if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
+      dictation.stop();
+      tts.cancel();
+    }
+  };
+
+  // End conversation mode cleanly on unmount (leaving the encounter).
+  useEffect(
+    () => () => {
+      if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
+    },
+    [],
+  );
+
   useEffect(() => {
     const el = scrollRef.current;
     if (el && typeof el.scrollTo === "function") {
@@ -48,31 +103,51 @@ export function SpConversation() {
     }
   }, [conversation.length, spThinking]);
 
-  // Read each NEW patient reply aloud when read-aloud is on. spokenRef guards
-  // against re-speaking the backlog when the toggle flips or on re-render.
+  // Read each NEW patient reply aloud (when read-aloud or conversation mode is
+  // on); in conversation mode, re-open the mic once the reply finishes.
   const spokenRef = useRef(conversation.length);
   useEffect(() => {
     if (conversation.length > spokenRef.current) {
       const last = conversation[conversation.length - 1];
-      if (tts.enabled && last && last.role === "patient" && last.kind === "speech") {
-        tts.speak(last.text);
+      const isPatientSpeech = last && last.role === "patient" && last.kind === "speech";
+      if (isPatientSpeech && (tts.enabled || convoRef.current)) {
+        tts.speak(last.text, () => {
+          if (convoRef.current && !lockedRef.current) ctlRef.current.start();
+        });
       }
     }
     spokenRef.current = conversation.length;
   }, [conversation, tts]);
+
+  // Patient locked (encounter ended) — leave conversation mode.
+  useEffect(() => {
+    if (locked && convoRef.current) {
+      setConvo(false);
+      dictation.stop();
+      tts.cancel();
+    }
+  }, [locked, dictation, tts]);
 
   // The patient always opens with a statement, so "conversation empty" never
   // happens in a real encounter — the real cold-start state is "no student
   // turn yet". That's when the starter chips help.
   const interviewStarted = conversation.some((t) => t.role === "student");
 
+  // Live status while in conversation mode.
+  const convoStatus = spThinking
+    ? "💭 Patient is thinking…"
+    : tts.speaking
+      ? "🔊 Patient is speaking…"
+      : dictation.listening
+        ? "🎙️ Listening — ask your question, then pause"
+        : "…";
+
   return (
     <div className="card flex flex-col h-full min-h-0 overflow-hidden">
       <div className="card-header">
         <span className="panel-label">Patient Interview</span>
         <div className="flex items-center gap-2">
-          <span className="hint hidden sm:inline">The patient answers only what you ask</span>
-          {tts.supported && (
+          {!convo && tts.supported && (
             <button
               type="button"
               aria-pressed={tts.enabled}
@@ -87,8 +162,35 @@ export function SpConversation() {
               {tts.enabled ? "🔊" : "🔇"} Read aloud
             </button>
           )}
+          {dictation.supported && (
+            <button
+              type="button"
+              aria-pressed={convo}
+              className="text-[12px] font-bold rounded-full px-2.5 py-1 transition-colors"
+              style={{
+                background: convo ? "var(--grad-primary)" : "transparent",
+                color: convo ? "#fff" : "var(--color-exam-accent-deep)",
+                border: convo ? "none" : "1px solid var(--color-exam-accent-line)",
+              }}
+              disabled={locked}
+              title="Hands-free spoken back-and-forth with the patient"
+              onClick={toggleConvo}
+            >
+              {convo ? "■ End conversation" : "🗣️ Conversation mode"}
+            </button>
+          )}
         </div>
       </div>
+      {convo && (
+        <div
+          className="px-4 py-1.5 text-[12.5px] font-bold flex items-center justify-between gap-2"
+          style={{ background: "var(--color-exam-accent-soft)", color: "var(--color-exam-accent-deep)", borderBottom: "1px solid var(--color-exam-accent-line)" }}
+          aria-live="polite"
+        >
+          <span>{convoStatus}</span>
+          <span className="hint">speak naturally · pause to send</span>
+        </div>
+      )}
       {llmEnabled && aiDegraded && (
         <div
           className="px-4 py-1.5 text-[12px] font-semibold"
@@ -180,7 +282,7 @@ export function SpConversation() {
         className="border-t px-3 py-3 flex gap-2 bg-white items-center"
         style={{ borderColor: "var(--color-exam-border)" }}
       >
-        {dictation.supported && (
+        {dictation.supported && !convo && (
           <button
             type="button"
             className={`btn shrink-0 px-3 ${dictation.listening ? "pulse-urgent" : ""}`}
@@ -204,9 +306,11 @@ export function SpConversation() {
           placeholder={
             locked
               ? "Patient access locked"
-              : dictation.listening
-                ? "Listening — speak your question…"
-                : "Ask the patient anything…"
+              : convo
+                ? "Conversation mode — just speak (or type here)"
+                : dictation.listening
+                  ? "Listening — speak your question…"
+                  : "Ask the patient anything…"
           }
           value={draft}
           disabled={locked}
