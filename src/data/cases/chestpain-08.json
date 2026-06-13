@@ -140,7 +140,7 @@
       "reveal": true,
       "prompt": "What workup do you want? (And what must you check at the bedside?)",
       "rubric": "CXR looking for pneumomediastinum/pleural effusion (CANT-MISS,4). CT chest with water-soluble (Gastrografin) contrast esophagram — confirmatory (CANT-MISS,5). EKG and troponin to exclude ACS (core,2). CBC/BMP/lactate (core,2). Pleural fluid analysis (pH, amylase) if effusion tapped (core,2). PENALTY: ordering a BARIUM swallow (mediastinal barium is harmful in suspected perforation) (-3); giving the patient anything by mouth / oral barium (-2).",
-      "idealAnswer": "Order: CXR (pneumomediastinum, pleural effusion); CT chest with water-soluble Gastrografin esophagram (confirmatory); EKG and troponin to exclude ACS; CBC, BMP, lactate.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; Lipase; Pleural fluid; CT esophagram.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -164,6 +164,10 @@
           },
           {
             "item": "Pleural fluid analysis (pH, amylase)",
+            "points": 2
+          },
+          {
+            "item": "Lipase",
             "points": 2
           }
         ],

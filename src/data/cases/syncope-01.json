@@ -135,7 +135,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "EKG (CANT-MISS — exclude arrhythmia/conduction disease,6). Orthostatic vital signs (3). Fingerstick glucose (2). CBC for anemia (2). Pregnancy test in a woman of childbearing age (2). PENALTY: extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint (-3 for over-testing); FAILING to get an EKG (-2).",
-      "idealAnswer": "Order: EKG.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; CBC; BMP; Pregnancy; Orthostatics.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,32 @@
             "points": 6
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Pregnancy",
+            "points": 2
+          },
+          {
+            "item": "Orthostatics",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

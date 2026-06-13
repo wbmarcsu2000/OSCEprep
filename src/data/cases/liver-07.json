@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Hepatic vein/IVC Doppler ultrasound — first-line imaging for outflow obstruction (CANT-MISS,4). Diagnostic paracentesis with SAAG and ascitic protein (CANT-MISS,3). LFTs, bilirubin, INR/albumin — pattern and synthetic function (2). CBC and thrombophilia workup incl. JAK2 V617F and antiphospholipid antibodies (CANT-MISS,3). Viral hepatitis serologies / acetaminophen level to exclude other hepatocellular injury (2). Echocardiogram if right-heart failure suspected (1). PENALTY: anchoring on simple cirrhosis and not imaging the hepatic veins (-2).",
-      "idealAnswer": "Order: Hepatic vein/IVC Doppler ultrasound; Diagnostic paracentesis with SAAG and ascitic protein; Thrombophilia workup including JAK2 V617F.",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; INR; Ascites fluid; Doppler US; Thrombophilia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,32 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Bilirubin",
+            "points": 2
+          },
+          {
+            "item": "INR",
+            "points": 2
+          },
+          {
+            "item": "Ascites fluid",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

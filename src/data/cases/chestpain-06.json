@@ -82,11 +82,28 @@
       "prompt": "What workup, if any, do you want to order? (Consider pretest probability and avoiding over-testing.)",
       "rubric": "Recognizes this is a clinical diagnosis with very low cardiac pretest probability (8). A single screening EKG is reasonable for reassurance (5). Appropriately AVOIDS an extensive/serial cardiac workup, stress testing, or CT angiogram in a low-risk young patient (8; reward restraint). Documents red flags that would prompt escalation (4). PENALTY: ordering CT angiogram / stress test / serial troponins with no indication (-4 for over-testing).",
       "reveal": true,
-      "idealAnswer": "Largely a clinical diagnosis once dangerous causes are excluded. Focused studies: EKG and troponin to rule out ACS, plus a CBC. No extensive cardiac/pulmonary workup beyond excluding red flags.",
+      "idealAnswer": "Order: EKG; CXR; Troponin; CBC.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": []
       },

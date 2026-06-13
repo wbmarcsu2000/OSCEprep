@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC with platelet count (CANT-MISS,3). Peripheral smear for schistocytes (CANT-MISS,4). ADAMTS13 activity and inhibitor BEFORE plasma exchange (CANT-MISS,3). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, reticulocytes (2). Coags (PT/aPTT/fibrinogen/D-dimer) and Coombs to exclude DIC/AIHA, plus renal function (1). Pregnancy test (1). PENALTY: transfusing platelets for the thrombocytopenia outside of life-threatening hemorrhage (can worsen microvascular thrombosis) (-3).",
-      "idealAnswer": "Order: CBC with platelet count; Peripheral smear for schistocytes; ADAMTS13 activity and inhibitor (draw before plasma exchange).",
+      "idealAnswer": "Order: EKG; CXR; CBC; Peripheral smear; Hemolysis labs; Coagulation studies; Coombs (DAT); Adamts 13.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -158,6 +158,14 @@
           },
           {
             "item": "Coags and Coombs to exclude DIC/AIHA, plus renal function and pregnancy test",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
             "points": 2
           }
         ],

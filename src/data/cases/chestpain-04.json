@@ -99,7 +99,7 @@
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "EKG (CANT-MISS,4). Troponin to assess myocardial involvement (core,3). CXR (core,2). Inflammatory markers ESR/CRP (core,2). CBC (core,2). Echocardiogram to assess for effusion/tamponade (bonus,1). PENALTY: no EKG (-2).",
       "reveal": true,
-      "idealAnswer": "Order: EKG; Troponin to assess myocardial involvement; CXR; Inflammatory markers ESR/CRP; CBC.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; Inflammatory markers; Echocardiogram.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -123,6 +123,14 @@
           },
           {
             "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Echocardiogram",
             "points": 2
           }
         ],

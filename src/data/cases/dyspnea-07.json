@@ -132,7 +132,7 @@
       "reveal": true,
       "prompt": "What initial assessment/workup do you want? (Consider what changes management — and what should NOT delay treatment.)",
       "rubric": "Recognize that anaphylaxis is a CLINICAL diagnosis and treat immediately — do NOT wait for labs (CANT-MISS,5). Continuous pulse oximetry and cardiac monitoring (3). Serum tryptase within 1-2 h to support the diagnosis (3). IV access + bloods (CBC, BMP, lactate, troponin) to assess shock/exclude mimics (2). ECG given hypotension/tachycardia (2). PENALTY: delaying epinephrine to obtain a CXR/CT or to await tryptase results (-3).",
-      "idealAnswer": "Treat clinically and immediately; do not delay for tests. Place on continuous pulse oximetry and cardiac monitoring, establish IV access, and draw serum tryptase within 1-2 h. Send CBC, BMP, lactate, and troponin and obtain an ECG to assess shock and exclude mimics — none of which should delay epinephrine.",
+      "idealAnswer": "Order: EKG; CXR; Tryptase; CBC; BMP; Troponin; Lactate.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -156,6 +156,14 @@
           },
           {
             "item": "ECG given hypotension/tachycardia",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
             "points": 2
           }
         ],

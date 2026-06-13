@@ -136,7 +136,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order? (Don't forget the bedside.)",
       "rubric": "CBC for anemia (CANT-MISS,4). Recognizes GI bleeding and reviews the documented stool finding / melena (CANT-MISS,4). BMP — note BUN:Cr ratio (2). Type and crossmatch (2). Coagulation studies (1). EKG (1). Orthostatic vitals (1). PENALTY: working up syncope without a rectal exam / not checking a hemoglobin (-3).",
-      "idealAnswer": "Order: CBC for anemia; Recognizes GI bleeding and reviews the documented stool finding / melena.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; CBC; BMP; Coagulation studies; Type & crossmatch; Orthostatics; Stool studies.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -149,7 +149,36 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Coagulation studies",
+            "points": 2
+          },
+          {
+            "item": "Type & crossmatch",
+            "points": 2
+          },
+          {
+            "item": "Orthostatics",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

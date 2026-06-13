@@ -3,9 +3,11 @@ import { TEACHIM_BY_SKILL } from "../../data/teachim";
 import {
   EKG_SIX_STEPS,
   CXR_RIP_ABCDE,
+  CXR_WRITEUP,
   LITFL_TOP100_ECG,
   LITFL_TOP100_CXR,
   type ReadStepGuide,
+  type WriteupTemplate,
 } from "../../data/readingGuides";
 import { useAppStore } from "../store";
 
@@ -78,6 +80,7 @@ export function Skills() {
         icon="🩻"
         index={1}
         steps={CXR_RIP_ABCDE}
+        writeup={CXR_WRITEUP}
         practice={{ label: "Practice: LITFL Top 100 CXR", url: LITFL_TOP100_CXR }}
       />
 
@@ -118,12 +121,14 @@ function ReadingCard({
   icon,
   index,
   steps,
+  writeup,
   practice,
 }: {
   title: string;
   icon: string;
   index: number;
   steps: ReadStepGuide[];
+  writeup?: WriteupTemplate;
   practice?: { label: string; url: string };
 }) {
   return (
@@ -153,6 +158,43 @@ function ReadingCard({
           </li>
         ))}
       </ol>
+      {writeup && <WriteupBlock writeup={writeup} />}
+    </div>
+  );
+}
+
+/** "How to write it out": the prose model students should produce — a sentence
+ *  skeleton per part of the read, then a fully worked normal-film example. */
+function WriteupBlock({ writeup }: { writeup: WriteupTemplate }) {
+  return (
+    <div
+      className="rounded-xl border p-3 space-y-2"
+      style={{ borderColor: "var(--color-exam-accent-line)", background: "var(--color-exam-accent-soft)" }}
+    >
+      <div className="panel-label" style={{ color: "var(--color-exam-accent-deep)" }}>
+        How to write it out
+      </div>
+      <p className="text-[12.5px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
+        {writeup.intro}
+      </p>
+      <ul className="space-y-1 text-[13px] leading-relaxed">
+        {writeup.lines.map((l, i) => (
+          <li key={i} className="flex gap-2">
+            <span className="font-semibold shrink-0" style={{ minWidth: "8.5rem", color: "var(--color-exam-accent-deep)" }}>
+              {l.label}
+            </span>
+            <span style={{ color: "var(--color-exam-ink)" }}>{l.say}</span>
+          </li>
+        ))}
+      </ul>
+      <div className="rounded-lg border p-2.5 mt-1" style={{ borderColor: "var(--color-exam-accent-line)", background: "#fff" }}>
+        <div className="panel-label mb-1" style={{ color: "var(--color-exam-ok)" }}>
+          {writeup.example.caption}
+        </div>
+        <p className="text-[13px] leading-relaxed italic" style={{ color: "var(--color-exam-ink)" }}>
+          {writeup.example.text}
+        </p>
+      </div>
     </div>
   );
 }

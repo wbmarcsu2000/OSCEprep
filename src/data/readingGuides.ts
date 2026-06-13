@@ -37,6 +37,40 @@ export const CXR_RIP_ABCDE: ReadStepGuide[] = [
   { step: "E · Everything else", detail: "Lung consolidation/opacity, interstitial markings, effusions, pneumothorax, lines and tubes." },
 ];
 
+/**
+ * The standard way to PRESENT a chest film once you've run RIP-ABCDE: a
+ * flowing statement, not a checklist — quality → systematic survey → one-line
+ * impression that ties the findings back to the clinical question. This is the
+ * prose form a student is expected to say out loud or write in the note.
+ */
+export interface WriteupTemplate {
+  intro: string;
+  /** Sentence skeleton, one line per part of the read. */
+  lines: { label: string; say: string }[];
+  /** A fully worked example so the shape is concrete. */
+  example: { caption: string; text: string };
+}
+
+export const CXR_WRITEUP: WriteupTemplate = {
+  intro:
+    "Don't just list what you checked — narrate it as one smooth statement: quality first, then a head-to-toe survey, then a one-line impression that answers the clinical question.",
+  lines: [
+    { label: "Open", say: "\"This is a PA (or AP) chest radiograph of [patient]. I'd confirm the details and compare with any prior films.\"" },
+    { label: "Quality — RIP", say: "\"It's adequate — not rotated, well inspired (8–10 posterior ribs), and adequately penetrated.\"" },
+    { label: "A — Airway", say: "\"The trachea is midline and the carina is preserved.\"" },
+    { label: "B — Breathing", say: "\"The lungs are clear and equally expanded — no focal consolidation, mass, effusion, or pneumothorax; the hila are normal.\"" },
+    { label: "C — Cardiac", say: "\"The cardiomediastinal contour is normal, cardiothoracic ratio under 0.5, with crisp heart borders.\"" },
+    { label: "D — Diaphragm", say: "\"Both hemidiaphragms are well defined with sharp costophrenic angles and no free air beneath.\"" },
+    { label: "E — Everything else", say: "\"Bones and soft tissues are intact; no lines, tubes, or surgical clips.\"" },
+    { label: "Impression", say: "\"In summary, this is a normal / abnormal film showing [finding]. Given [clinical context], this fits [diagnosis], and I'd [next step].\"" },
+  ],
+  example: {
+    caption: "Worked example — a normal film",
+    text:
+      "\"This is an adequately exposed PA chest radiograph with no rotation, good inspiration, and adequate penetration. The trachea is midline, the lungs are clear and well expanded with no effusion or pneumothorax, the cardiothoracic ratio is normal, and both costophrenic angles are sharp with no free air. The bones and soft tissues are unremarkable. In summary, a normal chest radiograph.\"",
+  },
+};
+
 /** Pick the guide that matches a read step's image type. */
 export function readingGuideFor(imageKey: string | null): {
   title: string;

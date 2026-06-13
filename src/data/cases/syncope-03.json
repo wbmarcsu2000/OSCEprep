@@ -131,7 +131,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "EKG immediately (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring (CANT-MISS,4). Troponin (2). BMP incl. potassium/magnesium and review for AV-nodal-blocking drugs (2). TSH (1). PENALTY: discharging or failing to place the patient on a monitor (-3).",
-      "idealAnswer": "Order: EKG immediately; Continuous telemetry / cardiac monitoring.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Troponin; BMP; TSH; Echo.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,32 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "TSH",
+            "points": 2
+          },
+          {
+            "item": "Echo",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

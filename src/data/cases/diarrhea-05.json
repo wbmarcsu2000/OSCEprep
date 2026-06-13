@@ -129,7 +129,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC (2). Serum lactate (CANT-MISS,3). BMP (2). Stool studies to exclude infection (2). CT abdomen/pelvis with contrast (CANT-MISS,4). EKG (1). Colonoscopy is diagnostic but performed after stabilization (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: serum lactate; CT abdomen/pelvis with contrast; CBC; BMP; stool studies to exclude infection; EKG. Colonoscopy is diagnostic but performed after stabilization.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Lactate; BMP; Stool studies; CT abdomen/pelvis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -158,6 +158,10 @@
           {
             "item": "EKG",
             "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 2
           }
         ],
         "bonusActions": [

@@ -130,7 +130,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool studies incl. cultures and C. difficile toxin to EXCLUDE infection (CANT-MISS,4). CBC (2). Inflammatory markers — CRP/ESR, albumin (2). Fecal calprotectin (2). Flexible sigmoidoscopy/colonoscopy with biopsy (3). Abdominal imaging if severe (megacolon screen) (2). PENALTY: starting steroids/immunosuppression before excluding infection (-2 — addressed in management).",
-      "idealAnswer": "Order: stool studies incl. cultures and C. difficile toxin to EXCLUDE infection; CBC; inflammatory markers (CRP/ESR, albumin); fecal calprotectin; flexible sigmoidoscopy/colonoscopy with biopsy; abdominal imaging if severe (megacolon screen).",
+      "idealAnswer": "Order: EKG; CXR; CBC; Inflammatory markers; Fecal calprotectin; Stool studies; Endoscopy.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -158,6 +158,18 @@
           },
           {
             "item": "Abdominal imaging if severe (megacolon screen)",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Endoscopy",
             "points": 2
           }
         ],

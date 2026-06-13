@@ -141,7 +141,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs incl. AST:ALT ratio and GGT (CANT-MISS,3). Bilirubin (2). INR and albumin — synthetic function (3). CBC (1). Acetaminophen level (CANT-MISS,2). Viral hepatitis serologies (2). RUQ ultrasound (1). Calculate severity — Maddrey/MELD (1). PENALTY: not excluding viral/acetaminophen causes (-2).",
-      "idealAnswer": "Order LFTs (AST:ALT ratio and GGT), fractionated bilirubin, INR and albumin (synthetic function), CBC, an acetaminophen level, viral hepatitis serologies, and a RUQ ultrasound; then calculate severity (Maddrey discriminant function / MELD).",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; INR; CBC; Acetaminophen; Viral serologies; Severity.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -154,7 +154,40 @@
             "points": 2
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Bilirubin",
+            "points": 2
+          },
+          {
+            "item": "INR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Viral serologies",
+            "points": 2
+          },
+          {
+            "item": "Severity",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

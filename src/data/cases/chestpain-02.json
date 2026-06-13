@@ -103,7 +103,7 @@
       "prompt": "What initial diagnostic workup do you want to order? (Consider your pretest probability.)",
       "rubric": "EKG (core,2). CXR (core,2). CT pulmonary angiogram (CANT-MISS, 8; accepts CTPE/CTA chest). Troponin (core,2). Recognizes high pretest probability / Wells or that D-dimer is unnecessary when probability is high (bonus,2). ABG (bonus,2). PENALTY: ordering D-dimer alone and stopping when pretest probability is high (-1).",
       "reveal": true,
-      "idealAnswer": "Order: EKG; CXR; Troponin.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; D-dimer; ABG; CT pulmonary angiogram.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
@@ -118,6 +118,26 @@
           },
           {
             "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "D-dimer",
+            "points": 2
+          },
+          {
+            "item": "ABG",
+            "points": 2
+          },
+          {
+            "item": "CT pulmonary angiogram",
             "points": 2
           }
         ],

@@ -133,7 +133,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC with indices + peripheral smear (CANT-MISS,4). Serum B12 (CANT-MISS,4). Methylmalonic acid and homocysteine (confirmatory) (3). Folate (2). TSH (1). Intrinsic-factor antibodies if pernicious anemia suspected (1). PENALTY: not measuring B12 in a macrocytic anemia with neuro signs (-2).",
-      "idealAnswer": "Order: CBC with indices + peripheral smear; Serum B12.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Peripheral smear; B 12; MMA & homocysteine; Folate; Other targeted labs.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -146,7 +146,28 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "MMA & homocysteine",
+            "points": 2
+          },
+          {
+            "item": "Folate",
+            "points": 2
+          },
+          {
+            "item": "Other targeted labs",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

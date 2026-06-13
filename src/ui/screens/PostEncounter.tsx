@@ -141,6 +141,12 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
           </p>
         )}
 
+        {/* Diagnostic results lead the review — once orders are committed this
+            is the clearest at-a-glance view of what should have been worked up
+            (✓ = a study the student named). Sits above the step card so it's
+            front and center on entry. */}
+        <LabResults caseModel={caseModel} />
+
         <div className="card p-5 space-y-4">
           <div className="flex items-baseline justify-between gap-3">
             <h3 className="text-[16px] font-bold">
@@ -282,8 +288,6 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
             </div>
           )}
         </div>
-
-        <LabResults caseModel={caseModel} />
 
         <p className="hint text-center">
           {answeredCount}/{steps.length} answered ·{" "}

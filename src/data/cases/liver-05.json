@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Confirm/trend LFTs (2). Viral hepatitis serologies B and C (CANT-MISS,3). Metabolic workup — A1c, lipids (2). Iron studies, ceruloplasmin (if young), autoimmune markers, TSH to exclude other causes (3). RUQ ultrasound (2). Non-invasive fibrosis assessment — FIB-4 / elastography (2). PENALTY: diagnosing NAFLD without excluding other causes (-2).",
-      "idealAnswer": "Confirm/trend the LFTs, send viral hepatitis serologies B and C, metabolic labs (A1c, lipids), and iron studies/ceruloplasmin/autoimmune markers/TSH to exclude other causes; obtain a RUQ ultrasound; and stage fibrosis non-invasively (FIB-4 / elastography).",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Viral serologies; Metabolic; Other causes; US; Fibrosis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,7 +147,32 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Metabolic",
+            "points": 2
+          },
+          {
+            "item": "Other causes",
+            "points": 2
+          },
+          {
+            "item": "Fibrosis",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

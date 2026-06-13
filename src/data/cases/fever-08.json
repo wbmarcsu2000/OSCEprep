@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Arthrocentesis with synovial fluid cell count/differential (CANT-MISS,4). Synovial Gram stain, culture, AND crystal analysis (CANT-MISS,4). Blood cultures BEFORE antibiotics (CANT-MISS,3). CBC + ESR/CRP (2). Serum uric acid is NOT useful to exclude infection (2). PENALTY: starting antibiotics before drawing blood cultures and aspirating the joint (delays/obscures diagnosis) (-3).",
-      "idealAnswer": "Order: Arthrocentesis with synovial fluid cell count and differential; Synovial Gram stain, culture, and crystal analysis; Blood cultures drawn BEFORE antibiotics. Supportive: CBC, ESR/CRP. Do not rely on serum uric acid to rule infection in or out.",
+      "idealAnswer": "Order: EKG; CXR; Synovial fluid; Synovial gram stain culture; CBC; Inflammatory markers; Blood cultures; Uric acid.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,28 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory markers",
+            "points": 2
+          },
+          {
+            "item": "Uric acid",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

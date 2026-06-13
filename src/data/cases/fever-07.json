@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC with differential and platelets (2). Comprehensive metabolic panel / renal and hepatic function (CANT-MISS — document multi-organ involvement,3). CK for myositis (2). Lactate and coagulation studies (CANT-MISS,3). Blood, vaginal/wound, and throat cultures plus urine HCG and source identification, including pelvic exam for a retained tampon (CANT-MISS,3). Serologies to exclude mimics (RMSF, hepatitis, monospot) (2). PENALTY: failing to look for and remove the source / not performing a pelvic exam in a menstruating woman (-3).",
-      "idealAnswer": "Order: CBC with differential; comprehensive metabolic panel (renal and hepatic function); CK; lactate and coagulation studies; blood cultures plus vaginal/wound and throat cultures and urine HCG; pelvic exam to find and remove a retained tampon; serologies to exclude mimics.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP renal; LF ts CK; Lactate coags; Cultures workup; Serologies.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -167,6 +167,30 @@
           },
           {
             "item": "Serologies to exclude mimics",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP renal",
+            "points": 2
+          },
+          {
+            "item": "LF ts CK",
+            "points": 2
+          },
+          {
+            "item": "Lactate coags",
+            "points": 2
+          },
+          {
+            "item": "Cultures workup",
             "points": 2
           }
         ],

@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want? (Include the bedside.)",
       "rubric": "CBC (CANT-MISS,3). Recognizes GI bleeding and reviews the documented stool finding / melena (CANT-MISS,3). BMP — BUN:Cr (2). Coags (2). Type and crossmatch (3). LFTs to assess for variceal/liver cause (1). Risk score e.g. Glasgow-Blatchford (1). PENALTY: not resuscitating or omitting type & cross in active bleeding (-2).",
-      "idealAnswer": "Order: CBC; Recognizes GI bleeding and reviews the documented stool finding / melena.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Coagulation studies; LFTs; Type & crossmatch; Stool studies.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,7 +147,32 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Coagulation studies",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Type & crossmatch",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

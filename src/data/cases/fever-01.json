@@ -140,7 +140,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Urinalysis (CANT-MISS,4) and urine culture (3). CBC (2). BMP (1). Lactate (1). Blood cultures if systemically ill (2). Pregnancy test in a woman of childbearing age (1). Imaging (CT/US) if obstruction/stone suspected or not improving (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: Urinalysis and urine culture; CBC and BMP; lactate and blood cultures given systemic illness; a pregnancy test (woman of childbearing age); CT/US imaging only if obstruction/stone is suspected or she is not improving.",
+      "idealAnswer": "Order: EKG; CXR; Urinalysis; Urine culture; CBC; BMP; Lactate; Blood cultures; Pregnancy.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -177,6 +177,14 @@
           {
             "item": "Imaging (CT/US) if obstruction/stone suspected or not improving",
             "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
           }
         ],
         "bonusActions": [],

@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order? (Consider what changes management and what excludes the must-not-miss diagnoses.)",
       "rubric": "Upright chest X-ray (CANT-MISS,5). Continuous pulse oximetry / repeat vitals to monitor for deterioration (3). ABG if hypoxemic or not improving (2). EKG to evaluate for cardiac cause (2). D-dimer or risk-stratify for PE if features warrant (2). PENALTY: ordering a CT angiogram or extensive cardiac workup before a simple confirmatory chest X-ray in a classic young pneumothorax (-2); delaying needle decompression to obtain imaging IF the patient becomes hemodynamically unstable/tension is suspected (-3).",
-      "idealAnswer": "Order: Upright chest X-ray; continuous pulse oximetry/repeat vitals; EKG; ABG if hypoxemic. Risk-stratify for PE (D-dimer if low pretest probability). If tension physiology develops, decompress before imaging.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; D dimer; ABG.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -162,6 +162,22 @@
           },
           {
             "item": "Risk-stratify for PE (D-dimer)",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
             "points": 2
           }
         ],

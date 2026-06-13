@@ -130,7 +130,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "CXR (CANT-MISS,4). CBC (core,3). BMP (core,2). Blood cultures and/or sputum culture (core,3). Lactate (core,2). Considers a severity score (CURB-65 / PSI) (bonus,1). EKG (bonus,2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: CXR; CBC; BMP; Blood cultures and/or sputum culture; Lactate.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lactate; Blood cultures; Troponin.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -154,6 +154,14 @@
           },
           {
             "item": "Lactate",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
             "points": 2
           }
         ],

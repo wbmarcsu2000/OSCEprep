@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Fingerstick glucose (CANT-MISS,3). Toxicology / drug levels — acetaminophen, salicylate, ethanol, urine tox (CANT-MISS,3). Creatine kinase to assess for rhabdomyolysis (CANT-MISS,3). BMP/renal function and acid-base (2). CBC (1). TSH to exclude thyroid storm (1). Consider CT head / LP if meningitis-encephalitis cannot be excluded clinically (bonus,2). PENALTY: anchoring on the diagnosis without excluding hypoglycemia or co-ingestants (-2).",
-      "idealAnswer": "Order: Fingerstick glucose; Toxicology / drug levels (acetaminophen, salicylate, ethanol, urine tox); Creatine kinase.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; CK; CBC; BMP; TSH; Tox.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -168,6 +168,14 @@
           {
             "item": "TSH to exclude thyroid storm",
             "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
           }
         ],
         "bonusActions": [

@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, urine hemoglobin (2). Direct antiglobulin (Coombs) test — expected NEGATIVE (CANT-MISS,3). G6PD enzyme assay (confirmatory, repeat after acute episode) plus renal function/platelets to exclude TTP/HUS (3). PENALTY: relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis (-2).",
-      "idealAnswer": "Order: CBC + reticulocyte count; Peripheral smear — bite/blister cells and Heinz bodies vs schistocytes; Direct antiglobulin (Coombs) test; G6PD enzyme assay (with awareness it can be falsely normal during the acute episode and should be repeated in 2–3 months).",
+      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs; Coombs (DAT); G 6 PD.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,6 +155,18 @@
           {
             "item": "G6PD enzyme assay (repeat after acute episode) plus platelets/renal function to exclude TTP/HUS",
             "points": 3
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Hemolysis labs",
+            "points": 2
           }
         ],
         "bonusActions": [],

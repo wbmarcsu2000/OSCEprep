@@ -44,6 +44,9 @@ const CANONICAL_PHRASES: [RegExp, string][] = [
   [/\bupper gi\b/g, "ugib"],
   // Work-up abbreviations.
   [/\bchest x-?rays?\b/g, "cxr"],
+  [/\bchest (?:films?|radiographs?)\b/g, "cxr"],
+  [/\bcx-?rays?\b/g, "cxr"],
+  [/\bcxrs?\b/g, "cxr"],
   [/\bct\s*pulmonary angiogra(m|phy)\b/g, "cta"],
   [/\bct\s*angiogra(m|phy)\b/g, "cta"],
   [/\bctpa\b/g, "cta"],

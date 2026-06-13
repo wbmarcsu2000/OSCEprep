@@ -129,7 +129,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool C. difficile toxin/PCR (CANT-MISS,5). CBC — WBC as a severity marker (3). BMP — potassium, renal function (3). Lactate (2). Abdominal imaging if severe to assess for megacolon (2). PENALTY: ordering antimotility agents as part of management (-2 — addressed in management).",
-      "idealAnswer": "Order: stool C. difficile toxin/PCR; CBC (WBC as a severity marker); BMP (potassium, renal function); lactate; abdominal imaging if severe to assess for megacolon.",
+      "idealAnswer": "Order: EKG; CXR; Stool C. difficile toxin/PCR; CBC; BMP; Lactate; Other stool studies.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -153,6 +153,18 @@
           },
           {
             "item": "Abdominal imaging if severe to assess for megacolon",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Other stool studies",
             "points": 2
           }
         ],

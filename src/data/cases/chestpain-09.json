@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "EKG, ideally immediately, with serial tracings (CANT-MISS,4). Serial troponin (CANT-MISS,4). Urine toxicology / drug screen (core,2). CXR to screen for dissection/pneumothorax (core,2). BMP (core,1). CBC (core,1). PENALTY: no EKG/troponin ordered (-3); giving a beta blocker as part of the workup before excluding cocaine (-2).",
-      "idealAnswer": "Order: EKG immediately with serial tracings; Serial troponin; Urine toxicology; CXR; BMP; CBC.",
+      "idealAnswer": "Order: EKG; CXR; Troponin; ECG serial; BMP; Urine drug screen; CBC; CK / CK-MB.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -168,6 +168,14 @@
           {
             "item": "CBC",
             "points": 1
+          },
+          {
+            "item": "ECG serial",
+            "points": 2
+          },
+          {
+            "item": "CK / CK-MB",
+            "points": 2
           }
         ],
         "bonusActions": [],

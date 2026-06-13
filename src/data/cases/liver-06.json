@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Serum ceruloplasmin (CANT-MISS,3). 24-hour urinary copper + serum free copper (CANT-MISS,4). Slit-lamp exam for Kayser-Fleischer rings (ophthalmology) (3). LFTs with fractionated bilirubin and ALP:bilirubin ratio (2). CBC/haptoglobin/Coombs for hemolysis (2). MRI brain for neuro involvement (1). PENALTY: anchoring on a primary psychiatric/movement disorder and starting an SSRI or dopaminergic agent without screening for Wilson in a young patient with liver disease (-2).",
-      "idealAnswer": "Order: Serum ceruloplasmin; 24-hour urinary copper (with serum free copper); slit-lamp examination for Kayser-Fleischer rings.",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Ceruloplasmin; Copper; Slit lamp; CBC coombs; MRI brain.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,28 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "CBC coombs",
+            "points": 2
+          },
+          {
+            "item": "MRI brain",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

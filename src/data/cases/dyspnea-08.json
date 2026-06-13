@@ -135,7 +135,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Co-oximetry / methemoglobin level (CANT-MISS,5; the only test that confirms). Arterial blood gas with measured (not calculated) oxygen saturation, looking for a saturation gap (4). EKG and CXR to exclude a cardiopulmonary cause (3). G6PD level before treatment with methylene blue (2). Recognizes pulse ox is unreliable and trends toward ~85% in methemoglobinemia (bonus,3). PENALTY: relying on the calculated O2 sat from the ABG analyzer (which reads normal) to exclude hypoxia (-3).",
-      "idealAnswer": "Order: co-oximetry / methemoglobin level; arterial blood gas with measured oxygen saturation (look for the saturation gap); EKG and CXR to exclude cardiopulmonary causes; G6PD level before methylene blue.",
+      "idealAnswer": "Order: EKG; CXR; ABG cooximetry; ABG basic; Sp O 2 gap; CBC; Troponin BMP; G 6 PD.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,6 +155,22 @@
           },
           {
             "item": "G6PD level before methylene blue",
+            "points": 2
+          },
+          {
+            "item": "ABG cooximetry",
+            "points": 2
+          },
+          {
+            "item": "ABG basic",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Troponin BMP",
             "points": 2
           }
         ],

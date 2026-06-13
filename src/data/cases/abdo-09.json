@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Upright chest X-ray (or upright/lateral decubitus abdominal film) for free air (CANT-MISS,4). CT abdomen/pelvis with contrast (CANT-MISS,5). CBC (2). BMP with lactate (2). Lipase to assess for pancreatitis (1). Type & screen / coags pre-op (bonus,1). PENALTY: ordering an upper GI series with barium in a suspected perforation (barium peritonitis) (-2).",
-      "idealAnswer": "Order: Upright chest X-ray for free air; CT abdomen/pelvis with contrast; CBC; BMP with lactate.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lipase; LFTs; Lactate; CT abdomen/pelvis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,18 @@
           {
             "item": "Lipase",
             "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
           }
         ],
         "bonusActions": [

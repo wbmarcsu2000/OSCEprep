@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Orthostatic vital signs (CANT-MISS,5). EKG to exclude arrhythmia (CANT-MISS,4). BMP for volume/electrolytes (2). CBC to exclude anemia/bleed (2). Careful medication review (2). PENALTY: skipping orthostatics or the medication review (-2).",
-      "idealAnswer": "Order: Orthostatic vital signs; EKG to exclude arrhythmia.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; CBC; Orthostatics.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,7 +147,28 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Orthostatics",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

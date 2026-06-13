@@ -198,12 +198,75 @@ const LAY_DESCRIPTORS = [
 ];
 
 /**
+ * Everyday non-clinical English the patient naturally uses to STITCH approved
+ * facts into a sentence. These carry no clinical claim on their own, so adding
+ * them is safe — but a novel clinical noun (e.g. "appendicitis", "troponin")
+ * is NOT here, so it still trips the guard unless it was in the approved text.
+ * Without this list the guard rejected ordinary speech ("suddenly", "earlier",
+ * "everything") and fell back to the raw chart text, which read like a chart
+ * instead of a person.
+ */
+const COMMON_ENGLISH = [
+  "about", "above", "across", "afraid", "after", "afternoon", "again", "against",
+  "almost", "alone", "along", "already", "alright", "also", "although", "always",
+  "another", "anymore", "anyone", "anyway", "anywhere", "apart", "around", "aside",
+  "asleep", "awake", "away", "awful", "barely", "basically", "became", "because",
+  "become", "been", "before", "began", "begin", "behind", "being", "below",
+  "beside", "besides", "between", "beyond", "both", "bring", "brought", "called",
+  "came", "cannot", "certain", "clear", "clearly", "close", "comes", "coming",
+  "completely", "could", "couldnt", "decided", "definitely", "different", "doing",
+  "done", "down", "during", "each", "earlier", "early", "either", "else", "enough",
+  "entire", "especially", "even", "evening", "eventually", "ever", "every",
+  "everyone", "everything", "exactly", "except", "explain", "extra", "fairly",
+  "family", "feeling", "fine", "first", "follow", "found", "front", "fully",
+  "further", "gave", "getting", "give", "given", "gives", "giving", "goes",
+  "going", "gone", "good", "great", "guess", "half", "handle", "happen", "happened",
+  "happening", "happens", "hard", "hardly", "having", "hear", "heard", "hello",
+  "help", "here", "herself", "himself", "home", "honest", "honestly", "hope",
+  "however", "hundred", "important", "indeed", "inside", "instead", "into", "isnt",
+  "itself", "just", "keep", "kept", "kind", "kinda", "knew", "know", "known",
+  "knows", "land", "large", "last", "late", "later", "least", "leave", "left",
+  "less", "lets", "letting", "like", "likely", "listen", "little", "live", "lives",
+  "living", "long", "longer", "look", "looked", "looking", "looks", "lots",
+  "made", "make", "makes", "making", "many", "married", "matter", "maybe", "mean",
+  "means", "meant", "might", "mind", "mine", "moment", "more", "morning", "most",
+  "mostly", "move", "moved", "much", "must", "myself", "near", "nearly", "need",
+  "needed", "needs", "neither", "never", "next", "nice", "night", "none", "normal",
+  "normally", "nothing", "notice", "noticed", "obviously", "often", "okay", "once",
+  "only", "onto", "open", "other", "others", "ours", "ourselves", "outside",
+  "over", "overall", "own", "part", "perhaps", "person", "personally", "place",
+  "plenty", "point", "possibly", "pretty", "probably", "promise", "properly",
+  "quick", "quickly", "quiet", "quite", "rather", "real", "really", "reason",
+  "recent", "recently", "remember", "remind", "rest", "right", "same", "saw",
+  "say", "saying", "says", "seem", "seemed", "seems", "seen", "sense", "several",
+  "shall", "should", "shouldnt", "show", "showed", "side", "simply", "since",
+  "slightly", "slow", "slowly", "small", "some", "somehow", "someone", "something",
+  "sometimes", "somewhat", "somewhere", "soon", "sort", "spend", "spent", "stay",
+  "stayed", "still", "stop", "stopped", "straight", "such", "suddenly", "suppose",
+  "sure", "surely", "take", "taken", "takes", "taking", "talk", "talked", "tell",
+  "telling", "tells", "than", "thank", "thanks", "their", "them", "themselves",
+  "then", "there", "these", "they", "thing", "things", "think", "thinking",
+  "thinks", "third", "this", "those", "though", "thought", "three", "through",
+  "throughout", "thus", "time", "times", "today", "together", "told", "tonight",
+  "took", "toward", "towards", "tried", "tries", "trouble", "truly", "trying",
+  "turn", "turned", "twice", "under", "understand", "unless", "until", "upon",
+  "upset", "used", "uses", "using", "usually", "very", "want", "wanted", "wants",
+  "wasnt", "watch", "ways", "wear", "week", "weeks", "well", "went", "were",
+  "werent", "what", "whatever", "when", "whenever", "where", "whether", "which",
+  "while", "whole", "whose", "will", "wish", "with", "within", "without", "wonder",
+  "wont", "work", "worked", "working", "works", "world", "worry", "worried",
+  "worse", "worst", "would", "wouldnt", "wrong", "yeah", "year", "years", "yesterday",
+  "yourself",
+];
+
+/**
  * Reject hallucinated detail. A paraphrase is replaced by the deterministic
  * (natural) rendering of the approved source when it: is empty/runaway,
  * contains a NUMBER not in the approved source, or contains a substantive
  * token (≥5 chars) that is not in the approved content / persona / question /
- * lay-descriptor allowlist (synonym-expanded). Numbers and novel clinical
- * nouns are blocked; lay rephrasing of approved facts passes.
+ * lay-descriptor / common-English allowlist (synonym-expanded). Numbers and
+ * novel clinical nouns are blocked; everyday rephrasing of approved facts
+ * passes — so the reply reads like a person, not a chart.
  */
 export function guardParaphrase(
   approved: string,
@@ -223,6 +286,7 @@ export function guardParaphrase(
     ...tokens(persona.demeanor).map(stem),
     ...tokens(studentQuestion).map(stem),
     ...LAY_DESCRIPTORS.map(stem),
+    ...COMMON_ENGLISH.map(stem),
   ]);
   for (const t of tokens(paraphrase).map(stem)) {
     if (t.length >= 5 && !allowed.has(t)) return fallback();

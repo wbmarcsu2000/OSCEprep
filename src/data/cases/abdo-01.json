@@ -136,7 +136,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "CBC (CANT-MISS,4). CT abdomen/pelvis (or ultrasound) (CANT-MISS,5). BMP (2). Urinalysis to exclude urinary cause (2). Lipase (1). Genital/testicular exam in a young male (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: CBC; CT abdomen/pelvis (or ultrasound).",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Urinalysis; Lipase; CT abdomen/pelvis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -149,7 +149,28 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Urinalysis",
+            "points": 2
+          },
+          {
+            "item": "Lipase",
+            "points": 2
+          }
+        ],
         "bonusActions": [
           {
             "item": "Genital/testicular exam in a young male",

@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Thyroid function tests — TSH, free T4, free T3 (CANT-MISS,4). BMP/electrolytes + glucose + calcium (3). CBC and search for precipitant — blood cultures, UA, viral panel (CANT-MISS,3). LFTs as baseline before antithyroid drugs (2). EKG for the tachyarrhythmia (2). TSI/TRAb to confirm Graves (1). PENALTY: giving iodine BEFORE a thionamide (can worsen thyrotoxicosis if given first) (-2).",
-      "idealAnswer": "Order: Thyroid function tests (TSH, free T4, free T3); BMP/electrolytes; CBC with cultures and infectious workup.",
+      "idealAnswer": "Order: EKG; CXR; Thyroid function tests; BMP; CBC; LFTs; Cultures; Thyroid-stimulating immunoglobulin.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -168,6 +168,10 @@
           {
             "item": "TSI/TRAb to confirm Graves",
             "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 2
           }
         ],
         "bonusActions": [],

@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Glucose (CANT-MISS,3). BMP/electrolytes incl. potassium (CANT-MISS,3). Serum osmolality (3). Serum/urine ketones + VBG to distinguish from DKA (3). Search for precipitant — UA, CXR, cultures (2). EKG (1). PENALTY: not checking potassium before planning insulin (-2).",
-      "idealAnswer": "Order: Glucose; potassium.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Serum osmolality; Serum/urine ketones; VBG; BMP; Cultures.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,36 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Serum osmolality",
+            "points": 2
+          },
+          {
+            "item": "Serum/urine ketones",
+            "points": 2
+          },
+          {
+            "item": "VBG",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Cultures",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -135,7 +135,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order? (Cellulitis is largely a clinical diagnosis.)",
       "rubric": "Recognizes cellulitis is mainly CLINICAL; mark the borders to track progression (4). CBC (2). Assess for necrotizing features and abscess at the bedside (4). Ultrasound if abscess/DVT suspected (3). Blood cultures only if systemically ill (2). PENALTY: routine broad imaging/cultures in uncomplicated cellulitis (-2).",
-      "idealAnswer": "Cellulitis is a clinical diagnosis. Order a CBC and BMP, a lactate and blood cultures if systemically ill/febrile, and imaging (ultrasound) only if an abscess or deeper infection is suspected. Mark the borders to track progression.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lactate; Blood cultures; Imaging.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
@@ -158,6 +158,26 @@
           },
           {
             "item": "Blood cultures only if systemically ill",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Lactate",
+            "points": 2
+          },
+          {
+            "item": "Imaging",
             "points": 2
           }
         ],

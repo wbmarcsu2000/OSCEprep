@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Bedside/urgent echocardiogram to assess for effusion and tamponade physiology (CANT-MISS, 5). EKG (core, 3). CXR (core, 2). Troponin and serial cardiac biomarkers (core, 2). BMP/renal function and CBC (core, 2). D-dimer or CTPA if PE still considered (bonus, 1). PENALTY: giving a diuretic or nitrate for presumed heart failure before excluding tamponade (worsens preload-dependent shock) (-3).",
-      "idealAnswer": "Order: urgent bedside echocardiogram to assess for pericardial effusion and tamponade physiology; EKG; CXR; troponin; BMP and CBC. Consider CTPA only if PE remains a concern after echo.",
+      "idealAnswer": "Order: EKG; CXR; Troponin; BNP; BMP; D-dimer; Echocardiogram; CBC.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -158,6 +158,14 @@
           },
           {
             "item": "BMP and CBC",
+            "points": 2
+          },
+          {
+            "item": "BNP",
+            "points": 2
+          },
+          {
+            "item": "D-dimer",
             "points": 2
           }
         ],

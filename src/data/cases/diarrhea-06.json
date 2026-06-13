@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool Giardia antigen (EIA) and/or stool ova & parasites (CANT-MISS,5). Stool studies — culture and multiplex GI pathogen panel to exclude bacterial causes (3). Fecal leukocytes / occult blood and C. difficile toxin to characterize as non-inflammatory (2). CBC (1). BMP for hydration/electrolytes (2). Consider celiac serologies (tTG-IgA) if symptoms persist (1). Consider O&P x3 or repeat antigen given intermittent shedding (1). PENALTY: empiric broad-spectrum antibiotics or steroids before stool testing (-2).",
-      "idealAnswer": "Order: Stool Giardia antigen (EIA) and/or stool ova & parasites; Stool culture and multiplex GI pathogen panel; Fecal leukocytes/occult blood and C. difficile toxin.",
+      "idealAnswer": "Order: EKG; CXR; Stool ova & parasites; Stool Giardia antigen; Stool culture & pathogen panel; Fecal leukocytes & C. difficile; CBC; BMP.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,14 @@
           {
             "item": "CBC",
             "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
           }
         ],
         "bonusActions": [

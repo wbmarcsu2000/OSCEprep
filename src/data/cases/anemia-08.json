@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC + reticulocyte count, compared to baseline (CANT-MISS,3). Peripheral smear — sickle cells vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (3). Type & screen / crossmatch and chemistries with renal/LFTs (3). Pulse oximetry plus CXR to screen for acute chest syndrome; blood cultures if febrile (2). PENALTY: ordering an empiric exchange transfusion or simple transfusion to baseline Hgb without an indication (acute chest, stroke, symptomatic anemia) — over-transfusion raises hyperviscosity risk (-2).",
-      "idealAnswer": "Order: CBC + reticulocyte count compared to baseline; Peripheral smear — sickle cells vs schistocytes; Hemolysis labs (LDH, haptoglobin, indirect bilirubin).",
+      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs; Hemoglobin electrophoresis; BMP.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,24 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Hemoglobin electrophoresis",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

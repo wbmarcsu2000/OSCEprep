@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool studies incl. cultures, O&P, C. difficile toxin, occult blood to EXCLUDE infection/bleeding (CANT-MISS,4). CBC and basic metabolic panel/electrolytes (chronic diarrhea risks hypokalemia) (3). Celiac serology — tTG-IgA with total IgA (2). CRP/ESR, albumin, TSH (2). Colonoscopy WITH RANDOM BIOPSIES of normal-appearing mucosa — essential because the mucosa looks normal grossly (CANT-MISS,4). PENALTY: empiric antibiotics without excluding infection, or stopping at a normal-appearing colonoscopy without biopsies (-2).",
-      "idealAnswer": "Order: Stool studies (cultures, O&P, C. difficile toxin, occult blood) to exclude infection and bleeding; CBC and metabolic panel/electrolytes; celiac serology (tTG-IgA + total IgA); colonoscopy WITH random biopsies of the right and left colon even if the mucosa looks normal.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Stool studies; Inflammatory and celiac; Fecal calprotectin; Colonoscopy; Histology.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -158,6 +158,26 @@
           },
           {
             "item": "CRP/ESR, albumin, TSH",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory and celiac",
+            "points": 2
+          },
+          {
+            "item": "Fecal calprotectin",
+            "points": 2
+          },
+          {
+            "item": "Histology",
             "points": 2
           }
         ],

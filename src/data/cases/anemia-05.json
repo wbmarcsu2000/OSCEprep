@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — spherocytes vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (3). Direct antiglobulin (Coombs) test (CANT-MISS,3). Renal function/platelets to exclude TTP/HUS (2). PENALTY: starting steroids before excluding TTP (which needs plasma exchange, not steroids) (-2).",
-      "idealAnswer": "Order: CBC + reticulocyte count; Peripheral smear — spherocytes vs schistocytes; Direct antiglobulin (Coombs) test.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs; Coombs (DAT); BMP.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,24 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Hemolysis labs",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

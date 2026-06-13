@@ -136,7 +136,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool studies — culture and/or pathogen panel (CANT-MISS,5). CBC (2). BMP for hydration/electrolytes (3). C. difficile toxin if risk factors (2). Blood cultures if febrile/toxic (2). Consider ova & parasites only if indicated (1). PENALTY: empiric antibiotics before considering Shiga-toxin E. coli (-2 — addressed in management).",
-      "idealAnswer": "Order: stool studies — culture and/or pathogen panel; CBC; BMP for hydration/electrolytes; C. difficile toxin if risk factors; blood cultures given fever; ova & parasites only if indicated.",
+      "idealAnswer": "Order: EKG; CXR; Stool studies; CBC; BMP; C. difficile toxin/PCR; Blood cultures.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -160,6 +160,18 @@
           },
           {
             "item": "Blood cultures if febrile/toxic",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "C. difficile toxin/PCR",
             "points": 2
           }
         ],

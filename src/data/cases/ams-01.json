@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Fingerstick GLUCOSE first (CANT-MISS,3). BMP/electrolytes (2). Ammonia (2). LFTs/coags (2). CBC (2). Infection workup — UA, cultures, CXR, diagnostic paracentesis for SBP (3). CT head if focal deficit/trauma/anticoagulated (1). PENALTY: anchoring without excluding hypoglycemia or infection (-2).",
-      "idealAnswer": "Order: Fingerstick GLUCOSE first.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Ammonia; LFTs; CBC; BMP; Infection workup.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,7 +147,36 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Ammonia",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Infection workup",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

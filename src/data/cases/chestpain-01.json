@@ -97,7 +97,7 @@
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "EKG, ideally immediately (CANT-MISS,4). Serial troponin (CANT-MISS,4). CXR (core,2). CBC (core,2). BMP (core,2). Lipid panel (bonus,1). PENALTY: no EKG/troponin ordered (-3); shotgun panel with no reasoning (-1).",
       "reveal": true,
-      "idealAnswer": "Order: EKG, ideally immediately; Serial troponin; CXR; CBC; BMP.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; Lipid panel.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -121,6 +121,10 @@
           },
           {
             "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Lipid panel",
             "points": 2
           }
         ],

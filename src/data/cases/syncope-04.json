@@ -129,7 +129,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "EKG (CANT-MISS,4). Echocardiogram — the key diagnostic test (CANT-MISS,6). Telemetry (2). Troponin (1). BNP (1). CXR (1). PENALTY: discharging an exertional syncope with a concerning murmur without an echo (-3).",
-      "idealAnswer": "Order: EKG; Echocardiogram — the key diagnostic test.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Troponin; BMP; BNP; Echo.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -142,7 +142,28 @@
             "points": 6
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "BNP",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "24-hour urinary 5-HIAA — serotonin metabolite (CANT-MISS,4). Plasma chromogranin A (2). Stool studies + TSH to EXCLUDE infection and thyroid disease (CANT-MISS,3). Cross-sectional imaging — CT/MRI abdomen for primary and liver metastases (3). Somatostatin-receptor imaging (68Ga-DOTATATE PET) to localize/stage (2). Echocardiogram to assess for carcinoid heart disease (1). PENALTY: provoking the tumor — e.g., unprotected stimulation/biopsy or skipping octreotide cover before procedures, risking carcinoid crisis (-2).",
-      "idealAnswer": "Order: 24-hour urinary 5-HIAA; CT/MRI abdomen for primary tumor and liver metastases; stool studies and TSH to exclude infection and thyroid disease. Then plasma chromogranin A, 68Ga-DOTATATE PET, and an echocardiogram.",
+      "idealAnswer": "Order: EKG; CXR; Urine 5 HIAA; Chromogranin A; Imaging; SST rimaging; Echo; Workup.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -163,6 +163,26 @@
           {
             "item": "Echocardiogram for carcinoid heart disease",
             "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Urine 5 HIAA",
+            "points": 2
+          },
+          {
+            "item": "SST rimaging",
+            "points": 2
+          },
+          {
+            "item": "Workup",
+            "points": 2
           }
         ],
         "bonusActions": [],

@@ -136,7 +136,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "RUQ ultrasound (CANT-MISS,5). CBC (3). LFTs (3). Lipase (2). BMP (1). EKG to exclude cardiac cause (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: RUQ ultrasound.",
+      "idealAnswer": "Order: EKG; CXR; CBC; LFTs; Lipase; BMP; RUQ US.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,7 +145,32 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Lipase",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          }
+        ],
         "bonusActions": [
           {
             "item": "EKG to exclude cardiac cause",

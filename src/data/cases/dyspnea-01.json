@@ -133,7 +133,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "EKG (CANT-MISS,3). Troponin (CANT-MISS,2). CXR (core,3). BNP (core,3). BMP (core,2). CBC (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; Troponin; CXR; BNP; BMP; CBC.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; BNP; Troponin; Lactate.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -161,6 +161,10 @@
           },
           {
             "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Lactate",
             "points": 2
           }
         ],

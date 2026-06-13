@@ -131,7 +131,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Upright abdominal/chest X-ray (CANT-MISS,4). CT abdomen/pelvis to confirm and find transition point (CANT-MISS,4). BMP (3). CBC (2). Lactate to assess for ischemia (2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: Upright abdominal/chest X-ray; CT abdomen/pelvis to confirm and find transition point.",
+      "idealAnswer": "Order: EKG; CXR; BMP; CBC; Lactate; CT abdomen/pelvis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,28 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Lactate",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

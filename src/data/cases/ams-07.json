@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Fingerstick glucose (CANT-MISS,3). Non-contrast CT head to exclude bleed/structural cause (CANT-MISS,4). BMP incl. magnesium, potassium, phosphate (CANT-MISS,3). Whole-blood thiamine level drawn before treating — but do NOT delay thiamine for the result (2). Ammonia/LFTs to assess hepatic encephalopathy (1). Tox screen/ethanol/TSH (1). Infection screen if febrile/LP if meningitis suspected (1). PENALTY: giving IV glucose/dextrose before thiamine and precipitating/worsening Wernicke (-3). PENALTY: delaying empiric thiamine while awaiting the thiamine level (-2).",
-      "idealAnswer": "Order: Fingerstick glucose; non-contrast CT head; magnesium, potassium, phosphate; whole-blood thiamine level (drawn before treatment but do not wait for it).",
+      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; Thiamine level; Ammonia & LFTs; CT head; Tox screen & TSH.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,26 @@
         "coreActions": [
           {
             "item": "Whole-blood thiamine level drawn before treating (do not delay thiamine for the result)",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Ammonia & LFTs",
+            "points": 2
+          },
+          {
+            "item": "Tox screen & TSH",
             "points": 2
           }
         ],

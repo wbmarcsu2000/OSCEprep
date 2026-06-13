@@ -131,7 +131,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order? (Order matters here.)",
       "rubric": "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient (CANT-MISS,5). Echocardiogram — TTE then TEE (CANT-MISS,4). CBC, ESR/CRP (2). Urinalysis (1). EKG to look for conduction block/abscess (2). Apply the modified Duke criteria (1). PENALTY: starting antibiotics before drawing cultures in a stable patient (-3).",
-      "idealAnswer": "Order: At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient; Echocardiogram — TTE then TEE.",
+      "idealAnswer": "Order: EKG; CXR; Blood cultures; CBC; Inflammatory markers; Urinalysis; Echo; Duke.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,32 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory markers",
+            "points": 2
+          },
+          {
+            "item": "Urinalysis",
+            "points": 2
+          },
+          {
+            "item": "Duke",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

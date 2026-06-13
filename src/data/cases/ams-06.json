@@ -137,7 +137,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Fingerstick glucose (CANT-MISS,3). BMP incl. magnesium, potassium, phosphate (CANT-MISS,3). CBC (2). LFTs (1). Infection screen — cultures/UA/CXR (2). CT head given the recent fall + confusion (CANT-MISS,3). Formal withdrawal scoring (CIWA-Ar) (1). PENALTY: anchoring on withdrawal without excluding infection or intracranial bleed (-2).",
-      "idealAnswer": "Order: Fingerstick glucose; magnesium, potassium, phosphate; CT head given the recent fall + confusion.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; CBC; LFTs; Infection workup; CT head.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -154,7 +154,32 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Infection workup",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -136,7 +136,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Glucose (CANT-MISS,2). BMP/serum sodium (CANT-MISS,3). Serum osmolality (3). Urine osmolality + urine sodium to classify (3). Volume-status assessment (2). TSH and cortisol (1). Review medications (thiazide) (1). PENALTY: ordering nothing to classify the hyponatremia before treating (-2).",
-      "idealAnswer": "Order: Glucose; BMP/serum sodium.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; Serum osmolality; Urine studies; Endocrine workup.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -149,7 +149,28 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Serum osmolality",
+            "points": 2
+          },
+          {
+            "item": "Urine studies",
+            "points": 2
+          },
+          {
+            "item": "Endocrine workup",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

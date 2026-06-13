@@ -92,7 +92,7 @@
       "prompt": "What initial workup do you want to order?",
       "rubric": "EKG to exclude cardiac cause (CANT-MISS,5). Troponin (core,3). CBC to screen for anemia/GI bleed (core,2). Considers an empiric PPI trial as both diagnostic and therapeutic (core,2). CXR (bonus,1). Notes upper endoscopy if alarm features or refractory (bonus,1). PENALTY: extensive cardiac workup with zero risk factors and a classic reflux story is over-testing, but FAILING to get a basic EKG/troponin is the bigger error (-2 for skipping EKG).",
       "reveal": true,
-      "idealAnswer": "Order: EKG to exclude cardiac cause; Troponin; CBC to screen for anemia/GI bleed; Considers an empiric PPI trial as both diagnostic and therapeutic.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -112,6 +112,14 @@
           },
           {
             "item": "Considers an empiric PPI trial as both diagnostic and therapeutic",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
             "points": 2
           }
         ],

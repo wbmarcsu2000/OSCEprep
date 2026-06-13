@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What is the single most important level to check, and what else do you order?",
       "rubric": "Serum ACETAMINOPHEN level with timing of ingestion (CANT-MISS,5). LFTs (2). INR/coags (2). BMP — renal function, glucose (2). ABG/lactate for severity (1). Salicylate level and co-ingestant screen (2). Recognizes the Rumack-Matthew nomogram applies to a single timed ingestion (1). PENALTY: not checking an acetaminophen level (-3).",
-      "idealAnswer": "The single most important level is a timed serum acetaminophen level (note the time of ingestion). Also order LFTs, INR/coagulation studies, a BMP (renal function and glucose), an ABG/lactate for severity, and a salicylate level / co-ingestant screen.",
+      "idealAnswer": "Order: EKG; CXR; Acetaminophen; LFTs; INR; BMP; ABG lactate; Coingestants.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -143,7 +143,36 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "INR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "ABG lactate",
+            "points": 2
+          },
+          {
+            "item": "Coingestants",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

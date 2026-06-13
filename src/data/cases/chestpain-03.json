@@ -95,7 +95,7 @@
       "prompt": "What workup do you want? (And what must you check at the bedside?)",
       "rubric": "Bilateral arm BP / pulse exam (CANT-MISS,3). EKG to exclude STEMI (core,2). CXR (core,2). CT angiogram of chest/aorta (CANT-MISS, 8; accepts CTA or TEE). Troponin (core,1). Type and crossmatch blood (bonus,1). PENALTY: anticoagulating before excluding dissection (-2).",
       "reveal": true,
-      "idealAnswer": "Order: Bilateral arm BP / pulse exam; EKG to exclude STEMI; CXR; Troponin.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; D-dimer; CT angiography.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -116,6 +116,22 @@
           {
             "item": "Troponin",
             "points": 1
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "D-dimer",
+            "points": 2
+          },
+          {
+            "item": "CT angiography",
+            "points": 2
           }
         ],
         "bonusActions": [

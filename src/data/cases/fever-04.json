@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CXR (CANT-MISS,4). CBC (2). BMP — urea for severity (2). Lactate (2). Blood and sputum cultures before antibiotics (2). A severity score — CURB-65 / PSI (CANT-MISS,2). Consider respiratory viral testing (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: CXR; A severity score — CURB-65 / PSI.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lactate; Cultures; ABG; Severity.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -152,7 +152,32 @@
             "points": 2
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Lactate",
+            "points": 2
+          },
+          {
+            "item": "Cultures",
+            "points": 2
+          },
+          {
+            "item": "ABG",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -131,7 +131,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "12-lead EKG (CANT-MISS,4). Transthoracic echocardiogram — the key diagnostic test (CANT-MISS,6). Ambulatory/Holter monitor and telemetry for arrhythmia (2). Troponin (1). BMP/electrolytes (1). CXR (1). PENALTY: clearing the athlete to return to play / discharging exertional syncope with a dynamic murmur before an echo (-3).",
-      "idealAnswer": "Order: 12-lead EKG; Transthoracic echocardiogram — the key diagnostic test.",
+      "idealAnswer": "Order: EKG; CXR; Troponin; BMP; Glucose; Echo; Holter.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,28 @@
             "points": 6
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "Holter",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

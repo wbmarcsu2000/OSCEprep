@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "12-lead EKG immediately, with high (2nd/3rd intercostal space) right precordial leads if suspicion is high (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring (CANT-MISS,4). Echocardiogram to exclude structural disease (2). BMP incl. potassium/magnesium and glucose (2). Troponin to exclude ischemia (1). PENALTY: discharging or failing to place the patient on a monitor (-3).",
-      "idealAnswer": "Order: 12-lead EKG immediately (with high right precordial leads if needed); Continuous telemetry / cardiac monitoring; Echocardiogram to exclude structural disease.",
+      "idealAnswer": "Order: EKG; CXR; Troponin; BMP; TSH; Echo; Fever workup; Genetics.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,22 @@
           {
             "item": "Troponin to exclude ischemia",
             "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "TSH",
+            "points": 2
+          },
+          {
+            "item": "Fever workup",
+            "points": 2
+          },
+          {
+            "item": "Genetics",
+            "points": 2
           }
         ],
         "bonusActions": [],

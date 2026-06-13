@@ -131,7 +131,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC with indices (CANT-MISS,4). Iron studies — ferritin/iron/TIBC (CANT-MISS,5). Reticulocyte count (2). Peripheral smear (2). Identify source — menstrual history; in higher-risk/older patients, GI evaluation (2). PENALTY: transfusing a stable, chronically anemic patient unnecessarily (-2).",
-      "idealAnswer": "Order: CBC with indices; Iron studies — ferritin/iron/TIBC.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Peripheral smear; Iron studies; Reticulocyte count; BMP.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,28 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Peripheral smear",
+            "points": 2
+          },
+          {
+            "item": "Reticulocyte count",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

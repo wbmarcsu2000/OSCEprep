@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Fingerstick glucose (CANT-MISS,3). Urinalysis + urine culture (CANT-MISS,4). CBC (2). BMP (2). Lactate (2). Blood cultures (1). CXR (1). CT head if focal deficit (bonus,1). PENALTY: starting antibiotics with no source workup or anchoring without checking glucose (-2).",
-      "idealAnswer": "Order: Fingerstick glucose; Urinalysis + urine culture.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Urinalysis; CBC; BMP; Lactate; Cultures.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,32 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Lactate",
+            "points": 2
+          },
+          {
+            "item": "Cultures",
+            "points": 2
+          }
+        ],
         "bonusActions": [
           {
             "item": "CT head if focal deficit",

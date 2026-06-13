@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs — recognize the cholestatic (Alk Phos/GGT) pattern (CANT-MISS,3). Fractionated bilirubin (2). Lipase to exclude gallstone pancreatitis (2). CBC (1). Acetaminophen level (1). RUQ ultrasound — duct dilation/stones (CANT-MISS,4). MRCP/ERCP for confirmation (2). PENALTY: not imaging the biliary tree in obstructive jaundice (-2).",
-      "idealAnswer": "Order LFTs (recognize the cholestatic Alk Phos/GGT pattern), fractionated bilirubin, lipase (exclude gallstone pancreatitis), CBC, an acetaminophen level, a RUQ ultrasound for duct dilation/stones, and MRCP/ERCP for confirmation.",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; Lipase; CBC; Acetaminophen; Imaging.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,7 +151,36 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Bilirubin",
+            "points": 2
+          },
+          {
+            "item": "Lipase",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Acetaminophen",
+            "points": 2
+          },
+          {
+            "item": "Imaging",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

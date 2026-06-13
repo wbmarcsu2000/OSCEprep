@@ -129,7 +129,7 @@
       "reveal": true,
       "prompt": "What initial assessment/workup do you want? (Consider what changes management.)",
       "rubric": "Peak expiratory flow / spirometry (CANT-MISS,5). Continuous pulse oximetry (3). ABG if severe or not improving (3). CXR if atypical features or to exclude complication (2). CBC (2). PENALTY: extensive cardiac/CT workup with no indication in a classic young asthmatic (-2).",
-      "idealAnswer": "Order: Peak expiratory flow / spirometry.",
+      "idealAnswer": "Order: EKG; CXR; CBC; ABG; BMP; PEF.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -138,7 +138,32 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "ABG",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "PEF",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

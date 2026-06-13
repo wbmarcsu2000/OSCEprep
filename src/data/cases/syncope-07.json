@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "12-lead EKG immediately with measured/corrected QT (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring to capture arrhythmia (CANT-MISS,4). BMP with magnesium and calcium (electrolytes that prolong QT) (2). Review/stop QT-prolonging medications (2). TSH and a urine tox screen (1). PENALTY: discharging or failing to monitor a patient with syncope and palpitations (-3).",
-      "idealAnswer": "Order: 12-lead EKG immediately with a measured QTc; Continuous telemetry / cardiac monitoring; BMP with magnesium and calcium; review and stop QT-prolonging drugs.",
+      "idealAnswer": "Order: EKG; CXR; EKG Q tc; Telemetry; BMP mg; Troponin; TSH; Tox screen.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,14 @@
           {
             "item": "TSH and urine tox screen",
             "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
           }
         ],
         "bonusActions": [],

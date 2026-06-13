@@ -132,7 +132,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Thick and thin blood smears for malaria parasites with species ID and parasitemia (CANT-MISS,5). Rapid diagnostic test (RDT) for malaria antigen (CANT-MISS,3). CBC with platelets (2). Chemistry/glucose/lactate/bilirubin to assess for SEVERE malaria (2). Blood cultures to exclude typhoid/bacterial sepsis (2). Repeat smears q12-24h x3 if first is negative (1). PENALTY: ruling out malaria on a single negative smear without repeating (-2).",
-      "idealAnswer": "Order: Thick and thin blood smears for malaria parasites with species ID and parasitemia; Rapid diagnostic test (RDT) for malaria antigen; Chemistry/glucose/lactate/bilirubin to assess for SEVERE malaria.",
+      "idealAnswer": "Order: EKG; CXR; Blood smear; RDT; CBC; Chemistry; Blood cultures.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,7 +145,28 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Chemistry",
+            "points": 2
+          },
+          {
+            "item": "Blood cultures",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

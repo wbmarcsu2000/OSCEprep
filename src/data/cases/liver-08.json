@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs with AST/ALT trend and LDH (ALT:LDH ratio) (CANT-MISS,3). Acetaminophen level (CANT-MISS,3). Viral hepatitis serologies/NAT (2). Bilirubin and INR/albumin — synthetic function (2). Renal function and lactate — assess the perfusion insult (2). RUQ ultrasound with Doppler — exclude Budd-Chiari/biliary obstruction (2). Repeat LFTs to confirm rapid downtrend (1). PENALTY: anchoring on shock liver without checking an acetaminophen level / excluding viral causes (-2).",
-      "idealAnswer": "Order: LFTs with AST/ALT trend and LDH (ALT:LDH ratio); Acetaminophen level; RUQ ultrasound with Doppler.",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; LDH; Acetaminophen; Viral hep NAT; Renal coags.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -156,7 +156,28 @@
             "points": 2
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Bilirubin",
+            "points": 2
+          },
+          {
+            "item": "Viral hep NAT",
+            "points": 2
+          },
+          {
+            "item": "Renal coags",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

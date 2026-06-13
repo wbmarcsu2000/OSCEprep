@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Bedside aortic ultrasound / POCUS (CANT-MISS,5). Type & crossmatch + activate massive transfusion (CANT-MISS,4). CT angiography of the abdomen if hemodynamically stabilizable (3). CBC (2). BMP / lactate for perfusion (1). PENALTY: sending an unstable patient to CT or delaying repair for non-essential imaging (-3); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: Bedside aortic ultrasound (POCUS); Type & crossmatch with massive transfusion protocol; CT angiography of the abdomen only if hemodynamically stabilizable.",
+      "idealAnswer": "Order: EKG; CXR; Pocus aorta; CBC; BMP; Lactate; Coags type; CTA abdomen.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,7 +147,40 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Pocus aorta",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Lactate",
+            "points": 2
+          },
+          {
+            "item": "Coags type",
+            "points": 2
+          },
+          {
+            "item": "CTA abdomen",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

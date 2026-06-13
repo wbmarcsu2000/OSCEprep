@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs incl. AST/ALT pattern (CANT-MISS,3). Bilirubin (fractionated) (2). INR/coags — synthetic function (3). ACETAMINOPHEN level (CANT-MISS,3). Viral hepatitis serologies — A/B/C (3). RUQ ultrasound (1). PENALTY: not checking an acetaminophen level in acute hepatocellular injury (-3).",
-      "idealAnswer": "Order LFTs (note the AST/ALT hepatocellular pattern, ALT>AST and markedly elevated), fractionated bilirubin, INR/coagulation studies (synthetic function), an acetaminophen level, viral hepatitis serologies (A/B/C), and a RUQ ultrasound.",
+      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; INR; Acetaminophen; Viral serologies; US.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -152,7 +152,36 @@
             "points": 3
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Bilirubin",
+            "points": 2
+          },
+          {
+            "item": "INR",
+            "points": 2
+          },
+          {
+            "item": "Viral serologies",
+            "points": 2
+          },
+          {
+            "item": "US",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -100,6 +100,7 @@ export function useDictation(opts: { onTranscript: (text: string) => void }) {
     // streams the full transcript as they speak.
     let finalText = "";
     let stopped = false;
+    let restartTimer: number | undefined;
     rec.onresult = (e) => {
       let interim = "";
       for (let i = e.resultIndex; i < e.results.length; i++) {
@@ -110,17 +111,28 @@ export function useDictation(opts: { onTranscript: (text: string) => void }) {
       }
       optsRef.current.onTranscript((finalText + " " + interim).trim());
     };
-    // Chrome can end recognition on its own (silence/network). While the
-    // student still wants to listen, transparently restart; a real stop
-    // (toggle-off → cleanup) sets `stopped` first so we don't fight it.
-    rec.onend = () => {
-      if (!stopped) {
-        try {
-          rec.start();
-        } catch {
+    // Chrome ends recognition on its own (silence/network) every few seconds —
+    // especially mid-conversation. While the student still wants to listen,
+    // transparently restart so the mic stays open instead of flipping off. A
+    // real stop (toggle-off / new turn → cleanup) sets `stopped` first so we
+    // don't fight it. Restart is DEFERRED and retried: calling start()
+    // synchronously inside onend throws InvalidStateError on some builds, and a
+    // single throw must not silently kill the mic for the rest of the turn.
+    const restart = (attempt: number) => {
+      if (stopped) return;
+      try {
+        rec.start();
+      } catch {
+        if (attempt < 2) {
+          restartTimer = window.setTimeout(() => restart(attempt + 1), 300);
+        } else {
           setListening(false);
         }
       }
+    };
+    rec.onend = () => {
+      if (stopped) return;
+      restartTimer = window.setTimeout(() => restart(0), 150);
     };
     rec.onerror = (ev) => {
       // Permission/device errors are terminal; transient ones (no-speech,
@@ -139,10 +151,13 @@ export function useDictation(opts: { onTranscript: (text: string) => void }) {
     }
     return () => {
       stopped = true;
+      if (restartTimer) window.clearTimeout(restartTimer);
       rec.onend = null;
       rec.onerror = null;
       rec.onresult = null;
-      rec.stop();
+      // abort() tears down immediately (stop() finishes the current utterance
+      // first), so a fresh recognizer for the next turn can't overlap this one.
+      rec.abort();
     };
   }, [listening]);
 

@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Fingerstick/serum glucose + BMP for anion gap and potassium (CANT-MISS,4). Serum/urine ketones (beta-hydroxybutyrate) (CANT-MISS,4). Venous blood gas for pH (3). Urine beta-hCG to exclude pregnancy (2). CBC, lipase, UA, lactate to look for a trigger/alternative cause (1). EKG for hyperkalemia (1). PENALTY: rushing to insulin before checking potassium and starting fluids (-2); ordering early abdominal CT for the pain before checking the gap/ketones (-1).",
-      "idealAnswer": "Order: Fingerstick/serum glucose + BMP (anion gap, potassium); Serum/urine ketones (beta-hydroxybutyrate); Venous blood gas for pH; Urine beta-hCG.",
+      "idealAnswer": "Order: EKG; CXR; BMP; VBG; Serum/urine ketones; CBC; Lipase; UA h CG.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,30 @@
         "coreActions": [
           {
             "item": "Urine beta-hCG",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "VBG",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Lipase",
+            "points": 2
+          },
+          {
+            "item": "UA h CG",
             "points": 2
           }
         ],

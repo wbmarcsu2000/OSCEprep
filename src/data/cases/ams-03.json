@@ -132,7 +132,7 @@
       "reveal": true,
       "prompt": "What is the single most important immediate test, and what else do you order?",
       "rubric": "IMMEDIATE fingerstick glucose (CANT-MISS,7). BMP incl. renal function (3). CBC (2). EKG (2). Considers checking for a sulfonylurea/insulin cause (1). PENALTY: ordering a CT head BEFORE checking a glucose in an obviously hypoglycemic-appearing diabetic (-3).",
-      "idealAnswer": "Order: IMMEDIATE fingerstick glucose.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; CBC.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -141,7 +141,24 @@
             "points": 7
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

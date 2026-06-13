@@ -133,7 +133,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC with indices (CANT-MISS,3). Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency (CANT-MISS,5). Reticulocyte count (2). Inflammatory markers ESR/CRP (2). Renal function (2). B12/folate (1). PENALTY: reflexively starting iron without confirming a true deficiency (-2).",
-      "idealAnswer": "Order: CBC with indices; Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Iron studies; Inflammatory markers; Reticulocyte count; BMP; Other targeted labs.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -146,7 +146,32 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory markers",
+            "points": 2
+          },
+          {
+            "item": "Reticulocyte count",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Other targeted labs",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

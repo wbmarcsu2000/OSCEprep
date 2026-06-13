@@ -126,7 +126,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "CXR (CANT-MISS,4). ABG / VBG (core,3). CBC (core,2). BMP (core,2). EKG (core,2). BNP to help exclude heart failure (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: CXR; ABG / VBG; CBC; BMP; EKG; BNP to help exclude heart failure.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; ABG; BNP; Troponin.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -154,6 +154,10 @@
           },
           {
             "item": "BNP to help exclude heart failure",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
             "points": 2
           }
         ],

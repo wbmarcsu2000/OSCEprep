@@ -133,7 +133,7 @@
       "reveal": true,
       "prompt": "What is your workup, and in what ORDER? (Sequencing matters.)",
       "rubric": "Blood cultures immediately (CANT-MISS,4). Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture (CANT-MISS,5). CT head BEFORE LP only if indicated (focal deficit, papilledema, immunocompromise, seizure, depressed consciousness) (3). CBC, coags (2). Recognizes that imaging/LP must NOT delay antibiotics (1). PENALTY: routine CT before LP in everyone delaying treatment (-2).",
-      "idealAnswer": "Order: Blood cultures immediately; Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture.",
+      "idealAnswer": "Order: EKG; CXR; Blood cultures; CBC; BMP; Coagulation studies; CT head; LP CSF.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -146,7 +146,32 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Coagulation studies",
+            "points": 2
+          },
+          {
+            "item": "CT head",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "Serum lactate (CANT-MISS,4). CT angiography of the abdomen (CANT-MISS,5). EKG (3). CBC (2). BMP / blood gas for acidosis (1). PENALTY: relying on plain films alone or delaying CTA (-3); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: Serum lactate; CT angiography of the abdomen.",
+      "idealAnswer": "Order: EKG; CXR; Lactate; CBC; BMP; LFTs; CTA abdomen; Stool studies.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,7 +147,32 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "Stool studies",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {

@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
       "rubric": "CT abdomen/pelvis with contrast (CANT-MISS,5). CBC (3). BMP (2). Urinalysis (2). Considers stool studies if diarrhea predominant (bonus,1). PENALTY: colonoscopy DURING acute diverticulitis (perforation risk) (-3); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: CT abdomen/pelvis with contrast.",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Urinalysis; CT abdomen/pelvis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -143,7 +143,28 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Urinalysis",
+            "points": 2
+          }
+        ],
         "bonusActions": [
           {
             "item": "Considers stool studies if diarrhea predominant",

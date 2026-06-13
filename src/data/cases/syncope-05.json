@@ -131,7 +131,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want? (Consider pretest probability.)",
       "rubric": "EKG (core,3). CT pulmonary angiogram (CANT-MISS,6). Troponin and BNP for RV strain (3). CXR (1). ABG (1). Recognizes high pretest probability — proceed to imaging rather than relying on D-dimer (1). PENALTY: relying on a normal D-dimer to exclude PE when pretest probability is high (-3).",
-      "idealAnswer": "Order: CT pulmonary angiogram; EKG.",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Troponin; BNP; D-dimer; ABG; CTPE.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,6 +144,34 @@
           {
             "item": "EKG",
             "points": 3
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "BNP",
+            "points": 2
+          },
+          {
+            "item": "D-dimer",
+            "points": 2
+          },
+          {
+            "item": "ABG",
+            "points": 2
+          },
+          {
+            "item": "CTPE",
+            "points": 2
           }
         ],
         "bonusActions": [],

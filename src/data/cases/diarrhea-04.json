@@ -135,7 +135,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten (CANT-MISS,5). CBC and iron studies (3). Nutritional labs — ferritin, vitamin D, folate, B12 (2). Upper endoscopy with duodenal biopsy to confirm (3). Stool studies to exclude infection (2). PENALTY: starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy) (-3).",
-      "idealAnswer": "Order: celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten; CBC and iron studies; nutritional labs (ferritin, vitamin D, folate, B12); upper endoscopy with duodenal biopsy to confirm; stool studies to exclude infection.",
+      "idealAnswer": "Order: EKG; CXR; CBC; Serology; Nutrition; Biopsy; Stool studies.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -159,6 +159,14 @@
           },
           {
             "item": "Stool studies to exclude infection",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
             "points": 2
           }
         ],
