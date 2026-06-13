@@ -12,7 +12,7 @@ import {
   classifyIntentDeterministic,
   phrasePatientReplyDeterministic,
 } from "../deterministicFallback";
-import { guardParaphrase, guardOffTarget, DeterministicProvider } from "../LlmAdapter";
+import { guardParaphrase, guardOffTarget, cleanCoachNote, DeterministicProvider } from "../LlmAdapter";
 import { chestpain01, SCORE_BANDS } from "../../engine/__tests__/fixtures";
 
 const cp01 = adaptCase(chestpain01);
@@ -224,5 +224,21 @@ describe("off-target guard (questions with no case data)", () => {
         "Pulmonary embolism",
       ),
     ).toBeNull();
+  });
+});
+
+describe("coach-note sanitizer", () => {
+  it("unwraps a ```json fenced {feedback} object to plain prose", () => {
+    const raw = '```json\n{ "feedback": "You correctly anticoagulated; also risk-stratify first." }\n```';
+    expect(cleanCoachNote(raw)).toBe("You correctly anticoagulated; also risk-stratify first.");
+  });
+
+  it("unwraps a bare JSON object and a plain code fence", () => {
+    expect(cleanCoachNote('{"note":"Good plan."}')).toBe("Good plan.");
+    expect(cleanCoachNote("```\nNice work.\n```")).toBe("Nice work.");
+  });
+
+  it("passes plain prose through unchanged", () => {
+    expect(cleanCoachNote("Solid answer — add a PERT consult.")).toBe("Solid answer — add a PERT consult.");
   });
 });
