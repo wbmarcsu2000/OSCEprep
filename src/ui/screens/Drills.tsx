@@ -131,7 +131,7 @@ export function Drills() {
           </div>
         </div>
         <button className="btn btn-ghost shrink-0" onClick={exitToSelect}>
-          Station list →
+          Case list →
         </button>
       </div>
 

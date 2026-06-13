@@ -9,7 +9,7 @@ export function Scratchpad({ rows = 8, bare = false }: { rows?: number; bare?: b
       rows={rows}
       value={scratchpad}
       onChange={(e) => update(e.target.value)}
-      placeholder="Notes carry through the whole station…"
+      placeholder="Notes carry through the whole case…"
       aria-label="Scratchpad"
     />
   );

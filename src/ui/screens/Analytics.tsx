@@ -211,7 +211,7 @@ export function Analytics() {
             Your Progress
           </h2>
           <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            {attempts.length} completed station{attempts.length === 1 ? "" : "s"} ·{" "}
+            {attempts.length} completed case{attempts.length === 1 ? "" : "s"} ·{" "}
             {new Set(attempts.map((a) => a.caseId)).size} unique cases
           </p>
         </div>
@@ -243,7 +243,7 @@ export function Analytics() {
               day streak
             </div>
             <div className="hint">
-              {atRisk ? "Practice today to keep it alive!" : streak > 0 ? "Going strong" : "Complete a station to start one"}
+              {atRisk ? "Practice today to keep it alive!" : streak > 0 ? "Going strong" : "Complete a case to start one"}
             </div>
           </div>
         </div>
@@ -400,7 +400,7 @@ export function Analytics() {
         <FreqTable title="Most common penalties" rows={topByFrequency(attempts.flatMap((a) => a.penalties))} />
         <FreqTable title="Unsafe actions triggered" rows={topByFrequency(attempts.flatMap((a) => a.unsafeActions))} />
         <FreqTable
-          title="Stations with critical misses"
+          title="Cases with critical misses"
           rows={topByFrequency(attempts.filter((a) => a.criticalMissCount > 0).map((a) => a.caseId))}
           labelFor={stationTitle}
           onRowClick={openReview}

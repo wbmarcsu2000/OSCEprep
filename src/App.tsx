@@ -16,7 +16,7 @@ import { levelFor, totalXp, streakDays } from "./ui/gamification";
 import { useMountNow } from "./ui/useMountNow";
 
 const NAV: { label: string; view: View }[] = [
-  { label: "Stations", view: "select" },
+  { label: "OSCE Cases", view: "select" },
   { label: "Drills", view: "drills" },
   { label: "Skills", view: "skills" },
   { label: "Performance", view: "analytics" },
@@ -93,13 +93,13 @@ function ResumeBanner() {
   return (
     <div
       role="region"
-      aria-label="Unfinished station"
+      aria-label="Unfinished OSCE case"
       className="px-4 sm:px-6 py-2.5 flex items-center gap-3 flex-wrap border-b fade-up"
       style={{ background: "var(--color-exam-accent-soft)", borderColor: "var(--color-exam-accent-line)" }}
     >
       <span aria-hidden>⏸️</span>
       <span className="text-[13px] font-bold min-w-0" style={{ color: "var(--color-exam-accent-deep)" }}>
-        Unfinished station: {caseModel.chart.ageSex} — {caseModel.chart.cc}
+        Unfinished OSCE case: {caseModel.chart.ageSex} — {caseModel.chart.cc}
         <span className="font-semibold opacity-75">
           {" "}· {phaseLabel[engine.currentState]}{timed ? " · timer paused while you were away" : ""}
         </span>
@@ -220,7 +220,7 @@ export default function App() {
               style={{ background: "rgba(255,255,255,0.12)" }}
               onClick={exitToSelect}
             >
-              Exit station
+              Exit case
             </button>
           ) : confirmExit ? (
             <span
@@ -257,7 +257,7 @@ export default function App() {
               style={{ background: "rgba(255,255,255,0.12)" }}
               onClick={() => setConfirmExit(true)}
             >
-              Exit station
+              Exit case
             </button>
           ))}
       </header>

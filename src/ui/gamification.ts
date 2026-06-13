@@ -152,14 +152,14 @@ export function badges(
   const streak = streakDays(attempts, now);
 
   return [
-    { id: "first", emoji: "🩺", name: "First Rounds", desc: "Complete your first station", earned: attempts.length >= 1 },
-    { id: "five", emoji: "💪", name: "Warming Up", desc: "Complete 5 stations", earned: attempts.length >= 5 },
-    { id: "ten", emoji: "⚡", name: "Double Digits", desc: "Complete 10 stations", earned: attempts.length >= 10 },
-    { id: "twentyfive", emoji: "🏅", name: "Quarter Century", desc: "Complete 25 stations", earned: attempts.length >= 25 },
+    { id: "first", emoji: "🩺", name: "First Rounds", desc: "Complete your first case", earned: attempts.length >= 1 },
+    { id: "five", emoji: "💪", name: "Warming Up", desc: "Complete 5 cases", earned: attempts.length >= 5 },
+    { id: "ten", emoji: "⚡", name: "Double Digits", desc: "Complete 10 cases", earned: attempts.length >= 10 },
+    { id: "twentyfive", emoji: "🏅", name: "Quarter Century", desc: "Complete 25 cases", earned: attempts.length >= 25 },
     { id: "library", emoji: "🏆", name: "Full Library", desc: `Complete all ${catalog.length} cases`, earned: catalog.length > 0 && uniqueCases.size >= catalog.length },
-    { id: "honors", emoji: "🎓", name: "Honors", desc: "Score 85+ on a station", earned: attempts.some((a) => a.overall >= 85) },
-    { id: "nearperfect", emoji: "💎", name: "Near Perfect", desc: "Score 95+ on a station", earned: attempts.some((a) => a.overall >= 95) },
-    { id: "safehands", emoji: "🤲", name: "Safe Hands", desc: "5 stations with zero critical misses", earned: safeCount >= 5 },
+    { id: "honors", emoji: "🎓", name: "Honors", desc: "Score 85+ on a case", earned: attempts.some((a) => a.overall >= 85) },
+    { id: "nearperfect", emoji: "💎", name: "Near Perfect", desc: "Score 95+ on a case", earned: attempts.some((a) => a.overall >= 95) },
+    { id: "safehands", emoji: "🤲", name: "Safe Hands", desc: "5 cases with zero critical misses", earned: safeCount >= 5 },
     { id: "streak3", emoji: "🔥", name: "On Fire", desc: "Practice 3 days in a row", earned: streak >= 3 },
     { id: "streak7", emoji: "🚀", name: "Unstoppable", desc: "Practice 7 days in a row", earned: streak >= 7 },
     { id: "specialist", emoji: "🫀", name: masteredCategory ? `Specialist: ${masteredCategory}` : "Specialist", desc: "Finish every case in one category", earned: !!masteredCategory },

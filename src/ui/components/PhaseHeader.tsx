@@ -35,7 +35,7 @@ export function PhaseHeader({
       className="border-b px-3 sm:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-3 sm:gap-6 bg-white shrink-0 flex-wrap"
       style={{ borderColor: "var(--color-exam-border)" }}
     >
-      <ol className="flex items-center" aria-label="Station phases">
+      <ol className="flex items-center" aria-label="Case phases">
         {PHASES.map((p, i) => {
           const active = i === idx;
           const past = i < idx;

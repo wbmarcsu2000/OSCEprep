@@ -261,7 +261,7 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
                   steps answered
                 </span>
                 <button className="btn btn-primary" disabled={grading} onClick={() => void submitStation()}>
-                  {grading ? "Grading…" : "Submit station"}
+                  {grading ? "Grading…" : "Submit case"}
                 </button>
                 <button autoFocus className="btn" disabled={grading} onClick={() => setConfirmSubmit(false)}>Not yet</button>
               </span>
@@ -299,8 +299,8 @@ export function PostEncounter({ caseModel }: { caseModel: CaseModel }) {
             <span className="spinner" aria-hidden />
             <p className="text-[14.5px] font-bold" style={{ color: "var(--color-exam-header)" }}>
               {timeExpired
-                ? "Time's up — submitting your station…"
-                : "Grading your station — checking answers against the rubric…"}
+                ? "Time's up — submitting your case…"
+                : "Grading your case — checking answers against the rubric…"}
             </p>
             {llmEnabled && <p className="hint">AI rubric matching can take a few seconds</p>}
           </div>
@@ -329,7 +329,7 @@ function AiChip({
       <span
         className={base}
         style={{ background: "var(--color-exam-warn-soft)", color: "var(--color-exam-warn)" }}
-        title="The configured AI key failed verification — the deterministic engine is answering and grading. Fix the key on the station list."
+        title="The configured AI key failed verification — the deterministic engine is answering and grading. Fix the key on the case list."
       >
         ⚠️ AI key error
       </span>
@@ -357,7 +357,7 @@ function AiChip({
         background: llmEnabled ? "var(--color-exam-ok-soft)" : "var(--color-exam-soft)",
         color: llmEnabled ? "var(--color-exam-ok)" : "var(--color-exam-muted)",
       }}
-      title={llmEnabled ? "Patient replies, grading, and coaching use AI; grading runs on a stronger model." : "Grading uses the deterministic engine. Enable AI on the station list for natural replies + coaching."}
+      title={llmEnabled ? "Patient replies, grading, and coaching use AI; grading runs on a stronger model." : "Grading uses the deterministic engine. Enable AI on the case list for natural replies + coaching."}
     >
       {llmEnabled ? "🟢 " : "○ "}{label}
     </span>

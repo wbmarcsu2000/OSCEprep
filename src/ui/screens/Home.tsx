@@ -80,9 +80,9 @@ export function Home() {
     {
       icon: "🩺",
       grad: "var(--grad-primary)",
-      title: "Practice a station",
+      title: "Practice an OSCE case",
       body: "Work a full case end to end: read the chart, interview and examine the patient, then commit to a diagnosis and plan. Scored with feedback at the end.",
-      cta: `${manifest.cases.length} stations · ${stats.done} done`,
+      cta: `${manifest.cases.length} cases · ${stats.done} done`,
       onClick: () => setView("select"),
     },
     {
@@ -127,7 +127,7 @@ export function Home() {
           icon="🔥"
           label="Day streak"
           value={String(stats.streak)}
-          sub={stats.atRisk ? "Do a station today to keep it!" : stats.streak > 0 ? "Keep it rolling" : "Start one today"}
+          sub={stats.atRisk ? "Do a case today to keep it!" : stats.streak > 0 ? "Keep it rolling" : "Start one today"}
           flame={stats.streak > 0}
         />
         <StatTile
@@ -139,7 +139,7 @@ export function Home() {
         />
         <StatTile
           icon="✅"
-          label="Stations"
+          label="Cases"
           value={`${stats.done} / ${manifest.cases.length}`}
           bar={stats.done / Math.max(1, manifest.cases.length)}
           sub={`${stats.attempts} total attempts`}
@@ -148,7 +148,7 @@ export function Home() {
           icon="📈"
           label="Avg score"
           value={stats.avg === null ? "—" : String(stats.avg)}
-          sub={stats.avg === null ? "Complete a station" : "last 10 attempts"}
+          sub={stats.avg === null ? "Complete a case" : "last 10 attempts"}
         />
       </div>
 
@@ -172,7 +172,7 @@ export function Home() {
             Ready to round{stats.streak > 1 ? ` — day ${stats.streak}` : ""}?
           </h1>
           <p className="text-[14.5px] leading-relaxed text-white/80">
-            Run a full Internal Medicine OSCE station end-to-end — history, physical exam, reasoning,
+            Run a full Internal Medicine OSCE case end-to-end — history, physical exam, reasoning,
             image reads, and management — graded on thoroughness and reasoning, not just the
             "right answer."
           </p>
@@ -184,8 +184,8 @@ export function Home() {
             >
               🎲{" "}
               {stats.attempts === 0
-                ? "Start your first station"
-                : `Random station · ${preferredMode === "STRICT_OSCE" ? "Strict OSCE" : "Practice"}`}{" "}
+                ? "Start your first case"
+                : `Random case · ${preferredMode === "STRICT_OSCE" ? "Strict OSCE" : "Practice"}`}{" "}
               →
             </button>
             <button
@@ -229,9 +229,9 @@ export function Home() {
         ))}
       </div>
 
-      {/* How a station works */}
+      {/* How an OSCE case works */}
       <div className="card p-5">
-        <div className="panel-label mb-3">How a station works</div>
+        <div className="panel-label mb-3">How an OSCE case works</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {stationSteps.map(([n, t, time, body], i) => (
             <div

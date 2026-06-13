@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useAppStore } from "../store";
+import { useDictation, useTts } from "../useSpeech";
 
 const STARTER_QUESTIONS = [
   "What brings you in today?",
@@ -19,6 +20,27 @@ export function SpConversation() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const tts = useTts();
+  const sendText = (text: string) => {
+    const t = text.trim();
+    if (!t || spThinking || locked) return;
+    setDraft("");
+    void ask(t);
+    inputRef.current?.focus();
+  };
+  const send = () => sendText(draft);
+
+  // Dictation: live transcript streams into the box; the completed utterance is
+  // sent automatically so the student can hold the interview hands-free.
+  const dictation = useDictation({
+    onInterim: (t) => setDraft(t),
+    onFinal: (t) => sendText(t),
+  });
+  const micDown = () => {
+    tts.cancel(); // don't talk over the student
+    dictation.toggle();
+  };
+
   useEffect(() => {
     const el = scrollRef.current;
     if (el && typeof el.scrollTo === "function") {
@@ -26,13 +48,18 @@ export function SpConversation() {
     }
   }, [conversation.length, spThinking]);
 
-  const send = () => {
-    const text = draft.trim();
-    if (!text || spThinking || locked) return;
-    setDraft("");
-    void ask(text);
-    inputRef.current?.focus();
-  };
+  // Read each NEW patient reply aloud when read-aloud is on. spokenRef guards
+  // against re-speaking the backlog when the toggle flips or on re-render.
+  const spokenRef = useRef(conversation.length);
+  useEffect(() => {
+    if (conversation.length > spokenRef.current) {
+      const last = conversation[conversation.length - 1];
+      if (tts.enabled && last && last.role === "patient" && last.kind === "speech") {
+        tts.speak(last.text);
+      }
+    }
+    spokenRef.current = conversation.length;
+  }, [conversation, tts]);
 
   // The patient always opens with a statement, so "conversation empty" never
   // happens in a real encounter — the real cold-start state is "no student
@@ -43,7 +70,24 @@ export function SpConversation() {
     <div className="card flex flex-col h-full min-h-0 overflow-hidden">
       <div className="card-header">
         <span className="panel-label">Patient Interview</span>
-        <span className="hint">The patient answers only what you ask</span>
+        <div className="flex items-center gap-2">
+          <span className="hint hidden sm:inline">The patient answers only what you ask</span>
+          {tts.supported && (
+            <button
+              type="button"
+              aria-pressed={tts.enabled}
+              className="text-[12px] font-bold rounded-full px-2.5 py-1 transition-colors"
+              style={{
+                background: tts.enabled ? "var(--color-exam-accent-soft)" : "transparent",
+                color: tts.enabled ? "var(--color-exam-accent-deep)" : "var(--color-exam-muted)",
+              }}
+              title={tts.enabled ? "Read patient replies aloud: on" : "Read patient replies aloud: off"}
+              onClick={() => tts.setEnabled(!tts.enabled)}
+            >
+              {tts.enabled ? "🔊" : "🔇"} Read aloud
+            </button>
+          )}
+        </div>
       </div>
       {llmEnabled && aiDegraded && (
         <div
@@ -133,13 +177,37 @@ export function SpConversation() {
         </div>
       )}
       <div
-        className="border-t px-3 py-3 flex gap-2 bg-white"
+        className="border-t px-3 py-3 flex gap-2 bg-white items-center"
         style={{ borderColor: "var(--color-exam-border)" }}
       >
+        {dictation.supported && (
+          <button
+            type="button"
+            className={`btn shrink-0 px-3 ${dictation.listening ? "pulse-urgent" : ""}`}
+            style={
+              dictation.listening
+                ? { background: "var(--color-exam-danger-soft)", borderColor: "var(--color-exam-danger)", color: "var(--color-exam-danger)" }
+                : undefined
+            }
+            disabled={locked || spThinking}
+            aria-pressed={dictation.listening}
+            aria-label={dictation.listening ? "Stop dictation" : "Speak your question"}
+            title={dictation.listening ? "Listening… click to stop" : "Speak your question"}
+            onClick={micDown}
+          >
+            {dictation.listening ? "● Listening" : "🎙️"}
+          </button>
+        )}
         <input
           ref={inputRef}
           className="input flex-1"
-          placeholder={locked ? "Patient access locked" : "Ask the patient anything…"}
+          placeholder={
+            locked
+              ? "Patient access locked"
+              : dictation.listening
+                ? "Listening — speak your question…"
+                : "Ask the patient anything…"
+          }
           value={draft}
           disabled={locked}
           onChange={(e) => setDraft(e.target.value)}

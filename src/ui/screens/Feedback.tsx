@@ -278,7 +278,7 @@ interface HeroTone {
 /** Band-toned celebration: every score gets energy, only good scores get confetti. */
 function heroToneFor(overall: number): HeroTone {
   if (overall >= 85)
-    return { grad: "var(--grad-header)", fg: "#fff", chipBg: "rgba(255,255,255,0.2)", emoji: "🏆", headline: "Outstanding station!", confetti: true };
+    return { grad: "var(--grad-header)", fg: "#fff", chipBg: "rgba(255,255,255,0.2)", emoji: "🏆", headline: "Outstanding case!", confetti: true };
   if (overall >= 70)
     return { grad: "var(--grad-teal)", fg: "#073f37", chipBg: "rgba(255,255,255,0.45)", emoji: "🎉", headline: "Nice work!", confetti: true };
   if (overall >= 55)
@@ -328,7 +328,7 @@ function CelebrationHero({ data }: { data: FeedbackData }) {
       <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
         <div className="space-y-1 min-w-0">
           <div className="text-[12px] font-extrabold uppercase tracking-widest">
-            Station complete
+            OSCE case complete
           </div>
           <h2 className="text-[22px] font-extrabold tracking-tight leading-tight">
             {tone.emoji} {tone.headline}
@@ -377,7 +377,7 @@ function CelebrationHero({ data }: { data: FeedbackData }) {
             style={{ background: "#fff", color: "var(--color-exam-ink)" }}
             onClick={randomNext}
           >
-            🎲 Next station →
+            🎲 Next case →
           </button>
           <button
             className="btn border-none"
@@ -455,10 +455,10 @@ export function FeedbackView({ data }: { data: FeedbackData }) {
               📊 Performance
             </button>
             <button className="btn" onClick={exitToSelect}>
-              Station list →
+              Case list →
             </button>
             <button className="btn btn-primary" onClick={() => void startCase(data.caseId, preferredMode)}>
-              ↻ Retry station
+              ↻ Retry case
             </button>
           </div>
         </div>

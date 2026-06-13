@@ -1,7 +1,7 @@
 {
   "name": "OSCEprep \u2014 IM OSCE Simulator",
   "short_name": "OSCEprep",
-  "description": "Practice Internal Medicine clerkship OSCE stations end-to-end, with feedback, teaching, and drills. For medical education only.",
+  "description": "Practice Internal Medicine clerkship OSCE cases end-to-end, with feedback, teaching, and drills. For medical education only.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

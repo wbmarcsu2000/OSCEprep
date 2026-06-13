@@ -58,7 +58,7 @@ export function Skills() {
         </div>
         <div className="flex flex-col sm:flex-row items-end sm:items-center gap-2 shrink-0">
           <button className="btn btn-ghost" onClick={exitToSelect}>
-            Station list
+            Case list
           </button>
           <button className="btn btn-primary" onClick={() => setView("drills")}>
             Drill these skills →

@@ -54,6 +54,26 @@ const IDS_SCHEMA = {
   additionalProperties: false,
 } as const;
 
+/** Pull a `{ "ids": [...] }` array out of a model's text response, tolerating
+ *  stray prose or ```json fences, and keep only ids that are real candidates. */
+function parseIds(text: string, validIds: Set<string>): string[] {
+  let raw: unknown;
+  try {
+    raw = JSON.parse(text);
+  } catch {
+    const m = text.match(/\{[\s\S]*\}/);
+    if (!m) return [];
+    try {
+      raw = JSON.parse(m[0]);
+    } catch {
+      return [];
+    }
+  }
+  const ids = (raw as { ids?: unknown })?.ids;
+  if (!Array.isArray(ids)) return [];
+  return ids.filter((id): id is string => typeof id === "string" && validIds.has(id));
+}
+
 /** Untrusted-content delimiter. Case JSON and student text are data, never
  *  instructions — the system message says so and the tags mark the boundary. */
 function delimit(label: string, content: string): string {
@@ -273,19 +293,19 @@ export class AnthropicProvider implements LlmProvider {
     this.examinerSystem = opts.examinerSystemWrapper;
   }
 
+  // Plain Messages call. Deliberately no `output_config`/`effort` — those are
+  // newer parameters not supported across all models (older/faster ones 400
+  // with "does not support the effort parameter"), and grading parses JSON from
+  // the text anyway with a deterministic fallback, so structured-output
+  // enforcement isn't required.
   private async complete(
     p: Prompt,
     maxTokens: number,
-    jsonSchema?: Record<string, unknown>,
-    opts?: { model?: string; effort?: "low" | "medium" },
+    opts?: { model?: string },
   ): Promise<string> {
-    const effort = opts?.effort ?? "low";
     const response = await this.client.messages.create({
       model: opts?.model ?? this.model,
       max_tokens: maxTokens,
-      output_config: jsonSchema
-        ? { effort, format: { type: "json_schema", schema: jsonSchema } }
-        : { effort },
       system: [{ type: "text", text: p.system }],
       messages: [{ role: "user", content: p.user }],
     });
@@ -300,12 +320,9 @@ export class AnthropicProvider implements LlmProvider {
       const text = await this.complete(
         classifyPrompt(this.examinerSystem, studentText, candidates),
         1024,
-        IDS_SCHEMA as unknown as Record<string, unknown>,
-        { model: this.gradingModel, effort: "medium" },
+        { model: this.gradingModel },
       );
-      const parsed = JSON.parse(text) as { ids?: unknown };
-      const ids = Array.isArray(parsed.ids) ? parsed.ids : [];
-      return ids.filter((id): id is string => typeof id === "string" && validIds.has(id));
+      return parseIds(text, validIds);
     } catch (err) {
       reportFallback("answer matching", err);
       return classifyIntentDeterministic(studentText, candidates);
@@ -335,7 +352,7 @@ export class AnthropicProvider implements LlmProvider {
 
   async coachAnswer(input: CoachInput): Promise<string | null> {
     try {
-      const text = await this.complete(coachPrompt(this.examinerSystem, input), 512, undefined, {
+      const text = await this.complete(coachPrompt(this.examinerSystem, input), 512, {
         model: this.gradingModel,
       });
       return text.trim() || null;

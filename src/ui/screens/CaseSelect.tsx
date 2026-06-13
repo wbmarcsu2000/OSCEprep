@@ -123,10 +123,10 @@ export function CaseSelect() {
       <div className="flex flex-col sm:flex-row items-start justify-between gap-3 sm:gap-6">
         <div className="space-y-1.5 min-w-0">
           <h1 className="text-[24px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-            Station Library
+            OSCE Case Library
           </h1>
           <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            {manifest.cases.length} standardized-patient stations · 3 min chart review · 20 min
+            {manifest.cases.length} standardized-patient OSCE cases · 3 min chart review · 20 min
             encounter · 20 min post-encounter
           </p>
           <div className="flex items-center gap-2.5 pt-0.5">
@@ -163,7 +163,7 @@ export function CaseSelect() {
         <div className="flex flex-col gap-1">
           <div className="self-start">
             <Segmented
-              label="Station mode"
+              label="Case mode"
               options={[
                 { value: "STRICT_OSCE", label: "⏱️ Strict OSCE" },
                 { value: "PRACTICE", label: "🌱 Practice" },
@@ -181,10 +181,10 @@ export function CaseSelect() {
         <div className="flex items-center gap-2 ml-auto flex-wrap">
           <input
             className="input text-[13px] py-1.5 w-44"
-            placeholder="🔍 Search stations…"
+            placeholder="🔍 Search cases…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            aria-label="Search stations"
+            aria-label="Search cases"
           />
           <select
             className="input text-[13px] py-1.5 capitalize"
@@ -238,7 +238,7 @@ export function CaseSelect() {
       {/* Station cards */}
       {filtered.length === 0 ? (
         <p className="text-sm italic text-center py-10" style={{ color: "var(--color-exam-faint)" }}>
-          No stations match — try clearing the search or filters.
+          No cases match — try clearing the search or filters.
         </p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
