@@ -406,12 +406,15 @@ function AnswerKey({ step, answer, expertRead }: { step: StepModel; answer: stri
   const missed = items.filter((it) => !(has && selfChecked(answer, it.item)));
   return (
     <div className="space-y-3 pt-1 fade-up">
-      {/* Side-by-side compare: what you wrote vs the model. */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+      {/* Side-by-side compare: what you wrote vs the model. Each cell sizes to
+          its own content (items-start, no stretch, no h-full / flex-1) so a box
+          can never overflow its grid track into the row below — that was the
+          source of the green/yellow box overlap. */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 items-start">
         <div>
           <div className="panel-label mb-1.5">You wrote</div>
           <p
-            className="rounded-xl border p-3 text-[13.5px] leading-relaxed whitespace-pre-wrap h-full"
+            className="rounded-xl border p-3 text-[13.5px] leading-relaxed whitespace-pre-wrap"
             style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)" }}
           >
             {has ? answer : <span className="italic" style={{ color: "var(--color-exam-faint)" }}>— left blank —</span>}
@@ -420,7 +423,7 @@ function AnswerKey({ step, answer, expertRead }: { step: StepModel; answer: stri
         <div>
           <div className="panel-label mb-1.5" style={{ color: "var(--color-exam-ok)" }}>Model answer</div>
           <p
-            className="rounded-xl border p-3 text-[13.5px] leading-relaxed h-full"
+            className="rounded-xl border p-3 text-[13.5px] leading-relaxed"
             style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
           >
             {step.idealAnswer ? cleanIdealAnswer(step.idealAnswer) : <span className="italic">See key points below.</span>}

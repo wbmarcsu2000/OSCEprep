@@ -39,7 +39,7 @@
       "max": 25,
       "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
       "rubric": "Musculoskeletal chest pain / costochondritis (leading, 9; accepts chest wall strain). Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain (CANT-MISS to at least consider,4). PE (bonus,2). Pericarditis (bonus,2). Pneumothorax (bonus,2). Names costochondritis with supporting features — reproducible tenderness, exercise trigger, low pretest probability (core,5). PENALTY: missing that reproducible tenderness does not fully exclude cardiac causes in higher-risk patients (note only; no penalty here given very low pretest probability).",
-      "idealAnswer": "Leading diagnosis: Costochondritis. Must-not-miss diagnoses to exclude: Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain. Also reasonable: .",
+      "idealAnswer": "Leading diagnosis: Costochondritis. Must-not-miss diagnoses to exclude: Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -82,7 +82,7 @@
       "prompt": "What workup, if any, do you want to order? (Consider pretest probability and avoiding over-testing.)",
       "rubric": "Recognizes this is a clinical diagnosis with very low cardiac pretest probability (8). A single screening EKG is reasonable for reassurance (5). Appropriately AVOIDS an extensive/serial cardiac workup, stress testing, or CT angiogram in a low-risk young patient (8; reward restraint). Documents red flags that would prompt escalation (4). PENALTY: ordering CT angiogram / stress test / serial troponins with no indication (-4 for over-testing).",
       "reveal": true,
-      "idealAnswer": "Order: ",
+      "idealAnswer": "Largely a clinical diagnosis once dangerous causes are excluded. Focused studies: EKG and troponin to rule out ACS, plus a CBC. No extensive cardiac/pulmonary workup beyond excluding red flags.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
