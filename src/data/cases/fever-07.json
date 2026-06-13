@@ -277,7 +277,7 @@
       "max": 10,
       "prompt": "High fever, hypotension, diffuse macular erythroderma involving palms/soles, mucosal hyperemia, vomiting/diarrhea, myalgias with high CK, AKI and transaminitis, thrombocytopenia, negative blood cultures, and a retained tampon. What is your diagnosis and what did you rule out?",
       "rubric": "Toxic shock syndrome (menstrual, staphylococcal) (6). Cites the clinical criteria — fever, diffuse macular erythroderma, hypotension, and >=3 organ-system involvement with a likely toxin source (retained tampon) and negative blood cultures; explicitly excludes meningococcemia/other septic source, RMSF, and a severe drug reaction (4).",
-      "idealAnswer": "Toxic shock syndrome (staphylococcal, menstrual). ",
+      "idealAnswer": "Toxic shock syndrome (staphylococcal, menstrual) — meets the clinical criteria: fever, diffuse macular erythroderma involving the palms/soles, hypotension, and multi-organ involvement (GI, muscular/high CK, renal AKI, hepatic, hematologic), with a likely toxin source (retained tampon) and negative blood cultures. Meningococcemia/other septic source is argued against by the absence of petechiae/purpura and meningismus, RMSF by the lack of travel/tick exposure and a non-petechial rash, and a severe drug reaction (DRESS/SJS-TEN) by no new medications and no bullae/Nikolsky sign.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

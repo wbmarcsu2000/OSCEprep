@@ -177,7 +177,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal/nonspecific, no acute ischemia. CREDIT: rate & rhythm (7); recognizes a normal/near-normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = markedly prolonged QTc. CREDIT: measures and corrects the QT, recognizing a markedly prolonged QTc (~520 ms) (8); identifies it as a torsades de pointes substrate (5); systematic read (2). PENALTY: calling the tracing normal / missing the prolonged QT (-3).",
       "keyFindings": [
         "measures and corrects the QT (QTc)",
         "recognizes prolonged QTc as a torsades risk"
@@ -231,15 +231,11 @@
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here.",
+            "item": "Recognizes a clear film, obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here.",
             "points": 6
           }
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal film",
-            "points": 6
-          },
           {
             "item": "notes it screens for an SIADH source such as a lung mass or pneumonia",
             "points": 4
@@ -260,7 +256,7 @@
       "max": 10,
       "prompt": "Na is 112 with low serum osm and elevated urine osm/Na after a new thiazide. What is your diagnosis and what is the major treatment hazard?",
       "rubric": "Severe, symptomatic, thiazide-associated hypotonic hyponatremia (6). Identifies the danger of OVER-rapid correction causing osmotic demyelination (4).",
-      "idealAnswer": "Severe hyponatremia. ",
+      "idealAnswer": "Severe, symptomatic, thiazide-associated hypotonic hyponatremia (Na 112 with low serum osm and inappropriately elevated urine osm/Na). The major treatment hazard is over-rapid correction, which can cause osmotic demyelination syndrome; limit the rise to roughly 6–8 mEq/L per 24 hours.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -584,7 +580,7 @@
       "BMP/serum sodium"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; possible nonspecific changes; no acute ischemia.",
+      "Prolonged QTc (~520 ms).",
       "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here."
     ],
     "criticalManagementItems": [

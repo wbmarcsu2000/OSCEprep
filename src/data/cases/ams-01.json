@@ -54,9 +54,9 @@
       "findings": "No consolidation or effusion (obtained to screen for an infectious precipitant).",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "No consolidation or effusion (obtained to screen for an infectious precipitant).",
+      "imageDescription": "Normal chest radiograph, no consolidation or effusion.",
       "searchTerms": [
-        "chest radiograph consolidation effusion (obtained screen"
+        "normal PA chest x-ray"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -174,7 +174,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = biatrial enlargement. CREDIT: recognizes biatrial enlargement (7); identifies right atrial enlargement — tall peaked P in II (5); identifies left atrial enlargement — broad notched P / deep terminal negativity in V1 (3). PENALTY: calling the tracing normal / reporting only one atrium (-2).",
       "keyFindings": [
         "right atrial enlargement (tall peaked P)",
         "left atrial enlargement (broad notched P / V1 terminal force)"
@@ -227,15 +227,11 @@
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: No consolidation or effusion (obtained to screen for an infectious precipitant).",
+            "item": "Recognizes a normal film: no consolidation or effusion (obtained to screen for an infectious precipitant).",
             "points": 6
           }
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal film",
-            "points": 6
-          },
           {
             "item": "explains it screens for an infectious precipitant",
             "points": 4
@@ -256,7 +252,7 @@
       "max": 10,
       "prompt": "Given the elevated ammonia, normal glucose, and the history, what is your diagnosis and the likely precipitant?",
       "rubric": "Hepatic encephalopathy (5). Names a precipitant — constipation / missed lactulose / possible GI bleed (3). Notes ammonia supports but does not alone diagnose; it is clinical (bonus,2).",
-      "idealAnswer": "Hepatic encephalopathy. ",
+      "idealAnswer": "Hepatic encephalopathy, most likely precipitated by missed lactulose and constipation (with a possible GI bleed given the dark stools and low Hgb). The elevated ammonia supports but does not confirm it — HE is a clinical diagnosis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -356,7 +352,7 @@
       "medication_nonadherence"
     ],
     "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "60-year-old man, drowsy, disoriented to time and place, slow to respond. A POOR historian — gives short, vague, sometime",
+    "affect": "60-year-old man, drowsy, disoriented to time and place, slow to respond. A POOR historian — gives short, vague, sometimes incorrect answers.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
@@ -633,7 +629,7 @@
       "Fingerstick GLUCOSE first"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
+      "Biatrial enlargement.",
       "No consolidation or effusion (obtained to screen for an infectious precipitant)."
     ],
     "criticalManagementItems": [

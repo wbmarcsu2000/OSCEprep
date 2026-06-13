@@ -175,7 +175,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute ischemia. CREDIT: rate & rhythm (7); recognizes no acute ischemic changes / why we checked (inferior MI can mimic RUQ pain) (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "rubric": "Findings = Mobitz I (Wenckebach) second-degree AV block — progressive PR prolongation culminating in a non-conducted P wave (dropped QRS) with grouped beating. CREDIT: rate & rhythm — identifies the progressive PR lengthening before a dropped beat (7); recognizes the grouped-beating Wenckebach pattern and distinguishes it from Mobitz II (5); systematic read (3). PENALTY: calling the study normal / missing the abnormality, or mislabeling it as Mobitz II (-3).",
       "keyFindings": [
         "progressive PR prolongation before a dropped beat",
         "grouped beating pattern"
@@ -213,7 +213,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no free air, clear bases. CREDIT: identifies a normal film (5); excludes free air (perforation) and basal pneumonia (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = a hiatal hernia — retrocardiac soft-tissue opacity with an air-fluid level behind the heart. CREDIT: identifies the retrocardiac air-fluid level (5); recognizes it as a benign incidental hiatal hernia rather than a cavitary lesion/abscess (5). PENALTY: calling the film entirely normal / missing the finding, or mistaking the retrocardiac gas shadow for a cavity or abscess (-3).",
       "keyFindings": [
         "retrocardiac air-fluid level",
         "identifies a hiatal hernia as benign"
@@ -249,7 +249,7 @@
       "max": 10,
       "prompt": "Given the ultrasound and labs, what is your diagnosis and reasoning?",
       "rubric": "Acute cholecystitis (6). Cites gallstones + wall thickening + pericholecystic fluid + sonographic Murphy, with a non-dilated CBD and near-normal bilirubin arguing against choledocholithiasis (4).",
-      "idealAnswer": "Acute cholecystitis. ",
+      "idealAnswer": "Acute cholecystitis — RUQ ultrasound shows gallstones, gallbladder wall thickening, pericholecystic fluid, and a sonographic Murphy sign, with a non-dilated CBD and near-normal bilirubin arguing against choledocholithiasis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -611,8 +611,8 @@
       "RUQ ultrasound"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes (obtained to exclude a cardiac cause of upper-abdominal pain).",
-      "No free air under the diaphragm; clear lung bases (excludes perforation and lower-lobe pneumonia)."
+      "Mobitz I (Wenckebach) second-degree AV block — progressive PR prolongation before a dropped beat with grouped beating.",
+      "Hiatal hernia — a benign retrocardiac air-fluid level."
     ],
     "criticalManagementItems": [
       "NPO and IV fluids",

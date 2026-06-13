@@ -258,10 +258,6 @@
         ],
         "coreActions": [
           {
-            "item": "identifies a clear/near-clear film",
-            "points": 6
-          },
-          {
             "item": "notes it screens for an infectious/aspiration precipitant",
             "points": 4
           }
@@ -281,7 +277,7 @@
       "max": 10,
       "prompt": "With a normal glucose, no intracranial bleed on CT, a low thiamine level, and the classic triad in a malnourished drinker, what is your diagnosis and what did you rule out?",
       "rubric": "Wernicke encephalopathy (6). Cites the triad — encephalopathy, ophthalmoplegia/nystagmus, gait ataxia — in a thiamine-deficient malnourished drinker, and explicitly excludes hypoglycemia, intracranial bleed, and CNS infection (3). Notes it is a clinical diagnosis requiring immediate empiric thiamine and that untreated it can progress to irreversible Korsakoff syndrome (bonus,1).",
-      "idealAnswer": "Wernicke encephalopathy. ",
+      "idealAnswer": "Wernicke encephalopathy — the classic triad of encephalopathy, ophthalmoplegia/nystagmus, and gait ataxia in a thiamine-deficient malnourished drinker with a low thiamine level. The normal glucose, normal CT, and absence of CNS infection rule out hypoglycemia, intracranial bleed, and meningitis/encephalitis. It is a clinical diagnosis requiring immediate empiric thiamine before glucose.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

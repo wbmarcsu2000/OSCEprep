@@ -134,7 +134,7 @@
       "reveal": true,
       "prompt": "What is the single most important level to check, and what else do you order?",
       "rubric": "Serum ACETAMINOPHEN level with timing of ingestion (CANT-MISS,5). LFTs (2). INR/coags (2). BMP — renal function, glucose (2). ABG/lactate for severity (1). Salicylate level and co-ingestant screen (2). Recognizes the Rumack-Matthew nomogram applies to a single timed ingestion (1). PENALTY: not checking an acetaminophen level (-3).",
-      "idealAnswer": "Order: Serum ACETAMINOPHEN level with timing of ingestion.",
+      "idealAnswer": "The single most important level is a timed serum acetaminophen level (note the time of ingestion). Also order LFTs, INR/coagulation studies, a BMP (renal function and glucose), an ABG/lactate for severity, and a salicylate level / co-ingestant screen.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -168,7 +168,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm/mild tachycardia, no acute ischemia. CREDIT: rate & rhythm (6); recognizes a normal tracing and that it screens for co-ingestant effects (4); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = established pathologic Q waves in II/III/aVF without acute ST elevation (old inferior MI). CREDIT: systematic rate & rhythm read (6); identifies the inferior Q waves (4); recognizes them as old, not acute (3). PENALTY: reading the old Q waves as an acute event, or calling the study normal / missing the abnormality (-3).",
       "keyFindings": [
         "pathologic Q waves in the inferior leads",
         "recognizes these as old, not acute"
@@ -206,7 +206,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = small dense calcified granuloma (benign, old healed granulomatous disease). CREDIT: identifies the calcified granuloma (6); recognizes it as a benign healed finding, not malignancy (4). PENALTY: working up a clearly calcified benign nodule, or calling the study normal / missing the finding (-3).",
       "keyFindings": [
         "identifies a calcified granuloma",
         "recognizes it as a benign healed finding"
@@ -242,7 +242,7 @@
       "max": 10,
       "prompt": "Elevated acetaminophen level with rising AST/ALT and a climbing INR. What is your diagnosis and what predicts a poor outcome?",
       "rubric": "Acetaminophen-induced acute liver injury / failure (6). Names poor-prognosis markers — rising INR, acidosis, renal failure, encephalopathy (King's College criteria) (4).",
-      "idealAnswer": "Acetaminophen-induced liver injury. ",
+      "idealAnswer": "Acetaminophen-induced acute liver injury/failure. Poor-prognosis markers (King's College criteria): rising INR/coagulopathy, metabolic acidosis (low pH/high lactate), renal failure, and encephalopathy.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -272,7 +272,7 @@
             "points": 4
           },
           {
-            "item": "Activated charcoal if <",
+            "item": "Activated charcoal if ingestion <4 hours",
             "points": 3
           },
           {
@@ -302,7 +302,7 @@
       ],
       "optionalActions": [
         "Monitor INR/pH/Cr/lactate and mental status (King's College)",
-        "Activated charcoal if <",
+        "Activated charcoal if ingestion <4 hours",
         "Rumack-Matthew nomogram for timed level",
         "Hepatology/transplant referral for ALF",
         "Psychiatric evaluation if intentional"
@@ -333,7 +333,7 @@
       "suicidal_ideation"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "25-year-old woman, nauseated, uncomfortable, somewhat guarded about details. Becomes more forthcoming when asked directl",
+    "affect": "25-year-old woman, nauseated, uncomfortable, somewhat guarded about details. Becomes more forthcoming when asked directly.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
@@ -565,8 +565,8 @@
       "Serum ACETAMINOPHEN level with timing of ingestion"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm/mild tachycardia; obtained to screen for co-ingestant effects; no acute ischemia.",
-      "No acute process (low yield)."
+      "Evidence of prior inferior myocardial infarction (Q waves, no acute changes).",
+      "Calcified granuloma (benign, old granulomatous disease)."
     ],
     "criticalManagementItems": [
       "N-acetylcysteine (give empirically)"

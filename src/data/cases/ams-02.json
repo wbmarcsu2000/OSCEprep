@@ -56,7 +56,7 @@
       "assetNeeded": true,
       "imageDescription": "No consolidation or effusion (obtained to exclude pneumonia as the infectious source).",
       "searchTerms": [
-        "chest radiograph consolidation effusion (obtained exclude"
+        "normal PA chest radiograph no consolidation effusion"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -184,7 +184,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = electrical alternans with low voltage and tachycardia. CREDIT: recognizes electrical alternans / beat-to-beat QRS amplitude alternation (7); notes low voltage (5); links alternans + low voltage + tachycardia to a large pericardial effusion/tamponade (3). PENALTY: calling the study normal sinus tachycardia / missing the alternans (-3).",
       "keyFindings": [
         "beat-to-beat QRS amplitude alternation",
         "links alternans + low voltage + tachycardia to pericardial effusion/tamponade"
@@ -238,15 +238,11 @@
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: No consolidation or effusion (obtained to exclude pneumonia as the infectious source).",
+            "item": "Recognizes a normal film: no consolidation or effusion (obtained to exclude pneumonia as the infectious source).",
             "points": 6
           }
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal film",
-            "points": 6
-          },
           {
             "item": "notes it excludes pneumonia as the source",
             "points": 4
@@ -267,7 +263,7 @@
       "max": 10,
       "prompt": "Given the pyuria/bacteriuria, leukocytosis, elevated lactate, and AKI, what is your diagnosis?",
       "rubric": "Urosepsis causing delirium (6). Recognizes sepsis physiology — hypotension, tachycardia, elevated lactate, AKI (3). Notes delirium is multifactorial in the elderly (bonus,1).",
-      "idealAnswer": "Urosepsis with delirium. ",
+      "idealAnswer": "Urosepsis with delirium: pyuria/bacteriuria localize the source to the urinary tract, and the leukocytosis, elevated lactate, hypotension/tachycardia, and AKI reflect sepsis physiology with end-organ hypoperfusion. Delirium is multifactorial in the elderly but is driven here by the infection.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -616,7 +612,7 @@
       "Urinalysis + urine culture"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Electrical alternans with low voltage (suggests large pericardial effusion).",
       "No consolidation or effusion (obtained to exclude pneumonia as the infectious source)."
     ],
     "criticalManagementItems": [

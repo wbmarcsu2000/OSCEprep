@@ -139,7 +139,28 @@
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "Recognizes cellulitis is mainly clinical; mark the borders to track progression",
+            "points": 4
+          },
+          {
+            "item": "Assess for necrotizing features and abscess at the bedside",
+            "points": 4
+          },
+          {
+            "item": "Ultrasound if abscess/DVT suspected",
+            "points": 3
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Blood cultures only if systemically ill",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {
@@ -162,7 +183,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm/mild tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = sinus bradycardia (~46) with benign J-point elevation, no acute ischemia. CREDIT: recognizes the slow rate / sinus bradycardia (7); no acute ischemic changes (5); systematic read (3). PENALTY: missing the slow rate / over-reading (-2).",
       "keyFindings": [
         "recognizes sinus bradycardia",
         "systematic read confirming no ischemia"
@@ -199,7 +220,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = pleural effusion (costophrenic-angle blunting with a meniscus). CREDIT: identifies the blunted costophrenic angle with a meniscus (6); names a pleural effusion (4). PENALTY: calling the film normal / missing the effusion (-2).",
       "keyFindings": [
         "blunted costophrenic angle with meniscus",
         "identifies a pleural effusion"
@@ -236,7 +257,7 @@
       "max": 10,
       "prompt": "Spreading erythema/warmth/tenderness with a portal of entry, no necrotizing features. What is your diagnosis and what did you rule out?",
       "rubric": "Cellulitis (6). Explicitly excludes necrotizing fasciitis (no pain out of proportion, crepitus, bullae, or systemic toxicity) and abscess/DVT (4).",
-      "idealAnswer": "Cellulitis. ",
+      "idealAnswer": "Cellulitis. Necrotizing fasciitis is argued against by the absence of pain out of proportion, crepitus, bullae, skin necrosis, and systemic toxicity; no fluctuant abscess and no cord/calf findings to suggest DVT.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -457,7 +478,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_calf_tenderness_finding_1",
-      "finding": "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bul",
+      "finding": "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO cord/severe calf tenderness (helps distinguish DVT).",
       "revealedBy": [
         "assess_calf_tenderness"
       ],
@@ -479,7 +500,7 @@
     "diagnosticFramework": "60M presents with 2 days of an expanding red, warm, painful area on the lower left leg, with fever. The diagnosis is Cellulitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bul"
+      "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO cord/severe calf tenderness (helps distinguish DVT)."
     ],
     "keyDiagnosticFindings": [
       "CBC",
@@ -507,8 +528,8 @@
     "criticalExamItems": [],
     "criticalWorkupItems": [],
     "criticalInterpretationItems": [
-      "Sinus rhythm/mild tachycardia; no acute ischemic changes.",
-      "No acute process (low yield)."
+      "Sinus bradycardia (~46) with benign J-point elevation; no acute ischemic changes.",
+      "Pleural effusion (meniscus, costophrenic-angle blunting)."
     ],
     "criticalManagementItems": [
       "Antibiotics appropriate to purulence",

@@ -273,7 +273,7 @@
       "max": 10,
       "prompt": "Free air under the diaphragm on CXR, free intraperitoneal air with focal duodenal/antral wall discontinuity on CT, leukocytosis, elevated lactate, and only mildly elevated lipase. What is your diagnosis and what did you rule out?",
       "rubric": "Perforated peptic ulcer (perforated viscus) (6). Cites free air plus focal wall defect with leukocytosis; explicitly excludes primary pancreatitis (lipase not markedly elevated) and mesenteric ischemia (no vascular occlusion/pneumatosis on CT) (4).",
-      "idealAnswer": "Perforated peptic ulcer. ",
+      "idealAnswer": "Perforated peptic ulcer (perforated viscus) — free air under the diaphragm on CXR with free intraperitoneal air and a focal duodenal/antral wall discontinuity on CT, plus leukocytosis and an elevated lactate. Ruled out: primary pancreatitis (lipase only mildly elevated) and mesenteric ischemia (no vascular occlusion or pneumatosis on CT).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

@@ -139,7 +139,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs incl. AST/ALT pattern (CANT-MISS,3). Bilirubin (fractionated) (2). INR/coags — synthetic function (3). ACETAMINOPHEN level (CANT-MISS,3). Viral hepatitis serologies — A/B/C (3). RUQ ultrasound (1). PENALTY: not checking an acetaminophen level in acute hepatocellular injury (-3).",
-      "idealAnswer": "Order: AST/ALT pattern; ACETAMINOPHEN level.",
+      "idealAnswer": "Order LFTs (note the AST/ALT hepatocellular pattern, ALT>AST and markedly elevated), fractionated bilirubin, INR/coagulation studies (synthetic function), an acetaminophen level, viral hepatitis serologies (A/B/C), and a RUQ ultrasound.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -178,7 +178,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = poor R-wave progression across V1-V4. CREDIT: systematic rate & rhythm read (7); recognizes poor R-wave progression (5); gives a differential (prior anterior MI, LVH, lead placement) (3). PENALTY: calling the study normal / missing the abnormality (-3).",
       "keyFindings": [
         "recognizes poor R-wave progression",
         "gives a differential (prior anterior MI, LVH, lead placement)"
@@ -215,7 +215,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = dextrocardia (cardiac apex on the right). CREDIT: recognizes dextrocardia (6); verifies side markers / lead placement before calling it (4). PENALTY: calling the study normal / missing the abnormality (-3).",
       "keyFindings": [
         "recognizes dextrocardia",
         "verifies side markers / lead placement before calling it"
@@ -252,7 +252,7 @@
       "max": 10,
       "prompt": "ALT>AST in the thousands, a negative acetaminophen level, and a positive Hepatitis A IgM. What is your diagnosis and what must you monitor?",
       "rubric": "Acute viral hepatitis (Hepatitis A) (6). Monitors for acute liver failure — rising INR and encephalopathy/asterixis would change management (4).",
-      "idealAnswer": "Acute viral hepatitis. ",
+      "idealAnswer": "Acute viral hepatitis (Hepatitis A). Monitor for progression to acute liver failure: trend the INR and watch for encephalopathy/asterixis, which would change management and prompt hepatology/transplant referral.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -563,7 +563,9 @@
     "finalDiagnosis": "Acute viral hepatitis",
     "diagnosticFramework": "28M presents with a week of fatigue, nausea, right upper quadrant discomfort, dark urine, and now jaundice, following recent travel. The diagnosis is Acute viral hepatitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [
-      "drug use"
+      "recent travel to a region with poor sanitation and questionable food/water",
+      "new tattoo abroad and unprotected sex (Hep B/C exposures)",
+      "no significant acetaminophen use"
     ],
     "keyPhysicalExamFindings": [
       "Abdomen: tender hepatomegaly in the RUQ; no ascites; no stigmata of chronic liver disease.",
@@ -607,8 +609,8 @@
       "ACETAMINOPHEN level"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No acute process (low yield)."
+      "Poor R-wave progression across the precordium.",
+      "Dextrocardia."
     ],
     "criticalManagementItems": [
       "Supportive care and avoid hepatotoxins",

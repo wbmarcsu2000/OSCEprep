@@ -22,7 +22,7 @@
   "dx": {
     "labs": {
       "LFTs": "AST 4200, ALT 3100 — massive transaminase elevation (>25–50x ULN) that rose rapidly and on repeat 48–72h later falls rapidly toward baseline once perfusion restored; alkaline phosphatase only mildly up.",
-      "Bilirubin": "Total bilirubin mildly elevated (~2.5) — disproportionately low relative to the huge transaminases.",
+      "Bilirubin": "Total bilirubin mildly elevated (~2.5 mg/dL) — disproportionately low relative to the huge transaminases.",
       "LDH": "LDH markedly elevated; ALT:LDH ratio LOW (<1.5) — favors ischemic over viral injury.",
       "Acetaminophen": "Acetaminophen level UNDETECTABLE (excludes APAP toxicity — the key mimic).",
       "ViralHepNAT": "Hepatitis A IgM, B surface antigen/core IgM, and C viral load all NEGATIVE (excludes acute viral hepatitis).",
@@ -258,7 +258,7 @@
       "max": 10,
       "prompt": "Massive transaminases (AST 4200/ALT 3100) with disproportionately mild bilirubin, markedly elevated LDH with a low ALT:LDH ratio, undetectable acetaminophen, negative viral serologies, AKI/elevated lactate, and a documented period of profound hypotension. What is your diagnosis and what did you rule out?",
       "rubric": "Ischemic hepatitis (shock liver) (6). Cites the hypoperfusion insult with massive transaminases, low ALT:LDH ratio, and disproportionately mild bilirubin; explicitly excludes acetaminophen toxicity (undetectable level) and acute viral hepatitis (negative serologies), and expects a rapid downtrend with restored perfusion (4).",
-      "idealAnswer": "Ischemic hepatitis (shock liver). ",
+      "idealAnswer": "Ischemic hepatitis (shock liver): the hypoperfusion insult explains the massive transaminases, low ALT:LDH ratio, and disproportionately mild bilirubin, and the LFTs should downtrend rapidly once perfusion is restored. Ruled out acetaminophen toxicity (undetectable level) and acute viral hepatitis (negative serologies).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

@@ -151,7 +151,7 @@
       "label": "Read EKG",
       "max": 15,
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm, nonspecific changes, NO ST elevation. CREDIT: rate & rhythm (4); EXPLICITLY recognizes there is no STEMI - essential before any anticoagulation/thrombolysis (7); systematic read (2). PENALTY: misreading as a STEMI and giving thrombolytics/anticoagulation (-3).",
+      "rubric": "Findings = left ventricular hypertrophy by voltage with a lateral strain pattern; NO acute STEMI. CREDIT: applies LVH voltage criteria (4); EXPLICITLY recognizes the strain repolarization changes are NOT an acute STEMI - essential before any anticoagulation/thrombolysis (7); systematic read (2). PENALTY: misreading the strain pattern as a STEMI and giving thrombolytics/anticoagulation (-3).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
@@ -602,7 +602,7 @@
       "Bilateral arm BP / pulse exam"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm; nonspecific changes; NO ST-segment elevation (important: this is not a STEMI).",
+      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
       "Widened mediastinum; enlarged aortic knob."
     ],
     "criticalManagementItems": [

@@ -270,7 +270,7 @@
       "max": 10,
       "prompt": "Blood smear shows intraerythrocytic ring forms of P. falciparum at ~3% parasitemia, RDT positive, thrombocytopenia, mild anemia, with normal creatinine, glucose, and lactate. What is your diagnosis and what did you rule out?",
       "rubric": "Malaria — Plasmodium falciparum (6). Cites positive smear/RDT with species and parasitemia; explicitly assesses severity (here UNCOMPLICATED: parasitemia <5%, no end-organ dysfunction, no cerebral/renal/pulmonary involvement, normal lactate/glucose) and notes blood cultures help exclude typhoid/bacterial sepsis (4).",
-      "idealAnswer": "Malaria due to Plasmodium falciparum (currently uncomplicated). ",
+      "idealAnswer": "Malaria due to Plasmodium falciparum, currently uncomplicated — a positive smear/RDT with parasitemia ~3% (<5%) and normal creatinine, glucose, and lactate, with no cerebral, renal, or pulmonary end-organ dysfunction. Negative blood cultures help exclude typhoid/enteric fever and bacterial sepsis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

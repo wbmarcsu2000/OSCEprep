@@ -56,7 +56,8 @@
       "assetNeeded": true,
       "imageDescription": "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion.",
       "searchTerms": [
-        "chest radiograph Right lower lobe consolidation"
+        "right lower lobe consolidation chest x-ray",
+        "lobar pneumonia radiograph"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -177,7 +178,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = left ventricular hypertrophy by voltage with a lateral strain pattern; not an acute STEMI. CREDIT: applies LVH voltage criteria (7); recognizes the strain repolarization pattern, not acute ischemia/STEMI (5); systematic read (3). PENALTY: over-calling the strain changes as acute ischemia/STEMI (-3).",
       "keyFindings": [
         "applies LVH voltage criteria",
         "recognizes a strain pattern, not acute STEMI"
@@ -264,7 +265,7 @@
       "max": 10,
       "prompt": "Focal consolidation, leukocytosis, confusion, elevated urea, and hypotension. What is your diagnosis and how severe is it?",
       "rubric": "Community-acquired pneumonia, severe (6). Quantifies severity using CURB-65 / PSI — confusion, urea, age, vitals — supporting admission and possibly ICU (4).",
-      "idealAnswer": "Community-acquired pneumonia. ",
+      "idealAnswer": "Severe community-acquired pneumonia — a high CURB-65 (Confusion, elevated Urea/BUN, age >=65, borderline RR, low-normal BP) supports admission and assessment for ICU-level care.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -602,7 +603,7 @@
       "A severity score — CURB-65 / PSI"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
       "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion."
     ],
     "criticalManagementItems": [

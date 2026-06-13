@@ -141,7 +141,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs incl. AST:ALT ratio and GGT (CANT-MISS,3). Bilirubin (2). INR and albumin — synthetic function (3). CBC (1). Acetaminophen level (CANT-MISS,2). Viral hepatitis serologies (2). RUQ ultrasound (1). Calculate severity — Maddrey/MELD (1). PENALTY: not excluding viral/acetaminophen causes (-2).",
-      "idealAnswer": "Order: AST:ALT ratio and GGT; Acetaminophen level.",
+      "idealAnswer": "Order LFTs (AST:ALT ratio and GGT), fractionated bilirubin, INR and albumin (synthetic function), CBC, an acetaminophen level, viral hepatitis serologies, and a RUQ ultrasound; then calculate severity (Maddrey discriminant function / MELD).",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -180,7 +180,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm/mild tachycardia, no acute ischemia. CREDIT: rate & rhythm (6); comments on watching QT with electrolyte derangements (4); no acute ischemia (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = left anterior fascicular block (marked left axis deviation, qR in aVL, rS inferiorly, near-normal QRS width). CREDIT: systematic rate & rhythm read (6); identifies the marked left axis deviation (4); recognizes left anterior fascicular block (3); distinguishes it from inferior MI (2). PENALTY: calling the study normal / missing the abnormality (-3).",
       "keyFindings": [
         "marked left axis deviation",
         "qR in aVL with rS inferiorly"
@@ -217,7 +217,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes screening for aspiration/infection (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = borderline cardiomegaly with an unfolded thoracic aorta; lungs clear. CREDIT: notes borderline cardiomegaly (6); notes the unfolded aorta as a chronic change (4). PENALTY: calling the study normal / missing the abnormality (-3).",
       "keyFindings": [
         "notes borderline cardiomegaly",
         "notes the unfolded aorta as chronic"
@@ -253,7 +253,7 @@
       "max": 10,
       "prompt": "AST:ALT >2:1, high bilirubin, prolonged INR, negative viral/APAP workup, heavy alcohol use. What is your diagnosis and how do you grade severity?",
       "rubric": "Alcoholic hepatitis (6). Grades severity with the Maddrey discriminant function (or MELD) to guide steroid use (4).",
-      "idealAnswer": "Alcoholic hepatitis. ",
+      "idealAnswer": "Alcoholic hepatitis. Grade severity with the Maddrey discriminant function (or MELD) to guide corticosteroid use (DF >=32 indicates severe disease).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -561,8 +561,8 @@
       "Acetaminophen level"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm/mild tachycardia; watch QT with electrolyte derangements; no acute ischemia.",
-      "No acute process (may screen for aspiration/infection)."
+      "Left anterior fascicular block.",
+      "Borderline cardiomegaly with an unfolded aorta."
     ],
     "criticalManagementItems": [
       "Alcohol cessation and supportive nutrition"

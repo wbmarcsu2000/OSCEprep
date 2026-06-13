@@ -275,7 +275,7 @@
       "max": 10,
       "prompt": "The chest X-ray shows a right-sided pneumothorax with a visceral pleural line and no mediastinal shift; the patient remains hemodynamically stable with a midline trachea, troponin is negative, and D-dimer is normal. What is your diagnosis and what did you rule out?",
       "rubric": "Primary spontaneous pneumothorax (6). Explicitly excludes tension pneumothorax (stable vitals, midline trachea, no mediastinal shift) and pulmonary embolism / ACS (negative D-dimer and troponin) (4).",
-      "idealAnswer": "Primary spontaneous pneumothorax. ",
+      "idealAnswer": "Primary spontaneous pneumothorax. Tension pneumothorax is excluded by the stable vitals, midline trachea, and absence of mediastinal shift; pulmonary embolism and ACS are argued against by the normal D-dimer and negative troponin.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

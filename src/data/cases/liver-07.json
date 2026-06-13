@@ -251,7 +251,7 @@
       "max": 10,
       "prompt": "Doppler shows absent/reversed flow in the hepatic veins with caudate lobe hypertrophy, ascites is a high-SAAG high-protein fluid, and JAK2 V617F is positive. What is your diagnosis and what did you rule out?",
       "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction), with an underlying myeloproliferative neoplasm (JAK2-positive) as the prothrombotic driver (6). Cites the Doppler outflow obstruction plus the high-SAAG/high-protein ascites; explicitly excludes simple cirrhosis, viral/toxic hepatitis, and right-heart failure (4).",
-      "idealAnswer": "Budd-Chiari syndrome (hepatic venous outflow obstruction) secondary to an underlying myeloproliferative neoplasm. ",
+      "idealAnswer": "Budd-Chiari syndrome (hepatic venous outflow obstruction), with the JAK2 V617F-positive myeloproliferative neoplasm as the prothrombotic driver: supported by the Doppler outflow obstruction with caudate hypertrophy and the high-SAAG/high-protein ascites. Ruled out simple cirrhosis, viral/toxic hepatitis, and right-heart failure/constrictive pericarditis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

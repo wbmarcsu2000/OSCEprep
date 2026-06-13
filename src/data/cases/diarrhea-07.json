@@ -270,7 +270,7 @@
       "max": 10,
       "prompt": "Urinary 5-HIAA is markedly elevated, chromogranin A is high, CT shows an ileal/mesenteric mass with liver metastases, DOTATATE PET is avid, and stool studies and TSH are normal. What is your diagnosis and what did you rule out?",
       "rubric": "Carcinoid syndrome from a metastatic well-differentiated neuroendocrine tumor (6). Cites elevated 5-HIAA/chromogranin A with hepatic metastases (explaining systemic serotonin escape) and DOTATATE-avid disease; explicitly excludes infection and thyroid disease via negative stool studies and normal TSH (4).",
-      "idealAnswer": "Carcinoid syndrome from a metastatic neuroendocrine tumor. ",
+      "idealAnswer": "Carcinoid syndrome from a metastatic well-differentiated neuroendocrine tumor. Supported by markedly elevated urinary 5-HIAA and chromogranin A with hepatic metastases (explaining systemic serotonin escape) and DOTATATE-avid disease. This excludes infection (negative stool studies) and thyroid disease (normal TSH).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

@@ -173,7 +173,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "rubric": "Findings = sinus rhythm with frequent premature atrial complexes (early abnormal P-wave morphology, narrow QRS, noncompensatory pauses). CREDIT: rate & rhythm (7); identifies the frequent PACs and distinguishes them from PVCs (narrow QRS, abnormal P) (5); systematic read (3). PENALTY: calling the tracing entirely normal / missing the abnormality, or mistaking the PACs for a sustained irregular atrial arrhythmia (-3).",
       "keyFindings": [
         "identifies premature atrial complexes",
         "distinguishes PACs from PVCs (narrow, abnormal P)"
@@ -210,7 +210,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no free air, clear bases. CREDIT: identifies a normal film (5); excludes free air (perforation) (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = old healed/healing rib fractures with bony callus along the lateral ribs; lungs clear. CREDIT: identifies the healed rib fractures with callus (5); recognizes them as old/benign rather than a pulmonary or pleural lesion (5). PENALTY: calling the film entirely normal / missing the finding, or mistaking the callus for a pulmonary/pleural lesion (-3).",
       "keyFindings": [
         "identifies healed rib fractures with callus",
         "recognizes them as old"
@@ -246,7 +246,7 @@
       "max": 10,
       "prompt": "Given the CT, what is your diagnosis and severity?",
       "rubric": "Uncomplicated acute (sigmoid) diverticulitis (6). Cites diverticula + wall thickening + fat stranding WITHOUT abscess/perforation (3). Notes the plan for interval colonoscopy after resolution to exclude malignancy (bonus,1).",
-      "idealAnswer": "Diverticulitis. ",
+      "idealAnswer": "Uncomplicated acute sigmoid diverticulitis — CT shows sigmoid diverticula with wall thickening and pericolic fat stranding, without abscess, free air, or fistula. Plan interval colonoscopy after resolution to exclude malignancy.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -585,8 +585,8 @@
       "CT abdomen/pelvis with contrast"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No free air under the diaphragm; clear lung bases (excludes perforation)."
+      "Sinus rhythm with frequent premature atrial complexes (early abnormal P waves, narrow QRS).",
+      "Old healed rib fractures with bony callus along the lateral ribs — a benign finding."
     ],
     "criticalManagementItems": [
       "Antibiotics"

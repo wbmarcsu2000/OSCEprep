@@ -262,10 +262,6 @@
         ],
         "coreActions": [
           {
-            "item": "correctly identifies no consolidation/effusion/edema/pneumothorax",
-            "points": 6
-          },
-          {
             "item": "notes the mismatch — clear film with cyanosis/hypoxemia unresponsive to O2 points to a dyshemoglobinemia",
             "points": 4
           }

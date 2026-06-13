@@ -268,7 +268,7 @@
       "max": 10,
       "prompt": "Given the CTPE and RV strain markers, what is your diagnosis and risk category?",
       "rubric": "Submassive (intermediate-risk) pulmonary embolism (6). Uses RV enlargement + elevated troponin/BNP, with syncope as a high-risk feature, to stratify (4).",
-      "idealAnswer": "Pulmonary embolism. ",
+      "idealAnswer": "Submassive (intermediate-risk) pulmonary embolism. Risk-stratified by RV enlargement on the CT pulmonary angiogram plus elevated troponin and BNP (right heart strain), with syncope itself a high-risk feature — the patient is normotensive, placing her in the intermediate- rather than high-risk category.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

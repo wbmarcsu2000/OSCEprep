@@ -273,7 +273,7 @@
       "max": 10,
       "prompt": "The echo shows asymmetric septal hypertrophy with systolic anterior motion of the mitral valve and a dynamic LVOT gradient, and the Holter captured nonsustained VT. What is your diagnosis and what did you rule out?",
       "rubric": "Hypertrophic obstructive cardiomyopathy (6). Cites asymmetric septal hypertrophy + SAM + dynamic LVOT obstruction on echo, distinguishes the dynamic murmur from fixed aortic stenosis (loudens with Valsalva, no carotid radiation, brisk upstroke), and recognizes the family history of sudden death plus NSVT as markers of arrhythmic/sudden-death risk (4).",
-      "idealAnswer": "Hypertrophic obstructive cardiomyopathy. ",
+      "idealAnswer": "Hypertrophic obstructive cardiomyopathy. The echo shows asymmetric septal hypertrophy, systolic anterior motion of the mitral valve, and a dynamic LVOT gradient — distinguishing it from fixed aortic stenosis (the murmur loudens with Valsalva, does not radiate to the carotids, and the carotid upstroke is brisk). I ruled out fixed valvular AS and a primary channelopathy; the family history of sudden death plus the NSVT on Holter mark a high arrhythmic/sudden-death risk.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

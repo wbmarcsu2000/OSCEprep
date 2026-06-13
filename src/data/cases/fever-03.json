@@ -36,7 +36,7 @@
       "source": "https://litfl.com/first-degree-heart-block-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
-      "verify": "From the LITFL 'First Degree AV Block' library page — download an example tracing that matches: Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular ( … and self-host with credit to litfl.com.",
+      "verify": "From the LITFL 'First Degree AV Block' library page — download an example tracing that matches: Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess. Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
       "imageDescription": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
@@ -273,7 +273,7 @@
       "max": 10,
       "prompt": "Positive blood cultures, a vegetation on echo, fever, and a new murmur. What is your diagnosis and framework?",
       "rubric": "Infective endocarditis (6). Applies the modified Duke criteria — major (positive cultures, echo vegetation) plus minor criteria (fever, predisposition, vascular/immunologic phenomena) (4).",
-      "idealAnswer": "Infective endocarditis. ",
+      "idealAnswer": "Infective endocarditis, diagnosed by the modified Duke criteria: two major criteria are met — persistently positive blood cultures with a typical organism and a vegetation with regurgitation on echo — supported by minor criteria including fever, a predisposition (injection drug use/valve disease), and vascular/immunologic phenomena (Janeway lesions, Osler nodes, Roth spots, hematuria).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -534,7 +534,7 @@
     },
     {
       "id": "inspect_nails_finding_4",
-      "finding": "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/R",
+      "finding": "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/Roth spots.",
       "revealedBy": [
         "inspect_nails",
         "inspect_palms_and_soles"
@@ -562,7 +562,7 @@
       "Splenomegaly if examined. Skin: track marks if examined.",
       "Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.",
       "Splenomegaly if examined. Skin: track marks if examined.",
-      "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/R"
+      "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/Roth spots."
     ],
     "keyDiagnosticFindings": [
       "BloodCultures",

@@ -269,10 +269,6 @@
         ],
         "coreActions": [
           {
-            "item": "identifies a clear, normal film",
-            "points": 6
-          },
-          {
             "item": "notes it screens for aspiration/pneumonia or pulmonary edema",
             "points": 4
           }
@@ -292,7 +288,7 @@
       "max": 10,
       "prompt": "Given a recent serotonergic medication change, normal glucose, negative co-ingestant tox, normal TSH, an elevated CK, and an exam with lower-extremity-predominant clonus, hyperreflexia, agitation, diaphoresis, and hyperthermia, what is your diagnosis and what did you rule out?",
       "rubric": "Serotonin syndrome (meets Hunter criteria — serotonergic agent plus clonus/hyperreflexia) (6). Explicitly excludes NMS (lead-pipe rigidity, bradyreflexia, neuroleptic exposure, slower onset), anticholinergic toxicity (dry skin/absent bowel sounds), sympathomimetic toxicity (negative tox), and CNS infection (no meningismus, normal glucose) (4).",
-      "idealAnswer": "Serotonin syndrome. ",
+      "idealAnswer": "Serotonin syndrome — it meets the Hunter criteria, with a recent serotonergic medication change plus lower-extremity-predominant clonus and hyperreflexia, alongside agitation, diaphoresis, and hyperthermia. Excluded: NMS (no lead-pipe rigidity/bradyreflexia or neuroleptic exposure, and onset is too rapid), anticholinergic toxicity (skin is diaphoretic, not dry), sympathomimetic toxicity (negative co-ingestant tox), and CNS infection (no meningismus, normal glucose).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

@@ -89,6 +89,10 @@
         "maxPoints": 25,
         "criticalActions": [
           {
+            "item": "Ruptured abdominal aortic aneurysm",
+            "points": 9
+          },
+          {
             "item": "Aortic dissection",
             "points": 4
           },
@@ -195,10 +199,6 @@
         ],
         "coreActions": [
           {
-            "item": "identifies sinus tachycardia",
-            "points": 7
-          },
-          {
             "item": "recognizes it as compensatory to hypovolemia/hemorrhage",
             "points": 4
           },
@@ -268,7 +268,7 @@
       "max": 10,
       "prompt": "Given the hypotension, dropping hemoglobin, and a bedside ultrasound showing a 7 cm aorta with free fluid, what is your diagnosis and reasoning?",
       "rubric": "Ruptured (leaking) abdominal aortic aneurysm (6). Links sudden tearing pain + pulsatile mass + hypotension + POCUS findings (dilated aorta with free/retroperitoneal fluid); recognizes this as a surgical emergency and excludes dissection/perforation (4).",
-      "idealAnswer": "Ruptured abdominal aortic aneurysm. ",
+      "idealAnswer": "Ruptured (leaking) abdominal aortic aneurysm — the sudden tearing pain with a pulsatile abdominal mass and hypotension in an elderly smoker, plus a bedside POCUS showing a 7 cm aorta with free fluid and a dropping hemoglobin, is diagnostic. This is a surgical emergency; dissection and perforated viscus are excluded.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

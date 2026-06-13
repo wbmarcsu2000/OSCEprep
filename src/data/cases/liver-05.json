@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Confirm/trend LFTs (2). Viral hepatitis serologies B and C (CANT-MISS,3). Metabolic workup — A1c, lipids (2). Iron studies, ceruloplasmin (if young), autoimmune markers, TSH to exclude other causes (3). RUQ ultrasound (2). Non-invasive fibrosis assessment — FIB-4 / elastography (2). PENALTY: diagnosing NAFLD without excluding other causes (-2).",
-      "idealAnswer": "Order: Viral hepatitis serologies B and C.",
+      "idealAnswer": "Confirm/trend the LFTs, send viral hepatitis serologies B and C, metabolic labs (A1c, lipids), and iron studies/ceruloplasmin/autoimmune markers/TSH to exclude other causes; obtain a RUQ ultrasound; and stage fibrosis non-invasively (FIB-4 / elastography).",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -163,9 +163,7 @@
       "contraindicatedTests": [
         "diagnosing NAFLD without excluding other causes"
       ],
-      "orderSensitiveActions": [
-        "diagnosing NAFLD without excluding other causes"
-      ]
+      "orderSensitiveActions": []
     },
     {
       "id": "ekg_read",
@@ -174,7 +172,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = Wolff-Parkinson-White pre-excitation (short PR, delta wave / slurred QRS upstroke, widened QRS). CREDIT: systematic rate & rhythm read (7); identifies the short PR and delta wave (5); recognizes the WPW pre-excitation pattern (3). PENALTY: calling the study normal / mistaking it for bundle branch block or missing the abnormality (-3).",
       "keyFindings": [
         "short PR interval",
         "delta wave / slurred QRS upstroke"
@@ -211,7 +209,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = small apical pneumothorax (thin visceral pleural line with absent lung markings peripherally). CREDIT: identifies the visceral pleural line with absent peripheral markings (6); recognizes a (small) pneumothorax (4). PENALTY: calling the study normal / mistaking a skin fold for the pleural line or missing the abnormality (-3).",
       "keyFindings": [
         "visceral pleural line with absent peripheral markings",
         "identifies a (small) pneumothorax"
@@ -248,7 +246,7 @@
       "max": 10,
       "prompt": "Mild ALT>AST elevation, negative viral/other workup, steatosis on ultrasound, and metabolic syndrome. What is your diagnosis and next assessment?",
       "rubric": "Non-alcoholic fatty liver disease (likely NASH given diabetes) (6). Stages fibrosis with a non-invasive tool (FIB-4 / elastography) to identify those needing closer follow-up (4).",
-      "idealAnswer": "NAFLD / NASH. ",
+      "idealAnswer": "NAFLD/NASH (likely NASH given diabetes). Next, stage fibrosis non-invasively (FIB-4 or elastography) to identify patients needing closer follow-up/hepatology referral.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -564,8 +562,8 @@
       "Viral hepatitis serologies B and C"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes (also documents cardiovascular risk context).",
-      "No acute process (low yield)."
+      "Wolff-Parkinson-White pre-excitation pattern.",
+      "Apical pneumothorax (pleural line, absent peripheral lung markings)."
     ],
     "criticalManagementItems": [
       "Lifestyle weight loss (diet and exercise)"

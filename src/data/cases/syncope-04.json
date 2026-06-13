@@ -271,7 +271,7 @@
       "max": 10,
       "prompt": "Given the echo showing severe AS, what is your diagnosis and why is exertional syncope significant?",
       "rubric": "Severe aortic stenosis with exertional syncope (6). Recognizes that the onset of syncope/angina/heart failure in severe AS signals a poor prognosis and the need for valve intervention (4).",
-      "idealAnswer": "Aortic stenosis. ",
+      "idealAnswer": "Symptomatic severe aortic stenosis. Exertional syncope is significant because the onset of syncope (or angina or heart failure) in severe AS marks the transition to symptomatic disease with a markedly poor prognosis and sharply increased risk of sudden death — it mandates urgent referral for aortic valve replacement.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -494,7 +494,7 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_carotids_finding_1",
-      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
       "revealedBy": [
         "auscultate_carotids",
         "assess_murmur_radiation"
@@ -505,7 +505,7 @@
     },
     {
       "id": "auscultate_aortic_area_finding_2",
-      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -539,8 +539,7 @@
     "diagnosticFramework": "72M presents after passing out while climbing stairs; he also reports months of exertional breathlessness and chest tightness. The diagnosis is Aortic stenosis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
-      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the car",
+      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
       "Lungs: clear. Neuro: no focal deficit."
     ],
     "keyDiagnosticFindings": [

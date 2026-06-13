@@ -81,6 +81,10 @@
         "maxPoints": 25,
         "criticalActions": [
           {
+            "item": "Hypoglycemia",
+            "points": 9
+          },
+          {
             "item": "Stroke/TIA",
             "points": 4
           }
@@ -112,6 +116,7 @@
         "penalties": []
       },
       "mustNotMiss": [
+        "Hypoglycemia",
         "Stroke/TIA"
       ],
       "acceptableAlternatives": [
@@ -163,7 +168,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = hypokalemia pattern. CREDIT: recognizes the hypokalemia pattern (7); identifies prominent U waves (5); notes ST depression / T-wave flattening (3). PENALTY: calling the study normal / missing the hypokalemia changes (-3).",
       "keyFindings": [
         "U waves",
         "ST depression / T-wave flattening of hypokalemia"
@@ -201,7 +206,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low diagnostic yield / only to exclude aspiration (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = azygos lobe (benign anatomic variant). CREDIT: identifies the azygos fissure/lobe — a curvilinear fissure with a teardrop azygos vein (6); recognizes it as a benign anatomic variant of no clinical significance (4). PENALTY: inventing pathology / mistaking the variant for disease (-2).",
       "keyFindings": [
         "identifies the azygos fissure/lobe",
         "recognizes it as a benign anatomic variant"
@@ -237,7 +242,7 @@
       "max": 10,
       "prompt": "The glucose is 38. What is your diagnosis and why is this patient at particular risk?",
       "rubric": "Hypoglycemia (6). Identifies the mechanism — insulin + sulfonylurea with a skipped meal and worsening CKD prolonging drug effect (4).",
-      "idealAnswer": "Hypoglycemia. ",
+      "idealAnswer": "Hypoglycemia (glucose 38). This patient is at particular risk because of combined insulin and sulfonylurea use with a skipped meal, compounded by worsening CKD that reduces renal clearance and prolongs the drugs' hypoglycemic effect.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -535,8 +540,8 @@
       "IMMEDIATE fingerstick glucose"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes (hypoglycemia can occasionally provoke ischemia).",
-      "No acute cardiopulmonary process (low yield here; obtained if aspiration suspected)."
+      "Hypokalemia pattern (U waves, ST depression).",
+      "Azygos lobe (benign anatomic variant)."
     ],
     "criticalManagementItems": [
       "Immediate dextrose/glucagon or oral carbohydrate"

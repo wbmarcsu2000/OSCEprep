@@ -278,7 +278,7 @@
       "max": 10,
       "prompt": "Stool shows a positive Giardia antigen with cysts/trophozoites on O&P, absent fecal leukocytes, no occult blood, negative bacterial culture, and negative C. difficile. What is your diagnosis and what did you rule out?",
       "rubric": "Giardiasis (6). Cites the positive Giardia antigen/O&P with a non-inflammatory pattern (absent fecal leukocytes, no occult blood) and explicitly rules out bacterial gastroenteritis and inflammatory causes (IBD); notes celiac remains a consideration only if symptoms persist after treatment (4).",
-      "idealAnswer": "Giardiasis. ",
+      "idealAnswer": "Giardiasis. Supported by the positive Giardia antigen and cysts/trophozoites on O&P with a non-inflammatory pattern (absent fecal leukocytes, no occult blood). This rules out bacterial gastroenteritis and inflammatory causes (IBD); celiac remains a consideration only if symptoms persist after treatment.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

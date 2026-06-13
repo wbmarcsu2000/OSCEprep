@@ -543,8 +543,8 @@
       "revealedBy": [
         "assess_calf_tenderness"
       ],
-      "importance": "core",
-      "points": 2,
+      "importance": "critical",
+      "points": 5,
       "normalIfNotPresent": "No calf tenderness."
     }
   ],
@@ -590,8 +590,12 @@
       "Risk-stratify PE severity"
     ],
     "criticalHistoryItems": [],
-    "criticalExamItems": [],
-    "criticalWorkupItems": [],
+    "criticalExamItems": [
+      "assess_calf_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "CT pulmonary angiogram"
+    ],
     "criticalInterpretationItems": [
       "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
       "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."

@@ -38,9 +38,9 @@
       "verify": "From the LITFL 'Hypokalaemia' library page — download an example tracing that matches: Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute isc … and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "imageDescription": "Sinus tachycardia with possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
       "searchTerms": [
-        "12-lead EKG Sinus tachycardia; possible hypokalemic"
+        "sinus tachycardia hypokalemia 12-lead ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)"
     },
@@ -49,12 +49,12 @@
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20abdominal%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "findings": "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
       "verify": "Pick a CC abdominal film that is normal/non-dilated (to contrast with toxic megacolon).",
       "assetNeeded": true,
-      "imageDescription": "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "imageDescription": "Upright abdominal radiograph, no colonic dilation.",
       "searchTerms": [
-        "chest radiograph Here: marked colonic dilation"
+        "normal abdominal x-ray upright"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -79,12 +79,12 @@
       "max": 25,
       "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
       "rubric": "C. difficile colitis (leading,8). Other infectious diarrhea (core,3). Antibiotic-associated diarrhea (non-C.diff) (core,3). Inflammatory bowel disease (core,3). Considers complications — toxic megacolon/fulminant colitis (CANT-MISS,3). Connects recent antibiotics + healthcare exposure + watery diarrhea to C. difficile (core,3).",
-      "idealAnswer": "Leading diagnosis: difficile colitis. Must-not-miss diagnoses to exclude: Considers complications — toxic megacolon/fulminant colitis. Also reasonable: Other infectious diarrhea; diff); Inflammatory bowel disease; difficile.",
+      "idealAnswer": "Leading diagnosis: C. difficile colitis. Must-not-miss: toxic megacolon/fulminant colitis. Also reasonable: other infectious diarrhea, antibiotic-associated diarrhea (non-C. difficile), inflammatory bowel disease. Links recent antibiotics and healthcare exposure with watery diarrhea to C. difficile.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "difficile colitis",
+            "item": "C. difficile colitis",
             "points": 8
           },
           {
@@ -98,7 +98,7 @@
             "points": 3
           },
           {
-            "item": "diff)",
+            "item": "Antibiotic-associated diarrhea (non-C. difficile)",
             "points": 3
           },
           {
@@ -106,7 +106,7 @@
             "points": 3
           },
           {
-            "item": "difficile",
+            "item": "Connects recent antibiotics + healthcare exposure + watery diarrhea to C. difficile",
             "points": 3
           }
         ],
@@ -118,9 +118,8 @@
       ],
       "acceptableAlternatives": [
         "Other infectious diarrhea",
-        "diff)",
-        "Inflammatory bowel disease",
-        "difficile"
+        "Antibiotic-associated diarrhea (non-C. difficile)",
+        "Inflammatory bowel disease"
       ]
     },
     {
@@ -130,21 +129,43 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool C. difficile toxin/PCR (CANT-MISS,5). CBC — WBC as a severity marker (3). BMP — potassium, renal function (3). Lactate (2). Abdominal imaging if severe to assess for megacolon (2). PENALTY: ordering antimotility agents as part of management (-2 — addressed in management).",
-      "idealAnswer": "Order: difficile toxin/PCR.",
+      "idealAnswer": "Order: stool C. difficile toxin/PCR; CBC (WBC as a severity marker); BMP (potassium, renal function); lactate; abdominal imaging if severe to assess for megacolon.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "difficile toxin/PCR",
+            "item": "Stool C. difficile toxin/PCR",
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CBC — WBC as a severity marker",
+            "points": 3
+          },
+          {
+            "item": "BMP — potassium, renal function",
+            "points": 3
+          },
+          {
+            "item": "Lactate",
+            "points": 2
+          },
+          {
+            "item": "Abdominal imaging if severe to assess for megacolon",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Ordering antimotility agents (addressed in management)",
+            "points": -2
+          }
+        ]
       },
       "requiredTests": [
-        "difficile toxin/PCR"
+        "Stool C. difficile toxin/PCR"
       ],
       "optionalTests": [],
       "contraindicatedTests": [],
@@ -218,17 +239,17 @@
         "assesses colonic caliber"
       ],
       "criticalFindings": [
-        "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+        "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
       ],
       "commonMistakes": [
         "missing the purpose (megacolon screen)"
       ],
-      "idealAnswer": "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "idealAnswer": "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+            "item": "Recognizes: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
             "points": 5
           }
         ],
@@ -253,7 +274,7 @@
       "max": 10,
       "prompt": "Stool C. diff is positive with marked leukocytosis and an AKI. What is your diagnosis and severity?",
       "rubric": "C. difficile colitis, severe (6). Cites positive toxin/PCR plus severity markers — WBC >15, rising creatinine (4).",
-      "idealAnswer": "C. difficile colitis. ",
+      "idealAnswer": "Severe C. difficile colitis. Supported by the positive stool toxin/PCR plus severity markers — WBC >15 (marked leukocytosis) and a rising creatinine (AKI).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -548,11 +569,11 @@
       "assess_rebound_tenderness"
     ],
     "criticalWorkupItems": [
-      "difficile toxin/PCR"
+      "Stool C. difficile toxin/PCR"
     ],
     "criticalInterpretationItems": [
       "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
     ],
     "criticalManagementItems": [
       "Oral vancomycin or fidaxomicin",
@@ -560,11 +581,11 @@
     ],
     "keyImageInterpretationFindings": [
       "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
     ],
     "criticalImageInterpretationFindings": [
       "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "Here: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
     ],
     "imageInterpretationPearls": [
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",

@@ -170,7 +170,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia from anemia) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = atrial flutter with 2:1 AV conduction (ventricular rate ~150). CREDIT: recognizes atrial flutter with 2:1 conduction (7); identifies sawtooth flutter waves in the inferior leads (II/III/aVF) (5); systematic read (3). PENALTY: mislabeling as sinus tachycardia / missing the flutter waves (-3).",
       "keyFindings": [
         "sawtooth flutter waves",
         "regular atrial activity ~300/min"
@@ -208,7 +208,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = cardiomegaly (cardiothoracic ratio >0.5) on a PA film. CREDIT: measures the cardiothoracic ratio (6); identifies cardiomegaly on an adequate PA film (4). PENALTY: calling the study normal / missing the enlarged silhouette (-2).",
       "keyFindings": [
         "measures the cardiothoracic ratio",
         "identifies cardiomegaly on a PA film"
@@ -245,7 +245,7 @@
       "max": 10,
       "prompt": "Given the microcytic indices and low ferritin/high TIBC, what is your diagnosis and the likely source?",
       "rubric": "Iron deficiency anemia (6). Cites low ferritin + high TIBC + microcytosis, with menorrhagia as the source (4).",
-      "idealAnswer": "Iron deficiency anemia. ",
+      "idealAnswer": "Iron deficiency anemia, supported by microcytosis with a low ferritin and high TIBC. The likely source is the patient's chronic menorrhagia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -549,8 +549,8 @@
       "Iron studies — ferritin/iron/TIBC"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia (compensatory); no acute ischemic changes.",
-      "No acute cardiopulmonary process (low yield)."
+      "Atrial flutter with 2:1 AV conduction (ventricular rate ~150).",
+      "Cardiomegaly (cardiothoracic ratio >0.5) on a PA film."
     ],
     "criticalManagementItems": [
       "Iron repletion (oral or IV iron)",

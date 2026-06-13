@@ -284,7 +284,7 @@
       "max": 10,
       "prompt": "QTc 530 ms, telemetry capturing a self-terminating run of polymorphic VT with a twisting axis, low potassium and magnesium, and a family history of sudden death. What is your diagnosis and why is it dangerous?",
       "rubric": "Long QT syndrome with torsades de pointes (6). Explains the danger — torsades can degenerate into ventricular fibrillation and cause sudden cardiac death; QT-prolonging drugs and low K/Mg potentiate it (4).",
-      "idealAnswer": "Long QT syndrome with torsades de pointes. ",
+      "idealAnswer": "Long QT syndrome with torsades de pointes. Dangerous because torsades can degenerate into ventricular fibrillation and cause sudden cardiac death; it is potentiated by QT-prolonging drugs and by hypokalemia and hypomagnesemia, which must be corrected and avoided.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

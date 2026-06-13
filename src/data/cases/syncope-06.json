@@ -177,7 +177,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, possible demand-related ST changes from anemia, no STEMI. CREDIT: rate & rhythm (6); recognizes any demand ST changes are secondary to anemia, not primary ACS (5); excludes STEMI (2); systematic read (2). PENALTY: calling a primary STEMI (-3).",
+      "rubric": "Findings = hyperkalemia pattern: tall peaked symmetric T waves, P-wave flattening/loss, and a widening QRS. CREDIT: identifies the tall peaked T waves (6); recognizes the hyperkalemia pattern as a time-critical emergency (5); notes P-wave flattening and QRS widening (2); systematic read (2). PENALTY: dismissing the peaked T waves as normal / missing the pattern (-3).",
       "keyFindings": [
         "peaked T waves",
         "recognizes a hyperkalemia pattern as urgent"
@@ -215,7 +215,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield here (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = old healed/healing rib fractures with bony callus along the lateral ribs; lungs otherwise clear. CREDIT: identifies the healed rib fractures with callus (6); recognizes them as old and not an acute process (4). PENALTY: calling the film normal / mistaking the callus for a pulmonary or pleural lesion (-2).",
       "keyFindings": [
         "identifies healed rib fractures with callus",
         "recognizes them as old"
@@ -251,7 +251,7 @@
       "max": 10,
       "prompt": "Hgb is 7.6 with an elevated BUN:Cr and melena on rectal exam. What is your diagnosis and reasoning?",
       "rubric": "Syncope from an acute (likely upper) GI bleed causing hypovolemia/anemia (6). Cites melena + elevated BUN:Cr + NSAID/aspirin use as the source (4).",
-      "idealAnswer": "Syncope from occult GI bleed. ",
+      "idealAnswer": "Syncope from an acute (likely upper) GI bleed causing hypovolemia and anemia. Reasoning: melena on rectal exam plus an Hgb of 7.6 and an elevated BUN:Cr ratio point to an upper GI source, and the daily ibuprofen and aspirin are the likely precipitant (NSAID/antiplatelet-related mucosal injury).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -572,8 +572,8 @@
       "Recognizes GI bleeding and reviews the documented stool finding / melena"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; possible demand-related ST changes given anemia; no acute STEMI.",
-      "No acute process (low yield)."
+      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Old healed rib fractures (callus)."
     ],
     "criticalManagementItems": [
       "Resuscitate (2 large-bore IVs, crystalloid, T&S)",

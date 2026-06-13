@@ -253,7 +253,7 @@
       "max": 10,
       "prompt": "Synovial fluid is purulent with WBC 78,000 (92% neutrophils), gram-positive cocci in clusters on Gram stain, and NO crystals; ESR/CRP markedly elevated. What is your diagnosis and what did you rule out?",
       "rubric": "Septic arthritis (likely Staphylococcus aureus) (6). Cites the markedly elevated synovial WBC with neutrophil predominance and positive Gram stain; explicitly excludes crystal arthropathy by the ABSENCE of crystals (and notes infection and crystals can coexist) (4).",
-      "idealAnswer": "Septic arthritis, most likely Staphylococcus aureus. ",
+      "idealAnswer": "Septic arthritis, most likely Staphylococcus aureus — purulent synovial fluid with WBC 78,000 (92% neutrophils) and gram-positive cocci in clusters on Gram stain, with markedly elevated ESR/CRP. Crystal arthropathy is argued against by the absence of crystals, though infection and crystals can coexist so it is not fully excluded by a positive crystal study.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

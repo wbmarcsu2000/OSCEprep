@@ -54,9 +54,10 @@
       "findings": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
       "verify": "Pick a CC file showing a small basal/left pleural effusion or a normal upright film; must NOT show free air.",
       "assetNeeded": true,
-      "imageDescription": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+      "imageDescription": "upright chest radiograph showing a small left pleural effusion with basal atelectasis",
       "searchTerms": [
-        "chest radiograph Possible small left pleural"
+        "small left pleural effusion chest x-ray",
+        "basal atelectasis upright chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -171,7 +172,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes / rationale (epigastric pain can be cardiac) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = a hyperkalemia pattern — tall peaked symmetric T waves, P-wave flattening/loss, and a broadening QRS. CREDIT: identifies the peaked T waves and QRS widening (7); recognizes this as a time-critical hyperkalemia pattern requiring urgent treatment (5); systematic read (3). PENALTY: calling the study normal / dismissing peaked T waves as a normal variant / missing the abnormality (-3).",
       "keyFindings": [
         "peaked T waves",
         "recognizes a hyperkalemia pattern as urgent"
@@ -249,7 +250,7 @@
       "max": 10,
       "prompt": "Given the labs, what is your diagnosis and how do you assess severity?",
       "rubric": "Acute pancreatitis, likely alcohol-induced (5). Diagnosis = 2 of 3: characteristic pain, lipase >3x ULN, imaging (3). Assesses severity (BUN/creatinine, hemoconcentration, SIRS) (bonus,2).",
-      "idealAnswer": "Acute pancreatitis. ",
+      "idealAnswer": "Acute pancreatitis, likely alcohol-induced — diagnosis by the characteristic epigastric-to-back pain plus a lipase >3x the upper limit of normal (2 of 3 criteria). Assess severity with markers of volume depletion and end-organ stress: rising BUN/creatinine (BUN 26, Cr 1.3), hemoconcentration (Hgb 16), and SIRS.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -605,7 +606,7 @@
       "Lipase"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes (checked because epigastric pain can be cardiac).",
+      "Hyperkalemia pattern: tall peaked T waves with P-wave flattening and QRS widening — time-critical.",
       "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
     ],
     "criticalManagementItems": [

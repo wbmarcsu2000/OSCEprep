@@ -260,7 +260,7 @@
       "max": 10,
       "prompt": "Reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, bite cells and Heinz bodies, NO schistocytes, normal platelets, a NEGATIVE Coombs, and a recent oxidant drug/fava bean exposure. What is your diagnosis and what did you rule out?",
       "rubric": "G6PD deficiency with acute oxidative hemolysis (6). Cites bite cells/Heinz bodies with a NEGATIVE DAT and an oxidant trigger; explicitly rules out TTP/HUS via the absence of schistocytes, normal platelets, and normal renal function, and rules out autoimmune hemolysis via the negative Coombs (4).",
-      "idealAnswer": "G6PD deficiency causing acute oxidative (drug/fava-bean triggered) hemolysis. ",
+      "idealAnswer": "G6PD deficiency causing acute oxidative (drug/fava-bean triggered) hemolysis, supported by bite cells and Heinz bodies with hemolysis markers after an oxidant exposure. TTP/HUS was ruled out by the absence of schistocytes, normal platelets, and normal renal function, and autoimmune hemolysis was ruled out by the negative Coombs.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

@@ -38,9 +38,9 @@
       "verify": "From the LITFL 'Atrial Fibrillation' library page — download an example tracing that matches: Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease a … and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "imageDescription": "Atrial fibrillation with no acute ST elevation.",
       "searchTerms": [
-        "12-lead EKG Atrial fibrillation sinus rhythm);"
+        "atrial fibrillation 12-lead ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)"
     },
@@ -52,9 +52,9 @@
       "findings": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
       "verify": "Pick a CC abdominal film showing thumbprinting OR a normal/nonspecific film; must NOT show free air.",
       "assetNeeded": true,
-      "imageDescription": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
+      "imageDescription": "Abdominal radiograph with possible colonic thumbprinting and no free air.",
       "searchTerms": [
-        "chest radiograph Nonspecific; show 'thumbprinting' (mucosal"
+        "thumbprinting ischemic colitis abdominal x-ray"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -129,7 +129,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "CBC (2). Serum lactate (CANT-MISS,3). BMP (2). Stool studies to exclude infection (2). CT abdomen/pelvis with contrast (CANT-MISS,4). EKG (1). Colonoscopy is diagnostic but performed after stabilization (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: Serum lactate; CT abdomen/pelvis with contrast.",
+      "idealAnswer": "Order: serum lactate; CT abdomen/pelvis with contrast; CBC; BMP; stool studies to exclude infection; EKG. Colonoscopy is diagnostic but performed after stabilization.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -142,8 +142,30 @@
             "points": 4
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
+        "coreActions": [
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Stool studies to exclude infection",
+            "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Colonoscopy after stabilization",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
             "item": "shotgun panel w/ no reasoning",
@@ -226,7 +248,8 @@
       "prompt": "Here is the patient's abdominal film. Describe your findings.",
       "rubric": "Findings = nonspecific; possible thumbprinting; NO free air. CREDIT: identifies thumbprinting (mucosal edema) or a nonspecific film (5); explicitly excludes free air (perforation) (5). PENALTY: missing the free-air check (-1).",
       "keyFindings": [
-        "or a nonspecific film"
+        "identifies thumbprinting (mucosal edema) or a nonspecific film",
+        "explicitly excludes free air (perforation)"
       ],
       "criticalFindings": [
         "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
@@ -245,8 +268,12 @@
         ],
         "coreActions": [
           {
-            "item": "or a nonspecific film",
-            "points": 5
+            "item": "Identifies thumbprinting (mucosal edema) or a nonspecific film",
+            "points": 3
+          },
+          {
+            "item": "Explicitly excludes free air (perforation)",
+            "points": 2
           }
         ],
         "bonusActions": [],
@@ -264,7 +291,7 @@
       "max": 10,
       "prompt": "CT shows segmental colonic wall thickening in a watershed area without perforation. What is your diagnosis and how does it differ from acute mesenteric ischemia?",
       "rubric": "Ischemic colitis (6). Distinguishes from acute mesenteric ischemia — colonic (often watershed) and usually less catastrophic, vs small-bowel SMA occlusion with pain out of proportion and a worse prognosis (4).",
-      "idealAnswer": "Ischemic colitis. ",
+      "idealAnswer": "Ischemic colitis. Unlike acute mesenteric ischemia, this is a colonic (often watershed, e.g., splenic flexure) process that is usually less catastrophic; acute mesenteric ischemia is a small-bowel SMA occlusion with pain out of proportion to exam and a far worse prognosis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

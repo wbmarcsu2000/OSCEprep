@@ -180,7 +180,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = bifascicular block (RBBB + left anterior fascicular block). CREDIT: recognizes the RBBB pattern with marked left axis deviation (7); names it as bifascicular block (5); systematic read (3). PENALTY: calling it sinus tachycardia / missing the conduction abnormality (-3).",
       "keyFindings": [
         "RBBB pattern plus marked left axis deviation",
         "names it as bifascicular block"
@@ -217,7 +217,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it can screen for a secondary cause (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = elevated right hemidiaphragm. CREDIT: identifies the elevated right hemidiaphragm (6); gives a brief differential (eventration, phrenic nerve palsy) (4). PENALTY: calling the study normal / missing the elevated hemidiaphragm (-2).",
       "keyFindings": [
         "identifies the elevated hemidiaphragm",
         "gives a brief differential (eventration, phrenic palsy)"
@@ -253,7 +253,7 @@
       "max": 10,
       "prompt": "Reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, spherocytes, NO schistocytes, normal platelets, and a positive Coombs. What is your diagnosis and what did you rule out?",
       "rubric": "Autoimmune hemolytic anemia (warm type) (6). Cites a positive DAT with hemolysis markers; explicitly rules out TTP/HUS via the absence of schistocytes, normal platelets, and normal renal function (4).",
-      "idealAnswer": "Autoimmune hemolytic anemia. ",
+      "idealAnswer": "Warm autoimmune hemolytic anemia, given the positive direct antiglobulin (Coombs) test with hemolysis markers (reticulocytosis, low haptoglobin, high LDH/indirect bilirubin) and spherocytes. TTP/HUS was ruled out by the absence of schistocytes, normal platelets, and normal renal function.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -570,8 +570,8 @@
       "Direct antiglobulin (Coombs) test"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
-      "No acute process (may screen for an underlying lymphoproliferative/secondary cause)."
+      "Bifascicular block (RBBB + left anterior fascicular block).",
+      "Elevated right hemidiaphragm."
     ],
     "criticalManagementItems": [
       "Corticosteroids (warm AIHA)"

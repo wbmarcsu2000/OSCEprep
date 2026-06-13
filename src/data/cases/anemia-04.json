@@ -83,7 +83,7 @@
       "max": 25,
       "prompt": "Based on your history and physical, list your differential for this anemia (note your leading diagnosis).",
       "rubric": "Anemia of chronic disease / inflammation (leading,7). Iron deficiency anemia (must distinguish,5). Anemia of chronic kidney disease (core,3). Myelodysplastic syndrome (CANT-MISS to consider,3). Medication/marrow suppression e.g. methotrexate (core,3). Names anemia of chronic disease and the plan to distinguish it from iron deficiency (core,4).",
-      "idealAnswer": "Leading diagnosis: Anemia of chronic disease / inflammation. Must-not-miss diagnoses to exclude: Myelodysplastic syndrome. Also reasonable: Iron deficiency anemia; Anemia of chronic kidney disease; methotrexate.",
+      "idealAnswer": "Leading diagnosis: Anemia of chronic disease / inflammation. Must-not-miss diagnoses to exclude: Myelodysplastic syndrome. Also reasonable: Iron deficiency anemia; Anemia of chronic kidney disease; Medication/marrow suppression (e.g. methotrexate).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -106,7 +106,7 @@
             "points": 3
           },
           {
-            "item": "methotrexate",
+            "item": "Medication/marrow suppression (e.g. methotrexate)",
             "points": 3
           },
           {
@@ -123,7 +123,7 @@
       "acceptableAlternatives": [
         "Iron deficiency anemia",
         "Anemia of chronic kidney disease",
-        "methotrexate"
+        "Medication/marrow suppression (e.g. methotrexate)"
       ]
     },
     {
@@ -174,7 +174,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = left bundle branch block. CREDIT: recognizes LBBB — wide QRS >120 ms with a broad notched R in I/V6 and dominant S in V1 (7); notes the appropriately discordant ST-T and that LBBB confounds STEMI reading (5); systematic read (3). PENALTY: over-reading the discordant ST changes as ischemia / calling it normal (-2).",
       "keyFindings": [
         "wide QRS >120 ms with broad notched R in lateral leads",
         "notes LBBB confounds STEMI reading"
@@ -212,7 +212,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it can screen for an inflammatory/infectious driver (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = pulmonary fibrosis (bibasilar reticulation, low lung volumes). CREDIT: identifies bibasilar reticular opacities (6); recognizes reduced lung volumes / fibrotic pattern (4). PENALTY: calling the study normal / mistaking the reticulation for infection (-2).",
       "keyFindings": [
         "bibasilar reticular opacities",
         "reduced lung volumes / fibrotic pattern"
@@ -249,7 +249,7 @@
       "max": 10,
       "prompt": "Normocytic anemia with low iron, LOW TIBC, and normal/high ferritin plus elevated inflammatory markers. What is your diagnosis and how does it differ from iron deficiency?",
       "rubric": "Anemia of chronic disease (6). Distinguishes from iron deficiency — in chronic disease TIBC is LOW and ferritin normal/high, whereas iron deficiency shows HIGH TIBC and LOW ferritin (4).",
-      "idealAnswer": "Anemia of chronic disease. ",
+      "idealAnswer": "Anemia of chronic disease / inflammation. It differs from iron deficiency in the iron studies: in anemia of chronic disease the TIBC is LOW with a normal/high ferritin, whereas iron deficiency shows a HIGH TIBC with a LOW ferritin.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -554,8 +554,8 @@
       "Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No acute process (may screen for an inflammatory/infectious driver)."
+      "Left bundle branch block.",
+      "Pulmonary fibrosis (basal reticulation, low volumes)."
     ],
     "criticalManagementItems": [
       "Treat the underlying chronic disease"

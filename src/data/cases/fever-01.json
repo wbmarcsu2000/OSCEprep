@@ -57,7 +57,8 @@
       "assetNeeded": true,
       "imageDescription": "No consolidation (obtained to exclude pneumonia as the fever source).",
       "searchTerms": [
-        "chest radiograph consolidation (obtained exclude pneumonia"
+        "normal PA chest radiograph",
+        "clear lung fields chest x-ray"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -139,7 +140,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Urinalysis (CANT-MISS,4) and urine culture (3). CBC (2). BMP (1). Lactate (1). Blood cultures if systemically ill (2). Pregnancy test in a woman of childbearing age (1). Imaging (CT/US) if obstruction/stone suspected or not improving (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: Urinalysis.",
+      "idealAnswer": "Order: Urinalysis and urine culture; CBC and BMP; lactate and blood cultures given systemic illness; a pregnancy test (woman of childbearing age); CT/US imaging only if obstruction/stone is suspected or she is not improving.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -148,7 +149,36 @@
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "Urine culture",
+            "points": 3
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 1
+          },
+          {
+            "item": "Lactate",
+            "points": 1
+          },
+          {
+            "item": "Blood cultures if systemically ill",
+            "points": 2
+          },
+          {
+            "item": "Pregnancy test",
+            "points": 1
+          },
+          {
+            "item": "Imaging (CT/US) if obstruction/stone suspected or not improving",
+            "points": 1
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {
@@ -173,7 +203,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response. CREDIT: irregularly irregular rhythm (7); absence of organized P waves (5); systematic read with rate ~110 (3). PENALTY: calling it sinus / missing the AF (-3).",
       "keyFindings": [
         "irregularly irregular rhythm",
         "absence of organized P waves"
@@ -256,7 +286,7 @@
       "max": 10,
       "prompt": "Pyuria with WBC casts, nitrites, leukocytosis, and CVA tenderness. What is your diagnosis?",
       "rubric": "Acute pyelonephritis (6). Cites upper-tract features — CVA tenderness, systemic illness, WBC casts (4).",
-      "idealAnswer": "Pyelonephritis. ",
+      "idealAnswer": "Acute pyelonephritis — supported by CVA tenderness, systemic illness, and pyuria with WBC casts and positive nitrites.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -565,7 +595,7 @@
       "Urinalysis"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Atrial fibrillation with rapid ventricular response.",
       "No consolidation (obtained to exclude pneumonia as the fever source)."
     ],
     "criticalManagementItems": [

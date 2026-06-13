@@ -143,7 +143,7 @@
       "label": "Read EKG",
       "max": 15,
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no ischemic changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "rubric": "Findings = benign early repolarization: concave ST elevation with J-point notching/slurring in the mid-precordial leads, no reciprocal change. CREDIT: identifies the J-point notching with concave ST elevation (7); distinguishes benign early repolarization from STEMI/pericarditis (5); systematic read (3). PENALTY: over-calling the J-point ST elevation as a STEMI (-3).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
@@ -180,7 +180,7 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute cardiopulmonary process. CREDIT: identifies a normal film (6); notes it excludes other causes (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = hiatal hernia: retrocardiac soft-tissue density with an air-fluid level behind the heart; a benign incidental finding. CREDIT: identifies the retrocardiac air-fluid level (6); recognizes the hiatal hernia as benign and not the cause of today's pain (4). PENALTY: calling the study normal / mistaking the retrocardiac gas shadow for a cavitary lesion or abscess (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
@@ -299,7 +299,7 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/benign-early-repolarisation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Concave ST elevation with J-point notching/slurring in mid-precordial leads; benign pattern.",
       "verify": "Source a study matching: Concave ST elevation with J-point notching/slurring in mid-precordial leads; benign pattern. Self-host with appropriate credit; do not reuse the prior normal tracing.",
@@ -573,8 +573,8 @@
       "EKG to exclude cardiac cause"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm, no ischemic changes.",
-      "No acute cardiopulmonary process."
+      "Benign early repolarization pattern.",
+      "Hiatal hernia (retrocardiac air-fluid level)."
     ],
     "criticalManagementItems": [
       "PPI trial (omeprazole)"

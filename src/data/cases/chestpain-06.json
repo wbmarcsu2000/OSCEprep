@@ -100,7 +100,7 @@
       "label": "Read EKG",
       "max": 15,
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no ischemic changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "rubric": "Findings = nonspecific T-wave inversions in the lateral leads, without ST elevation or reciprocal change. CREDIT: identifies the lateral T-wave inversions (7); labels them nonspecific and recommends comparison with prior / serial tracings (5); systematic read (3). PENALTY: over-calling the nonspecific T inversions as a definite acute coronary syndrome (-3).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
@@ -137,7 +137,7 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute cardiopulmonary process. CREDIT: identifies a normal film (6); notes it excludes other causes (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = a single well-circumscribed solitary pulmonary nodule (~1.5 cm) in the mid lung zone. CREDIT: identifies the solitary pulmonary nodule (6); recommends comparison with prior imaging and structured follow-up (4). PENALTY: calling the film normal / dismissing the nodule as a nipple shadow without confirmation (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
@@ -524,8 +524,8 @@
     ],
     "criticalWorkupItems": [],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm, no ischemic changes (if ordered).",
-      "No acute cardiopulmonary process (if ordered)."
+      "Nonspecific lateral T-wave inversions.",
+      "Solitary pulmonary nodule."
     ],
     "criticalManagementItems": [
       "Reassurance after excluding dangerous causes",

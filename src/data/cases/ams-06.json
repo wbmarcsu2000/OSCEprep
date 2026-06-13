@@ -54,9 +54,9 @@
       "findings": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+      "imageDescription": "Clear chest radiograph (no definite consolidation), with only possible early aspiration.",
       "searchTerms": [
-        "chest radiograph Clear possible aspiration; obtained"
+        "normal PA chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -183,7 +183,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia; consider QT with low Mg/K; no acute ischemia. CREDIT: rate & rhythm (6); comments on checking QT given electrolyte derangements (4); no acute ischemia (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = supraventricular tachycardia. CREDIT: recognizes SVT — regular narrow-complex tachycardia at ~180 (8); notes the absent sinus P waves (4); systematic read (3). PENALTY: mistaking SVT for sinus tachycardia / missing the rhythm (-3).",
       "keyFindings": [
         "regular narrow-complex tachycardia",
         "no clearly identifiable sinus P waves"
@@ -243,10 +243,6 @@
         ],
         "coreActions": [
           {
-            "item": "identifies a clear/near-clear film",
-            "points": 6
-          },
-          {
             "item": "notes it screens for an infectious precipitant/aspiration",
             "points": 4
           }
@@ -266,7 +262,7 @@
       "max": 10,
       "prompt": "With a normal glucose, no intracranial bleed, and this presentation, what is your diagnosis?",
       "rubric": "Delirium tremens / severe alcohol withdrawal (6). Cites autonomic hyperactivity + hallucinations + tremor + timing from last drink (3). Notes DTs is a medical emergency with significant mortality (bonus,1).",
-      "idealAnswer": "Alcohol withdrawal / delirium tremens. ",
+      "idealAnswer": "Alcohol withdrawal / delirium tremens — a heavy daily drinker whose last drink was ~2 days ago now has autonomic hyperactivity (tachycardia, hypertension, fever, diaphoresis), coarse tremor, and visual hallucinations. The normal glucose and absence of an intracranial bleed exclude hypoglycemia and a post-fall bleed. DTs is a medical emergency with significant mortality.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -363,7 +359,7 @@
       "alcohol_use"
     ],
     "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "55-year-old man, agitated, tremulous, diaphoretic, disoriented, picking at the sheets, frightened by visual hallucinatio",
+    "affect": "55-year-old man, agitated, tremulous, diaphoretic, disoriented, picking at the sheets, frightened by visual hallucinations. Poor historian.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
@@ -589,7 +585,7 @@
       "CT head given the recent fall + confusion"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; watch QT with low magnesium/potassium; no acute ischemia.",
+      "Supraventricular tachycardia (regular, narrow, rate ~180).",
       "Clear or possible aspiration; obtained to exclude an infectious precipitant."
     ],
     "criticalManagementItems": [

@@ -262,10 +262,6 @@
         ],
         "coreActions": [
           {
-            "item": "identifies an essentially clear film",
-            "points": 6
-          },
-          {
             "item": "notes it screens for pneumonia precipitant or pulmonary edema",
             "points": 4
           }
@@ -285,7 +281,7 @@
       "max": 10,
       "prompt": "TSH is undetectable with markedly elevated free T4 and T3, in a known Graves patient who stopped methimazole and now has fever, AF with RVR, and agitation. What is your diagnosis and what did you rule out?",
       "rubric": "Thyroid storm (decompensated thyrotoxicosis), e.g. high Burch-Wartofsky score (6). Cites biochemical thyrotoxicosis plus end-organ decompensation (CNS, cardiovascular, hyperthermia) and explicitly excludes sepsis and toxidromes as the primary driver (4).",
-      "idealAnswer": "Thyroid storm. ",
+      "idealAnswer": "Thyroid storm (decompensated thyrotoxicosis) — biochemical thyrotoxicosis (undetectable TSH with markedly elevated free T4/T3) plus end-organ decompensation (CNS agitation, AF with RVR, hyperthermia) in a Graves patient who stopped methimazole, consistent with a high Burch-Wartofsky score. Sepsis and the sympathomimetic/anticholinergic toxidromes are excluded as the primary driver, though infection can be a precipitant.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

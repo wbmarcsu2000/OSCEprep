@@ -265,7 +265,7 @@
       "max": 10,
       "prompt": "Infection and celiac are excluded, colonoscopy looks grossly normal, but random biopsies show intraepithelial lymphocytosis with a thickened subepithelial collagen band. What is your diagnosis and what did you rule out?",
       "rubric": "Microscopic colitis (collagenous subtype) (6). Cites a grossly normal/near-normal colonoscopy with diagnostic histology, and explicitly excludes infection (negative stool studies/C. diff), celiac (negative tTG with normal IgA), and IBD/malignancy (no ulceration, calprotectin not markedly elevated, no mass) (4).",
-      "idealAnswer": "Microscopic colitis (collagenous type). ",
+      "idealAnswer": "Microscopic colitis (collagenous subtype). Supported by a grossly normal colonoscopy with diagnostic histology (intraepithelial lymphocytosis and a thickened subepithelial collagen band). This excludes infection (negative stool studies/C. diff), celiac (negative tTG with normal IgA), and IBD/malignancy (no ulceration, calprotectin not markedly elevated, no mass).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

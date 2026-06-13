@@ -81,7 +81,7 @@
       "max": 25,
       "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
       "rubric": "Bacterial (inflammatory) gastroenteritis — e.g., Campylobacter/Salmonella/Shigella (leading,7). Shiga-toxin E. coli (CANT-MISS — affects management,4). Viral gastroenteritis (core,3). C. difficile (core,2). Inflammatory bowel disease (core,3). Appendicitis (CANT-MISS to consider,2). Names an infectious inflammatory diarrhea with food exposure (core,4).",
-      "idealAnswer": "Leading diagnosis: Campylobacter/Salmonella/Shigella. Must-not-miss diagnoses to exclude: coli; Appendicitis. Also reasonable: Viral gastroenteritis; difficile; Inflammatory bowel disease.",
+      "idealAnswer": "Leading diagnosis: bacterial (inflammatory) gastroenteritis — e.g., Campylobacter/Salmonella/Shigella. Must-not-miss: Shiga-toxin E. coli (STEC) — affects management; appendicitis. Also reasonable: viral gastroenteritis, C. difficile, inflammatory bowel disease. Names an infectious inflammatory diarrhea with food exposure.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -90,7 +90,7 @@
             "points": 7
           },
           {
-            "item": "coli",
+            "item": "Shiga-toxin E. coli (STEC)",
             "points": 4
           },
           {
@@ -104,7 +104,7 @@
             "points": 3
           },
           {
-            "item": "difficile",
+            "item": "C. difficile",
             "points": 2
           },
           {
@@ -120,12 +120,12 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "coli",
+        "Shiga-toxin E. coli (STEC)",
         "Appendicitis"
       ],
       "acceptableAlternatives": [
         "Viral gastroenteritis",
-        "difficile",
+        "C. difficile",
         "Inflammatory bowel disease"
       ]
     },
@@ -136,7 +136,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool studies — culture and/or pathogen panel (CANT-MISS,5). CBC (2). BMP for hydration/electrolytes (3). C. difficile toxin if risk factors (2). Blood cultures if febrile/toxic (2). Consider ova & parasites only if indicated (1). PENALTY: empiric antibiotics before considering Shiga-toxin E. coli (-2 — addressed in management).",
-      "idealAnswer": "Order: Stool studies — culture and/or pathogen panel.",
+      "idealAnswer": "Order: stool studies — culture and/or pathogen panel; CBC; BMP for hydration/electrolytes; C. difficile toxin if risk factors; blood cultures given fever; ova & parasites only if indicated.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,9 +145,36 @@
             "points": 5
           }
         ],
-        "coreActions": [],
-        "bonusActions": [],
-        "penalties": []
+        "coreActions": [
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP for hydration/electrolytes",
+            "points": 3
+          },
+          {
+            "item": "C. difficile toxin if risk factors",
+            "points": 2
+          },
+          {
+            "item": "Blood cultures if febrile/toxic",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Ova & parasites only if indicated",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Empiric antibiotics before considering Shiga-toxin E. coli (addressed in management)",
+            "points": -2
+          }
+        ]
       },
       "requiredTests": [
         "Stool studies — culture and/or pathogen panel"
@@ -163,7 +190,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = Wellens pattern: deep symmetric or biphasic T-wave inversions in V2-V3 with preserved R waves; patient currently pain-free. CREDIT: identifies biphasic/deep T inversions in V2-V3 (7); recognizes the critical proximal-LAD stenosis warning pattern (5); systematic read (3). PENALTY: dismissing the changes as normal/benign because the patient is pain-free (-3).",
       "keyFindings": [
         "biphasic / deep T inversions in V2-V3",
         "recognizes the proximal LAD warning pattern"
@@ -200,7 +227,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = atelectasis: left lower lobe volume loss with a linear/band opacity and slight ipsilateral mediastinal shift toward the opacity. CREDIT: identifies the linear/band opacity with volume loss (6); distinguishes atelectasis from consolidation/pneumonia (4). PENALTY: calling the film normal or labelling it pneumonia (-2).",
       "keyFindings": [
         "linear/band opacity with volume loss",
         "distinguishes atelectasis from consolidation"
@@ -237,7 +264,7 @@
       "max": 10,
       "prompt": "Stool shows inflammatory diarrhea with a likely bacterial pathogen after undercooked poultry. What is your diagnosis and one key management caution?",
       "rubric": "Bacterial gastroenteritis (e.g., Campylobacter) (6). Notes the caution — avoid empiric antibiotics if Shiga-toxin E. coli is possible (HUS risk), and avoid antimotility agents in bloody/febrile diarrhea (4).",
-      "idealAnswer": "Bacterial gastroenteritis. ",
+      "idealAnswer": "Bacterial gastroenteritis (likely Campylobacter from undercooked poultry). Key caution: avoid empiric antibiotics if Shiga-toxin E. coli is possible (HUS risk), and avoid antimotility agents in bloody/febrile diarrhea.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -505,8 +532,8 @@
       "Stool studies — culture and/or pathogen panel"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
-      "No acute process (low yield)."
+      "Wellens syndrome (critical LAD stenosis warning pattern).",
+      "Atelectasis (volume loss, no air bronchograms)."
     ],
     "criticalManagementItems": [
       "Volume and electrolyte repletion",

@@ -286,7 +286,7 @@
       "max": 10,
       "prompt": "Given the coved ST elevation in V1-V2, a structurally normal heart, syncope unmasked by fever, and a family history of sudden death, what is your diagnosis and why is it dangerous?",
       "rubric": "Brugada syndrome (a sodium-channelopathy) (6). Explains the danger — risk of polymorphic VT/VF and sudden cardiac death, especially with fever or sodium-channel-blocking drugs; explicitly notes the heart is structurally normal so the substrate is electrical (4).",
-      "idealAnswer": "Brugada syndrome.",
+      "idealAnswer": "Brugada syndrome (a sodium channelopathy). Dangerous because it carries a risk of polymorphic VT/VF and sudden cardiac death, which is heightened by fever and by sodium-channel-blocking drugs; the heart is structurally normal, so the arrhythmic substrate is purely electrical.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

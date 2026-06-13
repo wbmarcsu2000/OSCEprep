@@ -135,7 +135,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten (CANT-MISS,5). CBC and iron studies (3). Nutritional labs — ferritin, vitamin D, folate, B12 (2). Upper endoscopy with duodenal biopsy to confirm (3). Stool studies to exclude infection (2). PENALTY: starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy) (-3).",
-      "idealAnswer": "Order: Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten.",
+      "idealAnswer": "Order: celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten; CBC and iron studies; nutritional labs (ferritin, vitamin D, folate, B12); upper endoscopy with duodenal biopsy to confirm; stool studies to exclude infection.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -144,7 +144,24 @@
             "points": 5
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CBC and iron studies",
+            "points": 3
+          },
+          {
+            "item": "Nutritional labs — ferritin, vitamin D, folate, B12",
+            "points": 2
+          },
+          {
+            "item": "Upper endoscopy with duodenal biopsy to confirm",
+            "points": 3
+          },
+          {
+            "item": "Stool studies to exclude infection",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
         "penalties": [
           {
@@ -171,7 +188,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = abnormally short QT interval (QTc ~330 ms) with tall peaked T waves. CREDIT: measures and identifies a short QTc (7); recognizes short QT as an arrhythmia substrate (5); systematic read (3). PENALTY: not measuring the QT and calling the tracing normal (-2).",
       "keyFindings": [
         "measures a short QTc",
         "recognizes short QT as an arrhythmia substrate"
@@ -208,7 +225,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = diffuse bilateral reticulonodular interstitial opacities (chronic interstitial lung disease). CREDIT: identifies the diffuse reticulonodular pattern (6); recognizes a chronic interstitial process rather than acute infection (4). PENALTY: calling the film normal or labelling the diffuse chronic changes an acute infection (-2).",
       "keyFindings": [
         "diffuse reticulonodular pattern",
         "recognizes a chronic interstitial process"
@@ -244,7 +261,7 @@
       "max": 10,
       "prompt": "Positive tTG-IgA with normal total IgA and duodenal villous atrophy on biopsy. What is your diagnosis?",
       "rubric": "Celiac disease (6). Cites positive serology with a valid IgA level plus confirmatory villous atrophy on biopsy; notes the dermatitis herpetiformis association (4).",
-      "idealAnswer": "Celiac disease. ",
+      "idealAnswer": "Celiac disease. Confirmed by positive tTG-IgA with a valid (normal) total IgA plus duodenal villous atrophy on biopsy; the extensor-surface rash supports the dermatitis herpetiformis association.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -328,8 +345,7 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use",
-      "suicidal_ideation"
+      "alcohol_use"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "35-year-old woman, thin, fatigued. Good historian.",
@@ -354,21 +370,6 @@
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
-      "hiddenUntilAsked": true
-    },
-    {
-      "id": "suicidal_ideation",
-      "category": "psychiatric",
-      "triggerConcepts": [
-        "how much did you take",
-        "intent",
-        "self-harm",
-        "were you trying to hurt yourself",
-        "mood"
-      ],
-      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "critical",
-      "points": 4,
       "hiddenUntilAsked": true
     },
     {
@@ -513,7 +514,9 @@
     "finalDiagnosis": "Celiac disease",
     "diagnosticFramework": "35F presents with months of loose, bulky, foul-smelling stools, bloating, fatigue, and unintentional weight loss. The diagnosis is Celiac disease, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [
-      "how much did you take"
+      "Symptoms worse with bread/pasta (gluten/diet trigger)",
+      "Sister with celiac disease (family history)",
+      "Itchy, blistering rash on elbows/knees (dermatitis herpetiformis)"
     ],
     "keyPhysicalExamFindings": [
       "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
@@ -540,16 +543,14 @@
     "managementPearls": [
       "Lifelong gluten-free diet (dietitian referral)"
     ],
-    "criticalHistoryItems": [
-      "suicidal_ideation"
-    ],
+    "criticalHistoryItems": [],
     "criticalExamItems": [],
     "criticalWorkupItems": [
       "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No acute process (low yield)."
+      "Short QT interval (~330 ms).",
+      "Chronic interstitial lung disease (reticulonodular pattern)."
     ],
     "criticalManagementItems": [
       "Lifelong gluten-free diet (dietitian referral)"

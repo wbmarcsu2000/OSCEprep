@@ -173,7 +173,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, possible demand changes, no STEMI. CREDIT: rate & rhythm (6); recognizes demand changes are secondary to anemia not primary ACS (5); excludes STEMI (2); systematic read (2). PENALTY: calling a primary STEMI (-3).",
+      "rubric": "Findings = right ventricular hypertrophy pattern. CREDIT: recognizes the RVH pattern (6); identifies right axis deviation with a dominant R in V1 (5); notes right atrial enlargement (peaked P) (2); systematic read (2). PENALTY: mistaking dominant R in V1 for posterior MI / calling it normal (-3).",
       "keyFindings": [
         "right axis deviation with dominant R in V1",
         "right atrial enlargement"
@@ -210,7 +210,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = Kerley B lines (interstitial edema). CREDIT: identifies Kerley B lines — short horizontal peripheral septal lines at the bases (6); links the septal lines to interstitial fluid/edema (4). PENALTY: calling the study normal / missing the septal lines (-2).",
       "keyFindings": [
         "identifies Kerley B lines",
         "links septal lines to interstitial edema"
@@ -247,7 +247,7 @@
       "max": 10,
       "prompt": "Hgb 8.0 with elevated BUN:Cr and melena. What is your diagnosis and likely cause?",
       "rubric": "Acute upper GI bleed, likely NSAID-related peptic ulcer (6). Cites melena + BUN:Cr + NSAID use; normal LFTs make a variceal source less likely (4).",
-      "idealAnswer": "Acute upper GI bleed. ",
+      "idealAnswer": "Acute upper GI bleed, most likely an NSAID-related peptic ulcer. Supported by melena and an elevated BUN:Cr ratio in a daily NSAID user; normal LFTs make a variceal/cirrhotic source less likely.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -501,7 +501,7 @@
     },
     {
       "id": "inspect_conjunctiva_finding_2",
-      "finding": "STOOL (documented on chart/nursing): melena (black, tarry stool) — surfaced in the diagnostic results; no sensitive exam is required. Conjunctival pallor if exa",
+      "finding": "HEENT: conjunctival pallor if examined.",
       "revealedBy": [
         "inspect_conjunctiva"
       ],
@@ -534,7 +534,7 @@
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).",
-      "STOOL (documented on chart/nursing): melena (black, tarry stool) — surfaced in the diagnostic results; no sensitive exam is required. Conjunctival pallor if exa",
+      "HEENT: conjunctival pallor if examined.",
       "Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked."
     ],
     "keyDiagnosticFindings": [
@@ -569,8 +569,8 @@
       "Recognizes GI bleeding and reviews the documented stool finding / melena"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; possible demand-related ST changes from anemia; no STEMI.",
-      "No acute process (low yield)."
+      "Right ventricular hypertrophy pattern (right axis deviation, dominant R in V1, right atrial enlargement).",
+      "Kerley B lines (interstitial edema)."
     ],
     "criticalManagementItems": [
       "Resuscitate (2 large-bore IVs, crystalloid, T&S)",

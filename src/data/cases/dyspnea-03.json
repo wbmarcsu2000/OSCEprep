@@ -195,7 +195,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic ST changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = acute pericarditis pattern (diffuse concave ST elevation with PR depression, PR elevation in aVR, no reciprocal change). CREDIT: recognizes diffuse ST elevation with PR depression (7); distinguishes from STEMI by the diffuse, concave pattern (5); systematic read (3). PENALTY: misreading the diffuse ST elevation as a STEMI / calling the study normal (-3).",
       "keyFindings": [
         "diffuse ST elevation with PR depression",
         "distinguishes from STEMI by the diffuse, concave pattern"
@@ -644,7 +644,7 @@
       "CXR"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia. No acute ischemic changes.",
+      "Acute pericarditis pattern (diffuse ST elevation + PR depression).",
       "Right lower lobe consolidation / lobar infiltrate with air bronchograms; no large effusion."
     ],
     "criticalManagementItems": [

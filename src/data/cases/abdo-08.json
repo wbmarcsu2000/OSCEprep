@@ -272,7 +272,7 @@
       "max": 10,
       "prompt": "Glucose 480, anion gap 24, pH 7.18 with low bicarbonate, large serum/urine ketones, near-normal lipase, and a negative beta-hCG. What is your diagnosis and what did you rule out?",
       "rubric": "Diabetic ketoacidosis (6). Cites the triad — hyperglycemia, high anion gap metabolic acidosis, and ketonemia/ketonuria — and explains the abdominal pain is from the DKA itself; explicitly rules out pregnancy (negative hCG), primary pancreatitis (normal lipase), and a surgical abdomen (benign exam) (4).",
-      "idealAnswer": "Diabetic ketoacidosis. ",
+      "idealAnswer": "Diabetic ketoacidosis — the triad of hyperglycemia (glucose 480), a high anion gap metabolic acidosis (gap 24, pH 7.18, low bicarbonate), and large serum/urine ketones; the abdominal pain is from the DKA itself. Ruled out: pregnancy (negative beta-hCG), primary pancreatitis (near-normal lipase), and a surgical abdomen (benign exam).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],

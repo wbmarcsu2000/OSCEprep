@@ -84,6 +84,10 @@
         "maxPoints": 25,
         "criticalActions": [
           {
+            "item": "Orthostatic hypotension",
+            "points": 7
+          },
+          {
             "item": "Cardiac arrhythmia",
             "points": 4
           },
@@ -169,7 +173,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm, no block/arrhythmia/ischemia. CREDIT: rate & rhythm (6); excludes conduction disease/arrhythmia and ischemia (6); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = Mobitz II second-degree AV block (intermittently non-conducted P waves with a constant PR on conducted beats, often a wide QRS). CREDIT: rate & rhythm (6); identifies dropped QRS complexes with a constant PR on conducted beats and recognizes the high risk of progression to complete heart block (6); systematic read (3). PENALTY: calling the study normal / mistaking it for Wenckebach (-2).",
       "keyFindings": [
         "dropped QRS with constant PR on conducted beats",
         "recognizes high risk of progression to complete block"
@@ -207,7 +211,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = normal. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = solitary pulmonary nodule (~1.5 cm, well-circumscribed, mid lung zone). CREDIT: identifies the solitary pulmonary nodule (6); recommends comparison with prior imaging and structured follow-up (4). PENALTY: calling the film normal / missing the nodule (-2).",
       "keyFindings": [
         "identifies a solitary pulmonary nodule",
         "recommends comparison with priors / follow-up"
@@ -244,7 +248,7 @@
       "max": 10,
       "prompt": "Given the positive orthostatics and prerenal labs, what is your diagnosis and the contributors?",
       "rubric": "Orthostatic hypotension (6). Identifies contributors — volume depletion (diarrhea/poor intake) plus antihypertensives/diuretic (4).",
-      "idealAnswer": "Orthostatic hypotension. ",
+      "idealAnswer": "Orthostatic hypotension. Contributors: volume depletion (recent diarrhea and poor oral intake, with prerenal labs — elevated BUN:Cr) plus antihypertensives, especially the recently increased diuretic (and lisinopril, amlodipine, tamsulosin).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -460,7 +464,7 @@
     },
     {
       "id": "obtain_orthostatic_vitals_finding_2",
-      "finding": "Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic dro",
+      "finding": "Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic drop.",
       "revealedBy": [
         "obtain_orthostatic_vitals"
       ],
@@ -470,7 +474,7 @@
     },
     {
       "id": "assess_motor_strength_finding_3",
-      "finding": "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined).",
+      "finding": "Neuro: full strength, no focal motor deficit, no pronator drift.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -493,9 +497,9 @@
     "diagnosticFramework": "75M presents after feeling lightheaded and briefly passing out when standing up from a chair; he has several blood-pressure medications and has been eating and drinking poorly. The diagnosis is Orthostatic hypotension, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined).",
-      "Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic dro",
-      "Cardiac: regular, no murmur. Neuro: no focal deficit. Rectal: brown stool, no melena (if examined)."
+      "Cardiac: regular, no murmur. Rectal: brown stool, no melena (if examined).",
+      "Vitals SEATED: BP 124/74, HR 82. STANDING (if orthostatics checked): BP 98/60 with HR rise to 100 and reproduction of lightheadedness — positive orthostatic drop.",
+      "Neuro: full strength, no focal motor deficit, no pronator drift."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
@@ -528,8 +532,8 @@
       "EKG to exclude arrhythmia"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm; no arrhythmia, block, or ischemia (obtained to exclude cardiac syncope).",
-      "Normal (low yield)."
+      "Mobitz II second-degree AV block (high risk for progression to complete block).",
+      "Solitary pulmonary nodule (~1.5 cm) — recommend comparison with priors / follow-up."
     ],
     "criticalManagementItems": [
       "Identify and treat cause / volume repletion",

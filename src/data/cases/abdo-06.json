@@ -39,9 +39,10 @@
       "verify": "From the LITFL 'Atrial Fibrillation' library page — download an example tracing that matches: Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic sour … and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "imageDescription": "12-lead EKG showing atrial fibrillation (irregularly irregular, no discrete P waves)",
       "searchTerms": [
-        "12-lead EKG Atrial fibrillation (irregularly irregular"
+        "atrial fibrillation 12-lead ECG",
+        "irregularly irregular no P waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)"
     },
@@ -53,9 +54,10 @@
       "findings": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
       "verify": "Pick a CC normal upright chest film (no subdiaphragmatic free air).",
       "assetNeeded": true,
-      "imageDescription": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
+      "imageDescription": "nonspecific upright chest radiograph with no free air under the diaphragm",
       "searchTerms": [
-        "chest radiograph Nonspecific; importantly free early"
+        "normal upright chest x-ray no free air",
+        "upright chest radiograph no subdiaphragmatic free air"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -86,6 +88,10 @@
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
+          {
+            "item": "Acute mesenteric ischemia",
+            "points": 9
+          },
           {
             "item": "Perforated viscus",
             "points": 4
@@ -158,9 +164,7 @@
       "contraindicatedTests": [
         "relying on plain films alone or delaying CTA"
       ],
-      "orderSensitiveActions": [
-        "relying on plain films alone or delaying CTA"
-      ]
+      "orderSensitiveActions": []
     },
     {
       "id": "ekg_read",
@@ -192,10 +196,6 @@
           }
         ],
         "coreActions": [
-          {
-            "item": "identifies atrial fibrillation",
-            "points": 7
-          },
           {
             "item": "recognizes it as the likely embolic source for mesenteric ischemia",
             "points": 4
@@ -265,7 +265,7 @@
       "max": 10,
       "prompt": "Given the elevated lactate and CTA, what is your diagnosis and reasoning?",
       "rubric": "Acute mesenteric ischemia, likely embolic (SMA) (6). Links AF + stopped anticoagulation → embolus; lactate + acidosis indicate ischemia (4).",
-      "idealAnswer": "Acute mesenteric ischemia. ",
+      "idealAnswer": "Acute mesenteric ischemia, likely embolic — the atrial fibrillation with self-discontinued apixaban is the embolic source, and CTA shows an SMA filling defect/occlusion with segmental bowel-wall changes. The elevated lactate (~4.5) and metabolic acidosis confirm evolving bowel ischemia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -494,7 +494,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "finding": "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop late once infarction occurs.)",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
@@ -504,7 +504,7 @@
     },
     {
       "id": "auscultate_bowel_sounds_finding_2",
-      "finding": "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "finding": "Bowel sounds reduced over a soft abdomen with only mild diffuse tenderness early (pain out of proportion to exam).",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -547,8 +547,7 @@
     "diagnosticFramework": "72F with atrial fibrillation presents with sudden, severe, diffuse abdominal pain that seems out of proportion to a relatively benign abdominal exam. The diagnosis is Acute mesenteric ischemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
-      "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop",
+      "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop late once infarction occurs.)",
       "Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.",
       "General: distressed, pale, diaphoretic."
     ],

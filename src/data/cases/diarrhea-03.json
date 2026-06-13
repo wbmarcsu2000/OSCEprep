@@ -53,9 +53,9 @@
       "findings": "No colonic dilation here (used to screen for toxic megacolon in severe flares).",
       "verify": "Pick a CC abdominal film that is normal/non-dilated.",
       "assetNeeded": true,
-      "imageDescription": "No colonic dilation here (used to screen for toxic megacolon in severe flares).",
+      "imageDescription": "Upright abdominal radiograph, no colonic dilation.",
       "searchTerms": [
-        "chest radiograph colonic dilation here (used"
+        "normal abdominal x-ray upright"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -80,7 +80,7 @@
       "max": 25,
       "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
       "rubric": "Ulcerative colitis flare (leading,7). Infectious colitis — must EXCLUDE first, incl. C. difficile (CANT-MISS,5). Crohn's disease (core,3). Ischemic colitis (core,2). Colorectal neoplasm (CANT-MISS to consider,2). Names IBD/UC while prioritizing exclusion of infection (core,6).",
-      "idealAnswer": "Leading diagnosis: Ulcerative colitis flare. Must-not-miss diagnoses to exclude: difficile; Colorectal neoplasm. Also reasonable: Crohn's disease; Ischemic colitis.",
+      "idealAnswer": "Leading diagnosis: ulcerative colitis flare. Must-not-miss: infectious colitis (must exclude first, incl. C. difficile); colorectal neoplasm. Also reasonable: Crohn's disease, ischemic colitis. Names IBD/UC while prioritizing exclusion of infection.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -89,7 +89,7 @@
             "points": 7
           },
           {
-            "item": "difficile",
+            "item": "Infectious colitis — must exclude first, incl. C. difficile",
             "points": 5
           },
           {
@@ -115,7 +115,7 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "difficile",
+        "Infectious colitis — must exclude first, incl. C. difficile",
         "Colorectal neoplasm"
       ],
       "acceptableAlternatives": [
@@ -130,21 +130,47 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "Stool studies incl. cultures and C. difficile toxin to EXCLUDE infection (CANT-MISS,4). CBC (2). Inflammatory markers — CRP/ESR, albumin (2). Fecal calprotectin (2). Flexible sigmoidoscopy/colonoscopy with biopsy (3). Abdominal imaging if severe (megacolon screen) (2). PENALTY: starting steroids/immunosuppression before excluding infection (-2 — addressed in management).",
-      "idealAnswer": "Order: difficile toxin to EXCLUDE infection.",
+      "idealAnswer": "Order: stool studies incl. cultures and C. difficile toxin to EXCLUDE infection; CBC; inflammatory markers (CRP/ESR, albumin); fecal calprotectin; flexible sigmoidoscopy/colonoscopy with biopsy; abdominal imaging if severe (megacolon screen).",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "difficile toxin to EXCLUDE infection",
+            "item": "Stool studies incl. cultures and C. difficile toxin to exclude infection",
             "points": 4
           }
         ],
-        "coreActions": [],
+        "coreActions": [
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "Inflammatory markers — CRP/ESR, albumin",
+            "points": 2
+          },
+          {
+            "item": "Fecal calprotectin",
+            "points": 2
+          },
+          {
+            "item": "Flexible sigmoidoscopy/colonoscopy with biopsy",
+            "points": 3
+          },
+          {
+            "item": "Abdominal imaging if severe (megacolon screen)",
+            "points": 2
+          }
+        ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Starting steroids/immunosuppression before excluding infection (addressed in management)",
+            "points": -2
+          }
+        ]
       },
       "requiredTests": [
-        "difficile toxin to EXCLUDE infection"
+        "Stool studies incl. cultures and C. difficile toxin to exclude infection"
       ],
       "optionalTests": [],
       "contraindicatedTests": [],
@@ -157,7 +183,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm; possible electrolyte effects; no acute ischemia. CREDIT: rate & rhythm (6); recognizes a normal tracing and the need to watch electrolytes (5); systematic read (4). PENALTY: over-reading (-2).",
+      "rubric": "Findings = incomplete right bundle branch block: rSR' in V1 with QRS duration <120 ms. CREDIT: identifies rSR' in V1 (6); recognizes QRS <120 ms — incomplete rather than complete RBBB (5); systematic read (4). PENALTY: calling it complete RBBB without measuring the QRS width, or dismissing it as a normal tracing (-2).",
       "keyFindings": [
         "rSR' in V1",
         "QRS <120 ms — incomplete rather than complete RBBB"
@@ -239,7 +265,7 @@
       "max": 10,
       "prompt": "Infection is excluded; endoscopy shows continuous mucosal inflammation from the rectum. What is your diagnosis?",
       "rubric": "Ulcerative colitis flare (6). Cites continuous, rectum-up inflammation with negative infectious workup and elevated inflammatory markers/calprotectin (4).",
-      "idealAnswer": "Ulcerative colitis flare. ",
+      "idealAnswer": "Ulcerative colitis flare. Supported by continuous, rectum-up mucosal inflammation on endoscopy with a negative infectious workup and elevated inflammatory markers/calprotectin.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -535,10 +561,10 @@
       "assess_rebound_tenderness"
     ],
     "criticalWorkupItems": [
-      "difficile toxin to EXCLUDE infection"
+      "Stool studies incl. cultures and C. difficile toxin to exclude infection"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes (watch for electrolyte effects with severe diarrhea).",
+      "Incomplete right bundle branch block.",
       "No colonic dilation here (used to screen for toxic megacolon in severe flares)."
     ],
     "criticalManagementItems": [

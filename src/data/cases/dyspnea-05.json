@@ -33,14 +33,14 @@
       "asset": null,
       "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia, S1Q3T3, and T-wave inversions in V1-V3 (right heart strain).",
-      "verify": "Source a study matching: Sinus tachycardia, S1Q3T3, and T-wave inversions in V1-V3 (right heart strain). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia ~110; no acute ischemic ST/T changes.",
+      "verify": "Source a study matching: Sinus tachycardia ~110; no acute ischemic ST/T changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing right heart strain S1Q3T3",
+      "imageDescription": "12-lead showing sinus tachycardia, no acute ischemia",
       "searchTerms": [
-        "right heart strain ECG",
-        "S1Q3T3 pulmonary embolism ECG"
+        "sinus tachycardia ECG",
+        "sinus tachycardia 12 lead no ischemia"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)"
     },
@@ -49,13 +49,13 @@
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Hyperinflated lungs, flattened hemidiaphragms, increased retrosternal air, narrow cardiac shadow.",
-      "verify": "Source a study matching: Hyperinflated lungs, flattened hemidiaphragms, increased retrosternal air, narrow cardiac shadow. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Mild hyperinflation; no consolidation, effusion, or pneumothorax.",
+      "verify": "Source a study matching: Mild hyperinflation; no consolidation, effusion, or pneumothorax. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing emphysema hyperinflation",
+      "imageDescription": "near-normal chest radiograph with mild hyperinflation, no complications",
       "searchTerms": [
-        "emphysema hyperinflation chest x-ray",
-        "flattened diaphragm COPD radiograph"
+        "normal chest x-ray PA",
+        "mild hyperinflation chest radiograph no consolidation"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -165,30 +165,30 @@
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
       "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic ST changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
       "keyFindings": [
-        "recognizes a right-heart-strain pattern",
-        "names S1Q3T3 and anterior T inversions"
+        "identifies sinus tachycardia",
+        "states there are no acute ischemic ST/T changes"
       ],
       "criticalFindings": [
-        "Right heart strain pattern (S1Q3T3, anterior T-wave inversions)."
+        "Sinus tachycardia without acute ischemic changes."
       ],
       "commonMistakes": [
-        "treating S1Q3T3 as diagnostic in isolation",
-        "missing the anterior T-wave inversions"
+        "over-calling ischemia from rate-related ST/T changes",
+        "failing to comment on rate/rhythm"
       ],
-      "idealAnswer": "Right heart strain: sinus tachycardia with S1Q3T3 and T-wave inversions in V1-V3.",
+      "idealAnswer": "Sinus tachycardia ~110 with no acute ischemic ST/T changes; otherwise unremarkable.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Right heart strain pattern (S1Q3T3, anterior T-wave inversions)."
+          "Sinus tachycardia without acute ischemic changes."
         ],
         "coreActions": [
-          "recognizes a right-heart-strain pattern",
-          "names S1Q3T3 and anterior T inversions"
+          "identifies sinus tachycardia",
+          "states there are no acute ischemic ST/T changes"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "over-calls ischemia",
             "points": -3
           }
         ]
@@ -201,32 +201,42 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = normal or mildly hyperinflated, no consolidation/effusion/pneumothorax. CREDIT: correctly identifies a normal/hyperinflated film (5); explicitly excludes pneumothorax and consolidation as complications (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = normal or mildly hyperinflated, no consolidation/effusion/pneumothorax. CREDIT: correctly identifies a normal/mildly hyperinflated film (5); explicitly excludes pneumothorax and consolidation as complications (5). PENALTY: inventing pathology (-2).",
       "keyFindings": [
-        "flattened diaphragms / hyperinflation",
-        "recognizes an emphysema/COPD pattern"
+        "identifies a normal or mildly hyperinflated film",
+        "explicitly excludes pneumothorax, consolidation, and effusion"
       ],
       "criticalFindings": [
-        "Hyperinflation with flattened diaphragms (emphysema)."
+        "Mild hyperinflation; no consolidation, effusion, or pneumothorax."
       ],
       "commonMistakes": [
-        "counting rib spaces incorrectly and missing hyperinflation"
+        "inventing pathology on a near-normal film",
+        "failing to comment on the absence of pneumothorax or consolidation"
       ],
-      "idealAnswer": "Emphysematous hyperinflation: flattened hemidiaphragms, increased retrosternal lucency, >6 anterior ribs.",
+      "idealAnswer": "Mild hyperinflation with no consolidation, effusion, or pneumothorax; the film mainly serves to exclude complications.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Hyperinflation with flattened diaphragms (emphysema)."
+          {
+            "item": "Recognizes: Mild hyperinflation; no consolidation, effusion, or pneumothorax.",
+            "points": 5
+          }
         ],
         "coreActions": [
-          "flattened diaphragms / hyperinflation",
-          "recognizes an emphysema/COPD pattern"
+          {
+            "item": "identifies a normal or mildly hyperinflated film",
+            "points": 3
+          },
+          {
+            "item": "explicitly excludes pneumothorax, consolidation, and effusion",
+            "points": 2
+          }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
-            "points": -3
+            "label": "inventing pathology",
+            "points": -2
           }
         ]
       }
@@ -589,12 +599,12 @@
       "Systemic corticosteroids"
     ],
     "keyImageInterpretationFindings": [
-      "Right heart strain pattern (S1Q3T3, anterior T-wave inversions).",
-      "Hyperinflation with flattened diaphragms (emphysema)."
+      "Sinus tachycardia without acute ischemic changes.",
+      "Mild hyperinflation; no consolidation, effusion, or pneumothorax."
     ],
     "criticalImageInterpretationFindings": [
-      "Right heart strain pattern (S1Q3T3, anterior T-wave inversions).",
-      "Hyperinflation with flattened diaphragms (emphysema)."
+      "Sinus tachycardia without acute ischemic changes.",
+      "Mild hyperinflation; no consolidation, effusion, or pneumothorax."
     ],
     "imageInterpretationPearls": [
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",

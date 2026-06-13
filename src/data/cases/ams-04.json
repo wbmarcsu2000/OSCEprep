@@ -54,9 +54,9 @@
       "findings": "Screen for pneumonia as a precipitant; here essentially clear.",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "Screen for pneumonia as a precipitant; here essentially clear.",
+      "imageDescription": "Essentially clear chest radiograph, no consolidation.",
       "searchTerms": [
-        "chest radiograph Screen pneumonia precipitant; here"
+        "normal PA chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -179,7 +179,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia; assess for potassium effects; no acute ischemia. CREDIT: rate & rhythm (6); comments on looking for hyper/hypokalemic changes (4); no acute ischemia (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = multifocal atrial tachycardia. CREDIT: recognizes MAT — irregular tachycardia with ≥3 distinct P-wave morphologies (8); notes varying PR/PP intervals and rate >100 (4); systematic read (3). PENALTY: calling it sinus tachycardia / missing the multiple P-wave morphologies (-3).",
       "keyFindings": [
         "≥3 distinct P-wave morphologies",
         "irregular rhythm with varying PR intervals"
@@ -233,15 +233,11 @@
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Screen for pneumonia as a precipitant; here essentially clear.",
+            "item": "Recognizes an essentially clear film (no consolidation), obtained to screen for a precipitating pneumonia.",
             "points": 6
           }
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal film",
-            "points": 6
-          },
           {
             "item": "notes it screens for a precipitating pneumonia",
             "points": 4
@@ -262,7 +258,7 @@
       "max": 10,
       "prompt": "Given glucose 880, osm >330, and minimal ketones, what is your diagnosis and how does it differ from DKA?",
       "rubric": "Hyperosmolar hyperglycemic state (6). Distinguishes from DKA — much higher glucose/osmolality, minimal ketosis, only mild acidosis (4).",
-      "idealAnswer": "Hyperosmolar hyperglycemic state. ",
+      "idealAnswer": "Hyperosmolar hyperglycemic state. Unlike DKA, HHS shows a much higher glucose (~880) and serum osmolality (>330) with minimal ketosis and only mild or no acidosis, reflecting enough residual insulin to suppress ketogenesis but not hyperglycemia; the dominant problem is profound hyperosmolar dehydration.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -582,7 +578,7 @@
       "potassium"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; watch for potassium-related changes; no acute ischemia.",
+      "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100).",
       "Screen for pneumonia as a precipitant; here essentially clear."
     ],
     "criticalManagementItems": [

@@ -138,7 +138,7 @@
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
       "rubric": "LFTs — recognize the cholestatic (Alk Phos/GGT) pattern (CANT-MISS,3). Fractionated bilirubin (2). Lipase to exclude gallstone pancreatitis (2). CBC (1). Acetaminophen level (1). RUQ ultrasound — duct dilation/stones (CANT-MISS,4). MRCP/ERCP for confirmation (2). PENALTY: not imaging the biliary tree in obstructive jaundice (-2).",
-      "idealAnswer": "Order: LFTs — recognize the cholestatic (Alk Phos/GGT) pattern; RUQ ultrasound — duct dilation/stones.",
+      "idealAnswer": "Order LFTs (recognize the cholestatic Alk Phos/GGT pattern), fractionated bilirubin, lipase (exclude gallstone pancreatitis), CBC, an acetaminophen level, a RUQ ultrasound for duct dilation/stones, and MRCP/ERCP for confirmation.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -177,7 +177,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal/near-normal, no acute ischemia. CREDIT: rate & rhythm (7); recognizes no acute ischemia / why we checked (upper-abdominal pain) (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = junctional escape rhythm (narrow regular complexes ~50 with absent/retrograde P waves). CREDIT: systematic rate & rhythm read (7); recognizes the narrow regular rhythm without normal sinus P waves (5); identifies a junctional escape rhythm (3). PENALTY: calling it sinus bradycardia / normal or missing the abnormality (-3).",
       "keyFindings": [
         "narrow regular rhythm without normal sinus P waves",
         "identifies a junctional escape rhythm"
@@ -230,18 +230,14 @@
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: No free air; clear bases (excludes perforation and basal pneumonia).",
-            "points": 5
+            "item": "No free air; clear bases (excludes perforation and basal pneumonia).",
+            "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "identifies a normal film",
-            "points": 5
-          },
-          {
-            "item": "excludes free air and basal pneumonia",
-            "points": 5
+            "item": "notes the film is low-yield / a reasonable screen",
+            "points": 4
           }
         ],
         "bonusActions": [],
@@ -259,7 +255,7 @@
       "max": 10,
       "prompt": "Cholestatic LFTs, conjugated hyperbilirubinemia, and a dilated CBD with a stone. What is your diagnosis and what worsens the urgency?",
       "rubric": "Choledocholithiasis (6). Recognizes that fever/rigors + jaundice + RUQ pain (Charcot's triad) signals ascending cholangitis requiring urgent decompression (4).",
-      "idealAnswer": "Choledocholithiasis. ",
+      "idealAnswer": "Choledocholithiasis. Urgency escalates if fever/rigors develop (Charcot's triad with jaundice and RUQ pain), signalling ascending cholangitis and the need for urgent biliary decompression.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -570,7 +566,7 @@
       "RUQ ultrasound — duct dilation/stones"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm/mild tachycardia; no acute ischemia (excludes a cardiac cause of upper-abdominal pain).",
+      "Junctional escape rhythm.",
       "No free air; clear bases (excludes perforation and basal pneumonia)."
     ],
     "criticalManagementItems": [

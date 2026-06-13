@@ -212,7 +212,7 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process; normal cardiac silhouette. CREDIT: identifies a normal film (6); notes it helps exclude other causes of chest pain (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = bilateral calcified pleural plaques (asbestos-related); no acute cardiopulmonary process. CREDIT: identifies the calcified pleural plaques (6); links them to prior asbestos exposure / notes they are an incidental finding not the cause of today's pain (4). PENALTY: calling the study normal / missing the abnormality (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
@@ -626,7 +626,7 @@
     ],
     "criticalInterpretationItems": [
       "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
-      "No acute cardiopulmonary process; normal cardiac silhouette."
+      "Calcified pleural plaques (asbestos-related)."
     ],
     "criticalManagementItems": [
       "Aspirin",

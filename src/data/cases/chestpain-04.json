@@ -214,7 +214,7 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = normal cardiac silhouette, clear lung fields. CREDIT: identifies a normal film (6); comments on assessing the cardiac silhouette for a pericardial effusion (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = cardiogenic pulmonary edema: bilateral perihilar 'bat-wing' alveolar opacities with vascular redistribution. CREDIT: identifies the bilateral perihilar alveolar opacities (6); recognizes cephalization / signs of pulmonary edema (4). PENALTY: calling the study normal / missing the abnormality (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
@@ -622,7 +622,7 @@
     ],
     "criticalInterpretationItems": [
       "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
-      "Normal cardiac silhouette, clear lung fields."
+      "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
     ],
     "criticalManagementItems": [
       "NSAID (high-dose ibuprofen/ASA)",

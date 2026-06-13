@@ -180,7 +180,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal/no-acute-ischemia tracing (5); systematic read (3). PENALTY: over-reading a normal EKG (-2).",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (irregularly irregular rhythm, absent P waves, fibrillatory baseline, ventricular rate ~110). CREDIT: rate & rhythm — identifies the irregularly irregular rhythm (7); recognizes atrial fibrillation with RVR and absent P waves (5); systematic read (3). PENALTY: calling it normal sinus / missing the abnormality (-3).",
       "keyFindings": [
         "irregularly irregular rhythm",
         "absence of organized P waves"
@@ -218,7 +218,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no free air under the diaphragm, clear lung bases. CREDIT: correctly identifies a normal film (5); specifically excludes free air (perforation) and basal pneumonia (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = a small dense calcified granuloma (with possible calcified hilar node) — old healed granulomatous disease. CREDIT: identifies the calcified granuloma (5); recognizes it as a benign healed finding rather than working it up as malignancy (5). PENALTY: missing the nodule / calling the film entirely normal, or working up a clearly calcified benign nodule as cancer (-3).",
       "keyFindings": [
         "identifies a calcified granuloma",
         "recognizes it as a benign healed finding"
@@ -254,7 +254,7 @@
       "max": 10,
       "prompt": "Given the CT findings, what is your diagnosis and reasoning?",
       "rubric": "Acute appendicitis (6). Cites dilated appendix with fat stranding + leukocytosis + classic exam (4).",
-      "idealAnswer": "Acute appendicitis. ",
+      "idealAnswer": "Acute appendicitis — CT shows a dilated, fluid-filled appendix (~10 mm) with periappendiceal fat stranding, supported by the leukocytosis (WBC 14.2) and the classic migratory pain with anorexia and peritoneal signs.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -600,8 +600,8 @@
       "CT abdomen/pelvis (or ultrasound)"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No free air under the diaphragm; clear lung bases (mainly to exclude perforation and basal pneumonia)."
+      "Atrial fibrillation with rapid ventricular response (irregularly irregular, absent P waves, rate ~110).",
+      "Calcified granuloma — a benign, old healed granulomatous finding."
     ],
     "criticalManagementItems": [
       "NPO and IV fluids",

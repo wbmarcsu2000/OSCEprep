@@ -37,9 +37,10 @@
       "verify": "From the LITFL 'Hypokalaemia' library page — download an example tracing that matches: Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute is … and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "imageDescription": "12-lead EKG in sinus rhythm with hypokalemic changes (flattened T waves and U waves)",
       "searchTerms": [
-        "12-lead EKG Sinus rhythm; possible changes"
+        "hypokalemia ECG U waves",
+        "flattened T waves hypokalaemia 12-lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)"
     },
@@ -51,9 +52,10 @@
       "findings": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
       "verify": "Pick a CC plain film showing dilated small-bowel loops with air-fluid levels (SBO); must NOT show free air.",
       "assetNeeded": true,
-      "imageDescription": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+      "imageDescription": "upright abdominal radiograph showing dilated small-bowel loops with step-ladder air-fluid levels",
       "searchTerms": [
-        "chest radiograph Multiple dilated small-bowel loops"
+        "small bowel obstruction air-fluid levels x-ray",
+        "dilated small bowel loops step-ladder upright film"
       ],
       "recommendedSource": "Radiopaedia.org"
     }
@@ -172,7 +174,7 @@
       "keyFindings": [
         "rate & rhythm",
         "no acute ischemic changes",
-        "effect",
+        "recognizes possible hypokalemic effect (flat T waves / U waves)",
         "systematic read"
       ],
       "criticalFindings": [
@@ -193,19 +195,19 @@
         "coreActions": [
           {
             "item": "rate & rhythm",
-            "points": 6
-          },
-          {
-            "item": "no acute ischemic changes",
-            "points": 4
-          },
-          {
-            "item": "effect",
             "points": 3
           },
           {
-            "item": "systematic read",
+            "item": "no acute ischemic changes",
+            "points": 3
+          },
+          {
+            "item": "recognizes possible hypokalemic effect (flat T waves / U waves)",
             "points": 2
+          },
+          {
+            "item": "systematic read",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -226,14 +228,16 @@
       "prompt": "Here is the patient's upright film. Describe your findings.",
       "rubric": "Findings = dilated small-bowel loops with air-fluid levels (step-ladder); no free air. CREDIT: identifies dilated bowel loops with air-fluid levels (5); recognizes the obstructive pattern (small bowel) (3); excludes free air (perforation) (2).",
       "keyFindings": [
-        "identifies dilated bowel loops with air-fluid levels"
+        "identifies dilated bowel loops with air-fluid levels",
+        "recognizes the obstructive small-bowel pattern",
+        "excludes free air (perforation)"
       ],
       "criticalFindings": [
         "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
       ],
       "commonMistakes": [
-        "Over-reading a normal study",
-        "Failing to comment on rate/rhythm or exposure"
+        "mistaking dilated small bowel for large bowel",
+        "missing free air under the diaphragm"
       ],
       "idealAnswer": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
       "scoring": {
@@ -246,8 +250,12 @@
         ],
         "coreActions": [
           {
-            "item": "identifies dilated bowel loops with air-fluid levels",
-            "points": 5
+            "item": "recognizes the obstructive (small-bowel) pattern",
+            "points": 3
+          },
+          {
+            "item": "excludes free air (perforation)",
+            "points": 2
           }
         ],
         "bonusActions": [],
@@ -260,7 +268,7 @@
       "max": 10,
       "prompt": "Given the CT, what is your diagnosis and what raises concern for the bowel being compromised?",
       "rubric": "Adhesive small bowel obstruction (5). Notes a transition point with proximal dilation/distal collapse (3). Flags strangulation warning signs — rising lactate, fever, peritonitis, pneumatosis — that mandate surgery (bonus,2).",
-      "idealAnswer": "Small bowel obstruction. ",
+      "idealAnswer": "Adhesive small bowel obstruction — CT shows dilated proximal small-bowel loops with a transition point and collapsed distal bowel (likely from prior surgical adhesions). Concern for bowel compromise/strangulation is raised by a rising lactate, fever, peritonitis, or pneumatosis, any of which mandates urgent surgery.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -493,7 +501,7 @@
   "physicalExamMappings": [
     {
       "id": "inspect_abdomen_finding_1",
-      "finding": "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "finding": "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed midline surgical scar. No hernias palpable (check groin).",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -503,7 +511,7 @@
     },
     {
       "id": "auscultate_bowel_sounds_finding_2",
-      "finding": "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "finding": "High-pitched/tinkling bowel sounds (or becoming absent) over a distended, tympanitic abdomen.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -535,8 +543,7 @@
     "diagnosticFramework": "60F with prior abdominal surgery presents with a day of crampy abdominal pain, distension, bilious vomiting, and inability to pass stool or gas. The diagnosis is Small bowel obstruction, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
-      "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed mid",
+      "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed midline surgical scar. No hernias palpable (check groin).",
       "General: uncomfortable, mild dehydration."
     ],
     "keyDiagnosticFindings": [

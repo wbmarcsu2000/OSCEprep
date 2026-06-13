@@ -172,7 +172,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading (-2).",
+      "rubric": "Findings = right bundle branch block. CREDIT: recognizes RBBB — wide QRS >120 ms with rSR' in V1 (7); identifies the broad terminal S waves in I and V6 (5); systematic read (3). PENALTY: calling it a normal tracing / missing the wide QRS (-2).",
       "keyFindings": [
         "wide QRS >120 ms",
         "rSR' in V1 / slurred S in lateral leads"
@@ -210,7 +210,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = atherosclerotic, tortuous thoracic aorta with a calcified aortic knob. CREDIT: identifies the tortuous/unfolded aorta with calcification (6); recognizes it as chronic atherosclerotic change (4). PENALTY: calling the study normal / missing the aortic calcification (-2).",
       "keyFindings": [
         "tortuous/unfolded aorta with calcification",
         "recognizes it as chronic atherosclerotic change"
@@ -246,7 +246,7 @@
       "max": 10,
       "prompt": "Macrocytic anemia with low B12, elevated MMA/homocysteine, and dorsal-column signs. What is your diagnosis and likely cause?",
       "rubric": "B12 deficiency with subacute combined degeneration (6). Identifies the cause — pernicious anemia (positive IF antibodies) and/or vegan diet (4).",
-      "idealAnswer": "B12 deficiency. ",
+      "idealAnswer": "B12 (cobalamin) deficiency with subacute combined degeneration, given the macrocytic anemia, low B12 with elevated MMA/homocysteine, and dorsal-column signs. The likely cause is pernicious anemia (positive intrinsic-factor antibodies), compounded by a long-standing vegan diet.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -568,8 +568,8 @@
       "Serum B12"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No acute process (low yield)."
+      "Right bundle branch block.",
+      "Aortic tortuosity with calcification (atherosclerosis)."
     ],
     "criticalManagementItems": [
       "B12 / cobalamin replacement"

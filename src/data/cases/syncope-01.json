@@ -148,7 +148,11 @@
         "bonusActions": [],
         "penalties": [
           {
-            "item": "extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint (-3 for over-testing); FAILING to get an EKG",
+            "item": "Extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint",
+            "points": -3
+          },
+          {
+            "item": "Failing to obtain an EKG",
             "points": -2
           }
         ]
@@ -158,7 +162,7 @@
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint (-3 for over-testing); FAILING to get an EKG"
+        "Extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint"
       ],
       "orderSensitiveActions": []
     },
@@ -169,7 +173,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, normal intervals, no high-risk features. CREDIT: rate & rhythm (5); normal intervals/no block (4); explicitly excludes high-risk features — long QT, pre-excitation, Brugada, conduction disease (4); systematic read (2). PENALTY: over-reading a normal EKG (-2).",
+      "rubric": "Findings = ventricular bigeminy (each sinus beat coupled to a wide premature ventricular complex). CREDIT: rate & rhythm (5); identifies the premature ventricular complexes (4); recognizes the bigeminal pattern — every sinus beat followed by a PVC (4); systematic read (2). PENALTY: calling the study normal / missing the bigeminy (-2).",
       "keyFindings": [
         "identifies premature ventricular complexes",
         "recognizes the bigeminal pattern"
@@ -207,7 +211,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = normal. CREDIT: identifies a normal film (6); notes a CXR is low-yield and not routinely needed for low-risk syncope (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = tortuous, unfolded thoracic aorta with calcification of the aortic knob (chronic atherosclerotic change). CREDIT: identifies the tortuous/unfolded aorta with calcification (6); recognizes it as benign chronic atherosclerosis rather than acute pathology (4). PENALTY: calling the film normal / mistaking the unfolded aorta for dissection (-2).",
       "keyFindings": [
         "tortuous/unfolded aorta with calcification",
         "recognizes it as chronic atherosclerotic change"
@@ -243,7 +247,7 @@
       "max": 10,
       "prompt": "With a normal EKG and a classic story, what is your diagnosis and how do you risk-stratify?",
       "rubric": "Vasovagal syncope (6). Applies a risk-stratification framework — young, clear prodrome/trigger, normal exam and EKG = low risk (4).",
-      "idealAnswer": "Vasovagal syncope. ",
+      "idealAnswer": "Vasovagal (neurocardiogenic) syncope. Risk-stratify as low risk: young patient, clear prodrome and trigger (prolonged standing, heat, crowd), rapid spontaneous recovery, normal exam, and a non-ischemic EKG with no high-risk conduction features — safe for discharge without admission.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -559,8 +563,8 @@
       "EKG"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; normal intervals; no pre-excitation, long QT, or block.",
-      "Normal (low yield; not routinely required)."
+      "Ventricular bigeminy (frequent PVCs).",
+      "Aortic tortuosity with calcification (atherosclerosis)."
     ],
     "criticalManagementItems": [
       "Reassurance and patient education",

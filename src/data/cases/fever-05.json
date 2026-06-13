@@ -174,7 +174,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "rubric": "Findings = first-degree AV block (sinus rhythm, fixed prolonged PR ~280 ms, every P conducts). CREDIT: measures the PR interval (7); recognizes PR >200 ms with 1:1 conduction = first-degree AV block (5); systematic read (3). PENALTY: calling it normal sinus / missing the prolonged PR (-3).",
       "keyFindings": [
         "measures the PR interval",
         "PR >200 ms with 1:1 conduction"
@@ -212,7 +212,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it screens for a pulmonary source (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = right lower lobe consolidation with air bronchograms (pneumonia). CREDIT: identifies lobar consolidation with air bronchograms (6); localizes it to the right lower lobe (4). PENALTY: calling the film normal / missing the consolidation (-2).",
       "keyFindings": [
         "lobar consolidation with air bronchograms",
         "localizes it to the right lower lobe"
@@ -249,7 +249,7 @@
       "max": 10,
       "prompt": "CSF shows neutrophilic pleocytosis, high protein, low glucose, and a positive Gram stain. What is your diagnosis?",
       "rubric": "Bacterial meningitis (6). Interprets the bacterial CSF pattern — neutrophils, high protein, LOW glucose, positive Gram stain (4).",
-      "idealAnswer": "Bacterial meningitis. ",
+      "idealAnswer": "Bacterial meningitis — the CSF shows a neutrophilic pleocytosis with high protein, low glucose, and a positive Gram stain, the classic bacterial pattern.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -553,8 +553,8 @@
       "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
-      "No acute process (screens for a pulmonary source)."
+      "First-degree AV block (PR ~280 ms, every P conducts).",
+      "Right lower lobe consolidation (pneumonia)."
     ],
     "criticalManagementItems": [
       "Empiric vancomycin + ceftriaxone immediately",

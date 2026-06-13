@@ -164,7 +164,7 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm / no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (5); systematic read (3). PENALTY: over-calling pathology (-3).",
+      "rubric": "Findings = diffusely low QRS voltage (limb leads <5 mm, precordial <10 mm). CREDIT: recognizes diffusely low QRS voltage (7); lists a differential for low voltage (effusion, infiltrative, COPD, obesity) (5); systematic read (3). PENALTY: calling the study normal / missing the low voltage (-3).",
       "keyFindings": [
         "recognizes diffusely low QRS voltage",
         "lists a differential (effusion, infiltrative, COPD, obesity)"
@@ -339,8 +339,7 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use",
-      "suicidal_ideation"
+      "tobacco_use"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "67-year-old man, thin, mildly breathless on exertion. Calm, good historian.",
@@ -364,21 +363,6 @@
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
-      "hiddenUntilAsked": true
-    },
-    {
-      "id": "suicidal_ideation",
-      "category": "psychiatric",
-      "triggerConcepts": [
-        "how much did you take",
-        "intent",
-        "self-harm",
-        "were you trying to hurt yourself",
-        "mood"
-      ],
-      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "critical",
-      "points": 4,
       "hiddenUntilAsked": true
     },
     {
@@ -492,7 +476,7 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -526,7 +510,7 @@
     },
     {
       "id": "assess_edema_finding_4",
-      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness.",
       "revealedBy": [
         "assess_edema"
       ],
@@ -536,7 +520,7 @@
     },
     {
       "id": "assess_calf_tenderness_finding_5",
-      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "finding": "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness.",
       "revealedBy": [
         "assess_calf_tenderness"
       ],
@@ -557,14 +541,17 @@
     "finalDiagnosis": "Malignant pleural effusion",
     "diagnosticFramework": "67M, former heavy smoker, presents with several weeks of progressive exertional dyspnea, a dry cough, and unintentional weight loss. The diagnosis is Malignant pleural effusion, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [
-      "how much did you take"
+      "Weeks of progressive exertional dyspnea and dry cough",
+      "~10 lb unintentional weight loss",
+      "40 pack-year smoking history",
+      "Asbestos/construction occupational exposure"
     ],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
+      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness.",
       "Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.",
       "Lungs: over the LEFT base — dullness to percussion, decreased breath sounds, and DECREASED tactile fremitus; right lung clear. No wheeze.",
-      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende",
-      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tende"
+      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness.",
+      "Cardiac: regular, no murmur. Neck: no lymphadenopathy unless examined (small supraclavicular node if specifically checked). Extremities: no edema, no calf tenderness."
     ],
     "keyDiagnosticFindings": [
       "CBC",
@@ -589,7 +576,7 @@
       "Pleural fluid analysis (cytology, Light's criteria)"
     ],
     "criticalHistoryItems": [
-      "suicidal_ideation"
+      "tobacco_use"
     ],
     "criticalExamItems": [
       "auscultate_aortic_area"
@@ -599,7 +586,7 @@
       "Diagnostic thoracentesis with pleural fluid analysis + Light's criteria + cytology"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes (sinus tachycardia possible).",
+      "Low QRS voltage.",
       "Large left-sided pleural effusion with meniscus sign and blunted costophrenic angle; possible mediastinal shift."
     ],
     "criticalManagementItems": [
