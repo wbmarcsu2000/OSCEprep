@@ -12,6 +12,8 @@ import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
 import { loadAttempts } from "./analytics/store";
+import { initTelemetry } from "./analytics/telemetry";
+import { ConsentBanner } from "./ui/components/ConsentBanner";
 import { levelFor, totalXp, streakDays } from "./ui/gamification";
 import { useMountNow } from "./ui/useMountNow";
 
@@ -132,6 +134,7 @@ export default function App() {
   // Restore an interrupted session (as an offer) and honor a deep link.
   useEffect(() => {
     void resumeSession();
+    initTelemetry();
     try {
       if (window.location.hash && window.location.hash !== "#/") applyHash(window.location.hash);
     } catch {
@@ -290,6 +293,7 @@ export default function App() {
         <span>Fictional cases · no real patient data</span>
       </footer>
 
+      <ConsentBanner />
       {import.meta.env.DEV && <DevTools />}
     </div>
   );

@@ -42,6 +42,7 @@ import {
   loadReview,
   type CaseReview,
 } from "../analytics/store";
+import { track } from "../analytics/telemetry";
 import { looseCovered } from "../engine/textMatch";
 
 const WRAPPERS = {
@@ -361,8 +362,10 @@ export const useAppStore = create<AppState>((set, get) => ({
   review: null,
 
   setView(view) {
+    const changed = get().view !== view;
     set({ view });
     syncHash();
+    if (changed) track("screen_view", { screen: view }); // don't double-count no-op nav
   },
 
   async startCase(id, mode) {
@@ -425,9 +428,13 @@ export const useAppStore = create<AppState>((set, get) => ({
     } catch {
       // ignore storage failure
     }
+    const wasEnabled = llmEnabled;
     ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
     set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null, aiDegradedDetail: null });
-    if (llmEnabled) void get().verifyAi();
+    if (llmEnabled) {
+      if (!wasEnabled) track("ai_enabled", { provider: providerKind ?? "" }); // count only the off→on edge
+      void get().verifyAi();
+    }
   },
 
   setModel(model) {
@@ -601,10 +608,12 @@ export const useAppStore = create<AppState>((set, get) => ({
   beginEncounter() {
     const { engine, caseModel } = get();
     if (!engine || !caseModel) return;
-    setEngine(
-      set,
-      withOpening(transition(engine, "PATIENT_ENCOUNTER", caseModel, Date.now()), caseModel),
-    );
+    const advanced = transition(engine, "PATIENT_ENCOUNTER", caseModel, Date.now());
+    // Only count a start when the encounter actually begins (not a no-op transition).
+    if (advanced !== engine) {
+      track("case_start", { category: caseModel.category, mode: engine.mode, difficulty: caseModel.difficulty });
+    }
+    setEngine(set, withOpening(advanced, caseModel));
   },
 
   endEncounterEarly() {
@@ -790,6 +799,12 @@ export const useAppStore = create<AppState>((set, get) => ({
       );
       if (next.submitted && !current.submitted) {
         recordAttempt(caseModel, next);
+        track("case_complete", {
+          category: caseModel.category,
+          mode: next.mode,
+          band: next.result?.band,
+          difficulty: caseModel.difficulty,
+        });
       }
       setEngine(set, next);
       // AI coaching notes load in the background, fill in once ready, and are

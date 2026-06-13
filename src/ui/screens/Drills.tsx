@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../data/curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
 import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/managementDrills";
+import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
 import { ManualRefs } from "../components/ManualRefs";
 import { Segmented } from "../components/Segmented";
@@ -465,6 +466,7 @@ function DifferentialDrill({
 
   const doGrade = async () => {
     setGrading(true);
+    track("drill", { drillType: "differential" });
     try {
       const [d, q] = await Promise.all([grader(ddx, ddxGroups), grader(questions, qGroups)]);
       setDdxMatched(d);
@@ -578,6 +580,7 @@ function SkillDrill({
 
   const doGrade = async () => {
     setGrading(true);
+    track("drill", { drillType: "skills" });
     try {
       setMatched(await grader(answer, groups));
       onGrade();
@@ -675,6 +678,7 @@ function WorkupDrill({
 
   const doGrade = async () => {
     setGrading(true);
+    track("drill", { drillType: "workup" });
     try {
       setMatched(await grader(workup, groups));
       onGrade();
@@ -864,6 +868,7 @@ function ManagementDrill({
 
   const doGrade = async () => {
     setGrading(true);
+    track("drill", { drillType: "management" });
     try {
       setMatched(await grader(answer, groups));
       onGrade();
