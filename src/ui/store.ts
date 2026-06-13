@@ -56,7 +56,7 @@ let llmEnabled: boolean;
 let providerKind: ProviderKind | null;
 ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
 
-export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills";
+export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills" | "neuro";
 
 /** Last-chosen station mode, persisted so a chosen mode sticks. Defaults to
  *  Practice (the guided reveal+teach tutor) until the user explicitly picks
@@ -159,6 +159,7 @@ const VIEW_HASH: Record<View, string> = {
   home: "#/",
   select: "#/stations",
   drills: "#/drills",
+  neuro: "#/neuro",
   skills: "#/skills",
   analytics: "#/performance",
   review: "#/review",

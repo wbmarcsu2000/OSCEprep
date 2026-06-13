@@ -134,6 +134,13 @@ export function Home() {
         <button
           className="flex items-center gap-1.5"
           style={{ color: "var(--color-exam-muted)" }}
+          onClick={() => setView("neuro")}
+        >
+          🧠 Neuro cases
+        </button>
+        <button
+          className="flex items-center gap-1.5"
+          style={{ color: "var(--color-exam-muted)" }}
           onClick={() => setView("skills")}
         >
           📖 Skills reference
