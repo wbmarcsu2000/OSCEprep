@@ -12,7 +12,7 @@ import {
   classifyIntentDeterministic,
   phrasePatientReplyDeterministic,
 } from "../deterministicFallback";
-import { guardParaphrase, DeterministicProvider } from "../LlmAdapter";
+import { guardParaphrase, guardOffTarget, DeterministicProvider } from "../LlmAdapter";
 import { chestpain01, SCORE_BANDS } from "../../engine/__tests__/fixtures";
 
 const cp01 = adaptCase(chestpain01);
@@ -117,5 +117,42 @@ describe("paraphrase guard (hallucination structurally impossible)", () => {
   it("rejects empty or runaway output", () => {
     expect(guardParaphrase(approved, "", persona, "q")).toBe(grounded);
     expect(guardParaphrase(approved, "blah ".repeat(500), persona, "q")).toBe(grounded);
+  });
+});
+
+describe("off-target guard (questions with no case data)", () => {
+  it("accepts a natural lifestyle answer", () => {
+    const reply = "My diet's pretty average, honestly — nothing special.";
+    expect(guardOffTarget(reply, "what is your diet")).toBe(reply);
+  });
+
+  it("accepts a natural symptom denial", () => {
+    expect(guardOffTarget("No, nothing like that.", "any rashes?")).toBe("No, nothing like that.");
+  });
+
+  it("lets the patient echo the symptom the doctor named", () => {
+    const reply = "No, no chest pain at all.";
+    expect(guardOffTarget(reply, "have you had any chest pain?")).toBe(reply);
+  });
+
+  it("blocks a volunteered clinical symptom not asked about", () => {
+    expect(
+      guardOffTarget("Well, I've been having chest pain and palpitations.", "what is your diet?"),
+    ).toBeNull();
+  });
+
+  it("blocks a fabricated vital/lab number", () => {
+    expect(guardOffTarget("My blood pressure runs around 180.", "do you exercise?")).toBeNull();
+  });
+
+  it("allows small everyday numbers like frequency", () => {
+    const reply = "I walk maybe 3 times a week.";
+    expect(guardOffTarget(reply, "do you exercise?")).toBe(reply);
+  });
+
+  it("strips wrapping quotes and rejects empty/runaway", () => {
+    expect(guardOffTarget('"Pretty normal, I guess."', "what is your diet")).toBe("Pretty normal, I guess.");
+    expect(guardOffTarget("", "q")).toBeNull();
+    expect(guardOffTarget("blah ".repeat(200), "q")).toBeNull();
   });
 });
