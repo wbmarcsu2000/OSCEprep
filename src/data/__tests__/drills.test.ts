@@ -1,7 +1,34 @@
 import { describe, it, expect } from "vitest";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES } from "../skillDrills";
+import { MANAGEMENT_DRILLS, MANAGEMENT_DRILL_CATEGORIES } from "../managementDrills";
 import { CURRICULUM } from "../curriculum";
 import { itemMatches, looseCovered } from "../../engine/textMatch";
+
+describe("management drills", () => {
+  it("has one drill per case category, each grounded in the case", () => {
+    expect(MANAGEMENT_DRILLS.length).toBeGreaterThanOrEqual(50);
+    // Every curriculum complaint is represented so the category selector works.
+    const curriculumCats = new Set(CURRICULUM.map((c) => c.category));
+    for (const cat of MANAGEMENT_DRILL_CATEGORIES) {
+      expect(curriculumCats.has(cat), `${cat} is a known complaint`).toBe(true);
+    }
+    for (const cat of curriculumCats) {
+      const n = MANAGEMENT_DRILLS.filter((p) => p.category === cat).length;
+      expect(n, `${cat} has management drills`).toBeGreaterThan(0);
+    }
+  });
+
+  it("every problem has a scenario, graded actions, a model plan, and a manual page", () => {
+    for (const p of MANAGEMENT_DRILLS) {
+      expect(p.vignette.length, `${p.caseId} vignette`).toBeGreaterThan(10);
+      expect(p.diagnosis.length, `${p.caseId} diagnosis`).toBeGreaterThan(0);
+      expect(p.actions.length, `${p.caseId} graded actions`).toBeGreaterThan(0);
+      expect(p.idealAnswer.length, `${p.caseId} model plan`).toBeGreaterThan(20);
+      expect(p.manual.page, `${p.caseId} MGH page`).toBeGreaterThan(0);
+      expect(p.manual.page).toBeLessThanOrEqual(273);
+    }
+  });
+});
 
 describe("skill drills", () => {
   it("covers ABG, SAAG, pleural, and PFT with answers + explanations", () => {

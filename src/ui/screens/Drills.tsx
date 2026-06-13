@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../data/curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
+import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/managementDrills";
 import { useAppStore } from "../store";
 import { ManualRefs } from "../components/ManualRefs";
 import { Segmented } from "../components/Segmented";
@@ -10,12 +11,14 @@ import { Segmented } from "../components/Segmented";
  *  - Differential & history: given a chief complaint, write the broad
  *    differential + key questions; graded vs the buckets/themes.
  *  - Work-up: write the work-up, then enter how the results steer you.
+ *  - Management: given the scenario + working diagnosis, write the management
+ *    plan; graded against the case's expected actions (one drill per case).
  *  - Skills: ABG/acid-base, SAAG, pleural fluid, PFT problems with answers and
  *    full worked explanations.
  * Grading is semantic (AI) when a key is set, else a lenient keyword match —
  * both via the store's gradeCoverage so the same call works everywhere.
  */
-type DrillType = "differential" | "workup" | "skills";
+type DrillType = "differential" | "workup" | "management" | "skills";
 
 interface Coverage {
   group: string;
@@ -62,6 +65,7 @@ export function Drills() {
   const [ddx, setDdx] = useState("");
   const [questions, setQuestions] = useState("");
   const [workup, setWorkup] = useState("");
+  const [managementAnswer, setManagementAnswer] = useState("");
   const [skillAnswer, setSkillAnswer] = useState("");
   const [graded, setGraded] = useState(false);
 
@@ -83,10 +87,22 @@ export function Drills() {
   const skillProblem: SkillDrillProblem | null =
     type === "skills" && skillPool.length > 0 ? skillPool[stemIdx % skillPool.length] : null;
 
+  // Management drills: one per case, filtered to the selected complaint and
+  // rotated by stemIdx.
+  const managementPool = useMemo(
+    () => MANAGEMENT_DRILLS.filter((p) => p.category === categoryName),
+    [categoryName],
+  );
+  const managementProblem: ManagementDrillProblem | null =
+    type === "management" && managementPool.length > 0
+      ? managementPool[stemIdx % managementPool.length]
+      : null;
+
   const reset = () => {
     setDdx("");
     setQuestions("");
     setWorkup("");
+    setManagementAnswer("");
     setSkillAnswer("");
     setGraded(false);
   };
@@ -125,8 +141,8 @@ export function Drills() {
               Framework Drills
             </h2>
             <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-              Quick reps on the differential, key questions, and work-up — no full station. Graded
-              instantly against the category framework.
+              Quick reps on the differential, key questions, work-up, and management — no full
+              station. Graded instantly against the category framework.
             </p>
           </div>
         </div>
@@ -141,6 +157,7 @@ export function Drills() {
           options={[
             { value: "differential", label: "🧠 Differential" },
             { value: "workup", label: "🧪 Work-up" },
+            { value: "management", label: "🩺 Management" },
             { value: "skills", label: "📐 Skills" },
           ]}
           value={type}
@@ -188,11 +205,13 @@ export function Drills() {
         <button
           className="btn ml-auto"
           onClick={() => {
-            if (type === "skills") newRep("skills");
+            // Skills + management rotate within the current filter; differential
+            // and work-up jump to a random complaint for variety.
+            if (type === "skills" || type === "management") newRep(type);
             else newRep(type, CURRICULUM[(Date.now() >>> 0) % CURRICULUM.length].category);
           }}
         >
-          🎲 {type === "skills" ? "Next problem" : "Random rep"}
+          🎲 {type === "skills" ? "Next problem" : type === "management" ? "Next case" : "Random rep"}
         </button>
       </div>
 
@@ -220,6 +239,18 @@ export function Drills() {
           graded={graded}
           onGrade={() => setGraded(true)}
           onNew={() => newRep("workup", nextCategory())}
+          onRetry={retry}
+        />
+      )}
+      {type === "management" && (
+        <ManagementDrill
+          key={`${categoryName}:${stemIdx}`}
+          problem={managementProblem}
+          answer={managementAnswer}
+          setAnswer={setManagementAnswer}
+          graded={graded}
+          onGrade={() => setGraded(true)}
+          onNew={() => newRep("management")}
           onRetry={retry}
         />
       )}
@@ -803,6 +834,147 @@ function WorkupDrill({
 
           <ManualRefs manual={category.manual} compact />
         </>
+      )}
+    </div>
+  );
+}
+
+function ManagementDrill({
+  problem,
+  answer,
+  setAnswer,
+  graded,
+  onGrade,
+  onNew,
+  onRetry,
+}: {
+  problem: ManagementDrillProblem | null;
+  answer: string;
+  setAnswer: (v: string) => void;
+  graded: boolean;
+  onGrade: () => void;
+  onNew: () => void;
+  onRetry: () => void;
+}) {
+  const grader = useGrader();
+  const [grading, setGrading] = useState(false);
+  const [matched, setMatched] = useState<Set<string>>(new Set());
+  if (!problem) return null;
+  const groups = [{ group: "Management", items: problem.actions }];
+
+  const doGrade = async () => {
+    setGrading(true);
+    try {
+      setMatched(await grader(answer, groups));
+      onGrade();
+    } finally {
+      setGrading(false);
+    }
+  };
+
+  const result = buildCoverage(groups, matched);
+  const rubric =
+    `Expected actions: ${problem.actions.join("; ")}.` +
+    (problem.unsafe.length ? ` Avoid: ${problem.unsafe.join("; ")}.` : "");
+
+  return (
+    <div className="space-y-3">
+      <div className="card p-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="panel-label">{problem.category}</div>
+          <span className="chip chip-accent">management drill</span>
+        </div>
+        <p className="text-[15px] font-semibold leading-relaxed mt-1">{problem.vignette}</p>
+        <p className="text-[13px] mt-1.5">
+          <span className="font-semibold" style={{ color: "var(--color-exam-accent-deep)" }}>
+            Working diagnosis:
+          </span>{" "}
+          {problem.diagnosis}
+        </p>
+        <p className="text-[13px] mt-0.5" style={{ color: "var(--color-exam-muted)" }}>
+          {problem.prompt} Cover the initial steps, key treatments, consults, and disposition.
+        </p>
+      </div>
+
+      <div className="card p-4 space-y-3">
+        <textarea
+          className="input w-full resize-y leading-relaxed"
+          rows={5}
+          value={answer}
+          onChange={(e) => setAnswer(e.target.value)}
+          placeholder="Your management plan — immediate stabilization, treatments, consults, disposition…"
+          aria-label="Your management plan"
+        />
+        <GradeButton
+          graded={graded}
+          grading={grading}
+          disabled={!answer.trim()}
+          onGrade={doGrade}
+          onNew={onNew}
+          onRetry={onRetry}
+          newLabel="Next case →"
+        />
+      </div>
+
+      {graded && (
+        <div className="card p-4 space-y-4 pop-in">
+          <div className="flex items-center justify-between gap-3">
+            <div className="panel-label">Coverage</div>
+            <ResultChip named={result.named} total={result.total} />
+          </div>
+          <ScoreBar named={result.named} total={result.total} label="Management actions" />
+          <CoverageView title="Expected management" coverage={result.coverage} />
+
+          {problem.unsafe.length > 0 && (
+            <div>
+              <div className="panel-label mb-1" style={{ color: "var(--color-exam-danger)" }}>
+                Avoid
+              </div>
+              <ul className="space-y-1 text-[13px] leading-relaxed">
+                {problem.unsafe.map((u, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span aria-hidden style={{ color: "var(--color-exam-danger)" }}>✕</span>
+                    {u}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div>
+            <div className="panel-label mb-1">Model plan</div>
+            <p
+              className="rounded-lg border p-3 text-[13px] leading-relaxed"
+              style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
+            >
+              {problem.idealAnswer}
+            </p>
+            {(problem.disposition || problem.consults.length > 0) && (
+              <p className="text-[12.5px] mt-1.5" style={{ color: "var(--color-exam-muted)" }}>
+                {problem.disposition && (
+                  <>
+                    <span className="font-semibold">Disposition:</span> {problem.disposition}
+                  </>
+                )}
+                {problem.disposition && problem.consults.length > 0 ? "  ·  " : ""}
+                {problem.consults.length > 0 && (
+                  <>
+                    <span className="font-semibold">Consults:</span> {problem.consults.join(", ")}
+                  </>
+                )}
+              </p>
+            )}
+          </div>
+
+          <AiCoachNote
+            prompt={`${problem.vignette} Working diagnosis: ${problem.diagnosis}. ${problem.prompt}`}
+            studentAnswer={answer}
+            idealAnswer={problem.idealAnswer}
+            rubric={rubric}
+          />
+
+          {problem.manual.page > 0 && <ManualRefs manual={[problem.manual]} compact />}
+        </div>
       )}
     </div>
   );

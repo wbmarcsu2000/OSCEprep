@@ -72,9 +72,17 @@ function pickNaturalVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice 
 
 // ---- Speech-to-text (dictation) ---------------------------------------------
 
-/** Single-utterance dictation. `onInterim` streams the live transcript;
- *  `onFinal` fires once with the completed utterance. */
-export function useDictation(opts: { onTranscript: (text: string) => void }) {
+/** Dictation. `onTranscript` streams the live transcript. With `continuous`
+ *  (the default, used by the manual mic button) the recognizer is kept open
+ *  across Chrome's silence-driven restarts so the student can compose a longer
+ *  question. With `continuous: false` (conversation mode) it listens for ONE
+ *  utterance and fires `onSpeechEnd` when the speaker stops — a clean
+ *  one-turn-at-a-time cycle that doesn't flash the mic on and off. */
+export function useDictation(opts: {
+  onTranscript: (text: string) => void;
+  continuous?: boolean;
+  onSpeechEnd?: () => void;
+}) {
   // `listening` is the desired state; the recognition object's whole lifecycle
   // lives in the effect below (created on start, stopped on toggle-off/unmount),
   // so no ref is read or written outside an effect.
@@ -91,9 +99,10 @@ export function useDictation(opts: { onTranscript: (text: string) => void }) {
     const rec = new SRClass();
     rec.lang = "en-US";
     rec.interimResults = true;
-    // continuous: keep the mic open while the student talks instead of ending
-    // after the first pause (which read as "opens for a sec then stops").
-    rec.continuous = true;
+    // continuous (manual dictation): keep the mic open while the student talks
+    // instead of ending after the first pause. Conversation mode passes false
+    // so the recognizer ends naturally at end-of-speech (one utterance/turn).
+    rec.continuous = optsRef.current.continuous ?? true;
     rec.maxAlternatives = 1;
 
     // Accumulate completed segments; append the live interim so the input box
@@ -132,6 +141,15 @@ export function useDictation(opts: { onTranscript: (text: string) => void }) {
     };
     rec.onend = () => {
       if (stopped) return;
+      // One-shot mode (conversation): the recognizer ends when the speaker
+      // stops. Report end-of-speech so the caller can send the utterance, and
+      // do NOT auto-restart — restarting on every pause is what made the mic
+      // flash on and off. The caller re-opens the mic for the next turn.
+      if (optsRef.current.continuous === false) {
+        setListening(false);
+        optsRef.current.onSpeechEnd?.();
+        return;
+      }
       restartTimer = window.setTimeout(() => restart(0), 150);
     };
     rec.onerror = (ev) => {

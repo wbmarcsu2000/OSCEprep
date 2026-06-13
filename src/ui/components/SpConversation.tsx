@@ -23,14 +23,11 @@ export function SpConversation() {
   const tts = useTts();
   const [convo, setConvo] = useState(false);
 
-  // Refs let the dictation callback + timers read the latest state without
-  // re-subscribing, and let handleTranscript (defined before useDictation)
-  // reach the recognizer's controls.
+  // Refs let the dictation callbacks read the latest state without re-subscribing.
   const convoRef = useRef(false);
   const lockedRef = useRef(locked);
   const thinkingRef = useRef(spThinking);
-  const ctlRef = useRef<{ start: () => void; stop: () => void }>({ start: () => {}, stop: () => {} });
-  const silenceTimer = useRef<number | undefined>(undefined);
+  const lastTranscriptRef = useRef("");
   useEffect(() => {
     convoRef.current = convo;
     lockedRef.current = locked;
@@ -46,24 +43,26 @@ export function SpConversation() {
   };
 
   // Dictation streams the live transcript into the box. In manual mode the
-  // student edits and sends with Ask. In conversation mode, a pause (~1.4s of
-  // silence) auto-sends the question, the mic closes, and it re-opens once the
-  // patient's spoken reply finishes — a hands-free back-and-forth.
+  // student edits and sends with Ask. In conversation mode the recognizer ends
+  // at end-of-speech and we send the utterance (handleSpeechEnd); the mic then
+  // re-opens for the next turn via the reopen effect below — a hands-free
+  // back-and-forth without flashing the mic on every pause.
   function handleTranscript(t: string) {
     setDraft(t);
-    if (!convoRef.current) return;
-    if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
-    silenceTimer.current = window.setTimeout(() => {
-      const text = t.trim();
-      if (!text || lockedRef.current || thinkingRef.current) return;
-      ctlRef.current.stop(); // close the mic so it doesn't hear the patient reply
-      setDraft("");
-      void ask(text);
-    }, 1400);
+    lastTranscriptRef.current = t;
   }
-  const dictation = useDictation({ onTranscript: handleTranscript });
-  useEffect(() => {
-    ctlRef.current = { start: dictation.start, stop: dictation.stop };
+  function handleSpeechEnd() {
+    if (!convoRef.current || lockedRef.current || thinkingRef.current) return;
+    const text = lastTranscriptRef.current.trim();
+    if (!text) return; // empty end — the reopen effect keeps the mic listening
+    lastTranscriptRef.current = "";
+    setDraft("");
+    void ask(text);
+  }
+  const dictation = useDictation({
+    onTranscript: handleTranscript,
+    continuous: !convo,
+    onSpeechEnd: handleSpeechEnd,
   });
 
   const send = () => {
@@ -80,21 +79,25 @@ export function SpConversation() {
     setConvo(next);
     if (next) {
       if (tts.supported) tts.setEnabled(true); // replies must be spoken in convo mode
+      lastTranscriptRef.current = "";
       dictation.start();
     } else {
-      if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
       dictation.stop();
       tts.cancel();
     }
   };
 
-  // End conversation mode cleanly on unmount (leaving the encounter).
-  useEffect(
-    () => () => {
-      if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
-    },
-    [],
-  );
+  // Conversation mode keeps the mic open whenever the patient isn't thinking or
+  // speaking. Re-open it (debounced) after each reply or an empty utterance —
+  // this replaces per-pause restarts, so the mic no longer flashes on and off.
+  const startDictation = dictation.start;
+  const dictating = dictation.listening;
+  const ttsSpeaking = tts.speaking;
+  useEffect(() => {
+    if (!convo || locked || spThinking || ttsSpeaking || dictating) return;
+    const id = window.setTimeout(() => startDictation(), 250);
+    return () => window.clearTimeout(id);
+  }, [convo, locked, spThinking, ttsSpeaking, dictating, startDictation]);
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -111,9 +114,7 @@ export function SpConversation() {
       const last = conversation[conversation.length - 1];
       const isPatientSpeech = last && last.role === "patient" && last.kind === "speech";
       if (isPatientSpeech && (tts.enabled || convoRef.current)) {
-        tts.speak(last.text, () => {
-          if (convoRef.current && !lockedRef.current) ctlRef.current.start();
-        });
+        tts.speak(last.text); // mic re-opens via the reopen effect once speech ends
       }
     }
     spokenRef.current = conversation.length;
