@@ -15,8 +15,6 @@ export function Home() {
   const setView = useAppStore((s) => s.setView);
   const showEnableAi = useAppStore((s) => s.showEnableAi);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
-  const preferredMode = useAppStore((s) => s.preferredMode);
-  const startRandomUnattempted = useAppStore((s) => s.startRandomUnattempted);
 
   const now = useMountNow();
   const stats = useMemo(() => {
@@ -27,8 +25,6 @@ export function Home() {
       level: levelFor(totalXp(attempts)),
     };
   }, [now]);
-
-  const quickStart = () => void startRandomUnattempted(preferredMode);
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 space-y-7">
@@ -66,16 +62,12 @@ export function Home() {
             teaching at the end.
           </p>
           <div className="flex flex-col gap-2 pt-1">
-            <button className="btn btn-primary w-full justify-center py-2.5" onClick={quickStart}>
-              🎲 Start a case →
+            <button className="btn btn-primary w-full justify-center py-2.5" onClick={() => setView("select")}>
+              Start a case →
             </button>
-            <button
-              className="text-[13px] font-semibold underline underline-offset-2 self-start"
-              style={{ color: "var(--color-exam-accent)" }}
-              onClick={() => setView("select")}
-            >
-              Browse all {manifest.cases.length} cases · {stats.done} done
-            </button>
+            <span className="text-[13px] font-semibold self-start" style={{ color: "var(--color-exam-muted)" }}>
+              {manifest.cases.length} cases · {stats.done} done
+            </span>
           </div>
         </div>
 
