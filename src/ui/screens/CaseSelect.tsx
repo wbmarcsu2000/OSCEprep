@@ -165,8 +165,8 @@ export function CaseSelect() {
             <Segmented
               label="Case mode"
               options={[
-                { value: "STRICT_OSCE", label: "⏱️ Strict OSCE" },
                 { value: "PRACTICE", label: "🌱 Practice" },
+                { value: "STRICT_OSCE", label: "⏱️ Strict OSCE" },
               ]}
               value={preferredMode}
               onChange={setPreferredMode}
