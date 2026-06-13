@@ -104,6 +104,31 @@ export function Home() {
         </div>
       </div>
 
+      {/* Turn AI on — its own bar directly below the two paths. Optional: both
+          cases work fully without it; AI just makes the patient conversational
+          and the grading smarter. */}
+      <button
+        onClick={showEnableAi}
+        className="w-full rounded-2xl border px-5 py-3.5 flex items-center justify-center gap-2.5 text-[13.5px] font-semibold leading-snug text-center transition-colors"
+        style={{
+          borderColor: llmEnabled ? "var(--color-exam-ok-line)" : "var(--color-exam-accent-line)",
+          background: llmEnabled ? "var(--color-exam-ok-soft)" : "var(--color-exam-accent-soft)",
+          color: llmEnabled ? "var(--color-exam-ok)" : "var(--color-exam-accent-deep)",
+        }}
+      >
+        {llmEnabled ? (
+          <>
+            <span aria-hidden>🟢</span> AI is on — the patient talks naturally and grading is smarter.{" "}
+            <span className="underline underline-offset-2">Manage</span>
+          </>
+        ) : (
+          <>
+            <span aria-hidden>⚙️</span> Turn on AI (Claude / GPT) — makes the patient conversational and
+            grading smarter. Your key stays in your browser.
+          </>
+        )}
+      </button>
+
       {/* Secondary, low-emphasis links */}
       <div className="flex items-center justify-center gap-x-6 gap-y-2 flex-wrap text-[13px] font-semibold">
         <button
@@ -119,13 +144,6 @@ export function Home() {
           onClick={() => setView("analytics")}
         >
           📊 Your progress
-        </button>
-        <button
-          className="flex items-center gap-1.5"
-          style={{ color: llmEnabled ? "var(--color-exam-ok)" : "var(--color-exam-accent)" }}
-          onClick={showEnableAi}
-        >
-          {llmEnabled ? "🟢 AI on" : "⚙️ Enable AI (Claude / GPT)"}
         </button>
       </div>
 
