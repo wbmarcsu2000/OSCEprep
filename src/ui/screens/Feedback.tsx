@@ -5,6 +5,7 @@ import { Confetti } from "../components/Confetti";
 import { CategoryApproach } from "../components/CategoryApproach";
 import { MANEUVER_BY_ID } from "../../engine/maneuvers";
 import { itemMatches } from "../../engine/textMatch";
+import { cleanIdealAnswer } from "../format";
 import { CURRICULUM_BY_CATEGORY } from "../../data/curriculum";
 import { manifest } from "../../data/loader";
 import { mghPdfUrl } from "../../data/mghManual";
@@ -115,7 +116,7 @@ function SectionDetail({
               className="rounded-lg border p-3 text-[13px] leading-relaxed"
               style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
             >
-              {section.idealAnswer}
+              {cleanIdealAnswer(section.idealAnswer)}
             </p>
           </div>
         )}

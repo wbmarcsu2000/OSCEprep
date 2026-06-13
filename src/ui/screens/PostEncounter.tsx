@@ -6,7 +6,8 @@ import { StudyImage, LabResults } from "../components/DiagnosticReader";
 import { StepTeaching } from "../components/StepTeaching";
 import { RailTabs, panelId } from "../components/RailTabs";
 import { readingGuideFor } from "../../data/readingGuides";
-import { itemMatches } from "../../engine/textMatch";
+import { selfChecked } from "../../engine/textMatch";
+import { cleanIdealAnswer } from "../format";
 import type { ProviderKind } from "../../llm/LlmAdapter";
 import { useAppStore } from "../store";
 
@@ -401,8 +402,8 @@ function AnswerKey({ step, answer, expertRead }: { step: StepModel; answer: stri
     ...(step.scoring?.coreActions ?? []).map((a) => ({ item: a.item, critical: false })),
   ];
   const has = answer.trim().length > 0;
-  const hit = items.filter((it) => has && itemMatches(answer, it.item));
-  const missed = items.filter((it) => !(has && itemMatches(answer, it.item)));
+  const hit = items.filter((it) => has && selfChecked(answer, it.item));
+  const missed = items.filter((it) => !(has && selfChecked(answer, it.item)));
   return (
     <div className="space-y-3 pt-1 fade-up">
       {/* Side-by-side compare: what you wrote vs the model. */}
@@ -422,7 +423,7 @@ function AnswerKey({ step, answer, expertRead }: { step: StepModel; answer: stri
             className="rounded-xl border p-3 text-[13.5px] leading-relaxed h-full"
             style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
           >
-            {step.idealAnswer ?? <span className="italic">See key points below.</span>}
+            {step.idealAnswer ? cleanIdealAnswer(step.idealAnswer) : <span className="italic">See key points below.</span>}
           </p>
         </div>
       </div>

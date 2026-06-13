@@ -346,6 +346,30 @@ export function isNegatedIn(text: string, phrase: string, window = 4): boolean {
   return sawToken; // tokens found, and every one of them was negated
 }
 
+/** Coaching-phrased rubric filler words — ignored when crediting a self-check
+ *  by distinctive-term overlap so they don't cause spurious matches. */
+const SELFCHECK_FILLER = new Set([
+  "considers", "consider", "reasonably", "deprioritizes", "deprioritize", "supporting",
+  "features", "feature", "recognizes", "recognize", "appropriately", "justification",
+  "diagnosis", "diagnoses", "leading", "patient", "history", "present", "presents",
+  "named", "names", "exclude", "excludes", "reasonable", "imperative", "obtain",
+]);
+
+/** Lenient credit for the PRACTICE self-check only (never the scored grade):
+ *  a long coaching item ("Names costochondritis with supporting features …") is
+ *  "covered" if the strict matcher hits OR the answer shares a distinctive term
+ *  (≥7 chars, non-filler) with the item — so naming "costochondritis" credits
+ *  it without over-crediting on generic words. */
+export function selfChecked(answer: string, item: string): boolean {
+  if (itemMatches(answer, item)) return true;
+  if (answer.trim().length === 0) return false;
+  const a = answer.toLowerCase();
+  return item
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .some((w) => w.length >= 7 && !SELFCHECK_FILLER.has(w) && a.includes(w));
+}
+
 /**
  * Conservative credit test for a rubric item against a free-text answer.
  * An item is credited when one of its "/"-alternatives has ≥ minRatio of its

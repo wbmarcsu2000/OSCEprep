@@ -142,6 +142,17 @@ function genericSegmentMatches(question: string, caseModel: CaseModel): string[]
   return scored.slice(0, 3).map((s) => s.text);
 }
 
+/** A broad review-of-systems sweep — many symptoms asked at once, e.g.
+ *  "fevers, chills, cough, SOB, headache, vision changes, weakness?". Detected
+ *  structurally by a multi-item list so it stays content-agnostic. */
+function isBroadSymptomSweep(question: string): boolean {
+  const items = question
+    .split(/[,/]|\bor\b|\band\b/i)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 1);
+  return items.length >= 4;
+}
+
 export function askHistoryQuestion(
   question: string,
   caseModel: CaseModel,
@@ -202,7 +213,17 @@ export function askHistoryQuestion(
   // focused question ("what meds are you on") would get its real answer PLUS a
   // pile of loosely-overlapping HPI segments (a chart dump). When a trigger
   // matched, its content is the answer; nothing more is appended.
-  if (revealedContent.length === 0 && caseModel.historySegments.length > 0) {
+  //
+  // A broad review-of-systems SWEEP ("fevers, chills, cough, SOB, headache,
+  // …?") that matched no trigger must NOT fall through to the generic reveal:
+  // its words ("pain", "blood") overlap the HPI and would re-dump it. The
+  // patient should give a blanket pertinent-negative instead, so leave the
+  // content empty and let the caller produce a denial.
+  if (
+    revealedContent.length === 0 &&
+    caseModel.historySegments.length > 0 &&
+    !isBroadSymptomSweep(question)
+  ) {
     for (const text of genericSegmentMatches(question, caseModel)) {
       if (!revealedContent.includes(text)) revealedContent.push(text);
     }
