@@ -44,7 +44,8 @@
         "atrial fibrillation 12-lead ECG",
         "irregularly irregular no P waves ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 75-year-old woman presents with palpitations and an irregularly irregular pulse on examination."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
@@ -59,7 +60,8 @@
         "normal upright chest x-ray no free air",
         "upright chest radiograph no subdiaphragmatic free air"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "An 80-year-old man with severe abdominal pain out of proportion to exam has an upright chest film."
     }
   },
   "revealKeys": [

@@ -43,7 +43,8 @@
       "searchTerms": [
         "12-lead EKG Sinus tachycardia; S1Q3T3 and/or"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 56-year-old woman presents with sudden breathlessness, pleuritic chest pain, and a brief fainting episode."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph Often clear clear film"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 60-year-old man with acute breathlessness and marked hypoxemia has a chest film to look for a cause."
     }
   },
   "revealKeys": [

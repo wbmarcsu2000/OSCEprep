@@ -42,7 +42,8 @@
       "searchTerms": [
         "12-lead EKG Sinus rhythm ~96. inferior"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old man with prior myocardial infarction presents with worsening exertional breathlessness and leg swelling."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph Cardiomegaly cephalization Kerley lines"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 72-year-old woman presents with progressive shortness of breath, orthopnea, and bilateral lower-extremity edema."
     }
   },
   "revealKeys": [

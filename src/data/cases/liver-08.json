@@ -44,7 +44,8 @@
         "sinus tachycardia low voltage ECG",
         "old anteroseptal infarction Q waves ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 72-year-old man recovering from profound hypotension has sinus tachycardia, low voltage, and old anteroseptal Q waves."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "cardiomegaly pulmonary edema chest x-ray",
         "cardiogenic pulmonary congestion radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 75-year-old man with worsening breathlessness has cardiomegaly with vascular redistribution and small bilateral pleural effusions."
     }
   },
   "revealKeys": [

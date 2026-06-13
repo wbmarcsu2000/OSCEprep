@@ -44,7 +44,8 @@
         "bifascicular block ECG",
         "RBBB left anterior fascicular block"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 66-year-old man presents for preoperative assessment with a conduction abnormality noted on his tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "elevated hemidiaphragm chest x-ray",
         "raised right hemidiaphragm radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 60-year-old woman presents with vague upper abdominal discomfort and is found to have an incidental finding."
     }
   },
   "revealKeys": [

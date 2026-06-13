@@ -43,7 +43,8 @@
         "atrial fibrillation 12 lead ECG",
         "AF rapid ventricular response ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 72-year-old man reports palpitations and lightheadedness, with an irregular, rapid pulse on examination."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "calcified granuloma chest x-ray",
         "calcified lung nodule benign radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old woman has a routine pre-operative film showing an incidental calcified lung nodule."
     }
   },
   "revealKeys": [

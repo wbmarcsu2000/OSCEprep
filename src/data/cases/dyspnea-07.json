@@ -43,7 +43,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia 12 lead normal axis"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 35-year-old woman presents with sudden breathlessness, throat tightness, and hives after a known allergen exposure."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph clear lungs"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 40-year-old man presents with acute dyspnea, urticaria, and wheeze shortly after a bee sting."
     }
   },
   "revealKeys": [

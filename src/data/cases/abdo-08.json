@@ -44,7 +44,8 @@
         "hyperkalemia peaked T waves ECG",
         "sinus tachycardia peaked T waves"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 45-year-old man with diabetes presents with nausea, abdominal pain, and rapid breathing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 38-year-old woman with diabetes and abdominal pain has a chest film to exclude infection."
     }
   },
   "revealKeys": [

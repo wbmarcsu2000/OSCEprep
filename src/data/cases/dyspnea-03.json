@@ -43,7 +43,8 @@
         "pericarditis ECG diffuse ST elevation",
         "PR depression pericarditis 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 54-year-old man presents with sharp chest pain that worsens lying flat and eases when he sits forward."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph Right lower lobe consolidation"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old woman presents with fever, productive cough, pleuritic right-sided chest pain, and breathlessness."
     }
   },
   "revealKeys": [

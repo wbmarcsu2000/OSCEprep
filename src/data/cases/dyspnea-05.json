@@ -42,7 +42,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia 12 lead no ischemia"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 32-year-old woman with asthma presents with acute breathlessness, chest tightness, and audible wheezing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -57,7 +58,8 @@
         "normal chest x-ray PA",
         "mild hyperinflation chest radiograph no consolidation"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 28-year-old man with asthma presents with worsening wheeze and shortness of breath despite inhalers."
     }
   },
   "revealKeys": [

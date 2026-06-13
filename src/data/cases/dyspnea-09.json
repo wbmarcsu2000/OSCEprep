@@ -43,7 +43,8 @@
         "sinus tachycardia ECG",
         "normal axis sinus tachycardia 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 24-year-old tall thin man presents with sudden pleuritic chest pain and breathlessness at rest."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "spontaneous pneumothorax chest x-ray",
         "visceral pleural line lung markings absent radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 27-year-old man presents with abrupt right-sided chest pain and shortness of breath after coughing."
     }
   },
   "revealKeys": [

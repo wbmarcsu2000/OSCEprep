@@ -43,7 +43,8 @@
         "ventricular bigeminy ECG",
         "PVC bigeminy rhythm strip"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 58-year-old man reports palpitations and a sensation of skipped beats with occasional lightheadedness on exertion."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "tortuous aorta chest x-ray",
         "aortic knob calcification radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 72-year-old man with long-standing hypertension undergoes a chest film to evaluate a widened mediastinal contour."
     }
   },
   "revealKeys": [

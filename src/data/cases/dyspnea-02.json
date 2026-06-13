@@ -42,7 +42,8 @@
       "searchTerms": [
         "12-lead EKG Sinus tachycardia. Possible pulmonale"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 66-year-old man who is a longtime smoker presents with increasing breathlessness, wheeze, and a productive cough."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -56,7 +57,8 @@
       "searchTerms": [
         "chest radiograph Hyperinflation with flattened diaphragms"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 70-year-old man with known emphysema presents with worsening dyspnea and prolonged expiratory wheezing."
     }
   },
   "revealKeys": [

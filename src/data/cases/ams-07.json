@@ -44,7 +44,8 @@
         "sinus tachycardia long QT ECG",
         "hypomagnesemia hypokalemia prolonged QT 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 55-year-old man with chronic alcohol use presents confused and unsteady, with a racing heart and borderline prolonged QT."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "clear chest radiograph no consolidation"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 55-year-old man presents with confusion and gait instability, and a film is taken to screen for aspiration or infection."
     }
   },
   "revealKeys": [

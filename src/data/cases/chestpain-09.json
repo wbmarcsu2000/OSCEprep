@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "nonspecific ST changes no ST elevation ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 30-year-old man presents with chest pain and palpitations shortly after recreational stimulant use."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph normal mediastinum"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 34-year-old man presents with chest pain after cocaine use, with imaging obtained to exclude serious thoracic pathology."
     }
   },
   "revealKeys": [

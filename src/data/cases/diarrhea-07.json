@@ -44,7 +44,8 @@
         "P pulmonale ECG",
         "right atrial enlargement peaked P waves"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 60-year-old man with episodic flushing and chronic diarrhea has a tracing showing tall peaked inferior P waves."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray right heart border",
         "right atrial enlargement chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 63-year-old woman with recurrent flushing, watery diarrhea, and exertional breathlessness undergoes chest imaging during her evaluation."
     }
   },
   "revealKeys": [

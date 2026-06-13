@@ -44,7 +44,8 @@
         "sinus tachycardia ECG 12 lead",
         "sinus tachycardia no ST elevation"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 55-year-old man presents with severe chest and epigastric pain after forceful vomiting following a large meal."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "pneumomediastinum chest x-ray",
         "left pleural effusion pneumomediastinum radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old man presents with excruciating chest pain and neck swelling after repeated retching."
     }
   },
   "revealKeys": [

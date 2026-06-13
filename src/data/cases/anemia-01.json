@@ -43,7 +43,8 @@
         "atrial flutter 2:1 ECG",
         "sawtooth flutter waves 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old woman presents with palpitations and lightheadedness, and her pulse is rapid and regular."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "cardiomegaly chest x-ray PA",
         "enlarged cardiac silhouette radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 72-year-old man presents with progressive exertional breathlessness and ankle swelling over several weeks."
     }
   },
   "revealKeys": [

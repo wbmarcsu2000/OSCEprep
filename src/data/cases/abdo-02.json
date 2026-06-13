@@ -43,7 +43,8 @@
         "Mobitz I Wenckebach ECG",
         "second degree AV block type 1 strip"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old man complains of intermittent dizziness, and telemetry shows occasional dropped beats."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "hiatal hernia chest x-ray air fluid level",
         "retrocardiac hiatal hernia radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 70-year-old woman with heartburn and regurgitation has a film showing a mass behind the heart."
     }
   },
   "revealKeys": [

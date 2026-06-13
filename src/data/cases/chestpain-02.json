@@ -375,7 +375,8 @@
       "searchTerms": [
         "12-lead EKG Sinus tachycardia 112. Classic"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 55-year-old woman presents with sudden pleuritic chest pain and breathlessness after a long flight."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -389,7 +390,8 @@
       "searchTerms": [
         "chest radiograph consolidation pneumothorax effusion essentially"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 50-year-old man presents with acute pleuritic chest pain and dyspnea with a strikingly normal lung examination."
     }
   },
   "standardizedPatient": {

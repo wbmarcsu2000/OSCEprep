@@ -44,7 +44,8 @@
         "right ventricular hypertrophy ECG",
         "RVH dominant R V1"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 59-year-old man with longstanding lung disease presents with worsening breathlessness and leg swelling."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "Kerley B lines chest x-ray",
         "septal lines interstitial edema radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 65-year-old woman presents with worsening exertional dyspnea and a dry cough over several days."
     }
   },
   "revealKeys": [

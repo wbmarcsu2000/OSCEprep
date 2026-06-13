@@ -43,7 +43,8 @@
       "searchTerms": [
         "12-lead EKG Sinus tachycardia; S1Q3T3 pattern"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 61-year-old woman presents with sudden pleuritic chest pain and breathlessness after recent immobilization."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph Essentially clear consolidation effusion"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 55-year-old man presents with acute dyspnea and marked hypoxemia despite an unremarkable lung examination."
     }
   },
   "revealKeys": [

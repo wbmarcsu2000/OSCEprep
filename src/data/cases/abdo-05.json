@@ -42,7 +42,8 @@
         "premature atrial complexes ECG",
         "frequent PACs rhythm strip"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 66-year-old man notes occasional skipped beats and palpitations during an outpatient evaluation."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -57,7 +58,8 @@
         "healed rib fractures chest x-ray",
         "old rib fracture callus radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 50-year-old man after recent chest trauma has a film showing healing fractures along the ribs."
     }
   },
   "revealKeys": [

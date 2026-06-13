@@ -44,7 +44,8 @@
         "normal sinus rhythm ECG",
         "normal 12 lead ECG young adult"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 26-year-old man undergoing routine screening has a completely normal sinus tracing with no acute changes."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph young adult"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 25-year-old woman has a screening chest film showing clear lungs and a normal cardiomediastinal silhouette."
     }
   },
   "revealKeys": [

@@ -43,7 +43,8 @@
         "long QT interval ECG",
         "prolonged QTc 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 64-year-old woman presents with confusion, nausea, and unsteadiness, and her tracing shows a markedly prolonged QT."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph Clear obtained screen SIADH"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 64-year-old woman presents confused, and a film is obtained to screen for an occult lung source of her sodium derangement."
     }
   },
   "revealKeys": [

@@ -42,7 +42,8 @@
         "hypokalemia ECG U waves",
         "flattened T waves hypokalaemia 12-lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 65-year-old woman with prolonged vomiting reports fatigue and palpitations after poor oral intake."
     },
     "cxr": {
       "label": "Abdominal/chest X-ray (upright)",
@@ -57,7 +58,8 @@
         "small bowel obstruction air-fluid levels x-ray",
         "dilated small bowel loops step-ladder upright film"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 74-year-old man presents with crampy abdominal pain, distension, and absence of flatus."
     }
   },
   "revealKeys": [

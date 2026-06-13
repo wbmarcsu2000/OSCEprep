@@ -45,7 +45,8 @@
         "left anterior fascicular block ECG",
         "LAFB left axis deviation"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 62-year-old man presenting with palpitations has a tracing showing left axis deviation consistent with left anterior fascicular block."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -60,7 +61,8 @@
         "borderline cardiomegaly x-ray",
         "unfolded aorta chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 67-year-old man with longstanding hypertension has a film showing borderline cardiomegaly and an unfolded thoracic aorta."
     }
   },
   "revealKeys": [

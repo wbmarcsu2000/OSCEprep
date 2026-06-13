@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 26-year-old woman presents with high fever, rash, and lightheadedness with a rapid pulse."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "clear lungs radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 30-year-old woman with high fever, diffuse rash, and hypotension undergoes chest imaging."
     }
   },
   "revealKeys": [

@@ -43,7 +43,8 @@
         "sinus tachycardia ECG",
         "normal QTc baseline 12-lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 34-year-old man returning from the tropics presents with cyclical fevers and a fast heart rate."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "normal chest x-ray PA",
         "ARDS bilateral infiltrates chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 40-year-old woman back from overseas travel presents with fevers and mild breathlessness."
     }
   },
   "revealKeys": [

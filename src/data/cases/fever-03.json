@@ -43,7 +43,8 @@
       "searchTerms": [
         "12-lead EKG Sinus tachycardia; prolongation conduction"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 45-year-old man with prolonged fevers and a new murmur is monitored for conduction changes."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph show multiple peripheral nodular"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 38-year-old man who injects drugs presents with fever, cough, and pleuritic chest pain."
     }
   },
   "revealKeys": [

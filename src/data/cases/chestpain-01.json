@@ -362,7 +362,8 @@
       "searchTerms": [
         "12-lead EKG ST-segment depressions T-wave inversions"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 64-year-old man presents with crushing substernal chest pressure radiating to the left arm during exertion."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -377,7 +378,8 @@
         "pleural plaques chest x-ray",
         "calcified pleural plaque asbestos radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 68-year-old man with decades of shipyard work presents for evaluation of dyspnea on exertion."
     }
   },
   "standardizedPatient": {

@@ -44,7 +44,8 @@
         "SVT AVNRT 12 lead ECG",
         "narrow complex tachycardia 180 ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 49-year-old man with heavy alcohol use presents agitated and tremulous with an abrupt regular fast palpitation."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
       "searchTerms": [
         "normal PA chest radiograph clear lungs"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 49-year-old man with alcohol use presents agitated and confused, and a film is obtained to exclude aspiration or infection."
     }
   },
   "revealKeys": [

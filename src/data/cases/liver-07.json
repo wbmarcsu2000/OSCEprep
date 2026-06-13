@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "low voltage QRS limb leads ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 45-year-old woman with marked abdominal distension has sinus tachycardia and low limb-lead voltage from large-volume ascites."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "small right pleural effusion chest x-ray",
         "elevated hemidiaphragm low lung volumes radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 48-year-old woman with abdominal swelling and breathlessness has elevated hemidiaphragms and a small right pleural effusion."
     }
   },
   "revealKeys": [

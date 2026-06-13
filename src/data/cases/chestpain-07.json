@@ -44,7 +44,8 @@
         "electrical alternans pericardial effusion ECG",
         "low voltage QRS tamponade EKG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 60-year-old woman presents with progressive dyspnea, fatigue, and chest fullness after a recent viral pericarditis."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "water bottle cardiac silhouette pericardial effusion",
         "globular heart chest x-ray pericardial effusion"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 64-year-old man presents with worsening breathlessness, distended neck veins, and muffled heart sounds."
     }
   },
   "revealKeys": [

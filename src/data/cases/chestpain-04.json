@@ -362,7 +362,8 @@
       "searchTerms": [
         "12-lead EKG Diffuse concave-upward ST-segment elevation"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 32-year-old man presents with sharp pleuritic chest pain that eases when leaning forward after a viral illness."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -377,7 +378,8 @@
         "pulmonary edema chest x-ray",
         "bat wing pulmonary oedema radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 70-year-old man presents with progressive breathlessness, orthopnea, and frothy pink sputum overnight."
     }
   },
   "standardizedPatient": {

@@ -44,7 +44,8 @@
         "long QT syndrome ECG",
         "prolonged QT interval 12-lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 24-year-old woman presents after a sudden fainting episode preceded by palpitations."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 22-year-old man with recurrent unexplained fainting has a chest film to exclude structural disease."
     }
   },
   "revealKeys": [

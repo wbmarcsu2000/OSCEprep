@@ -290,7 +290,8 @@
         "nonspecific T wave inversion ECG",
         "lateral T wave inversion 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 35-year-old woman presents with localized anterior chest wall pain reproduced by palpation and deep breathing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -305,7 +306,8 @@
         "solitary pulmonary nodule x-ray",
         "lung nodule chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old man presents for evaluation of a persistent cough, with imaging obtained to assess the lungs."
     }
   },
   "standardizedPatient": {

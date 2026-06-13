@@ -50,6 +50,23 @@ function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: ()
   );
 }
 
+/** The presenting context for the (representative, different-patient) teaching
+ *  study — gives the read a clinical question to answer, the way a teaching
+ *  library captions its cases. */
+function VignetteNote({ text }: { text: string }) {
+  return (
+    <div
+      className="rounded-lg border px-3 py-2 text-[12.5px] leading-snug flex items-baseline gap-1.5"
+      style={{ background: "var(--color-exam-soft)", borderColor: "var(--color-exam-border)", color: "var(--color-exam-ink)" }}
+    >
+      <span aria-hidden>🩺</span>
+      <span>
+        <span className="font-bold">Clinical context:</span> {text}
+      </span>
+    </div>
+  );
+}
+
 /**
  * Renders a study image, or a labeled written stand-in for un-sourced assets.
  * Images are never fabricated. Click enlarges in-app (lightbox) so the student
@@ -66,6 +83,7 @@ export function StudyImage({ image }: { image: RawImage }) {
     const viewUrl = viewableUrl(image);
     return (
       <figure className="space-y-2">
+        {image.clinicalVignette && <VignetteNote text={image.clinicalVignette} />}
         <div className="flex flex-col sm:flex-row gap-2">
           {[image.asset, image.asset2].filter(Boolean).map((src, i) => {
             const alt = `${image.label}${i > 0 ? " (additional view)" : ""}`;
@@ -130,12 +148,14 @@ export function StudyImage({ image }: { image: RawImage }) {
     : `LITFL CXR Case ${caseNo}`;
   const openLabel = isLitfl ? `Open ${studyName} ↗` : `Open a representative ${image.label} ↗`;
   return (
-    <div
-      className="rounded-lg border-2 border-dashed px-6 py-8 text-center space-y-2"
-      style={{ borderColor: "var(--color-exam-border-strong)", background: "var(--color-exam-soft)" }}
-      role="img"
-      aria-label={`${image.label} description`}
-    >
+    <div className="space-y-2">
+      {image.clinicalVignette && <VignetteNote text={image.clinicalVignette} />}
+      <div
+        className="rounded-lg border-2 border-dashed px-6 py-8 text-center space-y-2"
+        style={{ borderColor: "var(--color-exam-border-strong)", background: "var(--color-exam-soft)" }}
+        role="img"
+        aria-label={`${image.label} description`}
+      >
       <div className="panel-label">
         {image.label} — {isLitfl ? `${studyName} (written description)` : "written stand-in (names the findings)"}
       </div>
@@ -158,6 +178,7 @@ export function StudyImage({ image }: { image: RawImage }) {
         </a>
       )}
       <p className="hint">{image.attribution ?? image.recommendedSource ?? ""}</p>
+      </div>
     </div>
   );
 }

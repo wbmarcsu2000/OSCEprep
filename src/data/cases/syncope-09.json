@@ -44,7 +44,8 @@
         "Type 1 Brugada pattern ECG",
         "coved ST elevation V1 V2 Brugada"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 35-year-old man presents after an episode of nocturnal collapse and reports a family history of sudden death."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph clear lungs"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 33-year-old man with unexplained syncope has a chest film to exclude a structural cardiopulmonary cause."
     }
   },
   "revealKeys": [

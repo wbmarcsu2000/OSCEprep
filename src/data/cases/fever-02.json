@@ -43,7 +43,8 @@
         "sinus bradycardia ECG",
         "sinus bradycardia 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 58-year-old man with a red, warm, tender leg and fever has a slow heart rate on monitoring."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "pleural effusion chest x-ray",
         "costophrenic angle blunting radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 64-year-old woman with fever and pleuritic right-sided chest discomfort undergoes a chest film."
     }
   },
   "revealKeys": [

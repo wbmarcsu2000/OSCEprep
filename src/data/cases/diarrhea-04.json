@@ -43,7 +43,8 @@
         "short QT syndrome ECG",
         "short QTc 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 30-year-old woman with chronic diarrhea, weight loss, and bloating has a routine tracing before workup."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "interstitial lung disease chest x-ray",
         "reticulonodular pattern radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 55-year-old man with chronic diarrhea presents with progressive exertional breathlessness and a persistent dry cough."
     }
   },
   "revealKeys": [

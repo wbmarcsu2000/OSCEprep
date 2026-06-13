@@ -44,7 +44,8 @@
         "junctional escape rhythm ECG",
         "junctional rhythm retrograde P"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old woman with lightheadedness has a slow regular narrow-complex rhythm with retrograde P waves, a junctional escape."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
@@ -58,7 +59,8 @@
       "searchTerms": [
         "chest radiograph free air; clear bases"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 60-year-old woman with upper abdominal pain has an upright film showing no free air and clear lung bases."
     }
   },
   "revealKeys": [

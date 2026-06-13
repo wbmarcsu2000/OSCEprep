@@ -44,7 +44,8 @@
         "old inferior MI Q waves ECG",
         "pathological Q waves inferior leads"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 70-year-old man being evaluated for fatigue has pathologic inferior Q waves indicating a prior, clinically silent inferior infarct."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "calcified granuloma chest x-ray",
         "calcified lung nodule benign radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 55-year-old man having a routine film shows an incidental dense calcified granuloma with a calcified hilar node."
     }
   },
   "revealKeys": [

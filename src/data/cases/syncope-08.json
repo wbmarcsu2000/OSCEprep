@@ -43,7 +43,8 @@
         "hypertrophic cardiomyopathy ECG",
         "LVH dagger Q waves septal hypertrophy EKG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 19-year-old man collapses during sports and reports exertional breathlessness and palpitations."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "normal chest x-ray PA",
         "normal cardiac silhouette radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 21-year-old athlete with exertional syncope and a murmur undergoes a chest film to assess the heart."
     }
   },
   "revealKeys": [

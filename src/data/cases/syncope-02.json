@@ -42,7 +42,8 @@
         "Mobitz II ECG",
         "second degree AV block type 2 strip"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old man presents with recurrent lightheadedness and a near-fainting episode while standing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -57,7 +58,8 @@
         "solitary pulmonary nodule x-ray",
         "lung nodule chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 61-year-old man has a chest film obtained to characterize an incidentally noted rounded shadow in the lung."
     }
   },
   "revealKeys": [

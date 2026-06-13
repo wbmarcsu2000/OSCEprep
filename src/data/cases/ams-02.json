@@ -44,7 +44,8 @@
         "electrical alternans ECG",
         "pericardial effusion alternans 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 72-year-old woman presents with fever, lethargy, and racing heart, and her tracing shows beat-to-beat QRS swings."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
       "searchTerms": [
         "normal PA chest radiograph no consolidation effusion"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 72-year-old woman with fever and delirium has a film obtained to exclude pneumonia as the infectious source."
     }
   },
   "revealKeys": [

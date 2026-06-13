@@ -43,7 +43,8 @@
         "Wellens syndrome ECG",
         "biphasic T wave V2 V3 Wellens"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 58-year-old man with recent diarrheal illness is referred after a routine tracing reveals deep precordial T-wave inversions despite being pain-free."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
         "atelectasis chest x-ray",
         "linear atelectasis volume loss radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 62-year-old woman presents with fever, cough, and mild dyspnea after a recent gastrointestinal illness."
     }
   },
   "revealKeys": [

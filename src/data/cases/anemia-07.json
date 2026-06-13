@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia 12 lead normal"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 30-year-old man presents with fatigue, palpitations, and pallor after a recent febrile illness."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph clear lungs"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 28-year-old man presents with weakness and dark urine, and a chest film is obtained to exclude other causes."
     }
   },
   "revealKeys": [

@@ -43,7 +43,8 @@
         "incomplete RBBB ECG",
         "rSR V1 narrow QRS"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 34-year-old man with bloody diarrhea and cramping has a screening tracing performed before treatment."
     },
     "cxr": {
       "label": "Abdominal X-ray (upright)",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "normal abdominal x-ray upright"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 40-year-old woman with a severe colitis flare and abdominal distension is imaged to screen for toxic megacolon."
     }
   },
   "revealKeys": [

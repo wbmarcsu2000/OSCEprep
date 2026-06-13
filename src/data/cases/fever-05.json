@@ -44,7 +44,8 @@
         "first degree AV block ECG",
         "prolonged PR interval 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 55-year-old man presents with fever, headache, and neck stiffness, and an ECG is recorded."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "right lower lobe pneumonia x-ray",
         "lobar consolidation air bronchogram radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 60-year-old man presents with fever, productive cough, and right-sided chest discomfort."
     }
   },
   "revealKeys": [

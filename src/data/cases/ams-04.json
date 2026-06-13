@@ -44,7 +44,8 @@
         "multifocal atrial tachycardia ECG",
         "MAT three P wave morphologies"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 70-year-old man with COPD presents drowsy and dehydrated, with an irregular fast pulse and varying P waves."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
       "searchTerms": [
         "normal PA chest radiograph clear lungs"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 70-year-old man presents with profound confusion and dehydration, and a film is taken to screen for precipitating pneumonia."
     }
   },
   "revealKeys": [

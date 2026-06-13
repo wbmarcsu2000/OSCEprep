@@ -44,7 +44,8 @@
         "normal sinus rhythm ECG",
         "normal 12-lead ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 28-year-old man with prolonged watery diarrhea and bloating after camping has a routine tracing before evaluation."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph no acute process"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 32-year-old woman with chronic loose stools and mild abdominal discomfort has a screening film performed during her workup."
     }
   },
   "revealKeys": [

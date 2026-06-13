@@ -108,6 +108,10 @@ export interface RawImage {
   /** Authoritative expert interpretation (the pathology + systematic read),
    *  shown when the student reveals the answer on a read step. */
   expertRead?: string;
+  /** One-line clinical context for the (representative, different-patient)
+   *  teaching study — the presenting vignette such a study carries on the
+   *  library it came from. Shown alongside the study so the read has context. */
+  clinicalVignette?: string;
   source?: string;
   license?: string;
   findings?: string;

@@ -45,7 +45,8 @@
         "hyperkalemia peaked T waves ECG",
         "hyperkalaemia ECG sine wave"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 64-year-old man with end-stage kidney disease who missed dialysis presents with weakness and a sluggish, irregular pulse."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -60,7 +61,8 @@
         "healed rib fractures chest x-ray",
         "old rib fracture callus radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 59-year-old man is evaluated with a chest film for lateral chest wall pain after a recent fall."
     }
   },
   "revealKeys": [

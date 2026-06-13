@@ -44,7 +44,8 @@
         "hyperkalemia peaked T waves ECG",
         "hyperkalaemia ECG sine wave"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 55-year-old man with known kidney disease presents with weakness and muscle cramps."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
@@ -59,7 +60,8 @@
         "small left pleural effusion chest x-ray",
         "basal atelectasis upright chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 60-year-old man with upper abdominal pain and shortness of breath has an upright chest film."
     }
   },
   "revealKeys": [

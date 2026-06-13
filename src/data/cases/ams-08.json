@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia 12 lead normal QT"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 31-year-old woman on antidepressants presents agitated and hyperthermic with tremor, clonus, and a racing heart."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
       "searchTerms": [
         "normal chest radiograph PA clear lungs"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 31-year-old agitated, hyperthermic woman has a film obtained to exclude aspiration or pneumonia."
     }
   },
   "revealKeys": [

@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 52-year-old man with a hot, swollen, painful knee and fever has an ECG recorded."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "normal chest radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 48-year-old woman with fever and an acutely swollen joint undergoes a screening chest film."
     }
   },
   "revealKeys": [

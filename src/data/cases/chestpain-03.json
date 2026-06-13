@@ -355,7 +355,8 @@
         "LVH strain pattern ECG",
         "left ventricular hypertrophy voltage 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 62-year-old man with long-standing poorly controlled hypertension presents with chest pain and exertional breathlessness."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -369,7 +370,8 @@
       "searchTerms": [
         "chest radiograph Widened mediastinum; enlarged aortic"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 66-year-old man presents with sudden tearing chest pain radiating to the back between the shoulder blades."
     }
   },
   "standardizedPatient": {

@@ -41,7 +41,8 @@
         "hypokalemia U waves ECG",
         "hypokalaemia ST depression 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 67-year-old man on diuretics presents with weakness, palpitations, and confusion after poor oral intake."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -56,7 +57,8 @@
         "azygos lobe chest x-ray",
         "azygos fissure radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 67-year-old man presents with confusion, and his routine film incidentally shows a benign azygos lobe fissure."
     }
   },
   "revealKeys": [

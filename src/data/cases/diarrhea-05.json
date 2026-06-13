@@ -42,7 +42,8 @@
       "searchTerms": [
         "atrial fibrillation 12-lead ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 74-year-old man with sudden lower abdominal pain and bloody diarrhea has a tracing showing an irregularly irregular rhythm."
     },
     "cxr": {
       "label": "Abdominal X-ray (upright)",
@@ -56,7 +57,8 @@
       "searchTerms": [
         "thumbprinting ischemic colitis abdominal x-ray"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 76-year-old woman with crampy abdominal pain and bloody stools undergoes an upright film to assess bowel changes and exclude perforation."
     }
   },
   "revealKeys": [

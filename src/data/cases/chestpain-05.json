@@ -318,7 +318,8 @@
         "early repolarization ECG",
         "J point notching benign ST elevation"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 28-year-old man presents with intermittent burning chest discomfort, screened for cardiac causes before discharge."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -333,7 +334,8 @@
         "hiatal hernia chest x-ray air fluid level",
         "retrocardiac hiatal hernia radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 60-year-old woman presents with postprandial retrosternal burning and occasional regurgitation when lying flat."
     }
   },
   "standardizedPatient": {

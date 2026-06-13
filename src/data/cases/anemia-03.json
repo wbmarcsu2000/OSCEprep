@@ -44,7 +44,8 @@
         "RBBB 12 lead ECG",
         "right bundle branch block rSR V1"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 70-year-old man presents for evaluation of fatigue and an incidental abnormality found on routine tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "tortuous aorta chest x-ray",
         "aortic knob calcification radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 74-year-old man with longstanding hypertension presents for evaluation of mild chest discomfort."
     }
   },
   "revealKeys": [

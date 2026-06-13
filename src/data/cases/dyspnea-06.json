@@ -43,7 +43,8 @@
         "low voltage QRS ECG",
         "low voltage 12 lead criteria"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 67-year-old man with known malignancy presents with progressive breathlessness and reduced exercise tolerance."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -57,7 +58,8 @@
       "searchTerms": [
         "chest radiograph Large left-sided pleural effusion"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 64-year-old woman presents with worsening left-sided breathlessness and dullness at the lung base."
     }
   },
   "revealKeys": [

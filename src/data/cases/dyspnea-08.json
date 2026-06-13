@@ -44,7 +44,8 @@
         "sinus tachycardia ECG",
         "sinus tachycardia no ischemia 12-lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 30-year-old man presents with breathlessness and bluish discoloration after exposure to an oxidizing agent."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -59,7 +60,8 @@
         "normal chest radiograph PA",
         "clear lung fields chest x-ray"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 45-year-old woman presents with cyanosis and dyspnea that fail to improve with supplemental oxygen."
     }
   },
   "revealKeys": [

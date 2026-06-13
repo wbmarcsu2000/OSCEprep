@@ -44,7 +44,8 @@
         "WPW delta wave ECG",
         "Wolff Parkinson White pre-excitation 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 24-year-old man with episodic palpitations has a short PR interval and a delta wave indicating ventricular pre-excitation."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "apical pneumothorax chest x-ray",
         "small pneumothorax pleural line radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 22-year-old man with sudden right-sided pleuritic chest pain has a film showing a small apical pneumothorax."
     }
   },
   "revealKeys": [

@@ -44,7 +44,8 @@
         "hypokalemia ECG U waves",
         "T wave flattening U wave EKG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 66-year-old woman with chronic watery diarrhea and fatigue has a tracing showing flattened T waves and subtle U waves."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "normal chest x-ray PA",
         "clear lungs no acute process radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 64-year-old man with longstanding nonbloody diarrhea has a screening film performed to exclude an acute abdominal or chest process."
     }
   },
   "revealKeys": [

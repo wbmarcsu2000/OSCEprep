@@ -42,7 +42,8 @@
       "searchTerms": [
         "sinus tachycardia hypokalemia 12-lead ECG"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old woman presents with several days of profuse watery diarrhea, lightheadedness, and palpitations."
     },
     "cxr": {
       "label": "Abdominal X-ray (upright)",
@@ -56,7 +57,8 @@
       "searchTerms": [
         "normal abdominal x-ray upright"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 70-year-old man with severe colitis and abdominal distension undergoes an upright film to exclude toxic megacolon."
     }
   },
   "revealKeys": [

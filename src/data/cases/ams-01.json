@@ -44,7 +44,8 @@
         "biatrial enlargement ECG",
         "P pulmonale P mitrale 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 58-year-old man with longstanding cirrhosis and pulmonary hypertension presents with progressive confusion and exertional breathlessness."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -58,7 +59,8 @@
       "searchTerms": [
         "normal PA chest x-ray"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old man with cirrhosis presents confused, and a film is obtained to screen for an infectious precipitant."
     }
   },
   "revealKeys": [

@@ -44,7 +44,8 @@
         "poor R wave progression ECG",
         "poor precordial R wave progression 12 lead"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 58-year-old man undergoes preoperative testing, and his tracing shows poor R-wave progression across the anterior precordial leads."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "dextrocardia chest x-ray",
         "dextrocardia situs inversus radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 30-year-old woman has a screening film showing the cardiac apex pointing to the right, raising the question of dextrocardia."
     }
   },
   "revealKeys": [

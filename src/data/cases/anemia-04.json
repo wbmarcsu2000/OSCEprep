@@ -44,7 +44,8 @@
         "LBBB 12 lead ECG",
         "left bundle branch block QRS"
       ],
-      "recommendedSource": "LITFL ECG Library (litfl.com)"
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 71-year-old woman presents with exertional dyspnea and fatigue during evaluation of a known heart condition."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -59,7 +60,8 @@
         "pulmonary fibrosis chest x-ray",
         "basal reticular opacities IPF radiograph"
       ],
-      "recommendedSource": "Radiopaedia.org"
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 67-year-old man presents with several months of progressive breathlessness and a persistent dry cough."
     }
   },
   "revealKeys": [
