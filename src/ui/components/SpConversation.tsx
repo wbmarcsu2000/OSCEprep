@@ -83,7 +83,10 @@ export function SpConversation() {
   function handleSpeechEnd() {
     if (!convoRef.current || lockedRef.current || thinkingRef.current) return;
     const text = lastTranscriptRef.current.trim();
-    if (!text) return; // empty end — the reopen effect keeps the mic listening
+    // Empty end = the recognizer timed out with no speech. Do NOTHING (do not
+    // reopen) — that loop was the flicker. The mic closes and "Tap to answer"
+    // appears so the student resumes when ready.
+    if (!text) return;
     lastTranscriptRef.current = "";
     setDraft("");
     void ask(text);
@@ -93,6 +96,7 @@ export function SpConversation() {
     continuous: !convo,
     onSpeechEnd: handleSpeechEnd,
   });
+  const micStart = dictation.start;
 
   const send = () => {
     if (dictation.listening) dictation.stop(); // sending ends dictation
@@ -116,18 +120,6 @@ export function SpConversation() {
     }
   };
 
-  // Conversation mode keeps the mic open whenever the patient isn't thinking or
-  // speaking. Re-open it (debounced) after each reply or an empty utterance —
-  // this replaces per-pause restarts, so the mic no longer flashes on and off.
-  const startDictation = dictation.start;
-  const dictating = dictation.listening;
-  const ttsSpeaking = tts.speaking;
-  useEffect(() => {
-    if (!convo || locked || spThinking || ttsSpeaking || dictating) return;
-    const id = window.setTimeout(() => startDictation(), 250);
-    return () => window.clearTimeout(id);
-  }, [convo, locked, spThinking, ttsSpeaking, dictating, startDictation]);
-
   useEffect(() => {
     const el = scrollRef.current;
     if (el && typeof el.scrollTo === "function") {
@@ -143,11 +135,15 @@ export function SpConversation() {
       const last = conversation[conversation.length - 1];
       const isPatientSpeech = last && last.role === "patient" && last.kind === "speech";
       if (isPatientSpeech && (tts.enabled || convoRef.current)) {
-        tts.speak(last.text); // mic re-opens via the reopen effect once speech ends
+        // Conversation mode: open the mic ONCE when the reply finishes — one
+        // open per turn, never a reopen loop (that was the flicker).
+        tts.speak(last.text, () => {
+          if (convoRef.current && !lockedRef.current) micStart();
+        });
       }
     }
     spokenRef.current = conversation.length;
-  }, [conversation, tts]);
+  }, [conversation, tts, micStart]);
 
   // Patient locked (encounter ended) — leave conversation mode.
   useEffect(() => {
@@ -170,7 +166,7 @@ export function SpConversation() {
       ? "🔊 Patient is speaking…"
       : dictation.listening
         ? "🎙️ Listening — ask your question, then pause"
-        : "…";
+        : "🎤 Your turn — tap the mic to answer";
 
   return (
     <div className="card flex flex-col h-full min-h-0 overflow-hidden">
@@ -332,6 +328,29 @@ export function SpConversation() {
             onClick={micDown}
           >
             {dictation.listening ? "● Listening" : "🎙️"}
+          </button>
+        )}
+        {dictation.supported && convo && (
+          <button
+            type="button"
+            className={`btn shrink-0 px-3 ${dictation.listening ? "pulse-urgent" : ""}`}
+            style={
+              dictation.listening
+                ? { background: "var(--color-exam-danger-soft)", borderColor: "var(--color-exam-danger)", color: "var(--color-exam-danger)" }
+                : { background: "var(--color-exam-accent-soft)", borderColor: "var(--color-exam-accent-line)", color: "var(--color-exam-accent-deep)" }
+            }
+            disabled={locked || spThinking || tts.speaking}
+            aria-pressed={dictation.listening}
+            title={dictation.listening ? "Listening… tap to stop" : "Tap to answer"}
+            onClick={() => {
+              if (dictation.listening) dictation.stop();
+              else {
+                tts.cancel();
+                micStart();
+              }
+            }}
+          >
+            {dictation.listening ? "● Listening" : "🎤 Tap to answer"}
           </button>
         )}
         <input
