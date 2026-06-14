@@ -50,6 +50,33 @@ function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: ()
   );
 }
 
+/** Big, unmissable banner: the tracing/film is a SEPARATE reading-practice
+ *  question from a different patient, not part of the case the student just
+ *  worked up. */
+function SeparateStudyBanner({ label }: { label: string }) {
+  return (
+    <div
+      role="note"
+      className="rounded-xl border-2 px-4 py-3.5 flex items-start gap-3"
+      style={{ borderColor: "var(--color-exam-warn-line)", background: "var(--color-exam-warn-soft)" }}
+    >
+      <span className="text-[24px] leading-none shrink-0" aria-hidden>
+        📋
+      </span>
+      <div className="space-y-1">
+        <div className="text-[16px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-warn)" }}>
+          Separate question — NOT this patient
+        </div>
+        <div className="text-[13.5px] leading-snug" style={{ color: "var(--color-exam-ink)" }}>
+          This {label} is a reading-practice study from a <span className="font-bold">different patient</span> in a
+          teaching library — it is <span className="font-bold">not part of this case</span>. Read it on its own; age,
+          sex, and other details may not match the patient you just worked up.
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /** The presenting context for the (representative, different-patient) teaching
  *  study — gives the read a clinical question to answer, the way a teaching
  *  library captions its cases. */
@@ -83,6 +110,7 @@ export function StudyImage({ image }: { image: RawImage }) {
     const viewUrl = viewableUrl(image);
     return (
       <figure className="space-y-2">
+        <SeparateStudyBanner label={image.label} />
         {image.clinicalVignette && <VignetteNote text={image.clinicalVignette} />}
         <div className="flex flex-col sm:flex-row gap-2">
           {[image.asset, image.asset2].filter(Boolean).map((src, i) => {
@@ -113,21 +141,6 @@ export function StudyImage({ image }: { image: RawImage }) {
             );
           })}
         </div>
-        <p
-          className="text-[12px] leading-snug rounded-lg border px-3 py-1.5 flex items-baseline gap-1.5"
-          style={{
-            background: "var(--color-exam-accent-soft)",
-            borderColor: "var(--color-exam-accent-line)",
-            color: "var(--color-exam-accent-deep)",
-          }}
-        >
-          <span aria-hidden>📚</span>
-          <span>
-            <span className="font-bold">Reading practice:</span> this is a real teaching study from a
-            published library — a <span className="font-bold">different patient</span>, not the one you
-            just examined. Interpret it on its own; details like age or sex may not match this case.
-          </span>
-        </p>
         <figcaption className="hint flex items-center justify-between gap-2 flex-wrap">
           <span>{image.attribution}</span>
           {viewUrl && (
@@ -149,6 +162,7 @@ export function StudyImage({ image }: { image: RawImage }) {
   const openLabel = isLitfl ? `Open ${studyName} ↗` : `Open a representative ${image.label} ↗`;
   return (
     <div className="space-y-2">
+      <SeparateStudyBanner label={image.label} />
       {image.clinicalVignette && <VignetteNote text={image.clinicalVignette} />}
       <div
         className="rounded-lg border-2 border-dashed px-6 py-8 text-center space-y-2"
@@ -161,10 +175,6 @@ export function StudyImage({ image }: { image: RawImage }) {
       </div>
       <p className="text-sm font-mono leading-relaxed max-w-xl mx-auto">
         {image.imageDescription ?? "Study unavailable."}
-      </p>
-      <p className="hint max-w-xl mx-auto">
-        📚 Reading practice — the linked study is from a teaching library (a different patient), not
-        the one you just examined.
       </p>
       {viewUrl && (
         <a
