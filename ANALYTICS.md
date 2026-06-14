@@ -35,90 +35,45 @@ provider`) with length-capped primitive values — see
 **Consent:** a one-time banner asks to Allow/Decline; the choice persists.
 `Do-Not-Track` is honored as a decline and suppresses the banner.
 
-## Turning it on
+## Turning it on — your Cloudflare Worker + D1 (with a built-in dashboard)
 
-Set ONE of these as a **build-time** env var (e.g. a GitHub Actions repo secret
-wired into the build step), then redeploy:
+The Worker lives in [`analytics-worker/`](analytics-worker/): it ingests events
+into a **D1** database and serves a **password-gated stats dashboard** you open in
+a browser. One-time setup:
 
 ```bash
-# Option A — your own endpoint (full data ownership)
-VITE_ANALYTICS_ENDPOINT="https://osce-analytics.<you>.workers.dev"
-
-# Option B — Plausible (hosted dashboard, cookieless)
-VITE_PLAUSIBLE_DOMAIN="osceprep.example.com"
-# VITE_PLAUSIBLE_API defaults to https://plausible.io/api/event (set for self-host)
+npm i -g wrangler && wrangler login
+cd analytics-worker
+wrangler d1 create osce-analytics          # paste the printed database_id into wrangler.toml
+wrangler d1 execute osce-analytics --remote --file=./schema.sql
+wrangler secret put STATS_KEY              # choose a password — it gates the dashboard
+wrangler deploy                            # note the URL: https://osce-analytics.<you>.workers.dev
 ```
 
-(Optionally `VITE_APP_VERSION` to tag events with a release.)
+Then point the app at it:
 
-### Option A — custom endpoint (turnkey Cloudflare Worker)
+1. GitHub → repo → **Settings → Secrets and variables → Actions → Variables** → add a
+   variable named **`ANALYTICS_ENDPOINT`** set to your Worker URL.
+2. Re-run the Pages deploy (push any commit, or run the "Deploy to GitHub Pages"
+   workflow). The build bakes `VITE_ANALYTICS_ENDPOINT` in (see
+   `.github/workflows/deploy.yml`), the consent banner appears, and events flow.
 
-A Worker gives you country for free (`request.cf.country`) and a queryable store
-via Workers Analytics Engine. `wrangler.toml`:
+**View your stats** at:
 
-```toml
-name = "osce-analytics"
-main = "worker.js"
-[[analytics_engine_datasets]]
-binding = "OSCE"
-dataset = "osce_events"
+```
+https://osce-analytics.<you>.workers.dev/stats?key=YOUR_STATS_KEY
 ```
 
-`worker.js`:
+A live dashboard: daily activity, screens viewed, case starts/completions by
+category and score band, drills, AI-enables, audience by country, and returning
+vs one-time devices. The Worker adds **country** (from the visitor IP via
+`request.cf.country`) and the user-agent; the app sends only the anonymous event
++ device id (no PII, answers, or keys). Full code: `analytics-worker/worker.js`
+and `analytics-worker/schema.sql`.
 
-```js
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+(Optionally set a `VITE_APP_VERSION` build var to tag events with a release.)
 
-export default {
-  async fetch(request, env) {
-    if (request.method === "OPTIONS") return new Response(null, { headers: CORS });
-    if (request.method !== "POST") return new Response("ok", { headers: CORS });
-    let e;
-    try { e = await request.json(); } catch { return new Response(null, { status: 204, headers: CORS }); }
-    const p = e.props || {};
-    const cf = request.cf || {};
-    env.OSCE.writeDataPoint({
-      indexes: [String(e.event || "other")],
-      blobs: [
-        e.event || "", p.screen || "", p.category || "", p.mode || "", p.band || "",
-        p.drillType || "", p.provider || "", e.deviceId || "", e.sessionId || "",
-        e.ref || "", e.lang || "", cf.country || "",
-        (request.headers.get("user-agent") || "").slice(0, 256), e.app || "",
-      ],
-      doubles: [Number(e.vw) || 0, Number(e.vh) || 0],
-    });
-    return new Response(null, { status: 204, headers: CORS });
-  },
-};
-```
-
-Deploy with `wrangler deploy`, then query from the Cloudflare dashboard or the
-[Analytics Engine SQL API](https://developers.cloudflare.com/analytics/analytics-engine/sql-api/),
-e.g.:
-
-```sql
--- daily active devices
-SELECT toDate(timestamp) AS day, count(DISTINCT blob8) AS devices
-FROM osce_events WHERE blob1 = 'app_open' GROUP BY day ORDER BY day;
-
--- case completions by category and score band
-SELECT blob3 AS category, blob5 AS band, count() AS n
-FROM osce_events WHERE blob1 = 'case_complete' GROUP BY category, band ORDER BY n DESC;
-
--- audience by country
-SELECT blob12 AS country, count(DISTINCT blob8) AS devices
-FROM osce_events GROUP BY country ORDER BY devices DESC;
-```
-
-(Blob order matches the `blobs` array above: `blob1`=event … `blob8`=deviceId …
-`blob12`=country.) Or store to KV/D1 instead and build any dashboard you like —
-the event payload is the same JSON regardless of where you put it.
-
-### Option B — Plausible
+### Alternative — Plausible (hosted, nothing to run)
 
 Create a site in Plausible, set `VITE_PLAUSIBLE_DOMAIN` to that site's domain,
 redeploy. Events show up as custom events alongside Plausible's built-in
@@ -129,9 +84,10 @@ Plausible.
 
 ## Viewing stats
 
-- **Custom endpoint:** query your store (SQL examples above), or point Grafana /
-  a sheet / a small admin page at it.
+- **Cloudflare Worker:** open `https://osce-analytics.<you>.workers.dev/stats?key=YOUR_STATS_KEY`
+  for the built-in dashboard. For ad-hoc questions, query D1 directly:
+  `wrangler d1 execute osce-analytics --remote --command "SELECT event, count(*) FROM events GROUP BY event"`.
 - **Plausible:** the hosted dashboard.
 
-There's no in-app admin dashboard because the app is a static site with no
-backend; the analytics live wherever you send the events.
+The dashboard is served by your Worker, not the app — the app is a static site
+with no backend, so the analytics live wherever you send the events.

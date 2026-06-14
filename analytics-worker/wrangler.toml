@@ -1,0 +1,24 @@
+# Cloudflare Worker that receives OSCE usage events and serves a stats
+# dashboard. Deploy with `wrangler deploy` from this directory.
+#
+# Setup (one time):
+#   1. npm i -g wrangler && wrangler login
+#   2. wrangler d1 create osce-analytics
+#      -> copy the printed database_id into the [[d1_databases]] block below
+#   3. wrangler d1 execute osce-analytics --remote --file=./schema.sql
+#   4. wrangler secret put STATS_KEY        # a password you choose for the dashboard
+#   5. wrangler deploy
+#   6. Copy the deployed URL (https://osce-analytics.<you>.workers.dev) and set it
+#      as the GitHub repo VARIABLE named ANALYTICS_ENDPOINT (Settings → Secrets and
+#      variables → Actions → Variables), then re-run the Pages deploy.
+#
+# Then view stats at:  https://osce-analytics.<you>.workers.dev/stats?key=YOUR_STATS_KEY
+
+name = "osce-analytics"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "osce-analytics"
+database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
