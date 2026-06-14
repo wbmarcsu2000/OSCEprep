@@ -57,6 +57,8 @@ export function SpConversation() {
   const lockedRef = useRef(locked);
   const thinkingRef = useRef(spThinking);
   const lastTranscriptRef = useRef("");
+  const silenceTimer = useRef<number | undefined>(undefined);
+  const ctlRef = useRef<{ start: () => void; stop: () => void }>({ start: () => {}, stop: () => {} });
   useEffect(() => {
     convoRef.current = convo;
     lockedRef.current = locked;
@@ -76,27 +78,47 @@ export function SpConversation() {
   // at end-of-speech and we send the utterance (handleSpeechEnd); the mic then
   // re-opens for the next turn via the reopen effect below — a hands-free
   // back-and-forth without flashing the mic on every pause.
-  function handleTranscript(t: string) {
-    setDraft(t);
-    lastTranscriptRef.current = t;
-  }
-  function handleSpeechEnd() {
+  // Send the buffered utterance once. Called when the student pauses (silence
+  // timer) or when the recognizer ends on its own. No-op if nothing was said.
+  function flushUtterance() {
+    if (silenceTimer.current) {
+      window.clearTimeout(silenceTimer.current);
+      silenceTimer.current = undefined;
+    }
     if (!convoRef.current || lockedRef.current || thinkingRef.current) return;
     const text = lastTranscriptRef.current.trim();
-    // Empty end = the recognizer timed out with no speech. Do NOTHING (do not
-    // reopen) — that loop was the flicker. The mic closes and "Tap to answer"
-    // appears so the student resumes when ready.
     if (!text) return;
     lastTranscriptRef.current = "";
     setDraft("");
     void ask(text);
   }
+  function handleTranscript(t: string) {
+    setDraft(t);
+    lastTranscriptRef.current = t;
+    if (!convoRef.current) return;
+    // Conversation mode: the mic stays open (continuous); a ~1.3s pause ends the
+    // turn and sends. The recognizer is NOT auto-restarted, so it never cycles.
+    if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
+    silenceTimer.current = window.setTimeout(() => {
+      ctlRef.current.stop();
+      flushUtterance();
+    }, 1300);
+  }
+  function handleSpeechEnd() {
+    // Chrome closed the mic on its own — send whatever was captured, else idle
+    // ("Tap to answer"). Never auto-reopen here (that was the flicker loop).
+    flushUtterance();
+  }
   const dictation = useDictation({
     onTranscript: handleTranscript,
-    continuous: !convo,
+    continuous: true, // stay open while waiting/speaking — false closes instantly
+    autoRestart: !convo, // manual mode restarts; conversation must not (flicker)
     onSpeechEnd: handleSpeechEnd,
   });
   const micStart = dictation.start;
+  useEffect(() => {
+    ctlRef.current = { start: dictation.start, stop: dictation.stop };
+  });
 
   const send = () => {
     if (dictation.listening) dictation.stop(); // sending ends dictation
@@ -115,10 +137,16 @@ export function SpConversation() {
       lastTranscriptRef.current = "";
       dictation.start();
     } else {
+      if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
       dictation.stop();
       tts.cancel();
     }
   };
+
+  // Clear any pending silence timer when leaving the encounter.
+  useEffect(() => () => {
+    if (silenceTimer.current) window.clearTimeout(silenceTimer.current);
+  }, []);
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -343,8 +371,10 @@ export function SpConversation() {
             aria-pressed={dictation.listening}
             title={dictation.listening ? "Listening… tap to stop" : "Tap to answer"}
             onClick={() => {
-              if (dictation.listening) dictation.stop();
-              else {
+              if (dictation.listening) {
+                dictation.stop();
+                flushUtterance();
+              } else {
                 tts.cancel();
                 micStart();
               }

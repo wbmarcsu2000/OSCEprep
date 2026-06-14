@@ -80,7 +80,13 @@ function pickNaturalVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice 
  *  one-turn-at-a-time cycle that doesn't flash the mic on and off. */
 export function useDictation(opts: {
   onTranscript: (text: string) => void;
+  /** Keep the mic open across pauses (default true). false ends after one utterance. */
   continuous?: boolean;
+  /** Transparently restart when Chrome ends recognition on its own (default true).
+   *  Conversation mode sets this false: it keeps the mic open via `continuous`
+   *  but must NOT auto-restart, or the recognizer cycles on/off (the flicker). */
+  autoRestart?: boolean;
+  /** Fired when recognition ends on its own and we are NOT auto-restarting. */
   onSpeechEnd?: () => void;
 }) {
   // `listening` is the desired state; the recognition object's whole lifecycle
@@ -141,11 +147,11 @@ export function useDictation(opts: {
     };
     rec.onend = () => {
       if (stopped) return;
-      // One-shot mode (conversation): the recognizer ends when the speaker
-      // stops. Report end-of-speech so the caller can send the utterance, and
-      // do NOT auto-restart — restarting on every pause is what made the mic
-      // flash on and off. The caller re-opens the mic for the next turn.
-      if (optsRef.current.continuous === false) {
+      // Conversation mode (autoRestart === false): the mic stayed open via
+      // `continuous`; when Chrome ends it on its own we report end-of-speech and
+      // go idle. We do NOT auto-restart — that cycle was the flicker. The caller
+      // re-opens the mic once per turn.
+      if (optsRef.current.autoRestart === false) {
         setListening(false);
         optsRef.current.onSpeechEnd?.();
         return;
