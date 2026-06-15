@@ -17,8 +17,10 @@
 name = "osce-analytics"
 main = "worker.js"
 compatibility_date = "2024-11-01"
+# Serve the worker on the account's workers.dev subdomain.
+workers_dev = true
 
 [[d1_databases]]
 binding = "DB"
 database_name = "osce-analytics"
-database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
+database_id = "9ea522b9-e03e-414d-95c4-ae856104d882"
