@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { detectProvider, modelsForProvider, resolveModel } from "../../llm/LlmAdapter";
 import { useAppStore } from "../store";
+import { analyticsConfigured } from "../../analytics/telemetry";
 
 /**
  * The Enable-AI panel: API key entry, provider detection, model picker, and
@@ -37,6 +38,16 @@ export function EnableAiPanel() {
         stored only in this browser, sent only to that provider, and verified on save. The app is
         fully usable without it on the deterministic engine.
       </p>
+      {analyticsConfigured() && (
+        <p
+          className="text-[12px] leading-relaxed rounded-lg px-3 py-2"
+          style={{ background: "var(--color-exam-accent-soft)", color: "var(--color-exam-accent-deep)" }}
+        >
+          Enabling AI also turns on <span className="font-semibold">anonymous usage tracking</span>,
+          which is required while AI is on — coarse feature use plus device and country. Never your
+          answers, identity, or API key.
+        </p>
+      )}
       <div className="flex gap-2">
         <input
           ref={inputRef}

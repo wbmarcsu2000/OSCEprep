@@ -42,7 +42,7 @@ import {
   loadReview,
   type CaseReview,
 } from "../analytics/store";
-import { track } from "../analytics/telemetry";
+import { track, requireConsentForAi } from "../analytics/telemetry";
 import { looseCovered } from "../engine/textMatch";
 
 const WRAPPERS = {
@@ -55,6 +55,10 @@ let provider: LlmProvider;
 let llmEnabled: boolean;
 let providerKind: ProviderKind | null;
 ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
+// Usage tracking is required while AI is on. A returning visitor with a stored
+// key boots with AI already enabled, so enforce their consent at startup too
+// (silent; DNT still wins; no-op without an analytics endpoint).
+if (llmEnabled) requireConsentForAi();
 
 export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills" | "neuro";
 
@@ -433,7 +437,13 @@ export const useAppStore = create<AppState>((set, get) => ({
     ({ provider, llmEnabled, providerKind } = createProvider(WRAPPERS));
     set({ llmEnabled, providerKind, aiStatus: "idle", aiError: null, aiDegraded: null, aiDegradedDetail: null });
     if (llmEnabled) {
-      if (!wasEnabled) track("ai_enabled", { provider: providerKind ?? "" }); // count only the off→on edge
+      if (!wasEnabled) {
+        // Enabling AI requires anonymous usage tracking (surfaced in the
+        // Enable-AI panel) — clicking Save accepts it. DNT browsers are still
+        // honored; no-op when no analytics endpoint is configured.
+        requireConsentForAi();
+        track("ai_enabled", { provider: providerKind ?? "" }); // count only the off→on edge
+      }
       void get().verifyAi();
     }
   },

@@ -89,6 +89,19 @@ export function setConsent(granted: boolean): void {
   if (granted) track("app_open", {});
 }
 
+/** Usage tracking is REQUIRED while the AI is enabled — enabling AI is the user
+ *  accepting it (made explicit in the Enable-AI panel). Grants consent without
+ *  the app_open side effect, suppressing the opt-in banner. A Do-Not-Track
+ *  browser still wins at read time (consentState stays "denied"), and it remains
+ *  a no-op when no analytics endpoint is configured. */
+export function requireConsentForAi(): void {
+  try {
+    localStorage.setItem(CONSENT_KEY, "granted");
+  } catch {
+    /* storage unavailable */
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Identity (anonymous) + session
 // ---------------------------------------------------------------------------
