@@ -6,6 +6,7 @@ import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
 import { ManualRefs } from "../components/ManualRefs";
 import { Segmented } from "../components/Segmented";
+import { VisualGuide } from "../components/VisualGuide";
 
 /**
  * Standalone learning drills (no full case). Get reps on the frameworks:
@@ -548,6 +549,7 @@ function DifferentialDrill({
               {category.framework} {category.strategy}
             </p>
           </div>
+          <VisualGuide category={category.category} view="differential" open />
           <ManualRefs manual={category.manual} compact />
         </div>
       )}
@@ -836,6 +838,7 @@ function WorkupDrill({
             </div>
           )}
 
+          <VisualGuide category={category.category} view="workup" open />
           <ManualRefs manual={category.manual} compact />
         </>
       )}
@@ -978,6 +981,7 @@ function ManagementDrill({
             rubric={rubric}
           />
 
+          <VisualGuide category={problem.category} view="management" open />
           {problem.manual.page > 0 && <ManualRefs manual={[problem.manual]} compact />}
         </div>
       )}
