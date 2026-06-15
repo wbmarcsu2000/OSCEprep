@@ -1,127 +1,141 @@
 {
   "id": "dyspnea-05",
   "category": "Dyspnea",
-  "difficulty": "easy",
-  "title": "Acute wheeze and chest tightness",
+  "difficulty": "hard",
+  "title": "Acute wheeze and chest tightness in a young woman on a beta-blocker and NSAIDs",
   "diagnosis": "Asthma exacerbation",
   "chart": {
     "ageSex": "24F",
     "cc": "Wheezing and chest tightness",
-    "oneLiner": "24F with a history of asthma presents with several hours of progressive wheeze, cough, and chest tightness after a viral cold.",
+    "oneLiner": "24F with asthma, allergic rhinitis with nasal polyps, migraine, and anxiety presents with several hours of progressive wheeze, cough, and chest tightness after starting naproxen for a headache, on a background of a recent head cold; she has used her albuterol many times with little relief.",
     "vitals": {
-      "BP": "124/76",
-      "HR": "110",
-      "RR": "28",
-      "Temp": "37.1°C",
-      "SpO2": "93% RA"
+      "BP": "108/68",
+      "HR": "124",
+      "RR": "30",
+      "Temp": "37.0°C",
+      "SpO2": "92% RA"
     },
     "timer": 180
   },
-  "opening": "My chest feels really tight and I can't stop wheezing — my inhaler isn't cutting it.",
-  "patientFile": "PERSONA: 24-year-old woman, anxious, speaking in short phrases between breaths, using her albuterol frequently. Cooperative.\n\nHPI: Several hours of worsening wheeze, dry cough, and chest tightness, triggered by a head cold over the past 2 days. Albuterol giving only brief relief. Similar but milder episodes in the past. NO fever, NO purulent sputum, NO pleuritic chest pain, NO leg swelling/calf pain, NO known cardiac disease.\nPMH: asthma (a prior ED visit, never intubated). MEDS: albuterol PRN, inhaled corticosteroid (admits poor adherence if asked). SOCIAL: nonsmoker, cat at home (trigger).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mild-moderate distress, speaking in phrases, mild accessory muscle use.\n- Vitals: BP 124/76, HR 110, RR 28, 37.1°C, SpO2 93% RA.\n- Lungs: diffuse expiratory WHEEZE bilaterally, prolonged expiratory phase, good air entry (air entry would be the worry if it dropped).\n- Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.\n- Peak expiratory flow: reduced to ~50% of her personal best (if measured).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the inhaled-steroid nonadherence or the cat unless asked about adherence/medications or triggers.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My chest is really tight and I can't stop wheezing — I've used my inhaler over and over and it's barely helping.",
+  "patientFile": "PERSONA: 24-year-old woman, anxious, speaking in short phrases between breaths, mild tremor in the hands, has been using her albuterol inhaler repeatedly in the waiting room. Cooperative but frightened because the inhaler is not working like it usually does.\n\nHPI: Several hours of worsening wheeze, dry cough, and chest tightness. She had a head cold over the past 2-3 days. This morning she took naproxen (an over-the-counter anti-inflammatory) for a bad headache, and within an hour or two her chest got much tighter and the wheezing took off. She has used her albuterol at least 8-10 times in the last few hours with only brief, partial relief, and now feels shaky and her heart is racing. Similar but milder wheezing episodes in the past, always around colds or strong smells, never needing a breathing tube. NO hives, NO lip/tongue/throat swelling, NO itching, NO trouble swallowing, NO new foods/stings/drugs other than the naproxen, NO sense of throat closing. NO fever today, NO purulent sputum, NO one-sided pleuritic chest pain, NO calf pain or leg swelling, NO recent long travel/immobility, NO oral-contraceptive use, NO prior clots. She has a long history of a blocked, runny nose and lost her sense of smell; an ENT once told her she had nasal polyps.\nGYN/REPRODUCTIVE (reveal only if asked): last menstrual period ~2 weeks ago, regular cycles, not sexually active currently, no chance of pregnancy.\nPMH: asthma (one prior ED visit years ago, never intubated, never in ICU); allergic rhinitis with nasal polyps; migraine; generalized anxiety; mild obesity; GERD. MEDS (reveal each only if asked about medications/adherence/new drugs): albuterol inhaler PRN (overusing it today); inhaled corticosteroid prescribed but she admits she rarely uses it (poor adherence); PROPRANOLOL (a non-selective beta-blocker) started ~2 months ago for migraine prevention and anxiety; omeprazole for reflux; took NAPROXEN (an NSAID) once this morning for a headache — this is new for her, she usually avoids anti-inflammatories but a friend offered it. ALLERGIES: she says aspirin once gave her a stuffy nose and wheeze years ago but she did not think much of it. SOCIAL: nonsmoker, no vaping, social alcohol rarely, cat at home (a known trigger). FAMILY: mother has asthma and nasal polyps. ROS: as above.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: moderate respiratory distress, speaking in short phrases, mild accessory muscle use, fine tremor of the hands, anxious. NO stridor, NO drooling, NO facial/lip/tongue swelling, NO urticaria/rash anywhere on the skin.\n- Vitals: BP 108/68, HR 124, RR 30, 37.0°C, SpO2 92% RA.\n- Lungs: diffuse high-pitched expiratory WHEEZE bilaterally with a prolonged expiratory phase; air entry still reasonable but reduced compared with normal (a silent chest with poor air entry would be the ominous worry). No focal crackles, no asymmetry to suggest pneumothorax.\n- Cardiac: tachycardic, regular, no murmur, no gallop. Neck: JVP not elevated, trachea midline. Extremities: no edema, no calf tenderness, warm and well-perfused.\n- Skin: no hives, no flushing, no angioedema.\n- Peak expiratory flow: reduced to ~40% of her personal best (if measured).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the naproxen/aspirin sensitivity, the propranolol, the inhaled-steroid nonadherence, the nasal polyps/anosmia, or the cat unless asked about new medications, drug allergies/reactions, current medications, adherence, ENT/nasal symptoms, or triggers.\n- Do NOT volunteer the absence of hives/swelling/throat-tightness unless asked about allergic symptoms — then clearly deny them.\n- Reveal exam findings only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 8.0 with mild eosinophilia, Hgb 13.5, Plt 250.",
-      "ABG": "pH 7.46, PaCO2 32, PaO2 80 — respiratory alkalosis. (A NORMAL or RISING PaCO2 would be an ominous sign of fatigue.)",
-      "BMP": "Within normal limits.",
-      "PEF": "~50% of personal best."
+      "CBC": "WBC 9.2 with mild peripheral EOSINOPHILIA (eosinophils 7%), Hgb 13.6, Plt 262. No bandemia.",
+      "ABG": "On room air: pH 7.47, PaCO2 31 mmHg, PaO2 78 mmHg, HCO3 22 — a primary respiratory alkalosis from hyperventilation. (A NORMALIZING or RISING PaCO2 in a still-tachypneic, tiring asthmatic is an OMINOUS sign of impending respiratory failure, NOT improvement.)",
+      "BMP": "Na 139, K 3.0 (LOW), Cl 104, HCO3 22, BUN 12, Cr 0.7, GLUCOSE 158 (mildly high). Anion gap = Na - (Cl + HCO3) = 139 - (104 + 22) = 13 (upper-normal). The hypokalemia and hyperglycemia are driven by heavy beta-2 agonist use (intracellular potassium shift and glycogenolysis), not a separate endocrine disease.",
+      "Lactate": "Lactate 3.4 mmol/L (HIGH). In a patient using large repeated doses of albuterol this is a recognized type B (non-hypoxic) lactic acidosis from beta-2 agonist excess; it is NOT evidence of sepsis or tissue hypoperfusion here, and it tends to resolve as albuterol is spaced out.",
+      "PEF": "Peak expiratory flow ~40% of personal best — a severe exacerbation by PEF criteria."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia ~110; no acute ischemic ST/T changes.",
-      "verify": "Source a study matching: Sinus tachycardia ~110; no acute ischemic ST/T changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia ~124; flattened T waves with prominent U waves and a long-appearing QU interval, consistent with hypokalemia (K 3.0) from heavy beta-agonist use; no acute ischemic ST elevation/depression and no right-heart-strain (S1Q3T3) pattern.",
+      "verify": "Source a study matching: sinus tachycardia with hypokalemic changes (flattened T waves, U waves) and no acute ischemia or right heart strain. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "integrated": true,
+      "litflStudyN": 6,
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia, no acute ischemia",
+      "imageDescription": "12-lead showing sinus tachycardia with flattened T waves and prominent U waves of hypokalemia, no ischemia or right heart strain",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead no ischemia"
+        "hypokalemia ECG U waves",
+        "sinus tachycardia U waves flattened T waves hypokalemia"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 32-year-old woman with asthma presents with acute breathlessness, chest tightness, and audible wheezing."
+      "clinicalVignette": "A young woman with a severe asthma flare who has used her albuterol inhaler many times now has palpitations and a tremor."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=hyperinflation%20chest%20xray%20asthma&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Mild hyperinflation; no consolidation, effusion, or pneumothorax.",
-      "verify": "Source a study matching: Mild hyperinflation; no consolidation, effusion, or pneumothorax. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Hyperinflated lungs with flattened diaphragms; no consolidation, no pleural effusion, and — importantly — NO pneumothorax or pneumomediastinum despite the severe air-trapping.",
+      "verify": "Source a study matching: hyperinflated lungs, flattened diaphragms, no consolidation/effusion/pneumothorax. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "near-normal chest radiograph with mild hyperinflation, no complications",
+      "imageDescription": "chest radiograph with hyperinflation and flattened diaphragms, no consolidation, effusion, or pneumothorax",
       "searchTerms": [
-        "normal chest x-ray PA",
-        "mild hyperinflation chest radiograph no consolidation"
+        "asthma hyperinflation chest x-ray flattened diaphragms",
+        "hyperinflated lungs no pneumothorax chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 28-year-old man with asthma presents with worsening wheeze and shortness of breath despite inhalers."
+      "clinicalVignette": "A young woman with a severe asthma exacerbation has a chest film to exclude a complicating pneumothorax."
     }
   },
   "revealKeys": [
     "CBC",
     "ABG",
     "BMP",
+    "Lactate",
     "PEF",
     "ekg",
     "cxr"
   ],
   "essential": [
-    "PEF"
+    "PEF",
+    "ABG",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Asthma exacerbation (leading,8; accepts acute asthma/reactive airways). Anaphylaxis (CANT-MISS to consider,4). Pulmonary embolism (CANT-MISS,4). COPD/bronchitis (core,3). Heart failure (less likely; core,2). Inhaled foreign body (bonus,2). Named leading dx w/ justification (core,2).",
-      "idealAnswer": "Leading diagnosis: Asthma exacerbation. Must-not-miss diagnoses to exclude: Anaphylaxis; Pulmonary embolism. Also reasonable: COPD/bronchitis; Heart failure.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). As part of your answer, name at least three distinct mechanisms or triggers that could be driving acute wheeze in THIS patient specifically.",
+      "rubric": "Asthma exacerbation (leading,5; accepts acute asthma/reactive airways). Anaphylaxis/anaphylactoid reaction — genuine competitor given an acute reaction after a new NSAID (CANT-MISS,5). Pulmonary embolism (CANT-MISS,3). NSAID/aspirin-exacerbated respiratory disease (AERD/Samter triad) as the mechanism, given nasal polyps + anosmia + prior aspirin wheeze + naproxen today (core,3). Beta-blocker (propranolol)-aggravated bronchospasm / blunted albuterol response as a contributor (core,3). COPD/bronchitis or vocal cord dysfunction (core,1). Names leading dx w/ justification (core,2). Names >=3 distinct mechanisms/triggers of wheeze in this patient (e.g. viral trigger, NSAID/AERD, non-selective beta-blocker, cat allergen, inhaled-steroid nonadherence) (core,3). PENALTY: anchoring on simple asthma without considering the NSAID reaction / anaphylaxis or the beta-blocker (-3).",
+      "idealAnswer": "Leading diagnosis: Asthma exacerbation — severe, multifactorial. The genuine competing must-not-miss is an NSAID-triggered ANAPHYLAXIS/anaphylactoid reaction, because the flare began within hours of her first naproxen; she argues AGAINST anaphylaxis with no urticaria, angioedema, throat-tightness, hypotension, or GI symptoms and a purely bronchospastic picture, so this is best understood as NSAID/aspirin-exacerbated respiratory disease (AERD/Samter triad: asthma + nasal polyps + aspirin/NSAID sensitivity) precipitating a severe asthma exacerbation rather than true anaphylaxis. Also must-not-miss: pulmonary embolism. Contributors/mechanisms specific to her: (1) recent viral URI, (2) the new NSAID via AERD, (3) the non-selective beta-blocker propranolol aggravating bronchospasm and blunting her albuterol, (4) cat-allergen exposure, and (5) inhaled-corticosteroid nonadherence. Other reasonable considerations: vocal cord dysfunction, COPD/bronchitis.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Anaphylaxis",
-            "points": 4
+            "item": "Anaphylaxis / anaphylactoid reaction to the new NSAID",
+            "points": 5
           },
           {
             "item": "Pulmonary embolism",
-            "points": 4
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "COPD/bronchitis",
+            "item": "NSAID/aspirin-exacerbated respiratory disease (AERD / Samter triad)",
             "points": 3
           },
           {
-            "item": "Heart failure",
+            "item": "Non-selective beta-blocker (propranolol) aggravating bronchospasm",
+            "points": 3
+          },
+          {
+            "item": "COPD/bronchitis or vocal cord dysfunction",
+            "points": 1
+          },
+          {
+            "item": "Named leading dx (asthma exacerbation) with justification",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ justification",
-            "points": 2
+            "item": "Names >=3 distinct mechanisms/triggers of wheeze in this patient",
+            "points": 3
           }
         ],
-        "bonusActions": [
+        "bonusActions": [],
+        "penalties": [
           {
-            "item": "Inhaled foreign body",
-            "points": 2
+            "item": "Anchors on simple asthma without considering the NSAID reaction/anaphylaxis or beta-blocker",
+            "points": -3
           }
-        ],
-        "penalties": []
+        ]
       },
       "mustNotMiss": [
-        "Anaphylaxis",
+        "Anaphylaxis / anaphylactoid reaction to the new NSAID",
         "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
-        "COPD/bronchitis",
-        "Heart failure"
+        "NSAID/aspirin-exacerbated respiratory disease (AERD / Samter triad)",
+        "COPD/bronchitis or vocal cord dysfunction"
       ]
     },
     {
@@ -129,28 +143,20 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial assessment/workup do you want? (Consider what changes management.)",
-      "rubric": "Peak expiratory flow / spirometry (CANT-MISS,5). Continuous pulse oximetry (3). ABG if severe or not improving (3). CXR if atypical features or to exclude complication (2). CBC (2). PENALTY: extensive cardiac/CT workup with no indication in a classic young asthmatic (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; ABG; BMP; PEF.",
+      "prompt": "What initial assessment/workup do you want? (Consider what changes management, and what would discriminate your competing diagnoses.)",
+      "rubric": "Peak expiratory flow / spirometry to grade severity (CANT-MISS,4). Continuous pulse oximetry and clinical reassessment (2). ABG if severe or not improving — watch for a normalizing/rising PaCO2 (2). BMP to check potassium and glucose given heavy beta-agonist use (2). CBC (1). Lactate to explain a metabolic gap / beta-agonist effect (1). CXR to exclude pneumothorax given a severe flare (2). EKG given tachycardia, tremor, and electrolyte shift (1). Serum tryptase if anaphylaxis genuinely suspected (bonus,1). PENALTY: anchoring with a shotgun cardiac/CT panel in a classic young asthmatic with no PE risk factors (-2).",
+      "idealAnswer": "Order: PEF (severity); continuous pulse oximetry; ABG (watch for a normalizing/rising PaCO2 as a danger sign); BMP (expect hypokalemia/hyperglycemia from beta-agonist overuse); CBC; Lactate (explains a beta-agonist type B lactic acidosis); CXR (exclude pneumothorax in a severe flare); EKG (tachycardia, tremor, hypokalemia). If true anaphylaxis is genuinely entertained, a serum tryptase within a few hours can help, but do not let it delay treatment. PE workup only if risk factors emerge.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Peak expiratory flow / spirometry",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "CBC",
+            "item": "BMP (potassium/glucose with heavy beta-agonist use)",
             "points": 2
           },
           {
@@ -158,18 +164,35 @@
             "points": 2
           },
           {
-            "item": "BMP",
+            "item": "CXR to exclude pneumothorax",
             "points": 2
           },
           {
-            "item": "PEF",
+            "item": "Continuous pulse oximetry",
             "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "Lactate",
+            "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Serum tryptase if anaphylaxis genuinely suspected",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "extensive cardiac/CT workup with no indication in a classic young asthmatic",
+            "item": "Shotgun cardiac/CT panel with no indication in a classic young asthmatic",
             "points": -2
           }
         ]
@@ -177,11 +200,15 @@
       "requiredTests": [
         "Peak expiratory flow / spirometry"
       ],
-      "optionalTests": [],
-      "contraindicatedTests": [
-        "extensive cardiac/CT workup with no indication in a classic young asthmatic"
+      "optionalTests": [
+        "Serum tryptase if anaphylaxis genuinely suspected"
       ],
-      "orderSensitiveActions": []
+      "contraindicatedTests": [
+        "Shotgun cardiac/CT panel with no indication in a classic young asthmatic"
+      ],
+      "orderSensitiveActions": [
+        "Peak expiratory flow / spirometry"
+      ]
     },
     {
       "id": "ekg_read",
@@ -189,33 +216,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic ST changes (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and tie them to her clinical picture.",
+      "rubric": "Findings = sinus tachycardia with flattened T waves and prominent U waves of HYPOKALEMIA (K 3.0) driven by heavy beta-agonist use; NO acute ischemia and NO right-heart-strain (S1Q3T3) pattern. CREDIT: identifies sinus tachycardia (4); recognizes the hypokalemic T-wave flattening / U waves and links them to beta-agonist-induced hypokalemia (6); explicitly states there is no acute ischemia and no right-heart-strain pattern to argue against PE (3); systematic read (2). PENALTY: over-calling ischemia or missing/ignoring the U waves and the hypokalemia they signal (-3).",
       "keyFindings": [
-        "identifies sinus tachycardia",
-        "states there are no acute ischemic ST/T changes"
+        "sinus tachycardia",
+        "flattened T waves with prominent U waves of hypokalemia",
+        "no acute ischemia and no right-heart-strain pattern"
       ],
       "criticalFindings": [
-        "Sinus tachycardia without acute ischemic changes."
+        "Sinus tachycardia with flattened T waves and U waves of hypokalemia (from beta-agonist overuse), no acute ischemia and no right-heart-strain pattern."
       ],
       "commonMistakes": [
         "over-calling ischemia from rate-related ST/T changes",
-        "failing to comment on rate/rhythm"
+        "missing the U waves and the hypokalemia they signal",
+        "failing to look for an S1Q3T3 / right-heart-strain pattern to address PE"
       ],
-      "idealAnswer": "Sinus tachycardia ~110 with no acute ischemic ST/T changes; otherwise unremarkable.",
+      "idealAnswer": "Sinus tachycardia at ~124 with flattened T waves and prominent U waves — the classic hypokalemic pattern, fitting her measured K of 3.0 from heavy beta-2 agonist use. There is no acute ST elevation or depression and no S1Q3T3 / right-heart-strain pattern, which argues against a large pulmonary embolism. The EKG is therefore part of the puzzle: it confirms the beta-agonist-driven hypokalemia I need to replete and reassures me against ischemia and major PE.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia without acute ischemic changes."
+          "Sinus tachycardia with flattened T waves and U waves of hypokalemia (from beta-agonist overuse), no acute ischemia and no right-heart-strain pattern."
         ],
         "coreActions": [
           "identifies sinus tachycardia",
-          "states there are no acute ischemic ST/T changes"
+          "recognizes hypokalemic T-wave flattening / U waves and links to beta-agonist use",
+          "states there is no acute ischemia and no right-heart-strain pattern"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls ischemia",
+            "label": "over-calls ischemia or ignores the U waves / hypokalemia",
             "points": -3
           }
         ]
@@ -228,41 +258,41 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = normal or mildly hyperinflated, no consolidation/effusion/pneumothorax. CREDIT: correctly identifies a normal/mildly hyperinflated film (5); explicitly excludes pneumothorax and consolidation as complications (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = hyperinflated lungs with flattened diaphragms, NO consolidation/effusion, and — importantly — NO pneumothorax or pneumomediastinum. CREDIT: identifies hyperinflation/flattened diaphragms consistent with severe air-trapping (5); explicitly excludes pneumothorax, pneumomediastinum, consolidation, and effusion as complications of a severe flare (5). PENALTY: inventing a pneumonia/effusion on a hyperinflated film or missing pneumothorax exclusion as the key pertinent negative (-2).",
       "keyFindings": [
-        "identifies a normal or mildly hyperinflated film",
-        "explicitly excludes pneumothorax, consolidation, and effusion"
+        "hyperinflation with flattened diaphragms",
+        "no pneumothorax, pneumomediastinum, consolidation, or effusion"
       ],
       "criticalFindings": [
-        "Mild hyperinflation; no consolidation, effusion, or pneumothorax."
+        "Hyperinflation with flattened diaphragms; no pneumothorax, pneumomediastinum, consolidation, or effusion."
       ],
       "commonMistakes": [
-        "inventing pathology on a near-normal film",
-        "failing to comment on the absence of pneumothorax or consolidation"
+        "inventing pneumonia/effusion on a hyperinflated film",
+        "failing to comment on the absence of pneumothorax/pneumomediastinum as the key pertinent negative"
       ],
-      "idealAnswer": "Mild hyperinflation with no consolidation, effusion, or pneumothorax; the film mainly serves to exclude complications.",
+      "idealAnswer": "Hyperinflated lungs with flattened diaphragms from severe air-trapping, but no consolidation, no effusion, and crucially no pneumothorax or pneumomediastinum — the film's main job here is to exclude a barotrauma complication of a severe exacerbation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Mild hyperinflation; no consolidation, effusion, or pneumothorax.",
+            "item": "Recognizes: Hyperinflation with flattened diaphragms; no pneumothorax, pneumomediastinum, consolidation, or effusion.",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "identifies a normal or mildly hyperinflated film",
+            "item": "identifies hyperinflation / flattened diaphragms",
             "points": 3
           },
           {
-            "item": "explicitly excludes pneumothorax, consolidation, and effusion",
+            "item": "explicitly excludes pneumothorax, pneumomediastinum, consolidation, and effusion",
             "points": 2
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "inventing pathology",
+            "label": "inventing pathology / missing pneumothorax exclusion",
             "points": -2
           }
         ]
@@ -272,19 +302,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "What is your leading diagnosis and how do you gauge severity?",
-      "rubric": "Asthma exacerbation (5). Uses PEF, work of breathing, and ABG to grade severity (3). Recognizes a normalizing/rising PaCO2 as a sign of impending respiratory failure (bonus,2).",
-      "idealAnswer": "Asthma exacerbation. ",
+      "prompt": "What is your leading diagnosis now, how do you gauge severity, and how do you explain her potassium, glucose, lactate, and EKG? Name the single test/finding that most discriminates your leading diagnosis from your main competitor.",
+      "rubric": "Severe asthma exacerbation, multifactorial (NSAID/AERD trigger on a background of viral URI, beta-blocker, nonadherence) rather than true anaphylaxis (5). Grades severity using PEF ~40%, work of breathing, and the ABG — recognizing a normalizing/rising PaCO2 as impending respiratory failure (3). Explains hypokalemia + hyperglycemia + lactate + U waves as beta-2 agonist-driven, not a separate disease, and names the discriminator: the ABSENCE of urticaria/angioedema/throat-tightness/hypotension (and a normal/low tryptase) separates an NSAID-AERD asthma flare from true anaphylaxis (bonus,2).",
+      "idealAnswer": "Severe asthma exacerbation, multifactorial — precipitated by NSAID/aspirin-exacerbated respiratory disease (naproxen on a background of nasal polyps and anosmia) layered on a viral URI, with the non-selective beta-blocker propranolol aggravating bronchospasm and blunting albuterol, plus inhaled-steroid nonadherence. Severity: severe by PEF ~40% of best, marked work of breathing, and an ABG showing respiratory alkalosis — a normalizing or rising PaCO2 would signal impending respiratory failure. The hypokalemia (K 3.0), hyperglycemia (158), elevated lactate (3.4, type B), and the U waves on EKG are all explained by heavy beta-2 agonist use, not by sepsis or an endocrine disease. The single most discriminating finding from true anaphylaxis is the complete absence of urticaria, angioedema, throat-tightness, GI symptoms, and hypotension (supported by a normal/low serum tryptase) — this is bronchospasm-only NSAID-AERD, not anaphylaxis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Recognizes a normalizing/rising PaCO2 as a sign of impending respiratory failure",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -292,73 +317,86 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH asthma exacerbation: inhaled albuterol ± ipratropium q20min ×3 (CANT-MISS,6); systemic corticosteroids prednisone 40-60 mg ×5-7 d (CANT-MISS,6); O2 to SpO2 ≥92% (3); IV magnesium 2 g for severe (3); escalate to continuous nebs / ICU if impending failure (3); identify trigger (2). PENALTY: discharging a still-symptomatic severe exacerbation (-3); LABA monotherapy / no steroid (-2).",
-      "idealAnswer": "Asthma exacerbation: inhaled albuterol ± ipratropium q20min ×3, systemic corticosteroids (prednisone 40–60 mg × 5–7 d), titrate O2 to ≥92%. For severe/impending failure: IV magnesium 2 g, continuous nebs, methylprednisolone 60–125 mg IV q6h, ICU transfer; mechanical ventilation with permissive hypercapnia if needed.",
+      "prompt": "What is your management plan? Include how you address her medications and electrolytes, and define explicit criteria for safe discharge versus admission/ICU.",
+      "rubric": "Per MGH asthma exacerbation: inhaled albuterol +/- ipratropium, frequent/continuous nebs for severe (CANT-MISS,5); systemic corticosteroids prednisone 40-60 mg or IV methylprednisolone (CANT-MISS,5); titrate O2 to SpO2 >=92% (2); IV magnesium 2 g for severe/refractory (2); REPLETE potassium and recognize beta-agonist-driven hypokalemia/lactate (rather than over-treating the lactate as sepsis) (3); STOP/avoid the NSAID and counsel lifelong aspirin/NSAID avoidance, hold the non-selective beta-blocker and switch migraine prophylaxis (3); escalate to ICU for impending respiratory failure / rising PaCO2 / silent chest (2); explicit safe-discharge plan with criteria + med reconciliation + ICS restart + follow-up (3). PENALTY: discharging a still-severe exacerbation (PEF ~40%, accessory muscle use) (-4); giving a non-selective beta-blocker or another NSAID / no systemic steroid (-3).",
+      "idealAnswer": "Treat as a SEVERE asthma exacerbation: high-dose inhaled albuterol +/- ipratropium by frequent or continuous nebulization, systemic corticosteroids (prednisone 40-60 mg PO or IV methylprednisolone 60-125 mg), and titrate oxygen to SpO2 >=92%. Add IV magnesium 2 g for the severe/refractory component. Address the confounders: STOP the naproxen and counsel lifelong aspirin/NSAID avoidance (NSAID-AERD), HOLD the non-selective beta-blocker propranolol (it worsens bronchospasm and blunts albuterol) and arrange a different migraine prophylaxis, and restart/optimize her inhaled corticosteroid. REPLETE potassium (K 3.0) and recognize that the hypokalemia, hyperglycemia, lactate of 3.4, and the U waves are beta-2 agonist effects that resolve as nebs are spaced out — do NOT chase the lactate as sepsis. Escalate to the ICU for impending respiratory failure: a normalizing/rising PaCO2, a silent chest, exhaustion, or altered mental status (consider IV magnesium, continuous nebs, and intubation with permissive hypercapnia if needed). SAFE DISCHARGE only when she meets criteria: PEF/FEV1 improved to >=60-70% of best and sustained, SpO2 >=92-94% on room air, comfortable with minimal work of breathing, and able to space bronchodilators to >=q4h; then discharge with a 5-7 day oral steroid course, an inhaled-corticosteroid + reliever plan with technique/adherence teaching, a written asthma action plan, explicit avoidance of NSAIDs/aspirin and of the non-selective beta-blocker, trigger control (cat), and close primary-care/pulmonology and allergy/ENT follow-up. If she does not meet these criteria, admit; ICU for impending failure.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Inhaled albuterol +/- ipratropium",
-            "points": 6
+            "item": "Inhaled albuterol +/- ipratropium (frequent/continuous nebs for severe)",
+            "points": 5
           },
           {
             "item": "Systemic corticosteroids",
-            "points": 6
+            "points": 5
           }
         ],
         "coreActions": [
           {
+            "item": "Replete potassium; recognize beta-agonist-driven hypokalemia/lactate (not sepsis)",
+            "points": 3
+          },
+          {
+            "item": "Stop/avoid NSAID and hold non-selective beta-blocker; adjust migraine prophylaxis",
+            "points": 3
+          },
+          {
+            "item": "Explicit safe-discharge plan with criteria, med reconciliation, ICS restart, and follow-up",
+            "points": 3
+          },
+          {
             "item": "Oxygen to SpO2 >=92%",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "IV magnesium if severe",
-            "points": 3
+            "item": "IV magnesium if severe/refractory",
+            "points": 2
           },
           {
-            "item": "Escalate / ICU if impending failure",
-            "points": 3
-          },
-          {
-            "item": "Identify and avoid trigger",
+            "item": "Escalate / ICU if impending respiratory failure",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Inhaled corticosteroid on discharge",
+            "item": "Restart/optimize inhaled corticosteroid with technique and adherence teaching",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Discharging a still-severe exacerbation",
-            "points": -3
+            "item": "Discharging a still-severe exacerbation (PEF ~40%, accessory muscle use)",
+            "points": -4
           },
           {
-            "item": "No systemic steroid",
-            "points": -2
+            "item": "Giving a non-selective beta-blocker or another NSAID, or no systemic steroid",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Inhaled albuterol +/- ipratropium",
+        "Inhaled albuterol +/- ipratropium (frequent/continuous nebs for severe)",
         "Systemic corticosteroids"
       ],
       "optionalActions": [
+        "Replete potassium; recognize beta-agonist-driven hypokalemia/lactate (not sepsis)",
+        "Stop/avoid NSAID and hold non-selective beta-blocker; adjust migraine prophylaxis",
+        "Explicit safe-discharge plan with criteria, med reconciliation, ICS restart, and follow-up",
         "Oxygen to SpO2 >=92%",
-        "IV magnesium if severe",
-        "Escalate / ICU if impending failure",
-        "Identify and avoid trigger",
-        "Inhaled corticosteroid on discharge"
+        "IV magnesium if severe/refractory",
+        "Escalate / ICU if impending respiratory failure",
+        "Restart/optimize inhaled corticosteroid with technique and adherence teaching"
       ],
       "unsafeActions": [
-        "Discharging a still-severe exacerbation",
-        "No systemic steroid"
+        "Discharging a still-severe exacerbation (PEF ~40%, accessory muscle use)",
+        "Giving a non-selective beta-blocker or another NSAID, or no systemic steroid"
       ],
-      "consults": [],
-      "disposition": "Admit; ICU if severe/impending failure",
+      "consults": [
+        "Pulmonology",
+        "Allergy/Immunology"
+      ],
+      "disposition": "Admit; ICU if severe/impending failure. Discharge only if PEF >=60-70% sustained, SpO2 >=92-94% RA, comfortable, bronchodilators spaced to >=q4h.",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "PFTs & Asthma",
@@ -368,32 +406,93 @@
   ],
   "standardizedPatient": {
     "demeanor": "anxious",
-    "emotionalState": "concerned",
+    "emotionalState": "frightened",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
       "tobacco_use",
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "new_medications_and_allergies"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "24-year-old woman, anxious, speaking in short phrases between breaths, using her albuterol frequently. Cooperative.",
+    "affect": "24-year-old woman, anxious and frightened, speaking in short phrases between breaths, with a fine hand tremor from overusing her albuterol. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the new NSAID, the propranolol, the inhaled-steroid nonadherence, the nasal polyps/anosmia, or the cat unless directly asked about new/current medications, drug reactions, ENT/nasal symptoms, adherence, or triggers",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "If asked about allergic symptoms, clearly deny hives, swelling, and throat-tightness",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
   "historyTriggers": [
     {
-      "id": "tobacco_use",
-      "category": "substance_use",
+      "id": "new_medications_and_allergies",
+      "category": "meds",
       "triggerConcepts": [
-        "smoking",
-        "tobacco",
-        "cigarettes",
-        "do you smoke"
+        "new medication",
+        "anything new",
+        "started any new drug",
+        "took anything for the headache",
+        "naproxen",
+        "ibuprofen",
+        "nsaid",
+        "aspirin",
+        "drug allergy",
+        "reaction to a medication",
+        "painkiller"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "beta_blocker_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "current medications",
+        "what medicines do you take",
+        "propranolol",
+        "beta blocker",
+        "migraine medicine",
+        "anxiety medication",
+        "blood pressure medicine",
+        "anything for migraines"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "allergic_symptoms_review",
+      "category": "ros",
+      "triggerConcepts": [
+        "hives",
+        "rash",
+        "itching",
+        "swelling of lips or tongue",
+        "throat closing",
+        "trouble swallowing",
+        "any allergic symptoms"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "nasal_polyps_anosmia",
+      "category": "ros",
+      "triggerConcepts": [
+        "nose",
+        "nasal congestion",
+        "stuffy nose",
+        "sense of smell",
+        "nasal polyps",
+        "sinus",
+        "ent history"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -407,11 +506,28 @@
         "medication adherence",
         "missed doses",
         "ran out",
-        "taking your medications"
+        "taking your medications",
+        "use your steroid inhaler",
+        "preventer inhaler"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "critical",
-      "points": 4,
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke",
+        "vaping"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -448,7 +564,8 @@
       "triggerConcepts": [
         "how bad",
         "severity",
-        "scale"
+        "scale",
+        "how many times did you use your inhaler"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -461,7 +578,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "chest pain",
+        "leg swelling",
+        "calf pain"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -475,7 +596,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "triggers"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -488,20 +610,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "asthma history",
+        "ever intubated"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -514,7 +625,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "ever this bad"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -524,46 +636,67 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
-      "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
-    },
-    {
-      "id": "auscultate_anterior_lungs_finding_2",
-      "finding": "Lungs: diffuse expiratory WHEEZE bilaterally, prolonged expiratory phase, good air entry (air entry would be the worry if it dropped).",
+      "id": "auscultate_anterior_lungs_finding_1",
+      "finding": "Lungs: diffuse high-pitched expiratory WHEEZE bilaterally with a prolonged expiratory phase; air entry reduced but still present (a silent chest with poor air entry would be the ominous worry). No focal crackles, no asymmetry.",
       "revealedBy": [
         "auscultate_anterior_lungs",
         "auscultate_posterior_lungs"
       ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No wheezing."
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No wheezing; clear air entry."
     },
     {
-      "id": "assess_edema_finding_3",
-      "finding": "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "id": "assess_general_appearance_finding_2",
+      "finding": "General: moderate respiratory distress, speaking in short phrases, mild accessory muscle use, fine hand tremor, anxious. NO stridor, NO drooling, NO lip/tongue swelling.",
       "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Comfortable, no distress."
+    },
+    {
+      "id": "inspect_skin_finding_3",
+      "finding": "Skin: no hives, no flushing, no angioedema anywhere (argues against anaphylaxis).",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No rash or hives."
+    },
+    {
+      "id": "assess_jvp_finding_4",
+      "finding": "Neck: JVP not elevated, trachea midline (no tension physiology / no right-heart strain to suggest large PE or tension pneumothorax).",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_5",
+      "finding": "Extremities: no edema, no calf tenderness, warm and well-perfused (argues against DVT/PE).",
+      "revealedBy": [
+        "assess_calf_tenderness",
         "assess_edema"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No peripheral edema."
+      "normalIfNotPresent": "No calf tenderness or edema."
     },
     {
-      "id": "assess_calf_tenderness_finding_4",
-      "finding": "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
+      "id": "auscultate_mitral_area_finding_6",
+      "finding": "Cardiac: tachycardic, regular, no murmur, no gallop.",
       "revealedBy": [
-        "assess_calf_tenderness"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No calf tenderness."
+      "normalIfNotPresent": "No murmur appreciated."
     }
   ],
   "overallScoring": {
@@ -576,67 +709,75 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Asthma exacerbation",
-    "diagnosticFramework": "24F with a history of asthma presents with several hours of progressive wheeze, cough, and chest tightness after a viral cold. The diagnosis is Asthma exacerbation, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "24F with asthma, allergic rhinitis with nasal polyps and anosmia, migraine, and anxiety presents with a severe acute wheeze that began within hours of taking her first NSAID (naproxen) on a background of a viral URI, while also taking a non-selective beta-blocker (propranolol) and being nonadherent with her inhaled corticosteroid. The diagnosis is a severe, multifactorial Asthma exacerbation, best explained as NSAID/aspirin-exacerbated respiratory disease (AERD/Samter triad) rather than true anaphylaxis. It is reached by eliciting the new-medication/drug-reaction history, examining for allergic and PE features, grading severity by PEF/ABG, recognizing the beta-agonist-driven hypokalemia/hyperglycemia/lactate and hypokalemic U waves on the patient's own EKG, excluding pneumothorax on CXR, and discriminating an NSAID-AERD asthma flare from anaphylaxis by the absence of urticaria/angioedema/throat-tightness/hypotension.",
     "keyHistoryClues": [
-      "medication adherence"
+      "new NSAID and drug reactions",
+      "non-selective beta-blocker use"
     ],
     "keyPhysicalExamFindings": [
-      "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
-      "Lungs: diffuse expiratory WHEEZE bilaterally, prolonged expiratory phase, good air entry (air entry would be the worry if it dropped).",
-      "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness.",
-      "Cardiac: tachycardic, regular, no murmur. Extremities: no edema, no calf tenderness."
+      "Lungs: diffuse high-pitched expiratory WHEEZE bilaterally with a prolonged expiratory phase; air entry reduced but still present (a silent chest with poor air entry would be the ominous worry). No focal crackles, no asymmetry.",
+      "General: moderate respiratory distress, speaking in short phrases, mild accessory muscle use, fine hand tremor, anxious. NO stridor, NO drooling, NO lip/tongue swelling.",
+      "Skin: no hives, no flushing, no angioedema anywhere (argues against anaphylaxis).",
+      "Neck: JVP not elevated, trachea midline (no tension physiology / no right-heart strain to suggest large PE or tension pneumothorax).",
+      "Extremities: no edema, no calf tenderness, warm and well-perfused (argues against DVT/PE).",
+      "Cardiac: tachycardic, regular, no murmur, no gallop."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "ABG",
       "BMP",
+      "Lactate",
       "PEF"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Asthma exacerbation while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Asthma exacerbation and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (severe flare: HR 124, RR 30, SpO2 92%).",
+      "Elicit the focused history, drawing out the new NSAID/drug reaction, the non-selective beta-blocker, nasal polyps/anosmia, inhaled-steroid nonadherence, and the cat trigger only on direct questioning.",
+      "Perform the targeted exam: confirm diffuse wheeze and severity, and look for allergic features (hives/angioedema) and PE/tension signs that are deliberately absent.",
+      "Build a differential led by asthma exacerbation with a genuine competing fork of NSAID-triggered anaphylaxis (resolved toward NSAID-AERD), and name >=3 mechanisms/triggers in this patient.",
+      "Order a focused workup (PEF, ABG, BMP, lactate, CXR, EKG); interpret the patient's own EKG as beta-agonist-driven hypokalemia (U waves) and the CXR as hyperinflation without pneumothorax.",
+      "Commit to a severe asthma exacerbation, replete potassium, stop the NSAID and hold the beta-blocker, treat with bronchodilators and systemic steroids, and set explicit safe-discharge versus ICU criteria."
     ],
     "commonPitfalls": [
+      "Anchoring on simple asthma without eliciting the new NSAID or the non-selective beta-blocker",
+      "Mistaking an NSAID-AERD asthma flare for true anaphylaxis (or vice versa)",
+      "Chasing the elevated lactate as sepsis instead of recognizing a beta-agonist effect",
       "Discharging a still-severe exacerbation",
-      "No systemic steroid"
+      "Continuing the non-selective beta-blocker or giving another NSAID; no systemic steroid"
     ],
     "managementPearls": [
-      "Inhaled albuterol +/- ipratropium",
-      "Systemic corticosteroids"
+      "Inhaled albuterol +/- ipratropium with systemic corticosteroids",
+      "Stop NSAIDs/aspirin (NSAID-AERD), hold the non-selective beta-blocker, and replete potassium"
     ],
     "criticalHistoryItems": [
-      "medication_nonadherence"
+      "new_medications_and_allergies",
+      "beta_blocker_use"
     ],
     "criticalExamItems": [
-      "auscultate_aortic_area"
+      "auscultate_anterior_lungs"
     ],
     "criticalWorkupItems": [
       "Peak expiratory flow / spirometry"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia. No acute ischemic changes.",
-      "Normal or mild hyperinflation; NO consolidation, effusion, or pneumothorax. (CXR mainly to exclude complications.)"
+      "Sinus tachycardia with flattened T waves and U waves of hypokalemia from beta-agonist overuse; no acute ischemia and no right-heart-strain pattern.",
+      "Hyperinflation with flattened diaphragms; no pneumothorax, pneumomediastinum, consolidation, or effusion."
     ],
     "criticalManagementItems": [
-      "Inhaled albuterol +/- ipratropium",
+      "Inhaled albuterol +/- ipratropium (frequent/continuous nebs for severe)",
       "Systemic corticosteroids"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes.",
-      "Mild hyperinflation; no consolidation, effusion, or pneumothorax."
+      "Sinus tachycardia with flattened T waves and U waves of hypokalemia (from beta-agonist overuse), no acute ischemia and no right-heart-strain pattern.",
+      "Hyperinflation with flattened diaphragms; no pneumothorax, pneumomediastinum, consolidation, or effusion."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes.",
-      "Mild hyperinflation; no consolidation, effusion, or pneumothorax."
+      "Sinus tachycardia with flattened T waves and U waves of hypokalemia (from beta-agonist overuse), no acute ischemia and no right-heart-strain pattern.",
+      "Hyperinflation with flattened diaphragms; no pneumothorax, pneumomediastinum, consolidation, or effusion."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "The patient's own EKG can be part of the puzzle: U waves and flattened T waves here signal beta-agonist-driven hypokalemia to replete, not a primary cardiac event.",
+      "On a severe-asthma chest film, the deliberate pertinent negative is the absence of a pneumothorax or pneumomediastinum.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -647,11 +788,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's fear and breathlessness",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (medications, adherence)",
         "points": 1
       },
       {
@@ -666,8 +807,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "pathology-forward integrated interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

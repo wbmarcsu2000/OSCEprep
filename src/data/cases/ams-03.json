@@ -1,70 +1,77 @@
 {
   "id": "ams-03",
   "category": "Altered Mental Status",
-  "difficulty": "easy",
-  "title": "Sudden confusion and sweating in a diabetic",
+  "difficulty": "hard",
+  "title": "Confusion with a transient focal deficit in a diabetic on multiple new medications",
   "diagnosis": "Hypoglycemia",
   "chart": {
     "ageSex": "68M",
-    "cc": "Confusion and sweating",
-    "oneLiner": "68M with diabetes is brought in by family for sudden confusion, sweating, and tremor that began before dinner.",
+    "cc": "Confusion, sweating, and a droopy face",
+    "oneLiner": "68M with type 2 diabetes (on insulin and glipizide), CKD, heart failure, and atrial fibrillation on warfarin is brought in by his daughter for ~40 minutes of confusion, diaphoresis, and slurred speech with a right facial droop that started before dinner; he was recently started on an antibiotic for a urinary infection.",
     "vitals": {
-      "BP": "142/86",
-      "HR": "104",
+      "BP": "158/88",
+      "HR": "92",
       "RR": "18",
-      "Temp": "36.8°C",
-      "SpO2": "98% RA"
+      "Temp": "36.7°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I… I don't feel right. I'm all shaky and sweaty.",
-  "patientFile": "PERSONA: 68-year-old man, diaphoretic, tremulous, confused and slow but rousable. Poor historian during the episode.\n\nCOLLATERAL (provide ONLY if the student asks family/EMS/chart/medication list): Family says he became confused and sweaty about 30 minutes ago. He takes insulin and a sulfonylurea (glipizide) for diabetes, gave his usual insulin this morning but skipped lunch because he wasn't hungry. No fever, no trauma, no chest pain. Recently his kidney function has been worsening. MEDS: insulin glargine, glipizide, lisinopril.\n\nHPI (from patient — limited): feels shaky, sweaty, 'foggy.' Can't give clear timeline.\nPMH: type 2 diabetes, chronic kidney disease. SOCIAL: lives with spouse.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: diaphoretic, tremulous, anxious, confused but arousable.\n- Vitals: BP 142/86, HR 104, RR 18, 36.8°C, SpO2 98% RA.\n- Neuro: confused; may have transient focal findings that resolve with treatment; no neck stiffness.\n- Cardiac: tachycardic, regular. Skin: cool and diaphoretic.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is confused: vague answers. Provide COLLATERAL (insulin + sulfonylurea use, skipped meal, CKD) only when the student explicitly asks family/medication list/what happened.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "He's my dad — he just went all confused and sweaty at the table, and his words came out funny and the side of his face looked droopy. I thought he was having a stroke.",
+  "patientFile": "PERSONA: You are the patient's DAUGHTER, the informant. Your father is a 68-year-old man sitting on the stretcher — diaphoretic, tremulous, slow and confused but rousable, with mildly slurred speech. He is a POOR HISTORIAN during the episode and answers only vaguely ('I'm… fine… shaky'). You answer the detailed questions on his behalf.\n\nOPENING CONCERN (you are frightened it is a stroke because of the facial droop and slurred speech): you saw the right side of his face droop and his speech slur about 40 minutes ago at the dinner table, along with sweating and shaking.\n\nCOLLATERAL HPI (reveal these details only when the student asks family/EMS/chart/what happened/timeline): It started about 40 minutes ago, just before dinner. He became sweaty, shaky, and 'not making sense,' with slurred words and a droopy right side of the face. It has been roughly the same since — maybe a little better in the last few minutes. He gave himself his usual long-acting insulin this morning and took his diabetes pills, but he barely ate today because he has felt off. No fall, no head injury, no chest pain, no seizure activity that you saw, no loss of consciousness.\n\nMEDICATIONS / RECENT CHANGES (reveal only when the student asks about the medication list, recent changes, or new prescriptions): insulin glargine (long-acting) every morning; glipizide (a diabetes pill) twice daily; metoprolol for his heart and irregular heartbeat; warfarin (a blood thinner) for the irregular heartbeat; lisinopril and furosemide for his heart/blood pressure. ABOUT FIVE DAYS AGO his primary doctor started him on a new antibiotic — 'Bactrim' (trimethoprim-sulfamethoxazole) — for a urinary infection. He has also been urinating less and his ankles look more swollen this week; his kidney doctor said his kidney numbers were 'getting worse.'\n\nPMH (reveal when asked about his medical problems): type 2 diabetes for 15 years; chronic kidney disease (worsening); heart failure with reduced ejection fraction; atrial fibrillation (on warfarin); hypertension; recent urinary tract infection. SOCIAL: lives with you (his daughter); does not drink alcohol; never smoked. He sometimes skips meals when he feels unwell but takes all his diabetes medicines on schedule. FAMILY: noncontributory.\n\nPRIOR EPISODES (reveal when asked): he has had a couple of 'shaky, sweaty' spells in the past few weeks that got better when he ate or drank juice, but nothing this bad and never with the droopy face or confusion. He says he no longer feels the early warning shakes the way he used to.\n\nROS / PERTINENT NEGATIVES (give normals/negatives when asked): no fever or chills now, no recent fall or head trauma, no chest pain or palpitations he noticed, no new weakness on one whole side that you can tell apart from the general shakiness, no headache, no vomiting, no black/bloody stools or new bleeding/bruising, no recent missed warfarin doses.\n\nPHYSICAL EXAM (report ONLY what is specifically examined; give normals when a maneuver is done and nothing abnormal is listed):\n- General: diaphoretic, tremulous, anxious, confused but arousable; cool, clammy skin.\n- Vitals: BP 158/88, HR 92 (irregularly irregular), RR 18, 36.7°C, SpO2 97% RA.\n- Mental status: disoriented to time and place, attention poor, speech mildly slurred; arousable and follows simple commands slowly.\n- Neuro: a SUBTLE right facial droop and mild right-arm pronator drift that are present during the episode; no neck stiffness; reflexes symmetric; gait not safely testable. (These focal findings improve markedly once glucose is corrected — note this if the student reassesses after treatment.)\n- Cardiac: irregularly irregular rhythm, no murmur; mild bilateral pedal edema. Skin: cool and diaphoretic.\n- Abdomen/chest: unremarkable; lungs clear.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The patient himself is confused and gives only vague answers; the DAUGHTER provides the collateral, but ONLY when the student asks family/EMS/chart/medication list/what happened.\n- Do NOT volunteer the new antibiotic (Bactrim), the skipped meals, the worsening kidney function, the beta-blocker, the loss of warning symptoms, or the prior shaky spells unless the student asks about recent medication changes, diet, kidney function, the full medication list, or prior similar episodes.\n- Reveal the focal neuro findings and their improvement-after-treatment only if the relevant exam is performed (and re-performed after treatment).\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 38 mg/dL — LOW (the key test).",
-      "BMP": "Na 138, K 4.4, BUN 40, Cr 2.2 (CKD — prolongs sulfonylurea effect), Glu 38.",
-      "CBC": "Within normal limits."
+      "Glucose": "Fingerstick (point-of-care) glucose 38 mg/dL — LOW; this is the single key test and was obtained at the bedside before any imaging. Confirmatory venous glucose 41 mg/dL.",
+      "BMP": "Na 138, K 5.4 (mild hyperkalemia), Cl 104, HCO3 22, BUN 52, Cr 2.8 (baseline ~1.8 — acute-on-chronic kidney injury), Glu 41. Anion gap = Na − (Cl + HCO3) = 138 − (104 + 22) = 12 (NORMAL gap — there is no anion-gap acidosis; lactate normal). The rising creatinine reduces renal clearance of glipizide and prolongs its hypoglycemic effect; the hyperkalemia fits the AKI plus lisinopril/trimethoprim.",
+      "CBC": "WBC 8.9, Hgb 12.8, Plt 220 — within normal limits; no leukocytosis to suggest active sepsis.",
+      "Coags": "INR 4.6 (supratherapeutic on warfarin; trimethoprim-sulfamethoxazole potentiates warfarin) — no active bleeding, but raises bleeding risk and is relevant before any anticoagulation or thrombolysis decision.",
+      "TSH": "1.8 mIU/L — normal (argues against hypothyroid/myxedema as a cause of the altered mentation)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
+      "litflStudyN": 2,
+      "integrated": true,
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "ST depression, flat T waves, prominent U waves, long QU.",
-      "verify": "Source a study matching: ST depression, flat T waves, prominent U waves, long QU. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "The patient's OWN tracing: atrial fibrillation (irregularly irregular rhythm, absent P waves, fibrillatory baseline) at a controlled ventricular rate (~90/min, rate-controlled on metoprolol); no acute ST-elevation or hyperacute T waves; the mild hyperkalemia is not yet producing peaked T waves.",
+      "verify": "Source a tracing matching: atrial fibrillation with a controlled ventricular response, no acute ischemic ST changes (LITFL ECG library, atrial fibrillation). Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
-      "assetNeeded": true,
-      "imageDescription": "12-lead showing hypokalemia U waves",
+      "assetNeeded": false,
+      "imageDescription": "12-lead EKG showing atrial fibrillation with a controlled ventricular response and no acute ischemic changes",
       "searchTerms": [
-        "hypokalemia U waves ECG",
-        "hypokalaemia ST depression 12 lead"
+        "atrial fibrillation controlled ventricular response 12 lead ECG",
+        "atrial fibrillation absent P waves irregularly irregular ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 67-year-old man on diuretics presents with weakness, palpitations, and confusion after poor oral intake."
+      "clinicalVignette": "An older diabetic man with known atrial fibrillation, brought in confused with a transient focal deficit, has his rhythm strip reviewed."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Curvilinear azygos fissure with a teardrop azygos vein in the right upper zone (benign variant).",
-      "verify": "Source a study matching: Curvilinear azygos fissure with a teardrop azygos vein in the right upper zone (benign variant). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Curvilinear azygos fissure with a teardrop azygos vein in the right upper zone (benign anatomic variant); lungs otherwise clear, no overt pulmonary edema, normal cardiomediastinal silhouette for body habitus.",
+      "verify": "Source a study matching: curvilinear azygos fissure with a teardrop azygos vein in the right upper zone (benign variant). Self-host with appropriate credit.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing azygos lobe fissure",
+      "imageDescription": "chest radiograph showing azygos lobe fissure, otherwise clear",
       "searchTerms": [
         "azygos lobe chest x-ray",
         "azygos fissure radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 67-year-old man presents with confusion, and his routine film incidentally shows a benign azygos lobe fissure."
+      "clinicalVignette": "An older confused man has a routine film that incidentally shows a benign azygos lobe fissure."
     }
   },
   "revealKeys": [
     "Glucose",
     "BMP",
     "CBC",
+    "Coags",
+    "TSH",
     "ekg",
     "cxr"
   ],
@@ -76,55 +83,64 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential (note your leading diagnosis).",
-      "rubric": "Hypoglycemia (leading & CANT-MISS,9; the adrenergic + neuroglycopenic picture in a treated diabetic). Stroke/TIA (CANT-MISS,4). Seizure/postictal (core,3). Intoxication (core,2). Sepsis (core,2). Cardiac arrhythmia (bonus,2). Names hypoglycemia and the imperative to check glucose immediately (core,3).",
-      "idealAnswer": "Leading diagnosis: Hypoglycemia. Must-not-miss diagnoses to exclude: Stroke/TIA. Also reasonable: Seizure/postictal; Intoxication; Sepsis.",
+      "prompt": "Based on your collateral history and exam in this confused diabetic with a transient focal deficit, list your differential (note your leading diagnosis). Then name three distinct mechanisms by which THIS patient could have become hypoglycemic.",
+      "rubric": "Hypoglycemia as the leading, CANNOT-MISS diagnosis driving the adrenergic + neuroglycopenic picture WITH a focal deficit (hypoglycemia can mimic stroke) (CANT-MISS,7). Acute ischemic stroke / TIA — the genuine competing must-not-miss given the facial droop, slurred speech, drift, and atrial fibrillation (CANT-MISS,5). Seizure/postictal (core,2). Sepsis/UTI-related encephalopathy (core,2). Intoxication/medication toxicity (core,1). Names the IMPERATIVE to check a fingerstick glucose immediately, before imaging, in any focal deficit (core,3). Names THREE distinct hypoglycemia mechanisms — e.g. (1) sulfonylurea (glipizide) effect prolonged by acute-on-chronic kidney injury reducing its clearance; (2) trimethoprim-sulfamethoxazole potentiating the sulfonylurea/insulin; (3) reduced caloric intake / skipped meals while continuing insulin and sulfonylurea; (also accept beta-blocker masking warning symptoms allowing it to go unrecognized) (core,3 total, ~1 each). Cardiac arrhythmia causing hypoperfusion (bonus,1). PENALTY: anchoring on stroke and rushing to CT/thrombolysis without first checking a glucose (-4).",
+      "idealAnswer": "Leading diagnosis: Hypoglycemia — the adrenergic (diaphoresis, tremor, tachycardia-blunted-by-beta-blocker) plus neuroglycopenic picture, and crucially hypoglycemia can produce a FOCAL deficit (facial droop, drift, dysarthria) that mimics a stroke. Chief competing must-not-miss: Acute ischemic stroke / TIA, made plausible by the focal findings and his atrial fibrillation. Also consider: seizure/postictal state, sepsis/UTI-related encephalopathy, and medication toxicity. In any patient with a focal deficit you MUST check a fingerstick glucose immediately, before rushing to CT or thrombolysis. Three mechanisms by which THIS man became hypoglycemic: (1) glipizide (sulfonylurea) effect prolonged by acute-on-chronic kidney injury that reduces drug clearance; (2) recently started trimethoprim-sulfamethoxazole (Bactrim) potentiating the sulfonylurea/insulin; (3) markedly reduced food intake / skipped meals while continuing his insulin and sulfonylurea. His beta-blocker also blunts the warning adrenergic symptoms, so the hypoglycemia went unrecognized until it was severe.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Hypoglycemia",
-            "points": 9
+            "item": "Hypoglycemia (can mimic stroke with a focal deficit)",
+            "points": 7
           },
           {
-            "item": "Stroke/TIA",
-            "points": 4
+            "item": "Acute ischemic stroke / TIA (competing must-not-miss)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "Seizure/postictal",
+            "points": 2
+          },
+          {
+            "item": "Sepsis / UTI-related encephalopathy",
+            "points": 2
+          },
+          {
+            "item": "Intoxication / medication toxicity",
+            "points": 1
+          },
+          {
+            "item": "States the imperative to check a fingerstick glucose immediately, before imaging, in any focal deficit",
             "points": 3
           },
           {
-            "item": "Intoxication",
-            "points": 2
-          },
-          {
-            "item": "Sepsis",
-            "points": 2
-          },
-          {
-            "item": "Names hypoglycemia and the imperative to check glucose immediately",
+            "item": "Names three distinct hypoglycemia mechanisms (sulfonylurea prolonged by AKI; TMP-SMX potentiation; skipped meals on insulin/sulfonylurea)",
             "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Cardiac arrhythmia",
-            "points": 2
+            "item": "Cardiac arrhythmia causing transient hypoperfusion",
+            "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on stroke and rushes to CT/thrombolysis without first checking a glucose",
+            "points": -4
+          }
+        ]
       },
       "mustNotMiss": [
         "Hypoglycemia",
-        "Stroke/TIA"
+        "Acute ischemic stroke / TIA"
       ],
       "acceptableAlternatives": [
         "Seizure/postictal",
-        "Intoxication",
-        "Sepsis"
+        "Sepsis / UTI-related encephalopathy",
+        "Intoxication / medication toxicity"
       ]
     },
     {
@@ -133,51 +149,67 @@
       "max": 15,
       "reveal": true,
       "prompt": "What is the single most important immediate test, and what else do you order?",
-      "rubric": "IMMEDIATE fingerstick glucose (CANT-MISS,7). BMP incl. renal function (3). CBC (2). EKG (2). Considers checking for a sulfonylurea/insulin cause (1). PENALTY: ordering a CT head BEFORE checking a glucose in an obviously hypoglycemic-appearing diabetic (-3).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; CBC.",
+      "rubric": "IMMEDIATE point-of-care fingerstick glucose, before any imaging, in a focal deficit (CANT-MISS,6). BMP including renal function and potassium (2). Coags/INR given warfarin — before any anticoagulation or thrombolysis decision (2). CBC (1). TSH to exclude a metabolic mimic (1). EKG to characterize the atrial fibrillation and exclude ischemia (1). Considers a non-contrast CT head only AFTER glucose is checked, to evaluate the persisting deficit (bonus,2). PENALTY: ordering CT head / activating a stroke pathway BEFORE checking a glucose (-3); giving empiric IV thrombolysis without a glucose and coags (-3).",
+      "idealAnswer": "Order: an IMMEDIATE point-of-care fingerstick glucose at the bedside — this comes before any imaging in a patient with a focal deficit. Then BMP (renal function, potassium), Coags/INR (he is on warfarin), CBC, TSH, and an EKG. A non-contrast CT head is reasonable AFTER the glucose is known, to evaluate a persisting deficit — but it must never delay treating a documented hypoglycemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "IMMEDIATE fingerstick glucose",
-            "points": 7
+            "item": "IMMEDIATE fingerstick glucose (before imaging)",
+            "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "BMP (renal function, potassium)",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "BMP",
+            "item": "Coags / INR (on warfarin)",
             "points": 2
           },
           {
             "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "TSH",
+            "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Non-contrast CT head AFTER glucose checked, for the persisting deficit",
             "points": 2
           }
         ],
-        "bonusActions": [],
         "penalties": [
           {
-            "item": "ordering a CT head BEFORE checking a glucose in an obviously hypoglycemic-appearing diabetic",
+            "item": "Ordering CT head / activating a stroke pathway BEFORE checking a glucose",
+            "points": -3
+          },
+          {
+            "item": "Giving empiric IV thrombolysis without a glucose and coags",
             "points": -3
           }
         ]
       },
       "requiredTests": [
-        "IMMEDIATE fingerstick glucose"
+        "IMMEDIATE fingerstick glucose (before imaging)"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Non-contrast CT head AFTER glucose checked, for the persisting deficit"
+      ],
       "contraindicatedTests": [
-        "ordering a CT head BEFORE checking a glucose in an obviously hypoglycemic-appearing diabetic"
+        "Ordering CT head / activating a stroke pathway BEFORE checking a glucose",
+        "Giving empiric IV thrombolysis without a glucose and coags"
       ],
       "orderSensitiveActions": [
-        "ordering a CT head BEFORE checking a glucose in an obviously hypoglycemic-appearing diabetic"
+        "Ordering CT head / activating a stroke pathway BEFORE checking a glucose"
       ]
     },
     {
@@ -186,33 +218,37 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = hypokalemia pattern. CREDIT: recognizes the hypokalemia pattern (7); identifies prominent U waves (5); notes ST depression / T-wave flattening (3). PENALTY: calling the study normal / missing the hypokalemia changes (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they fit the clinical picture.",
+      "rubric": "Findings = atrial fibrillation with a controlled ventricular response and NO acute ischemic changes. CREDIT: rhythm — recognizes ATRIAL FIBRILLATION (irregularly irregular, absent P waves, fibrillatory baseline) (6); notes the ventricular rate is controlled (~90), consistent with his beta-blocker, and that the irregularly irregular pulse on exam is the AF, not a new event (3); states there is NO acute ST-elevation/ischemia and NO peaked T waves despite the mild hyperkalemia (3); links the AF to stroke RISK — it is exactly why a focal deficit cannot be dismissed until glucose is checked and the deficit reassessed (2); systematic read (1). PENALTY: calling the irregular rhythm a primary cause of the confusion, or over-reading it as a STEMI / activating the cath lab (-3).",
       "keyFindings": [
-        "U waves",
-        "ST depression / T-wave flattening of hypokalemia"
+        "atrial fibrillation (irregularly irregular, absent P waves)",
+        "controlled ventricular response (rate-controlled on beta-blocker)",
+        "no acute ST-elevation/ischemia and no peaked T waves",
+        "AF is a stroke risk factor — supports taking the focal deficit seriously until glucose is checked"
       ],
       "criticalFindings": [
-        "Hypokalemia pattern (U waves, ST depression)."
+        "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes — a chronic stroke risk factor, not a new acute event."
       ],
       "commonMistakes": [
-        "calling the U waves part of the T wave and overestimating QT",
-        "missing the U waves entirely"
+        "calling atrial fibrillation a new primary cause of the confusion",
+        "over-reading benign changes as a STEMI and activating the cath lab",
+        "missing that the irregularly irregular pulse is simply his known AF"
       ],
-      "idealAnswer": "Hypokalemia: ST depression, flattened T waves, prominent U waves.",
+      "idealAnswer": "Atrial fibrillation — an irregularly irregular rhythm with absent P waves and a fibrillatory baseline — at a controlled ventricular rate (~90/min, consistent with his metoprolol). There is no acute ST-elevation or ischemia and, despite the mild hyperkalemia, no peaked T waves. This is his known chronic AF (it explains the irregularly irregular pulse on exam), not a new acute event. Its importance is as a STROKE RISK FACTOR: it is precisely why his transient focal deficit could not be dismissed out of hand — but the glucose of 38 and the resolution of the deficit with dextrose make hypoglycemia the cause.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Hypokalemia pattern (U waves, ST depression)."
+          "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes — a chronic stroke risk factor, not a new acute event."
         ],
         "coreActions": [
-          "U waves",
-          "ST depression / T-wave flattening of hypokalemia"
+          "atrial fibrillation (irregularly irregular, absent P waves)",
+          "controlled ventricular response on beta-blocker; no acute ischemia or peaked T waves",
+          "AF is a stroke risk factor — supports taking the focal deficit seriously until glucose is checked"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "over-reads as a STEMI / calls the AF a new primary cause of the confusion",
             "points": -3
           }
         ]
@@ -225,22 +261,24 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = azygos lobe (benign anatomic variant). CREDIT: identifies the azygos fissure/lobe — a curvilinear fissure with a teardrop azygos vein (6); recognizes it as a benign anatomic variant of no clinical significance (4). PENALTY: inventing pathology / mistaking the variant for disease (-2).",
+      "rubric": "Findings = azygos lobe (benign anatomic variant); lungs otherwise clear with no overt pulmonary edema. CREDIT: identifies the azygos fissure/lobe — a curvilinear fissure with a teardrop azygos vein (5); recognizes it as a benign anatomic variant of no clinical significance (3); notes the lungs are otherwise clear with no overt pulmonary edema despite his heart failure (2). PENALTY: inventing pathology / mistaking the variant for a pneumothorax line or disease (-2).",
       "keyFindings": [
         "identifies the azygos fissure/lobe",
-        "recognizes it as a benign anatomic variant"
+        "recognizes it as a benign anatomic variant",
+        "lungs otherwise clear, no overt pulmonary edema"
       ],
       "criticalFindings": [
-        "Azygos lobe (benign anatomic variant)."
+        "Azygos lobe (benign anatomic variant); otherwise clear film with no pulmonary edema."
       ],
       "commonMistakes": [
-        "mistaking the azygos fissure for a pneumothorax line or scar"
+        "mistaking the azygos fissure for a pneumothorax line or scar",
+        "inventing pulmonary edema because the patient has heart failure"
       ],
-      "idealAnswer": "Azygos lobe: a curvilinear fissure with a teardrop azygos vein — a benign anatomic variant.",
+      "idealAnswer": "Azygos lobe: a curvilinear fissure with a teardrop azygos vein — a benign anatomic variant of no clinical significance. The lungs are otherwise clear with no overt pulmonary edema despite his heart failure history, and the cardiomediastinal silhouette is unremarkable for habitus.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Azygos lobe (benign anatomic variant)."
+          "Azygos lobe (benign anatomic variant); otherwise clear film with no pulmonary edema."
         ],
         "coreActions": [
           "identifies the azygos fissure/lobe",
@@ -249,8 +287,8 @@
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
-            "points": -3
+            "label": "invents pathology / mistakes the variant for disease",
+            "points": -2
           }
         ]
       }
@@ -259,9 +297,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "The glucose is 38. What is your diagnosis and why is this patient at particular risk?",
-      "rubric": "Hypoglycemia (6). Identifies the mechanism — insulin + sulfonylurea with a skipped meal and worsening CKD prolonging drug effect (4).",
-      "idealAnswer": "Hypoglycemia (glucose 38). This patient is at particular risk because of combined insulin and sulfonylurea use with a skipped meal, compounded by worsening CKD that reduces renal clearance and prolongs the drugs' hypoglycemic effect.",
+      "prompt": "The point-of-care glucose is 38 and the focal deficit improves after dextrose. What is your diagnosis, what is the single discriminating finding that resolves the stroke-versus-hypoglycemia fork, and what residual ambiguity remains?",
+      "rubric": "Hypoglycemia as the unifying diagnosis (5). Names the DISCRIMINATING finding that resolves the fork — a documented glucose of 38 with the focal deficit RESOLVING after dextrose makes hypoglycemia (which can mimic stroke) the cause rather than an acute infarct (3). Acknowledges the residual ambiguity / safety net — atrial fibrillation makes a true stroke/TIA possible, so if the deficit does NOT fully resolve with normoglycemia he still needs stroke imaging/workup; and the supratherapeutic INR and AKI must be addressed (2).",
+      "idealAnswer": "Hypoglycemia is the unifying diagnosis (glucose 38). The discriminating finding that resolves the stroke-versus-hypoglycemia fork is that the focal deficit RESOLVES once the glucose is corrected with dextrose — hypoglycemia is a well-known stroke mimic, and a deficit that clears with normoglycemia points away from an acute infarct. The EKG confirms his AF is chronic and rate-controlled, not a new event. Residual ambiguity / safety net: because he has atrial fibrillation (a genuine stroke risk factor), a true stroke/TIA is not formally excluded — if the deficit does NOT fully resolve at a normal glucose, he needs urgent non-contrast CT and a stroke evaluation. Separately, the supratherapeutic INR (4.6, from the warfarin–TMP-SMX interaction) and the acute-on-chronic kidney injury with hyperkalemia are concurrent problems that must be managed.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -274,42 +312,50 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH inpatient glycemic management: immediate treatment – PO carbohydrate or IV dextrose (D50)/IM glucagon (CANT-MISS,8); recheck glucose in 15 min and repeat (4); identify and treat cause – insulin/sulfonylurea/missed meal/renal/EtOH (5); hold offending agent (3); consider octreotide for sulfonylurea overdose (2); give thiamine before glucose if alcohol use suspected (1). PENALTY: failing to recheck glucose (-2); discharging sulfonylurea hypoglycemia early (-2).",
-      "idealAnswer": "Treat hypoglycemia immediately: if able to take PO, 15–20 g fast carbohydrate; if unable/severe, IV dextrose (D50) or IM glucagon. Recheck glucose in 15 minutes and repeat until >70–80. Identify and treat the cause (insulin/sulfonylurea, missed meal, renal failure, alcohol). Hold the offending agent; for sulfonylurea-induced, observe and consider octreotide.",
+      "prompt": "What is your management plan, including the offending medications and a safe disposition for this patient and his daughter?",
+      "prompt_note": "",
+      "rubric": "Per MGH inpatient glycemic management: immediate treatment — PO fast carbohydrate if able, otherwise IV dextrose (D50) / IM glucagon (CANT-MISS,7); recheck glucose in 15 min and repeat until durably >70 (4); identify and treat the cause and HOLD the offending agents — stop/hold glipizide and reassess insulin; recognize that the recently started trimethoprim-sulfamethoxazole both prolonged the hypoglycemia and raised the INR (4); start a maintenance dextrose infusion and STRONGLY consider octreotide for sulfonylurea-induced hypoglycemia, which is prone to relapse (3); address the concurrent problems — supratherapeutic INR (hold warfarin; vitamin K if indicated) and AKI with hyperkalemia (2); ADMIT for observation rather than discharge — sulfonylurea hypoglycemia (especially with renal failure) recurs for many hours (CANT-MISS,3). SAFE DISCHARGE / DISPOSITION when later stable: medication reconciliation to remove the offending interaction, diabetes/sick-day teaching, caregiver (daughter) education on recognizing and treating hypoglycemia, and close PCP/endocrine and anticoagulation follow-up (3). PENALTY: discharging sulfonylurea hypoglycemia early / from the ED (-4); failing to recheck glucose (-2).",
+      "idealAnswer": "Treat the hypoglycemia immediately: if he can protect his airway and take PO, 15–20 g of fast carbohydrate; if not, IV dextrose (one ampule of D50) or IM glucagon. Recheck the glucose in 15 minutes and repeat treatment until it is durably >70. Because this is SULFONYLUREA-induced hypoglycemia compounded by renal failure, it is prone to relapse for many hours — start a maintenance D5–D10 infusion and strongly consider octreotide. Identify and remove the cause: hold glipizide and reassess his insulin, and recognize that the newly started trimethoprim-sulfamethoxazole both potentiated the sulfonylurea AND raised his INR. Manage the concurrent problems: the supratherapeutic INR of 4.6 (hold warfarin; vitamin K if clinically indicated) and the acute-on-chronic kidney injury with hyperkalemia. ADMIT for monitored observation — do NOT discharge sulfonylurea hypoglycemia from the ED. For safe discharge later, once durably euglycemic: full medication reconciliation to eliminate the drug interaction, diabetes sick-day rules, education of the patient AND his daughter on recognizing and treating low sugars (especially as his beta-blocker masks the warning symptoms), and close PCP/endocrinology and anticoagulation-clinic follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Immediate dextrose/glucagon or oral carbohydrate",
-            "points": 8
+            "points": 7
+          },
+          {
+            "item": "Admit for observation (do not discharge sulfonylurea hypoglycemia)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Identify and treat the cause",
-            "points": 5
-          },
-          {
-            "item": "Recheck glucose in 15 min and repeat",
+            "item": "Recheck glucose in 15 min and repeat until durably >70",
             "points": 4
           },
           {
-            "item": "Hold offending agent",
-            "points": 3
-          }
-        ],
-        "bonusActions": [
+            "item": "Hold offending agents (glipizide; recognize TMP-SMX potentiation; reassess insulin)",
+            "points": 4
+          },
           {
-            "item": "Octreotide for sulfonylurea overdose",
+            "item": "Maintenance dextrose infusion and consider octreotide for sulfonylurea hypoglycemia",
+            "points": 3
+          },
+          {
+            "item": "Address supratherapeutic INR and AKI/hyperkalemia",
             "points": 2
           },
           {
-            "item": "Thiamine before glucose if alcohol use",
-            "points": 1
+            "item": "Safe discharge later: med reconciliation, caregiver (daughter) education, close follow-up",
+            "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
+          {
+            "item": "Discharging sulfonylurea hypoglycemia early / from the ED",
+            "points": -4
+          },
           {
             "item": "Failing to recheck glucose",
             "points": -2
@@ -317,20 +363,24 @@
         ]
       },
       "requiredActions": [
-        "Immediate dextrose/glucagon or oral carbohydrate"
+        "Immediate dextrose/glucagon or oral carbohydrate",
+        "Admit for observation (do not discharge sulfonylurea hypoglycemia)"
       ],
       "optionalActions": [
-        "Identify and treat the cause",
-        "Recheck glucose in 15 min and repeat",
-        "Hold offending agent",
-        "Octreotide for sulfonylurea overdose",
-        "Thiamine before glucose if alcohol use"
+        "Recheck glucose in 15 min and repeat until durably >70",
+        "Hold offending agents (glipizide; recognize TMP-SMX potentiation; reassess insulin)",
+        "Maintenance dextrose infusion and consider octreotide for sulfonylurea hypoglycemia",
+        "Address supratherapeutic INR and AKI/hyperkalemia",
+        "Safe discharge later: med reconciliation, caregiver (daughter) education, close follow-up"
       ],
       "unsafeActions": [
+        "Discharging sulfonylurea hypoglycemia early / from the ED",
         "Failing to recheck glucose"
       ],
-      "consults": [],
-      "disposition": "Observe; admit if recurrent/sulfonylurea",
+      "consults": [
+        "Endocrinology (if recurrent/refractory)"
+      ],
+      "disposition": "Admit for monitored observation; sulfonylurea + renal failure hypoglycemia recurs",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Inpatient Diabetes (Hypoglycemia)",
@@ -340,35 +390,54 @@
   ],
   "standardizedPatient": {
     "demeanor": "diaphoretic",
-    "emotionalState": "concerned",
+    "emotionalState": "frightened",
     "healthLiteracy": "average",
     "verbosity": "very brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "medication_nonadherence"
+      "medication_changes",
+      "diet_intake"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "68-year-old man, diaphoretic, tremulous, confused and slow but rousable. Poor historian during the episode.",
+    "communicationStyle": "the patient is confused and gives vague answers; the daughter (informant) provides collateral only when asked",
+    "affect": "68-year-old man, diaphoretic, tremulous, confused and slow but rousable, with mildly slurred speech and a subtle right facial droop; his frightened daughter is the informant.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the new antibiotic, skipped meals, worsening kidney function, beta-blocker, or prior shaky spells unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam or diagnostic findings; reveal focal neuro findings and their post-treatment improvement only when examined",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
   "historyTriggers": [
     {
-      "id": "medication_nonadherence",
+      "id": "medication_changes",
       "category": "meds",
       "triggerConcepts": [
-        "medication adherence",
-        "missed doses",
-        "ran out",
-        "taking your medications"
+        "recent medication change",
+        "new medication",
+        "new prescription",
+        "started any new",
+        "antibiotic",
+        "bactrim"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
-      "points": 4,
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diet_intake",
+      "category": "hpi",
+      "triggerConcepts": [
+        "eating",
+        "did he eat",
+        "meals",
+        "appetite",
+        "skipped a meal",
+        "food intake"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -378,7 +447,8 @@
         "when did it start",
         "onset",
         "how long",
-        "duration"
+        "duration",
+        "what happened"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -392,7 +462,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "facial droop",
+        "slurred speech"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -418,7 +490,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "weakness",
+        "headache",
+        "chest pain",
+        "bleeding"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -432,7 +509,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "better when he ate",
+        "juice"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -445,7 +524,11 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney function",
+        "kidneys",
+        "diabetes",
+        "heart failure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -458,7 +541,11 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "medication list",
+        "drugs you take",
+        "insulin",
+        "glipizide",
+        "warfarin"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -471,7 +558,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "shaky spells",
+        "warning symptoms"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -481,18 +570,38 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_neck_stiffness_finding_1",
-      "finding": "Neuro: confused; may have transient focal findings that resolve with treatment; no neck stiffness.",
+      "id": "assess_mental_status_finding_1",
+      "finding": "Mental status: disoriented to time and place, attention poor, speech mildly slurred; arousable and follows simple commands slowly. Improves once glucose is corrected.",
       "revealedBy": [
-        "assess_neck_stiffness"
+        "assess_mental_status"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No nuchal rigidity."
+      "normalIfNotPresent": "Alert and oriented."
     },
     {
-      "id": "assess_general_appearance_finding_2",
-      "finding": "General: diaphoretic, tremulous, anxious, confused but arousable.",
+      "id": "assess_pronator_drift_finding_2",
+      "finding": "Neuro: subtle right-arm pronator drift and a subtle right facial droop present during the episode; these focal findings improve markedly once glucose is corrected (a hypoglycemic stroke-mimic).",
+      "revealedBy": [
+        "assess_pronator_drift"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No pronator drift."
+    },
+    {
+      "id": "assess_cranial_nerves_finding_3",
+      "finding": "Neuro: a subtle right facial droop present during the episode that improves once glucose is corrected; extraocular movements intact, no neglect.",
+      "revealedBy": [
+        "assess_cranial_nerves"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Cranial nerves intact, no facial droop."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
+      "finding": "General: diaphoretic, tremulous, anxious, confused but arousable; cool, clammy skin.",
       "revealedBy": [
         "assess_general_appearance"
       ],
@@ -501,14 +610,14 @@
       "normalIfNotPresent": "No tremor or diaphoresis."
     },
     {
-      "id": "assess_mental_status_finding_3",
-      "finding": "General: diaphoretic, tremulous, anxious, confused but arousable.",
+      "id": "assess_neck_stiffness_finding_5",
+      "finding": "Neuro: no neck stiffness or nuchal rigidity (argues against meningitis/subarachnoid hemorrhage).",
       "revealedBy": [
-        "assess_mental_status"
+        "assess_neck_stiffness"
       ],
       "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "Alert and oriented."
+      "points": 1,
+      "normalIfNotPresent": "No nuchal rigidity."
     }
   ],
   "overallScoring": {
@@ -521,77 +630,89 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Hypoglycemia",
-    "diagnosticFramework": "68M with diabetes is brought in by family for sudden confusion, sweating, and tremor that began before dinner. The diagnosis is Hypoglycemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68M with type 2 diabetes (insulin + glipizide), worsening CKD, heart failure, and atrial fibrillation on warfarin presents with ~40 minutes of confusion, diaphoresis, slurred speech, and a transient right facial droop — a hypoglycemic STROKE MIMIC. The diagnosis is Hypoglycemia, with a point-of-care glucose of 38 and a focal deficit that resolves with dextrose; it is driven by sulfonylurea effect prolonged by acute-on-chronic kidney injury, potentiated by a newly started trimethoprim-sulfamethoxazole, and unmasked by skipped meals while his beta-blocker blunted the warning symptoms. Concurrent multi-system problems (supratherapeutic INR from the warfarin–TMP-SMX interaction, AKI with hyperkalemia, and chronic rate-controlled atrial fibrillation on the integrated EKG) must be recognized as separate issues. It is reached via collateral history from the daughter, the targeted neuro exam, an immediate fingerstick glucose before imaging, and explicit exclusion of acute ischemic stroke.",
     "keyHistoryClues": [
-      "medication adherence"
+      "recent medication change",
+      "skipped meals"
     ],
     "keyPhysicalExamFindings": [
-      "Neuro: confused; may have transient focal findings that resolve with treatment; no neck stiffness.",
-      "General: diaphoretic, tremulous, anxious, confused but arousable.",
-      "General: diaphoretic, tremulous, anxious, confused but arousable."
+      "Mental status: disoriented, attention poor, speech mildly slurred; improves once glucose is corrected.",
+      "Neuro: subtle right-arm pronator drift and right facial droop that improve markedly once glucose is corrected (hypoglycemic stroke-mimic).",
+      "Neuro: subtle right facial droop that improves with glucose correction.",
+      "General: diaphoretic, tremulous, anxious, confused but arousable; cool, clammy skin.",
+      "Neuro: no neck stiffness or nuchal rigidity."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "BMP",
-      "CBC"
+      "CBC",
+      "Coags",
+      "TSH"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Hypoglycemia while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Hypoglycemia and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals — a confused diabetic with a transient focal deficit and atrial fibrillation.",
+      "Elicit collateral history from the daughter, drawing out the recent antibiotic, skipped meals, worsening kidney function, and beta-blocker only on direct questioning.",
+      "Perform the targeted neuro exam to reveal the focal deficit (and its improvement after treatment).",
+      "Build a differential led by Hypoglycemia (a stroke mimic) while explicitly excluding acute ischemic stroke/TIA, and name the mechanisms of the hypoglycemia.",
+      "Order an IMMEDIATE fingerstick glucose before imaging; interpret the integrated EKG (chronic rate-controlled AF), CXR, and the multi-system labs (AKI, hyperkalemia, supratherapeutic INR).",
+      "Commit to Hypoglycemia, treat it, manage the concurrent problems, admit for observation, and arrange safe discharge with medication reconciliation and caregiver education."
     ],
     "commonPitfalls": [
-      "Failing to recheck glucose"
+      "Anchoring on stroke and rushing to CT/thrombolysis without first checking a glucose",
+      "Failing to recheck glucose",
+      "Discharging sulfonylurea hypoglycemia early",
+      "Missing the warfarin–TMP-SMX interaction raising the INR"
     ],
     "managementPearls": [
-      "Immediate dextrose/glucagon or oral carbohydrate"
+      "Immediate dextrose/glucagon or oral carbohydrate",
+      "Admit for observation (do not discharge sulfonylurea hypoglycemia)"
     ],
     "criticalHistoryItems": [
-      "medication_nonadherence"
+      "medication_changes",
+      "diet_intake"
     ],
     "criticalExamItems": [
-      "assess_neck_stiffness"
+      "assess_mental_status",
+      "assess_pronator_drift"
     ],
     "criticalWorkupItems": [
-      "IMMEDIATE fingerstick glucose"
+      "IMMEDIATE fingerstick glucose (before imaging)"
     ],
     "criticalInterpretationItems": [
-      "Hypokalemia pattern (U waves, ST depression).",
-      "Azygos lobe (benign anatomic variant)."
+      "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes — a chronic stroke risk factor, not a new acute event.",
+      "Azygos lobe (benign anatomic variant); otherwise clear film with no pulmonary edema."
     ],
     "criticalManagementItems": [
-      "Immediate dextrose/glucagon or oral carbohydrate"
+      "Immediate dextrose/glucagon or oral carbohydrate",
+      "Admit for observation (do not discharge sulfonylurea hypoglycemia)"
     ],
     "keyImageInterpretationFindings": [
-      "Hypokalemia pattern (U waves, ST depression).",
-      "Azygos lobe (benign anatomic variant)."
+      "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes.",
+      "Azygos lobe (benign anatomic variant); otherwise clear film with no pulmonary edema."
     ],
     "criticalImageInterpretationFindings": [
-      "Hypokalemia pattern (U waves, ST depression).",
-      "Azygos lobe (benign anatomic variant)."
+      "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes.",
+      "Azygos lobe (benign anatomic variant); otherwise clear film with no pulmonary edema."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An irregularly irregular rhythm with absent P waves is atrial fibrillation — recognize when it is chronic and rate-controlled rather than a new event.",
+      "Atrial fibrillation is a stroke risk factor; it is exactly why a transient focal deficit must be taken seriously until glucose is checked and the deficit reassessed.",
+      "Read every study systematically and state pertinent negatives — no acute ischemia, no peaked T waves, no pulmonary edema."
     ]
   },
   "communicationScoring": {
     "maxPoints": 5,
     "items": [
       {
-        "item": "Uses an open-ended opening question",
+        "item": "Uses an open-ended opening question with the daughter (informant)",
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the daughter's fear that it is a stroke",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions about diet/medications",
         "points": 1
       },
       {
@@ -599,17 +720,17 @@
         "points": 1
       },
       {
-        "item": "Checks understanding",
+        "item": "Checks the daughter's understanding",
         "points": 1
       }
     ]
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": true,
-    "cxrReplaced": true,
+    "cxrReplaced": false,
     "backwardCompatible": true
   }
 }

@@ -7,26 +7,28 @@
   "chart": {
     "ageSex": "34M",
     "cc": "Passed out during the night",
-    "oneLiner": "34M with a febrile flu-like illness presents after an abrupt nocturnal loss of consciousness, with a family history of unexplained sudden death.",
+    "oneLiner": "34M with mild obesity and suspected obstructive sleep apnea, on an SSRI and several days of an over-the-counter combination cold remedy, presents after an abrupt nocturnal loss of consciousness during a febrile flu-like illness, with a family history of unexplained sudden death.",
     "vitals": {
-      "BP": "122/76",
-      "HR": "92",
+      "BP": "124/78",
+      "HR": "94",
       "RR": "16",
-      "Temp": "38.6°C",
-      "SpO2": "98% RA"
+      "Temp": "38.7°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
   "opening": "I came down with a fever yesterday, and then last night I just blacked out and woke up on the bathroom floor.",
-  "patientFile": "PERSONA: 34-year-old man, otherwise fit, now alert but feverish and shaken. Good historian.\n\nHPI: ABRUPT loss of consciousness overnight with essentially NO prodrome (no nausea, no warmth, no tunnel vision beforehand). The episode happened while he was up at night during a febrile flu-like illness that started the day before. Rapid, complete recovery with NO post-event confusion. Briefly witnessed by his partner, who described a few jerks of the limbs lasting seconds AFTER he went down (convulsive syncope), then prompt return to normal. NO tongue-biting, NO incontinence, NO sustained shaking, NO post-ictal state. NO chest pain, NO palpitations he can clearly recall. He has had one or two prior unexplained brief blackouts at rest, never during exertion.\nFAMILY HISTORY (only if asked): a brother died suddenly in his sleep in his 30s; an uncle drowned unexpectedly while swimming; no autopsy diagnosis was given. Strong family history of unexplained sudden death at a young age.\nPMH: none; structurally normal heart by his account. MEDS: took an over-the-counter sodium-channel-affecting cold remedy and has been on no chronic medications (if asked). Recently took a fever reducer. SOCIAL: occasional alcohol, reports a heavy drinking episode preceding one prior blackout (if asked); no recreational drugs; non-smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, febrile, mildly diaphoretic, well-appearing between events.\n- Vitals: BP 122/76, HR ~92 and regular, RR 16, Temp 38.6°C, SpO2 98% RA.\n- Cardiac: regular rate and rhythm; normal S1/S2; NO murmurs, NO gallops; PMI not displaced; no signs of structural disease.\n- Neuro: no focal deficit, fully oriented, no tongue laceration; gait normal.\n- Volume/skin: euvolemic; no orthostatic drop on standing.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history of sudden death unless asked about family history or relatives dying young/suddenly.\n- Do NOT volunteer the fever-precipitated timing, the nocturnal/at-rest pattern, or the brief post-fall jerks unless asked about the circumstances, warning, or what the witness saw.\n- Do NOT volunteer the cold remedy / fever reducer or the prior alcohol-associated episode unless asked about medications or drinking.\n- Emphasize (only if asked about prodrome/warning) that there was NO warning before the collapse.\n- The cardiac and neuro findings are normal and revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 34-year-old man, mildly overweight, otherwise active, now alert but feverish and shaken. Good historian, a little embarrassed about the drinking and the pile of cold medicines on his nightstand.\n\nHPI: ABRUPT loss of consciousness overnight with essentially NO prodrome (no nausea, no warmth, no tunnel vision beforehand). The episode happened while he was up at night during a febrile flu-like illness that started the day before. Rapid, complete recovery with NO post-event confusion. Briefly witnessed by his partner, who described a few jerks of the limbs lasting seconds AFTER he went down (convulsive syncope), then prompt return to normal. NO tongue-biting, NO incontinence, NO sustained shaking, NO post-ictal state. NO chest pain, NO palpitations he can clearly recall. He has had one or two prior unexplained brief blackouts at rest, never during exertion.\nFAMILY HISTORY (only if asked): a brother died suddenly in his sleep in his 30s; an uncle drowned unexpectedly while swimming; no autopsy diagnosis was ever given. Strong family history of unexplained sudden death at a young age.\nPMH (only if asked): mild obesity (BMI ~31); his partner says he snores loudly and stops breathing at night, and he is on a wait-list for a sleep study for possible obstructive sleep apnea — never formally diagnosed; mild depression on a stable medication for two years. He believes his heart is structurally normal (no known murmur, never had heart failure or a heart attack).\nMEDS (only if asked): a daily SSRI (sertraline) for two years — unchanged. For this flu he has been taking an OVER-THE-COUNTER combination cold remedy several times a day for two days: it contains a sodium-channel-active local-anesthetic-type cough suppressant AND a first-generation (sedating, anticholinergic) antihistamine, PLUS a separate acetaminophen fever reducer. He took an extra dose last night before the collapse. No chronic cardiac medications, no anticoagulants, no recreational drugs.\nSOCIAL (only if asked): occasional alcohol, but reports a heavy binge-drinking episode the night before ONE of his prior blackouts; he had two or three drinks last night on top of the cold medicine to help him sleep through the fever. Non-smoker.\nROS (only if asked): no focal weakness, no headache, no recent head injury, no melena/hematochezia, no exertional symptoms.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, febrile, mildly diaphoretic, overweight, well-appearing between events.\n- Vitals: BP 124/78, HR ~94 and regular, RR 16, Temp 38.7°C, SpO2 97% RA.\n- Cardiac: regular rate and rhythm; normal S1/S2; NO murmurs, NO gallops; PMI not displaced; no signs of structural disease.\n- Neuro: no focal deficit, fully oriented, no tongue laceration; gait normal; no asterixis.\n- Volume/skin: euvolemic; no orthostatic drop on standing; mucous membranes slightly dry.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history of sudden death unless asked about family history or relatives dying young/suddenly.\n- Do NOT volunteer the fever-precipitated timing, the nocturnal/at-rest pattern, or the brief post-fall jerks unless asked about the circumstances, warning, or what the witness saw.\n- Do NOT volunteer the cold remedy, its ingredients, the SSRI, the acetaminophen, or the prior alcohol-associated episode unless asked about medications, over-the-counter drugs, or drinking.\n- Do NOT volunteer the snoring / possible sleep apnea or the obesity unless asked about past medical history, sleep, or breathing at night.\n- Emphasize (only if asked about prodrome/warning) that there was NO warning before the collapse.\n- The cardiac and neuro findings are normal and revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
       "Troponin": "Normal serial troponins — no acute infarct pattern.",
-      "BMP": "Na 140, K 4.2 (normokalemic), Cr 0.9, Mg normal, glucose 96 — no metabolic cause for the event.",
+      "BMP": "Na 138, K 3.3 (mild HYPOkalemia), Cr 0.9 (eGFR >90), glucose 96. The low potassium from poor intake during the febrile illness plus binge alcohol is a confounder that itself lowers the arrhythmia threshold and must be repleted — it is NOT the primary cause of a Type 1 Brugada pattern.",
+      "MgPhos": "Mg 1.6 mg/dL (mildly LOW) and Phos 2.4 mg/dL (low-normal) — consistent with poor intake / alcohol; hypomagnesemia is pro-arrhythmic and should be corrected alongside the potassium.",
+      "LFTs": "AST 78, ALT 64 (mild transaminitis, AST>ALT), total bilirubin normal, INR normal — a mild mixed picture from the binge alcohol and viral febrile illness; no fulminant liver failure and no synthetic dysfunction.",
       "TSH": "Normal — no thyroid cause.",
-      "Echo": "Echocardiogram: structurally NORMAL heart; normal biventricular size/function, no RV dysplasia, no HCM, no critical valve lesion (excludes a structural arrhythmic substrate).",
-      "FeverWorkup": "Mild leukocytosis consistent with a viral febrile illness; the fever is the likely UNMASKING trigger rather than the primary problem.",
-      "Genetics": "SCN5A cardiac sodium-channel gene testing PENDING (supports the diagnosis but is not required to make it)."
+      "Echo": "Echocardiogram: structurally NORMAL heart; normal biventricular size/function, no RV dysplasia/ARVC, no HCM, no critical valve lesion (excludes a structural arrhythmic substrate).",
+      "FeverWorkup": "WBC 12.8 with lymphocyte predominance and CRP 42 mg/L — consistent with a viral febrile illness; respiratory viral PCR positive for influenza A. The fever is the likely UNMASKING trigger of the electrical phenotype rather than the primary problem.",
+      "Genetics": "SCN5A cardiac sodium-channel gene testing PENDING. A pathogenic SCN5A variant would support (but is not required to make) the diagnosis; a NEGATIVE result would NOT exclude Brugada syndrome, which remains a clinical/ECG diagnosis."
     }
   },
   "images": {
@@ -35,7 +37,8 @@
       "asset": null,
       "source": "https://litfl.com/brugada-syndrome-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Type 1 Brugada pattern: coved (downsloping) ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; QRS otherwise near-normal, no acute ischemic ST changes elsewhere.",
+      "integrated": true,
+      "findings": "Type 1 Brugada pattern: coved (downsloping) ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; QRS otherwise near-normal; QTc ~450 ms (upper-normal, mild drug effect from the anticholinergic/SSRI plus hypokalemia/hypomagnesemia, but NOT diagnostic long QT); rate-corrected, no acute ischemic ST changes elsewhere.",
       "verify": "From the LITFL 'Brugada Syndrome' ECG library page — download an example tracing that matches: Type 1 coved ST elevation with a negative T wave in V1-V2. Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
@@ -45,7 +48,7 @@
         "coved ST elevation V1 V2 Brugada"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 35-year-old man presents after an episode of nocturnal collapse and reports a family history of sudden death."
+      "clinicalVignette": "A 34-year-old man presents after an episode of nocturnal collapse during a fever and reports a family history of sudden death."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,12 +64,14 @@
         "normal chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 33-year-old man with unexplained syncope has a chest film to exclude a structural cardiopulmonary cause."
+      "clinicalVignette": "A 34-year-old man with unexplained syncope has a chest film to exclude a structural cardiopulmonary cause."
     }
   },
   "revealKeys": [
     "Troponin",
     "BMP",
+    "MgPhos",
+    "LFTs",
     "TSH",
     "Echo",
     "FeverWorkup",
@@ -84,37 +89,41 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this syncope (note your leading diagnosis).",
-      "rubric": "Cardiac arrhythmic syncope due to a primary electrical (channelopathy) disorder — Brugada syndrome (leading & CANT-MISS,9). Ventricular tachyarrhythmia / VT-VF (CANT-MISS,4). Long QT syndrome / other inherited channelopathy (CANT-MISS,3). Structural disease (HCM / ARVC) (core,2). Convulsive syncope vs seizure (core,2). Recognizes that abrupt syncope without prodrome, a febrile/nocturnal trigger, and a family history of sudden death point to an inherited arrhythmia (core,5).",
-      "idealAnswer": "Leading diagnosis: Cardiac arrhythmic syncope due to a primary electrical (channelopathy) disorder — Brugada syndrome. Must-not-miss diagnoses to exclude: Ventricular tachyarrhythmia (VT/VF); Long QT syndrome / other inherited channelopathy. Also reasonable: Structural disease (HCM/ARVC); Convulsive syncope vs seizure.",
+      "prompt": "Based on your history and physical, list your differential for this syncope (note your leading diagnosis). There is a genuine fork here: distinguish a true inherited channelopathy from a transient drug/fever-induced phenocopy. Also name THREE mechanisms or triggers that can unmask a Type 1 Brugada (coved ST-elevation) pattern.",
+      "rubric": "Cardiac arrhythmic syncope due to a primary electrical (channelopathy) disorder — Brugada syndrome (leading & CANT-MISS,8). Drug/fever-induced Brugada PHENOCOPY from the sodium-channel-active cold remedy unmasked by fever — the genuine competitor that must be raised and then argued against (CANT-MISS,4). Ventricular tachyarrhythmia / VT-VF as the lethal mechanism (CANT-MISS,3). Long QT / acquired QT prolongation from the anticholinergic antihistamine + SSRI + hypokalemia/hypomagnesemia (core,2). Structural disease (HCM/ARVC) or convulsive syncope vs seizure (core,2). Names THREE unmasking mechanisms/triggers of a Type 1 pattern — e.g., FEVER, sodium-channel-blocking drugs, vagotonic/nocturnal-at-rest states, electrolyte derangement (hypokalemia), alcohol (core,4). Recognizes that abrupt syncope without prodrome, a febrile/nocturnal trigger, prior at-rest blackouts, and a family history of sudden death point to a TRUE inherited arrhythmia rather than a purely drug-induced phenocopy (core,2).",
+      "idealAnswer": "Leading diagnosis: Cardiac arrhythmic syncope due to a primary electrical channelopathy — Brugada syndrome. The genuine competitor to resolve is a drug/fever-induced Brugada PHENOCOPY: his sodium-channel-active OTC cold remedy plus the fever could transiently produce a coved pattern in a structurally normal heart. Arguing FOR true Brugada: the strong family history of young sudden death, the prior at-rest blackouts before he was on these drugs, and the at-rest/nocturnal pattern — a pure phenocopy should resolve once the offending drug clears and fever breaks, whereas a persistent spontaneous Type 1 pattern off the drug confirms the syndrome. Must-not-miss mechanisms: ventricular tachyarrhythmia (VT/VF); acquired long QT from the anticholinergic antihistamine + SSRI + hypokalemia/hypomagnesemia. Also reasonable: structural disease (HCM/ARVC); convulsive syncope vs seizure. THREE classic unmaskers of a Type 1 Brugada pattern: (1) FEVER; (2) sodium-channel-blocking drugs (and tricyclics, cocaine, certain antiarrhythmics); (3) increased vagal tone / the at-rest, post-prandial or nocturnal state — also electrolyte shifts (hypokalemia) and alcohol.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Cardiac arrhythmic syncope due to a primary electrical (channelopathy) disorder — Brugada syndrome",
-            "points": 9
+            "points": 8
           },
           {
-            "item": "Ventricular tachyarrhythmia (VT/VF)",
+            "item": "Drug/fever-induced Brugada phenocopy from the sodium-channel-active cold remedy (raised, then argued against)",
             "points": 4
           },
           {
-            "item": "Long QT syndrome / other inherited channelopathy",
+            "item": "Ventricular tachyarrhythmia (VT/VF) as the lethal mechanism",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Structural disease (HCM/ARVC)",
+            "item": "Long QT / acquired QT prolongation (anticholinergic antihistamine + SSRI + hypokalemia/hypomagnesemia)",
             "points": 2
           },
           {
-            "item": "Convulsive syncope vs seizure",
+            "item": "Structural disease (HCM/ARVC) or convulsive syncope vs seizure",
             "points": 2
           },
           {
-            "item": "Recognizes that abrupt syncope without prodrome, a febrile/nocturnal trigger, and a family history of sudden death point to an inherited arrhythmia",
-            "points": 5
+            "item": "Names THREE unmasking mechanisms/triggers of a Type 1 pattern (e.g., fever, sodium-channel-blocking drugs, vagal/nocturnal-at-rest state, hypokalemia, alcohol)",
+            "points": 4
+          },
+          {
+            "item": "Recognizes the family history, prior at-rest blackouts, and nocturnal pattern favor a TRUE inherited arrhythmia over a pure drug phenocopy",
+            "points": 2
           }
         ],
         "bonusActions": [],
@@ -122,7 +131,8 @@
       },
       "mustNotMiss": [
         "Ventricular tachyarrhythmia (VT/VF)",
-        "Long QT syndrome / other inherited channelopathy"
+        "Drug/fever-induced Brugada phenocopy",
+        "Long QT / acquired QT prolongation"
       ],
       "acceptableAlternatives": [
         "Structural disease (HCM/ARVC)",
@@ -135,14 +145,14 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "12-lead EKG immediately, with high (2nd/3rd intercostal space) right precordial leads if suspicion is high (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring (CANT-MISS,4). Echocardiogram to exclude structural disease (2). BMP incl. potassium/magnesium and glucose (2). Troponin to exclude ischemia (1). PENALTY: discharging or failing to place the patient on a monitor (-3).",
-      "idealAnswer": "Order: EKG; CXR; Troponin; BMP; TSH; Echo; Fever workup; Genetics.",
+      "rubric": "12-lead EKG immediately, with high (2nd/3rd intercostal space) right precordial leads if suspicion is high (CANT-MISS — diagnostic,5). Continuous telemetry / cardiac monitoring (CANT-MISS,4). BMP incl. potassium and glucose AND Mg/Phos — correctable arrhythmia confounders (2). Echocardiogram to exclude structural disease (2). Troponin to exclude ischemia (1). LFTs given binge alcohol + febrile illness (1). Fever / viral workup (1). TSH (1). Genetics (SCN5A) (1). PENALTY: discharging or failing to place the patient on a monitor (-3); giving a sodium-channel-blocking drug to 'provoke' the pattern in an already-symptomatic patient (-2).",
+      "idealAnswer": "Order: EKG (with high right precordial leads); continuous telemetry; CXR; Troponin; BMP; Mg/Phos; LFTs; TSH; Echo; fever/viral workup; SCN5A genetics. Repeat the EKG once the fever has broken and the sodium-channel-active drug has cleared to see whether the Type 1 pattern persists (separates true Brugada from a transient phenocopy). Do NOT perform a drug-provocation (ajmaline/procainamide) challenge in an already-symptomatic patient with a spontaneous Type 1 pattern — it is unnecessary and dangerous.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "12-lead EKG immediately (consider high right precordial leads)",
-            "points": 6
+            "points": 5
           },
           {
             "item": "Continuous telemetry / cardiac monitoring",
@@ -151,11 +161,11 @@
         ],
         "coreActions": [
           {
-            "item": "Echocardiogram to exclude structural disease",
+            "item": "BMP incl. potassium and glucose, plus Mg/Phos",
             "points": 2
           },
           {
-            "item": "BMP incl. potassium/magnesium and glucose",
+            "item": "Echocardiogram to exclude structural disease",
             "points": 2
           },
           {
@@ -163,20 +173,20 @@
             "points": 1
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "LFTs (binge alcohol + febrile illness)",
+            "points": 1
+          },
+          {
+            "item": "Fever / viral workup",
+            "points": 1
           },
           {
             "item": "TSH",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Fever workup",
-            "points": 2
-          },
-          {
-            "item": "Genetics",
-            "points": 2
+            "item": "Genetics (SCN5A)",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -184,6 +194,10 @@
           {
             "item": "discharging or failing to place the patient on a monitor",
             "points": -3
+          },
+          {
+            "item": "ordering a sodium-channel-blocker provocation challenge in an already-symptomatic patient with a spontaneous Type 1 pattern",
+            "points": -2
           }
         ]
       },
@@ -193,11 +207,13 @@
       ],
       "optionalTests": [
         "Echocardiogram to exclude structural disease",
-        "BMP incl. potassium/magnesium and glucose",
-        "Troponin to exclude ischemia"
+        "BMP incl. potassium and glucose, plus Mg/Phos",
+        "Troponin to exclude ischemia",
+        "LFTs (binge alcohol + febrile illness)"
       ],
       "contraindicatedTests": [
-        "discharging or failing to place the patient on a monitor"
+        "discharging or failing to place the patient on a monitor",
+        "ordering a sodium-channel-blocker provocation challenge in an already-symptomatic patient with a spontaneous Type 1 pattern"
       ],
       "orderSensitiveActions": [
         "discharging or failing to place the patient on a monitor"
@@ -209,22 +225,23 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (be specific about the right precordial leads).",
-      "rubric": "Findings = Type 1 Brugada pattern. CREDIT: identifies coved ST-segment elevation in V1-V2 (6); recognizes the negative/inverted T wave following the coved ST (3); names it as a Type 1 Brugada pattern (4); systematic read with pertinent negatives — no acute ischemia, normal QT (2). PENALTY: dismissing it as benign early repolarization / normal, or over-calling an anterior STEMI (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings (be specific about the right precordial leads), and comment on the QT interval given his medications and electrolytes.",
+      "rubric": "Findings = Type 1 Brugada pattern. CREDIT: identifies coved (downsloping) ST-segment elevation >=2 mm in V1-V2 (6); recognizes the negative/inverted T wave following the coved ST (3); names it as a Type 1 Brugada pattern (4); systematic read with pertinent negatives — no acute ischemia elsewhere, and the QTc is only upper-normal (~450 ms) so this is NOT primary long QT despite the QT-prolonging drugs/electrolytes (2). PENALTY: dismissing it as benign early repolarization / a normal variant, over-calling an anterior STEMI, or mislabelling it as long QT (-3).",
       "keyFindings": [
-        "coved ST-segment elevation in V1-V2",
+        "coved (downsloping) ST-segment elevation >=2 mm in V1-V2",
         "negative T wave following the coved ST segment",
         "names it as a Type 1 Brugada pattern",
-        "systematic read, no acute ischemia elsewhere"
+        "systematic read: no acute ischemia elsewhere; QTc only upper-normal, not primary long QT"
       ],
       "criticalFindings": [
-        "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2."
+        "Type 1 Brugada pattern: coved (downsloping) ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2."
       ],
       "commonMistakes": [
         "dismissing the right precordial changes as benign early repolarization or a normal variant",
-        "over-calling an anterior STEMI"
+        "over-calling an anterior STEMI",
+        "anchoring on the QT-prolonging drugs and mislabelling an upper-normal QTc as primary long QT"
       ],
-      "idealAnswer": "Type 1 Brugada pattern: coved (downsloping) ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; no acute ischemic changes elsewhere and a normal QT interval.",
+      "idealAnswer": "Type 1 Brugada pattern: coved (downsloping) ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; QRS otherwise near-normal and no acute ischemic changes elsewhere. The QTc is only upper-normal (~450 ms) — a mild effect of the anticholinergic antihistamine, the SSRI and the low potassium/magnesium — but it is NOT diagnostic long QT, so the dominant abnormality remains the coved Brugada morphology, not the QT. This is the patient's own tracing and is the pivotal finding.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -235,7 +252,7 @@
         ],
         "coreActions": [
           {
-            "item": "coved ST-segment elevation in V1-V2",
+            "item": "coved (downsloping) ST-segment elevation >=2 mm in V1-V2",
             "points": 6
           },
           {
@@ -247,14 +264,14 @@
             "points": 4
           },
           {
-            "item": "systematic read, no acute ischemia elsewhere",
+            "item": "systematic read: no acute ischemia elsewhere; QTc only upper-normal, not primary long QT",
             "points": 2
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "dismissing it as benign early repolarization/normal or over-calling an anterior STEMI",
+            "item": "dismissing it as benign early repolarization/normal, over-calling an anterior STEMI, or mislabelling it as primary long QT",
             "points": -3
           }
         ]
@@ -302,9 +319,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the coved ST elevation in V1-V2, a structurally normal heart, syncope unmasked by fever, and a family history of sudden death, what is your diagnosis and why is it dangerous?",
-      "rubric": "Brugada syndrome (a sodium-channelopathy) (6). Explains the danger — risk of polymorphic VT/VF and sudden cardiac death, especially with fever or sodium-channel-blocking drugs; explicitly notes the heart is structurally normal so the substrate is electrical (4).",
-      "idealAnswer": "Brugada syndrome (a sodium channelopathy). Dangerous because it carries a risk of polymorphic VT/VF and sudden cardiac death, which is heightened by fever and by sodium-channel-blocking drugs; the heart is structurally normal, so the arrhythmic substrate is purely electrical.",
+      "prompt": "Given the patient's own EKG showing coved ST elevation in V1-V2, a structurally normal heart, syncope unmasked by fever, mild hypokalemia/hypomagnesemia, several QT/sodium-channel-active drugs, and a family history of sudden death, commit to a diagnosis. Explain how you resolve the true-Brugada-versus-drug/fever-phenocopy fork, name the discriminating test, and state why it is dangerous.",
+      "rubric": "Brugada syndrome (a sodium-channelopathy), committing despite the drug/fever confounders (6). Resolves the fork: the coved Type 1 pattern on HIS OWN EKG, the family history of young sudden death, and the prior at-rest blackouts point to a true inherited substrate — the offending drugs and fever are UNMASKING triggers, not the whole story; the discriminating step is a repeat EKG after the fever breaks and the sodium-channel-active drug clears (and SCN5A testing), with persistence confirming true Brugada (2). Explains the danger — risk of polymorphic VT/VF and sudden cardiac death, heightened by fever, sodium-channel-blocking drugs, and the hypokalemia/hypomagnesemia; notes the heart is structurally normal so the substrate is electrical (2).",
+      "idealAnswer": "Brugada syndrome (a sodium channelopathy). I commit to it even though several confounders coexist: the coved Type 1 morphology is on the patient's OWN 12-lead, he has a strong family history of young sudden death, and he had prior at-rest blackouts BEFORE these drugs — so the fever, the sodium-channel-active cold remedy, and the hypokalemia/hypomagnesemia are UNMASKING triggers rather than a pure phenocopy. I resolve the fork by repeating the EKG once the fever has broken and the offending drug has cleared (plus correcting electrolytes) and sending SCN5A genetics: a persistent spontaneous Type 1 pattern confirms the syndrome, whereas full normalization would favor a transient phenocopy — but the family history and prior episodes keep true Brugada the working diagnosis regardless. It is dangerous because it carries a real risk of polymorphic VT/VF and sudden cardiac death, heightened by fever, sodium-channel blockers, and low potassium/magnesium; the heart is structurally normal, so the arrhythmic substrate is purely electrical.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -314,7 +331,8 @@
       },
       "mustNotMiss": [
         "Ventricular tachyarrhythmia (VT/VF)",
-        "Long QT syndrome / other inherited channelopathy"
+        "Drug/fever-induced Brugada phenocopy",
+        "Long QT / acquired QT prolongation"
       ],
       "acceptableAlternatives": [
         "Structural disease (HCM/ARVC)",
@@ -325,9 +343,9 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH syncope / inherited arrhythmia: continuous telemetry monitoring with admission (CANT-MISS,4); aggressive fever control with antipyretics as fever unmasks/triggers arrhythmia (CANT-MISS,6); cardiology/EP consult for risk stratification and ICD in this high-risk (syncope + Type 1 pattern) patient (CANT-MISS,5); stop/avoid Brugada-aggravating drugs — sodium-channel blockers, certain antiarrhythmics, excess alcohol (3); counsel on family screening / genetic evaluation given inherited risk (3); treat the precipitating febrile illness (2). PENALTY: discharging an unmonitored patient with syncope and a Type 1 Brugada pattern (-4); giving a sodium-channel-blocking antiarrhythmic (e.g., procainamide/flecainide) as treatment (-3).",
-      "idealAnswer": "Admit with continuous telemetry. Control fever aggressively with antipyretics (fever unmasks the Type 1 pattern and provokes arrhythmia). Cardiology/EP consult for risk stratification — given syncope plus a spontaneous/fever-induced Type 1 pattern, this is high-risk and an ICD is indicated. Stop and avoid drugs that aggravate Brugada (sodium-channel blockers, certain antiarrhythmics, tricyclics, excess alcohol). Counsel on family screening and genetic evaluation. Treat the underlying febrile illness. For electrical storm, isoproterenol/quinidine are the rescue agents.",
+      "prompt": "What is your management plan, including disposition? Address whether this patient can be safely discharged, and what must happen before any discharge.",
+      "rubric": "Per MGH syncope / inherited arrhythmia: admit to a monitored bed with continuous telemetry — this patient CANNOT be safely discharged from the ED (CANT-MISS,4); aggressive fever control with antipyretics as fever unmasks/triggers arrhythmia (CANT-MISS,6); cardiology/EP consult for risk stratification and ICD in this high-risk (syncope + spontaneous Type 1 pattern) patient (CANT-MISS,5); correct hypokalemia and hypomagnesemia and stop/avoid Brugada-aggravating and QT-prolonging drugs — the sodium-channel-active cold remedy, the anticholinergic antihistamine, excess alcohol (3); counsel on family screening / genetic evaluation given inherited risk (2); treat the precipitating influenza and arrange outpatient sleep study for the suspected OSA (1); SAFE-DISCHARGE/disposition planning — only after EP risk stratification (+/- ICD), a curated 'avoid' drug list given to the patient, an aggressive fever-action plan, electrolyte correction, and close cardiology follow-up (4). PENALTY: discharging an unmonitored patient with syncope and a spontaneous Type 1 Brugada pattern (-4); giving a sodium-channel-blocking antiarrhythmic (e.g., procainamide/flecainide) as treatment (-3).",
+      "idealAnswer": "Admit to a monitored bed with continuous telemetry — this patient is NOT safe for ED discharge. Control fever aggressively with antipyretics (fever unmasks the Type 1 pattern and provokes arrhythmia). Cardiology/EP consult for risk stratification — given syncope PLUS a spontaneous/fever-induced Type 1 pattern, this is high-risk and an ICD is indicated. Correct the hypokalemia and hypomagnesemia and stop every Brugada-aggravating/QT-prolonging agent: the sodium-channel-active cold remedy, the first-generation anticholinergic antihistamine, and excess alcohol (and review the SSRI). Counsel on family screening and genetic (SCN5A) evaluation. Treat the influenza and arrange an outpatient sleep study for the suspected OSA. SAFE DISCHARGE only AFTER: EP risk stratification (and ICD if indicated), electrolyte correction, a written 'drugs-to-avoid' list (BrugadaDrugs.org), a clear fever-action plan (start antipyretics promptly with any future fever), and close cardiology follow-up with return precautions. For electrical storm, isoproterenol/quinidine are the rescue agents.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -336,26 +354,30 @@
             "points": 6
           },
           {
-            "item": "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + Type 1 pattern)",
+            "item": "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + spontaneous Type 1 pattern)",
             "points": 5
           },
           {
-            "item": "Continuous telemetry monitoring with admission",
+            "item": "Admit to a monitored bed with continuous telemetry (not safe for ED discharge)",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Stop/avoid Brugada-aggravating drugs (sodium-channel blockers, certain antiarrhythmics, excess alcohol)",
+            "item": "Correct hypokalemia/hypomagnesemia and stop Brugada-aggravating/QT-prolonging drugs (cold remedy, anticholinergic antihistamine, excess alcohol)",
             "points": 3
+          },
+          {
+            "item": "Safe-discharge planning: EP risk stratification +/- ICD, drugs-to-avoid list, fever-action plan, electrolyte correction, close cardiology follow-up before any discharge",
+            "points": 4
           },
           {
             "item": "Counsel on family screening / genetic evaluation",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Treat the precipitating febrile illness",
-            "points": 2
+            "item": "Treat the precipitating influenza and arrange outpatient sleep study for suspected OSA",
+            "points": 1
           }
         ],
         "bonusActions": [
@@ -366,7 +388,7 @@
         ],
         "penalties": [
           {
-            "item": "Discharging an unmonitored patient with syncope and a Type 1 Brugada pattern",
+            "item": "Discharging an unmonitored patient with syncope and a spontaneous Type 1 Brugada pattern",
             "points": -4
           },
           {
@@ -377,17 +399,18 @@
       },
       "requiredActions": [
         "Aggressive fever control with antipyretics",
-        "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + Type 1 pattern)",
-        "Continuous telemetry monitoring with admission"
+        "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + spontaneous Type 1 pattern)",
+        "Admit to a monitored bed with continuous telemetry (not safe for ED discharge)"
       ],
       "optionalActions": [
-        "Stop/avoid Brugada-aggravating drugs (sodium-channel blockers, certain antiarrhythmics, excess alcohol)",
+        "Correct hypokalemia/hypomagnesemia and stop Brugada-aggravating/QT-prolonging drugs (cold remedy, anticholinergic antihistamine, excess alcohol)",
+        "Safe-discharge planning: EP risk stratification +/- ICD, drugs-to-avoid list, fever-action plan, electrolyte correction, close cardiology follow-up before any discharge",
         "Counsel on family screening / genetic evaluation",
-        "Treat the precipitating febrile illness",
+        "Treat the precipitating influenza and arrange outpatient sleep study for suspected OSA",
         "Names quinidine/isoproterenol for electrical storm"
       ],
       "unsafeActions": [
-        "Discharging an unmonitored patient with syncope and a Type 1 Brugada pattern",
+        "Discharging an unmonitored patient with syncope and a spontaneous Type 1 Brugada pattern",
         "Giving a sodium-channel-blocking antiarrhythmic as treatment"
       ],
       "consults": [
@@ -409,12 +432,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "family_sudden_death"
+      "family_sudden_death",
+      "over_the_counter_medications"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "34-year-old man, otherwise fit, now alert but feverish and shaken. Good historian.",
+    "affect": "34-year-old man, mildly overweight, now alert but feverish and shaken; a little embarrassed about the drinking and the pile of cold medicines. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, OTC cold remedies, family sudden death, snoring/sleep apnea) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -432,7 +456,7 @@
         "did anyone die unexpectedly",
         "heart problems run in the family"
       ],
-      "response": "My older brother died suddenly in his sleep in his 30s, and an uncle drowned out of nowhere while swimming. Nobody ever gave us a clear reason why.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 4,
       "hiddenUntilAsked": true
@@ -448,7 +472,7 @@
         "nausea or warmth beforehand",
         "what happened just before"
       ],
-      "response": "No warning at all — no nausea, no dizziness, nothing. One moment I was up, the next I was on the floor.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -464,7 +488,7 @@
         "were you sick",
         "did it happen with a fever"
       ],
-      "response": "It happened overnight, while I was up at night with a fever from this flu I caught the day before. I wasn't exerting myself — I was just walking to the bathroom.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -480,7 +504,7 @@
         "tongue biting",
         "loss of bladder control"
       ],
-      "response": "My partner saw it. She said I dropped, had a few quick jerks of my arms for a couple of seconds after I went down, then came right back to normal. No tongue-biting and I didn't wet myself.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -495,7 +519,7 @@
         "how long to recover",
         "groggy afterwards"
       ],
-      "response": "I came around almost immediately and felt clear-headed — no grogginess or confusion afterward.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -510,7 +534,7 @@
         "ever fainted before",
         "blacked out before"
       ],
-      "response": "I've had one or two brief blackouts before, always when I was at rest, never during exercise. I never got them checked out.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -525,7 +549,7 @@
         "shortness of breath",
         "any chest symptoms"
       ],
-      "response": "No chest pain, and I don't remember my heart racing. No shortness of breath either.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -539,11 +563,14 @@
         "any new medicines",
         "over the counter",
         "cold remedies",
+        "antihistamine",
+        "what is in the cold medicine",
+        "antidepressant",
         "drugs you take"
       ],
-      "response": "I'm not on any regular medicines. For this flu I took an over-the-counter cold remedy and a fever reducer over the last day.",
-      "importance": "core",
-      "points": 1,
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -556,9 +583,25 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "I drink occasionally. I did have a heavy night of drinking right before one of those earlier blackouts, now that you mention it.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "sleep_apnea_pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "do you snore",
+        "sleep apnea",
+        "stop breathing at night",
+        "how do you sleep"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     }
   ],
@@ -597,7 +640,7 @@
     },
     {
       "id": "obtain_orthostatic_vitals_finding_4",
-      "finding": "Volume/skin: euvolemic; no orthostatic drop on standing.",
+      "finding": "Volume/skin: euvolemic; no orthostatic drop on standing; mucous membranes slightly dry.",
       "revealedBy": [
         "obtain_orthostatic_vitals"
       ],
@@ -616,17 +659,19 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Brugada syndrome",
-    "diagnosticFramework": "34M with a febrile flu-like illness presents after an abrupt nocturnal loss of consciousness, with a family history of unexplained sudden death. The diagnosis is Brugada syndrome, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "34M with mild obesity, suspected OSA, on a chronic SSRI and an over-the-counter sodium-channel-active/anticholinergic combination cold remedy, presents after an abrupt nocturnal loss of consciousness during a febrile influenza illness, with a strong family history of unexplained young sudden death. The diagnosis is Brugada syndrome, unmasked by fever (and aggravated by sodium-channel-active drugs, alcohol, and mild hypokalemia/hypomagnesemia). The key fork — true inherited Brugada versus a transient drug/fever-induced phenocopy — is resolved toward true Brugada by the family history, prior at-rest blackouts, the patient's own Type 1 EKG, and confirmatory repeat-EKG-off-drugs/SCN5A testing.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Cardiac: regular rate and rhythm; normal S1/S2; NO murmurs, NO gallops; no signs of structural disease.",
       "Cardiac: PMI not displaced; no signs of structural disease.",
       "Neuro: no focal deficit, fully oriented, no tongue laceration; gait normal.",
-      "Volume/skin: euvolemic; no orthostatic drop on standing."
+      "Volume/skin: euvolemic; no orthostatic drop on standing; mucous membranes slightly dry."
     ],
     "keyDiagnosticFindings": [
       "Troponin",
       "BMP",
+      "MgPhos",
+      "LFTs",
       "TSH",
       "Echo",
       "FeverWorkup",
@@ -634,24 +679,27 @@
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Brugada syndrome while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Brugada syndrome and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the OTC cold-remedy ingredients, alcohol, family sudden death, and snoring/sleep apnea only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the (normal) key findings.",
+      "Build a differential led by Brugada syndrome, raise and argue against the drug/fever phenocopy, and name three unmasking mechanisms of a Type 1 pattern.",
+      "Order a focused, order-sensitive workup (EKG with high right precordial leads, telemetry, electrolytes incl. Mg) and interpret the patient's own EKG/CXR and labs.",
+      "Commit to Brugada syndrome despite the confounders, name the discriminating repeat-EKG-off-drugs/SCN5A step, and manage with admission, fever control, EP/ICD risk stratification, electrolyte correction, family screening, and safe-discharge planning."
     ],
     "commonPitfalls": [
-      "Discharging an unmonitored patient with syncope and a Type 1 Brugada pattern",
+      "Attributing the whole picture to a drug/fever phenocopy and discharging once afebrile",
+      "Mislabelling the upper-normal QTc as primary long QT and missing the coved Brugada morphology",
+      "Discharging an unmonitored patient with syncope and a spontaneous Type 1 Brugada pattern",
       "Giving a sodium-channel-blocking antiarrhythmic as treatment"
     ],
     "managementPearls": [
       "Aggressive fever control with antipyretics",
-      "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + Type 1 pattern)",
-      "Continuous telemetry monitoring with admission"
+      "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + spontaneous Type 1 pattern)",
+      "Admit to a monitored bed with continuous telemetry (not safe for ED discharge)"
     ],
     "criticalHistoryItems": [
       "family_sudden_death",
-      "prodrome_warning"
+      "prodrome_warning",
+      "medications"
     ],
     "criticalExamItems": [],
     "criticalWorkupItems": [
@@ -659,26 +707,26 @@
       "Continuous telemetry / cardiac monitoring"
     ],
     "criticalInterpretationItems": [
-      "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2.",
+      "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; QTc only upper-normal.",
       "Normal chest radiograph (helps exclude structural/pulmonary causes)."
     ],
     "criticalManagementItems": [
       "Aggressive fever control with antipyretics",
-      "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + Type 1 pattern)",
-      "Continuous telemetry monitoring with admission"
+      "Cardiology/EP consult for risk stratification and ICD (high-risk: syncope + spontaneous Type 1 pattern)",
+      "Admit to a monitored bed with continuous telemetry (not safe for ED discharge)"
     ],
     "keyImageInterpretationFindings": [
-      "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2.",
+      "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; QTc only upper-normal, not primary long QT.",
       "Normal chest radiograph: clear lungs, normal cardiac silhouette, no acute process."
     ],
     "criticalImageInterpretationFindings": [
-      "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2.",
+      "Type 1 Brugada pattern: coved ST-segment elevation >=2 mm with a negative T wave in the right precordial leads V1-V2; QTc only upper-normal, not primary long QT.",
       "Normal chest radiograph: clear lungs, normal cardiac silhouette, no acute process."
     ],
     "imageInterpretationPearls": [
-      "An incidental or near-normal study is an interpretation task in its own right — name what you see, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "The patient's own EKG is the pivot of the case — read the right precordial leads carefully and name the coved Type 1 morphology.",
+      "Do not let coexisting QT-prolonging drugs and low electrolytes distract you into calling an upper-normal QTc primary long QT.",
+      "State pertinent negatives (no acute ischemia, structurally normal heart on echo), not just positives."
     ]
   },
   "communicationScoring": {
@@ -693,7 +741,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, OTC medications, family sudden death)",
         "points": 1
       },
       {
@@ -708,8 +756,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

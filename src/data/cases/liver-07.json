@@ -7,7 +7,7 @@
   "chart": {
     "ageSex": "32F",
     "cc": "Abdominal swelling and right upper quadrant pain",
-    "oneLiner": "32F on combined oral contraceptives presents with 3 weeks of progressive abdominal distension, right upper quadrant pain, and leg swelling.",
+    "oneLiner": "32F on combined oral contraceptives, with migraine-with-aura and recent heavy NSAID use, presents with 3 weeks of progressive abdominal distension, right upper quadrant pain, and leg swelling. The picture is genuinely ambiguous between a hepatic outflow problem and a right-heart/pericardial cause of congestion.",
     "vitals": {
       "BP": "108/70",
       "HR": "104",
@@ -18,15 +18,17 @@
     "timer": 180
   },
   "opening": "My belly has been swelling up and aching on the right side for a few weeks, and now my legs are puffy too.",
-  "patientFile": "PERSONA: 32-year-old woman, uncomfortable from a distended abdomen, anxious about the swelling. Cooperative and a good historian once asked.\n\nHPI: 3 weeks of progressive abdominal distension with dull, constant right upper quadrant pain and early satiety. Legs have become swollen over the last week. Mild nausea; no vomiting. NO confusion at baseline (watch for encephalopathy). NO black/bloody stools or hematemesis (watch for variceal bleeding). She has had two early miscarriages in the past (only mentions if asked about pregnancy/obstetric history). She started a combined oral contraceptive pill about 8 months ago (only quantifies/mentions if asked about medications or contraception).\nPMH: two first-trimester pregnancy losses; otherwise healthy; NO known liver disease, NO prior clots that she knows of. FAMILY: a sister with blood clots in the legs and a brother with a \"thick blood\" disorder (only if asked about family history of clots). MEDS: combined oral contraceptive pill for 8 months (if asked). SOCIAL: minimal alcohol (a few drinks per month), no IV drugs, no tattoos, no high-risk exposures.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable at rest but visibly distended abdomen; mild scleral icterus.\n- Vitals: BP 108/70, HR 104, RR 18, 37.2°C, SpO2 98% RA.\n- Abdomen: tender, smooth hepatomegaly in the RUQ; tense ascites with shifting dullness and a fluid wave if examined; no splenomegaly appreciated.\n- Extremities: bilateral lower-extremity pitting edema.\n- Neuro: alert and oriented; NO asterixis if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the oral contraceptive use, the prior miscarriages, or the family history of clots unless asked about medications/contraception, obstetric history, or family clotting history respectively.\n- Ascites, hepatomegaly, and edema are revealed only if the relevant area is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 32-year-old woman, uncomfortable from a distended abdomen, anxious about the swelling. Cooperative and a good historian once asked.\n\nHPI: 3 weeks of progressive abdominal distension with dull, constant right upper quadrant pain and early satiety. Legs have become swollen over the last week. Mild nausea; no vomiting. She is NOT short of breath lying flat and does NOT wake at night gasping, and does NOT get chest pain or palpitations on exertion (only states this if asked about breathing, orthopnea, PND, chest pain, or exercise tolerance — these negatives argue against a primary heart problem). NO confusion at baseline (watch for encephalopathy). NO black/bloody stools or hematemesis (watch for variceal bleeding). For the last 2 months she has been taking a lot of over-the-counter naproxen for bad headaches (only quantifies if asked about medications, painkillers, or headaches). She has had two early miscarriages in the past (only mentions if asked about pregnancy/obstetric history). She started a combined oral contraceptive pill about 8 months ago (only quantifies/mentions if asked about medications or contraception).\nPMH: migraine WITH aura (visual zig-zags before the headache) since her teens; two first-trimester pregnancy losses; mild iron-deficiency anemia treated with iron tablets last year; otherwise healthy; NO known liver disease, NO known heart disease, NO prior clots that she knows of, NO tuberculosis or pericarditis. FAMILY: a sister with blood clots in the legs and a brother with a \"thick blood\" disorder who has had his blood drawn off in the past (only if asked about family history of clots). MEDS (give the full list only if asked what she takes): combined estrogen-containing oral contraceptive pill daily for 8 months; over-the-counter naproxen most days for 2 months; ferrous sulfate iron tablets; a herbal 'liver detox / green tea extract' supplement a friend recommended for the past month; occasional acetaminophen. ALLERGIES: none. SOCIAL: smokes about half a pack of cigarettes a day for 10 years (only if asked about smoking); minimal alcohol (a few drinks per month); no IV drugs, no tattoos, no high-risk exposures. ROS: as above; no fevers, no night sweats, no weight loss; itching of the skin lately (pruritus) if asked.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable at rest but visibly distended abdomen; mild scleral icterus; plethoric (slightly ruddy) face.\n- Vitals: BP 108/70, HR 104, RR 18, 37.2°C, SpO2 98% RA.\n- JVP: NOT elevated and there is NO rise in the neck veins on pressing the abdomen (no hepatojugular reflux, no Kussmaul sign) — argues AGAINST right-heart failure/constrictive pericarditis as the cause (reveal only if the neck veins / JVP are examined).\n- Cardiac: normal S1/S2, NO pericardial knock, NO pericardial rub, NO murmur, no S3 (reveal only if the heart is auscultated).\n- Abdomen: tender, smooth hepatomegaly in the RUQ; tense ascites with shifting dullness and a fluid wave if examined; no splenomegaly appreciated.\n- Extremities: bilateral lower-extremity pitting edema; no calf cords or unilateral swelling.\n- Neuro: alert and oriented; NO asterixis if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the oral contraceptive use, the naproxen/headaches, the smoking, the prior miscarriages, the herbal supplement, or the family history of clots unless asked about medications/painkillers, smoking, obstetric history, supplements, or family clotting history respectively.\n- Do NOT volunteer the cardiac/breathing negatives unless asked about breathing, lying flat, chest pain, or the heart is examined.\n- Ascites, hepatomegaly, edema, the normal JVP, and the normal cardiac exam are revealed only if the relevant area is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "LFTs": "AST 180, ALT 165 (modest hepatocellular elevation); ALP and GGT mildly elevated; an acute ischemic-hepatitis pattern can also occur with rapid outflow obstruction.",
-      "Bilirubin": "Total bilirubin mildly-to-moderately elevated; albumin low-normal.",
-      "INR": "Mildly prolonged (early impaired synthetic function); platelets often normal or HIGH.",
-      "AscitesFluid": "Diagnostic paracentesis: SAAG HIGH (>=1.1 g/dL, portal hypertension) with a HIGH ascitic total protein (>2.5 g/dL) — pattern typical of post-sinusoidal/hepatic outflow obstruction.",
-      "DopplerUS": "Hepatic vein Doppler ultrasound: absent/reversed/turbulent flow in the hepatic veins with hepatic vein and/or IVC thrombosis, caudate lobe hypertrophy, and ascites — CONFIRMS hepatic venous outflow obstruction.",
-      "Thrombophilia": "JAK2 V617F mutation POSITIVE (occult myeloproliferative neoplasm); antiphospholipid antibodies sent — establishes the underlying prothrombotic cause."
+      "CBC": "Hemoglobin 17.2 g/dL and hematocrit 53% (erythrocytosis), WBC 11.5, platelets 612 ×10⁹/L (thrombocytosis). The combination of a HIGH red cell mass and HIGH platelets in a young woman with thrombosis points to an occult myeloproliferative neoplasm — a multi-system clue, NOT just a liver problem.",
+      "LFTs": "AST 180 U/L and ALT 165 U/L (modest hepatocellular elevation, AST:ALT ~1.1); ALP 190 and GGT 240 (mildly elevated); an acute ischemic-hepatitis pattern can also be seen with rapid outflow obstruction.",
+      "Bilirubin": "Total bilirubin 3.1 mg/dL (direct 2.0), mildly-to-moderately elevated; albumin 3.3 g/dL (low-normal).",
+      "RenalAndLytes": "Na 137, K 4.4, Cl 102, HCO3 23 (anion gap = 137 − (102 + 23) = 12, normal). Creatinine 1.4 mg/dL (baseline 0.7) — a mild AKI; this is a SEPARATE problem, most consistent with NSAID-induced/pre-renal injury on top of the intravascular changes, NOT part of the liver process.",
+      "Coags": "INR 1.5 and PT mildly prolonged (early impaired hepatic synthetic function); fibrinogen normal; despite this 'bleeding' lab the patient is paradoxically PROTHROMBOTIC — the INR reflects liver synthetic dysfunction, not a low clotting risk.",
+      "AscitesFluid": "Diagnostic paracentesis: serum albumin 3.3 − ascites albumin 1.9 = SAAG 1.4 g/dL (HIGH, ≥1.1 → portal hypertension) WITH a HIGH ascitic total protein 3.4 g/dL (>2.5) — the high-SAAG/high-protein pattern of POST-sinusoidal/hepatic outflow obstruction (also seen in cardiac ascites), so it does NOT by itself separate Budd-Chiari from a cardiac cause.",
+      "DopplerUS": "Hepatic vein Doppler ultrasound: absent/reversed/turbulent flow in the hepatic veins with hepatic vein and proximal IVC thrombosis, caudate lobe hypertrophy, patent portal vein, and ascites; the right atrium and pericardium appear normal — CONFIRMS hepatic venous outflow obstruction and locates the block in the hepatic veins, not the heart.",
+      "Thrombophilia": "JAK2 V617F mutation POSITIVE (confirms the occult myeloproliferative neoplasm driving the erythrocytosis/thrombocytosis); antiphospholipid antibodies and lupus anticoagulant sent given the recurrent miscarriages — establishes the underlying prothrombotic cause."
     }
   },
   "images": {
@@ -35,39 +37,42 @@
       "asset": null,
       "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~104 bpm with low QRS voltage in the limb leads from the large-volume ascites; no acute ischemic changes.",
-      "verify": "Source a study matching: Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "findings": "Sinus tachycardia at ~104 bpm with diffusely LOW QRS voltage in the limb leads (large-volume ascites/raised diaphragms). CRUCIALLY there is NO right-heart strain pattern (no right-axis deviation, no dominant R in V1, no S1Q3T3, no V1–V3 T-wave inversions) and NO electrical alternans — so the EKG does NOT support a primary right-heart or pericardial cause of the congestion.",
+      "verify": "Source a study matching: sinus tachycardia with low limb-lead QRS voltage, NO right-heart strain pattern, NO electrical alternans. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia with low limb-lead voltage",
+      "imageDescription": "12-lead showing sinus tachycardia with low limb-lead voltage and no right-heart strain or electrical alternans",
       "searchTerms": [
         "sinus tachycardia ECG",
         "low voltage QRS limb leads ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 45-year-old woman with marked abdominal distension has sinus tachycardia and low limb-lead voltage from large-volume ascites."
+      "clinicalVignette": "A 32-year-old woman with marked abdominal distension has sinus tachycardia and low limb-lead voltage; there is no right-heart strain pattern and no electrical alternans."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Elevated hemidiaphragms with low lung volumes from abdominal distension and a small right pleural effusion (hepatic hydrothorax); no consolidation.",
-      "verify": "Source a study matching: Elevated hemidiaphragms with low lung volumes and a small right pleural effusion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Elevated hemidiaphragms with low lung volumes from abdominal distension and a small right pleural effusion (hepatic hydrothorax); the cardiac silhouette is NORMAL in size with no pericardial calcification or globular/water-bottle contour; no consolidation.",
+      "verify": "Source a study matching: elevated hemidiaphragms with low lung volumes, a small right pleural effusion, and a normal-sized cardiac silhouette without pericardial calcification. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph with elevated hemidiaphragms and small right pleural effusion",
+      "imageDescription": "chest radiograph with elevated hemidiaphragms, small right pleural effusion, and a normal cardiac silhouette",
       "searchTerms": [
         "small right pleural effusion chest x-ray",
         "elevated hemidiaphragm low lung volumes radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 48-year-old woman with abdominal swelling and breathlessness has elevated hemidiaphragms and a small right pleural effusion."
+      "clinicalVignette": "A young woman with abdominal swelling has elevated hemidiaphragms and a small right pleural effusion with a normal-sized heart."
     }
   },
   "revealKeys": [
+    "CBC",
     "LFTs",
     "Bilirubin",
-    "INR",
+    "RenalAndLytes",
+    "Coags",
     "AscitesFluid",
     "DopplerUS",
     "Thrombophilia",
@@ -84,46 +89,55 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this new-onset ascites and hepatomegaly (note your leading diagnosis).",
-      "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction) (leading,7). Acute/fulminant viral or toxic hepatitis (CANT-MISS to exclude,4). Cirrhosis with decompensation / portal vein thrombosis (CANT-MISS,3). Right-heart failure / constrictive pericarditis (CANT-MISS,3). Malignancy with hepatic vein invasion (e.g., HCC) or peritoneal disease (core,3). Names hepatic venous outflow obstruction with the triad of abdominal pain, ascites, and tender hepatomegaly in a prothrombotic young woman (core,5).",
-      "idealAnswer": "Leading diagnosis: Budd-Chiari syndrome (hepatic venous outflow obstruction). Must-not-miss diagnoses to exclude: Acute/fulminant viral or toxic hepatitis; Cirrhosis with decompensation / portal vein thrombosis; Right-heart failure / constrictive pericarditis. Also reasonable: Malignancy with hepatic vein invasion (e.g., HCC) or peritoneal carcinomatosis.",
+      "prompt": "Based on your history and physical, list your differential for this new-onset ascites and tender hepatomegaly (note your leading diagnosis). Two diagnoses genuinely compete here — a hepatic outflow problem versus a right-heart/pericardial cause of congestion; address how you would tell them apart. Also name three distinct etiologies or mechanisms that can produce hepatic venous outflow obstruction.",
+      "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction) (leading,6). Congestive hepatopathy from right-heart failure / constrictive pericarditis — the genuine competitor producing ascites + tender hepatomegaly + edema (CANT-MISS, co-leading,5). Acute/fulminant viral or toxic hepatitis (CANT-MISS,3). Cirrhosis with decompensation / portal vein thrombosis (CANT-MISS,2). Malignancy with hepatic vein invasion (e.g., HCC) or peritoneal disease (core,2). States the discriminator — JVP/hepatojugular reflux/cardiac exam and hepatic-vein Doppler separate a cardiac cause from outflow obstruction (core,3). Names THREE etiologies/mechanisms of hepatic venous outflow obstruction, e.g. myeloproliferative neoplasm (JAK2), oral-contraceptive/pregnancy hypercoagulability, antiphospholipid syndrome, inherited thrombophilia (factor V Leiden), IVC web/membranous obstruction, or tumor compression (core,4). PENALTY: collapsing the two competitors into one and not planning to distinguish cardiac from hepatic congestion (-3).",
+      "idealAnswer": "Leading diagnosis: Budd-Chiari syndrome (hepatic venous outflow obstruction). The genuine competitor is congestive hepatopathy from right-heart failure or constrictive pericarditis, which produces the same triad of ascites, tender hepatomegaly, and leg edema (and the same high-SAAG/high-protein ascites). Distinguish them at the bedside and with imaging: a NORMAL JVP with no hepatojugular reflux/Kussmaul sign and a normal cardiac exam point away from a cardiac cause, and hepatic-vein Doppler localizes the block to the hepatic veins. Other must-not-miss diagnoses: acute/fulminant viral or toxic hepatitis; cirrhosis with decompensation / portal vein thrombosis. Also reasonable: malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis. Three etiologies/mechanisms of hepatic venous outflow obstruction: (1) a myeloproliferative neoplasm (e.g., JAK2 V617F-positive polycythemia vera/essential thrombocythemia); (2) estrogen-related hypercoagulability (combined oral contraceptive use or pregnancy); (3) antiphospholipid syndrome or an inherited thrombophilia such as factor V Leiden — other mechanisms include an IVC web/membranous obstruction or tumor compression.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Budd-Chiari syndrome (hepatic venous outflow obstruction)",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Congestive hepatopathy from right-heart failure / constrictive pericarditis (the competing cause of ascites + tender hepatomegaly)",
+            "points": 5
           },
           {
             "item": "Acute/fulminant viral or toxic hepatitis",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Cirrhosis with decompensation / portal vein thrombosis",
-            "points": 3
-          },
-          {
-            "item": "Right-heart failure / constrictive pericarditis",
-            "points": 3
+            "points": 2
           }
         ],
         "coreActions": [
           {
             "item": "Malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis",
+            "points": 2
+          },
+          {
+            "item": "States the discriminator: JVP/hepatojugular reflux/cardiac exam + hepatic-vein Doppler separate a cardiac cause from outflow obstruction",
             "points": 3
           },
           {
-            "item": "Names hepatic venous outflow obstruction with the triad of pain, ascites, and tender hepatomegaly in a prothrombotic young woman",
-            "points": 5
+            "item": "Names THREE etiologies/mechanisms of hepatic venous outflow obstruction (MPN/JAK2, estrogen/OCP or pregnancy, antiphospholipid or inherited thrombophilia, IVC web, tumor)",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Collapses the two competitors into one and does not plan to distinguish cardiac from hepatic congestion",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Congestive hepatopathy from right-heart failure / constrictive pericarditis",
         "Acute/fulminant viral or toxic hepatitis",
-        "Cirrhosis with decompensation / portal vein thrombosis",
-        "Right-heart failure / constrictive pericarditis"
+        "Cirrhosis with decompensation / portal vein thrombosis"
       ],
       "acceptableAlternatives": [
         "Malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis"
@@ -134,9 +148,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "Hepatic vein/IVC Doppler ultrasound — first-line imaging for outflow obstruction (CANT-MISS,4). Diagnostic paracentesis with SAAG and ascitic protein (CANT-MISS,3). LFTs, bilirubin, INR/albumin — pattern and synthetic function (2). CBC and thrombophilia workup incl. JAK2 V617F and antiphospholipid antibodies (CANT-MISS,3). Viral hepatitis serologies / acetaminophen level to exclude other hepatocellular injury (2). Echocardiogram if right-heart failure suspected (1). PENALTY: anchoring on simple cirrhosis and not imaging the hepatic veins (-2).",
-      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; INR; Ascites fluid; Doppler US; Thrombophilia.",
+      "prompt": "What initial workup do you want to order? Order what you need to both confirm hepatic outflow obstruction AND exclude a cardiac cause of the congestion.",
+      "rubric": "Hepatic vein/IVC Doppler ultrasound — first-line imaging for outflow obstruction (CANT-MISS,4). Diagnostic paracentesis with SAAG and ascitic protein (CANT-MISS,3). CBC and thrombophilia workup incl. JAK2 V617F and antiphospholipid antibodies (CANT-MISS,3). LFTs/bilirubin/INR/albumin and a renal/electrolyte panel (the creatinine and NSAID effect) (2). Echocardiogram to exclude constrictive pericarditis / right-heart failure as the cause of congestion (2). Viral hepatitis serologies / acetaminophen level (1). PENALTY: anchoring on simple cirrhosis and not imaging the hepatic veins (-2); not ordering anything to exclude a cardiac cause (-1).",
+      "idealAnswer": "Order: EKG; CXR; CBC; LFTs; Bilirubin; renal/electrolyte panel (the AKI is its own problem); coags/INR; ascites fluid for SAAG and total protein; hepatic vein/IVC Doppler ultrasound; thrombophilia workup including JAK2 V617F and antiphospholipid antibodies. Add an echocardiogram to exclude constrictive pericarditis/right-heart failure, and viral hepatitis serologies plus an acetaminophen level.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -156,26 +170,26 @@
         "coreActions": [
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "LFTs",
-            "points": 2
+            "item": "CBC (erythrocytosis/thrombocytosis)",
+            "points": 1
           },
           {
-            "item": "Bilirubin",
-            "points": 2
+            "item": "LFTs / bilirubin / INR / albumin",
+            "points": 1
           },
           {
-            "item": "INR",
-            "points": 2
+            "item": "Renal and electrolyte panel (the AKI)",
+            "points": 1
           },
           {
-            "item": "Ascites fluid",
+            "item": "Echocardiogram to exclude constriction / right-heart failure",
             "points": 2
           }
         ],
@@ -192,7 +206,9 @@
         "Diagnostic paracentesis with SAAG and ascitic protein",
         "Thrombophilia workup including JAK2 V617F"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Echocardiogram to exclude constriction / right-heart failure"
+      ],
       "contraindicatedTests": [
         "anchoring on simple cirrhosis and not imaging the hepatic veins"
       ],
@@ -204,32 +220,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia with low limb-lead voltage from large-volume ascites; no acute ischemia. CREDIT: rate & rhythm (sinus tachycardia) (7); recognizes low voltage and attributes it to body habitus/effusion/ascites rather than cardiac pathology, and notes no acute ischemia (5); systematic read (3). PENALTY: over-calling ischemia or pericardial disease without correlation (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings, and say what they add to the cardiac-versus-hepatic question.",
+      "rubric": "Findings = sinus tachycardia (~104 bpm) with diffusely low QRS voltage in the limb leads from the large-volume ascites/raised diaphragms; NO right-heart strain pattern (no right-axis, no dominant R in V1, no S1Q3T3, no V1–V3 TWI) and NO electrical alternans. CREDIT: rate & rhythm — sinus tachycardia (4); recognizes low limb-lead voltage and attributes it to ascites/body habitus rather than primary cardiac pathology (4); explicitly notes the ABSENCE of a right-heart strain pattern and electrical alternans, and concludes the EKG does NOT support a cardiac/pericardial cause of the congestion (5); systematic read (2). PENALTY: over-calling right-heart strain or pericardial disease and pivoting to a cardiac cause without correlation (-3).",
       "keyFindings": [
-        "sinus tachycardia",
-        "low QRS voltage in the limb leads attributable to ascites/effusion"
+        "sinus tachycardia ~104 bpm",
+        "low QRS voltage in the limb leads attributable to ascites/raised diaphragms",
+        "no right-heart strain pattern and no electrical alternans, so no support for a cardiac cause"
       ],
       "criticalFindings": [
-        "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes."
+        "Sinus tachycardia with low limb-lead QRS voltage; NO right-heart strain pattern and NO electrical alternans, so the EKG does not support a primary right-heart or pericardial cause of the congestion."
       ],
       "commonMistakes": [
-        "calling low voltage a primary cardiac/pericardial process without clinical correlation"
+        "over-calling low voltage or a fast rate as right-heart strain and pivoting to a cardiac cause",
+        "calling the low voltage electrical alternans / tamponade without correlation"
       ],
-      "idealAnswer": "Sinus tachycardia with low QRS voltage in the limb leads (large-volume ascites/effusion); no acute ischemic changes.",
+      "idealAnswer": "Sinus tachycardia at ~104 bpm with diffusely low QRS voltage in the limb leads, best explained by the large-volume ascites and raised diaphragms rather than a primary cardiac process. Importantly there is NO right-heart strain pattern (no right-axis deviation, no dominant R in V1, no S1Q3T3, no V1–V3 T-wave inversions) and NO electrical alternans. So the EKG argues AGAINST right-heart failure or pericardial tamponade as the cause of her congestion and keeps the focus on a hepatic outflow problem.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes."
+          "Sinus tachycardia with low limb-lead QRS voltage; NO right-heart strain pattern and NO electrical alternans, so the EKG does not support a primary right-heart or pericardial cause of the congestion."
         ],
         "coreActions": [
-          "sinus tachycardia",
-          "low QRS voltage in the limb leads attributable to ascites/effusion"
+          "sinus tachycardia ~104 bpm",
+          "low QRS voltage in the limb leads attributable to ascites/raised diaphragms",
+          "no right-heart strain pattern and no electrical alternans, so no support for a cardiac cause"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "over-reads low voltage/tachycardia as right-heart strain or tamponade and pivots to a cardiac cause",
             "points": -3
           }
         ]
@@ -242,31 +261,34 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = elevated hemidiaphragms with low lung volumes and a small right pleural effusion (hepatic hydrothorax); no consolidation. CREDIT: identifies the small effusion / elevated hemidiaphragms (6); links it to the abdominal distension / hepatic hydrothorax (4). PENALTY: inventing consolidation/pneumonia (-2).",
+      "rubric": "Findings = elevated hemidiaphragms with low lung volumes and a small right pleural effusion (hepatic hydrothorax); NORMAL-sized cardiac silhouette with no pericardial calcification; no consolidation. CREDIT: identifies the small effusion / elevated hemidiaphragms (5); links it to the abdominal distension / hepatic hydrothorax and notes the normal-sized heart with no pericardial calcification (argues against constriction/effusion) (4); systematic read (1). PENALTY: inventing consolidation/pneumonia (-3).",
       "keyFindings": [
         "small right pleural effusion",
-        "elevated hemidiaphragms with low lung volumes from ascites"
+        "elevated hemidiaphragms with low lung volumes from ascites",
+        "normal-sized cardiac silhouette with no pericardial calcification"
       ],
       "criticalFindings": [
-        "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+        "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax) and a normal-sized cardiac silhouette without pericardial calcification."
       ],
       "commonMistakes": [
-        "mistaking the small effusion or raised diaphragm for basal consolidation"
+        "mistaking the small effusion or raised diaphragm for basal consolidation",
+        "missing that the heart size is normal, which argues against a cardiac cause"
       ],
-      "idealAnswer": "Elevated hemidiaphragms with low lung volumes and a small right pleural effusion (hepatic hydrothorax); lungs otherwise clear.",
+      "idealAnswer": "Elevated hemidiaphragms with low lung volumes and a small right pleural effusion (hepatic hydrothorax); the cardiac silhouette is normal in size with no pericardial calcification or globular contour, which argues against a large effusion or constrictive pericarditis; lungs are otherwise clear.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+          "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax) and a normal-sized cardiac silhouette without pericardial calcification."
         ],
         "coreActions": [
           "small right pleural effusion",
-          "elevated hemidiaphragms with low lung volumes from ascites"
+          "elevated hemidiaphragms with low lung volumes from ascites",
+          "normal-sized cardiac silhouette with no pericardial calcification"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the abnormality / invents consolidation",
             "points": -3
           }
         ]
@@ -276,9 +298,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Doppler shows absent/reversed flow in the hepatic veins with caudate lobe hypertrophy, ascites is a high-SAAG high-protein fluid, and JAK2 V617F is positive. What is your diagnosis and what did you rule out?",
-      "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction), with an underlying myeloproliferative neoplasm (JAK2-positive) as the prothrombotic driver (6). Cites the Doppler outflow obstruction plus the high-SAAG/high-protein ascites; explicitly excludes simple cirrhosis, viral/toxic hepatitis, and right-heart failure (4).",
-      "idealAnswer": "Budd-Chiari syndrome (hepatic venous outflow obstruction), with the JAK2 V617F-positive myeloproliferative neoplasm as the prothrombotic driver: supported by the Doppler outflow obstruction with caudate hypertrophy and the high-SAAG/high-protein ascites. Ruled out simple cirrhosis, viral/toxic hepatitis, and right-heart failure/constrictive pericarditis.",
+      "prompt": "Doppler shows absent/reversed flow in the hepatic veins with caudate lobe hypertrophy and a normal right atrium/pericardium, the ascites is high-SAAG/high-protein, the CBC shows erythrocytosis with thrombocytosis, and JAK2 V617F is positive. The EKG showed no right-heart strain and the heart size is normal on CXR. What is your diagnosis, what did you rule out, and what residual uncertainty remains?",
+      "rubric": "Budd-Chiari syndrome (hepatic venous outflow obstruction) driven by a JAK2 V617F-positive myeloproliferative neoplasm (the erythrocytosis + thrombocytosis), with the combined oral contraceptive as an added prothrombotic hit (6). Cites the Doppler outflow obstruction plus the high-SAAG/high-protein ascites, and explicitly uses the normal JVP/cardiac exam, the EKG without right-heart strain, and the normal heart size to EXCLUDE the competing cardiac cause (constrictive pericarditis / right-heart failure); also excludes simple cirrhosis and viral/toxic hepatitis (3). Names the residual uncertainty — antiphospholipid antibodies pending given recurrent miscarriages, and bone-marrow/hematology confirmation of the specific MPN still needed (1).",
+      "idealAnswer": "Budd-Chiari syndrome (hepatic venous outflow obstruction), driven by a JAK2 V617F-positive myeloproliferative neoplasm — the erythrocytosis and thrombocytosis are the giveaway — with the estrogen-containing oral contraceptive as an additional prothrombotic hit. It is supported by the hepatic-vein Doppler outflow obstruction with caudate hypertrophy and the high-SAAG/high-protein ascites. I have ruled OUT the genuine competitor, a cardiac cause of congestion (constrictive pericarditis / right-heart failure), using the normal JVP with no hepatojugular reflux, the EKG with no right-heart strain or electrical alternans, the normal-sized heart with no pericardial calcification, and the Doppler showing a normal right atrium/pericardium with the block localized to the hepatic veins; I have also excluded simple cirrhosis and viral/toxic hepatitis. Residual uncertainty: the antiphospholipid antibody panel and lupus anticoagulant are still pending (her two miscarriages raise antiphospholipid syndrome, which could coexist), and hematology/bone-marrow evaluation is needed to pin down the exact myeloproliferative neoplasm.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -287,9 +309,9 @@
         "penalties": []
       },
       "mustNotMiss": [
+        "Congestive hepatopathy from right-heart failure / constrictive pericarditis",
         "Cirrhosis with decompensation / portal vein thrombosis",
-        "Acute/fulminant viral or toxic hepatitis",
-        "Right-heart failure / constrictive pericarditis"
+        "Acute/fulminant viral or toxic hepatitis"
       ],
       "acceptableAlternatives": [
         "Malignancy with hepatic vein invasion (HCC) or peritoneal carcinomatosis"
@@ -299,60 +321,75 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH approach to hepatic venous outflow obstruction: start anticoagulation promptly (heparin then long-term) once bleeding is excluded (CANT-MISS,7); identify and treat the underlying prothrombotic disorder / MPN with hematology (4); manage ascites with sodium restriction and diuretics +/- therapeutic paracentesis (4); stepwise escalation — angioplasty/stenting or TIPS for refractory disease, transplant for fulminant failure (4); hepatology +/- interventional radiology consult (3); stop the oral contraceptive and avoid further prothrombotic exposures (3). PENALTY: anticoagulating in the face of active variceal/GI bleeding without addressing it (-3); leaving the patient on the estrogen-containing contraceptive (-2).",
-      "idealAnswer": "Anticoagulation is the cornerstone: start heparin (transition to long-term anticoagulation) once active bleeding/varices are excluded. Identify and treat the underlying thrombophilia/myeloproliferative neoplasm with hematology. Manage ascites with sodium restriction, diuretics, and therapeutic paracentesis as needed. Escalate in a stepwise fashion: angioplasty/stenting of a focal stenosis or TIPS for refractory disease, and liver transplant for fulminant hepatic failure. Stop the estrogen-containing oral contraceptive. Hepatology and interventional radiology consults; admit.",
+      "prompt": "What is your management plan, including medication reconciliation and the disposition/safe-discharge decision for this patient?",
+      "rubric": "Per MGH approach to hepatic venous outflow obstruction: start anticoagulation promptly (heparin then long-term) once bleeding/varices are excluded (CANT-MISS,6); identify and treat the underlying MPN with hematology and manage the JAK2-driven erythrocytosis/thrombocytosis (cytoreduction/phlebotomy) (3); medication reconciliation — STOP the estrogen-containing oral contraceptive AND stop the daily naproxen (NSAID worsens the AKI and bleeding risk on anticoagulation) and review the herbal 'liver detox' supplement (CANT-MISS,4); manage ascites with sodium restriction and diuretics +/- therapeutic paracentesis, and address the AKI (3); stepwise escalation — angioplasty/stenting or TIPS for refractory disease, transplant for fulminant failure (2); hepatology +/- interventional radiology +/- hematology consults (2); disposition — ADMIT (do NOT discharge): unsafe to send home given a new prothrombotic diagnosis needing anticoagulation, AKI, and the need for MPN workup; counsel on smoking cessation and follow-up (CANT-MISS,5). PENALTY: discharging the patient home (-4); anticoagulating in the face of active variceal/GI bleeding without addressing it (-3); leaving the patient on the estrogen-containing contraceptive or continuing the NSAID alongside anticoagulation (-2).",
+      "idealAnswer": "ADMIT — this patient is NOT safe for discharge: she has a new prothrombotic diagnosis that needs to be anticoagulated, a mild AKI, and an unestablished myeloproliferative neoplasm. Anticoagulation is the cornerstone: start heparin (transition to long-term anticoagulation) once active bleeding/varices are excluded. Medication reconciliation is critical: STOP the estrogen-containing oral contraceptive (and it was contraindicated all along given her migraine with aura), STOP the daily naproxen (it is worsening her AKI and will add bleeding risk on anticoagulation), and review/stop the unregulated herbal 'liver detox/green tea extract' supplement. Engage hematology to treat the underlying MPN (cytoreduction and/or therapeutic phlebotomy for the erythrocytosis/thrombocytosis). Manage ascites with sodium restriction, diuretics, and therapeutic paracentesis as needed, and treat the AKI (hold nephrotoxins, gentle volume management). Escalate stepwise: angioplasty/stenting of a focal stenosis or TIPS for refractory disease, and liver transplant for fulminant hepatic failure. Hepatology, interventional radiology, and hematology consults. Counsel on smoking cessation (adds to her thrombotic risk) and arrange close hepatology/hematology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Anticoagulation once bleeding excluded",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Medication reconciliation: stop the estrogen OCP AND the daily NSAID (and review the herbal supplement)",
+            "points": 4
+          },
+          {
+            "item": "Admit; do NOT discharge — unsafe given new prothrombotic dx needing anticoagulation, AKI, and MPN workup; arrange follow-up and smoking cessation",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Identify and treat the underlying prothrombotic disorder / MPN",
-            "points": 4
+            "item": "Identify and treat the underlying MPN with hematology (cytoreduction/phlebotomy)",
+            "points": 3
           },
           {
-            "item": "Manage ascites (sodium restriction, diuretics, therapeutic paracentesis)",
-            "points": 4
+            "item": "Manage ascites (sodium restriction, diuretics, therapeutic paracentesis) and address the AKI",
+            "points": 3
           },
           {
             "item": "Stepwise escalation (angioplasty/stent or TIPS; transplant for fulminant failure)",
-            "points": 4
+            "points": 2
           },
           {
-            "item": "Hepatology +/- interventional radiology consult",
-            "points": 3
-          },
-          {
-            "item": "Stop the estrogen-containing oral contraceptive",
-            "points": 3
+            "item": "Hepatology +/- interventional radiology +/- hematology consult",
+            "points": 2
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
+            "item": "Discharging the patient home",
+            "points": -4
+          },
+          {
             "item": "Anticoagulating with active variceal/GI bleed without addressing it",
             "points": -3
+          },
+          {
+            "item": "Leaving the patient on the estrogen OCP or continuing the NSAID alongside anticoagulation",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Anticoagulation once bleeding excluded"
+        "Anticoagulation once bleeding excluded",
+        "Admit; do NOT discharge — unsafe given new prothrombotic dx needing anticoagulation, AKI, and MPN workup"
       ],
       "optionalActions": [
-        "Identify and treat the underlying prothrombotic disorder / MPN",
-        "Manage ascites (sodium restriction, diuretics, therapeutic paracentesis)",
+        "Medication reconciliation: stop the estrogen OCP AND the daily NSAID (and review the herbal supplement)",
+        "Identify and treat the underlying MPN with hematology (cytoreduction/phlebotomy)",
+        "Manage ascites (sodium restriction, diuretics, therapeutic paracentesis) and address the AKI",
         "Stepwise escalation (angioplasty/stent or TIPS; transplant for fulminant failure)",
-        "Hepatology +/- interventional radiology consult",
-        "Stop the estrogen-containing oral contraceptive",
+        "Hepatology +/- interventional radiology +/- hematology consult",
         "Surveillance for hepatocellular carcinoma and varices over time"
       ],
       "unsafeActions": [
-        "Anticoagulating with active variceal/GI bleed without addressing it"
+        "Discharging the patient home",
+        "Anticoagulating with active variceal/GI bleed without addressing it",
+        "Leaving the patient on the estrogen OCP or continuing the NSAID alongside anticoagulation"
       ],
       "consults": [
         "Hepatology",
@@ -375,12 +412,15 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "obstetric_history",
-      "contraception"
+      "contraception",
+      "smoking",
+      "over_the_counter_medications"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "32-year-old woman, uncomfortable from a distended abdomen, anxious about the swelling. Good historian once asked.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (OCP, miscarriages, smoking, NSAID/supplement use, family clotting) unless directly asked",
+      "Do not reveal the cardiac/breathing negatives unless asked about breathing, lying flat, chest pain, or the heart is examined",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -396,7 +436,7 @@
         "how long",
         "duration"
       ],
-      "response": "The belly swelling and the ache on the right side came on gradually over about three weeks, and my legs started swelling in the last week.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -410,7 +450,7 @@
         "character",
         "quality of the pain"
       ],
-      "response": "It's a dull, constant ache up under my right ribs, and my belly feels tight and full. I get full quickly when I eat.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -424,10 +464,28 @@
         "anything else",
         "nausea or vomiting"
       ],
-      "response": "I've felt a bit nauseous and my appetite is poor. No vomiting. I've noticed my eyes look a little yellow.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "cardiopulmonary_review",
+      "category": "ros",
+      "triggerConcepts": [
+        "shortness of breath",
+        "breathing",
+        "lying flat",
+        "orthopnea",
+        "wake up gasping",
+        "chest pain",
+        "palpitations",
+        "exercise tolerance"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
     },
     {
       "id": "contraception",
@@ -440,9 +498,40 @@
         "estrogen",
         "hormones"
       ],
-      "response": "Yes, I started a combined birth control pill about eight months ago. I take it every day.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications_otc",
+      "category": "meds",
+      "triggerConcepts": [
+        "what medications do you take",
+        "any painkillers",
+        "naproxen or ibuprofen",
+        "over the counter",
+        "supplements",
+        "herbal",
+        "headaches treatment"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "migraine_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "headaches",
+        "migraine",
+        "aura",
+        "visual symptoms before headache"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -455,7 +544,7 @@
         "ever been pregnant",
         "pregnancy losses"
       ],
-      "response": "I've had two early miscarriages, both in the first few months. We've never had a successful pregnancy.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -470,9 +559,23 @@
         "thrombosis family",
         "thick blood family"
       ],
-      "response": "My sister has had blood clots in her legs, and my brother was told he has some kind of 'thick blood' disorder.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "smoking_history",
+      "category": "social",
+      "triggerConcepts": [
+        "smoking",
+        "cigarettes",
+        "tobacco",
+        "do you smoke"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -486,7 +589,7 @@
         "hematemesis",
         "GI bleeding"
       ],
-      "response": "No, I haven't had any black or bloody stools, and I've never vomited blood.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -501,9 +604,9 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "I barely drink — maybe a couple of glasses of wine in a whole month.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -517,7 +620,7 @@
         "sleepy",
         "encephalopathy"
       ],
-      "response": "No, my thinking is clear. I haven't been confused or unusually sleepy.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -533,7 +636,7 @@
         "transfusions",
         "risk factors hepatitis"
       ],
-      "response": "No known liver problems, no hepatitis that I'm aware of, no IV drugs, no tattoos, and no blood transfusions.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -563,8 +666,29 @@
       "normalIfNotPresent": "No ascites."
     },
     {
-      "id": "assess_edema_finding_3",
-      "finding": "Extremities: bilateral lower-extremity pitting edema.",
+      "id": "assess_jvp_finding_3",
+      "finding": "JVP is NOT elevated and there is no hepatojugular reflux / Kussmaul sign — argues against right-heart failure or constrictive pericarditis as the cause of the congestion.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "critical",
+      "points": 4,
+      "normalIfNotPresent": "JVP not elevated; no hepatojugular reflux."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_4",
+      "finding": "Cardiac: normal S1/S2, no pericardial knock, no pericardial rub, no murmur, no S3 — no bedside evidence of a cardiac cause of the congestion.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_with_bell"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal heart sounds; no rub, knock, or murmur."
+    },
+    {
+      "id": "assess_edema_finding_5",
+      "finding": "Extremities: bilateral lower-extremity pitting edema; no calf cords or unilateral swelling.",
       "revealedBy": [
         "assess_edema"
       ],
@@ -573,8 +697,8 @@
       "normalIfNotPresent": "No peripheral edema."
     },
     {
-      "id": "inspect_sclera_finding_4",
-      "finding": "General: mild scleral icterus.",
+      "id": "inspect_sclera_finding_6",
+      "finding": "General: mild scleral icterus; plethoric (ruddy) facial complexion.",
       "revealedBy": [
         "inspect_sclera",
         "assess_for_jaundice"
@@ -584,7 +708,7 @@
       "normalIfNotPresent": "No jaundice."
     },
     {
-      "id": "assess_asterixis_finding_5",
+      "id": "assess_asterixis_finding_7",
       "finding": "Neuro: alert and oriented; NO asterixis (no encephalopathy).",
       "revealedBy": [
         "assess_asterixis"
@@ -604,53 +728,65 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Budd-Chiari syndrome",
-    "diagnosticFramework": "32F on combined oral contraceptives presents with 3 weeks of progressive abdominal distension, right upper quadrant pain, and leg swelling. The diagnosis is Budd-Chiari syndrome (hepatic venous outflow obstruction), reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "32F on a combined oral contraceptive, with migraine-with-aura and heavy recent NSAID use, presents with 3 weeks of progressive abdominal distension, RUQ pain, and leg swelling. The diagnosis is Budd-Chiari syndrome (hepatic venous outflow obstruction) driven by a JAK2 V617F-positive myeloproliferative neoplasm, with the estrogen pill as an added prothrombotic hit. The case turns on resolving a genuine fork between a hepatic outflow cause and a right-heart/pericardial (cardiac) cause of the same triad, using the JVP/cardiac exam, an EKG without right-heart strain, a normal-sized heart on CXR, and hepatic-vein Doppler. Multi-system labs (erythrocytosis + thrombocytosis, a mild NSAID-related AKI, and the hepatic/synthetic abnormalities) must be parsed as separate problems.",
     "keyHistoryClues": [
-      "Combined oral contraceptive use (prothrombotic exposure)",
+      "Combined estrogen-containing oral contraceptive use (prothrombotic exposure, and contraindicated given migraine with aura)",
       "Two first-trimester pregnancy losses (possible antiphospholipid syndrome)",
       "Family history of venous thrombosis and a 'thick blood' disorder (inherited/myeloproliferative thrombophilia)",
+      "Heavy over-the-counter naproxen use and a herbal 'liver detox' supplement (confounders for the AKI and bleeding risk)",
+      "Cardiopulmonary review negative (no orthopnea/PND/chest pain) — argues against a primary cardiac cause",
       "Subacute triad of abdominal pain, distension/ascites, and tender hepatomegaly"
     ],
     "keyPhysicalExamFindings": [
       "Abdomen: tender, smooth hepatomegaly in the RUQ.",
       "Abdomen: tense ascites with shifting dullness and a positive fluid wave if examined.",
+      "JVP is NOT elevated and there is no hepatojugular reflux / Kussmaul sign — argues against a cardiac cause.",
+      "Cardiac: normal S1/S2, no pericardial knock, rub, or murmur.",
       "Extremities: bilateral lower-extremity pitting edema.",
-      "General: mild scleral icterus."
+      "General: mild scleral icterus; plethoric complexion."
     ],
     "keyDiagnosticFindings": [
+      "CBC",
       "LFTs",
       "Bilirubin",
-      "INR",
+      "RenalAndLytes",
+      "Coags",
       "AscitesFluid",
       "DopplerUS",
       "Thrombophilia"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Budd-Chiari syndrome while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Budd-Chiari syndrome and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the OCP, NSAID/supplement use, smoking, obstetric and family clotting history only on direct questioning, and the cardiopulmonary negatives.",
+      "Perform the targeted physical exam, including the JVP and cardiac exam to test the cardiac-versus-hepatic fork.",
+      "Build a differential with Budd-Chiari and congestive hepatopathy (right-heart failure / constrictive pericarditis) as genuine competitors, name three etiologies of outflow obstruction, and plan how to distinguish them.",
+      "Order a focused workup (hepatic-vein Doppler, paracentesis, JAK2/thrombophilia, plus an echocardiogram to exclude constriction), and interpret the EKG/CXR and the multi-system labs as separate problems.",
+      "Commit to Budd-Chiari from a JAK2-positive MPN, exclude the cardiac cause, and manage with anticoagulation, medication reconciliation, MPN treatment, ascites/AKI management, consults, and admission (not discharge)."
     ],
     "commonPitfalls": [
+      "Collapsing the cardiac and hepatic causes of congestion into one and never checking the JVP or hepatic-vein Doppler",
       "Anchoring on simple cirrhosis and never imaging the hepatic veins",
+      "Reading the high-SAAG/high-protein ascites as proof of Budd-Chiari when it is equally consistent with cardiac ascites",
       "Anticoagulating with active variceal/GI bleed without addressing it",
-      "Leaving the patient on the estrogen-containing oral contraceptive"
+      "Leaving the patient on the estrogen oral contraceptive or continuing the NSAID alongside anticoagulation",
+      "Discharging a patient who needs anticoagulation, AKI management, and an MPN workup"
     ],
     "managementPearls": [
       "Anticoagulation once bleeding excluded",
-      "Identify and treat the underlying prothrombotic disorder / MPN",
-      "Stepwise escalation (angioplasty/stent or TIPS; transplant for fulminant failure)"
+      "Medication reconciliation: stop the estrogen OCP and the daily NSAID",
+      "Identify and treat the underlying MPN with hematology (cytoreduction/phlebotomy)",
+      "Admit — do not discharge"
     ],
     "criticalHistoryItems": [
       "contraception",
+      "medications_otc",
       "obstetric_history",
       "family_clotting_history"
     ],
     "criticalExamItems": [
       "assess_hepatomegaly",
-      "assess_shifting_dullness"
+      "assess_shifting_dullness",
+      "assess_jvp"
     ],
     "criticalWorkupItems": [
       "Hepatic vein/IVC Doppler ultrasound",
@@ -658,24 +794,25 @@
       "Thrombophilia workup including JAK2 V617F"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes.",
-      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+      "Sinus tachycardia with low limb-lead QRS voltage; no right-heart strain pattern and no electrical alternans, so no support for a cardiac cause.",
+      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax) and a normal-sized cardiac silhouette."
     ],
     "criticalManagementItems": [
-      "Anticoagulation once bleeding excluded"
+      "Anticoagulation once bleeding excluded",
+      "Admit; do NOT discharge — unsafe given new prothrombotic dx needing anticoagulation, AKI, and MPN workup"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes.",
-      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+      "Sinus tachycardia with low limb-lead QRS voltage; no right-heart strain pattern and no electrical alternans.",
+      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax) and a normal-sized cardiac silhouette."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia with low limb-lead QRS voltage; no acute ischemic changes.",
-      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax)."
+      "Sinus tachycardia with low limb-lead QRS voltage; no right-heart strain pattern and no electrical alternans, so no support for a cardiac cause.",
+      "Small right pleural effusion with elevated hemidiaphragms (hepatic hydrothorax) and a normal-sized cardiac silhouette without pericardial calcification."
     ],
     "imageInterpretationPearls": [
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "On this EKG the load-bearing reads are the pertinent NEGATIVES: no right-heart strain and no electrical alternans, which steer away from a cardiac cause.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -705,8 +842,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated EKG read (cardiac-versus-hepatic fork)",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

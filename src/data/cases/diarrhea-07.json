@@ -2,71 +2,80 @@
   "id": "diarrhea-07",
   "category": "Diarrhea",
   "difficulty": "hard",
-  "title": "Watery diarrhea with episodic flushing",
+  "title": "Watery diarrhea and episodic flushing in a woman on multiple new medications",
   "diagnosis": "Carcinoid syndrome",
   "chart": {
     "ageSex": "58F",
     "cc": "Watery diarrhea and facial flushing",
-    "oneLiner": "58F presents with several months of watery, non-bloody diarrhea and episodic facial flushing, with intermittent wheezing and palpitations.",
+    "oneLiner": "58F with type 2 diabetes, hypothyroidism, and recently started on an SSRI for presumed menopausal vasomotor symptoms presents with several months of watery, non-bloody diarrhea and episodic facial flushing, with intermittent wheezing, palpitations, and exertional breathlessness.",
     "vitals": {
       "BP": "104/64",
-      "HR": "96",
+      "HR": "98",
       "RR": "18",
       "Temp": "37.0°C",
-      "SpO2": "97% RA"
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "For months now I keep getting these sudden bouts of watery diarrhea, and my face goes red and hot out of nowhere.",
-  "patientFile": "PERSONA: 58-year-old woman, mildly flushed across the face and upper chest, otherwise comfortable. Good historian, a little anxious about what is causing the spells.\n\nHPI: 4–6 months of recurrent WATERY, secretory, NON-bloody diarrhea (often 5–10 loose stools per day, sometimes waking her at night). Separate from the stools she gets sudden FLUSHING of the face, neck, and upper chest lasting a few minutes, with a warm, sometimes tingly feeling, occasional palpitations and lightheadedness. Spells can be triggered by red wine, aged cheese, large meals, and stress/exertion (only if asked about triggers). At times she gets WHEEZING/chest tightness with the flushing spells. ~8 lb unintentional weight loss. Vague intermittent right-sided abdominal fullness/cramping. NO bloody stools, NO recent antibiotics, NO travel, NO new medications, NO clear infectious contacts. NO heat intolerance, NO neck swelling, NO tremor (pertinent negatives against thyroid disease — only if asked).\nPMH: hypertension, mild. Was told years ago of a 'spot on the liver' on an ultrasound but never followed up (only if asked about prior imaging/liver). MEDS: amlodipine. No PPIs, no laxatives, no recent antibiotics. SOCIAL: occasional red wine (which seems to set off the spells); nonsmoker; lives with husband. FH: no known endocrine tumors or MEN syndromes (if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: intermittent flushing of the face, neck, and upper chest; a few fine telangiectasias over the cheeks.\n- Vitals: BP 104/64, HR 96, RR 18, 37.0°C, SpO2 97% RA.\n- Cardiac: a soft holosystolic murmur at the left lower sternal border that increases with inspiration (tricuspid regurgitation, carcinoid heart disease) if auscultated; JVP mildly elevated if assessed.\n- Pulmonary: occasional expiratory wheeze if examined during/after a spell.\n- Abdomen: mild RUQ fullness with a firm, mildly enlarged liver edge if examined; non-tender, no rebound.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the dietary/alcohol triggers, the prior 'liver spot,' family history, or the relationship between flushing and the diarrhea unless asked.\n- Hepatomegaly, the murmur, elevated JVP, and wheeze are revealed only if those areas are specifically examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "For months now I keep getting these sudden bouts of watery diarrhea, and my face goes red and hot out of nowhere — my last doctor thought it was just the change of life.",
+  "patientFile": "PERSONA: 58-year-old woman, mildly flushed across the face and upper chest, otherwise comfortable. Good historian, a little anxious and frustrated because she was told this was 'just menopause' and her new pill hasn't helped.\n\nHPI: 4–6 months of recurrent WATERY, secretory, NON-bloody diarrhea (often 5–10 loose stools per day, large-volume, sometimes waking her at night and persisting even when she does not eat — only if asked whether fasting helps). Separate from the stools she gets sudden FLUSHING of the face, neck, and upper chest lasting a few minutes, with a warm, sometimes tingly feeling, occasional palpitations and lightheadedness. Spells can be triggered by red wine, aged cheese, large meals, and stress/exertion (only if asked about triggers). At times she gets WHEEZING/chest tightness with the flushing spells. Over the last couple of months she has also become BREATHLESS climbing stairs and noticed her ankles swelling (only if asked about exertional symptoms/swelling). ~8 lb unintentional weight loss. A rough, scaly, darkened RASH has appeared on the backs of her hands and her neck, and she feels her memory is foggy (only if asked about skin or cognition — pellagra-like from niacin diversion). Vague intermittent right-sided abdominal fullness/cramping. NO bloody stools, NO recent antibiotics, NO travel, NO clear infectious contacts. NO heat intolerance, NO tremor, NO neck swelling (pertinent negatives against thyrotoxicosis — only if asked).\nKEY CONFOUNDERS (reveal only when the relevant area is asked): About 5 months ago, around when symptoms were starting, her primary care doctor diagnosed 'menopausal hot flashes' and started SERTRALINE (an SSRI); the flushing and diarrhea did NOT improve and arguably worsened. She also takes METFORMIN for diabetes (she wonders if 'the metformin upsets my stomach') and PANTOPRAZOLE for reflux. She does NOT think the diarrhea is clearly tied to the metformin because it persists when she skips doses and even overnight (only if asked). Was told years ago of a 'spot on the liver' on an ultrasound but never followed up (only if asked about prior imaging/liver).\nPMH: type 2 diabetes (well controlled), hypothyroidism on stable replacement, hypertension, GERD. MEDS: metformin, levothyroxine, sertraline (started ~5 months ago), pantoprazole, amlodipine. No laxatives, no recent antibiotics. SOCIAL: occasional red wine (which seems to set off the spells); nonsmoker; lives with husband; retired schoolteacher. FH: no known endocrine tumors or MEN syndromes; no medullary thyroid cancer or pheochromocytoma in the family (if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: intermittent flushing of the face, neck, and upper chest; a few fine telangiectasias over the cheeks.\n- Skin: rough, hyperpigmented, scaling plaques over the dorsal hands and a band around the neck (pellagra-like, niacin deficiency) if the skin is inspected.\n- Vitals: BP 104/64, HR 98, RR 18, 37.0°C, SpO2 96% RA.\n- Cardiac: a soft holosystolic murmur at the left lower sternal border that increases with inspiration (tricuspid regurgitation, carcinoid heart disease) if auscultated; JVP elevated with prominent v waves if assessed.\n- Pulmonary: occasional expiratory wheeze if examined during/after a spell.\n- Extremities: mild pitting pedal edema if examined (right-heart failure).\n- Abdomen: mild RUQ fullness with a firm, mildly enlarged, slightly nodular liver edge if examined; non-tender, no rebound.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the dietary/alcohol triggers, the SSRI/menopause backstory, the metformin/PPI, the prior 'liver spot,' family history, or the relationship between flushing and the diarrhea unless asked.\n- Do NOT volunteer that the diarrhea is secretory (persists with fasting / overnight) unless specifically asked whether fasting or stopping food helps.\n- Hepatomegaly, the murmur, elevated JVP, the pellagra rash, edema, and wheeze are revealed only if those areas are specifically examined.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Urine5HIAA": "24-hour urinary 5-HIAA (serotonin metabolite) MARKEDLY ELEVATED — clinches a serotonin-secreting neuroendocrine tumor.",
-      "ChromograninA": "Plasma chromogranin A elevated (neuroendocrine tumor marker; supportive, less specific).",
-      "Imaging": "CT abdomen/pelvis: ileal/mesenteric mass with multiple hypervascular LIVER METASTASES — the metastatic burden allowing serotonin to bypass hepatic first-pass and cause systemic syndrome.",
+      "Urine5HIAA": "24-hour urinary 5-HIAA (serotonin metabolite) MARKEDLY ELEVATED — clinches a serotonin-secreting neuroendocrine tumor (and, with a normal serum VIP, argues against VIPoma).",
+      "BMP": "Na 137, K 2.9, Cl 113, HCO3 17, BUN 22, Cr 0.9, glucose 142. Anion gap = 137 − (113 + 17) = 7 (normal/low). Picture: HYPOKALEMIA with a NON-anion-gap (hyperchloremic) metabolic acidosis from chronic large-volume secretory stool bicarbonate/potassium loss — a separate, dangerous problem to correct alongside the tumor work-up.",
+      "VIP_gastrin": "Fasting serum VIP NORMAL and fasting gastrin NORMAL — excludes the leading competitor VIPoma (Verner-Morrison) and gastrinoma as the cause of the secretory diarrhea.",
+      "ChromograninA": "Plasma chromogranin A elevated (neuroendocrine tumor marker; supportive, less specific; note PPI use can mildly raise it).",
+      "Niacin": "Serum niacin LOW with a pellagra-type dermatitis — tumor serotonin synthesis diverts dietary tryptophan away from niacin production (the 3 D's: dermatitis, diarrhea, dementia).",
+      "Imaging": "CT abdomen/pelvis: ileal/mesenteric mass with multiple hypervascular LIVER METASTASES — the metastatic burden allowing serotonin to bypass hepatic first-pass and cause the systemic syndrome.",
       "SSTRimaging": "68Ga-DOTATATE PET (somatostatin-receptor imaging) shows avid uptake in the primary and hepatic lesions — confirms a well-differentiated neuroendocrine tumor.",
-      "Echo": "Echocardiogram: thickened, retracted tricuspid leaflets with tricuspid regurgitation and right-heart involvement (carcinoid heart disease).",
-      "Workup": "Stool studies (cultures, C. difficile toxin, ova/parasites) NEGATIVE and TSH NORMAL — excludes infection and thyroid disease."
+      "Echo": "Echocardiogram: thickened, retracted, immobile tricuspid leaflets with severe tricuspid regurgitation and a dilated, pressure/volume-overloaded right ventricle (carcinoid heart disease).",
+      "Workup": "Stool studies (cultures, C. difficile toxin, ova/parasites) NEGATIVE, stool osmotic gap LOW (secretory pattern that persists with fasting), and TSH NORMAL on replacement — excludes infection, an osmotic/medication cause, and thyroid disease."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/right-ventricular-hypertrophy-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus rhythm with tall, peaked P waves in the inferior leads (P pulmonale) suggesting right atrial enlargement; no acute ischemia.",
-      "verify": "Source a study matching: sinus rhythm with peaked P waves / P pulmonale (right atrial enlargement); no acute ischemia. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 7,
+      "findings": "Sinus rhythm with tall, peaked P waves in the inferior leads (P pulmonale → right atrial enlargement), right-axis deviation, a dominant R wave in V1, and T-wave inversions in V1–V3 (right ventricular strain) — the cardiac signature of carcinoid heart disease, not acute ischemia.",
+      "verify": "Source a study matching: sinus rhythm with P pulmonale (right atrial enlargement), right-axis deviation, dominant R in V1 and right precordial (V1–V3) T-wave inversion = RVH/right-heart strain; no acute ischemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing peaked P waves (P pulmonale) of right atrial enlargement",
+      "imageDescription": "12-lead showing P pulmonale, right-axis deviation, dominant R in V1 and V1–V3 T-wave inversion (right heart strain / RVH)",
       "searchTerms": [
-        "P pulmonale ECG",
-        "right atrial enlargement peaked P waves"
+        "right ventricular hypertrophy ECG",
+        "P pulmonale right axis deviation V1 R wave",
+        "right heart strain T wave inversion V1 V3"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 60-year-old man with episodic flushing and chronic diarrhea has a tracing showing tall peaked inferior P waves."
+      "clinicalVignette": "A 58-year-old woman with months of flushing, secretory diarrhea, exertional breathlessness, and a tricuspid murmur has an EKG showing right atrial and right ventricular changes."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear lungs with mild prominence of the right heart border; no acute pulmonary process (right-heart involvement of carcinoid heart disease).",
-      "verify": "Source a study matching: clear lungs with subtle right heart border prominence / no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lungs with cardiomegaly and prominence of the right heart border (right atrial/ventricular enlargement of carcinoid heart disease); no acute pulmonary process or effusion.",
+      "verify": "Source a study matching: clear lungs, cardiomegaly with right heart border prominence (RA/RV enlargement), no acute process. Self-host with appropriate credit.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph with clear lungs and subtle right heart prominence",
+      "imageDescription": "chest radiograph with clear lungs and cardiomegaly / right heart border prominence",
       "searchTerms": [
-        "normal chest x-ray right heart border",
+        "cardiomegaly right heart border chest x-ray",
         "right atrial enlargement chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 63-year-old woman with recurrent flushing, watery diarrhea, and exertional breathlessness undergoes chest imaging during her evaluation."
+      "clinicalVignette": "A 58-year-old woman with recurrent flushing, watery diarrhea, ankle swelling, and exertional breathlessness undergoes chest imaging during her evaluation."
     }
   },
   "revealKeys": [
     "Urine5HIAA",
+    "BMP",
+    "VIP_gastrin",
     "ChromograninA",
+    "Niacin",
     "Imaging",
     "SSTRimaging",
     "Echo",
@@ -76,6 +85,7 @@
   ],
   "essential": [
     "Urine5HIAA",
+    "VIP_gastrin",
     "Imaging",
     "Workup"
   ],
@@ -84,49 +94,60 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this chronic diarrhea with flushing (note your leading diagnosis).",
-      "rubric": "Carcinoid syndrome / neuroendocrine tumor (leading,7). Must EXCLUDE infection incl. C. difficile and chronic infectious/secretory diarrhea (CANT-MISS,5). Other secretory/endocrine tumors — VIPoma, gastrinoma, medullary thyroid carcinoma, pheochromocytoma (core,3). Thyrotoxicosis (core,2). Idiopathic flushing / mastocytosis / menopausal vasomotor symptoms (core,2). Names a secretory diarrhea with flushing and the imperative to measure urinary 5-HIAA while excluding infection/thyroid disease (core,6).",
-      "idealAnswer": "Leading diagnosis: Carcinoid syndrome from a metastatic neuroendocrine tumor. Must-not-miss diagnoses to exclude: infectious/secretory diarrhea including C. difficile; other secretory endocrine tumors (VIPoma, gastrinoma, medullary thyroid carcinoma, pheochromocytoma). Also reasonable: thyrotoxicosis; idiopathic flushing / mastocytosis / menopausal flushing.",
+      "prompt": "Based on your history and physical, list your differential for this chronic large-volume diarrhea with episodic flushing (note your leading diagnosis, and which competitor you cannot yet distinguish from it on clinical grounds). Explicitly name three secretory/endocrine tumor mechanisms (hormones) that can produce a flushing-plus-diarrhea syndrome.",
+      "rubric": "Carcinoid syndrome / metastatic neuroendocrine tumor (leading,6). VIPoma (Verner-Morrison) is the genuine competing diagnosis — also causes large-volume SECRETORY diarrhea with flushing and cannot be separated from carcinoid on clinical grounds alone; both must head the list (CANT-MISS competitor,5). Must EXCLUDE infection incl. C. difficile and a medication cause — the recently started SSRI and the metformin (CANT-MISS,4). Names ≥3 secretory/endocrine tumor MECHANISMS/hormones (serotonin–carcinoid; VIP–VIPoma; gastrin–gastrinoma/ZES; calcitonin–medullary thyroid carcinoma; catecholamines–pheochromocytoma; histamine–mastocytosis) (core,4). Thyrotoxicosis (core,2). Menopausal vasomotor flushing / idiopathic flushing (the misleading prior label) (core,2). Recognizes the secretory nature (persists with fasting) and the imperative to measure urinary 5-HIAA AND serum VIP while excluding infection, drugs, and thyroid disease (core,2). PENALTY: anchoring on the menopause/SSRI label and stopping the work-up (-3).",
+      "idealAnswer": "Leading diagnosis: Carcinoid syndrome from a metastatic neuroendocrine tumor. The genuine competing diagnosis I cannot yet separate clinically is a VIPoma (Verner-Morrison / pancreatic cholera) — it also causes large-volume secretory diarrhea with flushing, so both head the list until biochemistry separates them (urinary 5-HIAA vs serum VIP). Must-not-miss / must-exclude: infectious diarrhea including C. difficile, and a MEDICATION cause — her recently started SSRI (sertraline) and metformin were both blamed but the diarrhea is secretory and persists with fasting. Three secretory/endocrine tumor mechanisms that cause flushing + diarrhea: serotonin (carcinoid), VIP (VIPoma), and gastrin (gastrinoma/Zollinger-Ellison) — also calcitonin (medullary thyroid carcinoma), catecholamines (pheochromocytoma), and histamine (mastocytosis). Also reasonable: thyrotoxicosis; menopausal/idiopathic flushing (the misleading label she was given).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Carcinoid syndrome / neuroendocrine tumor",
-            "points": 7
+            "item": "Carcinoid syndrome / metastatic neuroendocrine tumor",
+            "points": 6
           },
           {
-            "item": "Exclude infectious/secretory diarrhea incl. C. difficile",
+            "item": "VIPoma (Verner-Morrison) as the genuine competing secretory-diarrhea-with-flushing diagnosis",
             "points": 5
+          },
+          {
+            "item": "Exclude infectious diarrhea incl. C. difficile AND a medication cause (SSRI/metformin)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Other secretory/endocrine tumors (VIPoma, gastrinoma, MTC, pheochromocytoma)",
-            "points": 3
+            "item": "Names ≥3 secretory/endocrine tumor mechanisms/hormones (serotonin, VIP, gastrin, calcitonin, catecholamines, histamine)",
+            "points": 4
           },
           {
             "item": "Thyrotoxicosis",
             "points": 2
           },
           {
-            "item": "Idiopathic flushing / mastocytosis / menopausal vasomotor symptoms",
+            "item": "Menopausal vasomotor / idiopathic flushing (the misleading prior label)",
             "points": 2
           },
           {
-            "item": "Names a secretory diarrhea with flushing and the imperative to measure urinary 5-HIAA while excluding infection/thyroid disease",
-            "points": 6
+            "item": "Recognizes the secretory pattern and the imperative to measure urinary 5-HIAA AND serum VIP while excluding infection, drugs, and thyroid disease",
+            "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on the menopause/SSRI label and stops the work-up",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Exclude infectious/secretory diarrhea incl. C. difficile",
-        "Other secretory/endocrine tumors (VIPoma, gastrinoma, MTC, pheochromocytoma)"
+        "VIPoma (Verner-Morrison) as the genuine competing secretory-diarrhea-with-flushing diagnosis",
+        "Exclude infectious diarrhea incl. C. difficile AND a medication cause (SSRI/metformin)",
+        "Other secretory/endocrine tumors (gastrinoma, MTC, pheochromocytoma)"
       ],
       "acceptableAlternatives": [
         "Thyrotoxicosis",
-        "Idiopathic flushing / mastocytosis / menopausal vasomotor symptoms"
+        "Menopausal vasomotor / idiopathic flushing",
+        "Mastocytosis"
       ]
     },
     {
@@ -134,82 +155,85 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "24-hour urinary 5-HIAA — serotonin metabolite (CANT-MISS,4). Plasma chromogranin A (2). Stool studies + TSH to EXCLUDE infection and thyroid disease (CANT-MISS,3). Cross-sectional imaging — CT/MRI abdomen for primary and liver metastases (3). Somatostatin-receptor imaging (68Ga-DOTATATE PET) to localize/stage (2). Echocardiogram to assess for carcinoid heart disease (1). PENALTY: provoking the tumor — e.g., unprotected stimulation/biopsy or skipping octreotide cover before procedures, risking carcinoid crisis (-2).",
-      "idealAnswer": "Order: EKG; CXR; Urine 5 HIAA; Chromogranin A; Imaging; SST rimaging; Echo; Workup.",
+      "prompt": "What initial workup do you want to order to separate carcinoid from its competitors and to address her other active problems?",
+      "rubric": "24-hour urinary 5-HIAA — serotonin metabolite (CANT-MISS,3). Fasting serum VIP AND gastrin to separate the competing VIPoma/gastrinoma from carcinoid (CANT-MISS,3). BMP — she has hypokalemia with a non-anion-gap acidosis from secretory losses that needs correction (CANT-MISS,2). Stool studies (culture, C. diff, O&P) + stool osmotic gap + TSH to exclude infection, an osmotic/drug cause, and thyroid disease (3). Cross-sectional imaging — CT/MRI abdomen for primary and liver metastases (1). Somatostatin-receptor imaging (68Ga-DOTATATE PET) to localize/stage (1). Echocardiogram for carcinoid heart disease (1). Serum niacin given the dermatitis (1). PENALTY: provoking the tumor — biopsy/anesthesia or aggressive stimulation without octreotide cover, risking carcinoid crisis (-2); reflexively stopping metformin/SSRI and calling it solved without biochemistry (-1).",
+      "idealAnswer": "Order: EKG; CXR; Urine 5-HIAA; fasting serum VIP and gastrin (to separate VIPoma/gastrinoma from carcinoid); a BMP (she is hypokalemic with a non-anion-gap acidosis from secretory losses that needs potassium and volume repletion); stool studies + stool osmotic gap + TSH (exclude infection, an osmotic/medication cause, thyroid disease); chromogranin A; serum niacin (pellagra rash); CT/MRI abdomen for the primary and liver metastases; 68Ga-DOTATATE PET to localize and stage; and an echocardiogram for carcinoid heart disease. Do NOT biopsy or anesthetize without octreotide cover.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "24-hour urinary 5-HIAA",
-            "points": 4
+            "points": 3
           },
           {
-            "item": "Stool studies + TSH to exclude infection and thyroid disease",
+            "item": "Fasting serum VIP and gastrin to separate VIPoma/gastrinoma from carcinoid",
             "points": 3
+          },
+          {
+            "item": "BMP to find and correct hypokalemia / non-anion-gap acidosis from secretory losses",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Cross-sectional imaging (CT/MRI abdomen) for primary and liver metastases",
+            "item": "Stool studies + stool osmotic gap + TSH to exclude infection, osmotic/drug cause, and thyroid disease",
             "points": 3
           },
           {
+            "item": "Cross-sectional imaging (CT/MRI abdomen) for primary and liver metastases",
+            "points": 1
+          },
+          {
             "item": "Plasma chromogranin A",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Somatostatin-receptor imaging (68Ga-DOTATATE PET)",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Echocardiogram for carcinoid heart disease",
             "points": 1
           },
           {
-            "item": "EKG",
-            "points": 2
+            "item": "Serum niacin given the pellagra-type dermatitis",
+            "points": 1
           },
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Urine 5 HIAA",
-            "points": 2
-          },
-          {
-            "item": "SST rimaging",
-            "points": 2
-          },
-          {
-            "item": "Workup",
-            "points": 2
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "provoking the tumor without octreotide cover, risking carcinoid crisis",
+            "item": "Provoking the tumor (biopsy/anesthesia/stimulation) without octreotide cover, risking carcinoid crisis",
             "points": -2
+          },
+          {
+            "item": "Reflexively stopping metformin/SSRI and calling it solved without biochemistry",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
         "24-hour urinary 5-HIAA",
-        "Stool studies + TSH to exclude infection and thyroid disease",
-        "Cross-sectional imaging (CT/MRI abdomen) for primary and liver metastases"
+        "Fasting serum VIP and gastrin to separate VIPoma/gastrinoma from carcinoid",
+        "BMP to find and correct hypokalemia / non-anion-gap acidosis from secretory losses",
+        "Stool studies + stool osmotic gap + TSH to exclude infection, osmotic/drug cause, and thyroid disease"
       ],
       "optionalTests": [
+        "Cross-sectional imaging (CT/MRI abdomen) for primary and liver metastases",
         "Plasma chromogranin A",
         "Somatostatin-receptor imaging (68Ga-DOTATATE PET)",
-        "Echocardiogram for carcinoid heart disease"
+        "Echocardiogram for carcinoid heart disease",
+        "Serum niacin given the pellagra-type dermatitis"
       ],
       "contraindicatedTests": [
-        "provoking the tumor without octreotide cover, risking carcinoid crisis"
+        "Provoking the tumor (biopsy/anesthesia/stimulation) without octreotide cover, risking carcinoid crisis"
       ],
       "orderSensitiveActions": [
-        "provoking the tumor without octreotide cover, risking carcinoid crisis"
+        "Provoking the tumor (biopsy/anesthesia/stimulation) without octreotide cover, risking carcinoid crisis"
       ]
     },
     {
@@ -218,32 +242,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm with peaked P waves (P pulmonale) suggesting right atrial enlargement; no acute ischemia. CREDIT: rate & rhythm (7); recognizes peaked P waves / right atrial enlargement and links it to right-heart strain (5); systematic read with pertinent negatives (3). PENALTY: over-calling ischemia or missing the right atrial abnormality (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and tie them to her presentation.",
+      "rubric": "Findings = sinus rhythm with peaked P waves (P pulmonale → right atrial enlargement), right-axis deviation, a dominant R wave in V1, and right precordial (V1–V3) T-wave inversions = right ventricular hypertrophy / right-heart strain; NO acute ischemia. CREDIT: rate & rhythm (5); recognizes the right-atrial + right-ventricular pattern (P pulmonale, RAD, dominant R in V1, V1–V3 TWI) (5); links right-heart strain to carcinoid heart disease / tricuspid involvement and gives pertinent negatives (5). PENALTY: over-calling anterior ischemia from the right precordial T-wave inversions, or calling the tracing normal and missing the right-heart pattern (-3).",
       "keyFindings": [
-        "tall, peaked P waves in the inferior leads (P pulmonale)",
-        "names right atrial enlargement and links it to right-heart involvement"
+        "P pulmonale (peaked P waves) of right atrial enlargement",
+        "right-axis deviation with a dominant R wave in V1 and V1–V3 T-wave inversion (RVH / right-heart strain)",
+        "links the right-heart strain to carcinoid heart disease (tricuspid involvement), not acute ischemia"
       ],
       "criticalFindings": [
-        "Peaked P waves (P pulmonale) of right atrial enlargement."
+        "Right atrial enlargement (P pulmonale) with RVH / right-heart strain (RAD, dominant R in V1, V1–V3 T-wave inversion); no acute ischemia."
       ],
       "commonMistakes": [
-        "calling the tracing entirely normal and missing the right atrial enlargement"
+        "over-reading the V1–V3 T-wave inversions as an anterior ischemic event",
+        "calling the tracing normal and missing the right-heart strain pattern"
       ],
-      "idealAnswer": "Sinus rhythm with tall, peaked P waves (P pulmonale) indicating right atrial enlargement; no acute ischemic changes — fits right-heart involvement of carcinoid heart disease.",
+      "idealAnswer": "Sinus rhythm with tall, peaked P waves (P pulmonale) indicating right atrial enlargement, right-axis deviation, a dominant R wave in V1, and T-wave inversions in V1–V3 — together a right ventricular hypertrophy / right-heart strain pattern. There is no acute ischemia; the right precordial T-wave inversions are a strain pattern, not anterior ischemia. This is the cardiac footprint of carcinoid heart disease (tricuspid regurgitation with right-heart pressure/volume overload) and should prompt an echocardiogram.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Peaked P waves (P pulmonale) of right atrial enlargement."
+          "Right atrial enlargement (P pulmonale) with RVH / right-heart strain (RAD, dominant R in V1, V1–V3 T-wave inversion); no acute ischemia."
         ],
         "coreActions": [
-          "tall, peaked P waves in the inferior leads (P pulmonale)",
-          "names right atrial enlargement and links it to right-heart involvement"
+          "P pulmonale (peaked P waves) of right atrial enlargement",
+          "right-axis deviation with a dominant R wave in V1 and V1–V3 T-wave inversion (RVH / right-heart strain)",
+          "links the right-heart strain to carcinoid heart disease (tricuspid involvement), not acute ischemia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "over-reads right precordial strain as anterior ischemia, or calls the study normal",
             "points": -3
           }
         ]
@@ -256,32 +283,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear lungs with subtle right heart border prominence; no acute pulmonary process. CREDIT: identifies clear lungs / no acute process (6); notes subtle right heart prominence and that it screens for right-heart involvement (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = clear lungs with cardiomegaly and right heart border prominence (right atrial/ventricular enlargement); no acute pulmonary process or effusion. CREDIT: identifies clear lungs / no acute process (5); notes cardiomegaly with right heart border prominence and links it to right-heart involvement (5). PENALTY: inventing an infiltrate, mass, or effusion (-2).",
       "keyFindings": [
-        "clear lungs, no acute pulmonary process",
-        "notes subtle right heart border prominence as a clue to right-heart involvement"
+        "clear lungs, no acute pulmonary process or effusion",
+        "cardiomegaly with right heart border prominence as a clue to right-heart involvement"
       ],
       "criticalFindings": [
-        "Clear lungs with subtle right heart border prominence; no acute process."
+        "Clear lungs with cardiomegaly and right heart border prominence; no acute process."
       ],
       "commonMistakes": [
-        "mistaking the right heart prominence for a mass or calling a fictitious infiltrate"
+        "mistaking the right heart prominence for a mass or calling a fictitious infiltrate/effusion"
       ],
-      "idealAnswer": "Clear lungs with no acute pulmonary process; subtle prominence of the right heart border consistent with right-heart involvement of carcinoid heart disease.",
+      "idealAnswer": "Clear lungs with no acute pulmonary process or effusion; cardiomegaly with prominence of the right heart border consistent with right atrial/ventricular enlargement of carcinoid heart disease — corroborating the EKG and the need for an echocardiogram.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Clear lungs with subtle right heart border prominence; no acute process."
+          "Clear lungs with cardiomegaly and right heart border prominence; no acute process."
         ],
         "coreActions": [
-          "clear lungs, no acute pulmonary process",
-          "notes subtle right heart border prominence as a clue to right-heart involvement"
+          "clear lungs, no acute pulmonary process or effusion",
+          "cardiomegaly with right heart border prominence as a clue to right-heart involvement"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
-            "points": -3
+            "label": "invents an infiltrate / mass / effusion",
+            "points": -2
           }
         ]
       }
@@ -290,9 +317,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Urinary 5-HIAA is markedly elevated, chromogranin A is high, CT shows an ileal/mesenteric mass with liver metastases, DOTATATE PET is avid, and stool studies and TSH are normal. What is your diagnosis and what did you rule out?",
-      "rubric": "Carcinoid syndrome from a metastatic well-differentiated neuroendocrine tumor (6). Cites elevated 5-HIAA/chromogranin A with hepatic metastases (explaining systemic serotonin escape) and DOTATATE-avid disease; explicitly excludes infection and thyroid disease via negative stool studies and normal TSH (4).",
-      "idealAnswer": "Carcinoid syndrome from a metastatic well-differentiated neuroendocrine tumor. Supported by markedly elevated urinary 5-HIAA and chromogranin A with hepatic metastases (explaining systemic serotonin escape) and DOTATATE-avid disease. This excludes infection (negative stool studies) and thyroid disease (normal TSH).",
+      "prompt": "Urinary 5-HIAA is markedly elevated; fasting serum VIP and gastrin are NORMAL; CT shows an ileal/mesenteric mass with liver metastases; DOTATATE PET is avid; the BMP shows K 2.9 with a non-anion-gap acidosis (gap 7); niacin is low with a pellagra rash; and stool studies and TSH are normal. Commit to a diagnosis, state the test that separated it from its main competitor, and name the residual problems you must still treat.",
+      "rubric": "Carcinoid syndrome from a metastatic well-differentiated neuroendocrine tumor (5). States that the NORMAL serum VIP/gastrin with a markedly elevated urinary 5-HIAA is exactly what distinguishes carcinoid from the competing VIPoma/gastrinoma, and that hepatic metastases explain systemic serotonin escape on DOTATATE-avid disease (3). Explicitly excludes infection (negative stool), thyroid disease (normal TSH), and the medication/menopause labels; and names the concurrent problems still to fix — hypokalemia / non-anion-gap acidosis and niacin-deficiency pellagra (2).",
+      "idealAnswer": "Carcinoid syndrome from a metastatic well-differentiated neuroendocrine tumor. The discriminating result is the markedly elevated urinary 5-HIAA with a NORMAL fasting serum VIP and gastrin — that is what separates carcinoid from its main competitor VIPoma (and from gastrinoma). Hepatic metastases on CT and DOTATATE-avid disease explain how serotonin escapes hepatic first-pass to cause the systemic syndrome. This excludes infection (negative stool studies), thyroid disease (normal TSH), and the menopause/SSRI/metformin labels she was given. Residual concurrent problems that still need treatment in their own right: the hypokalemia with a non-anion-gap (hyperchloremic) metabolic acidosis (anion gap 7) from chronic secretory stool losses, and niacin-deficiency pellagra from tumor tryptophan diversion. The EKG/echo confirm carcinoid heart disease (right-heart strain, tricuspid regurgitation).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -301,8 +328,9 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "Exclude infectious/secretory diarrhea incl. C. difficile",
-        "Thyrotoxicosis"
+        "VIPoma / gastrinoma excluded by normal serum VIP and gastrin",
+        "Hypokalemia with non-anion-gap acidosis from secretory losses",
+        "Exclude infectious diarrhea incl. C. difficile"
       ],
       "acceptableAlternatives": [
         "Metastatic neuroendocrine tumor without classic syndrome",
@@ -313,69 +341,79 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH neuroendocrine tumor / carcinoid: somatostatin analog (octreotide/lanreotide) first-line to control flushing and diarrhea and to provide antiproliferative effect (CANT-MISS,7); octreotide cover to prevent/treat carcinoid crisis around procedures, anesthesia, or hypotension (CANT-MISS,4); avoid known triggers — alcohol, large meals, certain amines; manage carcinoid heart disease and consider valve surgery (3); locoregional/cytoreductive options for liver metastases — resection, hepatic-artery embolization, PRRT (4); niacin supplementation for niacin/pellagra deficiency (2); oncology/endocrine surgery referral and staging (3). PENALTY: giving catecholamines/unopposed sympathomimetics or proceeding to anesthesia/biopsy without octreotide, precipitating carcinoid crisis (-3); starting empiric antimotility/steroids as if IBD without working up the secretory cause (-1).",
-      "idealAnswer": "Carcinoid syndrome: start a somatostatin analog (octreotide or long-acting lanreotide) to control flushing/diarrhea and slow tumor growth. Provide octreotide cover before any procedure, anesthesia, or with hypotension to prevent/treat carcinoid crisis (avoid catecholamines). Counsel to avoid triggers (alcohol, large meals). Address carcinoid heart disease (echo, cardiology, consider tricuspid valve surgery). For hepatic metastases, consider resection/cytoreduction, hepatic-artery embolization, or peptide receptor radionuclide therapy (PRRT). Supplement niacin to prevent pellagra. Refer to oncology and surgery; stage and follow with chromogranin A/5-HIAA.",
+      "prompt": "What is your management plan, including how you would correct her concurrent problems and whether she can be safely discharged from this visit?",
+      "rubric": "Per MGH neuroendocrine tumor / carcinoid: somatostatin analog (octreotide/lanreotide) first-line to control flushing and diarrhea and for antiproliferative effect (CANT-MISS,6); octreotide cover to prevent/treat carcinoid crisis around procedures, anesthesia, or hypotension, and avoid catecholamines (CANT-MISS,4); CORRECT the concurrent abnormalities — IV potassium and volume repletion for the hypokalemia/non-anion-gap acidosis, and niacin/nicotinamide replacement for pellagra (3); locoregional/cytoreductive options for liver metastases — resection, hepatic-artery embolization, PRRT (3); manage carcinoid heart disease and consider tricuspid valve surgery (2); oncology/endocrine surgery referral and staging (2); avoid known triggers — alcohol, large meals, amines (1); SAFE DISPOSITION — admit rather than discharge given symptomatic hypokalemia/acidosis and decompensating right-heart disease, with medication reconciliation (the SSRI/metformin were red herrings, do not just stop and discharge) and close oncology/cardiology follow-up arranged before any release (4). PENALTY: catecholamines or proceeding to anesthesia/biopsy without octreotide, precipitating carcinoid crisis (-3); discharging her home with uncorrected hypokalemia/acidosis and right-heart failure (-3); starting empiric antimotility/steroids as if IBD without the secretory work-up (-1).",
+      "idealAnswer": "Carcinoid syndrome: start a somatostatin analog (octreotide, then long-acting octreotide LAR or lanreotide) to control flushing/diarrhea and slow tumor growth. Provide octreotide cover before any procedure, anesthesia, or with hypotension to prevent/treat carcinoid crisis, and avoid catecholamines. Correct her concurrent problems: IV fluids and potassium repletion for the hypokalemia and non-anion-gap acidosis from secretory losses, and replace niacin (nicotinamide) for pellagra. Address carcinoid heart disease (echo, cardiology, consider tricuspid valve surgery). For hepatic metastases consider resection/cytoreduction, hepatic-artery embolization, or peptide receptor radionuclide therapy (PRRT). Counsel to avoid triggers (alcohol, large meals, amines). Refer to oncology and endocrine surgery; stage and follow with chromogranin A / 5-HIAA. DISPOSITION: she is NOT safe for discharge today — admit for IV electrolyte/volume correction, symptom control, and work-up of decompensating right-heart disease. Do medication reconciliation (the sertraline and metformin were red herrings — do not simply stop them and send her home), and arrange close oncology and cardiology follow-up before any future discharge.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Somatostatin analog (octreotide/lanreotide) first-line",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Octreotide cover to prevent/treat carcinoid crisis",
+            "item": "Octreotide cover to prevent/treat carcinoid crisis; avoid catecholamines",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Locoregional/cytoreductive therapy for liver metastases (resection, embolization, PRRT)",
+            "item": "Safe disposition: admit (not discharge) for IV correction and right-heart decompensation, with medication reconciliation and close oncology/cardiology follow-up",
             "points": 4
           },
           {
-            "item": "Oncology / endocrine surgery referral and staging",
+            "item": "Correct concurrent abnormalities: IV potassium/volume for hypokalemia and non-anion-gap acidosis, niacin replacement for pellagra",
             "points": 3
           },
           {
-            "item": "Manage carcinoid heart disease (echo, consider valve surgery)",
+            "item": "Locoregional/cytoreductive therapy for liver metastases (resection, embolization, PRRT)",
             "points": 3
+          },
+          {
+            "item": "Manage carcinoid heart disease (echo, consider tricuspid valve surgery)",
+            "points": 2
+          },
+          {
+            "item": "Oncology / endocrine surgery referral and staging",
+            "points": 2
           },
           {
             "item": "Avoid known triggers (alcohol, large meals, amines)",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [
-          {
-            "item": "Niacin supplementation to prevent pellagra",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Catecholamines / procedure without octreotide precipitating carcinoid crisis",
+            "points": -3
+          },
+          {
+            "item": "Discharging her home with uncorrected hypokalemia/acidosis and right-heart failure",
             "points": -3
           }
         ]
       },
       "requiredActions": [
         "Somatostatin analog (octreotide/lanreotide) first-line",
-        "Octreotide cover to prevent/treat carcinoid crisis"
+        "Octreotide cover to prevent/treat carcinoid crisis; avoid catecholamines"
       ],
       "optionalActions": [
+        "Safe disposition: admit (not discharge) for IV correction and right-heart decompensation, with medication reconciliation and close oncology/cardiology follow-up",
+        "Correct concurrent abnormalities: IV potassium/volume for hypokalemia and non-anion-gap acidosis, niacin replacement for pellagra",
         "Locoregional/cytoreductive therapy for liver metastases (resection, embolization, PRRT)",
+        "Manage carcinoid heart disease (echo, consider tricuspid valve surgery)",
         "Oncology / endocrine surgery referral and staging",
-        "Manage carcinoid heart disease (echo, consider valve surgery)",
-        "Avoid known triggers (alcohol, large meals, amines)",
-        "Niacin supplementation to prevent pellagra"
+        "Avoid known triggers (alcohol, large meals, amines)"
       ],
       "unsafeActions": [
-        "Catecholamines / procedure without octreotide precipitating carcinoid crisis"
+        "Catecholamines / procedure without octreotide precipitating carcinoid crisis",
+        "Discharging her home with uncorrected hypokalemia/acidosis and right-heart failure"
       ],
       "consults": [
         "Oncology",
-        "Surgery"
+        "Surgery",
+        "Cardiology"
       ],
       "disposition": "Admit",
       "mghReference": {
@@ -394,12 +432,12 @@
     "sensitiveTopics": [
       "alcohol_use"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "58-year-old woman, mildly flushed across the face and upper chest, otherwise comfortable. Good historian, a little anxious about the spells.",
+    "communicationStyle": "answers directly but does not volunteer extra information; somewhat frustrated at being told it was 'just menopause'",
+    "affect": "58-year-old woman, mildly flushed across the face and upper chest, otherwise comfortable. Good historian, a little anxious and frustrated about the spells and the medication she was started on.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer the SSRI/menopause backstory, the metformin/PPI, or hidden exam and diagnostic findings unless asked",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -414,7 +452,7 @@
         "wine",
         "etoh"
       ],
-      "response": "I have a glass of red wine now and then — and honestly, the wine seems to set off the red, hot flushing in my face.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -428,7 +466,7 @@
         "how long",
         "duration"
       ],
-      "response": "It's been going on for about four to six months now, and it's slowly gotten more frequent.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -441,9 +479,11 @@
         "what do the stools look like",
         "blood in stool",
         "watery or bloody",
-        "character"
+        "character",
+        "does fasting help",
+        "diarrhea when you don't eat"
       ],
-      "response": "It's very watery, five to ten times a day, sometimes waking me at night. There's no blood and no mucus that I've noticed.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -458,7 +498,7 @@
         "skin redness",
         "hot flashes"
       ],
-      "response": "Out of nowhere my face, neck, and upper chest go bright red and hot for a few minutes, sometimes with a tingly feeling and my heart racing.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -473,9 +513,29 @@
         "anything set it off",
         "aggravating"
       ],
-      "response": "The flushing seems to come on with red wine, aged cheese, big meals, and when I'm stressed or exerting myself.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_history",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "new medication",
+        "ssri",
+        "sertraline",
+        "antidepressant",
+        "metformin",
+        "laxatives",
+        "antibiotics",
+        "any changes to your pills"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -486,11 +546,44 @@
         "trouble breathing",
         "chest tightness",
         "shortness of breath",
+        "exertional",
         "any other symptoms"
       ],
-      "response": "Sometimes when I get flushed I also get a bit wheezy and my chest feels tight, but it passes.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cardiac_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "ankle swelling",
+        "leg swelling",
+        "edema",
+        "breathless climbing stairs",
+        "exertional breathlessness",
+        "palpitations"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "skin_cognition",
+      "category": "ros",
+      "triggerConcepts": [
+        "rash",
+        "skin changes",
+        "scaly skin",
+        "memory",
+        "confusion",
+        "foggy"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -502,7 +595,7 @@
         "appetite",
         "constitutional symptoms"
       ],
-      "response": "I've lost about eight pounds without trying over these months.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -517,7 +610,7 @@
         "past scans",
         "ultrasound"
       ],
-      "response": "Years ago an ultrasound showed a spot on my liver, but I felt fine so I never followed up on it.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -532,38 +625,23 @@
         "thyroid symptoms",
         "palpitations all the time"
       ],
-      "response": "No, I don't feel hot all the time, no shaking hands, and no swelling in my neck.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "laxatives",
-        "antibiotics",
-        "recent travel"
-      ],
-      "response": "I only take amlodipine for blood pressure. No laxatives, no recent antibiotics, and I haven't traveled anywhere.",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
     }
   ],
   "physicalExamMappings": [
     {
       "id": "inspect_skin_finding_1",
-      "finding": "General: intermittent flushing of the face, neck, and upper chest; a few fine telangiectasias over the cheeks.",
+      "finding": "General: intermittent flushing of the face, neck, and upper chest with fine telangiectasias over the cheeks; rough, hyperpigmented, scaling plaques over the dorsal hands and a band around the neck (pellagra-type, niacin deficiency).",
       "revealedBy": [
         "inspect_skin",
         "assess_general_appearance"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No flushing or telangiectasia appreciated at this moment."
+      "normalIfNotPresent": "No flushing, telangiectasia, or rash appreciated at this moment."
     },
     {
       "id": "auscultate_tricuspid_finding_2",
@@ -578,7 +656,7 @@
     },
     {
       "id": "assess_jvp_finding_3",
-      "finding": "Neck: JVP mildly elevated (right-heart involvement).",
+      "finding": "Neck: JVP elevated with prominent v waves (tricuspid regurgitation / right-heart involvement).",
       "revealedBy": [
         "assess_jvp"
       ],
@@ -598,8 +676,18 @@
       "normalIfNotPresent": "Lungs clear to auscultation."
     },
     {
-      "id": "assess_hepatomegaly_finding_5",
-      "finding": "Abdomen: mild RUQ fullness with a firm, mildly enlarged liver edge (hepatic metastases); non-tender, no rebound.",
+      "id": "assess_edema_finding_5",
+      "finding": "Extremities: mild pitting pedal edema (right-heart failure from carcinoid heart disease).",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_hepatomegaly_finding_6",
+      "finding": "Abdomen: mild RUQ fullness with a firm, mildly enlarged, slightly nodular liver edge (hepatic metastases); non-tender, no rebound.",
       "revealedBy": [
         "assess_hepatomegaly",
         "palpate_ruq"
@@ -619,46 +707,52 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Carcinoid syndrome",
-    "diagnosticFramework": "58F presents with several months of watery, non-bloody secretory diarrhea and episodic facial flushing, with intermittent wheezing and palpitations. The diagnosis is Carcinoid syndrome from a metastatic neuroendocrine tumor, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58F with type 2 diabetes, hypothyroidism, and a recently started SSRI for presumed menopausal flushing presents with several months of large-volume watery secretory diarrhea and episodic facial flushing, plus wheezing, palpitations, exertional breathlessness, and ankle swelling. The diagnosis is Carcinoid syndrome from a metastatic neuroendocrine tumor, reached by recognizing the secretory pattern, separating it from its genuine competitor VIPoma with biochemistry (markedly elevated urinary 5-HIAA, normal serum VIP/gastrin), excluding infection/medications/thyroid disease, reading the patient's own EKG/echo for carcinoid heart disease, and correcting the concurrent hypokalemia/non-anion-gap acidosis and pellagra.",
     "keyHistoryClues": [
-      "Episodic flushing of the face/neck/chest with watery secretory diarrhea",
-      "Triggers of red wine, aged cheese, and large meals",
-      "Intermittent wheezing during spells and unintentional weight loss",
-      "A previously noted, never-followed-up 'spot on the liver'"
+      "Episodic flushing of the face/neck/chest with large-volume watery secretory diarrhea that persists with fasting",
+      "Triggers of red wine, aged cheese, and large meals; wheezing during spells",
+      "A recently started SSRI and metformin were wrongly blamed (menopause/red-herring labels)",
+      "Exertional breathlessness and ankle swelling; a previously noted, never-followed-up 'spot on the liver'"
     ],
     "keyPhysicalExamFindings": [
-      "General: intermittent flushing of the face, neck, and upper chest; a few fine telangiectasias over the cheeks.",
+      "General/skin: intermittent flushing with telangiectasias and a pellagra-type scaling rash over the dorsal hands and neck.",
       "Cardiac: soft holosystolic murmur at the left lower sternal border that increases with inspiration (tricuspid regurgitation of carcinoid heart disease).",
-      "Neck: JVP mildly elevated (right-heart involvement).",
-      "Abdomen: mild RUQ fullness with a firm, mildly enlarged liver edge (hepatic metastases); non-tender, no rebound."
+      "Neck/extremities: JVP elevated with prominent v waves and mild pitting pedal edema (right-heart involvement).",
+      "Abdomen: mild RUQ fullness with a firm, mildly enlarged, nodular liver edge (hepatic metastases); non-tender."
     ],
     "keyDiagnosticFindings": [
       "Urine5HIAA",
+      "VIP_gastrin",
+      "BMP",
       "ChromograninA",
+      "Niacin",
       "Imaging",
       "SSTRimaging",
       "Echo",
       "Workup"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Carcinoid syndrome while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Carcinoid syndrome and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the misleading menopause/SSRI label and polypharmacy.",
+      "Elicit the focused history, including the secretory pattern, triggers, new medications, and cardiac/skin symptoms only on direct questioning.",
+      "Perform the targeted physical exam to reveal flushing, the pellagra rash, the tricuspid murmur, elevated JVP, edema, and hepatomegaly.",
+      "Build a differential that fairly forks carcinoid against VIPoma while excluding infection, medications, and thyroid disease, and naming ≥3 secretory tumor mechanisms.",
+      "Order a focused, order-sensitive workup (5-HIAA AND serum VIP/gastrin, BMP, stool, imaging) and read the patient's own EKG/CXR for carcinoid heart disease.",
+      "Commit to Carcinoid syndrome (distinguished from VIPoma by normal VIP with high 5-HIAA), correct the hypokalemia/acidosis and pellagra, and admit with octreotide, definitive therapy, consults, and safe disposition."
     ],
     "commonPitfalls": [
+      "Anchoring on the menopause/SSRI label and stopping the work-up",
+      "Failing to send serum VIP/gastrin and so not separating carcinoid from VIPoma",
       "Catecholamines / procedure without octreotide precipitating carcinoid crisis",
-      "Treating empirically as IBD/infection without measuring urinary 5-HIAA"
+      "Discharging her with uncorrected hypokalemia/acidosis and decompensating right-heart disease"
     ],
     "managementPearls": [
       "Somatostatin analog (octreotide/lanreotide) first-line",
-      "Octreotide cover to prevent/treat carcinoid crisis"
+      "Octreotide cover to prevent/treat carcinoid crisis; correct electrolytes and replace niacin; admit rather than discharge"
     ],
     "criticalHistoryItems": [
       "stool_character",
-      "flushing"
+      "flushing",
+      "medication_history"
     ],
     "criticalExamItems": [
       "inspect_skin",
@@ -666,29 +760,30 @@
     ],
     "criticalWorkupItems": [
       "24-hour urinary 5-HIAA",
-      "Stool studies + TSH to exclude infection and thyroid disease",
-      "Cross-sectional imaging (CT/MRI abdomen) for primary and liver metastases"
+      "Fasting serum VIP and gastrin to separate VIPoma/gastrinoma from carcinoid",
+      "BMP to find and correct hypokalemia / non-anion-gap acidosis from secretory losses",
+      "Stool studies + stool osmotic gap + TSH to exclude infection, osmotic/drug cause, and thyroid disease"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm with peaked P waves (P pulmonale) of right atrial enlargement; no acute ischemia.",
-      "Clear lungs with subtle right heart border prominence; no acute process."
+      "Right atrial enlargement (P pulmonale) with RVH / right-heart strain; no acute ischemia.",
+      "Clear lungs with cardiomegaly and right heart border prominence; no acute process."
     ],
     "criticalManagementItems": [
       "Somatostatin analog (octreotide/lanreotide) first-line",
       "Octreotide cover to prevent/treat carcinoid crisis"
     ],
     "keyImageInterpretationFindings": [
-      "Peaked P waves (P pulmonale) of right atrial enlargement.",
-      "Clear lungs with subtle right heart border prominence; no acute process."
+      "Right atrial enlargement (P pulmonale) with RVH / right-heart strain (RAD, dominant R in V1, V1–V3 T-wave inversion); no acute ischemia.",
+      "Clear lungs with cardiomegaly and right heart border prominence; no acute process."
     ],
     "criticalImageInterpretationFindings": [
-      "Peaked P waves (P pulmonale) of right atrial enlargement.",
-      "Clear lungs with subtle right heart border prominence; no acute process."
+      "Right atrial enlargement (P pulmonale) with RVH / right-heart strain (RAD, dominant R in V1, V1–V3 T-wave inversion); no acute ischemia.",
+      "Clear lungs with cardiomegaly and right heart border prominence; no acute process."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Right precordial (V1–V3) T-wave inversion with RAD and a dominant R in V1 is right-heart strain, not anterior ischemia — read it in context.",
+      "An integrated EKG/CXR is part of the puzzle: the right-heart pattern points back to carcinoid heart disease and the need for an echo.",
+      "State pertinent negatives (no acute ischemia, no infiltrate), not just positives."
     ]
   },
   "communicationScoring": {
@@ -699,7 +794,7 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Validates the patient's frustration at being told it was 'just menopause'",
         "points": 1
       },
       {
@@ -718,8 +813,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read — patient's own study",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

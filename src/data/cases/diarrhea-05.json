@@ -2,69 +2,75 @@
   "id": "diarrhea-05",
   "category": "Diarrhea",
   "difficulty": "hard",
-  "title": "Bloody diarrhea with abdominal pain in an older adult",
+  "title": "Sudden left-sided pain and bloody diarrhea in an older adult with atrial fibrillation",
   "diagnosis": "Ischemic colitis",
   "chart": {
     "ageSex": "72M",
     "cc": "Abdominal pain and bloody diarrhea",
-    "oneLiner": "72M with cardiovascular disease presents with sudden crampy left-sided abdominal pain followed within hours by bloody diarrhea.",
+    "oneLiner": "72M with atrial fibrillation, heart failure, CKD, and recent viral gastroenteritis (with hypotension and a held anticoagulant) presents with abrupt crampy left-sided abdominal pain followed within hours by bloody diarrhea.",
     "vitals": {
-      "BP": "118/74",
-      "HR": "98",
+      "BP": "104/68",
+      "HR": "92",
       "RR": "18",
-      "Temp": "37.6°C",
-      "SpO2": "97% RA"
+      "Temp": "37.7°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
   "opening": "I got this sudden cramp in my left side, and then I started passing bloody stool.",
-  "patientFile": "PERSONA: 72-year-old man, uncomfortable, anxious. Good historian.\n\nHPI: Abrupt onset of crampy LEFT-sided abdominal pain, followed within a few hours by loose stools mixed with dark/bright blood. Recently had an episode of dehydration/low blood pressure from a stomach bug, and has known atherosclerotic disease (only if asked about recent illness/cardiovascular history). NO prior similar episodes, NO recent antibiotics, NO foreign travel.\nPMH: hypertension, coronary artery disease, atrial fibrillation. MEDS: aspirin, metoprolol, a statin; anticoagulation status variable (if asked). SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable but not toxic early.\n- Vitals: BP 118/74, HR 98 (note rhythm if examined), RR 18, 37.6°C, SpO2 97% RA.\n- Abdomen: tenderness over the LEFT/lower abdomen, mild; NO rigidity or rebound early (peritoneal signs would indicate transmural infarction).\n- Rectal: blood present if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent hypotension/dehydration or cardiovascular history unless asked about recent illness, blood pressure, or heart history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 72-year-old man, uncomfortable and anxious but not toxic-appearing. Good historian. Speaks in plain, lay language.\n\nHPI: Abrupt onset (over minutes) of crampy LEFT-sided / lower abdominal pain about 8 hours ago, followed within a couple of hours by loose stools mixed with dark and bright red blood — several episodes. The pain is crampy and comes in waves; it is NOT a constant, unbearable, 'worst-pain-of-my-life' that feels far out of proportion to how the belly looks (reveal this comparison only if asked to characterize severity or whether the pain seems out of proportion). He felt a strong urge to move his bowels right before the bleeding started. NO vomiting, NO fevers/chills at home, NO black tarry stools before today, NO weight loss, NO foreign travel, NO sick contacts beyond his own recent stomach bug, NO recent antibiotics, NO NSAID binge.\nRECENT ILLNESS (reveal only if asked about recent illness, dehydration, or blood pressure): about a week ago he had a viral 'stomach bug' with several days of watery diarrhea and poor intake; at a clinic visit his blood pressure was found to be low (around 90/60) and he felt lightheaded and was told he was dehydrated. He has been taking a few extra doses of his water pill because his ankles had been swelling, and he bought an over-the-counter cold/decongestant tablet (pseudoephedrine) a few days ago for a stuffy nose.\nANTICOAGULATION (reveal only if asked about blood thinners / recent procedures): he is normally on a blood thinner (apixaban) for his irregular heartbeat, but it was HELD for the past several days around a dental extraction and he has not restarted it.\nPMH (reveal only if asked about medical history): atrial fibrillation; heart failure with a weak heart muscle (reduced EF); coronary artery disease (prior stent); high blood pressure; chronic kidney disease (his doctor said his kidney function is reduced); high cholesterol. NO prior similar episodes, NO known inflammatory bowel disease, NO diverticulitis flares.\nMEDS (reveal only if asked what he takes): aspirin; metoprolol; atorvastatin; digoxin (recently his dose was increased and he sometimes feels a little nauseated and sees yellow-green halos around lights — reveal the visual symptom only if asked about vision or medication side effects); furosemide (water pill, taking extra lately); apixaban (currently held, see above); the new OTC decongestant. NO chronic NSAIDs.\nSOCIAL: former smoker (quit 10 years ago, ~30 pack-years); rare alcohol; lives with his wife; independent in daily activities and walks to the store.\nFAMILY: father had coronary disease; noncontributory otherwise.\nROS: as above; reveal the nausea, the yellow-green visual halos, and the leg swelling only when the relevant system is asked about.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable but not toxic early; mildly dry-appearing.\n- Vitals: BP 104/68 (was ~90/60 last week), HR 92 and IRREGULARLY irregular if the rhythm is examined, RR 18, 37.7°C, SpO2 96% RA. On standing, he feels lightheaded and HR/BP show an orthostatic drop if orthostatics are checked.\n- HEENT/mucous membranes: dry mucous membranes.\n- Cardiac: irregularly irregular rhythm, no new murmur; JVP not elevated.\n- Abdomen: tenderness over the LEFT/lower abdomen, mild-to-moderate, with mild voluntary guarding; NO rigidity, NO rebound, NO peritoneal signs early (peritoneal signs / a rigid silent abdomen would indicate transmural infarction). Bowel sounds present. The degree of tenderness is roughly PROPORTIONATE to the exam (NOT the dramatic pain-out-of-proportion-to-a-benign-belly of small-bowel mesenteric ischemia).\n- Rectal: gross blood / bloody stool present if examined.\n- Extremities: trace ankle edema; pulses intact; no cold pulseless limb.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent gastroenteritis/hypotension, the held anticoagulant, the extra diuretic, the OTC decongestant, the digoxin dose increase, or the visual halos unless the relevant question is asked.\n- Reveal exam findings only when the corresponding exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 14.0 with left shift, Hgb 12.8, Plt 250.",
-      "Lactate": "2.6 — mildly elevated (a markedly high lactate or peritonitis would suggest transmural/gangrenous disease).",
-      "BMP": "Mild metabolic changes; Cr 1.2.",
-      "StoolStudies": "Sent; infectious panel negative.",
-      "CT_abdomen": "CT abdomen/pelvis with contrast: segmental colonic wall thickening in a watershed distribution (splenic flexure / descending colon); no free air or pneumatosis."
+      "CBC": "WBC 14.2 with left shift (neutrophil predominance), Hgb 12.6, Plt 244. (Leukocytosis; Hgb near baseline despite hematochezia — bleeding is mucosal, not massive.)",
+      "Lactate": "2.7 mmol/L — only MILDLY elevated. (A markedly high lactate, e.g. >5, plus peritonitis would point to transmural/gangrenous bowel or small-bowel mesenteric infarction.)",
+      "BMP": "Na 138, K 3.1 (LOW), Cl 92, HCO3 32 (HIGH), BUN 44, Cr 1.9 (baseline ~1.3 — AKI on CKD). Anion gap = Na − (Cl + HCO3) = 138 − (92 + 32) = 14 (high-normal). Picture: hypokalemic, hypochloremic metabolic ALKALOSIS from the diuretic and diarrheal/volume losses, with a superimposed mildly elevated gap reflecting the mild lactate — multi-system, not a single pure disorder.",
+      "DigoxinLevel": "Serum digoxin 2.4 ng/mL — ABOVE therapeutic range (target ~0.5–0.9 in heart failure). With the new AKI and hypokalemia this is consistent with early digoxin toxicity (nausea, yellow-green visual halos).",
+      "StoolStudies": "Stool infectious panel (culture, C. difficile toxin/PCR, ova & parasites) SENT and NEGATIVE; no enteric pathogen identified.",
+      "CT_abdomen": "CT abdomen/pelvis with IV contrast: SEGMENTAL circumferential colonic wall thickening with mucosal hyperenhancement and pericolonic fat stranding in a WATERSHED distribution (splenic flexure / descending colon). NO pneumatosis, NO portal venous gas, NO free air. The SMA and its branches are patent with normally enhancing small bowel (argues AGAINST acute mesenteric ischemia)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
+      "litflStudyN": 2,
+      "integrated": true,
       "asset": null,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
-      "verify": "From the LITFL 'Atrial Fibrillation' library page — download an example tracing that matches: Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease a … and self-host with credit to litfl.com.",
+      "findings": "The patient's OWN tracing: atrial fibrillation (irregularly irregular, no P waves) at a controlled ventricular rate, with down-sloping 'scooped'/'sagging' ST depressions (digoxin effect) and no acute ST-segment ELEVATION. The AF is the embolic source that makes acute mesenteric ischemia the must-not-miss competitor; the digoxin effect dovetails with the supratherapeutic digoxin level.",
+      "verify": "From the LITFL 'Atrial Fibrillation' library — source an AF tracing (ideally one with the sagging 'Salvador Dali' ST depressions of digoxin effect) matching the description; self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
-      "assetNeeded": true,
-      "imageDescription": "Atrial fibrillation with no acute ST elevation.",
+      "assetNeeded": false,
+      "imageDescription": "12-lead EKG showing atrial fibrillation at a controlled rate with sagging/scooped ST depressions (digoxin effect) and no acute ST elevation.",
       "searchTerms": [
-        "atrial fibrillation 12-lead ECG"
+        "atrial fibrillation 12-lead ECG",
+        "digoxin effect sagging ST depression ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 74-year-old man with sudden lower abdominal pain and bloody diarrhea has a tracing showing an irregularly irregular rhythm."
+      "clinicalVignette": "A 72-year-old man with sudden left-sided abdominal pain and bloody diarrhea, on digoxin for rate control, has an irregularly irregular rhythm with scooped ST depressions on his EKG."
     },
     "cxr": {
       "label": "Abdominal X-ray (upright)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20abdominal%20xray%20upright&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
-      "verify": "Pick a CC abdominal film showing thumbprinting OR a normal/nonspecific film; must NOT show free air.",
+      "findings": "Nonspecific bowel gas pattern; may show 'thumbprinting' (mucosal edema) of the affected descending colon; importantly NO free air under the diaphragm (free air = perforation) and NO pneumatosis/portal venous gas (which would signal transmural infarction).",
+      "verify": "Pick a CC upright abdominal film showing colonic thumbprinting OR a nonspecific film; it must NOT show free air or pneumatosis.",
       "assetNeeded": true,
-      "imageDescription": "Abdominal radiograph with possible colonic thumbprinting and no free air.",
+      "imageDescription": "Upright abdominal radiograph with possible colonic thumbprinting and no free air or pneumatosis.",
       "searchTerms": [
-        "thumbprinting ischemic colitis abdominal x-ray"
+        "thumbprinting ischemic colitis abdominal x-ray",
+        "colonic thumbprinting plain film"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 76-year-old woman with crampy abdominal pain and bloody stools undergoes an upright film to assess bowel changes and exclude perforation."
+      "clinicalVignette": "An older adult with crampy left-sided abdominal pain and bloody stools undergoes an upright film to assess bowel changes and exclude perforation."
     }
   },
   "revealKeys": [
     "CBC",
     "Lactate",
     "BMP",
+    "DigoxinLevel",
     "StoolStudies",
     "CT_abdomen",
     "ekg",
@@ -79,49 +85,62 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Ischemic colitis (leading & CANT-MISS,8). Acute MESENTERIC ischemia — small-bowel, far more severe (CANT-MISS to distinguish,4). Infectious colitis (core,3). Inflammatory bowel disease (core,2). Diverticular bleed/diverticulitis (core,3). Connects sudden pain-then-bloody-diarrhea + vascular risk + recent hypotension to colonic ischemia (core,5).",
-      "idealAnswer": "Leading diagnosis: Ischemic colitis. Must-not-miss diagnoses to exclude: Acute MESENTERIC ischemia — small-bowel, far more severe. Also reasonable: Infectious colitis; Inflammatory bowel disease; Diverticular bleed/diverticulitis.",
+      "prompt": "Based on your history and physical, list your differential and name your leading diagnosis. This man has atrial fibrillation with a recently held anticoagulant — explicitly state the one diagnosis you most need to exclude and why. Also name THREE mechanisms/etiologies that can produce colonic ischemia in a patient like this.",
+      "rubric": "Ischemic colitis (leading,7). Acute MESENTERIC ischemia — small-bowel embolus/thrombus, the must-not-miss given AF + a HELD anticoagulant (CANT-MISS,5). Names THREE mechanisms of colonic ischemia — e.g. non-occlusive low-flow/hypotension, diuretic-induced volume depletion, vasoconstrictors (pseudoephedrine/digoxin splanchnic effect), watershed hypoperfusion, athero-/thrombo-embolism (core,3). Infectious colitis (core,2). Inflammatory bowel disease (core,1). Diverticular bleed (core,1). Connects sudden pain-then-bloody-diarrhea + recent hypotension/diuresis + vascular risk to colonic ischemia, and notes the pain is NOT out of proportion (core,3). Lower GI bleed work-up framing (core,1). PENALTY: anchoring on a benign infectious gastroenteritis and missing mesenteric ischemia given the embolic risk (-3).",
+      "idealAnswer": "Leading diagnosis: Ischemic colitis. The single must-not-miss to exclude is ACUTE MESENTERIC ISCHEMIA (small-bowel embolus/thrombus) — he has atrial fibrillation and his anticoagulant was held for several days, so an arterial embolus is a real concern; mesenteric ischemia classically causes pain OUT OF PROPORTION to a benign-appearing belly, which he does NOT have. Three mechanisms that can drive colonic ischemia here: (1) non-occlusive low-flow/hypotension (recent gastroenteritis with BP ~90/60), (2) volume depletion from extra furosemide plus diarrheal losses, and (3) splanchnic vasoconstriction from the OTC pseudoephedrine (and digoxin's splanchnic vasoconstriction) superimposed on watershed (splenic-flexure) anatomy; thromboembolism from AF is a fourth. Also reasonable: infectious colitis, inflammatory bowel disease, and a diverticular bleed.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Ischemic colitis",
-            "points": 8
+            "points": 7
           },
           {
-            "item": "Acute MESENTERIC ischemia — small-bowel, far more severe",
-            "points": 4
+            "item": "Acute MESENTERIC ischemia — must-not-miss given AF and a held anticoagulant",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Infectious colitis",
+            "item": "Names three mechanisms of colonic ischemia (low-flow/hypotension, diuretic volume depletion, vasoconstrictors/embolism, watershed)",
             "points": 3
           },
           {
-            "item": "Inflammatory bowel disease",
+            "item": "Infectious colitis",
             "points": 2
           },
           {
-            "item": "Diverticular bleed/diverticulitis",
+            "item": "Inflammatory bowel disease",
+            "points": 1
+          },
+          {
+            "item": "Diverticular bleed",
+            "points": 1
+          },
+          {
+            "item": "Connects sudden pain-then-bloody-diarrhea + recent hypotension/diuresis + vascular risk to colonic ischemia and notes pain is NOT out of proportion",
             "points": 3
           },
           {
-            "item": "Connects sudden pain-then-bloody-diarrhea + vascular risk + recent hypotension to colonic ischemia",
-            "points": 5
+            "item": "Frames this as a lower GI bleed requiring resuscitation and source control",
+            "points": 1
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on benign infectious gastroenteritis and misses mesenteric ischemia despite the embolic risk",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute MESENTERIC ischemia — small-bowel, far more severe"
+        "Acute MESENTERIC ischemia — small-bowel embolus/thrombus, the must-not-miss given AF and a held anticoagulant"
       ],
       "acceptableAlternatives": [
         "Infectious colitis",
         "Inflammatory bowel disease",
-        "Diverticular bleed/diverticulitis"
+        "Diverticular bleed"
       ]
     },
     {
@@ -129,9 +148,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC (2). Serum lactate (CANT-MISS,3). BMP (2). Stool studies to exclude infection (2). CT abdomen/pelvis with contrast (CANT-MISS,4). EKG (1). Colonoscopy is diagnostic but performed after stabilization (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Lactate; BMP; Stool studies; CT abdomen/pelvis.",
+      "prompt": "What initial workup do you want to order? He is on digoxin and his kidney function may be off.",
+      "rubric": "Serum lactate (CANT-MISS,3). CT abdomen/pelvis with IV contrast — and given AF + held anticoagulant, a CT angiogram of the mesenteric vessels to exclude AMI (CANT-MISS,4). CBC (2). BMP — looking for AKI and the hypokalemia that potentiates digoxin (2). Digoxin level given the dose increase, AKI, and toxicity symptoms (1). Stool studies to exclude infection (1). EKG (1). Colonoscopy is diagnostic but deferred until after stabilization (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2); CT WITHOUT IV contrast so vessels can't be assessed (-1).",
+      "idealAnswer": "Order: EKG; CBC; serum lactate; BMP (assess the AKI and the hypokalemia that potentiates digoxin); a DIGOXIN level (recent dose increase, AKI, nausea/visual halos); stool infectious studies; an upright abdominal film/CXR; and CT abdomen/pelvis WITH IV contrast — ideally a CT angiogram of the mesenteric vessels because his AF and held anticoagulant put small-bowel mesenteric ischemia on the table. Defer colonoscopy until he is stabilized; avoid an aggressive bowel prep acutely.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -140,7 +159,7 @@
             "points": 3
           },
           {
-            "item": "CT abdomen/pelvis with contrast",
+            "item": "CT abdomen/pelvis with IV contrast (CT angiogram to assess mesenteric vessels)",
             "points": 4
           }
         ],
@@ -150,20 +169,20 @@
             "points": 2
           },
           {
-            "item": "BMP",
+            "item": "BMP (AKI and hypokalemia)",
             "points": 2
           },
           {
+            "item": "Digoxin level",
+            "points": 1
+          },
+          {
             "item": "Stool studies to exclude infection",
-            "points": 2
+            "points": 1
           },
           {
             "item": "EKG",
             "points": 1
-          },
-          {
-            "item": "CXR",
-            "points": 2
           }
         ],
         "bonusActions": [
@@ -176,14 +195,20 @@
           {
             "item": "shotgun panel w/ no reasoning",
             "points": -2
+          },
+          {
+            "item": "CT without IV contrast so vessels cannot be assessed",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
         "Serum lactate",
-        "CT abdomen/pelvis with contrast"
+        "CT abdomen/pelvis with IV contrast (CT angiogram to assess mesenteric vessels)"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Digoxin level"
+      ],
       "contraindicatedTests": [
         "shotgun panel w/ no reasoning"
       ],
@@ -195,52 +220,39 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = atrial fibrillation (or sinus); no acute STEMI. CREDIT: identifies the rhythm — AF vs sinus (6); links AF/cardiovascular disease as a risk factor for ischemia (4); no acute STEMI (3); systematic read (2). PENALTY: missing AF if present (-2).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and state how they change your differential and management.",
+      "rubric": "Findings = atrial fibrillation at a controlled rate with digoxin-effect ST depressions and no acute STEMI. CREDIT: identifies the rhythm as ATRIAL FIBRILLATION — irregularly irregular, no P waves (5); recognizes the sagging/scooped 'digoxin effect' ST depressions and links them to the supratherapeutic digoxin level (3); states there is NO acute ST elevation (2); names AF as the EMBOLIC SOURCE that keeps acute mesenteric ischemia on the differential, especially with the held anticoagulant (3); systematic read (2). PENALTY: mistaking digoxin-effect ST depression for an acute STEMI/ischemia, or missing the AF (-3).",
       "keyFindings": [
-        "identifies the rhythm — AF vs sinus",
-        "links AF/cardiovascular disease as a risk factor for ischemia",
-        "no acute STEMI",
-        "systematic read"
+        "atrial fibrillation (irregularly irregular, no P waves)",
+        "sagging/scooped ST depressions of digoxin effect (not acute ischemia)",
+        "no acute ST elevation",
+        "AF is the embolic source that keeps acute mesenteric ischemia on the differential given the held anticoagulant"
       ],
       "criticalFindings": [
-        "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)"
+        "Atrial fibrillation at a controlled ventricular rate with sagging 'digoxin-effect' ST depressions and no acute ST elevation; the AF is an embolic source that keeps acute mesenteric ischemia in play given the held anticoagulant."
       ],
       "commonMistakes": [
-        "missing AF if present"
+        "missing the atrial fibrillation",
+        "misreading the digoxin-effect ST depression as an acute STEMI/ischemia",
+        "ignoring that AF + a held anticoagulant is an embolic setup for mesenteric ischemia"
       ],
-      "idealAnswer": "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
+      "idealAnswer": "Atrial fibrillation — irregularly irregular with no discernible P waves — at a controlled ventricular rate, with down-sloping 'scooped'/sagging ST depressions that represent the DIGOXIN EFFECT (consistent with his supratherapeutic digoxin level), and NO acute ST elevation. This is his own tracing: it confirms an embolic source, so the held anticoagulant makes ACUTE MESENTERIC ISCHEMIA the must-not-miss I have to exclude on the contrast CT, and it flags that his digoxin needs attention given the AKI and hypokalemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
-            "points": 6
-          }
+          "Recognizes: atrial fibrillation with digoxin-effect ST depressions and no acute STEMI; AF is the embolic source keeping mesenteric ischemia on the differential."
         ],
         "coreActions": [
-          {
-            "item": "identifies the rhythm — AF vs sinus",
-            "points": 6
-          },
-          {
-            "item": "links AF/cardiovascular disease as a risk factor for ischemia",
-            "points": 4
-          },
-          {
-            "item": "no acute STEMI",
-            "points": 3
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "atrial fibrillation (irregularly irregular, no P waves)",
+          "sagging/scooped ST depressions of digoxin effect (not acute ischemia)",
+          "no acute ST elevation",
+          "AF is the embolic source that keeps acute mesenteric ischemia on the differential given the held anticoagulant"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "missing AF if present",
-            "points": -2
+            "label": "misreads digoxin-effect ST depression as an acute STEMI, or misses the AF",
+            "points": -3
           }
         ]
       }
@@ -251,41 +263,35 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's abdominal film. Describe your findings.",
-      "rubric": "Findings = nonspecific; possible thumbprinting; NO free air. CREDIT: identifies thumbprinting (mucosal edema) or a nonspecific film (5); explicitly excludes free air (perforation) (5). PENALTY: missing the free-air check (-1).",
+      "prompt": "Here is the patient's upright abdominal film. Describe your findings.",
+      "rubric": "Findings = nonspecific bowel gas; possible thumbprinting of the descending colon; NO free air and NO pneumatosis/portal venous gas. CREDIT: identifies thumbprinting (mucosal edema) or a nonspecific film (4); explicitly excludes free air (perforation) (3); explicitly excludes pneumatosis/portal venous gas that would signal transmural infarction (3). PENALTY: missing the free-air / pneumatosis check (-1).",
       "keyFindings": [
-        "identifies thumbprinting (mucosal edema) or a nonspecific film",
-        "explicitly excludes free air (perforation)"
+        "thumbprinting (mucosal edema) or a nonspecific bowel gas pattern",
+        "no free air (no perforation)",
+        "no pneumatosis or portal venous gas (no transmural infarction)"
       ],
       "criticalFindings": [
-        "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+        "Nonspecific bowel gas pattern with possible colonic thumbprinting; NO free air and NO pneumatosis/portal venous gas (no perforation or transmural infarction)."
       ],
       "commonMistakes": [
-        "missing the free-air check"
+        "missing the free-air check",
+        "not commenting on pneumatosis/portal venous gas"
       ],
-      "idealAnswer": "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
+      "idealAnswer": "A nonspecific bowel gas pattern, possibly with 'thumbprinting' (mucosal edema) of the descending colon. Importantly there is NO free air under the diaphragm to suggest perforation and NO pneumatosis or portal venous gas to suggest transmural/gangrenous bowel — both are deliberate pertinent negatives that, if present, would mandate urgent surgery.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation).",
-            "points": 5
-          }
+          "Recognizes: nonspecific film with possible thumbprinting; no free air and no pneumatosis/portal venous gas."
         ],
         "coreActions": [
-          {
-            "item": "Identifies thumbprinting (mucosal edema) or a nonspecific film",
-            "points": 3
-          },
-          {
-            "item": "Explicitly excludes free air (perforation)",
-            "points": 2
-          }
+          "thumbprinting (mucosal edema) or a nonspecific bowel gas pattern",
+          "no free air (no perforation)",
+          "no pneumatosis or portal venous gas (no transmural infarction)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "missing the free-air check",
+            "label": "misses the free-air / pneumatosis pertinent negatives",
             "points": -1
           }
         ]
@@ -295,9 +301,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "CT shows segmental colonic wall thickening in a watershed area without perforation. What is your diagnosis and how does it differ from acute mesenteric ischemia?",
-      "rubric": "Ischemic colitis (6). Distinguishes from acute mesenteric ischemia — colonic (often watershed) and usually less catastrophic, vs small-bowel SMA occlusion with pain out of proportion and a worse prognosis (4).",
-      "idealAnswer": "Ischemic colitis. Unlike acute mesenteric ischemia, this is a colonic (often watershed, e.g., splenic flexure) process that is usually less catastrophic; acute mesenteric ischemia is a small-bowel SMA occlusion with pain out of proportion to exam and a far worse prognosis.",
+      "prompt": "The contrast CT shows segmental colonic wall thickening in a watershed area with a PATENT SMA and normal small bowel, no pneumatosis and no free air; the EKG shows AF with digoxin effect; the digoxin level is 2.4 with a new AKI and K 3.1. Commit to a diagnosis, name the single test that best discriminates it from acute mesenteric ischemia, and state the residual concern you are still watching for.",
+      "rubric": "Ischemic colitis (6). Uses the discriminators to exclude acute mesenteric ischemia — a PATENT SMA with normally enhancing small bowel on the CT/CT-angiogram is the key discriminator, plus segmental WATERSHED colonic involvement, only mildly elevated lactate, and pain that is NOT out of proportion; names the residual concern (progression to transmural/gangrenous colitis, and digoxin toxicity from the AKI + hypokalemia) that he will keep watching for (4).",
+      "idealAnswer": "Ischemic colitis. The single best discriminator from acute mesenteric ischemia is the mesenteric vasculature on the contrast CT/CT-angiogram: the SMA is PATENT with normally enhancing small bowel, which argues strongly against a small-bowel embolus — reinforced by the segmental WATERSHED (splenic-flexure/descending) colonic distribution, the only mildly elevated lactate (2.7), and pain that is not out of proportion to the exam. Residual concerns I keep watching: progression to TRANSMURAL/gangrenous colitis (rising lactate, peritonitis, pneumatosis/portal venous gas), and DIGOXIN TOXICITY now that he has an AKI and hypokalemia (the EKG digoxin effect plus a level of 2.4 and his visual halos). Colonoscopy after stabilization gives definitive mucosal confirmation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -310,62 +316,84 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH approach (ischemic colitis): supportive care – bowel rest + IV fluid resuscitation (CANT-MISS,6); broad-spectrum antibiotics (4); optimize perfusion / stop vasoconstrictors (4); serial exams and lactate (3); surgery consult + CT if peritonitis/gangrene/perforation (4). PENALTY: missing transmural/gangrenous colitis needing surgery (-3); vasopressors worsening colonic ischemia without addressing cause (-2).",
-      "idealAnswer": "Largely supportive: bowel rest, IV fluid resuscitation, and broad-spectrum antibiotics. Optimize perfusion – stop vasoconstrictors and minimize precipitants; correct hypotension. Serial abdominal exams and lactate. Surgical consult and CT for peritonitis, gangrene, perforation, or clinical deterioration. Most non-gangrenous cases resolve with supportive care.",
+      "prompt": "What is your management plan? Address the digoxin/electrolyte issue and his anticoagulant, and state your disposition criteria — when this patient can be safely discharged versus must go to the OR.",
+      "rubric": "Per MGH approach (ischemic colitis): supportive care — bowel rest + IV fluid resuscitation to restore colonic perfusion (CANT-MISS,5); broad-spectrum antibiotics (3); optimize perfusion / STOP vasoconstrictors and offending agents — hold the OTC pseudoephedrine, hold/reduce the extra furosemide, correct hypotension (4); address DIGOXIN — hold digoxin and REPLETE POTASSIUM/magnesium given the supratherapeutic level + AKI (3); serial abdominal exams + serial lactate, and decide on restarting anticoagulation once bleeding is controlled (2); surgery consult + repeat imaging if peritonitis/gangrene/perforation/clinical deterioration (CANT-MISS,4); SAFE-DISCHARGE/DISPOSITION plan — admit now; most non-gangrenous cases resolve, discharge only once pain/bleeding resolve, lactate normalizes, and he tolerates diet, with outpatient colonoscopy in 6–8 weeks, med reconciliation (anticoagulation/digoxin/diuretic), and close follow-up (4). PENALTY: missing transmural/gangrenous colitis needing surgery (-3); continuing/adding splanchnic vasoconstrictors or vasopressors without addressing the cause (-2); discharging this patient with ongoing pain/bleeding or unrecognized digoxin toxicity (-3).",
+      "idealAnswer": "Admit. Largely supportive: bowel rest, IV fluid resuscitation to restore colonic perfusion, and broad-spectrum antibiotics. Optimize perfusion by STOPPING vasoconstrictors and precipitants — hold the OTC pseudoephedrine, hold/reduce the extra furosemide, and correct hypotension (avoid vasopressors that worsen colonic ischemia where possible). Manage the medication problems his labs revealed: HOLD digoxin and replete POTASSIUM and magnesium (level 2.4 with a new AKI and K 3.1 is early toxicity), and dose-adjust renally cleared drugs. Hold anticoagulation while he is actively bleeding but plan to restart apixaban for his AF once bleeding is controlled, since AF + a held anticoagulant is itself an embolic risk. Serial abdominal exams and serial lactate. Urgent surgery consult and repeat imaging if peritonitis, gangrene, perforation, pneumatosis/portal venous gas, or clinical deterioration develop. Disposition/safe-discharge: most non-gangrenous cases resolve with supportive care — he can be discharged only once pain and bleeding resolve, lactate normalizes, and he tolerates a diet, with a reconciled medication list (digoxin/diuretic/anticoagulation), an outpatient colonoscopy in 6–8 weeks to confirm mucosal healing and exclude another cause, and close primary-care/GI follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Supportive care (bowel rest, IV fluids)",
-            "points": 6
+            "item": "Supportive care (bowel rest, IV fluid resuscitation)",
+            "points": 5
+          },
+          {
+            "item": "Surgery consult + repeat imaging if peritonitis/gangrene/perforation/deterioration",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Broad-spectrum antibiotics",
-            "points": 4
-          },
-          {
-            "item": "Optimize perfusion / stop vasoconstrictors",
-            "points": 4
-          },
-          {
-            "item": "Surgery consult + CT if peritonitis/gangrene",
-            "points": 4
-          },
-          {
-            "item": "Serial exams and lactate",
             "points": 3
+          },
+          {
+            "item": "Optimize perfusion / stop vasoconstrictors (hold pseudoephedrine, reduce diuretic, correct hypotension)",
+            "points": 4
+          },
+          {
+            "item": "Hold digoxin and replete potassium/magnesium given supratherapeutic level + AKI",
+            "points": 3
+          },
+          {
+            "item": "Serial exams and lactate; plan anticoagulation restart once bleeding controlled",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge/disposition: admit now; discharge only after pain/bleeding resolve and diet tolerated, with med reconciliation, outpatient colonoscopy in 6–8 weeks, and close follow-up",
+            "points": 4
           }
         ],
         "bonusActions": [
           {
-            "item": "Identify and treat precipitant",
-            "points": 1
+            "item": "Identify and treat the precipitant (recent hypotension/volume depletion)",
+            "points": 0
           }
         ],
         "penalties": [
           {
-            "item": "Missing gangrenous colitis",
+            "item": "Missing transmural/gangrenous colitis needing surgery",
+            "points": -3
+          },
+          {
+            "item": "Continuing/adding splanchnic vasoconstrictors or vasopressors without addressing the cause",
+            "points": -2
+          },
+          {
+            "item": "Discharging with ongoing pain/bleeding or unrecognized digoxin toxicity",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Supportive care (bowel rest, IV fluids)"
+        "Supportive care (bowel rest, IV fluid resuscitation)",
+        "Surgery consult + repeat imaging if peritonitis/gangrene/perforation/deterioration"
       ],
       "optionalActions": [
         "Broad-spectrum antibiotics",
-        "Optimize perfusion / stop vasoconstrictors",
-        "Surgery consult + CT if peritonitis/gangrene",
-        "Serial exams and lactate",
-        "Identify and treat precipitant"
+        "Optimize perfusion / stop vasoconstrictors (hold pseudoephedrine, reduce diuretic, correct hypotension)",
+        "Hold digoxin and replete potassium/magnesium given supratherapeutic level + AKI",
+        "Serial exams and lactate; plan anticoagulation restart once bleeding controlled",
+        "Safe-discharge/disposition: admit now; discharge only after pain/bleeding resolve and diet tolerated, with med reconciliation, outpatient colonoscopy in 6–8 weeks, and close follow-up"
       ],
       "unsafeActions": [
-        "Missing gangrenous colitis"
+        "Missing transmural/gangrenous colitis needing surgery",
+        "Continuing/adding splanchnic vasoconstrictors or vasopressors without addressing the cause",
+        "Discharging with ongoing pain/bleeding or unrecognized digoxin toxicity"
       ],
-      "consults": [],
+      "consults": [
+        "Surgery",
+        "Gastroenterology"
+      ],
       "disposition": "Admit",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
@@ -375,18 +403,19 @@
     }
   ],
   "standardizedPatient": {
-    "demeanor": "anxious",
-    "emotionalState": "concerned",
+    "demeanor": "uncomfortable",
+    "emotionalState": "anxious",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "72-year-old man, uncomfortable, anxious. Good historian.",
+    "affect": "72-year-old man, uncomfortable and anxious, mildly dry-appearing. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the recent gastroenteritis/hypotension, the held anticoagulant, the extra diuretic, the OTC decongestant, the digoxin dose increase, or the visual halos unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -404,7 +433,77 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_illness_hypotension",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "stomach bug",
+        "dehydration",
+        "dehydrated",
+        "low blood pressure",
+        "lightheaded",
+        "recently sick",
+        "fluid losses"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "anticoagulation_procedures",
+      "category": "meds",
+      "triggerConcepts": [
+        "blood thinner",
+        "anticoagulation",
+        "apixaban",
+        "warfarin",
+        "held medication",
+        "recent procedure",
+        "dental",
+        "stopped any medication"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "digoxin_toxicity_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "vision",
+        "yellow halos",
+        "visual changes",
+        "medication side effects",
+        "digoxin",
+        "nausea from medication",
+        "dose increased"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_and_diuretic",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "decongestant",
+        "pseudoephedrine",
+        "cold medicine",
+        "water pill",
+        "diuretic",
+        "extra doses"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -441,7 +540,9 @@
       "triggerConcepts": [
         "how bad",
         "severity",
-        "scale"
+        "scale",
+        "out of proportion",
+        "worst pain"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -454,7 +555,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "vomiting",
+        "weight loss"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -481,7 +585,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "heart",
+        "kidney",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -494,7 +601,8 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "pills"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -518,13 +626,63 @@
   "physicalExamMappings": [
     {
       "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: tenderness over the LEFT/lower abdomen, mild; NO rigidity or rebound early (peritoneal signs would indicate transmural infarction).",
+      "finding": "Abdomen: tenderness over the LEFT/lower abdomen, mild-to-moderate, with mild voluntary guarding; NO rigidity, NO rebound, NO peritoneal signs early (peritoneal signs would indicate transmural infarction). Tenderness is roughly proportionate to the exam (not pain-out-of-proportion).",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
       "importance": "critical",
       "points": 5,
       "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "palpate_llq_finding_2",
+      "finding": "Maximal tenderness in the LEFT lower quadrant with mild voluntary guarding; no rigidity or rebound. (Watershed splenic-flexure/descending-colon territory.)",
+      "revealedBy": [
+        "palpate_llq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No left lower quadrant tenderness."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_3",
+      "finding": "Orthostatic vitals positive: on standing he feels lightheaded with a drop in BP and a rise in HR — consistent with volume depletion from recent diarrhea, extra diuretic, and poor intake.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No orthostatic changes."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_4",
+      "finding": "Dry mucous membranes (volume depletion).",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Irregularly irregular rhythm, no new murmur; consistent with atrial fibrillation.",
+      "revealedBy": [
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate and rhythm."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_6",
+      "finding": "Bowel sounds present (not the silent abdomen of late transmural infarction).",
+      "revealedBy": [
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal bowel sounds."
     }
   ],
   "overallScoring": {
@@ -537,59 +695,73 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Ischemic colitis",
-    "diagnosticFramework": "72M with cardiovascular disease presents with sudden crampy left-sided abdominal pain followed within hours by bloody diarrhea. The diagnosis is Ischemic colitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "72M with atrial fibrillation, heart failure with reduced EF, CAD, and CKD presents with abrupt crampy left-sided abdominal pain followed within hours by bloody diarrhea, on a background of recent viral gastroenteritis with hypotension, extra diuretic use, an OTC decongestant, a recently increased digoxin dose, and an anticoagulant held for a dental procedure. The diagnosis is Ischemic colitis (non-occlusive, watershed splenic-flexure territory), reached by eliciting the focused history (recent hypotension, held anticoagulant, offending medications), performing the targeted exam, and interpreting a directed workup. The integrated EKG shows atrial fibrillation with digoxin effect, which both keeps acute mesenteric ischemia on the differential (embolic source + held anticoagulant) and flags digoxin toxicity given the new AKI and hypokalemia; the contrast CT showing a patent SMA with normal small bowel is the key discriminator that excludes acute mesenteric ischemia.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: tenderness over the LEFT/lower abdomen, mild; NO rigidity or rebound early (peritoneal signs would indicate transmural infarction)."
+      "Abdomen: tenderness over the LEFT/lower abdomen, mild-to-moderate, with mild voluntary guarding; NO rigidity, NO rebound, NO peritoneal signs early. Tenderness is roughly proportionate to the exam (not pain-out-of-proportion).",
+      "Maximal tenderness in the LEFT lower quadrant with mild voluntary guarding; no rigidity or rebound. (Watershed splenic-flexure/descending-colon territory.)",
+      "Orthostatic vitals positive: lightheaded with a BP drop and HR rise on standing — volume depletion.",
+      "Dry mucous membranes (volume depletion).",
+      "Irregularly irregular rhythm, no new murmur; consistent with atrial fibrillation.",
+      "Bowel sounds present (not the silent abdomen of late transmural infarction)."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "Lactate",
       "BMP",
+      "DigoxinLevel",
       "StoolStudies",
       "CT_abdomen"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Ischemic colitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Ischemic colitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the borderline-low BP and irregular pulse.",
+      "Elicit the focused history, including the recent gastroenteritis/hypotension, the held anticoagulant, the extra diuretic, the OTC decongestant, and the digoxin dose increase only on direct questioning.",
+      "Perform the targeted physical exam — left-sided tenderness without peritoneal signs, orthostatics, dry membranes, and an irregularly irregular rhythm.",
+      "Build a differential led by Ischemic colitis while explicitly excluding acute mesenteric ischemia given the AF and held anticoagulant, and name the mechanisms of colonic ischemia.",
+      "Order a focused workup including contrast CT/CT angiogram, lactate, a BMP and digoxin level, and interpret the integrated EKG (AF with digoxin effect) and abdominal film.",
+      "Commit to Ischemic colitis on the strength of a patent SMA with normal small bowel and watershed colonic involvement, manage supportively while correcting digoxin/electrolytes and stopping vasoconstrictors, and define safe-discharge versus operative criteria."
     ],
     "commonPitfalls": [
-      "Missing gangrenous colitis"
+      "Anchoring on benign infectious gastroenteritis and missing mesenteric ischemia",
+      "Misreading digoxin-effect ST depression as an acute STEMI",
+      "Overlooking digoxin toxicity precipitated by the new AKI and hypokalemia",
+      "Missing transmural/gangrenous colitis needing surgery",
+      "Discharging with ongoing pain/bleeding"
     ],
     "managementPearls": [
-      "Supportive care (bowel rest, IV fluids)"
+      "Supportive care (bowel rest, IV fluid resuscitation)",
+      "Stop splanchnic vasoconstrictors and correct hypotension",
+      "Hold digoxin and replete potassium/magnesium"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "assess_rebound_tenderness"
+      "assess_rebound_tenderness",
+      "palpate_llq"
     ],
     "criticalWorkupItems": [
       "Serum lactate",
-      "CT abdomen/pelvis with contrast"
+      "CT abdomen/pelvis with IV contrast (CT angiogram to assess mesenteric vessels)"
     ],
     "criticalInterpretationItems": [
-      "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
-      "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+      "Atrial fibrillation at a controlled rate with digoxin-effect ST depressions and no acute ST elevation; AF is the embolic source keeping mesenteric ischemia on the differential.",
+      "Nonspecific abdominal film with possible colonic thumbprinting; no free air and no pneumatosis/portal venous gas."
     ],
     "criticalManagementItems": [
-      "Supportive care (bowel rest, IV fluids)"
+      "Supportive care (bowel rest, IV fluid resuscitation)",
+      "Surgery consult + repeat imaging if peritonitis/gangrene/perforation/deterioration"
     ],
     "keyImageInterpretationFindings": [
-      "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
-      "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+      "Atrial fibrillation at a controlled rate with digoxin-effect ST depressions and no acute ST elevation; AF is the embolic source keeping mesenteric ischemia on the differential.",
+      "Nonspecific abdominal film with possible colonic thumbprinting; no free air and no pneumatosis/portal venous gas."
     ],
     "criticalImageInterpretationFindings": [
-      "Atrial fibrillation (or sinus rhythm); no acute ST elevation. (AF/cardiovascular disease are risk factors.)",
-      "Nonspecific; may show 'thumbprinting' (mucosal edema) of the affected colon; importantly NO free air (free air = perforation)."
+      "Atrial fibrillation at a controlled rate with digoxin-effect ST depressions and no acute ST elevation; AF is the embolic source keeping mesenteric ischemia on the differential.",
+      "Nonspecific abdominal film with possible colonic thumbprinting; no free air and no pneumatosis/portal venous gas."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "An incidental abnormality is an interpretation task in its own right — name the digoxin effect, then judge its relevance to the embolic fork and to drug toxicity.",
       "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "State pertinent negatives (no STEMI, no free air, no pneumatosis), not just positives."
     ]
   },
   "communicationScoring": {
@@ -619,9 +791,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated own-study interpretation",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

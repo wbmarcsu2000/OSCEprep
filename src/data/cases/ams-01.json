@@ -1,58 +1,61 @@
 {
   "id": "ams-01",
   "category": "Altered Mental Status",
-  "difficulty": "moderate",
-  "title": "Confusion in a patient with cirrhosis",
+  "difficulty": "hard",
+  "title": "Confusion in a recently-abstinent patient with cirrhosis on multiple sedating medications",
   "diagnosis": "Hepatic encephalopathy",
   "chart": {
     "ageSex": "60M",
     "cc": "Confusion",
-    "oneLiner": "60M with known cirrhosis is brought in by family for 2 days of progressive confusion and excessive sleepiness.",
+    "oneLiner": "60M with alcohol-related cirrhosis, CKD stage 3, COPD, and depression — recently abstinent from alcohol (~3 weeks) and eating poorly — is brought in by his daughter for 2 days of progressive confusion, day-night reversal, and excessive sleepiness, on a complicated medication list that was recently changed.",
     "vitals": {
-      "BP": "118/72",
-      "HR": "92",
+      "BP": "104/64",
+      "HR": "96",
       "RR": "16",
-      "Temp": "37.2°C",
-      "SpO2": "97% RA"
+      "Temp": "37.1°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
   "opening": "Where… where am I? What day is it?",
-  "patientFile": "PERSONA: 60-year-old man, drowsy, disoriented to time and place, slow to respond. A POOR historian — gives short, vague, sometimes incorrect answers.\n\nCOLLATERAL (provide ONLY if the student asks family/EMS/chart/medication list): Family reports 2 days of worsening confusion, day-night reversal, and sleeping much of the day. Known cirrhosis (alcohol-related). He has been constipated for several days and ran out of his lactulose about a week ago. No fall or head trauma. No fever noticed. Recently had dark stools once (possible GI bleed). MEDS: lactulose (out), spironolactone, propranolol.\n\nHPI (from patient — limited): admits feeling 'foggy,' not sure how long. Denies headache, denies focal weakness.\nPMH: cirrhosis, portal hypertension. SOCIAL: long history of heavy alcohol use, quit recently per family.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: drowsy, jaundiced (scleral icterus).\n- Vitals: BP 118/72, HR 92, RR 16, 37.2°C, SpO2 97% RA.\n- Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.\n- Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.\n- Skin: jaundice, palmar erythema. No signs of head trauma.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is confused: give brief, vague, disoriented answers. Provide COLLATERAL details only when the student explicitly asks family/EMS/nursing/chart or the medication list.\n- Asterixis, ascites, and jaundice are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: You are the patient's DAUGHTER, the informant at the bedside. Your father is a 60-year-old man with cirrhosis who is drowsy, disoriented to time and place, and a POOR historian — he gives short, vague, sometimes incorrect answers and dozes off mid-sentence. YOU answer the substantive history; he answers only vaguely (\"I'm fine… tired…\"). Speak as a worried but organized family member in plain lay language.\n\nOPENING CONTEXT (you, the daughter, volunteer your concern but NOT a diagnosis): \"He's been getting more and more mixed up over the last two days — up all night, asleep all day, calling me by my late mother's name. I didn't know whether to bring him in.\"\n\nCOLLATERAL HPI (reveal the relevant piece ONLY when the student asks the matching question): Two days of worsening confusion, day-night reversal, sleeping most of the day, and one episode where he couldn't find words. NO fall, NO head injury, NO seizure, NO fever that you noticed. He has been CONSTIPATED for about 5 days. He has been eating very poorly for weeks — \"barely touches his food\" — since he quit drinking about 3 weeks ago. He had ONE dark, tarry stool 2 days ago. He has NOT been vomiting blood. No neck stiffness, no rash.\n\nMEDICATIONS (reveal the list only when asked about medications / the pill bottles; this list is a deliberate trap and several were changed recently): lactulose — but he RAN OUT about 10 days ago and never refilled it; spironolactone AND furosemide (his diuretics were just increased 2 weeks ago for leg swelling); propranolol; pantoprazole (a stomach-acid pill); and three drugs his primary doctor recently started or increased — TRAMADOL for back pain, GABAPENTIN, and ZOLPIDEM (a sleeping pill) at night. He sometimes takes an extra zolpidem when he can't sleep. ALLERGIES: none.\n\nPMH (reveal when asked): alcohol-related cirrhosis with portal hypertension and prior ascites; CKD stage 3 (baseline creatinine ~1.3); COPD (mild, on an inhaler); depression; hypertension; one prior hospitalization for confusion that \"cleared with the lactulose.\" No diabetes. No prior GI bleed that you know of.\n\nSOCIAL (reveal when asked): long history of heavy alcohol use; he QUIT about 3 weeks ago and has had nothing since — you are sure, you've been with him daily. Lives alone in a second-floor walk-up; you visit most days but cannot stay overnight. He has been more unsteady lately. Former smoker. No drugs.\n\nFAMILY: noncontributory. ROS (the patient, when pushed, denies headache, denies chest pain, denies focal weakness; you have not seen him shaking or having fevers/chills).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: drowsy, arousable to voice, jaundiced (scleral icterus), thin/cachectic.\n- Vitals: BP 104/64, HR 96, RR 16, 37.1°C, SpO2 96% RA. No orthostatic data unless obtained.\n- Neuro: disoriented to time/place; ASTERIXIS present on sustained wrist extension; NO nystagmus or gaze palsy and NO gait ataxia DEMONSTRATED on exam, though formal gait is limited by drowsiness; no focal motor or sensory deficit; reflexes symmetric; no neck stiffness.\n- Abdomen: mildly distended with shifting dullness (moderate ascites), nontender, no rebound/guarding; caput medusae and spider angiomata if examined.\n- Skin: jaundice, palmar erythema, no petechiae/purpura. No signs of head trauma.\n- Mucous membranes slightly dry.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The PATIENT is confused: he gives brief, vague, disoriented answers and may answer the wrong question. YOU (the daughter) supply the real collateral, but ONLY the specific item the student asks about — do not dump the whole story.\n- Reveal the full medication list (especially tramadol, gabapentin, zolpidem, the increased diuretics, the run-out lactulose, and the pantoprazole) ONLY when the student asks about medications, recent medication changes, or the pill bottles.\n- Reveal the dark/tarry stool, the constipation, the poor intake, and the recent alcohol cessation only when the matching question is asked.\n- Asterixis, ascites, jaundice, and the ABSENCE of nystagmus/gaze palsy/ataxia are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 96 — normal (always checked first in AMS).",
-      "Ammonia": "Elevated.",
-      "LFTs": "AST/ALT mildly elevated, bilirubin elevated, albumin low, INR prolonged.",
-      "CBC": "Hgb 10.5 (consider GI bleed), WBC 7.0, Plt 90 (cirrhosis).",
-      "BMP": "Na 132, K 3.6, Cr 1.1.",
-      "Infection_workup": "UA, blood cultures, and diagnostic paracentesis (to exclude SBP) — paracentesis: no neutrocytosis this time."
+      "Glucose": "Fingerstick glucose 88 — normal (always checked first in any altered patient to exclude hypoglycemia).",
+      "Ammonia": "Venous ammonia ELEVATED at 118 µmol/L (ref <35). Supports but does not by itself diagnose hepatic encephalopathy — HE remains a clinical diagnosis.",
+      "LFTs_coags": "AST 78, ALT 44, total bilirubin 4.2, albumin 2.6 (low), INR 1.7 (prolonged) — chronic synthetic dysfunction of cirrhosis; not an acute hepatitis.",
+      "CBC": "Hgb 8.9 (down from a baseline ~11; concerning for the GI bleed suggested by the tarry stool), MCV 101, WBC 6.4 (no leukocytosis), Plt 78 (cirrhosis/portal hypertension).",
+      "BMP": "Na 130 (hyponatremia), K 2.8 (HYPOKALEMIA), Cl 86, HCO3 34 (metabolic alkalosis), anion gap = 130 − (86 + 34) = 10 (normal); BUN 42, Cr 1.8 (up from baseline ~1.3 → AKI on CKD; BUN/Cr ~23 suggests a prerenal/hepatorenal and GI-blood-load picture). The hypokalemic metabolic alkalosis (driven by the up-titrated diuretics) is itself a potent precipitant of HE.",
+      "Infection_workup": "UA bland (no pyuria/nitrites); blood cultures pending/no growth; diagnostic paracentesis performed given the ascites — ascitic PMN count 90/µL (BELOW the 250/µL threshold), so NO spontaneous bacterial peritonitis on this tap.",
+      "Thiamine_tox": "Thiamine given empirically before glucose-containing fluids (recent abstinence + poor intake). Serum/urine tox and acetaminophen level negative; no salicylates. TSH normal. (Sent to address the Wernicke and toxic-metabolic forks.)"
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 6,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Tall peaked P in II (right atrial) plus broad notched P / deep terminal negativity in V1 (left atrial).",
-      "verify": "Source a study matching: Tall peaked P in II (right atrial) plus broad notched P / deep terminal negativity in V1 (left atrial). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm with prominent U waves, flattened/inverted T waves, ST depression, and a long QU interval — the EKG signature of HYPOKALEMIA, matching the serum K of 2.8.",
+      "verify": "Source a study matching: hypokalemia — prominent U waves, T-wave flattening, ST depression, prolonged QU. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing biatrial enlargement P waves",
+      "imageDescription": "12-lead showing hypokalemic changes: U waves, flat/inverted T waves, ST depression",
       "searchTerms": [
-        "biatrial enlargement ECG",
-        "P pulmonale P mitrale 12 lead"
+        "hypokalemia ECG U waves",
+        "U wave T flattening long QU 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 58-year-old man with longstanding cirrhosis and pulmonary hypertension presents with progressive confusion and exertional breathlessness."
+      "clinicalVignette": "A cachectic, recently-abstinent cirrhotic on up-titrated loop and aldosterone-antagonist diuretics presents confused; his EKG accompanies a serum potassium of 2.8 mmol/L."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "No consolidation or effusion (obtained to screen for an infectious precipitant).",
+      "findings": "No consolidation, no effusion, no aspiration; obtained to screen for an occult pulmonary infection as a precipitant in a drowsy patient at aspiration risk.",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
       "imageDescription": "Normal chest radiograph, no consolidation or effusion.",
@@ -60,16 +63,17 @@
         "normal PA chest x-ray"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 58-year-old man with cirrhosis presents confused, and a film is obtained to screen for an infectious precipitant."
+      "clinicalVignette": "A drowsy cirrhotic at aspiration risk has a film obtained to screen for an occult pneumonia precipitating his confusion."
     }
   },
   "revealKeys": [
     "Glucose",
     "Ammonia",
-    "LFTs",
+    "LFTs_coags",
     "CBC",
     "BMP",
     "Infection_workup",
+    "Thiamine_tox",
     "ekg",
     "cxr"
   ],
@@ -83,54 +87,68 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential for this patient's altered mental status (note your leading diagnosis).",
-      "rubric": "Hepatic encephalopathy (leading,7). Hypoglycemia (CANT-MISS — always exclude,4). Intracranial hemorrhage (CANT-MISS in a coagulopathic cirrhotic,4). Infection/sepsis incl. SBP (CANT-MISS,4). Electrolyte/metabolic derangement (core,3). Drug/toxin (core,2). Named leading dx w/ justification — cirrhosis, asterixis, missed lactulose/constipation (core,1).",
-      "idealAnswer": "Leading diagnosis: Hepatic encephalopathy. Must-not-miss diagnoses to exclude: Hypoglycemia; Intracranial hemorrhage; SBP. Also reasonable: Electrolyte/metabolic derangement; Drug/toxin.",
+      "prompt": "Based on your collateral history and exam, give your differential for this cirrhotic patient's altered mental status (state your leading diagnosis). Because this is a recently-abstinent alcoholic with poor intake on several sedating drugs, explicitly NAME AT LEAST THREE distinct mechanisms/precipitants by which this kind of patient develops encephalopathy, and name the must-not-miss alternatives you will exclude.",
+      "rubric": "Hepatic encephalopathy (leading,5). Wernicke encephalopathy — recently abstinent, cachectic, poor intake; must empirically treat with thiamine (CANT-MISS,4). Intracranial hemorrhage — coagulopathic/thrombocytopenic cirrhotic, falls/unsteady (CANT-MISS,3). Hypoglycemia (CANT-MISS — always exclude first,2). Infection/sepsis incl. SBP given ascites (CANT-MISS,2). Drug/sedative toxicity — tramadol/gabapentin/zolpidem accumulating in liver+renal failure (core,2). Names ≥3 distinct HE precipitants/mechanisms — e.g. missed lactulose/constipation, GI bleed (nitrogen load), hypokalemic alkalosis, infection/SBP, dehydration/diuresis, sedatives (core,4). Electrolyte/metabolic derangement as its own problem — hyponatremia + hypokalemia (core,2). Named leading dx w/ justification — asterixis, ascites, jaundice, missed lactulose (core,1). PENALTY: anchoring on HE without excluding hypoglycemia, structural bleed, Wernicke, or infection (-3).",
+      "idealAnswer": "Leading diagnosis: Hepatic encephalopathy. The closest competing alternative is Wernicke encephalopathy — he is recently abstinent, cachectic, and eating poorly, so thiamine MUST be given empirically before any glucose. Other must-not-miss diagnoses to exclude: hypoglycemia (check first), intracranial hemorrhage (he is coagulopathic, thrombocytopenic, and unsteady), and infection/SBP given the ascites. Sedative/drug toxicity is a real confounder — tramadol, gabapentin, and zolpidem all accumulate with hepatic and renal impairment. Three or more distinct mechanisms by which THIS patient developed encephalopathy: (1) missed lactulose with 5 days of constipation, (2) a GI bleed delivering a nitrogen load (tarry stool, Hgb drop), (3) hypokalemic metabolic alkalosis from the up-titrated diuretics (shifts ammonia into the CNS), plus dehydration/azotemia from over-diuresis, occult infection, and the sedating medications. Also reasonable: combined hyponatremia/hypokalemia as a contributor.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Hepatic encephalopathy",
-            "points": 7
+            "points": 5
           },
           {
-            "item": "Hypoglycemia",
+            "item": "Wernicke encephalopathy",
             "points": 4
           },
           {
             "item": "Intracranial hemorrhage",
-            "points": 4
+            "points": 3
           },
           {
-            "item": "SBP",
-            "points": 4
+            "item": "Hypoglycemia",
+            "points": 2
+          },
+          {
+            "item": "Infection/sepsis including SBP",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Electrolyte/metabolic derangement",
-            "points": 3
-          },
-          {
-            "item": "Drug/toxin",
+            "item": "Drug/sedative toxicity (tramadol/gabapentin/zolpidem accumulating in hepatic+renal failure)",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ justification — cirrhosis, asterixis, missed lactulose/constipation",
+            "item": "Names three or more distinct HE precipitants/mechanisms (missed lactulose/constipation, GI bleed/nitrogen load, hypokalemic alkalosis, infection, diuresis/dehydration, sedatives)",
+            "points": 4
+          },
+          {
+            "item": "Electrolyte/metabolic derangement (hyponatremia + hypokalemia) as its own problem",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — asterixis, ascites, jaundice, missed lactulose",
             "points": 1
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on HE without excluding hypoglycemia, structural bleed, Wernicke, or infection",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Hypoglycemia",
+        "Wernicke encephalopathy",
         "Intracranial hemorrhage",
-        "SBP"
+        "Hypoglycemia",
+        "Infection/sepsis including SBP"
       ],
       "acceptableAlternatives": [
-        "Electrolyte/metabolic derangement",
-        "Drug/toxin"
+        "Drug/sedative toxicity (tramadol/gabapentin/zolpidem)",
+        "Electrolyte/metabolic derangement (hyponatremia + hypokalemia)"
       ]
     },
     {
@@ -139,63 +157,73 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Fingerstick GLUCOSE first (CANT-MISS,3). BMP/electrolytes (2). Ammonia (2). LFTs/coags (2). CBC (2). Infection workup — UA, cultures, CXR, diagnostic paracentesis for SBP (3). CT head if focal deficit/trauma/anticoagulated (1). PENALTY: anchoring without excluding hypoglycemia or infection (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; Ammonia; LFTs; CBC; BMP; Infection workup.",
+      "rubric": "Fingerstick GLUCOSE first, and give THIAMINE before any glucose-containing fluid (CANT-MISS,3). BMP/electrolytes — looking for the Na/K derangement (2). Venous ammonia (1). LFTs/coags (1). CBC — assess for GI-bleed-related anemia (2). Infection workup — UA, cultures, CXR, and diagnostic PARACENTESIS for SBP given ascites (3). EKG to assess the hypokalemia (1). Non-contrast CT HEAD given coagulopathy/unsteadiness and any focal/structural concern (1). Drug levels/tox + acetaminophen, TSH (1). PENALTY: anchoring without excluding hypoglycemia, SBP, or a structural bleed (-2); giving IV dextrose before thiamine in a malnourished alcoholic (-2).",
+      "idealAnswer": "Order: fingerstick GLUCOSE first and give empiric THIAMINE before glucose; BMP; venous Ammonia; LFTs/coags; CBC; full infection workup including UA, blood cultures, CXR, and a diagnostic PARACENTESIS for SBP; EKG (to assess the hypokalemia); a non-contrast CT head given his coagulopathy/thrombocytopenia and unsteadiness; and a tox screen / acetaminophen level / TSH to address the sedative-toxicity and Wernicke forks.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Fingerstick GLUCOSE first",
+            "item": "Fingerstick GLUCOSE first and thiamine before glucose",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
+            "item": "BMP / electrolytes",
             "points": 2
           },
           {
             "item": "Ammonia",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "LFTs",
-            "points": 2
+            "item": "LFTs / coags",
+            "points": 1
           },
           {
             "item": "CBC",
             "points": 2
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "Infection workup including diagnostic paracentesis for SBP",
+            "points": 3
           },
           {
-            "item": "Infection workup",
-            "points": 2
+            "item": "EKG",
+            "points": 1
+          },
+          {
+            "item": "Non-contrast CT head",
+            "points": 1
+          },
+          {
+            "item": "Tox screen / acetaminophen level / TSH",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "anchoring without excluding hypoglycemia or infection",
+            "item": "Anchoring without excluding hypoglycemia, SBP, or a structural bleed",
+            "points": -2
+          },
+          {
+            "item": "Giving IV dextrose before thiamine in a malnourished alcoholic",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Fingerstick GLUCOSE first"
+        "Fingerstick GLUCOSE first and thiamine before glucose"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "anchoring without excluding hypoglycemia or infection"
+        "Anchoring without excluding hypoglycemia, SBP, or a structural bleed",
+        "Giving IV dextrose before thiamine in a malnourished alcoholic"
       ],
       "orderSensitiveActions": [
-        "anchoring without excluding hypoglycemia or infection"
+        "Fingerstick GLUCOSE first and thiamine before glucose",
+        "Giving IV dextrose before thiamine in a malnourished alcoholic"
       ]
     },
     {
@@ -204,32 +232,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = biatrial enlargement. CREDIT: recognizes biatrial enlargement (7); identifies right atrial enlargement — tall peaked P in II (5); identifies left atrial enlargement — broad notched P / deep terminal negativity in V1 (3). PENALTY: calling the tracing normal / reporting only one atrium (-2).",
+      "prompt": "Here is THIS patient's own 12-lead EKG, drawn at the same time as his labs. Describe your findings and state how they fit his clinical picture and his potassium of 2.8.",
+      "rubric": "Findings = hypokalemic EKG: prominent U waves, T-wave flattening/inversion, ST depression, prolonged QU. CREDIT: identifies prominent U waves (5); recognizes T-wave flattening/inversion and ST depression (4); links the pattern to HYPOKALEMIA matching K 2.8 and notes the prolonged QU/effective long-QT predisposes to ventricular arrhythmia (torsades), so the K (and Mg) must be repleted urgently (4); systematic read with rate/rhythm (2). PENALTY: calling the tracing normal, mistaking the U waves for a STEMI/extra QRS, or missing the hypokalemia link (-3).",
       "keyFindings": [
-        "right atrial enlargement (tall peaked P)",
-        "left atrial enlargement (broad notched P / V1 terminal force)"
+        "prominent U waves",
+        "T-wave flattening/inversion and ST depression",
+        "links the pattern to hypokalemia (K 2.8) with a prolonged QU predisposing to torsades — replete K and Mg"
       ],
       "criticalFindings": [
-        "Biatrial enlargement."
+        "Hypokalemic EKG — prominent U waves with T-wave flattening, ST depression, and a prolonged QU interval, matching the serum potassium of 2.8."
       ],
       "commonMistakes": [
-        "reporting only one atrium's enlargement"
+        "reporting only sinus rhythm and calling the tracing normal",
+        "mistaking the U wave for a second QRS or for an acute STEMI",
+        "missing that the hypokalemia is the same derangement precipitating his HE"
       ],
-      "idealAnswer": "Biatrial enlargement: peaked P waves in II with a broad biphasic P in V1.",
+      "idealAnswer": "Sinus rhythm with prominent U waves, flattened/inverted T waves, ST depression, and a prolonged QU interval — the classic EKG of HYPOKALEMIA, fitting his serum potassium of 2.8. This is not incidental: the hypokalemic metabolic alkalosis (from his up-titrated diuretics) is itself a precipitant of his hepatic encephalopathy, and the prolonged QU puts him at risk for torsades, so potassium and magnesium must be repleted urgently. No acute ST-elevation pattern of ischemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Biatrial enlargement."
+          "Hypokalemic EKG — prominent U waves with T-wave flattening, ST depression, and prolonged QU, matching K 2.8; replete K and Mg."
         ],
         "coreActions": [
-          "right atrial enlargement (tall peaked P)",
-          "left atrial enlargement (broad notched P / V1 terminal force)"
+          "prominent U waves",
+          "T-wave flattening/inversion and ST depression",
+          "links the pattern to hypokalemia precipitating HE and a torsades risk — urgent K and Mg repletion"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misreads U waves as STEMI or extra QRS / misses the hypokalemia",
             "points": -3
           }
         ]
@@ -242,29 +274,30 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no consolidation/effusion. CREDIT: identifies a normal film (6); explains it screens for an infectious precipitant (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no consolidation/effusion/aspiration. CREDIT: identifies a normal film with no consolidation or effusion (6); explains it was obtained to screen for an occult pneumonia/aspiration precipitant in a drowsy patient at aspiration risk (4). PENALTY: inventing pathology on a clear film (-2).",
       "keyFindings": [
-        "identifies a normal film",
-        "explains it screens for an infectious precipitant"
+        "no consolidation, effusion, or aspiration",
+        "explains it screens for an occult pulmonary infection / aspiration precipitant"
       ],
       "criticalFindings": [
-        "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+        "No consolidation, effusion, or aspiration — a normal film obtained to screen for an occult pulmonary precipitant in a drowsy, aspiration-prone patient."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing an infiltrate on a clear film",
+        "failing to state why the film was obtained"
       ],
-      "idealAnswer": "No consolidation or effusion (obtained to screen for an infectious precipitant).",
+      "idealAnswer": "No consolidation, effusion, or aspiration — a normal chest film. It was obtained to screen for an occult pneumonia or aspiration as an infectious precipitant of his encephalopathy, since he is drowsy and at aspiration risk; the clear film makes a pulmonary precipitant unlikely.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes a normal film: no consolidation or effusion (obtained to screen for an infectious precipitant).",
+            "item": "Recognizes a normal film: no consolidation, effusion, or aspiration, obtained to screen for an occult pulmonary precipitant.",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "explains it screens for an infectious precipitant",
+            "item": "explains it screens for an occult pulmonary infection / aspiration precipitant",
             "points": 4
           }
         ],
@@ -281,88 +314,102 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the elevated ammonia, normal glucose, and the history, what is your diagnosis and the likely precipitant?",
-      "rubric": "Hepatic encephalopathy (5). Names a precipitant — constipation / missed lactulose / possible GI bleed (3). Notes ammonia supports but does not alone diagnose; it is clinical (bonus,2).",
-      "idealAnswer": "Hepatic encephalopathy, most likely precipitated by missed lactulose and constipation (with a possible GI bleed given the dark stools and low Hgb). The elevated ammonia supports but does not confirm it — HE is a clinical diagnosis.",
+      "prompt": "Integrate everything: an elevated ammonia, a NORMAL glucose, the U-wave/hypokalemia EKG, K 2.8 with HCO3 34 (hypokalemic metabolic alkalosis), Na 130, Hgb 8.9 with a tarry stool, Cr 1.8 (AKI on CKD), an ascitic PMN count of 90 (no SBP), a normal CT head, and his thiamine already given. What is your single diagnosis, how did you resolve the hepatic-encephalopathy-versus-Wernicke fork, what discriminating evidence excluded the other must-not-misses, and which concurrent problems must you treat in their own right?",
+      "rubric": "Hepatic encephalopathy (5). Resolves the HE-vs-Wernicke fork EXPLICITLY: no nystagmus/ophthalmoplegia/gait ataxia, asterixis with elevated ammonia and known cirrhosis favor HE, but thiamine was given empirically because the recent abstinence + malnutrition made Wernicke plausible and untreated Wernicke is catastrophic (2). Names the discriminators that excluded the other must-not-misses — normal glucose excludes hypoglycemia, normal CT head excludes a structural bleed, ascitic PMN 90 (<250) excludes SBP — and states HE is clinical, ammonia supports but does not confirm (1). Names ≥3 precipitants driving THIS decompensation — missed lactulose/constipation, GI bleed nitrogen load, hypokalemic alkalosis from diuretics, sedating drugs (tramadol/gabapentin/zolpidem), azotemia/dehydration (1). Recognizes the CONCURRENT problems as their own issues — hypokalemia (torsades risk on EKG) + metabolic alkalosis, hyponatremia, GI-bleed anemia, and AKI on CKD (1).",
+      "idealAnswer": "Hepatic encephalopathy, multifactorially precipitated. I resolved the HE-versus-Wernicke fork clinically: he has asterixis, jaundice, ascites, an elevated ammonia, and known cirrhosis with a missed-lactulose history, and his exam shows NO nystagmus, ophthalmoplegia, or gait ataxia — so HE is far more likely than Wernicke. But because he is recently abstinent and malnourished, I still gave empiric thiamine before any glucose, since missing Wernicke is catastrophic and the two can coexist. The other must-not-misses are excluded by the data: the normal glucose rules out hypoglycemia, the normal non-contrast CT head rules out an intracranial bleed despite his coagulopathy, and the ascitic PMN count of 90 (below 250) rules out SBP on this tap. Ammonia supports but does not confirm — HE is a clinical diagnosis. At least three precipitants are operating at once: missed lactulose with constipation, a GI bleed delivering a nitrogen load (tarry stool, Hgb 8.9), and a hypokalemic metabolic alkalosis from his up-titrated diuretics — plus the accumulating sedatives (tramadol, gabapentin, zolpidem) and prerenal azotemia. Concurrent problems I must treat in their own right: the hypokalemia (with the U-wave/long-QU torsades risk on his EKG) and metabolic alkalosis, the hyponatremia, the GI-bleed anemia, and the AKI on CKD stage 3.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Notes ammonia supports but does not alone diagnose; it is clinical",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
-      }
+      },
+      "mustNotMiss": [
+        "Wernicke encephalopathy",
+        "Intracranial hemorrhage",
+        "Spontaneous bacterial peritonitis"
+      ],
+      "acceptableAlternatives": [
+        "Sedative/drug toxicity (tramadol/gabapentin/zolpidem)",
+        "Electrolyte/metabolic derangement (hypokalemia, hyponatremia)"
+      ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH ESLD/HE: identify and treat precipitant – GIB, SBP/infection, constipation, electrolytes, sedatives (CANT-MISS,6); lactulose titrated to 2-3 soft stools/day (CANT-MISS,6); rifaximin add-on (4); airway protection if obtunded (3); correct hypokalemia (2). PENALTY: sedatives/benzodiazepines in HE (-3); missing/not treating a precipitant such as SBP or GI bleed (-3).",
-      "idealAnswer": "Identify and treat the precipitant (GI bleed, infection/SBP, constipation, dehydration, electrolytes, sedatives). Lactulose titrated to 2–3 soft stools/day (PO or via rectal enema if obtunded); add rifaximin. Protect the airway if obtunded. Correct hypokalemia/alkalosis. Avoid sedatives.",
+      "prompt": "What is your management plan, including how you will handle his medications and his eventual disposition and discharge planning?",
+      "rubric": "Per MGH ESLD/HE: identify and treat EVERY precipitant — GI bleed (transfuse to Hgb ~7, start IV PPI, GI for endoscopy), constipation, the hypokalemic alkalosis, dehydration/over-diuresis, occult infection (CANT-MISS,6); lactulose titrated to 2–3 soft stools/day, PO or by retention enema if too drowsy (CANT-MISS,5); STOP/AVOID the sedating and offending drugs — hold tramadol, gabapentin, zolpidem, and hold/reduce the diuretics driving the alkalosis (CANT-MISS,4); replete potassium AND magnesium (the EKG U-wave/long-QU torsades risk) and address hyponatremia carefully (3); add rifaximin (2); protect the airway / aspiration precautions if obtunded and continue empiric thiamine (2); SAFE-DISCHARGE & DISPOSITION — admit now; on recovery do medication reconciliation (refill lactulose, deprescribe the sedatives), caregiver/daughter education on lactulose titration and red flags, home-safety/PT eval given he lives alone up stairs and is unsteady, and close hepatology follow-up (3). PENALTY: giving sedatives/benzodiazepines for agitation in HE (-3); missing or failing to treat a precipitant such as the GI bleed, hypokalemia, or the offending drugs (-3); discharging him home without med reconciliation, caregiver education, and a safety/follow-up plan (-2).",
+      "idealAnswer": "Admit. Identify and treat every precipitant: the GI bleed (transfuse to a Hgb goal ~7, IV PPI, urgent GI consult for endoscopy), the constipation, the hypokalemic metabolic alkalosis, the over-diuresis/dehydration, and any occult infection. Lactulose titrated to 2–3 soft stools/day, given PO or by retention enema if he is too drowsy to take it safely; add rifaximin. STOP the offending and sedating drugs — hold tramadol, gabapentin, and zolpidem (all accumulate in hepatic and renal failure and worsen encephalopathy) and hold/reduce the up-titrated diuretics that drove the hypokalemic alkalosis. Aggressively replete potassium AND magnesium given the U-wave/prolonged-QU torsades risk on his EKG, and correct the hyponatremia slowly. Continue empiric thiamine; protect the airway with aspiration precautions if he becomes more obtunded. Avoid benzodiazepines/sedatives for agitation. For disposition and SAFE DISCHARGE once he clears: full medication reconciliation (refill the lactulose, formally deprescribe the sedatives), educate his daughter on titrating lactulose and on the red-flag signs of recurrence, arrange a home-safety/PT evaluation since he lives alone in a second-floor walk-up and has been unsteady, and set up close hepatology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Identify and treat precipitant",
+            "item": "Identify and treat every precipitant (GI bleed, constipation, hypokalemic alkalosis, dehydration, infection)",
             "points": 6
           },
           {
-            "item": "Lactulose",
-            "points": 6
+            "item": "Lactulose titrated to 2-3 soft stools/day (PO or retention enema if obtunded)",
+            "points": 5
+          },
+          {
+            "item": "Stop/avoid the sedating and offending drugs (tramadol, gabapentin, zolpidem; hold/reduce diuretics)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Rifaximin",
-            "points": 4
-          },
-          {
-            "item": "Airway protection if obtunded",
+            "item": "Replete potassium and magnesium (EKG torsades risk) and address hyponatremia carefully",
             "points": 3
           },
           {
-            "item": "Correct electrolytes (hypokalemia)",
+            "item": "Rifaximin",
             "points": 2
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "Evaluate for SBP (diagnostic paracentesis)",
+            "item": "Airway protection / aspiration precautions if obtunded and continue empiric thiamine",
             "points": 2
+          },
+          {
+            "item": "Safe discharge and disposition: med reconciliation, caregiver education, home-safety/PT eval, close hepatology follow-up",
+            "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "Sedatives/benzodiazepines",
+            "item": "Sedatives/benzodiazepines for agitation in HE",
             "points": -3
           },
           {
-            "item": "Missing precipitant",
+            "item": "Missing or failing to treat a precipitant (GI bleed, hypokalemia, offending drugs)",
             "points": -3
+          },
+          {
+            "item": "Discharging home without med reconciliation, caregiver education, and a safety/follow-up plan",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Identify and treat precipitant",
-        "Lactulose"
+        "Identify and treat every precipitant (GI bleed, constipation, hypokalemic alkalosis, dehydration, infection)",
+        "Lactulose titrated to 2-3 soft stools/day (PO or retention enema if obtunded)",
+        "Stop/avoid the sedating and offending drugs (tramadol, gabapentin, zolpidem; hold/reduce diuretics)"
       ],
       "optionalActions": [
+        "Replete potassium and magnesium (EKG torsades risk) and address hyponatremia carefully",
         "Rifaximin",
-        "Airway protection if obtunded",
-        "Correct electrolytes (hypokalemia)",
-        "Evaluate for SBP (diagnostic paracentesis)"
+        "Airway protection / aspiration precautions if obtunded and continue empiric thiamine",
+        "Safe discharge and disposition: med reconciliation, caregiver education, home-safety/PT eval, close hepatology follow-up"
       ],
       "unsafeActions": [
-        "Sedatives/benzodiazepines",
-        "Missing precipitant"
+        "Sedatives/benzodiazepines for agitation in HE",
+        "Missing or failing to treat a precipitant (GI bleed, hypokalemia, offending drugs)",
+        "Discharging home without med reconciliation, caregiver education, and a safety/follow-up plan"
       ],
       "consults": [
-        "Hepatology"
+        "Hepatology",
+        "Gastroenterology"
       ],
       "disposition": "Admit",
       "mghReference": {
@@ -380,12 +427,16 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "sedative_use",
+      "gi_bleeding"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "60-year-old man, drowsy, disoriented to time and place, slow to respond. A POOR historian — gives short, vague, sometimes incorrect answers.",
+    "communicationStyle": "the patient is confused and gives limited, vague answers; the daughter at bedside supplies organized collateral when asked",
+    "affect": "60-year-old man, drowsy, disoriented to time and place, slow to respond, dozes off mid-sentence — a POOR historian. His daughter is the informant: worried but organized.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "The patient answers only vaguely; the daughter gives real collateral, but only the specific item asked about",
+      "Do not reveal the full medication list (tramadol/gabapentin/zolpidem/increased diuretics/run-out lactulose) unless asked about medications or recent medication changes",
+      "Do not reveal the tarry stool, constipation, poor intake, or recent alcohol cessation unless the matching question is asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -399,12 +450,14 @@
         "alcohol",
         "drinking",
         "how much do you drink",
+        "when did he stop drinking",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "last drink"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "core",
-      "points": 2,
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -414,11 +467,51 @@
         "medication adherence",
         "missed doses",
         "ran out",
-        "taking your medications"
+        "lactulose",
+        "taking his medications",
+        "refill"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_changes",
+      "category": "meds",
+      "triggerConcepts": [
+        "recent medication changes",
+        "new medications",
+        "what does he take",
+        "medication list",
+        "pill bottles",
+        "tramadol",
+        "gabapentin",
+        "zolpidem",
+        "sleeping pill",
+        "diuretics increased",
+        "any sedatives"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "gi_bleeding",
+      "category": "ros",
+      "triggerConcepts": [
+        "black stool",
+        "tarry stool",
+        "blood in stool",
+        "melena",
+        "vomiting blood",
+        "gi bleeding",
+        "bowel movements"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -442,7 +535,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "day-night reversal",
+        "how is the confusion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -468,7 +563,14 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "fall",
+        "head injury",
+        "seizure",
+        "constipation",
+        "eating",
+        "intake"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -495,7 +597,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "cirrhosis",
+        "kidney",
+        "copd"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -521,7 +626,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "confusion before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -532,7 +638,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_shifting_dullness_finding_1",
-      "finding": "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
+      "finding": "Abdomen: mildly distended with shifting dullness (moderate ascites), nontender, no rebound/guarding; caput medusae and spider angiomata if examined.",
       "revealedBy": [
         "assess_shifting_dullness"
       ],
@@ -542,7 +648,7 @@
     },
     {
       "id": "inspect_abdomen_finding_2",
-      "finding": "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
+      "finding": "Abdomen: mildly distended with shifting dullness (moderate ascites), nontender, no rebound/guarding; caput medusae and spider angiomata if examined.",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -552,7 +658,7 @@
     },
     {
       "id": "inspect_sclera_finding_3",
-      "finding": "General: drowsy, jaundiced (scleral icterus).",
+      "finding": "General: drowsy, jaundiced (scleral icterus), thin/cachectic.",
       "revealedBy": [
         "inspect_sclera",
         "assess_for_jaundice"
@@ -563,7 +669,7 @@
     },
     {
       "id": "assess_asterixis_finding_4",
-      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "finding": "Neuro: disoriented to time/place; ASTERIXIS present on sustained wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
       "revealedBy": [
         "assess_asterixis"
       ],
@@ -572,8 +678,29 @@
       "normalIfNotPresent": "No asterixis."
     },
     {
-      "id": "assess_motor_strength_finding_5",
-      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "id": "assess_cranial_nerves_finding_5",
+      "finding": "Neuro: NO nystagmus or gaze palsy/ophthalmoplegia on cranial-nerve testing (a key negative arguing AGAINST Wernicke encephalopathy in this recently-abstinent, malnourished patient).",
+      "revealedBy": [
+        "assess_cranial_nerves"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Extraocular movements intact, no nystagmus."
+    },
+    {
+      "id": "assess_gait_finding_6",
+      "finding": "Neuro: NO gait ataxia demonstrated (formal gait limited by drowsiness); the absent ophthalmoplegia/nystagmus/ataxia triad argues against Wernicke, though thiamine is still given empirically.",
+      "revealedBy": [
+        "assess_gait",
+        "assess_coordination"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No ataxia; gait limited by drowsiness."
+    },
+    {
+      "id": "assess_motor_strength_finding_7",
+      "finding": "Neuro: disoriented to time/place; ASTERIXIS present on sustained wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -583,18 +710,8 @@
       "normalIfNotPresent": "No focal motor deficit."
     },
     {
-      "id": "assess_reflexes_finding_6",
-      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
-      "revealedBy": [
-        "assess_reflexes"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "Normal reflexes."
-    },
-    {
-      "id": "assess_mental_status_finding_7",
-      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "id": "assess_mental_status_finding_8",
+      "finding": "Neuro: disoriented to time/place, arousable to voice, dozes off mid-interview; no neck stiffness.",
       "revealedBy": [
         "assess_mental_status"
       ],
@@ -613,103 +730,112 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Hepatic encephalopathy",
-    "diagnosticFramework": "60M with known cirrhosis is brought in by family for 2 days of progressive confusion and excessive sleepiness. The diagnosis is Hepatic encephalopathy, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "60M with alcohol-related cirrhosis, CKD stage 3, COPD, and depression — recently abstinent and malnourished, on a recently-changed list of sedating medications — is brought in by his daughter for 2 days of progressive confusion. The diagnosis is Hepatic encephalopathy, precipitated multifactorially (missed lactulose/constipation, a GI bleed nitrogen load, a hypokalemic metabolic alkalosis from up-titrated diuretics, and accumulating sedatives), reached by taking collateral history from the daughter, performing the targeted neuro/abdominal exam, and interpreting an integrated hypokalemic EKG and labs while excluding the must-not-miss alternatives (Wernicke encephalopathy, intracranial hemorrhage, hypoglycemia, SBP).",
     "keyHistoryClues": [
-      "medication adherence"
+      "medication adherence and recent medication changes",
+      "tarry stool / GI bleeding"
     ],
     "keyPhysicalExamFindings": [
-      "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
-      "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
-      "General: drowsy, jaundiced (scleral icterus).",
-      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
-      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
-      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
-      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric."
+      "Abdomen: mildly distended with shifting dullness (moderate ascites), nontender, no rebound/guarding; caput medusae and spider angiomata if examined.",
+      "Abdomen: mildly distended with shifting dullness (moderate ascites), nontender, no rebound/guarding; caput medusae and spider angiomata if examined.",
+      "General: drowsy, jaundiced (scleral icterus), thin/cachectic.",
+      "Neuro: disoriented to time/place; ASTERIXIS present on sustained wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "Neuro: NO nystagmus or gaze palsy/ophthalmoplegia on cranial-nerve testing (argues against Wernicke).",
+      "Neuro: NO gait ataxia demonstrated (argues against Wernicke; thiamine still given empirically).",
+      "Neuro: disoriented to time/place; ASTERIXIS present on sustained wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "Neuro: disoriented to time/place, arousable to voice, dozes off mid-interview; no neck stiffness."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "Ammonia",
-      "LFTs",
+      "LFTs_coags",
       "CBC",
       "BMP",
-      "Infection_workup"
+      "Infection_workup",
+      "Thiamine_tox"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Hepatic encephalopathy while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Hepatic encephalopathy and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, recognizing a poor-historian patient who needs collateral.",
+      "Take the focused collateral history from the daughter — the missed lactulose, recent medication changes (sedatives, up-titrated diuretics), the tarry stool, poor intake, and recent alcohol cessation — only on direct questioning.",
+      "Perform the targeted neuro and abdominal exam (asterixis, ascites, jaundice) and check for the Wernicke triad (nystagmus/ophthalmoplegia/ataxia).",
+      "Build a differential led by Hepatic encephalopathy, naming three or more precipitants and explicitly excluding Wernicke, intracranial hemorrhage, hypoglycemia, and SBP.",
+      "Order a focused workup (glucose first, thiamine before glucose, paracentesis, CT head) and interpret the integrated hypokalemic EKG, the CXR, and the multi-system labs.",
+      "Commit to Hepatic encephalopathy, treat every precipitant and the concurrent electrolyte/anemia/AKI problems, deprescribe the offending sedatives, and arrange a safe discharge with caregiver education and follow-up."
     ],
     "commonPitfalls": [
-      "Sedatives/benzodiazepines",
-      "Missing precipitant"
+      "Anchoring on HE without excluding hypoglycemia, Wernicke, a structural bleed, or SBP",
+      "Giving IV dextrose before thiamine in a malnourished, recently-abstinent alcoholic",
+      "Reading the U-wave EKG as normal or as a STEMI and missing the hypokalemia",
+      "Sedatives/benzodiazepines for agitation in HE",
+      "Discharging home without med reconciliation, caregiver education, and a safety plan"
     ],
     "managementPearls": [
-      "Identify and treat precipitant",
-      "Lactulose"
+      "Identify and treat EVERY precipitant (GI bleed, constipation, hypokalemic alkalosis, dehydration, infection)",
+      "Lactulose titrated to 2-3 soft stools/day and STOP the accumulating sedatives"
     ],
     "criticalHistoryItems": [
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "medication_changes",
+      "gi_bleeding"
     ],
     "criticalExamItems": [
       "assess_asterixis"
     ],
     "criticalWorkupItems": [
-      "Fingerstick GLUCOSE first"
+      "Fingerstick GLUCOSE first and thiamine before glucose"
     ],
     "criticalInterpretationItems": [
-      "Biatrial enlargement.",
-      "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+      "Hypokalemic EKG — prominent U waves with T-wave flattening, ST depression, and prolonged QU, matching K 2.8.",
+      "No consolidation, effusion, or aspiration — a normal film screening for an occult pulmonary precipitant."
     ],
     "criticalManagementItems": [
-      "Identify and treat precipitant",
-      "Lactulose"
+      "Identify and treat every precipitant (GI bleed, constipation, hypokalemic alkalosis, dehydration, infection)",
+      "Lactulose titrated to 2-3 soft stools/day (PO or retention enema if obtunded)",
+      "Stop/avoid the sedating and offending drugs (tramadol, gabapentin, zolpidem; hold/reduce diuretics)"
     ],
     "keyImageInterpretationFindings": [
-      "Biatrial enlargement.",
-      "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+      "Hypokalemic EKG — prominent U waves with T-wave flattening, ST depression, and prolonged QU.",
+      "No consolidation, effusion, or aspiration — a normal chest film."
     ],
     "criticalImageInterpretationFindings": [
-      "Biatrial enlargement.",
-      "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+      "Hypokalemic EKG — prominent U waves with T-wave flattening, ST depression, and prolonged QU, matching K 2.8.",
+      "No consolidation, effusion, or aspiration — a normal chest film screening for an occult pulmonary precipitant."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "The patient's OWN EKG can encode the metabolic derangement precipitating the encephalopathy — U waves and a long QU mean hypokalemia, which both precipitates HE and threatens torsades.",
+      "Read every study systematically before committing, and state pertinent negatives, not just positives.",
+      "An incidental-looking abnormality is an interpretation task in its own right — name it, then judge its relevance to the whole picture."
     ]
   },
   "communicationScoring": {
     "maxPoints": 5,
     "items": [
       {
-        "item": "Uses an open-ended opening question",
+        "item": "Uses an open-ended opening question and orients to the collateral informant (daughter)",
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the family's concern",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, medications, adherence)",
         "points": 1
       },
       {
-        "item": "Explains next steps in patient-friendly language",
+        "item": "Explains next steps in patient/caregiver-friendly language",
         "points": 1
       },
       {
-        "item": "Checks understanding",
+        "item": "Checks understanding with the caregiver",
         "points": 1
       }
     ]
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read — patient's own hypokalemic EKG folded into the diagnostic puzzle",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

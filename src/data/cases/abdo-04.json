@@ -1,71 +1,75 @@
 {
   "id": "abdo-04",
   "category": "Abdominal Pain",
-  "difficulty": "moderate",
-  "title": "Cramping pain with vomiting and no stool",
+  "difficulty": "hard",
+  "title": "Crampy pain, vomiting, and obstipation in an older woman with atrial fibrillation",
   "diagnosis": "Small bowel obstruction",
   "chart": {
-    "ageSex": "60F",
+    "ageSex": "72F",
     "cc": "Crampy abdominal pain and vomiting",
-    "oneLiner": "60F with prior abdominal surgery presents with a day of crampy abdominal pain, distension, bilious vomiting, and inability to pass stool or gas.",
+    "oneLiner": "72F with prior open hysterectomy, atrial fibrillation on apixaban (recently missed doses), CKD stage 3, type 2 diabetes, and hypertension presents with ~24 hours of colicky abdominal pain, distension, bilious vomiting, and inability to pass stool or gas.",
     "vitals": {
-      "BP": "118/72",
-      "HR": "104",
-      "RR": "18",
-      "Temp": "37.4°C",
-      "SpO2": "98% RA"
+      "BP": "138/84",
+      "HR": "108",
+      "RR": "20",
+      "Temp": "37.5°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "My belly's all crampy and swollen, I keep throwing up, and I haven't been able to go to the bathroom.",
-  "patientFile": "PERSONA: 60-year-old woman, uncomfortable in waves (colicky), abdomen visibly distended. Cooperative.\n\nHPI: ~24h of crampy, intermittent (colicky) abdominal pain that comes in waves, progressive abdominal distension, multiple episodes of vomiting (now bilious), and OBSTIPATION — no flatus or stool since yesterday. Prior open hysterectomy years ago (adhesions; only if asked about surgeries). NO fever initially, NO bloody stool.\nPMH: hysterectomy (open), hypertension. MEDS: amlodipine. SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mild dehydration.\n- Vitals: BP 118/72, HR 104, RR 18, 37.4°C, SpO2 98% RA.\n- Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed midline surgical scar. No hernias palpable (check groin).\n- Mucous membranes dry.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior surgery unless asked about past operations or scars.\n- Bowel sounds, distension, and the scar are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My belly's all crampy and swollen, I keep throwing up, and I haven't been able to go to the bathroom since yesterday.",
+  "patientFile": "PERSONA: 72-year-old woman, uncomfortable in waves (colicky), abdomen visibly distended, dry-mouthed. Cooperative but tired. Worried because she 'feels like something is really backed up.'\n\nHPI: ~24h of crampy, intermittent (colicky) abdominal pain that comes in waves every few minutes, progressive abdominal distension, and multiple episodes of vomiting that have turned greenish-yellow (bilious). OBSTIPATION — no flatus and no stool since yesterday morning. The pain is generalized and crampy, NOT a constant severe boring pain, and between cramps she feels relatively comfortable. NO blood in the vomit or stool that she has seen. NO black tarry stools. The pain is NOT dramatically out of proportion to the exam, and there was no single sudden 'worst pain of my life' onset (reveal these reassuring features only if asked to characterize the pain).\nKEY CONFOUNDER (reveal only when asked the relevant question): She has atrial fibrillation and is supposed to take a blood thinner (apixaban), but she has MISSED it for about three days because the nausea made her skip her pills. She has also skipped her water pill and her other medicines for two days. (This missed anticoagulation in an AF patient is exactly why bowel ischemia/an embolus must be considered — but her pain is colicky and not constant/out-of-proportion, which argues against established mesenteric ischemia.)\nPMH: open hysterectomy years ago for fibroids (adhesions; only if asked about surgeries or scars); atrial fibrillation; chronic kidney disease (her doctor told her her kidneys 'run about 60%'); type 2 diabetes; high blood pressure; acid reflux. NO prior bowel obstruction. NO weight loss, no change in bowel habits before this, no known cancer (reveal if asked — argues against a malignant obstruction).\nMEDS (reveal when asked): apixaban (a blood thinner for her heart rhythm — recently missed ~3 days), diltiazem (for her heart rate), metformin (diabetes), lisinopril (blood pressure), furosemide (a water pill), omeprazole (reflux). ALLERGIES: none. SOCIAL: nonsmoker, no alcohol, lives with her husband, independent at baseline and walks without help. FAMILY: noncontributory. ROS: as above; no fevers/chills initially, no chest pain, no shortness of breath, no urinary symptoms, no bloody/black stools.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable in waves, tired, mildly dehydrated.\n- Vitals: BP 138/84, HR 108 and irregularly irregular, RR 20, 37.5°C, SpO2 97% RA.\n- Abdomen: distended and tympanitic; diffuse MILD tenderness without focal peritonism, NO rigidity, NO rebound early; pain is clearly out of proportion to exam findings is NOT present (the abdomen is soft between cramps); high-pitched/tinkling bowel sounds early (becoming quieter/absent later); well-healed lower-midline surgical scar. No groin or incisional hernias palpable.\n- Mucous membranes dry; skin turgor mildly reduced.\n- Pulse irregularly irregular (atrial fibrillation); no carotid bruits; lungs clear; no peripheral edema.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior surgery, the atrial fibrillation, or the missed blood thinner unless asked about past operations/scars, heart problems, or medications.\n- Reveal the reassuring pain features (colicky/intermittent, soft between cramps, not out-of-proportion, no sudden catastrophic onset) only when the student asks how the pain behaves.\n- Bowel sounds, distension, the scar, the irregular pulse, and the dehydration signs are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "BMP": "Na 134, K 3.3, Cl 92, HCO3 30 — hypochloremic, hypokalemic metabolic alkalosis from vomiting; BUN 28, Cr 1.2 (prerenal).",
-      "CBC": "WBC 11.5, Hgb 14.0, Plt 270.",
-      "Lactate": "1.6 — normal (a rising lactate would raise concern for strangulation/ischemia).",
-      "CT_abdomen": "CT abdomen/pelvis: dilated proximal small-bowel loops with a transition point and collapsed distal bowel; findings consistent with adhesive small bowel obstruction; no free air or pneumatosis."
+      "BMP": "Na 136, K 2.9, Cl 89, HCO3 34 — hypochloremic, hypokalemic metabolic alkalosis from protracted vomiting (contraction alkalosis, worsened by her furosemide). Anion gap = Na − (Cl + HCO3) = 136 − (89 + 34) = 13 (NORMAL gap) — so despite a mildly elevated lactate there is NO anion-gap acidosis yet, which argues against established bowel ischemia. Glucose 168. BUN 42, Cr 1.8 (baseline CKD Cr ~1.3) — AKI on CKD, prerenal from vomiting and missed-volume/diuretic. Mg 1.3 (low, from vomiting and furosemide), Ca 8.9.",
+      "CBC": "WBC 12.8 (mild leukocytosis), Hgb 10.6 / Hct 32 (chronic, anemia of CKD; MCV 88 — not acutely bleeding), Plt 248. No marked left shift.",
+      "Lactate": "2.4 mmol/L — MILDLY elevated. Ambiguous: explained by dehydration/hypoperfusion from vomiting, but a rising or markedly elevated lactate would shift concern toward bowel strangulation/mesenteric ischemia. Trend it.",
+      "Coags": "INR 1.1, normal PT/PTT — she is NOT therapeutically anticoagulated (consistent with ~3 missed days of apixaban), which is exactly why an embolic/ischemic complication of her atrial fibrillation must be considered.",
+      "CT_abdomen": "CT abdomen/pelvis with IV contrast: dilated proximal small-bowel loops (up to ~3.5 cm) with multiple air-fluid levels and a single TRANSITION POINT in the pelvis at an adhesive band, with collapsed distal small bowel and colon — consistent with adhesive small bowel obstruction. NO closed-loop configuration, NO bowel-wall thickening, NO pneumatosis intestinalis, NO portal venous gas, and PATENT superior mesenteric artery and vein with normally enhancing bowel wall — these findings argue AGAINST mesenteric ischemia/strangulation. No free air. Small amount of mesenteric fluid."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/hypokalaemia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
-      "verify": "From the LITFL 'Hypokalaemia' library page — download an example tracing that matches: Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute is … and self-host with credit to litfl.com.",
+      "litflStudyN": 2,
+      "integrated": true,
+      "findings": "Atrial fibrillation with a moderately rapid ventricular response (~108 bpm); irregularly irregular R-R intervals with no discernible P waves; superimposed hypokalemic changes (flattened T waves and U waves, mild QT prolongation) from her electrolyte loss; no acute ST-elevation or territorial ischemic pattern.",
+      "verify": "From the LITFL 'Atrial fibrillation' library page — download an example tracing showing atrial fibrillation with a rapid/moderate ventricular response (irregularly irregular, absent P waves); self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead EKG in sinus rhythm with hypokalemic changes (flattened T waves and U waves)",
+      "imageDescription": "12-lead EKG showing atrial fibrillation with a moderately rapid ventricular response and hypokalemic T-wave/U-wave changes",
       "searchTerms": [
-        "hypokalemia ECG U waves",
-        "flattened T waves hypokalaemia 12-lead"
+        "atrial fibrillation rapid ventricular response 12-lead ECG",
+        "atrial fibrillation hypokalemia U waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 65-year-old woman with prolonged vomiting reports fatigue and palpitations after poor oral intake."
+      "clinicalVignette": "A 72-year-old woman with prolonged vomiting and a known irregular heartbeat who has missed her blood thinner for several days."
     },
     "cxr": {
       "label": "Abdominal/chest X-ray (upright)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=small%20bowel%20obstruction%20abdominal%20xray%20air%20fluid%20levels&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+      "findings": "Multiple dilated small-bowel loops centrally with air-fluid levels in a step-ladder pattern; paucity of colonic/rectal gas; no free air under the diaphragm.",
       "verify": "Pick a CC plain film showing dilated small-bowel loops with air-fluid levels (SBO); must NOT show free air.",
       "assetNeeded": true,
-      "imageDescription": "upright abdominal radiograph showing dilated small-bowel loops with step-ladder air-fluid levels",
+      "imageDescription": "upright abdominal radiograph showing dilated central small-bowel loops with step-ladder air-fluid levels and no free air",
       "searchTerms": [
         "small bowel obstruction air-fluid levels x-ray",
         "dilated small bowel loops step-ladder upright film"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 74-year-old man presents with crampy abdominal pain, distension, and absence of flatus."
+      "clinicalVignette": "An older woman presents with crampy abdominal pain, distension, bilious vomiting, and absence of flatus or stool."
     }
   },
   "revealKeys": [
     "BMP",
     "CBC",
     "Lactate",
+    "Coags",
     "CT_abdomen",
     "ekg",
     "cxr"
@@ -80,45 +84,63 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Small bowel obstruction (leading,8; accepts bowel obstruction). Adynamic ileus (core,3). Large bowel obstruction (core,3). Strangulation/ischemia (CANT-MISS,4). Incarcerated hernia (core,2). Volvulus (bonus,2). Named leading dx w/ justification — colicky pain, distension, obstipation, prior surgery (core,3).",
-      "idealAnswer": "Leading diagnosis: Small bowel obstruction. Must-not-miss diagnoses to exclude: Strangulation/ischemia. Also reasonable: Adynamic ileus; Large bowel obstruction; Incarcerated hernia.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). Given her atrial fibrillation and missed anticoagulation, explicitly address the must-not-miss vascular cause, and name three mechanisms/etiologies of small bowel obstruction.",
+      "rubric": "Small bowel obstruction (leading,6; accepts bowel obstruction). Acute mesenteric ischemia / embolic bowel ischemia — must-not-miss given AF off anticoagulation (CANT-MISS,5). Strangulated/closed-loop obstruction (CANT-MISS,2). Adynamic ileus (core,2). Large bowel obstruction (core,2). Incarcerated hernia (core,1). Names leading dx w/ justification — colicky pain, distension, obstipation, bilious emesis, prior surgery, soft non-peritonitic abdomen between cramps (core,3). Names three mechanisms/etiologies of SBO — e.g. adhesions (post-surgical), incarcerated hernia, malignancy/tumor, intussusception, gallstone ileus, Crohn's stricture, volvulus (core,3). PENALTY: anchors on SBO and ignores possible mesenteric ischemia in an AF patient off anticoagulation (-3).",
+      "idealAnswer": "Leading diagnosis: Small bowel obstruction (24h of colicky/wave-like pain, progressive distension, bilious vomiting, obstipation, prior open hysterectomy with adhesions, tinkling-then-quiet bowel sounds, and a soft non-peritonitic abdomen between cramps). The key must-not-miss is Acute mesenteric ischemia / an arterial embolus, because she has atrial fibrillation and has been OFF her apixaban for ~3 days — but her pain is colicky rather than constant and NOT out of proportion to exam, which argues against established ischemia. Also consider Strangulated/closed-loop obstruction, Adynamic ileus, Large bowel obstruction, and Incarcerated hernia. Three mechanisms/etiologies of SBO: (1) post-surgical adhesions (most common in adults), (2) incarcerated/strangulated hernia, and (3) malignancy/tumor — others include Crohn's stricture, intussusception, gallstone ileus, and volvulus.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Strangulation/ischemia",
-            "points": 4
+            "item": "Acute mesenteric ischemia / embolic bowel ischemia (AF off anticoagulation)",
+            "points": 5
+          },
+          {
+            "item": "Strangulated / closed-loop obstruction",
+            "points": 2
           }
         ],
         "coreActions": [
           {
+            "item": "Small bowel obstruction (leading)",
+            "points": 6
+          },
+          {
             "item": "Adynamic ileus",
-            "points": 3
-          },
-          {
-            "item": "Large bowel obstruction",
-            "points": 3
-          },
-          {
-            "item": "Incarcerated hernia",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ justification — colicky pain, distension, obstipation, prior surgery",
+            "item": "Large bowel obstruction",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — colicky pain, distension, obstipation, bilious emesis, prior surgery, soft abdomen between cramps",
+            "points": 3
+          },
+          {
+            "item": "Names three mechanisms/etiologies of SBO (adhesions, hernia, malignancy, intussusception, gallstone ileus, Crohn's stricture, volvulus)",
             "points": 3
           }
         ],
         "bonusActions": [
           {
+            "item": "Incarcerated hernia",
+            "points": 1
+          },
+          {
             "item": "Volvulus",
-            "points": 2
+            "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on SBO and ignores possible mesenteric ischemia in an AF patient off anticoagulation",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Strangulation/ischemia"
+        "Acute mesenteric ischemia / embolic bowel ischemia (AF off anticoagulation)",
+        "Strangulated / closed-loop obstruction"
       ],
       "acceptableAlternatives": [
         "Adynamic ileus",
@@ -132,40 +154,40 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Upright abdominal/chest X-ray (CANT-MISS,4). CT abdomen/pelvis to confirm and find transition point (CANT-MISS,4). BMP (3). CBC (2). Lactate to assess for ischemia (2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; BMP; CBC; Lactate; CT abdomen/pelvis.",
+      "rubric": "CT abdomen/pelvis with IV contrast — confirms SBO, finds the transition point, AND assesses mesenteric vessels/bowel wall for ischemia (CANT-MISS,4). Upright abdominal/chest X-ray (CANT-MISS,3). Lactate to screen for ischemia, with a plan to trend it (3). BMP (incl. Mg) given vomiting + diuretic + CKD (2). CBC (1). Coags/INR given AF and missed anticoagulation (1). EKG (1). PENALTY: shotgun panel w/ no reasoning (-2); CT WITHOUT contrast when assessing for mesenteric ischemia (and renal function permits) (-1).",
+      "idealAnswer": "Order: CT abdomen/pelvis WITH IV contrast (confirms the obstruction and transition point AND evaluates the mesenteric vessels and bowel wall for ischemia — important given her AF off anticoagulation; her CKD is mild enough to permit contrast with hydration); upright abdominal/chest X-ray; Lactate now and TRENDED; BMP including magnesium; CBC; Coags/INR; EKG. Avoid a non-contrast study if you are trying to exclude mesenteric ischemia and renal function permits contrast.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Upright abdominal/chest X-ray",
+            "item": "CT abdomen/pelvis with IV contrast to confirm obstruction/transition point and assess for mesenteric ischemia",
             "points": 4
           },
           {
-            "item": "CT abdomen/pelvis to confirm and find transition point",
-            "points": 4
+            "item": "Upright abdominal/chest X-ray",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
+            "item": "Lactate (and plan to trend it)",
+            "points": 3
           },
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "BMP",
+            "item": "BMP including magnesium",
             "points": 2
           },
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Lactate",
-            "points": 2
+            "item": "Coags / INR given AF and missed anticoagulation",
+            "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -173,16 +195,21 @@
           {
             "item": "shotgun panel w/ no reasoning",
             "points": -2
+          },
+          {
+            "item": "CT without contrast when assessing for mesenteric ischemia and renal function permits",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
-        "Upright abdominal/chest X-ray",
-        "CT abdomen/pelvis to confirm and find transition point"
+        "CT abdomen/pelvis with IV contrast to confirm obstruction/transition point and assess for mesenteric ischemia",
+        "Upright abdominal/chest X-ray"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "shotgun panel w/ no reasoning"
+        "shotgun panel w/ no reasoning",
+        "CT without contrast when assessing for mesenteric ischemia and renal function permits"
       ],
       "orderSensitiveActions": []
     },
@@ -192,51 +219,38 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm; possible hypokalemic changes (flat T/U waves); no acute ischemia. CREDIT: rate & rhythm (6); no acute ischemic changes (4); recognizes possible electrolyte (hypokalemia) effect (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and their relevance to her presentation.",
+      "rubric": "Findings = atrial fibrillation with a moderately rapid ventricular response (~108 bpm), irregularly irregular without P waves; superimposed hypokalemic changes (flat T waves, U waves, mild QT prolongation); no acute ST-elevation/territorial ischemia. CREDIT: identifies atrial fibrillation with RVR (6); recognizes hypokalemic changes (flat T/U waves, QT) that need electrolyte correction (3); states no acute ST-elevation/territorial ischemia (2); CONNECTS the AF to embolic-ischemia risk given missed anticoagulation (2); systematic read (2). PENALTY: missing atrial fibrillation / calling it sinus (-3); over-calling acute ischemia (-2).",
       "keyFindings": [
-        "rate & rhythm",
-        "no acute ischemic changes",
-        "recognizes possible hypokalemic effect (flat T waves / U waves)",
-        "systematic read"
+        "atrial fibrillation with moderately rapid ventricular response",
+        "hypokalemic changes (flat T waves / U waves, mild QT prolongation)",
+        "no acute ST-elevation or territorial ischemia",
+        "AF off anticoagulation raises embolic mesenteric-ischemia risk"
       ],
       "criticalFindings": [
-        "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia."
+        "Atrial fibrillation with a moderately rapid ventricular response (~108 bpm), irregularly irregular without P waves, with superimposed hypokalemic changes (flat T waves / U waves, mild QT prolongation) and no acute ST-elevation or territorial ischemic pattern."
       ],
       "commonMistakes": [
-        "over-calling ischemia"
+        "calling an irregularly irregular rhythm sinus tachycardia",
+        "over-calling acute ischemia from rate-related ST/T changes",
+        "ignoring the hypokalemia-driven U waves and QT prolongation"
       ],
-      "idealAnswer": "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
+      "idealAnswer": "Atrial fibrillation with a moderately rapid ventricular response (~108 bpm) — irregularly irregular R-R intervals with no discernible P waves. There are superimposed hypokalemic changes (flattened T waves, U waves, and mild QT prolongation) consistent with her vomiting-induced potassium and magnesium loss, so her electrolytes must be corrected. There is no acute ST-elevation or territorial ischemic pattern. Critically, her AF means an arterial embolus to the mesentery is possible, and she has been off her apixaban for ~3 days (subtherapeutic INR) — so this rhythm directly feeds the must-not-miss of mesenteric ischemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
-            "points": 6
-          }
+          "Atrial fibrillation with a moderately rapid ventricular response, irregularly irregular without P waves, with hypokalemic T-wave/U-wave changes and no acute ischemia."
         ],
         "coreActions": [
-          {
-            "item": "rate & rhythm",
-            "points": 3
-          },
-          {
-            "item": "no acute ischemic changes",
-            "points": 3
-          },
-          {
-            "item": "recognizes possible hypokalemic effect (flat T waves / U waves)",
-            "points": 2
-          },
-          {
-            "item": "systematic read",
-            "points": 1
-          }
+          "atrial fibrillation with moderately rapid ventricular response",
+          "hypokalemic changes (flat T waves / U waves, mild QT prolongation)",
+          "no acute ST-elevation or territorial ischemia",
+          "AF off anticoagulation raises embolic mesenteric-ischemia risk"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling ischemia",
+            "label": "misses atrial fibrillation / calls it sinus, or over-calls acute ischemia",
             "points": -3
           }
         ]
@@ -249,56 +263,54 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's upright film. Describe your findings.",
-      "rubric": "Findings = dilated small-bowel loops with air-fluid levels (step-ladder); no free air. CREDIT: identifies dilated bowel loops with air-fluid levels (5); recognizes the obstructive pattern (small bowel) (3); excludes free air (perforation) (2).",
+      "rubric": "Findings = multiple dilated central small-bowel loops with air-fluid levels (step-ladder); paucity of colonic gas; no free air under the diaphragm (and no portal venous gas / pneumatosis). CREDIT: identifies dilated small-bowel loops with air-fluid levels (5); recognizes the obstructive small-bowel pattern with paucity of distal gas (3); excludes free air / pneumatosis (perforation or ischemia) (2). PENALTY: mistaking dilated small bowel for colon, or missing free air (-3).",
       "keyFindings": [
-        "identifies dilated bowel loops with air-fluid levels",
-        "recognizes the obstructive small-bowel pattern",
-        "excludes free air (perforation)"
+        "dilated central small-bowel loops with air-fluid levels (step-ladder)",
+        "obstructive small-bowel pattern with paucity of colonic gas",
+        "no free air under the diaphragm; no pneumatosis/portal venous gas"
       ],
       "criticalFindings": [
-        "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+        "Multiple dilated central small-bowel loops with step-ladder air-fluid levels and a paucity of colonic gas; no free air under the diaphragm and no pneumatosis/portal venous gas."
       ],
       "commonMistakes": [
         "mistaking dilated small bowel for large bowel",
-        "missing free air under the diaphragm"
+        "missing free air under the diaphragm",
+        "overlooking pneumatosis/portal venous gas as a sign of ischemia"
       ],
-      "idealAnswer": "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
+      "idealAnswer": "Multiple dilated central small-bowel loops with air-fluid levels in a step-ladder pattern and a relative paucity of colonic/rectal gas — a small-bowel obstructive pattern. Importantly, there is no free air under the diaphragm to suggest perforation and no pneumatosis or portal venous gas to suggest bowel ischemia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm.",
-            "points": 5
-          }
+          "Multiple dilated central small-bowel loops with step-ladder air-fluid levels and paucity of colonic gas; no free air and no pneumatosis/portal venous gas."
         ],
         "coreActions": [
-          {
-            "item": "recognizes the obstructive (small-bowel) pattern",
-            "points": 3
-          },
-          {
-            "item": "excludes free air (perforation)",
-            "points": 2
-          }
+          "dilated central small-bowel loops with air-fluid levels (step-ladder)",
+          "obstructive small-bowel pattern with paucity of colonic gas",
+          "no free air under the diaphragm; no pneumatosis/portal venous gas"
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "label": "mistakes dilated small bowel for colon, or misses free air",
+            "points": -3
+          }
+        ]
       }
     },
     {
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the CT, what is your diagnosis and what raises concern for the bowel being compromised?",
-      "rubric": "Adhesive small bowel obstruction (5). Notes a transition point with proximal dilation/distal collapse (3). Flags strangulation warning signs — rising lactate, fever, peritonitis, pneumatosis — that mandate surgery (bonus,2).",
-      "idealAnswer": "Adhesive small bowel obstruction — CT shows dilated proximal small-bowel loops with a transition point and collapsed distal bowel (likely from prior surgical adhesions). Concern for bowel compromise/strangulation is raised by a rising lactate, fever, peritonitis, or pneumatosis, any of which mandates urgent surgery.",
+      "prompt": "Given the CT, EKG, and labs, what is your diagnosis, what discriminated it from mesenteric ischemia, and what would raise concern that the bowel is becoming compromised?",
+      "rubric": "Adhesive small bowel obstruction — CT shows dilated proximal small bowel with a single pelvic transition point at an adhesive band and collapsed distal bowel (5). DISCRIMINATORS that argue against mesenteric ischemia despite her AF: patent SMA/SMV with normally enhancing, non-thickened bowel wall and NO pneumatosis/portal venous gas on CT; only a mildly elevated lactate with a NORMAL anion gap; colicky non-out-of-proportion pain (3). Names the strangulation/ischemia warning signs that mandate urgent surgery — rising/markedly elevated lactate, fever, leukocytosis, peritonitis, or CT pneumatosis/closed-loop — and links her atrial fibrillation off anticoagulation to ongoing embolic risk (bonus,2).",
+      "idealAnswer": "Adhesive small bowel obstruction — the CT shows dilated proximal small-bowel loops with a single pelvic transition point at an adhesive band and collapsed distal bowel, fitting her prior open hysterectomy. The competing must-not-miss was acute mesenteric ischemia given her atrial fibrillation off anticoagulation, but several discriminators commit me to SBO: the CT shows a patent superior mesenteric artery and vein with normally enhancing, non-thickened bowel wall and NO pneumatosis or portal venous gas; the lactate is only mildly elevated (2.4) with a NORMAL anion gap (13); and her pain is colicky and not out of proportion to a soft abdomen. I would still trend the lactate and re-examine, because bowel compromise/strangulation is signalled by a rising or markedly elevated lactate, fever, worsening leukocytosis, peritonitis, or CT pneumatosis/closed-loop — any of which would mandate urgent surgery. Her AF off anticoagulation keeps embolic ischemia on the radar until she is resolving.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
         "bonusActions": [
           {
-            "item": "Flags strangulation warning signs — rising lactate, fever, peritonitis, pneumatosis — that mandate surgery",
+            "item": "Names strangulation/ischemia warning signs (rising lactate, fever, leukocytosis, peritonitis, pneumatosis/closed-loop) and links AF off anticoagulation to ongoing embolic risk",
             "points": 2
           }
         ],
@@ -309,49 +321,61 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH abdominal pain (obstruction): NPO + NG-tube decompression (CANT-MISS,6); IV fluid resuscitation + electrolyte correction (5); surgery consult (5); analgesia/antiemetics (3); urgent surgery if strangulation/ischemia/closed-loop (4); serial exams (2). PENALTY: feeding / no decompression in obstruction (-3); missing signs of strangulation (-2).",
-      "idealAnswer": "NPO, nasogastric tube decompression, IV fluid resuscitation, correct electrolytes. Analgesia and antiemetics. Surgery consult. Non-operative trial for partial/adhesive SBO; urgent surgery for strangulation/ischemia/closed-loop or failure to resolve. Serial exams and imaging.",
+      "prompt": "What is your management plan, including disposition and any safe-discharge or follow-up considerations?",
+      "rubric": "Per MGH abdominal pain (obstruction): NPO + NG-tube decompression (CANT-MISS,5); IV fluid resuscitation + correct electrolytes — replete K AND Mg (and recheck) (4); surgery consult (4); analgesia + antiemetics (2); rate control her atrial fibrillation and RESTART/manage anticoagulation once bleeding/operative risk allows, weighing her CHA2DS2-VASc and the recent missed doses (3); urgent surgery if strangulation/ischemia/closed-loop or failure of non-operative trial (3); serial exams + trend lactate (2). DISPOSITION/SAFE FOLLOW-UP: admit (do NOT discharge an acute SBO); document the non-operative trial endpoint, med reconciliation with a clear plan to resume apixaban, and counsel her/family on return-precautions and follow-up (bonus,2). PENALTY: discharging an acute SBO home (-4); feeding / no decompression in obstruction (-3); restarting full-dose anticoagulation without considering operative/bleeding timing (-1).",
+      "idealAnswer": "Admit. NPO with nasogastric-tube decompression. IV crystalloid resuscitation and correct her electrolytes — replete potassium AND magnesium (her hypokalemia/hypomagnesemia drive the EKG changes and arrhythmia risk) and recheck. Analgesia and antiemetics. Rate-control her atrial fibrillation, and make a deliberate plan for anticoagulation: she has been off apixaban ~3 days and is subtherapeutic, so I will hold it while she is NPO/peri-operative and bleeding risk is high, then resume based on her CHA2DS2-VASc once it is safe — not blindly restart full dose now. Surgery consult. A trial of non-operative management is reasonable for an uncomplicated adhesive SBO, BUT proceed to urgent surgery for strangulation/ischemia/closed-loop or failure to resolve. Serial abdominal exams and trend the lactate. DISPOSITION/SAFE FOLLOW-UP: this is an acute SBO — admit, do not discharge. Before any eventual discharge, perform medication reconciliation (clear plan to resume apixaban, manage her diabetes/diuretic around NPO and AKI), counsel the patient and husband on return-precautions (worsening pain, fever, vomiting, no flatus/stool) and arrange close surgical and primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "NPO and nasogastric decompression",
-            "points": 6
+            "points": 5
           },
           {
             "item": "Surgery consult",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "IV fluids and electrolyte correction",
-            "points": 5
-          },
-          {
-            "item": "Urgent surgery if strangulation/ischemia",
+            "item": "IV fluids and electrolyte correction — replete potassium AND magnesium and recheck",
             "points": 4
           },
           {
-            "item": "Analgesia and antiemetics",
+            "item": "Rate-control AF and make a deliberate plan to manage/resume anticoagulation around operative/bleeding timing",
             "points": 3
           },
           {
-            "item": "Serial exams",
+            "item": "Urgent surgery if strangulation/ischemia/closed-loop or failure of non-operative trial",
+            "points": 3
+          },
+          {
+            "item": "Analgesia and antiemetics",
+            "points": 2
+          },
+          {
+            "item": "Serial exams and trend lactate",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Trial of non-operative management if uncomplicated",
-            "points": 1
+            "item": "Admit with safe-discharge planning: med reconciliation (resume apixaban), caregiver counseling on return-precautions, close surgical/PCP follow-up",
+            "points": 2
           }
         ],
         "penalties": [
           {
+            "item": "Discharging an acute SBO home",
+            "points": -4
+          },
+          {
             "item": "Feeding without decompression",
             "points": -3
+          },
+          {
+            "item": "Restarting full-dose anticoagulation without considering operative/bleeding timing",
+            "points": -1
           }
         ]
       },
@@ -360,13 +384,15 @@
         "Surgery consult"
       ],
       "optionalActions": [
-        "IV fluids and electrolyte correction",
-        "Urgent surgery if strangulation/ischemia",
+        "IV fluids and electrolyte correction — replete potassium AND magnesium and recheck",
+        "Rate-control AF and make a deliberate plan to manage/resume anticoagulation around operative/bleeding timing",
+        "Urgent surgery if strangulation/ischemia/closed-loop or failure of non-operative trial",
         "Analgesia and antiemetics",
-        "Serial exams",
-        "Trial of non-operative management if uncomplicated"
+        "Serial exams and trend lactate",
+        "Admit with safe-discharge planning: med reconciliation (resume apixaban), caregiver counseling on return-precautions, close surgical/PCP follow-up"
       ],
       "unsafeActions": [
+        "Discharging an acute SBO home",
         "Feeding without decompression"
       ],
       "consults": [
@@ -387,18 +413,51 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
+      "medication_adherence",
       "tobacco_use"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "60-year-old woman, uncomfortable in waves (colicky), abdomen visibly distended. Cooperative.",
+    "affect": "72-year-old woman, uncomfortable in waves (colicky), abdomen visibly distended, tired and dry-mouthed. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the atrial fibrillation, the missed blood thinner, or prior surgery unless directly asked about heart problems, medications, or operations/scars",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
   "historyTriggers": [
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "missed any medications",
+        "taking your medications",
+        "blood thinner",
+        "anticoagulant",
+        "apixaban",
+        "skipped pills",
+        "have you been taking"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cardiac_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "heart problems",
+        "irregular heartbeat",
+        "atrial fibrillation",
+        "heart rhythm",
+        "palpitations"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
     {
       "id": "tobacco_use",
       "category": "substance_use",
@@ -410,7 +469,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -434,7 +493,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "constant or comes and goes",
+        "out of proportion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -460,7 +521,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "vomiting",
+        "stool",
+        "flatus",
+        "passing gas",
+        "blood in stool"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -487,7 +553,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "surgeries",
+        "operations",
+        "scar"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -500,7 +569,9 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "water pill",
+        "diuretic"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -513,7 +584,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior obstruction"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -524,17 +596,17 @@
   "physicalExamMappings": [
     {
       "id": "inspect_abdomen_finding_1",
-      "finding": "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed midline surgical scar. No hernias palpable (check groin).",
+      "finding": "Abdomen: distended and tympanitic; well-healed lower-midline surgical scar; no groin or incisional hernias visible.",
       "revealedBy": [
         "inspect_abdomen"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Abdomen not distended."
+      "normalIfNotPresent": "Abdomen not distended; no scars."
     },
     {
       "id": "auscultate_bowel_sounds_finding_2",
-      "finding": "High-pitched/tinkling bowel sounds (or becoming absent) over a distended, tympanitic abdomen.",
+      "finding": "High-pitched/tinkling bowel sounds early (becoming quieter/absent later) over a distended, tympanitic abdomen.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -543,14 +615,46 @@
       "normalIfNotPresent": "Normal bowel sounds."
     },
     {
-      "id": "assess_general_appearance_finding_3",
-      "finding": "General: uncomfortable, mild dehydration.",
+      "id": "assess_guarding_finding_3",
+      "finding": "Diffuse MILD tenderness without focal peritonism; NO rigidity and NO rebound early; the abdomen is soft between cramps (argues against established peritonitis/ischemia).",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No guarding."
+    },
+    {
+      "id": "auscultate_carotids_finding_4",
+      "finding": "Pulse irregularly irregular (atrial fibrillation), rate ~108; no carotid bruits.",
+      "revealedBy": [
+        "auscultate_carotids",
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Regular pulse; no bruits."
+    },
+    {
+      "id": "assess_skin_turgor_finding_5",
+      "finding": "Mucous membranes dry; skin turgor mildly reduced — mild dehydration.",
+      "revealedBy": [
+        "assess_skin_turgor",
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Well hydrated; moist mucous membranes."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: uncomfortable in waves, tired, mildly dehydrated.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Well hydrated."
+      "normalIfNotPresent": "Well-appearing."
     }
   ],
   "overallScoring": {
@@ -563,58 +667,68 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Small bowel obstruction",
-    "diagnosticFramework": "60F with prior abdominal surgery presents with a day of crampy abdominal pain, distension, bilious vomiting, and inability to pass stool or gas. The diagnosis is Small bowel obstruction, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "72F with prior open hysterectomy, atrial fibrillation on apixaban (recently missed ~3 days), CKD stage 3, type 2 diabetes, and hypertension presents with ~24 hours of colicky abdominal pain, distension, bilious vomiting, and obstipation. The diagnosis is adhesive Small bowel obstruction, reached by eliciting the focused history (including the missed anticoagulation and cardiac history), performing the targeted exam, and interpreting a contrast CT, EKG, and multi-system labs — while explicitly excluding the must-not-miss of acute mesenteric ischemia raised by her AF off anticoagulation.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: distended, tympanitic; diffuse mild tenderness without focal peritonism early; high-pitched/tinkling bowel sounds (or becoming absent); well-healed midline surgical scar. No hernias palpable (check groin).",
-      "General: uncomfortable, mild dehydration."
+      "Abdomen: distended and tympanitic; well-healed lower-midline surgical scar; no hernias.",
+      "High-pitched/tinkling bowel sounds early (becoming quieter/absent later).",
+      "Diffuse mild tenderness without peritonism; soft between cramps (argues against established ischemia).",
+      "Pulse irregularly irregular (atrial fibrillation).",
+      "Dry mucous membranes; mildly reduced skin turgor (mild dehydration)."
     ],
     "keyDiagnosticFindings": [
       "BMP",
       "CBC",
       "Lactate",
+      "Coags",
       "CT_abdomen"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Small bowel obstruction while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Small bowel obstruction and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the irregularly irregular pulse.",
+      "Elicit the focused history, including the cardiac history and the missed anticoagulation, only on direct questioning.",
+      "Perform the targeted physical exam to reveal distension, tinkling bowel sounds, a soft non-peritonitic abdomen, the AF pulse, and dehydration.",
+      "Build a differential led by Small bowel obstruction while explicitly excluding acute mesenteric ischemia (AF off anticoagulation) and naming three mechanisms of SBO.",
+      "Order a contrast CT (to confirm the transition point AND assess the mesenteric vessels), an upright film, a trended lactate, and electrolytes; read the AF EKG and the SBO film.",
+      "Commit to adhesive SBO using the CT discriminators, then manage with NPO/NG decompression, fluids and electrolyte repletion, AF rate control and an anticoagulation plan, a surgery consult, serial exams, and safe admission/disposition."
     ],
     "commonPitfalls": [
-      "Feeding without decompression"
+      "Anchoring on SBO and missing mesenteric ischemia in an AF patient off anticoagulation",
+      "Ordering a non-contrast CT and failing to assess the mesenteric vessels",
+      "Feeding without decompression",
+      "Discharging an acute SBO home",
+      "Forgetting to replete magnesium and to plan anticoagulation timing"
     ],
     "managementPearls": [
       "NPO and nasogastric decompression",
-      "Surgery consult"
+      "Surgery consult",
+      "Replete potassium AND magnesium; correct the EKG changes",
+      "Plan anticoagulation resumption around operative/bleeding timing"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
     "criticalWorkupItems": [
-      "Upright abdominal/chest X-ray",
-      "CT abdomen/pelvis to confirm and find transition point"
+      "CT abdomen/pelvis with IV contrast to confirm obstruction/transition point and assess for mesenteric ischemia",
+      "Upright abdominal/chest X-ray"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
-      "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+      "Atrial fibrillation with a moderately rapid ventricular response and hypokalemic T-wave/U-wave changes; no acute ischemia.",
+      "Multiple dilated central small-bowel loops with step-ladder air-fluid levels; no free air and no pneumatosis/portal venous gas."
     ],
     "criticalManagementItems": [
       "NPO and nasogastric decompression",
       "Surgery consult"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
-      "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+      "Atrial fibrillation with a moderately rapid ventricular response and hypokalemic T-wave/U-wave changes; no acute ischemia.",
+      "Multiple dilated central small-bowel loops with step-ladder air-fluid levels; no free air and no pneumatosis/portal venous gas."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus rhythm; possible changes from hypokalemia (flattened T waves / U waves); no acute ischemia.",
-      "Multiple dilated small-bowel loops with air-fluid levels in a step-ladder pattern; no free air under the diaphragm."
+      "Atrial fibrillation with a moderately rapid ventricular response and hypokalemic T-wave/U-wave changes; no acute ischemia.",
+      "Multiple dilated central small-bowel loops with step-ladder air-fluid levels; no free air and no pneumatosis/portal venous gas."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
+      "An irregularly irregular rhythm without P waves is atrial fibrillation, not sinus tachycardia — and in this patient it is the engine of the must-not-miss (embolic mesenteric ischemia).",
+      "Read the abdominal film for the obstructive pattern AND the ischemia/perforation negatives — free air, pneumatosis, portal venous gas.",
       "State pertinent negatives, not just positives."
     ]
   },
@@ -626,11 +740,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's discomfort",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks non-judgmentally about medication adherence (missed blood thinner)",
         "points": 1
       },
       {
@@ -645,9 +759,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG (atrial fibrillation) + SBO plain film",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

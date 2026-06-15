@@ -1,0 +1,821 @@
+{
+  "id": "fever-09",
+  "category": "Fever",
+  "difficulty": "hard",
+  "title": "Six weeks of fevers, night sweats, and weight loss in a recently released, immunosuppressed man",
+  "diagnosis": "Reactivation pulmonary tuberculosis (cavitary, with early miliary spread)",
+  "chart": {
+    "ageSex": "47M",
+    "cc": "Fevers, night sweats, and weight loss",
+    "oneLiner": "47M with seropositive rheumatoid arthritis on chronic prednisone and methotrexate, released from a county jail ~3 months ago, presents with ~6 weeks of daily low-grade fevers, drenching night sweats, ~8 kg weight loss, and a productive cough now streaked with blood; he looks chronically ill and cachectic.",
+    "vitals": {
+      "BP": "108/68",
+      "HR": "104",
+      "RR": "20",
+      "Temp": "38.6°C",
+      "SpO2": "94% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I just can't shake this — I've been running fevers and soaking the sheets every night for over a month, I've lost a ton of weight, and now there's a bit of blood when I cough.",
+  "patientFile": "PERSONA: 47-year-old man, thin and chronically unwell, sitting forward and coughing intermittently into a tissue. Cooperative but tired and a little embarrassed about his recent incarceration and about not having taken great care of himself. Worried this is 'something serious.'\n\nHPI: About 6 weeks of feeling sick. Daily fevers, usually worse in the late afternoon/evening, with DRENCHING night sweats that soak through his shirt and sheets — he changes them most nights. Has lost about 8 kg (roughly 18 lb) without trying; his appetite is poor and clothes hang off him. A cough that started dry has become productive of yellow-green phlegm over the last 2-3 weeks, and in the last few days there have been streaks of bright red BLOOD in the sputum (small amounts, not large clots, no frank hemoptysis). Mild breathlessness on exertion. Vague right-sided upper chest ache with coughing. NO sudden pleuritic chest pain, NO leg swelling, NO calf pain. He feels feverish and worn down all the time.\nEXPOSURE/RISK (reveal only when the relevant question is asked): He was released from the county jail about 3 months ago after a 14-month stay; the jail was crowded and he recalls another inmate on his block 'coughing for months' and being 'taken to medical.' He was born in the United States. He has never been formally tested for TB that he knows of, no prior positive skin test that he recalls, and was never treated for TB. He used to use intranasal and occasionally injected drugs years ago but has been off them for ~2 years; he drinks alcohol heavily on and off. He has not traveled abroad, no farm/soil/bird or bat-cave exposure that he knows of, no sick pets. He does not know his HIV status and has never been tested.\nPMH: Seropositive rheumatoid arthritis for ~9 years, managed by rheumatology. Hepatitis C (untreated, found years ago). Prior heavy alcohol use; mild chronic anemia noted before. No known diabetes, no known prior TB. MEDS (reveal on direct questioning): prednisone 15 mg daily for the last several months (his RA had been flaring), methotrexate 20 mg weekly with folic acid, occasional ibuprofen, omeprazole. He was supposed to start a 'biologic injection' (a TNF blocker) for his RA but it was delayed because of insurance. ALLERGIES: none known. SOCIAL: lives in a single-room-occupancy hostel since release; previously incarcerated 14 months; smokes ~1 pack/day for 25 years; heavy episodic alcohol; remote IV/intranasal drug use, abstinent ~2 years; not currently working. FAMILY: noncontributory. ROS: positive for fever, night sweats, weight loss, anorexia, productive cough with blood streaks, mild dyspnea, fatigue; NO dysuria, NO diarrhea, NO headache or neck stiffness, NO rash, NO new joint swelling beyond his baseline RA, NO urinary symptoms.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: thin, cachectic, chronically ill-appearing man; mild respiratory effort; temporal wasting.\n- Vitals: BP 108/68, HR 104, RR 20, 38.6°C, SpO2 94% RA.\n- HEENT: dry mucous membranes; no oral thrush; no scleral icterus.\n- Neck: small mobile non-tender cervical lymph nodes bilaterally; no large fixed nodes; trachea midline.\n- Lungs: bronchial breath sounds and a few crackles over the RIGHT UPPER zone posteriorly, with a hint of amphoric/cavernous quality; rest of the lungs with scattered fine crackles; no wheeze; no large effusion (resonant percussion, no stony dullness).\n- Cardiac: tachycardic, regular, no murmur.\n- Abdomen: soft; liver edge palpable ~2 cm below the costal margin, mildly tender; spleen tip just palpable; no ascites.\n- Skin: no track marks active; no petechiae or purpura; no rash; old tattoos.\n- Neuro: alert and oriented; no focal deficit; no meningismus.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis (do NOT say 'TB,' 'tuberculosis,' or name any disease). Answer only what is asked.\n- Do NOT volunteer the incarceration, the coughing cellmate, the steroid/methotrexate immunosuppression, the planned TNF blocker, the HCV, or the remote drug use unless the relevant question is asked (exposures, where you've lived/been, medications, immune-suppressing drugs, drug use, HIV risk).\n- Reveal exam findings (the right-upper-zone bronchial breathing/crackles, lymph nodes, hepatosplenomegaly) only when that exam is actually performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language ('soaking the sheets,' 'phlegm,' 'blood streaks,' 'the shots for my arthritis'); avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "CBC": "Pancytopenia: WBC 3.4 (mild leukopenia with a relative lymphopenia), Hgb 9.6 (normocytic, MCV 88 — anemia of chronic disease/marrow involvement), Plt 118. Mild left shift on differential. The tri-lineage cytopenia raises concern for marrow involvement (miliary/disseminated disease) rather than a simple bacterial pneumonia.",
+      "BMP": "Na 126 (hyponatremia), K 4.0, Cl 92, HCO3 24, BUN 14, Cr 0.9, glucose 96. Anion gap = 126 − (92 + 24) = 10 (normal). The euvolemic-appearing hyponatremia with normal renal function fits SIADH from intrathoracic/pulmonary disease.",
+      "LFTs": "AST 78, ALT 64, ALP 190, total bilirubin 1.0, albumin 2.8. Mild transaminitis with a cholestatic-leaning ALP and low albumin — consistent with hepatic granulomatous involvement and chronic illness/malnutrition (his untreated HCV and methotrexate are confounders).",
+      "Calcium_panel": "Total calcium 11.2 with albumin 2.8 → corrected calcium ≈ 11.2 + 0.8 × (4.0 − 2.8) ≈ 12.2 mg/dL (hypercalcemia). Mild granulomatous hypercalcemia from extrarenal 1-alpha-hydroxylase activity (macrophage 1,25-OH vitamin D production); PTH would be expected suppressed.",
+      "Inflammatory_markers": "ESR 96, CRP 88, LDH 410 (elevated). Markedly elevated inflammatory markers and LDH — nonspecific but consistent with a chronic granulomatous/infiltrative process and supporting the differential of disseminated infection vs lymphoma.",
+      "HIV_test": "4th-generation HIV Ag/Ab: PENDING at presentation, later NEGATIVE. (Must be checked — it changes the differential and the management; his immunosuppression here is iatrogenic from steroids/methotrexate.)",
+      "Sputum_AFB_NAAT": "Sputum acid-fast bacilli (AFB) smear: POSITIVE (numerous AFB seen) on the first of three induced specimens. Nucleic-acid amplification test (Xpert MTB/RIF): Mycobacterium tuberculosis complex DETECTED, rifampin-resistance NOT detected. Mycobacterial culture pending. This confirms active, smear-positive (highly infectious) pulmonary tuberculosis.",
+      "Sputum_bacterial": "Routine sputum Gram stain and bacterial culture: mixed oropharyngeal flora, no predominant pathogen; Legionella urinary antigen negative; Streptococcus pneumoniae urinary antigen negative. Fungal stains/cultures and serum/urine Histoplasma antigen pending — no fungal elements seen on initial smear. (Argues against a simple bacterial CAP and keeps fungal disease on the differential until it returns.)"
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~104 bpm; normal axis and intervals; QTc within normal limits; no acute ischemic ST/T changes and no chamber-enlargement pattern. The tachycardia is explained by fever, anemia, and chronic illness.",
+      "verify": "Source a study matching: sinus tachycardia ~104 bpm, normal axis/intervals, no acute ischemia. Self-host with appropriate credit; do not reuse a prior tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia without acute ischemic changes",
+      "searchTerms": [
+        "sinus tachycardia 12 lead ECG",
+        "normal axis sinus tachycardia ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A chronically ill, febrile, anemic man with weeks of fevers has a fast but regular pulse; the tracing is reviewed for an arrhythmia or ischemia."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://litfl.com/cxr-case-040/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "integrated": true,
+      "litflStudyN": 40,
+      "findings": "RIGHT UPPER LOBE thick-walled CAVITY with surrounding fibronodular consolidation and volume loss (retraction of the hilum and trachea upward), plus a fine background of innumerable small (1-3 mm) nodules in a fairly uniform distribution through both lungs — an early MILIARY pattern superimposed on apical cavitary disease. No large pleural effusion and no pneumothorax. This upper-lobe cavitary-plus-miliary pattern in this host is classic for reactivation pulmonary tuberculosis with early hematogenous (miliary) spread.",
+      "verify": "Source a chest film showing an upper-lobe (apical) cavity with fibronodular change (LITFL CXR case 40, cavitary tuberculosis) ± fine miliary micronodularity; self-host with credit. If using a purely cavitary film, note the miliary nodularity is described from the patient's CT correlation.",
+      "attribution": "LITFL CXR Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "PA chest radiograph with a right-upper-lobe thick-walled cavity, fibronodular change, upper-zone volume loss, and a fine background of innumerable miliary micronodules",
+      "searchTerms": [
+        "cavitary tuberculosis upper lobe chest x-ray",
+        "miliary tuberculosis chest radiograph innumerable micronodules",
+        "right upper lobe cavity fibronodular TB CXR"
+      ],
+      "recommendedSource": "LITFL Top 100 CXR (litfl.com) — case 40",
+      "clinicalVignette": "A cachectic, febrile man with weeks of night sweats, weight loss, and blood-streaked cough has his chest film reviewed; this is HIS film."
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "BMP",
+    "LFTs",
+    "Calcium_panel",
+    "Inflammatory_markers",
+    "HIV_test",
+    "Sputum_AFB_NAAT",
+    "Sputum_bacterial",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Sputum_AFB_NAAT",
+    "cxr",
+    "HIV_test"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical in this recently incarcerated, immunosuppressed man with ~6 weeks of fevers, drenching night sweats, weight loss, and blood-streaked cough, give your differential (note your leading diagnosis). Then name THREE risk factors in HIS history for tuberculosis reactivation.",
+      "rubric": "Reactivation pulmonary tuberculosis — leading, given subacute B-symptoms, hemoptysis, congregate-setting exposure, and immunosuppression (leading,6). Genuine competitors that MUST be on the list: bacterial community-acquired/post-obstructive pneumonia or lung abscess (CANT-MISS,3); endemic/opportunistic FUNGAL infection (histoplasmosis/coccidioidomycosis/cryptococcus) given immunosuppression (CANT-MISS,3); LYMPHOMA or other malignancy (B-symptoms, weight loss, cytopenias, hepatosplenomegaly, lymphadenopathy) (CANT-MISS,3). Names leading dx with justification — chronicity, night sweats, weight loss, hemoptysis, upper-zone signs (core,3). NAMES THREE TB-reactivation risk factors from his history (chronic corticosteroids/prednisone; methotrexate and planned TNF-alpha inhibitor; recent incarceration in a crowded jail with a chronically coughing contact; tobacco/alcohol/malnutrition/HCV; possible undiagnosed HIV) — award up to 3, one point each (core,3). Sarcoidosis or other granulomatous disease, NTM, or septic pulmonary emboli are reasonable also-rans (core,1). PENALTY: anchoring on bacterial CAP and discharging on outpatient antibiotics without considering TB / without isolation (-4); failing to consider an immunosuppressed host (-2).",
+      "idealAnswer": "Leading diagnosis: Reactivation pulmonary tuberculosis — a subacute-to-chronic febrile illness with drenching night sweats, ~8 kg weight loss, productive blood-streaked cough, and right-upper-zone findings in a man recently released from a crowded jail (with a chronically coughing contact) who is iatrogenically immunosuppressed. Genuinely competing diagnoses I must keep open: (1) bacterial pneumonia / lung abscess (anaerobic or post-obstructive), (2) endemic or opportunistic FUNGAL infection (histoplasmosis, coccidioidomycosis, cryptococcus) given his immunosuppression, and (3) LYMPHOMA or other malignancy — the B-symptoms, weight loss, cytopenias, hepatosplenomegaly, and lymphadenopathy could all fit a hematologic malignancy. THREE risk factors in his history for TB reactivation: (1) chronic corticosteroids (prednisone 15 mg daily); (2) methotrexate plus a planned TNF-alpha inhibitor (potent reactivation risk); and (3) recent incarceration in a crowded jail with a chronically coughing cellmate (high-transmission congregate setting). Other contributors: heavy smoking, alcohol, malnutrition, untreated HCV, and possible undiagnosed HIV. Also-rans: sarcoidosis, nontuberculous mycobacteria, septic emboli.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Reactivation pulmonary tuberculosis (leading)",
+            "points": 6
+          },
+          {
+            "item": "Bacterial pneumonia / lung abscess",
+            "points": 3
+          },
+          {
+            "item": "Endemic or opportunistic fungal infection (histoplasmosis/cocci/crypto)",
+            "points": 3
+          },
+          {
+            "item": "Lymphoma / malignancy",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Named leading dx with justification — chronicity, night sweats, weight loss, hemoptysis, upper-zone signs",
+            "points": 3
+          },
+          {
+            "item": "Names THREE TB-reactivation risk factors from his history (steroids; MTX/planned TNF inhibitor; incarceration/exposure; tobacco/alcohol/malnutrition/HCV; possible HIV)",
+            "points": 3
+          },
+          {
+            "item": "Reasonable also-rans (sarcoidosis/NTM/septic pulmonary emboli)",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchors on bacterial CAP and treats outpatient without considering TB or airborne isolation",
+            "points": -4
+          },
+          {
+            "item": "Fails to recognize the immunosuppressed host",
+            "points": -2
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Bacterial pneumonia / lung abscess",
+        "Endemic or opportunistic fungal infection (histoplasmosis/cocci/crypto)",
+        "Lymphoma / malignancy"
+      ],
+      "acceptableAlternatives": [
+        "Sarcoidosis / granulomatous disease",
+        "Nontuberculous mycobacterial infection",
+        "Septic pulmonary emboli"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order — and what infection-control step must happen the moment TB is on your differential?",
+      "rubric": "AIRBORNE (negative-pressure) ISOLATION + N95 immediately, before/while working up — placed FIRST when TB is suspected (CANT-MISS,4). At least 3 sputum specimens for AFB smear, mycobacterial culture, and a TB NAAT/Xpert MTB-RIF (CANT-MISS,4). Chest X-ray (and low threshold for chest CT) (core,2). HIV test — mandatory in any new TB/granulomatous workup (core,2). CBC with differential, BMP (sodium), LFTs, calcium, LDH, ESR/CRP (core,2). Baseline labs needed BEFORE RIPE therapy: LFTs, visual acuity/color vision for ethambutol, uric acid, hepatitis serologies, and HIV (bonus,1). Routine bacterial sputum/blood cultures and fungal stains/serologies (Histoplasma antigen) to chase the competitors (core,1). PENALTY: bronchoscopy or any aerosolizing/elective procedure BEFORE airborne isolation (-3); CT with contrast or invasive workup before isolating an infectious cougher (-2).",
+      "idealAnswer": "FIRST, the moment TB is on the differential: place him in AIRBORNE (negative-pressure) isolation and have staff wear fit-tested N95s — he has blood-streaked cough and is potentially highly infectious. Then: collect three sputum specimens (induced if needed) for AFB smear, mycobacterial culture, and a rapid TB NAAT (Xpert MTB/RIF, which also reports rifampin resistance). Chest X-ray now with a low threshold for chest CT. Send an HIV test (mandatory). CBC with differential, BMP (note the sodium), LFTs, calcium, LDH, ESR/CRP. Get the baseline studies needed before starting RIPE: LFTs, hepatitis serologies, baseline visual acuity/color vision (ethambutol), and uric acid. In parallel chase the competitors — routine sputum Gram stain/culture, blood cultures, and fungal stains/serologies (urine/serum Histoplasma antigen). Avoid elective aerosolizing procedures (e.g., bronchoscopy) until he is isolated.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Airborne (negative-pressure) isolation + N95 immediately when TB suspected",
+            "points": 4
+          },
+          {
+            "item": "Three sputum specimens for AFB smear, mycobacterial culture, and TB NAAT (Xpert MTB/RIF)",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Chest X-ray (low threshold for chest CT)",
+            "points": 2
+          },
+          {
+            "item": "HIV test (mandatory)",
+            "points": 2
+          },
+          {
+            "item": "CBC/diff, BMP (sodium), LFTs, calcium, LDH, ESR/CRP",
+            "points": 2
+          },
+          {
+            "item": "Routine bacterial sputum/blood cultures and fungal stains/Histoplasma antigen for competitors",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Baseline pre-RIPE studies: LFTs, hepatitis serologies, visual acuity/color vision, uric acid",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Bronchoscopy or aerosolizing procedure before airborne isolation",
+            "points": -3
+          },
+          {
+            "item": "Invasive/contrast workup before isolating an infectious cougher",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Airborne (negative-pressure) isolation + N95 immediately when TB suspected",
+        "Three sputum specimens for AFB smear, mycobacterial culture, and TB NAAT (Xpert MTB/RIF)"
+      ],
+      "optionalTests": [
+        "Chest X-ray (low threshold for chest CT)",
+        "HIV test (mandatory)",
+        "CBC/diff, BMP (sodium), LFTs, calcium, LDH, ESR/CRP",
+        "Routine bacterial sputum/blood cultures and fungal stains/Histoplasma antigen for competitors",
+        "Baseline pre-RIPE studies: LFTs, hepatitis serologies, visual acuity/color vision, uric acid"
+      ],
+      "contraindicatedTests": [
+        "Bronchoscopy or aerosolizing procedure before airborne isolation",
+        "Invasive/contrast workup before isolating an infectious cougher"
+      ],
+      "orderSensitiveActions": [
+        "Airborne (negative-pressure) isolation + N95 immediately when TB suspected"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = sinus tachycardia (~104 bpm) with normal axis and intervals, normal QTc, and no acute ischemic ST/T changes; the tachycardia is explained by fever, anemia, and chronic illness. CREDIT: identifies sinus tachycardia (7); recognizes normal intervals/axis with no acute ischemia and a normal QTc (5); systematic read (3). PENALTY: over-reading a benign sinus tachycardia as a primary cardiac event (-3).",
+      "keyFindings": [
+        "sinus tachycardia",
+        "no acute ischemic changes"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia (~104 bpm) with normal intervals/QTc and no acute ischemic changes."
+      ],
+      "commonMistakes": [
+        "calling sinus tachycardia a primary arrhythmia",
+        "over-reading benign T-wave changes as ischemia"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~104 bpm with a normal axis, normal PR/QRS/QTc intervals, and no acute ST/T changes — consistent with fever, anemia, and chronic illness rather than a primary cardiac process. Worth a baseline QTc since several drugs (and later, if needed, a fluoroquinolone) can prolong it.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with normal intervals/QTc and no acute ischemic changes."
+        ],
+        "coreActions": [
+          "sinus tachycardia",
+          "no acute ischemic changes"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "over-reads a benign sinus tachycardia as a primary cardiac event",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings and say what they mean for your leading diagnosis and for infection control.",
+      "rubric": "Findings = RIGHT UPPER LOBE thick-walled CAVITY with surrounding fibronodular consolidation and upper-zone volume loss, PLUS a fine background of innumerable 1-3 mm miliary micronodules in both lungs; no large effusion. CREDIT: identifies the upper-lobe cavity with fibronodular/apical change (4); recognizes the miliary micronodular pattern indicating hematogenous spread (3); states this upper-lobe cavitary-plus-miliary pattern in this host is classic for reactivation TB and means he is HIGHLY INFECTIOUS and must stay in airborne isolation (3). PENALTY: calling it a simple lobar pneumonia/missing the cavity, or inventing a large effusion (-2).",
+      "keyFindings": [
+        "right upper lobe thick-walled cavity with fibronodular change and upper-zone volume loss",
+        "fine miliary micronodular pattern (hematogenous spread)",
+        "no large pleural effusion or pneumothorax"
+      ],
+      "criticalFindings": [
+        "Right-upper-lobe cavitary disease with fibronodular change and an early miliary micronodular pattern — classic reactivation TB and a highly infectious film mandating airborne isolation."
+      ],
+      "commonMistakes": [
+        "calling it a simple lower-lobe bacterial pneumonia and missing the apical cavity",
+        "missing the fine miliary nodularity",
+        "inventing a large pleural effusion"
+      ],
+      "idealAnswer": "There is a thick-walled CAVITY in the RIGHT UPPER LOBE with surrounding fibronodular consolidation and upper-zone volume loss (the hilum and trachea are pulled up), plus a fine background of innumerable small (1-3 mm) nodules distributed fairly uniformly through both lungs — an early MILIARY pattern. No large pleural effusion or pneumothorax. Upper-lobe cavitation with a miliary pattern in this immunosuppressed, recently incarcerated man is classic for reactivation pulmonary tuberculosis with hematogenous spread; it tells me he is highly infectious and must remain in negative-pressure airborne isolation while sputum AFB/NAAT are processed.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Right-upper-lobe cavity + miliary micronodular pattern = reactivation TB; highly infectious, keep in airborne isolation."
+        ],
+        "coreActions": [
+          "upper-lobe thick-walled cavity with fibronodular change",
+          "fine miliary micronodular pattern"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls it simple bacterial pneumonia / misses the cavity or miliary pattern / invents a large effusion",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the chest imaging and the sputum AFB/NAAT results, commit to a diagnosis with your reasoning. Explain which discriminating test confirmed it, how you account for the hyponatremia, hypercalcemia, transaminitis, and pancytopenia, and what residual uncertainty remains.",
+      "rubric": "Active reactivation pulmonary tuberculosis with early miliary (disseminated) spread, CONFIRMED by a positive sputum AFB smear AND a positive TB NAAT (Xpert MTB/RIF) with rifampin resistance NOT detected — the discriminating tests that beat the competitors (negative bacterial cultures/urinary antigens argue against simple CAP; pending fungal/Histoplasma studies still being chased). Accounts for the multi-system labs as one unifying disease: hyponatremia = SIADH from pulmonary/intrathoracic disease; hypercalcemia = granulomatous extrarenal 1-alpha-hydroxylase (1,25-OH vitamin D); transaminitis/hepatomegaly = hepatic granulomatous involvement (with HCV/methotrexate confounders); pancytopenia/hepatosplenomegaly = marrow involvement from miliary spread. Residual uncertainty: drug-susceptibility (full culture/sensitivities pending), HIV status, and confirmation that fungal studies are negative; lymphoma still considered if culture/biopsy were discordant.",
+      "idealAnswer": "Commit to active REACTIVATION PULMONARY TUBERCULOSIS with early miliary (hematogenous/disseminated) spread. The discriminating tests are the positive sputum AFB smear and the positive TB NAAT (Xpert MTB/RIF detecting M. tuberculosis complex with rifampin resistance NOT detected) on a film showing an upper-lobe cavity plus miliary nodules — together these beat the competitors, and the negative pneumococcal/Legionella urinary antigens and unremarkable bacterial cultures argue against a simple bacterial CAP. The multi-system labs are not separate diseases but one unifying granulomatous infection: the hyponatremia (Na 126, normal anion gap, euvolemic) is SIADH from intrathoracic disease; the hypercalcemia (corrected ~12.2) is granulomatous extrarenal 1-alpha-hydroxylase activity producing 1,25-OH vitamin D (PTH should be suppressed); the transaminitis with hepatomegaly reflects hepatic granulomatous involvement (his untreated HCV and methotrexate are confounders); and the pancytopenia with hepatosplenomegaly reflects marrow involvement from miliary disease. Residual uncertainty: full drug-susceptibility testing is pending on culture, his HIV result must return, and the fungal/Histoplasma studies should confirm-negative; if culture and clinical course were discordant, lymphoma would still need tissue.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan — including airborne precautions, empiric therapy, monitoring, immunosuppression, public-health duties, and disposition/discharge planning?",
+      "rubric": "Per MGH/CDC tuberculosis management: KEEP in airborne (negative-pressure) isolation, N95 for staff, until criteria for de-isolation are met (CANT-MISS,4). Start four-drug RIPE therapy — Rifampin, Isoniazid (with pyridoxine/B6), Pyrazinamide, Ethambutol — empirically pending susceptibilities (CANT-MISS,6). MANDATORY public-health/notifiable-disease reporting to the local health department with CONTACT TRACING (jail block, SRO hostel/household, healthcare exposures) and arrangement of Directly Observed Therapy (DOT) (CANT-MISS,4). Baseline + serial LFTs and visual acuity/color vision monitoring on therapy (core,2). Address/manage his immunosuppression with rheumatology — hold methotrexate and the planned TNF-alpha inhibitor, taper steroids as able, watch for paradoxical/IRIS-type worsening (core,2). Manage the hyponatremia (SIADH — treat underlying disease, fluid restrict) and hypercalcemia (hydration, treat TB) (core,2). HIV testing/linkage and hepatitis-C confirmation (core,1). Safe-discharge planning: do NOT discharge to a congregate setting while infectious — arrange DOT, housing/case management, follow-up, and patient education on adherence and transmission (core,2). PENALTY: discharging an infectious smear-positive patient to a shelter/jail or stopping isolation prematurely (-5); starting a TNF-alpha inhibitor/escalating immunosuppression (-3); monotherapy or omitting public-health reporting (-3).",
+      "idealAnswer": "Keep him in AIRBORNE (negative-pressure) isolation with N95s for all staff until de-isolation criteria are met (clinical improvement on therapy plus serial negative AFB smears). Start empiric four-drug RIPE therapy — Rifampin, Isoniazid (add pyridoxine/B6), Pyrazinamide, and Ethambutol — pending culture susceptibilities, with baseline and serial LFTs (he has HCV and is on methotrexate) and baseline/serial visual acuity and color vision (ethambutol). This is a NOTIFIABLE disease: report immediately to the local public-health department, arrange CONTACT TRACING (the jail block and coughing cellmate, his SRO hostel and any household, and healthcare contacts), and set up Directly Observed Therapy (DOT) for adherence. Coordinate with rheumatology to HOLD methotrexate and the planned TNF-alpha inhibitor and taper steroids as tolerated, while watching for paradoxical worsening/IRIS as immunosuppression is reduced. Treat the SIADH hyponatremia by treating the TB and fluid-restricting, and the granulomatous hypercalcemia with hydration and TB therapy (avoid vitamin D). Send/confirm HIV and link to care; confirm and later treat HCV. For disposition: admit; do NOT discharge an infectious, smear-positive patient to a shelter or back to jail — arrange appropriate housing/case management, DOT, and close follow-up, and educate him on adherence and transmission before any eventual discharge.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Maintain airborne (negative-pressure) isolation + N95 until de-isolation criteria met",
+            "points": 4
+          },
+          {
+            "item": "Start four-drug RIPE therapy (Rifampin, Isoniazid + B6, Pyrazinamide, Ethambutol) empirically",
+            "points": 6
+          },
+          {
+            "item": "Public-health reporting + contact tracing (jail/hostel/household/healthcare) + arrange DOT",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Baseline + serial LFTs and visual acuity/color-vision monitoring on therapy",
+            "points": 2
+          },
+          {
+            "item": "Hold methotrexate and planned TNF-alpha inhibitor, taper steroids with rheumatology; watch for IRIS",
+            "points": 2
+          },
+          {
+            "item": "Manage SIADH hyponatremia (treat TB, fluid restrict) and granulomatous hypercalcemia (hydration)",
+            "points": 2
+          },
+          {
+            "item": "HIV testing/linkage and hepatitis-C confirmation",
+            "points": 1
+          },
+          {
+            "item": "Safe disposition: do not discharge to a congregate setting while infectious; DOT, housing/case mgmt, follow-up, education",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Discharging an infectious smear-positive patient to a shelter/jail or stopping isolation prematurely",
+            "points": -5
+          },
+          {
+            "item": "Starting a TNF-alpha inhibitor / escalating immunosuppression",
+            "points": -3
+          },
+          {
+            "item": "Monotherapy or omitting public-health reporting",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Maintain airborne (negative-pressure) isolation + N95 until de-isolation criteria met",
+        "Start four-drug RIPE therapy (Rifampin, Isoniazid + B6, Pyrazinamide, Ethambutol) empirically",
+        "Public-health reporting + contact tracing + arrange DOT"
+      ],
+      "optionalActions": [
+        "Baseline + serial LFTs and visual acuity/color-vision monitoring on therapy",
+        "Hold methotrexate and planned TNF-alpha inhibitor, taper steroids with rheumatology; watch for IRIS",
+        "Manage SIADH hyponatremia and granulomatous hypercalcemia",
+        "HIV testing/linkage and hepatitis-C confirmation",
+        "Safe disposition: do not discharge to a congregate setting while infectious; DOT, housing/case mgmt, follow-up, education"
+      ],
+      "unsafeActions": [
+        "Discharging an infectious smear-positive patient to a shelter/jail or stopping isolation prematurely",
+        "Starting a TNF-alpha inhibitor / escalating immunosuppression",
+        "Monotherapy or omitting public-health reporting"
+      ],
+      "consults": [
+        "Infectious Disease",
+        "Pulmonology",
+        "Rheumatology",
+        "Public Health / TB control program"
+      ],
+      "disposition": "Admit to a negative-pressure airborne-isolation room; involve public health; no discharge to a congregate setting while infectious",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Tuberculosis (Active Pulmonary TB, airborne isolation, RIPE therapy, reporting)",
+        "page": 188
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "worried",
+    "healthLiteracy": "below average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "incarceration",
+      "substance_use",
+      "hiv_risk",
+      "immunosuppressive_medications",
+      "housing_instability"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; somewhat embarrassed about incarceration and drug history",
+    "affect": "47-year-old chronically ill, cachectic man, tired and coughing intermittently; cooperative but guarded about his time in jail and his drug use.",
+    "disclosureRules": [
+      "Do not reveal incarceration, the coughing cellmate, immunosuppressive medications, the planned TNF blocker, HCV, drug use, or HIV risk unless directly asked",
+      "Do not mention or hint at the diagnosis or name any disease",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "onset_duration",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "constitutional_b_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "night sweats",
+        "weight loss",
+        "fevers",
+        "chills",
+        "appetite",
+        "fatigue"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "cough_hemoptysis",
+      "category": "hpi",
+      "triggerConcepts": [
+        "cough",
+        "phlegm",
+        "sputum",
+        "blood",
+        "coughing up blood",
+        "hemoptysis",
+        "shortness of breath"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "incarceration_exposure",
+      "category": "social",
+      "triggerConcepts": [
+        "where have you lived",
+        "incarceration",
+        "jail",
+        "prison",
+        "sick contacts",
+        "tb exposure",
+        "anyone around you sick",
+        "congregate",
+        "shelter",
+        "homeless"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "immunosuppression_meds",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "steroids",
+        "prednisone",
+        "methotrexate",
+        "immune suppressing",
+        "biologic",
+        "tnf",
+        "arthritis treatment",
+        "injections"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "hiv_substance_risk",
+      "category": "social",
+      "triggerConcepts": [
+        "hiv",
+        "drug use",
+        "injection drug",
+        "iv drugs",
+        "alcohol",
+        "sexual history",
+        "risk factors"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "travel_environmental",
+      "category": "social",
+      "triggerConcepts": [
+        "travel",
+        "abroad",
+        "farm",
+        "soil",
+        "birds",
+        "bats",
+        "caves",
+        "animals",
+        "environmental exposure"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "rheumatoid arthritis",
+        "hepatitis",
+        "prior tb"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "headache",
+        "neck stiffness",
+        "rash",
+        "urinary symptoms",
+        "diarrhea"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "social_smoking_housing",
+      "category": "social",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "where do you live",
+        "housing",
+        "work",
+        "occupation"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_general_appearance_finding_1",
+      "finding": "Thin, cachectic, chronically ill-appearing man with temporal wasting and mild respiratory effort.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Appears comfortable and well-nourished."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_2",
+      "finding": "Bronchial breath sounds and a few crackles over the RIGHT UPPER zone posteriorly with a hint of amphoric/cavernous quality; scattered fine crackles elsewhere; no wheeze.",
+      "revealedBy": [
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Clear to auscultation posteriorly."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_3",
+      "finding": "Scattered fine crackles anteriorly; no wheeze; no large effusion (resonant percussion, no stony dullness).",
+      "revealedBy": [
+        "auscultate_anterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Clear to auscultation anteriorly."
+    },
+    {
+      "id": "palpate_lymph_nodes_finding_4",
+      "finding": "Small mobile non-tender cervical lymph nodes bilaterally; no large fixed nodes.",
+      "revealedBy": [
+        "palpate_lymph_nodes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No lymphadenopathy."
+    },
+    {
+      "id": "assess_hepatomegaly_finding_5",
+      "finding": "Liver edge palpable ~2 cm below the costal margin, mildly tender (hepatic involvement).",
+      "revealedBy": [
+        "assess_hepatomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No hepatomegaly."
+    },
+    {
+      "id": "assess_splenomegaly_finding_6",
+      "finding": "Spleen tip just palpable below the left costal margin (mild splenomegaly).",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_7",
+      "finding": "Dry mucous membranes; no oral thrush; no scleral icterus.",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Moist mucous membranes."
+    },
+    {
+      "id": "assess_neck_stiffness_finding_8",
+      "finding": "No meningismus; neck supple (pertinent negative against TB meningitis at this time).",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Neck supple, no meningismus."
+    },
+    {
+      "id": "inspect_skin_finding_9",
+      "finding": "No active track marks; no petechiae or purpura; no rash; old tattoos.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Skin without rash or lesions."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Reactivation pulmonary tuberculosis (cavitary, with early miliary spread)",
+    "diagnosticFramework": "47M with seropositive rheumatoid arthritis on chronic prednisone and methotrexate (and a delayed planned TNF-alpha inhibitor), recently released from a crowded county jail with a chronically coughing contact, presents with ~6 weeks of fevers, drenching night sweats, ~8 kg weight loss, and a productive blood-streaked cough. The diagnosis is active reactivation pulmonary tuberculosis with early miliary spread, confirmed by a positive sputum AFB smear and TB NAAT on a chest film showing a right-upper-lobe cavity plus miliary micronodules. It competes with bacterial pneumonia/abscess, endemic/opportunistic fungal infection, and lymphoma/malignancy. The multi-system labs (SIADH hyponatremia, granulomatous hypercalcemia, transaminitis with hepatomegaly, and pancytopenia with hepatosplenomegaly) unify under disseminated granulomatous TB. Management hinges on immediate airborne isolation, four-drug RIPE therapy, public-health reporting with contact tracing and DOT, holding immunosuppression, and avoiding discharge to a congregate setting while infectious.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Thin, cachectic, chronically ill-appearing man with temporal wasting and mild respiratory effort.",
+      "Bronchial breath sounds and a few crackles over the RIGHT UPPER zone posteriorly with a hint of amphoric/cavernous quality; scattered fine crackles elsewhere; no wheeze.",
+      "Scattered fine crackles anteriorly; no wheeze; no large effusion (resonant percussion, no stony dullness).",
+      "Small mobile non-tender cervical lymph nodes bilaterally; no large fixed nodes.",
+      "Liver edge palpable ~2 cm below the costal margin, mildly tender (hepatic involvement).",
+      "Spleen tip just palpable below the left costal margin (mild splenomegaly).",
+      "Dry mucous membranes; no oral thrush; no scleral icterus.",
+      "No meningismus; neck supple (pertinent negative against TB meningitis at this time).",
+      "No active track marks; no petechiae or purpura; no rash; old tattoos."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "BMP",
+      "LFTs",
+      "Calcium_panel",
+      "Inflammatory_markers",
+      "HIV_test",
+      "Sputum_AFB_NAAT",
+      "Sputum_bacterial"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals — a subacute febrile wasting illness with hemoptysis.",
+      "Elicit the focused history, including the social/exposure history (incarceration, coughing contact, congregate housing), immunosuppressive medications (steroids, methotrexate, planned TNF inhibitor), and HIV/substance risk — only on direct questioning.",
+      "Perform the targeted exam to reveal right-upper-zone bronchial breathing/crackles, lymphadenopathy, and hepatosplenomegaly.",
+      "Build a differential led by reactivation pulmonary TB while keeping bacterial pneumonia/abscess, fungal infection, and lymphoma/malignancy genuinely open, and name three TB-reactivation risk factors.",
+      "Place the patient in airborne isolation FIRST, send three sputum AFB/NAAT specimens, a chest X-ray, an HIV test, and multi-system labs; interpret the EKG and the cavitary-plus-miliary CXR.",
+      "Commit to active reactivation/miliary TB confirmed by smear + NAAT, unify the multi-system labs (SIADH, granulomatous hypercalcemia, hepatic involvement, marrow involvement), then manage with RIPE therapy, public-health reporting/contact tracing/DOT, holding immunosuppression, and a safe (non-congregate) disposition."
+    ],
+    "commonPitfalls": [
+      "Anchoring on bacterial CAP and treating outpatient without considering TB or airborne isolation",
+      "Failing to place the patient in airborne isolation before sputum/bronchoscopy",
+      "Missing the apical cavity or the miliary pattern on the chest film",
+      "Escalating immunosuppression (starting the planned TNF-alpha inhibitor) in active TB",
+      "Discharging an infectious smear-positive patient to a shelter or back to jail",
+      "Omitting public-health reporting and contact tracing"
+    ],
+    "managementPearls": [
+      "Airborne (negative-pressure) isolation + N95 the moment TB is suspected",
+      "Four-drug RIPE therapy (Rifampin, Isoniazid + B6, Pyrazinamide, Ethambutol) empirically",
+      "Notifiable disease: report to public health with contact tracing and arrange DOT"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_posterior_lungs"
+    ],
+    "criticalWorkupItems": [
+      "Airborne (negative-pressure) isolation + N95 immediately when TB suspected",
+      "Three sputum specimens for AFB smear, mycobacterial culture, and TB NAAT (Xpert MTB/RIF)"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with normal intervals/QTc and no acute ischemic changes — fever, anemia, chronic illness.",
+      "Right-upper-lobe cavity plus miliary micronodular pattern — reactivation TB; highly infectious, keep in airborne isolation."
+    ],
+    "criticalManagementItems": [
+      "Maintain airborne (negative-pressure) isolation + N95 until de-isolation criteria met",
+      "Start four-drug RIPE therapy empirically",
+      "Public-health reporting + contact tracing + arrange DOT"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with no acute ischemic changes.",
+      "Right-upper-lobe cavity with fibronodular change and a fine miliary micronodular pattern."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with normal intervals/QTc and no acute ischemic changes.",
+      "Right-upper-lobe cavitary disease with an early miliary pattern — classic reactivation TB and a highly infectious film mandating airborne isolation."
+    ],
+    "imageInterpretationPearls": [
+      "A fast but regular rhythm in a febrile, anemic, chronically ill patient is sinus tachycardia — explain it, don't over-work it up; note a baseline QTc.",
+      "Upper-lobe cavitation points to reactivation TB; a fine, uniform micronodular pattern is miliary (hematogenous) spread.",
+      "A cavitary/miliary film in a high-risk host means HIGHLY infectious — keep airborne isolation while sputum AFB/NAAT process."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy and avoids stigmatizing the patient about incarceration/drug use",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive social/HIV/substance-use questions",
+        "points": 1
+      },
+      {
+        "item": "Explains isolation and next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read (patient's own cavitary/miliary CXR; LITFL CXR case 40)",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

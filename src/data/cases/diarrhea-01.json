@@ -1,127 +1,145 @@
 {
   "id": "diarrhea-01",
   "category": "Diarrhea",
-  "difficulty": "easy",
-  "title": "Watery diarrhea after antibiotics",
+  "difficulty": "hard",
+  "title": "Profuse watery diarrhea after antibiotics in a frail polypharmacy patient",
   "diagnosis": "C. difficile colitis",
   "chart": {
-    "ageSex": "68F",
+    "ageSex": "74F",
     "cc": "Profuse watery diarrhea",
-    "oneLiner": "68F presents with several days of frequent watery diarrhea, crampy abdominal pain, and low-grade fever, two weeks after a course of antibiotics.",
+    "oneLiner": "74F with permanent atrial fibrillation (on apixaban and diltiazem), HFrEF, CKD stage 3, and type 2 diabetes presents with 5 days of frequent watery diarrhea, crampy lower abdominal pain, and low-grade fever, two weeks after finishing clindamycin for a dental abscess; she has also taken extra ibuprofen for tooth pain and her home PPI was recently started.",
     "vitals": {
-      "BP": "108/66",
-      "HR": "104",
-      "RR": "18",
-      "Temp": "38.1°C",
-      "SpO2": "98% RA"
+      "BP": "102/64",
+      "HR": "118",
+      "RR": "20",
+      "Temp": "38.2°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I can't stop going to the bathroom — watery diarrhea, ten times a day, with cramps.",
-  "patientFile": "PERSONA: 68-year-old woman, tired and dehydrated. Cooperative.\n\nHPI: 4 days of profuse, non-bloody WATERY diarrhea (8–10x/day) with lower abdominal cramping and low-grade fevers. Recently finished a course of clindamycin for a dental infection and was briefly hospitalized last month (only if asked about recent antibiotics/hospitalization). NO recent travel, NO sick contacts, NO large amounts of blood.\nPMH: hypertension. MEDS: lisinopril; recent clindamycin (completed). SOCIAL: lives independently.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: dehydrated (dry mucous membranes), mild distress.\n- Vitals: BP 108/66, HR 104, RR 18, 38.1°C, SpO2 98% RA.\n- Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent antibiotics or hospitalization unless asked about recent medications, antibiotics, or healthcare exposure.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I can't stop running to the bathroom — watery diarrhea, more than ten times a day, and my belly cramps the whole time.",
+  "patientFile": "PERSONA: 74-year-old woman, frail, tired, and dehydrated. Cooperative but worn out. Worried because her heart has been racing and she feels weak and lightheaded when she stands.\n\nHPI: 5 days of profuse, WATERY, non-bloody diarrhea (10–12x/day) with lower abdominal cramping and low-grade fevers. She finished a 7-day course of clindamycin about two weeks ago for a dental abscess and was in the hospital overnight last month for a heart-failure tune-up (reveal recent antibiotics and the hospital stay only if asked about recent medications, antibiotics, or healthcare/hospital exposure). She has been taking extra over-the-counter ibuprofen the last week for the tooth and for the belly cramps (reveal only if asked specifically about pain medicines or over-the-counter drugs). Her primary doctor started omeprazole a couple of months ago for reflux. She feels lightheaded and weak when she stands and her heart has felt like it is racing/fluttering more than usual. NO large amounts of blood in the stool, though she thinks she saw a streak once. NO recent travel, NO sick contacts, NO new foods, NO camping or untreated water.\nKEY DISCRIMINATORS (reveal only if the relevant question is asked): The diarrhea is WATERY and essentially NON-bloody — it did NOT start as sudden severe abdominal pain followed by bloody stool (argues against ischemic colitis). The pain is crampy and generalized-lower, NOT a sudden severe left-sided pain out of proportion. She has NOT had chronic diarrhea, weight loss, or night sweats over months (argues against IBD/microscopic colitis as a new chronic process). No one else at home is sick. She has not changed her diet.\nPMH: permanent atrial fibrillation; heart failure with reduced ejection fraction (EF ~35%); chronic kidney disease stage 3 (baseline creatinine ~1.3); type 2 diabetes; hypertension; GERD. MEDS: apixaban 5 mg BID; diltiazem 240 mg daily (rate control); metoprolol succinate; furosemide 40 mg daily; lisinopril; metformin; omeprazole (started ~2 months ago); recent clindamycin (completed ~2 weeks ago); extra OTC ibuprofen this past week. ALLERGIES: none. SOCIAL: lives alone in a second-floor walk-up; widowed; a daughter lives 30 minutes away and helps with groceries; no tobacco, rare alcohol, no drugs. She is a little unsteady on the stairs even at baseline. FAMILY: noncontributory. ROS: profound fatigue, lightheadedness on standing, palpitations, reduced urine output the last day; no chest pain, no melena, no hematemesis, no urinary burning.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: frail, dehydrated (dry mucous membranes, poor skin turgor), mild distress, looks tired.\n- Vitals: BP 102/64, HR 118 irregularly irregular, RR 20, 38.2°C, SpO2 97% RA. Orthostatic: stands to 88/56 with HR 130 and reproduces her lightheadedness.\n- Cardiac: irregularly irregular rhythm, tachycardic, no new murmur; JVP not elevated (she is dry).\n- Abdomen: mild diffuse lower-abdominal tenderness with mild distension; NO rigidity, NO rebound, NO localized severe left-sided peritonism (worsening distension/rigidity would raise toxic megacolon or ischemia); bowel sounds present but quiet.\n- Skin: tenting/poor turgor; no rash.\n- Neuro: alert, oriented, no asterixis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent antibiotics, the hospital stay, the extra ibuprofen, or the recently started PPI unless asked about recent medications, antibiotics, over-the-counter drugs, or healthcare exposure.\n- Do NOT volunteer the watery/non-bloody character or the absence of sudden severe pain unless asked about the stool's appearance or how the pain started.\n- Reveal exam findings (orthostatic drop, irregular rhythm, abdominal/skin findings) ONLY when the relevant maneuver is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "StoolCdiff": "Stool C. difficile toxin/PCR POSITIVE.",
-      "CBC": "WBC 18.0 with left shift (marked leukocytosis is a severity marker).",
-      "BMP": "K 3.2 (low from losses), BUN 30, Cr 1.5 (baseline 0.9 — AKI), HCO3 low.",
-      "Lactate": "1.9 — mildly elevated.",
-      "OtherStool": "Routine stool cultures negative."
+      "StoolCdiff": "Stool C. difficile GDH antigen POSITIVE and toxin EIA POSITIVE (confirmatory NAAT/PCR also positive) — confirms toxigenic C. difficile.",
+      "CBC": "WBC 19.4 with marked left shift (severe-disease threshold is >15); Hgb 11.8; Plt 240.",
+      "BMP": "Na 133, K 2.9 (low from GI losses, worsened by furosemide), Cl 98, HCO3 16 → anion gap = 133 − (98 + 16) = 19 (elevated AG metabolic acidosis); BUN 42, Cr 2.1 (baseline 1.3 → AKI on CKD); glucose 168.",
+      "Mg": "Magnesium 1.3 mg/dL — hypomagnesemia (GI losses plus chronic PPI use); a substrate for the atrial-fibrillation rate instability.",
+      "Lactate": "2.6 mmol/L — mildly elevated, consistent with hypovolemia/hypoperfusion (NOT yet the high level of frank bowel ischemia).",
+      "Coags": "INR 1.4 on apixaban (expected mild elevation); not frankly coagulopathic.",
+      "OtherStool": "Routine stool cultures, ova & parasites, and stool occult blood essentially negative (rare trace blood) — argues against a primary bloody/ischemic or invasive bacterial process."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/hypokalaemia-ecg-library/",
+      "litflStudyN": 2,
+      "integrated": true,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "verify": "From the LITFL 'Hypokalaemia' library page — download an example tracing that matches: Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute isc … and self-host with credit to litfl.com.",
+      "findings": "Atrial fibrillation with a rapid ventricular response (~115–125 bpm): irregularly irregular QRS complexes with no discernible P waves. Hypokalemic/hypomagnesemic changes — flattened T waves with U waves and a long QU. No acute ST-elevation; rate-related ST depression should not be over-called as primary ischemia.",
+      "verify": "From the LITFL 'Atrial fibrillation' library page — download an example tracing showing AF with RVR (irregularly irregular, no P waves) and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus tachycardia with possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "imageDescription": "Atrial fibrillation with rapid ventricular response and hypokalemic changes (flattened T waves, U waves); no acute ST-elevation.",
       "searchTerms": [
-        "sinus tachycardia hypokalemia 12-lead ECG"
+        "atrial fibrillation rapid ventricular response 12-lead ECG",
+        "atrial fibrillation hypokalemia U waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 68-year-old woman presents with several days of profuse watery diarrhea, lightheadedness, and palpitations."
+      "clinicalVignette": "A 74-year-old woman with permanent atrial fibrillation and several days of profuse watery diarrhea presents dehydrated with palpitations and a racing, irregular pulse."
     },
     "cxr": {
       "label": "Abdominal X-ray (upright)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20abdominal%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
-      "verify": "Pick a CC abdominal film that is normal/non-dilated (to contrast with toxic megacolon).",
+      "findings": "No marked colonic dilation (transverse colon caliber well under 6 cm), no mucosal thumbprinting, and NO free air/pneumatosis — argues against toxic megacolon, against ischemic colitis, and against perforation.",
+      "verify": "Pick a CC abdominal film that is normal/non-dilated (to contrast with toxic megacolon and to show no thumbprinting/pneumatosis).",
       "assetNeeded": true,
-      "imageDescription": "Upright abdominal radiograph, no colonic dilation.",
+      "imageDescription": "Upright abdominal radiograph: no colonic dilation, no thumbprinting, no free air or pneumatosis.",
       "searchTerms": [
-        "normal abdominal x-ray upright"
+        "normal abdominal x-ray upright",
+        "abdominal radiograph no colonic dilation"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 70-year-old man with severe colitis and abdominal distension undergoes an upright film to exclude toxic megacolon."
+      "clinicalVignette": "A frail woman with severe colitis and abdominal distension undergoes an upright film to exclude toxic megacolon, thumbprinting, and free air."
     }
   },
   "revealKeys": [
     "StoolCdiff",
     "CBC",
     "BMP",
+    "Mg",
     "Lactate",
+    "Coags",
     "OtherStool",
     "ekg",
     "cxr"
   ],
   "essential": [
     "StoolCdiff",
-    "BMP"
+    "BMP",
+    "CBC"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "C. difficile colitis (leading,8). Other infectious diarrhea (core,3). Antibiotic-associated diarrhea (non-C.diff) (core,3). Inflammatory bowel disease (core,3). Considers complications — toxic megacolon/fulminant colitis (CANT-MISS,3). Connects recent antibiotics + healthcare exposure + watery diarrhea to C. difficile (core,3).",
-      "idealAnswer": "Leading diagnosis: C. difficile colitis. Must-not-miss: toxic megacolon/fulminant colitis. Also reasonable: other infectious diarrhea, antibiotic-associated diarrhea (non-C. difficile), inflammatory bowel disease. Links recent antibiotics and healthcare exposure with watery diarrhea to C. difficile.",
+      "prompt": "Based on your history and physical in this frail, polypharmacy patient with profuse watery diarrhea after antibiotics, list your differential (note your leading diagnosis). Two diagnoses genuinely compete here — say which you favor and why. Also name THREE mechanisms/etiologies by which antibiotics and her medications can cause diarrhea in a patient like this.",
+      "rubric": "C. difficile colitis as leading dx, linking recent clindamycin + healthcare exposure + watery non-bloody diarrhea + PPI use (leading,7). Ischemic colitis as the genuine competing must-not-miss given age, AFib, hypotension/hypoperfusion and a possible blood streak (CANT-MISS,5). Considers fulminant C. diff / toxic megacolon as a complication (CANT-MISS,3). Other infectious diarrhea (core,2). IBD / microscopic colitis (core,1). Names THREE mechanisms of drug-related diarrhea — e.g. (1) antibiotic disruption of colonic flora enabling C. difficile, (2) direct antibiotic/PPI-driven dysbiosis & osmotic/secretory effect, (3) metformin-induced and (4) other osmotic/secretory drug effects; magnesium-containing or other agents (core,4). Explains WHY C. diff is favored over ischemia — non-bloody watery stool, no sudden pain out of proportion, clear antibiotic trigger (core,3). PENALTY: anchoring on simple post-antibiotic diarrhea and ignoring ischemic colitis / a cant-miss complication (-3).",
+      "idealAnswer": "Leading diagnosis: C. difficile colitis — recent clindamycin (a classic high-risk antibiotic) two weeks ago, a recent hospital stay, chronic PPI use, and profuse WATERY non-bloody diarrhea with crampy pain and leukocytosis all point here. The genuine competing must-not-miss is ISCHEMIC COLITIS: she is elderly with atrial fibrillation, is hypotensive/hypovolemic (low-flow), and reported a possible blood streak — but the stool is watery and essentially non-bloody, the pain is not sudden or out of proportion, and there is a clear antibiotic trigger, so C. diff is favored (ischemia is excluded with imaging and the negative occult blood). Also keep fulminant C. diff / toxic megacolon on the list as a complication, plus other infectious diarrhea and IBD/microscopic colitis. THREE mechanisms of drug-related diarrhea in her: (1) antibiotics (clindamycin) wipe out protective colonic flora and let toxigenic C. difficile overgrow; (2) PPI-associated dysbiosis and reduced gastric-acid barrier raising C. diff risk, plus a direct osmotic/secretory antibiotic-associated diarrhea; (3) metformin-induced diarrhea; other agents (e.g., magnesium-containing products) cause osmotic diarrhea.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "C. difficile colitis",
-            "points": 8
+            "item": "C. difficile colitis (leading)",
+            "points": 7
           },
           {
-            "item": "Considers complications — toxic megacolon/fulminant colitis",
+            "item": "Ischemic colitis — competing must-not-miss",
+            "points": 5
+          },
+          {
+            "item": "Considers fulminant C. diff / toxic megacolon as a complication",
             "points": 3
           }
         ],
         "coreActions": [
           {
             "item": "Other infectious diarrhea",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Antibiotic-associated diarrhea (non-C. difficile)",
-            "points": 3
+            "item": "IBD / microscopic colitis",
+            "points": 1
           },
           {
-            "item": "Inflammatory bowel disease",
-            "points": 3
+            "item": "Names three mechanisms of drug-related diarrhea (antibiotic dysbiosis, PPI/AAD, metformin/osmotic)",
+            "points": 4
           },
           {
-            "item": "Connects recent antibiotics + healthcare exposure + watery diarrhea to C. difficile",
+            "item": "Explains why C. diff is favored over ischemia — non-bloody watery stool, no sudden pain out of proportion, clear antibiotic trigger",
             "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on simple post-antibiotic diarrhea, ignoring ischemic colitis / a cant-miss complication",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Considers complications — toxic megacolon/fulminant colitis"
+        "Ischemic colitis",
+        "Considers fulminant C. diff / toxic megacolon as a complication"
       ],
       "acceptableAlternatives": [
         "Other infectious diarrhea",
-        "Antibiotic-associated diarrhea (non-C. difficile)",
-        "Inflammatory bowel disease"
+        "IBD / microscopic colitis"
       ]
     },
     {
@@ -129,45 +147,45 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "Stool C. difficile toxin/PCR (CANT-MISS,5). CBC — WBC as a severity marker (3). BMP — potassium, renal function (3). Lactate (2). Abdominal imaging if severe to assess for megacolon (2). PENALTY: ordering antimotility agents as part of management (-2 — addressed in management).",
-      "idealAnswer": "Order: EKG; CXR; Stool C. difficile toxin/PCR; CBC; BMP; Lactate; Other stool studies.",
+      "prompt": "What initial workup do you want to order to confirm C. difficile and to settle the C. diff-versus-ischemic-colitis question, and to assess her multiple concurrent abnormalities?",
+      "rubric": "Stool C. difficile two-step testing (GDH + toxin EIA, NAAT/PCR if discordant) (CANT-MISS,4). CBC — WBC as a severity marker (2). BMP — K, anion gap, renal function/AKI on CKD (3). Magnesium (and other electrolytes) (1). Lactate to gauge perfusion / screen for ischemia (1). Coags/INR given apixaban (1). Abdominal imaging (upright film/CT) to assess megacolon and to look for ischemic thumbprinting/pneumatosis (2). Other stool studies / occult blood (1). PENALTY: ordering antimotility agents as workup (-2 — addressed in management); CT angiography/aggressive ischemia hunt while ignoring the obvious C. diff test (-1).",
+      "idealAnswer": "Order: EKG; abdominal X-ray (upright) — and low threshold for CT abdomen/pelvis to assess megacolon and look for ischemic thumbprinting/pneumatosis; stool C. difficile two-step testing (GDH antigen + toxin EIA, reflex NAAT/PCR if discordant); CBC; BMP (potassium, anion gap, renal function); magnesium; lactate; coags/INR (she is on apixaban); other stool studies with occult blood.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Stool C. difficile toxin/PCR",
-            "points": 5
+            "item": "Stool C. difficile two-step testing (GDH + toxin EIA, NAAT/PCR if discordant)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "CBC — WBC as a severity marker",
+            "points": 2
+          },
+          {
+            "item": "BMP — potassium, anion gap, renal function (AKI on CKD)",
             "points": 3
           },
           {
-            "item": "BMP — potassium, renal function",
-            "points": 3
+            "item": "Magnesium and other electrolytes",
+            "points": 1
           },
           {
-            "item": "Lactate",
+            "item": "Lactate to gauge perfusion / screen for ischemia",
+            "points": 1
+          },
+          {
+            "item": "Coags/INR given apixaban",
+            "points": 1
+          },
+          {
+            "item": "Abdominal imaging for megacolon and ischemic thumbprinting/pneumatosis",
             "points": 2
           },
           {
-            "item": "Abdominal imaging if severe to assess for megacolon",
-            "points": 2
-          },
-          {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Other stool studies",
-            "points": 2
+            "item": "Other stool studies / occult blood",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -175,11 +193,15 @@
           {
             "item": "Ordering antimotility agents (addressed in management)",
             "points": -2
+          },
+          {
+            "item": "Aggressive ischemia hunt (CT angiography) while ignoring the obvious C. diff test",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
-        "Stool C. difficile toxin/PCR"
+        "Stool C. difficile two-step testing (GDH + toxin EIA, NAAT/PCR if discordant)"
       ],
       "optionalTests": [],
       "contraindicatedTests": [],
@@ -191,51 +213,37 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, possible hypokalemic changes (U waves/flat T), no acute ischemia. CREDIT: rate & rhythm (5); recognizes possible hypokalemic changes from diarrheal losses (5); no acute ischemia (3); systematic read (2). PENALTY: over-calling ischemia (-3).",
+      "prompt": "Here is THIS patient's 12-lead EKG. Describe your findings and tie them to her presentation.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves) at ~115–125 bpm; hypokalemic/hypomagnesemic changes (flattened T waves, U waves, long QU) from diarrheal losses; NO acute ST-elevation, and rate-related ST depression should not be over-called as primary ischemia. CREDIT: identifies AF with RVR — irregularly irregular, absent P waves (5); recognizes hypokalemic/hypomagnesemic changes from GI losses and links to her low K/Mg (5); states no acute STEMI / does not over-call rate-related ST changes (3); systematic read (2). PENALTY: over-calling rate-related ST depression as a primary NSTEMI, or calling the rhythm sinus tachycardia (-3).",
       "keyFindings": [
-        "rate & rhythm",
-        "recognizes possible hypokalemic changes from diarrheal losses",
-        "no acute ischemia",
+        "atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves)",
+        "hypokalemic/hypomagnesemic changes (flattened T waves, U waves) from diarrheal losses",
+        "no acute ST-elevation; do not over-call rate-related ST depression",
         "systematic read"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia."
+        "Atrial fibrillation with rapid ventricular response (~115–125 bpm) plus hypokalemic/hypomagnesemic changes (flattened T waves, U waves); no acute ST-elevation."
       ],
       "commonMistakes": [
-        "over-calling ischemia"
+        "calling the irregularly irregular rhythm sinus tachycardia",
+        "over-calling rate-related ST depression as a primary NSTEMI"
       ],
-      "idealAnswer": "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (~115–125 bpm): irregularly irregular QRS complexes with no discernible P waves — her known permanent AF, now poorly rate-controlled because she is dehydrated and has stopped absorbing her oral diltiazem. There are hypokalemic/hypomagnesemic changes — flattened T waves with U waves and a long QU — from her GI potassium and magnesium losses, which themselves destabilize the rate and predispose to arrhythmia. No acute ST-elevation; any rate-related ST depression should NOT be over-called as a primary NSTEMI. This EKG is part of the puzzle: it tells me to replete K and Mg and to address rate control as I resuscitate.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-            "points": 5
-          }
+          "Atrial fibrillation with rapid ventricular response (~115–125 bpm) plus hypokalemic/hypomagnesemic changes (flattened T waves, U waves); no acute ST-elevation."
         ],
         "coreActions": [
-          {
-            "item": "rate & rhythm",
-            "points": 5
-          },
-          {
-            "item": "recognizes possible hypokalemic changes from diarrheal losses",
-            "points": 5
-          },
-          {
-            "item": "no acute ischemia",
-            "points": 3
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves)",
+          "hypokalemic/hypomagnesemic changes (flattened T waves, U waves) from diarrheal losses",
+          "no acute ST-elevation; do not over-call rate-related ST depression",
+          "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling ischemia",
+            "label": "over-calls rate-related ST depression as a primary NSTEMI, or calls the rhythm sinus tachycardia",
             "points": -3
           }
         ]
@@ -247,36 +255,33 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's abdominal film. Describe your findings.",
-      "rubric": "Findings = no marked colonic dilation. CREDIT: assesses colonic caliber (5); explicitly looks for/excludes toxic megacolon (transverse colon >6 cm) (5). PENALTY: missing the purpose (megacolon screen) (-1).",
+      "prompt": "Here is the patient's abdominal film. Describe your findings and what they rule in or out.",
+      "rubric": "Findings = no marked colonic dilation, no mucosal thumbprinting, and no free air/pneumatosis. CREDIT: assesses colonic caliber and explicitly excludes toxic megacolon (transverse colon >6 cm) (5); looks for thumbprinting/pneumatosis (ischemia) and free air (perforation) as deliberate pertinent negatives (5). PENALTY: missing the purpose (megacolon + ischemia + perforation screen) or inventing pathology (-1).",
       "keyFindings": [
-        "assesses colonic caliber"
+        "assesses colonic caliber and excludes toxic megacolon",
+        "no thumbprinting/pneumatosis and no free air (pertinent negatives)"
       ],
       "criticalFindings": [
-        "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+        "No marked colonic dilation (a transverse colon >6 cm would indicate toxic megacolon), no mucosal thumbprinting/pneumatosis, and no free air."
       ],
       "commonMistakes": [
-        "missing the purpose (megacolon screen)"
+        "missing the purpose (megacolon / ischemia / perforation screen)",
+        "inventing pathology on a non-dilated film"
       ],
-      "idealAnswer": "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
+      "idealAnswer": "No marked colonic dilation — the transverse colon is well under 6 cm, so there is no toxic megacolon. There is no mucosal thumbprinting or pneumatosis to suggest ischemic colitis, and no free air to suggest perforation. These deliberate pertinent negatives lower the competing ischemic-colitis diagnosis and reassure me there is no surgical emergency right now, though I will repeat imaging if she clinically deteriorates.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: no marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon).",
-            "points": 5
-          }
+          "No marked colonic dilation (a transverse colon >6 cm would indicate toxic megacolon), no mucosal thumbprinting/pneumatosis, and no free air."
         ],
         "coreActions": [
-          {
-            "item": "assesses colonic caliber",
-            "points": 5
-          }
+          "assesses colonic caliber and excludes toxic megacolon",
+          "no thumbprinting/pneumatosis and no free air (pertinent negatives)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "missing the purpose (megacolon screen)",
+            "label": "misses the purpose (megacolon / ischemia / perforation screen) or invents pathology",
             "points": -1
           }
         ]
@@ -286,9 +291,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Stool C. diff is positive with marked leukocytosis and an AKI. What is your diagnosis and severity?",
-      "rubric": "C. difficile colitis, severe (6). Cites positive toxin/PCR plus severity markers — WBC >15, rising creatinine (4).",
-      "idealAnswer": "Severe C. difficile colitis. Supported by the positive stool toxin/PCR plus severity markers — WBC >15 (marked leukocytosis) and a rising creatinine (AKI).",
+      "prompt": "The stool GDH and toxin EIA are POSITIVE, with WBC 19.4, K 2.9 / Mg 1.3, an anion-gap acidosis, and an AKI on CKD; the abdominal film shows no megacolon, thumbprinting, or free air; the EKG shows AF with RVR and hypokalemic changes. What is your diagnosis and severity, what discriminating findings let you commit over ischemic colitis, and what residual uncertainty remains?",
+      "rubric": "Severe C. difficile colitis — positive GDH + toxin EIA plus severity markers (WBC >15, rising creatinine/AKI). Commits over ischemic colitis using the discriminators (watery non-bloody stool, essentially negative occult blood, clear antibiotic trigger, and the film with no thumbprinting/pneumatosis). Integrates the multi-system problems (hypokalemia + hypomagnesemia, anion-gap acidosis from losses/hypoperfusion, AKI on CKD, AF with RVR worsened by dehydration and electrolyte depletion). Names the discriminating test (toxin EIA / NAAT and imaging) and the residual uncertainty (must watch for fulminant disease / megacolon; flexible sigmoidoscopy/CT if she deteriorates or fails to improve).",
+      "idealAnswer": "Severe C. difficile colitis. It is confirmed by the positive stool GDH antigen AND toxin EIA, and it meets severity criteria with marked leukocytosis (WBC 19.4, >15) and an AKI (creatinine 2.1 from a baseline 1.3). I commit over the competing ischemic colitis because the stool is watery and essentially non-bloody with negative occult blood, the pain was never sudden or out of proportion, there is a clear antibiotic trigger, and the abdominal film shows no thumbprinting, pneumatosis, or free air. I am also treating SEPARATE concurrent problems, not just one diagnosis: hypokalemia and hypomagnesemia from GI losses (worsened by furosemide and chronic PPI), an elevated anion-gap metabolic acidosis (gap 19) from losses plus hypoperfusion, an AKI on CKD, and atrial fibrillation with a rapid ventricular response that is poorly controlled because she is volume-depleted and not absorbing her oral diltiazem — repleting K/Mg and restoring volume will help the rate. The discriminating tests were the toxin EIA/NAAT and the imaging; residual uncertainty is whether she will progress to FULMINANT disease or toxic megacolon, so I will reassess clinically, repeat the film/CT, and obtain flexible sigmoidoscopy if she fails to improve or worsens.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -301,32 +306,40 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH C. difficile (IDSA): oral vancomycin or fidaxomicin (CANT-MISS,7); stop offending antibiotic and antimotility agents (CANT-MISS,5); fulminant → PO/PR vanc + IV metronidazole + surgery consult (4); contact precautions + soap-and-water hand hygiene (3); supportive fluids/electrolytes (2); do not retest/test-for-cure (1). PENALTY: IV vancomycin for C. diff colitis (no lumen levels) (-3); giving loperamide/antimotility (-2).",
-      "idealAnswer": "Stop the offending antibiotic and any antimotility agents. Treat with oral vancomycin 125 mg q6h ×10 d OR fidaxomicin 200 mg BID ×10 d (metronidazole only if these unavailable). Fulminant disease (hypotension, ileus, megacolon): high-dose PO/PR vancomycin + IV metronidazole and STAT surgical consult. Contact precautions; hand hygiene with soap and water. Do not test for cure.",
+      "prompt": "What is your management plan — including treatment, her concurrent electrolyte/cardiac/renal problems, anticoagulation considerations, and the disposition/safe-discharge plan for this frail woman who lives alone?",
+      "rubric": "Per MGH C. difficile (IDSA): oral vancomycin 125 mg q6h OR fidaxomicin (CANT-MISS,6); stop the offending antibiotic and any antimotility agents, AND stop the nephrotoxins/QT or rate confounders that fit — hold ibuprofen (AKI) and reassess the PPI (CANT-MISS,5); fulminant disease (hypotension, ileus, megacolon) → high-dose PO/PR vancomycin + IV metronidazole + STAT surgery consult (3); resuscitate with IV fluids and aggressively replete K and Mg, recheck renal function (3); rate-control/AF and anticoagulation reconciliation — IV rate control while not absorbing PO, hold/adjust apixaban around AKI and bleeding risk (2); contact precautions + soap-and-water hand hygiene (2); safe disposition — ADMIT given severity, frailty, AKI, AF with RVR, lives alone; on discharge do med reconciliation, caregiver/daughter education, home-safety/PT eval and close follow-up (CANT-MISS,3); do not test for cure (bonus,1). PENALTY: IV vancomycin for C. diff colitis (no lumen levels) (-3); giving loperamide/antimotility (-2); discharging this severe, frail, hemodynamically borderline patient home (-3).",
+      "idealAnswer": "Treat with oral vancomycin 125 mg q6h ×10 days (or fidaxomicin 200 mg BID ×10 days); reserve metronidazole for when these are unavailable. Stop the offending antibiotic and ALL antimotility agents; reconcile her polypharmacy — hold the ibuprofen that is driving her AKI, hold the ACE inhibitor/diuretic while she is hypovolemic with an AKI, and reassess the chronically prescribed PPI (a C. diff risk factor). Resuscitate with IV fluids and aggressively replete potassium and magnesium (they also stabilize her AF), and recheck renal function. Address the AF with RVR with IV rate control while she is not absorbing oral diltiazem, and reconcile anticoagulation — apixaban dosing must account for the AKI and her GI bleeding risk, balanced against stroke risk. If she becomes fulminant (hypotension, ileus, megacolon): high-dose PO/PR vancomycin + IV metronidazole and STAT surgical consult. Contact precautions; hand hygiene with soap and water (not alcohol gel). Do NOT test for cure. DISPOSITION: ADMIT — she has severe C. diff, an AKI on CKD, AF with RVR, orthostatic hypotension, frailty, and lives alone. Plan a safe discharge later with medication reconciliation, education for her and her daughter, a home-safety/PT evaluation for the stairs, and close outpatient follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Oral vancomycin or fidaxomicin",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Stop offending antibiotic and antimotility agents",
+            "item": "Stop offending antibiotic and antimotility agents; hold ibuprofen (AKI) and reassess the PPI",
             "points": 5
+          },
+          {
+            "item": "Safe disposition: ADMIT (severe, frail, AKI, AF with RVR, lives alone) with med reconciliation, caregiver education, home-safety/PT eval and close follow-up",
+            "points": 3
           }
         ],
         "coreActions": [
           {
             "item": "Fulminant: PO/PR vanc + IV metronidazole + surgery consult",
-            "points": 4
-          },
-          {
-            "item": "Contact precautions and hand hygiene",
             "points": 3
           },
           {
-            "item": "Supportive fluids and electrolytes",
+            "item": "IV fluids and aggressive K/Mg repletion; recheck renal function",
+            "points": 3
+          },
+          {
+            "item": "AF rate control + anticoagulation reconciliation around AKI/bleeding risk",
+            "points": 2
+          },
+          {
+            "item": "Contact precautions and soap-and-water hand hygiene",
             "points": 2
           }
         ],
@@ -344,25 +357,35 @@
           {
             "item": "Antimotility agents",
             "points": -2
+          },
+          {
+            "item": "Discharging this severe, frail, hemodynamically borderline patient home",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
         "Oral vancomycin or fidaxomicin",
-        "Stop offending antibiotic and antimotility agents"
+        "Stop offending antibiotic and antimotility agents; hold ibuprofen (AKI) and reassess the PPI",
+        "Safe disposition: ADMIT with med reconciliation, caregiver education, home-safety/PT eval and close follow-up"
       ],
       "optionalActions": [
         "Fulminant: PO/PR vanc + IV metronidazole + surgery consult",
-        "Contact precautions and hand hygiene",
-        "Supportive fluids and electrolytes",
+        "IV fluids and aggressive K/Mg repletion; recheck renal function",
+        "AF rate control + anticoagulation reconciliation around AKI/bleeding risk",
+        "Contact precautions and soap-and-water hand hygiene",
         "Do not test for cure"
       ],
       "unsafeActions": [
         "IV vancomycin for C. diff",
-        "Antimotility agents"
+        "Antimotility agents",
+        "Discharging this severe, frail, hemodynamically borderline patient home"
       ],
-      "consults": [],
-      "disposition": "Per severity",
+      "consults": [
+        "Surgery (if fulminant)",
+        "Cardiology (rate control / anticoagulation, if needed)"
+      ],
+      "disposition": "Admit (severe disease + frailty + AKI + AF with RVR + lives alone)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "C. Difficile Infection",
@@ -376,11 +399,15 @@
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
-    "sensitiveTopics": [],
+    "sensitiveTopics": [
+      "living_alone",
+      "polypharmacy",
+      "over_the_counter_medications"
+    ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "68-year-old woman, tired and dehydrated. Cooperative.",
+    "affect": "74-year-old frail woman, tired and dehydrated, worried about her racing heart and feeling weak. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal recent antibiotics, the hospital stay, the extra ibuprofen, or the recently started PPI unless directly asked about medications, antibiotics, OTC drugs, or healthcare exposure",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -406,7 +433,9 @@
       "category": "hpi",
       "triggerConcepts": [
         "describe the",
-        "what does it feel like",
+        "what does it look like",
+        "watery or bloody",
+        "blood in the stool",
         "character",
         "quality"
       ],
@@ -420,6 +449,7 @@
       "category": "hpi",
       "triggerConcepts": [
         "how bad",
+        "how many times a day",
         "severity",
         "scale"
       ],
@@ -434,7 +464,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "lightheaded",
+        "palpitations",
+        "urine output"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -442,13 +476,66 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "aggravating_alleviating",
+      "id": "pain_character",
       "category": "hpi",
       "triggerConcepts": [
+        "how did the pain start",
+        "sudden severe pain",
+        "where is the pain",
+        "pain out of proportion",
         "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
+        "what makes it better"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "recent_antibiotics_exposure",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent antibiotics",
+        "any antibiotics",
+        "clindamycin",
+        "recent hospital",
+        "hospitalization",
+        "healthcare exposure",
+        "nursing facility"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_and_new_meds",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "pain medicines",
+        "ibuprofen",
+        "nsaids",
+        "new medication",
+        "acid reflux medicine",
+        "ppi",
+        "omeprazole"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "blood thinner",
+        "apixaban",
+        "diltiazem"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -461,7 +548,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "heart",
+        "kidney",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -469,12 +559,16 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "medications",
-      "category": "meds",
+      "id": "social_living_situation",
+      "category": "social",
       "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "live alone",
+        "who is at home",
+        "support at home",
+        "stairs",
+        "caregiver",
+        "travel",
+        "sick contacts"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -487,6 +581,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
+        "chronic diarrhea",
+        "weight loss",
         "first time"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
@@ -497,8 +593,18 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "id": "obtain_orthostatic_vitals_finding_1",
+      "finding": "Orthostatic: lying BP 102/64 with HR 118; stands to 88/56 with HR 130 and reproduces her lightheadedness — significant orthostatic hypotension from volume depletion.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic change."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_2",
+      "finding": "Abdomen: mild diffuse lower-abdominal tenderness with mild distension; NO rigidity, NO rebound, NO localized severe left-sided peritonism (worsening would raise toxic megacolon or ischemia); bowel sounds present but quiet.",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
@@ -507,8 +613,28 @@
       "normalIfNotPresent": "No rebound tenderness."
     },
     {
-      "id": "inspect_abdomen_finding_2",
-      "finding": "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Cardiac: irregularly irregular rhythm, tachycardic, no new murmur — consistent with her atrial fibrillation, now with a rapid ventricular response.",
+      "revealedBy": [
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rhythm, no murmur."
+    },
+    {
+      "id": "assess_skin_turgor_finding_4",
+      "finding": "Skin: tenting/poor turgor and dry mucous membranes — consistent with significant dehydration.",
+      "revealedBy": [
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal skin turgor."
+    },
+    {
+      "id": "inspect_abdomen_finding_5",
+      "finding": "Abdomen: mild distension, no surgical scars, no obvious mass; (worsening distension would raise toxic megacolon).",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -517,8 +643,8 @@
       "normalIfNotPresent": "Abdomen not distended."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_3",
-      "finding": "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
+      "id": "auscultate_bowel_sounds_finding_6",
+      "finding": "Abdomen: bowel sounds present but quiet (a silent abdomen would raise ileus/megacolon).",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -527,14 +653,14 @@
       "normalIfNotPresent": "Normal bowel sounds."
     },
     {
-      "id": "assess_general_appearance_finding_4",
-      "finding": "General: dehydrated (dry mucous membranes), mild distress.",
+      "id": "assess_general_appearance_finding_7",
+      "finding": "General: frail, dehydrated, mild distress, looks tired.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Well hydrated."
+      "normalIfNotPresent": "Well appearing, well hydrated."
     }
   ],
   "overallScoring": {
@@ -547,64 +673,75 @@
   },
   "caseSummary": {
     "finalDiagnosis": "C. difficile colitis",
-    "diagnosticFramework": "68F presents with several days of frequent watery diarrhea, crampy abdominal pain, and low-grade fever, two weeks after a course of antibiotics. The diagnosis is C. difficile colitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "74F with permanent atrial fibrillation, HFrEF, CKD stage 3, and type 2 diabetes — on apixaban, diltiazem, furosemide, lisinopril, metformin, a recently started PPI, recent clindamycin, and extra OTC ibuprofen — presents with 5 days of profuse watery non-bloody diarrhea, crampy lower-abdominal pain, low-grade fever, dehydration, and AF with a rapid ventricular response. The diagnosis is severe C. difficile colitis, reached by eliciting the antibiotic/healthcare/polypharmacy history, performing the targeted exam (orthostatics, irregular rhythm, abdominal/skin findings), and interpreting the directed workup — while resolving the genuine competing diagnosis of ischemic colitis (watery non-bloody stool, negative occult blood, clear antibiotic trigger, and a film with no thumbprinting/pneumatosis) and recognizing the concurrent hypokalemia/hypomagnesemia, anion-gap acidosis, and AKI on CKD as separate problems to treat.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
-      "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
-      "Abdomen: mild diffuse lower abdominal tenderness, mild distension, no rigidity/rebound (would worsen with megacolon); bowel sounds present.",
-      "General: dehydrated (dry mucous membranes), mild distress."
+      "Orthostatic: lying BP 102/64 with HR 118; stands to 88/56 with HR 130 and reproduces her lightheadedness — significant orthostatic hypotension from volume depletion.",
+      "Abdomen: mild diffuse lower-abdominal tenderness with mild distension; NO rigidity, NO rebound, NO localized severe left-sided peritonism; bowel sounds present but quiet.",
+      "Cardiac: irregularly irregular rhythm, tachycardic, no new murmur — consistent with atrial fibrillation with a rapid ventricular response.",
+      "Skin: tenting/poor turgor and dry mucous membranes — consistent with significant dehydration.",
+      "Abdomen: mild distension, no surgical scars, no obvious mass.",
+      "Abdomen: bowel sounds present but quiet.",
+      "General: frail, dehydrated, mild distress, looks tired."
     ],
     "keyDiagnosticFindings": [
       "StoolCdiff",
       "CBC",
       "BMP",
+      "Mg",
       "Lactate",
+      "Coags",
       "OtherStool"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by C. difficile colitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to C. difficile colitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (frail elder, AF with RVR, hypotensive, dehydrated).",
+      "Elicit the focused history, drawing out the recent clindamycin, hospital stay, OTC ibuprofen, and recently started PPI only on direct questioning.",
+      "Perform the targeted physical exam — orthostatic vitals, irregular rhythm, abdominal and skin findings.",
+      "Build a differential led by C. difficile colitis while genuinely weighing ischemic colitis and keeping fulminant disease/toxic megacolon on the list.",
+      "Order a focused workup (stool two-step C. diff testing, CBC, BMP with anion gap, Mg, lactate, coags, abdominal imaging); interpret the patient's OWN EKG (AF with RVR + hypokalemic changes) and the abdominal film (no megacolon/thumbprinting/free air).",
+      "Commit to severe C. difficile colitis, treat the concurrent electrolyte/renal/cardiac problems, and arrange a safe disposition for a frail woman who lives alone."
     ],
     "commonPitfalls": [
+      "Anchoring on simple post-antibiotic diarrhea and ignoring ischemic colitis",
+      "Over-calling rate-related ST changes on the AF tracing as a primary NSTEMI",
       "IV vancomycin for C. diff",
-      "Antimotility agents"
+      "Antimotility agents",
+      "Discharging this severe, frail, hemodynamically borderline patient home"
     ],
     "managementPearls": [
       "Oral vancomycin or fidaxomicin",
-      "Stop offending antibiotic and antimotility agents"
+      "Stop offending antibiotic and antimotility agents; hold ibuprofen (AKI) and reassess the PPI",
+      "Resuscitate and replete K/Mg — which also stabilizes the AF"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
+      "obtain_orthostatic_vitals",
       "assess_rebound_tenderness"
     ],
     "criticalWorkupItems": [
-      "Stool C. difficile toxin/PCR"
+      "Stool C. difficile two-step testing (GDH + toxin EIA, NAAT/PCR if discordant)"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      "Atrial fibrillation with rapid ventricular response (~115–125 bpm) plus hypokalemic/hypomagnesemic changes (flattened T waves, U waves); no acute ST-elevation.",
+      "No marked colonic dilation (a transverse colon >6 cm would indicate toxic megacolon), no mucosal thumbprinting/pneumatosis, and no free air."
     ],
     "criticalManagementItems": [
       "Oral vancomycin or fidaxomicin",
-      "Stop offending antibiotic and antimotility agents"
+      "Stop offending antibiotic and antimotility agents; hold ibuprofen (AKI) and reassess the PPI",
+      "Safe disposition: ADMIT with med reconciliation, caregiver education, home-safety/PT eval and close follow-up"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      "Atrial fibrillation with rapid ventricular response (~115–125 bpm) plus hypokalemic/hypomagnesemic changes (flattened T waves, U waves); no acute ST-elevation.",
+      "No marked colonic dilation, no mucosal thumbprinting/pneumatosis, and no free air."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; possible hypokalemic changes (flattened T waves, U waves); no acute ischemia.",
-      "No marked colonic dilation (a dilated transverse colon >6 cm would indicate toxic megacolon)."
+      "Atrial fibrillation with rapid ventricular response (~115–125 bpm) plus hypokalemic/hypomagnesemic changes (flattened T waves, U waves); no acute ST-elevation.",
+      "No marked colonic dilation, no mucosal thumbprinting/pneumatosis, and no free air."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When the patient has known AF, read the rhythm as her own study — an irregularly irregular tachycardia is AF with RVR, not sinus tachycardia, and rate-related ST changes are not automatically ischemia.",
+      "Hypokalemic/hypomagnesemic changes (flat T waves, U waves) on the EKG are a clue to the GI losses driving the whole picture.",
+      "On the abdominal film the deliberate pertinent negatives are no megacolon, no thumbprinting/pneumatosis, and no free air."
     ]
   },
   "communicationScoring": {
@@ -615,7 +752,7 @@
         "points": 1
       },
       {
-        "item": "Elicits the patient's concerns / ICE",
+        "item": "Elicits the patient's concerns / ICE (racing heart, weakness, living alone)",
         "points": 1
       },
       {
@@ -634,9 +771,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

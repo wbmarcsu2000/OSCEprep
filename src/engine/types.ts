@@ -121,6 +121,16 @@ export interface RawImage {
   imageDescription?: string;
   searchTerms?: string[];
   recommendedSource?: string;
+  /** Integrated read: pin a specific LITFL study (by its `n`) so the displayed
+   *  tracing/film is RELEVANT to this case's clinical puzzle, instead of the
+   *  index-assigned standalone drill. The read step is then framed as the
+   *  patient's own study and should be referenced by the revised/management
+   *  rubrics. */
+  litflStudyN?: number;
+  /** Integrated read with case-authored content: skip the LITFL override
+   *  entirely and use this image + the read step's authored scoring/findings as
+   *  written (for pathologies not in the LITFL bank). */
+  integrated?: boolean;
 }
 
 export interface RawStandardizedPatient {

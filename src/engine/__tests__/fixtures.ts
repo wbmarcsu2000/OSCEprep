@@ -1,6 +1,8 @@
 import type { RawCase } from "../types";
-import chestpain01Json from "../../data/cases/chestpain-01.json";
-import dyspnea01Json from "../../data/cases/dyspnea-01.json";
+// Frozen copies (original schema-2.1 content) so engine unit tests stay stable
+// while the live case library is revised. Do NOT repoint these at live cases.
+import chestpain01Json from "./__fixtures__/chestpain-01.fixture.json";
+import dyspnea01Json from "./__fixtures__/dyspnea-01.fixture.json";
 
 export const chestpain01 = chestpain01Json as unknown as RawCase;
 export const dyspnea01 = dyspnea01Json as unknown as RawCase;

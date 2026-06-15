@@ -1,50 +1,54 @@
 {
   "id": "diarrhea-02",
   "category": "Diarrhea",
-  "difficulty": "easy",
-  "title": "Acute diarrhea after eating out",
+  "difficulty": "hard",
+  "title": "Bloody diarrhea in an older anticoagulated man after recent antibiotics",
   "diagnosis": "Bacterial gastroenteritis",
   "chart": {
-    "ageSex": "30M",
-    "cc": "Diarrhea and cramps",
-    "oneLiner": "30M presents with 2 days of frequent diarrhea (now with some blood), crampy abdominal pain, fever, and nausea after a barbecue.",
+    "ageSex": "68M",
+    "cc": "Bloody diarrhea and cramps",
+    "oneLiner": "68M with type 2 diabetes, hypertension, atrial fibrillation on apixaban, and CKD stage 3 presents with 3 days of frequent bloody diarrhea, crampy abdominal pain, fever, and lightheadedness, two weeks after a course of amoxicillin-clavulanate for sinusitis and a few days after a backyard barbecue.",
     "vitals": {
-      "BP": "116/72",
-      "HR": "100",
-      "RR": "16",
-      "Temp": "38.4°C",
-      "SpO2": "99% RA"
+      "BP": "104/64",
+      "HR": "108",
+      "RR": "18",
+      "Temp": "38.5°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I've had bad diarrhea and stomach cramps since the weekend — there's been a bit of blood the last day.",
-  "patientFile": "PERSONA: 30-year-old man, uncomfortable, dehydrated. Good historian.\n\nHPI: 2 days of frequent loose stools (8–10x/day), now with streaks of blood and mucus, crampy abdominal pain, fever, and nausea. Ate undercooked chicken at a barbecue ~2 days before onset (only if asked about food/exposures). A couple of other attendees got sick too (only if asked about sick contacts). NO recent antibiotics, NO recent travel abroad, NO immunosuppression.\nPMH: none. MEDS: none. SOCIAL: healthy, no recent travel.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, dehydrated (dry mucous membranes).\n- Vitals: BP 116/72, HR 100, RR 16, 38.4°C, SpO2 99% RA.\n- Abdomen: diffuse mild tenderness, active/hyperactive bowel sounds, no peritonism.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the undercooked chicken or sick contacts unless asked about food/exposures or sick contacts.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "Doc, I've had terrible diarrhea for three days, there's blood in it now, and I feel dizzy when I stand up.",
+  "patientFile": "PERSONA: 68-year-old man, tired and mildly dehydrated, a little lightheaded. Cooperative and a reasonable historian, but tends to under-report. Worried because he is on a blood thinner and is now seeing blood.\n\nHPI: 3 days of frequent loose stools (8-12x/day), crampy lower abdominal pain, and low-grade fevers. For the last day the stool has had visible blood and mucus mixed in. Lightheaded and weak when standing; has not been able to keep up with fluids; urinating less than usual. Mild nausea, no real vomiting.\nEXPOSURES (reveal only when asked about food, travel, or sick contacts): ate chicken and potato salad at a backyard barbecue ~4 days before onset; thinks the chicken may have been pink in the middle. Two other people at the barbecue also got diarrhea. NO travel abroad. NO sick contacts at home.\nANTIBIOTIC / HEALTHCARE EXPOSURE (reveal only when asked about recent antibiotics, recent illness, or hospital/clinic visits): finished a 7-day course of amoxicillin-clavulanate about 2 weeks ago for a sinus infection. NO hospitalization. NO nursing-home stay. NO recent colonoscopy.\nBLEEDING / ANTICOAGULATION (reveal only when asked about blood thinners or bleeding): takes apixaban for atrial fibrillation, took it as scheduled this morning; the blood appears mixed through the loose stool rather than as separate bright-red clots, no black tarry stools, no vomiting blood, no nosebleeds or gum bleeding.\nPMH: type 2 diabetes (~10 years), hypertension, atrial fibrillation, chronic kidney disease (told his kidneys are 'about half'). Baseline creatinine around 1.4. NO known inflammatory bowel disease, NO prior similar episodes.\nMEDS (reveal on direct medication questioning): apixaban; lisinopril; hydrochlorothiazide; metformin; atorvastatin; recently finished amoxicillin-clavulanate. He has continued all of them including the metformin, lisinopril, and water pill despite the diarrhea. ALLERGIES: none.\nSOCIAL: retired teacher, lives with wife, social alcohol only, never smoker, no drugs, no recent travel.\nFAMILY: noncontributory.\nROS: as above; reduced urine output, no chest pain, no palpitations he notices, no leg swelling, no rash, no joint pains, no mouth ulcers, no weight loss before this illness.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired, mildly dehydrated, dry mucous membranes.\n- Vitals: BP 104/64 (orthostatic: drops to 88/58 with HR rise to 124 on standing), HR 108, RR 18, 38.5C, SpO2 97% RA.\n- Abdomen: diffuse mild-to-moderate tenderness, worst in the lower abdomen, active/hyperactive bowel sounds, NO rigidity, NO rebound, NO localized peritonism.\n- Cardiac: irregularly irregular rhythm, no murmur. Lungs clear. No focal neuro deficit. No peripheral edema.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the undercooked chicken, sick contacts, recent antibiotics, or the apixaban/bleeding details unless asked about the relevant topic (food/exposures, sick contacts, recent antibiotics, or blood thinners/bleeding).\n- Reveal exam findings only when the relevant maneuver is performed (e.g. orthostatic vitals only if orthostatics are taken).\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "StoolStudies": "Stool culture and a multiplex pathogen panel sent; fecal leukocytes present (inflammatory diarrhea). (Culture later: Campylobacter.)",
-      "CBC": "WBC 13.0 with left shift, Hgb 14.5, Plt 250.",
-      "BMP": "Na 138, K 3.5, BUN 22, Cr 1.1 — mild dehydration.",
-      "Cdiff": "C. difficile toxin negative.",
-      "BloodCultures": "Drawn given fever; pending."
+      "StoolStudies": "Fecal leukocytes PRESENT (inflammatory diarrhea); stool culture and multiplex GI pathogen panel sent; C. difficile NAAT/toxin sent separately. (Culture/panel later: Campylobacter jejuni; STEC/Shiga-toxin assay negative.)",
+      "Cdiff": "C. difficile toxin EIA negative and NAAT negative — argues against C. difficile colitis despite the recent amoxicillin-clavulanate.",
+      "CBC": "WBC 14.8 with left shift, Hgb 13.8 (near baseline — argues against major GI blood loss), Plt 240.",
+      "BMP": "Na 134, K 5.8, Cl 102, HCO3 16, BUN 52, Cr 2.4 (baseline ~1.4 -> acute kidney injury on CKD); glucose 168. Anion gap = Na - (Cl + HCO3) = 134 - (102 + 16) = 16 (elevated). Hyponatremia (thiazide + volume loss), hyperkalemia (AKI + ACE inhibitor), and a high-anion-gap metabolic acidosis are all present concurrently.",
+      "Lactate": "Lactate 3.6 mmol/L (elevated) — from hypovolemia/hypoperfusion, compounded by continued metformin in the setting of AKI; helps explain the elevated anion gap.",
+      "Coags": "INR 1.2 (apixaban is not reflected by INR); no laboratory coagulopathy to explain bloody stool — the blood is inflammatory/dysenteric, not a primary bleeding problem.",
+      "BloodCultures": "Drawn given fever and tachycardia; pending."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 3,
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Deep symmetric or biphasic T-wave inversions in V2-V3 with preserved R waves; pain-free.",
-      "verify": "Source a study matching: Deep symmetric or biphasic T-wave inversions in V2-V3 with preserved R waves; pain-free. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Tall, peaked, narrow-based symmetric T waves (best seen in the precordial leads) with the underlying atrial fibrillation; early hyperkalemia pattern at K 5.8 with AKI on an ACE inhibitor.",
+      "verify": "Source a study matching: tall peaked symmetric T waves of hyperkalemia in a patient in atrial fibrillation. Self-host with appropriate credit; do not reuse the prior tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing Wellens syndrome T wave",
+      "imageDescription": "12-lead showing tall peaked T waves of hyperkalemia",
       "searchTerms": [
-        "Wellens syndrome ECG",
-        "biphasic T wave V2 V3 Wellens"
+        "hyperkalemia ECG peaked T waves",
+        "tall tented T waves potassium ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 58-year-old man with recent diarrheal illness is referred after a routine tracing reveals deep precordial T-wave inversions despite being pain-free."
+      "clinicalVignette": "An older man with diarrheal volume depletion, acute kidney injury, and an ACE inhibitor has tall, peaked, narrow-based T waves on his tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -65,15 +69,18 @@
   },
   "revealKeys": [
     "StoolStudies",
+    "Cdiff",
     "CBC",
     "BMP",
-    "Cdiff",
+    "Lactate",
+    "Coags",
     "BloodCultures",
     "ekg",
     "cxr"
   ],
   "essential": [
     "StoolStudies",
+    "Cdiff",
     "BMP"
   ],
   "steps": [
@@ -81,54 +88,59 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Bacterial (inflammatory) gastroenteritis — e.g., Campylobacter/Salmonella/Shigella (leading,7). Shiga-toxin E. coli (CANT-MISS — affects management,4). Viral gastroenteritis (core,3). C. difficile (core,2). Inflammatory bowel disease (core,3). Appendicitis (CANT-MISS to consider,2). Names an infectious inflammatory diarrhea with food exposure (core,4).",
-      "idealAnswer": "Leading diagnosis: bacterial (inflammatory) gastroenteritis — e.g., Campylobacter/Salmonella/Shigella. Must-not-miss: Shiga-toxin E. coli (STEC) — affects management; appendicitis. Also reasonable: viral gastroenteritis, C. difficile, inflammatory bowel disease. Names an infectious inflammatory diarrhea with food exposure.",
+      "prompt": "Based on your history and physical, list your differential for this older man's bloody diarrhea (note your leading diagnosis). Explicitly name three distinct etiologies/mechanisms of bloody (inflammatory) diarrhea you are considering and how this patient's recent antibiotics, anticoagulation, and vascular comorbidities change the differential.",
+      "rubric": "Bacterial (inflammatory/dysenteric) gastroenteritis — Campylobacter/Salmonella/Shigella from undercooked poultry (leading,5). C. difficile colitis — must consider given amoxicillin-clavulanate 2 weeks ago (CANT-MISS,4). Shiga-toxin E. coli / STEC — must-not-miss because it changes management and risks HUS (CANT-MISS,3). Ischemic colitis — must consider in an older vasculopath with AF/diabetes and hypotension (CANT-MISS,3). Inflammatory bowel disease, new onset (core,2). Anticoagulant-related GI bleed as a confounder to exclude (core,2). Names THREE distinct mechanisms of bloody diarrhea — e.g. invasive bacterial mucosal infection, toxin-mediated colitis (C. difficile or STEC), and mucosal ischemia/inflammation (core,4). PENALTY: anchors on simple food poisoning and ignores recent antibiotics, anticoagulation, or ischemia (-3).",
+      "idealAnswer": "Leading diagnosis: bacterial (inflammatory/dysenteric) gastroenteritis — Campylobacter/Salmonella/Shigella after undercooked barbecue chicken with sick contacts. Must-not-miss/competing: C. difficile colitis (he finished amoxicillin-clavulanate ~2 weeks ago), Shiga-toxin E. coli/STEC (HUS risk, changes management), and ischemic colitis (older diabetic/AF vasculopath who is now hypotensive). Also reasonable: new inflammatory bowel disease, and an anticoagulant-related GI bleed to exclude as a confounder for the visible blood. Three distinct mechanisms of bloody diarrhea: (1) invasive bacterial mucosal infection, (2) toxin-mediated colitis (C. difficile toxin or Shiga toxin), and (3) mucosal ischemia/inflammation (ischemic colitis or IBD).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Campylobacter/Salmonella/Shigella",
-            "points": 7
+            "item": "Bacterial inflammatory gastroenteritis (Campylobacter/Salmonella/Shigella)",
+            "points": 5
           },
           {
-            "item": "Shiga-toxin E. coli (STEC)",
+            "item": "C. difficile colitis (recent amoxicillin-clavulanate)",
             "points": 4
           },
           {
-            "item": "Appendicitis",
-            "points": 2
+            "item": "Shiga-toxin E. coli / STEC (HUS risk)",
+            "points": 3
+          },
+          {
+            "item": "Ischemic colitis in an older vasculopath",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Viral gastroenteritis",
-            "points": 3
-          },
-          {
-            "item": "C. difficile",
+            "item": "Inflammatory bowel disease (new onset)",
             "points": 2
           },
           {
-            "item": "Inflammatory bowel disease",
-            "points": 3
+            "item": "Anticoagulant-related GI bleed to exclude",
+            "points": 2
           },
           {
-            "item": "Names an infectious inflammatory diarrhea with food exposure",
+            "item": "Names three distinct mechanisms of bloody diarrhea (invasive infection, toxin-mediated colitis, mucosal ischemia/inflammation)",
             "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on simple food poisoning and ignores recent antibiotics, anticoagulation, or ischemia",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Shiga-toxin E. coli (STEC)",
-        "Appendicitis"
+        "C. difficile colitis (recent amoxicillin-clavulanate)",
+        "Shiga-toxin E. coli / STEC (HUS risk)",
+        "Ischemic colitis in an older vasculopath"
       ],
       "acceptableAlternatives": [
-        "Viral gastroenteritis",
-        "C. difficile",
-        "Inflammatory bowel disease"
+        "Inflammatory bowel disease (new onset)",
+        "Anticoagulant-related GI bleed to exclude"
       ]
     },
     {
@@ -137,64 +149,64 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Stool studies — culture and/or pathogen panel (CANT-MISS,5). CBC (2). BMP for hydration/electrolytes (3). C. difficile toxin if risk factors (2). Blood cultures if febrile/toxic (2). Consider ova & parasites only if indicated (1). PENALTY: empiric antibiotics before considering Shiga-toxin E. coli (-2 — addressed in management).",
-      "idealAnswer": "Order: EKG; CXR; Stool studies; CBC; BMP; C. difficile toxin/PCR; Blood cultures.",
+      "rubric": "Stool studies — culture and/or multiplex GI pathogen panel including Shiga-toxin assay (CANT-MISS,4). C. difficile toxin/NAAT given recent antibiotics (CANT-MISS,3). BMP for AKI/electrolytes — specifically potassium and bicarbonate (CANT-MISS,3). CBC (1). Lactate given hypotension/possible ischemia and metformin (1). EKG to look for hyperkalemia changes (1). CXR (1). Type & screen / coags given anticoagulation and bloody stool (bonus,1). PENALTY: empiric antibiotics before STEC is excluded, or no potassium/renal check in an anticoagulated diabetic on an ACE inhibitor (-2).",
+      "idealAnswer": "Order: Stool studies (culture and multiplex GI panel WITH a Shiga-toxin/STEC assay); C. difficile toxin/NAAT (recent amoxicillin-clavulanate); BMP focused on potassium, bicarbonate, and renal function (AKI on an ACE inhibitor + thiazide); CBC; Lactate (hypotension, possible ischemia, continued metformin); EKG to look for hyperkalemia; CXR; type & screen / coags given anticoagulation and visible blood. Do NOT give empiric antibiotics before STEC is excluded.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Stool studies — culture and/or pathogen panel",
-            "points": 5
+            "item": "Stool studies — culture/GI panel including Shiga-toxin assay",
+            "points": 4
+          },
+          {
+            "item": "C. difficile toxin/NAAT given recent antibiotics",
+            "points": 3
+          },
+          {
+            "item": "BMP for AKI and electrolytes (potassium, bicarbonate)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BMP for hydration/electrolytes",
-            "points": 3
+            "item": "Lactate (hypotension/ischemia/metformin)",
+            "points": 1
           },
           {
-            "item": "C. difficile toxin if risk factors",
-            "points": 2
-          },
-          {
-            "item": "Blood cultures if febrile/toxic",
-            "points": 2
-          },
-          {
-            "item": "EKG",
-            "points": 2
+            "item": "EKG to look for hyperkalemia changes",
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "C. difficile toxin/PCR",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Ova & parasites only if indicated",
+            "item": "Type & screen / coags given anticoagulation and bloody stool",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Empiric antibiotics before considering Shiga-toxin E. coli (addressed in management)",
+            "item": "Empiric antibiotics before STEC excluded, or no potassium/renal check in an anticoagulated diabetic on an ACE inhibitor",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Stool studies — culture and/or pathogen panel"
+        "Stool studies — culture/GI panel including Shiga-toxin assay",
+        "C. difficile toxin/NAAT given recent antibiotics",
+        "BMP for AKI and electrolytes (potassium, bicarbonate)"
       ],
       "optionalTests": [],
-      "contraindicatedTests": [],
+      "contraindicatedTests": [
+        "Empiric antibiotics before STEC excluded"
+      ],
       "orderSensitiveActions": []
     },
     {
@@ -203,32 +215,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = Wellens pattern: deep symmetric or biphasic T-wave inversions in V2-V3 with preserved R waves; patient currently pain-free. CREDIT: identifies biphasic/deep T inversions in V2-V3 (7); recognizes the critical proximal-LAD stenosis warning pattern (5); systematic read (3). PENALTY: dismissing the changes as normal/benign because the patient is pain-free (-3).",
+      "prompt": "Here is THIS patient's 12-lead EKG, taken in the department. Describe your findings and their significance given his labs.",
+      "rubric": "Findings = tall, peaked, narrow-based symmetric T waves (precordial leads) on a background of atrial fibrillation — early hyperkalemia (K 5.8) from AKI on an ACE inhibitor with volume depletion. CREDIT: identifies peaked/tented T waves (6); attributes them to hyperkalemia and links to the K 5.8 / AKI rather than ischemia (5); notes the underlying atrial fibrillation / systematic read (2). PENALTY: dismisses the peaked T waves as normal or calls them hyperacute ischemic T waves and misses the metabolic cause (-3).",
       "keyFindings": [
-        "biphasic / deep T inversions in V2-V3",
-        "recognizes the proximal LAD warning pattern"
+        "tall peaked narrow-based T waves",
+        "attributes to hyperkalemia (K 5.8) from AKI on an ACE inhibitor, not ischemia",
+        "recognizes underlying atrial fibrillation"
       ],
       "criticalFindings": [
-        "Wellens syndrome (critical LAD stenosis warning pattern)."
+        "Peaked T waves of hyperkalemia (K 5.8) in atrial fibrillation — an electrically active, treatable emergency."
       ],
       "commonMistakes": [
-        "dismissing the T-wave changes because the patient is currently pain-free"
+        "dismissing the peaked T waves as normal",
+        "calling them hyperacute ischemic T waves and missing the hyperkalemia"
       ],
-      "idealAnswer": "Wellens pattern: biphasic or deeply inverted T waves in V2-V3 — a warning for critical proximal LAD stenosis.",
+      "idealAnswer": "Tall, peaked, narrow-based, symmetric T waves (best seen in the precordial leads) on a background of atrial fibrillation. This is the early electrocardiographic signature of hyperkalemia, fitting his K of 5.8 from acute kidney injury on an ACE inhibitor and thiazide with diarrheal volume loss — NOT a primary ischemic event. It flags the hyperkalemia as an electrically active, immediately treatable emergency.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Wellens syndrome (critical LAD stenosis warning pattern)."
+          "Peaked T waves of hyperkalemia (K 5.8) in atrial fibrillation — an electrically active, treatable emergency."
         ],
         "coreActions": [
-          "biphasic / deep T inversions in V2-V3",
-          "recognizes the proximal LAD warning pattern"
+          "tall peaked narrow-based T waves",
+          "attributes to hyperkalemia (K 5.8) from AKI on an ACE inhibitor, not ischemia",
+          "recognizes underlying atrial fibrillation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the hyperkalemia / mislabels as ischemia",
             "points": -3
           }
         ]
@@ -240,7 +255,7 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "prompt": "Here is a chest X-ray. Describe your findings.",
       "rubric": "Findings = atelectasis: left lower lobe volume loss with a linear/band opacity and slight ipsilateral mediastinal shift toward the opacity. CREDIT: identifies the linear/band opacity with volume loss (6); distinguishes atelectasis from consolidation/pneumonia (4). PENALTY: calling the film normal or labelling it pneumonia (-2).",
       "keyFindings": [
         "linear/band opacity with volume loss",
@@ -276,9 +291,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Stool shows inflammatory diarrhea with a likely bacterial pathogen after undercooked poultry. What is your diagnosis and one key management caution?",
-      "rubric": "Bacterial gastroenteritis (e.g., Campylobacter) (6). Notes the caution — avoid empiric antibiotics if Shiga-toxin E. coli is possible (HUS risk), and avoid antimotility agents in bloody/febrile diarrhea (4).",
-      "idealAnswer": "Bacterial gastroenteritis (likely Campylobacter from undercooked poultry). Key caution: avoid empiric antibiotics if Shiga-toxin E. coli is possible (HUS risk), and avoid antimotility agents in bloody/febrile diarrhea.",
+      "prompt": "The stool panel shows inflammatory diarrhea with fecal leukocytes and Campylobacter; the C. difficile NAAT/toxin is negative and the Shiga-toxin assay is negative. The EKG shows peaked T waves and the BMP shows K 5.8, an anion gap of 16, and AKI on CKD. Commit to your leading diagnosis, name the discriminating tests that resolved the differential, and state the residual ambiguity you would keep watching.",
+      "rubric": "Bacterial gastroenteritis (Campylobacter from undercooked poultry) confirmed by fecal leukocytes + Campylobacter on culture/panel (6). Names the discriminators that resolved the competing diagnoses — negative C. difficile NAAT/toxin makes C. difficile colitis unlikely despite recent antibiotics; negative Shiga-toxin assay makes STEC unlikely and permits antibiotics if needed; Hgb at baseline and INR 1.2 argue against an anticoagulant GI bleed; and identifies the CONCURRENT problems to manage in parallel — hyperkalemia (peaked T waves, K 5.8), AKI on CKD, and an anion-gap acidosis (lactate 3.6, metformin) (4). Acknowledges residual uncertainty — ischemic colitis can coexist, so monitor and consider endoscopy if it does not improve.",
+      "idealAnswer": "Commit to bacterial gastroenteritis, most likely Campylobacter from undercooked barbecue chicken — supported by fecal leukocytes (inflammatory diarrhea) and Campylobacter on the stool panel. Discriminating tests resolved the fork: the negative C. difficile NAAT/toxin makes C. difficile colitis unlikely despite the recent amoxicillin-clavulanate; the negative Shiga-toxin assay makes STEC unlikely and means antibiotics are not contraindicated on HUS grounds; Hgb at baseline with INR 1.2 argues against an apixaban-related GI bleed (the blood is dysenteric). At the same time, recognize the concurrent, separate problems to treat in parallel: hyperkalemia (peaked T waves, K 5.8) from AKI on an ACE inhibitor, the AKI on CKD from volume depletion, and a high-anion-gap metabolic acidosis (gap 16; lactate 3.6, worsened by continued metformin). Residual ambiguity: ischemic colitis remains possible in this hypotensive vasculopath, so monitor closely and pursue endoscopy/CT if he fails to improve.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -291,63 +306,78 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH diarrhea: volume and electrolyte repletion (CANT-MISS,7); selective empiric antibiotics for severe/septic/high-risk/bloody (4); AVOID antibiotics if STEC suspected, HUS risk (CANT-MISS,4); antimotility (loperamide) only if no fever/blood (3); stool studies if severe/bloody/high-risk (3). PENALTY: antibiotics in suspected EHEC/STEC (-4); antimotility in febrile bloody diarrhea (-2).",
-      "idealAnswer": "Most acute infectious diarrhea is self-limited: volume and electrolyte repletion (oral or IV). Empiric antibiotics (fluoroquinolone or azithromycin) only for severe disease, sepsis, high-risk hosts, age ≥70, or bloody diarrhea – and AVOID antibiotics if Shiga-toxin E. coli is suspected (HUS risk). Loperamide only if no fever/blood. Stool studies if severe/bloody/high-risk.",
+      "prompt": "What is your management plan, including how you handle his electrolytes, his home medications, and his disposition (is he safe for discharge)?",
+      "rubric": "Per MGH diarrhea + hyperkalemia: aggressive IV volume and electrolyte repletion for hypotension/AKI (CANT-MISS,5); TREAT the hyperkalemia — calcium to stabilize the myocardium plus insulin/dextrose +/- shift agents, recheck K and EKG (CANT-MISS,5); HOLD the nephrotoxic/contributing home meds — lisinopril, hydrochlorothiazide, and metformin during AKI (CANT-MISS,3); selective directed antibiotic (azithromycin) now that STEC is excluded and given severe/bloody disease in an older host (3); AVOID antimotility agents in febrile bloody diarrhea (2); address anticoagulation — hold/withhold apixaban given active GI bleeding and AKI, weigh AF stroke risk (2); admit rather than discharge — hemodynamically significant illness with AKI and hyperkalemia is NOT safe for discharge; arrange admission with med reconciliation, repeat labs, and clear return/follow-up criteria for the eventual safe discharge (3). PENALTY: discharging this hypotensive patient with hyperkalemia/AKI (-4); giving empiric antibiotics before STEC excluded or antimotility in febrile bloody diarrhea (-3); continuing the ACE inhibitor/metformin during AKI (-2).",
+      "idealAnswer": "Resuscitate first: IV isotonic fluids for hypotension, orthostasis, and AKI, with electrolyte repletion. Treat the hyperkalemia as an emergency given the peaked T waves — IV calcium to stabilize the myocardium, then insulin with dextrose (and other shift/elimination agents as needed), and recheck the potassium and EKG. Hold the contributing home medications during the AKI: stop lisinopril and hydrochlorothiazide (worsening AKI/hyperkalemia/hyponatremia) and hold metformin (lactic-acidosis risk with AKI). Because the Shiga-toxin assay is negative and this is severe, bloody, febrile diarrhea in an older host, a directed antibiotic (azithromycin for Campylobacter) is reasonable; AVOID antimotility agents like loperamide in febrile bloody diarrhea. Address anticoagulation: withhold apixaban while there is active GI bleeding and AKI, balancing his atrial-fibrillation stroke risk, and reassess. Disposition: he is NOT safe for discharge — he is hypotensive with AKI and hyperkalemia; admit for monitoring, repeat labs/EKG, and IV therapy. Plan the eventual safe discharge with medication reconciliation (when to restart the ACE inhibitor/diuretic/metformin), and clear return precautions and follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Volume and electrolyte repletion",
-            "points": 7
+            "item": "Aggressive IV volume and electrolyte repletion for hypotension/AKI",
+            "points": 5
           },
           {
-            "item": "Avoid antibiotics if STEC suspected (HUS risk)",
-            "points": 4
+            "item": "Treat hyperkalemia: calcium + insulin/dextrose, recheck K and EKG",
+            "points": 5
+          },
+          {
+            "item": "Hold nephrotoxic/contributing meds (lisinopril, hydrochlorothiazide, metformin) during AKI",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Selective empiric antibiotics for severe/high-risk",
-            "points": 4
-          },
-          {
-            "item": "Antimotility only if no fever/blood",
+            "item": "Directed antibiotic (azithromycin) now that STEC is excluded, severe bloody disease in older host",
             "points": 3
           },
           {
-            "item": "Stool studies if severe/bloody/high-risk",
+            "item": "Avoid antimotility agents in febrile bloody diarrhea",
+            "points": 2
+          },
+          {
+            "item": "Hold/withhold apixaban for active GI bleeding and AKI, weigh AF stroke risk",
+            "points": 2
+          },
+          {
+            "item": "Admit (not safe for discharge); plan safe discharge with med reconciliation and return/follow-up criteria",
             "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Dietary advice (BRAT-type)",
+            "item": "Oral rehydration / dietary advice once stable",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Antibiotics in suspected STEC",
+            "item": "Discharging this hypotensive patient with hyperkalemia/AKI",
             "points": -4
+          },
+          {
+            "item": "Empiric antibiotics before STEC excluded or antimotility in febrile bloody diarrhea",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Volume and electrolyte repletion",
-        "Avoid antibiotics if STEC suspected (HUS risk)"
+        "Aggressive IV volume and electrolyte repletion for hypotension/AKI",
+        "Treat hyperkalemia: calcium + insulin/dextrose, recheck K and EKG",
+        "Hold nephrotoxic/contributing meds (lisinopril, hydrochlorothiazide, metformin) during AKI"
       ],
       "optionalActions": [
-        "Selective empiric antibiotics for severe/high-risk",
-        "Antimotility only if no fever/blood",
-        "Stool studies if severe/bloody/high-risk",
-        "Dietary advice (BRAT-type)"
+        "Directed antibiotic (azithromycin) now that STEC is excluded, severe bloody disease in older host",
+        "Avoid antimotility agents in febrile bloody diarrhea",
+        "Hold/withhold apixaban for active GI bleeding and AKI, weigh AF stroke risk",
+        "Admit (not safe for discharge); plan safe discharge with med reconciliation and return/follow-up criteria",
+        "Oral rehydration / dietary advice once stable"
       ],
       "unsafeActions": [
-        "Antibiotics in suspected STEC"
+        "Discharging this hypotensive patient with hyperkalemia/AKI",
+        "Empiric antibiotics before STEC excluded or antimotility in febrile bloody diarrhea"
       ],
       "consults": [],
-      "disposition": "Usually outpatient",
+      "disposition": "Admit (hypotension, AKI, hyperkalemia); plan safe discharge after stabilization and med reconciliation",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Diarrhea (Bacterial Gastroenteritis)",
@@ -356,16 +386,20 @@
     }
   ],
   "standardizedPatient": {
-    "demeanor": "uncomfortable",
-    "emotionalState": "concerned",
+    "demeanor": "tired",
+    "emotionalState": "worried",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
-    "sensitiveTopics": [],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "30-year-old man, uncomfortable, dehydrated. Good historian.",
+    "sensitiveTopics": [
+      "anticoagulation_bleeding",
+      "recent_antibiotics",
+      "medication_adherence"
+    ],
+    "communicationStyle": "answers directly but under-reports and does not volunteer extra information",
+    "affect": "68-year-old man, tired and mildly dehydrated, lightheaded; worried about seeing blood while on a blood thinner.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal food exposures, sick contacts, recent antibiotics, or anticoagulation/bleeding details unless directly asked about the relevant topic",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -393,7 +427,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "blood in stool",
+        "what does the stool look like"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -406,12 +442,75 @@
       "triggerConcepts": [
         "how bad",
         "severity",
-        "scale"
+        "how many times",
+        "frequency"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "food_exposures",
+      "category": "social",
+      "triggerConcepts": [
+        "food",
+        "what did you eat",
+        "barbecue",
+        "undercooked",
+        "travel",
+        "exposures"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "sick_contacts",
+      "category": "social",
+      "triggerConcepts": [
+        "sick contacts",
+        "anyone else sick",
+        "others ill",
+        "family sick"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_antibiotics",
+      "category": "pmh",
+      "triggerConcepts": [
+        "recent antibiotics",
+        "antibiotics recently",
+        "recent infection",
+        "recent illness",
+        "hospital",
+        "clinic visit"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "anticoagulation_bleeding",
+      "category": "meds",
+      "triggerConcepts": [
+        "blood thinner",
+        "anticoagulant",
+        "apixaban",
+        "any bleeding",
+        "black stools",
+        "vomiting blood"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
     },
     {
       "id": "associated_symptoms",
@@ -419,21 +518,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "aggravating_alleviating",
-      "category": "hpi",
-      "triggerConcepts": [
-        "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
+        "anything else",
+        "fever",
+        "lightheaded",
+        "urine output"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -446,7 +534,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "kidney"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -459,7 +549,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "metformin",
+        "lisinopril",
+        "water pill"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -482,8 +575,38 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_bowel_sounds_finding_1",
-      "finding": "Abdomen: diffuse mild tenderness, active/hyperactive bowel sounds, no peritonism.",
+      "id": "assess_general_appearance_finding_1",
+      "finding": "General: tired, mildly dehydrated (dry mucous membranes).",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Well appearing, well hydrated."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_2",
+      "finding": "Orthostatic vitals positive: BP drops from 104/64 to 88/58 with HR rising to 124 on standing — significant volume depletion.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 4,
+      "normalIfNotPresent": "No orthostatic change."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_3",
+      "finding": "Abdomen: diffuse mild-to-moderate tenderness, worst in the lower abdomen; NO rigidity, NO rebound, NO localized peritonism.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No abdominal tenderness."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_4",
+      "finding": "Active/hyperactive bowel sounds.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -492,14 +615,24 @@
       "normalIfNotPresent": "Normal bowel sounds."
     },
     {
-      "id": "assess_general_appearance_finding_2",
-      "finding": "General: uncomfortable, dehydrated (dry mucous membranes).",
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Cardiac: irregularly irregular rhythm, no murmur (known atrial fibrillation).",
       "revealedBy": [
-        "assess_general_appearance"
+        "auscultate_mitral_area"
       ],
       "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "Well hydrated."
+      "points": 1,
+      "normalIfNotPresent": "Regular rhythm, no murmur."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_6",
+      "finding": "Dry mucous membranes consistent with dehydration.",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Moist mucous membranes."
     }
   ],
   "overallScoring": {
@@ -512,59 +645,74 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Bacterial gastroenteritis",
-    "diagnosticFramework": "30M presents with 2 days of frequent diarrhea (now with some blood), crampy abdominal pain, fever, and nausea after a barbecue. The diagnosis is Bacterial gastroenteritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68M with type 2 diabetes, hypertension, atrial fibrillation on apixaban, and CKD stage 3 presents with 3 days of bloody inflammatory diarrhea, fever, and orthostatic hypotension after undercooked barbecue chicken, two weeks after amoxicillin-clavulanate. The diagnosis is Bacterial gastroenteritis (Campylobacter), reached by working a genuine fork against C. difficile colitis, STEC, and ischemic colitis, and by recognizing concurrent multi-system derangements — hyperkalemia (peaked T waves on his own EKG), AKI on CKD, and a high-anion-gap metabolic acidosis — driven by his comorbidity and polypharmacy.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: diffuse mild tenderness, active/hyperactive bowel sounds, no peritonism.",
-      "General: uncomfortable, dehydrated (dry mucous membranes)."
+      "General: tired, mildly dehydrated (dry mucous membranes).",
+      "Orthostatic vitals positive: BP drops from 104/64 to 88/58 with HR rising to 124 on standing — significant volume depletion.",
+      "Abdomen: diffuse mild-to-moderate tenderness, worst in the lower abdomen; NO rigidity, NO rebound, NO localized peritonism.",
+      "Active/hyperactive bowel sounds.",
+      "Cardiac: irregularly irregular rhythm, no murmur (known atrial fibrillation).",
+      "Dry mucous membranes consistent with dehydration."
     ],
     "keyDiagnosticFindings": [
       "StoolStudies",
+      "Cdiff",
       "CBC",
       "BMP",
-      "Cdiff",
+      "Lactate",
+      "Coags",
       "BloodCultures"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Bacterial gastroenteritis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Bacterial gastroenteritis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the hypotension and tachycardia.",
+      "Elicit the focused history, drawing out the undercooked-poultry exposure, sick contacts, recent amoxicillin-clavulanate, and the apixaban/bleeding details only on direct questioning.",
+      "Perform the targeted exam, including orthostatic vitals, to reveal volume depletion and a non-peritonitic abdomen.",
+      "Build a differential led by bacterial gastroenteritis while explicitly forking against C. difficile colitis, STEC, and ischemic colitis and naming three mechanisms of bloody diarrhea.",
+      "Order stool studies with a Shiga-toxin assay, C. difficile testing, and a BMP; read the patient's own EKG as hyperkalemia and integrate the concurrent AKI and anion-gap acidosis.",
+      "Commit to bacterial gastroenteritis, treat the hyperkalemia and volume depletion in parallel, hold the contributing home meds, and admit rather than discharge — planning a later safe discharge with med reconciliation."
     ],
     "commonPitfalls": [
-      "Antibiotics in suspected STEC"
+      "Anchoring on simple food poisoning and ignoring recent antibiotics, anticoagulation, or ischemia",
+      "Missing the hyperkalemia on the EKG or mislabeling the peaked T waves as ischemia",
+      "Giving empiric antibiotics before STEC is excluded, or antimotility agents in febrile bloody diarrhea",
+      "Continuing the ACE inhibitor and metformin during AKI",
+      "Discharging a hypotensive patient with AKI and hyperkalemia"
     ],
     "managementPearls": [
-      "Volume and electrolyte repletion",
-      "Avoid antibiotics if STEC suspected (HUS risk)"
+      "Treat hyperkalemia as an emergency: calcium then insulin/dextrose, recheck K and EKG",
+      "Resuscitate volume and AKI while holding the ACE inhibitor, thiazide, and metformin"
     ],
     "criticalHistoryItems": [],
-    "criticalExamItems": [],
+    "criticalExamItems": [
+      "obtain_orthostatic_vitals"
+    ],
     "criticalWorkupItems": [
-      "Stool studies — culture and/or pathogen panel"
+      "Stool studies — culture/GI panel including Shiga-toxin assay",
+      "C. difficile toxin/NAAT given recent antibiotics",
+      "BMP for AKI and electrolytes (potassium, bicarbonate)"
     ],
     "criticalInterpretationItems": [
-      "Wellens syndrome (critical LAD stenosis warning pattern).",
+      "Peaked T waves of hyperkalemia (K 5.8) in atrial fibrillation — an electrically active, treatable emergency.",
       "Atelectasis (volume loss, no air bronchograms)."
     ],
     "criticalManagementItems": [
-      "Volume and electrolyte repletion",
-      "Avoid antibiotics if STEC suspected (HUS risk)"
+      "Aggressive IV volume and electrolyte repletion for hypotension/AKI",
+      "Treat hyperkalemia: calcium + insulin/dextrose, recheck K and EKG",
+      "Hold nephrotoxic/contributing meds (lisinopril, hydrochlorothiazide, metformin) during AKI"
     ],
     "keyImageInterpretationFindings": [
-      "Wellens syndrome (critical LAD stenosis warning pattern).",
+      "Peaked T waves of hyperkalemia (K 5.8) in atrial fibrillation — an electrically active, treatable emergency.",
       "Atelectasis (volume loss, no air bronchograms)."
     ],
     "criticalImageInterpretationFindings": [
-      "Wellens syndrome (critical LAD stenosis warning pattern).",
+      "Peaked T waves of hyperkalemia (K 5.8) in atrial fibrillation — an electrically active, treatable emergency.",
       "Atelectasis (volume loss, no air bronchograms)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Peaked, narrow-based T waves in a patient with AKI on an ACE inhibitor are hyperkalemia until proven otherwise — read the EKG against the chemistry.",
+      "An integrated tracing is part of the puzzle: name the finding, then tie it to the metabolic cause and the treatment.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -575,15 +723,15 @@
         "points": 1
       },
       {
-        "item": "Elicits the patient's concerns / ICE",
+        "item": "Elicits the patient's concerns / ICE (worry about bleeding on a blood thinner)",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive medication/bleeding questions",
         "points": 1
       },
       {
         "item": "Avoids medical jargon; checks understanding",
-        "points": 1
-      },
-      {
-        "item": "Signposts and structures the encounter",
         "points": 1
       },
       {
@@ -594,8 +742,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated-read where clinically natural; pathology-forward standalone otherwise",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

@@ -7,51 +7,55 @@
   "chart": {
     "ageSex": "34M",
     "cc": "Fevers, chills, and headache since returning from travel",
-    "oneLiner": "34M presents with 5 days of cyclical fevers, rigors, headache, and myalgias that began about a week after returning from West Africa.",
+    "oneLiner": "34M with type 2 diabetes (on metformin), HIV on antiretroviral therapy, and G6PD deficiency presents with 5 days of fevers, rigors, headache, and myalgias that began about a week after returning from rural West Africa, where he stopped his malaria prophylaxis early.",
     "vitals": {
-      "BP": "104/66",
-      "HR": "118",
-      "RR": "22",
-      "Temp": "39.4°C",
-      "SpO2": "96% RA"
+      "BP": "98/60",
+      "HR": "122",
+      "RR": "24",
+      "Temp": "39.6°C",
+      "SpO2": "95% RA"
     },
     "timer": 180
   },
   "opening": "I keep getting these terrible fevers and shaking chills since I got back from my trip, and my whole body aches.",
-  "patientFile": "PERSONA: 34-year-old man, flushed and diaphoretic, looks unwell and uncomfortable but is alert. Good historian.\n\nHPI: 5 days of fevers reaching 39-40°C with drenching sweats and bone-shaking rigors, often coming and going every day or two. Severe frontal headache, diffuse myalgias, fatigue, poor appetite, and a few episodes of nausea and loose stools. Returned ~9 days ago from a 3-week trip to rural Nigeria (West Africa) visiting family (only if asked about travel). Took a few doses of malaria prophylaxis early in the trip but stopped because of nausea and did NOT complete it (only if asked specifically about prophylaxis/pills to prevent malaria). Slept in a village without bed nets or air conditioning and had many mosquito bites (only if asked about mosquito exposure/precautions). NO cough, NO dysuria, NO neck stiffness, NO rash, NO bleeding, NO confusion currently. No sick contacts with similar illness.\nPMH: healthy, no chronic illness. MEDS: stopped antimalarial prophylaxis (if asked); no other regular meds. ALLERGIES: none. SOCIAL: works as an engineer; minimal alcohol; no injection drug use; monogamous. IMMUNIZATIONS: had yellow fever and typhoid vaccines before travel, hepatitis A series complete (if asked about vaccines).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented (NO confusion/obtundation).\n- Vitals: BP 104/66, HR 118, RR 22, 39.4°C, SpO2 96% RA.\n- Abdomen: mild splenomegaly and mild tenderness in the left upper quadrant if examined; no peritoneal signs.\n- HEENT/Skin: mild scleral icterus if examined; NO rash, NO petechiae, NO eschar, NO jaundice of the skin.\n- Neuro: alert and oriented, no meningismus, no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the travel history, incomplete prophylaxis, or mosquito exposure unless asked about travel, pills/precautions to prevent malaria, or insect exposure.\n- Splenomegaly and scleral icterus are revealed only if the abdomen/eyes are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 34-year-old man, flushed and diaphoretic, looks unwell and uncomfortable but is alert and a good historian. He is worried because the fevers keep coming back and he feels weaker each day.\n\nHPI: 5 days of fevers reaching 39-40°C with drenching sweats and bone-shaking rigors; at first they came roughly every other day but for the last 2 days they are almost continuous. Severe frontal headache, diffuse myalgias, profound fatigue, poor appetite, and several episodes of nausea, vomiting, and loose non-bloody stools. He noticed his urine looked darker today (only if asked about urine color/output). Returned ~9 days ago from a 3-week trip to rural Nigeria (West Africa) visiting family (only if asked about travel). Took a few days of malaria prophylaxis early in the trip but stopped because of nausea and did NOT complete it (only if asked specifically about prophylaxis/pills to prevent malaria). Slept in a village without bed nets or air conditioning and had many mosquito bites (only if asked about mosquito exposure/precautions). He ate local food and drank village well water (only if asked about food/water). NO cough, NO dysuria, NO neck stiffness, NO rash, NO obvious bleeding, NO confusion currently. No sick contacts with similar illness, though a cousin he visited had a prolonged fever last month (only if asked about sick contacts).\nPMH (reveal when asked about medical history): (1) Type 2 diabetes for 4 years, last A1c ~8.6%, sometimes runs low when he skips meals. (2) HIV diagnosed 6 years ago, on antiretroviral therapy, says his last CD4 was 'around 350' and viral load undetectable. (3) Known G6PD deficiency (found years ago after a reaction to an antibiotic) — he was specifically told to avoid certain malaria pills and 'sulfa' drugs (reveal only if asked about blood disorders, prior drug reactions, or G6PD).\nMEDS (reveal when asked about medications): metformin twice daily; a single-tablet HIV antiretroviral regimen; ondansetron taken for the nausea on this trip; citalopram for anxiety; he stopped the antimalarial prophylaxis early. ALLERGIES: had hemolysis/dark urine after a sulfa antibiotic years ago (G6PD-related). SOCIAL: works as an engineer; minimal alcohol; no injection drug use; monogamous, one partner. IMMUNIZATIONS: yellow fever and typhoid vaccines before travel, hepatitis A complete (if asked about vaccines). FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented (NO confusion/obtundation).\n- Vitals: BP 98/60, HR 122, RR 24, 39.6°C, SpO2 95% RA.\n- Abdomen: mild splenomegaly and mild tenderness in the left upper quadrant if examined; no peritoneal signs.\n- HEENT/Skin: mild scleral icterus and pale conjunctivae if examined; NO rash, NO petechiae, NO eschar, NO rose spots, NO frank jaundice of the skin.\n- Cardiac: tachycardic, regular, no murmur; mildly dry mucous membranes.\n- Neuro: alert and oriented, no meningismus, no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the travel history, incomplete prophylaxis, mosquito exposure, food/water source, or the sick cousin unless asked about the corresponding topic.\n- Do NOT volunteer the diabetes, HIV, G6PD deficiency, or the medication list unless asked about past medical history, blood disorders/drug reactions, or medications respectively.\n- Splenomegaly, scleral icterus, and pale conjunctivae are revealed only if the abdomen/eyes/conjunctivae are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "BloodSmear": "Thick and thin Giemsa-stained blood smears: intraerythrocytic ring-form trophozoites of Plasmodium falciparum; parasitemia ~3% on the thin film (quantified). NO Schuffner dots / no banana-shaped gametocytes mandatory but falciparum favored.",
-      "RDT": "Rapid diagnostic test POSITIVE for P. falciparum HRP-2 antigen (confirms species while smear is being read).",
-      "CBC": "Hgb 10.8, Plt 78 (thrombocytopenia — common and supportive), WBC normal (no leukocytosis). Mild anemia.",
-      "Chemistry": "Cr 1.0 (normal renal function), glucose 92 (no hypoglycemia), lactate 1.8 (normal) — these screen for SEVERE malaria; bilirubin mildly elevated (indirect, from hemolysis).",
-      "BloodCultures": "Bacterial blood cultures drawn and PENDING — NO growth (helps exclude typhoid/enteric fever and bacterial sepsis as the cause)."
+      "BloodSmear": "Thick and thin Giemsa-stained blood smears: intraerythrocytic ring-form trophozoites of Plasmodium falciparum with occasional banana-shaped gametocytes; multiply-infected red cells seen; parasitemia ~6.5% on the thin film (quantified, >5% — a SEVERE criterion). No Schuffner dots. Speciation favors falciparum.",
+      "RDT": "Rapid diagnostic test POSITIVE for P. falciparum HRP-2 antigen and NEGATIVE for the pan-Plasmodium (pLDH) band pattern of non-falciparum species — confirms falciparum while the smear is quantified.",
+      "CBC": "Hgb 8.4 (down from a baseline ~13), MCV 92, reticulocytes elevated, haptoglobin low and LDH high (hemolytic picture). Plt 58 (thrombocytopenia). WBC 5.6, normal differential (NO leukocytosis — argues against pyogenic bacterial sepsis).",
+      "Chemistry": "Na 134, K 3.1 (hypokalemia from vomiting/diarrhea), HCO3 18 with an anion gap of 18 (Na 134 − Cl 98 − HCO3 18 = 18; gap metabolic acidosis). Cr 2.1 (baseline ~0.9 — ACUTE kidney injury). Glucose 58 (HYPOGLYCEMIA). Lactate 3.6 (elevated). Total bilirubin 4.2 with indirect (unconjugated) predominance from hemolysis; AST/ALT mildly elevated.",
+      "BloodCultures": "Bacterial blood cultures and stool/blood Salmonella workup drawn and PENDING — NO growth to date (helps exclude typhoid/enteric fever and bacterial sepsis as the primary cause).",
+      "G6PDLevel": "Confirmed G6PD deficiency on quantitative assay (drawn during a non-acute window is preferred, but historical deficiency is documented) — contraindicates primaquine/tafenoquine and sulfa-based agents because of hemolysis risk."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia with an otherwise normal tracing; note the baseline QTc because some antimalarials (e.g., quinine, chloroquine, lumefantrine) prolong the QT interval.",
-      "verify": "Source a study matching: Sinus tachycardia with an otherwise normal tracing; useful as a baseline QTc before QT-prolonging antimalarials. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 23,
+      "findings": "Sinus tachycardia with a markedly prolonged QT interval (QTc ~510 ms). This patient's OWN tracing: the long QT is driven by hypokalemia (K 3.1) PLUS QT-prolonging medications (ondansetron, citalopram) — a dangerous baseline BEFORE adding any QT-prolonging antimalarial (quinine, chloroquine, lumefantrine). No acute ischemic ST changes.",
+      "verify": "Source a study matching: sinus tachycardia with drug/electrolyte-induced QT prolongation (long QTc). Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia with normal intervals (baseline QTc before antimalarials)",
+      "imageDescription": "12-lead showing sinus tachycardia with a prolonged QT interval (drug- and hypokalemia-related)",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "normal QTc baseline 12-lead"
+        "long QT drug induced ECG",
+        "QTc prolongation hypokalemia 12-lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 34-year-old man returning from the tropics presents with cyclical fevers and a fast heart rate."
+      "clinicalVignette": "A 34-year-old man returning from the tropics with fever, vomiting, and several QT-prolonging medications has an EKG before antimalarial therapy is chosen."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema, a feature of SEVERE malaria.",
+      "findings": "Clear lung fields with no consolidation or effusion; normal cardiomediastinal silhouette. New bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema, a feature of SEVERE malaria — a pertinent negative to document at baseline given his other severe criteria.",
       "verify": "Source a CC chest film that is clear/normal, OR one showing bilateral infiltrates (ARDS); label which it is. Self-host with appropriate credit.",
       "assetNeeded": true,
       "imageDescription": "chest radiograph with clear lung fields (screening for malaria-associated ARDS)",
@@ -60,7 +64,7 @@
         "ARDS bilateral infiltrates chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 40-year-old woman back from overseas travel presents with fevers and mild breathlessness."
+      "clinicalVignette": "A traveler back from West Africa with fevers and mild breathlessness has a screening chest film."
     }
   },
   "revealKeys": [
@@ -69,6 +73,7 @@
     "CBC",
     "Chemistry",
     "BloodCultures",
+    "G6PDLevel",
     "ekg",
     "cxr"
   ],
@@ -82,49 +87,58 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this febrile returning traveler (note your leading diagnosis).",
-      "rubric": "Malaria (leading & CANT-MISS,9). Typhoid/enteric fever (CANT-MISS,3). Viral hemorrhagic fever / arboviral illness (dengue, etc.) (core,3). Bacterial sepsis/occult bacteremia (core,2). Acute viral hepatitis or other cosmopolitan infection (core,2). Connects fever pattern + endemic travel + incomplete prophylaxis + splenomegaly/thrombocytopenia to malaria and states malaria must be excluded urgently in any febrile traveler (core,6).",
-      "idealAnswer": "Leading diagnosis: Malaria. Must-not-miss diagnoses to exclude: Typhoid/enteric fever. Also reasonable: Viral hemorrhagic fever / arboviral illness (dengue); Bacterial sepsis/occult bacteremia; Acute viral hepatitis or other cosmopolitan infection.",
+      "prompt": "Based on your history and physical in this febrile returning traveler from West Africa, list your differential (note your leading diagnosis and the single best competing alternative). Then name THREE mechanisms by which Plasmodium falciparum causes severe, multi-system disease.",
+      "rubric": "Malaria — leading & CANT-MISS (8). Typhoid/enteric fever — the genuine competing diagnosis given village well water, GI symptoms, the febrile contact, relative bradycardia/normal WBC, and an incompletely protective typhoid vaccine; must be excluded (CANT-MISS,5). Viral hemorrhagic fever / arboviral illness (dengue) (core,2). Bacterial sepsis/occult bacteremia, higher pretest given HIV (core,2). Acute viral hepatitis / leptospirosis / rickettsial or other cosmopolitan infection (core,1). Connects fever pattern + endemic travel + incomplete prophylaxis + splenomegaly + thrombocytopenia/hemolysis to malaria and states malaria must be excluded urgently in ANY febrile traveler (core,3). Names THREE mechanisms of severe falciparum disease — e.g. cytoadherence/sequestration of infected RBCs in microvasculature, intravascular hemolysis with anemia, and metabolic derangement (hypoglycemia/lactic acidosis); also acceptable: AKI/blackwater, cerebral malaria, ARDS, DIC (core,4). PENALTY: anchoring on malaria and never working up typhoid/bacteremia despite the well-water and HIV history (-3).",
+      "idealAnswer": "Leading diagnosis: Malaria (incomplete prophylaxis in West Africa, cyclical-then-continuous fevers, splenomegaly, thrombocytopenia, hemolytic anemia). Single best competing alternative to exclude: Typhoid/enteric fever — he drank village well water, has prominent GI symptoms, a febrile household contact, a normal WBC, and his typhoid vaccine is only partially protective. Also reasonable: viral hemorrhagic fever / arboviral illness (dengue); bacterial sepsis/occult bacteremia (higher pretest given HIV); acute viral hepatitis, leptospirosis, or rickettsial disease. Malaria must be excluded urgently in any febrile traveler. Three mechanisms of severe falciparum disease: (1) cytoadherence and microvascular sequestration of parasitized RBCs (cerebral malaria, organ ischemia); (2) intravascular hemolysis and rosetting causing anemia and AKI/blackwater; (3) host metabolic derangement — hypoglycemia and lactic (anion-gap) acidosis.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Malaria",
-            "points": 9
+            "points": 8
           },
           {
-            "item": "Typhoid/enteric fever",
-            "points": 3
+            "item": "Typhoid/enteric fever (the genuine competing diagnosis)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "Viral hemorrhagic fever / arboviral illness (dengue)",
+            "points": 2
+          },
+          {
+            "item": "Bacterial sepsis/occult bacteremia (higher pretest given HIV)",
+            "points": 2
+          },
+          {
+            "item": "Acute viral hepatitis / leptospirosis / rickettsial or other cosmopolitan infection",
+            "points": 1
+          },
+          {
+            "item": "Connects fever pattern + endemic travel + incomplete prophylaxis + splenomegaly + thrombocytopenia/hemolysis to malaria and states it must be excluded urgently",
             "points": 3
           },
           {
-            "item": "Bacterial sepsis/occult bacteremia",
-            "points": 2
-          },
-          {
-            "item": "Acute viral hepatitis or other cosmopolitan infection",
-            "points": 2
-          },
-          {
-            "item": "Connects fever pattern + endemic travel + incomplete prophylaxis + splenomegaly/thrombocytopenia to malaria and states malaria must be excluded urgently in any febrile traveler",
-            "points": 6
+            "item": "Names three mechanisms of severe falciparum disease (sequestration/cytoadherence; hemolysis/anemia/AKI; hypoglycemia/lactic acidosis)",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on malaria and never works up typhoid/bacteremia despite well-water and HIV history",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Typhoid/enteric fever"
+        "Typhoid/enteric fever",
+        "Bacterial sepsis/occult bacteremia"
       ],
       "acceptableAlternatives": [
         "Viral hemorrhagic fever / arboviral illness (dengue)",
-        "Bacterial sepsis/occult bacteremia",
-        "Acute viral hepatitis or other cosmopolitan infection"
+        "Acute viral hepatitis / leptospirosis / rickettsial or other cosmopolitan infection"
       ]
     },
     {
@@ -133,14 +147,14 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Thick and thin blood smears for malaria parasites with species ID and parasitemia (CANT-MISS,5). Rapid diagnostic test (RDT) for malaria antigen (CANT-MISS,3). CBC with platelets (2). Chemistry/glucose/lactate/bilirubin to assess for SEVERE malaria (2). Blood cultures to exclude typhoid/bacterial sepsis (2). Repeat smears q12-24h x3 if first is negative (1). PENALTY: ruling out malaria on a single negative smear without repeating (-2).",
-      "idealAnswer": "Order: EKG; CXR; Blood smear; RDT; CBC; Chemistry; Blood cultures.",
+      "rubric": "Thick and thin blood smears for malaria parasites with species ID and parasitemia (CANT-MISS,4). Rapid diagnostic test (RDT) for malaria antigen (CANT-MISS,3). CBC with platelets + hemolysis labs (retic/LDH/haptoglobin) (2). Chemistry with glucose, lactate, bilirubin, and renal function to grade SEVERE malaria (2). Blood cultures + stool/blood Salmonella studies to exclude typhoid/bacterial sepsis (2). G6PD level before any 8-aminoquinoline given his history (1). Repeat smears q12-24h x3 if first negative (1). PENALTY: ruling out malaria on a single negative smear without repeating (-2); shotgun panel with no severity assessment (-1).",
+      "idealAnswer": "Order: EKG (he is on QT-prolonging drugs and may need a QT-prolonging antimalarial); CXR; thick and thin blood smears with species ID and parasitemia; RDT; CBC with platelets plus hemolysis labs (reticulocytes, LDH, haptoglobin); Chemistry including glucose, lactate, bilirubin, and creatinine to grade severity; blood cultures and stool/blood Salmonella studies to exclude typhoid/bacteremia; and a G6PD level before any primaquine/tafenoquine given his documented deficiency. Repeat smears q12-24h x3 if the first is negative.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Thick and thin blood smears with species ID and parasitemia",
-            "points": 5
+            "points": 4
           },
           {
             "item": "Rapid diagnostic test (RDT) for malaria antigen",
@@ -150,23 +164,27 @@
         "coreActions": [
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
+            "points": 1
+          },
+          {
+            "item": "CBC with platelets plus hemolysis labs (retic/LDH/haptoglobin)",
             "points": 2
           },
           {
-            "item": "CBC",
+            "item": "Chemistry with glucose, lactate, bilirubin, and renal function to grade severity",
             "points": 2
           },
           {
-            "item": "Chemistry",
-            "points": 2
+            "item": "Blood cultures plus stool/blood Salmonella studies to exclude typhoid/bacteremia",
+            "points": 1
           },
           {
-            "item": "Blood cultures",
-            "points": 2
+            "item": "G6PD level before any 8-aminoquinoline",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -195,48 +213,49 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (consider what you need before treatment).",
-      "rubric": "Findings = sinus tachycardia, otherwise normal; document a baseline QTc. CREDIT: rate & rhythm (5); recognizes a normal/near-normal tracing with sinus tachycardia (5); notes the need for baseline QTc before QT-prolonging antimalarials (quinine, chloroquine, lumefantrine) (3); systematic read (2). PENALTY: missing that the QT matters before antimalarial therapy (-2).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and state how they change your treatment plan.",
+      "rubric": "Findings = sinus tachycardia with a markedly PROLONGED QT (QTc ~510 ms). CREDIT: rate & rhythm — sinus tachycardia (4); explicitly identifies the prolonged QT/long QTc (5); attributes it to hypokalemia (K 3.1) PLUS QT-prolonging meds (ondansetron, citalopram) (3); states this mandates correcting potassium/magnesium and choosing/monitoring antimalarial therapy carefully because quinine/chloroquine/lumefantrine further prolong QT and risk torsades (3). PENALTY: missing the long QT and starting a QT-prolonging antimalarial without correcting electrolytes or monitoring (-3).",
       "keyFindings": [
-        "rate & rhythm (sinus tachycardia)",
-        "recognizes a normal/near-normal tracing",
-        "notes the need to document baseline QTc before QT-prolonging antimalarials",
-        "systematic read"
+        "sinus tachycardia",
+        "markedly prolonged QT / long QTc (~510 ms)",
+        "attributes QT prolongation to hypokalemia plus QT-prolonging medications (ondansetron, citalopram)",
+        "recognizes risk of torsades if a QT-prolonging antimalarial is added without correcting electrolytes"
       ],
       "criticalFindings": [
-        "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc because some antimalarials prolong the QT interval."
+        "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) from hypokalemia plus QT-prolonging medications — correct K+/Mg2+ and avoid stacking QT-prolonging antimalarials without monitoring."
       ],
       "commonMistakes": [
-        "ignoring the QT interval before starting an antimalarial that prolongs it"
+        "missing the prolonged QT and stacking a QT-prolonging antimalarial on top",
+        "reading it as a benign sinus tachycardia only"
       ],
-      "idealAnswer": "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc because antimalarials (quinine, chloroquine, lumefantrine) can prolong the QT.",
+      "idealAnswer": "Sinus tachycardia with a markedly prolonged QT interval (QTc ~510 ms). The long QT is driven by hypokalemia (K 3.1) plus his QT-prolonging medications (ondansetron, citalopram). This is the patient's own baseline before therapy: I must replete potassium and magnesium and be very cautious adding a QT-prolonging antimalarial (quinine, chloroquine, lumefantrine), with continuous telemetry and serial QTc — IV artesunate (preferred here for severe disease) does not prolong QT and is the safer backbone.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Recognizes: Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+            "item": "Recognizes: sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) from hypokalemia plus QT-prolonging medications, mandating electrolyte correction before/with any QT-prolonging antimalarial.",
             "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "rate & rhythm (sinus tachycardia)",
-            "points": 5
+            "points": 4
           },
           {
-            "item": "recognizes a normal/near-normal tracing",
+            "item": "attributes the prolonged QT to hypokalemia plus ondansetron/citalopram",
             "points": 3
           },
           {
-            "item": "notes the need to document baseline QTc before QT-prolonging antimalarials",
-            "points": 2
+            "item": "states the need to correct K+/Mg2+ and monitor QTc / avoid stacking QT-prolonging antimalarials (torsades risk)",
+            "points": 3
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "ignoring the QT interval before starting an antimalarial that prolongs it",
-            "points": -2
+            "item": "missing the long QT and starting a QT-prolonging antimalarial without correcting electrolytes or monitoring",
+            "points": -3
           }
         ]
       }
@@ -248,23 +267,23 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear lungs; new bilateral infiltrates would suggest malaria-associated ARDS (a severe feature). CREDIT: identifies a clear/normal film (6); recognizes that bilateral infiltrates would indicate malaria-associated ARDS / severe disease (4). PENALTY: inventing pneumonia/consolidation that is not present (-2).",
+      "rubric": "Findings = clear lungs; new bilateral infiltrates would suggest malaria-associated ARDS (a severe feature). CREDIT: identifies a clear/normal film (6); recognizes that bilateral infiltrates would indicate malaria-associated ARDS / severe disease and that this is a baseline pertinent negative given his other severe criteria (4). PENALTY: inventing pneumonia/consolidation that is not present (-2).",
       "keyFindings": [
         "identifies a clear/normal film",
         "recognizes that bilateral infiltrates would indicate malaria-associated ARDS / severe disease"
       ],
       "criticalFindings": [
-        "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema (severe malaria)."
+        "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema (severe malaria) — a pertinent negative to document at baseline."
       ],
       "commonMistakes": [
         "inventing pneumonia/consolidation that is not present"
       ],
-      "idealAnswer": "Clear lung fields; new bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema, a feature of severe malaria.",
+      "idealAnswer": "Clear lung fields with no consolidation or effusion and a normal cardiomediastinal silhouette. New bilateral infiltrates would raise concern for malaria-associated ARDS/pulmonary edema, a feature of severe malaria — worth documenting as a baseline pertinent negative given his other severe criteria.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria).",
+            "item": "Recognizes: clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria).",
             "points": 6
           }
         ],
@@ -291,9 +310,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Blood smear shows intraerythrocytic ring forms of P. falciparum at ~3% parasitemia, RDT positive, thrombocytopenia, mild anemia, with normal creatinine, glucose, and lactate. What is your diagnosis and what did you rule out?",
-      "rubric": "Malaria — Plasmodium falciparum (6). Cites positive smear/RDT with species and parasitemia; explicitly assesses severity (here UNCOMPLICATED: parasitemia <5%, no end-organ dysfunction, no cerebral/renal/pulmonary involvement, normal lactate/glucose) and notes blood cultures help exclude typhoid/bacterial sepsis (4).",
-      "idealAnswer": "Malaria due to Plasmodium falciparum, currently uncomplicated — a positive smear/RDT with parasitemia ~3% (<5%) and normal creatinine, glucose, and lactate, with no cerebral, renal, or pulmonary end-organ dysfunction. Negative blood cultures help exclude typhoid/enteric fever and bacterial sepsis.",
+      "prompt": "The smear shows P. falciparum ring forms at ~6.5% parasitemia (RDT positive for HRP-2), with Hgb 8.4 and a hemolytic picture, Plt 58, Cr 2.1 (baseline 0.9), glucose 58, lactate 3.6, HCO3 18 with an anion gap of 18, and the EKG shows a long QT. Blood cultures are no-growth so far. What is your diagnosis, is it severe, and what did you rule out? Name the single discriminating test that settled malaria vs typhoid.",
+      "rubric": "Malaria — Plasmodium falciparum, classified as SEVERE (6). Justifies severe by multiple criteria: parasitemia >5% (6.5%), AKI (Cr 2.1 from 0.9), hypoglycemia (glucose 58), and an anion-gap lactic acidosis (gap 18, lactate 3.6, HCO3 18) on a background of hemolytic anemia and thrombocytopenia. Names the positive thick/thin smear + falciparum-specific RDT (HRP-2) as the discriminating test that confirmed malaria and, with no-growth cultures, argues against typhoid/bacteremia; notes the long QT and G6PD deficiency now constrain drug choice (4).",
+      "idealAnswer": "Diagnosis: malaria due to Plasmodium falciparum, and it is SEVERE — not uncomplicated. Severity is established by parasitemia >5% (6.5%), acute kidney injury (Cr 2.1 from a baseline 0.9), hypoglycemia (glucose 58), and a high-anion-gap lactic acidosis (Na 134 − Cl 98 − HCO3 18 = gap 18, lactate 3.6), all superimposed on hemolytic anemia (Hgb 8.4, low haptoglobin, high LDH, indirect hyperbilirubinemia) and thrombocytopenia. The discriminating test was the positive thick/thin blood smear with a falciparum-specific RDT (HRP-2 positive, non-falciparum pLDH negative); with blood cultures showing no growth, this confirms malaria and argues against typhoid/enteric fever and bacteremia. Two confounders now shape therapy: the long QT (hypokalemia plus ondansetron/citalopram) and his documented G6PD deficiency.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -306,73 +325,92 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH approach to malaria: confirm species and parasitemia and assess severity FIRST (CANT-MISS,5); for uncomplicated falciparum start an oral artemisinin-based combination therapy (ACT, e.g., artemether-lumefantrine or atovaquone-proguanil) (CANT-MISS,6); for SEVERE malaria give IV artesunate (4); admit and monitor parasitemia and for complications (hypoglycemia, ARDS, AKI, cerebral malaria) (4); Infectious Disease consult and report to public health (3); supportive care and antipyretics, follow QTc on therapy (2). PENALTY: treating presumed falciparum with chloroquine alone in a region of widespread resistance (-3); discharging a patient with falciparum malaria without confirming species/severity (-1).",
-      "idealAnswer": "Confirm species and quantify parasitemia and assess severity first. Uncomplicated P. falciparum: oral artemisinin-based combination therapy (ACT — artemether-lumefantrine, or atovaquone-proguanil). Severe malaria (parasitemia ≥5%, impaired consciousness, shock, ARDS, AKI, acidosis, hypoglycemia, or significant bleeding): IV artesunate, admit to a monitored/ICU setting. Admit and follow serial parasitemia and complications; treat hypoglycemia; supportive care and antipyretics; monitor QTc on QT-prolonging agents. Infectious Disease consult and notify public health. Do NOT use chloroquine monotherapy for falciparum from a resistant region.",
+      "prompt": "What is your management plan, including disposition and a clear safe-discharge/follow-up plan when he is ready to leave the hospital?",
+      "rubric": "Per MGH approach to malaria: confirm species/parasitemia and classify severity FIRST (CANT-MISS,4); because this is SEVERE falciparum, give IV ARTESUNATE and admit to a monitored/ICU setting — do NOT use oral ACT as primary therapy for severe disease (CANT-MISS,6); correct hypokalemia and hypoglycemia and obtain continuous telemetry / serial QTc given the long QT, and prefer artesunate (no QT effect) over quinine; hold/avoid additional QT-prolonging drugs where possible (4); manage AKI/hemolysis with careful fluids and monitor for blackwater/transfusion need (2); AVOID primaquine/tafenoquine and sulfa agents because of G6PD deficiency — falciparum has no hypnozoite stage so primaquine is not needed for radical cure anyway (2); Infectious Disease consult and notify public health (2); transition to a full oral ACT course once stable and tolerating PO, and arrange SAFE DISCHARGE — confirm clinical/parasitologic improvement, medication reconciliation (resume ART, restart metformin only when eating and renal function recovers, review QT-prolonging meds), counsel on prophylaxis adherence and bed nets, and ensure ID + primary-care follow-up with repeat smear (3). PENALTY: treating SEVERE falciparum with oral therapy / chloroquine monotherapy from a resistant region (-3); giving primaquine or a sulfa drug in a G6PD-deficient patient (-2); discharging before parasitemia falls and the patient is stable / without follow-up (-2).",
+      "idealAnswer": "Confirm species and quantify parasitemia and classify severity first — this is SEVERE falciparum, so the cornerstone is IV ARTESUNATE with admission to a monitored/ICU bed; oral ACT alone is NOT adequate for severe disease. Correct hypokalemia and hypoglycemia immediately, place on continuous telemetry with serial QTc, and prefer artesunate (no QT effect) while avoiding/holding additional QT-prolonging drugs (ondansetron, citalopram, and QT-prolonging antimalarials like quinine/lumefantrine) given the QTc ~510 ms. Support the AKI and hemolysis with careful IV fluids, monitor for blackwater fever and the need for transfusion, and trend parasitemia. AVOID primaquine, tafenoquine, and sulfa-containing agents because of his G6PD deficiency — and note falciparum has no liver hypnozoites, so primaquine radical cure is not required. Infectious Disease consult and notify public health. Once stable, afebrile, and parasitemia is falling, transition to a complete oral ACT course (e.g., artemether-lumefantrine, watching QT) and arrange SAFE DISCHARGE: confirm parasitologic/clinical improvement, reconcile medications (resume ART, restart metformin only when eating and renal function recovers, minimize QT-prolonging drugs), counsel on completing prophylaxis and using bed nets for future travel, and ensure ID and primary-care follow-up with a repeat smear. Do NOT use chloroquine monotherapy for falciparum from a resistant region.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Confirm species/parasitemia and assess severity first",
-            "points": 5
+            "item": "Confirm species/parasitemia and classify severity first",
+            "points": 4
           },
           {
-            "item": "Artemisinin-based combination therapy for uncomplicated falciparum",
+            "item": "IV artesunate with ICU/monitored admission for SEVERE falciparum (not oral ACT alone)",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "IV artesunate for severe malaria",
+            "item": "Correct hypokalemia/hypoglycemia, telemetry and serial QTc, prefer artesunate over QT-prolonging agents given long QT",
             "points": 4
           },
           {
-            "item": "Admit and monitor parasitemia and for complications",
-            "points": 4
+            "item": "Manage AKI/hemolysis with careful fluids and monitor for blackwater/transfusion need",
+            "points": 2
+          },
+          {
+            "item": "Avoid primaquine/tafenoquine and sulfa agents given G6PD deficiency (falciparum has no hypnozoites)",
+            "points": 2
           },
           {
             "item": "Infectious Disease consult and public health notification",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Supportive care/antipyretics and follow QTc on therapy",
-            "points": 2
+            "item": "Transition to full oral ACT course when stable and arrange safe discharge: med reconciliation, prophylaxis/bed-net counseling, ID + primary-care follow-up with repeat smear",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
             "item": "Counsel on prophylaxis adherence and bed nets for future travel",
             "points": 1
+          },
+          {
+            "item": "Recognizes HIV/diabetes raise the risk of severe disease and warrant closer monitoring",
+            "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Chloroquine monotherapy for falciparum from a resistant region",
+            "item": "Treating severe falciparum with oral therapy or chloroquine monotherapy from a resistant region",
             "points": -3
+          },
+          {
+            "item": "Giving primaquine or a sulfa drug in a G6PD-deficient patient",
+            "points": -2
+          },
+          {
+            "item": "Discharging before parasitemia falls / patient stable, or without follow-up",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Confirm species/parasitemia and assess severity first",
-        "Artemisinin-based combination therapy for uncomplicated falciparum"
+        "Confirm species/parasitemia and classify severity first",
+        "IV artesunate with ICU/monitored admission for SEVERE falciparum (not oral ACT alone)"
       ],
       "optionalActions": [
-        "IV artesunate for severe malaria",
-        "Admit and monitor parasitemia and for complications",
+        "Correct hypokalemia/hypoglycemia, telemetry and serial QTc, prefer artesunate over QT-prolonging agents given long QT",
+        "Manage AKI/hemolysis with careful fluids and monitor for blackwater/transfusion need",
+        "Avoid primaquine/tafenoquine and sulfa agents given G6PD deficiency (falciparum has no hypnozoites)",
         "Infectious Disease consult and public health notification",
-        "Supportive care/antipyretics and follow QTc on therapy",
-        "Counsel on prophylaxis adherence and bed nets for future travel"
+        "Transition to full oral ACT course when stable and arrange safe discharge: med reconciliation, prophylaxis/bed-net counseling, ID + primary-care follow-up with repeat smear",
+        "Counsel on prophylaxis adherence and bed nets for future travel",
+        "Recognizes HIV/diabetes raise the risk of severe disease and warrant closer monitoring"
       ],
       "unsafeActions": [
-        "Chloroquine monotherapy for falciparum from a resistant region"
+        "Treating severe falciparum with oral therapy or chloroquine monotherapy from a resistant region",
+        "Giving primaquine or a sulfa drug in a G6PD-deficient patient"
       ],
       "consults": [
         "Infectious Disease"
       ],
-      "disposition": "Admit",
+      "disposition": "Admit to ICU/monitored bed (severe malaria)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Approach to Fever in the Returning Traveler (Malaria)",
+        "section": "Approach to Fever in the Returning Traveler (Severe Malaria)",
         "page": 119
       }
     }
@@ -384,12 +422,14 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "travel_adherence"
+      "travel_adherence",
+      "hiv_status",
+      "prior_drug_reaction"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "34-year-old man, flushed and diaphoretic, looks unwell but alert. Good historian.",
+    "affect": "34-year-old man, flushed and diaphoretic, looks unwell but alert. Good historian; guarded about his HIV status until asked respectfully.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (travel adherence, HIV, G6PD/drug reactions) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -443,6 +483,57 @@
       "hiddenUntilAsked": true
     },
     {
+      "id": "pmh_comorbid",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "diabetes",
+        "hiv",
+        "immune system",
+        "chronic illness"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "g6pd_drug_reaction",
+      "category": "pmh",
+      "triggerConcepts": [
+        "g6pd",
+        "blood disorder",
+        "drug reaction",
+        "allergy",
+        "reaction to medication",
+        "hemolysis",
+        "sulfa"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "metformin",
+        "antiretroviral",
+        "ondansetron",
+        "citalopram"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
       "id": "fever_pattern",
       "category": "hpi",
       "triggerConcepts": [
@@ -465,7 +556,8 @@
         "any other symptoms",
         "associated symptoms",
         "anything else",
-        "headache nausea diarrhea"
+        "headache nausea diarrhea",
+        "urine color"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -489,6 +581,24 @@
       "hiddenUntilAsked": false
     },
     {
+      "id": "food_water_contacts",
+      "category": "exposures",
+      "triggerConcepts": [
+        "food and water",
+        "well water",
+        "what did you eat",
+        "drinking water",
+        "sick contacts",
+        "anyone else sick",
+        "freshwater swimming",
+        "animal contact"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
       "id": "immunizations",
       "category": "exposures",
       "triggerConcepts": [
@@ -496,34 +606,6 @@
         "immunizations",
         "shots before travel",
         "yellow fever typhoid vaccine"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "pmh",
-      "category": "pmh",
-      "triggerConcepts": [
-        "past medical history",
-        "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "social_exposures",
-      "category": "social",
-      "triggerConcepts": [
-        "sick contacts",
-        "food and water",
-        "freshwater swimming",
-        "sexual history",
-        "animal contact"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -544,7 +626,7 @@
     },
     {
       "id": "inspect_sclera_finding_2",
-      "finding": "HEENT/Skin: mild scleral icterus if examined; no rash, no petechiae, no eschar.",
+      "finding": "HEENT/Skin: mild scleral icterus if examined; no rash, no petechiae, no eschar, no rose spots.",
       "revealedBy": [
         "inspect_sclera",
         "assess_for_jaundice"
@@ -554,7 +636,17 @@
       "normalIfNotPresent": "Sclerae anicteric."
     },
     {
-      "id": "assess_general_appearance_finding_3",
+      "id": "inspect_conjunctiva_finding_3",
+      "finding": "HEENT: pale conjunctivae consistent with anemia if examined; sclerae mildly icteric.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Conjunctivae pink, not pale."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
       "finding": "General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented.",
       "revealedBy": [
         "assess_general_appearance"
@@ -564,7 +656,7 @@
       "normalIfNotPresent": "Patient is alert and in no acute distress."
     },
     {
-      "id": "assess_mental_status_finding_4",
+      "id": "assess_mental_status_finding_5",
       "finding": "Neuro: alert and oriented, no meningismus, no focal deficit (NO confusion/obtundation to suggest cerebral malaria).",
       "revealedBy": [
         "assess_mental_status",
@@ -573,17 +665,6 @@
       "importance": "critical",
       "points": 4,
       "normalIfNotPresent": "Alert and oriented; mental status grossly normal."
-    },
-    {
-      "id": "assess_for_petechiae_finding_5",
-      "finding": "HEENT/Skin: no rash, no petechiae, no eschar, no jaundice of the skin.",
-      "revealedBy": [
-        "assess_for_petechiae",
-        "inspect_skin"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No petechiae."
     }
   ],
   "overallScoring": {
@@ -596,16 +677,16 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Malaria in a returning traveler",
-    "diagnosticFramework": "34M presents with 5 days of cyclical fevers, rigors, headache, and myalgias that began about a week after returning from West Africa. The diagnosis is Malaria in a returning traveler, reached by eliciting the focused travel/exposure history, performing the targeted exam, and interpreting the directed workup (blood smear, RDT, severity labs) while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "34M with type 2 diabetes, HIV on ART, and G6PD deficiency presents with 5 days of fevers, rigors, headache, and myalgias that began about a week after returning from rural West Africa with incomplete malaria prophylaxis. The diagnosis is SEVERE Plasmodium falciparum malaria, reached by eliciting the focused travel/exposure and comorbidity history, performing the targeted exam (splenomegaly, scleral icterus, pale conjunctivae, normal mental status), and interpreting a directed workup that reveals multi-system involvement — hemolytic anemia, thrombocytopenia, AKI, hypoglycemia, and an anion-gap lactic acidosis — while the falciparum-specific smear/RDT discriminates malaria from the leading competitor, typhoid/enteric fever, and a drug/electrolyte-related long QT and G6PD deficiency constrain therapy.",
     "keyHistoryClues": [
-      "travel to a malaria-endemic region (West Africa)",
-      "incomplete malaria prophylaxis",
-      "mosquito exposure without bed nets"
+      "travel to a malaria-endemic region (West Africa) with incomplete prophylaxis",
+      "village well water and a febrile household contact (raise typhoid)",
+      "HIV, diabetes, and G6PD deficiency that alter severity and drug choice"
     ],
     "keyPhysicalExamFindings": [
       "Abdomen: mild splenomegaly and mild tenderness in the left upper quadrant if examined; no peritoneal signs.",
-      "HEENT/Skin: mild scleral icterus if examined; no rash, no petechiae, no eschar.",
-      "General: ill-appearing, flushed, diaphoretic, febrile; alert and fully oriented.",
+      "HEENT/Skin: mild scleral icterus if examined; no rash, no petechiae, no eschar, no rose spots.",
+      "HEENT: pale conjunctivae consistent with anemia if examined; sclerae mildly icteric.",
       "Neuro: alert and oriented, no meningismus, no focal deficit (NO confusion/obtundation to suggest cerebral malaria)."
     ],
     "keyDiagnosticFindings": [
@@ -613,27 +694,32 @@
       "RDT",
       "CBC",
       "Chemistry",
-      "BloodCultures"
+      "BloodCultures",
+      "G6PDLevel"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items (travel, prophylaxis, exposures) only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings (splenomegaly, mental status, scleral icterus).",
-      "Build a differential led by Malaria while explicitly excluding must-not-miss causes (typhoid/enteric fever).",
-      "Order a focused workup (thick/thin smears, RDT, severity labs) and interpret EKG/CXR and labs.",
-      "Commit to Malaria, assess severity, and manage with species-appropriate therapy, monitoring, consults, and disposition."
+      "Elicit the focused history, including sensitive items (travel, prophylaxis, exposures, HIV, G6PD/drug reactions) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (splenomegaly, scleral icterus, pale conjunctivae, normal mental status).",
+      "Build a differential led by Malaria with typhoid/enteric fever as the genuine competing diagnosis, and name mechanisms of severe falciparum disease.",
+      "Order a focused workup (thick/thin smears, falciparum-specific RDT, hemolysis and severity labs, cultures, G6PD) and interpret the long-QT EKG and CXR.",
+      "Commit to SEVERE falciparum malaria, treat with IV artesunate, correct electrolytes/glucose, avoid primaquine/sulfa given G6PD, consult ID, and arrange safe discharge with follow-up."
     ],
     "commonPitfalls": [
-      "Chloroquine monotherapy for falciparum from a resistant region",
+      "Treating severe falciparum with oral therapy or chloroquine monotherapy from a resistant region",
+      "Giving primaquine or a sulfa drug in a G6PD-deficient patient",
+      "Stacking a QT-prolonging antimalarial on a long QT without correcting electrolytes",
       "Ruling out malaria on a single negative smear without repeating"
     ],
     "managementPearls": [
-      "Confirm species/parasitemia and assess severity first",
-      "Artemisinin-based combination therapy for uncomplicated falciparum"
+      "Classify severity first; severe falciparum gets IV artesunate, not oral ACT",
+      "Correct hypokalemia/hypoglycemia and monitor QTc given drug- and electrolyte-related QT prolongation"
     ],
     "criticalHistoryItems": [
       "travel_history",
-      "malaria_prophylaxis"
+      "malaria_prophylaxis",
+      "pmh_comorbid",
+      "g6pd_drug_reaction"
     ],
     "criticalExamItems": [
       "assess_splenomegaly",
@@ -644,25 +730,25 @@
       "Rapid diagnostic test (RDT) for malaria antigen"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+      "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) from hypokalemia plus QT-prolonging medications — correct K+/Mg2+ and avoid stacking QT-prolonging antimalarials without monitoring.",
       "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria)."
     ],
     "criticalManagementItems": [
-      "Confirm species/parasitemia and assess severity first",
-      "Artemisinin-based combination therapy for uncomplicated falciparum"
+      "Confirm species/parasitemia and classify severity first",
+      "IV artesunate with ICU/monitored admission for SEVERE falciparum (not oral ACT alone)"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+      "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) from hypokalemia plus QT-prolonging medications — correct K+/Mg2+ and avoid stacking QT-prolonging antimalarials without monitoring.",
       "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria)."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia with an otherwise normal tracing; document the baseline QTc before QT-prolonging antimalarials.",
+      "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) from hypokalemia plus QT-prolonging medications — correct K+/Mg2+ and avoid stacking QT-prolonging antimalarials without monitoring.",
       "Clear lung fields with no consolidation or effusion; new bilateral infiltrates would indicate malaria-associated ARDS (severe malaria)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "The EKG here is the patient's OWN study: name the long QT, then judge its therapeutic relevance before choosing an antimalarial.",
       "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "State pertinent negatives, not just positives — a clear CXR is a baseline pertinent negative for malaria-associated ARDS."
     ]
   },
   "communicationScoring": {
@@ -677,7 +763,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (e.g., HIV status, drug reactions)",
         "points": 1
       },
       {
@@ -692,8 +778,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read (long QT) plus screening CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

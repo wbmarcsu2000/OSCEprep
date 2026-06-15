@@ -2,31 +2,34 @@
   "id": "syncope-05",
   "category": "Syncope",
   "difficulty": "hard",
-  "title": "Collapse with breathlessness",
+  "title": "Collapse and breathlessness in a woman on chemotherapy",
   "diagnosis": "Pulmonary embolism",
   "chart": {
     "ageSex": "60F",
-    "cc": "Fainted, now short of breath",
-    "oneLiner": "60F presents after a syncopal episode and now has persistent breathlessness and tachycardia; she has been largely immobile after a recent injury.",
+    "cc": "Fainted, now short of breath with chest pain",
+    "oneLiner": "60F with metastatic breast cancer on anthracycline-based chemotherapy and tamoxifen, recently immobile in a below-knee cast after an ankle fracture, presents after a brief exertional syncopal episode and now has persistent dyspnea, pleuritic chest pain, tachycardia, and hypoxia. Troponin and BNP are elevated and she takes a thiazide.",
     "vitals": {
-      "BP": "104/68",
-      "HR": "118",
+      "BP": "102/66",
+      "HR": "120",
       "RR": "26",
       "Temp": "37.3°C",
-      "SpO2": "89% RA"
+      "SpO2": "88% RA"
     },
     "timer": 180
   },
-  "opening": "I passed out, and now I can't catch my breath and my heart is racing.",
-  "patientFile": "PERSONA: 60-year-old woman, breathless and anxious. Cooperative.\n\nHPI: Brief syncope while walking to the bathroom; on coming around she felt very short of breath with a racing heart and some right-sided pleuritic chest discomfort. Largely immobile for 2 weeks with a leg cast after an ankle fracture (only if asked about recent immobility/injury). Mild right calf swelling above the cast (if asked/examined). History of breast cancer on treatment (hypercoagulable; only if asked). NO clear vasovagal prodrome.\nPMH: breast cancer (on chemotherapy), recent ankle fracture. MEDS: chemotherapy regimen, acetaminophen. SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tachypneic, mild distress.\n- Vitals: BP 104/68, HR 118, RR 26, 37.3°C, SpO2 89% RA.\n- Cardiac: tachycardic, regular; loud P2 if specifically auscultated; JVP mildly elevated if examined.\n- Lungs: clear bilaterally.\n- Extremities: right calf (above cast) swollen and tender if examined; left normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the immobility, cast, calf symptoms, or cancer unless asked about recent immobility/injury, leg symptoms, or cancer history.\n- The calf findings, loud P2, and JVP are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I passed out walking to the bathroom, and now I can't catch my breath, my heart is pounding, and my chest hurts when I breathe.",
+  "patientFile": "PERSONA: 60-year-old woman, visibly breathless and anxious, speaking in short sentences. Cooperative but frightened.\n\nHPI: While walking to the bathroom she felt suddenly lightheaded and briefly blacked out for a few seconds, then came around on the floor with no confusion and no tongue-biting or incontinence. Since then she has had persistent shortness of breath, a racing heart, and a sharp right-sided chest pain that is WORSE with deep breaths (pleuritic). NO crushing/pressure chest pain radiating to the arm or jaw, NO diaphoresis or nausea in the classic anginal sense (only mention these as negatives if asked). NO warning before the faint — no nausea, sweating, tunnel vision, or feeling hot (i.e., NO vasovagal prodrome; reveal only if asked about warning symptoms). She has been mostly off her feet for about 2 weeks in a below-knee cast after slipping and breaking her right ankle. Over the last day the right calf above the cast has felt swollen and achy (reveal only if asked about leg symptoms or examined).\nPMH: metastatic breast cancer (on active treatment), hypertension, the recent right ankle fracture, mild chronic kidney disease. NO known coronary disease, NO prior clots that she recalls.\nMEDS (reveal individually only when asked about medications or a specific drug): doxorubicin-based chemotherapy (an anthracycline) ongoing; tamoxifen daily; hydrochlorothiazide for blood pressure; acetaminophen for the ankle. NO anticoagulant, NO aspirin. ALLERGIES: none.\nSOCIAL: lifelong nonsmoker, rare alcohol, lives with her husband who can help at home. Worried about being a burden.\nFAMILY: a brother had a 'blood clot in the lung' in his 50s (reveal only if asked about family history of clots).\nROS: no fever or cough, no hemoptysis (reveal as negative if asked), no recent surgery other than the cast, no long flights. Mild fatigue from chemo.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tachypneic, mild distress, speaking in short sentences; not cyanosed centrally.\n- Vitals: BP 102/66, HR 120, RR 26, 37.3°C, SpO2 88% RA (rising to ~94% on supplemental oxygen if repeated after O2).\n- Cardiac: tachycardic, regular; a LOUD/accentuated P2 (loud pulmonic second sound) if specifically auscultated; no friction rub; PMI not displaced.\n- Neck: JVP mildly elevated (~8–10 cm) if examined; no pulsus paradoxus appreciated; carotid upstrokes normal.\n- Lungs: clear to auscultation bilaterally, no crackles or wheeze (a clear chest despite marked hypoxemia).\n- Extremities: right calf ABOVE the cast is swollen and tender with mild pitting; left leg normal; distal pulses intact and symmetric, foot warm.\n- No focal neuro deficit; alert and oriented.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the immobility, the cast, the calf swelling, the cancer, the chemo/tamoxifen, the thiazide, or the brother's clot unless the relevant question is asked (recent immobility/injury, leg symptoms, cancer history, specific medications, family history of clots).\n- The loud P2, elevated JVP, and calf findings are revealed ONLY if those exams are performed.\n- Distinguish the absence of a vasovagal prodrome and the absence of classic crushing anginal pain only when asked the relevant question.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 100 — normal.",
-      "Troponin": "Mildly elevated (right heart strain).",
-      "BNP": "Elevated (RV strain).",
-      "Ddimer": "Markedly elevated (low specificity given cancer/immobility; pretest probability is high).",
-      "ABG": "Hypoxemia with respiratory alkalosis.",
-      "CTPE": "CT pulmonary angiogram: large bilateral pulmonary emboli with RV enlargement (RV/LV ratio increased) — submassive PE."
+      "Glucose": "Fingerstick glucose 96 mg/dL — normal; excludes hypoglycemia as a cause of the collapse.",
+      "Troponin": "High-sensitivity troponin elevated at 78 ng/L (upper limit ~14 ng/L) and stable on repeat — a flat (non-rising) pattern favoring RV strain from acute cor pulmonale over an evolving type-1 MI, though anthracycline cardiotoxicity is a confounder.",
+      "BNP": "BNP elevated at 540 pg/mL — reflects acute right ventricular strain (and a marker of poorer prognosis in PE); the patient has no prior heart failure.",
+      "Ddimer": "D-dimer markedly elevated at 6.2 µg/mL FEU — expected to be high and NON-specific given active cancer, immobility, and the recent fracture; with a high pretest probability a positive D-dimer adds nothing and a (hypothetical) normal value would NOT be reassuring enough to defer imaging.",
+      "CBC": "Hgb 9.8 g/dL (chemotherapy-related anemia), WBC 3.2 ×10⁹/L with ANC 1.1 (mild chemo-induced neutropenia — relevant to infection risk and to bleeding/transfusion planning), platelets 96 ×10⁹/L (mild thrombocytopenia — bears on anticoagulation and any thrombolysis decision).",
+      "BMP": "Na 129 mmol/L (mild hyponatremia, consistent with her thiazide), K 4.0, Cl 96, HCO3 22, BUN 28, Creatinine 1.4 mg/dL (baseline ~1.2 — mild CKD with a small acute bump; affects contrast and anticoagulant dosing). Calculated anion gap = Na 129 − (Cl 96 + HCO3 22) = 129 − 118 = 11 (normal).",
+      "ABG": "On room air: pH 7.49, PaCO2 30 mmHg, PaO2 56 mmHg, HCO3 22 — acute respiratory alkalosis with hypoxemia and a widened A–a gradient, the classic gas pattern of acute PE.",
+      "Lactate": "Lactate 2.6 mmol/L — mildly elevated, reflecting early hypoperfusion/RV strain; trend it as a marker of deterioration toward shock.",
+      "CTPE": "CT pulmonary angiogram: large saddle and bilateral lobar/segmental pulmonary emboli with RV enlargement (RV/LV diameter ratio ~1.3), straightening of the interventricular septum, and reflux of contrast into the IVC — features of right heart strain. No pericardial effusion, no aortic dissection, no consolidation. Findings of submassive (intermediate-risk) PE."
     }
   },
   "images": {
@@ -35,31 +38,35 @@
       "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Massive-bilateral-pulmonary-embolus-2.jpeg",
       "source": "https://litfl.com/ecg-changes-in-pulmonary-embolism/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
-      "verify": "From the LITFL 'ECG Changes in Pulmonary Embolism' library page — download an example tracing that matches: Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acut … and self-host with credit to litfl.com.",
+      "integrated": true,
+      "litflStudyN": 7,
+      "findings": "Sinus tachycardia at ~120 bpm with an S1Q3T3 pattern and T-wave inversions in the right precordial leads V1–V3 (and inferior leads) — acute right heart strain; incomplete RBBB may be present; no ST-elevation in any coronary territory.",
+      "verify": "From the LITFL 'ECG Changes in Pulmonary Embolism' / right heart strain library — use a tracing that genuinely shows sinus tachycardia with S1Q3T3 and right precordial (V1–V3) T-wave inversion. Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
+      "imageDescription": "Sinus tachycardia with S1Q3T3 and right heart strain pattern (T-wave inversions V1–V3); no ST-elevation.",
       "searchTerms": [
-        "12-lead EKG Sinus tachycardia; S1Q3T3 and/or"
+        "S1Q3T3 right heart strain ECG pulmonary embolism",
+        "anterior T wave inversion right ventricular strain ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 56-year-old woman presents with sudden breathlessness, pleuritic chest pain, and a brief fainting episode."
+      "clinicalVignette": "A breathless, tachycardic woman who briefly fainted and has pleuritic chest pain and hypoxia."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Often clear — a clear film with marked hypoxemia is itself a clue toward PE.",
+      "findings": "Essentially clear lung fields with no consolidation, effusion, pneumothorax, or cardiomegaly — a near-clear film despite marked hypoxemia, itself a clue toward PE; importantly no widened mediastinum to suggest dissection and no large effusion to suggest tamponade.",
       "verify": "Pick a CC normal/near-normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "Often clear — a clear film with marked hypoxemia is itself a clue toward PE.",
+      "imageDescription": "Essentially clear film; no consolidation, effusion, pneumothorax, cardiomegaly, or widened mediastinum.",
       "searchTerms": [
-        "chest radiograph Often clear clear film"
+        "normal PA chest radiograph clear lung fields",
+        "normal chest x-ray no effusion no cardiomegaly"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 60-year-old man with acute breathlessness and marked hypoxemia has a chest film to look for a cause."
+      "clinicalVignette": "A hypoxic, breathless patient has a chest film that looks deceptively clean."
     }
   },
   "revealKeys": [
@@ -67,63 +74,81 @@
     "Troponin",
     "BNP",
     "Ddimer",
+    "CBC",
+    "BMP",
     "ABG",
+    "Lactate",
     "CTPE",
     "ekg",
     "cxr"
   ],
   "essential": [
     "ekg",
-    "CTPE"
+    "CTPE",
+    "Troponin"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this syncope (note your leading diagnosis).",
-      "rubric": "Pulmonary embolism (leading & CANT-MISS,9). Cardiac arrhythmia (CANT-MISS,4). Acute coronary syndrome (CANT-MISS,3). Hemorrhage/hypovolemia (CANT-MISS,3). Vasovagal (less likely) (core,2). Connects syncope + dyspnea + hypoxia + immobility/cancer to PE (core,4).",
-      "idealAnswer": "Leading diagnosis: Pulmonary embolism. Must-not-miss diagnoses to exclude: Cardiac arrhythmia; Acute coronary syndrome; Hemorrhage/hypovolemia. Also reasonable: Vasovagal (less likely).",
+      "prompt": "Based on your history and physical, give your differential for this syncope-with-dyspnea-and-chest-pain (note your leading diagnosis). She has elevated troponin and BNP and is on anthracycline chemotherapy, so explicitly say how you separate a pulmonary embolism from an acute coronary syndrome. Also name three mechanisms that put THIS patient at high risk for venous thromboembolism.",
+      "rubric": "Pulmonary embolism (leading & CANT-MISS,7). Acute coronary syndrome / NSTEMI — genuine competitor given the elevated troponin and anthracycline cardiotoxicity (CANT-MISS,4). Pericardial tamponade / malignant effusion — competitor for hypotension + elevated JVP + tachycardia (CANT-MISS,2). Cardiac arrhythmia (CANT-MISS,2). Aortic dissection / hemorrhage-hypovolemia (CANT-MISS,1). Vasovagal (less likely — no prodrome) (core,1). Separates PE from ACS using pleuritic (not pressure) pain, hypoxia with a clear chest, RV-strain pattern, and a flat rather than rising troponin (core,4). Names three VTE-risk mechanisms — e.g., cancer-associated hypercoagulability, immobility from the cast/fracture, tamoxifen as a prothrombotic drug, and a positive family history (core,4). PENALTY: anchoring on ACS and missing PE, or attributing the troponin solely to chemo cardiotoxicity (-3).",
+      "idealAnswer": "Leading diagnosis: Pulmonary embolism (submassive). The hardest competitor is acute coronary syndrome / NSTEMI — she has an elevated troponin and is on an anthracycline (doxorubicin) that itself causes cardiotoxicity — but her pain is PLEURITIC rather than crushing, she is profoundly hypoxic with a CLEAR chest, the troponin is elevated-but-flat (RV strain) rather than rising in a coronary pattern, and the EKG shows right heart strain rather than a coronary territory. Other must-not-miss causes: pericardial tamponade/malignant effusion (hypotension + raised JVP + tachycardia), a cardiac arrhythmia, and aortic dissection or hemorrhage/hypovolemia; vasovagal is unlikely with no prodrome. Three mechanisms making her high-risk for VTE: (1) active cancer-associated hypercoagulability, (2) immobility from the below-knee cast and recent ankle fracture, and (3) tamoxifen, a prothrombotic agent — with a positive family history of PE as a further factor.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Pulmonary embolism",
-            "points": 9
+            "points": 7
           },
           {
-            "item": "Cardiac arrhythmia",
+            "item": "Acute coronary syndrome / NSTEMI (competitor given troponin + anthracycline)",
             "points": 4
           },
           {
-            "item": "Acute coronary syndrome",
-            "points": 3
+            "item": "Pericardial tamponade / malignant effusion",
+            "points": 2
           },
           {
-            "item": "Hemorrhage/hypovolemia",
-            "points": 3
+            "item": "Cardiac arrhythmia",
+            "points": 2
+          },
+          {
+            "item": "Aortic dissection / hemorrhage-hypovolemia",
+            "points": 1
           }
         ],
         "coreActions": [
           {
-            "item": "Vasovagal (less likely)",
-            "points": 2
+            "item": "Vasovagal (less likely — no prodrome)",
+            "points": 1
           },
           {
-            "item": "Connects syncope + dyspnea + hypoxia + immobility/cancer to PE",
+            "item": "Separates PE from ACS using pleuritic pain, clear-chest hypoxia, RV-strain EKG, and a flat troponin",
+            "points": 4
+          },
+          {
+            "item": "Names three VTE-risk mechanisms (cancer hypercoagulability, immobility/cast, tamoxifen, family history)",
             "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on ACS and misses PE, or blames the troponin solely on chemo cardiotoxicity",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Acute coronary syndrome / NSTEMI",
+        "Pericardial tamponade / malignant effusion",
         "Cardiac arrhythmia",
-        "Acute coronary syndrome",
-        "Hemorrhage/hypovolemia"
+        "Aortic dissection / hemorrhage-hypovolemia"
       ],
       "acceptableAlternatives": [
-        "Vasovagal (less likely)"
+        "Vasovagal (less likely — no prodrome)"
       ]
     },
     {
@@ -131,9 +156,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want? (Consider pretest probability.)",
-      "rubric": "EKG (core,3). CT pulmonary angiogram (CANT-MISS,6). Troponin and BNP for RV strain (3). CXR (1). ABG (1). Recognizes high pretest probability — proceed to imaging rather than relying on D-dimer (1). PENALTY: relying on a normal D-dimer to exclude PE when pretest probability is high (-3).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; Troponin; BNP; D-dimer; ABG; CTPE.",
+      "prompt": "What initial workup do you want? Consider pretest probability and that she has cancer, mild CKD, and a low platelet count.",
+      "rubric": "CT pulmonary angiogram — imaging of choice given high pretest probability (CANT-MISS,6). EKG (core,3). High-sensitivity troponin with a SERIAL/repeat value and BNP to separate RV strain from evolving MI (core,3). CBC (anemia, neutropenia, thrombocytopenia before anticoagulation) and BMP/creatinine (renal dosing, hyponatremia) (core,3). ABG, lactate, CXR (core,2). Recognizes a positive D-dimer is non-specific here and a high pretest probability mandates imaging regardless (core,2). Bedside echo for RV strain/effusion if available (bonus,2). PENALTY: relying on D-dimer to rule PE in/out when pretest probability is high (-3); giving IV contrast without checking renal function in CKD (-2).",
+      "idealAnswer": "Order: EKG; high-sensitivity troponin with a repeat/serial value plus BNP; CBC (her anemia, neutropenia, and low platelets all matter before anticoagulation); BMP/creatinine (renal dosing and her hyponatremia); ABG; lactate; CXR; and the definitive test — a CT pulmonary angiogram (check renal function first given CKD, but do not delay it). D-dimer is already going to be high from cancer/immobility/fracture and is non-discriminating; with a high pretest probability proceed straight to CTPA. A bedside echo looking for RV dilation/strain and to exclude a pericardial effusion is a useful adjunct.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,42 +170,51 @@
         "coreActions": [
           {
             "item": "EKG",
-            "points": 3
-          },
-          {
-            "item": "CXR",
             "points": 2
           },
           {
-            "item": "Glucose",
+            "item": "Serial high-sensitivity troponin + BNP",
             "points": 2
           },
           {
-            "item": "Troponin",
-            "points": 2
+            "item": "CBC (anemia/neutropenia/thrombocytopenia)",
+            "points": 1
           },
           {
-            "item": "BNP",
-            "points": 2
-          },
-          {
-            "item": "D-dimer",
-            "points": 2
+            "item": "BMP / creatinine (renal dosing, hyponatremia)",
+            "points": 1
           },
           {
             "item": "ABG",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "CTPE",
+            "item": "Lactate",
+            "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 1
+          },
+          {
+            "item": "Recognizes D-dimer is non-specific and high pretest probability mandates imaging",
             "points": 2
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Bedside echo for RV strain / pericardial effusion",
+            "points": 2
+          }
+        ],
         "penalties": [
           {
-            "item": "relying on a normal D-dimer to exclude PE when pretest probability is high",
+            "item": "Relying on a D-dimer to include/exclude PE when pretest probability is high",
             "points": -3
+          },
+          {
+            "item": "Giving IV contrast without checking renal function in CKD",
+            "points": -2
           }
         ]
       },
@@ -188,10 +222,12 @@
         "CT pulmonary angiogram"
       ],
       "optionalTests": [
-        "EKG"
+        "EKG",
+        "Bedside echo for RV strain / pericardial effusion"
       ],
       "contraindicatedTests": [
-        "relying on a normal D-dimer to exclude PE when pretest probability is high"
+        "Relying on a D-dimer to include/exclude PE when pretest probability is high",
+        "Giving IV contrast without checking renal function in CKD"
       ],
       "orderSensitiveActions": []
     },
@@ -201,46 +237,37 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia; possible S1Q3T3 / right heart strain; no acute STEMI. CREDIT: rate & rhythm (sinus tachy) (6); recognizes right heart strain / S1Q3T3 if present (5); excludes STEMI (2); systematic read (2). PENALTY: calling a STEMI (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and say how they help you choose between pulmonary embolism and an acute coronary syndrome.",
+      "rubric": "Findings = sinus tachycardia (~120) with an S1Q3T3 pattern and right precordial (V1–V3) T-wave inversions — acute right heart strain; no ST-elevation in any coronary territory. CREDIT: rate & rhythm/sinus tachycardia (4); recognizes S1Q3T3 and/or right-ventricular strain pattern with V1–V3 T-inversion (6); states there is NO STEMI / no single coronary territory, so the EKG supports PE over an acute coronary occlusion (3); systematic read (2). PENALTY: misreading the anterior T-inversions as an anterior STEMI/Wellens and activating the cath lab (-3).",
       "keyFindings": [
-        "recognizes right heart strain / S1Q3T3 if present",
-        "excludes STEMI",
+        "sinus tachycardia",
+        "S1Q3T3 / right ventricular strain with V1–V3 T-wave inversion",
+        "no ST-elevation / no single coronary territory — supports PE over ACS",
         "systematic read"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI."
+        "Sinus tachycardia with an S1Q3T3 pattern and right precordial (V1–V3) T-wave inversions indicating acute right heart strain; no ST-elevation in any coronary territory."
       ],
       "commonMistakes": [
-        "calling a STEMI"
+        "calling the anterior T-wave inversions an anterior STEMI or Wellens syndrome",
+        "attributing the tachycardia to a primary arrhythmia"
       ],
-      "idealAnswer": "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
+      "idealAnswer": "Sinus tachycardia at ~120 bpm with an S1Q3T3 pattern (S wave in I, Q wave and inverted T in III) and T-wave inversions across the right precordial leads V1–V3 — a right-ventricular strain pattern from acute cor pulmonale. There is NO ST-elevation in a coronary territory, so this EKG points toward acute pulmonary embolism and away from an acute coronary occlusion, even though her troponin is up. The right precordial T-inversions of RV strain mimic anterior ischemia — do not mistake them for an anterior STEMI/Wellens and do not activate the cath lab.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
-            "points": 5
-          }
+          "Sinus tachycardia with an S1Q3T3 pattern and right precordial (V1–V3) T-wave inversions indicating acute right heart strain; no ST-elevation in any coronary territory."
         ],
         "coreActions": [
-          {
-            "item": "recognizes right heart strain / S1Q3T3 if present",
-            "points": 5
-          },
-          {
-            "item": "excludes STEMI",
-            "points": 2
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "sinus tachycardia",
+          "S1Q3T3 / right ventricular strain with V1–V3 T-wave inversion",
+          "no ST-elevation / no single coronary territory — supports PE over ACS",
+          "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "calling a STEMI",
+            "label": "misreads right-precordial strain T-inversions as an anterior STEMI/Wellens and activates the cath lab",
             "points": -3
           }
         ]
@@ -253,40 +280,31 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear/near-clear film. CREDIT: identifies no consolidation/effusion/pneumothorax (6); notes the clear-film-with-hypoxemia clue toward PE (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = essentially clear/near-clear film with no consolidation, effusion, pneumothorax, cardiomegaly, or widened mediastinum. CREDIT: identifies a normal/near-normal film with no consolidation/effusion/pneumothorax (6); notes the deliberate pertinent negatives — a clear film with marked hypoxemia is itself a clue toward PE, and no widened mediastinum (dissection) or large effusion (tamponade) (4). PENALTY: inventing pathology on a clear film (-2).",
       "keyFindings": [
-        "identifies no consolidation/effusion/pneumothorax",
-        "notes the clear-film-with-hypoxemia clue toward PE"
+        "no consolidation/effusion/pneumothorax/cardiomegaly",
+        "clear film with marked hypoxemia is a clue toward PE; no widened mediastinum or large effusion"
       ],
       "criticalFindings": [
-        "Often clear — a clear film with marked hypoxemia is itself a clue toward PE."
+        "Essentially clear film; a near-normal chest radiograph with marked hypoxemia is itself a clue toward PE, with no widened mediastinum (against dissection) and no large effusion (against tamponade)."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing an infiltrate or effusion on a clear film"
       ],
-      "idealAnswer": "Often clear — a clear film with marked hypoxemia is itself a clue toward PE.",
+      "idealAnswer": "Essentially clear lung fields with no consolidation, effusion, pneumothorax, or cardiomegaly. The key teaching point is the mismatch: a near-normal film in a patient who is markedly hypoxic is itself a clue toward pulmonary embolism. The pertinent negatives also help exclude competitors — there is no widened mediastinum to suggest aortic dissection and no large pericardial effusion to suggest tamponade.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Often clear — a clear film with marked hypoxemia is itself a clue toward PE.",
-            "points": 6
-          }
+          "Essentially clear film; a near-normal chest radiograph with marked hypoxemia is itself a clue toward PE, with no widened mediastinum (against dissection) and no large effusion (against tamponade)."
         ],
         "coreActions": [
-          {
-            "item": "identifies no consolidation/effusion/pneumothorax",
-            "points": 6
-          },
-          {
-            "item": "notes the clear-film-with-hypoxemia clue toward PE",
-            "points": 4
-          }
+          "no consolidation/effusion/pneumothorax/cardiomegaly",
+          "clear film with marked hypoxemia is a clue toward PE; no widened mediastinum or large effusion"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing pathology",
+            "label": "calls the study abnormal / invents pathology",
             "points": -2
           }
         ]
@@ -296,9 +314,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the CTPE and RV strain markers, what is your diagnosis and risk category?",
-      "rubric": "Submassive (intermediate-risk) pulmonary embolism (6). Uses RV enlargement + elevated troponin/BNP, with syncope as a high-risk feature, to stratify (4).",
-      "idealAnswer": "Submassive (intermediate-risk) pulmonary embolism. Risk-stratified by RV enlargement on the CT pulmonary angiogram plus elevated troponin and BNP (right heart strain), with syncope itself a high-risk feature — the patient is normotensive, placing her in the intermediate- rather than high-risk category.",
+      "prompt": "Given the CT pulmonary angiogram, the EKG, and the strain markers, commit to a diagnosis and risk category. State the discriminating evidence that resolved the PE-vs-ACS-vs-tamponade fork and any residual uncertainty.",
+      "rubric": "Submassive (intermediate-risk) pulmonary embolism (6). Integrates the CTPA (saddle/bilateral emboli with RV/LV ratio ~1.3 and septal straightening), the EKG right heart strain (S1Q3T3, V1–V3 T-inversion), and elevated-but-flat troponin + BNP, with syncope as a high-risk feature, to risk-stratify; she is normotensive → intermediate- not high-risk. Resolves the fork: a flat troponin with a strain EKG and a clear CT coronary picture argues against type-1 ACS (chemo cardiotoxicity remains a background confounder), and the CT shows no pericardial effusion, excluding tamponade. Names the residual uncertainty/discriminator (e.g., intermediate-high vs intermediate-low hinges on the bedside echo for RV dysfunction) (4).",
+      "idealAnswer": "Submassive (intermediate-risk) pulmonary embolism. The CT pulmonary angiogram shows saddle and bilateral emboli with RV enlargement (RV/LV ~1.3) and septal straightening; the patient's own EKG shows right heart strain (S1Q3T3 with V1–V3 T-wave inversion); troponin and BNP are elevated, marking RV strain; and syncope is itself a high-risk feature — yet she remains normotensive, so this is intermediate- rather than high-risk PE. The PE-vs-ACS fork is resolved because the troponin is elevated-but-flat with a strain EKG rather than a rising coronary pattern (anthracycline cardiotoxicity stays a background confounder for the troponin); the tamponade competitor is excluded by no pericardial effusion on CT despite the raised JVP. Residual uncertainty: whether she is intermediate-LOW vs intermediate-HIGH risk hinges on confirming RV dysfunction (bedside echo) and trending troponin/lactate — that distinction drives how closely she is monitored and whether rescue thrombolysis is staged.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -311,70 +329,86 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH VTE Management: anticoagulation, DOAC preferred (CANT-MISS,6); risk-stratify, recognize syncopal PE as higher-risk (4); PERT consult (3); thrombolysis (tPA) if high-risk/unstable (5); supportive care – O2, cautious IVF, norepinephrine (3); IVC filter only if AC contraindicated (2). PENALTY: discharging a syncopal PE (-3); IVC filter instead of AC without contraindication (-3).",
-      "idealAnswer": "PE causing syncope implies at least intermediate-high risk. Anticoagulate unless contraindicated – DOAC preferred. Risk-stratify; activate PERT. Systemic thrombolysis (tPA) for high-risk/hemodynamically unstable PE. Supportive O2, cautious IVF, norepinephrine for shock. IVC filter only if anticoagulation contraindicated.",
+      "prompt": "What is your management plan? Include your anticoagulant choice in a cancer patient with mild CKD and a platelet count of 96, your monitoring/disposition decision, and why this patient cannot be safely discharged.",
+      "rubric": "Per MGH VTE Management: anticoagulation now unless contraindicated — in active cancer a LMWH or an oral factor Xa inhibitor (apixaban/rivaroxaban) is preferred over a vitamin-K antagonist (CANT-MISS,6); risk-stratify and recognize syncopal/RV-strain PE as intermediate-high risk (CANT-MISS,4); activate PERT / consult pulmonary-vascular or hematology-oncology (3); plan for rescue systemic thrombolysis (tPA) or catheter-directed therapy if she deteriorates to high-risk/hemodynamic instability, weighing her thrombocytopenia and bleeding risk (4); supportive care — oxygen, cautious IV fluids, norepinephrine first-line if shock (3); admit to a monitored/step-down or ICU bed (3); NOT safe for discharge — syncope, RV strain, and elevated biomarkers make her intermediate-high risk requiring inpatient monitoring; arrange cancer-VTE follow-up and bleeding precautions given platelets 96 and neutropenia (2). PENALTY: discharging a syncopal/RV-strain PE (-4); choosing an IVC filter instead of anticoagulation without a contraindication (-3); full-dose thrombolysis in a normotensive patient with thrombocytopenia without instability (-2).",
+      "idealAnswer": "Start anticoagulation immediately unless contraindicated. In active cancer the preferred agents are LMWH or an oral factor Xa inhibitor (apixaban or rivaroxaban) over warfarin; given her mild CKD dose-adjust and check renal function, and given platelets 96 use full-dose with caution and monitor. Risk-stratify: syncope plus RV enlargement and elevated troponin/BNP make this intermediate-HIGH risk despite normotension. Activate the PERT (or consult pulmonary-vascular/heme-onc). Do NOT give full-dose systemic thrombolysis now — she is normotensive and thrombocytopenic — but plan rescue tPA or catheter-directed therapy if she becomes hypotensive/unstable. Supportive care: supplemental oxygen, cautious IV fluids (avoid over-filling the strained RV), and norepinephrine as the first-line pressor for shock. Admit to a monitored step-down/ICU bed with telemetry and serial vitals/troponin/lactate. She is NOT safe for discharge or an outpatient PE pathway: syncope, RV strain, and positive biomarkers place her in the intermediate-high group needing inpatient monitoring. Reserve an IVC filter for a true contraindication to anticoagulation. Arrange cancer-associated-VTE follow-up, counsel on bleeding precautions (platelets 96, neutropenia), and coordinate with her oncologist.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Anticoagulation (DOAC preferred)",
+            "item": "Anticoagulation now — LMWH or oral Xa inhibitor preferred in cancer",
             "points": 6
           },
           {
-            "item": "Risk-stratify PE severity",
+            "item": "Risk-stratify — syncopal/RV-strain PE is intermediate-high risk",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Thrombolysis (tPA) if high-risk/unstable",
-            "points": 5
-          },
-          {
-            "item": "PERT consult",
+            "item": "Activate PERT / consult pulmonary-vascular or heme-onc",
             "points": 3
           },
           {
-            "item": "Supportive care (O2, IVF, norepinephrine)",
+            "item": "Plan rescue thrombolysis (tPA) or catheter-directed therapy if she deteriorates",
+            "points": 4
+          },
+          {
+            "item": "Supportive care (oxygen, cautious IV fluids, norepinephrine for shock)",
             "points": 3
           },
           {
-            "item": "Admit/monitor",
+            "item": "Admit to monitored step-down / ICU bed",
+            "points": 3
+          },
+          {
+            "item": "Not safe for discharge: arrange inpatient monitoring, cancer-VTE follow-up, and bleeding precautions (platelets 96, neutropenia)",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "IVC filter only if AC contraindicated",
+            "item": "IVC filter only if anticoagulation truly contraindicated",
             "points": 2
           }
         ],
         "penalties": [
           {
-            "item": "Discharging a syncopal PE",
+            "item": "Discharging a syncopal / RV-strain PE",
+            "points": -4
+          },
+          {
+            "item": "IVC filter instead of anticoagulation without a contraindication",
             "points": -3
+          },
+          {
+            "item": "Full-dose thrombolysis in a normotensive, thrombocytopenic patient without instability",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Anticoagulation (DOAC preferred)",
-        "Risk-stratify PE severity"
+        "Anticoagulation now — LMWH or oral Xa inhibitor preferred in cancer",
+        "Risk-stratify — syncopal/RV-strain PE is intermediate-high risk"
       ],
       "optionalActions": [
-        "Thrombolysis (tPA) if high-risk/unstable",
-        "PERT consult",
-        "Supportive care (O2, IVF, norepinephrine)",
-        "Admit/monitor",
-        "IVC filter only if AC contraindicated"
+        "Activate PERT / consult pulmonary-vascular or heme-onc",
+        "Plan rescue thrombolysis (tPA) or catheter-directed therapy if she deteriorates",
+        "Supportive care (oxygen, cautious IV fluids, norepinephrine for shock)",
+        "Admit to monitored step-down / ICU bed",
+        "Not safe for discharge: arrange inpatient monitoring, cancer-VTE follow-up, and bleeding precautions (platelets 96, neutropenia)",
+        "IVC filter only if anticoagulation truly contraindicated"
       ],
       "unsafeActions": [
-        "Discharging a syncopal PE"
+        "Discharging a syncopal / RV-strain PE",
+        "IVC filter instead of anticoagulation without a contraindication",
+        "Full-dose thrombolysis in a normotensive, thrombocytopenic patient without instability"
       ],
       "consults": [
-        "PERT"
+        "PERT (Pulmonary Embolism Response Team)",
+        "Hematology/Oncology"
       ],
-      "disposition": "Admit; ICU/step-down",
+      "disposition": "Admit; monitored step-down or ICU",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "VTE Management",
@@ -384,17 +418,18 @@
   ],
   "standardizedPatient": {
     "demeanor": "anxious",
-    "emotionalState": "concerned",
+    "emotionalState": "frightened",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "cancer_prognosis",
+      "being_a_burden"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "60-year-old woman, breathless and anxious. Cooperative.",
+    "communicationStyle": "answers questions asked in short breathless sentences without volunteering diagnostic clues",
+    "affect": "60-year-old woman, breathless and frightened, speaking in short sentences. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the immobility, cast, calf symptoms, cancer, specific medications, or family clot history unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -402,18 +437,101 @@
   },
   "historyTriggers": [
     {
-      "id": "tobacco_use",
-      "category": "substance_use",
+      "id": "recent_immobility_injury",
+      "category": "hpi",
       "triggerConcepts": [
-        "smoking",
-        "tobacco",
-        "cigarettes",
-        "do you smoke"
+        "recent immobility",
+        "bed rest",
+        "cast",
+        "broken ankle",
+        "fracture",
+        "long flight",
+        "recent surgery",
+        "off your feet"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "leg_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "leg swelling",
+        "calf pain",
+        "leg pain",
+        "swollen leg",
+        "calf swelling"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cancer_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "cancer",
+        "malignancy",
+        "tumor",
+        "oncology",
+        "breast cancer"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_clot_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history of clots",
+        "blood clot in the family",
+        "relatives clot",
+        "family history",
+        "inherited clotting"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "syncope_prodrome",
+      "category": "hpi",
+      "triggerConcepts": [
+        "warning before fainting",
+        "prodrome",
+        "feel before you passed out",
+        "lightheaded warning",
+        "nausea sweating before",
+        "tongue biting",
+        "incontinence",
+        "confusion after"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "chest_pain_character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the chest pain",
+        "pleuritic",
+        "worse with breathing",
+        "crushing pressure",
+        "radiate to arm or jaw",
+        "what does the chest pain feel like"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
     },
     {
       "id": "onset",
@@ -430,53 +548,16 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "character",
-      "category": "hpi",
-      "triggerConcepts": [
-        "describe the",
-        "what does it feel like",
-        "character",
-        "quality"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "severity",
-      "category": "hpi",
-      "triggerConcepts": [
-        "how bad",
-        "severity",
-        "scale"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
       "id": "associated_symptoms",
       "category": "ros",
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "aggravating_alleviating",
-      "category": "hpi",
-      "triggerConcepts": [
-        "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
+        "anything else",
+        "cough",
+        "hemoptysis",
+        "coughing blood",
+        "fever"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -489,7 +570,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney",
+        "blood pressure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -502,7 +585,12 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "chemotherapy",
+        "tamoxifen",
+        "water pill",
+        "diuretic",
+        "blood thinner"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -515,7 +603,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior clots"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -526,7 +615,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_jvp_finding_1",
-      "finding": "Cardiac: tachycardic, regular; loud P2 if specifically auscultated; JVP mildly elevated if examined.",
+      "finding": "Neck: JVP mildly elevated (~8–10 cm) if examined; no pulsus paradoxus; carotid upstrokes normal. Cardiac: loud/accentuated P2 if specifically auscultated.",
       "revealedBy": [
         "assess_jvp"
       ],
@@ -535,14 +624,54 @@
       "normalIfNotPresent": "JVP not elevated."
     },
     {
-      "id": "assess_calf_tenderness_finding_2",
-      "finding": "Extremities: right calf (above cast) swollen and tender if examined; left normal.",
+      "id": "auscultate_aortic_area_finding_2",
+      "finding": "Cardiac: tachycardic and regular with a LOUD/accentuated P2 (loud pulmonic second sound); no friction rub; PMI not displaced.",
       "revealedBy": [
-        "assess_calf_tenderness"
+        "auscultate_aortic_area"
       ],
       "importance": "core",
       "points": 2,
+      "normalIfNotPresent": "Normal heart sounds; P2 not accentuated."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_3",
+      "finding": "Extremities: right calf ABOVE the cast is swollen and tender with mild pitting; left leg normal.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "critical",
+      "points": 3,
       "normalIfNotPresent": "No calf tenderness."
+    },
+    {
+      "id": "assess_edema_finding_4",
+      "finding": "Extremities: asymmetric right calf swelling with mild pitting above the cast; left leg normal; distal pulses intact and symmetric, foot warm.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_5",
+      "finding": "Lungs: clear to auscultation bilaterally with no crackles or wheeze — a clear chest despite marked hypoxemia.",
+      "revealedBy": [
+        "auscultate_anterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear bilaterally."
+    },
+    {
+      "id": "repeat_vitals_finding_6",
+      "finding": "Vitals: HR 120, RR 26, BP 102/66, SpO2 88% on room air, rising to ~94% on supplemental oxygen if repeated after O2 is applied.",
+      "revealedBy": [
+        "repeat_vitals"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Vitals unchanged."
     }
   ],
   "overallScoring": {
@@ -555,60 +684,73 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Pulmonary embolism",
-    "diagnosticFramework": "60F presents after a syncopal episode and now has persistent breathlessness and tachycardia; she has been largely immobile after a recent injury. The diagnosis is Pulmonary embolism, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "60F with metastatic breast cancer on anthracycline chemotherapy and tamoxifen, recently immobile in a below-knee cast after an ankle fracture, presents after a brief exertional syncope with persistent dyspnea, pleuritic chest pain, tachycardia, and hypoxia. The diagnosis is submassive (intermediate-risk) Pulmonary embolism, reached by eliciting the VTE-risk history, performing the targeted exam (loud P2, elevated JVP, asymmetric calf swelling), interpreting her own right-heart-strain EKG (S1Q3T3, V1–V3 T-inversion) and the CT pulmonary angiogram, and separating PE from the genuine competitors of NSTEMI (confounded by an elevated troponin and anthracycline cardiotoxicity) and pericardial tamponade, while integrating multi-system lab abnormalities (chemo-related anemia/neutropenia/thrombocytopenia, thiazide-related hyponatremia, mild CKD).",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: tachycardic, regular; loud P2 if specifically auscultated; JVP mildly elevated if examined.",
-      "Extremities: right calf (above cast) swollen and tender if examined; left normal."
+      "Neck: JVP mildly elevated (~8–10 cm) if examined; no pulsus paradoxus; carotid upstrokes normal. Cardiac: loud/accentuated P2 if specifically auscultated.",
+      "Cardiac: tachycardic and regular with a LOUD/accentuated P2 (loud pulmonic second sound); no friction rub; PMI not displaced.",
+      "Extremities: right calf ABOVE the cast is swollen and tender with mild pitting; left leg normal.",
+      "Extremities: asymmetric right calf swelling with mild pitting above the cast; left leg normal; distal pulses intact and symmetric, foot warm.",
+      "Lungs: clear to auscultation bilaterally with no crackles or wheeze — a clear chest despite marked hypoxemia.",
+      "Vitals: HR 120, RR 26, BP 102/66, SpO2 88% on room air, rising to ~94% on supplemental oxygen if repeated after O2 is applied."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "Troponin",
       "BNP",
       "Ddimer",
+      "CBC",
+      "BMP",
       "ABG",
+      "Lactate",
       "CTPE"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Pulmonary embolism while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Pulmonary embolism and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals — syncope with dyspnea, pleuritic chest pain, tachycardia, and hypoxia.",
+      "Elicit the focused VTE-risk history (immobility/cast, cancer, chemo/tamoxifen, family clot) and the syncope/chest-pain character only on direct questioning.",
+      "Perform the targeted exam (JVP, loud P2, asymmetric calf swelling, clear lungs, repeat vitals on O2) to reveal right-heart-strain and DVT clues.",
+      "Build a differential led by Pulmonary embolism while explicitly working through the competitors — NSTEMI (elevated troponin, anthracycline cardiotoxicity), pericardial tamponade, arrhythmia, dissection/hemorrhage.",
+      "Order a focused workup driven by high pretest probability (CTPA, serial troponin/BNP, CBC/BMP, ABG, lactate) and interpret the patient's own right-heart-strain EKG and the near-clear CXR.",
+      "Commit to submassive (intermediate-high-risk) PE and manage with cancer-appropriate anticoagulation, risk stratification, PERT activation, supportive care, monitored admission (not discharge), and a staged-thrombolysis plan accounting for her thrombocytopenia."
     ],
     "commonPitfalls": [
-      "Discharging a syncopal PE"
+      "Anchoring on NSTEMI because the troponin is elevated and blaming it on anthracycline cardiotoxicity",
+      "Relying on a D-dimer when pretest probability is already high",
+      "Misreading the right-precordial strain T-inversions as an anterior STEMI/Wellens",
+      "Discharging a syncopal / RV-strain PE on an outpatient pathway",
+      "Giving full-dose thrombolysis to a normotensive, thrombocytopenic patient"
     ],
     "managementPearls": [
-      "Anticoagulation (DOAC preferred)",
-      "Risk-stratify PE severity"
+      "Anticoagulation now — LMWH or oral Xa inhibitor preferred in cancer",
+      "Risk-stratify — syncopal/RV-strain PE is intermediate-high risk"
     ],
     "criticalHistoryItems": [],
-    "criticalExamItems": [],
+    "criticalExamItems": [
+      "assess_calf_tenderness"
+    ],
     "criticalWorkupItems": [
       "CT pulmonary angiogram"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
-      "Often clear — a clear film with marked hypoxemia is itself a clue toward PE."
+      "Sinus tachycardia with an S1Q3T3 pattern and right precordial (V1–V3) T-wave inversions indicating acute right heart strain; no ST-elevation in any coronary territory.",
+      "Essentially clear film; a near-normal chest radiograph with marked hypoxemia is itself a clue toward PE, with no widened mediastinum (against dissection) and no large effusion (against tamponade)."
     ],
     "criticalManagementItems": [
-      "Anticoagulation (DOAC preferred)",
-      "Risk-stratify PE severity"
+      "Anticoagulation now — LMWH or oral Xa inhibitor preferred in cancer",
+      "Risk-stratify — syncopal/RV-strain PE is intermediate-high risk"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
-      "Often clear — a clear film with marked hypoxemia is itself a clue toward PE."
+      "Sinus tachycardia with an S1Q3T3 pattern and right precordial (V1–V3) T-wave inversions indicating acute right heart strain; no ST-elevation in any coronary territory.",
+      "Essentially clear film; a near-normal chest radiograph with marked hypoxemia is itself a clue toward PE, with no widened mediastinum (against dissection) and no large effusion (against tamponade)."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; S1Q3T3 and/or right heart strain (T inversions V1–V3) possible; no acute STEMI.",
-      "Often clear — a clear film with marked hypoxemia is itself a clue toward PE."
+      "Sinus tachycardia with an S1Q3T3 pattern and right precordial (V1–V3) T-wave inversions indicating acute right heart strain; no ST-elevation in any coronary territory.",
+      "Essentially clear film; a near-normal chest radiograph with marked hypoxemia is itself a clue toward PE, with no widened mediastinum (against dissection) and no large effusion (against tamponade)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Right-ventricular strain (S1Q3T3 with V1–V3 T-inversion) mimics anterior ischemia — read it as cor pulmonale, not an anterior STEMI.",
+      "A near-clear chest film in a markedly hypoxic patient is itself a clue toward PE.",
+      "Use pertinent negatives on the CXR (no widened mediastinum, no large effusion) to exclude dissection and tamponade."
     ]
   },
   "communicationScoring": {
@@ -619,11 +761,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for a frightened, breathless patient",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive cancer/prognosis questions",
         "points": 1
       },
       {
@@ -638,8 +780,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG (right heart strain) + pathology-forward CXR",
     "ekgReplaced": false,
     "cxrReplaced": false,
     "backwardCompatible": true

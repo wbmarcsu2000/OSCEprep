@@ -1,66 +1,71 @@
 {
   "id": "dyspnea-09",
   "category": "Dyspnea",
-  "difficulty": "moderate",
-  "title": "Sudden chest pain and breathlessness",
+  "difficulty": "hard",
+  "title": "Sudden pleuritic chest pain and breathlessness in a young stimulant user",
   "diagnosis": "Spontaneous pneumothorax",
   "chart": {
     "ageSex": "22M",
     "cc": "Sudden chest pain and shortness of breath",
-    "oneLiner": "22M, tall and thin, presents with the abrupt onset of right-sided pleuritic chest pain and breathlessness while at rest.",
+    "oneLiner": "22M, tall and thin with asthma on chronic steroids and a history of stimulant/cocaine use, presents with the abrupt onset of right-sided pleuritic chest pain and breathlessness shortly after a night of vaping and inhaled cocaine.",
     "vitals": {
-      "BP": "128/78",
-      "HR": "104",
-      "RR": "24",
-      "Temp": "37.0°C",
-      "SpO2": "92% RA"
+      "BP": "142/86",
+      "HR": "118",
+      "RR": "26",
+      "Temp": "37.1°C",
+      "SpO2": "90% RA"
     },
     "timer": 180
   },
-  "opening": "My right side started hurting really sharply out of nowhere and now I can't seem to catch my breath.",
-  "patientFile": "PERSONA: 22-year-old man, tall and thin (lanky build), mildly anxious and breathing a little fast, holding his right chest. Cooperative.\n\nHPI: Abrupt onset about 2 hours ago, at rest while watching TV, of sharp RIGHT-sided chest pain that is worse with breathing (pleuritic) and a sensation of breathlessness. No trauma, no heavy lifting or exertion at onset. Pain does not radiate to the arm/jaw and is not pressure-like. NO fever, NO cough or purulent sputum, NO leg swelling or calf pain, NO recent long travel or immobilization, NO known heart or lung disease. Has had one similar but milder episode last year that resolved on its own. Smokes about half a pack a day (only if asked about tobacco). Recreational vaping/cannabis use occasionally (only if asked about substances). Family history: father had a 'collapsed lung' in his twenties (only if asked about family history).\nPMH: none significant; tall/thin habitus. MEDS: none. SOCIAL: smoker (half pack/day), occasional vaping/cannabis, no alcohol problem. FAMILY: father with spontaneous 'collapsed lung' in youth (if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tall, thin young man, mild respiratory distress, speaking in full sentences. Trachea midline (no deviation — this is NOT a tension pneumothorax).\n- Vitals: BP 128/78, HR 104, RR 24, 37.0°C, SpO2 92% RA.\n- Lungs: DECREASED/absent breath sounds over the RIGHT upper hemithorax, HYPERRESONANT to percussion on the right, DECREASED tactile fremitus on the right. Left lung clear with normal breath sounds.\n- Cardiac: tachycardic, regular, no murmur, no JVD; PMI not displaced. Extremities: no edema, no calf tenderness. No chest wall tenderness to palpation, no crepitus.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the smoking, vaping/cannabis, the prior episode, or the family history unless asked about tobacco/substances, prior episodes, or family history respectively.\n- Hyperresonance, decreased breath sounds, and decreased fremitus on the right are revealed ONLY if the corresponding exam is performed.\n- Trachea is MIDLINE and the patient is hemodynamically stable; if asked, there is no tracheal deviation and no hypotension (rules against tension physiology).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My right side started hurting really sharply out of nowhere and now I can't seem to catch my breath — and honestly my heart is pounding too.",
+  "patientFile": "PERSONA: 22-year-old man, tall and thin with long arms and long fingers (Marfanoid habitus), mildly anxious, breathing fast and a little jittery, holding his right chest. Cooperative but sheepish about last night's drug use.\n\nHPI: Abrupt onset about 2 hours ago, at rest, of sharp RIGHT-sided chest pain that is worse with breathing (pleuritic) and a sensation of breathlessness. The pain came on a few hours after a night out where he was vaping heavily and snorted/inhaled some cocaine (only volunteers the drug use if asked specifically about substances/drugs). No blunt trauma, no heavy lifting. Pain does NOT radiate to the arm/jaw and is not crushing/pressure-like, though his heart has been racing and pounding since the cocaine. NO fever, NO productive cough or purulent sputum (a little dry cough only), NO leg swelling or calf pain, NO recent long travel or immobilization. He has had one similar but milder episode of sudden chest pain last year that resolved on its own (only if asked about prior episodes). Smokes about half a pack a day and vapes high-THC oil daily (only if asked about tobacco/vaping). Uses cocaine recreationally a few times a month, last night by insufflation/inhalation (only if asked about recreational drugs). Family history: father had a 'collapsed lung' in his twenties and an aunt has Marfan syndrome (only if asked about family history).\nPMH: mild persistent ASTHMA (a few ED visits, never intubated); tall/marfanoid habitus; anxiety/ADHD. He is mid-way through a short course of ORAL PREDNISONE for an asthma flare this week and uses his albuterol inhaler many times a day lately. MEDS: fluticasone/salmeterol inhaler daily; albuterol — using it very frequently this week; prednisone 40 mg daily (day 3 of a 5-day burst); lisdexamfetamine (Vyvanse) for ADHD each morning; occasional ibuprofen. ALLERGIES: none. SOCIAL: tobacco half pack/day, daily high-THC vaping, recreational cocaine a few times monthly (last night), social alcohol. FAMILY: father with spontaneous 'collapsed lung' in youth; maternal aunt with Marfan syndrome (if asked).\nROS: dry cough, palpitations and the racing heart since cocaine; no fever, no hemoptysis, no leg swelling/calf pain, no syncope.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tall, thin, long-limbed young man with a high-arched palate and long fingers (arm span exceeds height), mild respiratory distress, jittery, speaking in short full sentences. Trachea MIDLINE (no deviation — this is NOT a tension pneumothorax). No subcutaneous crepitus over the neck/chest, no Hamman's crunch (argues against pneumomediastinum).\n- Vitals: BP 142/86, HR 118, RR 26, 37.1°C, SpO2 90% RA.\n- Lungs: DECREASED/absent breath sounds over the RIGHT upper hemithorax, HYPERRESONANT to percussion on the right, DECREASED tactile fremitus on the right. Left lung: scattered faint expiratory wheeze (his asthma), otherwise clear with present breath sounds.\n- Cardiac: tachycardic, regular, no murmur, no rub, no JVD; PMI not displaced. Skin warm and slightly diaphoretic. Extremities: long fingers, no edema, no calf tenderness. No chest-wall tenderness to palpation, no crepitus.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the cocaine, vaping, tobacco, prednisone burst, frequent albuterol, stimulant (Vyvanse), the prior episode, the Marfan family history, or the asthma unless asked about substances/drugs, tobacco/vaping, medications, prior episodes, family history, or past medical history respectively.\n- Hyperresonance, decreased breath sounds, decreased fremitus on the right, and the left-sided asthmatic wheeze are revealed ONLY if the corresponding exam is performed.\n- Trachea is MIDLINE, there is NO subcutaneous crepitus and NO Hamman's crunch, and the patient is normotensive-to-hypertensive (not hypotensive); if asked, there is no tracheal deviation and no hypotension (rules against tension physiology and against pneumomediastinum).\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "CBC": "WBC 8.4, Hgb 14.6, Plt 245 — within normal limits (no leukocytosis to suggest infection).",
-      "BMP": "Within normal limits.",
-      "Troponin": "Undetectable (argues against acute coronary syndrome/myocardial injury).",
-      "D-dimer": "Normal/negative (low pretest probability; argues against pulmonary embolism).",
-      "ABG": "pH 7.46, PaCO2 33, PaO2 74 on room air — mild hypoxemia with respiratory alkalosis from hyperventilation."
+      "CBC": "WBC 13.8 (mild leukocytosis, attributable to the corticosteroid burst and catecholamine demargination rather than infection — no bandemia), Hgb 15.1, Plt 268.",
+      "BMP": "Na 139, K 3.1 (HYPOKALEMIA — driven by frequent beta-agonist use, the cocaine/stimulant catecholamine surge, and steroids), HCO3 24, BUN 16, Cr 0.9, glucose 138 (mild hyperglycemia on prednisone). Anion gap = 139 − (103 + 24) = 12 (normal).",
+      "Troponin": "High-sensitivity troponin 14 ng/L then 15 ng/L on repeat — at the upper reference limit and flat (no rise/fall), arguing against acute MI despite the cocaine exposure.",
+      "D-dimer": "Mildly elevated at 0.7 µg/mL FEU (nonspecific; can rise with any acute cardiopulmonary stress and does not by itself diagnose PE — interpret with pretest probability).",
+      "Lactate": "2.4 mmol/L (mildly elevated — consistent with a catecholamine/beta-agonist surge and the work of breathing, NOT necessarily tissue hypoperfusion).",
+      "ABG": "pH 7.49, PaCO2 31, PaO2 66 on room air, A-a gradient widened — hypoxemia with a respiratory alkalosis from hyperventilation; hypoxemia out of proportion to a simple anxiety attack."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~104 bpm with no acute ischemic ST-T changes; normal axis and intervals.",
-      "verify": "Source a study matching: Sinus tachycardia at ~104 bpm with no acute ischemic ST-T changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 6,
+      "findings": "Sinus tachycardia at ~118 bpm with flattened T waves and prominent U waves and a long QU/borderline-prolonged QTc — a hypokalaemia pattern — without acute ischemic ST-elevation; this is the patient's OWN tracing and reflects the K of 3.1 plus stimulant/beta-agonist effect.",
+      "verify": "Source a study matching: sinus tachycardia with flattened T waves, prominent U waves, and a long QU interval (hypokalaemia), no acute ST-elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia without ischemia",
+      "imageDescription": "12-lead showing sinus tachycardia with flattened T waves, U waves, and a long QU interval consistent with hypokalaemia",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "normal axis sinus tachycardia 12 lead"
+        "hypokalaemia ECG U waves",
+        "flattened T wave prominent U wave long QU sinus tachycardia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 24-year-old tall thin man presents with sudden pleuritic chest pain and breathlessness at rest."
+      "clinicalVignette": "A tall thin young man with frequent beta-agonist use, a steroid burst, and overnight cocaine presents with pleuritic chest pain, palpitations, and a serum potassium of 3.1.",
+      "clinicalNote": "Integrated read: this is the patient's own EKG. The grading findings live on the ekg_read step (hypokalaemia pattern with U waves and borderline-long QTc, no STEMI), and the hypokalaemia/QTc must be carried into the management plan (replete K+/Mg before it precipitates a malignant arrhythmia, especially with a stimulant on board)."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=spontaneous%20pneumothorax%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Right-sided pneumothorax: visible visceral pleural line with absent lung markings peripheral to it in the right upper hemithorax, partial lung collapse, and NO mediastinal shift (no tension).",
+      "findings": "Right-sided pneumothorax: visible visceral pleural line with absent lung markings peripheral to it in the right upper hemithorax, partial lung collapse, and NO mediastinal shift (no tension); no pneumomediastinum (no lucent stripe along the mediastinum), no consolidation.",
       "verify": "Source a study matching: Right-sided pneumothorax with a visible visceral pleural line, absent peripheral lung markings, and no mediastinal shift. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "upright chest radiograph showing a right-sided pneumothorax with visible pleural line",
+      "imageDescription": "upright chest radiograph showing a moderate-to-large right-sided pneumothorax with visible pleural line and no mediastinal shift",
       "searchTerms": [
         "spontaneous pneumothorax chest x-ray",
         "visceral pleural line lung markings absent radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 27-year-old man presents with abrupt right-sided chest pain and shortness of breath after coughing."
+      "clinicalVignette": "A tall thin young man presents with abrupt right-sided pleuritic chest pain and shortness of breath."
     }
   },
   "revealKeys": [
@@ -68,68 +73,75 @@
     "BMP",
     "Troponin",
     "D-dimer",
+    "Lactate",
     "ABG",
     "ekg",
     "cxr"
   ],
   "essential": [
     "cxr",
+    "BMP",
     "ABG",
-    "D-dimer"
+    "Troponin"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this acute chest pain and dyspnea (note your leading diagnosis).",
-      "rubric": "Spontaneous pneumothorax (leading,8; accepts primary spontaneous pneumothorax). Tension pneumothorax (CANT-MISS to exclude,5). Pulmonary embolism (CANT-MISS,4). Acute coronary syndrome / cardiac cause (core,2). Pneumonia/pleurisy (core,2). Musculoskeletal/costochondritis (bonus,2). Named leading dx with justification and the imperative to assess for tension physiology (tracheal deviation, hypotension) (core,2).",
-      "idealAnswer": "Leading diagnosis: Spontaneous pneumothorax. Must-not-miss diagnoses to exclude: Tension pneumothorax; Pulmonary embolism. Also reasonable: Acute coronary syndrome; Pneumonia/pleurisy; Musculoskeletal/costochondritis.",
+      "prompt": "Based on your history and physical in this young stimulant user with sudden pleuritic chest pain and dyspnea, list your differential (note your leading diagnosis). Explicitly NAME THREE mechanisms/etiologies by which his drug and medication history could produce acute chest pain and breathlessness.",
+      "rubric": "Spontaneous pneumothorax — leading; primary in a tall marfanoid patient, possibly secondary given asthma/inhaled-drug barotrauma (leading,7; accepts primary OR secondary spontaneous pneumothorax). Cocaine-associated chest pain / ACS-coronary vasospasm — genuine competitor given last-night cocaine, hypertension, tachycardia, palpitations (CANT-MISS,5). Tension pneumothorax to actively exclude (CANT-MISS,3). Pulmonary embolism (CANT-MISS,2). Pneumomediastinum from forced inhalation/Valsalva/barotrauma (core,2). Names three drug/med MECHANISMS — e.g. cocaine→coronary vasospasm/sympathetic surge, barotrauma/alveolar rupture from inhalational drug use & cough, beta-agonist/stimulant→tachyarrhythmia & hypokalemia, connective-tissue/steroid-related apical bleb rupture (core,3). Named leading dx with justification + imperative to assess tension physiology (tracheal deviation, hypotension) (core,3). PENALTY: anchoring on pneumothorax and ignoring the cocaine/ACS risk (-3).",
+      "idealAnswer": "Leading diagnosis: Spontaneous pneumothorax (right-sided, in a tall marfanoid smoker — primary, though his asthma and inhalational drug use make a secondary/barotraumatic pneumothorax plausible). Genuine competing diagnosis: cocaine-associated chest pain with possible ACS from coronary vasospasm/sympathetic surge (last-night cocaine, hypertension, tachycardia, palpitations) — this fork must be resolved, not dismissed. Must-not-miss: Tension pneumothorax (actively exclude) and Pulmonary embolism. Also consider pneumomediastinum from forced inhalation/Valsalva. Three drug/medication MECHANISMS of his chest pain and dyspnea: (1) cocaine-induced coronary vasospasm and catecholamine surge → ischemia/arrhythmia; (2) barotrauma/alveolar rupture from forceful inhalation, breath-holding, and coughing during vaping/insufflation → pneumothorax/pneumomediastinum; (3) frequent beta-agonist plus stimulant (lisdexamfetamine) and the steroid burst → tachyarrhythmia and hypokalemia. Connective-tissue/bleb rupture (Marfanoid habitus, family history) is a fourth predisposing mechanism.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Tension pneumothorax",
+            "item": "Cocaine-associated chest pain / ACS (coronary vasospasm)",
             "points": 5
           },
           {
+            "item": "Tension pneumothorax (actively exclude)",
+            "points": 3
+          },
+          {
             "item": "Pulmonary embolism",
-            "points": 4
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Spontaneous pneumothorax (leading)",
-            "points": 8
+            "item": "Spontaneous pneumothorax (leading; primary or secondary)",
+            "points": 7
           },
           {
-            "item": "Acute coronary syndrome / cardiac cause",
+            "item": "Pneumomediastinum from inhalation/barotrauma",
             "points": 2
           },
           {
-            "item": "Pneumonia/pleurisy",
-            "points": 2
+            "item": "Names three drug/medication mechanisms of chest pain/dyspnea",
+            "points": 3
           },
           {
-            "item": "Assesses for tension physiology (tracheal deviation, hypotension)",
-            "points": 2
+            "item": "Named leading dx with justification + assesses tension physiology",
+            "points": 3
           }
         ],
-        "bonusActions": [
+        "bonusActions": [],
+        "penalties": [
           {
-            "item": "Musculoskeletal/costochondritis",
-            "points": 2
+            "item": "Anchors on pneumothorax and ignores the cocaine/ACS risk",
+            "points": -3
           }
-        ],
-        "penalties": []
+        ]
       },
       "mustNotMiss": [
         "Tension pneumothorax",
+        "Cocaine-associated chest pain / ACS",
         "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
-        "Acute coronary syndrome / cardiac cause",
-        "Pneumonia/pleurisy",
+        "Pneumomediastinum from inhalation/barotrauma",
+        "Acute asthma exacerbation",
         "Musculoskeletal/costochondritis"
       ]
     },
@@ -138,77 +150,81 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order? (Consider what changes management and what excludes the must-not-miss diagnoses.)",
-      "rubric": "Upright chest X-ray (CANT-MISS,5). Continuous pulse oximetry / repeat vitals to monitor for deterioration (3). ABG if hypoxemic or not improving (2). EKG to evaluate for cardiac cause (2). D-dimer or risk-stratify for PE if features warrant (2). PENALTY: ordering a CT angiogram or extensive cardiac workup before a simple confirmatory chest X-ray in a classic young pneumothorax (-2); delaying needle decompression to obtain imaging IF the patient becomes hemodynamically unstable/tension is suspected (-3).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; D dimer; ABG.",
+      "prompt": "What initial workup do you want to order? (Consider what changes management, what excludes the must-not-miss diagnoses, and what his drug/medication history mandates.)",
+      "rubric": "Upright chest X-ray (CANT-MISS,4). 12-lead EKG to evaluate for cocaine-related ischemia AND drug/electrolyte effect (CANT-MISS,3). BMP/electrolytes given heavy beta-agonist + stimulant + steroid use (3). Serial high-sensitivity troponin given cocaine exposure (2). Continuous pulse oximetry / telemetry & repeat vitals to monitor for deterioration and arrhythmia (2). ABG if hypoxemic or not improving (1). Risk-stratify for PE (D-dimer/Wells) (1). CBC; lactate (1). PENALTY: ordering CT angiogram or extensive cardiac imaging before a simple confirmatory chest X-ray in a classic young pneumothorax (-2); delaying needle decompression to obtain imaging IF the patient becomes hemodynamically unstable/tension is suspected (-3); giving a non-selective beta-blocker for cocaine chest pain (unopposed alpha) (-2).",
+      "idealAnswer": "Order: upright CXR (confirms the pneumothorax and excludes pneumomediastinum/tension); 12-lead EKG (cocaine ischemia AND drug/electrolyte effect); BMP/electrolytes (expect hypokalemia from beta-agonist/stimulant/steroid); serial high-sensitivity troponin (cocaine exposure); continuous pulse oximetry/telemetry and repeat vitals; ABG if hypoxemic or not improving; risk-stratify for PE with D-dimer/Wells; CBC; lactate. Avoid a non-selective beta-blocker for cocaine-related chest pain (unopposed alpha vasoconstriction).",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Upright chest X-ray",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "12-lead EKG (cocaine ischemia and drug/electrolyte effect)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Continuous pulse oximetry / repeat vitals",
+            "item": "BMP / electrolytes (beta-agonist + stimulant + steroid effect)",
             "points": 3
           },
           {
+            "item": "Serial high-sensitivity troponin (cocaine exposure)",
+            "points": 2
+          },
+          {
+            "item": "Continuous pulse oximetry / telemetry and repeat vitals",
+            "points": 2
+          },
+          {
             "item": "ABG if hypoxemic or not improving",
-            "points": 2
-          },
-          {
-            "item": "EKG to evaluate for cardiac cause",
-            "points": 2
-          },
-          {
-            "item": "Risk-stratify for PE (D-dimer)",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Troponin",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Risk-stratify for PE (D-dimer / Wells)",
+            "points": 1
+          },
+          {
+            "item": "CBC and lactate",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "ordering CT/extensive cardiac workup before a simple confirmatory chest X-ray in a classic young pneumothorax",
+            "item": "Ordering CT/extensive cardiac imaging before a simple confirmatory chest X-ray in a classic young pneumothorax",
             "points": -2
           },
           {
-            "item": "delaying needle decompression to obtain imaging if tension physiology is suspected",
+            "item": "Delaying needle decompression to obtain imaging if tension physiology is suspected",
             "points": -3
+          },
+          {
+            "item": "Giving a non-selective beta-blocker for cocaine chest pain (unopposed alpha)",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Upright chest X-ray"
+        "Upright chest X-ray",
+        "12-lead EKG (cocaine ischemia and drug/electrolyte effect)"
       ],
       "optionalTests": [
-        "Continuous pulse oximetry / repeat vitals",
+        "BMP / electrolytes (beta-agonist + stimulant + steroid effect)",
+        "Serial high-sensitivity troponin (cocaine exposure)",
+        "Continuous pulse oximetry / telemetry and repeat vitals",
         "ABG if hypoxemic or not improving",
-        "EKG to evaluate for cardiac cause",
-        "Risk-stratify for PE (D-dimer)"
+        "Risk-stratify for PE (D-dimer / Wells)"
       ],
       "contraindicatedTests": [
-        "ordering CT/extensive cardiac workup before a simple confirmatory chest X-ray in a classic young pneumothorax"
+        "Ordering CT/extensive cardiac imaging before a simple confirmatory chest X-ray in a classic young pneumothorax",
+        "Giving a non-selective beta-blocker for cocaine chest pain (unopposed alpha)"
       ],
       "orderSensitiveActions": [
-        "delaying needle decompression to obtain imaging if tension physiology is suspected"
+        "Delaying needle decompression to obtain imaging if tension physiology is suspected"
       ]
     },
     {
@@ -217,33 +233,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); recognizes no acute ischemic ST changes (compensatory tachycardia from pain/hypoxia) (5); systematic read (3). PENALTY: over-calling ischemia or right-heart-strain that is not present (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and state what they imply for his immediate management.",
+      "rubric": "Findings = sinus tachycardia (~118 bpm) with a HYPOKALAEMIA pattern: flattened/low T waves, prominent U waves, and a long QU/borderline-prolonged QTc; NO acute ischemic ST-elevation despite the cocaine. CREDIT: rate & rhythm — sinus tachycardia (4); recognizes the hypokalaemia pattern (flat T/U waves/long QU) and links it to the K of 3.1 and his beta-agonist/stimulant/steroid use (6); states there is NO acute STEMI/ischemic injury pattern (3); systematic read & comments the long QTc raises arrhythmia risk needing K+/Mg repletion (2). PENALTY: over-calling acute ischemia/STEMI that is not present, or missing the hypokalaemia/QTc and its arrhythmia implication (-3).",
       "keyFindings": [
-        "identifies sinus tachycardia",
-        "states there are no acute ischemic ST-T changes"
+        "sinus tachycardia at ~118 bpm",
+        "hypokalaemia pattern: flattened T waves, prominent U waves, long QU / borderline-prolonged QTc",
+        "no acute ischemic ST-elevation despite cocaine"
       ],
       "criticalFindings": [
-        "Sinus tachycardia without acute ischemic changes."
+        "Sinus tachycardia with a hypokalaemia pattern (flat T waves, U waves, long QU / borderline-long QTc) and no acute STEMI — repletion of K+/Mg is needed given the prolonged QTc and stimulant on board."
       ],
       "commonMistakes": [
-        "over-calling ischemia from rate-related repolarization changes",
-        "inventing a right-heart-strain pattern that is not present"
+        "over-calling acute ischemia / STEMI from the cocaine context when the ST segments are not elevated",
+        "missing the U waves / long QU and failing to connect them to the hypokalaemia and arrhythmia risk",
+        "calling the tracing normal sinus tachycardia and ignoring the electrolyte pattern"
       ],
-      "idealAnswer": "Sinus tachycardia at ~104 bpm with no acute ischemic ST-T changes; normal axis and intervals.",
+      "idealAnswer": "Sinus tachycardia at ~118 bpm. There is a hypokalaemia pattern — flattened/low T waves, prominent U waves, and a long QU interval / borderline-prolonged QTc — fitting his serum potassium of 3.1 from heavy beta-agonist use, the stimulant (lisdexamfetamine), and the steroid burst. Importantly there is NO acute ST-elevation or ischemic injury pattern despite the cocaine exposure, which argues against an evolving STEMI (correlate with serial troponin). The prolonged QTc plus a stimulant and ongoing beta-agonist puts him at risk for a malignant ventricular arrhythmia, so this EKG mandates potassium and magnesium repletion and telemetry as part of management.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia without acute ischemic changes."
+          "Sinus tachycardia with a hypokalaemia pattern (flat T waves, U waves, long QU / borderline-long QTc) and no acute STEMI — repletion of K+/Mg is needed given the prolonged QTc and stimulant on board."
         ],
         "coreActions": [
-          "identifies sinus tachycardia",
-          "states there are no acute ischemic ST-T changes"
+          "sinus tachycardia at ~118 bpm",
+          "hypokalaemia pattern: flattened T waves, prominent U waves, long QU / borderline-prolonged QTc",
+          "no acute ischemic ST-elevation despite cocaine"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls ischemia / invents an abnormality",
+            "label": "over-calls acute ischemia/STEMI, or misses the hypokalaemia/QTc and its arrhythmia implication",
             "points": -3
           }
         ]
@@ -256,27 +275,30 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = right pneumothorax with a visible visceral pleural line and absent peripheral lung markings; NO mediastinal shift. CREDIT: identifies the pneumothorax / visceral pleural line (6); explicitly comments on the absence of mediastinal shift (rules out tension) (4). PENALTY: missing the pneumothorax / calling the film normal (-3).",
+      "rubric": "Findings = right pneumothorax with a visible visceral pleural line and absent peripheral lung markings; NO mediastinal shift (no tension); NO pneumomediastinal lucent stripe. CREDIT: identifies the pneumothorax / visceral pleural line (5); explicitly comments on the absence of mediastinal shift (rules out tension) (3); comments there is no pneumomediastinum despite the inhalational drug use (2). PENALTY: missing the pneumothorax / calling the film normal (-3).",
       "keyFindings": [
-        "identifies a visible visceral pleural line with absent peripheral lung markings",
-        "notes there is no mediastinal/tracheal shift (no tension)"
+        "identifies a visible visceral pleural line with absent peripheral lung markings (right pneumothorax)",
+        "notes there is no mediastinal/tracheal shift (no tension)",
+        "no pneumomediastinal lucent stripe despite inhalational drug use"
       ],
       "criticalFindings": [
-        "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings)."
+        "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings) with no mediastinal shift and no pneumomediastinum."
       ],
       "commonMistakes": [
         "missing a subtle apical pneumothorax / calling the film normal",
-        "mistaking a skin fold or bulla for the pleural line"
+        "mistaking a skin fold or bulla for the pleural line",
+        "failing to comment on the pertinent negative of pneumomediastinum"
       ],
-      "idealAnswer": "Right-sided pneumothorax: visible visceral pleural line with absent lung markings peripherally and partial lung collapse; no mediastinal shift, so no tension physiology.",
+      "idealAnswer": "Right-sided pneumothorax: visible visceral pleural line with absent lung markings peripherally and partial lung collapse. No mediastinal shift, so no tension physiology, and no lucent stripe along the mediastinum to suggest pneumomediastinum despite the inhalational drug use. Lungs otherwise without consolidation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings)."
+          "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings) with no mediastinal shift and no pneumomediastinum."
         ],
         "coreActions": [
-          "identifies a visible visceral pleural line with absent peripheral lung markings",
-          "notes there is no mediastinal/tracheal shift (no tension)"
+          "identifies a visible visceral pleural line with absent peripheral lung markings (right pneumothorax)",
+          "notes there is no mediastinal/tracheal shift (no tension)",
+          "no pneumomediastinal lucent stripe despite inhalational drug use"
         ],
         "bonusActions": [],
         "penalties": [
@@ -291,9 +313,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "The chest X-ray shows a right-sided pneumothorax with a visceral pleural line and no mediastinal shift; the patient remains hemodynamically stable with a midline trachea, troponin is negative, and D-dimer is normal. What is your diagnosis and what did you rule out?",
-      "rubric": "Primary spontaneous pneumothorax (6). Explicitly excludes tension pneumothorax (stable vitals, midline trachea, no mediastinal shift) and pulmonary embolism / ACS (negative D-dimer and troponin) (4).",
-      "idealAnswer": "Primary spontaneous pneumothorax. Tension pneumothorax is excluded by the stable vitals, midline trachea, and absence of mediastinal shift; pulmonary embolism and ACS are argued against by the normal D-dimer and negative troponin.",
+      "prompt": "The chest X-ray shows a right-sided pneumothorax with a visceral pleural line and no mediastinal shift; the EKG shows sinus tachycardia with a hypokalaemia pattern (U waves, long QU) and no STEMI; serial troponins are flat at the upper reference limit; K is 3.1; the patient remains stable with a midline trachea. Commit to your single most likely diagnosis, name the discriminating tests, state how you resolved the cocaine/ACS competitor, and acknowledge any residual uncertainty.",
+      "rubric": "Commits to (primary or secondary) spontaneous pneumothorax as the unifying cause of the pleuritic pain and hypoxia (6). Resolves the cocaine/ACS competitor — flat serial troponins and no STEMI on the patient's own EKG argue against acute MI, though cocaine chest pain still warrants observation; explicitly excludes tension (stable vitals, midline trachea, no shift) and addresses PE (low pretest probability; a mildly elevated D-dimer is nonspecific). Identifies the concurrent hypokalaemia with QTc prolongation as a SEPARATE active problem to treat, and names residual uncertainty (e.g. serial troponin/observation period for the cocaine exposure) (4).",
+      "idealAnswer": "Single most likely diagnosis: spontaneous pneumothorax (right-sided) — primary given his tall marfanoid habitus and family history, though his asthma and forceful inhalational drug use make a secondary/barotraumatic pneumothorax plausible; it unifies the pleuritic pain, hypoxia, and the lateralizing exam. Discriminating test: the upright CXR (visceral pleural line, absent peripheral markings), with the midline trachea and absence of mediastinal shift excluding tension. Resolving the cocaine/ACS competitor: his own EKG shows no STEMI and serial high-sensitivity troponins are flat at the upper reference limit, arguing strongly against an acute MI — but because cocaine chest pain can still cause delayed ischemia, he warrants a period of monitored observation with serial troponins rather than immediate clearance. PE is unlikely (low pretest probability; the mildly elevated D-dimer is nonspecific and explained by acute cardiopulmonary stress). Importantly, the hypokalaemia (K 3.1) with U waves and a borderline-long QTc is a SEPARATE concurrent problem — driven by beta-agonist, stimulant, and steroid use — that must be corrected to prevent arrhythmia. Residual uncertainty: completing the troponin/observation window for the cocaine exposure.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -302,58 +324,72 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "Tension pneumothorax"
+        "Tension pneumothorax",
+        "Cocaine-associated ACS"
       ],
       "acceptableAlternatives": [
-        "Secondary spontaneous pneumothorax"
+        "Secondary spontaneous pneumothorax",
+        "Pneumomediastinum from inhalation/barotrauma"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH pneumothorax management: supplemental high-flow oxygen to speed pleural reabsorption (CANT-MISS,5); size/symptom-based intervention — observation for a small asymptomatic primary pneumothorax vs needle aspiration or small-bore chest tube/pigtail catheter for a large or symptomatic one (CANT-MISS,6); analgesia (3); admit/observe with serial imaging (3); smoking cessation counseling (3); thoracic surgery consult and discussion of pleurodesis for recurrence/persistent air leak (3); immediate needle decompression THEN chest tube if tension develops (bonus,2). PENALTY: discharging a large symptomatic pneumothorax without intervention or follow-up (-3); failing to decompress a tension pneumothorax while awaiting imaging (-3).",
-      "idealAnswer": "Primary spontaneous pneumothorax: give high-flow supplemental oxygen (hastens pleural air reabsorption); choose intervention by size/symptoms — observe a small, asymptomatic pneumothorax with repeat imaging, or perform needle aspiration or place a small-bore chest tube/pigtail catheter for a large or symptomatic one. Provide analgesia, admit/observe with serial CXR, and counsel on smoking cessation. Consult thoracic surgery and discuss pleurodesis/VATS for recurrence or a persistent air leak. If tension physiology develops, perform immediate needle decompression followed by chest tube.",
+      "prompt": "What is your management plan? Include how you treat the EKG/electrolyte finding, how you handle the cocaine exposure, and your DISPOSITION decision — specifically state when this patient could be SAFELY discharged versus admitted, and what counseling/follow-up that requires.",
+      "rubric": "Per MGH pneumothorax management: size/symptom-based intervention — needle aspiration or small-bore chest tube/pigtail for this large/symptomatic pneumothorax vs observation only for a small asymptomatic one (CANT-MISS,5); supplemental high-flow oxygen to speed pleural reabsorption (CANT-MISS,4); CORRECT the hypokalaemia — replete potassium AND magnesium given the U waves/long QTc and stimulant on board, on telemetry (CANT-MISS,3); benzodiazepines as first-line for cocaine-related chest pain/hypertension and AVOID non-selective beta-blockers (unopposed alpha) (2); analgesia (2); SAFE-DISCHARGE/DISPOSITION decision — admit/observe a symptomatic large pneumothorax and a cocaine-exposed patient on telemetry with serial CXR and troponins; he is dischargeable only once the lung is re-expanded/stable on repeat imaging, troponins have ruled out, K/QTc are corrected, and with strict return precautions, smoking/vaping/cocaine-cessation counseling, and thoracic-surgery follow-up (core,3); smoking/vaping & cocaine cessation counseling (2); thoracic surgery consult & pleurodesis/VATS discussion for recurrence or persistent air leak (1); immediate needle decompression THEN chest tube if tension develops (bonus,1). PENALTY: discharging this large symptomatic pneumothorax (or an unmonitored cocaine-exposed patient with a long QTc) without intervention, repletion, or follow-up (-4); giving a non-selective beta-blocker for cocaine chest pain (-3); failing to decompress a tension pneumothorax while awaiting imaging (-3).",
+      "idealAnswer": "Spontaneous pneumothorax, large and symptomatic: place a small-bore chest tube/pigtail catheter (or perform needle aspiration first per size/symptoms; observation alone is only for a small asymptomatic pneumothorax). Give high-flow supplemental oxygen to hasten pleural air reabsorption. Treat the EKG/electrolyte finding: replete POTASSIUM and MAGNESIUM and keep him on telemetry, because the hypokalaemia with U waves and a borderline-long QTc — plus the stimulant and beta-agonist — predisposes to arrhythmia. Handle the cocaine exposure with benzodiazepines as first-line for chest pain/hypertension/tachycardia and AVOID non-selective beta-blockers (unopposed alpha vasoconstriction); rule out MI with serial troponins. Provide analgesia. DISPOSITION / SAFE DISCHARGE: admit and observe — a symptomatic large pneumothorax with a chest tube plus a cocaine-exposed patient with a prolonged QTc both warrant monitored inpatient care with serial CXR and troponins. He becomes safe for discharge only once the lung is re-expanded and stable on repeat imaging (and any tube removed/air leak resolved), serial troponins have excluded MI, and the potassium/QTc are corrected — discharged with strict return precautions, smoking/vaping AND cocaine-cessation counseling, and thoracic surgery follow-up. Consult thoracic surgery and discuss pleurodesis/VATS for recurrence or a persistent air leak. If tension physiology develops at any point, perform immediate needle decompression followed by chest tube.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Size/symptom-based intervention (observation vs aspiration/chest tube)",
-            "points": 6
+            "item": "Size/symptom-based intervention (aspiration/chest tube for this large symptomatic pneumothorax vs observation for a small one)",
+            "points": 5
           },
           {
             "item": "High-flow supplemental oxygen",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "Replete potassium AND magnesium for hypokalaemia/long QTc on telemetry",
+            "points": 3
           }
         ],
         "coreActions": [
           {
+            "item": "Benzodiazepines first-line for cocaine chest pain; avoid non-selective beta-blockers",
+            "points": 2
+          },
+          {
             "item": "Analgesia",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge/disposition decision: admit on telemetry, dischargeable only once lung re-expanded/stable, troponins ruled out, K/QTc corrected, with return precautions and follow-up",
             "points": 3
           },
           {
-            "item": "Admit/observe with serial imaging",
-            "points": 3
-          },
-          {
-            "item": "Smoking cessation counseling",
-            "points": 3
+            "item": "Smoking/vaping and cocaine cessation counseling",
+            "points": 2
           },
           {
             "item": "Thoracic surgery consult / pleurodesis discussion for recurrence",
-            "points": 3
+            "points": 1
           }
         ],
         "bonusActions": [
           {
             "item": "Immediate needle decompression then chest tube if tension develops",
-            "points": 2
+            "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Discharging a large symptomatic pneumothorax without intervention or follow-up",
+            "item": "Discharging this large symptomatic pneumothorax or an unmonitored cocaine-exposed patient with a long QTc without intervention, repletion, or follow-up",
+            "points": -4
+          },
+          {
+            "item": "Giving a non-selective beta-blocker for cocaine chest pain",
             "points": -3
           },
           {
@@ -363,24 +399,27 @@
         ]
       },
       "requiredActions": [
-        "Size/symptom-based intervention (observation vs aspiration/chest tube)",
-        "High-flow supplemental oxygen"
+        "Size/symptom-based intervention (aspiration/chest tube for this large symptomatic pneumothorax vs observation for a small one)",
+        "High-flow supplemental oxygen",
+        "Replete potassium AND magnesium for hypokalaemia/long QTc on telemetry"
       ],
       "optionalActions": [
+        "Benzodiazepines first-line for cocaine chest pain; avoid non-selective beta-blockers",
         "Analgesia",
-        "Admit/observe with serial imaging",
-        "Smoking cessation counseling",
+        "Safe-discharge/disposition decision: admit on telemetry, dischargeable only once lung re-expanded/stable, troponins ruled out, K/QTc corrected, with return precautions and follow-up",
+        "Smoking/vaping and cocaine cessation counseling",
         "Thoracic surgery consult / pleurodesis discussion for recurrence",
         "Immediate needle decompression then chest tube if tension develops"
       ],
       "unsafeActions": [
-        "Discharging a large symptomatic pneumothorax without intervention or follow-up",
+        "Discharging this large symptomatic pneumothorax or an unmonitored cocaine-exposed patient with a long QTc without intervention, repletion, or follow-up",
+        "Giving a non-selective beta-blocker for cocaine chest pain",
         "Failing to decompress a tension pneumothorax while awaiting imaging"
       ],
       "consults": [
         "Thoracic surgery"
       ],
-      "disposition": "Admit; immediate decompression and ICU if tension physiology develops",
+      "disposition": "Admit on telemetry with chest tube; safe discharge only once lung re-expanded/stable on repeat CXR, troponins ruled out, and K/QTc corrected, with cessation counseling and thoracic-surgery follow-up; immediate decompression and ICU if tension physiology develops",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Pulmonary (Pneumothorax)",
@@ -396,12 +435,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "tobacco_use",
-      "substance_use"
+      "substance_use",
+      "cocaine_use"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "22-year-old man, tall and thin, mildly anxious and breathing a little fast, holding his right chest. Cooperative.",
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; sheepish and slow to disclose drug use until asked nonjudgmentally",
+    "affect": "22-year-old man, tall and thin with long limbs, mildly anxious and jittery, breathing fast and holding his right chest, embarrassed about last night's cocaine use. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (tobacco, vaping, cocaine, stimulant, the prednisone burst, prior episode, Marfan family history) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -415,7 +455,9 @@
         "smoking",
         "tobacco",
         "cigarettes",
-        "do you smoke"
+        "do you smoke",
+        "vaping",
+        "vape"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -426,16 +468,51 @@
       "id": "substance_use",
       "category": "substance_use",
       "triggerConcepts": [
-        "vaping",
+        "recreational drugs",
+        "do you use any drugs",
+        "cocaine",
+        "stimulants",
         "cannabis",
         "marijuana",
-        "recreational drugs",
-        "do you use any drugs"
+        "what did you use last night"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "inhalers",
+        "steroids",
+        "prednisone",
+        "albuterol",
+        "vyvanse",
+        "adhd medication"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "asthma",
+        "any conditions",
+        "lung problems"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
     },
     {
       "id": "family_history",
@@ -444,6 +521,8 @@
         "family history",
         "anyone in your family",
         "relatives with lung problems",
+        "collapsed lung in the family",
+        "marfan",
         "did your parents have"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
@@ -474,7 +553,8 @@
         "what does it feel like",
         "character",
         "quality",
-        "sharp or dull"
+        "sharp or dull",
+        "radiate"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -503,6 +583,8 @@
         "associated symptoms",
         "fever",
         "cough",
+        "palpitations",
+        "heart racing",
         "leg swelling",
         "calf pain"
       ],
@@ -559,7 +641,7 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_anterior_lungs_finding_1",
-      "finding": "Lungs: DECREASED/absent breath sounds over the RIGHT upper hemithorax. Left lung clear with normal breath sounds.",
+      "finding": "Lungs: DECREASED/absent breath sounds over the RIGHT upper hemithorax. Left lung: scattered faint expiratory wheeze (asthma), otherwise breath sounds present.",
       "revealedBy": [
         "auscultate_anterior_lungs",
         "auscultate_posterior_lungs"
@@ -569,28 +651,28 @@
       "normalIfNotPresent": "Breath sounds normal and symmetric bilaterally."
     },
     {
-      "id": "percuss_posterior_lungs_finding_2",
-      "finding": "Lungs: HYPERRESONANT to percussion over the right hemithorax.",
-      "revealedBy": [
-        "percuss_posterior_lungs"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "Resonant to percussion bilaterally."
-    },
-    {
-      "id": "assess_tactile_fremitus_finding_3",
-      "finding": "Lungs: DECREASED tactile fremitus over the right hemithorax.",
+      "id": "assess_tactile_fremitus_finding_2",
+      "finding": "Lungs: HYPERRESONANT to percussion over the right hemithorax with DECREASED tactile fremitus on the right.",
       "revealedBy": [
         "assess_tactile_fremitus"
       ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Resonant to percussion with symmetric tactile fremitus."
+    },
+    {
+      "id": "palpate_chest_wall_finding_3",
+      "finding": "Chest wall: no tenderness, no subcutaneous crepitus over the neck/chest (argues against pneumomediastinum).",
+      "revealedBy": [
+        "palpate_chest_wall"
+      ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Tactile fremitus symmetric."
+      "normalIfNotPresent": "No chest-wall tenderness or crepitus."
     },
     {
       "id": "assess_general_appearance_finding_4",
-      "finding": "General: tall, thin young man in mild respiratory distress, speaking in full sentences. Trachea midline (no deviation — NOT a tension pneumothorax).",
+      "finding": "General: tall, thin, long-limbed young man with a high-arched palate and long fingers (Marfanoid), in mild respiratory distress, jittery. Trachea MIDLINE (no deviation — NOT a tension pneumothorax); no Hamman's crunch.",
       "revealedBy": [
         "assess_general_appearance"
       ],
@@ -599,15 +681,15 @@
       "normalIfNotPresent": "Well-appearing, no distress, trachea midline."
     },
     {
-      "id": "auscultate_aortic_area_finding_5",
-      "finding": "Cardiac: tachycardic, regular, no murmur, no JVD; PMI not displaced.",
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Cardiac: tachycardic, regular, no murmur, no rub, no JVD; PMI not displaced; skin warm and slightly diaphoretic.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
       ],
       "importance": "core",
       "points": 1,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "No murmur or rub appreciated."
     }
   ],
   "overallScoring": {
@@ -620,72 +702,81 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Spontaneous pneumothorax",
-    "diagnosticFramework": "22M, tall and thin, presents with the abrupt onset of right-sided pleuritic chest pain and breathlessness at rest. The diagnosis is Spontaneous pneumothorax, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "22M, tall and marfanoid, with asthma on a steroid burst and frequent beta-agonist use, a stimulant (lisdexamfetamine), and overnight cocaine, presents with the abrupt onset of right-sided pleuritic chest pain, hypoxia, palpitations, and hypertension. The diagnosis is Spontaneous pneumothorax (primary vs secondary/barotraumatic), reached by eliciting the focused history (including the sensitive drug/medication history), performing the targeted exam, and interpreting a directed workup while resolving the genuine cocaine/ACS competitor and recognizing a concurrent hypokalaemia with QTc prolongation as a separate problem to treat.",
     "keyHistoryClues": [
-      "sudden onset at rest",
-      "prior similar episode",
-      "smoking",
-      "family history of collapsed lung"
+      "sudden pleuritic pain at rest after vaping and inhaled cocaine",
+      "prior similar self-limited episode",
+      "tall marfanoid habitus with family history of collapsed lung and Marfan",
+      "heavy beta-agonist use plus a steroid burst and a stimulant",
+      "palpitations and a racing heart since the cocaine"
     ],
     "keyPhysicalExamFindings": [
-      "Lungs: DECREASED/absent breath sounds over the RIGHT upper hemithorax. Left lung clear with normal breath sounds.",
-      "Lungs: HYPERRESONANT to percussion over the right hemithorax.",
-      "Lungs: DECREASED tactile fremitus over the right hemithorax.",
-      "General: tall, thin young man in mild respiratory distress, speaking in full sentences. Trachea midline (no deviation — NOT a tension pneumothorax)."
+      "Lungs: DECREASED/absent breath sounds over the RIGHT upper hemithorax. Left lung: scattered faint expiratory wheeze (asthma), otherwise breath sounds present.",
+      "Lungs: HYPERRESONANT to percussion over the right hemithorax with DECREASED tactile fremitus on the right.",
+      "Chest wall: no tenderness, no subcutaneous crepitus over the neck/chest (argues against pneumomediastinum).",
+      "General: tall, thin, long-limbed young man with a high-arched palate and long fingers (Marfanoid), in mild respiratory distress, jittery. Trachea MIDLINE (no deviation — NOT a tension pneumothorax); no Hamman's crunch."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
       "Troponin",
       "D-dimer",
+      "Lactate",
       "ABG"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Spontaneous pneumothorax while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Spontaneous pneumothorax and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (tachycardia, hypertension, hypoxia in a jittery young man).",
+      "Elicit the focused history, including the sensitive drug and medication history (cocaine, vaping, stimulant, steroid burst, frequent albuterol) only on direct, nonjudgmental questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the lateralizing pneumothorax findings while excluding tension and pneumomediastinum.",
+      "Build a differential led by Spontaneous pneumothorax with a genuine cocaine/ACS competitor, naming three drug/medication mechanisms of chest pain and dyspnea.",
+      "Order a focused, order-sensitive workup (CXR + EKG + electrolytes + serial troponin) and interpret the patient's own EKG (hypokalaemia/QTc) and CXR.",
+      "Commit to Spontaneous pneumothorax, treat the concurrent hypokalaemia/QTc, manage the cocaine exposure correctly, and make a defensible admit-versus-safe-discharge disposition with counseling and follow-up."
     ],
     "commonPitfalls": [
-      "Discharging a large symptomatic pneumothorax without intervention or follow-up",
+      "Anchoring on pneumothorax and ignoring the cocaine/ACS risk",
+      "Over-calling a STEMI on the patient's own EKG or missing the hypokalaemia/QTc",
+      "Giving a non-selective beta-blocker for cocaine chest pain (unopposed alpha)",
+      "Discharging a large symptomatic pneumothorax or an unmonitored long-QTc patient without repletion or follow-up",
       "Failing to decompress a tension pneumothorax while awaiting imaging"
     ],
     "managementPearls": [
-      "Size/symptom-based intervention (observation vs aspiration/chest tube)",
-      "High-flow supplemental oxygen"
+      "Size/symptom-based intervention (aspiration/chest tube for a large symptomatic pneumothorax vs observation for a small one)",
+      "High-flow supplemental oxygen",
+      "Replete potassium AND magnesium for hypokalaemia/long QTc on telemetry"
     ],
     "criticalHistoryItems": [
-      "onset"
+      "onset",
+      "substance_use"
     ],
     "criticalExamItems": [
       "auscultate_anterior_lungs",
-      "percuss_posterior_lungs"
+      "assess_tactile_fremitus"
     ],
     "criticalWorkupItems": [
-      "Upright chest X-ray"
+      "Upright chest X-ray",
+      "12-lead EKG (cocaine ischemia and drug/electrolyte effect)"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia without acute ischemic changes.",
-      "Right-sided pneumothorax with a visible visceral pleural line and absent peripheral lung markings; no mediastinal shift (no tension)."
+      "Sinus tachycardia with a hypokalaemia pattern (U waves, long QU / borderline-long QTc) and no acute STEMI.",
+      "Right-sided pneumothorax with a visible visceral pleural line and absent peripheral lung markings; no mediastinal shift (no tension) and no pneumomediastinum."
     ],
     "criticalManagementItems": [
-      "Size/symptom-based intervention (observation vs aspiration/chest tube)",
-      "High-flow supplemental oxygen"
+      "Size/symptom-based intervention (aspiration/chest tube vs observation)",
+      "High-flow supplemental oxygen",
+      "Replete potassium AND magnesium for hypokalaemia/long QTc on telemetry"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes.",
+      "Sinus tachycardia with a hypokalaemia pattern (U waves, long QU) and no acute STEMI.",
       "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings)."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes.",
-      "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings)."
+      "Sinus tachycardia with a hypokalaemia pattern (U waves, long QU / borderline-long QTc) and no acute STEMI.",
+      "Right-sided pneumothorax (visceral pleural line, absent peripheral lung markings) with no mediastinal shift and no pneumomediastinum."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An integrated tracing is the patient's OWN study — read the rhythm, then connect the repolarization changes to the bedside electrolytes and drugs.",
+      "Cocaine context does not equal STEMI — if the ST segments are not elevated and serial troponins are flat, do not invent ischemia.",
+      "On the chest film, the deliberate pertinent negatives are the absence of mediastinal shift (no tension) and the absence of a pneumomediastinal stripe."
     ]
   },
   "communicationScoring": {
@@ -700,7 +791,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission and is nonjudgmental before sensitive drug-use questions",
         "points": 1
       },
       {
@@ -715,8 +806,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG (hypokalaemia) + pathology-forward CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

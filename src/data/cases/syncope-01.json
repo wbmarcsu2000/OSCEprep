@@ -1,78 +1,84 @@
 {
   "id": "syncope-01",
   "category": "Syncope",
-  "difficulty": "easy",
-  "title": "Fainting at a crowded event",
+  "difficulty": "hard",
+  "title": "Transient loss of consciousness in a polypharmacy patient with a prolonged QT",
   "diagnosis": "Vasovagal syncope",
   "chart": {
-    "ageSex": "28F",
+    "ageSex": "58F",
     "cc": "Passed out",
-    "oneLiner": "28F presents after a brief loss of consciousness while standing in a hot, crowded room, preceded by nausea and lightheadedness.",
+    "oneLiner": "58F with hypertension, type 2 diabetes, depression, and a remote breast-cancer history on a long medication list presents after a witnessed transient loss of consciousness while standing at a relative's funeral; she had warning symptoms beforehand but her EKG shows a prolonged QT and several electrolytes are off.",
     "vitals": {
-      "BP": "116/72",
-      "HR": "74",
-      "RR": "14",
-      "Temp": "36.9°C",
-      "SpO2": "99% RA"
+      "BP": "108/68",
+      "HR": "72",
+      "RR": "16",
+      "Temp": "36.8°C",
+      "SpO2": "98% RA"
     },
     "timer": 180
   },
-  "opening": "I fainted at a concert — one minute I felt sick and dizzy, the next I was on the floor.",
-  "patientFile": "PERSONA: 28-year-old woman, now feeling back to normal, mildly embarrassed. Good historian.\n\nHPI: Was standing for a long time in a hot, crowded room. Felt a clear PRODROME — warmth, nausea, lightheadedness, tunnel/graying vision, sweating — then briefly lost consciousness. Witnesses (if asked) say she was pale, out for <30 seconds, no jerking beyond a couple of brief twitches, came around quickly and was immediately oriented (NO prolonged confusion). Has had a couple of similar near-faints with prolonged standing or blood draws. NO chest pain, NO palpitations before, NO exertional trigger, NO tongue biting or incontinence.\nPMH: none. MEDS: none. SOCIAL: student, no drugs, occasional alcohol. Last menstrual period normal (if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, fully recovered.\n- Vitals: BP 116/72, HR 74, RR 14, 36.9°C, SpO2 99% RA; mild orthostatic drop without significant symptoms.\n- Cardiac: regular, normal S1/S2, NO murmur.\n- Neuro: fully oriented, no focal deficit, no tongue laceration.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide witness details (prodrome, brief duration, rapid recovery) only when the student asks about what witnesses saw or the prodrome/recovery.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I was standing in the heat at my brother's funeral and I felt awful — sweaty and sick — and the next thing I knew I was on the ground and people were over me.",
+  "patientFile": "PERSONA: 58-year-old woman, now back to her baseline and a little embarrassed, recently bereaved and tearful at times. Cooperative, average historian; tends to under-report her medications unless asked specifically.\n\nHPI: Was standing for ~30 minutes in a hot, crowded funeral home, having eaten little and skipped her morning coffee/water. Felt a clear PRODROME — warmth, nausea, lightheadedness, ringing in the ears, graying/tunneling vision, and sweating — over maybe a minute, then briefly lost consciousness. Witnesses (reveal only when asked what bystanders saw or about the prodrome/recovery) say she went pale, slid down rather than dropped, was out for well under a minute, had only a couple of brief limb twitches (NO sustained rhythmic jerking), and came around quickly and was talking and oriented within seconds (NO prolonged post-event confusion). She bit the very tip of her tongue, no side-of-tongue laceration, NO incontinence. She has had two similar near-faints in the past year — one after a painful blood draw, one standing up quickly on a hot day. NO chest pain, NO palpitations or racing heart before the event, NO exertional trigger (it did NOT happen while climbing stairs or exerting), NO sudden collapse without warning, NO family history of sudden death or drowning.\nPMH (reveal when asked about medical history): hypertension; type 2 diabetes; major depressive disorder; early-stage breast cancer 6 years ago treated and in remission, now on hormonal therapy; mild osteoarthritis. NO known heart disease, NO prior MI, NO heart failure.\nMEDS (reveal the full list only when asked specifically what she takes — she will otherwise say 'a few pills for my blood pressure and mood'): hydrochlorothiazide for blood pressure; citalopram for depression (dose was recently increased); ondansetron she takes for nausea; metformin; an anastrozole-type hormonal pill for the breast-cancer history; occasional over-the-counter diphenhydramine to sleep; she also started an over-the-counter 'water pill'/extra magnesium-free supplement her friend gave her. NO anticoagulants. ALLERGIES: none.\nSOCIAL: retired teacher, lives alone, recently widowed-adjacent (caring for ill family), no tobacco, rare alcohol, no drugs. Eats and drinks less when stressed. FAMILY: mother had hypertension; NO sudden cardiac death, NO unexplained drownings or young deaths.\nROS: as above; no melena/hematochezia, no heavy menses (post-menopausal), no recent GI losses other than poor intake, no fevers.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, fully recovered, intermittently tearful.\n- Vitals: BP 108/68, HR 72, RR 16, 36.8°C, SpO2 98% RA.\n- Orthostatics: lying 118/74 HR 70 → standing 96/62 HR 92, with a brief reproduction of her lightheadedness (a >20 mmHg systolic drop with a compensatory rise in heart rate — consistent with volume depletion).\n- Cardiac: regular rate and rhythm, normal S1/S2, NO murmur, NO S3/S4, no carotid bruit; normal/non-displaced PMI.\n- Mucous membranes slightly dry; skin turgor mildly reduced.\n- Neuro: fully oriented, no focal deficit, normal gait, no tongue laceration along the side (only a tiny bite at the tip).\n- JVP: not elevated.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide the witness details (prodrome, brief duration, rapid recovery, no sustained jerking) only when the student asks what bystanders saw or asks about the prodrome/recovery.\n- Reveal the FULL medication list (especially the QT-prolonging and diuretic agents) only when the student asks specifically what medications/supplements she takes; she initially under-reports.\n- Reveal exam findings only when the relevant maneuver is performed (orthostatics only when orthostatic vitals are taken; murmur/no-murmur only on auscultation; dry membranes/turgor only when assessed).\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 88 — normal.",
-      "CBC": "Hgb 13.4 — normal (no anemia).",
-      "BMP": "Within normal limits.",
-      "Pregnancy": "Negative.",
-      "Orthostatics": "Mild drop without reproducing symptoms."
+      "Glucose": "Fingerstick glucose 142 — not hypoglycemic (argues against a hypoglycemic cause of the spell).",
+      "CBC": "Hgb 13.1, WBC 7.2, Plt 250 — no anemia and no evidence of acute blood loss.",
+      "BMP": "Na 130 (low), K 3.2 (low), Cl 96, HCO3 26, BUN 24, Cr 1.3 (baseline ~0.9 — mild acute kidney injury), Glucose 142. Calculated anion gap = Na − (Cl + HCO3) = 130 − (96 + 26) = 8 — NORMAL gap, no metabolic acidosis. The picture is hyponatremia + hypokalemia + a non-gap mild AKI consistent with diuretic use and poor intake/volume depletion, not a primary acidotic emergency.",
+      "Magnesium": "Mg 1.4 mg/dL (low) — hypomagnesemia, which together with the hypokalemia and her medications contributes to QT prolongation.",
+      "Troponin": "High-sensitivity troponin normal and flat on serial draw — no acute myocardial injury.",
+      "Orthostatics": "Lying 118/74 (HR 70) → standing 96/62 (HR 92): a >20 mmHg systolic drop with a compensatory tachycardia, reproducing her symptoms — consistent with volume depletion rather than autonomic failure."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Every sinus beat followed by a wide premature ventricular complex (ventricular bigeminy).",
-      "verify": "Source a study matching: Every sinus beat followed by a wide premature ventricular complex (ventricular bigeminy). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm at ~72 bpm with a markedly prolonged QT interval (QTc ~480 ms) and broad/notched T waves; normal axis, no ischemic ST changes, no delta wave, no Brugada-type morphology, no AV block — drug- and electrolyte-induced QT prolongation in the appropriate range to predispose to torsades.",
+      "verify": "Source a study matching: sinus rhythm with markedly prolonged QTc (~480 ms) and broad T waves from drug/electrolyte effect; no ischemia, no pre-excitation, no Brugada morphology. Self-host with appropriate credit; do not reuse the prior tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing ventricular bigeminy PVCs",
+      "integrated": true,
+      "litflStudyN": 23,
+      "imageDescription": "12-lead sinus rhythm with a markedly prolonged QTc and broad T waves (drug/electrolyte-induced long QT)",
       "searchTerms": [
-        "ventricular bigeminy ECG",
-        "PVC bigeminy rhythm strip"
+        "drug induced long QT ECG",
+        "prolonged QTc broad T waves 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 58-year-old man reports palpitations and a sensation of skipped beats with occasional lightheadedness on exertion."
+      "clinicalVignette": "A patient on a QT-prolonging antidepressant and antiemetic, with low potassium and magnesium, has an EKG after a transient loss of consciousness."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Tortuous, unfolded thoracic aorta with calcification of the aortic knob.",
-      "verify": "Source a study matching: Tortuous, unfolded thoracic aorta with calcification of the aortic knob. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Tortuous, unfolded thoracic aorta with calcification of the aortic knob; normal heart size, clear lungs, no acute infiltrate or effusion — chronic atherosclerotic/hypertensive change, no acute cardiopulmonary process.",
+      "verify": "Source a study matching: Tortuous, unfolded thoracic aorta with calcification of the aortic knob; otherwise normal film. Self-host with appropriate credit; do not reuse the prior tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing tortuous calcified aorta",
+      "imageDescription": "chest radiograph showing a tortuous calcified aorta, otherwise normal",
       "searchTerms": [
         "tortuous aorta chest x-ray",
         "aortic knob calcification radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 72-year-old man with long-standing hypertension undergoes a chest film to evaluate a widened mediastinal contour."
+      "clinicalVignette": "A long-standing hypertensive patient has a chest film that shows a tortuous, calcified thoracic aorta."
     }
   },
   "revealKeys": [
     "Glucose",
     "CBC",
     "BMP",
-    "Pregnancy",
+    "Magnesium",
+    "Troponin",
     "Orthostatics",
     "ekg",
     "cxr"
   ],
   "essential": [
+    "BMP",
+    "Magnesium",
     "ekg"
   ],
   "steps": [
@@ -80,28 +86,28 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for the syncope (note your leading diagnosis).",
-      "rubric": "Vasovagal / neurocardiogenic syncope (leading,8). Orthostatic hypotension (core,3). Cardiac arrhythmia (CANT-MISS to exclude,4). Structural cardiac disease (CANT-MISS,3). Seizure (core,2). Hypoglycemia/anemia/pregnancy (core,2). Named leading dx w/ justification — clear prodrome, trigger, rapid recovery (core,3).",
-      "idealAnswer": "Leading diagnosis: Vasovagal / neurocardiogenic syncope. Must-not-miss diagnoses to exclude: Cardiac arrhythmia; Structural cardiac disease. Also reasonable: Orthostatic hypotension; Seizure; Hypoglycemia/anemia/pregnancy.",
+      "prompt": "Based on your history and physical, list your differential for this transient loss of consciousness (note your leading diagnosis). Also name THREE distinct mechanisms/categories of syncope and give an example of each.",
+      "rubric": "Vasovagal / reflex (neurocardiogenic) syncope — clear prodrome, trigger (prolonged standing, heat, emotional/painful stimulus), rapid recovery (leading,6). Drug-induced QT prolongation with arrhythmic (torsades) syncope — must-not-miss given citalopram + ondansetron + diphenhydramine + hypokalemia/hypomagnesemia (CANT-MISS,5). Orthostatic hypotension from diuretic + volume depletion (core,3). Other cardiac arrhythmia / structural cardiac syncope to exclude (CANT-MISS,3). Seizure (core,2). Hypoglycemia / anemia / GI bleed (core,1). Names THREE mechanisms of syncope (reflex/neurally-mediated, orthostatic/hypovolemic, cardiac [arrhythmic or structural]) with examples (core,3). Named leading dx w/ justification (core,2). PENALTY: anchoring on benign vasovagal without recognizing the QT-prolonging polypharmacy + electrolytes as a competing arrhythmic risk (-3).",
+      "idealAnswer": "Leading diagnosis: Vasovagal / reflex (neurocardiogenic) syncope — she had a clear autonomic prodrome (warmth, nausea, ringing ears, graying vision, sweating), a classic trigger (prolonged standing in heat, emotional bereavement, poor intake), and rapid spontaneous recovery without prolonged confusion. Must-not-miss competitor: drug-induced long-QT with arrhythmic (torsades de pointes) syncope, given her QT-prolonging polypharmacy (citalopram, ondansetron, diphenhydramine) plus hypokalemia and hypomagnesemia. Also consider: orthostatic hypotension from her thiazide and volume depletion; other cardiac arrhythmia or structural disease; seizure; and hypoglycemia/anemia/GI bleed (all lower given the story and labs). Three mechanisms of syncope: (1) reflex/neurally-mediated (e.g. vasovagal, situational, carotid sinus); (2) orthostatic/hypovolemic (e.g. drug-induced or hemorrhagic orthostatic hypotension); (3) cardiac — arrhythmic (e.g. torsades from long QT, complete heart block) or structural (e.g. aortic stenosis, HOCM).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Vasovagal / neurocardiogenic syncope",
-            "points": 8
+            "item": "Vasovagal / reflex (neurocardiogenic) syncope",
+            "points": 6
           },
           {
-            "item": "Cardiac arrhythmia",
-            "points": 4
+            "item": "Drug-induced QT prolongation with arrhythmic (torsades) syncope",
+            "points": 5
           },
           {
-            "item": "Structural cardiac disease",
+            "item": "Other cardiac arrhythmia / structural cardiac syncope to exclude",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Orthostatic hypotension",
+            "item": "Orthostatic hypotension from diuretic / volume depletion",
             "points": 3
           },
           {
@@ -109,25 +115,34 @@
             "points": 2
           },
           {
-            "item": "Hypoglycemia/anemia/pregnancy",
-            "points": 2
+            "item": "Hypoglycemia / anemia / GI bleed",
+            "points": 1
           },
           {
-            "item": "Named leading dx w/ justification — clear prodrome, trigger, rapid recovery",
+            "item": "Names three mechanisms of syncope (reflex, orthostatic, cardiac) with examples",
             "points": 3
+          },
+          {
+            "item": "Named leading dx w/ justification — prodrome, trigger, rapid recovery",
+            "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on benign vasovagal without recognizing the QT-prolonging polypharmacy + electrolytes as a competing arrhythmic risk",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Cardiac arrhythmia",
-        "Structural cardiac disease"
+        "Drug-induced QT prolongation with arrhythmic (torsades) syncope",
+        "Other cardiac arrhythmia / structural cardiac syncope to exclude"
       ],
       "acceptableAlternatives": [
-        "Orthostatic hypotension",
+        "Orthostatic hypotension from diuretic / volume depletion",
         "Seizure",
-        "Hypoglycemia/anemia/pregnancy"
+        "Hypoglycemia / anemia / GI bleed"
       ]
     },
     {
@@ -136,46 +151,46 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "EKG (CANT-MISS — exclude arrhythmia/conduction disease,6). Orthostatic vital signs (3). Fingerstick glucose (2). CBC for anemia (2). Pregnancy test in a woman of childbearing age (2). PENALTY: extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint (-3 for over-testing); FAILING to get an EKG (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; CBC; BMP; Pregnancy; Orthostatics.",
+      "rubric": "12-lead EKG to measure the QT/QTc and exclude arrhythmia/conduction disease (CANT-MISS,5). BMP for sodium/potassium and renal function (3). Magnesium level given the QT and diuretic use (CANT-MISS,2). Orthostatic vital signs (2). Fingerstick/serum glucose (1). CBC for anemia/occult blood loss (1). Troponin to exclude ischemic trigger (1). PENALTY: ordering a CT head / tilt-table / prolonged outpatient monitoring as the FIRST step in an otherwise classic faint without checking the EKG and electrolytes (-3); FAILING to obtain an EKG (-2).",
+      "idealAnswer": "Order: EKG (to measure the QTc and exclude arrhythmia/conduction disease); BMP; Magnesium; Glucose; CBC; Troponin; Orthostatics; CXR. The EKG, BMP, and magnesium are the priority because the medication list and electrolytes raise drug-induced long QT.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "EKG",
-            "points": 6
+            "points": 5
+          },
+          {
+            "item": "Magnesium level",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Glucose",
-            "points": 2
-          },
-          {
-            "item": "CBC",
-            "points": 2
-          },
-          {
             "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Pregnancy",
-            "points": 2
+            "points": 3
           },
           {
             "item": "Orthostatics",
             "points": 2
+          },
+          {
+            "item": "Glucose",
+            "points": 1
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "Troponin",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "Extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint",
+            "item": "CT head / tilt-table / prolonged monitoring as the first step without checking the EKG and electrolytes",
             "points": -3
           },
           {
@@ -185,13 +200,16 @@
         ]
       },
       "requiredTests": [
-        "EKG"
+        "EKG",
+        "Magnesium level"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "Extensive cardiac/neuro imaging (CT head, echo, tilt-table, prolonged monitoring) in a classic low-risk vasovagal faint"
+        "CT head / tilt-table / prolonged monitoring as the first step without checking the EKG and electrolytes"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "EKG"
+      ]
     },
     {
       "id": "ekg_read",
@@ -199,33 +217,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = ventricular bigeminy (each sinus beat coupled to a wide premature ventricular complex). CREDIT: rate & rhythm (5); identifies the premature ventricular complexes (4); recognizes the bigeminal pattern — every sinus beat followed by a PVC (4); systematic read (2). PENALTY: calling the study normal / missing the bigeminy (-2).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they change your risk assessment.",
+      "rubric": "Findings = sinus rhythm ~72 bpm with a markedly PROLONGED QT (QTc ~480 ms) and broad/notched T waves, from QT-prolonging drugs plus hypokalemia and hypomagnesemia; NO acute ischemia, NO pre-excitation/delta wave, NO Brugada morphology, NO AV block. CREDIT: rate & rhythm — sinus (3); MEASURES/identifies the prolonged QT/QTc (5); attributes it to QT-prolonging meds + low K/Mg and links it to torsades risk (4); states pertinent negatives — no ischemia, no pre-excitation, no high-grade block (3). PENALTY: calling the tracing normal or missing the long QT (-3).",
       "keyFindings": [
-        "identifies premature ventricular complexes",
-        "recognizes the bigeminal pattern"
+        "sinus rhythm with a markedly prolonged QT/QTc",
+        "attributes the long QT to QT-prolonging drugs plus hypokalemia/hypomagnesemia and recognizes torsades risk"
       ],
       "criticalFindings": [
-        "Ventricular bigeminy (frequent PVCs)."
+        "Sinus rhythm with a markedly prolonged QTc (~480 ms) from QT-prolonging drugs plus hypokalemia/hypomagnesemia — predisposes to torsades de pointes."
       ],
       "commonMistakes": [
-        "counting the PVCs into the underlying rate",
-        "mistaking bigeminy for an irregular atrial rhythm"
+        "calling the EKG normal and missing the long QT",
+        "failing to connect the QT prolongation to her medications and low potassium/magnesium",
+        "mistaking the broad T waves for ischemia"
       ],
-      "idealAnswer": "Ventricular bigeminy: each sinus beat coupled to a wide PVC.",
+      "idealAnswer": "Sinus rhythm at ~72 bpm with a markedly prolonged QT interval (QTc ~480 ms) and broad/notched T waves. There is NO acute ischemia, NO delta wave/pre-excitation, NO Brugada-type morphology, and NO AV block. The prolonged QTc is the key abnormality: it is driven by her QT-prolonging medications (citalopram, ondansetron, diphenhydramine) compounded by hypokalemia (K 3.2) and hypomagnesemia (Mg 1.4), and it predisposes her to torsades de pointes. This raises her arrhythmic risk and is the actionable finding even though the clinical story is otherwise classic for a reflex faint — it mandates stopping the offending drugs, repleting potassium and magnesium, and monitoring the QTc.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Ventricular bigeminy (frequent PVCs)."
+          "Sinus rhythm with a markedly prolonged QTc (~480 ms) from QT-prolonging drugs plus hypokalemia/hypomagnesemia — predisposes to torsades de pointes."
         ],
         "coreActions": [
-          "identifies premature ventricular complexes",
-          "recognizes the bigeminal pattern"
+          "sinus rhythm with a markedly prolonged QT/QTc",
+          "attributes the long QT to QT-prolonging drugs plus hypokalemia/hypomagnesemia and recognizes torsades risk"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the long QT",
             "points": -3
           }
         ]
@@ -238,31 +257,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = tortuous, unfolded thoracic aorta with calcification of the aortic knob (chronic atherosclerotic change). CREDIT: identifies the tortuous/unfolded aorta with calcification (6); recognizes it as benign chronic atherosclerosis rather than acute pathology (4). PENALTY: calling the film normal / mistaking the unfolded aorta for dissection (-2).",
+      "rubric": "Findings = tortuous, unfolded thoracic aorta with calcification of the aortic knob (chronic atherosclerotic/hypertensive change); normal heart size, clear lungs, no effusion. CREDIT: identifies the tortuous/unfolded aorta with calcification (4); recognizes normal heart size and clear lungs with no acute process (3); recognizes it as benign chronic change rather than acute dissection (3). PENALTY: calling the film acutely abnormal / mistaking the unfolded aorta for dissection or inventing pathology (-3).",
       "keyFindings": [
         "tortuous/unfolded aorta with calcification",
-        "recognizes it as chronic atherosclerotic change"
+        "recognizes normal heart size, clear lungs, and no acute process"
       ],
       "criticalFindings": [
-        "Aortic tortuosity with calcification (atherosclerosis)."
+        "Tortuous, calcified thoracic aorta (chronic atherosclerotic/hypertensive change); otherwise normal film."
       ],
       "commonMistakes": [
-        "mistaking an unfolded aorta for mediastinal widening from dissection"
+        "mistaking an unfolded aorta for mediastinal widening from dissection",
+        "inventing an infiltrate or effusion on a clear film"
       ],
-      "idealAnswer": "Atherosclerotic, tortuous thoracic aorta with a calcified aortic knob.",
+      "idealAnswer": "Tortuous, unfolded thoracic aorta with a calcified aortic knob — chronic atherosclerotic/hypertensive change. The heart size is normal, the lungs are clear, and there is no effusion or acute infiltrate. This is a benign incidental finding, not an acute aortic or cardiopulmonary process, and does not explain the syncope.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Aortic tortuosity with calcification (atherosclerosis)."
+          "Tortuous, calcified thoracic aorta (chronic atherosclerotic/hypertensive change); otherwise normal film."
         ],
         "coreActions": [
           "tortuous/unfolded aorta with calcification",
-          "recognizes it as chronic atherosclerotic change"
+          "recognizes normal heart size, clear lungs, and no acute process"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study acutely abnormal / invents pathology",
             "points": -3
           }
         ]
@@ -272,9 +292,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "With a normal EKG and a classic story, what is your diagnosis and how do you risk-stratify?",
-      "rubric": "Vasovagal syncope (6). Applies a risk-stratification framework — young, clear prodrome/trigger, normal exam and EKG = low risk (4).",
-      "idealAnswer": "Vasovagal (neurocardiogenic) syncope. Risk-stratify as low risk: young patient, clear prodrome and trigger (prolonged standing, heat, crowd), rapid spontaneous recovery, normal exam, and a non-ischemic EKG with no high-risk conduction features — safe for discharge without admission.",
+      "prompt": "Now that you have the EKG, electrolytes, and orthostatics, commit to your most likely diagnosis. Explain how you weigh the classic reflex story against the prolonged QT and abnormal electrolytes, name the discriminating feature, and name any residual uncertainty you would address before discharge.",
+      "rubric": "Commits to vasovagal (reflex) syncope as the most likely cause — clear prodrome, classic trigger, rapid recovery, reproduced orthostatic drop — while explicitly acknowledging the COMPETING drug-induced long-QT as a real arrhythmic risk that must be corrected (6). Names the discriminating features (a witnessed autonomic prodrome and rapid recovery favor reflex syncope over sudden arrhythmic collapse; the QTc ~480 ms is concerning but driven by reversible drug/electrolyte causes, not a fixed channelopathy) and the residual uncertainty (must normalize the QTc off offending drugs and with repletion, and consider telemetry/echo before fully clearing her) (4).",
+      "idealAnswer": "Most likely diagnosis: vasovagal (reflex) syncope. The witnessed autonomic prodrome (warmth, nausea, ringing ears, graying vision, sweating), the classic trigger (prolonged standing in heat, emotional bereavement, poor intake), rapid spontaneous recovery without prolonged confusion, and a reproduced orthostatic drop all point to a reflex/orthostatic mechanism rather than a sudden arrhythmic collapse. The discriminating feature is the gradual prodrome with quick recovery — arrhythmic syncope is typically abrupt and without warning. HOWEVER, this is not a clean benign faint: the EKG shows a prolonged QTc (~480 ms) driven by QT-prolonging drugs (citalopram, ondansetron, diphenhydramine) plus hypokalemia (K 3.2) and hypomagnesemia (Mg 1.4), which is a genuine competing arrhythmic (torsades) risk. Residual uncertainty I would resolve before discharge: stop the offending QT-prolonging drugs, replete potassium and magnesium, repeat the EKG to confirm the QTc normalizes, keep her on telemetry until it does, and consider an echocardiogram to exclude structural disease given her age and a single concerning EKG. I would only call this a low-risk reflex faint once the QTc has corrected and telemetry is unrevealing.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -287,84 +307,91 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH syncope (reflex): reassurance/education – benign (CANT-MISS,6); trigger avoidance (5); physical counter-pressure maneuvers (4); ensure hydration/salt (3); confirm low-risk features + normal ECG before discharge (4). PENALTY: admitting/over-testing a clear low-risk vasovagal event (-2); missing a high-risk feature (exertional, no prodrome, abnormal ECG) (-3).",
-      "idealAnswer": "Reassurance and education – benign prognosis. Counsel on avoiding triggers (prolonged standing, heat, dehydration), recognizing prodrome, and physical counter-pressure maneuvers (leg crossing, hand grip). Ensure hydration and salt intake. No cardiac admission if low-risk history and normal ECG. Reserve medications for recurrent refractory cases.",
+      "prompt": "What is your management plan, including disposition and what must be true before this patient can be safely discharged?",
+      "rubric": "Per MGH syncope + acquired long-QT management: STOP the QT-prolonging/offending drugs — citalopram, ondansetron, diphenhydramine — and do medication reconciliation (CANT-MISS,5); replete potassium and magnesium and recheck (CANT-MISS,5); place on telemetry and repeat the EKG to confirm the QTc normalizes (4); IV fluids for volume depletion and hold/adjust the thiazide (3); reflex-syncope counseling — trigger avoidance, recognize prodrome, physical counter-pressure maneuvers, hydration/salt (3); SAFE-DISCHARGE plan — discharge only once QTc corrected and telemetry unrevealing, with med reconciliation, a corrected medication list, PCP/cardiology follow-up, and return precautions; consider echo if structural concern (CANT-MISS,5). PENALTY: discharging her on the unchanged QT-prolonging regimen with an uncorrected QTc/electrolytes (-4); restarting or ignoring the offending drugs / missing the torsades risk (-3); admitting/over-testing a reflex faint AFTER the QT and electrolytes are corrected and benign (-2).",
+      "idealAnswer": "Treat both problems. (1) Stop the QT-prolonging and offending drugs now — citalopram, ondansetron, and diphenhydramine — and perform a careful medication reconciliation (also flag the OTC supplement). (2) Replete potassium and magnesium (give IV/oral magnesium and potassium) and recheck levels. (3) Place her on telemetry and repeat the EKG to confirm the QTc normalizes. (4) Give IV fluids for her volume depletion and hold/adjust the hydrochlorothiazide. (5) Counsel on reflex syncope: avoid prolonged standing/heat/dehydration, recognize the prodrome, use physical counter-pressure maneuvers (leg crossing, hand grip), and maintain hydration and salt. (6) Safe discharge/disposition: she can be discharged only once the QTc has corrected and telemetry is unrevealing — with a reconciled, corrected medication list (no QT-prolonging agents, an alternative antidepressant/antiemetic if needed), PCP and cardiology follow-up, electrolyte recheck, and clear return precautions. Consider an echocardiogram to exclude structural disease given her age and the abnormal EKG. Do NOT send her home on the unchanged regimen with an uncorrected QTc.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Reassurance and patient education",
-            "points": 6
+            "item": "Stop the QT-prolonging/offending drugs (citalopram, ondansetron, diphenhydramine) and reconcile medications",
+            "points": 5
           },
           {
-            "item": "Trigger avoidance counseling",
+            "item": "Replete potassium and magnesium and recheck",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Physical counter-pressure maneuvers",
+            "item": "Telemetry and repeat EKG to confirm the QTc normalizes",
             "points": 4
           },
           {
-            "item": "Confirm low-risk features and normal ECG",
-            "points": 4
-          },
-          {
-            "item": "Hydration and salt intake",
+            "item": "IV fluids for volume depletion and hold/adjust the thiazide",
             "points": 3
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "Consider medication only if recurrent/refractory",
-            "points": 1
+            "item": "Reflex-syncope counseling (trigger avoidance, counter-pressure maneuvers, hydration/salt)",
+            "points": 3
+          },
+          {
+            "item": "Safe-discharge plan: discharge only once QTc corrected and telemetry unrevealing, with med reconciliation, corrected medication list, follow-up, and return precautions; consider echo",
+            "points": 5
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "Missing a high-risk feature",
+            "item": "Discharging on the unchanged QT-prolonging regimen with an uncorrected QTc/electrolytes",
+            "points": -4
+          },
+          {
+            "item": "Restarting or ignoring the offending drugs / missing the torsades risk",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Reassurance and patient education",
-        "Trigger avoidance counseling"
+        "Stop the QT-prolonging/offending drugs (citalopram, ondansetron, diphenhydramine) and reconcile medications",
+        "Replete potassium and magnesium and recheck"
       ],
       "optionalActions": [
-        "Physical counter-pressure maneuvers",
-        "Confirm low-risk features and normal ECG",
-        "Hydration and salt intake",
-        "Consider medication only if recurrent/refractory"
+        "Telemetry and repeat EKG to confirm the QTc normalizes",
+        "IV fluids for volume depletion and hold/adjust the thiazide",
+        "Reflex-syncope counseling (trigger avoidance, counter-pressure maneuvers, hydration/salt)",
+        "Safe-discharge plan: discharge only once QTc corrected and telemetry unrevealing, with med reconciliation, corrected medication list, follow-up, and return precautions; consider echo"
       ],
       "unsafeActions": [
-        "Missing a high-risk feature"
+        "Discharging on the unchanged QT-prolonging regimen with an uncorrected QTc/electrolytes",
+        "Restarting or ignoring the offending drugs / missing the torsades risk"
       ],
-      "consults": [],
-      "disposition": "Discharge if low-risk",
+      "consults": [
+        "Cardiology"
+      ],
+      "disposition": "Observation/telemetry until QTc and electrolytes corrected, then discharge with follow-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Syncope (Vasovagal)",
+        "section": "Syncope (Reflex) and Acquired Long QT",
         "page": 37
       }
     }
   ],
   "standardizedPatient": {
     "demeanor": "fatigued",
-    "emotionalState": "concerned",
+    "emotionalState": "tearful",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use",
-      "pregnancy_possibility"
+      "medication_supplement_use",
+      "mood_depression",
+      "bereavement"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "28-year-old woman, now feeling back to normal, mildly embarrassed. Good historian.",
+    "communicationStyle": "answers directly but under-reports medications and supplements unless asked specifically",
+    "affect": "58-year-old recently bereaved woman, now back to baseline, intermittently tearful and a little embarrassed. Average historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the full medication and supplement list unless asked specifically what she takes",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -372,14 +399,33 @@
   },
   "historyTriggers": [
     {
-      "id": "alcohol_use",
-      "category": "substance_use",
+      "id": "medications",
+      "category": "meds",
       "triggerConcepts": [
-        "alcohol",
-        "drinking",
-        "how much do you drink",
-        "etoh",
-        "alcohol use"
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "supplements",
+        "over the counter",
+        "pills",
+        "new medication"
+      ],
+      "response": "[Reveal the full medication and supplement list from patientFile only when asked specifically; otherwise give the vague 'a few pills for blood pressure and mood' reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "mood_depression",
+      "category": "psych",
+      "triggerConcepts": [
+        "mood",
+        "depression",
+        "antidepressant",
+        "how are you coping",
+        "stress",
+        "bereavement",
+        "grief"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -387,16 +433,20 @@
       "hiddenUntilAsked": true
     },
     {
-      "id": "pregnancy_possibility",
-      "category": "ob_gyn",
+      "id": "witness_account",
+      "category": "hpi",
       "triggerConcepts": [
-        "pregnancy",
-        "could you be pregnant",
-        "last menstrual period",
-        "lmp"
+        "what did people see",
+        "witnesses",
+        "bystanders",
+        "prodrome",
+        "warning",
+        "how did you recover",
+        "jerking",
+        "after the event"
       ],
-      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "core",
+      "response": "[Reveal the witness/prodrome/recovery details from patientFile only when asked about what bystanders saw or about the prodrome and recovery.]",
+      "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -419,9 +469,10 @@
       "category": "hpi",
       "triggerConcepts": [
         "describe the",
-        "what does it feel like",
+        "what did it feel like",
         "character",
-        "quality"
+        "quality",
+        "what were you doing"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -429,12 +480,15 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "severity",
-      "category": "hpi",
+      "id": "cardiac_symptoms",
+      "category": "ros",
       "triggerConcepts": [
-        "how bad",
-        "severity",
-        "scale"
+        "chest pain",
+        "palpitations",
+        "racing heart",
+        "shortness of breath",
+        "exertion",
+        "happened while exercising"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -447,7 +501,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "tongue biting",
+        "incontinence"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -459,9 +515,10 @@
       "category": "hpi",
       "triggerConcepts": [
         "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
+        "what brings it on",
+        "trigger",
+        "standing",
+        "heat"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -474,7 +531,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "heart disease",
+        "diabetes",
+        "cancer"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -482,12 +542,31 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "medications",
-      "category": "meds",
+      "id": "intake_volume",
+      "category": "ros",
       "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "eating and drinking",
+        "fluid intake",
+        "dehydrated",
+        "vomiting",
+        "diarrhea",
+        "bleeding",
+        "black stools"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "sudden death",
+        "young deaths",
+        "drowning",
+        "heart problems in the family"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -500,7 +579,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "fainted before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -510,8 +590,18 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: regular, normal S1/S2, NO murmur.",
+      "id": "obtain_orthostatic_vitals_finding_1",
+      "finding": "Orthostatics: lying 118/74 (HR 70) → standing 96/62 (HR 92), with a brief reproduction of her lightheadedness — a >20 mmHg systolic drop with a compensatory tachycardia, consistent with volume depletion.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic drop."
+    },
+    {
+      "id": "auscultate_aortic_area_finding_2",
+      "finding": "Cardiac: regular rate and rhythm, normal S1/S2, NO murmur, no S3/S4, no carotid bruit; non-displaced PMI (argues against significant structural disease such as aortic stenosis or HOCM).",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -521,21 +611,32 @@
       "normalIfNotPresent": "No murmur appreciated."
     },
     {
-      "id": "obtain_orthostatic_vitals_finding_2",
-      "finding": "Vitals: BP 116/72, HR 74, RR 14, 36.9°C, SpO2 99% RA; mild orthostatic drop without significant symptoms.",
+      "id": "assess_mucous_membranes_finding_3",
+      "finding": "Mucous membranes slightly dry; skin turgor mildly reduced — consistent with mild volume depletion.",
       "revealedBy": [
-        "obtain_orthostatic_vitals"
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
       ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No orthostatic drop."
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes, normal turgor."
     },
     {
-      "id": "assess_motor_strength_finding_3",
-      "finding": "Neuro: fully oriented, no focal deficit, no tongue laceration.",
+      "id": "assess_jvp_finding_4",
+      "finding": "JVP not elevated; no signs of volume overload or heart failure.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "JVP normal."
+    },
+    {
+      "id": "assess_motor_strength_finding_5",
+      "finding": "Neuro: fully oriented, no focal deficit, normal gait, no side-of-tongue laceration (only a tiny bite at the tip) — argues against a generalized seizure or stroke.",
       "revealedBy": [
         "assess_motor_strength",
-        "assess_pronator_drift"
+        "assess_mental_status"
       ],
       "importance": "core",
       "points": 2,
@@ -552,63 +653,70 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Vasovagal syncope",
-    "diagnosticFramework": "28F presents after a brief loss of consciousness while standing in a hot, crowded room, preceded by nausea and lightheadedness. The diagnosis is Vasovagal syncope, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58F with hypertension, type 2 diabetes, depression, and a remote breast-cancer history on a QT-prolonging polypharmacy regimen presents after a witnessed transient loss of consciousness while standing in the heat at a funeral, with a clear autonomic prodrome and rapid recovery. The leading diagnosis is Vasovagal (reflex) syncope, reached by eliciting the focused history (including the under-reported full medication/supplement list), performing the targeted exam (orthostatics, cardiac auscultation, volume assessment), and interpreting the patient's OWN EKG, which shows a markedly prolonged QTc from her QT-prolonging drugs plus hypokalemia and hypomagnesemia. The complexity is the genuine competing must-not-miss of drug-induced long-QT/torsades, which must be corrected before she can be cleared even though the clinical story favors a reflex faint.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular, normal S1/S2, NO murmur.",
-      "Vitals: BP 116/72, HR 74, RR 14, 36.9°C, SpO2 99% RA; mild orthostatic drop without significant symptoms.",
-      "Neuro: fully oriented, no focal deficit, no tongue laceration."
+      "Orthostatics: lying 118/74 (HR 70) → standing 96/62 (HR 92), with a brief reproduction of her lightheadedness — a >20 mmHg systolic drop with a compensatory tachycardia, consistent with volume depletion.",
+      "Cardiac: regular rate and rhythm, normal S1/S2, NO murmur, no S3/S4, no carotid bruit; non-displaced PMI (argues against significant structural disease such as aortic stenosis or HOCM).",
+      "Mucous membranes slightly dry; skin turgor mildly reduced — consistent with mild volume depletion.",
+      "JVP not elevated; no signs of volume overload or heart failure.",
+      "Neuro: fully oriented, no focal deficit, normal gait, no side-of-tongue laceration (only a tiny bite at the tip) — argues against a generalized seizure or stroke."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "CBC",
       "BMP",
-      "Pregnancy",
+      "Magnesium",
+      "Troponin",
       "Orthostatics"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Vasovagal syncope while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Vasovagal syncope and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the comorbidity and polypharmacy.",
+      "Elicit the focused history, specifically asking for the FULL medication and supplement list (which she under-reports) and the witness account of the prodrome and recovery.",
+      "Perform the targeted physical exam — orthostatic vitals, cardiac auscultation, volume status, and a brief neuro exam.",
+      "Build a differential led by vasovagal/reflex syncope while explicitly naming drug-induced long-QT/torsades and other cardiac causes as the competing must-not-miss, and name three mechanisms of syncope.",
+      "Order EKG, BMP, magnesium, glucose, CBC, troponin, and orthostatics; interpret the patient's own EKG showing a prolonged QTc and the multi-system electrolyte abnormalities.",
+      "Commit to vasovagal syncope while correcting the reversible long-QT (stop offending drugs, replete K/Mg, telemetry until the QTc normalizes), and arrange a safe discharge with medication reconciliation and follow-up."
     ],
     "commonPitfalls": [
-      "Missing a high-risk feature"
+      "Anchoring on a benign faint and missing the QT-prolonging polypharmacy and low K/Mg",
+      "Reading the EKG as normal and missing the long QT",
+      "Discharging her on the unchanged QT-prolonging regimen with an uncorrected QTc",
+      "Restarting or ignoring the offending drugs / missing the torsades risk"
     ],
     "managementPearls": [
-      "Reassurance and patient education",
-      "Trigger avoidance counseling"
+      "Stop the QT-prolonging/offending drugs and reconcile medications",
+      "Replete potassium and magnesium and confirm the QTc normalizes before discharge"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "auscultate_aortic_area",
-      "obtain_orthostatic_vitals"
+      "obtain_orthostatic_vitals",
+      "auscultate_aortic_area"
     ],
     "criticalWorkupItems": [
-      "EKG"
+      "EKG",
+      "Magnesium level"
     ],
     "criticalInterpretationItems": [
-      "Ventricular bigeminy (frequent PVCs).",
-      "Aortic tortuosity with calcification (atherosclerosis)."
+      "Sinus rhythm with a markedly prolonged QTc (~480 ms) from QT-prolonging drugs plus hypokalemia/hypomagnesemia — predisposes to torsades de pointes.",
+      "Tortuous, calcified thoracic aorta (chronic atherosclerotic/hypertensive change); otherwise normal film."
     ],
     "criticalManagementItems": [
-      "Reassurance and patient education",
-      "Trigger avoidance counseling"
+      "Stop the QT-prolonging/offending drugs (citalopram, ondansetron, diphenhydramine) and reconcile medications",
+      "Replete potassium and magnesium and recheck"
     ],
     "keyImageInterpretationFindings": [
-      "Ventricular bigeminy (frequent PVCs).",
-      "Aortic tortuosity with calcification (atherosclerosis)."
+      "Sinus rhythm with a markedly prolonged QTc (~480 ms) from QT-prolonging drugs plus hypokalemia/hypomagnesemia — predisposes to torsades de pointes.",
+      "Tortuous, calcified thoracic aorta (chronic atherosclerotic/hypertensive change); otherwise normal film."
     ],
     "criticalImageInterpretationFindings": [
-      "Ventricular bigeminy (frequent PVCs).",
-      "Aortic tortuosity with calcification (atherosclerosis)."
+      "Sinus rhythm with a markedly prolonged QTc (~480 ms) from QT-prolonging drugs plus hypokalemia/hypomagnesemia — predisposes to torsades de pointes.",
+      "Tortuous, calcified thoracic aorta (chronic atherosclerotic/hypertensive change); otherwise normal film."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Always measure the QT/QTc — a long QT in a patient on multiple QT-prolonging drugs with low K/Mg is the actionable finding even when the syncope story sounds benign.",
+      "Attribute an acquired long QT to its reversible causes (drugs + electrolytes) rather than assuming a fixed channelopathy.",
+      "An incidental tortuous, calcified aorta is a chronic finding — name it, distinguish it from acute dissection, and judge that it does not explain the syncope."
     ]
   },
   "communicationScoring": {
@@ -619,11 +727,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's bereavement and concern",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks specifically and non-judgmentally about all medications and supplements",
         "points": 1
       },
       {
@@ -638,8 +746,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG (long QT) + standalone CXR interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

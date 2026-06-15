@@ -1,0 +1,797 @@
+{
+  "id": "liver-09",
+  "category": "Abnormal Liver Enzymes",
+  "difficulty": "hard",
+  "title": "Fatigue, joint pain, and abnormal liver tests in a 'bronzed' middle-aged man",
+  "diagnosis": "Hereditary hemochromatosis",
+  "chart": {
+    "ageSex": "52M",
+    "cc": "Fatigue and abnormal liver tests",
+    "oneLiner": "52M referred for months of fatigue, achy hand joints, and low libido found to have mildly abnormal liver enzymes; he has recently been told he has 'new diabetes' and his wife thinks his skin looks tanned even though he has not been in the sun.",
+    "vitals": {
+      "BP": "128/80",
+      "HR": "58",
+      "RR": "14",
+      "Temp": "36.8°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've just been wiped out for months — my hands ache, I've lost my drive, and now they tell me my liver tests and my sugar are off.",
+  "patientFile": "PERSONA: 52-year-old man, tired-looking with a deep tan complexion despite a desk job and little sun. Calm, cooperative, a reasonable historian once asked. Somewhat embarrassed about the sexual-function questions.\n\nHPI: 6-9 months of progressive FATIGUE and low energy. Aching, stiff knuckles — points to the 2nd and 3rd large knuckles (metacarpophalangeal joints) of both hands; mild morning stiffness; occasionally his wrists and knees ache too. A primary-care visit for fatigue found 'liver tests a little high' and a fasting glucose in the diabetes range, so he was just started on metformin and told he has 'new diabetes' even though he is not very overweight and has no strong family history of diabetes (only mention the new diabetes/metformin if asked about medical problems or medications). His wife says his skin has looked tanned/bronze over the past year even in winter (only mention the skin color change if asked about skin or what others have noticed). Low libido and erectile difficulty for about a year, which he found embarrassing (only reveal if asked about sexual function/libido or hormonal symptoms). NO abdominal pain, NO jaundice that he has noticed, NO dark urine or pale stools, NO leg swelling, NO chest pain. He did notice he gets a bit more short of breath climbing stairs and his heart sometimes 'skips' (only if asked about cardiac/exertional symptoms).\nPMH: 'new' type 2 diabetes diagnosed 2 months ago (atypical — lean, no family history); mild hypertension. NO known prior liver disease, NO prior transfusions, NO iron infusions (only reveal transfusion/iron history if asked).\nMEDS: metformin (started 2 months ago); lisinopril; a daily MULTIVITAMIN that he takes with vitamin C, and he sometimes takes an over-the-counter IRON supplement because a wellness blog said it helps fatigue (only reveal the iron supplement and vitamin C if asked specifically about supplements/over-the-counter products — this is a confounder that worsens iron loading). NO regular acetaminophen, NO statin, NO amiodarone. ALLERGIES: none.\nSOCIAL: drinks 2-3 beers a couple nights a week (modest — NOT a heavy drinker); denies binge drinking; no tobacco; no IV drugs; engineer; no recent travel; no tattoos; monogamous.\nFAMILY HISTORY: of Northern European ancestry; a brother died in his 50s of 'liver problems and heart failure' and an uncle had 'cirrhosis' though he 'didn't drink much'; father had 'arthritis' and diabetes (only reveal on direct family-history questioning).\nROS: fatigue, arthralgias, low libido, mild exertional dyspnea, occasional palpitations; otherwise negative.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing but tired; diffuse slate-grey/bronze skin hyperpigmentation, most noticeable on sun-exposed areas and old scars, without obvious jaundice.\n- Vitals: BP 128/80, HR 58 (mild bradycardia), RR 14, 36.8C, SpO2 98% RA.\n- Skin: generalized bronze/grey hyperpigmentation; no spider angiomata, no obvious jaundice; no needle track marks.\n- Eyes: sclera NOT icteric; no Kayser-Fleischer rings.\n- Joints: tenderness and mild bony swelling of the 2nd and 3rd metacarpophalangeal joints bilaterally (the 'iron fist' / squared-off knuckle pattern); no warmth or erythema; mild reduced grip.\n- Abdomen: firm, mildly enlarged liver (hepatomegaly) palpable ~3 cm below the costal margin, non-tender; spleen tip just palpable; NO ascites, NO shifting dullness, NO marked tenderness.\n- Cardiac: regular but bradycardic; soft S1; no murmur; JVP normal; no peripheral edema (early cardiac involvement without overt failure).\n- Lungs: clear.\n- Neuro: no asterixis, alert and oriented.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the skin bronzing, the new atypical diabetes, the low libido/erectile dysfunction, the iron supplement + vitamin C, the family history, or the palpitations unless asked about the relevant topic (skin/appearance, medical problems/medications, sexual or hormonal symptoms, supplements/OTC products, family history, or cardiac symptoms).\n- The bronze skin, MCP joint findings, hepatomegaly, splenomegaly, and bradycardia are revealed only when the relevant exam is performed.\n- Emphasize that the alcohol use is modest and the diabetes is atypical (lean, no family history) only if directly asked — do not editorialize.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "LFTs": "AST 78, ALT 92 (mild-moderate hepatocellular transaminitis, ALT >= AST and well under 5x ULN — chronic low-grade pattern, NOT the thousands), Alk Phos 110, total bilirubin 1.0 (normal), albumin 3.9, INR 1.1 — synthetic function preserved.",
+      "IronStudies": "Serum ferritin markedly ELEVATED at 1850 ng/mL; serum iron high; TIBC low; TRANSFERRIN SATURATION 78% (calculated iron/TIBC; markedly elevated, well above the 45% screening threshold) — the hallmark of iron overload. (Ferritin is also an acute-phase reactant, but a transferrin saturation this high with no inflammation points to true iron overload, not just inflammation.)",
+      "GlucoseA1c": "Fasting glucose 168 mg/dL and HbA1c 8.1% — confirms diabetes; in this context this is 'bronze diabetes' from pancreatic islet iron deposition, not ordinary type 2.",
+      "HormonePanel": "LH and FSH inappropriately LOW with a LOW morning testosterone — hypogonadotropic hypogonadism from pituitary iron deposition (explains the low libido/erectile dysfunction); TSH normal.",
+      "HFEGenetics": "HFE gene testing: HOMOZYGOUS for the C282Y mutation (C282Y/C282Y) — confirms hereditary (type 1) hemochromatosis. Hepatitis B and C serologies NEGATIVE; ANA/anti-smooth-muscle and ceruloplasmin normal (excludes autoimmune hepatitis and Wilson disease).",
+      "LiverImaging": "Right-upper-quadrant ultrasound: hepatomegaly with coarsened echotexture and early nodularity suggesting evolving cirrhosis; no biliary dilation or mass. MRI shows markedly LOW liver signal on T2*/in-phase imaging consistent with hepatic iron overload (high liver iron concentration); AFP sent given cirrhosis risk."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/av-block-2nd-degree-mobitz-i-wenckebach/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus bradycardia ~56 bpm with a prolonged PR interval (~260 ms, first-degree AV block) and intermittent dropped beats consistent with conduction-system disease, plus relatively low limb-lead QRS voltages — the electrocardiographic footprint of myocardial iron deposition involving the conduction system, not an acute ischemic event.",
+      "verify": "Source a tracing matching: sinus bradycardia with first-degree (and intermittent second-degree) AV block and low-ish limb voltages reflecting infiltrative/iron cardiomyopathy — self-host with credit to litfl.com.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "integrated": true,
+      "litflStudyN": 43,
+      "imageDescription": "12-lead with sinus bradycardia, a prolonged PR interval / second-degree AV block and modest low limb-lead voltage — conduction disease from infiltrative (iron) cardiomyopathy.",
+      "searchTerms": [
+        "first degree AV block prolonged PR ECG",
+        "second degree AV block conduction disease infiltrative cardiomyopathy ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A bradycardic 52-year-old man with iron overload and palpitations has a tracing showing a long PR interval with intermittently dropped beats and modestly low voltages."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=cardiomegaly%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Mild cardiomegaly (increased cardiothoracic ratio) with clear lung fields and no pulmonary edema or effusion — consistent with an early infiltrative/iron cardiomyopathy without overt failure.",
+      "verify": "Source a film matching: mild cardiomegaly with clear lungs and no congestion. Self-host with appropriate credit; do not reuse a prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "PA chest radiograph showing mild cardiomegaly with clear lungs and no congestion",
+      "searchTerms": [
+        "mild cardiomegaly chest x-ray clear lungs",
+        "enlarged cardiac silhouette no pulmonary edema chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 52-year-old man with fatigue and palpitations has a chest film showing a mildly enlarged heart with clear lungs."
+    }
+  },
+  "revealKeys": [
+    "LFTs",
+    "IronStudies",
+    "GlucoseA1c",
+    "HormonePanel",
+    "HFEGenetics",
+    "LiverImaging",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "IronStudies",
+    "HFEGenetics",
+    "LFTs"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical in this middle-aged man with chronic mild transaminitis plus arthralgias, bronze skin, new atypical diabetes, and low libido, list your differential (note your leading diagnosis). Explicitly name the chronic liver diseases you must screen for in a workup of persistently abnormal liver enzymes.",
+      "rubric": "Hereditary hemochromatosis / iron overload (leading,7). NAFLD/NASH — a key competitor given diabetes and transaminitis (CANT-MISS competitor,4). Alcoholic liver disease — competitor; must quantify his alcohol because it confounds (CANT-MISS competitor,4). Chronic viral hepatitis B/C (core,3). Autoimmune hepatitis (core,2). Wilson disease / alpha-1 antitrypsin deficiency in the inherited-metabolic bucket (core,2). Recognizes the MULTI-SYSTEM pattern — liver + 2nd/3rd MCP arthropathy + bronze skin + atypical lean diabetes + hypogonadism + bradycardia/conduction disease — points to a systemic iron-overload syndrome and mandates iron studies (core,3). PENALTY: anchoring on 'ordinary type 2 diabetes + fatty liver' and missing the unifying iron-overload story (-3).",
+      "idealAnswer": "Leading diagnosis: Hereditary hemochromatosis (iron overload). The picture is a genuine fork against the two commonest causes of chronic transaminitis: NAFLD/NASH (favored by his diabetes) and alcoholic liver disease (must quantify his alcohol — here it is only modest, which argues against it being the whole story). Must also screen for chronic viral hepatitis B and C, autoimmune hepatitis, and the other inherited/metabolic causes (Wilson disease, alpha-1 antitrypsin deficiency). What ties it together and points away from simple NAFLD/alcohol is the MULTI-SYSTEM constellation: liver disease PLUS a 2nd/3rd MCP arthropathy, bronze/slate skin, atypical lean new-onset diabetes ('bronze diabetes'), hypogonadal low libido, and bradycardia/conduction disease — a systemic iron-overload syndrome that mandates transferrin saturation and ferritin.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Hereditary hemochromatosis / iron overload",
+            "points": 7
+          },
+          {
+            "item": "NAFLD / NASH (competing leading dx given diabetes)",
+            "points": 4
+          },
+          {
+            "item": "Alcoholic liver disease (competitor — quantify alcohol)",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Chronic viral hepatitis B/C",
+            "points": 3
+          },
+          {
+            "item": "Autoimmune hepatitis",
+            "points": 2
+          },
+          {
+            "item": "Wilson disease / alpha-1 antitrypsin deficiency (inherited-metabolic)",
+            "points": 2
+          },
+          {
+            "item": "Recognizes the multi-system iron-overload pattern (liver + MCP arthropathy + bronze skin + atypical diabetes + hypogonadism + conduction disease) and mandates iron studies",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchoring on ordinary type 2 diabetes + fatty liver and missing the unifying iron-overload story",
+            "points": -3
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "NAFLD / NASH",
+        "Alcoholic liver disease"
+      ],
+      "acceptableAlternatives": [
+        "Chronic viral hepatitis B/C",
+        "Autoimmune hepatitis",
+        "Wilson disease / alpha-1 antitrypsin deficiency"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order to evaluate persistently abnormal liver enzymes with this multi-system picture?",
+      "rubric": "Iron studies FIRST — fasting transferrin saturation AND ferritin (transferrin saturation >45% is the screening trigger) (CANT-MISS,5). HFE genetic testing (C282Y/H63D) once iron studies suggest overload (CANT-MISS,3). LFTs with synthetic function (albumin/INR) (2). Viral hepatitis B/C serologies + autoimmune (ANA/ASMA) + ceruloplasmin to complete the chronic-liver screen (2). Fasting glucose/HbA1c and a pituitary/gonadal hormone panel (LH/FSH/testosterone) for the extrahepatic involvement (2). RUQ ultrasound +/- MRI to assess for cirrhosis and hepatic iron, with AFP given cirrhosis risk (1). PENALTY: jumping to a liver biopsy before non-invasive iron studies and HFE testing (-2); ordering only a fatty-liver/alcohol workup and omitting iron studies (-3).",
+      "idealAnswer": "Order: fasting TRANSFERRIN SATURATION and FERRITIN first (transferrin saturation >45% is the screening trigger for iron overload); then HFE genotyping (C282Y/H63D) to confirm hereditary hemochromatosis. Complete the chronic-liver screen — LFTs with albumin/INR, hepatitis B and C serologies, autoimmune markers (ANA/anti-smooth-muscle), and ceruloplasmin (Wilson). Work up the extrahepatic organs: fasting glucose/HbA1c and a hormone panel (LH, FSH, morning testosterone) for the hypogonadism. RUQ ultrasound (and MRI to quantify hepatic iron / look for cirrhosis), with AFP given hepatocellular-carcinoma risk in cirrhotic iron overload. Avoid jumping straight to liver biopsy — non-invasive iron studies plus HFE testing usually make the diagnosis.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Fasting transferrin saturation and ferritin (iron studies first)",
+            "points": 5
+          },
+          {
+            "item": "HFE genetic testing (C282Y/H63D)",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "LFTs with synthetic function (albumin/INR)",
+            "points": 2
+          },
+          {
+            "item": "Viral hepatitis B/C + autoimmune markers + ceruloplasmin (chronic-liver screen)",
+            "points": 2
+          },
+          {
+            "item": "Fasting glucose/HbA1c and pituitary/gonadal hormone panel (LH/FSH/testosterone)",
+            "points": 2
+          },
+          {
+            "item": "RUQ ultrasound +/- MRI for cirrhosis/hepatic iron, with AFP",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Jumping to liver biopsy before non-invasive iron studies and HFE testing",
+            "points": -2
+          },
+          {
+            "item": "Ordering only a fatty-liver/alcohol workup and omitting iron studies",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Fasting transferrin saturation and ferritin (iron studies first)",
+        "HFE genetic testing (C282Y/H63D)"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "Jumping to liver biopsy before non-invasive iron studies and HFE testing",
+        "Ordering only a fatty-liver/alcohol workup and omitting iron studies"
+      ],
+      "orderSensitiveActions": [
+        "Fasting transferrin saturation and ferritin (iron studies first)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is THIS patient's 12-lead EKG, taken because he is bradycardic and reports palpitations. Describe your findings and tie them to his presentation.",
+      "rubric": "Findings = sinus bradycardia with a prolonged PR interval (first-degree AV block) and intermittent dropped beats (second-degree AV block) plus modestly low limb-lead voltage — CONDUCTION-SYSTEM disease from infiltrative (iron) cardiomyopathy, NOT acute ischemia. CREDIT: systematic rate & rhythm read identifying bradycardia (4); recognizes the prolonged PR / AV block as conduction disease (6); links it to myocardial iron deposition as a fourth extrahepatic organ involved and flags the risk of progression to high-grade block requiring monitoring/pacing (5). PENALTY: calling the study normal, or reading it as an acute coronary event / primary nodal disease without tying it to iron-overload infiltration (-3).",
+      "keyFindings": [
+        "recognizes sinus bradycardia with a prolonged PR / AV block (conduction-system disease)",
+        "links the conduction disease and low voltages to myocardial iron deposition and flags risk of progression to high-grade block"
+      ],
+      "criticalFindings": [
+        "Sinus bradycardia with first-degree (and intermittent second-degree) AV block and modestly low limb-lead voltage — conduction-system disease from iron (infiltrative) cardiomyopathy, a fourth organ of iron overload, with risk of progression to high-grade block."
+      ],
+      "commonMistakes": [
+        "calling the tracing normal",
+        "reading the AV block as an acute coronary event",
+        "missing that the conduction disease is part of the systemic iron-overload syndrome"
+      ],
+      "idealAnswer": "Sinus bradycardia (~56 bpm) with a prolonged PR interval (first-degree AV block) and intermittently dropped beats (second-degree AV block), together with modestly low limb-lead QRS voltages. This is THIS patient's own derangement — conduction-system disease from myocardial IRON deposition (an infiltrative cardiomyopathy), not an acute ischemic event. It is a fourth organ of iron overload (after liver, pancreas, and pituitary) and explains his bradycardia and palpitations. Clinically it matters because it can progress to high-grade AV block; he needs telemetry/monitoring and cardiology input, and iron removal may improve the cardiomyopathy. This is a separate, concurrent problem to address alongside the liver disease.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus bradycardia with first-degree (and intermittent second-degree) AV block and modestly low limb-lead voltage — conduction-system disease from iron (infiltrative) cardiomyopathy, a fourth organ of iron overload, with risk of progression to high-grade block."
+        ],
+        "coreActions": [
+          "recognizes sinus bradycardia with a prolonged PR / AV block (conduction-system disease)",
+          "links the conduction disease and low voltages to myocardial iron deposition and flags risk of progression to high-grade block"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal, or reads it as an acute coronary event without recognizing iron-overload conduction disease",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = mild cardiomegaly with clear lungs and no congestion — consistent with an early infiltrative/iron cardiomyopathy without overt failure. CREDIT: identifies the enlarged cardiac silhouette / increased cardiothoracic ratio (5); notes clear lungs with no pulmonary edema or effusion and ties the cardiomegaly to the same iron-cardiomyopathy story as the EKG (5). PENALTY: calling the film entirely normal and missing the cardiomegaly, or inventing florid pulmonary edema (-3).",
+      "keyFindings": [
+        "mild cardiomegaly / increased cardiothoracic ratio",
+        "clear lungs with no pulmonary edema, consistent with early iron cardiomyopathy without overt failure"
+      ],
+      "criticalFindings": [
+        "Mild cardiomegaly with clear lungs and no congestion — early infiltrative (iron) cardiomyopathy without overt heart failure, corroborating the EKG conduction disease."
+      ],
+      "commonMistakes": [
+        "calling the film normal and missing the enlarged cardiac silhouette",
+        "inventing pulmonary edema or an effusion on clear lungs"
+      ],
+      "idealAnswer": "Mild cardiomegaly (increased cardiothoracic ratio) with clear lung fields and no pulmonary edema or effusion. This corroborates the EKG: an early infiltrative/iron cardiomyopathy from myocardial iron deposition, without overt heart failure yet. It supports cardiology involvement and reinforces that the heart is another organ of his systemic iron overload.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Mild cardiomegaly with clear lungs and no congestion — early infiltrative (iron) cardiomyopathy without overt heart failure, corroborating the EKG conduction disease."
+        ],
+        "coreActions": [
+          "mild cardiomegaly / increased cardiothoracic ratio",
+          "clear lungs with no pulmonary edema, consistent with early iron cardiomyopathy without overt failure"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the film normal and misses the cardiomegaly, or invents florid pulmonary edema",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "The transferrin saturation is 78% with a ferritin of 1850, HFE testing is homozygous C282Y, viral and autoimmune serologies are negative, glucose/HbA1c confirm diabetes, LH/FSH/testosterone are all low, and the EKG/CXR show conduction disease with mild cardiomegaly. What is your diagnosis, what did you rule out, and what residual ambiguity remains?",
+      "rubric": "Hereditary (type 1, HFE-related) hemochromatosis with multi-system iron overload (6). Cites transferrin saturation 78% + ferritin 1850 + homozygous C282Y as confirmatory; explains the elevated ferritin is true iron overload (not just an acute-phase reactant) given the very high transferrin saturation without inflammation; explicitly excludes NAFLD and alcoholic liver disease as the primary driver (modest alcohol, atypical lean diabetes), and excludes viral/autoimmune hepatitis and Wilson disease by the negative serologies/normal ceruloplasmin; names the residual question of fibrosis stage / cirrhosis (ferritin >1000 and hepatomegaly raise concern, may need elastography or biopsy to stage and screen for HCC) (4).",
+      "idealAnswer": "Hereditary (type 1, HFE-related) hemochromatosis with multi-system iron overload. The transferrin saturation of 78% and ferritin of 1850 confirm iron overload, and homozygous C282Y confirms the hereditary cause; the very high transferrin saturation without an inflammatory state tells us the high ferritin reflects true iron loading rather than just an acute-phase reactant. The constellation — transaminitis, MCP arthropathy, bronze skin, 'bronze' (islet-iron) diabetes, hypogonadotropic hypogonadism (low LH/FSH/testosterone from pituitary iron), and conduction disease/cardiomegaly — is explained by one unifying disease. I have ruled OUT NAFLD/NASH and alcoholic liver disease as the primary cause (his alcohol is modest and his diabetes is atypically lean), and excluded viral and autoimmune hepatitis and Wilson disease with the negative hepatitis serologies, negative autoimmune markers, and normal ceruloplasmin. Residual ambiguity: the degree of FIBROSIS — with a ferritin >1000 and hepatomegaly, cirrhosis is a real concern, so I would stage the fibrosis (elastography, and liver biopsy if needed) and begin hepatocellular-carcinoma surveillance if cirrhotic.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "NAFLD / NASH",
+        "Alcoholic liver disease"
+      ],
+      "acceptableAlternatives": [
+        "Chronic viral hepatitis B/C",
+        "Autoimmune hepatitis",
+        "Wilson disease / alpha-1 antitrypsin deficiency"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan, including treatment of the iron overload, the extrahepatic organs, screening of relatives, and counseling? As part of your reasoning, name three extrahepatic organ systems iron overload has damaged in this patient and the mechanism for each.",
+      "rubric": "Per MGH approach to hereditary hemochromatosis: THERAPEUTIC PHLEBOTOMY as first-line iron removal until iron-deplete (target ferritin ~50-100), then maintenance phlebotomy (CANT-MISS,7). Names THREE extrahepatic organ systems with mechanisms — e.g., pancreas (islet iron -> 'bronze' diabetes), pituitary/gonads (iron -> hypogonadotropic hypogonadism), heart (myocardial iron -> infiltrative cardiomyopathy/conduction disease), skin (iron-stimulated melanin + dermal iron -> bronze pigmentation), joints (iron/calcium pyrophosphate -> 2nd/3rd MCP arthropathy) (CANT-MISS,5). Counsel STRICT avoidance of iron and vitamin C supplements and limit/abstain from alcohol; avoid uncooked shellfish (Vibrio risk) (3). Treat the comorbid diabetes and manage hypogonadism (testosterone replacement) (2). Cardiology referral for the conduction disease/cardiomyopathy with telemetry +/- consideration of pacing if high-grade block (2). Hepatology referral; if cirrhotic, HCC surveillance with ultrasound + AFP (2). Disposition/genetics: HFE genetic counseling and SCREEN FIRST-DEGREE RELATIVES (siblings/children) with iron studies +/- HFE testing; consider iron chelation (deferoxamine/deferasirox) if phlebotomy not tolerated or in cardiac iron overload (2). PENALTY: giving iron or continuing the iron/vitamin-C supplement (-4); treating only the liver and ignoring the cardiac, endocrine, or family-screening dimensions (-3); choosing chelation over phlebotomy as first-line in an otherwise stable patient (-2).",
+      "idealAnswer": "Hereditary hemochromatosis: the cornerstone is IRON REMOVAL by THERAPEUTIC PHLEBOTOMY — regular venesection until iron-deplete (target ferritin ~50-100 ng/mL and transferrin saturation down), then lifelong maintenance phlebotomy. STOP all iron supplements and vitamin C (which augments iron absorption) immediately, and limit/abstain from alcohol; advise avoiding raw shellfish given Vibrio vulnificus risk in iron overload. Three extrahepatic organs damaged and their mechanisms: (1) PANCREAS — iron deposition in the islets impairs insulin secretion, causing 'bronze diabetes'; (2) PITUITARY/GONADS — iron in the anterior pituitary causes hypogonadotropic hypogonadism (low LH/FSH and testosterone), explaining his low libido; (3) HEART — myocardial iron deposition causes an infiltrative cardiomyopathy with conduction-system disease (the long PR/AV block and cardiomegaly). (Also: SKIN — dermal iron and stimulated melanin produce the bronze pigmentation; JOINTS — iron/calcium-pyrophosphate arthropathy of the 2nd/3rd MCPs.) Manage the comorbidities: treat the diabetes, give testosterone replacement for the hypogonadism, and refer to CARDIOLOGY for the conduction disease/cardiomyopathy with telemetry and consideration of pacing if high-grade block develops. Refer to HEPATOLOGY; if cirrhotic, start hepatocellular-carcinoma surveillance (ultrasound + AFP). Finally, provide HFE genetic counseling and SCREEN FIRST-DEGREE RELATIVES (siblings and children) with iron studies and HFE testing. Reserve iron chelation (deferoxamine/deferasirox) for patients who cannot tolerate phlebotomy or who have significant cardiac iron overload.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Therapeutic phlebotomy to iron-deplete then maintenance (first-line iron removal)",
+            "points": 7
+          },
+          {
+            "item": "Names three extrahepatic organ systems damaged WITH mechanisms (pancreas/islet iron->diabetes; pituitary/gonads->hypogonadism; heart->iron cardiomyopathy; skin; joints)",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Stop iron AND vitamin C supplements; limit/abstain alcohol; avoid raw shellfish (Vibrio)",
+            "points": 3
+          },
+          {
+            "item": "Treat diabetes and manage hypogonadism (testosterone replacement)",
+            "points": 2
+          },
+          {
+            "item": "Cardiology referral for conduction disease/cardiomyopathy with telemetry +/- pacing",
+            "points": 2
+          },
+          {
+            "item": "Hepatology referral; HCC surveillance (ultrasound + AFP) if cirrhotic",
+            "points": 2
+          },
+          {
+            "item": "HFE genetic counseling and screen first-degree relatives (siblings/children)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Iron chelation (deferoxamine/deferasirox) if phlebotomy not tolerated or cardiac iron overload",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Giving iron or continuing the iron/vitamin-C supplement",
+            "points": -4
+          },
+          {
+            "item": "Treating only the liver and ignoring the cardiac, endocrine, or family-screening dimensions",
+            "points": -3
+          },
+          {
+            "item": "Choosing chelation over phlebotomy as first-line in an otherwise stable patient",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Therapeutic phlebotomy to iron-deplete then maintenance (first-line iron removal)",
+        "Names three extrahepatic organ systems damaged WITH mechanisms"
+      ],
+      "optionalActions": [
+        "Stop iron AND vitamin C supplements; limit/abstain alcohol; avoid raw shellfish (Vibrio)",
+        "Treat diabetes and manage hypogonadism (testosterone replacement)",
+        "Cardiology referral for conduction disease/cardiomyopathy with telemetry +/- pacing",
+        "Hepatology referral; HCC surveillance (ultrasound + AFP) if cirrhotic",
+        "HFE genetic counseling and screen first-degree relatives (siblings/children)",
+        "Iron chelation (deferoxamine/deferasirox) if phlebotomy not tolerated or cardiac iron overload"
+      ],
+      "unsafeActions": [
+        "Giving iron or continuing the iron/vitamin-C supplement",
+        "Treating only the liver and ignoring the cardiac, endocrine, or family-screening dimensions",
+        "Choosing chelation over phlebotomy as first-line in an otherwise stable patient"
+      ],
+      "consults": [
+        "Hepatology",
+        "Cardiology",
+        "Endocrinology"
+      ],
+      "disposition": "Outpatient phlebotomy program with hepatology, cardiology, and endocrine follow-up; admit/monitor if high-grade AV block develops",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Cirrhosis & Inherited Liver Disease (Hereditary Hemochromatosis)",
+        "page": 96
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "tired",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "sexual_function",
+      "alcohol_use",
+      "family_history",
+      "supplement_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; mildly embarrassed about sexual-function questions",
+    "affect": "52-year-old man, fatigued, with a deep bronze tan despite little sun. Cooperative, somewhat embarrassed about libido questions.",
+    "disclosureRules": [
+      "Do not reveal skin bronzing, atypical diabetes, low libido, the iron/vitamin-C supplement, family history, or palpitations unless directly asked about the relevant topic",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "supplement_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "supplements",
+        "over the counter",
+        "vitamins",
+        "iron pills",
+        "herbal products",
+        "do you take any vitamins or supplements"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "skin_change",
+      "category": "ros",
+      "triggerConcepts": [
+        "skin color",
+        "tanned",
+        "bronze",
+        "darkening",
+        "has anyone said your skin looks different",
+        "pigmentation"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "sexual_function",
+      "category": "ros",
+      "triggerConcepts": [
+        "libido",
+        "sex drive",
+        "erectile",
+        "sexual function",
+        "hormonal symptoms",
+        "loss of body hair"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family_history",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "relatives with liver problems",
+        "inherited conditions",
+        "ancestry",
+        "family heart or liver disease"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diabetes_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "diabetes",
+        "blood sugar",
+        "new diagnoses"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "prescriptions",
+        "metformin"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "beer or wine"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cardiac_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "palpitations",
+        "heart skipping",
+        "chest symptoms",
+        "shortness of breath on exertion",
+        "exertional dyspnea"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "joint_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "joint pain",
+        "knuckle pain",
+        "stiffness",
+        "arthritis",
+        "which joints"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "jaundice or abdominal swelling",
+        "weight loss"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_skin_finding_1",
+      "finding": "Skin: generalized slate-grey/bronze hyperpigmentation, most noticeable on sun-exposed areas and old scars; no spider angiomata, no obvious jaundice.",
+      "revealedBy": [
+        "inspect_skin",
+        "assess_general_appearance"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No abnormal skin pigmentation; no jaundice."
+    },
+    {
+      "id": "assess_hepatomegaly_finding_2",
+      "finding": "Abdomen: firm, mildly enlarged liver (hepatomegaly) ~3 cm below the costal margin, non-tender; no ascites.",
+      "revealedBy": [
+        "assess_hepatomegaly",
+        "palpate_ruq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No hepatomegaly."
+    },
+    {
+      "id": "assess_splenomegaly_finding_3",
+      "finding": "Abdomen: spleen tip just palpable (mild splenomegaly), suggesting early portal hypertension.",
+      "revealedBy": [
+        "assess_splenomegaly",
+        "palpate_luq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "palpate_lymph_nodes_finding_4",
+      "finding": "Joints: tenderness and mild bony swelling of the 2nd and 3rd metacarpophalangeal joints bilaterally (the squared-off 'iron fist' knuckle pattern); no warmth or erythema; mildly reduced grip.",
+      "revealedBy": [
+        "inspect_nails",
+        "inspect_palms_and_soles"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No joint swelling or knuckle tenderness."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Cardiac: regular but bradycardic (~58); soft S1; no murmur; JVP normal; no peripheral edema (early cardiac involvement without overt failure).",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "palpate_pmi"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate and rhythm; no murmur."
+    },
+    {
+      "id": "assess_for_jaundice_finding_6",
+      "finding": "Eyes: sclera NOT icteric; no Kayser-Fleischer rings (argues against overt cholestasis and against Wilson disease).",
+      "revealedBy": [
+        "assess_for_jaundice",
+        "inspect_sclera"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No scleral icterus."
+    },
+    {
+      "id": "assess_edema_finding_7",
+      "finding": "No peripheral edema and JVP normal — no current evidence of decompensated heart failure or volume overload.",
+      "revealedBy": [
+        "assess_edema",
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_asterixis_finding_8",
+      "finding": "Neuro: no asterixis; alert and oriented (no overt hepatic encephalopathy despite early cirrhosis).",
+      "revealedBy": [
+        "assess_asterixis"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No asterixis."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Hereditary hemochromatosis",
+    "diagnosticFramework": "52M referred for chronic fatigue, a 2nd/3rd MCP arthropathy, bronze skin, atypical lean new-onset diabetes, and low libido, with mildly abnormal liver enzymes. The diagnosis is Hereditary (HFE-related) hemochromatosis with multi-system iron overload, reached by recognizing the unifying iron-overload pattern, sending transferrin saturation/ferritin and HFE genotyping, excluding the competing causes of chronic transaminitis (NAFLD, alcohol, viral, autoimmune, Wilson), and integrating the conduction disease/cardiomegaly on EKG/CXR as cardiac iron involvement.",
+    "keyHistoryClues": [
+      "iron + vitamin C supplement use",
+      "bronze skin change",
+      "low libido / hypogonadism",
+      "family history of liver + heart disease",
+      "modest alcohol with atypical lean diabetes"
+    ],
+    "keyPhysicalExamFindings": [
+      "Skin: generalized slate-grey/bronze hyperpigmentation, most noticeable on sun-exposed areas and old scars; no spider angiomata, no obvious jaundice.",
+      "Abdomen: firm, mildly enlarged liver (hepatomegaly) ~3 cm below the costal margin, non-tender; no ascites.",
+      "Abdomen: spleen tip just palpable (mild splenomegaly), suggesting early portal hypertension.",
+      "Joints: tenderness and mild bony swelling of the 2nd and 3rd metacarpophalangeal joints bilaterally (the squared-off 'iron fist' knuckle pattern); no warmth or erythema; mildly reduced grip.",
+      "Cardiac: regular but bradycardic (~58); soft S1; no murmur; JVP normal; no peripheral edema (early cardiac involvement without overt failure)."
+    ],
+    "keyDiagnosticFindings": [
+      "LFTs",
+      "IronStudies",
+      "GlucoseA1c",
+      "HormonePanel",
+      "HFEGenetics",
+      "LiverImaging"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals (chronic transaminitis with multi-system complaints and bradycardia).",
+      "Elicit the focused history, including supplement use (iron + vitamin C), skin bronzing, low libido, family history, and alcohol quantity only on direct questioning.",
+      "Perform the targeted exam to reveal the bronze skin, hepatosplenomegaly, the 2nd/3rd MCP arthropathy, and the bradycardia.",
+      "Build a differential led by hereditary hemochromatosis against the competing chronic-liver causes (NAFLD, alcohol, viral, autoimmune, Wilson) and recognize the unifying iron-overload pattern.",
+      "Order an order-sensitive workup (transferrin saturation + ferritin first, then HFE genotyping) plus the chronic-liver screen and extrahepatic-organ evaluation, and interpret THIS patient's EKG/CXR as cardiac iron involvement.",
+      "Commit to hereditary hemochromatosis and manage with therapeutic phlebotomy, stop iron/vitamin C, treat the extrahepatic organs, refer cardiology/hepatology/endocrine, and screen first-degree relatives."
+    ],
+    "commonPitfalls": [
+      "Anchoring on ordinary type 2 diabetes plus fatty liver and missing the unifying iron-overload story",
+      "Giving iron or continuing the iron/vitamin-C supplement",
+      "Treating only the liver and ignoring the cardiac, endocrine, or family-screening dimensions",
+      "Reading the EKG as acute ischemia rather than iron-overload conduction disease"
+    ],
+    "managementPearls": [
+      "Therapeutic phlebotomy is first-line; chelation is reserved for phlebotomy intolerance or cardiac iron overload",
+      "Stop iron AND vitamin C supplements and limit alcohol",
+      "Screen first-degree relatives with iron studies and HFE testing"
+    ],
+    "criticalHistoryItems": [
+      "supplement_use"
+    ],
+    "criticalExamItems": [
+      "inspect_skin",
+      "assess_hepatomegaly"
+    ],
+    "criticalWorkupItems": [
+      "Fasting transferrin saturation and ferritin (iron studies first)",
+      "HFE genetic testing (C282Y/H63D)"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus bradycardia with first-degree/second-degree AV block and low limb voltage — iron-overload conduction disease.",
+      "Mild cardiomegaly with clear lungs — early iron cardiomyopathy without overt failure."
+    ],
+    "criticalManagementItems": [
+      "Therapeutic phlebotomy to iron-deplete then maintenance (first-line iron removal)",
+      "Names three extrahepatic organ systems damaged WITH mechanisms"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus bradycardia with first-degree (and intermittent second-degree) AV block and low limb-lead voltage — conduction disease from iron cardiomyopathy.",
+      "Mild cardiomegaly with clear lungs and no congestion — early iron cardiomyopathy without overt heart failure."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus bradycardia with first-degree (and intermittent second-degree) AV block and low limb-lead voltage — conduction disease from iron cardiomyopathy.",
+      "Mild cardiomegaly with clear lungs and no congestion — early iron cardiomyopathy without overt heart failure."
+    ],
+    "imageInterpretationPearls": [
+      "In a multi-system iron-overload syndrome, the EKG and CXR are part of the puzzle — the conduction disease and cardiomegaly are the heart's iron involvement, not an unrelated coincidence.",
+      "A long PR with intermittently dropped beats in a bradycardic infiltrative cardiomyopathy can progress to high-grade block — monitor and involve cardiology.",
+      "Read every study systematically and tie the findings back to the unifying diagnosis."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's fatigue and concerns",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive sexual/hormonal questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

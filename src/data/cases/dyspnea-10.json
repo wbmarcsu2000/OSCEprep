@@ -1,0 +1,849 @@
+{
+  "id": "dyspnea-10",
+  "category": "Dyspnea",
+  "difficulty": "hard",
+  "title": "Acute dyspnea with palpitations and an irregular pulse",
+  "diagnosis": "New-onset atrial fibrillation with rapid ventricular response precipitating acute decompensated heart failure (HFpEF), triggered by occult hyperthyroidism — pulmonary embolism and ischemia excluded",
+  "chart": {
+    "ageSex": "64F",
+    "cc": "Shortness of breath and a racing heart",
+    "oneLiner": "64F with HTN, obesity, OSA, and T2DM presents with ~2 days of worsening dyspnea, orthopnea, palpitations, and leg swelling; pulse is fast and irregularly irregular.",
+    "vitals": {
+      "BP": "150/95",
+      "HR": "140",
+      "RR": "24",
+      "Temp": "37.0°C",
+      "SpO2": "92% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My heart's been pounding and skipping all over the place, and I just can't get a good breath, doc.",
+  "patientFile": "PERSONA: 64-year-old woman, anxious and breathing hard, fidgety and warm. Speaks in short bursts between breaths. Cooperative, reliable historian. Recently retired schoolteacher, lives with her husband.\n\nHPI:\n- Dyspnea worsening over ~2 days; now winded walking across a room and at rest tonight.\n- Orthopnea (sleeping propped on 3 pillows) and woke last night gasping (PND).\n- Palpitations: heart 'racing and flip-flopping' for ~2 days, never felt this before, no prior known irregular heartbeat.\n- Mild bilateral leg swelling to the ankles over the last day or two.\n- NO chest pain or pressure, NO pleuritic pain, NO syncope (felt lightheaded once when the racing started but did not pass out).\n- NO fever/chills, NO cough/sputum, NO hemoptysis, NO calf pain or asymmetry, NO recent surgery/travel/immobilization, NO leg cast.\n\nOCCULT-HYPERTHYROID CLUE (volunteer ONLY if asked about weight, appetite, bowels, temperature/heat, tremor, energy, neck, or recent general health over the past weeks):\n- Several weeks of feeling 'hot all the time' and sweaty when others are comfortable (heat intolerance).\n- A fine hand tremor she's noticed when holding a cup or writing.\n- Unintended weight loss of ~12 lb over 6–8 weeks despite a normal or increased appetite.\n- Stools looser and more frequent than usual (no blood, no black stools).\n- Feeling jittery, anxious, and not sleeping well; eyes feel a bit 'starey' but no double vision.\n- No known thyroid disease; has not been on any thyroid medicine, amiodarone, iodine, or contrast.\n\nOLDCARTS: onset of the racing and breathlessness ~2 days ago, fairly abrupt; 'air hunger' and a pounding/irregular heartbeat, not pain; constant and worse with any exertion and when lying flat; partially relieved by sitting up and resting; no clear trigger she can name.\n\nPMH: hypertension, obesity (BMI ~36), obstructive sleep apnea (on CPAP, uses it most nights), type 2 diabetes.\nMEDICATIONS: amlodipine 10mg daily, lisinopril 20mg daily, metformin 1000mg BID, empagliflozin 10mg daily, atorvastatin 20mg daily. No anticoagulant. No beta-blocker. No thyroid medication, no amiodarone, no decongestants/stimulants, no recent iodinated contrast.\nADHERENCE: takes medicines regularly.\nALLERGIES: none. FAMILY: mother had 'an overactive thyroid'; father HTN and a stroke in his 70s.\nSOCIAL: never smoker. Alcohol — usually 1 glass of wine on weekends, BUT attended a wedding 3 days ago and drank more than usual (4–5 drinks in one evening). No recreational drugs, no energy drinks. Independent, active.\nROS: as above — positive for heat intolerance, tremor, weight loss, loose stools, palpitations, dyspnea, orthopnea, PND, ankle swelling; negative for chest pain, fever, cough, calf pain, melena, neck pain.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious woman, warm and slightly diaphoretic, mild resp effort at rest, fine tremor of outstretched hands.\n- Vitals: BP 150/95, HR ~140 IRREGULARLY IRREGULAR, RR 24, 37.0°C, SpO2 92% RA (96% on 2L).\n- HEENT: mucous membranes moist; mild stare/lid retraction, no proptosis, no diplopia; no conjunctival pallor.\n- Neck: JVP elevated ~9 cm; thyroid mildly diffusely enlarged, smooth, non-tender, no discrete nodule, no bruit appreciated; no carotid bruits.\n- Cardiac: irregularly irregular rhythm, tachycardic, variable S1 intensity, no S3/S4 clearly heard over the fast rate, no murmur; PMI non-displaced.\n- Lungs: bibasilar inspiratory crackles, no wheeze.\n- Abdomen: soft, non-tender, no organomegaly, no fluid wave.\n- Extremities: trace–1+ pitting edema to the ankles bilaterally, warm and well-perfused, symmetric pulses, no calf tenderness or asymmetry.\n- Skin: warm and moist/sweaty, no rash, no cyanosis; nails without clubbing.\n- Neuro: A&Ox3, fine resting/postural tremor, no focal deficit; reflexes brisk.\n- Special: pulses 2+ and symmetric with an irregular volume; no radio-femoral delay; calf circumferences equal, Homans negative.\n\nHIDDEN RULES:\n- NEVER state, suggest, or hint at a diagnosis (do not say 'atrial fibrillation', 'thyroid storm', 'heart failure', etc.).\n- Answer ONLY what is asked; give focused, realistic lay answers, not a data dump.\n- Do NOT volunteer the heat intolerance, tremor, weight loss, or loose stools unless asked about weight, appetite, bowels, temperature/heat, tremor, energy, the neck, or recent general health.\n- Do NOT volunteer the heavier wedding drinking unless asked about alcohol or recent events.\n- Reveal exam findings ONLY for the system/maneuver actually examined; otherwise give the normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "CBC": "WBC 7.0, Hgb 13.2, Plt 245 — unremarkable; no leukocytosis to suggest occult infection.",
+      "CMP": "Na 139, K 4.1, Cl 103, HCO3 25, BUN 18, Cr 0.9 (baseline 0.9), Glu 138, Ca 9.6 — anion gap 139 − (103 + 25) = 11 (normal); near-normal, no acidosis or electrolyte derangement.",
+      "BNP": "920 pg/mL — elevated, consistent with cardiac wall stress / decompensation.",
+      "Troponin": "0.06 ng/mL, mildly elevated, STABLE on serial draw — demand ischemia from rate, not a rising ACS pattern.",
+      "TSH": "<0.01 mIU/L — markedly suppressed.",
+      "FreeT4": "Free T4 3.8 ng/dL (high; ref ~0.8–1.8) — overt biochemical hyperthyroidism; the unifying precipitant.",
+      "D-dimer": "0.9 µg/mL FEU — mildly elevated (above 0.5 cutoff), nonspecific; prompts PE evaluation.",
+      "CTPA": "CT pulmonary angiogram: NO pulmonary embolism; no filling defect, no RV strain. Incidental note of bibasilar atelectasis and small effusions.",
+      "CXR": "Portable CXR: mild cardiomegaly with pulmonary vascular congestion/cephalization and early interstitial edema; small bilateral pleural effusions; no focal consolidation or pneumothorax."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "litflStudyN": 2,
+      "integrated": true,
+      "asset": "https://litfl.com/wp-content/uploads/2018/08/Atrial-fibrillation-rapid-ventricular-response.jpg",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "findings": "Atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals. No acute ST-segment elevation; rate-related changes only.",
+      "verify": "From the LITFL 'Atrial Fibrillation' ECG library page — download an example tracing that matches: irregularly irregular rhythm, absent P waves, variable R-R intervals, ventricular rate ~140 (RVR). Self-host with credit to litfl.com.",
+      "assetNeeded": true,
+      "imageDescription": "Atrial fibrillation with rapid ventricular response: irregularly irregular rhythm, absent P waves, variable R-R intervals, rate ~140.",
+      "searchTerms": [
+        "12-lead EKG atrial fibrillation rapid ventricular response"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 64-year-old woman with hypertension, obesity, OSA, and diabetes presents with acute dyspnea, palpitations, and an irregularly irregular pulse at ~140."
+    },
+    "cxr": {
+      "label": "Chest X-ray (PA)",
+      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/Chest%20radiograph%20with%20signs%20of%20congestive%20heart%20failure%20-%20annotated.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_with_signs_of_congestive_heart_failure_-_annotated.svg",
+      "license": "CC0 1.0 (public domain)",
+      "attribution": "Mikael Häggström, MD (CC0 1.0)",
+      "findings": "Mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions; no focal consolidation or pneumothorax.",
+      "verify": "GOOD MATCH for pulmonary edema/congestion. This is the ANNOTATED version — swap for the non-annotated base file so the student reads it unaided.",
+      "assetNeeded": true,
+      "imageDescription": "Mild cardiomegaly, cephalization, early interstitial edema, small bilateral pleural effusions.",
+      "searchTerms": [
+        "chest radiograph pulmonary congestion cephalization interstitial edema"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A patient presents with acute dyspnea and orthopnea; the chest film shows pulmonary vascular congestion and small effusions."
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "CMP",
+    "BNP",
+    "Troponin",
+    "TSH",
+    "FreeT4",
+    "D-dimer",
+    "CTPA",
+    "CXR",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "Troponin",
+    "BNP",
+    "TSH",
+    "CTPA"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis. State your leading mechanism for the dyspnea AND, because the picture is multifactorial, give your differential for WHAT precipitated the new irregular rhythm.",
+      "rubric": "Leading mechanism: decompensated HFpEF from new AF with RVR (leading,6; accepts 'tachycardia-mediated pulmonary edema / volume overload from rapid AF'). PRECIPITANT differential — hyperthyroidism/thyrotoxicosis (leading precipitant,5). Pulmonary embolism (CANT-MISS,4). ACS / demand ischemia (CANT-MISS,4). Occult infection/sepsis (core,2). Alcohol — 'holiday heart' (core,2). Electrolyte disturbance (core,1). Named leading dx w/ justification tying rhythm to dyspnea (core,1). PENALTY: anchoring on a single cause without a precipitant search (-2).",
+      "idealAnswer": "Leading mechanism: acute decompensated heart failure (HFpEF substrate: HTN, obesity, OSA, diabetes) precipitated by new-onset atrial fibrillation with rapid ventricular response (tachycardia-mediated pulmonary congestion). Because new AF demands a precipitant search, my differential for the trigger is: hyperthyroidism/thyrotoxicosis (leading — heat intolerance, tremor, weight loss, loose stools, goiter); pulmonary embolism (must-not-miss); ACS/ischemia (must-not-miss); occult infection/sepsis; alcohol ('holiday heart' — heavier drinking 3 days ago); and electrolyte disturbance. I will commit to a leading mechanism but actively exclude PE and ACS.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Pulmonary embolism",
+            "points": 4
+          },
+          {
+            "item": "ACS / demand ischemia",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Decompensated HFpEF from new AF with RVR (leading mechanism)",
+            "points": 6
+          },
+          {
+            "item": "Hyperthyroidism / thyrotoxicosis (leading precipitant)",
+            "points": 5
+          },
+          {
+            "item": "Occult infection / sepsis",
+            "points": 2
+          },
+          {
+            "item": "Alcohol — holiday heart",
+            "points": 2
+          },
+          {
+            "item": "Electrolyte disturbance",
+            "points": 1
+          },
+          {
+            "item": "Named leading dx tying rhythm to dyspnea",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchoring on a single cause without a precipitant search",
+            "points": -2
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Pulmonary embolism",
+        "ACS / demand ischemia"
+      ],
+      "acceptableAlternatives": [
+        "Occult infection / sepsis",
+        "Alcohol — holiday heart",
+        "Electrolyte disturbance"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "EKG (CANT-MISS,3). Troponin (CANT-MISS,2). TSH + free T4 (core,3 — the precipitant search). BNP (core,2). CXR (core,1). CBC (core,1). CMP (core,1). D-dimer / CTPA to evaluate PE (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: EKG; troponin (serial); TSH and free T4; BNP; CXR; CBC; CMP; D-dimer (and CTPA if PE not excluded). Telemetry monitoring.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "EKG",
+            "points": 3
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "TSH and free T4",
+            "points": 3
+          },
+          {
+            "item": "BNP",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 1
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "CMP",
+            "points": 1
+          },
+          {
+            "item": "D-dimer / CTPA for PE",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "EKG",
+        "Troponin"
+      ],
+      "optionalTests": [
+        "TSH and free T4",
+        "BNP",
+        "CXR",
+        "CBC",
+        "CMP",
+        "D-dimer / CTPA for PE"
+      ],
+      "contraindicatedTests": [
+        "shotgun panel w/ no reasoning"
+      ],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings systematically.",
+      "rubric": "EKG findings = atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals; no acute ST-elevation (rate-related changes only). CREDIT: states rate (~140) (4); identifies irregularly irregular rhythm with absent P waves = atrial fibrillation (5); notes RVR / variable R-R intervals (4); correctly notes NO acute ST-elevation, only rate-related change (2). PENALTY: over-calling an acute STEMI from rate-related ST/T changes (-3); calling it a regular SVT/sinus tach (-2).",
+      "keyFindings": [
+        "states rate ~140",
+        "irregularly irregular rhythm with absent P waves (atrial fibrillation)",
+        "rapid ventricular response / variable R-R intervals",
+        "no acute ST-elevation, rate-related changes only"
+      ],
+      "criticalFindings": [
+        "Atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals. No acute ST-elevation."
+      ],
+      "commonMistakes": [
+        "over-calling an acute STEMI from rate-related ST/T changes",
+        "calling it a regular SVT or sinus tachycardia"
+      ],
+      "idealAnswer": "Atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals. No acute ST-segment elevation — rate-related changes only.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes: atrial fibrillation with rapid ventricular response ~140; irregularly irregular, absent P waves, variable R-R; no acute ST-elevation.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "states rate ~140",
+            "points": 4
+          },
+          {
+            "item": "irregularly irregular rhythm with absent P waves (atrial fibrillation)",
+            "points": 5
+          },
+          {
+            "item": "rapid ventricular response / variable R-R intervals",
+            "points": 4
+          },
+          {
+            "item": "no acute ST-elevation, rate-related changes only",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "over-calling an acute STEMI from rate-related ST/T changes",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "CXR findings = mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions; no focal consolidation. CREDIT: cardiomegaly (2); pulmonary congestion/cephalization/interstitial edema (4); bilateral pleural effusions (2); correctly excludes focal consolidation/pneumothorax (2).",
+      "keyFindings": [
+        "mild cardiomegaly",
+        "pulmonary congestion/cephalization/interstitial edema",
+        "small bilateral pleural effusions",
+        "no focal consolidation or pneumothorax"
+      ],
+      "criticalFindings": [
+        "Mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions."
+      ],
+      "commonMistakes": [
+        "Over-reading a normal study",
+        "Calling congestion a focal pneumonia"
+      ],
+      "idealAnswer": "Mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions; no focal consolidation or pneumothorax.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: mild cardiomegaly, congestion/cephalization, interstitial edema, small bilateral pleural effusions.",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "cardiomegaly",
+            "points": 2
+          },
+          {
+            "item": "pulmonary congestion/cephalization/interstitial edema",
+            "points": 4
+          },
+          {
+            "item": "small bilateral pleural effusions",
+            "points": 2
+          },
+          {
+            "item": "no focal consolidation or pneumothorax",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Pulling together the labs and your EKG/CXR reads, what is your leading diagnosis and reasoning? Name the precipitant of the atrial fibrillation, state how you excluded the must-not-miss causes, and acknowledge any residual ambiguity.",
+      "rubric": "Commits to new-onset AF with RVR causing decompensated HFpEF / pulmonary edema (5). Identifies the precipitant as occult hyperthyroidism — suppressed TSH with high free T4 (core,3). Excludes PE by negative CTPA despite the mildly elevated D-dimer, and explains the mildly elevated troponin as demand ischemia (stable serial) rather than primary ACS (3). Acknowledges the multifactorial picture and names discriminators — TSH/free T4 for thyroid, CTPA for PE, serial troponin for ACS (bonus,2). Mentions alcohol as a possible co-contributor (bonus,1).",
+      "idealAnswer": "Leading diagnosis: new-onset atrial fibrillation with rapid ventricular response that precipitated acute decompensated heart failure (HFpEF) with pulmonary edema, on a substrate of HTN, obesity, OSA, and diabetes. The unifying PRECIPITANT is occult hyperthyroidism — TSH <0.01 with high free T4, plus weeks of heat intolerance, tremor, weight loss, loose stools, and a diffuse goiter. PE is excluded by a negative CTPA (the mildly elevated D-dimer was nonspecific), and the mildly elevated but stable troponin reflects demand ischemia from the rate, not a primary ACS. The picture is multifactorial; heavier recent alcohol ('holiday heart') may have contributed. Discriminators: TSH/free T4, CTPA, and serial troponin.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan, including disposition?",
+      "prompt2": "Address rate control, treating the trigger, volume management, anticoagulation, monitoring, and safe discharge.",
+      "rubric": "Rate control for AF with RVR — beta-blocker preferred (e.g. IV/oral metoprolol or esmolol) WITH the explicit point that the thyrotoxic state must be co-treated and that you avoid agents/over-diuresis that worsen decompensation (CANT-MISS,6). Treat the trigger: start thyroid management (methimazole) and a beta-blocker for thyrotoxic symptoms, endocrine consult (core,4). Gentle IV loop diuresis for volume overload with strict I/O and daily weights (core,4). Anticoagulation decision via CHA2DS2-VASc (core,4). Telemetry/admission with serial troponin (core,3). Identify/treat contributing factors — counsel on alcohol, optimize OSA/CPAP, BP control (core,2). Safe-discharge criteria + anticoagulation education + cardiology and endocrine follow-up (core,2). PENALTY: using a non-dihydropyridine CCB or beta-blocker as monotherapy WITHOUT treating thyrotoxicosis, or aggressive cardioversion in unanticoagulated new AF without urgency (-3); aggressive IV fluid bolus in a congested patient (-2).",
+      "idealAnswer": "Rate control for AF with RVR: a beta-blocker is preferred here (IV/oral metoprolol, or esmolol if titratable) because it also blunts the thyrotoxic adrenergic state — but co-treat the hyperthyroidism, because rate control alone will struggle until the thyroid is addressed; avoid worsening decompensation (cautious dosing, watch for hypotension; non-dihydropyridine CCBs are relatively avoided in decompensated HF). Treat the trigger: start antithyroid therapy (methimazole) and beta-blockade for thyrotoxic symptoms; urgent endocrinology consult. Gentle IV loop diuresis (e.g. furosemide) for volume overload with strict I/Os and daily weights and supplemental O2/NIPPV as needed. Anticoagulation: calculate CHA2DS2-VASc (HTN, diabetes, female, age 64; here ≈3) and start anticoagulation given elevated stroke risk. Admit to telemetry with serial troponins. Counsel on alcohol; optimize OSA/CPAP and BP. Before discharge: confirm rate-controlled and euvolemic, arrange close cardiology and endocrinology follow-up, educate on anticoagulation, and give return precautions.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Rate control (beta-blocker preferred) with co-treatment of thyrotoxicosis and caution against worsening decompensation",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Treat the trigger — antithyroid therapy + beta-blocker, endocrine consult",
+            "points": 4
+          },
+          {
+            "item": "Gentle IV loop diuresis with strict I/O and daily weights",
+            "points": 4
+          },
+          {
+            "item": "Anticoagulation decision via CHA2DS2-VASc",
+            "points": 4
+          },
+          {
+            "item": "Telemetry / admission with serial troponin",
+            "points": 3
+          },
+          {
+            "item": "Identify and treat contributing factors (alcohol, OSA/CPAP, BP)",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge criteria + anticoagulation education + cardiology/endocrine follow-up",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Rate-control monotherapy without treating thyrotoxicosis, or unsafe cardioversion in unanticoagulated new AF",
+            "points": -3
+          },
+          {
+            "item": "Aggressive IV fluid bolus in a congested patient",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Rate control (beta-blocker preferred) with co-treatment of thyrotoxicosis and caution against worsening decompensation"
+      ],
+      "optionalActions": [
+        "Treat the trigger — antithyroid therapy + beta-blocker, endocrine consult",
+        "Gentle IV loop diuresis with strict I/O and daily weights",
+        "Anticoagulation decision via CHA2DS2-VASc",
+        "Telemetry / admission with serial troponin",
+        "Identify and treat contributing factors (alcohol, OSA/CPAP, BP)",
+        "Safe-discharge criteria + anticoagulation education + cardiology/endocrine follow-up"
+      ],
+      "unsafeActions": [
+        "Rate-control monotherapy without treating thyrotoxicosis, or unsafe cardioversion in unanticoagulated new AF",
+        "Aggressive IV fluid bolus in a congested patient"
+      ],
+      "consults": [
+        "Cardiology",
+        "Endocrinology"
+      ],
+      "disposition": "Admit to telemetry (consider SDU/CCU if hemodynamically unstable or refractory RVR)",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Atrial Fibrillation / Tachyarrhythmias",
+        "page": 31
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "weight_loss",
+      "bowel_habits"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "64-year-old woman, anxious and breathing hard, warm and slightly sweaty with a fine hand tremor. Speaks in short bursts between breaths. Cooperative, reliable historian.",
+    "disclosureRules": [
+      "Do not reveal the hyperthyroid systemic symptoms (heat intolerance, tremor, weight loss, loose stools) unless asked about weight, appetite, bowels, heat, tremor, energy, the neck, or recent general health",
+      "Do not reveal the heavier recent drinking unless asked about alcohol or recent events",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "recent party",
+        "wedding"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "weight_loss",
+      "category": "ros",
+      "triggerConcepts": [
+        "weight",
+        "weight loss",
+        "appetite",
+        "eating",
+        "clothes loose"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "heat_intolerance",
+      "category": "ros",
+      "triggerConcepts": [
+        "heat intolerance",
+        "feeling hot",
+        "sweating",
+        "temperature",
+        "tremor",
+        "shaky hands",
+        "jittery"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "bowel_habits",
+      "category": "ros",
+      "triggerConcepts": [
+        "bowel",
+        "stools",
+        "diarrhea",
+        "loose stools",
+        "bowel movements"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "palpitations",
+        "racing"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "chest pain",
+        "orthopnea",
+        "leg swelling"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "thyroid"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "amiodarone"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "runs in the family",
+        "parents",
+        "mother thyroid"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_thyroid_finding_1",
+      "finding": "Neck: thyroid mildly diffusely enlarged, smooth, non-tender, no discrete nodule, no bruit; JVP elevated ~9 cm.",
+      "revealedBy": [
+        "assess_thyroid"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Thyroid not enlarged, no nodule."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_2",
+      "finding": "Cardiac: irregularly irregular rhythm, tachycardic, variable S1 intensity, no clear S3/S4 over the fast rate, no murmur; PMI non-displaced.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Regular rhythm, no murmur."
+    },
+    {
+      "id": "assess_jvp_finding_3",
+      "finding": "Neck: JVP elevated ~9 cm, no carotid bruits.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_4",
+      "finding": "Lungs: bibasilar inspiratory crackles, no wheeze.",
+      "revealedBy": [
+        "auscultate_posterior_lungs",
+        "auscultate_anterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear."
+    },
+    {
+      "id": "assess_edema_finding_5",
+      "finding": "Extremities: trace–1+ pitting edema to the ankles bilaterally, warm, no calf tenderness/asymmetry.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "inspect_skin_finding_6",
+      "finding": "Skin: warm and moist/sweaty, no rash, no cyanosis; fine tremor of outstretched hands.",
+      "revealedBy": [
+        "inspect_skin",
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Skin normal temperature and dry."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_7",
+      "finding": "Special: pulses 2+ and symmetric with an irregular volume; no radio-femoral delay; calf circumferences equal, Homans negative.",
+      "revealedBy": [
+        "assess_peripheral_pulses",
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Pulses symmetric, no calf tenderness."
+    },
+    {
+      "id": "assess_reflexes_finding_8",
+      "finding": "Neuro: A&Ox3, fine resting/postural tremor, brisk reflexes, no focal deficit.",
+      "revealedBy": [
+        "assess_reflexes",
+        "assess_coordination"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Reflexes normal, no tremor."
+    },
+    {
+      "id": "inspect_sclera_finding_9",
+      "finding": "HEENT: mild stare/lid retraction, no proptosis, no diplopia; mucous membranes moist; no conjunctival pallor.",
+      "revealedBy": [
+        "inspect_sclera",
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No scleral or conjunctival abnormality."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "New-onset atrial fibrillation with rapid ventricular response precipitating acute decompensated heart failure (HFpEF), triggered by occult hyperthyroidism — pulmonary embolism and ischemia excluded",
+    "diagnosticFramework": "64F with HTN, obesity, OSA, and T2DM presents with ~2 days of dyspnea, orthopnea, palpitations, and leg swelling, with an irregularly irregular pulse at ~140. The dyspnea is multifactorial: new atrial fibrillation with RVR has decompensated an HFpEF substrate, and the unifying precipitant is occult hyperthyroidism (suppressed TSH, high free T4). The task is to identify the leading mechanism, search broadly for the AF precipitant, and exclude the must-not-miss causes (PE by CTPA; ACS by stable serial troponin).",
+    "keyHistoryClues": [
+      "heat intolerance and tremor",
+      "unintended weight loss",
+      "loose stools",
+      "heavier recent alcohol"
+    ],
+    "keyPhysicalExamFindings": [
+      "Neck: thyroid mildly diffusely enlarged, smooth, non-tender, no discrete nodule, no bruit; JVP elevated ~9 cm.",
+      "Cardiac: irregularly irregular rhythm, tachycardic, variable S1 intensity, no clear S3/S4 over the fast rate, no murmur; PMI non-displaced.",
+      "Neck: JVP elevated ~9 cm, no carotid bruits.",
+      "Lungs: bibasilar inspiratory crackles, no wheeze.",
+      "Extremities: trace–1+ pitting edema to the ankles bilaterally, warm, no calf tenderness/asymmetry.",
+      "Skin: warm and moist/sweaty, no rash, no cyanosis; fine tremor of outstretched hands.",
+      "Neuro: A&Ox3, fine resting/postural tremor, brisk reflexes, no focal deficit.",
+      "HEENT: mild stare/lid retraction, no proptosis, no diplopia."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "CMP",
+      "BNP",
+      "Troponin",
+      "TSH",
+      "FreeT4",
+      "D-dimer",
+      "CTPA",
+      "CXR"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals — note the irregularly irregular tachycardia.",
+      "Elicit the focused history, asking specifically about weeks-long systemic symptoms (heat, tremor, weight, stools) and recent alcohol that point to an AF precipitant.",
+      "Perform the targeted physical exam — thyroid, cardiac rhythm, JVP, lungs, edema, tremor.",
+      "Build a differential led by decompensated HFpEF from new AF with RVR while running a broad precipitant search and excluding PE and ACS.",
+      "Order a focused multi-system workup (EKG, troponin, TSH/free T4, BNP, CXR, D-dimer/CTPA) and interpret the AF EKG and congestive CXR.",
+      "Commit to new-onset AF with RVR decompensating HFpEF, precipitated by occult hyperthyroidism, and manage with rate control plus thyroid treatment, gentle diuresis, anticoagulation, and admission."
+    ],
+    "commonPitfalls": [
+      "Rate-control monotherapy without treating the thyrotoxic precipitant",
+      "Over-calling a STEMI from rate-related ST/T changes",
+      "Aggressive IV fluid bolus in a congested patient"
+    ],
+    "managementPearls": [
+      "Rate control with a beta-blocker is preferred and doubles as treatment of the thyrotoxic adrenergic state",
+      "Calculate CHA2DS2-VASc and start anticoagulation"
+    ],
+    "criticalHistoryItems": [
+      "weight_loss",
+      "heat_intolerance"
+    ],
+    "criticalExamItems": [
+      "assess_thyroid",
+      "auscultate_mitral_area"
+    ],
+    "criticalWorkupItems": [
+      "EKG",
+      "Troponin"
+    ],
+    "criticalInterpretationItems": [
+      "Atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals. No acute ST-elevation.",
+      "Mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions."
+    ],
+    "criticalManagementItems": [
+      "Rate control (beta-blocker preferred) with co-treatment of thyrotoxicosis and caution against worsening decompensation"
+    ],
+    "keyImageInterpretationFindings": [
+      "Atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals. No acute ST-elevation.",
+      "Mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Atrial fibrillation with rapid ventricular response ~140: irregularly irregular rhythm, absent P waves, variable R-R intervals. No acute ST-elevation.",
+      "Mild cardiomegaly, pulmonary vascular congestion/cephalization, early interstitial edema, small bilateral pleural effusions."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's fear about her racing heart",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": false,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

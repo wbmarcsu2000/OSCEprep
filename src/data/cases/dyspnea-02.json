@@ -1,64 +1,70 @@
 {
   "id": "dyspnea-02",
   "category": "Dyspnea",
-  "difficulty": "moderate",
-  "title": "Worsening cough and breathlessness in a smoker",
+  "difficulty": "hard",
+  "title": "Worsening cough and breathlessness in a smoker with new ankle swelling",
   "diagnosis": "COPD exacerbation",
   "chart": {
     "ageSex": "64F",
     "cc": "Worsening breathlessness",
-    "oneLiner": "64F with a long smoking history and known COPD presents with 3 days of worsening dyspnea, increased cough, and a change to purulent sputum.",
+    "oneLiner": "64F with COPD, hypertension, type 2 diabetes, and a recent medication change presents with 4 days of worsening dyspnea, increased cough with purulent sputum, and new ankle swelling — raising COPD exacerbation versus decompensated heart failure.",
     "vitals": {
-      "BP": "138/84",
-      "HR": "104",
-      "RR": "26",
-      "Temp": "37.8°C",
-      "SpO2": "88% RA"
+      "BP": "146/88",
+      "HR": "112",
+      "RR": "28",
+      "Temp": "37.7°C",
+      "SpO2": "86% RA"
     },
     "timer": 180
   },
-  "opening": "My breathing's gotten much worse the last few days, and I'm coughing up a lot more gunk than usual.",
-  "patientFile": "PERSONA: 64-year-old woman, pursed-lip breathing, sitting forward, speaking in short phrases. Cooperative.\n\nHPI: Over 3 days, dyspnea worse than her usual baseline, increased cough with a change from clear to thick yellow-green sputum, and more wheeze. Had a head cold last week. Uses her inhalers more often with less relief. NO chest pain, NO orthopnea/PND, NO leg swelling, NO fever chills beyond feeling warm, NO hemoptysis, NO calf pain/travel.\nBASELINE: known COPD, chronic morning cough, gets short of breath walking one block at baseline.\nPMH: COPD, hypertension. MEDS: tiotropium, albuterol PRN, lisinopril. Generally adherent.\nSOCIAL: current smoker, ~45 pack-years. Lives with spouse.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mild-moderate distress, accessory muscle use, pursed-lip breathing. Barrel chest.\n- Vitals: BP 138/84, HR 104, RR 26, 37.8°C, SpO2 88% RA.\n- Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.\n- Cardiac: tachycardic, regular, distant heart sounds, no murmur.\n- Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the smoking amount or the recent cold unless asked about smoking or recent illness.\n- The absent JVD/edema are revealed only if those are examined (they help distinguish from heart failure).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My breathing's been getting worse all week, I'm coughing up a lot more gunk, and now my ankles have started puffing up too.",
+  "patientFile": "PERSONA: 64-year-old woman, pursed-lip breathing, sitting forward, speaking in short three-to-four word phrases, audibly wheezy. Cooperative but tired and a little frightened by the ankle swelling.\n\nHPI: Over the last 4 days her dyspnea has crept well above her usual baseline, with more coughing and a change from clear to thick yellow-green sputum, and louder wheeze. She had a head cold a week ago. She has been using her rescue inhaler far more often with less and less relief, and she ran out of her maintenance inhaler about ten days ago and has not refilled it. In the last few days both ankles have started to swell, which is what frightened her into coming. She CAN lie flat without getting more short of breath and does NOT wake at night gasping (no orthopnea, no PND). NO chest pain, NO palpitations she's aware of, NO fever or shaking chills beyond feeling warm, NO hemoptysis, NO calf pain, NO recent long travel or immobilization, NO weight gain noticed on her scale.\nBASELINE: known COPD, chronic morning cough, gets short of breath walking one block; last spirometry showed moderate-to-severe obstruction. One hospital admission for COPD last winter, never intubated, never on home oxygen.\nNEW-MEDICATION HISTORY (reveal only when asked about med changes/new pills/swelling): about three weeks ago her primary doctor added AMLODIPINE for blood pressure and switched her water pill — and her ankles have been puffier since the amlodipine started. She also finished a short course of prednisone from an urgent-care visit four days ago for the 'chest cold.'\nPMH: COPD (moderate-to-severe), hypertension, type 2 diabetes, obesity, GERD, mild diabetic neuropathy. NO known heart failure, NO prior heart attack, NO atrial fibrillation that she knows of.\nMEDS (reveal the list when asked what she takes): tiotropium (maintenance — OUT for ~10 days), albuterol inhaler PRN (using constantly), amlodipine (new, ~3 weeks), hydrochlorothiazide, lisinopril, metformin, gabapentin for neuropathy, omeprazole, and over-the-counter ibuprofen a few times a week for knees. She is usually adherent except for the lapsed tiotropium.\nALLERGIES: none.\nSOCIAL: current smoker, ~45 pack-years, still about half a pack a day. Lives with her spouse in a single-level home. Spouse is supportive and drives. Social drinker only. No drugs.\nFAMILY: father had emphysema; mother had high blood pressure.\nROS: as above — fatigue and breathlessness prominent; no chest pain, no orthopnea/PND, no syncope, no fevers, denies polyuria/polydipsia beyond her usual.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mild-to-moderate respiratory distress, accessory muscle use, pursed-lip breathing, barrel chest, speaking in short phrases. Alert, no asterixis.\n- Vitals: BP 146/88, HR 112, RR 28, Temp 37.7°C, SpO2 86% RA.\n- Lungs: diffuse expiratory WHEEZE, markedly prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal crackles, NO bronchial breathing, NO dullness — no focal consolidation. No clear bibasilar crackles of pulmonary edema.\n- Cardiac: tachycardic and somewhat IRREGULAR, distant heart sounds, no murmur, no S3 gallop, PMI not displaced.\n- Neck: JVP NOT elevated (sitting at 45 degrees).\n- Extremities: MILD bilateral pitting ankle edema, soft and non-tender, skin intact, NO calf tenderness, NO cords, pulses intact and symmetric. (The edema is mild and symmetric, came on with the new amlodipine.)\n- Abdomen: soft, no hepatomegaly, no hepatojugular reflux.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the lapsed maintenance inhaler, the new amlodipine, the recent prednisone, the smoking amount, or the recent cold unless asked the relevant question (medications/med changes, swelling, smoking, or recent illness).\n- The absent orthopnea/PND, absent elevated JVP, absent S3, and the symmetric amlodipine-pattern edema are revealed only if those are asked/examined (they help distinguish from heart failure).\n- Describe the heartbeat as 'a bit irregular and fast' only if asked about palpitations or when the pulse/heart is examined; do not name a rhythm.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 12.8 with neutrophilia, Hgb 14.9, Plt 280.",
-      "BMP": "Na 139, K 4.0, HCO3 30 (chronically elevated), Cr 0.8.",
-      "ABG": "pH 7.34, PaCO2 55, PaO2 58, HCO3 30 — chronic respiratory acidosis with metabolic compensation, acute-on-chronic.",
-      "BNP": "85 pg/mL — not elevated (argues against heart failure).",
-      "Troponin": "Normal."
+      "CBC": "WBC 13.6 with neutrophilia (no bands), Hgb 15.2 (mild secondary erythrocytosis), Plt 271.",
+      "BMP": "Na 131, K 3.2, Cl 92, HCO3 31 (chronically elevated), BUN 28, Cr 1.3 (baseline 0.9 → mild AKI), glucose 244. Calculated anion gap = 131 − (92 + 31) = 8 (normal/low, NO anion-gap metabolic acidosis).",
+      "ABG": "pH 7.32, PaCO2 60, PaO2 54, HCO3 31 on room air. Chronic respiratory acidosis with metabolic compensation, now ACUTE-on-chronic (pH lower than chronic compensation alone would predict; expected HCO3 rise for chronic CO2 of 60 ≈ +7 over 24 = 31, matching).",
+      "BNP": "210 pg/mL — mildly elevated but NON-diagnostic in this range; can rise with right-heart strain/cor pulmonale and age, does not by itself establish left heart failure.",
+      "Troponin": "Normal (negative ×1).",
+      "Magnesium": "1.4 mg/dL — low (hypomagnesemia, contributes to the atrial ectopy and the hypokalemia).",
+      "VBG_lactate": "Lactate 2.1 mmol/L — mildly elevated, attributable to heavy beta-agonist use and work of breathing; not shock."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/ecg-in-chronic-obstructive-pulmonary-disease/",
+      "source": "https://litfl.com/multifocal-atrial-tachycardia-mat-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
-      "verify": "From the LITFL 'ECG in Chronic Lung Disease (COPD)' library page — download an example tracing that matches: Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes. … and self-host with credit to litfl.com.",
+      "findings": "Multifocal atrial tachycardia: irregularly irregular, rate ~110, at least three distinct P-wave morphologies with varying PR and P-P intervals, isoelectric baseline between P waves. Possible P pulmonale and low voltage. No acute ischemic ST changes.",
+      "verify": "Source a tracing matching: irregular narrow-complex tachycardia with ≥3 distinct P-wave morphologies and varying PR intervals (multifocal atrial tachycardia), low voltage, no acute ischemia — self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "integrated": true,
+      "imageDescription": "Irregular narrow-complex tachycardia at ~110 bpm with at least three different P-wave shapes and varying PR/P-P intervals — multifocal atrial tachycardia — with low voltage and no acute ischemia.",
       "searchTerms": [
-        "12-lead EKG Sinus tachycardia. Possible pulmonale"
+        "multifocal atrial tachycardia ECG three P wave morphologies",
+        "MAT COPD ECG low voltage"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 66-year-old man who is a longtime smoker presents with increasing breathlessness, wheeze, and a productive cough."
+      "clinicalVignette": "A 64-year-old longtime smoker with a severe COPD flare, hypoxia, and low potassium/magnesium has a fast, irregular pulse."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=COPD%20emphysema%20chest%20xray%20hyperinflation&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
-      "verify": "Pick a CC file showing emphysematous hyperinflation (flattened diaphragms), NOT a lobar infiltrate or CHF pattern.",
+      "findings": "Hyperinflation with flattened diaphragms, increased AP/retrosternal air and lucency, narrow cardiac silhouette. NO focal consolidation, NO Kerley B lines, NO cephalization, NO pleural effusions — no radiographic pulmonary edema or pneumonia.",
+      "verify": "Pick a CC file showing emphysematous hyperinflation with flattened diaphragms and a small/narrow heart, NOT a lobar infiltrate and NOT a CHF/edema pattern.",
       "assetNeeded": true,
-      "imageDescription": "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
+      "integrated": true,
+      "imageDescription": "Hyperinflated lungs with flattened diaphragms and a narrow cardiac silhouette; no consolidation, no pulmonary edema (no Kerley B lines/cephalization), no effusions.",
       "searchTerms": [
-        "chest radiograph Hyperinflation with flattened diaphragms"
+        "chest radiograph hyperinflation flattened diaphragms emphysema",
+        "COPD chest x-ray no pulmonary edema"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 70-year-old man with known emphysema presents with worsening dyspnea and prolonged expiratory wheezing."
+      "clinicalVignette": "A 64-year-old with known emphysema and new ankle swelling — the film helps decide between a COPD flare and heart failure."
     }
   },
   "revealKeys": [
@@ -67,58 +73,70 @@
     "ABG",
     "BNP",
     "Troponin",
+    "Magnesium",
+    "VBG_lactate",
     "ekg",
     "cxr"
   ],
   "essential": [
     "cxr",
     "ABG",
-    "ekg"
+    "ekg",
+    "BNP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "COPD exacerbation (leading,7; accepts AECOPD/COPD flare). Pneumonia (core,4). Pulmonary embolism (CANT-MISS,5). Acute coronary syndrome (CANT-MISS,4). Heart failure (core,3). Named leading dx w/ justification (core,2).",
-      "idealAnswer": "Leading diagnosis: COPD exacerbation. Must-not-miss diagnoses to exclude: Pulmonary embolism; Acute coronary syndrome. Also reasonable: Pneumonia; Heart failure.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). She has new bilateral ankle swelling, so explicitly address heart failure. Also name THREE common triggers/precipitants of a COPD exacerbation that you would look for.",
+      "rubric": "COPD exacerbation (leading,6; accepts AECOPD/COPD flare). Acute decompensated heart failure — the main competing diagnosis given new bilateral edema and a mildly elevated BNP (CANT-MISS/competing,5). Pulmonary embolism — must-not-miss (CANT-MISS,4). Pneumonia (core,2). Acute coronary syndrome (core,2). Names leading dx w/ justification — lapsed maintenance inhaler, purulent sputum, viral prodrome, diffuse wheeze with hyperresonance (core,2). Names THREE triggers of a COPD exacerbation, e.g. viral/bacterial respiratory infection, air pollution/smoke exposure, medication non-adherence, or a concurrent illness/PE (core,4). PENALTY: anchoring on heart failure and missing the COPD flare, or anchoring on COPD without addressing the edema/CHF (-3).",
+      "idealAnswer": "Leading diagnosis: COPD exacerbation (lapsed maintenance tiotropium, viral prodrome, purulent sputum, diffuse expiratory wheeze with hyperresonance and acute-on-chronic hypercapnia). Main competing diagnosis to resolve: Acute decompensated heart failure — she has NEW bilateral ankle edema and a mildly elevated BNP, so it must be addressed, though the symmetric amlodipine-pattern edema, absent orthopnea/PND, non-elevated JVP, and no S3 argue against it. Must-not-miss: Pulmonary embolism. Also reasonable: Pneumonia; Acute coronary syndrome. THREE triggers of a COPD exacerbation to look for: (1) viral or bacterial respiratory infection, (2) medication non-adherence (her lapsed maintenance inhaler), and (3) environmental/pollutant or ongoing tobacco-smoke exposure — with PE and ACS as other precipitants to consider.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Pulmonary embolism",
+            "item": "Acute decompensated heart failure (competing diagnosis given new edema)",
             "points": 5
           },
           {
-            "item": "Acute coronary syndrome",
+            "item": "Pulmonary embolism",
             "points": 4
           }
         ],
         "coreActions": [
           {
+            "item": "COPD exacerbation named as leading dx with justification",
+            "points": 6
+          },
+          {
             "item": "Pneumonia",
-            "points": 4
-          },
-          {
-            "item": "Heart failure",
-            "points": 3
-          },
-          {
-            "item": "Named leading dx w/ justification",
             "points": 2
+          },
+          {
+            "item": "Acute coronary syndrome",
+            "points": 2
+          },
+          {
+            "item": "Names three triggers/precipitants of a COPD exacerbation",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on one diagnosis without addressing the COPD-vs-heart-failure fork",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Pulmonary embolism",
-        "Acute coronary syndrome"
+        "Acute decompensated heart failure",
+        "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
         "Pneumonia",
-        "Heart failure"
+        "Acute coronary syndrome"
       ]
     },
     {
@@ -126,9 +144,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "CXR (CANT-MISS,4). ABG / VBG (core,3). CBC (core,2). BMP (core,2). EKG (core,2). BNP to help exclude heart failure (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; ABG; BNP; Troponin.",
+      "prompt": "What initial diagnostic workup do you want to order to separate a COPD exacerbation from heart failure and the other must-not-miss causes?",
+      "rubric": "CXR to look for hyperinflation vs pulmonary edema/consolidation (CANT-MISS,4). ABG / VBG for acute-on-chronic hypercapnia (core,3). EKG — she is tachycardic and irregular (core,2). BNP to weigh heart failure (core,2). CBC (core,1). BMP (core,1). Troponin (core,1). Add electrolytes magnesium given the arrhythmia and diuretic/beta-agonist (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2); committing to empiric heart-failure diuresis before imaging/BNP (-2).",
+      "idealAnswer": "Order: CXR; ABG (or VBG); EKG; BNP; CBC; BMP; Troponin; and a magnesium level given the arrhythmia and her diuretic/beta-agonist use. Use the CXR and BNP plus the exam to weigh heart failure against a COPD flare before committing to diuresis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -143,30 +161,39 @@
             "points": 3
           },
           {
-            "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
             "item": "EKG",
             "points": 2
           },
           {
-            "item": "BNP to help exclude heart failure",
+            "item": "BNP",
             "points": 2
           },
           {
+            "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "BMP",
+            "points": 1
+          },
+          {
             "item": "Troponin",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Magnesium level given the arrhythmia and diuretic/beta-agonist use",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
             "item": "shotgun panel w/ no reasoning",
+            "points": -2
+          },
+          {
+            "item": "Empiric heart-failure diuresis before imaging/BNP",
             "points": -2
           }
         ]
@@ -176,13 +203,16 @@
       ],
       "optionalTests": [
         "ABG / VBG",
+        "EKG",
+        "BNP",
         "CBC",
         "BMP",
-        "EKG",
-        "BNP to help exclude heart failure"
+        "Troponin",
+        "Magnesium level given the arrhythmia and diuretic/beta-agonist use"
       ],
       "contraindicatedTests": [
-        "shotgun panel w/ no reasoning"
+        "shotgun panel w/ no reasoning",
+        "Empiric heart-failure diuresis before imaging/BNP"
       ],
       "orderSensitiveActions": []
     },
@@ -192,46 +222,41 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, possible P pulmonale/low voltage, NO acute ischemia. CREDIT: rate & rhythm (sinus tachy) (6); recognizes no acute ischemic ST changes (5); notes any right-heart/COPD features e.g. P pulmonale (2); systematic read (2). PENALTY: over-calling acute ischemia (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and their significance in this presentation.",
+      "rubric": "Findings = multifocal atrial tachycardia (irregular, rate ~110, ≥3 distinct P-wave morphologies with varying PR/P-P, isoelectric baseline), with low voltage / possible P pulmonale and NO acute ischemia. CREDIT: identifies the rhythm as multifocal atrial tachycardia / recognizes ≥3 P-wave morphologies rather than calling it atrial fibrillation (6); recognizes NO acute ischemic ST changes (4); ties MAT to the COPD flare with hypoxia and low K/Mg as the driver, treated by treating the lungs not by cardioverting (3); systematic read (2). PENALTY: mislabeling it atrial fibrillation and anticoagulating/rate-controlling as AF (-3); over-calling acute ischemia (-3).",
       "keyFindings": [
-        "recognizes no acute ischemic ST changes",
-        "notes any right-heart/COPD features e.g. P pulmonale",
-        "systematic read"
+        "multifocal atrial tachycardia with at least three P-wave morphologies",
+        "not atrial fibrillation — discrete P waves with isoelectric baseline",
+        "low voltage / possible P pulmonale",
+        "no acute ischemic ST changes"
       ],
       "criticalFindings": [
-        "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes."
+        "Multifocal atrial tachycardia (irregular, ~110 bpm, ≥3 distinct P-wave morphologies with varying PR and P-P intervals) with low voltage / possible P pulmonale and no acute ischemic ST changes."
       ],
       "commonMistakes": [
-        "over-calling acute ischemia"
+        "calling multifocal atrial tachycardia atrial fibrillation",
+        "over-calling acute ischemia",
+        "cardioverting or anticoagulating MAT as if it were AF"
       ],
-      "idealAnswer": "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
+      "idealAnswer": "Multifocal atrial tachycardia: an irregularly irregular narrow-complex tachycardia at ~110 bpm with at least three distinct P-wave morphologies and varying PR and P-P intervals, with an isoelectric baseline between P waves — which distinguishes it from atrial fibrillation. There is low voltage with possible P pulmonale and NO acute ischemic ST changes. MAT is essentially a marker of the severe COPD exacerbation, hypoxia, and the low potassium and magnesium; the treatment is to treat the underlying pulmonary process and correct electrolytes, not to cardiovert or anticoagulate it as AF.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
-            "points": 5
-          }
+          "Multifocal atrial tachycardia (irregular, ~110 bpm, ≥3 distinct P-wave morphologies with varying PR and P-P intervals) with low voltage / possible P pulmonale and no acute ischemic ST changes."
         ],
         "coreActions": [
-          {
-            "item": "recognizes no acute ischemic ST changes",
-            "points": 5
-          },
-          {
-            "item": "notes any right-heart/COPD features e.g. P pulmonale",
-            "points": 2
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "multifocal atrial tachycardia with at least three P-wave morphologies",
+          "not atrial fibrillation — discrete P waves with isoelectric baseline",
+          "no acute ischemic ST changes"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling acute ischemia",
+            "label": "mislabels multifocal atrial tachycardia as atrial fibrillation",
+            "points": -3
+          },
+          {
+            "label": "over-calls acute ischemia",
             "points": -3
           }
         ]
@@ -243,46 +268,34 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = hyperinflation, flattened diaphragms, increased AP diameter, NO focal consolidation or pulmonary edema. CREDIT: hyperinflation/flattened diaphragms (5); increased lucency/AP diameter (2); correctly notes NO consolidation or congestion (3). PENALTY: calling a pneumonia or CHF that isn't there (-2).",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings, and say how the film helps you choose between a COPD flare and heart failure.",
+      "rubric": "Findings = hyperinflation, flattened diaphragms, increased AP diameter/lucency, narrow cardiac silhouette, and NO pulmonary edema (no Kerley B lines/cephalization/effusions) and NO focal consolidation. CREDIT: hyperinflation/flattened diaphragms (4); narrow heart with increased lucency/AP diameter (2); correctly states NO pulmonary edema or consolidation and uses that to argue AGAINST heart failure and pneumonia (4). PENALTY: calling a pneumonia or CHF that isn't there (-2).",
       "keyFindings": [
-        "hyperinflation/flattened diaphragms",
-        "increased lucency/AP diameter",
-        "correctly notes NO consolidation or congestion"
+        "hyperinflation with flattened diaphragms",
+        "narrow cardiac silhouette and increased lucency/AP diameter",
+        "no pulmonary edema (no Kerley B lines or cephalization) and no consolidation — argues against heart failure and pneumonia"
       ],
       "criticalFindings": [
-        "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+        "Hyperinflated lungs with flattened diaphragms, increased AP diameter, and a narrow cardiac silhouette, with no pulmonary edema and no consolidation — supporting a COPD flare over heart failure or pneumonia."
       ],
       "commonMistakes": [
-        "calling a pneumonia or CHF that isn't there"
+        "calling a pneumonia or CHF that isn't there",
+        "missing the absence of edema as the deliberate pertinent negative"
       ],
-      "idealAnswer": "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
+      "idealAnswer": "Hyperinflation with flattened diaphragms, increased AP/retrosternal lucency, and a narrow cardiac silhouette — the emphysema pattern. Importantly there is NO pulmonary edema (no Kerley B lines, no vascular cephalization, no effusions) and NO focal consolidation. The clear lack of an edema pattern, together with the small heart, argues against acute heart failure as the driver of her dyspnea and against pneumonia, supporting a COPD exacerbation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema.",
-            "points": 5
-          }
+          "Hyperinflated lungs with flattened diaphragms, increased AP diameter, and a narrow cardiac silhouette, with no pulmonary edema and no consolidation — supporting a COPD flare over heart failure or pneumonia."
         ],
         "coreActions": [
-          {
-            "item": "hyperinflation/flattened diaphragms",
-            "points": 5
-          },
-          {
-            "item": "increased lucency/AP diameter",
-            "points": 2
-          },
-          {
-            "item": "correctly notes NO consolidation or congestion",
-            "points": 3
-          }
+          "hyperinflation with flattened diaphragms",
+          "no pulmonary edema or consolidation — argues against heart failure and pneumonia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "calling a pneumonia or CHF that isn't there",
+            "label": "calls a pneumonia or CHF that isn't there",
             "points": -2
           }
         ]
@@ -292,19 +305,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Pulling the data together, what is your leading diagnosis and reasoning?",
-      "rubric": "COPD exacerbation (5). Uses the normal BNP / absent JVD-edema to argue against heart failure and the clear film to argue against pneumonia (3). Notes acute-on-chronic respiratory acidosis on ABG (bonus,2).",
-      "idealAnswer": "COPD exacerbation. ",
+      "prompt": "Pulling the data together, what is your leading diagnosis and reasoning? Reconcile the new edema and the mildly elevated BNP, and name THREE contributors to her low sodium and low potassium/magnesium.",
+      "rubric": "Commits to COPD exacerbation as the driver of the dyspnea, supported by the hyperinflated edema-free film, acute-on-chronic respiratory acidosis on ABG, and the multifocal atrial tachycardia as a marker of the severe flare (5). Reconciles the competing heart-failure picture — the new edema is symmetric and tracks the NEW amlodipine, with absent orthopnea/PND, non-elevated JVP, no S3, a narrow heart and no radiographic edema, and a BNP only mildly elevated (non-diagnostic and explainable by right-heart strain/age) (3). Names THREE contributors to the electrolyte abnormalities, e.g. thiazide (hyponatremia + hypokalemia), beta-agonist driving K+ intracellularly, prednisone, poor intake/AKI, or hypomagnesemia perpetuating hypokalemia (2).",
+      "idealAnswer": "Leading diagnosis: COPD exacerbation. The dyspnea is driven by the flare — diffuse wheeze with hyperinflation and an edema-free chest film, acute-on-chronic respiratory acidosis (pH 7.32 / PaCO2 60 / HCO3 31) on the ABG, and multifocal atrial tachycardia as a marker of severe COPD with hypoxia and electrolyte depletion. Reconciling the competing heart-failure picture: her new bilateral ankle edema is mild, symmetric, and began with the NEW amlodipine (a dihydropyridine that causes peripheral edema); she has NO orthopnea or PND, a non-elevated JVP, no S3, a narrow cardiac silhouette with no radiographic pulmonary edema, and a BNP that is only mildly elevated (210) — non-diagnostic in this range and explainable by right-heart strain/cor pulmonale and age. So heart failure is not the driver, though it remains on the radar. THREE contributors to her low sodium and low potassium/magnesium: (1) hydrochlorothiazide (causes hyponatremia and renal potassium/magnesium wasting), (2) heavy beta-agonist use shifting potassium intracellularly, and (3) the recent prednisone plus poor intake with a prerenal AKI — with the low magnesium itself perpetuating the refractory hypokalemia. The discriminating data are the chest film, the BNP, and the exam; if the BNP or volume picture were truly ambiguous, a bedside echocardiogram would settle left-ventricular function.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Notes acute-on-chronic respiratory acidosis on ABG",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -312,9 +320,9 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH COPD: short-acting bronchodilators albuterol + ipratropium (CANT-MISS,5); systemic steroids prednisone 40 mg ×5 d (CANT-MISS,5); antibiotics if ↑dyspnea/sputum/purulence (4); controlled O2 to SpO2 88-92% (4); NIV/BiPAP for hypercapnic respiratory failure (4); treat trigger (2). PENALTY: high-flow O2 driving CO2 retention without monitoring (-3); failing to consider NIV in a tiring hypercapnic patient (-2).",
-      "idealAnswer": "COPD exacerbation: inhaled short-acting bronchodilators (albuterol + ipratropium), systemic corticosteroids (prednisone 40 mg × 5 days), antibiotics if increased dyspnea/sputum volume/purulence (e.g. azithromycin or doxycycline). Controlled O2 to SpO2 88–92%. NIV (BiPAP) for hypercapnic respiratory failure/acidosis. Treat triggers.",
+      "prompt": "What is your management plan, including disposition and what is needed for a safe discharge once she has stabilized?",
+      "rubric": "Per MGH COPD: short-acting bronchodilators albuterol + ipratropium (CANT-MISS,5); systemic corticosteroids prednisone 40 mg ×5 d (CANT-MISS,4); antibiotics given increased dyspnea + sputum volume + purulence (4); controlled O2 targeting SpO2 88-92% (3); NIV/BiPAP for worsening hypercapnic respiratory failure/acidosis (3); correct the hypokalemia AND hypomagnesemia and treat the MAT by treating the lungs/hypoxia rather than cardioverting — avoid a non-selective beta-blocker (2); review the amlodipine as the cause of edema and restart the lapsed maintenance inhaler (bonus,2); safe-discharge plan — confirm clinical/oxygenation stability, medication reconciliation (resume tiotropium, address amlodipine edema, hold/limit NSAID), inhaler-technique teaching, smoking-cessation support, vaccinations, and close follow-up with the spouse engaged (2). PENALTY: uncontrolled high-flow O2 driving CO2 retention without monitoring (-3); reflexively diuresing/anticoagulating/cardioverting the MAT as if it were heart failure or AF (-3); discharging while still hypoxemic/hypercapnic without a plan (-2).",
+      "idealAnswer": "COPD exacerbation: inhaled short-acting bronchodilators (albuterol + ipratropium), systemic corticosteroids (prednisone 40 mg × 5 days), and antibiotics (e.g., azithromycin or doxycycline) given the increased dyspnea, sputum volume, and purulence. Controlled oxygen titrated to SpO2 88–92% — avoid uncontrolled high-flow O2 that worsens hypercapnia — with NIV/BiPAP if she tires or her hypercapnic acidosis worsens. Replace potassium AND magnesium; the multifocal atrial tachycardia is treated by treating the underlying flare, hypoxia, and electrolytes (NOT by cardioversion or anticoagulation), and avoid a non-selective beta-blocker that could worsen bronchospasm. Do NOT reflexively diurese — the edema is from the new amlodipine, which should be reviewed/changed, and the lapsed tiotropium should be resumed; hold/limit the OTC ibuprofen. Disposition: admit (telemetry given the MAT and electrolytes; ICU/step-down if she needs NIV). Safe discharge once stabilized requires: confirmed clinical and oxygenation stability off escalating support, full medication reconciliation (resume maintenance inhaler, address the amlodipine-related edema, reconcile diuretic/NSAID), inhaler-technique teaching, smoking-cessation support and pharmacotherapy, influenza/pneumococcal/COVID vaccination, a written action plan, and close PCP/pulmonary follow-up with her spouse engaged for transport and support.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -324,32 +332,44 @@
           },
           {
             "item": "Systemic corticosteroids",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Antibiotics if increased sputum/purulence",
+            "item": "Antibiotics given increased sputum volume/purulence",
             "points": 4
           },
           {
             "item": "Controlled O2 to SpO2 88-92%",
-            "points": 4
+            "points": 3
           },
           {
-            "item": "NIV (BiPAP) if hypercapnic failure",
-            "points": 4
+            "item": "NIV (BiPAP) if hypercapnic respiratory failure worsens",
+            "points": 3
+          },
+          {
+            "item": "Correct K+ and Mg and treat MAT by treating the flare, not cardioversion; avoid non-selective beta-blocker",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge plan: stability check, med reconciliation, inhaler teaching, smoking cessation, vaccines, close follow-up",
+            "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Treat trigger / smoking cessation counseling",
+            "item": "Review amlodipine as cause of edema and resume lapsed maintenance inhaler",
             "points": 2
           }
         ],
         "penalties": [
           {
             "item": "Uncontrolled high-flow O2",
+            "points": -3
+          },
+          {
+            "item": "Reflexively diuresing/anticoagulating/cardioverting as heart failure or AF",
             "points": -3
           }
         ]
@@ -359,16 +379,21 @@
         "Systemic corticosteroids"
       ],
       "optionalActions": [
-        "Antibiotics if increased sputum/purulence",
+        "Antibiotics given increased sputum volume/purulence",
         "Controlled O2 to SpO2 88-92%",
-        "NIV (BiPAP) if hypercapnic failure",
-        "Treat trigger / smoking cessation counseling"
+        "NIV (BiPAP) if hypercapnic respiratory failure worsens",
+        "Correct K+ and Mg and treat MAT by treating the flare, not cardioversion; avoid non-selective beta-blocker",
+        "Safe-discharge plan: stability check, med reconciliation, inhaler teaching, smoking cessation, vaccines, close follow-up",
+        "Review amlodipine as cause of edema and resume lapsed maintenance inhaler"
       ],
       "unsafeActions": [
-        "Uncontrolled high-flow O2"
+        "Uncontrolled high-flow O2",
+        "Reflexively diuresing/anticoagulating/cardioverting as heart failure or AF"
       ],
-      "consults": [],
-      "disposition": "Admit; ICU if respiratory failure",
+      "consults": [
+        "Pulmonary (if NIV/refractory)"
+      ],
+      "disposition": "Admit with telemetry; ICU/step-down if NIV or worsening hypercapnic failure",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "COPD",
@@ -383,14 +408,16 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "64-year-old woman, pursed-lip breathing, sitting forward, speaking in short phrases. Cooperative.",
+    "affect": "64-year-old woman, pursed-lip breathing, sitting forward, speaking in short phrases, tired and worried about her swollen ankles. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the lapsed maintenance inhaler, new amlodipine, recent prednisone, or smoking amount unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "Describe the heartbeat only as 'a bit fast and irregular' if asked; do not name a rhythm",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -402,7 +429,57 @@
         "smoking",
         "tobacco",
         "cigarettes",
-        "do you smoke"
+        "do you smoke",
+        "pack years"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_changes",
+      "category": "meds",
+      "triggerConcepts": [
+        "new medication",
+        "any medication changes",
+        "started any new pills",
+        "recent prescription change",
+        "what changed with your meds",
+        "amlodipine",
+        "steroid",
+        "prednisone"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "swelling_edema",
+      "category": "hpi",
+      "triggerConcepts": [
+        "swelling",
+        "ankle swelling",
+        "leg swelling",
+        "when did the swelling start",
+        "puffy ankles"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "orthopnea_pnd",
+      "category": "ros",
+      "triggerConcepts": [
+        "lie flat",
+        "orthopnea",
+        "wake up short of breath",
+        "paroxysmal nocturnal dyspnea",
+        "extra pillows",
+        "gasping at night"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -430,7 +507,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "sputum",
+        "what color is the phlegm"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -443,7 +522,8 @@
       "triggerConcepts": [
         "how bad",
         "severity",
-        "scale"
+        "scale",
+        "compared to baseline"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -456,7 +536,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "chest pain",
+        "palpitations",
+        "fever"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -470,7 +553,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "does your inhaler help"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -483,7 +567,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "copd",
+        "heart",
+        "diabetes"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -496,7 +583,9 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "inhalers",
+        "are you taking them"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -509,7 +598,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "hospitalized before",
+        "first time",
+        "ever intubated"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -519,19 +610,19 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: tachycardic, regular, distant heart sounds, no murmur.",
+      "id": "auscultate_anterior_lungs_finding_1",
+      "finding": "Lungs: diffuse expiratory WHEEZE, markedly prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal crackles or consolidation; no clear bibasilar crackles of pulmonary edema.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "No wheezing or crackles."
     },
     {
       "id": "assess_jvp_finding_2",
-      "finding": "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "finding": "Neck: JVP NOT elevated at 45 degrees (argues against heart failure as the driver).",
       "revealedBy": [
         "assess_jvp"
       ],
@@ -540,31 +631,20 @@
       "normalIfNotPresent": "JVP not elevated."
     },
     {
-      "id": "auscultate_anterior_lungs_finding_3",
-      "finding": "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Cardiac: tachycardic and somewhat IRREGULAR, distant heart sounds, no murmur, NO S3 gallop, PMI not displaced.",
       "revealedBy": [
-        "auscultate_anterior_lungs",
-        "auscultate_posterior_lungs"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area",
+        "auscultate_with_bell"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No wheezing."
+      "normalIfNotPresent": "No murmur or gallop appreciated."
     },
     {
-      "id": "percuss_posterior_lungs_finding_4",
-      "finding": "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
-      "revealedBy": [
-        "percuss_posterior_lungs",
-        "assess_egophony",
-        "auscultate_posterior_lungs"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No consolidation."
-    },
-    {
-      "id": "assess_edema_finding_5",
-      "finding": "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "id": "assess_edema_finding_4",
+      "finding": "Extremities: MILD bilateral pitting ankle edema, soft and non-tender, symmetric, skin intact (came on with the new amlodipine).",
       "revealedBy": [
         "assess_edema"
       ],
@@ -573,14 +653,25 @@
       "normalIfNotPresent": "No peripheral edema."
     },
     {
-      "id": "assess_calf_tenderness_finding_6",
-      "finding": "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
+      "id": "assess_calf_tenderness_finding_5",
+      "finding": "Extremities: NO calf tenderness, no cords, pulses intact and symmetric (argues against DVT).",
       "revealedBy": [
         "assess_calf_tenderness"
       ],
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No calf tenderness."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: mild-to-moderate respiratory distress, accessory muscle use, pursed-lip breathing, barrel chest, speaking in short phrases. Alert, no asterixis.",
+      "revealedBy": [
+        "assess_general_appearance",
+        "assess_asterixis"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Comfortable, no distress, no asterixis."
     }
   ],
   "overallScoring": {
@@ -593,65 +684,71 @@
   },
   "caseSummary": {
     "finalDiagnosis": "COPD exacerbation",
-    "diagnosticFramework": "64F with a long smoking history and known COPD presents with 3 days of worsening dyspnea, increased cough, and a change to purulent sputum. The diagnosis is COPD exacerbation, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "64F with COPD, hypertension, type 2 diabetes, obesity and a recent medication change presents with 4 days of worsening dyspnea, purulent sputum, and NEW bilateral ankle edema, creating a genuine COPD-exacerbation-versus-heart-failure fork. The diagnosis is COPD exacerbation: an edema-free hyperinflated chest film with a narrow heart, acute-on-chronic respiratory acidosis on ABG, and multifocal atrial tachycardia on the EKG, while the new symmetric edema tracks the newly started amlodipine and the only-mildly-elevated BNP is non-diagnostic. Multi-system labs (hyponatremia, hypokalemia, hypomagnesemia, mild AKI, hyperglycemia) reflect her thiazide, heavy beta-agonist use, recent prednisone, and poor intake. It is reached by eliciting the focused and medication history, performing the targeted exam, and interpreting the directed workup while resolving the heart-failure fork and excluding PE/pneumonia/ACS.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: tachycardic, regular, distant heart sounds, no murmur.",
-      "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
-      "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
-      "Lungs: diffuse expiratory WHEEZE, prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal consolidation.",
-      "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness.",
-      "Neck: JVP NOT elevated. Extremities: NO pedal edema, no calf tenderness."
+      "Lungs: diffuse expiratory WHEEZE, markedly prolonged expiratory phase, globally decreased breath sounds, hyperresonant to percussion. NO focal crackles or consolidation; no clear bibasilar crackles of pulmonary edema.",
+      "Neck: JVP NOT elevated at 45 degrees (argues against heart failure as the driver).",
+      "Cardiac: tachycardic and somewhat IRREGULAR, distant heart sounds, no murmur, NO S3 gallop, PMI not displaced.",
+      "Extremities: MILD bilateral pitting ankle edema, soft and non-tender, symmetric, skin intact (came on with the new amlodipine).",
+      "Extremities: NO calf tenderness, no cords, pulses intact and symmetric (argues against DVT).",
+      "General: mild-to-moderate respiratory distress, accessory muscle use, pursed-lip breathing, barrel chest, speaking in short phrases. Alert, no asterixis."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
       "ABG",
       "BNP",
-      "Troponin"
+      "Troponin",
+      "Magnesium",
+      "VBG_lactate"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by COPD exacerbation while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to COPD exacerbation and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the new edema that raises heart failure.",
+      "Elicit the focused history including the medication history (lapsed maintenance inhaler, new amlodipine, recent prednisone) and the orthopnea/PND screen.",
+      "Perform the targeted physical exam to reveal wheeze with hyperresonance, non-elevated JVP, no S3, and symmetric soft ankle edema.",
+      "Build a differential that explicitly forks COPD exacerbation against acute decompensated heart failure while keeping PE, pneumonia, and ACS in view.",
+      "Order a focused workup and interpret the integrated EKG (multifocal atrial tachycardia) and CXR (hyperinflation without edema) plus the multi-system labs.",
+      "Commit to COPD exacerbation, reconcile the edema/BNP and electrolytes, and manage with bronchodilators, steroids, antibiotics, controlled O2/NIV, electrolyte repletion, and a safe-discharge plan."
     ],
     "commonPitfalls": [
-      "Uncontrolled high-flow O2"
+      "Anchoring on heart failure and diuresing amlodipine-related edema",
+      "Mislabeling multifocal atrial tachycardia as atrial fibrillation and anticoagulating/cardioverting",
+      "Uncontrolled high-flow O2 driving CO2 retention",
+      "Missing the lapsed maintenance inhaler as the precipitant"
     ],
     "managementPearls": [
       "Bronchodilators (albuterol + ipratropium)",
-      "Systemic corticosteroids"
+      "Systemic corticosteroids",
+      "Treat MAT by treating the COPD flare, hypoxia, and electrolytes — not by cardioversion"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "auscultate_aortic_area"
+      "auscultate_anterior_lungs"
     ],
     "criticalWorkupItems": [
       "CXR"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
-      "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+      "Multifocal atrial tachycardia (irregular, ~110 bpm, ≥3 distinct P-wave morphologies with varying PR and P-P intervals) with low voltage / possible P pulmonale and no acute ischemic ST changes.",
+      "Hyperinflated lungs with flattened diaphragms, increased AP diameter, and a narrow cardiac silhouette, with no pulmonary edema and no consolidation — supporting a COPD flare over heart failure or pneumonia."
     ],
     "criticalManagementItems": [
       "Bronchodilators (albuterol + ipratropium)",
       "Systemic corticosteroids"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
-      "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+      "Multifocal atrial tachycardia (irregular, ~110 bpm, ≥3 distinct P-wave morphologies with varying PR and P-P intervals) with low voltage / possible P pulmonale and no acute ischemic ST changes.",
+      "Hyperinflated lungs with flattened diaphragms, increased AP diameter, and a narrow cardiac silhouette, with no pulmonary edema and no consolidation — supporting a COPD flare over heart failure or pneumonia."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia. Possible P pulmonale / low voltage. No acute ischemic ST changes.",
-      "Hyperinflation with flattened diaphragms, increased AP diameter/retrosternal air, no focal consolidation or edema."
+      "Multifocal atrial tachycardia (irregular, ~110 bpm, ≥3 distinct P-wave morphologies with varying PR and P-P intervals) with low voltage / possible P pulmonale and no acute ischemic ST changes.",
+      "Hyperinflated lungs with flattened diaphragms, increased AP diameter, and a narrow cardiac silhouette, with no pulmonary edema and no consolidation — supporting a COPD flare over heart failure or pneumonia."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Multifocal atrial tachycardia (≥3 P-wave morphologies, varying PR) is a marker of severe pulmonary disease — treat the lungs and electrolytes, do not treat it as atrial fibrillation.",
+      "On a dyspnea film with new edema, the deliberate pertinent negative is the ABSENCE of pulmonary edema and the narrow heart — it argues against heart failure.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -662,11 +759,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's concern about her swelling and breathing",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks non-judgmentally about smoking and inhaler adherence",
         "points": 1
       },
       {
@@ -681,10 +778,10 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
-    "cxrReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
     "backwardCompatible": true
   }
 }

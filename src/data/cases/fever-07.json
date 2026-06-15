@@ -2,12 +2,12 @@
   "id": "fever-07",
   "category": "Fever",
   "difficulty": "hard",
-  "title": "High fever, rash, and lightheadedness",
+  "title": "High fever, rash, and lightheadedness in a young woman on multiple medications",
   "diagnosis": "Toxic shock syndrome",
   "chart": {
     "ageSex": "23F",
     "cc": "Fever, diffuse rash, and feeling faint",
-    "oneLiner": "23F presents with about a day of high fever, a diffuse sunburn-like rash, vomiting/diarrhea, myalgias, and lightheadedness, now hypotensive.",
+    "oneLiner": "23F with eczema, recently treated impetigo, and a history of migraines presents with about a day of high fever, a diffuse sunburn-like rash, vomiting/diarrhea, myalgias, and lightheadedness, now hypotensive on a background of several recently started medications.",
     "vitals": {
       "BP": "82/48",
       "HR": "126",
@@ -18,34 +18,36 @@
     "timer": 180
   },
   "opening": "I spiked a high fever last night, my whole body looks like a sunburn, and I keep feeling like I'm going to pass out.",
-  "patientFile": "PERSONA: 23-year-old woman, ill-appearing, flushed, and lightheaded. Cooperative but feels awful and is a little dazed.\n\nHPI: About 24 hours of abrupt high fever and chills, diffuse muscle aches, headache, sore throat, vomiting and watery diarrhea, and worsening lightheadedness/near-syncope when she stands. Noticed a red 'sunburn' rash spreading over her trunk and limbs today. She has been menstruating and has been using high-absorbency tampons, leaving the last one in much longer than usual (only if asked about menstruation/tampon use/recent gynecologic history). NO recent travel, NO tick exposure, NO sick contacts, NO new medications/antibiotics (argues against a drug reaction), NO neck stiffness or photophobia (only if asked). She has not yet noticed any peeling of the skin (desquamation typically comes 1–2 weeks later).\nPMH: healthy, no chronic illness. MEDS: combined oral contraceptive only; NO recent new drugs. ALLERGIES: none. SOCIAL: occasional alcohol, nonsmoker, in a monogamous relationship. GYN: regular menses, currently menstruating, uses tampons.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, flushed, diaphoretic, mildly confused/dazed but able to answer.\n- Vitals: BP 82/48, HR 126, RR 24, 39.6°C, SpO2 96% RA; appears hypotensive with a wide pulse and warm extremities (distributive/warm shock).\n- Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet.\n- HEENT: conjunctival injection (red eyes) without discharge; oropharyngeal hyperemia ('strawberry'-appearing red tongue/throat); mucous membranes dry.\n- Neuro: drowsy/mildly confused but no focal deficit; neck supple, NO meningismus.\n- Cardiac: tachycardic, regular, no murmur; warm, well-perfused extremities with brisk capillary refill despite hypotension.\n- Lungs: clear. Abdomen: soft, mildly diffusely tender, no peritoneal signs.\n- Pelvic (if performed): retained tampon in the vaginal vault with surrounding erythema/discharge; no abscess.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the tampon use / retained tampon unless asked about menstruation, tampon or sanitary-product use, recent gynecologic history, or a pelvic exam is performed.\n- The rash distribution (palms/soles), conjunctival injection, strawberry tongue, and warm-shock perfusion are revealed only if specifically examined.\n- Desquamation has NOT happened yet; if asked about skin peeling, say it has not peeled.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 23-year-old woman, ill-appearing, flushed, and lightheaded. Cooperative but feels awful and is a little dazed.\n\nHPI: About 24 hours of abrupt high fever and chills, diffuse muscle aches, headache, sore throat, vomiting and watery diarrhea, and worsening lightheadedness/near-syncope when she stands. Noticed a red 'sunburn' rash spreading over her trunk and limbs today. She has been menstruating and has been using high-absorbency tampons, leaving the last one in much longer than usual (only if asked about menstruation/tampon use/recent gynecologic history). Two weeks ago she had a crusted, weepy sore on her shin that a clinic called 'impetigo' and treated with an antibiotic; the skin there is still a little raw (only if asked about skin infections/wounds/recent infections). NO recent travel, NO tick exposure, NO sick contacts (only if asked). She has not yet noticed any peeling of the skin (desquamation typically comes 1-2 weeks later).\nPMH: atopic dermatitis (eczema) with frequent skin breakdown; migraine with aura; mild iron-deficiency anemia; seasonal allergic rhinitis. No diabetes, no kidney or liver disease, baseline labs normal. MEDS (CONFOUNDERS — reveal on a medication question): (1) cephalexin, a recently finished course for the shin impetigo; (2) ondansetron started yesterday by a telehealth clinic for the vomiting; (3) azithromycin she took two doses of yesterday because a friend said it might help; (4) sumatriptan as needed for migraines, last used three days ago; (5) over-the-counter ibuprofen and acetaminophen for fever and aches over the last day; (6) a combined oral contraceptive pill; (7) cetirizine for allergies; (8) a potassium-wasting concern is NOT relevant — she takes no diuretic. ALLERGIES: none known. SOCIAL: occasional alcohol, nonsmoker, in a monogamous relationship. GYN: regular menses, currently menstruating, uses tampons.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, flushed, diaphoretic, mildly confused/dazed but able to answer.\n- Vitals: BP 82/48, HR 126, RR 24, 39.6 C, SpO2 96% RA; appears hypotensive with a wide pulse pressure and warm extremities (distributive/warm shock).\n- Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet. On the right shin a healing, partly crusted excoriation from the recent impetigo with mild surrounding erythema but NO fluctuance, NO spreading cellulitis, NO crepitus, NO disproportionate pain (argues against necrotizing infection).\n- HEENT: conjunctival injection (red eyes) without discharge; oropharyngeal hyperemia ('strawberry'-appearing red tongue/throat); mucous membranes dry.\n- Neuro: drowsy/mildly confused but no focal deficit; neck supple, NO meningismus.\n- Cardiac: tachycardic, regular, no murmur; warm, well-perfused extremities with brisk capillary refill despite hypotension.\n- Lungs: clear. Abdomen: soft, mildly diffusely tender, no peritoneal signs.\n- Pelvic (if performed): retained tampon in the vaginal vault with surrounding erythema/discharge; no abscess.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the tampon use / retained tampon unless asked about menstruation, tampon or sanitary-product use, recent gynecologic history, or a pelvic exam is performed.\n- Do NOT volunteer the recent impetigo / shin sore unless asked about skin infections, wounds, sores, or recent infections.\n- Do NOT volunteer the medication list unless asked about medications, drugs, or what she has been taking; if asked, list them in lay language (the antibiotic for the leg sore, the nausea pill, the antibiotic her friend gave her, the migraine pill, ibuprofen/Tylenol, the birth-control pill, the allergy pill).\n- The rash distribution (palms/soles), conjunctival injection, strawberry tongue, healing shin lesion, and warm-shock perfusion are revealed only if specifically examined.\n- Desquamation has NOT happened yet; if asked about skin peeling, say it has not peeled.\n- If asked something not in this file, give a reasonable normal/negative answer; use lay language.",
   "dx": {
     "labs": {
-      "CBC": "WBC 18.5 with marked left shift (bandemia); Hgb normal; Plt 95 (mild thrombocytopenia).",
-      "BMP_Renal": "Cr 2.1 (acute kidney injury, baseline normal); BUN elevated; mild metabolic acidosis — supports multi-organ involvement.",
-      "LFTs_CK": "AST/ALT and total bilirubin elevated (>2x normal); CK elevated from myositis — multi-system involvement (a TSS criterion).",
-      "Lactate_Coags": "Lactate elevated (~3.5) consistent with shock; INR/PTT mildly prolonged, fibrinogen preserved (early; watch for DIC).",
-      "Cultures_Workup": "Blood cultures drawn (often NEGATIVE in staphylococcal TSS — toxin-mediated); vaginal/wound and throat cultures sent; urine HCG NEGATIVE; menstrual history positive for tampon use with a retained tampon found on pelvic exam.",
-      "Serologies": "Acute hepatitis panel, monospot, and Rocky Mountain spotted fever/leptospirosis serologies pending/negative — help exclude mimics."
+      "CBC": "WBC 18.5 x10^9/L with marked left shift (bands 14%, neutrophils 78%); Hgb 10.8 (chronic iron-deficiency anemia, baseline ~11); Plt 95 (mild thrombocytopenia, down from a normal baseline).",
+      "BMP_Renal": "Na 134, K 3.2 (hypokalemia from GI losses), Cl 104, HCO3 16, BUN 38, Cr 2.1 (AKI; baseline Cr 0.8), glucose 104. Anion gap = 134 - (104 + 16) = 14 (mildly elevated, lactate-driven). Corrected for the low bicarbonate this is a high-anion-gap metabolic acidosis with concurrent hypokalemia.",
+      "LFTs_CK": "AST 92, ALT 78, total bilirubin 2.4 (all >2x upper limit, hepatic involvement); albumin 3.0; CK 1450 (rhabdomyolysis/myositis). Corrected calcium is LOW at 7.4 mg/dL (albumin-corrected ~7.9) from sequestration in injured muscle - relevant to the QT interval.",
+      "Lactate_Coags": "Lactate 3.5 mmol/L (consistent with shock and the elevated anion gap); INR 1.4 and PTT mildly prolonged with fibrinogen still preserved and D-dimer rising (early/evolving DIC - monitor).",
+      "Cultures_Workup": "Blood cultures drawn before antibiotics (often NEGATIVE in staphylococcal TSS - toxin-mediated); vaginal/wound (shin) and throat cultures sent; urine HCG NEGATIVE; pregnancy excluded; pelvic exam reveals a retained tampon; the healing shin lesion is a second possible portal of entry.",
+      "Serologies": "Acute hepatitis panel, monospot, measles IgM, and Rocky Mountain spotted fever/leptospirosis serologies pending/negative - help exclude mimics; ASO/anti-DNase B sent given the recent skin infection to assess for a streptococcal source."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia (~125) with no acute ischemic changes; nonspecific findings consistent with fever and distributive shock.",
-      "verify": "Source a study matching: Sinus tachycardia (~125) with no acute ischemic changes; nonspecific findings consistent with fever and distributive shock. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 23,
+      "findings": "Sinus tachycardia (~125) with a PROLONGED QT interval (QTc ~ 500 ms), flattened T waves and a U wave - consistent with this patient's hypokalemia (K 3.2) and hypocalcemia (Ca 7.4) compounded by QT-prolonging drugs (ondansetron and azithromycin). No acute ST-segment ischemic changes.",
+      "verify": "Source a study matching: sinus tachycardia with a markedly prolonged QTc, flattened T waves and a U wave from electrolyte derangement and QT-prolonging drugs. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia",
+      "imageDescription": "12-lead showing sinus tachycardia with a long QT interval, flat T waves and a U wave",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead"
+        "long QT drug induced ECG",
+        "hypokalemia hypocalcemia long QT 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 26-year-old woman presents with high fever, rash, and lightheadedness with a rapid pulse."
+      "clinicalVignette": "A 23-year-old woman with high fever, rash, vomiting, and hypotension on ondansetron and azithromycin, with K 3.2 and corrected Ca 7.4."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,7 +63,7 @@
         "clear lungs radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 30-year-old woman with high fever, diffuse rash, and hypotension undergoes chest imaging."
+      "clinicalVignette": "A 23-year-old woman with high fever, diffuse rash, and hypotension undergoes chest imaging."
     }
   },
   "revealKeys": [
@@ -84,15 +86,15 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this febrile young woman with a diffuse rash and hypotension (note your leading diagnosis).",
-      "rubric": "Toxic shock syndrome (leading,7). Septic shock from another source / meningococcemia (CANT-MISS to exclude,5). Necrotizing soft-tissue infection / occult source (CANT-MISS,3). Rocky Mountain spotted fever or other tick-borne/severe rash-illness (core,2). Drug reaction (DRESS/SJS-TEN) (core,3). Other viral exanthem or scarlet fever (core,2). Names a toxin-mediated distributive shock and the imperative to find and remove the source (e.g., retained tampon) (core,3).",
-      "idealAnswer": "Leading diagnosis: Toxic shock syndrome. Must-not-miss diagnoses to exclude: Septic shock / meningococcemia; Necrotizing soft-tissue infection or other occult source. Also reasonable: Rocky Mountain spotted fever / tick-borne illness; Severe drug reaction (DRESS/SJS-TEN); Other viral exanthem or scarlet fever.",
+      "prompt": "Based on your history and physical, list your differential for this febrile young woman with a diffuse rash and hypotension (note your leading diagnosis). As part of your answer, name at least three distinct portals of entry or mechanisms by which a toxin-mediated shock could be occurring here.",
+      "rubric": "Toxic shock syndrome (leading,6). Septic shock from another source / meningococcemia (CANT-MISS to exclude,5). Necrotizing soft-tissue infection of the shin wound / occult source (CANT-MISS,3). Rocky Mountain spotted fever or other tick-borne/severe rash-illness (core,2). Severe drug reaction (DRESS/SJS-TEN) given the polypharmacy (core,3). Other viral exanthem or scarlet fever (core,2). Names at least THREE portals/mechanisms of toxin-mediated shock - e.g., retained tampon (menstrual staphylococcal), the healing impetigo/skin wound (non-menstrual staphylococcal), and a streptococcal source from the recent skin infection (core,4).",
+      "idealAnswer": "Leading diagnosis: Toxic shock syndrome. Must-not-miss diagnoses to exclude: Septic shock / meningococcemia; Necrotizing soft-tissue infection of the shin wound or other occult source. Also reasonable: Rocky Mountain spotted fever / tick-borne illness; Severe drug reaction (DRESS/SJS-TEN) given her many recent medications; Other viral exanthem or scarlet fever. At least three portals/mechanisms of toxin-mediated shock are plausible here: (1) the retained high-absorbency tampon (menstrual staphylococcal TSST-1), (2) the healing impetigo/skin wound (non-menstrual staphylococcal source), and (3) a Group A streptococcal source from the recent skin infection (streptococcal TSS via superantigen exotoxins).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Toxic shock syndrome",
-            "points": 7
+            "points": 6
           },
           {
             "item": "Septic shock / meningococcemia",
@@ -109,7 +111,7 @@
             "points": 2
           },
           {
-            "item": "Severe drug reaction (DRESS/SJS-TEN)",
+            "item": "Severe drug reaction (DRESS/SJS-TEN) given polypharmacy",
             "points": 3
           },
           {
@@ -117,8 +119,8 @@
             "points": 2
           },
           {
-            "item": "Names toxin-mediated distributive shock and the imperative to find and remove the source (e.g., retained tampon)",
-            "points": 3
+            "item": "Names three portals/mechanisms of toxin-mediated shock (retained tampon, skin wound, streptococcal source)",
+            "points": 4
           }
         ],
         "bonusActions": [],
@@ -140,13 +142,13 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC with differential and platelets (2). Comprehensive metabolic panel / renal and hepatic function (CANT-MISS — document multi-organ involvement,3). CK for myositis (2). Lactate and coagulation studies (CANT-MISS,3). Blood, vaginal/wound, and throat cultures plus urine HCG and source identification, including pelvic exam for a retained tampon (CANT-MISS,3). Serologies to exclude mimics (RMSF, hepatitis, monospot) (2). PENALTY: failing to look for and remove the source / not performing a pelvic exam in a menstruating woman (-3).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP renal; LF ts CK; Lactate coags; Cultures workup; Serologies.",
+      "rubric": "CBC with differential and platelets (2). Comprehensive metabolic panel / renal and hepatic function with calcium (CANT-MISS — document multi-organ involvement and the electrolyte derangements,3). CK for myositis/rhabdomyolysis (2). Lactate and coagulation studies (CANT-MISS,3). Blood, vaginal/wound, and throat cultures plus urine HCG and source identification, including pelvic exam for a retained tampon AND inspection of the shin wound (CANT-MISS,3). Serologies to exclude mimics (RMSF, hepatitis, monospot) and ASO/anti-DNase B (2). PENALTY: failing to look for and remove the source / not performing a pelvic exam in a menstruating woman (-3).",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP renal (with calcium); LFTs and CK; Lactate and coagulation studies; Cultures workup with pelvic exam and wound inspection; Serologies. The EKG and electrolytes are linked here - check K, Ca, and Mg because the QT will be prolonged.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Comprehensive metabolic panel (renal and hepatic function)",
+            "item": "Comprehensive metabolic panel (renal and hepatic function, calcium)",
             "points": 3
           },
           {
@@ -154,7 +156,7 @@
             "points": 3
           },
           {
-            "item": "Cultures plus source identification and pelvic exam for retained tampon",
+            "item": "Cultures plus source identification, pelvic exam for retained tampon, and wound inspection",
             "points": 3
           }
         ],
@@ -164,11 +166,11 @@
             "points": 2
           },
           {
-            "item": "CK for myositis",
+            "item": "CK for myositis/rhabdomyolysis",
             "points": 2
           },
           {
-            "item": "Serologies to exclude mimics",
+            "item": "Serologies to exclude mimics (and ASO/anti-DNase B)",
             "points": 2
           },
           {
@@ -180,15 +182,15 @@
             "points": 2
           },
           {
-            "item": "BMP renal",
+            "item": "BMP renal with calcium and magnesium",
             "points": 2
           },
           {
-            "item": "LF ts CK",
+            "item": "LFTs and CK",
             "points": 2
           },
           {
-            "item": "Lactate coags",
+            "item": "Lactate and coags",
             "points": 2
           },
           {
@@ -205,14 +207,14 @@
         ]
       },
       "requiredTests": [
-        "Comprehensive metabolic panel (renal and hepatic function)",
+        "Comprehensive metabolic panel (renal and hepatic function, calcium)",
         "Lactate and coagulation studies",
-        "Cultures plus source identification and pelvic exam for retained tampon"
+        "Cultures plus source identification, pelvic exam for retained tampon, and wound inspection"
       ],
       "optionalTests": [
         "CBC with differential and platelets",
-        "CK for myositis",
-        "Serologies to exclude mimics"
+        "CK for myositis/rhabdomyolysis",
+        "Serologies to exclude mimics (and ASO/anti-DNase B)"
       ],
       "contraindicatedTests": [
         "Failing to identify/remove the source or not performing a pelvic exam in a menstruating woman"
@@ -227,33 +229,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); recognizes compensatory sinus tachycardia from fever/shock with no acute ischemic changes (5); systematic read (3). PENALTY: over-calling ischemia or missing the rate (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and their cause.",
+      "rubric": "Findings = sinus tachycardia with a markedly PROLONGED QTc (~500 ms), flattened T waves and a U wave, no acute ischemia. CREDIT: identifies the rate/rhythm AND the long QT with T-wave flattening/U waves (7); attributes the long QT to hypokalemia (K 3.2) and hypocalcemia (Ca 7.4) compounded by QT-prolonging drugs - ondansetron and azithromycin (5); systematic read confirming no acute ischemia (3). PENALTY: missing the prolonged QT or over-calling ischemia (-3).",
       "keyFindings": [
-        "recognizes sinus tachycardia",
+        "recognizes sinus tachycardia with a prolonged QTc, flat T waves and a U wave",
+        "attributes the long QT to hypokalemia/hypocalcemia plus QT-prolonging drugs",
         "systematic read confirming no acute ischemic change"
       ],
       "criticalFindings": [
-        "Sinus tachycardia (compensatory; no acute ischemia)."
+        "Sinus tachycardia with a markedly prolonged QTc (~500 ms), flattened T waves and a U wave from hypokalemia/hypocalcemia and QT-prolonging drugs; no acute ischemia."
       ],
       "commonMistakes": [
+        "missing the prolonged QT and calling it plain sinus tachycardia",
         "over-reading nonspecific changes as ischemia",
-        "failing to attribute the tachycardia to fever/distributive shock"
+        "not linking the long QT to the electrolytes and the patient's medications"
       ],
-      "idealAnswer": "Sinus tachycardia (~125) without acute ischemic changes; a compensatory response to fever and distributive shock.",
+      "idealAnswer": "Sinus tachycardia (~125) with a markedly prolonged QTc (~500 ms), flattened T waves and a U wave, and no acute ischemic ST changes. The long QT is driven by this patient's hypokalemia (K 3.2) and hypocalcemia (corrected Ca ~7.4) from GI losses and rhabdomyolysis, compounded by two QT-prolonging drugs she has taken (ondansetron and azithromycin). This puts her at risk for torsades, so the electrolytes must be repleted and the offending drugs stopped.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia (compensatory; no acute ischemia)."
+          "Sinus tachycardia with a markedly prolonged QTc (~500 ms), flattened T waves and a U wave from hypokalemia/hypocalcemia and QT-prolonging drugs; no acute ischemia."
         ],
         "coreActions": [
-          "recognizes sinus tachycardia",
+          "recognizes sinus tachycardia with a prolonged QTc, flat T waves and a U wave",
+          "attributes the long QT to hypokalemia/hypocalcemia plus QT-prolonging drugs",
           "systematic read confirming no acute ischemic change"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "misses the prolonged QT or over-calls ischemia",
             "points": -3
           }
         ]
@@ -291,8 +296,8 @@
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
-            "points": -3
+            "label": "invents consolidation/effusion on a normal film",
+            "points": -2
           }
         ]
       }
@@ -301,9 +306,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "High fever, hypotension, diffuse macular erythroderma involving palms/soles, mucosal hyperemia, vomiting/diarrhea, myalgias with high CK, AKI and transaminitis, thrombocytopenia, negative blood cultures, and a retained tampon. What is your diagnosis and what did you rule out?",
-      "rubric": "Toxic shock syndrome (menstrual, staphylococcal) (6). Cites the clinical criteria — fever, diffuse macular erythroderma, hypotension, and >=3 organ-system involvement with a likely toxin source (retained tampon) and negative blood cultures; explicitly excludes meningococcemia/other septic source, RMSF, and a severe drug reaction (4).",
-      "idealAnswer": "Toxic shock syndrome (staphylococcal, menstrual) — meets the clinical criteria: fever, diffuse macular erythroderma involving the palms/soles, hypotension, and multi-organ involvement (GI, muscular/high CK, renal AKI, hepatic, hematologic), with a likely toxin source (retained tampon) and negative blood cultures. Meningococcemia/other septic source is argued against by the absence of petechiae/purpura and meningismus, RMSF by the lack of travel/tick exposure and a non-petechial rash, and a severe drug reaction (DRESS/SJS-TEN) by no new medications and no bullae/Nikolsky sign.",
+      "prompt": "High fever, hypotension, diffuse macular erythroderma involving palms/soles, mucosal hyperemia, vomiting/diarrhea, myalgias with CK 1450, AKI (Cr 2.1) and transaminitis, thrombocytopenia, hypokalemia and hypocalcemia with a prolonged QT on EKG, negative blood cultures, a retained tampon AND a healing shin wound, all on a background of recent polypharmacy. What is your single best diagnosis, what did you rule out, and what is the one discriminating issue that still must be settled?",
+      "rubric": "Toxic shock syndrome (6). Cites the clinical criteria - fever, diffuse macular erythroderma, hypotension, and >=3 organ-system involvement (GI, muscular/CK, renal, hepatic, hematologic, CNS) with a likely toxin source and negative blood cultures; explicitly excludes meningococcemia/other septic source, RMSF, and a severe drug reaction. Commits despite the polypharmacy confounder and names the residual discriminator - whether this is menstrual STAPHYLOCOCCAL (retained tampon) versus STREPTOCOCCAL TSS (skin wound), settled by wound/blood cultures and ASO/anti-DNase B, because it changes antibiotic choice and prognosis (4).",
+      "idealAnswer": "Toxic shock syndrome - meets the clinical criteria: fever, diffuse macular erythroderma involving the palms/soles, hypotension, and multi-organ involvement (GI, muscular with CK 1450, renal AKI with Cr 2.1, hepatic transaminitis, hematologic thrombocytopenia, CNS confusion), with a likely toxin source (retained tampon and/or the healing skin wound) and negative blood cultures. Meningococcemia/other septic source is argued against by the absence of petechiae/purpura and meningismus, RMSF by the lack of travel/tick exposure and a non-petechial rash, and a severe drug reaction (DRESS/SJS-TEN) by the absence of bullae/Nikolsky despite the polypharmacy. The long QT is from her hypokalemia/hypocalcemia plus QT-prolonging drugs, not a primary cardiac diagnosis. The one residual discriminator is whether this is menstrual STAPHYLOCOCCAL TSS (retained tampon, TSST-1) versus STREPTOCOCCAL TSS seeded from the recent skin infection - settled by wound, blood, and throat cultures plus ASO/anti-DNase B - because streptococcal TSS warrants adding a beta-lactam (e.g., penicillin) and carries a higher mortality.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -324,42 +329,50 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH sepsis/TSS: aggressive IV fluid resuscitation with vasopressors (e.g., norepinephrine) for refractory shock (CANT-MISS,6); SOURCE CONTROL — remove the tampon/debride/drain the focus (CANT-MISS,6); empiric antibiotics combining an antistaphylococcal/antistreptococcal agent (vancomycin) WITH a protein-synthesis inhibitor to suppress toxin (clindamycin or linezolid) (CANT-MISS,6); consider IVIG for severe/refractory disease (3); ICU admission and monitoring for multi-organ failure/DIC (2); blood cultures before antibiotics if it does not delay therapy (2). PENALTY: failing to obtain source control (-3); giving a beta-lactam alone without a toxin-suppressing agent (-2).",
-      "idealAnswer": "Resuscitate: large-volume IV crystalloid and norepinephrine for fluid-refractory distributive shock; ICU admission. Achieve source control immediately — remove the retained tampon and debride/drain any infectious focus. Empiric antibiotics: vancomycin (cover MRSA/strep) PLUS clindamycin or linezolid to suppress toxin production (add a beta-lactam if streptococcal TSS). Consider IVIG in severe/refractory cases. Draw cultures before antibiotics if it does not delay care. Monitor and support for multi-organ failure and DIC. Counsel to avoid high-absorbency tampons.",
+      "prompt": "What is your management plan, including disposition? Explicitly state where this patient should go and what discharge/counseling she will eventually need.",
+      "rubric": "Per MGH sepsis/TSS: aggressive IV fluid resuscitation with vasopressors (e.g., norepinephrine) for refractory shock (CANT-MISS,5); SOURCE CONTROL - remove the tampon and clean/debride the shin wound (CANT-MISS,5); empiric antibiotics combining an antistaphylococcal/antistreptococcal agent (vancomycin) WITH a protein-synthesis inhibitor to suppress toxin (clindamycin or linezolid), adding a beta-lactam if streptococcal (CANT-MISS,5); correct the electrolytes/QT - replete K and Ca/Mg and STOP the QT-prolonging drugs (ondansetron, azithromycin) with telemetry (3); ICU admission - NOT safe for discharge - with monitoring for multi-organ failure/DIC, and on recovery counsel to avoid high-absorbency tampons and reconcile her medications (CANT-MISS disposition,4); consider IVIG for severe/refractory disease (2); blood cultures before antibiotics if no delay (1). PENALTY: discharging this patient or any disposition other than ICU (-4); failing to obtain source control (-3); giving a beta-lactam alone without a toxin-suppressing agent (-2).",
+      "idealAnswer": "Resuscitate: large-volume IV crystalloid and norepinephrine for fluid-refractory distributive shock. Achieve source control immediately - remove the retained tampon and clean/debride the shin wound. Empiric antibiotics: vancomycin (cover MRSA/strep) PLUS clindamycin or linezolid to suppress toxin production (add penicillin/a beta-lactam if streptococcal TSS is confirmed). Correct the electrolyte/QT problem: replete potassium, calcium, and magnesium, STOP the QT-prolonging drugs (ondansetron and azithromycin), and place on telemetry given the prolonged QT and torsades risk. Consider IVIG in severe/refractory cases. Draw cultures before antibiotics if it does not delay care. DISPOSITION: admit to the ICU - this is fluid-refractory shock with multi-organ involvement and is NOT safe for discharge or a floor bed. On recovery, perform medication reconciliation (she was on a confusing polypharmacy regimen), counsel her to avoid high-absorbency tampons, educate on early warning signs of recurrence, and arrange close outpatient follow-up. Monitor and support for multi-organ failure and DIC.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Source control (remove tampon / debride or drain focus)",
-            "points": 6
+            "item": "Source control (remove tampon and clean/debride the shin wound)",
+            "points": 5
           },
           {
             "item": "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
-            "points": 6
+            "points": 5
           },
           {
             "item": "Aggressive fluids and vasopressors for shock",
-            "points": 6
+            "points": 5
+          },
+          {
+            "item": "ICU admission - not safe for discharge - with eventual med reconciliation and tampon-avoidance counseling",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "ICU admission with monitoring for multi-organ failure/DIC",
-            "points": 2
+            "item": "Replete K/Ca/Mg and stop QT-prolonging drugs (ondansetron, azithromycin) with telemetry",
+            "points": 3
           },
           {
             "item": "Blood cultures before antibiotics if no delay",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
             "item": "IVIG for severe/refractory disease",
-            "points": 3
+            "points": 2
           }
         ],
         "penalties": [
+          {
+            "item": "Discharging the patient or any disposition other than ICU",
+            "points": -4
+          },
           {
             "item": "Failing to obtain source control",
             "points": -3
@@ -371,16 +384,18 @@
         ]
       },
       "requiredActions": [
-        "Source control (remove tampon / debride or drain focus)",
+        "Source control (remove tampon and clean/debride the shin wound)",
         "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
-        "Aggressive fluids and vasopressors for shock"
+        "Aggressive fluids and vasopressors for shock",
+        "ICU admission - not safe for discharge - with eventual med reconciliation and tampon-avoidance counseling"
       ],
       "optionalActions": [
-        "ICU admission with monitoring for multi-organ failure/DIC",
+        "Replete K/Ca/Mg and stop QT-prolonging drugs (ondansetron, azithromycin) with telemetry",
         "Blood cultures before antibiotics if no delay",
         "IVIG for severe/refractory disease"
       ],
       "unsafeActions": [
+        "Discharging the patient or any disposition other than ICU",
         "Failing to obtain source control",
         "Beta-lactam alone without a toxin-suppressing agent"
       ],
@@ -405,12 +420,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "menstrual_tampon_use",
-      "sexual_history"
+      "sexual_history",
+      "self_medication"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues; feels unwell and is a little dazed",
     "affect": "23-year-old woman, ill-appearing, flushed, and lightheaded. Cooperative but feels awful and mildly dazed.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (tampon use, recent skin infection, medications taken from a friend) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -429,9 +445,43 @@
         "menstrual",
         "last period"
       ],
-      "response": "Yes, I'm on my period right now. I've been using the super-absorbent tampons and I think I left the last one in way too long — I forgot about it for almost a day.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_skin_infection",
+      "category": "pmh",
+      "triggerConcepts": [
+        "skin infection",
+        "wound",
+        "sore",
+        "cut or scrape",
+        "recent infection",
+        "any sores",
+        "broken skin"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "any new medicines",
+        "antibiotics",
+        "new drugs",
+        "anything from a friend",
+        "over the counter"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -458,7 +508,7 @@
         "how long",
         "duration"
       ],
-      "response": "It came on really fast — the fever and feeling awful started last night, only about a day ago, and the rash showed up today.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -473,7 +523,7 @@
         "skin",
         "peeling"
       ],
-      "response": "My whole body looks like a bad sunburn — it's red all over, even my palms. It hasn't blistered or peeled.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "important",
       "points": 2,
       "hiddenUntilAsked": false
@@ -488,22 +538,7 @@
         "vomiting or diarrhea",
         "muscle aches"
       ],
-      "response": "I've been throwing up and having watery diarrhea, my muscles ache all over, my head hurts, and my throat is sore. I keep feeling like I'll faint when I stand.",
-      "importance": "important",
-      "points": 2,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "any new medicines",
-        "antibiotics",
-        "new drugs"
-      ],
-      "response": "I only take the birth control pill. I haven't started any new medicines or antibiotics.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "important",
       "points": 2,
       "hiddenUntilAsked": false
@@ -518,7 +553,7 @@
         "sick contacts",
         "exposures"
       ],
-      "response": "No travel, no hiking, no tick bites that I know of, and no one around me has been sick.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -533,7 +568,7 @@
         "photophobia",
         "headache with neck"
       ],
-      "response": "My head aches but my neck doesn't feel stiff and bright lights don't bother me especially.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -545,9 +580,10 @@
         "past medical history",
         "medical problems",
         "conditions",
-        "wounds or surgery"
+        "eczema",
+        "migraines"
       ],
-      "response": "I'm generally healthy with no medical problems, no recent surgery, and no wounds.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -556,7 +592,7 @@
   "physicalExamMappings": [
     {
       "id": "inspect_skin_finding_1",
-      "finding": "Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet.",
+      "finding": "Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet. On the right shin a healing, partly crusted excoriation from the recent impetigo with mild surrounding erythema but NO fluctuance, NO spreading cellulitis, NO crepitus, NO disproportionate pain.",
       "revealedBy": [
         "inspect_skin",
         "inspect_palms_and_soles"
@@ -618,15 +654,16 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Toxic shock syndrome",
-    "diagnosticFramework": "23F presents with about a day of high fever, a diffuse sunburn-like rash, vomiting/diarrhea, myalgias, and lightheadedness, now hypotensive. The diagnosis is Toxic shock syndrome, reached by eliciting the focused history (including menstrual/tampon use), performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "23F with eczema, recently treated shin impetigo, and a confusing recent-medication list presents with about a day of high fever, a diffuse sunburn-like rash, vomiting/diarrhea, myalgias, and lightheadedness, now hypotensive. The diagnosis is Toxic shock syndrome, reached by eliciting the focused history (menstrual/tampon use AND the recent skin infection AND the polypharmacy), performing the targeted exam, and interpreting the directed workup - including an EKG whose prolonged QT is explained by the patient's hypokalemia/hypocalcemia and QT-prolonging drugs - while excluding the must-not-miss alternatives and committing despite the drug-reaction confounder.",
     "keyHistoryClues": [
       "Abrupt high fever with diffuse macular sunburn-like rash and hypotension",
       "Vomiting, diarrhea, myalgias, and mucosal symptoms (multi-system)",
-      "Menstrual tampon use with a retained, prolonged-dwell tampon",
-      "No new medications, no travel/tick exposure (argues against drug reaction and tick-borne illness)"
+      "Menstrual tampon use with a retained, prolonged-dwell tampon (one portal of entry)",
+      "Recent shin impetigo / healing skin wound (a second possible portal and a streptococcal-source clue)",
+      "Polypharmacy including QT-prolonging ondansetron and azithromycin (confounds drug reaction and explains the long QT)"
     ],
     "keyPhysicalExamFindings": [
-      "Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae, NO purpura, NO vesicles/bullae, NO target lesions, NO Nikolsky sign; no desquamation yet.",
+      "Skin: diffuse blanching macular erythroderma resembling a sunburn over trunk and extremities, including palms and soles; NO petechiae/purpura/bullae/Nikolsky; no desquamation yet; healing shin excoriation without necrotizing features.",
       "Skin: NO petechiae and NO purpura (argues against meningococcemia/DIC-driven purpura).",
       "HEENT: bilateral conjunctival injection (red eyes) without discharge.",
       "HEENT: oropharyngeal hyperemia with a strawberry-appearing red tongue/throat; mucous membranes dry.",
@@ -642,52 +679,59 @@
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items (menstrual/tampon use, sexual history) only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Toxic shock syndrome while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Toxic shock syndrome and manage with stabilization, source control, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including sensitive items (menstrual/tampon use, recent skin infection, and the full medication list) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings, including the shin wound.",
+      "Build a differential led by Toxic shock syndrome while explicitly excluding must-not-miss causes and naming multiple portals/mechanisms of toxin-mediated shock.",
+      "Order a focused, order-sensitive workup and interpret the integrated EKG (long QT from electrolytes/drugs), CXR, and labs.",
+      "Commit to Toxic shock syndrome despite the polypharmacy confounder, naming the staph-vs-strep discriminator, and manage with stabilization, source control, definitive treatment, QT/electrolyte correction, ICU disposition, and recovery counseling."
     ],
     "commonPitfalls": [
+      "Anchoring on a drug reaction because of the polypharmacy and missing TSS",
+      "Missing the prolonged QT or failing to link it to the electrolytes and QT-prolonging drugs",
       "Failing to obtain source control",
-      "Beta-lactam alone without a toxin-suppressing agent"
+      "Beta-lactam alone without a toxin-suppressing agent",
+      "Discharging or floor-admitting a patient in fluid-refractory shock"
     ],
     "managementPearls": [
-      "Source control (remove tampon / debride or drain focus)",
+      "Source control (remove tampon and clean/debride the shin wound)",
       "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
-      "Aggressive fluids and vasopressors for shock"
+      "Aggressive fluids and vasopressors for shock",
+      "Correct K/Ca/Mg and stop QT-prolonging drugs; ICU disposition with recovery counseling"
     ],
     "criticalHistoryItems": [
-      "menstrual_tampon_use"
+      "menstrual_tampon_use",
+      "recent_skin_infection",
+      "medications"
     ],
     "criticalExamItems": [
       "inspect_skin",
       "assess_for_petechiae"
     ],
     "criticalWorkupItems": [
-      "Comprehensive metabolic panel (renal and hepatic function)",
+      "Comprehensive metabolic panel (renal and hepatic function, calcium)",
       "Lactate and coagulation studies",
-      "Cultures plus source identification and pelvic exam for retained tampon"
+      "Cultures plus source identification, pelvic exam for retained tampon, and wound inspection"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Sinus tachycardia with a markedly prolonged QTc from hypokalemia/hypocalcemia and QT-prolonging drugs; no acute ischemia.",
       "No acute process (clear baseline; watch for evolving ARDS)."
     ],
     "criticalManagementItems": [
-      "Source control (remove tampon / debride or drain focus)",
+      "Source control (remove tampon and clean/debride the shin wound)",
       "Empiric antibiotics including a toxin-suppressing agent (clindamycin/linezolid) plus vancomycin",
-      "Aggressive fluids and vasopressors for shock"
+      "Aggressive fluids and vasopressors for shock",
+      "ICU admission - not safe for discharge - with eventual med reconciliation and tampon-avoidance counseling"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia (compensatory; no acute ischemia).",
+      "Sinus tachycardia with a markedly prolonged QTc (~500 ms), flattened T waves and a U wave from hypokalemia/hypocalcemia and QT-prolonging drugs; no acute ischemia.",
       "No acute cardiopulmonary process (clear lungs)."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia (compensatory; no acute ischemia).",
+      "Sinus tachycardia with a markedly prolonged QTc (~500 ms), flattened T waves and a U wave from hypokalemia/hypocalcemia and QT-prolonging drugs; no acute ischemia.",
       "No acute cardiopulmonary process (clear lungs)."
     ],
     "imageInterpretationPearls": [
-      "An incidental or near-normal study is an interpretation task in its own right — name it, then judge its relevance.",
+      "A long QT in a vomiting, septic patient is usually the company it keeps - hypokalemia, hypocalcemia, and QT-prolonging drugs - so read the EKG against the electrolytes and the med list.",
       "Read every study systematically before committing.",
       "State pertinent negatives, not just positives."
     ]
@@ -719,8 +763,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read where clinically natural",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

@@ -1,51 +1,54 @@
 {
   "id": "ams-02",
   "category": "Altered Mental Status",
-  "difficulty": "moderate",
-  "title": "Acute confusion in an elderly woman",
+  "difficulty": "hard",
+  "title": "Acute confusion in a polypharmacy elderly woman",
   "diagnosis": "Urosepsis with delirium",
   "chart": {
     "ageSex": "80F",
     "cc": "Acute confusion",
-    "oneLiner": "80F from a nursing facility is brought in with one day of acute confusion, decreased oral intake, and fever.",
+    "oneLiner": "80F from an assisted-living facility with mild dementia and a long medication list is brought in with one day of worsening confusion, decreased oral intake, fever, and urinary symptoms; her oxybutynin was recently increased and a friend's tramadol was given for back pain three days ago.",
     "vitals": {
-      "BP": "98/58",
-      "HR": "112",
+      "BP": "96/56",
+      "HR": "116",
       "RR": "22",
-      "Temp": "38.7°C",
+      "Temp": "38.6°C",
       "SpO2": "95% RA"
     },
     "timer": 180
   },
-  "opening": "I want to go home… is it morning?",
-  "patientFile": "PERSONA: 80-year-old woman, intermittently confused, fluctuating attention, a poor historian. Mild distress.\n\nCOLLATERAL (provide ONLY if the student asks facility staff/family/chart/medication list): Nursing facility reports she was at her baseline (alert, oriented) until yesterday, when she became confused, lethargic, and ate/drank little. Noted to have foul-smelling urine and urinary frequency over 2 days. No falls, no new medications. History of recurrent UTIs. MEDS: amlodipine, donepezil (baseline mild dementia but oriented at baseline).\n\nHPI (from patient — limited): can't give a clear history; says she 'feels off.' Denies clear pain when asked.\nPMH: hypertension, mild dementia, recurrent UTIs. SOCIAL: lives in assisted facility.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: confused, fluctuating attention, dry mucous membranes.\n- Vitals: BP 98/58, HR 112, RR 22, 38.7°C, SpO2 95% RA.\n- Abdomen: mild suprapubic tenderness; possible left CVA tenderness if examined.\n- Neuro: no focal motor/sensory deficit; disoriented; no neck stiffness.\n- Lungs: clear. Cardiac: tachycardic, regular.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is confused: vague/fluctuating answers. Provide COLLATERAL only when the student explicitly asks facility/family/chart/med list.\n- Suprapubic/CVA tenderness and dry membranes are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I want to go home… is it morning? Who are you, dear?",
+  "patientFile": "PERSONA (informant): You are the patient's daughter, at the bedside. Your 80-year-old mother is intermittently confused with fluctuating attention and is a poor historian; she answers only vaguely ('I feel off,' 'is it morning?'). You provide collateral when the student asks family/facility staff/the chart/the medication list. The mother herself gives only confused, vague replies.\n\nOPENING (informant voice, only if the student turns to you): 'She was completely herself two days ago — chatty, doing her crossword. Yesterday she got muddled, stopped drinking, and now she doesn't know where she is. The home said her urine smelled bad.'\n\nCOLLATERAL (provide ONLY when the student asks the family/facility/chart/medication list):\n- BASELINE: At her baseline she is alert and oriented, lives in assisted living, does her own crossword, mild memory trouble only. This confusion is NEW, started ~1 day ago, fluctuates, worse at night.\n- URINARY: Over the last 2–3 days her urine has been foul-smelling and she has been going to the bathroom much more often, with some lower-belly discomfort. She has a history of recurrent urinary infections.\n- INTAKE: Eating and drinking very little for ~2 days; the facility noticed dry lips.\n- MEDS (give the full list only if asked for medications): amlodipine (blood pressure), donepezil (memory), oxybutynin for an overactive bladder — the DOSE WAS DOUBLED about 10 days ago because of urinary urgency, and three days ago a neighbor gave her a couple of tramadol tablets for back pain. She also takes a 'water pill' (hydrochlorothiazide) and occasional diphenhydramine to sleep. No new antibiotics. No alcohol.\n- FALLS/TRAUMA: No falls, no head injury, no seizure witnessed.\n- ALLERGIES: none known.\n\nHPI (from the patient — limited): cannot give a clear timeline; says she 'feels off' and wants to go home. Denies clear pain when asked. Does not know the date or where she is.\nPMH: hypertension, mild dementia (baseline ORIENTED), overactive bladder, recurrent UTIs, osteoporosis. SOCIAL: lives in assisted living, widowed, non-smoker, no alcohol. FAMILY: noncontributory. ROS: per collateral — foul urine, urinary frequency, poor intake; no cough, no diarrhea, no rash, no neck pain.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: confused, fluctuating attention, DRY mucous membranes and dry axillae, skin tenting (poor turgor).\n- Vitals: BP 96/56, HR 116, RR 22, 38.6°C, SpO2 95% RA.\n- Abdomen: mild suprapubic tenderness; left CVA tenderness if examined; no rebound/guarding.\n- Neuro: no focal motor/sensory deficit; disoriented to time/place; no neck stiffness; no asterixis; pupils mid-size and reactive (NOT markedly dilated); no clonus, normal tone.\n- Skin: warm, dry; no flushing, no rash, no track marks.\n- Lungs: clear. Cardiac: tachycardic, regular, no murmur.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The patient is confused: give vague/fluctuating answers in her voice. Provide COLLATERAL only when the student explicitly asks the family/facility/chart/medication list.\n- Do NOT volunteer the oxybutynin dose increase, the borrowed tramadol, the HCTZ, or the diphenhydramine unless the student asks about medications, recent medication changes, or what she has taken for pain/sleep.\n- Dry membranes/poor turgor, suprapubic and CVA tenderness, absent neck stiffness, absent asterixis, and normal pupils/tone are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 110 — normal.",
-      "UA": "Cloudy; large leukocyte esterase, positive nitrites, many WBCs and bacteria.",
-      "CBC": "WBC 17.5 with left shift, Hgb 12.0, Plt 240.",
-      "BMP": "Na 144, K 4.0, BUN 34, Cr 1.6 (baseline 0.9 — AKI), Glu 110.",
-      "Lactate": "2.8 — elevated.",
-      "Cultures": "Blood and urine cultures drawn; pending."
+      "Glucose": "Fingerstick glucose 108 — normal (excludes hypoglycemia as the cause of confusion).",
+      "UA": "Cloudy; large leukocyte esterase, positive nitrites, >50 WBC/hpf, many bacteria, no significant blood — pyuria with bacteriuria localizing an infectious source to the urinary tract.",
+      "CBC": "WBC 18.2 with left shift (bands present), Hgb 12.6, Plt 232 — leukocytosis consistent with bacterial infection.",
+      "BMP": "Na 150, K 3.1, Cl 112, HCO3 24, BUN 48, Cr 1.7 (baseline 0.9), Glu 108. Anion gap = 150 − (112 + 24) = 14 (normal — NO anion-gap acidosis). Hypernatremia (free-water deficit from poor intake), hypokalemia, and a BUN/Cr ratio of 48/1.7 ≈ 28 (>20) indicating PRERENAL acute kidney injury.",
+      "Magnesium": "Mg 1.4 mg/dL — hypomagnesemia (worsened by the thiazide; contributes to the refractory hypokalemia and to QT prolongation).",
+      "Lactate": "2.6 mmol/L — elevated, consistent with sepsis/hypoperfusion.",
+      "Cultures": "Blood and urine cultures drawn before antibiotics; pending."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Beat-to-beat alternation of QRS amplitude with low voltage and sinus tachycardia.",
-      "verify": "Source a study matching: Beat-to-beat alternation of QRS amplitude with low voltage and sinus tachycardia. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~116 bpm with a markedly prolonged QT interval (QTc ~510 ms); no ischemic ST changes.",
+      "verify": "Source a study matching: sinus tachycardia with a markedly prolonged QT/QTc (drug- and electrolyte-related). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing electrical alternans pericardial effusion",
+      "integrated": true,
+      "litflStudyN": 22,
+      "imageDescription": "12-lead showing sinus tachycardia with a long QT interval (anticholinergic/electrolyte-related)",
       "searchTerms": [
-        "electrical alternans ECG",
-        "pericardial effusion alternans 12 lead"
+        "long QT anticholinergic ECG",
+        "drug induced prolonged QT 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 72-year-old woman presents with fever, lethargy, and racing heart, and her tracing shows beat-to-beat QRS swings."
+      "clinicalVignette": "An 80-year-old woman on oxybutynin, diphenhydramine, and tramadol with low potassium and magnesium has a fast rhythm and a stretched-out QT interval on her tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -60,7 +63,7 @@
         "normal PA chest radiograph no consolidation effusion"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 72-year-old woman with fever and delirium has a film obtained to exclude pneumonia as the infectious source."
+      "clinicalVignette": "An 80-year-old woman with fever and delirium has a film obtained to exclude pneumonia as the infectious source."
     }
   },
   "revealKeys": [
@@ -68,6 +71,7 @@
     "UA",
     "CBC",
     "BMP",
+    "Magnesium",
     "Lactate",
     "Cultures",
     "ekg",
@@ -83,54 +87,64 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential for this acute confusion (note your leading diagnosis).",
-      "rubric": "Delirium due to UTI/urosepsis (leading,7). Hypoglycemia (CANT-MISS,4). Stroke/intracranial process (CANT-MISS,4). Pneumonia/other sepsis source (core,3). Medication/metabolic causes (core,3). Meningitis (CANT-MISS to consider,2). Named leading dx w/ justification — acute change from baseline, fever, urinary symptoms (core,2).",
-      "idealAnswer": "Leading diagnosis: Delirium due to UTI/urosepsis. Must-not-miss diagnoses to exclude: Hypoglycemia; Stroke/intracranial process; Meningitis. Also reasonable: Pneumonia/other sepsis source; Medication/metabolic causes.",
+      "prompt": "Based on your collateral history and exam in this confused elderly woman on multiple medications, list your differential for acute delirium (note your leading diagnosis). Also explicitly name three distinct mechanisms/etiologies that can precipitate delirium in a frail elderly patient.",
+      "rubric": "Delirium due to UTI/urosepsis (leading,5). Medication/anticholinergic toxicity given the doubled oxybutynin, borrowed tramadol, and diphenhydramine — a genuine competing cause (CANT-MISS,4). Hypoglycemia (CANT-MISS,3). Stroke/intracranial process (CANT-MISS,3). Metabolic derangement — dehydration/hypernatremia/electrolytes (core,2). Meningitis/CNS infection to consider (core,2). Names THREE distinct delirium mechanisms — e.g. infectious, medication/toxic, metabolic/electrolyte, hypoxic/perfusion, structural/CNS (core,3). Named leading dx w/ justification — acute change from baseline, fever, foul urine/frequency, leukocytosis (core,3). PENALTY: anchoring on UTI without considering the medication and metabolic contributors, or without checking a glucose (-3).",
+      "idealAnswer": "Leading diagnosis: Delirium due to UTI/urosepsis (new confusion from an oriented baseline, fever, foul-smelling urine, urinary frequency, suprapubic/CVA tenderness, leukocytosis). The strongest competing cause is medication/anticholinergic-toxic delirium — her oxybutynin dose was doubled, she took borrowed tramadol, and she uses diphenhydramine, all of which can cloud sensorium and prolong the QT. Must-not-miss: Hypoglycemia (check a fingerstick), Stroke/intracranial process, and Meningitis/CNS infection. Also contributing: dehydration with hypernatremia and electrolyte derangement. Three distinct mechanisms of delirium in the elderly: (1) infectious/inflammatory (UTI/sepsis), (2) medication/toxic (anticholinergics, opioids, sedatives), and (3) metabolic/electrolyte (dehydration, hypernatremia, hypoglycemia, hypo-K/Mg). The fork is resolved toward urosepsis once the labs localize an infectious source, but the medications remain an aggravating co-factor that must be stopped.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Delirium due to UTI/urosepsis",
-            "points": 7
+            "points": 5
+          },
+          {
+            "item": "Medication/anticholinergic toxicity (oxybutynin/diphenhydramine/tramadol)",
+            "points": 4
           },
           {
             "item": "Hypoglycemia",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Stroke/intracranial process",
-            "points": 4
-          },
-          {
-            "item": "Meningitis",
-            "points": 2
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Pneumonia/other sepsis source",
-            "points": 3
-          },
-          {
-            "item": "Medication/metabolic causes",
-            "points": 3
-          },
-          {
-            "item": "Named leading dx w/ justification — acute change from baseline, fever, urinary symptoms",
+            "item": "Metabolic derangement — dehydration/hypernatremia/electrolytes",
             "points": 2
+          },
+          {
+            "item": "Meningitis/CNS infection to consider",
+            "points": 2
+          },
+          {
+            "item": "Names three distinct delirium mechanisms — infectious, medication/toxic, metabolic",
+            "points": 3
+          },
+          {
+            "item": "Named leading dx w/ justification — acute change from baseline, fever, urinary symptoms, leukocytosis",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on UTI without considering medication/metabolic contributors or without checking glucose",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Medication/anticholinergic toxicity (oxybutynin/diphenhydramine/tramadol)",
         "Hypoglycemia",
         "Stroke/intracranial process",
-        "Meningitis"
+        "Meningitis/CNS infection"
       ],
       "acceptableAlternatives": [
-        "Pneumonia/other sepsis source",
-        "Medication/metabolic causes"
+        "Metabolic derangement — dehydration/hypernatremia/electrolytes",
+        "Meningitis/CNS infection to consider"
       ]
     },
     {
@@ -139,8 +153,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Fingerstick glucose (CANT-MISS,3). Urinalysis + urine culture (CANT-MISS,4). CBC (2). BMP (2). Lactate (2). Blood cultures (1). CXR (1). CT head if focal deficit (bonus,1). PENALTY: starting antibiotics with no source workup or anchoring without checking glucose (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; Urinalysis; CBC; BMP; Lactate; Cultures.",
+      "rubric": "Fingerstick glucose (CANT-MISS,3). Urinalysis + urine culture (CANT-MISS,4). CBC (2). BMP (2). Magnesium (1). Lactate (2). Blood cultures (1). EKG given QT-prolonging polypharmacy (core,1). CXR to exclude pneumonia (1). CT head if focal deficit or no clear source (bonus,1). PENALTY: starting antibiotics with no source workup, or anchoring without checking glucose/medication list (-2).",
+      "idealAnswer": "Order: Fingerstick glucose; Urinalysis with reflex urine culture; CBC; BMP (look for the AKI, hypernatremia, hypokalemia); Magnesium; Lactate; Blood cultures before antibiotics; an EKG given her QT-prolonging medications and low K/Mg; CXR to exclude pneumonia as the source. Reconcile the full medication list. Consider CT head if a focal deficit emerges or no source is found.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,12 +169,12 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
+            "item": "EKG (QT-prolonging polypharmacy, low K/Mg)",
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CBC",
@@ -171,23 +185,27 @@
             "points": 2
           },
           {
+            "item": "Magnesium",
+            "points": 1
+          },
+          {
             "item": "Lactate",
             "points": 2
           },
           {
-            "item": "Cultures",
-            "points": 2
+            "item": "Blood cultures",
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "CT head if focal deficit",
+            "item": "CT head if focal deficit or no clear source",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "starting antibiotics with no source workup or anchoring without checking glucose",
+            "item": "starting antibiotics with no source workup or anchoring without checking glucose/medication list",
             "points": -2
           }
         ]
@@ -198,10 +216,10 @@
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "starting antibiotics with no source workup or anchoring without checking glucose"
+        "starting antibiotics with no source workup or anchoring without checking glucose/medication list"
       ],
       "orderSensitiveActions": [
-        "starting antibiotics with no source workup or anchoring without checking glucose"
+        "starting antibiotics with no source workup or anchoring without checking glucose/medication list"
       ]
     },
     {
@@ -210,33 +228,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = electrical alternans with low voltage and tachycardia. CREDIT: recognizes electrical alternans / beat-to-beat QRS amplitude alternation (7); notes low voltage (5); links alternans + low voltage + tachycardia to a large pericardial effusion/tamponade (3). PENALTY: calling the study normal sinus tachycardia / missing the alternans (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they change your management.",
+      "rubric": "Findings = sinus tachycardia (~116 bpm) with a MARKEDLY PROLONGED QT (QTc ~510 ms) and no acute ischemia. CREDIT: identifies sinus tachycardia (3); recognizes the prolonged QT/QTc as the key abnormality (7); links it to her QT-prolonging medications (oxybutynin/diphenhydramine/tramadol) plus hypokalemia and hypomagnesemia, with a risk of torsades (5). PENALTY: calling the tracing a normal sinus tachycardia and missing the long QT (-3).",
       "keyFindings": [
-        "beat-to-beat QRS amplitude alternation",
-        "links alternans + low voltage + tachycardia to pericardial effusion/tamponade"
+        "sinus tachycardia with a markedly prolonged QT/QTc (~510 ms)",
+        "links long QT to QT-prolonging drugs plus hypokalemia/hypomagnesemia, torsades risk"
       ],
       "criticalFindings": [
-        "Electrical alternans with low voltage (suggests large pericardial effusion)."
+        "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) — drug- and electrolyte-related, with torsades risk."
       ],
       "commonMistakes": [
-        "overlooking the alternating amplitude",
-        "missing the low-voltage clue"
+        "calling the tracing a normal sinus tachycardia",
+        "overlooking the prolonged QT interval",
+        "not connecting the long QT to the medications and low K/Mg"
       ],
-      "idealAnswer": "Electrical alternans: alternating QRS amplitude with low voltage and tachycardia, suggesting a large pericardial effusion.",
+      "idealAnswer": "Sinus tachycardia at ~116 bpm with a markedly prolonged QT interval (QTc ~510 ms) and no acute ischemic changes. The long QT is multifactorial: her QT-prolonging medications (oxybutynin, diphenhydramine, tramadol) on a background of hypokalemia (K 3.1) and hypomagnesemia (Mg 1.4). This puts her at risk for torsades de pointes, so I will replete electrolytes aggressively and AVOID further QT-prolonging agents — importantly, no haloperidol or ondansetron for the delirium/nausea, and I will stop the offending medications.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Electrical alternans with low voltage (suggests large pericardial effusion)."
+          "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) — drug- and electrolyte-related, with torsades risk."
         ],
         "coreActions": [
-          "beat-to-beat QRS amplitude alternation",
-          "links alternans + low voltage + tachycardia to pericardial effusion/tamponade"
+          "sinus tachycardia with a markedly prolonged QT/QTc (~510 ms)",
+          "links long QT to QT-prolonging drugs plus hypokalemia/hypomagnesemia, torsades risk"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study a normal sinus tachycardia / misses the long QT",
             "points": -3
           }
         ]
@@ -249,7 +268,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no consolidation/effusion. CREDIT: identifies a normal film (6); notes it excludes pneumonia as the source (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no consolidation/effusion. CREDIT: identifies a normal film (6); notes it excludes pneumonia as the infectious source, supporting the urinary tract as the source (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
         "identifies a normal film",
         "notes it excludes pneumonia as the source"
@@ -260,7 +279,7 @@
       "commonMistakes": [
         "inventing pathology"
       ],
-      "idealAnswer": "No consolidation or effusion (obtained to exclude pneumonia as the infectious source).",
+      "idealAnswer": "No consolidation or effusion. The clear film excludes pneumonia as the infectious source, which supports the urinary tract as the source of sepsis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -288,19 +307,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the pyuria/bacteriuria, leukocytosis, elevated lactate, and AKI, what is your diagnosis?",
-      "rubric": "Urosepsis causing delirium (6). Recognizes sepsis physiology — hypotension, tachycardia, elevated lactate, AKI (3). Notes delirium is multifactorial in the elderly (bonus,1).",
-      "idealAnswer": "Urosepsis with delirium: pyuria/bacteriuria localize the source to the urinary tract, and the leukocytosis, elevated lactate, hypotension/tachycardia, and AKI reflect sepsis physiology with end-organ hypoperfusion. Delirium is multifactorial in the elderly but is driven here by the infection.",
+      "prompt": "Given the pyuria/bacteriuria, leukocytosis, elevated lactate, prerenal AKI with hypernatremia, the low K/Mg, and the prolonged QT on her EKG, commit to your diagnosis. Name the single discriminating finding that resolves the urosepsis-vs-medication-toxicity fork, and state the residual ambiguity.",
+      "rubric": "Urosepsis causing delirium, with medications and metabolic derangement as aggravating co-factors (6). Names the discriminator — pyuria with bacteriuria plus leukocytosis and elevated lactate localize an infectious urinary source, which medication toxicity alone would not produce, resolving the fork toward urosepsis (3). States residual ambiguity — the anticholinergic/opioid burden and electrolyte/QT abnormalities are co-contributors that still must be corrected, and final attribution awaits culture results (bonus,1).",
+      "idealAnswer": "Urosepsis with delirium. The discriminating finding is the pyuria with bacteriuria plus the leukocytosis and elevated lactate (with hypotension, tachycardia, and prerenal AKI) — these localize a true infectious source to the urinary tract and reflect sepsis physiology, which medication toxicity alone could not explain; that resolves the urosepsis-vs-medication-toxicity fork toward urosepsis. The residual ambiguity is that her delirium is multifactorial: the doubled oxybutynin, the borrowed tramadol, the diphenhydramine, the dehydration/hypernatremia, and the hypokalemia/hypomagnesemia (driving the prolonged QT) are genuine co-contributors that must be corrected, and the final microbiologic attribution awaits the pending blood and urine cultures.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Notes delirium is multifactorial in the elderly",
-            "points": 1
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -308,49 +322,52 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH sepsis (Surviving Sepsis): cultures then empiric broad-spectrum IV antibiotics within 1 h (CANT-MISS,7); IV crystalloid resuscitation 30 mL/kg (CANT-MISS,5); norepinephrine first-line for MAP<65 after fluids (4); source control – relieve obstruction/remove line (3); serial lactate (2); treat delirium non-pharmacologically (2). PENALTY: delaying antibiotics for tests (-4); dopamine as first-line pressor (-2).",
-      "idealAnswer": "Urosepsis: obtain blood and urine cultures, then give empiric broad-spectrum IV antibiotics within 1 hour (e.g. ceftriaxone; cover resistant GNR if risk). 30 mL/kg balanced crystalloid for hypoperfusion. Norepinephrine first-line if MAP <65 after fluids. Source control (relieve obstruction, remove catheter). Serial lactate. Treat delirium non-pharmacologically.",
+      "prompt": "What is your management plan, including disposition and a safe-discharge/transition plan once she stabilizes?",
+      "rubric": "Per MGH sepsis (Surviving Sepsis): cultures then empiric broad-spectrum IV antibiotics within 1 h (CANT-MISS,6); IV crystalloid resuscitation 30 mL/kg for hypoperfusion/dehydration, then correct hypernatremia with free water once perfused (CANT-MISS,4); norepinephrine first-line for MAP<65 after fluids (3); replete hypokalemia AND hypomagnesemia and AVOID QT-prolonging agents given the long QT — specifically NO haloperidol/ondansetron, treat delirium non-pharmacologically (core,4); stop/reconcile the offending meds — hold oxybutynin, tramadol, diphenhydramine, hold the thiazide and donepezil (core,3); serial lactate (2); SAFE-DISCHARGE/transition plan — medication reconciliation, deprescribe anticholinergics, caregiver education, repeat EKG to confirm QT normalized, treat-to-baseline cognition and PT/home-safety before return to facility, close follow-up (core,3). PENALTY: delaying antibiotics for tests (-4); giving haloperidol/ondansetron with a long QT (-3); dopamine first-line (-2).",
+      "idealAnswer": "Sepsis bundle: draw blood and urine cultures, then give empiric broad-spectrum IV antibiotics within 1 hour (e.g. ceftriaxone; cover resistant GNR if risk factors). Give 30 mL/kg balanced crystalloid for hypoperfusion and dehydration; once she is perfused, correct the free-water deficit/hypernatremia slowly. Norepinephrine first-line if MAP <65 after fluids. Replete potassium AND magnesium, and because the EKG shows a prolonged QT, AVOID QT-prolonging drugs — do NOT use haloperidol or ondansetron; manage delirium and nausea non-pharmacologically. Reconcile and STOP the offending medications: hold oxybutynin, tramadol, and diphenhydramine, and hold the thiazide (contributing to the low K/Mg) and donepezil while acutely ill. Serial lactate. Admit (ICU if septic shock). Safe-discharge/transition plan: medication reconciliation with deprescribing of the anticholinergic burden, caregiver/facility education on delirium and hydration, a repeat EKG to confirm the QT has normalized, return cognition to baseline with PT and a home-safety/falls assessment before transfer back to assisted living, and close primary-care/geriatrics follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Empiric broad-spectrum antibiotics",
-            "points": 7
+            "item": "Empiric broad-spectrum antibiotics after cultures",
+            "points": 6
           },
           {
-            "item": "IV crystalloid resuscitation",
-            "points": 5
+            "item": "IV crystalloid resuscitation, then correct hypernatremia/free-water deficit",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Blood and urine cultures before antibiotics",
+            "item": "Norepinephrine first-line if MAP<65",
             "points": 3
           },
           {
-            "item": "Norepinephrine first-line if MAP<65",
+            "item": "Replete K and Mg and avoid QT-prolonging agents (no haloperidol/ondansetron)",
             "points": 4
           },
           {
-            "item": "Source control",
+            "item": "Stop/reconcile offending meds — hold oxybutynin, tramadol, diphenhydramine, thiazide, donepezil",
             "points": 3
           },
           {
             "item": "Serial lactate",
             "points": 2
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "Non-pharmacologic delirium management",
-            "points": 2
+            "item": "Safe-discharge plan — med reconciliation/deprescribing, caregiver education, repeat EKG, PT/home-safety, close follow-up",
+            "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Delaying antibiotics",
             "points": -4
+          },
+          {
+            "item": "Giving haloperidol/ondansetron with a prolonged QT",
+            "points": -3
           },
           {
             "item": "Dopamine first-line",
@@ -359,21 +376,25 @@
         ]
       },
       "requiredActions": [
-        "Empiric broad-spectrum antibiotics",
-        "IV crystalloid resuscitation"
+        "Empiric broad-spectrum antibiotics after cultures",
+        "IV crystalloid resuscitation, then correct hypernatremia/free-water deficit"
       ],
       "optionalActions": [
-        "Blood and urine cultures before antibiotics",
         "Norepinephrine first-line if MAP<65",
-        "Source control",
+        "Replete K and Mg and avoid QT-prolonging agents (no haloperidol/ondansetron)",
+        "Stop/reconcile offending meds — hold oxybutynin, tramadol, diphenhydramine, thiazide, donepezil",
         "Serial lactate",
-        "Non-pharmacologic delirium management"
+        "Safe-discharge plan — med reconciliation/deprescribing, caregiver education, repeat EKG, PT/home-safety, close follow-up"
       ],
       "unsafeActions": [
         "Delaying antibiotics",
+        "Giving haloperidol/ondansetron with a prolonged QT",
         "Dopamine first-line"
       ],
-      "consults": [],
+      "consults": [
+        "Geriatrics",
+        "Pharmacy (medication reconciliation)"
+      ],
       "disposition": "Admit; ICU if septic shock",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
@@ -389,12 +410,14 @@
     "verbosity": "very brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "functional_status"
+      "functional_status",
+      "medication_changes"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "80-year-old woman, intermittently confused, fluctuating attention, a poor historian. Mild distress.",
+    "communicationStyle": "patient is confused and gives vague answers; the daughter at the bedside provides collateral when asked",
+    "affect": "80-year-old woman, intermittently confused with fluctuating attention, a poor historian, mildly distressed; daughter at bedside is the informant.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Patient answers only vaguely; reveal real history through the daughter/collateral when the student asks family/facility/chart/medications",
+      "Do not reveal the recent oxybutynin dose increase, borrowed tramadol, thiazide, or diphenhydramine unless asked about medications, recent changes, or pain/sleep remedies",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -407,10 +430,29 @@
       "triggerConcepts": [
         "where do you live",
         "assistance at home",
-        "baseline function"
+        "baseline function",
+        "baseline mental status",
+        "what is she like normally"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_changes",
+      "category": "meds",
+      "triggerConcepts": [
+        "recent medication change",
+        "new medication",
+        "dose change",
+        "anything for pain",
+        "anything to sleep",
+        "borrowed medication",
+        "over the counter"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -435,7 +477,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "urinary symptoms",
+        "smell of urine"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -461,7 +505,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "intake",
+        "eating drinking"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -488,7 +535,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "recurrent uti",
+        "dementia"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -501,7 +550,8 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "medication list"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -525,7 +575,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_cva_tenderness_finding_1",
-      "finding": "Abdomen: mild suprapubic tenderness; possible left CVA tenderness if examined.",
+      "finding": "Abdomen: mild suprapubic tenderness; left CVA tenderness if examined.",
       "revealedBy": [
         "assess_cva_tenderness"
       ],
@@ -535,7 +585,7 @@
     },
     {
       "id": "assess_suprapubic_tenderness_finding_2",
-      "finding": "Abdomen: mild suprapubic tenderness; possible left CVA tenderness if examined.",
+      "finding": "Abdomen: mild suprapubic tenderness; left CVA tenderness if examined.",
       "revealedBy": [
         "assess_suprapubic_tenderness"
       ],
@@ -555,7 +605,7 @@
     },
     {
       "id": "assess_motor_strength_finding_4",
-      "finding": "Neuro: no focal motor/sensory deficit; disoriented; no neck stiffness.",
+      "finding": "Neuro: no focal motor/sensory deficit; disoriented; no neck stiffness; normal tone, no clonus.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -565,7 +615,18 @@
       "normalIfNotPresent": "No focal motor deficit."
     },
     {
-      "id": "assess_general_appearance_finding_5",
+      "id": "assess_skin_turgor_finding_5",
+      "finding": "General: dry mucous membranes, dry axillae, skin tenting (poor turgor) — volume depleted.",
+      "revealedBy": [
+        "assess_skin_turgor",
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes, normal turgor."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
       "finding": "General: confused, fluctuating attention, dry mucous membranes.",
       "revealedBy": [
         "assess_general_appearance"
@@ -575,8 +636,8 @@
       "normalIfNotPresent": "Well hydrated."
     },
     {
-      "id": "assess_mental_status_finding_6",
-      "finding": "General: confused, fluctuating attention, dry mucous membranes.",
+      "id": "assess_mental_status_finding_7",
+      "finding": "Neuro: confused, fluctuating attention, disoriented to time/place; no asterixis; pupils mid-size and reactive.",
       "revealedBy": [
         "assess_mental_status"
       ],
@@ -595,39 +656,44 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Urosepsis with delirium",
-    "diagnosticFramework": "80F from a nursing facility is brought in with one day of acute confusion, decreased oral intake, and fever. The diagnosis is Urosepsis with delirium, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "80F from assisted living with mild dementia and polypharmacy presents with one day of new confusion, fever, foul-smelling urine, urinary frequency, and poor intake. The diagnosis is Urosepsis with delirium, but the picture is layered: a recently doubled oxybutynin, borrowed tramadol, diphenhydramine, and a thiazide create a genuine competing medication/anticholinergic-toxicity fork, with concurrent dehydration/hypernatremia, prerenal AKI, hypokalemia, and hypomagnesemia that prolong the QT on her own EKG. It is reached by taking a collateral history from the daughter, reconciling the medications, performing the targeted exam, checking a glucose, and recognizing that the pyuria/bacteriuria with leukocytosis and elevated lactate localize an infectious urinary source that resolves the fork toward urosepsis while the medications and electrolytes remain aggravating co-factors.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: mild suprapubic tenderness; possible left CVA tenderness if examined.",
-      "Abdomen: mild suprapubic tenderness; possible left CVA tenderness if examined.",
+      "Abdomen: mild suprapubic tenderness; left CVA tenderness if examined.",
+      "Abdomen: mild suprapubic tenderness; left CVA tenderness if examined.",
       "Neuro: no focal motor/sensory deficit; disoriented; no neck stiffness.",
-      "Neuro: no focal motor/sensory deficit; disoriented; no neck stiffness.",
+      "Neuro: no focal motor/sensory deficit; disoriented; no neck stiffness; normal tone, no clonus.",
+      "General: dry mucous membranes, dry axillae, skin tenting (poor turgor) — volume depleted.",
       "General: confused, fluctuating attention, dry mucous membranes.",
-      "General: confused, fluctuating attention, dry mucous membranes."
+      "Neuro: confused, fluctuating attention, disoriented to time/place; no asterixis; pupils mid-size and reactive."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "UA",
       "CBC",
       "BMP",
+      "Magnesium",
       "Lactate",
       "Cultures"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Urosepsis with delirium while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Urosepsis with delirium and manage with stabilization, definitive treatment, consults, and disposition."
+      "Take a collateral history from the daughter and reconcile the full medication list, including recent changes and borrowed/OTC drugs.",
+      "Perform the targeted physical exam maneuvers to reveal volume depletion, urinary-source tenderness, and the absence of focal/meningeal signs.",
+      "Build a differential led by Urosepsis with delirium with a genuine competing medication/anticholinergic-toxicity fork, naming three delirium mechanisms and the must-not-miss causes.",
+      "Order a focused workup (glucose, UA/culture, CBC, BMP, Mg, lactate, cultures, EKG, CXR) and interpret the integrated EKG showing a drug/electrolyte-related prolonged QT.",
+      "Commit to Urosepsis with delirium, naming pyuria/bacteriuria with leukocytosis/lactate as the discriminator, and manage with the sepsis bundle, electrolyte repletion, deprescribing, QT-safe delirium care, and a safe-discharge/transition plan."
     ],
     "commonPitfalls": [
+      "Anchoring on UTI without reconciling the medications or checking a glucose",
+      "Missing the prolonged QT and giving haloperidol/ondansetron",
       "Delaying antibiotics",
       "Dopamine first-line"
     ],
     "managementPearls": [
-      "Empiric broad-spectrum antibiotics",
-      "IV crystalloid resuscitation"
+      "Empiric broad-spectrum antibiotics after cultures",
+      "IV crystalloid resuscitation, then correct hypernatremia/free-water deficit",
+      "Replete K and Mg and avoid QT-prolonging agents"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -639,25 +705,25 @@
       "Urinalysis + urine culture"
     ],
     "criticalInterpretationItems": [
-      "Electrical alternans with low voltage (suggests large pericardial effusion).",
+      "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) — drug- and electrolyte-related, with torsades risk.",
       "No consolidation or effusion (obtained to exclude pneumonia as the infectious source)."
     ],
     "criticalManagementItems": [
-      "Empiric broad-spectrum antibiotics",
-      "IV crystalloid resuscitation"
+      "Empiric broad-spectrum antibiotics after cultures",
+      "IV crystalloid resuscitation, then correct hypernatremia/free-water deficit"
     ],
     "keyImageInterpretationFindings": [
-      "Electrical alternans with low voltage (suggests large pericardial effusion).",
+      "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) — drug- and electrolyte-related, with torsades risk.",
       "No consolidation or effusion (obtained to exclude pneumonia as the infectious source)."
     ],
     "criticalImageInterpretationFindings": [
-      "Electrical alternans with low voltage (suggests large pericardial effusion).",
+      "Sinus tachycardia with a markedly prolonged QT (QTc ~510 ms) — drug- and electrolyte-related, with torsades risk.",
       "No consolidation or effusion (obtained to exclude pneumonia as the infectious source)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "On the patient's own tracing, measure the QT — a long QT in a polypharmacy elderly patient changes which delirium/nausea drugs are safe.",
+      "Low potassium and magnesium compound a drug-induced long QT and raise torsades risk.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -668,15 +734,15 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy and orients the confused patient and the family",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Obtains collateral history from the family/facility appropriately",
         "points": 1
       },
       {
-        "item": "Explains next steps in patient-friendly language",
+        "item": "Explains next steps in patient/caregiver-friendly language",
         "points": 1
       },
       {
@@ -687,8 +753,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

@@ -2053,6 +2053,273 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
       "section": "Syncope (Inherited Arrhythmia Syndromes — Brugada Syndrome)",
       "page": 38
     }
+  },
+  {
+    "caseId": "abdo-10",
+    "category": "Abdominal Pain",
+    "diagnosis": "Adrenal (Addisonian) crisis",
+    "vignette": "44F on chronic glucocorticoids for an autoimmune condition stops them during a flu-like illness and presents with abdominal pain, vomiting, profound weakness, and near-syncope; she is hypotensive with Na 126, K 6.2, glucose 54, and a low cortisol with high ACTH.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Immediate stress-dose IV hydrocortisone (do NOT wait for the cortisol/stimulation result)",
+      "Isotonic saline with dextrose for hypotension, hyponatremia, and hypoglycemia",
+      "Treat cardiotoxic hyperkalemia per EKG (IV calcium, then insulin + glucose/beta-agonist)",
+      "Give hydrocortisone BEFORE any levothyroxine; identify and treat the precipitant",
+      "Correct hyponatremia at a safe rate (avoid osmotic demyelination)",
+      "Admit to a monitored bed/ICU with endocrinology",
+      "Steroid sick-day education: never stop abruptly, stress-dose when ill, medical-alert ID + injectable hydrocortisone kit"
+    ],
+    "unsafe": [
+      "Withholding hydrocortisone while awaiting the cortisol result",
+      "Giving levothyroxine before steroids",
+      "Over-rapid sodium correction",
+      "Discharging a patient in crisis"
+    ],
+    "disposition": "Admit to a monitored bed/ICU",
+    "consults": [
+      "Endocrinology"
+    ],
+    "idealAnswer": "Treat empirically as adrenal (Addisonian) crisis. Give IV hydrocortisone 100 mg immediately WITHOUT waiting for the cortisol, then 50 mg q6h (or an infusion). Resuscitate with isotonic saline containing dextrose to correct the hypotension, hyponatremia, and hypoglycemia. Manage hyperkalemia by EKG (calcium gluconate for cardiotoxicity, then insulin + glucose); it usually resolves with hydrocortisone and volume. Find and treat the precipitant (abrupt steroid cessation plus illness), and never give levothyroxine before steroids. Correct sodium at a safe rate. Admit to a monitored bed/ICU with endocrinology, and before discharge give steroid sick-day rules, a medical-alert bracelet, and an emergency injectable hydrocortisone kit.",
+    "manual": {
+      "section": "Adrenal Insufficiency & Adrenal Crisis",
+      "page": 184
+    }
+  },
+  {
+    "caseId": "ams-10",
+    "category": "Altered Mental Status",
+    "diagnosis": "Digoxin toxicity",
+    "vignette": "78M on digoxin for atrial fibrillation, recently on a higher diuretic dose, presents with nausea, anorexia, blurred yellow-green vision, and new confusion; HR ~45, digoxin level 3.2, K 3.0, Cr up from baseline.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Hold digoxin AND the diuretic",
+      "Continuous telemetry; ICU for a toxic/unstable rhythm",
+      "Correct potassium (to ~4–4.5) and magnesium",
+      "Digoxin-immune Fab (DigiFab) for life-threatening arrhythmia, hemodynamic instability, or hyperkalemia >5 in acute toxicity",
+      "Treat symptomatic bradycardia (atropine; Fab; temporary pacing if needed)",
+      "Safe discharge: medication reconciliation, renal dosing + digoxin-level monitoring, diuretic re-titration with electrolyte checks, family education, cardiology/PCP follow-up"
+    ],
+    "unsafe": [
+      "Giving IV calcium for hyperkalemia in digoxin toxicity ('stone heart')",
+      "Continuing or re-dosing digoxin or the diuretic"
+    ],
+    "disposition": "Admit to telemetry; ICU if unstable arrhythmia or hemodynamic instability",
+    "consults": [
+      "Cardiology",
+      "Medical Toxicology / Poison Control"
+    ],
+    "idealAnswer": "Chronic digoxin toxicity, potentiated by diuretic-induced hypokalemia and renal impairment. Hold the digoxin and the diuretic and place on continuous telemetry. Correct potassium (to ~4–4.5) and magnesium, since hypokalemia/hypomagnesemia worsen toxicity. Give digoxin-immune Fab (DigiFab) for any life-threatening arrhythmia, hemodynamic instability, or — in acute toxicity — K >5. Treat symptomatic bradycardia with atropine/Fab and pacing as a bridge. Critically, AVOID IV calcium for hyperkalemia in dig toxicity ('stone heart'). Disposition is telemetry/ICU; before discharge, reconcile medications, plan renal dosing and digoxin-level monitoring, and re-titrate the diuretic with electrolyte checks.",
+    "manual": {
+      "section": "Toxicology — Digoxin Toxicity",
+      "page": 46
+    }
+  },
+  {
+    "caseId": "anemia-09",
+    "category": "Anemia",
+    "diagnosis": "Myelodysplastic syndrome (MDS)",
+    "vignette": "72M with months of fatigue, exertional dyspnea, and easy bruising; CBC shows pancytopenia with macrocytosis (MCV 104), <5% circulating blasts, and dysplastic neutrophils on the smear.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Urgent hematology/oncology referral for risk stratification (IPSS-R) and disease-directed therapy (hypomethylating agent; transplant candidacy)",
+      "Transfusion support with an ischemia-adjusted threshold (RBCs for symptomatic/ischemic anemia; platelets for severe thrombocytopenia or bleeding)",
+      "Treat any fever as a neutropenic emergency (cultures + empiric broad-spectrum antibiotics)",
+      "Reconcile meds — stop marrow-suppressive agents (e.g. trimethoprim-sulfamethoxazole); reassess antiplatelets given thrombocytopenia",
+      "Supportive care: iron-overload monitoring/chelation in chronically transfused patients, folate, growth factors where appropriate",
+      "Admit with hematology co-management; bleeding precautions; prognosis/goals-of-care discussion"
+    ],
+    "unsafe": [
+      "Discharging a severely pancytopenic patient with active bleeding or ischemia without transfusion or hematology involvement",
+      "Continuing marrow-suppressive drugs or antiplatelets despite severe thrombocytopenia"
+    ],
+    "disposition": "Admit with hematology/oncology co-management",
+    "consults": [
+      "Hematology/Oncology"
+    ],
+    "idealAnswer": "Myelodysplastic syndrome. Get urgent heme/onc involvement for IPSS-R risk stratification and disease-directed therapy (hypomethylating agents such as azacitidine; allogeneic transplant in eligible higher-risk patients). Manage the cytopenias supportively: transfuse RBCs for symptomatic or ischemic anemia and platelets for severe thrombocytopenia or bleeding, and treat any fever as febrile neutropenia with prompt cultures and empiric antibiotics. Stop marrow-suppressive drugs and reassess antiplatelets. In chronically transfused patients monitor for iron overload and chelate. Admit with bleeding precautions and begin a frank prognosis and goals-of-care discussion.",
+    "manual": {
+      "section": "Pancytopenia & Anemia (Myelodysplastic Syndrome)",
+      "page": 139
+    }
+  },
+  {
+    "caseId": "chestpain-10",
+    "category": "Chest Pain",
+    "diagnosis": "Takotsubo (stress) cardiomyopathy",
+    "vignette": "68F develops crushing substernal chest pain and dyspnea minutes after sudden severe emotional stress; the EKG shows anterior ST-elevation with deep T-wave inversions and a long QT, troponin is only mildly elevated, and coronary angiography is normal with apical ballooning.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Treat as ACS until coronary anatomy is known — aspirin, telemetry, urgent coronary angiography",
+      "Once confirmed, supportive heart-failure care — gentle diuresis, beta-blocker and ACE-inhibitor as tolerated",
+      "Correct the QT — keep K >4.0 and replete Mg, stop QT-prolonging drugs, telemetry for torsades",
+      "Avoid catecholamines/inotropes/pressors; beware dynamic LV outflow tract obstruction",
+      "Consider anticoagulation if apical akinesis / LV thrombus risk",
+      "Repeat echo to document recovery; address the psychosocial trigger with social work and close cardiology follow-up"
+    ],
+    "unsafe": [
+      "Discharging an active anterior-injury EKG with a positive troponin",
+      "Giving a catecholamine/inotrope or continuing QT-prolonging drugs without telemetry"
+    ],
+    "disposition": "Admit to telemetry/cardiology; cardiac catheterization",
+    "consults": [
+      "Cardiology",
+      "Psychiatry / Social Work"
+    ],
+    "idealAnswer": "Takotsubo (stress) cardiomyopathy — but it is indistinguishable from anterior STEMI up front, so treat as ACS (aspirin, telemetry, urgent angiography); the clean coronaries with apical ballooning make the diagnosis. Then manage supportively as heart failure with gentle diuresis and a beta-blocker/ACE-inhibitor as tolerated. Correct the prolonged QT (K >4.0, replete Mg, stop QT-prolonging agents) and watch for torsades on telemetry. AVOID catecholamines/inotropes and pressors — they worsen it and can provoke dynamic LVOT obstruction; anticoagulate if there is apical akinesis with thrombus risk. Function usually recovers, so plan a repeat echo. Address the emotional trigger with social work and arrange close cardiology follow-up.",
+    "manual": {
+      "section": "Chest Pain (Stress / Takotsubo Cardiomyopathy)",
+      "page": 24
+    }
+  },
+  {
+    "caseId": "diarrhea-09",
+    "category": "Diarrhea",
+    "diagnosis": "VIPoma (WDHA / Verner–Morrison syndrome)",
+    "vignette": "55F with months of profuse watery (tea-colored) diarrhea — often several liters a day — that persists during a supervised fast, with profound weakness, K 2.4, a non-anion-gap acidosis, and a markedly elevated fasting VIP.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Aggressive IV fluid resuscitation for the secretory losses with strict ins/outs",
+      "Careful potassium repletion with magnesium on continuous telemetry",
+      "Somatostatin analog (octreotide → long-acting lanreotide) to suppress VIP and control the diarrhea",
+      "Localize/stage and refer for surgical resection of the pancreatic NET (oncology / endocrine surgery; PRRT or hepatic-directed therapy if metastatic)",
+      "Correct the non-anion-gap (bicarbonate-loss) acidosis and hypercalcemia as volume/potassium are restored",
+      "Admit; counsel that antidiarrheals/antibiotics alone will not control a hormone-driven secretory diarrhea"
+    ],
+    "unsafe": [
+      "Oral rehydration alone or discharging a severely hypokalemic, volume-depleted patient",
+      "Repleting potassium without magnesium or without telemetry",
+      "Empiric antibiotics/steroids as if infectious/IBD, missing the secretory tumor"
+    ],
+    "disposition": "Admit",
+    "consults": [
+      "Oncology",
+      "Endocrine Surgery"
+    ],
+    "idealAnswer": "VIPoma (WDHA / Verner–Morrison syndrome). Resuscitate aggressively with IV fluids for the large secretory losses and replace potassium (with magnesium, on telemetry) — the hypokalemia is the immediate threat. Start a somatostatin analog (octreotide, then long-acting lanreotide) to suppress VIP and control the diarrhea. Correct the non-anion-gap acidosis (stool bicarbonate loss) and the hypercalcemia as volume and potassium are restored. Localize and stage the pancreatic neuroendocrine tumor and refer to endocrine surgery/oncology for resection, with PRRT or hepatic-directed therapy if metastatic. Counsel that ordinary antidiarrheals and antibiotics will not control a hormone-secreting tumor.",
+    "manual": {
+      "section": "Diarrhea (Secretory / VIPoma)",
+      "page": 78
+    }
+  },
+  {
+    "caseId": "dyspnea-10",
+    "category": "Dyspnea",
+    "diagnosis": "New-onset atrial fibrillation with RVR (precipitating decompensated heart failure)",
+    "vignette": "65F with HTN and obesity presents with 2 days of progressive dyspnea, orthopnea, and palpitations; she is in new atrial fibrillation at ~140 with pulmonary edema, and the workup reveals a suppressed TSH (thyrotoxicosis) as the precipitant.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Rate control (beta-blocker preferred) while co-treating the precipitant",
+      "Treat the trigger — here antithyroid therapy + beta-blocker with endocrine consult",
+      "Gentle IV loop diuresis with strict I/O and daily weights",
+      "Anticoagulation decision by CHA2DS2-VASc",
+      "Telemetry/admission with serial troponin",
+      "Rhythm control/cardioversion only after adequate anticoagulation or a TEE; address contributors (alcohol, OSA, BP)"
+    ],
+    "unsafe": [
+      "Rate-control monotherapy without treating the precipitant (thyrotoxicosis)",
+      "Unsafe early cardioversion of unanticoagulated new AF",
+      "Aggressive IV fluid bolus in a congested patient"
+    ],
+    "disposition": "Admit to telemetry (SDU/CCU if unstable or refractory RVR)",
+    "consults": [
+      "Cardiology",
+      "Endocrinology"
+    ],
+    "idealAnswer": "New atrial fibrillation with RVR that has precipitated decompensated heart failure — and you must treat the precipitant, here occult thyrotoxicosis. Rate-control with a beta-blocker (preferred, and it also treats the thyrotoxic symptoms), cautiously so as not to worsen the decompensation, and add antithyroid therapy with endocrinology. Gently diurese the pulmonary edema with an IV loop diuretic and strict I/O. Make an anticoagulation decision by CHA2DS2-VASc; do not cardiovert unanticoagulated new AF without a TEE. Admit to telemetry with serial troponin, and address contributors (alcohol, OSA, blood pressure).",
+    "manual": {
+      "section": "Atrial Fibrillation / Tachyarrhythmias",
+      "page": 31
+    }
+  },
+  {
+    "caseId": "fever-09",
+    "category": "Fever",
+    "diagnosis": "Reactivation pulmonary tuberculosis",
+    "vignette": "45M with recent incarceration has several weeks of fevers, drenching night sweats, weight loss, and a productive cough; CXR shows right-upper-lobe cavitation and the sputum AFB smear is positive.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Airborne (negative-pressure) isolation with N95 until de-isolation criteria are met",
+      "Empiric four-drug RIPE therapy (rifampin, isoniazid + pyridoxine, pyrazinamide, ethambutol)",
+      "Mandatory public-health reporting + contact tracing + arrange directly observed therapy (DOT)",
+      "Baseline and serial LFTs; visual acuity / color-vision monitoring (ethambutol)",
+      "HIV testing and linkage to care",
+      "Do not discharge to a congregate setting while infectious; arrange housing/case management and follow-up"
+    ],
+    "unsafe": [
+      "Discharging an infectious smear-positive patient to a shelter/jail or stopping isolation prematurely",
+      "Single-drug therapy or omitting public-health reporting",
+      "Starting a TNF-alpha inhibitor / escalating immunosuppression"
+    ],
+    "disposition": "Admit to a negative-pressure airborne-isolation room; involve public health",
+    "consults": [
+      "Infectious Disease",
+      "Pulmonology",
+      "Public Health / TB control"
+    ],
+    "idealAnswer": "Active (reactivation) pulmonary TB. Place the patient in a negative-pressure airborne-isolation room with N95 precautions immediately and send three sputum AFB smears/cultures with NAAT. Start empiric four-drug RIPE therapy (rifampin, isoniazid with pyridoxine, pyrazinamide, ethambutol) and report to public health for contact tracing and directly observed therapy. Get baseline LFTs (and monitor on treatment) and check visual acuity/color vision for ethambutol. Test for HIV. Do not discharge an infectious patient to a congregate setting — arrange isolation-appropriate housing, case management, and follow-up, and watch for drug hepatotoxicity and IRIS.",
+    "manual": {
+      "section": "Tuberculosis (Active Pulmonary TB)",
+      "page": 188
+    }
+  },
+  {
+    "caseId": "liver-09",
+    "category": "Abnormal Liver Enzymes",
+    "diagnosis": "Hereditary hemochromatosis",
+    "vignette": "55M with fatigue, arthralgias of the 2nd/3rd knuckles, bronze skin, and new diabetes; transaminases are mildly elevated and ferritin with transferrin saturation (>45%) are markedly high.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Therapeutic phlebotomy to iron-deplete, then maintenance (first-line iron removal)",
+      "Stop iron AND vitamin C supplements; limit/abstain from alcohol; avoid raw shellfish (Vibrio)",
+      "Treat the diabetes and manage hypogonadism (testosterone replacement)",
+      "Cardiology referral for conduction disease/cardiomyopathy with telemetry +/- pacing",
+      "Hepatology referral; HCC surveillance (ultrasound + AFP) if cirrhotic",
+      "HFE genetic counseling and screen first-degree relatives"
+    ],
+    "unsafe": [
+      "Giving iron or continuing an iron/vitamin-C supplement",
+      "Treating only the liver and ignoring the cardiac, endocrine, and family-screening dimensions",
+      "Choosing chelation over phlebotomy first-line in an otherwise stable patient"
+    ],
+    "disposition": "Outpatient phlebotomy program with hepatology, cardiology, and endocrine follow-up; admit if high-grade AV block develops",
+    "consults": [
+      "Hepatology",
+      "Cardiology",
+      "Endocrinology"
+    ],
+    "idealAnswer": "Hereditary hemochromatosis. First-line iron removal is therapeutic phlebotomy (iron-deplete, then maintenance); reserve chelation for those who cannot tolerate phlebotomy. Stop iron and vitamin C supplements, counsel alcohol limitation, and advise avoiding raw shellfish (Vibrio risk). Treat the end-organ disease: diabetes, hypogonadism (testosterone), and the cardiac dimension — cardiology referral for iron cardiomyopathy/conduction disease, with telemetry and pacing if high-grade block. Refer to hepatology and start HCC surveillance (ultrasound + AFP) if cirrhotic. Confirm with HFE genotyping, offer genetic counseling, and screen first-degree relatives.",
+    "manual": {
+      "section": "Inherited Liver Disease (Hereditary Hemochromatosis)",
+      "page": 96
+    }
+  },
+  {
+    "caseId": "syncope-10",
+    "category": "Syncope",
+    "diagnosis": "Pre-excited atrial fibrillation (Wolff-Parkinson-White)",
+    "vignette": "22M with syncope during a sudden burst of fast irregular palpitations; the monitor shows a very fast, broad, irregular tachycardia with beat-to-beat QRS changes, and his baseline EKG has a short PR with a delta wave.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Unstable/hypotensive → immediate synchronized electrical cardioversion",
+      "Stable pre-excited AF → procainamide or ibutilide (does NOT block the AV node)",
+      "AVOID all AV-nodal blockers — adenosine, beta-blockers, calcium-channel blockers, digoxin — they accelerate accessory-pathway conduction and can precipitate VF",
+      "Continuous telemetry with defibrillator pads, IV access, replete magnesium/potassium",
+      "Urgent cardiology/electrophysiology referral for accessory-pathway ablation (definitive cure)",
+      "Do not discharge on an AV-nodal blocker; restrict competitive sport until ablated; clear return precautions and EP follow-up"
+    ],
+    "unsafe": [
+      "Giving adenosine, a beta-blocker, a calcium-channel blocker, or digoxin",
+      "Discharging on verapamil or without EP referral and activity counseling"
+    ],
+    "disposition": "Admit; monitored bed; urgent EP for ablation",
+    "consults": [
+      "Cardiology / Electrophysiology"
+    ],
+    "idealAnswer": "Pre-excited atrial fibrillation in WPW — a wide, irregular, very fast tachycardia. If unstable, perform immediate synchronized cardioversion. If stable, use procainamide or ibutilide, which slow accessory-pathway conduction without blocking the AV node. The load-bearing point: AVOID every AV-nodal blocker — adenosine, beta-blockers, calcium-channel blockers (stop his verapamil), and digoxin — because blocking the node forces more conduction down the accessory pathway and can precipitate ventricular fibrillation. Keep the patient on telemetry with defibrillator pads and correct Mg/K. Refer urgently to electrophysiology for accessory-pathway ablation, which is curative. Do not discharge on an AV-nodal blocker; restrict competitive sport until ablated and give clear return precautions.",
+    "manual": {
+      "section": "Tachyarrhythmias (Pre-excited AF / WPW)",
+      "page": 39
+    }
   }
 ];
 

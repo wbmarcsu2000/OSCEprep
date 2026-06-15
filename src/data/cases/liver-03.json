@@ -2,57 +2,59 @@
   "id": "liver-03",
   "category": "Abnormal Liver Enzymes",
   "difficulty": "hard",
-  "title": "Nausea and markedly elevated transaminases",
+  "title": "Nausea and transaminases in the thousands in a patient on multiple hepatotoxins",
   "diagnosis": "Acetaminophen-induced liver injury",
   "chart": {
-    "ageSex": "25F",
-    "cc": "Nausea and vomiting",
-    "oneLiner": "25F presents with nausea, vomiting, and right upper quadrant pain; she has been taking large amounts of an over-the-counter pain reliever for several days.",
+    "ageSex": "34F",
+    "cc": "Nausea and feeling awful",
+    "oneLiner": "34F with depression, chronic low back pain, and treated latent TB presents with 3 days of nausea, vomiting, malaise, and RUQ pain; she takes several over-the-counter and prescription products for pain and recently had a stretch of poor oral intake. She looks pale and slightly tachycardic, and her transaminases come back in the thousands.",
     "vitals": {
-      "BP": "118/72",
-      "HR": "96",
-      "RR": "16",
-      "Temp": "37.2°C",
-      "SpO2": "99% RA"
+      "BP": "104/64",
+      "HR": "112",
+      "RR": "20",
+      "Temp": "37.4°C",
+      "SpO2": "98% RA"
     },
     "timer": 180
   },
-  "opening": "I can't stop feeling sick, and my upper belly hurts.",
-  "patientFile": "PERSONA: 25-year-old woman, nauseated, uncomfortable, somewhat guarded about details. Becomes more forthcoming when asked directly.\n\nHPI: A few days of nausea, vomiting, malaise, and RUQ pain. On direct, nonjudgmental questioning: she has been taking large doses of acetaminophen-containing products for a bad toothache and headaches over several days (a staggered supratherapeutic ingestion) — and discloses a recent low mood / an impulsive larger ingestion 2 days ago (only if asked sensitively about how much, intent, and other substances). NO alcohol binge. The early phase can be deceptively mild before injury declares itself.\nPMH: depression/anxiety (if asked). MEDS: acetaminophen-containing products; verify other co-ingestants. SOCIAL: lives alone.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: nauseated, mildly tender, alert.\n- Vitals: BP 118/72, HR 96, RR 16, 37.2°C, SpO2 99% RA.\n- Abdomen: RIGHT upper quadrant tenderness over the liver; no rebound.\n- Neuro: alert; check for asterixis/encephalopathy (a late, ominous sign) if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the amount taken, the timing, the intent, or co-ingestants unless the student asks sensitively and specifically (how much, when, why, anything else taken).\n- Approach this nonjudgmentally; do not provide details about methods of self-harm.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I just can't stop feeling sick to my stomach, and my upper belly is sore.",
+  "patientFile": "PERSONA: 34-year-old woman, nauseated, pale, tired, somewhat guarded about how much medication she has been taking and about her mood. Becomes more forthcoming when asked directly and nonjudgmentally.\n\nHPI: About 3 days of nausea, frequent vomiting, malaise, decreased appetite, and a dull ache under the right ribs. She has had a flare of low back pain and headaches for over a week and has been 'taking whatever helps' — including extra-strength acetaminophen tablets AND a prescription acetaminophen/oxycodone (Percocet) combination, often together, not realizing both contain the same pain reliever (a staggered, supratherapeutic, therapeutic-misadventure pattern over several days rather than one big overdose). Because she felt so sick she barely ate for two days (poor intake / relative fasting). On sensitive, specific questioning she also discloses low mood and that 3 days ago, during a bad evening, she did take a larger handful of the tablets 'to make the pain and everything stop' — she is vague about exact count and ambivalent about intent. She drinks alcohol most evenings (about 3-4 drinks/night) but did NOT have a discrete binge. NO black/bloody stools, NO recent hypotensive event or fainting that she recalls (relevant to shock liver), NO known sick contacts, NO IV drug use, NO new tattoos, NO mushroom foraging, NO herbal weight-loss teas — but she does take St. John's Wort she bought for her mood.\nPMH (reveal when asked): major depression and anxiety; chronic low back pain; latent TB diagnosed on pre-employment screening, currently on isoniazid. NO known prior liver disease, NO hepatitis. MEDS (reveal when asked, and EMPHASIZE if asked to list everything she takes for pain or 'anything over the counter or herbal'): extra-strength acetaminophen (multiple tablets/day for days), acetaminophen/oxycodone (Percocet) for back pain, ibuprofen, citalopram for depression, isoniazid for latent TB, and over-the-counter St. John's Wort. ALLERGIES: none. SOCIAL: lives alone; drinks alcohol most nights (3-4 drinks); smokes occasionally; no recreational injection drugs. FAMILY: noncontributory. ROS: nausea, vomiting, anorexia, malaise, RUQ discomfort; no fever/chills, no jaundice noticed by her, no confusion noted by her (but assess for it).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, nauseated, mildly diaphoretic, alert and oriented.\n- Vitals: BP 104/64, HR 112, RR 20, 37.4 C, SpO2 98% RA.\n- Mucous membranes/skin: dry mucous membranes, mild scleral icterus if specifically inspected; skin slightly cool.\n- Abdomen: tender RIGHT upper quadrant over the liver edge, which is mildly enlarged and tender; no rebound, no rigidity.\n- Neuro: alert; subtle/equivocal asterixis if specifically examined (early, ominous — flag it); otherwise no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the total amount of acetaminophen, that two different products both contain acetaminophen, the timing, the intent, the alcohol amount, the isoniazid, or the St. John's Wort unless the student asks specifically (how much, when, why, what else including prescription/over-the-counter/herbal, alcohol).\n- Approach mood and intent nonjudgmentally; do not provide details about methods of self-harm.\n- Reveal exam findings (icterus, hepatomegaly/tenderness, asterixis) only when that exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Acetaminophen": "Serum acetaminophen level ELEVATED; with a known single-ingestion time, plot on the Rumack-Matthew nomogram (a staggered/unknown-time ingestion is treated based on risk).",
-      "LFTs": "AST and ALT rising into the thousands (centrilobular hepatocellular injury).",
-      "INR": "Prolonged and rising — synthetic dysfunction.",
-      "BMP": "Watch renal function (acetaminophen can cause AKI) and glucose (hypoglycemia in liver failure).",
-      "ABG_Lactate": "Acid-base and lactate as severity/prognostic markers.",
-      "Coingestants": "Salicylate level and other co-ingestants checked."
+      "Acetaminophen": "Serum acetaminophen level 142 mcg/mL. Because this is a STAGGERED ingestion over several days with an uncertain last-dose time, the Rumack-Matthew nomogram does NOT apply — treat based on risk (detectable level + transaminitis), do not be falsely reassured by a single value.",
+      "LFTs": "AST 6,820 U/L, ALT 5,540 U/L (AST > ALT, both in the thousands — massive centrilobular hepatocellular injury). Total bilirubin 3.1 mg/dL, alkaline phosphatase mildly elevated. Pattern is hepatocellular, not cholestatic.",
+      "INR": "INR 2.6 and rising on repeat (baseline normal) — synthetic dysfunction / coagulopathy, a King's College prognostic marker.",
+      "BMP": "Na 138, K 4.0, Cl 100, HCO3 16 (anion gap = 138 - (100 + 16) = 22, elevated). Creatinine 1.8 mg/dL (baseline ~0.8 — acute kidney injury). Glucose 58 mg/dL (hypoglycemia from failing hepatic gluconeogenesis). BUN 24.",
+      "ABG_Lactate": "pH 7.28, pCO2 30, HCO3 15, base deficit present; lactate 4.5 mmol/L — high-anion-gap metabolic acidosis with hyperlactatemia (severity/prognostic marker; arterial pH < 7.30 is a King's College criterion).",
+      "Coingestants": "Salicylate level negative; ethanol detectable but low; urine tox otherwise unremarkable. Viral hepatitis panel (HAV IgM, HBsAg/anti-HBc IgM, HCV Ab) and acetaminophen-protein adduct sent — viral serologies negative, supporting acetaminophen over acute viral hepatitis."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 23,
+      "source": "https://litfl.com/ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Pathologic Q waves in II, III, aVF without acute ST elevation — old inferior infarct.",
-      "verify": "Source a study matching: Pathologic Q waves in II, III, aVF without acute ST elevation — old inferior infarct. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~112 bpm with a prolonged QT interval (QTc ~490 ms) and no acute ST-elevation; the prolonged QT is driven by her metabolic derangement (acidosis, AKI) plus QT-prolonging citalopram.",
+      "verify": "Source a study matching: sinus tachycardia with drug/metabolic QT prolongation, no acute ST elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing old inferior MI Q waves",
+      "imageDescription": "12-lead showing sinus tachycardia with a prolonged QT interval",
       "searchTerms": [
-        "old inferior MI Q waves ECG",
-        "pathological Q waves inferior leads"
+        "drug-induced long QT ECG",
+        "prolonged QT sinus tachycardia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 70-year-old man being evaluated for fatigue has pathologic inferior Q waves indicating a prior, clinically silent inferior infarct."
+      "clinicalVignette": "A patient with metabolic acidosis, acute kidney injury, and a QT-prolonging antidepressant has sinus tachycardia and a long QT on the tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Small dense calcified granuloma with possible calcified hilar node (old healed granulomatous disease).",
+      "findings": "Small dense calcified granuloma with possible calcified hilar node (old healed granulomatous disease) — an incidental, benign finding that fits her history of latent TB.",
       "verify": "Source a study matching: Small dense calcified granuloma with possible calcified hilar node (old healed granulomatous disease). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
       "imageDescription": "chest radiograph showing calcified granuloma",
@@ -61,7 +63,7 @@
         "calcified lung nodule benign radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 55-year-old man having a routine film shows an incidental dense calcified granuloma with a calcified hilar node."
+      "clinicalVignette": "A patient with a history of latent TB has a routine film showing an incidental dense calcified granuloma with a calcified hilar node."
     }
   },
   "revealKeys": [
@@ -84,19 +86,19 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Acetaminophen (paracetamol) hepatotoxicity (leading & CANT-MISS,9). Other drug/toxin-induced injury (CANT-MISS,3). Acute viral hepatitis (core,3). Ischemic hepatitis (core,2). Alcoholic hepatitis (core,2). Connects the ingestion history + rising transaminases/INR to acetaminophen toxicity and the need for a level (core,6).",
-      "idealAnswer": "Leading diagnosis: Acetaminophen (paracetamol) hepatotoxicity. Must-not-miss diagnoses to exclude: Other drug/toxin-induced injury. Also reasonable: Acute viral hepatitis; Ischemic hepatitis; Alcoholic hepatitis.",
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis). Explicitly name THREE causes of AST/ALT in the thousands that you are weighing here.",
+      "rubric": "Acetaminophen (paracetamol) hepatotoxicity — leading & CANT-MISS, given the staggered supratherapeutic ingestion across two acetaminophen-containing products plus risk modifiers (CANT-MISS,8). Ischemic hepatitis / 'shock liver' — genuine competitor given tachycardia, low-normal BP, vomiting, and poor intake; AST/ALT also in the thousands (CANT-MISS,4). Acute viral hepatitis — must exclude with serologies (core,3). Other drug/toxin hepatotoxicity (isoniazid, herbal St. John's Wort) as a contributor/confounder (core,2). Alcoholic hepatitis — typically AST:ALT 2:1 but transaminases rarely in the thousands, so less likely (core,2). Names THREE causes of transaminases in the thousands (acetaminophen/toxin, ischemic hepatitis, acute viral hepatitis) (core,3). Connects ingestion history + transaminases in the thousands + rising INR to acetaminophen toxicity and the need for a level regardless of the nomogram (core,3). PENALTY: anchoring on acetaminophen without considering ischemic hepatitis or viral hepatitis as competitors (-3).",
+      "idealAnswer": "Leading diagnosis: Acetaminophen (paracetamol) hepatotoxicity — a staggered, supratherapeutic ingestion across TWO acetaminophen-containing products (extra-strength acetaminophen + acetaminophen/oxycodone), amplified by risk modifiers (chronic alcohol use, relative fasting/poor intake, isoniazid, St. John's Wort). The three causes of AST/ALT in the thousands I am actively weighing: (1) acetaminophen/toxin-induced hepatotoxicity, (2) ischemic hepatitis ('shock liver') — she is tachycardic, low-normal BP, vomiting and poorly perfused, and (3) acute viral hepatitis. Also reasonable/contributory: other drug/herbal hepatotoxins (isoniazid, St. John's Wort); alcoholic hepatitis is less likely because it rarely drives transaminases into the thousands. A serum acetaminophen level is mandatory even though a single-timepoint nomogram cannot be applied to a staggered ingestion.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Acetaminophen (paracetamol) hepatotoxicity",
-            "points": 9
+            "points": 8
           },
           {
-            "item": "Other drug/toxin-induced injury",
-            "points": 3
+            "item": "Ischemic hepatitis / shock liver",
+            "points": 4
           }
         ],
         "coreActions": [
@@ -105,7 +107,7 @@
             "points": 3
           },
           {
-            "item": "Ischemic hepatitis",
+            "item": "Other drug/toxin hepatotoxicity (isoniazid, St. John's Wort)",
             "points": 2
           },
           {
@@ -113,19 +115,28 @@
             "points": 2
           },
           {
-            "item": "Connects the ingestion history + rising transaminases/INR to acetaminophen toxicity and the need for a level",
-            "points": 6
+            "item": "Names three causes of transaminases in the thousands",
+            "points": 3
+          },
+          {
+            "item": "Connects ingestion history + transaminases/INR to acetaminophen toxicity and the need for a level",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on acetaminophen without considering ischemic hepatitis or viral hepatitis",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Other drug/toxin-induced injury"
+        "Ischemic hepatitis / shock liver",
+        "Acute viral hepatitis"
       ],
       "acceptableAlternatives": [
-        "Acute viral hepatitis",
-        "Ischemic hepatitis",
+        "Other drug/toxin hepatotoxicity (isoniazid, St. John's Wort)",
         "Alcoholic hepatitis"
       ]
     },
@@ -134,25 +145,25 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What is the single most important level to check, and what else do you order?",
-      "rubric": "Serum ACETAMINOPHEN level with timing of ingestion (CANT-MISS,5). LFTs (2). INR/coags (2). BMP — renal function, glucose (2). ABG/lactate for severity (1). Salicylate level and co-ingestant screen (2). Recognizes the Rumack-Matthew nomogram applies to a single timed ingestion (1). PENALTY: not checking an acetaminophen level (-3).",
-      "idealAnswer": "Order: EKG; CXR; Acetaminophen; LFTs; INR; BMP; ABG lactate; Coingestants.",
+      "prompt": "What is the single most important level to check, and what else do you order to sort out this multi-system picture?",
+      "rubric": "Serum ACETAMINOPHEN level with timing of ingestion (CANT-MISS,4). LFTs with bilirubin (2). INR/coags (2). BMP — renal function, glucose, anion gap (2). ABG/lactate for severity (1). Salicylate level + co-ingestant screen + viral hepatitis serologies (2). Recognizes a single level cannot be plotted on the Rumack-Matthew nomogram for a staggered/unknown-time ingestion (1). Checks EKG given QT-prolonging citalopram + metabolic derangement; CXR (1). PENALTY: not checking an acetaminophen level (-3); relying on the nomogram to clear a staggered ingestion (-2).",
+      "idealAnswer": "Single most important: a serum ACETAMINOPHEN level with the timing/pattern of ingestion (it confirms exposure even though a staggered ingestion cannot be plotted on the Rumack-Matthew nomogram). Also order: LFTs with bilirubin; INR/coags; BMP (renal function, glucose, anion gap); ABG with lactate; salicylate level and co-ingestant screen; viral hepatitis serologies (HAV IgM, HBsAg/anti-HBc IgM, HCV Ab) to address the viral competitor; EKG (she is on QT-prolonging citalopram and is acidotic/AKI) and CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Serum ACETAMINOPHEN level with timing of ingestion",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
             "item": "LFTs",
@@ -168,10 +179,10 @@
           },
           {
             "item": "ABG lactate",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Coingestants",
+            "item": "Coingestants and viral hepatitis serologies",
             "points": 2
           }
         ],
@@ -180,6 +191,10 @@
           {
             "item": "not checking an acetaminophen level",
             "points": -3
+          },
+          {
+            "item": "relying on the nomogram to clear a staggered ingestion",
+            "points": -2
           }
         ]
       },
@@ -188,9 +203,12 @@
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "not checking an acetaminophen level"
+        "not checking an acetaminophen level",
+        "relying on the nomogram to clear a staggered ingestion"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "Serum ACETAMINOPHEN level with timing of ingestion"
+      ]
     },
     {
       "id": "ekg_read",
@@ -198,33 +216,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = established pathologic Q waves in II/III/aVF without acute ST elevation (old inferior MI). CREDIT: systematic rate & rhythm read (6); identifies the inferior Q waves (4); recognizes them as old, not acute (3). PENALTY: reading the old Q waves as an acute event, or calling the study normal / missing the abnormality (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and their relevance to her presentation.",
+      "rubric": "Findings = sinus tachycardia (~112 bpm) with a PROLONGED QT interval (QTc ~490 ms) and no acute ST elevation. CREDIT: systematic rate & rhythm read identifying sinus tachycardia (5); identifies the prolonged QT (5); attributes it to the metabolic derangement (acidosis/AKI) plus QT-prolonging citalopram and flags torsades risk (3). PENALTY: missing the long QT, or over-reading the tracing as a primary acute coronary event (-3).",
       "keyFindings": [
-        "pathologic Q waves in the inferior leads",
-        "recognizes these as old, not acute"
+        "sinus tachycardia",
+        "prolonged QT interval (QTc ~490 ms)"
       ],
       "criticalFindings": [
-        "Evidence of prior inferior myocardial infarction (Q waves, no acute changes)."
+        "Sinus tachycardia with a prolonged QT interval; no acute ST elevation."
       ],
       "commonMistakes": [
-        "reading old Q waves as an acute event",
-        "missing the inferior Q waves"
+        "missing the prolonged QT",
+        "over-reading sinus tachycardia as a primary acute coronary event"
       ],
-      "idealAnswer": "Old inferior MI: established pathologic Q waves in II/III/aVF without acute ST elevation.",
+      "idealAnswer": "Sinus tachycardia at ~112 bpm with a prolonged QT interval (QTc ~490 ms) and no acute ST elevation. The long QT is multifactorial here — metabolic acidosis and acute kidney injury plus the QT-prolonging antidepressant citalopram — and it raises the risk of torsades, so she needs telemetry, electrolyte repletion (K/Mg), and avoidance of further QT-prolonging drugs.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Evidence of prior inferior myocardial infarction (Q waves, no acute changes)."
+          "Sinus tachycardia with a prolonged QT interval; no acute ST elevation."
         ],
         "coreActions": [
-          "pathologic Q waves in the inferior leads",
-          "recognizes these as old, not acute"
+          "sinus tachycardia",
+          "prolonged QT interval (QTc ~490 ms)"
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          "attributes the long QT to acidosis/AKI plus citalopram and flags torsades risk"
+        ],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "misses the prolonged QT or over-reads as a primary acute coronary event",
             "points": -3
           }
         ]
@@ -237,7 +257,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = small dense calcified granuloma (benign, old healed granulomatous disease). CREDIT: identifies the calcified granuloma (6); recognizes it as a benign healed finding, not malignancy (4). PENALTY: working up a clearly calcified benign nodule, or calling the study normal / missing the finding (-3).",
+      "rubric": "Findings = small dense calcified granuloma (benign, old healed granulomatous disease), fitting her latent-TB history. CREDIT: identifies the calcified granuloma (6); recognizes it as a benign healed finding, not malignancy (4). PENALTY: working up a clearly calcified benign nodule as cancer, or calling the study normal / missing the finding (-3).",
       "keyFindings": [
         "identifies a calcified granuloma",
         "recognizes it as a benign healed finding"
@@ -248,7 +268,7 @@
       "commonMistakes": [
         "working up a clearly calcified benign nodule as malignancy"
       ],
-      "idealAnswer": "Calcified granuloma — a benign sequela of old granulomatous infection; dense uniform calcification.",
+      "idealAnswer": "Calcified granuloma — a benign sequela of old granulomatous infection (consistent with her latent-TB history); dense uniform calcification, no aggressive features and no need for malignancy workup.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -271,9 +291,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Elevated acetaminophen level with rising AST/ALT and a climbing INR. What is your diagnosis and what predicts a poor outcome?",
-      "rubric": "Acetaminophen-induced acute liver injury / failure (6). Names poor-prognosis markers — rising INR, acidosis, renal failure, encephalopathy (King's College criteria) (4).",
-      "idealAnswer": "Acetaminophen-induced acute liver injury/failure. Poor-prognosis markers (King's College criteria): rising INR/coagulopathy, metabolic acidosis (low pH/high lactate), renal failure, and encephalopathy.",
+      "prompt": "The acetaminophen level is detectable with AST/ALT in the thousands, INR 2.6 and rising, anion-gap acidosis, AKI, and hypoglycemia. Commit to a diagnosis, name the discriminating data that resolve it over the competitors, and list THREE factors that potentiated her acetaminophen toxicity. What predicts a poor outcome?",
+      "rubric": "Acetaminophen-induced acute liver injury / early acute liver failure (6). Discriminators: detectable acetaminophen level with hepatocellular AST>ALT pattern and negative viral serologies (favors acetaminophen over viral hepatitis); no documented hypotensive/shock event and the dominant exposure history (favors acetaminophen over ischemic hepatitis) (2). Names THREE potentiating factors (chronic alcohol use, fasting/poor intake, isoniazid, St. John's Wort — all deplete glutathione or induce CYP2E1 → more NAPQI) (1). Names poor-prognosis markers — rising INR, arterial pH < 7.30 / high lactate, AKI/creatinine, encephalopathy (King's College criteria) (1).",
+      "idealAnswer": "Diagnosis: Acetaminophen-induced acute liver injury progressing toward acute liver failure. Discriminating data: a detectable acetaminophen level with a hepatocellular pattern (AST 6,820 > ALT 5,540, both in the thousands) and NEGATIVE viral hepatitis serologies argue against acute viral hepatitis; the absence of a documented hypotensive/shock event together with the clear staggered overdose history argues against ischemic hepatitis (though both remain on the differential until viral serologies and the clinical course confirm). Three factors that potentiated her toxicity: (1) chronic alcohol use (induces CYP2E1 and depletes glutathione), (2) fasting/poor oral intake for days (glutathione depletion), and (3) concurrent CYP-inducing/hepatotoxic drugs — isoniazid and St. John's Wort — all of which increase toxic NAPQI. Poor-prognosis markers (King's College criteria for acetaminophen): arterial pH < 7.30 (hers is 7.28) OR the triad of INR > 6.5, creatinine > 3.4, and grade III/IV encephalopathy; her rising INR (2.6), high lactate (4.5), AKI, and any encephalopathy/asterixis are ominous.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -286,66 +306,76 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH acute liver failure (APAP): N-acetylcysteine, give empirically for toxic ingestion / deranged LFTs (CANT-MISS,8); activated charcoal if ingestion <4 h (3); plot timed level on Rumack-Matthew nomogram (3); monitor INR/pH/Cr/lactate/mental status – King's College criteria (4); hepatology/transplant referral for ALF (3). PENALTY: delaying NAC awaiting nomogram in a late/large ingestion (-4); missing transplant criteria (-2).",
-      "idealAnswer": "N-acetylcysteine is the antidote – give without delay for toxic ingestion/rising level or deranged transaminases (do not wait for nomogram if presentation is late or amount large). Activated charcoal if ingestion <4 h. Use the Rumack-Matthew nomogram for timed single ingestions. Monitor INR, pH, creatinine, lactate, and mental status; apply King's College criteria – contact hepatology/transplant for acute liver failure.",
+      "prompt": "What is your management plan, including monitoring and the correct disposition? Is this patient safe to discharge?",
+      "rubric": "Per MGH acute liver failure (APAP): N-acetylcysteine, give empirically and WITHOUT delay for a toxic ingestion / transaminases in the thousands / rising level — do not wait for or rely on the nomogram in a staggered ingestion (CANT-MISS,8); IV dextrose for hypoglycemia + IV fluids for AKI/perfusion (3); telemetry with electrolyte (K/Mg) repletion and avoid further QT-prolonging drugs given the long QT (3); serial monitoring of INR/pH/Cr/lactate/glucose/mental status — King's College criteria (3); early hepatology/transplant-center referral and Poison Control/toxicology (3); correct disposition — ADMIT (ICU if ALF), do NOT discharge; medical psychiatry/risk assessment and one-to-one observation before any future discharge given the intentional component (3); medication reconciliation and counseling to stop all acetaminophen-containing products, isoniazid, and St. John's Wort, with safe-discharge planning only once medically and psychiatrically cleared (2). PENALTY: delaying NAC awaiting a nomogram/level in a late or staggered ingestion (-4); discharging the patient or missing the suicide-risk/psychiatric disposition (-4).",
+      "idealAnswer": "Give N-ACETYLCYSTEINE empirically and immediately — a detectable level with transaminases in the thousands and rising INR mandates NAC now; do NOT wait on or rely on the Rumack-Matthew nomogram, which cannot be applied to a staggered ingestion. Treat the multi-system derangement: IV dextrose for hypoglycemia (glucose 58) and IV fluids for the AKI and perfusion; place on telemetry, replete potassium and magnesium, and avoid additional QT-prolonging agents because of the prolonged QT (hold citalopram). Serially monitor INR, arterial pH, creatinine, lactate, glucose, and mental status and apply the King's College criteria; involve Poison Control/toxicology early and refer to hepatology / a transplant center for acute liver failure. DISPOSITION: she is NOT safe for discharge — admit (ICU if acute liver failure). Because the ingestion had an intentional/self-harm component, obtain an urgent psychiatric/risk assessment with one-to-one observation and a safe environment. Reconcile her medications and counsel her to stop all acetaminophen-containing products (she was double-dosing across two products), and discuss isoniazid and St. John's Wort with her physicians. Safe discharge is planned only once she is medically AND psychiatrically cleared, with close follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "N-acetylcysteine (give empirically)",
+            "item": "N-acetylcysteine (give empirically and without delay)",
             "points": 8
           }
         ],
         "coreActions": [
           {
-            "item": "Monitor INR/pH/Cr/lactate and mental status (King's College)",
-            "points": 4
-          },
-          {
-            "item": "Activated charcoal if ingestion <4 hours",
+            "item": "IV dextrose for hypoglycemia and IV fluids for AKI/perfusion",
             "points": 3
           },
           {
-            "item": "Rumack-Matthew nomogram for timed level",
+            "item": "Telemetry, replete K/Mg, avoid further QT-prolonging drugs (hold citalopram)",
             "points": 3
           },
           {
-            "item": "Hepatology/transplant referral for ALF",
+            "item": "Monitor INR/pH/Cr/lactate/glucose and mental status (King's College)",
             "points": 3
+          },
+          {
+            "item": "Hepatology/transplant referral and Poison Control/toxicology",
+            "points": 3
+          },
+          {
+            "item": "Correct disposition: admit (ICU if ALF), do not discharge; urgent psychiatric/risk assessment with one-to-one observation",
+            "points": 3
+          },
+          {
+            "item": "Medication reconciliation and counseling (stop acetaminophen products; safe-discharge planning only when medically and psychiatrically cleared)",
+            "points": 2
           }
         ],
-        "bonusActions": [
-          {
-            "item": "Psychiatric evaluation if intentional",
-            "points": 1
-          }
-        ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "Delaying NAC",
+            "item": "Delaying NAC awaiting a nomogram/level in a late or staggered ingestion",
+            "points": -4
+          },
+          {
+            "item": "Discharging the patient or missing the suicide-risk/psychiatric disposition",
             "points": -4
           }
         ]
       },
       "requiredActions": [
-        "N-acetylcysteine (give empirically)"
+        "N-acetylcysteine (give empirically and without delay)"
       ],
       "optionalActions": [
-        "Monitor INR/pH/Cr/lactate and mental status (King's College)",
-        "Activated charcoal if ingestion <4 hours",
-        "Rumack-Matthew nomogram for timed level",
-        "Hepatology/transplant referral for ALF",
-        "Psychiatric evaluation if intentional"
+        "IV dextrose for hypoglycemia and IV fluids for AKI/perfusion",
+        "Telemetry, replete K/Mg, avoid further QT-prolonging drugs (hold citalopram)",
+        "Monitor INR/pH/Cr/lactate/glucose and mental status (King's College)",
+        "Hepatology/transplant referral and Poison Control/toxicology",
+        "Correct disposition: admit (ICU if ALF), do not discharge; urgent psychiatric/risk assessment with one-to-one observation",
+        "Medication reconciliation and counseling (stop acetaminophen products; safe-discharge planning only when medically and psychiatrically cleared)"
       ],
       "unsafeActions": [
-        "Delaying NAC"
+        "Delaying NAC awaiting a nomogram/level in a late or staggered ingestion",
+        "Discharging the patient or missing the suicide-risk/psychiatric disposition"
       ],
       "consults": [
-        "Hepatology",
-        "Toxicology / Poison Control"
+        "Hepatology / Transplant center",
+        "Toxicology / Poison Control",
+        "Psychiatry"
       ],
-      "disposition": "Admit; ICU if ALF",
+      "disposition": "Admit; ICU if ALF; one-to-one observation; do not discharge until medically and psychiatrically cleared",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Acute Liver Injury & Failure (Acetaminophen)",
@@ -361,12 +391,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "suicidal_ideation"
+      "suicidal_ideation",
+      "medication_overuse"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "25-year-old woman, nauseated, uncomfortable, somewhat guarded about details. Becomes more forthcoming when asked directly.",
+    "affect": "34-year-old woman, nauseated, pale, tired, guarded about how much medication she has taken and about her mood. Becomes more forthcoming when asked directly and nonjudgmentally.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (mood, intent, alcohol amount, total acetaminophen, herbal/extra meds) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -396,11 +427,30 @@
         "intent",
         "self-harm",
         "were you trying to hurt yourself",
-        "mood"
+        "mood",
+        "depression"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_overuse",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "anything else you take",
+        "herbal",
+        "supplements",
+        "how many pills",
+        "two products",
+        "pain medications",
+        "percocet"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -450,7 +500,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fainting",
+        "lightheaded",
+        "jaundice"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -477,7 +530,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "latent tb",
+        "depression"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -490,7 +545,9 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "isoniazid",
+        "citalopram"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -513,18 +570,8 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: RIGHT upper quadrant tenderness over the liver; no rebound.",
-      "revealedBy": [
-        "assess_rebound_tenderness"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No rebound tenderness."
-    },
-    {
-      "id": "palpate_ruq_finding_2",
-      "finding": "Abdomen: RIGHT upper quadrant tenderness over the liver; no rebound.",
+      "id": "palpate_ruq_finding_1",
+      "finding": "Abdomen: RIGHT upper quadrant tenderness over a mildly enlarged, tender liver edge; no rebound, no rigidity.",
       "revealedBy": [
         "palpate_ruq"
       ],
@@ -533,8 +580,38 @@
       "normalIfNotPresent": "No RUQ tenderness."
     },
     {
-      "id": "assess_asterixis_finding_3",
-      "finding": "Neuro: alert; check for asterixis/encephalopathy (a late, ominous sign) if examined.",
+      "id": "assess_hepatomegaly_finding_2",
+      "finding": "Abdomen: RIGHT upper quadrant tenderness over a mildly enlarged, tender liver edge; no rebound, no rigidity.",
+      "revealedBy": [
+        "assess_hepatomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Liver edge not enlarged."
+    },
+    {
+      "id": "assess_for_jaundice_finding_3",
+      "finding": "Mild scleral icterus on close inspection.",
+      "revealedBy": [
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No scleral icterus."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_4",
+      "finding": "Dry mucous membranes; skin slightly cool (volume depletion / hypoperfusion).",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Moist mucous membranes."
+    },
+    {
+      "id": "assess_asterixis_finding_5",
+      "finding": "Neuro: subtle/equivocal asterixis on examination (early encephalopathy, an ominous sign).",
       "revealedBy": [
         "assess_asterixis"
       ],
@@ -553,14 +630,16 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acetaminophen-induced liver injury",
-    "diagnosticFramework": "25F presents with nausea, vomiting, and right upper quadrant pain; she has been taking large amounts of an over-the-counter pain reliever for several days. The diagnosis is Acetaminophen-induced liver injury, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "34F with depression, chronic low back pain, treated latent TB, and chronic alcohol use presents with 3 days of nausea, vomiting, malaise, and RUQ pain after a staggered, supratherapeutic acetaminophen ingestion across TWO acetaminophen-containing products, with a partly intentional component. The diagnosis is Acetaminophen-induced liver injury / early acute liver failure, reached by eliciting the sensitive medication and mood history, recognizing transaminases in the thousands with rising INR, anion-gap acidosis, AKI, and hypoglycemia as a multi-system toxic picture, and resolving it over the competing causes of transaminases in the thousands (ischemic hepatitis, acute viral hepatitis).",
     "keyHistoryClues": [
-      "how much did you take"
+      "how much did you take",
+      "anything else you take including over the counter or herbal",
+      "mood"
     ],
     "keyPhysicalExamFindings": [
-      "Abdomen: RIGHT upper quadrant tenderness over the liver; no rebound.",
-      "Abdomen: RIGHT upper quadrant tenderness over the liver; no rebound.",
-      "Neuro: alert; check for asterixis/encephalopathy (a late, ominous sign) if examined."
+      "Abdomen: RIGHT upper quadrant tenderness over a mildly enlarged, tender liver edge; no rebound, no rigidity.",
+      "Mild scleral icterus on close inspection.",
+      "Neuro: subtle/equivocal asterixis on examination (early encephalopathy, an ominous sign)."
     ],
     "keyDiagnosticFindings": [
       "Acetaminophen",
@@ -571,24 +650,27 @@
       "Coingestants"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acetaminophen-induced liver injury while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acetaminophen-induced liver injury and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (tachycardia, low-normal BP, pallor).",
+      "Elicit the focused history, including the sensitive medication-overuse, alcohol, and mood/intent items only on direct, nonjudgmental questioning.",
+      "Perform the targeted physical exam (RUQ/hepatomegaly, scleral icterus, asterixis) to reveal key findings.",
+      "Build a differential led by acetaminophen hepatotoxicity while naming the competing causes of transaminases in the thousands (ischemic hepatitis, acute viral hepatitis).",
+      "Order an acetaminophen level (recognizing the nomogram cannot clear a staggered ingestion) plus a multi-system workup, and integrate the EKG (sinus tachycardia with long QT) and CXR.",
+      "Commit to acetaminophen-induced acute liver injury/failure, start NAC empirically, manage the multi-system derangement, and arrange the correct admit/psychiatric disposition rather than discharge."
     ],
     "commonPitfalls": [
-      "Delaying NAC"
+      "Delaying NAC while waiting on the nomogram/level in a staggered ingestion",
+      "Anchoring on acetaminophen without weighing ischemic or viral hepatitis",
+      "Discharging the patient or missing the suicide-risk/psychiatric disposition"
     ],
     "managementPearls": [
-      "N-acetylcysteine (give empirically)"
+      "N-acetylcysteine (give empirically and without delay)",
+      "Correct disposition: admit (ICU if ALF), one-to-one observation, do not discharge"
     ],
     "criticalHistoryItems": [
-      "suicidal_ideation"
+      "suicidal_ideation",
+      "medication_overuse"
     ],
     "criticalExamItems": [
-      "assess_rebound_tenderness",
       "palpate_ruq",
       "assess_asterixis"
     ],
@@ -596,22 +678,23 @@
       "Serum ACETAMINOPHEN level with timing of ingestion"
     ],
     "criticalInterpretationItems": [
-      "Evidence of prior inferior myocardial infarction (Q waves, no acute changes).",
+      "Sinus tachycardia with a prolonged QT interval; no acute ST elevation.",
       "Calcified granuloma (benign, old granulomatous disease)."
     ],
     "criticalManagementItems": [
-      "N-acetylcysteine (give empirically)"
+      "N-acetylcysteine (give empirically and without delay)",
+      "Correct disposition: admit (ICU if ALF), do not discharge; urgent psychiatric/risk assessment with one-to-one observation"
     ],
     "keyImageInterpretationFindings": [
-      "Evidence of prior inferior myocardial infarction (Q waves, no acute changes).",
+      "Sinus tachycardia with a prolonged QT interval; no acute ST elevation.",
       "Calcified granuloma (benign, old granulomatous disease)."
     ],
     "criticalImageInterpretationFindings": [
-      "Evidence of prior inferior myocardial infarction (Q waves, no acute changes).",
+      "Sinus tachycardia with a prolonged QT interval; no acute ST elevation.",
       "Calcified granuloma (benign, old granulomatous disease)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "A prolonged QT in an acidotic, AKI patient on citalopram is the patient's own study — name it, attribute it, and act on torsades risk.",
       "Read every study systematically before committing.",
       "State pertinent negatives, not just positives."
     ]
@@ -628,7 +711,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions about mood and intent",
         "points": 1
       },
       {
@@ -643,8 +726,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific EKG read; standalone CXR interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

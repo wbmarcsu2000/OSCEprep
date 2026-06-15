@@ -1,0 +1,784 @@
+{
+  "id": "syncope-10",
+  "category": "Syncope",
+  "difficulty": "hard",
+  "title": "Collapse during a fast irregular palpitation in a young man treated for 'SVT'",
+  "diagnosis": "Pre-excited atrial fibrillation in Wolff-Parkinson-White syndrome",
+  "chart": {
+    "ageSex": "22M",
+    "cc": "Passed out",
+    "oneLiner": "22M previously told he has 'SVT' and started on verapamil at an urgent care, presents after a brief loss of consciousness that came on during a sudden burst of fast, irregular palpitations while playing pickup basketball; he is now awake but the monitor shows a very fast, broad, irregular rhythm with beat-to-beat changes in QRS width.",
+    "vitals": {
+      "BP": "88/54",
+      "HR": "232 (irregular)",
+      "RR": "22",
+      "Temp": "36.9°C",
+      "SpO2": "96% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My heart just took off — it was pounding all over the place, really fast and uneven — and the next thing I knew I was on the ground and people were standing over me.",
+  "patientFile": "PERSONA: 22-year-old man, college student and recreational athlete, now awake on the monitor but pale, anxious, and shaky. Cooperative and a good historian once the room settles. He keeps asking whether his heart is going to stop.\n\nHPI: He was playing pickup basketball when his heart suddenly 'took off' — a fast, POUNDING, IRREGULAR fluttering that felt completely different from a normal hard workout; it started in an instant, not a gradual build-up. Within seconds he felt lightheaded, his vision grayed out, and he collapsed. Bystanders say he was out for maybe 10–20 seconds, with a few brief jerks of his arms, then woke up quickly and knew where he was right away. NO prolonged confusion afterward, NO tongue biting, NO loss of bladder/bowel control. He felt the racing heartbeat BEFORE he went down (palpitations preceded the faint, not after). The palpitations were FAST and IRREGULAR ('all over the place', 'skipping and stumbling'), not a smooth fast regular pounding.\nPRIOR EPISODES (reveal only when asked about previous palpitations/fainting): Over the past 2 years he has had several spells of a sudden fast REGULAR racing heart that started and stopped abruptly, sometimes stopping when he bore down or held his breath; each lasted a few minutes. He never fully passed out before, only got lightheaded. About 3 weeks ago he went to an urgent care during one of these spells; they called it 'SVT', said his heart rate was very fast, and started him on a pill to slow his heart — VERAPAMIL — to take every day and especially if it happened again. He took an EXTRA verapamil dose today about an hour before the game because he felt a few skipped beats. (This is the dangerous confounder — an AV-nodal blocker in someone who actually has an accessory pathway.)\nPMH: Otherwise healthy. No known structural heart disease, no prior echo. As a teenager a school sports physical EKG was 'a little unusual' and he was told to follow up with a cardiologist but never did. No diabetes, no thyroid disease that he knows of.\nMEDS (reveal only when asked): VERAPAMIL (a calcium-channel blocker) started ~3 weeks ago for 'SVT'; took an extra dose today. A relative also once gave him a 'water pill' and a 'beta blocker' sample but he is not taking those regularly. Occasional caffeine/energy drinks; had two energy drinks before the game. No digoxin currently. ALLERGIES: none.\nSOCIAL: College student. Drinks alcohol on weekends, none today. NO cocaine, amphetamines, or other stimulants — only energy drinks and caffeine. NO anabolic steroids. Non-smoker.\nFAMILY (reveal only when asked): A maternal uncle died suddenly and unexpectedly in his 30s; the family was never told why. No known cardiomyopathy or 'thick heart' diagnosis in the family.\nROS: No chest pain currently, no fever, no recent illness, no leg swelling, no shortness of breath at rest. The only warning before collapse was the racing irregular heartbeat and lightheadedness.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: young man, pale and diaphoretic, anxious, mildly distressed but protecting his airway and conversant.\n- Vitals: BP 88/54, HR 232 and IRREGULAR, RR 22, 36.9°C, SpO2 96% RA. (Hypotensive and very tachycardic but mentating — not yet in arrest.)\n- Cardiac: very rapid, grossly IRREGULAR rhythm; heart sounds vary in intensity beat to beat; no fixed murmur appreciated at this rate; no rub, no gallop. Peripheral pulses are rapid, irregular, and thready.\n- Lungs: clear; no crackles.\n- Neuro: now alert and fully oriented, moving all limbs, no focal deficit, no tongue laceration, normal speech.\n- Volume: mucous membranes moist, no edema; capillary refill ~3 seconds (cool peripheries from low output).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis (do not say 'WPW', 'accessory pathway', 'pre-excitation', or 'delta wave'). Answer only what is asked.\n- Do NOT volunteer the verapamil / the 'SVT' label / the extra dose unless asked about medications or what was done at the urgent care.\n- Do NOT volunteer the prior fast-REGULAR self-terminating palpitations, the abnormal teenage sports EKG, the energy drinks, or the family sudden death unless asked the relevant question.\n- Reveal the irregular/uneven quality of the palpitations only if asked to describe what the racing felt like (fast vs slow, regular vs irregular).\n- Reveal exam findings only when that exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "BMP": "Na 139, K 4.2, Cl 103, HCO3 23, BUN 16, Cr 1.0, glucose 104. Anion gap = 139 − (103 + 23) = 13 (upper-normal). Renal function and electrolytes are normal — there is NO electrolyte cause for the arrhythmia, and the QT is not relevant here.",
+      "Mg_Ca": "Magnesium 2.0 mg/dL and calcium 9.2 mg/dL — both normal, excluding a magnesium/calcium-related rhythm trigger.",
+      "Troponin": "High-sensitivity troponin mildly elevated at 0.06 ng/mL (ref <0.04) and flat on a 2-hour repeat — demand-related (rate-driven) myocardial supply-demand mismatch from the extreme tachycardia, NOT a primary acute coronary occlusion.",
+      "Lactate": "Venous lactate 3.4 mmol/L (ref <2.0) — modest hypoperfusion from the rapid arrhythmia and transient hypotension; expected to clear once the rhythm is controlled.",
+      "TSH": "TSH 1.8 (normal) with normal free T4 — excludes thyrotoxicosis as a driver of new atrial fibrillation in a young patient.",
+      "Tox_screen": "Urine toxicology NEGATIVE for cocaine, amphetamines, and other stimulants — the tachyarrhythmia is not stimulant-induced (only caffeine/energy-drink exposure by history).",
+      "CBC": "WBC 9.8, Hgb 15.1, Plt 252 — no anemia or leukocytosis; does not explain the syncope.",
+      "Echo": "Bedside/formal echocardiogram once rate-controlled: structurally normal heart with normal left-ventricular size and systolic function (EF ~60%), NO left-ventricular hypertrophy and NO outflow-tract obstruction (argues against HCM), normal valves, and no pericardial effusion — consistent with a primary electrical (accessory-pathway) disease rather than structural heart disease."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "integrated": true,
+      "litflStudyN": 37,
+      "source": "https://litfl.com/pre-excitation-syndromes-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Two-part tracing. PRESENTING rhythm strip: a very rapid (~230 bpm), grossly IRREGULAR, broad-complex tachycardia with beat-to-beat variation in QRS WIDTH and morphology (fusion of conducted and pre-excited beats) and NO organized P waves — pre-excited atrial fibrillation conducting antegrade down an accessory pathway. After chemical/electrical conversion to SINUS rhythm: a SHORT PR interval (<120 ms) with a slurred upstroke of the QRS (DELTA wave) and a widened QRS — the Wolff-Parkinson-White pattern (here a type-B morphology with a predominantly negative delta/QRS in V1). No primary ST-elevation MI pattern; the broad complexes are due to pre-excitation, not ischemia or hyperkalemia.",
+      "verify": "From the LITFL pre-excitation / WPW library — use the Wolff-Parkinson-White example tracing that matches: in sinus rhythm a short PR (<120 ms) with a delta wave and wide QRS (type-B WPW, negative delta in V1). The accompanying clinical strip is a fast, irregular, broad-complex tachycardia (pre-excited AF). Self-host with credit to litfl.com; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead EKG of Wolff-Parkinson-White (type B): short PR interval with a delta wave and wide QRS in sinus rhythm, alongside a fast irregular broad-complex pre-excited atrial fibrillation strip",
+      "searchTerms": [
+        "Wolff-Parkinson-White type B ECG delta wave short PR",
+        "pre-excited atrial fibrillation ECG irregular broad complex"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 22-year-old athlete collapses during a sudden fast, irregular palpitation; the monitor shows a very rapid irregular broad-complex rhythm with beat-to-beat changes in QRS width."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Normal cardiac silhouette and clear lung fields; no cardiomegaly, no pulmonary edema, no effusion, no acute process — a normal film is itself a meaningful read in a primary electrical (accessory-pathway) disease.",
+      "verify": "Source a study matching: normal PA chest radiograph with a normal cardiac silhouette and clear lungs. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph with a normal heart size and clear lungs",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "normal chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A young man with an arrhythmic collapse has a chest film to exclude cardiomegaly or structural/pulmonary disease."
+    }
+  },
+  "revealKeys": [
+    "BMP",
+    "Mg_Ca",
+    "Troponin",
+    "Lactate",
+    "TSH",
+    "Tox_screen",
+    "CBC",
+    "Echo",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "BMP",
+    "Echo"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical in this young man with an arrhythmic collapse, list your differential (note your leading diagnosis). As part of your answer, name three drug classes / specific agents that block the AV node and must be AVOIDED if this turns out to be pre-excited atrial fibrillation, and say why.",
+      "rubric": "Cardiac syncope from a primary tachyarrhythmia — specifically pre-excited atrial fibrillation conducting down an accessory pathway (Wolff-Parkinson-White) given the abrupt fast IRREGULAR palpitations, the prior fast-regular self-terminating SVT, and the 'unusual' teenage EKG (leading & CANT-MISS,8). Ventricular tachycardia / polymorphic VT — the other must-not-miss cause of a fast broad-complex tachycardia with collapse; treat as VT until proven otherwise (CANT-MISS,5). Names three AV-NODAL-BLOCKING agents to AVOID in pre-excited AF and the reason — e.g. ADENOSINE, BETA-BLOCKERS, CALCIUM-CHANNEL BLOCKERS (verapamil/diltiazem), DIGOXIN: blocking the AV node preferentially shunts conduction down the accessory pathway, accelerating the ventricular rate and risking degeneration to ventricular fibrillation (core,5). Other SVT with aberrancy / antidromic AVRT (CANT-MISS,2). Recognizes the central fork — pre-excited AF vs VT (both wide, fast, and dangerous) (core,3). Structural cause (HCM) or long-QT/channelopathy given the family sudden death (core,1). PENALTY: calling this a benign 'SVT' and reaching for an AV-nodal blocker / adenosine (-4).",
+      "idealAnswer": "Leading diagnosis: Cardiac syncope from PRE-EXCITED ATRIAL FIBRILLATION in Wolff-Parkinson-White — a fast, broad-complex, grossly IRREGULAR tachycardia with beat-to-beat QRS variation, in a young man whose 'SVT' spells were actually accessory-pathway tachycardias and whose teenage EKG was 'unusual'. The key fork is pre-excited AF vs VENTRICULAR TACHYCARDIA: both are fast and wide and both cause collapse, and an irregular wide-complex tachycardia must be treated as the dangerous diagnosis. Other must-not-miss / considered: antidromic AVRT or another SVT with aberrancy, structural disease (HCM) given the family sudden death, and a channelopathy. THREE AV-nodal-blocking agents to AVOID in pre-excited AF and WHY: (1) ADENOSINE, (2) BETA-BLOCKERS, (3) CALCIUM-CHANNEL BLOCKERS (verapamil/diltiazem) — and also DIGOXIN. Blocking the AV node removes the only 'speed bump' competing with the accessory pathway, so atrial impulses are shunted antegrade down the pathway, the ventricular rate accelerates, and the rhythm can degenerate into ventricular fibrillation and sudden death. His extra verapamil dose is exactly the kind of agent that can precipitate this.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Pre-excited atrial fibrillation / accessory-pathway tachycardia (Wolff-Parkinson-White) as the leading cause",
+            "points": 8
+          },
+          {
+            "item": "Ventricular tachycardia / polymorphic VT — treat irregular wide-complex tachycardia as VT until proven otherwise",
+            "points": 5
+          },
+          {
+            "item": "Other SVT with aberrancy / antidromic AVRT",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Names three AV-nodal-blocking agents to AVOID (adenosine, beta-blockers, calcium-channel blockers, digoxin) and explains they shunt conduction down the accessory pathway and can precipitate VF",
+            "points": 5
+          },
+          {
+            "item": "Recognizes the pre-excited AF vs VT fork (both fast, wide, and dangerous)",
+            "points": 3
+          },
+          {
+            "item": "Structural cause (HCM) or channelopathy/long QT given the family sudden death",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Notes that the prior abrupt-onset/offset regular palpitations were likely orthodromic AVRT through the same accessory pathway",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Calling this a benign 'SVT' and reaching for an AV-nodal blocker / adenosine",
+            "points": -4
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Ventricular tachycardia / polymorphic VT",
+        "Other SVT with aberrancy / antidromic AVRT",
+        "Structural cause (HCM) given the family sudden death"
+      ],
+      "acceptableAlternatives": [
+        "Antidromic atrioventricular re-entrant tachycardia (AVRT)",
+        "Channelopathy / long QT given the family sudden death",
+        "Stimulant-induced tachyarrhythmia (energy drinks/caffeine)"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order, and what is your single most important next action while you order it?",
+      "rubric": "12-lead EKG immediately AND a printed rhythm strip — to define the rate, regularity, and QRS morphology and to capture the post-conversion sinus tracing (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring with defibrillator pads ON the patient given the unstable rhythm (CANT-MISS,4). BMP with magnesium and calcium (2). TSH to exclude thyrotoxicosis-driven AF (1). High-sensitivity troponin and venous lactate to gauge demand ischemia/hypoperfusion (1). Urine tox screen for stimulants; CBC (1). Transthoracic echocardiogram once rate-controlled to exclude structural disease (bonus,1). PENALTY: giving adenosine or an AV-nodal-blocking drug as part of the 'workup' of this wide irregular tachycardia (-3); failing to place the patient on a monitor with pads (-2).",
+      "idealAnswer": "Get a 12-lead EKG immediately plus a printed rhythm strip (and save the post-conversion sinus tracing) — this is the diagnostic study. Most important next action: put him on continuous telemetry with defibrillator pads ON and a crash cart at the bedside, because this is an unstable wide irregular tachycardia. Send a BMP with magnesium and calcium, TSH, high-sensitivity troponin, venous lactate, a urine tox screen for stimulants, and a CBC. Arrange a transthoracic echocardiogram once the rate is controlled to exclude structural disease. Do NOT give adenosine or any AV-nodal-blocking agent while working this up.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "12-lead EKG immediately plus a printed rhythm strip (capture the post-conversion sinus tracing)",
+            "points": 6
+          },
+          {
+            "item": "Continuous telemetry / cardiac monitoring with defibrillator pads on and crash cart at bedside",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "BMP with magnesium and calcium",
+            "points": 2
+          },
+          {
+            "item": "TSH to exclude thyrotoxicosis",
+            "points": 1
+          },
+          {
+            "item": "High-sensitivity troponin and venous lactate",
+            "points": 1
+          },
+          {
+            "item": "Urine tox screen for stimulants and CBC",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Transthoracic echocardiogram once rate-controlled to exclude structural disease",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Giving adenosine or an AV-nodal-blocking drug as part of the workup of a wide irregular tachycardia",
+            "points": -3
+          },
+          {
+            "item": "Failing to place the patient on a monitor with defibrillator pads",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "12-lead EKG immediately plus a printed rhythm strip (capture the post-conversion sinus tracing)",
+        "Continuous telemetry / cardiac monitoring with defibrillator pads on and crash cart at bedside"
+      ],
+      "optionalTests": [
+        "BMP with magnesium and calcium",
+        "TSH to exclude thyrotoxicosis",
+        "High-sensitivity troponin and venous lactate",
+        "Urine tox screen for stimulants and CBC",
+        "Transthoracic echocardiogram once rate-controlled to exclude structural disease"
+      ],
+      "contraindicatedTests": [
+        "Giving adenosine or an AV-nodal-blocking drug as part of the workup of a wide irregular tachycardia",
+        "Failing to place the patient on a monitor with defibrillator pads"
+      ],
+      "orderSensitiveActions": [
+        "12-lead EKG immediately plus a printed rhythm strip (capture the post-conversion sinus tracing)"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's OWN 12-lead EKG (the presenting rhythm and, below it, the tracing after conversion to sinus rhythm). Describe your findings precisely and state what this commits you to — including which drugs you must NOT give.",
+      "rubric": "Presenting rhythm = a very fast (~230 bpm), grossly IRREGULAR, BROAD-complex tachycardia with beat-to-beat variation in QRS width/morphology and no organized P waves = pre-excited atrial fibrillation conducting antegrade down an accessory pathway. Post-conversion sinus tracing = a SHORT PR (<120 ms) with a DELTA wave (slurred QRS upstroke) and wide QRS = Wolff-Parkinson-White (type-B pattern, negative delta in V1). CREDIT: identifies the presenting rhythm as fast, irregular, and broad-complex with varying QRS width (5); names the sinus-tracing triad of short PR + delta wave + wide QRS = WPW / pre-excitation (5); explicitly states this is pre-excited AF and therefore AV-nodal blockers (adenosine, beta-blockers, calcium-channel blockers, digoxin) are CONTRAINDICATED and the treatment is procainamide/ibutilide or cardioversion (3); systematic read (rate/rhythm/QRS width/regularity) (2). PENALTY: calling the broad complexes ischemia or hyperkalemia, or calling it a 'regular SVT' suitable for adenosine (-3).",
+      "keyFindings": [
+        "very fast (~230 bpm), grossly irregular, broad-complex tachycardia with beat-to-beat variation in QRS width and no organized P waves",
+        "short PR interval (<120 ms) with a delta wave and wide QRS in the sinus tracing (Wolff-Parkinson-White)",
+        "type-B WPW morphology with a predominantly negative delta/QRS in V1",
+        "recognizes this as PRE-EXCITED atrial fibrillation",
+        "systematic read (rate, rhythm, regularity, QRS width)"
+      ],
+      "criticalFindings": [
+        "Pre-excited atrial fibrillation: a very rapid (~230 bpm), grossly irregular, broad-complex tachycardia with beat-to-beat varying QRS width and no organized P waves, conducting antegrade down an accessory pathway; the post-conversion sinus tracing shows a short PR (<120 ms) with a delta wave and wide QRS (Wolff-Parkinson-White). AV-nodal blockers (adenosine, beta-blockers, calcium-channel blockers, digoxin) are CONTRAINDICATED."
+      ],
+      "commonMistakes": [
+        "calling the broad complexes acute ischemia or hyperkalemia",
+        "calling it a 'regular SVT' and giving adenosine",
+        "missing the irregularity (which separates pre-excited AF from a regular antidromic AVRT or VT)",
+        "missing the short PR + delta wave on the sinus tracing"
+      ],
+      "idealAnswer": "Presenting rhythm: a very fast (~230 bpm), grossly IRREGULAR, BROAD-complex tachycardia in which the QRS width and morphology vary beat to beat and there are no organized P waves — this is PRE-EXCITED ATRIAL FIBRILLATION, with atrial impulses conducting antegrade down an accessory pathway. The post-conversion sinus tracing confirms it: a SHORT PR interval (<120 ms) with a slurred QRS upstroke (DELTA wave) and a wide QRS — the Wolff-Parkinson-White pattern (type B, with a predominantly negative delta/QRS in V1). The broad complexes are from pre-excitation, NOT ischemia or hyperkalemia. This commits me to AVOIDING all AV-nodal-blocking drugs (adenosine, beta-blockers, calcium-channel blockers like the verapamil he took, and digoxin), because they accelerate accessory-pathway conduction and can precipitate VF; instead the treatment is procainamide or ibutilide, or synchronized/electrical cardioversion if unstable.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Recognizes pre-excited atrial fibrillation (fast, irregular, broad-complex with varying QRS width) and the sinus-tracing WPW triad (short PR + delta wave + wide QRS); AV-nodal blockers contraindicated.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Identifies the presenting rhythm as fast, irregular, and broad-complex with beat-to-beat varying QRS width",
+            "points": 4
+          },
+          {
+            "item": "Names the sinus-tracing triad of short PR + delta wave + wide QRS = Wolff-Parkinson-White",
+            "points": 4
+          },
+          {
+            "item": "States this is pre-excited AF so AV-nodal blockers are contraindicated and treatment is procainamide/ibutilide or cardioversion",
+            "points": 3
+          },
+          {
+            "item": "Systematic read (rate, rhythm, regularity, QRS width)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Calls the broad complexes ischemia/hyperkalemia or a 'regular SVT' suitable for adenosine",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = normal film. CREDIT: identifies a normal/near-normal film with a normal heart size and clear lungs (6); notes the normal cardiac silhouette and absence of pulmonary edema/effusion supports a primary electrical (accessory-pathway) cause rather than structural disease or heart failure (4). PENALTY: inventing cardiomegaly, an effusion, or pulmonary edema on a normal film (-2).",
+      "keyFindings": [
+        "identifies a normal chest film with a normal heart size and clear lungs",
+        "notes the normal cardiac silhouette supports a primary electrical cause over structural disease/failure"
+      ],
+      "criticalFindings": [
+        "Normal cardiac silhouette and clear lungs — no cardiomegaly, edema, or effusion; supports a primary electrical (accessory-pathway) cause."
+      ],
+      "commonMistakes": [
+        "inventing cardiomegaly or pulmonary edema on a normal film",
+        "not checking film projection/quality before reading"
+      ],
+      "idealAnswer": "Normal chest radiograph: normal cardiac silhouette and clear lung fields, no cardiomegaly, no pulmonary edema, and no effusion. A normal film supports a primary electrical (accessory-pathway) cause and argues against structural heart disease or heart failure as the explanation for his collapse.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Normal cardiac silhouette and clear lungs — no cardiomegaly, edema, or effusion; supports a primary electrical (accessory-pathway) cause."
+        ],
+        "coreActions": [
+          "identifies a normal chest film with a normal heart size and clear lungs",
+          "notes the normal cardiac silhouette supports a primary electrical cause over structural disease/failure"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents cardiomegaly/edema/effusion on a normal film",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "His own EKG shows a fast irregular broad-complex tachycardia that converted to a sinus rhythm with a short PR and a delta wave, the echo is structurally normal, the troponin is only mildly up with a flat repeat, TSH and tox are normal, and he had been started on verapamil for 'SVT' and took an extra dose today. Commit to a single diagnosis, say how you settle the pre-excited-AF-vs-VT question, name any residual ambiguity, and explain why this is dangerous.",
+      "rubric": "Pre-excited atrial fibrillation in Wolff-Parkinson-White — committing despite the wide-complex ambiguity (6). Resolves the fork: the rhythm is IRREGULAR with beat-to-beat varying QRS width and converted to a sinus tracing showing a short PR + delta wave (pre-excitation), which is what distinguishes pre-excited AF from a monomorphic VT (regular) and from a plain SVT with fixed aberrancy; the structurally normal echo and the prior abrupt-onset/offset regular SVT (orthodromic AVRT through the same pathway) fit an accessory pathway; the residual ambiguity (a wide irregular tachycardia could be polymorphic VT) is resolved safely by treating BOTH the same way — procainamide/ibutilide or cardioversion, never an AV-nodal blocker (2). Explains the danger — the verapamil/AV-nodal blockade can shunt conduction down the accessory pathway, accelerate the ventricular rate, and degenerate into ventricular fibrillation and sudden death; the family sudden death and abnormal teenage EKG fit a long-standing accessory pathway (2).",
+      "idealAnswer": "Pre-excited atrial fibrillation in Wolff-Parkinson-White syndrome — I commit to this despite the wide-complex ambiguity. The discriminators: the presenting rhythm was grossly IRREGULAR with beat-to-beat varying QRS width (against a regular monomorphic VT and against a fixed-aberrancy SVT), and it converted to a SINUS tracing with a short PR and a delta wave, which is the signature of an accessory pathway; the structurally normal echo and his prior abrupt-onset/offset regular 'SVT' spells (orthodromic AVRT through the same pathway) all fit. Residual ambiguity: a fast irregular wide-complex tachycardia can also be polymorphic VT, so I do NOT need to be certain at the bedside — I resolve it safely because BOTH are managed the same way (procainamide or ibutilide, or electrical cardioversion if unstable) and BOTH forbid AV-nodal blockers. It is dangerous because blocking the AV node — exactly what his verapamil does — removes the competing slow pathway, shunts atrial impulses antegrade down the accessory pathway, accelerates the ventricular rate, and can degenerate into ventricular fibrillation and sudden cardiac death; his 'unusual' teenage EKG and his uncle's unexplained sudden death fit a long-standing pre-excitation syndrome.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Degeneration of pre-excited AF into ventricular fibrillation / sudden cardiac death (worsened by AV-nodal blockade)"
+      ],
+      "acceptableAlternatives": [
+        "Pre-excited atrial fibrillation conducting down an accessory pathway (WPW)",
+        "Polymorphic VT (resolved safely because management is the same — no AV-nodal blockers)"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan — including the acute rhythm treatment, the drugs you must avoid, the definitive treatment, and your disposition / activity counseling and return precautions?",
+      "rubric": "Per MGH tachyarrhythmia / pre-excited AF: because he is HYPOTENSIVE/unstable, immediate SYNCHRONIZED electrical CARDIOVERSION is the treatment of choice (CANT-MISS,7); if a stable pre-excited AF, use an antiarrhythmic that does NOT block the AV node — PROCAINAMIDE or IBUTILIDE — to slow accessory-pathway conduction and convert (CANT-MISS,5); explicitly AVOID all AV-nodal-blocking agents — adenosine, beta-blockers, calcium-channel blockers (stop/hold his verapamil), and digoxin — because they accelerate pathway conduction and can precipitate VF (CANT-MISS,4); place on continuous telemetry with defibrillator pads and a crash cart, IV access, correct magnesium/potassium (2); URGENT cardiology / electrophysiology consult for accessory-pathway ablation as the definitive cure (3); DISPOSITION / safe discharge — admit/observe on a monitor, do NOT send home on an AV-nodal blocker, counsel ACTIVITY RESTRICTION from competitive/strenuous sports until the pathway is risk-stratified and ablated, give clear RETURN PRECAUTIONS for recurrent palpitations/near-syncope, and document a 'do-not-use AV-nodal blockers' alert and arrange EP follow-up and family screening (3); unsynchronized defibrillation if it degenerates to VF (1). PENALTY: giving adenosine / a beta-blocker / a calcium-channel blocker / digoxin (-5); discharging him on verapamil or without EP referral and activity counseling (-3).",
+      "idealAnswer": "He is hypotensive and unstable, so the immediate treatment is SYNCHRONIZED electrical CARDIOVERSION (with sedation, pads already on, crash cart ready); if he degenerates to ventricular fibrillation, defibrillate. For a STABLE pre-excited AF, use an antiarrhythmic that does NOT block the AV node — PROCAINAMIDE (or ibutilide) — to slow accessory-pathway conduction and chemically convert. EXPLICITLY AVOID every AV-nodal-blocking agent: adenosine, beta-blockers, calcium-channel blockers (stop and hold his verapamil), and digoxin — they shunt conduction down the accessory pathway, accelerate the ventricular rate, and can precipitate VF and sudden death. Supportive: IV access, continuous telemetry with defibrillator pads, correct magnesium and potassium. Get an URGENT cardiology/electrophysiology consult for accessory-pathway ABLATION, which is the definitive cure. DISPOSITION / safe discharge: admit to a monitored bed; do NOT discharge him on an AV-nodal blocker. Counsel ACTIVITY RESTRICTION — no competitive or strenuous sports until the pathway has been risk-stratified and ablated — give clear RETURN PRECAUTIONS to come back immediately for recurrent fast/irregular palpitations or near-syncope, document a prominent 'avoid AV-nodal blockers' alert (MedicAlert/medication card), arrange close EP follow-up, and consider family screening given the relative's sudden death.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Unstable/hypotensive → immediate synchronized electrical cardioversion",
+            "points": 7
+          },
+          {
+            "item": "For stable pre-excited AF, use procainamide or ibutilide (antiarrhythmic that does not block the AV node)",
+            "points": 5
+          },
+          {
+            "item": "Explicitly avoid all AV-nodal blockers — adenosine, beta-blockers, calcium-channel blockers (hold verapamil), digoxin — because they accelerate accessory-pathway conduction and can precipitate VF",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Continuous telemetry with defibrillator pads, IV access, correct magnesium/potassium",
+            "points": 2
+          },
+          {
+            "item": "Urgent cardiology / electrophysiology consult for accessory-pathway ablation as the definitive cure",
+            "points": 3
+          },
+          {
+            "item": "Admit/monitor; safe-discharge — do not send home on an AV-nodal blocker, activity restriction from competitive sports until ablated, clear return precautions, EP follow-up and family screening",
+            "points": 3
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Unsynchronized defibrillation if the rhythm degenerates to ventricular fibrillation",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Giving adenosine / a beta-blocker / a calcium-channel blocker / digoxin",
+            "points": -5
+          },
+          {
+            "item": "Discharging on verapamil or without EP referral and activity counseling",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Unstable/hypotensive → immediate synchronized electrical cardioversion",
+        "For stable pre-excited AF, use procainamide or ibutilide (antiarrhythmic that does not block the AV node)",
+        "Explicitly avoid all AV-nodal blockers — adenosine, beta-blockers, calcium-channel blockers (hold verapamil), digoxin"
+      ],
+      "optionalActions": [
+        "Continuous telemetry with defibrillator pads, IV access, correct magnesium/potassium",
+        "Urgent cardiology / electrophysiology consult for accessory-pathway ablation as the definitive cure",
+        "Admit/monitor; safe-discharge — do not send home on an AV-nodal blocker, activity restriction from competitive sports until ablated, clear return precautions, EP follow-up and family screening",
+        "Unsynchronized defibrillation if the rhythm degenerates to ventricular fibrillation"
+      ],
+      "unsafeActions": [
+        "Giving adenosine / a beta-blocker / a calcium-channel blocker / digoxin",
+        "Discharging on verapamil or without EP referral and activity counseling"
+      ],
+      "consults": [
+        "Cardiology / Electrophysiology"
+      ],
+      "disposition": "Admit; monitored bed; urgent EP for ablation",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Tachyarrhythmias (Pre-excited AF / Wolff-Parkinson-White)",
+        "page": 39
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "anxious",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "family_sudden_death",
+      "recreational_drugs",
+      "energy_drinks"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "22-year-old man, pale and shaky after a frightening collapse, anxious, fears his heart will stop. Good historian once calmed.",
+    "disclosureRules": [
+      "Do not reveal the verapamil / the 'SVT' label / the extra dose, the prior regular palpitations, the abnormal teenage EKG, the energy drinks, or the family sudden death unless directly asked",
+      "Do not mention or hint at the diagnosis (no 'WPW', 'accessory pathway', 'pre-excitation', or 'delta wave')",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "medications_and_urgent_care",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "any new medicines",
+        "started any new drugs",
+        "verapamil",
+        "what did the urgent care do",
+        "were you given anything for your heart",
+        "did you take anything today"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "palpitation_quality",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the palpitations",
+        "what did the racing feel like",
+        "was it regular or irregular",
+        "fast or slow",
+        "even or uneven",
+        "skipping",
+        "heart racing quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "previous palpitations",
+        "fainted before",
+        "racing heart before",
+        "did it start and stop suddenly",
+        "vagal maneuvers"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "trigger_and_prodrome",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what were you doing",
+        "any warning",
+        "trigger",
+        "before you passed out",
+        "exertion",
+        "during exercise",
+        "prodrome"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "seizure_features",
+      "category": "hpi",
+      "triggerConcepts": [
+        "did you shake",
+        "tongue biting",
+        "incontinence",
+        "confused afterward",
+        "post-event confusion",
+        "wet yourself"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_sudden_death",
+      "category": "family_history",
+      "triggerConcepts": [
+        "family history",
+        "anyone in your family",
+        "sudden death in the family",
+        "relatives die young",
+        "family heart problems",
+        "did anyone die unexpectedly"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "prior_ekg",
+      "category": "pmh",
+      "triggerConcepts": [
+        "ever had an ekg",
+        "heart tracing",
+        "sports physical",
+        "abnormal ekg",
+        "told to see a cardiologist",
+        "heart check"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "stimulants_energy_drinks",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "caffeine",
+        "energy drinks",
+        "recreational drugs",
+        "cocaine",
+        "stimulants",
+        "street drugs",
+        "supplements",
+        "pre-workout"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "chest_pain_dyspnea",
+      "category": "ros",
+      "triggerConcepts": [
+        "chest pain",
+        "shortness of breath",
+        "breathing trouble"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_mitral_area_finding_1",
+      "finding": "Cardiac: very rapid, grossly IRREGULAR rhythm; heart sounds vary in intensity beat to beat; no fixed murmur at this rate; no rub, no gallop.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Heart sounds difficult to assess; rate very rapid."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_2",
+      "finding": "Peripheral pulses are rapid, irregular, and thready — consistent with a fast irregular tachyarrhythmia with low output.",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 3,
+      "normalIfNotPresent": "Peripheral pulses palpable; rate rapid."
+    },
+    {
+      "id": "assess_capillary_refill_finding_3",
+      "finding": "Capillary refill ~3 seconds with cool peripheries — reduced perfusion from the low-output tachyarrhythmia.",
+      "revealedBy": [
+        "assess_capillary_refill"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Capillary refill brisk (<2 seconds)."
+    },
+    {
+      "id": "assess_mental_status_finding_4",
+      "finding": "Neuro: now alert and fully oriented, moving all limbs, no focal deficit, no tongue laceration, normal speech.",
+      "revealedBy": [
+        "assess_mental_status",
+        "assess_motor_strength"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and fully oriented; no focal deficit."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_5",
+      "finding": "Lungs clear to auscultation; no crackles, no wheeze — no pulmonary edema despite the tachyarrhythmia.",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: young man, pale and diaphoretic, anxious, mildly distressed but conversant and protecting his airway.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Well-appearing, no acute distress."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Pre-excited atrial fibrillation in Wolff-Parkinson-White syndrome",
+    "diagnosticFramework": "22M previously labeled with 'SVT' and started on verapamil (an AV-nodal-blocking calcium-channel blocker), with a vaguely 'unusual' teenage sports-physical EKG and a maternal uncle's unexplained sudden death, presents after an exertional collapse heralded by abrupt fast, IRREGULAR palpitations. He is hypotensive and very tachycardic on a fast, broad, irregular monitor rhythm. The diagnosis is Pre-excited atrial fibrillation in Wolff-Parkinson-White: atrial fibrillation conducting antegrade down an accessory pathway, with his own EKG showing a fast irregular broad-complex tachycardia that converts to a sinus rhythm with a short PR and delta wave. It is reached by eliciting the focused history (the irregular palpitation quality, the prior regular self-terminating SVT, the verapamil and extra dose, the abnormal teenage EKG, the family sudden death), interpreting his OWN pre-excitation EKG, integrating multi-system labs (demand troponin, lactate, normal TSH/electrolytes/echo), and excluding the must-not-miss alternatives (VT, structural disease). The load-bearing teaching point is that AV-nodal blockers (adenosine, beta-blockers, calcium-channel blockers, digoxin) are dangerous in pre-excited AF and can precipitate VF.",
+    "keyHistoryClues": [
+      "Abrupt-onset fast, IRREGULAR ('all over the place') palpitations preceding the collapse during exertion.",
+      "Prior spells of a fast REGULAR racing heart that started/stopped abruptly and broke with vagal maneuvers (likely orthodromic AVRT).",
+      "Recently labeled 'SVT' and started on VERAPAMIL — and took an EXTRA dose today (a dangerous AV-nodal blocker in an accessory-pathway patient).",
+      "A teenage sports-physical EKG was 'a little unusual' with a never-completed cardiology referral.",
+      "A maternal uncle died suddenly and unexpectedly in his 30s.",
+      "Brief limb jerks with rapid recovery, no post-ictal confusion, no tongue biting or incontinence (convulsive syncope, not a primary seizure)."
+    ],
+    "keyPhysicalExamFindings": [
+      "Cardiac: very rapid, grossly IRREGULAR rhythm; heart sounds vary in intensity beat to beat; no fixed murmur at this rate.",
+      "Peripheral pulses rapid, irregular, and thready — low-output tachyarrhythmia.",
+      "Capillary refill ~3 seconds with cool peripheries — reduced perfusion.",
+      "Neuro: now alert and fully oriented, no focal deficit, no tongue laceration.",
+      "Lungs clear — no pulmonary edema.",
+      "General: pale, diaphoretic, anxious but conversant and protecting his airway."
+    ],
+    "keyDiagnosticFindings": [
+      "BMP",
+      "Mg_Ca",
+      "Troponin",
+      "Lactate",
+      "TSH",
+      "Tox_screen",
+      "CBC",
+      "Echo"
+    ],
+    "reasoningPathway": [
+      "Frame the unstable presentation from the chart and vitals (hypotensive, very fast irregular rhythm).",
+      "Elicit the focused history — the irregular palpitation quality, the prior regular self-terminating SVT, the verapamil and extra dose, the abnormal teenage EKG, and the family sudden death — only on direct questioning.",
+      "Perform the targeted exam confirming a fast irregular low-output rhythm and excluding edema/focal deficit.",
+      "Build a differential led by pre-excited atrial fibrillation (WPW) against the must-not-miss VT, and name three AV-nodal-blocking agents to AVOID and why.",
+      "Order a focused workup (EKG + rhythm strip first, monitor with pads) and interpret his OWN EKG: fast irregular broad-complex pre-excited AF that converts to a sinus tracing with a short PR + delta wave; integrate the demand troponin, lactate, normal TSH/electrolytes, and structurally normal echo.",
+      "Commit to pre-excited AF in WPW, resolve the pre-excited-AF-vs-VT question safely (same treatment, no AV-nodal blockers), and manage with synchronized cardioversion (unstable) or procainamide/ibutilide (stable), avoidance of AV-nodal blockers, urgent EP referral for ablation, and disposition with activity restriction and return precautions."
+    ],
+    "commonPitfalls": [
+      "Calling this a benign 'SVT' and giving adenosine or another AV-nodal blocker",
+      "Continuing or restarting verapamil / a beta-blocker / digoxin in pre-excited AF",
+      "Mislabeling the broad complexes as ischemia or hyperkalemia",
+      "Missing the irregularity that separates pre-excited AF from a regular antidromic AVRT or monomorphic VT",
+      "Discharging on an AV-nodal blocker or without urgent EP referral and activity counseling"
+    ],
+    "managementPearls": [
+      "Unstable pre-excited AF → immediate synchronized electrical cardioversion",
+      "Stable pre-excited AF → procainamide or ibutilide (do NOT block the AV node)",
+      "Avoid ALL AV-nodal blockers — adenosine, beta-blockers, calcium-channel blockers, digoxin — they can precipitate VF",
+      "Urgent EP referral for accessory-pathway ablation; activity restriction and clear return precautions until ablated"
+    ],
+    "criticalHistoryItems": [
+      "medications_and_urgent_care",
+      "palpitation_quality",
+      "prior_episodes"
+    ],
+    "criticalExamItems": [
+      "auscultate_mitral_area"
+    ],
+    "criticalWorkupItems": [
+      "12-lead EKG immediately plus a printed rhythm strip (capture the post-conversion sinus tracing)",
+      "Continuous telemetry / cardiac monitoring with defibrillator pads on and crash cart at bedside"
+    ],
+    "criticalInterpretationItems": [
+      "Pre-excited atrial fibrillation: a very rapid (~230 bpm), grossly irregular, broad-complex tachycardia with beat-to-beat varying QRS width and no organized P waves; the post-conversion sinus tracing shows a short PR (<120 ms) with a delta wave and wide QRS (Wolff-Parkinson-White). AV-nodal blockers are contraindicated.",
+      "Normal cardiac silhouette and clear lungs — no cardiomegaly, edema, or effusion; supports a primary electrical (accessory-pathway) cause."
+    ],
+    "criticalManagementItems": [
+      "Unstable/hypotensive → immediate synchronized electrical cardioversion",
+      "Explicitly avoid all AV-nodal blockers — adenosine, beta-blockers, calcium-channel blockers (hold verapamil), digoxin"
+    ],
+    "keyImageInterpretationFindings": [
+      "Pre-excited atrial fibrillation: a very rapid (~230 bpm), grossly irregular, broad-complex tachycardia with beat-to-beat varying QRS width and no organized P waves; the post-conversion sinus tracing shows a short PR (<120 ms) with a delta wave and wide QRS (Wolff-Parkinson-White). AV-nodal blockers are contraindicated.",
+      "Normal cardiac silhouette and clear lungs — no cardiomegaly, edema, or effusion; supports a primary electrical (accessory-pathway) cause."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Pre-excited atrial fibrillation: a very rapid (~230 bpm), grossly irregular, broad-complex tachycardia with beat-to-beat varying QRS width and no organized P waves; the post-conversion sinus tracing shows a short PR (<120 ms) with a delta wave and wide QRS (Wolff-Parkinson-White). AV-nodal blockers are contraindicated.",
+      "Normal cardiac silhouette and clear lungs — no cardiomegaly, edema, or effusion; supports a primary electrical (accessory-pathway) cause."
+    ],
+    "imageInterpretationPearls": [
+      "An IRREGULAR, fast, broad-complex tachycardia with beat-to-beat varying QRS width is pre-excited atrial fibrillation until proven otherwise — and AV-nodal blockers are contraindicated.",
+      "On the sinus tracing, the triad of a short PR + delta wave + wide QRS confirms Wolff-Parkinson-White; do not mistake the broad complexes for ischemia or hyperkalemia.",
+      "A normal chest film and structurally normal echo point to a primary electrical (accessory-pathway) cause rather than structural disease."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy and reassures the frightened patient",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions (substance use, family sudden death)",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

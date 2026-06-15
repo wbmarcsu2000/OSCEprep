@@ -2,15 +2,15 @@
   "id": "liver-06",
   "category": "Abnormal Liver Enzymes",
   "difficulty": "hard",
-  "title": "A young adult with worsening tremor and abnormal liver tests",
+  "title": "A young adult with worsening tremor, hepatitis, and a metabolic puzzle",
   "diagnosis": "Wilson disease",
   "chart": {
     "ageSex": "22M",
     "cc": "Hand tremor and fatigue",
-    "oneLiner": "22M presents with several months of a worsening hand tremor, slurred speech, mood changes, and incidentally noted abnormal liver enzymes.",
+    "oneLiner": "22M with recently diagnosed latent TB on isoniazid and a new SSRI presents with several months of a worsening hand tremor, slurred speech, and mood changes, plus incidentally noted abnormal liver enzymes — a picture that could be drug-induced or autoimmune hepatitis.",
     "vitals": {
-      "BP": "118/74",
-      "HR": "78",
+      "BP": "116/72",
+      "HR": "84",
       "RR": "14",
       "Temp": "36.9°C",
       "SpO2": "99% RA"
@@ -18,58 +18,64 @@
     "timer": 180
   },
   "opening": "My hands have been shaking for months, my speech is getting slurred, and a clinic told me my liver tests were off.",
-  "patientFile": "PERSONA: 22-year-old man, anxious, with a coarse resting/postural tremor and mildly slurred speech. Cooperative but somewhat flat in affect. Good historian once asked.\n\nHPI: Over 4-6 months, a progressively worsening tremor of both hands (worse with posture and action), slurring of speech (dysarthria), occasional drooling, clumsiness/handwriting deterioration, and difficulty with fine tasks. Family and a college counselor noted personality and mood changes — irritability, declining grades, and a brief depressive episode. He was started on an SSRI a few weeks ago. A recent walk-in clinic checked labs for fatigue and told him his \"liver numbers were a bit high\" (only mention the abnormal liver tests, mood changes, and SSRI if asked). NO jaundice that he has noticed, NO confusion or altered behavior at home, NO black/bloody stools, NO abdominal swelling.\nPMH: an episode of \"hepatitis\" or transient jaundice in his late teens that resolved without clear diagnosis (only if asked about prior liver problems). No known chronic disease.\nFAMILY HISTORY: a younger sibling has unexplained \"liver trouble\"; a maternal uncle reportedly had a movement disorder and \"died of liver failure\" young; parents are second cousins (consanguinity) — only reveal on direct family-history questioning.\nMEDS: a recently started SSRI (sertraline) for mood (if asked). No herbal/over-the-counter hepatotoxins, minimal acetaminophen.\nSOCIAL: occasional/social alcohol only; NO IV drug use; no tattoos; no high-risk sexual exposures; college student.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, anxious; coarse resting and postural tremor of the hands; mild dysarthria.\n- Vitals: BP 118/74, HR 78, RR 14, 36.9°C, SpO2 99% RA.\n- Eyes: golden-brown ring at the corneal margin (Kayser-Fleischer ring) on close inspection; sclera not overtly icteric.\n- Neuro: tremor (wing-beating with arms outstretched), mild dystonia/rigidity and bradykinesia, dysarthria; gait slightly unsteady; cognition grossly intact, NO asterixis.\n- Abdomen: mild hepatomegaly; spleen tip palpable (mild splenomegaly); no ascites, no marked tenderness; no overt jaundice.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history (sibling/uncle/consanguinity), the prior \"hepatitis\"/jaundice episode, the mood changes, or the new SSRI unless asked about family history, prior liver problems, mood/psychiatric symptoms, or medications.\n- The Kayser-Fleischer ring, hepatomegaly, splenomegaly, and neuro signs are revealed only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 22-year-old man, anxious, with a coarse resting/postural tremor and mildly slurred speech. Cooperative but somewhat flat in affect. Good historian once asked.\n\nHPI: Over 4-6 months, a progressively worsening tremor of both hands (worse with posture and action), slurring of speech (dysarthria), occasional drooling, clumsiness/handwriting deterioration, and difficulty with fine tasks. Family and a college counselor noted personality and mood changes — irritability, declining grades, and a brief depressive episode. He was started on an SSRI (sertraline) a few weeks ago. He was also recently diagnosed with latent TB on a screening test before a volunteer trip and started isoniazid (INH) about two months ago. A recent walk-in clinic checked labs for fatigue and told him his \"liver numbers were a bit high\" and that he should \"maybe stop the TB pill,\" but no one explained why (only mention the abnormal liver tests, the TB pill, the mood changes, and the SSRI if asked). He has noticed his urine looks darker and he is unusually thirsty and urinating more, with some leg-muscle cramps (only if asked about urinary symptoms or cramps). NO clear jaundice that he has noticed, NO confusion or altered behavior at home, NO black/bloody stools, NO abdominal swelling.\nPMH: an episode of \"hepatitis\" or transient jaundice in his late teens that resolved without clear diagnosis (only if asked about prior liver problems). Recently diagnosed LATENT TB (positive screening test, normal chest film, no active TB symptoms) now on isoniazid. No known chronic disease.\nFAMILY HISTORY: a younger sibling has unexplained \"liver trouble\"; a maternal uncle reportedly had a movement disorder and \"died of liver failure\" young; parents are second cousins (consanguinity) — only reveal on direct family-history questioning.\nMEDS: isoniazid (INH) with pyridoxine for latent TB, started ~2 months ago; a recently started SSRI (sertraline) for mood; occasional ibuprofen for headaches; an over-the-counter \"liver-support\" herbal supplement a roommate gave him (reveal each only if asked about medications, new medicines, supplements, or herbals). Minimal acetaminophen.\nSOCIAL: occasional/social alcohol only; NO IV drug use; no tattoos; no high-risk sexual exposures; college student.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, anxious; coarse resting and postural tremor of the hands; mild dysarthria.\n- Vitals: BP 116/72, HR 84, RR 14, 36.9°C, SpO2 99% RA.\n- Eyes: golden-brown ring at the corneal margin (Kayser-Fleischer ring) on close inspection; sclera not overtly icteric.\n- Neuro: tremor (wing-beating with arms outstretched), mild dystonia/rigidity and bradykinesia, dysarthria; gait slightly unsteady; cognition grossly intact, NO asterixis.\n- Abdomen: mild hepatomegaly; spleen tip palpable (mild splenomegaly); no ascites, no marked tenderness; no overt jaundice.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history (sibling/uncle/consanguinity), the prior \"hepatitis\"/jaundice episode, the mood changes, the SSRI, the isoniazid/TB treatment, the herbal supplement, or the polyuria/thirst/dark-urine/cramps unless asked about the relevant area (family history, prior liver problems, mood/psychiatric symptoms, medications/supplements, or urinary/muscle symptoms).\n- The Kayser-Fleischer ring, hepatomegaly, splenomegaly, and neuro signs are revealed only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "LFTs": "AST 95, ALT 70 (modest hepatocellular elevation; AST slightly > ALT), Alk Phos LOW-normal (a disproportionately low ALP relative to bilirubin is a classic clue to Wilson).",
-      "Ceruloplasmin": "Serum ceruloplasmin LOW (<14 mg/dL) — supports Wilson disease.",
-      "Copper": "LOW serum total copper but HIGH free (non-ceruloplasmin-bound) copper; 24-hour urinary copper markedly ELEVATED (>100 mcg/24h).",
+      "LFTs": "AST 95, ALT 70 (modest hepatocellular elevation; AST slightly > ALT), Alk Phos LOW at 30, total bilirubin HIGH at 8.0 (indirect-predominant, from the brisk hemolysis) — the ALP-to-total-bilirubin ratio = 30 / 8.0 = 3.75 (<4), a classic clue to Wilson disease that argues against isoniazid/autoimmune hepatitis.",
+      "Autoimmune": "ANA weakly positive 1:80, anti-smooth-muscle antibody NEGATIVE, IgG normal — a low-titer ANA can occur in Wilson disease and does NOT meet criteria for autoimmune hepatitis; viral hepatitis panel (A/B/C) NEGATIVE.",
+      "Ceruloplasmin": "Serum ceruloplasmin LOW at 11 mg/dL (normal 20-35) — supports Wilson disease.",
+      "Copper": "LOW serum total copper but HIGH free (non-ceruloplasmin-bound) copper; 24-hour urinary copper markedly ELEVATED at 240 mcg/24h (normal <40) — diagnostic of Wilson disease.",
       "SlitLamp": "Slit-lamp exam confirms bilateral Kayser-Fleischer rings (copper in Descemet membrane).",
-      "CBCCoombs": "Mild Coombs-NEGATIVE hemolytic anemia with low haptoglobin (non-immune hemolysis from copper); platelets mildly low (hypersplenism).",
+      "CBCCoombs": "Mild Coombs-NEGATIVE hemolytic anemia (Hgb 10.4) with low haptoglobin and elevated indirect bilirubin (non-immune hemolysis from copper release); platelets mildly low at 118 (hypersplenism); reticulocytes elevated.",
+      "BMPUrine": "Na 138, Cl 112, HCO3 16, K 2.9 — anion gap = 138 − (112 + 16) = 10 (NORMAL gap), i.e. a NON-anion-gap (hyperchloremic) metabolic acidosis with HYPOKALEMIA. Serum phosphate LOW (1.8) and uric acid LOW (1.9); creatinine normal. Urinalysis: glucosuria with a NORMAL serum glucose, low-grade proteinuria, and inappropriately alkaline urine pH 6.5 — a proximal (Fanconi-type) renal tubular acidosis from copper-induced tubular injury.",
       "MRIBrain": "MRI brain: T2 hyperintensity of the basal ganglia (putamen) with the 'face of the giant panda' sign in the midbrain."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
+      "litflStudyN": 6,
+      "integrated": true,
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus rhythm with a normal tracing; no acute ischemic changes (a near-normal screening EKG in a young patient).",
-      "verify": "Source a study matching: Sinus rhythm with a normal tracing; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm with prominent U waves, flattened T waves, and a long QU/apparent QT — the patient's OWN tracing, reflecting the hypokalemia (K 2.9) and electrolyte wasting from his Fanconi-type renal tubular acidosis. No acute ischemic ST elevation.",
+      "verify": "Source a tracing matching: sinus rhythm with prominent U waves, T-wave flattening, and a long QU interval (hypokalemia — LITFL hypokalaemia ECG library). Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
-      "assetNeeded": true,
-      "imageDescription": "12-lead showing normal sinus rhythm",
+      "assetNeeded": false,
+      "imageDescription": "12-lead EKG showing prominent U waves, T-wave flattening, and a prolonged QU interval consistent with hypokalemia",
       "searchTerms": [
-        "normal sinus rhythm ECG",
-        "normal 12 lead ECG young adult"
+        "hypokalemia ECG U waves",
+        "prominent U wave T flattening long QU hypokalemia EKG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 26-year-old man undergoing routine screening has a completely normal sinus tracing with no acute changes."
+      "clinicalVignette": "A 22-year-old man with a hepatic-neurologic illness is found to have a low potassium, low phosphate, and a non-anion-gap acidosis from renal tubular wasting; his EKG shows U waves and a long QU interval."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear lung fields with a normal cardiomediastinal silhouette; no acute cardiopulmonary process (a normal screening film).",
-      "verify": "Source a study matching: Clear lung fields with a normal cardiomediastinal silhouette; no acute cardiopulmonary process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lung fields with a normal cardiomediastinal silhouette; no infiltrate, cavitation, or hilar adenopathy — specifically no radiographic evidence of active tuberculosis to reconcile with his latent-TB diagnosis.",
+      "verify": "Source a study matching: clear lung fields with a normal cardiomediastinal silhouette and no signs of active TB. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "normal PA chest radiograph",
+      "imageDescription": "normal PA chest radiograph with no signs of active tuberculosis",
       "searchTerms": [
         "normal chest x-ray PA",
-        "normal chest radiograph young adult"
+        "normal chest radiograph no active TB young adult"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 25-year-old woman has a screening chest film showing clear lungs and a normal cardiomediastinal silhouette."
+      "clinicalVignette": "A young adult on isoniazid for latent TB has a screening chest film showing clear lungs and no evidence of active disease."
     }
   },
   "revealKeys": [
     "LFTs",
+    "Autoimmune",
     "Ceruloplasmin",
     "Copper",
     "SlitLamp",
     "CBCCoombs",
+    "BMPUrine",
     "MRIBrain",
     "ekg",
     "cxr"
@@ -84,33 +90,37 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for a young adult with a movement disorder plus abnormal liver enzymes (note your leading diagnosis).",
-      "rubric": "Wilson disease (leading,7). Acute liver failure / fulminant Wilsonian crisis with hemolysis (CANT-MISS — must exclude in any young patient with liver disease + Coombs-negative hemolysis,5). Autoimmune hepatitis (core,3). Viral/drug-induced hepatitis (core,2). Primary movement disorder (juvenile Parkinsonism, drug-induced tremor, essential tremor) (core,2). Names the combination of a movement disorder/neuropsychiatric change WITH liver disease in a young person and the imperative to check ceruloplasmin/urinary copper and a slit-lamp exam (core,4).",
-      "idealAnswer": "Leading diagnosis: Wilson disease. Must-not-miss diagnoses to exclude: Acute (fulminant) liver failure / Wilsonian crisis with Coombs-negative hemolysis. Also reasonable: Autoimmune hepatitis; Viral/drug-induced hepatitis; Primary movement disorder (juvenile Parkinsonism, drug-induced tremor, essential tremor).",
+      "prompt": "Based on your history and physical, list your differential for a young adult with a movement disorder plus abnormal liver enzymes — note your leading diagnosis, and name three distinct etiologies/mechanisms of hepatocellular injury that you must reconcile in someone on isoniazid and a new SSRI.",
+      "rubric": "Wilson disease (leading,6). Acute liver failure / fulminant Wilsonian crisis with Coombs-negative hemolysis — must exclude in any young patient with liver disease + non-immune hemolysis (CANT-MISS,4). NAMES THREE DISTINCT MECHANISMS/ETIOLOGIES of the hepatocellular injury to reconcile: (a) copper overload (Wilson), (b) drug-induced liver injury from isoniazid (and/or the herbal supplement / SSRI), (c) autoimmune hepatitis, with viral hepatitis as a reasonable fourth (core,4). Autoimmune hepatitis as a genuine competitor — young patient, hepatocellular pattern, possible low-titer ANA (core,3). Drug-induced liver injury (isoniazid/herbal/SSRI) as a genuine competitor (core,3). Primary movement disorder (juvenile Parkinsonism, drug-induced tremor, essential tremor) (core,1). Names the imperative to check ceruloplasmin/urinary copper and a slit-lamp exam in a young person with liver disease PLUS a movement/neuropsychiatric change (core,4). PENALTY: attributing everything to isoniazid and simply stopping it without screening for Wilson (-3).",
+      "idealAnswer": "Leading diagnosis: Wilson disease. Must-not-miss: acute (fulminant) liver failure / Wilsonian crisis with Coombs-negative hemolysis. Three distinct mechanisms/etiologies of the hepatocellular injury to reconcile: (1) copper overload from Wilson disease; (2) drug-induced liver injury — isoniazid is a classic hepatotoxin, and the herbal 'liver-support' supplement and SSRI can also injure the liver; (3) autoimmune hepatitis (a real competitor in a young patient with a hepatocellular pattern, sometimes with a low-titer ANA). Viral hepatitis is a reasonable fourth. A primary movement disorder (juvenile Parkinsonism, drug-induced or essential tremor) is on the list but does not explain the liver disease. The combination of a movement/neuropsychiatric change WITH liver disease in a young person mandates checking ceruloplasmin, 24-hour urinary copper, and a slit-lamp exam BEFORE blaming isoniazid alone.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Wilson disease",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Acute liver failure / Wilsonian crisis with hemolysis",
-            "points": 5
+            "item": "Acute liver failure / Wilsonian crisis with Coombs-negative hemolysis",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Autoimmune hepatitis",
+            "item": "Names three distinct mechanisms of hepatocellular injury (copper/Wilson, drug-induced isoniazid/herbal/SSRI, autoimmune; viral reasonable)",
+            "points": 4
+          },
+          {
+            "item": "Autoimmune hepatitis as a genuine competitor",
             "points": 3
           },
           {
-            "item": "Viral/drug-induced hepatitis",
-            "points": 2
+            "item": "Drug-induced liver injury (isoniazid / herbal / SSRI) as a genuine competitor",
+            "points": 3
           },
           {
             "item": "Primary movement disorder (juvenile Parkinsonism/essential/drug-induced tremor)",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Names the movement-disorder-plus-liver-disease combination in a young person and the imperative to check ceruloplasmin/urinary copper and slit-lamp",
@@ -118,14 +128,20 @@
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Attributing everything to isoniazid and stopping it without screening for Wilson in a young patient with liver disease",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "Acute liver failure / Wilsonian crisis with hemolysis"
       ],
       "acceptableAlternatives": [
         "Autoimmune hepatitis",
-        "Viral/drug-induced hepatitis",
+        "Drug-induced liver injury (isoniazid / herbal supplement / SSRI)",
+        "Viral hepatitis",
         "Primary movement disorder (juvenile Parkinsonism, essential tremor, drug-induced tremor)"
       ]
     },
@@ -135,8 +151,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Serum ceruloplasmin (CANT-MISS,3). 24-hour urinary copper + serum free copper (CANT-MISS,4). Slit-lamp exam for Kayser-Fleischer rings (ophthalmology) (3). LFTs with fractionated bilirubin and ALP:bilirubin ratio (2). CBC/haptoglobin/Coombs for hemolysis (2). MRI brain for neuro involvement (1). PENALTY: anchoring on a primary psychiatric/movement disorder and starting an SSRI or dopaminergic agent without screening for Wilson in a young patient with liver disease (-2).",
-      "idealAnswer": "Order: EKG; CXR; LFTs; Ceruloplasmin; Copper; Slit lamp; CBC coombs; MRI brain.",
+      "rubric": "Serum ceruloplasmin (CANT-MISS,3). 24-hour urinary copper + serum free copper (CANT-MISS,4). Slit-lamp exam for Kayser-Fleischer rings (ophthalmology) (3). LFTs with fractionated bilirubin and ALP:bilirubin ratio (1). Autoimmune/viral panel to evaluate the competing hepatitis (ANA, anti-smooth-muscle Ab, IgG, hepatitis A/B/C) (1). CBC/haptoglobin/Coombs/retic for hemolysis (1). BMP + urinalysis to characterize the metabolic acidosis / renal tubular involvement (1). MRI brain for neuro involvement (1). EKG and CXR (1). PENALTY: anchoring on a primary psychiatric/movement disorder or simply stopping isoniazid and starting an SSRI/dopaminergic agent without screening for Wilson (-2).",
+      "idealAnswer": "Order: Ceruloplasmin; 24-hour urinary copper with serum free copper; Slit-lamp exam; LFTs with fractionated bilirubin and ALP:bilirubin ratio; an autoimmune/viral hepatitis panel (ANA, anti-smooth-muscle Ab, IgG, hepatitis A/B/C) to evaluate the competing hepatitis; CBC with haptoglobin, Coombs, and reticulocytes for hemolysis; a BMP and urinalysis to characterize the metabolic acidosis and possible renal tubular injury; MRI brain; and an EKG and CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,30 +171,35 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
+            "item": "Autoimmune/viral hepatitis panel (ANA, anti-smooth-muscle Ab, IgG, hep A/B/C)",
+            "points": 1
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "LFTs with fractionated bilirubin and ALP:bilirubin ratio",
+            "points": 1
           },
           {
-            "item": "LFTs",
-            "points": 2
+            "item": "CBC with haptoglobin / Coombs / reticulocytes",
+            "points": 1
           },
           {
-            "item": "CBC coombs",
-            "points": 2
+            "item": "BMP and urinalysis to characterize the metabolic acidosis / renal tubular involvement",
+            "points": 1
           },
           {
             "item": "MRI brain",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "EKG and CXR",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "anchoring on a primary psychiatric/movement disorder without screening for Wilson in a young patient with liver disease",
+            "item": "Anchoring on a primary psychiatric/movement disorder or stopping isoniazid alone without screening for Wilson in a young patient with liver disease",
             "points": -2
           }
         ]
@@ -188,12 +209,15 @@
         "24-hour urinary copper (with serum free copper)",
         "Slit-lamp exam for Kayser-Fleischer rings"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Autoimmune/viral hepatitis panel (ANA, anti-smooth-muscle Ab, IgG, hep A/B/C)",
+        "BMP and urinalysis to characterize the metabolic acidosis / renal tubular involvement"
+      ],
       "contraindicatedTests": [
-        "anchoring on a primary psychiatric/movement disorder without screening for Wilson in a young patient with liver disease"
+        "Anchoring on a primary psychiatric/movement disorder or stopping isoniazid alone without screening for Wilson in a young patient with liver disease"
       ],
       "orderSensitiveActions": [
-        "anchoring on a primary psychiatric/movement disorder without screening for Wilson in a young patient with liver disease"
+        "Anchoring on a primary psychiatric/movement disorder or stopping isoniazid alone without screening for Wilson in a young patient with liver disease"
       ]
     },
     {
@@ -202,33 +226,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute changes. CREDIT: rate & rhythm (7); recognizes a normal tracing (5); systematic read (3). PENALTY: over-reading / inventing pathology (-2).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and explain how they fit the rest of his labs.",
+      "rubric": "Findings = sinus rhythm with prominent U waves, T-wave flattening, and a long QU/apparent QT — hypokalemia (K 2.9) from his Fanconi-type renal tubular wasting; no acute ischemia. CREDIT: identifies hypokalemic changes — U waves / T flattening / long QU (7); links the EKG to the low potassium and the renal tubular acidosis rather than primary cardiac disease (5); systematic read (3). PENALTY: calling the study normal or over-reading the U waves as ischemia/a primary arrhythmia (-3).",
       "keyFindings": [
-        "recognizes a normal sinus rhythm with no acute changes",
-        "reads systematically (rate, rhythm, axis, intervals, ST/T)"
+        "prominent U waves with T-wave flattening and a prolonged QU/apparent QT interval (hypokalemia)",
+        "links the changes to the low potassium from Fanconi-type renal tubular wasting, not a primary cardiac process"
       ],
       "criticalFindings": [
-        "Normal sinus rhythm; no acute ischemic changes."
+        "Sinus rhythm with prominent U waves, T-wave flattening, and a long QU interval — hypokalemia from the patient's renal tubular wasting; no acute ischemia."
       ],
       "commonMistakes": [
-        "over-reading a normal tracing and inventing ischemia or a block"
+        "calling the tracing normal and missing the U waves",
+        "over-reading the U waves / long QU as acute ischemia or a primary arrhythmia"
       ],
-      "idealAnswer": "Normal sinus rhythm with no acute ischemic changes — a normal screening EKG in a young patient.",
+      "idealAnswer": "Sinus rhythm with prominent U waves, flattened T waves, and a prolonged QU (apparent QT) interval — the classic pattern of hypokalemia, here driven by the serum potassium of 2.9 from his Fanconi-type (proximal) renal tubular acidosis. There is no acute ST elevation. This is his OWN tracing and ties the cardiac findings to the multi-system copper toxicity: replete potassium and magnesium, recheck the QT, and avoid additional QT-prolonging drugs (including the SSRI) until corrected.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Normal sinus rhythm; no acute ischemic changes."
+          "Sinus rhythm with prominent U waves, T-wave flattening, and a long QU interval — hypokalemia from renal tubular wasting; no acute ischemia."
         ],
         "coreActions": [
-          "recognizes a normal sinus rhythm with no acute changes",
-          "reads systematically (rate, rhythm, axis, intervals, ST/T)"
+          "prominent U waves with T-wave flattening and a prolonged QU/apparent QT interval (hypokalemia)",
+          "links the changes to the low potassium from Fanconi-type renal tubular wasting, not a primary cardiac process",
+          "reads systematically (rate, rhythm, axis, intervals, ST/T/U)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-reads a normal study / invents pathology",
-            "points": -2
+            "label": "calls the study normal or over-reads the U waves as ischemia/a primary arrhythmia",
+            "points": -3
           }
         ]
       }
@@ -240,31 +266,31 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield in this presentation (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = clear lungs, normal cardiomediastinal silhouette, NO signs of active TB (no infiltrate, cavitation, or adenopathy). CREDIT: identifies a normal film (6); specifically reconciles it with his latent-TB diagnosis — no radiographic active TB (4). PENALTY: inventing pathology or calling active TB on a normal film (-2).",
       "keyFindings": [
-        "identifies a normal film with clear lungs and normal cardiomediastinal silhouette",
-        "notes it is low-yield here but reasonable as a baseline screen"
+        "clear lung fields with a normal cardiomediastinal silhouette",
+        "no infiltrate, cavitation, or hilar adenopathy to suggest ACTIVE tuberculosis (consistent with latent TB)"
       ],
       "criticalFindings": [
-        "No acute cardiopulmonary process (normal film)."
+        "No acute cardiopulmonary process and no radiographic evidence of active TB (normal film)."
       ],
       "commonMistakes": [
-        "inventing an infiltrate or effusion on a normal film"
+        "inventing an infiltrate or cavity / over-calling active TB on a normal film"
       ],
-      "idealAnswer": "Clear lungs with a normal cardiomediastinal silhouette — no acute process; a low-yield but reasonable baseline screen.",
+      "idealAnswer": "Clear lungs with a normal cardiomediastinal silhouette and no infiltrate, cavitation, or hilar adenopathy — no acute process and, importantly, no radiographic evidence of active tuberculosis, consistent with his latent-TB diagnosis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "No acute cardiopulmonary process (normal film)."
+          "No acute cardiopulmonary process and no radiographic evidence of active TB (normal film)."
         ],
         "coreActions": [
-          "identifies a normal film with clear lungs and normal cardiomediastinal silhouette",
-          "notes it is low-yield here but reasonable as a baseline screen"
+          "clear lung fields with a normal cardiomediastinal silhouette",
+          "no infiltrate, cavitation, or hilar adenopathy to suggest active tuberculosis"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "invents pathology on a normal study",
+            "label": "invents pathology / over-calls active TB on a normal study",
             "points": -2
           }
         ]
@@ -274,9 +300,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "A low ceruloplasmin, markedly elevated 24-hour urinary copper, bilateral Kayser-Fleischer rings on slit lamp, a Coombs-negative hemolytic anemia, and basal-ganglia changes on MRI. What is your diagnosis and what did you rule out?",
-      "rubric": "Wilson disease (hepatolenticular degeneration) (6). Cites low ceruloplasmin + high urinary copper + Kayser-Fleischer rings; explicitly excludes autoimmune/viral hepatitis and a primary psychiatric/movement disorder, and notes the Coombs-NEGATIVE hemolysis argues against autoimmune hemolytic anemia and flags risk of a Wilsonian (fulminant) crisis (4).",
-      "idealAnswer": "Wilson disease (hepatolenticular degeneration): supported by the low ceruloplasmin, markedly elevated 24-hour urinary copper, and bilateral Kayser-Fleischer rings, with basal-ganglia changes on MRI. The Coombs-negative hemolysis argues against autoimmune hemolytic anemia and flags risk of a Wilsonian (fulminant) crisis. Ruled out autoimmune/viral hepatitis and a primary psychiatric/movement disorder.",
+      "prompt": "Results are back: ALP disproportionately low with a low ALP:bilirubin ratio, ceruloplasmin 11, 24-hour urinary copper 240, bilateral Kayser-Fleischer rings, a Coombs-negative hemolytic anemia, a non-anion-gap metabolic acidosis with hypokalemia and glucosuria at normal serum glucose, U waves on EKG, and basal-ganglia changes on MRI; ANA is only 1:80 with negative anti-smooth-muscle antibody. Commit to a diagnosis, name the single most discriminating test, and state how you ruled out the competitors and any residual uncertainty.",
+      "rubric": "Wilson disease (hepatolenticular degeneration) (6). Names the most discriminating data — markedly elevated 24-hour urinary copper plus low ceruloplasmin and Kayser-Fleischer rings; explicitly excludes the competitors: the low-titer ANA with NEGATIVE anti-smooth-muscle Ab and normal IgG do NOT meet autoimmune-hepatitis criteria, and the disproportionately low ALP with copper overload argues against isoniazid/herbal drug-induced injury; integrates the multi-system picture — Coombs-NEGATIVE hemolysis (argues against autoimmune hemolytic anemia and flags a Wilsonian crisis) and the Fanconi-type renal tubular acidosis driving the hypokalemia/U waves; states residual uncertainty resolved by liver copper quantification / ATP7B if needed (4).",
+      "idealAnswer": "Wilson disease (hepatolenticular degeneration). The single most discriminating finding is the markedly elevated 24-hour urinary copper (240 mcg) together with a low ceruloplasmin (11) and bilateral Kayser-Fleischer rings, plus the disproportionately low ALP with a low ALP:bilirubin ratio and basal-ganglia MRI changes. Competitors excluded: the low-titer ANA (1:80) with NEGATIVE anti-smooth-muscle antibody and normal IgG does not meet autoimmune-hepatitis criteria; the copper-overload picture and low ALP argue against isoniazid/herbal/SSRI drug-induced injury (though I would still hold the hepatotoxins); viral panel is negative. The whole multi-system picture coheres with copper toxicity: a Coombs-NEGATIVE hemolytic anemia (which argues against autoimmune hemolytic anemia and flags risk of a Wilsonian fulminant crisis) and a Fanconi-type proximal renal tubular acidosis (non-anion-gap acidosis, hypokalemia, glucosuria at normal glucose, low phosphate/urate) that explains the U waves on EKG. Residual uncertainty, if any, is settled by liver biopsy with hepatic copper quantification and/or ATP7B genetic testing.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -289,7 +315,8 @@
       ],
       "acceptableAlternatives": [
         "Autoimmune hepatitis",
-        "Viral/drug-induced hepatitis",
+        "Drug-induced liver injury (isoniazid / herbal supplement / SSRI)",
+        "Viral hepatitis",
         "Primary movement disorder (juvenile Parkinsonism, essential tremor, drug-induced tremor)"
       ]
     },
@@ -297,39 +324,47 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH approach to Wilson disease: chelation therapy — D-penicillamine or tridentine (CANT-MISS,7); add oral zinc (blocks intestinal copper absorption) and confirm a low-copper diet (4); hepatology referral and consider genetic testing (ATP7B) plus screening of first-degree relatives (4); monitor for neurologic worsening when initiating chelation and avoid further hepatotoxins (4); supportive/neurology co-management and consider transplant evaluation for fulminant failure or decompensated cirrhosis (3); pyridoxine with D-penicillamine (2). PENALTY: missing/failing to treat a fulminant Wilsonian crisis (which needs urgent transplant evaluation) (-3); leaving copper overload untreated or treating only the psychiatric symptoms (-2).",
-      "idealAnswer": "Wilson disease: start copper-removal therapy — a chelator (D-penicillamine, with pyridoxine; or trientine, often better tolerated) and/or oral zinc to block intestinal copper absorption; counsel a low-copper diet (avoid shellfish, liver, nuts, chocolate). Refer to hepatology; send ATP7B genetic testing and screen first-degree relatives (the sibling). Monitor closely for paradoxical neurologic worsening when starting a chelator, follow LFTs/copper studies, and avoid hepatotoxins. Co-manage with neurology. For a fulminant Wilsonian crisis or decompensated cirrhosis, urgent liver transplant evaluation (transplant is curative as it corrects the metabolic defect).",
+      "prompt": "What is your management plan, including disposition — is this patient safe to manage and discharge as an outpatient, or does he need admission?",
+      "rubric": "Per MGH approach to Wilson disease: chelation therapy — D-penicillamine or trientine (CANT-MISS,6); STOP the hepatotoxins/confounders — hold isoniazid and the herbal supplement, review the SSRI (also a QT consideration) (3); correct the metabolic derangements — replete potassium/magnesium and treat the renal tubular acidosis, recheck the QT (3); add oral zinc and a low-copper diet (2); hepatology referral, ATP7B genetic testing, and screen first-degree relatives — especially the symptomatic sibling (3); monitor for paradoxical neurologic worsening when starting a chelator, follow LFTs/copper, give pyridoxine with D-penicillamine (2); neurology co-management and transplant evaluation for fulminant failure / decompensated cirrhosis (curative) (2). DISPOSITION / SAFE-DISCHARGE: makes an explicit disposition decision — ADMIT given the hemolysis, hypokalemia with EKG changes, and risk of a Wilsonian crisis, rather than discharging on outpatient follow-up; if later stabilized, arrange close hepatology/neurology follow-up, med reconciliation (hepatotoxins stopped), electrolyte recheck, family screening, and return precautions (4). PENALTY: discharging home without correcting the hypokalemia or recognizing crisis risk (-3); missing/failing to treat a fulminant Wilsonian crisis (-3); leaving copper overload untreated or treating only the psychiatric symptoms (-2).",
+      "idealAnswer": "Wilson disease. Start copper-removal therapy — a chelator (D-penicillamine, given with pyridoxine; or trientine, often better tolerated) and/or oral zinc to block intestinal copper absorption, with a low-copper diet (avoid shellfish, liver, nuts, chocolate). STOP the confounding hepatotoxins: hold isoniazid and the herbal 'liver-support' supplement and re-evaluate the SSRI (also a QT-prolongation concern with his hypokalemia). Correct the metabolic derangements from the Fanconi-type renal tubular acidosis: replete potassium and magnesium, treat the acidosis, and recheck the QT after correction. Refer to hepatology; send ATP7B genetic testing and screen first-degree relatives — particularly the symptomatic younger sibling. Monitor closely for paradoxical neurologic worsening when starting a chelator, follow LFTs/copper studies, and co-manage with neurology. DISPOSITION: this patient is NOT safe for routine outpatient discharge — admit him given the active Coombs-negative hemolysis, hypokalemia with EKG changes, and the risk of a fulminant Wilsonian crisis (which would need urgent liver transplant evaluation, transplant being curative). Once stabilized, arrange safe discharge with medication reconciliation (hepatotoxins discontinued), close hepatology and neurology follow-up, an electrolyte recheck, family screening, and clear return precautions for jaundice, confusion, or bleeding.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Copper chelation (D-penicillamine or trientine)",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Explicit disposition / safe-discharge plan: admit given hemolysis, hypokalemia with EKG changes, and crisis risk; if stabilized, med reconciliation, electrolyte recheck, close hepatology/neurology follow-up, family screening, return precautions",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Oral zinc and low-copper diet",
-            "points": 4
-          },
-          {
-            "item": "Hepatology referral, ATP7B genetic testing, screen first-degree relatives",
-            "points": 4
-          },
-          {
-            "item": "Monitor for neurologic worsening on chelation and avoid hepatotoxins",
-            "points": 4
-          },
-          {
-            "item": "Neurology co-management",
+            "item": "Stop the hepatotoxins / confounders — hold isoniazid and the herbal supplement, review the SSRI",
             "points": 3
+          },
+          {
+            "item": "Correct the metabolic derangements — replete potassium/magnesium, treat the renal tubular acidosis, recheck QT",
+            "points": 3
+          },
+          {
+            "item": "Hepatology referral, ATP7B genetic testing, screen first-degree relatives (the symptomatic sibling)",
+            "points": 3
+          },
+          {
+            "item": "Oral zinc and low-copper diet",
+            "points": 2
+          },
+          {
+            "item": "Monitor for neurologic worsening on chelation; follow LFTs/copper; neurology co-management",
+            "points": 2
           }
         ],
         "bonusActions": [
           {
             "item": "Transplant evaluation for fulminant failure / decompensated cirrhosis (curative)",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Pyridoxine with D-penicillamine",
@@ -337,6 +372,10 @@
           }
         ],
         "penalties": [
+          {
+            "item": "Discharging home without correcting the hypokalemia or recognizing Wilsonian-crisis risk",
+            "points": -3
+          },
           {
             "item": "Missing/failing to treat a fulminant Wilsonian crisis",
             "points": -3
@@ -348,17 +387,20 @@
         ]
       },
       "requiredActions": [
-        "Copper chelation (D-penicillamine or trientine)"
+        "Copper chelation (D-penicillamine or trientine)",
+        "Explicit disposition / safe-discharge plan: admit given hemolysis, hypokalemia with EKG changes, and crisis risk; if stabilized, med reconciliation, electrolyte recheck, close hepatology/neurology follow-up, family screening, return precautions"
       ],
       "optionalActions": [
+        "Stop the hepatotoxins / confounders — hold isoniazid and the herbal supplement, review the SSRI",
+        "Correct the metabolic derangements — replete potassium/magnesium, treat the renal tubular acidosis, recheck QT",
+        "Hepatology referral, ATP7B genetic testing, screen first-degree relatives (the symptomatic sibling)",
         "Oral zinc and low-copper diet",
-        "Hepatology referral, ATP7B genetic testing, screen first-degree relatives",
-        "Monitor for neurologic worsening on chelation and avoid hepatotoxins",
-        "Neurology co-management",
+        "Monitor for neurologic worsening on chelation; follow LFTs/copper; neurology co-management",
         "Transplant evaluation for fulminant failure / decompensated cirrhosis (curative)",
         "Pyridoxine with D-penicillamine"
       ],
       "unsafeActions": [
+        "Discharging home without correcting the hypokalemia or recognizing Wilsonian-crisis risk",
         "Missing/failing to treat a fulminant Wilsonian crisis",
         "Leaving copper overload untreated / treating only the psychiatric symptoms"
       ],
@@ -366,7 +408,7 @@
         "Hepatology",
         "Neurology"
       ],
-      "disposition": "Outpatient if stable; admit and urgent transplant evaluation if fulminant failure or decompensation",
+      "disposition": "Admit given active hemolysis, hypokalemia with EKG changes, and Wilsonian-crisis risk; urgent transplant evaluation if fulminant failure or decompensation; outpatient hepatology/neurology follow-up once stabilized",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Cirrhosis & Inherited Liver Disease (Wilson Disease)",
@@ -388,7 +430,7 @@
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "22-year-old man, anxious, with a coarse tremor and mild slurred speech. Cooperative but somewhat flat.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (family history, mood changes, the TB pill/isoniazid, the herbal supplement) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -407,7 +449,7 @@
         "siblings health",
         "inherited conditions"
       ],
-      "response": "A younger sibling has some unexplained liver trouble, and a maternal uncle had a movement problem and died young of liver failure. My parents are second cousins.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 4,
       "hiddenUntilAsked": true
@@ -424,7 +466,7 @@
         "how have you been feeling emotionally",
         "school or work changes"
       ],
-      "response": "I've been irritable and a bit down, my grades dropped, and a counselor started me on a mood medicine a few weeks ago.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -439,7 +481,7 @@
         "yellow eyes before",
         "past liver illness"
       ],
-      "response": "A couple of years ago I had something they called hepatitis with yellow eyes for a while, but it cleared up and they never figured out the cause.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -452,11 +494,42 @@
         "what do you take",
         "any new medicines",
         "supplements or herbals",
+        "tb pill or isoniazid",
         "acetaminophen tylenol use"
       ],
-      "response": "Just a mood medicine (an SSRI) started a few weeks ago. I rarely take Tylenol, no herbal products.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tb_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "tuberculosis",
+        "tb test or screening",
+        "positive ppr or igra",
+        "why are you on the tb pill",
+        "latent tb"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "renal_muscle_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "urinary symptoms",
+        "dark urine",
+        "urinating more or excessive thirst",
+        "muscle cramps",
+        "polyuria or polydipsia"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -468,7 +541,7 @@
         "how long",
         "duration"
       ],
-      "response": "The shaking and slurred speech have been building up over the last four to six months and are getting worse.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -483,7 +556,7 @@
         "clumsiness handwriting",
         "movement symptoms"
       ],
-      "response": "My hands shake worse when I hold them out or use them, my speech slurs, I sometimes drool, and my handwriting has gotten messy and clumsy.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -498,7 +571,7 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "Just the occasional drink socially, nothing heavy.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -513,7 +586,7 @@
         "travel",
         "risk exposures"
       ],
-      "response": "No injection drugs, no tattoos, no high-risk sexual exposures, and no notable travel.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -527,7 +600,7 @@
         "anything else",
         "abdominal swelling or jaundice"
       ],
-      "response": "Mostly fatigue. I haven't noticed yellow eyes, belly swelling, confusion, or black or bloody stools.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -600,11 +673,12 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Wilson disease",
-    "diagnosticFramework": "22M presents with several months of a worsening hand tremor, slurred speech, mood changes, and incidentally noted abnormal liver enzymes. The diagnosis is Wilson disease, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "22M with recently diagnosed latent TB on isoniazid, a new SSRI, and an OTC herbal supplement presents with months of a worsening hand tremor, slurred speech, and mood changes plus incidentally abnormal liver enzymes — a picture that could be drug-induced or autoimmune hepatitis. The diagnosis is Wilson disease, reached by eliciting the focused history (family history, prior liver episode, mood changes, and the polypharmacy/hepatotoxin list), performing the targeted exam, and interpreting a directed multi-system workup — low ceruloplasmin, markedly elevated urinary copper, Kayser-Fleischer rings, Coombs-negative hemolysis, a Fanconi-type renal tubular acidosis driving hypokalemia and U waves on EKG, and basal-ganglia MRI changes — while excluding the competing autoimmune and drug-induced hepatitides and the must-not-miss fulminant Wilsonian crisis.",
     "keyHistoryClues": [
       "family history",
       "prior liver episode",
-      "mental health change"
+      "mental health change",
+      "isoniazid / herbal hepatotoxins"
     ],
     "keyPhysicalExamFindings": [
       "Eyes: golden-brown ring at the corneal margin (Kayser-Fleischer ring) on close inspection; sclera not overtly icteric.",
@@ -615,32 +689,36 @@
     ],
     "keyDiagnosticFindings": [
       "LFTs",
+      "Autoimmune",
       "Ceruloplasmin",
       "Copper",
       "SlitLamp",
       "CBCCoombs",
+      "BMPUrine",
       "MRIBrain"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items (family history, prior liver episode, mood changes, medications) only on direct questioning.",
+      "Elicit the focused history, including sensitive/confounding items (family history, prior liver episode, mood changes, isoniazid/herbal/SSRI polypharmacy, urinary/muscle symptoms) only on direct questioning.",
       "Perform the targeted physical exam maneuvers to reveal key findings (Kayser-Fleischer ring, neuro signs, hepatosplenomegaly).",
-      "Build a differential led by Wilson disease while explicitly excluding must-not-miss causes (fulminant Wilsonian crisis with hemolysis).",
-      "Order a focused, order-sensitive workup (ceruloplasmin, 24-hour urinary copper, slit-lamp) and interpret EKG/CXR and labs.",
-      "Commit to Wilson disease and manage with copper removal (chelation/zinc), family screening, neurology/hepatology co-management, and transplant evaluation if fulminant."
+      "Build a differential led by Wilson disease with autoimmune and drug-induced (isoniazid/herbal) hepatitis as genuine competitors, naming three mechanisms of hepatocellular injury and the must-not-miss fulminant Wilsonian crisis.",
+      "Order a focused, order-sensitive workup (ceruloplasmin, 24-hour urinary copper, slit-lamp, autoimmune/viral panel, BMP/UA) and interpret the integrated hypokalemic EKG and the TB-screening CXR.",
+      "Commit to Wilson disease, reconcile the multi-system labs, and manage with copper removal, stopping hepatotoxins, correcting the electrolytes, family screening, neurology/hepatology co-management, an explicit admit-vs-discharge disposition, and transplant evaluation if fulminant."
     ],
     "commonPitfalls": [
+      "Attributing everything to isoniazid and stopping it without screening for Wilson",
       "Missing/failing to treat a fulminant Wilsonian crisis",
-      "Leaving copper overload untreated / treating only the psychiatric symptoms",
-      "Anchoring on a primary psychiatric or movement disorder without screening for Wilson in a young patient with liver disease"
+      "Discharging home without correcting the hypokalemia or recognizing crisis risk",
+      "Leaving copper overload untreated / treating only the psychiatric symptoms"
     ],
     "managementPearls": [
       "Copper chelation (D-penicillamine or trientine)",
-      "Oral zinc and low-copper diet",
+      "Stop the hepatotoxins (isoniazid, herbal) and correct the hypokalemia/renal tubular acidosis",
       "Screen first-degree relatives with ATP7B testing"
     ],
     "criticalHistoryItems": [
-      "family_history"
+      "family_history",
+      "medications"
     ],
     "criticalExamItems": [
       "inspect_sclera",
@@ -652,24 +730,25 @@
       "Slit-lamp exam for Kayser-Fleischer rings"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute changes.",
-      "No acute process (low yield in this presentation)."
+      "Sinus rhythm with U waves and a long QU interval — hypokalemia from renal tubular wasting.",
+      "Normal chest film with no signs of active TB."
     ],
     "criticalManagementItems": [
-      "Copper chelation (D-penicillamine or trientine)"
+      "Copper chelation (D-penicillamine or trientine)",
+      "Explicit disposition / safe-discharge plan"
     ],
     "keyImageInterpretationFindings": [
-      "Normal sinus rhythm; no acute ischemic changes.",
-      "No acute cardiopulmonary process (normal film)."
+      "Sinus rhythm with prominent U waves, T-wave flattening, and a long QU interval — hypokalemia.",
+      "No acute cardiopulmonary process and no signs of active TB (normal film)."
     ],
     "criticalImageInterpretationFindings": [
-      "Normal sinus rhythm; no acute ischemic changes.",
-      "No acute cardiopulmonary process (normal film)."
+      "Sinus rhythm with prominent U waves, T-wave flattening, and a long QU interval — hypokalemia from renal tubular wasting.",
+      "No acute cardiopulmonary process and no radiographic evidence of active TB (normal film)."
     ],
     "imageInterpretationPearls": [
-      "A normal study is a legitimate read — name the pertinent negatives and judge the study's yield for the presentation.",
-      "Read every study systematically before committing.",
-      "Do not invent pathology to fit an expected diagnosis; the lesions in Wilson disease are biochemical and on brain MRI, not on the EKG/CXR."
+      "The U waves and long QU are the patient's OWN tracing — tie them to the hypokalemia from his Fanconi-type renal tubular acidosis, not a primary cardiac process.",
+      "On the TB-screening film, the deliberate pertinent negative is the absence of any active-TB findings (infiltrate, cavity, adenopathy).",
+      "Read every study systematically and integrate it with the labs; do not invent ischemia or active TB."
     ]
   },
   "communicationScoring": {
@@ -699,8 +778,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG; pathology-forward CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

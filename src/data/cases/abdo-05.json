@@ -1,57 +1,61 @@
 {
   "id": "abdo-05",
   "category": "Abdominal Pain",
-  "difficulty": "easy",
-  "title": "Left lower quadrant pain and fever",
+  "difficulty": "hard",
+  "title": "Left lower quadrant pain, fever, and change in bowel habits in an anticoagulated older man",
   "diagnosis": "Diverticulitis",
   "chart": {
     "ageSex": "58M",
     "cc": "Left lower abdominal pain",
-    "oneLiner": "58M presents with 3 days of constant left lower quadrant pain, low-grade fever, and a change in bowel habits.",
+    "oneLiner": "58M with hypertension, type 2 diabetes, CKD, and atrial fibrillation on warfarin presents with 4 days of constant left lower quadrant pain, low-grade fever, and a several-month change in bowel habits with some unintentional weight loss; he also reports an irregular heartbeat and occasional NSAID use for knee pain.",
     "vitals": {
-      "BP": "134/82",
-      "HR": "92",
-      "RR": "16",
-      "Temp": "38.0°C",
-      "SpO2": "99% RA"
+      "BP": "138/86",
+      "HR": "108",
+      "RR": "18",
+      "Temp": "38.2°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I've had a steady ache in my lower left belly for a few days, and I've been running a fever.",
-  "patientFile": "PERSONA: 58-year-old man, mildly uncomfortable. Cooperative.\n\nHPI: 3 days of constant left lower quadrant pain, low-grade fevers, mild nausea, and altered bowel habits (some constipation then loose stools). Reduced appetite. NO large-volume rectal bleeding, NO vomiting, NO prior similar episodes (mention prior episode only if asked).\nPMH: hypertension; low-fiber diet. MEDS: lisinopril. SOCIAL: nonsmoker, social alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable at rest, mild distress on exam.\n- Vitals: BP 134/82, HR 92, RR 16, 38.0°C, SpO2 99% RA.\n- Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.\n- No costovertebral angle tenderness. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the low-fiber diet or any prior episode unless asked about diet or prior similar pain.\n- LLQ findings are revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had a steady ache low down on the left side of my belly for a few days now, I've been running a fever, and to be honest my bowels haven't been right for months.",
+  "patientFile": "PERSONA: 58-year-old man, mildly uncomfortable, a bit worried. Cooperative but not very forthcoming; gives short answers.\n\nHPI: 4 days of constant left lower quadrant pain, low-grade fevers, mild nausea, reduced appetite. Bowel habits have been OFF for about 3 months — alternating constipation and looser stools, narrower stools at times, and he has lost maybe 10 pounds without trying (reveal the months-long change and the weight loss ONLY if asked about bowel habits, stool, weight, or appetite over time). Over the last day or two he has noticed a little dark blood / streaking with the stool but NO large-volume bright red bleeding and NO black tarry stools (reveal only if asked about blood in the stool). He feels his heart \"fluttering\" on and off and gets a bit short of breath climbing stairs (reveal only if asked about palpitations, the heartbeat, or chest/breathing symptoms). NO vomiting, NO syncope, NO severe sudden tearing pain.\nPMH: hypertension; type 2 diabetes (on metformin); chronic kidney disease (told his kidneys are \"about half\"); atrial fibrillation diagnosed ~2 years ago, on a blood thinner; osteoarthritis of the knees. SOCIAL: ex-smoker, quit 5 years ago, ~30 pack-years; drinks 3-4 beers most weekends; low-fiber diet, eats a lot of red meat, sedentary. FAMILY: father had colon cancer in his 60s (reveal only if asked about family history). MEDS: lisinopril; metformin; hydrochlorothiazide; warfarin (for the atrial fibrillation); occasional ibuprofen for his knees, sometimes several days in a row (reveal the ibuprofen ONLY if asked specifically about over-the-counter or pain medications). No recent antibiotics. ALLERGIES: none.\nDIET/RISK (reveal only when asked about diet, lifestyle, or risk factors): low-fiber high-red-meat diet, sedentary, ex-smoker, obesity.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable at rest, mild distress on deep palpation; not toxic-appearing.\n- Vitals: BP 138/86, HR 108 and IRREGULARLY irregular, RR 18, 38.2°C, SpO2 97% RA.\n- Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.\n- Cardiac: irregularly irregular rhythm, no murmurs. Lungs: clear. No CVA tenderness. No peripheral edema. No pallor of conjunctiva beyond mild.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the months-long change in bowel habits, weight loss, blood in stool, family history of colon cancer, NSAID use, or the irregular heartbeat unless asked the relevant question.\n- Abdominal, cardiac, and other exam findings are revealed only if that exam is performed.\n- Use lay language; avoid medical jargon and textbook phrasing.\n- If asked something not in this file, give a reasonable normal/negative answer.",
   "dx": {
     "labs": {
-      "CBC": "WBC 13.0 with left shift, Hgb 14.2, Plt 280.",
-      "BMP": "Within normal limits.",
-      "UA": "Unremarkable (no significant pyuria/hematuria).",
-      "CT_abdomen": "CT abdomen/pelvis with contrast: sigmoid colon diverticula with wall thickening and pericolic fat stranding; NO abscess, free air, or fistula — uncomplicated diverticulitis."
+      "CBC": "WBC 14.6 with left shift (neutrophil predominance, bands present); Hgb 10.8 (low) with low-normal MCV 78 suggesting iron-deficiency/chronic blood loss; Plt 308.",
+      "BMP": "Na 131 (low), K 5.3 (high), Cl 100, HCO3 17 (low) → anion gap = 131 - (100 + 17) = 14 (high-normal/mildly elevated). Glucose 168. BUN 38, Creatinine 1.9 (baseline ~1.4, CKD stage 3) → AKI on CKD. eGFR ~38.",
+      "INR": "INR 4.1 (supratherapeutic on warfarin; target 2-3 for atrial fibrillation).",
+      "UA": "Trace blood, no significant pyuria, no nitrites, no bacteria — does not support a urinary source.",
+      "Lactate": "Lactate 1.8 mmol/L (normal) — argues against ongoing bowel ischemia / mesenteric infarction.",
+      "CT_abdomen": "CT abdomen/pelvis with IV contrast: sigmoid colon diverticula with focal wall thickening and pericolic fat stranding and a few tiny locules of adjacent gas; NO drainable abscess, NO free intraperitoneal air, NO fistula. There is a short segment of mural thickening but NO discrete obstructing mass and NO pathologic lymphadenopathy. Findings are most consistent with uncomplicated acute sigmoid diverticulitis; a small underlying neoplasm cannot be fully excluded on CT, so interval colonoscopy after resolution is advised."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus rhythm interrupted by frequent premature atrial complexes with abnormal P morphology and noncompensatory pauses.",
-      "verify": "Source a study matching: Sinus rhythm interrupted by frequent premature atrial complexes with abnormal P morphology and noncompensatory pauses. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 2,
+      "findings": "Atrial fibrillation with a rapid ventricular response (~108-120 bpm): irregularly irregular rhythm, absent discrete P waves with a fibrillatory baseline, narrow QRS, no acute ST-segment elevation; rate-related nonspecific ST/T changes only.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response, irregularly irregular, no discrete P waves, narrow QRS, no acute ST elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing frequent premature atrial complexes",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response",
       "searchTerms": [
-        "premature atrial complexes ECG",
-        "frequent PACs rhythm strip"
+        "atrial fibrillation rapid ventricular response 12 lead ECG",
+        "irregularly irregular no P waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 66-year-old man notes occasional skipped beats and palpitations during an outpatient evaluation."
+      "clinicalVignette": "An older man with palpitations and exertional breathlessness has an irregularly irregular pulse on examination."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA%20upright&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Healed/healing rib fractures with callus along the lateral ribs; lungs clear.",
-      "verify": "Source a study matching: Healed/healing rib fractures with callus along the lateral ribs; lungs clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Healed/healing rib fractures with callus along the lateral ribs; lungs clear; no free air under the diaphragm.",
+      "verify": "Source a study matching: Healed/healing rib fractures with callus along the lateral ribs; lungs clear; no subdiaphragmatic free air. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
       "imageDescription": "chest radiograph showing old healed rib fractures",
       "searchTerms": [
@@ -59,19 +63,23 @@
         "old rib fracture callus radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 50-year-old man after recent chest trauma has a film showing healing fractures along the ribs."
+      "clinicalVignette": "A 50-year-old man after remote chest trauma has a film showing healing fractures along the ribs."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
+    "INR",
     "UA",
+    "Lactate",
     "CT_abdomen",
     "ekg",
     "cxr"
   ],
   "essential": [
     "CBC",
+    "BMP",
+    "INR",
     "CT_abdomen"
   ],
   "steps": [
@@ -79,54 +87,57 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute diverticulitis (leading,8). Colorectal cancer (CANT-MISS to consider/exclude later,4). Inflammatory bowel disease / colitis (core,3). Ischemic colitis (core,3). Urinary cause (core,2). In appropriate patients, gynecologic causes (bonus,2). Named leading dx w/ justification — LLQ pain, fever, leukocytosis (core,3).",
-      "idealAnswer": "Leading diagnosis: Acute diverticulitis. Must-not-miss diagnoses to exclude: Colorectal cancer. Also reasonable: Inflammatory bowel disease / colitis; Ischemic colitis; Urinary cause.",
+      "prompt": "Based on your history and physical, list your differential diagnosis and note your leading diagnosis. This older man has LLQ pain and fever BUT also a months-long change in bowel habits, weight loss, and a family history of colon cancer — explicitly address the competing diagnosis. Also name THREE risk factors or mechanisms that predispose to your leading diagnosis.",
+      "rubric": "Acute diverticulitis (leading,6). Colorectal cancer — MUST-NOT-MISS competitor given age, months-long change in bowel habits, weight loss, microcytic anemia, occult blood, family history (CANT-MISS,6). Ischemic colitis — reasonable given atrial fibrillation as an embolic source and an older vasculopath (core,3). Inflammatory bowel disease / infectious colitis (core,2). Names leading dx with justification — LLQ pain, fever, leukocytosis, localized tenderness (core,2). Names THREE risk factors/mechanisms for diverticulitis — e.g. low-fiber/high-red-meat diet, age, obesity/sedentary lifestyle, smoking, NSAID use (core,3). Notes that the change in bowel habits + weight loss + anemia mandates excluding malignancy and CANNOT be attributed to diverticulitis alone (core,3). PENALTY: anchoring on diverticulitis and dismissing the cancer red flags (-3).",
+      "idealAnswer": "Leading diagnosis: Acute (sigmoid) diverticulitis — localized LLQ pain, fever, leukocytosis. The key competing must-not-miss is COLORECTAL CANCER: at 58 with a months-long change in bowel habits, ~10 lb unintentional weight loss, microcytic anemia (Hgb 10.8, MCV 78), occult/dark blood per stool, and a father with colon cancer, malignancy (which can also perforate or obstruct and mimic diverticulitis) must be excluded — it cannot be explained away by an acute diverticulitis flare. Also consider ISCHEMIC COLITIS (he has atrial fibrillation, an embolic source, and is an older vasculopath) and inflammatory/infectious colitis. Three risk factors/mechanisms for diverticulitis: low-fiber high-red-meat diet, increasing age, obesity/sedentary lifestyle (also smoking and chronic NSAID use). Commit to diverticulitis acutely but flag that the chronic red-flag features mandate interval colonoscopy to exclude cancer once the acute episode resolves.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Acute diverticulitis",
-            "points": 8
+            "points": 6
           },
           {
-            "item": "Colorectal cancer",
-            "points": 4
+            "item": "Colorectal cancer (red-flag competitor: weight loss, anemia, change in bowel habits, family history)",
+            "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "Inflammatory bowel disease / colitis",
+            "item": "Ischemic colitis (atrial fibrillation as embolic source / older vasculopath)",
             "points": 3
           },
           {
-            "item": "Ischemic colitis",
-            "points": 3
-          },
-          {
-            "item": "Urinary cause",
+            "item": "Inflammatory bowel disease / infectious colitis",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ justification — LLQ pain, fever, leukocytosis",
+            "item": "Named leading dx w/ justification — LLQ pain, fever, leukocytosis, localized tenderness",
+            "points": 2
+          },
+          {
+            "item": "Names three risk factors/mechanisms for diverticulitis (low-fiber diet, age, obesity/sedentary, smoking, NSAIDs)",
+            "points": 3
+          },
+          {
+            "item": "States the change in bowel habits + weight loss + anemia mandate excluding malignancy and cannot be attributed to diverticulitis alone",
             "points": 3
           }
         ],
-        "bonusActions": [
+        "bonusActions": [],
+        "penalties": [
           {
-            "item": "In appropriate patients, gynecologic causes",
-            "points": 2
+            "item": "Anchors on diverticulitis and dismisses the colorectal-cancer red flags",
+            "points": -3
           }
-        ],
-        "penalties": []
+        ]
       },
       "mustNotMiss": [
         "Colorectal cancer"
       ],
       "acceptableAlternatives": [
-        "Inflammatory bowel disease / colitis",
         "Ischemic colitis",
-        "Urinary cause"
+        "Inflammatory bowel disease / infectious colitis"
       ]
     },
     {
@@ -134,26 +145,22 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "CT abdomen/pelvis with contrast (CANT-MISS,5). CBC (3). BMP (2). Urinalysis (2). Considers stool studies if diarrhea predominant (bonus,1). PENALTY: colonoscopy DURING acute diverticulitis (perforation risk) (-3); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Urinalysis; CT abdomen/pelvis.",
+      "prompt": "What initial diagnostic workup do you want to order? Account for his kidney function, anticoagulation, and diabetes when you choose tests.",
+      "rubric": "CT abdomen/pelvis with IV contrast — first-line to confirm diverticulitis and stage complications, weighing renal function (CANT-MISS,4). CBC — leukocytosis and anemia (2). BMP — AKI on CKD, hyperkalemia, hyponatremia (2). INR/coagulation given warfarin BEFORE any procedure or in case of GI bleeding (CANT-MISS,2). Lactate to screen for ischemia (1). Urinalysis to exclude urinary source (1). Type and screen / occult blood given anemia and dark stools (bonus,1). Hold metformin around iodinated contrast and ensure hydration given CKD (core,2). PENALTY: colonoscopy/sigmoidoscopy DURING acute diverticulitis — perforation risk (-3); ignoring renal function before contrast / not checking INR before any intervention (-2).",
+      "idealAnswer": "Order: CT abdomen/pelvis with IV contrast (first-line; weigh CKD — hydrate, hold metformin around contrast, accept the small contrast-nephropathy risk as justified); CBC; BMP (he has AKI on CKD with K 5.3 and Na 131); INR/coagulation panel — he is on warfarin and may need a procedure or could be bleeding; lactate to screen for ischemic colitis; urinalysis; type and screen and stool occult blood given the anemia and dark stools; EKG and CXR. Do NOT perform colonoscopy or sigmoidoscopy during the acute episode (perforation risk) — defer to interval colonoscopy after resolution.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "CT abdomen/pelvis with contrast",
-            "points": 5
+            "item": "CT abdomen/pelvis with IV contrast",
+            "points": 4
+          },
+          {
+            "item": "INR / coagulation panel (on warfarin, before any procedure or if bleeding)",
+            "points": 2
           }
         ],
         "coreActions": [
-          {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
           {
             "item": "CBC",
             "points": 2
@@ -163,29 +170,44 @@
             "points": 2
           },
           {
+            "item": "Lactate",
+            "points": 1
+          },
+          {
             "item": "Urinalysis",
+            "points": 1
+          },
+          {
+            "item": "Hold metformin around contrast and hydrate given CKD",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Considers stool studies if diarrhea predominant",
+            "item": "Type and screen / stool occult blood given anemia and dark stools",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "colonoscopy DURING acute diverticulitis (perforation risk)",
+            "item": "colonoscopy/sigmoidoscopy DURING acute diverticulitis (perforation risk)",
             "points": -3
+          },
+          {
+            "item": "ignoring renal function before contrast / not checking INR before intervention",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "CT abdomen/pelvis with contrast"
+        "CT abdomen/pelvis with IV contrast",
+        "INR / coagulation panel"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Type and screen / stool occult blood given anemia and dark stools"
+      ],
       "contraindicatedTests": [
-        "colonoscopy DURING acute diverticulitis (perforation risk)"
+        "colonoscopy/sigmoidoscopy DURING acute diverticulitis (perforation risk)"
       ],
       "orderSensitiveActions": []
     },
@@ -195,32 +217,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm with frequent premature atrial complexes (early abnormal P-wave morphology, narrow QRS, noncompensatory pauses). CREDIT: rate & rhythm (7); identifies the frequent PACs and distinguishes them from PVCs (narrow QRS, abnormal P) (5); systematic read (3). PENALTY: calling the tracing entirely normal / missing the abnormality, or mistaking the PACs for a sustained irregular atrial arrhythmia (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Interpret it systematically, then state how it fits his clinical picture and what it changes about your management.",
+      "rubric": "Findings = atrial fibrillation with a rapid ventricular response (~108-120 bpm): irregularly irregular, no discrete P waves with a fibrillatory baseline, narrow QRS, no acute ST elevation; only rate-related nonspecific ST/T changes. CREDIT: identifies rate & rhythm as atrial fibrillation with RVR (7); recognizes the absence of acute ischemic ST elevation / that changes are rate-related (4); integrates the AF clinically — it is his known AF (he is anticoagulated, INR 4.1), it is a potential embolic source raising ischemic colitis, and the rapid rate contributes to his demand and needs rate control while the supratherapeutic INR affects any procedure (4). PENALTY: calling the irregular rhythm sinus/normal, mistaking AF for multifocal atrial tachycardia or a STEMI, or missing the AF entirely (-3).",
       "keyFindings": [
-        "identifies premature atrial complexes",
-        "distinguishes PACs from PVCs (narrow, abnormal P)"
+        "atrial fibrillation with rapid ventricular response",
+        "irregularly irregular, no discrete P waves, narrow QRS",
+        "no acute ST elevation; changes are rate-related",
+        "ties AF to anticoagulation (INR 4.1) and to the ischemic-colitis differential"
       ],
       "criticalFindings": [
-        "Frequent premature atrial complexes."
+        "Atrial fibrillation with a rapid ventricular response (~108-120 bpm): irregularly irregular, absent P waves, narrow QRS, no acute ST elevation."
       ],
       "commonMistakes": [
-        "mistaking PACs for an irregular sustained atrial arrhythmia"
+        "calling the irregular rhythm sinus or normal",
+        "mistaking atrial fibrillation for multifocal atrial tachycardia or a STEMI"
       ],
-      "idealAnswer": "Sinus rhythm with frequent premature atrial complexes (early abnormal P waves, narrow QRS).",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response: irregularly irregular rhythm, no discrete P waves with a fibrillatory baseline, narrow QRS at ~108-120 bpm, no acute ST-segment elevation and only rate-related nonspecific ST/T changes. This is his known atrial fibrillation (he is on warfarin with a supratherapeutic INR of 4.1). It matters clinically: AF is a potential embolic source, so it keeps ischemic colitis on the differential; the rapid rate is a demand stressor that warrants rate control; and the supratherapeutic anticoagulation affects bleeding risk and the timing of any intervention.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Frequent premature atrial complexes."
+          "Atrial fibrillation with a rapid ventricular response (~108-120 bpm): irregularly irregular, absent P waves, narrow QRS, no acute ST elevation."
         ],
         "coreActions": [
-          "identifies premature atrial complexes",
-          "distinguishes PACs from PVCs (narrow, abnormal P)"
+          "atrial fibrillation with rapid ventricular response",
+          "no acute ST elevation; changes are rate-related",
+          "ties AF to anticoagulation (INR 4.1) and to the ischemic-colitis differential"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the rhythm sinus/normal, or mistakes AF for MAT/STEMI, or misses the AF",
             "points": -3
           }
         ]
@@ -233,31 +259,34 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = old healed/healing rib fractures with bony callus along the lateral ribs; lungs clear. CREDIT: identifies the healed rib fractures with callus (5); recognizes them as old/benign rather than a pulmonary or pleural lesion (5). PENALTY: calling the film entirely normal / missing the finding, or mistaking the callus for a pulmonary/pleural lesion (-3).",
+      "rubric": "Findings = old healed/healing rib fractures with bony callus along the lateral ribs; lungs clear; no free air under the diaphragm. CREDIT: identifies the healed rib fractures with callus (4); recognizes them as old/benign rather than a pulmonary or pleural lesion (3); states there is no subdiaphragmatic free air to suggest a perforated viscus (3). PENALTY: calling the film entirely normal / missing the finding, or mistaking the callus for a pulmonary/pleural lesion (-3).",
       "keyFindings": [
         "identifies healed rib fractures with callus",
-        "recognizes them as old"
+        "recognizes them as old",
+        "no free air under the diaphragm"
       ],
       "criticalFindings": [
-        "Old healed rib fractures (callus)."
+        "Old healed rib fractures (callus); no subdiaphragmatic free air."
       ],
       "commonMistakes": [
-        "mistaking callus for a pulmonary or pleural lesion"
+        "mistaking callus for a pulmonary or pleural lesion",
+        "failing to comment on the absence of free air"
       ],
-      "idealAnswer": "Old healed rib fractures with bony callus along the lateral ribs.",
+      "idealAnswer": "Old healed rib fractures with bony callus along the lateral ribs; lungs are clear and there is no free air under the diaphragm to suggest a perforated viscus.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Old healed rib fractures (callus)."
+          "Old healed rib fractures (callus); no subdiaphragmatic free air."
         ],
         "coreActions": [
           "identifies healed rib fractures with callus",
-          "recognizes them as old"
+          "recognizes them as old",
+          "no free air under the diaphragm"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the finding, or invents a pulmonary lesion",
             "points": -3
           }
         ]
@@ -267,19 +296,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the CT, what is your diagnosis and severity?",
-      "rubric": "Uncomplicated acute (sigmoid) diverticulitis (6). Cites diverticula + wall thickening + fat stranding WITHOUT abscess/perforation (3). Notes the plan for interval colonoscopy after resolution to exclude malignancy (bonus,1).",
-      "idealAnswer": "Uncomplicated acute sigmoid diverticulitis — CT shows sigmoid diverticula with wall thickening and pericolic fat stranding, without abscess, free air, or fistula. Plan interval colonoscopy after resolution to exclude malignancy.",
+      "prompt": "Given the CT, the EKG, and the full lab panel, what is your diagnosis and severity? Commit to the most likely answer, name the test that resolves the residual ambiguity, and explain how the concurrent abnormalities (atrial fibrillation, AKI on CKD, supratherapeutic INR, anemia) change your reasoning.",
+      "rubric": "Uncomplicated acute (sigmoid) diverticulitis on CT — diverticula + focal wall thickening + pericolic fat stranding WITHOUT a drainable abscess, free air, or fistula (6). Commits to diverticulitis while EXPLICITLY keeping colorectal cancer in play — CT cannot fully exclude a small underlying neoplasm and the weight loss/anemia/bowel-habit change are red flags — so the discriminating test is INTERVAL COLONOSCOPY after the acute episode resolves (3). Integrates the concurrent problems: the EKG confirms atrial fibrillation (embolic source kept ischemic colitis on the list, now lowered by a normal lactate); the supratherapeutic INR 4.1 and AKI on CKD with K 5.3 / Na 131 are separate active problems that shape management, not features of diverticulitis (1).",
+      "idealAnswer": "Uncomplicated acute sigmoid diverticulitis — CT shows sigmoid diverticula with focal wall thickening and pericolic fat stranding and only tiny adjacent gas locules, WITHOUT a drainable abscess, free intraperitoneal air, or fistula. Commit to diverticulitis, but the residual ambiguity is colorectal cancer: CT explicitly cannot exclude a small underlying neoplasm, and his weight loss, microcytic anemia, and months-long change in bowel habits are red flags — so the discriminating test is an INTERVAL COLONOSCOPY ~6-8 weeks after resolution. The EKG confirms his atrial fibrillation, which had kept ischemic colitis on the differential as an embolic source; the normal lactate (1.8) now makes active ischemia unlikely. Note the separate concurrent problems that are NOT explained by diverticulitis and that drive management: supratherapeutic INR of 4.1 on warfarin, AKI on CKD (Cr 1.9 from ~1.4) with K 5.3 and Na 131, and anemia that itself needs a GI source worked up.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Notes the plan for interval colonoscopy after resolution to exclude malignancy",
-            "points": 1
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -287,63 +311,80 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH abdominal pain / intra-abdominal infection: antibiotics covering GNR + anaerobes – cipro+metronidazole or amox-clav (CANT-MISS,6); bowel rest / diet advancement (4); analgesia (3); CT + drainage + surgery if complicated (abscess/perforation) (5); interval colonoscopy after resolution (3). PENALTY: missing complicated disease needing drainage/surgery (-3).",
-      "idealAnswer": "Uncomplicated diverticulitis: bowel rest/clear liquids, analgesia, and antibiotics covering GNRs + anaerobes (ciprofloxacin + metronidazole, or amoxicillin-clavulanate). Complicated disease (abscess, perforation, obstruction) → CT, IV antibiotics, drainage of abscess, surgical evaluation. Outpatient colonoscopy 6–8 weeks after resolution.",
+      "prompt": "What is your management plan? Include your disposition decision — is this patient safe for outpatient management or does he need admission — and address his anticoagulation, kidney function, and diabetes medications.",
+      "rubric": "Per MGH abdominal pain / intra-abdominal infection: antibiotics covering GNRs + anaerobes — ciprofloxacin+metronidazole or amoxicillin-clavulanate, dose-adjusted for CKD (CANT-MISS,5); bowel rest / clear liquids with gradual diet advancement (2); analgesia AVOIDING NSAIDs given CKD, GI bleeding risk, and warfarin (2); manage the supratherapeutic INR — hold warfarin, vitamin K if needed, especially before any procedure (CANT-MISS,3); hold metformin and renally dose all drugs; address hyperkalemia (3); rate-control the atrial fibrillation and reconcile his anticoagulation (2); MANDATORY interval colonoscopy ~6-8 weeks after resolution to exclude malignancy (3); explicit DISPOSITION + SAFE-DISCHARGE reasoning — admit THIS patient given fever/tachycardia, AKI, supratherapeutic INR, anemia, inability to safely take usual meds, and the cancer workup; med reconciliation (stop NSAIDs, hold metformin/warfarin), close follow-up and return precautions (CANT-MISS,5). PENALTY: discharging this patient home unchanged on warfarin/NSAIDs without addressing INR, renal function, or the cancer red flags (-4); missing complicated disease that would need drainage/surgery (-3).",
+      "idealAnswer": "Antibiotics covering gram-negatives and anaerobes — ciprofloxacin + metronidazole or amoxicillin-clavulanate — renally dose-adjusted for his CKD/AKI. Bowel rest with clear liquids and gradual diet advancement. Analgesia with acetaminophen, AVOIDING NSAIDs (CKD, GI bleeding risk, warfarin interaction). Address the supratherapeutic INR of 4.1: hold warfarin and give vitamin K if he needs a procedure or is bleeding, and reconcile anticoagulation. Hold metformin (contrast, AKI, lactic-acidosis risk) and renally dose all medications; manage the K of 5.3 and the AKI with fluids and electrolyte monitoring. Rate-control the atrial fibrillation. Plan a MANDATORY interval colonoscopy ~6-8 weeks after resolution to exclude colorectal cancer, and work up the iron-deficiency anemia. DISPOSITION: this patient is NOT a safe outpatient discharge — admit him given fever and tachycardia, AKI on CKD, supratherapeutic INR, symptomatic anemia, the need to hold his usual home meds, and the malignancy red flags. Do safe med reconciliation (stop NSAIDs, hold metformin and warfarin appropriately), arrange close follow-up, and give clear return precautions for worsening pain, bleeding, or fever. If CT had shown an abscess or perforation, add IV antibiotics, image-guided drainage, and surgical evaluation.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Antibiotics",
-            "points": 6
+            "item": "Antibiotics covering GNRs + anaerobes, renally dose-adjusted",
+            "points": 5
+          },
+          {
+            "item": "Manage supratherapeutic INR (hold warfarin, vitamin K if procedure/bleeding)",
+            "points": 3
+          },
+          {
+            "item": "Disposition: admit with safe-discharge reasoning and med reconciliation (stop NSAIDs, hold metformin/warfarin, follow-up, return precautions)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Bowel rest / diet advancement",
-            "points": 4
-          },
-          {
-            "item": "CT and drainage/surgery if complicated",
-            "points": 5
-          },
-          {
-            "item": "Analgesia",
-            "points": 3
-          },
-          {
-            "item": "Interval colonoscopy after resolution",
-            "points": 3
-          }
-        ],
-        "bonusActions": [
-          {
-            "item": "Outpatient management if uncomplicated",
+            "item": "Bowel rest / clear liquids with diet advancement",
             "points": 2
+          },
+          {
+            "item": "Analgesia avoiding NSAIDs (CKD, GI bleeding, warfarin)",
+            "points": 2
+          },
+          {
+            "item": "Hold metformin and renally dose drugs; address hyperkalemia/AKI",
+            "points": 3
+          },
+          {
+            "item": "Rate-control atrial fibrillation and reconcile anticoagulation",
+            "points": 2
+          },
+          {
+            "item": "Mandatory interval colonoscopy ~6-8 weeks after resolution",
+            "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "Missing complicated disease",
+            "item": "Discharging unchanged on warfarin/NSAIDs without addressing INR, renal function, or cancer red flags",
+            "points": -4
+          },
+          {
+            "item": "Missing complicated disease needing drainage/surgery",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Antibiotics"
+        "Antibiotics covering GNRs + anaerobes, renally dose-adjusted",
+        "Manage supratherapeutic INR (hold warfarin, vitamin K if procedure/bleeding)",
+        "Disposition: admit with safe-discharge reasoning and med reconciliation (stop NSAIDs, hold metformin/warfarin, follow-up, return precautions)"
       ],
       "optionalActions": [
-        "Bowel rest / diet advancement",
-        "CT and drainage/surgery if complicated",
-        "Analgesia",
-        "Interval colonoscopy after resolution",
-        "Outpatient management if uncomplicated"
+        "Bowel rest / clear liquids with diet advancement",
+        "Analgesia avoiding NSAIDs (CKD, GI bleeding, warfarin)",
+        "Hold metformin and renally dose drugs; address hyperkalemia/AKI",
+        "Rate-control atrial fibrillation and reconcile anticoagulation",
+        "Mandatory interval colonoscopy ~6-8 weeks after resolution"
       ],
       "unsafeActions": [
-        "Missing complicated disease"
+        "Discharging unchanged on warfarin/NSAIDs without addressing INR, renal function, or cancer red flags",
+        "Missing complicated disease needing drainage/surgery"
       ],
-      "consults": [],
-      "disposition": "Admit if complicated/unable to tolerate PO",
+      "consults": [
+        "Gastroenterology (interval colonoscopy)",
+        "Surgery if complicated"
+      ],
+      "disposition": "Admit: fever/tachycardia, AKI on CKD, supratherapeutic INR, anemia, and cancer workup preclude safe outpatient management",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Abdominal Pain (Diverticulitis)",
@@ -353,18 +394,21 @@
   ],
   "standardizedPatient": {
     "demeanor": "uncomfortable",
-    "emotionalState": "concerned",
+    "emotionalState": "worried",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "weight_loss_blood_in_stool",
+      "family_cancer_history"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "58-year-old man, mildly uncomfortable. Cooperative.",
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; downplays the chronic bowel changes unless asked",
+    "affect": "58-year-old man, mildly uncomfortable and worried. Cooperative but gives short answers.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the months-long change in bowel habits, weight loss, blood in stool, family cancer history, NSAID use, or the irregular heartbeat unless directly asked",
+      "Do not reveal sensitive social history unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -383,7 +427,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -393,11 +437,77 @@
         "smoking",
         "tobacco",
         "cigarettes",
-        "do you smoke"
+        "do you smoke",
+        "pack years"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "bowel_habits_weight_loss",
+      "category": "hpi",
+      "triggerConcepts": [
+        "bowel habits",
+        "change in stool",
+        "constipation",
+        "diarrhea",
+        "weight loss",
+        "appetite",
+        "stool caliber",
+        "narrow stools"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "blood_in_stool",
+      "category": "ros",
+      "triggerConcepts": [
+        "blood in stool",
+        "rectal bleeding",
+        "dark stools",
+        "melena",
+        "blood when you go",
+        "tarry stools"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "palpitations_cardiac",
+      "category": "ros",
+      "triggerConcepts": [
+        "palpitations",
+        "heart racing",
+        "irregular heartbeat",
+        "fluttering",
+        "shortness of breath",
+        "chest"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "relatives",
+        "colon cancer in family",
+        "cancer runs in the family"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -447,7 +557,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "nausea"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -474,7 +586,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney",
+        "diabetes",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -487,7 +602,12 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "over the counter",
+        "pain medications",
+        "blood thinner",
+        "warfarin",
+        "ibuprofen"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -495,12 +615,15 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "prior_episodes",
-      "category": "hpi",
+      "id": "diet_risk",
+      "category": "social",
       "triggerConcepts": [
-        "happened before",
-        "prior episodes",
-        "first time"
+        "diet",
+        "what do you eat",
+        "fiber",
+        "lifestyle",
+        "exercise",
+        "risk factors"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -510,18 +633,8 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_cva_tenderness_finding_1",
-      "finding": "No costovertebral angle tenderness. Cardiac/lungs: normal.",
-      "revealedBy": [
-        "assess_cva_tenderness"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No CVA tenderness."
-    },
-    {
-      "id": "assess_rebound_tenderness_finding_2",
-      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "id": "assess_rebound_tenderness_finding_1",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
@@ -530,8 +643,18 @@
       "normalIfNotPresent": "No rebound tenderness."
     },
     {
+      "id": "palpate_llq_finding_2",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.",
+      "revealedBy": [
+        "palpate_llq"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No LLQ tenderness."
+    },
+    {
       "id": "assess_guarding_finding_3",
-      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.",
       "revealedBy": [
         "assess_guarding"
       ],
@@ -540,18 +663,28 @@
       "normalIfNotPresent": "No guarding."
     },
     {
-      "id": "palpate_llq_finding_4",
-      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "id": "auscultate_mitral_area_finding_4",
+      "finding": "Cardiac: irregularly irregular rhythm, no murmurs (consistent with atrial fibrillation).",
       "revealedBy": [
-        "palpate_llq"
+        "auscultate_mitral_area"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No LLQ tenderness."
+      "normalIfNotPresent": "Regular rhythm, no murmur."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_5",
-      "finding": "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
+      "id": "assess_cva_tenderness_finding_5",
+      "finding": "No costovertebral angle tenderness (argues against a urinary/renal source).",
+      "revealedBy": [
+        "assess_cva_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No CVA tenderness."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_6",
+      "finding": "Bowel sounds present; abdomen not distended.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -570,62 +703,72 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Diverticulitis",
-    "diagnosticFramework": "58M presents with 3 days of constant left lower quadrant pain, low-grade fever, and a change in bowel habits. The diagnosis is Diverticulitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58M with hypertension, type 2 diabetes, CKD, and atrial fibrillation on warfarin presents with 4 days of constant left lower quadrant pain, low-grade fever, and a months-long change in bowel habits with unintentional weight loss. The diagnosis is uncomplicated acute sigmoid Diverticulitis, but it is layered: colorectal cancer is a genuine competing must-not-miss (weight loss, microcytic anemia, occult blood, family history) that mandates interval colonoscopy, and concurrent problems — atrial fibrillation with RVR, AKI on CKD with hyperkalemia and hyponatremia, and a supratherapeutic INR — must be recognized as separate active issues. It is reached by eliciting the red-flag history, performing the targeted exam, ordering a focused renal- and anticoagulation-aware workup, reading the EKG as atrial fibrillation, and excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "No costovertebral angle tenderness. Cardiac/lungs: normal.",
-      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
-      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
-      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present.",
-      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; no diffuse rebound or rigidity (uncomplicated); no palpable mass; bowel sounds present."
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.",
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.",
+      "Abdomen: LEFT lower quadrant tenderness with mild voluntary guarding; localized, NOT diffuse; no diffuse rebound or rigidity (no peritonitis); no palpable mass; bowel sounds present; not distended.",
+      "Cardiac: irregularly irregular rhythm, no murmurs (consistent with atrial fibrillation).",
+      "No costovertebral angle tenderness (argues against a urinary/renal source).",
+      "Bowel sounds present; abdomen not distended."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
+      "INR",
       "UA",
+      "Lactate",
       "CT_abdomen"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Diverticulitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Diverticulitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the irregular tachycardia.",
+      "Elicit the focused history, drawing out the months-long bowel-habit change, weight loss, dark stools, family cancer history, NSAID use, and palpitations only on direct questioning.",
+      "Perform the targeted physical exam, identifying localized LLQ tenderness without peritonitis and an irregularly irregular pulse.",
+      "Build a differential led by Diverticulitis while explicitly weighing colorectal cancer, ischemic colitis, and colitis.",
+      "Order a renal- and anticoagulation-aware workup (CT with contrast, INR, BMP, lactate) and read the EKG as atrial fibrillation; avoid colonoscopy in the acute phase.",
+      "Commit to uncomplicated diverticulitis, plan interval colonoscopy to exclude malignancy, and manage the diverticulitis plus the concurrent INR, renal, and rhythm problems with an admission disposition."
     ],
     "commonPitfalls": [
-      "Missing complicated disease"
+      "Anchoring on diverticulitis and dismissing the colorectal-cancer red flags",
+      "Performing colonoscopy during the acute episode",
+      "Discharging unchanged on warfarin/NSAIDs without addressing INR, renal function, or the cancer workup",
+      "Missing complicated disease needing drainage/surgery"
     ],
     "managementPearls": [
-      "Antibiotics"
+      "Antibiotics covering GNRs + anaerobes, renally dose-adjusted",
+      "Manage the supratherapeutic INR and reconcile high-risk medications",
+      "Mandatory interval colonoscopy after resolution"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "assess_cva_tenderness",
-      "assess_rebound_tenderness"
+      "assess_rebound_tenderness",
+      "palpate_llq"
     ],
     "criticalWorkupItems": [
-      "CT abdomen/pelvis with contrast"
+      "CT abdomen/pelvis with IV contrast",
+      "INR / coagulation panel"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm with frequent premature atrial complexes (early abnormal P waves, narrow QRS).",
-      "Old healed rib fractures with bony callus along the lateral ribs — a benign finding."
+      "Atrial fibrillation with a rapid ventricular response; no acute ST elevation.",
+      "Old healed rib fractures with bony callus; no subdiaphragmatic free air — a benign finding."
     ],
     "criticalManagementItems": [
-      "Antibiotics"
+      "Antibiotics covering GNRs + anaerobes, renally dose-adjusted",
+      "Disposition: admit with safe-discharge reasoning and med reconciliation"
     ],
     "keyImageInterpretationFindings": [
-      "Frequent premature atrial complexes.",
-      "Old healed rib fractures (callus)."
+      "Atrial fibrillation with a rapid ventricular response (~108-120 bpm): irregularly irregular, absent P waves, narrow QRS, no acute ST elevation.",
+      "Old healed rib fractures (callus); no subdiaphragmatic free air."
     ],
     "criticalImageInterpretationFindings": [
-      "Frequent premature atrial complexes.",
-      "Old healed rib fractures (callus)."
+      "Atrial fibrillation with a rapid ventricular response (~108-120 bpm): irregularly irregular, absent P waves, narrow QRS, no acute ST elevation.",
+      "Old healed rib fractures (callus); no subdiaphragmatic free air."
     ],
     "imageInterpretationPearls": [
+      "An irregularly irregular rhythm with no P waves is atrial fibrillation — name the rate, then integrate it into the embolic-source differential and the anticoagulation plan.",
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Read every study systematically and state pertinent negatives, including the absence of subdiaphragmatic free air."
     ]
   },
   "communicationScoring": {
@@ -640,7 +783,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (weight loss, blood in stool, family cancer history)",
         "points": 1
       },
       {
@@ -655,8 +798,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated EKG read; pathology-forward standalone CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

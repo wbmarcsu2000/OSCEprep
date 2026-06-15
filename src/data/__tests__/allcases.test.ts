@@ -6,7 +6,7 @@ import { scoreBands } from "../loader";
 import { breadthCreditForCategory } from "../curriculum";
 
 // Eagerly import every case JSON so we exercise the adapter + a full scoring
-// pass on all 68 cases (catches schema drift the Python validator can't).
+// pass on every case (catches schema drift the validator can't).
 const modules = import.meta.glob("../cases/*.json", { eager: true }) as Record<string, { default: unknown }>;
 
 describe("every case loads, adapts, and scores", () => {
@@ -14,7 +14,7 @@ describe("every case loads, adapts, and scores", () => {
     for (const c of manifest.cases) {
       expect(modules[`../cases/${c.file}`], `missing file for ${c.id}`).toBeTruthy();
     }
-    expect(manifest.cases.length).toBe(77);
+    expect(manifest.cases.length).toBe(86);
   });
 
   for (const [path, mod] of Object.entries(modules)) {

@@ -160,11 +160,18 @@ function buildReadScoring(study: LitflStudy, max: number): SectionScoring {
   };
 }
 
-function applyStudyToStep(step: StepModel, study: LitflStudy, kind: "ecg" | "cxr"): StepModel {
+function applyStudyToStep(
+  step: StepModel,
+  study: LitflStudy,
+  kind: "ecg" | "cxr",
+  integrated = false,
+): StepModel {
   const modality = kind === "ecg" ? "12-lead ECG" : "chest X-ray";
   return {
     ...step,
-    prompt: `Reading practice — interpret the ${modality} shown below. Read it systematically, then commit to a diagnosis (the underlying pathology, not just the pattern).`,
+    prompt: integrated
+      ? `Here is the patient's ${modality}. Interpret it systematically, then state how it fits the clinical picture.`
+      : `Reading practice — interpret the ${modality} shown below. Read it systematically, then commit to a diagnosis (the underlying pathology, not just the pattern).`,
     criticalFindings: [study.diagnosis],
     keyFindings: study.findings,
     // Lead with the pathology (diagnosis), then the supporting features.
@@ -189,10 +196,39 @@ export function applyLitflStudies(model: CaseModel, index: number): CaseModel {
   const steps = model.steps.map((step) => {
     if (step.type !== "read" || !step.imageKey) return step;
     const isEcg = /ekg|ecg/i.test(step.imageKey);
-    const study = isEcg ? ecg : cxr;
     const kind: "ecg" | "cxr" = isEcg ? "ecg" : "cxr";
+    const existing = images[step.imageKey] ?? ({} as typeof images[string]);
+    const collection = isEcg ? LITFL_ECG_STUDIES : LITFL_CXR_STUDIES;
+    const pinned =
+      typeof existing.litflStudyN === "number"
+        ? collection.find((s) => s.n === existing.litflStudyN)
+        : undefined;
+    // INTEGRATED read: the study is the patient's OWN. Keep the case-authored
+    // read step (its prompt, findings, and scoring) verbatim — it encodes
+    // case-specific grading a bare bank study can't capture (e.g. "AF WITH
+    // lateral ischemia → NSTEMI"). A pinned study, if named, only supplies a
+    // representative tracing/film to DISPLAY; grading stays on the authored
+    // content (plus the standing "representative / different patient" notice).
+    if (existing.integrated === true) {
+      if (pinned) {
+        const media = isEcg ? LITFL_MEDIA.ecg[pinned.n] : LITFL_MEDIA.cxr[pinned.n];
+        images[step.imageKey] = {
+          ...existing,
+          asset: media?.img ?? existing.asset ?? null,
+          asset2: media?.img2 ?? existing.asset2 ?? null,
+          source: litflStudyUrl(kind, pinned.n),
+          attribution: `LITFL ${kind === "ecg" ? "ECG" : "CXR"} Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0`,
+          recommendedSource: kind === "ecg" ? "LITFL Top 100 ECG" : "LITFL Top 100 CXR",
+          assetNeeded: media?.img ? false : existing.assetNeeded ?? true,
+        };
+      }
+      return step;
+    }
+    // NON-INTEGRATED: a standalone "reading practice" drill graded on a bank
+    // study — the pinned study if named (relevant but still a drill), else the
+    // deterministic index-assigned study.
+    const study = pinned ?? (isEcg ? ecg : cxr);
     const media = isEcg ? LITFL_MEDIA.ecg[study.n] : LITFL_MEDIA.cxr[study.n];
-    const existing = images[step.imageKey];
     images[step.imageKey] = {
       ...existing,
       label: kind === "ecg" ? "12-lead EKG" : "Chest X-ray",
@@ -209,7 +245,7 @@ export function applyLitflStudies(model: CaseModel, index: number): CaseModel {
       searchTerms: [study.diagnosis],
       assetNeeded: false,
     };
-    return applyStudyToStep(step, study, kind);
+    return applyStudyToStep(step, study, kind, pinned != null);
   });
   return { ...model, steps, images };
 }

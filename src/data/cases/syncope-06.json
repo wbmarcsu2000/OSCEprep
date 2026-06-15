@@ -1,80 +1,86 @@
 {
   "id": "syncope-06",
   "category": "Syncope",
-  "difficulty": "moderate",
-  "title": "Fainting with black stools",
+  "difficulty": "hard",
+  "title": "Syncope in an anticoagulated elder with a racing pulse and black stools",
   "diagnosis": "Syncope from occult GI bleed",
   "chart": {
-    "ageSex": "70M",
+    "ageSex": "74M",
     "cc": "Passed out",
-    "oneLiner": "70M presents after fainting at home; he has felt increasingly tired and lightheaded and takes daily NSAIDs for joint pain.",
+    "oneLiner": "74M with atrial fibrillation on apixaban, CAD, CKD, and type 2 diabetes presents after collapsing at home; he has felt increasingly tired and lightheaded for days, takes daily ibuprofen and aspirin for knee pain, and on arrival has an irregular, rapid pulse.",
     "vitals": {
-      "BP": "102/64",
-      "HR": "108",
-      "RR": "18",
-      "Temp": "36.9°C",
-      "SpO2": "98% RA"
+      "BP": "98/61",
+      "HR": "128 irregular",
+      "RR": "20",
+      "Temp": "36.7°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I stood up, went lightheaded, and the next thing I knew I was on the floor.",
-  "patientFile": "PERSONA: 70-year-old man, pale and tired-looking. Good historian once prompted.\n\nHPI: Several days of fatigue and lightheadedness, today a syncopal episode when standing. On asking: he has noticed BLACK, TARRY stools for a few days (melena) and mild epigastric discomfort. Takes ibuprofen daily for knee arthritis and is on aspirin. NO frank hematemesis, NO chest pain, NO palpitations. The faint was preceded by lightheadedness on standing (hypovolemic).\nPMH: osteoarthritis, hypertension, coronary disease. MEDS: daily ibuprofen, aspirin, lisinopril. SOCIAL: occasional alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, mildly tachycardic, looks fatigued.\n- Vitals: BP 102/64, HR 108, RR 18, 36.9°C, SpO2 98% RA; orthostatic drop if checked.\n- Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.\n- RECTAL EXAM: melena (black tarry stool) on the glove if performed — the key finding.\n- Conjunctival pallor if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the black stools, NSAID/aspirin use, or epigastric discomfort unless asked about stool color/GI symptoms, medications/pain relievers, or abdominal symptoms.\n- The melena is revealed only if the student performs (or asks for) a rectal exam.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I got up off the couch, everything went grey, and the next thing I knew my wife was shaking me on the floor.",
+  "patientFile": "PERSONA: 74-year-old man, pale, tired-looking, and a little short of breath. A reasonable historian once prompted, but tends to blame everything on his bad knee and his heart 'doing its thing again.'\n\nHPI: Four to five days of progressive fatigue, exertional breathlessness, and lightheadedness, capped today by a syncopal episode as he stood up from the couch. There was a brief grey-out with no warning palpitations he remembers, no chest pain, no tongue-biting, no incontinence, and he came round within a minute or so feeling washed-out (no prolonged confusion). On directed asking: he has noticed BLACK, TARRY, foul stools for about three days (melena) and some dull burning in the upper belly that he put down to 'indigestion.' NO vomiting of blood or coffee-grounds that he noticed, NO bright red blood per rectum, NO fevers. He felt his heart 'fluttering' on and off for a couple of days but says it does that with his atrial fibrillation. The faint was preceded by lightheadedness on standing (postural).\nMEDS (reveal on direct questioning about medicines/blood thinners/pain pills): apixaban (a blood thinner) for atrial fibrillation; daily low-dose aspirin; ibuprofen most days for knee arthritis, sometimes two or three times a day; metoprolol for rate control; lisinopril for blood pressure; metformin for diabetes; and sertraline started about two months ago for low mood. He is not always sure he remembers his evening apixaban. NO warfarin.\nPMH: atrial fibrillation (CHA2DS2-VASc high, on apixaban), coronary artery disease with a prior stent, chronic kidney disease (baseline creatinine ~1.3), type 2 diabetes, hypertension, osteoarthritis. SOCIAL: retired machinist; 2-3 beers most evenings; former smoker. FAMILY: noncontributory. ROS: fatigue, exertional dyspnea, lightheadedness, melena, mild epigastric burning as above; otherwise negative.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, fatigued, mildly diaphoretic, slightly breathless at rest.\n- Vitals: BP 98/61, HR 128 and irregularly irregular, RR 20, 36.7C, SpO2 97% RA; marked orthostatic drop with reproduction of symptoms if checked.\n- Cardiac: tachycardic, irregularly irregular, no new murmur; JVP low/flat. Abdomen: soft, mild epigastric tenderness, no rebound or guarding, no pulsatile mass.\n- RECTAL EXAM: black, tarry, melenic stool on the glove if performed - a key finding.\n- Conjunctival and palmar pallor if examined; cool peripheries with sluggish capillary refill if assessed.\n- No focal neurologic deficit; no asterixis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the black stools, the anticoagulant/aspirin/NSAID use, or the epigastric burning unless asked about stool color/GI symptoms, medications/blood thinners/pain relievers, or abdominal symptoms.\n- Do NOT volunteer that he sometimes misses his apixaban dose unless asked specifically about how reliably he takes his medicines.\n- The melena is revealed only if the student performs (or asks for) a rectal exam.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 96 — normal.",
-      "CBC": "Hgb 7.6 (low), MCV low-normal, WBC 8.0, Plt 280 — significant anemia.",
-      "BMP": "BUN 42, Cr 1.1 — elevated BUN:Cr ratio consistent with an upper GI bleed.",
-      "Coags": "INR normal (not on warfarin).",
-      "TypeCross": "Type and crossmatch sent.",
-      "Orthostatics": "Positive orthostatic drop with symptoms.",
-      "StoolEvaluation": "Melena (black, tarry stool) is documented on the chart — indicates a GI bleeding source. Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
+      "Glucose": "Fingerstick glucose 142 - mildly elevated (known diabetic, stress); not contributing to syncope.",
+      "CBC": "Hgb 7.4 (low; reported baseline ~13), MCV 78 (low - microcytic, suggesting chronic iron loss superimposed on an acute bleed), WBC 9.2, Plt 264. Significant anemia.",
+      "BMP": "Na 138, K 5.4 (high), Cl 104, HCO3 19 (low) -> anion gap = 138 - (104 + 19) = 15 (mildly elevated). BUN 52, Cr 1.8 (baseline ~1.3) -> BUN:Cr = 52 / 1.8 = 29 (markedly elevated, >20), consistent with an upper GI bleed plus prerenal AKI on CKD. The hyperkalemia reflects AKI plus lisinopril; not yet EKG-manifest.",
+      "Lactate": "Lactate 3.1 mmol/L (elevated) - tissue hypoperfusion from hypovolemia; explains the mildly elevated anion gap.",
+      "Coags": "INR 1.6 and a measurable anti-Xa (apixaban) effect, accentuated by renal impairment - a pharmacologic bleeding diathesis rather than intrinsic coagulopathy. Not on warfarin.",
+      "Troponin": "High-sensitivity troponin mildly elevated and on a slow rise (type 2 / demand pattern) - supply-demand mismatch from anemia and rate-related ischemia, not a primary plaque-rupture MI.",
+      "TypeCross": "Type and crossmatch sent; 2 units pRBC requested and held.",
+      "Orthostatics": "Marked orthostatic drop with reproduction of the patient's symptoms.",
+      "StoolEvaluation": "Melena (black, tarry stool) documented on rectal exam - indicates a (likely upper) GI bleeding source. Provided as a clinical/diagnostic finding."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
-      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS.",
-      "verify": "Source a study matching: Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
-      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) - NonCommercial",
+      "integrated": true,
+      "litflStudyN": 2,
+      "findings": "Atrial fibrillation with a rapid ventricular response (~125-135 bpm): irregularly irregular narrow-complex rhythm, absent organized P waves, fibrillatory baseline, with rate-related horizontal ST-segment depression in the lateral leads (I, aVL, V5-V6) - a demand-ischemia pattern, not an acute STEMI. No peaked T waves despite K 5.4.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response and rate-related lateral ST depression. Self-host with appropriate credit; do not reuse the prior tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) - (c) Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing hyperkalemia peaked T waves",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and lateral ST depression",
       "searchTerms": [
-        "hyperkalemia peaked T waves ECG",
-        "hyperkalaemia ECG sine wave"
+        "atrial fibrillation rapid ventricular response ECG",
+        "AF with rate-related ST depression demand ischemia"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 64-year-old man with end-stage kidney disease who missed dialysis presents with weakness and a sluggish, irregular pulse."
+      "clinicalVignette": "An older anticoagulated man with known atrial fibrillation presents pale and lightheaded with an irregularly irregular, fast pulse."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
-      "license": "Wikimedia Commons — verify file license",
-      "findings": "Healed/healing rib fractures with callus along the lateral ribs; lungs clear.",
-      "verify": "Source a study matching: Healed/healing rib fractures with callus along the lateral ribs; lungs clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "license": "Wikimedia Commons - verify file license",
+      "findings": "Clear lung fields, no pulmonary edema or consolidation; normal cardiomediastinal silhouette; no free air under the diaphragm; incidental old healed rib fractures with callus along the lateral ribs.",
+      "verify": "Source a study matching: clear lungs, no free air under the diaphragm, incidental healed lateral rib fractures. Self-host with appropriate credit; do not reuse the prior tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing old healed rib fractures",
+      "imageDescription": "chest radiograph with clear lungs, no free air, and old healed rib fractures",
       "searchTerms": [
         "healed rib fractures chest x-ray",
-        "old rib fracture callus radiograph"
+        "normal PA chest radiograph no free air"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 59-year-old man is evaluated with a chest film for lateral chest wall pain after a recent fall."
+      "clinicalVignette": "An older man with a fall and syncope has a screening chest film to exclude an acute cardiopulmonary process and free air."
     }
   },
   "revealKeys": [
     "Glucose",
     "CBC",
     "BMP",
+    "Lactate",
     "Coags",
+    "Troponin",
     "TypeCross",
     "Orthostatics",
+    "StoolEvaluation",
     "ekg",
-    "cxr",
-    "StoolEvaluation"
+    "cxr"
   ],
   "essential": [
     "CBC",
@@ -86,49 +92,58 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for the syncope (note your leading diagnosis).",
-      "rubric": "Hypovolemic syncope from acute GI blood loss (leading & CANT-MISS,8). Orthostatic hypotension (core,3). Cardiac arrhythmia (CANT-MISS,4). Anemia of other cause (core,3). Vasovagal (less likely) (core,2). Connects pallor + tachycardia + (on history) melena/NSAID use to occult GI bleeding (core,5).",
-      "idealAnswer": "Leading diagnosis: Hypovolemic syncope from acute GI blood loss. Must-not-miss diagnoses to exclude: Cardiac arrhythmia. Also reasonable: Orthostatic hypotension; Anemia of other cause; Vasovagal (less likely).",
+      "prompt": "Based on your history and physical, list your differential for this elderly man's syncope and note your leading diagnosis. He has known atrial fibrillation and arrived with a fast, irregular pulse, so explicitly name three distinct mechanisms by which his syncope could be cardiac/arrhythmic versus hypovolemic, and say which you favor and why.",
+      "rubric": "Hypovolemic syncope from acute GI blood loss is the leading & CANT-MISS diagnosis (8). The genuine competing fork - primary cardiogenic/arrhythmic syncope, here atrial fibrillation with rapid ventricular response causing inadequate cardiac output - must be raised as CANT-MISS (5). Names three distinct cardiac-vs-hypovolemic mechanisms (e.g. tachyarrhythmia/AF-RVR with poor filling; bradyarrhythmia/conduction block or pauses; structural - aortic stenosis or ischemia; versus hypovolemia/orthostasis from blood loss) (core, up to 3). Orthostatic hypotension (core,2). Anemia of another (chronic) cause (core,2). Vasovagal/situational, less likely (core,1). Connects pallor + tachycardia + orthostasis + (on history) melena/NSAID/anticoagulant use to occult GI bleeding and argues the rapid AF is a RATE RESPONSE to anemia/hypovolemia rather than the primary cause (core,4). PENALTY: anchoring on 'just his AF acting up' and missing the bleed (-3).",
+      "idealAnswer": "Leading diagnosis: Hypovolemic syncope from acute (likely upper) GI blood loss - pallor, orthostasis, tachycardia, and on history melena with NSAID/aspirin/anticoagulant use. The genuine competing diagnosis is primary cardiogenic/arrhythmic syncope given his known atrial fibrillation and rapid irregular pulse; this must be excluded. Three distinct cardiac-vs-hypovolemic mechanisms to name: (1) tachyarrhythmia - atrial fibrillation with rapid ventricular response shortening diastolic filling and dropping output; (2) bradyarrhythmia/conduction disease - high-grade AV block or sinus pauses (he is on metoprolol); (3) structural/ischemic - aortic stenosis or demand ischemia reducing forward flow - versus the hypovolemic/orthostatic mechanism of acute blood loss. Favor hypovolemic GI bleed, and argue the AF with rapid ventricular response is most likely a secondary RATE response to anemia and volume depletion rather than the primary driver. Also reasonable: orthostatic hypotension, anemia of another cause, vasovagal (less likely).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Hypovolemic syncope from acute GI blood loss",
+            "item": "Hypovolemic syncope from acute GI blood loss (leading)",
             "points": 8
           },
           {
-            "item": "Cardiac arrhythmia",
-            "points": 4
+            "item": "Primary cardiogenic/arrhythmic syncope - AF with rapid ventricular response (competing fork)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
+            "item": "Names three distinct cardiac-vs-hypovolemic mechanisms (tachyarrhythmia; brady/conduction; structural/ischemic vs hypovolemia)",
+            "points": 3
+          },
+          {
             "item": "Orthostatic hypotension",
-            "points": 3
-          },
-          {
-            "item": "Anemia of other cause",
-            "points": 3
-          },
-          {
-            "item": "Vasovagal (less likely)",
             "points": 2
           },
           {
-            "item": "Connects pallor + tachycardia + (on history) melena/NSAID use to occult GI bleeding",
-            "points": 5
+            "item": "Anemia of another (chronic) cause",
+            "points": 2
+          },
+          {
+            "item": "Vasovagal / situational (less likely)",
+            "points": 1
+          },
+          {
+            "item": "Connects pallor + tachycardia + orthostasis + melena/NSAID/anticoagulant use to occult GI bleeding and frames the rapid AF as a secondary rate response",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on 'his AF acting up' and misses the bleed",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Cardiac arrhythmia"
+        "Primary cardiogenic/arrhythmic syncope - AF with rapid ventricular response"
       ],
       "acceptableAlternatives": [
         "Orthostatic hypotension",
-        "Anemia of other cause",
-        "Vasovagal (less likely)"
+        "Anemia of another (chronic) cause",
+        "Vasovagal / situational (less likely)"
       ]
     },
     {
@@ -136,9 +151,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order? (Don't forget the bedside.)",
-      "rubric": "CBC for anemia (CANT-MISS,4). Recognizes GI bleeding and reviews the documented stool finding / melena (CANT-MISS,4). BMP — note BUN:Cr ratio (2). Type and crossmatch (2). Coagulation studies (1). EKG (1). Orthostatic vitals (1). PENALTY: working up syncope without a rectal exam / not checking a hemoglobin (-3).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; CBC; BMP; Coagulation studies; Type & crossmatch; Orthostatics; Stool studies.",
+      "prompt": "What initial workup do you want to order? Don't forget the bedside.",
+      "rubric": "CBC for anemia (CANT-MISS,4). Recognizes GI bleeding and performs/reviews a rectal exam for melena (CANT-MISS,4). 12-lead EKG given the irregular tachycardia and AF history (2). BMP - note BUN:Cr ratio, AKI, and potassium (2). Type and crossmatch (1). Coagulation studies / assess the apixaban effect (1). Lactate and troponin (1). Orthostatic vitals (1). CXR (1). PENALTY: working up syncope without a rectal exam / not checking a hemoglobin (-3); reflexively cardioverting or heavily rate-controlling the AF before assessing volume/bleeding (-2).",
+      "idealAnswer": "Order: EKG; CXR; fingerstick Glucose; CBC; BMP (BUN:Cr, AKI, potassium); Lactate; Troponin; Coagulation studies including assessment of the apixaban/anti-Xa effect; Type & crossmatch with units held; orthostatic vitals; and a rectal exam to document stool color. Resist treating the AF rate as the primary problem until volume status and bleeding are assessed.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -147,58 +162,63 @@
             "points": 4
           },
           {
-            "item": "Recognizes GI bleeding and reviews the documented stool finding / melena",
+            "item": "Rectal exam to document melena / recognizes GI bleeding",
             "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Glucose",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Coagulation studies",
-            "points": 2
+            "item": "BMP (BUN:Cr, AKI, potassium)",
+            "points": 1
           },
           {
             "item": "Type & crossmatch",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Orthostatics",
-            "points": 2
+            "item": "Coagulation studies / assess apixaban effect",
+            "points": 1
+          },
+          {
+            "item": "Lactate and troponin",
+            "points": 1
+          },
+          {
+            "item": "Orthostatic vitals",
+            "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "working up syncope without a rectal exam / not checking a hemoglobin",
+            "item": "Working up syncope without a rectal exam / not checking a hemoglobin",
             "points": -3
+          },
+          {
+            "item": "Cardioverting or heavily rate-controlling the AF before assessing volume/bleeding",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
         "CBC for anemia",
-        "Recognizes GI bleeding and reviews the documented stool finding / melena"
+        "Rectal exam to document melena / recognizes GI bleeding"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "working up syncope without a rectal exam / not checking a hemoglobin"
+        "Working up syncope without a rectal exam / not checking a hemoglobin",
+        "Cardioverting or heavily rate-controlling the AF before assessing volume/bleeding"
       ],
       "orderSensitiveActions": [
-        "working up syncope without a rectal exam / not checking a hemoglobin"
+        "Working up syncope without a rectal exam / not checking a hemoglobin"
       ]
     },
     {
@@ -207,33 +227,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = hyperkalemia pattern: tall peaked symmetric T waves, P-wave flattening/loss, and a widening QRS. CREDIT: identifies the tall peaked T waves (6); recognizes the hyperkalemia pattern as a time-critical emergency (5); notes P-wave flattening and QRS widening (2); systematic read (2). PENALTY: dismissing the peaked T waves as normal / missing the pattern (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG, taken on arrival. Describe your findings and say how they change (or do not change) your leading diagnosis.",
+      "rubric": "Findings = atrial fibrillation with a rapid ventricular response (~125-135 bpm): irregularly irregular narrow-complex rhythm with no organized P waves and a fibrillatory baseline, plus rate-related horizontal ST depression in the lateral leads - a demand-ischemia pattern, NOT an acute STEMI; and notably NO peaked T waves despite a potassium of 5.4. CREDIT: identifies AF with rapid ventricular response (6); recognizes the lateral ST depression as RATE-RELATED demand ischemia rather than a primary occlusive MI, and interprets the fast AF as most likely a secondary response to anemia/hypovolemia (5); notes the absence of peaked T waves despite hyperkalemia / systematic read with rate, rhythm, axis, intervals (2); states this does not overturn the GI-bleed as the leading driver (2). PENALTY: calling the lateral ST depression a STEMI and rushing to cath, or treating the AF as a primary electrical emergency warranting immediate cardioversion in a bleeding patient (-3).",
       "keyFindings": [
-        "peaked T waves",
-        "recognizes a hyperkalemia pattern as urgent"
+        "atrial fibrillation with rapid ventricular response",
+        "rate-related lateral ST depression = demand ischemia, not STEMI",
+        "no peaked T waves despite K 5.4"
       ],
       "criticalFindings": [
-        "Hyperkalemia pattern: peaked T waves with QRS widening."
+        "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) - a secondary response to anemia/hypovolemia, not a primary STEMI."
       ],
       "commonMistakes": [
-        "dismissing peaked T waves as a normal variant",
-        "missing the loss of P waves"
+        "calling the lateral ST depression an acute STEMI and activating cath",
+        "treating the rapid AF as a primary electrical emergency in a bleeding patient",
+        "expecting (or inventing) peaked T waves because the potassium is 5.4"
       ],
-      "idealAnswer": "Hyperkalemia: tall peaked T waves, P-wave flattening, widening QRS — a time-critical pattern.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (~125-135 bpm): irregularly irregular narrow-complex rhythm, no organized P waves, fibrillatory baseline, with horizontal ST depression in the lateral leads (I, aVL, V5-V6). The ST depression is rate-related demand ischemia, not an acute occlusive STEMI, and there are NO peaked T waves despite the potassium of 5.4. This is best read as a SECONDARY tachycardic response to anemia and hypovolemia from blood loss, so it supports rather than overturns the GI-bleed as the leading cause; the fix is to treat the bleed and transfuse, not to cardiovert or aggressively rate-control a hypovolemic patient.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Hyperkalemia pattern: peaked T waves with QRS widening."
+          "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) - a secondary response to anemia/hypovolemia, not a primary STEMI."
         ],
         "coreActions": [
-          "peaked T waves",
-          "recognizes a hyperkalemia pattern as urgent"
+          "atrial fibrillation with rapid ventricular response",
+          "rate-related lateral ST depression = demand ischemia, not STEMI",
+          "interprets the fast AF as secondary to anemia/hypovolemia, supporting the GI-bleed"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls it a STEMI / treats the AF as a primary electrical emergency in a bleeding patient",
             "points": -3
           }
         ]
@@ -246,32 +269,33 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = old healed/healing rib fractures with bony callus along the lateral ribs; lungs otherwise clear. CREDIT: identifies the healed rib fractures with callus (6); recognizes them as old and not an acute process (4). PENALTY: calling the film normal / mistaking the callus for a pulmonary or pleural lesion (-2).",
+      "rubric": "Findings = clear lungs with no pulmonary edema or consolidation, normal cardiomediastinal silhouette, NO free air under the diaphragm, and incidental old healed rib fractures with callus along the lateral ribs. CREDIT: recognizes a non-acute film and specifically states there is no pulmonary edema and no subdiaphragmatic free air (5); identifies the healed rib fractures with callus as an old, incidental finding (4). PENALTY: calling the film acutely abnormal, mistaking the callus for a pulmonary/pleural lesion, or inventing edema/consolidation (-2).",
       "keyFindings": [
-        "identifies healed rib fractures with callus",
-        "recognizes them as old"
+        "clear lungs, no edema, no free air under the diaphragm",
+        "incidental old healed rib fractures with callus"
       ],
       "criticalFindings": [
-        "Old healed rib fractures (callus)."
+        "Clear film with no pulmonary edema and no subdiaphragmatic free air; incidental old healed rib fractures."
       ],
       "commonMistakes": [
-        "mistaking callus for a pulmonary or pleural lesion"
+        "mistaking callus for a pulmonary or pleural lesion",
+        "inventing pulmonary edema or an infiltrate on a clear film"
       ],
-      "idealAnswer": "Old healed rib fractures with bony callus along the lateral ribs.",
+      "idealAnswer": "Clear lung fields with no pulmonary edema or consolidation, a normal cardiomediastinal silhouette, and no free air under the diaphragm; incidentally there are old healed rib fractures with bony callus along the lateral ribs - an old, non-acute finding.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Old healed rib fractures (callus)."
+          "Clear film with no pulmonary edema and no subdiaphragmatic free air; incidental old healed rib fractures."
         ],
         "coreActions": [
-          "identifies healed rib fractures with callus",
-          "recognizes them as old"
+          "clear lungs, no edema, no free air under the diaphragm",
+          "incidental old healed rib fractures with callus"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
-            "points": -3
+            "label": "calls the study acutely abnormal / invents edema or a lesion",
+            "points": -2
           }
         ]
       }
@@ -280,9 +304,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Hgb is 7.6 with an elevated BUN:Cr and melena on rectal exam. What is your diagnosis and reasoning?",
-      "rubric": "Syncope from an acute (likely upper) GI bleed causing hypovolemia/anemia (6). Cites melena + elevated BUN:Cr + NSAID/aspirin use as the source (4).",
-      "idealAnswer": "Syncope from an acute (likely upper) GI bleed causing hypovolemia and anemia. Reasoning: melena on rectal exam plus an Hgb of 7.6 and an elevated BUN:Cr ratio point to an upper GI source, and the daily ibuprofen and aspirin are the likely precipitant (NSAID/antiplatelet-related mucosal injury).",
+      "prompt": "The labs are back: Hgb 7.4, BUN:Cr 52/1.8 (ratio ~29), K 5.4, lactate 3.1, a measurable apixaban effect, a mild type-2 troponin rise, and melena on rectal exam; the EKG shows AF with a rapid ventricular response and rate-related ST depression. Commit to your single most likely diagnosis, name the discriminating test that would confirm it, and explain how you resolved the bleed-versus-arrhythmia fork. Also state the other multi-system problems you must address concurrently.",
+      "rubric": "Commits to syncope from an acute (likely upper) GI bleed causing hypovolemia and anemia (4). Resolves the fork: the rapid AF and lateral ST depression are a SECONDARY rate response/demand ischemia from the bleed, not the primary cause; melena + Hgb 7.4 + BUN:Cr ~29 + the NSAID/aspirin/anticoagulant combination point to the GI source (3). Names UPPER ENDOSCOPY (EGD) as the discriminating/confirmatory test (2). Acknowledges and plans to address the concurrent multi-system problems - prerenal AKI on CKD with hyperkalemia (K 5.4), lactic acidosis from hypoperfusion, the supratherapeutic anticoagulant effect, and the type-2 troponin rise (1).",
+      "idealAnswer": "Single most likely diagnosis: syncope from an acute (likely upper) GI bleed causing hypovolemia and anemia. Reasoning and fork resolution: melena on rectal exam, an Hgb of 7.4, and a BUN:Cr of ~29 localize an upper GI source, and the daily ibuprofen + aspirin + apixaban (with missed-dose uncertainty) are the precipitant. The atrial fibrillation with rapid ventricular response and the rate-related lateral ST depression are a SECONDARY tachycardic/demand response to anemia and volume loss, not the primary cause of the syncope - so I resolve the bleed-versus-arrhythmia fork toward the bleed. Discriminating/confirmatory test: upper endoscopy (EGD) to localize and treat the lesion. Concurrent multi-system problems to address: prerenal AKI on CKD with hyperkalemia (K 5.4 from the AKI plus lisinopril), a lactic acidosis (lactate 3.1, anion gap 15) from hypoperfusion, a pharmacologic bleeding diathesis from apixaban accentuated by renal impairment, and a type-2 troponin rise from demand ischemia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -295,73 +319,88 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH GI bleed: resuscitate – 2 large-bore IVs + crystalloid + type & screen (CANT-MISS,6); transfuse restrictive Hgb>7 (>8 if CAD) (CANT-MISS,5); GI consult for endoscopy to localize/treat (5); IV PPI (3); correct coagulopathy / hold anticoagulants (3); serial Hgb monitoring (2). PENALTY: attributing syncope to vasovagal and discharging without recognizing the bleed (-4); over-transfusion (-1).",
-      "idealAnswer": "Syncope from occult GI bleed: resuscitate – 2 large-bore IVs, isotonic crystalloid, type & screen, transfuse pRBCs to a restrictive threshold (Hgb >7, or >8 if CAD). NPO. IV PPI. GI consult for endoscopy (EGD; colonoscopy if lower source) to localize and treat. Correct coagulopathy; hold/reverse anticoagulants. Serial Hgb (lags 24–72 h).",
+      "prompt": "What is your management plan? Address how you handle the rapid AF in the setting of active bleeding, then describe your disposition and what specifically would have to be true for this patient to be SAFE for eventual discharge.",
+      "rubric": "Per MGH GI bleed: resuscitate - 2 large-bore IVs + crystalloid + type & crossmatch (CANT-MISS,5); transfuse pRBC to a restrictive threshold, Hgb>7, or >8 given CAD/active ischemia (CANT-MISS,4); HOLD aspirin/NSAIDs and the apixaban and REVERSE the anticoagulant effect (andexanet alfa or PCC) given active bleeding (CANT-MISS,4); manage the AF by treating the underlying cause (volume + transfusion) rather than aggressive nodal blockade or cardioversion in a hypovolemic, bleeding patient (3); IV PPI infusion and NPO (2); urgent GI consult for endoscopy (EGD) to localize/treat (2); treat the hyperkalemia (K 5.4) and hold the ACE inhibitor for the AKI (1); serial Hgb and telemetry monitoring (1); SAFE-DISCHARGE/disposition - admit (ICU/monitored bed if unstable), and articulate that safe discharge later requires hemodynamic stability with a stable Hgb off transfusion, completed endoscopic therapy, a deliberate anticoagulation restart plan with GI/cardiology, NSAID cessation with gastroprotection, medication reconciliation, and close follow-up (3). PENALTY: attributing the syncope to vasovagal or 'just AF' and discharging without recognizing the bleed (-4); giving a beta-blocker/calcium-channel blocker push or cardioverting the hypovolemic patient, or continuing/anticoagulating through the bleed (-3).",
+      "idealAnswer": "Resuscitate: 2 large-bore IVs, isotonic crystalloid, type & crossmatch, transfuse pRBC to a restrictive threshold (Hgb >7, or >8 given his CAD and demand ischemia). STOP aspirin and all NSAIDs and HOLD the apixaban; reverse the anticoagulant effect with andexanet alfa (or 4-factor PCC if unavailable) because he is actively bleeding. Manage the rapid AF by correcting its cause - volume and transfusion - rather than pushing a beta-blocker/calcium-channel blocker or cardioverting a hypovolemic, bleeding patient; reserve gentle rate control for persistent rapid AF only once euvolemic. NPO; start an IV PPI infusion. Urgent GI consult for upper endoscopy (EGD) to localize and treat the lesion (colonoscopy if no upper source). Treat the hyperkalemia (K 5.4) and hold the lisinopril for the AKI; recheck electrolytes and renal function. Serial Hgb (it lags 24-72h) and continuous telemetry; trend the troponin as a type-2 rise that should resolve with treatment of the anemia. Disposition: admit to a monitored bed, ICU if unstable. Safe eventual discharge requires hemodynamic stability with a stable Hgb off transfusion, completed/secured endoscopic therapy, a deliberate shared anticoagulation-restart plan with GI and cardiology (balancing his high stroke risk against rebleeding), permanent NSAID cessation with gastroprotection, full medication reconciliation, and close GI/PCP/cardiology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-            "points": 6
+            "item": "Resuscitate (2 large-bore IVs, crystalloid, type & crossmatch)",
+            "points": 5
           },
           {
-            "item": "Transfuse to restrictive threshold (Hgb>7)",
-            "points": 5
+            "item": "Transfuse to restrictive threshold (Hgb>7, >8 given CAD/ischemia)",
+            "points": 4
+          },
+          {
+            "item": "Hold aspirin/NSAIDs and apixaban and reverse the anticoagulant (andexanet/PCC)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "GI consult for endoscopy",
-            "points": 5
-          },
-          {
-            "item": "IV PPI",
+            "item": "Manage the AF by treating the cause (volume/transfusion), not cardioversion or aggressive nodal blockade in a hypovolemic bleeding patient",
             "points": 3
           },
           {
-            "item": "Correct coagulopathy / hold anticoagulants",
-            "points": 3
-          },
-          {
-            "item": "Serial hemoglobin monitoring",
+            "item": "IV PPI infusion and NPO",
             "points": 2
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "NPO",
+            "item": "Urgent GI consult for endoscopy (EGD)",
+            "points": 2
+          },
+          {
+            "item": "Treat hyperkalemia and hold the ACE inhibitor for AKI",
             "points": 1
+          },
+          {
+            "item": "Serial hemoglobin and telemetry monitoring",
+            "points": 1
+          },
+          {
+            "item": "Safe-discharge/disposition plan (admit now; later requires stable Hgb, completed endoscopy, anticoagulation-restart plan, NSAID cessation with gastroprotection, med reconciliation, close follow-up)",
+            "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "Missing the occult bleed / discharging",
+            "item": "Attributing syncope to vasovagal/'just AF' and discharging / missing the bleed",
             "points": -4
+          },
+          {
+            "item": "Cardioverting or pushing nodal blockers in the hypovolemic patient, or anticoagulating through the bleed",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-        "Transfuse to restrictive threshold (Hgb>7)"
+        "Resuscitate (2 large-bore IVs, crystalloid, type & crossmatch)",
+        "Transfuse to restrictive threshold (Hgb>7, >8 given CAD/ischemia)",
+        "Hold aspirin/NSAIDs and apixaban and reverse the anticoagulant (andexanet/PCC)"
       ],
       "optionalActions": [
-        "GI consult for endoscopy",
-        "IV PPI",
-        "Correct coagulopathy / hold anticoagulants",
-        "Serial hemoglobin monitoring",
-        "NPO"
+        "Manage the AF by treating the cause (volume/transfusion), not cardioversion or aggressive nodal blockade in a hypovolemic bleeding patient",
+        "IV PPI infusion and NPO",
+        "Urgent GI consult for endoscopy (EGD)",
+        "Treat hyperkalemia and hold the ACE inhibitor for AKI",
+        "Serial hemoglobin and telemetry monitoring",
+        "Safe-discharge/disposition plan (admit now; later requires stable Hgb, completed endoscopy, anticoagulation-restart plan, NSAID cessation with gastroprotection, med reconciliation, close follow-up)"
       ],
       "unsafeActions": [
-        "Missing the occult bleed / discharging"
+        "Attributing syncope to vasovagal/'just AF' and discharging / missing the bleed",
+        "Cardioverting or pushing nodal blockers in the hypovolemic patient, or anticoagulating through the bleed"
       ],
       "consults": [
-        "Gastroenterology"
+        "Gastroenterology",
+        "Cardiology"
       ],
-      "disposition": "Admit; ICU if unstable",
+      "disposition": "Admit; ICU/monitored bed if unstable",
       "mghReference": {
-        "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Upper GI Bleeding (occult)",
+        "manual": "MGH Housestaff Manual 2024-2025",
+        "section": "Upper GI Bleeding (anticoagulant-associated)",
         "page": 70
       }
     }
@@ -373,12 +412,14 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "medication_adherence"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "70-year-old man, pale and tired-looking. Good historian once prompted.",
+    "communicationStyle": "answers directly but does not volunteer extra information; tends to blame symptoms on his knee and his heart",
+    "affect": "74-year-old man, pale, tired, and slightly breathless. A reasonable historian once prompted.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, missed medication doses) unless directly asked",
+      "Do not volunteer the black stools, blood thinner/NSAID use, or epigastric burning unless asked about stool/GI symptoms, medications, or abdominal symptoms",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -397,6 +438,41 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "do you take your medications",
+        "miss any doses",
+        "how reliably",
+        "adherence",
+        "forget to take"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "stool_gi_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "stool color",
+        "black stools",
+        "tarry stools",
+        "blood in stool",
+        "melena",
+        "bowel movements",
+        "vomiting blood",
+        "coffee grounds",
+        "indigestion",
+        "epigastric pain"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -421,7 +497,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "any warning",
+        "palpitations before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -447,7 +525,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "chest pain",
+        "shortness of breath",
+        "palpitations",
+        "tongue biting",
+        "incontinence"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -461,7 +544,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "happen on standing"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -474,7 +558,11 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "atrial fibrillation",
+        "heart problems",
+        "kidney",
+        "diabetes"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -487,7 +575,13 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "blood thinner",
+        "anticoagulant",
+        "pain pills",
+        "ibuprofen",
+        "aspirin",
+        "apixaban"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -500,7 +594,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "fainted before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -511,28 +606,28 @@
   "physicalExamMappings": [
     {
       "id": "palpate_all_quadrants_finding_1",
-      "finding": "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
+      "finding": "Abdomen: soft, mild epigastric tenderness, no rebound or guarding, no pulsatile mass.",
       "revealedBy": [
         "palpate_all_quadrants"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No epigastric tenderness."
+      "normalIfNotPresent": "No abdominal tenderness."
     },
     {
-      "id": "auscultate_aortic_area_finding_2",
-      "finding": "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
+      "id": "auscultate_mitral_area_finding_2",
+      "finding": "Cardiac: tachycardic, irregularly irregular, no new murmur; consistent with atrial fibrillation with a rapid ventricular response.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "Heart sounds regular, no murmur."
     },
     {
       "id": "inspect_conjunctiva_finding_3",
-      "finding": "Conjunctival pallor if examined.",
+      "finding": "Conjunctival and palmar pallor if examined.",
       "revealedBy": [
         "inspect_conjunctiva"
       ],
@@ -542,13 +637,23 @@
     },
     {
       "id": "obtain_orthostatic_vitals_finding_4",
-      "finding": "Vitals: BP 102/64, HR 108, RR 18, 36.9°C, SpO2 98% RA; orthostatic drop if checked.",
+      "finding": "Vitals: BP 98/61, HR 128 and irregularly irregular, RR 20, 36.7C, SpO2 97% RA; marked orthostatic drop with reproduction of the patient's symptoms if checked.",
       "revealedBy": [
         "obtain_orthostatic_vitals"
       ],
       "importance": "critical",
       "points": 5,
       "normalIfNotPresent": "No orthostatic drop."
+    },
+    {
+      "id": "assess_capillary_refill_finding_5",
+      "finding": "Cool peripheries with sluggish capillary refill - peripheral hypoperfusion from hypovolemia.",
+      "revealedBy": [
+        "assess_capillary_refill"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Warm peripheries, brisk capillary refill."
     }
   ],
   "overallScoring": {
@@ -561,67 +666,75 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Syncope from occult GI bleed",
-    "diagnosticFramework": "70M presents after fainting at home; he has felt increasingly tired and lightheaded and takes daily NSAIDs for joint pain. The diagnosis is Syncope from occult GI bleed, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "74M with atrial fibrillation on apixaban, CAD, CKD, and type 2 diabetes presents after syncope, on a background of NSAID and aspirin use and days of melena. He arrives pale and orthostatic with atrial fibrillation and a rapid ventricular response. The diagnosis is Syncope from occult GI bleed: the rapid AF and rate-related ST depression are a secondary response to anemia and hypovolemia rather than the primary cause. It is reached by eliciting the focused history (stool color, blood thinners, NSAIDs, medication adherence), performing a rectal exam, reading the patient's own EKG as demand-driven AF, and integrating multi-system labs (anemia, prerenal AKI on CKD with hyperkalemia, lactic acidosis, an apixaban effect, and a type-2 troponin rise) while excluding primary cardiogenic/arrhythmic syncope.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
-      "Cardiac: tachycardic, regular, no murmur. Abdomen: mild epigastric tenderness, no peritonism.",
-      "Conjunctival pallor if examined.",
-      "Vitals: BP 102/64, HR 108, RR 18, 36.9°C, SpO2 98% RA; orthostatic drop if checked."
+      "Abdomen: soft, mild epigastric tenderness, no rebound or guarding, no pulsatile mass.",
+      "Cardiac: tachycardic, irregularly irregular, no new murmur; consistent with atrial fibrillation with a rapid ventricular response.",
+      "Conjunctival and palmar pallor if examined.",
+      "Vitals: BP 98/61, HR 128 and irregularly irregular, RR 20, 36.7C, SpO2 97% RA; marked orthostatic drop with reproduction of the patient's symptoms if checked.",
+      "Cool peripheries with sluggish capillary refill - peripheral hypoperfusion from hypovolemia."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "CBC",
       "BMP",
+      "Lactate",
       "Coags",
+      "Troponin",
       "TypeCross",
       "Orthostatics",
       "StoolEvaluation"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Syncope from occult GI bleed while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Syncope from occult GI bleed and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals - an orthostatic, tachycardic, anticoagulated elder after syncope.",
+      "Elicit the focused history, including stool color, blood thinner/NSAID use, and medication adherence only on direct questioning.",
+      "Perform the targeted physical exam, including orthostatic vitals and a rectal exam, to reveal pallor, hypoperfusion, and melena.",
+      "Build a differential led by hypovolemic syncope from GI bleeding while explicitly forking against primary cardiogenic/arrhythmic syncope (AF with RVR).",
+      "Read the patient's own EKG as AF with rapid ventricular response and rate-related demand ischemia, and integrate the multi-system labs (anemia, AKI with hyperkalemia, lactic acidosis, apixaban effect, type-2 troponin).",
+      "Commit to Syncope from occult GI bleed and manage with resuscitation, transfusion, anticoagulant reversal, PPI, endoscopy, cause-directed AF management, and a safe-discharge plan."
     ],
     "commonPitfalls": [
-      "Missing the occult bleed / discharging"
+      "Anchoring on 'his AF acting up' and missing the bleed",
+      "Calling the lateral ST depression a STEMI",
+      "Cardioverting or rate-controlling the hypovolemic patient instead of treating the bleed",
+      "Continuing or restarting anticoagulation through an active bleed"
     ],
     "managementPearls": [
-      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-      "Transfuse to restrictive threshold (Hgb>7)"
+      "Resuscitate (2 large-bore IVs, crystalloid, type & crossmatch)",
+      "Transfuse to restrictive threshold (Hgb>7, >8 given CAD/ischemia)",
+      "Hold aspirin/NSAIDs and apixaban and reverse the anticoagulant (andexanet/PCC)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "auscultate_aortic_area",
+      "auscultate_mitral_area",
       "obtain_orthostatic_vitals"
     ],
     "criticalWorkupItems": [
       "CBC for anemia",
-      "Recognizes GI bleeding and reviews the documented stool finding / melena"
+      "Rectal exam to document melena / recognizes GI bleeding"
     ],
     "criticalInterpretationItems": [
-      "Hyperkalemia pattern: peaked T waves with QRS widening.",
-      "Old healed rib fractures (callus)."
+      "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) - a secondary response to anemia/hypovolemia, not a primary STEMI.",
+      "Clear film with no pulmonary edema and no subdiaphragmatic free air; incidental old healed rib fractures."
     ],
     "criticalManagementItems": [
-      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-      "Transfuse to restrictive threshold (Hgb>7)"
+      "Resuscitate (2 large-bore IVs, crystalloid, type & crossmatch)",
+      "Transfuse to restrictive threshold (Hgb>7, >8 given CAD/ischemia)",
+      "Hold aspirin/NSAIDs and apixaban and reverse the anticoagulant (andexanet/PCC)"
     ],
     "keyImageInterpretationFindings": [
-      "Hyperkalemia pattern: peaked T waves with QRS widening.",
-      "Old healed rib fractures (callus)."
+      "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia).",
+      "Clear film with no pulmonary edema and no subdiaphragmatic free air; incidental old healed rib fractures."
     ],
     "criticalImageInterpretationFindings": [
-      "Hyperkalemia pattern: peaked T waves with QRS widening.",
-      "Old healed rib fractures (callus)."
+      "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) - a secondary response to anemia/hypovolemia, not a primary STEMI.",
+      "Clear film with no pulmonary edema and no subdiaphragmatic free air; incidental old healed rib fractures."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A fast, irregularly irregular rhythm with rate-related ST depression in a pale, orthostatic patient is demand-driven AF - treat the cause (the bleed), not the tracing.",
+      "Hyperkalemia does not always show on the EKG; a K of 5.4 with no peaked T waves still needs treating.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -636,7 +749,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, medication adherence, rectal exam)",
         "points": 1
       },
       {
@@ -651,8 +764,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

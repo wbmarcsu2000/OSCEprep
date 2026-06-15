@@ -1,126 +1,146 @@
 {
   "id": "chestpain-05",
   "category": "Chest Pain",
-  "difficulty": "easy",
-  "title": "Burning chest discomfort after meals",
+  "difficulty": "hard",
+  "title": "Postprandial burning chest discomfort in a polypharmacy patient with cardiac risk factors",
   "diagnosis": "GERD",
   "chart": {
-    "ageSex": "50F",
+    "ageSex": "58F",
     "cc": "Burning chest discomfort",
-    "oneLiner": "50F presents with several weeks of intermittent burning retrosternal discomfort, worse after large meals and when lying down, relieved by antacids.",
+    "oneLiner": "58F with type 2 diabetes, hypertension on a thiazide, diabetic peripheral neuropathy on amitriptyline, and chronic GERD presents with several weeks of intermittent burning retrosternal discomfort, worse after large meals and when lying flat at night, partly relieved by antacids; she is anxious because a relative recently had a heart attack.",
     "vitals": {
-      "BP": "126/80",
-      "HR": "76",
-      "RR": "14",
-      "Temp": "36.9°C",
-      "SpO2": "99% RA"
+      "BP": "138/84",
+      "HR": "72",
+      "RR": "15",
+      "Temp": "36.8°C",
+      "SpO2": "98% RA"
     },
     "timer": 180
   },
-  "opening": "I keep getting this burning feeling in my chest, usually after I eat. Tums help a bit.",
-  "patientFile": "PERSONA: 50-year-old woman, comfortable, not distressed. Conversational.\n\nHPI:\n- Intermittent BURNING retrosternal discomfort for several weeks.\n- Clearly worse AFTER large or fatty meals and when LYING DOWN at night; relieved by sitting up and by antacids.\n- Associated sour/acid taste in the mouth and occasional regurgitation (only if asked).\n- NOT exertional — comes on at rest, often relating to meals, not activity.\n- NO radiation to arm/jaw, NO diaphoresis, NO dyspnea, NO pleuritic or positional-with-breath component, NO tearing quality.\n- NO weight loss, NO trouble swallowing, NO vomiting blood or black stools (these alarm features are negative — only if asked).\n\nOLDCARTS: intermittent over weeks; retrosternal; episodic lasting up to an hour; burning; worse postprandial and supine, relieved by antacids; severity 4/10.\n\nPMH: obesity, GERD-type symptoms in the past. MEDICATIONS: occasional over-the-counter antacids. ALLERGIES: none. FAMILY: noncontributory for early heart disease. SOCIAL: nonsmoker, occasional wine (worsens symptoms), drinks coffee.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: well-appearing, comfortable.\n- Vitals: BP 126/80, HR 76, RR 14, 36.9°C, SpO2 99% RA.\n- Cardiac: regular, normal S1/S2, no murmur or rub.\n- Lungs: clear bilaterally.\n- Chest wall: no reproducible tenderness.\n- Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the regurgitation/sour taste or the negative alarm features unless asked about associated symptoms, swallowing, weight loss, or GI bleeding.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I keep getting this burning in my chest, mostly after I eat or when I lie down at night. Tums help a little. My brother just had a heart attack, so honestly I'm scared this is my heart.",
+  "patientFile": "PERSONA: 58-year-old woman, comfortable at rest, anxious about her heart because her brother recently had an MI. Cooperative and conversational.\n\nHPI:\n- Intermittent BURNING retrosternal discomfort for several weeks, gradually more frequent.\n- Clearly worse AFTER large or fatty meals and when LYING FLAT at night; partly relieved by sitting up and by antacids.\n- Associated sour/acid taste in the mouth and occasional regurgitation, worse at night (reveal only if asked about associated symptoms or reflux).\n- NOT reliably exertional — it comes on at rest and after meals, not specifically with walking or climbing stairs; she can walk her usual errands without bringing it on (reveal the exertional question only when asked).\n- NO radiation to the arm or jaw, NO sweating, NO shortness of breath with the pain, NO pleuritic or positional-with-breathing component, NO tearing/ripping quality (these are negative — only if asked).\n- Alarm features: she has felt a bit more TIRED lately and wonders if her stools have looked darker once or twice but is not sure; NO frank black tarry stools she is certain about, NO vomiting blood, NO trouble swallowing, NO unintentional weight loss (reveal only if asked about swallowing, weight, fatigue, or GI bleeding).\n\nOLDCARTS: intermittent over several weeks; retrosternal; episodes last up to an hour; burning quality; worse postprandial and supine, partly relieved by antacids; severity 4-5/10.\n\nPMH: type 2 diabetes (about 8 years); hypertension; diabetic peripheral neuropathy of the feet; chronic GERD/reflux for years; mild knee osteoarthritis.\nMEDICATIONS (polypharmacy — reveal the full list when asked about medications): metformin; lisinopril; HYDROCHLOROTHIAZIDE (a 'water pill' for blood pressure); AMITRIPTYLINE at night for the burning foot pain from neuropathy; CITALOPRAM for low mood; ONDANSETRON occasionally for nausea; over-the-counter antacids and famotidine as needed; occasional ibuprofen for knee pain. ALLERGIES: none.\nFAMILY: brother had a myocardial infarction at age 61 (about a month ago) — this is why she is frightened. Father had diabetes.\nSOCIAL: never smoked; one or two glasses of wine on weekends (worsens the burning); drinks coffee daily; works at a desk; walks for errands without chest pain.\nROS: mild fatigue (see alarm features); otherwise the cardiac/respiratory negatives above; no palpitations, no syncope, no dizziness.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: well-appearing, comfortable, anxious but in no acute distress.\n- Vitals: BP 138/84, HR 72, RR 15, 36.8C, SpO2 98% RA.\n- Cardiac: regular rate and rhythm, normal S1/S2, no murmur, rub, or gallop; no radiation.\n- Lungs: clear bilaterally; no crackles.\n- Chest wall: no reproducible tenderness to palpation.\n- Abdomen: soft, mild epigastric tenderness, no guarding or rebound.\n- Conjunctiva/mucous membranes: slightly pale conjunctivae (consistent with mild anemia) if specifically inspected.\n- Extremities: no edema, distal pulses symmetric; reduced light-touch/pinprick sensation in a stocking distribution (diabetic neuropathy) if sensation is tested.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the regurgitation/sour taste, the exertional vs non-exertional detail, the fatigue/dark-stool alarm features, the family history of MI specifics, or the full medication list unless asked the relevant question (associated symptoms, reflux, exertion, swallowing, weight, GI bleeding/stool color, family history, or medications).\n- Reveal exam findings (pale conjunctivae, neuropathy, epigastric tenderness) only when that specific exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "Normal.",
-      "BMP": "Normal.",
-      "Troponin": "Normal — not elevated."
+      "CBC": "Mild MICROCYTIC anemia: Hgb 10.6 g/dL (baseline ~12), MCV 76 fL, Plt 295, WBC 7.1. Pattern suggests chronic iron-deficiency/occult GI blood loss rather than acute hemorrhage.",
+      "BMP": "Na 138, K 3.1 (LOW), Cl 102, HCO3 26, BUN 16, Cr 0.9 (normal renal function), Glucose 162. Anion gap = Na - (Cl + HCO3) = 138 - (102 + 26) = 138 - 128 = 10 (NORMAL, no anion-gap acidosis). The hypokalemia is consistent with her thiazide.",
+      "Magnesium": "Mg 1.3 mg/dL (LOW). Combined with the hypokalemia (thiazide + PPI-associated losses), this is the electrolyte substrate for QT prolongation seen on the EKG.",
+      "Troponin": "High-sensitivity troponin NEGATIVE on serial testing (0 h and 3 h, both below the assay's upper reference limit with no delta) — argues strongly against acute coronary syndrome.",
+      "HbA1c": "8.4% — confirms longstanding, suboptimally controlled type 2 diabetes (a cardiac risk factor that keeps ACS on the differential until excluded).",
+      "FOBT": "Fecal occult blood test POSITIVE — corroborates occult GI blood loss as the source of the iron-deficiency anemia; mandates outpatient endoscopic evaluation."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
+    "Magnesium",
     "Troponin",
+    "HbA1c",
+    "FOBT",
     "ekg",
     "cxr"
   ],
   "essential": [
     "ekg",
-    "Troponin"
+    "Troponin",
+    "CBC"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "GERD / esophageal reflux (leading, 7; accepts reflux/esophagitis/peptic). Acute coronary syndrome (CANT-MISS — must still be considered and excluded, 8; credit for explicitly ruling out cardiac causes before anchoring). Esophageal spasm (core,2). Peptic ulcer disease (core,2). Musculoskeletal (bonus,2). Pericarditis (bonus,2). Names a leading benign cause WHILE acknowledging cardiac must be excluded (core,4). PENALTY: anchoring on GERD without considering cardiac causes (-3).",
-      "idealAnswer": "Leading diagnosis: GERD. Must-not-miss diagnoses to exclude: none specific. Also reasonable: Esophageal spasm; Peptic ulcer disease.",
+      "prompt": "Based on your history and physical in this 58-year-old woman with diabetes, hypertension, and a frightening family history, list your differential diagnosis and note your leading diagnosis. Name THREE mechanisms or etiologies by which gastroesophageal reflux produces burning chest pain, and state explicitly which must-not-miss cardiac diagnosis you will exclude before committing.",
+      "rubric": "GERD / esophageal reflux as the leading diagnosis given the postprandial/supine burning, sour taste, antacid response, and non-exertional pattern (leading,5). Acute coronary syndrome / stable angina — the genuine competing diagnosis that MUST be excluded given diabetes, HTN, age, and a brother with a recent MI (CANT-MISS,6). Names THREE GERD mechanisms — e.g. lower-esophageal-sphincter incompetence/transient relaxations, acid-mucosal irritation of esophageal chemoreceptors, esophageal acid-provoked dysmotility/spasm, delayed gastric emptying (diabetic gastroparesis), or a hiatal hernia reducing the anti-reflux barrier (core, up to 3, 1 each). Esophageal spasm (core,2). Peptic ulcer disease — supported by NSAID use and the anemia (core,2). Pericarditis (bonus,2). Musculoskeletal/costochondral (bonus,1). States the diabetic/family-history risk profile keeps ACS on the table until troponin/EKG return (core,4). PENALTY: anchoring on GERD without excluding cardiac causes in a diabetic with cardiac risk factors (-3).",
+      "idealAnswer": "Leading diagnosis: GERD — several weeks of postprandial and supine retrosternal burning with a sour taste, partial antacid response, and a non-exertional pattern. The genuine competitor that must be excluded first is cardiac ischemia (acute coronary syndrome / stable angina): she has diabetes (often atypical/silent presentations), hypertension, and a brother with a recent MI, so a normal EKG and serial troponin are required before anchoring on reflux. Three mechanisms by which GERD causes burning chest pain: (1) lower-esophageal-sphincter incompetence / transient LES relaxations allowing acid reflux; (2) direct acid irritation of esophageal mucosal chemoreceptors; (3) acid-provoked esophageal dysmotility/spasm (and delayed gastric emptying from diabetic gastroparesis, or a hiatal hernia weakening the anti-reflux barrier). Also reasonable: peptic ulcer disease (NSAID use, anemia), esophageal spasm, pericarditis, musculoskeletal pain.",
       "scoring": {
         "maxPoints": 25,
-        "criticalActions": [],
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome / stable angina excluded before committing (cardiac must-not-miss)",
+            "points": 6
+          }
+        ],
         "coreActions": [
+          {
+            "item": "GERD / esophageal reflux as leading diagnosis",
+            "points": 5
+          },
+          {
+            "item": "Names three mechanisms/etiologies of GERD-related chest pain",
+            "points": 3
+          },
+          {
+            "item": "Peptic ulcer disease (NSAID use, anemia)",
+            "points": 2
+          },
           {
             "item": "Esophageal spasm",
             "points": 2
           },
           {
-            "item": "Peptic ulcer disease",
-            "points": 2
-          },
-          {
-            "item": "Names a leading benign cause WHILE acknowledging cardiac must be excluded",
+            "item": "States diabetic/family-history risk profile keeps ACS on the table until troponin/EKG return",
             "points": 4
           }
         ],
         "bonusActions": [
           {
-            "item": "Musculoskeletal",
+            "item": "Pericarditis",
             "points": 2
           },
           {
-            "item": "Pericarditis",
-            "points": 2
+            "item": "Musculoskeletal / costochondral",
+            "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "anchoring on GERD without considering cardiac causes",
+            "item": "Anchoring on GERD without excluding cardiac causes in a diabetic with risk factors",
             "points": -3
           }
         ]
       },
-      "mustNotMiss": [],
+      "mustNotMiss": [
+        "Acute coronary syndrome / stable angina"
+      ],
       "acceptableAlternatives": [
+        "Peptic ulcer disease",
         "Esophageal spasm",
-        "Peptic ulcer disease"
+        "Pericarditis",
+        "Musculoskeletal / costochondral"
       ]
     },
     {
       "id": "workup",
       "label": "Workup",
       "max": 15,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "EKG to exclude cardiac cause (CANT-MISS,5). Troponin (core,3). CBC to screen for anemia/GI bleed (core,2). Considers an empiric PPI trial as both diagnostic and therapeutic (core,2). CXR (bonus,1). Notes upper endoscopy if alarm features or refractory (bonus,1). PENALTY: extensive cardiac workup with zero risk factors and a classic reflux story is over-testing, but FAILING to get a basic EKG/troponin is the bigger error (-2 for skipping EKG).",
+      "prompt": "What initial workup do you want to order, and why?",
+      "rubric": "12-lead EKG to exclude an acute cardiac cause (CANT-MISS,5). Serial high-sensitivity troponin given the cardiac risk profile (core,3). CBC to evaluate the suspected anemia / occult GI bleed, with iron studies and a stool occult blood test (core,3). BMP plus a MAGNESIUM level — important because she is on a thiazide and the EKG shows QT prolongation (core,2). HbA1c / glucose to characterize her diabetes risk (core,1). CXR (bonus,1). Empiric PPI trial as diagnostic-and-therapeutic once cardiac causes are addressed (bonus,1). Outpatient upper endoscopy given anemia + positive occult blood (bonus,1). PENALTY: failing to obtain an EKG/troponin in a diabetic with cardiac risk factors (-3); ignoring the anemia (-2).",
       "reveal": true,
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin.",
+      "idealAnswer": "Order: 12-lead EKG and serial high-sensitivity troponin to exclude ACS (mandatory given diabetes, HTN, and the family history). CBC with iron studies and a stool occult blood test to work up the suspected anemia/occult GI bleed. BMP AND a magnesium level (she is on a thiazide; electrolyte derangements matter for the QT). HbA1c. CXR. Once cardiac causes are addressed, an empiric PPI trial is both diagnostic and therapeutic, and outpatient upper endoscopy is warranted given anemia plus a positive occult blood test.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "EKG to exclude cardiac cause",
+            "item": "12-lead EKG to exclude acute cardiac cause",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Troponin",
+            "item": "Serial high-sensitivity troponin",
             "points": 3
           },
           {
-            "item": "CBC to screen for anemia/GI bleed",
+            "item": "CBC with iron studies / stool occult blood for the anemia",
+            "points": 3
+          },
+          {
+            "item": "BMP with a magnesium level (thiazide, QT)",
             "points": 2
           },
           {
-            "item": "Considers an empiric PPI trial as both diagnostic and therapeutic",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
+            "item": "HbA1c / glucose",
+            "points": 1
           }
         ],
         "bonusActions": [
@@ -129,55 +149,74 @@
             "points": 1
           },
           {
-            "item": "Notes upper endoscopy if alarm features or refractory",
+            "item": "Empiric PPI trial as diagnostic-and-therapeutic",
+            "points": 1
+          },
+          {
+            "item": "Outpatient upper endoscopy given anemia + positive occult blood",
             "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Failing to obtain EKG/troponin in a diabetic with cardiac risk factors",
+            "points": -3
+          },
+          {
+            "item": "Ignoring the anemia",
+            "points": -2
+          }
+        ]
       },
       "requiredTests": [
-        "EKG to exclude cardiac cause"
+        "12-lead EKG to exclude acute cardiac cause"
       ],
       "optionalTests": [
-        "Troponin",
-        "CBC to screen for anemia/GI bleed",
-        "Considers an empiric PPI trial as both diagnostic and therapeutic"
+        "Serial high-sensitivity troponin",
+        "CBC with iron studies / stool occult blood for the anemia",
+        "BMP with a magnesium level (thiazide, QT)",
+        "HbA1c / glucose"
       ],
       "contraindicatedTests": [],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "12-lead EKG to exclude acute cardiac cause"
+      ]
     },
     {
       "id": "ekg_read",
       "label": "Read EKG",
       "max": 15,
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = benign early repolarization: concave ST elevation with J-point notching/slurring in the mid-precordial leads, no reciprocal change. CREDIT: identifies the J-point notching with concave ST elevation (7); distinguishes benign early repolarization from STEMI/pericarditis (5); systematic read (3). PENALTY: over-calling the J-point ST elevation as a STEMI (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Interpret it systematically, then state how it fits the clinical picture and what it means for her medications.",
+      "rubric": "The key abnormality is a PROLONGED QT interval (prolonged QTc) with sinus rhythm and NO acute ischemic ST/T changes. CREDIT: recognizes the prolonged QTc (critical); attributes it to her QT-prolonging polypharmacy (amitriptyline, citalopram, ondansetron) PLUS hypokalemia and hypomagnesemia (core); states there is no acute ischemia to suggest ACS, which supports the GERD pathway (core); systematic read of rate/rhythm/axis/intervals (core). PENALTY: calling the study normal or over-reading it as a STEMI/ischemia (-3).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
-        "J-point notching with concave ST elevation",
-        "distinguishes benign early repolarization from STEMI/pericarditis"
+        "prolonged QTc",
+        "no acute ischemic ST/T changes",
+        "attributes QT prolongation to QT-prolonging drugs plus low K and low Mg"
       ],
       "criticalFindings": [
-        "Benign early repolarization pattern."
+        "Prolonged QT interval (drug- and electrolyte-related) without acute ischemia."
       ],
       "commonMistakes": [
-        "over-calling the J-point ST elevation as a STEMI"
+        "calling the study normal and missing the long QT",
+        "over-reading benign findings as a STEMI/ischemia"
       ],
-      "idealAnswer": "Benign early repolarization: concave ST elevation with J-point notching, no reciprocal change.",
+      "idealAnswer": "Sinus rhythm with a PROLONGED QTc and no acute ischemic ST/T changes. The long QT is iatrogenic/metabolic: she is on multiple QT-prolonging agents (amitriptyline, citalopram, ondansetron) and is hypokalemic and hypomagnesemic. The absence of acute ischemia supports the reflux explanation for her pain rather than ACS, but the prolonged QT is itself a safety problem that must be corrected (replete K and Mg, reconcile/stop QT-prolonging drugs) before discharge.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Benign early repolarization pattern."
+          "Prolonged QT interval (drug- and electrolyte-related) without acute ischemia."
         ],
         "coreActions": [
-          "J-point notching with concave ST elevation",
-          "distinguishes benign early repolarization from STEMI/pericarditis"
+          "prolonged QTc",
+          "no acute ischemic ST/T changes",
+          "attributes QT prolongation to QT-prolonging drugs plus low K and low Mg"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / over-reads as STEMI / misses the long QT",
             "points": -3
           }
         ]
@@ -188,12 +227,12 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = hiatal hernia: retrocardiac soft-tissue density with an air-fluid level behind the heart; a benign incidental finding. CREDIT: identifies the retrocardiac air-fluid level (6); recognizes the hiatal hernia as benign and not the cause of today's pain (4). PENALTY: calling the study normal / mistaking the retrocardiac gas shadow for a cavitary lesion or abscess (-3).",
+      "rubric": "Findings = hiatal hernia: a retrocardiac soft-tissue density with an air-fluid level behind the heart; a benign finding that supports the reflux mechanism but is not the cause of an acute event. CREDIT: identifies the retrocardiac air-fluid level (6); recognizes the hiatal hernia as benign and as anatomic support for reflux, not an acute process (4). PENALTY: calling the study normal / mistaking the retrocardiac gas shadow for a cavitary lesion or abscess (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
         "retrocardiac air-fluid level",
-        "identifies a hiatal hernia as benign"
+        "identifies a hiatal hernia as benign and supportive of reflux"
       ],
       "criticalFindings": [
         "Hiatal hernia (retrocardiac air-fluid level)."
@@ -201,7 +240,7 @@
       "commonMistakes": [
         "mistaking the retrocardiac gas shadow for a cavitary lesion or abscess"
       ],
-      "idealAnswer": "Hiatal hernia: retrocardiac soft-tissue density with an air-fluid level — a benign incidental finding.",
+      "idealAnswer": "Hiatal hernia: retrocardiac soft-tissue density with an air-fluid level behind the heart. Lungs are clear and the cardiomediastinal silhouette is normal. The hernia weakens the anti-reflux barrier and supports the GERD mechanism, but it is a benign incidental finding, not the cause of an acute event.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -209,7 +248,7 @@
         ],
         "coreActions": [
           "retrocardiac air-fluid level",
-          "identifies a hiatal hernia as benign"
+          "identifies a hiatal hernia as benign and supportive of reflux"
         ],
         "bonusActions": [],
         "penalties": [
@@ -224,9 +263,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "The EKG and troponin are normal. What is your leading diagnosis now and your reasoning?",
-      "rubric": "GERD as the most likely diagnosis (8). Justifies with the postprandial/positional burning pattern, antacid response, and a reassuring cardiac workup (5). Notes red-flag features that would change the plan (dysphagia, weight loss, GI bleeding, anemia) (2).",
-      "idealAnswer": "GERD. ",
+      "prompt": "The serial troponins are negative, the EKG shows a prolonged QT without ischemia, and labs show mild microcytic anemia with a positive occult blood test plus hypokalemia and hypomagnesemia. What is your leading diagnosis now, what single test best discriminates the residual ambiguity, and what concurrent problems must you also address?",
+      "rubric": "Commits to GERD as the most likely cause of the chest pain, justified by the postprandial/supine burning, antacid response, non-exertional pattern, and a reassuring cardiac workup (negative serial troponin, no ischemia on EKG). Names the discriminating test for residual ambiguity — outpatient stress testing/coronary evaluation if any atypical or exertional features persist, and upper endoscopy as the definitive test for the esophageal/peptic source given the anemia and positive occult blood. Recognizes the multi-system concurrent problems as SEPARATE issues: iron-deficiency anemia from occult GI bleeding (needs endoscopy), a drug- and electrolyte-induced prolonged QT (needs K/Mg repletion and medication reconciliation), and suboptimally controlled diabetes. Acknowledges residual diagnostic uncertainty appropriately.",
+      "idealAnswer": "Leading diagnosis: GERD. The pain is postprandial and supine, partly antacid-responsive, non-exertional, and the cardiac workup is reassuring (negative serial high-sensitivity troponin and no acute ischemia on EKG), which makes acute coronary syndrome very unlikely. Residual ambiguity: because she is diabetic with risk factors, if any exertional or atypical features persist, outpatient stress testing / coronary evaluation is the best discriminator for stable angina; for the esophageal/peptic source, upper endoscopy is the definitive discriminator and is independently indicated by the iron-deficiency anemia with a positive occult blood test. Three concurrent problems to address separately: (1) iron-deficiency anemia from occult GI blood loss (endoscopy, iron studies, NSAID cessation); (2) a prolonged QT from QT-prolonging polypharmacy plus hypokalemia and hypomagnesemia (replete K and Mg, reconcile/stop offending drugs); and (3) poorly controlled type 2 diabetes (HbA1c 8.4%).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -239,33 +278,41 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH GERD: PPI trial, e.g. omeprazole 20 mg, 8 weeks (CANT-MISS,7); lifestyle modification – weight loss, trigger avoidance, no meals before bed, HOB elevation (5); reassess/uptitrate then BID if no relief (3); EGD if alarm symptoms or refractory (4); reassure / exclude cardiac cause first (3). PENALTY: invasive cardiac workup without indication (-2); missing alarm features that warrant EGD (-2).",
-      "idealAnswer": "After cardiac causes are excluded: start a PPI (e.g. omeprazole 20 mg before breakfast), 8-week trial. Lifestyle modification – weight loss, avoid trigger foods/late meals, elevate head of bed, tobacco/alcohol reduction. EGD if alarm features (dysphagia, weight loss, GI bleed, anemia, age ≥60) or no response.",
+      "prompt": "What is your management plan, including disposition? State explicitly whether this patient can be safely discharged and what must be in place first.",
+      "rubric": "Per MGH GERD: start a PPI trial, e.g. omeprazole 20 mg daily for 8 weeks (CANT-MISS,5); lifestyle modification - weight loss, trigger avoidance, no meals before bed, head-of-bed elevation, reduce alcohol/coffee (4). MEDICATION RECONCILIATION addressing the prolonged QT - stop/replace QT-prolonging agents (amitriptyline, citalopram, ondansetron) and stop the NSAID that contributes to GI bleeding (CANT-MISS,4); REPLETE potassium and magnesium and correct the QT before discharge (3); arrange outpatient upper endoscopy / GI referral for the anemia + positive occult blood, and start iron (3). SAFE-DISCHARGE DECISION: she can be discharged home AFTER serial troponins are negative, the EKG/QT is reviewed and electrolytes repleted, with med reconciliation done, return precautions given, and close PCP/cardiology and GI follow-up arranged (CANT-MISS,4); reassure that the cardiac workup is reassuring while explaining the residual outpatient cardiac evaluation if symptoms persist (2). PENALTY: discharging without addressing the prolonged QT / occult GI bleed (-3); adding another QT-prolonging drug (-2); invasive cardiac workup with no indication after a negative workup (-2).",
+      "idealAnswer": "GERD treatment: start a PPI (omeprazole 20 mg before breakfast) for an 8-week trial; lifestyle modification - weight loss, avoid trigger foods and late meals, elevate the head of the bed, reduce alcohol and coffee. Medication reconciliation is central here: stop or replace the QT-prolonging agents (amitriptyline, citalopram, ondansetron) given the prolonged QT, and stop the ibuprofen, which contributes to her occult GI bleeding; choose a neuropathy agent that does not prolong the QT. Replete potassium and magnesium and confirm the QT has improved before discharge. Arrange outpatient GI referral for upper endoscopy given the iron-deficiency anemia and positive occult blood test, and start oral iron. SAFE-DISCHARGE DECISION: she CAN go home rather than be admitted, but only after serial troponins are negative, the EKG/QT has been reviewed and electrolytes repleted, medications reconciled, strict return precautions given (worsening or exertional chest pain, syncope, palpitations, melena), and close follow-up arranged with her PCP/cardiology (for residual cardiac risk-stratification if symptoms persist) and GI. Reassure her about the reassuring cardiac workup while being honest about the planned outpatient evaluation.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "PPI trial (omeprazole)",
-            "points": 7
+            "points": 5
+          },
+          {
+            "item": "Medication reconciliation: stop/replace QT-prolonging drugs and the NSAID",
+            "points": 4
+          },
+          {
+            "item": "Safe-discharge decision: home only after negative troponins, QT/electrolytes corrected, med rec, return precautions, and close PCP/cardiology + GI follow-up",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Lifestyle modification",
-            "points": 5
-          },
-          {
-            "item": "EGD if alarm symptoms or refractory",
             "points": 4
           },
           {
-            "item": "Reassess and uptitrate PPI",
+            "item": "Replete potassium and magnesium and correct the QT before discharge",
             "points": 3
           },
           {
-            "item": "Exclude cardiac cause first",
+            "item": "Outpatient endoscopy / GI referral and iron for the anemia + occult blood",
             "points": 3
+          },
+          {
+            "item": "Reassure about the cardiac workup while explaining residual outpatient cardiac evaluation",
+            "points": 2
           }
         ],
         "bonusActions": [
@@ -276,28 +323,38 @@
         ],
         "penalties": [
           {
-            "item": "Missing alarm features",
+            "item": "Discharging without addressing the prolonged QT / occult GI bleed",
+            "points": -3
+          },
+          {
+            "item": "Adding another QT-prolonging drug",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "PPI trial (omeprazole)"
+        "PPI trial (omeprazole)",
+        "Medication reconciliation: stop/replace QT-prolonging drugs and the NSAID",
+        "Safe-discharge decision: home only after negative troponins, QT/electrolytes corrected, med rec, return precautions, and close PCP/cardiology + GI follow-up"
       ],
       "optionalActions": [
         "Lifestyle modification",
-        "EGD if alarm symptoms or refractory",
-        "Reassess and uptitrate PPI",
-        "Exclude cardiac cause first",
+        "Replete potassium and magnesium and correct the QT before discharge",
+        "Outpatient endoscopy / GI referral and iron for the anemia + occult blood",
+        "Reassure about the cardiac workup while explaining residual outpatient cardiac evaluation",
         "H2 blocker as adjunct"
       ],
       "unsafeActions": [
-        "Missing alarm features"
+        "Discharging without addressing the prolonged QT / occult GI bleed",
+        "Adding another QT-prolonging drug"
       ],
-      "consults": [],
-      "disposition": "Outpatient",
+      "consults": [
+        "Gastroenterology",
+        "Primary Care / Cardiology (outpatient)"
+      ],
+      "disposition": "Discharge home after med reconciliation, electrolyte/QT correction, and arranged close follow-up",
       "mghReference": {
-        "manual": "MGH Housestaff Manual 2024–2025",
+        "manual": "MGH Housestaff Manual 2024-2025",
         "section": "GERD & Peptic Ulcer Disease",
         "page": 73
       }
@@ -307,53 +364,56 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/benign-early-repolarisation-ecg-library/",
+      "litflStudyN": 22,
+      "integrated": true,
+      "source": "https://litfl.com/ecg-case-022/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Concave ST elevation with J-point notching/slurring in mid-precordial leads; benign pattern.",
-      "verify": "Source a study matching: Concave ST elevation with J-point notching/slurring in mid-precordial leads; benign pattern. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm with a prolonged QTc and no acute ischemic ST/T changes; drug- (anticholinergic/QT-prolonging) and electrolyte-related (low K, low Mg) long QT.",
+      "verify": "Source a study matching: sinus rhythm with prolonged QTc, no acute ischemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing benign early repolarization",
+      "imageDescription": "12-lead showing a prolonged QT interval without acute ischemic changes",
       "searchTerms": [
-        "early repolarization ECG",
-        "J point notching benign ST elevation"
+        "long QT ECG anticholinergic",
+        "prolonged QTc 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 28-year-old man presents with intermittent burning chest discomfort, screened for cardiac causes before discharge."
+      "clinicalVignette": "A 58-year-old woman on amitriptyline, citalopram, and ondansetron, hypokalemic and hypomagnesemic, has her chest pain screened for a cardiac cause before discharge."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=hiatal%20hernia%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons - verify file license",
-      "findings": "Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia).",
+      "findings": "Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia); lungs clear.",
       "verify": "Source a study matching: Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing hiatal hernia retrocardiac",
+      "imageDescription": "chest radiograph showing hiatal hernia retrocardiac air-fluid level",
       "searchTerms": [
         "hiatal hernia chest x-ray air fluid level",
         "retrocardiac hiatal hernia radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 60-year-old woman presents with postprandial retrosternal burning and occasional regurgitation when lying flat."
+      "clinicalVignette": "A 58-year-old woman with postprandial retrosternal burning and nocturnal regurgitation has a chest film showing a retrocardiac air-fluid level."
     }
   },
   "standardizedPatient": {
-    "demeanor": "distress",
-    "emotionalState": "concerned",
+    "demeanor": "anxious",
+    "emotionalState": "frightened about her heart",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "mood",
+      "family_cardiac_history"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "50-year-old woman, comfortable, not distressed. Conversational.",
+    "affect": "58-year-old woman, comfortable at rest but anxious because her brother recently had a heart attack.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, mood, full medication list) unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam, alarm features, or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -381,6 +441,53 @@
         "tobacco",
         "cigarettes",
         "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_cardiac_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "heart attack in the family",
+        "relatives",
+        "brother"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "exertional_relationship",
+      "category": "hpi",
+      "triggerConcepts": [
+        "with exertion",
+        "when you walk",
+        "climbing stairs",
+        "does activity bring it on",
+        "exercise"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "gi_bleed_alarm",
+      "category": "ros",
+      "triggerConcepts": [
+        "black stools",
+        "blood in stool",
+        "melena",
+        "dark stools",
+        "vomiting blood",
+        "trouble swallowing",
+        "weight loss"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -434,7 +541,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "sour taste",
+        "regurgitation",
+        "reflux"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -448,7 +558,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "lying down",
+        "after meals"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -461,7 +573,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "blood pressure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -474,7 +588,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "pills",
+        "water pill",
+        "antidepressant"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -497,28 +614,8 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_guarding_finding_1",
-      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
-      "revealedBy": [
-        "assess_guarding"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No guarding."
-    },
-    {
-      "id": "palpate_all_quadrants_finding_2",
-      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
-      "revealedBy": [
-        "palpate_all_quadrants"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No epigastric tenderness."
-    },
-    {
-      "id": "auscultate_aortic_area_finding_3",
-      "finding": "Cardiac: regular, normal S1/S2, no murmur or rub.",
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: regular rate and rhythm, normal S1/S2, no murmur, rub, or gallop; no radiation.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -528,8 +625,48 @@
       "normalIfNotPresent": "No murmur appreciated."
     },
     {
-      "id": "assess_edema_finding_4",
-      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
+      "id": "palpate_all_quadrants_finding_2",
+      "finding": "Abdomen: soft, mild epigastric tenderness, no guarding or rebound.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No epigastric tenderness."
+    },
+    {
+      "id": "palpate_chest_wall_finding_3",
+      "finding": "Chest wall: no reproducible tenderness to palpation (argues against a musculoskeletal cause).",
+      "revealedBy": [
+        "palpate_chest_wall"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No chest-wall tenderness."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_4",
+      "finding": "Slightly pale conjunctivae, consistent with mild anemia.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Conjunctivae not pale."
+    },
+    {
+      "id": "assess_sensation_finding_5",
+      "finding": "Reduced light-touch and pinprick sensation in a stocking distribution in both feet (diabetic peripheral neuropathy).",
+      "revealedBy": [
+        "assess_sensation"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Sensation intact distally."
+    },
+    {
+      "id": "assess_edema_finding_6",
+      "finding": "Extremities: no peripheral edema; distal pulses symmetric.",
       "revealedBy": [
         "assess_edema"
       ],
@@ -548,59 +685,71 @@
   },
   "caseSummary": {
     "finalDiagnosis": "GERD",
-    "diagnosticFramework": "50F presents with several weeks of intermittent burning retrosternal discomfort, worse after large meals and when lying down, relieved by antacids. The diagnosis is GERD, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58F with type 2 diabetes, hypertension on a thiazide, diabetic neuropathy on amitriptyline, and chronic reflux presents with several weeks of postprandial and supine retrosternal burning, frightened by a brother's recent MI. The final diagnosis is GERD, reached by eliciting the focused history, performing the targeted exam, and excluding the genuine competing cardiac diagnosis (negative serial troponin, no ischemia on EKG). The case layers concurrent problems: iron-deficiency anemia from occult GI blood loss (positive occult blood), a drug- and electrolyte-induced prolonged QT (hypokalemia + hypomagnesemia on QT-prolonging polypharmacy), and suboptimally controlled diabetes.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
-      "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric.",
-      "Cardiac: regular, normal S1/S2, no murmur or rub.",
-      "Abdomen: soft, mild epigastric tenderness, no guarding. Extremities: no edema, pulses symmetric."
+      "Cardiac: regular rate and rhythm, normal S1/S2, no murmur, rub, or gallop; no radiation.",
+      "Abdomen: soft, mild epigastric tenderness, no guarding or rebound.",
+      "Chest wall: no reproducible tenderness to palpation (argues against a musculoskeletal cause).",
+      "Slightly pale conjunctivae, consistent with mild anemia.",
+      "Reduced light-touch and pinprick sensation in a stocking distribution in both feet (diabetic peripheral neuropathy).",
+      "Extremities: no peripheral edema; distal pulses symmetric."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
-      "Troponin"
+      "Magnesium",
+      "Troponin",
+      "HbA1c",
+      "FOBT"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by GERD while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to GERD and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the cardiac risk profile and the patient's fear.",
+      "Elicit the focused history, including the exertional relationship, alarm features, family cardiac history, and full medication list only on direct questioning.",
+      "Perform the targeted physical exam to reveal pale conjunctivae, epigastric tenderness, neuropathy, and a reassuring cardiac/chest-wall exam.",
+      "Build a differential led by GERD while explicitly excluding the competing cardiac diagnosis and naming GERD mechanisms.",
+      "Order EKG and serial troponin to exclude ACS, plus CBC/iron/occult blood, BMP with magnesium, and HbA1c; interpret the EKG's prolonged QT and the hiatal hernia on CXR.",
+      "Commit to GERD after a reassuring cardiac workup, address the concurrent anemia, prolonged QT, and diabetes, and make a safe-discharge disposition with med reconciliation and close follow-up."
     ],
     "commonPitfalls": [
-      "Missing alarm features"
+      "Anchoring on GERD without excluding cardiac causes in a diabetic with risk factors",
+      "Missing the prolonged QT and the QT-prolonging polypharmacy plus low K/Mg",
+      "Ignoring the iron-deficiency anemia and positive occult blood",
+      "Discharging without medication reconciliation or electrolyte/QT correction"
     ],
     "managementPearls": [
-      "PPI trial (omeprazole)"
+      "PPI trial (omeprazole)",
+      "Medication reconciliation: stop/replace QT-prolonging drugs and the NSAID",
+      "Safe discharge only after negative troponins, QT/electrolytes corrected, and close follow-up"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "auscultate_aortic_area"
     ],
     "criticalWorkupItems": [
-      "EKG to exclude cardiac cause"
+      "12-lead EKG to exclude acute cardiac cause"
     ],
     "criticalInterpretationItems": [
-      "Benign early repolarization pattern.",
+      "Prolonged QT interval (drug- and electrolyte-related) without acute ischemia.",
       "Hiatal hernia (retrocardiac air-fluid level)."
     ],
     "criticalManagementItems": [
-      "PPI trial (omeprazole)"
+      "PPI trial (omeprazole)",
+      "Medication reconciliation: stop/replace QT-prolonging drugs and the NSAID",
+      "Safe-discharge decision: home only after negative troponins, QT/electrolytes corrected, med rec, return precautions, and close PCP/cardiology + GI follow-up"
     ],
     "keyImageInterpretationFindings": [
-      "Benign early repolarization pattern.",
+      "Prolonged QT interval (drug- and electrolyte-related) without acute ischemia.",
       "Hiatal hernia (retrocardiac air-fluid level)."
     ],
     "criticalImageInterpretationFindings": [
-      "Benign early repolarization pattern.",
+      "Prolonged QT interval (drug- and electrolyte-related) without acute ischemia.",
       "Hiatal hernia (retrocardiac air-fluid level)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An incidental or iatrogenic abnormality is an interpretation task in its own right — name the prolonged QT, attribute it, and act on it.",
+      "Integrate the EKG with the medication list and electrolytes: QT-prolonging drugs plus low K and low Mg are the cause here.",
+      "Read every study systematically and state pertinent negatives, including the absence of acute ischemia."
     ]
   },
   "communicationScoring": {
@@ -611,15 +760,15 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Acknowledges and addresses the patient's fear about her heart",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (mood, alcohol)",
         "points": 1
       },
       {
-        "item": "Explains next steps in patient-friendly language",
+        "item": "Explains next steps and the discharge plan in patient-friendly language",
         "points": 1
       },
       {
@@ -630,8 +779,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "integrated pathology-forward interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

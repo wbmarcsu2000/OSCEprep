@@ -2,57 +2,60 @@
   "id": "dyspnea-08",
   "category": "Dyspnea",
   "difficulty": "hard",
-  "title": "Blue lips and breathlessness after a dental procedure",
+  "title": "Breathless and blue after a dental procedure in a man on dapsone",
   "diagnosis": "Methemoglobinemia",
   "chart": {
     "ageSex": "34M",
     "cc": "Shortness of breath and blue discoloration",
-    "oneLiner": "34M presents with dyspnea, headache, and dusky blue lips and fingertips a few hours after a dental procedure with topical numbing spray.",
+    "oneLiner": "34M with type 2 diabetes and a skin condition recently started on dapsone presents with dyspnea, pleuritic chest tightness, headache, and dusky blue lips and fingertips a few hours after a dental procedure with topical numbing spray; an SpO2 of 85% does not rise on oxygen.",
     "vitals": {
-      "BP": "128/78",
-      "HR": "104",
-      "RR": "22",
-      "Temp": "37.0°C",
+      "BP": "126/79",
+      "HR": "106",
+      "RR": "23",
+      "Temp": "37.1°C",
       "SpO2": "85% on room air (unchanged on supplemental O2)"
     },
     "timer": 180
   },
-  "opening": "I can't seem to catch my breath and my lips and fingers have turned a strange bluish-gray color.",
-  "patientFile": "PERSONA: 34-year-old man, mildly anxious, dusky/cyanotic appearance but speaking in full sentences. Cooperative.\n\nHPI: Several hours ago he had a dental procedure with a topical numbing spray (benzocaine) applied generously to his gums and throat; he later took a couple of extra over-the-counter throat-numbing lozenges at home for soreness. Over the next 1–2 hours he developed a headache, lightheadedness, fatigue, and shortness of breath, and noticed his lips and fingertips turning a bluish-gray color (only the exposure history if asked about recent procedures/medications/sprays). He feels short of breath but is NOT in severe respiratory distress. He recalls the nurse said his oxygen reading was low but he 'looked too blue for the number.' NO chest pain, NO cough, NO fever, NO leg swelling, NO hemoptysis. He has had no relief from the oxygen mask the paramedics placed.\nPMH: generally healthy; no known heart or lung disease; not sure if he has any enzyme deficiency. FAMILY: a cousin reportedly 'turned blue' once with a medication (only if asked about family history). MEDS: occasional ibuprofen; the dental benzocaine spray and OTC numbing lozenges today (if asked). Denies dapsone, nitrates, or recreational nitrites ('poppers') — reveal only if asked. SOCIAL: nonsmoker, occasional alcohol, no recreational drugs.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable-appearing but visibly dusky/cyanotic, alert and oriented, no acute distress.\n- Vitals: BP 128/78, HR 104, RR 22, 37.0°C, SpO2 85% that does NOT rise with supplemental oxygen.\n- Skin/lips: central cyanosis — grayish-blue lips, perioral and fingertip discoloration; warm and well-perfused (NOT cold/clammy) if examined.\n- Nails/extremities: bluish nail beds; brisk capillary refill, no clubbing, no edema or calf tenderness.\n- Lungs: clear bilaterally, no crackles, wheeze, or consolidation.\n- Cardiac: mildly tachycardic, regular, no murmur; no gallop.\n- Neuro: alert and oriented, no focal deficit; mild headache only.\n- Notable bedside clue (only if asked about blood appearance / venous sample): the blood drawn looks chocolate-brown and does not turn red on exposure to air.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the benzocaine spray, the extra numbing lozenges, or the family history unless asked about recent procedures/medications/sprays or family history.\n- The chocolate-brown blood, central cyanosis, bluish nails, and the saturation-that-won't-correct are revealed only if specifically examined or asked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I can't seem to catch my breath, my chest feels a bit tight, and my lips and fingers have turned a strange bluish-gray color.",
+  "patientFile": "PERSONA: 34-year-old man, mildly anxious, dusky/cyanotic appearance but speaking in full sentences. Cooperative.\n\nHPI: Several hours ago he had a dental procedure with a topical numbing spray (benzocaine) applied generously to his gums and throat; he later took a couple of extra over-the-counter throat-numbing lozenges at home for soreness. Over the next 1–2 hours he developed a headache, lightheadedness, fatigue, and shortness of breath, and noticed his lips and fingertips turning a bluish-gray color (reveal the exposure history only if asked about recent procedures/medications/sprays). He also feels a vague tightness in his chest that is a little worse with a deep breath, but NO crushing pain, NO radiation, NO sweating. He is short of breath but is NOT in severe respiratory distress. He recalls the nurse said his oxygen reading was low but he 'looked too blue for the number.' NO cough, NO fever, NO hemoptysis. NO calf pain or leg swelling, NO recent long travel, NO recent surgery, NO prior clots (reveal these VTE-risk negatives only if asked). He has had no relief from the oxygen mask the paramedics placed.\nPMH: type 2 diabetes (diet- and metformin-controlled); a chronic inflammatory skin condition (dermatitis herpetiformis) for which a dermatologist started him on DAPSONE about three weeks ago; mild seasonal allergies. He has never had his G6PD enzyme checked. FAMILY: a cousin reportedly 'turned blue' once with a medication, and an uncle of Mediterranean background was told he had 'a blood enzyme problem' (reveal only if asked about family history). MEDS (reveal individually if asked): metformin; DAPSONE (started ~3 weeks ago); occasional ibuprofen; today the dental benzocaine spray and OTC numbing lozenges; a cetirizine antihistamine in spring. Denies nitrates, recreational nitrites ('poppers'), well-water exposure, or recent antibiotics like trimethoprim-sulfamethoxazole — reveal only if asked. SOCIAL: nonsmoker, occasional alcohol, no recreational drugs, works in an office.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable-appearing but visibly dusky/cyanotic, alert and oriented, no acute distress.\n- Vitals: BP 126/79, HR 106, RR 23, 37.1°C, SpO2 85% that does NOT rise with supplemental oxygen.\n- Skin/lips: central cyanosis — grayish-blue lips, perioral and fingertip discoloration; mild scleral pallor; warm and well-perfused (NOT cold/clammy) if examined.\n- Nails/extremities: bluish nail beds; brisk capillary refill, no clubbing, no edema; calves soft and NON-tender, no cords, no asymmetry (argues against DVT) if examined.\n- Lungs: clear bilaterally, no crackles, wheeze, or consolidation.\n- Cardiac: mildly tachycardic, regular, no murmur, no rub; no right-sided heave or loud P2.\n- Neuro: alert and oriented, no focal deficit; mild headache only.\n- Notable bedside clue (only if asked about blood appearance / venous sample): the blood drawn looks chocolate-brown and does not turn red on exposure to air.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the benzocaine spray, the extra numbing lozenges, the dapsone, or the family history unless asked about recent procedures, the specific medications, or family history.\n- Do NOT volunteer the VTE-risk negatives (no calf pain/swelling, no travel, no surgery, no prior clots) unless the relevant question is asked.\n- The chocolate-brown blood, central cyanosis, bluish nails, scleral pallor, and the saturation-that-won't-correct are revealed only if specifically examined or asked.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "ABG_cooximetry": "Co-oximetry: methemoglobin 32% (markedly elevated; normal <1–2%). Measured PaO2 95 mmHg (NORMAL) despite SpO2 85% — the saturation gap. Calculated O2 sat normal but measured low: clinches methemoglobinemia.",
-      "ABG_basic": "Arterial blood gas: pH 7.41, PaCO2 38, PaO2 95 mmHg — dissolved oxygen is normal; bedside blood appears chocolate-brown.",
-      "SpO2_gap": "Pulse oximeter reads ~85% and is unresponsive to 100% supplemental O2 (saturation gap = measured SpO2 well below calculated SaO2 from PaO2).",
-      "CBC": "Hgb 14.6, WBC normal, Plt normal — no anemia or leukocytosis.",
-      "Troponin_BMP": "Troponin negative; BMP normal (no ischemia, no renal failure, normal lactate — argues against shock/tissue hypoperfusion).",
-      "G6PD": "G6PD activity normal (important before giving methylene blue, which can precipitate hemolysis if G6PD-deficient)."
+      "ABG_cooximetry": "Co-oximetry: methemoglobin 32% (markedly elevated; normal <1–2%), oxyhemoglobin ~66%, carboxyhemoglobin <2% (excludes CO). Measured PaO2 95 mmHg (NORMAL) yet the device-measured functional SpO2 is ~85% — the saturation gap (calculated SaO2 from PaO2 would be ~97%). Clinches methemoglobinemia.",
+      "ABG_basic": "Arterial blood gas: pH 7.38, PaCO2 37, PaO2 95 mmHg, HCO3 22, lactate 2.6 mmol/L (mildly elevated from impaired O2 delivery, not shock); dissolved oxygen is normal and the drawn blood is chocolate-brown.",
+      "SpO2_gap": "Pulse oximeter reads ~85% and is unresponsive to 100% supplemental O2 (saturation gap = measured SpO2 ~85% well below the ~97% SaO2 calculated from a normal PaO2 of 95); pulse ox falsely plateaus near 85% in methemoglobinemia.",
+      "CBC_smear": "Hgb 11.4 (down from a baseline of 14.6 three weeks ago), reticulocytes elevated, WBC normal, Plt normal; smear shows bite cells and Heinz bodies — oxidative hemolytic anemia, a SECOND dapsone-driven problem distinct from the dyshemoglobinemia.",
+      "Hemolysis_panel": "LDH elevated 410 U/L, haptoglobin low/undetectable, indirect (unconjugated) bilirubin 2.4 mg/dL — confirms active hemolysis; direct antiglobulin (Coombs) negative (non-immune, oxidative).",
+      "Troponin_BMP": "Troponin negative (no ischemia). BMP: glucose 168, creatinine 1.5 (up from baseline 0.9 — mild AKI, likely from hemolysis/volume), K 4.4, normal otherwise.",
+      "G6PD": "G6PD activity NORMAL on today's quantitative assay (important before methylene blue, which can precipitate severe hemolysis if G6PD-deficient); note an assay drawn during brisk hemolysis can be falsely normal, so interpret with caution."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
+      "integrated": true,
       "asset": null,
       "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~104 bpm; no acute ischemic ST-T changes, no right heart strain pattern (a near-normal tracing that helpfully excludes acute coronary syndrome as the cause of the cyanosis/dyspnea).",
-      "verify": "From the LITFL ECG library — download a sinus tachycardia tracing without acute ischemia that matches: Sinus tachycardia at ~104 bpm; no acute ischemic ST-T changes; near-normal otherwise. Self-host with credit to litfl.com; do not reuse a prior tracing.",
+      "findings": "The patient's OWN tracing: sinus tachycardia at ~106 bpm with normal axis and intervals; NO S1Q3T3, NO right bundle branch block, NO anterior (V1–V3) T-wave inversion or right-heart strain pattern, and NO acute ischemic ST-T changes — actively argues AGAINST the competing massive-PE/right-heart-strain fork and against ACS.",
+      "verify": "From the LITFL ECG library — source a sinus-tachycardia tracing WITHOUT right-heart strain or ischemia matching: sinus tachycardia ~106 bpm, normal axis/intervals, no S1Q3T3, no RBBB, no anterior TWI, no ST changes. Self-host with credit to litfl.com; do not reuse a prior tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia without acute ischemia",
+      "imageDescription": "12-lead showing sinus tachycardia without right-heart strain or acute ischemia",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia no ischemia 12-lead"
+        "sinus tachycardia no right heart strain ECG",
+        "sinus tachycardia normal axis no S1Q3T3 12-lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 30-year-old man presents with breathlessness and bluish discoloration after exposure to an oxidizing agent."
+      "clinicalVignette": "A 34-year-old man with breathlessness and bluish discoloration after exposure to oxidizing agents has a fast but otherwise unremarkable tracing — no right-heart strain to suggest a large pulmonary embolism."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Essentially clear lungs — no consolidation, effusion, edema, or pneumothorax (a clear film with cyanosis/hypoxemia that won't correct on oxygen points away from a primary cardiopulmonary cause).",
+      "findings": "Essentially clear lungs — no consolidation, effusion, edema, pneumothorax, or focal oligemia (a clear film with profound cyanosis and a low SpO2 that won't correct on oxygen points away from a primary cardiopulmonary cause and toward a dyshemoglobinemia).",
       "verify": "Pick a CC normal/near-normal PA chest film (the teaching point is a clear film despite cyanosis and a low pulse-ox reading).",
       "assetNeeded": true,
       "imageDescription": "normal PA chest radiograph, clear lungs",
@@ -68,7 +71,8 @@
     "ABG_cooximetry",
     "ABG_basic",
     "SpO2_gap",
-    "CBC",
+    "CBC_smear",
+    "Hemolysis_panel",
     "Troponin_BMP",
     "G6PD",
     "ekg",
@@ -84,50 +88,58 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Methemoglobinemia (leading & CANT-MISS,9; accepts acquired/drug-induced methemoglobinemia from benzocaine). Hypoxemia from a primary cardiopulmonary cause — PE/ACS/pneumonia/pneumothorax (CANT-MISS to exclude,4). Carbon monoxide / other dyshemoglobinemia (core,3). Cyanotic congenital heart disease / right-to-left shunt (core,2). Sulfhemoglobinemia (bonus,2). Names cyanosis + low SpO2 unresponsive to oxygen after an oxidizing-agent exposure (benzocaine) (core,5).",
-      "idealAnswer": "Leading diagnosis: Methemoglobinemia (acquired, benzocaine-induced). Must-not-miss diagnoses to exclude: a primary cardiopulmonary cause of hypoxemia (PE, ACS, pneumonia, pneumothorax). Also reasonable: carbon monoxide / other dyshemoglobinemia; cyanotic congenital heart disease / right-to-left shunt; sulfhemoglobinemia.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis) and name at least three drugs or oxidizing agents that can cause acquired methemoglobinemia.",
+      "rubric": "Methemoglobinemia (leading & CANT-MISS,8; accepts acquired/drug-induced methemoglobinemia from benzocaine and/or dapsone). Acute pulmonary embolism — the genuine competing cause of acute dyspnea with hypoxemia and tachycardia that must be excluded (CANT-MISS,4). ACS / other primary cardiopulmonary cause — pneumonia/pneumothorax (core,2). Carbon monoxide / other dyshemoglobinemia such as sulfhemoglobinemia (core,2). Cyanotic congenital heart disease / right-to-left shunt (core,1). Names cyanosis + low SpO2 unresponsive to oxygen after an oxidizing-agent exposure as the key pattern (core,4). Names ≥3 oxidant etiologies of acquired methemoglobinemia — e.g. benzocaine/local anesthetics, dapsone, nitrates/nitrites & poppers, sulfa drugs (trimethoprim-sulfamethoxazole), phenazopyridine, well-water nitrates (core,4). PENALTY: anchoring on PE/ACS and missing the dyshemoglobinemia clues (chocolate blood, saturation gap) (-3).",
+      "idealAnswer": "Leading diagnosis: Methemoglobinemia (acquired) — driven by BOTH today's benzocaine and the recently started dapsone. The genuine competing diagnosis to exclude is acute pulmonary embolism (acute dyspnea, pleuritic tightness, tachycardia, hypoxemia); also consider ACS and other primary cardiopulmonary causes (pneumonia, pneumothorax), carbon monoxide / other dyshemoglobinemia (sulfhemoglobinemia), and cyanotic congenital heart disease / right-to-left shunt. The discriminating pattern is cyanosis with a low SpO2 that does NOT correct on oxygen plus chocolate-brown blood. At least three oxidant causes of acquired methemoglobinemia: (1) benzocaine and other local anesthetics, (2) dapsone, (3) nitrates/nitrites including amyl-nitrite 'poppers' — and others such as sulfa drugs (TMP-SMX), phenazopyridine, and well-water/food nitrates.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Methemoglobinemia (drug/benzocaine-induced)",
-            "points": 9
+            "item": "Methemoglobinemia (drug-induced — benzocaine and/or dapsone)",
+            "points": 8
           },
           {
-            "item": "Primary cardiopulmonary hypoxemia (PE/ACS/pneumonia/pneumothorax)",
+            "item": "Acute pulmonary embolism (competing cause of acute hypoxemic dyspnea to exclude)",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Carbon monoxide / other dyshemoglobinemia",
-            "points": 3
+            "item": "ACS / other primary cardiopulmonary cause (pneumonia/pneumothorax)",
+            "points": 2
+          },
+          {
+            "item": "Carbon monoxide / other dyshemoglobinemia (e.g. sulfhemoglobinemia)",
+            "points": 2
           },
           {
             "item": "Cyanotic congenital heart disease / right-to-left shunt",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Names cyanosis + low SpO2 unresponsive to oxygen after an oxidizing-agent exposure",
-            "points": 5
-          }
-        ],
-        "bonusActions": [
+            "points": 4
+          },
           {
-            "item": "Sulfhemoglobinemia",
-            "points": 2
+            "item": "Names ≥3 oxidant etiologies of acquired methemoglobinemia (benzocaine/local anesthetics, dapsone, nitrates/nitrites/poppers, sulfa drugs, phenazopyridine, well-water nitrates)",
+            "points": 4
           }
         ],
-        "penalties": []
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchors on PE/ACS and misses the dyshemoglobinemia clues (chocolate blood, saturation gap)",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Primary cardiopulmonary hypoxemia (PE/ACS/pneumonia/pneumothorax)"
+        "Acute pulmonary embolism (competing cause of acute hypoxemic dyspnea to exclude)"
       ],
       "acceptableAlternatives": [
-        "Carbon monoxide / other dyshemoglobinemia",
-        "Cyanotic congenital heart disease / right-to-left shunt",
-        "Sulfhemoglobinemia"
+        "ACS / other primary cardiopulmonary cause (pneumonia/pneumothorax)",
+        "Carbon monoxide / other dyshemoglobinemia (e.g. sulfhemoglobinemia)",
+        "Cyanotic congenital heart disease / right-to-left shunt"
       ]
     },
     {
@@ -136,8 +148,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Co-oximetry / methemoglobin level (CANT-MISS,5; the only test that confirms). Arterial blood gas with measured (not calculated) oxygen saturation, looking for a saturation gap (4). EKG and CXR to exclude a cardiopulmonary cause (3). G6PD level before treatment with methylene blue (2). Recognizes pulse ox is unreliable and trends toward ~85% in methemoglobinemia (bonus,3). PENALTY: relying on the calculated O2 sat from the ABG analyzer (which reads normal) to exclude hypoxia (-3).",
-      "idealAnswer": "Order: EKG; CXR; ABG cooximetry; ABG basic; Sp O 2 gap; CBC; Troponin BMP; G 6 PD.",
+      "rubric": "Co-oximetry / methemoglobin level (CANT-MISS,5; the only test that confirms and that distinguishes metHb from CO/sulfHb). Arterial blood gas with MEASURED (not calculated) oxygen saturation, looking for a saturation gap (3). CBC with smear + hemolysis labs (LDH, haptoglobin, bilirubin, retic) given dapsone — looks for the concurrent oxidative hemolytic anemia (3). EKG and CXR to exclude the competing PE/cardiopulmonary cause (2; consider D-dimer/CTPA only if PE remains a real concern). G6PD level before treatment with methylene blue (2). BMP for renal function (1). Recognizes pulse ox is unreliable and plateaus near ~85% in methemoglobinemia (bonus,2). PENALTY: relying on the calculated O2 sat from the ABG analyzer (which reads normal) to exclude hypoxia (-3); irradiating with CTPA before recognizing the dyshemoglobinemia (-2).",
+      "idealAnswer": "Order: ABG cooximetry (methemoglobin level — confirmatory); ABG basic with a MEASURED O2 saturation to demonstrate the saturation gap; the SpO2 gap finding itself; CBC with peripheral smear plus a hemolysis panel (LDH, haptoglobin, indirect bilirubin, reticulocytes) given dapsone; Troponin and BMP; G6PD before methylene blue; and EKG + CXR to exclude the competing PE/cardiopulmonary cause (reserve D-dimer/CTPA for if PE genuinely persists after the metHb is explained).",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -149,43 +161,35 @@
         "coreActions": [
           {
             "item": "ABG with measured O2 saturation (saturation gap)",
-            "points": 4
-          },
-          {
-            "item": "EKG and CXR to exclude cardiopulmonary cause",
             "points": 3
           },
           {
+            "item": "CBC with smear + hemolysis labs (LDH, haptoglobin, bilirubin, retic) given dapsone",
+            "points": 2
+          },
+          {
+            "item": "EKG and CXR to exclude the competing PE/cardiopulmonary cause",
+            "points": 2
+          },
+          {
             "item": "G6PD level before methylene blue",
-            "points": 2
-          },
-          {
-            "item": "ABG cooximetry",
-            "points": 2
-          },
-          {
-            "item": "ABG basic",
-            "points": 2
-          },
-          {
-            "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "Troponin BMP",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Recognizes pulse oximetry is unreliable (trends toward ~85%) in methemoglobinemia",
-            "points": 3
+            "item": "Recognizes pulse oximetry is unreliable (plateaus near ~85%) in methemoglobinemia",
+            "points": 1
           }
         ],
         "penalties": [
           {
             "item": "relying on the calculated O2 sat from the ABG analyzer to exclude hypoxia",
             "points": -3
+          },
+          {
+            "item": "rushing to CTPA before recognizing the dyshemoglobinemia",
+            "points": -2
           }
         ]
       },
@@ -194,11 +198,13 @@
       ],
       "optionalTests": [
         "ABG with measured O2 saturation (saturation gap)",
-        "EKG and CXR to exclude cardiopulmonary cause",
+        "CBC with smear + hemolysis labs (LDH, haptoglobin, bilirubin, retic) given dapsone",
+        "EKG and CXR to exclude the competing PE/cardiopulmonary cause",
         "G6PD level before methylene blue"
       ],
       "contraindicatedTests": [
-        "relying on the calculated O2 sat from the ABG analyzer to exclude hypoxia"
+        "relying on the calculated O2 sat from the ABG analyzer to exclude hypoxia",
+        "rushing to CTPA before recognizing the dyshemoglobinemia"
       ],
       "orderSensitiveActions": [
         "relying on the calculated O2 sat from the ABG analyzer to exclude hypoxia"
@@ -210,42 +216,37 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (sinus tachycardia) (7); no acute ischemic changes / no right heart strain — helps exclude ACS/PE (5); systematic read (3). PENALTY: over-calling ischemia / STEMI (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and what they mean for your competing differential.",
+      "rubric": "This is the patient's OWN tracing. Findings = sinus tachycardia (~106 bpm) with NO right-heart strain and NO acute ischemia. CREDIT: identifies rate & rhythm — sinus tachycardia (6); states the pertinent NEGATIVES — no S1Q3T3, no RBBB, no anterior T-wave inversion / right-heart strain, no acute ischemic ST-T changes (5); links the absent strain pattern to making a large PE less likely and excluding ACS (2); systematic read (2). PENALTY: over-calling ischemia/STEMI or inventing a right-heart-strain/PE pattern (-3).",
       "keyFindings": [
-        "sinus tachycardia",
-        "no acute ischemic ST-T changes (excludes ACS as the cause)",
+        "sinus tachycardia at ~106 bpm",
+        "no S1Q3T3, no RBBB, no anterior T-wave inversion / right-heart strain (argues against a large PE)",
+        "no acute ischemic ST-T changes (excludes ACS)",
         "systematic read"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; no acute ischemic ST-T changes, no right heart strain."
+        "Sinus tachycardia with no right-heart-strain pattern (no S1Q3T3/RBBB/anterior TWI) and no acute ischemia — argues against the competing massive-PE and ACS forks."
       ],
       "commonMistakes": [
-        "over-calling ischemia / attributing the cyanosis to a STEMI"
+        "over-calling ischemia / attributing the cyanosis to a STEMI",
+        "inventing an S1Q3T3 / right-heart-strain pattern to fit a PE"
       ],
-      "idealAnswer": "Sinus tachycardia at ~104 bpm; no acute ischemic ST-T changes and no right heart strain — a near-normal tracing that helps exclude ACS/PE as the cause of the cyanosis.",
+      "idealAnswer": "Sinus tachycardia at ~106 bpm with normal axis and intervals. Crucially, there is NO S1Q3T3, NO right bundle branch block, NO anterior (V1–V3) T-wave inversion or other right-heart-strain pattern, and NO acute ischemic ST-T changes. On the patient's own tracing these pertinent negatives argue against a large/submassive pulmonary embolism and against ACS, helping tip the fork toward a dyshemoglobinemia as the cause of the cyanosis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus tachycardia; no acute ischemic ST-T changes, no right heart strain.",
-            "points": 7
-          }
+          "Recognizes: sinus tachycardia with no right-heart-strain pattern (no S1Q3T3/RBBB/anterior TWI) and no acute ischemia — argues against PE/ACS."
         ],
         "coreActions": [
-          {
-            "item": "no acute ischemic changes / no right heart strain (excludes ACS/PE)",
-            "points": 5
-          },
-          {
-            "item": "systematic read",
-            "points": 3
-          }
+          "sinus tachycardia at ~106 bpm",
+          "no S1Q3T3 / RBBB / anterior T-wave inversion (no right-heart strain — argues against a large PE)",
+          "no acute ischemic ST-T changes (excludes ACS)",
+          "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling ischemia / calling a STEMI",
+            "label": "over-calls ischemia / a STEMI, or invents a right-heart-strain/PE pattern",
             "points": -3
           }
         ]
@@ -258,36 +259,30 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = essentially clear film. CREDIT: correctly identifies no consolidation/effusion/edema/pneumothorax (6); notes the clinically important mismatch — a clear film with cyanosis and a low SpO2 that won't correct on oxygen points away from a primary cardiopulmonary cause (4). PENALTY: inventing an infiltrate or edema (-2).",
+      "rubric": "Findings = essentially clear film. CREDIT: correctly identifies no consolidation/effusion/edema/pneumothorax/focal oligemia (6); notes the clinically important mismatch — a clear film with profound cyanosis and a low SpO2 that won't correct on oxygen points away from a primary cardiopulmonary cause and toward a dyshemoglobinemia (4). PENALTY: inventing an infiltrate or edema (-2).",
       "keyFindings": [
         "correctly identifies no consolidation/effusion/edema/pneumothorax",
         "notes the mismatch — clear film with cyanosis/hypoxemia unresponsive to O2 points to a dyshemoglobinemia"
       ],
       "criticalFindings": [
-        "Essentially clear — no consolidation, effusion, edema, or pneumothorax."
+        "Essentially clear — no consolidation, effusion, edema, pneumothorax, or focal oligemia."
       ],
       "commonMistakes": [
         "inventing an infiltrate or pulmonary edema to explain the cyanosis"
       ],
-      "idealAnswer": "Essentially clear lungs — no consolidation, effusion, edema, or pneumothorax; a clear film with cyanosis and a low SpO2 that won't correct on oxygen points away from a primary cardiopulmonary cause and toward a dyshemoglobinemia.",
+      "idealAnswer": "Essentially clear lungs — no consolidation, effusion, edema, pneumothorax, or focal oligemia; a clear film with profound cyanosis and a low SpO2 that won't correct on oxygen points away from a primary cardiopulmonary cause and toward a dyshemoglobinemia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Essentially clear — no consolidation, effusion, edema, or pneumothorax.",
-            "points": 6
-          }
+          "Recognizes: Essentially clear — no consolidation, effusion, edema, pneumothorax, or focal oligemia."
         ],
         "coreActions": [
-          {
-            "item": "notes the mismatch — clear film with cyanosis/hypoxemia unresponsive to O2 points to a dyshemoglobinemia",
-            "points": 4
-          }
+          "notes the mismatch — clear film with cyanosis/hypoxemia unresponsive to O2 points to a dyshemoglobinemia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing an infiltrate or pulmonary edema",
+            "label": "invents an infiltrate or pulmonary edema",
             "points": -2
           }
         ]
@@ -297,19 +292,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Co-oximetry shows a methemoglobin level of 32% with a normal measured PaO2 of 95 mmHg, an SpO2 of 85% that did not correct on oxygen, chocolate-brown blood, and a normal G6PD. What is your diagnosis and what did you rule out?",
-      "rubric": "Acquired (benzocaine-induced) methemoglobinemia (6). Explains the saturation gap (low SpO2 with normal PaO2), the chocolate-brown blood, and the failure of oxygen to correct the saturation; rules out a primary cardiopulmonary cause via the clear CXR/EKG and normal PaO2 (4).",
-      "idealAnswer": "Methemoglobinemia.",
+      "prompt": "Co-oximetry shows a methemoglobin level of 32% with a normal measured PaO2 of 95 mmHg, an SpO2 of 85% that did not correct on oxygen, chocolate-brown blood, COHb <2%, and a normal G6PD. The CBC shows Hgb 11.4 (down from 14.6) with bite cells, Heinz bodies, a low haptoglobin and a high LDH, and the creatinine is 1.5. What is your diagnosis, what concurrent problems do you identify, and what did you rule out?",
+      "rubric": "Acquired methemoglobinemia from combined oxidant exposure — benzocaine PLUS dapsone (6). Identifies the SECOND, concurrent problem: dapsone-induced oxidative (non-immune) hemolytic anemia (bite cells/Heinz bodies, low haptoglobin, high LDH, Coombs-negative) and the mild AKI as a separate issue (2). Explains the saturation gap (low SpO2 with normal PaO2), the chocolate-brown blood, and the failure of oxygen to correct; names the discriminating tests; rules out the competing PE/ACS via the strain-free EKG, clear CXR, and normal PaO2, and rules out CO via the low COHb; notes residual caution that a G6PD assay drawn during hemolysis can be falsely normal (2).",
+      "idealAnswer": "Acquired methemoglobinemia driven by combined oxidant exposure — today's benzocaine on top of recently started dapsone. Concurrent problems to call out as separate issues: (1) dapsone-induced oxidative hemolytic anemia — Hgb fallen to 11.4 with bite cells and Heinz bodies, low haptoglobin, high LDH and a negative Coombs (non-immune); and (2) a mild AKI (creatinine 1.5). The diagnosis is confirmed by the saturation gap — a low SpO2 with a normal measured PaO2 — the chocolate-brown blood, and the failure of oxygen to correct the saturation. I ruled out the competing acute PE / ACS using the strain-free, ischemia-free EKG, the clear CXR, and the normal PaO2, and ruled out carbon monoxide via the low COHb. One residual caveat: a G6PD assay drawn during active hemolysis can be falsely normal, so methylene blue is given with caution and close monitoring.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Explains the saturation gap and the chocolate-brown blood, and confirms normal G6PD before treatment",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -317,65 +307,80 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH toxicology/dyshemoglobinemia guidance: stop and remove the offending oxidizing agent (benzocaine) (CANT-MISS,5); methylene blue 1–2 mg/kg IV for symptomatic methemoglobinemia or level >20–30% (CANT-MISS,7); supportive care including supplemental O2 even though SpO2 won't fully correct (3); confirm/consider G6PD status before methylene blue (4); ascorbic acid or exchange transfusion / hyperbaric O2 if methylene blue contraindicated or refractory (3); toxicology / Poison Control consult and admit/monitor (3). PENALTY: giving methylene blue to a G6PD-deficient patient (can cause hemolysis and worsen) (-3); discharging or treating as simple hypoxemia / escalating oxygen alone while ignoring methemoglobin (-3).",
-      "idealAnswer": "Stop and remove the offending oxidizing agent (benzocaine). Give methylene blue 1–2 mg/kg IV over 5 minutes for symptomatic methemoglobinemia or level >20–30%; repeat once if needed. Provide supplemental oxygen and supportive care. Check G6PD status — avoid methylene blue if G6PD-deficient (risk of hemolysis); use ascorbic acid, exchange transfusion, or hyperbaric oxygen as alternatives. Consult toxicology/Poison Control, admit and monitor methemoglobin levels.",
+      "prompt": "What is your management plan, including disposition and what you would counsel before any safe discharge?",
+      "rubric": "Per MGH toxicology/dyshemoglobinemia guidance: stop and remove ALL offending oxidizing agents — hold the benzocaine AND the dapsone (CANT-MISS,5); methylene blue 1–2 mg/kg IV over 5 min for symptomatic methemoglobinemia or level >20–30%, repeat once if needed (CANT-MISS,6); confirm/consider G6PD status before methylene blue and know it can be falsely normal during hemolysis (4); supportive care including supplemental O2 even though SpO2 won't fully correct, IV fluids for the hemolysis/AKI, and monitor for rebound metHb from dapsone's long half-life — consider multiple-dose activated charcoal (3); toxicology / Poison Control consult and admit/monitor serial methemoglobin and Hgb levels (2); safe-discharge plan — med reconciliation removing the oxidant, document a drug/oxidant-avoidance list and a dapsone allergy/caution, patient education on warning signs, ensure metHb normalized off therapy with no rebound and hemolysis/renal function stabilized, dermatology follow-up for an alternative to dapsone, and outpatient G6PD retesting after recovery (5). PENALTY: giving methylene blue to a (truly) G6PD-deficient patient — can worsen hemolysis (-3); discharging or treating as simple hypoxemia / escalating oxygen alone while ignoring methemoglobin (-3); continuing dapsone (-3).",
+      "idealAnswer": "Stop and remove ALL offending oxidizing agents — discontinue the benzocaine products AND hold dapsone. Give methylene blue 1–2 mg/kg IV over 5 minutes for this symptomatic methemoglobinemia (level 32%, >20–30%); repeat once if the level or symptoms persist. G6PD tested normal, but it can be falsely normal during active hemolysis, so dose with caution and watch closely; if methylene blue is contraindicated or refractory, use ascorbic acid, exchange transfusion, or hyperbaric oxygen. Provide supplemental oxygen and supportive care; give IV fluids for the oxidative hemolysis and mild AKI; because dapsone has a long half-life, anticipate REBOUND methemoglobinemia and consider multiple-dose activated charcoal and a longer monitoring window with serial methemoglobin and hemoglobin levels. Consult toxicology/Poison Control and admit. Before any safe discharge: reconcile medications and document the oxidant-avoidance list and a dapsone caution; counsel the patient on warning signs (returning blue color, breathlessness, dark urine); confirm the methemoglobin has normalized off therapy with no rebound and that hemolysis and renal function have stabilized; arrange dermatology follow-up for a dapsone alternative and outpatient G6PD retesting after recovery; ensure close primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Methylene blue 1–2 mg/kg IV for symptomatic/severe methemoglobinemia",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Stop / remove the offending oxidizing agent (benzocaine)",
+            "item": "Stop / remove ALL offending oxidizing agents (benzocaine AND hold dapsone)",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Confirm/consider G6PD status before methylene blue",
+            "item": "Confirm/consider G6PD before methylene blue (and know it can be falsely normal during hemolysis)",
             "points": 4
           },
           {
-            "item": "Supportive care (supplemental O2, monitoring)",
+            "item": "Supportive care: supplemental O2, IV fluids for hemolysis/AKI, monitor for rebound metHb (dapsone long half-life), consider multi-dose activated charcoal",
             "points": 3
           },
           {
-            "item": "Toxicology / Poison Control consult and admit",
-            "points": 3
+            "item": "Toxicology / Poison Control consult and admit with serial methemoglobin and Hgb levels",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge plan: med reconciliation/oxidant-avoidance list and dapsone caution, patient education on warning signs, confirm metHb normalized with no rebound and hemolysis/renal stable, dermatology follow-up for a dapsone alternative, outpatient G6PD retesting",
+            "points": 4
           }
         ],
         "bonusActions": [
           {
             "item": "Alternatives if methylene blue contraindicated/refractory (ascorbic acid, exchange transfusion, hyperbaric O2)",
-            "points": 3
+            "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Giving methylene blue to a G6PD-deficient patient",
+            "item": "Giving methylene blue to a truly G6PD-deficient patient",
+            "points": -3
+          },
+          {
+            "item": "Treating as simple hypoxemia / escalating oxygen alone while ignoring methemoglobin",
+            "points": -3
+          },
+          {
+            "item": "Continuing dapsone",
             "points": -3
           }
         ]
       },
       "requiredActions": [
         "Methylene blue 1–2 mg/kg IV for symptomatic/severe methemoglobinemia",
-        "Stop / remove the offending oxidizing agent (benzocaine)"
+        "Stop / remove ALL offending oxidizing agents (benzocaine AND hold dapsone)"
       ],
       "optionalActions": [
-        "Confirm/consider G6PD status before methylene blue",
-        "Supportive care (supplemental O2, monitoring)",
-        "Toxicology / Poison Control consult and admit",
+        "Confirm/consider G6PD before methylene blue (and know it can be falsely normal during hemolysis)",
+        "Supportive care: supplemental O2, IV fluids for hemolysis/AKI, monitor for rebound metHb (dapsone long half-life), consider multi-dose activated charcoal",
+        "Toxicology / Poison Control consult and admit with serial methemoglobin and Hgb levels",
+        "Safe-discharge plan: med reconciliation/oxidant-avoidance list and dapsone caution, patient education on warning signs, confirm metHb normalized with no rebound and hemolysis/renal stable, dermatology follow-up for a dapsone alternative, outpatient G6PD retesting",
         "Alternatives if methylene blue contraindicated/refractory (ascorbic acid, exchange transfusion, hyperbaric O2)"
       ],
       "unsafeActions": [
-        "Giving methylene blue to a G6PD-deficient patient"
+        "Giving methylene blue to a truly G6PD-deficient patient",
+        "Continuing dapsone"
       ],
       "consults": [
-        "Toxicology / Poison Control"
+        "Toxicology / Poison Control",
+        "Dermatology (for a dapsone alternative)"
       ],
-      "disposition": "Admit and monitor methemoglobin levels",
+      "disposition": "Admit and monitor serial methemoglobin and hemoglobin levels; discharge only after metHb normalizes off oxidants with no rebound and hemolysis/renal function stabilize",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Toxicology (Methemoglobinemia & Dyshemoglobinemias)",
@@ -397,6 +402,7 @@
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
+      "Do not volunteer the dapsone, benzocaine, or family history unless asked about the specific medications, recent procedures, or family history",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
@@ -413,7 +419,7 @@
         "inhaled nitrites",
         "street drugs"
       ],
-      "response": "No, I don't use any recreational drugs or poppers — nothing like that.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -429,7 +435,23 @@
         "benzocaine",
         "dental visit"
       ],
-      "response": "I had a dental procedure a few hours ago — they sprayed a numbing medicine on my gums and throat, and afterward I took a couple of extra over-the-counter numbing lozenges at home because it was still sore.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_list",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "new medication recently",
+        "dapsone",
+        "skin condition treatment",
+        "any pills for your skin"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -443,7 +465,7 @@
         "how long",
         "duration"
       ],
-      "response": "It came on over the last hour or two, after the dental numbing. The blue color and the breathlessness got worse together.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -457,8 +479,25 @@
         "response to oxygen",
         "oxygen mask"
       ],
-      "response": "The oxygen mask the paramedics put on hasn't made any difference — I still feel short of breath and I'm still blue.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "vte_risk",
+      "category": "hpi",
+      "triggerConcepts": [
+        "leg swelling",
+        "calf pain",
+        "recent travel",
+        "recent surgery",
+        "prior blood clots",
+        "immobilization",
+        "chest pain with breathing"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -472,7 +511,7 @@
         "chest pain",
         "headache"
       ],
-      "response": "I have a headache and I feel lightheaded and tired. No chest pain, no cough, no fever, and no leg swelling.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -486,7 +525,7 @@
         "chocolate brown blood",
         "dark blood"
       ],
-      "response": "When they drew my blood, the nurse mentioned it looked unusually dark — sort of chocolate-brown — and it didn't turn bright red.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
@@ -498,9 +537,10 @@
         "family history",
         "anyone in the family",
         "relatives with similar problems",
-        "blood disorders in the family"
+        "blood disorders in the family",
+        "enzyme problem"
       ],
-      "response": "A cousin of mine once 'turned blue' after taking some medication — I'm not sure what it was or if there's an enzyme problem in the family.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -512,24 +552,11 @@
         "past medical history",
         "medical problems",
         "conditions",
-        "heart or lung disease"
+        "heart or lung disease",
+        "diabetes",
+        "skin condition"
       ],
-      "response": "I'm generally healthy — no known heart or lung disease, and I'm not aware of any enzyme deficiency.",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take",
-        "dapsone",
-        "nitrates"
-      ],
-      "response": "Just occasional ibuprofen normally. Today I had the dental numbing spray and some over-the-counter numbing lozenges. I don't take dapsone or any nitrate medications.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -538,7 +565,7 @@
   "physicalExamMappings": [
     {
       "id": "inspect_skin_finding_1",
-      "finding": "Skin/lips: central cyanosis — grayish-blue lips, perioral and fingertip discoloration; warm and well-perfused (NOT cold/clammy).",
+      "finding": "Skin/lips: central cyanosis — grayish-blue lips, perioral and fingertip discoloration; mild scleral pallor; warm and well-perfused (NOT cold/clammy).",
       "revealedBy": [
         "inspect_skin",
         "assess_general_appearance"
@@ -549,7 +576,7 @@
     },
     {
       "id": "inspect_nails_finding_2",
-      "finding": "Nails/extremities: bluish nail beds; brisk capillary refill, no clubbing, no edema or calf tenderness.",
+      "finding": "Nails/extremities: bluish nail beds; brisk capillary refill, no clubbing, no edema.",
       "revealedBy": [
         "inspect_nails",
         "assess_capillary_refill"
@@ -559,7 +586,18 @@
       "normalIfNotPresent": "Nail beds normal color; capillary refill brisk."
     },
     {
-      "id": "auscultate_lungs_finding_3",
+      "id": "assess_calf_tenderness_finding_3",
+      "finding": "Calves soft and NON-tender, no cords, no asymmetric swelling (argues against DVT and against the competing PE).",
+      "revealedBy": [
+        "assess_calf_tenderness",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Calves non-tender; no edema."
+    },
+    {
+      "id": "auscultate_lungs_finding_4",
       "finding": "Lungs: clear bilaterally, no crackles, wheeze, or consolidation.",
       "revealedBy": [
         "auscultate_anterior_lungs",
@@ -570,14 +608,14 @@
       "normalIfNotPresent": "Lungs clear."
     },
     {
-      "id": "assess_mental_status_finding_4",
+      "id": "assess_mental_status_finding_5",
       "finding": "Neuro: alert and oriented, no focal deficit; mild headache only.",
       "revealedBy": [
         "assess_mental_status",
         "assess_general_appearance"
       ],
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "normalIfNotPresent": "Alert and oriented; no neurologic deficit."
     }
   ],
@@ -591,15 +629,18 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Methemoglobinemia",
-    "diagnosticFramework": "34M presents with dyspnea, headache, and dusky blue lips and fingertips a few hours after a dental procedure with topical benzocaine. The diagnosis is Methemoglobinemia, reached by eliciting the focused exposure history, performing the targeted exam (central cyanosis, chocolate-brown blood, an SpO2 that won't correct on oxygen), and interpreting the directed workup — a saturation gap with elevated methemoglobin on co-oximetry — while excluding the must-not-miss cardiopulmonary causes of hypoxemia.",
+    "diagnosticFramework": "34M with type 2 diabetes and dermatitis herpetiformis recently started on dapsone presents with dyspnea, pleuritic chest tightness, headache, and dusky blue lips and fingertips hours after a dental procedure with topical benzocaine. The diagnosis is acquired Methemoglobinemia from COMBINED oxidant exposure (benzocaine plus dapsone), reached by eliciting the focused exposure and medication history, performing the targeted exam (central cyanosis, chocolate-brown blood, an SpO2 that won't correct on oxygen, non-tender calves), and interpreting the directed workup — a saturation gap with elevated methemoglobin on co-oximetry — while excluding the genuine competing acute PE/ACS via the strain-free EKG, clear CXR, and normal PaO2. A concurrent dapsone-induced oxidative hemolytic anemia and a mild AKI are recognized as separate problems.",
     "keyHistoryClues": [
       "Topical benzocaine spray and OTC numbing lozenges hours before onset",
+      "Dapsone started ~3 weeks ago for a skin condition (a second oxidant)",
       "Cyanosis and low SpO2 that do not improve with supplemental oxygen",
-      "Chocolate-brown venous blood that does not turn red on air exposure"
+      "Chocolate-brown venous blood that does not turn red on air exposure",
+      "No calf pain/swelling, travel, surgery, or prior clots (lowers the competing PE)"
     ],
     "keyPhysicalExamFindings": [
-      "Skin/lips: central cyanosis — grayish-blue lips, perioral and fingertip discoloration; warm and well-perfused (NOT cold/clammy).",
-      "Nails/extremities: bluish nail beds; brisk capillary refill, no clubbing, no edema or calf tenderness.",
+      "Skin/lips: central cyanosis — grayish-blue lips, perioral and fingertip discoloration; mild scleral pallor; warm and well-perfused (NOT cold/clammy).",
+      "Nails/extremities: bluish nail beds; brisk capillary refill, no clubbing, no edema.",
+      "Calves soft and NON-tender, no cords, no asymmetric swelling (argues against DVT and against the competing PE).",
       "Lungs: clear bilaterally, no crackles, wheeze, or consolidation.",
       "Neuro: alert and oriented, no focal deficit; mild headache only."
     ],
@@ -607,29 +648,34 @@
       "ABG_cooximetry",
       "ABG_basic",
       "SpO2_gap",
-      "CBC",
+      "CBC_smear",
+      "Hemolysis_panel",
       "Troponin_BMP",
       "G6PD"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals — cyanosis with an SpO2 of 85% that is unchanged on oxygen.",
-      "Elicit the focused history, drawing out the recent benzocaine exposure and family history only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal central cyanosis, bluish nail beds, clear lungs, and chocolate-brown blood.",
-      "Build a differential led by Methemoglobinemia while explicitly excluding must-not-miss cardiopulmonary causes of hypoxemia.",
-      "Order a focused workup — co-oximetry/methemoglobin level and an ABG with measured oxygen saturation — and interpret the near-normal EKG/CXR and the saturation gap.",
-      "Commit to Methemoglobinemia and manage with removal of the oxidizing agent, methylene blue (after checking G6PD), supportive care, toxicology consult, and admission."
+      "Frame the presentation from the chart and vitals — profound cyanosis with an SpO2 of 85% that is unchanged on oxygen.",
+      "Elicit the focused history, drawing out the recent benzocaine exposure, the recently started dapsone, the VTE-risk negatives, and family history only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal central cyanosis, bluish nail beds, scleral pallor, non-tender calves, clear lungs, and chocolate-brown blood.",
+      "Build a differential led by Methemoglobinemia while explicitly excluding the genuine competing acute PE and ACS, and name ≥3 oxidant etiologies.",
+      "Order a focused workup — co-oximetry/methemoglobin level, an ABG with measured oxygen saturation, and hemolysis labs — and interpret the strain-free EKG, clear CXR, and the saturation gap.",
+      "Commit to Methemoglobinemia from combined benzocaine+dapsone oxidant stress, recognize the concurrent oxidative hemolysis and mild AKI, and manage with removal of ALL oxidants (including dapsone), methylene blue (after checking G6PD), supportive care with rebound monitoring, toxicology consult, admission, and a structured safe-discharge plan."
     ],
     "commonPitfalls": [
-      "Giving methylene blue to a G6PD-deficient patient",
+      "Giving methylene blue to a truly G6PD-deficient patient (and not knowing the assay can be falsely normal during hemolysis)",
       "Trusting the calculated O2 saturation from the ABG analyzer (which reads normal) and missing the saturation gap",
-      "Escalating oxygen alone for an SpO2 that physiologically cannot correct"
+      "Anchoring on PE/ACS and rushing to CTPA before recognizing the dyshemoglobinemia",
+      "Escalating oxygen alone for an SpO2 that physiologically cannot correct",
+      "Continuing dapsone or missing the concurrent oxidative hemolytic anemia"
     ],
     "managementPearls": [
       "Methylene blue 1–2 mg/kg IV for symptomatic/severe methemoglobinemia",
-      "Stop / remove the offending oxidizing agent (benzocaine)"
+      "Stop / remove ALL offending oxidizing agents — benzocaine AND dapsone",
+      "Anticipate rebound methemoglobinemia from dapsone's long half-life and monitor accordingly"
     ],
     "criticalHistoryItems": [
       "recent_exposure",
+      "medication_list",
       "oxygen_response",
       "blood_appearance"
     ],
@@ -640,25 +686,25 @@
       "Co-oximetry / methemoglobin level"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic ST-T changes, no right heart strain.",
-      "Essentially clear — no consolidation, effusion, edema, or pneumothorax."
+      "Sinus tachycardia with no right-heart-strain pattern and no acute ischemia — argues against PE/ACS.",
+      "Essentially clear — no consolidation, effusion, edema, pneumothorax, or focal oligemia."
     ],
     "criticalManagementItems": [
       "Methylene blue 1–2 mg/kg IV for symptomatic/severe methemoglobinemia",
-      "Stop / remove the offending oxidizing agent (benzocaine)"
+      "Stop / remove ALL offending oxidizing agents (benzocaine AND hold dapsone)"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic ST-T changes, no right heart strain.",
-      "Essentially clear — no consolidation, effusion, edema, or pneumothorax."
+      "Sinus tachycardia with no right-heart-strain pattern (no S1Q3T3/RBBB/anterior TWI) and no acute ischemia.",
+      "Essentially clear — no consolidation, effusion, edema, pneumothorax, or focal oligemia."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic ST-T changes, no right heart strain.",
-      "Essentially clear — no consolidation, effusion, edema, or pneumothorax."
+      "Sinus tachycardia with no right-heart-strain pattern and no acute ischemia — argues against PE/ACS.",
+      "Essentially clear — no consolidation, effusion, edema, pneumothorax, or focal oligemia."
     ],
     "imageInterpretationPearls": [
-      "A near-normal study is an interpretation in its own right — it can helpfully exclude a competing diagnosis.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A near-normal study is an interpretation in its own right — a strain-free EKG can helpfully argue against a competing PE.",
+      "Read every study systematically and state pertinent negatives, not just positives.",
+      "A clear chest film with profound cyanosis that won't correct on oxygen points toward a dyshemoglobinemia."
     ]
   },
   "communicationScoring": {
@@ -688,7 +734,7 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
+    "appliedOn": "2026-06-15",
     "imagePolicy": "pathology-forward standalone interpretation",
     "ekgReplaced": false,
     "cxrReplaced": false,

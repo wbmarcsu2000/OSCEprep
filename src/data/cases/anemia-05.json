@@ -2,66 +2,69 @@
   "id": "anemia-05",
   "category": "Anemia",
   "difficulty": "hard",
-  "title": "Fatigue, jaundice, and dark urine",
+  "title": "Fatigue, jaundice, and dark urine in a patient with CLL on new medications",
   "diagnosis": "Autoimmune hemolytic anemia",
   "chart": {
-    "ageSex": "45F",
+    "ageSex": "62F",
     "cc": "Fatigue and yellow eyes",
-    "oneLiner": "45F presents with one week of rapidly worsening fatigue, jaundice, and dark urine.",
+    "oneLiner": "62F with chronic lymphocytic leukemia (watchful-waiting), hypertension on a thiazide, and a recently started antibiotic presents with one week of rapidly worsening fatigue, jaundice, and dark urine.",
     "vitals": {
-      "BP": "118/72",
+      "BP": "112/70",
       "HR": "112",
       "RR": "18",
-      "Temp": "37.4°C",
-      "SpO2": "98% RA"
+      "Temp": "37.5°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I've gone really pale and tired this week, my eyes have turned yellow, and my urine looks dark.",
-  "patientFile": "PERSONA: 45-year-old woman, pale and mildly jaundiced, tired. Cooperative.\n\nHPI: Rapidly progressive fatigue, breathlessness, and lightheadedness over a week. Noticed yellowing of the eyes and dark (tea-colored) urine. Recent viral upper respiratory illness; started a new antibiotic recently (only if asked about recent illness/medications). NO black/bloody stools, NO heavy menses, NO known liver disease.\nPMH: none significant; possible underlying autoimmune tendency. MEDS: a recently started antibiotic (if asked). SOCIAL: minimal alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale with scleral icterus/jaundice.\n- Vitals: BP 118/72, HR 112, RR 18, 37.4°C, SpO2 98% RA.\n- Abdomen: mild splenomegaly if examined; no marked tenderness.\n- Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent illness or new antibiotic unless asked about recent infections or medications.\n- Splenomegaly is revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've gone really pale and worn out over the past week, my eyes have turned yellow, and my urine looks dark like tea.",
+  "patientFile": "PERSONA: 62-year-old woman, pale and mildly jaundiced, tired and a little breathless on exertion. Cooperative, answers what is asked.\n\nHPI: Rapidly progressive fatigue, breathlessness on exertion, and lightheadedness over about a week. Noticed yellowing of the eyes and dark, tea-colored urine over the last few days. About two weeks ago she had a chesty cold and her doctor started her on an antibiotic for a presumed chest infection (a 'Z-pack' type pill, azithromycin) AND a urinary antibiotic a few days later when her urine test looked off (nitrofurantoin) — reveal these only if asked about recent illnesses or new medications. NO black or bloody stools, NO vomiting blood, NO heavy menstrual bleeding (post-menopausal). NO known liver disease, NO heavy alcohol use. She has not been out in the cold or noticed her fingers turning blue/white. NO fever spikes, NO confusion, NO new bruising or nosebleeds.\nPMH: chronic lymphocytic leukemia (CLL) diagnosed ~2 years ago, never needed treatment ('watch and wait'), known mildly enlarged lymph nodes; hypertension; mild osteoarthritis of the knees. Reveal CLL only if asked about past medical problems or blood conditions.\nMEDS (reveal only if asked about medications): hydrochlorothiazide for blood pressure; recently started azithromycin (chest) and nitrofurantoin (urine) antibiotics; over-the-counter ibuprofen most days for knee pain; no anticoagulants; no warfarin. ALLERGIES: none known.\nSOCIAL: retired teacher, minimal alcohol (a glass of wine on holidays), never smoked, no recreational drugs. FAMILY: a brother with 'a blood problem'; no known bleeding disorders. ROS: as above — fatigue, exertional breathlessness, dark urine, yellow eyes; no chest pain, no palpitations she has noticed, no leg swelling, no bleeding.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale with scleral icterus/jaundice; mild distress with exertion.\n- Vitals: BP 112/70, HR 112, RR 18, 37.5°C, SpO2 97% RA.\n- Lymph nodes: a few small, soft, non-tender enlarged cervical and axillary nodes (chronic, from her CLL) if examined.\n- Abdomen: moderate splenomegaly if examined; no marked tenderness; liver not enlarged.\n- Cardiac: tachycardic, regular, soft systolic flow murmur. No petechiae, NO purpura, no new bruising; no focal neurologic deficit; mucous membranes pale.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent chest cold, the new antibiotics, the thiazide, or the ibuprofen unless asked about recent illnesses or medications.\n- Do NOT volunteer the CLL or the brother's blood problem unless asked about past medical/blood history or family history.\n- Lymphadenopathy and splenomegaly are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "Hgb 7.2, MCV 102 (elevated due to reticulocytosis), WBC normal, Plt 240 (NORMAL platelets — important).",
-      "Reticulocyte": "Markedly elevated (appropriate marrow response).",
-      "Smear": "Spherocytes and polychromasia; NO schistocytes (argues against microangiopathy).",
-      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW — a hemolytic pattern.",
-      "Coombs": "Direct antiglobulin (Coombs) test POSITIVE — confirms autoimmune hemolysis.",
-      "BMP": "Cr normal (no renal involvement to suggest HUS)."
+      "CBC": "Hgb 6.9 (severe), MCV 104 (elevated, due to reticulocytosis), WBC 38 with an absolute LYMPHOCYTOSIS (mature small lymphocytes — her known CLL), Plt 245 (NORMAL platelets — important, argues against TTP/HUS and against Evans-type thrombocytopenia).",
+      "Reticulocyte": "Reticulocyte count MARKEDLY ELEVATED at 9% (absolute ~280 x10^9/L) — an appropriate, brisk marrow response to hemolysis.",
+      "Smear": "Numerous SPHEROCYTES and polychromasia with smudge cells (consistent with CLL); NO schistocytes (argues strongly against a microangiopathic process / TTP-HUS), no bite cells.",
+      "Hemolysis": "LDH HIGH (610), indirect (unconjugated) bilirubin HIGH (total bili 4.1 with direct 0.6, so indirect 3.5), haptoglobin UNDETECTABLE — a clear intravascular/extravascular hemolytic pattern.",
+      "Coombs": "Direct antiglobulin (Coombs) test POSITIVE, strongly positive for IgG with negative C3d (a WARM-antibody pattern) — confirms autoimmune hemolysis, here secondary to her CLL.",
+      "BMP": "Na 129 (mild HYPONATREMIA — thiazide-related), K 4.2, Cl 96, HCO3 24 (anion gap = 129 - (96 + 24) = 9, NORMAL — no metabolic acidosis), BUN 16, Cr 0.9 (NORMAL renal function — argues against HUS); Mg 1.6 (low-normal), corrected Ca normal.",
+      "Coags": "PT, aPTT, and fibrinogen NORMAL with a normal D-dimer — argues against DIC as the cause of the hemolysis."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 23,
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "RBBB morphology plus left axis deviation (left anterior fascicular block).",
-      "verify": "Source a study matching: RBBB morphology plus left axis deviation (left anterior fascicular block). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia (~112 bpm) with a markedly PROLONGED QT interval (measured QT ~370 ms at this rate; QTc by Bazett ~505 ms), broad-based T waves; no acute ST-elevation. The prolonged QTc is drug-induced (azithromycin plus a borderline-low magnesium) layered on a demand tachycardia from severe anemia.",
+      "verify": "Source a study matching: sinus tachycardia with a markedly prolonged QT/QTc (drug-induced), without acute ST-elevation. Self-host with appropriate credit; do not reuse a normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing bifascicular block RBBB LAFB",
+      "imageDescription": "12-lead showing sinus tachycardia with marked QT prolongation",
       "searchTerms": [
-        "bifascicular block ECG",
-        "RBBB left anterior fascicular block"
+        "drug induced long QT ECG",
+        "prolonged QTc sinus tachycardia ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 66-year-old man presents for preoperative assessment with a conduction abnormality noted on his tracing."
+      "clinicalVignette": "A patient on a macrolide antibiotic with a low magnesium has a fast rhythm and a long QT interval on the tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=mediastinal%20lymphadenopathy%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Elevated right hemidiaphragm with otherwise clear lungs (incidental).",
-      "verify": "Source a study matching: Elevated right hemidiaphragm with otherwise clear lungs (incidental). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Mild mediastinal/hilar widening from lymphadenopathy (consistent with her known CLL); lungs clear with no consolidation, effusion, or pulmonary edema; normal cardiac silhouette.",
+      "verify": "Source a study matching: mild mediastinal/hilar lymphadenopathy with otherwise clear lungs. Self-host with appropriate credit; do not reuse a normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing elevated hemidiaphragm",
+      "imageDescription": "chest radiograph showing mild mediastinal/hilar lymphadenopathy with clear lungs",
       "searchTerms": [
-        "elevated hemidiaphragm chest x-ray",
-        "raised right hemidiaphragm radiograph"
+        "mediastinal lymphadenopathy chest x-ray",
+        "hilar lymphadenopathy CLL radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 60-year-old woman presents with vague upper abdominal discomfort and is found to have an incidental finding."
+      "clinicalVignette": "A patient with a chronic lymphoproliferative disorder has a screening chest film before treatment."
     }
   },
   "revealKeys": [
@@ -71,6 +74,7 @@
     "Hemolysis",
     "Coombs",
     "BMP",
+    "Coags",
     "ekg",
     "cxr"
   ],
@@ -84,15 +88,15 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this anemia (note your leading diagnosis).",
-      "rubric": "Hemolytic anemia — autoimmune (leading,7). Microangiopathic hemolysis — TTP/HUS (CANT-MISS to exclude,5). Hereditary hemolysis (G6PD/spherocytosis) (core,3). Drug-induced hemolysis (core,3). Bleeding (core,2). Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS (core,5).",
-      "idealAnswer": "Leading diagnosis: Hemolytic anemia — autoimmune. Must-not-miss diagnoses to exclude: Microangiopathic hemolysis — TTP/HUS. Also reasonable: Hereditary hemolysis (G6PD/spherocytosis); Drug-induced hemolysis; Bleeding.",
+      "prompt": "Based on your history and physical, give your differential for this anemia (note your leading diagnosis). Name at least THREE distinct etiologies or mechanisms of hemolysis you are weighing, and say which can't-miss diagnosis you are most worried about.",
+      "rubric": "Hemolytic anemia — autoimmune, likely secondary to her CLL (leading,6). Microangiopathic hemolysis — TTP/HUS (CANT-MISS to exclude given hemolysis,5). Drug-induced/oxidant hemolysis given new azithromycin, nitrofurantoin, and chronic NSAID; consider G6PD-type oxidant injury (core,3). DIC as a consumptive hemolysis (core,2). Hereditary/membrane hemolysis (spherocytosis) (core,1). Names ≥3 distinct mechanisms of hemolysis — e.g. antibody-mediated (autoimmune), mechanical/microangiopathic (schistocytes), oxidant/drug-induced, consumptive (DIC), membrane/enzyme defects (core,4). Explicitly states the imperative to look for schistocytes + thrombocytopenia + renal failure to exclude TTP/HUS before treating (core,4). PENALTY: anchoring on simple iron-deficiency or occult-bleeding anemia and missing the hemolytic picture (-3).",
+      "idealAnswer": "Leading diagnosis: warm autoimmune hemolytic anemia (AIHA), most likely SECONDARY to her known CLL. Must-not-miss to exclude first: microangiopathic hemolysis — TTP/HUS — because it shares hemolysis but is treated with plasma exchange, not steroids. At least three distinct hemolysis mechanisms to weigh: (1) antibody-mediated/autoimmune (warm IgG, Coombs-positive); (2) mechanical/microangiopathic (schistocytes — TTP/HUS/DIC); (3) oxidant/drug-induced hemolysis from her newly started antibiotics (azithromycin, nitrofurantoin) and chronic NSAID, including a possible G6PD-type oxidant injury. Also consider DIC (consumptive) and hereditary membrane defects (spherocytosis). The new drugs and the CLL are key confounders. A pregnancy/bleeding source is not the picture here (post-menopausal, no melena).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Hemolytic anemia — autoimmune",
-            "points": 7
+            "item": "Warm autoimmune hemolytic anemia (likely secondary to CLL)",
+            "points": 6
           },
           {
             "item": "Microangiopathic hemolysis — TTP/HUS",
@@ -101,32 +105,41 @@
         ],
         "coreActions": [
           {
-            "item": "Hereditary hemolysis (G6PD/spherocytosis)",
+            "item": "Drug-induced / oxidant hemolysis (azithromycin, nitrofurantoin, NSAID, G6PD-type)",
             "points": 3
           },
           {
-            "item": "Drug-induced hemolysis",
-            "points": 3
-          },
-          {
-            "item": "Bleeding",
+            "item": "DIC (consumptive hemolysis)",
             "points": 2
           },
           {
-            "item": "Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS",
-            "points": 5
+            "item": "Hereditary / membrane hemolysis (spherocytosis)",
+            "points": 1
+          },
+          {
+            "item": "Names at least three distinct mechanisms of hemolysis (antibody-mediated, microangiopathic/mechanical, oxidant/drug, consumptive, membrane/enzyme)",
+            "points": 4
+          },
+          {
+            "item": "States the imperative to look for schistocytes, thrombocytopenia, and renal failure to exclude TTP/HUS before treating",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on iron-deficiency/occult-bleeding anemia and misses the hemolytic picture",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "Microangiopathic hemolysis — TTP/HUS"
       ],
       "acceptableAlternatives": [
-        "Hereditary hemolysis (G6PD/spherocytosis)",
-        "Drug-induced hemolysis",
-        "Bleeding"
+        "Drug-induced / oxidant hemolysis (azithromycin, nitrofurantoin, NSAID, G6PD-type)",
+        "DIC (consumptive hemolysis)",
+        "Hereditary / membrane hemolysis (spherocytosis)"
       ]
     },
     {
@@ -134,9 +147,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — spherocytes vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (3). Direct antiglobulin (Coombs) test (CANT-MISS,3). Renal function/platelets to exclude TTP/HUS (2). PENALTY: starting steroids before excluding TTP (which needs plasma exchange, not steroids) (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs; Coombs (DAT); BMP.",
+      "prompt": "What initial workup do you want to order to characterize the anemia and triage the can't-miss diagnoses?",
+      "rubric": "CBC + reticulocyte count to confirm hemolysis with appropriate marrow response (CANT-MISS,3). Peripheral smear — spherocytes vs schistocytes vs bite cells (CANT-MISS,3). Direct antiglobulin (Coombs) test (CANT-MISS,3). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (2). BMP for renal function and electrolytes (catches the thiazide hyponatremia and excludes HUS) (1). Coagulation panel + fibrinogen + D-dimer to exclude DIC (1). EKG given the QT-prolonging drugs (1). CXR (1). PENALTY: starting empiric steroids before excluding TTP/HUS, which needs plasma exchange not steroids (-2); transfusing reflexively without a type-and-screen/DAT-aware crossmatch (-1).",
+      "idealAnswer": "Order: CBC; Reticulocyte count; Peripheral smear (look specifically for schistocytes vs spherocytes vs bite cells); Direct antiglobulin (Coombs) test; Hemolysis labs (LDH, haptoglobin, indirect bilirubin); BMP (renal function + electrolytes — will catch the thiazide hyponatremia and exclude HUS); Coagulation panel with fibrinogen and D-dimer (exclude DIC); EKG (she is on QT-prolonging azithromycin); CXR. Send a type-and-screen early and warn the blood bank the DAT may be positive, but do NOT give empiric steroids until a microangiopathy is excluded on the smear and platelet/renal panel.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,8 +158,8 @@
             "points": 3
           },
           {
-            "item": "Peripheral smear — spherocytes vs schistocytes",
-            "points": 4
+            "item": "Peripheral smear — spherocytes vs schistocytes vs bite cells",
+            "points": 3
           },
           {
             "item": "Direct antiglobulin (Coombs) test",
@@ -155,41 +168,49 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)",
             "points": 2
+          },
+          {
+            "item": "BMP for renal function and electrolytes",
+            "points": 1
+          },
+          {
+            "item": "Coagulation panel + fibrinogen + D-dimer to exclude DIC",
+            "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Hemolysis labs",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "starting steroids before excluding TTP (which needs plasma exchange, not steroids)",
+            "item": "Starting empiric steroids before excluding TTP/HUS (needs plasma exchange, not steroids)",
             "points": -2
+          },
+          {
+            "item": "Transfusing reflexively without a type-and-screen / DAT-aware crossmatch",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
         "CBC + reticulocyte count",
-        "Peripheral smear — spherocytes vs schistocytes",
+        "Peripheral smear — spherocytes vs schistocytes vs bite cells",
         "Direct antiglobulin (Coombs) test"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "starting steroids before excluding TTP (which needs plasma exchange, not steroids)"
+        "Starting empiric steroids before excluding TTP/HUS (needs plasma exchange, not steroids)"
       ],
       "orderSensitiveActions": [
-        "starting steroids before excluding TTP (which needs plasma exchange, not steroids)"
+        "Starting empiric steroids before excluding TTP/HUS (needs plasma exchange, not steroids)"
       ]
     },
     {
@@ -198,32 +219,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = bifascicular block (RBBB + left anterior fascicular block). CREDIT: recognizes the RBBB pattern with marked left axis deviation (7); names it as bifascicular block (5); systematic read (3). PENALTY: calling it sinus tachycardia / missing the conduction abnormality (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG, obtained on arrival. Describe your findings and say how they change your medication and electrolyte plan.",
+      "rubric": "Findings = SINUS TACHYCARDIA (~112 bpm) with a markedly PROLONGED QTc (~505 ms by Bazett; measured QT ~370 ms at this rate); no acute ST-elevation. CREDIT: identifies the prolonged QT/QTc (6); recognizes the tachycardia is a DEMAND response to severe anemia, not a primary arrhythmia (3); attributes the long QT to the QT-prolonging azithromycin plus a low-normal magnesium and states the plan is to STOP the offending drug(s) and repleat Mg/K to prevent torsades (4); systematic read (2). PENALTY: missing the QT prolongation, or adding another QT-prolonging drug (e.g. ondansetron, more macrolide) without correcting electrolytes (-3).",
       "keyFindings": [
-        "RBBB pattern plus marked left axis deviation",
-        "names it as bifascicular block"
+        "sinus tachycardia",
+        "markedly prolonged QTc"
       ],
       "criticalFindings": [
-        "Bifascicular block (RBBB + left anterior fascicular block)."
+        "Sinus tachycardia (~112 bpm) with a markedly prolonged QTc (~505 ms), no acute ST-elevation."
       ],
       "commonMistakes": [
-        "reporting only the RBBB and missing the axis/fascicular component"
+        "reading only the tachycardia and missing the long QT",
+        "adding another QT-prolonging drug without repleting magnesium/potassium"
       ],
-      "idealAnswer": "Bifascicular block: RBBB plus left anterior fascicular block (left axis deviation).",
+      "idealAnswer": "Sinus tachycardia at ~112 bpm with a markedly prolonged QTc (~505 ms by Bazett; QT ~370 ms at this rate) and broad-based T waves, no acute ST-elevation. The fast rate is a DEMAND response to her severe anemia (Hgb 6.9), not a primary arrhythmia. The long QT is drug-induced — from the recently started azithromycin (a macrolide) compounded by a low-normal magnesium. Management implication: STOP the azithromycin and other QT-prolonging agents, replete magnesium and potassium toward high-normal, avoid adding further QT-prolonging drugs (e.g. ondansetron, haloperidol), and put her on a monitor to watch for torsades while the anemia is treated.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Bifascicular block (RBBB + left anterior fascicular block)."
+          "Sinus tachycardia (~112 bpm) with a markedly prolonged QTc (~505 ms), no acute ST-elevation."
         ],
         "coreActions": [
-          "RBBB pattern plus marked left axis deviation",
-          "names it as bifascicular block"
+          "sinus tachycardia",
+          "markedly prolonged QTc",
+          "recognizes tachycardia is demand from severe anemia, not a primary arrhythmia",
+          "attributes the long QT to azithromycin + low magnesium and plans to stop the drug and repleat Mg/K"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "misses the QT prolongation or adds another QT-prolonging drug without correcting electrolytes",
             "points": -3
           }
         ]
@@ -236,31 +260,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = elevated right hemidiaphragm. CREDIT: identifies the elevated right hemidiaphragm (6); gives a brief differential (eventration, phrenic nerve palsy) (4). PENALTY: calling the study normal / missing the elevated hemidiaphragm (-2).",
+      "rubric": "Findings = mild mediastinal/hilar lymphadenopathy (consistent with her CLL) with clear lungs and no edema/effusion. CREDIT: identifies the mediastinal/hilar lymphadenopathy and links it to a lymphoproliferative disorder (6); notes the lungs are clear with no consolidation, effusion, or pulmonary edema as a pertinent negative before transfusing (4). PENALTY: calling the film completely normal / missing the adenopathy, or inventing pneumonia/edema (-2).",
       "keyFindings": [
-        "identifies the elevated hemidiaphragm",
-        "gives a brief differential (eventration, phrenic palsy)"
+        "mild mediastinal/hilar lymphadenopathy",
+        "clear lungs, no edema or effusion"
       ],
       "criticalFindings": [
-        "Elevated right hemidiaphragm."
+        "Mild mediastinal/hilar lymphadenopathy with clear lungs."
       ],
       "commonMistakes": [
-        "mistaking the elevated diaphragm for a basal effusion or mass"
+        "missing the lymphadenopathy and calling the film normal",
+        "inventing an infiltrate or pulmonary edema on a clear film"
       ],
-      "idealAnswer": "Elevated right hemidiaphragm; consider eventration or phrenic nerve palsy.",
+      "idealAnswer": "Mild mediastinal and hilar lymphadenopathy, consistent with her known CLL; lungs are clear with no consolidation, pleural effusion, or pulmonary edema, and a normal cardiac silhouette. The clear lungs are a useful pertinent negative before transfusing this severely anemic patient.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Elevated right hemidiaphragm."
+          "Mild mediastinal/hilar lymphadenopathy with clear lungs."
         ],
         "coreActions": [
-          "identifies the elevated hemidiaphragm",
-          "gives a brief differential (eventration, phrenic palsy)"
+          "mild mediastinal/hilar lymphadenopathy",
+          "clear lungs, no edema or effusion"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the adenopathy or invents pathology",
             "points": -3
           }
         ]
@@ -270,9 +295,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, spherocytes, NO schistocytes, normal platelets, and a positive Coombs. What is your diagnosis and what did you rule out?",
-      "rubric": "Autoimmune hemolytic anemia (warm type) (6). Cites a positive DAT with hemolysis markers; explicitly rules out TTP/HUS via the absence of schistocytes, normal platelets, and normal renal function (4).",
-      "idealAnswer": "Warm autoimmune hemolytic anemia, given the positive direct antiglobulin (Coombs) test with hemolysis markers (reticulocytosis, low haptoglobin, high LDH/indirect bilirubin) and spherocytes. TTP/HUS was ruled out by the absence of schistocytes, normal platelets, and normal renal function.",
+      "prompt": "Results: reticulocytosis with spherocytes and NO schistocytes, normal platelets, normal renal function, normal coags/fibrinogen, low haptoglobin with high LDH/indirect bilirubin, a strongly POSITIVE IgG Coombs, and an absolute lymphocytosis. What is your final diagnosis, what is the discriminating test, and what did you rule out?",
+      "rubric": "Warm autoimmune hemolytic anemia, SECONDARY to her CLL (6). Names the positive IgG direct antiglobulin (Coombs) test as THE discriminating test, with hemolysis markers and spherocytes; explicitly rules out TTP/HUS (no schistocytes, normal platelets, normal renal function), DIC (normal PT/aPTT/fibrinogen/D-dimer), and frames the residual ambiguity — primary vs CLL-driven vs a possible drug contribution from the new antibiotics (4).",
+      "idealAnswer": "Final diagnosis: WARM autoimmune hemolytic anemia (IgG-mediated), most likely SECONDARY to her CLL. The discriminating test is the strongly positive IgG direct antiglobulin (Coombs) test, together with the hemolysis markers (reticulocytosis, undetectable haptoglobin, high LDH and indirect bilirubin) and spherocytes on smear. Ruled out: TTP/HUS (no schistocytes, normal platelets, normal creatinine), DIC (normal PT, aPTT, fibrinogen, and D-dimer), and a purely oxidant/drug hemolysis (no bite cells, and the DAT is positive). Residual ambiguity that should be acknowledged: whether this is primary (idiopathic) warm AIHA, CLL-driven secondary AIHA, or has a drug-induced antibody component from the new azithromycin/nitrofurantoin — which is why the new drugs should be stopped and the CLL re-staged. The mild hyponatremia is a separate, thiazide-related problem, not part of the hemolysis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -285,33 +310,41 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH hemolytic anemia: corticosteroids first-line for warm AIHA (CANT-MISS,7); folate supplementation (3); identify/treat underlying trigger (4); transfuse least-incompatible units if life-threatening (4); hematology consult (3); escalate – rituximab/IVIG/splenectomy if refractory (2). PENALTY: withholding life-saving transfusion for crossmatch incompatibility (-3); steroids for cold agglutinin without addressing cold avoidance/cause (-1).",
-      "idealAnswer": "Warm AIHA: corticosteroids (prednisone 1 mg/kg) first-line; folate supplementation; treat any underlying trigger (lymphoproliferative disorder, drug, infection). For severe/refractory: rituximab, IVIG, or splenectomy. Transfuse if life-threatening (least-incompatible units, do not withhold for fear of crossmatch). Hematology consult. Avoid cold exposure if cold agglutinin type.",
+      "prompt": "What is your management plan, including stabilization, the QT issue, and disposition/safe-discharge planning?",
+      "rubric": "Per MGH hemolytic anemia: corticosteroids first-line for warm AIHA, e.g. prednisone 1 mg/kg (CANT-MISS,6); STOP the offending/contributing drugs — azithromycin and nitrofurantoin (and review the thiazide/NSAID) and avoid further QT-prolonging agents, repleat magnesium/potassium with telemetry for the prolonged QTc (CANT-MISS,4); folate supplementation for the brisk hemolysis (2); transfuse least-incompatible/best-match units for symptomatic severe anemia, warn the blood bank of the positive DAT, do NOT withhold a life-saving transfusion for crossmatch incompatibility (3); treat the underlying CLL / hematology consult for secondary AIHA and possible rituximab (3); correct the thiazide-related hyponatremia by stopping the thiazide (1); arrange SAFE DISPOSITION — admit for severe symptomatic anemia + prolonged QT on telemetry, medication reconciliation, and on discharge ensure steroid taper plan, repeat CBC/reticulocyte and hemolysis labs, repeat EKG to confirm QTc normalized, and close hematology follow-up (4). PENALTY: discharging a Hgb 6.9 patient with a prolonged QTc home (-4); withholding life-saving transfusion for crossmatch incompatibility (-3); continuing the QT-prolonging antibiotic (-2).",
+      "idealAnswer": "Stabilize and admit (severe symptomatic anemia plus a prolonged QTc needs telemetry). Start corticosteroids first-line for warm AIHA (prednisone ~1 mg/kg) once TTP/HUS is excluded. STOP the contributing drugs: azithromycin and nitrofurantoin (and hold the thiazide and the daily NSAID); avoid any further QT-prolonging agents and replete magnesium and potassium toward high-normal under telemetry to prevent torsades; repeat the EKG to confirm the QTc is correcting. Add folate for the brisk hemolysis. Transfuse for symptomatic severe anemia using the best-matched/least-incompatible units and warn the blood bank the DAT is positive — do NOT withhold a life-saving transfusion over crossmatch incompatibility. Engage hematology: treat the underlying CLL as the driver of this secondary AIHA and consider rituximab if refractory or relapsing; the response to treating the CLL helps resolve the residual primary-vs-secondary ambiguity. Stop the thiazide to correct the mild hyponatremia. Safe disposition / discharge planning: medication reconciliation to remove the offending and QT-prolonging drugs, a documented steroid taper plan, repeat CBC/reticulocyte and hemolysis labs to confirm the count is recovering, a repeat EKG to confirm QTc normalization before discharge, patient counseling to avoid the implicated antibiotics in future, and close hematology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Corticosteroids (warm AIHA)",
-            "points": 7
+            "item": "Corticosteroids first-line for warm AIHA",
+            "points": 6
+          },
+          {
+            "item": "Stop offending/QT-prolonging drugs (azithromycin, nitrofurantoin), repleat Mg/K with telemetry for the prolonged QTc",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Identify and treat underlying trigger",
-            "points": 4
+            "item": "Transfuse least-incompatible/best-match units for symptomatic severe anemia (warn blood bank of positive DAT)",
+            "points": 3
           },
           {
-            "item": "Transfuse least-incompatible units if life-threatening",
-            "points": 4
+            "item": "Treat underlying CLL / hematology consult for secondary AIHA (consider rituximab)",
+            "points": 3
           },
           {
             "item": "Folate supplementation",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Hematology consult",
-            "points": 3
+            "item": "Stop the thiazide to correct the hyponatremia",
+            "points": 1
+          },
+          {
+            "item": "Arrange safe disposition: admit with telemetry, medication reconciliation, steroid taper plan, repeat CBC/retic + EKG to confirm QTc, close hematology follow-up",
+            "points": 4
           }
         ],
         "bonusActions": [
@@ -322,28 +355,39 @@
         ],
         "penalties": [
           {
-            "item": "Withholding life-saving transfusion",
+            "item": "Discharging a Hgb 6.9 patient with a prolonged QTc home",
+            "points": -4
+          },
+          {
+            "item": "Withholding life-saving transfusion for crossmatch incompatibility",
             "points": -3
+          },
+          {
+            "item": "Continuing the QT-prolonging antibiotic",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Corticosteroids (warm AIHA)"
+        "Corticosteroids first-line for warm AIHA",
+        "Stop offending/QT-prolonging drugs (azithromycin, nitrofurantoin), repleat Mg/K with telemetry for the prolonged QTc"
       ],
       "optionalActions": [
-        "Identify and treat underlying trigger",
-        "Transfuse least-incompatible units if life-threatening",
+        "Transfuse least-incompatible/best-match units for symptomatic severe anemia (warn blood bank of positive DAT)",
+        "Treat underlying CLL / hematology consult for secondary AIHA (consider rituximab)",
         "Folate supplementation",
-        "Hematology consult",
+        "Stop the thiazide to correct the hyponatremia",
+        "Arrange safe disposition: admit with telemetry, medication reconciliation, steroid taper plan, repeat CBC/retic + EKG to confirm QTc, close hematology follow-up",
         "Escalation (rituximab/IVIG/splenectomy) if refractory"
       ],
       "unsafeActions": [
-        "Withholding life-saving transfusion"
+        "Discharging a Hgb 6.9 patient with a prolonged QTc home",
+        "Withholding life-saving transfusion for crossmatch incompatibility"
       ],
       "consults": [
         "Hematology"
       ],
-      "disposition": "Admit",
+      "disposition": "Admit with telemetry",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Pancytopenia & Anemia (Autoimmune Hemolytic Anemia)",
@@ -361,11 +405,11 @@
       "alcohol_use"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "45-year-old woman, pale and mildly jaundiced, tired. Cooperative.",
+    "affect": "62-year-old woman, pale and mildly jaundiced, tired and breathless on exertion. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the recent illness, new antibiotics, thiazide, NSAID, or CLL unless directly asked about recent illnesses, medications, or past medical/blood history",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam (lymphadenopathy, splenomegaly) or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -382,8 +426,83 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_illness",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "recent infection",
+        "been sick",
+        "cold or flu",
+        "any infections lately"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "new medication",
+        "antibiotic",
+        "started any pills"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "blood condition",
+        "leukemia",
+        "cll"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "blood disorders in family",
+        "inherited"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cold_exposure",
+      "category": "ros",
+      "triggerConcepts": [
+        "cold exposure",
+        "fingers turn blue",
+        "color change in fingers",
+        "worse in the cold"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
     },
     {
       "id": "onset",
@@ -406,20 +525,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "severity",
-      "category": "hpi",
-      "triggerConcepts": [
-        "how bad",
-        "severity",
-        "scale"
+        "quality",
+        "dark urine",
+        "yellow eyes"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -432,47 +540,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "aggravating_alleviating",
-      "category": "hpi",
-      "triggerConcepts": [
-        "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "pmh",
-      "category": "pmh",
-      "triggerConcepts": [
-        "past medical history",
-        "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "anything else",
+        "bleeding",
+        "bruising",
+        "black stools"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -495,8 +566,18 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_splenomegaly_finding_1",
-      "finding": "Abdomen: mild splenomegaly if examined; no marked tenderness.",
+      "id": "palpate_lymph_nodes_finding_1",
+      "finding": "Lymph nodes: a few small, soft, non-tender enlarged cervical and axillary nodes (chronic, from her CLL).",
+      "revealedBy": [
+        "palpate_lymph_nodes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No lymphadenopathy."
+    },
+    {
+      "id": "assess_splenomegaly_finding_2",
+      "finding": "Abdomen: moderate splenomegaly if examined; no marked tenderness; liver not enlarged.",
       "revealedBy": [
         "assess_splenomegaly"
       ],
@@ -505,8 +586,8 @@
       "normalIfNotPresent": "No splenomegaly."
     },
     {
-      "id": "auscultate_aortic_area_finding_2",
-      "finding": "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.",
+      "id": "auscultate_aortic_area_finding_3",
+      "finding": "Cardiac: tachycardic, regular, soft systolic flow murmur. No petechiae/purpura; no focal neuro deficit.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -516,7 +597,7 @@
       "normalIfNotPresent": "No murmur appreciated."
     },
     {
-      "id": "inspect_sclera_finding_3",
+      "id": "inspect_sclera_finding_4",
       "finding": "General: pale with scleral icterus/jaundice.",
       "revealedBy": [
         "inspect_sclera",
@@ -527,8 +608,8 @@
       "normalIfNotPresent": "No jaundice."
     },
     {
-      "id": "assess_for_petechiae_finding_4",
-      "finding": "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.",
+      "id": "assess_for_petechiae_finding_5",
+      "finding": "Cardiac: no petechiae, NO purpura, no new bruising (argues against thrombocytopenia/TTP).",
       "revealedBy": [
         "assess_for_petechiae",
         "assess_for_purpura"
@@ -548,13 +629,14 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Autoimmune hemolytic anemia",
-    "diagnosticFramework": "45F presents with one week of rapidly worsening fatigue, jaundice, and dark urine. The diagnosis is Autoimmune hemolytic anemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "62F with known CLL (watchful-waiting), hypertension on a thiazide, and recently started antibiotics (azithromycin, nitrofurantoin) plus a chronic NSAID presents with one week of rapidly worsening fatigue, jaundice, and dark urine. The diagnosis is warm autoimmune hemolytic anemia, secondary to her CLL, confirmed by a positive IgG Coombs with a hemolytic pattern and spherocytes. It is reached by eliciting the focused history (recent illness, new drugs, CLL, family history), performing the targeted exam (lymphadenopathy, splenomegaly, pallor, jaundice, no purpura), interpreting an integrated EKG that shows a drug-induced prolonged QTc on a demand tachycardia, and excluding the must-not-miss microangiopathy (TTP/HUS) and DIC. Concurrent thiazide-related hyponatremia and a drug-induced long QT are managed as separate problems.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: mild splenomegaly if examined; no marked tenderness.",
-      "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit.",
+      "Lymph nodes: a few small, soft, non-tender enlarged cervical and axillary nodes (chronic, from her CLL).",
+      "Abdomen: moderate splenomegaly if examined; no marked tenderness; liver not enlarged.",
+      "Cardiac: tachycardic, regular, soft systolic flow murmur. No petechiae/purpura; no focal neuro deficit.",
       "General: pale with scleral icterus/jaundice.",
-      "Cardiac: tachycardic, regular, flow murmur. No petechiae/purpura; no focal neuro deficit."
+      "Cardiac: no petechiae, NO purpura, no new bruising (argues against thrombocytopenia/TTP)."
     ],
     "keyDiagnosticFindings": [
       "CBC",
@@ -562,21 +644,28 @@
       "Smear",
       "Hemolysis",
       "Coombs",
-      "BMP"
+      "BMP",
+      "Coags"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Autoimmune hemolytic anemia while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Autoimmune hemolytic anemia and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (severe anemia, tachycardia, jaundice).",
+      "Elicit the focused history, including the recent illness, new antibiotics, the thiazide/NSAID, the CLL, and family history only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal lymphadenopathy, splenomegaly, pallor, jaundice, and the absence of purpura.",
+      "Build a differential led by warm AIHA (likely CLL-driven) while explicitly excluding the must-not-miss microangiopathy (TTP/HUS) and DIC, and naming at least three mechanisms of hemolysis.",
+      "Order a focused workup (CBC/retic, smear, DAT, hemolysis labs, BMP, coags) and interpret the integrated EKG showing a drug-induced prolonged QTc and the CXR showing lymphadenopathy.",
+      "Commit to secondary warm AIHA and manage with steroids, drug withdrawal + QTc/electrolyte correction, folate, careful transfusion, CLL-directed therapy, and a safe telemetry admission with discharge planning."
     ],
     "commonPitfalls": [
-      "Withholding life-saving transfusion"
+      "Anchoring on iron-deficiency/occult-bleeding anemia and missing the hemolytic picture",
+      "Starting steroids before excluding TTP/HUS",
+      "Missing the drug-induced prolonged QTc or adding another QT-prolonging drug",
+      "Discharging a severely anemic patient with a long QT",
+      "Withholding life-saving transfusion for crossmatch incompatibility"
     ],
     "managementPearls": [
-      "Corticosteroids (warm AIHA)"
+      "Corticosteroids first-line for warm AIHA",
+      "Stop the offending/QT-prolonging drugs and repleat Mg/K under telemetry",
+      "Treat the underlying CLL as the driver of secondary AIHA"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -585,28 +674,29 @@
     ],
     "criticalWorkupItems": [
       "CBC + reticulocyte count",
-      "Peripheral smear — spherocytes vs schistocytes",
+      "Peripheral smear — spherocytes vs schistocytes vs bite cells",
       "Direct antiglobulin (Coombs) test"
     ],
     "criticalInterpretationItems": [
-      "Bifascicular block (RBBB + left anterior fascicular block).",
-      "Elevated right hemidiaphragm."
+      "Sinus tachycardia (~112 bpm) with a markedly prolonged QTc (~505 ms), no acute ST-elevation.",
+      "Mild mediastinal/hilar lymphadenopathy with clear lungs."
     ],
     "criticalManagementItems": [
-      "Corticosteroids (warm AIHA)"
+      "Corticosteroids first-line for warm AIHA",
+      "Stop offending/QT-prolonging drugs (azithromycin, nitrofurantoin), repleat Mg/K with telemetry for the prolonged QTc"
     ],
     "keyImageInterpretationFindings": [
-      "Bifascicular block (RBBB + left anterior fascicular block).",
-      "Elevated right hemidiaphragm."
+      "Sinus tachycardia (~112 bpm) with a markedly prolonged QTc (~505 ms), no acute ST-elevation.",
+      "Mild mediastinal/hilar lymphadenopathy with clear lungs."
     ],
     "criticalImageInterpretationFindings": [
-      "Bifascicular block (RBBB + left anterior fascicular block).",
-      "Elevated right hemidiaphragm."
+      "Sinus tachycardia (~112 bpm) with a markedly prolonged QTc (~505 ms), no acute ST-elevation.",
+      "Mild mediastinal/hilar lymphadenopathy with clear lungs."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A demand tachycardia in a severely anemic patient is sinus, not a primary arrhythmia — but still read the intervals: a long QT on a QT-prolonging drug is the dangerous finding.",
+      "Tie the EKG back to the medication list and electrolytes — stop the offender and repleat Mg/K before torsades.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -636,8 +726,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

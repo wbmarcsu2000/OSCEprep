@@ -2,12 +2,12 @@
   "id": "chestpain-07",
   "category": "Chest Pain",
   "difficulty": "hard",
-  "title": "Progressive breathlessness and chest pressure with hypotension",
+  "title": "Progressive breathlessness and chest pressure with hypotension in a cancer patient",
   "diagnosis": "Cardiac tamponade",
   "chart": {
     "ageSex": "58F",
     "cc": "Shortness of breath and chest pressure",
-    "oneLiner": "58F presents with several days of progressive dyspnea, vague chest pressure, and lightheadedness, now hypotensive and tachycardic.",
+    "oneLiner": "58F with metastatic breast cancer on chemotherapy, hypothyroidism, and hypertension presents with several days of progressive dyspnea, vague chest pressure, and lightheadedness, now hypotensive and tachycardic.",
     "vitals": {
       "BP": "86/68",
       "HR": "124",
@@ -18,34 +18,38 @@
     "timer": 180
   },
   "opening": "I can't catch my breath and my chest feels tight and heavy. I keep feeling like I'm going to pass out.",
-  "patientFile": "PERSONA: 58-year-old woman, anxious and uncomfortable, sitting upright and breathing fast. Speaks in short sentences. Cooperative but tires easily.\n\nHPI:\n- Several days of progressive shortness of breath, now present at rest and worse when lying flat.\n- Dull central chest pressure/heaviness, not sharply positional, no clear exertional trigger.\n- Lightheadedness and a near-fainting feeling, especially on standing.\n- Reduced exercise tolerance and fatigue over the past week or two.\n- Had a 'flu-like' viral illness about two weeks ago (only if asked about recent illness).\n- Treated for breast cancer 3 years ago and recently told it may have come back; has been having scans (only if asked about cancer history / recent medical workup).\n- NO tearing/ripping pain, NO pain radiating to the back, NO calf pain or swelling, NO recent long travel or surgery, NO fevers/chills now, NO cough productive of blood, NO crushing exertional pain or diaphoresis.\n\nOLDCARTS: onset gradual over several days; central chest; constant pressure with associated breathlessness; dull/heavy quality; worse lying flat and with exertion, no clear relief; severity 5/10 pressure but very breathless and faint.\n\nPMH: breast cancer (treated 3 years ago, possible recurrence under workup), hypertension. MEDICATIONS: amlodipine; no anticoagulants. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: never-smoker, rare alcohol, retired teacher.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, mildly diaphoretic, tachypneic, sitting forward.\n- Vitals: BP 86/68, HR 124, RR 24, 37.3°C, SpO2 95% RA. A PULSUS PARADOXUS of about 18 mmHg is present (systolic drops markedly on inspiration) — revealed on careful blood-pressure measurement / checking pulsus.\n- Neck: JVP MARKEDLY ELEVATED with a prominent x descent and blunted y descent (revealed if JVP examined).\n- Cardiac: HEART SOUNDS are DISTANT/MUFFLED; tachycardic, regular; no friction rub today; PMI difficult to palpate.\n- Lungs: CLEAR bilaterally to auscultation (important pertinent negative — no rales/edema despite dyspnea).\n- Extremities: cool peripheries with sluggish capillary refill; NO peripheral edema, NO calf tenderness or asymmetric swelling.\n- Abdomen: soft, nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the recent viral illness or the cancer history/possible recurrence unless asked about recent illness, cancer, or recent medical workup.\n- The elevated JVP is revealed only if the neck/JVP is examined; the muffled heart sounds only if the heart is auscultated; the pulsus paradoxus only if blood pressure/pulsus is carefully checked.\n- Lungs are CLEAR — say so if the chest is auscultated (this is a key negative).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 58-year-old woman, anxious and uncomfortable, sitting upright and breathing fast. Speaks in short sentences. Cooperative but tires easily.\n\nHPI:\n- Several days of progressive shortness of breath, now present at rest and worse when lying flat.\n- Dull central chest pressure/heaviness, not sharply positional, no clear exertional trigger.\n- Lightheadedness and a near-fainting feeling, especially on standing.\n- Reduced exercise tolerance and fatigue over the past week or two.\n- Had a 'flu-like' viral illness about two weeks ago (only if asked about recent illness).\n- Breast cancer that has spread; she is in the middle of chemotherapy and was recently told it may be getting worse; she has had several scans (only if asked about cancer history / recent medical workup / chemotherapy).\n- Because of aches she has been taking a lot of over-the-counter ibuprofen/naproxen the past two weeks (only if asked specifically about painkillers or over-the-counter medicines).\n- NO tearing/ripping pain, NO pain radiating to the back, NO calf pain or swelling, NO recent long travel or surgery, NO fevers/chills now, NO cough productive of blood, NO crushing exertional pain or diaphoresis. (She is on a blood thinner, so even though she has cancer she has not had any obvious clot — only if asked.)\n\nOLDCARTS: onset gradual over several days; central chest; constant pressure with associated breathlessness; dull/heavy quality; worse lying flat and with exertion, no clear relief; severity 5/10 pressure but very breathless and faint.\n\nPMH: metastatic breast cancer (on active chemotherapy, recent possible progression on imaging; one of her chemo drugs is a 'red' infusion — an anthracycline); hypothyroidism; hypertension; chemotherapy line/port in place. MEDICATIONS: amlodipine; levothyroxine (admits she has been skipping doses lately because money is tight and she has felt too unwell — only if asked about whether she takes her medicines as prescribed); apixaban (a blood thinner started when her port was placed); ondansetron for chemo nausea; recent heavy over-the-counter ibuprofen/naproxen for aches. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: never-smoker, rare alcohol, retired teacher; lives alone, daughter visits on weekends; has had trouble affording medications and getting to appointments.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, mildly diaphoretic, tachypneic, sitting forward.\n- Vitals: BP 86/68, HR 124, RR 24, 37.3°C, SpO2 95% RA. A PULSUS PARADOXUS of about 18 mmHg is present (systolic drops markedly on inspiration) — revealed on careful blood-pressure measurement / checking pulsus.\n- Neck: JVP MARKEDLY ELEVATED with a prominent x descent and blunted y descent (revealed if JVP examined).\n- Cardiac: HEART SOUNDS are DISTANT/MUFFLED; tachycardic, regular; no friction rub today; PMI difficult to palpate.\n- Lungs: CLEAR bilaterally to auscultation (important pertinent negative — no rales/edema despite dyspnea).\n- Extremities: cool peripheries with sluggish capillary refill; NO peripheral edema, NO calf tenderness or asymmetric swelling (a pertinent negative arguing against DVT).\n- Skin/face: mildly puffy; dry skin (a subtle clue to under-treated hypothyroidism — only if the skin/general appearance is examined).\n- Abdomen: soft, nontender; no fluid wave.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the recent viral illness, the cancer/chemotherapy history, the anthracycline, the apixaban, the NSAID use, or the skipped thyroid pills unless asked the relevant question (recent illness; cancer/chemo; blood thinners or specific medicines; over-the-counter painkillers; medication adherence).\n- The elevated JVP is revealed only if the neck/JVP is examined; the muffled heart sounds only if the heart is auscultated; the pulsus paradoxus only if blood pressure/pulsus is carefully checked.\n- Lungs are CLEAR — say so if the chest is auscultated (this is a key negative).\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "Troponin": "Mildly elevated at 0.06 ng/mL, flat on serial draws (no rising/dynamic pattern to suggest evolving MI).",
-      "BNP": "Mildly elevated, nonspecific; does not explain the degree of shock.",
-      "BMP": "Cr mildly elevated consistent with poor forward flow/prerenal state; otherwise unremarkable.",
-      "Ddimer": "Elevated but nonspecific; CT pulmonary angiogram (if obtained) shows NO pulmonary embolism and incidentally notes a large pericardial effusion.",
-      "echo": "Large circumferential pericardial effusion with TAMPONADE PHYSIOLOGY: diastolic collapse of the right atrium and right ventricle, exaggerated respiratory variation in transvalvular inflow, and a dilated, non-collapsing (plethoric) IVC. Confirms the diagnosis.",
-      "CBC": "WBC and Hgb within normal range; no leukocytosis to suggest purulent pericarditis."
+      "Troponin": "Mildly elevated at 0.06 ng/mL, FLAT on serial draws (no rising/dynamic pattern to suggest an evolving MI). Does not by itself explain the shock.",
+      "BNP": "Mildly elevated and nonspecific; does not explain the degree of shock and is out of proportion to clear lungs.",
+      "BMP": "Na 129 mmol/L (hyponatremia); K 4.2; Cl 96; HCO3 22; BUN 38; Cr 1.6 (up from a baseline 0.8 — ACUTE KIDNEY INJURY, prerenal pattern with BUN:Cr ~24:1 consistent with poor forward flow); glucose 118. Anion gap = Na − (Cl + HCO3) = 129 − (96 + 22) = 11 (normal, no anion-gap acidosis — the shock here is obstructive/cardiogenic, not a high-gap metabolic process).",
+      "Ddimer": "Markedly elevated — but expected in active malignancy. CT pulmonary angiogram (obtained because PE was a serious competing concern) shows NO pulmonary embolism, a non-dilated right ventricle, and a LARGE pericardial effusion. This is the key discriminator that resolves the PE-vs-tamponade fork toward tamponade.",
+      "echo": "Large circumferential pericardial effusion with TAMPONADE PHYSIOLOGY: diastolic collapse of the right atrium and right ventricle, exaggerated respiratory variation in transvalvular inflow (>25% mitral / >40% tricuspid), and a dilated, non-collapsing (plethoric) IVC. The RV is NOT dilated and there is no McConnell sign, arguing against massive PE. LV systolic function is preserved (argues against anthracycline cardiomyopathy as the cause of shock). Confirms the diagnosis.",
+      "CBC": "Hgb 10.4 (mild chemotherapy-related anemia), WBC 5.8 (no leukocytosis to suggest purulent pericarditis), Plt 150. No active bleeding signs.",
+      "TSH": "Markedly elevated at 22 mIU/L with a low free T4 — overt HYPOTHYROIDISM (consistent with skipped levothyroxine), itself a recognized cause of a pericardial effusion and a separate problem to correct."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
+      "litflStudyN": 11,
+      "integrated": true,
       "asset": null,
-      "source": "https://litfl.com/pericardial-effusion-ecg-library/",
+      "source": "https://litfl.com/ecg-case-011/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia with low QRS voltage and beat-to-beat electrical alternans of the QRS amplitude.",
-      "verify": "Source a tracing matching: sinus tachycardia with low QRS voltage and electrical alternans. Self-host with credit to litfl.com; do not reuse the prior tracing.",
+      "findings": "Sinus tachycardia with low QRS voltage and beat-to-beat electrical alternans of the QRS amplitude (the patient's own tracing — classic large pericardial effusion).",
+      "verify": "Source a tracing matching: sinus tachycardia with low QRS voltage and electrical alternans (LITFL ECG case 011, large pericardial effusion). Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
-      "assetNeeded": true,
+      "assetNeeded": false,
       "imageDescription": "12-lead EKG showing sinus tachycardia, low voltage, and electrical alternans",
       "searchTerms": [
         "electrical alternans pericardial effusion ECG",
         "low voltage QRS tamponade EKG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 60-year-old woman presents with progressive dyspnea, fatigue, and chest fullness after a recent viral pericarditis."
+      "clinicalVignette": "A 58-year-old woman with metastatic breast cancer presents with progressive dyspnea, fatigue, and chest fullness; her EKG shows low voltage and electrical alternans."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -71,6 +75,7 @@
     "Ddimer",
     "echo",
     "CBC",
+    "TSH",
     "ekg",
     "cxr"
   ],
@@ -83,32 +88,32 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this dyspnea/chest pressure with hypotension (note your leading diagnosis).",
-      "rubric": "Cardiac tamponade / large pericardial effusion (leading, 9). Acute coronary syndrome with cardiogenic shock (CANT-MISS, 5). Massive pulmonary embolism (CANT-MISS, 3). Tension pneumothorax (core, 2). Acute decompensated heart failure (core, 2). Sepsis/other distributive shock (bonus, 1). Names obstructive shock with elevated JVP, muffled heart sounds, hypotension, and pulsus paradoxus pointing to tamponade (core, 3).",
-      "idealAnswer": "Leading diagnosis: Cardiac tamponade (large pericardial effusion causing obstructive shock). Must-not-miss diagnoses to exclude: Acute coronary syndrome with cardiogenic shock; Massive pulmonary embolism. Also reasonable: Tension pneumothorax; Acute decompensated heart failure.",
+      "prompt": "Based on your history and physical in this patient with metastatic cancer, dyspnea, chest pressure, and hypotension, list your differential (note your leading diagnosis). Then name THREE distinct etiologies/mechanisms by which THIS patient could have developed a pericardial effusion.",
+      "rubric": "Cardiac tamponade / large pericardial effusion (leading, 7). The genuinely competing leading diagnosis given metastatic cancer, hypercoagulability, a high D-dimer, hypotension and clear lungs is MASSIVE/SUBMASSIVE PULMONARY EMBOLISM causing obstructive shock — both leading-tier (CANT-MISS, 5). Acute coronary syndrome with cardiogenic shock (CANT-MISS, 3). Acute decompensated heart failure (e.g. anthracycline cardiotoxicity) (core, 2). Names obstructive shock with elevated JVP, muffled heart sounds, hypotension, and pulsus paradoxus pointing to tamponade (core, 2). Names THREE plausible etiologies of the effusion in THIS patient — e.g. malignant/metastatic pericardial involvement, hypothyroidism (myxedema effusion), viral/idiopathic pericarditis after the recent viral illness, radiation, or hemorrhagic effusion on anticoagulation (core, 3, ~1 each). Sepsis/other distributive shock (bonus, 1). Tension pneumothorax (bonus, 1). PENALTY: anchoring on tamponade and never seriously considering PE in a cancer patient (-3).",
+      "idealAnswer": "Leading diagnosis: Cardiac tamponade from a large pericardial effusion (obstructive shock). The single most important COMPETING leading diagnosis is massive/submassive PULMONARY EMBOLISM — she has metastatic cancer and is hypercoagulable, with a high D-dimer, hypotension, tachycardia, clear lungs and a raised JVP, all of which PE can also produce; these two obstructive-shock states must be distinguished by imaging. Other must-not-miss: ACS with cardiogenic shock. Also reasonable: acute decompensated heart failure (anthracycline cardiotoxicity), tension pneumothorax, sepsis. Three etiologies/mechanisms of HER effusion: (1) malignant/metastatic pericardial involvement from breast cancer; (2) hypothyroidism (myxedema) given skipped levothyroxine; (3) viral/idiopathic pericarditis after her recent viral illness (a hemorrhagic effusion on apixaban or prior radiation are also acceptable).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute coronary syndrome with cardiogenic shock",
+            "item": "Massive/submassive pulmonary embolism (competing obstructive shock in a cancer patient)",
             "points": 5
           },
           {
-            "item": "Massive pulmonary embolism",
+            "item": "Acute coronary syndrome with cardiogenic shock",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Tension pneumothorax",
-            "points": 2
-          },
-          {
-            "item": "Acute decompensated heart failure",
+            "item": "Acute decompensated heart failure (anthracycline cardiotoxicity)",
             "points": 2
           },
           {
             "item": "Names obstructive shock with elevated JVP, muffled heart sounds, hypotension, and pulsus paradoxus pointing to tamponade",
+            "points": 2
+          },
+          {
+            "item": "Names three etiologies/mechanisms of the effusion (malignant, hypothyroid/myxedema, viral/idiopathic, hemorrhagic-on-anticoagulation, or radiation)",
             "points": 3
           }
         ],
@@ -116,17 +121,27 @@
           {
             "item": "Sepsis/other distributive shock",
             "points": 1
+          },
+          {
+            "item": "Tension pneumothorax",
+            "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on tamponade and never seriously considers PE in a cancer patient",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute coronary syndrome with cardiogenic shock",
-        "Massive pulmonary embolism"
+        "Massive/submassive pulmonary embolism",
+        "Acute coronary syndrome with cardiogenic shock"
       ],
       "acceptableAlternatives": [
+        "Acute decompensated heart failure (anthracycline cardiotoxicity)",
         "Tension pneumothorax",
-        "Acute decompensated heart failure"
+        "Sepsis/other distributive shock"
       ]
     },
     {
@@ -134,71 +149,79 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Bedside/urgent echocardiogram to assess for effusion and tamponade physiology (CANT-MISS, 5). EKG (core, 3). CXR (core, 2). Troponin and serial cardiac biomarkers (core, 2). BMP/renal function and CBC (core, 2). D-dimer or CTPA if PE still considered (bonus, 1). PENALTY: giving a diuretic or nitrate for presumed heart failure before excluding tamponade (worsens preload-dependent shock) (-3).",
-      "idealAnswer": "Order: EKG; CXR; Troponin; BNP; BMP; D-dimer; Echocardiogram; CBC.",
+      "prompt": "What initial diagnostic workup do you want to order to distinguish tamponade from massive PE and the other competitors?",
+      "rubric": "Bedside/urgent echocardiogram to assess for effusion and tamponade physiology AND to look for RV strain/dilation of PE (CANT-MISS, 5). CT pulmonary angiogram given the serious PE concern in a cancer patient (CANT-MISS, 2). EKG (core, 2). CXR (core, 1). Troponin and serial cardiac biomarkers (core, 1). BMP/renal function and CBC (core, 1). TSH given hypothyroidism and a possible myxedema effusion (core, 2). D-dimer (low yield alone in cancer, but sent) (bonus, 1). PENALTY: giving a diuretic or nitrate for presumed heart failure before excluding tamponade (worsens preload-dependent shock) (-3); empirically anticoagulating/thrombolysing for presumed PE before imaging in a patient who may instead have a hemorrhagic tamponade (-3).",
+      "idealAnswer": "Order: urgent echocardiogram (distinguishes tamponade physiology from PE-pattern RV strain); CT pulmonary angiogram (PE is the key competitor in a cancer patient); EKG; CXR; Troponin (serial); BNP; BMP; CBC; TSH (hypothyroidism / myxedema effusion); D-dimer. Do NOT give diuretics/nitrates and do NOT empirically thrombolyse before imaging.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Urgent echocardiogram for effusion/tamponade physiology",
+            "item": "Urgent echocardiogram for effusion/tamponade physiology and RV assessment",
             "points": 5
           }
         ],
         "coreActions": [
           {
+            "item": "CT pulmonary angiogram given the PE concern in a cancer patient",
+            "points": 2
+          },
+          {
             "item": "EKG",
-            "points": 3
+            "points": 2
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Troponin",
-            "points": 2
+            "item": "Troponin (serial) and BNP",
+            "points": 1
           },
           {
             "item": "BMP and CBC",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BNP",
-            "points": 2
-          },
-          {
-            "item": "D-dimer",
+            "item": "TSH (hypothyroidism / myxedema effusion)",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "D-dimer or CTPA if PE still considered",
+            "item": "D-dimer (low specificity in cancer but sent)",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)",
+            "item": "Giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)",
+            "points": -3
+          },
+          {
+            "item": "Empiric thrombolysis/anticoagulation for presumed PE before imaging (risks a hemorrhagic tamponade)",
             "points": -3
           }
         ]
       },
       "requiredTests": [
-        "Urgent echocardiogram for effusion/tamponade physiology"
+        "Urgent echocardiogram for effusion/tamponade physiology and RV assessment"
       ],
       "optionalTests": [
+        "CT pulmonary angiogram given the PE concern in a cancer patient",
         "EKG",
         "CXR",
-        "Troponin",
+        "Troponin (serial) and BNP",
         "BMP and CBC",
-        "D-dimer or CTPA if PE still considered"
+        "TSH (hypothyroidism / myxedema effusion)",
+        "D-dimer (low specificity in cancer but sent)"
       ],
       "contraindicatedTests": [
-        "giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)"
+        "Giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)",
+        "Empiric thrombolysis/anticoagulation for presumed PE before imaging (risks a hemorrhagic tamponade)"
       ],
       "orderSensitiveActions": [
-        "giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)"
+        "Giving a diuretic or nitrate before excluding tamponade (worsens preload-dependent shock)",
+        "Empiric thrombolysis/anticoagulation for presumed PE before imaging (risks a hemorrhagic tamponade)"
       ]
     },
     {
@@ -207,35 +230,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia with low QRS voltage and electrical alternans. CREDIT: rate & rhythm — sinus tachycardia (3); identifies LOW QRS VOLTAGE (4); recognizes ELECTRICAL ALTERNANS — beat-to-beat QRS amplitude variation (4); links the triad to a large effusion/tamponade (2); systematic read (2). PENALTY: misreading as STEMI and activating the cath lab, or calling it normal (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they fit the clinical picture.",
+      "rubric": "Findings = sinus tachycardia with low QRS voltage and electrical alternans. CREDIT: rate & rhythm — sinus tachycardia (3); identifies LOW QRS VOLTAGE (4); recognizes ELECTRICAL ALTERNANS — beat-to-beat QRS amplitude variation (4); links the triad to a large effusion/tamponade and notes the EKG does NOT show the classic right-heart-strain (S1Q3T3 / RBBB / anterior TWI) pattern that would favor the competing PE (2); systematic read (2). PENALTY: misreading as STEMI and activating the cath lab, or calling it normal (-3).",
       "keyFindings": [
         "sinus tachycardia",
         "low QRS voltage",
         "electrical alternans (beat-to-beat QRS amplitude variation)",
-        "links findings to large pericardial effusion/tamponade"
+        "links findings to large pericardial effusion/tamponade rather than to a PE right-heart-strain pattern"
       ],
       "criticalFindings": [
         "Sinus tachycardia with low QRS voltage and electrical alternans — classic for a large pericardial effusion with tamponade."
       ],
       "commonMistakes": [
         "missing the electrical alternans and reporting only sinus tachycardia",
-        "misreading as an acute STEMI and activating the cath lab"
+        "misreading as an acute STEMI and activating the cath lab",
+        "calling the low voltage a right-heart-strain pattern and committing to PE"
       ],
-      "idealAnswer": "Sinus tachycardia with low QRS voltage and beat-to-beat electrical alternans — the classic triad of a large pericardial effusion with tamponade.",
+      "idealAnswer": "Sinus tachycardia with low QRS voltage and beat-to-beat electrical alternans — the classic triad of a large pericardial effusion with tamponade. There is no S1Q3T3, RBBB, or anterior T-wave inversion to suggest the right-heart strain of a massive PE, which helps tip the obstructive-shock fork toward tamponade.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: sinus tachycardia with low QRS voltage and electrical alternans suggesting a large effusion/tamponade.",
-            "points": 6
-          }
+          "Recognizes: sinus tachycardia with low QRS voltage and electrical alternans suggesting a large effusion/tamponade."
         ],
         "coreActions": [
           "sinus tachycardia",
           "low QRS voltage",
           "electrical alternans (beat-to-beat QRS amplitude variation)",
-          "links findings to large pericardial effusion/tamponade"
+          "links findings to large pericardial effusion/tamponade rather than a PE strain pattern"
         ],
         "bonusActions": [],
         "penalties": [
@@ -265,7 +286,7 @@
         "calling the film normal",
         "mistaking the silhouette for cardiomegaly of heart failure and expecting pulmonary edema"
       ],
-      "idealAnswer": "Enlarged, globular 'water-bottle' cardiac silhouette with clear lung fields — suggestive of a large pericardial effusion; the clear lungs argue against LV failure.",
+      "idealAnswer": "Enlarged, globular 'water-bottle' cardiac silhouette with clear lung fields — suggestive of a large pericardial effusion; the clear lungs argue against LV failure and against the alveolar pattern of an alternative pulmonary process.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -288,9 +309,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Hypotension with pulsus paradoxus, elevated JVP, muffled heart sounds, clear lungs, EKG with low voltage and electrical alternans, a water-bottle heart on CXR, and an echo showing a large effusion with right-heart diastolic collapse and a plethoric IVC. What is your diagnosis and what did you rule out?",
-      "rubric": "Cardiac tamponade from a large pericardial effusion (obstructive shock) (6). Cites Beck's triad plus pulsus paradoxus and the echo tamponade physiology; explicitly excludes ACS (flat troponin, no dynamic ischemic EKG) and PE (no PE on imaging), and notes clear lungs argue against LV failure (4).",
-      "idealAnswer": "Cardiac tamponade. ",
+      "prompt": "Integrate everything: hypotension with an 18 mmHg pulsus paradoxus, elevated JVP, muffled heart sounds, clear lungs; an EKG with low voltage and electrical alternans; a water-bottle heart on CXR; a CTPA with NO PE and a non-dilated RV; an echo with a large effusion, right-heart diastolic collapse and a plethoric IVC; plus Na 129, Cr 1.6 (AKI), and TSH 22. What is your single diagnosis, how did you resolve the tamponade-vs-PE fork, and what concurrent problems must you also address?",
+      "rubric": "Cardiac tamponade from a large pericardial effusion (obstructive shock) (5). Resolves the tamponade-vs-PE fork EXPLICITLY: the CTPA shows no PE with a non-dilated RV, the echo shows tamponade physiology (RA/RV diastolic collapse, plethoric IVC) and no RV dilation/McConnell sign, and the EKG shows effusion low-voltage/alternans rather than right-heart strain — so this is tamponade, not PE (3). Names the discriminating test (echocardiography, supported by CTPA) and residual ambiguity about the EFFUSION ETIOLOGY (malignant vs myxedema vs viral) that fluid analysis will clarify (1). Recognizes the CONCURRENT problems as their own issues — prerenal AKI from low output, hyponatremia, and overt hypothyroidism (TSH 22) contributing to the effusion (1).",
+      "idealAnswer": "Cardiac tamponade. The fork was tamponade vs massive PE (both obstructive shock in a cancer patient): I resolved it with imaging — the CTPA shows no PE and a non-dilated RV, the echo shows true tamponade physiology (right atrial and right ventricular diastolic collapse, a plethoric non-collapsing IVC) with no RV dilation or McConnell sign, and the EKG shows the low-voltage/electrical-alternans of a large effusion rather than a right-heart-strain pattern. The discriminating test is echocardiography (supported by the negative CTPA). Residual ambiguity is the effusion's CAUSE — most likely malignant given metastatic breast cancer, but overt hypothyroidism (TSH 22, skipped levothyroxine) and a recent viral pericarditis are real contributors; pericardial fluid cytology/analysis will clarify. Concurrent problems to address as separate issues: prerenal AKI (Cr 1.6 from low forward flow), hyponatremia (Na 129), and the under-treated hypothyroidism.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -299,11 +320,11 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "Acute coronary syndrome with cardiogenic shock",
-        "Massive pulmonary embolism"
+        "Massive/submassive pulmonary embolism",
+        "Acute coronary syndrome with cardiogenic shock"
       ],
       "acceptableAlternatives": [
-        "Acute decompensated heart failure",
+        "Acute decompensated heart failure (anthracycline cardiotoxicity)",
         "Tension pneumothorax"
       ]
     },
@@ -311,39 +332,47 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH pericardial disease/tamponade: urgent pericardiocentesis (echo-guided) is the definitive treatment (CANT-MISS, 8); IV volume expansion to support a preload-dependent circulation as a temporizing measure (CANT-MISS, 5); urgent cardiology/cardiac surgery consult (4); continuous monitoring in a high-acuity setting with avoidance of intubation/positive-pressure ventilation if possible (3); send pericardial fluid for analysis and treat the underlying cause, e.g. malignant effusion (3); pericardial drain/window for recurrent or malignant effusion (2). PENALTY: diuretics or vasodilators/nitrates that drop preload (-3); delaying drainage in an unstable patient to obtain further imaging (-3).",
-      "idealAnswer": "This is decompensating tamponade: resuscitate and drain. Give IV fluids to support preload while arranging URGENT echo-guided pericardiocentesis (definitive). Call cardiology/cardiac surgery immediately. Manage in a high-acuity/monitored setting; avoid diuretics, nitrates, and (if possible) positive-pressure ventilation, all of which reduce preload. Send pericardial fluid for cytology/culture and treat the underlying cause (likely malignant effusion given breast-cancer history); consider a pericardial drain or surgical window for recurrent/malignant effusions.",
+      "prompt": "What is your management plan, including stabilization, definitive treatment, the concurrent medical problems, and disposition/safe-discharge planning for this patient who lives alone?",
+      "rubric": "Per MGH pericardial disease/tamponade: urgent pericardiocentesis (echo-guided) is the definitive treatment (CANT-MISS, 7); IV volume expansion to support a preload-dependent circulation as a temporizing measure (CANT-MISS, 4); urgent cardiology/cardiac surgery consult (3); continuous monitoring in a high-acuity setting with avoidance of intubation/positive-pressure ventilation if possible (2); send pericardial fluid for cytology/culture and TREAT THE UNDERLYING CAUSE — malignant effusion AND restart/uptitrate levothyroxine for the myxedema contribution, and address the AKI/hyponatremia (3); hold the apixaban peri-procedure and review anticoagulation given a possibly hemorrhagic effusion (2); pericardial drain/window for recurrent or malignant effusion (1); SAFE-DISCHARGE/DISPOSITION planning — admit to ICU/CCU now and, before eventual discharge, do medication reconciliation, address the cost/adherence barrier driving skipped levothyroxine, arrange caregiver/home support given she lives alone, and close oncology + cardiology + PCP follow-up (3). PENALTY: diuretics or vasodilators/nitrates that drop preload (-3); empiric thrombolysis for 'PE' (-3); discharging this unstable patient (-4); delaying drainage in an unstable patient to obtain further imaging (-2).",
+      "idealAnswer": "This is decompensating tamponade: resuscitate and drain. Give IV fluids to support preload while arranging URGENT echo-guided pericardiocentesis (definitive). Call cardiology/cardiac surgery immediately. Manage in a high-acuity/monitored ICU/CCU setting; avoid diuretics, nitrates, and (if possible) positive-pressure ventilation, all of which reduce preload, and do NOT empirically thrombolyse. Hold apixaban around the procedure and reassess anticoagulation (the effusion may be hemorrhagic). Send pericardial fluid for cytology/culture and treat the underlying cause: likely MALIGNANT effusion (oncology) plus restart/uptitrate levothyroxine for the hypothyroid (myxedema) contribution; manage the prerenal AKI and hyponatremia with the same volume resuscitation and recheck. Consider a pericardial drain or surgical window for a recurrent/malignant effusion. Disposition: admit to ICU/CCU. Safe-discharge planning before she eventually leaves: medication reconciliation, fix the cost/adherence barrier that led to skipped thyroid pills, arrange home support/caregiver involvement since she lives alone, and ensure close oncology, cardiology, and primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Urgent echo-guided pericardiocentesis (definitive)",
-            "points": 8
+            "points": 7
           },
           {
             "item": "IV volume expansion to support preload (temporizing)",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Urgent cardiology/cardiac surgery consult",
-            "points": 4
-          },
-          {
-            "item": "High-acuity monitoring; avoid positive-pressure ventilation if possible",
             "points": 3
           },
           {
-            "item": "Pericardial fluid analysis and treat underlying cause (malignant effusion)",
+            "item": "High-acuity monitoring; avoid positive-pressure ventilation if possible",
+            "points": 2
+          },
+          {
+            "item": "Pericardial fluid analysis and treat underlying cause (malignant effusion; restart levothyroxine; address AKI/hyponatremia)",
+            "points": 3
+          },
+          {
+            "item": "Hold apixaban peri-procedure and review anticoagulation (possible hemorrhagic effusion)",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge/disposition: ICU/CCU admit, med reconciliation, fix cost/adherence barrier, home support as she lives alone, close oncology/cardiology/PCP follow-up",
             "points": 3
           }
         ],
         "bonusActions": [
           {
             "item": "Pericardial drain/window for recurrent or malignant effusion",
-            "points": 2
+            "points": 1
           }
         ],
         "penalties": [
@@ -352,8 +381,16 @@
             "points": -3
           },
           {
-            "item": "Delaying drainage in an unstable patient for further imaging",
+            "item": "Empiric thrombolysis for presumed PE",
             "points": -3
+          },
+          {
+            "item": "Discharging this unstable patient",
+            "points": -4
+          },
+          {
+            "item": "Delaying drainage in an unstable patient for further imaging",
+            "points": -2
           }
         ]
       },
@@ -364,16 +401,21 @@
       "optionalActions": [
         "Urgent cardiology/cardiac surgery consult",
         "High-acuity monitoring; avoid positive-pressure ventilation if possible",
-        "Pericardial fluid analysis and treat underlying cause (malignant effusion)",
+        "Pericardial fluid analysis and treat underlying cause (malignant effusion; restart levothyroxine; address AKI/hyponatremia)",
+        "Hold apixaban peri-procedure and review anticoagulation (possible hemorrhagic effusion)",
+        "Safe-discharge/disposition: ICU/CCU admit, med reconciliation, fix cost/adherence barrier, home support as she lives alone, close oncology/cardiology/PCP follow-up",
         "Pericardial drain/window for recurrent or malignant effusion"
       ],
       "unsafeActions": [
         "Diuretics or vasodilators/nitrates that drop preload",
+        "Empiric thrombolysis for presumed PE",
+        "Discharging this unstable patient",
         "Delaying drainage in an unstable patient for further imaging"
       ],
       "consults": [
         "Cardiology",
-        "Cardiac Surgery"
+        "Cardiac Surgery",
+        "Oncology"
       ],
       "disposition": "Admit to ICU/CCU",
       "mghReference": {
@@ -391,12 +433,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "cancer_history",
+      "medication_adherence",
       "alcohol_use"
     ],
     "communicationStyle": "answers questions asked in short sentences; tires easily and does not volunteer diagnostic clues",
-    "affect": "58-year-old woman, anxious and breathless, sitting upright and speaking in short sentences. Cooperative but fatigued.",
+    "affect": "58-year-old woman with metastatic cancer, anxious and breathless, sitting upright and speaking in short sentences. Cooperative but fatigued.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (cancer/chemo, blood thinner, NSAID use, skipped thyroid pills, financial barriers) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -412,9 +455,10 @@
         "malignancy",
         "any history of cancer",
         "breast cancer",
+        "chemotherapy",
         "recent scans or workup"
       ],
-      "response": "[Reveal the breast-cancer history and possible recurrence from patientFile only when asked directly; phrase in lay language.]",
+      "response": "[Reveal the metastatic breast-cancer history, ongoing chemotherapy, and recent possible progression from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -435,6 +479,38 @@
       "hiddenUntilAsked": true
     },
     {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "take your medicines as prescribed",
+        "miss any doses",
+        "adherence",
+        "able to afford your medications",
+        "skipping pills",
+        "thyroid medicine"
+      ],
+      "response": "[Reveal that she has been skipping levothyroxine due to cost and feeling unwell only when asked about adherence/affordability; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_painkillers",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "painkillers",
+        "ibuprofen",
+        "naproxen",
+        "nsaid",
+        "anything for the aches"
+      ],
+      "response": "[Reveal the recent heavy OTC ibuprofen/naproxen use only when asked about over-the-counter painkillers; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
       "id": "alcohol_use",
       "category": "substance_use",
       "triggerConcepts": [
@@ -444,7 +520,7 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -531,9 +607,10 @@
         "what do you take",
         "drugs you take",
         "blood thinners",
-        "anticoagulants"
+        "anticoagulants",
+        "apixaban"
       ],
-      "response": "[Answer from patientFile if applicable (amlodipine, no anticoagulants); otherwise a normal/negative reply.]",
+      "response": "[Answer from patientFile if applicable (amlodipine, levothyroxine, apixaban, ondansetron, recent OTC NSAIDs); otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -545,9 +622,10 @@
         "past medical history",
         "medical problems",
         "conditions",
-        "other health problems"
+        "other health problems",
+        "thyroid"
       ],
-      "response": "[Answer from patientFile if applicable (hypertension); reveal cancer history only if asked about cancer.]",
+      "response": "[Answer from patientFile if applicable (hypertension, hypothyroidism); reveal cancer history only if asked about cancer.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -599,7 +677,7 @@
     },
     {
       "id": "assess_perfusion_finding_5",
-      "finding": "Extremities: cool peripheries with sluggish capillary refill; NO peripheral edema, NO calf tenderness.",
+      "finding": "Extremities: cool peripheries with sluggish capillary refill; NO peripheral edema, NO calf tenderness (a pertinent negative against DVT).",
       "revealedBy": [
         "assess_capillary_refill",
         "assess_edema"
@@ -607,6 +685,27 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "Warm extremities, brisk capillary refill, no edema."
+    },
+    {
+      "id": "assess_calf_finding_6",
+      "finding": "Calves: NO calf tenderness, swelling, or asymmetry (a pertinent negative arguing against a DVT source for PE).",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No calf tenderness or swelling."
+    },
+    {
+      "id": "skin_hypothyroid_finding_7",
+      "finding": "Skin/face: mildly puffy and dry — a subtle clue to under-treated hypothyroidism.",
+      "revealedBy": [
+        "inspect_skin",
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Skin normal, not dry or puffy."
     }
   ],
   "overallScoring": {
@@ -619,13 +718,14 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Cardiac tamponade",
-    "diagnosticFramework": "58F presents with several days of progressive dyspnea, vague chest pressure, and lightheadedness, now hypotensive and tachycardic. The diagnosis is Cardiac tamponade, reached by eliciting the focused history (including a malignancy/recurrence and recent viral illness), performing the targeted exam (elevated JVP, muffled heart sounds, pulsus paradoxus, clear lungs), and interpreting the directed workup (EKG low voltage with electrical alternans, water-bottle CXR, confirmatory echo) while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58F with metastatic breast cancer on chemotherapy (including an anthracycline), under-treated hypothyroidism, and hypertension presents with several days of progressive dyspnea, vague chest pressure, and lightheadedness, now hypotensive and tachycardic. The diagnosis is Cardiac tamponade, reached by eliciting the focused history (malignancy/chemotherapy, recent viral illness, skipped levothyroxine, heavy NSAID use, apixaban), performing the targeted exam (elevated JVP, muffled heart sounds, pulsus paradoxus, clear lungs), and interpreting a directed workup (EKG low voltage with electrical alternans, water-bottle CXR, CTPA negative for PE with a non-dilated RV, confirmatory echo with tamponade physiology) while resolving the genuine tamponade-vs-massive-PE fork toward tamponade and recognizing concurrent prerenal AKI, hyponatremia, and overt hypothyroidism.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Neck: JVP MARKEDLY ELEVATED with a prominent x descent and blunted y descent.",
       "Cardiac: HEART SOUNDS are DISTANT/MUFFLED; tachycardic, regular; no friction rub today; PMI difficult to palpate.",
       "Vitals: a PULSUS PARADOXUS of about 18 mmHg is present (systolic drops markedly on inspiration).",
-      "Lungs: CLEAR bilaterally to auscultation (no rales/edema despite dyspnea)."
+      "Lungs: CLEAR bilaterally to auscultation (no rales/edema despite dyspnea).",
+      "Calves: NO calf tenderness, swelling, or asymmetry (a pertinent negative arguing against a DVT source for PE)."
     ],
     "keyDiagnosticFindings": [
       "Troponin",
@@ -633,19 +733,23 @@
       "BMP",
       "Ddimer",
       "echo",
-      "CBC"
+      "CBC",
+      "TSH"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items (cancer/recurrence, recent viral illness) only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings (elevated JVP, muffled heart sounds, pulsus paradoxus, clear lungs).",
-      "Build a differential led by Cardiac tamponade while explicitly excluding must-not-miss causes (ACS, massive PE).",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and the confirmatory echo.",
-      "Commit to Cardiac tamponade and manage with stabilization (IV fluids), definitive drainage (pericardiocentesis), consults, and disposition."
+      "Elicit the focused history, including sensitive items (cancer/chemotherapy, recent viral illness, skipped levothyroxine, heavy NSAID use, apixaban) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (elevated JVP, muffled heart sounds, pulsus paradoxus, clear lungs, no calf signs).",
+      "Build a differential with a genuine tamponade-vs-massive-PE fork and name three etiologies of the effusion, while excluding ACS and ADHF.",
+      "Order a focused, order-sensitive workup (echo and CTPA to split the obstructive-shock fork; TSH for the myxedema contribution) and interpret EKG/CXR and the confirmatory echo.",
+      "Commit to Cardiac tamponade, address the concurrent AKI/hyponatremia/hypothyroidism, and manage with stabilization (IV fluids), definitive drainage (pericardiocentesis), consults, and safe-discharge/disposition planning."
     ],
     "commonPitfalls": [
+      "Anchoring on tamponade and never seriously considering PE in a cancer patient",
+      "Empiric thrombolysis for presumed PE that risks a hemorrhagic tamponade",
       "Diuretics or vasodilators/nitrates that drop preload",
-      "Delaying drainage in an unstable patient for further imaging"
+      "Delaying drainage in an unstable patient for further imaging",
+      "Discharging this unstable patient"
     ],
     "managementPearls": [
       "Urgent echo-guided pericardiocentesis (definitive)",
@@ -660,7 +764,7 @@
       "repeat_vitals"
     ],
     "criticalWorkupItems": [
-      "Urgent echocardiogram for effusion/tamponade physiology"
+      "Urgent echocardiogram for effusion/tamponade physiology and RV assessment"
     ],
     "criticalInterpretationItems": [
       "Sinus tachycardia with low QRS voltage and electrical alternans — classic for a large pericardial effusion with tamponade.",
@@ -679,7 +783,7 @@
       "Enlarged, globular 'water-bottle' cardiac silhouette with clear lungs, suggesting a large pericardial effusion."
     ],
     "imageInterpretationPearls": [
-      "Low voltage plus electrical alternans on the EKG is a high-yield clue to a large effusion — name it explicitly.",
+      "Low voltage plus electrical alternans on the EKG is a high-yield clue to a large effusion — name it explicitly, and note the ABSENCE of a right-heart-strain pattern argues against the competing PE.",
       "Read every study systematically before committing.",
       "State pertinent negatives, not just positives — clear lungs with shock points away from LV failure."
     ]
@@ -692,11 +796,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's cancer and her fear",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (cancer, adherence, finances)",
         "points": 1
       },
       {
@@ -711,7 +815,7 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
+    "appliedOn": "2026-06-14",
     "imagePolicy": "pathology-forward standalone interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,

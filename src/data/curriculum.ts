@@ -148,7 +148,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // ---------------------------------------------------------------- Chest Pain
   {
     category: "Chest Pain",
-    framework: "Anatomic (chest wall → pleura → lung → vessels → heart → esophagus) over must-not-miss-first.",
+    framework: "Anatomic (chest wall → pleura → lung → vessels → heart → esophagus) over must-not-miss-first. Resident must-not-miss grouping: 4 cardiac (ACS, tamponade, aortic dissection, pericarditis), 2 GI (esophageal rupture, impaction), 2 respiratory (pneumothorax, PE).",
     strategy:
       "In every chest-pain patient, actively exclude the immediately life-threatening causes before settling on a benign one.",
     cantMiss: [
@@ -216,6 +216,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["HEART score", "TIMI / GRACE (ACS)", "Wells + PERC (PE)", "Age-adjusted D-dimer"],
     practiceCases: [
       {
+        vignette: "68 F, crushing substernal chest pain and dyspnea minutes after a sudden severe emotional shock.",
+        ddx: ["Takotsubo (stress) cardiomyopathy", "Anterior STEMI / ACS", "Aortic dissection", "Pulmonary embolism", "Myocarditis", "Pericarditis"],
+        workup: ["EKG", "Troponin (serial)", "CBC", "BMP + Mg", "CXR", "Coronary angiography", "Echocardiogram"],
+        twist: "Coronaries are clean on cath but the LV apex balloons and troponin is only mildly up — diagnosis?",
+        updatedDdx: ["Takotsubo (stress) cardiomyopathy"],
+        nextStep:
+          "Treated as ACS until the cath was clean. Now supportive HF care (gentle diuresis, β-blocker/ACEi as tolerated); correct QT (K >4.0, Mg) with telemetry for torsades; avoid catecholamines/inotropes; anticoagulate if apical thrombus; repeat echo to confirm recovery; bereavement/social-work support.",
+      },
+      {
         vignette: "54 M, squeezing chest pain ×2 months, worse with exertion / better with rest, new episode today.",
         ddx: ["Stable angina", "Unstable angina / ACS", "Vasospastic angina", "Heart failure", "COPD/asthma", "Anemia"],
         workup: ["EKG", "Troponin", "CBC", "CXR", "± BNP"],
@@ -268,7 +277,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // ------------------------------------------------------------- Abdominal Pain
   {
     category: "Abdominal Pain",
-    framework: "Buckets by location + organ system, screening for the surgical / vascular abdomen.",
+    framework: "Buckets by location + organ system, screening for the surgical / vascular abdomen. Must-not-miss mnemonic 'POV-GI': Perforation (appendicitis, PUD), Obstruction (SBO, large-bowel), Vascular (mesenteric ischemia, AAA, MI), GU (ectopic pregnancy, ovarian torsion), Infection/inflammation (pancreatitis, cholecystitis, diverticulitis).",
     strategy:
       "Let location plus onset narrow the field, but for any abdominal pain walk every organ system that could refer there, and always screen for the emergencies that need the OR or IR.",
     cantMiss: [
@@ -335,6 +344,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["Alvarado score (appendicitis)", "Glasgow-Imrie / Ranson (pancreatitis)", "Tokyo criteria (cholecystitis)"],
     practiceCases: [
       {
+        vignette: "44 F on chronic steroids stops them during a flu-like illness; diffuse abdominal pain, vomiting, weakness, BP 84/52.",
+        ddx: ["Adrenal (Addisonian) crisis", "Septic shock / intra-abdominal sepsis", "Surgical abdomen", "Gastroenteritis with dehydration", "DKA"],
+        workup: ["BMP (Na/K/glucose)", "Random cortisol + ACTH", "CBC", "Lactate", "VBG", "Lipase", "UA + cultures", "EKG"],
+        twist: "Na 126, K 6.2, glucose 54 with relative eosinophilia and a low cortisol — diagnosis and first drug?",
+        updatedDdx: ["Adrenal (Addisonian) crisis"],
+        nextStep:
+          "IV hydrocortisone 100 mg immediately (before the cortisol result); isotonic saline with dextrose; treat hyperkalemia by EKG; never give levothyroxine before steroids; admit to a monitored bed; steroid sick-day education before discharge.",
+      },
+      {
         vignette: "65 M, severe epigastric pain, anorexia, nausea, history of alcohol use.",
         ddx: ["Pancreatitis", "PUD ± perforation", "Gastritis", "Biliary disease", "Referred MI"],
         workup: ["CBC", "BMP", "LFTs", "Lipase", "EKG", "Troponin", "RUQ US"],
@@ -378,7 +396,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // ------------------------------------------------------------------- Syncope
   {
     category: "Syncope",
-    framework: "Mechanistic branch point: reflex vs orthostatic vs cardiac vs non-syncope mimic.",
+    framework: "Mechanistic branch point: reflex vs orthostatic vs cardiac vs non-syncope mimic. Resident must-not-miss: cardiac (arrhythmia incl. heart block, HOCM, MI), pulmonary (PE), and seizure.",
     strategy:
       "Transient global hypoperfusion — separate benign reflex syncope from cardiac syncope (the lethal subset) and from mimics. Don't forget orthostatics and an EKG on everyone.",
     cantMiss: [
@@ -443,6 +461,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["Canadian Syncope Risk Score", "San Francisco Syncope Rule"],
     practiceCases: [
       {
+        vignette: "22 M, syncope during a burst of fast irregular palpitations while exercising; baseline EKG has a short PR and a delta wave.",
+        ddx: ["Pre-excited atrial fibrillation (WPW)", "Polymorphic VT / VT", "Other SVT", "HCM / structural", "Long QT syndrome"],
+        workup: ["12-lead EKG + rhythm strip", "Continuous telemetry", "BMP + Mg", "Troponin", "TSH", "Echocardiogram", "EP referral"],
+        twist: "The monitor shows a very fast, broad, IRREGULAR tachycardia with beat-to-beat QRS changes — which drugs are dangerous?",
+        updatedDdx: ["Pre-excited atrial fibrillation in WPW"],
+        nextStep:
+          "Cardiovert if unstable; if stable use procainamide or ibutilide. AVOID all AV-nodal blockers (adenosine, β-blockers, CCBs, digoxin) — they can precipitate VF. Telemetry with pads; urgent EP referral for accessory-pathway ablation; no AV-nodal blocker at discharge; sport restriction until ablated.",
+      },
+      {
         vignette: "70 M, syncope while walking up stairs, returned to baseline immediately; murmur + irregular rhythm on exam.",
         ddx: ["Aortic stenosis", "ACS", "Carotid insufficiency", "Arrhythmia / AFib"],
         workup: ["BMP", "Troponin", "EKG", "Echo"],
@@ -486,7 +513,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // ------------------------------------------------------- Altered Mental Status
   {
     category: "Altered Mental Status",
-    framework: "Structured cause search — metabolic / infectious / structural / toxins — prioritizing reversible causes.",
+    framework: "Structured cause search — metabolic / infectious / structural / toxins — prioritizing reversible causes. Must-not-miss mnemonic 'MIST': Metabolic (hypoglycemia, electrolytes, hypoxia), Infection (meningitis, sepsis), Structural (stroke, bleed, TBI), Toxins (drugs, alcohol withdrawal).",
     strategy:
       "AMS is a syndrome, not a diagnosis. Check a glucose and exclude hypoxia immediately, then run the buckets: metabolic, infectious, structural, toxic. Collateral history is everything.",
     cantMiss: [
@@ -550,6 +577,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["GCS", "CAM (delirium)", "CIWA-Ar (alcohol withdrawal)"],
     practiceCases: [
       {
+        vignette: "78 M on digoxin for AF with a recently uptitrated diuretic; nausea, confusion, yellow-green vision, HR 45.",
+        ddx: ["Digoxin toxicity", "Uremic / electrolyte encephalopathy", "Infection-related delirium", "ACS", "Stroke"],
+        workup: ["Digoxin level", "BMP (K/Mg/Cr)", "EKG", "CBC", "Troponin", "TSH", "± head CT if focal deficit"],
+        twist: "Digoxin 3.2 with K 3.0 and a regularized junctional rhythm with scooped ST — which electrolyte to fix and which drug to AVOID?",
+        updatedDdx: ["Chronic digoxin toxicity (diuretic-induced hypokalemia)"],
+        nextStep:
+          "Hold digoxin and the diuretic; correct K (to ~4–4.5) and Mg; telemetry; digoxin-immune Fab for life-threatening arrhythmia/instability or acute K >5. AVOID IV calcium for hyperkalemia in dig toxicity ('stone heart'). Med reconciliation and digoxin-level monitoring before discharge.",
+      },
+      {
         vignette: "58 M, shortness of breath and somnolence.",
         ddx: ["Causes of hypercarbia/hypoxia/hypotension: COPD", "Pneumonia", "ACS", "Sedative overdose", "Hypoglycemia"],
         workup: ["CBC", "BMP", "ABG", "Troponin", "EKG", "CXR"],
@@ -595,7 +631,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // -------------------------------------------------------------------- Dyspnea
   {
     category: "Dyspnea",
-    framework: "Localize by system (cardiac vs pulmonary vs other) + onset tempo, with must-not-miss-first.",
+    framework: "Localize by system (cardiac vs pulmonary vs other) + onset tempo, with must-not-miss-first. Must-not-miss mnemonic 'BREATHE': Bacteria (pneumonia), Reactive airways, Embolism (PE), ACS, Tension pneumothorax / tamponade, Heart failure, Electrical (arrhythmia).",
     strategy:
       "Localize to a system, then exclude the acutely lethal causes; acuity of onset is the highest-yield discriminator.",
     cantMiss: [
@@ -657,6 +693,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["Wells + PERC (PE)", "CURB-65 (pneumonia)", "BNP interpretation"],
     practiceCases: [
       {
+        vignette: "65 F, acute dyspnea, orthopnea, and palpitations; irregularly irregular tachycardia ~140 with pulmonary edema.",
+        ddx: ["New AF with RVR + decompensated HF", "Thyrotoxicosis (trigger)", "Pulmonary embolism", "ACS / demand ischemia", "Occult infection"],
+        workup: ["EKG", "Troponin", "BNP", "CBC", "BMP", "TSH / free T4", "CXR", "± D-dimer / CTPA", "Echocardiogram"],
+        twist: "TSH is suppressed with a high free T4 and CTPA is negative — what precipitated the AF, and how does it change rate control?",
+        updatedDdx: ["New AF with RVR precipitating decompensated HFpEF, triggered by thyrotoxicosis"],
+        nextStep:
+          "Rate-control with a β-blocker (also treats the thyrotoxicosis) cautiously; add antithyroid therapy with endocrine; gentle IV loop diuresis; CHA2DS2-VASc for anticoagulation; no cardioversion of unanticoagulated new AF without TEE; telemetry admission.",
+      },
+      {
         vignette: "68 M, 1 week of progressive dyspnea on exertion, orthopnea, leg swelling, ran out of his 'water pill'.",
         ddx: ["Acute decompensated heart failure", "COPD exacerbation", "Pneumonia", "PE", "Anemia"],
         workup: ["BNP", "Troponin", "CBC", "BMP", "EKG", "CXR"],
@@ -685,7 +730,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // ---------------------------------------------------------------------- Fever
   {
     category: "Fever",
-    framework: "Head-to-toe source search with a host-risk overlay, running the sepsis screen in parallel.",
+    framework: "Head-to-toe source search with a host-risk overlay, running the sepsis screen in parallel. Resident must-not-miss: endocarditis, abdominal abscess, meningitis, VTE, pneumonia, hyperthyroidism, malignancy.",
     strategy:
       "Find the source while screening for sepsis. Use a head-to-toe review of systems, recognize high-risk hosts (immunocompromised, prosthetic material, recent procedures), and start the sepsis clock early.",
     cantMiss: [
@@ -746,6 +791,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["qSOFA / SOFA", "Surviving Sepsis bundle", "Modified Duke criteria"],
     practiceCases: [
       {
+        vignette: "45 M (recently incarcerated), weeks of fever, drenching night sweats, weight loss, and a productive cough.",
+        ddx: ["Reactivation pulmonary TB", "Bacterial / fungal pneumonia", "Lung malignancy / lymphoma", "Lung abscess"],
+        workup: ["CXR", "Sputum AFB smear ×3 + culture + NAAT", "HIV test", "CBC", "BMP", "LFTs", "± CT chest", "Airborne isolation"],
+        twist: "CXR shows right-upper-lobe cavitation and the AFB smear is positive — first two actions?",
+        updatedDdx: ["Active (reactivation) pulmonary tuberculosis"],
+        nextStep:
+          "Negative-pressure airborne isolation with N95 immediately; start empiric four-drug RIPE therapy; report to public health for contact tracing and DOT; baseline LFTs and ethambutol eye checks; HIV testing; do not discharge to a congregate setting while infectious.",
+      },
+      {
         vignette: "72 F, fever, dysuria, flank pain, confusion, BP 92/54.",
         ddx: ["Pyelonephritis / urosepsis", "Pneumonia", "Intra-abdominal source", "Meningitis"],
         workup: ["Lactate", "Blood cultures ×2", "CBC", "BMP", "UA + culture", "CXR"],
@@ -774,7 +828,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // -------------------------------------------------------------------- Anemia
   {
     category: "Anemia",
-    framework: "Two-axis: acute-vs-chronic / bleeding-vs-not, crossed with the MCV + reticulocyte (kinetic) classification.",
+    framework: "Two-axis: acute-vs-chronic / bleeding-vs-not, crossed with the MCV + reticulocyte (kinetic) classification. For GI bleeding: upper-tract must-not-miss = varices and gastric cancer (bright-red hematemesis vs coffee-ground emesis; melena), lower-tract = colorectal cancer and mesenteric/colonic ischemia; if unstable — two large-bore IVs, fluids + type & screen, transfuse for Hgb <7 (platelets <50), NPO, then urgent endoscopy.",
     strategy:
       "Two questions organize everything: is the patient bleeding (hemodynamic stability + source), and what does the MCV say — micro-, normo-, or macrocytic.",
     cantMiss: [
@@ -830,6 +884,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     tools: ["MCV classification", "Reticulocyte index", "Glasgow-Blatchford (upper GI bleed)"],
     practiceCases: [
       {
+        vignette: "72 M, months of fatigue, easy bruising, and recurrent infections; CBC shows pancytopenia with macrocytosis.",
+        ddx: ["Myelodysplastic syndrome", "Aplastic anemia", "B12 / folate deficiency", "Acute leukemia", "Marrow infiltration"],
+        workup: ["CBC + differential + smear", "Reticulocyte count", "B12 / folate", "Iron studies", "LDH / haptoglobin", "Peripheral blast %", "Hematology referral (bone marrow biopsy)"],
+        twist: "Macrocytosis with dysplastic neutrophils, <5% blasts, and normal B12/folate — diagnosis and disposition?",
+        updatedDdx: ["Myelodysplastic syndrome"],
+        nextStep:
+          "Urgent heme/onc for IPSS-R risk stratification and disease-directed therapy (hypomethylating agent; transplant in eligible higher-risk). Transfuse RBCs for symptomatic/ischemic anemia and platelets for severe thrombocytopenia/bleeding; treat any fever as febrile neutropenia; stop marrow-suppressive drugs; goals-of-care discussion.",
+      },
+      {
         vignette: "62 M, fatigue and black stools, BP 96/60, HR 110.",
         ddx: ["Acute upper GI bleed (PUD, varices)", "Lower GI bleed", "Malignancy", "Iron-deficiency from chronic loss"],
         workup: ["CBC", "BMP (BUN:Cr)", "Type & screen", "Coags", "Iron studies", "Lactate"],
@@ -858,7 +921,7 @@ const RAW_CURRICULUM: RawCurriculum[] = [
   // ------------------------------------------------------------------- Diarrhea
   {
     category: "Diarrhea",
-    framework: "Acute-vs-chronic split, then inflammatory/invasive vs secretory/osmotic features.",
+    framework: "Acute-vs-chronic split, then inflammatory/invasive vs secretory/osmotic features. Resident must-not-miss: C. difficile, invasive infectious diarrhea, IBD (Crohn's vs UC), and bowel ischemia.",
     strategy:
       "Separate acute (<2 weeks, usually infectious/self-limited) from chronic, and screen for the inflammatory/invasive features and dehydration that change management.",
     cantMiss: [
@@ -915,6 +978,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     },
     tools: ["Bristol Stool Scale", "Fecal calprotectin"],
     practiceCases: [
+      {
+        vignette: "55 F, months of high-volume watery diarrhea (several L/day) that persists with fasting, with profound weakness.",
+        ddx: ["VIPoma / secretory NET", "Surreptitious laxative abuse", "Carcinoid syndrome", "Zollinger-Ellison", "Microscopic colitis"],
+        workup: ["BMP (K, HCO3)", "Stool electrolytes + osmotic gap", "Supervised fast", "Fasting VIP + chromogranin A", "Gastrin", "Laxative screen", "CT / MRI pancreas"],
+        twist: "Stool osmotic gap is low, the diarrhea persists through a fast, K is 2.4, and fasting VIP is high — diagnosis?",
+        updatedDdx: ["VIPoma (WDHA / Verner-Morrison syndrome)"],
+        nextStep:
+          "Aggressive IV fluids and potassium (with Mg, on telemetry); somatostatin analog (octreotide then lanreotide) to suppress VIP; correct the non-anion-gap acidosis and hypercalcemia; localize/stage the pancreatic NET and refer to endocrine surgery/oncology; antidiarrheals alone will not control a secretory tumor.",
+      },
       {
         vignette: "68 M, bloody diarrhea and crampy abdominal pain 2 days after a hospitalization on antibiotics.",
         ddx: ["C. difficile colitis", "Ischemic colitis", "Infectious colitis (EHEC, Shigella)", "IBD flare"],
@@ -1002,6 +1074,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
     },
     tools: ["R-factor", "Maddrey DF (alcoholic hepatitis)", "MELD-Na"],
     practiceCases: [
+      {
+        vignette: "55 M, fatigue, knuckle arthralgias, bronze skin, and new diabetes; transaminases mildly elevated.",
+        ddx: ["Hereditary hemochromatosis", "NAFLD / NASH", "Alcoholic / viral hepatitis", "Wilson disease"],
+        workup: ["Ferritin + transferrin saturation", "LFTs", "Glucose / HbA1c", "HFE genotype", "EKG (conduction)", "Echocardiogram", "Liver MRI (iron) / biopsy"],
+        twist: "Ferritin is very high with transferrin saturation >45% — first-line treatment and who else to test?",
+        updatedDdx: ["Hereditary hemochromatosis"],
+        nextStep:
+          "Therapeutic phlebotomy first-line (iron-deplete, then maintenance); stop iron + vitamin C, limit alcohol, avoid raw shellfish; treat the diabetes and hypogonadism; cardiology for iron cardiomyopathy/conduction disease; HCC surveillance if cirrhotic; HFE genotyping and screen first-degree relatives.",
+      },
       {
         vignette: "28 M, RUQ pain, fever, anorexia, nausea.",
         ddx: ["Cholecystitis", "Cholangitis", "Hepatitis", "Hepatic abscess", "Pneumonia", "Pyelonephritis", "Nephrolithiasis"],

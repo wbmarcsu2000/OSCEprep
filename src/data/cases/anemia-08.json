@@ -2,58 +2,62 @@
   "id": "anemia-08",
   "category": "Anemia",
   "difficulty": "hard",
-  "title": "Severe whole-body pain and dark urine",
+  "title": "Severe whole-body pain and dark urine in sickle cell disease, two weeks after a transfusion",
   "diagnosis": "Sickle cell disease with vaso-occlusive crisis and hemolysis",
   "chart": {
     "ageSex": "24M",
     "cc": "Severe pain all over",
-    "oneLiner": "24M with a history of sickle cell disease presents with two days of severe diffuse bone and back pain, fatigue, and dark urine.",
+    "oneLiner": "24M with HbSS sickle cell disease, sickle nephropathy with baseline CKD, prior acute chest syndrome, transfusional iron overload, and avascular necrosis of the hip presents with two days of severe diffuse bone and back pain, fatigue, and dark urine — having been transfused for an illness roughly two weeks ago.",
     "vitals": {
-      "BP": "126/78",
-      "HR": "118",
+      "BP": "128/80",
+      "HR": "120",
       "RR": "22",
-      "Temp": "38.1°C",
-      "SpO2": "94% RA"
+      "Temp": "38.2°C",
+      "SpO2": "93% RA"
     },
     "timer": 180
   },
-  "opening": "I've got this deep aching pain all over my arms, legs, and back that won't quit, and my pee has gone really dark.",
-  "patientFile": "PERSONA: 24-year-old man, visibly uncomfortable and guarding, mildly jaundiced. Cooperative but distracted by pain.\n\nHPI: Two days of severe deep aching pain in the back, arms, legs, and chest — the same pattern as his prior sickle cell pain crises but worse. Pain 9/10, constant, not relieved by his usual home opioids. Triggered by a recent cold/dehydration and a long flight last week (only if asked about triggers). Feels short of breath and very tired; noticed dark (tea-colored) urine and that his eyes look more yellow. Low-grade fever today. NO chest pain that is pleuritic/sharp, NO cough or new sputum at this moment (important pertinent negatives — but ask), NO black/bloody stools, NO recent rash, NO neuro deficits or facial droop.\nPMH: Sickle cell disease (HbSS) diagnosed in childhood, multiple prior pain crises and two prior hospital admissions, history of acute chest syndrome once, cholecystectomy for pigment gallstones. Up to date on pneumococcal vaccines, on penicillin prophylaxis as a child (asplenic functionally). MEDS: hydroxyurea (admits poor adherence the last month if asked), folic acid, as-needed oxycodone at home. ALLERGIES: none. SOCIAL: no tobacco, occasional alcohol, no IV drugs; works as a student. FAMILY: parents both sickle trait; a sibling with sickle cell disease.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mildly jaundiced, in pain but alert and oriented.\n- Vitals: BP 126/78, HR 118, RR 22, 38.1°C, SpO2 94% RA.\n- HEENT: scleral icterus present; mucous membranes dry (dehydrated).\n- Cardiac: tachycardic, regular, soft flow murmur; no rub.\n- Pulmonary: lungs clear to auscultation, no focal crackles or dullness at this time; no chest wall tenderness reproducible.\n- Abdomen: soft, mildly tender diffusely, NO splenomegaly (functionally asplenic), well-healed cholecystectomy scar.\n- Extremities: diffuse long-bone and joint tenderness, no warmth/erythema/effusion of any single joint, no swelling to suggest dactylitis in this adult.\n- Neuro: nonfocal, no weakness, no facial droop.\n- Skin: no rash, no petechiae or purpura.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent dehydration/flight trigger or hydroxyurea nonadherence unless asked about triggers or medications/adherence.\n- Splenomegaly is ABSENT (functionally asplenic) — say so only if the abdomen/spleen is examined.\n- Pulmonary exam is clear right now — reveal only if lungs are examined; do not hint at acute chest syndrome.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've got this deep aching pain all over my arms, legs, and back that won't quit, and my pee has gone really dark — darker than my usual crises.",
+  "patientFile": "PERSONA: 24-year-old man, visibly uncomfortable and guarding, mildly jaundiced. Cooperative but distracted by pain and worried because this crisis feels different and his urine is darker than usual.\n\nHPI: Two days of severe deep aching pain in the back, arms, legs, and chest — the same pattern as his prior sickle cell pain crises but worse and not relieved by his usual home opioids. Pain 9/10, constant. About two weeks ago he had a febrile respiratory illness and was given a red-cell transfusion at another hospital, plus a course of an antibiotic (a cephalosporin — only if asked). Since a few days ago he has felt increasingly weak and short of breath, his eyes look more yellow, and his urine has turned very dark, tea-to-cola colored, darker than he has ever seen even in past crises (reveal the \"darker than usual / since the transfusion\" detail only if asked about urine or recent transfusion). Triggered by the recent illness and dehydration and a long flight (only if asked about triggers). Low-grade fever today. NO pleuritic/sharp chest pain right now, NO cough or new sputum at this moment (important pertinent negatives — but ask), NO black/bloody stools, NO recent rash, NO neuro deficits or facial droop. Makes less urine than usual over the last day (only if asked).\nPMH: Sickle cell disease (HbSS) diagnosed in childhood; multiple prior pain crises and several admissions; one prior episode of acute chest syndrome; cholecystectomy for pigment gallstones; chronic sickle nephropathy with baseline mild CKD (baseline Cr ~1.3); transfusional iron overload from chronic transfusion in the past; avascular necrosis of the right hip; known pulmonary hypertension noted on a prior echo; functionally asplenic (autosplenectomy). Up to date on pneumococcal and meningococcal vaccines. ALLERGIES: none known. MEDS (ask): hydroxyurea (admits poor adherence the last month if asked), folic acid, deferasirox (iron chelator) for iron overload, as-needed oxycodone at home, and he has been taking ibuprofen several times a day for the past week for the pain (only if asked about over-the-counter or pain medicines); received a cephalosporin antibiotic two weeks ago for the febrile illness. SOCIAL: no tobacco, occasional alcohol, no IV drugs; college student, lives with a roommate. FAMILY: parents both sickle trait; a sibling with sickle cell disease.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mildly jaundiced, in pain but alert and oriented; appears pale.\n- Vitals: BP 128/80, HR 120, RR 22, 38.2°C, SpO2 93% RA.\n- HEENT: scleral icterus present; conjunctival pallor; mucous membranes dry (dehydrated).\n- Cardiac: tachycardic, regular, soft systolic flow murmur; a loud/accentuated P2 (pulmonary component) consistent with his known pulmonary hypertension; no rub.\n- Pulmonary: lungs clear to auscultation, no focal crackles or dullness at this time; no reproducible chest wall tenderness.\n- Abdomen: soft, mildly tender diffusely, NO splenomegaly (functionally asplenic), well-healed cholecystectomy scar; no flank mass.\n- Extremities: diffuse long-bone and joint tenderness; reduced and painful range of motion of the RIGHT hip with groin pain on movement (chronic avascular necrosis, painful today); no warmth/erythema/effusion of any single joint, no dactylitis in this adult; trace ankle edema.\n- Neuro: nonfocal, no weakness, no facial droop.\n- Skin: no rash, no petechiae or purpura; no track marks.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the recent transfusion, the cephalosporin, the ibuprofen use, the dehydration/flight trigger, or the hydroxyurea nonadherence unless asked about recent illness/transfusion, medications/over-the-counter drugs, triggers, or adherence.\n- Do NOT volunteer that the urine is darker than prior crises or that it started after the transfusion unless asked about urine color or recent transfusion.\n- Splenomegaly is ABSENT (functionally asplenic) — say so only if the abdomen/spleen is examined.\n- Pulmonary exam is clear right now — reveal only if lungs are examined; do not hint at acute chest syndrome.\n- The loud P2 and the painful right hip are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing."
+,
   "dx": {
     "labs": {
-      "CBC": "Hgb 6.8 (baseline ~8.5), MCV 88, WBC 15.2 (mild leukocytosis with crisis), Plt 410 (reactive thrombocytosis — consistent with functional asplenia).",
-      "Reticulocyte": "Markedly elevated reticulocyte count (~12%) — appropriate marrow response, argues AGAINST aplastic crisis.",
-      "Smear": "Sickle cells, target cells, Howell-Jolly bodies (functional asplenia), polychromasia; NO schistocytes.",
-      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW, reticulocytosis — a hemolytic pattern.",
-      "Hemoglobin_electrophoresis": "Predominant HbS with absent HbA — confirms HbSS (sickle cell disease, not trait).",
-      "BMP": "Cr normal, electrolytes normal; LFTs with isolated indirect hyperbilirubinemia (no obstructive pattern)."
+      "CBC": "Hgb 5.6 (baseline ~8.5; a drop BELOW his usual steady-state nadir), MCV 90, WBC 16.1 (mild leukocytosis with crisis), Plt 430 (reactive thrombocytosis — consistent with functional asplenia).",
+      "Reticulocyte": "Reticulocyte count is INAPPROPRIATELY variable here: at ~9% it is elevated rather than suppressed — argues AGAINST a parvovirus aplastic crisis; an aplastic crisis would show reticulocytopenia.",
+      "Smear": "Sickle cells, target cells, Howell-Jolly bodies (functional asplenia), polychromasia, occasional nucleated RBCs; NO schistocytes — argues against a thrombotic microangiopathy (TTP/HUS/DIC).",
+      "Hemolysis": "LDH markedly HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin undetectable, plasma free hemoglobin elevated, urine dipstick positive for blood with NO red cells on microscopy (hemoglobinuria) — a brisk INTRAVASCULAR hemolytic pattern.",
+      "Transfusion_immunohematology": "Direct antiglobulin test (DAT/Coombs) now POSITIVE; antibody screen reveals a NEW alloantibody not present on prior crossmatch — raises a delayed hemolytic transfusion reaction / hyperhemolysis after the recent transfusion as a competing cause of the brisk hemolysis and anemia.",
+      "Hemoglobin_electrophoresis": "Predominant HbS with absent HbA — confirms HbSS (sickle cell disease, not trait); HbF mildly low in keeping with poor hydroxyurea adherence.",
+      "BMP": "Cr 2.4 (UP from baseline ~1.3 — acute kidney injury on chronic sickle nephropathy, contributed to by NSAID use and hemoglobinuria/volume depletion); K 5.9 (HYPERKALEMIA); HCO3 18 with anion gap 17 (Na 138, Cl 103, HCO3 18 → 138 − 103 − 18 = 17) — an anion-gap metabolic acidosis from AKI/lactate; isolated indirect hyperbilirubinemia with otherwise non-obstructive LFTs."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 3,
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~118 bpm; no acute ischemic changes or ST/T abnormalities.",
-      "verify": "Source a study matching: Sinus tachycardia at ~118 bpm; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~120 bpm with PEAKED, narrow-based, tented T-waves (most prominent in the precordial leads) and slight PR prolongation — changes of HYPERKALEMIA (K 5.9) on a background of AKI; no acute ischemic ST-segment changes.",
+      "verify": "Source a study matching: sinus tachycardia with tall peaked tented T-waves of hyperkalemia, no acute ischemia. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia, no acute ischemia",
+      "imageDescription": "12-lead showing sinus tachycardia with tall peaked tented T-waves of hyperkalemia",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead normal axis"
+        "hyperkalemia ECG peaked T waves",
+        "tented T waves hyperkalaemia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 24-year-old man presents with diffuse body pain and palpitations during an acute pain episode."
+      "clinicalVignette": "A 24-year-old man with sickle cell disease and acute kidney injury during a pain crisis has an EKG obtained for tachycardia and an elevated potassium."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear lung fields with no focal infiltrate, consolidation, or effusion; cardiac silhouette normal (no acute chest syndrome on this baseline film).",
-      "verify": "Source a study matching: Clear lung fields, no focal infiltrate or effusion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lung fields with no focal infiltrate, consolidation, or effusion; cardiac silhouette normal with mildly prominent central pulmonary arteries (chronic pulmonary hypertension); no acute chest syndrome on this baseline film.",
+      "verify": "Source a study matching: clear lung fields, no focal infiltrate or effusion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
       "imageDescription": "chest radiograph with clear lung fields, no infiltrate",
       "searchTerms": [
@@ -61,7 +65,7 @@
         "clear lung fields chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 26-year-old woman presents with chest and back pain, and a film is obtained to exclude an infiltrate."
+      "clinicalVignette": "A 24-year-old man with sickle cell pain and back pain has a film obtained to exclude an infiltrate."
     }
   },
   "revealKeys": [
@@ -69,6 +73,7 @@
     "Reticulocyte",
     "Smear",
     "Hemolysis",
+    "Transfusion_immunohematology",
     "Hemoglobin_electrophoresis",
     "BMP",
     "ekg",
@@ -77,56 +82,64 @@
   "essential": [
     "CBC",
     "Smear",
-    "Hemolysis"
+    "Hemolysis",
+    "Transfusion_immunohematology"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this anemia and pain presentation (note your leading diagnosis).",
-      "rubric": "Sickle cell vaso-occlusive crisis with hemolysis (leading,7). Acute chest syndrome (CANT-MISS to exclude,5). Infection/sepsis or osteomyelitis in a functionally asplenic patient (core,3). Aplastic crisis (parvovirus B19) (core,3). Splenic/hepatic sequestration or hyperhemolytic crisis (core,2). Names hemolysis and the imperative to screen for acute chest syndrome (hypoxia, new infiltrate) and serious infection (core,5).",
-      "idealAnswer": "Leading diagnosis: Sickle cell disease with vaso-occlusive crisis and hemolysis. Must-not-miss diagnoses to exclude: Acute chest syndrome. Also reasonable: Infection/sepsis or osteomyelitis (functional asplenia); Aplastic crisis (parvovirus B19); Splenic/hepatic sequestration or hyperhemolytic crisis.",
+      "prompt": "Based on your history and physical, list your differential for this painful crisis with a worse-than-baseline anemia and dark urine (note your leading diagnosis). Then NAME THREE distinct mechanisms that could explain why his hemoglobin has fallen below his usual baseline.",
+      "rubric": "Sickle cell vaso-occlusive crisis with brisk hemolysis (leading,6). Delayed hemolytic transfusion reaction / hyperhemolysis syndrome after the recent transfusion — the genuine competing diagnosis given new dark urine, positive DAT, and a new alloantibody (CANT-MISS competitor,5). Acute chest syndrome to exclude (CANT-MISS,3). Names THREE distinct mechanisms of the falling Hgb — e.g. ongoing intravascular hemolysis of crisis, delayed hemolytic transfusion reaction/hyperhemolysis destroying both donor and host cells, parvovirus B19 aplastic crisis (suppressed production), and splenic/hepatic sequestration (award up to 3 mechanisms,6). Infection/sepsis or osteomyelitis in a functionally asplenic patient (core,3). Thrombotic microangiopathy (TTP) considered then argued against by absent schistocytes (core,2). PENALTY: anchoring on a plain pain crisis and ignoring the recent transfusion as a cause of the brisk hemolysis (-3).",
+      "idealAnswer": "Leading diagnosis: Sickle cell disease with vaso-occlusive crisis and brisk (intravascular) hemolysis. The genuine competing diagnosis is a delayed hemolytic transfusion reaction / hyperhemolysis syndrome triggered by the transfusion ~2 weeks ago (new dark urine, positive DAT, a new alloantibody) — it can mimic or coexist with a crisis and is dangerous because further transfusion can worsen it. Must-not-miss to exclude: Acute chest syndrome and serious infection/sepsis or osteomyelitis (functional asplenia). Three mechanisms for the sub-baseline Hgb: (1) accelerated hemolysis of the crisis itself; (2) a delayed hemolytic transfusion reaction / hyperhemolysis destroying both transfused and the patient's own red cells; (3) a parvovirus B19 aplastic crisis suppressing marrow production — or splenic/hepatic sequestration. Thrombotic microangiopathy (TTP/HUS) is considered but argued against by the absence of schistocytes.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Sickle cell vaso-occlusive crisis with hemolysis",
-            "points": 7
+            "item": "Sickle cell vaso-occlusive crisis with brisk hemolysis",
+            "points": 6
+          },
+          {
+            "item": "Delayed hemolytic transfusion reaction / hyperhemolysis syndrome after the recent transfusion",
+            "points": 5
           },
           {
             "item": "Acute chest syndrome",
-            "points": 5
+            "points": 3
           }
         ],
         "coreActions": [
+          {
+            "item": "Names three distinct mechanisms for the sub-baseline Hgb (hemolysis of crisis; delayed hemolytic transfusion reaction/hyperhemolysis; aplastic crisis or sequestration)",
+            "points": 6
+          },
           {
             "item": "Infection/sepsis or osteomyelitis (functional asplenia)",
             "points": 3
           },
           {
-            "item": "Aplastic crisis (parvovirus B19)",
-            "points": 3
-          },
-          {
-            "item": "Splenic/hepatic sequestration or hyperhemolytic crisis",
+            "item": "Thrombotic microangiopathy (TTP) considered and argued against by absent schistocytes",
             "points": 2
-          },
-          {
-            "item": "Names hemolysis and the imperative to screen for acute chest syndrome and serious infection",
-            "points": 5
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a plain pain crisis and ignores the recent transfusion as a cause of the brisk hemolysis",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute chest syndrome"
+        "Delayed hemolytic transfusion reaction / hyperhemolysis syndrome",
+        "Acute chest syndrome",
+        "Infection/sepsis or osteomyelitis (functional asplenia)"
       ],
       "acceptableAlternatives": [
-        "Infection/sepsis or osteomyelitis (functional asplenia)",
         "Aplastic crisis (parvovirus B19)",
-        "Splenic/hepatic sequestration or hyperhemolytic crisis"
+        "Splenic/hepatic sequestration",
+        "Thrombotic microangiopathy (TTP/HUS)"
       ]
     },
     {
@@ -135,8 +148,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC + reticulocyte count, compared to baseline (CANT-MISS,3). Peripheral smear — sickle cells vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin (3). Type & screen / crossmatch and chemistries with renal/LFTs (3). Pulse oximetry plus CXR to screen for acute chest syndrome; blood cultures if febrile (2). PENALTY: ordering an empiric exchange transfusion or simple transfusion to baseline Hgb without an indication (acute chest, stroke, symptomatic anemia) — over-transfusion raises hyperviscosity risk (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs; Hemoglobin electrophoresis; BMP.",
+      "rubric": "CBC + reticulocyte count, compared to baseline (CANT-MISS,3). Peripheral smear — sickle cells vs schistocytes (CANT-MISS,3). Direct antiglobulin test (DAT/Coombs) + repeat type & screen / antibody screen given the recent transfusion (CANT-MISS,3). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, plasma free Hgb, urine for hemoglobinuria (2). BMP with K and renal function plus an EKG given hyperkalemia/AKI (2). Pulse oximetry and CXR to screen for acute chest syndrome; blood cultures if febrile (2). PENALTY: ordering an empiric simple transfusion to baseline Hgb before the antibody workup — may fuel hyperhemolysis and ignores hyperviscosity risk (-3); reflexively giving potassium-containing fluids without checking the potassium first (-1).",
+      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs (LDH, haptoglobin, indirect bilirubin, plasma free hemoglobin, urine for hemoglobinuria); a Direct antiglobulin test (DAT/Coombs) with a repeat type & screen / antibody screen given the recent transfusion; Hemoglobin electrophoresis; BMP (potassium and renal function). Add blood cultures and a parvovirus B19 PCR if reticulocytopenic. Hold empiric transfusion until the immunohematology workup returns, because reflexive transfusion can worsen hyperhemolysis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -146,50 +159,55 @@
           },
           {
             "item": "Peripheral smear — sickle cells vs schistocytes",
-            "points": 4
+            "points": 3
           },
           {
-            "item": "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)",
+            "item": "Direct antiglobulin test (DAT/Coombs) + antibody screen given the recent transfusion",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "Hemolysis labs (LDH, haptoglobin, indirect bilirubin, plasma free Hgb, urine hemoglobinuria)",
             "points": 2
+          },
+          {
+            "item": "EKG",
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Hemoglobin electrophoresis",
-            "points": 2
-          },
-          {
-            "item": "BMP",
+            "item": "BMP (potassium and renal function)",
             "points": 2
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "Empiric transfusion to baseline Hgb without an indication (hyperviscosity risk)",
-            "points": -2
+            "item": "Empiric simple transfusion to baseline before the antibody workup (may fuel hyperhemolysis; hyperviscosity risk)",
+            "points": -3
+          },
+          {
+            "item": "Potassium-containing fluids without checking the potassium first",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
         "CBC + reticulocyte count compared to baseline",
         "Peripheral smear — sickle cells vs schistocytes",
-        "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)"
+        "Direct antiglobulin test (DAT/Coombs) + antibody screen given the recent transfusion"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "Empiric transfusion to baseline Hgb without an indication (hyperviscosity risk)"
+        "Empiric simple transfusion to baseline before the antibody workup (may fuel hyperhemolysis; hyperviscosity risk)",
+        "Potassium-containing fluids without checking the potassium first"
       ],
       "orderSensitiveActions": [
-        "Empiric transfusion to baseline Hgb without an indication (hyperviscosity risk)"
+        "Empiric simple transfusion to baseline before the antibody workup (may fuel hyperhemolysis; hyperviscosity risk)"
       ]
     },
     {
@@ -198,32 +216,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: identifies rate & rhythm as sinus tachycardia (7); states no acute ischemic ST/T changes — tachycardia is from pain, fever, and anemia (5); systematic read with pertinent negatives (3). PENALTY: over-calling ischemia or a primary cardiac event (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG, obtained for the tachycardia and the elevated potassium. Describe your findings and their significance.",
+      "rubric": "Findings = sinus tachycardia with PEAKED/TENTED T-waves of HYPERKALEMIA (K 5.9) from AKI, no acute ischemia. CREDIT: identifies the tall, narrow-based, tented T-waves as hyperkalemia and links them to the AKI/elevated potassium (7); identifies the underlying rate/rhythm as sinus tachycardia from pain, fever, and anemia (4); states no acute ischemic ST changes and reads systematically with pertinent negatives (4). PENALTY: missing the hyperkalemic T-waves and calling the EKG normal, or over-calling ischemia (-3).",
       "keyFindings": [
-        "sinus tachycardia at ~118 bpm",
-        "no acute ischemic ST/T changes"
+        "sinus tachycardia at ~120 bpm",
+        "peaked, tented T-waves of hyperkalemia (K 5.9) on a background of AKI",
+        "no acute ischemic ST changes"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia)."
+        "Sinus tachycardia with tall peaked/tented T-waves of hyperkalemia (K 5.9) from acute kidney injury; no acute ischemic changes."
       ],
       "commonMistakes": [
+        "missing the peaked hyperkalemic T-waves and calling the tracing normal",
         "over-calling ischemia or attributing the tachycardia to a primary cardiac problem"
       ],
-      "idealAnswer": "Sinus tachycardia at ~118 bpm with no acute ischemic changes; consistent with pain, fever, and anemia.",
+      "idealAnswer": "Sinus tachycardia at ~120 bpm with tall, narrow-based, tented T-waves — the EKG signature of hyperkalemia, which fits his potassium of 5.9 from acute kidney injury. There are no acute ischemic ST changes. This is an actionable finding: it mandates urgent potassium-lowering measures and cardiac monitoring, and the tachycardia itself is compensatory for pain, fever, and the worse-than-baseline anemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia)."
+          "Sinus tachycardia with tall peaked/tented T-waves of hyperkalemia (K 5.9) from acute kidney injury; no acute ischemic changes."
         ],
         "coreActions": [
-          "sinus tachycardia at ~118 bpm",
-          "no acute ischemic ST/T changes"
+          "peaked, tented T-waves of hyperkalemia on a background of AKI",
+          "sinus tachycardia at ~120 bpm compensatory for pain, fever, anemia",
+          "no acute ischemic ST changes"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls ischemia / a primary cardiac event",
+            "label": "misses the hyperkalemic T-waves / over-calls ischemia",
             "points": -3
           }
         ]
@@ -236,22 +257,23 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process; clear lungs. CREDIT: identifies a normal/clear film with no infiltrate or effusion (6); recognizes the film is screening for acute chest syndrome and must be repeated if hypoxia/symptoms evolve (4). PENALTY: inventing an infiltrate, or falsely reassuring that acute chest syndrome is excluded for the whole admission (-2).",
+      "rubric": "Findings = no acute process; clear lungs, with mildly prominent central pulmonary arteries from chronic pulmonary hypertension. CREDIT: identifies a clear film with no infiltrate or effusion (5); recognizes the film is screening for acute chest syndrome and must be repeated if hypoxia/symptoms evolve (3); notes the prominent central pulmonary arteries fitting his known pulmonary hypertension (2). PENALTY: inventing an infiltrate, or falsely reassuring that acute chest syndrome is excluded for the whole admission (-2).",
       "keyFindings": [
         "clear lung fields, no focal infiltrate or effusion",
+        "mildly prominent central pulmonary arteries consistent with chronic pulmonary hypertension",
         "screening film for acute chest syndrome — repeat if hypoxia or respiratory symptoms develop"
       ],
       "criticalFindings": [
-        "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+        "Clear lungs, no acute infiltrate (no acute chest syndrome on this film); central pulmonary arteries prominent in keeping with chronic pulmonary hypertension."
       ],
       "commonMistakes": [
         "inventing an infiltrate, or assuming a single clear film rules out acute chest syndrome for the rest of the admission"
       ],
-      "idealAnswer": "Clear lung fields, no focal infiltrate or effusion; no acute chest syndrome on this film, but repeat if hypoxia or respiratory symptoms develop.",
+      "idealAnswer": "Clear lung fields, no focal infiltrate or effusion; no acute chest syndrome on this film. The central pulmonary arteries are mildly prominent, fitting his known pulmonary hypertension. A single clear film does not exclude evolving acute chest syndrome — repeat if hypoxia or respiratory symptoms develop.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+          "Clear lungs, no acute infiltrate (no acute chest syndrome on this film); central pulmonary arteries prominent in keeping with chronic pulmonary hypertension."
         ],
         "coreActions": [
           "clear lung fields, no focal infiltrate or effusion",
@@ -270,9 +292,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Hgb 6.8 below baseline, reticulocytosis ~12%, low haptoglobin, high LDH and indirect bilirubin, sickle cells and Howell-Jolly bodies on smear, NO schistocytes, HbSS on electrophoresis, clear CXR, SpO2 94%. What is your diagnosis and what did you rule out?",
-      "rubric": "Sickle cell disease (HbSS) with vaso-occlusive crisis and hemolysis (6). Cites the hemolytic markers with reticulocytosis (excludes aplastic crisis), sickle cells without schistocytes (excludes TTP/microangiopathy), and a clear CXR with maintained oxygenation (no acute chest syndrome on this film, with ongoing monitoring) (4).",
-      "idealAnswer": "Sickle cell disease with vaso-occlusive crisis and hemolysis.",
+      "prompt": "Hgb 5.6 (below baseline), reticulocytosis ~9%, undetectable haptoglobin, high LDH and indirect bilirubin, hemoglobinuria, sickle cells and Howell-Jolly bodies with NO schistocytes, HbSS on electrophoresis, a NEW positive DAT and a new alloantibody after a transfusion two weeks ago, K 5.9 with Cr 2.4 and an anion-gap acidosis, clear CXR, SpO2 93%. Commit to a single most-likely diagnosis, name the discriminating test, and state the residual ambiguity you are still tracking.",
+      "rubric": "Sickle cell disease (HbSS) with vaso-occlusive crisis and brisk hemolysis (6). Commits to it while explicitly addressing the fork: the positive DAT and new alloantibody mean a delayed hemolytic transfusion reaction / hyperhemolysis is contributing and is the residual ambiguity being tracked — the discriminating tests are the antibody identification and the DAT, and the practical consequence is to avoid further transfusion unless life-threatening. Uses the smear (no schistocytes excludes TTP/microangiopathy) and reticulocytosis (excludes aplastic crisis), and integrates the concurrent AKI with hyperkalemia/anion-gap acidosis (separate active problem) and a clear CXR with maintained oxygenation (no acute chest syndrome on this film, with ongoing monitoring) (4).",
+      "idealAnswer": "Most-likely diagnosis: Sickle cell disease with vaso-occlusive crisis and brisk intravascular hemolysis. Discriminating tests and residual ambiguity: the new positive DAT and new alloantibody after the recent transfusion mean a delayed hemolytic transfusion reaction / hyperhemolysis is contributing to the sub-baseline anemia and dark urine — this is the ambiguity I am tracking, and antibody identification plus the DAT are the discriminators; practically I avoid further transfusion unless life-threatening because it can worsen hyperhemolysis. The absence of schistocytes argues against TTP/microangiopathy, and the reticulocytosis argues against a parvovirus aplastic crisis. Separately, he has acute kidney injury on chronic sickle nephropathy with hyperkalemia (K 5.9, EKG changes) and an anion-gap acidosis that need their own treatment, and a clear CXR with SpO2 93% shows no acute chest syndrome on this film though it warrants ongoing monitoring.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -281,80 +303,92 @@
         "penalties": []
       },
       "mustNotMiss": [
+        "Delayed hemolytic transfusion reaction / hyperhemolysis syndrome",
         "Acute chest syndrome"
       ],
       "acceptableAlternatives": [
         "Infection/sepsis or osteomyelitis (functional asplenia)",
         "Aplastic crisis (parvovirus B19)",
-        "Splenic/hepatic sequestration or hyperhemolytic crisis"
+        "Splenic/hepatic sequestration"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH sickle cell crisis: prompt multimodal analgesia with IV opioids titrated to pain (CANT-MISS,7); IV hydration (euvolemic, avoid over-hydration) (4); supplemental oxygen to keep SpO2 >=95% and incentive spirometry to prevent acute chest syndrome (4); evaluate and empirically treat for infection if febrile, give VTE prophylaxis (3); continue/restart hydroxyurea and folate, hematology consult (3); transfuse only for a clear indication (acute chest, stroke, symptomatic/aplastic anemia), exchange transfusion for severe acute chest syndrome (2). PENALTY: under-treating pain or delaying opioids over addiction concerns (-3); over-transfusing to baseline Hgb without indication (hyperviscosity) (-1).",
-      "idealAnswer": "Vaso-occlusive crisis: prompt multimodal analgesia with IV opioids titrated to pain (do not under-treat); IV fluids targeting euvolemia (avoid over-hydration which worsens acute chest syndrome); supplemental oxygen to keep SpO2 >=95% with incentive spirometry to prevent acute chest syndrome; assess for and empirically cover infection if febrile, plus VTE prophylaxis; folate and continue/restart hydroxyurea; hematology consult. Transfuse only for a clear indication (acute chest syndrome, stroke, symptomatic or aplastic anemia); exchange transfusion for severe acute chest syndrome. Avoid over-transfusion to baseline (hyperviscosity).",
+      "prompt": "What is your management plan, including how you handle the potassium, the transfusion question, and the eventual disposition/safe-discharge plan?",
+      "rubric": "Per MGH sickle cell crisis: prompt multimodal analgesia with IV opioids titrated to pain, avoiding NSAIDs given the AKI (CANT-MISS,6); treat the HYPERKALEMIA urgently — calcium for membrane stabilization given EKG changes, insulin/dextrose and a beta-agonist to shift, and stop the deferasirox/NSAID and any potassium load, with cardiac monitoring (CANT-MISS,5); IV hydration targeting euvolemia (avoid over-hydration and nephrotoxins; treat the AKI) (3); supplemental oxygen to keep SpO2 ≥ 95% and incentive spirometry to prevent acute chest syndrome (3); involve transfusion medicine/hematology — if a delayed hemolytic transfusion reaction/hyperhemolysis is confirmed, AVOID further transfusion unless life-threatening and consider IVIG/steroids/eculizumab; if transfusion is unavoidable use antigen-matched units (3); evaluate/empirically treat infection if febrile and give VTE prophylaxis; continue folate and restart hydroxyurea (2). Safe discharge/disposition: ADMIT now (he is unsafe to discharge — sub-baseline Hgb, AKI with hyperkalemia, brisk hemolysis); plan discharge only once pain controlled on orals, potassium and renal function improving, and hemolysis stabilizing, with medication reconciliation (avoid NSAIDs, reconcile chelator), a transfusion-reaction card documenting the new alloantibody for future crossmatch, hydroxyurea-adherence counseling, and close hematology/nephrology follow-up (3). PENALTY: under-treating pain or delaying opioids over addiction concerns (-3); transfusing to baseline Hgb in the face of a positive DAT/hyperhemolysis without transfusion-medicine input (-2); continuing NSAIDs or giving potassium-containing fluids in this AKI/hyperkalemia (-1).",
+      "idealAnswer": "Vaso-occlusive crisis: prompt multimodal analgesia with IV opioids titrated to pain (do not under-treat), and STOP the ibuprofen — NSAIDs are contraindicated with his AKI. Treat the hyperkalemia urgently: IV calcium for membrane stabilization given the EKG changes, insulin with dextrose and a nebulized beta-agonist to shift potassium intracellularly, a potassium binder, stop deferasirox and avoid potassium-containing fluids, and keep him on a cardiac monitor with a repeat EKG and potassium. IV fluids targeting euvolemia to treat the AKI and hemoglobinuria while avoiding over-hydration (worsens acute chest syndrome). Supplemental oxygen to keep SpO2 ≥ 95% with incentive spirometry to prevent acute chest syndrome. Involve transfusion medicine and hematology: because the DAT is positive with a new alloantibody, treat as a delayed hemolytic transfusion reaction / hyperhemolysis — AVOID further transfusion unless truly life-threatening (it can accelerate destruction of both donor and host cells); if transfusion is unavoidable use antigen-matched units and consider IVIG, steroids, or eculizumab. Assess for and empirically cover infection if febrile, add VTE prophylaxis, continue folate, and restart hydroxyurea with adherence counseling. Disposition: ADMIT — he is NOT safe to discharge with a sub-baseline Hgb, AKI with hyperkalemia, and brisk hemolysis. Plan discharge only once pain is controlled on oral agents, potassium and renal function are improving, and hemolysis has stabilized, with medication reconciliation (no NSAIDs; reconcile the iron chelator), a wallet card documenting the new red-cell alloantibody for safe future crossmatching, hydroxyurea-adherence counseling, and close hematology and nephrology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Prompt multimodal analgesia with IV opioids titrated to pain",
-            "points": 7
+            "item": "Prompt multimodal analgesia with IV opioids titrated to pain; stop NSAIDs given the AKI",
+            "points": 6
+          },
+          {
+            "item": "Urgent hyperkalemia treatment: calcium, insulin/dextrose and beta-agonist shift, stop deferasirox/NSAID/potassium load, cardiac monitoring",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "IV hydration targeting euvolemia (avoid over-hydration)",
-            "points": 4
+            "item": "IV hydration targeting euvolemia; treat the AKI and avoid nephrotoxins",
+            "points": 3
           },
           {
             "item": "Supplemental oxygen and incentive spirometry to prevent acute chest syndrome",
-            "points": 4
-          },
-          {
-            "item": "Evaluate/empirically treat infection if febrile; VTE prophylaxis",
             "points": 3
           },
           {
-            "item": "Folate, continue/restart hydroxyurea, hematology consult",
+            "item": "Transfusion medicine/hematology: treat as delayed hemolytic transfusion reaction/hyperhemolysis — avoid further transfusion unless life-threatening; antigen-matched units, consider IVIG/steroids/eculizumab",
             "points": 3
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "Transfuse only for a clear indication; exchange transfusion for severe acute chest syndrome",
+            "item": "Evaluate/empirically treat infection if febrile; VTE prophylaxis; folate and restart hydroxyurea",
             "points": 2
+          },
+          {
+            "item": "Arrange safe discharge/disposition: admit now, then med reconciliation (avoid NSAIDs), an alloantibody/transfusion-reaction card for future crossmatch, hydroxyurea-adherence counseling, and close hematology/nephrology follow-up",
+            "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Under-treating pain / delaying opioids over addiction concerns",
             "points": -3
+          },
+          {
+            "item": "Transfusing to baseline Hgb despite a positive DAT/hyperhemolysis without transfusion-medicine input",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Prompt multimodal analgesia with IV opioids titrated to pain"
+        "Prompt multimodal analgesia with IV opioids titrated to pain; stop NSAIDs given the AKI",
+        "Urgent hyperkalemia treatment: calcium, insulin/dextrose and beta-agonist shift, stop deferasirox/NSAID/potassium load, cardiac monitoring"
       ],
       "optionalActions": [
-        "IV hydration targeting euvolemia (avoid over-hydration)",
+        "IV hydration targeting euvolemia; treat the AKI and avoid nephrotoxins",
         "Supplemental oxygen and incentive spirometry to prevent acute chest syndrome",
-        "Evaluate/empirically treat infection if febrile; VTE prophylaxis",
-        "Folate, continue/restart hydroxyurea, hematology consult",
-        "Transfuse only for a clear indication; exchange transfusion for severe acute chest syndrome"
+        "Transfusion medicine/hematology: treat as delayed hemolytic transfusion reaction/hyperhemolysis — avoid further transfusion unless life-threatening; antigen-matched units, consider IVIG/steroids/eculizumab",
+        "Evaluate/empirically treat infection if febrile; VTE prophylaxis; folate and restart hydroxyurea",
+        "Arrange safe discharge/disposition: admit now, then med reconciliation (avoid NSAIDs), an alloantibody/transfusion-reaction card for future crossmatch, hydroxyurea-adherence counseling, and close hematology/nephrology follow-up"
       ],
       "unsafeActions": [
-        "Under-treating pain / delaying opioids over addiction concerns"
+        "Under-treating pain / delaying opioids over addiction concerns",
+        "Transfusing to baseline Hgb despite a positive DAT/hyperhemolysis without transfusion-medicine input"
       ],
       "consults": [
-        "Hematology"
+        "Hematology",
+        "Transfusion Medicine",
+        "Nephrology"
       ],
       "disposition": "Admit",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Hematology (Sickle Cell Disease — Vaso-Occlusive Crisis)",
+        "section": "Hematology (Sickle Cell Disease — Vaso-Occlusive Crisis; Transfusion Reactions)",
         "page": 141
       }
     }
@@ -367,12 +401,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "medication_adherence",
-      "opioid_use"
+      "opioid_use",
+      "nsaid_overuse"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "24-year-old man, visibly uncomfortable and guarding, mildly jaundiced. Cooperative but distracted by pain.",
+    "affect": "24-year-old man, visibly uncomfortable and guarding, mildly jaundiced and pale. Cooperative but distracted by pain and worried this crisis is different.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (adherence, NSAID overuse, recent transfusion) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -389,7 +424,7 @@
         "is this like before",
         "same as previous crises"
       ],
-      "response": "It came on over the last two days. It's the same deep aching pain I get with my sickle cell crises, but worse than usual, and my home pain pills haven't touched it.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -404,10 +439,26 @@
         "location of pain",
         "character"
       ],
-      "response": "It's a deep, throbbing ache in my back, arms, legs, and a bit in my chest. It's there all the time, about 9 out of 10.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "recent_transfusion",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent transfusion",
+        "blood transfusion",
+        "got blood",
+        "recent hospital",
+        "recent illness",
+        "antibiotics recently"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
     },
     {
       "id": "triggers",
@@ -419,7 +470,7 @@
         "cold or travel",
         "recent flight"
       ],
-      "response": "I had a cold last week and took a long flight, and I don't think I drank enough water during it.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -434,7 +485,7 @@
         "trouble breathing",
         "sputum"
       ],
-      "response": "I feel a little short of breath and tired, but I don't have a cough or sharp stabbing chest pain right now.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -449,7 +500,7 @@
         "feeling hot",
         "sick contacts"
       ],
-      "response": "I've felt a bit feverish today, no shaking chills though.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -462,11 +513,13 @@
         "dark urine",
         "yellow eyes",
         "jaundice",
-        "skin color"
+        "skin color",
+        "how much urine",
+        "urine output"
       ],
-      "response": "My pee has gone really dark, like tea, and my friends said my eyes look more yellow than usual.",
-      "importance": "core",
-      "points": 2,
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": false
     },
     {
@@ -477,9 +530,11 @@
         "medical problems",
         "any conditions",
         "prior hospitalizations",
-        "sickle cell history"
+        "sickle cell history",
+        "kidney problems",
+        "hip problems"
       ],
-      "response": "I've had sickle cell disease since I was a kid. I've been admitted a couple of times for pain, had a lung complication once, and had my gallbladder out for stones.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -491,10 +546,15 @@
         "medications",
         "what do you take",
         "hydroxyurea",
+        "chelator",
+        "deferasirox",
+        "over the counter",
+        "ibuprofen",
+        "pain pills",
         "are you taking it regularly",
         "adherence"
       ],
-      "response": "I'm supposed to take hydroxyurea and folic acid, and oxycodone when I'm in pain. To be honest, I've missed most of my hydroxyurea this past month.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -509,7 +569,7 @@
         "parents",
         "siblings"
       ],
-      "response": "Both my parents carry the sickle cell trait and one of my siblings has sickle cell disease like me.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -524,7 +584,7 @@
         "trouble speaking",
         "vision changes"
       ],
-      "response": "No, I don't have any weakness, numbness, trouble talking, or changes in my vision.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -533,14 +593,15 @@
   "physicalExamMappings": [
     {
       "id": "inspect_sclera_finding_1",
-      "finding": "HEENT: scleral icterus present; mucous membranes dry (dehydrated).",
+      "finding": "HEENT: scleral icterus present; conjunctival pallor; mucous membranes dry (dehydrated).",
       "revealedBy": [
         "inspect_sclera",
-        "assess_for_jaundice"
+        "assess_for_jaundice",
+        "inspect_conjunctiva"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Sclerae anicteric."
+      "normalIfNotPresent": "Sclerae anicteric; conjunctivae pink."
     },
     {
       "id": "auscultate_posterior_lungs_finding_2",
@@ -565,18 +626,19 @@
     },
     {
       "id": "auscultate_aortic_area_finding_4",
-      "finding": "Cardiac: tachycardic, regular, soft flow murmur; no rub.",
+      "finding": "Cardiac: tachycardic, regular, soft systolic flow murmur with a loud/accentuated P2 consistent with known pulmonary hypertension; no rub.",
       "revealedBy": [
         "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_with_bell"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Regular rate and rhythm, no murmur."
+      "normalIfNotPresent": "Regular rate and rhythm, no murmur, normal P2."
     },
     {
       "id": "assess_for_petechiae_finding_5",
-      "finding": "Skin: no rash, no petechiae or purpura.",
+      "finding": "Skin: no rash, no petechiae or purpura; no track marks.",
       "revealedBy": [
         "assess_for_petechiae",
         "assess_for_purpura"
@@ -584,6 +646,18 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No petechiae or purpura."
+    },
+    {
+      "id": "assess_motor_strength_finding_6",
+      "finding": "Extremities: diffuse long-bone and joint tenderness; reduced, painful range of motion of the RIGHT hip with groin pain on movement (chronic avascular necrosis, painful today); trace ankle edema; no single hot/swollen joint and no dactylitis.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_gait",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Extremities without focal joint swelling; full painless range of motion."
     }
   ],
   "overallScoring": {
@@ -596,39 +670,49 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Sickle cell disease with vaso-occlusive crisis and hemolysis",
-    "diagnosticFramework": "24M with known sickle cell disease presents with two days of severe diffuse bone and back pain, fatigue, and dark urine. The diagnosis is Sickle cell disease with vaso-occlusive crisis and hemolysis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives, especially acute chest syndrome and serious infection in a functionally asplenic patient.",
+    "diagnosticFramework": "24M with HbSS sickle cell disease, sickle nephropathy with baseline CKD, transfusional iron overload, avascular necrosis of the hip, and pulmonary hypertension presents with two days of severe diffuse pain, fatigue, and dark urine, two weeks after a transfusion for a febrile illness. The diagnosis is Sickle cell disease with vaso-occlusive crisis and brisk (intravascular) hemolysis, but the picture is layered: a new positive DAT with a new alloantibody raises a delayed hemolytic transfusion reaction / hyperhemolysis as a genuine competing cause of the sub-baseline anemia, and he concurrently has acute kidney injury on chronic sickle nephropathy with hyperkalemia (peaked T-waves on EKG) and an anion-gap acidosis, contributed to by NSAID overuse. The answer is reached by eliciting the focused history (recent transfusion, NSAID and chelator use, adherence), performing the targeted exam, interpreting the directed workup, and excluding acute chest syndrome and serious infection while NOT reflexively transfusing.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "HEENT: scleral icterus present; mucous membranes dry (dehydrated).",
+      "HEENT: scleral icterus present; conjunctival pallor; mucous membranes dry (dehydrated).",
       "Pulmonary: lungs clear to auscultation, no focal crackles or dullness at this time.",
       "Abdomen: soft, mildly tender diffusely, NO splenomegaly (functionally asplenic).",
-      "Cardiac: tachycardic, regular, soft flow murmur; no rub."
+      "Cardiac: tachycardic, regular, soft systolic flow murmur with a loud/accentuated P2 consistent with known pulmonary hypertension; no rub.",
+      "Extremities: painful right hip with reduced range of motion (chronic avascular necrosis), trace ankle edema."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "Reticulocyte",
       "Smear",
       "Hemolysis",
+      "Transfusion_immunohematology",
       "Hemoglobin_electrophoresis",
       "BMP"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Sickle cell disease with vaso-occlusive crisis and hemolysis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Sickle cell disease with vaso-occlusive crisis and hemolysis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the recent transfusion, NSAID/chelator use, and adherence only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (clear lungs, loud P2, painful hip).",
+      "Build a differential led by Sickle cell disease with vaso-occlusive crisis and hemolysis, with delayed hemolytic transfusion reaction/hyperhemolysis as the competing diagnosis, while naming three mechanisms of the falling hemoglobin and excluding acute chest syndrome and serious infection.",
+      "Order a focused, order-sensitive workup (CBC/retic, smear, DAT/antibody screen, hemolysis labs, BMP/EKG) and interpret the EKG (hyperkalemic T-waves) and CXR and labs.",
+      "Commit to Sickle cell disease with vaso-occlusive crisis and hemolysis while tracking the transfusion-reaction ambiguity, and manage the pain, the hyperkalemia/AKI, and the transfusion question with appropriate consults, then arrange safe admission and discharge planning."
     ],
     "commonPitfalls": [
+      "Anchoring on a plain pain crisis and missing the recent transfusion / hyperhemolysis",
+      "Reflexively transfusing to baseline despite a positive DAT",
+      "Missing the hyperkalemic T-waves on the EKG",
+      "Continuing NSAIDs in a patient with AKI",
       "Under-treating pain / delaying opioids over addiction concerns"
     ],
     "managementPearls": [
-      "Prompt multimodal analgesia with IV opioids titrated to pain"
+      "Prompt multimodal analgesia with IV opioids titrated to pain; stop NSAIDs given the AKI",
+      "Urgent hyperkalemia treatment with cardiac monitoring",
+      "Avoid further transfusion in suspected hyperhemolysis unless life-threatening"
     ],
     "criticalHistoryItems": [
       "onset_and_pattern",
+      "recent_transfusion",
       "respiratory_symptoms",
+      "dark_urine_jaundice",
       "pmh_sickle"
     ],
     "criticalExamItems": [
@@ -637,25 +721,26 @@
     "criticalWorkupItems": [
       "CBC + reticulocyte count compared to baseline",
       "Peripheral smear — sickle cells vs schistocytes",
-      "Hemolysis labs (LDH, haptoglobin, indirect bilirubin)"
+      "Direct antiglobulin test (DAT/Coombs) + antibody screen given the recent transfusion"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
-      "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
+      "Sinus tachycardia with tall peaked/tented T-waves of hyperkalemia (K 5.9) from acute kidney injury; no acute ischemic changes.",
+      "Clear lungs, no acute infiltrate (no acute chest syndrome on this film); prominent central pulmonary arteries from chronic pulmonary hypertension."
     ],
     "criticalManagementItems": [
-      "Prompt multimodal analgesia with IV opioids titrated to pain"
+      "Prompt multimodal analgesia with IV opioids titrated to pain; stop NSAIDs given the AKI",
+      "Urgent hyperkalemia treatment: calcium, insulin/dextrose and beta-agonist shift, cardiac monitoring"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia).",
+      "Sinus tachycardia with tall peaked/tented T-waves of hyperkalemia (K 5.9) from acute kidney injury; no acute ischemic changes.",
       "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic changes (compensatory for pain, fever, anemia).",
+      "Sinus tachycardia with tall peaked/tented T-waves of hyperkalemia (K 5.9) from acute kidney injury; no acute ischemic changes.",
       "Clear lungs, no acute infiltrate (no acute chest syndrome on this film)."
     ],
     "imageInterpretationPearls": [
-      "A near-normal study is an interpretation task in its own right — name the pertinent negatives and judge their relevance.",
+      "When a sickle-cell patient is in AKI, read the EKG for hyperkalemia — peaked, tented T-waves are an actionable, integrated finding, not a benign tracing.",
       "Read every study systematically before committing.",
       "A single clear chest film does not exclude evolving acute chest syndrome — repeat if hypoxia or symptoms progress."
     ]
@@ -672,7 +757,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions (adherence, opioid use)",
+        "item": "Asks permission before sensitive questions (adherence, opioid and NSAID use, recent transfusion)",
         "points": 1
       },
       {
@@ -687,8 +772,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "pathology-forward integrated interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

@@ -2,8 +2,8 @@ import { describe, it, expect } from "vitest";
 import { adaptCase } from "../schemaAdapter";
 import { askHistoryQuestion, neutralNegative } from "../revealEngine";
 import { chestpain01 } from "./fixtures";
-import ams03Json from "../../data/cases/ams-03.json";
-import ams01Json from "../../data/cases/ams-01.json";
+import ams03Json from "./__fixtures__/ams-03.fixture.json";
+import ams01Json from "./__fixtures__/ams-01.fixture.json";
 import type { RawCase } from "../types";
 
 const ams03 = adaptCase(ams03Json as unknown as RawCase);

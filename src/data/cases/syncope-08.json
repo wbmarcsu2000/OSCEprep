@@ -2,30 +2,32 @@
   "id": "syncope-08",
   "category": "Syncope",
   "difficulty": "hard",
-  "title": "Collapse during basketball in a young athlete",
+  "title": "Collapse during basketball in a young athlete on stimulants",
   "diagnosis": "Hypertrophic obstructive cardiomyopathy",
   "chart": {
     "ageSex": "19M",
     "cc": "Passed out while playing basketball",
-    "oneLiner": "19M collegiate athlete presents after collapsing during a basketball game; he reports prior exertional lightheadedness, palpitations, and a family history of sudden death.",
+    "oneLiner": "19M collegiate athlete collapses during a basketball game after months of exertional lightheadedness and palpitations; he has been taking a new ADHD stimulant plus a high-caffeine pre-workout supplement and was cutting weight, and there is a paternal family history of sudden death.",
     "vitals": {
-      "BP": "126/78",
-      "HR": "72",
+      "BP": "128/80",
+      "HR": "96",
       "RR": "16",
-      "Temp": "36.9°C",
+      "Temp": "37.0°C",
       "SpO2": "99% RA"
     },
     "timer": 180
   },
-  "opening": "I blacked out in the middle of a game today. I've felt dizzy and like my heart was pounding when I sprint before, but this time I just dropped.",
-  "patientFile": "PERSONA: 19-year-old male collegiate basketball player, fit and athletic, now calm but worried. Good historian.\n\nHPI: Syncope occurred DURING peak exertion (sprinting down the court) — a high-risk feature for cardiac syncope. Sudden collapse with rapid spontaneous recovery, NO postictal confusion, NO tongue-biting, NO incontinence. Over the past several months: exertional lightheadedness/presyncope and palpitations with sprinting, plus occasional exertional chest tightness and breathlessness that improve with rest. Symptoms are WORSE with standing up quickly and after a big meal or dehydration. NO prodrome of warmth/nausea/sweating to suggest a simple faint. NO seizure aura.\nFAMILY HISTORY: father died suddenly at age 41 (collapsed, no warning); a paternal uncle had an implanted defibrillator and 'a thick heart' (only if asked about family history of heart disease or sudden death).\nPMH: none. No prior cardiac evaluation. MEDS: none; no performance/stimulant supplements (if asked). SOCIAL: no tobacco, no alcohol, no recreational drugs/cocaine; competitive athlete.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, fit young man at rest.\n- Vitals: BP 126/78, HR 72, RR 16, 36.9°C, SpO2 99% RA.\n- Cardiac: harsh CRESCENDO-DECRESCENDO systolic murmur best heard at the LEFT LOWER STERNAL BORDER/apex; the murmur INCREASES with Valsalva and standing and DECREASES with squatting/handgrip; does NOT radiate to the carotids; sustained/forceful apical impulse (sometimes double). Carotid upstroke is BRISK/bifid (not delayed).\n- Lungs: clear. Neuro: no focal deficit; no tongue laceration.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize the EXERTIONAL onset of the syncope only if asked when/during what it happened.\n- Reveal the family history of sudden death / 'thick heart' / defibrillator ONLY if asked about family history of heart disease, cardiomyopathy, or sudden/early death.\n- The murmur, its dynamic change with Valsalva/standing/squatting, the lack of carotid radiation, the brisk carotid upstroke, and the apical impulse are revealed only if the heart/carotids are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I blacked out in the middle of a game today. I've felt dizzy and like my heart was pounding when I sprint for a few months now, but this time I just dropped.",
+  "patientFile": "PERSONA: 19-year-old male collegiate basketball player, fit and athletic, now calm but worried. Good historian. You are NOT trying to hide anything but you do not volunteer the supplements, the ADHD medication, the dehydration/weight-cut, or the family history unless asked — you don't think they matter.\n\nHPI: Syncope occurred DURING peak exertion (sprinting down the court) — a high-risk feature for cardiac syncope. Sudden collapse with rapid spontaneous recovery, NO postictal confusion, NO tongue-biting, NO incontinence. Over the past several months: exertional lightheadedness/presyncope and palpitations with sprinting, plus occasional exertional chest tightness and breathlessness that improve with rest. Symptoms are WORSE with standing up quickly and after a big meal or when dehydrated. NO prodrome of warmth/nausea/sweating to suggest a simple faint. NO seizure aura. Today he had skipped fluids and was sweating heavily ('making weight' for a tournament).\nCONFOUNDERS (reveal only when the relevant area is asked):\n- MEDICATIONS/SUPPLEMENTS: started methylphenidate (a prescription ADHD stimulant) about 6 weeks ago. Takes a high-caffeine 'pre-workout' powder before every practice and several energy drinks daily; also takes creatine and occasional high-dose ibuprofen for knee soreness. No anabolic steroids, no cocaine, no other recreational drugs.\n- DIET/HYDRATION: has been restricting food and fluids and using the sauna to 'cut weight'; poor appetite on the stimulant; was clearly dehydrated today.\nThese are CONFOUNDERS: stimulants + dehydration + electrolyte loss could themselves provoke an arrhythmia or prolong the QT — but they do NOT explain the murmur, the EKG hypertrophy, or the family history.\nFAMILY HISTORY: father died suddenly at age 41 (collapsed, no warning); a paternal uncle had an implanted defibrillator and 'a thick heart' (only if asked about family history of heart disease or sudden death).\nPMH: ADHD (recently diagnosed). No prior cardiac evaluation; he was never screened before being started on the stimulant. SOCIAL: no tobacco, no alcohol, no anabolic steroids; competitive athlete.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, fit young man at rest; lips/mucous membranes a little dry.\n- Vitals: BP 128/80, HR 96, RR 16, 37.0°C, SpO2 99% RA.\n- Cardiac: harsh CRESCENDO-DECRESCENDO systolic murmur best heard at the LEFT LOWER STERNAL BORDER/apex; the murmur INCREASES with Valsalva and standing and DECREASES with squatting/handgrip; does NOT radiate to the carotids; sustained/forceful apical impulse (sometimes double). Carotid upstroke is BRISK/bifid (not delayed).\n- Mucous membranes/skin: dry mucous membranes and reduced skin turgor consistent with dehydration.\n- Lungs: clear. Neuro: no focal deficit; no tongue laceration.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize the EXERTIONAL onset of the syncope only if asked when/during what it happened.\n- Reveal the family history of sudden death / 'thick heart' / defibrillator ONLY if asked about family history of heart disease, cardiomyopathy, or sudden/early death.\n- Reveal the ADHD stimulant, the pre-workout/energy drinks/creatine, the NSAID use, and the weight-cut/dehydration ONLY if asked about medications, supplements, caffeine/energy drinks, drugs, diet, or fluid intake.\n- The murmur, its dynamic change with Valsalva/standing/squatting, the lack of carotid radiation, the brisk carotid upstroke, the apical impulse, and the dehydration signs are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Troponin": "Normal — no acute infarct.",
-      "BMP": "Within normal limits (no electrolyte derangement to explain arrhythmia or syncope).",
-      "Glucose": "Fingerstick glucose 92 — normal (excludes hypoglycemia).",
-      "Echo": "Echocardiogram: asymmetric septal hypertrophy (septum ~19 mm) with systolic anterior motion (SAM) of the mitral valve and a dynamic left ventricular outflow tract gradient (>30 mmHg at rest, rising with provocation); preserved/hyperdynamic EF — diagnostic of hypertrophic obstructive cardiomyopathy.",
-      "Holter": "Ambulatory monitor: nonsustained ventricular tachycardia runs — a marker of arrhythmic/sudden-death risk."
+      "Troponin": "High-sensitivity troponin mildly elevated and flat on serial draws (no rise/fall) — attributable to the collapse and brief demand ischemia, NOT an acute coronary occlusion.",
+      "BMP": "Na 139, K 3.0 (LOW), Cl 101, HCO3 26, BUN 28, Creatinine 1.4 (mildly elevated from baseline ~0.9 — prerenal AKI from dehydration); anion gap = 139 − (101 + 26) = 12 (normal). The hypokalemia, dehydration, and AKI reflect the weight-cut and stimulant use.",
+      "Magnesium": "Magnesium 1.4 mg/dL (LOW) — combines with the hypokalemia to prolong the QT and lower the arrhythmia threshold; a competing/contributing arrhythmic substrate that must be corrected.",
+      "Glucose": "Fingerstick glucose 96 — normal (excludes hypoglycemia).",
+      "CK": "Creatine kinase ~900 U/L (mildly elevated) from exertion and the fall — consistent with exertional/traumatic muscle injury, not the cause of syncope.",
+      "Echo": "Echocardiogram: asymmetric septal hypertrophy (septum ~19 mm, posterior wall ~10 mm) with systolic anterior motion (SAM) of the mitral valve and a dynamic left ventricular outflow tract gradient (~45 mmHg at rest, rising with Valsalva); preserved/hyperdynamic EF; a structurally NORMAL trileaflet aortic valve with no fixed gradient — diagnostic of hypertrophic obstructive cardiomyopathy and excluding fixed aortic stenosis.",
+      "Holter": "Ambulatory monitor: nonsustained ventricular tachycardia runs and frequent PVCs — a marker of arrhythmic/sudden-death risk; no sustained polymorphic VT and no pause-dependent torsades captured."
     }
   },
   "images": {
@@ -34,17 +36,18 @@
       "asset": null,
       "source": "https://litfl.com/hypertrophic-cardiomyopathy-hcm-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Marked left ventricular hypertrophy by voltage with deep, narrow ('dagger-like') septal Q waves in the lateral/inferior leads and repolarization (strain) abnormalities; sinus rhythm; no acute ST elevation.",
+      "integrated": true,
+      "findings": "Sinus rhythm at ~96 bpm; marked left ventricular hypertrophy by voltage with deep, narrow ('dagger-like') septal Q waves in the lateral/inferior leads and repolarization (strain) abnormalities; the QTc is borderline-to-mildly prolonged (~470 ms) in the setting of hypokalemia and hypomagnesemia; no acute ST elevation. The hypertrophy/Q-wave pattern points to HCM while the prolonged QTc is largely metabolic and correctable.",
       "verify": "From the LITFL 'Hypertrophic Cardiomyopathy' library page — download an example tracing that matches: marked LVH by voltage with deep narrow septal Q waves and repolarization changes; sinus rhythm; no acute STEMI — and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing marked LVH by voltage with deep narrow septal Q waves and strain-pattern repolarization changes in a young patient.",
+      "imageDescription": "12-lead showing marked LVH by voltage with deep narrow septal Q waves and strain-pattern repolarization changes in a young patient, with a borderline-prolonged QTc.",
       "searchTerms": [
         "hypertrophic cardiomyopathy ECG",
         "LVH dagger Q waves septal hypertrophy EKG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 19-year-old man collapses during sports and reports exertional breathlessness and palpitations."
+      "clinicalVignette": "A 19-year-old man collapses during sports and reports exertional breathlessness and palpitations; he is on a stimulant and is hypokalemic/hypomagnesemic."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -60,13 +63,15 @@
         "normal cardiac silhouette radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 21-year-old athlete with exertional syncope and a murmur undergoes a chest film to assess the heart."
+      "clinicalVignette": "A 19-year-old athlete with exertional syncope and a murmur undergoes a chest film to assess the heart."
     }
   },
   "revealKeys": [
     "Troponin",
     "BMP",
+    "Magnesium",
     "Glucose",
+    "CK",
     "Echo",
     "Holter",
     "ekg",
@@ -81,18 +86,18 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this exertional syncope (note your leading diagnosis).",
-      "rubric": "Hypertrophic obstructive cardiomyopathy causing exertional syncope (leading & CANT-MISS,9). Ventricular arrhythmia / inherited channelopathy (long QT, etc.) (CANT-MISS,4). Anomalous coronary artery / acute ischemia (CANT-MISS,2). Aortic stenosis (core,3). Arrhythmogenic / other structural disease (core,2). Connects exertional syncope + dynamic murmur that LOUDENS with Valsalva + family history of sudden death to dynamic LVOT obstruction (core,5).",
-      "idealAnswer": "Leading diagnosis: Hypertrophic obstructive cardiomyopathy causing exertional syncope. Must-not-miss diagnoses to exclude: Ventricular arrhythmia / inherited channelopathy (e.g., long QT); Anomalous coronary artery / acute ischemia. Also reasonable: Aortic stenosis; Arrhythmogenic/other structural cardiomyopathy.",
+      "prompt": "Based on your history and physical, list your differential for this exertional syncope (note your leading diagnosis). Explicitly name three mechanisms/etiologies of sudden cardiac death or syncope in a young athlete that you must exclude here.",
+      "rubric": "Hypertrophic obstructive cardiomyopathy causing exertional syncope (leading & CANT-MISS,8). Ventricular arrhythmia / inherited channelopathy — long QT or catecholaminergic polymorphic VT, especially given the stimulant + hypokalemia/hypomagnesemia (CANT-MISS,4). Anomalous coronary artery / acute ischemia (CANT-MISS,2). Aortic stenosis as the competing fixed-murmur diagnosis to distinguish (core,3). Stimulant/dehydration-provoked arrhythmia or QT prolongation as a confounder to address but not anchor on (core,2). Names THREE mechanisms of sudden death/syncope in a young athlete — e.g., HCM, channelopathy/primary arrhythmia, anomalous coronary, commotio cordis, myocarditis, ARVC (core,3). Connects exertional syncope + a dynamic murmur that LOUDENS with Valsalva + family history of sudden death to dynamic LVOT obstruction (core,3). PENALTY: anchoring on a benign vasovagal/stimulant faint and dismissing the exertional onset, murmur, and family history (-3).",
+      "idealAnswer": "Leading diagnosis: Hypertrophic obstructive cardiomyopathy causing exertional syncope — exertional collapse with no prodrome, a dynamic systolic murmur that loudens with Valsalva, and a strong family history of sudden death. Must-not-miss diagnoses to exclude: (1) primary ventricular arrhythmia / inherited channelopathy (long QT or CPVT — especially because he is on a stimulant and is hypokalemic and hypomagnesemic, which prolong the QT); (2) anomalous coronary artery / exertional ischemia; (3) other structural disease such as ARVC or myocarditis. The competing FIXED-murmur diagnosis to distinguish is aortic stenosis. Three mechanisms of sudden death/syncope in a young athlete to exclude: HCM (dynamic LVOT obstruction/arrhythmia), a primary channelopathy/arrhythmia (long QT, CPVT, WPW), and an anomalous coronary artery (or commotio cordis/myocarditis). The stimulant, dehydration, and electrolyte derangement are real contributors but must not be used to dismiss a structural cause.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Hypertrophic obstructive cardiomyopathy causing exertional syncope",
-            "points": 9
+            "points": 8
           },
           {
-            "item": "Ventricular arrhythmia / inherited channelopathy (long QT)",
+            "item": "Ventricular arrhythmia / inherited channelopathy (long QT or CPVT), worsened by stimulant + hypokalemia/hypomagnesemia",
             "points": 4
           },
           {
@@ -102,28 +107,37 @@
         ],
         "coreActions": [
           {
-            "item": "Aortic stenosis",
+            "item": "Aortic stenosis as the competing fixed-murmur diagnosis to distinguish",
             "points": 3
           },
           {
-            "item": "Arrhythmogenic / other structural cardiomyopathy",
+            "item": "Stimulant/dehydration-provoked arrhythmia or QT prolongation as a confounder, not the anchor",
             "points": 2
           },
           {
+            "item": "Names three mechanisms of sudden death/syncope in a young athlete (e.g., HCM, channelopathy, anomalous coronary, commotio cordis, myocarditis, ARVC)",
+            "points": 3
+          },
+          {
             "item": "Connects exertional syncope + a dynamic murmur that loudens with Valsalva + family history of sudden death to dynamic LVOT obstruction",
-            "points": 5
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a benign vasovagal/stimulant faint and dismisses the exertional onset, murmur, and family history",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Ventricular arrhythmia / inherited channelopathy (long QT)",
+        "Ventricular arrhythmia / inherited channelopathy (long QT or CPVT)",
         "Anomalous coronary artery / acute ischemia"
       ],
       "acceptableAlternatives": [
         "Aortic stenosis",
-        "Arrhythmogenic / other structural cardiomyopathy"
+        "Arrhythmogenic / other structural cardiomyopathy (ARVC, myocarditis)"
       ]
     },
     {
@@ -132,8 +146,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "12-lead EKG (CANT-MISS,4). Transthoracic echocardiogram — the key diagnostic test (CANT-MISS,6). Ambulatory/Holter monitor and telemetry for arrhythmia (2). Troponin (1). BMP/electrolytes (1). CXR (1). PENALTY: clearing the athlete to return to play / discharging exertional syncope with a dynamic murmur before an echo (-3).",
-      "idealAnswer": "Order: EKG; CXR; Troponin; BMP; Glucose; Echo; Holter.",
+      "rubric": "12-lead EKG (CANT-MISS,4). Transthoracic echocardiogram — the key diagnostic test that distinguishes dynamic LVOT obstruction from fixed aortic stenosis (CANT-MISS,5). BMP/electrolytes including potassium and magnesium given the stimulant/weight-cut (2). Ambulatory/Holter monitor and telemetry for arrhythmia (1). Troponin (1). CK given the collapse/exertion (1). CXR (1). PENALTY: clearing the athlete to return to play / discharging exertional syncope with a dynamic murmur before an echo (-3); ignoring the electrolytes/QT while the patient stays on a stimulant (-2).",
+      "idealAnswer": "Order: EKG; BMP (with potassium AND magnesium); Magnesium; CK; Troponin; Glucose; CXR; transthoracic echocardiogram (the key test to confirm asymmetric septal hypertrophy with SAM and a dynamic LVOT gradient and to exclude fixed aortic stenosis); Holter/telemetry for arrhythmia. Place the patient on telemetry and replete potassium/magnesium while awaiting the echo; hold the stimulant.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -142,30 +156,30 @@
             "points": 4
           },
           {
-            "item": "Transthoracic echocardiogram — the key diagnostic test",
-            "points": 6
+            "item": "Transthoracic echocardiogram — the key diagnostic test (distinguishes dynamic LVOT obstruction from fixed aortic stenosis)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "CXR",
+            "item": "BMP/electrolytes including potassium and magnesium",
             "points": 2
+          },
+          {
+            "item": "Holter / telemetry for arrhythmia",
+            "points": 1
           },
           {
             "item": "Troponin",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "CK",
+            "points": 1
           },
           {
-            "item": "Glucose",
-            "points": 2
-          },
-          {
-            "item": "Holter",
-            "points": 2
+            "item": "CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -173,12 +187,16 @@
           {
             "item": "clearing the athlete to return to play / discharging exertional syncope with a dynamic murmur before an echo",
             "points": -3
+          },
+          {
+            "item": "ignoring the electrolytes/QT while the patient stays on a stimulant",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
         "12-lead EKG",
-        "Transthoracic echocardiogram — the key diagnostic test"
+        "Transthoracic echocardiogram — the key diagnostic test (distinguishes dynamic LVOT obstruction from fixed aortic stenosis)"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
@@ -194,46 +212,53 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = marked LVH by voltage with deep narrow septal Q waves and strain-pattern repolarization changes; sinus rhythm; no acute ischemia. CREDIT: rate & rhythm (4); identifies LVH by voltage with abnormal Q waves/repolarization changes (6); notes no acute STEMI and checks the QT (3); systematic read (2). PENALTY: calling the study normal or over-calling acute ischemia (-3).",
+      "integrated": true,
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and how they shape your differential.",
+      "rubric": "Findings = sinus rhythm; marked LVH by voltage with deep narrow ('dagger') septal Q waves and strain-pattern repolarization changes (points to HCM); QTc borderline-to-mildly prolonged (~470 ms) in the setting of hypokalemia/hypomagnesemia (a correctable, largely metabolic contributor); no acute ischemia. CREDIT: rate & rhythm (3); identifies LVH by voltage with deep narrow septal Q waves / repolarization changes and links it to HCM (5); measures the QT and recognizes a prolonged QTc driven by hypokalemia/hypomagnesemia (the integrated arrhythmic substrate) (3); notes no acute STEMI / systematic read (2). PENALTY: calling the study normal, attributing the LVH solely to athletic conditioning, or missing the prolonged QT in a hypokalemic/hypomagnesemic patient on a stimulant (-3).",
       "keyFindings": [
-        "rate & rhythm",
-        "identifies LVH by voltage with deep narrow septal Q waves and repolarization changes",
-        "notes no acute STEMI and assesses the QT interval"
+        "sinus rhythm; rate ~96",
+        "marked LVH by voltage with deep narrow septal Q waves and repolarization changes — points to HCM",
+        "borderline/mildly prolonged QTc (~470 ms) with hypokalemia and hypomagnesemia",
+        "no acute STEMI"
       ],
       "criticalFindings": [
-        "Marked left ventricular hypertrophy by voltage with deep narrow septal Q waves and repolarization (strain) changes; sinus rhythm; no acute ST elevation."
+        "Sinus rhythm with marked left ventricular hypertrophy by voltage and deep narrow ('dagger') septal Q waves with strain-pattern repolarization changes pointing to HCM, AND a borderline/mildly prolonged QTc (~470 ms) in the setting of hypokalemia and hypomagnesemia; no acute ST elevation."
       ],
       "commonMistakes": [
-        "calling the EKG normal in a young athlete and attributing the LVH solely to athletic conditioning"
+        "calling the EKG normal in a young athlete and attributing the LVH solely to athletic conditioning",
+        "missing the prolonged QT in a hypokalemic/hypomagnesemic patient on a stimulant"
       ],
-      "idealAnswer": "Marked left ventricular hypertrophy by voltage with deep narrow septal Q waves and repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "idealAnswer": "Sinus rhythm at ~96 bpm with marked left ventricular hypertrophy by voltage and deep, narrow ('dagger-like') septal Q waves and strain-pattern repolarization changes — a pattern that points to hypertrophic cardiomyopathy rather than athlete's heart. The QTc is borderline-to-mildly prolonged (~470 ms), which in this hypokalemic, hypomagnesemic patient on a stimulant is a correctable, largely metabolic arrhythmic substrate layered on top of the structural disease. No acute ST elevation. The hypertrophy/Q-wave pattern drives me toward HCM, while the prolonged QT tells me to replete potassium and magnesium, hold the stimulant, and keep him on telemetry.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Recognizes: Marked left ventricular hypertrophy by voltage with deep narrow septal Q waves and repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+            "item": "Recognizes marked LVH by voltage with deep narrow septal Q waves/repolarization changes pointing to HCM AND a borderline/mildly prolonged QTc in the setting of hypokalemia/hypomagnesemia; no acute ST elevation.",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "rate & rhythm",
-            "points": 4
-          },
-          {
-            "item": "identifies LVH by voltage with deep narrow septal Q waves and repolarization changes",
+            "item": "rate & rhythm (sinus ~96)",
             "points": 3
           },
           {
-            "item": "systematic read, notes no acute STEMI and assesses the QT",
+            "item": "identifies LVH by voltage with deep narrow septal Q waves and links it to HCM",
+            "points": 3
+          },
+          {
+            "item": "measures the QT and recognizes a prolonged QTc driven by hypokalemia/hypomagnesemia",
+            "points": 3
+          },
+          {
+            "item": "systematic read, notes no acute STEMI",
             "points": 2
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "calling the study normal / over-calling acute ischemia",
+            "item": "calling the study normal / attributing the LVH solely to conditioning / missing the prolonged QT in a hypokalemic patient on a stimulant",
             "points": -3
           }
         ]
@@ -258,7 +283,7 @@
       "commonMistakes": [
         "expecting an enlarged heart and calling the study abnormal, or assuming a normal film excludes structural heart disease"
       ],
-      "idealAnswer": "Essentially normal cardiac silhouette and clear lungs; no acute process — a normal film does not exclude hypertrophic cardiomyopathy.",
+      "idealAnswer": "Essentially normal cardiac silhouette and clear lungs; no acute process — a normal film does not exclude hypertrophic cardiomyopathy because the hypertrophy is intramural and the silhouette is often normal.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -294,9 +319,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "The echo shows asymmetric septal hypertrophy with systolic anterior motion of the mitral valve and a dynamic LVOT gradient, and the Holter captured nonsustained VT. What is your diagnosis and what did you rule out?",
-      "rubric": "Hypertrophic obstructive cardiomyopathy (6). Cites asymmetric septal hypertrophy + SAM + dynamic LVOT obstruction on echo, distinguishes the dynamic murmur from fixed aortic stenosis (loudens with Valsalva, no carotid radiation, brisk upstroke), and recognizes the family history of sudden death plus NSVT as markers of arrhythmic/sudden-death risk (4).",
-      "idealAnswer": "Hypertrophic obstructive cardiomyopathy. The echo shows asymmetric septal hypertrophy, systolic anterior motion of the mitral valve, and a dynamic LVOT gradient — distinguishing it from fixed aortic stenosis (the murmur loudens with Valsalva, does not radiate to the carotids, and the carotid upstroke is brisk). I ruled out fixed valvular AS and a primary channelopathy; the family history of sudden death plus the NSVT on Holter mark a high arrhythmic/sudden-death risk.",
+      "prompt": "The echo shows asymmetric septal hypertrophy with systolic anterior motion of the mitral valve, a dynamic LVOT gradient, and a structurally normal aortic valve; the BMP shows K 3.0 and Mg 1.4, and the Holter captured nonsustained VT. What is your diagnosis, what did you rule out, and what is the discriminating evidence?",
+      "rubric": "Hypertrophic obstructive cardiomyopathy (6). Cites asymmetric septal hypertrophy + SAM + dynamic LVOT obstruction with a normal aortic valve on echo (the discriminating test); distinguishes the DYNAMIC murmur from FIXED aortic stenosis (loudens with Valsalva, no carotid radiation, brisk upstroke, no fixed valve gradient); explicitly addresses the residual ambiguity — the hypokalemia/hypomagnesemia and stimulant prolonged the QT and contributed an arrhythmic substrate that must be corrected, but do not explain the structural disease; recognizes the family history of sudden death plus NSVT as markers of arrhythmic/sudden-death risk (4).",
+      "idealAnswer": "Hypertrophic obstructive cardiomyopathy. The discriminating test is the echo: asymmetric septal hypertrophy, systolic anterior motion of the mitral valve, and a dynamic LVOT gradient with a structurally NORMAL aortic valve — this distinguishes it from fixed aortic stenosis (the murmur loudens with Valsalva, does not radiate to the carotids, and the carotid upstroke is brisk/bifid, not delayed). I ruled out fixed valvular AS and a PRIMARY channelopathy as the sole cause. Residual ambiguity I name explicitly: the hypokalemia (K 3.0) and hypomagnesemia (Mg 1.4) plus the stimulant prolonged the QT and lowered the arrhythmia threshold — a real, correctable contributor layered on the structural disease, but not the root cause. The family history of sudden death plus the NSVT on Holter mark a high arrhythmic/sudden-death risk.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -305,77 +330,92 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "Ventricular arrhythmia / inherited channelopathy (long QT)",
+        "Ventricular arrhythmia / inherited channelopathy (long QT or CPVT)",
         "Anomalous coronary artery / acute ischemia"
       ],
       "acceptableAlternatives": [
         "Aortic stenosis",
-        "Arrhythmogenic / other structural cardiomyopathy"
+        "Arrhythmogenic / other structural cardiomyopathy (ARVC, myocarditis)"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH cardiomyopathies/HCM: restrict from competitive sports and strenuous exertion (CANT-MISS,6); start a non-vasodilating beta-blocker (or verapamil if intolerant) for symptomatic LVOT obstruction (5); cardiology/electrophysiology referral with risk stratification for an ICD given syncope + family history of sudden death + NSVT (5); maintain volume/preload and avoid dehydration (3); first-degree relative screening and genetic counseling (3); avoid afterload/preload reducers — nitrates, diuretics, dihydropyridine CCBs (3). PENALTY: vasodilators/nitrates/aggressive diuresis worsening dynamic obstruction (-3); clearing the patient for return to competitive play (-2).",
-      "idealAnswer": "Restrict from competitive athletics and strenuous exertion. Start a non-vasodilating beta-blocker (e.g., metoprolol) — verapamil if beta-blocker intolerant — to reduce dynamic LVOT obstruction and symptoms. Refer to cardiology/electrophysiology for sudden-death risk stratification; given unexplained exertional syncope, a strong family history of sudden death, and NSVT, an ICD is indicated for secondary/primary prevention. Maintain adequate hydration and preload; avoid dehydration. Avoid preload/afterload reducers — nitrates, diuretics, and dihydropyridine calcium-channel blockers — which worsen obstruction. Screen first-degree relatives with ECG/echo and offer genetic counseling. Consider septal reduction (myectomy/alcohol ablation) for refractory symptoms.",
+      "prompt": "What is your management plan, including disposition and what you would counsel before any future discharge?",
+      "rubric": "Per MGH cardiomyopathies/HCM: admit to a monitored/telemetry bed and restrict from competitive sports and strenuous exertion (CANT-MISS,5); correct the hypokalemia and hypomagnesemia and STOP the stimulant/pre-workout, rehydrate carefully (CANT-MISS,4); start a non-vasodilating beta-blocker (or verapamil if intolerant) for symptomatic LVOT obstruction (4); cardiology/electrophysiology referral with risk stratification for an ICD given syncope + family history of sudden death + NSVT (4); avoid afterload/preload reducers — nitrates, diuretics, dihydropyridine CCBs (2); first-degree relative screening and genetic counseling (2); arrange safe disposition — NO same-day discharge/return-to-play, med reconciliation removing the stimulant, exertion-restriction counseling, and close cardiology follow-up before any future discharge (3). PENALTY: vasodilators/nitrates/aggressive diuresis worsening dynamic obstruction (-3); clearing the patient for return to competitive play or same-day discharge (-3).",
+      "idealAnswer": "Admit to a monitored/telemetry bed; do NOT discharge or clear for return to play. Restrict from competitive athletics and strenuous exertion. Correct the hypokalemia and hypomagnesemia and STOP the methylphenidate, pre-workout, and energy drinks; rehydrate carefully (avoid aggressive diuresis). Start a non-vasodilating beta-blocker (e.g., metoprolol) — verapamil if beta-blocker intolerant — to reduce dynamic LVOT obstruction and symptoms. Refer to cardiology/electrophysiology for sudden-death risk stratification; given unexplained exertional syncope, a strong family history of sudden death, and NSVT, an ICD is indicated. Avoid preload/afterload reducers — nitrates, diuretics, and dihydropyridine calcium-channel blockers — which worsen obstruction. Screen first-degree relatives with ECG/echo and offer genetic counseling. SAFE DISPOSITION: no same-day discharge or sports clearance; reconcile medications to remove the stimulant; counsel on permanent exertion restriction pending EP evaluation; ensure close cardiology/EP follow-up and a defined return-precautions plan before any future discharge. Consider septal reduction (myectomy/alcohol ablation) for refractory symptoms.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Restrict from competitive sports / strenuous exertion",
-            "points": 6
+            "item": "Admit to telemetry and restrict from competitive sports / strenuous exertion",
+            "points": 5
+          },
+          {
+            "item": "Correct hypokalemia and hypomagnesemia, stop the stimulant/pre-workout, rehydrate carefully",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Non-vasodilating beta-blocker (or verapamil if intolerant)",
-            "points": 5
+            "points": 4
           },
           {
             "item": "Cardiology/EP referral and ICD risk stratification (syncope + family history + NSVT)",
-            "points": 5
+            "points": 4
           },
           {
-            "item": "Maintain volume/preload; avoid dehydration",
-            "points": 3
+            "item": "Avoid preload/afterload reducers (nitrates, diuretics, dihydropyridine CCBs)",
+            "points": 2
           },
           {
             "item": "First-degree relative screening and genetic counseling",
+            "points": 2
+          },
+          {
+            "item": "Arrange safe disposition: no same-day discharge/return-to-play, med reconciliation removing the stimulant, exertion-restriction counseling, close cardiology follow-up",
             "points": 3
           }
         ],
         "bonusActions": [
           {
             "item": "Consider septal reduction therapy (myectomy/alcohol ablation) if refractory",
-            "points": 3
+            "points": 1
           }
         ],
         "penalties": [
           {
             "item": "Vasodilators/nitrates/aggressive diuresis worsening dynamic obstruction",
             "points": -3
+          },
+          {
+            "item": "Clearing the patient for return to competitive play or same-day discharge",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Restrict from competitive sports / strenuous exertion"
+        "Admit to telemetry and restrict from competitive sports / strenuous exertion",
+        "Correct hypokalemia and hypomagnesemia, stop the stimulant/pre-workout, rehydrate carefully"
       ],
       "optionalActions": [
         "Non-vasodilating beta-blocker (or verapamil if intolerant)",
         "Cardiology/EP referral and ICD risk stratification (syncope + family history + NSVT)",
-        "Maintain volume/preload; avoid dehydration",
+        "Avoid preload/afterload reducers (nitrates, diuretics, dihydropyridine CCBs)",
         "First-degree relative screening and genetic counseling",
+        "Arrange safe disposition: no same-day discharge/return-to-play, med reconciliation removing the stimulant, exertion-restriction counseling, close cardiology follow-up",
         "Consider septal reduction therapy (myectomy/alcohol ablation) if refractory"
       ],
       "unsafeActions": [
-        "Vasodilators/nitrates/aggressive diuresis worsening dynamic obstruction"
+        "Vasodilators/nitrates/aggressive diuresis worsening dynamic obstruction",
+        "Clearing the patient for return to competitive play or same-day discharge"
       ],
       "consults": [
         "Cardiology / Electrophysiology"
       ],
-      "disposition": "Admit; restrict exertion and expedite risk stratification",
+      "disposition": "Admit to telemetry; restrict exertion, correct electrolytes, expedite risk stratification — no same-day discharge or sports clearance",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Cardiomyopathies (Hypertrophic Cardiomyopathy)",
@@ -390,12 +430,15 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "family_history_sudden_death"
+      "family_history_sudden_death",
+      "stimulant_supplement_use",
+      "weight_cutting"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "19-year-old male collegiate athlete, fit, now calm but worried. Good historian.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
+      "Do not volunteer the ADHD stimulant, pre-workout/energy drinks, NSAID use, or weight-cut/dehydration unless asked about medications, supplements, caffeine, drugs, diet, or fluids",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -412,9 +455,39 @@
         "thick heart in the family",
         "relatives with cardiomyopathy or a defibrillator"
       ],
-      "response": "My dad died suddenly when he was 41 — he just collapsed, no warning. And my uncle on my dad's side has a thick heart and got some kind of device put in to shock it.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "stimulant_supplement_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "what medications do you take",
+        "any supplements or pre-workout",
+        "caffeine or energy drinks",
+        "adhd medication or methylphenidate",
+        "creatine or performance enhancers"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "weight_cut_dehydration",
+      "category": "social",
+      "triggerConcepts": [
+        "diet or eating",
+        "fluid intake or hydration",
+        "cutting weight or making weight",
+        "using a sauna",
+        "appetite"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -426,7 +499,7 @@
         "during exertion or at rest",
         "circumstances of the faint"
       ],
-      "response": "It happened right in the middle of the game while I was sprinting down the court — not while I was resting.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -441,7 +514,7 @@
         "confused afterward",
         "prodrome"
       ],
-      "response": "No real warning — I didn't feel warm, sick, or sweaty first. I came right back to myself quickly and wasn't confused afterward.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -456,7 +529,7 @@
         "associated symptoms",
         "anything else with it"
       ],
-      "response": "When I sprint I sometimes feel my heart pounding and get a little chest tightness and short of breath, but it eases off when I stop and rest.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -471,7 +544,7 @@
         "seizure features",
         "incontinence"
       ],
-      "response": "No, I didn't bite my tongue, there was no shaking or jerking, and I didn't wet myself.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -486,7 +559,7 @@
         "aggravating factors",
         "what brings on the dizziness"
       ],
-      "response": "It feels worse when I stand up fast, after a big meal, or when I haven't had enough to drink.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -497,11 +570,11 @@
       "triggerConcepts": [
         "do you use any drugs",
         "cocaine or stimulants",
-        "supplements or pre-workout",
+        "anabolic steroids",
         "alcohol or tobacco",
-        "performance enhancers"
+        "recreational drugs"
       ],
-      "response": "No, I don't use any drugs, cocaine, or stimulant supplements, and I don't smoke or drink.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -515,7 +588,7 @@
         "first time",
         "ever fainted before"
       ],
-      "response": "I've never fully passed out before, but I've gotten lightheaded a few times when sprinting over the last few months.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -529,7 +602,7 @@
         "any heart conditions before",
         "prior cardiac workup"
       ],
-      "response": "I've always been healthy — no medical problems and I've never had my heart checked out before.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -578,15 +651,15 @@
       "normalIfNotPresent": "PMI nondisplaced, no heaves or thrills."
     },
     {
-      "id": "assess_motor_strength_finding_5",
-      "finding": "Lungs: clear. Neuro: no focal deficit; no tongue laceration.",
+      "id": "assess_mucous_membranes_finding_5",
+      "finding": "Dry mucous membranes and reduced skin turgor consistent with dehydration from the weight-cut and stimulant use.",
       "revealedBy": [
-        "assess_motor_strength",
-        "assess_pronator_drift"
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No focal motor deficit."
+      "normalIfNotPresent": "Moist mucous membranes, normal skin turgor."
     }
   ],
   "overallScoring": {
@@ -599,40 +672,46 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Hypertrophic obstructive cardiomyopathy",
-    "diagnosticFramework": "19M collegiate athlete presents after collapsing during a basketball game; he reports prior exertional lightheadedness, palpitations, and a family history of sudden death. The diagnosis is Hypertrophic obstructive cardiomyopathy, reached by eliciting the focused history, performing the targeted exam (a dynamic systolic murmur that loudens with Valsalva and does not radiate to the carotids), and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "19M collegiate athlete collapses during a basketball game after months of exertional lightheadedness and palpitations, on a background of a newly started ADHD stimulant, heavy caffeine/pre-workout use, and a dehydrating weight-cut, with a paternal family history of sudden death. The diagnosis is Hypertrophic obstructive cardiomyopathy, reached by eliciting the focused history (including the stimulant/weight-cut confounders and the family history), performing the targeted exam (a dynamic systolic murmur that loudens with Valsalva and does not radiate to the carotids), and interpreting the directed workup — recognizing that the concurrent hypokalemia, hypomagnesemia, prolonged QT, and prerenal AKI are real but correctable contributors that do not explain the structural disease — while excluding the must-not-miss alternatives and fixed aortic stenosis.",
     "keyHistoryClues": [
       "Syncope during peak exertion with no prodrome and rapid recovery (high-risk cardiac syncope).",
       "Family history of sudden death at a young age and a relative with a 'thick heart' and a defibrillator.",
+      "Recently started ADHD stimulant plus heavy caffeine/pre-workout and a dehydrating weight-cut — confounders that lower the arrhythmia threshold but do not explain the murmur or hypertrophy.",
       "Exertional palpitations, chest tightness, and presyncope worse with standing/dehydration."
     ],
     "keyPhysicalExamFindings": [
       "Cardiac: harsh CRESCENDO-DECRESCENDO systolic murmur best heard at the LEFT LOWER STERNAL BORDER/apex; the murmur INCREASES with Valsalva and standing and DECREASES with squatting/handgrip; does NOT radiate to the carotids; sustained/forceful apical impulse.",
       "The systolic murmur INCREASES with Valsalva and standing and DECREASES with squatting/handgrip; it does NOT radiate to the carotids.",
       "Carotid upstroke is BRISK/bifid (not delayed); no carotid bruit and no radiated murmur.",
-      "Sustained/forceful apical impulse, sometimes double; no displacement."
+      "Sustained/forceful apical impulse, sometimes double; no displacement.",
+      "Dry mucous membranes and reduced skin turgor consistent with dehydration."
     ],
     "keyDiagnosticFindings": [
       "Troponin",
       "BMP",
+      "Magnesium",
       "Glucose",
+      "CK",
       "Echo",
       "Holter"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including the family history of sudden death only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal the dynamic LVOT-obstruction murmur and brisk carotid upstroke.",
-      "Build a differential led by Hypertrophic obstructive cardiomyopathy while explicitly excluding must-not-miss causes (ventricular arrhythmia/channelopathy, anomalous coronary/ischemia).",
-      "Order a focused, order-sensitive workup (EKG, echo, Holter) and interpret EKG/CXR and labs.",
-      "Commit to Hypertrophic obstructive cardiomyopathy and manage with exertion restriction, beta-blockade, EP/ICD risk stratification, family screening, and disposition."
+      "Elicit the focused history, including the family history of sudden death and the stimulant/pre-workout/weight-cut confounders only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the dynamic LVOT-obstruction murmur, brisk carotid upstroke, and dehydration signs.",
+      "Build a differential led by Hypertrophic obstructive cardiomyopathy while explicitly excluding must-not-miss causes (ventricular arrhythmia/channelopathy worsened by the stimulant and electrolytes, anomalous coronary/ischemia) and distinguishing the dynamic murmur from fixed aortic stenosis.",
+      "Order a focused, order-sensitive workup (EKG, echo, Holter, electrolytes with magnesium); interpret the integrated EKG (HCM hypertrophy/Q-waves plus a metabolic prolonged QT) and the CXR and labs.",
+      "Commit to Hypertrophic obstructive cardiomyopathy, naming the discriminating echo and the residual correctable arrhythmic substrate, and manage with admission/telemetry, exertion restriction, electrolyte repletion, stopping the stimulant, beta-blockade, EP/ICD risk stratification, family screening, and a safe disposition with no same-day discharge."
     ],
     "commonPitfalls": [
+      "Anchoring on a benign stimulant/vasovagal faint and dismissing the exertional onset, murmur, and family history",
       "Vasodilators/nitrates/aggressive diuresis worsening dynamic obstruction",
-      "Mistaking the dynamic murmur for fixed aortic stenosis or clearing a young athlete to return to play"
+      "Missing the prolonged QT in a hypokalemic/hypomagnesemic patient on a stimulant",
+      "Mistaking the dynamic murmur for fixed aortic stenosis or clearing a young athlete to return to play / discharging same-day"
     ],
     "managementPearls": [
-      "Restrict from competitive sports / strenuous exertion",
-      "Non-vasodilating beta-blocker first-line; refer for ICD risk stratification given syncope, family history of sudden death, and NSVT"
+      "Admit to telemetry and restrict from competitive sports / strenuous exertion",
+      "Correct hypokalemia and hypomagnesemia and stop the stimulant; non-vasodilating beta-blocker first-line; refer for ICD risk stratification given syncope, family history of sudden death, and NSVT"
     ],
     "criticalHistoryItems": [
       "family_history_sudden_death",
@@ -644,27 +723,28 @@
     ],
     "criticalWorkupItems": [
       "12-lead EKG",
-      "Transthoracic echocardiogram — the key diagnostic test"
+      "Transthoracic echocardiogram — the key diagnostic test (distinguishes dynamic LVOT obstruction from fixed aortic stenosis)"
     ],
     "criticalManagementItems": [
-      "Restrict from competitive sports / strenuous exertion"
+      "Admit to telemetry and restrict from competitive sports / strenuous exertion",
+      "Correct hypokalemia and hypomagnesemia, stop the stimulant/pre-workout, rehydrate carefully"
     ],
     "criticalInterpretationItems": [
-      "Marked left ventricular hypertrophy by voltage with deep narrow septal Q waves and repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "Sinus rhythm with marked left ventricular hypertrophy by voltage and deep narrow ('dagger') septal Q waves with strain-pattern repolarization changes pointing to HCM, AND a borderline/mildly prolonged QTc (~470 ms) in the setting of hypokalemia and hypomagnesemia; no acute ST elevation.",
       "Essentially normal cardiac silhouette and clear lungs; no acute process."
     ],
     "keyImageInterpretationFindings": [
-      "Marked left ventricular hypertrophy by voltage with deep narrow septal Q waves and repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "Sinus rhythm with marked left ventricular hypertrophy by voltage and deep narrow ('dagger') septal Q waves with strain-pattern repolarization changes pointing to HCM, AND a borderline/mildly prolonged QTc (~470 ms) in the setting of hypokalemia and hypomagnesemia; no acute ST elevation.",
       "Essentially normal cardiac silhouette and clear lungs; no acute process."
     ],
     "criticalImageInterpretationFindings": [
-      "Marked left ventricular hypertrophy by voltage with deep narrow septal Q waves and repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "Sinus rhythm with marked left ventricular hypertrophy by voltage and deep narrow ('dagger') septal Q waves with strain-pattern repolarization changes pointing to HCM, AND a borderline/mildly prolonged QTc (~470 ms) in the setting of hypokalemia and hypomagnesemia; no acute ST elevation.",
       "Essentially normal cardiac silhouette and clear lungs; no acute process."
     ],
     "imageInterpretationPearls": [
-      "A normal chest film does not exclude hypertrophic cardiomyopathy — the hypertrophy is intramural and the silhouette is often normal.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "In a young athlete, LVH by voltage with deep narrow septal Q waves and strain changes is the HCM pattern — do not write it off as athlete's heart.",
+      "Always measure the QT: in a hypokalemic, hypomagnesemic patient on a stimulant, a prolonged QTc is a correctable arrhythmic substrate layered on the structural disease.",
+      "A normal chest film does not exclude hypertrophic cardiomyopathy — the hypertrophy is intramural and the silhouette is often normal."
     ]
   },
   "communicationScoring": {
@@ -679,7 +759,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (family death, supplements, weight-cutting)",
         "points": 1
       },
       {
@@ -694,8 +774,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific interpretation",
     "ekgReplaced": false,
     "cxrReplaced": false,
     "backwardCompatible": true

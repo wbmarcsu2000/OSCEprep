@@ -1,0 +1,600 @@
+{
+  "id": "chestpain-06",
+  "category": "Chest Pain",
+  "difficulty": "easy",
+  "title": "Reproducible chest pain after lifting",
+  "diagnosis": "Costochondritis",
+  "chart": {
+    "ageSex": "26M",
+    "cc": "Chest wall pain",
+    "oneLiner": "26M presents with 3 days of sharp left-sided chest pain that began after an intense weightlifting session, worse with movement and deep breaths.",
+    "vitals": {
+      "BP": "122/74",
+      "HR": "72",
+      "RR": "14",
+      "Temp": "36.8°C",
+      "SpO2": "100% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've got this sharp pain on the left side of my chest. It started after I was lifting at the gym a few days ago.",
+  "patientFile": "PERSONA: 26-year-old man, healthy-appearing, slightly worried he's having heart trouble. Cooperative.\n\nHPI:\n- Sharp, well-LOCALIZED pain over the left anterior chest for 3 days.\n- Began after a heavy chest workout (bench press) at the gym (only mentions the gym if asked what he was doing when it started).\n- Worse with MOVEMENT, twisting, reaching, and DEEP BREATHS; better with rest and staying still.\n- He can point to the exact spot with one finger and pressing on it reproduces the pain.\n- NO exertional pattern with walking, NO pressure/heaviness, NO diaphoresis, NO radiation to arm/jaw, NO dyspnea at rest, NO fever, NO cough, NO recent travel or leg swelling.\n\nOLDCARTS: onset 3 days ago after exercise; left anterior chest, pinpoint; intermittent; sharp; worse with movement and palpation and deep breath; severity 4/10.\n\nPMH: none. MEDICATIONS: none. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: nonsmoker, occasional alcohol, lifts weights regularly, no drugs.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: well-appearing, comfortable at rest.\n- Vitals: BP 122/74, HR 72, RR 14, 36.8°C, SpO2 100% RA.\n- Chest wall: REPRODUCIBLE point tenderness over the left 4th–5th costochondral junctions; palpation recreates his pain.\n- Cardiac: regular, normal S1/S2, no murmur or rub.\n- Lungs: clear bilaterally, good air entry.\n- Extremities: no edema, no calf tenderness, symmetric pulses. Abdomen: soft, nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the gym/weightlifting trigger unless asked what brought it on or what he was doing.\n- The reproducible tenderness is only revealed if the student palpates the chest wall.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Troponin": "Normal — not elevated (if ordered).",
+      "CBC": "Normal (if ordered)."
+    }
+  },
+  "revealKeys": [
+    "Troponin",
+    "CBC",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
+      "rubric": "Musculoskeletal chest pain / costochondritis (leading, 9; accepts chest wall strain). Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain (CANT-MISS to at least consider,4). PE (bonus,2). Pericarditis (bonus,2). Pneumothorax (bonus,2). Names costochondritis with supporting features — reproducible tenderness, exercise trigger, low pretest probability (core,5). PENALTY: missing that reproducible tenderness does not fully exclude cardiac causes in higher-risk patients (note only; no penalty here given very low pretest probability).",
+      "idealAnswer": "Leading diagnosis: Costochondritis. Must-not-miss diagnoses to exclude: Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Names costochondritis with supporting features — reproducible tenderness, exercise trigger, low pretest probability",
+            "points": 5
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "PE",
+            "points": 2
+          },
+          {
+            "item": "Pericarditis",
+            "points": 2
+          },
+          {
+            "item": "Pneumothorax",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Considers and reasonably deprioritizes ACS given age, no risk factors, reproducible pain"
+      ],
+      "acceptableAlternatives": []
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "prompt": "What workup, if any, do you want to order? (Consider pretest probability and avoiding over-testing.)",
+      "rubric": "Recognizes this is a clinical diagnosis with very low cardiac pretest probability (8). A single screening EKG is reasonable for reassurance (5). Appropriately AVOIDS an extensive/serial cardiac workup, stress testing, or CT angiogram in a low-risk young patient (8; reward restraint). Documents red flags that would prompt escalation (4). PENALTY: ordering CT angiogram / stress test / serial troponins with no indication (-4 for over-testing).",
+      "reveal": true,
+      "idealAnswer": "Order: EKG; CXR; Troponin; CBC.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Troponin",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "requiredTests": [],
+      "optionalTests": [],
+      "contraindicatedTests": [],
+      "orderSensitiveActions": []
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = nonspecific T-wave inversions in the lateral leads, without ST elevation or reciprocal change. CREDIT: identifies the lateral T-wave inversions (7); labels them nonspecific and recommends comparison with prior / serial tracings (5); systematic read (3). PENALTY: over-calling the nonspecific T inversions as a definite acute coronary syndrome (-3).",
+      "type": "read",
+      "image": "ekg",
+      "keyFindings": [
+        "identifies lateral T-wave inversions",
+        "labels them nonspecific and recommends comparison/serials"
+      ],
+      "criticalFindings": [
+        "Nonspecific lateral T-wave inversions."
+      ],
+      "commonMistakes": [
+        "over-calling nonspecific T inversions as a definite acute coronary syndrome"
+      ],
+      "idealAnswer": "Nonspecific T-wave inversions in the lateral leads; recommend comparison with prior and serial tracings.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Nonspecific lateral T-wave inversions."
+        ],
+        "coreActions": [
+          "identifies lateral T-wave inversions",
+          "labels them nonspecific and recommends comparison/serials"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = a single well-circumscribed solitary pulmonary nodule (~1.5 cm) in the mid lung zone. CREDIT: identifies the solitary pulmonary nodule (6); recommends comparison with prior imaging and structured follow-up (4). PENALTY: calling the film normal / dismissing the nodule as a nipple shadow without confirmation (-3).",
+      "type": "read",
+      "image": "cxr",
+      "keyFindings": [
+        "identifies a solitary pulmonary nodule",
+        "recommends comparison with priors / follow-up"
+      ],
+      "criticalFindings": [
+        "Solitary pulmonary nodule."
+      ],
+      "commonMistakes": [
+        "dismissing the nodule as a nipple shadow without confirmation",
+        "missing it on a busy film"
+      ],
+      "idealAnswer": "Solitary pulmonary nodule (~1.5 cm); recommend comparison with prior imaging and structured follow-up.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Solitary pulmonary nodule."
+        ],
+        "coreActions": [
+          "identifies a solitary pulmonary nodule",
+          "recommends comparison with priors / follow-up"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "What is your leading diagnosis and your reasoning?",
+      "rubric": "Costochondritis / musculoskeletal chest pain (9). Justifies: reproducible point tenderness, mechanical trigger, pleuritic-with-movement quality, young low-risk patient (4). Notes the limits — would reconsider if features evolve (2).",
+      "idealAnswer": "Costochondritis. ",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH chest pain algorithm (MSK/costochondritis): reassurance once dangerous causes excluded (CANT-MISS,6); NSAIDs/acetaminophen for analgesia (6); activity modification / local heat (3); confirm reproducible chest-wall tenderness, low-risk features (4); return precautions (2). PENALTY: anticoagulation or admission for a benign MSK cause (-3); ordering serial troponins/CTA without indication (-2).",
+      "idealAnswer": "Reassurance after exclusion of cardiac/pulmonary causes. NSAIDs or acetaminophen for pain. Activity modification and local heat. No cardiac workup beyond what excludes dangerous causes. Return precautions.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Reassurance after excluding dangerous causes",
+            "points": 6
+          },
+          {
+            "item": "NSAIDs/acetaminophen",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Confirm reproducible chest-wall tenderness",
+            "points": 4
+          },
+          {
+            "item": "Activity modification / local heat",
+            "points": 3
+          },
+          {
+            "item": "Return precautions",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Patient education on benign course",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Unnecessary admission/anticoagulation",
+            "points": -3
+          },
+          {
+            "item": "Unnecessary cardiac imaging",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Reassurance after excluding dangerous causes",
+        "NSAIDs/acetaminophen"
+      ],
+      "optionalActions": [
+        "Confirm reproducible chest-wall tenderness",
+        "Activity modification / local heat",
+        "Return precautions",
+        "Patient education on benign course"
+      ],
+      "unsafeActions": [
+        "Unnecessary admission/anticoagulation",
+        "Unnecessary cardiac imaging"
+      ],
+      "consults": [],
+      "disposition": "Discharge home",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Chest Pain (musculoskeletal causes)",
+        "page": 16
+      }
+    }
+  ],
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Nonspecific T-wave inversions in the lateral leads without ST elevation or reciprocal change.",
+      "verify": "Source a study matching: Nonspecific T-wave inversions in the lateral leads without ST elevation or reciprocal change. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing nonspecific T wave inversions",
+      "searchTerms": [
+        "nonspecific T wave inversion ECG",
+        "lateral T wave inversion 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 35-year-old woman presents with localized anterior chest wall pain reproduced by palpation and deep breathing."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons - verify file license",
+      "findings": "Single well-circumscribed pulmonary nodule (~1.5 cm) in the mid lung zone.",
+      "verify": "Source a study matching: Single well-circumscribed pulmonary nodule (~1.5 cm) in the mid lung zone. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph showing solitary pulmonary nodule",
+      "searchTerms": [
+        "solitary pulmonary nodule x-ray",
+        "lung nodule chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old man presents for evaluation of a persistent cough, with imaging obtained to assess the lungs."
+    }
+  },
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "tobacco_use"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "26-year-old man, healthy-appearing, slightly worried he's having heart trouble. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "tobacco_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "smoking",
+        "tobacco",
+        "cigarettes",
+        "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: regular, normal S1/S2, no murmur or rub.",
+      "revealedBy": [
+        "auscultate_aortic_area",
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No murmur appreciated."
+    },
+    {
+      "id": "assess_edema_finding_2",
+      "finding": "Extremities: no edema, no calf tenderness, symmetric pulses. Abdomen: soft, nontender.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_3",
+      "finding": "Extremities: no edema, no calf tenderness, symmetric pulses. Abdomen: soft, nontender.",
+      "revealedBy": [
+        "assess_calf_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Costochondritis",
+    "diagnosticFramework": "26M presents with 3 days of sharp left-sided chest pain that began after an intense weightlifting session, worse with movement and deep breaths. The diagnosis is Costochondritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: regular, normal S1/S2, no murmur or rub.",
+      "Extremities: no edema, no calf tenderness, symmetric pulses. Abdomen: soft, nontender.",
+      "Extremities: no edema, no calf tenderness, symmetric pulses. Abdomen: soft, nontender."
+    ],
+    "keyDiagnosticFindings": [
+      "Troponin",
+      "CBC"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Costochondritis while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Costochondritis and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Unnecessary admission/anticoagulation",
+      "Unnecessary cardiac imaging"
+    ],
+    "managementPearls": [
+      "Reassurance after excluding dangerous causes",
+      "NSAIDs/acetaminophen"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_aortic_area"
+    ],
+    "criticalWorkupItems": [],
+    "criticalInterpretationItems": [
+      "Nonspecific lateral T-wave inversions.",
+      "Solitary pulmonary nodule."
+    ],
+    "criticalManagementItems": [
+      "Reassurance after excluding dangerous causes",
+      "NSAIDs/acetaminophen"
+    ],
+    "keyImageInterpretationFindings": [
+      "Nonspecific lateral T-wave inversions.",
+      "Solitary pulmonary nodule."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Nonspecific lateral T-wave inversions.",
+      "Solitary pulmonary nodule."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

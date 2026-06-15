@@ -2,31 +2,35 @@
   "id": "dyspnea-04",
   "category": "Dyspnea",
   "difficulty": "hard",
-  "title": "Sudden breathlessness post-op",
+  "title": "Sudden breathlessness with a troponin bump and new atrial fibrillation 5 days after hip replacement",
   "diagnosis": "Pulmonary embolism",
   "chart": {
     "ageSex": "58F",
     "cc": "Sudden shortness of breath",
-    "oneLiner": "58F presents with sudden dyspnea and right-sided pleuritic chest pain, 5 days after a total hip replacement.",
+    "oneLiner": "58F with CKD3, paroxysmal atrial fibrillation, type 2 diabetes, and obesity — whose apixaban was held perioperatively — presents with abrupt dyspnea and right-sided pleuritic chest pain 5 days after total hip replacement, now hypoxemic and tachycardic with a mildly elevated troponin and a new irregular rhythm.",
     "vitals": {
-      "BP": "108/68",
-      "HR": "116",
+      "BP": "104/66",
+      "HR": "128",
       "RR": "26",
       "Temp": "37.3°C",
       "SpO2": "89% RA"
     },
     "timer": 180
   },
-  "opening": "All of a sudden I couldn't catch my breath, and it hurts when I breathe in.",
-  "patientFile": "PERSONA: 58-year-old woman, anxious, tachypneic. Recovering from recent surgery, limited mobility. Cooperative.\n\nHPI: Abrupt onset of dyspnea and right-sided pleuritic chest pain this afternoon. Five days post total hip replacement, mostly bedbound since. Mild right calf discomfort for a day (only if asked / examined). NO fever, NO purulent cough, NO orthopnea, NO prior cardiac history.\nPMH: osteoarthritis (s/p right THR 5 days ago), obesity. MEDS: acetaminophen, oxycodone PRN; was supposed to get DVT prophylaxis (only if asked). SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, tachypneic, mild distress.\n- Vitals: BP 108/68, HR 116, RR 26, 37.3°C, SpO2 89% RA.\n- Lungs: clear bilaterally, no focal crackles or consolidation.\n- Cardiac: tachycardic, regular; loud P2 if specifically auscultated.\n- Extremities: RIGHT calf mildly swollen and tender, surgical dressing intact on right hip; left leg normal.\n- Neck: JVP mildly elevated if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the calf symptoms, the missed prophylaxis, or the immobility unless asked about leg symptoms, blood thinners/prophylaxis, or activity/mobility.\n- The calf findings and loud P2 are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "All of a sudden I couldn't catch my breath, and it hurts on my right side when I breathe in — and my heart is racing and skipping.",
+  "patientFile": "PERSONA: 58-year-old woman, anxious and tachypneic, recovering from recent hip surgery with limited mobility. Cooperative but short of breath, speaks in short sentences. Worried about her racing heart.\n\nHPI: Abrupt onset of dyspnea and right-sided pleuritic chest pain this afternoon while transferring to a chair. Five days post total hip replacement, mostly bedbound since — only up to the bedside commode with help. Felt her heart 'racing and skipping' at the same time the breathing got bad (only describes the palpitations if asked). Mild right calf discomfort and swelling for about a day (only if asked / examined). The chest pain is sharp, worse with deep breaths, NOT crushing and does NOT radiate to the arm or jaw, NOT exertional before today. NO fever, NO purulent cough, NO orthopnea, NO leg-elevation relief. She did NOT have chest pain or palpitations before this episode.\nCARDIAC/RISK (reveal only when asked the relevant question): Known paroxysmal atrial fibrillation for 3 years, usually rate-controlled; normally takes apixaban (a blood thinner) for it, but it was STOPPED around the surgery and 'they were going to restart it but I'm not sure I ever got a dose since.' She was supposed to get clot-prevention shots/leg sleeves after surgery but is hazy on whether they were consistently given (only if asked about blood thinners/prophylaxis). She takes a daily anti-inflammatory pill (meloxicam) for her hip arthritis and kept taking it on her own after discharge for pain.\nPMH: paroxysmal atrial fibrillation; chronic kidney disease (her kidney doctor told her function is 'about half'); type 2 diabetes; hypertension; obesity (BMI 34); osteoarthritis (s/p right THR 5 days ago). NO prior heart attack, NO heart failure, NO prior blood clots that she knows of.\nMEDS: apixaban (HELD for surgery, restart status unclear — reveal only if asked about blood thinners), metoprolol, lisinopril, metformin, meloxicam (NSAID, taking daily for hip pain), oxycodone PRN, acetaminophen. ALLERGIES: none. SOCIAL: nonsmoker, rare alcohol, lives with husband in a two-story home (bedroom upstairs), uses a walker since surgery. FAMILY: mother had 'a clot in the lung' once. ROS: as above; no hemoptysis, no syncope (felt lightheaded standing but did not pass out), no melena or bright-red bleeding, no recent falls.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, tachypneic, speaking in short sentences, mild-to-moderate distress.\n- Vitals: BP 104/66, HR 128 and irregularly irregular, RR 26, 37.3 C, SpO2 89% RA.\n- Lungs: clear bilaterally, no focal crackles or consolidation, no wheeze.\n- Cardiac: tachycardic and IRREGULARLY irregular; loud/accentuated P2 and a soft right-parasternal heave if specifically auscultated/palpated; no murmur of acute MR, no pericardial rub.\n- Extremities: RIGHT calf mildly swollen, warm, and tender with mild pitting edema; surgical dressing intact and clean on right hip; left leg normal.\n- Neck: JVP elevated to ~10 cm with prominent waves if examined.\n- No focal neuro deficit; mucous membranes slightly dry.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the calf symptoms, the held apixaban / missed prophylaxis, the daily NSAID, the immobility, the family clot history, or the palpitations unless asked about the relevant topic (leg symptoms, blood thinners/prophylaxis, your other pills, activity/mobility, family history, or the heartbeat).\n- The calf findings, loud P2/right-parasternal heave, and elevated JVP are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "CBC": "WBC 9.0, Hgb 11.5 (post-op), Plt 240.",
-      "BMP": "Within normal limits.",
-      "Troponin": "0.06 ng/mL — mildly elevated (right heart strain).",
-      "Ddimer": "Markedly elevated (low specificity post-op).",
-      "ABG": "pH 7.49, PaCO2 29, PaO2 60 — hypoxemia with respiratory alkalosis.",
-      "CTPE": "CT pulmonary angiogram: bilateral segmental pulmonary emboli; RV/LV ratio borderline."
+      "CBC": "WBC 9.4, Hgb 11.2 (post-op baseline), Plt 232. No leukocytosis to suggest infection.",
+      "BMP": "Na 138, K 5.3 (mildly high), Cl 100, HCO3 21, BUN 32, Cr 1.7 (baseline ~1.3 — AKI on CKD3), glucose 162. Anion gap = 138 − (100 + 21) = 17 (mildly elevated). eGFR ~34.",
+      "LFTs": "AST 78, ALT 64, ALP normal, total bilirubin 1.1 — mild transaminitis consistent with hepatic congestion from acute RV strain; not a primary hepatobiliary process.",
+      "Troponin": "0.09 ng/mL — mildly elevated and rising on repeat (upper limit ~0.04); pattern of right-ventricular strain rather than a classic occlusive coronary rise/fall.",
+      "BNP": "BNP 410 pg/mL — elevated, consistent with acute RV pressure overload.",
+      "Lactate": "2.6 mmol/L — mildly elevated, accounts for the anion-gap elevation; reflects hypoperfusion, not sepsis.",
+      "Ddimer": "Markedly elevated (expected and non-specific in a post-op patient — does not change management here).",
+      "ABG": "pH 7.49, PaCO2 28, PaO2 58 on room air — hypoxemia with acute respiratory alkalosis and a widened A–a gradient.",
+      "CTPE": "CT pulmonary angiogram: bilateral lobar and segmental pulmonary emboli with a small saddle component; RV/LV diameter ratio 1.2 (RV enlargement) and septal bowing toward the LV — radiographic right-heart strain. No pneumonia, no dissection."
     }
   },
   "images": {
@@ -35,37 +39,42 @@
       "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Massive-bilateral-pulmonary-embolus-2.jpeg",
       "source": "https://litfl.com/ecg-changes-in-pulmonary-embolism/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
-      "verify": "From the LITFL 'ECG Changes in Pulmonary Embolism' library page — download an example tracing that matches: Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possib … and self-host with credit to litfl.com.",
+      "integrated": true,
+      "litflStudyN": 7,
+      "findings": "Atrial fibrillation with rapid ventricular response (~125–130 bpm, irregularly irregular, no organized P waves); right-heart-strain pattern — S1Q3T3 with T-wave inversions in V1–V3 (right precordial) and a partial/incomplete RBBB morphology; NO ST-segment elevation and NO territorial ST-depression to suggest acute coronary occlusion.",
+      "verify": "From the LITFL 'ECG Changes in Pulmonary Embolism' library page — use a tracing showing AF with RVR plus right-heart-strain (S1Q3T3, V1–V3 TWI / RBBB) and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and an acute right-heart-strain pattern (S1Q3T3, V1–V3 T-wave inversions, incomplete RBBB) without acute ST-elevation.",
       "searchTerms": [
-        "12-lead EKG Sinus tachycardia; S1Q3T3 pattern"
+        "atrial fibrillation RVR right heart strain S1Q3T3 V1-V3 T wave inversion ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 61-year-old woman presents with sudden pleuritic chest pain and breathlessness after recent immobilization."
+      "clinicalVignette": "A 58-year-old immobilized post-operative woman develops sudden pleuritic dyspnea, palpitations, and hypoxemia; her tracing shows a fast irregular rhythm with right precordial T-wave inversions."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+      "findings": "Essentially clear — no consolidation, effusion, pneumothorax, or pulmonary edema; heart size normal (the classic 'clear film despite marked hypoxemia' clue that argues against pneumonia and decompensated heart failure).",
       "verify": "Pick a CC normal/near-normal PA chest film (the point is a clear film despite hypoxemia).",
       "assetNeeded": true,
-      "imageDescription": "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+      "imageDescription": "Essentially clear PA chest film — no consolidation, effusion, pneumothorax, or pulmonary edema; normal heart size.",
       "searchTerms": [
-        "chest radiograph Essentially clear consolidation effusion"
+        "normal PA chest radiograph clear lungs no effusion no edema"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 55-year-old man presents with acute dyspnea and marked hypoxemia despite an unremarkable lung examination."
+      "clinicalVignette": "A post-operative woman with acute dyspnea and marked hypoxemia despite an unremarkable lung examination has a clear chest film."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
+    "LFTs",
     "Troponin",
+    "BNP",
+    "Lactate",
     "Ddimer",
     "ABG",
     "CTPE",
@@ -82,29 +91,37 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Pulmonary embolism (leading & CANT-MISS,9; accepts PE). Acute coronary syndrome (CANT-MISS,4). Pneumonia/atelectasis (core,3). Heart failure (core,2). Post-op atelectasis (bonus,2). Names PE with risk factors — recent surgery, immobility (core,5).",
-      "idealAnswer": "Leading diagnosis: Pulmonary embolism. Must-not-miss diagnoses to exclude: Acute coronary syndrome. Also reasonable: Pneumonia/atelectasis; Heart failure.",
+      "prompt": "Based on your history and physical, list your differential diagnosis and name your leading diagnosis. This post-op patient has BOTH pleuritic dyspnea/hypoxemia AND a mildly elevated troponin with a new irregular rhythm — explicitly resolve whether this is a thromboembolic or a primary coronary event. Also name three mechanisms/risk factors from Virchow's triad that put her at risk.",
+      "rubric": "Pulmonary embolism (leading & CANT-MISS,7; accepts PE/VTE). Acute coronary syndrome / type-2 NSTEMI — genuine competitor given the troponin bump and new AF (CANT-MISS,5). Names three Virchow's-triad mechanisms/risk factors — venous stasis from post-op immobility, endothelial/surgical injury from the THR, hypercoagulable post-op state (plus held apixaban, family VTE) (core,4). Pneumonia (core,2). Decompensated heart failure / AF with RVR as primary driver (core,2). Resolves the fork toward PE — pleuritic onset, profound hypoxemia with a clear chest, right-heart-strain pattern, calf signs — over ACS (core,3). Post-op atelectasis (bonus,2). PENALTY: anchoring on a 'troponin = NSTEMI' read and pursuing the cath lab while missing PE (-3).",
+      "idealAnswer": "Leading diagnosis: Pulmonary embolism (sudden pleuritic dyspnea with profound hypoxemia, a clear chest, calf findings, and an acute right-heart-strain picture 5 days after THR with anticoagulation held). The genuine competitor is acute coronary syndrome / type-2 NSTEMI, raised by the mildly elevated troponin and new atrial fibrillation — but the troponin and AF are better explained by acute RV strain than by coronary occlusion, and there is no ischemic ST pattern. Three Virchow's-triad mechanisms putting her at risk: venous stasis from post-operative immobility/bedrest, endothelial/vessel injury from the hip surgery, and a hypercoagulable post-operative state — compounded by her held apixaban, missed/uncertain DVT prophylaxis, and a family history of PE. Also consider pneumonia and decompensated heart failure (AF with RVR), both made less likely by the clear film and exam.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute coronary syndrome",
-            "points": 4
+            "item": "Pulmonary embolism named as leading diagnosis",
+            "points": 7
+          },
+          {
+            "item": "Acute coronary syndrome / type-2 NSTEMI considered as the competing diagnosis",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Pneumonia/atelectasis",
+            "item": "Names three Virchow's-triad mechanisms/risk factors (stasis from immobility, surgical endothelial injury, post-op hypercoagulability)",
+            "points": 4
+          },
+          {
+            "item": "Resolves the fork toward PE over ACS using pleuritic onset, hypoxemia with clear chest, right-heart strain, and calf signs",
             "points": 3
           },
           {
-            "item": "Heart failure",
+            "item": "Pneumonia",
             "points": 2
           },
           {
-            "item": "Names PE with risk factors — recent surgery, immobility",
-            "points": 5
+            "item": "Decompensated heart failure / AF with RVR as primary driver",
+            "points": 2
           }
         ],
         "bonusActions": [
@@ -113,14 +130,20 @@
             "points": 2
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on 'troponin = NSTEMI' and pursues the cath lab while missing PE",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute coronary syndrome"
+        "Acute coronary syndrome / type-2 NSTEMI"
       ],
       "acceptableAlternatives": [
-        "Pneumonia/atelectasis",
-        "Heart failure"
+        "Pneumonia",
+        "Decompensated heart failure / AF with RVR",
+        "Post-op atelectasis"
       ]
     },
     {
@@ -128,56 +151,56 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial diagnostic workup do you want to order? (Consider pretest probability.)",
-      "rubric": "CT pulmonary angiogram (CANT-MISS,6; accepts CTPE/CTA). EKG (core,3). CXR (core,3). Troponin (core,2). Recognizes high pretest probability — go to imaging; D-dimer unhelpful post-op (bonus,3). PENALTY: relying on a D-dimer to exclude PE in a high-probability post-op patient (-3).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; D-dimer; ABG; CTPE.",
+      "prompt": "What initial diagnostic workup do you want to order? Consider pretest probability AND her CKD (eGFR ~34) when you choose imaging.",
+      "rubric": "CT pulmonary angiogram (CANT-MISS,5; accepts CTPE/CTA). EKG (core,2). CXR (core,2). Troponin — to track the competing ACS question (core,2). BMP/renal function before contrast (core,2). CBC (core,1). ABG (core,1). BNP and/or bedside echo to assess RV strain (bonus,2). Recognizes HIGH pretest probability — go straight to imaging; a D-dimer is unhelpful post-op (bonus,3). PENALTY: relying on a D-dimer to exclude PE in a high-probability post-op patient (-3); withholding CTPE for fear of contrast in a potentially massive PE without giving renal protection or an alternative (V/Q) (-2).",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP (document renal function before iodinated contrast); Troponin (serial, to address the ACS competitor); ABG; BNP; D-dimer (will be elevated and non-specific). Definitive test: CT pulmonary angiogram given high pretest probability — do not defer it for the moderate CKD; give IV hydration/renal precautions, or use V/Q scanning if contrast is truly contraindicated. Bedside echo for RV strain helps risk-stratify.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
         "coreActions": [
           {
             "item": "EKG",
-            "points": 3
+            "points": 2
           },
           {
             "item": "CXR",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Troponin",
             "points": 2
           },
           {
+            "item": "BMP / renal function before contrast",
+            "points": 2
+          },
+          {
             "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "D-dimer",
-            "points": 2
+            "points": 1
           },
           {
             "item": "ABG",
-            "points": 2
-          },
-          {
-            "item": "CTPE",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
             "item": "Recognizes high pretest probability — go to imaging; D-dimer unhelpful post-op",
             "points": 3
+          },
+          {
+            "item": "BNP and/or bedside echo to assess RV strain",
+            "points": 2
           }
         ],
         "penalties": [
           {
-            "item": "relying on a D-dimer to exclude PE in a high-probability post-op patient",
+            "item": "Relying on a D-dimer to exclude PE in a high-probability post-op patient",
             "points": -3
+          },
+          {
+            "item": "Withholding CTPE for fear of contrast without renal protection or a V/Q alternative",
+            "points": -2
           }
         ]
       },
@@ -185,10 +208,11 @@
       "optionalTests": [
         "EKG",
         "CXR",
-        "Troponin"
+        "Troponin",
+        "BMP / renal function before contrast"
       ],
       "contraindicatedTests": [
-        "relying on a D-dimer to exclude PE in a high-probability post-op patient"
+        "Relying on a D-dimer to exclude PE in a high-probability post-op patient"
       ],
       "orderSensitiveActions": []
     },
@@ -198,46 +222,49 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia; possible S1Q3T3 / right heart strain; no acute STEMI. CREDIT: rate & rhythm (sinus tachy) (6); recognizes right-heart-strain pattern or S1Q3T3 if present (5); no acute ST-elevation MI (2); systematic read (2). PENALTY: calling a STEMI (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and state how they help you decide between pulmonary embolism and an acute coronary syndrome.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves, ~125–130 bpm) AND an acute right-heart-strain pattern (S1Q3T3, T-wave inversions V1–V3, incomplete RBBB) with NO ST-elevation and NO ischemic territorial ST-depression. CREDIT: identifies AF with RVR (5); recognizes the right-heart-strain pattern / S1Q3T3 / V1–V3 TWI and ties it to acute RV pressure overload from PE (5); states there is no acute STEMI/ischemic ST pattern, arguing against primary coronary occlusion (3); systematic read (2). PENALTY: calling a STEMI or reading the V1–V3 T-inversions as an anterior ischemic event and triggering the cath lab (-3).",
       "keyFindings": [
-        "recognizes right-heart-strain pattern or S1Q3T3 if present",
-        "no acute ST-elevation MI",
+        "atrial fibrillation with rapid ventricular response",
+        "right-heart-strain pattern (S1Q3T3, V1–V3 T-wave inversions, incomplete RBBB)",
+        "no acute ST-elevation or ischemic territorial ST-depression",
         "systematic read"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation."
+        "Atrial fibrillation with rapid ventricular response AND an acute right-heart-strain pattern (S1Q3T3, V1–V3 T-wave inversions, incomplete RBBB) with no acute STEMI — the strain pattern points to PE rather than primary coronary occlusion."
       ],
       "commonMistakes": [
-        "calling a STEMI"
+        "calling a STEMI",
+        "reading the V1–V3 T-wave inversions as anterior ischemia and activating the cath lab",
+        "missing the atrial fibrillation"
       ],
-      "idealAnswer": "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+      "idealAnswer": "Atrial fibrillation with rapid ventricular response — irregularly irregular, no organized P waves, ventricular rate ~125–130. There is an acute right-heart-strain pattern: S1Q3T3, T-wave inversions in the right precordial leads V1–V3, and an incomplete RBBB morphology. There is NO ST-segment elevation and no territorial ischemic ST-depression. Taken together this favors acute RV pressure overload from a pulmonary embolism rather than a primary coronary occlusion, and explains both the new AF and the modest troponin rise.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Recognizes: Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
+            "item": "Recognizes: atrial fibrillation with RVR plus an acute right-heart-strain pattern (S1Q3T3, V1–V3 TWI, incomplete RBBB) with no STEMI — favoring PE over coronary occlusion",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "recognizes right-heart-strain pattern or S1Q3T3 if present",
+            "item": "Identifies right-heart-strain pattern / S1Q3T3 / V1–V3 T-wave inversions and ties it to acute RV overload from PE",
             "points": 5
           },
           {
-            "item": "no acute ST-elevation MI",
-            "points": 2
+            "item": "States no acute STEMI / ischemic ST pattern, arguing against primary coronary occlusion",
+            "points": 3
           },
           {
-            "item": "systematic read",
+            "item": "Systematic read",
             "points": 2
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "calling a STEMI",
+            "item": "Calling a STEMI or reading V1–V3 T-inversions as anterior ischemia and activating the cath lab",
             "points": -3
           }
         ]
@@ -250,40 +277,41 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = essentially clear film. CREDIT: correctly identifies no consolidation/effusion/pneumothorax (6); notes the clinically important mismatch — clear film with significant hypoxemia points toward PE (4). PENALTY: inventing an infiltrate (-2).",
+      "rubric": "Findings = essentially clear film with a normal heart size. CREDIT: correctly identifies no consolidation/effusion/pneumothorax/pulmonary edema (6); notes the clinically important mismatch — a clear film with marked hypoxemia points toward PE and argues against pneumonia and decompensated heart failure (4). PENALTY: inventing an infiltrate or pulmonary edema (-2).",
       "keyFindings": [
-        "correctly identifies no consolidation/effusion/pneumothorax",
-        "notes the clinically important mismatch — clear film with significant hypoxemia points toward PE"
+        "correctly identifies no consolidation/effusion/pneumothorax/pulmonary edema",
+        "notes the clear-film-with-marked-hypoxemia mismatch points toward PE and away from pneumonia/heart failure"
       ],
       "criticalFindings": [
-        "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+        "Essentially clear film with normal heart size — no consolidation, effusion, pneumothorax, or pulmonary edema; a clear film despite marked hypoxemia argues for PE and against pneumonia/heart failure."
       ],
       "commonMistakes": [
-        "inventing an infiltrate"
+        "inventing an infiltrate",
+        "calling it pulmonary edema to fit the elevated BNP"
       ],
-      "idealAnswer": "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+      "idealAnswer": "Essentially clear PA film with a normal heart size — no consolidation, pleural effusion, pneumothorax, or pulmonary edema. The important point is the mismatch: a clear chest with marked hypoxemia argues for pulmonary embolism and against pneumonia or decompensated heart failure (the elevated BNP here reflects RV strain, not pulmonary edema).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue).",
+            "item": "Recognizes: essentially clear film with normal heart size — no consolidation, effusion, pneumothorax, or pulmonary edema",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "correctly identifies no consolidation/effusion/pneumothorax",
+            "item": "Correctly identifies no consolidation/effusion/pneumothorax/pulmonary edema",
             "points": 6
           },
           {
-            "item": "notes the clinically important mismatch — clear film with significant hypoxemia points toward PE",
+            "item": "Notes the clear-film-with-marked-hypoxemia mismatch points toward PE and away from pneumonia/heart failure",
             "points": 4
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing an infiltrate",
+            "item": "Inventing an infiltrate or calling it pulmonary edema",
             "points": -2
           }
         ]
@@ -293,19 +321,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the CTPE result, what is your diagnosis and how do you risk-stratify?",
-      "rubric": "Acute pulmonary embolism (5). Assesses hemodynamic stability / RV strain to classify (low-risk vs submassive vs massive) (3). Links mild troponin + tachycardia to RV strain (bonus,2).",
-      "idealAnswer": "Pulmonary embolism. ",
+      "prompt": "Given the CTPE result and the other labs, commit to a diagnosis and risk-stratify. Explain how the EKG and troponin fit, name the single test that resolved the PE-versus-ACS fork, and state any residual ambiguity.",
+      "rubric": "Acute pulmonary embolism confirmed on CTPE — bilateral lobar/segmental emboli with RV/LV ratio 1.2 and septal bowing (5). The CT pulmonary angiogram is the discriminating test that resolved PE versus ACS. Risk-stratifies as intermediate/submassive — RV strain on CT/EKG and a positive troponin but maintained (if borderline) blood pressure (3). Links the new AF, the right-heart-strain EKG, the rising troponin, the elevated BNP, and the mild transaminitis/lactate to acute RV pressure overload rather than separate diagnoses (bonus,2). Acknowledges residual ambiguity — the modest troponin keeps a concurrent type-2 ischemic contribution possible, and AKI on CKD must be tracked.",
+      "idealAnswer": "Acute pulmonary embolism — CTPE shows bilateral lobar and segmental emboli with a small saddle component, an RV/LV ratio of 1.2, and septal bowing, i.e., radiographic right-heart strain. The CT pulmonary angiogram is the test that resolved the PE-versus-ACS fork. Risk-stratify as intermediate-/submassive-risk PE: there is RV dysfunction (CT and EKG) and a positive, rising troponin, but she is not yet frankly hypotensive (borderline BP, tachycardic) — so not low-risk, and not yet high-risk/massive. The new atrial fibrillation, the S1Q3T3/V1–V3 strain pattern, the troponin bump, the elevated BNP, and the mild transaminitis and lactate are all downstream of acute RV pressure overload, not separate diseases. Residual ambiguity: the modest troponin cannot fully exclude a concurrent demand/type-2 ischemic component, and the AKI-on-CKD needs serial monitoring.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Links mild troponin + tachycardia to RV strain",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -313,70 +336,79 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH VTE Management: anticoagulation, DOAC preferred (CANT-MISS,6); risk-stratify low/intermediate/high (4); thrombolysis (tPA) for high-risk/unstable (5); PERT consult (3); O2/supportive care, cautious IVF (3); IVC filter only if AC contraindicated (2); admit/monitor (2). PENALTY: IVC filter instead of AC when AC not contraindicated (-3); lytics in stable low-risk PE (-3).",
-      "idealAnswer": "Risk-stratify the PE. Anticoagulate unless contraindicated – DOAC preferred. Systemic thrombolysis (tPA) and PERT/SHOCK activation for high-risk (hemodynamically unstable) PE. Supplemental O2 (HFNC preferred); cautious IVF; norepinephrine for shock. IVC filter only if anticoagulation contraindicated.",
+      "prompt": "What is your management plan? Include your anticoagulation choice given her CKD and recent surgery, your disposition decision, and explicit safe-discharge reasoning (is she a candidate for outpatient PE management, and what must be reconciled before any discharge?).",
+      "rubric": "Per MGH VTE Management: anticoagulation now unless contraindicated (CANT-MISS,6) — choose an agent mindful of CKD (eGFR ~34: apixaban acceptable; avoid full-dose LMWH accumulation; UFH infusion is a safe titratable option peri-procedurally). Risk-stratify low/intermediate/high and recognize this is intermediate/submassive (4). Thrombolysis (tPA) reserved for high-risk/hemodynamically unstable PE, with PERT consultation (4). Admit to a monitored/step-down or ICU bed — explicitly NOT a safe outpatient-discharge candidate (intermediate-risk, hypoxemia, RV strain, positive troponin, CKD, recent surgery) (4). Med reconciliation BEFORE any disposition — restart/secure anticoagulation, STOP the meloxicam (NSAID: bleeding + AKI risk), reconcile metoprolol for AF rate control, hold/adjust metformin and lisinopril around contrast/AKI (3). Supportive care — O2, judicious fluids, rate control of AF (2). Counsel on bleeding precautions, fall risk on oxycodone, and arrange close follow-up / outpatient anticoagulation teaching as part of safe discharge planning (2). PENALTY: discharging this intermediate-risk PE home (-4); systemic thrombolysis in a stable patient just 5 days post-op (-4); continuing the NSAID alongside anticoagulation (-2).",
+      "idealAnswer": "Start anticoagulation immediately unless contraindicated. With eGFR ~34 and recent surgery, a titratable IV unfractionated heparin infusion is a reasonable initial choice; apixaban is acceptable in moderate CKD once bleeding risk is acceptable, while full-dose LMWH risks accumulation. Risk-stratify: this is intermediate-/submassive-risk PE (RV strain + positive troponin, not yet hypotensive). Reserve systemic thrombolysis (tPA) for high-risk/hemodynamically unstable PE and involve PERT for consideration of catheter-directed therapy if she deteriorates — do NOT lyse a stable patient 5 days post-THR. Supportive care: supplemental O2, judicious IV fluids, rate-control the atrial fibrillation (continue/optimize metoprolol). Disposition: ADMIT to a monitored/step-down (or ICU if she destabilizes) bed — she is explicitly NOT a candidate for outpatient PE management given hypoxemia, RV strain, positive troponin, CKD, and recent surgery. Medication reconciliation before any disposition: secure/restart anticoagulation that was held perioperatively, STOP the meloxicam (NSAID bleeding and AKI risk while anticoagulated), reconcile rate-control, and hold/adjust metformin and lisinopril around contrast and AKI. When eventually stable for discharge, counsel on bleeding precautions, fall risk while on oxycodone, anticoagulation teaching and adherence, home safety (stairs/walker), and close hematology/PCP follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Anticoagulation (DOAC preferred)",
+            "item": "Anticoagulation now, with an agent appropriate to CKD/recent surgery (UFH infusion or apixaban; avoid LMWH accumulation)",
             "points": 6
           },
           {
-            "item": "Risk-stratify PE severity",
+            "item": "Risk-stratify and recognize intermediate-/submassive-risk PE",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Thrombolysis (tPA) if high-risk/unstable",
-            "points": 5
+            "item": "Thrombolysis (tPA) reserved for high-risk/unstable PE, with PERT consult",
+            "points": 4
           },
           {
-            "item": "PERT consult",
+            "item": "Admit to a monitored/step-down or ICU bed — NOT a safe outpatient-discharge candidate",
+            "points": 4
+          },
+          {
+            "item": "Medication reconciliation before disposition — restart/secure anticoagulation, STOP the NSAID, reconcile rate control, adjust metformin/lisinopril around contrast/AKI",
             "points": 3
           },
           {
-            "item": "Supportive care (O2, cautious IVF)",
-            "points": 3
+            "item": "Supportive care — O2, judicious fluids, AF rate control",
+            "points": 2
           },
           {
-            "item": "Admit and monitor",
+            "item": "Safe-discharge counseling — bleeding precautions, fall risk on oxycodone, anticoagulation teaching, home safety, close follow-up",
             "points": 2
           }
         ],
-        "bonusActions": [
-          {
-            "item": "IVC filter only if AC contraindicated",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "IVC filter instead of anticoagulation",
-            "points": -3
+            "item": "Discharging this intermediate-risk PE home",
+            "points": -4
+          },
+          {
+            "item": "Systemic thrombolysis in a stable patient 5 days post-op",
+            "points": -4
+          },
+          {
+            "item": "Continuing the NSAID alongside anticoagulation",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Anticoagulation (DOAC preferred)",
-        "Risk-stratify PE severity"
+        "Anticoagulation now, with an agent appropriate to CKD/recent surgery (UFH infusion or apixaban; avoid LMWH accumulation)",
+        "Risk-stratify and recognize intermediate-/submassive-risk PE"
       ],
       "optionalActions": [
-        "Thrombolysis (tPA) if high-risk/unstable",
-        "PERT consult",
-        "Supportive care (O2, cautious IVF)",
-        "Admit and monitor",
-        "IVC filter only if AC contraindicated"
+        "Thrombolysis (tPA) reserved for high-risk/unstable PE, with PERT consult",
+        "Admit to a monitored/step-down or ICU bed — NOT a safe outpatient-discharge candidate",
+        "Medication reconciliation before disposition — restart/secure anticoagulation, STOP the NSAID, reconcile rate control, adjust metformin/lisinopril around contrast/AKI",
+        "Supportive care — O2, judicious fluids, AF rate control",
+        "Safe-discharge counseling — bleeding precautions, fall risk on oxycodone, anticoagulation teaching, home safety, close follow-up"
       ],
       "unsafeActions": [
-        "IVC filter instead of anticoagulation"
+        "Discharging this intermediate-risk PE home",
+        "Systemic thrombolysis in a stable patient 5 days post-op",
+        "Continuing the NSAID alongside anticoagulation"
       ],
       "consults": [
         "PERT"
       ],
-      "disposition": "Admit; ICU if intermediate-high/high risk",
+      "disposition": "Admit to monitored/step-down bed; ICU if she develops high-risk/massive features",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "VTE Management",
@@ -391,12 +423,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "58-year-old woman, anxious, tachypneic. Recovering from recent surgery, limited mobility. Cooperative.",
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; short sentences because of breathlessness",
+    "affect": "58-year-old woman, anxious and tachypneic, recovering from recent hip surgery with limited mobility, worried about her racing heart. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the held blood thinner, missed prophylaxis, daily NSAID, immobility, family clot history, or palpitations unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -414,7 +447,101 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "anticoagulation_prophylaxis",
+      "category": "meds",
+      "triggerConcepts": [
+        "blood thinner",
+        "anticoagulant",
+        "apixaban",
+        "eliquis",
+        "dvt prophylaxis",
+        "clot prevention",
+        "did you get heparin",
+        "leg sleeves",
+        "missed any doses"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "leg_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "leg pain",
+        "calf",
+        "leg swelling",
+        "leg symptoms",
+        "swollen leg"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "palpitations",
+      "category": "hpi",
+      "triggerConcepts": [
+        "palpitations",
+        "racing heart",
+        "skipping beats",
+        "irregular heartbeat",
+        "fluttering"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "nsaid_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "anti-inflammatory",
+        "meloxicam",
+        "nsaid",
+        "ibuprofen",
+        "pain pills you take for the hip"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "mobility",
+      "category": "social",
+      "triggerConcepts": [
+        "activity",
+        "mobility",
+        "out of bed",
+        "walking",
+        "bedbound",
+        "how active"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "clots in the family",
+        "anyone in your family",
+        "relatives"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -438,7 +565,8 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "radiate"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -464,7 +592,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "cough",
+        "hemoptysis",
+        "fever",
+        "syncope"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -478,7 +610,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "breathe in"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -491,7 +624,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney",
+        "atrial fibrillation",
+        "diabetes"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -517,7 +653,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior clots"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -528,7 +665,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_jvp_finding_1",
-      "finding": "Neck: JVP mildly elevated if examined.",
+      "finding": "Neck: JVP elevated to ~10 cm with prominent waves if examined (suggests acute right-heart strain).",
       "revealedBy": [
         "assess_jvp"
       ],
@@ -537,37 +674,47 @@
       "normalIfNotPresent": "JVP not elevated."
     },
     {
-      "id": "auscultate_posterior_lungs_finding_2",
-      "finding": "Lungs: clear bilaterally, no focal crackles or consolidation.",
+      "id": "auscultate_anterior_lungs_finding_2",
+      "finding": "Lungs: clear bilaterally, no focal crackles, consolidation, or wheeze.",
       "revealedBy": [
-        "auscultate_posterior_lungs",
-        "auscultate_anterior_lungs"
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
       ],
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "Lungs clear."
     },
     {
-      "id": "percuss_posterior_lungs_finding_3",
-      "finding": "Lungs: clear bilaterally, no focal crackles or consolidation.",
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Cardiac: tachycardic and irregularly irregular; loud/accentuated P2 and a soft right-parasternal heave if specifically examined; no acute MR murmur or pericardial rub.",
       "revealedBy": [
-        "percuss_posterior_lungs",
-        "assess_egophony",
-        "auscultate_posterior_lungs"
+        "auscultate_mitral_area",
+        "palpate_pmi",
+        "auscultate_aortic_area"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No consolidation."
+      "normalIfNotPresent": "Heart sounds normal, no accentuated P2 or heave."
     },
     {
       "id": "assess_calf_tenderness_finding_4",
-      "finding": "Extremities: RIGHT calf mildly swollen and tender, surgical dressing intact on right hip; left leg normal.",
+      "finding": "Extremities: RIGHT calf mildly swollen, warm, and tender with mild pitting edema; surgical dressing intact on right hip; left leg normal.",
       "revealedBy": [
         "assess_calf_tenderness"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No calf tenderness."
+      "normalIfNotPresent": "No calf tenderness or swelling."
+    },
+    {
+      "id": "assess_edema_finding_5",
+      "finding": "Extremities: RIGHT calf mildly swollen with mild pitting edema; left leg normal — asymmetric leg edema.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
     }
   ],
   "overallScoring": {
@@ -580,36 +727,44 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Pulmonary embolism",
-    "diagnosticFramework": "58F presents with sudden dyspnea and right-sided pleuritic chest pain, 5 days after a total hip replacement. The diagnosis is Pulmonary embolism, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58F with paroxysmal atrial fibrillation (apixaban held perioperatively), CKD3, type 2 diabetes, and obesity presents with abrupt pleuritic dyspnea and hypoxemia 5 days after total hip replacement, now with a new irregular rhythm and a mildly elevated troponin. The diagnosis is intermediate-/submassive-risk Pulmonary embolism, confirmed on CT pulmonary angiogram. The case forks between PE and an acute coronary syndrome/type-2 NSTEMI; it is resolved toward PE by the pleuritic onset with a clear chest film, the right-heart-strain EKG (AF with RVR, S1Q3T3, V1–V3 T-inversions) without an ischemic ST pattern, the calf findings, and the CTPE showing RV strain. Multi-system abnormalities (AKI on CKD, mild hyperkalemia, transaminitis, lactate elevation, elevated BNP/troponin) are integrated as downstream of acute RV pressure overload. Management hinges on prompt CKD-appropriate anticoagulation, correct risk-stratification (reserving lytics for high-risk PE), medication reconciliation (stopping the NSAID, securing held anticoagulation), and an explicit not-safe-for-outpatient-discharge disposition.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Neck: JVP mildly elevated if examined.",
-      "Lungs: clear bilaterally, no focal crackles or consolidation.",
-      "Lungs: clear bilaterally, no focal crackles or consolidation.",
-      "Extremities: RIGHT calf mildly swollen and tender, surgical dressing intact on right hip; left leg normal."
+      "Neck: JVP elevated to ~10 cm with prominent waves if examined (suggests acute right-heart strain).",
+      "Lungs: clear bilaterally, no focal crackles, consolidation, or wheeze.",
+      "Cardiac: tachycardic and irregularly irregular; loud/accentuated P2 and a soft right-parasternal heave if specifically examined; no acute MR murmur or pericardial rub.",
+      "Extremities: RIGHT calf mildly swollen, warm, and tender with mild pitting edema; surgical dressing intact on right hip; left leg normal.",
+      "Extremities: RIGHT calf mildly swollen with mild pitting edema; left leg normal — asymmetric leg edema."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
+      "LFTs",
       "Troponin",
+      "BNP",
+      "Lactate",
       "Ddimer",
       "ABG",
       "CTPE"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Pulmonary embolism while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Pulmonary embolism and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals — post-op, hypoxemic, tachycardic, irregular rhythm.",
+      "Elicit the focused history, including the held anticoagulation, missed prophylaxis, NSAID use, immobility, family VTE, and palpitations only on direct questioning.",
+      "Perform the targeted physical exam to reveal the asymmetric calf findings, accentuated P2/right-parasternal heave, and elevated JVP.",
+      "Build a differential that genuinely forks between Pulmonary embolism and acute coronary syndrome/type-2 NSTEMI, naming Virchow's-triad mechanisms.",
+      "Choose CTPE despite moderate CKD (with renal precautions), and integrate the patient's OWN EKG (AF with RVR + right-heart strain, no STEMI) and a clear CXR to resolve the fork.",
+      "Commit to intermediate-/submassive-risk PE, attribute the multi-system labs to RV strain, and manage with CKD-appropriate anticoagulation, risk-stratified therapy, medication reconciliation, and a safe disposition."
     ],
     "commonPitfalls": [
-      "IVC filter instead of anticoagulation"
+      "Anchoring on 'troponin = NSTEMI' and activating the cath lab while missing PE",
+      "Relying on a D-dimer to exclude PE in a high-probability post-op patient",
+      "Systemic thrombolysis in a stable patient 5 days post-op",
+      "Discharging an intermediate-risk PE home",
+      "Continuing the NSAID alongside anticoagulation"
     ],
     "managementPearls": [
-      "Anticoagulation (DOAC preferred)",
-      "Risk-stratify PE severity"
+      "Anticoagulation now, with an agent appropriate to CKD/recent surgery (UFH infusion or apixaban; avoid LMWH accumulation)",
+      "Risk-stratify and recognize intermediate-/submassive-risk PE"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -619,25 +774,25 @@
       "CT pulmonary angiogram"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
-      "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+      "Atrial fibrillation with rapid ventricular response AND an acute right-heart-strain pattern (S1Q3T3, V1–V3 T-wave inversions, incomplete RBBB) with no acute STEMI — the strain pattern points to PE rather than primary coronary occlusion.",
+      "Essentially clear film with normal heart size — no consolidation, effusion, pneumothorax, or pulmonary edema; a clear film despite marked hypoxemia argues for PE and against pneumonia/heart failure."
     ],
     "criticalManagementItems": [
-      "Anticoagulation (DOAC preferred)",
-      "Risk-stratify PE severity"
+      "Anticoagulation now, with an agent appropriate to CKD/recent surgery (UFH infusion or apixaban; avoid LMWH accumulation)",
+      "Risk-stratify and recognize intermediate-/submassive-risk PE"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
-      "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+      "Atrial fibrillation with rapid ventricular response AND an acute right-heart-strain pattern (S1Q3T3, V1–V3 T-wave inversions, incomplete RBBB) with no acute STEMI — the strain pattern points to PE rather than primary coronary occlusion.",
+      "Essentially clear film with normal heart size — no consolidation, effusion, pneumothorax, or pulmonary edema; a clear film despite marked hypoxemia argues for PE and against pneumonia/heart failure."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; S1Q3T3 pattern possible; right heart strain (T inversions V1–V3) possible; no acute ST elevation.",
-      "Essentially clear — no consolidation, effusion, or pneumothorax (a classic 'clear film with marked hypoxemia' clue)."
+      "Atrial fibrillation with rapid ventricular response AND an acute right-heart-strain pattern (S1Q3T3, V1–V3 T-wave inversions, incomplete RBBB) with no acute STEMI — the strain pattern points to PE rather than primary coronary occlusion.",
+      "Essentially clear film with normal heart size — no consolidation, effusion, pneumothorax, or pulmonary edema; a clear film despite marked hypoxemia argues for PE and against pneumonia/heart failure."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "On the patient's own EKG, AF with RVR plus right precordial T-wave inversions is acute RV strain from PE — do not reflexively read it as anterior ischemia.",
+      "A clear chest film with marked hypoxemia is itself the clue — it argues for PE and against pneumonia and pulmonary edema.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -648,11 +803,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's breathlessness and fear",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (e.g., medication adherence)",
         "points": 1
       },
       {
@@ -667,8 +822,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": false,
     "cxrReplaced": false,
     "backwardCompatible": true

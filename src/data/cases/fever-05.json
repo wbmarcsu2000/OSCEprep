@@ -2,66 +2,70 @@
   "id": "fever-05",
   "category": "Fever",
   "difficulty": "hard",
-  "title": "Fever, headache, and neck stiffness",
+  "title": "Fever, headache, and altered mental status in an asplenic young adult on lithium and isotretinoin",
   "diagnosis": "Bacterial meningitis",
   "chart": {
     "ageSex": "22M",
-    "cc": "Severe headache and fever",
-    "oneLiner": "22M college student presents with one day of high fever, severe headache, neck stiffness, photophobia, and new lethargy.",
+    "cc": "Severe headache, fever, and confusion",
+    "oneLiner": "22M college student — splenectomized after a childhood trauma, on lithium for bipolar disorder and isotretinoin for acne, heavy recent ibuprofen use — presents with ~18 hours of high fever, worsening headache, neck stiffness, photophobia, vomiting, and new confusion.",
     "vitals": {
-      "BP": "112/70",
-      "HR": "112",
-      "RR": "20",
-      "Temp": "39.2°C",
-      "SpO2": "98% RA"
+      "BP": "104/64",
+      "HR": "118",
+      "RR": "22",
+      "Temp": "39.4°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "My head is pounding, the light hurts, and my neck is so stiff I can barely move it.",
-  "patientFile": "PERSONA: 22-year-old man, ill-appearing, photophobic, increasingly drowsy. Limited historian as he becomes more lethargic.\n\nCOLLATERAL (provide ONLY if the student asks friends/roommates/chart): Rapidly progressive over ~12–24h — fever, worsening headache, neck stiffness, vomiting, and confusion. Lives in a dormitory; a classmate was recently ill. Not vaccinated against meningococcus (only if asked). No head trauma.\n\nHPI (from patient — limited): severe headache, light hurts, neck stiff, feels awful.\nPMH: none. MEDS: none. SOCIAL: college dorm.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill, photophobic, lethargic.\n- Vitals: BP 112/70, HR 112, RR 20, 39.2°C, SpO2 98% RA.\n- Neck: NUCHAL RIGIDITY; positive Kernig and Brudzinski signs if tested.\n- Neuro: lethargic/confused; no clear focal deficit; pupils reactive.\n- Skin: a non-blanching PETECHIAL/purpuric rash if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide COLLATERAL (dorm exposure, vaccination status, timeline) only when the student explicitly asks roommates/chart/exposures.\n- Meningeal signs and the rash are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My head is pounding, the light is killing me, my neck won't move… and honestly I feel kind of foggy and sick to my stomach.",
+  "patientFile": "PERSONA: 22-year-old man, ill-appearing, photophobic, increasingly drowsy and confused. Becomes a poorer historian as he tires; gives short, vague answers and sometimes loses the thread of the question.\n\nCOLLATERAL (provide ONLY if the student explicitly asks roommates / family / the chart / exposures): Rapidly progressive over ~18h — fever, pounding headache, stiff neck, photophobia, two episodes of vomiting, and new confusion noticed by roommates this morning. Lives in a college dormitory; a hallmate was hospitalized last week with a 'bad infection.' NOT vaccinated against meningococcus or pneumococcus despite having had his spleen removed (only if asked). No recent travel, no sick animals, no IV drug use. No head trauma, no seizure witnessed, no recent dental work.\n\nHPI (from patient — limited): severe global headache that came on over hours and kept getting worse (NOT a single thunderclap maximal-at-onset 'worst headache of my life'); light hurts; neck stiff; threw up twice; feels foggy. He thinks the headache 'might be from my acne pill' because the pharmacist warned him about headaches.\nPMH (reveal only when asked): SPLENECTOMY at age 11 after a bicycle/car accident (ruptured spleen). Bipolar I disorder, stable. Severe nodulocystic acne. Mild seasonal allergies. He has had a few 'pseudotumor' headaches blamed on the acne pill before, but never with fever or a stiff neck.\nMEDS (reveal only when asked): lithium (takes it 'most days,' missed a couple of doses this week because he felt off and was drinking less water than usual); isotretinoin (started ~6 weeks ago for acne); ibuprofen 600–800 mg several times a day for the past 3 days for the headache; loratadine PRN. NOT on any vaccines/penicillin prophylaxis for his asplenia. No anticoagulants. ALLERGIES: none known.\nSOCIAL: college sophomore, lives in a dorm, social alcohol on weekends, no tobacco, no recreational drugs. FAMILY: noncontributory.\nROS: fever, chills, headache, neck stiffness, photophobia, nausea/vomiting, confusion. NO focal weakness, NO double vision, NO rash that he has noticed, NO cough or urinary symptoms that he reports. Decreased oral intake and urine output over the last day.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill, toxic, photophobic, lethargic and intermittently confused; dry mucous membranes.\n- Vitals: BP 104/64, HR 118, RR 22, 39.4°C, SpO2 96% RA.\n- Neck: NUCHAL RIGIDITY; positive Kernig and Brudzinski signs if tested.\n- Neuro: lethargic, oriented only to self, follows simple commands inconsistently; NO clear focal motor deficit; NO pronator drift; pupils equal and reactive; cranial nerves grossly intact; no papilledema described.\n- Skin: scattered non-blanching PETECHIAE on the trunk and lower legs with a few early PURPURIC spots if examined; well-healed left upper-quadrant surgical (splenectomy) scar.\n- Mucous membranes / turgor: dry mucous membranes and reduced skin turgor (volume depletion).\n- Cardiac/lungs: tachycardic, regular; lungs with faint right basal crackles if auscultated, no respiratory distress.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide COLLATERAL (dorm/hallmate exposure, vaccination status, asplenia timeline, urine output) only when the student explicitly asks roommates/chart/exposures or the relevant question.\n- Reveal SPLENECTOMY, the medication list (lithium, isotretinoin, heavy ibuprofen), and the missed lithium doses / low fluid intake only when asked about past history, surgeries, or medications.\n- Meningeal signs, the petechial/purpuric rash, dry membranes/turgor, and the basal crackles are revealed only if the relevant exam is performed.\n- Do NOT volunteer that the headache is gradual-onset rather than thunderclap unless asked how it started and evolved.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "BloodCultures": "Two sets drawn immediately.",
-      "CBC": "WBC 19.0 with marked left shift.",
-      "BMP": "Mild changes; glucose 110.",
-      "Coags": "Mild abnormalities (watch for DIC).",
-      "CT_head": "If indicated (focal deficit, papilledema, immunocompromise, seizure, significantly depressed consciousness): no mass/shift — safe to proceed to LP.",
-      "LP_CSF": "Lumbar puncture CSF: high opening pressure; neutrophilic pleocytosis (high WBC); HIGH protein; LOW glucose; Gram stain shows organisms — a bacterial pattern."
+      "BloodCultures": "Two sets drawn immediately before antibiotics; preliminary Gram stain from one bottle later flags Gram-negative diplococci.",
+      "CBC": "WBC 21.4 with marked left shift and toxic granulation; Hgb 13.8; PLATELETS LOW at 88 (down from a normal baseline).",
+      "BMP": "Na 128 (LOW), K 6.1 (HIGH), Cl 96, HCO3 16 (LOW); anion gap = 128 − (96 + 16) = 16 (ELEVATED). BUN 38, Creatinine 2.1 (baseline ~0.9) — ACUTE KIDNEY INJURY. Glucose 112.",
+      "Coags": "INR 1.6, aPTT mildly prolonged, fibrinogen LOW at 110, D-dimer markedly elevated — a consumptive (early DIC) pattern; lactate 4.2 (elevated, explains much of the anion-gap acidosis).",
+      "Lithium_level": "Serum lithium 1.6 mEq/L (mildly elevated above 1.2 — consistent with volume depletion / AKI reducing clearance, NOT high enough to fully explain the encephalopathy and not the primary problem).",
+      "CT_head": "Non-contrast CT head (done first ONLY because of the depressed/altered level of consciousness): no mass, no midline shift, no hydrocephalus, no acute hemorrhage — and specifically NO subarachnoid blood — so it is safe to proceed to LP.",
+      "LP_CSF": "Lumbar puncture CSF: HIGH opening pressure (~28 cm H2O); turbid fluid; neutrophilic pleocytosis (WBC ~3200, ~90% neutrophils); HIGH protein (~220 mg/dL); LOW glucose (~28 mg/dL, CSF:serum ratio <0.3); Gram stain shows GRAM-NEGATIVE DIPLOCOCCI — a bacterial pattern consistent with Neisseria meningitidis."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus rhythm with uniformly prolonged PR interval (~280 ms); every P conducts.",
-      "verify": "Source a study matching: Sinus rhythm with uniformly prolonged PR interval (~280 ms); every P conducts. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia (~118 bpm) with TALL, PEAKED, narrow-based symmetric T waves (best seen precordially) and slight PR prolongation — hyperkalemic changes consistent with the K 6.1 from AKI; no QRS widening yet, no acute ST-elevation.",
+      "verify": "Source a study matching: sinus tachycardia with tall peaked symmetric T waves of early hyperkalemia (K ~6). Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing first-degree AV block, long PR",
+      "litflStudyN": 3,
+      "integrated": true,
+      "imageDescription": "12-lead showing sinus tachycardia with tall peaked T waves of hyperkalemia",
       "searchTerms": [
-        "first degree AV block ECG",
-        "prolonged PR interval 12 lead"
+        "hyperkalemia peaked T waves ECG",
+        "early hyperkalaemia 12 lead tented T waves"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 55-year-old man presents with fever, headache, and neck stiffness, and an ECG is recorded."
+      "clinicalVignette": "A febrile, volume-depleted young man with acute kidney injury and K 6.1 has an ECG recorded during resuscitation."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
-      "license": "Wikimedia Commons — verify file license",
-      "findings": "Right lower lobe airspace consolidation with air bronchograms; preserved right heart border.",
-      "verify": "Source a study matching: Right lower lobe airspace consolidation with air bronchograms; preserved right heart border. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "source": "https://radiopaedia.org/articles/aspiration-pneumonia",
+      "license": "Radiopaedia — verify file license",
+      "findings": "Right lower lobe / posterior basal airspace opacity with air bronchograms in this obtunded, vomiting patient — consistent with early aspiration / a possible pneumococcal-type lung source; no large effusion, no pneumothorax; heart size normal.",
+      "verify": "Source a study matching: right lower lobe basal consolidation with air bronchograms (aspiration / lobar pneumonia). Self-host with appropriate credit.",
+      "integrated": true,
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing right lower lobe pneumonia",
+      "imageDescription": "chest radiograph showing right lower lobe / basal consolidation",
       "searchTerms": [
         "right lower lobe pneumonia x-ray",
-        "lobar consolidation air bronchogram radiograph"
+        "aspiration pneumonia basal consolidation radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 60-year-old man presents with fever, productive cough, and right-sided chest discomfort."
+      "clinicalVignette": "An obtunded young man who has vomited several times and is being intubated for airway protection has a portable chest film."
     }
   },
   "revealKeys": [
@@ -69,6 +73,7 @@
     "CBC",
     "BMP",
     "Coags",
+    "Lithium_level",
     "CT_head",
     "LP_CSF",
     "ekg",
@@ -83,18 +88,18 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential (note your leading diagnosis).",
-      "rubric": "Bacterial meningitis (leading & CANT-MISS,9). Viral meningitis/encephalitis (CANT-MISS,4). Subarachnoid hemorrhage (CANT-MISS,4). Brain abscess (core,2). Sepsis from another source (core,2). Connects fever + headache + meningismus + altered mental status (± petechial rash) to bacterial meningitis (core,4).",
-      "idealAnswer": "Leading diagnosis: Bacterial meningitis. Must-not-miss diagnoses to exclude: Viral meningitis/encephalitis; Subarachnoid hemorrhage. Also reasonable: Brain abscess; Sepsis from another source.",
+      "prompt": "Based on your history and exam, list your differential (note your leading diagnosis). This febrile, confused, asplenic young man on lithium and isotretinoin is genuinely ambiguous — explicitly name THREE must-not-miss causes of fever + headache + altered mental status, and say what single feature most argues FOR your leading diagnosis over the closest competitor.",
+      "rubric": "Bacterial meningitis (leading & CANT-MISS,7) — favored over the competitors by the combination of meningismus + petechial/purpuric rash + toxic appearance in an UNVACCINATED ASPLENIC host (encapsulated-organism risk). Herpes simplex / viral encephalitis (CANT-MISS,4) — the closest competitor given fever + confusion, but argued against by prominent meningismus, a petechial rash, and absent focal/temporal-lobe or seizure features. Subarachnoid hemorrhage (CANT-MISS,4) — argued against because the headache built up over hours rather than thunderclap-maximal-at-onset, and CT shows no blood. Names THREE must-not-miss causes of fever+HA+AMS (core,3). Meningococcemia / septic shock with DIC (core,2). Brain abscess or a parameningeal source (core,1). Lithium toxicity and isotretinoin-related pseudotumor cerebri as CONFOUNDERS that must be addressed but do not explain the fever/meningismus (core,2). Connects fever + meningismus + AMS + petechial rash + asplenia to bacterial meningitis (core,2). PENALTY: anchoring on 'just a lithium/medication headache' and missing meningitis (-3); attributing the whole picture to isotretinoin pseudotumor (-2).",
+      "idealAnswer": "Leading diagnosis: Bacterial meningitis (most likely meningococcal) — a febrile, toxic, confused young man with nuchal rigidity, a non-blanching petechial/purpuric rash, and — critically — surgical asplenia without meningococcal/pneumococcal vaccination, which dramatically raises encapsulated-organism risk. Three must-not-miss causes of fever + headache + altered mental status: (1) Bacterial meningitis, (2) HSV/viral encephalitis, (3) Subarachnoid hemorrhage. The single feature that most favors bacterial meningitis over its closest competitor (HSV encephalitis) is the combination of frank meningismus with a petechial/purpuric rash in an asplenic host — encephalitis is typically a parenchymal picture (behavioral change, seizures, temporal-lobe focality) without a purpuric rash; SAH is argued against because the headache built over hours rather than being thunderclap/maximal-at-onset and the CT shows no blood. Also consider meningococcemia/septic shock with DIC and a parameningeal source/brain abscess. The lithium (mildly supratherapeutic from his AKI) and isotretinoin (which he blames for the headache, a pseudotumor cerebri risk) are real confounders to address but neither explains the fever, meningismus, or rash.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Bacterial meningitis",
-            "points": 9
+            "item": "Bacterial meningitis (leading)",
+            "points": 7
           },
           {
-            "item": "Viral meningitis/encephalitis",
+            "item": "Herpes simplex / viral encephalitis",
             "points": 4
           },
           {
@@ -104,28 +109,47 @@
         ],
         "coreActions": [
           {
-            "item": "Brain abscess",
+            "item": "Explicitly names three must-not-miss causes of fever + headache + altered mental status",
+            "points": 3
+          },
+          {
+            "item": "Meningococcemia / septic shock with DIC",
             "points": 2
           },
           {
-            "item": "Sepsis from another source",
+            "item": "Addresses lithium toxicity and isotretinoin pseudotumor as confounders that do not explain the fever/meningismus",
             "points": 2
           },
           {
-            "item": "Connects fever + headache + meningismus + altered mental status (± petechial rash) to bacterial meningitis",
-            "points": 4
+            "item": "Brain abscess / parameningeal source",
+            "points": 1
+          },
+          {
+            "item": "Connects fever + meningismus + AMS + petechial rash + asplenia to bacterial meningitis",
+            "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a lithium/medication headache and misses meningitis",
+            "points": -3
+          },
+          {
+            "item": "Attributes the whole picture to isotretinoin pseudotumor cerebri",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
-        "Viral meningitis/encephalitis",
-        "Subarachnoid hemorrhage"
+        "Herpes simplex / viral encephalitis",
+        "Subarachnoid hemorrhage",
+        "Meningococcemia / septic shock with DIC"
       ],
       "acceptableAlternatives": [
-        "Brain abscess",
-        "Sepsis from another source"
+        "Brain abscess / parameningeal source",
+        "Lithium toxicity (confounder)",
+        "Isotretinoin-related pseudotumor cerebri (confounder)"
       ]
     },
     {
@@ -133,65 +157,66 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What is your workup, and in what ORDER? (Sequencing matters.)",
-      "rubric": "Blood cultures immediately (CANT-MISS,4). Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture (CANT-MISS,5). CT head BEFORE LP only if indicated (focal deficit, papilledema, immunocompromise, seizure, depressed consciousness) (3). CBC, coags (2). Recognizes that imaging/LP must NOT delay antibiotics (1). PENALTY: routine CT before LP in everyone delaying treatment (-2).",
-      "idealAnswer": "Order: EKG; CXR; Blood cultures; CBC; BMP; Coagulation studies; CT head; LP CSF.",
+      "prompt": "What is your workup, and in what ORDER? (Sequencing matters — antibiotics must not be delayed, but this patient has a depressed level of consciousness.)",
+      "rubric": "Blood cultures immediately, BEFORE antibiotics but without delaying them (CANT-MISS,4). Lumbar puncture for CSF — opening pressure, cell count, protein, glucose, Gram stain, culture (CANT-MISS,5). CT head BEFORE LP IS justified HERE because of the depressed/altered level of consciousness (one of the recognized indications) — but it must NOT delay empiric antibiotics + steroids (3). CBC, BMP (catches the hyponatremia/hyperkalemia/AKI), coagulation studies + lactate/fibrinogen for DIC, lithium level (2). EKG and CXR (1). Recognizes that imaging/LP must NOT delay antibiotics — give them after cultures, before/around the CT (1). PENALTY: routine CT before LP with no indication delaying treatment (-2); sending the LP/CT before drawing blood cultures and starting antibiotics (-2).",
+      "idealAnswer": "Order: blood cultures FIRST (two sets), then give empiric antibiotics + dexamethasone immediately — do not wait. Because he has a depressed/altered level of consciousness (a recognized indication), get a non-contrast CT head before the LP to exclude a mass/shift, but the CT must not delay the antibiotics already given. Then LP for CSF (opening pressure, cell count, protein, glucose, Gram stain, culture, ± meningococcal/pneumococcal PCR). Send CBC, BMP (look for the hyponatremia/hyperkalemia/AKI), coagulation studies with fibrinogen/D-dimer and lactate (DIC + perfusion), and a lithium level given his AKI. EKG and CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Blood cultures immediately",
+            "item": "Blood cultures immediately, before antibiotics but without delaying them",
             "points": 4
           },
           {
-            "item": "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture",
+            "item": "Lumbar puncture for CSF — opening pressure, cell count, protein, glucose, Gram stain, culture",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "CT head before LP, justified by the depressed level of consciousness, without delaying antibiotics",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "BMP (detects hyponatremia / hyperkalemia / AKI)",
+            "points": 1
           },
           {
-            "item": "CBC",
-            "points": 2
+            "item": "Coagulation studies + fibrinogen / D-dimer / lactate for DIC",
+            "points": 1
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "Lithium level given the AKI",
+            "points": 1
           },
           {
-            "item": "Coagulation studies",
-            "points": 2
-          },
-          {
-            "item": "CT head",
-            "points": 2
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "routine CT before LP in everyone delaying treatment",
+            "item": "Routine CT before LP with no indication, delaying treatment",
+            "points": -2
+          },
+          {
+            "item": "Sending the LP/CT before drawing blood cultures and starting antibiotics",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Blood cultures immediately",
-        "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture"
+        "Blood cultures immediately, before antibiotics but without delaying them",
+        "Lumbar puncture for CSF — opening pressure, cell count, protein, glucose, Gram stain, culture"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "routine CT before LP in everyone delaying treatment"
+        "Routine CT before LP with no indication, delaying treatment"
       ],
       "orderSensitiveActions": [
-        "routine CT before LP in everyone delaying treatment"
+        "Blood cultures immediately, before antibiotics but without delaying them",
+        "Routine CT before LP with no indication, delaying treatment"
       ]
     },
     {
@@ -200,33 +225,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = first-degree AV block (sinus rhythm, fixed prolonged PR ~280 ms, every P conducts). CREDIT: measures the PR interval (7); recognizes PR >200 ms with 1:1 conduction = first-degree AV block (5); systematic read (3). PENALTY: calling it normal sinus / missing the prolonged PR (-3).",
+      "prompt": "Here is THIS patient's 12-lead EKG, taken during resuscitation. Describe your findings and say what metabolic problem they reflect and how it changes your immediate management.",
+      "rubric": "Findings = sinus tachycardia with TALL, PEAKED, narrow-based symmetric T waves (± mild PR prolongation), no QRS widening yet — EARLY HYPERKALEMIA matching the K 6.1 from his AKI. CREDIT: identifies tall/peaked/tented T waves (6); attributes them to hyperkalemia and links it to the AKI on the BMP (4); states this mandates urgent treatment of the hyperkalemia (calcium for membrane stabilization, insulin/dextrose ± albuterol, address the AKI) (3); systematic read (2). PENALTY: calling the tracing normal / dismissing the T waves, or over-reading them as hyperacute ischemic T waves and chasing an MI (-3).",
       "keyFindings": [
-        "measures the PR interval",
-        "PR >200 ms with 1:1 conduction"
+        "tall peaked tented symmetric T waves",
+        "attributes to hyperkalemia from the AKI"
       ],
       "criticalFindings": [
-        "First-degree AV block (PR ~280 ms, every P conducts)."
+        "Sinus tachycardia with tall, peaked, symmetric T waves of hyperkalemia (K 6.1 from AKI)."
       ],
       "commonMistakes": [
-        "overlooking the prolonged PR and calling it normal sinus",
-        "confusing it with higher-grade block"
+        "calling the tracing normal sinus and ignoring the peaked T waves",
+        "over-reading the peaked T waves as hyperacute ischemic T waves and chasing an MI",
+        "missing that the hyperkalemia is from the acute kidney injury"
       ],
-      "idealAnswer": "First-degree AV block: sinus rhythm, fixed prolonged PR (~280 ms), each P wave conducts.",
+      "idealAnswer": "Sinus tachycardia (~118 bpm) with tall, peaked, narrow-based symmetric T waves (best in the precordial leads) and only slight PR prolongation, no QRS widening — the picture of EARLY hyperkalemia, matching the K of 6.1 driven by his acute kidney injury (NSAID use, volume depletion, sepsis). This is not ischemia. It mandates urgent treatment: IV calcium to stabilize the myocardium, then insulin + dextrose (± albuterol) to shift potassium, plus correcting the AKI (fluids, stop the ibuprofen) — alongside the meningitis treatment, not instead of it.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "First-degree AV block (PR ~280 ms, every P conducts)."
+          "Sinus tachycardia with tall, peaked, symmetric T waves of hyperkalemia (K 6.1 from AKI)."
         ],
         "coreActions": [
-          "measures the PR interval",
-          "PR >200 ms with 1:1 conduction"
+          "tall peaked tented symmetric T waves",
+          "attributes to hyperkalemia from the AKI",
+          "states it mandates urgent hyperkalemia treatment (calcium, insulin/dextrose)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / over-reads peaked T waves as ischemia",
             "points": -3
           }
         ]
@@ -238,34 +265,35 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = right lower lobe consolidation with air bronchograms (pneumonia). CREDIT: identifies lobar consolidation with air bronchograms (6); localizes it to the right lower lobe (4). PENALTY: calling the film normal / missing the consolidation (-2).",
+      "prompt": "Here is THIS patient's chest X-ray, taken after he vomited and became obtunded. Describe your findings and how they fit the overall picture.",
+      "rubric": "Findings = right lower lobe / posterior basal airspace consolidation with air bronchograms — aspiration in this obtunded, vomiting patient and/or a possible pneumococcal-type pulmonary source. CREDIT: identifies basal airspace consolidation with air bronchograms (4); localizes it to the right lower lobe / posterior base (3); interprets it as aspiration in an obtunded patient and/or a possible bacterial lung source contributing to sepsis (3). PENALTY: calling the film normal / missing the retrocardiac basal consolidation (-2).",
       "keyFindings": [
-        "lobar consolidation with air bronchograms",
-        "localizes it to the right lower lobe"
+        "right lower lobe / basal consolidation with air bronchograms",
+        "aspiration in an obtunded patient and/or a pulmonary source of sepsis"
       ],
       "criticalFindings": [
-        "Right lower lobe consolidation (pneumonia)."
+        "Right lower lobe / posterior basal consolidation — aspiration and/or a pulmonary source of sepsis."
       ],
       "commonMistakes": [
         "mislocalizing the lobe",
-        "missing a retrocardiac consolidation"
+        "missing a retrocardiac / basal consolidation behind the diaphragm",
+        "failing to connect it to aspiration in an obtunded patient"
       ],
-      "idealAnswer": "Right lower lobe consolidation with air bronchograms, consistent with pneumonia.",
+      "idealAnswer": "Right lower lobe / posterior basal airspace consolidation with air bronchograms. In this obtunded, repeatedly vomiting patient this is most consistent with early aspiration, and it may also represent a pneumococcal-type pulmonary source feeding the sepsis. It reinforces the need for airway protection, broad antibiotic coverage, and admission to a monitored/ICU setting.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Right lower lobe consolidation (pneumonia)."
+          "Right lower lobe / posterior basal consolidation — aspiration and/or a pulmonary source of sepsis."
         ],
         "coreActions": [
-          "lobar consolidation with air bronchograms",
-          "localizes it to the right lower lobe"
+          "right lower lobe / basal consolidation with air bronchograms",
+          "aspiration in an obtunded patient and/or a pulmonary source of sepsis"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
-            "points": -3
+            "label": "calls the study normal / misses the basal consolidation",
+            "points": -2
           }
         ]
       }
@@ -274,9 +302,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "CSF shows neutrophilic pleocytosis, high protein, low glucose, and a positive Gram stain. What is your diagnosis?",
-      "rubric": "Bacterial meningitis (6). Interprets the bacterial CSF pattern — neutrophils, high protein, LOW glucose, positive Gram stain (4).",
-      "idealAnswer": "Bacterial meningitis — the CSF shows a neutrophilic pleocytosis with high protein, low glucose, and a positive Gram stain, the classic bacterial pattern.",
+      "prompt": "The CT shows no blood and no mass; the CSF shows high opening pressure, neutrophilic pleocytosis, high protein, low glucose, and Gram-negative diplococci on Gram stain. Commit to a diagnosis. Name the single test result that discriminates it from your closest competitor, state any residual uncertainty, and name THREE mechanisms by which this patient's surgical asplenia predisposed him to this infection.",
+      "rubric": "Bacterial meningitis — meningococcal (Neisseria meningitidis), committed (4). Names the DISCRIMINATING result: the CSF bacterial pattern (neutrophils, high protein, LOW glucose, positive Gram stain with Gram-negative diplococci) — which excludes the closest competitor HSV/viral encephalitis (lymphocytic, normal glucose, negative Gram stain) and, with the clean CT, excludes SAH (3). States residual uncertainty / pending data — final culture and sensitivities, meningococcal serogroup/PCR, and that the DIC and AKI still need following (1). Names THREE asplenia mechanisms — loss of splenic filtration/clearance of encapsulated bacteria from blood, loss of splenic antibody (IgM) and opsonin production, and absent/low memory B cells reducing rapid antibody response (so overwhelming encapsulated-organism infection), compounded by being unvaccinated (2).",
+      "idealAnswer": "Bacterial (meningococcal) meningitis — the CSF shows the classic bacterial pattern: a neutrophilic pleocytosis with high protein, LOW glucose (CSF:serum ratio <0.3), high opening pressure, and Gram-negative diplococci on Gram stain consistent with Neisseria meningitidis. The single discriminating result is that CSF Gram stain / bacterial profile: it rules out the closest competitor, HSV/viral encephalitis (which gives a lymphocytic pleocytosis with normal glucose and a negative Gram stain), and the clean non-contrast CT plus the absence of subarachnoid blood rules out SAH. Residual uncertainty: the final culture and sensitivities, meningococcal serogroup/PCR, and the trajectory of the early DIC and AKI are still pending and must be followed. Three mechanisms by which his surgical asplenia predisposed him: (1) loss of the spleen's mechanical filtration and phagocytic clearance of encapsulated bacteria from the bloodstream; (2) loss of splenic production of opsonizing antibody (especially IgM) and complement-activating factors needed to opsonize encapsulated organisms; (3) loss of the spleen's marginal-zone memory B cells, blunting the rapid antibody response — all worsened by his never having received meningococcal/pneumococcal vaccination or penicillin prophylaxis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -289,70 +317,96 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan? (Timing is critical.)",
-      "rubric": "Per MGH meningitis: empiric vancomycin + ceftriaxone without delay (CANT-MISS,7); dexamethasone with/before first antibiotic dose (CANT-MISS,4); add ampicillin if Listeria risk (>50/immunocompromised/EtOH) (3); add acyclovir if HSV possible (3); blood cultures then LP, do not delay antibiotics (4); droplet precautions / ID consult (2). PENALTY: delaying antibiotics for CT/LP (-4); omitting Listeria coverage in an at-risk patient (-2).",
-      "idealAnswer": "Bacterial meningitis is an emergency: do not delay antibiotics for the LP/CT. Give dexamethasone WITH/just before the first antibiotic dose, then empiric vancomycin + ceftriaxone; ADD ampicillin if >50/immunocompromised/alcohol (Listeria); ADD acyclovir if HSV encephalitis possible. Blood cultures, then LP (CT first only if focal deficit/papilledema/immunocompromised). Droplet precautions; ID consult.",
+      "prompt": "What is your management plan? (Timing is critical, and this patient has several concurrent problems.) Address the meningitis, the metabolic derangements, the asplenia, and — once he is stabilizing — what must be in place before he could ever be safely discharged.",
+      "rubric": "Per MGH meningitis: empiric vancomycin + ceftriaxone WITHOUT delay after blood cultures (CANT-MISS,6); dexamethasone with/before the first antibiotic dose (CANT-MISS,3); add ampicillin if Listeria risk applies — here he is <50 and not classically at risk, so ampicillin is optional and acyclovir is added only while HSV is still in play (2). TREAT THE CONCURRENT PROBLEMS: treat the hyperkalemia seen on the EKG — IV calcium then insulin/dextrose ± albuterol (CANT-MISS,3); manage the AKI — IV fluids, STOP ibuprofen, hold/adjust lithium and recheck level, renally dose drugs (3); recognize and support early DIC + sepsis — IV fluids/resuscitation, transfuse if bleeding, monitor fibrinogen/platelets, lactate-guided resuscitation (2); airway protection given obtundation + aspiration on CXR (1). PUBLIC-HEALTH/ASPLENIA: droplet precautions + notify public health + chemoprophylaxis for close contacts; and once recovered, give the overdue meningococcal/pneumococcal/Hib vaccines for asplenia (2). SAFE DISCHARGE / DISPOSITION: admit to ICU now; before any eventual discharge — completion of IV antibiotic course, resolved AKI with normalized K and a safe rechecked lithium level, medication reconciliation (discontinue the offending ibuprofen, reconcile lithium and isotretinoin), asplenia vaccination + patient education on fever precautions/standby antibiotics, and close PCP/ID follow-up (3). PENALTY: delaying antibiotics for the CT/LP (-4); discharging or floor-managing an unstable septic patient with hyperkalemia and DIC (-3); continuing ibuprofen / failing to address the AKI (-2).",
+      "idealAnswer": "This is a neurologic and septic emergency — do not delay antibiotics for the CT/LP. After blood cultures: give dexamethasone with/just before the first antibiotic dose, then empiric vancomycin + ceftriaxone immediately; keep acyclovir on board until HSV encephalitis is excluded (ampicillin for Listeria is not needed in this young, non-immunocompromised patient). Treat the concurrent problems the labs and EKG revealed: for the hyperkalemia (K 6.1 with peaked T waves) give IV calcium to stabilize the myocardium then insulin + dextrose ± albuterol; manage the AKI with IV fluids, STOP the ibuprofen, hold and re-dose lithium and recheck the level (his 1.6 reflects reduced clearance), and renally dose medications; support the early DIC/sepsis with fluid resuscitation guided by lactate, transfuse only if bleeding, and trend platelets/fibrinogen. Protect the airway given his obtundation and the aspiration on CXR. Public health and asplenia: droplet precautions, notify public health and arrange meningococcal chemoprophylaxis for close dorm contacts, and — once recovered — give the overdue meningococcal, pneumococcal, and Hib vaccines plus counseling for his asplenia. Disposition: admit to the ICU now. Safe-discharge planning (only once stabilized): completion of the IV antibiotic course, resolution of the AKI with a normalized potassium and a safe rechecked lithium level, medication reconciliation (stop the ibuprofen, reconcile lithium and isotretinoin), asplenia vaccination and education on fever precautions and standby antibiotics, and close PCP/Infectious Disease follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Empiric vancomycin + ceftriaxone immediately",
-            "points": 7
+            "item": "Empiric vancomycin + ceftriaxone immediately after blood cultures",
+            "points": 6
           },
           {
-            "item": "Dexamethasone with/before first dose",
-            "points": 4
+            "item": "Dexamethasone with/before the first antibiotic dose",
+            "points": 3
+          },
+          {
+            "item": "Treat the hyperkalemia from the EKG — IV calcium then insulin/dextrose ± albuterol",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Blood cultures then LP without delaying antibiotics",
-            "points": 4
-          },
-          {
-            "item": "Add ampicillin if Listeria risk",
+            "item": "Manage the AKI — IV fluids, stop ibuprofen, hold/adjust and recheck lithium, renally dose drugs",
             "points": 3
           },
           {
-            "item": "Add acyclovir if HSV possible",
-            "points": 3
-          },
-          {
-            "item": "Droplet precautions / ID consult",
+            "item": "Add acyclovir while HSV is in play (ampicillin only if Listeria risk)",
             "points": 2
+          },
+          {
+            "item": "Recognize and support early DIC / sepsis — fluids, transfuse if bleeding, trend fibrinogen/platelets, lactate-guided",
+            "points": 2
+          },
+          {
+            "item": "Droplet precautions + public-health notification + chemoprophylaxis for close contacts + asplenia vaccination once recovered",
+            "points": 2
+          },
+          {
+            "item": "Airway protection given obtundation and aspiration on CXR",
+            "points": 1
+          },
+          {
+            "item": "Safe discharge / disposition: ICU now, then med reconciliation, resolved AKI/normal K and safe lithium level, asplenia vaccination + fever-precaution education, close PCP/ID follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "CT before LP only if focal deficit/immunocompromised",
-            "points": 1
+            "item": "CT before LP justified here by the depressed level of consciousness, without delaying antibiotics",
+            "points": 0
           }
         ],
         "penalties": [
           {
             "item": "Delaying antibiotics for imaging/LP",
             "points": -4
+          },
+          {
+            "item": "Discharging or floor-managing an unstable septic patient with hyperkalemia and DIC",
+            "points": -3
+          },
+          {
+            "item": "Continuing ibuprofen / failing to address the AKI",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Empiric vancomycin + ceftriaxone immediately",
-        "Dexamethasone with/before first dose"
+        "Empiric vancomycin + ceftriaxone immediately after blood cultures",
+        "Dexamethasone with/before the first antibiotic dose",
+        "Treat the hyperkalemia from the EKG — IV calcium then insulin/dextrose ± albuterol"
       ],
       "optionalActions": [
-        "Blood cultures then LP without delaying antibiotics",
-        "Add ampicillin if Listeria risk",
-        "Add acyclovir if HSV possible",
-        "Droplet precautions / ID consult",
-        "CT before LP only if focal deficit/immunocompromised"
+        "Manage the AKI — IV fluids, stop ibuprofen, hold/adjust and recheck lithium, renally dose drugs",
+        "Add acyclovir while HSV is in play (ampicillin only if Listeria risk)",
+        "Recognize and support early DIC / sepsis — fluids, transfuse if bleeding, trend fibrinogen/platelets, lactate-guided",
+        "Droplet precautions + public-health notification + chemoprophylaxis for close contacts + asplenia vaccination once recovered",
+        "Airway protection given obtundation and aspiration on CXR",
+        "Safe discharge / disposition: ICU now, then med reconciliation, resolved AKI/normal K and safe lithium level, asplenia vaccination + fever-precaution education, close PCP/ID follow-up"
       ],
       "unsafeActions": [
-        "Delaying antibiotics for imaging/LP"
+        "Delaying antibiotics for imaging/LP",
+        "Discharging or floor-managing an unstable septic patient with hyperkalemia and DIC",
+        "Continuing ibuprofen / failing to address the AKI"
       ],
       "consults": [
-        "Infectious Disease"
+        "Infectious Disease",
+        "Critical Care",
+        "Public Health"
       ],
-      "disposition": "Admit; ICU monitoring",
+      "disposition": "Admit; ICU",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Meningitis & Encephalitis",
@@ -366,13 +420,18 @@
     "healthLiteracy": "average",
     "verbosity": "very brief",
     "cooperativeness": "high",
-    "sensitiveTopics": [],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "22-year-old man, ill-appearing, photophobic, increasingly drowsy. Limited historian as he becomes more lethargic.",
+    "sensitiveTopics": [
+      "psychiatric_history",
+      "medication_adherence",
+      "vaccination_status"
+    ],
+    "communicationStyle": "confused; gives limited, vague answers, loses the thread, and needs collateral from roommates/chart",
+    "affect": "22-year-old man, ill-appearing, photophobic, increasingly drowsy and intermittently confused. Limited historian as he tires; blames his headache on his acne medication.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the splenectomy, full medication list, missed lithium doses, or vaccination status unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer that the headache was gradual rather than thunderclap unless asked how it started",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -384,7 +443,10 @@
         "when did it start",
         "onset",
         "how long",
-        "duration"
+        "duration",
+        "did it come on suddenly",
+        "thunderclap",
+        "worst headache"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -424,7 +486,14 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "neck stiffness",
+        "photophobia",
+        "vomiting",
+        "rash",
+        "confusion",
+        "urine output"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -446,17 +515,41 @@
       "hiddenUntilAsked": false
     },
     {
+      "id": "exposures_collateral",
+      "category": "social",
+      "triggerConcepts": [
+        "sick contacts",
+        "exposures",
+        "roommates",
+        "dorm",
+        "anyone else sick",
+        "recent travel",
+        "collateral",
+        "vaccinations",
+        "vaccinated",
+        "meningococcal vaccine"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
       "id": "pmh",
       "category": "pmh",
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "surgeries",
+        "spleen",
+        "splenectomy",
+        "bipolar"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
     },
     {
       "id": "medications",
@@ -464,12 +557,19 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "lithium",
+        "isotretinoin",
+        "accutane",
+        "acne pill",
+        "ibuprofen",
+        "pain medication",
+        "missed doses"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
     },
     {
       "id": "prior_episodes",
@@ -477,7 +577,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "headaches before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -498,7 +599,7 @@
     },
     {
       "id": "assess_for_petechiae_finding_2",
-      "finding": "Skin: a non-blanching PETECHIAL/purpuric rash if examined.",
+      "finding": "Skin: scattered non-blanching PETECHIAE on the trunk and lower legs with a few early PURPURIC spots; well-healed left upper-quadrant splenectomy scar.",
       "revealedBy": [
         "assess_for_petechiae",
         "assess_for_purpura"
@@ -508,8 +609,18 @@
       "normalIfNotPresent": "No petechiae or purpura."
     },
     {
-      "id": "assess_motor_strength_finding_3",
-      "finding": "Neuro: lethargic/confused; no clear focal deficit; pupils reactive.",
+      "id": "assess_mental_status_finding_3",
+      "finding": "General/Neuro: ill, toxic, photophobic; lethargic and oriented only to self, follows commands inconsistently; no focal motor deficit; pupils reactive.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and fully oriented."
+    },
+    {
+      "id": "assess_motor_strength_finding_4",
+      "finding": "Neuro: no clear focal motor deficit; no pronator drift; cranial nerves grossly intact (argues against a focal/parenchymal process such as encephalitis or abscess).",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -519,14 +630,25 @@
       "normalIfNotPresent": "No focal motor deficit."
     },
     {
-      "id": "assess_mental_status_finding_4",
-      "finding": "General: ill, photophobic, lethargic.",
+      "id": "assess_mucous_membranes_finding_5",
+      "finding": "Dry mucous membranes and reduced skin turgor — volume depletion (decreased intake, vomiting; contributes to the AKI and reduced lithium clearance).",
       "revealedBy": [
-        "assess_mental_status"
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No photophobia."
+      "normalIfNotPresent": "Moist mucous membranes, normal turgor."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_6",
+      "finding": "Faint right basal crackles on auscultation (correlates with the basal consolidation/aspiration on the chest film).",
+      "revealedBy": [
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Lungs clear to auscultation."
     }
   ],
   "overallScoring": {
@@ -539,36 +661,43 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Bacterial meningitis",
-    "diagnosticFramework": "22M college student presents with one day of high fever, severe headache, neck stiffness, photophobia, and new lethargy. The diagnosis is Bacterial meningitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "22M college dormitory resident — splenectomized in childhood and unvaccinated against encapsulated organisms, on lithium and isotretinoin with heavy recent ibuprofen use — presents with ~18h of fever, worsening headache, neck stiffness, photophobia, vomiting, and new confusion. The diagnosis is Bacterial (meningococcal) meningitis, confirmed on CSF (neutrophilic pleocytosis, high protein, low glucose, Gram-negative diplococci), reached by separating it from its closest competitors (HSV/viral encephalitis and subarachnoid hemorrhage) and by recognizing the concurrent multi-system derangements — hyponatremia, hyperkalemia and AKI, anion-gap (lactic) acidosis, and early DIC — and the lithium/isotretinoin/NSAID confounders.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Neck: NUCHAL RIGIDITY; positive Kernig and Brudzinski signs if tested.",
-      "Skin: a non-blanching PETECHIAL/purpuric rash if examined.",
-      "Neuro: lethargic/confused; no clear focal deficit; pupils reactive.",
-      "General: ill, photophobic, lethargic."
+      "Skin: scattered non-blanching PETECHIAE on the trunk and lower legs with a few early PURPURIC spots; well-healed left upper-quadrant splenectomy scar.",
+      "General/Neuro: ill, toxic, photophobic; lethargic and oriented only to self; no focal motor deficit; pupils reactive.",
+      "Neuro: no clear focal motor deficit; no pronator drift; cranial nerves grossly intact.",
+      "Dry mucous membranes and reduced skin turgor — volume depletion.",
+      "Faint right basal crackles on auscultation."
     ],
     "keyDiagnosticFindings": [
       "BloodCultures",
       "CBC",
       "BMP",
       "Coags",
+      "Lithium_level",
       "CT_head",
       "LP_CSF"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Bacterial meningitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Bacterial meningitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the toxic febrile young adult with confusion.",
+      "Elicit the focused history and collateral, uncovering the asplenia, the lithium/isotretinoin/NSAID list, the missed doses, the dorm exposure, and the absent vaccinations only on direct questioning.",
+      "Perform the targeted exam to reveal meningismus, the petechial/purpuric rash, the splenectomy scar, volume depletion, and basal crackles.",
+      "Build a differential led by Bacterial meningitis while genuinely weighing HSV/viral encephalitis and subarachnoid hemorrhage and setting aside the lithium/isotretinoin confounders.",
+      "Order an order-sensitive workup (cultures and antibiotics first; CT-before-LP justified by depressed consciousness) and interpret the hyperkalemia EKG, the aspiration CXR, and the multi-system labs.",
+      "Commit to meningococcal meningitis on the CSF, name the discriminating result and the asplenia mechanisms, and manage the meningitis alongside the hyperkalemia, AKI, DIC, public-health prophylaxis, and safe disposition."
     ],
     "commonPitfalls": [
-      "Delaying antibiotics for imaging/LP"
+      "Anchoring on a lithium/medication or isotretinoin pseudotumor headache and missing meningitis",
+      "Delaying antibiotics for imaging/LP",
+      "Treating the meningitis but ignoring the hyperkalemia, AKI, and DIC",
+      "Continuing ibuprofen and failing to address the AKI",
+      "Forgetting public-health chemoprophylaxis and the overdue asplenia vaccinations"
     ],
     "managementPearls": [
-      "Empiric vancomycin + ceftriaxone immediately",
-      "Dexamethasone with/before first dose"
+      "Empiric vancomycin + ceftriaxone immediately after blood cultures, with dexamethasone before/with the first dose",
+      "Treat the hyperkalemia seen on the EKG (calcium, then insulin/dextrose) while resuscitating the AKI and sepsis"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -576,29 +705,30 @@
       "assess_for_petechiae"
     ],
     "criticalWorkupItems": [
-      "Blood cultures immediately",
-      "Lumbar puncture for CSF — cell count, protein, glucose, Gram stain, culture"
+      "Blood cultures immediately, before antibiotics but without delaying them",
+      "Lumbar puncture for CSF — opening pressure, cell count, protein, glucose, Gram stain, culture"
     ],
     "criticalInterpretationItems": [
-      "First-degree AV block (PR ~280 ms, every P conducts).",
-      "Right lower lobe consolidation (pneumonia)."
+      "Sinus tachycardia with tall, peaked, symmetric T waves of hyperkalemia (K 6.1 from AKI).",
+      "Right lower lobe / posterior basal consolidation — aspiration and/or a pulmonary source of sepsis."
     ],
     "criticalManagementItems": [
-      "Empiric vancomycin + ceftriaxone immediately",
-      "Dexamethasone with/before first dose"
+      "Empiric vancomycin + ceftriaxone immediately after blood cultures",
+      "Dexamethasone with/before the first antibiotic dose",
+      "Treat the hyperkalemia from the EKG — IV calcium then insulin/dextrose ± albuterol"
     ],
     "keyImageInterpretationFindings": [
-      "First-degree AV block (PR ~280 ms, every P conducts).",
-      "Right lower lobe consolidation (pneumonia)."
+      "Sinus tachycardia with tall, peaked, symmetric T waves of hyperkalemia (K 6.1 from AKI).",
+      "Right lower lobe / posterior basal consolidation — aspiration and/or a pulmonary source of sepsis."
     ],
     "criticalImageInterpretationFindings": [
-      "First-degree AV block (PR ~280 ms, every P conducts).",
-      "Right lower lobe consolidation (pneumonia)."
+      "Sinus tachycardia with tall, peaked, symmetric T waves of hyperkalemia (K 6.1 from AKI).",
+      "Right lower lobe / posterior basal consolidation — aspiration and/or a pulmonary source of sepsis."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Tall, peaked, symmetric T waves in a patient with AKI are early hyperkalemia — stabilize the myocardium first, do not chase an MI.",
+      "An integrated study is part of the patient's puzzle — read it, then act on it (treat the K, protect the airway).",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -609,7 +739,7 @@
         "points": 1
       },
       {
-        "item": "Elicits the patient's concerns / ICE",
+        "item": "Elicits the patient's concerns / ICE (e.g., his worry that it is the acne pill)",
         "points": 1
       },
       {
@@ -617,7 +747,7 @@
         "points": 1
       },
       {
-        "item": "Signposts and structures the encounter",
+        "item": "Signposts and structures the encounter; uses collateral appropriately",
         "points": 1
       },
       {
@@ -628,8 +758,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

@@ -1,49 +1,54 @@
 {
   "id": "dyspnea-01",
   "category": "Dyspnea",
-  "difficulty": "moderate",
-  "title": "Progressive dyspnea and leg swelling",
+  "difficulty": "hard",
+  "title": "Progressive dyspnea and leg swelling in a smoker with a new irregular pulse",
   "diagnosis": "Acute decompensated heart failure (HFrEF)",
   "chart": {
     "ageSex": "68M",
     "cc": "Shortness of breath",
-    "oneLiner": "68M with HTN, prior MI, and T2DM presents with one week of progressive dyspnea on exertion and bilateral leg swelling.",
+    "oneLiner": "68M with HTN, prior inferior MI, T2DM, and a 20-pack-year smoking history presents with one week of progressive dyspnea on exertion, orthopnea, and bilateral leg swelling; on arrival his pulse is irregular and fast.",
     "vitals": {
-      "BP": "158/92",
-      "HR": "98",
-      "RR": "22",
-      "Temp": "37.0°C",
-      "SpO2": "90% RA"
+      "BP": "152/94",
+      "HR": "118 irregular",
+      "RR": "24",
+      "Temp": "37.1°C",
+      "SpO2": "89% RA"
     },
     "timer": 180
   },
-  "opening": "I just can't catch my breath like I used to, doc — and my legs have blown up.",
-  "patientFile": "PERSONA: 68-year-old man, tired and mildly anxious, breathing a little hard. Short, natural sentences. Cooperative, reliable historian. Retired mechanic, lives alone.\n\nHPI:\n- Dyspnea on exertion worsening over ~1 week, much worse the last 3 days. A month ago fine; now winded crossing a room.\n- Orthopnea (3 pillows / recliner) and PND (wakes ~1hr after lying down gasping, relieved by sitting up).\n- Bilateral leg swelling to the shins, worse by evening.\n- Mild dry cough, no sputum, no wheeze, no hemoptysis.\n- ~6 lb weight gain this week; clothes tight; mild early satiety; less urine output.\n- NO chest pain, NO pleuritic pain, NO fever/chills, NO calf pain, NO recent travel/immobilization, NO palpitations, NO syncope.\n\nOLDCARTS: gradual onset over a week; 'air hunger' not pain/tightness; constant, worse with exertion & lying flat; relieved by rest & sitting up; worse at night.\n\nPMH: hypertension, type 2 diabetes, prior inferior MI ~4 yrs ago (stent placed), hyperlipidemia.\nMEDICATIONS: lisinopril 20mg, metoprolol succinate 50mg, atorvastatin 40mg, metformin 1000mg BID, aspirin 81mg, AND furosemide 40mg daily — BUT ran out ~10 days ago and never refilled.\nADHERENCE/WHAT CHANGED: ran out of the water pill (furosemide) ~10 days ago; ate salty holiday meal + lots of takeout last week.\nALLERGIES: none. FAMILY: father MI at 60, mother HTN.\nSOCIAL: former smoker (quit 4 yrs, ~20 pack-yr), 1–2 beers weekends, no drugs, recent high-salt diet, independent.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: older man, mild resp effort at rest, alert.\n- Vitals: BP 158/92, HR 98 reg, RR 22, 37.0°C, SpO2 90% RA (95% on 2L).\n- HEENT: mucous membranes moist, no scleral icterus.\n- Neck: JVP elevated ~10 cm, no carotid bruits.\n- Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.\n- Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.\n- Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.\n- Extremities: 2+ pitting edema to knees bilaterally, warm, no calf tenderness/asymmetry.\n- Skin: no rash/cyanosis. Neuro: A&Ox3, no focal deficits.\n- Special: hepatojugular reflux POSITIVE; orthostatics no change; calf tenderness/Homans negative.\n\nHIDDEN RULES:\n- NEVER state, suggest, or hint at a diagnosis.\n- Answer ONLY what is asked; focused realistic answers, not a data dump.\n- Do NOT volunteer the missed furosemide or dietary salt unless asked about medications, refills, adherence, what changed, or diet.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I just can't catch my breath like I used to, doc — and my legs have blown up. My heart's been doing this flip-flopping thing too.",
+  "patientFile": "PERSONA: 68-year-old man, tired and mildly anxious, breathing a little hard, aware his heart feels like it's 'fluttering.' Short, natural sentences. Cooperative, reliable historian. Retired mechanic, lives alone.\n\nHPI:\n- Dyspnea on exertion worsening over ~1 week, much worse the last 3 days. A month ago fine; now winded crossing a room.\n- Orthopnea (3 pillows / sleeps in the recliner) and PND (wakes ~1hr after lying down gasping, relieved by sitting up).\n- Bilateral leg swelling to the shins, worse by evening.\n- For the last 2 days an intermittent 'flip-flopping/fluttering' in the chest, with a fast irregular pulse he can feel at his wrist; no associated chest pain, no syncope, brief mild lightheadedness once.\n- A chronic mild morning cough for a couple of years (smoker's cough) that is NOT new; the new thing is the breathlessness at rest. Small amount of clear-white sputum as usual, no change in color/volume, no fever, no wheeze he notices, no hemoptysis.\n- ~7 lb weight gain this week; clothes tight; mild early satiety and right-upper-belly fullness/discomfort; less urine output.\n- NO chest pain or pressure, NO pleuritic pain, NO fever/chills, NO calf pain, NO recent travel/long immobilization/surgery, NO leg redness, NO prior blood clots.\n\nOLDCARTS: gradual onset over a week; 'air hunger,' not pain/tightness; constant, worse with exertion and lying flat; relieved by rest and sitting up; worse at night.\n\nPMH: hypertension; type 2 diabetes; prior INFERIOR MI ~4 yrs ago (stent placed); hyperlipidemia; mild COPD/chronic bronchitis told to him once ('smoker's lungs'), never on inhalers, never hospitalized for breathing; osteoarthritis of the knees. NO known prior atrial fibrillation or thyroid disease.\nMEDICATIONS: lisinopril 20mg daily, metoprolol succinate 50mg daily, atorvastatin 40mg daily, metformin 1000mg BID, aspirin 81mg daily, AND furosemide 40mg daily — BUT ran out of the furosemide ~10 days ago and never refilled. Over the last ~2 weeks has been taking ibuprofen 400–600mg two-to-three times a day on his own for bad knee pain.\nADHERENCE/WHAT CHANGED: ran out of the water pill (furosemide) ~10 days ago; started taking a lot of ibuprofen for his knees ~2 weeks ago; ate a salty holiday meal plus lots of takeout last week.\nALLERGIES: none. FAMILY: father MI at 60, mother HTN.\nSOCIAL: former smoker (quit 4 yrs, ~20 pack-yr); 1–2 beers on weekends; no recreational drugs; recent high-salt diet; lives ALONE, independent in ADLs but says refilling and organizing pills is a hassle and he sometimes loses track.\nROS: as above; no fevers, no urinary symptoms beyond reduced output, no melena/hematochezia, no new leg pain or asymmetry.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: older man, mild-to-moderate respiratory effort at rest, alert, speaking in short sentences.\n- Vitals: BP 152/94, HR 118 IRREGULARLY irregular, RR 24, 37.1°C, SpO2 89% RA (94% on 2L).\n- HEENT: mucous membranes moist, no scleral icterus.\n- Neck: JVP elevated ~12 cm with the patient at 45°, no carotid bruits.\n- Cardiac: irregularly irregular rhythm, variable S1, audible S3 gallop, no significant murmur, PMI mildly displaced laterally.\n- Lungs: bibasilar crackles to the mid-lung fields bilaterally; NO focal consolidation, NO frank wheeze, mildly prolonged expiration.\n- Abdomen: soft, mild RUQ fullness with mild tender hepatomegaly ~2 cm below the costal margin, no rebound, no fluid wave.\n- Extremities: 2+ pitting edema to the knees bilaterally, warm, no calf tenderness, no asymmetry/cords.\n- Skin: no rash/cyanosis. Neuro: A&Ox3, no focal deficits.\n- Special: hepatojugular reflux POSITIVE; orthostatics no significant change; calf tenderness/Homans negative.\n\nHIDDEN RULES:\n- NEVER state, suggest, or hint at a diagnosis.\n- Answer ONLY what is asked; give focused realistic answers, not a data dump.\n- Do NOT volunteer the missed furosemide, the self-started ibuprofen, or the dietary salt unless asked about medications, refills, adherence, over-the-counter/pain pills, what changed, or diet.\n- Do NOT volunteer that the cough is chronic/unchanged unless asked how long the cough has been present or whether it is new.\n- Do NOT volunteer that you live alone or struggle with pills unless asked about home situation, support, or how you manage medications.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 7.2, Hgb 13.8, Plt 240 — unremarkable.",
-      "BMP": "Na 136, K 4.2, Cl 101, HCO3 26, BUN 28, Cr 1.4 (baseline 1.1), Glu 162 — mild Cr bump.",
-      "BNP": "1850 pg/mL — markedly elevated.",
-      "Troponin": "0.04 ng/mL, mildly elevated, STABLE on repeat — demand, not rising.",
-      "Lactate": "1.4 — normal."
+      "CBC": "WBC 8.1, Hgb 10.9 (baseline ~13), MCV 76 (microcytic), Plt 250 — a NEW microcytic anemia; no leukocytosis to suggest pneumonia.",
+      "BMP": "Na 130 (down from 138 — dilutional hyponatremia), K 4.6, Cl 96, HCO3 24, BUN 42, Cr 1.9 (baseline 1.1, was 1.4 last month), Glu 168. Anion gap = 130 − 96 − 24 = 10 (normal). Worsening azotemia/AKI (cardiorenal, NSAID-aggravated) without an anion-gap acidosis.",
+      "LFTs": "AST 68, ALT 74, Alk phos 112, total bilirubin 1.4, albumin 3.6, INR 1.2 — mild transaminitis pattern consistent with congestive hepatopathy, not primary liver disease.",
+      "BNP": "1860 pg/mL — markedly elevated.",
+      "Troponin": "0.05 ng/mL, mildly elevated and STABLE on repeat — demand/strain (rate-related), not a rising ACS curve.",
+      "TSH": "2.1 mIU/L — normal; excludes thyrotoxicosis as the driver of the new atrial fibrillation.",
+      "Lactate": "1.6 mmol/L — normal."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
-      "asset": "https://commons.wikimedia.org/wiki/Special:FilePath/12%20lead%20generated%20inferior%20MI.JPG",
-      "source": "https://litfl.com/q-wave-ecg-library/",
+      "asset": null,
+      "integrated": true,
+      "litflStudyN": 2,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Atrial fibrillation with a rapid ventricular response (~118 bpm): irregularly irregular QRS complexes, absent discrete P waves, fibrillatory baseline. Old inferior infarct Q waves in II/III/aVF. NO acute ST-elevation and no new ischemic ST-depression at this rate.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response (irregularly irregular, no discrete P waves, fibrillatory baseline) WITHOUT acute ST-elevation, ideally with old inferior Q waves. Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
-      "findings": "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
-      "verify": "From the LITFL 'Q Waves / old infarct' library page — download an example tracing that matches: Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or is … and self-host with credit to litfl.com.",
       "assetNeeded": true,
-      "imageDescription": "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "imageDescription": "12-lead showing atrial fibrillation with a rapid ventricular response and old inferior Q waves",
       "searchTerms": [
-        "12-lead EKG Sinus rhythm ~96. inferior"
+        "atrial fibrillation rapid ventricular response ECG",
+        "irregularly irregular no P waves old inferior Q waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 68-year-old man with prior myocardial infarction presents with worsening exertional breathlessness and leg swelling."
+      "clinicalVignette": "A 68-year-old man with prior inferior MI presents with a week of worsening breathlessness and leg swelling and a newly irregular, fast pulse."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
@@ -51,22 +56,24 @@
       "source": "https://commons.wikimedia.org/wiki/File:Chest_radiograph_with_signs_of_congestive_heart_failure_-_annotated.svg",
       "license": "CC0 1.0 (public domain)",
       "attribution": "Mikael Häggström, MD (CC0 1.0)",
-      "findings": "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
-      "verify": "GOOD MATCH for CHF. This is the ANNOTATED version — swap for the non-annotated base file so the student reads it unaided.",
+      "findings": "Cardiomegaly, cephalization/pulmonary venous congestion, Kerley B lines, interstitial edema, small bilateral pleural effusions. No lobar consolidation; lungs are NOT hyperinflated/hyperlucent.",
+      "verify": "GOOD MATCH for CHF. Use the NON-annotated base file so the student reads it unaided; credit Mikael Häggström, MD (CC0).",
       "assetNeeded": true,
       "imageDescription": "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
       "searchTerms": [
-        "chest radiograph Cardiomegaly cephalization Kerley lines"
+        "chest radiograph Cardiomegaly cephalization Kerley lines pleural effusion"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 72-year-old woman presents with progressive shortness of breath, orthopnea, and bilateral lower-extremity edema."
+      "clinicalVignette": "An older patient presents with progressive shortness of breath, orthopnea, and bilateral lower-extremity edema."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
+    "LFTs",
     "BNP",
     "Troponin",
+    "TSH",
     "Lactate",
     "ekg",
     "cxr"
@@ -82,50 +89,60 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "ADHF (leading,7; accepts CHF exacerbation/HFrEF/volume overload). ACS (CANT-MISS,5). PE (CANT-MISS,5). Pneumonia (core,2). COPD exacerbation (core,2). Anemia (bonus,1). Named leading dx w/ justification (core,3).",
-      "idealAnswer": "Leading diagnosis: Acute decompensated heart failure (HFrEF). Must-not-miss diagnoses to exclude: ACS; PE. Also reasonable: Pneumonia; COPD exacerbation.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). This is a smoker with a chronic cough AND a new irregular pulse, so be explicit about the competing cardiac vs pulmonary causes. Also name three precipitants/etiologies that can decompensate chronic heart failure.",
+      "rubric": "ADHF (leading,6; accepts CHF exacerbation/HFrEF/volume overload — justified by orthopnea/PND, JVD, S3, edema). Acute COPD exacerbation as the genuine COMPETING diagnosis in this 20-pack-year smoker with a chronic cough (CANT-MISS-equivalent competitor,5). ACS (CANT-MISS,4). PE (CANT-MISS,4). Pneumonia (core,1). Named leading dx w/ justification distinguishing it from COPD — wet exam, S3, JVD, orthopnea/PND (core,2). Names ≥3 HF precipitants/etiologies — e.g. diuretic nonadherence, dietary salt, NEW atrial fibrillation, NSAID use, ischemia/ACS, infection, uncontrolled HTN (core,3). PENALTY: anchoring on ADHF without acknowledging COPD/PE/ACS as competitors (-3).",
+      "idealAnswer": "Leading diagnosis: Acute decompensated heart failure (HFrEF) — orthopnea, PND, elevated JVP with positive HJR, an S3, bibasilar crackles, and pitting edema point to volume overload. The genuine competing diagnosis is an acute COPD/chronic-bronchitis exacerbation, since he has a 20-pack-year history and a chronic cough — but the absence of a clear wheeze, the S3/JVD/HJR, the orthopnea/PND, and the weight gain favor cardiac decompensation; objective testing (BNP, CXR) is needed to separate them. Must-not-miss diagnoses to exclude: ACS (prior MI) and PE (always consider in unilateral-or-bilateral edema and acute dyspnea). Pneumonia is also reasonable. Three precipitants/etiologies that can decompensate chronic HF here include: stopping the diuretic (furosemide), a high-salt diet, NEW-onset atrial fibrillation, NSAID (ibuprofen) use causing sodium/water retention and worsening renal function, plus ischemia, infection, or uncontrolled hypertension.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "ACS",
+            "item": "Acute COPD exacerbation (competing diagnosis in a smoker with chronic cough)",
             "points": 5
           },
           {
+            "item": "ACS",
+            "points": 4
+          },
+          {
             "item": "PE",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Pneumonia",
+            "points": 1
+          },
+          {
+            "item": "Named leading dx (ADHF) w/ justification distinguishing it from COPD",
             "points": 2
           },
           {
-            "item": "COPD exacerbation",
-            "points": 2
-          },
-          {
-            "item": "Named leading dx w/ justification",
+            "item": "Names three HF precipitants/etiologies (diuretic nonadherence, salt, new AF, NSAID, ischemia, infection, HTN)",
             "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Anemia",
+            "item": "Anemia as a contributor/high-output stressor",
             "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on ADHF without acknowledging COPD/PE/ACS as competitors",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "ACS",
-        "PE"
+        "PE",
+        "Acute COPD exacerbation (competing diagnosis in a smoker with chronic cough)"
       ],
       "acceptableAlternatives": [
         "Pneumonia",
-        "COPD exacerbation"
+        "Anemia as a contributor/high-output stressor"
       ]
     },
     {
@@ -133,9 +150,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "EKG (CANT-MISS,3). Troponin (CANT-MISS,2). CXR (core,3). BNP (core,3). BMP (core,2). CBC (core,2). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; BNP; Troponin; Lactate.",
+      "prompt": "What initial diagnostic workup do you want to order to separate decompensated heart failure from a COPD exacerbation and to exclude the must-not-miss causes?",
+      "rubric": "EKG (CANT-MISS,3). Troponin (CANT-MISS,2). CXR (core,3). BNP — discriminates HF from COPD (core,2). BMP — electrolytes/renal before diuresis (core,2). CBC (core,1). TSH to work up the new atrial fibrillation (bonus,1). LFTs for congestive hepatopathy (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2); CT-PA as a reflex first test without risk stratification (-1).",
+      "idealAnswer": "Order: EKG (the irregular pulse must be characterized); Troponin (serial, given prior MI); CXR; BNP (key to separating HF from a COPD exacerbation); BMP (electrolytes and renal function BEFORE diuresis — he has AKI and is on an ACE-inhibitor); CBC; TSH (standard work-up for new atrial fibrillation); LFTs (RUQ fullness/tender hepatomegaly); Lactate. Risk-stratify for PE (e.g. Wells/PERC) rather than reflexively ordering a CT-PA.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,7 +172,7 @@
           },
           {
             "item": "BNP",
-            "points": 3
+            "points": 2
           },
           {
             "item": "BMP",
@@ -163,14 +180,19 @@
           },
           {
             "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "Lactate",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "TSH for new atrial fibrillation",
+            "points": 1
+          },
+          {
+            "item": "LFTs for congestive hepatopathy",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
             "item": "shotgun panel w/ no reasoning",
@@ -186,7 +208,9 @@
         "CXR",
         "BNP",
         "BMP",
-        "CBC"
+        "CBC",
+        "TSH for new atrial fibrillation",
+        "LFTs for congestive hepatopathy"
       ],
       "contraindicatedTests": [
         "shotgun panel w/ no reasoning"
@@ -199,51 +223,38 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings systematically.",
-      "rubric": "EKG findings = sinus rhythm ~96, OLD inferior infarct Q waves in II/III/aVF, NO acute ST elevation/ischemia. CREDIT: states rate & rhythm (4); identifies old inferior Q waves / prior infarct (5); correctly notes NO acute ST-elevation/ischemia (4); systematic coherent read (2). PENALTY: over-calling an acute STEMI/acute ischemia (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG, obtained on arrival for his irregular pulse. Describe your findings systematically and say how they change your thinking and management.",
+      "rubric": "Findings = ATRIAL FIBRILLATION with a rapid ventricular response (~118 bpm): irregularly irregular QRS, absent discrete P waves, fibrillatory baseline; OLD inferior infarct Q waves in II/III/aVF; NO acute ST-elevation/ischemia at this rate. CREDIT: identifies atrial fibrillation with RVR as the rhythm (5); recognizes the OLD inferior Q waves / prior infarct without over-calling acute ischemia (4); states there is NO acute STEMI/ischemic ST change (2); INTEGRATES that new AF is both a precipitant of his decompensation AND a problem of its own requiring rate control and stroke-risk (CHA2DS2-VASc) assessment for anticoagulation (2); systematic coherent read (2). PENALTY: calling the rhythm sinus / missing atrial fibrillation (-3); over-calling an acute STEMI/acute ischemia (-3).",
       "keyFindings": [
-        "states rate & rhythm",
-        "identifies old inferior Q waves / prior infarct",
-        "correctly notes NO acute ST-elevation/ischemia",
-        "systematic coherent read"
+        "atrial fibrillation with rapid ventricular response",
+        "old inferior infarct Q waves / prior infarct",
+        "no acute ST-elevation or ischemia",
+        "new AF is a precipitant and needs rate control + stroke-risk assessment"
       ],
       "criticalFindings": [
-        "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia."
+        "Atrial fibrillation with a rapid ventricular response (~118 bpm); old inferior infarct Q waves in II/III/aVF; NO acute ST-elevation or ischemia."
       ],
       "commonMistakes": [
-        "over-calling an acute STEMI/acute ischemia"
+        "calling the irregularly irregular rhythm sinus rhythm / sinus tachycardia",
+        "over-calling an acute STEMI or acute ischemia from the old Q waves",
+        "treating the AF in isolation and missing that it precipitated the heart-failure decompensation"
       ],
-      "idealAnswer": "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (~118 bpm): irregularly irregular QRS complexes, no discrete P waves, and a fibrillatory baseline. There are OLD inferior infarct Q waves in II/III/aVF from his prior MI, but NO acute ST-elevation and no new ischemic ST-depression at this rate. This is NEW atrial fibrillation for him, and it cuts both ways: the loss of atrial kick plus the fast rate is a major PRECIPITANT of his heart-failure decompensation, and the AF is itself a problem requiring rate control and a stroke-risk (CHA2DS2-VASc) assessment to decide on anticoagulation. The mild troponin bump fits rate-related demand/strain rather than a primary ACS.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
-            "points": 5
-          }
+          "Atrial fibrillation with a rapid ventricular response (~118 bpm); old inferior infarct Q waves in II/III/aVF; NO acute ST-elevation or ischemia."
         ],
         "coreActions": [
-          {
-            "item": "states rate & rhythm",
-            "points": 4
-          },
-          {
-            "item": "identifies old inferior Q waves / prior infarct",
-            "points": 5
-          },
-          {
-            "item": "correctly notes NO acute ST-elevation/ischemia",
-            "points": 4
-          },
-          {
-            "item": "systematic coherent read",
-            "points": 2
-          }
+          "atrial fibrillation with rapid ventricular response",
+          "old inferior infarct Q waves / prior infarct",
+          "no acute ST-elevation or ischemia",
+          "new AF is a precipitant and needs rate control + stroke-risk assessment"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling an acute STEMI/acute ischemia",
+            "label": "calls the rhythm sinus / misses atrial fibrillation, or over-calls an acute STEMI/acute ischemia",
             "points": -3
           }
         ]
@@ -255,66 +266,59 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "CXR findings = cardiomegaly, pulmonary venous congestion/cephalization, interstitial edema, Kerley B lines, small bilateral pleural effusions. CREDIT: cardiomegaly (2); pulmonary congestion/cephalization/interstitial edema (4); Kerley B lines (2); bilateral pleural effusions (2).",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings and say how they help you separate heart failure from a COPD exacerbation.",
+      "rubric": "CXR findings = cardiomegaly, pulmonary venous congestion/cephalization, interstitial edema, Kerley B lines, small bilateral pleural effusions; lungs are NOT hyperinflated/hyperlucent and there is no lobar consolidation. CREDIT: cardiomegaly (2); pulmonary congestion/cephalization/interstitial edema (3); Kerley B lines (1); bilateral pleural effusions (2); states the congestive pattern favors HF over a COPD exacerbation and there is no focal pneumonia (2).",
       "keyFindings": [
         "cardiomegaly",
         "pulmonary congestion/cephalization/interstitial edema",
         "Kerley B lines",
-        "bilateral pleural effusions"
+        "bilateral pleural effusions",
+        "congestive pattern favors HF over COPD; no focal consolidation"
       ],
       "criticalFindings": [
-        "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+        "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, and small bilateral pleural effusions — a congestive pattern favoring heart failure over a COPD exacerbation."
       ],
       "commonMistakes": [
-        "Over-reading a normal study",
-        "Failing to comment on rate/rhythm or exposure"
+        "Over-reading a hyperinflated COPD film into this congested study",
+        "Calling the bilateral effusions a focal pneumonia",
+        "Failing to comment on exposure/rotation before interpreting"
       ],
-      "idealAnswer": "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
+      "idealAnswer": "Cardiomegaly with pulmonary venous congestion/cephalization, interstitial edema, Kerley B lines, and small bilateral pleural effusions. The lungs are NOT hyperinflated or hyperlucent and there is no lobar consolidation. This congestive, cardiogenic pattern strongly favors decompensated heart failure over a COPD exacerbation or pneumonia and corroborates the markedly elevated BNP.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions.",
-            "points": 4
-          }
+          "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, and small bilateral pleural effusions — a congestive pattern favoring heart failure over a COPD exacerbation."
         ],
         "coreActions": [
-          {
-            "item": "cardiomegaly",
-            "points": 2
-          },
-          {
-            "item": "pulmonary congestion/cephalization/interstitial edema",
-            "points": 4
-          },
-          {
-            "item": "Kerley B lines",
-            "points": 2
-          },
-          {
-            "item": "bilateral pleural effusions",
-            "points": 2
-          }
+          "cardiomegaly",
+          "pulmonary congestion/cephalization/interstitial edema",
+          "Kerley B lines",
+          "bilateral pleural effusions",
+          "congestive pattern favors HF over COPD; no focal consolidation"
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "label": "calls the study a hyperinflated COPD film or invents a focal pneumonia",
+            "points": -3
+          }
+        ]
       }
     },
     {
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Pulling together the labs and your EKG/CXR reads, what is your leading diagnosis and reasoning?",
-      "rubric": "Commits to ADHF as leading (5). Explains mild troponin as demand not primary ACS (3). Identifies precipitant — missed diuretic/dietary salt (bonus,2).",
-      "idealAnswer": "Acute decompensated heart failure (HFrEF). ",
+      "prompt": "Pulling together the labs and your EKG/CXR reads, commit to your leading diagnosis with reasoning. Address how you weighed ADHF against a COPD exacerbation, name the discriminating findings, and state any residual uncertainty and what precipitated this decompensation.",
+      "rubric": "Commits to ADHF (HFrEF) as leading over COPD (5). Cites the discriminators — markedly elevated BNP (1860), congestive CXR, S3/JVD/HJR/orthopnea, no hyperinflation/wheeze — and explains the mild troponin as rate-related demand not ACS (3). Identifies the precipitants — NEW atrial fibrillation (from the integrated EKG), missed diuretic, NSAID use, dietary salt — and names a discriminating test/residual ambiguity (e.g. an echo to confirm reduced EF and assess for ischemia/valvular cause) (bonus,2).",
+      "idealAnswer": "Acute decompensated heart failure (HFrEF). The discriminators that beat a COPD exacerbation are the markedly elevated BNP (1860), the congestive CXR (cardiomegaly, Kerley B lines, effusions) without hyperinflation, the S3, elevated JVP with positive hepatojugular reflux, orthopnea/PND, and the tender congestive hepatopathy on labs. The mild stable troponin is rate-related demand/strain, not a rising ACS curve. The decompensation was precipitated by NEW atrial fibrillation (seen on his own EKG, with normal TSH excluding thyrotoxicosis), compounded by stopping his furosemide, self-medicating with ibuprofen (sodium/water retention plus the AKI), and a high-salt diet. Residual uncertainty: confirm a reduced EF and look for an ischemic/valvular driver with a transthoracic echo; serial troponins exclude an evolving ACS. The hyponatremia and AKI are cardiorenal/dilutional and the microcytic anemia is a separate problem to work up.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
         "bonusActions": [
           {
-            "item": "Identifies precipitant — missed diuretic/dietary salt",
+            "item": "Identifies precipitants (new AF, missed diuretic, NSAID, dietary salt) and names a discriminating test/residual ambiguity (echo for EF/ischemia)",
             "points": 2
           }
         ],
@@ -325,36 +329,48 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH ADHF management: IV loop diuretic 2-2.5× home dose, IV (CANT-MISS,7); strict I/O + daily standing weights (3); 2 g Na-restricted diet (2); O2 / NIPPV for pulmonary edema (3); continue GDMT, do NOT newly initiate beta blocker while decompensated (4); identify and treat precipitant (3); DVT prophylaxis (1). PENALTY: newly starting/uptitrating a beta blocker during decompensation (-3); CCB/NSAID in HFrEF (-2); aggressive IVF bolus in a wet patient (-2).",
-      "idealAnswer": "IV loop diuretic at 2–2.5× the home oral dose (furosemide/torsemide/bumetanide) with strict I/Os and daily weights; 2 g Na restriction; daily NT-proBNP/weights. Supplemental O2, NIPPV if pulmonary edema. Continue/optimize GDMT (do not newly start a beta blocker during decompensation). Identify and treat the precipitant. Avoid CCB/NSAIDs. DVT prophylaxis.",
+      "prompt": "What is your management plan, including how you handle the new atrial fibrillation and the patient's disposition and safe-discharge planning?",
+      "rubric": "Per MGH ADHF management: IV loop diuretic 2–2.5× home oral dose, IV (CANT-MISS,6); rate-control the new atrial fibrillation AND assess stroke risk (CHA2DS2-VASc) for anticoagulation, integrating the EKG (CANT-MISS,4); strict I/O + daily standing weights (2); 2 g Na-restricted diet (1); O2 / NIPPV for hypoxemic pulmonary edema (2); continue GDMT but do NOT newly initiate/uptitrate a beta blocker while decompensated (2); STOP the offending ibuprofen/NSAID and review polypharmacy (2); identify/treat the precipitant — AF, nonadherence, salt (2); plan a safe discharge — med reconciliation/refill the furosemide, pill-box/pharmacy support since he lives alone, HF teaching on daily weights and salt, and close cardiology/PCP follow-up (2). PENALTY: newly starting/uptitrating a beta blocker during decompensation (-3); continuing an NSAID or adding a non-dihydropyridine CCB in HFrEF (-3); aggressive IV-fluid bolus in a volume-overloaded patient (-2); anticoagulating/cardioverting reflexively without addressing rate, stroke-risk, or AF duration (-1).",
+      "idealAnswer": "IV loop diuretic at 2–2.5× his home oral dose (furosemide/torsemide/bumetanide) with strict I/Os and daily standing weights; 2 g sodium restriction. Supplemental O2, with NIPPV if pulmonary edema/work of breathing demands it. Address the NEW atrial fibrillation: rate-control (decompensated HFrEF favors avoiding non-dihydropyridine CCBs — cautious beta-blockade/digoxin per hemodynamics) and assess stroke risk with CHA2DS2-VASc to start anticoagulation, while being mindful of AF duration before any cardioversion. Continue/optimize GDMT but do NOT newly start or uptitrate a beta blocker for HF while he is decompensated. STOP the ibuprofen and review his polypharmacy (NSAID worsened sodium retention and AKI). Identify and treat the precipitants (AF, missed furosemide, dietary salt). Disposition: admit to telemetry. Plan a SAFE discharge: full medication reconciliation and refill/restart the furosemide, set up a pill-box or pharmacy blister-pack and refill reminders since he lives alone and struggles with pills, heart-failure self-care teaching (daily weights, low-salt diet, when to call), avoid NSAIDs, and close cardiology and PCP follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "IV loop diuretic",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Rate-control new AF and assess stroke risk (CHA2DS2-VASc) for anticoagulation",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Strict I/O and daily weights",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Supplemental O2 / NIPPV",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Continue/optimize GDMT",
-            "points": 4
+            "points": 2
+          },
+          {
+            "item": "Stop the NSAID / review polypharmacy",
+            "points": 2
           },
           {
             "item": "Identify and treat precipitant",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Sodium restriction",
+            "points": 1
+          },
+          {
+            "item": "Arrange safe discharge: med reconciliation/refill furosemide, pill-box/pharmacy support, HF teaching, close follow-up",
             "points": 2
           }
         ],
@@ -364,7 +380,7 @@
             "points": 1
           },
           {
-            "item": "Screen and treat iron deficiency",
+            "item": "Work up and treat the microcytic/iron-deficiency anemia",
             "points": 1
           }
         ],
@@ -374,31 +390,39 @@
             "points": -3
           },
           {
-            "item": "CCB or NSAID in HFrEF",
+            "item": "Continuing an NSAID or adding a non-dihydropyridine CCB in HFrEF",
+            "points": -3
+          },
+          {
+            "item": "Aggressive IV-fluid bolus in a volume-overloaded patient",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "IV loop diuretic"
+        "IV loop diuretic",
+        "Rate-control new AF and assess stroke risk (CHA2DS2-VASc) for anticoagulation"
       ],
       "optionalActions": [
         "Strict I/O and daily weights",
         "Supplemental O2 / NIPPV",
         "Continue/optimize GDMT",
+        "Stop the NSAID / review polypharmacy",
         "Identify and treat precipitant",
         "Sodium restriction",
+        "Arrange safe discharge: med reconciliation/refill furosemide, pill-box/pharmacy support, HF teaching, close follow-up",
         "DVT prophylaxis",
-        "Screen and treat iron deficiency"
+        "Work up and treat the microcytic/iron-deficiency anemia"
       ],
       "unsafeActions": [
         "Newly starting beta blocker while decompensated",
-        "CCB or NSAID in HFrEF"
+        "Continuing an NSAID or adding a non-dihydropyridine CCB in HFrEF",
+        "Aggressive IV-fluid bolus in a volume-overloaded patient"
       ],
       "consults": [
         "Cardiology"
       ],
-      "disposition": "Admit (SDU if EF<25, NTproBNP≥2500, or arrhythmia)",
+      "disposition": "Admit to telemetry (SDU/CCU if EF<25%, NT-proBNP markedly elevated, persistent hypoxemia, or hemodynamically significant arrhythmia)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Inpatient Heart Failure (ADHF)",
@@ -415,12 +439,13 @@
     "sensitiveTopics": [
       "alcohol_use",
       "tobacco_use",
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "otc_nsaid_use"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "68-year-old man, tired and mildly anxious, breathing a little hard. Short, natural sentences. Cooperative, reliable historian. Retired mechanic, lives alone.",
+    "affect": "68-year-old man, tired and mildly anxious, breathing a little hard, aware his heart is fluttering. Short, natural sentences. Cooperative, reliable historian. Retired mechanic, lives alone.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, tobacco, missed diuretic, self-started ibuprofen, living alone/pill struggles) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -449,7 +474,8 @@
         "smoking",
         "tobacco",
         "cigarettes",
-        "do you smoke"
+        "do you smoke",
+        "pack year"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -463,11 +489,63 @@
         "medication adherence",
         "missed doses",
         "ran out",
-        "taking your medications"
+        "refill",
+        "taking your medications",
+        "water pill"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_nsaid_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "otc",
+        "ibuprofen",
+        "advil",
+        "motrin",
+        "pain pills",
+        "anti-inflammatory",
+        "nsaid",
+        "anything for pain"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "home_situation_support",
+      "category": "social",
+      "triggerConcepts": [
+        "live alone",
+        "who do you live with",
+        "home situation",
+        "support at home",
+        "manage your pills",
+        "help at home"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cough_chronicity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how long have you had the cough",
+        "is the cough new",
+        "chronic cough",
+        "cough change",
+        "sputum"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -517,7 +595,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "palpitations",
+        "chest pain",
+        "fever"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -531,7 +612,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "lying flat",
+        "orthopnea"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -570,7 +653,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "irregular heartbeat before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -581,17 +665,18 @@
   "physicalExamMappings": [
     {
       "id": "palpate_ruq_finding_1",
-      "finding": "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
+      "finding": "Abdomen: soft, mild RUQ fullness with mild tender hepatomegaly ~2 cm below the costal margin, no rebound, no fluid wave.",
       "revealedBy": [
-        "palpate_ruq"
+        "palpate_ruq",
+        "assess_hepatomegaly"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No RUQ tenderness."
+      "normalIfNotPresent": "No RUQ tenderness or hepatomegaly."
     },
     {
       "id": "assess_fluid_wave_finding_2",
-      "finding": "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
+      "finding": "Abdomen: soft, mild RUQ fullness, no rebound, no fluid wave.",
       "revealedBy": [
         "assess_fluid_wave"
       ],
@@ -600,19 +685,19 @@
       "normalIfNotPresent": "No fluid wave."
     },
     {
-      "id": "auscultate_aortic_area_finding_3",
-      "finding": "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Cardiac: irregularly irregular rhythm, variable S1, audible S3 gallop, no significant murmur, PMI mildly displaced laterally.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_with_bell"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "Regular rhythm, no gallop."
     },
     {
       "id": "assess_jvp_finding_4",
-      "finding": "Neck: JVP elevated ~10 cm, no carotid bruits.",
+      "finding": "Neck: JVP elevated ~12 cm with the patient at 45°, no carotid bruits.",
       "revealedBy": [
         "assess_jvp"
       ],
@@ -621,19 +706,19 @@
       "normalIfNotPresent": "JVP not elevated."
     },
     {
-      "id": "auscultate_mitral_area_finding_5",
-      "finding": "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
+      "id": "palpate_pmi_finding_5",
+      "finding": "Cardiac: irregularly irregular rhythm, variable S1, audible S3 gallop, no significant murmur, PMI mildly displaced laterally.",
       "revealedBy": [
-        "auscultate_mitral_area",
-        "auscultate_with_bell"
+        "palpate_pmi",
+        "auscultate_aortic_area"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No gallop."
+      "normalIfNotPresent": "PMI not displaced."
     },
     {
       "id": "auscultate_posterior_lungs_finding_6",
-      "finding": "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
+      "finding": "Lungs: bibasilar crackles to the mid-lung fields bilaterally; no focal consolidation, no frank wheeze, mildly prolonged expiration.",
       "revealedBy": [
         "auscultate_posterior_lungs",
         "auscultate_anterior_lungs"
@@ -643,18 +728,7 @@
       "normalIfNotPresent": "Lungs clear."
     },
     {
-      "id": "auscultate_anterior_lungs_finding_7",
-      "finding": "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
-      "revealedBy": [
-        "auscultate_anterior_lungs",
-        "auscultate_posterior_lungs"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No wheezing."
-    },
-    {
-      "id": "inspect_sclera_finding_8",
+      "id": "assess_for_jaundice_finding_7",
       "finding": "HEENT: mucous membranes moist, no scleral icterus.",
       "revealedBy": [
         "inspect_sclera",
@@ -665,8 +739,8 @@
       "normalIfNotPresent": "No jaundice."
     },
     {
-      "id": "assess_edema_finding_9",
-      "finding": "Extremities: 2+ pitting edema to knees bilaterally, warm, no calf tenderness/asymmetry.",
+      "id": "assess_edema_finding_8",
+      "finding": "Extremities: 2+ pitting edema to the knees bilaterally, warm, no calf tenderness, no asymmetry/cords.",
       "revealedBy": [
         "assess_edema"
       ],
@@ -675,18 +749,18 @@
       "normalIfNotPresent": "No peripheral edema."
     },
     {
-      "id": "assess_calf_tenderness_finding_10",
-      "finding": "Extremities: 2+ pitting edema to knees bilaterally, warm, no calf tenderness/asymmetry.",
+      "id": "assess_calf_tenderness_finding_9",
+      "finding": "Extremities: 2+ pitting edema to the knees bilaterally, warm, no calf tenderness, no asymmetry/cords.",
       "revealedBy": [
         "assess_calf_tenderness"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No calf tenderness."
+      "normalIfNotPresent": "No calf tenderness or asymmetry."
     },
     {
-      "id": "obtain_orthostatic_vitals_finding_11",
-      "finding": "Special: hepatojugular reflux POSITIVE; orthostatics no change; calf tenderness/Homans negative.",
+      "id": "obtain_orthostatic_vitals_finding_10",
+      "finding": "Special: hepatojugular reflux POSITIVE; orthostatics no significant change; calf tenderness/Homans negative.",
       "revealedBy": [
         "obtain_orthostatic_vitals"
       ],
@@ -695,15 +769,25 @@
       "normalIfNotPresent": "No orthostatic drop."
     },
     {
-      "id": "assess_motor_strength_finding_12",
-      "finding": "Skin: no rash/cyanosis. Neuro: A&Ox3, no focal deficits.",
+      "id": "auscultate_carotids_finding_11",
+      "finding": "Neck: JVP elevated ~12 cm with the patient at 45°, no carotid bruits.",
       "revealedBy": [
-        "assess_motor_strength",
-        "assess_pronator_drift"
+        "auscultate_carotids"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No focal motor deficit."
+      "normalIfNotPresent": "No carotid bruits."
+    },
+    {
+      "id": "assess_mental_status_finding_12",
+      "finding": "Skin: no rash/cyanosis. Neuro: A&Ox3, no focal deficits.",
+      "revealedBy": [
+        "assess_mental_status",
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and oriented, no focal deficit."
     }
   ],
   "overallScoring": {
@@ -716,48 +800,55 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute decompensated heart failure (HFrEF)",
-    "diagnosticFramework": "68M with HTN, prior MI, and T2DM presents with one week of progressive dyspnea on exertion and bilateral leg swelling. The diagnosis is Acute decompensated heart failure (HFrEF), reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68M with HTN, prior inferior MI, T2DM, and a 20-pack-year smoking history presents with one week of progressive dyspnea, orthopnea, PND, and bilateral edema, now with a newly irregular, fast pulse. The diagnosis is Acute decompensated heart failure (HFrEF), distinguished from the genuine competitor of a COPD exacerbation by the congestive exam (JVD, S3, HJR, hepatomegaly), a markedly elevated BNP, and a congestive (non-hyperinflated) CXR, while excluding ACS and PE. The decompensation was precipitated by NEW atrial fibrillation (seen on his own integrated EKG), stopping his furosemide, self-started NSAID use, and dietary salt, on a background of polypharmacy and limited home support.",
     "keyHistoryClues": [
-      "medication adherence"
+      "medication nonadherence",
+      "over-the-counter NSAID use",
+      "chronic vs new cough"
     ],
     "keyPhysicalExamFindings": [
-      "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
-      "Abdomen: soft, mild RUQ fullness, no tenderness, no fluid wave.",
-      "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
-      "Neck: JVP elevated ~10 cm, no carotid bruits.",
-      "Cardiac: regular, normal S1/S2, audible S3 gallop, no murmur, PMI mildly displaced.",
-      "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
-      "Lungs: bibasilar crackles to mid-lung fields bilaterally, no wheeze.",
-      "HEENT: mucous membranes moist, no scleral icterus."
+      "Abdomen: soft, mild RUQ fullness with mild tender hepatomegaly ~2 cm below the costal margin, no rebound, no fluid wave.",
+      "Cardiac: irregularly irregular rhythm, variable S1, audible S3 gallop, no significant murmur, PMI mildly displaced laterally.",
+      "Neck: JVP elevated ~12 cm with the patient at 45°, no carotid bruits.",
+      "Lungs: bibasilar crackles to the mid-lung fields bilaterally; no focal consolidation, no frank wheeze, mildly prolonged expiration.",
+      "Extremities: 2+ pitting edema to the knees bilaterally, warm, no calf tenderness, no asymmetry/cords.",
+      "Special: hepatojugular reflux POSITIVE; orthostatics no significant change; calf tenderness/Homans negative."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
+      "LFTs",
       "BNP",
       "Troponin",
+      "TSH",
       "Lactate"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute decompensated heart failure (HFrEF) while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute decompensated heart failure (HFrEF) and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the irregular, fast pulse.",
+      "Elicit the focused history, including sensitive items (missed diuretic, OTC NSAID, living alone/pill struggles) only on direct questioning, and clarify the cough is chronic, not new.",
+      "Perform the targeted physical exam maneuvers to reveal the congestive findings.",
+      "Build a differential led by ADHF (HFrEF) against the genuine competitor of a COPD exacerbation while excluding ACS and PE, and name the HF precipitants.",
+      "Order a focused workup, characterize the new atrial fibrillation, and interpret the integrated EKG/CXR and the multi-system labs.",
+      "Commit to ADHF, treat the new AF (rate control + stroke-risk assessment), stop the NSAID, and arrange a safe discharge with medication reconciliation and support."
     ],
     "commonPitfalls": [
+      "Calling the rhythm sinus and missing new atrial fibrillation",
+      "Anchoring on ADHF without weighing a COPD exacerbation, ACS, or PE",
       "Newly starting beta blocker while decompensated",
-      "CCB or NSAID in HFrEF"
+      "Continuing an NSAID or adding a non-dihydropyridine CCB in HFrEF"
     ],
     "managementPearls": [
-      "IV loop diuretic"
+      "IV loop diuretic",
+      "Rate-control new AF and assess stroke risk (CHA2DS2-VASc) for anticoagulation",
+      "Arrange safe discharge with medication reconciliation and home support"
     ],
     "criticalHistoryItems": [
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "otc_nsaid_use"
     ],
     "criticalExamItems": [
       "palpate_ruq",
-      "auscultate_aortic_area",
+      "auscultate_mitral_area",
       "obtain_orthostatic_vitals"
     ],
     "criticalWorkupItems": [
@@ -765,24 +856,25 @@
       "Troponin"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
-      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+      "Atrial fibrillation with a rapid ventricular response (~118 bpm); old inferior infarct Q waves in II/III/aVF; NO acute ST-elevation or ischemia.",
+      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, and small bilateral pleural effusions — a congestive pattern favoring heart failure over a COPD exacerbation."
     ],
     "criticalManagementItems": [
-      "IV loop diuretic"
+      "IV loop diuretic",
+      "Rate-control new AF and assess stroke risk (CHA2DS2-VASc) for anticoagulation"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
-      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+      "Atrial fibrillation with a rapid ventricular response (~118 bpm); old inferior infarct Q waves in II/III/aVF; NO acute ST-elevation or ischemia.",
+      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, and small bilateral pleural effusions — a congestive pattern favoring heart failure over a COPD exacerbation."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus rhythm ~96. Old inferior infarct: Q waves in II/III/aVF. NO acute ST elevation or ischemia.",
-      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, small bilateral pleural effusions."
+      "Atrial fibrillation with a rapid ventricular response (~118 bpm); old inferior infarct Q waves in II/III/aVF; NO acute ST-elevation or ischemia.",
+      "Cardiomegaly, cephalization, Kerley B lines, interstitial edema, and small bilateral pleural effusions — a congestive pattern favoring heart failure over a COPD exacerbation."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An irregularly irregular fast rhythm is atrial fibrillation — name it, then judge whether it is a precipitant of the presentation rather than treating it in isolation.",
+      "A congestive (non-hyperinflated) film favors heart failure over a COPD exacerbation in a smoker who is breathless.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -797,7 +889,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (adherence, OTC meds, home support)",
         "points": 1
       },
       {
@@ -812,9 +904,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG (atrial fibrillation as precipitant); congestive CXR",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

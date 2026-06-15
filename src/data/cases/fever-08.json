@@ -1,51 +1,56 @@
 {
   "id": "fever-08",
   "category": "Fever",
-  "difficulty": "moderate",
-  "title": "Fever with a hot, swollen knee",
+  "difficulty": "hard",
+  "title": "Fever with a hot, swollen knee in a gouty diabetic",
   "diagnosis": "Septic arthritis",
   "chart": {
     "ageSex": "58M",
     "cc": "Painful, swollen, hot knee",
-    "oneLiner": "58M presents with 2 days of a rapidly swelling, hot, exquisitely painful right knee and fever, now unable to bear weight.",
+    "oneLiner": "58M with gout, type 2 diabetes, and hypertension presents with 2 days of a rapidly swelling, hot, exquisitely painful right knee and fever, now unable to bear weight; he was treated for a gout flare weeks ago and has been taking ibuprofen.",
     "vitals": {
-      "BP": "124/76",
-      "HR": "104",
-      "RR": "18",
-      "Temp": "38.6°C",
-      "SpO2": "97% RA"
+      "BP": "118/74",
+      "HR": "108",
+      "RR": "20",
+      "Temp": "38.7°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
   "opening": "My right knee blew up over a couple of days, it's hot and so painful I can't put any weight on it, and I've been feverish.",
-  "patientFile": "PERSONA: 58-year-old man, uncomfortable, guarding the right knee and reluctant to move it. Cooperative but in pain.\n\nHPI: 2 days of rapidly worsening pain, swelling, warmth, and redness over the RIGHT knee, with fevers and chills. The pain is severe and constant, much worse with any movement; he cannot bear weight. NO antecedent trauma. He has gout and was treated for a flare a few weeks ago, but says this feels far worse and came with fevers (only if asked). He had a dental procedure about 10 days ago (only if asked about recent procedures/infections). NO other hot/swollen joints, NO back pain, NO new sexual partners or urethral discharge, NO rash, NO tick exposure or recent travel (these help sort the differential). Single joint only.\nPMH: gout, type 2 diabetes, hypertension. MEDS: allopurinol, metformin, lisinopril; took ibuprofen for the pain with little relief. SOCIAL: drinks 2-3 beers most nights; nonsmoker; no injection drug use.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, lying still, holding the right knee slightly flexed.\n- Vitals: BP 124/76, HR 104, RR 18, 38.6°C, SpO2 97% RA.\n- Right knee: markedly swollen with a tense effusion, warm and erythematous; exquisitely tender; holds it in slight flexion and resists/refuses any passive or active range of motion because of pain. Overlying skin intact, NO laceration or puncture, NO crepitus, NO fluctuant abscess.\n- Calf soft, NO cord or severe calf tenderness (helps distinguish DVT). Distal pulses intact, foot well perfused.\n- No other joint swelling; no tophi acutely visible; no rash; no track marks.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior gout flare, the recent dental procedure, or the alcohol use unless asked about prior joint problems, recent procedures/infections, or alcohol respectively.\n- The intact overlying skin, absence of other joints involved, and absence of necrotizing/crepitus features are revealed only if examined/asked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 58-year-old man, uncomfortable, guarding the right knee and reluctant to move it. Cooperative but in pain. He keeps wondering aloud whether this is just another gout attack like before.\n\nHPI: 2 days of rapidly worsening pain, swelling, warmth, and redness over the RIGHT knee, with fevers and chills. The pain is severe and constant, much worse with any movement; he cannot bear weight. NO antecedent trauma. He has gout and was treated for a flare a few weeks ago, but says this feels far worse and came with fevers (only if asked). He had a dental procedure about 10 days ago (only if asked about recent procedures/infections). He took ibuprofen around the clock for several days for the pain with little relief (only if asked about medications/what he tried). His home blood sugars have been running high lately and he has not been to clinic in a while (only if asked about his diabetes control). NO other hot/swollen joints, NO back pain, NO new sexual partners or urethral discharge, NO rash, NO tick exposure or recent travel (these help sort the differential). Single joint only.\nPMH: gout (recent flare), type 2 diabetes (last A1c he recalls was high, ~9%), hypertension, mild diabetic kidney disease mentioned once by his doctor. MEDS: allopurinol, metformin, lisinopril; took ibuprofen (NSAID) around the clock for this pain. SOCIAL: drinks 2-3 beers most nights; nonsmoker; no injection drug use. ROS: feels weak and a little nauseated; no chest pain, no palpitations, no shortness of breath; urinating less than usual the last day (only if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, lying still, holding the right knee slightly flexed; looks unwell and mildly dehydrated.\n- Vitals: BP 118/74, HR 108, RR 20, 38.7°C, SpO2 96% RA.\n- Right knee: markedly swollen with a tense effusion, warm and erythematous; exquisitely tender; holds it in slight flexion and resists/refuses any passive or active range of motion because of pain. Overlying skin intact, NO laceration or puncture, NO crepitus, NO fluctuant abscess.\n- Mucous membranes dry; reduced skin turgor (mildly volume down from poor intake, fever, and hyperglycemia).\n- Calf soft, NO cord or severe calf tenderness (helps distinguish DVT). Distal pulses intact, foot well perfused.\n- No other joint swelling; no tophi acutely visible; no rash; no track marks.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior gout flare, the recent dental procedure, the around-the-clock ibuprofen, the poor diabetes control/reduced urine output, or the alcohol use unless asked about prior joint problems, recent procedures/infections, medications, diabetes control/urination, or alcohol respectively.\n- The intact overlying skin, absence of other joints involved, dry mucous membranes, and absence of necrotizing/crepitus features are revealed only if examined/asked.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "SynovialFluid": "Arthrocentesis: cloudy/purulent fluid, WBC 78,000/µL with 92% neutrophils — strongly suggests septic arthritis. NO crystals seen.",
+      "SynovialFluid": "Arthrocentesis: cloudy/purulent fluid, WBC 78,000/µL with 92% neutrophils — strongly suggests septic arthritis. NO crystals seen under polarized light (no negatively birefringent monosodium urate, no positively birefringent CPPD).",
       "SynovialGramStainCulture": "Gram stain: gram-positive cocci in clusters; culture pending (Staphylococcus aureus most likely). Send for routine culture.",
-      "CBC": "WBC 16.5 with neutrophilia and left shift.",
+      "CBC": "WBC 16.5 with neutrophilia and left shift; Hgb 13.8; Plt 240.",
       "Inflammatory": "ESR 88 and CRP 19 — markedly elevated.",
       "BloodCultures": "Two sets drawn before antibiotics; may be positive (bacteremic seeding) — important to obtain first.",
-      "UricAcid": "7.8 — mildly elevated but a normal/high serum uric acid neither confirms nor excludes gout, and does NOT exclude infection."
+      "BMP": "Na 132, K 5.8 (elevated), Cl 96, HCO3 19 (low), BUN 34, Cr 2.1 (up from a baseline ~1.0 — acute kidney injury), glucose 310. Anion gap = 132 − (96 + 19) = 17 (elevated). Picture of NSAID/ACE-inhibitor- and sepsis-related AKI with hyperkalemia, a mild anion-gap metabolic acidosis, and hyperglycemia.",
+      "Lactate": "2.4 mmol/L — mildly elevated, consistent with sepsis/hypoperfusion and contributing to the anion gap.",
+      "UricAcid": "7.8 — mildly elevated, but a normal/high serum uric acid neither confirms nor excludes gout and does NOT exclude infection (it is often normal or low during an acute flare)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia ~104 with normal axis and intervals; no acute ischemic ST/T changes.",
-      "verify": "Source a study matching: Sinus tachycardia ~104 with normal axis and intervals; no acute ischemic ST/T changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia ~108 with tall, narrow, symmetrically PEAKED T waves (best seen in the precordial leads) — hyperkalemia from the acute kidney injury; QRS not yet widened, no acute ischemic ST changes.",
+      "verify": "Source a study matching: sinus tachycardia with tall peaked symmetric T waves of hyperkalemia, no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia",
+      "integrated": true,
+      "litflStudyN": 3,
+      "imageDescription": "12-lead showing sinus tachycardia with peaked T waves of hyperkalemia",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead"
+        "hyperkalemia peaked T waves ECG",
+        "hyperkalaemia ECG litfl"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 52-year-old man with a hot, swollen, painful knee and fever has an ECG recorded."
+      "clinicalVignette": "A 58-year-old man with gout, diabetes, a hot swollen knee, fever, and a creatinine that has risen to 2.1 has an ECG recorded."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,7 +66,7 @@
         "normal chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 48-year-old woman with fever and an acutely swollen joint undergoes a screening chest film."
+      "clinicalVignette": "A 58-year-old man with fever and an acutely swollen joint undergoes a screening chest film to look for a pulmonary source of bacteremia."
     }
   },
   "revealKeys": [
@@ -70,6 +75,8 @@
     "CBC",
     "Inflammatory",
     "BloodCultures",
+    "BMP",
+    "Lactate",
     "UricAcid",
     "ekg",
     "cxr"
@@ -84,44 +91,53 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this acute monoarthritis (note your leading diagnosis).",
-      "rubric": "Septic arthritis (leading,7). Crystal arthropathy — gout/pseudogout (CANT-MISS to distinguish,5). Disseminated gonococcal/Lyme arthritis (core,3). Hemarthrosis/trauma (core,2). Reactive arthritis or acute monoarticular flare of inflammatory arthritis (core,2). Names septic arthritis and the imperative to aspirate the joint to distinguish infection from crystals (core,6).",
-      "idealAnswer": "Leading diagnosis: Septic arthritis. Must-not-miss/must-distinguish: Crystal arthropathy — gout/pseudogout. Also reasonable: Disseminated gonococcal/Lyme arthritis; Hemarthrosis/trauma; Reactive arthritis or monoarticular inflammatory flare. Key point: an acute hot swollen joint is septic until arthrocentesis proves otherwise.",
+      "prompt": "Based on your history and physical, list your differential for this acute monoarthritis (note your leading diagnosis). This man has known gout and took ibuprofen — argue why this is NOT simply a gout flare. Also name three distinct mechanisms/sources by which a native joint becomes septically infected.",
+      "rubric": "Septic arthritis (leading,6). Acute crystal arthropathy — gout/pseudogout flare, the genuine competitor given his gout history and prior flare (CANT-MISS to distinguish,5). Disseminated gonococcal/Lyme arthritis (core,2). Hemarthrosis/trauma (core,1). Reactive arthritis or acute monoarticular flare of inflammatory arthritis (core,1). Names septic arthritis and the imperative to aspirate the joint to distinguish infection from crystals — fever, diabetes, recent dental procedure, and failure of NSAIDs all argue against a simple flare (core,4). Names three mechanisms of joint infection — hematogenous seeding (bacteremia, e.g., after the dental procedure), direct inoculation (trauma/injection/recent intra-articular procedure), and contiguous spread from adjacent osteomyelitis/cellulitis (core,6).",
+      "idealAnswer": "Leading diagnosis: Septic arthritis. The genuine competitor is an acute crystal arthropathy (gout/pseudogout) flare — he has gout and was treated for a flare weeks ago — but several features argue AGAINST a simple flare: high fever and rigors, type 2 diabetes (immunocompromise), a dental procedure ~10 days ago (a bacteremia source), and failure to improve on around-the-clock ibuprofen. Crucially, gout and infection can COEXIST, so the joint must be aspirated regardless. Also reasonable: disseminated gonococcal or Lyme arthritis; hemarthrosis/trauma; reactive arthritis or a monoarticular inflammatory flare. Three mechanisms by which a joint becomes infected: (1) hematogenous seeding from bacteremia (e.g., transient bacteremia after his dental procedure) — the most common; (2) direct inoculation from trauma, a bite, injection, or a recent intra-articular procedure; and (3) contiguous spread from adjacent osteomyelitis or overlying cellulitis. Key point: an acute hot swollen joint is septic until arthrocentesis proves otherwise.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Septic arthritis",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Crystal arthropathy — gout/pseudogout",
+            "item": "Acute crystal arthropathy — gout/pseudogout flare",
             "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "Disseminated gonococcal/Lyme arthritis",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Hemarthrosis/trauma",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Reactive arthritis or monoarticular inflammatory flare",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Names septic arthritis and the imperative to aspirate the joint to distinguish infection from crystals",
+            "item": "Argues against a simple gout flare (fever, diabetes, dental procedure, NSAID failure) and that infection/crystals can coexist — must aspirate",
+            "points": 4
+          },
+          {
+            "item": "Names three mechanisms of joint infection — hematogenous seeding, direct inoculation, contiguous spread",
             "points": 6
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a gout flare and defers aspiration because the patient has known gout",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Crystal arthropathy — gout/pseudogout"
+        "Acute crystal arthropathy — gout/pseudogout flare"
       ],
       "acceptableAlternatives": [
         "Disseminated gonococcal/Lyme arthritis",
@@ -135,8 +151,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Arthrocentesis with synovial fluid cell count/differential (CANT-MISS,4). Synovial Gram stain, culture, AND crystal analysis (CANT-MISS,4). Blood cultures BEFORE antibiotics (CANT-MISS,3). CBC + ESR/CRP (2). Serum uric acid is NOT useful to exclude infection (2). PENALTY: starting antibiotics before drawing blood cultures and aspirating the joint (delays/obscures diagnosis) (-3).",
-      "idealAnswer": "Order: EKG; CXR; Synovial fluid; Synovial gram stain culture; CBC; Inflammatory markers; Blood cultures; Uric acid.",
+      "rubric": "Arthrocentesis with synovial fluid cell count/differential (CANT-MISS,4). Synovial Gram stain, culture, AND crystal analysis under polarized light (CANT-MISS,3). Blood cultures BEFORE antibiotics (CANT-MISS,3). BMP to check renal function/potassium/glucose given NSAID + ACE-inhibitor + sepsis (2). CBC + ESR/CRP and lactate (1). Serum uric acid is NOT useful to exclude infection and is often normal in a flare (1). EKG and CXR (1). PENALTY: starting antibiotics before drawing blood cultures and aspirating the joint (delays/obscures diagnosis) (-3); giving another NSAID/ibuprofen for presumed gout in the setting of rising creatinine and hyperkalemia (-2).",
+      "idealAnswer": "Order: arthrocentesis with synovial fluid cell count/differential; synovial Gram stain, culture, AND crystal analysis under polarized light; blood cultures BEFORE antibiotics; BMP (he is on an NSAID and an ACE-inhibitor and is septic — check renal function, potassium, and glucose); CBC; ESR/CRP; lactate; serum uric acid (acknowledging it neither confirms nor excludes anything); EKG; CXR. Do NOT give more ibuprofen given the rising creatinine.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,8 +161,8 @@
             "points": 4
           },
           {
-            "item": "Synovial Gram stain, culture, and crystal analysis",
-            "points": 4
+            "item": "Synovial Gram stain, culture, and crystal analysis under polarized light",
+            "points": 3
           },
           {
             "item": "Blood cultures before antibiotics",
@@ -155,24 +171,20 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "BMP to assess renal function, potassium, and glucose",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "CBC, inflammatory markers (ESR/CRP), and lactate",
+            "points": 1
           },
           {
-            "item": "CBC",
-            "points": 2
+            "item": "Uric acid (acknowledging it does not exclude infection)",
+            "points": 1
           },
           {
-            "item": "Inflammatory markers",
-            "points": 2
-          },
-          {
-            "item": "Uric acid",
-            "points": 2
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -180,17 +192,27 @@
           {
             "item": "starting antibiotics before drawing blood cultures and aspirating the joint",
             "points": -3
+          },
+          {
+            "item": "giving more NSAID/ibuprofen for presumed gout despite rising creatinine and hyperkalemia",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
         "Arthrocentesis with synovial fluid cell count and differential",
-        "Synovial Gram stain, culture, and crystal analysis",
+        "Synovial Gram stain, culture, and crystal analysis under polarized light",
         "Blood cultures before antibiotics"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "BMP to assess renal function, potassium, and glucose",
+        "CBC, inflammatory markers (ESR/CRP), and lactate",
+        "Uric acid (acknowledging it does not exclude infection)",
+        "EKG and CXR"
+      ],
       "contraindicatedTests": [
-        "starting antibiotics before drawing blood cultures and aspirating the joint"
+        "starting antibiotics before drawing blood cultures and aspirating the joint",
+        "giving more NSAID/ibuprofen for presumed gout despite rising creatinine and hyperkalemia"
       ],
       "orderSensitiveActions": [
         "starting antibiotics before drawing blood cultures and aspirating the joint"
@@ -202,32 +224,35 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia from fever/pain) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and their relevance to the rest of his presentation.",
+      "rubric": "Findings = sinus tachycardia with tall, narrow, symmetrically PEAKED T waves of HYPERKALEMIA, attributable to his acute kidney injury (NSAID + ACE-inhibitor + sepsis); QRS not yet widened; no acute ischemia. CREDIT: identifies sinus tachycardia and the peaked T waves of hyperkalemia (8); links it to the AKI/elevated potassium on the BMP and flags it as needing urgent treatment (5); systematic read (2). PENALTY: calling the tracing a normal sinus tachycardia and missing the peaked T waves (-3); over-calling ischemia (-2).",
       "keyFindings": [
-        "recognizes sinus tachycardia",
-        "systematic read confirming no acute ischemia"
+        "sinus tachycardia",
+        "tall peaked symmetric T waves of hyperkalemia",
+        "links peaked T waves to the AKI/elevated potassium needing urgent treatment"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; no acute ischemic changes."
+        "Sinus tachycardia with peaked T waves of hyperkalemia from the acute kidney injury; QRS not yet widened; no acute ischemia."
       ],
       "commonMistakes": [
+        "reading it as a plain sinus tachycardia and missing the peaked T waves",
         "over-reading benign rate-related ST/T changes as ischemia"
       ],
-      "idealAnswer": "Sinus tachycardia (~104), normal axis and intervals; no acute ischemic ST/T changes — a compensatory response to fever and pain.",
+      "idealAnswer": "Sinus tachycardia (~108) with tall, narrow, symmetrically peaked T waves — the earliest EKG sign of HYPERKALEMIA — best seen in the precordial leads, with the QRS not yet widened and no acute ischemic ST changes. This is the cardiac footprint of his acute kidney injury (K 5.8 on the BMP, driven by sepsis plus his NSAID and ACE-inhibitor). It is an electrolyte emergency that needs urgent treatment in parallel with managing the joint infection.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia; no acute ischemic changes."
+          "Sinus tachycardia with peaked T waves of hyperkalemia from the acute kidney injury; QRS not yet widened; no acute ischemia."
         ],
         "coreActions": [
-          "recognizes sinus tachycardia",
-          "systematic read confirming no acute ischemia"
+          "sinus tachycardia",
+          "tall peaked symmetric T waves of hyperkalemia",
+          "links peaked T waves to the AKI/elevated potassium needing urgent treatment"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study a normal sinus tachycardia / misses the peaked T waves of hyperkalemia",
             "points": -3
           }
         ]
@@ -240,7 +265,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it screens for a pulmonary source of bacteremia (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it screens for a pulmonary source of bacteremia or septic emboli (4). PENALTY: inventing pathology (-3).",
       "keyFindings": [
         "identifies a normal chest film",
         "notes it screens for a pulmonary source/septic emboli"
@@ -264,7 +289,7 @@
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study abnormal / invents pathology",
             "points": -3
           }
         ]
@@ -274,9 +299,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Synovial fluid is purulent with WBC 78,000 (92% neutrophils), gram-positive cocci in clusters on Gram stain, and NO crystals; ESR/CRP markedly elevated. What is your diagnosis and what did you rule out?",
-      "rubric": "Septic arthritis (likely Staphylococcus aureus) (6). Cites the markedly elevated synovial WBC with neutrophil predominance and positive Gram stain; explicitly excludes crystal arthropathy by the ABSENCE of crystals (and notes infection and crystals can coexist) (4).",
-      "idealAnswer": "Septic arthritis, most likely Staphylococcus aureus — purulent synovial fluid with WBC 78,000 (92% neutrophils) and gram-positive cocci in clusters on Gram stain, with markedly elevated ESR/CRP. Crystal arthropathy is argued against by the absence of crystals, though infection and crystals can coexist so it is not fully excluded by a positive crystal study.",
+      "prompt": "Synovial fluid is purulent with WBC 78,000 (92% neutrophils), gram-positive cocci in clusters on Gram stain, and NO crystals; ESR/CRP markedly elevated. The BMP shows Cr 2.1 (up from ~1.0), K 5.8, HCO3 19 with an anion gap of 17, and glucose 310, and the EKG shows peaked T waves. What is your unifying diagnosis, what did you rule out, and what concurrent problems must you address?",
+      "rubric": "Septic arthritis (likely Staphylococcus aureus) (5). Cites the markedly elevated synovial WBC with neutrophil predominance and positive Gram stain; explicitly argues against a pure crystal arthropathy by the ABSENCE of crystals while noting infection and crystals can coexist so a flare is not fully excluded — the discriminating test was the arthrocentesis (3). Recognizes the CONCURRENT problems as a second, separate thread: acute kidney injury (NSAID + ACE-inhibitor + sepsis) with hyperkalemia (peaked T waves on EKG), a mild anion-gap metabolic acidosis (lactate), and hyperglycemia — not all of which point to the joint (2).",
+      "idealAnswer": "Septic arthritis, most likely Staphylococcus aureus — purulent synovial fluid with WBC 78,000 (92% neutrophils) and gram-positive cocci in clusters on Gram stain, with markedly elevated ESR/CRP and a plausible bacteremic source (recent dental procedure). The discriminating test was the arthrocentesis. A pure gout/pseudogout flare is argued against by the ABSENCE of crystals, but because infection and crystals can coexist, a concurrent flare is not fully excluded by crystal analysis alone. Separately, this is NOT a single-system problem: he has an acute kidney injury (creatinine 2.1 from ~1.0, driven by sepsis on top of his NSAID and ACE-inhibitor) with HYPERKALEMIA (K 5.8, peaked T waves on the EKG), a mild anion-gap metabolic acidosis (gap 17, partly lactate), and hyperglycemia (glucose 310). These concurrent abnormalities must be treated in parallel with the joint infection.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -289,36 +314,44 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH septic arthritis: URGENT joint drainage — orthopedics/rheumatology for arthroscopic/surgical washout or serial aspiration (CANT-MISS,7); empiric IV antibiotics AFTER cultures, covering Staphylococcus including MRSA — vancomycin (CANT-MISS,7); add gram-negative coverage (e.g., ceftriaxone/cefepime) if at risk or Gram stain suggests (3); admit and consult orthopedics (4); narrow therapy by culture and complete ~3-4 week course (2); analgesia and treat sepsis/source (2). PENALTY: relying on antibiotics alone without joint drainage (-3); treating as a simple gout flare and discharging (-3).",
-      "idealAnswer": "Admit. Urgent joint drainage (orthopedic surgical washout or serial therapeutic aspiration) — antibiotics alone are inadequate. Empiric IV antibiotics started AFTER blood and synovial cultures: vancomycin for staph/MRSA coverage; add gram-negative coverage (ceftriaxone, or cefepime/antipseudomonal if immunocompromised/at risk) guided by Gram stain. Consult orthopedics. Narrow therapy once cultures return; typical total course ~3-4 weeks. Analgesia, source control, and treat any associated sepsis. Do not anchor on a gout flare.",
+      "prompt": "What is your management plan, including how you handle his concurrent abnormalities and his disposition?",
+      "rubric": "Per MGH septic arthritis: URGENT joint drainage — orthopedics/rheumatology for arthroscopic/surgical washout or serial aspiration (CANT-MISS,6); empiric IV antibiotics AFTER cultures, covering Staphylococcus including MRSA — vancomycin (CANT-MISS,6); treat the HYPERKALEMIA urgently (calcium for membrane stabilization given EKG changes, insulin+glucose/beta-agonist to shift, and stop the offending agents) and hold the NSAID, ACE-inhibitor, and metformin given the AKI (CANT-MISS,4); admit and consult orthopedics; add gram-negative coverage if at risk or Gram stain suggests (3); IV fluids for sepsis/AKI, manage hyperglycemia, narrow therapy by culture and complete ~3-4 week course (2); analgesia (2). Safe disposition — ADMIT (not discharge): this is a surgical/medical emergency; arrange ortho follow-up, medication reconciliation (do not resume the NSAID; reassess the ACE-inhibitor and metformin with renal recovery), diabetes/gout education, and close follow-up (2). PENALTY: relying on antibiotics alone without joint drainage (-3); discharging the patient as a gout flare or continuing the NSAID/ACE-inhibitor despite AKI and hyperkalemia (-4).",
+      "idealAnswer": "Admit — this is a combined surgical and medical emergency, not a safe discharge. URGENT joint drainage (orthopedic surgical washout or serial therapeutic aspiration) — antibiotics alone are inadequate. Empiric IV antibiotics started AFTER blood and synovial cultures: vancomycin for staph/MRSA coverage; add gram-negative coverage (ceftriaxone, or cefepime/antipseudomonal if at higher risk) guided by Gram stain and his diabetes. Treat the HYPERKALEMIA urgently because of the EKG changes: IV calcium to stabilize the myocardium, insulin with glucose (also helps his hyperglycemia) and/or a nebulized beta-agonist to shift potassium, and a binder/diuresis to remove it; STOP the ibuprofen, hold the lisinopril, and hold metformin given the AKI and acidosis. IV fluids for sepsis and the AKI, manage the hyperglycemia, and recheck renal function and potassium. Consult orthopedics. Narrow antibiotics once cultures return; typical total course ~3-4 weeks. Analgesia (avoid further NSAIDs). For disposition: admit; plan medication reconciliation (do NOT resume the NSAID, reassess the ACE-inhibitor and metformin as renal function recovers), counsel him that this was infection rather than a simple gout flare, provide diabetes and gout education, and arrange close orthopedic and primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Urgent joint drainage (surgical washout or serial aspiration)",
-            "points": 7
+            "points": 6
           },
           {
             "item": "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Treat hyperkalemia urgently (calcium, insulin/glucose, beta-agonist) and stop the NSAID/ACE-inhibitor/metformin given the AKI",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Admit and consult orthopedics",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Add gram-negative coverage if at risk or per Gram stain",
             "points": 3
           },
           {
-            "item": "Narrow by culture and complete ~3-4 week course",
+            "item": "IV fluids for sepsis/AKI, manage hyperglycemia, narrow by culture and complete ~3-4 week course",
             "points": 2
           },
           {
-            "item": "Analgesia and treat sepsis/source",
+            "item": "Analgesia (avoiding further NSAIDs)",
+            "points": 2
+          },
+          {
+            "item": "Safe disposition: admit, med reconciliation (no NSAID, reassess ACE-inhibitor/metformin), gout/diabetes education, close follow-up",
             "points": 2
           }
         ],
@@ -327,21 +360,28 @@
           {
             "item": "Relying on antibiotics alone without joint drainage",
             "points": -3
+          },
+          {
+            "item": "Discharging as a gout flare or continuing the NSAID/ACE-inhibitor despite AKI and hyperkalemia",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
         "Urgent joint drainage (surgical washout or serial aspiration)",
-        "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures"
+        "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures",
+        "Treat hyperkalemia urgently (calcium, insulin/glucose, beta-agonist) and stop the NSAID/ACE-inhibitor/metformin given the AKI"
       ],
       "optionalActions": [
         "Admit and consult orthopedics",
         "Add gram-negative coverage if at risk or per Gram stain",
-        "Narrow by culture and complete ~3-4 week course",
-        "Analgesia and treat sepsis/source"
+        "IV fluids for sepsis/AKI, manage hyperglycemia, narrow by culture and complete ~3-4 week course",
+        "Analgesia (avoiding further NSAIDs)",
+        "Safe disposition: admit, med reconciliation (no NSAID, reassess ACE-inhibitor/metformin), gout/diabetes education, close follow-up"
       ],
       "unsafeActions": [
-        "Relying on antibiotics alone without joint drainage"
+        "Relying on antibiotics alone without joint drainage",
+        "Discharging as a gout flare or continuing the NSAID/ACE-inhibitor despite AKI and hyperkalemia"
       ],
       "consults": [
         "Orthopedic Surgery",
@@ -366,9 +406,10 @@
       "sexual_history"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "58-year-old man, uncomfortable, guarding the right knee and reluctant to move it. Cooperative but in pain.",
+    "affect": "58-year-old man, uncomfortable, guarding the right knee and reluctant to move it; keeps wondering if it is just another gout attack. Cooperative but in pain.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, sexual history) unless directly asked",
+      "Do not volunteer the prior gout flare, recent dental procedure, around-the-clock ibuprofen, or poor diabetes control/reduced urine output unless asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -385,7 +426,7 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "I usually have a couple of beers, maybe two or three most nights.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -399,7 +440,7 @@
         "how long",
         "duration"
       ],
-      "response": "It came on fast — over about two days the knee swelled up and got really hot and painful.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -414,7 +455,7 @@
         "fall",
         "twist it"
       ],
-      "response": "No, I didn't injure it or twist it — nothing like that happened.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -429,7 +470,7 @@
         "had this before",
         "prior flares"
       ],
-      "response": "I do get gout, and I had a flare treated a few weeks ago — but this feels way worse and I've had fevers with it.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -444,7 +485,23 @@
         "surgery",
         "skin infection lately"
       ],
-      "response": "I had a dental procedure about ten days ago. No skin infections or other surgeries that I can think of.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diabetes_control_urine",
+      "category": "pmh",
+      "triggerConcepts": [
+        "diabetes control",
+        "blood sugars",
+        "a1c",
+        "urinating",
+        "urine output",
+        "kidney"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -458,7 +515,7 @@
         "multiple joints",
         "joints elsewhere"
       ],
-      "response": "No, it's just this one knee — no other joints are bothering me.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -473,7 +530,7 @@
         "sweats",
         "temperature"
       ],
-      "response": "Yes, I've been feverish with chills since this started.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -488,7 +545,7 @@
         "urethral discharge",
         "STI symptoms"
       ],
-      "response": "I've been with the same partner for years, no new partners, and no discharge or burning when I pee.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -503,7 +560,7 @@
         "outdoors",
         "Lyme exposure"
       ],
-      "response": "No tick bites, no rash, and I haven't traveled anywhere recently.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -514,11 +571,13 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "ibuprofen",
+        "allopurinol"
       ],
-      "response": "I take allopurinol for gout, metformin for diabetes, and lisinopril for blood pressure. I tried ibuprofen for this but it barely helped.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
-      "points": 1,
+      "points": 2,
       "hiddenUntilAsked": false
     }
   ],
@@ -544,7 +603,17 @@
       "normalIfNotPresent": "Overlying skin intact and unremarkable."
     },
     {
-      "id": "assess_calf_tenderness_finding_3",
+      "id": "assess_mucous_membranes_finding_3",
+      "finding": "Mucous membranes dry; mild reduction in skin turgor — mildly volume down from fever, poor intake, and hyperglycemia (relevant to the acute kidney injury).",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes, normal turgor."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_4",
       "finding": "Calf soft, NO cord or severe calf tenderness; symmetric — helps distinguish DVT.",
       "revealedBy": [
         "assess_calf_tenderness"
@@ -554,7 +623,7 @@
       "normalIfNotPresent": "Calves soft and nontender, symmetric."
     },
     {
-      "id": "assess_gait_finding_4",
+      "id": "assess_gait_finding_5",
       "finding": "Unable to bear weight on the right leg; refuses to ambulate because of severe knee pain.",
       "revealedBy": [
         "assess_gait"
@@ -564,23 +633,13 @@
       "normalIfNotPresent": "Gait steady and narrow-based."
     },
     {
-      "id": "assess_peripheral_pulses_finding_5",
-      "finding": "Distal pulses intact, foot well perfused; no limb-threatening ischemia.",
-      "revealedBy": [
-        "assess_peripheral_pulses"
-      ],
-      "importance": "core",
-      "points": 1,
-      "normalIfNotPresent": "Peripheral pulses 2+ and symmetric."
-    },
-    {
       "id": "assess_for_track_marks_finding_6",
       "finding": "No injection track marks; no peripheral stigmata of injection drug use or endocarditis.",
       "revealedBy": [
         "assess_for_track_marks"
       ],
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "normalIfNotPresent": "No track marks or injection stigmata."
     }
   ],
@@ -594,11 +653,12 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Septic arthritis",
-    "diagnosticFramework": "58M presents with 2 days of a rapidly swelling, hot, exquisitely painful right knee and fever, now unable to bear weight. The diagnosis is Septic arthritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup (arthrocentesis) while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58M with gout, type 2 diabetes, and hypertension presents with 2 days of a rapidly swelling, hot, exquisitely painful right knee and fever, now unable to bear weight, after a recent gout flare and around-the-clock ibuprofen. The diagnosis is Septic arthritis (likely Staphylococcus aureus), confirmed by arthrocentesis, with a recent dental procedure as the likely bacteremic source. The genuine competitor — an acute gout/pseudogout flare — is resolved by synovial fluid (purulent, WBC 78,000, gram-positive cocci, NO crystals), while recognizing infection and crystals can coexist. A SECOND concurrent thread is an acute kidney injury (NSAID + ACE-inhibitor + sepsis) with hyperkalemia (peaked T waves on EKG), a mild anion-gap metabolic acidosis, and hyperglycemia that must be managed in parallel.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Right knee: markedly swollen with a tense effusion, warm and erythematous; exquisitely tender; holds it in slight flexion and resists/refuses any passive or active range of motion because of pain.",
       "Right knee: warm and erythematous overlying skin that is intact — NO laceration, puncture, crepitus, or fluctuant abscess.",
+      "Mucous membranes dry; mild reduction in skin turgor — mildly volume down from fever, poor intake, and hyperglycemia (relevant to the acute kidney injury).",
       "Calf soft, NO cord or severe calf tenderness; symmetric — helps distinguish DVT.",
       "Unable to bear weight on the right leg; refuses to ambulate because of severe knee pain."
     ],
@@ -608,22 +668,28 @@
       "CBC",
       "Inflammatory",
       "BloodCultures",
+      "BMP",
+      "Lactate",
       "UricAcid"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Septic arthritis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Septic arthritis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the gout flare, recent dental procedure, around-the-clock ibuprofen, poor diabetes control, and reduced urine output only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the hot effusion and signs of volume depletion.",
+      "Build a differential with a genuine fork — septic arthritis vs an acute gout flare — and commit to aspiration regardless because infection and crystals can coexist.",
+      "Order a focused, order-sensitive workup (aspirate and culture before antibiotics) and interpret the integrated EKG (peaked T waves of hyperkalemia from AKI), CXR, and the multi-system labs.",
+      "Commit to Septic arthritis while recognizing the concurrent AKI/hyperkalemia/acidosis/hyperglycemia, and manage with urgent drainage, MRSA-active antibiotics, electrolyte correction, medication reconciliation, and safe admission/disposition."
     ],
     "commonPitfalls": [
-      "Relying on antibiotics alone without joint drainage"
+      "Anchoring on a gout flare and deferring arthrocentesis because the patient has known gout",
+      "Relying on antibiotics alone without joint drainage",
+      "Continuing the NSAID/ACE-inhibitor and missing the hyperkalemia and AKI",
+      "Discharging the patient as a simple gout flare"
     ],
     "managementPearls": [
       "Urgent joint drainage (surgical washout or serial aspiration)",
-      "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures"
+      "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures",
+      "Treat hyperkalemia urgently and stop the NSAID/ACE-inhibitor/metformin given the AKI"
     ],
     "criticalHistoryItems": [
       "prior_joint_problems"
@@ -633,29 +699,30 @@
     ],
     "criticalWorkupItems": [
       "Arthrocentesis with synovial fluid cell count and differential",
-      "Synovial Gram stain, culture, and crystal analysis",
+      "Synovial Gram stain, culture, and crystal analysis under polarized light",
       "Blood cultures before antibiotics"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Sinus tachycardia with peaked T waves of hyperkalemia from the acute kidney injury.",
       "No acute process (screens for a pulmonary source of bacteremia)."
     ],
     "criticalManagementItems": [
       "Urgent joint drainage (surgical washout or serial aspiration)",
-      "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures"
+      "Empiric IV antibiotics with MRSA coverage (vancomycin) after cultures",
+      "Treat hyperkalemia urgently and stop the NSAID/ACE-inhibitor/metformin given the AKI"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Sinus tachycardia with peaked T waves of hyperkalemia from the acute kidney injury.",
       "No acute cardiopulmonary process."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Sinus tachycardia with peaked T waves of hyperkalemia from the acute kidney injury.",
       "No acute cardiopulmonary process."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Peaked, narrow, symmetric T waves in a patient with AKI are the earliest EKG sign of hyperkalemia — name it and treat it urgently, do not call the tracing a plain sinus tachycardia.",
+      "The EKG can be the first place an electrolyte emergency declares itself; correlate it with the BMP.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -685,8 +752,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated pathology-forward interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

@@ -1,66 +1,70 @@
 {
   "id": "ams-04",
   "category": "Altered Mental Status",
-  "difficulty": "moderate",
-  "title": "Confusion with profound dehydration",
+  "difficulty": "hard",
+  "title": "Confusion and dehydration in a polypharmacy elder with diabetes, CKD, and heart failure",
   "diagnosis": "Hyperosmolar hyperglycemic state",
   "chart": {
-    "ageSex": "70F",
+    "ageSex": "74F",
     "cc": "Confusion",
-    "oneLiner": "70F with type 2 diabetes presents with several days of progressive confusion, polyuria, and profound dehydration.",
+    "oneLiner": "74F with type 2 diabetes, CKD stage 3, and heart failure with reduced ejection fraction presents with about a week of progressive confusion, polyuria, and profound dehydration after a recent course of oral steroids for a COPD flare and treatment for a urinary tract infection; she is on metformin, empagliflozin, hydrochlorothiazide, furosemide, lisinopril, and oxybutynin.",
     "vitals": {
-      "BP": "96/60",
-      "HR": "116",
-      "RR": "20",
-      "Temp": "37.9°C",
-      "SpO2": "97% RA"
+      "BP": "94/58",
+      "HR": "118",
+      "RR": "22",
+      "Temp": "37.8°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "So thirsty… I can't think straight.",
-  "patientFile": "PERSONA: 70-year-old woman, lethargic, very dry, confused. Poor historian.\n\nCOLLATERAL (provide ONLY if the student asks family/chart/medication list): Over the past several days she's had increasing thirst, frequent urination, and progressive confusion. Reduced intake the last day. Had a cough/cold recently (possible infectious precipitant). Type 2 diabetes, sometimes misses her metformin. No insulin. MEDS: metformin, lisinopril, hydrochlorothiazide.\n\nHPI (from patient — limited): very thirsty, confused, weak.\nPMH: type 2 diabetes, hypertension. SOCIAL: lives alone.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: lethargic, profoundly dehydrated (dry mucous membranes, poor skin turgor, sunken eyes).\n- Vitals: BP 96/60, HR 116, RR 20, 37.9°C, SpO2 97% RA.\n- Neuro: confused/lethargic, no focal deficit, no neck stiffness.\n- NO fruity/ketotic breath odor (helps distinguish from DKA). Cardiac: tachycardic.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is confused: vague answers. Provide COLLATERAL (polyuria/polydipsia, missed metformin, recent cold) only when explicitly asked family/chart/what happened.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "So thirsty… everything's foggy. I can't keep my thoughts straight.",
+  "patientFile": "PERSONA: 74-year-old woman, lethargic, very dry, confused. Poor historian who answers slowly and vaguely; needs collateral from her son and the medication list.\n\nCOLLATERAL (provide ONLY if the student asks family/chart/medication list or 'what happened'): Over the past week she has had increasing thirst and frequent urination, getting up many times at night, and progressively more confusion over the last 2-3 days. Intake dropped off badly the last day or two and she has been too weak to get her own drinks. About 10 days ago she was started on a course of prednisone (oral steroids) for a COPD/bronchitis flare, and a few days ago her primary doctor started an antibiotic for a urinary tract infection (burning, going more often, cloudy urine). She sometimes forgets her metformin but takes the rest fairly reliably. No insulin at home. She had one prior similar admission for very high sugars years ago.\n\nMEDS (reveal when asked about medications/the med list): metformin; empagliflozin (an SGLT2 inhibitor, a newer diabetes pill); hydrochlorothiazide; furosemide (a water pill for her heart); lisinopril; oxybutynin (for bladder/overactive bladder); a recently started prednisone taper; a recently started antibiotic for a UTI. No insulin.\n\nHPI (from patient — limited): very thirsty, foggy, weak, urinating a lot.\nPMH: type 2 diabetes (long-standing), chronic kidney disease (stage 3), heart failure with a weak heart (reduced ejection fraction), high blood pressure, COPD, recurrent urinary tract infections, overactive bladder. SOCIAL: lives alone in a second-floor walk-up; son lives 30 minutes away and visits weekly; she has had two falls in the last 3 months; uses no formal home help. No alcohol, former smoker. FAMILY: noncontributory. ROS: polyuria, polydipsia, generalized weakness, mild dysuria over the past few days; no chest pain, no focal weakness, no seizure, no headache, no recent head injury.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: lethargic, profoundly dehydrated (dry mucous membranes, very poor skin turgor, sunken eyes), looks her stated age or older.\n- Vitals: BP 94/58, HR 118, RR 22, 37.8 C, SpO2 96% RA. Marked orthostatic drop when stood/sat up.\n- Neuro: confused and lethargic, oriented to self only, no focal motor deficit, no pronator drift, no neck stiffness, no asterixis. Diffusely reduced reflexes and generalized weakness (consistent with hypokalemia).\n- Cardiac: tachycardic, regular; no murmur; JVP is LOW/flat (she is dry, NOT congested) despite her heart-failure history. No peripheral edema today.\n- Skin: warm; suprapubic mild tenderness; no cellulitis, no track marks.\n- NO fruity/ketotic breath odor (helps distinguish from DKA).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The patient is confused: give vague, brief answers. Provide the COLLATERAL details (week of polyuria/polydipsia, the steroid course, the new UTI antibiotic, the full med list including the SGLT2 inhibitor, the diuretics, and oxybutynin) only when the student explicitly asks family/chart/what happened/medications.\n- Reveal exam findings only when the relevant maneuver is performed; give normals when asked.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 'HIGH'; serum glucose 880 mg/dL.",
-      "SerumOsm": "Calculated/measured serum osmolality >330 mOsm/kg — markedly elevated.",
-      "Ketones": "Serum beta-hydroxybutyrate minimal; urine ketones trace (NOT the heavy ketosis of DKA).",
-      "VBG": "pH 7.34, HCO3 20 — only mild acidosis (no severe anion-gap acidosis).",
-      "BMP": "Na 148 (corrected higher), K 4.8, BUN 48, Cr 2.0 (prerenal), Glu 880.",
-      "Cultures": "Sepsis screen for precipitant — UA, CXR, cultures."
+      "Glucose": "Fingerstick glucose reads 'HIGH'; serum glucose 1050 mg/dL.",
+      "SerumOsm": "Effective serum osmolality markedly elevated: measured ~362 mOsm/kg. Calculated effective osm = 2*Na + glucose/18 = 2*150 + 1050/18 = 300 + 58 = 358 mOsm/kg (consistent with the measured value and with HHS, which requires effective osm >320).",
+      "Ketones": "Serum beta-hydroxybutyrate 0.8 mmol/L (minimally elevated); urine ketones trace. NOT the heavy ketosis of DKA. Note empagliflozin (an SGLT2 inhibitor) can blunt the glucose and unmask euglycemic ketoacidosis, so ketones must be checked and trended even though they are low here.",
+      "VBG": "pH 7.31, pCO2 32, HCO3 19. Only mild metabolic acidosis; partly explained by lactate from hypoperfusion rather than ketones.",
+      "AnionGap": "Anion gap = Na - (Cl + HCO3) = 150 - (108 + 19) = 23 (mildly elevated). Mixed picture: small contributions from lactate (hypoperfusion) and the minimal ketones, NOT a large ketoacidosis. Lactate 3.1 mmol/L.",
+      "BMP": "Na 150 (true hypernatremia; corrected Na = measured Na + 1.6*(glucose-100)/100 = 150 + 1.6*9.5 = 150 + 15 = 165, i.e. severe free-water deficit), K 3.1 (low — total-body potassium depleted by HCTZ/furosemide and osmotic diuresis; hold insulin until K corrected), Cl 108, HCO3 19, BUN 78, Cr 2.6 (baseline CKD Cr ~1.5, so acute-on-chronic kidney injury, prerenal), Glu 1050.",
+      "CBC": "WBC 16.5 with neutrophil predominance (precipitant: UTI +/- the recent COPD flare), Hgb 12.8, Plt 250.",
+      "UA_Cultures": "Urinalysis: positive leukocyte esterase and nitrites, many WBCs and bacteria, plus heavy glucosuria (expected on an SGLT2 inhibitor); trace ketones. Blood and urine cultures sent. CXR to screen for pneumonia as an alternate precipitant."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 6,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Irregular rhythm with at least three distinct P-wave morphologies and varying PP/PR/RR intervals; rate ~110.",
-      "verify": "Source a study matching: Irregular rhythm with at least three distinct P-wave morphologies and varying PP/PR/RR intervals; rate ~110. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~115 bpm with changes of hypokalaemia: flattened/inverted T waves, prominent U waves (most visible in the precordial leads), mild ST-segment depression, and an apparent long QU interval. No peaked T waves; no acute ST-elevation.",
+      "verify": "Source a study matching: sinus tachycardia with flattened T waves, prominent U waves, ST depression and a long QU interval (hypokalaemia pattern). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing multifocal atrial tachycardia",
+      "imageDescription": "12-lead showing sinus tachycardia with hypokalaemia changes — flattened T waves, prominent U waves, ST depression, long QU.",
       "searchTerms": [
-        "multifocal atrial tachycardia ECG",
-        "MAT three P wave morphologies"
+        "hypokalemia ECG U waves",
+        "flattened T wave prominent U wave long QU ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 70-year-old man with COPD presents drowsy and dehydrated, with an irregular fast pulse and varying P waves."
+      "clinicalVignette": "An elderly, dehydrated woman on a thiazide and a loop diuretic with profound polyuria has a fast tracing showing flattened T waves and prominent U waves."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Screen for pneumonia as a precipitant; here essentially clear.",
+      "findings": "Screen for pneumonia as a precipitant; here essentially clear, no consolidation, no pulmonary edema (consistent with the dry, volume-depleted state rather than decompensated heart failure).",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "Essentially clear chest radiograph, no consolidation.",
+      "imageDescription": "Essentially clear chest radiograph, no consolidation, no pulmonary congestion.",
       "searchTerms": [
         "normal PA chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 70-year-old man presents with profound confusion and dehydration, and a film is taken to screen for precipitating pneumonia."
+      "clinicalVignette": "A profoundly confused, dehydrated elderly woman has a film taken to screen for a precipitating pneumonia and to assess for heart-failure congestion."
     }
   },
   "revealKeys": [
@@ -68,8 +72,10 @@
     "SerumOsm",
     "Ketones",
     "VBG",
+    "AnionGap",
     "BMP",
-    "Cultures",
+    "CBC",
+    "UA_Cultures",
     "ekg",
     "cxr"
   ],
@@ -83,54 +89,67 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential (note your leading diagnosis).",
-      "rubric": "Hyperosmolar hyperglycemic state (leading,7). Diabetic ketoacidosis (core,4). Hypoglycemia (CANT-MISS to exclude,3). Sepsis (CANT-MISS,3). Stroke (CANT-MISS,3). Other metabolic/electrolyte (core,3). Named leading dx w/ justification — marked hyperglycemia, dehydration, minimal ketosis (core,2).",
-      "idealAnswer": "Leading diagnosis: Hyperosmolar hyperglycemic state. Must-not-miss diagnoses to exclude: Hypoglycemia; Sepsis; Stroke. Also reasonable: Diabetic ketoacidosis; Other metabolic/electrolyte.",
+      "prompt": "Based on your assessment of this confused, profoundly dehydrated diabetic elder, list your differential (note your leading diagnosis). Explicitly name THREE precipitants or mechanisms that can trigger a hyperglycemic crisis in a patient like this.",
+      "rubric": "Hyperosmolar hyperglycemic state (leading,6). Diabetic ketoacidosis — genuine competitor given the diabetes and the SGLT2 inhibitor that can mask glucose / cause euglycemic DKA (CANT-MISS,4). Hypoglycemia (CANT-MISS to exclude,2). Sepsis (CANT-MISS, also a precipitant,2). Stroke / intracranial process (CANT-MISS,2). Other metabolic/toxic-metabolic encephalopathy incl. hypernatremia, uremia, hypokalemia, medication effect (core,2). Names leading dx w/ justification — glucose ~1050, osm >330, minimal ketosis, no acidosis to speak of (core,2). Names three precipitants/mechanisms — infection (UTI/pneumonia), steroids/medications, dehydration/diuretics, non-adherence (core,3). Recognizes the SGLT2 inhibitor confounder requiring ketone check (core,2). PENALTY: committing to HHS or DKA without checking ketones/osm given the SGLT2 inhibitor (-3).",
+      "idealAnswer": "Leading diagnosis: Hyperosmolar hyperglycemic state. The strongest genuine competitor is Diabetic ketoacidosis — especially because she is on empagliflozin (an SGLT2 inhibitor), which can blunt the glucose and cause euglycemic DKA, so ketones and the gap must be checked before committing. Must-not-miss alternatives to exclude: Hypoglycemia, Sepsis (which is also a likely precipitant here), and Stroke / other intracranial process. Also consider toxic-metabolic encephalopathy from hypernatremia, uremia (CKD/AKI), hypokalemia, and the anticholinergic oxybutynin. Three precipitants/mechanisms of a hyperglycemic crisis in this patient: (1) infection — the new UTI (and possible pneumonia); (2) medications — the recent oral steroid course raising glucose, plus diuretic-driven dehydration; and (3) reduced free-water intake with osmotic diuresis from glucosuria on a background of relative insulin deficiency.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Hyperosmolar hyperglycemic state",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Diabetic ketoacidosis (including euglycemic DKA on SGLT2 inhibitor)",
+            "points": 4
           },
           {
             "item": "Hypoglycemia",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Sepsis",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Stroke",
-            "points": 3
+            "item": "Stroke / intracranial process",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Diabetic ketoacidosis",
-            "points": 4
+            "item": "Other toxic-metabolic encephalopathy (hypernatremia, uremia, hypokalemia, medication effect)",
+            "points": 2
           },
           {
-            "item": "Other metabolic/electrolyte",
+            "item": "Named leading dx w/ justification — glucose ~1050, osm >330, minimal ketosis, only mild acidosis",
+            "points": 2
+          },
+          {
+            "item": "Names three precipitants/mechanisms — infection, steroids/medications, dehydration/diuretics or non-adherence",
             "points": 3
           },
           {
-            "item": "Named leading dx w/ justification — marked hyperglycemia, dehydration, minimal ketosis",
+            "item": "Recognizes the SGLT2-inhibitor confounder requiring a ketone check",
             "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Commits to HHS or DKA without checking ketones/osmolality despite the SGLT2 inhibitor",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Diabetic ketoacidosis (including euglycemic DKA on SGLT2 inhibitor)",
         "Hypoglycemia",
         "Sepsis",
-        "Stroke"
+        "Stroke / intracranial process"
       ],
       "acceptableAlternatives": [
-        "Diabetic ketoacidosis",
-        "Other metabolic/electrolyte"
+        "Other toxic-metabolic encephalopathy (hypernatremia, uremia, hypokalemia, medication effect)"
       ]
     },
     {
@@ -139,8 +158,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Glucose (CANT-MISS,3). BMP/electrolytes incl. potassium (CANT-MISS,3). Serum osmolality (3). Serum/urine ketones + VBG to distinguish from DKA (3). Search for precipitant — UA, CXR, cultures (2). EKG (1). PENALTY: not checking potassium before planning insulin (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; Serum osmolality; Serum/urine ketones; VBG; BMP; Cultures.",
+      "rubric": "Glucose (CANT-MISS,3). BMP/electrolytes incl. potassium and corrected sodium (CANT-MISS,3). Serum osmolality (2). Serum/urine ketones + VBG and anion gap/lactate to distinguish HHS from DKA and detect euglycemic DKA on the SGLT2 inhibitor (2). Search for precipitant — UA + urine/blood cultures, CBC, CXR (2). EKG to look for hypokalemia/arrhythmia (2). CrCl/baseline renal function for the AKI-on-CKD (1). PENALTY: not checking potassium before planning insulin (-2); ordering CT head reflexively without a focal deficit before correcting glucose/osm/electrolytes (-1).",
+      "idealAnswer": "Order: Glucose; BMP with potassium and a corrected sodium calculation; Serum osmolality; serum beta-hydroxybutyrate and urine ketones; VBG with anion gap and lactate (to separate HHS from DKA and to catch euglycemic DKA from the SGLT2 inhibitor); CBC; UA with urine and blood cultures; CXR; EKG (looking specifically for hypokalemia changes). Note the baseline creatinine to characterize the acute-on-chronic kidney injury.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,32 +174,24 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
             "item": "Serum osmolality",
             "points": 2
           },
           {
-            "item": "Serum/urine ketones",
+            "item": "Serum/urine ketones with VBG, anion gap and lactate",
             "points": 2
           },
           {
-            "item": "VBG",
+            "item": "Precipitant search — UA, urine/blood cultures, CBC, CXR",
             "points": 2
           },
           {
-            "item": "BMP",
+            "item": "EKG to look for hypokalemia/arrhythmia",
             "points": 2
           },
           {
-            "item": "Cultures",
-            "points": 2
+            "item": "Characterize AKI on CKD against baseline creatinine",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -188,6 +199,10 @@
           {
             "item": "not checking potassium before planning insulin",
             "points": -2
+          },
+          {
+            "item": "reflexive CT head without a focal deficit before correcting glucose/osm/electrolytes",
+            "points": -1
           }
         ]
       },
@@ -209,33 +224,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = multifocal atrial tachycardia. CREDIT: recognizes MAT — irregular tachycardia with ≥3 distinct P-wave morphologies (8); notes varying PR/PP intervals and rate >100 (4); systematic read (3). PENALTY: calling it sinus tachycardia / missing the multiple P-wave morphologies (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they change your immediate management.",
+      "rubric": "Findings = sinus tachycardia with a HYPOKALEMIA pattern: flattened/inverted T waves, prominent U waves, ST depression, and a long QU interval — fitting her K of 3.1 from thiazide/loop diuretics and osmotic diuresis. CREDIT: recognizes the hypokalemia pattern (U waves + flat T + ST depression) (7); identifies the underlying sinus tachycardia and ties it to dehydration (3); states this mandates potassium repletion and holding insulin until K is safe and warns of arrhythmia risk (3); systematic read (2). PENALTY: calling it normal, calling it hyperkalemia/peaked T waves, or missing the U waves (-3).",
       "keyFindings": [
-        "≥3 distinct P-wave morphologies",
-        "irregular rhythm with varying PR intervals"
+        "flattened/inverted T waves with prominent U waves",
+        "ST depression and a long QU interval on a background sinus tachycardia"
       ],
       "criticalFindings": [
-        "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100)."
+        "Sinus tachycardia with hypokalemia changes — flattened T waves, prominent U waves, ST depression, long QU — that mandate potassium repletion and holding insulin until K is corrected."
       ],
       "commonMistakes": [
-        "calling it atrial fibrillation because the rhythm is irregular",
-        "missing the discrete varying P waves"
+        "calling the tracing normal and missing the U waves",
+        "mistaking it for hyperkalemia / peaked T waves",
+        "reading the U waves as ischemic T-wave changes"
       ],
-      "idealAnswer": "Multifocal atrial tachycardia: ≥3 distinct P-wave morphologies with varying PR intervals, irregular, rate >100.",
+      "idealAnswer": "Sinus tachycardia (~115 bpm) with the changes of hypokalemia: flattened/inverted T waves, prominent U waves (best seen in the precordial leads), mild ST depression, and an apparently long QU interval. This fits her serum K of 3.1 from the thiazide, loop diuretic, and osmotic diuresis. Clinically it means potassium must be repleted and insulin must be HELD until K is safe (>3.3), and she is at risk for ventricular arrhythmia, so she needs continuous cardiac monitoring.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100)."
+          "Sinus tachycardia with hypokalemia changes — flattened T waves, prominent U waves, ST depression, long QU — that mandate potassium repletion and holding insulin until K is corrected."
         ],
         "coreActions": [
-          "≥3 distinct P-wave morphologies",
-          "irregular rhythm with varying PR intervals"
+          "flattened/inverted T waves with prominent U waves",
+          "ST depression and a long QU interval on a background sinus tachycardia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / reads it as hyperkalemia / misses the U waves",
             "points": -3
           }
         ]
@@ -248,36 +264,37 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear film. CREDIT: identifies a normal film (6); notes it screens for a precipitating pneumonia (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = essentially clear film, no consolidation, no pulmonary edema. CREDIT: identifies a normal/clear film (5); notes it screens for a precipitating pneumonia AND that there is NO pulmonary congestion, consistent with the dry/volume-depleted state rather than decompensated heart failure (5). PENALTY: inventing pathology or calling pulmonary edema (-2).",
       "keyFindings": [
-        "identifies a normal film",
-        "notes it screens for a precipitating pneumonia"
+        "essentially clear film, no consolidation",
+        "no pulmonary edema despite the heart-failure history"
       ],
       "criticalFindings": [
-        "Screen for pneumonia as a precipitant; here essentially clear."
+        "Essentially clear film: no pneumonia and no pulmonary edema, consistent with profound volume depletion rather than decompensated heart failure."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing an infiltrate",
+        "calling pulmonary edema because of the heart-failure history"
       ],
-      "idealAnswer": "Screen for pneumonia as a precipitant; here essentially clear.",
+      "idealAnswer": "Essentially clear chest film — no focal consolidation to suggest pneumonia and, importantly, no pulmonary congestion or edema despite her heart-failure history, consistent with her being profoundly volume-depleted rather than fluid-overloaded.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes an essentially clear film (no consolidation), obtained to screen for a precipitating pneumonia.",
+            "item": "Recognizes an essentially clear film — no pneumonia and no pulmonary edema, consistent with volume depletion rather than decompensated heart failure.",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "notes it screens for a precipitating pneumonia",
+            "item": "notes it screens for a precipitating pneumonia and shows no congestion",
             "points": 4
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing pathology",
+            "item": "inventing pathology or calling pulmonary edema",
             "points": -2
           }
         ]
@@ -287,9 +304,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given glucose 880, osm >330, and minimal ketones, what is your diagnosis and how does it differ from DKA?",
-      "rubric": "Hyperosmolar hyperglycemic state (6). Distinguishes from DKA — much higher glucose/osmolality, minimal ketosis, only mild acidosis (4).",
-      "idealAnswer": "Hyperosmolar hyperglycemic state. Unlike DKA, HHS shows a much higher glucose (~880) and serum osmolality (>330) with minimal ketosis and only mild or no acidosis, reflecting enough residual insulin to suppress ketogenesis but not hyperglycemia; the dominant problem is profound hyperosmolar dehydration.",
+      "prompt": "Given glucose 1050, effective osm ~360, K 3.1 with hypokalemia changes on EKG, an anion gap of 23 with lactate 3.1 and only minimal ketones, what is your committed diagnosis, how does it differ from DKA, and what residual uncertainty remains given her SGLT2 inhibitor?",
+      "rubric": "Commits to Hyperosmolar hyperglycemic state (5). Distinguishes from DKA — much higher glucose/osmolality, minimal ketosis, only mild acidosis, the small gap explained more by lactate from hypoperfusion than by ketones (3). Names the residual uncertainty and the discriminating test — empagliflozin can cause euglycemic DKA, so ketones/gap must be trended; the EKG hypokalemia and the corrected Na/AKI are concurrent problems to manage in parallel (2).",
+      "idealAnswer": "Commit to Hyperosmolar hyperglycemic state. Unlike DKA, HHS shows a much higher glucose (~1050) and effective osmolality (~360) with minimal ketosis and only mild acidosis; here the modestly elevated anion gap (23) is explained more by lactate from hypoperfusion (3.1) than by ketoacidosis, and there is enough residual insulin to suppress ketogenesis but not the hyperglycemia. The dominant problem is profound hyperosmolar free-water deficit with a corrected sodium of ~165. Residual uncertainty: because she is on empagliflozin (an SGLT2 inhibitor), euglycemic/ketotic DKA can be masked, so serum ketones and the anion gap must be trended rather than assumed benign. In parallel, the EKG confirms clinically important hypokalemia (K 3.1) and she has acute-on-chronic kidney injury and true hypernatremia — concurrent problems that shape the order of treatment (potassium and fluids before insulin).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -302,42 +319,46 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH DKA/HHS: aggressive IV fluid resuscitation, LR/NS (CANT-MISS,7); potassium repletion/monitoring – hold insulin if K<3.3 (CANT-MISS,5); IV insulin infusion after K safe (5); add dextrose when glucose <300 (3); identify and treat precipitant (3); frequent BMP/glucose monitoring (2). PENALTY: starting insulin before checking/repleting K (-4); insulin without fluids (-2).",
-      "idealAnswer": "HHS: prioritize ABCs and volume status, then potassium, then glucose. Aggressive IV fluids (LR 15–20 mL/kg/h initially; ~average 8–10 L deficit), then ½NS/LR based on corrected sodium; add D5 when glucose <300. Replete and monitor potassium (give K if <5.3, hold insulin if <3.3). IV insulin infusion after K is safe. Find and treat the precipitant. Frequent BMP/glucose.",
+      "prompt": "What is your management plan, including the safe ordering of interventions, the medications you would hold, and the disposition and safe-discharge planning for this patient who lives alone?",
+      "rubric": "Per MGH DKA/HHS: aggressive IV isotonic fluid resuscitation for the large free-water/volume deficit, titrating to her heart-failure status (CANT-MISS,6); replete and monitor potassium FIRST and HOLD insulin until K >3.3 given K 3.1 and the EKG changes (CANT-MISS,6); IV insulin infusion only AFTER potassium is safe, then add dextrose when glucose <300 (4); identify and treat the precipitant — antibiotics for the UTI, cultures (2); HOLD the offending/contributing home meds — metformin (AKI/lactic acidosis), empagliflozin (euglycemic DKA), HCTZ and furosemide and lisinopril while dehydrated/AKI (2); ICU-level care with continuous cardiac monitoring and frequent BMP/glucose (2); safe-discharge/disposition planning — med reconciliation, diabetes education, home-safety/PT and fall evaluation, caregiver/son involvement and close follow-up (3). PENALTY: starting insulin before repleting potassium (-4); giving insulin without fluids (-2); continuing metformin/empagliflozin or diuretics during the acute illness (-2).",
+      "idealAnswer": "Stabilize ABCs and volume status. Start aggressive IV isotonic fluids (e.g. NS/LR 15-20 mL/kg in the first hour for the ~8-10 L deficit), then switch toward 1/2NS/LR based on the corrected sodium (~165) to replace the free-water deficit, while watching her heart-failure status and reassessing frequently — she is dry, not congested, so she needs volume, but titrate carefully. Address potassium FIRST: K is 3.1 with hypokalemia changes on EKG, so replete potassium and HOLD insulin until K is >3.3; she needs continuous cardiac monitoring. Begin an IV insulin infusion only after potassium is safe, and add D5 when glucose falls below 300. Identify and treat the precipitant: antibiotics for the UTI, follow cultures, screen for pneumonia. HOLD the contributing home medications during the acute illness — metformin (AKI and lactic-acidosis risk), empagliflozin (euglycemic DKA and ongoing glucosuria), the thiazide, the loop diuretic, and lisinopril while she is dehydrated with AKI; reconsider oxybutynin given delirium. Admit to the ICU/step-down with frequent BMP and glucose monitoring. Disposition and safe-discharge planning: she lives alone with recent falls, so arrange medication reconciliation, diabetes/sick-day education, a home-safety and PT/fall evaluation, social work and caregiver (son) involvement, and close PCP/endocrine follow-up before discharge.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Aggressive IV fluid resuscitation",
-            "points": 7
+            "item": "Aggressive IV isotonic fluid resuscitation titrated to heart-failure status",
+            "points": 6
           },
           {
-            "item": "Potassium repletion and monitoring",
-            "points": 5
+            "item": "Replete and monitor potassium first; hold insulin until K >3.3",
+            "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "IV insulin infusion after K is safe",
-            "points": 5
+            "item": "IV insulin infusion only after K is safe, then add dextrose when glucose <300",
+            "points": 4
           },
           {
-            "item": "Add dextrose when glucose <300",
-            "points": 3
-          },
-          {
-            "item": "Identify and treat precipitant",
-            "points": 3
-          },
-          {
-            "item": "Frequent BMP/glucose monitoring",
+            "item": "Identify and treat the precipitant — antibiotics for the UTI, cultures",
             "points": 2
+          },
+          {
+            "item": "Hold contributing home meds — metformin, empagliflozin, diuretics, ACE inhibitor",
+            "points": 2
+          },
+          {
+            "item": "ICU-level care with continuous cardiac monitoring and frequent BMP/glucose",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge planning — med reconciliation, diabetes education, home-safety/PT/fall eval, caregiver involvement, close follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Monitor for euglycemic DKA if on SGLT2i",
+            "item": "Monitor and trend ketones for euglycemic DKA given the SGLT2 inhibitor",
             "points": 1
           }
         ],
@@ -345,25 +366,34 @@
           {
             "item": "Insulin before repleting potassium",
             "points": -4
+          },
+          {
+            "item": "Insulin without fluids, or continuing metformin/empagliflozin/diuretics during the acute illness",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Aggressive IV fluid resuscitation",
-        "Potassium repletion and monitoring"
+        "Aggressive IV isotonic fluid resuscitation titrated to heart-failure status",
+        "Replete and monitor potassium first; hold insulin until K >3.3"
       ],
       "optionalActions": [
-        "IV insulin infusion after K is safe",
-        "Add dextrose when glucose <300",
-        "Identify and treat precipitant",
-        "Frequent BMP/glucose monitoring",
-        "Monitor for euglycemic DKA if on SGLT2i"
+        "IV insulin infusion only after K is safe, then add dextrose when glucose <300",
+        "Identify and treat the precipitant — antibiotics for the UTI, cultures",
+        "Hold contributing home meds — metformin, empagliflozin, diuretics, ACE inhibitor",
+        "ICU-level care with continuous cardiac monitoring and frequent BMP/glucose",
+        "Safe-discharge planning — med reconciliation, diabetes education, home-safety/PT/fall eval, caregiver involvement, close follow-up",
+        "Monitor and trend ketones for euglycemic DKA given the SGLT2 inhibitor"
       ],
       "unsafeActions": [
-        "Insulin before repleting potassium"
+        "Insulin before repleting potassium",
+        "Insulin without fluids, or continuing metformin/empagliflozin/diuretics during the acute illness"
       ],
-      "consults": [],
-      "disposition": "Admit; ICU often required",
+      "consults": [
+        "Endocrinology",
+        "Social Work / Care Management"
+      ],
+      "disposition": "Admit; ICU/step-down usually required, with safe-discharge planning given she lives alone",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "DKA / HHS",
@@ -378,14 +408,16 @@
     "verbosity": "very brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "living_alone_and_falls"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "70-year-old woman, lethargic, very dry, confused. Poor historian.",
+    "communicationStyle": "confused; gives limited, vague answers and needs collateral and the medication list",
+    "affect": "74-year-old woman, lethargic, very dry, confused. Poor historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (non-adherence, falls, living-alone struggles) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "Reveal the full medication list (including the SGLT2 inhibitor, diuretics, steroids, and oxybutynin) only when asked about medications or the med list",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -401,7 +433,60 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
-      "points": 4,
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_list",
+      "category": "meds",
+      "triggerConcepts": [
+        "medication list",
+        "what medicines",
+        "what pills",
+        "any new medications",
+        "started any new drugs",
+        "sglt2",
+        "steroids",
+        "prednisone",
+        "water pill",
+        "diuretic"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "precipitant_infection",
+      "category": "ros",
+      "triggerConcepts": [
+        "recent infection",
+        "fever",
+        "burning when you urinate",
+        "dysuria",
+        "cough",
+        "urinary tract infection",
+        "what happened"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "living_situation_falls",
+      "category": "social",
+      "triggerConcepts": [
+        "live alone",
+        "who is at home",
+        "home situation",
+        "falls",
+        "help at home",
+        "caregiver"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -451,7 +536,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "thirst",
+        "urinating a lot"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -478,7 +565,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "kidney",
+        "heart failure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -514,45 +604,69 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_neck_stiffness_finding_1",
-      "finding": "Neuro: confused/lethargic, no focal deficit, no neck stiffness.",
-      "revealedBy": [
-        "assess_neck_stiffness"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No nuchal rigidity."
-    },
-    {
-      "id": "assess_motor_strength_finding_2",
-      "finding": "Neuro: confused/lethargic, no focal deficit, no neck stiffness.",
-      "revealedBy": [
-        "assess_motor_strength",
-        "assess_pronator_drift"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No focal motor deficit."
-    },
-    {
-      "id": "assess_general_appearance_finding_3",
-      "finding": "General: lethargic, profoundly dehydrated (dry mucous membranes, poor skin turgor, sunken eyes).",
+      "id": "assess_general_appearance_finding_1",
+      "finding": "General: lethargic, profoundly dehydrated (dry mucous membranes, very poor skin turgor, sunken eyes).",
       "revealedBy": [
         "assess_general_appearance"
       ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "Well hydrated."
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Well hydrated, comfortable."
     },
     {
-      "id": "assess_mental_status_finding_4",
-      "finding": "Neuro: confused/lethargic, no focal deficit, no neck stiffness.",
+      "id": "assess_mucous_membranes_finding_2",
+      "finding": "Dry mucous membranes and very poor skin turgor; marked orthostatic blood-pressure drop — signs of profound volume depletion.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor",
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Moist mucous membranes, normal skin turgor, no orthostasis."
+    },
+    {
+      "id": "assess_mental_status_finding_3",
+      "finding": "Neuro: confused and lethargic, oriented to self only, no focal deficit, no asterixis, no neck stiffness.",
       "revealedBy": [
         "assess_mental_status"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Alert and oriented."
+      "normalIfNotPresent": "Alert and fully oriented."
+    },
+    {
+      "id": "assess_neck_stiffness_finding_4",
+      "finding": "No nuchal rigidity (argues against meningitis as the cause of the confusion).",
+      "revealedBy": [
+        "assess_neck_stiffness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No nuchal rigidity."
+    },
+    {
+      "id": "assess_motor_strength_finding_5",
+      "finding": "No focal motor deficit and no pronator drift, but diffusely reduced power and reflexes consistent with hypokalemia.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift",
+        "assess_reflexes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal strength and reflexes, no drift."
+    },
+    {
+      "id": "assess_jvp_finding_6",
+      "finding": "JVP is low/flat and there is no peripheral edema, despite the heart-failure history — she is volume-depleted, not congested.",
+      "revealedBy": [
+        "assess_jvp",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal JVP, no edema."
     }
   ],
   "overallScoring": {
@@ -565,69 +679,79 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Hyperosmolar hyperglycemic state",
-    "diagnosticFramework": "70F with type 2 diabetes presents with several days of progressive confusion, polyuria, and profound dehydration. The diagnosis is Hyperosmolar hyperglycemic state, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "74F with type 2 diabetes, CKD stage 3, and HFrEF presents with about a week of progressive confusion, polyuria, and profound dehydration after a recent oral steroid course and a new UTI, on a polypharmacy regimen (metformin, empagliflozin, hydrochlorothiazide, furosemide, lisinopril, oxybutynin). The diagnosis is Hyperosmolar hyperglycemic state — glucose ~1050, effective osm ~360, minimal ketones, only mild acidosis — distinguished from its genuine competitor DKA (made trickier by the SGLT2 inhibitor's risk of euglycemic DKA). It is reached by eliciting the focused history and the full medication list, performing the targeted exam, characterizing the concurrent hypernatremia, hypokalemia, and AKI-on-CKD, reading the patient's own hypokalemia EKG, and excluding the must-not-miss alternatives (hypoglycemia, sepsis, stroke).",
     "keyHistoryClues": [
-      "medication adherence"
+      "medication list",
+      "recent infection"
     ],
     "keyPhysicalExamFindings": [
-      "Neuro: confused/lethargic, no focal deficit, no neck stiffness.",
-      "Neuro: confused/lethargic, no focal deficit, no neck stiffness.",
-      "General: lethargic, profoundly dehydrated (dry mucous membranes, poor skin turgor, sunken eyes).",
-      "Neuro: confused/lethargic, no focal deficit, no neck stiffness."
+      "General: lethargic, profoundly dehydrated (dry mucous membranes, very poor skin turgor, sunken eyes).",
+      "Dry mucous membranes and very poor skin turgor; marked orthostatic blood-pressure drop — signs of profound volume depletion.",
+      "Neuro: confused and lethargic, oriented to self only, no focal deficit, no asterixis, no neck stiffness.",
+      "No nuchal rigidity (argues against meningitis as the cause of the confusion).",
+      "No focal motor deficit and no pronator drift, but diffusely reduced power and reflexes consistent with hypokalemia.",
+      "JVP is low/flat and there is no peripheral edema, despite the heart-failure history — she is volume-depleted, not congested."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "SerumOsm",
       "Ketones",
       "VBG",
+      "AnionGap",
       "BMP",
-      "Cultures"
+      "CBC",
+      "UA_Cultures"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Hyperosmolar hyperglycemic state while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Hyperosmolar hyperglycemic state and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history and, critically, the full medication list (SGLT2 inhibitor, steroids, diuretics, oxybutynin) and the new UTI precipitant from collateral.",
+      "Perform the targeted physical exam maneuvers to confirm profound volume depletion and exclude focal/meningeal causes of confusion.",
+      "Build a differential led by Hyperosmolar hyperglycemic state with DKA as a genuine competitor (including euglycemic DKA on the SGLT2 inhibitor), while excluding hypoglycemia, sepsis, and stroke.",
+      "Order an order-sensitive workup; integrate the patient's own hypokalemia EKG and the concurrent hypernatremia and AKI-on-CKD with the labs.",
+      "Commit to Hyperosmolar hyperglycemic state and manage with fluids and potassium before insulin, treat the precipitant, hold the offending home medications, and plan a safe disposition for a patient who lives alone."
     ],
     "commonPitfalls": [
-      "Insulin before repleting potassium"
+      "Insulin before repleting potassium",
+      "Committing to HHS vs DKA without checking ketones despite the SGLT2 inhibitor",
+      "Continuing metformin/empagliflozin or diuretics during the acute illness",
+      "Discharging without addressing the home-safety and fall risk of a patient who lives alone"
     ],
     "managementPearls": [
-      "Aggressive IV fluid resuscitation",
-      "Potassium repletion and monitoring"
+      "Aggressive IV isotonic fluid resuscitation titrated to heart-failure status",
+      "Replete and monitor potassium first; hold insulin until K >3.3"
     ],
     "criticalHistoryItems": [
-      "medication_nonadherence"
+      "medication_list",
+      "precipitant_infection"
     ],
     "criticalExamItems": [
-      "assess_neck_stiffness"
+      "assess_general_appearance",
+      "assess_mucous_membranes"
     ],
     "criticalWorkupItems": [
       "Glucose",
       "potassium"
     ],
     "criticalInterpretationItems": [
-      "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100).",
-      "Screen for pneumonia as a precipitant; here essentially clear."
+      "Sinus tachycardia with hypokalemia changes — flattened T waves, prominent U waves, ST depression, long QU — that mandate potassium repletion and holding insulin until K is corrected.",
+      "Essentially clear film: no pneumonia and no pulmonary edema, consistent with profound volume depletion rather than decompensated heart failure."
     ],
     "criticalManagementItems": [
-      "Aggressive IV fluid resuscitation",
-      "Potassium repletion and monitoring"
+      "Aggressive IV isotonic fluid resuscitation titrated to heart-failure status",
+      "Replete and monitor potassium first; hold insulin until K >3.3"
     ],
     "keyImageInterpretationFindings": [
-      "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100).",
-      "Screen for pneumonia as a precipitant; here essentially clear."
+      "Sinus tachycardia with hypokalemia changes — flattened T waves, prominent U waves, ST depression, long QU — that mandate potassium repletion and holding insulin until K is corrected.",
+      "Essentially clear film: no pneumonia and no pulmonary edema, consistent with profound volume depletion rather than decompensated heart failure."
     ],
     "criticalImageInterpretationFindings": [
-      "Multifocal atrial tachycardia (≥3 P-wave morphologies, rate >100).",
-      "Screen for pneumonia as a precipitant; here essentially clear."
+      "Sinus tachycardia with hypokalemia changes — flattened T waves, prominent U waves, ST depression, long QU — that mandate potassium repletion and holding insulin until K is corrected.",
+      "Essentially clear film: no pneumonia and no pulmonary edema, consistent with profound volume depletion rather than decompensated heart failure."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "The patient's own EKG is part of the puzzle — hypokalemia changes (U waves, flat T waves, ST depression) directly drive the order of treatment (potassium before insulin).",
       "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "State pertinent negatives — no pulmonary edema on the film matters when the patient has heart failure but is volume-depleted."
     ]
   },
   "communicationScoring": {
@@ -642,7 +766,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Seeks collateral and asks permission before sensitive questions",
         "points": 1
       },
       {
@@ -657,8 +781,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

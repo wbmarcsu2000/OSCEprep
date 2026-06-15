@@ -1,66 +1,71 @@
 {
   "id": "anemia-01",
   "category": "Anemia",
-  "difficulty": "easy",
-  "title": "Fatigue and pallor with heavy periods",
+  "difficulty": "hard",
+  "title": "Fatigue and microcytic anemia in an older woman on an anticoagulant and chronic NSAIDs",
   "diagnosis": "Iron deficiency anemia",
   "chart": {
-    "ageSex": "38F",
+    "ageSex": "67F",
     "cc": "Fatigue",
-    "oneLiner": "38F presents with months of progressive fatigue, exertional breathlessness, and pallor, on a background of heavy menstrual periods.",
+    "oneLiner": "67F with CKD stage 3, hypothyroidism, atrial fibrillation on apixaban, and knee osteoarthritis on chronic NSAIDs presents with months of progressive fatigue, exertional dyspnea, and lightheadedness; she is found to have a microcytic anemia with several concurrent metabolic abnormalities.",
     "vitals": {
-      "BP": "118/74",
-      "HR": "96",
-      "RR": "16",
-      "Temp": "36.8°C",
-      "SpO2": "99% RA"
+      "BP": "128/78",
+      "HR": "92",
+      "RR": "18",
+      "Temp": "36.7°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I'm exhausted all the time and I get winded going up the stairs — it's not like me.",
-  "patientFile": "PERSONA: 38-year-old woman, tired-appearing, otherwise well. Good historian.\n\nHPI: Months of fatigue, reduced exercise tolerance, exertional dyspnea, and occasional lightheadedness. On asking: heavy, prolonged menstrual periods for over a year (changes pads hourly on heavy days). Craves and chews ice (pica) — only if asked. NO black/bloody stools, NO weight loss, NO abdominal pain.\nPMH: none. MEDS: none (no NSAIDs). SOCIAL: vegetarian-leaning diet; no alcohol excess.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, comfortable.\n- Vitals: BP 118/74, HR 96, RR 16, 36.8°C, SpO2 99% RA.\n- HEENT: conjunctival pallor; smooth tongue if examined; koilonychia (spoon nails) if examined.\n- Cardiac: regular, soft flow murmur, no other findings. Abdomen: soft, nontender. Rectal: brown stool, no melena (if examined).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the menorrhagia, pica, or diet unless asked about menstrual history, cravings, or diet.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I'm worn out all the time, doctor — even walking to the mailbox leaves me short of breath, and that's just not me.",
+  "patientFile": "PERSONA: 67-year-old woman, pale and a little tired-appearing but in no acute distress. Cooperative, reasonable historian, but does not volunteer much unless asked specifically.\n\nHPI: Several months of gradually worsening fatigue, reduced exercise tolerance, exertional shortness of breath, and intermittent lightheadedness when she stands quickly. No chest pain, no palpitations beyond her known irregular heartbeat, no syncope. On direct questioning: her stools have looked darker than usual on and off over the last couple of months, though she has not seen frank blood; no obvious black tarry stools that she has noticed. NO weight loss, NO night sweats, NO fevers. NO hematemesis. She is post-menopausal (last period ~15 years ago) with NO vaginal bleeding. She takes ibuprofen most days for her knee arthritis and has done so for years. She has noticed she sometimes craves and chews ice — only if asked about cravings.\nPMH (reveal when asked about medical history): chronic kidney disease stage 3 (told her kidneys are 'about half'), hypothyroidism, atrial fibrillation, knee osteoarthritis, GERD, and a stomach ulcer related to a germ ('H. pylori') treated a few years ago. No known prior anemia, no prior transfusions, no cancer.\nMEDS (reveal when asked about medications): apixaban (a blood thinner) for atrial fibrillation; ibuprofen most days for knee pain (over-the-counter, takes it on her own); omeprazole for reflux; levothyroxine for thyroid; metoprolol for heart rate; acetaminophen as needed. NO recent antibiotics. ALLERGIES: none.\nSOCIAL: retired teacher, lives with her husband. Diet light on red meat (does not enjoy it), mostly vegetables and dairy. Rare alcohol (a glass of wine on holidays). Never smoked. FAMILY: a sister with thyroid disease; father had colon cancer in his 70s. ROS: as above — fatigue, exertional dyspnea, lightheadedness, darker stools intermittently; no urinary symptoms, no joint swelling, no easy bruising beyond what she expects on the blood thinner.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, comfortable, well-nourished.\n- Vitals: BP 128/78, HR 92 and irregularly irregular, RR 18, 36.7°C, SpO2 97% RA. Orthostatics if obtained: drops to 112/72 with HR rise to 104 on standing, mildly symptomatic.\n- HEENT: conjunctival and mucous-membrane pallor; smooth/atrophic tongue if examined; angular cheilosis if inspected.\n- Nails: koilonychia (spoon-shaped nails) if examined.\n- Cardiac: irregularly irregular rhythm, soft early systolic flow murmur at the left sternal border, no rub, no gallop.\n- Lungs: clear to auscultation bilaterally.\n- Abdomen: soft, mild epigastric tenderness to deep palpation, no rebound or guarding, no hepatosplenomegaly, no mass.\n- Rectal (if examined): dark/brown stool that is guaiac-positive; no gross melena, no mass palpable.\n- Extremities: trace ankle edema, no calf tenderness.\n- Thyroid: non-tender, no goiter if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the darker stools, the daily ibuprofen, the apixaban, the prior H. pylori ulcer, the ice craving, or the family history of colon cancer unless asked about the relevant topic (stools/bleeding, medications, past ulcers, cravings, or family history).\n- Reveal exam findings only when the relevant maneuver is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "CBC": "Hgb 8.9, MCV 72 (low — microcytic), MCH low, RDW high, WBC normal, Plt 480 (reactive thrombocytosis).",
-      "Smear": "Microcytic, hypochromic red cells with anisocytosis; pencil cells.",
-      "IronStudies": "Ferritin 6 (low), serum iron low, TIBC HIGH, transferrin saturation low — iron deficiency pattern.",
-      "Reticulocyte": "Low/inappropriately normal for the degree of anemia.",
-      "BMP": "Within normal limits."
+      "CBC": "Hgb 8.4, MCV 71 (low — microcytic), MCH 23 (low — hypochromic), RDW 18.5 (high), WBC 6.8 (normal), Plt 472 (mild reactive thrombocytosis). Anemia is microcytic and hypochromic with marked anisocytosis.",
+      "Smear": "Microcytic, hypochromic red cells with anisopoikilocytosis and classic pencil (cigar) cells; occasional target cells; no basophilic stippling, no schistocytes, no blasts. Picture favors iron deficiency over a thalassemic process.",
+      "IronStudies": "Ferritin 7 ng/mL (LOW), serum iron low, TIBC HIGH (elevated), transferrin saturation 6% (LOW) — a classic absolute iron-deficiency pattern (low ferritin with a high TIBC argues against anemia of chronic disease, in which ferritin is normal/high and TIBC is low).",
+      "Reticulocyte": "Reticulocyte count low / inappropriately normal for the degree of anemia (reticulocyte production index < 2) — hypoproliferative marrow consistent with iron-deficient erythropoiesis.",
+      "BMP": "Na 139, K 4.6, Cl 104, HCO3 24 — anion gap = 139 − (104 + 24) = 11 (NORMAL, no acidosis). BUN 32, creatinine 1.6 (baseline ~1.5; eGFR ~36 — stable CKD stage 3, not acutely worse). Glucose 98. Calcium 9.3. Electrolytes internally consistent; the anemia is NOT explained by uremia alone.",
+      "TFTs": "TSH 8.9 (HIGH), free T4 low-normal — mild undertreated/subclinical-to-overt hypothyroidism, a SEPARATE concurrent problem that can itself cause fatigue and a mild normo-/macrocytic anemia, but does NOT explain a microcytic iron-deficiency picture.",
+      "FOBT_Hpylori": "Fecal occult blood test POSITIVE (guaiac-positive stool on rectal exam, confirmed on lab FOBT). Stool H. pylori antigen POSITIVE — active H. pylori, a treatable source of upper-GI mucosal blood loss, layered on top of chronic NSAID use and apixaban anticoagulation."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Regular narrow-complex tachycardia ~150 with sawtooth flutter waves, best seen in II/III/aVF; ~2:1 conduction.",
-      "verify": "Source a study matching: Regular narrow-complex tachycardia ~150 with sawtooth flutter waves, best seen in II/III/aVF; ~2:1 conduction. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 2,
+      "findings": "Atrial fibrillation: irregularly irregular narrow-complex rhythm at ~90–100 bpm with absent P waves and a fibrillating baseline; controlled ventricular response. No acute ischemic ST/T changes. This is the patient's OWN known atrial fibrillation — relevant because she is anticoagulated on apixaban, which bears on her GI blood loss.",
+      "verify": "Source a study matching: atrial fibrillation, irregularly irregular, absent P waves, controlled rate, no acute ischemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing atrial flutter with sawtooth waves",
+      "imageDescription": "12-lead showing atrial fibrillation with controlled ventricular response and no acute ischemia",
       "searchTerms": [
-        "atrial flutter 2:1 ECG",
-        "sawtooth flutter waves 12 lead"
+        "atrial fibrillation 12 lead ECG controlled rate",
+        "irregularly irregular absent P waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 68-year-old woman presents with palpitations and lightheadedness, and her pulse is rapid and regular."
+      "clinicalVignette": "An older woman with palpitations and an irregular pulse on examination; she is on an oral anticoagulant."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Enlarged cardiac silhouette (cardiothoracic ratio >0.5) on a PA film; lungs otherwise clear.",
-      "verify": "Source a study matching: Enlarged cardiac silhouette (cardiothoracic ratio >0.5) on a PA film; lungs otherwise clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lung fields; normal cardiomediastinal silhouette; no effusion, no consolidation, no overt cardiomegaly. A reassuring film that does not explain the anemia or the dyspnea (which is the anemia itself).",
+      "verify": "Source a study matching: clear lungs, normal cardiomediastinal silhouette, no effusion. Self-host with appropriate credit; do not reuse the prior tracing.",
       "assetNeeded": true,
-      "imageDescription": "PA chest radiograph showing cardiomegaly",
+      "imageDescription": "PA chest radiograph with clear lungs and a normal cardiomediastinal silhouette",
       "searchTerms": [
-        "cardiomegaly chest x-ray PA",
-        "enlarged cardiac silhouette radiograph"
+        "normal PA chest x-ray",
+        "clear lung fields normal cardiomediastinal silhouette radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 72-year-old man presents with progressive exertional breathlessness and ankle swelling over several weeks."
+      "clinicalVignette": "An older woman with exertional dyspnea has a screening chest film that is unremarkable."
     }
   },
   "revealKeys": [
@@ -69,45 +74,52 @@
     "IronStudies",
     "Reticulocyte",
     "BMP",
+    "TFTs",
+    "FOBT_Hpylori",
     "ekg",
     "cxr"
   ],
   "essential": [
     "CBC",
-    "IronStudies"
+    "IronStudies",
+    "FOBT_Hpylori"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this anemia (note your leading diagnosis).",
-      "rubric": "Iron deficiency anemia (leading,8). Anemia of chronic disease (core,3). Thalassemia trait (core,3). Occult GI blood loss / malignancy (CANT-MISS to consider source,4). Sideroblastic anemia (bonus,2). Names iron deficiency and the need to identify the SOURCE — here menorrhagia (core,5).",
-      "idealAnswer": "Leading diagnosis: Iron deficiency anemia. Must-not-miss diagnoses to exclude: Occult GI blood loss / malignancy. Also reasonable: Anemia of chronic disease; Thalassemia trait.",
+      "prompt": "Based on your history and physical in this older woman on an anticoagulant and chronic NSAIDs, give your differential for this microcytic anemia (note your leading diagnosis). Explicitly name at least three mechanisms/etiologies by which she could be iron-deficient, and state which competing cause of microcytic anemia you must actively exclude.",
+      "rubric": "Iron deficiency anemia (leading,5). Anemia of chronic disease / CKD-related anemia — the genuine competitor in an older CKD patient (CANT-MISS to distinguish,4). Occult GI blood loss with underlying malignancy (colon/gastric cancer) given age + family history — must-not-miss source (CANT-MISS,4). Thalassemia trait (core,2). Sideroblastic anemia (bonus,2). Names ≥3 mechanisms/etiologies of iron deficiency here — NSAID/anticoagulant-related GI mucosal blood loss, H. pylori-related ulcer loss, poor dietary intake (low red meat), and impaired absorption from chronic PPI use (core,5). States that ferritin + TIBC are the discriminator that separates iron deficiency from anemia of chronic disease (core,3). PENALTY: attributing the anemia solely to CKD/'anemia of chronic disease' and not pursuing a bleeding source (-3).",
+      "idealAnswer": "Leading diagnosis: Iron deficiency anemia (microcytic, hypochromic, pencil cells, ice craving). The genuine competing diagnosis to exclude is anemia of chronic disease / CKD-related anemia — she has stage 3 CKD, so both can give a low-normal-MCV anemia; the iron studies (low ferritin, HIGH TIBC, low transferrin saturation) distinguish absolute iron deficiency (here) from ACD (normal/high ferritin, low TIBC). The must-not-miss is occult GI blood loss from a malignancy (colon or gastric cancer) given her age and a father with colon cancer. At least three mechanisms/etiologies of her iron deficiency: (1) chronic NSAID-induced gastric/duodenal mucosal blood loss, amplified by (2) apixaban anticoagulation, (3) active H. pylori ulcer disease, plus (4) reduced dietary iron intake (little red meat) and (5) impaired iron absorption from chronic PPI/achlorhydria. Also reasonable: thalassemia trait and sideroblastic anemia.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Iron deficiency anemia",
-            "points": 8
+            "points": 5
           },
           {
-            "item": "Occult GI blood loss / malignancy",
+            "item": "Anemia of chronic disease / CKD-related anemia (the competing cause to exclude)",
+            "points": 4
+          },
+          {
+            "item": "Occult GI blood loss with underlying malignancy (colon/gastric cancer)",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Anemia of chronic disease",
-            "points": 3
-          },
-          {
             "item": "Thalassemia trait",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Names iron deficiency and the need to identify the SOURCE — here menorrhagia",
+            "item": "Names ≥3 mechanisms/etiologies of iron deficiency (NSAID/anticoagulant loss, H. pylori ulcer, low intake, impaired PPI absorption)",
             "points": 5
+          },
+          {
+            "item": "States ferritin + TIBC distinguish iron deficiency from anemia of chronic disease",
+            "points": 3
           }
         ],
         "bonusActions": [
@@ -116,14 +128,20 @@
             "points": 2
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Attributing the anemia solely to CKD/ACD without pursuing a bleeding source",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Occult GI blood loss / malignancy"
+        "Occult GI blood loss with underlying malignancy (colon/gastric cancer)",
+        "Anemia of chronic disease / CKD-related anemia (the competing cause to exclude)"
       ],
       "acceptableAlternatives": [
-        "Anemia of chronic disease",
-        "Thalassemia trait"
+        "Thalassemia trait",
+        "Sideroblastic anemia"
       ]
     },
     {
@@ -131,60 +149,78 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC with indices (CANT-MISS,4). Iron studies — ferritin/iron/TIBC (CANT-MISS,5). Reticulocyte count (2). Peripheral smear (2). Identify source — menstrual history; in higher-risk/older patients, GI evaluation (2). PENALTY: transfusing a stable, chronically anemic patient unnecessarily (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Peripheral smear; Iron studies; Reticulocyte count; BMP.",
+      "prompt": "What initial workup do you want to order to characterize the anemia, identify the source, and account for her comorbidities?",
+      "rubric": "CBC with indices and RDW (CANT-MISS,3). Iron studies — ferritin/iron/TIBC/transferrin saturation (CANT-MISS,4). Fecal occult blood test + H. pylori testing (CANT-MISS,3). Peripheral smear (1). Reticulocyte count (1). BMP to assess CKD and rule uremia in/out (1). TSH given fatigue and known hypothyroidism (1). Recognizes GI endoscopy (EGD ± colonoscopy) is the definitive source work-up in this older anticoagulated patient (1). PENALTY: transfusing a hemodynamically stable, chronically anemic patient with no active bleeding (-2); ordering iron studies AFTER giving iron (which falsely normalizes ferritin) (-2).",
+      "idealAnswer": "Order: CBC with indices and RDW; peripheral smear; iron studies (ferritin, serum iron, TIBC, transferrin saturation) BEFORE any iron is given; reticulocyte count; BMP (assess her CKD/uremia); TSH (fatigue + hypothyroidism); fecal occult blood test and H. pylori testing; and plan GI endoscopy (EGD and colonoscopy) as the definitive search for the bleeding source in an older anticoagulated woman. Also EKG and CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "CBC with indices",
+            "item": "Iron studies (ferritin/iron/TIBC/transferrin saturation) before giving iron",
             "points": 4
           },
           {
-            "item": "Iron studies — ferritin/iron/TIBC",
-            "points": 5
+            "item": "Fecal occult blood test + H. pylori testing",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
+            "item": "CBC with indices and RDW",
+            "points": 3
           },
           {
             "item": "Peripheral smear",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Reticulocyte count",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "BMP to assess CKD / exclude uremia",
+            "points": 1
+          },
+          {
+            "item": "TSH",
+            "points": 1
+          },
+          {
+            "item": "Plan GI endoscopy (EGD ± colonoscopy) for the source",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "transfusing a stable, chronically anemic patient unnecessarily",
+            "item": "Transfusing a stable, chronically anemic patient with no active bleeding",
+            "points": -2
+          },
+          {
+            "item": "Ordering iron studies AFTER giving iron",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "CBC with indices",
-        "Iron studies — ferritin/iron/TIBC"
+        "Iron studies (ferritin/iron/TIBC/transferrin saturation) before giving iron",
+        "Fecal occult blood test + H. pylori testing"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "CBC with indices and RDW",
+        "Peripheral smear",
+        "Reticulocyte count",
+        "BMP to assess CKD / exclude uremia",
+        "TSH",
+        "Plan GI endoscopy (EGD ± colonoscopy) for the source"
+      ],
       "contraindicatedTests": [
-        "transfusing a stable, chronically anemic patient unnecessarily"
+        "Transfusing a stable, chronically anemic patient with no active bleeding",
+        "Ordering iron studies AFTER giving iron"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "Iron studies (ferritin/iron/TIBC/transferrin saturation) before giving iron"
+      ]
     },
     {
       "id": "ekg_read",
@@ -192,33 +228,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = atrial flutter with 2:1 AV conduction (ventricular rate ~150). CREDIT: recognizes atrial flutter with 2:1 conduction (7); identifies sawtooth flutter waves in the inferior leads (II/III/aVF) (5); systematic read (3). PENALTY: mislabeling as sinus tachycardia / missing the flutter waves (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and state how they bear on her anemia work-up.",
+      "rubric": "Findings = atrial fibrillation with a controlled ventricular response (~90–100), absent P waves, irregularly irregular narrow-complex rhythm, no acute ischemic ST/T changes. CREDIT: identifies atrial fibrillation with controlled rate (7); notes absent P waves / irregularly irregular rhythm and no acute ischemia (5); connects the AF to her apixaban anticoagulation as a contributor to GI blood loss (3). PENALTY: mislabeling as multifocal atrial tachycardia or sinus rhythm, or over-reading ischemia (-3).",
       "keyFindings": [
-        "sawtooth flutter waves",
-        "regular atrial activity ~300/min"
+        "absent P waves with an irregularly irregular narrow-complex rhythm",
+        "controlled ventricular response, no acute ischemic changes"
       ],
       "criticalFindings": [
-        "Atrial flutter with 2:1 AV conduction (ventricular rate ~150)."
+        "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes — her known AF, the reason she is anticoagulated on apixaban."
       ],
       "commonMistakes": [
-        "mislabeling as sinus tachycardia at a rate of 150",
-        "missing the flutter waves in the inferior leads"
+        "calling an irregularly irregular rhythm multifocal atrial tachycardia or sinus arrhythmia",
+        "over-reading benign T-wave changes as ischemia"
       ],
-      "idealAnswer": "Atrial flutter with 2:1 conduction; classic sawtooth waves in the inferior leads, ventricular rate ~150.",
+      "idealAnswer": "Atrial fibrillation: irregularly irregular narrow-complex rhythm at ~90–100 bpm with absent P waves and a fibrillating baseline; controlled ventricular response; no acute ST/T ischemic changes. This is her chronic AF, and it matters because it is why she takes apixaban — anticoagulation that is contributing to her occult GI blood loss and that must be weighed against her bleeding when planning management.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Atrial flutter with 2:1 AV conduction (ventricular rate ~150)."
+          "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes — her known AF, the reason she is anticoagulated on apixaban."
         ],
         "coreActions": [
-          "sawtooth flutter waves",
-          "regular atrial activity ~300/min"
+          "absent P waves with an irregularly irregular narrow-complex rhythm",
+          "controlled ventricular response, no acute ischemic changes"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "mislabels the rhythm or over-reads ischemia",
             "points": -3
           }
         ]
@@ -231,32 +267,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = cardiomegaly (cardiothoracic ratio >0.5) on a PA film. CREDIT: measures the cardiothoracic ratio (6); identifies cardiomegaly on an adequate PA film (4). PENALTY: calling the study normal / missing the enlarged silhouette (-2).",
+      "rubric": "Findings = clear lungs, normal cardiomediastinal silhouette, no effusion or consolidation, no overt cardiomegaly. CREDIT: recognizes a normal/reassuring film (5); states it does NOT explain her dyspnea, which is from the anemia itself (5). PENALTY: inventing pathology on a clear film, or attributing the dyspnea to an imagined cardiopulmonary process (-2).",
       "keyFindings": [
-        "measures the cardiothoracic ratio",
-        "identifies cardiomegaly on a PA film"
+        "clear lung fields, normal cardiomediastinal silhouette",
+        "no effusion, consolidation, or overt cardiomegaly"
       ],
       "criticalFindings": [
-        "Cardiomegaly (cardiothoracic ratio >0.5)."
+        "Clear, reassuring chest film — no cardiopulmonary cause for the dyspnea, which is explained by the anemia."
       ],
       "commonMistakes": [
-        "calling a normal heart enlarged on an AP/portable film",
-        "not checking film projection"
+        "inventing an infiltrate or effusion on a clear film",
+        "attributing the exertional dyspnea to a primary cardiopulmonary process"
       ],
-      "idealAnswer": "Cardiomegaly with a cardiothoracic ratio >0.5 on an adequate PA film.",
+      "idealAnswer": "Clear lung fields with a normal cardiomediastinal silhouette and no effusion, consolidation, or overt cardiomegaly. The film is reassuring and does NOT explain her exertional dyspnea — that symptom is the anemia itself.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Cardiomegaly (cardiothoracic ratio >0.5)."
+          "Clear, reassuring chest film — no cardiopulmonary cause for the dyspnea, which is explained by the anemia."
         ],
         "coreActions": [
-          "measures the cardiothoracic ratio",
-          "identifies cardiomegaly on a PA film"
+          "clear lung fields, normal cardiomediastinal silhouette",
+          "no effusion, consolidation, or overt cardiomegaly"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study abnormal / invents pathology",
             "points": -3
           }
         ]
@@ -266,9 +302,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the microcytic indices and low ferritin/high TIBC, what is your diagnosis and the likely source?",
-      "rubric": "Iron deficiency anemia (6). Cites low ferritin + high TIBC + microcytosis, with menorrhagia as the source (4).",
-      "idealAnswer": "Iron deficiency anemia, supported by microcytosis with a low ferritin and high TIBC. The likely source is the patient's chronic menorrhagia.",
+      "prompt": "Given the iron studies, smear, FOBT/H. pylori results, the BMP and TSH, and her atrial fibrillation on the EKG, commit to your diagnosis and the likely source. Name the discriminating test that settled iron deficiency versus anemia of chronic disease, and address how her concurrent abnormalities (CKD, hypothyroidism, AF/anticoagulation) fit in.",
+      "rubric": "Absolute iron deficiency anemia confirmed by a LOW ferritin (7) with a HIGH TIBC and low transferrin saturation — the discriminator that excludes anemia of chronic disease/CKD as the primary cause (6). Identifies the source as occult upper-GI blood loss from chronic NSAID use + active H. pylori, amplified by apixaban anticoagulation (seen as her AF on the EKG); recognizes the high TSH (hypothyroidism) and stable CKD as SEPARATE concurrent problems that contribute to fatigue but do not explain a microcytic, iron-deficient picture; commits to iron deficiency while still requiring endoscopy to exclude malignancy (4).",
+      "idealAnswer": "Absolute iron deficiency anemia. The discriminating test is the iron panel: a LOW ferritin (7) with a HIGH TIBC and a 6% transferrin saturation proves true iron deficiency and excludes anemia of chronic disease/CKD as the primary cause (in ACD ferritin would be normal/high and TIBC low). The pencil cells on smear support iron deficiency over thalassemia. The likely source is occult upper-GI blood loss from chronic NSAID use plus active H. pylori (positive stool antigen and FOBT), amplified by her apixaban anticoagulation — the apixaban is for the atrial fibrillation visible on her EKG. Her other abnormalities are concurrent but separate: the HIGH TSH (hypothyroidism) and her stable stage 3 CKD both contribute to fatigue but cannot explain a microcytic, iron-deficient anemia. I commit to iron deficiency anemia but still require GI endoscopy (EGD and colonoscopy) to exclude an occult malignancy given her age and family history.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -281,63 +317,85 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH anemia work-up: iron repletion – oral ferrous sulfate or IV iron (CANT-MISS,6); identify and treat source of blood loss – GI work-up / menstrual history (CANT-MISS,6); confirm iron studies (low ferritin) (3); transfuse only if symptomatic/unstable (3); recheck CBC/retic response (2). PENALTY: transfusing a stable iron-deficient patient without indication (-2); failing to pursue the bleeding source (-3).",
-      "idealAnswer": "Replace iron – oral ferrous sulfate (every-other-day dosing improves absorption) or IV iron if intolerant/malabsorption/ongoing loss/need for rapid repletion. Critically: identify and treat the source of blood loss – GI evaluation (EGD/colonoscopy) in adults, menstrual history in women. Transfuse only if symptomatic/unstable. Recheck CBC/retic.",
+      "prompt": "What is your management plan, including how you handle her anticoagulation and NSAIDs, and your disposition/safe-discharge decision for this older patient?",
+      "rubric": "Per MGH anemia work-up: iron repletion — oral ferrous sulfate (every-other-day dosing improves absorption) or IV iron given her CKD/PPI-impaired absorption and ongoing loss (CANT-MISS,5); identify and treat the source — GI endoscopy (EGD + colonoscopy) to find the bleeding lesion and exclude malignancy (CANT-MISS,5); STOP the NSAID and treat H. pylori with eradication therapy + continue PPI (CANT-MISS,4); review/manage apixaban with cardiology — do NOT blindly continue full-dose anticoagulation through active GI loss; weigh stroke risk vs bleeding (3); transfuse only if symptomatic/unstable — she is stable, so no transfusion now (2); treat the concurrent hypothyroidism (adjust levothyroxine) and recheck CBC/reticulocyte response (2). DISPOSITION/SAFE DISCHARGE: safe for outpatient management with arranged outpatient endoscopy, medication reconciliation (stop NSAID, hold/adjust anticoagulation), strict return precautions for melena/hematochezia/lightheadedness, and close PCP/GI follow-up (3). PENALTY: continuing the NSAID and full-dose apixaban without addressing the bleeding (-3); discharging without arranging endoscopy / source work-up (-3); transfusing a stable patient without indication (-2).",
+      "idealAnswer": "Repenish iron — oral ferrous sulfate with every-other-day dosing to improve absorption, or IV iron given her CKD, chronic PPI-related malabsorption, and ongoing losses. Find and treat the source: arrange GI endoscopy (EGD AND colonoscopy) to localize the bleeding lesion and exclude an occult malignancy. STOP the daily ibuprofen, start H. pylori eradication therapy, and continue the PPI. Review her apixaban with cardiology — do not blindly continue full-dose anticoagulation through active GI blood loss; balance her stroke risk against bleeding (consider holding/adjusting until the source is controlled). She is hemodynamically stable, so transfuse only if she becomes symptomatic or unstable — no transfusion now. Optimize her hypothyroidism (adjust levothyroxine for the high TSH) and recheck CBC and reticulocytes to confirm response. DISPOSITION: she is safe for outpatient management — arrange outpatient endoscopy, perform medication reconciliation (stop NSAID, hold/adjust anticoagulation, continue PPI), give strict return precautions for black/bloody stools, worsening lightheadedness, or chest pain, and ensure close PCP, GI, and cardiology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Iron repletion (oral or IV iron)",
-            "points": 6
+            "item": "Iron repletion (oral every-other-day ferrous sulfate or IV iron)",
+            "points": 5
           },
           {
-            "item": "Identify and treat source of blood loss",
-            "points": 6
+            "item": "Identify and treat the source — GI endoscopy (EGD + colonoscopy) to exclude malignancy",
+            "points": 5
+          },
+          {
+            "item": "Stop the NSAID and treat H. pylori with eradication therapy + continue PPI",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Confirm iron studies (ferritin)",
+            "item": "Review/manage apixaban with cardiology — weigh stroke vs bleeding, do not blindly continue full-dose anticoagulation",
             "points": 3
           },
           {
-            "item": "Transfuse only if symptomatic/unstable",
-            "points": 3
-          },
-          {
-            "item": "Recheck CBC/reticulocyte response",
+            "item": "Transfuse only if symptomatic/unstable (she is stable — no transfusion now)",
             "points": 2
+          },
+          {
+            "item": "Treat concurrent hypothyroidism and recheck CBC/reticulocyte response",
+            "points": 2
+          },
+          {
+            "item": "Safe discharge: outpatient endoscopy arranged, medication reconciliation, return precautions, close PCP/GI/cardiology follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Dietary counseling",
+            "item": "Dietary counseling on iron-rich foods",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Failing to pursue bleeding source",
+            "item": "Continuing the NSAID and full-dose apixaban without addressing the bleeding",
             "points": -3
+          },
+          {
+            "item": "Discharging without arranging endoscopy / source work-up",
+            "points": -3
+          },
+          {
+            "item": "Transfusing a stable patient without indication",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Iron repletion (oral or IV iron)",
-        "Identify and treat source of blood loss"
+        "Iron repletion (oral every-other-day ferrous sulfate or IV iron)",
+        "Identify and treat the source — GI endoscopy (EGD + colonoscopy) to exclude malignancy",
+        "Stop the NSAID and treat H. pylori with eradication therapy + continue PPI"
       ],
       "optionalActions": [
-        "Confirm iron studies (ferritin)",
-        "Transfuse only if symptomatic/unstable",
-        "Recheck CBC/reticulocyte response",
-        "Dietary counseling"
+        "Review/manage apixaban with cardiology — weigh stroke vs bleeding, do not blindly continue full-dose anticoagulation",
+        "Transfuse only if symptomatic/unstable (she is stable — no transfusion now)",
+        "Treat concurrent hypothyroidism and recheck CBC/reticulocyte response",
+        "Safe discharge: outpatient endoscopy arranged, medication reconciliation, return precautions, close PCP/GI/cardiology follow-up",
+        "Dietary counseling on iron-rich foods"
       ],
       "unsafeActions": [
-        "Failing to pursue bleeding source"
+        "Continuing the NSAID and full-dose apixaban without addressing the bleeding",
+        "Discharging without arranging endoscopy / source work-up"
       ],
-      "consults": [],
-      "disposition": "Usually outpatient",
+      "consults": [
+        "Gastroenterology",
+        "Cardiology"
+      ],
+      "disposition": "Outpatient if hemodynamically stable, with arranged endoscopy and close follow-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Pancytopenia & Anemia (Iron Deficiency)",
@@ -353,12 +411,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "pregnancy_possibility"
+      "gi_bleeding_history",
+      "family_cancer_history"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "38-year-old woman, tired-appearing, otherwise well. Good historian.",
+    "communicationStyle": "answers directly but does not volunteer extra information, especially about her stools, over-the-counter NSAID use, or family cancer history",
+    "affect": "67-year-old woman, pale and tired-appearing, cooperative; worried about why she is so worn out. Reasonable historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the darker stools, daily ibuprofen, apixaban, prior H. pylori ulcer, ice craving, or family colon cancer unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -377,17 +436,40 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
-      "id": "pregnancy_possibility",
-      "category": "ob_gyn",
+      "id": "gi_bleeding_history",
+      "category": "ros",
       "triggerConcepts": [
-        "pregnancy",
-        "could you be pregnant",
-        "last menstrual period",
-        "lmp"
+        "stool",
+        "stools",
+        "bowel movements",
+        "black stools",
+        "melena",
+        "blood in stool",
+        "rectal bleeding",
+        "darker stool",
+        "ulcer",
+        "h pylori",
+        "stomach bleeding"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_cancer_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "family",
+        "cancer in the family",
+        "colon cancer",
+        "relatives",
+        "parents"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -441,7 +523,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "ice craving",
+        "cravings",
+        "diet"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -468,7 +553,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney",
+        "thyroid",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -481,7 +569,14 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "blood thinner",
+        "apixaban",
+        "ibuprofen",
+        "nsaid",
+        "over the counter",
+        "omeprazole",
+        "ppi"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -494,7 +589,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior anemia",
+        "transfusion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -504,25 +601,45 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: regular, soft flow murmur, no other findings. Abdomen: soft, nontender. Rectal: brown stool, no melena (if examined).",
-      "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
-    },
-    {
-      "id": "inspect_conjunctiva_finding_2",
-      "finding": "HEENT: conjunctival pallor; smooth tongue if examined; koilonychia (spoon nails) if examined.",
+      "id": "inspect_conjunctiva_finding_1",
+      "finding": "HEENT: conjunctival and mucous-membrane pallor; smooth/atrophic tongue if examined; angular cheilosis if inspected.",
       "revealedBy": [
         "inspect_conjunctiva"
       ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No conjunctival pallor."
+    },
+    {
+      "id": "inspect_nails_finding_2",
+      "finding": "Nails: koilonychia (spoon-shaped nails).",
+      "revealedBy": [
+        "inspect_nails"
+      ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No conjunctival pallor."
+      "normalIfNotPresent": "Nails normal, no koilonychia."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Cardiac: irregularly irregular rhythm, soft early systolic flow murmur at the left sternal border, no rub, no gallop.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rhythm, no murmur appreciated."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_4",
+      "finding": "Orthostatics: BP drops to 112/72 with HR rise to 104 on standing, mildly symptomatic — consistent with the degree of anemia.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No orthostatic change."
     }
   ],
   "overallScoring": {
@@ -535,62 +652,70 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Iron deficiency anemia",
-    "diagnosticFramework": "38F presents with months of progressive fatigue, exertional breathlessness, and pallor, on a background of heavy menstrual periods. The diagnosis is Iron deficiency anemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "67F with stage 3 CKD, hypothyroidism, atrial fibrillation on apixaban, and knee osteoarthritis on chronic NSAIDs presents with months of fatigue, exertional dyspnea, and lightheadedness and is found to have a microcytic, hypochromic anemia. The diagnosis is Iron deficiency anemia from occult GI blood loss (chronic NSAID use plus active H. pylori, amplified by anticoagulation), confirmed by a low ferritin with a high TIBC. It is reached by eliciting the focused history (darker stools, OTC NSAIDs, anticoagulant, prior ulcer, family colon cancer), performing the targeted exam, and integrating multi-system labs while distinguishing iron deficiency from the competing anemia of chronic disease/CKD and excluding occult malignancy.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular, soft flow murmur, no other findings. Abdomen: soft, nontender. Rectal: brown stool, no melena (if examined).",
-      "HEENT: conjunctival pallor; smooth tongue if examined; koilonychia (spoon nails) if examined."
+      "HEENT: conjunctival and mucous-membrane pallor; smooth/atrophic tongue if examined; angular cheilosis if inspected.",
+      "Nails: koilonychia (spoon-shaped nails).",
+      "Cardiac: irregularly irregular rhythm, soft early systolic flow murmur at the left sternal border, no rub, no gallop.",
+      "Orthostatics: BP drops to 112/72 with HR rise to 104 on standing, mildly symptomatic — consistent with the degree of anemia."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "Smear",
       "IronStudies",
       "Reticulocyte",
-      "BMP"
+      "BMP",
+      "TFTs",
+      "FOBT_Hpylori"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Iron deficiency anemia while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Iron deficiency anemia and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the rich comorbidity and polypharmacy.",
+      "Elicit the focused history, including darker stools, daily OTC ibuprofen, apixaban, the prior H. pylori ulcer, and the family colon cancer only on direct questioning.",
+      "Perform the targeted physical exam maneuvers (pallor, koilonychia, orthostatics, irregular rhythm) to reveal key findings.",
+      "Build a differential led by Iron deficiency anemia while actively distinguishing the competing anemia of chronic disease/CKD and naming the must-not-miss occult GI malignancy.",
+      "Integrate multi-system labs (iron studies, FOBT/H. pylori, BMP/CKD, TSH) and read the patient's own atrial fibrillation on the EKG and a reassuring CXR.",
+      "Commit to Iron deficiency anemia, identify and treat the bleeding source, manage anticoagulation/NSAIDs, and arrange safe outpatient disposition with endoscopy and follow-up."
     ],
     "commonPitfalls": [
-      "Failing to pursue bleeding source"
+      "Attributing the anemia solely to CKD/anemia of chronic disease",
+      "Failing to pursue the bleeding source / arrange endoscopy",
+      "Continuing the NSAID and full-dose anticoagulation through active GI loss",
+      "Transfusing a stable patient without indication"
     ],
     "managementPearls": [
-      "Iron repletion (oral or IV iron)",
-      "Identify and treat source of blood loss"
+      "Iron repletion (oral every-other-day ferrous sulfate or IV iron)",
+      "Identify and treat the source — GI endoscopy, stop NSAID, eradicate H. pylori, review anticoagulation"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "auscultate_aortic_area"
+      "inspect_conjunctiva"
     ],
     "criticalWorkupItems": [
-      "CBC with indices",
-      "Iron studies — ferritin/iron/TIBC"
+      "Iron studies (ferritin/iron/TIBC/transferrin saturation) before giving iron",
+      "Fecal occult blood test + H. pylori testing"
     ],
     "criticalInterpretationItems": [
-      "Atrial flutter with 2:1 AV conduction (ventricular rate ~150).",
-      "Cardiomegaly (cardiothoracic ratio >0.5) on a PA film."
+      "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes — her known AF, the reason she is anticoagulated.",
+      "Clear, reassuring chest film — no cardiopulmonary cause for the dyspnea, which is explained by the anemia."
     ],
     "criticalManagementItems": [
-      "Iron repletion (oral or IV iron)",
-      "Identify and treat source of blood loss"
+      "Iron repletion (oral every-other-day ferrous sulfate or IV iron)",
+      "Identify and treat the source — GI endoscopy (EGD + colonoscopy) to exclude malignancy",
+      "Stop the NSAID and treat H. pylori with eradication therapy + continue PPI"
     ],
     "keyImageInterpretationFindings": [
-      "Atrial flutter with 2:1 AV conduction (ventricular rate ~150).",
-      "Cardiomegaly (cardiothoracic ratio >0.5)."
+      "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes.",
+      "Clear, reassuring chest film with no cardiopulmonary cause for the dyspnea."
     ],
     "criticalImageInterpretationFindings": [
-      "Atrial flutter with 2:1 AV conduction (ventricular rate ~150).",
-      "Cardiomegaly (cardiothoracic ratio >0.5)."
+      "Atrial fibrillation with a controlled ventricular response and no acute ischemic changes.",
+      "Clear, reassuring chest film with no cardiopulmonary cause for the dyspnea."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "An integrated tracing is part of the puzzle — her atrial fibrillation explains the apixaban that is feeding her GI blood loss.",
       "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A normal chest film is itself informative: the exertional dyspnea is the anemia, not a cardiopulmonary process."
     ]
   },
   "communicationScoring": {
@@ -605,7 +730,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (stools, alcohol, family cancer)",
         "points": 1
       },
       {
@@ -620,8 +745,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own study interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

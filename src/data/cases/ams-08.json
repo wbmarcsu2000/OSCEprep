@@ -2,29 +2,32 @@
   "id": "ams-08",
   "category": "Altered Mental Status",
   "difficulty": "hard",
-  "title": "Agitation, sweating, and twitching after a medication change",
+  "title": "Agitation, rigidity, and twitching after a cascade of medication changes",
   "diagnosis": "Serotonin syndrome",
   "chart": {
     "ageSex": "34M",
     "cc": "Agitation and muscle twitching",
-    "oneLiner": "34M brought in by his partner with several hours of agitation, sweating, and jerking movements that began after a recent medication change.",
+    "oneLiner": "34M with bipolar depression, hypertension, and CKD, brought in by his partner with several hours of agitation, sweating, rigidity, and jerking movements after a string of recent medication changes — including a new antiemetic prescribed at urgent care.",
     "vitals": {
-      "BP": "158/96",
-      "HR": "124",
-      "RR": "24",
-      "Temp": "38.9°C",
-      "SpO2": "97% RA"
+      "BP": "162/98",
+      "HR": "126",
+      "RR": "26",
+      "Temp": "39.4°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I feel really wired and shaky… my legs keep jerking and I can't stop sweating.",
-  "patientFile": "PERSONA: 34-year-old man, restless and diaphoretic, anxious and hypervigilant, mildly agitated but redirectable. Speaks in short bursts, fidgety. Partner is at bedside and can give collateral.\n\nCOLLATERAL (provide ONLY if the student asks the partner/chart/medication list/recent changes): He takes an antidepressant for depression (an SSRI, sertraline) and was started two days ago on tramadol by an urgent-care clinician for a back strain. Yesterday he also took several over-the-counter doses of dextromethorphan cough syrup for a cold. Symptoms started this morning, roughly 12 hours after the most recent doses, and have been worsening rapidly. No alcohol or street drugs. No fevers or sick contacts before this. No new antipsychotics or anti-nausea (no metoclopramide/haloperidol).\n\nHPI (from patient — anxious, brief): feels 'wired,' shaky, hot, and sweaty; his legs and feet keep twitching/jerking on their own; heart is racing; some nausea and loose stools today. Denies headache, neck pain, photophobia, focal weakness, or numbness when asked. Denies chest pain.\nPMH: depression (on an SSRI), recent back strain. MEDS (if asked): sertraline daily; tramadol started 2 days ago; OTC dextromethorphan since yesterday. SOCIAL: occasional alcohol, no recreational drugs, no recent travel.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, diaphoretic, agitated, flushed; tremulous. Pupils dilated (mydriasis).\n- Vitals: BP 158/96, HR 124, RR 24, 38.9°C, SpO2 97% RA.\n- Neuro reflexes: brisk, hyperreflexic; sustained clonus at the ankles, greater in the lower extremities than upper; spontaneous myoclonic jerks.\n- Motor/tone: increased tone/rigidity, more prominent in the lower extremities; no focal weakness.\n- Mental status: agitated, hypervigilant, oriented but restless; no neck stiffness.\n- Skin: hot, moist/diaphoretic, flushed; no rash, no dryness.\n- Lungs: clear. Cardiac: tachycardic, regular, no murmur. Bowel sounds: hyperactive.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide the medication/recent-change COLLATERAL only when the student explicitly asks about medications, recent medication changes, new drugs, OTC/cough remedies, or asks the partner/checks the chart.\n- Clonus, hyperreflexia, rigidity, diaphoresis, and mydriasis are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer (e.g., no neck stiffness, no focal deficit, skin not dry).",
+  "opening": "I feel really wired and shaky… my legs keep jerking, my muscles feel stiff, and I can't stop sweating.",
+  "patientFile": "PERSONA: 34-year-old man, restless and diaphoretic, anxious and hypervigilant, mildly agitated but redirectable. Speaks in short bursts, fidgety. Partner is at bedside and can give detailed collateral and the medication bottles.\n\nCOLLATERAL (provide ONLY if the student asks the partner / chart / medication list / recent changes): He has bipolar depression and takes sertraline (an SSRI) plus lithium long-term, and lisinopril for blood pressure. Over the last week several things changed: (1) an urgent-care clinician started tramadol four days ago for a back strain; (2) two days ago his primary doctor added linezolid for an infected skin abscess on his leg; (3) yesterday, because he felt nauseated, the urgent-care clinician also gave him a prescription for an anti-nausea pill — the partner reads the bottle: 'metoclopramide.' He has also been taking an over-the-counter dextromethorphan cough syrup for a cold since two days ago. Symptoms began this morning and have worsened rapidly over a few hours. He missed his usual blood-pressure follow-up and the partner thinks he's been drinking less water than usual because of the nausea. No alcohol or street drugs. No fever or sick contacts before this week.\n\nHPI (from patient — anxious, brief): feels 'wired,' shaky, hot, and sweaty; his legs and feet keep twitching/jerking on their own; his muscles feel stiff; heart is racing; some nausea and loose stools today. Denies headache, neck pain, photophobia, focal weakness, or numbness when asked. Denies chest pain. Says he hasn't been able to pee much today.\nPMH: bipolar depression (on sertraline + lithium), hypertension, chronic kidney disease (baseline creatinine around 1.6), recent leg skin abscess, recent back strain. MEDS (if asked): sertraline daily; lithium daily; lisinopril daily; tramadol started 4 days ago; linezolid started 2 days ago; metoclopramide started yesterday; OTC dextromethorphan since 2 days ago. SOCIAL: occasional alcohol, no recreational drugs, no recent travel. FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, diaphoretic, agitated, flushed; tremulous. Pupils dilated (mydriasis).\n- Vitals: BP 162/98, HR 126, RR 26, 39.4°C, SpO2 96% RA.\n- Neuro reflexes: brisk, hyperreflexic; sustained clonus at the ankles, greater in the lower extremities than upper; spontaneous myoclonic jerks. (This LOWER-extremity-predominant clonus/hyperreflexia favors serotonin syndrome over NMS.)\n- Motor/tone: increased tone with rigidity, more prominent in the lower extremities; NOT the symmetric generalized lead-pipe rigidity of NMS; no focal weakness.\n- Mental status: agitated, hypervigilant, oriented but restless; no neck stiffness.\n- Skin: hot, moist/diaphoretic, flushed; small healing abscess on the left shin; no rash, no dryness.\n- Lungs: clear. Cardiac: tachycardic, regular, no murmur. Bowel sounds: hyperactive. Abdomen soft.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Provide the medication / recent-change COLLATERAL only when the student explicitly asks about medications, recent medication changes, new drugs, antibiotics, anti-nausea/antiemetic drugs, OTC/cough remedies, or asks the partner / checks the chart. The metoclopramide and linezolid are the misleading/confounding items — reveal them only on direct questioning.\n- Clonus, hyperreflexia, rigidity, diaphoresis, and mydriasis are revealed only if the relevant exam is performed.\n- The rigidity is lower-extremity-predominant and NOT generalized lead-pipe; reveal that detail only if tone/strength is examined.\n- If asked something not in this file, give a reasonable normal/negative answer (e.g., no neck stiffness, no focal deficit, skin not dry)."
+  ,
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 104 — normal (excludes hypoglycemia as the cause).",
-      "CK": "Creatine kinase 1,150 (elevated) — reflects neuromuscular hyperactivity; watch for rhabdomyolysis.",
-      "CBC": "WBC 13.2 (mild stress leukocytosis), Hgb 15.1, Plt 250.",
-      "BMP": "Na 140, K 4.2, HCO3 19, BUN 18, Cr 1.2 (mild), Glu 104 — mild metabolic acidosis.",
+      "Glucose": "Fingerstick glucose 98 — normal (excludes hypoglycemia as the cause of the agitation).",
+      "CK": "Creatine kinase 6,400 (markedly elevated) — neuromuscular hyperactivity with rhabdomyolysis; urine dip positive for blood with few RBCs (myoglobinuria).",
+      "CBC": "WBC 14.8 (stress leukocytosis), Hgb 15.3, Plt 248.",
+      "BMP": "Na 138, K 5.6 (mildly elevated), Cl 101, HCO3 16, BUN 42, Cr 2.6 (up from baseline ~1.6 — AKI on CKD), Glu 98. Anion gap = 138 − (101 + 16) = 21 (elevated). Lactate 4.2 — a wide-anion-gap metabolic (lactic) acidosis from neuromuscular hyperactivity and hypoperfusion, with AKI on CKD and hyperkalemia compounded by rhabdomyolysis.",
+      "LFTs": "AST 180, ALT 70 (mild transaminitis — partly reflects the rhabdomyolysis/CK release); bilirubin and ALP normal.",
+      "Lithium": "Lithium level 1.8 mmol/L (above the 0.6–1.2 therapeutic range) — supratherapeutic from the new AKI; lithium itself potentiates serotonin toxicity, so this both confounds and contributes.",
       "TSH": "TSH normal (argues against thyroid storm).",
       "Tox": "Acetaminophen, salicylate, and ethanol levels negative; urine tox negative for cocaine/amphetamines (helps exclude sympathomimetic toxicity)."
     }
@@ -33,19 +36,21 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 22,
+      "source": "https://litfl.com/ecg-case-022/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~120 bpm with no acute ischemic ST/T changes and a normal QT interval.",
-      "verify": "Source a study matching: Sinus tachycardia at ~120 bpm with no acute ischemic ST/T changes and a normal QT interval. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~125 bpm with a PROLONGED QT interval (QTc ~500 ms) and no acute ischemic ST/T changes — a drug/metabolic long QT in this poisoned patient (QT-prolonging sertraline, the toxidrome, and electrolyte derangement).",
+      "verify": "Source a study matching: sinus tachycardia with a prolonged QTc (~500 ms) and no acute ischemia. The pinned study (litflStudyN 22) supplies the sinus-tachycardia-with-long-QT morphology. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia with normal intervals",
+      "imageDescription": "12-lead showing sinus tachycardia with a prolonged QT interval",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead normal QT"
+        "sinus tachycardia prolonged QT ECG",
+        "drug-induced long QT sinus tachycardia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 31-year-old woman on antidepressants presents agitated and hyperthermic with tremor, clonus, and a racing heart."
+      "clinicalVignette": "A man on an SSRI and multiple new drugs presents agitated and hyperthermic with tremor, rigidity, and clonus; his tracing is fast with a long QT."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -60,7 +65,7 @@
         "normal chest radiograph PA clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 31-year-old agitated, hyperthermic woman has a film obtained to exclude aspiration or pneumonia."
+      "clinicalVignette": "An agitated, hyperthermic man has a film obtained to exclude aspiration or pneumonia."
     }
   },
   "revealKeys": [
@@ -68,6 +73,8 @@
     "CK",
     "CBC",
     "BMP",
+    "LFTs",
+    "Lithium",
     "TSH",
     "Tox",
     "ekg",
@@ -76,6 +83,7 @@
   "essential": [
     "Glucose",
     "CK",
+    "BMP",
     "Tox"
   ],
   "steps": [
@@ -83,27 +91,27 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this agitation with neuromuscular hyperactivity (note your leading diagnosis).",
-      "rubric": "Serotonin syndrome (leading,7). Neuroleptic malignant syndrome — NMS (CANT-MISS,4). Anticholinergic toxicity (CANT-MISS,3). Sympathomimetic toxicity / stimulant intoxication (CANT-MISS,3). Meningitis/encephalitis (CANT-MISS to consider,2). Thyroid storm / malignant hyperthermia (core,2). Names the toxidrome reasoning — recent serotonergic drug change plus clonus/hyperreflexia/hyperthermia (core,4).",
-      "idealAnswer": "Leading diagnosis: Serotonin syndrome. Must-not-miss diagnoses to exclude: Neuroleptic malignant syndrome (NMS); Anticholinergic toxicity; Sympathomimetic/stimulant toxicity; Meningitis/encephalitis. Also reasonable: Thyroid storm; Malignant hyperthermia.",
+      "prompt": "Based on your history and physical, list your differential for this agitation with neuromuscular hyperactivity and hyperthermia (note your leading diagnosis). Because the medication list contains a new dopamine-antagonist antiemetic AND multiple serotonergic agents, name three mechanisms/sources of serotonergic excess in this patient and say how you would distinguish serotonin syndrome from NMS.",
+      "rubric": "Serotonin syndrome (leading,6). Neuroleptic malignant syndrome — NMS, genuinely on the table given the new metoclopramide (dopamine antagonist) (CANT-MISS / co-leading,5). Anticholinergic toxicity (CANT-MISS,2). Sympathomimetic toxicity / stimulant intoxication (CANT-MISS,2). Meningitis/encephalitis (CANT-MISS to consider,2). Thyroid storm / malignant hyperthermia (core,1). Names ≥3 mechanisms/sources of serotonergic excess here — e.g. SSRI (sertraline) + tramadol (serotonin reuptake/release) + linezolid (MAO inhibition) + dextromethorphan + lithium potentiation (core,4). Distinguishes serotonin syndrome (rapid onset, clonus/hyperreflexia, lower-extremity predominance) from NMS (slower onset over days, lead-pipe rigidity, bradyreflexia) (core,3). PENALTY: ignores the new dopamine antagonist and never considers NMS (-2).",
+      "idealAnswer": "Leading diagnosis: Serotonin syndrome. The genuine competing diagnosis is Neuroleptic malignant syndrome (NMS) — he was just started on metoclopramide, a dopamine antagonist, which is the classic NMS trigger, so both are defensible at the bedside. Other must-not-miss diagnoses to exclude: Anticholinergic toxicity; Sympathomimetic/stimulant toxicity; Meningitis/encephalitis. Also reasonable: Thyroid storm; Malignant hyperthermia. Three+ mechanisms/sources of serotonergic excess in THIS patient: (1) sertraline — an SSRI (serotonin reuptake inhibition); (2) tramadol — inhibits serotonin reuptake and triggers release; (3) linezolid — a reversible MAO inhibitor; plus dextromethorphan (serotonin reuptake inhibition) and lithium (potentiates serotonergic transmission). Serotonin syndrome vs NMS: serotonin syndrome comes on within hours with clonus, hyperreflexia, and lower-extremity-predominant findings; NMS evolves over days with lead-pipe rigidity and hyporeflexia after a dopamine antagonist — the rapid onset plus clonus/hyperreflexia point to serotonin syndrome.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Serotonin syndrome",
-            "points": 7
+            "points": 6
           },
           {
             "item": "Neuroleptic malignant syndrome (NMS)",
-            "points": 4
+            "points": 5
           },
           {
             "item": "Anticholinergic toxicity",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Sympathomimetic/stimulant toxicity",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Meningitis/encephalitis",
@@ -113,15 +121,24 @@
         "coreActions": [
           {
             "item": "Thyroid storm / malignant hyperthermia",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Names the toxidrome reasoning — recent serotonergic drug change plus clonus/hyperreflexia/hyperthermia",
+            "item": "Names ≥3 mechanisms/sources of serotonergic excess (SSRI + tramadol + linezolid/MAOI + dextromethorphan + lithium potentiation)",
             "points": 4
+          },
+          {
+            "item": "Distinguishes serotonin syndrome (rapid onset, clonus/hyperreflexia) from NMS (lead-pipe rigidity, bradyreflexia, slower onset)",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Ignores the new dopamine antagonist and never considers NMS",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
         "Neuroleptic malignant syndrome (NMS)",
@@ -140,18 +157,18 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Fingerstick glucose (CANT-MISS,3). Toxicology / drug levels — acetaminophen, salicylate, ethanol, urine tox (CANT-MISS,3). Creatine kinase to assess for rhabdomyolysis (CANT-MISS,3). BMP/renal function and acid-base (2). CBC (1). TSH to exclude thyroid storm (1). Consider CT head / LP if meningitis-encephalitis cannot be excluded clinically (bonus,2). PENALTY: anchoring on the diagnosis without excluding hypoglycemia or co-ingestants (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; CK; CBC; BMP; TSH; Tox.",
+      "rubric": "Fingerstick glucose (CANT-MISS,2). Toxicology / drug levels — acetaminophen, salicylate, ethanol, urine tox (CANT-MISS,2). Creatine kinase to assess for rhabdomyolysis (CANT-MISS,3). BMP/renal function with anion gap and a lactate (2). Lithium level given lithium use and new AKI (2). LFTs (1). CBC (1). TSH to exclude thyroid storm (1). EKG (1). Consider CT head / LP if meningoencephalitis cannot be excluded clinically (bonus,2). PENALTY: anchoring on the diagnosis without excluding hypoglycemia or co-ingestants, or without checking renal function/CK in a rigid hyperthermic patient (-2).",
+      "idealAnswer": "Order: Glucose; Tox; CK (rhabdomyolysis); BMP with anion gap + lactate (looking for AKI, hyperkalemia, anion-gap acidosis); Lithium level (he is on lithium and now has AKI); LFTs; CBC; TSH; EKG; CXR. Consider CT head / LP if you cannot exclude CNS infection clinically.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Fingerstick glucose",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Toxicology / drug levels (acetaminophen, salicylate, ethanol, urine tox)",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Creatine kinase",
@@ -160,8 +177,16 @@
         ],
         "coreActions": [
           {
-            "item": "BMP/renal function and acid-base",
+            "item": "BMP with anion gap and lactate",
             "points": 2
+          },
+          {
+            "item": "Lithium level (on lithium with new AKI)",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 1
           },
           {
             "item": "CBC",
@@ -173,11 +198,7 @@
           },
           {
             "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
@@ -188,7 +209,7 @@
         ],
         "penalties": [
           {
-            "item": "anchoring on the diagnosis without excluding hypoglycemia or co-ingestants",
+            "item": "anchoring on the diagnosis without excluding hypoglycemia/co-ingestants or checking renal function/CK",
             "points": -2
           }
         ]
@@ -199,16 +220,18 @@
         "Creatine kinase"
       ],
       "optionalTests": [
-        "BMP/renal function and acid-base",
+        "BMP with anion gap and lactate",
+        "Lithium level (on lithium with new AKI)",
+        "LFTs",
         "CBC",
         "TSH to exclude thyroid storm",
         "CT head / LP if meningoencephalitis cannot be excluded clinically"
       ],
       "contraindicatedTests": [
-        "anchoring on the diagnosis without excluding hypoglycemia or co-ingestants"
+        "anchoring on the diagnosis without excluding hypoglycemia/co-ingestants or checking renal function/CK"
       ],
       "orderSensitiveActions": [
-        "anchoring on the diagnosis without excluding hypoglycemia or co-ingestants"
+        "anchoring on the diagnosis without excluding hypoglycemia/co-ingestants or checking renal function/CK"
       ]
     },
     {
@@ -217,33 +240,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia, normal QT. CREDIT: rate & rhythm — sinus tachycardia (7); no acute ischemic changes and a normal/non-prolonged QT (5); systematic read (3). PENALTY: over-calling ischemia or missing the QT (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and say what they change about your management.",
+      "rubric": "Findings = sinus tachycardia at ~125 bpm with a PROLONGED QT interval (QTc ~500 ms) and no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (5); measures/recognizes the prolonged QT and names its drivers (QT-prolonging sertraline, the toxidrome, electrolyte derangement) (6); links the long QT to management — avoid further QT-prolonging agents and aggressively correct K/Mg to prevent torsades (4). PENALTY: calling the QT normal / missing it, or over-calling ischemia from rate-related ST changes (-3).",
       "keyFindings": [
-        "sinus tachycardia at ~120 bpm",
-        "no acute ischemic changes; comments on a normal QT interval given the serotonergic/co-ingestant context"
+        "sinus tachycardia at ~125 bpm",
+        "prolonged QT interval (QTc ~500 ms) without acute ischemia — drug/metabolic long QT in a poisoned patient"
       ],
       "criticalFindings": [
-        "Sinus tachycardia with no acute ischemia and a normal QT interval."
+        "Sinus tachycardia with a prolonged QT interval (QTc ~500 ms) and no acute ischemia."
       ],
       "commonMistakes": [
-        "over-calling ischemia from rate-related ST changes",
-        "failing to assess the QT interval in a poisoned patient"
+        "failing to measure the QT and calling the tracing a plain sinus tachycardia",
+        "over-calling ischemia from rate-related ST changes"
       ],
-      "idealAnswer": "Sinus tachycardia at ~120 bpm; no acute ischemic ST/T changes and a normal (non-prolonged) QT interval.",
+      "idealAnswer": "Sinus tachycardia at ~125 bpm with a prolonged QT interval (QTc ~500 ms) and no acute ischemic ST/T changes. The long QT is drug- and metabolism-driven here (QT-prolonging sertraline, the serotonergic toxidrome, and electrolyte derangement from rhabdomyolysis/AKI). It matters because it raises torsades risk: avoid additional QT-prolonging drugs, keep potassium and magnesium repleted, and monitor on telemetry.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia with no acute ischemia and a normal QT interval."
+          "Sinus tachycardia with a prolonged QT interval (QTc ~500 ms) and no acute ischemia."
         ],
         "coreActions": [
-          "sinus tachycardia at ~120 bpm",
-          "no acute ischemic changes; comments on a normal QT interval given the serotonergic/co-ingestant context"
+          "sinus tachycardia at ~125 bpm",
+          "prolonged QT interval (QTc ~500 ms) without acute ischemia — drug/metabolic long QT in a poisoned patient"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the QT normal / misses the prolonged QT, or over-calls ischemia",
             "points": -3
           }
         ]
@@ -296,16 +319,16 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given a recent serotonergic medication change, normal glucose, negative co-ingestant tox, normal TSH, an elevated CK, and an exam with lower-extremity-predominant clonus, hyperreflexia, agitation, diaphoresis, and hyperthermia, what is your diagnosis and what did you rule out?",
-      "rubric": "Serotonin syndrome (meets Hunter criteria — serotonergic agent plus clonus/hyperreflexia) (6). Explicitly excludes NMS (lead-pipe rigidity, bradyreflexia, neuroleptic exposure, slower onset), anticholinergic toxicity (dry skin/absent bowel sounds), sympathomimetic toxicity (negative tox), and CNS infection (no meningismus, normal glucose) (4).",
-      "idealAnswer": "Serotonin syndrome — it meets the Hunter criteria, with a recent serotonergic medication change plus lower-extremity-predominant clonus and hyperreflexia, alongside agitation, diaphoresis, and hyperthermia. Excluded: NMS (no lead-pipe rigidity/bradyreflexia or neuroleptic exposure, and onset is too rapid), anticholinergic toxicity (skin is diaphoretic, not dry), sympathomimetic toxicity (negative co-ingestant tox), and CNS infection (no meningismus, normal glucose).",
+      "prompt": "Given a cascade of recent serotonergic medication changes (plus a NEW dopamine-antagonist antiemetic), normal glucose, negative co-ingestant tox, normal TSH, a markedly elevated CK with rhabdomyolysis, AKI on CKD with a wide-anion-gap (lactic) acidosis and hyperkalemia, a supratherapeutic lithium level, an EKG with sinus tachycardia and a prolonged QT, and an exam with lower-extremity-predominant clonus, hyperreflexia, rigidity, agitation, diaphoresis, and hyperthermia, commit to a diagnosis, name the discriminating feature that resolves the serotonin-syndrome-versus-NMS fork, and state what you ruled out.",
+      "rubric": "Serotonin syndrome (meets Hunter criteria — serotonergic agent plus clonus/hyperreflexia) (6). RESOLVES the fork explicitly: the rapid (hours) onset with clonus/hyperreflexia and lower-extremity predominance favors serotonin syndrome over NMS, even though metoclopramide was just started — NMS would show lead-pipe rigidity, bradyreflexia, and a slower (days) course (2). Names the concurrent problems and their thread — rhabdomyolysis → AKI on CKD → supratherapeutic lithium (which itself potentiates serotonin toxicity) and hyperkalemia/anion-gap acidosis, with a drug/metabolic long QT (2). Excludes anticholinergic toxicity (diaphoretic not dry, active bowel sounds), sympathomimetic toxicity (negative tox), and CNS infection (no meningismus, normal glucose).",
+      "idealAnswer": "Serotonin syndrome — it meets the Hunter criteria, with a recent cascade of serotonergic agents (sertraline + tramadol + linezolid as a reversible MAO inhibitor + dextromethorphan, with lithium potentiation) plus lower-extremity-predominant clonus and hyperreflexia, agitation, diaphoresis, and hyperthermia. Resolving the fork: although metoclopramide (a dopamine antagonist) was just started and raises NMS, the picture is serotonin syndrome — onset is within hours, with clonus, hyperreflexia, and lower-extremity predominance, whereas NMS evolves over days with generalized lead-pipe rigidity and hyporeflexia. The concurrent abnormalities hang together: marked CK elevation = rhabdomyolysis, which (on top of volume depletion) drives AKI on his CKD; the AKI raised his lithium to a supratherapeutic level, and lithium itself potentiates serotonin toxicity; the same picture explains the hyperkalemia and wide-anion-gap lactic acidosis, and the EKG shows a drug/metabolic long QT. Excluded: NMS (no lead-pipe rigidity/bradyreflexia, onset too rapid), anticholinergic toxicity (skin is diaphoretic with active bowel sounds, not dry/quiet), sympathomimetic toxicity (negative co-ingestant tox), and CNS infection (no meningismus, normal glucose).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
         "bonusActions": [
           {
-            "item": "Cites Hunter criteria and contrasts NMS (rigidity/hyporeflexia, slower onset) versus serotonin syndrome (clonus/hyperreflexia, rapid onset)",
+            "item": "Cites Hunter criteria and resolves the fork — contrasts NMS (lead-pipe rigidity/hyporeflexia, onset over days after a dopamine antagonist) versus serotonin syndrome (clonus/hyperreflexia, onset over hours)",
             "points": 1
           }
         ],
@@ -326,38 +349,46 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH toxicology/serotonin syndrome: immediately STOP all serotonergic agents (CANT-MISS,7); benzodiazepines for agitation, clonus, and autonomic control (CANT-MISS,6); aggressive external cooling and supportive care — IV fluids, monitor for rhabdomyolysis/renal injury (4); cyproheptadine (serotonin antagonist) for moderate-severe cases not responding to benzodiazepines (3); for severe hyperthermia (>41.1°C) or rigidity, intubate, sedate, and paralyze with a non-depolarizing agent — control temperature (3); Poison Control / toxicology consult and admit, ICU if severe (2). PENALTY: giving antipyretics such as acetaminophen for the centrally mediated hyperthermia (ineffective) (-2); using physical restraints alone, which worsens hyperthermia and lactic acidosis (-2); giving a serotonergic antiemetic (e.g., metoclopramide) or a depolarizing paralytic (succinylcholine) with risk of hyperkalemia in rhabdomyolysis (-2).",
-      "idealAnswer": "Serotonin syndrome: immediately discontinue all serotonergic agents (sertraline, tramadol, dextromethorphan). Benzodiazepines (e.g., lorazepam/diazepam) for agitation, clonus, and to blunt autonomic instability. Aggressive supportive care: IV crystalloid, external cooling, continuous monitoring, and treat/anticipate rhabdomyolysis and AKI. Cyproheptadine for moderate-to-severe cases not controlled by benzodiazepines. For severe hyperthermia (>41.1°C) or refractory rigidity: rapid sequence intubation with sedation and non-depolarizing paralysis, then active cooling. Avoid antipyretics (centrally mediated fever), avoid physical restraints alone. Consult Poison Control/toxicology; admit, ICU for severe disease.",
+      "prompt": "What is your management plan, including how you handle the rhabdomyolysis/AKI, the long QT, the supratherapeutic lithium, and your disposition/safe-discharge plan?",
+      "rubric": "Per MGH toxicology/serotonin syndrome: immediately STOP all serotonergic agents AND the new dopamine antagonist (sertraline, tramadol, linezolid, dextromethorphan, metoclopramide; hold lithium) (CANT-MISS,6); benzodiazepines for agitation, clonus, and autonomic control (CANT-MISS,5); aggressive external cooling and supportive care (3); IV fluids for rhabdomyolysis/AKI with attention to the hyperkalemia and the wide-anion-gap acidosis, and address the supratherapeutic lithium (nephrology for possible hemodialysis if it climbs/oliguric) (3); long-QT precautions — continuous telemetry, repenish K/Mg, avoid further QT-prolonging drugs (2); cyproheptadine for moderate-severe cases not responding to benzodiazepines (2); for severe hyperthermia (>41.1°C) or rigidity, intubate, sedate, and paralyze with a NON-depolarizing agent (avoid succinylcholine with hyperkalemia/rhabdo) (2); disposition — ICU admission with toxicology/Poison Control, and a safe-discharge/medication-reconciliation + prescriber-communication plan once stable so the interaction is not re-prescribed (CANT-MISS,2). PENALTY: antipyretics such as acetaminophen for the centrally mediated hyperthermia (ineffective) (-2); succinylcholine / a depolarizing paralytic in rhabdo with hyperkalemia, or restarting any serotonergic/QT-prolonging agent at discharge (-2).",
+      "idealAnswer": "Serotonin syndrome: immediately discontinue ALL the offending agents — the serotonergic drugs (sertraline, tramadol, linezolid, dextromethorphan) AND the newly added dopamine-antagonist antiemetic metoclopramide; hold lithium given the supratherapeutic level and AKI. Benzodiazepines (lorazepam/diazepam) for agitation, clonus, and autonomic instability. Aggressive supportive care: external cooling and continuous monitoring. Treat the rhabdomyolysis and AKI on CKD with IV crystalloid, manage the hyperkalemia and the wide-anion-gap lactic acidosis, and involve nephrology for the supratherapeutic lithium (hemodialysis if it rises or he becomes oliguric — dialysis also helps the AKI/hyperkalemia). Long-QT precautions: telemetry, repenish potassium and magnesium, and avoid additional QT-prolonging drugs. Cyproheptadine for moderate-to-severe disease not controlled by benzodiazepines. For severe hyperthermia (>41.1°C) or refractory rigidity: rapid sequence intubation with sedation and a NON-depolarizing paralytic — avoid succinylcholine given the hyperkalemia and rhabdomyolysis — then active cooling. Avoid antipyretics (centrally mediated fever) and physical restraints alone. Disposition: ICU admission with toxicology/Poison Control. Before discharge: full medication reconciliation, document the serotonergic/QT-prolonging interaction prominently, communicate with his outpatient psychiatrist and PCP so the combination is not re-prescribed, arrange close follow-up, and counsel the patient and partner on which drug classes to avoid.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Stop all serotonergic agents",
-            "points": 7
+            "item": "Stop all serotonergic agents AND the new dopamine antagonist (metoclopramide); hold lithium",
+            "points": 6
           },
           {
             "item": "Benzodiazepines for agitation/clonus and autonomic control",
-            "points": 6
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Aggressive external cooling and supportive care (IV fluids, monitor for rhabdomyolysis/AKI)",
-            "points": 4
+            "item": "Aggressive external cooling and supportive care",
+            "points": 3
+          },
+          {
+            "item": "IV fluids for rhabdomyolysis/AKI; manage hyperkalemia and anion-gap acidosis; address supratherapeutic lithium (nephrology / possible hemodialysis)",
+            "points": 3
+          },
+          {
+            "item": "Long-QT precautions — telemetry, replete K/Mg, avoid further QT-prolonging drugs",
+            "points": 2
           },
           {
             "item": "Cyproheptadine for moderate-severe cases",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Intubate, sedate, and paralyze (non-depolarizing) for severe hyperthermia/rigidity",
-            "points": 3
+            "item": "Intubate, sedate, and paralyze with a non-depolarizing agent for severe hyperthermia/rigidity",
+            "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Poison Control / toxicology consult and appropriate disposition (ICU if severe)",
+            "item": "ICU disposition with toxicology/Poison Control plus a safe-discharge plan — med reconciliation, prescriber communication, document the interaction, close follow-up",
             "points": 2
           }
         ],
@@ -367,29 +398,32 @@
             "points": -2
           },
           {
-            "item": "Physical restraints alone (worsens hyperthermia and acidosis)",
+            "item": "Succinylcholine / depolarizing paralytic in rhabdo with hyperkalemia, or restarting a serotonergic/QT-prolonging agent at discharge",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Stop all serotonergic agents",
+        "Stop all serotonergic agents AND the new dopamine antagonist (metoclopramide); hold lithium",
         "Benzodiazepines for agitation/clonus and autonomic control"
       ],
       "optionalActions": [
-        "Aggressive external cooling and supportive care (IV fluids, monitor for rhabdomyolysis/AKI)",
+        "Aggressive external cooling and supportive care",
+        "IV fluids for rhabdomyolysis/AKI; manage hyperkalemia and anion-gap acidosis; address supratherapeutic lithium (nephrology / possible hemodialysis)",
+        "Long-QT precautions — telemetry, replete K/Mg, avoid further QT-prolonging drugs",
         "Cyproheptadine for moderate-severe cases",
-        "Intubate, sedate, and paralyze (non-depolarizing) for severe hyperthermia/rigidity",
-        "Poison Control / toxicology consult and appropriate disposition (ICU if severe)"
+        "Intubate, sedate, and paralyze with a non-depolarizing agent for severe hyperthermia/rigidity",
+        "ICU disposition with toxicology/Poison Control plus a safe-discharge plan — med reconciliation, prescriber communication, document the interaction, close follow-up"
       ],
       "unsafeActions": [
         "Antipyretics for centrally mediated hyperthermia",
-        "Physical restraints alone (worsens hyperthermia and acidosis)"
+        "Succinylcholine / depolarizing paralytic in rhabdo with hyperkalemia, or restarting a serotonergic/QT-prolonging agent at discharge"
       ],
       "consults": [
-        "Toxicology / Poison Control"
+        "Toxicology / Poison Control",
+        "Nephrology"
       ],
-      "disposition": "Admit; ICU if severe (hyperthermia, rigidity, autonomic instability)",
+      "disposition": "Admit to ICU; nephrology for AKI/supratherapeutic lithium; safe-discharge med reconciliation and prescriber communication once stable",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Toxicology (Serotonin Syndrome)",
@@ -407,12 +441,13 @@
       "substance_use",
       "mental_health"
     ],
-    "communicationStyle": "agitated and hypervigilant; answers in short bursts and needs partner collateral for the medication history",
+    "communicationStyle": "agitated and hypervigilant; answers in short bursts and needs partner collateral for the full medication history (including the new antibiotic and anti-nausea pill)",
     "affect": "34-year-old man, restless and diaphoretic, anxious and hypervigilant, mildly agitated but redirectable.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "Reveal the new antibiotic (linezolid) and the new anti-nausea pill (metoclopramide) only when medications/recent changes are asked about",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -427,7 +462,23 @@
         "new prescription",
         "changes to your meds"
       ],
-      "response": "[Reveal from collateral only when asked: started tramadol for back pain two days ago, on top of his usual sertraline. Phrase in lay terms.]",
+      "response": "[Reveal from collateral only when asked: in the last few days he started tramadol for back pain and an antibiotic for a skin infection, on top of his usual sertraline and lithium. Phrase in lay terms.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "antiemetic_antibiotic",
+      "category": "meds",
+      "triggerConcepts": [
+        "anti-nausea",
+        "antiemetic",
+        "metoclopramide",
+        "antibiotic",
+        "linezolid",
+        "anything for the infection or the nausea"
+      ],
+      "response": "[Reveal from collateral only when asked: yesterday urgent care gave an anti-nausea pill (the partner reads 'metoclopramide' off the bottle), and two days ago his doctor started an antibiotic (linezolid) for a leg skin infection.]",
       "importance": "critical",
       "points": 4,
       "hiddenUntilAsked": true
@@ -442,22 +493,23 @@
         "any supplements or remedies",
         "dextromethorphan"
       ],
-      "response": "[Reveal from collateral only when asked: has been taking an OTC dextromethorphan cough syrup for a cold since yesterday.]",
+      "response": "[Reveal from collateral only when asked: has been taking an OTC dextromethorphan cough syrup for a cold for the last couple of days.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
     },
     {
-      "id": "psych_history_ssri",
+      "id": "psych_history_meds",
       "category": "pmh",
       "triggerConcepts": [
         "any medical conditions",
-        "depression or anxiety",
+        "depression or bipolar",
         "psychiatric history",
         "do you take an antidepressant",
+        "lithium",
         "mental health"
       ],
-      "response": "[Reveal when asked: has depression and takes a daily antidepressant (sertraline, an SSRI).]",
+      "response": "[Reveal when asked: has bipolar depression and takes a daily antidepressant (sertraline, an SSRI) plus lithium.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -472,7 +524,7 @@
         "duration",
         "how quickly"
       ],
-      "response": "[Answer from patientFile: started this morning, about 12 hours after his last doses, and has worsened rapidly.]",
+      "response": "[Answer from patientFile: started this morning and has worsened rapidly over a few hours.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -484,10 +536,11 @@
         "twitching",
         "jerking movements",
         "muscle spasms",
+        "stiffness",
         "shaking",
         "tremor"
       ],
-      "response": "[Answer from patientFile: legs and feet keep twitching and jerking on their own; feels shaky and tremulous.]",
+      "response": "[Answer from patientFile: legs and feet keep twitching and jerking on their own; muscles feel stiff; feels shaky and tremulous.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -500,9 +553,10 @@
         "feeling hot",
         "racing heart",
         "nausea or diarrhea",
+        "urine output",
         "palpitations"
       ],
-      "response": "[Answer from patientFile: very sweaty and hot, heart racing, some nausea and loose stools today.]",
+      "response": "[Answer from patientFile: very sweaty and hot, heart racing, some nausea and loose stools today, and he hasn't been able to pee much.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -517,7 +571,7 @@
         "photophobia",
         "sick contacts"
       ],
-      "response": "[Answer from patientFile — pertinent negative: denies headache, neck pain, light sensitivity, and had no fever or sick contacts before today.]",
+      "response": "[Answer from patientFile — pertinent negative: denies headache, neck pain, light sensitivity, and had no fever or sick contacts before this week.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -565,7 +619,7 @@
     },
     {
       "id": "assess_motor_strength_finding_2",
-      "finding": "Motor/tone: increased tone/rigidity, more prominent in the lower extremities; no focal weakness.",
+      "finding": "Motor/tone: increased tone with rigidity, more prominent in the lower extremities; NOT the symmetric generalized lead-pipe rigidity of NMS; no focal weakness.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -586,7 +640,7 @@
     },
     {
       "id": "inspect_skin_finding_4",
-      "finding": "Skin: hot, moist/diaphoretic, flushed; no rash, no dryness.",
+      "finding": "Skin: hot, moist/diaphoretic, flushed; small healing abscess on the left shin; no rash, no dryness.",
       "revealedBy": [
         "inspect_skin"
       ],
@@ -625,17 +679,17 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Serotonin syndrome",
-    "diagnosticFramework": "34M brought in by his partner with several hours of agitation, sweating, and jerking movements that began after a recent medication change. The diagnosis is Serotonin syndrome, reached by eliciting the focused medication history, performing the targeted neuromuscular exam (clonus, hyperreflexia, rigidity), and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "34M with bipolar depression (sertraline + lithium), hypertension, and CKD, brought in by his partner with hours of agitation, sweating, rigidity, and jerking after a cascade of recent medication changes — tramadol, linezolid, OTC dextromethorphan, and a NEW dopamine-antagonist antiemetic (metoclopramide). The diagnosis is Serotonin syndrome, reached by eliciting the layered medication history, performing the targeted neuromuscular exam (lower-extremity-predominant clonus, hyperreflexia, rigidity), interpreting an integrated EKG (sinus tachycardia with a long QT) and multi-system labs (rhabdomyolysis, AKI on CKD, anion-gap lactic acidosis, hyperkalemia, supratherapeutic lithium), and resolving the genuine serotonin-syndrome-versus-NMS fork created by the new antiemetic.",
     "keyHistoryClues": [
-      "Recent addition of tramadol (a serotonergic agent) to a maintenance SSRI, plus OTC dextromethorphan",
-      "Rapid onset within ~12-24 hours of the medication change",
-      "Triad of mental status change, autonomic instability, and neuromuscular hyperactivity"
+      "A cascade of serotonergic agents — sertraline (SSRI) + tramadol + linezolid (MAOI) + dextromethorphan, with lithium potentiation",
+      "A NEW dopamine-antagonist antiemetic (metoclopramide) that legitimately raises NMS and creates the diagnostic fork",
+      "Rapid onset within hours and the triad of mental status change, autonomic instability, and neuromuscular hyperactivity"
     ],
     "keyPhysicalExamFindings": [
       "Neuro reflexes: brisk, hyperreflexic; sustained clonus at the ankles, greater in the lower extremities than upper; spontaneous myoclonic jerks.",
-      "Motor/tone: increased tone/rigidity, more prominent in the lower extremities; no focal weakness.",
+      "Motor/tone: increased tone with rigidity, more prominent in the lower extremities; NOT the symmetric generalized lead-pipe rigidity of NMS; no focal weakness.",
       "General: anxious, diaphoretic, agitated, flushed; tremulous. Pupils dilated (mydriasis).",
-      "Skin: hot, moist/diaphoretic, flushed; no rash, no dryness.",
+      "Skin: hot, moist/diaphoretic, flushed; small healing abscess on the left shin; no rash, no dryness.",
       "Mental status: agitated, hypervigilant, oriented but restless; no neck stiffness."
     ],
     "keyDiagnosticFindings": [
@@ -643,29 +697,34 @@
       "CK",
       "CBC",
       "BMP",
+      "LFTs",
+      "Lithium",
       "TSH",
       "Tox"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including the medication change and sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal clonus, hyperreflexia, rigidity, and diaphoresis.",
-      "Build a differential led by Serotonin syndrome while explicitly excluding must-not-miss causes (NMS, anticholinergic, sympathomimetic, CNS infection).",
-      "Order a focused, order-sensitive workup (glucose, tox, CK) and interpret EKG/CXR and labs.",
-      "Commit to Serotonin syndrome and manage with stopping serotonergic agents, benzodiazepines, cooling/supportive care, cyproheptadine, consults, and disposition."
+      "Elicit the layered medication history from the partner — the SSRI, lithium, tramadol, linezolid, dextromethorphan, and the new metoclopramide.",
+      "Perform the targeted physical exam maneuvers to reveal lower-extremity-predominant clonus, hyperreflexia, rigidity, and diaphoresis.",
+      "Build a differential with a genuine serotonin-syndrome-versus-NMS fork (the new dopamine antagonist), and name the mechanisms of serotonergic excess.",
+      "Order a focused workup (glucose, tox, CK, BMP with anion gap/lactate, lithium level) and interpret the integrated EKG (sinus tachycardia with a long QT) and the multi-system labs.",
+      "Commit to Serotonin syndrome, resolve the fork on onset/clonus/reflexes, and manage with stopping ALL offending agents (including the antiemetic), benzodiazepines, cooling, rhabdomyolysis/AKI and lithium care, long-QT precautions, cyproheptadine, ICU disposition, and a safe-discharge med-reconciliation plan."
     ],
     "commonPitfalls": [
+      "Ignoring the new dopamine antagonist and never weighing NMS",
       "Antipyretics for centrally mediated hyperthermia",
-      "Physical restraints alone (worsens hyperthermia and acidosis)"
+      "Succinylcholine in rhabdomyolysis with hyperkalemia",
+      "Restarting a serotonergic/QT-prolonging agent at discharge"
     ],
     "managementPearls": [
-      "Stop all serotonergic agents",
+      "Stop all serotonergic agents AND the new dopamine antagonist; hold lithium",
       "Benzodiazepines for agitation/clonus and autonomic control"
     ],
     "criticalHistoryItems": [
       "medication_change",
+      "antiemetic_antibiotic",
       "otc_and_cough_remedies",
-      "psych_history_ssri"
+      "psych_history_meds"
     ],
     "criticalExamItems": [
       "assess_reflexes",
@@ -677,25 +736,25 @@
       "Creatine kinase"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia with no acute ischemia and a normal QT interval.",
+      "Sinus tachycardia with a prolonged QT interval (QTc ~500 ms) and no acute ischemia.",
       "No consolidation, effusion, or edema (obtained to exclude aspiration/pneumonia and screen the agitated, hyperthermic patient)."
     ],
     "criticalManagementItems": [
-      "Stop all serotonergic agents",
+      "Stop all serotonergic agents AND the new dopamine antagonist; hold lithium",
       "Benzodiazepines for agitation/clonus and autonomic control"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia with no acute ischemia and a normal QT interval.",
+      "Sinus tachycardia with a prolonged QT interval (QTc ~500 ms) and no acute ischemia.",
       "No consolidation, effusion, or edema (obtained to exclude aspiration/pneumonia and screen the agitated, hyperthermic patient)."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia with no acute ischemia and a normal QT interval.",
+      "Sinus tachycardia with a prolonged QT interval (QTc ~500 ms) and no acute ischemia.",
       "No consolidation, effusion, or edema (obtained to exclude aspiration/pneumonia and screen the agitated, hyperthermic patient)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "An integrated tracing is part of the puzzle — measure the QT in any poisoned patient and name what is driving it.",
       "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives — a normal QT and clear lungs are meaningful in the poisoned, hyperthermic patient."
+      "State pertinent negatives, not just positives — a long QT and clear lungs both change management in the poisoned, hyperthermic patient."
     ]
   },
   "communicationScoring": {
@@ -725,8 +784,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read — patient's own EKG (sinus tachycardia with long QT)",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

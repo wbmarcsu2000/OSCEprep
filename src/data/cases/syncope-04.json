@@ -1,31 +1,32 @@
 {
   "id": "syncope-04",
   "category": "Syncope",
-  "difficulty": "moderate",
-  "title": "Syncope on exertion with a murmur",
+  "difficulty": "hard",
+  "title": "Exertional syncope with a murmur in a polypharmacy older adult",
   "diagnosis": "Aortic stenosis",
   "chart": {
-    "ageSex": "72M",
+    "ageSex": "78M",
     "cc": "Passed out while exerting",
-    "oneLiner": "72M presents after passing out while climbing stairs; he also reports months of exertional breathlessness and chest tightness.",
+    "oneLiner": "78M with hypertension, paroxysmal atrial fibrillation on rate control and apixaban, CKD stage 3, and BPH presents after passing out while climbing a hill; he also reports months of exertional breathlessness and chest tightness, and his medication list includes several agents that lower blood pressure or slow the heart.",
     "vitals": {
-      "BP": "118/86",
-      "HR": "78",
+      "BP": "104/82",
+      "HR": "62",
       "RR": "16",
-      "Temp": "36.8°C",
-      "SpO2": "97% RA"
+      "Temp": "36.7°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I blacked out going up the stairs. Lately I've been getting winded and my chest gets tight when I push myself.",
-  "patientFile": "PERSONA: 72-year-old man, calm now, concerned. Good historian.\n\nHPI: Syncope occurred DURING exertion (climbing stairs) — a high-risk feature. Over the past few months: exertional dyspnea and exertional chest tightness/angina, plus reduced exercise tolerance (the classic triad). Quick recovery after the faint, no confusion. NO clear prodrome of warmth/nausea. NO palpitations.\nPMH: hypertension, hyperlipidemia. MEDS: amlodipine, atorvastatin. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing at rest.\n- Vitals: BP 118/86 (narrow pulse pressure), HR 78, RR 16, 36.8°C, SpO2 97% RA.\n- Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus) if specifically examined.\n- Lungs: clear. Neuro: no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize the EXERTIONAL nature of the syncope only if asked when/during what it happened.\n- The murmur, radiation, soft S2, and delayed carotid upstroke are revealed only if the heart/carotids are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I blacked out walking up the hill to my house. Lately I've been getting winded and my chest gets tight when I push myself, and honestly I take so many pills I lose track of them.",
+  "patientFile": "PERSONA: 78-year-old man, calm now, a bit embarrassed. Reasonable historian but vague about his medications — he knows he takes \"a water pill, a heart-rate pill, a blood thinner, and a prostate pill\" but cannot list doses.\n\nHPI: Syncope occurred DURING exertion (walking up a steep hill) — a high-risk feature. He went down without warning, came to within a minute on the ground, and was NOT confused afterward (no postictal state, no tongue-biting, no incontinence). Over the past several months: exertional dyspnea, exertional chest tightness/angina, and reduced exercise tolerance — the classic AS triad. NO clear vasovagal prodrome of warmth/nausea/tunnel vision. He has felt occasional brief palpitations in the past with his atrial fibrillation but did NOT feel palpitations before this faint. He sometimes feels lightheaded when he stands up quickly, especially since the prostate pill was started. NO fevers, NO leg swelling or pain, NO recent immobilization or long travel.\n\nPMH (reveal only when asked): hypertension; hyperlipidemia; paroxysmal atrial fibrillation (CHA2DS2-VASc high, anticoagulated); chronic kidney disease stage 3 (baseline creatinine ~1.6); benign prostatic hyperplasia. NO prior heart attack, NO known heart failure, NO diabetes, NO seizures, NO stroke.\nMEDS (reveal only when asked — this list is a deliberate confounder): metoprolol succinate (slows the heart), digoxin (added last year for rate control — slows the heart and AV conduction), furosemide (a \"water pill\" — a loop diuretic that drops preload), amlodipine (for blood pressure), tamsulosin (an alpha-blocker for the prostate that can cause orthostatic hypotension), atorvastatin, apixaban (anticoagulant). He admits he \"doubled up\" on the water pill recently because his ankles looked puffy. ALLERGIES: none.\nSOCIAL: former smoker (quit 10 years ago, 30 pack-years), rare alcohol, lives with his wife, independent but the stairs have become hard. FAMILY: noncontributory. ROS: as above; no melena/hematochezia, no recent bleeding (relevant given apixaban + anemia).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, well-perfused at rest, no acute distress.\n- Vitals: BP 104/82 (NARROW pulse pressure), HR 62 and regular at rest, RR 16, 36.7°C, SpO2 96% RA. Orthostatics, if specifically checked: BP drops to 88/72 with a 14-point symptomatic lightheaded response on standing (consistent with the alpha-blocker/diuretic) but does NOT reproduce the exertional syncope.\n- Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to both carotids; soft/diminished/single S2; an S4 gallop; the carotid upstroke is DELAYED and weak (pulsus parvus et tardus) if specifically examined. Rhythm regular today.\n- JVP: not elevated. Lungs: clear. Extremities: trace ankle edema, no calf tenderness, symmetric. Neuro: no focal deficit; no tongue laceration.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize the EXERTIONAL nature of the syncope only if asked when/during what activity it happened.\n- Reveal the full medication list (especially digoxin, furosemide, tamsulosin, metoprolol) only when asked about medications; do not volunteer that you \"doubled up\" on the water pill unless asked about recent changes or adherence.\n- The murmur, radiation, soft S2, S4, delayed carotid upstroke, and the orthostatic drop are revealed only if the relevant exam is performed/requested.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 95 — normal.",
-      "Troponin": "Normal — no acute infarct.",
-      "BMP": "Within normal limits.",
-      "BNP": "Mildly elevated.",
-      "Echo": "Echocardiogram: severe aortic stenosis (small valve area, elevated gradient) with left ventricular hypertrophy and preserved EF."
+      "CBC": "Hgb 10.8 (normocytic, near his chronic baseline; argues against acute blood loss despite apixaban), WBC 6.9, Plt 224.",
+      "BMP": "Na 134, K 5.3, Cl 99, HCO3 24, BUN 34, Creatinine 1.9 (up from a baseline ~1.6 — a mild AKI on CKD), Glucose 96. Anion gap = 134 − (99 + 24) = 11 (normal). No acidosis.",
+      "Digoxin": "Serum digoxin 1.9 ng/mL — at the upper end / borderline-high for the modern target (<1.2 ng/mL preferred), accentuated by the worsening renal function; not frankly toxic but a setup for bradyarrhythmia/AV block.",
+      "Troponin": "High-sensitivity troponin mildly elevated and flat on serial draws — demand-pattern from LVH/AS, no dynamic rise to indicate acute type-1 MI.",
+      "BNP": "Elevated, in keeping with pressure-overload and LV hypertrophy.",
+      "Echo": "Echocardiogram: SEVERE calcific aortic stenosis — aortic valve area ~0.8 cm², peak velocity 4.6 m/s, mean gradient ~52 mmHg — with concentric left ventricular hypertrophy and PRESERVED ejection fraction (~60%). No regional wall-motion abnormality. No significant mitral disease. This is the unifying lesion that explains the exertional syncope, angina, and dyspnea."
     }
   },
   "images": {
@@ -34,37 +35,41 @@
       "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Left-ventricular-hypertrophy-LVH-2.jpg",
       "source": "https://litfl.com/left-ventricular-hypertrophy-lvh-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
-      "verify": "From the LITFL 'Left Ventricular Hypertrophy' library page — download an example tracing that matches: Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm;  … and self-host with credit to litfl.com.",
+      "integrated": true,
+      "findings": "Sinus rhythm at ~62 bpm with high precordial QRS voltages meeting LVH criteria and a lateral strain pattern (downsloping ST depression / asymmetric T-inversion in I, aVL, V5–V6). First-degree AV block (PR ~230 ms) reflecting calcific conduction-system disease and digoxin/AV-nodal-blocker effect. No acute ST elevation and no dynamic ischemic change.",
+      "verify": "From the LITFL 'Left Ventricular Hypertrophy' library page — download an example tracing that matches: sinus rhythm with high LVH voltages and a lateral strain pattern, and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "imageDescription": "Sinus rhythm with LVH voltage criteria, lateral strain repolarization changes, and first-degree AV block.",
       "searchTerms": [
-        "12-lead EKG Left ventricular hypertrophy with"
+        "12-lead EKG left ventricular hypertrophy strain pattern",
+        "LVH with strain first-degree AV block ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 74-year-old man reports exertional chest tightness, breathlessness, and a fainting spell while climbing stairs."
+      "clinicalVignette": "A 78-year-old man on metoprolol and digoxin reports exertional chest tightness, breathlessness, and a fainting spell while walking uphill."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Possible cardiomegaly / aortic valve calcification; lungs clear.",
-      "verify": "Pick a CC PA chest film that is normal or shows mild cardiomegaly; nothing acute.",
+      "findings": "Mildly enlarged cardiac silhouette with a rounded LV apex (concentric hypertrophy), possible aortic valve/annular calcification, and a slightly dilated ascending aorta (post-stenotic). Lungs clear; no pulmonary edema, no effusion.",
+      "verify": "Pick a CC PA chest film that is normal or shows mild cardiomegaly with a calcified aortic valve; nothing acute.",
       "assetNeeded": true,
-      "imageDescription": "Possible cardiomegaly / aortic valve calcification; lungs clear.",
+      "imageDescription": "Mild cardiomegaly with aortic valve calcification and clear lungs.",
       "searchTerms": [
-        "chest radiograph Possible cardiomegaly aortic valve"
+        "chest radiograph mild cardiomegaly aortic valve calcification",
+        "post-stenotic dilatation ascending aorta chest x-ray"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 73-year-old woman with an ejection murmur undergoes a chest film to assess the heart and valves."
+      "clinicalVignette": "An older man with an ejection murmur radiating to the carotids undergoes a chest film to assess the heart and valves."
     }
   },
   "revealKeys": [
-    "Glucose",
-    "Troponin",
+    "CBC",
     "BMP",
+    "Digoxin",
+    "Troponin",
     "BNP",
     "Echo",
     "ekg",
@@ -79,19 +84,23 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Aortic stenosis causing exertional syncope (leading & CANT-MISS,9). Arrhythmia (CANT-MISS,4). Hypertrophic cardiomyopathy (core,3). Vasovagal (less likely — exertional) (core,2). Pulmonary embolism (CANT-MISS,2). Connects exertional syncope + systolic murmur radiating to carotids to outflow obstruction (core,5).",
-      "idealAnswer": "Leading diagnosis: Aortic stenosis causing exertional syncope. Must-not-miss diagnoses to exclude: Arrhythmia; Pulmonary embolism. Also reasonable: Hypertrophic cardiomyopathy; Vasovagal (less likely — exertional).",
+      "prompt": "Based on your history and physical, list your differential for this older man's exertional syncope (note your leading diagnosis). Name THREE mechanisms by which his heart could cause syncope on exertion, and say what in his medication list could be contributing.",
+      "rubric": "Aortic stenosis causing fixed-output exertional syncope (leading & CANT-MISS,7). Bradyarrhythmia / high-grade AV block — the genuine competitor given digoxin + metoprolol + calcific conduction disease (CANT-MISS,5). Ventricular tachyarrhythmia / sudden cardiac death substrate (CANT-MISS,3). Pulmonary embolism (CANT-MISS,2). Drug-induced orthostatic hypotension from tamsulosin/furosemide/over-diuresis (core,2). Hypertrophic cardiomyopathy (core,1). Names three mechanisms of cardiac exertional syncope — mechanical outflow obstruction, brady/tachy-arrhythmia, and inappropriate vasodilation/low fixed output (core,4). Identifies the offending meds (digoxin, metoprolol, tamsulosin, furosemide) (core,2). PENALTY: anchors on aortic stenosis and ignores the arrhythmia/medication contributors (-3); calls it vasovagal despite the exertional, prodrome-free faint (-2).",
+      "idealAnswer": "Leading diagnosis: Aortic stenosis causing exertional syncope (harsh crescendo-decrescendo murmur radiating to the carotids, soft single S2, delayed carotid upstroke, narrow pulse pressure). The genuine competitor is a bradyarrhythmia / high-grade AV block — he is on digoxin AND metoprolol with worsening renal function and calcific conduction disease, so a transient Stokes-Adams block is very plausible. Other must-not-miss causes: a ventricular tachyarrhythmia / sudden-death substrate, and pulmonary embolism. Three mechanisms by which the heart causes exertional syncope: (1) fixed mechanical outflow obstruction that cannot augment cardiac output (severe AS / HCM); (2) a brady- or tachy-arrhythmia (AV block, VT); and (3) an inappropriate fall in systemic vascular resistance / low fixed output during exertion. Contributing medications: digoxin and metoprolol (bradycardia/AV block), tamsulosin (orthostatic hypotension), and furosemide / recent over-diuresis (preload reduction and orthostasis). Vasovagal is unlikely given the exertional, prodrome-free event.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Aortic stenosis causing exertional syncope",
-            "points": 9
+            "points": 7
           },
           {
-            "item": "Arrhythmia",
-            "points": 4
+            "item": "Bradyarrhythmia / high-grade AV block (digoxin + metoprolol + calcific conduction disease)",
+            "points": 5
+          },
+          {
+            "item": "Ventricular tachyarrhythmia / sudden cardiac death substrate",
+            "points": 3
           },
           {
             "item": "Pulmonary embolism",
@@ -100,28 +109,42 @@
         ],
         "coreActions": [
           {
-            "item": "Hypertrophic cardiomyopathy",
-            "points": 3
-          },
-          {
-            "item": "Vasovagal (less likely — exertional)",
+            "item": "Drug-induced orthostatic hypotension (tamsulosin / furosemide / over-diuresis)",
             "points": 2
           },
           {
-            "item": "Connects exertional syncope + systolic murmur radiating to carotids to outflow obstruction",
-            "points": 5
+            "item": "Hypertrophic cardiomyopathy",
+            "points": 1
+          },
+          {
+            "item": "Names three mechanisms of cardiac exertional syncope (obstruction, arrhythmia, low fixed output/vasodilation)",
+            "points": 4
+          },
+          {
+            "item": "Identifies offending medications (digoxin, metoprolol, tamsulosin, furosemide)",
+            "points": 1
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on aortic stenosis and ignores arrhythmia/medication contributors",
+            "points": -3
+          },
+          {
+            "item": "Calls it vasovagal despite the exertional, prodrome-free faint",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
-        "Arrhythmia",
+        "Bradyarrhythmia / high-grade AV block (digoxin + metoprolol + calcific conduction disease)",
+        "Ventricular tachyarrhythmia / sudden cardiac death substrate",
         "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
-        "Hypertrophic cardiomyopathy",
-        "Vasovagal (less likely — exertional)"
+        "Drug-induced orthostatic hypotension (tamsulosin / furosemide / over-diuresis)",
+        "Hypertrophic cardiomyopathy"
       ]
     },
     {
@@ -129,61 +152,77 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "EKG (CANT-MISS,4). Echocardiogram — the key diagnostic test (CANT-MISS,6). Telemetry (2). Troponin (1). BNP (1). CXR (1). PENALTY: discharging an exertional syncope with a concerning murmur without an echo (-3).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; Troponin; BMP; BNP; Echo.",
+      "prompt": "What initial workup do you want to order to adjudicate aortic stenosis versus an arrhythmic cause, and to assess his comorbidities?",
+      "rubric": "EKG — looks for LVH/strain AND conduction disease/AV block (CANT-MISS,4). Echocardiogram — the key test to grade the valve (CANT-MISS,5). Continuous telemetry / cardiac monitoring to capture an arrhythmia (CANT-MISS,3). BMP to assess renal function and potassium (core,2). Serum digoxin level given the brady-risk and renal decline (core,2). Troponin (core,1). BNP (core,1). CBC given anemia/anticoagulation (core,1). CXR (core,1). PENALTY: discharging an exertional syncope with a concerning murmur without an echo (-3); failing to place the patient on monitoring (-2).",
+      "idealAnswer": "Order: EKG (LVH/strain and, importantly, look for AV block or other conduction disease); continuous telemetry / cardiac monitoring to capture an intermittent arrhythmia; Echocardiogram to grade the valve; BMP (renal function and potassium); serum digoxin level (borderline-high risk with worsening renal function); Troponin; BNP; CBC (anemia on apixaban); CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "EKG",
+            "item": "EKG (LVH/strain and conduction disease/AV block)",
             "points": 4
           },
           {
             "item": "Echocardiogram — the key diagnostic test",
-            "points": 6
+            "points": 5
+          },
+          {
+            "item": "Continuous telemetry / cardiac monitoring",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "CXR",
-            "points": 2
+            "item": "BMP (renal function and potassium)",
+            "points": 1
           },
           {
-            "item": "Glucose",
-            "points": 2
+            "item": "Serum digoxin level",
+            "points": 1
           },
           {
             "item": "Troponin",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "BNP",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "BNP",
+            "points": 1
+          },
+          {
+            "item": "CBC / CXR",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "discharging an exertional syncope with a concerning murmur without an echo",
+            "item": "Discharging an exertional syncope with a concerning murmur without an echo",
             "points": -3
+          },
+          {
+            "item": "Failing to place the patient on cardiac monitoring",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "EKG",
-        "Echocardiogram — the key diagnostic test"
+        "EKG (LVH/strain and conduction disease/AV block)",
+        "Echocardiogram — the key diagnostic test",
+        "Continuous telemetry / cardiac monitoring"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "BMP (renal function and potassium)",
+        "Serum digoxin level",
+        "Troponin",
+        "BNP",
+        "CBC / CXR"
+      ],
       "contraindicatedTests": [
-        "discharging an exertional syncope with a concerning murmur without an echo"
+        "Discharging an exertional syncope with a concerning murmur without an echo"
       ],
       "orderSensitiveActions": [
-        "discharging an exertional syncope with a concerning murmur without an echo"
+        "Discharging an exertional syncope with a concerning murmur without an echo"
       ]
     },
     {
@@ -192,46 +231,37 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = LVH with possible strain; sinus rhythm; no acute ischemia. CREDIT: rate & rhythm (4); identifies LVH (high voltages) (6); notes strain/repolarization changes and no acute STEMI (3); systematic read (2). PENALTY: over-calling acute ischemia (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and say how they help you weigh aortic stenosis against an arrhythmic cause of his syncope.",
+      "rubric": "Findings = sinus rhythm with LVH voltage criteria and a lateral strain pattern, PLUS first-degree AV block (PR ~230 ms), and no acute ST elevation. CREDIT: rate & rhythm — sinus, regular (3); identifies LVH by voltage with lateral strain repolarization (5); identifies the prolonged PR / first-degree AV block and links it to digoxin + AV-nodal blockade + calcific conduction disease as evidence the arrhythmic fork is live (4); states no acute STEMI / no dynamic ischemia (2); systematic read (1). PENALTY: over-calling acute ischemia from the strain pattern (-3); missing the conduction abnormality entirely (-2).",
       "keyFindings": [
-        "rate & rhythm",
-        "notes strain/repolarization changes and no acute STEMI",
-        "systematic read"
+        "sinus rhythm, regular",
+        "LVH by voltage with lateral strain repolarization",
+        "first-degree AV block (prolonged PR) reflecting digoxin/AV-nodal blockade and calcific conduction disease",
+        "no acute ST elevation"
       ],
       "criticalFindings": [
-        "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation."
+        "Sinus rhythm with LVH voltage criteria and lateral strain, AND first-degree AV block (PR ~230 ms) supporting calcific conduction disease and a live arrhythmic differential."
       ],
       "commonMistakes": [
-        "over-calling acute ischemia"
+        "over-calling acute ischemia from the strain pattern",
+        "missing the prolonged PR / conduction disease"
       ],
-      "idealAnswer": "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
+      "idealAnswer": "Sinus rhythm at ~62 bpm. There are high precordial QRS voltages meeting LVH criteria with a lateral strain pattern (downsloping ST depression / asymmetric T-wave inversion in I, aVL, V5–V6) — the expected pressure-overload footprint of severe aortic stenosis. The PR interval is prolonged (~230 ms = first-degree AV block), which fits calcific conduction-system disease plus his digoxin and metoprolol — this keeps the arrhythmic/AV-block explanation for the syncope alive and is why he needs telemetry. There is no acute ST elevation and no dynamic ischemic change, so this is not an acute STEMI. Overall: the EKG supports a pressure-overloaded LV from AS while also flagging conduction disease that could itself cause syncope.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
-            "points": 4
-          }
+          "Sinus rhythm with LVH voltage criteria and lateral strain, AND first-degree AV block (PR ~230 ms) supporting calcific conduction disease and a live arrhythmic differential."
         ],
         "coreActions": [
-          {
-            "item": "rate & rhythm",
-            "points": 4
-          },
-          {
-            "item": "notes strain/repolarization changes and no acute STEMI",
-            "points": 3
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "sinus rhythm, regular",
+          "LVH by voltage with lateral strain repolarization",
+          "first-degree AV block (prolonged PR) reflecting digoxin/AV-nodal blockade and calcific conduction disease",
+          "no acute ST elevation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling acute ischemia",
+            "label": "over-calls a benign strain pattern as acute ischemia, or misses the conduction abnormality",
             "points": -3
           }
         ]
@@ -244,45 +274,34 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear lungs, possible cardiomegaly/valve calcification. CREDIT: identifies a normal or mildly enlarged heart (5); excludes acute pulmonary pathology (3); notes possible valve calcification (2). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = mild cardiomegaly with a rounded LV apex, possible aortic valve calcification and post-stenotic ascending-aorta dilatation, clear lungs with no pulmonary edema. CREDIT: identifies a mildly enlarged heart / LV-shaped apex (4); excludes acute pulmonary pathology / pulmonary edema (3); notes possible aortic valve calcification or post-stenotic aortic dilatation (3). PENALTY: inventing pathology or calling florid pulmonary edema on a clear film (-2).",
       "keyFindings": [
-        "identifies a normal or mildly enlarged heart",
-        "excludes acute pulmonary pathology",
-        "notes possible valve calcification"
+        "mildly enlarged heart with a rounded LV apex",
+        "clear lungs, no pulmonary edema",
+        "possible aortic valve calcification / post-stenotic aortic dilatation"
       ],
       "criticalFindings": [
-        "Possible cardiomegaly / aortic valve calcification; lungs clear."
+        "Mild cardiomegaly with aortic valve calcification / post-stenotic aortic dilatation and clear lungs."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing pathology",
+        "calling pulmonary edema on a clear film"
       ],
-      "idealAnswer": "Possible cardiomegaly / aortic valve calcification; lungs clear.",
+      "idealAnswer": "Mildly enlarged cardiac silhouette with a rounded left-ventricular apex (concentric hypertrophy), possible calcification at the aortic valve/annulus, and a slightly prominent ascending aorta suggesting post-stenotic dilatation. The lungs are clear with no pulmonary edema or effusion — reassuring that he is not in decompensated heart failure at present.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Possible cardiomegaly / aortic valve calcification; lungs clear.",
-            "points": 5
-          }
+          "Mild cardiomegaly with aortic valve calcification / post-stenotic aortic dilatation and clear lungs."
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal or mildly enlarged heart",
-            "points": 5
-          },
-          {
-            "item": "excludes acute pulmonary pathology",
-            "points": 3
-          },
-          {
-            "item": "notes possible valve calcification",
-            "points": 2
-          }
+          "mildly enlarged heart with a rounded LV apex",
+          "clear lungs, no pulmonary edema",
+          "possible aortic valve calcification / post-stenotic aortic dilatation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing pathology",
+            "label": "invents pathology / calls pulmonary edema on a clear film",
             "points": -2
           }
         ]
@@ -292,9 +311,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the echo showing severe AS, what is your diagnosis and why is exertional syncope significant?",
-      "rubric": "Severe aortic stenosis with exertional syncope (6). Recognizes that the onset of syncope/angina/heart failure in severe AS signals a poor prognosis and the need for valve intervention (4).",
-      "idealAnswer": "Symptomatic severe aortic stenosis. Exertional syncope is significant because the onset of syncope (or angina or heart failure) in severe AS marks the transition to symptomatic disease with a markedly poor prognosis and sharply increased risk of sudden death — it mandates urgent referral for aortic valve replacement.",
+      "prompt": "Given the echo (severe AS), the EKG, telemetry, and the labs, commit to a diagnosis. Explain why exertional syncope is significant, name the single discriminating test that settled it, and address the residual ambiguity (the arrhythmia/medication contributors).",
+      "rubric": "Commits to symptomatic SEVERE aortic stenosis as the unifying cause of the exertional syncope, angina, and dyspnea, with the ECHO as the discriminating test (6). Recognizes that the onset of syncope/angina/heart failure in severe AS marks the transition to symptomatic disease with a markedly poor prognosis and sharply increased sudden-death risk, mandating valve intervention (2). Addresses residual ambiguity: first-degree AV block plus borderline-high digoxin and worsening renal function mean a transient bradyarrhythmia could have co-contributed, so telemetry continues and AV-nodal blockers are reviewed; tamsulosin/over-diuresis add orthostatic risk (2).",
+      "idealAnswer": "Diagnosis: symptomatic SEVERE calcific aortic stenosis (valve area ~0.8 cm², peak velocity 4.6 m/s, mean gradient ~52 mmHg) with concentric LVH and preserved EF — this is the unifying lesion that explains the exertional syncope, angina, and dyspnea. The single discriminating test was the echocardiogram. Exertional syncope is significant because the onset of syncope (or angina or heart failure) in severe AS marks the transition to symptomatic disease with a markedly poor prognosis and a sharply increased risk of sudden death — it mandates urgent referral for aortic valve replacement. Residual ambiguity / second hit: the EKG shows first-degree AV block and his digoxin is borderline-high on a background of an AKI on CKD, so a transient high-grade AV block could have co-contributed — this is why he stays on telemetry and why the digoxin/metoprolol and the tamsulosin/over-diuresis (orthostasis) are all reviewed even though the valve is the primary problem.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -307,65 +326,85 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH valvular disease (AS): refer for aortic valve replacement – AS is a surgical disease (CANT-MISS,7); echocardiogram to confirm severity/EF (5); cardiology/structural consult (4); avoid aggressive preload reduction – nitrates/diuretics (4); cautious BP management, maintain narrow volume range (3). PENALTY: nitrates/aggressive diuresis/vasodilators causing hypotension in severe AS (-3); medical management alone for symptomatic severe AS (-2).",
-      "idealAnswer": "Symptomatic severe AS (syncope) is a surgical disease – refer for aortic valve replacement (SAVR vs TAVI by surgical risk). Echocardiography to confirm severity and EF. Cardiology/structural consult. Manage hypertension cautiously (start low, go slow) and keep within a narrow volume range – avoid aggressive preload reduction (nitrates/diuretics) and vasodilators. Avoid hypotension.",
+      "prompt": "What is your management plan, including a safe-disposition decision (admit vs discharge) and how you reconcile his medications?",
+      "rubric": "Per MGH valvular disease (AS): refer for aortic valve replacement — symptomatic severe AS is a surgical/structural disease, SAVR vs TAVI by surgical risk (CANT-MISS,6); ADMIT on telemetry rather than discharge — high-risk exertional syncope with severe AS and conduction disease (CANT-MISS,4); cardiology / structural-heart consult (3); medication reconciliation — hold/reduce digoxin (borderline level + AKI), reassess metoprolol/AV-nodal blockade, hold or reduce furosemide and counsel against self-doubling, review tamsulosin for orthostasis (core,4); avoid aggressive preload reduction and vasodilators — nitrates/diuretics/over-diuresis are dangerous in fixed obstruction (core,3); cautious BP/volume management within a narrow range and correct the AKI/potassium (core,2); pacing backup / treat any captured high-grade AV block, and continue anticoagulation peri-procedurally per protocol (core,2); safe-discharge planning only AFTER valve work-up — med list reconciled, fall/home-safety review, close cardiology follow-up (core,1). PENALTY: discharging this high-risk exertional syncope home from the ED (-4); nitrates/aggressive diuresis/vasodilators causing hypotension in severe AS (-3); continuing full-dose digoxin despite the borderline level and AKI (-2).",
+      "idealAnswer": "ADMIT to a monitored/telemetry bed — do NOT discharge: this is high-risk exertional syncope with severe AS plus conduction disease, and he needs an expedited valve work-up with pacing backup available. Symptomatic severe AS is a structural/surgical disease — refer for aortic valve replacement (SAVR vs TAVI stratified by surgical risk) with a cardiology / structural-heart (Heart Team) consult. Medication reconciliation is central: hold or reduce digoxin (level 1.9 ng/mL with a worsening creatinine — a brady/AV-block risk), reassess metoprolol and overall AV-nodal blockade, hold/reduce furosemide and explicitly counsel him to stop self-doubling the “water pill,” and review tamsulosin given the orthostatic drop. Avoid aggressive preload reduction and vasodilators (nitrates, brisk diuresis, vasodilators) because they cause dangerous hypotension in fixed outflow obstruction; manage BP/volume cautiously within a narrow range and correct the AKI and the mild hyperkalemia. Keep him on telemetry; if a high-grade AV block is captured, treat it (temporary pacing / device per cardiology). Continue anticoagulation for his atrial fibrillation and plan its peri-procedural management per protocol. Safe-discharge planning happens only after the valve plan is set: reconciled medication list, a fall/home-safety review given the orthostasis and stairs, and close cardiology follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Refer for aortic valve replacement (AVR/TAVI)",
-            "points": 7
+            "item": "Refer for aortic valve replacement (SAVR/TAVI) — structural/surgical disease",
+            "points": 6
+          },
+          {
+            "item": "Admit on telemetry rather than discharge (high-risk exertional syncope with severe AS + conduction disease)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Echocardiogram to confirm severity and EF",
-            "points": 5
-          },
-          {
-            "item": "Cardiology / structural consult",
-            "points": 4
-          },
-          {
-            "item": "Avoid aggressive preload reduction (nitrates/diuretics)",
-            "points": 4
-          },
-          {
-            "item": "Cautious BP / volume management",
+            "item": "Cardiology / structural-heart (Heart Team) consult",
             "points": 3
+          },
+          {
+            "item": "Medication reconciliation — hold/reduce digoxin, reassess metoprolol, hold/reduce furosemide and counsel against self-doubling, review tamsulosin",
+            "points": 4
+          },
+          {
+            "item": "Avoid aggressive preload reduction / vasodilators (nitrates, brisk diuresis) in fixed obstruction",
+            "points": 3
+          },
+          {
+            "item": "Cautious BP/volume management; correct the AKI and potassium",
+            "points": 2
+          },
+          {
+            "item": "Continue telemetry with pacing backup; treat any captured high-grade AV block; manage anticoagulation peri-procedurally",
+            "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Treat coexisting hypertension cautiously",
+            "item": "Safe-discharge planning after valve work-up: reconciled meds, fall/home-safety review, close cardiology follow-up",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Vasodilators/diuretics causing hypotension in severe AS",
+            "item": "Discharging this high-risk exertional syncope home from the ED",
+            "points": -4
+          },
+          {
+            "item": "Vasodilators/aggressive diuresis causing hypotension in severe AS",
             "points": -3
+          },
+          {
+            "item": "Continuing full-dose digoxin despite the borderline level and AKI",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Refer for aortic valve replacement (AVR/TAVI)"
+        "Refer for aortic valve replacement (SAVR/TAVI) — structural/surgical disease",
+        "Admit on telemetry rather than discharge (high-risk exertional syncope with severe AS + conduction disease)"
       ],
       "optionalActions": [
-        "Echocardiogram to confirm severity and EF",
-        "Cardiology / structural consult",
-        "Avoid aggressive preload reduction (nitrates/diuretics)",
-        "Cautious BP / volume management",
-        "Treat coexisting hypertension cautiously"
+        "Cardiology / structural-heart (Heart Team) consult",
+        "Medication reconciliation — hold/reduce digoxin, reassess metoprolol, hold/reduce furosemide and counsel against self-doubling, review tamsulosin",
+        "Avoid aggressive preload reduction / vasodilators (nitrates, brisk diuresis) in fixed obstruction",
+        "Cautious BP/volume management; correct the AKI and potassium",
+        "Continue telemetry with pacing backup; treat any captured high-grade AV block; manage anticoagulation peri-procedurally",
+        "Safe-discharge planning after valve work-up: reconciled meds, fall/home-safety review, close cardiology follow-up"
       ],
       "unsafeActions": [
-        "Vasodilators/diuretics causing hypotension in severe AS"
+        "Discharging this high-risk exertional syncope home from the ED",
+        "Vasodilators/aggressive diuresis causing hypotension in severe AS",
+        "Continuing full-dose digoxin despite the borderline level and AKI"
       ],
       "consults": [
-        "Cardiology / Cardiac Surgery"
+        "Cardiology / Structural Heart / Cardiac Surgery"
       ],
-      "disposition": "Admit; expedite AVR work-up",
+      "disposition": "Admit to telemetry; expedite AVR work-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Valvular Heart Disease (Aortic Stenosis)",
@@ -380,12 +419,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "72-year-old man, calm now, concerned. Good historian.",
+    "communicationStyle": "answers directly but is vague about his medications and does not volunteer extra information",
+    "affect": "78-year-old man, calm now, a bit embarrassed about how many pills he takes. Reasonable historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the full medication list or the self-doubled diuretic unless directly asked about medications, recent changes, or adherence",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -403,6 +443,22 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "recent medication changes",
+        "did you change any medications",
+        "do you take them as prescribed",
+        "adherence",
+        "doubled up",
+        "extra water pill"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -413,7 +469,8 @@
         "when did it start",
         "onset",
         "how long",
-        "duration"
+        "duration",
+        "what were you doing"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -427,7 +484,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "any warning",
+        "prodrome"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -453,7 +512,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "palpitations",
+        "chest pain",
+        "shortness of breath",
+        "confusion",
+        "tongue biting"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -467,7 +531,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "standing up",
+        "exertion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -480,7 +546,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "atrial fibrillation",
+        "kidney",
+        "prostate"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -493,7 +562,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "water pill",
+        "digoxin",
+        "blood thinner"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -517,36 +589,47 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_carotids_finding_1",
-      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
+      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to both carotids; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
       "revealedBy": [
         "auscultate_carotids",
         "assess_murmur_radiation"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Normal carotid upstroke."
+      "normalIfNotPresent": "Normal carotid upstroke; no bruit."
     },
     {
       "id": "auscultate_aortic_area_finding_2",
-      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
+      "finding": "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished/single S2; an S4 gallop.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "No murmur appreciated; normal S2."
     },
     {
-      "id": "assess_motor_strength_finding_3",
-      "finding": "Lungs: clear. Neuro: no focal deficit.",
+      "id": "obtain_orthostatic_vitals_finding_3",
+      "finding": "Orthostatic vitals: BP drops from 104/82 to 88/72 with a symptomatic lightheaded response on standing (consistent with the alpha-blocker/diuretic), but this does NOT reproduce the exertional syncope.",
       "revealedBy": [
-        "assess_motor_strength",
-        "assess_pronator_drift"
+        "obtain_orthostatic_vitals",
+        "repeat_vitals"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No focal motor deficit."
+      "normalIfNotPresent": "No orthostatic blood-pressure drop."
+    },
+    {
+      "id": "assess_jvp_finding_4",
+      "finding": "JVP not elevated; lungs clear; trace symmetric ankle edema with no calf tenderness. Neuro: no focal deficit, no tongue laceration.",
+      "revealedBy": [
+        "assess_jvp",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP normal; no edema."
     }
   ],
   "overallScoring": {
@@ -559,60 +642,69 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Aortic stenosis",
-    "diagnosticFramework": "72M presents after passing out while climbing stairs; he also reports months of exertional breathlessness and chest tightness. The diagnosis is Aortic stenosis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "78M with hypertension, paroxysmal atrial fibrillation on rate control (metoprolol + digoxin) and apixaban, CKD stage 3, and BPH on tamsulosin presents after a prodrome-free faint while walking uphill, on a background of months of exertional dyspnea, angina, and reduced tolerance. The diagnosis is symptomatic SEVERE aortic stenosis, confirmed on echocardiogram, reached by eliciting the focused history (including a polypharmacy medication review), performing the targeted exam (murmur radiating to the carotids, soft single S2, delayed carotid upstroke, an orthostatic drop), and adjudicating the genuine competing cause — a bradyarrhythmia / high-grade AV block driven by digoxin, metoprolol, calcific conduction disease, and a borderline-high digoxin level on an AKI — with the EKG (LVH/strain plus first-degree AV block), telemetry, and the echo.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished S2; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
-      "Lungs: clear. Neuro: no focal deficit."
+      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to both carotids; the carotid upstroke is delayed and weak (pulsus parvus et tardus).",
+      "Cardiac: harsh CRESCENDO-DECRESCENDO systolic ejection murmur, loudest at the right upper sternal border, RADIATING to the carotids; soft/diminished/single S2; an S4 gallop.",
+      "Orthostatic vitals: BP drops from 104/82 to 88/72 with a symptomatic lightheaded response on standing (consistent with the alpha-blocker/diuretic), but this does NOT reproduce the exertional syncope.",
+      "JVP not elevated; lungs clear; trace symmetric ankle edema with no calf tenderness. Neuro: no focal deficit, no tongue laceration."
     ],
     "keyDiagnosticFindings": [
-      "Glucose",
-      "Troponin",
+      "CBC",
       "BMP",
+      "Digoxin",
+      "Troponin",
       "BNP",
       "Echo"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Aortic stenosis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Aortic stenosis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (note the narrow pulse pressure and the long medication list).",
+      "Elicit the focused history, including a careful polypharmacy medication review and recent self-doubling of the diuretic, on direct questioning.",
+      "Perform the targeted physical exam: the AS murmur radiating to the carotids, soft single S2, delayed carotid upstroke, and the orthostatic drop.",
+      "Build a differential led by aortic stenosis while keeping the bradyarrhythmia/AV-block, VT, and PE must-not-miss causes live, and name the offending medications.",
+      "Order an EKG (LVH/strain AND conduction disease), telemetry, an echo, and labs; interpret the integrated EKG and CXR.",
+      "Commit to symptomatic severe aortic stenosis on echo, address the residual arrhythmia/medication ambiguity, and manage with admission, valve referral, telemetry, medication reconciliation, and a safe disposition."
     ],
     "commonPitfalls": [
-      "Vasodilators/diuretics causing hypotension in severe AS"
+      "Discharging this high-risk exertional syncope home from the ED",
+      "Anchoring on aortic stenosis and ignoring the arrhythmia/medication contributors",
+      "Vasodilators/aggressive diuresis causing hypotension in severe AS",
+      "Continuing full-dose digoxin despite the borderline level and AKI"
     ],
     "managementPearls": [
-      "Refer for aortic valve replacement (AVR/TAVI)"
+      "Refer for aortic valve replacement (SAVR/TAVI) — structural/surgical disease",
+      "Admit on telemetry rather than discharge (high-risk exertional syncope with severe AS + conduction disease)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "auscultate_aortic_area"
     ],
     "criticalWorkupItems": [
-      "EKG",
-      "Echocardiogram — the key diagnostic test"
+      "EKG (LVH/strain and conduction disease/AV block)",
+      "Echocardiogram — the key diagnostic test",
+      "Continuous telemetry / cardiac monitoring"
     ],
     "criticalInterpretationItems": [
-      "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
-      "Possible cardiomegaly / aortic valve calcification; lungs clear."
+      "Sinus rhythm with LVH voltage criteria and lateral strain, AND first-degree AV block (PR ~230 ms) supporting calcific conduction disease and a live arrhythmic differential.",
+      "Mild cardiomegaly with aortic valve calcification / post-stenotic aortic dilatation and clear lungs."
     ],
     "criticalManagementItems": [
-      "Refer for aortic valve replacement (AVR/TAVI)"
+      "Refer for aortic valve replacement (SAVR/TAVI) — structural/surgical disease",
+      "Admit on telemetry rather than discharge (high-risk exertional syncope with severe AS + conduction disease)"
     ],
     "keyImageInterpretationFindings": [
-      "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
-      "Possible cardiomegaly / aortic valve calcification; lungs clear."
+      "Sinus rhythm with LVH voltage criteria and lateral strain, AND first-degree AV block (PR ~230 ms) supporting calcific conduction disease and a live arrhythmic differential.",
+      "Mild cardiomegaly with aortic valve calcification / post-stenotic aortic dilatation and clear lungs."
     ],
     "criticalImageInterpretationFindings": [
-      "Left ventricular hypertrophy with possible repolarization (strain) changes; sinus rhythm; no acute ST elevation.",
-      "Possible cardiomegaly / aortic valve calcification; lungs clear."
+      "Sinus rhythm with LVH voltage criteria and lateral strain, AND first-degree AV block (PR ~230 ms) supporting calcific conduction disease and a live arrhythmic differential.",
+      "Mild cardiomegaly with aortic valve calcification / post-stenotic aortic dilatation and clear lungs."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "The strain pattern of LVH is a pressure-overload footprint — read it as the AS signature, not as acute ischemia.",
+      "On a syncope EKG, always measure the PR and hunt for conduction disease — it can be the cause of the faint.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -627,7 +719,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Performs a careful medication review without judgment",
         "points": 1
       },
       {
@@ -642,8 +734,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated EKG read (LVH/strain + first-degree AV block)",
     "ekgReplaced": false,
     "cxrReplaced": false,
     "backwardCompatible": true

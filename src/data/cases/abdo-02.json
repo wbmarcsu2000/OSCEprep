@@ -1,66 +1,72 @@
 {
   "id": "abdo-02",
   "category": "Abdominal Pain",
-  "difficulty": "easy",
-  "title": "Right upper quadrant pain after a fatty meal",
+  "difficulty": "hard",
+  "title": "Right upper quadrant pain after a fatty meal in a diabetic on digoxin",
   "diagnosis": "Acute cholecystitis",
   "chart": {
-    "ageSex": "45F",
-    "cc": "Right upper abdominal pain",
-    "oneLiner": "45F presents with 12 hours of constant right upper quadrant pain that began after a fatty meal, with nausea, vomiting, and fever.",
+    "ageSex": "62F",
+    "cc": "Right upper / upper abdominal pain",
+    "oneLiner": "62F with T2DM, HFrEF, and rate-controlled atrial fibrillation on digoxin presents with ~14 hours of constant right-upper-quadrant and epigastric pain that began after a fatty meal, with nausea, vomiting, diaphoresis, and subjective fever; she also reports two days of poor oral intake and feeling 'off'.",
     "vitals": {
-      "BP": "132/80",
-      "HR": "98",
-      "RR": "18",
-      "Temp": "38.2°C",
-      "SpO2": "99% RA"
+      "BP": "108/64",
+      "HR": "54",
+      "RR": "20",
+      "Temp": "38.1°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I've got this constant pain under my right ribs — it started after dinner and won't go away.",
-  "patientFile": "PERSONA: 45-year-old woman, uncomfortable, holding her right side. Cooperative.\n\nHPI: Constant RUQ pain for ~12h that began after a fatty meal, radiating to the right scapula/shoulder. Nausea and several episodes of vomiting. Subjective fevers. Has had briefer episodes of similar pain after meals in the past that resolved (biliary colic) — only if asked. NO black/pale stools, NO dark urine, NO jaundice noticed (only if asked).\nPMH: obesity. MEDS: none. SOCIAL: 3 children, occasional alcohol, nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, mild distress.\n- Vitals: BP 132/80, HR 98, RR 18, 38.2°C, SpO2 99% RA.\n- Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.\n- No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior post-meal episodes or absence of jaundice/dark urine unless asked about prior episodes, jaundice, stool/urine color.\n- Murphy's sign is revealed only if the abdomen is examined appropriately.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had this constant pain under my right ribs and up here in the middle since last night — it started after dinner and it just won't quit. I feel sweaty and sick to my stomach.",
+  "patientFile": "PERSONA: 62-year-old woman, uncomfortable, diaphoretic, holding her right upper belly. Cooperative but tired and a little nauseated. She is a fair historian.\n\nHPI: Constant RUQ AND epigastric pain for ~14h that began an hour after a fatty fried dinner, boring through to the right scapula/shoulder. Several episodes of nonbloody vomiting, sweaty, subjective fevers/chills. She has had several briefer episodes of similar post-meal RUQ pain over the past few months that resolved on their own within an hour or two (biliary colic) — reveal only if asked about prior episodes. For the past 2 days she has had a poor appetite and has barely eaten or drunk because of nausea, and feels generally 'off' and weak. NO black or pale stools, NO dark urine, NO yellowing of the eyes/skin that she has noticed (reveal only if asked about stool/urine color or jaundice). The pain does NOT change with exertion or breathing and there is NO pressure/tightness radiating to the left arm or jaw (reveal only if asked about chest pain / exertional component), though she does feel her heart is 'slow and skips'.\nCARDIAC/ENDOCRINE BACKGROUND (reveal each only when the matching question is asked): She has atrial fibrillation and a 'weak heart pump' (heart failure) and was told her heart rate runs controlled on her pills. Over the last day or two — since she stopped eating and drinking well — she has felt more lightheaded, with some nausea and her vision looking 'a bit yellow/green and blurry' at times, and she thinks her pulse has felt slower than usual (these are subtle digoxin-toxicity clues; reveal only if asked about visual changes, lightheadedness, or how her medicines have been going). She has type 2 diabetes and takes several pills plus a 'newer sugar pill'.\nPMH: type 2 diabetes mellitus; heart failure with reduced ejection fraction (EF ~35%); permanent atrial fibrillation; hypertension; obesity; chronic kidney disease stage 3 (baseline creatinine ~1.4). MEDS (reveal the list only if asked what she takes): metformin; empagliflozin (an SGLT2 inhibitor — the 'newer sugar pill'); digoxin 0.125 mg daily; diltiazem; lisinopril; hydrochlorothiazide; atorvastatin; apixaban. ALLERGIES: none. SOCIAL: retired teacher, 3 children, rare alcohol, never smoked. FAMILY: noncontributory. ROS: as above — poor intake x2 days, nausea, sweats; no diarrhea; no dysuria/flank pain; no overt jaundice noticed.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, diaphoretic, mildly ill-appearing.\n- Vitals: BP 108/64, HR 54 and irregular, RR 20, 38.1°C, SpO2 96% RA.\n- Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.\n- No scleral icterus appreciated. Bowel sounds present. Mucous membranes dry; skin tenting (volume depleted).\n- Cardiac: irregularly irregular, bradycardic; no new murmur. Lungs: a few bibasilar crackles. No peripheral edema today.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior post-meal episodes, the digoxin/visual/lightheadedness clues, the poor oral intake's medication implications, or the absence of jaundice/dark urine unless the matching question is asked.\n- Do NOT recite the medication list unless asked what medicines she takes.\n- Murphy's sign and the volume-depletion/cardiac findings are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "CBC": "WBC 13.6 with left shift, Hgb 13.4, Plt 290.",
-      "LFTs": "AST 48, ALT 52, Alk Phos 130 (mildly elevated), total bilirubin 1.2 (near normal) — mild, NOT an obstructive/cholestatic picture.",
-      "Lipase": "Normal.",
-      "BMP": "Within normal limits.",
-      "RUQ_US": "RUQ ultrasound: gallstones, gallbladder wall thickening (>3 mm), pericholecystic fluid, sonographic Murphy sign; common bile duct not dilated."
+      "CBC": "WBC 14.8 with left shift (neutrophil predominance, bands present), Hgb 12.9, Plt 268.",
+      "LFTs": "AST 56, ALT 60, Alk Phos 138 (mildly elevated), total bilirubin 1.3, direct bilirubin 0.4 — mild hepatocellular pattern, NOT an obstructive/cholestatic picture.",
+      "Lipase": "Normal at 42 (rules out acute pancreatitis as the primary process).",
+      "BMP": "Na 134, K 5.6, Cl 99, HCO3 17, BUN 42, Cr 2.1 (up from baseline 1.4 — acute-on-chronic kidney injury), glucose 168. Anion gap = Na − (Cl + HCO3) = 134 − (99 + 17) = 18 (elevated). Beta-hydroxybutyrate POSITIVE / ketones present despite near-normal glucose — SGLT2-inhibitor-associated euglycemic ketoacidosis on a background of poor intake and AKI.",
+      "Mg_Trop": "Magnesium 1.6 (low-normal), ionized calcium normal. High-sensitivity troponin 38 ng/L then 41 ng/L (mildly elevated, essentially flat — type-2/demand pattern, no significant rise-and-fall to indicate acute MI).",
+      "Digoxin": "Serum digoxin level 2.8 ng/mL (therapeutic 0.5–0.9 for heart failure; this is supratherapeutic). Consistent with digoxin toxicity precipitated by AKI — reduced renal clearance — plus volume depletion; the K of 5.6 also fits acute digoxin toxicity.",
+      "RUQ_US": "RUQ ultrasound: cholelithiasis with a stone in the gallbladder neck, gallbladder wall thickening (>4 mm), pericholecystic fluid, and a sonographic Murphy sign. Common bile duct is NOT dilated (4 mm) and no choledocholithiasis is seen — argues against choledocholithiasis/cholangitis."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/digoxin-toxicity-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Progressive PR prolongation culminating in a non-conducted P wave (dropped QRS); grouped beating.",
-      "verify": "Source a study matching: Progressive PR prolongation culminating in a non-conducted P wave (dropped QRS); grouped beating. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 30,
+      "findings": "Atrial fibrillation with a slow, regularized ventricular response (~54 bpm) and down-sloping 'scooped'/sagging ST-segment depression (Salvador Dalí sign) with the digoxin effect; no acute ST-elevation MI pattern. In context (supratherapeutic digoxin level, AKI, hyperkalemia, GI symptoms, visual changes) this is concerning for DIGOXIN TOXICITY rather than benign digoxin effect.",
+      "verify": "Source a study matching: atrial fibrillation with slow/regularized ventricular response and sagging 'scooped' ST depression (digoxin effect/toxicity); no STEMI. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead rhythm strip showing Wenckebach Mobitz I",
+      "imageDescription": "12-lead EKG showing atrial fibrillation with a slow regularized response and scooped ST depression of digoxin effect/toxicity",
       "searchTerms": [
-        "Mobitz I Wenckebach ECG",
-        "second degree AV block type 1 strip"
+        "digoxin toxicity ECG scooped ST depression",
+        "atrial fibrillation regularized junctional digoxin effect ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 68-year-old man complains of intermittent dizziness, and telemetry shows occasional dropped beats."
+      "clinicalVignette": "An older patient on digoxin for atrial fibrillation becomes nauseated and lightheaded with blurred yellow-green vision; the rhythm strip is reviewed."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=mild%20pulmonary%20vascular%20congestion%20CHF%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia).",
-      "verify": "Source a study matching: Retrocardiac soft-tissue opacity with an air-fluid level behind the heart (hiatal hernia). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "findings": "Mild pulmonary vascular congestion / cephalization with small bilateral pleural effusions and a borderline-enlarged cardiac silhouette, consistent with her known HFrEF; lungs otherwise without focal consolidation; NO free air under the diaphragm. The mild congestion is a deliberate caution against aggressive IV fluid resuscitation.",
+      "verify": "Source a study matching: mild pulmonary vascular congestion/cephalization with small effusions and cardiomegaly (mild CHF); no subdiaphragmatic free air. Self-host with appropriate credit.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing hiatal hernia retrocardiac",
+      "imageDescription": "chest radiograph showing mild pulmonary vascular congestion, small effusions, and cardiomegaly of chronic heart failure with no free air",
       "searchTerms": [
-        "hiatal hernia chest x-ray air fluid level",
-        "retrocardiac hiatal hernia radiograph"
+        "mild pulmonary vascular congestion CHF chest x-ray",
+        "cardiomegaly cephalization small pleural effusions radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 70-year-old woman with heartburn and regurgitation has a film showing a mass behind the heart."
+      "clinicalVignette": "A patient with known heart failure has a chest film before fluid resuscitation to gauge volume status."
     }
   },
   "revealKeys": [
@@ -68,12 +74,16 @@
     "LFTs",
     "Lipase",
     "BMP",
+    "Mg_Trop",
+    "Digoxin",
     "RUQ_US",
     "ekg",
     "cxr"
   ],
   "essential": [
     "CBC",
+    "BMP",
+    "Digoxin",
     "RUQ_US"
   ],
   "steps": [
@@ -81,15 +91,15 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute cholecystitis (leading,7). Biliary colic (core,3). Choledocholithiasis / ascending cholangitis (CANT-MISS,4). Acute pancreatitis (core,3). Peptic ulcer disease (core,2). Acute coronary syndrome / inferior MI (CANT-MISS to consider,3). Named leading dx w/ justification — post-fatty-meal RUQ pain, Murphy's (core,3).",
-      "idealAnswer": "Leading diagnosis: Acute cholecystitis. Must-not-miss diagnoses to exclude: Choledocholithiasis / ascending cholangitis; Acute coronary syndrome / inferior MI. Also reasonable: Biliary colic; Acute pancreatitis; Peptic ulcer disease.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). For this older diabetic woman on digoxin with RUQ/epigastric pain, name three must-not-miss diagnoses you have to exclude before committing.",
+      "rubric": "Acute cholecystitis (leading,5). Choledocholithiasis / ascending cholangitis — must-not-miss (CANT-MISS,4). Acute coronary syndrome / inferior MI presenting as epigastric pain with diaphoresis in a diabetic woman — must-not-miss (CANT-MISS,4). Digoxin toxicity as a concurrent must-not-miss given bradycardia, GI symptoms, and visual changes (CANT-MISS,3). Acute pancreatitis (core,2). Peptic ulcer disease (core,1). Named leading dx w/ justification — post-fatty-meal RUQ pain, prior biliary colic, Murphy's (core,3). Explicitly names three must-not-miss diagnoses (core,3). PENALTY: anchoring on a benign biliary cause and missing the cardiac/digoxin danger (-3).",
+      "idealAnswer": "Leading diagnosis: Acute cholecystitis (constant post-fatty-meal RUQ pain boring to the scapula, prior biliary colic, fever, positive Murphy's). Three must-not-miss diagnoses to exclude: (1) Choledocholithiasis / ascending cholangitis (an obstructing CBD stone); (2) Acute coronary syndrome / inferior MI — a diabetic woman with epigastric pain and diaphoresis can have atypical ACS, so an EKG and troponin are mandatory; (3) Digoxin toxicity — she is bradycardic on digoxin with poor intake, nausea, lightheadedness, and visual changes, which is itself dangerous and must be checked. Also reasonable: acute pancreatitis and peptic ulcer disease.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Acute cholecystitis",
-            "points": 7
+            "points": 5
           },
           {
             "item": "Choledocholithiasis / ascending cholangitis",
@@ -97,36 +107,45 @@
           },
           {
             "item": "Acute coronary syndrome / inferior MI",
+            "points": 4
+          },
+          {
+            "item": "Digoxin toxicity",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Biliary colic",
-            "points": 3
-          },
-          {
             "item": "Acute pancreatitis",
-            "points": 3
-          },
-          {
-            "item": "Peptic ulcer disease",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ justification — post-fatty-meal RUQ pain, Murphy's",
+            "item": "Peptic ulcer disease",
+            "points": 1
+          },
+          {
+            "item": "Named leading dx w/ justification — post-fatty-meal RUQ pain, prior biliary colic, Murphy's",
+            "points": 3
+          },
+          {
+            "item": "Explicitly names three must-not-miss diagnoses",
             "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a benign biliary cause and misses the cardiac/digoxin danger",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "Choledocholithiasis / ascending cholangitis",
-        "Acute coronary syndrome / inferior MI"
+        "Acute coronary syndrome / inferior MI",
+        "Digoxin toxicity"
       ],
       "acceptableAlternatives": [
-        "Biliary colic",
         "Acute pancreatitis",
         "Peptic ulcer disease"
       ]
@@ -137,63 +156,74 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "RUQ ultrasound (CANT-MISS,5). CBC (3). LFTs (3). Lipase (2). BMP (1). EKG to exclude cardiac cause (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; LFTs; Lipase; BMP; RUQ US.",
+      "rubric": "RUQ ultrasound as imaging of choice for biliary pain (CANT-MISS,4). EKG to exclude ACS / characterize the bradyarrhythmia (CANT-MISS,3). Serum digoxin level given digoxin use, AKI, and toxicity clues (CANT-MISS,2). BMP/electrolytes incl. renal function and anion gap (2). CBC (1). LFTs (1). Lipase (1). High-sensitivity troponin (bonus,1). CXR; magnesium; serum/urine ketones for the SGLT2 inhibitor (bonus,1). PENALTY: ordering CT with IV contrast in AKI without thought, or a shotgun panel with no reasoning (-2).",
+      "idealAnswer": "Order: RUQ ultrasound (imaging of choice for suspected cholecystitis); EKG (exclude ACS, characterize the bradycardia/AF); serum digoxin level; BMP with renal function and anion gap; CBC; LFTs; Lipase; high-sensitivity troponin (serial); magnesium; serum/urine ketones and venous gas given the SGLT2 inhibitor and gap acidosis; CXR. Avoid reflexive IV-contrast CT given her acute kidney injury.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "RUQ ultrasound",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "EKG",
+            "points": 3
+          },
+          {
+            "item": "Serum digoxin level",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
+            "item": "BMP / electrolytes with renal function and anion gap",
+            "points": 1
           },
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
             "item": "LFTs",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Lipase",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "EKG to exclude cardiac cause",
+            "item": "High-sensitivity troponin",
+            "points": 1
+          },
+          {
+            "item": "CXR, magnesium, and ketones for the SGLT2 inhibitor",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "shotgun panel w/ no reasoning",
+            "item": "Reflexive IV-contrast CT in AKI or shotgun panel with no reasoning",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "RUQ ultrasound"
+        "RUQ ultrasound",
+        "EKG",
+        "Serum digoxin level"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "High-sensitivity troponin",
+        "CXR, magnesium, and ketones for the SGLT2 inhibitor"
+      ],
       "contraindicatedTests": [
-        "shotgun panel w/ no reasoning"
+        "Reflexive IV-contrast CT in AKI or shotgun panel with no reasoning"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "EKG"
+      ]
     },
     {
       "id": "ekg_read",
@@ -201,33 +231,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = Mobitz I (Wenckebach) second-degree AV block — progressive PR prolongation culminating in a non-conducted P wave (dropped QRS) with grouped beating. CREDIT: rate & rhythm — identifies the progressive PR lengthening before a dropped beat (7); recognizes the grouped-beating Wenckebach pattern and distinguishes it from Mobitz II (5); systematic read (3). PENALTY: calling the study normal / missing the abnormality, or mislabeling it as Mobitz II (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and state what they mean for her management.",
+      "rubric": "Findings = atrial fibrillation with a SLOW, regularized ventricular response (~54 bpm) and down-sloping 'scooped'/sagging ST depression (digoxin effect). With the supratherapeutic digoxin level, AKI, hyperkalemia, GI symptoms, and visual changes this is DIGOXIN TOXICITY, not benign effect; and there is NO acute STEMI pattern to explain the pain. CREDIT: identifies AF with a slow/regularized ventricular response (5); recognizes the scooped ST depression of digoxin effect and, in context, names digoxin TOXICITY (5); states there is no acute STEMI, so ACS is not the primary cause of the abdominal pain (3). PENALTY: calling it a benign 'digoxin effect' with no concern for toxicity, mislabeling it a primary STEMI, or missing the bradyarrhythmia entirely (-3).",
       "keyFindings": [
-        "progressive PR prolongation before a dropped beat",
-        "grouped beating pattern"
+        "atrial fibrillation with a slow, regularized ventricular response (~54 bpm)",
+        "scooped/sagging ST depression of digoxin effect; no STEMI"
       ],
       "criticalFindings": [
-        "Mobitz I (Wenckebach) second-degree AV block."
+        "Atrial fibrillation with a slow regularized ventricular response and scooped ST depression — digoxin toxicity in context; no acute STEMI."
       ],
       "commonMistakes": [
-        "missing the progressive PR lengthening",
-        "mislabeling as Mobitz II"
+        "calling it a benign 'digoxin effect' and missing toxicity in the clinical context",
+        "mislabeling the scooped ST depression as a primary STEMI",
+        "missing the bradyarrhythmia / regularization of AF"
       ],
-      "idealAnswer": "Mobitz I (Wenckebach): progressively lengthening PR until a P wave is dropped, then the cycle repeats.",
+      "idealAnswer": "Atrial fibrillation (no organized P waves, irregular baseline) with a slow and partly regularized ventricular response at ~54 bpm, plus down-sloping 'scooped'/sagging ST-segment depression — the digoxin effect. Given her supratherapeutic digoxin level, acute kidney injury, hyperkalemia, nausea, and yellow-green visual changes, this pattern signifies DIGOXIN TOXICITY, not a benign effect. There is no acute ST-elevation MI pattern, so ACS is not the primary explanation for her abdominal pain — it lets me commit to the biliary diagnosis while treating the digoxin toxicity in parallel.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Mobitz I (Wenckebach) second-degree AV block."
+          "Atrial fibrillation with a slow regularized ventricular response and scooped ST depression — digoxin toxicity in context; no acute STEMI."
         ],
         "coreActions": [
-          "progressive PR prolongation before a dropped beat",
-          "grouped beating pattern"
+          "atrial fibrillation with a slow, regularized ventricular response (~54 bpm)",
+          "scooped/sagging ST depression of digoxin effect; no STEMI"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls it benign digoxin effect / mislabels a STEMI / misses the bradyarrhythmia",
             "points": -3
           }
         ]
@@ -239,32 +270,33 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = a hiatal hernia — retrocardiac soft-tissue opacity with an air-fluid level behind the heart. CREDIT: identifies the retrocardiac air-fluid level (5); recognizes it as a benign incidental hiatal hernia rather than a cavitary lesion/abscess (5). PENALTY: calling the film entirely normal / missing the finding, or mistaking the retrocardiac gas shadow for a cavity or abscess (-3).",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings and how they affect your plan.",
+      "rubric": "Findings = mild pulmonary vascular congestion/cephalization with small bilateral effusions and a borderline-enlarged heart (her known HFrEF); NO focal consolidation; NO free air under the diaphragm. CREDIT: identifies the mild congestion/effusions of heart failure (5); states the practical consequence — give fluids cautiously/titrated rather than large boluses, and notes there is no subdiaphragmatic free air to suggest perforation (5). PENALTY: calling the film entirely normal and missing the congestion (which would license unsafe aggressive fluids), or over-reading it as florid pulmonary edema/pneumonia (-3).",
       "keyFindings": [
-        "retrocardiac air-fluid level",
-        "identifies a hiatal hernia as benign"
+        "mild pulmonary vascular congestion with small effusions and cardiomegaly (CHF)",
+        "no free air under the diaphragm; resuscitate with cautious, titrated fluids"
       ],
       "criticalFindings": [
-        "Hiatal hernia (retrocardiac air-fluid level)."
+        "Mild pulmonary vascular congestion/effusions of chronic heart failure — fluids must be cautious/titrated; no subdiaphragmatic free air."
       ],
       "commonMistakes": [
-        "mistaking the retrocardiac gas shadow for a cavitary lesion or abscess"
+        "calling the film normal and licensing aggressive fluid boluses",
+        "over-reading mild congestion as florid pulmonary edema or pneumonia"
       ],
-      "idealAnswer": "Hiatal hernia: retrocardiac soft-tissue density with an air-fluid level — a benign incidental finding.",
+      "idealAnswer": "Mild pulmonary vascular congestion/cephalization with small bilateral pleural effusions and a borderline-enlarged cardiac silhouette — consistent with her known HFrEF rather than an acute process; no focal consolidation and, importantly, no free air under the diaphragm to suggest a perforated viscus. Practically, she is volume-depleted from poor intake and vomiting but has a congestible heart, so I will resuscitate with cautious, titrated fluids and reassess rather than give large boluses.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Hiatal hernia (retrocardiac air-fluid level)."
+          "Mild pulmonary vascular congestion/effusions of chronic heart failure — fluids must be cautious/titrated; no subdiaphragmatic free air."
         ],
         "coreActions": [
-          "retrocardiac air-fluid level",
-          "identifies a hiatal hernia as benign"
+          "mild pulmonary vascular congestion with small effusions and cardiomegaly (CHF)",
+          "no free air under the diaphragm; resuscitate with cautious, titrated fluids"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the film normal / over-reads florid edema or pneumonia",
             "points": -3
           }
         ]
@@ -274,9 +306,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the ultrasound and labs, what is your diagnosis and reasoning?",
-      "rubric": "Acute cholecystitis (6). Cites gallstones + wall thickening + pericholecystic fluid + sonographic Murphy, with a non-dilated CBD and near-normal bilirubin arguing against choledocholithiasis (4).",
-      "idealAnswer": "Acute cholecystitis — RUQ ultrasound shows gallstones, gallbladder wall thickening, pericholecystic fluid, and a sonographic Murphy sign, with a non-dilated CBD and near-normal bilirubin arguing against choledocholithiasis.",
+      "prompt": "Given the ultrasound, labs, EKG, and chest film, what is your diagnosis and reasoning? Commit to the most likely cause of her pain, name the discriminating findings, and list three mechanisms driving her acute kidney injury and elevated anion gap.",
+      "rubric": "Acute cholecystitis as the cause of the pain (6). Cites the discriminators — gallstones + wall thickening + pericholecystic fluid + sonographic Murphy with a NON-dilated CBD and near-normal bilirubin arguing against choledocholithiasis/cholangitis, and a flat (demand-pattern) troponin with no STEMI arguing against ACS. Names the CONCURRENT problems that are not the biliary disease — digoxin toxicity (level 2.8 with AKI and hyperkalemia) and SGLT2-inhibitor-associated euglycemic ketoacidosis. Names three mechanisms for the AKI/anion gap: pre-renal volume depletion from poor intake and vomiting; euglycemic ketoacidosis from empagliflozin during an acute illness; and an ACE-inhibitor/diuretic (lisinopril + HCTZ) contribution on chronic kidney disease (lactate/uremia also acceptable) (4).",
+      "idealAnswer": "Most likely cause of the pain: Acute cholecystitis — the ultrasound shows cholelithiasis with a neck stone, gallbladder wall thickening, pericholecystic fluid, and a sonographic Murphy sign; the CBD is not dilated and bilirubin is near-normal, which argues against choledocholithiasis/ascending cholangitis, and the high-sensitivity troponin is only mildly elevated and flat (a demand/type-2 pattern) with no STEMI, which argues against ACS as the source. She has TWO concurrent, separate problems layered on top: (1) digoxin toxicity — a supratherapeutic level of 2.8 ng/mL precipitated by acute kidney injury and volume depletion, with bradycardia, hyperkalemia (K 5.6), GI symptoms, and yellow-green visual changes; and (2) SGLT2-inhibitor (empagliflozin)-associated euglycemic ketoacidosis — positive ketones with an anion gap of 18 despite a glucose of only 168. Three mechanisms for the AKI and elevated anion gap: pre-renal volume depletion from two days of poor intake plus vomiting; euglycemic ketoacidosis from empagliflozin during an acute illness; and the lisinopril + hydrochlorothiazide reducing renal perfusion/clearance on a background of stage-3 CKD. The discriminating tests were the RUQ ultrasound (biliary vs ductal), the serial troponin/EKG (biliary vs cardiac), and the digoxin level with the BMP/ketones (the toxic-metabolic overlay).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -289,65 +321,82 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH biliary disease: NPO + IV fluids (CANT-MISS,4); antibiotics – Zosyn or CTX/metronidazole (CANT-MISS,5); early laparoscopic cholecystectomy during admission (6); surgery consult (4); percutaneous cholecystostomy if high surgical risk and failing abx (3); analgesia (2). PENALTY: discharging without source-control plan (-3).",
-      "idealAnswer": "NPO, IV fluids, analgesia. Antibiotics – piperacillin-tazobactam OR ceftriaxone + metronidazole. Early (<7 day) laparoscopic cholecystectomy during the admission; percutaneous cholecystostomy if too high-risk for surgery and failing antibiotics. Surgery consult.",
+      "prompt": "What is your management plan, including disposition? Address her digoxin toxicity and her medications, and state explicitly whether she can be safely discharged.",
+      "rubric": "Per MGH biliary disease + the toxic-metabolic overlay: NPO + CAUTIOUS/titrated IV fluids given HFrEF and pulmonary congestion (CANT-MISS,3); antibiotics — piperacillin-tazobactam OR ceftriaxone + metronidazole, renally dosed (CANT-MISS,4); manage digoxin toxicity — hold digoxin, treat hyperkalemia, give DigiFab if hemodynamically unstable/refractory, atropine/pacing for symptomatic bradycardia, AVOID calcium for hyperkalemia in dig toxicity, check magnesium (CANT-MISS,5); hold/adjust the offending meds — hold empagliflozin (euglycemic DKA), metformin, lisinopril and HCTZ in AKI (3); early laparoscopic cholecystectomy once stabilized, with surgery consult (4); analgesia + antiemetics (2); ADMIT — explicitly NOT safe for discharge: surgical source plus digoxin toxicity, AKI, and euglycemic ketoacidosis; arrange telemetry/monitoring, med reconciliation, and close follow-up (3). PENALTY: discharging her / no source-control plan (-4); giving IV calcium for the hyperkalemia in digoxin toxicity or large fluid boluses into a congested heart (-3).",
+      "idealAnswer": "Admit — she is NOT safe for discharge: she has a surgical source (acute cholecystitis) plus digoxin toxicity, acute kidney injury, and euglycemic ketoacidosis, and needs telemetry. Biliary care: NPO; CAUTIOUS, titrated IV fluids (she is volume-depleted but has HFrEF with pulmonary congestion on CXR, so reassess frequently rather than bolus); renally dosed antibiotics — piperacillin-tazobactam OR ceftriaxone + metronidazole; analgesia and antiemetics; surgery consult for early laparoscopic cholecystectomy once she is medically stabilized (percutaneous cholecystostomy if she becomes too high-risk for surgery). Digoxin toxicity: hold digoxin; treat the hyperkalemia but AVOID IV calcium in digoxin toxicity; check and replete magnesium; atropine and transcutaneous pacing for symptomatic bradycardia; give digoxin-specific antibody fragments (DigiFab) if she is hemodynamically unstable, has a life-threatening arrhythmia, or refractory hyperkalemia. Medication reconciliation in AKI: hold empagliflozin (driving euglycemic ketoacidosis), hold metformin, and hold lisinopril and hydrochlorothiazide; continue anticoagulation decision-making around surgery. Arrange admission with telemetry, nephrology/cardiology input as needed, and close follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "NPO and IV fluids",
+            "item": "NPO and cautious / titrated IV fluids given HFrEF and pulmonary congestion",
+            "points": 3
+          },
+          {
+            "item": "Renally dosed antibiotics (piperacillin-tazobactam or ceftriaxone + metronidazole)",
             "points": 4
           },
           {
-            "item": "Antibiotics",
+            "item": "Manage digoxin toxicity — hold digoxin, treat hyperkalemia (no IV calcium), DigiFab if unstable, atropine/pacing, repleted magnesium",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Early laparoscopic cholecystectomy",
-            "points": 6
+            "item": "Hold the offending meds — empagliflozin (euglycemic DKA), metformin, lisinopril and HCTZ in AKI",
+            "points": 3
           },
           {
-            "item": "Surgery consult",
+            "item": "Early laparoscopic cholecystectomy once stabilized, with surgery consult",
             "points": 4
           },
           {
-            "item": "Analgesia",
+            "item": "Analgesia and antiemetics",
             "points": 2
+          },
+          {
+            "item": "Admit — explicitly not safe for discharge; telemetry, med reconciliation, and close follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Percutaneous cholecystostomy if high-risk",
-            "points": 3
+            "item": "Percutaneous cholecystostomy if too high-risk for surgery",
+            "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "No source-control plan",
+            "item": "Discharging her / no source-control plan",
+            "points": -4
+          },
+          {
+            "item": "IV calcium for hyperkalemia in digoxin toxicity or large fluid boluses into a congested heart",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "NPO and IV fluids",
-        "Antibiotics"
+        "NPO and cautious / titrated IV fluids given HFrEF and pulmonary congestion",
+        "Renally dosed antibiotics (piperacillin-tazobactam or ceftriaxone + metronidazole)",
+        "Manage digoxin toxicity — hold digoxin, treat hyperkalemia (no IV calcium), DigiFab if unstable, atropine/pacing, repleted magnesium"
       ],
       "optionalActions": [
-        "Early laparoscopic cholecystectomy",
-        "Surgery consult",
-        "Analgesia",
-        "Percutaneous cholecystostomy if high-risk"
+        "Hold the offending meds — empagliflozin (euglycemic DKA), metformin, lisinopril and HCTZ in AKI",
+        "Early laparoscopic cholecystectomy once stabilized, with surgery consult",
+        "Analgesia and antiemetics",
+        "Admit — explicitly not safe for discharge; telemetry, med reconciliation, and close follow-up",
+        "Percutaneous cholecystostomy if too high-risk for surgery"
       ],
       "unsafeActions": [
-        "No source-control plan"
+        "Discharging her / no source-control plan",
+        "IV calcium for hyperkalemia in digoxin toxicity or large fluid boluses into a congested heart"
       ],
       "consults": [
-        "Surgery"
+        "Surgery",
+        "Cardiology",
+        "Nephrology"
       ],
-      "disposition": "Admit",
+      "disposition": "Admit to telemetry",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Biliary Disease (Cholecystitis)",
@@ -363,12 +412,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "45-year-old woman, uncomfortable, holding her right side. Cooperative.",
+    "affect": "62-year-old woman, uncomfortable, diaphoretic, holding her right upper belly; tired and nauseated. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the prior post-meal episodes, the digoxin/visual/lightheadedness clues, the poor oral intake, or the medication list unless the matching question is asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -387,7 +437,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -401,7 +451,93 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "digoxin",
+        "metformin",
+        "newer sugar pill",
+        "sglt2",
+        "pills"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "digoxin_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "vision changes",
+        "blurry vision",
+        "yellow vision",
+        "green vision",
+        "lightheaded",
+        "dizzy",
+        "how have your medicines been going",
+        "slow heart rate",
+        "palpitations"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "oral_intake",
+      "category": "hpi",
+      "triggerConcepts": [
+        "eating",
+        "drinking",
+        "oral intake",
+        "appetite",
+        "how much have you been eating",
+        "fluids"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "chest_pain_exertion",
+      "category": "ros",
+      "triggerConcepts": [
+        "chest pain",
+        "chest pressure",
+        "pain with exertion",
+        "radiate to arm or jaw",
+        "shortness of breath",
+        "is it worse with activity"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "jaundice_stool_urine",
+      "category": "ros",
+      "triggerConcepts": [
+        "jaundice",
+        "yellow eyes",
+        "yellow skin",
+        "stool color",
+        "pale stools",
+        "dark urine",
+        "urine color"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -425,7 +561,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "does it radiate",
+        "where does it go"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -451,7 +589,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "nausea",
+        "vomiting"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -465,7 +606,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "after eating",
+        "fatty meal"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -478,20 +621,11 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "heart failure",
+        "atrial fibrillation",
+        "diabetes",
+        "kidney"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -504,7 +638,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "similar pain before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -515,7 +650,7 @@
   "physicalExamMappings": [
     {
       "id": "perform_murphy_sign_finding_1",
-      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "finding": "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
       "revealedBy": [
         "perform_murphy_sign"
       ],
@@ -524,28 +659,8 @@
       "normalIfNotPresent": "Negative Murphy sign."
     },
     {
-      "id": "assess_rebound_tenderness_finding_2",
-      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "revealedBy": [
-        "assess_rebound_tenderness"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No rebound tenderness."
-    },
-    {
-      "id": "assess_guarding_finding_3",
-      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "revealedBy": [
-        "assess_guarding"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No guarding."
-    },
-    {
-      "id": "palpate_ruq_finding_4",
-      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "id": "palpate_ruq_finding_2",
+      "finding": "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
       "revealedBy": [
         "palpate_ruq"
       ],
@@ -554,8 +669,28 @@
       "normalIfNotPresent": "No RUQ tenderness."
     },
     {
+      "id": "assess_guarding_finding_3",
+      "finding": "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "revealedBy": [
+        "assess_guarding"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No guarding."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_4",
+      "finding": "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
       "id": "inspect_abdomen_finding_5",
-      "finding": "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
+      "finding": "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -564,18 +699,30 @@
       "normalIfNotPresent": "Abdomen not distended."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_6",
-      "finding": "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.",
+      "id": "assess_mucous_membranes_finding_6",
+      "finding": "Mucous membranes dry; skin tenting on the forearm — clinically volume depleted.",
       "revealedBy": [
-        "auscultate_bowel_sounds"
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Normal bowel sounds."
+      "normalIfNotPresent": "Mucous membranes moist; no skin tenting."
     },
     {
-      "id": "inspect_sclera_finding_7",
-      "finding": "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.",
+      "id": "auscultate_anterior_lungs_finding_7",
+      "finding": "A few bibasilar crackles on lung auscultation; no diffuse rales or wheeze.",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear to auscultation."
+    },
+    {
+      "id": "inspect_sclera_finding_8",
+      "finding": "No scleral icterus appreciated. Bowel sounds present.",
       "revealedBy": [
         "inspect_sclera",
         "assess_for_jaundice"
@@ -583,6 +730,17 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_9",
+      "finding": "Cardiac: irregularly irregular and bradycardic (~54 bpm); no new murmur. No peripheral edema today.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate and rhythm; no edema."
     }
   ],
   "overallScoring": {
@@ -595,68 +753,76 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute cholecystitis",
-    "diagnosticFramework": "45F presents with 12 hours of constant right upper quadrant pain that began after a fatty meal, with nausea, vomiting, and fever. The diagnosis is Acute cholecystitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "62F with T2DM, HFrEF, rate-controlled atrial fibrillation on digoxin, and stage-3 CKD presents with ~14 hours of constant RUQ/epigastric pain after a fatty meal, with nausea, vomiting, diaphoresis, and fever. The diagnosis is Acute cholecystitis, confirmed on ultrasound, but the picture is layered with two concurrent emergencies: digoxin toxicity (supratherapeutic level precipitated by AKI and poor intake) and SGLT2-inhibitor-associated euglycemic ketoacidosis. It is reached by eliciting the focused history (including medications and digoxin-toxicity clues), performing the targeted exam, interpreting an integrated EKG and CXR, and excluding the must-not-miss alternatives (choledocholithiasis/cholangitis and ACS).",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "Abdomen: RUQ tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension.",
-      "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal.",
-      "No scleral icterus. Bowel sounds present. Cardiac/lungs: normal."
+      "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "Abdomen: RUQ and epigastric tenderness with guarding; POSITIVE Murphy's sign (inspiratory arrest on RUQ palpation); no rebound elsewhere; no distension; no palpable pulsatile mass.",
+      "Mucous membranes dry; skin tenting on the forearm — clinically volume depleted.",
+      "A few bibasilar crackles on lung auscultation; no diffuse rales or wheeze.",
+      "No scleral icterus appreciated. Bowel sounds present.",
+      "Cardiac: irregularly irregular and bradycardic (~54 bpm); no new murmur. No peripheral edema today."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "LFTs",
       "Lipase",
       "BMP",
+      "Mg_Trop",
+      "Digoxin",
       "RUQ_US"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute cholecystitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute cholecystitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals — note the bradycardia and the digoxin/HFrEF/diabetes/CKD background.",
+      "Elicit the focused history, including the medication list and the digoxin-toxicity clues (visual changes, lightheadedness, poor intake) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal Murphy's sign plus the volume-depletion and cardiac/pulmonary findings.",
+      "Build a differential led by Acute cholecystitis while explicitly excluding choledocholithiasis/cholangitis and ACS, and recognizing concurrent digoxin toxicity.",
+      "Order a focused workup (RUQ US, EKG, digoxin level, BMP/ketones, serial troponin) and interpret the integrated EKG and CXR.",
+      "Commit to Acute cholecystitis while treating digoxin toxicity and euglycemic ketoacidosis in parallel; manage with stabilization, renally dosed antibiotics, surgery, and admission to telemetry."
     ],
     "commonPitfalls": [
-      "No source-control plan"
+      "Anchoring on a benign biliary cause and missing the digoxin toxicity and ACS questions",
+      "Giving IV calcium for the hyperkalemia in digoxin toxicity",
+      "Large fluid boluses into a congested heart",
+      "Discharging a surgical abdomen with concurrent toxic-metabolic emergencies"
     ],
     "managementPearls": [
-      "NPO and IV fluids",
-      "Antibiotics"
+      "Renally dosed antibiotics (piperacillin-tazobactam or ceftriaxone + metronidazole)",
+      "Manage digoxin toxicity — hold digoxin, treat hyperkalemia (no IV calcium), DigiFab if unstable, atropine/pacing, repleted magnesium"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "perform_murphy_sign",
-      "assess_rebound_tenderness",
       "palpate_ruq"
     ],
     "criticalWorkupItems": [
-      "RUQ ultrasound"
+      "RUQ ultrasound",
+      "EKG",
+      "Serum digoxin level"
     ],
     "criticalInterpretationItems": [
-      "Mobitz I (Wenckebach) second-degree AV block — progressive PR prolongation before a dropped beat with grouped beating.",
-      "Hiatal hernia — a benign retrocardiac air-fluid level."
+      "Atrial fibrillation with a slow regularized ventricular response and scooped ST depression — digoxin toxicity in context; no acute STEMI.",
+      "Mild pulmonary vascular congestion/effusions of chronic heart failure — fluids must be cautious/titrated; no subdiaphragmatic free air."
     ],
     "criticalManagementItems": [
-      "NPO and IV fluids",
-      "Antibiotics"
+      "Renally dosed antibiotics (piperacillin-tazobactam or ceftriaxone + metronidazole)",
+      "Manage digoxin toxicity — hold digoxin, treat hyperkalemia (no IV calcium), DigiFab if unstable, atropine/pacing, repleted magnesium"
     ],
     "keyImageInterpretationFindings": [
-      "Mobitz I (Wenckebach) second-degree AV block.",
-      "Hiatal hernia (retrocardiac air-fluid level)."
+      "Atrial fibrillation with a slow regularized ventricular response and scooped ST depression — digoxin toxicity in context.",
+      "Mild pulmonary vascular congestion/effusions of chronic heart failure; no free air under the diaphragm."
     ],
     "criticalImageInterpretationFindings": [
-      "Mobitz I (Wenckebach) second-degree AV block.",
-      "Hiatal hernia (retrocardiac air-fluid level)."
+      "Atrial fibrillation with a slow regularized ventricular response and scooped ST depression — digoxin toxicity in context; no acute STEMI.",
+      "Mild pulmonary vascular congestion/effusions of chronic heart failure — fluids must be cautious/titrated; no subdiaphragmatic free air."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Read the patient's OWN tracing in clinical context — the same scooped ST depression is benign 'digoxin effect' or dangerous toxicity depending on level, renal function, potassium, and symptoms.",
+      "A chest film before resuscitation tells you how much fluid the heart will tolerate.",
+      "Read every study systematically and state pertinent negatives (no STEMI, no free air), not just positives."
     ]
   },
   "communicationScoring": {
@@ -671,7 +837,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Takes a thorough medication history and asks permission before sensitive questions",
         "points": 1
       },
       {
@@ -686,8 +852,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

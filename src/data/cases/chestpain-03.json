@@ -2,35 +2,37 @@
   "id": "chestpain-03",
   "category": "Chest Pain",
   "difficulty": "hard",
-  "title": "Sudden tearing chest pain to the back",
+  "title": "Sudden tearing chest pain to the back with inferior ST elevation",
   "diagnosis": "Aortic dissection",
   "chart": {
     "ageSex": "58M",
     "cc": "Severe tearing chest pain",
-    "oneLiner": "58M with poorly controlled hypertension presents with sudden, severe, tearing chest pain radiating to the back that began 1 hour ago.",
+    "oneLiner": "58M with poorly controlled hypertension, type 2 diabetes, and CKD presents with sudden, severe, tearing chest pain radiating to the back that began 1 hour ago; the bedside EKG shows inferior ST elevation, raising an immediate fork between an inferior STEMI and a proximal aortic dissection occluding the right coronary.",
     "vitals": {
-      "BP": "188/104 (right arm)",
-      "HR": "96",
-      "RR": "20",
-      "Temp": "37.0°C",
-      "SpO2": "97% RA"
+      "BP": "192/64 (right arm)",
+      "HR": "58",
+      "RR": "22",
+      "Temp": "37.1°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
   "opening": "It came on all at once — the worst pain of my life, like something ripped in my chest and went right through to my back.",
-  "patientFile": "PERSONA: 58-year-old man, in severe distress, restless, sweating. Frightened.\n\nHPI:\n- Sudden, MAXIMAL-at-onset, severe chest pain ~1 hour ago, described as TEARING/RIPPING, radiating straight through to the back between the shoulder blades.\n- Pain was at its worst immediately (not crescendo). Migrated downward toward the abdomen over time (only if asked).\n- NO exertional trigger, NO relief with rest, NO pleuritic quality, NO cough/fever.\n- Known hypertension, frequently misses his medications and hasn't checked his BP in months (only mentions poor control if asked about adherence).\n\nOLDCARTS: abrupt onset 1h ago, maximal immediately; retrosternal radiating to back; constant; tearing/ripping; not positional or pleuritic; severity 10/10.\n\nPMH: hypertension (poorly controlled), hyperlipidemia. MEDICATIONS: lisinopril and amlodipine — frequently nonadherent. ALLERGIES: none. FAMILY: father had an 'aneurysm' (only if asked). SOCIAL: current smoker ~40 pack-years, occasional alcohol.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: diaphoretic, in severe pain, restless.\n- Vitals: BP 188/104 in the RIGHT arm, 150/82 in the LEFT arm (pulse/pressure differential); HR 96.\n- Cardiac: regular; soft early diastolic murmur at the left sternal border if specifically auscultated (aortic regurgitation).\n- Lungs: clear bilaterally.\n- Pulses: right radial fuller than left; both lower extremity pulses present but diminished if checked.\n- Chest wall: NO reproducible tenderness. Abdomen: soft, mild discomfort. Neuro: intact.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the medication nonadherence, the smoking, the family history, or that the pain migrated unless specifically asked.\n- The BP differential and the murmur are only revealed if the student measures BP in both arms or auscultates the heart.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 58-year-old man, in severe distress, restless, sweating. Frightened. Speaks in short sentences because of the pain.\n\nHPI:\n- Sudden, MAXIMAL-at-onset, severe chest pain ~1 hour ago, described as TEARING/RIPPING, radiating straight through to the back between the shoulder blades.\n- Pain was at its worst immediately (not crescendo, not building). Migrated downward toward the abdomen and then the lower back over the last 30 minutes (only if asked about whether the pain moved).\n- Felt briefly lightheaded and nearly fainted when the pain started (only if asked about dizziness/syncope).\n- NO exertional trigger, NO relief with rest, NO pleuritic quality, NO cough/fever. Some shortness of breath but no wheeze.\n- Known hypertension, frequently misses his medications and hasn't checked his BP in months (only mentions poor control if asked about adherence).\n- Took a tablet for erections (sildenafil) yesterday evening (ONLY discloses this if asked specifically about any pills, supplements, or 'anything for sexual function' in the last day — embarrassed about it).\n\nOLDCARTS: abrupt onset 1h ago, maximal immediately; retrosternal radiating to back then migrating to abdomen/lower back; constant; tearing/ripping; not positional or pleuritic; severity 10/10; associated near-syncope and dyspnea.\n\nPMH: hypertension (poorly controlled), hyperlipidemia, type 2 diabetes, chronic kidney disease (stage 3, baseline creatinine ~1.5), gout, benign prostatic hyperplasia. No known coronary disease, no prior MI, no stents. FAMILY: father had an 'aneurysm' that burst and a brother with an early heart attack (only if asked).\nMEDICATIONS (reveal the list only if asked what he takes; reveal nonadherence only if asked about adherence): lisinopril, amlodipine, and hydrochlorothiazide for blood pressure (frequently nonadherent); metformin for diabetes; atorvastatin; allopurinol for gout; tamsulosin for the prostate; sildenafil taken yesterday evening for erectile dysfunction; takes over-the-counter ibuprofen 'a few times a week' for knee pain. ALLERGIES: none. SOCIAL: current smoker ~40 pack-years, drinks 3-4 beers most evenings, no recreational drugs (denies cocaine if asked).\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: diaphoretic, in severe pain, restless, anxious.\n- Vitals: BP 192/64 in the RIGHT arm, 148/70 in the LEFT arm (>20 mmHg systolic differential); HR 58 (relatively bradycardic); wide pulse pressure on the right.\n- JVP: mildly elevated if specifically assessed.\n- Cardiac: regular but slow; soft early diastolic (blowing) murmur at the left sternal border if specifically auscultated (acute aortic regurgitation); no rub.\n- Lungs: clear bilaterally; no crackles.\n- Pulses: right radial fuller than left radial; right femoral diminished compared with left if checked; both lower-extremity pulses present but asymmetric.\n- Chest wall: NO reproducible tenderness. Abdomen: soft, mild diffuse discomfort, no rebound. Neuro: grossly intact, no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the medication nonadherence, the smoking, the alcohol, the NSAID use, the sildenafil, the family history, the near-syncope, or that the pain migrated unless the student specifically asks the matching question.\n- The blood-pressure differential, the wide pulse pressure, the diastolic murmur, the asymmetric pulses, and the elevated JVP are revealed ONLY if the student measures BP in both arms, auscultates the heart, checks pulses, or assesses the JVP.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "Hgb 13.8, WBC 9.0, Plt 240 — unremarkable.",
-      "BMP": "Cr 1.1, electrolytes normal.",
-      "Troponin": "Normal — not elevated.",
-      "Ddimer": "Elevated (nonspecific).",
-      "ctangio": "CT angiogram of the chest: intimal flap in the ascending aorta extending into the arch — Stanford type A aortic dissection."
+      "CBC": "Hgb 10.9 (below his baseline of ~13.5 — a drop suggesting blood loss/sequestration into the false lumen), WBC 12.4 with neutrophil predominance, Plt 232.",
+      "BMP": "Na 138, K 4.9, Cl 101, HCO3 18, BUN 38, Cr 2.3 (up from a baseline of ~1.5 — acute kidney injury on chronic kidney disease, suggesting renal malperfusion). Anion gap = Na − (Cl + HCO3) = 138 − (101 + 18) = 19 (elevated, ~7 above the upper-normal of 12).",
+      "Lactate": "4.1 mmol/L (elevated) — accounts for the elevated anion-gap metabolic acidosis and points to malperfusion/hypoperfusion of a vascular bed.",
+      "Troponin": "Mildly elevated at 0.09 ng/mL (upper limit 0.04) and rising — a troponin leak that could reflect either a primary inferior STEMI OR right-coronary malperfusion from a proximal dissection; it does NOT settle the diagnosis.",
+      "Ddimer": "Markedly elevated (very sensitive but nonspecific; a normal value would have argued against dissection).",
+      "ctangio": "CT angiogram of the chest, abdomen, and pelvis: intimal flap originating in the ascending aorta extending into the arch and down the descending aorta — Stanford type A aortic dissection. The flap involves the right coronary ostium (explaining the inferior ST elevation and troponin) and the right renal artery (explaining the AKI); small pericardial effusion; no frank tamponade."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
+    "Lactate",
     "Troponin",
     "Ddimer",
     "ekg",
@@ -40,62 +42,72 @@
   "essential": [
     "ekg",
     "cxr",
-    "ctangio"
+    "ctangio",
+    "Troponin"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Aortic dissection (leading & CANT-MISS, 10; accepts dissecting aneurysm). Acute coronary syndrome / STEMI (CANT-MISS,5). Pulmonary embolism (CANT-MISS,3). Pericarditis (core,2). Esophageal rupture (bonus,2). Names dissection and the features that point to it — tearing pain, BP differential, abrupt maximal onset (core,4).",
-      "idealAnswer": "Leading diagnosis: Aortic dissection. Must-not-miss diagnoses to exclude: Acute coronary syndrome / STEMI; Pulmonary embolism. Also reasonable: Pericarditis.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). Given the inferior ST elevation on the bedside EKG, explain why this is NOT a simple STEMI, and name three mechanisms or risk factors that predispose to aortic dissection.",
+      "rubric": "Aortic dissection (leading & CANT-MISS, 8; accepts dissecting aneurysm; the tearing maximal-at-onset pain, inter-arm BP differential, diastolic AR murmur, and asymmetric pulses point here despite the inferior ST elevation). Acute coronary syndrome / inferior STEMI (CANT-MISS, 4; a genuine competitor because the EKG shows inferior ST elevation and troponin is up — but proximal dissection can occlude the RCA and mimic it). Pulmonary embolism (CANT-MISS, 2). Pericarditis/tamponade (core, 2). Esophageal rupture (bonus, 1). Names dissection and the discriminating features — tearing maximal-at-onset pain, inter-arm BP differential, AR murmur, asymmetric pulses (core, 4). Names THREE mechanisms/risk factors for dissection — e.g. chronic hypertension/shear stress on the media, cystic medial degeneration/connective-tissue disease (Marfan/Ehlers-Danlos), bicuspid aortic valve, atherosclerosis/age, cocaine/stimulant use, pregnancy, family history of aneurysm (core, 3). PENALTY: anchoring on STEMI and giving thrombolytics/anticoagulation without excluding dissection (-3).",
+      "idealAnswer": "Leading diagnosis: Aortic dissection (Stanford type A). The bedside EKG shows inferior ST elevation, but this is NOT a simple inferior STEMI: a proximal (type A) dissection can extend into the right coronary ostium and occlude it, producing inferior ST elevation and a troponin leak. The features that point to dissection over primary ACS are the abrupt MAXIMAL-at-onset tearing pain radiating to the back and migrating, the inter-arm systolic BP differential (>20 mmHg), the new early-diastolic aortic-regurgitation murmur, asymmetric pulses, and the markedly elevated D-dimer. Must-not-miss competitors: Acute coronary syndrome / inferior STEMI (the dangerous look-alike) and Pulmonary embolism; also consider pericarditis with effusion/tamponade. Three mechanisms/risk factors for dissection: (1) chronic poorly-controlled hypertension causing repetitive shear stress on the aortic media; (2) cystic medial degeneration / connective-tissue disease (Marfan, Ehlers-Danlos, bicuspid aortic valve); (3) atherosclerosis with advancing age — others include cocaine/stimulant use, pregnancy, and a family history of aneurysm (he has both).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute coronary syndrome / STEMI",
-            "points": 5
+            "item": "Acute coronary syndrome / inferior STEMI (genuine competitor)",
+            "points": 4
           },
           {
             "item": "Pulmonary embolism",
-            "points": 3
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Pericarditis",
+            "item": "Pericarditis / tamponade",
             "points": 2
           },
           {
-            "item": "Names dissection and the features that point to it — tearing pain, BP differential, abrupt maximal onset",
+            "item": "Names dissection and the discriminating features — tearing maximal-at-onset pain, inter-arm BP differential, AR murmur, asymmetric pulses",
             "points": 4
+          },
+          {
+            "item": "Names three mechanisms/risk factors for dissection (HTN/shear, cystic medial degeneration/connective tissue disease, atherosclerosis/age, cocaine, family history)",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
             "item": "Esophageal rupture",
-            "points": 2
+            "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on STEMI and gives thrombolytics/anticoagulation without excluding dissection",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute coronary syndrome / STEMI",
+        "Acute coronary syndrome / inferior STEMI (genuine competitor)",
         "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
-        "Pericarditis"
+        "Pericarditis / tamponade"
       ]
     },
     {
       "id": "workup",
       "label": "Workup",
       "max": 15,
-      "prompt": "What workup do you want? (And what must you check at the bedside?)",
-      "rubric": "Bilateral arm BP / pulse exam (CANT-MISS,3). EKG to exclude STEMI (core,2). CXR (core,2). CT angiogram of chest/aorta (CANT-MISS, 8; accepts CTA or TEE). Troponin (core,1). Type and crossmatch blood (bonus,1). PENALTY: anticoagulating before excluding dissection (-2).",
+      "prompt": "What workup do you want? (And what must you check at the bedside before committing?)",
+      "rubric": "Bilateral arm BP / pulse exam (CANT-MISS,3). EKG (already shows inferior ST elevation — interpret in the context of the chest exam, do NOT reflexively activate the cath lab) (core,2). CXR (core,2). CT angiogram of chest/abdomen/pelvis (CANT-MISS, 4; accepts CTA or TEE if too unstable for CT). Troponin (core,1). CBC + type and crossmatch blood (core,1). BMP/renal function and lactate to assess malperfusion (core,1). Bedside echo for AR/effusion/tamponade (bonus,1). PENALTY: anticoagulating/thrombolysing before excluding dissection (-3); giving a nitrate/PDE5-interaction vasodilator before checking medication history (-1).",
       "reveal": true,
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; D-dimer; CT angiography.",
+      "idealAnswer": "Check both arms' BP and all four pulses at the bedside FIRST. Order: EKG (already shows inferior ST elevation — interpret it alongside the inter-arm differential and AR murmur rather than reflexively activating the cath lab); CXR; CBC with type and crossmatch; BMP with renal function; lactate; troponin; D-dimer; CT angiography of the chest, abdomen, and pelvis as the definitive test (TEE if too unstable to travel). A bedside echo can quickly assess for AR, pericardial effusion, and tamponade.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -106,7 +118,7 @@
         ],
         "coreActions": [
           {
-            "item": "EKG to exclude STEMI",
+            "item": "EKG interpreted in context (do not reflexively activate cath lab)",
             "points": 2
           },
           {
@@ -114,36 +126,36 @@
             "points": 2
           },
           {
+            "item": "CT angiography (chest/abdomen/pelvis)",
+            "points": 2
+          },
+          {
             "item": "Troponin",
             "points": 1
           },
           {
-            "item": "CBC",
+            "item": "CBC with type and crossmatch",
             "points": 2
           },
           {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "D-dimer",
-            "points": 2
-          },
-          {
-            "item": "CT angiography",
+            "item": "BMP / renal function and lactate",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Type and crossmatch blood",
+            "item": "Bedside echo for AR / effusion / tamponade",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "anticoagulating before excluding dissection",
-            "points": -2
+            "item": "Anticoagulating or thrombolysing before excluding dissection",
+            "points": -3
+          },
+          {
+            "item": "Giving a nitrate/PDE5-interacting vasodilator before checking medication history",
+            "points": -1
           }
         ]
       },
@@ -151,49 +163,49 @@
         "Bilateral arm BP / pulse exam"
       ],
       "optionalTests": [
-        "EKG to exclude STEMI",
+        "EKG interpreted in context (do not reflexively activate cath lab)",
         "CXR",
         "Troponin"
       ],
       "contraindicatedTests": [
-        "anticoagulating before excluding dissection"
+        "Anticoagulating or thrombolysing before excluding dissection"
       ],
       "orderSensitiveActions": [
-        "anticoagulating before excluding dissection"
+        "Anticoagulating or thrombolysing before excluding dissection"
       ]
     },
     {
       "id": "ekg_read",
       "label": "Read EKG",
       "max": 15,
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = left ventricular hypertrophy by voltage with a lateral strain pattern; NO acute STEMI. CREDIT: applies LVH voltage criteria (4); EXPLICITLY recognizes the strain repolarization changes are NOT an acute STEMI - essential before any anticoagulation/thrombolysis (7); systematic read (2). PENALTY: misreading the strain pattern as a STEMI and giving thrombolytics/anticoagulation (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and state how they fit the clinical picture.",
+      "rubric": "Findings = inferior ST elevation (II, III, aVF) with reciprocal change in aVL and right-sided ST elevation (V4R) of right-ventricular involvement; the relative bradycardia fits inferior/RV ischemia. CRUCIAL: recognizes this can be RIGHT-CORONARY malperfusion from a proximal aortic dissection, NOT necessarily a primary thrombotic STEMI — so anticoagulation/thrombolysis is contraindicated until dissection is excluded (7); reads the inferior STEMI pattern systematically (4); recognizes RV involvement / reciprocal change (2). PENALTY: calling it a simple STEMI and reflexively thrombolysing/anticoagulating without considering dissection (-3).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
-        "applies LVH voltage criteria",
-        "recognizes a strain pattern, not acute STEMI"
+        "inferior ST elevation (II, III, aVF) with reciprocal change in aVL",
+        "right-ventricular involvement (V4R) — and the possibility this is RCA malperfusion from a proximal dissection, not a primary STEMI"
       ],
       "criticalFindings": [
-        "Left ventricular hypertrophy with strain pattern (not an acute STEMI)."
+        "Inferior ST elevation that may reflect right-coronary malperfusion from a proximal aortic dissection — not a thrombus to anticoagulate."
       ],
       "commonMistakes": [
-        "reading the strain repolarization changes as acute ischemia/STEMI"
+        "reading the inferior ST elevation as a simple thrombotic STEMI and giving anticoagulation/thrombolytics without excluding dissection"
       ],
-      "idealAnswer": "Left ventricular hypertrophy by voltage with a lateral strain pattern; not an acute STEMI.",
+      "idealAnswer": "Inferior ST elevation in II, III, and aVF with reciprocal ST depression in aVL, plus right-sided changes (V4R) of right-ventricular involvement; the relative bradycardia is consistent with inferior/RV ischemia. The key integration: in a patient with tearing pain, an inter-arm BP differential, and an AR murmur, this inferior ST elevation may be RIGHT-CORONARY malperfusion from a proximal (type A) aortic dissection rather than a primary thrombotic STEMI — so thrombolysis and anticoagulation are CONTRAINDICATED until dissection is excluded by CT.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Left ventricular hypertrophy with strain pattern (not an acute STEMI)."
+          "Inferior ST elevation that may reflect right-coronary malperfusion from a proximal aortic dissection — not a thrombus to anticoagulate."
         ],
         "coreActions": [
-          "applies LVH voltage criteria",
-          "recognizes a strain pattern, not acute STEMI"
+          "inferior ST elevation (II, III, aVF) with reciprocal change in aVL",
+          "right-ventricular involvement (V4R) — consider RCA malperfusion from dissection, not a primary STEMI"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls it a simple STEMI and thrombolyses/anticoagulates without excluding dissection",
             "points": -3
           }
         ]
@@ -204,7 +216,7 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = WIDENED MEDIASTINUM with an enlarged aortic knob. CREDIT: identifies the widened mediastinum (6); links it to suspected aortic dissection (4). PENALTY: calling the film normal / missing the widened mediastinum (-3).",
+      "rubric": "Findings = WIDENED MEDIASTINUM with an enlarged aortic knob (and a possible small left pleural effusion). CREDIT: identifies the widened mediastinum (6); links it to suspected aortic dissection (4). PENALTY: calling the film normal / missing the widened mediastinum (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
@@ -217,7 +229,7 @@
       "commonMistakes": [
         "calling the film normal / missing the widened mediastinum"
       ],
-      "idealAnswer": "Widened mediastinum; enlarged aortic knob.",
+      "idealAnswer": "Widened mediastinum with an enlarged aortic knob and a possible small left pleural effusion — highly suggestive of aortic dissection in this clinical context.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -249,9 +261,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the widened mediastinum and CT findings, what is your diagnosis and why does the location matter?",
-      "rubric": "Stanford type A aortic dissection (8; accepts ascending aortic dissection). Recognizes type A involves the ascending aorta and is a surgical emergency (4). Notes complications — aortic regurgitation, tamponade, malperfusion (3).",
-      "idealAnswer": "Aortic dissection. ",
+      "prompt": "Given the CT findings, commit to a diagnosis. Explain why the location matters, how the inferior ST elevation and the acute kidney injury are explained by ONE unifying process, and name the discriminating test and any residual uncertainty.",
+      "rubric": "Stanford type A aortic dissection (accepts ascending aortic dissection) is the unifying diagnosis. Recognizes type A involves the ascending aorta and is a SURGICAL emergency (vs type B, usually medical). Explains the ONE process accounts for the multi-system picture: RCA-ostium involvement → inferior ST elevation + troponin leak (a malperfusion STEMI, NOT a thrombotic one); right-renal-artery involvement → AKI on CKD with lactic acidosis from malperfusion; intimal flap → acute AR murmur and pericardial effusion; falling Hgb from sequestration/leak. Names the discriminating test (CT angiography, or TEE if unstable) and residual uncertainty (dynamic vs static malperfusion, tamponade risk from the effusion). Notes complications — acute AR, tamponade, coronary/renal/mesenteric/limb malperfusion, rupture.",
+      "idealAnswer": "Stanford type A aortic dissection — the flap arises in the ascending aorta, which makes it a SURGICAL emergency (type B descending dissections are usually managed medically). One unifying process explains everything: the flap reaches the right coronary ostium, causing right-coronary MALPERFUSION that produced the inferior ST elevation and the troponin leak (a malperfusion 'STEMI', not a thrombotic one — which is exactly why thrombolysis/anticoagulation would have been catastrophic); it reaches the right renal artery, causing the acute kidney injury on CKD and the lactic/anion-gap acidosis from malperfusion; the proximal flap disrupts the aortic valve, giving the acute aortic-regurgitation murmur and the small pericardial effusion; and blood sequestered into the false lumen explains the fall in hemoglobin. The discriminating test is CT angiography (or TEE if too unstable to travel). Residual uncertainty: whether the malperfusion is dynamic or static, and the risk that the pericardial effusion progresses to tamponade. Complications to watch: acute AR, tamponade, coronary/renal/mesenteric/limb malperfusion, and free rupture.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -264,9 +276,9 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH Acute Aortic Syndromes: rate control FIRST with IV beta blocker (esmolol/labetalol), HR <60 (CANT-MISS,6); THEN BP control SBP 100-120, nitroprusside after beta blockade (5); STAT cardiothoracic surgery consult (CANT-MISS,5); type A → emergent surgery, type B → medical (3); pain control (2); large-bore IV access + type & screen (2). PENALTY: vasodilator (nitroprusside) before beta blocker → reflex tachycardia/shear (-3); anticoagulation/thrombolytics (-4).",
-      "idealAnswer": "Emergency. Control heart rate first (IV beta blocker, e.g. esmolol, target HR <60) THEN blood pressure (target SBP 100–120, add nitroprusside) to reduce aortic wall stress. Pain control. STAT cardiac surgery consult – Stanford type A (ascending) is a surgical emergency; type B (descending) is usually managed medically. Type & screen, two large-bore IVs.",
+      "prompt": "What is your management plan? Include disposition: is this patient ever safe to discharge, and what level of care and transfer does he need?",
+      "rubric": "Per MGH Acute Aortic Syndromes: rate control FIRST with IV beta blocker (esmolol/labetalol), target HR <60 (CANT-MISS,6); THEN BP control to SBP 100-120, adding a vasodilator (nitroprusside) ONLY after beta blockade (4); STAT cardiothoracic surgery consult — type A is emergent surgery, type B is medical (CANT-MISS,5); pain control with opioids (2); large-bore IV access + type & crossmatch, treat the falling Hgb (2); explicit safe-disposition statement — this is NEVER dischargeable, admit to ICU and transfer emergently to a center with cardiac surgery if not available locally; do NOT send to the cath lab (3). Holds/avoids nephrotoxins and dose-adjusts for AKI; notes the recent sildenafil contraindicates nitrates and cautions nitroprusside (bonus,1). PENALTY: vasodilator before beta blockade → reflex tachycardia/increased shear (-3); anticoagulation/thrombolytics or cath-lab activation for the 'STEMI' (-4); discharging or under-triaging the patient (-3).",
+      "idealAnswer": "This is an emergency and the patient is NEVER safe to discharge. Control heart rate FIRST with an IV beta blocker (e.g. esmolol or labetalol, target HR <60) to reduce dP/dt and aortic wall shear, THEN control blood pressure to SBP 100-120, adding nitroprusside ONLY after beta blockade (a vasodilator first would cause reflex tachycardia and worse shear). Note he took sildenafil yesterday — avoid nitrates and use vasodilators cautiously. Opioid pain control. Two large-bore IVs, type and crossmatch, and resuscitate the falling hemoglobin. STAT cardiothoracic surgery consult: a Stanford type A dissection is an emergent surgical repair (a type B would be managed medically). Do NOT activate the cath lab or give anticoagulation/thrombolytics for the inferior ST elevation — it is malperfusion, not thrombus. Hold nephrotoxins (NSAIDs, his ACE inhibitor) and dose-adjust for the AKI. Disposition: admit to the ICU; if there is no on-site cardiac surgery, arrange emergent transfer to a center that has it. There is no safe-discharge pathway here.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -281,25 +293,29 @@
         ],
         "coreActions": [
           {
-            "item": "Blood pressure control (nitroprusside after BB)",
-            "points": 5
+            "item": "Blood pressure control to SBP 100-120 (nitroprusside only after beta blocker)",
+            "points": 4
           },
           {
-            "item": "Type A surgical / type B medical",
+            "item": "Pain control with opioids",
+            "points": 2
+          },
+          {
+            "item": "Large-bore IV access, type & crossmatch, resuscitate falling Hgb",
+            "points": 2
+          },
+          {
+            "item": "Safe-disposition: never dischargeable — admit ICU and emergently transfer to a cardiac-surgery center; do NOT send to cath lab",
             "points": 3
-          },
-          {
-            "item": "Pain control",
-            "points": 2
-          },
-          {
-            "item": "Large-bore IV access and type & screen",
-            "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Blood pressure target SBP 100-120",
+            "item": "Hold nephrotoxins / dose-adjust for AKI; avoid nitrates given recent sildenafil",
+            "points": 1
+          },
+          {
+            "item": "Type A surgical vs type B medical distinction",
             "points": 2
           }
         ],
@@ -309,8 +325,12 @@
             "points": -3
           },
           {
-            "item": "Anticoagulation or thrombolytics",
+            "item": "Anticoagulation, thrombolytics, or cath-lab activation for the 'STEMI'",
             "points": -4
+          },
+          {
+            "item": "Discharging or under-triaging the patient",
+            "points": -3
           }
         ]
       },
@@ -319,20 +339,22 @@
         "Cardiothoracic surgery consult (STAT)"
       ],
       "optionalActions": [
-        "Blood pressure control (nitroprusside after BB)",
-        "Type A surgical / type B medical",
-        "Pain control",
-        "Large-bore IV access and type & screen",
-        "Blood pressure target SBP 100-120"
+        "Blood pressure control to SBP 100-120 (nitroprusside only after beta blocker)",
+        "Pain control with opioids",
+        "Large-bore IV access, type & crossmatch, resuscitate falling Hgb",
+        "Safe-disposition: never dischargeable — admit ICU and emergently transfer to a cardiac-surgery center; do NOT send to cath lab",
+        "Type A surgical vs type B medical distinction",
+        "Hold nephrotoxins / dose-adjust for AKI; avoid nitrates given recent sildenafil"
       ],
       "unsafeActions": [
         "Vasodilator before beta blockade",
-        "Anticoagulation or thrombolytics"
+        "Anticoagulation, thrombolytics, or cath-lab activation for the 'STEMI'",
+        "Discharging or under-triaging the patient"
       ],
       "consults": [
         "Cardiac Surgery"
       ],
-      "disposition": "Emergent; ICU / OR",
+      "disposition": "Emergent; ICU then OR / transfer to cardiac-surgery center",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Aortic Disease (Acute Aortic Syndromes)",
@@ -344,34 +366,36 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "litflStudyN": 1,
+      "integrated": true,
+      "source": "https://litfl.com/ecg-case-001/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with lateral strain (ST depression / T inversion I, aVL, V5-6). No acute STEMI.",
-      "verify": "Source a study matching: Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with lateral strain (ST depression / T inversion I, aVL, V5-6). No acute STEMI. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Inferior STEMI with right ventricular involvement: ST elevation in II, III, aVF with reciprocal ST depression in aVL and ST elevation in V4R; relative bradycardia. In this patient the inferior ST elevation reflects right-coronary malperfusion from a proximal aortic dissection, not a primary thrombotic STEMI.",
+      "verify": "Use LITFL ECG case 001 (inferior STEMI with RV infarction). Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing LVH with strain pattern",
+      "imageDescription": "12-lead showing inferior ST elevation (II, III, aVF) with reciprocal change in aVL and right-ventricular involvement (V4R)",
       "searchTerms": [
-        "LVH strain pattern ECG",
-        "left ventricular hypertrophy voltage 12 lead"
+        "inferior STEMI RV infarction ECG",
+        "ST elevation II III aVF V4R right ventricular"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 62-year-old man with long-standing poorly controlled hypertension presents with chest pain and exertional breathlessness."
+      "clinicalVignette": "A 58-year-old man with tearing chest pain, an inter-arm blood-pressure differential, and an early-diastolic murmur has inferior ST elevation on his bedside EKG."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=widened%20mediastinum%20aortic%20dissection%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons - verify file license",
-      "findings": "Widened mediastinum; enlarged aortic knob.",
-      "verify": "Pick a CC chest film matching: Widened mediastinum; enlarged aortic knob..",
+      "findings": "Widened mediastinum; enlarged aortic knob; possible small left pleural effusion.",
+      "verify": "Pick a CC chest film matching: Widened mediastinum; enlarged aortic knob.",
       "assetNeeded": true,
-      "imageDescription": "Widened mediastinum; enlarged aortic knob.",
+      "imageDescription": "Widened mediastinum; enlarged aortic knob; possible small left pleural effusion.",
       "searchTerms": [
-        "chest radiograph Widened mediastinum; enlarged aortic"
+        "chest radiograph widened mediastinum enlarged aortic knob"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 66-year-old man presents with sudden tearing chest pain radiating to the back between the shoulder blades."
+      "clinicalVignette": "A 58-year-old man presents with sudden tearing chest pain radiating to the back between the shoulder blades."
     }
   },
   "standardizedPatient": {
@@ -383,14 +407,16 @@
     "sensitiveTopics": [
       "alcohol_use",
       "tobacco_use",
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "erectile_dysfunction_medication",
+      "recreational_drug_use"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; embarrassed about the erectile-dysfunction medication and the medication nonadherence",
     "affect": "58-year-old man, in severe distress, restless, sweating. Frightened.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (nonadherence, smoking, alcohol, NSAID use, sildenafil, recreational drugs, family history) unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam or diagnostic findings (BP differential, murmur, asymmetric pulses, JVP) until the relevant exam is performed",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -407,7 +433,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -421,6 +447,21 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recreational_drug_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "drugs",
+        "cocaine",
+        "stimulants",
+        "recreational drugs",
+        "illicit drugs"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -431,11 +472,28 @@
         "medication adherence",
         "missed doses",
         "ran out",
-        "taking your medications"
+        "taking your medications",
+        "do you take them as prescribed"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "erectile_dysfunction_medication",
+      "category": "meds",
+      "triggerConcepts": [
+        "sildenafil",
+        "viagra",
+        "erectile dysfunction medication",
+        "anything for sexual function",
+        "any pills or supplements in the last day",
+        "pills for erections"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -459,7 +517,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "did it move",
+        "did the pain travel"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -485,7 +545,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "dizziness",
+        "near-syncope",
+        "passed out",
+        "shortness of breath"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -512,7 +576,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "kidney",
+        "blood pressure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -525,12 +592,27 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "what pills"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in your family",
+        "aneurysm",
+        "heart problems in the family"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
     },
     {
       "id": "prior_episodes",
@@ -549,7 +631,7 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: regular; soft early diastolic murmur at the left sternal border if specifically auscultated (aortic regurgitation).",
+      "finding": "Cardiac: regular but slow; soft early-diastolic (blowing) murmur at the left sternal border if specifically auscultated (acute aortic regurgitation); no rub.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -559,14 +641,34 @@
       "normalIfNotPresent": "No murmur appreciated."
     },
     {
-      "id": "assess_general_appearance_finding_2",
-      "finding": "General: diaphoretic, in severe pain, restless.",
+      "id": "assess_peripheral_pulses_finding_2",
+      "finding": "Pulses: right radial fuller than left radial; right femoral diminished compared with left; both lower-extremity pulses present but asymmetric.",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Pulses symmetric in all four extremities."
+    },
+    {
+      "id": "assess_jvp_finding_3",
+      "finding": "JVP mildly elevated (raises concern for a pericardial effusion / early tamponade).",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "assess_general_appearance_finding_4",
+      "finding": "General: diaphoretic, in severe pain, restless, anxious.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No tremor or diaphoresis."
+      "normalIfNotPresent": "No diaphoresis or distress."
     }
   ],
   "overallScoring": {
@@ -579,48 +681,58 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Aortic dissection",
-    "diagnosticFramework": "58M with poorly controlled hypertension presents with sudden, severe, tearing chest pain radiating to the back that began 1 hour ago. The diagnosis is Aortic dissection, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58M with poorly controlled hypertension, type 2 diabetes, CKD, and significant polypharmacy presents with sudden, severe, tearing chest pain radiating to the back that began 1 hour ago. The bedside EKG shows inferior ST elevation, creating a genuine fork between a primary inferior STEMI and a Stanford type A aortic dissection that has extended into the right coronary ostium. The diagnosis is Aortic dissection: one unifying process accounts for the inferior ST elevation and troponin leak (RCA malperfusion), the acute kidney injury and lactic/anion-gap acidosis (renal-artery malperfusion), the acute aortic-regurgitation murmur and pericardial effusion (proximal flap), and the falling hemoglobin (false-lumen sequestration). It is reached by eliciting the focused history, performing the targeted exam (inter-arm BP differential, AR murmur, asymmetric pulses), interpreting the integrated EKG and CXR in context, and crucially WITHHOLDING anticoagulation/thrombolysis until CT angiography confirms the dissection.",
     "keyHistoryClues": [
-      "medication adherence"
+      "medication adherence",
+      "recent sildenafil use",
+      "family history of aneurysm"
     ],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular; soft early diastolic murmur at the left sternal border if specifically auscultated (aortic regurgitation).",
-      "General: diaphoretic, in severe pain, restless."
+      "Cardiac: regular but slow; soft early-diastolic (blowing) murmur at the left sternal border if specifically auscultated (acute aortic regurgitation); no rub.",
+      "Pulses: right radial fuller than left radial; right femoral diminished compared with left; both lower-extremity pulses present but asymmetric.",
+      "JVP mildly elevated (raises concern for a pericardial effusion / early tamponade).",
+      "General: diaphoretic, in severe pain, restless, anxious."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
+      "Lactate",
       "Troponin",
       "Ddimer",
       "ctangio"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Aortic dissection while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Aortic dissection and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the bradycardia and the wide pulse pressure.",
+      "Elicit the focused history, including sensitive items (nonadherence, sildenafil, family aneurysm) only on direct questioning.",
+      "Perform the targeted physical exam — bilateral arm BP, cardiac auscultation, pulses, JVP — to reveal the dissection signs.",
+      "Build a differential that holds aortic dissection and inferior STEMI as competing leaders, and resist anchoring on the EKG.",
+      "Order an order-sensitive workup, interpret the integrated inferior-STEMI EKG and the widened-mediastinum CXR in context, and confirm with CT angiography.",
+      "Commit to Stanford type A aortic dissection, explain the unifying malperfusion physiology, and manage with rate-then-pressure control, STAT surgery, and ICU/transfer disposition without anticoagulation."
     ],
     "commonPitfalls": [
+      "Anchoring on the inferior STEMI and activating the cath lab / giving anticoagulation or thrombolytics",
       "Vasodilator before beta blockade",
-      "Anticoagulation or thrombolytics"
+      "Missing the inter-arm BP differential and asymmetric pulses by not examining them",
+      "Discharging or under-triaging the patient"
     ],
     "managementPearls": [
-      "IV beta blocker for rate control (HR<60)",
-      "Cardiothoracic surgery consult (STAT)"
+      "IV beta blocker for rate control (HR<60) before any vasodilator",
+      "STAT cardiothoracic surgery consult for a type A dissection",
+      "Never dischargeable — ICU admission and emergent transfer to a cardiac-surgery center"
     ],
     "criticalHistoryItems": [
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "erectile_dysfunction_medication"
     ],
     "criticalExamItems": [
-      "auscultate_aortic_area"
+      "auscultate_aortic_area",
+      "assess_peripheral_pulses"
     ],
     "criticalWorkupItems": [
       "Bilateral arm BP / pulse exam"
     ],
     "criticalInterpretationItems": [
-      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
+      "Inferior ST elevation that may reflect right-coronary malperfusion from a proximal aortic dissection — not a thrombus to anticoagulate.",
       "Widened mediastinum; enlarged aortic knob."
     ],
     "criticalManagementItems": [
@@ -628,16 +740,16 @@
       "Cardiothoracic surgery consult (STAT)"
     ],
     "keyImageInterpretationFindings": [
-      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
+      "Inferior ST elevation (II, III, aVF) with reciprocal change in aVL and right-ventricular involvement — possible RCA malperfusion from dissection.",
       "Widened mediastinum; enlarged aortic knob."
     ],
     "criticalImageInterpretationFindings": [
-      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
+      "Inferior ST elevation that may reflect right-coronary malperfusion from a proximal aortic dissection — not a thrombus to anticoagulate.",
       "Widened mediastinum; enlarged aortic knob."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
+      "Inferior ST elevation is not always a thrombotic STEMI — in a patient with tearing pain and an inter-arm BP differential, consider right-coronary malperfusion from a proximal dissection before anticoagulating.",
+      "Read every study systematically before committing, and integrate it with the bedside exam.",
       "State pertinent negatives, not just positives."
     ]
   },
@@ -649,11 +761,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's pain and fear",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (adherence, sexual-function medication, drug use)",
         "points": 1
       },
       {
@@ -668,8 +780,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "pathology-forward integrated interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

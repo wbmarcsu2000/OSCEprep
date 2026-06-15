@@ -2,57 +2,60 @@
   "id": "abdo-09",
   "category": "Abdominal Pain",
   "difficulty": "hard",
-  "title": "Sudden severe upper abdominal pain",
+  "title": "Sudden severe upper abdominal pain in an anticoagulated vasculopath",
   "diagnosis": "Perforated peptic ulcer",
   "chart": {
-    "ageSex": "58M",
+    "ageSex": "68M",
     "cc": "Sudden severe stomach pain",
-    "oneLiner": "58M presents with the abrupt onset 4 hours ago of severe, constant epigastric pain that rapidly spread across the whole abdomen, now lying rigidly still.",
+    "oneLiner": "68M with atrial fibrillation on rivaroxaban, hypertension, gout, and chronic back pain presents with the abrupt onset 4 hours ago of severe, constant epigastric pain that rapidly spread across the whole abdomen; he is lying rigidly still, tachycardic, and irregularly irregular.",
     "vitals": {
-      "BP": "104/68",
-      "HR": "118",
-      "RR": "24",
-      "Temp": "38.1°C",
-      "SpO2": "97% RA"
+      "BP": "102/64",
+      "HR": "138",
+      "RR": "26",
+      "Temp": "38.2°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
   "opening": "It hit me out of nowhere a few hours ago — a stabbing pain in the pit of my stomach, and now it hurts everywhere and I can't move without it getting worse.",
-  "patientFile": "PERSONA: 58-year-old man, lying very still on the stretcher with knees drawn up, breathing shallowly (deep breaths and any movement worsen the pain), guarding his abdomen. Anxious but cooperative.\n\nHPI: Pain began ABRUPTLY about 4 hours ago — he can name the exact moment — as a sudden, severe, stabbing pain in the epigastrium. Within an hour it spread to involve the WHOLE abdomen and is now constant and “knife-like.” Movement, coughing, and the ambulance ride all made it dramatically worse; lying perfectly still helps a little. Nausea, no significant vomiting. He has had weeks of intermittent gnawing epigastric “burning” before meals relieved by antacids (only if asked about prior stomach symptoms). Takes ibuprofen most days for chronic back pain and bought more over the counter recently (only if asked about medications/painkillers). NO black or bloody stools that he has noticed, NO prior abdominal surgery, NO chest pain or exertional component, NO recent fatty-meal trigger, NO jaundice, NO change in bowels today, NO known gallstones.\nPMH: chronic low back pain; mild hypertension. MEDS: over-the-counter ibuprofen most days (if asked); occasional antacids. SOCIAL: smokes ~1 pack/day for 30 years; drinks 3–4 beers most evenings (sensitive — only if asked directly); no recreational drugs. FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: diaphoretic, lying rigidly still, in obvious distress.\n- Vitals: BP 104/68, HR 118, RR 24, 38.1°C, SpO2 97% RA.\n- Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds ABSENT/markedly reduced. No distension yet; no surgical scars.\n- Cardiac: tachycardic, regular, no murmur. Lungs: clear, shallow respirations.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the NSAID/ibuprofen use or the weeks of prior dyspepsia unless asked about medications, painkillers, or prior stomach symptoms.\n- Do NOT volunteer the alcohol amount unless asked directly about drinking.\n- The peritoneal signs (rigidity, guarding, rebound, absent bowel sounds) are revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 68-year-old man, lying very still on the stretcher with knees drawn up, breathing shallowly (deep breaths and any movement worsen the pain), guarding his abdomen. Anxious but cooperative; gives short answers because deep breaths hurt.\n\nHPI: Pain began ABRUPTLY about 4 hours ago — he can name the exact moment — as a sudden, severe, stabbing pain in the epigastrium. Within an hour it spread to involve the WHOLE abdomen and is now constant and “knife-like.” Movement, coughing, and the ambulance ride all made it dramatically worse; lying perfectly still helps a little. Nausea, no significant vomiting. He has had weeks of intermittent gnawing epigastric “burning” before meals relieved by antacids (only if asked about prior stomach symptoms). For pain control he takes over-the-counter ibuprofen most days for chronic back pain AND naproxen plus occasional prednisone bursts for gout flares, and a daily low-dose aspirin a cardiologist once started; he bought a big bottle of ibuprofen recently and has been using more than usual (only if asked about medications/painkillers). His heart has been “racing and fluttering” for the last day, which he blamed on the pain (only if asked about palpitations/heart racing). NO black or bloody stools that he has noticed, though he hasn't looked closely (only if asked); NO prior abdominal surgery, NO pleuritic chest pain or exertional component, NO recent fatty-meal trigger, NO jaundice, NO bloody diarrhea or pain-out-of-proportion that came BEFORE the sudden onset (only if asked about pain preceding this event), NO known gallstones.\nPMH: atrial fibrillation (on a blood thinner); hypertension; gout; chronic low back pain; remote mild diverticulosis on a prior colonoscopy. MEDS (reveal only if asked about medications/blood thinners/painkillers): rivaroxaban (a direct oral anticoagulant) taken every morning, last dose this morning; diltiazem for rate control; lisinopril; allopurinol; daily low-dose aspirin; over-the-counter ibuprofen most days; naproxen and short prednisone courses for gout; occasional antacids. ALLERGIES: none. SOCIAL: smokes ~1 pack/day for 40 years; drinks 3–4 beers most evenings (sensitive — only if asked directly); no recreational drugs. FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: diaphoretic, lying rigidly still, in obvious distress.\n- Vitals: BP 102/64, HR 138 and irregular, RR 26, 38.2°C, SpO2 96% RA.\n- Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds ABSENT/markedly reduced. No distension yet; no surgical scars. No pulsatile mass; no bruit.\n- Cardiac: tachycardic and IRREGULARLY IRREGULAR, no murmur. Peripheral pulses present and symmetric, no pulse deficit. Lungs: clear, shallow respirations. No focal neuro deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the NSAID/aspirin/steroid use, the rivaroxaban, or the weeks of prior dyspepsia unless asked about medications, painkillers, blood thinners, or prior stomach symptoms.\n- Do NOT volunteer the alcohol amount unless asked directly about drinking.\n- Do NOT volunteer the palpitations/irregular heartbeat unless asked about the heart racing/fluttering.\n- The peritoneal signs (rigidity, guarding, rebound, absent bowel sounds) and the irregularly irregular pulse are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 16.8 with neutrophil predominance and left shift, Hgb 14.6, Plt 280 (leukocytosis consistent with peritonitis).",
-      "BMP": "Mild prerenal azotemia (BUN/Cr mildly up), HCO3 19 with anion gap — early lactic/metabolic derangement from peritonitis/hypoperfusion.",
-      "Lipase": "Mildly elevated but NOT in the thousands — argues against primary acute pancreatitis as the cause.",
+      "CBC": "WBC 17.4 with neutrophil predominance and a left shift (leukocytosis consistent with peritonitis); Hgb 10.2 (mildly microcytic, down from a baseline of 13.8 — suggests chronic occult GI blood loss); Plt 268.",
+      "BMP": "Na 137, K 4.6, Cl 99, HCO3 17, BUN 38, Cr 1.7 (baseline 1.0). Anion gap = 137 − (99 + 17) = 21 (elevated). Acute kidney injury with an elevated anion-gap metabolic acidosis from hypoperfusion/peritonitis; the NSAIDs likely contribute to the AKI.",
+      "Lipase": "Mildly elevated at ~180 U/L but NOT in the thousands — argues against primary acute pancreatitis as the cause.",
       "LFTs": "Within normal limits; no obstructive pattern (argues against biliary obstruction/cholangitis).",
-      "Lactate": "Elevated at 3.2 mmol/L — marker of hypoperfusion/peritonitis, supports urgent source control.",
-      "CT_abdomen": "CT abdomen/pelvis with IV contrast: free intraperitoneal air and a small amount of free fluid, with focal wall discontinuity of the duodenal bulb/gastric antrum — consistent with a perforated peptic ulcer. No bowel-wall pneumatosis or mesenteric occlusion."
+      "Lactate": "Elevated at 3.6 mmol/L — accounts for much of the anion gap; marker of hypoperfusion/peritonitis and supports urgent source control (also keeps mesenteric ischemia on the differential).",
+      "Coags": "INR 1.4, PTT 34. Anti-Xa (rivaroxaban) level supratherapeutic given an AKI-impaired clearance — the patient is meaningfully anticoagulated, which matters before any operation.",
+      "CT_abdomen": "CT abdomen/pelvis with IV contrast: free intraperitoneal air and a small amount of free fluid, with focal wall discontinuity of the duodenal bulb/gastric antrum — consistent with a perforated peptic ulcer. The SMA and SMV are patent with no embolus/thrombus, and there is NO bowel-wall pneumatosis or portal-venous gas — arguing against acute mesenteric ischemia. Aorta normal caliber with no aneurysm or dissection."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~118 bpm; no ST-elevation, no ischemic ST/T changes — a reactive tachycardia, not an acute coronary event.",
-      "verify": "Source a study matching: Sinus tachycardia at ~118 bpm with no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 2,
+      "findings": "Atrial fibrillation with a rapid ventricular response (~135–140 bpm): irregularly irregular QRS complexes with no discernible P waves, plus rate-related horizontal ST-segment depression in the lateral leads (I, aVL, V5–V6) — demand ischemia from the tachyarrhythmia and hypoperfusion, not a primary thrombotic STEMI. This is the patient's OWN tracing and is part of the puzzle: new/poorly-controlled AF raises the competing question of embolic mesenteric ischemia.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response and rate-related lateral ST depression. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia without ischemic changes",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and lateral ST depression",
       "searchTerms": [
-        "sinus tachycardia 12 lead ECG",
-        "sinus tachycardia no ischemia ECG"
+        "atrial fibrillation rapid ventricular response 12 lead ECG",
+        "AF with rate-related ST depression ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 62-year-old man presents with sudden severe abdominal pain and a rapid heart rate."
+      "clinicalVignette": "A 68-year-old man with known atrial fibrillation presents with sudden severe abdominal pain and an irregularly irregular, very rapid pulse."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=pneumoperitoneum%20free%20air%20under%20diaphragm%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Free air under the right hemidiaphragm (pneumoperitoneum) on the upright film; lungs clear, no consolidation — the classic radiographic sign of a perforated viscus.",
+      "findings": "Free air under the right hemidiaphragm (pneumoperitoneum) on the upright film; lungs clear, no consolidation, no pleural effusion — the classic radiographic sign of a perforated viscus.",
       "verify": "Source a study matching: Free air under the diaphragm (pneumoperitoneum) on an upright chest film with clear lungs. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
       "imageDescription": "upright chest radiograph showing free air under the diaphragm (pneumoperitoneum)",
@@ -61,7 +64,7 @@
         "pneumoperitoneum upright chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 64-year-old man with sudden severe epigastric pain and a rigid abdomen has an upright chest film."
+      "clinicalVignette": "A 68-year-old man with sudden severe epigastric pain and a rigid abdomen has an upright chest film."
     }
   },
   "revealKeys": [
@@ -70,6 +73,7 @@
     "Lipase",
     "LFTs",
     "Lactate",
+    "Coags",
     "CT_abdomen",
     "ekg",
     "cxr"
@@ -77,32 +81,33 @@
   "essential": [
     "CT_abdomen",
     "cxr",
-    "CBC"
+    "CBC",
+    "Coags"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Perforated peptic ulcer / perforated viscus (leading,8). Mesenteric ischemia (CANT-MISS to exclude in a vasculopath with peritonitis and lactate,5). Acute pancreatitis (core,3). Ruptured/symptomatic abdominal aortic aneurysm (core,2). Acute cholecystitis/biliary disease (core,2). Names a surgical abdomen / peritonitis and the imperative to obtain urgent imaging for free air and a surgical opinion (core,5).",
-      "idealAnswer": "Leading diagnosis: Perforated peptic ulcer (perforated viscus). Must-not-miss diagnoses to exclude: Mesenteric ischemia. Also reasonable: Acute pancreatitis; Ruptured/symptomatic abdominal aortic aneurysm; Acute cholecystitis.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). This man has atrial fibrillation and a high lactate, so be explicit about your two leading possibilities. Also name three mechanisms/etiologies that can produce free intraperitoneal air (pneumoperitoneum).",
+      "rubric": "Perforated peptic ulcer / perforated viscus (leading,7). Acute mesenteric ischemia — the genuine competitor in an AF vasculopath with sudden pain and a high lactate; must be excluded (CANT-MISS,6). Acute pancreatitis (core,2). Ruptured/symptomatic abdominal aortic aneurysm (core,2). Acute cholecystitis/biliary disease (core,1). Names a surgical abdomen / peritonitis and the imperative to obtain urgent imaging for free air and a surgical opinion (core,3). Lists three mechanisms of pneumoperitoneum — e.g., perforated peptic ulcer, perforated diverticulum/colon, bowel ischemia/infarction with transmural necrosis, ruptured appendix, iatrogenic/post-endoscopic, ingested foreign body (core,4). PENALTY: anchoring on a cardiac cause for the tachycardia and ignoring the surgical abdomen (-3).",
+      "idealAnswer": "Two leading diagnoses to reconcile: (1) Perforated peptic ulcer (perforated viscus) — abrupt knife-like epigastric pain that generalized, board-like peritonitis, weeks of NSAID-aggravated dyspepsia; and (2) Acute mesenteric ischemia — genuinely competing because he has atrial fibrillation (embolic source), is a vasculopath, and has an elevated lactate, the classic 'pain out of proportion' caveat aside. Must-not-miss to exclude: mesenteric ischemia. Also reasonable: acute pancreatitis; ruptured/symptomatic AAA; acute cholecystitis. Three mechanisms of pneumoperitoneum: perforated peptic ulcer, perforated colon/diverticulum, and transmural bowel infarction (ischemia) — also ruptured appendix or iatrogenic/post-procedural air.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Perforated peptic ulcer / perforated viscus",
-            "points": 8
+            "points": 7
           },
           {
-            "item": "Mesenteric ischemia",
-            "points": 5
+            "item": "Acute mesenteric ischemia (embolic, given atrial fibrillation and elevated lactate)",
+            "points": 6
           }
         ],
         "coreActions": [
           {
             "item": "Acute pancreatitis",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Ruptured/symptomatic abdominal aortic aneurysm",
@@ -110,18 +115,27 @@
           },
           {
             "item": "Acute cholecystitis/biliary disease",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Names a surgical abdomen / peritonitis and the imperative to obtain urgent imaging for free air and a surgical opinion",
-            "points": 5
+            "points": 3
+          },
+          {
+            "item": "Lists three mechanisms/etiologies of pneumoperitoneum (e.g., perforated ulcer, perforated colon/diverticulum, transmural bowel ischemia)",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a cardiac/arrhythmic cause for the tachycardia and ignores the surgical abdomen",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Mesenteric ischemia"
+        "Acute mesenteric ischemia"
       ],
       "acceptableAlternatives": [
         "Acute pancreatitis",
@@ -135,8 +149,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Upright chest X-ray (or upright/lateral decubitus abdominal film) for free air (CANT-MISS,4). CT abdomen/pelvis with contrast (CANT-MISS,5). CBC (2). BMP with lactate (2). Lipase to assess for pancreatitis (1). Type & screen / coags pre-op (bonus,1). PENALTY: ordering an upper GI series with barium in a suspected perforation (barium peritonitis) (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lipase; LFTs; Lactate; CT abdomen/pelvis.",
+      "rubric": "Upright chest X-ray (or upright/lateral decubitus abdominal film) for free air (CANT-MISS,4). CT abdomen/pelvis with IV contrast — CT angiography protocol given the mesenteric-ischemia question (CANT-MISS,5). CBC (1). BMP with lactate (1). Coags/INR and a DOAC (anti-Xa) level given rivaroxaban and the need to operate (CANT-MISS,2). Lipase to assess for pancreatitis (1). EKG given the palpitations/tachycardia (1). Type & screen / crossmatch pre-op (bonus,1). PENALTY: ordering an upper GI series with barium in a suspected perforation (barium peritonitis) (-2); withholding imaging to 'treat the AF' first (-2).",
+      "idealAnswer": "Order: EKG (he has palpitations and an irregular pulse); upright CXR for free air; CBC; BMP with lactate; coagulation studies including INR and a rivaroxaban anti-Xa level (he must be cleared/reversed before surgery); Lipase; LFTs; and a CT abdomen/pelvis with IV contrast using a CT-angiography protocol so it simultaneously looks for free air/wall defect AND mesenteric vascular occlusion. Type & screen / crossmatch pre-operatively.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,17 +159,21 @@
             "points": 4
           },
           {
-            "item": "CT abdomen/pelvis with contrast",
+            "item": "CT abdomen/pelvis with IV contrast (CT-angiography protocol given the mesenteric-ischemia question)",
             "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
             "item": "BMP with lactate",
+            "points": 1
+          },
+          {
+            "item": "Coags/INR and rivaroxaban anti-Xa level (pre-op, anticoagulated patient)",
             "points": 2
           },
           {
@@ -164,20 +182,12 @@
           },
           {
             "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "LFTs",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Type & screen / coags pre-op",
+            "item": "Type & screen / crossmatch pre-op",
             "points": 1
           }
         ],
@@ -185,18 +195,23 @@
           {
             "item": "Barium upper GI series in suspected perforation (risk of barium peritonitis)",
             "points": -2
+          },
+          {
+            "item": "Withholding imaging to 'treat the atrial fibrillation' first",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
         "Upright chest X-ray (or decubitus abdominal film) for free air",
-        "CT abdomen/pelvis with contrast"
+        "CT abdomen/pelvis with IV contrast (CT-angiography protocol)"
       ],
       "optionalTests": [
         "CBC",
         "BMP with lactate",
+        "Coags/INR and rivaroxaban anti-Xa level",
         "Lipase",
-        "Type & screen / coags pre-op"
+        "Type & screen / crossmatch pre-op"
       ],
       "contraindicatedTests": [
         "Barium upper GI series in suspected perforation (risk of barium peritonitis)"
@@ -211,33 +226,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); recognizes no acute ischemic changes — a reactive tachycardia (5); systematic read (3). PENALTY: over-calling ischemia / mislabeling as ACS (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and how they change your differential.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (~135–140) and rate-related lateral ST depression (demand ischemia), NOT a primary STEMI. CREDIT: irregularly irregular rhythm with absent P waves = atrial fibrillation (6); recognizes the rapid ventricular response and rate-related lateral ST depression as demand ischemia from the tachyarrhythmia/hypoperfusion rather than acute coronary thrombosis (5); integrates the finding — a cardiac embolic source that keeps mesenteric ischemia on the differential (4). PENALTY: calling it a primary STEMI and diverting to the cath lab, or missing the AF (-3).",
       "keyFindings": [
-        "sinus tachycardia at ~118 bpm",
-        "no acute ST-segment or T-wave ischemic changes"
+        "irregularly irregular rhythm with no discernible P waves (atrial fibrillation)",
+        "rapid ventricular response at ~135–140 bpm",
+        "rate-related horizontal ST depression in the lateral leads (demand ischemia), not a primary STEMI"
       ],
       "criticalFindings": [
-        "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis)."
+        "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) — a cardiac embolic source that keeps mesenteric ischemia in play, not a primary STEMI."
       ],
       "commonMistakes": [
-        "over-calling subtle ST/T changes as an acute coronary syndrome",
-        "attributing the abdominal pain to a cardiac cause"
+        "mislabeling the rate-related ST depression as an acute coronary thrombosis/STEMI and diverting to the cath lab",
+        "missing the atrial fibrillation and calling it sinus tachycardia",
+        "failing to connect the AF to a possible embolic mesenteric source"
       ],
-      "idealAnswer": "Sinus tachycardia at ~118 bpm; no acute ST-elevation or ischemic ST/T changes — a reactive tachycardia from pain and peritonitis, not ACS.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (~135–140 bpm): irregularly irregular QRS complexes with no discernible P waves, plus horizontal ST depression in the lateral leads (I, aVL, V5–V6). This is rate-related demand ischemia from the tachyarrhythmia and peritonitic hypoperfusion, not a primary STEMI. Importantly, the AF is an embolic source — it is exactly why acute mesenteric ischemia must stay on the differential until the CT clears the mesenteric vessels.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis)."
+          "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) — a cardiac embolic source that keeps mesenteric ischemia in play, not a primary STEMI."
         ],
         "coreActions": [
-          "sinus tachycardia at ~118 bpm",
-          "no acute ST-segment or T-wave ischemic changes"
+          "irregularly irregular rhythm with no discernible P waves (atrial fibrillation)",
+          "rapid ventricular response at ~135–140 bpm",
+          "rate-related lateral ST depression interpreted as demand ischemia, not STEMI"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls ischemia / mislabels as ACS",
+            "label": "calls it a primary STEMI / diverts to the cath lab, or misses the AF",
             "points": -3
           }
         ]
@@ -262,7 +280,7 @@
         "mistaking the subdiaphragmatic free air for bowel gas (Chilaiditi) or calling the film normal",
         "missing the crescent of air on an underpenetrated film"
       ],
-      "idealAnswer": "Free air under the right hemidiaphragm (pneumoperitoneum) on the upright film with clear lungs — diagnostic of a perforated hollow viscus requiring urgent surgical evaluation.",
+      "idealAnswer": "Free air under the right hemidiaphragm (pneumoperitoneum) on the upright film with clear lungs — diagnostic of a perforated hollow viscus requiring urgent surgical evaluation. This effectively settles the perforation-versus-ischemia question in favor of a perforated viscus, though the CT still confirms the source and clears the mesenteric vessels.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -285,9 +303,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Free air under the diaphragm on CXR, free intraperitoneal air with focal duodenal/antral wall discontinuity on CT, leukocytosis, elevated lactate, and only mildly elevated lipase. What is your diagnosis and what did you rule out?",
-      "rubric": "Perforated peptic ulcer (perforated viscus) (6). Cites free air plus focal wall defect with leukocytosis; explicitly excludes primary pancreatitis (lipase not markedly elevated) and mesenteric ischemia (no vascular occlusion/pneumatosis on CT) (4).",
-      "idealAnswer": "Perforated peptic ulcer (perforated viscus) — free air under the diaphragm on CXR with free intraperitoneal air and a focal duodenal/antral wall discontinuity on CT, plus leukocytosis and an elevated lactate. Ruled out: primary pancreatitis (lipase only mildly elevated) and mesenteric ischemia (no vascular occlusion or pneumatosis on CT).",
+      "prompt": "Free air under the diaphragm on CXR; on CT, free intraperitoneal air with a focal duodenal/antral wall discontinuity, patent SMA/SMV with no pneumatosis or portal-venous gas, and a normal-caliber aorta; with leukocytosis, a drop in hemoglobin, an AKI with an anion-gap acidosis, an elevated lactate, atrial fibrillation with RVR on EKG, and a supratherapeutic rivaroxaban level. Commit to a diagnosis, name the test that discriminated it from its closest competitor, and state any residual uncertainty.",
+      "rubric": "Perforated peptic ulcer (perforated viscus) (5). Names the CT (and CXR free air) as the discriminator that separates it from acute mesenteric ischemia — free air + focal wall defect with PATENT mesenteric vessels and NO pneumatosis/portal-venous gas argues for perforation, not infarction (3). Addresses the concurrent problems as separate issues rather than one unifying diagnosis: the elevated lactate/anion gap reflects hypoperfusion (and partly drives the gap), the AKI is multifactorial (hypoperfusion + NSAIDs), the falling hemoglobin suggests chronic NSAID-related GI blood loss, and the AF/supratherapeutic anticoagulation must be reckoned with before the OR (2). PENALTY: declaring mesenteric ischemia despite patent vessels and free air, or ignoring the anticoagulation (-2).",
+      "idealAnswer": "Commit to a perforated peptic ulcer (perforated viscus). The discriminating test is the CT (corroborated by the CXR free air): free intraperitoneal air with a focal duodenal/antral wall discontinuity, while the SMA and SMV are patent with no bowel-wall pneumatosis or portal-venous gas — that is what separates perforation from its closest competitor, acute mesenteric ischemia (which the atrial fibrillation and high lactate had made a real possibility). Treat the other abnormalities as concurrent problems, not as one unifying diagnosis: the elevated lactate and anion-gap acidosis reflect peritonitic hypoperfusion (and account for much of the gap); the AKI is multifactorial (hypoperfusion plus chronic NSAID use); the hemoglobin drop from 13.8 to 10.2 points to chronic NSAID-related occult GI blood loss; and the atrial fibrillation with a supratherapeutic rivaroxaban level is an active issue that must be addressed before any operation. Residual uncertainty: a non-occlusive component of ischemia cannot be fully excluded by imaging, so trending the lactate and the operative findings remain important.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -296,7 +314,7 @@
         "penalties": []
       },
       "mustNotMiss": [
-        "Mesenteric ischemia"
+        "Acute mesenteric ischemia"
       ],
       "acceptableAlternatives": [
         "Acute pancreatitis",
@@ -308,65 +326,74 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH surgical abdomen / GI bleed & PUD: NPO, large-bore IV access, aggressive IV fluid resuscitation (CANT-MISS,6); urgent surgical consult for operative repair (omental/Graham patch) (CANT-MISS,6); broad-spectrum IV antibiotics covering gut flora (e.g., piperacillin-tazobactam) (4); nasogastric decompression and IV PPI (3); analgesia, antiemetics, type & screen, monitor (3); test/treat H. pylori and stop NSAIDs on recovery (3). PENALTY: discharging or observing a peritonitic patient with free air (-4); delaying surgical consult / source control (-2); barium study (-1).",
-      "idealAnswer": "Resuscitate: NPO, two large-bore IVs, aggressive crystalloid resuscitation, monitor. Urgent surgical consultation for operative repair (Graham omental patch) and peritoneal washout. Broad-spectrum IV antibiotics covering enteric flora (e.g., piperacillin-tazobactam). Nasogastric tube decompression and IV proton-pump inhibitor. Analgesia, antiemetics, type & screen, foley to monitor output. On recovery: stop NSAIDs and test/treat H. pylori.",
+      "prompt": "What is your management plan? Address this patient's anticoagulation and atrial fibrillation, and explicitly state your disposition — is it ever safe to discharge or simply observe him, and why or why not?",
+      "rubric": "Per MGH surgical abdomen / GI bleed & PUD: NPO, two large-bore IVs, aggressive crystalloid resuscitation, monitor (CANT-MISS,5); urgent surgical consult for operative repair (Graham omental patch) and source control (CANT-MISS,6); REVERSE/HOLD the anticoagulation pre-op — hold rivaroxaban, give a reversal agent (andexanet alfa or 4-factor PCC) given the supratherapeutic level and emergent surgery (CANT-MISS,4); broad-spectrum IV antibiotics covering enteric flora (e.g., piperacillin-tazobactam) (3); nasogastric decompression and IV PPI (2); rate-control the AF carefully without worsening hypotension, treat reversible drivers (pain, sepsis, hypovolemia) (2); explicit safe-disposition statement — ADMIT to OR/ICU, do NOT discharge or merely observe a peritonitic patient with free air; medication reconciliation and stop the NSAIDs/aspirin; test/treat H. pylori on recovery (3). PENALTY: discharging or observing a peritonitic patient with free air (-4); taking him to the OR without addressing the anticoagulation (-3); delaying surgical source control (-2); barium study (-1).",
+      "idealAnswer": "Resuscitate: NPO, two large-bore IVs, aggressive crystalloid resuscitation, continuous monitoring, foley for output. Urgent surgical consultation for operative repair (Graham omental patch) with peritoneal washout — this is the definitive source control. Address the anticoagulation BEFORE the OR: hold rivaroxaban and, given a supratherapeutic level (impaired clearance from AKI) and emergent surgery, reverse it with andexanet alfa or 4-factor PCC and involve hematology/anesthesia. Broad-spectrum IV antibiotics covering enteric flora (e.g., piperacillin-tazobactam). Nasogastric tube decompression and IV proton-pump inhibitor. Manage the atrial fibrillation by treating its reversible drivers (pain, sepsis, hypovolemia) and rate-controlling cautiously without worsening the hypotension. Disposition: ADMIT for emergent surgery and post-op ICU/monitored care — it is NOT safe to discharge or merely observe a peritonitic patient with pneumoperitoneum; doing so risks fatal sepsis. On recovery: medication reconciliation to stop the NSAIDs and reconsider the aspirin, and test/treat H. pylori.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "NPO, IV access, aggressive fluid resuscitation",
+            "item": "NPO, large-bore IV access, aggressive fluid resuscitation, monitoring",
+            "points": 5
+          },
+          {
+            "item": "Urgent surgical consult for operative repair and source control",
             "points": 6
           },
           {
-            "item": "Urgent surgical consult for operative repair",
-            "points": 6
+            "item": "Reverse/hold anticoagulation pre-op (hold rivaroxaban; andexanet alfa or 4-factor PCC for the supratherapeutic level before emergent surgery)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Broad-spectrum IV antibiotics covering gut flora",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Nasogastric decompression and IV PPI",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Analgesia, antiemetics, type & screen, monitoring",
-            "points": 3
-          }
-        ],
-        "bonusActions": [
+            "item": "Rate-control the AF cautiously and treat its reversible drivers (pain, sepsis, hypovolemia)",
+            "points": 2
+          },
           {
-            "item": "Stop NSAIDs and test/treat H. pylori on recovery",
+            "item": "Safe disposition: admit to OR/ICU, do NOT discharge/observe; medication reconciliation, stop NSAIDs/aspirin, test/treat H. pylori on recovery",
             "points": 3
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Discharging/observing a peritonitic patient with free air",
             "points": -4
+          },
+          {
+            "item": "Proceeding to the OR without addressing the anticoagulation",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "NPO, IV access, aggressive fluid resuscitation",
-        "Urgent surgical consult for operative repair"
+        "NPO, large-bore IV access, aggressive fluid resuscitation, monitoring",
+        "Urgent surgical consult for operative repair and source control",
+        "Reverse/hold anticoagulation pre-op (hold rivaroxaban; andexanet alfa or 4-factor PCC)"
       ],
       "optionalActions": [
         "Broad-spectrum IV antibiotics covering gut flora",
         "Nasogastric decompression and IV PPI",
-        "Analgesia, antiemetics, type & screen, monitoring",
-        "Stop NSAIDs and test/treat H. pylori on recovery"
+        "Rate-control the AF cautiously and treat its reversible drivers",
+        "Safe disposition: admit to OR/ICU, medication reconciliation, stop NSAIDs/aspirin, test/treat H. pylori on recovery"
       ],
       "unsafeActions": [
-        "Discharging/observing a peritonitic patient with free air"
+        "Discharging/observing a peritonitic patient with free air",
+        "Proceeding to the OR without addressing the anticoagulation"
       ],
       "consults": [
         "Surgery"
       ],
-      "disposition": "Admit; OR",
+      "disposition": "Admit; OR then ICU",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Abdominal Pain (Perforated Viscus / Peptic Ulcer Disease)",
@@ -382,14 +409,15 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "nsaid_use"
+      "nsaid_use",
+      "anticoagulation"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues; speaks in short sentences because deep breaths hurt",
-    "affect": "58-year-old man, diaphoretic and lying rigidly still with knees drawn up, in obvious distress. Anxious but cooperative.",
+    "affect": "68-year-old man, diaphoretic and lying rigidly still with knees drawn up, in obvious distress. Anxious but cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, NSAID/steroid use, blood thinners) unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam or diagnostic findings, including the irregular heartbeat",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -404,7 +432,7 @@
         "did it come on suddenly",
         "sudden or gradual"
       ],
-      "response": "It came on completely out of the blue about four hours ago — I can tell you the exact minute it hit me.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -419,7 +447,7 @@
         "quality",
         "sharp or dull"
       ],
-      "response": "It started as a stabbing pain right in the pit of my stomach, and now it's a constant knife-like pain across my whole belly.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -434,10 +462,25 @@
         "alleviating",
         "does moving hurt"
       ],
-      "response": "Any movement, coughing, or a deep breath makes it much worse — lying perfectly still is the only thing that helps even a little.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "pain_before_onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "any pain before this",
+        "pain out of proportion",
+        "gradual pain before it became severe",
+        "cramping before the sudden pain",
+        "did anything precede this"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
     },
     {
       "id": "prior_dyspepsia",
@@ -450,7 +493,7 @@
         "prior ulcer symptoms",
         "any prior stomach symptoms"
       ],
-      "response": "Now that you mention it, for the last few weeks I've had a gnawing, burning feeling in my upper stomach before meals — antacids took the edge off.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -462,13 +505,49 @@
         "painkillers",
         "ibuprofen",
         "advil",
+        "naproxen",
         "anti-inflammatory",
         "nsaid",
-        "what do you take for your back"
+        "aspirin",
+        "steroids",
+        "what do you take for your back",
+        "what do you take for gout"
       ],
-      "response": "I take ibuprofen most days for my back pain — I picked up a big bottle from the pharmacy recently and have been using it more than usual.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "anticoagulation",
+      "category": "meds",
+      "triggerConcepts": [
+        "blood thinner",
+        "anticoagulant",
+        "rivaroxaban",
+        "xarelto",
+        "doac",
+        "warfarin",
+        "do you take anything for your heart rhythm"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "palpitations",
+      "category": "hpi",
+      "triggerConcepts": [
+        "palpitations",
+        "heart racing",
+        "fluttering",
+        "irregular heartbeat",
+        "any heart symptoms"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -481,7 +560,7 @@
         "vomiting blood",
         "tarry stools"
       ],
-      "response": "No, I haven't noticed any black or bloody stools and I haven't thrown up any blood.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -496,7 +575,7 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "I usually have three or four beers most evenings.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -511,7 +590,7 @@
         "pain with exertion",
         "cardiac symptoms"
       ],
-      "response": "No chest pain and nothing brought it on with effort — it's all in my belly.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -526,7 +605,7 @@
         "any surgeries",
         "prior operations"
       ],
-      "response": "I have chronic low back pain and slightly high blood pressure. I've never had any abdominal surgery.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -540,7 +619,7 @@
         "tobacco",
         "cigarettes"
       ],
-      "response": "Yes, about a pack a day for thirty years.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -580,7 +659,7 @@
     },
     {
       "id": "auscultate_bowel_sounds_finding_4",
-      "finding": "Bowel sounds absent/markedly reduced; cardiac tachycardic, regular, no murmur; lungs clear with shallow respirations.",
+      "finding": "Bowel sounds absent/markedly reduced; lungs clear with shallow respirations.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -589,7 +668,28 @@
       "normalIfNotPresent": "Normal bowel sounds."
     },
     {
-      "id": "inspect_abdomen_finding_5",
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Cardiac: tachycardic and IRREGULARLY IRREGULAR rhythm, no murmur — consistent with atrial fibrillation with a rapid ventricular response.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "palpate_pmi"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate and rhythm."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_6",
+      "finding": "Peripheral pulses present and symmetric with no pulse deficit; the abdomen has no pulsatile mass and no bruit (argues against a ruptured aortic aneurysm and against an acute aortic/limb embolic event).",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Pulses intact and symmetric."
+    },
+    {
+      "id": "inspect_abdomen_finding_7",
       "finding": "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
       "revealedBy": [
         "inspect_abdomen"
@@ -599,7 +699,7 @@
       "normalIfNotPresent": "Abdomen not distended; no scars."
     },
     {
-      "id": "assess_general_appearance_finding_6",
+      "id": "assess_general_appearance_finding_8",
       "finding": "General: diaphoretic, lying rigidly still, in obvious distress; tachycardic and tachypneic with shallow breathing.",
       "revealedBy": [
         "assess_general_appearance"
@@ -619,13 +719,15 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Perforated peptic ulcer",
-    "diagnosticFramework": "58M presents with the abrupt onset 4 hours ago of severe, constant epigastric pain that rapidly spread across the whole abdomen, now lying rigidly still. The diagnosis is Perforated peptic ulcer, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68M with atrial fibrillation on rivaroxaban, hypertension, gout, and chronic back pain presents with the abrupt onset 4 hours ago of severe, constant epigastric pain that rapidly spread across the whole abdomen, now lying rigidly still with board-like peritonitis. The diagnosis is Perforated peptic ulcer, but the atrial fibrillation and elevated lactate make acute mesenteric ischemia a genuine competitor that must be excluded. It is reached by eliciting the focused history (NSAID/aspirin/steroid use, the blood thinner, prior dyspepsia), performing the targeted exam, interpreting the patient's own EKG (AF with RVR and demand ST depression), and obtaining a CT that shows free air with a focal wall defect but patent mesenteric vessels — while managing the concurrent AKI, anion-gap acidosis, anemia, and supratherapeutic anticoagulation as separate problems.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
       "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
       "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
-      "Bowel sounds absent/markedly reduced; cardiac tachycardic, regular, no murmur; lungs clear with shallow respirations.",
+      "Bowel sounds absent/markedly reduced; lungs clear with shallow respirations.",
+      "Cardiac: tachycardic and IRREGULARLY IRREGULAR rhythm, no murmur — consistent with atrial fibrillation with a rapid ventricular response.",
+      "Peripheral pulses present and symmetric with no pulse deficit; the abdomen has no pulsatile mass and no bruit.",
       "Abdomen: rigid, board-like abdomen with diffuse involuntary guarding and marked rebound tenderness in all quadrants; maximal tenderness in the epigastrium. Bowel sounds absent/markedly reduced. No distension yet; no surgical scars.",
       "General: diaphoretic, lying rigidly still, in obvious distress; tachycardic and tachypneic with shallow breathing."
     ],
@@ -635,28 +737,34 @@
       "Lipase",
       "LFTs",
       "Lactate",
+      "Coags",
       "CT_abdomen"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Perforated peptic ulcer while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Perforated peptic ulcer and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the irregular, very rapid pulse.",
+      "Elicit the focused history, including the NSAID/aspirin/steroid use, the anticoagulant, and prior dyspepsia only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the board-like peritonitis and the irregularly irregular rhythm.",
+      "Build a differential with TWO leading possibilities — perforated peptic ulcer and acute mesenteric ischemia — and name mechanisms of pneumoperitoneum.",
+      "Order an order-sensitive workup (upright CXR, CT-angiography-protocol CT, coags/anti-Xa) and interpret the integrated EKG (AF with RVR/demand ischemia) and CXR/CT.",
+      "Commit to Perforated peptic ulcer, citing the CT as the discriminator from mesenteric ischemia, and manage with resuscitation, anticoagulation reversal, urgent source control, and a safe disposition."
     ],
     "commonPitfalls": [
+      "Anchoring on a cardiac cause for the tachycardia and missing the surgical abdomen",
+      "Mislabeling the rate-related ST depression as a primary STEMI",
+      "Taking the patient to the OR without reversing the supratherapeutic anticoagulation",
       "Discharging/observing a peritonitic patient with free air"
     ],
     "managementPearls": [
       "NPO, IV access, aggressive fluid resuscitation",
-      "Urgent surgical consult for operative repair"
+      "Urgent surgical consult for operative repair and source control",
+      "Reverse/hold anticoagulation before emergent surgery"
     ],
     "criticalHistoryItems": [
       "onset",
       "aggravating_alleviating",
       "prior_dyspepsia",
-      "nsaid_use"
+      "nsaid_use",
+      "anticoagulation"
     ],
     "criticalExamItems": [
       "assess_guarding",
@@ -665,28 +773,30 @@
     ],
     "criticalWorkupItems": [
       "Upright chest X-ray (or decubitus abdominal film) for free air",
-      "CT abdomen/pelvis with contrast"
+      "CT abdomen/pelvis with IV contrast (CT-angiography protocol)"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia), not a primary STEMI.",
       "Free air under the diaphragm (pneumoperitoneum) indicating a perforated viscus."
     ],
     "criticalManagementItems": [
       "NPO, IV access, aggressive fluid resuscitation",
-      "Urgent surgical consult for operative repair"
+      "Urgent surgical consult for operative repair and source control",
+      "Reverse/hold anticoagulation pre-op"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis).",
+      "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) — a cardiac embolic source that keeps mesenteric ischemia in play, not a primary STEMI.",
       "Free air under the diaphragm (pneumoperitoneum) — perforated viscus."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes (reactive to pain/peritonitis).",
+      "Atrial fibrillation with rapid ventricular response and rate-related lateral ST depression (demand ischemia) — a cardiac embolic source that keeps mesenteric ischemia in play, not a primary STEMI.",
       "Free air under the diaphragm (pneumoperitoneum) — perforated viscus."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An integrated tracing is the patient's own study — read it, then judge how it shifts the differential (AF as an embolic source for mesenteric ischemia).",
+      "Rate-related ST depression in a very fast tachyarrhythmia is demand ischemia; do not reflexively call it a STEMI.",
+      "On an abdominal-pain chest film, the load-bearing finding is free air under the diaphragm.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -716,8 +826,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated pathology-forward interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

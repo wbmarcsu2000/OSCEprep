@@ -15,7 +15,7 @@ const T0 = 1_700_000_000_000;
 
 describe("full case library", () => {
   it("manifest lists the full case library with required catalog fields", () => {
-    expect(manifest.cases.length).toBe(77);
+    expect(manifest.cases.length).toBe(86);
     for (const c of manifest.cases) {
       expect(c.id).toBeTruthy();
       expect(c.file).toBeTruthy();

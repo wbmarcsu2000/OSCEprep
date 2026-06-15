@@ -1,73 +1,82 @@
 {
   "id": "ams-06",
   "category": "Altered Mental Status",
-  "difficulty": "moderate",
-  "title": "Agitation and tremor two days after admission",
+  "difficulty": "hard",
+  "title": "Agitation, tremor, and a prolonged QT two days after a fall",
   "diagnosis": "Alcohol withdrawal / delirium tremens",
   "chart": {
-    "ageSex": "55M",
+    "ageSex": "62M",
     "cc": "Agitation and confusion",
-    "oneLiner": "55M, admitted 2 days ago after a fall, becomes acutely agitated, tremulous, diaphoretic, and confused with visual hallucinations.",
+    "oneLiner": "62M with HTN, CKD, atrial fibrillation on warfarin, and depression — admitted 2 days ago after a fall — becomes acutely agitated, tremulous, diaphoretic, and confused with visual hallucinations; he is on a long list of QT-prolonging and anticholinergic home medications.",
     "vitals": {
-      "BP": "168/98",
-      "HR": "122",
-      "RR": "22",
-      "Temp": "38.1°C",
-      "SpO2": "97% RA"
+      "BP": "172/98",
+      "HR": "118",
+      "RR": "24",
+      "Temp": "38.2°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "Get them off me — there are bugs everywhere! Why am I here?",
-  "patientFile": "PERSONA: 55-year-old man, agitated, tremulous, diaphoretic, disoriented, picking at the sheets, frightened by visual hallucinations. Poor historian.\n\nCOLLATERAL (provide ONLY if the student asks family/nursing/chart/medication list): Admitted 2 days ago after a mechanical fall. Family reports he drinks heavily every day (a pint of liquor daily) and his last drink was ~2 days ago, around admission. He had mild tremor and anxiety yesterday that has now escalated. No prior withdrawal seizures known. No new infection identified yet but he is febrile. MEDS: none regular; received acetaminophen for pain.\n\nHPI (from patient — limited): agitated, not oriented, reports seeing bugs/insects.\nPMH: hypertension, prior alcohol use. SOCIAL: heavy daily alcohol use.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: agitated, diaphoretic, coarse tremor, hypervigilant.\n- Vitals: BP 168/98, HR 122, RR 22, 38.1°C, SpO2 97% RA (autonomic hyperactivity).\n- Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.\n- No obvious new head trauma since admission; pupils equal/reactive.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is agitated/confused: give disjointed, hallucination-tinged answers. Provide COLLATERAL (heavy daily drinking, last drink ~2 days ago, admission timeline) only when the student explicitly asks family/nursing/chart/what happened.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "Get them off me — there are bugs crawling all over the walls! Why have you got me tied down here?",
+  "patientFile": "PERSONA: 62-year-old man, agitated, tremulous, profusely diaphoretic (soaking the sheets), disoriented, picking at the bedclothes, frightened by visual hallucinations of insects. Poor historian who answers in disjointed, hallucination-tinged fragments.\n\nCOLLATERAL (provide ONLY if the student asks family/nursing/chart/medication reconciliation/what happened): Admitted 2 days ago after a mechanical fall at home. His wife reports he drinks heavily and daily — roughly a pint of vodka every day for years — and his LAST DRINK was the evening before admission, so about 2 days (~48 h) ago. Yesterday he had a fine tremor and was anxious and sweaty; overnight this escalated into agitation, drenching sweats, and seeing bugs. He had ONE withdrawal seizure during a previous hospital admission a few years ago. His home medications were continued on admission and his evening doses were given. No new fever source has been found so far. The fall was unwitnessed; he was found on the floor and there is a bruise over the right temple.\n\nHPI (from patient — limited): agitated, not oriented to place or time, keeps reporting bugs/insects on the walls and on his skin, swatting at them.\n\nPMH (reveal on direct questioning / chart review): hypertension; chronic kidney disease (baseline creatinine ~1.6); atrial fibrillation; depression; prior alcohol-withdrawal seizure. SOCIAL: heavy daily alcohol use (a pint of vodka/day), ~40 pack-year smoker, lives with his wife. FAMILY: noncontributory. ROS (collateral): drenching sweats, tremor, poor oral intake and almost no food for several days before admission.\n\nMEDS (home list, all continued in hospital — reveal on medication reconciliation): warfarin (for atrial fibrillation), metoprolol, hydrochlorothiazide, amitriptyline (for depression/sleep), quetiapine at bedtime (for sleep/agitation), gabapentin, and acetaminophen as needed for pain. NO regular benzodiazepine. NO thiamine has been given.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: agitated, drenched in sweat, coarse resting tremor, hypervigilant, swatting at unseen objects.\n- Vitals: BP 172/98, HR 118, RR 24, 38.2°C, SpO2 96% RA (autonomic hyperactivity; tachycardia present DESPITE home beta-blocker).\n- Skin: warm and SOAKED with sweat (NOT dry/flushed); right temporal bruise from the fall; no track marks; no rash.\n- HEENT: pupils mid-size and reactive (NOT widely dilated); mucous membranes dry; no tongue laceration.\n- Neuro: disoriented, coarse tremor, visual hallucinations; no focal motor deficit; reflexes symmetric; no neck stiffness; gait not tested (too agitated/unsafe).\n- No nystagmus or gaze palsy elicited on brief exam; no obvious ataxia tested.\n- Cardiac: irregularly irregular, tachycardic; no murmur. Lungs: clear.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The patient is agitated/confused: give disjointed, hallucination-tinged answers, mention the bugs. Provide COLLATERAL (heavy daily drinking, last drink ~2 days ago, prior withdrawal seizure, the fall, the full home medication list, no thiamine given) ONLY when the student explicitly asks family/nursing/the chart/medication reconciliation/what happened.\n- The skin is DRENCHED in sweat and the pupils are NOT widely dilated — reveal these (which argue AGAINST a dry anticholinergic toxidrome) only when the student examines the skin/pupils or asks.\n- Reveal exam findings only when the relevant exam is performed or asked about; otherwise give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 104 — normal.",
-      "BMP": "Na 137, K 3.2 (low), Mg 1.3 (low), Phos 1.8 (low), Cr 0.9 — typical electrolyte derangements.",
-      "CBC": "WBC 11.0, Hgb 13.0, Plt 110 (alcohol-related).",
-      "LFTs": "AST > ALT pattern, mildly elevated.",
-      "Infection_workup": "Cultures/UA/CXR to exclude infection driving the picture — no clear source found.",
-      "CT_head": "If focal deficit or unclear: CT head — no acute intracranial process."
+      "Glucose": "Fingerstick glucose 88 — normal (excludes hypoglycemia as the cause of agitation).",
+      "BMP": "Na 128 (low), K 3.0 (low), Cl 92, HCO3 16 (low), BUN 38, Cr 2.1 (up from baseline 1.6 — AKI on CKD), glucose 88. Anion gap = Na − (Cl + HCO3) = 128 − (92 + 16) = 20 (elevated, normal ≤12) → high-anion-gap metabolic acidosis. The hyponatremia fits the thiazide; the AKI is prerenal from poor intake and diaphoresis.",
+      "Mg_Phos": "Mg 1.2 (low), Phos 1.6 (low) — classic alcohol-related depletion; both also prolong the QT.",
+      "VBG_lactate": "Venous pH 7.30, lactate 4.2 (elevated) with serum beta-hydroxybutyrate positive — alcoholic ketoacidosis plus lactic acidosis account for the elevated anion gap of 20; osmolar gap not elevated (no toxic alcohol).",
+      "CBC": "WBC 9.8 (no leukocytosis), Hgb 12.4, Plt 96 (low) — thrombocytopenia from alcohol/marrow effect, relevant given the head injury.",
+      "LFTs": "AST 142, ALT 61 (AST:ALT > 2:1 pattern), GGT elevated, albumin 3.2 — alcoholic liver pattern.",
+      "Coags": "INR 4.6 (supratherapeutic on warfarin), so the CT head was urgent given the fall and the bruise — there is a real bleeding risk.",
+      "Infection_workup": "Blood/urine cultures, UA, CXR sent to exclude an infectious precipitant — UA bland, no clear source; cultures pending.",
+      "CT_head": "Non-contrast CT head (urgent given supratherapeutic INR + fall + bruise + confusion): NO acute intracranial hemorrhage and no acute infarct; age-appropriate atrophy only. This excludes a traumatic subdural/intracranial bleed as the driver."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Regular narrow-complex tachycardia ~180 with no clearly visible P waves (retrograde P possible).",
-      "verify": "Source a study matching: Regular narrow-complex tachycardia ~180 with no clearly visible P waves (retrograde P possible). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 22,
+      "findings": "Tachycardia (~115) with a markedly prolonged QT (QTc ~520 ms); broad-based T waves. The prolongation is driven by his anticholinergic/QT-prolonging home medications (amitriptyline, quetiapine) compounded by hypokalemia and hypomagnesemia — a real torsades risk.",
+      "verify": "Source a study matching: sinus/atrial tachycardia with markedly prolonged QTc (~520 ms) from drug effect plus hypokalemia/hypomagnesemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing AVNRT / SVT narrow complex tachycardia",
+      "imageDescription": "12-lead showing tachycardia with a markedly long QT interval (drug-induced / electrolyte-related)",
       "searchTerms": [
-        "SVT AVNRT 12 lead ECG",
-        "narrow complex tachycardia 180 ECG"
+        "long QT interval ECG drug induced",
+        "prolonged QTc tricyclic antipsychotic ECG",
+        "hypokalemia hypomagnesemia long QT 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 49-year-old man with heavy alcohol use presents agitated and tremulous with an abrupt regular fast palpitation."
+      "clinicalVignette": "A 62-year-old man with heavy alcohol use, on amitriptyline and quetiapine, with low potassium and magnesium, presents agitated and tremulous; his rhythm strip shows a strikingly long QT."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+      "findings": "Clear lung fields; no focal consolidation; obtained to exclude aspiration/pneumonia as an infectious precipitant of the delirium.",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "Clear chest radiograph (no definite consolidation), with only possible early aspiration.",
+      "imageDescription": "Clear chest radiograph (no definite consolidation), screening for an infectious precipitant.",
       "searchTerms": [
         "normal PA chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 49-year-old man with alcohol use presents agitated and confused, and a film is obtained to exclude aspiration or infection."
+      "clinicalVignette": "A 62-year-old man with alcohol use presents agitated and febrile, and a film is obtained to exclude aspiration or pneumonia."
     }
   },
   "revealKeys": [
     "Glucose",
     "BMP",
+    "Mg_Phos",
+    "VBG_lactate",
     "CBC",
     "LFTs",
+    "Coags",
     "Infection_workup",
     "CT_head",
     "ekg",
@@ -75,61 +84,72 @@
   ],
   "essential": [
     "Glucose",
-    "BMP"
+    "BMP",
+    "CT_head"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential for this acute agitation/confusion (note your leading diagnosis).",
-      "rubric": "Alcohol withdrawal / delirium tremens (leading,7). Infection/sepsis (CANT-MISS,4). Hypoglycemia (CANT-MISS,3). Intracranial process — subdural after the fall (CANT-MISS,4). Wernicke encephalopathy (core,3). Other drug withdrawal/intoxication or electrolyte derangement (core,2). Named leading dx w/ justification — heavy drinking, last drink ~2 days ago, autonomic hyperactivity, hallucinations (core,2).",
-      "idealAnswer": "Leading diagnosis: Alcohol withdrawal / delirium tremens. Must-not-miss diagnoses to exclude: Infection/sepsis; Hypoglycemia; Intracranial process — subdural after the fall. Also reasonable: Wernicke encephalopathy; Other drug withdrawal/intoxication or electrolyte derangement.",
+      "prompt": "Based on your assessment of this agitated, hallucinating, post-fall inpatient, list your differential (note your leading diagnosis). Name at least THREE distinct mechanisms/etiologies of an agitated, hyperadrenergic delirium that you must distinguish here.",
+      "rubric": "Alcohol withdrawal / delirium tremens (leading,6). Anticholinergic / drug toxidrome from his home meds — amitriptyline + quetiapine (CANT-MISS,4). Intracranial process — traumatic subdural/ICH after the fall, especially on warfarin with a supratherapeutic INR (CANT-MISS,4). Infection / sepsis precipitating delirium (CANT-MISS,3). Hypoglycemia (CANT-MISS,2). Wernicke encephalopathy / Other: serotonin or sedative withdrawal, electrolyte/metabolic encephalopathy (core,2). Names THREE distinct mechanisms of hyperadrenergic agitated delirium — e.g. neurotransmitter rebound in withdrawal, anticholinergic excess, structural/traumatic brain injury, systemic infection, metabolic derangement (core,2). Named leading dx w/ justification — heavy daily drinking, last drink ~48 h ago, drenching diaphoresis, coarse tremor, autonomic hyperactivity, visual hallucinations, prior withdrawal seizure (core,2). PENALTY: anchoring on withdrawal without considering the drug toxidrome or the post-fall bleed on warfarin (-3).",
+      "idealAnswer": "Leading diagnosis: Alcohol withdrawal / delirium tremens. The genuinely competing diagnosis is an anticholinergic/drug toxidrome from his continued home amitriptyline and quetiapine — it also causes agitation, hyperthermia, tachycardia, and hallucinations, and it is what is prolonging his QT. Must-not-miss alternatives: a traumatic intracranial bleed (subdural/ICH) after the unwitnessed fall — especially dangerous because he is on warfarin with a supratherapeutic INR; infection/sepsis precipitating delirium; and hypoglycemia. Also consider Wernicke encephalopathy, sedative/serotonergic effects, and electrolyte/metabolic encephalopathy. Three distinct mechanisms to distinguish: (1) neurotransmitter rebound/autonomic hyperactivity of alcohol withdrawal, (2) anticholinergic excess from medications, and (3) structural/traumatic brain injury — with systemic infection and metabolic derangement as further mechanisms. The features favoring withdrawal over the anticholinergic toxidrome are the DRENCHING diaphoresis (anticholinergic delirium is dry) and the mid-size reactive pupils (not widely dilated), plus the clear timeline from the last drink and the prior withdrawal seizure.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Alcohol withdrawal / delirium tremens",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Infection/sepsis",
+            "item": "Anticholinergic / drug toxidrome from amitriptyline + quetiapine",
             "points": 4
           },
           {
-            "item": "Hypoglycemia",
+            "item": "Intracranial process — traumatic subdural/ICH after the fall on warfarin",
+            "points": 4
+          },
+          {
+            "item": "Infection / sepsis precipitating delirium",
             "points": 3
           },
           {
-            "item": "Intracranial process — subdural after the fall",
-            "points": 4
+            "item": "Hypoglycemia",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Wernicke encephalopathy",
-            "points": 3
-          },
-          {
-            "item": "Other drug withdrawal/intoxication or electrolyte derangement",
+            "item": "Wernicke encephalopathy / sedative-serotonergic or metabolic encephalopathy",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ justification — heavy drinking, last drink ~2 days ago, autonomic hyperactivity, hallucinations",
+            "item": "Names three distinct mechanisms of hyperadrenergic agitated delirium",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — last drink ~48 h ago, diaphoresis, tremor, autonomic hyperactivity, hallucinations, prior withdrawal seizure",
             "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on withdrawal without considering the drug toxidrome or the post-fall bleed on warfarin",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Infection/sepsis",
-        "Hypoglycemia",
-        "Intracranial process — subdural after the fall"
+        "Anticholinergic / drug toxidrome from amitriptyline + quetiapine",
+        "Intracranial process — traumatic subdural/ICH after the fall on warfarin",
+        "Infection / sepsis precipitating delirium",
+        "Hypoglycemia"
       ],
       "acceptableAlternatives": [
         "Wernicke encephalopathy",
-        "Other drug withdrawal/intoxication or electrolyte derangement"
+        "Sedative/serotonergic effect or electrolyte/metabolic encephalopathy"
       ]
     },
     {
@@ -138,8 +158,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Fingerstick glucose (CANT-MISS,3). BMP incl. magnesium, potassium, phosphate (CANT-MISS,3). CBC (2). LFTs (1). Infection screen — cultures/UA/CXR (2). CT head given the recent fall + confusion (CANT-MISS,3). Formal withdrawal scoring (CIWA-Ar) (1). PENALTY: anchoring on withdrawal without excluding infection or intracranial bleed (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; CBC; LFTs; Infection workup; CT head.",
+      "rubric": "Fingerstick glucose (CANT-MISS,3). BMP with magnesium, potassium, phosphate — and note the anion gap (CANT-MISS,3). Non-contrast CT head given the fall + confusion + warfarin (CANT-MISS,3). Coags/INR given warfarin and the head injury (2). VBG + lactate + ketones/beta-hydroxybutyrate to work up the anion-gap acidosis (1). EKG to assess the QT given his QT-prolonging meds and low K/Mg (1). CBC and LFTs (1). Infection screen — cultures/UA/CXR (1). Medication reconciliation + CIWA-Ar scoring (bonus). PENALTY: anchoring on withdrawal without excluding infection, intracranial bleed, or the drug effect (-2); giving glucose before thiamine in the orders (-1).",
+      "idealAnswer": "Order: fingerstick glucose; BMP (note the anion gap) with magnesium, potassium, phosphate; coags/INR (warfarin + head injury); non-contrast CT head (fall + confusion + supratherapeutic INR); VBG with lactate and serum beta-hydroxybutyrate to characterize the anion-gap acidosis; EKG (assess the QT given amitriptyline/quetiapine and low K/Mg); CBC; LFTs; infection workup (cultures/UA/CXR); CXR. Reconcile the home medication list and start CIWA-Ar scoring.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -148,59 +168,64 @@
             "points": 3
           },
           {
-            "item": "magnesium, potassium, phosphate",
+            "item": "BMP with magnesium, potassium, phosphate and the anion gap",
             "points": 3
           },
           {
-            "item": "CT head given the recent fall + confusion",
+            "item": "Non-contrast CT head given the fall + confusion + warfarin",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "Coags / INR given warfarin and the head injury",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "VBG + lactate + ketones to work up the anion-gap acidosis",
+            "points": 1
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "EKG to assess the QT given QT-prolonging meds and low K/Mg",
+            "points": 1
           },
           {
-            "item": "CBC",
-            "points": 2
+            "item": "CBC and LFTs",
+            "points": 1
           },
           {
-            "item": "LFTs",
-            "points": 2
-          },
-          {
-            "item": "Infection workup",
-            "points": 2
+            "item": "Infection workup — cultures/UA/CXR",
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Medication reconciliation and CIWA-Ar scoring",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "anchoring on withdrawal without excluding infection or intracranial bleed",
+            "item": "Anchoring on withdrawal without excluding infection, intracranial bleed, or the drug effect",
             "points": -2
           }
         ]
       },
       "requiredTests": [
         "Fingerstick glucose",
-        "magnesium, potassium, phosphate",
-        "CT head given the recent fall + confusion"
+        "BMP with magnesium, potassium, phosphate and the anion gap",
+        "Non-contrast CT head given the fall + confusion + warfarin"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Coags / INR given warfarin and the head injury",
+        "VBG + lactate + ketones to work up the anion-gap acidosis",
+        "EKG to assess the QT given QT-prolonging meds and low K/Mg"
+      ],
       "contraindicatedTests": [
-        "anchoring on withdrawal without excluding infection or intracranial bleed"
+        "Anchoring on withdrawal without excluding infection, intracranial bleed, or the drug effect"
       ],
       "orderSensitiveActions": [
-        "anchoring on withdrawal without excluding infection or intracranial bleed"
+        "Anchoring on withdrawal without excluding infection, intracranial bleed, or the drug effect"
       ]
     },
     {
@@ -209,33 +234,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = supraventricular tachycardia. CREDIT: recognizes SVT — regular narrow-complex tachycardia at ~180 (8); notes the absent sinus P waves (4); systematic read (3). PENALTY: mistaking SVT for sinus tachycardia / missing the rhythm (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and state why they matter for how you manage him.",
+      "rubric": "Findings = tachycardia with a markedly prolonged QT (QTc ~520 ms). CREDIT: identifies the prolonged QT/QTc (7); measures or estimates the QTc and recognizes the torsades de pointes risk (4); attributes it to the QT-prolonging anticholinergic meds (amitriptyline/quetiapine) compounded by hypokalemia + hypomagnesemia (4). PENALTY: calling the QT normal / missing it (-3).",
       "keyFindings": [
-        "regular narrow-complex tachycardia",
-        "no clearly identifiable sinus P waves"
+        "markedly prolonged QT interval (QTc ~520 ms)",
+        "tachycardia with broad-based T waves"
       ],
       "criticalFindings": [
-        "Supraventricular tachycardia (regular, narrow, rate ~180)."
+        "Markedly prolonged QT (QTc ~520 ms) with tachycardia — drug- and electrolyte-related, carrying a torsades de pointes risk."
       ],
       "commonMistakes": [
-        "mistaking SVT for sinus tachycardia",
-        "not noting the absence of preceding P waves"
+        "calling the QT normal or reading only the rate",
+        "not connecting the long QT to the amitriptyline/quetiapine and the low K/Mg"
       ],
-      "idealAnswer": "Paroxysmal SVT: regular narrow-complex tachycardia at ~180 without visible sinus P waves.",
+      "idealAnswer": "Tachycardia with a markedly prolonged QT — QTc roughly 520 ms with broad-based T waves. This is a high-risk tracing: the prolongation is driven by his QT-prolonging anticholinergic home medications (amitriptyline and quetiapine) compounded by hypokalemia (K 3.0) and hypomagnesemia (Mg 1.2), and it puts him at risk for torsades de pointes. This directly changes management: aggressively replete magnesium and potassium, hold/discontinue the offending amitriptyline and quetiapine, and avoid additional QT-prolonging agents — and it is another reason to favor benzodiazepines over antipsychotics for his agitation.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Supraventricular tachycardia (regular, narrow, rate ~180)."
+          "Markedly prolonged QT (QTc ~520 ms) with torsades risk — drug- and electrolyte-related."
         ],
         "coreActions": [
-          "regular narrow-complex tachycardia",
-          "no clearly identifiable sinus P waves"
+          "markedly prolonged QT interval (QTc ~520 ms)",
+          "attributes the long QT to amitriptyline/quetiapine plus hypokalemia and hypomagnesemia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the QT normal / misses the prolonged QT",
             "points": -3
           }
         ]
@@ -248,29 +273,29 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear or possible aspiration. CREDIT: identifies a clear/near-clear film (6); notes it screens for an infectious precipitant/aspiration (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = clear film, no focal consolidation. CREDIT: identifies a clear/near-clear film (6); notes it screens for an infectious precipitant/aspiration of the delirium (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
-        "identifies a clear/near-clear film",
-        "notes it screens for an infectious precipitant/aspiration"
+        "clear lung fields, no focal consolidation",
+        "screens for an infectious precipitant/aspiration"
       ],
       "criticalFindings": [
-        "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+        "Clear chest film with no focal consolidation; obtained to exclude an infectious precipitant/aspiration."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing pathology on a clear film"
       ],
-      "idealAnswer": "Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+      "idealAnswer": "Clear lung fields with no focal consolidation or effusion; obtained to exclude pneumonia or aspiration as an infectious precipitant of the delirium.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Clear or possible aspiration; obtained to exclude an infectious precipitant.",
+            "item": "Recognizes: clear chest film, no focal consolidation; screens for an infectious precipitant/aspiration.",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "notes it screens for an infectious precipitant/aspiration",
+            "item": "Notes it screens for an infectious precipitant/aspiration",
             "points": 4
           }
         ],
@@ -287,16 +312,16 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "With a normal glucose, no intracranial bleed, and this presentation, what is your diagnosis?",
-      "rubric": "Delirium tremens / severe alcohol withdrawal (6). Cites autonomic hyperactivity + hallucinations + tremor + timing from last drink (3). Notes DTs is a medical emergency with significant mortality (bonus,1).",
-      "idealAnswer": "Alcohol withdrawal / delirium tremens — a heavy daily drinker whose last drink was ~2 days ago now has autonomic hyperactivity (tachycardia, hypertension, fever, diaphoresis), coarse tremor, and visual hallucinations. The normal glucose and absence of an intracranial bleed exclude hypoglycemia and a post-fall bleed. DTs is a medical emergency with significant mortality.",
+      "prompt": "With a normal glucose, a CT head showing no bleed, a markedly prolonged QT on the EKG, and these labs, commit to your diagnosis. Explain how you resolved the alcohol-withdrawal vs anticholinergic-toxidrome fork and what residual issues you must still manage.",
+      "rubric": "Delirium tremens / severe alcohol withdrawal as the leading diagnosis (6). Resolves the fork toward withdrawal: drenching diaphoresis and mid-size reactive pupils argue AGAINST a dry anticholinergic toxidrome, plus the clear timeline from the last drink (~48 h) and prior withdrawal seizure; names the discriminator (3). Notes residual concurrent problems still requiring action — the drug-induced long QT with torsades risk, hyponatremia/hypokalemia/hypomagnesemia/hypophosphatemia, AKI on CKD, the anion-gap acidosis (AKA + lactate), supratherapeutic INR, and that DTs is a medical emergency with significant mortality (bonus,1).",
+      "idealAnswer": "Diagnosis: Alcohol withdrawal / delirium tremens. A heavy daily drinker whose last drink was ~48 h ago now has autonomic hyperactivity (tachycardia despite a beta-blocker, hypertension, fever, drenching diaphoresis), a coarse tremor, and visual hallucinations, with a prior withdrawal seizure. I resolve the withdrawal-vs-anticholinergic-toxidrome fork toward withdrawal because his skin is DRENCHED in sweat and his pupils are mid-size and reactive — an anticholinergic toxidrome is classically DRY (anhidrotic) with widely dilated pupils — and the timeline from the last drink and the prior withdrawal seizure fit withdrawal. The normal glucose excludes hypoglycemia and the CT head excludes a post-fall intracranial bleed. But this is not a clean single problem: his medications and electrolytes have given him a markedly prolonged QT (torsades risk) that I must treat, and he concurrently has hyponatremia, hypokalemia, hypomagnesemia, hypophosphatemia, AKI on CKD, a high-anion-gap metabolic acidosis from alcoholic ketoacidosis plus lactate (gap 20), and a supratherapeutic INR on warfarin after a head injury. DTs is a medical emergency with significant mortality and must be treated aggressively.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
         "bonusActions": [
           {
-            "item": "Notes DTs is a medical emergency with significant mortality",
+            "item": "Notes DTs is a medical emergency with significant mortality and lists the concurrent problems (long QT, electrolytes, AKI, acidosis, INR)",
             "points": 1
           }
         ],
@@ -307,42 +332,46 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH alcohol withdrawal: symptom-triggered benzodiazepines per CIWA-Ar (CANT-MISS,7); thiamine BEFORE glucose to prevent Wernicke (CANT-MISS,5); folate/multivitamin (2); repair electrolytes – K, Mg, phosphate (3); escalate (ICU/phenobarbital) for severe DTs (3); monitor for seizures (2); address AUD / supportive care (2). PENALTY: giving glucose before thiamine (-3); under-treating severe DTs (-2).",
-      "idealAnswer": "Symptom-triggered benzodiazepines guided by CIWA-Ar (e.g. lorazepam/diazepam) for withdrawal/DTs; escalate for severe DTs and consider ICU/phenobarbital. Thiamine BEFORE glucose (prevent Wernicke), plus folate and multivitamin; repair electrolytes (K, Mg, phosphate). Supportive care, monitor for seizures. Address the underlying alcohol use disorder.",
+      "prompt": "What is your management plan? Include how the prolonged QT changes your choices, and address safe disposition and follow-up for this patient.",
+      "rubric": "Per MGH alcohol withdrawal: symptom-triggered benzodiazepines per CIWA-Ar — lorazepam/diazepam, escalate as needed (CANT-MISS,6); thiamine BEFORE any glucose to prevent Wernicke (CANT-MISS,4); aggressively replete magnesium and potassium AND hold the QT-prolonging amitriptyline/quetiapine to reduce torsades risk — prefer benzodiazepines over antipsychotics for agitation (CANT-MISS,4); repair phosphate, treat the hyponatremia/AKI and give folate/multivitamin (2); reverse/correct the supratherapeutic INR (vitamin K +/- 4-factor PCC given the head injury) and re-image if any deterioration (2); escalate to ICU/phenobarbital for severe DTs and monitor on telemetry for seizures and torsades (2); safe disposition — admit (ICU for severe DTs/QT), telemetry, medication reconciliation removing/avoiding offending agents, fall precautions, repeat electrolytes/QTc, and arrange AUD treatment + close follow-up before any discharge (3). PENALTY: glucose before thiamine (-3); giving an antipsychotic (haloperidol/quetiapine) that further prolongs the QT or under-treating severe DTs (-3).",
+      "idealAnswer": "Symptom-triggered benzodiazepines guided by CIWA-Ar (lorazepam or diazepam), escalating doses for severe DTs; consider ICU and phenobarbital for refractory cases. Give thiamine BEFORE any glucose (prevent Wernicke), plus folate and a multivitamin. Because the EKG shows a markedly prolonged QT with torsades risk, aggressively replete magnesium and potassium, repair phosphate, HOLD the QT-prolonging anticholinergic agents (amitriptyline and quetiapine), avoid adding QT-prolonging antipsychotics such as haloperidol, and prefer benzodiazepines for agitation; keep him on telemetry. Treat the hyponatremia and prerenal AKI with judicious fluids and correct the anion-gap acidosis (it resolves with dextrose-after-thiamine, fluids, and treating ketoacidosis). Correct the supratherapeutic INR with vitamin K (and 4-factor PCC if any bleeding/deterioration) given the recent head injury, with a low threshold to re-image. Monitor for withdrawal seizures and torsades. Disposition: ADMIT, ICU if severe DTs or unstable QT; telemetry; medication reconciliation that removes the offending QT-prolonging/anticholinergic drugs; fall precautions; serial CIWA-Ar, electrolytes, and QTc. Before any eventual discharge, arrange safe disposition — alcohol-use-disorder treatment/counseling, thiamine and electrolyte follow-up, a corrected/managed medication list, caregiver education for his wife, and close outpatient follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Symptom-triggered benzodiazepines (CIWA-Ar)",
-            "points": 7
+            "points": 6
           },
           {
             "item": "Thiamine before glucose",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "Replete Mg/K and hold QT-prolonging amitriptyline/quetiapine — prefer benzodiazepines over antipsychotics",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Electrolyte repletion (K, Mg, phosphate)",
-            "points": 3
-          },
-          {
-            "item": "Escalate for severe DTs (ICU/phenobarbital)",
-            "points": 3
-          },
-          {
-            "item": "Folate / multivitamin",
+            "item": "Repair phosphate, treat hyponatremia/AKI, give folate/multivitamin",
             "points": 2
           },
           {
-            "item": "Monitor for seizures",
+            "item": "Correct supratherapeutic INR (vitamin K +/- PCC) given the head injury; re-image if deterioration",
             "points": 2
+          },
+          {
+            "item": "Escalate to ICU/phenobarbital for severe DTs; telemetry; monitor for seizures and torsades",
+            "points": 2
+          },
+          {
+            "item": "Safe disposition — admit/ICU, telemetry, med reconciliation, fall precautions, AUD treatment and close follow-up before discharge",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Address alcohol use disorder",
+            "item": "Address the underlying alcohol use disorder with caregiver education",
             "points": 2
           }
         ],
@@ -350,25 +379,34 @@
           {
             "item": "Glucose before thiamine",
             "points": -3
+          },
+          {
+            "item": "Giving a QT-prolonging antipsychotic (haloperidol/quetiapine) or under-treating severe DTs",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
         "Symptom-triggered benzodiazepines (CIWA-Ar)",
-        "Thiamine before glucose"
+        "Thiamine before glucose",
+        "Replete Mg/K and hold QT-prolonging amitriptyline/quetiapine — prefer benzodiazepines over antipsychotics"
       ],
       "optionalActions": [
-        "Electrolyte repletion (K, Mg, phosphate)",
-        "Escalate for severe DTs (ICU/phenobarbital)",
-        "Folate / multivitamin",
-        "Monitor for seizures",
-        "Address alcohol use disorder"
+        "Repair phosphate, treat hyponatremia/AKI, give folate/multivitamin",
+        "Correct supratherapeutic INR (vitamin K +/- PCC) given the head injury; re-image if deterioration",
+        "Escalate to ICU/phenobarbital for severe DTs; telemetry; monitor for seizures and torsades",
+        "Safe disposition — admit/ICU, telemetry, med reconciliation, fall precautions, AUD treatment and close follow-up before discharge",
+        "Address the underlying alcohol use disorder with caregiver education"
       ],
       "unsafeActions": [
-        "Glucose before thiamine"
+        "Glucose before thiamine",
+        "Giving a QT-prolonging antipsychotic (haloperidol/quetiapine) or under-treating severe DTs"
       ],
-      "consults": [],
-      "disposition": "Admit; ICU if severe DTs",
+      "consults": [
+        "Addiction/Social Work",
+        "ICU (if severe DTs or unstable QT)"
+      ],
+      "disposition": "Admit; ICU if severe DTs or unstable prolonged QT",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Alcohol Use Disorder & Withdrawal",
@@ -385,12 +423,13 @@
     "sensitiveTopics": [
       "alcohol_use"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "55-year-old man, agitated, tremulous, diaphoretic, disoriented, picking at the sheets, frightened by visual hallucinations. Poor historian.",
+    "communicationStyle": "confused; gives limited, disjointed, hallucination-tinged answers and needs collateral and a chart/medication review",
+    "affect": "62-year-old man, agitated, tremulous, drenched in sweat, disoriented, picking at the sheets, frightened by visual hallucinations of bugs. Poor historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (heavy drinking, prior withdrawal seizure) unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer the home medication list, the fall, or hidden exam/diagnostic findings unless asked or the chart/med rec is reviewed",
+      "Reveal the drenching diaphoresis and mid-size reactive pupils only when the skin/pupils are examined",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -403,7 +442,44 @@
         "drinking",
         "how much do you drink",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "last drink"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "medication reconciliation",
+        "home meds",
+        "med list",
+        "warfarin",
+        "amitriptyline",
+        "quetiapine"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "collateral_fall",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what happened",
+        "the fall",
+        "ask the family",
+        "collateral",
+        "ask nursing",
+        "review the chart",
+        "head injury"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -457,7 +533,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "sweating",
+        "tremor"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -484,20 +562,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "kidney",
+        "atrial fibrillation",
+        "depression"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -510,7 +578,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "withdrawal seizure",
+        "seizure before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -520,18 +590,38 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_neck_stiffness_finding_1",
-      "finding": "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "id": "assess_general_appearance_finding_1",
+      "finding": "General: agitated, drenched in sweat, coarse resting tremor, hypervigilant, swatting at unseen objects.",
       "revealedBy": [
-        "assess_neck_stiffness"
+        "assess_general_appearance"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No nuchal rigidity."
+      "normalIfNotPresent": "No tremor or diaphoresis; calm."
     },
     {
-      "id": "assess_motor_strength_finding_2",
-      "finding": "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "id": "inspect_skin_finding_2",
+      "finding": "Skin: warm and SOAKED with sweat (not dry/flushed); right temporal bruise from the fall — drenching diaphoresis argues against a dry anticholinergic toxidrome.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Skin warm and dry; no bruising."
+    },
+    {
+      "id": "assess_mental_status_finding_3",
+      "finding": "Neuro: disoriented, coarse tremor, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and oriented."
+    },
+    {
+      "id": "assess_motor_strength_finding_4",
+      "finding": "Neuro: no focal motor deficit; reflexes symmetric; no pronator drift — argues against a lateralizing intracranial lesion.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -541,24 +631,14 @@
       "normalIfNotPresent": "No focal motor deficit."
     },
     {
-      "id": "assess_general_appearance_finding_3",
-      "finding": "General: agitated, diaphoretic, coarse tremor, hypervigilant.",
+      "id": "assess_neck_stiffness_finding_5",
+      "finding": "No nuchal rigidity — argues against meningitis as the cause of the delirium.",
       "revealedBy": [
-        "assess_general_appearance"
+        "assess_neck_stiffness"
       ],
       "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No tremor or diaphoresis."
-    },
-    {
-      "id": "assess_mental_status_finding_4",
-      "finding": "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
-      "revealedBy": [
-        "assess_mental_status"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "Alert and oriented."
+      "points": 1,
+      "normalIfNotPresent": "No nuchal rigidity."
     }
   ],
   "overallScoring": {
@@ -571,81 +651,90 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Alcohol withdrawal / delirium tremens",
-    "diagnosticFramework": "55M, admitted 2 days ago after a fall, becomes acutely agitated, tremulous, diaphoretic, and confused with visual hallucinations. The diagnosis is Alcohol withdrawal / delirium tremens, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "62M with HTN, CKD, atrial fibrillation on warfarin, and depression — admitted 2 days ago after an unwitnessed fall — becomes acutely agitated, tremulous, diaphoretic, and confused with visual hallucinations ~48 h after his last drink, while on a long list of QT-prolonging anticholinergic home medications. The diagnosis is Alcohol withdrawal / delirium tremens, reached by eliciting collateral and reconciling medications, performing the targeted exam (drenching diaphoresis and reactive pupils that distinguish it from a dry anticholinergic toxidrome), and interpreting a workup that excludes hypoglycemia, a post-fall intracranial bleed, and infection while revealing concurrent multi-system problems — a drug/electrolyte-induced long QT, hyponatremia, hypokalemia/hypomagnesemia/hypophosphatemia, AKI on CKD, a high-anion-gap acidosis (AKA + lactate), and a supratherapeutic INR.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
-      "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness.",
-      "General: agitated, diaphoretic, coarse tremor, hypervigilant.",
-      "Neuro: disoriented, tremulous, visual hallucinations; no focal motor deficit; no neck stiffness."
+      "General: agitated, drenched in sweat, coarse resting tremor, hypervigilant, swatting at unseen objects.",
+      "Skin: warm and SOAKED with sweat (not dry/flushed); right temporal bruise from the fall — drenching diaphoresis argues against a dry anticholinergic toxidrome.",
+      "Neuro: disoriented, coarse tremor, visual hallucinations; no focal motor deficit; no neck stiffness.",
+      "Neuro: no focal motor deficit; reflexes symmetric; no pronator drift — argues against a lateralizing intracranial lesion.",
+      "No nuchal rigidity — argues against meningitis as the cause of the delirium."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "BMP",
+      "Mg_Phos",
+      "VBG_lactate",
       "CBC",
       "LFTs",
+      "Coags",
       "Infection_workup",
       "CT_head"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Alcohol withdrawal / delirium tremens while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Alcohol withdrawal / delirium tremens and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting tachycardia despite a home beta-blocker.",
+      "Elicit collateral and reconcile the home medications, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam — the drenching diaphoresis and reactive pupils distinguish withdrawal from a dry anticholinergic toxidrome.",
+      "Build a differential led by Alcohol withdrawal / delirium tremens while explicitly weighing the competing anticholinergic/drug toxidrome and excluding a post-fall intracranial bleed (on warfarin), infection, and hypoglycemia.",
+      "Order a focused, order-sensitive workup; interpret the patient's OWN EKG (markedly prolonged QT) and CXR and the multi-system labs.",
+      "Commit to Alcohol withdrawal / delirium tremens, resolve the fork, and manage the DTs plus the concurrent long QT, electrolyte, AKI, acidosis, and INR problems, with safe disposition and follow-up."
     ],
     "commonPitfalls": [
-      "Glucose before thiamine"
+      "Glucose before thiamine",
+      "Giving a QT-prolonging antipsychotic (haloperidol/quetiapine) for the agitation",
+      "Anchoring on withdrawal without excluding the post-fall bleed on warfarin or the drug toxidrome"
     ],
     "managementPearls": [
       "Symptom-triggered benzodiazepines (CIWA-Ar)",
-      "Thiamine before glucose"
+      "Thiamine before glucose",
+      "Replete Mg/K and hold QT-prolonging agents — prefer benzodiazepines over antipsychotics"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "assess_neck_stiffness"
+      "assess_general_appearance",
+      "inspect_skin"
     ],
     "criticalWorkupItems": [
       "Fingerstick glucose",
-      "magnesium, potassium, phosphate",
-      "CT head given the recent fall + confusion"
+      "BMP with magnesium, potassium, phosphate and the anion gap",
+      "Non-contrast CT head given the fall + confusion + warfarin"
     ],
     "criticalInterpretationItems": [
-      "Supraventricular tachycardia (regular, narrow, rate ~180).",
-      "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+      "Markedly prolonged QT (QTc ~520 ms) with torsades risk — drug- and electrolyte-related.",
+      "Clear chest film with no focal consolidation; obtained to exclude an infectious precipitant/aspiration."
     ],
     "criticalManagementItems": [
       "Symptom-triggered benzodiazepines (CIWA-Ar)",
-      "Thiamine before glucose"
+      "Thiamine before glucose",
+      "Replete Mg/K and hold QT-prolonging amitriptyline/quetiapine — prefer benzodiazepines over antipsychotics"
     ],
     "keyImageInterpretationFindings": [
-      "Supraventricular tachycardia (regular, narrow, rate ~180).",
-      "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+      "Markedly prolonged QT (QTc ~520 ms) with torsades risk — drug- and electrolyte-related.",
+      "Clear chest film with no focal consolidation; obtained to exclude an infectious precipitant/aspiration."
     ],
     "criticalImageInterpretationFindings": [
-      "Supraventricular tachycardia (regular, narrow, rate ~180).",
-      "Clear or possible aspiration; obtained to exclude an infectious precipitant."
+      "Markedly prolonged QT (QTc ~520 ms) with torsades risk — drug- and electrolyte-related.",
+      "Clear chest film with no focal consolidation; obtained to exclude an infectious precipitant/aspiration."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When a patient is on QT-prolonging drugs with low K/Mg, measure the QTc — a long QT is an interpretation task that directly changes management (replete electrolytes, hold offending drugs, avoid antipsychotics).",
+      "An incidental abnormality on the patient's own study is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
     "maxPoints": 5,
     "items": [
       {
-        "item": "Uses an open-ended opening question",
+        "item": "Uses an open-ended opening question and orients the agitated patient calmly",
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's fear and seeks collateral from family/nursing",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol use)",
         "points": 1
       },
       {
@@ -660,8 +749,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG (drug/electrolyte long QT)",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

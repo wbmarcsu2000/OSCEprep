@@ -1,67 +1,70 @@
 {
   "id": "anemia-04",
   "category": "Anemia",
-  "difficulty": "moderate",
-  "title": "Chronic fatigue with a known inflammatory condition",
+  "difficulty": "hard",
+  "title": "Fatigue and a borderline-microcytic anemia in active rheumatoid arthritis",
   "diagnosis": "Anemia of chronic disease",
   "chart": {
     "ageSex": "68M",
     "cc": "Ongoing fatigue",
-    "oneLiner": "68M with long-standing rheumatoid arthritis presents with several months of fatigue and mild breathlessness; routine labs showed anemia.",
+    "oneLiner": "68M with long-standing, active seropositive rheumatoid arthritis, hypertension, and chronic kidney disease presents with several months of worsening fatigue and mild exertional breathlessness; routine labs show a normocytic-to-borderline-microcytic anemia with an ambiguous iron profile, and a polypharmacy list that includes methotrexate, an ACE inhibitor, and months of self-directed NSAIDs.",
     "vitals": {
-      "BP": "130/78",
-      "HR": "82",
+      "BP": "138/82",
+      "HR": "78",
       "RR": "14",
-      "Temp": "36.9°C",
+      "Temp": "36.8°C",
       "SpO2": "98% RA"
     },
     "timer": 180
   },
-  "opening": "I've just been dragging for months, and my doctor said my blood count is low.",
-  "patientFile": "PERSONA: 68-year-old man with chronic joint disease, fatigued. Good historian.\n\nHPI: Several months of fatigue and mild exertional breathlessness. Known rheumatoid arthritis with ongoing joint pain and stiffness (active inflammation). NO black/bloody stools, NO obvious bleeding, NO weight loss, NO heavy alcohol. On methotrexate (only if asked about medications).\nPMH: rheumatoid arthritis, hypertension. MEDS: methotrexate, folic acid, lisinopril, occasional acetaminophen. SOCIAL: minimal alcohol, nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mild pallor; chronic joint deformities of the hands if examined.\n- Vitals: BP 130/78, HR 82, RR 14, 36.9°C, SpO2 98% RA.\n- Cardiac: regular, no murmur. Abdomen: soft, nontender. Rectal: brown stool, no melena (if examined).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the rheumatoid arthritis activity or methotrexate unless asked about medical history or medications.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've just been dragging for months, doc, and my regular doctor said my blood count came back low again.",
+  "patientFile": "PERSONA: 68-year-old man with long-standing, currently flaring rheumatoid arthritis. Tired and a bit short of breath on exertion, but in no acute distress. Average historian; answers what he is asked and does not editorialize.\n\nHPI: 3-4 months of gradually worsening fatigue and mild breathlessness climbing stairs. His rheumatoid arthritis has been MORE active the last half-year — more morning stiffness (over an hour), swollen tender knuckles and wrists, and he ran out of his usual rheumatology follow-up. He has been buying over-the-counter naproxen and ibuprofen and taking them most days for the joint pain (reveal the NSAID use and how often only if asked specifically about pain medicines / over-the-counter medicines / anti-inflammatories). He denies obvious black or bloody stools, but admits to occasional mild stomach burning. NO frank hematemesis, NO weight loss he has noticed, NO night sweats, NO fevers. NO heavy alcohol. Mild ankle puffiness by evening.\nPMH: seropositive rheumatoid arthritis (~12 years, currently active); hypertension; chronic kidney disease (stage 3, told his kidneys 'work at about a third'); mild reflux. No known prior GI bleed, no colonoscopy in over 10 years.\nMEDS (reveal individually only when asked about medications, and the NSAIDs only when asked about pain/OTC medicines): methotrexate weekly with folic acid; lisinopril for blood pressure; low-dose aspirin a previous doctor started 'for the heart'; omeprazole for the reflux; over-the-counter naproxen/ibuprofen most days for the joints.\nSOCIAL: retired machinist. Minimal alcohol (a beer on weekends). Lifelong nonsmoker. Lives with his wife, who does the cooking; he is independent in all activities. Drives himself.\nFAMILY: father had 'stomach trouble'; no known blood cancers.\nROS: fatigue and exertional dyspnea as above; mild evening ankle edema; occasional epigastric burning; NO chest pain, NO palpitations, NO syncope, NO melena/hematochezia that he has seen, NO numbness/tingling, NO easy bruising.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable, mild conjunctival and palmar pallor; ulnar deviation and swollen MCP/wrist joints of both hands if the hands are inspected.\n- Vitals: BP 138/82, HR 78, RR 14, 36.8 C, SpO2 98% RA.\n- Cardiac: regular rate and rhythm, soft flow murmur only, no gallop. Lungs clear. JVP not elevated.\n- Abdomen: soft, mild epigastric tenderness, no mass, no organomegaly. Rectal (if performed): brown stool, no gross melena, but stool guaiac POSITIVE (occult blood) when tested.\n- Extremities: trace bilateral ankle edema; active synovitis of the hands/wrists.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the over-the-counter NSAID use, the aspirin, or how active the arthritis is unless asked about pain medicines, over-the-counter medicines, or how the arthritis has been doing.\n- Do NOT volunteer the chronic kidney disease unless asked about past medical history or kidney problems.\n- Reveal exam findings (pallor, synovitis, edema, the positive stool guaiac) only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "Hgb 10.2, MCV 84 (normocytic, sometimes mildly low), RDW normal, WBC/Plt normal.",
-      "IronStudies": "Serum iron LOW, TIBC LOW (key distinction from iron deficiency), ferritin NORMAL-to-HIGH (acute-phase reactant), transferrin saturation low-normal.",
-      "Inflammatory": "ESR and CRP elevated.",
-      "Reticulocyte": "Low (hypoproliferative).",
-      "BMP": "Cr 1.1 — normal renal function (so not primarily CKD anemia).",
-      "Other": "B12/folate normal."
+      "CBC": "Hgb 9.6 g/dL, MCV 79 fL (borderline microcytic), RDW elevated at 16.5% (mixed-population clue), WBC 7.8, Plt 320. Smear: mild anisocytosis, occasional hypochromic cells.",
+      "IronStudies": "Serum iron LOW (38 mcg/dL); TIBC LOW-NORMAL (250 mcg/dL); transferrin saturation 15% (low); ferritin 95 ng/mL (mid-range — NOT clearly high, NOT clearly low). The intermediate ferritin with an elevated RDW is the crux: pure anemia of chronic disease keeps TIBC low and ferritin normal/high, but a ferritin under ~100 with ongoing GI blood loss cannot exclude a SUPERIMPOSED iron deficiency.",
+      "Inflammatory": "ESR 64 mm/hr and CRP 38 mg/L — both markedly elevated, consistent with active rheumatoid arthritis.",
+      "Reticulocyte": "Low / inappropriately normal reticulocyte count (reticulocyte index <1) — hypoproliferative marrow.",
+      "BMP": "Na 139, K 6.0 mmol/L (HIGH), Cl 104, HCO3 22, BUN 38, Cr 2.0 mg/dL (eGFR ~33, stage 3b CKD — at baseline for him), glucose 96. The hyperkalemia fits CKD plus the ACE inhibitor.",
+      "FOBT": "Fecal occult blood test POSITIVE — points to chronic GI blood loss (NSAID/aspirin gastropathy) and supports a coexisting iron-deficiency component.",
+      "Other": "B12 and folate normal; TSH normal; haptoglobin/LDH/bilirubin normal (no hemolysis); methotrexate level not toxic."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "QRS >120 ms, broad monophasic R in I/V6, deep QS in V1; discordant ST-T.",
-      "verify": "Source a study matching: QRS >120 ms, broad monophasic R in I/V6, deep QS in V1; discordant ST-T. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Tall, narrow, symmetrically PEAKED T waves (best seen in the precordial leads) with the QRS still narrow; sinus rhythm — early hyperkalemic changes consistent with this patient's K 6.0 on CKD plus an ACE inhibitor.",
+      "verify": "Source a study matching: tall peaked symmetric T waves of early-to-moderate hyperkalemia, narrow QRS, sinus rhythm. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing left bundle branch block",
+      "integrated": true,
+      "litflStudyN": 3,
+      "imageDescription": "12-lead showing tall peaked T waves of hyperkalemia",
       "searchTerms": [
-        "LBBB 12 lead ECG",
-        "left bundle branch block QRS"
+        "hyperkalemia peaked T waves 12 lead ECG",
+        "tall tented T waves hyperkalaemia ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 71-year-old woman presents with exertional dyspnea and fatigue during evaluation of a known heart condition."
+      "clinicalVignette": "A 68-year-old man with chronic kidney disease on an ACE inhibitor has an EKG drawn during an anemia work-up; the tracing shows tall, peaked T waves."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Bilateral basal reticular opacities with reduced lung volumes (interstitial fibrosis).",
-      "verify": "Source a study matching: Bilateral basal reticular opacities with reduced lung volumes (interstitial fibrosis). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lung fields, normal heart size, no effusion or consolidation; no acute cardiopulmonary process to explain the dyspnea, which is anemia-related.",
+      "verify": "Source a study matching: clear lungs, normal cardiomediastinal silhouette, no effusion or consolidation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing pulmonary fibrosis reticulation",
+      "imageDescription": "normal PA chest radiograph with clear lungs",
       "searchTerms": [
-        "pulmonary fibrosis chest x-ray",
-        "basal reticular opacities IPF radiograph"
+        "normal PA chest x-ray",
+        "clear lung fields normal cardiomediastinal silhouette radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 67-year-old man presents with several months of progressive breathlessness and a persistent dry cough."
+      "clinicalVignette": "A 68-year-old man with months of fatigue and mild exertional breathlessness has a screening chest film that is unremarkable."
     }
   },
   "revealKeys": [
@@ -70,62 +73,73 @@
     "Inflammatory",
     "Reticulocyte",
     "BMP",
+    "FOBT",
     "Other",
     "ekg",
     "cxr"
   ],
   "essential": [
     "CBC",
-    "IronStudies"
+    "IronStudies",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this anemia (note your leading diagnosis).",
-      "rubric": "Anemia of chronic disease / inflammation (leading,7). Iron deficiency anemia (must distinguish,5). Anemia of chronic kidney disease (core,3). Myelodysplastic syndrome (CANT-MISS to consider,3). Medication/marrow suppression e.g. methotrexate (core,3). Names anemia of chronic disease and the plan to distinguish it from iron deficiency (core,4).",
-      "idealAnswer": "Leading diagnosis: Anemia of chronic disease / inflammation. Must-not-miss diagnoses to exclude: Myelodysplastic syndrome. Also reasonable: Iron deficiency anemia; Anemia of chronic kidney disease; Medication/marrow suppression (e.g. methotrexate).",
+      "prompt": "Based on your history and physical, list your differential for this anemia and name your leading diagnosis. Then name THREE distinct mechanisms/etiologies by which a chronic inflammatory illness like rheumatoid arthritis produces anemia.",
+      "rubric": "Anemia of chronic disease / inflammation as leading dx given active RA and high ESR/CRP (leading,5). Coexisting iron-deficiency anemia from chronic NSAID/aspirin GI blood loss — the true competing diagnosis given epigastric burning and the ambiguous iron studies (CANT-MISS competitor,5). Anemia of CKD (core,3). Methotrexate/marrow suppression or B12-folate deficiency (core,2). GI malignancy as a source of occult blood loss in a 68-year-old (CANT-MISS to consider,3). Names THREE mechanisms of anemia of chronic disease — e.g. hepcidin-mediated iron sequestration / functional iron deficiency; blunted erythropoietin response and EPO resistance; shortened red-cell survival / impaired erythroid proliferation (core,4). States a plan to distinguish ACD from a superimposed iron deficiency (core,3). PENALTY: anchoring on pure ACD and ignoring the GI blood-loss / iron-deficiency picture (-3).",
+      "idealAnswer": "Leading diagnosis: Anemia of chronic disease / inflammation, fitting his active seropositive RA with markedly raised ESR/CRP and a hypoproliferative, low-iron / low-TIBC pattern. The genuine competing diagnosis is a SUPERIMPOSED iron-deficiency anemia from chronic NSAID/aspirin gastropathy (epigastric burning, occult GI bleeding) — the borderline-low MCV, elevated RDW, transferrin saturation 15%, and a ferritin that is only mid-range (under ~100) cannot exclude it. Must-not-miss: an occult GI malignancy as the source of blood loss in a 68-year-old. Also reasonable: anemia of CKD (eGFR ~33) and methotrexate-related marrow suppression (B12/folate are normal). THREE mechanisms by which chronic inflammation causes anemia: (1) hepcidin-mediated iron sequestration in macrophages with reduced gut iron absorption (functional iron deficiency); (2) a blunted erythropoietin response and bone-marrow EPO resistance; (3) shortened red-cell survival with impaired erythroid progenitor proliferation from inflammatory cytokines (IL-6, TNF). Distinguish ACD from superimposed iron deficiency with iron studies (TIBC/transferrin saturation, ferritin, soluble transferrin receptor or sTfR/log-ferritin index) and pursue the GI source.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Anemia of chronic disease / inflammation",
-            "points": 7
+            "item": "Anemia of chronic disease / inflammation (leading)",
+            "points": 5
           },
           {
-            "item": "Myelodysplastic syndrome",
+            "item": "Coexisting iron-deficiency anemia from chronic NSAID/aspirin GI blood loss",
+            "points": 5
+          },
+          {
+            "item": "Occult GI malignancy as a source of blood loss in a 68-year-old",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Iron deficiency anemia",
-            "points": 5
-          },
-          {
             "item": "Anemia of chronic kidney disease",
             "points": 3
           },
           {
-            "item": "Medication/marrow suppression (e.g. methotrexate)",
-            "points": 3
+            "item": "Methotrexate/marrow suppression or B12/folate deficiency",
+            "points": 2
           },
           {
-            "item": "Names anemia of chronic disease and the plan to distinguish it from iron deficiency",
+            "item": "Names three mechanisms of anemia of chronic disease (hepcidin/iron sequestration; blunted EPO response; shortened RBC survival)",
             "points": 4
+          },
+          {
+            "item": "States a plan to distinguish ACD from a superimposed iron deficiency",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on pure ACD and ignoring the GI blood-loss / iron-deficiency picture",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Myelodysplastic syndrome"
+        "Coexisting iron-deficiency anemia from chronic NSAID/aspirin GI blood loss",
+        "Occult GI malignancy as a source of blood loss in a 68-year-old"
       ],
       "acceptableAlternatives": [
-        "Iron deficiency anemia",
         "Anemia of chronic kidney disease",
-        "Medication/marrow suppression (e.g. methotrexate)"
+        "Methotrexate/marrow suppression or B12/folate deficiency"
       ]
     },
     {
@@ -134,64 +148,73 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC with indices (CANT-MISS,3). Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency (CANT-MISS,5). Reticulocyte count (2). Inflammatory markers ESR/CRP (2). Renal function (2). B12/folate (1). PENALTY: reflexively starting iron without confirming a true deficiency (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Iron studies; Inflammatory markers; Reticulocyte count; BMP; Other targeted labs.",
+      "rubric": "CBC with indices and smear (CANT-MISS,3). Iron studies — ferritin, iron, TIBC, transferrin saturation (+/- soluble transferrin receptor) to separate ACD from iron deficiency (CANT-MISS,4). BMP / renal function with potassium given CKD and the ACE inhibitor (CANT-MISS,2). Reticulocyte count (1). Inflammatory markers ESR/CRP (1). Fecal occult blood test and GI referral for endoscopy/colonoscopy given age and NSAID use (2). B12/folate and TSH (1). EKG and CXR (1). PENALTY: reflexively starting iron or transfusing before defining the iron status and the bleeding source (-2); ordering a marrow biopsy first-line (-1).",
+      "idealAnswer": "Order: CBC with indices and peripheral smear; iron studies (ferritin, serum iron, TIBC, transferrin saturation, and soluble transferrin receptor if available); reticulocyte count; ESR and CRP; BMP including potassium and creatinine (CKD on an ACE inhibitor); fecal occult blood test with referral for upper endoscopy/colonoscopy given his age, NSAID/aspirin use and occult bleeding; B12, folate and TSH; EKG and CXR. Defer empiric iron or transfusion until the iron status and any bleeding source are defined.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "CBC with indices",
+            "item": "CBC with indices and smear",
             "points": 3
           },
           {
-            "item": "Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency",
-            "points": 5
+            "item": "Iron studies — ferritin/iron/TIBC/transferrin saturation (+/- sTfR)",
+            "points": 4
+          },
+          {
+            "item": "BMP / renal function with potassium",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Inflammatory markers",
-            "points": 2
-          },
-          {
             "item": "Reticulocyte count",
+            "points": 1
+          },
+          {
+            "item": "Inflammatory markers ESR/CRP",
+            "points": 1
+          },
+          {
+            "item": "Fecal occult blood test and GI referral for endoscopy/colonoscopy",
             "points": 2
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "B12/folate and TSH",
+            "points": 1
           },
           {
-            "item": "Other targeted labs",
-            "points": 2
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "reflexively starting iron without confirming a true deficiency",
+            "item": "Reflexively starting iron or transfusing before defining the iron status and bleeding source",
             "points": -2
+          },
+          {
+            "item": "Ordering a bone-marrow biopsy first-line",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
-        "CBC with indices",
-        "Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency"
+        "CBC with indices and smear",
+        "Iron studies — ferritin/iron/TIBC/transferrin saturation (+/- sTfR)",
+        "BMP / renal function with potassium"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Fecal occult blood test and GI referral for endoscopy/colonoscopy",
+        "B12/folate and TSH"
+      ],
       "contraindicatedTests": [
-        "reflexively starting iron without confirming a true deficiency"
+        "Reflexively starting iron or transfusing before defining the iron status and bleeding source",
+        "Ordering a bone-marrow biopsy first-line"
       ],
       "orderSensitiveActions": [
-        "reflexively starting iron without confirming a true deficiency"
+        "Reflexively starting iron or transfusing before defining the iron status and bleeding source"
       ]
     },
     {
@@ -200,33 +223,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = left bundle branch block. CREDIT: recognizes LBBB — wide QRS >120 ms with a broad notched R in I/V6 and dominant S in V1 (7); notes the appropriately discordant ST-T and that LBBB confounds STEMI reading (5); systematic read (3). PENALTY: over-reading the discordant ST changes as ischemia / calling it normal (-2).",
+      "prompt": "Here is THIS patient's 12-lead EKG, drawn during the work-up. Describe your findings and state what it implies for his electrolytes and medications.",
+      "rubric": "Findings = tall, narrow, symmetrically PEAKED T waves with a still-narrow QRS in sinus rhythm — early hyperkalemia, fitting his K 6.0 on CKD plus an ACE inhibitor. CREDIT: recognizes peaked/tented T waves as hyperkalemia (7); connects it to the BMP potassium of 6.0 and to CKD + the ACE inhibitor (lisinopril), and flags it as a concurrent problem requiring action (5); systematic read noting the still-narrow QRS / no widening or P-wave loss yet (3). PENALTY: calling the tracing normal, or reading the peaked T waves as ischemia/early repolarization and missing the hyperkalemia (-3).",
       "keyFindings": [
-        "wide QRS >120 ms with broad notched R in lateral leads",
-        "notes LBBB confounds STEMI reading"
+        "tall, narrow, symmetrically peaked T waves",
+        "connects the peaked T waves to K 6.0 from CKD plus the ACE inhibitor"
       ],
       "criticalFindings": [
-        "Left bundle branch block."
+        "Peaked T waves of hyperkalemia (K 6.0) from CKD plus the ACE inhibitor."
       ],
       "commonMistakes": [
-        "over-reading the discordant ST changes as ischemia",
-        "missing the broad monophasic lateral R wave"
+        "reading the peaked T waves as ischemia or benign early repolarization",
+        "calling the EKG normal and missing the hyperkalemia"
       ],
-      "idealAnswer": "Left bundle branch block: QRS >120 ms, broad notched R in I/V6, dominant S in V1, appropriately discordant ST-T.",
+      "idealAnswer": "Sinus rhythm with tall, narrow, symmetrically PEAKED ('tented') T waves, most marked in the precordial leads, while the QRS is still narrow and P waves are preserved — the pattern of early-to-moderate hyperkalemia. This is HIS own EKG and it matches the BMP potassium of 6.0 mmol/L, which fits his stage-3b CKD plus the ACE inhibitor (lisinopril). It is a concurrent problem to act on: recheck/confirm the potassium, hold the ACE inhibitor, and treat the hyperkalemia rather than dismissing the T waves as ischemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Left bundle branch block."
+          "Peaked T waves of hyperkalemia (K 6.0) from CKD plus the ACE inhibitor."
         ],
         "coreActions": [
-          "wide QRS >120 ms with broad notched R in lateral leads",
-          "notes LBBB confounds STEMI reading"
+          "tall, narrow, symmetrically peaked T waves",
+          "connects the peaked T waves to K 6.0 from CKD plus the ACE inhibitor"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal or reads the peaked T waves as ischemia, missing the hyperkalemia",
             "points": -3
           }
         ]
@@ -239,32 +262,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = pulmonary fibrosis (bibasilar reticulation, low lung volumes). CREDIT: identifies bibasilar reticular opacities (6); recognizes reduced lung volumes / fibrotic pattern (4). PENALTY: calling the study normal / mistaking the reticulation for infection (-2).",
+      "rubric": "Findings = clear lungs, normal heart size, no effusion or consolidation — no cardiopulmonary cause for the dyspnea, which is anemia-related. CREDIT: recognizes a normal film (5); states there is no effusion/consolidation/cardiomegaly to explain the exertional dyspnea, attributing it to the anemia (5). PENALTY: inventing an infiltrate or effusion on a clear film, or calling RA-associated fibrosis without basal reticulation (-2).",
       "keyFindings": [
-        "bibasilar reticular opacities",
-        "reduced lung volumes / fibrotic pattern"
+        "clear lung fields, normal cardiomediastinal silhouette",
+        "no effusion or consolidation to explain the dyspnea (anemia-related)"
       ],
       "criticalFindings": [
-        "Pulmonary fibrosis (basal reticulation, low volumes)."
+        "Normal chest film; no cardiopulmonary cause for the dyspnea (anemia-related)."
       ],
       "commonMistakes": [
-        "mistaking reticulation for infection",
-        "missing the volume loss"
+        "inventing an infiltrate or effusion on a clear film",
+        "over-calling RA interstitial disease without basal reticulation"
       ],
-      "idealAnswer": "Pulmonary fibrosis: bibasilar reticular opacities with low lung volumes.",
+      "idealAnswer": "Clear lung fields, normal heart size, and no effusion, consolidation, or pulmonary edema. There is no cardiopulmonary process to explain his exertional breathlessness, which is best attributed to the anemia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Pulmonary fibrosis (basal reticulation, low volumes)."
+          "Normal chest film; no cardiopulmonary cause for the dyspnea (anemia-related)."
         ],
         "coreActions": [
-          "bibasilar reticular opacities",
-          "reduced lung volumes / fibrotic pattern"
+          "clear lung fields, normal cardiomediastinal silhouette",
+          "no effusion or consolidation to explain the dyspnea (anemia-related)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study abnormal / invents pathology",
             "points": -3
           }
         ]
@@ -274,9 +297,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Normocytic anemia with low iron, LOW TIBC, and normal/high ferritin plus elevated inflammatory markers. What is your diagnosis and how does it differ from iron deficiency?",
-      "rubric": "Anemia of chronic disease (6). Distinguishes from iron deficiency — in chronic disease TIBC is LOW and ferritin normal/high, whereas iron deficiency shows HIGH TIBC and LOW ferritin (4).",
-      "idealAnswer": "Anemia of chronic disease / inflammation. It differs from iron deficiency in the iron studies: in anemia of chronic disease the TIBC is LOW with a normal/high ferritin, whereas iron deficiency shows a HIGH TIBC with a LOW ferritin.",
+      "prompt": "Putting it together — a borderline-microcytic anemia with low iron, LOW-NORMAL TIBC, transferrin saturation 15%, a MID-RANGE ferritin (95) with an elevated RDW, a POSITIVE fecal occult blood test, plus K 6.0 and Cr 2.0, and peaked T waves on his EKG. What is your diagnosis, what is the discriminating test, and what residual ambiguity remains?",
+      "rubric": "Commits to anemia of chronic disease from active RA AS THE PRIMARY process, but recognizes a SUPERIMPOSED iron-deficiency component from NSAID/aspirin GI blood loss that the mid-range ferritin and elevated RDW cannot exclude (6). Names the discriminating test — soluble transferrin receptor / sTfR-to-log-ferritin index (or a bone-marrow iron stain), and endoscopy to find the bleeding source — and states the residual ambiguity that pure ACD versus ACD-plus-iron-deficiency is not fully resolved on these labs; also folds in the concurrent hyperkalemia/CKD seen on the EKG (4).",
+      "idealAnswer": "Most likely: anemia of chronic disease driven by his active rheumatoid arthritis (high ESR/CRP, hypoproliferative marrow, low iron with a low-normal TIBC). But this is NOT pure ACD — the borderline-low MCV, elevated RDW, transferrin saturation of 15%, a ferritin that is only mid-range (95, not the high value expected in pure ACD), and a POSITIVE fecal occult blood test point to a SUPERIMPOSED iron-deficiency anemia from chronic NSAID/aspirin gastropathy. The discriminating test is a soluble transferrin receptor (sTfR) and the sTfR/log-ferritin index — high in true iron deficiency, low/normal in pure ACD — with a bone-marrow iron stain as the gold standard; and endoscopy/colonoscopy to localize the GI blood loss and exclude malignancy. Residual ambiguity: with a ferritin in the indeterminate 30-100 range, these routine labs cannot definitively separate pure ACD from combined ACD-plus-iron-deficiency, so I commit to combined disease and confirm. Separately, his own EKG shows hyperkalemia (K 6.0) from CKD plus the ACE inhibitor — a concurrent problem to address.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -289,63 +312,80 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH anemia of chronic disease: treat the underlying disease (CANT-MISS,7); confirm iron studies distinguishing ACD from IDA (5); transfuse only if symptomatic/unstable (4); iron only if concurrent true deficiency (3); ESA only in select settings with specialist input (2). PENALTY: transfusing/ironing a stable ACD patient reflexively (-2); missing an underlying malignancy/infection (-2).",
-      "idealAnswer": "Treat the underlying chronic inflammatory/infectious/malignant disease – that is the primary therapy. Confirm with iron studies (low iron, normal/high ferritin). Avoid unnecessary transfusion; transfuse only if symptomatic. Replace iron only if coexisting true iron deficiency. Consider ESAs only in specific settings (e.g. CKD) with hematology input.",
+      "prompt": "What is your management plan, including how you handle his medications, the hyperkalemia, and his disposition (is he safe to manage as an outpatient, and what does safe discharge require)?",
+      "rubric": "Per MGH anemia of chronic disease: treat the underlying disease — optimize RA control with rheumatology so inflammation falls (CANT-MISS,5); address the concurrent hyperkalemia from the EKG — confirm K, hold the ACE inhibitor, treat K 6.0 and recheck (CANT-MISS,4); stop the offending NSAIDs/aspirin and continue a PPI for the GI source (4); arrange GI endoscopy/colonoscopy for the occult bleeding and to exclude malignancy (3); give an iron trial ONLY for the confirmed/likely superimposed iron deficiency, oral or IV, and monitor response (3); transfuse only if symptomatic/unstable — he is stable, so avoid reflexive transfusion (2); arrange safe discharge — medication reconciliation (deprescribe NSAIDs/recheck the aspirin indication), patient education on GI-bleed warning signs, repeat potassium and Hgb labs, and close rheumatology/GI/primary-care follow-up (4). PENALTY: continuing NSAIDs or the ACE inhibitor with K 6.0 (-3); reflexive transfusion of a stable patient (-2); discharging without addressing the hyperkalemia or the GI bleeding source (-2).",
+      "idealAnswer": "Treat the underlying disease: partner with rheumatology to regain control of the active RA — that lowers the inflammatory drive of the anemia of chronic disease. Address the concurrent problem seen on HIS EKG: confirm the potassium of 6.0, HOLD the ACE inhibitor (lisinopril), give standard hyperkalemia treatment as needed and recheck the level, all on a background of stage-3b CKD. STOP the over-the-counter NSAIDs and reassess the low-dose aspirin indication, and continue the PPI to heal the GI source. Refer for upper endoscopy/colonoscopy to localize the occult bleeding and exclude a GI malignancy. Treat the superimposed iron deficiency with an iron trial (oral, or IV given inflammation/CKD impairing oral absorption) and monitor the reticulocyte/Hgb response; reserve erythropoiesis-stimulating agents for selected CKD settings with specialist input. Do NOT transfuse reflexively — he is hemodynamically stable; transfuse only if symptomatic or unstable. Disposition: he can be managed as an OUTPATIENT once the potassium is confirmed controlled. Safe discharge requires medication reconciliation (deprescribe NSAIDs, hold the ACEi, verify the aspirin indication), education on GI-bleed and hyperkalemia warning signs, a scheduled repeat potassium and CBC, and close rheumatology, GI, and primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Treat the underlying chronic disease",
-            "points": 7
+            "item": "Treat the underlying disease — optimize RA control with rheumatology",
+            "points": 5
+          },
+          {
+            "item": "Address the hyperkalemia — confirm K, hold the ACE inhibitor, treat and recheck",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Confirm iron studies (distinguish from IDA)",
-            "points": 5
-          },
-          {
-            "item": "Transfuse only if symptomatic",
+            "item": "Stop NSAIDs/aspirin and continue a PPI for the GI source",
             "points": 4
           },
           {
-            "item": "Iron only if concurrent deficiency",
+            "item": "Arrange GI endoscopy/colonoscopy for occult bleeding and to exclude malignancy",
             "points": 3
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "Consider ESA in select settings (e.g. CKD)",
+            "item": "Iron trial only for the confirmed/likely superimposed iron deficiency, with monitoring",
+            "points": 3
+          },
+          {
+            "item": "Transfuse only if symptomatic/unstable — avoid reflexive transfusion",
             "points": 2
+          },
+          {
+            "item": "Arrange safe discharge — med reconciliation, GI-bleed/hyperkalemia education, repeat labs, close rheumatology/GI/PCP follow-up",
+            "points": 4
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
-            "item": "Reflexive transfusion without indication",
+            "item": "Continuing NSAIDs or the ACE inhibitor with K 6.0",
+            "points": -3
+          },
+          {
+            "item": "Reflexive transfusion of a stable patient",
             "points": -2
           },
           {
-            "item": "Missing underlying disease",
+            "item": "Discharging without addressing the hyperkalemia or the GI bleeding source",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Treat the underlying chronic disease"
+        "Treat the underlying disease — optimize RA control with rheumatology",
+        "Address the hyperkalemia — confirm K, hold the ACE inhibitor, treat and recheck"
       ],
       "optionalActions": [
-        "Confirm iron studies (distinguish from IDA)",
-        "Transfuse only if symptomatic",
-        "Iron only if concurrent deficiency",
-        "Consider ESA in select settings (e.g. CKD)"
+        "Stop NSAIDs/aspirin and continue a PPI for the GI source",
+        "Arrange GI endoscopy/colonoscopy for occult bleeding and to exclude malignancy",
+        "Iron trial only for the confirmed/likely superimposed iron deficiency, with monitoring",
+        "Transfuse only if symptomatic/unstable — avoid reflexive transfusion",
+        "Arrange safe discharge — med reconciliation, GI-bleed/hyperkalemia education, repeat labs, close rheumatology/GI/PCP follow-up"
       ],
       "unsafeActions": [
-        "Reflexive transfusion without indication",
-        "Missing underlying disease"
+        "Continuing NSAIDs or the ACE inhibitor with K 6.0",
+        "Reflexive transfusion of a stable patient",
+        "Discharging without addressing the hyperkalemia or the GI bleeding source"
       ],
-      "consults": [],
-      "disposition": "Outpatient / per underlying disease",
+      "consults": [
+        "Rheumatology",
+        "Gastroenterology"
+      ],
+      "disposition": "Outpatient once potassium confirmed controlled; close rheumatology/GI/PCP follow-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Pancytopenia & Anemia (Anemia of Chronic Disease)",
@@ -361,12 +401,14 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "otc_medication_use"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "68-year-old man with chronic joint disease, fatigued. Good historian.",
+    "communicationStyle": "answers directly but does not volunteer the NSAID use, the active arthritis, or the kidney disease unless asked",
+    "affect": "68-year-old man with active rheumatoid arthritis, fatigued but not distressed. Average historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal over-the-counter NSAID/aspirin use unless asked about pain or OTC medicines",
+      "Do not volunteer how active the arthritis is, or the chronic kidney disease, unless asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -385,7 +427,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -399,7 +441,28 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_medication_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "pain medicine",
+        "pain killers",
+        "anti-inflammatory",
+        "nsaid",
+        "ibuprofen",
+        "naproxen",
+        "advil",
+        "aleve",
+        "aspirin",
+        "what do you take for the pain"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -431,12 +494,18 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "severity",
-      "category": "hpi",
+      "id": "associated_symptoms",
+      "category": "ros",
       "triggerConcepts": [
-        "how bad",
-        "severity",
-        "scale"
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "black stools",
+        "blood in stool",
+        "melena",
+        "stomach pain",
+        "heartburn",
+        "weight loss"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -444,12 +513,15 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "associated_symptoms",
-      "category": "ros",
+      "id": "arthritis_activity",
+      "category": "hpi",
       "triggerConcepts": [
-        "any other symptoms",
-        "associated symptoms",
-        "anything else"
+        "how is the arthritis",
+        "joint pain",
+        "morning stiffness",
+        "flare",
+        "swollen joints",
+        "how active is your arthritis"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -476,7 +548,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney",
+        "kidney problems",
+        "ckd"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -489,7 +564,9 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "methotrexate",
+        "lisinopril"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -502,7 +579,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior anemia",
+        "prior bleeding"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -512,25 +591,46 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: regular, no murmur. Abdomen: soft, nontender. Rectal: brown stool, no melena (if examined).",
-      "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
-      ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
-    },
-    {
-      "id": "inspect_conjunctiva_finding_2",
-      "finding": "General: mild pallor; chronic joint deformities of the hands if examined.",
+      "id": "inspect_conjunctiva_finding_1",
+      "finding": "General: mild conjunctival and palmar pallor consistent with anemia.",
       "revealedBy": [
         "inspect_conjunctiva"
       ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No conjunctival pallor."
+    },
+    {
+      "id": "inspect_palms_and_soles_finding_2",
+      "finding": "Hands: ulnar deviation and swollen, tender MCP and wrist joints (active rheumatoid synovitis); palmar pallor.",
+      "revealedBy": [
+        "inspect_palms_and_soles",
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 3,
+      "normalIfNotPresent": "No active synovitis or pallor of the hands."
+    },
+    {
+      "id": "assess_edema_finding_3",
+      "finding": "Extremities: trace bilateral ankle edema (mild, by evening); no calf tenderness.",
+      "revealedBy": [
+        "assess_edema"
+      ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No conjunctival pallor."
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_4",
+      "finding": "Cardiac: regular rate and rhythm with a soft systolic flow murmur only (anemia-related); no gallop. Lungs clear.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No murmur appreciated."
     }
   ],
   "overallScoring": {
@@ -543,11 +643,13 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Anemia of chronic disease",
-    "diagnosticFramework": "68M with long-standing rheumatoid arthritis presents with several months of fatigue and mild breathlessness; routine labs showed anemia. The diagnosis is Anemia of chronic disease, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68M with long-standing, active seropositive rheumatoid arthritis, hypertension, and stage-3b CKD presents with months of fatigue and mild exertional dyspnea and a normocytic-to-borderline-microcytic anemia. The leading diagnosis is Anemia of chronic disease from his active RA, but the picture is layered: an ambiguous iron profile (transferrin saturation 15%, mid-range ferritin 95, elevated RDW) plus a positive fecal occult blood test reveal a SUPERIMPOSED iron-deficiency anemia from chronic NSAID/aspirin gastropathy, with an occult GI malignancy to exclude. Concurrently his own EKG shows hyperkalemia (K 6.0) from CKD plus the ACE inhibitor. It is reached by eliciting the OTC-NSAID and arthritis-activity history, examining for pallor and synovitis, ordering iron studies and a BMP, reading his hyperkalemic EKG, and committing to combined ACD-plus-iron-deficiency while confirming with sTfR and endoscopy.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular, no murmur. Abdomen: soft, nontender. Rectal: brown stool, no melena (if examined).",
-      "General: mild pallor; chronic joint deformities of the hands if examined."
+      "General: mild conjunctival and palmar pallor consistent with anemia.",
+      "Hands: ulnar deviation and swollen, tender MCP and wrist joints (active rheumatoid synovitis); palmar pallor.",
+      "Extremities: trace bilateral ankle edema (mild, by evening); no calf tenderness.",
+      "Cardiac: regular rate and rhythm with a soft systolic flow murmur only (anemia-related); no gallop. Lungs clear."
     ],
     "keyDiagnosticFindings": [
       "CBC",
@@ -555,50 +657,56 @@
       "Inflammatory",
       "Reticulocyte",
       "BMP",
+      "FOBT",
       "Other"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Anemia of chronic disease while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Anemia of chronic disease and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the over-the-counter NSAID/aspirin use, the arthritis activity, and the CKD only on direct questioning.",
+      "Perform the targeted physical exam to reveal pallor, active synovitis, edema, and a flow murmur.",
+      "Build a differential led by Anemia of chronic disease while naming the competing superimposed iron-deficiency anemia from GI blood loss and the must-not-miss GI malignancy, and state three mechanisms of ACD.",
+      "Order iron studies, a BMP with potassium, and a fecal occult blood test; read the patient's own hyperkalemic EKG and the normal CXR.",
+      "Commit to combined ACD-plus-iron-deficiency, name sTfR and endoscopy as discriminators, and manage with RA control, hyperkalemia treatment, NSAID cessation, GI work-up, a monitored iron trial, transfusion only if symptomatic, and safe outpatient discharge."
     ],
     "commonPitfalls": [
-      "Reflexive transfusion without indication",
-      "Missing underlying disease"
+      "Anchoring on pure ACD and ignoring the GI blood-loss / iron-deficiency picture",
+      "Continuing NSAIDs or the ACE inhibitor with K 6.0",
+      "Reflexive transfusion of a stable patient",
+      "Discharging without addressing the hyperkalemia or the GI bleeding source"
     ],
     "managementPearls": [
-      "Treat the underlying chronic disease"
+      "Treat the underlying disease — optimize RA control with rheumatology",
+      "Address the hyperkalemia — confirm K, hold the ACE inhibitor, treat and recheck"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "auscultate_aortic_area"
+      "inspect_conjunctiva"
     ],
     "criticalWorkupItems": [
-      "CBC with indices",
-      "Iron studies — ferritin/iron/TIBC to distinguish from iron deficiency"
+      "CBC with indices and smear",
+      "Iron studies — ferritin/iron/TIBC/transferrin saturation (+/- sTfR)",
+      "BMP / renal function with potassium"
     ],
     "criticalInterpretationItems": [
-      "Left bundle branch block.",
-      "Pulmonary fibrosis (basal reticulation, low volumes)."
+      "Peaked T waves of hyperkalemia (K 6.0) from CKD plus the ACE inhibitor.",
+      "Normal chest film; no cardiopulmonary cause for the dyspnea (anemia-related)."
     ],
     "criticalManagementItems": [
-      "Treat the underlying chronic disease"
+      "Treat the underlying disease — optimize RA control with rheumatology",
+      "Address the hyperkalemia — confirm K, hold the ACE inhibitor, treat and recheck"
     ],
     "keyImageInterpretationFindings": [
-      "Left bundle branch block.",
-      "Pulmonary fibrosis (basal reticulation, low volumes)."
+      "Peaked T waves of hyperkalemia (K 6.0) from CKD plus the ACE inhibitor.",
+      "Normal chest film; no cardiopulmonary cause for the dyspnea (anemia-related)."
     ],
     "criticalImageInterpretationFindings": [
-      "Left bundle branch block.",
-      "Pulmonary fibrosis (basal reticulation, low volumes)."
+      "Peaked T waves of hyperkalemia (K 6.0) from CKD plus the ACE inhibitor.",
+      "Normal chest film; no cardiopulmonary cause for the dyspnea (anemia-related)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When the EKG is the patient's OWN study, peaked T waves in a CKD patient on an ACE inhibitor are hyperkalemia until proven otherwise — name it and act.",
+      "A normal chest film in an anemic, dyspneic patient is a pertinent negative: the dyspnea is the anemia, not the lungs.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -609,7 +717,7 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's fatigue and concern",
         "points": 1
       },
       {
@@ -628,8 +736,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own study interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

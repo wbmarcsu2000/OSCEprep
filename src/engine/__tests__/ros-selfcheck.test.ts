@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { adaptCase } from "../schemaAdapter";
 import { askHistoryQuestion } from "../revealEngine";
 import { selfChecked, itemMatches } from "../textMatch";
-import cp06raw from "../../data/cases/chestpain-06.json";
+import cp06raw from "./__fixtures__/chestpain-06.fixture.json";
 
 const cp = adaptCase(cp06raw as never);
 

@@ -1,75 +1,81 @@
 {
   "id": "fever-04",
   "category": "Fever",
-  "difficulty": "easy",
-  "title": "Fever, productive cough, and pleuritic pain",
+  "difficulty": "hard",
+  "title": "Fever, dyspnea, and crackles in a comorbid elder — pneumonia or heart failure?",
   "diagnosis": "Community-acquired pneumonia",
   "chart": {
     "ageSex": "74F",
-    "cc": "Fever and cough",
-    "oneLiner": "74F is brought in with 3 days of fever, productive cough, and breathlessness, and new confusion noted by family today.",
+    "cc": "Fever, cough, and breathlessness",
+    "oneLiner": "74F with HTN, HFpEF, type 2 diabetes, CKD stage 3, and atrial fibrillation (on apixaban) is brought in with 3 days of fever, productive cough, pleuritic right-sided chest pain, and worsening breathlessness, plus new confusion noted by family today; she has been less able to take her usual furosemide and is eating/drinking poorly.",
     "vitals": {
-      "BP": "104/62",
-      "HR": "108",
-      "RR": "26",
-      "Temp": "38.7°C",
-      "SpO2": "90% RA"
+      "BP": "102/61",
+      "HR": "118",
+      "RR": "28",
+      "Temp": "38.8°C",
+      "SpO2": "89% RA"
     },
     "timer": 180
   },
-  "opening": "I've had a cough and fever for days, and now I'm a bit muddled and short of breath.",
-  "patientFile": "PERSONA: 74-year-old woman, febrile, tachypneic, mildly confused (a poor historian today). Family present.\n\nCOLLATERAL (provide ONLY if the student asks family/chart): 3 days of fever, productive (greenish) cough, pleuritic right-sided chest pain, and worsening breathlessness; today she became confused and is eating/drinking poorly. Lives independently at baseline (alert/oriented). MEDS: amlodipine, atorvastatin.\n\nHPI (from patient — limited): cough, fever, hard to breathe; somewhat confused.\nPMH: hypertension, mild COPD. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: febrile, tachypneic, mildly confused.\n- Vitals: BP 104/62, HR 108, RR 26, 38.7°C, SpO2 90% RA.\n- Lungs: crackles and bronchial breath sounds over the RIGHT lower zone; dullness to percussion there.\n- Cardiac: tachycardic. Neuro: disoriented to time, no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The patient is mildly confused: give limited answers. Provide COLLATERAL (timeline, baseline mental status) only when the student explicitly asks family/chart.\n- Focal right-base findings are revealed only if the lungs are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had a cough and fever for days, my chest hurts when I breathe, and now I'm muddled and can't catch my breath.",
+  "patientFile": "PERSONA: 74-year-old woman, febrile, tachypneic, mildly confused (a poor historian today). Family at the bedside and able to give collateral.\n\nHPI (from patient — limited): bad cough, fever, hurts to breathe on the right, very hard to get my breath, feeling muddled.\nCOLLATERAL (provide ONLY if the student asks family/chart): 3 days of fevers and rigors with a productive cough bringing up thick greenish-brown phlegm; sharp RIGHT-sided chest pain that is worse with breathing in and coughing (pleuritic); progressively worse breathlessness. Today she became confused and stopped eating and drinking well, and has been skipping her water pills and other tablets for a couple of days because she felt too unwell. She does NOT have the orthopnea or paroxysmal nocturnal dyspnea she gets with her heart-failure flares, no new ankle swelling, and no recent weight gain — which is different from her past CHF exacerbations. No calf pain or swelling, no recent travel or immobility, no hemoptysis. Lives independently at baseline, alert and fully oriented, does her own shopping and medications.\n\nPMH (reveal when asked): hypertension; heart failure with PRESERVED ejection fraction (HFpEF, EF ~55% on last echo) with prior admissions for fluid overload; type 2 diabetes mellitus; chronic kidney disease stage 3 (baseline creatinine ~1.4); permanent atrial fibrillation; mild COPD; remote smoker. No prior pneumonia, no known immunocompromise. Vaccinations not up to date (no recent pneumococcal or influenza vaccine).\nMEDS (reveal when asked — a long list; she has been missing doses): apixaban 5 mg twice daily (anticoagulation for AF); metoprolol succinate (rate control); furosemide 40 mg daily (missed last 2 days); lisinopril; amlodipine; empagliflozin (an SGLT2 inhibitor for diabetes); metformin; atorvastatin. ALLERGIES: none known.\nSOCIAL: former smoker (~30 pack-years, quit 10 years ago); rare alcohol; lives alone in a single-level home; daughter nearby and involved. FAMILY: noncontributory. ROS: as above; denies dysuria/frequency, denies abdominal pain, denies diarrhea, denies headache or neck stiffness.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: febrile, tachypneic, using accessory muscles, mildly confused.\n- Vitals: BP 102/61, HR 118 and irregularly irregular, RR 28, 38.8°C, SpO2 89% RA.\n- Lungs: focal coarse crackles and bronchial breath sounds with dullness to percussion and increased tactile fremitus over the RIGHT lower zone; the LEFT lung is clear. No diffuse bibasilar fine crackles and no wheeze.\n- Cardiac: irregularly irregular, tachycardic; no S3 gallop; JVP is NOT elevated (estimated normal).\n- Extremities: warm, no peripheral edema; calves non-tender, no asymmetry.\n- Neuro: disoriented to time and place, no focal motor deficit; moves all four limbs.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- The patient is mildly confused: give short, vague answers. Provide COLLATERAL (timeline, baseline mental status, the medication list, the ABSENCE of orthopnea/PND/edema) only when the student explicitly asks family/chart or asks the specific question.\n- Reveal the long medication list and the missed-doses detail only when meds/adherence are asked about.\n- Focal RIGHT-base findings, the absent edema, the normal JVP, and the irregularly irregular pulse are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing."
+,
   "dx": {
     "labs": {
-      "CBC": "WBC 17.0 with left shift.",
-      "BMP": "Na 132, BUN 32 (elevated — a CURB-65 component), Cr 1.3.",
-      "Lactate": "2.4 — elevated.",
-      "Cultures": "Blood and sputum cultures drawn.",
-      "ABG": "Mild hypoxemia.",
-      "Severity": "CURB-65: Confusion + Urea elevated + RR ≥30(borderline) + age ≥65 → high score, supports admission (and assess for ICU)."
+      "CBC": "WBC 18.4 with left shift (neutrophil predominance, bands present); Hgb 11.8; Plt 244.",
+      "BMP": "Na 130 (low), K 4.6, Cl 95, HCO3 17 (low) — anion gap = 130 − 95 − 17 = 18 (elevated, >12); glucose 188; BUN 44 (markedly elevated — a CURB-65 component); Cr 1.9 (acute kidney injury on baseline CKD, where baseline Cr is ~1.4).",
+      "VBG_Lactate": "Venous pH 7.30 with an elevated anion-gap metabolic acidosis; lactate 3.1 mmol/L (elevated) — consistent with sepsis-related hypoperfusion; mild concurrent contribution from poor intake on an SGLT2 inhibitor is possible (glucose only mildly elevated, ketones small).",
+      "Procalcitonin_BNP": "Procalcitonin 4.8 ng/mL (markedly elevated → supports a BACTERIAL infection over a primarily cardiac cause). BNP 410 pg/mL (only mildly elevated and near her chronic baseline given HFpEF/CKD/AF → does NOT establish acute decompensated heart failure).",
+      "Troponin_ECG_markers": "High-sensitivity troponin mildly elevated and flat on serial draws (demand ischemia from tachycardia/hypoxemia/sepsis, not an acute MI pattern).",
+      "Cultures": "Two sets of blood cultures and a sputum Gram stain/culture drawn before antibiotics; a urinary pneumococcal and Legionella antigen and a respiratory viral PCR sent.",
+      "Severity": "CURB-65 = 3 (Confusion + Urea/BUN >19 mg/dL + age ≥65; RR 28 is below the ≥30 threshold and BP is not <90/60) → still high-risk (3 of 5), supports admission and prompts assessment for ICU-level care; qSOFA ≥2 (confusion, RR ≥22, borderline SBP)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 2,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with lateral strain (ST depression / T inversion I, aVL, V5-6). No acute STEMI.",
-      "verify": "Source a study matching: Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with lateral strain (ST depression / T inversion I, aVL, V5-6). No acute STEMI. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Atrial fibrillation with a rapid ventricular response (~115–120 bpm) — irregularly irregular, no organized P waves. Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with a lateral strain pattern (downsloping ST depression / T-wave inversion in I, aVL, V5–V6). No acute ST elevation; the repolarization changes are the chronic LVH-strain pattern, NOT an acute STEMI.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response plus LVH by voltage with a lateral strain pattern; no acute STEMI. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing LVH with strain pattern",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and LVH with lateral strain",
       "searchTerms": [
-        "LVH strain pattern ECG",
-        "left ventricular hypertrophy voltage 12 lead"
+        "atrial fibrillation rapid ventricular response 12 lead ECG",
+        "LVH strain pattern atrial fibrillation ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 70-year-old man with longstanding hypertension presents with fever, productive cough, and breathlessness."
+      "clinicalVignette": "A 74-year-old woman with hypertension, HFpEF, and permanent atrial fibrillation presents with fever, productive cough, and breathlessness; the pulse is irregularly irregular and fast."
     },
     "cxr": {
       "label": "Chest X-ray (PA)",
       "asset": null,
+      "integrated": false,
       "source": "https://commons.wikimedia.org/w/index.php?search=lobar%20pneumonia%20consolidation%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion.",
-      "verify": "Pick a CC file showing a unilateral lobar consolidation (ideally lower zone).",
+      "findings": "Dense RIGHT lower lobe consolidation / lobar infiltrate with air bronchograms, and a small ipsilateral parapneumonic effusion (blunted right costophrenic angle). The LEFT lung is clear. Heart size is normal, there is NO cephalization/vascular redistribution, NO Kerley B lines, and NO bilateral perihilar/bat-wing edema — i.e. the pattern is a focal infection, NOT cardiogenic pulmonary edema.",
+      "verify": "Pick a CC file showing a UNILATERAL lobar consolidation (right lower zone), ideally with air bronchograms and a small parapneumonic effusion, without features of pulmonary edema.",
       "assetNeeded": true,
-      "imageDescription": "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion.",
+      "imageDescription": "Right lower lobe consolidation with air bronchograms and a small parapneumonic effusion; no edema pattern.",
       "searchTerms": [
-        "right lower lobe consolidation chest x-ray",
-        "lobar pneumonia radiograph"
+        "right lower lobe consolidation chest x-ray air bronchogram",
+        "lobar pneumonia radiograph parapneumonic effusion"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 62-year-old woman presents with fever, cough, and right-sided pleuritic chest pain."
+      "clinicalVignette": "A 74-year-old woman with fever, productive cough, and right-sided pleuritic chest pain; the question is whether the film shows focal infection or pulmonary edema."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
-    "Lactate",
+    "VBG_Lactate",
+    "Procalcitonin_BNP",
+    "Troponin_ECG_markers",
     "Cultures",
-    "ABG",
     "Severity",
     "ekg",
     "cxr"
@@ -77,60 +83,70 @@
   "essential": [
     "cxr",
     "CBC",
-    "BMP"
+    "BMP",
+    "Procalcitonin_BNP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential (note your leading diagnosis).",
-      "rubric": "Community-acquired pneumonia, with sepsis physiology (leading,8). Aspiration pneumonia (core,3). Heart failure (core,3). COPD exacerbation (core,2). Pulmonary embolism (CANT-MISS,3). Urinary or other source of sepsis (CANT-MISS to consider given confusion,2). Names CAP and recognizes severity/sepsis given confusion and hypotension (core,4).",
-      "idealAnswer": "Leading diagnosis: Community-acquired pneumonia, with sepsis physiology. Must-not-miss diagnoses to exclude: Pulmonary embolism; Urinary or other source of sepsis. Also reasonable: Aspiration pneumonia; Heart failure; COPD exacerbation.",
+      "prompt": "Based on your history and exam in this comorbid elder with fever, focal right-base findings, and breathlessness, give your differential (note your leading diagnosis) and explain the fork between an infectious and a cardiac cause. Also name three pathogens/etiologies you would cover for community-acquired pneumonia in an older patient with these comorbidities.",
+      "rubric": "Community-acquired pneumonia with sepsis physiology (leading,7). Acute decompensated heart failure / cardiogenic pulmonary edema — the genuine competing diagnosis given HFpEF, missed diuretic, AF with RVR, LVH/strain on EKG (CRITICAL competitor,5). Pulmonary embolism — must-not-miss given AF, hypoxemia, tachycardia, pleuritic pain (CANT-MISS,3). Aspiration pneumonia (core,2). COPD exacerbation (core,1). Urinary or other source of sepsis given confusion (core,1). Names three CAP pathogens/etiologies — e.g. Streptococcus pneumoniae, atypicals (Legionella/Mycoplasma), and gram-negatives or aspiration/anaerobes (core,3). Recognizes severity/sepsis from confusion, hypotension-trend, and hypoxemia (core,3). PENALTY: anchoring on CHF and treating with diuresis alone without covering infection (-3).",
+      "idealAnswer": "Leading diagnosis: Community-acquired pneumonia with sepsis physiology — 3 days of fever/rigors, purulent cough, focal RIGHT lower-zone consolidative findings (bronchial breath sounds, dullness, increased fremitus), leukocytosis, and confusion. The genuine competing diagnosis is acute decompensated heart failure / cardiogenic pulmonary edema: she has HFpEF, has missed her furosemide, and is in atrial fibrillation with a rapid ventricular response with LVH/strain on EKG — all of which can cause dyspnea and hypoxemia. The fork is resolved toward infection by the FOCAL unilateral findings, fever and leukocytosis, a markedly elevated procalcitonin, and the absence of orthopnea/PND, raised JVP, S3, edema, or an edema pattern on CXR. Must-not-miss: pulmonary embolism (AF, hypoxemia, pleuritic pain, tachycardia). Also reasonable: aspiration pneumonia, COPD exacerbation, and a urinary/other source of sepsis given the confusion. Three CAP pathogens/etiologies to cover: Streptococcus pneumoniae; an atypical (Legionella or Mycoplasma); and a gram-negative bacillus or aspiration/anaerobic coverage given age and comorbidity.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Community-acquired pneumonia, with sepsis physiology",
-            "points": 8
+            "item": "Community-acquired pneumonia with sepsis physiology",
+            "points": 7
+          },
+          {
+            "item": "Acute decompensated heart failure / cardiogenic pulmonary edema (competing diagnosis)",
+            "points": 5
           },
           {
             "item": "Pulmonary embolism",
             "points": 3
-          },
-          {
-            "item": "Urinary or other source of sepsis",
-            "points": 2
           }
         ],
         "coreActions": [
           {
             "item": "Aspiration pneumonia",
-            "points": 3
-          },
-          {
-            "item": "Heart failure",
-            "points": 3
-          },
-          {
-            "item": "COPD exacerbation",
             "points": 2
           },
           {
-            "item": "Names CAP and recognizes severity/sepsis given confusion and hypotension",
-            "points": 4
+            "item": "COPD exacerbation",
+            "points": 1
+          },
+          {
+            "item": "Urinary or other source of sepsis given confusion",
+            "points": 1
+          },
+          {
+            "item": "Names three CAP pathogens/etiologies (e.g. S. pneumoniae, an atypical, a gram-negative/aspiration)",
+            "points": 3
+          },
+          {
+            "item": "Recognizes severity/sepsis from confusion, BP trend, and hypoxemia",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on CHF and diureses without covering infection",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Acute decompensated heart failure / cardiogenic pulmonary edema",
         "Pulmonary embolism",
         "Urinary or other source of sepsis"
       ],
       "acceptableAlternatives": [
         "Aspiration pneumonia",
-        "Heart failure",
         "COPD exacerbation"
       ]
     },
@@ -139,15 +155,15 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "CXR (CANT-MISS,4). CBC (2). BMP — urea for severity (2). Lactate (2). Blood and sputum cultures before antibiotics (2). A severity score — CURB-65 / PSI (CANT-MISS,2). Consider respiratory viral testing (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lactate; Cultures; ABG; Severity.",
+      "prompt": "What initial workup do you want to order to both confirm pneumonia and adjudicate the heart-failure competitor?",
+      "rubric": "CXR — the key discriminator between focal infection and pulmonary edema (CANT-MISS,3). A severity score — CURB-65 / PSI (CANT-MISS,2). CBC (1). BMP — urea for severity, plus electrolytes/renal function (1). VBG with lactate (1). Procalcitonin and BNP to adjudicate infection vs heart failure (2). Troponin given tachycardia/hypoxemia (1). Blood and sputum cultures plus urinary pneumococcal/Legionella antigen and respiratory viral PCR before antibiotics (2). EKG to characterize the AF with RVR (1). Consider CTPA / risk-stratify for PE if not explained (1). PENALTY: empiric diuresis before excluding infection (-2); shotgun panel with no reasoning (-2).",
+      "idealAnswer": "Order: CXR (the key discriminator); a severity score (CURB-65/PSI); CBC; BMP; VBG with lactate; procalcitonin and BNP to help adjudicate infection vs heart failure; troponin; two sets of blood cultures, sputum Gram stain/culture, urinary pneumococcal and Legionella antigen, and respiratory viral PCR — all before antibiotics; and an EKG to characterize the atrial fibrillation with rapid ventricular response. Risk-stratify for PE (Wells/PERC) and obtain a CTPA if the hypoxemia/tachycardia are not fully explained.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "CXR",
-            "points": 4
+            "points": 3
           },
           {
             "item": "A severity score — CURB-65 / PSI",
@@ -156,32 +172,45 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
             "item": "BMP",
+            "points": 1
+          },
+          {
+            "item": "VBG with lactate",
+            "points": 1
+          },
+          {
+            "item": "Procalcitonin and BNP to adjudicate infection vs heart failure",
             "points": 2
           },
           {
-            "item": "Lactate",
+            "item": "Troponin",
+            "points": 1
+          },
+          {
+            "item": "Blood/sputum cultures and pneumococcal/Legionella antigen and viral PCR before antibiotics",
             "points": 2
           },
           {
-            "item": "Cultures",
-            "points": 2
-          },
-          {
-            "item": "ABG",
-            "points": 2
+            "item": "EKG to characterize the AF with RVR",
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Risk-stratify and consider CTPA for PE if hypoxemia unexplained",
+            "points": 1
+          }
+        ],
         "penalties": [
+          {
+            "item": "Empiric diuresis before excluding infection",
+            "points": -2
+          },
           {
             "item": "shotgun panel w/ no reasoning",
             "points": -2
@@ -192,8 +221,11 @@
         "CXR",
         "A severity score — CURB-65 / PSI"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Risk-stratify and consider CTPA for PE if hypoxemia unexplained"
+      ],
       "contraindicatedTests": [
+        "Empiric diuresis before excluding infection",
         "shotgun panel w/ no reasoning"
       ],
       "orderSensitiveActions": []
@@ -204,32 +236,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = left ventricular hypertrophy by voltage with a lateral strain pattern; not an acute STEMI. CREDIT: applies LVH voltage criteria (7); recognizes the strain repolarization pattern, not acute ischemia/STEMI (5); systematic read (3). PENALTY: over-calling the strain changes as acute ischemia/STEMI (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they bear on the pneumonia-versus-heart-failure question.",
+      "rubric": "Findings = atrial fibrillation with a rapid ventricular response (~115–120 bpm), PLUS LVH by voltage with a lateral strain pattern; NOT an acute STEMI. CREDIT: identifies atrial fibrillation with RVR — irregularly irregular, no P waves (6); applies LVH voltage criteria and recognizes the lateral strain repolarization pattern, not acute ischemia (5); reads systematically and connects the AF/RVR and LVH to the chronic cardiac substrate while noting the rate is being driven by sepsis/fever/hypoxemia rather than primary decompensation (4). PENALTY: over-calling the strain changes as an acute STEMI, or calling the rhythm a primary new tachyarrhythmia needing immediate cardioversion rather than rate control of sepsis-driven AF (-3).",
       "keyFindings": [
-        "applies LVH voltage criteria",
-        "recognizes a strain pattern, not acute STEMI"
+        "atrial fibrillation with rapid ventricular response",
+        "LVH by voltage with a lateral strain pattern, not an acute STEMI"
       ],
       "criticalFindings": [
-        "Left ventricular hypertrophy with strain pattern (not an acute STEMI)."
+        "Atrial fibrillation with rapid ventricular response plus LVH with a lateral strain pattern (not an acute STEMI)."
       ],
       "commonMistakes": [
-        "reading the strain repolarization changes as acute ischemia/STEMI"
+        "reading the LVH-strain repolarization changes as an acute STEMI/ischemia",
+        "treating the sepsis-driven AF with RVR as a primary arrhythmia for immediate cardioversion"
       ],
-      "idealAnswer": "Left ventricular hypertrophy by voltage with a lateral strain pattern; not an acute STEMI.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (~115–120 bpm): irregularly irregular with no organized P waves. There is also LVH by voltage with a lateral strain pattern (downsloping ST depression / T-wave inversion in I, aVL, V5–V6) — this is the chronic hypertensive substrate, NOT an acute STEMI. Clinically, the AF/RVR and LVH are her baseline cardiac substrate; the fast rate here is being driven by fever, hypoxemia, and sepsis, so the priority is treating the infection and supporting rate rather than assuming primary cardiac decompensation or an acute coronary event.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Left ventricular hypertrophy with strain pattern (not an acute STEMI)."
+          "Atrial fibrillation with rapid ventricular response plus LVH with a lateral strain pattern (not an acute STEMI)."
         ],
         "coreActions": [
-          "applies LVH voltage criteria",
-          "recognizes a strain pattern, not acute STEMI"
+          "atrial fibrillation with rapid ventricular response",
+          "LVH by voltage with a lateral strain pattern, not an acute STEMI"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "over-reads the strain as an acute STEMI or treats sepsis-driven AF as a primary arrhythmia for cardioversion",
             "points": -3
           }
         ]
@@ -241,46 +274,47 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = focal lobar consolidation (right lower zone) ± small effusion. CREDIT: identifies a focal consolidation/opacity (5); localizes side/lobe (3); notes any parapneumonic effusion (2). PENALTY: inventing diffuse edema/normal read (-2).",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings, and state which pattern this is — focal infection or pulmonary edema — and why.",
+      "rubric": "Findings = dense RIGHT lower lobe consolidation with air bronchograms and a small ipsilateral parapneumonic effusion; left lung clear; normal heart size with NO cephalization/Kerley B lines/bilateral edema. CREDIT: identifies a focal consolidation/opacity and localizes it to the right lower lobe (5); notes the parapneumonic effusion (2); explicitly states the pattern is focal infection NOT cardiogenic edema, citing the absent edema features as the discriminator (3). PENALTY: calling diffuse pulmonary edema or a normal film (-2).",
       "keyFindings": [
-        "identifies a focal consolidation/opacity",
-        "localizes side/lobe",
-        "notes any parapneumonic effusion"
+        "right lower lobe consolidation with air bronchograms",
+        "small parapneumonic effusion",
+        "no pulmonary-edema pattern (focal infection, not cardiogenic edema)"
       ],
       "criticalFindings": [
-        "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion."
+        "Right lower lobe consolidation with air bronchograms and a small parapneumonic effusion; no edema pattern — a focal infection, not cardiogenic pulmonary edema."
       ],
       "commonMistakes": [
-        "inventing diffuse edema/normal read"
+        "calling this bilateral pulmonary edema / acute CHF",
+        "inventing a normal read or missing the parapneumonic effusion"
       ],
-      "idealAnswer": "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion.",
+      "idealAnswer": "Dense RIGHT lower lobe consolidation with air bronchograms and a small ipsilateral parapneumonic effusion (blunted right costophrenic angle); the left lung is clear. The heart size is normal and there is no cephalization, no Kerley B lines, and no bilateral perihilar/bat-wing edema. This is a FOCAL infective consolidation, not cardiogenic pulmonary edema — which, with the fever, leukocytosis, and elevated procalcitonin, resolves the diagnostic fork toward pneumonia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion.",
+            "item": "Recognizes: right lower lobe consolidation with air bronchograms and a small parapneumonic effusion; focal infection, not cardiogenic edema.",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "identifies a focal consolidation/opacity",
+            "item": "identifies and localizes a focal consolidation/opacity (right lower lobe)",
             "points": 5
           },
           {
-            "item": "localizes side/lobe",
-            "points": 3
+            "item": "notes the parapneumonic effusion",
+            "points": 2
           },
           {
-            "item": "notes any parapneumonic effusion",
-            "points": 2
+            "item": "states the pattern is focal infection not pulmonary edema, citing absent edema features",
+            "points": 3
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing diffuse edema/normal read",
+            "item": "calling diffuse pulmonary edema or a normal read",
             "points": -2
           }
         ]
@@ -290,9 +324,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Focal consolidation, leukocytosis, confusion, elevated urea, and hypotension. What is your diagnosis and how severe is it?",
-      "rubric": "Community-acquired pneumonia, severe (6). Quantifies severity using CURB-65 / PSI — confusion, urea, age, vitals — supporting admission and possibly ICU (4).",
-      "idealAnswer": "Severe community-acquired pneumonia — a high CURB-65 (Confusion, elevated Urea/BUN, age >=65, borderline RR, low-normal BP) supports admission and assessment for ICU-level care.",
+      "prompt": "Putting it together — focal RLL consolidation, leukocytosis, procalcitonin 4.8, only-mildly-elevated BNP, AF with RVR and LVH/strain on her EKG, confusion, elevated urea, hyponatremia, AKI on CKD, and an anion-gap acidosis with lactate — commit to a diagnosis, grade its severity, and name three features that distinguish this from acute decompensated heart failure.",
+      "rubric": "Severe community-acquired pneumonia with sepsis (6). Quantifies severity using CURB-65 = 3 (confusion, urea, age) / high PSI, supporting admission and ICU assessment, and acknowledges qSOFA ≥2 (2). Names three discriminators from heart failure — e.g. FOCAL unilateral consolidation rather than bilateral edema on CXR, markedly elevated procalcitonin with only mildly elevated near-baseline BNP, and the absence of orthopnea/PND/raised JVP/S3/edema (2). Acknowledges the concurrent multi-system problems (hyponatremia, AKI on CKD, anion-gap acidosis/elevated lactate) as part of the sepsis picture and names the discriminating tests rather than ignoring residual ambiguity.",
+      "idealAnswer": "Severe community-acquired pneumonia with sepsis. Severity: CURB-65 = 3 (Confusion, elevated Urea/BUN, age ≥65; RR ~28 is below the ≥30 threshold) with a high PSI class and qSOFA ≥2 (confusion, RR ≥22, borderline SBP) — this supports admission and assessment for ICU-level care. Three features that distinguish this from acute decompensated heart failure: (1) a FOCAL unilateral right-lower-lobe consolidation with a parapneumonic effusion rather than a bilateral cardiogenic edema pattern; (2) a markedly elevated procalcitonin (4.8) with a BNP that is only mildly raised and near her chronic HFpEF/CKD/AF baseline; and (3) the clinical absence of orthopnea, PND, raised JVP, an S3, and peripheral edema. The concurrent hyponatremia, AKI on baseline CKD, and elevated anion-gap acidosis with lactate are best explained by sepsis/hypoperfusion and poor intake (with a possible minor SGLT2-inhibitor contribution), not by a primary cardiac process — and they reinforce severity. The AF with RVR is rate that is being driven by the sepsis. Residual ambiguity (e.g. a contributory PE) is addressed by risk-stratifying and imaging if the hypoxemia is out of proportion.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -305,46 +339,58 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH/IDSA-ATS CAP: empiric ceftriaxone + azithromycin OR levofloxacin (CANT-MISS,7); broaden to vanc+cefepime if MRSA/PsA risk (4); cultures/MRSA swab to de-escalate (3); supplemental O2 (3); CURB-65/PSI triage (2); ~5-day course, IV→PO (3). PENALTY: daptomycin for pneumonia (-3); no atypical coverage (-2).",
-      "idealAnswer": "Inpatient non-severe CAP: ceftriaxone PLUS azithromycin, OR levofloxacin monotherapy. MRSA/Pseudomonas risk: vancomycin + cefepime, with cultures + MRSA swab to de-escalate. Supplemental O2; CURB-65/PSI to triage; consider steroids in severe CAP. Treat ~5 days if stable; convert IV→PO when improving.",
+      "prompt": "What is your management plan, including antibiotics, how you handle the heart-failure and atrial-fibrillation overlap, and disposition/safe-discharge planning for this comorbid, polypharmacy patient?",
+      "rubric": "Per MGH/IDSA-ATS severe CAP: empiric coverage for severe inpatient CAP — a beta-lactam (ceftriaxone) PLUS a macrolide (azithromycin), OR a respiratory fluoroquinolone (levofloxacin); add MRSA/Pseudomonas coverage (vancomycin + an antipseudomonal beta-lactam such as cefepime/piperacillin-tazobactam) given severity/comorbidity if risk factors (CANT-MISS,7). Sepsis resuscitation — supplemental O2 to target, judicious IV fluids titrated to her HFpEF, lactate-guided, source control of the parapneumonic effusion if it enlarges (core,4). Rate-control the sepsis-driven AF with RVR by treating the infection first and using/​continuing metoprolol cautiously rather than rushing cardioversion; do NOT empirically diurese unless overt overload develops (core,3). Reconcile the held anticoagulation and renally-cleared meds — restart apixaban once stable, hold/adjust empagliflozin and metformin during acute illness/AKI, hold furosemide while hypotensive/septic (core,3). CURB-65/PSI-based triage to ward vs ICU (core,2). Cultures/antigens to de-escalate; ~5–7 day course, IV→PO when improving (core,3). Safe-discharge/disposition: medication reconciliation, daughter/caregiver education, ensure vaccination catch-up (pneumococcal/influenza) and close PCP/cardiology follow-up, confirm she can manage her complex regimen at home or arrange support (core,3). PENALTY: discharging a CURB-65 = 3 septic patient (-4); diuresing this hypotensive septic patient as if it were primary CHF (-3); daptomycin for pneumonia (-3); no atypical coverage (-2).",
+      "idealAnswer": "Treat as severe inpatient CAP with sepsis. Antibiotics: empiric ceftriaxone PLUS azithromycin, OR levofloxacin monotherapy; given the severity and comorbidity, add vancomycin + an antipseudomonal beta-lactam (cefepime or piperacillin-tazobactam) if MRSA/Pseudomonas risk factors are present, then de-escalate on cultures, pneumococcal/Legionella antigens, and viral PCR. Sepsis care: supplemental O2 to target ≥92%, judicious lactate-guided IV fluids titrated carefully to her HFpEF (avoid over-resuscitation), reassess perfusion. Handle the cardiac overlap correctly: the AF with RVR is being driven by fever/hypoxemia/sepsis, so treat the infection first and continue/cautiously use metoprolol for rate rather than rushing cardioversion; do NOT empirically diurese a hypotensive septic patient — reserve diuresis for clear volume overload. Reconcile the polypharmacy: restart apixaban once bleeding risk and stability allow, hold furosemide while hypotensive/septic, hold empagliflozin and metformin during acute illness/AKI (euglycemic DKA and lactic-acidosis risk), and dose-adjust renally cleared drugs. Triage by CURB-65 = 3 / high PSI and qSOFA ≥2 to a monitored bed with ICU assessment. Plan duration ~5–7 days, convert IV→PO when afebrile and improving. Safe-discharge planning: full medication reconciliation, caregiver (daughter) education, pneumococcal and influenza vaccination catch-up, and close PCP/cardiology follow-up, confirming she can manage her complex regimen at home or arranging home support before discharge.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Empiric antibiotics",
+            "item": "Empiric severe-CAP antibiotics (beta-lactam + macrolide or respiratory fluoroquinolone; add MRSA/PsA coverage if risk)",
             "points": 7
           }
         ],
         "coreActions": [
           {
-            "item": "Broaden to vanc+cefepime if MRSA/PsA risk",
+            "item": "Sepsis resuscitation: O2 to target and judicious lactate-guided fluids titrated to HFpEF",
             "points": 4
           },
           {
-            "item": "Cultures / MRSA swab to de-escalate",
+            "item": "Rate-control sepsis-driven AF by treating infection first / cautious metoprolol, not rushed cardioversion; no empiric diuresis",
             "points": 3
           },
           {
-            "item": "Supplemental oxygen",
+            "item": "Medication reconciliation: restart apixaban when stable, hold/adjust empagliflozin, metformin, furosemide during acute illness/AKI",
             "points": 3
           },
           {
-            "item": "CURB-65/PSI triage",
+            "item": "CURB-65/PSI-based triage to ward vs ICU",
             "points": 2
           },
           {
-            "item": "Duration ~5 days IV to PO",
+            "item": "Cultures/antigens to de-escalate; ~5–7 day course IV to PO",
+            "points": 3
+          },
+          {
+            "item": "Safe discharge: med reconciliation, caregiver education, vaccination catch-up, close PCP/cardiology follow-up",
             "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Consider steroids in severe CAP",
+            "item": "Drain/follow the parapneumonic effusion and consider steroids only if criteria for severe CAP/septic shock are met",
             "points": 1
           }
         ],
         "penalties": [
+          {
+            "item": "Discharging a CURB-65 = 3 septic patient",
+            "points": -4
+          },
+          {
+            "item": "Diuresing a hypotensive septic patient as if primary CHF",
+            "points": -3
+          },
           {
             "item": "Daptomycin for pneumonia",
             "points": -3
@@ -356,22 +402,25 @@
         ]
       },
       "requiredActions": [
-        "Empiric antibiotics"
+        "Empiric severe-CAP antibiotics (beta-lactam + macrolide or respiratory fluoroquinolone; add MRSA/PsA coverage if risk)"
       ],
       "optionalActions": [
-        "Broaden to vanc+cefepime if MRSA/PsA risk",
-        "Cultures / MRSA swab to de-escalate",
-        "Supplemental oxygen",
-        "CURB-65/PSI triage",
-        "Duration ~5 days IV to PO",
-        "Consider steroids in severe CAP"
+        "Sepsis resuscitation: O2 to target and judicious lactate-guided fluids titrated to HFpEF",
+        "Rate-control sepsis-driven AF by treating infection first / cautious metoprolol, not rushed cardioversion; no empiric diuresis",
+        "Medication reconciliation: restart apixaban when stable, hold/adjust empagliflozin, metformin, furosemide during acute illness/AKI",
+        "CURB-65/PSI-based triage to ward vs ICU",
+        "Cultures/antigens to de-escalate; ~5–7 day course IV to PO",
+        "Safe discharge: med reconciliation, caregiver education, vaccination catch-up, close PCP/cardiology follow-up",
+        "Drain/follow the parapneumonic effusion and consider steroids only if criteria for severe CAP/septic shock are met"
       ],
       "unsafeActions": [
+        "Discharging a CURB-65 = 3 septic patient",
+        "Diuresing a hypotensive septic patient as if primary CHF",
         "Daptomycin for pneumonia",
         "No atypical coverage"
       ],
       "consults": [],
-      "disposition": "Admit (per CURB-65/PSI)",
+      "disposition": "Admit to a monitored bed with ICU assessment (per CURB-65 = 3 / high PSI / qSOFA ≥2)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Community Acquired Pneumonia",
@@ -387,14 +436,15 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "74-year-old woman, febrile, tachypneic, mildly confused (a poor historian today). Family present.",
+    "communicationStyle": "confused; gives limited, vague answers and needs collateral from family for the timeline, baseline mental status, and the long medication list",
+    "affect": "74-year-old woman, febrile, tachypneic, mildly confused (a poor historian today). Family at the bedside able to give collateral.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history, the missed-doses/adherence detail, or the long medication list unless directly asked",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam or diagnostic findings (focal right-base findings, absent edema, normal JVP, irregular pulse)",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -421,12 +471,46 @@
         "smoking",
         "tobacco",
         "cigarettes",
-        "do you smoke"
+        "do you smoke",
+        "pack years"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "taking your medications",
+        "missed doses",
+        "adherence",
+        "have you been taking",
+        "water pill",
+        "diuretic"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "heart_failure_features",
+      "category": "ros",
+      "triggerConcepts": [
+        "orthopnea",
+        "lying flat",
+        "paroxysmal nocturnal dyspnea",
+        "wake up short of breath",
+        "ankle swelling",
+        "leg swelling",
+        "weight gain"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
     },
     {
       "id": "onset",
@@ -449,7 +533,11 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "pleuritic",
+        "worse with breathing",
+        "sputum",
+        "phlegm"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -475,7 +563,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "chills",
+        "calf pain",
+        "hemoptysis"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -502,7 +594,11 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "heart failure",
+        "diabetes",
+        "kidney",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -515,7 +611,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "apixaban",
+        "blood thinner",
+        "furosemide"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -528,7 +627,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior heart failure flare",
+        "past admissions"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -539,7 +640,7 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_posterior_lungs_finding_1",
-      "finding": "Lungs: crackles and bronchial breath sounds over the RIGHT lower zone; dullness to percussion there.",
+      "finding": "Lungs: focal coarse crackles and bronchial breath sounds with dullness to percussion and increased tactile fremitus over the RIGHT lower zone; the LEFT lung is clear. No diffuse bibasilar fine crackles and no wheeze.",
       "revealedBy": [
         "auscultate_posterior_lungs",
         "auscultate_anterior_lungs"
@@ -549,31 +650,32 @@
       "normalIfNotPresent": "Lungs clear."
     },
     {
-      "id": "percuss_posterior_lungs_finding_2",
-      "finding": "Lungs: crackles and bronchial breath sounds over the RIGHT lower zone; dullness to percussion there.",
+      "id": "assess_tactile_fremitus_finding_2",
+      "finding": "Lungs: increased tactile fremitus, dullness to percussion, and bronchial breath sounds over the RIGHT lower zone (consolidation), with the left lung clear; no diffuse edema pattern.",
       "revealedBy": [
-        "percuss_posterior_lungs",
+        "assess_tactile_fremitus",
         "assess_egophony",
         "auscultate_posterior_lungs"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No consolidation."
+      "normalIfNotPresent": "Normal fremitus; no consolidation."
     },
     {
-      "id": "assess_motor_strength_finding_3",
-      "finding": "Cardiac: tachycardic. Neuro: disoriented to time, no focal deficit.",
+      "id": "assess_jvp_finding_3",
+      "finding": "Cardiac: irregularly irregular and tachycardic; no S3 gallop; JVP is NOT elevated. Extremities warm with NO peripheral edema. (These argue against acute decompensated heart failure.)",
       "revealedBy": [
-        "assess_motor_strength",
-        "assess_pronator_drift"
+        "assess_jvp",
+        "assess_edema",
+        "auscultate_mitral_area"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No focal motor deficit."
+      "normalIfNotPresent": "JVP normal; no edema."
     },
     {
       "id": "assess_mental_status_finding_4",
-      "finding": "General: febrile, tachypneic, mildly confused.",
+      "finding": "General: febrile, tachypneic, using accessory muscles, mildly confused; disoriented to time and place with no focal motor deficit.",
       "revealedBy": [
         "assess_mental_status"
       ],
@@ -592,36 +694,41 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Community-acquired pneumonia",
-    "diagnosticFramework": "74F is brought in with 3 days of fever, productive cough, and breathlessness, and new confusion noted by family today. The diagnosis is Community-acquired pneumonia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "74F with HTN, HFpEF, type 2 diabetes, CKD stage 3, and permanent atrial fibrillation (on apixaban, missing recent furosemide doses) is brought in with 3 days of fever, productive cough, pleuritic right-sided chest pain, and worsening breathlessness plus new confusion. The diagnosis is severe Community-acquired pneumonia with sepsis. The hard part is the genuine fork against acute decompensated heart failure — the patient has HFpEF, an LVH/strain EKG, and atrial fibrillation with a rapid ventricular response — which is resolved toward infection by the FOCAL unilateral right-lower-lobe consolidation on CXR, fever and leukocytosis, a markedly elevated procalcitonin against an only-mildly-elevated near-baseline BNP, and the clinical absence of orthopnea, PND, raised JVP, S3, and edema. Concurrent multi-system abnormalities — hyponatremia, AKI on CKD, and an anion-gap metabolic acidosis with elevated lactate — are part of the sepsis picture, and polypharmacy (apixaban, furosemide, empagliflozin, metformin) must be reconciled.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Lungs: crackles and bronchial breath sounds over the RIGHT lower zone; dullness to percussion there.",
-      "Lungs: crackles and bronchial breath sounds over the RIGHT lower zone; dullness to percussion there.",
-      "Cardiac: tachycardic. Neuro: disoriented to time, no focal deficit.",
-      "General: febrile, tachypneic, mildly confused."
+      "Lungs: focal coarse crackles and bronchial breath sounds with dullness to percussion and increased tactile fremitus over the RIGHT lower zone; the LEFT lung is clear. No diffuse bibasilar fine crackles and no wheeze.",
+      "Lungs: increased tactile fremitus, dullness to percussion, and bronchial breath sounds over the RIGHT lower zone (consolidation), with the left lung clear; no diffuse edema pattern.",
+      "Cardiac: irregularly irregular and tachycardic; no S3 gallop; JVP is NOT elevated. Extremities warm with NO peripheral edema. (These argue against acute decompensated heart failure.)",
+      "General: febrile, tachypneic, using accessory muscles, mildly confused; disoriented to time and place with no focal motor deficit."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
-      "Lactate",
+      "VBG_Lactate",
+      "Procalcitonin_BNP",
+      "Troponin_ECG_markers",
       "Cultures",
-      "ABG",
       "Severity"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Community-acquired pneumonia while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Community-acquired pneumonia and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, recognizing both an infective and a cardiac story in a comorbid elder.",
+      "Elicit the focused history via family collateral (timeline, baseline mental status, the long medication list and missed furosemide, and the ABSENCE of orthopnea/PND/edema).",
+      "Perform the targeted exam to reveal focal right-base consolidation findings and the pertinent cardiac negatives (normal JVP, no S3, no edema) that argue against decompensated heart failure.",
+      "Build a differential led by Community-acquired pneumonia with sepsis while genuinely weighing acute decompensated heart failure and excluding pulmonary embolism.",
+      "Order a focused workup — CXR as the key discriminator, procalcitonin/BNP to adjudicate, a severity score — and read the integrated EKG (AF with RVR + LVH/strain, not STEMI) and the CXR (focal consolidation, not edema).",
+      "Commit to severe Community-acquired pneumonia (CURB-65 = 3), manage the sepsis and the AF/heart-failure overlap correctly without empiric diuresis, reconcile the polypharmacy, and arrange safe disposition with caregiver follow-up."
     ],
     "commonPitfalls": [
-      "Daptomycin for pneumonia",
-      "No atypical coverage"
+      "Anchoring on CHF and diuresing without covering infection",
+      "Over-reading the LVH-strain EKG as an acute STEMI",
+      "Calling the CXR bilateral pulmonary edema",
+      "Discharging a CURB-65 = 3 septic patient",
+      "Failing to reconcile apixaban/empagliflozin/metformin during acute illness and AKI"
     ],
     "managementPearls": [
-      "Empiric antibiotics"
+      "Empiric severe-CAP antibiotics (beta-lactam + macrolide or respiratory fluoroquinolone; add MRSA/PsA coverage if risk)",
+      "Treat sepsis-driven AF with RVR by treating the infection first rather than rushing cardioversion or empiric diuresis"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -630,39 +737,39 @@
       "A severity score — CURB-65 / PSI"
     ],
     "criticalInterpretationItems": [
-      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
-      "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion."
+      "Atrial fibrillation with rapid ventricular response plus LVH with a lateral strain pattern (not an acute STEMI).",
+      "Right lower lobe consolidation with air bronchograms and a small parapneumonic effusion; focal infection, not cardiogenic edema."
     ],
     "criticalManagementItems": [
-      "Empiric antibiotics"
+      "Empiric severe-CAP antibiotics (beta-lactam + macrolide or respiratory fluoroquinolone; add MRSA/PsA coverage if risk)"
     ],
     "keyImageInterpretationFindings": [
-      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
-      "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion."
+      "Atrial fibrillation with rapid ventricular response plus LVH with a lateral strain pattern (not an acute STEMI).",
+      "Right lower lobe consolidation with air bronchograms and a small parapneumonic effusion; focal infection, not cardiogenic edema."
     ],
     "criticalImageInterpretationFindings": [
-      "Left ventricular hypertrophy with strain pattern (not an acute STEMI).",
-      "Right lower lobe consolidation / lobar infiltrate; possible small parapneumonic effusion."
+      "Atrial fibrillation with rapid ventricular response plus LVH with a lateral strain pattern (not an acute STEMI).",
+      "Right lower lobe consolidation with air bronchograms and a small parapneumonic effusion; focal infection, not cardiogenic edema."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An integrated EKG belongs to THIS patient: AF with a rapid rate plus LVH/strain is her chronic substrate driven faster by sepsis — name it, then judge its relevance rather than over-calling a STEMI.",
+      "On a fever-and-dyspnea chest film, the discriminator between infection and heart failure is focal unilateral consolidation versus a bilateral edema pattern — read for both.",
+      "State pertinent negatives (no cephalization, no Kerley B lines, no bat-wing edema), not just positives."
     ]
   },
   "communicationScoring": {
     "maxPoints": 5,
     "items": [
       {
-        "item": "Uses an open-ended opening question",
+        "item": "Uses an open-ended opening question and obtains collateral from family",
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's and family's concern",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (substance use, adherence)",
         "points": 1
       },
       {
@@ -677,7 +784,7 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
+    "appliedOn": "2026-06-15",
     "imagePolicy": "pathology-forward standalone interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,

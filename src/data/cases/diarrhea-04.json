@@ -1,133 +1,149 @@
 {
   "id": "diarrhea-04",
   "category": "Diarrhea",
-  "difficulty": "moderate",
-  "title": "Chronic diarrhea with weight loss",
+  "difficulty": "hard",
+  "title": "Chronic diarrhea and weight loss in a woman with autoimmune thyroid disease and polypharmacy",
   "diagnosis": "Celiac disease",
   "chart": {
     "ageSex": "35F",
-    "cc": "Chronic diarrhea",
-    "oneLiner": "35F presents with months of loose, bulky, foul-smelling stools, bloating, fatigue, and unintentional weight loss.",
+    "cc": "Chronic diarrhea and weight loss",
+    "oneLiner": "35F with Hashimoto thyroiditis on levothyroxine, recently started omeprazole for reflux, and intermittent NSAID use presents with months of loose, bulky, foul-smelling stools, bloating, fatigue, ~14 lb unintentional weight loss, and new muscle cramps and palpitations.",
     "vitals": {
-      "BP": "112/72",
-      "HR": "84",
-      "RR": "14",
-      "Temp": "36.8°C",
+      "BP": "108/68",
+      "HR": "96",
+      "RR": "15",
+      "Temp": "36.7°C",
       "SpO2": "99% RA"
     },
     "timer": 180
   },
-  "opening": "I've had loose stools and bloating for months, I'm tired all the time, and I've lost weight.",
-  "patientFile": "PERSONA: 35-year-old woman, thin, fatigued. Good historian.\n\nHPI: Several months of loose, bulky, greasy/foul-smelling stools (steatorrhea), bloating, and excessive gas; symptoms worse with bread/pasta (only if asked about diet/triggers). Fatigue and ~12 lb unintentional weight loss. An itchy, blistering rash on the elbows/knees (dermatitis herpetiformis) — only if asked or examined. NO nocturnal bloody diarrhea, NO recent travel, NO antibiotics.\nPMH: prior iron-deficiency anemia not explained; possible autoimmune thyroid disease. FAMILY: a sister with celiac disease (if asked). MEDS: none. SOCIAL: minimal alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: thin, pale.\n- Vitals: BP 112/72, HR 84, RR 14, 36.8°C, SpO2 99% RA.\n- Abdomen: soft, mildly distended, nontender; active bowel sounds.\n- Skin: grouped vesicles/excoriations on extensor surfaces if examined. Angular cheilitis if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gluten/diet trigger, the rash, or the family history unless asked about diet/triggers, skin symptoms, or family history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had loose stools and bloating for months, I'm exhausted, I've lost weight without trying, and lately I've been getting muscle cramps and my heart sometimes flutters.",
+  "patientFile": "PERSONA: 35-year-old woman, thin and tired-looking, but a good historian. Worried because she has lost weight without trying and now has cramps and palpitations.\n\nHPI: Several months of loose, bulky, greasy/foul-smelling stools that are hard to flush (steatorrhea), with bloating and excessive gas; symptoms are clearly worse after bread, pasta, and beer (reveal the gluten/diet trigger ONLY if asked about diet/food triggers). Fatigue and ~14 lb unintentional weight loss. In the last few weeks she has noticed muscle cramps in her calves and hands, occasional tingling around the mouth, and intermittent heart palpitations/fluttering (reveal these only if asked about cramps, neuro symptoms, or palpitations). An itchy, blistering rash on the elbows and knees that comes and goes (dermatitis herpetiformis) — reveal only if asked about skin or if the skin is examined. She feels her appetite is actually increased yet she keeps losing weight, and she sometimes feels warm and anxious (reveal only if asked about appetite, heat intolerance, or mood). NO nocturnal bloody diarrhea, NO mouth ulcers or perianal disease, NO recent travel, NO recent antibiotics, NO sick contacts.\n\nPMH: Hashimoto (autoimmune hypothyroid) disease diagnosed 4 years ago; prior iron-deficiency anemia that was never explained and recurred after iron was stopped; reflux symptoms for the past year. FAMILY: a sister with celiac disease and a mother with type 1 diabetes (reveal only if asked about family history). \n\nMEDS (reveal each only if asked about medications, or about a specific drug): levothyroxine 125 mcg daily — she admits she sometimes takes an extra tablet on days she feels sluggish and has not had her thyroid level rechecked in over a year; omeprazole started ~8 months ago for reflux; ibuprofen several times a week for headaches and period cramps; over-the-counter iron when she remembers. ALLERGIES: none. SOCIAL: a few beers on weekends; no tobacco; no drugs; works as a schoolteacher. ROS: as above — increased appetite with weight loss, occasional heat intolerance, palpitations, calf/hand cramps, perioral tingling; no fevers, no rectal bleeding, no joint swelling.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: thin, pale, mildly anxious; no acute distress.\n- Vitals: BP 108/68, HR 96 (occasionally feels irregular to her), RR 15, 36.7°C, SpO2 99% RA.\n- Skin: grouped vesicles and excoriations on the extensor surfaces of elbows and knees (dermatitis herpetiformis) if examined.\n- Eyes/mouth: pale conjunctivae; angular cheilitis and a smooth, atrophic (beefy) tongue if the mouth/oropharynx is inspected.\n- Neck: no thyroid nodule or goiter on this visit; no cervical/supraclavicular lymphadenopathy.\n- Abdomen: soft, mildly distended, nontender; active/normal bowel sounds; no organomegaly, no masses.\n- Neuro: mild positive Chvostek (perioral/cheek twitch) if specifically elicited; otherwise no focal deficit. (Trousseau not routinely tested.)\n- No peripheral edema. No lymphadenopathy anywhere.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gluten/diet trigger, the rash, the family history, the increased appetite/heat intolerance, or the cramps/palpitations unless asked about the relevant topic.\n- Do NOT volunteer the levothyroxine self-dose-adjustment, the omeprazole, or the NSAID use unless asked about medications or about that specific symptom.\n- Reveal physical findings (rash, oral findings, Chvostek, pallor) only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "CBC": "Hgb 10.8 with low MCV — iron-deficiency-pattern anemia.",
-      "Serology": "Tissue transglutaminase IgA (tTG-IgA) strongly POSITIVE; total IgA normal (so the IgA-based test is valid).",
-      "Nutrition": "Low ferritin, low vitamin D, mildly low folate — malabsorption pattern.",
-      "Biopsy": "Duodenal biopsy (on a gluten-containing diet): villous atrophy, crypt hyperplasia, intraepithelial lymphocytosis — consistent with celiac disease.",
-      "StoolStudies": "Infectious workup negative."
+      "CBC": "Hgb 10.6 with low MCV (microcytic) — iron-deficiency-pattern anemia. Peripheral smear shows occasional Howell-Jolly bodies and target cells, suggesting functional hyposplenism. WBC and platelets normal.",
+      "Serology": "Tissue transglutaminase IgA (tTG-IgA) strongly POSITIVE at >10x the upper limit of normal; total IgA normal (so the IgA-based test is valid). Anti-deamidated gliadin peptide also positive.",
+      "Electrolytes": "Na 139, Cl 112, HCO3 18 → anion gap = 139 − (112 + 18) = 9 (NORMAL anion gap), i.e. a hyperchloremic non-anion-gap metabolic acidosis from intestinal bicarbonate loss. K 2.9 (low). Corrected Ca 7.6 mg/dL (low) with albumin 4.0. Mg 1.4 mg/dL (low). Creatinine normal. This electrolyte picture — hypokalemia, hypocalcemia, hypomagnesemia, non-gap acidosis — is the metabolic footprint of chronic diarrhea/malabsorption and explains the EKG.",
+      "Nutrition": "Low ferritin (12), low vitamin D (25-OH 14), low folate, low-normal B12, low vitamin K reflected in a mildly prolonged INR — a fat-soluble-vitamin and mineral malabsorption pattern.",
+      "Thyroid": "TSH 0.05 (suppressed/low) with free T4 high-normal — consistent with iatrogenic over-replacement / mild thyrotoxicosis from her self-adjusted levothyroxine, NOT primary hyperthyroidism. This is a real but PARTIAL explanation for diarrhea/weight loss; it does not explain the steatorrhea, iron deficiency, or positive celiac serology.",
+      "StoolStudies": "Stool infectious workup (culture, ova & parasites, C. difficile, Giardia antigen) NEGATIVE. Fecal elastase normal (argues against pancreatic exocrine insufficiency). Qualitative fecal fat POSITIVE (steatorrhea). Fecal calprotectin only mildly elevated (argues against active inflammatory bowel disease).",
+      "Biopsy": "Upper endoscopy with duodenal biopsy obtained WHILE the patient was still eating gluten: subtotal villous atrophy, crypt hyperplasia, and intraepithelial lymphocytosis (Marsh 3) — diagnostic of celiac disease."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Abnormally short QTc (~330 ms) with tall peaked T waves.",
-      "verify": "Source a study matching: Abnormally short QTc (~330 ms) with tall peaked T waves. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Prolonged QT/QU interval (QTc ~480 ms) with prominent U waves, flattened T waves, and mild ST depression — the electrocardiographic signature of hypokalemia plus hypocalcemia from malabsorption; a torsades-de-pointes substrate.",
+      "integrated": true,
+      "litflStudyN": 6,
+      "verify": "Source a study matching: prolonged QT with prominent U waves and flattened T waves (hypokalemia/hypocalcemia pattern). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing short QT interval",
+      "imageDescription": "12-lead showing long QT with prominent U waves and flat T waves (hypokalemia/hypocalcemia)",
       "searchTerms": [
-        "short QT syndrome ECG",
-        "short QTc 12 lead"
+        "hypokalemia U waves ECG",
+        "long QT hypocalcemia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 30-year-old woman with chronic diarrhea, weight loss, and bloating has a routine tracing before workup."
+      "clinicalVignette": "A 35-year-old woman with months of malabsorptive diarrhea, weight loss, muscle cramps, and palpitations has an EKG drawn after her electrolytes return abnormal."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Diffuse bilateral reticulonodular interstitial opacities (chronic interstitial lung disease).",
-      "verify": "Source a study matching: Diffuse bilateral reticulonodular interstitial opacities (chronic interstitial lung disease). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lung fields; no hilar or mediastinal lymphadenopathy; no apical scarring or cavitation; normal cardiomediastinal silhouette — a deliberate pertinent-negative film that argues against tuberculosis, sarcoidosis, and lymphoma as causes of chronic diarrhea with weight loss.",
+      "verify": "Source a normal PA chest film. Self-host with appropriate credit; do not reuse the prior tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing chronic interstitial lung disease",
+      "imageDescription": "normal chest radiograph with no lymphadenopathy or apical disease",
       "searchTerms": [
-        "interstitial lung disease chest x-ray",
-        "reticulonodular pattern radiograph"
+        "normal PA chest x-ray",
+        "no hilar lymphadenopathy chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 55-year-old man with chronic diarrhea presents with progressive exertional breathlessness and a persistent dry cough."
+      "clinicalVignette": "A young adult with chronic diarrhea and weight loss has a screening chest film to exclude tuberculosis and lymphoma."
     }
   },
   "revealKeys": [
     "CBC",
     "Serology",
+    "Electrolytes",
     "Nutrition",
-    "Biopsy",
+    "Thyroid",
     "StoolStudies",
+    "Biopsy",
     "ekg",
     "cxr"
   ],
   "essential": [
     "Serology",
-    "CBC"
+    "Biopsy",
+    "Electrolytes"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this chronic diarrhea (note your leading diagnosis).",
-      "rubric": "Celiac disease (leading,7). Irritable bowel syndrome (core,3). Inflammatory bowel disease (core,3). Lactose/carbohydrate intolerance (core,2). Pancreatic exocrine insufficiency (core,3). Microscopic colitis (bonus,2). Connects chronic steatorrhea + weight loss + unexplained iron deficiency to a malabsorptive process / celiac (core,5).",
-      "idealAnswer": "Leading diagnosis: Celiac disease. Must-not-miss diagnoses to exclude: none specific. Also reasonable: Irritable bowel syndrome; Inflammatory bowel disease; Lactose/carbohydrate intolerance; Pancreatic exocrine insufficiency.",
+      "prompt": "Based on your history and physical, give your differential for this chronic diarrhea with weight loss (note your leading diagnosis). She has autoimmune thyroid disease and a confusing medication list. Also name three mechanisms/categories of chronic diarrhea and place this patient within one.",
+      "rubric": "Celiac disease (leading,6). Crohn / small-bowel inflammatory bowel disease — genuine competing dx given weight loss and malabsorption (CANT-MISS,4). Iatrogenic thyrotoxicosis from over-replaced levothyroxine as a competing/confounding driver of diarrhea + weight loss (core,3). Microscopic colitis — promoted by her chronic PPI and NSAID use (core,2). NSAID enteropathy and pancreatic exocrine insufficiency / IBS / lactose intolerance as reasonable alternatives (core,2). Names three mechanisms of chronic diarrhea — osmotic, secretory, inflammatory, malabsorptive/steatorrheal, dysmotility — and classifies her as malabsorptive/steatorrheal (core,3). Connects steatorrhea + weight loss + unexplained recurrent iron deficiency + extensor rash to a malabsorptive process / celiac (core,5). PENALTY: anchoring on thyroid over-replacement and ignoring the malabsorption/steatorrhea (-3).",
+      "idealAnswer": "Leading diagnosis: Celiac disease — chronic steatorrhea, weight loss, recurrent unexplained iron deficiency, an extensor-surface vesicular rash (dermatitis herpetiformis), a sister with celiac, and autoimmune (Hashimoto) background. Genuine competing diagnosis to exclude: small-bowel Crohn / inflammatory bowel disease, which can also cause malabsorptive weight loss. Important confounders that partly mimic the picture: iatrogenic thyrotoxicosis from her self-up-titrated levothyroxine (can cause diarrhea, weight loss with increased appetite, heat intolerance, and palpitations) and microscopic colitis / NSAID enteropathy promoted by her chronic PPI and NSAID use. Also reasonable: pancreatic exocrine insufficiency, IBS, lactose/carbohydrate intolerance. Three mechanisms of chronic diarrhea: osmotic, secretory, and inflammatory (also malabsorptive/steatorrheal and dysmotility) — this patient is malabsorptive/steatorrheal. The thyroid over-replacement does not explain her steatorrhea, iron deficiency, or rash, so it cannot be the whole story.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Celiac disease",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Crohn / small-bowel inflammatory bowel disease (competing diagnosis)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Irritable bowel syndrome",
+            "item": "Iatrogenic thyrotoxicosis from over-replaced levothyroxine as a confounder",
             "points": 3
           },
           {
-            "item": "Inflammatory bowel disease",
-            "points": 3
-          },
-          {
-            "item": "Lactose/carbohydrate intolerance",
+            "item": "Microscopic colitis (PPI/NSAID-associated)",
             "points": 2
           },
           {
-            "item": "Pancreatic exocrine insufficiency",
+            "item": "NSAID enteropathy / pancreatic insufficiency / IBS / lactose intolerance",
+            "points": 2
+          },
+          {
+            "item": "Names three mechanisms of chronic diarrhea and classifies her as malabsorptive/steatorrheal",
             "points": 3
           },
           {
-            "item": "Connects chronic steatorrhea + weight loss + unexplained iron deficiency to a malabsorptive process / celiac",
+            "item": "Connects steatorrhea + weight loss + recurrent iron deficiency + extensor rash to a malabsorptive process / celiac",
             "points": 5
           }
         ],
-        "bonusActions": [
+        "bonusActions": [],
+        "penalties": [
           {
-            "item": "Microscopic colitis",
-            "points": 2
+            "item": "Anchors on thyroid over-replacement and ignores the malabsorption/steatorrhea",
+            "points": -3
           }
-        ],
-        "penalties": []
+        ]
       },
-      "mustNotMiss": [],
+      "mustNotMiss": [
+        "Crohn / small-bowel inflammatory bowel disease"
+      ],
       "acceptableAlternatives": [
+        "Iatrogenic thyrotoxicosis from over-replaced levothyroxine",
+        "Microscopic colitis",
+        "NSAID enteropathy",
+        "Pancreatic exocrine insufficiency",
         "Irritable bowel syndrome",
-        "Inflammatory bowel disease",
-        "Lactose/carbohydrate intolerance",
-        "Pancreatic exocrine insufficiency"
+        "Lactose/carbohydrate intolerance"
       ]
     },
     {
@@ -136,59 +152,79 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten (CANT-MISS,5). CBC and iron studies (3). Nutritional labs — ferritin, vitamin D, folate, B12 (2). Upper endoscopy with duodenal biopsy to confirm (3). Stool studies to exclude infection (2). PENALTY: starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy) (-3).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Serology; Nutrition; Biopsy; Stool studies.",
+      "rubric": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten (CANT-MISS,4). Electrolytes/BMP with magnesium and calcium — she has cramps, perioral tingling, and palpitations (CANT-MISS,3). CBC and iron studies with peripheral smear (2). Nutritional labs — ferritin, vitamin D, folate, B12, INR (1). TSH/free T4 to assess her thyroid replacement (1). Stool studies — infectious workup, fecal fat, fecal elastase, calprotectin (1). Upper endoscopy with duodenal biopsy to confirm, on a gluten-containing diet (2); colonoscopy with biopsies if IBD/microscopic colitis still in play (1). PENALTY: starting a gluten-free diet BEFORE serology/biopsy (false-negative testing) (-3); missing the electrolytes in a cramping patient with palpitations (-2).",
+      "idealAnswer": "Order: EKG (she has palpitations and likely electrolyte derangement); CXR; Electrolytes/BMP including magnesium and calcium; CBC with iron studies and smear; Nutrition labs (ferritin, vitamin D, folate, B12, INR); Thyroid (TSH, free T4) to assess over-replacement; Stool studies (infectious panel, fecal fat, fecal elastase, calprotectin); Serology (tTG-IgA WITH total IgA, while still eating gluten); and upper endoscopy with duodenal Biopsy to confirm. Add colonoscopy with random biopsies if microscopic colitis / IBD remains a concern. Do NOT start a gluten-free diet before serology and biopsy.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "Electrolytes/BMP with magnesium and calcium (cramps, tingling, palpitations)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "CBC and iron studies",
-            "points": 3
+            "item": "CBC and iron studies with peripheral smear",
+            "points": 2
           },
           {
-            "item": "Nutritional labs — ferritin, vitamin D, folate, B12",
-            "points": 2
+            "item": "Nutritional labs — ferritin, vitamin D, folate, B12, INR",
+            "points": 1
+          },
+          {
+            "item": "Thyroid function (TSH, free T4) to assess levothyroxine over-replacement",
+            "points": 1
+          },
+          {
+            "item": "Stool studies — infectious panel, fecal fat, fecal elastase, calprotectin",
+            "points": 1
           },
           {
             "item": "Upper endoscopy with duodenal biopsy to confirm",
-            "points": 3
-          },
-          {
-            "item": "Stool studies to exclude infection",
-            "points": 2
+            "points": 1
           },
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Colonoscopy with random biopsies if microscopic colitis / IBD still in play",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy)",
+            "item": "starting a gluten-free diet BEFORE serology/biopsy (causes false-negative testing)",
             "points": -3
+          },
+          {
+            "item": "missing electrolytes in a cramping patient with palpitations",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten"
+        "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten",
+        "Electrolytes/BMP with magnesium and calcium (cramps, tingling, palpitations)"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Colonoscopy with random biopsies if microscopic colitis / IBD still in play"
+      ],
       "contraindicatedTests": [
-        "starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy)"
+        "starting a gluten-free diet BEFORE serology/biopsy (causes false-negative testing)"
       ],
       "orderSensitiveActions": [
-        "starting a gluten-free diet BEFORE testing (causes false-negative serology/biopsy)"
+        "starting a gluten-free diet BEFORE serology/biopsy (causes false-negative testing)"
       ]
     },
     {
@@ -197,32 +233,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = abnormally short QT interval (QTc ~330 ms) with tall peaked T waves. CREDIT: measures and identifies a short QTc (7); recognizes short QT as an arrhythmia substrate (5); systematic read (3). PENALTY: not measuring the QT and calling the tracing normal (-2).",
+      "prompt": "Here is the patient's 12-lead EKG, drawn after her electrolytes returned. Describe your findings and tie them to her presentation.",
+      "rubric": "Findings = prolonged QT/QU interval (QTc ~480 ms) with prominent U waves, flattened T waves, and mild ST depression — the hypokalemia + hypocalcemia pattern of malabsorption. CREDIT: identifies the prolonged QT (6); recognizes U waves / T-wave flattening of hypokalemia and connects the long QT to hypocalcemia (5); names torsades-de-pointes / ventricular arrhythmia as the danger and links it to her malabsorptive electrolyte losses (4). PENALTY: measuring nothing and calling the tracing normal, or missing the QT prolongation / arrhythmia risk (-3).",
       "keyFindings": [
-        "measures a short QTc",
-        "recognizes short QT as an arrhythmia substrate"
+        "measures a prolonged QT (QTc ~480 ms)",
+        "identifies U waves and flat T waves of hypokalemia",
+        "links the long QT to hypocalcemia and torsades risk"
       ],
       "criticalFindings": [
-        "Short QT interval (~330 ms)."
+        "Prolonged QT (QTc ~480 ms) with prominent U waves and flattened T waves — hypokalemia plus hypocalcemia from malabsorption, a torsades substrate."
       ],
       "commonMistakes": [
-        "not measuring QT and calling the tracing normal"
+        "calling the tracing normal",
+        "measuring the QT but failing to attribute it to the patient's electrolyte losses",
+        "missing the torsades / ventricular-arrhythmia risk"
       ],
-      "idealAnswer": "Short QT interval (QTc ~330 ms) with tall T waves.",
+      "idealAnswer": "Prolonged QT/QU interval (QTc ~480 ms) with prominent U waves, flattened T waves, and mild ST depression. This is the electrocardiographic footprint of hypokalemia (U waves, flat T waves) combined with hypocalcemia (QT prolongation) — exactly the electrolyte losses produced by her chronic malabsorptive diarrhea. It is a torsades-de-pointes / ventricular-arrhythmia substrate and explains her palpitations, so it mandates urgent potassium, magnesium, and calcium repletion with telemetry.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Short QT interval (~330 ms)."
+          "Prolonged QT (QTc ~480 ms) with prominent U waves and flattened T waves — hypokalemia plus hypocalcemia from malabsorption, a torsades substrate."
         ],
         "coreActions": [
-          "measures a short QTc",
-          "recognizes short QT as an arrhythmia substrate"
+          "measures a prolonged QT (QTc ~480 ms)",
+          "identifies U waves and flat T waves of hypokalemia",
+          "links the long QT to hypocalcemia and torsades risk"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the QT prolongation and arrhythmia risk",
             "points": -3
           }
         ]
@@ -235,31 +275,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = diffuse bilateral reticulonodular interstitial opacities (chronic interstitial lung disease). CREDIT: identifies the diffuse reticulonodular pattern (6); recognizes a chronic interstitial process rather than acute infection (4). PENALTY: calling the film normal or labelling the diffuse chronic changes an acute infection (-2).",
+      "rubric": "Findings = clear lungs, NO hilar/mediastinal lymphadenopathy, NO apical scarring or cavitation, normal cardiomediastinal silhouette. CREDIT: recognizes a normal film (5); states the deliberate pertinent negatives — no lymphadenopathy and no apical/cavitary disease — that argue against lymphoma, sarcoidosis, and tuberculosis as causes of chronic diarrhea with weight loss (5). PENALTY: inventing an infiltrate, or failing to use the film as a pertinent negative for the secondary causes (-3).",
       "keyFindings": [
-        "diffuse reticulonodular pattern",
-        "recognizes a chronic interstitial process"
+        "clear lung fields, normal silhouette",
+        "no hilar lymphadenopathy or apical/cavitary disease (excludes lymphoma/sarcoid/TB)"
       ],
       "criticalFindings": [
-        "Chronic interstitial lung disease (reticulonodular pattern)."
+        "Normal chest film with no lymphadenopathy and no apical/cavitary disease — a pertinent negative against TB, sarcoidosis, and lymphoma."
       ],
       "commonMistakes": [
-        "calling diffuse chronic changes an acute infection"
+        "inventing an infiltrate on a clear film",
+        "failing to use the film as a pertinent negative for secondary causes of chronic diarrhea"
       ],
-      "idealAnswer": "Chronic interstitial lung disease: diffuse bilateral reticulonodular opacities.",
+      "idealAnswer": "Clear lung fields with a normal cardiomediastinal silhouette and — importantly as pertinent negatives — no hilar or mediastinal lymphadenopathy and no apical scarring or cavitation. This argues against tuberculosis, sarcoidosis, and lymphoma as the cause of her chronic diarrhea and weight loss.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Chronic interstitial lung disease (reticulonodular pattern)."
+          "Normal chest film with no lymphadenopathy and no apical/cavitary disease — a pertinent negative against TB, sarcoidosis, and lymphoma."
         ],
         "coreActions": [
-          "diffuse reticulonodular pattern",
-          "recognizes a chronic interstitial process"
+          "clear lung fields, normal silhouette",
+          "no hilar lymphadenopathy or apical/cavitary disease (excludes lymphoma/sarcoid/TB)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study abnormal / invents pathology",
             "points": -3
           }
         ]
@@ -269,9 +310,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Positive tTG-IgA with normal total IgA and duodenal villous atrophy on biopsy. What is your diagnosis?",
-      "rubric": "Celiac disease (6). Cites positive serology with a valid IgA level plus confirmatory villous atrophy on biopsy; notes the dermatitis herpetiformis association (4).",
-      "idealAnswer": "Celiac disease. Confirmed by positive tTG-IgA with a valid (normal) total IgA plus duodenal villous atrophy on biopsy; the extensor-surface rash supports the dermatitis herpetiformis association.",
+      "prompt": "Positive tTG-IgA with a valid (normal) total IgA, duodenal villous atrophy (Marsh 3) on biopsy, a suppressed TSH, and an EKG with a long QT and U waves from hypokalemia/hypocalcemia. Commit to a diagnosis, name the discriminating test, and address the residual ambiguity (the thyroid and the electrolyte/EKG findings).",
+      "rubric": "Celiac disease (6). Cites the discriminating test — duodenal biopsy showing villous atrophy with concordant positive tTG-IgA on a valid IgA level — as confirmatory; states that the suppressed TSH reflects levothyroxine over-replacement (a confounder, not the primary diagnosis) and that the long-QT/U-wave EKG and hypokalemia/hypocalcemia are downstream consequences of malabsorption requiring repletion; notes the dermatitis herpetiformis and hyposplenism (Howell-Jolly bodies) associations (4).",
+      "idealAnswer": "Diagnosis: Celiac disease. The discriminating test is the duodenal biopsy showing subtotal villous atrophy, crypt hyperplasia, and intraepithelial lymphocytosis (Marsh 3), concordant with a strongly positive tTG-IgA on a valid (normal) total IgA — this confirms celiac over the competing Crohn / microscopic-colitis possibilities. Residual ambiguity is explained, not ignored: the suppressed TSH is iatrogenic thyrotoxicosis from her self-up-titrated levothyroxine (a confounder that contributed to the diarrhea, weight loss, and palpitations but does not explain the steatorrhea, iron deficiency, or rash), and the long-QT/U-wave EKG with hypokalemia, hypocalcemia, and hypomagnesemia is the metabolic consequence of malabsorption that must be corrected. The extensor-surface vesicular rash (dermatitis herpetiformis) and Howell-Jolly bodies (functional hyposplenism) further support celiac.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -284,42 +325,54 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH diarrhea / malabsorption (celiac): lifelong strict gluten-free diet with dietitian referral (CANT-MISS,8); confirm diagnosis – tTG-IgA + biopsy before diet (5); replete deficiencies – iron/B12/folate/vit D/calcium (4); screen for associated autoimmune disease and bone density (3); monitor response (serology/symptoms) (2). PENALTY: starting a gluten-free diet before confirmatory testing (-2); immunosuppression for uncomplicated celiac (-2).",
-      "idealAnswer": "Lifelong strict gluten-free diet is the treatment – refer to a dietitian. Confirm with serology (tTG-IgA with total IgA) and duodenal biopsy before committing to the diet. Replete deficiencies (iron, B12, folate, vitamin D, calcium). Screen for associated conditions (thyroid, type 1 DM) and osteoporosis. Monitor serologies/symptoms for response.",
+      "prompt": "What is your management plan, including disposition? Address whether this patient can be safely discharged and what must happen before and after she leaves.",
+      "rubric": "Per MGH diarrhea / malabsorption (celiac): correct the dangerous electrolytes FIRST — IV/oral potassium, magnesium, and calcium with telemetry given the long-QT/torsades risk, and recheck the EKG (CANT-MISS,6); lifelong strict gluten-free diet with dietitian referral (CANT-MISS,5); confirm diagnosis with serology + biopsy before committing to the diet (3); replete iron/B12/folate/vitamin D/vitamin K (2); medication reconciliation — re-check TSH and correct the over-replaced levothyroxine, reassess the chronic PPI, and stop the NSAIDs (3); screen for associated autoimmune disease and bone density, vaccinate the functionally hyposplenic patient (2); safe-discharge plan — only after the QTc and electrolytes have normalized, with med reconciliation, close GI/PCP follow-up, repeat serology to monitor response, and return precautions for palpitations/syncope (3); PENALTY: discharging her with an uncorrected long QT / severe hypokalemia (-3); starting a gluten-free diet before confirmatory testing (-2).",
+      "idealAnswer": "First correct the life-threatening electrolytes: replete potassium, magnesium, and calcium (magnesium first so potassium and calcium will correct), place on telemetry given the prolonged QT/torsades risk, and recheck the EKG — do NOT discharge until the QTc and electrolytes have normalized. Definitive treatment is a lifelong strict gluten-free diet with dietitian referral, started only after serology (tTG-IgA with total IgA) and duodenal biopsy have confirmed the diagnosis. Replete iron, B12, folate, vitamin D, and vitamin K. Medication reconciliation is essential: recheck TSH and bring the over-replaced levothyroxine back to an appropriate dose, reassess the chronic omeprazole, and stop the NSAIDs (both worsen her gut and iron status). Screen for associated autoimmune disease (type 1 diabetes given the family history) and osteoporosis (DEXA), and vaccinate her as a functionally hyposplenic patient (pneumococcal, meningococcal, Hib, influenza). Disposition: she can be discharged to close outpatient GI/PCP follow-up ONLY once the electrolytes/QTc are corrected — arrange med reconciliation, dietitian teaching, repeat serology to monitor response, and give clear return precautions for palpitations, syncope, or worsening symptoms.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
+            "item": "Correct potassium, magnesium, and calcium with telemetry for the long-QT/torsades risk and recheck the EKG",
+            "points": 6
+          },
+          {
             "item": "Lifelong gluten-free diet (dietitian referral)",
-            "points": 8
+            "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "Confirm diagnosis before diet (tTG-IgA + biopsy)",
-            "points": 5
-          },
-          {
-            "item": "Replete nutritional deficiencies",
-            "points": 4
-          },
-          {
-            "item": "Screen for associated disease and osteoporosis",
             "points": 3
           },
           {
-            "item": "Monitor response",
+            "item": "Replete nutritional deficiencies (iron, B12, folate, vitamin D, vitamin K)",
             "points": 2
+          },
+          {
+            "item": "Medication reconciliation — recheck/correct levothyroxine, reassess PPI, stop NSAIDs",
+            "points": 3
+          },
+          {
+            "item": "Screen for associated autoimmune disease and osteoporosis; vaccinate the hyposplenic patient",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge plan only after QTc/electrolytes normalize — med reconciliation, close follow-up, repeat serology, return precautions",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Vaccination/health maintenance",
+            "item": "Monitor response with repeat serology/symptoms",
             "points": 1
           }
         ],
         "penalties": [
+          {
+            "item": "Discharging with an uncorrected long QT / severe hypokalemia",
+            "points": -3
+          },
           {
             "item": "Gluten-free diet before confirmatory testing",
             "points": -2
@@ -327,23 +380,29 @@
         ]
       },
       "requiredActions": [
+        "Correct potassium, magnesium, and calcium with telemetry for the long-QT/torsades risk and recheck the EKG",
         "Lifelong gluten-free diet (dietitian referral)"
       ],
       "optionalActions": [
         "Confirm diagnosis before diet (tTG-IgA + biopsy)",
-        "Replete nutritional deficiencies",
-        "Screen for associated disease and osteoporosis",
-        "Monitor response",
-        "Vaccination/health maintenance"
+        "Replete nutritional deficiencies (iron, B12, folate, vitamin D, vitamin K)",
+        "Medication reconciliation — recheck/correct levothyroxine, reassess PPI, stop NSAIDs",
+        "Screen for associated autoimmune disease and osteoporosis; vaccinate the hyposplenic patient",
+        "Safe-discharge plan only after QTc/electrolytes normalize — med reconciliation, close follow-up, repeat serology, return precautions",
+        "Monitor response with repeat serology/symptoms"
       ],
       "unsafeActions": [
+        "Discharging with an uncorrected long QT / severe hypokalemia",
         "Gluten-free diet before confirmatory testing"
       ],
-      "consults": [],
-      "disposition": "Outpatient",
+      "consults": [
+        "Gastroenterology",
+        "Nutrition/Dietitian"
+      ],
+      "disposition": "Admit/observe for telemetry and electrolyte correction; discharge to outpatient GI follow-up once QTc and electrolytes normalize",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Diarrhea (Celiac Disease)",
+        "section": "Diarrhea (Celiac Disease / Malabsorption)",
         "page": 77
       }
     }
@@ -355,12 +414,14 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "medication_self_adjustment"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "35-year-old woman, thin, fatigued. Good historian.",
+    "affect": "35-year-old woman, thin, fatigued, mildly anxious about the weight loss and palpitations. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, self-adjusting her thyroid pills) unless directly asked",
+      "Do not volunteer the gluten trigger, rash, family history, or systemic symptoms unless asked about the relevant topic",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -375,11 +436,95 @@
         "drinking",
         "how much do you drink",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "beer"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diet_trigger",
+      "category": "hpi",
+      "triggerConcepts": [
+        "diet",
+        "food triggers",
+        "does anything in your diet",
+        "gluten",
+        "bread",
+        "pasta",
+        "wheat",
+        "what makes the diarrhea worse"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "skin_rash",
+      "category": "ros",
+      "triggerConcepts": [
+        "rash",
+        "skin",
+        "itching",
+        "blisters",
+        "elbows",
+        "knees"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in your family",
+        "relatives",
+        "sister",
+        "celiac in the family",
+        "autoimmune in the family"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "thyroid_systemic_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "appetite",
+        "heat intolerance",
+        "feeling warm",
+        "anxiety",
+        "palpitations",
+        "heart fluttering",
+        "racing heart"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "neuromuscular_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "cramps",
+        "muscle cramps",
+        "tingling",
+        "numbness",
+        "perioral tingling",
+        "spasms"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -403,20 +548,10 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "severity",
-      "category": "hpi",
-      "triggerConcepts": [
-        "how bad",
-        "severity",
-        "scale"
+        "quality",
+        "what do the stools look like",
+        "greasy",
+        "foul smelling"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -429,21 +564,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "aggravating_alleviating",
-      "category": "hpi",
-      "triggerConcepts": [
-        "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
+        "anything else",
+        "weight loss",
+        "blood in stool",
+        "fevers"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -456,7 +580,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "thyroid",
+        "hashimoto",
+        "anemia"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -469,11 +596,17 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "levothyroxine",
+        "omeprazole",
+        "ibuprofen",
+        "nsaid",
+        "supplements",
+        "how do you take your thyroid pill"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
-      "points": 1,
+      "points": 2,
       "hiddenUntilAsked": false
     },
     {
@@ -492,8 +625,48 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "inspect_abdomen_finding_1",
-      "finding": "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
+      "id": "assess_general_appearance_finding_1",
+      "finding": "Thin, pale, mildly anxious woman in no acute distress.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Appears comfortable and well-nourished."
+    },
+    {
+      "id": "inspect_skin_finding_2",
+      "finding": "Grouped vesicles and excoriations on the extensor surfaces of the elbows and knees (dermatitis herpetiformis).",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "critical",
+      "points": 3,
+      "normalIfNotPresent": "No rash."
+    },
+    {
+      "id": "inspect_oropharynx_finding_3",
+      "finding": "Angular cheilitis and a smooth, atrophic (beefy) tongue — mucosal signs of nutritional deficiency.",
+      "revealedBy": [
+        "inspect_oropharynx"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes; normal tongue."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_4",
+      "finding": "Pale conjunctivae consistent with anemia.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Conjunctivae pink."
+    },
+    {
+      "id": "inspect_abdomen_finding_5",
+      "finding": "Abdomen soft, mildly distended, nontender; no organomegaly or masses.",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -502,14 +675,24 @@
       "normalIfNotPresent": "Abdomen not distended."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_2",
-      "finding": "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
+      "id": "auscultate_bowel_sounds_finding_6",
+      "finding": "Active/normal bowel sounds.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "normalIfNotPresent": "Normal bowel sounds."
+    },
+    {
+      "id": "palpate_lymph_nodes_finding_7",
+      "finding": "No cervical, supraclavicular, or generalized lymphadenopathy (pertinent negative against lymphoma).",
+      "revealedBy": [
+        "palpate_lymph_nodes"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No lymphadenopathy."
     }
   ],
   "overallScoring": {
@@ -522,61 +705,81 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Celiac disease",
-    "diagnosticFramework": "35F presents with months of loose, bulky, foul-smelling stools, bloating, fatigue, and unintentional weight loss. The diagnosis is Celiac disease, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "35F with Hashimoto thyroiditis on a self-up-titrated levothyroxine dose, chronic PPI use, and frequent NSAID use presents with months of malabsorptive (steatorrheal) diarrhea, weight loss, recurrent unexplained iron-deficiency anemia, an extensor vesicular rash, and new cramps and palpitations. The diagnosis is Celiac disease, confirmed by strongly positive tTG-IgA on a valid total IgA plus duodenal villous atrophy (Marsh 3). The case is layered by a genuine competing diagnosis (small-bowel Crohn / microscopic colitis), confounders (iatrogenic thyrotoxicosis, PPI/NSAID enteropathy), and multi-system metabolic consequences — hypokalemia, hypocalcemia, hypomagnesemia, and a non-anion-gap acidosis producing a long-QT/U-wave EKG that must be corrected before safe discharge.",
     "keyHistoryClues": [
-      "Symptoms worse with bread/pasta (gluten/diet trigger)",
-      "Sister with celiac disease (family history)",
-      "Itchy, blistering rash on elbows/knees (dermatitis herpetiformis)"
+      "Steatorrhea worse after bread, pasta, and beer (gluten/diet trigger)",
+      "Sister with celiac disease and mother with type 1 diabetes (family history)",
+      "Itchy, blistering extensor-surface rash (dermatitis herpetiformis)",
+      "Self-up-titrated levothyroxine with increased appetite, heat intolerance, and palpitations (iatrogenic thyrotoxicosis confounder)",
+      "Chronic omeprazole and frequent NSAID use (microscopic colitis / enteropathy confounders)",
+      "New muscle cramps and perioral tingling (electrolyte derangement)"
     ],
     "keyPhysicalExamFindings": [
-      "Abdomen: soft, mildly distended, nontender; active bowel sounds.",
-      "Abdomen: soft, mildly distended, nontender; active bowel sounds."
+      "Grouped vesicles and excoriations on the extensor surfaces of the elbows and knees (dermatitis herpetiformis).",
+      "Angular cheilitis and a smooth, atrophic (beefy) tongue — mucosal signs of nutritional deficiency.",
+      "Pale conjunctivae consistent with anemia.",
+      "Abdomen soft, mildly distended, nontender; no organomegaly or masses.",
+      "No cervical, supraclavicular, or generalized lymphadenopathy (pertinent negative against lymphoma)."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "Serology",
+      "Electrolytes",
       "Nutrition",
-      "Biopsy",
-      "StoolStudies"
+      "Thyroid",
+      "StoolStudies",
+      "Biopsy"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Celiac disease while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Celiac disease and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the autoimmune background and the confusing medication list.",
+      "Elicit the focused history, drawing out the gluten trigger, rash, family history, systemic thyrotoxic symptoms, neuromuscular symptoms, and the levothyroxine self-adjustment, PPI, and NSAID use only on direct questioning.",
+      "Perform the targeted exam to reveal dermatitis herpetiformis, mucosal nutritional signs, pallor, and the pertinent-negative absence of lymphadenopathy.",
+      "Build a differential led by Celiac disease while naming the competing small-bowel Crohn / microscopic colitis and the iatrogenic-thyrotoxicosis confounder, and classify the diarrhea mechanistically.",
+      "Order an order-sensitive workup (serology + biopsy on gluten; electrolytes with Mg/Ca for the cramping patient) and interpret the integrated long-QT/U-wave EKG as a malabsorptive electrolyte consequence plus the pertinent-negative CXR.",
+      "Commit to Celiac disease, explain the residual thyroid/electrolyte ambiguity, and manage by correcting the dangerous electrolytes, starting a lifelong gluten-free diet, reconciling medications, and arranging safe discharge with close follow-up."
     ],
     "commonPitfalls": [
-      "Gluten-free diet before confirmatory testing"
+      "Anchoring on thyroid over-replacement and ignoring the steatorrhea/malabsorption",
+      "Starting a gluten-free diet before confirmatory serology/biopsy",
+      "Missing the electrolyte derangement and the long-QT/torsades risk in a cramping patient with palpitations",
+      "Discharging the patient before correcting the QTc and electrolytes"
     ],
     "managementPearls": [
-      "Lifelong gluten-free diet (dietitian referral)"
+      "Correct potassium, magnesium, and calcium with telemetry for the long-QT/torsades risk before discharge",
+      "Lifelong gluten-free diet (dietitian referral) after confirmatory testing",
+      "Medication reconciliation — correct the over-replaced levothyroxine, reassess the PPI, stop the NSAIDs"
     ],
-    "criticalHistoryItems": [],
-    "criticalExamItems": [],
+    "criticalHistoryItems": [
+      "Steatorrhea worse with gluten",
+      "Self-up-titrated levothyroxine"
+    ],
+    "criticalExamItems": [
+      "inspect_skin"
+    ],
     "criticalWorkupItems": [
-      "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten"
+      "Celiac serology — tTG-IgA WITH total IgA, while the patient is still eating gluten",
+      "Electrolytes/BMP with magnesium and calcium (cramps, tingling, palpitations)"
     ],
     "criticalInterpretationItems": [
-      "Short QT interval (~330 ms).",
-      "Chronic interstitial lung disease (reticulonodular pattern)."
+      "Prolonged QT (QTc ~480 ms) with prominent U waves and flattened T waves — hypokalemia plus hypocalcemia from malabsorption, a torsades substrate.",
+      "Normal chest film with no lymphadenopathy and no apical/cavitary disease — a pertinent negative against TB, sarcoidosis, and lymphoma."
     ],
     "criticalManagementItems": [
+      "Correct potassium, magnesium, and calcium with telemetry for the long-QT/torsades risk and recheck the EKG",
       "Lifelong gluten-free diet (dietitian referral)"
     ],
     "keyImageInterpretationFindings": [
-      "Short QT interval (~330 ms).",
-      "Chronic interstitial lung disease (reticulonodular pattern)."
+      "Prolonged QT (QTc ~480 ms) with prominent U waves and flattened T waves — hypokalemia plus hypocalcemia from malabsorption, a torsades substrate.",
+      "Normal chest film with no lymphadenopathy and no apical/cavitary disease — a pertinent negative against TB, sarcoidosis, and lymphoma."
     ],
     "criticalImageInterpretationFindings": [
-      "Short QT interval (~330 ms).",
-      "Chronic interstitial lung disease (reticulonodular pattern)."
+      "Prolonged QT (QTc ~480 ms) with prominent U waves and flattened T waves — hypokalemia plus hypocalcemia from malabsorption, a torsades substrate.",
+      "Normal chest film with no lymphadenopathy and no apical/cavitary disease — a pertinent negative against TB, sarcoidosis, and lymphoma."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "An integrated EKG can be the patient's OWN study — read the long QT and U waves as the electrolyte footprint of malabsorption, not an incidental curiosity.",
+      "Always measure the QT and look for U waves in a patient with diarrhea, cramps, and palpitations.",
+      "On a chronic-diarrhea chest film, the load-bearing finding is the pertinent negative: no lymphadenopathy, no apical/cavitary disease."
     ]
   },
   "communicationScoring": {
@@ -587,11 +790,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's weight loss and fatigue",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, medication adherence)",
         "points": 1
       },
       {
@@ -606,8 +809,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated EKG (malabsorptive electrolyte derangement) + pertinent-negative CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

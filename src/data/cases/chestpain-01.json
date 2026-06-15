@@ -1,30 +1,32 @@
 {
   "id": "chestpain-01",
   "category": "Chest Pain",
-  "difficulty": "moderate",
-  "title": "Exertional chest pressure with diaphoresis",
+  "difficulty": "hard",
+  "title": "Exertional chest pressure with new palpitations, on a background of anticoagulant non-adherence and NSAID use",
   "diagnosis": "NSTEMI",
   "chart": {
     "ageSex": "62F",
     "cc": "Chest pressure",
-    "oneLiner": "62F with HTN, hyperlipidemia, and T2DM presents with 2 hours of substernal chest pressure radiating to the left arm, with diaphoresis and nausea.",
+    "oneLiner": "62F with HTN, hyperlipidemia, T2DM, stage-3 CKD, and paroxysmal atrial fibrillation presents with ~3 hours of substernal chest pressure radiating to the left arm, with diaphoresis, nausea, and new palpitations; she stopped her apixaban two weeks ago and has been taking ibuprofen for knee pain.",
     "vitals": {
-      "BP": "148/88",
-      "HR": "92",
-      "RR": "18",
+      "BP": "150/92",
+      "HR": "126",
+      "RR": "20",
       "Temp": "37.0°C",
-      "SpO2": "97% RA"
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I've got this heavy pressure in my chest, like something's sitting on it. It won't let up.",
-  "patientFile": "PERSONA: 62-year-old woman, anxious and uncomfortable, occasionally rubbing her chest. Cooperative.\n\nHPI:\n- Substernal chest PRESSURE (\"like a weight\") that began ~2 hours ago while carrying groceries up stairs. Has not fully resolved with rest.\n- Radiates to the left arm and up into the jaw. Associated diaphoresis and nausea. Mild shortness of breath.\n- Has had brief, similar pressure with exertion over the past few weeks that resolved with rest (crescendo pattern) — only mentions this if asked about prior episodes.\n- NO pleuritic quality, NO positional change, NO tearing/ripping quality, NO radiation to back, NO fever, NO cough, NO recent travel or immobility, NO calf pain.\n\nOLDCARTS: onset with exertion 2h ago; substernal; constant since onset; pressure/heaviness; worse with exertion, partially relieved by rest; severity 7/10.\n\nPMH: hypertension, hyperlipidemia, type 2 diabetes.\nMEDICATIONS: amlodipine 5mg, atorvastatin 20mg, metformin 1000mg BID, aspirin 81mg (admits she sometimes forgets it). Good adherence otherwise.\nALLERGIES: none. FAMILY: father MI at 58. SOCIAL: current smoker, ~30 pack-years; rare alcohol; no drugs.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, diaphoretic, in mild distress.\n- Vitals: BP 148/88, HR 92 regular, RR 18, 37.0°C, SpO2 97% RA.\n- Cardiac: regular rhythm, normal S1/S2, soft S4, no murmur, no rub.\n- Lungs: clear bilaterally.\n- Chest wall: NO reproducible tenderness on palpation.\n- Extremities: no edema, no calf tenderness, symmetric pulses.\n- Abdomen: soft, nontender. Neuro: grossly intact. Skin: diaphoretic, no rash.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked; focused realistic answers.\n- Do NOT volunteer the prior exertional episodes, the smoking, or the family history unless asked about prior symptoms, risk factors, smoking, or family history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've got this heavy pressure in my chest, like something's sitting on it, and my heart's been racing and fluttering. It won't let up.",
+  "patientFile": "PERSONA: 62-year-old woman, anxious and uncomfortable, occasionally rubbing her chest and aware of her heart pounding. Cooperative but tires of long questions.\n\nHPI:\n- Substernal chest PRESSURE (\"like a weight\") that began ~3 hours ago while carrying laundry up stairs. Has not fully resolved with rest.\n- Radiates to the left arm and up into the jaw. Associated diaphoresis and nausea. Mild shortness of breath.\n- NEW sensation of her heart RACING and FLUTTERING that started around the same time and is still going — she has felt brief flutters before but never this sustained.\n- Has had brief, similar chest pressure with exertion over the past few weeks that resolved with rest (crescendo pattern) — only mentions this if asked about prior episodes.\n- Over the past week she has noticed she tires easily climbing the same stairs and felt lightheaded twice; she thinks her stools have looked DARK/BLACK and TARRY for several days but was too embarrassed to mention it — reveal the dark stools/lightheadedness ONLY if asked about bowel movements, blood, black/tarry stools, dizziness, or anemia symptoms.\n- NO pleuritic quality, NO positional change, NO tearing/ripping quality, NO radiation to the back, NO fever, NO cough, NO recent travel or immobility, NO calf pain, NO frank red blood per rectum, NO vomiting blood.\n\nOLDCARTS: onset with exertion ~3h ago; substernal; constant since onset; pressure/heaviness; worse with exertion, partially relieved by rest; severity 7/10; palpitations concurrent.\n\nPMH: hypertension; hyperlipidemia; type 2 diabetes; chronic kidney disease stage 3 (baseline creatinine ~1.4); paroxysmal atrial fibrillation (CHA2DS2-VASc elevated). Osteoarthritis of the knees.\nMEDICATIONS: apixaban 5 mg twice daily — but she STOPPED it about TWO WEEKS ago on her own because it was expensive and she worried about bleeding (reveal the stopping only if asked about adherence, why she stopped, blood thinners, or anticoagulation); metoprolol tartrate 25 mg BID (admits she sometimes forgets it); amlodipine 5 mg; atorvastatin 20 mg; metformin 1000 mg BID; aspirin 81 mg; ibuprofen 600 mg up to three times daily for the past two weeks for knee pain (reveal the ibuprofen only if asked about over-the-counter medicines, pain pills, NSAIDs, or anti-inflammatories).\nALLERGIES: none. FAMILY: father MI at 58. SOCIAL: current smoker, ~30 pack-years; rare alcohol; no drugs.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, diaphoretic, in mild distress, mildly pale.\n- Vitals: BP 150/92, HR 126 IRREGULARLY IRREGULAR, RR 20, 37.0°C, SpO2 96% RA.\n- Cardiac: irregularly irregular rhythm, tachycardic, variable intensity S1, no murmur, no rub, no S3.\n- Lungs: clear bilaterally.\n- Chest wall: NO reproducible tenderness on palpation.\n- Mucous membranes / conjunctiva: pale conjunctivae (mild pallor) when inspected.\n- Extremities: no edema, no calf tenderness, symmetric pulses but pulse is irregular.\n- Abdomen: soft, mildly tender to deep epigastric palpation, no rebound; (if a rectal exam is raised, melena — black tarry stool — is present). Neuro: grossly intact. Skin: diaphoretic, no rash.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked; focused realistic answers; tire of very long questions.\n- Do NOT volunteer the prior exertional episodes, the smoking, the family history, the stopped apixaban, the ibuprofen use, or the dark/tarry stools and lightheadedness unless asked about the specific relevant topic.\n- Reveal exam findings (pallor, irregular rhythm, epigastric tenderness, melena) only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 8.1, Hgb 13.2, Plt 250 — unremarkable.",
-      "BMP": "Na 138, K 4.1, Cr 0.9, Glu 184 — unremarkable aside from mild hyperglycemia.",
-      "Troponin": "0.08 ng/mL initial, rising to 1.6 ng/mL on 3-hour repeat — significant rise.",
-      "Lipids": "LDL 162, HDL 38 — elevated."
+      "CBC": "WBC 9.2, Hgb 8.4 (baseline ~12.5 three months ago — significant drop), MCV 78 (microcytic), Plt 268 — new anemia, microcytic, consistent with ongoing occult/GI blood loss.",
+      "BMP": "Na 139, K 5.3, Cl 102, HCO3 22, BUN 48, Cr 2.1 (baseline ~1.4 — acute-on-chronic kidney injury), Glu 232. Anion gap = Na − (Cl + HCO3) = 139 − (102 + 22) = 15 (mildly elevated). BUN:Cr ~23 (prerenal/GI-blood pattern).",
+      "Troponin": "High-sensitivity troponin T 88 ng/L initial, rising to 540 ng/L on 3-hour repeat (99th-percentile URL <22) — significant dynamic rise-and-fall consistent with acute myocardial injury.",
+      "Lipids": "LDL 168, HDL 36, TG 190 — elevated, untreated to goal.",
+      "Iron_studies": "Ferritin 12, transferrin saturation 9% — iron deficiency, supporting chronic GI blood loss as the cause of the anemia.",
+      "Lactate": "2.4 mmol/L — mildly elevated (demand/tachycardia and anemia), partly explains the anion gap."
     }
   },
   "revealKeys": [
@@ -32,56 +34,74 @@
     "BMP",
     "Troponin",
     "Lipids",
+    "Iron_studies",
+    "Lactate",
     "ekg",
     "cxr"
   ],
   "essential": [
     "ekg",
-    "Troponin"
+    "Troponin",
+    "CBC",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute coronary syndrome / unstable angina (leading & CANT-MISS, 8; accepts ACS/NSTEMI/UA/MI/cardiac ischemia). Aortic dissection (CANT-MISS,4). Pulmonary embolism (CANT-MISS,4). Pericarditis (core,2). GERD/esophageal (core,2). Musculoskeletal (bonus,2). Named leading dx with brief justification (core,3).",
-      "idealAnswer": "Leading diagnosis: NSTEMI. Must-not-miss diagnoses to exclude: Aortic dissection; Pulmonary embolism. Also reasonable: Pericarditis; GERD/esophageal.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). She is tachycardic and irregular with a positive troponin: explicitly name THREE distinct mechanisms/etiologies by which her troponin could be elevated.",
+      "rubric": "Acute coronary syndrome / NSTEMI — type 1 plaque-rupture MI (leading & CANT-MISS, 6; accepts ACS/NSTEMI/UA/cardiac ischemia). Type 2 MI / demand ischemia from rapid atrial fibrillation + acute anemia (CANT-MISS, 4; this is the genuine competing diagnosis). Aortic dissection (CANT-MISS, 3). Pulmonary embolism — note stopped anticoagulation (CANT-MISS, 3). THREE distinct mechanisms of troponin elevation named — e.g. (1) type 1 plaque rupture, (2) type 2 supply-demand mismatch from tachyarrhythmia/anemia, (3) non-ACS injury such as PE/dissection/myocarditis/renal-clearance contribution (core, 3). Pericarditis or GERD/esophageal (core, 2). Names leading dx with brief justification — exertional pressure, dynamic troponin, ischemic ECG (core, 4). PENALTY: anchoring on a single mechanism and ignoring the anemia/AF as a demand driver (-3).",
+      "idealAnswer": "Leading diagnosis: NSTEMI (type 1, plaque-rupture ACS) given crescendo exertional pressure, the dynamic high-sensitivity troponin, and ischemic ECG changes. Genuine competitor: type 2 MI / demand ischemia, because she is in NEW rapid atrial fibrillation (rate 126) with acute symptomatic anemia (Hgb 8.4 from a GI bleed) — both raise myocardial oxygen demand and lower supply. Must-not-miss alternatives: aortic dissection and pulmonary embolism (she self-stopped her apixaban two weeks ago). Three mechanisms of troponin elevation to name: (1) type 1 — acute plaque rupture with coronary thrombosis; (2) type 2 — supply-demand mismatch from the tachyarrhythmia plus anemia; (3) non-ischemic / non-ACS injury — e.g. PE or dissection with RV/coronary strain, myocarditis, or reduced renal clearance of troponin in CKD. Also reasonable: pericarditis, GERD/esophageal. The fork (type 1 vs type 2) is resolved toward type 1 NSTEMI by the crescendo exertional pattern, the focal ischemic ECG territory, and the magnitude/kinetics of the troponin rise.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Aortic dissection",
+            "item": "NSTEMI / type 1 ACS as leading diagnosis",
+            "points": 6
+          },
+          {
+            "item": "Type 2 MI / demand ischemia from rapid AF + anemia (competing dx)",
             "points": 4
           },
           {
-            "item": "Pulmonary embolism",
-            "points": 4
+            "item": "Aortic dissection",
+            "points": 3
+          },
+          {
+            "item": "Pulmonary embolism (stopped anticoagulation)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Pericarditis",
-            "points": 2
+            "item": "Names three distinct mechanisms of troponin elevation",
+            "points": 3
           },
           {
-            "item": "GERD/esophageal",
+            "item": "Pericarditis or GERD/esophageal",
             "points": 2
           },
           {
             "item": "Named leading dx with brief justification",
-            "points": 3
+            "points": 4
           }
         ],
         "bonusActions": [
           {
-            "item": "Musculoskeletal",
+            "item": "Musculoskeletal chest wall pain",
             "points": 2
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a single mechanism and ignores anemia/AF as a demand driver",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Type 2 MI / demand ischemia from rapid AF + anemia",
         "Aortic dissection",
         "Pulmonary embolism"
       ],
@@ -95,9 +115,9 @@
       "label": "Workup",
       "max": 15,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "EKG, ideally immediately (CANT-MISS,4). Serial troponin (CANT-MISS,4). CXR (core,2). CBC (core,2). BMP (core,2). Lipid panel (bonus,1). PENALTY: no EKG/troponin ordered (-3); shotgun panel with no reasoning (-1).",
+      "rubric": "EKG, ideally immediately (CANT-MISS,4). Serial high-sensitivity troponin (CANT-MISS,4). CBC — she looks pale (core,2). BMP with renal function before contrast/cath (core,2). CXR (core,1). Type & screen / rectal exam for melena given suspected GI bleed (bonus,1). Iron studies / lactate / lipid panel (bonus,1). PENALTY: no EKG/troponin ordered (-3); ignoring the anemia (no CBC) before anticoagulating (-2).",
       "reveal": true,
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; Lipid panel.",
+      "idealAnswer": "Order: EKG immediately; serial high-sensitivity troponin; CBC (she is pale and lightheaded); BMP (define the AKI before contrast/catheterization and dosing); CXR; type & screen and a rectal exam for melena given the suspected GI bleed; iron studies, lactate, and a lipid panel.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -106,31 +126,31 @@
             "points": 4
           },
           {
-            "item": "Serial troponin",
+            "item": "Serial high-sensitivity troponin",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
             "item": "CBC",
             "points": 2
           },
           {
-            "item": "BMP",
+            "item": "BMP with renal function before contrast/cath",
             "points": 2
           },
           {
-            "item": "Lipid panel",
-            "points": 2
+            "item": "CXR",
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Lipid panel",
+            "item": "Type & screen / rectal exam for melena",
+            "points": 1
+          },
+          {
+            "item": "Iron studies / lactate / lipid panel",
             "points": 1
           }
         ],
@@ -138,74 +158,70 @@
           {
             "item": "no EKG/troponin ordered",
             "points": -3
+          },
+          {
+            "item": "ignoring the anemia (no CBC) before anticoagulating",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
         "EKG, ideally immediately",
-        "Serial troponin"
+        "Serial high-sensitivity troponin"
       ],
       "optionalTests": [
-        "CXR",
         "CBC",
-        "BMP"
+        "BMP with renal function before contrast/cath",
+        "CXR",
+        "Type & screen / rectal exam for melena",
+        "Iron studies / lactate / lipid panel"
       ],
       "contraindicatedTests": [
         "no EKG/troponin ordered"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "EKG, ideally immediately"
+      ]
     },
     {
       "id": "ekg_read",
       "label": "Read EKG",
       "max": 15,
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = ST-segment depression and T-wave inversions in V4-V6, I, aVL; NO ST elevation. CREDIT: rate & rhythm (4); identifies ST depression / T-wave inversion as ischemia (6); recognizes an NSTEMI pattern - ischemia WITHOUT ST elevation (3); systematic read (2). PENALTY: calling a STEMI / activating thrombolytics for ST depression (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Interpret it systematically, then state how it fits the clinical picture.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (irregularly irregular, no organized P waves, rate ~120s) WITH rate-related/ischemic ST-segment depression and T-wave inversions in the lateral leads (V4–V6, I, aVL); NO ST elevation. CREDIT: identifies atrial fibrillation with RVR (rate & rhythm); identifies the lateral ST depression / T-wave inversion as ischemia; recognizes an NSTEMI pattern — ischemia WITHOUT ST elevation; integrates that the rapid AF is BOTH a demand driver and a treatment target; systematic read. PENALTY: calling a STEMI / activating thrombolytics for ST depression (-3); missing the atrial fibrillation (-2).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
-        "rate & rhythm",
-        "identifies ST depression / T-wave inversion as ischemia",
+        "atrial fibrillation with rapid ventricular response",
+        "lateral ST depression / T-wave inversion as ischemia",
         "recognizes an NSTEMI pattern - ischemia WITHOUT ST elevation",
+        "integrates rapid AF as both a demand driver and a treatment target",
         "systematic read"
       ],
       "criticalFindings": [
-        "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation."
+        "Atrial fibrillation with rapid ventricular response and rate-related/ischemic ST-segment depressions and T-wave inversions in V4–V6, I, aVL. NO ST-segment elevation."
       ],
       "commonMistakes": [
-        "calling a STEMI / activating thrombolytics for ST depression"
+        "calling a STEMI / activating thrombolytics for ST depression",
+        "missing the atrial fibrillation / calling the rhythm sinus"
       ],
-      "idealAnswer": "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
+      "idealAnswer": "Atrial fibrillation with rapid ventricular response (irregularly irregular, no discrete P waves, rate ~120s) with ST-segment depressions and T-wave inversions laterally in V4–V6 and leads I, aVL, and NO ST elevation. The rapid AF is both a driver of demand ischemia and an active treatment target, while the focal lateral ischemic changes and dynamic troponin point to a true NSTEMI on top of it.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
-            "points": 6
-          }
+          "Atrial fibrillation with rapid ventricular response and rate-related/ischemic ST-segment depressions and T-wave inversions in V4–V6, I, aVL. NO ST-segment elevation."
         ],
         "coreActions": [
-          {
-            "item": "rate & rhythm",
-            "points": 4
-          },
-          {
-            "item": "identifies ST depression / T-wave inversion as ischemia",
-            "points": 6
-          },
-          {
-            "item": "recognizes an NSTEMI pattern - ischemia WITHOUT ST elevation",
-            "points": 3
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "atrial fibrillation with rapid ventricular response",
+          "lateral ST depression / T-wave inversion as ischemia",
+          "recognizes an NSTEMI pattern - ischemia WITHOUT ST elevation",
+          "integrates rapid AF as both a demand driver and a treatment target",
+          "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "calling a STEMI / activating thrombolytics for ST depression",
+            "label": "calling a STEMI / activating thrombolytics for ST depression, or missing the atrial fibrillation",
             "points": -3
           }
         ]
@@ -216,28 +232,29 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = bilateral calcified pleural plaques (asbestos-related); no acute cardiopulmonary process. CREDIT: identifies the calcified pleural plaques (6); links them to prior asbestos exposure / notes they are an incidental finding not the cause of today's pain (4). PENALTY: calling the study normal / missing the abnormality (-3).",
+      "rubric": "Findings = bilateral calcified pleural plaques (asbestos-related); no acute cardiopulmonary process, no pulmonary edema, no widened mediastinum. CREDIT: identifies the calcified pleural plaques (6); links them to prior asbestos exposure / notes they are an incidental finding not the cause of today's pain, and states the pertinent negatives — no pulmonary edema and no mediastinal widening to suggest dissection (4). PENALTY: calling the study normal / missing the abnormality (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
         "identifies calcified pleural plaques",
-        "links them to old asbestos exposure"
+        "links them to old asbestos exposure; pertinent negatives (no edema, no widened mediastinum)"
       ],
       "criticalFindings": [
-        "Calcified pleural plaques (asbestos-related)."
+        "Calcified pleural plaques (asbestos-related); no pulmonary edema and no mediastinal widening."
       ],
       "commonMistakes": [
-        "mistaking pleural plaques for parenchymal masses"
+        "mistaking pleural plaques for parenchymal masses",
+        "failing to comment on the pertinent negatives (edema, mediastinal width)"
       ],
-      "idealAnswer": "Calcified pleural plaques along the diaphragm and lateral pleura, consistent with prior asbestos exposure.",
+      "idealAnswer": "Calcified pleural plaques along the diaphragm and lateral pleura, consistent with prior asbestos exposure — an incidental finding, not the cause of today's pain. Pertinent negatives: no pulmonary edema and no widened mediastinum to suggest dissection.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Calcified pleural plaques (asbestos-related)."
+          "Calcified pleural plaques (asbestos-related); no pulmonary edema and no mediastinal widening."
         ],
         "coreActions": [
           "identifies calcified pleural plaques",
-          "links them to old asbestos exposure"
+          "links them to old asbestos exposure; pertinent negatives (no edema, no widened mediastinum)"
         ],
         "bonusActions": [],
         "penalties": [
@@ -252,9 +269,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given these results, what is your leading diagnosis now and your reasoning?",
-      "rubric": "Commits to NSTEMI (8; accepts non-ST-elevation MI / ACS with positive troponin). Correctly notes the ischemic EKG changes WITHOUT ST elevation (4). Recognizes the rising troponin defines infarct vs unstable angina (3).",
-      "idealAnswer": "NSTEMI. ",
+      "prompt": "Given these results, what is your leading diagnosis now, and how do you resolve type 1 NSTEMI versus type 2 demand ischemia? Name the discriminating findings and any residual ambiguity.",
+      "rubric": "Commits to NSTEMI — type 1 plaque-rupture ACS (8; accepts non-ST-elevation MI / ACS with a dynamic troponin). Resolves the type 1 vs type 2 fork: the crescendo exertional pattern, the focal lateral ischemic ECG territory, and the large dynamic high-sensitivity troponin rise favor a true type 1 NSTEMI even though the rapid atrial fibrillation and the acute anemia (Hgb 8.4, iron-deficient from GI loss) are real demand contributors (4). Notes the discriminating next test is coronary angiography and that residual ambiguity (how much is demand) is settled by treating the AF/anemia and seeing whether ischemia and troponin resolve. Integrates the AF seen on the EKG and the dual problem of a positive troponin in a patient who is actively bleeding and off anticoagulation.",
+      "idealAnswer": "NSTEMI — type 1 plaque-rupture ACS is the leading diagnosis: crescendo exertional pressure, focal lateral ST depression and T-wave inversion on the EKG, and a large dynamic high-sensitivity troponin rise (88 to 540 ng/L). The genuine competitor is type 2 / demand ischemia, because she is in new rapid atrial fibrillation (rate 126) with acute iron-deficiency anemia (Hgb 8.4, ferritin 12) from a GI bleed, and her CKD slightly reduces troponin clearance — all real demand contributors. The fork resolves toward type 1 because of the crescendo anginal history, the focal coronary territory, and the magnitude/kinetics of the troponin. The discriminating test is coronary angiography; residual ambiguity over the demand component is settled by controlling the rate, transfusing/correcting the anemia, and reassessing whether ischemia and troponin trend down. The central tension to flag: a positive troponin demanding antithrombotic therapy in a woman who is actively bleeding and has self-stopped her anticoagulation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -267,50 +284,54 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH ACS adjuncts: ASA load (CANT-MISS,4); anticoagulation – UFH/LMWH/fondaparinux started on dx (5); high-intensity statin atorvastatin 80 (3); beta blocker within 24 h, caution in decompensated HF/bradycardia/hypotension (3); ACEi/ARB within 24 h (2); nitrates for ischemic pain (2); cardiology consult / early invasive (GRACE) cath (5); telemetry + serial troponin (2); P2Y12 only with cardiology (1). PENALTY: thrombolytics for NSTEMI (-4); beta blocker in shock/cocaine/decompensated HF (-2).",
-      "idealAnswer": "Aspirin 325 mg load; start anticoagulation (UFH/LMWH) on diagnosis of ACS; high-intensity statin (atorvastatin 80 mg); beta blocker within 24 h (if no contraindication); ACEi/ARB within 24 h; nitrates for ongoing pain; hold P2Y12 load until discussed with cardiology; cardiology consult for early invasive risk stratification (GRACE) and catheterization; telemetry with serial troponins.",
+      "prompt": "What is your management plan, including disposition? She has a positive troponin AND an active GI bleed with new anemia. Address antithrombotic decisions, rate control of the atrial fibrillation, and whether she can be safely discharged.",
+      "rubric": "Per MGH ACS adjuncts, balanced against an active GI bleed: ASA load (CANT-MISS,3); START anticoagulation/antithrombotics in a tightly bleeding-risk–weighed way WITH GI involvement and PPI — do NOT reflexively fully anticoagulate an actively bleeding patient; balance ischemic vs bleeding risk (CANT-MISS,4). Cardiology consult / early invasive (GRACE) cath, with GI co-management and renal-protective contrast strategy given AKI (CANT-MISS,5). Rate control the atrial fibrillation (IV beta blocker / careful, avoid in hypotension/decompensation) (core,3). High-intensity statin atorvastatin 80 (core,2). Transfuse / resuscitate the anemia and hold NSAIDs; start IV PPI; GI consult for the bleed (core,3). Telemetry + serial troponin; hold/avoid nephrotoxins and dose-adjust for CKD; hold metformin around contrast (core,2). SAFE DISPOSITION: ADMIT to a monitored cardiology/telemetry bed — this patient CANNOT be discharged; perform medication reconciliation (restart/secure anticoagulation plan once bleeding controlled, stop ibuprofen, address apixaban cost/adherence), arrange close follow-up (core,3). PENALTY: thrombolytics for NSTEMI (-4); fully anticoagulating without addressing the active bleed (-3); discharging this patient (-4); continuing NSAIDs (-2).",
+      "idealAnswer": "Admit to a monitored cardiology/telemetry bed — she cannot be safely discharged. Aspirin load. Antithrombotic/anticoagulation decisions must be made WITH cardiology and GI and weighed against the active GI bleed: do not reflexively fully anticoagulate an actively bleeding patient — balance ischemic and bleeding risk, start an IV PPI, and hold/secure a clear anticoagulation plan until bleeding is controlled. Cardiology consult for early invasive risk stratification (GRACE) and catheterization, with a renal-protective contrast strategy and metformin held around contrast given the AKI. Rate-control the atrial fibrillation (careful IV beta blocker, avoiding it if she decompensates or becomes hypotensive). High-intensity statin (atorvastatin 80 mg). Resuscitate and transfuse the anemia, hold all NSAIDs, GI consult for the suspected upper GI bleed. Telemetry with serial troponins; dose-adjust renally; hold nephrotoxins. Disposition/safe-discharge planning: medication reconciliation (stop ibuprofen permanently, restart a definite anticoagulation plan once the bleed is controlled, address the apixaban cost/adherence barrier), patient education, and close cardiology, GI, and primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Aspirin",
+            "points": 3
+          },
+          {
+            "item": "Bleeding-risk-weighed antithrombotic/anticoagulation plan with PPI (do not fully anticoagulate an active bleed)",
             "points": 4
           },
           {
-            "item": "Anticoagulation (heparin/LMWH)",
-            "points": 5
-          },
-          {
-            "item": "Cardiology consult / early invasive cath",
+            "item": "Cardiology consult / early invasive cath with GI co-management and renal-protective contrast",
             "points": 5
           }
         ],
         "coreActions": [
           {
+            "item": "Rate control the atrial fibrillation",
+            "points": 3
+          },
+          {
             "item": "High-intensity statin",
-            "points": 3
-          },
-          {
-            "item": "Beta blocker within 24h",
-            "points": 3
-          },
-          {
-            "item": "ACEi/ARB",
             "points": 2
           },
           {
-            "item": "Telemetry and serial troponin",
+            "item": "Transfuse/resuscitate anemia, hold NSAIDs, IV PPI, GI consult",
+            "points": 3
+          },
+          {
+            "item": "Telemetry and serial troponin; renal dosing, hold metformin around contrast",
             "points": 2
+          },
+          {
+            "item": "Safe disposition: ADMIT to telemetry, med reconciliation, follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Nitrates for ischemic pain",
+            "item": "Nitrates for ischemic pain (cautious with hypotension/anemia)",
             "points": 1
           },
           {
-            "item": "P2Y12 inhibitor with cardiology",
+            "item": "Hold/defer P2Y12 inhibitor until discussed with cardiology and GI",
             "points": 1
           }
         ],
@@ -318,29 +339,41 @@
           {
             "item": "Thrombolytics for NSTEMI",
             "points": -4
+          },
+          {
+            "item": "Fully anticoagulating without addressing the active bleed",
+            "points": -3
+          },
+          {
+            "item": "Discharging this patient",
+            "points": -4
           }
         ]
       },
       "requiredActions": [
         "Aspirin",
-        "Anticoagulation (heparin/LMWH)",
-        "Cardiology consult / early invasive cath"
+        "Bleeding-risk-weighed antithrombotic/anticoagulation plan with PPI (do not fully anticoagulate an active bleed)",
+        "Cardiology consult / early invasive cath with GI co-management and renal-protective contrast"
       ],
       "optionalActions": [
+        "Rate control the atrial fibrillation",
         "High-intensity statin",
-        "Beta blocker within 24h",
-        "ACEi/ARB",
-        "Telemetry and serial troponin",
-        "Nitrates for ischemic pain",
-        "P2Y12 inhibitor with cardiology"
+        "Transfuse/resuscitate anemia, hold NSAIDs, IV PPI, GI consult",
+        "Telemetry and serial troponin; renal dosing, hold metformin around contrast",
+        "Safe disposition: ADMIT to telemetry, med reconciliation, follow-up",
+        "Nitrates for ischemic pain (cautious with hypotension/anemia)",
+        "Hold/defer P2Y12 inhibitor until discussed with cardiology and GI"
       ],
       "unsafeActions": [
-        "Thrombolytics for NSTEMI"
+        "Thrombolytics for NSTEMI",
+        "Fully anticoagulating without addressing the active bleed",
+        "Discharging this patient"
       ],
       "consults": [
-        "Cardiology"
+        "Cardiology",
+        "Gastroenterology"
       ],
-      "disposition": "Admit to telemetry/cardiology",
+      "disposition": "Admit to telemetry/cardiology with GI co-management",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Acute Coronary Syndrome",
@@ -352,34 +385,37 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
+      "litflStudyN": 2,
+      "integrated": true,
       "source": "https://litfl.com/myocardial-ischaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
-      "verify": "From the LITFL 'Myocardial Ischaemia (NSTEMI)' library page - download a tracing matching: ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-se ... self-host with credit to litfl.com.",
+      "findings": "Atrial fibrillation with rapid ventricular response and rate-related/ischemic ST-segment depressions and T-wave inversions in V4–V6, I, aVL. NO ST-segment elevation.",
+      "verify": "From the LITFL ECG library, source a tracing of atrial fibrillation with rapid ventricular response showing lateral ST-segment depression / T-wave inversion (ischemia) and NO ST elevation; self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
+      "imageDescription": "12-lead showing atrial fibrillation with RVR and lateral ST depression / T-wave inversion, no ST elevation",
       "searchTerms": [
-        "12-lead EKG ST-segment depressions T-wave inversions"
+        "atrial fibrillation rapid ventricular response 12-lead EKG",
+        "AF with lateral ST depression ischemia ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 64-year-old man presents with crushing substernal chest pressure radiating to the left arm during exertion."
+      "clinicalVignette": "A 62-year-old woman with crescendo exertional chest pressure and new palpitations is found to have an irregularly irregular tachycardia and a dynamic troponin rise."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons - verify file license",
-      "findings": "Bilateral calcified pleural plaques along the diaphragmatic and lateral pleura (prior asbestos exposure).",
-      "verify": "Source a study matching: Bilateral calcified pleural plaques along the diaphragmatic and lateral pleura (prior asbestos exposure). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Bilateral calcified pleural plaques along the diaphragmatic and lateral pleura (prior asbestos exposure); no pulmonary edema and no mediastinal widening.",
+      "verify": "Source a study matching: Bilateral calcified pleural plaques along the diaphragmatic and lateral pleura (prior asbestos exposure); no pulmonary edema, no widened mediastinum. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing calcified pleural plaques",
+      "imageDescription": "chest radiograph showing calcified pleural plaques, no edema, normal mediastinal width",
       "searchTerms": [
         "pleural plaques chest x-ray",
         "calcified pleural plaque asbestos radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 68-year-old man with decades of shipyard work presents for evaluation of dyspnea on exertion."
+      "clinicalVignette": "A 62-year-old woman with decades of secondhand asbestos exposure presents with chest pressure; the film is screened for edema and mediastinal widening."
     }
   },
   "standardizedPatient": {
@@ -390,12 +426,14 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence",
+      "rectal_bleeding"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "62-year-old woman, anxious and uncomfortable, occasionally rubbing her chest. Cooperative.",
+    "affect": "62-year-old woman, anxious and uncomfortable, occasionally rubbing her chest and aware of her heart pounding. Mildly pale. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (stopped anticoagulant, NSAID use, dark stools, smoking, alcohol) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -414,7 +452,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -430,6 +468,75 @@
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "blood thinner",
+        "anticoagulant",
+        "apixaban",
+        "eliquis",
+        "did you stop any medications",
+        "are you taking your medications",
+        "adherence",
+        "why did you stop"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "nsaid_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "otc",
+        "pain pills",
+        "ibuprofen",
+        "advil",
+        "nsaid",
+        "anti-inflammatory",
+        "what do you take for your knee"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "gi_bleeding",
+      "category": "ros",
+      "triggerConcepts": [
+        "black stool",
+        "tarry stool",
+        "melena",
+        "blood in stool",
+        "bowel movements",
+        "rectal bleeding",
+        "dizziness",
+        "lightheaded"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "palpitations",
+      "category": "hpi",
+      "triggerConcepts": [
+        "palpitations",
+        "racing heart",
+        "fluttering",
+        "heart racing",
+        "irregular heartbeat"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
     },
     {
       "id": "onset",
@@ -541,45 +648,57 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: regular rhythm, normal S1/S2, soft S4, no murmur, no rub.",
+      "id": "auscultate_mitral_area_finding_1",
+      "finding": "Cardiac: irregularly irregular rhythm, tachycardic, variable intensity S1, no murmur, no rub, no S3.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "Heart sounds normal; no murmur appreciated."
     },
     {
-      "id": "assess_edema_finding_2",
-      "finding": "Extremities: no edema, no calf tenderness, symmetric pulses.",
+      "id": "assess_mucous_membranes_finding_2",
+      "finding": "Mucous membranes / conjunctiva: pale conjunctivae (mild pallor) — consistent with anemia.",
       "revealedBy": [
-        "assess_edema"
+        "assess_mucous_membranes",
+        "inspect_conjunctiva"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No peripheral edema."
+      "normalIfNotPresent": "Mucous membranes moist and pink."
     },
     {
-      "id": "assess_calf_tenderness_finding_3",
-      "finding": "Extremities: no edema, no calf tenderness, symmetric pulses.",
-      "revealedBy": [
-        "assess_calf_tenderness"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No calf tenderness."
-    },
-    {
-      "id": "assess_general_appearance_finding_4",
-      "finding": "General: anxious, diaphoretic, in mild distress.",
+      "id": "assess_general_appearance_finding_3",
+      "finding": "General: anxious, diaphoretic, in mild distress, mildly pale.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No tremor or diaphoresis."
+      "normalIfNotPresent": "No acute distress; not diaphoretic."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_4",
+      "finding": "Extremities: no edema, no calf tenderness, symmetric pulses but the pulse is irregular.",
+      "revealedBy": [
+        "assess_calf_tenderness",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness or edema."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_5",
+      "finding": "Abdomen: soft, mildly tender to deep epigastric palpation, no rebound; melena (black tarry stool) present on rectal exam.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen soft and nontender."
     }
   ],
   "overallScoring": {
@@ -592,65 +711,72 @@
   },
   "caseSummary": {
     "finalDiagnosis": "NSTEMI",
-    "diagnosticFramework": "62F with HTN, hyperlipidemia, and T2DM presents with 2 hours of substernal chest pressure radiating to the left arm, with diaphoresis and nausea. The diagnosis is NSTEMI, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "62F with HTN, hyperlipidemia, T2DM, stage-3 CKD, and paroxysmal atrial fibrillation presents with ~3 hours of crescendo exertional substernal chest pressure, new palpitations, and a dynamic high-sensitivity troponin rise. The diagnosis is NSTEMI (type 1 plaque-rupture ACS), reached after resolving a genuine fork against type 2 / demand ischemia driven by new rapid atrial fibrillation and acute iron-deficiency anemia from an NSAID-associated GI bleed. The case layers multi-system abnormalities — cardiac injury, new anemia, acute-on-chronic kidney injury, hyperkalemia/hyperglycemia, and a mildly elevated lactate/anion gap — and a polypharmacy/adherence confounder (self-stopped apixaban, OTC ibuprofen) that complicate antithrombotic management.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: regular rhythm, normal S1/S2, soft S4, no murmur, no rub.",
-      "Extremities: no edema, no calf tenderness, symmetric pulses.",
-      "Extremities: no edema, no calf tenderness, symmetric pulses.",
-      "General: anxious, diaphoretic, in mild distress."
+      "Cardiac: irregularly irregular rhythm, tachycardic, variable intensity S1, no murmur, no rub, no S3.",
+      "Mucous membranes / conjunctiva: pale conjunctivae (mild pallor) — consistent with anemia.",
+      "General: anxious, diaphoretic, in mild distress, mildly pale.",
+      "Extremities: no edema, no calf tenderness, symmetric pulses but the pulse is irregular.",
+      "Abdomen: soft, mildly tender to deep epigastric palpation, no rebound; melena (black tarry stool) present on rectal exam."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
       "Troponin",
-      "Lipids"
+      "Lipids",
+      "Iron_studies",
+      "Lactate"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by NSTEMI while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to NSTEMI and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (tachycardic, irregular, mildly pale).",
+      "Elicit the focused history, including the stopped apixaban, OTC ibuprofen, and dark/tarry stools only on direct questioning.",
+      "Perform the targeted physical exam — irregular rhythm, conjunctival pallor, epigastric tenderness, melena.",
+      "Build a differential led by NSTEMI while naming the genuine type 2 / demand-ischemia competitor and three mechanisms of troponin elevation.",
+      "Order a focused workup (EKG, serial high-sensitivity troponin, CBC, renal function) and interpret the AF-with-ischemia EKG, the CXR, and the multi-system labs.",
+      "Commit to NSTEMI, resolve the type 1 vs type 2 fork, and manage by balancing antithrombotic therapy against the active GI bleed, rate-controlling the AF, and admitting to telemetry."
     ],
     "commonPitfalls": [
-      "Thrombolytics for NSTEMI"
+      "Thrombolytics for NSTEMI",
+      "Fully anticoagulating a patient with an active GI bleed",
+      "Discharging the patient",
+      "Anchoring on a single troponin mechanism and ignoring the anemia/AF demand drivers",
+      "Continuing NSAIDs"
     ],
     "managementPearls": [
       "Aspirin",
-      "Anticoagulation (heparin/LMWH)",
-      "Cardiology consult / early invasive cath"
+      "Bleeding-risk-weighed antithrombotic/anticoagulation plan with PPI",
+      "Cardiology consult / early invasive cath with GI co-management and renal-protective contrast"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "auscultate_aortic_area"
+      "auscultate_mitral_area"
     ],
     "criticalWorkupItems": [
       "EKG, ideally immediately",
-      "Serial troponin"
+      "Serial high-sensitivity troponin"
     ],
     "criticalInterpretationItems": [
-      "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
-      "Calcified pleural plaques (asbestos-related)."
+      "Atrial fibrillation with rapid ventricular response and rate-related/ischemic ST-segment depressions and T-wave inversions in V4–V6, I, aVL. NO ST-segment elevation.",
+      "Calcified pleural plaques (asbestos-related); no pulmonary edema and no mediastinal widening."
     ],
     "criticalManagementItems": [
       "Aspirin",
-      "Anticoagulation (heparin/LMWH)",
-      "Cardiology consult / early invasive cath"
+      "Bleeding-risk-weighed antithrombotic/anticoagulation plan with PPI (do not fully anticoagulate an active bleed)",
+      "Cardiology consult / early invasive cath with GI co-management and renal-protective contrast"
     ],
     "keyImageInterpretationFindings": [
-      "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
-      "Calcified pleural plaques (asbestos-related)."
+      "Atrial fibrillation with rapid ventricular response and rate-related/ischemic ST-segment depressions and T-wave inversions in V4–V6, I, aVL. NO ST-segment elevation.",
+      "Calcified pleural plaques (asbestos-related); no pulmonary edema and no mediastinal widening."
     ],
     "criticalImageInterpretationFindings": [
-      "ST-segment depressions and T-wave inversions in V4–V6 and leads I, aVL. NO ST-segment elevation.",
-      "Calcified pleural plaques (asbestos-related)."
+      "Atrial fibrillation with rapid ventricular response and rate-related/ischemic ST-segment depressions and T-wave inversions in V4–V6, I, aVL. NO ST-segment elevation.",
+      "Calcified pleural plaques (asbestos-related); no pulmonary edema and no mediastinal widening."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When a troponin is positive, name the rhythm first — a rapid atrial fibrillation is both a demand driver and a treatment target.",
+      "An incidental abnormality (pleural plaques) is an interpretation task in its own right — name it, then judge its relevance.",
+      "State pertinent negatives — no ST elevation, no pulmonary edema, no widened mediastinum — not just positives."
     ]
   },
   "communicationScoring": {
@@ -665,7 +791,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (adherence, bowel/bleeding history)",
         "points": 1
       },
       {
@@ -680,9 +806,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "pathology-forward integrated interpretation",
+    "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true
   }

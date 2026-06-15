@@ -1,0 +1,806 @@
+{
+  "id": "anemia-09",
+  "category": "Anemia",
+  "difficulty": "hard",
+  "title": "Fatigue, bruising, and a lingering infection with pancytopenia in an older man",
+  "diagnosis": "Myelodysplastic syndrome (MDS)",
+  "chart": {
+    "ageSex": "74M",
+    "cc": "Worsening fatigue and easy bruising",
+    "oneLiner": "74M with coronary artery disease, hypertension, and prior chemoradiation for Hodgkin lymphoma in his 50s presents with months of progressive fatigue and exertional dyspnea, new easy bruising and gum bleeding, and a recent slow-to-clear skin infection; labs show pancytopenia with macrocytic, hypoproliferative anemia, and his EKG shows rate-related lateral ST-depression (demand ischemia) at the current degree of anemia.",
+    "vitals": {
+      "BP": "108/66",
+      "HR": "112",
+      "RR": "20",
+      "Temp": "37.4°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've been wiped out for months, I get winded just walking to the mailbox now, and lately I bruise and bleed at the gums for no reason.",
+  "patientFile": "PERSONA: 74-year-old man, pale and tired, a little short of breath when he talks for long but cooperative and a reliable historian. Worried because his late wife had leukemia and 'this feels like something is really wrong with my blood.'\n\nHPI: Several MONTHS of slowly progressive fatigue and exertional dyspnea — used to garden and walk the dog, now winded walking across a room and napping most of the day. Over the LAST FEW WEEKS he has noticed easy BRUISING on his arms and legs without injury, BLEEDING GUMS when he brushes, and one nosebleed. About two weeks ago he had a small cut on his shin that turned into a red, tender area that was SLOW TO HEAL and needed antibiotics from urgent care; it is better but not gone. He feels his heart RACING and gets light chest tightness/pressure with exertion that eases with rest (only if asked about chest symptoms or palpitations). NO black or bloody stools, NO vomiting blood, NO heavy alcohol use, NO weight loss that he has noticed, NO drenching night sweats, NO new lumps he has felt, NO numbness/tingling or balance problems, NO dark urine.\nTRANSFUSION/PRIOR-CANCER (reveal only when asked about prior cancer, blood counts, transfusions, or radiation/chemo history): Treated for Hodgkin lymphoma in his early 50s (about 20 years ago) with chemotherapy AND chest/mantle radiation; has been in remission since. Over the past two months an outside clinic told him his 'blood counts were low' and he has already needed TWO red-cell TRANSFUSIONS in the last six weeks for the fatigue — he felt better for a week or two each time, then slid back (transfusion-dependent).\nINFECTION/FEVER (reveal when asked about fevers/infections): low-grade temperatures at home, the skin infection above; no productive cough, no dysuria, no current high fever today.\nPMH: coronary artery disease (drug-eluting stent 4 years ago), hypertension, hyperlipidemia, mild chronic kidney disease, treated Hodgkin lymphoma (chemoradiation ~20 years ago, in remission). NO known myelodysplasia/leukemia diagnosis yet. NO cirrhosis, NO HIV.\nMEDS (reveal on medication questioning): aspirin 81 mg daily and a statin and a beta-blocker for his heart/stent; lisinopril for blood pressure; he JUST FINISHED a course of trimethoprim-sulfamethoxazole (a 'sulfa' antibiotic) from urgent care for the skin infection; occasional acetaminophen. NO warfarin or other anticoagulant, NO methotrexate, NO ongoing chemotherapy, NO herbal/OTC supplements beyond a multivitamin. ALLERGIES: none. (The recent sulfa antibiotic and the aspirin are confounders — sulfa can suppress marrow and aspirin worsens his bleeding tendency with a low platelet count.)\nSOCIAL: retired machinist, widower, lives alone in a single-story home, drives locally. Rare alcohol (a beer at holidays). Former smoker, quit 20 years ago. No drugs. Diet is reasonable and includes meat.\nFAMILY: late wife had leukemia (not heritable to him, but the reason he is frightened); no known inherited blood disorders.\nROS: as above; profound fatigue, dyspnea on exertion, bleeding/bruising, a slow-healing infection; denies melena/hematemesis, denies neurologic symptoms, denies dark urine.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, tired-appearing, mildly tachypneic with conversation; no acute distress at rest.\n- Vitals: BP 108/66, HR 112, RR 20, 37.4°C, SpO2 97% RA.\n- Conjunctivae/skin: marked conjunctival and palmar PALLOR if inspected; scattered ecchymoses and a few petechiae on the lower legs and forearms if the skin is examined; a healing but still mildly erythematous, non-fluctuant area over the right shin (resolving cellulitis) if the skin/legs are inspected.\n- Mouth: gingival oozing/bleeding at the gum line if the oropharynx is inspected; no thrush, no overt ulcer.\n- Cardiac: tachycardic, regular, with a soft systolic flow murmur (high-output from anemia) and no rub or gallop if auscultated.\n- Lungs: clear to auscultation.\n- Abdomen: soft, nontender; NO hepatomegaly and NO splenomegaly on palpation (argues against a primary lymphoproliferative/myeloproliferative organomegaly).\n- Lymph nodes: no significant lymphadenopathy.\n- Neuro: alert and oriented; normal strength, sensation, reflexes, gait (NO dorsal-column/subacute-combined-degeneration signs — argues against B12 deficiency as the driver).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior Hodgkin lymphoma, the chemoradiation, the prior low counts, or the two recent transfusions unless asked about prior cancer, radiation/chemo, blood counts, or transfusions.\n- Do NOT volunteer the recent sulfa antibiotic, the aspirin, or the cardiac stent/medications unless asked about medications or the heart.\n- Do NOT volunteer the exertional chest tightness/palpitations unless asked about chest symptoms or the heart.\n- The pallor, bruising/petechiae, gingival bleeding, healing skin infection, flow murmur, and the absence of organomegaly/lymphadenopathy and of neuro signs are revealed ONLY if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "CBC": "Hgb 6.8 (severe anemia), MCV 104 (macrocytic), WBC 2.1 (LOW) with absolute neutrophil count ~0.7 (neutropenic), Plt 28 (LOW) — PANCYTOPENIA. Reticulocyte count LOW/inappropriately normal for the degree of anemia (hypoproliferative marrow). Corrected reticulocyte (reticulocyte index) well below 2%.",
+      "Smear": "Dysplastic marrow output: HYPOGRANULAR and pseudo-Pelger-Huët (bilobed) neutrophils, oval macrocytes, occasional teardrop and dimorphic red cells, large/hypogranular platelets; OCCASIONAL circulating blasts estimated at ~2–3% (below the 20% threshold for acute leukemia). NO schistocytes (argues against a microangiopathy), NO overt hypersegmented neutrophils dominating, NO rouleaux.",
+      "B12_Folate": "Serum B12 NORMAL, serum and RBC folate NORMAL, with NORMAL methylmalonic acid and homocysteine — excludes megaloblastic (B12/folate) anemia as the cause of the macrocytosis.",
+      "Hemolysis_Iron": "LDH mildly elevated and indirect bilirubin mildly elevated with low-normal haptoglobin — ineffective intramedullary erythropoiesis (not brisk peripheral hemolysis); DIRECT antiglobulin (Coombs) NEGATIVE. Iron studies show adequate/replete iron with a high ferritin (iron-loaded from transfusions), so this is NOT iron deficiency. Reticulocyte response remains blunted.",
+      "BMP_Coags_Infx": "BMP: Na 139, K 4.2, Cl 104, HCO3 25 — anion gap = 139 − (104 + 25) = 10 (normal); creatinine 1.5 (his baseline mild CKD), BUN 24, glucose 96. PT/INR, aPTT, fibrinogen and D-dimer essentially NORMAL (argues against DIC as the cause of the low platelets). Blood cultures pending and no current high fever, but the neutropenia (ANC ~0.7) places him at real infection risk.",
+      "Bone_Marrow": "Bone-marrow aspirate/biopsy (the confirmatory test): HYPERCELLULAR marrow for age with multilineage DYSPLASIA, ring sideroblasts present, and a blast count of ~6–8% (increased but BELOW the 20% that defines acute myeloid leukemia) — diagnostic of a myelodysplastic syndrome (an MDS with excess blasts). Cytogenetics/FISH and an MDS mutation panel are sent for risk stratification (e.g., IPSS-R). NOT an aplastic/empty marrow, NOT a leukemic marrow with ≥20% blasts, NO megaloblastic-only picture."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/myocardial-ischaemia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "integrated": true,
+      "findings": "Sinus tachycardia at ~110–115 bpm with horizontal/down-sloping ST-segment DEPRESSION (~1–1.5 mm) in the lateral leads (I, aVL, V5–V6) and flattened/biphasic T waves; no ST elevation, no pathologic Q waves, narrow QRS. The pattern is rate-related DEMAND ischemia (a type-2/NSTEMI physiology) driven by severe anemia and tachycardia rather than a primary plaque-rupture STEMI.",
+      "verify": "Source a study matching: sinus tachycardia with lateral horizontal/down-sloping ST depression and T-wave flattening, no ST elevation, no Q waves — demand (rate-related) subendocardial ischemia. Self-host with appropriate credit; do not reuse a prior tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with lateral ST-segment depression (subendocardial demand ischemia)",
+      "searchTerms": [
+        "lateral ST depression sinus tachycardia ECG",
+        "subendocardial demand ischemia ECG type 2",
+        "rate related ST depression anemia ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A severely anemic older man with known coronary disease has light exertional chest pressure and a fast pulse; a 12-lead is obtained during his anemia workup."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields with no consolidation, effusion, or mass; normal cardiomediastinal silhouette; no acute process. (Specifically no focal pneumonia despite the neutropenia and no nodal/mediastinal mass to suggest relapsed lymphoma.)",
+      "verify": "Source a study matching: clear lungs, no consolidation/effusion/mass, normal cardiomediastinal silhouette, no acute process. Self-host with appropriate credit; do not reuse a prior tracing.",
+      "assetNeeded": true,
+      "imageDescription": "normal PA chest radiograph with clear lungs and no mediastinal mass",
+      "searchTerms": [
+        "normal chest x-ray PA",
+        "clear lungs no consolidation chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A neutropenic older man with prior mantle radiation has a screening chest film to exclude occult pneumonia or relapsed nodal disease."
+    }
+  },
+  "revealKeys": [
+    "CBC",
+    "Smear",
+    "B12_Folate",
+    "Hemolysis_Iron",
+    "BMP_Coags_Infx",
+    "Bone_Marrow",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "CBC",
+    "Smear",
+    "Bone_Marrow"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, give your differential for this older man with PANCYTOPENIA (note your leading diagnosis). Also name THREE distinct mechanisms/categories by which a patient can become pancytopenic.",
+      "rubric": "Myelodysplastic syndrome (MDS) — leading, given an older adult with prior chemoradiation and a macrocytic, hypoproliferative pancytopenia (leading,6). Acute leukemia (evolving AML) — must-not-miss; circulating blasts and pancytopenia can be early/transforming leukemia (CANT-MISS,5). Aplastic anemia / hypoplastic marrow failure — must-not-miss competing marrow-failure cause, also linked to prior chemoradiation and drugs (CANT-MISS,4). B12/folate (megaloblastic) deficiency (core,2). Drug-induced marrow suppression — the recent trimethoprim-sulfamethoxazole (core,1). Marrow infiltration / relapsed lymphoma or myelofibrosis (core,1). Connects MACROCYTIC + hypoproliferative (low reticulocyte) pancytopenia with dysplastic cells and prior chemoradiation to a primary marrow-failure/MDS process rather than peripheral destruction or deficiency (core,3). Names THREE mechanisms of pancytopenia — e.g. (1) decreased/ineffective marrow production (MDS, aplastic anemia, B12/folate, drug suppression, marrow infiltration), (2) increased peripheral destruction/sequestration (immune cytopenias, hypersplenism, microangiopathy/DIC), and (3) marrow replacement/infiltration (leukemia, lymphoma, metastasis, fibrosis) (core,3). PENALTY: anchoring on simple anemia and never naming a marrow-failure/leukemia process in a pancytopenic older adult (-3).",
+      "idealAnswer": "Leading diagnosis: Myelodysplastic syndrome (MDS) — a 74-year-old with prior Hodgkin chemoradiation now has a macrocytic, hypoproliferative (low-reticulocyte) PANCYTOPENIA with dysplastic-appearing cells, which is the classic therapy-related/age-related clonal marrow-failure picture. Must-not-miss competitors that share this presentation: evolving acute myeloid leukemia (the circulating blasts and pancytopenia can be early or transforming leukemia and must be excluded by the blast percentage) and aplastic anemia / hypoplastic marrow failure (another marrow-failure state linked to prior chemoradiation and to drugs). Also reasonable: B12/folate (megaloblastic) deficiency, drug-induced marrow suppression from his recent trimethoprim-sulfamethoxazole, and marrow infiltration by relapsed lymphoma or myelofibrosis. Three distinct mechanisms of pancytopenia: (1) DECREASED or INEFFECTIVE marrow production — MDS, aplastic anemia, B12/folate deficiency, drug/toxin suppression; (2) INCREASED peripheral destruction or sequestration — immune cytopenias, hypersplenism, microangiopathy/DIC; and (3) marrow REPLACEMENT/INFILTRATION — acute leukemia, lymphoma, metastatic cancer, or myelofibrosis. Here the low reticulocyte count, the dysplastic morphology, and the absence of splenomegaly point to ineffective production (MDS) rather than destruction or sequestration.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Myelodysplastic syndrome (MDS)",
+            "points": 6
+          },
+          {
+            "item": "Acute leukemia (evolving AML)",
+            "points": 5
+          },
+          {
+            "item": "Aplastic anemia / hypoplastic marrow failure",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "B12/folate (megaloblastic) deficiency",
+            "points": 2
+          },
+          {
+            "item": "Drug-induced marrow suppression (recent trimethoprim-sulfamethoxazole)",
+            "points": 1
+          },
+          {
+            "item": "Marrow infiltration / relapsed lymphoma or myelofibrosis",
+            "points": 1
+          },
+          {
+            "item": "Connects macrocytic + hypoproliferative pancytopenia with dysplasia and prior chemoradiation to a primary marrow-failure process",
+            "points": 3
+          },
+          {
+            "item": "Names three mechanisms of pancytopenia (decreased/ineffective production; peripheral destruction/sequestration; marrow replacement/infiltration)",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchors on simple anemia and never names a marrow-failure/leukemia process in a pancytopenic older adult",
+            "points": -3
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Acute leukemia (evolving AML)",
+        "Aplastic anemia / hypoplastic marrow failure"
+      ],
+      "acceptableAlternatives": [
+        "B12/folate (megaloblastic) deficiency",
+        "Drug-induced marrow suppression (recent trimethoprim-sulfamethoxazole)",
+        "Marrow infiltration / relapsed lymphoma or myelofibrosis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial workup do you want to order to characterize this pancytopenia and resolve MDS versus the competing marrow-failure/leukemia causes?",
+      "rubric": "CBC with differential and RETICULOCYTE count + peripheral SMEAR, looking specifically for dysplasia (hypogranular/pseudo-Pelger neutrophils) versus blasts versus megaloblastic change (CANT-MISS,4). BONE-MARROW aspirate and biopsy with cytogenetics/FISH and an MDS mutation panel — the confirmatory test that separates MDS from aplastic anemia and acute leukemia by cellularity and blast percentage (CANT-MISS,4). B12, folate (and MMA/homocysteine) to exclude megaloblastic anemia (core,2). Hemolysis labs (LDH, indirect bilirubin, haptoglobin, reticulocytes) and a Coombs/DAT (core,1). Iron studies/ferritin (transfusion iron overload, not deficiency) (core,1). Coagulation studies (PT/aPTT/fibrinogen/D-dimer) to exclude DIC, plus BMP/renal function (core,1). Blood cultures and an infection screen given the neutropenia, and a type-and-screen for transfusion (core,1). EKG given his chest symptoms and severe anemia (core,1). PENALTY: transfusing or treating empirically without sending the diagnostic bone marrow / smear first when there is no emergent bleed (-2); ordering a shotgun panel with no reasoning (-2).",
+      "idealAnswer": "Order: EKG; CXR; CBC with differential and reticulocyte count; peripheral smear (look for dysplastic hypogranular/pseudo-Pelger neutrophils and dimorphic cells versus blasts versus megaloblastic change); a BONE-MARROW aspirate and biopsy with cytogenetics/FISH and an MDS mutation panel as the confirmatory test that distinguishes MDS (hypercellular, dysplastic, <20% blasts) from aplastic anemia (hypocellular) and acute leukemia (≥20% blasts); serum B12, folate and MMA/homocysteine to exclude megaloblastic anemia; hemolysis labs (LDH, indirect bilirubin, haptoglobin, reticulocytes) and a Coombs/DAT; iron studies and ferritin (expect iron-replete/overloaded from transfusions, not deficient); coagulation studies (PT/aPTT/fibrinogen/D-dimer) to exclude DIC; BMP/renal function; blood cultures and an infection screen given the neutropenia; and a type-and-screen. Reserve empiric transfusion/treatment until the diagnostic marrow and smear are obtained unless he is actively, dangerously bleeding.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "CBC with differential + reticulocyte count + peripheral smear (dysplasia vs blasts vs megaloblastic)",
+            "points": 4
+          },
+          {
+            "item": "Bone-marrow aspirate and biopsy with cytogenetics/FISH and MDS mutation panel",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "B12, folate (and MMA/homocysteine) to exclude megaloblastic anemia",
+            "points": 2
+          },
+          {
+            "item": "Hemolysis labs (LDH, indirect bilirubin, haptoglobin, reticulocytes) and Coombs/DAT",
+            "points": 1
+          },
+          {
+            "item": "Iron studies/ferritin (transfusion iron overload, not deficiency)",
+            "points": 1
+          },
+          {
+            "item": "Coagulation studies to exclude DIC + BMP/renal function",
+            "points": 1
+          },
+          {
+            "item": "Blood cultures / infection screen given neutropenia + type-and-screen",
+            "points": 1
+          },
+          {
+            "item": "EKG given chest symptoms and severe anemia",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Transfusing/treating empirically without sending the diagnostic bone marrow/smear first (no emergent bleed)",
+            "points": -2
+          },
+          {
+            "item": "Shotgun panel with no reasoning",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "CBC with differential + reticulocyte count + peripheral smear (dysplasia vs blasts vs megaloblastic)",
+        "Bone-marrow aspirate and biopsy with cytogenetics/FISH and MDS mutation panel"
+      ],
+      "optionalTests": [
+        "B12, folate (and MMA/homocysteine) to exclude megaloblastic anemia",
+        "Hemolysis labs (LDH, indirect bilirubin, haptoglobin, reticulocytes) and Coombs/DAT",
+        "Iron studies/ferritin (transfusion iron overload, not deficiency)",
+        "Coagulation studies to exclude DIC + BMP/renal function",
+        "Blood cultures / infection screen given neutropenia + type-and-screen"
+      ],
+      "contraindicatedTests": [
+        "Transfusing/treating empirically without sending the diagnostic bone marrow/smear first (no emergent bleed)",
+        "Shotgun panel with no reasoning"
+      ],
+      "orderSensitiveActions": [
+        "Bone-marrow aspirate and biopsy with cytogenetics/FISH and MDS mutation panel"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is this patient's OWN 12-lead EKG, obtained because of his fast pulse and light exertional chest pressure at a hemoglobin of 6.8. Describe your findings and their relevance to his management.",
+      "rubric": "Findings = sinus tachycardia (~110–115) with lateral ST-segment DEPRESSION (I, aVL, V5–V6) and T-wave flattening, NO ST elevation, no Q waves, narrow QRS — rate-related subendocardial DEMAND ischemia (type-2 physiology) from severe anemia and tachycardia, not a primary STEMI. CREDIT: identifies sinus tachycardia AND the lateral ST depression (7); recognizes this as demand/subendocardial ischemia driven by the severe anemia rather than acute plaque-rupture STEMI, and states no ST elevation (5); ties it to management — this raises his transfusion threshold (transfuse for a stricter Hgb target with active cardiac ischemia) and warrants a troponin and rate/ischemia control (3). PENALTY: calling it a STEMI and rushing to the cath lab, OR dismissing the ST depression as normal in a symptomatic anemic cardiac patient (-3).",
+      "keyFindings": [
+        "sinus tachycardia with lateral ST-segment depression",
+        "rate-related demand/subendocardial ischemia (no ST elevation), relevant to the transfusion threshold"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with lateral ST depression — demand (rate-related) subendocardial ischemia from severe anemia, not a STEMI."
+      ],
+      "commonMistakes": [
+        "calling the lateral ST depression a STEMI and activating the cath lab",
+        "dismissing the ST depression as normal in a symptomatic, severely anemic cardiac patient",
+        "missing that the demand ischemia raises the transfusion threshold"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~110–115 bpm with horizontal/down-sloping ST-segment depression in the lateral leads (I, aVL, V5–V6) and T-wave flattening; there is NO ST elevation, no pathologic Q waves, and the QRS is narrow. This is rate-related subendocardial DEMAND ischemia (a type-2 pattern) precipitated by his severe anemia (Hgb 6.8) and tachycardia in a man with known coronary disease — not a primary plaque-rupture STEMI, so it is not a cath-lab activation. It matters directly for management: active cardiac ischemia raises his transfusion threshold (transfuse to a stricter hemoglobin target rather than the usual restrictive trigger), and it warrants a troponin, rate control, and treating the anemia as the driver of the ischemia.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with lateral ST depression — demand (rate-related) subendocardial ischemia from severe anemia, not a STEMI."
+        ],
+        "coreActions": [
+          "sinus tachycardia with lateral ST-segment depression",
+          "rate-related demand/subendocardial ischemia (no ST elevation), relevant to the transfusion threshold"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls it a STEMI / cath-lab activation or dismisses the ischemia as normal",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear lungs with no consolidation, effusion, or mass; normal cardiomediastinal silhouette; no acute process. CREDIT: identifies a clear/normal film (5); states the deliberate pertinent negatives — NO focal pneumonia despite the neutropenia and NO nodal/mediastinal mass to suggest relapsed lymphoma (5). PENALTY: inventing an infiltrate or a mass on a clear film, or calling the study abnormal in the wrong way (-3).",
+      "keyFindings": [
+        "clear lung fields with a normal cardiomediastinal silhouette",
+        "no focal pneumonia despite neutropenia and no nodal/mediastinal mass"
+      ],
+      "criticalFindings": [
+        "Clear lungs with no consolidation, effusion, or mediastinal mass; no acute process."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate on a clear film in a neutropenic patient",
+        "failing to state the pertinent negative of no mediastinal/nodal mass (relapsed lymphoma)"
+      ],
+      "idealAnswer": "Clear lung fields with no consolidation, effusion, or mass and a normal cardiomediastinal silhouette — no acute process. The deliberate pertinent negatives here are the absence of a focal pneumonia despite his neutropenia and the absence of a nodal/mediastinal mass to suggest relapsed Hodgkin lymphoma.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Clear lungs with no consolidation, effusion, or mediastinal mass; no acute process."
+        ],
+        "coreActions": [
+          "clear lung fields with a normal cardiomediastinal silhouette",
+          "no focal pneumonia despite neutropenia and no nodal/mediastinal mass"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "invents pathology / calls the study abnormal",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "You now have: a macrocytic, hypoproliferative (low-reticulocyte) PANCYTOPENIA; a smear with hypogranular/pseudo-Pelger neutrophils and ~2–3% circulating blasts; NORMAL B12/folate/MMA/homocysteine; a negative Coombs with iron-replete/overloaded studies and only mildly elevated LDH/bilirubin; normal coags; and a HYPERCELLULAR bone marrow with multilineage dysplasia, ring sideroblasts, and ~6–8% blasts on biopsy. Commit to a diagnosis and cause, state the single test that best discriminates among MDS, aplastic anemia, and acute leukemia, and name any residual uncertainty.",
+      "rubric": "Commits to a myelodysplastic syndrome (MDS), most consistent with a therapy-related MDS given the prior Hodgkin chemoradiation (and worth distinguishing from a drug-suppression contribution) (6). Names the discriminator — the BONE-MARROW biopsy: a HYPERCELLULAR, dysplastic marrow with <20% blasts defines MDS, separating it from a HYPOCELLULAR marrow (aplastic anemia) and from ≥20% blasts (acute leukemia); cytogenetics/mutations risk-stratify it (e.g. IPSS-R) (3). Acknowledges residual uncertainty — with ~6–8% marrow blasts this is higher-risk MDS at real risk of transforming to AML, so it needs hematology risk stratification and surveillance, and the recent sulfa antibiotic may have added a reversible suppressive component (1).",
+      "idealAnswer": "Commit to a myelodysplastic syndrome (MDS) — specifically an MDS with excess blasts, most consistent with a THERAPY-RELATED MDS given his prior Hodgkin chemoradiation about twenty years ago. The single discriminating test is the BONE-MARROW aspirate and biopsy: a HYPERCELLULAR marrow with multilineage dysplasia and a blast count under 20% defines MDS and separates it from aplastic anemia (which would show a HYPOCELLULAR/empty marrow) and from acute myeloid leukemia (which requires ≥20% blasts); the cytogenetics and mutation panel then risk-stratify it (e.g. IPSS-R). The normal B12/folate/MMA and the dysplastic morphology already excluded a megaloblastic cause, and the negative Coombs with normal coags and replete iron excluded immune hemolysis, DIC, and iron deficiency. Residual uncertainty: with ~6–8% marrow blasts this is a higher-risk MDS at genuine risk of progressing to AML, so it needs urgent hematology risk stratification and close surveillance; his recently finished trimethoprim-sulfamethoxazole may also have added a reversible suppressive component on top of the clonal disease.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Acute leukemia (evolving AML)",
+        "Aplastic anemia / hypoplastic marrow failure"
+      ],
+      "acceptableAlternatives": [
+        "Therapy-related MDS",
+        "MDS with excess blasts"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan, including transfusion strategy, the medication issues raised by his comorbidities, infection precautions, and his disposition/referral plan?",
+      "rubric": "Per MGH pancytopenia / MDS approach: URGENT hematology/oncology referral for risk stratification and disease-directed therapy — hypomethylating agents (e.g. azacitidine), and discuss allogeneic transplant candidacy for higher-risk disease (CANT-MISS,6); TRANSFUSION support with an explicit, ischemia-adjusted threshold — transfuse packed red cells now for symptomatic severe anemia (Hgb 6.8) WITH active demand ischemia on EKG, targeting a stricter/higher hemoglobin than the usual restrictive trigger, and platelets for the severe thrombocytopenia/active bleeding (CANT-MISS,6); address the cardiac demand ischemia — troponin, rate control, and treat the anemia as its driver (3); NEUTROPENIC infection precautions — culture and treat any fever as a neutropenic emergency with prompt broad-spectrum antibiotics, counsel on infection avoidance (3); reconcile medications — stop/avoid the marrow-suppressive trimethoprim-sulfamethoxazole and reassess aspirin given the severe thrombocytopenia/bleeding risk (2); supportive care — iron-overload monitoring/chelation from chronic transfusions, growth factors where appropriate, and folate supplementation (2); arrange SAFE follow-up/disposition — admit given severe symptomatic pancytopenia with cardiac ischemia, with hematology co-management, transfusion plan, bleeding precautions, and counseling about prognosis/goals of care (3). PENALTY: discharging a severely pancytopenic patient with cardiac ischemia and active bleeding without transfusion or hematology involvement (-4); continuing aspirin/sulfa or transfusing to only the routine restrictive trigger despite active ischemia (-3).",
+      "idealAnswer": "Admit. Make an URGENT hematology/oncology referral for risk stratification (IPSS-R) and disease-directed therapy — hypomethylating agents such as azacitidine for higher-risk MDS, with a discussion of allogeneic stem-cell transplant candidacy. Give TRANSFUSION support with an ischemia-adjusted threshold: transfuse packed red cells now for his symptomatic severe anemia (Hgb 6.8) WITH active demand ischemia on the EKG, targeting a stricter/higher hemoglobin than the usual restrictive (~7) trigger because of the active cardiac ischemia, and transfuse platelets for the severe thrombocytopenia and bleeding. Address the cardiac piece: send a troponin, control the rate, and treat the anemia as the driver of the demand ischemia (this is not a cath-lab STEMI). Institute NEUTROPENIC precautions — with an ANC ~0.7 any fever is a neutropenic emergency requiring cultures and prompt broad-spectrum antibiotics, and counsel on infection avoidance. Reconcile his medications — stop/avoid the marrow-suppressive trimethoprim-sulfamethoxazole and reassess his aspirin given the severe thrombocytopenia and active bleeding. Supportive care includes monitoring for transfusional iron overload (chelation over time), growth-factor support where appropriate, and folate. Arrange safe disposition with hematology co-management, a clear transfusion plan, bleeding precautions, and a conversation about prognosis and goals of care given a therapy-related, higher-risk MDS.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Urgent hematology/oncology referral for risk stratification and disease-directed therapy (hypomethylating agent; transplant candidacy)",
+            "points": 6
+          },
+          {
+            "item": "Transfusion support with an ischemia-adjusted threshold (RBCs now for symptomatic severe anemia + active ischemia; platelets for severe thrombocytopenia/bleeding)",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Address cardiac demand ischemia: troponin, rate control, treat the anemia as its driver",
+            "points": 3
+          },
+          {
+            "item": "Neutropenic precautions: culture and treat any fever promptly as a neutropenic emergency",
+            "points": 3
+          },
+          {
+            "item": "Reconcile meds: stop marrow-suppressive trimethoprim-sulfamethoxazole and reassess aspirin given thrombocytopenia",
+            "points": 2
+          },
+          {
+            "item": "Supportive care: iron-overload monitoring/chelation, growth factors where appropriate, folate",
+            "points": 2
+          },
+          {
+            "item": "Arrange safe disposition: admit with hematology co-management, transfusion plan, bleeding precautions, prognosis/goals-of-care counseling",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Discharging a severely pancytopenic patient with cardiac ischemia and active bleeding without transfusion or hematology involvement",
+            "points": -4
+          },
+          {
+            "item": "Continuing aspirin/sulfa or transfusing to only the routine restrictive trigger despite active ischemia",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Urgent hematology/oncology referral for risk stratification and disease-directed therapy (hypomethylating agent; transplant candidacy)",
+        "Transfusion support with an ischemia-adjusted threshold (RBCs now for symptomatic severe anemia + active ischemia; platelets for severe thrombocytopenia/bleeding)"
+      ],
+      "optionalActions": [
+        "Address cardiac demand ischemia: troponin, rate control, treat the anemia as its driver",
+        "Neutropenic precautions: culture and treat any fever promptly as a neutropenic emergency",
+        "Reconcile meds: stop marrow-suppressive trimethoprim-sulfamethoxazole and reassess aspirin given thrombocytopenia",
+        "Supportive care: iron-overload monitoring/chelation, growth factors where appropriate, folate",
+        "Arrange safe disposition: admit with hematology co-management, transfusion plan, bleeding precautions, prognosis/goals-of-care counseling"
+      ],
+      "unsafeActions": [
+        "Discharging a severely pancytopenic patient with cardiac ischemia and active bleeding without transfusion or hematology involvement",
+        "Continuing aspirin/sulfa or transfusing to only the routine restrictive trigger despite active ischemia"
+      ],
+      "consults": [
+        "Hematology/Oncology",
+        "Cardiology"
+      ],
+      "disposition": "Admit with hematology/oncology co-management",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Pancytopenia & Anemia (Myelodysplastic Syndrome)",
+        "page": 139
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "prior_cancer",
+      "transfusions",
+      "prognosis"
+    ],
+    "communicationStyle": "answers directly but does not volunteer diagnostic clues",
+    "affect": "74-year-old man, pale and tired, mildly short of breath when talking, frightened because his late wife had leukemia. Reliable historian, cooperative.",
+    "disclosureRules": [
+      "Do not reveal the prior Hodgkin lymphoma, chemoradiation, prior low counts, or recent transfusions unless asked about prior cancer, radiation/chemo, blood counts, or transfusions",
+      "Do not volunteer the recent sulfa antibiotic, aspirin, or cardiac stent/medications unless asked about medications or the heart",
+      "Do not volunteer the exertional chest tightness/palpitations unless asked about chest symptoms or the heart",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "prior_cancer_radiation",
+      "category": "pmh",
+      "triggerConcepts": [
+        "prior cancer",
+        "history of cancer",
+        "lymphoma",
+        "hodgkin",
+        "chemotherapy",
+        "radiation",
+        "have you ever had cancer",
+        "any cancer treatment"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "transfusions_counts",
+      "category": "pmh",
+      "triggerConcepts": [
+        "transfusion",
+        "blood transfusion",
+        "have you needed blood",
+        "blood counts",
+        "low counts",
+        "anemia before",
+        "prior blood work"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "chest_symptoms_heart",
+      "category": "ros",
+      "triggerConcepts": [
+        "chest pain",
+        "chest pressure",
+        "chest tightness",
+        "palpitations",
+        "heart racing",
+        "do you feel your heart",
+        "any heart symptoms",
+        "stent"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "infection_fever",
+      "category": "ros",
+      "triggerConcepts": [
+        "fever",
+        "any fevers",
+        "chills",
+        "infection",
+        "recent infection",
+        "skin infection",
+        "slow healing",
+        "wound"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "bleeding_bruising",
+      "category": "hpi",
+      "triggerConcepts": [
+        "bruising",
+        "easy bruising",
+        "bleeding",
+        "bleeding gums",
+        "nosebleeds",
+        "blood spots",
+        "petechiae"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "shortness of breath",
+        "dyspnea",
+        "weight loss",
+        "night sweats"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "gi_bleeding",
+      "category": "ros",
+      "triggerConcepts": [
+        "black stools",
+        "melena",
+        "blood in stool",
+        "vomiting blood",
+        "dark urine",
+        "any bleeding from the gut"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "aspirin",
+        "antibiotic",
+        "sulfa",
+        "blood thinner"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "alcohol_diet",
+      "category": "social",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "diet",
+        "what do you eat",
+        "supplements"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "inspect_conjunctiva_finding_1",
+      "finding": "General: marked conjunctival and palmar pallor — consistent with severe anemia.",
+      "revealedBy": [
+        "inspect_conjunctiva",
+        "inspect_palms_and_soles"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Conjunctivae pink; no pallor."
+    },
+    {
+      "id": "assess_for_petechiae_finding_2",
+      "finding": "Skin: scattered ecchymoses and a few petechiae on the lower legs and forearms — consistent with severe thrombocytopenia.",
+      "revealedBy": [
+        "assess_for_petechiae",
+        "assess_for_purpura",
+        "inspect_skin"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No petechiae or purpura."
+    },
+    {
+      "id": "inspect_oropharynx_finding_3",
+      "finding": "Mouth: gingival oozing/bleeding at the gum line; no thrush or overt ulcer.",
+      "revealedBy": [
+        "inspect_oropharynx"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Oropharynx clear; no gingival bleeding."
+    },
+    {
+      "id": "inspect_skin_finding_4",
+      "finding": "Right shin: a healing but still mildly erythematous, non-fluctuant area (resolving cellulitis) — a slow-to-clear infection in a neutropenic patient.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Skin intact; no rash or wound."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Cardiac: tachycardic, regular, with a soft systolic flow murmur (high-output state from anemia); no rub or gallop.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Regular rate, no murmur."
+    },
+    {
+      "id": "assess_splenomegaly_finding_6",
+      "finding": "Abdomen: soft, nontender; no hepatomegaly and no splenomegaly (argues against hypersplenism/sequestration or a primary myeloproliferative/lymphoproliferative organomegaly).",
+      "revealedBy": [
+        "assess_splenomegaly",
+        "assess_hepatomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No organomegaly."
+    },
+    {
+      "id": "palpate_lymph_nodes_finding_7",
+      "finding": "No significant lymphadenopathy (argues against relapsed lymphoma as the driver).",
+      "revealedBy": [
+        "palpate_lymph_nodes"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No lymphadenopathy."
+    },
+    {
+      "id": "assess_sensation_finding_8",
+      "finding": "Neuro: normal strength, sensation, reflexes, and gait — NO dorsal-column/subacute-combined-degeneration signs (argues against B12 deficiency as the driver).",
+      "revealedBy": [
+        "assess_sensation"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Normal neurologic exam."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Myelodysplastic syndrome (MDS)",
+    "diagnosticFramework": "74M with coronary disease and prior Hodgkin chemoradiation presents with months of progressive fatigue and exertional dyspnea, new easy bruising and gum bleeding, and a slow-to-clear skin infection, with labs showing a macrocytic, hypoproliferative PANCYTOPENIA. The diagnosis is a myelodysplastic syndrome (therapy-related MDS with excess blasts), reached by recognizing symptomatic transfusion-dependent anemia plus thrombocytopenic bleeding plus neutropenic infection risk, eliciting the prior-cancer/transfusion history and the medication confounders, performing the targeted exam (pallor, petechiae, gingival bleeding, no organomegaly, no neuro signs), confirming ineffective production with a low reticulocyte count and a hypercellular dysplastic marrow with <20% blasts, and excluding the must-not-miss competitors — evolving acute leukemia and aplastic anemia — plus B12/folate deficiency. His own EKG shows rate-related lateral ST depression (demand ischemia) that raises his transfusion threshold.",
+    "keyHistoryClues": [
+      "Months of progressive fatigue and exertional dyspnea, transfusion-dependent",
+      "New easy bruising, gum bleeding, and a slow-healing skin infection (thrombocytopenia + neutropenia)",
+      "Prior Hodgkin lymphoma treated with chemoradiation ~20 years ago (therapy-related risk)",
+      "Recently finished trimethoprim-sulfamethoxazole and takes aspirin (confounders)",
+      "Exertional chest pressure with known coronary disease at Hgb 6.8"
+    ],
+    "keyPhysicalExamFindings": [
+      "General: marked conjunctival and palmar pallor — consistent with severe anemia.",
+      "Skin: scattered ecchymoses and a few petechiae on the lower legs and forearms — consistent with severe thrombocytopenia.",
+      "Mouth: gingival oozing/bleeding at the gum line; no thrush or overt ulcer.",
+      "Right shin: a healing but still mildly erythematous, non-fluctuant area (resolving cellulitis) — a slow-to-clear infection in a neutropenic patient.",
+      "Cardiac: tachycardic, regular, with a soft systolic flow murmur (high-output state from anemia); no rub or gallop.",
+      "Abdomen: soft, nontender; no hepatomegaly and no splenomegaly.",
+      "No significant lymphadenopathy.",
+      "Neuro: normal strength, sensation, reflexes, and gait — no subacute-combined-degeneration signs."
+    ],
+    "keyDiagnosticFindings": [
+      "CBC",
+      "Smear",
+      "B12_Folate",
+      "Hemolysis_Iron",
+      "BMP_Coags_Infx",
+      "Bone_Marrow"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals (severe anemia, tachycardia, pancytopenia).",
+      "Elicit the focused history — prior cancer/chemoradiation, prior low counts and transfusions, the recent sulfa antibiotic and aspirin, and the exertional chest symptoms — only on direct questioning.",
+      "Perform the targeted exam to reveal pallor, petechiae, gingival bleeding, the resolving infection, the flow murmur, and the absence of organomegaly/lymphadenopathy and neuro signs.",
+      "Build a differential led by MDS while naming the must-not-miss competitors (acute leukemia, aplastic anemia) and three mechanisms of pancytopenia.",
+      "Order a focused workup that separates MDS from aplastic anemia and leukemia (reticulocyte count, smear, bone-marrow biopsy with cytogenetics) and exclude B12/folate deficiency; interpret his own EKG demand ischemia and the CXR.",
+      "Commit to therapy-related MDS, then manage with hematology referral, ischemia-adjusted transfusion support, neutropenic precautions, medication reconciliation, and a safe admission/disposition."
+    ],
+    "commonPitfalls": [
+      "Anchoring on simple anemia and never naming a marrow-failure/leukemia process in a pancytopenic older adult",
+      "Reading the lateral ST depression as a STEMI / cath-lab activation rather than demand ischemia",
+      "Transfusing to only the routine restrictive trigger despite active cardiac ischemia",
+      "Continuing the marrow-suppressive sulfa antibiotic or aspirin despite severe thrombocytopenia",
+      "Discharging a severely pancytopenic patient with ischemia and bleeding without hematology involvement"
+    ],
+    "managementPearls": [
+      "Urgent hematology/oncology referral for risk stratification and disease-directed therapy (hypomethylating agent; transplant candidacy)",
+      "Transfusion support with an ischemia-adjusted threshold (RBCs now for symptomatic severe anemia + active ischemia; platelets for severe thrombocytopenia/bleeding)"
+    ],
+    "criticalHistoryItems": [
+      "prior_cancer_radiation",
+      "transfusions_counts"
+    ],
+    "criticalExamItems": [
+      "inspect_conjunctiva",
+      "assess_for_petechiae"
+    ],
+    "criticalWorkupItems": [
+      "CBC with differential + reticulocyte count + peripheral smear (dysplasia vs blasts vs megaloblastic)",
+      "Bone-marrow aspirate and biopsy with cytogenetics/FISH and MDS mutation panel"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with lateral ST depression — demand (rate-related) subendocardial ischemia from severe anemia, not a STEMI.",
+      "Clear lungs with no consolidation, effusion, or mediastinal mass; no acute process."
+    ],
+    "criticalManagementItems": [
+      "Urgent hematology/oncology referral for risk stratification and disease-directed therapy (hypomethylating agent; transplant candidacy)",
+      "Transfusion support with an ischemia-adjusted threshold (RBCs now for symptomatic severe anemia + active ischemia; platelets for severe thrombocytopenia/bleeding)"
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with lateral ST depression — demand (rate-related) subendocardial ischemia from severe anemia, not a STEMI.",
+      "Clear lungs with no consolidation, effusion, or mediastinal mass; no acute process."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with lateral ST depression — demand (rate-related) subendocardial ischemia from severe anemia, not a STEMI.",
+      "Clear lungs with no consolidation, effusion, or mediastinal mass; no acute process."
+    ],
+    "imageInterpretationPearls": [
+      "Lateral ST depression with sinus tachycardia in a severely anemic cardiac patient is demand (type-2) ischemia — treat the anemia, do not activate the cath lab.",
+      "The EKG here is the patient's OWN study; tie its demand-ischemia finding to a stricter transfusion threshold.",
+      "On the chest film, the deliberate pertinent negatives are no occult pneumonia despite neutropenia and no mediastinal mass to suggest relapsed lymphoma."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's fatigue and fear (late wife had leukemia)",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions (prior cancer, prognosis)",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated EKG read (patient's own demand-ischemia study) + standalone CXR interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

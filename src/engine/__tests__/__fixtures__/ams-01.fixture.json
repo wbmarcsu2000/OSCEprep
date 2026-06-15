@@ -1,0 +1,717 @@
+{
+  "id": "ams-01",
+  "category": "Altered Mental Status",
+  "difficulty": "moderate",
+  "title": "Confusion in a patient with cirrhosis",
+  "diagnosis": "Hepatic encephalopathy",
+  "chart": {
+    "ageSex": "60M",
+    "cc": "Confusion",
+    "oneLiner": "60M with known cirrhosis is brought in by family for 2 days of progressive confusion and excessive sleepiness.",
+    "vitals": {
+      "BP": "118/72",
+      "HR": "92",
+      "RR": "16",
+      "Temp": "37.2°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "Where… where am I? What day is it?",
+  "patientFile": "PERSONA: 60-year-old man, drowsy, disoriented to time and place, slow to respond. A POOR historian — gives short, vague, sometimes incorrect answers.\n\nCOLLATERAL (provide ONLY if the student asks family/EMS/chart/medication list): Family reports 2 days of worsening confusion, day-night reversal, and sleeping much of the day. Known cirrhosis (alcohol-related). He has been constipated for several days and ran out of his lactulose about a week ago. No fall or head trauma. No fever noticed. Recently had dark stools once (possible GI bleed). MEDS: lactulose (out), spironolactone, propranolol.\n\nHPI (from patient — limited): admits feeling 'foggy,' not sure how long. Denies headache, denies focal weakness.\nPMH: cirrhosis, portal hypertension. SOCIAL: long history of heavy alcohol use, quit recently per family.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: drowsy, jaundiced (scleral icterus).\n- Vitals: BP 118/72, HR 92, RR 16, 37.2°C, SpO2 97% RA.\n- Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.\n- Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.\n- Skin: jaundice, palmar erythema. No signs of head trauma.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is confused: give brief, vague, disoriented answers. Provide COLLATERAL details only when the student explicitly asks family/EMS/nursing/chart or the medication list.\n- Asterixis, ascites, and jaundice are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "dx": {
+    "labs": {
+      "Glucose": "Fingerstick glucose 96 — normal (always checked first in AMS).",
+      "Ammonia": "Elevated.",
+      "LFTs": "AST/ALT mildly elevated, bilirubin elevated, albumin low, INR prolonged.",
+      "CBC": "Hgb 10.5 (consider GI bleed), WBC 7.0, Plt 90 (cirrhosis).",
+      "BMP": "Na 132, K 3.6, Cr 1.1.",
+      "Infection_workup": "UA, blood cultures, and diagnostic paracentesis (to exclude SBP) — paracentesis: no neutrocytosis this time."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Tall peaked P in II (right atrial) plus broad notched P / deep terminal negativity in V1 (left atrial).",
+      "verify": "Source a study matching: Tall peaked P in II (right atrial) plus broad notched P / deep terminal negativity in V1 (left atrial). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing biatrial enlargement P waves",
+      "searchTerms": [
+        "biatrial enlargement ECG",
+        "P pulmonale P mitrale 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 58-year-old man with longstanding cirrhosis and pulmonary hypertension presents with progressive confusion and exertional breathlessness."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "No consolidation or effusion (obtained to screen for an infectious precipitant).",
+      "verify": "Pick a CC normal PA chest film.",
+      "assetNeeded": true,
+      "imageDescription": "Normal chest radiograph, no consolidation or effusion.",
+      "searchTerms": [
+        "normal PA chest x-ray"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 58-year-old man with cirrhosis presents confused, and a film is obtained to screen for an infectious precipitant."
+    }
+  },
+  "revealKeys": [
+    "Glucose",
+    "Ammonia",
+    "LFTs",
+    "CBC",
+    "BMP",
+    "Infection_workup",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "Glucose",
+    "Ammonia",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your assessment, list your differential for this patient's altered mental status (note your leading diagnosis).",
+      "rubric": "Hepatic encephalopathy (leading,7). Hypoglycemia (CANT-MISS — always exclude,4). Intracranial hemorrhage (CANT-MISS in a coagulopathic cirrhotic,4). Infection/sepsis incl. SBP (CANT-MISS,4). Electrolyte/metabolic derangement (core,3). Drug/toxin (core,2). Named leading dx w/ justification — cirrhosis, asterixis, missed lactulose/constipation (core,1).",
+      "idealAnswer": "Leading diagnosis: Hepatic encephalopathy. Must-not-miss diagnoses to exclude: Hypoglycemia; Intracranial hemorrhage; SBP. Also reasonable: Electrolyte/metabolic derangement; Drug/toxin.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Hepatic encephalopathy",
+            "points": 7
+          },
+          {
+            "item": "Hypoglycemia",
+            "points": 4
+          },
+          {
+            "item": "Intracranial hemorrhage",
+            "points": 4
+          },
+          {
+            "item": "SBP",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Electrolyte/metabolic derangement",
+            "points": 3
+          },
+          {
+            "item": "Drug/toxin",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — cirrhosis, asterixis, missed lactulose/constipation",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Hypoglycemia",
+        "Intracranial hemorrhage",
+        "SBP"
+      ],
+      "acceptableAlternatives": [
+        "Electrolyte/metabolic derangement",
+        "Drug/toxin"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Fingerstick GLUCOSE first (CANT-MISS,3). BMP/electrolytes (2). Ammonia (2). LFTs/coags (2). CBC (2). Infection workup — UA, cultures, CXR, diagnostic paracentesis for SBP (3). CT head if focal deficit/trauma/anticoagulated (1). PENALTY: anchoring without excluding hypoglycemia or infection (-2).",
+      "idealAnswer": "Order: EKG; CXR; Glucose; Ammonia; LFTs; CBC; BMP; Infection workup.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Fingerstick GLUCOSE first",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "EKG",
+            "points": 2
+          },
+          {
+            "item": "CXR",
+            "points": 2
+          },
+          {
+            "item": "Ammonia",
+            "points": 2
+          },
+          {
+            "item": "LFTs",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 2
+          },
+          {
+            "item": "BMP",
+            "points": 2
+          },
+          {
+            "item": "Infection workup",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "anchoring without excluding hypoglycemia or infection",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "Fingerstick GLUCOSE first"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "anchoring without excluding hypoglycemia or infection"
+      ],
+      "orderSensitiveActions": [
+        "anchoring without excluding hypoglycemia or infection"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = biatrial enlargement. CREDIT: recognizes biatrial enlargement (7); identifies right atrial enlargement — tall peaked P in II (5); identifies left atrial enlargement — broad notched P / deep terminal negativity in V1 (3). PENALTY: calling the tracing normal / reporting only one atrium (-2).",
+      "keyFindings": [
+        "right atrial enlargement (tall peaked P)",
+        "left atrial enlargement (broad notched P / V1 terminal force)"
+      ],
+      "criticalFindings": [
+        "Biatrial enlargement."
+      ],
+      "commonMistakes": [
+        "reporting only one atrium's enlargement"
+      ],
+      "idealAnswer": "Biatrial enlargement: peaked P waves in II with a broad biphasic P in V1.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Biatrial enlargement."
+        ],
+        "coreActions": [
+          "right atrial enlargement (tall peaked P)",
+          "left atrial enlargement (broad notched P / V1 terminal force)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = no consolidation/effusion. CREDIT: identifies a normal film (6); explains it screens for an infectious precipitant (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "identifies a normal film",
+        "explains it screens for an infectious precipitant"
+      ],
+      "criticalFindings": [
+        "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+      ],
+      "commonMistakes": [
+        "inventing pathology"
+      ],
+      "idealAnswer": "No consolidation or effusion (obtained to screen for an infectious precipitant).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes a normal film: no consolidation or effusion (obtained to screen for an infectious precipitant).",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "explains it screens for an infectious precipitant",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the elevated ammonia, normal glucose, and the history, what is your diagnosis and the likely precipitant?",
+      "rubric": "Hepatic encephalopathy (5). Names a precipitant — constipation / missed lactulose / possible GI bleed (3). Notes ammonia supports but does not alone diagnose; it is clinical (bonus,2).",
+      "idealAnswer": "Hepatic encephalopathy, most likely precipitated by missed lactulose and constipation (with a possible GI bleed given the dark stools and low Hgb). The elevated ammonia supports but does not confirm it — HE is a clinical diagnosis.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes ammonia supports but does not alone diagnose; it is clinical",
+            "points": 2
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan?",
+      "rubric": "Per MGH ESLD/HE: identify and treat precipitant – GIB, SBP/infection, constipation, electrolytes, sedatives (CANT-MISS,6); lactulose titrated to 2-3 soft stools/day (CANT-MISS,6); rifaximin add-on (4); airway protection if obtunded (3); correct hypokalemia (2). PENALTY: sedatives/benzodiazepines in HE (-3); missing/not treating a precipitant such as SBP or GI bleed (-3).",
+      "idealAnswer": "Identify and treat the precipitant (GI bleed, infection/SBP, constipation, dehydration, electrolytes, sedatives). Lactulose titrated to 2–3 soft stools/day (PO or via rectal enema if obtunded); add rifaximin. Protect the airway if obtunded. Correct hypokalemia/alkalosis. Avoid sedatives.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Identify and treat precipitant",
+            "points": 6
+          },
+          {
+            "item": "Lactulose",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Rifaximin",
+            "points": 4
+          },
+          {
+            "item": "Airway protection if obtunded",
+            "points": 3
+          },
+          {
+            "item": "Correct electrolytes (hypokalemia)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Evaluate for SBP (diagnostic paracentesis)",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Sedatives/benzodiazepines",
+            "points": -3
+          },
+          {
+            "item": "Missing precipitant",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Identify and treat precipitant",
+        "Lactulose"
+      ],
+      "optionalActions": [
+        "Rifaximin",
+        "Airway protection if obtunded",
+        "Correct electrolytes (hypokalemia)",
+        "Evaluate for SBP (diagnostic paracentesis)"
+      ],
+      "unsafeActions": [
+        "Sedatives/benzodiazepines",
+        "Missing precipitant"
+      ],
+      "consults": [
+        "Hepatology"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "End Stage Liver Disease (Hepatic Encephalopathy)",
+        "page": 93
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "drowsy",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "very brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "alcohol_use",
+      "medication_nonadherence"
+    ],
+    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
+    "affect": "60-year-old man, drowsy, disoriented to time and place, slow to respond. A POOR historian — gives short, vague, sometimes incorrect answers.",
+    "disclosureRules": [
+      "Do not reveal sensitive history unless directly asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "alcohol_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "alcohol",
+        "drinking",
+        "how much do you drink",
+        "etoh",
+        "alcohol use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_nonadherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "medication adherence",
+        "missed doses",
+        "ran out",
+        "taking your medications"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what does it feel like",
+        "character",
+        "quality"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "scale"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_shifting_dullness_finding_1",
+      "finding": "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
+      "revealedBy": [
+        "assess_shifting_dullness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No ascites."
+    },
+    {
+      "id": "inspect_abdomen_finding_2",
+      "finding": "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
+    },
+    {
+      "id": "inspect_sclera_finding_3",
+      "finding": "General: drowsy, jaundiced (scleral icterus).",
+      "revealedBy": [
+        "inspect_sclera",
+        "assess_for_jaundice"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "assess_asterixis_finding_4",
+      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "revealedBy": [
+        "assess_asterixis"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No asterixis."
+    },
+    {
+      "id": "assess_motor_strength_finding_5",
+      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "revealedBy": [
+        "assess_motor_strength",
+        "assess_pronator_drift"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No focal motor deficit."
+    },
+    {
+      "id": "assess_reflexes_finding_6",
+      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "revealedBy": [
+        "assess_reflexes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal reflexes."
+    },
+    {
+      "id": "assess_mental_status_finding_7",
+      "finding": "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and oriented."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Hepatic encephalopathy",
+    "diagnosticFramework": "60M with known cirrhosis is brought in by family for 2 days of progressive confusion and excessive sleepiness. The diagnosis is Hepatic encephalopathy, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [
+      "medication adherence"
+    ],
+    "keyPhysicalExamFindings": [
+      "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
+      "Abdomen: distended with shifting dullness (ascites), nontender; caput/spider angiomata if examined.",
+      "General: drowsy, jaundiced (scleral icterus).",
+      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric.",
+      "Neuro: disoriented; ASTERIXIS present on wrist extension; no focal motor/sensory deficit; reflexes symmetric."
+    ],
+    "keyDiagnosticFindings": [
+      "Glucose",
+      "Ammonia",
+      "LFTs",
+      "CBC",
+      "BMP",
+      "Infection_workup"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the focused history, including sensitive items only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings.",
+      "Build a differential led by Hepatic encephalopathy while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
+      "Commit to Hepatic encephalopathy and manage with stabilization, definitive treatment, consults, and disposition."
+    ],
+    "commonPitfalls": [
+      "Sedatives/benzodiazepines",
+      "Missing precipitant"
+    ],
+    "managementPearls": [
+      "Identify and treat precipitant",
+      "Lactulose"
+    ],
+    "criticalHistoryItems": [
+      "medication_nonadherence"
+    ],
+    "criticalExamItems": [
+      "assess_asterixis"
+    ],
+    "criticalWorkupItems": [
+      "Fingerstick GLUCOSE first"
+    ],
+    "criticalInterpretationItems": [
+      "Biatrial enlargement.",
+      "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+    ],
+    "criticalManagementItems": [
+      "Identify and treat precipitant",
+      "Lactulose"
+    ],
+    "keyImageInterpretationFindings": [
+      "Biatrial enlargement.",
+      "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Biatrial enlargement.",
+      "No consolidation or effusion (obtained to screen for an infectious precipitant)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-10",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

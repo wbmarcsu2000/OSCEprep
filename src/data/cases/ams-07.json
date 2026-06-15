@@ -2,15 +2,15 @@
   "id": "ams-07",
   "category": "Altered Mental Status",
   "difficulty": "hard",
-  "title": "Confusion and unsteadiness in a malnourished man",
+  "title": "Confusion and unsteadiness in a malnourished man with liver disease",
   "diagnosis": "Wernicke encephalopathy",
   "chart": {
     "ageSex": "58M",
     "cc": "Confusion and unsteady walking",
-    "oneLiner": "58M with heavy alcohol use and recent poor intake presents with several days of progressive confusion, double vision, and an unsteady, wide-based gait.",
+    "oneLiner": "58M with alcohol use disorder, known alcohol-related liver disease, and recent poor intake on hydrochlorothiazide, quetiapine, gabapentin, and intermittent lorazepam, presents with several days of progressive confusion, double vision, and an unsteady, wide-based gait.",
     "vitals": {
       "BP": "104/64",
-      "HR": "104",
+      "HR": "108",
       "RR": "18",
       "Temp": "36.4°C",
       "SpO2": "97% RA"
@@ -18,34 +18,38 @@
     "timer": 180
   },
   "opening": "Everything is spinning and I keep seeing double, and I can't walk straight — I feel all mixed up.",
-  "patientFile": "PERSONA: 58-year-old man, thin and disheveled, mildly drowsy but rousable, inattentive and slow to answer. Looks malnourished. Cooperative but a poor historian; tends to lose track of the question.\n\nCOLLATERAL (provide ONLY if the student asks family/friend/chart/medication list/EMS): Brought in by a friend who says he has been drinking heavily for years and has barely eaten for a few weeks after losing his housing. Over the past several days he has become increasingly muddled, complains his eyes won't work together, and has been staggering and falling against the furniture. He has NOT had a witnessed seizure. He vomited repeatedly last week. No known head trauma. MEDS: none regular; no recent glucose-containing IV fluids before arrival per EMS.\n\nHPI (from patient — limited): feels confused and 'foggy,' sees double, the room feels like it is moving, and he cannot walk straight without holding on. Denies headache, denies fever, denies chest pain. Last drink was about a day ago.\nPMH: heavy alcohol use disorder; prior episodes of poor nutrition; no diabetes. SOCIAL: chronic heavy daily alcohol, recent homelessness, very poor oral intake.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: cachectic, disheveled, mildly drowsy and inattentive; no diaphoresis, no coarse tremor, NOT agitated.\n- Vitals: BP 104/64, HR 104, RR 18, 36.4°C, SpO2 97% RA.\n- Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with a complaint of double vision — ophthalmoplegia; pupils equal and reactive.\n- Gait/coordination: wide-based, ataxic, unsteady gait; truncal ataxia; cannot tandem walk.\n- Neuro otherwise: disoriented and inattentive (global confusion); no focal motor weakness, no asterixis, no neck stiffness; reflexes symmetric, distal sensory loss in feet consistent with peripheral neuropathy.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Patient is inattentive/confused: give short, vague, sometimes off-track answers. Provide COLLATERAL (years of heavy drinking, weeks of poor eating, the vomiting, the staggering and double vision, no seizure, no head trauma) only when the student explicitly asks family/friend/chart/what happened/EMS.\n- Do NOT volunteer the eye findings or gait problem unless those areas are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 58-year-old man, thin and disheveled, mildly drowsy but rousable, inattentive and slow to answer. Looks malnourished and has a slightly yellow tinge to his eyes. Cooperative but a poor historian; tends to lose track of the question.\n\nCOLLATERAL (provide ONLY if the student asks family/friend/chart/medication list/EMS/pharmacy): Brought in by a friend who says he has been drinking heavily for years and has barely eaten for a few weeks after losing his housing. Over the past several days he has become increasingly muddled, complains his eyes won't work together, and has been staggering and falling against the furniture. He has NOT had a witnessed seizure. He vomited repeatedly last week. No known head trauma. He has a history of 'liver trouble from the drinking' and was told once his liver was scarred; he has had a swollen belly in the past but not lately, and no prior black/tarry stools or vomiting blood. MEDS (from his pill bottles / pharmacy list): hydrochlorothiazide for blood pressure, quetiapine at night for sleep/mood, gabapentin for back pain, omeprazole, and lorazepam that he takes 'when the shakes start' — he took a couple of those tablets over the last two days. No recent glucose-containing IV fluids before arrival per EMS. He has missed several recent clinic appointments and ran out of some pills.\n\nHPI (from patient — limited): feels confused and 'foggy,' sees double, the room feels like it is moving, and he cannot walk straight without holding on. Denies headache, denies fever, denies chest pain. Last drink was about a day ago. Took 'a couple' of his nerve/sleep pills over the last two days when he felt shaky.\nPMH: heavy alcohol use disorder; alcohol-related (cirrhotic) liver disease told to him years ago, with a past swollen belly (ascites) that resolved; hypertension; depression; chronic low back pain; prior episodes of poor nutrition; no diabetes. SOCIAL: chronic heavy daily alcohol, recent homelessness, very poor oral intake, smokes. FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: cachectic, disheveled, mildly drowsy and inattentive; mild scleral icterus; no diaphoresis, no coarse tremor, NOT agitated.\n- Vitals: BP 104/64, HR 108, RR 18, 36.4°C, SpO2 97% RA.\n- Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with a complaint of double vision — ophthalmoplegia; pupils equal and reactive; mild scleral icterus.\n- Gait/coordination: wide-based, ataxic, unsteady gait; truncal ataxia; cannot tandem walk.\n- Neuro otherwise: disoriented and inattentive (global confusion); NO asterixis (checked specifically — argues against overt hepatic encephalopathy); no focal motor weakness, no neck stiffness; reflexes symmetric, distal sensory loss in feet consistent with peripheral neuropathy.\n- Abdomen/skin: soft, non-tender, NOT distended, NO shifting dullness/ascites today; a few spider angiomata and palmar erythema (stigmata of chronic liver disease); no caput; liver edge firm.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Patient is inattentive/confused: give short, vague, sometimes off-track answers. Provide COLLATERAL (years of heavy drinking, weeks of poor eating, the vomiting, the staggering and double vision, the liver disease, the medication list including the lorazepam/quetiapine, no seizure, no head trauma) only when the student explicitly asks family/friend/chart/what happened/EMS/medications/pharmacy.\n- Do NOT volunteer the eye findings, gait problem, asterixis status, or liver stigmata unless those areas are examined.\n- Do NOT volunteer the medication list or the lorazepam/quetiapine use unless meds/pharmacy/chart are asked about.\n- If asked something not in this file, give a reasonable normal/negative answer."
+  ,
   "dx": {
     "labs": {
       "Glucose": "Fingerstick glucose 92 — normal (excludes hypoglycemia as the cause).",
-      "BMP": "Na 136, K 3.3 (low), Mg 1.4 (low), Phos 2.0 (low), Cr 0.8 — mild electrolyte derangements of malnutrition; watch for refeeding.",
+      "BMP_AnionGap": "Na 128 (low), K 3.0 (low), Cl 92, HCO3 26, BUN 14, Cr 0.8, Mg 1.4 (low), Phos 2.0 (low). Anion gap = Na − (Cl + HCO3) = 128 − (92 + 26) = 10 — NORMAL anion gap (no metabolic acidosis); the hyponatremia/hypokalemia are partly thiazide- and malnutrition-related, the low Mg/Phos flag refeeding risk.",
       "Thiamine_level": "Whole-blood thiamine drawn BEFORE giving thiamine, but do NOT wait for the result — returns LOW, confirming deficiency.",
-      "Ammonia_LFTs": "Ammonia normal and LFTs only mildly abnormal — argues against hepatic encephalopathy as the primary driver.",
+      "Ammonia_LFTs": "Ammonia mildly elevated at 68 µmol/L (upper-normal/borderline). AST 96, ALT 44 (AST:ALT ~2:1, alcohol pattern), total bilirubin 2.4, albumin 3.1, INR 1.4, platelets 96k — chronic alcohol-related liver disease, but the only borderline ammonia with NO asterixis argues against overt hepatic encephalopathy as the primary driver.",
+      "CBC_Anemia": "Hgb 10.8 (low) with MCV 104 (macrocytic), WBC 6.2, platelets 96k — macrocytic anemia and thrombocytopenia of alcohol/liver disease and nutritional deficiency.",
       "CT_head": "Non-contrast CT head — no acute intracranial hemorrhage, mass, or large infarct (excludes structural cause / subdural).",
-      "Tox_TSH": "Serum/urine tox and ethanol low/negative; TSH normal — excludes acute intoxication and thyroid cause."
+      "Tox_TSH": "Serum/urine tox and ethanol low/negative (benzodiazepine screen positive, consistent with his lorazepam use); TSH normal — excludes acute intoxication and thyroid cause; the positive benzo screen is from his own lorazepam, not a new ingestion."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia with a borderline-prolonged QT interval in the setting of low magnesium and potassium; no acute ischemic changes.",
-      "verify": "Source a study matching: Sinus tachycardia with a borderline-prolonged QT interval in the setting of low magnesium and potassium; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia with a prolonged QT interval (QTc ~490 ms) driven by hypokalemia and hypomagnesemia plus his QT-prolonging quetiapine; no acute ischemic changes.",
+      "verify": "Source a study matching: sinus tachycardia with a prolonged QT/QTc (drug- and electrolyte-related). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia with borderline long QT from electrolyte derangement",
+      "integrated": true,
+      "litflStudyN": 23,
+      "imageDescription": "12-lead showing sinus tachycardia with a prolonged QT interval (drug- and electrolyte-related)",
       "searchTerms": [
-        "sinus tachycardia long QT ECG",
-        "hypomagnesemia hypokalemia prolonged QT 12 lead"
+        "drug induced long QT 12 lead ECG",
+        "hypomagnesemia hypokalemia prolonged QT ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 55-year-old man with chronic alcohol use presents confused and unsteady, with a racing heart and borderline prolonged QT."
+      "clinicalVignette": "A 58-year-old man with chronic alcohol use on quetiapine, with low potassium and magnesium, presents confused and unsteady with a racing heart and a stretched-out QT interval on his tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,14 +65,15 @@
         "clear chest radiograph no consolidation"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 55-year-old man presents with confusion and gait instability, and a film is taken to screen for aspiration or infection."
+      "clinicalVignette": "A 58-year-old man presents with confusion and gait instability, and a film is taken to screen for aspiration or infection."
     }
   },
   "revealKeys": [
     "Glucose",
-    "BMP",
+    "BMP_AnionGap",
     "Thiamine_level",
     "Ammonia_LFTs",
+    "CBC_Anemia",
     "CT_head",
     "Tox_TSH",
     "ekg",
@@ -84,36 +89,40 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this confusion with eye findings and unsteady gait (note your leading diagnosis).",
-      "rubric": "Wernicke encephalopathy (leading,7). Hypoglycemia (CANT-MISS,4). Intracranial process — subdural/stroke (CANT-MISS,4). CNS infection — meningitis/encephalitis (CANT-MISS,3). Hepatic encephalopathy (core,2). Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause (core,2). Names the classic triad (encephalopathy + ophthalmoplegia/nystagmus + gait ataxia) in a malnourished drinker as the justification (core,3).",
-      "idealAnswer": "Leading diagnosis: Wernicke encephalopathy. Must-not-miss diagnoses to exclude: Hypoglycemia; Intracranial process — subdural/stroke; CNS infection — meningitis/encephalitis. Also reasonable: Hepatic encephalopathy; Alcohol intoxication/withdrawal or other toxic-metabolic cause.",
+      "prompt": "Based on your history and physical, list your differential for this confusion with eye findings and unsteady gait in a malnourished drinker with known liver disease (note your leading diagnosis). Also explicitly name THREE distinct mechanisms/etiologies that can cause altered mental status in a patient like this.",
+      "rubric": "Wernicke encephalopathy (leading,6). Hepatic encephalopathy — a genuine competitor given his cirrhosis (CANT-MISS,4). Hypoglycemia (CANT-MISS,3). Intracranial process — subdural/stroke (CANT-MISS,3). CNS infection — meningitis/encephalitis (CANT-MISS,2). Medication/sedative effect or alcohol withdrawal given his quetiapine and intermittent lorazepam (core,2). Names THREE distinct AMS mechanisms — e.g. nutritional/thiamine deficiency, hepatic/metabolic, hypoglycemic, structural/CNS, infectious, medication/toxic-withdrawal (core,2). Names the classic triad (encephalopathy + ophthalmoplegia/nystagmus + gait ataxia) in a malnourished drinker as the justification (core,3). PENALTY: anchoring on hepatic encephalopathy or simple intoxication and missing the thiamine-deficiency triad (-3).",
+      "idealAnswer": "Leading diagnosis: Wernicke encephalopathy — the classic triad of encephalopathy, ophthalmoplegia/nystagmus, and gait ataxia in a malnourished drinker. The strongest competing diagnosis is hepatic encephalopathy, because he has known alcohol-related cirrhosis; this is a genuine fork that must be resolved (the absent asterixis and only borderline ammonia argue against it). Must-not-miss: Hypoglycemia (check a fingerstick), Intracranial process — subdural/stroke, and CNS infection — meningitis/encephalitis. Also reasonable: medication/sedative effect or alcohol withdrawal given his quetiapine and intermittent lorazepam. Three distinct mechanisms of AMS in this patient: (1) nutritional/thiamine deficiency (Wernicke), (2) hepatic/metabolic (hepatic encephalopathy, hyponatremia), and (3) structural or infectious CNS process (subdural/stroke, meningitis) — with medication/toxic-withdrawal as a co-factor.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Wernicke encephalopathy",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Hepatic encephalopathy (competing diagnosis given cirrhosis)",
+            "points": 4
           },
           {
             "item": "Hypoglycemia",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Intracranial process — subdural/stroke",
-            "points": 4
+            "points": 3
           },
           {
             "item": "CNS infection — meningitis/encephalitis",
-            "points": 3
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Hepatic encephalopathy",
+            "item": "Medication/sedative effect or alcohol withdrawal (quetiapine/lorazepam)",
             "points": 2
           },
           {
-            "item": "Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause",
+            "item": "Names three distinct AMS mechanisms (nutritional, hepatic/metabolic, structural/infectious/toxic)",
             "points": 2
           },
           {
@@ -122,16 +131,21 @@
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on hepatic encephalopathy or simple intoxication and misses the thiamine-deficiency triad",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Hepatic encephalopathy (competing diagnosis given cirrhosis)",
         "Hypoglycemia",
         "Intracranial process — subdural/stroke",
         "CNS infection — meningitis/encephalitis"
       ],
       "acceptableAlternatives": [
-        "Hepatic encephalopathy",
-        "Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause"
+        "Medication/sedative effect or alcohol withdrawal (quetiapine/lorazepam)"
       ]
     },
     {
@@ -140,8 +154,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Fingerstick glucose (CANT-MISS,3). Non-contrast CT head to exclude bleed/structural cause (CANT-MISS,4). BMP incl. magnesium, potassium, phosphate (CANT-MISS,3). Whole-blood thiamine level drawn before treating — but do NOT delay thiamine for the result (2). Ammonia/LFTs to assess hepatic encephalopathy (1). Tox screen/ethanol/TSH (1). Infection screen if febrile/LP if meningitis suspected (1). PENALTY: giving IV glucose/dextrose before thiamine and precipitating/worsening Wernicke (-3). PENALTY: delaying empiric thiamine while awaiting the thiamine level (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; Thiamine level; Ammonia & LFTs; CT head; Tox screen & TSH.",
+      "rubric": "Fingerstick glucose (CANT-MISS,3). Non-contrast CT head to exclude bleed/structural cause (CANT-MISS,4). BMP with anion gap incl. magnesium, potassium, phosphate (CANT-MISS,3). Ammonia + LFTs/INR to assess hepatic encephalopathy given his cirrhosis (2). Whole-blood thiamine level drawn before treating — but do NOT delay thiamine for the result (1). CBC for anemia/platelets (1). Tox screen/ethanol/TSH and review the medication list (1). PENALTY: giving IV glucose/dextrose before thiamine and precipitating/worsening Wernicke (-3). PENALTY: delaying empiric thiamine while awaiting the thiamine level (-2).",
+      "idealAnswer": "Order: Fingerstick glucose; non-contrast CT head; BMP with anion gap including magnesium, potassium, phosphate; ammonia and LFTs/INR (to assess the competing hepatic encephalopathy); whole-blood thiamine level drawn before treating (but do NOT delay thiamine for it); CBC; tox screen, ethanol, and TSH with a careful medication reconciliation; plus the EKG and CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -154,34 +168,26 @@
             "points": 4
           },
           {
-            "item": "magnesium, potassium, phosphate",
+            "item": "BMP with anion gap including magnesium, potassium, phosphate",
             "points": 3
           }
         ],
         "coreActions": [
           {
+            "item": "Ammonia and LFTs/INR to assess hepatic encephalopathy",
+            "points": 2
+          },
+          {
             "item": "Whole-blood thiamine level drawn before treating (do not delay thiamine for the result)",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "EKG",
-            "points": 2
+            "item": "CBC for anemia/thrombocytopenia",
+            "points": 1
           },
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Ammonia & LFTs",
-            "points": 2
-          },
-          {
-            "item": "Tox screen & TSH",
-            "points": 2
+            "item": "Tox screen, ethanol, TSH and medication reconciliation",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -199,10 +205,13 @@
       "requiredTests": [
         "Fingerstick glucose",
         "Non-contrast CT head to exclude bleed/structural cause",
-        "magnesium, potassium, phosphate"
+        "BMP with anion gap including magnesium, potassium, phosphate"
       ],
       "optionalTests": [
-        "Whole-blood thiamine level drawn before treating (do not delay thiamine for the result)"
+        "Ammonia and LFTs/INR to assess hepatic encephalopathy",
+        "Whole-blood thiamine level drawn before treating (do not delay thiamine for the result)",
+        "CBC for anemia/thrombocytopenia",
+        "Tox screen, ethanol, TSH and medication reconciliation"
       ],
       "contraindicatedTests": [
         "giving IV glucose/dextrose before thiamine",
@@ -219,33 +228,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia with a borderline-prolonged QT from low Mg/K; no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (6); recognizes the prolonged/borderline QT and links it to low magnesium/potassium (4); no acute ischemic changes (3); systematic read (2). PENALTY: over-calling ischemia or missing the QT (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and state how they change your management.",
+      "rubric": "Findings = sinus tachycardia with a PROLONGED QT (QTc ~490 ms) and no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (3); recognizes the prolonged QT as the key abnormality (7); links it to hypokalemia and hypomagnesemia PLUS his QT-prolonging quetiapine, with a risk of torsades, so electrolytes must be repleted and further QT-prolonging agents avoided (5). PENALTY: calling the tracing a normal sinus tachycardia and missing the long QT (-3).",
       "keyFindings": [
-        "sinus tachycardia",
-        "borderline/prolonged QT interval with low magnesium and potassium"
+        "sinus tachycardia with a prolonged QT/QTc (~490 ms)",
+        "links long QT to hypokalemia/hypomagnesemia plus QT-prolonging quetiapine, torsades risk"
       ],
       "criticalFindings": [
-        "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia."
+        "Sinus tachycardia with a prolonged QT (QTc ~490 ms) — electrolyte- and drug-related (hypokalemia/hypomagnesemia plus quetiapine), with torsades risk; no acute ischemia."
       ],
       "commonMistakes": [
-        "missing the prolonged QT and the electrolyte link",
-        "over-calling acute ischemia"
+        "calling the tracing a normal sinus tachycardia",
+        "missing the prolonged QT interval",
+        "not connecting the long QT to the low K/Mg and the quetiapine"
       ],
-      "idealAnswer": "Sinus tachycardia with a borderline-prolonged QT interval in the setting of low magnesium/potassium; no acute ischemic changes.",
+      "idealAnswer": "Sinus tachycardia with a markedly prolonged QT interval (QTc ~490 ms) and no acute ischemic changes. The long QT is multifactorial: hypokalemia (K 3.0) and hypomagnesemia (Mg 1.4) on top of his QT-prolonging quetiapine. This puts him at risk for torsades de pointes, so I will aggressively replete magnesium and potassium, hold the quetiapine, and AVOID other QT-prolonging agents — importantly, no haloperidol or ondansetron if he becomes agitated or nauseated.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia."
+          "Sinus tachycardia with a prolonged QT (QTc ~490 ms) — electrolyte- and drug-related (hypokalemia/hypomagnesemia plus quetiapine), with torsades risk; no acute ischemia."
         ],
         "coreActions": [
-          "sinus tachycardia",
-          "borderline/prolonged QT interval with low magnesium and potassium"
+          "sinus tachycardia with a prolonged QT/QTc (~490 ms)",
+          "links long QT to hypokalemia/hypomagnesemia plus QT-prolonging quetiapine, torsades risk"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study a normal sinus tachycardia / misses the long QT",
             "points": -3
           }
         ]
@@ -297,66 +307,70 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "With a normal glucose, no intracranial bleed on CT, a low thiamine level, and the classic triad in a malnourished drinker, what is your diagnosis and what did you rule out?",
-      "rubric": "Wernicke encephalopathy (6). Cites the triad — encephalopathy, ophthalmoplegia/nystagmus, gait ataxia — in a thiamine-deficient malnourished drinker, and explicitly excludes hypoglycemia, intracranial bleed, and CNS infection (3). Notes it is a clinical diagnosis requiring immediate empiric thiamine and that untreated it can progress to irreversible Korsakoff syndrome (bonus,1).",
-      "idealAnswer": "Wernicke encephalopathy — the classic triad of encephalopathy, ophthalmoplegia/nystagmus, and gait ataxia in a thiamine-deficient malnourished drinker with a low thiamine level. The normal glucose, normal CT, and absence of CNS infection rule out hypoglycemia, intracranial bleed, and meningitis/encephalitis. It is a clinical diagnosis requiring immediate empiric thiamine before glucose.",
+      "prompt": "With a normal glucose, no intracranial bleed on CT, a low thiamine level, the classic triad in a malnourished drinker, only a borderline ammonia with no asterixis, and a prolonged QT on his EKG, commit to your diagnosis. Name the single discriminating finding that resolves the Wernicke-vs-hepatic-encephalopathy fork, and state the residual ambiguity.",
+      "rubric": "Wernicke encephalopathy (6). Names the discriminator that resolves the fork — the classic triad (ophthalmoplegia/nystagmus + gait ataxia + encephalopathy) with a low thiamine level points to Wernicke, while the ABSENT asterixis and only borderline ammonia argue against overt hepatic encephalopathy; explicitly excludes hypoglycemia, intracranial bleed, and CNS infection (3). States residual ambiguity — he still has cirrhosis so hepatic encephalopathy may co-exist or evolve, the prolonged QT and sedating meds (quetiapine/lorazepam) are co-contributors, and Wernicke is a clinical diagnosis requiring immediate empiric thiamine that, untreated, can progress to irreversible Korsakoff syndrome (bonus,1).",
+      "idealAnswer": "Wernicke encephalopathy — the classic triad of encephalopathy, ophthalmoplegia/nystagmus, and gait ataxia in a thiamine-deficient malnourished drinker with a low thiamine level. The single discriminating finding that resolves the Wernicke-vs-hepatic-encephalopathy fork is the oculomotor/ophthalmoplegia plus gait-ataxia triad together with the ABSENT asterixis and only borderline ammonia — overt hepatic encephalopathy would be expected to produce asterixis and a higher ammonia and does not explain the eye findings. The normal glucose, normal CT, and absence of meningismus rule out hypoglycemia, intracranial bleed, and meningitis/encephalitis. Residual ambiguity: he has established cirrhosis, so hepatic encephalopathy may co-exist or evolve and the prolonged QT with his sedating medications (quetiapine, intermittent lorazepam) are co-contributors to the altered sensorium. Wernicke is a clinical diagnosis requiring immediate empiric thiamine before glucose, and untreated it can progress to irreversible Korsakoff syndrome.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
         "bonusActions": [
           {
-            "item": "Notes Wernicke is a clinical diagnosis needing immediate empiric thiamine and can progress to irreversible Korsakoff syndrome",
+            "item": "Notes Wernicke is a clinical diagnosis needing immediate empiric thiamine and can progress to irreversible Korsakoff syndrome; cirrhosis means hepatic encephalopathy may co-exist",
             "points": 1
           }
         ],
         "penalties": []
       },
       "mustNotMiss": [
+        "Hepatic encephalopathy (competing diagnosis given cirrhosis)",
         "Hypoglycemia",
         "Intracranial process — subdural/stroke",
         "CNS infection — meningitis/encephalitis"
       ],
       "acceptableAlternatives": [
-        "Hepatic encephalopathy",
-        "Alcohol intoxication/withdrawal or other electrolyte/toxic-metabolic cause"
+        "Medication/sedative effect or alcohol withdrawal (quetiapine/lorazepam)"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH alcohol/nutrition guidance: immediate high-dose IV thiamine BEFORE any glucose (CANT-MISS,8); give thiamine empirically without waiting for the level and continue a multi-day high-dose course (CANT-MISS,4); repair electrolytes — magnesium (cofactor), potassium, phosphate (4); folate/multivitamin and nutritional support, watch for refeeding syndrome (3); monitor for/treat concurrent alcohol withdrawal (3); admit and reassess neuro status, neuro consult if not improving (2); address alcohol use disorder/social needs (1). PENALTY: giving glucose/dextrose before thiamine (-3); under-dosing oral thiamine when high-dose IV is indicated (-2).",
-      "idealAnswer": "Immediate high-dose IV thiamine (e.g. 500 mg IV three times daily) given BEFORE any glucose, empirically and without waiting for the thiamine level, continued for several days then tapered. Replete magnesium (a required cofactor), potassium, and phosphate; give folate/multivitamin and nutritional support while watching for refeeding syndrome. Monitor for and treat concurrent alcohol withdrawal. Admit, serially reassess neuro status, and obtain neurology consult if not improving. Address the underlying alcohol use disorder and social needs.",
+      "prompt": "What is your management plan, including disposition and a safe-discharge/transition plan once he stabilizes?",
+      "rubric": "Per MGH alcohol/nutrition guidance: immediate high-dose IV thiamine BEFORE any glucose, empirically and without waiting for the level, continued as a multi-day high-dose course (CANT-MISS,7); repair electrolytes — magnesium (cofactor), potassium, phosphate — and because the EKG shows a prolonged QT, AVOID QT-prolonging agents (no haloperidol/ondansetron) and hold the quetiapine (CANT-MISS,4); folate/multivitamin and nutritional support, watch for refeeding syndrome and correct hyponatremia slowly (3); monitor for/treat concurrent alcohol withdrawal with a symptom-triggered protocol, and if hepatic encephalopathy declares itself add lactulose (3); admit and reassess neuro status, neurology consult if not improving (2); reconcile sedating meds — hold the quetiapine and the routine lorazepam, hold the thiazide contributing to hyponatremia/hypokalemia (2); SAFE-DISCHARGE/transition plan — medication reconciliation, deprescribe the thiazide/sedatives where possible, caregiver education, home-safety/PT and falls assessment, addiction-medicine referral and social work for housing, repeat EKG to confirm QT normalized, close follow-up (core,3); address alcohol use disorder/social needs (1). PENALTY: giving glucose/dextrose before thiamine (-3); giving a QT-prolonging antiemetic/antipsychotic with the long QT (-2); discharging him home unstable without a safe-disposition plan (-2).",
+      "idealAnswer": "Immediate high-dose IV thiamine (e.g. 500 mg IV three times daily) given BEFORE any glucose, empirically and without waiting for the thiamine level, continued for several days then tapered. Replete magnesium (a required cofactor), potassium, and phosphate; because the EKG shows a prolonged QT, replete electrolytes aggressively, hold the quetiapine, and AVOID other QT-prolonging agents (no haloperidol or ondansetron). Give folate/multivitamin and nutritional support while watching for refeeding syndrome, and correct the hyponatremia slowly. Monitor for and treat concurrent alcohol withdrawal with a symptom-triggered (e.g. CIWA) protocol; if overt hepatic encephalopathy declares itself, add lactulose. Reconcile his medications — hold the quetiapine and the standing lorazepam, and hold the thiazide that is contributing to the hyponatremia/hypokalemia. Admit, serially reassess neuro status, and obtain a neurology consult if not improving. Safe-discharge/transition plan once stabilized: medication reconciliation with deprescribing of the thiazide and sedating agents where possible, caregiver education, a home-safety and falls/PT assessment, a repeat EKG to confirm the QT has normalized, addiction-medicine referral and social work for housing/follow-up, and close primary-care/hepatology follow-up. Address the underlying alcohol use disorder and social needs.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "High-dose IV thiamine before any glucose",
-            "points": 8
+            "item": "High-dose IV thiamine before any glucose, empirically and continued as a multi-day course",
+            "points": 7
           },
           {
-            "item": "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course",
+            "item": "Replete magnesium/potassium/phosphate and, given the long QT, avoid QT-prolonging agents and hold quetiapine",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Electrolyte repletion (magnesium cofactor, potassium, phosphate)",
-            "points": 4
-          },
-          {
-            "item": "Folate/multivitamin and nutrition; watch for refeeding syndrome",
+            "item": "Folate/multivitamin and nutrition; watch for refeeding syndrome; correct hyponatremia slowly",
             "points": 3
           },
           {
-            "item": "Monitor for and treat concurrent alcohol withdrawal",
+            "item": "Monitor/treat alcohol withdrawal (symptom-triggered); add lactulose if hepatic encephalopathy declares itself",
             "points": 3
           },
           {
             "item": "Admit, serial neuro reassessment, neurology consult if not improving",
             "points": 2
+          },
+          {
+            "item": "Medication reconciliation — hold quetiapine, standing lorazepam, and the thiazide",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge/transition plan: med reconciliation, caregiver education, home-safety/PT and falls eval, repeat EKG, addiction-medicine and social work, close follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
@@ -369,22 +383,33 @@
           {
             "item": "Glucose/dextrose before thiamine",
             "points": -3
+          },
+          {
+            "item": "QT-prolonging antiemetic/antipsychotic given the long QT",
+            "points": -2
+          },
+          {
+            "item": "Discharging him home unstable without a safe-disposition plan",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "High-dose IV thiamine before any glucose",
-        "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course"
+        "High-dose IV thiamine before any glucose, empirically and continued as a multi-day course",
+        "Replete magnesium/potassium/phosphate and, given the long QT, avoid QT-prolonging agents and hold quetiapine"
       ],
       "optionalActions": [
-        "Electrolyte repletion (magnesium cofactor, potassium, phosphate)",
-        "Folate/multivitamin and nutrition; watch for refeeding syndrome",
-        "Monitor for and treat concurrent alcohol withdrawal",
+        "Folate/multivitamin and nutrition; watch for refeeding syndrome; correct hyponatremia slowly",
+        "Monitor/treat alcohol withdrawal (symptom-triggered); add lactulose if hepatic encephalopathy declares itself",
         "Admit, serial neuro reassessment, neurology consult if not improving",
+        "Medication reconciliation — hold quetiapine, standing lorazepam, and the thiazide",
+        "Safe-discharge/transition plan: med reconciliation, caregiver education, home-safety/PT and falls eval, repeat EKG, addiction-medicine and social work, close follow-up",
         "Address alcohol use disorder and social needs"
       ],
       "unsafeActions": [
-        "Glucose/dextrose before thiamine"
+        "Glucose/dextrose before thiamine",
+        "QT-prolonging antiemetic/antipsychotic given the long QT",
+        "Discharging him home unstable without a safe-disposition plan"
       ],
       "consults": [
         "Neurology"
@@ -404,12 +429,14 @@
     "verbosity": "very brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "medication_use"
     ],
     "communicationStyle": "confused and inattentive; gives short, vague answers and needs collateral",
-    "affect": "58-year-old man, thin and disheveled, mildly drowsy but rousable, inattentive and slow to answer; malnourished.",
+    "affect": "58-year-old man, thin and disheveled, mildly drowsy but rousable, inattentive and slow to answer; malnourished with mild scleral icterus.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the medication list (thiazide, quetiapine, gabapentin, lorazepam) unless meds/pharmacy/chart are asked about",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -482,6 +509,43 @@
       "hiddenUntilAsked": false
     },
     {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "vitamins",
+        "pharmacy",
+        "pill bottles",
+        "quetiapine",
+        "lorazepam",
+        "water pill"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "liver_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "liver",
+        "cirrhosis",
+        "swollen belly",
+        "ascites",
+        "yellow",
+        "jaundice",
+        "blood in vomit",
+        "black stools"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
       "id": "onset",
       "category": "hpi",
       "triggerConcepts": [
@@ -547,23 +611,10 @@
         "past medical history",
         "medical problems",
         "conditions",
-        "diabetes"
+        "diabetes",
+        "blood pressure"
       ],
-      "response": "Mostly just the drinking. No sugar problem that I know of — no diabetes.",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take",
-        "vitamins"
-      ],
-      "response": "I don't take any regular medicines or vitamins.",
+      "response": "Mostly the drinking and my liver, plus high blood pressure and feeling down. No sugar problem — no diabetes.",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -572,7 +623,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_cranial_nerves_finding_1",
-      "finding": "Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with double vision — ophthalmoplegia; pupils equal and reactive.",
+      "finding": "Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with double vision — ophthalmoplegia; pupils equal and reactive; mild scleral icterus.",
       "revealedBy": [
         "assess_cranial_nerves"
       ],
@@ -593,7 +644,7 @@
     },
     {
       "id": "assess_mental_status_finding_3",
-      "finding": "Neuro: disoriented and inattentive (global confusion); no focal motor weakness, no asterixis, no neck stiffness.",
+      "finding": "Neuro: disoriented and inattentive (global confusion); no focal motor weakness, no neck stiffness.",
       "revealedBy": [
         "assess_mental_status"
       ],
@@ -602,8 +653,18 @@
       "normalIfNotPresent": "Alert and oriented, attentive."
     },
     {
-      "id": "assess_general_appearance_finding_4",
-      "finding": "General: cachectic, disheveled, mildly drowsy and inattentive; no diaphoresis, no coarse tremor, NOT agitated.",
+      "id": "assess_asterixis_finding_4",
+      "finding": "Neuro: NO asterixis on sustained wrist extension (a pertinent negative that argues against overt hepatic encephalopathy as the primary driver).",
+      "revealedBy": [
+        "assess_asterixis"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No asterixis."
+    },
+    {
+      "id": "assess_general_appearance_finding_5",
+      "finding": "General: cachectic, disheveled, mildly drowsy and inattentive, mild scleral icterus; no diaphoresis, no coarse tremor, NOT agitated.",
       "revealedBy": [
         "assess_general_appearance"
       ],
@@ -612,7 +673,17 @@
       "normalIfNotPresent": "Well-nourished, well-appearing."
     },
     {
-      "id": "assess_neck_stiffness_finding_5",
+      "id": "inspect_skin_finding_6",
+      "finding": "Skin: a few spider angiomata and palmar erythema (stigmata of chronic liver disease); no track marks.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No rashes or stigmata of chronic liver disease."
+    },
+    {
+      "id": "assess_neck_stiffness_finding_7",
       "finding": "Neuro: no neck stiffness/meningismus (argues against CNS infection).",
       "revealedBy": [
         "assess_neck_stiffness"
@@ -632,49 +703,55 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Wernicke encephalopathy",
-    "diagnosticFramework": "58M with heavy alcohol use and recent poor intake presents with several days of progressive confusion, double vision, and an unsteady, wide-based gait. The diagnosis is Wernicke encephalopathy, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58M with alcohol use disorder, known alcohol-related cirrhosis, recent poor intake, and a confounding medication list (hydrochlorothiazide, quetiapine, gabapentin, intermittent lorazepam) presents with several days of progressive confusion, double vision, and an unsteady, wide-based gait. The diagnosis is Wernicke encephalopathy, reached by eliciting the focused history, performing the targeted exam (the triad plus an ABSENT asterixis), and interpreting a directed workup that resolves the Wernicke-vs-hepatic-encephalopathy fork while excluding the must-not-miss alternatives and recognizing his prolonged QT.",
     "keyHistoryClues": [
       "Years of heavy daily alcohol use with weeks of very poor oral intake and weight loss (thiamine deficiency).",
       "Repeated vomiting last week worsening the malnutrition.",
       "Subacute progressive confusion, double vision, and staggering gait — the classic triad.",
+      "Known alcohol-related cirrhosis with a past ascites — raising hepatic encephalopathy as a competing cause.",
+      "Confounding medications — thiazide (hyponatremia/hypokalemia), quetiapine (QT, sedation), intermittent lorazepam (sedation/withdrawal).",
       "No witnessed seizure, no fever/stiff neck, and no head trauma (pertinent negatives)."
     ],
     "keyPhysicalExamFindings": [
-      "Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with double vision — ophthalmoplegia; pupils equal and reactive.",
+      "Eyes/CN: horizontal nystagmus on lateral gaze and bilateral lateral rectus (CN VI) weakness with double vision — ophthalmoplegia; pupils equal and reactive; mild scleral icterus.",
       "Gait/coordination: wide-based, ataxic, unsteady gait; truncal ataxia; cannot tandem walk.",
-      "Neuro: disoriented and inattentive (global confusion); no focal motor weakness, no asterixis, no neck stiffness.",
-      "General: cachectic, disheveled, mildly drowsy and inattentive; no diaphoresis, no coarse tremor, NOT agitated."
+      "Neuro: disoriented and inattentive (global confusion); NO asterixis (argues against overt hepatic encephalopathy).",
+      "Skin: spider angiomata and palmar erythema (stigmata of chronic liver disease).",
+      "General: cachectic, disheveled, mildly drowsy and inattentive, mild scleral icterus; no diaphoresis, no coarse tremor, NOT agitated."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
-      "BMP",
+      "BMP_AnionGap",
       "Thiamine_level",
       "Ammonia_LFTs",
+      "CBC_Anemia",
       "CT_head",
       "Tox_TSH"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Wernicke encephalopathy while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Wernicke encephalopathy and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the alcohol/nutrition history, the liver history, and the confounding medication list only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the triad and the pertinent-negative asterixis and liver stigmata.",
+      "Build a differential led by Wernicke encephalopathy with hepatic encephalopathy as a genuine competitor, while explicitly excluding must-not-miss causes.",
+      "Order a focused, order-sensitive workup; interpret the integrated EKG (prolonged QT), CXR, and the multi-system labs.",
+      "Resolve the Wernicke-vs-hepatic-encephalopathy fork, commit to Wernicke, and manage with thiamine-before-glucose, electrolyte/QT-aware repletion, medication reconciliation, consults, and a safe-discharge disposition."
     ],
     "commonPitfalls": [
       "Glucose/dextrose before thiamine",
       "Delaying empiric thiamine while awaiting the thiamine level",
-      "Anchoring on simple intoxication/withdrawal and missing the triad"
+      "Anchoring on hepatic encephalopathy or simple intoxication/withdrawal and missing the triad",
+      "Giving a QT-prolonging antiemetic/antipsychotic despite the prolonged QT"
     ],
     "managementPearls": [
-      "High-dose IV thiamine before any glucose",
-      "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course"
+      "High-dose IV thiamine before any glucose, empirically and continued as a multi-day course",
+      "Replete magnesium/potassium/phosphate and, given the long QT, avoid QT-prolonging agents and hold quetiapine"
     ],
     "criticalHistoryItems": [
       "alcohol_use",
       "nutrition_intake",
       "vision_double",
-      "gait_balance"
+      "gait_balance",
+      "medications"
     ],
     "criticalExamItems": [
       "assess_cranial_nerves",
@@ -683,26 +760,26 @@
     "criticalWorkupItems": [
       "Fingerstick glucose",
       "Non-contrast CT head to exclude bleed/structural cause",
-      "magnesium, potassium, phosphate"
+      "BMP with anion gap including magnesium, potassium, phosphate"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia.",
+      "Sinus tachycardia with a prolonged QT (QTc ~490 ms) — electrolyte- and drug-related (hypokalemia/hypomagnesemia plus quetiapine), with torsades risk; no acute ischemia.",
       "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
     ],
     "criticalManagementItems": [
-      "High-dose IV thiamine before any glucose",
-      "Give thiamine empirically (do not wait for the level) and continue a multi-day high-dose course"
+      "High-dose IV thiamine before any glucose, empirically and continued as a multi-day course",
+      "Replete magnesium/potassium/phosphate and, given the long QT, avoid QT-prolonging agents and hold quetiapine"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia.",
+      "Sinus tachycardia with a prolonged QT (QTc ~490 ms) — electrolyte- and drug-related (hypokalemia/hypomagnesemia plus quetiapine), with torsades risk; no acute ischemia.",
       "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia with a prolonged QT interval (low magnesium/potassium); no acute ischemia.",
+      "Sinus tachycardia with a prolonged QT (QTc ~490 ms) — electrolyte- and drug-related (hypokalemia/hypomagnesemia plus quetiapine), with torsades risk; no acute ischemia.",
       "Clear lung fields, no acute process; obtained to exclude an infectious/aspiration precipitant."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "An EKG abnormality in an AMS patient is an interpretation task in its own right — name the prolonged QT, then judge its relevance to drug/electrolyte choices.",
       "Read every study systematically before committing.",
       "State pertinent negatives, not just positives."
     ]
@@ -734,8 +811,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated pathology-forward interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

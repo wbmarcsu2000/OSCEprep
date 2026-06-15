@@ -1,0 +1,807 @@
+{
+  "id": "abdo-10",
+  "category": "Abdominal Pain",
+  "difficulty": "hard",
+  "title": "Abdominal pain, vomiting, and hypotension in a woman who stopped her steroids",
+  "diagnosis": "Adrenal (Addisonian) crisis presenting as abdominal pain",
+  "chart": {
+    "ageSex": "44F",
+    "cc": "Belly pain, vomiting, and feeling like she's going to pass out",
+    "oneLiner": "44F with autoimmune thyroid disease and vitiligo, on chronic prednisone for presumed rheumatologic joint pain, presents with two days of diffuse abdominal pain, nausea/vomiting, profound weakness, and near-syncope after running out of her prednisone five days ago during a flu-like illness.",
+    "vitals": {
+      "BP": "84/52",
+      "HR": "118",
+      "RR": "20",
+      "Temp": "37.9°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "My whole belly has been aching and I keep throwing up, and I feel so weak and dizzy that I nearly blacked out getting to the car.",
+  "patientFile": "PERSONA: 44-year-old woman, looks unwell, weak, and dehydrated, lying flat because sitting up makes her lightheaded. Cooperative but exhausted and answers slowly; mildly tanned-looking despite winter. Worried because she 'never feels this wiped out.'\n\nHPI: ~48h of diffuse, crampy abdominal pain with persistent nausea and several episodes of vomiting; poor oral intake for two days. Over the same period she has felt profoundly weak, dizzy when standing, and craves salty foods. She nearly fainted walking to the car. She has had a viral-feeling illness (low-grade fevers, body aches, poor appetite) for about 5 days. About 5 days ago she also RAN OUT of her prednisone and did not refill it because she felt too sick to go to the pharmacy and 'figured a few days off wouldn't matter' (only volunteers the missed steroid if asked about medications, adherence, refills, or recent steroid use). She has noticed her skin and the creases of her palms looking darker over the past several months, and has lost ~5 kg without trying (reveal only if asked about skin changes or weight). NO localized RLQ pain or pain with movement, NO rebound-type pain, NO black or bloody stools, NO hematemesis, NO dysuria, NO vaginal discharge. NO recent travel, NO sick contacts with bloody diarrhea, only mild loose stools yesterday. Last menstrual period ~2 weeks ago, normal; uses condoms; thinks pregnancy is unlikely.\nPMH: Hashimoto's hypothyroidism (on levothyroxine); vitiligo; chronic joint pains attributed by an outside doctor to 'a rheumatologic condition,' for which she was started on daily prednisone about a year ago and has been on it ever since. No diabetes, no known adrenal or pituitary disease, no prior abdominal surgery. MEDS: prednisone 7.5 mg daily (the chronic steroid — recently RAN OUT 5 days ago, if asked); levothyroxine 88 mcg daily; occasional acetaminophen; NO NSAIDs, NO new antibiotics, NO over-the-counter steroids. ALLERGIES: none. SOCIAL: office manager; rare alcohol; non-smoker; no recreational drugs. FAMILY: mother has Hashimoto's thyroiditis and pernicious anemia; an aunt has type 1 diabetes (autoimmune clustering, if asked about family history). ROS: salt craving, fatigue, dizziness on standing, hyperpigmentation, weight loss as above; no chest pain, no focal neuro symptoms.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, fatigued, weak; looks dehydrated; diffuse skin tanning with darker palmar creases and a few patches of vitiligo; buccal/gingival hyperpigmentation.\n- Vitals: BP 84/52, HR 118, RR 20, 37.9C, SpO2 98% RA; orthostatic — BP drops further and HR rises on sitting/standing.\n- HEENT/skin: dry mucous membranes; hyperpigmented buccal mucosa and palmar creases; vitiligo patches on the hands.\n- Abdomen: mild, diffuse tenderness on deep palpation WITHOUT rebound, guarding, or rigidity; soft, bowel sounds present; no localized RLQ/RUQ tenderness; negative Murphy, psoas, and Rovsing signs. (The benign abdomen argues against a surgical/peritonitic cause despite the dramatic systemic picture.)\n- Cardiac/lungs: tachycardic, regular; lungs clear.\n- Neuro: alert and oriented, weak and lethargic but no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the missed/ran-out prednisone unless asked about medications, adherence, refills, or recent steroid use; this is the key precipitant.\n- Do NOT volunteer the hyperpigmentation, salt craving, or weight loss unless asked about skin/color changes, cravings, weight, or relevant review of systems.\n- Do NOT volunteer the autoimmune family history unless asked about family history.\n- Reveal exam findings (hyperpigmentation, orthostasis, benign abdomen) only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "BMP": "Na 126 (LOW), K 6.2 (HIGH), Cl 92, HCO3 18, anion gap = 126 - (92 + 18) = 16 (mildly elevated from hypoperfusion/lactate), BUN 34, Cr 1.4 (prerenal from volume depletion), GLUCOSE 54 (LOW). The combination of hyponatremia + hyperkalemia + hypoglycemia + prerenal azotemia is the classic mineralocorticoid+glucocorticoid-deficiency electrolyte signature.",
+      "CBC": "WBC 9.8 with a relative EOSINOPHILIA (eosinophils 8%) and mild lymphocytosis — an under-appreciated clue to cortisol deficiency rather than acute bacterial infection; Hgb 13.0 (mildly hemoconcentrated), Plt normal. No bandemia/left shift to suggest bacterial sepsis.",
+      "cortisol_acth": "Random (morning-equivalent) serum CORTISOL inappropriately LOW at 2.1 mcg/dL during physiologic stress/hypotension (should be high), with markedly ELEVATED plasma ACTH and elevated plasma renin with low aldosterone — confirming PRIMARY adrenal insufficiency (Addison disease); a cosyntropin (ACTH-stimulation) test can confirm later but treatment must NOT wait for it.",
+      "Lipase": "Normal — argues against acute pancreatitis as the cause of the pain.",
+      "VBG_lactate": "pH 7.31 with mild metabolic acidosis; lactate mildly elevated at 2.6 from hypoperfusion (consistent with the gap of 16) — NOT the high-lactate picture of overwhelming septic shock.",
+      "UA_hCG_cultures": "Urinalysis bland — no nitrites, no leukocyte esterase, no significant bacteria (no UTI source); urine beta-hCG NEGATIVE (excludes pregnancy); blood cultures sent and pending but no clinical source of sepsis identified.",
+      "TSH": "TSH mildly elevated with low-normal free T4 (known Hashimoto's, not the acute driver) — part of the autoimmune polyendocrine background; do NOT give levothyroxine before hydrocortisone, as treating hypothyroidism first can precipitate crisis."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "integrated": true,
+      "litflStudyN": 3,
+      "findings": "Sinus tachycardia with tall, narrow-based, symmetrically PEAKED T waves (best seen in the precordial leads) reflecting HYPERKALEMIA (K 6.2); PR interval at the upper limit with early QRS broadening but no sine-wave pattern yet; no acute ST-elevation MI. This is the patient's OWN tracing and confirms that the hyperkalemia is cardiotoxic and time-sensitive.",
+      "verify": "Source a study matching: sinus rhythm/tachycardia with tall peaked symmetric T waves of hyperkalaemia, no STEMI. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead EKG showing tall peaked symmetric T waves of hyperkalaemia with early QRS widening",
+      "searchTerms": [
+        "hyperkalemia peaked T waves ECG",
+        "hyperkalaemia tented T waves QRS widening ECG"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A hypotensive, weak patient with vomiting and a high serum potassium has a 12-lead recorded; the precordial T waves are tall and tented."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA%20upright&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "integrated": true,
+      "findings": "Clear lung fields with no focal consolidation, effusion, or free air under the diaphragm; normal-to-small cardiac silhouette consistent with volume depletion. No radiographic source of sepsis (no pneumonia) and no free air to suggest a perforated viscus.",
+      "verify": "Pick a CC file showing a normal PA chest film; must NOT show free air, consolidation, or effusion.",
+      "assetNeeded": true,
+      "imageDescription": "normal chest radiograph, clear lungs, no free air, small cardiac silhouette of volume depletion",
+      "searchTerms": [
+        "normal chest x-ray PA upright",
+        "no free air under diaphragm chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A hypotensive woman with abdominal pain has a chest film to exclude pneumonia and free air."
+    }
+  },
+  "revealKeys": [
+    "BMP",
+    "CBC",
+    "cortisol_acth",
+    "Lipase",
+    "VBG_lactate",
+    "UA_hCG_cultures",
+    "TSH",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BMP",
+    "cortisol_acth",
+    "ekg"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, list your differential for this hypotensive woman's abdominal pain (note your leading diagnosis). Then name THREE classic precipitants of an adrenal (Addisonian) crisis.",
+      "rubric": "Adrenal (Addisonian) crisis presenting as abdominal pain (leading,8). Septic shock / intra-abdominal sepsis given fever + hypotension (CANT-MISS,4). Surgical abdomen — perforation/ischemia/appendicitis (CANT-MISS,3). Other distributive/hypovolemic shock or hypoglycemia from another cause (CANT-MISS,2). Acute gastroenteritis with dehydration (core,2). Acute pancreatitis (core,1). Names that abrupt steroid withdrawal + autoimmune background + hyperpigmentation + salt craving point to cortisol/mineralocorticoid deficiency (core,2). Names THREE precipitants of adrenal crisis — e.g. abrupt withdrawal of chronic glucocorticoids, an intercurrent infection/illness, and another physiologic stressor (trauma, surgery, MI, or missed steroid dosing during illness) (core,3). PENALTY: anchoring on gastroenteritis/sepsis and missing adrenal insufficiency in a steroid-dependent patient (-3).",
+      "idealAnswer": "Leading diagnosis: Adrenal (Addisonian) crisis presenting as abdominal pain — a steroid-dependent woman with autoimmune disease who abruptly stopped chronic prednisone during an illness, now hypotensive with diffuse pain, vomiting, weakness, hyperpigmentation, and salt craving. Must-not-miss alternatives: septic shock / intra-abdominal sepsis (fever + hypotension), a surgical abdomen (perforation/ischemia/appendicitis), and another cause of shock or hypoglycemia. Also reasonable: gastroenteritis with dehydration; acute pancreatitis. THREE precipitants of adrenal crisis: (1) abrupt withdrawal of chronic glucocorticoids (suppressed HPA axis), (2) an intercurrent infection or acute illness increasing cortisol demand, and (3) another major physiologic stressor — surgery, trauma, MI, or simply not stress-dosing steroids during illness/vomiting.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Adrenal (Addisonian) crisis presenting as abdominal pain",
+            "points": 8
+          },
+          {
+            "item": "Septic shock / intra-abdominal sepsis",
+            "points": 4
+          },
+          {
+            "item": "Surgical abdomen (perforation/ischemia/appendicitis)",
+            "points": 3
+          },
+          {
+            "item": "Other distributive/hypovolemic shock or alternate cause of hypoglycemia",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Acute gastroenteritis with dehydration",
+            "points": 2
+          },
+          {
+            "item": "Acute pancreatitis",
+            "points": 1
+          },
+          {
+            "item": "Links steroid withdrawal + autoimmune background + hyperpigmentation + salt craving to cortisol/mineralocorticoid deficiency",
+            "points": 2
+          },
+          {
+            "item": "Names three precipitants of adrenal crisis (steroid withdrawal, infection/illness, other physiologic stressor)",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchors on gastroenteritis/sepsis and misses adrenal insufficiency in a steroid-dependent patient",
+            "points": -3
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Septic shock / intra-abdominal sepsis",
+        "Surgical abdomen (perforation/ischemia/appendicitis)",
+        "Other distributive/hypovolemic shock or alternate cause of hypoglycemia"
+      ],
+      "acceptableAlternatives": [
+        "Acute gastroenteritis with dehydration",
+        "Acute pancreatitis"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order? (Remember the labs you draw must not delay treatment.)",
+      "rubric": "BMP for sodium, potassium, and glucose (the hyponatremia/hyperkalemia/hypoglycemia signature) (CANT-MISS,4). Draw a RANDOM serum CORTISOL (and ACTH/renin/aldosterone) BEFORE giving hydrocortisone to document the deficiency — but do NOT wait for the result to treat (CANT-MISS,4). Fingerstick glucose at the bedside (2). EKG to assess hyperkalemia (2). CBC (eosinophilia clue) (1). VBG/lactate (1). Lipase, UA, urine beta-hCG, blood cultures to chase mimics/sources (1). PENALTY: ordering an early abdominal CT for the pain before correcting shock/electrolytes (-1); withholding treatment until the cortisol result returns (-3); a cosyntropin stim test as the FIRST step instead of empiric steroids (-2).",
+      "idealAnswer": "Order: bedside fingerstick glucose; BMP (Na, K, glucose, renal function, bicarbonate); a RANDOM serum cortisol plus ACTH/renin/aldosterone drawn BEFORE the first hydrocortisone dose (but treat empirically without waiting for results); EKG for hyperkalemia; CBC (look for eosinophilia rather than left shift); VBG with lactate; Lipase; UA and urine beta-hCG; blood cultures; CXR. A formal cosyntropin stimulation test can be done later for confirmation and must not delay treatment.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "BMP (sodium, potassium, glucose, renal function)",
+            "points": 4
+          },
+          {
+            "item": "Random serum cortisol (+ACTH/renin/aldosterone) drawn before hydrocortisone, without delaying treatment",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Bedside fingerstick glucose",
+            "points": 2
+          },
+          {
+            "item": "EKG for hyperkalemia",
+            "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "VBG with lactate",
+            "points": 1
+          },
+          {
+            "item": "Lipase, UA, urine beta-hCG, blood cultures",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Withholding treatment until the cortisol result returns / cosyntropin stim test before empiric steroids",
+            "points": -3
+          },
+          {
+            "item": "Ordering an early abdominal CT for the pain before correcting shock/electrolytes",
+            "points": -1
+          }
+        ]
+      },
+      "requiredTests": [
+        "BMP (sodium, potassium, glucose, renal function)",
+        "Random serum cortisol (+ACTH/renin/aldosterone) drawn before hydrocortisone, without delaying treatment"
+      ],
+      "optionalTests": [
+        "Bedside fingerstick glucose",
+        "EKG for hyperkalemia",
+        "CBC",
+        "VBG with lactate",
+        "Lipase, UA, urine beta-hCG, blood cultures"
+      ],
+      "contraindicatedTests": [
+        "Ordering an early abdominal CT for the pain before correcting shock/electrolytes",
+        "Cosyntropin stimulation test as the first step instead of empiric steroids"
+      ],
+      "orderSensitiveActions": [
+        "Random serum cortisol (+ACTH/renin/aldosterone) drawn before hydrocortisone, without delaying treatment"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and state what they mean for her immediate management.",
+      "rubric": "Findings = sinus tachycardia with tall, narrow-based, symmetrically PEAKED ('tented') T waves of HYPERKALEMIA (K 6.2), with early QRS broadening and a borderline-long PR but no sine wave yet; no acute STEMI. CREDIT: identifies sinus tachycardia and the peaked/tented T waves and names hyperkalemia (6); recognizes the early conduction changes (QRS broadening / PR prolongation) as evidence the hyperkalemia is cardiotoxic and demands IMMEDIATE membrane stabilization with IV calcium (6); states there is no acute STEMI, so ACS is not the cause of the pain (3). PENALTY: calling the peaked T waves normal/benign, missing the hyperkalemia, or failing to connect the EKG to urgent calcium/potassium-lowering therapy (-3).",
+      "keyFindings": [
+        "sinus tachycardia with tall, peaked/tented T waves of hyperkalemia",
+        "early QRS broadening / borderline PR; no acute STEMI"
+      ],
+      "criticalFindings": [
+        "Sinus tachycardia with tall peaked T waves and early QRS widening of hyperkalemia — cardiotoxic; give IV calcium now. No acute STEMI."
+      ],
+      "commonMistakes": [
+        "dismissing the peaked T waves as a benign normal variant",
+        "missing the early QRS widening that signals dangerous hyperkalemia",
+        "failing to act on the EKG with immediate IV calcium and potassium-lowering therapy"
+      ],
+      "idealAnswer": "Sinus tachycardia with tall, narrow-based, symmetrically peaked ('tented') T waves best seen across the precordial leads — the hallmark of hyperkalemia, fitting her serum K of 6.2 from mineralocorticoid (aldosterone) deficiency. There is early QRS broadening and a borderline-prolonged PR but no sine-wave pattern yet, meaning the hyperkalemia is already cardiotoxic and I must give IV calcium for membrane stabilization immediately, followed by potassium-shifting and -eliminating therapy. There is no acute ST-elevation MI, so ACS is not the explanation for her abdominal pain.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Sinus tachycardia with tall peaked T waves and early QRS widening of hyperkalemia — cardiotoxic; give IV calcium now. No acute STEMI."
+        ],
+        "coreActions": [
+          "sinus tachycardia with tall, peaked/tented T waves of hyperkalemia",
+          "early QRS broadening / borderline PR; no acute STEMI"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls peaked T waves benign / misses hyperkalemia / fails to act with IV calcium",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear film, no acute process. CREDIT: identifies a normal/clear film with clear lungs and a normal-to-small cardiac silhouette consistent with volume depletion (5); explicitly excludes a pneumonia (an infectious/septic source) and free air under the diaphragm (perforation), supporting adrenal crisis over sepsis/surgical abdomen (5). PENALTY: inventing pathology or over-calling an infiltrate on a clear film (-2).",
+      "keyFindings": [
+        "clear lungs; normal-to-small cardiac silhouette of volume depletion",
+        "no pneumonia and no free air under the diaphragm"
+      ],
+      "criticalFindings": [
+        "Clear lungs with no consolidation, effusion, or free air under the diaphragm; small cardiac silhouette of volume depletion."
+      ],
+      "commonMistakes": [
+        "over-calling basal atelectasis as pneumonia and chasing a septic source",
+        "forgetting the CXR is here to exclude pneumonia and free air"
+      ],
+      "idealAnswer": "Clear lung fields with no consolidation, effusion, or free air under the diaphragm, and a normal-to-small cardiac silhouette consistent with volume depletion. No radiographic pneumonia (no obvious infectious source) and no free air to suggest a perforated viscus — both pertinent negatives that support adrenal crisis over sepsis or a surgical abdomen.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes: clear lungs; no consolidation, effusion, or free air under the diaphragm; small cardiac silhouette of volume depletion.",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Excludes pneumonia (infectious source) and free air (perforation)",
+            "points": 5
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology / over-calling an infiltrate",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "BMP shows Na 126, K 6.2, glucose 54, with a prerenal Cr; CBC shows relative eosinophilia; the random cortisol is low at 2.1 with a high ACTH; lipase, UA, and urine beta-hCG are unremarkable. What is your diagnosis, what is the discriminating test, and what did you rule out?",
+      "rubric": "Adrenal (Addisonian) crisis from PRIMARY adrenal insufficiency, precipitated by abrupt glucocorticoid withdrawal during an intercurrent illness (6). Cites the discriminating findings — an INAPPROPRIATELY LOW random cortisol during stress with an ELEVATED ACTH (and the hyponatremia + hyperkalemia + hypoglycemia + eosinophilia signature), with the cosyntropin stimulation test as the confirmatory study that must NOT delay treatment; explicitly rules out primary sepsis (no source, no left shift, lactate only mildly up), a surgical abdomen (benign exam, no free air), pancreatitis (normal lipase), and pregnancy (negative hCG); notes the hyperpigmentation and high ACTH localize it to the adrenal (primary) rather than the pituitary (4).",
+      "idealAnswer": "Adrenal (Addisonian) crisis due to PRIMARY adrenal insufficiency (Addison disease), precipitated by abruptly stopping chronic prednisone during a viral illness. The discriminating result is an inappropriately LOW random serum cortisol (2.1) during hypotension/physiologic stress together with a markedly ELEVATED ACTH — confirming primary adrenal failure — corroborated by the classic electrolyte signature (hyponatremia + hyperkalemia + hypoglycemia + prerenal azotemia) and the relative eosinophilia. The confirmatory test is a cosyntropin (ACTH-stimulation) test, but it must NOT delay empiric hydrocortisone. The hyperpigmentation and high ACTH localize the lesion to the adrenal gland (primary), not the pituitary (where ACTH would be low and pigmentation absent). Ruled out: primary sepsis (no clear source, no bandemia/left shift, only mildly elevated lactate), a surgical abdomen (benign abdomen, no free air on CXR), acute pancreatitis (normal lipase), and pregnancy (negative beta-hCG).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Septic shock / intra-abdominal sepsis",
+        "Surgical abdomen (perforation/ischemia/appendicitis)"
+      ],
+      "acceptableAlternatives": [
+        "Secondary adrenal insufficiency from HPA-axis suppression (steroid withdrawal physiology)",
+        "Concurrent autoimmune polyendocrine syndrome"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan, including immediate resuscitation, the hyperkalemia, disposition, and counseling for this steroid-dependent patient?",
+      "rubric": "Per MGH adrenal crisis protocol: give STRESS-DOSE IV hydrocortisone immediately (100 mg IV bolus then 50 mg q6h or infusion) WITHOUT waiting for the cortisol result (CANT-MISS,7); aggressive IV fluid resuscitation with isotonic saline containing DEXTROSE to correct hypotension, hyponatremia, and hypoglycemia (CANT-MISS,6); treat the cardiotoxic hyperkalemia guided by the EKG — IV CALCIUM for membrane stabilization, then insulin+glucose / beta-agonist to shift, recognizing it will largely correct with hydrocortisone and fluids (5); identify and treat the precipitant — the missed steroids and intercurrent illness — and do NOT give levothyroxine before hydrocortisone (2); correct hyponatremia at a SAFE rate to avoid osmotic demyelination (1); admit to a monitored bed/ICU with endocrine consultation (1); safe-discharge & sick-day education — never abruptly stop steroids, double/triple oral steroids and seek care when ill, carry a steroid emergency card/medical-alert and an injectable hydrocortisone kit, and arrange close endocrine follow-up (3). PENALTY: delaying or withholding hydrocortisone while awaiting the cortisol/stim test (-4); giving levothyroxine before steroids (-2); over-rapid sodium correction (-2); discharging the patient (-3).",
+      "idealAnswer": "Treat empirically NOW — do not wait for the cortisol result. Give stress-dose IV hydrocortisone (100 mg IV bolus, then 50 mg IV q6h or a continuous infusion); hydrocortisone covers both the glucocorticoid and, at these doses, mineralocorticoid needs. Resuscitate with isotonic saline containing dextrose (e.g., D5-normal saline) to simultaneously correct the hypotension, hyponatremia, and hypoglycemia. Manage the cardiotoxic hyperkalemia per the EKG: IV calcium gluconate/chloride for membrane stabilization first, then insulin + glucose and/or a nebulized beta-agonist to shift potassium, knowing it will largely resolve as cortisol and fluids are restored; reserve potassium-binding/dialysis for refractory cases. Identify and treat the precipitant (abruptly stopped prednisone plus a viral illness) and do NOT give her levothyroxine before hydrocortisone, since treating hypothyroidism first can worsen the crisis. Correct the sodium at a safe rate (avoid overcorrection and osmotic demyelination). Admit to a monitored/ICU bed with endocrinology consultation; plan a later cosyntropin test for confirmation. Counsel on sick-day rules and safe discharge: never abruptly stop steroids, double or triple oral steroids and seek care during illness/vomiting, carry a steroid emergency/medical-alert card, obtain an injectable hydrocortisone emergency kit with training, and arrange close endocrine follow-up.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Stress-dose IV hydrocortisone immediately, without waiting for the cortisol result",
+            "points": 7
+          },
+          {
+            "item": "Isotonic saline with dextrose to correct hypotension, hyponatremia, and hypoglycemia",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Treat cardiotoxic hyperkalemia per EKG — IV calcium then insulin+glucose/beta-agonist",
+            "points": 5
+          },
+          {
+            "item": "Identify/treat the precipitant and do not give levothyroxine before hydrocortisone",
+            "points": 2
+          },
+          {
+            "item": "Correct hyponatremia at a safe rate to avoid osmotic demyelination",
+            "points": 1
+          },
+          {
+            "item": "Admit to monitored bed/ICU with endocrinology consultation",
+            "points": 1
+          },
+          {
+            "item": "Sick-day education & safe discharge: never stop steroids abruptly, stress-dose when ill, steroid emergency card/medical-alert, injectable hydrocortisone kit, close endocrine follow-up",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Delaying or withholding hydrocortisone while awaiting the cortisol/stimulation test",
+            "points": -4
+          },
+          {
+            "item": "Giving levothyroxine before steroids / over-rapid sodium correction",
+            "points": -2
+          },
+          {
+            "item": "Discharging the patient in crisis",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Stress-dose IV hydrocortisone immediately, without waiting for the cortisol result",
+        "Isotonic saline with dextrose to correct hypotension, hyponatremia, and hypoglycemia"
+      ],
+      "optionalActions": [
+        "Treat cardiotoxic hyperkalemia per EKG — IV calcium then insulin+glucose/beta-agonist",
+        "Identify/treat the precipitant and do not give levothyroxine before hydrocortisone",
+        "Correct hyponatremia at a safe rate to avoid osmotic demyelination",
+        "Admit to monitored bed/ICU with endocrinology consultation",
+        "Sick-day education & safe discharge: never stop steroids abruptly, stress-dose when ill, steroid emergency card/medical-alert, injectable hydrocortisone kit, close endocrine follow-up"
+      ],
+      "unsafeActions": [
+        "Delaying or withholding hydrocortisone while awaiting the cortisol/stimulation test",
+        "Giving levothyroxine before steroids / over-rapid sodium correction",
+        "Discharging the patient in crisis"
+      ],
+      "consults": [
+        "Endocrinology"
+      ],
+      "disposition": "Admit to a monitored bed/ICU",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024-2025",
+        "section": "Adrenal Insufficiency & Adrenal Crisis",
+        "page": 184
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "anxious",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "medication_adherence",
+      "weight_loss",
+      "sexual_history"
+    ],
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
+    "affect": "44-year-old woman, weak and exhausted, lying flat because sitting up makes her lightheaded; cooperative but answers slowly.",
+    "disclosureRules": [
+      "Do not reveal the missed/ran-out prednisone unless asked about medications, adherence, refills, or recent steroid use",
+      "Do not volunteer hyperpigmentation, salt craving, or weight loss unless asked about skin/color changes, cravings, weight, or relevant ROS",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "steroid_medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "what medications do you take",
+        "are you on steroids",
+        "prednisone",
+        "did you run out of any medicine",
+        "did you stop any medication",
+        "medication refills",
+        "medication adherence"
+      ],
+      "response": "[Reveal the missed/ran-out prednisone from patientFile only when asked about medications, adherence, refills, or recent steroid use; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "hyperpigmentation_skin",
+      "category": "ros",
+      "triggerConcepts": [
+        "skin changes",
+        "darkening of skin",
+        "color changes",
+        "tanning",
+        "skin getting darker",
+        "vitiligo"
+      ],
+      "response": "[Reveal the hyperpigmentation/skin-darkening detail from patientFile only when asked; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "salt_craving_weight",
+      "category": "ros",
+      "triggerConcepts": [
+        "salt craving",
+        "craving salty foods",
+        "appetite changes",
+        "weight loss",
+        "losing weight"
+      ],
+      "response": "[Reveal the salt craving and weight loss from patientFile only when asked; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "autoimmune_pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "thyroid",
+        "hashimoto",
+        "autoimmune",
+        "any conditions"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "recent_illness",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "been sick recently",
+        "any infection",
+        "fever or cold",
+        "flu-like illness"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character_location",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "where is the pain",
+        "what does it feel like",
+        "character",
+        "location"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "dizziness_orthostasis",
+      "category": "ros",
+      "triggerConcepts": [
+        "dizzy",
+        "lightheaded",
+        "near fainting",
+        "passing out",
+        "dizzy when standing"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "gi_red_flags",
+      "category": "ros",
+      "triggerConcepts": [
+        "blood in vomit",
+        "blood in stool",
+        "black stools",
+        "vomiting blood",
+        "diarrhea"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "anyone in the family",
+        "relatives with conditions",
+        "autoimmune in the family"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pregnancy_sexual_history",
+      "category": "social",
+      "triggerConcepts": [
+        "last menstrual period",
+        "could you be pregnant",
+        "sexually active",
+        "any chance of pregnancy",
+        "periods"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_general_appearance_finding_1",
+      "finding": "General: ill-appearing, fatigued, weak, dehydrated; diffuse skin tanning with darker palmar creases and a few patches of vitiligo; buccal/gingival hyperpigmentation.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Comfortable, well-perfused, normal skin and mucosa."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_2",
+      "finding": "Vitals: BP 84/52, HR 118; orthostatic — BP drops further and HR rises on sitting/standing, consistent with volume depletion and mineralocorticoid deficiency.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic change in BP or HR."
+    },
+    {
+      "id": "inspect_skin_finding_3",
+      "finding": "Skin: diffuse hyperpigmentation accentuated in the palmar creases, with vitiligo patches on the hands (an autoimmune clue).",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Skin normal in color without hyperpigmentation or vitiligo."
+    },
+    {
+      "id": "inspect_oropharynx_finding_4",
+      "finding": "Oropharynx: hyperpigmented buccal and gingival mucosa (a clue to chronic high ACTH / primary adrenal insufficiency).",
+      "revealedBy": [
+        "inspect_oropharynx"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Oral mucosa normal in color."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_5",
+      "finding": "HEENT/skin: dry mucous membranes consistent with volume depletion.",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Mucous membranes moist."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_6",
+      "finding": "Abdomen: mild, diffuse tenderness on deep palpation WITHOUT rebound, guarding, or rigidity; soft, bowel sounds present; no localized tenderness.",
+      "revealedBy": [
+        "palpate_all_quadrants"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen soft and nontender."
+    },
+    {
+      "id": "assess_rebound_tenderness_finding_7",
+      "finding": "Abdomen: NO rebound tenderness, guarding, or rigidity (argues against a surgical/peritonitic abdomen despite the dramatic systemic picture).",
+      "revealedBy": [
+        "assess_rebound_tenderness"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No rebound tenderness."
+    },
+    {
+      "id": "assess_mental_status_finding_8",
+      "finding": "Neuro: alert and oriented, weak and lethargic but no focal deficit.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Alert and fully oriented."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Adrenal (Addisonian) crisis presenting as abdominal pain",
+    "diagnosticFramework": "44F with autoimmune thyroid disease and vitiligo, on chronic prednisone for presumed rheumatologic joint pain, presents with two days of diffuse abdominal pain, vomiting, profound weakness, and near-syncope after running out of her prednisone five days ago during a viral illness. She is hypotensive and orthostatic with hyponatremia, hyperkalemia, hypoglycemia, prerenal azotemia, eosinophilia, hyperpigmentation, and salt craving. The diagnosis is Adrenal (Addisonian) crisis presenting as abdominal pain, confirmed by an inappropriately low random cortisol with a high ACTH; it is reached by eliciting the steroid-withdrawal history, recognizing the autoimmune/hyperpigmentation clues and the electrolyte signature, integrating the hyperkalemia EKG, and excluding the must-not-miss alternatives (septic shock, a surgical abdomen, and other causes of shock/hypoglycemia).",
+    "keyHistoryClues": [
+      "Chronic prednisone abruptly stopped (ran out) five days ago during a viral illness",
+      "Salt craving, progressive weight loss, and skin darkening over months",
+      "Autoimmune background (Hashimoto's, vitiligo) with a family history of autoimmune disease"
+    ],
+    "keyPhysicalExamFindings": [
+      "General: ill-appearing, fatigued, weak, dehydrated; diffuse skin tanning with darker palmar creases and a few patches of vitiligo; buccal/gingival hyperpigmentation.",
+      "Vitals: BP 84/52, HR 118; orthostatic — BP drops further and HR rises on sitting/standing, consistent with volume depletion and mineralocorticoid deficiency.",
+      "Skin: diffuse hyperpigmentation accentuated in the palmar creases, with vitiligo patches on the hands (an autoimmune clue).",
+      "Oropharynx: hyperpigmented buccal and gingival mucosa (a clue to chronic high ACTH / primary adrenal insufficiency).",
+      "HEENT/skin: dry mucous membranes consistent with volume depletion.",
+      "Abdomen: mild, diffuse tenderness on deep palpation WITHOUT rebound, guarding, or rigidity; soft, bowel sounds present; no localized tenderness.",
+      "Abdomen: NO rebound tenderness, guarding, or rigidity (argues against a surgical/peritonitic abdomen despite the dramatic systemic picture).",
+      "Neuro: alert and oriented, weak and lethargic but no focal deficit."
+    ],
+    "keyDiagnosticFindings": [
+      "BMP",
+      "CBC",
+      "cortisol_acth",
+      "Lipase",
+      "VBG_lactate",
+      "UA_hCG_cultures",
+      "TSH"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals (hypotension, tachycardia, volume depletion, near-syncope in a steroid-dependent woman).",
+      "Elicit the focused history, drawing out the abruptly stopped prednisone, recent illness, salt craving, weight loss, skin darkening, and autoimmune/family history only on direct questioning.",
+      "Perform the targeted exam: recognize hyperpigmentation (skin, palmar creases, buccal mucosa), orthostatic hypotension, dehydration, and a benign abdomen.",
+      "Build a differential led by Adrenal (Addisonian) crisis while explicitly excluding septic shock, a surgical abdomen, and other causes of shock/hypoglycemia, and name three precipitants of adrenal crisis.",
+      "Order a focused workup (BMP, a random cortisol/ACTH drawn before steroids, fingerstick glucose) and integrate the patient's own hyperkalemia EKG; recognize the hyponatremia + hyperkalemia + hypoglycemia + eosinophilia signature.",
+      "Commit to Adrenal crisis confirmed by low cortisol with high ACTH, treat empirically with stress-dose hydrocortisone and dextrose-containing saline without waiting for results, manage the cardiotoxic hyperkalemia, and provide sick-day education and safe disposition."
+    ],
+    "commonPitfalls": [
+      "Anchoring on gastroenteritis or sepsis and missing adrenal insufficiency in a steroid-dependent patient",
+      "Delaying or withholding hydrocortisone while awaiting the cortisol or cosyntropin stimulation test",
+      "Giving levothyroxine before hydrocortisone, worsening the crisis",
+      "Over-rapid correction of the hyponatremia risking osmotic demyelination",
+      "Dismissing the peaked T waves and not treating the cardiotoxic hyperkalemia"
+    ],
+    "managementPearls": [
+      "Stress-dose IV hydrocortisone immediately, without waiting for the cortisol result",
+      "Isotonic saline with dextrose to correct hypotension, hyponatremia, and hypoglycemia",
+      "The hyperkalemia largely corrects once cortisol and volume are restored — but stabilize the myocardium with IV calcium first"
+    ],
+    "criticalHistoryItems": [
+      "steroid_medications"
+    ],
+    "criticalExamItems": [
+      "assess_general_appearance",
+      "obtain_orthostatic_vitals",
+      "assess_rebound_tenderness"
+    ],
+    "criticalWorkupItems": [
+      "BMP (sodium, potassium, glucose, renal function)",
+      "Random serum cortisol (+ACTH/renin/aldosterone) drawn before hydrocortisone, without delaying treatment"
+    ],
+    "criticalManagementItems": [
+      "Stress-dose IV hydrocortisone immediately, without waiting for the cortisol result",
+      "Isotonic saline with dextrose to correct hypotension, hyponatremia, and hypoglycemia"
+    ],
+    "criticalInterpretationItems": [
+      "Sinus tachycardia with tall peaked T waves and early QRS widening of hyperkalemia — cardiotoxic; give IV calcium now. No acute STEMI.",
+      "Clear lungs with no consolidation, effusion, or free air under the diaphragm; small cardiac silhouette of volume depletion."
+    ],
+    "keyImageInterpretationFindings": [
+      "Sinus tachycardia with tall peaked T waves and early QRS widening of hyperkalemia — cardiotoxic; give IV calcium now. No acute STEMI.",
+      "Clear lungs with no consolidation, effusion, or free air under the diaphragm; small cardiac silhouette of volume depletion."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Sinus tachycardia with tall peaked T waves and early QRS widening of hyperkalemia — cardiotoxic; give IV calcium now. No acute STEMI.",
+      "Clear lungs with no consolidation, effusion, or free air under the diaphragm; small cardiac silhouette of volume depletion."
+    ],
+    "imageInterpretationPearls": [
+      "Tall, tented, symmetric T waves in a hypotensive vomiting patient are hyperkalemia until proven otherwise — and the EKG, not the lab value, dictates how fast you act.",
+      "Early QRS widening signals that hyperkalemia is already cardiotoxic; give IV calcium before the serum result returns.",
+      "On a shocked patient's chest film, the pertinent negatives — no pneumonia, no free air — help steer away from sepsis and a surgical abdomen toward the metabolic cause."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's distress",
+        "points": 1
+      },
+      {
+        "item": "Asks about medication adherence/refills non-judgmentally",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

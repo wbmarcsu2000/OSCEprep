@@ -1,51 +1,55 @@
 {
   "id": "liver-05",
   "category": "Abnormal Liver Enzymes",
-  "difficulty": "easy",
-  "title": "Incidental mildly elevated liver enzymes",
+  "difficulty": "hard",
+  "title": "Transaminitis in a man with metabolic syndrome on amiodarone and an herbal supplement",
   "diagnosis": "NAFLD / NASH",
   "chart": {
-    "ageSex": "48M",
-    "cc": "Abnormal liver tests on routine labs",
-    "oneLiner": "48M with obesity and type 2 diabetes is referred for mildly elevated liver enzymes found on routine screening; he feels well.",
+    "ageSex": "56M",
+    "cc": "Abnormal liver tests, referred from cardiology",
+    "oneLiner": "56M with obesity, type 2 diabetes, dyslipidemia, hypertension, and paroxysmal atrial fibrillation on amiodarone is referred for transaminases that have risen over the past few months; he reports only mild fatigue and recently started an over-the-counter herbal weight-loss supplement.",
     "vitals": {
-      "BP": "136/86",
-      "HR": "78",
+      "BP": "142/88",
+      "HR": "72",
       "RR": "14",
-      "Temp": "36.8°C",
-      "SpO2": "99% RA"
+      "Temp": "36.7°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "My doctor said my liver numbers were a bit high on a routine blood test. I feel fine, though.",
-  "patientFile": "PERSONA: 48-year-old man, asymptomatic, well-appearing, somewhat surprised. Good historian.\n\nHPI: No symptoms — no jaundice, no abdominal pain, no dark urine. Mildly elevated transaminases found on routine labs. On asking: known obesity, type 2 diabetes, high cholesterol, and a sedentary lifestyle (metabolic syndrome). Minimal alcohol (quantify to exclude alcoholic liver disease). No new medications or supplements/herbals (verify). NO IV drug use, NO risky exposures, NO family history of liver disease.\nPMH: type 2 diabetes, obesity, dyslipidemia. MEDS: metformin, atorvastatin (note: statins are generally safe to continue). SOCIAL: 1–2 drinks per week, nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: obese, well-appearing, no jaundice.\n- Vitals: BP 136/86, HR 78, RR 14, 36.8°C, SpO2 99% RA.\n- Abdomen: soft; mild hepatomegaly if examined; NO stigmata of chronic liver disease (no spider angiomata/ascites).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer alcohol quantity, supplements, or metabolic history unless asked about alcohol, medications/supplements, or medical history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "Cardiology started me on a heart-rhythm pill a few months back, and now they say my liver numbers have crept up. I feel mostly okay — maybe a little more tired.",
+  "patientFile": "PERSONA: 56-year-old man, well-appearing, slightly worried that the new heart medicine is harming his liver. Good historian. He has read online that his supplement is 'natural and safe' and is reluctant to stop it unless asked directly about it.\n\nHPI: Largely asymptomatic — only mild fatigue over the last couple of months. NO jaundice, NO right-upper-quadrant pain, NO dark urine or pale stools, NO itching, NO abdominal swelling, NO confusion, NO bleeding/easy bruising that he has noticed, NO weight loss (he has actually been TRYING to lose weight). Transaminases were normal-ish a year ago and have drifted upward; the rise was first noticed a few months after starting a new cardiac medication. He had a fatty liver mentioned on an ultrasound 'years ago' but nothing was done about it. He denies any acute viral illness, no new sexual contacts, no transfusions, no tattoos, no IV drug use, no recent travel, no raw shellfish, no acetaminophen overuse (takes maybe 1–2 g occasionally for knee pain).\nCARDIAC: paroxysmal atrial fibrillation diagnosed ~6 months ago after palpitations; started on AMIODARONE about 4 months ago for rhythm control, plus apixaban for stroke prevention. He has noticed feeling a bit more tired and slightly heat-intolerant since (possible amiodarone thyroid effect — reveal only if asked about energy/thyroid symptoms).\nMEDS/SUPPLEMENTS (reveal the supplement and full med list only when asked about medications, supplements, herbals, or over-the-counter products): metformin, atorvastatin (high-dose), lisinopril, amiodarone (started ~4 months ago), apixaban. Over the last ~3 months he has ALSO been taking a daily over-the-counter HERBAL WEIGHT-LOSS SUPPLEMENT containing green-tea extract and several other 'fat-burner' botanicals — he did not think of it as a medication. Occasional acetaminophen for knee osteoarthritis (not daily, never more than ~2 g/day).\nALCOHOL (reveal only if asked about alcohol/drinking): 2–3 beers on weekends only; no daily drinking, no history of heavy use or withdrawal.\nPMH: type 2 diabetes (~8 years, on metformin), obesity (BMI ~34), dyslipidemia, hypertension, paroxysmal atrial fibrillation, obstructive sleep apnea (uses CPAP inconsistently), knee osteoarthritis. SOCIAL: married, office job, sedentary; nonsmoker; weekend beer only; no drugs. FAMILY: father with type 2 diabetes and 'fatty liver'; no known hemochromatosis, Wilson disease, or autoimmune liver disease.\nROS: mild fatigue and mild heat intolerance; otherwise negative — no fevers, no rash, no arthralgias, no dry eyes/mouth, no easy bleeding, no leg swelling.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: obese, well-appearing, no acute distress; NO jaundice.\n- Vitals: BP 142/88, HR 72 (irregular pulse may be noted), RR 14, 36.7°C, SpO2 97% RA.\n- Skin/eyes: no scleral icterus; no spider angiomata, no palmar erythema; mild slate-gray skin discoloration is NOT present (do not invent amiodarone skin findings unless specifically examined and then only faint if at all).\n- Neck: no thyromegaly, no nodule; no lymphadenopathy.\n- Cardiac: irregularly irregular rhythm at a controlled rate; no murmurs; no elevated JVP.\n- Abdomen: soft; mild hepatomegaly if examined; NO splenomegaly, NO ascites/shifting dullness, NO fluid wave; NO stigmata of decompensated chronic liver disease.\n- Neuro: alert and oriented; NO asterixis.\n- Extremities: no peripheral edema.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the amiodarone, the herbal weight-loss supplement, the alcohol amount, or the metabolic history unless asked about medications/supplements/herbals, alcohol, or medical history respectively.\n- Do NOT volunteer the timeline linking the transaminase rise to the new cardiac drug unless asked when the abnormality started or what changed around that time.\n- Reveal the fatigue/heat-intolerance (possible thyroid) detail only if asked about energy, weight, temperature tolerance, or thyroid symptoms.\n- Reveal exam findings only when the relevant maneuver is performed; otherwise give the normal.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "LFTs": "AST 48, ALT 70 (mild elevation, ALT>AST — typical of NAFLD), Alk Phos normal.",
-      "ViralSerologies": "Hepatitis B and C negative.",
-      "Metabolic": "A1c elevated, triglycerides high, LDL high — metabolic syndrome.",
-      "OtherCauses": "Iron studies, ceruloplasmin, autoimmune markers, and TSH sent to exclude hemochromatosis/Wilson/autoimmune/thyroid; unremarkable.",
-      "US": "RUQ ultrasound: increased echogenicity consistent with hepatic steatosis (fatty liver).",
-      "Fibrosis": "Non-invasive fibrosis assessment (FIB-4 / elastography) to stage."
+      "LFTs": "AST 64, ALT 88 (mild hepatocellular pattern, ALT>AST — typical of NAFLD; ratio <1 argues against established alcoholic liver disease), Alk Phos 102 (upper-normal), total bilirubin 0.9, albumin 4.1, INR 1.0 — synthetic function preserved.",
+      "ViralSerologies": "Hepatitis B surface antigen negative, anti-HBs positive (immune), hepatitis C antibody negative; acute hepatitis A IgM negative.",
+      "Metabolic": "A1c 8.4% (poorly controlled diabetes), fasting triglycerides 320 mg/dL, LDL 38 on high-dose statin (lipids otherwise consistent with treated metabolic syndrome); BMI 34.",
+      "ThyroidIron": "TSH 7.8 mIU/L with low-normal free T4 (mild hypothyroidism — consistent with amiodarone-induced thyroid dysfunction); ferritin 540 ng/mL with serum iron 110 and TIBC 300 → transferrin saturation 37% (normal-range saturation argues AGAINST hereditary hemochromatosis; elevated ferritin with normal saturation fits dysmetabolic hyperferritinemia of NAFLD).",
+      "OtherCauses": "Ceruloplasmin normal; ANA, anti-smooth-muscle antibody, and anti-mitochondrial antibody negative; alpha-1-antitrypsin level normal — autoimmune, Wilson, and AAT causes excluded.",
+      "CBC": "WBC 6.8, Hgb 14.2, platelets 128 (mild thrombocytopenia — a clue to early portal hypertension / advanced fibrosis).",
+      "US": "RUQ ultrasound: diffusely increased hepatic echogenicity consistent with moderate hepatic steatosis; mildly coarsened/nodular contour and a borderline-enlarged spleen, raising concern for early fibrosis; patent vessels, no focal lesion, no ascites, normal biliary tree.",
+      "Fibrosis": "Non-invasive fibrosis staging: FIB-4 = (56 × 64) / (128 × √88) ≈ 2.98 (above the 2.67 high-risk cutoff → advanced fibrosis likely); vibration-controlled elastography (FibroScan) liver stiffness 11.5 kPa, also suggesting advanced (≈F3) fibrosis — warrants hepatology referral."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Short PR, delta wave (slurred QRS upstroke), widened QRS.",
-      "verify": "Source a study matching: Short PR, delta wave (slurred QRS upstroke), widened QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 2,
+      "findings": "Atrial fibrillation: irregularly irregular R-R intervals with no discrete P waves and a fibrillatory baseline; controlled ventricular rate (~70–80) on amiodarone; QTc is at the upper limit / mildly prolonged (amiodarone effect) but no acute ischemic ST changes.",
+      "verify": "Source a study matching: atrial fibrillation with controlled ventricular response, irregularly irregular rhythm, absent P waves; mild QT prolongation acceptable. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing WPW delta wave pre-excitation",
+      "imageDescription": "12-lead showing atrial fibrillation with a controlled ventricular response",
       "searchTerms": [
-        "WPW delta wave ECG",
-        "Wolff Parkinson White pre-excitation 12 lead"
+        "atrial fibrillation controlled ventricular response 12 lead ECG",
+        "irregularly irregular no P waves amiodarone ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 24-year-old man with episodic palpitations has a short PR interval and a delta wave indicating ventricular pre-excitation."
+      "clinicalVignette": "A 56-year-old man with paroxysmal atrial fibrillation on amiodarone has an irregularly irregular rhythm with no P waves at a controlled rate."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -68,7 +72,9 @@
     "LFTs",
     "ViralSerologies",
     "Metabolic",
+    "ThyroidIron",
     "OtherCauses",
+    "CBC",
     "US",
     "Fibrosis",
     "ekg",
@@ -76,61 +82,66 @@
   ],
   "essential": [
     "LFTs",
-    "ViralSerologies"
+    "ViralSerologies",
+    "Fibrosis"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on the history and labs, list your differential for the mildly elevated transaminases (note your leading diagnosis).",
-      "rubric": "Non-alcoholic fatty liver disease / NASH (leading,7). Alcoholic liver disease (must quantify alcohol,4). Chronic viral hepatitis (CANT-MISS to exclude,4). Drug/supplement-induced (core,3). Hemochromatosis / Wilson / autoimmune hepatitis (core,2). Thyroid/celiac as secondary causes (bonus,2). Names NAFLD while committing to exclude other causes (core,3).",
-      "idealAnswer": "Leading diagnosis: Non-alcoholic fatty liver disease / NASH. Must-not-miss diagnoses to exclude: Chronic viral hepatitis. Also reasonable: Alcoholic liver disease; Drug/supplement-induced; Hemochromatosis / Wilson / autoimmune hepatitis.",
+      "prompt": "Based on the history and labs, give your differential for this mild ALT-predominant transaminitis (note your leading diagnosis). The picture is layered — he has metabolic syndrome BUT also started amiodarone and an herbal supplement around the time the enzymes rose. As part of your answer, name three distinct mechanisms/etiologies by which his medications and supplements could be injuring the liver.",
+      "rubric": "NAFLD / NASH (leading,5). Drug/supplement-induced liver injury — amiodarone-induced steatohepatitis AND herbal/green-tea-extract hepatotoxicity, both temporally linked to the rise (CANT-MISS competitor,5). Chronic viral hepatitis B/C (CANT-MISS to exclude,3). Alcoholic/alcohol-associated liver disease — must quantify alcohol (core,2). Hemochromatosis / Wilson / autoimmune hepatitis / AAT (core,2). Names THREE drug/supplement mechanisms — e.g. amiodarone phospholipidosis/steatohepatitis, herbal/green-tea-extract idiosyncratic hepatotoxicity, statin transaminase elevation, acetaminophen with comorbid liver disease (core,4). Commits to a leading dx while explicitly planning to exclude the competitors and stop the offending supplement (core,4). PENALTY: anchoring on NAFLD and ignoring the drug/supplement timeline (-3).",
+      "idealAnswer": "Leading diagnosis: NAFLD / NASH — long-standing metabolic syndrome (obesity, poorly controlled T2DM, dyslipidemia, OSA), prior fatty liver on ultrasound, and an ALT>AST hepatocellular pattern. The genuinely competing diagnosis is drug/supplement-induced liver injury: the transaminitis rose within a few months of starting AMIODARONE (a classic cause of steatohepatitis that radiographically and histologically mimics NASH) and an over-the-counter HERBAL weight-loss supplement (green-tea-extract products are a well-described cause of idiosyncratic hepatotoxicity). Three mechanisms by which his meds/supplements could injure the liver: (1) amiodarone-induced phospholipidosis/steatohepatitis; (2) herbal/green-tea-extract idiosyncratic hepatocellular injury; (3) statin-related transaminase elevation (usually benign) — and acetaminophen can lower the threshold for injury in a comorbid fatty liver. Must-not-miss to exclude: chronic viral hepatitis B and C. Also reasonable: alcohol-associated liver disease (quantify alcohol), and hemochromatosis / Wilson / autoimmune hepatitis / alpha-1-antitrypsin deficiency.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Non-alcoholic fatty liver disease / NASH",
-            "points": 7
+            "item": "NAFLD / NASH",
+            "points": 5
           },
           {
-            "item": "Chronic viral hepatitis",
-            "points": 4
+            "item": "Drug/supplement-induced liver injury (amiodarone + herbal/green-tea extract)",
+            "points": 5
+          },
+          {
+            "item": "Chronic viral hepatitis B/C",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Alcoholic liver disease",
+            "item": "Alcohol-associated liver disease (quantify alcohol)",
+            "points": 2
+          },
+          {
+            "item": "Hemochromatosis / Wilson / autoimmune hepatitis / AAT deficiency",
+            "points": 2
+          },
+          {
+            "item": "Names three drug/supplement mechanisms of liver injury",
             "points": 4
           },
           {
-            "item": "Drug/supplement-induced",
-            "points": 3
-          },
-          {
-            "item": "Hemochromatosis / Wilson / autoimmune hepatitis",
-            "points": 2
-          },
-          {
-            "item": "Names NAFLD while committing to exclude other causes",
-            "points": 3
+            "item": "Commits to a leading dx while planning to exclude competitors and stop the supplement",
+            "points": 4
           }
         ],
-        "bonusActions": [
+        "bonusActions": [],
+        "penalties": [
           {
-            "item": "Thyroid/celiac as secondary causes",
-            "points": 2
+            "item": "Anchors on NAFLD and ignores the drug/supplement timeline",
+            "points": -3
           }
-        ],
-        "penalties": []
+        ]
       },
       "mustNotMiss": [
-        "Chronic viral hepatitis"
+        "Drug/supplement-induced liver injury (amiodarone + herbal/green-tea extract)",
+        "Chronic viral hepatitis B/C"
       ],
       "acceptableAlternatives": [
-        "Alcoholic liver disease",
-        "Drug/supplement-induced",
-        "Hemochromatosis / Wilson / autoimmune hepatitis"
+        "Alcohol-associated liver disease (quantify alcohol)",
+        "Hemochromatosis / Wilson / autoimmune hepatitis / AAT deficiency"
       ]
     },
     {
@@ -138,57 +149,71 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "Confirm/trend LFTs (2). Viral hepatitis serologies B and C (CANT-MISS,3). Metabolic workup — A1c, lipids (2). Iron studies, ceruloplasmin (if young), autoimmune markers, TSH to exclude other causes (3). RUQ ultrasound (2). Non-invasive fibrosis assessment — FIB-4 / elastography (2). PENALTY: diagnosing NAFLD without excluding other causes (-2).",
-      "idealAnswer": "Order: EKG; CXR; LFTs; Viral serologies; Metabolic; Other causes; US; Fibrosis.",
+      "prompt": "What initial workup do you want to order to sort NAFLD/NASH from drug/supplement injury and to exclude the other causes?",
+      "rubric": "Confirm/trend LFTs with a fractionated pattern + synthetic function (albumin, INR, bilirubin) (2). Viral hepatitis serologies B and C (CANT-MISS,3). Metabolic panel — A1c, fasting lipids (1). Thyroid + iron studies — TSH/free T4 (amiodarone), ferritin with transferrin saturation (1). Autoimmune/Wilson/AAT — ANA, ASMA, AMA, ceruloplasmin, alpha-1-antitrypsin (2). CBC for platelets as a fibrosis clue (1). RUQ ultrasound (1). Non-invasive fibrosis staging — FIB-4 AND elastography (CANT-MISS,2). Obtain a careful medication/supplement reconciliation and stop the herbal supplement while trending enzymes (core,2). PENALTY: diagnosing NAFLD without excluding viral/drug causes (-2); abruptly stopping amiodarone without cardiology before it is implicated (-1).",
+      "idealAnswer": "Order: trend LFTs with bilirubin/albumin/INR; Viral serologies (hep B and C, hep A IgM); Metabolic (A1c, fasting lipids); Thyroid + iron studies (TSH/free T4 given amiodarone, ferritin and transferrin saturation); Other causes (ANA, anti-smooth-muscle, anti-mitochondrial, ceruloplasmin, alpha-1-antitrypsin); CBC (platelets as a fibrosis clue); RUQ ultrasound; non-invasive fibrosis staging with FIB-4 AND elastography. Do a careful medication/supplement reconciliation, STOP the over-the-counter herbal weight-loss supplement now and re-trend enzymes, and discuss amiodarone with cardiology rather than stopping it unilaterally. EKG; CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Viral hepatitis serologies B and C",
             "points": 3
+          },
+          {
+            "item": "Non-invasive fibrosis staging (FIB-4 and elastography)",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "Trend LFTs with synthetic function (albumin/INR/bilirubin)",
             "points": 2
           },
           {
-            "item": "CXR",
+            "item": "Metabolic panel (A1c, lipids)",
+            "points": 1
+          },
+          {
+            "item": "Thyroid and iron studies (TSH/free T4, ferritin + transferrin saturation)",
+            "points": 1
+          },
+          {
+            "item": "Autoimmune / Wilson / AAT workup",
             "points": 2
           },
           {
-            "item": "LFTs",
+            "item": "CBC (platelets as fibrosis clue)",
+            "points": 1
+          },
+          {
+            "item": "Medication/supplement reconciliation — stop herbal supplement and re-trend",
             "points": 2
           },
           {
-            "item": "Metabolic",
-            "points": 2
-          },
-          {
-            "item": "Other causes",
-            "points": 2
-          },
-          {
-            "item": "Fibrosis",
-            "points": 2
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "diagnosing NAFLD without excluding other causes",
+            "item": "Diagnosing NAFLD without excluding viral/drug causes",
             "points": -2
+          },
+          {
+            "item": "Abruptly stopping amiodarone without cardiology before it is implicated",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
-        "Viral hepatitis serologies B and C"
+        "Viral hepatitis serologies B and C",
+        "Non-invasive fibrosis staging (FIB-4 and elastography)"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "diagnosing NAFLD without excluding other causes"
+        "Diagnosing NAFLD without excluding viral/drug causes",
+        "Abruptly stopping amiodarone without cardiology before it is implicated"
       ],
       "orderSensitiveActions": []
     },
@@ -198,32 +223,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = Wolff-Parkinson-White pre-excitation (short PR, delta wave / slurred QRS upstroke, widened QRS). CREDIT: systematic rate & rhythm read (7); identifies the short PR and delta wave (5); recognizes the WPW pre-excitation pattern (3). PENALTY: calling the study normal / mistaking it for bundle branch block or missing the abnormality (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG (he is on amiodarone for atrial fibrillation). Describe your findings and explain how they fit the clinical picture.",
+      "rubric": "Findings = atrial fibrillation with a controlled ventricular response (irregularly irregular rhythm, absent discrete P waves, fibrillatory baseline) at ~70–80 bpm on amiodarone; QTc at the upper limit / mildly prolonged as an amiodarone effect; no acute ischemic ST changes. CREDIT: systematic rate & rhythm read (5); identifies the irregularly irregular rhythm with absent P waves as atrial fibrillation (5); recognizes the controlled rate and/or mild QT prolongation as an amiodarone effect and ties amiodarone to the liver workup (3). PENALTY: calling the study normal sinus rhythm, mislabeling it a regular SVT, or missing the AF (-3).",
       "keyFindings": [
-        "short PR interval",
-        "delta wave / slurred QRS upstroke"
+        "irregularly irregular rhythm with absent P waves",
+        "controlled ventricular rate on amiodarone (mild QT prolongation)"
       ],
       "criticalFindings": [
-        "Wolff-Parkinson-White pre-excitation pattern."
+        "Atrial fibrillation with a controlled ventricular response (amiodarone effect, mild QT prolongation)."
       ],
       "commonMistakes": [
-        "mistaking the delta-wave widening for bundle branch block or ventricular rhythm"
+        "calling an irregularly irregular rhythm normal sinus rhythm",
+        "mislabeling atrial fibrillation as a regular supraventricular tachycardia",
+        "ignoring the link between amiodarone and the transaminitis"
       ],
-      "idealAnswer": "WPW pre-excitation: short PR, delta wave, broad QRS.",
+      "idealAnswer": "Atrial fibrillation: irregularly irregular R-R intervals with no discrete P waves and a fibrillatory baseline, at a controlled ventricular rate (~70–80) — consistent with rate/rhythm control on amiodarone. The QTc is at the upper limit / mildly prolonged, an expected amiodarone effect, with no acute ischemic ST-T changes. The key integration: amiodarone (the drug controlling this rhythm) is also a recognized cause of steatohepatitis/transaminitis, so this tracing is exactly why amiodarone is on the differential for his liver injury and why it must be discussed with cardiology rather than stopped reflexively.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Wolff-Parkinson-White pre-excitation pattern."
+          "Atrial fibrillation with a controlled ventricular response (amiodarone effect, mild QT prolongation)."
         ],
         "coreActions": [
-          "short PR interval",
-          "delta wave / slurred QRS upstroke"
+          "irregularly irregular rhythm with absent P waves",
+          "controlled ventricular rate on amiodarone (mild QT prolongation)"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal sinus rhythm / misses the atrial fibrillation",
             "points": -3
           }
         ]
@@ -235,7 +262,7 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "prompt": "Here is a chest X-ray. Describe your findings.",
       "rubric": "Findings = small apical pneumothorax (thin visceral pleural line with absent lung markings peripherally). CREDIT: identifies the visceral pleural line with absent peripheral markings (6); recognizes a (small) pneumothorax (4). PENALTY: calling the study normal / mistaking a skin fold for the pleural line or missing the abnormality (-3).",
       "keyFindings": [
         "visceral pleural line with absent peripheral markings",
@@ -271,9 +298,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Mild ALT>AST elevation, negative viral/other workup, steatosis on ultrasound, and metabolic syndrome. What is your diagnosis and next assessment?",
-      "rubric": "Non-alcoholic fatty liver disease (likely NASH given diabetes) (6). Stages fibrosis with a non-invasive tool (FIB-4 / elastography) to identify those needing closer follow-up (4).",
-      "idealAnswer": "NAFLD/NASH (likely NASH given diabetes). Next, stage fibrosis non-invasively (FIB-4 or elastography) to identify patients needing closer follow-up/hepatology referral.",
+      "prompt": "Pulling it together: ALT>AST hepatocellular pattern, negative viral and autoimmune/Wilson/AAT workup, moderate steatosis with a coarsened liver and borderline splenomegaly on ultrasound, FIB-4 ≈ 2.98 and elastography 11.5 kPa, platelets 128, A1c 8.4%, plus amiodarone and an herbal supplement started before the rise. What is your single most likely diagnosis, how do you resolve it from the competing drug/supplement injury, what is the key discriminating step, and what residual uncertainty remains?",
+      "rubric": "Commits to NAFLD/NASH with likely ADVANCED (≈F3) fibrosis as the dominant process — supported by long-standing metabolic syndrome, prior steatosis, the elevated FIB-4/elastography, low platelets, and a coarsened liver. Resolves the fork: superimposed drug/supplement injury is plausible and likely additive, so the discriminating step is to STOP the herbal supplement (and risk-stratify/co-manage amiodarone with cardiology) and re-trend enzymes — improvement after withdrawal implicates the drug/supplement, while persistent elevation and the fibrosis burden point to underlying NASH. Names residual uncertainty (overlapping amiodarone steatohepatitis is histologically indistinguishable; biopsy reserved if diagnosis stays unclear or to confirm staging) and that the EKG-confirmed amiodarone use cannot simply be stopped. Empty scoring arrays — graded by rubric/idealAnswer overlap.",
+      "idealAnswer": "Most likely diagnosis: NAFLD/NASH with likely ADVANCED (≈F3) fibrosis — driven by long-standing obesity, poorly controlled type 2 diabetes (A1c 8.4%), dyslipidemia, and OSA, with prior steatosis, an ALT>AST hepatocellular pattern, a coarsened liver with borderline splenomegaly and thrombocytopenia (platelets 128), and concordant non-invasive staging (FIB-4 ≈ 2.98 and elastography 11.5 kPa both above advanced-fibrosis cutoffs). Resolving the competing diagnosis: a superimposed drug/supplement-induced liver injury is genuinely plausible because both AMIODARONE (steatohepatitis that mimics NASH) and the HERBAL green-tea-extract supplement were started before the enzymes rose, and amiodarone is confirmed on his own EKG (AF on rate control). The key discriminating step is dechallenge: STOP the over-the-counter herbal supplement now and re-trend the transaminases, while co-managing amiodarone with cardiology (do not stop it unilaterally given his AF and stroke risk). Improvement after withdrawal implicates the drug/supplement; persistent elevation plus the established fibrosis burden confirm underlying NASH. Residual uncertainty: amiodarone-induced steatohepatitis is histologically indistinguishable from NASH, so if the picture stays ambiguous after dechallenge, or to confirm staging, a liver biopsy can be the tiebreaker. Also continue treating the amiodarone-associated subclinical hypothyroidism (TSH 7.8).",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -286,58 +313,82 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH MASLD/NAFLD: lifestyle weight loss 7-10% – diet and exercise (CANT-MISS,7); manage metabolic comorbidities – DM/dyslipidemia/HTN, statins safe (5); alcohol avoidance (3); stage fibrosis (FIB-4) and refer if advanced (3); consider GLP-1/metabolic therapy + vaccinate (2). PENALTY: withholding a statin out of unfounded fear of liver injury (-2); no attention to metabolic risk factors (-2).",
-      "idealAnswer": "Lifestyle-based weight loss is first-line: 7–10% body-weight loss reduces steatohepatitis/fibrosis; diet and exercise. Aggressively manage metabolic comorbidities – diabetes, dyslipidemia, hypertension; statins are safe. Avoid alcohol. Stage fibrosis (FIB-4) and refer to hepatology if advanced. Consider GLP-1 agonist/metabolic therapy and vaccinate (HAV/HBV).",
+      "prompt": "What is your management plan? Include how you handle his medications/supplement, his other lab abnormalities, and his disposition — specifically, is it safe to manage him as an outpatient, and what would make you escalate?",
+      "rubric": "Per MGH MASLD/NAFLD: lifestyle weight loss 7–10% via diet and exercise (CANT-MISS,5); aggressively manage metabolic comorbidities — intensify diabetes control (A1c 8.4%), treat dyslipidemia/HTN, optimize OSA, and CONTINUE the statin (it is safe and indicated) (5); stop the herbal/green-tea-extract supplement and minimize hepatotoxins, limit acetaminophen, counsel alcohol avoidance (4); co-manage amiodarone with cardiology and treat amiodarone-associated hypothyroidism — replace levothyroxine, do not stop amiodarone unilaterally (3); refer to HEPATOLOGY for advanced (F3) fibrosis staging/surveillance, with HCC and varices surveillance once cirrhosis is suspected, and vaccinate (HAV/HBV) (3); SAFE-DISCHARGE / disposition — appropriate for OUTPATIENT management with med reconciliation, written supplement-stop instructions, close follow-up to re-trend LFTs, and clear return precautions; escalate (urgent hepatology/admission) for jaundice, rising bilirubin/INR, encephalopathy, GI bleed, or ascites (CANT-MISS,3); consider GLP-1/metabolic therapy (2). PENALTY: withholding/stopping the statin out of unfounded fear of liver injury (-3); abruptly stopping amiodarone without cardiology (-2); discharging without recognizing advanced fibrosis / no hepatology referral (-2).",
+      "idealAnswer": "Lifestyle-based weight loss is first-line: target 7–10% body-weight loss with diet and exercise. Aggressively manage metabolic drivers — intensify diabetes control (A1c 8.4% is too high; a GLP-1 receptor agonist is attractive here for weight and glycemia), treat dyslipidemia and hypertension, and optimize OSA/CPAP adherence; CONTINUE the high-dose statin (it is safe and cardioprotective — do not stop it). Address the hepatotoxins: STOP the over-the-counter herbal weight-loss supplement, limit acetaminophen, and counsel alcohol avoidance. Co-manage AMIODARONE with cardiology — do NOT stop it unilaterally given his atrial fibrillation and stroke risk; weigh alternatives only with cardiology, and treat the amiodarone-associated subclinical hypothyroidism (TSH 7.8) with levothyroxine and serial thyroid monitoring. Refer to HEPATOLOGY because non-invasive testing shows advanced (≈F3) fibrosis; institute HCC and variceal surveillance once cirrhosis is suspected, and vaccinate against hepatitis A and B. DISPOSITION / SAFE DISCHARGE: this is appropriate for OUTPATIENT management — perform medication reconciliation, give written instructions to stop the supplement, arrange close follow-up to re-trend LFTs after dechallenge and to coordinate hepatology/cardiology/endocrine care, and give clear return precautions. ESCALATE to urgent hepatology or admission if he develops jaundice, a rising bilirubin or INR (synthetic dysfunction), encephalopathy/asterixis, GI bleeding, or new ascites.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Lifestyle weight loss (diet and exercise)",
-            "points": 7
+            "points": 5
+          },
+          {
+            "item": "Safe outpatient disposition with med reconciliation, close LFT follow-up, return precautions/escalation criteria",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Manage metabolic comorbidities (DM/lipids/HTN)",
+            "item": "Manage metabolic comorbidities (intensify DM control, lipids/HTN, OSA) and CONTINUE statin",
             "points": 5
           },
           {
-            "item": "Alcohol avoidance",
+            "item": "Stop herbal supplement, limit acetaminophen, alcohol avoidance",
+            "points": 4
+          },
+          {
+            "item": "Co-manage amiodarone with cardiology and treat amiodarone-associated hypothyroidism",
             "points": 3
           },
           {
-            "item": "Stage fibrosis (FIB-4) and refer if advanced",
+            "item": "Hepatology referral for advanced fibrosis, surveillance, and vaccination (HAV/HBV)",
             "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "GLP-1 / metabolic therapy and vaccination",
+            "item": "GLP-1 / metabolic therapy",
             "points": 2
           }
         ],
         "penalties": [
           {
-            "item": "Withholding statin unnecessarily",
+            "item": "Withholding/stopping statin unnecessarily",
+            "points": -3
+          },
+          {
+            "item": "Abruptly stopping amiodarone without cardiology",
+            "points": -2
+          },
+          {
+            "item": "Discharging without recognizing advanced fibrosis / no hepatology referral",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Lifestyle weight loss (diet and exercise)"
+        "Lifestyle weight loss (diet and exercise)",
+        "Safe outpatient disposition with med reconciliation, close LFT follow-up, return precautions/escalation criteria"
       ],
       "optionalActions": [
-        "Manage metabolic comorbidities (DM/lipids/HTN)",
-        "Alcohol avoidance",
-        "Stage fibrosis (FIB-4) and refer if advanced",
-        "GLP-1 / metabolic therapy and vaccination"
+        "Manage metabolic comorbidities (intensify DM control, lipids/HTN, OSA) and CONTINUE statin",
+        "Stop herbal supplement, limit acetaminophen, alcohol avoidance",
+        "Co-manage amiodarone with cardiology and treat amiodarone-associated hypothyroidism",
+        "Hepatology referral for advanced fibrosis, surveillance, and vaccination (HAV/HBV)",
+        "GLP-1 / metabolic therapy"
       ],
       "unsafeActions": [
-        "Withholding statin unnecessarily"
+        "Withholding/stopping statin unnecessarily",
+        "Abruptly stopping amiodarone without cardiology",
+        "Discharging without recognizing advanced fibrosis / no hepatology referral"
       ],
-      "consults": [],
-      "disposition": "Outpatient",
+      "consults": [
+        "Hepatology",
+        "Cardiology",
+        "Endocrinology"
+      ],
+      "disposition": "Outpatient (hepatology referral for advanced fibrosis)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "MASLD / NAFLD",
@@ -352,14 +403,16 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "drug_use",
       "alcohol_use",
-      "tobacco_use"
+      "supplement_use",
+      "tobacco_use",
+      "drug_use"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "48-year-old man, asymptomatic, well-appearing, somewhat surprised. Good historian.",
+    "communicationStyle": "answers directly but does not volunteer extra information, and downplays the herbal supplement",
+    "affect": "56-year-old man, asymptomatic apart from mild fatigue, worried the new heart medicine is harming his liver. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the amiodarone/supplement timeline, alcohol amount, or metabolic history unless directly asked",
+      "Treats the herbal weight-loss supplement as 'natural' and only mentions it when asked about supplements/over-the-counter products",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -367,18 +420,36 @@
   },
   "historyTriggers": [
     {
-      "id": "drug_use",
-      "category": "substance_use",
+      "id": "medications",
+      "category": "meds",
       "triggerConcepts": [
-        "drug use",
-        "substance use",
-        "injection drugs",
-        "recreational drugs",
-        "iv drug use"
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "new medication",
+        "amiodarone",
+        "heart medication"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
-      "points": 4,
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "supplement_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "supplements",
+        "herbal",
+        "over the counter",
+        "vitamins",
+        "weight loss product",
+        "green tea extract",
+        "fat burner"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -397,6 +468,21 @@
       "hiddenUntilAsked": true
     },
     {
+      "id": "drug_use",
+      "category": "substance_use",
+      "triggerConcepts": [
+        "drug use",
+        "substance use",
+        "injection drugs",
+        "recreational drugs",
+        "iv drug use"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
       "id": "tobacco_use",
       "category": "substance_use",
       "triggerConcepts": [
@@ -407,7 +493,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -417,7 +503,9 @@
         "when did it start",
         "onset",
         "how long",
-        "duration"
+        "when were they first abnormal",
+        "what changed",
+        "around that time"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -457,7 +545,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fatigue",
+        "energy",
+        "heat intolerance",
+        "thyroid symptoms",
+        "jaundice"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -484,20 +577,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "diabetes",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -510,7 +592,23 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "previous liver",
+        "fatty liver before"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "runs in the family",
+        "hemochromatosis",
+        "liver disease in family"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -520,25 +618,58 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_shifting_dullness_finding_1",
-      "finding": "Abdomen: soft; mild hepatomegaly if examined; NO stigmata of chronic liver disease (no spider angiomata/ascites).",
+      "id": "assess_for_jaundice_finding_1",
+      "finding": "General: obese, well-appearing, NO scleral icterus and NO jaundice.",
       "revealedBy": [
-        "assess_shifting_dullness"
+        "assess_for_jaundice",
+        "inspect_sclera"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "assess_hepatomegaly_finding_2",
+      "finding": "Abdomen: soft; mild hepatomegaly with a smooth liver edge if examined; NO tenderness.",
+      "revealedBy": [
+        "assess_hepatomegaly",
+        "palpate_ruq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No hepatomegaly appreciated."
+    },
+    {
+      "id": "assess_shifting_dullness_finding_3",
+      "finding": "No shifting dullness and no fluid wave — NO ascites (argues against decompensated cirrhosis).",
+      "revealedBy": [
+        "assess_shifting_dullness",
+        "assess_fluid_wave"
       ],
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No ascites."
     },
     {
-      "id": "inspect_sclera_finding_2",
-      "finding": "General: obese, well-appearing, no jaundice.",
+      "id": "assess_splenomegaly_finding_4",
+      "finding": "Spleen tip borderline palpable / mildly enlarged — a subtle clue to early portal hypertension (concordant with the low platelets).",
       "revealedBy": [
-        "inspect_sclera",
-        "assess_for_jaundice"
+        "assess_splenomegaly"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No jaundice."
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "assess_asterixis_finding_5",
+      "finding": "Alert and oriented; NO asterixis (no encephalopathy).",
+      "revealedBy": [
+        "assess_asterixis",
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No asterixis."
     }
   ],
   "overallScoring": {
@@ -551,62 +682,75 @@
   },
   "caseSummary": {
     "finalDiagnosis": "NAFLD / NASH",
-    "diagnosticFramework": "48M with obesity and type 2 diabetes is referred for mildly elevated liver enzymes found on routine screening; he feels well. The diagnosis is NAFLD / NASH, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "56M with obesity, poorly controlled type 2 diabetes, dyslipidemia, hypertension, OSA, and paroxysmal atrial fibrillation on amiodarone is referred for an ALT-predominant transaminitis that rose over a few months. The diagnosis is NAFLD / NASH with likely advanced (≈F3) fibrosis, reached by recognizing a genuine competing diagnosis of drug/supplement-induced liver injury (amiodarone steatohepatitis and an herbal green-tea-extract supplement started before the rise), excluding viral and other causes, integrating his own EKG (atrial fibrillation on amiodarone), addressing concurrent multi-system abnormalities (subclinical hypothyroidism from amiodarone, dysmetabolic hyperferritinemia, thrombocytopenia), and committing while planning the dechallenge that discriminates the fork.",
     "keyHistoryClues": [
-      "drug use"
+      "medications",
+      "supplement use"
     ],
     "keyPhysicalExamFindings": [
-      "Abdomen: soft; mild hepatomegaly if examined; NO stigmata of chronic liver disease (no spider angiomata/ascites).",
-      "General: obese, well-appearing, no jaundice."
+      "General: obese, well-appearing, NO scleral icterus and NO jaundice.",
+      "Abdomen: soft; mild hepatomegaly with a smooth liver edge if examined; NO tenderness.",
+      "No shifting dullness and no fluid wave — NO ascites (argues against decompensated cirrhosis).",
+      "Spleen tip borderline palpable / mildly enlarged — a subtle clue to early portal hypertension (concordant with the low platelets).",
+      "Alert and oriented; NO asterixis (no encephalopathy)."
     ],
     "keyDiagnosticFindings": [
       "LFTs",
       "ViralSerologies",
       "Metabolic",
+      "ThyroidIron",
       "OtherCauses",
+      "CBC",
       "US",
       "Fibrosis"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by NAFLD / NASH while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to NAFLD / NASH and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the metabolic syndrome plus the new cardiac drug and supplement.",
+      "Elicit the focused history — especially the full medication/supplement reconciliation, the timeline of the enzyme rise, and the alcohol quantity — only on direct questioning.",
+      "Perform the targeted physical exam, looking for jaundice, hepatomegaly, ascites, splenomegaly, and asterixis.",
+      "Build a differential with a real fork: NAFLD/NASH versus drug/supplement-induced liver injury (amiodarone + herbal), while excluding viral and other causes and naming three drug/supplement mechanisms.",
+      "Order a focused workup; integrate the patient's own EKG (atrial fibrillation on amiodarone) and interpret the CXR drill and the multi-system labs.",
+      "Commit to NAFLD/NASH with advanced fibrosis, resolve the fork by dechallenge (stop the supplement, co-manage amiodarone), and manage with metabolic optimization, hepatology referral, and a safe outpatient disposition with escalation criteria."
     ],
     "commonPitfalls": [
-      "Withholding statin unnecessarily"
+      "Anchoring on NAFLD and ignoring the amiodarone/supplement timeline",
+      "Withholding or stopping the statin out of unfounded fear of liver injury",
+      "Abruptly stopping amiodarone without cardiology in a patient with atrial fibrillation",
+      "Discharging without recognizing advanced (F3) fibrosis or arranging hepatology referral"
     ],
     "managementPearls": [
-      "Lifestyle weight loss (diet and exercise)"
+      "Lifestyle weight loss (diet and exercise) with metabolic optimization",
+      "Stop the herbal supplement and dechallenge; refer to hepatology for advanced fibrosis"
     ],
     "criticalHistoryItems": [
-      "drug_use"
+      "medications",
+      "supplement_use"
     ],
     "criticalExamItems": [],
     "criticalWorkupItems": [
-      "Viral hepatitis serologies B and C"
+      "Viral hepatitis serologies B and C",
+      "Non-invasive fibrosis staging (FIB-4 and elastography)"
     ],
     "criticalInterpretationItems": [
-      "Wolff-Parkinson-White pre-excitation pattern.",
+      "Atrial fibrillation with a controlled ventricular response (amiodarone effect, mild QT prolongation).",
       "Apical pneumothorax (pleural line, absent peripheral lung markings)."
     ],
     "criticalManagementItems": [
-      "Lifestyle weight loss (diet and exercise)"
+      "Lifestyle weight loss (diet and exercise)",
+      "Safe outpatient disposition with med reconciliation, close LFT follow-up, return precautions/escalation criteria"
     ],
     "keyImageInterpretationFindings": [
-      "Wolff-Parkinson-White pre-excitation pattern.",
+      "Atrial fibrillation with a controlled ventricular response (amiodarone effect, mild QT prolongation).",
       "Apical pneumothorax (pleural line, absent peripheral lung markings)."
     ],
     "criticalImageInterpretationFindings": [
-      "Wolff-Parkinson-White pre-excitation pattern.",
+      "Atrial fibrillation with a controlled ventricular response (amiodarone effect, mild QT prolongation).",
       "Apical pneumothorax (pleural line, absent peripheral lung markings)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When the patient is on amiodarone, an integrated EKG is part of the liver puzzle — the drug that controls the rhythm can also cause the steatohepatitis.",
+      "An irregularly irregular rhythm with absent P waves is atrial fibrillation — do not call it normal sinus.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -617,11 +761,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's concern about the new heart medication",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, supplements)",
         "points": 1
       },
       {
@@ -636,8 +780,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated EKG (atrial fibrillation on amiodarone); CXR standalone interpretation drill",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

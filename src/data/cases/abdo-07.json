@@ -2,50 +2,53 @@
   "id": "abdo-07",
   "category": "Abdominal Pain",
   "difficulty": "hard",
-  "title": "Sudden tearing belly and back pain with near-collapse",
+  "title": "Sudden tearing flank and belly pain with hematuria and near-collapse in an anticoagulated smoker",
   "diagnosis": "Ruptured abdominal aortic aneurysm",
   "chart": {
     "ageSex": "74M",
-    "cc": "Sudden severe abdominal and back pain",
-    "oneLiner": "74M smoker with hypertension presents with sudden, severe, tearing abdominal and flank/back pain and a near-syncopal episode.",
+    "cc": "Sudden severe flank and abdominal pain",
+    "oneLiner": "74M smoker with hypertension, COPD, CKD, BPH, and paroxysmal atrial fibrillation on apixaban presents with sudden, severe, tearing left flank and abdominal pain radiating to the back and groin, a near-syncopal episode, and blood on his urine dip — referred in as 'renal colic'.",
     "vitals": {
-      "BP": "88/54",
-      "HR": "122",
+      "BP": "86/52",
+      "HR": "128",
       "RR": "24",
-      "Temp": "36.7°C",
+      "Temp": "36.6°C",
       "SpO2": "95% RA"
     },
     "timer": 180
   },
-  "opening": "It hit me all of a sudden — a tearing pain in my belly that goes straight through to my back, and I nearly passed out.",
-  "patientFile": "PERSONA: 74-year-old man, pale, clammy, and clearly unwell. Anxious but cooperative.\n\nHPI: SUDDEN onset ~1h ago of severe, constant, tearing/ripping abdominal pain radiating to the flank and back. Felt lightheaded and nearly fainted when standing. NO trauma. NO vomiting blood or black stools. NO fever or urinary symptoms. He thinks he may have felt a 'pulsing' lump in his belly over recent months but never had it checked (only if asked about abdominal swelling/lumps or prior screening).\nPMH: long-standing hypertension (poorly controlled), known COPD, hyperlipidemia, peripheral arterial disease. He recalls being told years ago of a 'bulge on the main blood vessel' that needed watching but missed follow-up (only if asked about aneurysm/prior scans/screening). MEDS: amlodipine (admits poor adherence), atorvastatin, albuterol inhaler. SOCIAL: 50 pack-year smoker, still smoking; occasional alcohol. FAMILY: father died of a 'burst blood vessel in the belly' (only if asked about family history).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, diaphoretic, in distress, restless.\n- Vitals: BP 88/54, HR 122, RR 24, 36.7°C, SpO2 95% RA.\n- Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.\n- Cardiac: tachycardic, regular, no murmur.\n- Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior aneurysm/'bulge' history or the pulsing lump unless asked about aneurysms, prior scans/screening, or abdominal swelling.\n- Do NOT volunteer the family history of a 'burst blood vessel' unless asked about family history.\n- The pulsatile expansile mass, hypotension/tachycardia, and asymmetric pulses are key — reveal the mass only if the abdomen is palpated and the pulses only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "It hit me all of a sudden — a tearing pain in my left side and belly that goes through to my back and down to my groin, and I nearly passed out. The clinic said it was probably a kidney stone.",
+  "patientFile": "PERSONA: 74-year-old man, pale, clammy, and clearly unwell. Anxious but cooperative. He keeps repeating that the urgent-care clinic told him it was 'just a kidney stone' because there was blood on the dipstick.\n\nHPI: SUDDEN onset ~90 min ago of severe, constant, tearing/ripping LEFT flank and abdominal pain radiating to the back and down toward the groin. Felt lightheaded and nearly fainted when he stood up. He noticed a little blood when he passed urine, which is why the clinic thought 'stone'. NO trauma. NO vomiting blood or black stools. NO fever, no burning with urination, no prior stones. The pain came on at maximum intensity instantly (not waxing-and-waning/colicky like he'd imagine a stone). He thinks he may have felt a 'pulsing' lump in his belly over recent months but never had it checked (only if asked about abdominal swelling/lumps or prior screening).\nPMH: long-standing hypertension (poorly controlled), COPD, hyperlipidemia, peripheral arterial disease, chronic kidney disease (stage 3), benign prostatic hyperplasia, and paroxysmal atrial fibrillation. He recalls being told a few years ago of a 'bulge on the main blood vessel in the belly' that needed watching but he missed the follow-up scan (only if asked about aneurysm/prior scans/screening). MEDS (reveal the list and adherence only when asked about medications): amlodipine and lisinopril for blood pressure (admits poor adherence), atorvastatin, albuterol inhaler, APIXABAN (a blood thinner) for his atrial fibrillation — he took his dose this morning, and TAMSULOSIN for his prostate. ALLERGIES: none. SOCIAL: 50 pack-year smoker, still smoking; occasional alcohol. FAMILY: father died of a 'burst blood vessel in the belly' (only if asked about family history).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, diaphoretic, in distress, restless.\n- Vitals: BP 86/52, HR 128 (irregularly irregular), RR 24, 36.6°C, SpO2 95% RA.\n- Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness extending to the left flank; mild distension; bowel sounds present but reduced. No rebound or rigidity early.\n- Cardiac: tachycardic and IRREGULARLY irregular, no murmur.\n- Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; faint left flank/periumbilical bruising.\n- CVA: mild left costovertebral-angle tenderness (overlaps with the 'renal colic' story but does not exclude the aneurysm).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior aneurysm/'bulge' history or the pulsing lump unless asked about aneurysms, prior scans/screening, or abdominal swelling.\n- Do NOT volunteer the apixaban/blood thinner or tamsulosin unless asked about medications; if asked, give the full list in lay language ('a blood thinner for my heart rhythm', 'a pill for my prostate').\n- Do NOT volunteer the family history of a 'burst blood vessel' unless asked about family history.\n- The pulsatile expansile mass, hypotension/tachycardia, irregular pulse, and asymmetric pulses are key — reveal the mass only if the abdomen is palpated and the pulses only if examined.\n- The blood in the urine and the flank pain make 'kidney stone' tempting; do not correct the student, just answer what is asked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
   "dx": {
     "labs": {
-      "POCUS_aorta": "Bedside ultrasound (FAST/aorta): infrarenal abdominal aorta dilated to ~7 cm with surrounding/retroperitoneal free fluid — diagnostic of a leaking/ruptured AAA.",
-      "CBC": "Hgb 9.8 (dropping from baseline), WBC 14.0, Plt 240 — consistent with acute blood loss.",
-      "BMP": "Cr 1.6 (acute kidney injury from hypoperfusion); electrolytes otherwise notable for evolving lactic acidosis.",
-      "Lactate": "Elevated (e.g., 4.2) — reflects hypoperfusion/hemorrhagic shock.",
-      "Coags_Type": "Type & crossmatch sent; coagulation panel drawn to guide massive transfusion. INR mildly elevated.",
-      "CTA_abdomen": "CT angiography (only if hemodynamically stabilizable): infrarenal AAA ~7 cm with active contrast extravasation and retroperitoneal hematoma — confirms rupture and maps anatomy for repair."
+      "POCUS_aorta": "Bedside ultrasound (FAST/aorta): infrarenal abdominal aorta dilated to ~7.5 cm with surrounding/retroperitoneal free fluid — diagnostic of a leaking/ruptured AAA. The kidneys show no hydronephrosis and no obstructing stone.",
+      "CBC": "Hgb 9.6 (down from a documented baseline of 13.4), WBC 13.8, Plt 232 — consistent with acute blood loss.",
+      "BMP": "Na 138, K 4.6, Cl 102, HCO3 16 (anion gap = 138 − [102 + 16] = 20, an elevated-gap metabolic acidosis from lactate). Cr 2.4, up from a CKD baseline of 1.5 — acute kidney injury from hypoperfusion superimposed on chronic kidney disease. BUN 38.",
+      "Lactate": "4.8 mmol/L — reflects hypoperfusion/hemorrhagic shock and accounts for the elevated anion gap.",
+      "Coags_Type": "Type & crossmatch sent and massive-transfusion protocol staged. He is on apixaban (a factor-Xa inhibitor) taken this morning: PT/INR 1.6 and an anti-Xa level is elevated, so he is therapeutically anticoagulated — reversal will be needed.",
+      "UA": "Dipstick 2+ blood; microscopy 8–12 RBC/hpf, no significant pyuria, no nitrites, no crystals — the microscopic hematuria explains the 'renal colic' referral but is non-specific (the aneurysm can irritate/compress the ureter); it does NOT confirm a stone.",
+      "CTA_abdomen": "CT angiography (only if hemodynamically stabilizable): infrarenal AAA ~7.5 cm with active contrast extravasation and a left-sided retroperitoneal hematoma — confirms rupture and maps anatomy for repair. NO ureteral calculus and NO hydronephrosis."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
-      "verify": "From the LITFL 'Sinus Tachycardia' library page — download an example tracing that matches: Sinus tachycardia, no acute ischemic changes (compensatory to hypovolemia) and self-host with credit to litfl.com.",
+      "litflStudyN": 2,
+      "integrated": true,
+      "findings": "Atrial fibrillation with rapid ventricular response (~125 bpm): irregularly irregular QRS complexes with no organized P waves and a fibrillatory baseline; narrow QRS; no acute ST-elevation. The rapid AF reflects this anticoagulated patient's known paroxysmal atrial fibrillation now driven faster by pain and hypovolemia, NOT a primary ACS.",
+      "verify": "From the LITFL 'Atrial Fibrillation' library page — use an example tracing showing atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves) without acute ST-elevation; self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia without acute ischemic changes",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response, no acute ST-elevation",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12-lead no ischemia"
+        "atrial fibrillation rapid ventricular response ECG",
+        "AF with RVR 12-lead no ST elevation"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 70-year-old man presents pale and diaphoretic with a fast heart rate after a syncopal episode."
+      "clinicalVignette": "A 74-year-old man on a blood thinner for atrial fibrillation presents pale and diaphoretic with an irregularly irregular fast pulse after a near-syncopal episode."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
@@ -61,7 +64,7 @@
         "chest radiograph no free air no mediastinal widening"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 68-year-old man with sudden abdominal and back pain has a chest film to exclude other causes."
+      "clinicalVignette": "A 74-year-old man with sudden flank and back pain has a chest film to exclude other causes."
     }
   },
   "revealKeys": [
@@ -70,6 +73,7 @@
     "BMP",
     "Lactate",
     "Coags_Type",
+    "UA",
     "CTA_abdomen",
     "ekg",
     "cxr"
@@ -84,9 +88,9 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Ruptured abdominal aortic aneurysm (leading & CANT-MISS,9; accepts ruptured/leaking AAA). Aortic dissection (CANT-MISS,4). Perforated viscus (CANT-MISS,3). Renal colic / nephrolithiasis (core,2). Acute mesenteric ischemia (core,2). Names ruptured AAA with the key clue — sudden tearing pain + pulsatile mass + hypotension in an elderly smoker (core,5).",
-      "idealAnswer": "Leading diagnosis: Ruptured abdominal aortic aneurysm. Must-not-miss diagnoses to exclude: Aortic dissection; Perforated viscus. Also reasonable: Renal colic / nephrolithiasis; Acute mesenteric ischemia.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). This patient was referred as 'renal colic' because of flank pain and hematuria: explicitly name THREE mechanisms by which a ruptured abdominal aortic aneurysm can mimic renal colic or produce this flank-pain-plus-shock picture.",
+      "rubric": "Ruptured abdominal aortic aneurysm (leading & CANT-MISS,9; accepts ruptured/leaking AAA). Aortic dissection (CANT-MISS,3). Renal colic / nephrolithiasis is the GENUINE competing referral diagnosis to confront and resolve against, not the answer (CANT-MISS to consider AND exclude,3). Perforated viscus (core,2). Acute mesenteric ischemia (core,2). THREE mechanisms by which a ruptured AAA mimics renal colic / causes flank pain + shock — e.g. (1) retroperitoneal hematoma/blood irritating or compressing the ureter producing flank pain and microscopic hematuria; (2) the expanding/leaking aneurysm directly causing tearing flank-and-back pain radiating to the groin; (3) hemorrhagic shock causing the near-syncope and hypotension — and that hematuria does NOT confirm a stone (core,3). Names ruptured AAA with the key clue — sudden tearing pain + pulsatile mass + hypotension in an elderly smoker (core,3). PENALTY: anchoring on renal colic / a kidney stone and missing the AAA (-4).",
+      "idealAnswer": "Leading diagnosis: Ruptured abdominal aortic aneurysm — sudden tearing flank/abdominal pain radiating to back and groin, a pulsatile expansile abdominal mass, hypotension and tachycardia, and a near-syncopal episode in a 74-year-old smoker with known PAD and a prior 'bulge on the aorta'. The genuine competing diagnosis is renal colic / nephrolithiasis, which is exactly how he was referred (flank pain + hematuria) — it must be actively excluded, NOT accepted. Other must-not-miss: aortic dissection; perforated viscus; acute mesenteric ischemia. THREE mechanisms by which a ruptured AAA mimics renal colic / produces this picture: (1) a retroperitoneal hematoma irritates or compresses the ureter, causing flank pain and microscopic hematuria that masquerade as a stone; (2) the expanding/leaking aneurysm itself produces tearing flank-and-back pain radiating to the groin; (3) ongoing hemorrhage causes hypovolemic shock with hypotension and near-syncope. Microscopic hematuria does NOT confirm a stone, and any elderly patient with flank pain + hypotension has a ruptured AAA until proven otherwise.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -96,16 +100,16 @@
           },
           {
             "item": "Aortic dissection",
-            "points": 4
+            "points": 3
           },
           {
-            "item": "Perforated viscus",
+            "item": "Renal colic / nephrolithiasis considered AND explicitly excluded (genuine competing referral diagnosis)",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Renal colic / nephrolithiasis",
+            "item": "Perforated viscus",
             "points": 2
           },
           {
@@ -113,19 +117,28 @@
             "points": 2
           },
           {
+            "item": "Names THREE mechanisms by which a ruptured AAA mimics renal colic / causes flank pain + shock (ureteral irritation/hematuria; aneurysm pain to groin; hemorrhagic shock) and that hematuria does not confirm a stone",
+            "points": 3
+          },
+          {
             "item": "Names ruptured AAA with the key clue — sudden tearing pain + pulsatile mass + hypotension in an elderly smoker",
-            "points": 5
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on renal colic / a kidney stone and missing the AAA",
+            "points": -4
+          }
+        ]
       },
       "mustNotMiss": [
         "Aortic dissection",
+        "Renal colic / nephrolithiasis (must be excluded, not accepted)",
         "Perforated viscus"
       ],
       "acceptableAlternatives": [
-        "Renal colic / nephrolithiasis",
         "Acute mesenteric ischemia"
       ]
     },
@@ -135,8 +148,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Bedside aortic ultrasound / POCUS (CANT-MISS,5). Type & crossmatch + activate massive transfusion (CANT-MISS,4). CT angiography of the abdomen if hemodynamically stabilizable (3). CBC (2). BMP / lactate for perfusion (1). PENALTY: sending an unstable patient to CT or delaying repair for non-essential imaging (-3); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; Pocus aorta; CBC; BMP; Lactate; Coags type; CTA abdomen.",
+      "rubric": "Bedside aortic ultrasound / POCUS at the bedside in an unstable patient (CANT-MISS,5). Type & crossmatch + activate massive transfusion AND check coags/anti-Xa given apixaban (CANT-MISS,4). CT angiography of the abdomen ONLY if hemodynamically stabilizable (2). CBC (1). BMP / lactate for perfusion and anion gap (1). Urinalysis — but to characterize the hematuria, not to 'rule in' a stone (1). EKG and CXR (1). PENALTY: sending an unstable patient to CT or delaying repair for non-essential imaging (-3); accepting the urgent-care 'renal colic' label and ordering a non-contrast stone-protocol CT / discharging on tamsulosin (-3).",
+      "idealAnswer": "Order: bedside aortic POCUS first (he is unstable); EKG; CXR; CBC; BMP; Lactate; UA; Coags/type & crossmatch with anti-Xa level (he is on apixaban) and stage the massive-transfusion protocol; CTA abdomen ONLY if he can be stabilized. Do NOT route an unstable patient to CT, and do NOT accept the outside 'renal colic' label and order a stone-protocol study or discharge on medical expulsive therapy.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,42 +158,34 @@
             "points": 5
           },
           {
-            "item": "Type & crossmatch / activate massive transfusion",
+            "item": "Type & crossmatch / activate massive transfusion and check coags/anti-Xa given apixaban",
             "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Pocus aorta",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BMP",
-            "points": 2
+            "item": "BMP and Lactate",
+            "points": 1
           },
           {
-            "item": "Lactate",
-            "points": 2
+            "item": "UA to characterize the hematuria (not to rule in a stone)",
+            "points": 1
           },
           {
-            "item": "Coags type",
-            "points": 2
-          },
-          {
-            "item": "CTA abdomen",
-            "points": 2
+            "item": "CTA abdomen only if hemodynamically stabilizable",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -188,16 +193,21 @@
           {
             "item": "sending an unstable patient to CT or delaying definitive repair for non-essential imaging",
             "points": -3
+          },
+          {
+            "item": "accepting the 'renal colic' label — ordering a stone-protocol CT or discharging on tamsulosin",
+            "points": -3
           }
         ]
       },
       "requiredTests": [
         "Bedside aortic ultrasound (POCUS)",
-        "Type & crossmatch / activate massive transfusion"
+        "Type & crossmatch / activate massive transfusion and check coags/anti-Xa given apixaban"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "sending an unstable patient to CT or delaying definitive repair for non-essential imaging"
+        "sending an unstable patient to CT or delaying definitive repair for non-essential imaging",
+        "accepting the 'renal colic' label — ordering a stone-protocol CT or discharging on tamsulosin"
       ],
       "orderSensitiveActions": [
         "sending an unstable patient to CT or delaying definitive repair for non-essential imaging"
@@ -209,47 +219,40 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: identifies sinus tachycardia (7); recognizes it as compensatory to hypovolemia/hemorrhage rather than a primary cardiac event (4); no acute STEMI (2); systematic read (2). PENALTY: over-calling ischemia / treating as ACS (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Interpret it systematically, then state how it fits the clinical picture and how it changes your management.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (irregularly irregular, no organized P waves, fibrillatory baseline, rate ~125), narrow QRS, NO acute ST-elevation or ischemic changes. CREDIT: identifies atrial fibrillation with RVR — rhythm AND rate (7); recognizes it as this anticoagulated patient's known paroxysmal AF driven faster by pain/hypovolemia rather than a primary ACS, so it is compensatory/demand-related (4); integrates that AF on apixaban is WHY he is therapeutically anticoagulated and will need reversal for a ruptured AAA — the rhythm is not the emergency, the rupture is (2); systematic read, no acute STEMI (2). PENALTY: calling it a primary ACS / activating the cath lab, or aggressively rate/rhythm-controlling (e.g. a fluid-sparing cardioversion-first reflex) and ignoring the hemorrhage (-3).",
       "keyFindings": [
-        "identifies sinus tachycardia",
-        "recognizes it as compensatory to hypovolemia/hemorrhage",
-        "no acute STEMI",
+        "atrial fibrillation with rapid ventricular response (rhythm and rate)",
+        "no acute ST-elevation / not a primary ACS",
+        "recognizes AF is compensatory/demand-driven by pain and hypovolemia",
+        "integrates that AF on apixaban means therapeutic anticoagulation requiring reversal for the ruptured AAA",
         "systematic read"
       ],
       "criticalFindings": [
-        "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event."
+        "Atrial fibrillation with rapid ventricular response (~125 bpm): irregularly irregular QRS with no organized P waves and a fibrillatory baseline, narrow QRS, and NO acute ST-elevation — the patient's known paroxysmal AF driven faster by pain and hypovolemia, and the reason he is anticoagulated on apixaban (which must be reversed for the ruptured AAA)."
       ],
       "commonMistakes": [
-        "over-calling ischemia and treating this as ACS"
+        "calling this a primary ACS / activating the cath lab for the tachycardia",
+        "missing the atrial fibrillation or calling the rhythm sinus",
+        "reflexively cardioverting/rate-controlling and ignoring the hemorrhage"
       ],
-      "idealAnswer": "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "idealAnswer": "Atrial fibrillation with rapid ventricular response at ~125 bpm — irregularly irregular QRS complexes, no organized P waves, a fibrillatory baseline, narrow QRS, and NO acute ST-elevation or ischemic changes. This is his known paroxysmal atrial fibrillation driven faster by pain and hypovolemic shock, a compensatory/demand response rather than a primary cardiac event. Critically, the AF is why he takes apixaban, so he is therapeutically anticoagulated — that anticoagulation will worsen the retroperitoneal hemorrhage and must be reversed. The rhythm is not the emergency; the ruptured AAA is. Do not activate the cath lab or chase rate/rhythm control at the expense of resuscitation and definitive repair.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
-            "points": 7
-          }
+          "Atrial fibrillation with rapid ventricular response (~125 bpm): irregularly irregular QRS with no organized P waves and a fibrillatory baseline, narrow QRS, and NO acute ST-elevation — the patient's known paroxysmal AF driven faster by pain and hypovolemia, and the reason he is anticoagulated on apixaban (which must be reversed for the ruptured AAA)."
         ],
         "coreActions": [
-          {
-            "item": "recognizes it as compensatory to hypovolemia/hemorrhage",
-            "points": 4
-          },
-          {
-            "item": "no acute STEMI",
-            "points": 2
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "atrial fibrillation with rapid ventricular response (rhythm and rate)",
+          "no acute ST-elevation / not a primary ACS",
+          "recognizes AF is compensatory/demand-driven by pain and hypovolemia",
+          "integrates that AF on apixaban means therapeutic anticoagulation requiring reversal for the ruptured AAA",
+          "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "over-calling ischemia and treating this as ACS",
+            "label": "calls it a primary ACS / cardioverts or rate-controls and ignores the hemorrhage",
             "points": -3
           }
         ]
@@ -277,21 +280,16 @@
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA.",
-            "points": 5
-          }
+          "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal/nonspecific film",
-            "points": 5
-          }
+          "identifies a normal/nonspecific film",
+          "excludes free air and a widened mediastinum"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing pathology",
+            "label": "inventing pathology",
             "points": -2
           }
         ]
@@ -301,9 +299,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the hypotension, dropping hemoglobin, and a bedside ultrasound showing a 7 cm aorta with free fluid, what is your diagnosis and reasoning?",
-      "rubric": "Ruptured (leaking) abdominal aortic aneurysm (6). Links sudden tearing pain + pulsatile mass + hypotension + POCUS findings (dilated aorta with free/retroperitoneal fluid); recognizes this as a surgical emergency and excludes dissection/perforation (4).",
-      "idealAnswer": "Ruptured (leaking) abdominal aortic aneurysm — the sudden tearing pain with a pulsatile abdominal mass and hypotension in an elderly smoker, plus a bedside POCUS showing a 7 cm aorta with free fluid and a dropping hemoglobin, is diagnostic. This is a surgical emergency; dissection and perforated viscus are excluded.",
+      "prompt": "Given the hypotension, dropping hemoglobin, an irregularly irregular rhythm on the EKG, a bedside ultrasound showing a 7.5 cm aorta with free fluid and no hydronephrosis, and only microscopic hematuria on the UA, what is your diagnosis and reasoning? Address what discriminated this from the 'renal colic' he was referred with.",
+      "rubric": "Ruptured (leaking) abdominal aortic aneurysm (6). Links sudden tearing flank/back pain + pulsatile mass + hypotension + POCUS (7.5 cm aorta with retroperitoneal fluid, NO hydronephrosis or stone) + dropping Hgb; explicitly resolves the renal-colic fork — the microscopic hematuria is non-specific ureteral irritation, not a stone, and the absence of hydronephrosis plus the pulsatile mass and shock confirm rupture; integrates the AF/apixaban as the anticoagulation that worsens bleeding; recognizes a surgical emergency and excludes dissection/perforation (4).",
+      "idealAnswer": "Ruptured (leaking) abdominal aortic aneurysm. The sudden tearing flank/abdominal pain radiating to the back and groin with a pulsatile expansile mass and hypotension in an elderly smoker, plus a bedside POCUS showing a 7.5 cm aorta with retroperitoneal free fluid and a falling hemoglobin, is diagnostic. The 'renal colic' fork is resolved AGAINST a stone: the hematuria is only microscopic and non-specific (the retroperitoneal hematoma irritates the ureter), there is NO hydronephrosis or calculus on ultrasound, and the pulsatile mass, shock, and instant-onset tearing pain do not fit a stone. His atrial fibrillation on apixaban means he is therapeutically anticoagulated, which is worsening the hemorrhage and must be reversed. This is a surgical emergency; aortic dissection and perforated viscus are excluded.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -313,6 +311,7 @@
       },
       "mustNotMiss": [
         "Aortic dissection",
+        "Renal colic / nephrolithiasis (excluded)",
         "Perforated viscus"
       ],
       "acceptableAlternatives": [
@@ -323,66 +322,81 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH abdominal/vascular emergency ('can't-miss' ruptured AAA): immediate STAT vascular surgery consult for emergent open or endovascular (EVAR) repair (CANT-MISS,7); activate massive transfusion / balanced blood products with permissive hypotension (CANT-MISS,6); large-bore IV access and type-specific/uncrossmatched blood (4); avoid over-resuscitation — target permissive hypotension (SBP ~70-90 / mentating) until repair (4); NPO, continuous monitoring, two large-bore IVs, OR activation (2); analgesia and reverse anticoagulation/coagulopathy (2). PENALTY: aggressive crystalloid/large-volume fluid bolus driving up BP and worsening hemorrhage (-4); discharging or delaying surgery for additional imaging in an unstable patient (-3).",
-      "idealAnswer": "Surgical emergency. Immediate STAT vascular surgery consult for emergent open or endovascular (EVAR) repair. Two large-bore IVs, type & crossmatch, activate massive transfusion protocol with balanced blood products. Practice PERMISSIVE HYPOTENSION (target SBP ~70-90 or mentating) and avoid aggressive crystalloid that raises BP and worsens bleeding. Reverse any coagulopathy/anticoagulation, provide analgesia, keep NPO, continuous monitoring, and move to the OR. Do NOT delay definitive repair for non-essential imaging in an unstable patient.",
+      "prompt": "What is your management plan, including your reasoning about disposition — specifically why this patient cannot be safely discharged as 'renal colic'?",
+      "rubric": "Per MGH abdominal/vascular emergency ('can't-miss' ruptured AAA): immediate STAT vascular surgery consult for emergent open or endovascular (EVAR) repair (CANT-MISS,6); activate massive transfusion / balanced blood products with permissive hypotension (CANT-MISS,5); REVERSE apixaban (andexanet alfa or 4-factor PCC) and correct coagulopathy (CANT-MISS,4); large-bore IV access and type-specific/uncrossmatched blood, avoid over-resuscitation — target permissive hypotension (SBP ~70-90 / mentating) until repair (3); explicit safe-disposition reasoning — this patient is NOT dischargeable, the outside 'renal colic' label is a lethal anchor, admit emergently to the OR/ICU and never send home (3); NPO, continuous monitoring, two large-bore IVs, OR activation, analgesia (2); rate-control AF only gently if it persists after volume/blood and is driving instability, without delaying repair (2). PENALTY: discharging or observing as 'renal colic' / medical expulsive therapy (-5); aggressive crystalloid/large-volume fluid bolus driving up BP and worsening hemorrhage (-3); failing to reverse anticoagulation (-3).",
+      "idealAnswer": "Surgical emergency. Immediate STAT vascular surgery consult for emergent open or endovascular (EVAR) repair. Two large-bore IVs, type & crossmatch, activate the massive transfusion protocol with balanced blood products. REVERSE his apixaban urgently (andexanet alfa or 4-factor PCC) and correct any coagulopathy — he took his dose this morning and is therapeutically anticoagulated. Practice PERMISSIVE HYPOTENSION (target SBP ~70-90 or mentating) and avoid aggressive crystalloid that raises BP and worsens bleeding. Keep NPO, continuous monitoring, provide analgesia, and move to the OR. Address the AF only gently (it is demand/shock-driven) and do not let rate/rhythm control delay repair. DISPOSITION: this patient absolutely cannot be discharged or observed as 'renal colic' — the outside label and the microscopic hematuria are a lethal anchoring trap; a missed ruptured AAA sent home is fatal. He is admitted emergently to the OR (then ICU), never to home, and the team is explicitly told the working diagnosis is a ruptured AAA, not a kidney stone.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "STAT vascular surgery consult for emergent open / EVAR repair",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Activate massive transfusion / balanced blood products",
-            "points": 6
+            "item": "Activate massive transfusion / balanced blood products with permissive hypotension",
+            "points": 5
+          },
+          {
+            "item": "Reverse apixaban (andexanet alfa or 4-factor PCC) and correct coagulopathy",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Large-bore IV access and type-specific/uncrossmatched blood",
-            "points": 4
+            "item": "Large-bore IV access and type-specific/uncrossmatched blood; permissive hypotension (SBP ~70-90 / mentating) until repair",
+            "points": 3
           },
           {
-            "item": "Permissive hypotension (target SBP ~70-90 / mentating) until repair",
-            "points": 4
+            "item": "Safe-disposition reasoning — NOT dischargeable, reject the 'renal colic' anchor, admit emergently to OR/ICU, never send home",
+            "points": 3
           },
           {
-            "item": "NPO, continuous monitoring, OR activation",
+            "item": "NPO, continuous monitoring, OR activation, analgesia",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Reverse anticoagulation/coagulopathy and provide analgesia",
+            "item": "Gentle AF rate control only if it persists after volume/blood and drives instability, without delaying repair",
             "points": 2
           }
         ],
         "penalties": [
           {
+            "item": "Discharging or observing as 'renal colic' / medical expulsive therapy",
+            "points": -5
+          },
+          {
             "item": "Aggressive crystalloid bolus raising BP and worsening hemorrhage",
-            "points": -4
+            "points": -3
+          },
+          {
+            "item": "Failing to reverse anticoagulation",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
         "STAT vascular surgery consult for emergent open / EVAR repair",
-        "Activate massive transfusion / balanced blood products"
+        "Activate massive transfusion / balanced blood products with permissive hypotension",
+        "Reverse apixaban (andexanet alfa or 4-factor PCC) and correct coagulopathy"
       ],
       "optionalActions": [
-        "Large-bore IV access and type-specific/uncrossmatched blood",
-        "Permissive hypotension (target SBP ~70-90 / mentating) until repair",
-        "NPO, continuous monitoring, OR activation",
-        "Reverse anticoagulation/coagulopathy and provide analgesia"
+        "Large-bore IV access and type-specific/uncrossmatched blood; permissive hypotension (SBP ~70-90 / mentating) until repair",
+        "Safe-disposition reasoning — NOT dischargeable, reject the 'renal colic' anchor, admit emergently to OR/ICU, never send home",
+        "NPO, continuous monitoring, OR activation, analgesia",
+        "Gentle AF rate control only if it persists after volume/blood and drives instability, without delaying repair"
       ],
       "unsafeActions": [
-        "Aggressive crystalloid bolus raising BP and worsening hemorrhage"
+        "Discharging or observing as 'renal colic' / medical expulsive therapy",
+        "Aggressive crystalloid bolus raising BP and worsening hemorrhage",
+        "Failing to reverse anticoagulation"
       ],
       "consults": [
         "Vascular Surgery",
         "Anesthesia / OR"
       ],
-      "disposition": "Emergent; OR",
+      "disposition": "Emergent; OR then ICU (never discharge)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Abdominal Pain (Ruptured Abdominal Aortic Aneurysm)",
@@ -398,13 +412,15 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "tobacco_use",
-      "medication_adherence"
+      "medication_adherence",
+      "anticoagulation"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "74-year-old man, pale, clammy, and clearly unwell. Anxious but cooperative.",
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; tends to repeat the urgent-care 'kidney stone' explanation",
+    "affect": "74-year-old man, pale, clammy, and clearly unwell. Anxious but cooperative; fixated on the 'kidney stone' he was told he has.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
+      "Do not volunteer the blood thinner (apixaban), tamsulosin, prior aneurysm history, or family history unless directly asked",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
@@ -448,7 +464,8 @@
         "what does it feel like",
         "tearing or ripping",
         "does it go anywhere",
-        "radiate to your back"
+        "radiate to your back",
+        "radiate to your groin"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
@@ -468,6 +485,22 @@
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "hematuria_urinary",
+      "category": "ros",
+      "triggerConcepts": [
+        "blood in your urine",
+        "hematuria",
+        "burning with urination",
+        "urinary symptoms",
+        "ever had a kidney stone",
+        "prior stones"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": false
     },
     {
@@ -506,6 +539,10 @@
         "past medical history",
         "medical problems",
         "high blood pressure",
+        "heart rhythm",
+        "atrial fibrillation",
+        "kidney problems",
+        "prostate",
         "conditions"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
@@ -519,12 +556,16 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
+        "blood thinner",
+        "anticoagulant",
+        "apixaban",
+        "tamsulosin",
         "do you take them as prescribed",
         "adherence"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
+      "importance": "critical",
+      "points": 2,
       "hiddenUntilAsked": false
     },
     {
@@ -534,7 +575,6 @@
         "any vomiting blood",
         "black or bloody stools",
         "fever",
-        "urinary symptoms",
         "recent trauma"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
@@ -546,7 +586,7 @@
   "physicalExamMappings": [
     {
       "id": "palpate_all_quadrants_finding_1",
-      "finding": "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "finding": "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness extending to the left flank; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
       "revealedBy": [
         "palpate_all_quadrants"
       ],
@@ -556,7 +596,7 @@
     },
     {
       "id": "inspect_abdomen_finding_2",
-      "finding": "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "finding": "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness extending to the left flank; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -566,7 +606,7 @@
     },
     {
       "id": "assess_peripheral_pulses_finding_3",
-      "finding": "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.",
+      "finding": "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; faint left flank/periumbilical bruising.",
       "revealedBy": [
         "assess_peripheral_pulses"
       ],
@@ -586,13 +626,23 @@
     },
     {
       "id": "assess_capillary_refill_finding_5",
-      "finding": "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.",
+      "finding": "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; faint left flank/periumbilical bruising.",
       "revealedBy": [
         "assess_capillary_refill"
       ],
       "importance": "core",
       "points": 1,
       "normalIfNotPresent": "Capillary refill under 2 seconds."
+    },
+    {
+      "id": "assess_cva_tenderness_finding_6",
+      "finding": "Mild left costovertebral-angle tenderness — overlaps with the 'renal colic' referral but does NOT exclude a ruptured aneurysm; interpret it alongside the pulsatile mass and shock.",
+      "revealedBy": [
+        "assess_cva_tenderness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No CVA tenderness."
     }
   ],
   "overallScoring": {
@@ -605,13 +655,14 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Ruptured abdominal aortic aneurysm",
-    "diagnosticFramework": "74M smoker with hypertension presents with sudden, severe, tearing abdominal and flank/back pain and a near-syncopal episode. The diagnosis is Ruptured abdominal aortic aneurysm, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "74M smoker with hypertension, COPD, CKD, BPH, and paroxysmal atrial fibrillation on apixaban and tamsulosin presents with sudden tearing left flank and abdominal pain radiating to the back and groin, a near-syncopal episode, and microscopic hematuria — referred in as 'renal colic'. The diagnosis is Ruptured abdominal aortic aneurysm, reached by resisting the renal-colic anchor, eliciting the focused history (including the blood thinner and prior aneurysm), performing the targeted exam (pulsatile mass, asymmetric pulses), and interpreting the directed workup (bedside POCUS, falling Hgb, AKI on CKD with an elevated anion gap from lactate, AF on the EKG, microscopic hematuria without hydronephrosis) while excluding the must-not-miss alternatives.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
-      "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
-      "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; possible flank/periumbilical ecchymosis.",
-      "General: pale, diaphoretic, in distress, restless."
+      "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness extending to the left flank; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "Abdomen: a pulsatile, expansile midline/periumbilical mass with tenderness extending to the left flank; mild distension; bowel sounds present but reduced. No rebound or rigidity early.",
+      "Extremities: cool with weak/diminished and asymmetric femoral and distal pulses; prolonged capillary refill; faint left flank/periumbilical bruising.",
+      "General: pale, diaphoretic, in distress, restless.",
+      "Mild left costovertebral-angle tenderness — overlaps with the 'renal colic' referral but does NOT exclude a ruptured aneurysm; interpret it alongside the pulsatile mass and shock."
     ],
     "keyDiagnosticFindings": [
       "POCUS_aorta",
@@ -619,23 +670,28 @@
       "BMP",
       "Lactate",
       "Coags_Type",
+      "UA",
       "CTA_abdomen"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Ruptured abdominal aortic aneurysm while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Ruptured abdominal aortic aneurysm and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, and consciously challenge the outside 'renal colic' label.",
+      "Elicit the focused history, including sensitive items (blood thinner, prior aneurysm, family history) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the pulsatile mass and asymmetric pulses.",
+      "Build a differential led by Ruptured abdominal aortic aneurysm, naming the mechanisms by which it mimics renal colic and explicitly excluding the must-not-miss causes.",
+      "Order a focused, order-sensitive workup (bedside POCUS, coags/anti-Xa, type & cross) and interpret the EKG (AF with RVR), CXR, and labs.",
+      "Commit to Ruptured abdominal aortic aneurysm and manage with resuscitation, anticoagulation reversal, permissive hypotension, emergent repair, and an emergent (never-home) disposition."
     ],
     "commonPitfalls": [
+      "Anchoring on the outside 'renal colic' label and missing the ruptured AAA",
+      "Treating the microscopic hematuria as proof of a stone",
       "Aggressive crystalloid bolus raising BP and worsening hemorrhage",
+      "Failing to reverse apixaban",
       "Delaying definitive repair to obtain non-essential imaging in an unstable patient"
     ],
     "managementPearls": [
       "STAT vascular surgery consult for emergent open / EVAR repair",
       "Activate massive transfusion / balanced blood products",
+      "Reverse apixaban (andexanet alfa or 4-factor PCC)",
       "Permissive hypotension until repair"
     ],
     "criticalHistoryItems": [],
@@ -645,26 +701,27 @@
     ],
     "criticalWorkupItems": [
       "Bedside aortic ultrasound (POCUS)",
-      "Type & crossmatch / activate massive transfusion"
+      "Type & crossmatch / activate massive transfusion and check coags/anti-Xa given apixaban"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "Atrial fibrillation with rapid ventricular response (~125 bpm), no acute ST-elevation — known paroxysmal AF driven faster by pain and hypovolemia, and the reason he is anticoagulated on apixaban (which must be reversed).",
       "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
     ],
     "criticalManagementItems": [
       "STAT vascular surgery consult for emergent open / EVAR repair",
-      "Activate massive transfusion / balanced blood products"
+      "Activate massive transfusion / balanced blood products with permissive hypotension",
+      "Reverse apixaban (andexanet alfa or 4-factor PCC) and correct coagulopathy"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "Atrial fibrillation with rapid ventricular response (~125 bpm), no acute ST-elevation — known paroxysmal AF driven faster by pain and hypovolemia, and the reason he is anticoagulated on apixaban (which must be reversed).",
       "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia at ~120 bpm; no acute ST-elevation or ischemic changes — a compensatory response to hypovolemia, not a primary cardiac event.",
+      "Atrial fibrillation with rapid ventricular response (~125 bpm), no acute ST-elevation — known paroxysmal AF driven faster by pain and hypovolemia, and the reason he is anticoagulated on apixaban (which must be reversed).",
       "No acute cardiopulmonary process and NO free air under the diaphragm; mediastinum not widened — helps exclude perforated viscus and thoracic aortic catastrophe rather than diagnose the AAA."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance: the AF here is real and shapes management (anticoagulation reversal) but is not the emergency.",
       "Read every study systematically before committing.",
       "State pertinent negatives, not just positives."
     ]
@@ -696,9 +753,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

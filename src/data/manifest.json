@@ -30,8 +30,8 @@
       "id": "abdo-01",
       "file": "abdo-01.json",
       "category": "Abdominal Pain",
-      "difficulty": "easy",
-      "title": "Migrating right lower quadrant pain",
+      "difficulty": "hard",
+      "title": "Migrating right lower quadrant pain in a reproductive-age woman",
       "diagnosis": "Acute appendicitis",
       "cantMiss": false
     },
@@ -39,8 +39,8 @@
       "id": "abdo-02",
       "file": "abdo-02.json",
       "category": "Abdominal Pain",
-      "difficulty": "easy",
-      "title": "Right upper quadrant pain after a fatty meal",
+      "difficulty": "hard",
+      "title": "Right upper quadrant pain after a fatty meal in a diabetic on digoxin",
       "diagnosis": "Acute cholecystitis",
       "cantMiss": false
     },
@@ -48,8 +48,8 @@
       "id": "abdo-03",
       "file": "abdo-03.json",
       "category": "Abdominal Pain",
-      "difficulty": "moderate",
-      "title": "Epigastric pain radiating to the back",
+      "difficulty": "hard",
+      "title": "Epigastric pain radiating to the back in a poorly-controlled diabetic",
       "diagnosis": "Acute pancreatitis",
       "cantMiss": false
     },
@@ -57,8 +57,8 @@
       "id": "abdo-04",
       "file": "abdo-04.json",
       "category": "Abdominal Pain",
-      "difficulty": "moderate",
-      "title": "Cramping pain with vomiting and no stool",
+      "difficulty": "hard",
+      "title": "Crampy pain, vomiting, and obstipation in an older woman with atrial fibrillation",
       "diagnosis": "Small bowel obstruction",
       "cantMiss": false
     },
@@ -66,8 +66,8 @@
       "id": "abdo-05",
       "file": "abdo-05.json",
       "category": "Abdominal Pain",
-      "difficulty": "easy",
-      "title": "Left lower quadrant pain and fever",
+      "difficulty": "hard",
+      "title": "Left lower quadrant pain, fever, and change in bowel habits in an anticoagulated older man",
       "diagnosis": "Diverticulitis",
       "cantMiss": false
     },
@@ -76,7 +76,7 @@
       "file": "abdo-06.json",
       "category": "Abdominal Pain",
       "difficulty": "hard",
-      "title": "Severe pain out of proportion to exam",
+      "title": "Severe pain out of proportion to exam in atrial fibrillation",
       "diagnosis": "Acute mesenteric ischemia",
       "cantMiss": true
     },
@@ -85,7 +85,7 @@
       "file": "abdo-07.json",
       "category": "Abdominal Pain",
       "difficulty": "hard",
-      "title": "Sudden tearing belly and back pain with near-collapse",
+      "title": "Sudden tearing flank and belly pain with hematuria and near-collapse in an anticoagulated smoker",
       "diagnosis": "Ruptured abdominal aortic aneurysm",
       "cantMiss": true
     },
@@ -94,7 +94,7 @@
       "file": "abdo-08.json",
       "category": "Abdominal Pain",
       "difficulty": "hard",
-      "title": "Abdominal pain, vomiting, and rapid breathing",
+      "title": "Abdominal pain, vomiting, and rapid breathing in a young diabetic on new agents",
       "diagnosis": "Diabetic ketoacidosis presenting as abdominal pain",
       "cantMiss": true
     },
@@ -103,16 +103,25 @@
       "file": "abdo-09.json",
       "category": "Abdominal Pain",
       "difficulty": "hard",
-      "title": "Sudden severe upper abdominal pain",
+      "title": "Sudden severe upper abdominal pain in an anticoagulated vasculopath",
       "diagnosis": "Perforated peptic ulcer",
       "cantMiss": true
+    },
+    {
+      "id": "abdo-10",
+      "file": "abdo-10.json",
+      "category": "Abdominal Pain",
+      "difficulty": "hard",
+      "title": "Abdominal pain, vomiting, and hypotension in a woman who stopped her steroids",
+      "diagnosis": "Adrenal (Addisonian) crisis presenting as abdominal pain",
+      "cantMiss": false
     },
     {
       "id": "ams-01",
       "file": "ams-01.json",
       "category": "Altered Mental Status",
-      "difficulty": "moderate",
-      "title": "Confusion in a patient with cirrhosis",
+      "difficulty": "hard",
+      "title": "Confusion in a recently-abstinent patient with cirrhosis on multiple sedating medications",
       "diagnosis": "Hepatic encephalopathy",
       "cantMiss": false
     },
@@ -120,8 +129,8 @@
       "id": "ams-02",
       "file": "ams-02.json",
       "category": "Altered Mental Status",
-      "difficulty": "moderate",
-      "title": "Acute confusion in an elderly woman",
+      "difficulty": "hard",
+      "title": "Acute confusion in a polypharmacy elderly woman",
       "diagnosis": "Urosepsis with delirium",
       "cantMiss": false
     },
@@ -129,8 +138,8 @@
       "id": "ams-03",
       "file": "ams-03.json",
       "category": "Altered Mental Status",
-      "difficulty": "easy",
-      "title": "Sudden confusion and sweating in a diabetic",
+      "difficulty": "hard",
+      "title": "Confusion with a transient focal deficit in a diabetic on multiple new medications",
       "diagnosis": "Hypoglycemia",
       "cantMiss": true
     },
@@ -138,8 +147,8 @@
       "id": "ams-04",
       "file": "ams-04.json",
       "category": "Altered Mental Status",
-      "difficulty": "moderate",
-      "title": "Confusion with profound dehydration",
+      "difficulty": "hard",
+      "title": "Confusion and dehydration in a polypharmacy elder with diabetes, CKD, and heart failure",
       "diagnosis": "Hyperosmolar hyperglycemic state",
       "cantMiss": false
     },
@@ -148,7 +157,7 @@
       "file": "ams-05.json",
       "category": "Altered Mental Status",
       "difficulty": "hard",
-      "title": "Confusion, nausea, and a recent medication change",
+      "title": "Confusion and nausea in an older woman on several new medications",
       "diagnosis": "Severe hyponatremia",
       "cantMiss": false
     },
@@ -156,8 +165,8 @@
       "id": "ams-06",
       "file": "ams-06.json",
       "category": "Altered Mental Status",
-      "difficulty": "moderate",
-      "title": "Agitation and tremor two days after admission",
+      "difficulty": "hard",
+      "title": "Agitation, tremor, and a prolonged QT two days after a fall",
       "diagnosis": "Alcohol withdrawal / delirium tremens",
       "cantMiss": true
     },
@@ -166,7 +175,7 @@
       "file": "ams-07.json",
       "category": "Altered Mental Status",
       "difficulty": "hard",
-      "title": "Confusion and unsteadiness in a malnourished man",
+      "title": "Confusion and unsteadiness in a malnourished man with liver disease",
       "diagnosis": "Wernicke encephalopathy",
       "cantMiss": true
     },
@@ -175,7 +184,7 @@
       "file": "ams-08.json",
       "category": "Altered Mental Status",
       "difficulty": "hard",
-      "title": "Agitation, sweating, and twitching after a medication change",
+      "title": "Agitation, rigidity, and twitching after a cascade of medication changes",
       "diagnosis": "Serotonin syndrome",
       "cantMiss": true
     },
@@ -184,16 +193,25 @@
       "file": "ams-09.json",
       "category": "Altered Mental Status",
       "difficulty": "hard",
-      "title": "Agitation, fever, and a racing heart",
+      "title": "Agitation, fever, and a racing irregular heart in a patient on amiodarone",
       "diagnosis": "Thyroid storm",
       "cantMiss": true
+    },
+    {
+      "id": "ams-10",
+      "file": "ams-10.json",
+      "category": "Altered Mental Status",
+      "difficulty": "hard",
+      "title": "Progressive confusion in an elderly woman with a heart condition",
+      "diagnosis": "Chronic digoxin toxicity precipitated by diuretic-induced hypokalemia and renal impairment",
+      "cantMiss": false
     },
     {
       "id": "anemia-01",
       "file": "anemia-01.json",
       "category": "Anemia",
-      "difficulty": "easy",
-      "title": "Fatigue and pallor with heavy periods",
+      "difficulty": "hard",
+      "title": "Fatigue and microcytic anemia in an older woman on an anticoagulant and chronic NSAIDs",
       "diagnosis": "Iron deficiency anemia",
       "cantMiss": false
     },
@@ -201,8 +219,8 @@
       "id": "anemia-02",
       "file": "anemia-02.json",
       "category": "Anemia",
-      "difficulty": "moderate",
-      "title": "Dizziness with black tarry stools",
+      "difficulty": "hard",
+      "title": "Lightheadedness and melena in an anticoagulated drinker on NSAIDs",
       "diagnosis": "Acute upper GI bleed",
       "cantMiss": true
     },
@@ -210,8 +228,8 @@
       "id": "anemia-03",
       "file": "anemia-03.json",
       "category": "Anemia",
-      "difficulty": "moderate",
-      "title": "Fatigue with numbness and imbalance",
+      "difficulty": "hard",
+      "title": "Fatigue, numbness, and imbalance with macrocytic cytopenias in an older woman",
       "diagnosis": "B12 deficiency",
       "cantMiss": false
     },
@@ -219,8 +237,8 @@
       "id": "anemia-04",
       "file": "anemia-04.json",
       "category": "Anemia",
-      "difficulty": "moderate",
-      "title": "Chronic fatigue with a known inflammatory condition",
+      "difficulty": "hard",
+      "title": "Fatigue and a borderline-microcytic anemia in active rheumatoid arthritis",
       "diagnosis": "Anemia of chronic disease",
       "cantMiss": false
     },
@@ -229,7 +247,7 @@
       "file": "anemia-05.json",
       "category": "Anemia",
       "difficulty": "hard",
-      "title": "Fatigue, jaundice, and dark urine",
+      "title": "Fatigue, jaundice, and dark urine in a patient with CLL on new medications",
       "diagnosis": "Autoimmune hemolytic anemia",
       "cantMiss": false
     },
@@ -238,7 +256,7 @@
       "file": "anemia-06.json",
       "category": "Anemia",
       "difficulty": "hard",
-      "title": "Confusion, bruising, and fatigue",
+      "title": "Confusion, bruising, and fatigue in a woman with lupus",
       "diagnosis": "Thrombotic thrombocytopenic purpura (TTP)",
       "cantMiss": true
     },
@@ -247,7 +265,7 @@
       "file": "anemia-07.json",
       "category": "Anemia",
       "difficulty": "hard",
-      "title": "Sudden fatigue and dark urine after starting a new medication",
+      "title": "Fatigue, dark urine, and a peaked-T-wave EKG after a new sulfa antibiotic",
       "diagnosis": "G6PD deficiency hemolysis",
       "cantMiss": false
     },
@@ -256,16 +274,25 @@
       "file": "anemia-08.json",
       "category": "Anemia",
       "difficulty": "hard",
-      "title": "Severe whole-body pain and dark urine",
+      "title": "Severe whole-body pain and dark urine in sickle cell disease, two weeks after a transfusion",
       "diagnosis": "Sickle cell disease with vaso-occlusive crisis and hemolysis",
       "cantMiss": true
+    },
+    {
+      "id": "anemia-09",
+      "file": "anemia-09.json",
+      "category": "Anemia",
+      "difficulty": "hard",
+      "title": "Fatigue, bruising, and a lingering infection with pancytopenia in an older man",
+      "diagnosis": "Myelodysplastic syndrome (MDS)",
+      "cantMiss": false
     },
     {
       "id": "chestpain-01",
       "file": "chestpain-01.json",
       "category": "Chest Pain",
-      "difficulty": "moderate",
-      "title": "Exertional chest pressure with diaphoresis",
+      "difficulty": "hard",
+      "title": "Exertional chest pressure with new palpitations, on a background of anticoagulant non-adherence and NSAID use",
       "diagnosis": "NSTEMI",
       "cantMiss": true
     },
@@ -274,7 +301,7 @@
       "file": "chestpain-02.json",
       "category": "Chest Pain",
       "difficulty": "hard",
-      "title": "Pleuritic chest pain after a long flight",
+      "title": "Pleuritic chest pain and dyspnea in a man who stopped his blood thinner",
       "diagnosis": "Pulmonary embolism",
       "cantMiss": true
     },
@@ -283,7 +310,7 @@
       "file": "chestpain-03.json",
       "category": "Chest Pain",
       "difficulty": "hard",
-      "title": "Sudden tearing chest pain to the back",
+      "title": "Sudden tearing chest pain to the back with inferior ST elevation",
       "diagnosis": "Aortic dissection",
       "cantMiss": true
     },
@@ -291,8 +318,8 @@
       "id": "chestpain-04",
       "file": "chestpain-04.json",
       "category": "Chest Pain",
-      "difficulty": "moderate",
-      "title": "Sharp positional chest pain after a viral illness",
+      "difficulty": "hard",
+      "title": "Pleuritic chest pain in a dialysis patient who missed his last two sessions",
       "diagnosis": "Acute pericarditis",
       "cantMiss": false
     },
@@ -300,8 +327,8 @@
       "id": "chestpain-05",
       "file": "chestpain-05.json",
       "category": "Chest Pain",
-      "difficulty": "easy",
-      "title": "Burning chest discomfort after meals",
+      "difficulty": "hard",
+      "title": "Postprandial burning chest discomfort in a polypharmacy patient with cardiac risk factors",
       "diagnosis": "GERD",
       "cantMiss": false
     },
@@ -309,8 +336,8 @@
       "id": "chestpain-06",
       "file": "chestpain-06.json",
       "category": "Chest Pain",
-      "difficulty": "easy",
-      "title": "Reproducible chest pain after lifting",
+      "difficulty": "hard",
+      "title": "Reproducible chest wall pain in a higher-risk man with sympathomimetic exposure",
       "diagnosis": "Costochondritis",
       "cantMiss": false
     },
@@ -319,7 +346,7 @@
       "file": "chestpain-07.json",
       "category": "Chest Pain",
       "difficulty": "hard",
-      "title": "Progressive breathlessness and chest pressure with hypotension",
+      "title": "Progressive breathlessness and chest pressure with hypotension in a cancer patient",
       "diagnosis": "Cardiac tamponade",
       "cantMiss": true
     },
@@ -328,7 +355,7 @@
       "file": "chestpain-08.json",
       "category": "Chest Pain",
       "difficulty": "hard",
-      "title": "Severe chest pain after violent vomiting",
+      "title": "Tearing chest-to-back pain after violent vomiting in an anticoagulated man",
       "diagnosis": "Esophageal rupture (Boerhaave syndrome)",
       "cantMiss": true
     },
@@ -337,16 +364,25 @@
       "file": "chestpain-09.json",
       "category": "Chest Pain",
       "difficulty": "hard",
-      "title": "Sudden severe chest pressure in a young adult",
+      "title": "Sudden severe chest pressure in a young adult after a party",
       "diagnosis": "Cocaine-associated chest pain with coronary vasospasm",
       "cantMiss": true
+    },
+    {
+      "id": "chestpain-10",
+      "file": "chestpain-10.json",
+      "category": "Chest Pain",
+      "difficulty": "hard",
+      "title": "Crushing substernal chest pain and an anterior STEMI-pattern EKG hours after sudden bereavement",
+      "diagnosis": "Takotsubo (stress) cardiomyopathy",
+      "cantMiss": false
     },
     {
       "id": "diarrhea-01",
       "file": "diarrhea-01.json",
       "category": "Diarrhea",
-      "difficulty": "easy",
-      "title": "Watery diarrhea after antibiotics",
+      "difficulty": "hard",
+      "title": "Profuse watery diarrhea after antibiotics in a frail polypharmacy patient",
       "diagnosis": "C. difficile colitis",
       "cantMiss": false
     },
@@ -354,8 +390,8 @@
       "id": "diarrhea-02",
       "file": "diarrhea-02.json",
       "category": "Diarrhea",
-      "difficulty": "easy",
-      "title": "Acute diarrhea after eating out",
+      "difficulty": "hard",
+      "title": "Bloody diarrhea in an older anticoagulated man after recent antibiotics",
       "diagnosis": "Bacterial gastroenteritis",
       "cantMiss": false
     },
@@ -363,8 +399,8 @@
       "id": "diarrhea-03",
       "file": "diarrhea-03.json",
       "category": "Diarrhea",
-      "difficulty": "moderate",
-      "title": "Bloody diarrhea in a young adult",
+      "difficulty": "hard",
+      "title": "Bloody diarrhea flare in an immunosuppressed patient with recent antibiotics",
       "diagnosis": "Ulcerative colitis flare",
       "cantMiss": false
     },
@@ -372,8 +408,8 @@
       "id": "diarrhea-04",
       "file": "diarrhea-04.json",
       "category": "Diarrhea",
-      "difficulty": "moderate",
-      "title": "Chronic diarrhea with weight loss",
+      "difficulty": "hard",
+      "title": "Chronic diarrhea and weight loss in a woman with autoimmune thyroid disease and polypharmacy",
       "diagnosis": "Celiac disease",
       "cantMiss": false
     },
@@ -382,7 +418,7 @@
       "file": "diarrhea-05.json",
       "category": "Diarrhea",
       "difficulty": "hard",
-      "title": "Bloody diarrhea with abdominal pain in an older adult",
+      "title": "Sudden left-sided pain and bloody diarrhea in an older adult with atrial fibrillation",
       "diagnosis": "Ischemic colitis",
       "cantMiss": true
     },
@@ -390,8 +426,8 @@
       "id": "diarrhea-06",
       "file": "diarrhea-06.json",
       "category": "Diarrhea",
-      "difficulty": "moderate",
-      "title": "Two weeks of greasy, foul-smelling diarrhea and bloating",
+      "difficulty": "hard",
+      "title": "Three weeks of greasy, foul diarrhea and weight loss in a man with diabetes and hypothyroidism",
       "diagnosis": "Giardiasis",
       "cantMiss": false
     },
@@ -400,7 +436,7 @@
       "file": "diarrhea-07.json",
       "category": "Diarrhea",
       "difficulty": "hard",
-      "title": "Watery diarrhea with episodic flushing",
+      "title": "Watery diarrhea and episodic flushing in a woman on multiple new medications",
       "diagnosis": "Carcinoid syndrome",
       "cantMiss": false
     },
@@ -408,17 +444,26 @@
       "id": "diarrhea-08",
       "file": "diarrhea-08.json",
       "category": "Diarrhea",
-      "difficulty": "moderate",
-      "title": "Chronic watery diarrhea in an older woman",
+      "difficulty": "hard",
+      "title": "Chronic watery diarrhea in an older woman with prior cholecystectomy",
       "diagnosis": "Microscopic colitis",
+      "cantMiss": false
+    },
+    {
+      "id": "diarrhea-09",
+      "file": "diarrhea-09.json",
+      "category": "Diarrhea",
+      "difficulty": "hard",
+      "title": "High-volume watery diarrhea that persists with fasting, with profound weakness",
+      "diagnosis": "VIPoma (pancreatic neuroendocrine tumor — WDHA syndrome)",
       "cantMiss": false
     },
     {
       "id": "dyspnea-01",
       "file": "dyspnea-01.json",
       "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Progressive dyspnea and leg swelling",
+      "difficulty": "hard",
+      "title": "Progressive dyspnea and leg swelling in a smoker with a new irregular pulse",
       "diagnosis": "Acute decompensated heart failure (HFrEF)",
       "cantMiss": false
     },
@@ -426,8 +471,8 @@
       "id": "dyspnea-02",
       "file": "dyspnea-02.json",
       "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Worsening cough and breathlessness in a smoker",
+      "difficulty": "hard",
+      "title": "Worsening cough and breathlessness in a smoker with new ankle swelling",
       "diagnosis": "COPD exacerbation",
       "cantMiss": false
     },
@@ -435,8 +480,8 @@
       "id": "dyspnea-03",
       "file": "dyspnea-03.json",
       "category": "Dyspnea",
-      "difficulty": "easy",
-      "title": "Fever, cough, and breathlessness",
+      "difficulty": "hard",
+      "title": "Fever, cough, and breathlessness in a comorbid patient with a new irregular pulse",
       "diagnosis": "Community-acquired pneumonia",
       "cantMiss": false
     },
@@ -445,7 +490,7 @@
       "file": "dyspnea-04.json",
       "category": "Dyspnea",
       "difficulty": "hard",
-      "title": "Sudden breathlessness post-op",
+      "title": "Sudden breathlessness with a troponin bump and new atrial fibrillation 5 days after hip replacement",
       "diagnosis": "Pulmonary embolism",
       "cantMiss": true
     },
@@ -453,8 +498,8 @@
       "id": "dyspnea-05",
       "file": "dyspnea-05.json",
       "category": "Dyspnea",
-      "difficulty": "easy",
-      "title": "Acute wheeze and chest tightness",
+      "difficulty": "hard",
+      "title": "Acute wheeze and chest tightness in a young woman on a beta-blocker and NSAIDs",
       "diagnosis": "Asthma exacerbation",
       "cantMiss": false
     },
@@ -462,8 +507,8 @@
       "id": "dyspnea-06",
       "file": "dyspnea-06.json",
       "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Progressive breathlessness with weight loss",
+      "difficulty": "hard",
+      "title": "Progressive breathlessness and weight loss in a smoker with heart failure on a diuretic",
       "diagnosis": "Malignant pleural effusion",
       "cantMiss": false
     },
@@ -472,7 +517,7 @@
       "file": "dyspnea-07.json",
       "category": "Dyspnea",
       "difficulty": "hard",
-      "title": "Sudden breathlessness, throat tightness, and a body rash",
+      "title": "Sudden breathlessness, throat swelling, and shock in a woman on a beta-blocker and an ACE inhibitor",
       "diagnosis": "Anaphylaxis",
       "cantMiss": true
     },
@@ -481,7 +526,7 @@
       "file": "dyspnea-08.json",
       "category": "Dyspnea",
       "difficulty": "hard",
-      "title": "Blue lips and breathlessness after a dental procedure",
+      "title": "Breathless and blue after a dental procedure in a man on dapsone",
       "diagnosis": "Methemoglobinemia",
       "cantMiss": true
     },
@@ -489,17 +534,26 @@
       "id": "dyspnea-09",
       "file": "dyspnea-09.json",
       "category": "Dyspnea",
-      "difficulty": "moderate",
-      "title": "Sudden chest pain and breathlessness",
+      "difficulty": "hard",
+      "title": "Sudden pleuritic chest pain and breathlessness in a young stimulant user",
       "diagnosis": "Spontaneous pneumothorax",
       "cantMiss": true
+    },
+    {
+      "id": "dyspnea-10",
+      "file": "dyspnea-10.json",
+      "category": "Dyspnea",
+      "difficulty": "hard",
+      "title": "Acute dyspnea with palpitations and an irregular pulse",
+      "diagnosis": "New-onset atrial fibrillation with rapid ventricular response precipitating acute decompensated heart failure (HFpEF), triggered by occult hyperthyroidism — pulmonary embolism and ischemia excluded",
+      "cantMiss": false
     },
     {
       "id": "fever-01",
       "file": "fever-01.json",
       "category": "Fever",
-      "difficulty": "easy",
-      "title": "Fever with flank pain and dysuria",
+      "difficulty": "hard",
+      "title": "Fever and flank pain in an older diabetic woman with a new irregular pulse",
       "diagnosis": "Pyelonephritis",
       "cantMiss": false
     },
@@ -507,8 +561,8 @@
       "id": "fever-02",
       "file": "fever-02.json",
       "category": "Fever",
-      "difficulty": "easy",
-      "title": "Fever with a red, painful leg",
+      "difficulty": "hard",
+      "title": "Fever with a red, hot, painful lower leg in a diabetic on multiple medications",
       "diagnosis": "Cellulitis",
       "cantMiss": false
     },
@@ -517,7 +571,7 @@
       "file": "fever-03.json",
       "category": "Fever",
       "difficulty": "hard",
-      "title": "Persistent fevers with a new murmur",
+      "title": "Weeks of fevers, weight loss, and a new murmur in a man with prior drug use",
       "diagnosis": "Infective endocarditis",
       "cantMiss": true
     },
@@ -525,8 +579,8 @@
       "id": "fever-04",
       "file": "fever-04.json",
       "category": "Fever",
-      "difficulty": "easy",
-      "title": "Fever, productive cough, and pleuritic pain",
+      "difficulty": "hard",
+      "title": "Fever, dyspnea, and crackles in a comorbid elder — pneumonia or heart failure?",
       "diagnosis": "Community-acquired pneumonia",
       "cantMiss": false
     },
@@ -535,7 +589,7 @@
       "file": "fever-05.json",
       "category": "Fever",
       "difficulty": "hard",
-      "title": "Fever, headache, and neck stiffness",
+      "title": "Fever, headache, and altered mental status in an asplenic young adult on lithium and isotretinoin",
       "diagnosis": "Bacterial meningitis",
       "cantMiss": true
     },
@@ -553,7 +607,7 @@
       "file": "fever-07.json",
       "category": "Fever",
       "difficulty": "hard",
-      "title": "High fever, rash, and lightheadedness",
+      "title": "High fever, rash, and lightheadedness in a young woman on multiple medications",
       "diagnosis": "Toxic shock syndrome",
       "cantMiss": true
     },
@@ -561,17 +615,26 @@
       "id": "fever-08",
       "file": "fever-08.json",
       "category": "Fever",
-      "difficulty": "moderate",
-      "title": "Fever with a hot, swollen knee",
+      "difficulty": "hard",
+      "title": "Fever with a hot, swollen knee in a gouty diabetic",
       "diagnosis": "Septic arthritis",
       "cantMiss": true
+    },
+    {
+      "id": "fever-09",
+      "file": "fever-09.json",
+      "category": "Fever",
+      "difficulty": "hard",
+      "title": "Six weeks of fevers, night sweats, and weight loss in a recently released, immunosuppressed man",
+      "diagnosis": "Reactivation pulmonary tuberculosis (cavitary, with early miliary spread)",
+      "cantMiss": false
     },
     {
       "id": "liver-01",
       "file": "liver-01.json",
       "category": "Abnormal Liver Enzymes",
-      "difficulty": "moderate",
-      "title": "Jaundice and fatigue after travel",
+      "difficulty": "hard",
+      "title": "Jaundice and transaminitis in the thousands in a polypharmacy patient after travel",
       "diagnosis": "Acute viral hepatitis",
       "cantMiss": false
     },
@@ -579,8 +642,8 @@
       "id": "liver-02",
       "file": "liver-02.json",
       "category": "Abnormal Liver Enzymes",
-      "difficulty": "moderate",
-      "title": "Jaundice and RUQ tenderness with heavy drinking",
+      "difficulty": "hard",
+      "title": "Jaundice, RUQ tenderness, and fever in a heavy drinker on multiple medications",
       "diagnosis": "Alcoholic hepatitis",
       "cantMiss": false
     },
@@ -589,7 +652,7 @@
       "file": "liver-03.json",
       "category": "Abnormal Liver Enzymes",
       "difficulty": "hard",
-      "title": "Nausea and markedly elevated transaminases",
+      "title": "Nausea and transaminases in the thousands in a patient on multiple hepatotoxins",
       "diagnosis": "Acetaminophen-induced liver injury",
       "cantMiss": true
     },
@@ -597,8 +660,8 @@
       "id": "liver-04",
       "file": "liver-04.json",
       "category": "Abnormal Liver Enzymes",
-      "difficulty": "moderate",
-      "title": "Jaundice with RUQ pain and pale stools",
+      "difficulty": "hard",
+      "title": "Progressive jaundice and weight loss in an older woman: stone or tumor?",
       "diagnosis": "Choledocholithiasis",
       "cantMiss": false
     },
@@ -606,8 +669,8 @@
       "id": "liver-05",
       "file": "liver-05.json",
       "category": "Abnormal Liver Enzymes",
-      "difficulty": "easy",
-      "title": "Incidental mildly elevated liver enzymes",
+      "difficulty": "hard",
+      "title": "Transaminitis in a man with metabolic syndrome on amiodarone and an herbal supplement",
       "diagnosis": "NAFLD / NASH",
       "cantMiss": false
     },
@@ -616,7 +679,7 @@
       "file": "liver-06.json",
       "category": "Abnormal Liver Enzymes",
       "difficulty": "hard",
-      "title": "A young adult with worsening tremor and abnormal liver tests",
+      "title": "A young adult with worsening tremor, hepatitis, and a metabolic puzzle",
       "diagnosis": "Wilson disease",
       "cantMiss": false
     },
@@ -634,16 +697,25 @@
       "file": "liver-08.json",
       "category": "Abnormal Liver Enzymes",
       "difficulty": "hard",
-      "title": "Sudden sky-high liver enzymes after a cardiac arrest",
+      "title": "Sky-high transaminases after a cardiac arrest — shock liver or a hidden Tylenol overdose?",
       "diagnosis": "Ischemic hepatitis (shock liver)",
       "cantMiss": true
+    },
+    {
+      "id": "liver-09",
+      "file": "liver-09.json",
+      "category": "Abnormal Liver Enzymes",
+      "difficulty": "hard",
+      "title": "Fatigue, joint pain, and abnormal liver tests in a 'bronzed' middle-aged man",
+      "diagnosis": "Hereditary hemochromatosis",
+      "cantMiss": false
     },
     {
       "id": "syncope-01",
       "file": "syncope-01.json",
       "category": "Syncope",
-      "difficulty": "easy",
-      "title": "Fainting at a crowded event",
+      "difficulty": "hard",
+      "title": "Transient loss of consciousness in a polypharmacy patient with a prolonged QT",
       "diagnosis": "Vasovagal syncope",
       "cantMiss": false
     },
@@ -651,8 +723,8 @@
       "id": "syncope-02",
       "file": "syncope-02.json",
       "category": "Syncope",
-      "difficulty": "easy",
-      "title": "Lightheaded on standing",
+      "difficulty": "hard",
+      "title": "Recurrent lightheadedness on standing in a polymedicated older man",
       "diagnosis": "Orthostatic hypotension",
       "cantMiss": false
     },
@@ -661,7 +733,7 @@
       "file": "syncope-03.json",
       "category": "Syncope",
       "difficulty": "hard",
-      "title": "Sudden collapse without warning",
+      "title": "Sudden collapse without warning in a polypharmacy patient",
       "diagnosis": "Complete heart block",
       "cantMiss": true
     },
@@ -669,8 +741,8 @@
       "id": "syncope-04",
       "file": "syncope-04.json",
       "category": "Syncope",
-      "difficulty": "moderate",
-      "title": "Syncope on exertion with a murmur",
+      "difficulty": "hard",
+      "title": "Exertional syncope with a murmur in a polypharmacy older adult",
       "diagnosis": "Aortic stenosis",
       "cantMiss": true
     },
@@ -679,7 +751,7 @@
       "file": "syncope-05.json",
       "category": "Syncope",
       "difficulty": "hard",
-      "title": "Collapse with breathlessness",
+      "title": "Collapse and breathlessness in a woman on chemotherapy",
       "diagnosis": "Pulmonary embolism",
       "cantMiss": true
     },
@@ -687,8 +759,8 @@
       "id": "syncope-06",
       "file": "syncope-06.json",
       "category": "Syncope",
-      "difficulty": "moderate",
-      "title": "Fainting with black stools",
+      "difficulty": "hard",
+      "title": "Syncope in an anticoagulated elder with a racing pulse and black stools",
       "diagnosis": "Syncope from occult GI bleed",
       "cantMiss": false
     },
@@ -697,7 +769,7 @@
       "file": "syncope-07.json",
       "category": "Syncope",
       "difficulty": "hard",
-      "title": "Collapse during a startling alarm",
+      "title": "Collapse during a startling alarm in a young woman on multiple new drugs",
       "diagnosis": "Long QT syndrome with torsades de pointes",
       "cantMiss": true
     },
@@ -706,7 +778,7 @@
       "file": "syncope-08.json",
       "category": "Syncope",
       "difficulty": "hard",
-      "title": "Collapse during basketball in a young athlete",
+      "title": "Collapse during basketball in a young athlete on stimulants",
       "diagnosis": "Hypertrophic obstructive cardiomyopathy",
       "cantMiss": true
     },
@@ -718,6 +790,15 @@
       "title": "Collapse during a febrile illness, overnight",
       "diagnosis": "Brugada syndrome",
       "cantMiss": true
+    },
+    {
+      "id": "syncope-10",
+      "file": "syncope-10.json",
+      "category": "Syncope",
+      "difficulty": "hard",
+      "title": "Collapse during a fast irregular palpitation in a young man treated for 'SVT'",
+      "diagnosis": "Pre-excited atrial fibrillation in Wolff-Parkinson-White syndrome",
+      "cantMiss": false
     }
   ],
   "upgradeNote": "2.1 adds a pathology-forward image-interpretation curriculum (every EKG/CXR now carries a teaching abnormality, presented as a standalone read), per-image asset sourcing blocks, and backfilled communicationScoring. Fully backward compatible with 2.0 consumers."

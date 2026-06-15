@@ -2,30 +2,31 @@
   "id": "syncope-03",
   "category": "Syncope",
   "difficulty": "hard",
-  "title": "Sudden collapse without warning",
+  "title": "Sudden collapse without warning in a polypharmacy patient",
   "diagnosis": "Complete heart block",
   "chart": {
     "ageSex": "78M",
     "cc": "Sudden collapse",
-    "oneLiner": "78M presents after a sudden loss of consciousness with NO warning, on a background of recurrent near-fainting and fatigue.",
+    "oneLiner": "78M with CAD/prior inferior MI, hypertension, paroxysmal atrial fibrillation, CKD, and early dementia presents after a sudden loss of consciousness with NO warning, on a background of recurrent near-fainting and fatigue — recently started on diltiazem and digoxin for rate control while already on metoprolol and donepezil.",
     "vitals": {
-      "BP": "104/64",
-      "HR": "38",
+      "BP": "98/60",
+      "HR": "36",
       "RR": "16",
-      "Temp": "36.9°C",
+      "Temp": "36.8°C",
       "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I just dropped — no warning at all. One second I was fine, then I woke up on the floor.",
-  "patientFile": "PERSONA: 78-year-old man, now alert but fatigued. Good historian.\n\nHPI: ABRUPT loss of consciousness with NO prodrome (no nausea, no warmth, no lightheadedness beforehand). Quick recovery without confusion. Several recent episodes of near-fainting and increasing fatigue, exertional tiredness, and a 'slow pulse' noticed by his home BP cuff. NO chest pain, NO seizure activity, NO incontinence. The absence of any warning is a red flag for a cardiac cause.\nPMH: hypertension, coronary artery disease, prior MI. MEDS: metoprolol, lisinopril, aspirin, atorvastatin. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, fatigued-appearing.\n- Vitals: BP 104/64, HR ~38 and regular, RR 16, 36.9°C, SpO2 97% RA.\n- Cardiac: BRADYCARDIC, regular; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) if specifically examined.\n- Neuro: no focal deficit, oriented.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize (only if asked about prodrome/warning) that there was NO warning before the collapse.\n- The bradycardia, cannon a-waves, and variable S1 are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I just dropped — no warning at all. One second I was up making tea, then I woke up on the floor.",
+  "patientFile": "PERSONA: 78-year-old man, now alert but fatigued and a little forgetful about exact dates. Cooperative; answers what is asked but does not volunteer.\n\nHPI: ABRUPT loss of consciousness with NO prodrome (no nausea, no warmth, no lightheadedness, no palpitations beforehand). He was standing in the kitchen, not straining or turning his head. Quick recovery within a minute or two, no confusion afterward, no tongue-biting, no incontinence, no jerking witnessed by his wife who was in the next room. Over the last two to three weeks he has had several episodes of near-fainting, worsening fatigue and exertional tiredness, and his home blood-pressure cuff keeps reading a 'slow pulse' in the 30s-40s. NO chest pain now, but if asked specifically he did have a few minutes of mild chest pressure two days ago that he ignored. NO shortness of breath at rest. The complete absence of any warning before the collapse is the key red flag for a cardiac (conduction) cause.\nMEDICATION CHANGES (reveal only when asked about meds/recent changes): an outside cardiologist started DILTIAZEM and DIGOXIN about ten days ago to control his atrial fibrillation, and he was told to keep taking his METOPROLOL as well — so he is now on THREE drugs that slow the heart. He is not sure he was told to stop anything. He has not had labs checked since the new drugs were started.\nPMH: hypertension; coronary artery disease with a prior INFERIOR MI (the inferior wall and AV node share the right coronary supply); paroxysmal atrial fibrillation; chronic kidney disease (baseline creatinine he recalls as 'about 1.4'); early dementia (mild). MEDS: metoprolol succinate, diltiazem (new), digoxin (new), lisinopril, atorvastatin, aspirin, apixaban, donepezil. ALLERGIES: none. SOCIAL: former smoker (quit 20 years ago), rare alcohol, lives at home with his wife who helps manage his pills. FAMILY: noncontributory. ROS: fatigue, near-syncope, the one collapse; denies fevers, denies melena/bleeding, denies focal weakness or speech trouble.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, fatigued-appearing, well-perfused but pale.\n- Vitals: BP 98/60, HR ~36 and regular, RR 16, 36.8°C, SpO2 97% RA.\n- Cardiac: profoundly BRADYCARDIC and REGULAR; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) when specifically examined; no new murmur.\n- Neuro: alert, oriented to person and place, no focal motor or sensory deficit, no pronator drift.\n- Skin/perfusion: warm peripheries, capillary refill ~2 seconds.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Emphasize (only if asked about prodrome/warning) that there was NO warning before the collapse.\n- Reveal the recent diltiazem + digoxin start, and that he is still on metoprolol, ONLY when asked about medications or recent medication changes.\n- Reveal the prior inferior MI and the brief chest pressure two days ago only when asked about cardiac history / chest symptoms.\n- The bradycardia, cannon a-waves, and variable S1 are revealed only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 98 — normal.",
-      "Troponin": "Mildly elevated, stable — no acute infarct pattern.",
-      "BMP": "Na 139, K 4.6 (not hyperkalemic), Cr 1.1, Mg normal.",
-      "TSH": "Normal.",
-      "Echo": "Echo (later): prior inferior wall motion abnormality, preserved-to-mildly-reduced EF, no critical valve lesion."
+      "Glucose": "Fingerstick glucose 102 — normal; not a hypoglycemic cause of collapse.",
+      "Troponin": "High-sensitivity troponin mildly elevated at 0.06 ng/mL (ref <0.04) and essentially STABLE on a repeat — a small bump consistent with demand/old inferior disease and renal retention, NOT a clear acute STEMI pattern.",
+      "BMP": "Na 137, K 5.6 (MILD HYPERKALEMIA, can worsen AV conduction), Cl 102, HCO3 22 — anion gap = 137 - (102 + 22) = 13 (normal). BUN 38, Cr 1.9 (up from a baseline ~1.4 = AKI on CKD), Mg 2.0 normal, Ca normal.",
+      "Digoxin": "Serum digoxin level 2.6 ng/mL — SUPRATHERAPEUTIC (therapeutic 0.5-2.0); the new AKI has reduced clearance and the mild hyperkalemia is consistent with digoxin effect.",
+      "TSH": "Normal — does not explain the bradycardia.",
+      "Echo": "Echo (later): prior inferior wall motion abnormality, preserved-to-mildly-reduced EF (~45%), no critical valve lesion and no large effusion — structural syncope (severe AS) is excluded."
     }
   },
   "images": {
@@ -34,38 +35,42 @@
       "asset": "https://litfl.com/wp-content/uploads/2018/08/ECG-Complete-heart-block-CHB.jpg",
       "source": "https://litfl.com/av-block-3rd-degree-complete-heart-block/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
-      "verify": "From the LITFL 'Complete Heart Block (3rd degree AV block)' library page — download an example tracing that matches: Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial ra … and self-host with credit to litfl.com.",
+      "integrated": true,
+      "litflStudyN": 44,
+      "findings": "Third-degree (complete) AV block: regular P waves at ~80/min march through independently of a slow, regular ventricular escape at ~36/min; the PR intervals are completely variable (AV dissociation with the atrial rate FASTER than the ventricular rate). No acute ST-elevation MI pattern.",
+      "verify": "From the LITFL 'Complete Heart Block (3rd degree AV block)' library page — download an example tracing that matches: third-degree AV block with AV dissociation, atrial rate faster than a slow ventricular escape; self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "imageDescription": "Third-degree (complete) AV block: P waves and QRS complexes fully dissociated; atrial rate faster than and independent of a slow ventricular escape rhythm.",
       "searchTerms": [
-        "12-lead EKG Third-degree (complete) block: waves"
+        "complete heart block 3rd degree AV block 12-lead ECG",
+        "AV dissociation ventricular escape ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 76-year-old woman presents with profound fatigue, dizziness, and a transient loss of consciousness."
+      "clinicalVignette": "An elderly patient on multiple AV-nodal-blocking drugs presents with profound fatigue, near-syncope, and a sudden collapse without warning."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Enlarged cardiac silhouette (cardiothoracic ratio >0.5) on a PA film; lungs otherwise clear.",
-      "verify": "Source a study matching: Enlarged cardiac silhouette (cardiothoracic ratio >0.5) on a PA film; lungs otherwise clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Mildly enlarged cardiac silhouette (cardiothoracic ratio just over 0.5) on an adequate PA film; lungs clear with no pulmonary edema, no effusion, no pneumothorax — no acute cardiopulmonary cause for the collapse.",
+      "verify": "Source a study matching: borderline cardiomegaly on an adequate PA film with otherwise clear lungs and no edema. Self-host with appropriate credit.",
       "assetNeeded": true,
-      "imageDescription": "PA chest radiograph showing cardiomegaly",
+      "imageDescription": "PA chest radiograph showing borderline cardiomegaly with clear lungs",
       "searchTerms": [
-        "cardiomegaly chest x-ray PA",
-        "enlarged cardiac silhouette radiograph"
+        "borderline cardiomegaly chest x-ray PA",
+        "enlarged cardiac silhouette clear lungs radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 70-year-old man with progressive exertional breathlessness has a chest film to assess heart size."
+      "clinicalVignette": "An elderly man with longstanding hypertension and CAD has a chest film to assess heart size and exclude pulmonary edema."
     }
   },
   "revealKeys": [
     "Glucose",
     "Troponin",
     "BMP",
+    "Digoxin",
     "TSH",
     "Echo",
     "ekg",
@@ -74,52 +79,63 @@
   "essential": [
     "ekg",
     "Troponin",
-    "BMP"
+    "BMP",
+    "Digoxin"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Cardiac syncope due to bradyarrhythmia / high-grade AV block (leading & CANT-MISS,9). Tachyarrhythmia (VT) (CANT-MISS,4). Structural cardiac disease/aortic stenosis (CANT-MISS,3). Vasovagal (much less likely — NO prodrome) (core,2). Seizure (core,2). Recognizes that abrupt syncope without prodrome + bradycardia points to a conduction problem (core,5).",
-      "idealAnswer": "Leading diagnosis: Cardiac syncope due to bradyarrhythmia / high-grade AV block. Must-not-miss diagnoses to exclude: Tachyarrhythmia (VT); Structural cardiac disease/aortic stenosis. Also reasonable: Vasovagal (much less likely — NO prodrome); Seizure.",
+      "prompt": "Based on your history and physical, list your differential for this syncope (note your leading diagnosis). In your answer, name at least THREE distinct etiologies/mechanisms that can produce high-grade or complete AV block in this specific patient.",
+      "rubric": "Cardiac syncope from high-grade / complete AV block (leading & CANT-MISS,7). Names ≥3 mechanisms/etiologies of AV block in THIS patient — intrinsic age-related conduction-system (Lev/Lenegre) disease; ischemic AV block from prior/ongoing inferior (RCA) MI; AV-nodal-blocking DRUG toxicity (metoprolol + diltiazem + supratherapeutic digoxin); hyperkalemia / metabolic; high vagal tone (core,6, ~2 each). Drug-induced bradycardia from triple AV-nodal blockade as a genuine competing cause (CANT-MISS,4). Tachyarrhythmia / VT (CANT-MISS,2). Structural disease / aortic stenosis (core,1). Vasovagal (much less likely — NO prodrome) (core,1). Recognizes abrupt syncope without prodrome + bradycardia points to a conduction problem and that the medication list and renal function are central confounders (core,4). PENALTY: anchoring on a single cause without addressing the polypharmacy/ischemia/electrolyte confounders (-3).",
+      "idealAnswer": "Leading diagnosis: Cardiac syncope due to high-grade / complete (third-degree) AV block. THREE-plus mechanisms that can cause AV block in THIS man: (1) intrinsic age-related conduction-system (Lev/Lenegre) degeneration; (2) ischemic AV block — his prior inferior (RCA-territory) MI and the brief chest pressure two days ago, since the RCA supplies the AV node; (3) AV-nodal-blocking DRUG effect/toxicity — he is on metoprolol PLUS newly added diltiazem PLUS digoxin that is now supratherapeutic; (4) metabolic — mild hyperkalemia worsening conduction. The strongest competing cause is drug-induced bradycardia from triple AV-nodal blockade layered on new AKI. Must-not-miss alternatives: a tachyarrhythmia (VT) and structural disease / severe aortic stenosis. Vasovagal is much less likely given NO prodrome. The absence of any warning plus bradycardia points to a conduction problem, and the medication list and renal function are central confounders that must be reconciled.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Cardiac syncope due to bradyarrhythmia / high-grade AV block",
-            "points": 9
+            "item": "Cardiac syncope due to high-grade / complete AV block",
+            "points": 7
           },
           {
-            "item": "Tachyarrhythmia (VT)",
+            "item": "Drug-induced bradycardia from triple AV-nodal blockade (metoprolol + diltiazem + supratherapeutic digoxin) as a competing cause",
             "points": 4
           },
           {
-            "item": "Structural cardiac disease/aortic stenosis",
-            "points": 3
+            "item": "Tachyarrhythmia (VT)",
+            "points": 2
           }
         ],
         "coreActions": [
           {
+            "item": "Names ≥3 mechanisms/etiologies of AV block (intrinsic conduction disease, ischemic/inferior MI, drug toxicity, hyperkalemia, vagal)",
+            "points": 6
+          },
+          {
+            "item": "Structural cardiac disease / aortic stenosis",
+            "points": 1
+          },
+          {
             "item": "Vasovagal (much less likely — NO prodrome)",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Seizure",
-            "points": 2
-          },
-          {
-            "item": "Recognizes that abrupt syncope without prodrome + bradycardia points to a conduction problem",
-            "points": 5
+            "item": "Recognizes abrupt syncope without prodrome + bradycardia points to a conduction problem; flags the meds and renal function as central confounders",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a single cause without addressing the polypharmacy/ischemia/electrolyte confounders",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Drug-induced bradycardia from triple AV-nodal blockade",
         "Tachyarrhythmia (VT)",
-        "Structural cardiac disease/aortic stenosis"
+        "Structural cardiac disease / aortic stenosis"
       ],
       "acceptableAlternatives": [
         "Vasovagal (much less likely — NO prodrome)",
@@ -132,14 +148,14 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "EKG immediately (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring (CANT-MISS,4). Troponin (2). BMP incl. potassium/magnesium and review for AV-nodal-blocking drugs (2). TSH (1). PENALTY: discharging or failing to place the patient on a monitor (-3).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; Troponin; BMP; TSH; Echo.",
+      "rubric": "EKG immediately (CANT-MISS — diagnostic,5). Continuous telemetry / cardiac monitoring (CANT-MISS,4). BMP including potassium and a creatinine for AKI (core,2). Serum DIGOXIN level given the new drug and renal impairment (core,2). Troponin for ischemia (core,1). TSH (core,0.5). CXR and Echo (core,0.5 combined). PENALTY: discharging or failing to place the patient on a monitor (-3); giving additional rate-control / AV-nodal blockers as 'workup' (-2).",
+      "idealAnswer": "Order: EKG immediately; place on continuous telemetry/cardiac monitoring; BMP (potassium + creatinine to capture the hyperkalemia and AKI); serum digoxin level (new drug + AKI); high-sensitivity troponin; TSH; CXR; and an echocardiogram. Critically, reconcile the medication list right away because three AV-nodal-blocking drugs plus a supratherapeutic digoxin level are part of the workup.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "EKG immediately",
-            "points": 6
+            "points": 5
           },
           {
             "item": "Continuous telemetry / cardiac monitoring",
@@ -148,35 +164,35 @@
         ],
         "coreActions": [
           {
-            "item": "CXR",
+            "item": "BMP (potassium + creatinine for hyperkalemia/AKI)",
             "points": 2
           },
           {
-            "item": "Glucose",
+            "item": "Serum digoxin level",
             "points": 2
           },
           {
             "item": "Troponin",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
+            "points": 1
           },
           {
             "item": "TSH",
-            "points": 2
+            "points": 0.5
           },
           {
-            "item": "Echo",
-            "points": 2
+            "item": "CXR and Echo",
+            "points": 0.5
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "discharging or failing to place the patient on a monitor",
+            "item": "Discharging or failing to place the patient on a monitor",
             "points": -3
+          },
+          {
+            "item": "Giving additional rate-control / AV-nodal blockers",
+            "points": -2
           }
         ]
       },
@@ -184,11 +200,17 @@
         "EKG immediately",
         "Continuous telemetry / cardiac monitoring"
       ],
-      "optionalTests": [],
-      "contraindicatedTests": [
-        "discharging or failing to place the patient on a monitor"
+      "optionalTests": [
+        "Serum digoxin level",
+        "BMP (potassium + creatinine for hyperkalemia/AKI)"
       ],
-      "orderSensitiveActions": []
+      "contraindicatedTests": [
+        "Discharging or failing to place the patient on a monitor",
+        "Giving additional rate-control / AV-nodal blockers"
+      ],
+      "orderSensitiveActions": [
+        "EKG immediately"
+      ]
     },
     {
       "id": "ekg_read",
@@ -196,51 +218,39 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (be specific about the rhythm).",
-      "rubric": "Findings = third-degree (complete) AV block with AV dissociation and a slow ventricular escape. CREDIT: identifies bradycardia (3); recognizes P waves and QRS are DISSOCIATED / independent (6); names complete/third-degree AV block (4); systematic read (2). PENALTY: misreading as sinus bradycardia or 1st/2nd-degree block (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings (be specific about the rhythm) and state how it fits — or does not fit — the competing causes you raised.",
+      "rubric": "Findings = third-degree (complete) AV block: regular P waves marching independently at a rate FASTER than a slow, regular ventricular escape, with completely variable PR intervals (AV dissociation). CREDIT: identifies the bradycardia/slow ventricular rate (3); recognizes P waves and QRS are DISSOCIATED / independent with the atrial rate faster (6); names complete/third-degree AV block (3); notes NO acute STEMI pattern and that the dissociation is structural — drug toxicity and hyperkalemia may have UNMASKED or worsened it but the tracing itself defines complete block requiring pacing (2); systematic read (1). PENALTY: misreading as sinus bradycardia or 1st/2nd-degree block, or calling it 'just drug effect' that resolves with observation (-3).",
       "keyFindings": [
-        "identifies bradycardia",
-        "recognizes P waves and QRS are DISSOCIATED / independent",
-        "names complete/third-degree AV block",
+        "slow regular ventricular escape (bradycardia)",
+        "P waves and QRS fully DISSOCIATED with the atrial rate FASTER than the ventricular rate",
+        "names complete / third-degree AV block",
+        "no acute STEMI pattern; recognizes drug/electrolyte effects may unmask but do not negate complete block",
         "systematic read"
       ],
       "criticalFindings": [
-        "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm."
+        "Third-degree (complete) AV block: regular P waves at ~80/min march through independently of a slow regular ventricular escape at ~36/min, with completely variable PR intervals (AV dissociation, atrial rate faster than ventricular)."
       ],
       "commonMistakes": [
-        "misreading as sinus bradycardia or 1st/2nd-degree block"
+        "misreading as sinus bradycardia or 1st/2nd-degree AV block",
+        "calling it 'just digoxin/diltiazem effect' that will resolve with observation rather than complete block needing pacing",
+        "over-calling an acute STEMI"
       ],
-      "idealAnswer": "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
+      "idealAnswer": "Third-degree (complete) AV block: there is a regular atrial rhythm (P waves ~80/min) that is completely dissociated from a slow, regular ventricular escape (~36/min); the PR intervals vary randomly because no atrial impulse conducts. There is no acute ST-elevation MI pattern. This is the patient's own tracing and it explains his collapse — the escape rhythm is slow and unreliable. His three AV-nodal-blocking drugs, the supratherapeutic digoxin, and the mild hyperkalemia may have unmasked or worsened the block, but the EKG itself defines complete heart block that needs monitoring and pacing rather than mere observation.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
-            "points": 6
-          }
+          "Recognizes: third-degree (complete) AV block with AV dissociation — regular P waves marching independently, atrial rate faster than a slow regular ventricular escape."
         ],
         "coreActions": [
-          {
-            "item": "identifies bradycardia",
-            "points": 3
-          },
-          {
-            "item": "recognizes P waves and QRS are DISSOCIATED / independent",
-            "points": 6
-          },
-          {
-            "item": "names complete/third-degree AV block",
-            "points": 4
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "slow regular ventricular escape (bradycardia)",
+          "P waves and QRS fully dissociated, atrial rate faster than ventricular",
+          "names complete / third-degree AV block",
+          "no acute STEMI pattern; drug/electrolyte effects may unmask but do not negate complete block"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "misreading as sinus bradycardia or 1st/2nd-degree block",
+            "label": "misreads as sinus bradycardia / lower-grade block, or calls it transient drug effect that resolves with observation",
             "points": -3
           }
         ]
@@ -253,32 +263,34 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = cardiomegaly (cardiothoracic ratio >0.5) on an adequate PA film; lungs otherwise clear. CREDIT: identifies the enlarged cardiac silhouette / measures the cardiothoracic ratio (6); confirms an adequate PA projection and otherwise clear lungs (4). PENALTY: calling the film normal / missing the cardiomegaly (-3).",
+      "rubric": "Findings = borderline cardiomegaly (cardiothoracic ratio just over 0.5) on an adequate PA film; lungs clear with NO pulmonary edema or effusion. CREDIT: identifies the enlarged cardiac silhouette / measures the cardiothoracic ratio (5); confirms an adequate PA projection and otherwise clear lungs with no edema as a deliberate pertinent negative (5). PENALTY: calling the film grossly abnormal / inventing pulmonary edema, or over-calling cardiomegaly on an AP/portable film without checking projection (-3).",
       "keyFindings": [
         "measures the cardiothoracic ratio",
-        "identifies cardiomegaly on a PA film"
+        "borderline cardiomegaly on a PA film",
+        "clear lungs with no pulmonary edema"
       ],
       "criticalFindings": [
-        "Cardiomegaly (cardiothoracic ratio >0.5)."
+        "Borderline cardiomegaly (cardiothoracic ratio just over 0.5) with clear lungs and no pulmonary edema."
       ],
       "commonMistakes": [
         "calling a normal heart enlarged on an AP/portable film",
+        "inventing pulmonary edema on a clear film",
         "not checking film projection"
       ],
-      "idealAnswer": "Cardiomegaly with a cardiothoracic ratio >0.5 on an adequate PA film.",
+      "idealAnswer": "Borderline cardiomegaly with a cardiothoracic ratio just over 0.5 on an adequate PA film; the lungs are clear with no pulmonary edema, effusion, or pneumothorax — no acute cardiopulmonary cause for the collapse and no congestion to argue against fluids if needed.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Cardiomegaly (cardiothoracic ratio >0.5)."
+          "Borderline cardiomegaly (cardiothoracic ratio just over 0.5) with clear lungs and no pulmonary edema."
         ],
         "coreActions": [
           "measures the cardiothoracic ratio",
-          "identifies cardiomegaly on a PA film"
+          "clear lungs with no pulmonary edema"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study grossly abnormal / invents pulmonary edema",
             "points": -3
           }
         ]
@@ -288,9 +300,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the EKG, what is your diagnosis and why is this dangerous?",
-      "rubric": "Complete (third-degree) heart block causing cardiac syncope (6). Explains the risk — unreliable escape rhythm, risk of asystole/sudden death (4).",
-      "idealAnswer": "Complete (third-degree) heart block causing cardiac syncope. Dangerous because the ventricular escape rhythm is slow and unreliable, with risk of prolonged asystole, hemodynamic collapse, and sudden death — it requires urgent monitoring and pacing.",
+      "prompt": "Given the EKG and the labs, commit to your diagnosis. Explain why this is dangerous, how you weighed the competing drug-toxicity and ischemic causes, and what single finding most discriminates complete heart block from a purely drug-induced bradycardia.",
+      "rubric": "Complete (third-degree) heart block causing cardiac syncope, committed from the patient's own EKG (5). Explains the danger — slow unreliable escape, risk of prolonged asystole / sudden death (3). Weighs the fork: the supratherapeutic digoxin, triple AV-nodal blockade, hyperkalemia, and prior inferior MI all CONTRIBUTE and must be reversed, but the EKG shows fixed AV dissociation = true complete block; the discriminating step is to remove/reverse the reversible drivers and confirm whether complete block PERSISTS, with EKG-proven AV dissociation (not just slowed conduction) the key feature favoring intrinsic complete block over pure drug effect (2).",
+      "idealAnswer": "Diagnosis: complete (third-degree) heart block causing cardiac syncope — committed from the patient's own EKG showing fixed AV dissociation with the atrial rate faster than a slow ventricular escape. It is dangerous because that escape rhythm is slow and unreliable, risking prolonged asystole, hemodynamic collapse, and sudden death; he needs monitoring and pacing now. Weighing the fork: the supratherapeutic digoxin (2.6) driven by new AKI, the triple AV-nodal blockade (metoprolol + diltiazem + digoxin), the mild hyperkalemia, and the prior inferior (RCA) MI are all genuine contributors and every reversible one must be corrected. The single most discriminating feature is the EKG itself — true AV DISSOCIATION (P waves marching independently through a regular escape) defines complete block, whereas a purely drug-induced bradycardia tends to slow conduction rather than fully dissociate; the discriminating maneuver is to stop and reverse the offending drugs/electrolytes and see whether complete block persists. Because reversibility is uncertain and the block may be fixed conduction-system disease, he cannot be assumed to recover with observation alone.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -303,73 +315,83 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH syncope / pacing: continuous telemetry monitoring (CANT-MISS,4); transcutaneous/transvenous pacing for unstable bradycardia (CANT-MISS,6); cardiology consult for permanent pacemaker (CANT-MISS,5); atropine as temporizing (3); hold AV-nodal blocking agents (3); treat reversible causes (2). PENALTY: discharging complete heart block (-4); giving more AV-nodal blockers (-2).",
-      "idealAnswer": "Telemetry and continuous monitoring. For symptomatic/unstable bradycardia: atropine, then transcutaneous pacing, and a temporary transvenous pacer as a bridge. Hold AV-nodal blocking agents. Cardiology consult for permanent pacemaker (definitive therapy). Treat reversible causes (ischemia, electrolytes, drug toxicity).",
+      "prompt": "What is your management plan, including disposition? Explicitly state whether this patient can be safely discharged and what must happen instead (medication reconciliation, monitoring, follow-up).",
+      "rubric": "Per MGH syncope / bradycardia / pacing: continuous telemetry monitoring (CANT-MISS,3); transcutaneous then transvenous pacing for symptomatic/unstable bradycardia (CANT-MISS,5); cardiology/EP consult for permanent pacemaker (CANT-MISS,4); STOP all AV-nodal-blocking agents — hold metoprolol, diltiazem, digoxin (CANT-MISS,3); atropine as a temporizing measure, acknowledging limited effect in infranodal block (2); treat hyperkalemia and the digoxin toxicity (consider digoxin-specific Fab if clinically toxic), correct AKI / hold nephrotoxic-renally-cleared drugs (2); explicit SAFE-DISCHARGE statement — patient CANNOT be discharged; admit to a monitored bed, do formal medication reconciliation with the wife/caregiver, arrange close cardiology follow-up and pacemaker plan (3). PENALTY: discharging complete heart block (-5); giving or continuing AV-nodal blockers / additional rate control (-3).",
+      "idealAnswer": "Put him on continuous telemetry and admit to a monitored bed — he absolutely CANNOT be discharged. For symptomatic/unstable bradycardia: atropine as a temporizing measure (recognizing it often fails in infranodal/complete block), then transcutaneous pacing, then a temporary transvenous pacer as a bridge. STOP every AV-nodal-blocking agent immediately — hold metoprolol, diltiazem, and digoxin. Treat the reversible drivers: manage the mild hyperkalemia, address digoxin toxicity (digoxin-specific Fab fragments if clinically/hemodynamically toxic), and correct the AKI while holding renally-cleared/nephrotoxic agents. Obtain an urgent cardiology/EP consult for a permanent pacemaker, which is the definitive therapy if complete block persists after reversible causes are corrected. Safe-disposition plan: admit, perform a careful medication reconciliation WITH his wife/caregiver (the triple AV-nodal blockade is the avoidable error), educate them on which drugs were stopped and why, and arrange close cardiology follow-up and a clear pacemaker decision before any future discharge.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Continuous telemetry monitoring",
+            "points": 3
+          },
+          {
+            "item": "Pacing (transcutaneous then transvenous)",
+            "points": 5
+          },
+          {
+            "item": "Cardiology / EP consult for permanent pacemaker",
             "points": 4
           },
           {
-            "item": "Pacing (transcutaneous/transvenous)",
-            "points": 6
-          },
-          {
-            "item": "Cardiology consult for permanent pacemaker",
-            "points": 5
+            "item": "Stop all AV-nodal-blocking agents (hold metoprolol, diltiazem, digoxin)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Atropine as temporizing measure",
-            "points": 3
-          },
-          {
-            "item": "Hold AV-nodal blocking agents",
-            "points": 3
-          },
-          {
-            "item": "Treat reversible causes",
+            "item": "Atropine as a temporizing measure (limited effect in infranodal block)",
             "points": 2
+          },
+          {
+            "item": "Treat hyperkalemia and digoxin toxicity (digoxin-specific Fab if toxic); correct AKI",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge statement: cannot discharge; admit to monitored bed, medication reconciliation with caregiver, close cardiology follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Identify ischemia as cause",
-            "points": 1
+            "item": "Identify the recent triple AV-nodal blockade as the avoidable prescribing error and reconcile it",
+            "points": 3
           }
         ],
         "penalties": [
           {
             "item": "Discharging complete heart block",
-            "points": -4
+            "points": -5
+          },
+          {
+            "item": "Giving or continuing AV-nodal blockers / additional rate control",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
         "Continuous telemetry monitoring",
-        "Pacing (transcutaneous/transvenous)",
-        "Cardiology consult for permanent pacemaker"
+        "Pacing (transcutaneous then transvenous)",
+        "Cardiology / EP consult for permanent pacemaker",
+        "Stop all AV-nodal-blocking agents (hold metoprolol, diltiazem, digoxin)"
       ],
       "optionalActions": [
-        "Atropine as temporizing measure",
-        "Hold AV-nodal blocking agents",
-        "Treat reversible causes",
-        "Identify ischemia as cause"
+        "Atropine as a temporizing measure (limited effect in infranodal block)",
+        "Treat hyperkalemia and digoxin toxicity (digoxin-specific Fab if toxic); correct AKI",
+        "Safe-discharge statement: admit to monitored bed, medication reconciliation with caregiver, close cardiology follow-up",
+        "Identify the recent triple AV-nodal blockade as the avoidable prescribing error"
       ],
       "unsafeActions": [
-        "Discharging complete heart block"
+        "Discharging complete heart block",
+        "Giving or continuing AV-nodal blockers / additional rate control"
       ],
       "consults": [
         "Cardiology / EP"
       ],
-      "disposition": "Admit; monitored bed",
+      "disposition": "Admit; monitored bed (telemetry / CCU) with pacing capability",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Syncope (Complete Heart Block)",
+        "section": "Syncope / Bradyarrhythmia (Complete Heart Block)",
         "page": 37
       }
     }
@@ -381,12 +403,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "78-year-old man, now alert but fatigued. Good historian.",
+    "communicationStyle": "answers directly but does not volunteer extra information; a little vague on exact dates",
+    "affect": "78-year-old man, now alert but fatigued; cooperative, mildly forgetful about details.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the recent diltiazem/digoxin start or the prior inferior MI unless directly asked about medications, recent changes, or cardiac history",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -408,6 +431,39 @@
       "hiddenUntilAsked": true
     },
     {
+      "id": "medication_changes",
+      "category": "meds",
+      "triggerConcepts": [
+        "recent medication changes",
+        "new medications",
+        "any new drugs",
+        "did your doctor change anything",
+        "diltiazem",
+        "digoxin",
+        "rate control"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cardiac_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "heart attack",
+        "prior mi",
+        "cardiac history",
+        "chest pain",
+        "chest pressure",
+        "coronary"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
       "id": "onset",
       "category": "hpi",
       "triggerConcepts": [
@@ -422,13 +478,16 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "character",
+      "id": "prodrome_warning",
       "category": "hpi",
       "triggerConcepts": [
-        "describe the",
+        "any warning",
+        "prodrome",
+        "before you passed out",
+        "lightheaded",
+        "palpitations",
         "what does it feel like",
-        "character",
-        "quality"
+        "character"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -454,7 +513,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "incontinence",
+        "tongue biting",
+        "shaking",
+        "confusion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -468,7 +531,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "with exertion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -481,7 +545,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "kidney",
+        "atrial fibrillation",
+        "dementia"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -494,7 +561,9 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "metoprolol",
+        "donepezil"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -507,7 +576,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "near fainting",
+        "slow pulse"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -518,17 +589,28 @@
   "physicalExamMappings": [
     {
       "id": "assess_jvp_finding_1",
-      "finding": "Cardiac: BRADYCARDIC, regular; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) if specifically examined.",
+      "finding": "Cardiac: profoundly BRADYCARDIC and regular; intermittent CANNON A-waves in the JVP (signs of AV dissociation) when specifically examined.",
       "revealedBy": [
         "assess_jvp"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "JVP not elevated."
+      "normalIfNotPresent": "JVP not elevated; no cannon a-waves."
     },
     {
-      "id": "assess_motor_strength_finding_2",
-      "finding": "Neuro: no focal deficit, oriented.",
+      "id": "auscultate_mitral_area_finding_2",
+      "finding": "Cardiac: bradycardic and regular with VARIABLE intensity of S1 (sign of AV dissociation); no new murmur.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "palpate_pmi"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Heart sounds normal; no murmur."
+    },
+    {
+      "id": "assess_motor_strength_finding_3",
+      "finding": "Neuro: alert, oriented to person and place, no focal motor or sensory deficit, no pronator drift.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -536,6 +618,16 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No focal motor deficit."
+    },
+    {
+      "id": "assess_capillary_refill_finding_4",
+      "finding": "Skin/perfusion: warm peripheries, capillary refill ~2 seconds — adequately perfused despite the bradycardia.",
+      "revealedBy": [
+        "assess_capillary_refill"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Capillary refill normal."
     }
   ],
   "overallScoring": {
@@ -548,34 +640,41 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Complete heart block",
-    "diagnosticFramework": "78M presents after a sudden loss of consciousness with NO warning, on a background of recurrent near-fainting and fatigue. The diagnosis is Complete heart block, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "78M with CAD/prior inferior MI, hypertension, paroxysmal AF, CKD, and early dementia presents after a sudden loss of consciousness with NO warning, on a background of recurrent near-fainting and fatigue. The diagnosis is Complete (third-degree) heart block, defined on his own EKG by fixed AV dissociation with the atrial rate faster than a slow ventricular escape. The picture is layered: he is on THREE AV-nodal-blocking drugs (metoprolol + newly added diltiazem + digoxin), the digoxin is supratherapeutic from new AKI, and he has mild hyperkalemia and a prior inferior (RCA) MI — all genuine contributors to the conduction block that must be reconciled and reversed even as the patient is stabilized and paced.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: BRADYCARDIC, regular; intermittent CANNON A-waves in the JVP; variable intensity of S1 (signs of AV dissociation) if specifically examined.",
-      "Neuro: no focal deficit, oriented."
+      "Cardiac: profoundly BRADYCARDIC and regular; intermittent CANNON A-waves in the JVP (signs of AV dissociation) when specifically examined.",
+      "Cardiac: bradycardic and regular with VARIABLE intensity of S1 (sign of AV dissociation); no new murmur.",
+      "Neuro: alert, oriented to person and place, no focal motor or sensory deficit, no pronator drift.",
+      "Skin/perfusion: warm peripheries, capillary refill ~2 seconds — adequately perfused despite the bradycardia."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "Troponin",
       "BMP",
+      "Digoxin",
       "TSH",
       "Echo"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Complete heart block while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Complete heart block and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals — abrupt syncope with no prodrome and profound bradycardia.",
+      "Elicit the focused history, eliciting the recent diltiazem/digoxin start, the persisting metoprolol, the prior inferior MI, and CKD only on direct questioning.",
+      "Perform the targeted physical exam to reveal cannon a-waves and variable S1 (AV dissociation).",
+      "Build a differential led by complete AV block while naming ≥3 mechanisms (intrinsic conduction disease, ischemic inferior MI, drug toxicity, hyperkalemia) and weighing drug-induced bradycardia as the competing cause.",
+      "Order EKG and telemetry, send a digoxin level and BMP, and reconcile the medication list; interpret the patient's own EKG and the CXR.",
+      "Commit to complete heart block, reverse the drug/electrolyte/renal contributors, stabilize with pacing, and arrange safe disposition with medication reconciliation and a permanent-pacemaker plan."
     ],
     "commonPitfalls": [
+      "Anchoring on a single cause and ignoring the triple AV-nodal blockade, supratherapeutic digoxin, hyperkalemia, and AKI",
+      "Misreading the EKG as sinus bradycardia or lower-grade block",
+      "Assuming the block is purely drug-induced and will resolve with observation",
       "Discharging complete heart block"
     ],
     "managementPearls": [
       "Continuous telemetry monitoring",
-      "Pacing (transcutaneous/transvenous)",
-      "Cardiology consult for permanent pacemaker"
+      "Pacing (transcutaneous then transvenous)",
+      "Stop all AV-nodal-blocking agents and reconcile the medication list",
+      "Cardiology / EP consult for permanent pacemaker"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [],
@@ -584,26 +683,27 @@
       "Continuous telemetry / cardiac monitoring"
     ],
     "criticalInterpretationItems": [
-      "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
-      "Cardiomegaly (cardiothoracic ratio >0.5)."
+      "Third-degree (complete) AV block: regular P waves marching independently, atrial rate faster than a slow regular ventricular escape (AV dissociation).",
+      "Borderline cardiomegaly with clear lungs and no pulmonary edema."
     ],
     "criticalManagementItems": [
       "Continuous telemetry monitoring",
-      "Pacing (transcutaneous/transvenous)",
-      "Cardiology consult for permanent pacemaker"
+      "Pacing (transcutaneous then transvenous)",
+      "Cardiology / EP consult for permanent pacemaker",
+      "Stop all AV-nodal-blocking agents (hold metoprolol, diltiazem, digoxin)"
     ],
     "keyImageInterpretationFindings": [
-      "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
-      "Cardiomegaly (cardiothoracic ratio >0.5)."
+      "Third-degree (complete) AV block: regular P waves marching independently, atrial rate faster than a slow regular ventricular escape (AV dissociation).",
+      "Borderline cardiomegaly with clear lungs and no pulmonary edema."
     ],
     "criticalImageInterpretationFindings": [
-      "Third-degree (complete) AV block: P waves and QRS complexes are dissociated; the atrial rate is faster than and independent of a slow ventricular escape rhythm.",
-      "Cardiomegaly (cardiothoracic ratio >0.5)."
+      "Third-degree (complete) AV block: regular P waves marching independently, atrial rate faster than a slow regular ventricular escape (AV dissociation).",
+      "Borderline cardiomegaly with clear lungs and no pulmonary edema."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Read the rhythm strip systematically: march out the P waves and the QRS complexes separately — independent regular atrial and ventricular rates with the atria faster define complete block.",
+      "AV-nodal-blocking drugs and hyperkalemia can unmask or worsen complete block, but the tracing still defines the rhythm and the need for pacing.",
+      "State pertinent negatives — no acute STEMI pattern, clear lungs with no edema — not just the positives."
     ]
   },
   "communicationScoring": {
@@ -614,15 +714,15 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's concern after a frightening collapse",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Takes a careful medication history and confirms it with the caregiver",
         "points": 1
       },
       {
-        "item": "Explains next steps in patient-friendly language",
+        "item": "Explains next steps (monitoring, pacing, admission) in patient-friendly language",
         "points": 1
       },
       {
@@ -633,8 +733,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG with pathology-forward CXR",
     "ekgReplaced": false,
     "cxrReplaced": true,
     "backwardCompatible": true

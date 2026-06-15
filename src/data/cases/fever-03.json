@@ -2,31 +2,33 @@
   "id": "fever-03",
   "category": "Fever",
   "difficulty": "hard",
-  "title": "Persistent fevers with a new murmur",
+  "title": "Weeks of fevers, weight loss, and a new murmur in a man with prior drug use",
   "diagnosis": "Infective endocarditis",
   "chart": {
     "ageSex": "45M",
-    "cc": "Weeks of fevers and malaise",
-    "oneLiner": "45M presents with 3 weeks of intermittent fevers, night sweats, fatigue, and weight loss; a new heart murmur is noted.",
+    "cc": "Weeks of fevers, sweats, and weight loss",
+    "oneLiner": "45M with type 2 diabetes, hepatitis C (remote injection drug use), and hypertension presents with ~4 weeks of intermittent fevers, drenching night sweats, fatigue, and ~12 lb weight loss; he took a partial course of leftover antibiotics from a friend two weeks ago. A new heart murmur is noted and he appears chronically ill.",
     "vitals": {
-      "BP": "118/64",
-      "HR": "100",
-      "RR": "18",
-      "Temp": "38.5°C",
-      "SpO2": "97% RA"
+      "BP": "108/58",
+      "HR": "104",
+      "RR": "20",
+      "Temp": "38.6°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I've had fevers and night sweats for weeks, I'm wiped out, and I've lost weight.",
-  "patientFile": "PERSONA: 45-year-old man, chronically unwell-appearing, fatigued. Good historian.\n\nHPI: 3 weeks of intermittent fevers, drenching night sweats, malaise, and ~8 lb weight loss. On asking: a history of injection drug use (or a recent dental procedure / known valve disease) — only if asked about drug use, dental work, or heart history. NO localizing symptoms initially. May report transient neurologic symptoms or back pain (embolic phenomena) if asked.\nPMH: possible prior valve disease. MEDS: none regular. SOCIAL: injection drug use (only if asked).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: ill-appearing, febrile.\n- Vitals: BP 118/64, HR 100, RR 18, 38.5°C, SpO2 97% RA.\n- Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.\n- Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/Roth spots.\n- Splenomegaly if examined. Skin: track marks if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer injection drug use, dental work, or valve history unless asked about drug use, recent procedures, or heart history.\n- The murmur, peripheral stigmata, splenomegaly, and track marks are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had fevers and these soaking night sweats for about a month now, I'm exhausted, and my clothes are hanging off me.",
+  "patientFile": "PERSONA: 45-year-old man, chronically unwell-appearing, thin, fatigued. Good historian but quietly worried this is something serious like cancer because of the weight loss and sweats. Cooperative; somewhat guarded about his past drug use until trust is established.\n\nHPI: About 4 weeks of intermittent fevers (he has measured up to 38.9°C at home), drenching night sweats that soak the sheets, profound fatigue, poor appetite, and ~12 lb unintentional weight loss. No clear localizing source at first. About two weeks ago a friend gave him a few days of leftover antibiotics (he is not sure what — 'some kind of penicillin pill') and he felt slightly better for a day or two, then the fevers came right back. On asking: he has noticed a few small painful bumps on his fingertips and some dark streaks under a couple of nails this week, and one painless reddish-purple spot on his palm. He had a few days of dull left-sided low-back and left-upper-belly ache last week that has mostly settled. Brief episode of his left hand feeling 'clumsy' for an hour two days ago that fully resolved (he did not think much of it). NO cough, NO shortness of breath at rest, NO chest pain, NO urinary symptoms, NO diarrhea.\nGUARDED / SENSITIVE HISTORY (reveal ONLY when asked the relevant question, in lay language): He injected heroin in his 20s and early 30s; he has been off injection drugs for ~8 years but still occasionally snorts cocaine, most recently about two months ago. He shared needles back in the day. He was told years ago he has hepatitis C and never got treated. He had a tooth pulled and a deep cleaning at the dentist about 6 weeks ago, just before all this started. He thinks he may have been told once he had a slightly leaky heart valve but never followed up. He has not had any new sexual partners and no foreign travel.\nPMH: Type 2 diabetes (on metformin, last A1c 'high 8s'); hepatitis C (untreated); hypertension; chronic knee osteoarthritis for which he takes ibuprofen most days; remote injection drug use. No known HIV (last test years ago, negative). MEDS: metformin 1000 mg twice daily; lisinopril 20 mg daily; ibuprofen 400-600 mg most days for his knees (sometimes more); omeprazole 20 mg daily; the recent unsupervised partial course of a friend's 'penicillin' two weeks ago. ALLERGIES: none known. SOCIAL: lives alone in a single-room apartment, on disability, smokes half a pack a day, drinks a few beers on weekends, remote IV heroin, occasional intranasal cocaine (see above). No reliable transportation; misses appointments. FAMILY: father had a heart attack at 60; no known cancers. ROS: as in HPI — significant for fevers, sweats, weight loss, anorexia; the finger lesions, nail streaks, palm spot, transient back/flank ache, and the one-hour hand clumsiness; otherwise negative.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: thin, chronically ill-appearing, febrile, mildly diaphoretic.\n- Vitals: BP 108/58, HR 104, RR 20, 38.6°C, SpO2 96% RA. Wide-ish pulse pressure if specifically asked.\n- Cardiac: a NEW early diastolic decrescendo murmur best at the left sternal border (aortic regurgitation) — also a soft systolic murmur; PMI not displaced. Reveal only if auscultated.\n- Peripheral stigmata if examined: splinter hemorrhages under two nails; a tender erythematous nodule on a fingertip pad (Osler node); a single non-tender reddish-purple macule on the palm (Janeway lesion); no Roth spots seen on the limited bedside fundoscopy but conjunctival petechiae present if specifically inspected.\n- Track marks: old, healed track marks over the antecubital fossae if examined; no fresh injection sites.\n- Abdomen: mild splenomegaly with mild LUQ tenderness if examined; no CVA tenderness today.\n- Neuro: nonfocal at rest; the hand clumsiness has resolved.\n- Skin/teeth: poor dentition with a recent extraction site; no fresh cellulitis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the injection-drug history, cocaine use, hepatitis C, the recent dental work, the 'leaky valve,' or the leftover-antibiotic course unless asked about drug use, substances, liver/hepatitis, dental/procedures, heart history, or recent medications.\n- The murmur, peripheral stigmata, splenomegaly, conjunctival petechiae, and track marks are revealed ONLY if the relevant exam is performed.\n- Do NOT volunteer the finger/nail/palm lesions, the transient hand clumsiness, or the back/flank ache unless asked about skin/hands, neurologic symptoms, or other symptoms.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "BloodCultures": "THREE sets of blood cultures from separate sites drawn BEFORE antibiotics; growing gram-positive cocci (e.g., Staph aureus).",
-      "CBC": "Anemia of chronic disease; mild leukocytosis.",
-      "Inflammatory": "ESR and CRP markedly elevated.",
-      "UA": "Microscopic hematuria (immune complex / embolic).",
-      "Echo": "Echocardiogram (TTE then TEE): valvular vegetation with associated regurgitation; assess for abscess.",
-      "Duke": "Findings applied to the modified Duke criteria."
+      "BloodCultures": "THREE sets of blood cultures from separate venipuncture sites drawn BEFORE antibiotics: 2 of 3 sets grow viridans-group streptococci so far (a typical IE organism) at >12h apart; the recent unsupervised antibiotic course may have partially suppressed growth, so prolonged incubation and repeat cultures are advised. (Persistently positive cultures with a typical organism = a major Duke criterion.)",
+      "CBC": "Normocytic anemia, Hgb 10.2 (anemia of chronic disease/inflammation); WBC 13.4 with neutrophil predominance; platelets 142 (mild thrombocytopenia). No blasts; smear shows no lymphoma cells — argues against a primary hematologic malignancy.",
+      "BMP": "Na 132, K 4.5, Cl 96, HCO3 16, BUN 42, Cr 2.1 (baseline ~1.0), glucose 188. Anion gap = 132 − (96 + 16) = 20 (elevated, mild lactate from sepsis ± renal acid retention). Acute kidney injury — likely multifactorial: NSAID use, possible immune-complex glomerulonephritis, and pre-renal from poor intake. Mild hyponatremia of inflammation/volume.",
+      "Inflammatory": "ESR 88 mm/hr and CRP 142 mg/L — both markedly elevated (nonspecific; supports an inflammatory/infectious process but does not distinguish IE from lymphoma).",
+      "UA": "3+ blood with dysmorphic RBCs and a few RBC casts, mild proteinuria — an active sediment suggesting immune-complex glomerulonephritis (a vascular/immunologic phenomenon of IE), not simple lower-tract bleeding.",
+      "LDH_smear": "LDH mildly elevated; peripheral smear without circulating lymphoma cells or blasts; no lymphadenopathy on exam — these findings make lymphoma/leukemia less likely and were obtained specifically to address the malignancy fork.",
+      "Echo": "TTE then TEE: a mobile vegetation on the aortic valve (~12 mm) with moderate-to-severe aortic regurgitation; TEE additionally shows an early perivalvular aortic-root abscess. (Vegetation + new regurgitation = a major Duke criterion; the abscess is a surgical and conduction-risk red flag.)",
+      "Duke": "Modified Duke criteria: TWO major (persistently positive cultures with a typical organism; echo vegetation with new regurgitation) PLUS minor criteria (fever ≥38°C, predisposition — prior IVDU/valvulopathy, vascular phenomena — Janeway lesion/conjunctival petechiae, immunologic phenomena — Osler node/glomerulonephritis) = DEFINITE infective endocarditis."
     }
   },
   "images": {
@@ -35,38 +37,41 @@
       "asset": null,
       "source": "https://litfl.com/first-degree-heart-block-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
-      "verify": "From the LITFL 'First Degree AV Block' library page — download an example tracing that matches: Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess. Self-host with credit to litfl.com.",
+      "integrated": true,
+      "findings": "Sinus tachycardia at ~104 bpm with a NEW first-degree AV block (PR ~260 ms) compared with an old EKG; this new conduction delay in a patient with aortic-valve IE points to a perivalvular (aortic-root) abscess invading the conduction system — a surgical red flag that mandates urgent echo correlation and continuous monitoring for progression to higher-grade block.",
+      "verify": "From the LITFL 'First Degree AV Block' library page — download an example tracing that shows sinus tachycardia with PR prolongation. Self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "imageDescription": "Sinus tachycardia with a new first-degree AV block (prolonged PR interval), the EKG clue to an aortic-root abscess.",
       "searchTerms": [
-        "12-lead EKG Sinus tachycardia; prolongation conduction"
+        "first degree AV block prolonged PR sinus tachycardia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 45-year-old man with prolonged fevers and a new murmur is monitored for conduction changes."
+      "clinicalVignette": "A 45-year-old man with aortic-valve endocarditis develops a new prolonged PR interval — watch for progression to complete heart block from a root abscess."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=septic%20emboli%20chest%20xray%20nodules&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
-      "verify": "Pick a CC chest film showing multiple nodular opacities (septic emboli) OR a normal film; label which it is.",
+      "findings": "No focal consolidation and no peripheral cavitary nodules to suggest septic pulmonary emboli; the cardiomediastinal silhouette is normal and there is no pulmonary edema. A clear film does NOT exclude left-sided endocarditis — it argues against right-sided/tricuspid disease with septic emboli.",
+      "verify": "Pick a CC chest film that is clear (no nodules, no edema) and label it as such, OR one with multiple peripheral nodular opacities; state which it is.",
       "assetNeeded": true,
-      "imageDescription": "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
+      "imageDescription": "Clear chest film without cavitary nodules or pulmonary edema; pertinent negative against septic pulmonary emboli/right-sided IE.",
       "searchTerms": [
-        "chest radiograph show multiple peripheral nodular"
+        "normal chest radiograph clear lung fields PA upright"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 38-year-old man who injects drugs presents with fever, cough, and pleuritic chest pain."
+      "clinicalVignette": "A febrile patient with a new aortic murmur has a screening chest film to look for septic pulmonary emboli and pulmonary edema."
     }
   },
   "revealKeys": [
     "BloodCultures",
     "CBC",
+    "BMP",
     "Inflammatory",
     "UA",
+    "LDH_smear",
     "Echo",
     "Duke",
     "ekg",
@@ -81,49 +86,59 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Infective endocarditis (leading & CANT-MISS,9). Occult bacteremia/sepsis from another source (CANT-MISS,3). Malignancy/lymphoma (core,3). Tuberculosis or other chronic infection (core,2). Autoimmune/vasculitis (core,2). Connects prolonged fever + new murmur + risk factor (IVDU/valve) + embolic stigmata to endocarditis (core,6).",
-      "idealAnswer": "Leading diagnosis: Infective endocarditis. Must-not-miss diagnoses to exclude: Occult bacteremia/sepsis from another source. Also reasonable: Malignancy/lymphoma; Tuberculosis or other chronic infection; Autoimmune/vasculitis.",
+      "prompt": "Based on your history and physical, give your differential and name your leading diagnosis. This man has weeks of fever, drenching sweats, and weight loss — explicitly name THREE classes of disease that produce this 'chronic fever + B-symptoms' picture, and say what tips you toward one.",
+      "rubric": "Infective endocarditis (subacute) is the leading & CANT-MISS diagnosis (9). Lymphoma / occult malignancy is the major competing diagnosis that ALSO explains fever + drenching sweats + weight loss + splenomegaly + anemia and must be actively excluded (CANT-MISS,4). Names three classes of chronic-fever/B-symptom disease — (1) chronic/subacute INFECTION e.g. endocarditis, TB, deep abscess; (2) MALIGNANCY e.g. lymphoma/leukemia; (3) AUTOIMMUNE/inflammatory e.g. vasculitis, adult-onset Still/connective-tissue disease (core, 6 — 2 each). Connects prolonged fever + NEW murmur + risk factor (prior IVDU/dental work/valvulopathy) + embolic & immunologic stigmata (Osler/Janeway/splinters/glomerulonephritis) to endocarditis as the unifying diagnosis (core,4). PENALTY: anchoring on cancer and missing endocarditis despite a new murmur and peripheral stigmata (-3); ignoring the must-not-miss infection while chasing malignancy alone (-2).",
+      "idealAnswer": "Leading diagnosis: subacute infective endocarditis — weeks of fever/sweats/weight loss PLUS a NEW murmur, peripheral stigmata (splinter hemorrhages, an Osler node, a Janeway lesion, conjunctival petechiae), splenomegaly, an active urinary sediment (glomerulonephritis), and risk factors (remote IVDU, recent dental work, a possible pre-existing valvulopathy). Three classes of disease that cause chronic fever + drenching night sweats + weight loss that must each be considered: (1) chronic/subacute INFECTION — endocarditis, tuberculosis, occult deep abscess, HIV-related infection; (2) MALIGNANCY — lymphoma or leukemia (the chief competitor here, since B-symptoms + splenomegaly + anemia fit lymphoma); (3) AUTOIMMUNE / inflammatory — systemic vasculitis, adult-onset Still disease, or another connective-tissue disease. The new murmur, the peripheral embolic/immunologic stigmata, and the recent dental procedure tip strongly toward endocarditis over lymphoma; a smear and imaging will help exclude malignancy.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Infective endocarditis",
+            "item": "Infective endocarditis (subacute)",
             "points": 9
           },
           {
-            "item": "Occult bacteremia/sepsis from another source",
-            "points": 3
+            "item": "Lymphoma / occult malignancy as the major competing diagnosis to exclude",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Malignancy/lymphoma",
-            "points": 3
-          },
-          {
-            "item": "Tuberculosis or other chronic infection",
+            "item": "Names chronic/subacute infection (TB, deep abscess, HIV) as an etiology class of chronic fever + B-symptoms",
             "points": 2
           },
           {
-            "item": "Autoimmune/vasculitis",
+            "item": "Names malignancy (lymphoma/leukemia) as an etiology class",
             "points": 2
           },
           {
-            "item": "Connects prolonged fever + new murmur + risk factor (IVDU/valve) + embolic stigmata to endocarditis",
-            "points": 6
+            "item": "Names autoimmune/inflammatory (vasculitis, adult-onset Still, connective-tissue disease) as an etiology class",
+            "points": 2
+          },
+          {
+            "item": "Connects prolonged fever + new murmur + risk factor (IVDU/dental/valvulopathy) + embolic & immunologic stigmata to endocarditis",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on cancer and missing endocarditis despite a new murmur and peripheral stigmata",
+            "points": -3
+          },
+          {
+            "item": "Ignoring the must-not-miss infection while chasing malignancy alone",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
-        "Occult bacteremia/sepsis from another source"
+        "Lymphoma / occult malignancy",
+        "Tuberculosis or other occult deep infection"
       ],
       "acceptableAlternatives": [
-        "Malignancy/lymphoma",
-        "Tuberculosis or other chronic infection",
-        "Autoimmune/vasculitis"
+        "Autoimmune/vasculitis (e.g. ANCA vasculitis, adult-onset Still disease)",
+        "HIV-related opportunistic infection",
+        "Occult solid-organ abscess"
       ]
     },
     {
@@ -131,14 +146,14 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order? (Order matters here.)",
-      "rubric": "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient (CANT-MISS,5). Echocardiogram — TTE then TEE (CANT-MISS,4). CBC, ESR/CRP (2). Urinalysis (1). EKG to look for conduction block/abscess (2). Apply the modified Duke criteria (1). PENALTY: starting antibiotics before drawing cultures in a stable patient (-3).",
-      "idealAnswer": "Order: EKG; CXR; Blood cultures; CBC; Inflammatory markers; Urinalysis; Echo; Duke.",
+      "prompt": "What initial workup do you want to order? Order matters here — he already took a partial antibiotic course.",
+      "rubric": "At least 3 sets of blood cultures from SEPARATE sites BEFORE any antibiotics in this hemodynamically adequate patient, with prolonged incubation given the recent partial antibiotic course (CANT-MISS,5). Echocardiography — TTE then TEE — to find a vegetation/abscess (CANT-MISS,4). EKG to look for a NEW conduction block signalling a root abscess (2). CBC with smear + LDH to address the lymphoma fork (1). BMP to characterize the AKI/anion gap (1). ESR/CRP (1). Urinalysis with microscopy for glomerulonephritis (1). CXR for septic emboli/edema; HIV and hepatitis serologies given IVDU (bonus). PENALTY: starting empiric antibiotics before drawing cultures in this stable patient (-3); ordering CT-everything before the focused cardiac workup (-1).",
+      "idealAnswer": "Order, in this sequence: EKG; CXR; at least 3 sets of blood cultures from separate venipuncture sites BEFORE antibiotics (this patient is hemodynamically adequate), and tell the lab to hold them for prolonged incubation because of the recent partial antibiotic course; CBC with peripheral smear and LDH (to address lymphoma); BMP (to characterize the AKI and the anion-gap acidosis); ESR/CRP; urinalysis with microscopy (looking for an active glomerulonephritis sediment); echocardiography TTE then TEE; then apply the modified Duke criteria. Also send HIV and hepatitis B/C serologies given the injection-drug history, and review the medication list (NSAID, lisinopril) as contributors to the AKI.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient",
+            "item": "At least 3 sets of blood cultures from separate sites BEFORE antibiotics, with prolonged incubation given the recent partial antibiotic course",
             "points": 5
           },
           {
@@ -148,48 +163,55 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "EKG to look for new conduction block (root abscess)",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "CBC with peripheral smear and LDH (address lymphoma fork)",
+            "points": 1
           },
           {
-            "item": "CBC",
-            "points": 2
+            "item": "BMP to characterize AKI and anion-gap acidosis",
+            "points": 1
           },
           {
-            "item": "Inflammatory markers",
-            "points": 2
+            "item": "ESR/CRP",
+            "points": 1
           },
           {
-            "item": "Urinalysis",
-            "points": 2
-          },
-          {
-            "item": "Duke",
-            "points": 2
+            "item": "Urinalysis with microscopy for glomerulonephritis",
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "CXR and HIV/hepatitis serologies given injection-drug history",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "starting antibiotics before drawing cultures in a stable patient",
+            "item": "starting empiric antibiotics before drawing cultures in a stable patient",
             "points": -3
+          },
+          {
+            "item": "ordering CT-everything before the focused cardiac workup",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
-        "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient",
+        "At least 3 sets of blood cultures from separate sites BEFORE antibiotics, with prolonged incubation given the recent partial antibiotic course",
         "Echocardiogram — TTE then TEE"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "CXR and HIV/hepatitis serologies given injection-drug history"
+      ],
       "contraindicatedTests": [
-        "starting antibiotics before drawing cultures in a stable patient"
+        "starting empiric antibiotics before drawing cultures in a stable patient"
       ],
       "orderSensitiveActions": [
-        "starting antibiotics before drawing cultures in a stable patient"
+        "starting empiric antibiotics before drawing cultures in a stable patient"
       ]
     },
     {
@@ -198,52 +220,38 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (look for a clue to a complication).",
-      "rubric": "Findings = sinus tachycardia ± new PR prolongation. CREDIT: rate & rhythm (5); identifies PR prolongation/conduction delay if present (5); recognizes a NEW conduction abnormality suggests a perivalvular/aortic-root abscess (3); systematic read (2). PENALTY: missing the conduction clue (-2).",
+      "prompt": "Here is the patient's 12-lead EKG, with an old EKG available for comparison. Describe your findings and say why this tracing changes your urgency.",
+      "rubric": "Findings = sinus tachycardia at ~104 bpm with a NEW first-degree AV block (PR ~260 ms) versus the old EKG. CREDIT: states rate & rhythm — sinus tachycardia (5); identifies the prolonged PR / first-degree AV block as NEW compared with the old tracing (5); recognizes that a NEW conduction delay in aortic-valve endocarditis signals a PERIVALVULAR (aortic-root) ABSCESS and mandates urgent TEE and continuous monitoring for progression to complete heart block (3); systematic read with pertinent negatives, no acute ischemic ST changes (2). PENALTY: dismissing the PR prolongation as benign / missing the abscess clue (-3).",
       "keyFindings": [
-        "rate & rhythm",
-        "identifies PR prolongation/conduction delay if present",
-        "recognizes a NEW conduction abnormality suggests a perivalvular/aortic-root abscess",
-        "systematic read"
+        "sinus tachycardia ~104 bpm",
+        "new first-degree AV block (PR ~260 ms) versus old EKG",
+        "new conduction delay suggests an aortic-root abscess — monitor for progression to complete heart block",
+        "systematic read, no acute ischemic changes"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for."
+        "Sinus tachycardia with a NEW first-degree AV block (prolonged PR ~260 ms) — in aortic-valve endocarditis this signals a perivalvular (aortic-root) abscess and must prompt urgent TEE and continuous monitoring for higher-grade block."
       ],
       "commonMistakes": [
-        "missing the conduction clue"
+        "dismissing the prolonged PR as a benign first-degree AV block",
+        "missing the aortic-root-abscess implication of a new conduction delay",
+        "over-reading the sinus tachycardia as a primary arrhythmia"
       ],
-      "idealAnswer": "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
+      "idealAnswer": "Sinus tachycardia at ~104 bpm with a NEW first-degree AV block — the PR interval is prolonged to ~260 ms compared with the old EKG. In a patient with aortic-valve endocarditis, a new conduction delay is a red flag for a perivalvular (aortic-root) abscess eroding into the conduction system; it mandates urgent TEE confirmation, continuous telemetry to catch progression to higher-grade or complete heart block, and surgical evaluation. No acute ischemic ST/T changes.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
-            "points": 5
-          }
+          "Sinus tachycardia with a NEW first-degree AV block (prolonged PR ~260 ms) signalling a possible aortic-root abscess — needs urgent TEE and telemetry."
         ],
         "coreActions": [
-          {
-            "item": "rate & rhythm",
-            "points": 5
-          },
-          {
-            "item": "identifies PR prolongation/conduction delay if present",
-            "points": 5
-          },
-          {
-            "item": "recognizes a NEW conduction abnormality suggests a perivalvular/aortic-root abscess",
-            "points": 3
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "sinus tachycardia ~104 bpm",
+          "new first-degree AV block (prolonged PR) versus old EKG",
+          "recognizes new conduction delay suggests an aortic-root abscess"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "missing the conduction clue",
-            "points": -2
+            "label": "dismisses the prolonged PR / misses the abscess clue",
+            "points": -3
           }
         ]
       }
@@ -254,41 +262,34 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = multiple nodular opacities (septic emboli) in right-sided IE, or clear. CREDIT: identifies nodular opacities/septic emboli OR a normal film (6); links nodules to septic pulmonary emboli in right-sided endocarditis (4). PENALTY: inventing unrelated pathology (-2).",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings and state the pertinent negatives that matter for endocarditis.",
+      "rubric": "Findings = clear lung fields, NO peripheral cavitary nodules, NO pulmonary edema, normal cardiomediastinal silhouette. CREDIT: recognizes a clear/normal film (6); specifically states there are NO peripheral nodular/cavitary opacities to suggest septic pulmonary emboli (right-sided IE) and no pulmonary edema from acute aortic regurgitation — and that a clear film does NOT exclude his LEFT-sided endocarditis (4). PENALTY: inventing an infiltrate, or claiming a clear film rules out endocarditis (-2).",
       "keyFindings": [
-        "identifies nodular opacities/septic emboli OR a normal film",
-        "links nodules to septic pulmonary emboli in right-sided endocarditis"
+        "clear lung fields, normal cardiomediastinal silhouette",
+        "no peripheral cavitary nodules (no septic pulmonary emboli) and no pulmonary edema",
+        "a clear film does not exclude left-sided endocarditis"
       ],
       "criticalFindings": [
-        "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+        "Clear chest film with no peripheral cavitary nodules to suggest septic pulmonary emboli and no pulmonary edema; this is a pertinent negative against right-sided IE but does NOT exclude his left-sided (aortic) endocarditis."
       ],
       "commonMistakes": [
-        "inventing unrelated pathology"
+        "inventing an infiltrate on a clear film",
+        "claiming a normal chest film excludes endocarditis"
       ],
-      "idealAnswer": "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
+      "idealAnswer": "Clear lung fields with a normal cardiomediastinal silhouette: importantly there are NO peripheral nodular or cavitary opacities to suggest septic pulmonary emboli (which would point to right-sided/tricuspid disease) and NO pulmonary edema from acute aortic regurgitation. The pertinent negative is reassuring against right-sided embolic disease but does NOT exclude his left-sided aortic-valve endocarditis — the echo and cultures drive that diagnosis.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear.",
-            "points": 6
-          }
+          "Clear film: no peripheral cavitary nodules (no septic emboli) and no pulmonary edema; does not exclude left-sided endocarditis."
         ],
         "coreActions": [
-          {
-            "item": "identifies nodular opacities/septic emboli OR a normal film",
-            "points": 6
-          },
-          {
-            "item": "links nodules to septic pulmonary emboli in right-sided endocarditis",
-            "points": 4
-          }
+          "clear lung fields, normal cardiomediastinal silhouette",
+          "no septic pulmonary emboli / no pulmonary edema"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing unrelated pathology",
+            "label": "invents pathology or claims a clear film excludes endocarditis",
             "points": -2
           }
         ]
@@ -298,9 +299,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Positive blood cultures, a vegetation on echo, fever, and a new murmur. What is your diagnosis and framework?",
-      "rubric": "Infective endocarditis (6). Applies the modified Duke criteria — major (positive cultures, echo vegetation) plus minor criteria (fever, predisposition, vascular/immunologic phenomena) (4).",
-      "idealAnswer": "Infective endocarditis, diagnosed by the modified Duke criteria: two major criteria are met — persistently positive blood cultures with a typical organism and a vegetation with regurgitation on echo — supported by minor criteria including fever, a predisposition (injection drug use/valve disease), and vascular/immunologic phenomena (Janeway lesions, Osler nodes, Roth spots, hematuria).",
+      "prompt": "Cultures grow viridans streptococci, echo shows an aortic-valve vegetation with new regurgitation AND an early root abscess, the EKG shows a new first-degree AV block, and the urine has an active sediment. Commit to a diagnosis with a framework, name the single best discriminating finding that resolved endocarditis vs lymphoma, and state any residual uncertainty.",
+      "rubric": "Definite infective endocarditis by the modified Duke criteria — TWO major (persistently positive cultures with a typical organism; echo vegetation with new regurgitation) plus minor criteria (fever, predisposition, vascular phenomena, immunologic phenomena/glomerulonephritis) (6). Names the discriminator that resolved the fork toward IE and away from lymphoma — the echo vegetation plus typical-organism bacteremia (and a benign smear without lymphoma cells) clinched infection; integrates the EKG (new AV block = root abscess) as evidence of an invasive complication; acknowledges residual uncertainty — the partially treated cultures could still under-call the organism (consider repeat/extended cultures) and tissue/marrow would be the definitive test if cultures had stayed negative (4).",
+      "idealAnswer": "Definite infective endocarditis (aortic valve, viridans streptococci) by the modified Duke criteria: TWO major criteria — persistently positive blood cultures with a typical organism, and an echocardiographic vegetation with new aortic regurgitation — plus minor criteria including fever ≥38°C, a predisposition (remote IVDU / probable valvulopathy / recent dental work), vascular phenomena (Janeway lesion, conjunctival petechiae, the transient embolic hand symptoms), and immunologic phenomena (Osler node, glomerulonephritis on urinalysis). The single best discriminator that resolved endocarditis versus lymphoma was the echo vegetation together with typical-organism bacteremia — alongside a peripheral smear and LDH that showed no lymphoma cells. The new first-degree AV block on EKG tells me there is an invasive perivalvular (aortic-root) abscess, a complication that changes management toward surgery. Residual uncertainty: the recent partial antibiotic course may have suppressed culture growth, so I would extend incubation and repeat cultures; if cultures had remained negative I would have needed to exclude lymphoma definitively with tissue/marrow and consider culture-negative IE causes.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -313,71 +314,77 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH empiric antibiotics (endocarditis): obtain ≥3 sets of blood cultures from separate sites before antibiotics (CANT-MISS,5); empiric vancomycin + ceftriaxone (native) (CANT-MISS,6); echocardiography TTE→TEE (4); early ID consult (4); assess surgical indications – HF/abscess/persistent bacteremia (3); evaluate embolic foci (2). PENALTY: starting antibiotics before cultures in a stable patient (-3); MSSA treated with vancomycin when beta-lactam available (-1).",
-      "idealAnswer": "Obtain ≥3 sets of blood cultures from separate sites before antibiotics. Empiric therapy for native-valve IE: vancomycin + ceftriaxone (prosthetic: add gentamicin + rifampin – ask ID). Echocardiography (TTE then TEE). Early Infectious Disease consult improves mortality. Evaluate for embolic/metastatic foci and indications for surgery (HF, abscess, persistent bacteremia, large vegetation).",
+      "prompt": "What is your full management plan, including antibiotics, the complication you must act on, consults, and DISPOSITION (where does this patient go, and what makes a fever-with-new-murmur patient safe vs unsafe to discharge)?",
+      "rubric": "Obtain ≥3 sets of blood cultures from separate sites BEFORE antibiotics (CANT-MISS,4). Empiric vancomycin + ceftriaxone for native-valve IE pending speciation/susceptibilities, then de-escalate to targeted therapy for viridans strep (CANT-MISS,6). Act on the root-abscess complication — urgent TEE confirmation, continuous telemetry for AV block, and EARLY cardiac-surgery + ID consultation for surgical indications (abscess, new regurgitation/heart failure, conduction disease) (4). Renal-protective measures — STOP the NSAID and hold/adjust the ACE inhibitor and renally-cleared/nephrotoxic dosing given the AKI; vancomycin level monitoring (3). Disposition: ADMIT — explicitly state this patient is NOT safe for discharge (a fever with a NEW murmur, positive cultures, an invasive abscess, AKI, and an unreliable social situation are all unsafe-discharge criteria); arrange OPAT/long-term IV-access planning, addiction-medicine/harm-reduction referral, dental source control, and close follow-up only when stabilized (4). PENALTY: discharging a fever-with-new-murmur or culture-positive patient (-4); giving antibiotics before cultures in a stable patient (-3); continuing the NSAID/full-dose ACE inhibitor in AKI (-2).",
+      "idealAnswer": "ADMIT — this patient is explicitly NOT safe for discharge: fever with a NEW murmur, positive blood cultures, an invasive root abscess, AKI, and an unreliable home/social situation are all unsafe-discharge red flags (a fever-with-new-murmur patient is only dischargeable when endocarditis has been excluded and they are stable with reliable follow-up). Obtain ≥3 sets of blood cultures from separate sites BEFORE antibiotics, then start empiric vancomycin + ceftriaxone for native-valve IE and de-escalate to targeted penicillin/ceftriaxone once viridans strep susceptibilities return. Act on the complication flagged by the EKG/TEE: the new first-degree AV block plus the aortic-root abscess mean continuous telemetry for progression to complete heart block and EARLY cardiac-surgery and Infectious Disease consultation for surgical indications (perivalvular abscess, new/severe aortic regurgitation or heart failure, conduction disease, persistent bacteremia, large/mobile vegetation). Protect the kidneys: STOP the ibuprofen, hold or dose-reduce the lisinopril, avoid further nephrotoxins, and monitor vancomycin levels and renal function. Evaluate and treat embolic/metastatic foci (the transient hand symptoms warrant brain imaging). Coordinate disposition: OPAT and durable IV-access planning, dental source control for the recent extraction, hepatitis C linkage-to-care, and an addiction-medicine/harm-reduction referral, with close outpatient follow-up only once stabilized.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Multiple blood cultures before antibiotics",
-            "points": 5
+            "item": "≥3 blood cultures from separate sites before antibiotics",
+            "points": 4
           },
           {
-            "item": "Empiric vancomycin + ceftriaxone",
+            "item": "Empiric vancomycin + ceftriaxone, de-escalate to targeted therapy for viridans strep",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "Echocardiography (TTE then TEE)",
+            "item": "Act on the root abscess — urgent TEE, telemetry for AV block, early cardiac surgery + ID consult",
             "points": 4
           },
           {
-            "item": "Early ID consult",
-            "points": 4
-          },
-          {
-            "item": "Assess surgical indications",
+            "item": "Renal protection — stop NSAID, hold/adjust ACE inhibitor, monitor vancomycin levels in AKI",
             "points": 3
           },
           {
-            "item": "Evaluate for embolic foci",
-            "points": 2
+            "item": "Disposition: ADMIT, NOT safe for discharge; OPAT/IV-access, addiction-medicine/harm-reduction referral, dental source control, close follow-up when stable",
+            "points": 4
           }
         ],
         "bonusActions": [
           {
-            "item": "Source/dental evaluation",
+            "item": "Evaluate embolic foci (brain imaging for the transient hand symptoms); hepatitis C linkage-to-care",
             "points": 1
           }
         ],
         "penalties": [
           {
+            "item": "Discharging a fever-with-new-murmur or culture-positive patient",
+            "points": -4
+          },
+          {
             "item": "Antibiotics before cultures (stable patient)",
             "points": -3
+          },
+          {
+            "item": "Continuing the NSAID / full-dose ACE inhibitor in AKI",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Multiple blood cultures before antibiotics",
-        "Empiric vancomycin + ceftriaxone"
+        "≥3 blood cultures from separate sites before antibiotics",
+        "Empiric vancomycin + ceftriaxone, de-escalate to targeted therapy for viridans strep"
       ],
       "optionalActions": [
-        "Echocardiography (TTE then TEE)",
-        "Early ID consult",
-        "Assess surgical indications",
-        "Evaluate for embolic foci",
-        "Source/dental evaluation"
+        "Act on the root abscess — urgent TEE, telemetry for AV block, early cardiac surgery + ID consult",
+        "Renal protection — stop NSAID, hold/adjust ACE inhibitor, monitor vancomycin levels in AKI",
+        "Disposition: ADMIT, NOT safe for discharge; OPAT/IV-access, addiction-medicine/harm-reduction referral, dental source control, close follow-up when stable",
+        "Evaluate embolic foci (brain imaging for the transient hand symptoms); hepatitis C linkage-to-care"
       ],
       "unsafeActions": [
-        "Antibiotics before cultures (stable patient)"
+        "Discharging a fever-with-new-murmur or culture-positive patient",
+        "Antibiotics before cultures (stable patient)",
+        "Continuing the NSAID / full-dose ACE inhibitor in AKI"
       ],
       "consults": [
         "Infectious Disease",
-        "Cardiology / Cardiac Surgery"
+        "Cardiology / Cardiac Surgery",
+        "Addiction Medicine"
       ],
-      "disposition": "Admit",
+      "disposition": "Admit (telemetry); not safe for discharge",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Empiric Antibiotics & Antibiogram (Endocarditis)",
@@ -386,18 +393,21 @@
     }
   ],
   "standardizedPatient": {
-    "demeanor": "well-appearing",
-    "emotionalState": "concerned",
-    "healthLiteracy": "average",
+    "demeanor": "chronically ill",
+    "emotionalState": "worried",
+    "healthLiteracy": "below average",
     "verbosity": "brief",
-    "cooperativeness": "high",
+    "cooperativeness": "moderate",
     "sensitiveTopics": [
-      "drug_use"
+      "drug_use",
+      "cocaine_use",
+      "hepatitis_c",
+      "missed_dental_followup"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "45-year-old man, chronically unwell-appearing, fatigued. Good historian.",
+    "communicationStyle": "answers directly but guards the drug and hepatitis history until rapport is built; does not volunteer extra information",
+    "affect": "45-year-old man, thin and chronically unwell-appearing, fatigued, quietly afraid this is cancer.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal injection-drug or cocaine use, hepatitis C, the recent dental work, the leaky-valve history, or the leftover-antibiotic course unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -411,12 +421,95 @@
         "drug use",
         "substance use",
         "injection drugs",
-        "recreational drugs",
-        "iv drug use"
+        "iv drug use",
+        "heroin",
+        "needles",
+        "cocaine",
+        "recreational drugs"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "dental_procedures",
+      "category": "pmh",
+      "triggerConcepts": [
+        "dental work",
+        "tooth",
+        "dentist",
+        "recent procedure",
+        "cleaning",
+        "extraction"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "heart_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "heart problems",
+        "heart valve",
+        "murmur",
+        "leaky valve",
+        "cardiac history",
+        "valve disease"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_antibiotics",
+      "category": "meds",
+      "triggerConcepts": [
+        "recent antibiotics",
+        "any antibiotics",
+        "took anything for it",
+        "leftover medication",
+        "penicillin"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "skin_hand_lesions",
+      "category": "ros",
+      "triggerConcepts": [
+        "skin changes",
+        "rash",
+        "spots",
+        "fingers",
+        "nails",
+        "bumps on hands",
+        "palms"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "neuro_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "weakness",
+        "numbness",
+        "vision changes",
+        "clumsy hand",
+        "neurologic symptoms",
+        "stroke symptoms"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -440,7 +533,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "night sweats",
+        "fevers"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -448,12 +543,13 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "severity",
-      "category": "hpi",
+      "id": "weight_loss",
+      "category": "ros",
       "triggerConcepts": [
-        "how bad",
-        "severity",
-        "scale"
+        "weight loss",
+        "appetite",
+        "losing weight",
+        "clothes loose"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -466,21 +562,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "aggravating_alleviating",
-      "category": "hpi",
-      "triggerConcepts": [
-        "what makes it worse",
-        "what makes it better",
-        "aggravating",
-        "alleviating"
+        "anything else",
+        "back pain",
+        "flank pain"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -493,7 +577,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "hepatitis"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -506,7 +592,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "ibuprofen",
+        "metformin",
+        "lisinopril"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -529,18 +618,8 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_splenomegaly_finding_1",
-      "finding": "Splenomegaly if examined. Skin: track marks if examined.",
-      "revealedBy": [
-        "assess_splenomegaly"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No splenomegaly."
-    },
-    {
-      "id": "auscultate_aortic_area_finding_2",
-      "finding": "Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.",
+      "id": "auscultate_aortic_area_finding_1",
+      "finding": "Cardiac: a NEW early diastolic decrescendo murmur at the left sternal border (aortic regurgitation) with a soft systolic murmur; PMI not displaced.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -550,8 +629,39 @@
       "normalIfNotPresent": "No murmur appreciated."
     },
     {
-      "id": "assess_for_track_marks_finding_3",
-      "finding": "Splenomegaly if examined. Skin: track marks if examined.",
+      "id": "inspect_nails_finding_2",
+      "finding": "Splinter hemorrhages under two nails; an Osler node (tender erythematous nodule on a fingertip pad) and a Janeway lesion (non-tender reddish-purple palmar macule) if the hands/palms are inspected.",
+      "revealedBy": [
+        "inspect_nails",
+        "inspect_palms_and_soles"
+      ],
+      "importance": "core",
+      "points": 3,
+      "normalIfNotPresent": "No peripheral stigmata."
+    },
+    {
+      "id": "inspect_conjunctiva_finding_3",
+      "finding": "Conjunctival petechiae present on close inspection; no Roth spots seen on limited bedside fundoscopy.",
+      "revealedBy": [
+        "inspect_conjunctiva"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No conjunctival petechiae."
+    },
+    {
+      "id": "assess_splenomegaly_finding_4",
+      "finding": "Mild splenomegaly with mild left-upper-quadrant tenderness on palpation.",
+      "revealedBy": [
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No splenomegaly."
+    },
+    {
+      "id": "assess_for_track_marks_finding_5",
+      "finding": "Old, healed track marks over the antecubital fossae; no fresh injection sites.",
       "revealedBy": [
         "assess_for_track_marks"
       ],
@@ -560,15 +670,15 @@
       "normalIfNotPresent": "No track marks."
     },
     {
-      "id": "inspect_nails_finding_4",
-      "finding": "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/Roth spots.",
+      "id": "assess_general_appearance_finding_6",
+      "finding": "Thin, chronically ill-appearing, febrile, mildly diaphoretic; poor dentition with a healing tooth-extraction site.",
       "revealedBy": [
-        "inspect_nails",
-        "inspect_palms_and_soles"
+        "assess_general_appearance",
+        "inspect_oropharynx"
       ],
       "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No peripheral stigmata."
+      "points": 1,
+      "normalIfNotPresent": "No acute distress."
     }
   ],
   "overallScoring": {
@@ -581,69 +691,83 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Infective endocarditis",
-    "diagnosticFramework": "45M presents with 3 weeks of intermittent fevers, night sweats, fatigue, and weight loss; a new heart murmur is noted. The diagnosis is Infective endocarditis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "45M with type 2 diabetes, untreated hepatitis C (remote injection drug use), hypertension, and chronic NSAID use presents with ~4 weeks of fevers, drenching night sweats, fatigue, and ~12 lb weight loss after a recent dental extraction and an unsupervised partial antibiotic course. The chronic-fever/B-symptom picture forks between subacute infective endocarditis and an occult malignancy such as lymphoma; the NEW aortic-regurgitation murmur, peripheral embolic/immunologic stigmata (Osler node, Janeway lesion, splinters, conjunctival petechiae), splenomegaly, an active glomerulonephritis sediment, persistently positive cultures with viridans streptococci, and an aortic-valve vegetation with a perivalvular abscess on echo resolve it to DEFINITE infective endocarditis by the modified Duke criteria, while a benign smear and LDH exclude lymphoma. A NEW first-degree AV block on EKG flags the root abscess. Concurrent AKI is multifactorial (NSAID, ACE inhibitor, immune-complex glomerulonephritis, pre-renal) with an elevated anion gap and mild hyponatremia.",
     "keyHistoryClues": [
-      "drug use"
+      "drug_use",
+      "dental_procedures",
+      "recent_antibiotics",
+      "heart_history"
     ],
     "keyPhysicalExamFindings": [
-      "Splenomegaly if examined. Skin: track marks if examined.",
-      "Cardiac: a NEW regurgitant murmur (e.g., blowing systolic/diastolic) if auscultated.",
-      "Splenomegaly if examined. Skin: track marks if examined.",
-      "Peripheral stigmata if examined: splinter hemorrhages under the nails, Janeway lesions (painless palms/soles), Osler nodes (painful finger pads), conjunctival/Roth spots."
+      "Cardiac: a NEW early diastolic decrescendo murmur at the left sternal border (aortic regurgitation) with a soft systolic murmur; PMI not displaced.",
+      "Splinter hemorrhages under two nails; an Osler node (tender erythematous nodule on a fingertip pad) and a Janeway lesion (non-tender reddish-purple palmar macule) if the hands/palms are inspected.",
+      "Conjunctival petechiae present on close inspection; no Roth spots seen on limited bedside fundoscopy.",
+      "Mild splenomegaly with mild left-upper-quadrant tenderness on palpation.",
+      "Old, healed track marks over the antecubital fossae; no fresh injection sites.",
+      "Thin, chronically ill-appearing, febrile, mildly diaphoretic; poor dentition with a healing tooth-extraction site."
     ],
     "keyDiagnosticFindings": [
       "BloodCultures",
       "CBC",
+      "BMP",
       "Inflammatory",
       "UA",
+      "LDH_smear",
       "Echo",
       "Duke"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Infective endocarditis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Infective endocarditis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the chronic-fever/B-symptom presentation from the chart and vitals.",
+      "Elicit the focused history, including the sensitive drug, hepatitis, dental, heart-valve, and leftover-antibiotic items only on direct questioning.",
+      "Perform the targeted exam to reveal the new murmur, peripheral stigmata, splenomegaly, conjunctival petechiae, and track marks.",
+      "Build a differential led by subacute infective endocarditis while naming the competing malignancy (lymphoma) and the three classes of chronic-fever disease, and actively excluding the must-not-miss alternatives.",
+      "Order a focused, order-sensitive workup — cultures before antibiotics with prolonged incubation, TTE→TEE, EKG, smear/LDH for lymphoma, BMP for the AKI/anion gap, urinalysis for glomerulonephritis.",
+      "Commit to definite IE by the modified Duke criteria, recognize the EKG/TEE root-abscess complication, and manage with culture-first antibiotics, renal protection, early surgery/ID consults, safe disposition (admit, not safe for discharge), and addiction/dental/HCV follow-up."
     ],
     "commonPitfalls": [
-      "Antibiotics before cultures (stable patient)"
+      "Anchoring on cancer and missing endocarditis despite a new murmur and peripheral stigmata",
+      "Starting antibiotics before cultures in a stable patient",
+      "Dismissing the new first-degree AV block and missing the aortic-root abscess",
+      "Continuing the NSAID/full-dose ACE inhibitor in AKI",
+      "Discharging a fever-with-new-murmur, culture-positive patient"
     ],
     "managementPearls": [
-      "Multiple blood cultures before antibiotics",
-      "Empiric vancomycin + ceftriaxone"
+      "≥3 blood cultures from separate sites before antibiotics",
+      "Empiric vancomycin + ceftriaxone, de-escalate to targeted therapy for viridans strep",
+      "A new conduction delay in aortic-valve IE means a root abscess — telemetry and early surgery",
+      "Admit; this patient is not safe for discharge"
     ],
     "criticalHistoryItems": [
-      "drug_use"
+      "drug_use",
+      "dental_procedures"
     ],
     "criticalExamItems": [
       "auscultate_aortic_area"
     ],
     "criticalWorkupItems": [
-      "At least 3 sets of blood cultures from separate sites, ideally BEFORE antibiotics in a stable patient",
+      "At least 3 sets of blood cultures from separate sites BEFORE antibiotics, with prolonged incubation given the recent partial antibiotic course",
       "Echocardiogram — TTE then TEE"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
-      "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+      "Sinus tachycardia with a NEW first-degree AV block (prolonged PR ~260 ms) signalling a possible aortic-root abscess — needs urgent TEE and telemetry.",
+      "Clear film: no peripheral cavitary nodules (no septic emboli) and no pulmonary edema; does not exclude left-sided endocarditis."
     ],
     "criticalManagementItems": [
-      "Multiple blood cultures before antibiotics",
-      "Empiric vancomycin + ceftriaxone"
+      "≥3 blood cultures from separate sites before antibiotics",
+      "Empiric vancomycin + ceftriaxone, de-escalate to targeted therapy for viridans strep"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
-      "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+      "Sinus tachycardia with a NEW first-degree AV block (prolonged PR ~260 ms) signalling a possible aortic-root abscess — needs urgent TEE and telemetry.",
+      "Clear film: no peripheral cavitary nodules (no septic emboli) and no pulmonary edema; does not exclude left-sided endocarditis."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; a NEW PR prolongation / conduction delay would suggest a perivalvular (aortic root) abscess — an important complication to look for.",
-      "May show multiple peripheral nodular opacities (septic pulmonary emboli) in right-sided endocarditis; otherwise may be clear."
+      "Sinus tachycardia with a NEW first-degree AV block (prolonged PR ~260 ms) signalling a possible aortic-root abscess — needs urgent TEE and telemetry.",
+      "Clear film: no peripheral cavitary nodules (no septic emboli) and no pulmonary edema; does not exclude left-sided endocarditis."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A new conduction abnormality on the EKG of a patient with aortic-valve endocarditis is the bedside clue to a perivalvular root abscess — compare with an old tracing.",
+      "On a fever-with-murmur chest film, the pertinent negatives are septic pulmonary emboli and pulmonary edema; a clear film does not exclude left-sided IE.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -654,11 +778,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's fear that this could be cancer",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive drug-use and hepatitis questions",
         "points": 1
       },
       {
@@ -673,9 +797,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read — new first-degree AV block as the aortic-root-abscess clue",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

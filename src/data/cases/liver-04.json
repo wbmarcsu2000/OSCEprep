@@ -1,66 +1,73 @@
 {
   "id": "liver-04",
   "category": "Abnormal Liver Enzymes",
-  "difficulty": "moderate",
-  "title": "Jaundice with RUQ pain and pale stools",
+  "difficulty": "hard",
+  "title": "Progressive jaundice and weight loss in an older woman: stone or tumor?",
   "diagnosis": "Choledocholithiasis",
   "chart": {
     "ageSex": "55F",
-    "cc": "Right upper abdominal pain and jaundice",
-    "oneLiner": "55F presents with colicky right upper quadrant pain, jaundice, dark urine, and pale stools over a few days.",
+    "cc": "Yellow skin, dark urine, and upper abdominal pain",
+    "oneLiner": "55F with obesity, type 2 diabetes, depression, and hypertension on several medications presents with two weeks of intermittent right-upper-quadrant pain, progressive jaundice, dark urine, pale stools, poor intake, and ~4 kg of weight loss; she has had a low-grade fever and one episode of shaking chills.",
     "vitals": {
-      "BP": "128/78",
-      "HR": "92",
-      "RR": "16",
-      "Temp": "37.8°C",
-      "SpO2": "98% RA"
+      "BP": "108/66",
+      "HR": "104",
+      "RR": "18",
+      "Temp": "38.3°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I've had bouts of pain under my right ribs, my skin's gone yellow, and my stools look pale.",
-  "patientFile": "PERSONA: 55-year-old woman, uncomfortable, jaundiced. Good historian.\n\nHPI: A few days of colicky RUQ pain (worse after meals), progressive jaundice, dark urine, and pale (clay-colored) stools — an obstructive picture. On asking: a history of gallstones / prior biliary colic. Watch for fever and rigors (which with jaundice and RUQ pain = Charcot's triad of ascending cholangitis). NO heavy alcohol, NO large acetaminophen use (verify).\nPMH: cholelithiasis, obesity. MEDS: none regular. SOCIAL: minimal alcohol.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: jaundiced, mildly uncomfortable.\n- Vitals: BP 128/78, HR 92, RR 16, 37.8°C (low-grade — watch for higher fever/rigors), SpO2 98% RA.\n- Abdomen: RUQ tenderness; mild — assess for Murphy's; no peritonism.\n- Skin/eyes: scleral icterus.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gallstone history or stool/urine color unless asked about prior gallbladder problems or stool/urine changes.\n- If asked about fevers/rigors, report the low-grade fever (and that rigors would be concerning for cholangitis).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My skin and eyes have gone yellow, my water's the color of tea, and I keep getting these gripping pains under my right ribs.",
+  "patientFile": "PERSONA: 55-year-old woman, jaundiced, mildly dehydrated and uncomfortable, a bit drowsy from poor intake and nausea. Reasonable historian but tires and gives short answers. Worried that 'something is blocking things up inside.'\n\nHPI: About two weeks of intermittent, gripping right-upper-quadrant pain that is worse after fatty meals and sometimes bores through to the right shoulder blade. Over the same period her skin and eyes have turned progressively yellow, her urine has gone dark (tea-colored), and her stools have become pale and putty-colored — an obstructive picture. Nausea and a couple of episodes of non-bloody vomiting; she has eaten little and lost about 4 kg (≈9 lb) in two weeks, mostly from not eating. Itching of the skin (pruritus) for the past week. She has had a low-grade fever and ONE episode of drenching, teeth-chattering chills two nights ago (reveal only if asked about fevers/chills/rigors — these with the jaundice and RUQ pain are the cholangitis triad to watch for).\nCOMPETING THREADS (reveal only when the relevant question is asked):\n- Prior gallbladder problems: she has had similar but milder bouts of RUQ pain after rich meals for a couple of years and was once told on a scan that she had 'gallstones,' but never had surgery. (Supports a stone.)\n- 'Could this be a cancer?' She is frightened because an aunt died of pancreatic cancer; she has had the weight loss and painless-seeming jaundice that 'comes and goes.' She denies a hard lump, denies that the jaundice has been steadily and PAINLESSLY deepening without any pain at all — her jaundice has tracked WITH painful attacks. (The pain-with-jaundice and prior stones argue toward a stone; the weight loss and family history keep malignancy on the table — this is the genuine fork.)\n- Alcohol: she drinks 2–3 glasses of wine most evenings (about 14–18 drinks/week) and is vague/slightly defensive about it; no withdrawal symptoms, no prior alcoholic hepatitis (reveal only when asked directly; this is the alcohol-vs-obstruction confounder for the LFT pattern).\n- Acetaminophen / OTC: she has been taking extra acetaminophen (Tylenol) for the pain — 'a few extra-strength ones a day,' she thinks under 3 grams daily, plus occasional ibuprofen (reveal only if asked about pain medicines or over-the-counter drugs; a hepatotoxic confounder to quantify, but NOT a massive overdose).\n- Recent travel, sick contacts, IV drug use, tattoos, transfusions, new sexual contacts: none (negative viral-hepatitis risk factors — reveal if asked).\nPMH: cholelithiasis (gallstones on prior ultrasound, no cholecystectomy); type 2 diabetes mellitus; obesity (BMI ~34); hypertension; depression. No known liver disease, no prior jaundice. MEDS: metformin; hydrochlorothiazide (for blood pressure); citalopram (for depression); occasional acetaminophen and ibuprofen for pain; she was given ondansetron in triage for nausea. ALLERGIES: none. SOCIAL: lives with her husband, works part-time; wine most evenings as above; never smoked; no recreational drugs. FAMILY: an aunt died of pancreatic cancer; mother had gallstones. ROS: as above — pruritus, dark urine, pale stool, anorexia, weight loss, low-grade fever, one rigor; no chest pain, no palpitations, no syncope, no melena/hematochezia, no confusion at baseline.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: jaundiced, mildly dehydrated, tired-appearing, in mild distress with the pain.\n- Vitals: BP 108/66, HR 104, RR 18, 38.3°C, SpO2 97% RA (mildly tachycardic and borderline hypotensive — early sepsis physiology).\n- Eyes/skin: deep scleral icterus; jaundiced skin with a few excoriations from scratching; no spider angiomata, no palmar erythema.\n- Abdomen: tender in the right upper quadrant with voluntary guarding; assess for Murphy's sign (mildly positive — inspiratory catch); no rebound or rigidity; no palpable gallbladder mass and no Courvoisier (non-tender) palpable gallbladder; liver edge mildly tender, not hugely enlarged; no shifting dullness/ascites; spleen not enlarged.\n- Mucous membranes dry; capillary refill ~3 seconds (volume depletion).\n- No asterixis; alert and oriented (no overt hepatic encephalopathy).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior gallstones, the cancer fear/weight loss, the alcohol amount, or the extra acetaminophen unless the relevant area is asked about.\n- Do NOT volunteer the stool/urine color or the pruritus unless asked about those changes or about itching.\n- If asked about fevers/chills/rigors, report the low-grade fever and the one episode of drenching chills.\n- Reveal exam findings only when the matching exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "LFTs": "CHOLESTATIC pattern: Alk Phos and GGT markedly elevated; AST/ALT moderately elevated.",
-      "Bilirubin": "Total bilirubin elevated with a DIRECT (conjugated) predominance.",
-      "Lipase": "Normal (checked to exclude gallstone pancreatitis).",
-      "CBC": "Mild leukocytosis (marked leukocytosis + fever would suggest cholangitis).",
-      "Acetaminophen": "Not elevated (still checked).",
-      "Imaging": "RUQ ultrasound: cholelithiasis with a DILATED common bile duct (and a stone if seen); MRCP/ERCP confirms a CBD stone."
+      "LFTs": "Markedly CHOLESTATIC pattern: Alk Phos 410 U/L and GGT 520 U/L (both markedly elevated); AST 120 and ALT 145 U/L (only moderately elevated). The Alk-Phos/GGT-dominant, transaminase-spared pattern points to biliary obstruction rather than a primary hepatocellular (alcoholic/acetaminophen) injury, where transaminases would dominate; the AST:ALT ratio is <2, also against alcoholic hepatitis.",
+      "Bilirubin": "Total bilirubin 9.8 mg/dL with a DIRECT (conjugated) fraction of 7.4 mg/dL (≈75% direct) — conjugated hyperbilirubinemia of obstruction; the deep, fluctuating jaundice tracks with the painful attacks.",
+      "Lipase": "Lipase 180 U/L — mildly elevated (about 2–3× the upper limit, below the ~3× threshold usually required to call acute pancreatitis), checked to screen for early gallstone pancreatitis; trend it.",
+      "CBC": "WBC 14.8 ×10⁹/L with a left shift (neutrophil predominance, bands present), Hgb 12.6 g/dL, Plt 250. The leukocytosis plus fever and a rigor raises concern for ascending cholangitis.",
+      "BMP": "Na 131, K 3.6, Cl 99, HCO₃ 22, BUN 32, Creatinine 1.4 mg/dL (baseline 0.8), glucose 168. Anion gap = 131 − (99 + 22) = 10 (normal). Findings: mild HYPONATREMIA (thiazide plus poor intake/vomiting), a pre-renal ACUTE KIDNEY INJURY (Cr up from 0.8 to 1.4, BUN/Cr ratio 23) from dehydration and early sepsis, and mild hyperglycemia from her diabetes — concurrent problems beyond the biliary tree.",
+      "Coags": "INR 1.5 (mildly elevated), PTT mildly prolonged, with a NORMAL albumin (3.9 g/dL). The coagulopathy with preserved albumin and no other stigmata of chronic liver disease fits cholestasis-related vitamin-K malabsorption (correctable with vitamin K) rather than hepatic synthetic failure — and must be corrected before ERCP/sphincterotomy.",
+      "Acetaminophen": "Acetaminophen level 8 µg/mL (sub-toxic, well below the treatment nomogram line) — checked given her extra Tylenol use; does NOT explain the cholestatic picture.",
+      "Hepatitis_serologies": "Hepatitis A IgM, hepatitis B surface antigen/core IgM, and hepatitis C antibody all NEGATIVE — argues against acute viral hepatitis as the cause of the jaundice.",
+      "Imaging": "RUQ ultrasound: multiple gallstones in the gallbladder with a DILATED common bile duct (10 mm) and an obstructing echogenic stone with shadowing seen in the distal CBD; NO pancreatic-head mass and NO focal liver lesion identified; gallbladder wall not markedly thickened. Subsequent MRCP confirms a distal CBD stone with upstream ductal dilation and NO obstructing tumor — resolving the stone-versus-malignancy question toward a stone."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 23,
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Narrow-complex regular rhythm ~50 with absent or inverted/retrograde P waves (junctional escape).",
-      "verify": "Source a study matching: Narrow-complex regular rhythm ~50 with absent or inverted/retrograde P waves (junctional escape). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~104 bpm with a markedly PROLONGED QT/QTc interval (drug-induced long QT) — the patient is on citalopram and received ondansetron, and is mildly hypokalemic; no acute ST-elevation. This is the patient's OWN tracing and bears on her management (avoid further QT-prolonging antiemetics, replete electrolytes, watch for torsades).",
+      "verify": "Source a study matching: sinus tachycardia with a markedly prolonged QT/QTc interval (drug-induced long QT); no acute ST-elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing junctional escape rhythm",
+      "imageDescription": "12-lead showing sinus tachycardia with a prolonged QT interval and no acute ischemic ST elevation",
       "searchTerms": [
-        "junctional escape rhythm ECG",
-        "junctional rhythm retrograde P"
+        "drug induced long QT ECG",
+        "prolonged QT interval 12 lead ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 68-year-old woman with lightheadedness has a slow regular narrow-complex rhythm with retrograde P waves, a junctional escape."
+      "clinicalVignette": "A 55-year-old woman on citalopram who has received ondansetron for nausea has a fast regular rhythm with a strikingly long QT interval."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "No free air; clear bases (excludes perforation and basal pneumonia).",
+      "findings": "No free air under the diaphragm; clear lung bases; normal cardiomediastinal silhouette (excludes perforated viscus and a basal pneumonia mimicking RUQ pain).",
       "verify": "Pick a CC normal upright chest film.",
       "assetNeeded": true,
-      "imageDescription": "No free air; clear bases (excludes perforation and basal pneumonia).",
+      "imageDescription": "Upright chest radiograph with no subdiaphragmatic free air and clear lung bases",
       "searchTerms": [
-        "chest radiograph free air; clear bases"
+        "normal upright PA chest x-ray",
+        "no free air under diaphragm chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 60-year-old woman with upper abdominal pain has an upright film showing no free air and clear lung bases."
+      "clinicalVignette": "A 55-year-old woman with upper abdominal pain has an upright film showing no free air and clear lung bases."
     }
   },
   "revealKeys": [
@@ -68,7 +75,10 @@
     "Bilirubin",
     "Lipase",
     "CBC",
+    "BMP",
+    "Coags",
     "Acetaminophen",
+    "Hepatitis_serologies",
     "Imaging",
     "ekg",
     "cxr"
@@ -83,54 +93,64 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Choledocholithiasis (CBD stone) (leading,7). Ascending cholangitis (CANT-MISS,5). Acute cholecystitis (core,3). Gallstone pancreatitis (CANT-MISS to exclude,3). Hepatitis (core,2). Malignant biliary obstruction (core,2). Recognizes a CHOLESTATIC/obstructive pattern and the cholangitis triad to watch for (core,3).",
-      "idealAnswer": "Leading diagnosis: Choledocholithiasis (CBD stone). Must-not-miss diagnoses to exclude: Ascending cholangitis; Gallstone pancreatitis. Also reasonable: Acute cholecystitis; Hepatitis; Malignant biliary obstruction.",
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis). This older woman has weight loss and a family history of pancreatic cancer, so explicitly weigh stone versus tumor. Also name three mechanisms/etiologies of a cholestatic (obstructive) jaundice.",
+      "rubric": "Choledocholithiasis (CBD stone) (leading,6). Malignant biliary obstruction — pancreatic-head or cholangiocarcinoma, the genuine competing dx given age, weight loss, and family history (CANT-MISS,5). Ascending cholangitis given fever + rigor + jaundice + RUQ pain (Charcot's triad) (CANT-MISS,4). Gallstone pancreatitis — must exclude (CANT-MISS,2). Acute cholecystitis (core,1). Alcoholic or acetaminophen hepatocellular injury considered but the cholestatic, transaminase-spared pattern argues against it (core,2). Viral hepatitis (core,1). Names three mechanisms/etiologies of cholestatic jaundice — e.g. CBD stone, malignant stricture (pancreatic head / cholangiocarcinoma), primary sclerosing cholangitis / other stricture, or drug-induced cholestasis (core,3). PENALTY: anchoring on a simple stone and ignoring malignancy in an older patient with weight loss (-3).",
+      "idealAnswer": "Leading diagnosis: Choledocholithiasis (CBD stone) — known gallstones, fatty-food-triggered RUQ pain that tracks with fluctuating jaundice, and a cholestatic, conjugated picture. The genuine competing diagnosis to exclude is malignant biliary obstruction (pancreatic-head tumor or cholangiocarcinoma), kept on the table by her age, 4 kg weight loss, and family history of pancreatic cancer — distinguished by imaging looking for a mass and by the pain/prior-stone pattern. Must-not-miss: ascending cholangitis (she has fever, a rigor, jaundice, and RUQ pain = Charcot's triad) and gallstone pancreatitis. Also reasonable: acute cholecystitis; alcoholic or acetaminophen hepatocellular injury (less likely given the Alk-Phos/GGT-dominant, transaminase-spared pattern and AST:ALT <2); viral hepatitis. Three mechanisms/etiologies of cholestatic/obstructive jaundice: a CBD stone (choledocholithiasis); a malignant stricture (pancreatic-head carcinoma or cholangiocarcinoma); and a benign stricture / primary sclerosing cholangitis or drug-induced cholestasis.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Choledocholithiasis (CBD stone)",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Ascending cholangitis",
+            "item": "Malignant biliary obstruction (pancreatic head / cholangiocarcinoma)",
             "points": 5
           },
           {
+            "item": "Ascending cholangitis",
+            "points": 4
+          },
+          {
             "item": "Gallstone pancreatitis",
-            "points": 3
+            "points": 2
           }
         ],
         "coreActions": [
           {
             "item": "Acute cholecystitis",
-            "points": 3
+            "points": 1
           },
           {
-            "item": "Hepatitis",
+            "item": "Alcoholic or acetaminophen hepatocellular injury (considered, argued against by the cholestatic pattern)",
             "points": 2
           },
           {
-            "item": "Malignant biliary obstruction",
-            "points": 2
+            "item": "Viral hepatitis",
+            "points": 1
           },
           {
-            "item": "Recognizes a CHOLESTATIC/obstructive pattern and the cholangitis triad to watch for",
+            "item": "Names three mechanisms/etiologies of cholestatic (obstructive) jaundice",
             "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a simple stone and ignores malignancy in an older patient with weight loss",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Malignant biliary obstruction (pancreatic head / cholangiocarcinoma)",
         "Ascending cholangitis",
         "Gallstone pancreatitis"
       ],
       "acceptableAlternatives": [
         "Acute cholecystitis",
-        "Hepatitis",
-        "Malignant biliary obstruction"
+        "Alcoholic or acetaminophen hepatocellular injury",
+        "Viral hepatitis"
       ]
     },
     {
@@ -139,48 +159,60 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "LFTs — recognize the cholestatic (Alk Phos/GGT) pattern (CANT-MISS,3). Fractionated bilirubin (2). Lipase to exclude gallstone pancreatitis (2). CBC (1). Acetaminophen level (1). RUQ ultrasound — duct dilation/stones (CANT-MISS,4). MRCP/ERCP for confirmation (2). PENALTY: not imaging the biliary tree in obstructive jaundice (-2).",
-      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; Lipase; CBC; Acetaminophen; Imaging.",
+      "rubric": "LFTs — recognize the cholestatic (Alk Phos/GGT-dominant) pattern (CANT-MISS,3). RUQ ultrasound — duct dilation/stones and to look for a mass (CANT-MISS,3). Fractionated bilirubin (1). Lipase to screen for gallstone pancreatitis (1). CBC (1). BMP — catch the AKI and hyponatremia (1). Coags/INR before any ERCP/sphincterotomy (1). Acetaminophen level given her Tylenol use (1). Viral hepatitis serologies (1). MRCP/ERCP for confirmation and to define stone vs stricture (1). PENALTY: not imaging the biliary tree in obstructive jaundice (-2).",
+      "idealAnswer": "Order: EKG; CXR; LFTs (expect a cholestatic Alk-Phos/GGT-dominant pattern); fractionated Bilirubin; Lipase (screen for gallstone pancreatitis); CBC; BMP (look for AKI and hyponatremia); Coags/INR (correct before any ERCP); Acetaminophen level (she has been taking extra Tylenol); viral Hepatitis serologies; and a RUQ ultrasound as the first imaging — assess for duct dilation, stones, AND a pancreatic-head or biliary mass — with MRCP/ERCP to confirm a stone versus a stricture.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "LFTs — recognize the cholestatic (Alk Phos/GGT) pattern",
+            "item": "LFTs — recognize the cholestatic (Alk Phos/GGT-dominant) pattern",
             "points": 3
           },
           {
-            "item": "RUQ ultrasound — duct dilation/stones",
-            "points": 4
+            "item": "RUQ ultrasound — duct dilation/stones and look for a mass",
+            "points": 3
           }
         ],
         "coreActions": [
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Bilirubin",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Lipase",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
+          },
+          {
+            "item": "BMP",
+            "points": 1
+          },
+          {
+            "item": "Coags / INR before ERCP",
+            "points": 1
           },
           {
             "item": "Acetaminophen",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Imaging",
-            "points": 2
+            "item": "Hepatitis serologies",
+            "points": 1
+          },
+          {
+            "item": "MRCP / ERCP for confirmation",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -192,8 +224,8 @@
         ]
       },
       "requiredTests": [
-        "LFTs — recognize the cholestatic (Alk Phos/GGT) pattern",
-        "RUQ ultrasound — duct dilation/stones"
+        "LFTs — recognize the cholestatic (Alk Phos/GGT-dominant) pattern",
+        "RUQ ultrasound — duct dilation/stones and look for a mass"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
@@ -207,32 +239,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = junctional escape rhythm (narrow regular complexes ~50 with absent/retrograde P waves). CREDIT: systematic rate & rhythm read (7); recognizes the narrow regular rhythm without normal sinus P waves (5); identifies a junctional escape rhythm (3). PENALTY: calling it sinus bradycardia / normal or missing the abnormality (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and relate them to her medications and electrolytes.",
+      "rubric": "Findings = sinus tachycardia (~104) with a markedly PROLONGED QT/QTc interval (drug-induced long QT), and NO acute ST-elevation. CREDIT: systematic rate & rhythm read identifying sinus tachycardia (4); recognizes the prolonged QT/long QTc (5); attributes it to QT-prolonging drugs (citalopram + ondansetron) plus the mild hypokalemia and flags torsades risk (3); states there is no acute ischemia (3). PENALTY: missing the long QT / calling the tracing normal (-3); giving more QT-prolonging antiemetics without recognizing the risk (-2).",
       "keyFindings": [
-        "narrow regular rhythm without normal sinus P waves",
-        "identifies a junctional escape rhythm"
+        "sinus tachycardia with a markedly prolonged QT/QTc interval",
+        "no acute ischemic ST elevation"
       ],
       "criticalFindings": [
-        "Junctional escape rhythm."
+        "Sinus tachycardia with a markedly prolonged QT (drug-induced long QTc); no acute ST-elevation."
       ],
       "commonMistakes": [
-        "calling it sinus bradycardia despite absent upright P waves"
+        "missing the prolonged QT interval and calling the tracing normal sinus tachycardia",
+        "not linking the long QT to citalopram/ondansetron and the low potassium",
+        "giving repeat ondansetron without recognizing the torsades risk"
       ],
-      "idealAnswer": "Junctional escape rhythm: narrow regular complexes at ~50 with absent/retrograde P waves.",
+      "idealAnswer": "Sinus tachycardia at ~104 bpm with a markedly PROLONGED QT interval (long QTc) and no acute ST-elevation. The long QT is drug-induced — she is on citalopram and received ondansetron, both QT-prolonging — and is compounded by her mild hypokalemia (K 3.6); this puts her at risk for torsades de pointes. The tachycardia fits her pain, fever, and volume depletion. Practically: avoid further QT-prolonging antiemetics, replete potassium and magnesium, and recheck the QT — this is her own tracing and changes her management.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Junctional escape rhythm."
+          "Sinus tachycardia with a markedly prolonged QT (drug-induced long QTc); no acute ST-elevation."
         ],
         "coreActions": [
-          "narrow regular rhythm without normal sinus P waves",
-          "identifies a junctional escape rhythm"
+          "sinus tachycardia with a markedly prolonged QT/QTc interval",
+          "no acute ischemic ST elevation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "misses the prolonged QT / calls the tracing normal / repeats QT-prolonging drugs",
             "points": -3
           }
         ]
@@ -245,29 +279,30 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no free air, clear bases. CREDIT: identifies a normal film (5); excludes free air and basal pneumonia (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no free air under the diaphragm, clear bases, normal cardiomediastinal silhouette. CREDIT: identifies a normal film (4); specifically excludes subdiaphragmatic free air (perforation) and a basal pneumonia mimicking RUQ pain (6). PENALTY: inventing pathology (-2).",
       "keyFindings": [
-        "identifies a normal film",
-        "excludes free air and basal pneumonia"
+        "no free air under the diaphragm",
+        "clear lung bases"
       ],
       "criticalFindings": [
-        "No free air; clear bases (excludes perforation and basal pneumonia)."
+        "No subdiaphragmatic free air; clear bases (excludes perforation and basal pneumonia)."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "failing to comment on the absence of free air",
+        "inventing an infiltrate on a clear film"
       ],
-      "idealAnswer": "No free air; clear bases (excludes perforation and basal pneumonia).",
+      "idealAnswer": "No free air under the diaphragm, clear lung bases, and a normal cardiomediastinal silhouette — a deliberate screen that excludes a perforated viscus and a right-basal pneumonia mimicking her RUQ pain.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "No free air; clear bases (excludes perforation and basal pneumonia).",
+            "item": "No subdiaphragmatic free air; clear bases (excludes perforation and basal pneumonia).",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "notes the film is low-yield / a reasonable screen",
+            "item": "notes the film is a reasonable screen / low-yield otherwise",
             "points": 4
           }
         ],
@@ -284,9 +319,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Cholestatic LFTs, conjugated hyperbilirubinemia, and a dilated CBD with a stone. What is your diagnosis and what worsens the urgency?",
-      "rubric": "Choledocholithiasis (6). Recognizes that fever/rigors + jaundice + RUQ pain (Charcot's triad) signals ascending cholangitis requiring urgent decompression (4).",
-      "idealAnswer": "Choledocholithiasis. Urgency escalates if fever/rigors develop (Charcot's triad with jaundice and RUQ pain), signalling ascending cholangitis and the need for urgent biliary decompression.",
+      "prompt": "Cholestatic LFTs with conjugated hyperbilirubinemia, a dilated CBD with an obstructing stone and NO mass on ultrasound/MRCP, mild AKI and hyponatremia, an INR of 1.5, and a long QT on EKG. Commit to a diagnosis, name the test that resolved stone-versus-tumor, state any residual uncertainty, and say what raises the urgency.",
+      "rubric": "Commits to Choledocholithiasis (6). Names the discriminator — ultrasound/MRCP showing a distal CBD stone with no pancreatic-head or biliary mass — that resolves the stone-versus-malignancy fork, while acknowledging residual uncertainty (a small tumor can be missed; follow imaging/clinical course if it does not resolve) (2). Recognizes that fever + rigor + jaundice + RUQ pain (Charcot's triad) signals ascending cholangitis requiring urgent decompression, and that the AKI/sepsis physiology and coagulopathy add urgency and must be corrected before ERCP (2).",
+      "idealAnswer": "Choledocholithiasis with ascending cholangitis. The discriminating test was the RUQ ultrasound (and confirmatory MRCP) showing multiple gallstones with a dilated 10 mm CBD and an obstructing distal CBD stone, and — importantly — NO pancreatic-head or biliary mass, which resolves the stone-versus-tumor question toward a stone; the conjugated hyperbilirubinemia and Alk-Phos/GGT-dominant pattern confirm obstruction, and the negative viral serologies and sub-toxic acetaminophen level make hepatocellular causes unlikely. Residual uncertainty: a small malignancy can be occult, so if she does not resolve after decompression I would re-image and consider EUS/repeat cross-sectional imaging. Urgency: she already meets Charcot's triad (fever, a rigor, jaundice, RUQ pain) for ascending cholangitis, and she has early sepsis physiology with a pre-renal AKI and hyponatremia — she needs urgent biliary decompression, and her INR of 1.5 (cholestatic vitamin-K deficiency) must be corrected with vitamin K before sphincterotomy.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -299,14 +334,14 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH biliary disease: NPO + IV fluids (CANT-MISS,4); broad-spectrum antibiotics (Zosyn or CTX/metronidazole) (CANT-MISS,5); urgent ERCP for biliary decompression/stone extraction (CANT-MISS,6); percutaneous drainage if ERCP not feasible (3); interval cholecystectomy (2); GI/surgery consult (2). PENALTY: managing cholangitis with antibiotics alone without decompression (-3).",
-      "idealAnswer": "Choledocholithiasis with cholangitis: NPO, IV fluids, and broad-spectrum antibiotics (piperacillin-tazobactam, or ceftriaxone + metronidazole). Biliary decompression by urgent ERCP with stone extraction – within 24–48 h if severe/septic or failing antibiotics; percutaneous drainage if ERCP not feasible. Interval cholecystectomy for gallstones. GI/surgery consult.",
+      "prompt": "What is your management plan, including how the long QT and coagulopathy change your orders, and the disposition/safe-discharge plan?",
+      "rubric": "Per MGH biliary disease: NPO + IV fluid resuscitation for the sepsis/AKI (CANT-MISS,4); broad-spectrum antibiotics covering enteric/biliary organisms (piperacillin-tazobactam, or ceftriaxone + metronidazole) (CANT-MISS,5); urgent ERCP for biliary decompression/stone extraction (CANT-MISS,6); correct the coagulopathy with vitamin K (and FFP if actively bleeding) before sphincterotomy (2); address the long QT — hold/avoid QT-prolonging drugs (ondansetron, citalopram), replete K and Mg, telemetry (2); GI/surgery consult and interval cholecystectomy after recovery (2); percutaneous transhepatic drainage if ERCP fails (1). Safe disposition: ADMIT (do NOT discharge); plan med reconciliation (stop the thiazide given hyponatremia/AKI, limit acetaminophen), telemetry, and arrange interval cholecystectomy with GI follow-up (1). PENALTY: discharging an obstructed/septic patient or treating cholangitis with antibiotics alone without decompression (-4); giving more ondansetron/QT-prolonging drugs despite the long QT (-2).",
+      "idealAnswer": "Admit — this is choledocholithiasis with ascending cholangitis and early sepsis, not a safe discharge. NPO and IV fluid resuscitation for the AKI/sepsis. Broad-spectrum antibiotics covering enteric and biliary organisms (piperacillin-tazobactam, or ceftriaxone plus metronidazole). URGENT ERCP for biliary decompression with stone extraction and sphincterotomy — escalate the timing if she is septic or failing antibiotics; percutaneous transhepatic biliary drainage if ERCP is not feasible. Before sphincterotomy, correct her coagulopathy: give IV vitamin K for the cholestatic vitamin-K deficiency (INR 1.5), and FFP only if actively bleeding/urgent. Address the long QT: place her on telemetry, hold further QT-prolonging drugs (no repeat ondansetron, hold citalopram), and replete potassium and magnesium to prevent torsades. Analgesia and an antiemetic that does not prolong the QT. GI and surgery consults; plan interval laparoscopic cholecystectomy once recovered. Disposition/safe-discharge plan: admit with telemetry; reconcile medications (hold the hydrochlorothiazide given hyponatremia and AKI, counsel on limiting acetaminophen and alcohol); arrange close GI follow-up and the interval cholecystectomy.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "NPO and IV fluids",
+            "item": "NPO and IV fluid resuscitation",
             "points": 4
           },
           {
@@ -320,50 +355,65 @@
         ],
         "coreActions": [
           {
-            "item": "Percutaneous drainage if ERCP not feasible",
-            "points": 3
-          },
-          {
-            "item": "Interval cholecystectomy",
+            "item": "Correct coagulopathy with vitamin K before sphincterotomy",
             "points": 2
           },
           {
-            "item": "GI / surgery consult",
+            "item": "Address long QT — hold QT-prolonging drugs, replete K/Mg, telemetry",
+            "points": 2
+          },
+          {
+            "item": "GI / surgery consult and interval cholecystectomy",
+            "points": 2
+          },
+          {
+            "item": "Percutaneous transhepatic drainage if ERCP fails",
+            "points": 1
+          },
+          {
+            "item": "Safe disposition: admit, medication reconciliation, GI follow-up",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Analgesia",
+            "item": "QT-safe analgesia/antiemetics",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Antibiotics alone without decompression",
-            "points": -3
+            "item": "Discharging a septic/obstructed patient or antibiotics alone without decompression",
+            "points": -4
+          },
+          {
+            "item": "Repeating ondansetron / QT-prolonging drugs despite the long QT",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "NPO and IV fluids",
+        "NPO and IV fluid resuscitation",
         "Broad-spectrum antibiotics",
         "Urgent ERCP for decompression"
       ],
       "optionalActions": [
-        "Percutaneous drainage if ERCP not feasible",
-        "Interval cholecystectomy",
-        "GI / surgery consult",
-        "Analgesia"
+        "Correct coagulopathy with vitamin K before sphincterotomy",
+        "Address long QT — hold QT-prolonging drugs, replete K/Mg, telemetry",
+        "GI / surgery consult and interval cholecystectomy",
+        "Percutaneous transhepatic drainage if ERCP fails",
+        "Safe disposition: admit, medication reconciliation, GI follow-up",
+        "QT-safe analgesia/antiemetics"
       ],
       "unsafeActions": [
-        "Antibiotics alone without decompression"
+        "Discharging a septic/obstructed patient or antibiotics alone without decompression",
+        "Repeating ondansetron / QT-prolonging drugs despite the long QT"
       ],
       "consults": [
         "Gastroenterology",
         "Surgery"
       ],
-      "disposition": "Admit",
+      "disposition": "Admit; urgent ERCP",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Biliary Disease (Choledocholithiasis/Cholangitis)",
@@ -373,17 +423,19 @@
   ],
   "standardizedPatient": {
     "demeanor": "uncomfortable",
-    "emotionalState": "concerned",
+    "emotionalState": "frightened",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "cancer_fear",
+      "otc_acetaminophen"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "55-year-old woman, uncomfortable, jaundiced. Good historian.",
+    "communicationStyle": "answers directly but tires; is vague and slightly defensive about alcohol and does not volunteer the cancer fear, the extra Tylenol, or the prior gallstones unless asked",
+    "affect": "55-year-old woman, jaundiced, tired and mildly dehydrated, frightened that the problem could be cancer. Reasonable historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal alcohol amount, the cancer fear/weight loss, the extra acetaminophen, or the prior gallstones unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -398,11 +450,75 @@
         "drinking",
         "how much do you drink",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "wine"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_acetaminophen",
+      "category": "meds",
+      "triggerConcepts": [
+        "tylenol",
+        "acetaminophen",
+        "over the counter",
+        "pain medicine",
+        "paracetamol",
+        "how much tylenol"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "cancer_concern",
+      "category": "hpi",
+      "triggerConcepts": [
+        "weight loss",
+        "losing weight",
+        "appetite",
+        "family history of cancer",
+        "anyone in the family",
+        "worried about"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "fevers_rigors",
+      "category": "ros",
+      "triggerConcepts": [
+        "fever",
+        "chills",
+        "rigors",
+        "shaking",
+        "sweats"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "stool_urine_pruritus",
+      "category": "ros",
+      "triggerConcepts": [
+        "stool color",
+        "pale stools",
+        "urine color",
+        "dark urine",
+        "itching",
+        "pruritus"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -426,7 +542,8 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "where does it radiate"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -452,7 +569,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "nausea",
+        "vomiting"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -466,7 +585,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "after meals",
+        "fatty food"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -479,7 +600,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "gallstones"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -492,7 +615,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "metformin",
+        "water pill",
+        "antidepressant"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -505,18 +631,35 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "previous attacks"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "hepatitis_risk",
+      "category": "social",
+      "triggerConcepts": [
+        "travel",
+        "sick contacts",
+        "iv drug use",
+        "tattoos",
+        "transfusions",
+        "sexual history"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
     }
   ],
   "physicalExamMappings": [
     {
       "id": "perform_murphy_sign_finding_1",
-      "finding": "Abdomen: RUQ tenderness; mild — assess for Murphy's; no peritonism.",
+      "finding": "Abdomen: RUQ tenderness with voluntary guarding; mildly positive Murphy's sign (inspiratory catch); no rebound or rigidity.",
       "revealedBy": [
         "perform_murphy_sign"
       ],
@@ -526,7 +669,7 @@
     },
     {
       "id": "palpate_ruq_finding_2",
-      "finding": "Abdomen: RUQ tenderness; mild — assess for Murphy's; no peritonism.",
+      "finding": "Abdomen: RUQ tenderness with voluntary guarding; mildly tender liver edge, not markedly enlarged; no palpable gallbladder mass and no painless distended (Courvoisier) gallbladder; no rebound.",
       "revealedBy": [
         "palpate_ruq"
       ],
@@ -536,7 +679,7 @@
     },
     {
       "id": "inspect_sclera_finding_3",
-      "finding": "General: jaundiced, mildly uncomfortable.",
+      "finding": "Deep scleral icterus; jaundiced skin with a few scratch excoriations; no spider angiomata or palmar erythema.",
       "revealedBy": [
         "inspect_sclera",
         "assess_for_jaundice"
@@ -544,6 +687,39 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No jaundice."
+    },
+    {
+      "id": "assess_asterixis_finding_4",
+      "finding": "No asterixis; alert and oriented with no flap (argues against overt hepatic encephalopathy).",
+      "revealedBy": [
+        "assess_asterixis"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No asterixis."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_5",
+      "finding": "Mucous membranes dry with delayed capillary refill (~3 s) — signs of volume depletion.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes; normal capillary refill."
+    },
+    {
+      "id": "assess_shifting_dullness_finding_6",
+      "finding": "No shifting dullness and no fluid wave; no clinical ascites; spleen not enlarged (argues against established cirrhosis/portal hypertension).",
+      "revealedBy": [
+        "assess_shifting_dullness",
+        "assess_fluid_wave",
+        "assess_splenomegaly"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No ascites."
     }
   ],
   "overallScoring": {
@@ -556,34 +732,44 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Choledocholithiasis",
-    "diagnosticFramework": "55F presents with colicky right upper quadrant pain, jaundice, dark urine, and pale stools over a few days. The diagnosis is Choledocholithiasis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "55F with gallstones, type 2 diabetes, obesity, hypertension, and depression on metformin, hydrochlorothiazide, citalopram, and extra acetaminophen presents with two weeks of fatty-food-triggered RUQ pain, progressively deepening fluctuating jaundice, dark urine, pale stools, pruritus, 4 kg of weight loss, a low-grade fever, and one rigor. The diagnosis is Choledocholithiasis with ascending cholangitis. The genuine fork is stone versus malignant biliary obstruction (her age, weight loss, and family history of pancreatic cancer), resolved toward a stone by ultrasound/MRCP showing a distal CBD stone with no mass. It is reached by eliciting the focused history (alcohol, OTC acetaminophen, cancer fear, fevers/rigors), recognizing the cholestatic conjugated pattern, integrating the concurrent AKI/hyponatremia/coagulopathy and the patient's own long-QT EKG, and managing the cholangitis with decompression.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: RUQ tenderness; mild — assess for Murphy's; no peritonism.",
-      "Abdomen: RUQ tenderness; mild — assess for Murphy's; no peritonism.",
-      "General: jaundiced, mildly uncomfortable."
+      "Abdomen: RUQ tenderness with voluntary guarding; mildly positive Murphy's sign (inspiratory catch); no rebound or rigidity.",
+      "Abdomen: RUQ tenderness with voluntary guarding; mildly tender liver edge, not markedly enlarged; no palpable gallbladder mass and no painless distended (Courvoisier) gallbladder; no rebound.",
+      "Deep scleral icterus; jaundiced skin with a few scratch excoriations; no spider angiomata or palmar erythema.",
+      "No asterixis; alert and oriented with no flap (argues against overt hepatic encephalopathy).",
+      "Mucous membranes dry with delayed capillary refill (~3 s) — signs of volume depletion.",
+      "No shifting dullness and no fluid wave; no clinical ascites; spleen not enlarged (argues against established cirrhosis/portal hypertension)."
     ],
     "keyDiagnosticFindings": [
       "LFTs",
       "Bilirubin",
       "Lipase",
       "CBC",
+      "BMP",
+      "Coags",
       "Acetaminophen",
+      "Hepatitis_serologies",
       "Imaging"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Choledocholithiasis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Choledocholithiasis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the early sepsis physiology (tachycardia, borderline hypotension, fever).",
+      "Elicit the focused history, including the sensitive alcohol, OTC acetaminophen, cancer fear/weight loss, and fevers/rigors only on direct questioning.",
+      "Perform the targeted physical exam to reveal jaundice, RUQ tenderness/Murphy's, volume depletion, and the absence of chronic-liver stigmata and ascites.",
+      "Build a differential led by Choledocholithiasis while explicitly weighing malignant biliary obstruction and the must-not-miss cholangitis and gallstone pancreatitis.",
+      "Order a focused workup (cholestatic LFTs, fractionated bilirubin, lipase, CBC, BMP, coags, acetaminophen level, hepatitis serologies, RUQ ultrasound/MRCP) and interpret the patient's own long-QT EKG and the screening CXR.",
+      "Commit to Choledocholithiasis with cholangitis, name the imaging that excluded a tumor, correct the coagulopathy and electrolytes, and manage with fluids, antibiotics, urgent ERCP decompression, and safe admission/disposition."
     ],
     "commonPitfalls": [
-      "Antibiotics alone without decompression"
+      "Anchoring on a simple stone and ignoring malignancy in an older patient with weight loss",
+      "Treating cholangitis with antibiotics alone without decompression",
+      "Missing the long QT and repeating QT-prolonging antiemetics",
+      "Proceeding to sphincterotomy without correcting the coagulopathy",
+      "Discharging a septic, obstructed patient"
     ],
     "managementPearls": [
-      "NPO and IV fluids",
+      "NPO and IV fluid resuscitation",
       "Broad-spectrum antibiotics",
       "Urgent ERCP for decompression"
     ],
@@ -593,30 +779,30 @@
       "palpate_ruq"
     ],
     "criticalWorkupItems": [
-      "LFTs — recognize the cholestatic (Alk Phos/GGT) pattern",
-      "RUQ ultrasound — duct dilation/stones"
+      "LFTs — recognize the cholestatic (Alk Phos/GGT-dominant) pattern",
+      "RUQ ultrasound — duct dilation/stones and look for a mass"
     ],
     "criticalInterpretationItems": [
-      "Junctional escape rhythm.",
-      "No free air; clear bases (excludes perforation and basal pneumonia)."
+      "Sinus tachycardia with a markedly prolonged QT (drug-induced long QTc); no acute ST-elevation.",
+      "No subdiaphragmatic free air; clear bases (excludes perforation and basal pneumonia)."
     ],
     "criticalManagementItems": [
-      "NPO and IV fluids",
+      "NPO and IV fluid resuscitation",
       "Broad-spectrum antibiotics",
       "Urgent ERCP for decompression"
     ],
     "keyImageInterpretationFindings": [
-      "Junctional escape rhythm.",
-      "No free air; clear bases (excludes perforation and basal pneumonia)."
+      "Sinus tachycardia with a markedly prolonged QT (drug-induced long QTc); no acute ST-elevation.",
+      "No subdiaphragmatic free air; clear bases (excludes perforation and basal pneumonia)."
     ],
     "criticalImageInterpretationFindings": [
-      "Junctional escape rhythm.",
-      "No free air; clear bases (excludes perforation and basal pneumonia)."
+      "Sinus tachycardia with a markedly prolonged QT (drug-induced long QTc); no acute ST-elevation.",
+      "No subdiaphragmatic free air; clear bases (excludes perforation and basal pneumonia)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "The patient's own EKG is part of the puzzle: a long QT from her citalopram, ondansetron, and low potassium changes which antiemetics are safe.",
+      "On an upper-abdominal-pain chest film, the deliberate pertinent negative is the absence of free air under the diaphragm.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -627,11 +813,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Acknowledges the patient's fear that this could be cancer",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, OTC use)",
         "points": 1
       },
       {
@@ -646,8 +832,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

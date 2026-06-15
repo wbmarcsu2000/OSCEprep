@@ -2,15 +2,15 @@
   "id": "syncope-07",
   "category": "Syncope",
   "difficulty": "hard",
-  "title": "Collapse during a startling alarm",
+  "title": "Collapse during a startling alarm in a young woman on multiple new drugs",
   "diagnosis": "Long QT syndrome with torsades de pointes",
   "chart": {
     "ageSex": "24F",
     "cc": "Passed out and woke up on the floor",
-    "oneLiner": "24F presents after a brief loss of consciousness triggered by a sudden loud alarm, with a family history of unexplained sudden death and recent palpitations.",
+    "oneLiner": "24F with anxiety/depression and a recent vomiting-and-diarrhea illness, on several new medications (an antibiotic, an SSRI, an antiemetic, an OTC antihistamine, and a thiazide for her blood pressure), presents after a brief loss of consciousness triggered by a sudden loud alarm, preceded by palpitations, with a family history of unexplained sudden death.",
     "vitals": {
-      "BP": "112/70",
-      "HR": "82",
+      "BP": "108/68",
+      "HR": "84",
       "RR": "16",
       "Temp": "36.8°C",
       "SpO2": "99% RA"
@@ -18,34 +18,37 @@
     "timer": 180
   },
   "opening": "A fire alarm went off, my heart started racing, and the next thing I knew I was waking up on the floor.",
-  "patientFile": "PERSONA: 24-year-old woman, now alert and back to baseline, anxious. Good historian.\n\nHPI: Brief loss of consciousness immediately after a sudden LOUD fire alarm; felt a few seconds of palpitations/fluttering before going down. Witnessed brief generalized shaking for a few seconds, but recovered QUICKLY with NO post-event confusion, NO tongue biting, NO incontinence (favors convulsive syncope over a primary seizure). Two prior near-fainting spells — one while startled by a phone ringing, one during a swim. NO chest pain, NO true aura, NO focal weakness.\nFAMILY HISTORY (only if asked about family/sudden death): a brother died suddenly in his sleep at age 19 (unexplained); a maternal cousin 'drowned' while swimming; no known deafness in the family.\nPMH: occasional palpitations; otherwise healthy. MEDS: recently started an antibiotic for a sinus infection and takes an over-the-counter antihistamine; uses an antiemetic occasionally (only if asked about medications — these can prolong the QT). NO recreational drugs. SOCIAL: social alcohol only, non-smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, anxious-appearing, no distress; no dysmorphic features.\n- Vitals: BP 112/70, HR 82 and regular, RR 16, 36.8°C, SpO2 99% RA.\n- Cardiac: regular rate and rhythm, normal S1/S2, NO murmur, NO gallop; peripheral pulses normal and symmetric.\n- Neuro: fully oriented, no focal deficit, no tongue laceration, normal gait.\n- Hearing: normal to conversation (no congenital deafness).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history of sudden death/drowning unless asked about family history or sudden death in relatives.\n- Do NOT volunteer the new antibiotic/antihistamine/antiemetic unless asked about medications or recent new drugs.\n- Emphasize (only if asked about triggers/warning) that it happened right after a sudden loud noise and was preceded by palpitations.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 24-year-old woman, now alert and back to baseline, anxious. Good historian.\n\nHPI: Brief loss of consciousness immediately after a sudden LOUD fire alarm; felt a few seconds of palpitations/fluttering before going down. Witnessed brief generalized shaking for a few seconds, but recovered QUICKLY with NO post-event confusion, NO tongue biting, NO incontinence (favors convulsive syncope over a primary seizure). Two prior near-fainting spells — one while startled by a phone ringing, one during a swim. NO chest pain, NO true aura, NO focal weakness. For the past four days she has had a stomach bug with vomiting and loose stools and has been eating and drinking poorly (only reveal the GI illness/poor intake if asked about recent illness, diet, vomiting, or diarrhea — it is why her potassium and magnesium are low).\nFAMILY HISTORY (only if asked about family/sudden death): a brother died suddenly in his sleep at age 19 (unexplained); a maternal cousin 'drowned' while swimming; no known deafness in the family.\nPMH: occasional palpitations; anxiety and depression (recently started treatment); mildly high blood pressure her GP just began treating; otherwise healthy. No diabetes, no kidney disease.\nMEDS (reveal the specifics only if asked about medications or new drugs — ALL of these can prolong the QT or drop her potassium/magnesium): azithromycin started 4 days ago for a sinus infection; an SSRI (citalopram) started about three weeks ago for low mood; ondansetron taken over the last few days for the vomiting; an over-the-counter antihistamine (diphenhydramine) for allergies; and hydrochlorothiazide started recently for blood pressure. NO recreational drugs. ALLERGIES: none.\nSOCIAL: social alcohol only, non-smoker, no recreational/street drugs. Works as a teacher. Lives with a roommate. FAMILY: as above. ROS: palpitations as noted; no chest pain, no dyspnea, no weight change, no diarrhea/vomiting today (resolving).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: alert, anxious-appearing, no distress; no dysmorphic features.\n- Vitals: BP 108/68, HR 84 and regular, RR 16, 36.8°C, SpO2 99% RA; mildly dry mucous membranes after the GI illness.\n- Cardiac: regular rate and rhythm, normal S1/S2, NO murmur, NO gallop; peripheral pulses normal and symmetric.\n- Neuro: fully oriented, no focal deficit, no tongue laceration, normal gait.\n- Mucous membranes: slightly dry; skin turgor mildly reduced (recent volume loss).\n- Hearing: normal to conversation (no congenital deafness).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the family history of sudden death/drowning unless asked about family history or sudden death in relatives.\n- Do NOT volunteer the new antibiotic/SSRI/antiemetic/antihistamine/thiazide unless asked about medications or recent new drugs.\n- Do NOT volunteer the recent vomiting-and-diarrhea illness or poor intake unless asked about recent illness, diet, or GI symptoms.\n- Emphasize (only if asked about triggers/warning) that it happened right after a sudden loud noise and was preceded by palpitations.\n- Reveal exam findings (e.g. dry mucous membranes) only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "EKG_QTc": "12-lead QTc markedly prolonged at 530 ms (normal <460 ms in women); broad-based T waves. Diagnostic of QT prolongation.",
-      "Telemetry": "Captured a self-terminating run of polymorphic VT with a twisting/undulating QRS axis around the baseline (torsades de pointes), preceded by a pause.",
-      "BMP_Mg": "K 3.3 (LOW), Mg 1.4 mg/dL (LOW), Ca 8.4 (low-normal), Cr normal — electrolyte derangements that potentiate QT prolongation.",
-      "Troponin": "Negative — no acute ischemic pattern to explain the arrhythmia.",
-      "TSH": "Normal — excludes thyroid contribution.",
-      "Tox_screen": "Urine drug screen negative — no stimulant/cocaine effect."
+      "EKG_QTc": "12-lead EKG: sinus rhythm at ~82 bpm; QT interval markedly prolonged with a measured QTc of 530 ms (normal <460 ms in women) by Bazett; broad-based, notched T waves with prominent U waves. Diagnostic of QT prolongation and a substrate for torsades.",
+      "Telemetry": "Captured a self-terminating run of polymorphic VT with a twisting/undulating QRS axis around the baseline (torsades de pointes), initiated by a short-long-short (pause-dependent) sequence. No sustained arrhythmia at present; frequent PVCs.",
+      "BMP_electrolytes": "Na 139, K 2.9 mmol/L (LOW), Cl 96, HCO3 30 (HIGH) — anion gap = 139 − (96 + 30) = 13 (normal); a hypokalemic metabolic alkalosis from vomiting plus the thiazide. BUN 18, Cr 0.9 (normal renal function), glucose 92. Mg 1.3 mg/dL (LOW) and Ca 8.2 mg/dL (LOW, with normal albumin) — the low K, Mg, and Ca all further prolong the QT.",
+      "Troponin": "Negative x2 — no acute ischemic pattern to explain the arrhythmia.",
+      "TSH": "Normal — excludes thyroid contribution / acquired QT from hypothyroidism.",
+      "CBC": "Hgb 13.6, WBC 8.1, Plt 245 — no anemia or infection-related abnormality; mildly concentrated consistent with recent volume loss.",
+      "Tox_screen": "Urine drug screen negative — no stimulant/cocaine effect; supports a drug-therapeutic + electrolyte + congenital mechanism rather than illicit-drug toxicity."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
+      "integrated": true,
+      "litflStudyN": 23,
       "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Markedly prolonged QT interval (QTc ~530 ms) with broad-based T waves in a patient in sinus rhythm; substrate for torsades de pointes.",
-      "verify": "From the LITFL 'QT interval / Long QT syndrome' library page — download an example tracing that matches: markedly prolonged QT interval (QTc ~530 ms) with broad T waves in sinus rhythm. Self-host with credit to litfl.com; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm at ~82 bpm with a markedly prolonged QT interval (QTc ~530 ms), broad-based notched T waves and prominent U waves — drug- and electrolyte-aggravated long QT, the substrate for torsades de pointes.",
+      "verify": "From the LITFL 'QT interval / Long QT syndrome' library page — use the drug-induced long QT example tracing that matches: sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad/notched T waves and U waves. Self-host with credit to litfl.com; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead EKG showing a markedly prolonged QT interval with broad T waves (long QT syndrome)",
+      "imageDescription": "12-lead EKG showing a markedly prolonged QT interval with broad notched T waves and U waves (drug- and electrolyte-aggravated long QT)",
       "searchTerms": [
-        "long QT syndrome ECG",
-        "prolonged QT interval 12-lead"
+        "drug-induced long QT ECG",
+        "prolonged QT interval 12-lead U waves"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 24-year-old woman presents after a sudden fainting episode preceded by palpitations."
+      "clinicalVignette": "A 24-year-old woman on several new QT-prolonging drugs presents after a sudden fainting episode preceded by palpitations."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,15 +64,16 @@
         "normal chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 22-year-old man with recurrent unexplained fainting has a chest film to exclude structural disease."
+      "clinicalVignette": "A young woman with recurrent unexplained fainting has a chest film to exclude structural disease."
     }
   },
   "revealKeys": [
     "EKG_QTc",
     "Telemetry",
-    "BMP_Mg",
+    "BMP_electrolytes",
     "Troponin",
     "TSH",
+    "CBC",
     "Tox_screen",
     "ekg",
     "cxr"
@@ -77,22 +81,22 @@
   "essential": [
     "ekg",
     "Telemetry",
-    "BMP_Mg"
+    "BMP_electrolytes"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this syncope (note your leading diagnosis).",
-      "rubric": "Cardiac syncope due to a ventricular arrhythmia from a prolonged QT / torsades (leading & CANT-MISS,9). Other inherited arrhythmia / structural cardiac cause — HCM, Brugada, catecholaminergic VT (CANT-MISS,4). Seizure / epilepsy (CANT-MISS,3). Vasovagal syncope (core,2). Drug- or electrolyte-induced QT prolongation as a mechanism (core,2). Recognizes that syncope triggered by a startle/exertion preceded by palpitations with a family history of sudden death points to a primary electrical (channelopathy) cause (core,5).",
-      "idealAnswer": "Leading diagnosis: Cardiac syncope from a ventricular arrhythmia due to a prolonged QT interval (torsades de pointes). Must-not-miss diagnoses to exclude: Other inherited arrhythmia/structural disease (HCM, Brugada, CPVT); Seizure/epilepsy. Also reasonable: Vasovagal syncope; Drug- or electrolyte-induced QT prolongation.",
+      "prompt": "Based on your history and physical, list your differential for this syncope (note your leading diagnosis). As part of your answer, name three causes or mechanisms of a prolonged QT interval / torsades.",
+      "rubric": "Cardiac syncope due to a ventricular arrhythmia from a prolonged QT / torsades (leading & CANT-MISS,8). Other inherited arrhythmia / structural cardiac cause — HCM, Brugada, catecholaminergic VT (CANT-MISS,4). Seizure / epilepsy (CANT-MISS,3). Names three causes/mechanisms of QT prolongation — e.g. QT-prolonging DRUGS (azithromycin, citalopram, ondansetron, antihistamine), ELECTROLYTES (low K/Mg/Ca), and a CONGENITAL channelopathy (LQTS) (core,4). Recognizes the central fork — congenital LQTS vs acquired (drug + electrolyte) QT prolongation — and that the two coexist here (core,4). Vasovagal syncope (core,2). PENALTY: anchoring purely on a benign vasovagal/anxiety faint and ignoring the cardiac/arrhythmic cause (-3).",
+      "idealAnswer": "Leading diagnosis: Cardiac syncope from a ventricular arrhythmia due to a prolonged QT interval (torsades de pointes). The key fork is CONGENITAL long QT syndrome (channelopathy) vs ACQUIRED QT prolongation from QT-prolonging drugs and electrolyte loss — and here they coexist: she has the congenital triggers (startle/auditory and swimming, family sudden death) AND multiple acquired hits (azithromycin, citalopram, ondansetron, an antihistamine, a thiazide, plus a vomiting/diarrhea illness causing hypokalemia and hypomagnesemia). Three causes/mechanisms of QT prolongation: (1) QT-prolonging DRUGS, (2) ELECTROLYTE derangement (low K, Mg, Ca), (3) CONGENITAL ion-channel mutation (LQTS); other accepted answers include bradycardia/pauses, hypothyroidism, hypothermia. Must-not-miss alternatives to exclude: other inherited arrhythmia/structural disease (HCM, Brugada, CPVT) and Seizure/epilepsy. Also reasonable: Vasovagal syncope.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Cardiac syncope from ventricular arrhythmia due to prolonged QT / torsades de pointes",
-            "points": 9
+            "points": 8
           },
           {
             "item": "Other inherited arrhythmia / structural cardiac disease (HCM, Brugada, CPVT)",
@@ -105,20 +109,25 @@
         ],
         "coreActions": [
           {
+            "item": "Names three causes/mechanisms of QT prolongation (e.g. QT-prolonging drugs, electrolyte derangement, congenital channelopathy)",
+            "points": 4
+          },
+          {
+            "item": "Recognizes the congenital LQTS vs acquired (drug + electrolyte) QT-prolongation fork and that both contribute here",
+            "points": 4
+          },
+          {
             "item": "Vasovagal syncope",
             "points": 2
-          },
-          {
-            "item": "Drug- or electrolyte-induced QT prolongation as a mechanism",
-            "points": 2
-          },
-          {
-            "item": "Recognizes that startle/exertional syncope preceded by palpitations with a family history of sudden death points to a primary electrical (channelopathy) cause",
-            "points": 5
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on a benign vasovagal/anxiety faint and ignoring the cardiac/arrhythmic cause",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "Other inherited arrhythmia / structural cardiac disease (HCM, Brugada, CPVT)",
@@ -126,7 +135,9 @@
       ],
       "acceptableAlternatives": [
         "Vasovagal syncope",
-        "Drug- or electrolyte-induced QT prolongation as a mechanism"
+        "Drug-induced (acquired) QT prolongation",
+        "Electrolyte-induced (hypokalemia/hypomagnesemia) QT prolongation",
+        "Congenital long QT syndrome"
       ]
     },
     {
@@ -135,8 +146,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "12-lead EKG immediately with measured/corrected QT (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring to capture arrhythmia (CANT-MISS,4). BMP with magnesium and calcium (electrolytes that prolong QT) (2). Review/stop QT-prolonging medications (2). TSH and a urine tox screen (1). PENALTY: discharging or failing to monitor a patient with syncope and palpitations (-3).",
-      "idealAnswer": "Order: EKG; CXR; EKG Q tc; Telemetry; BMP mg; Troponin; TSH; Tox screen.",
+      "rubric": "12-lead EKG immediately with measured/corrected QT (CANT-MISS — diagnostic,6). Continuous telemetry / cardiac monitoring to capture arrhythmia (CANT-MISS,4). BMP with magnesium and calcium (electrolytes that prolong QT) (2). Review and STOP every QT-prolonging / potassium-wasting medication on her list (2). TSH, CBC, troponin, and a urine tox screen to complete the acquired-cause search (1). PENALTY: discharging or failing to monitor a patient with syncope and palpitations (-3).",
+      "idealAnswer": "Order: 12-lead EKG immediately with a measured QTc; continuous telemetry / cardiac monitoring; BMP with magnesium and calcium; review and STOP all QT-prolonging and K-wasting drugs (azithromycin, citalopram, ondansetron, diphenhydramine, hydrochlorothiazide); troponin; TSH; CBC; urine tox screen; and a CXR to exclude structural disease.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,19 +166,15 @@
             "points": 2
           },
           {
-            "item": "Review and stop QT-prolonging medications",
+            "item": "Review and stop all QT-prolonging / potassium-wasting medications",
             "points": 2
           },
           {
-            "item": "TSH and urine tox screen",
+            "item": "TSH, CBC, troponin, and urine tox screen",
             "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "Troponin",
             "points": 2
           }
         ],
@@ -185,8 +192,8 @@
       ],
       "optionalTests": [
         "BMP with magnesium and calcium",
-        "Review and stop QT-prolonging medications",
-        "TSH and urine tox screen"
+        "Review and stop all QT-prolonging / potassium-wasting medications",
+        "TSH, CBC, troponin, and urine tox screen"
       ],
       "contraindicatedTests": [
         "discharging or failing to monitor a patient with syncope and palpitations"
@@ -199,45 +206,47 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings (be specific about the intervals).",
-      "rubric": "Findings = markedly prolonged QT interval (QTc ~530 ms) in sinus rhythm — the substrate for torsades. CREDIT: measures/identifies the QT and recognizes it is prolonged (6); corrects for rate (QTc) rather than raw QT (4); notes broad T-wave morphology / sinus rhythm (3); systematic read (2). PENALTY: calling the tracing normal or missing the long QT (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings (be specific about the intervals) and state what it commits you to.",
+      "rubric": "Findings = sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and prominent U waves — the substrate for torsades, here aggravated by her QT-prolonging drugs and by hypokalemia/hypomagnesemia. CREDIT: measures/identifies the QT and recognizes it is markedly prolonged (6); corrects for rate (QTc) rather than raw QT (4); notes the broad/notched T waves with U waves in sinus rhythm and links them to low K/Mg and QT-prolonging drugs (3); systematic read with rhythm/rate/axis/intervals (2). PENALTY: calling the tracing normal or missing the long QT (-3).",
       "keyFindings": [
-        "identifies a prolonged QT interval",
-        "corrects QT for rate (QTc)",
-        "notes broad T waves in sinus rhythm",
-        "systematic read"
+        "markedly prolonged QT interval with a QTc ~530 ms",
+        "corrects QT for rate (QTc) rather than reading the raw QT",
+        "broad notched T waves with prominent U waves in sinus rhythm",
+        "links the long QT to QT-prolonging drugs and hypokalemia/hypomagnesemia",
+        "systematic read (rate, rhythm, axis, intervals)"
       ],
       "criticalFindings": [
-        "Markedly prolonged QT interval (QTc ~530 ms) in sinus rhythm — the substrate for torsades de pointes."
+        "Sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and prominent U waves — the substrate for torsades de pointes, aggravated by QT-prolonging drugs and hypokalemia/hypomagnesemia."
       ],
       "commonMistakes": [
         "calling the tracing normal",
-        "reading the raw QT without correcting for heart rate (QTc)"
+        "reading the raw QT without correcting for heart rate (QTc)",
+        "missing the U waves of hypokalemia"
       ],
-      "idealAnswer": "Sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms) and broad T waves — long QT, the substrate for torsades de pointes.",
+      "idealAnswer": "Sinus rhythm at ~82 bpm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and prominent U waves. This is long QT — the substrate for torsades de pointes — and it is being aggravated by her QT-prolonging medications and by hypokalemia and hypomagnesemia. It commits me to continuous monitoring, stopping every QT-prolonging drug, and repleting K and Mg.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Recognizes: markedly prolonged QT interval (QTc ~530 ms) in sinus rhythm — the substrate for torsades de pointes.",
+            "item": "Recognizes: sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and U waves — the substrate for torsades de pointes.",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "identifies a prolonged QT interval",
+            "item": "identifies a markedly prolonged QT interval",
             "points": 4
           },
           {
-            "item": "corrects QT for rate (QTc)",
+            "item": "corrects QT for rate (QTc) rather than reading the raw QT",
             "points": 4
           },
           {
-            "item": "notes broad T waves in sinus rhythm",
+            "item": "notes broad notched T waves and U waves in sinus rhythm and links them to low K/Mg and QT-prolonging drugs",
             "points": 3
           },
           {
-            "item": "systematic read",
+            "item": "systematic read (rate, rhythm, axis, intervals)",
             "points": 2
           }
         ],
@@ -269,7 +278,7 @@
         "inventing cardiomegaly or an effusion on a normal film",
         "not checking film projection"
       ],
-      "idealAnswer": "Normal chest radiograph with a normal cardiac silhouette and clear lungs; supports a primary electrical (channelopathy) cause rather than structural disease.",
+      "idealAnswer": "Normal chest radiograph with a normal cardiac silhouette and clear lungs; supports a primary electrical (channelopathy) plus acquired cause rather than structural disease.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -292,9 +301,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "QTc 530 ms, telemetry capturing a self-terminating run of polymorphic VT with a twisting axis, low potassium and magnesium, and a family history of sudden death. What is your diagnosis and why is it dangerous?",
-      "rubric": "Long QT syndrome with torsades de pointes (6). Explains the danger — torsades can degenerate into ventricular fibrillation and cause sudden cardiac death; QT-prolonging drugs and low K/Mg potentiate it (4).",
-      "idealAnswer": "Long QT syndrome with torsades de pointes. Dangerous because torsades can degenerate into ventricular fibrillation and cause sudden cardiac death; it is potentiated by QT-prolonging drugs and by hypokalemia and hypomagnesemia, which must be corrected and avoided.",
+      "prompt": "Her own EKG shows a QTc of 530 ms with U waves, telemetry captured a pause-dependent self-terminating run of polymorphic VT with a twisting axis, the BMP shows K 2.9 and Mg 1.3 with a metabolic alkalosis, and she has a family history of sudden death plus a list of new QT-prolonging drugs. Commit to a single diagnosis, say how you would settle the congenital-vs-acquired question, and explain why it is dangerous.",
+      "rubric": "Long QT syndrome with torsades de pointes — committing despite the ambiguity (6). Resolves the fork: this is most likely a CONGENITAL long QT predisposition UNMASKED by acquired hits — the startle/auditory and swimming triggers, prior near-faints, and family sudden death point to an inherited channelopathy, while the new QT-prolonging drugs and hypokalemia/hypomagnesemia were the precipitants; the discriminating step is to STOP the offending drugs, correct the electrolytes, then RE-MEASURE the QTc (a QTc that stays prolonged off drugs and with normal K/Mg argues congenital and warrants genetic testing/EP referral and family screening) (2). Explains the danger — torsades can degenerate into ventricular fibrillation and cause sudden cardiac death; low K/Mg and the drugs potentiate it (2).",
+      "idealAnswer": "Long QT syndrome with torsades de pointes — I commit to this despite the residual ambiguity. The most coherent story is a CONGENITAL long QT predisposition UNMASKED by acquired hits: the auditory-startle and swimming triggers, the recurrent near-faints, and the family history of sudden death and a drowning point to an inherited channelopathy, while the recently started QT-prolonging drugs (azithromycin, citalopram, ondansetron, antihistamine) and the hypokalemia/hypomagnesemia from her vomiting illness and thiazide were the precipitants that tipped her into torsades. The discriminating step is to stop every offending drug, fully correct K and Mg, and then RE-MEASURE the QTc on telemetry: a QTc that stays prolonged once she is off the drugs with normal electrolytes argues for congenital LQTS and warrants EP referral, genetic testing, and screening of first-degree relatives. It is dangerous because torsades can degenerate into ventricular fibrillation and sudden cardiac death, and it is potentiated by the QT-prolonging drugs and by hypokalemia and hypomagnesemia, which must be corrected and avoided.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -306,45 +315,45 @@
         "Degeneration of torsades into ventricular fibrillation / sudden cardiac death"
       ],
       "acceptableAlternatives": [
-        "Acquired (drug/electrolyte) long QT precipitating torsades",
-        "Congenital long QT syndrome unmasked by QT-prolonging drugs and hypokalemia/hypomagnesemia"
+        "Congenital long QT syndrome unmasked by QT-prolonging drugs and hypokalemia/hypomagnesemia",
+        "Acquired (drug + electrolyte) long QT precipitating torsades"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH torsades / long QT: IV magnesium sulfate for torsades regardless of serum level (CANT-MISS,7); stop ALL QT-prolonging drugs (CANT-MISS,5); aggressively replete potassium and magnesium (4); continuous telemetry on a monitored bed (3); increase heart rate to shorten QT — isoproterenol or overdrive/temporary pacing for recurrent pause-dependent torsades (3); cardiology/EP consult for beta-blocker and ICD evaluation in congenital LQTS (2); unsynchronized defibrillation if torsades becomes sustained/unstable (1). PENALTY: giving a QT-prolonging antiarrhythmic such as amiodarone/sotalol/procainamide (-3); discharging the patient (-3).",
-      "idealAnswer": "Give IV magnesium sulfate (first-line for torsades, even if the magnesium level is normal). Immediately stop all QT-prolonging drugs and aggressively replete potassium and magnesium. Keep on continuous telemetry in a monitored bed. For recurrent pause-dependent torsades, increase the heart rate with isoproterenol or temporary overdrive pacing. If torsades becomes sustained/hemodynamically unstable, perform unsynchronized defibrillation. Cardiology/EP consult: beta-blocker and consideration of an ICD for congenital long QT syndrome, plus family screening. Avoid all QT-prolonging agents (e.g., amiodarone, sotalol).",
+      "prompt": "What is your management plan, including the acute treatment, the medication reconciliation, and your disposition / safe-discharge decision?",
+      "rubric": "Per MGH torsades / long QT: IV magnesium sulfate for torsades regardless of serum level (CANT-MISS,6); stop ALL QT-prolonging and K-wasting drugs — azithromycin, citalopram, ondansetron, antihistamine, hydrochlorothiazide (CANT-MISS,5); aggressively replete potassium (target high-normal) and magnesium (4); continuous telemetry on a monitored bed and increase heart rate to shorten QT — isoproterenol or overdrive/temporary pacing for recurrent pause-dependent torsades (3); cardiology/EP consult for beta-blocker and ICD evaluation plus genetic testing in congenital LQTS (2); DISPOSITION — admit to a monitored bed and do NOT discharge; arrange safe follow-up: documented drug-allergy/avoid-QT-drug list, an up-to-date 'do-not-use' medication card/MedicAlert, family/first-degree-relative screening and counseling, and close cardiology/EP follow-up (3); unsynchronized defibrillation if torsades becomes sustained/unstable (1). PENALTY: giving a QT-prolonging antiarrhythmic such as amiodarone/sotalol/procainamide (-3); discharging the patient home (-3).",
+      "idealAnswer": "Acute: give IV magnesium sulfate first-line for torsades even if the magnesium level is normal; immediately STOP every QT-prolonging and potassium-wasting drug on her list (azithromycin, citalopram, ondansetron, diphenhydramine, hydrochlorothiazide) and aggressively replete potassium to a high-normal level and magnesium. Keep her on continuous telemetry in a monitored bed; for recurrent pause-dependent torsades increase the heart rate with isoproterenol or temporary overdrive pacing, and if torsades becomes sustained or hemodynamically unstable perform unsynchronized defibrillation. Avoid all QT-prolonging agents (including amiodarone and sotalol). Cardiology/EP consult for a beta-blocker, ICD consideration, and genetic testing for congenital long QT. DISPOSITION / safe discharge: she is NOT safe to go home now — admit to a monitored bed. Before any eventual discharge: complete medication reconciliation with a documented 'avoid QT-prolonging drugs' list and a MedicAlert/wallet card, counsel her to avoid the offending drugs and to correct electrolytes promptly during future illnesses, arrange screening EKGs and EP follow-up, and screen and counsel her first-degree relatives given the family sudden-death history.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "IV magnesium sulfate for torsades",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Stop all QT-prolonging drugs",
+            "item": "Stop all QT-prolonging and potassium-wasting drugs",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Aggressively replete potassium and magnesium",
+            "item": "Aggressively replete potassium (high-normal) and magnesium",
             "points": 4
           },
           {
-            "item": "Continuous telemetry on a monitored bed",
+            "item": "Continuous telemetry and increase heart rate (isoproterenol / overdrive pacing) for pause-dependent torsades",
             "points": 3
           },
           {
-            "item": "Increase heart rate (isoproterenol / overdrive pacing) for pause-dependent torsades",
-            "points": 3
-          },
-          {
-            "item": "Cardiology/EP consult for beta-blocker and ICD evaluation",
+            "item": "Cardiology/EP consult for beta-blocker, ICD evaluation, and genetic testing",
             "points": 2
+          },
+          {
+            "item": "Admit to a monitored bed; safe-discharge planning — med reconciliation, avoid-QT-drug list/MedicAlert, family screening, close EP follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
@@ -357,22 +366,27 @@
           {
             "item": "Giving a QT-prolonging antiarrhythmic (amiodarone/sotalol/procainamide)",
             "points": -3
+          },
+          {
+            "item": "Discharging the patient home",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
         "IV magnesium sulfate for torsades",
-        "Stop all QT-prolonging drugs"
+        "Stop all QT-prolonging and potassium-wasting drugs"
       ],
       "optionalActions": [
-        "Aggressively replete potassium and magnesium",
-        "Continuous telemetry on a monitored bed",
-        "Increase heart rate (isoproterenol / overdrive pacing) for pause-dependent torsades",
-        "Cardiology/EP consult for beta-blocker and ICD evaluation",
+        "Aggressively replete potassium (high-normal) and magnesium",
+        "Continuous telemetry and increase heart rate (isoproterenol / overdrive pacing) for pause-dependent torsades",
+        "Cardiology/EP consult for beta-blocker, ICD evaluation, and genetic testing",
+        "Admit to a monitored bed; safe-discharge planning — med reconciliation, avoid-QT-drug list/MedicAlert, family screening, close EP follow-up",
         "Unsynchronized defibrillation if torsades becomes sustained/unstable"
       ],
       "unsafeActions": [
-        "Giving a QT-prolonging antiarrhythmic (amiodarone/sotalol/procainamide)"
+        "Giving a QT-prolonging antiarrhythmic (amiodarone/sotalol/procainamide)",
+        "Discharging the patient home"
       ],
       "consults": [
         "Cardiology / EP"
@@ -393,12 +407,13 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "family_sudden_death",
-      "recreational_drugs"
+      "recreational_drugs",
+      "mental_health"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "24-year-old woman, now alert and back to baseline, anxious. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (family sudden death, mental-health treatment, the full medication list, recent GI illness) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -416,7 +431,7 @@
         "family heart problems",
         "did anyone die unexpectedly"
       ],
-      "response": "My brother died suddenly in his sleep when he was 19 — they never found out why. And a cousin on my mum's side drowned while swimming.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
       "hiddenUntilAsked": true
@@ -429,11 +444,30 @@
         "what do you take",
         "any new medicines",
         "started any new drugs",
-        "antibiotics"
+        "antibiotics",
+        "blood pressure pill",
+        "antidepressant"
       ],
-      "response": "I just started an antibiotic for a sinus infection a few days ago, and I take an over-the-counter allergy pill. I sometimes use an anti-nausea tablet too.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_gi_illness",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "vomiting",
+        "diarrhea",
+        "been sick",
+        "eating and drinking",
+        "stomach bug",
+        "dehydrated"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -447,7 +481,7 @@
         "did anything set it off",
         "prodrome"
       ],
-      "response": "A fire alarm went off right next to me. I felt my heart fluttering for a couple of seconds, then everything went black.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -463,7 +497,7 @@
         "post-event confusion",
         "wet yourself"
       ],
-      "response": "They said I twitched for a few seconds, but I came right back to normal — no confusion, I didn't bite my tongue and I didn't wet myself.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -477,7 +511,7 @@
         "first time",
         "fainted before"
       ],
-      "response": "Twice before I nearly fainted — once when a phone rang and startled me, and once while I was swimming.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -492,7 +526,7 @@
         "skipped beats",
         "chest pounding"
       ],
-      "response": "Yes — I get little flutters in my chest now and then, and right before I went down my heart was racing.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -505,10 +539,25 @@
         "shortness of breath",
         "breathing trouble"
       ],
-      "response": "No chest pain and no trouble breathing.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "mental_health",
+      "category": "pmh",
+      "triggerConcepts": [
+        "mood",
+        "depression",
+        "anxiety",
+        "mental health",
+        "psychiatric history"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
     },
     {
       "id": "hearing_deafness",
@@ -519,7 +568,7 @@
         "hard of hearing",
         "hearing problems"
       ],
-      "response": "No, my hearing is fine — no one in my family is deaf either.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -534,7 +583,7 @@
         "street drugs",
         "illicit drugs"
       ],
-      "response": "No, I don't use any recreational or street drugs.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -564,7 +613,18 @@
       "normalIfNotPresent": "Alert and fully oriented; no focal deficit."
     },
     {
-      "id": "assess_peripheral_pulses_finding_3",
+      "id": "assess_mucous_membranes_finding_3",
+      "finding": "Mucous membranes slightly dry; skin turgor mildly reduced — consistent with recent volume loss from the vomiting/diarrhea illness.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Mucous membranes moist; normal skin turgor."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_4",
       "finding": "Cardiac: peripheral pulses normal and symmetric.",
       "revealedBy": [
         "assess_peripheral_pulses"
@@ -574,7 +634,7 @@
       "normalIfNotPresent": "Peripheral pulses normal and symmetric."
     },
     {
-      "id": "assess_general_appearance_finding_4",
+      "id": "assess_general_appearance_finding_5",
       "finding": "General: alert, anxious-appearing, no distress; no dysmorphic features.",
       "revealedBy": [
         "assess_general_appearance"
@@ -594,50 +654,56 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Long QT syndrome with torsades de pointes",
-    "diagnosticFramework": "24F presents after a brief loss of consciousness triggered by a sudden loud alarm, with a family history of unexplained sudden death and recent palpitations. The diagnosis is Long QT syndrome with torsades de pointes, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "24F with anxiety/depression, newly treated mild hypertension, and a recent vomiting-and-diarrhea illness — on azithromycin, citalopram, ondansetron, an OTC antihistamine, and hydrochlorothiazide — presents after a brief loss of consciousness triggered by a sudden loud alarm, preceded by palpitations, with a family history of unexplained sudden death. The diagnosis is Long QT syndrome with torsades de pointes: a congenital long QT predisposition unmasked by multiple acquired hits (QT-prolonging drugs and hypokalemia/hypomagnesemia). It is reached by eliciting the focused history (family sudden death, the full medication list, the GI illness), performing the targeted exam, interpreting her OWN long-QT EKG and the telemetry, integrating the multi-system electrolyte derangements, and excluding the must-not-miss alternatives (other channelopathy/structural disease, seizure).",
     "keyHistoryClues": [
       "Syncope triggered by a sudden loud noise (startle), preceded by palpitations.",
       "Prior near-faints with auditory startle and during swimming (LQT2/LQT1 triggers).",
       "Family history of unexplained sudden death and a relative who drowned while swimming.",
-      "Recently started a QT-prolonging antibiotic plus OTC antihistamine/antiemetic.",
+      "Five new QT-prolonging or potassium-wasting drugs: azithromycin, citalopram, ondansetron, antihistamine, hydrochlorothiazide.",
+      "Recent vomiting-and-diarrhea illness with poor intake driving hypokalemia and hypomagnesemia.",
       "Brief convulsive movements but rapid recovery without post-ictal confusion, tongue biting, or incontinence."
     ],
     "keyPhysicalExamFindings": [
       "Cardiac: regular rate and rhythm, normal S1/S2, NO murmur, NO gallop.",
       "Neuro: fully oriented, no focal deficit, no tongue laceration, normal gait.",
+      "Mucous membranes slightly dry; skin turgor mildly reduced — consistent with recent volume loss.",
       "Cardiac: peripheral pulses normal and symmetric.",
       "General: alert, anxious-appearing, no distress; no dysmorphic features."
     ],
     "keyDiagnosticFindings": [
       "EKG_QTc",
       "Telemetry",
-      "BMP_Mg",
+      "BMP_electrolytes",
       "Troponin",
       "TSH",
+      "CBC",
       "Tox_screen"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items (family sudden death, new QT-prolonging drugs) only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Long QT syndrome with torsades de pointes while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Long QT syndrome with torsades de pointes and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including sensitive items (family sudden death, the full new-medication list, the recent GI illness) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings, including signs of recent volume loss.",
+      "Build a differential led by Long QT syndrome with torsades, naming three causes/mechanisms of QT prolongation and the congenital-vs-acquired fork, while excluding must-not-miss causes.",
+      "Order a focused workup; interpret the patient's OWN long-QT EKG and telemetry and integrate the multi-system electrolyte derangements.",
+      "Commit to Long QT syndrome with torsades de pointes, resolve the congenital-vs-acquired question by stopping drugs / correcting electrolytes / re-measuring the QTc, and manage with stabilization, definitive treatment, consults, family screening, and safe disposition."
     ],
     "commonPitfalls": [
       "Giving a QT-prolonging antiarrhythmic (amiodarone/sotalol/procainamide)",
       "Mislabeling convulsive syncope as a primary seizure and discharging without telemetry",
-      "Reading the raw QT without correcting for heart rate (QTc)"
+      "Reading the raw QT without correcting for heart rate (QTc)",
+      "Missing one or more of the five QT-prolonging / potassium-wasting drugs",
+      "Discharging the patient home instead of admitting to a monitored bed"
     ],
     "managementPearls": [
-      "IV magnesium sulfate for torsades",
-      "Stop all QT-prolonging drugs",
-      "Replete potassium and magnesium; increase heart rate for pause-dependent torsades"
+      "IV magnesium sulfate for torsades regardless of serum level",
+      "Stop ALL QT-prolonging and potassium-wasting drugs",
+      "Replete potassium to high-normal and magnesium; increase heart rate for pause-dependent torsades",
+      "Admit to a monitored bed; arrange med reconciliation, avoid-QT-drug card, and family screening before any discharge"
     ],
     "criticalHistoryItems": [
       "family_sudden_death",
       "medications",
-      "trigger_and_prodrome"
+      "recent_gi_illness"
     ],
     "criticalExamItems": [
       "auscultate_mitral_area"
@@ -647,24 +713,24 @@
       "Continuous telemetry / cardiac monitoring"
     ],
     "criticalInterpretationItems": [
-      "Markedly prolonged QT interval (QTc ~530 ms) in sinus rhythm — the substrate for torsades de pointes.",
+      "Sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and U waves — the substrate for torsades de pointes, aggravated by QT-prolonging drugs and hypokalemia/hypomagnesemia.",
       "Normal cardiac silhouette and clear lungs — no acute cardiopulmonary process."
     ],
     "criticalManagementItems": [
       "IV magnesium sulfate for torsades",
-      "Stop all QT-prolonging drugs"
+      "Stop all QT-prolonging and potassium-wasting drugs"
     ],
     "keyImageInterpretationFindings": [
-      "Markedly prolonged QT interval (QTc ~530 ms) in sinus rhythm — the substrate for torsades de pointes.",
+      "Sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and U waves — the substrate for torsades de pointes, aggravated by QT-prolonging drugs and hypokalemia/hypomagnesemia.",
       "Normal cardiac silhouette and clear lungs — no acute cardiopulmonary process."
     ],
     "criticalImageInterpretationFindings": [
-      "Markedly prolonged QT interval (QTc ~530 ms) in sinus rhythm — the substrate for torsades de pointes.",
+      "Sinus rhythm with a markedly prolonged QT interval (QTc ~530 ms), broad notched T waves and U waves — the substrate for torsades de pointes, aggravated by QT-prolonging drugs and hypokalemia/hypomagnesemia.",
       "Normal cardiac silhouette and clear lungs — no acute cardiopulmonary process."
     ],
     "imageInterpretationPearls": [
       "A normal film is an interpretation task in its own right — a normal heart size supports a primary electrical cause over structural disease.",
-      "Always correct the QT for heart rate (QTc) before calling it normal or prolonged.",
+      "Always correct the QT for heart rate (QTc) before calling it normal or prolonged, and look for the U waves of hypokalemia.",
       "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
@@ -680,7 +746,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (mental health, family sudden death)",
         "points": 1
       },
       {
@@ -695,8 +761,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

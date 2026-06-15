@@ -1,16 +1,16 @@
 {
   "id": "diarrhea-08",
   "category": "Diarrhea",
-  "difficulty": "moderate",
-  "title": "Chronic watery diarrhea in an older woman",
+  "difficulty": "hard",
+  "title": "Chronic watery diarrhea in an older woman with prior cholecystectomy",
   "diagnosis": "Microscopic colitis",
   "chart": {
     "ageSex": "63F",
     "cc": "Watery diarrhea for months",
-    "oneLiner": "63F presents with several months of chronic, non-bloody watery diarrhea, including nocturnal stools, with mild weight loss and normal-appearing colonoscopy.",
+    "oneLiner": "63F with osteoarthritis, GERD, hypothyroidism, depression, and a remote cholecystectomy presents with several months of chronic, non-bloody watery diarrhea, including nocturnal stools, on a polypharmacy regimen (NSAID, PPI, SSRI). She has mild weight loss, orthostatic lightheadedness, a hyperchloremic non-gap acidosis with hypokalemia, and a grossly normal colonoscopy.",
     "vitals": {
-      "BP": "124/76",
-      "HR": "84",
+      "BP": "118/74",
+      "HR": "92",
       "RR": "16",
       "Temp": "36.9°C",
       "SpO2": "98% RA"
@@ -18,41 +18,44 @@
     "timer": 180
   },
   "opening": "I've been having watery diarrhea for months now, even at night, and nothing I do seems to settle it.",
-  "patientFile": "PERSONA: 63-year-old woman, tired and a bit anxious about the persistence of her symptoms. Good historian, polite, answers what is asked.\n\nHPI: 4–6 months of chronic, WATERY, NON-BLOODY diarrhea, typically 6–10 loose stools per day, including NOCTURNAL stools that wake her. Fecal urgency and occasional mild lower abdominal cramping that eases after a bowel movement. About 6 lb of unintentional weight loss, mostly because she eats less to avoid the diarrhea. NO blood or mucus in stool, NO black/tarry stools. NO fever, NO overseas travel, NO sick contacts, NO recent antibiotics. Diarrhea PERSISTS with a 48-hour fast (only if specifically asked about fasting) — pointing away from an osmotic/dietary cause. Started an NSAID (ibuprofen) for knee osteoarthritis and is on a proton-pump inhibitor and a recently increased SSRI (sertraline) — these are relevant culprit medications (only if asked about medications). Reports mild dry mouth and feeling lightheaded when standing quickly.\nPMH: knee osteoarthritis; GERD; mild hypothyroidism on stable levothyroxine; possible autoimmune tendency (has a sister with celiac disease, only if asked about family history).\nMEDS: ibuprofen (NSAID) for knee pain, omeprazole (PPI), sertraline (SSRI, recently increased), levothyroxine (stable dose, recent TSH normal if asked).\nSOCIAL: nonsmoker now but a FORMER smoker — quit 5 years ago, ~20 pack-years (smoking is a known risk factor; reveal only if asked). Rare alcohol. Lives independently, no recent travel.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing but tired; mildly dehydrated.\n- Vitals: BP 124/76, HR 84, RR 16, 36.9°C, SpO2 98% RA.\n- HEENT: mucous membranes slightly dry.\n- Abdomen: soft, mild diffuse/lower abdominal tenderness, NO rebound or guarding, active (mildly hyperactive) bowel sounds, no masses, no organomegaly.\n- Skin: mild decreased turgor; no rash, no jaundice.\n- No lower-extremity edema; no focal neuro deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the culprit medications (NSAID, PPI, SSRI), the former smoking history, the family history of celiac, or that the diarrhea persists with fasting unless asked about medications, smoking, family history, or fasting/diet respectively.\n- Reveal the dry mucous membranes and decreased skin turgor only if those exams are performed.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 63-year-old woman, tired and a bit anxious about the persistence of her symptoms. Good historian, polite, answers what is asked but does not volunteer extra detail.\n\nHPI: 4–6 months of chronic, WATERY, NON-BLOODY diarrhea, typically 6–10 loose stools per day, including NOCTURNAL stools that wake her. Fecal urgency and occasional mild lower abdominal cramping that eases after a bowel movement. About 6 lb of unintentional weight loss, mostly because she eats less to avoid the diarrhea. NO blood or mucus in stool, NO black/tarry stools. NO fever, NO overseas travel, NO sick contacts, NO recent antibiotics. Diarrhea PERSISTS with a 48-hour fast (only if specifically asked about fasting) — pointing away from an osmotic/dietary cause and toward a secretory process. She has felt LIGHTHEADED standing up and her urine has been darker and scant on the worst days (mild volume depletion; reveal only if asked about dizziness/urine).\nKEY CONFOUNDER (reveal only if asked about prior surgery/abdominal operations or about whether anything changed before symptoms began): She had her GALLBLADDER REMOVED (cholecystectomy) about 8 months ago for gallstones — a few months BEFORE the diarrhea started. (This raises bile-acid diarrhea as a genuine competing explanation.)\nMEDS confounder (reveal only if asked about medications): started an NSAID (ibuprofen) for knee osteoarthritis, is on a long-standing proton-pump inhibitor (omeprazole), and had a recently INCREASED SSRI (sertraline) — all three are recognized culprit drugs for microscopic colitis / drug-induced diarrhea. Also takes levothyroxine and a daily multivitamin.\nPMH: knee osteoarthritis; GERD; mild hypothyroidism on stable levothyroxine; depression; gallstones status post laparoscopic cholecystectomy ~8 months ago; possible autoimmune tendency (a sister with celiac disease — only if asked about family history). She is the kind of patient who 'collects diagnoses and pills.'\nMEDS: ibuprofen (NSAID) for knee pain, omeprazole (PPI) for years, sertraline (SSRI, dose recently increased), levothyroxine (stable dose; recent TSH if asked is borderline-high/drifting because absorption is erratic with the diarrhea), over-the-counter multivitamin. NO recent antibiotics, NO metformin, NO laxatives or magnesium-containing antacids (reveal if asked about laxatives).\nSOCIAL: nonsmoker now but a FORMER smoker — quit 5 years ago, ~20 pack-years (smoking is a known risk factor for microscopic colitis; reveal only if asked). Rare alcohol. Lives ALONE and independently in a second-floor walk-up; a daughter visits weekly. No recent travel. (Living situation and supports are relevant to safe discharge — reveal if asked.)\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing but tired; mildly dehydrated.\n- Vitals: BP 118/74, HR 92, RR 16, 36.9°C, SpO2 98% RA; on standing the HR rises and she feels lightheaded (orthostatic; reveal if orthostatic vitals are taken).\n- HEENT: mucous membranes slightly dry.\n- Abdomen: soft, well-healed laparoscopic port scars, mild diffuse/lower abdominal tenderness, NO rebound or guarding, active (mildly hyperactive) bowel sounds, no masses, no organomegaly.\n- Skin: mild decreased turgor; no rash, no jaundice.\n- Neuro/MSK: no focal deficit; no asterixis; gait steady but she tires; no lower-extremity edema.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the prior cholecystectomy, the culprit medications (NSAID, PPI, SSRI), the former smoking history, the family history of celiac, the orthostatic lightheadedness, or that the diarrhea persists with fasting unless asked about surgery/abdominal operations, medications, smoking, family history, dizziness, or fasting/diet respectively.\n- Reveal the dry mucous membranes, decreased skin turgor, and orthostatic vitals only if those exams are performed.\n- Reveal living situation and home supports only if asked about home/social situation.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "Hgb 12.6 (normal), WBC 7.2 (normal), Plt 250 — no anemia or leukocytosis.",
-      "StoolStudies": "Stool cultures, ova & parasites, and C. difficile toxin NEGATIVE; fecal leukocytes negative; stool occult blood NEGATIVE (infection and bleeding excluded).",
-      "InflammatoryAndCeliac": "CRP and ESR normal; albumin normal; TSH normal; tissue transglutaminase (tTG-IgA) NEGATIVE with normal total IgA (celiac excluded).",
-      "FecalCalprotectin": "Normal to mildly elevated — not the markedly high level expected in IBD.",
-      "Colonoscopy": "Colonoscopy: grossly NORMAL or near-normal mucosa with no ulceration or friability; random biopsies obtained from right and left colon — key to the diagnosis.",
-      "Histology": "Biopsy histology: intraepithelial lymphocytosis with a thickened subepithelial collagen band (collagenous pattern) and lamina propria inflammation — diagnostic of microscopic colitis."
+      "CBC": "Hgb 12.6 (normal), WBC 7.2 (normal), Plt 250 — no anemia or leukocytosis to suggest infection or IBD flare.",
+      "BMP": "Na 138, K 3.0 (LOW), Cl 113 (HIGH), HCO3 17 (LOW); anion gap = 138 − (113 + 17) = 8 (NORMAL/low) → NON-anion-gap (hyperchloremic) metabolic acidosis with hypokalemia from chronic stool bicarbonate and potassium loss. Creatinine 1.3 (baseline ~0.9) with BUN 28 → mild pre-renal AKI from volume depletion. Glucose normal.",
+      "StoolStudies": "Stool cultures, ova & parasites, and C. difficile toxin/GDH NEGATIVE; fecal leukocytes negative; stool occult blood NEGATIVE. Stool osmotic gap LOW and fecal pH normal — a SECRETORY pattern (infection and bleeding excluded; osmotic/dietary cause argued against).",
+      "InflammatoryAndCeliac": "CRP and ESR normal; albumin 3.8 (normal); tissue transglutaminase (tTG-IgA) NEGATIVE with normal total IgA (celiac excluded). TSH mildly elevated at 6.8 with normal free T4 — subclinical hypothyroid drift attributable to erratic levothyroxine absorption during the diarrhea, NOT the cause of the diarrhea.",
+      "FecalCalprotectin": "Normal to mildly elevated — not the markedly high level expected in active IBD; helps argue against Crohn's/UC.",
+      "Colonoscopy": "Colonoscopy: grossly NORMAL or near-normal mucosa with no ulceration, friability, or mass; terminal ileum normal. Random biopsies obtained from right AND left colon — essential because the diagnosis is histologic.",
+      "Histology": "Biopsy histology: intraepithelial lymphocytosis with a THICKENED subepithelial collagen band (collagenous pattern) and lamina propria inflammation — diagnostic of microscopic colitis. No granulomas, no crypt distortion of chronic IBD, no dysplasia/malignancy."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus rhythm with normal intervals; flattened T waves and a subtle U wave suggesting mild hypokalemia from chronic diarrhea.",
-      "verify": "Source a study matching: sinus rhythm with subtle hypokalemic changes (flattened T waves, U waves). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm with flattened/inverted T waves, prominent U waves, and a long QU interval — hypokalemia (K 3.0) from chronic diarrhea. No acute ischemia. This is the patient's OWN tracing and the changes track her electrolyte loss.",
+      "integrated": true,
+      "litflStudyN": 6,
+      "verify": "Source a study matching: sinus rhythm with hypokalemic changes — flattened T waves and prominent U waves. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus rhythm with subtle hypokalemic T-wave flattening and U waves",
+      "imageDescription": "12-lead showing sinus rhythm with flattened T waves and prominent U waves of hypokalemia",
       "searchTerms": [
         "hypokalemia ECG U waves",
         "T wave flattening U wave EKG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 66-year-old woman with chronic watery diarrhea and fatigue has a tracing showing flattened T waves and subtle U waves."
+      "clinicalVignette": "A 63-year-old woman with months of watery diarrhea, lightheadedness, and K 3.0 on labs has a tracing showing flattened T waves and prominent U waves."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear lungs with no acute cardiopulmonary process; no free air under the diaphragm.",
+      "findings": "Clear lungs with no acute cardiopulmonary process; normal cardiomediastinal silhouette; no free air under the diaphragm.",
       "verify": "Pick a CC chest film that is normal with clear lungs and no free air.",
       "assetNeeded": true,
       "imageDescription": "normal PA chest radiograph with clear lungs and no free air",
@@ -61,11 +64,12 @@
         "clear lungs no acute process radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 64-year-old man with longstanding nonbloody diarrhea has a screening film performed to exclude an acute abdominal or chest process."
+      "clinicalVignette": "An older woman with longstanding nonbloody diarrhea and weight loss has a screening film to exclude an occult secondary cause."
     }
   },
   "revealKeys": [
     "CBC",
+    "BMP",
     "StoolStudies",
     "InflammatoryAndCeliac",
     "FecalCalprotectin",
@@ -77,56 +81,67 @@
   "essential": [
     "Histology",
     "StoolStudies",
-    "Colonoscopy"
+    "Colonoscopy",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this chronic watery diarrhea (note your leading diagnosis).",
-      "rubric": "Microscopic colitis (leading,7). Infectious/chronic infectious diarrhea incl. C. difficile — must EXCLUDE first (CANT-MISS,5). Colorectal neoplasm (CANT-MISS to consider given age,3). Celiac disease (core,3). Medication-induced diarrhea (NSAID/PPI/SSRI) (core,2). Names a secretory/chronic non-bloody process and the imperative to exclude infection and malignancy with stool studies and colonoscopy (core,5).",
-      "idealAnswer": "Leading diagnosis: Microscopic colitis. Must-not-miss diagnoses to exclude: Chronic/infectious diarrhea including C. difficile; Colorectal neoplasm. Also reasonable: Celiac disease; Medication-induced diarrhea (NSAID/PPI/SSRI).",
+      "prompt": "Based on your history and physical, list your differential for this chronic watery diarrhea (note your leading diagnosis). Given the recent cholecystectomy and her medication list, name your two strongest competing explanations. Also name THREE mechanisms/etiologies of chronic NON-bloody secretory diarrhea you are working through.",
+      "rubric": "Microscopic colitis (leading,6). Bile-acid (bile-salt) malabsorption diarrhea after cholecystectomy — the strongest competing diagnosis given a normal colonoscopy and secretory, fasting-persistent diarrhea (CANT-MISS competitor,5). Infectious/chronic infectious diarrhea incl. C. difficile — must EXCLUDE first (CANT-MISS,3). Colorectal neoplasm — must consider at her age (CANT-MISS,2). Celiac disease (core,2). Drug-induced diarrhea (NSAID/PPI/SSRI) (core,2). Names THREE mechanisms/etiologies of chronic non-bloody secretory diarrhea — e.g. microscopic colitis, bile-acid malabsorption, drug-induced, hyperthyroidism, neuroendocrine/secretagogue tumor (core,5). PENALTY: anchoring on a single diagnosis without excluding infection, malignancy, or the post-cholecystectomy bile-acid competitor (-3).",
+      "idealAnswer": "Leading diagnosis: Microscopic colitis. Strongest COMPETING explanation: bile-acid (bile-salt) malabsorption diarrhea following her recent cholecystectomy — it also produces secretory, fasting-persistent, watery diarrhea with a grossly normal colonoscopy, so the two are hard to separate without histology / a therapeutic trial. Must-not-miss to exclude first: chronic/infectious diarrhea including C. difficile, and colorectal neoplasm. Also reasonable: celiac disease and drug-induced diarrhea (NSAID/PPI/SSRI). Three mechanisms of chronic non-bloody secretory diarrhea I am working through: (1) microscopic colitis, (2) bile-acid malabsorption, (3) drug-induced secretion — with hyperthyroidism and a neuroendocrine/secretagogue tumor as further secretory mechanisms.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Microscopic colitis",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Infectious diarrhea including C. difficile",
+            "item": "Bile-acid malabsorption diarrhea after cholecystectomy (competing diagnosis)",
             "points": 5
           },
           {
-            "item": "Colorectal neoplasm",
+            "item": "Infectious diarrhea including C. difficile",
             "points": 3
+          },
+          {
+            "item": "Colorectal neoplasm",
+            "points": 2
           }
         ],
         "coreActions": [
           {
             "item": "Celiac disease",
-            "points": 3
-          },
-          {
-            "item": "Medication-induced diarrhea (NSAID/PPI/SSRI)",
             "points": 2
           },
           {
-            "item": "Names a chronic non-bloody process and the imperative to exclude infection and malignancy",
+            "item": "Drug-induced diarrhea (NSAID/PPI/SSRI)",
+            "points": 2
+          },
+          {
+            "item": "Names three mechanisms/etiologies of chronic non-bloody secretory diarrhea",
             "points": 5
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a single diagnosis without excluding infection, malignancy, or the post-cholecystectomy bile-acid competitor",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Bile-acid malabsorption diarrhea after cholecystectomy (competing diagnosis)",
         "Infectious diarrhea including C. difficile",
         "Colorectal neoplasm"
       ],
       "acceptableAlternatives": [
         "Celiac disease",
-        "Medication-induced diarrhea (NSAID/PPI/SSRI)"
+        "Drug-induced diarrhea (NSAID/PPI/SSRI)"
       ]
     },
     {
@@ -134,56 +149,45 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "Stool studies incl. cultures, O&P, C. difficile toxin, occult blood to EXCLUDE infection/bleeding (CANT-MISS,4). CBC and basic metabolic panel/electrolytes (chronic diarrhea risks hypokalemia) (3). Celiac serology — tTG-IgA with total IgA (2). CRP/ESR, albumin, TSH (2). Colonoscopy WITH RANDOM BIOPSIES of normal-appearing mucosa — essential because the mucosa looks normal grossly (CANT-MISS,4). PENALTY: empiric antibiotics without excluding infection, or stopping at a normal-appearing colonoscopy without biopsies (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Stool studies; Inflammatory and celiac; Fecal calprotectin; Colonoscopy; Histology.",
+      "prompt": "What initial workup do you want to order? She has been lightheaded on standing.",
+      "rubric": "Stool studies incl. cultures, O&P, C. difficile toxin/GDH, occult blood, and a secretory/osmotic-gap profile to EXCLUDE infection/bleeding and characterize the pattern (CANT-MISS,4). CBC and a basic metabolic panel/electrolytes — chronic diarrhea risks hypokalemia, hyperchloremic non-gap acidosis, and pre-renal AKI (CANT-MISS,3). Celiac serology — tTG-IgA with total IgA; CRP/ESR, albumin, TSH (2). Colonoscopy WITH RANDOM BIOPSIES of normal-appearing right AND left colon — essential because the mucosa looks normal grossly (CANT-MISS,4). Consider a bile-acid diarrhea workup (SeHCAT / fecal bile acids / 7α-C4) or an empiric bile-acid-sequestrant trial given the cholecystectomy (bonus,2). PENALTY: empiric antibiotics without excluding infection, or stopping at a normal-appearing colonoscopy without biopsies (-2).",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP (electrolytes/renal — look for hypokalemia, hyperchloremic non-gap acidosis, and pre-renal AKI); Stool studies (cultures, O&P, C. difficile toxin/GDH, occult blood, and an osmotic-gap/secretory profile); Inflammatory and celiac serology (CRP/ESR, albumin, tTG-IgA with total IgA, TSH); Fecal calprotectin; Colonoscopy WITH random biopsies of normal-appearing right and left colon; Histology. Given the recent cholecystectomy, consider a bile-acid-diarrhea evaluation (SeHCAT / fecal bile acids / serum 7α-C4) or a short empiric bile-acid sequestrant trial to address the competing diagnosis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Stool studies (cultures, O&P, C. difficile toxin, occult blood) to exclude infection/bleeding",
+            "item": "Stool studies (cultures, O&P, C. difficile toxin, occult blood, osmotic-gap/secretory profile) to exclude infection/bleeding",
             "points": 4
           },
           {
-            "item": "Colonoscopy with random biopsies of normal-appearing mucosa",
+            "item": "Colonoscopy with random biopsies of normal-appearing right and left colon",
             "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "CBC and metabolic panel/electrolytes",
+            "item": "CBC and metabolic panel/electrolytes (look for hypokalemia, non-gap acidosis, AKI)",
             "points": 3
           },
           {
-            "item": "Celiac serology (tTG-IgA with total IgA)",
-            "points": 2
-          },
-          {
-            "item": "CRP/ESR, albumin, TSH",
+            "item": "Celiac serology (tTG-IgA with total IgA) and CRP/ESR, albumin, TSH",
             "points": 2
           },
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
-          },
+            "points": 1
+          }
+        ],
+        "bonusActions": [
           {
-            "item": "Inflammatory and celiac",
-            "points": 2
-          },
-          {
-            "item": "Fecal calprotectin",
-            "points": 2
-          },
-          {
-            "item": "Histology",
+            "item": "Bile-acid diarrhea evaluation (SeHCAT / fecal bile acids / 7a-C4) or empiric sequestrant trial given cholecystectomy",
             "points": 2
           }
         ],
-        "bonusActions": [],
         "penalties": [
           {
             "item": "Empiric antibiotics before excluding infection, or stopping at a normal-appearing colonoscopy without biopsies",
@@ -192,13 +196,13 @@
         ]
       },
       "requiredTests": [
-        "Stool studies (cultures, O&P, C. difficile toxin, occult blood) to exclude infection/bleeding",
-        "Colonoscopy with random biopsies of normal-appearing mucosa"
+        "Stool studies (cultures, O&P, C. difficile toxin, occult blood, osmotic-gap/secretory profile) to exclude infection/bleeding",
+        "Colonoscopy with random biopsies of normal-appearing right and left colon"
       ],
       "optionalTests": [
-        "CBC and metabolic panel/electrolytes",
-        "Celiac serology (tTG-IgA with total IgA)",
-        "CRP/ESR, albumin, TSH"
+        "CBC and metabolic panel/electrolytes (look for hypokalemia, non-gap acidosis, AKI)",
+        "Celiac serology (tTG-IgA with total IgA) and CRP/ESR, albumin, TSH",
+        "Bile-acid diarrhea evaluation (SeHCAT / fecal bile acids / 7a-C4) or empiric sequestrant trial given cholecystectomy"
       ],
       "contraindicatedTests": [
         "Empiric antibiotics before excluding infection, or stopping at a normal-appearing colonoscopy without biopsies"
@@ -213,32 +217,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus rhythm with subtle hypokalemic changes (flattened T waves, U waves) from chronic diarrhea. CREDIT: rate & rhythm (6); recognizes hypokalemic T-wave flattening/U waves and links to electrolyte loss (5); systematic read (4). PENALTY: calling the study entirely normal / missing the electrolyte clue (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and link them to her presentation.",
+      "rubric": "Findings = sinus rhythm with flattened/inverted T waves, prominent U waves, and a long QU interval — HYPOKALEMIA (K 3.0) from chronic diarrhea, NOT a primary cardiac event. CREDIT: rate & rhythm (4); recognizes hypokalemic T-wave flattening with prominent U waves and links them to her potassium loss (6); systematic read with pertinent negative of no acute ischemia (3). PENALTY: calling the study entirely normal / missing the U waves, or attributing the changes to ischemia (-3).",
       "keyFindings": [
-        "flattened T waves with a U wave",
-        "links the changes to hypokalemia from chronic diarrhea"
+        "flattened or inverted T waves with prominent U waves and a long QU interval",
+        "links the changes to hypokalemia (K 3.0) from chronic diarrhea, not ischemia"
       ],
       "criticalFindings": [
-        "Sinus rhythm with hypokalemic changes (flattened T waves, U waves)."
+        "Sinus rhythm with hypokalemic changes — flattened/inverted T waves and prominent U waves from K 3.0."
       ],
       "commonMistakes": [
-        "reading the tracing as completely normal and missing the subtle U waves"
+        "reading the tracing as completely normal and missing the prominent U waves",
+        "attributing the T-wave/U-wave changes to ischemia rather than hypokalemia"
       ],
-      "idealAnswer": "Sinus rhythm with flattened T waves and U waves suggesting hypokalemia from chronic diarrhea; check and replete potassium.",
+      "idealAnswer": "Sinus rhythm with flattened/inverted T waves, prominent U waves, and a long QU interval — the classic pattern of HYPOKALEMIA, which fits her K of 3.0 from chronic stool potassium loss. No acute ischemic ST changes. Recognize this as her OWN electrolyte abnormality: it mandates checking and repleting potassium (and magnesium) and watching for arrhythmia, and it reinforces that the diarrhea is a high-output secretory process.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus rhythm with hypokalemic changes (flattened T waves, U waves)."
+          "Sinus rhythm with hypokalemic changes — flattened/inverted T waves and prominent U waves from K 3.0."
         ],
         "coreActions": [
-          "flattened T waves with a U wave",
-          "links the changes to hypokalemia from chronic diarrhea"
+          "flattened or inverted T waves with prominent U waves and a long QU interval",
+          "links the changes to hypokalemia (K 3.0) from chronic diarrhea, not ischemia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the U waves or attributes them to ischemia",
             "points": -3
           }
         ]
@@ -251,7 +256,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute cardiopulmonary process; no free air. CREDIT: identifies a normal film (6); notes it screens for free air/perforation and other secondary causes (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no acute cardiopulmonary process; normal cardiomediastinal silhouette; no free air. CREDIT: identifies a normal film (6); notes it screens for free air/perforation and other secondary causes of weight loss (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
         "identifies clear lungs and no acute process",
         "notes absence of free air under the diaphragm"
@@ -262,7 +267,7 @@
       "commonMistakes": [
         "over-reading a normal film or inventing an infiltrate"
       ],
-      "idealAnswer": "No acute cardiopulmonary process; lungs clear and no free air under the diaphragm. A normal screening film that helps exclude a secondary cause.",
+      "idealAnswer": "No acute cardiopulmonary process; lungs clear, normal cardiomediastinal silhouette, and no free air under the diaphragm. A normal screening film that helps exclude an occult secondary cause for her weight loss.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -285,9 +290,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Infection and celiac are excluded, colonoscopy looks grossly normal, but random biopsies show intraepithelial lymphocytosis with a thickened subepithelial collagen band. What is your diagnosis and what did you rule out?",
-      "rubric": "Microscopic colitis (collagenous subtype) (6). Cites a grossly normal/near-normal colonoscopy with diagnostic histology, and explicitly excludes infection (negative stool studies/C. diff), celiac (negative tTG with normal IgA), and IBD/malignancy (no ulceration, calprotectin not markedly elevated, no mass) (4).",
-      "idealAnswer": "Microscopic colitis (collagenous subtype). Supported by a grossly normal colonoscopy with diagnostic histology (intraepithelial lymphocytosis and a thickened subepithelial collagen band). This excludes infection (negative stool studies/C. diff), celiac (negative tTG with normal IgA), and IBD/malignancy (no ulceration, calprotectin not markedly elevated, no mass).",
+      "prompt": "Infection and celiac are excluded, the bile-acid workup is non-diagnostic, colonoscopy looks grossly normal, but random biopsies show intraepithelial lymphocytosis with a thickened subepithelial collagen band. Commit to a diagnosis: what is it, how do you separate it from the bile-acid competitor, and what residual uncertainty remains?",
+      "rubric": "Microscopic colitis (collagenous subtype) (6). Cites the grossly normal/near-normal colonoscopy with DIAGNOSTIC histology as the discriminator that separates it from bile-acid diarrhea (which has normal histology), and explicitly excludes infection (negative stool studies/C. diff), celiac (negative tTG with normal IgA), and IBD/malignancy (no ulceration, calprotectin not markedly elevated, no mass). Acknowledges RESIDUAL ambiguity — bile-acid malabsorption can COEXIST after cholecystectomy, so a sequestrant trial may still be warranted if budesonide is incomplete; also names the hypokalemia/non-gap acidosis and TSH drift as separate concurrent problems (4).",
+      "idealAnswer": "Microscopic colitis, collagenous subtype. The discriminator is histology: a grossly normal colonoscopy with diagnostic biopsies (intraepithelial lymphocytosis and a thickened subepithelial collagen band) — bile-acid malabsorption, by contrast, has normal histology, so the biopsy is what separates the two competitors. This also excludes infection (negative stool studies/C. diff), celiac (negative tTG with normal IgA), and IBD/malignancy (no ulceration, calprotectin not markedly elevated, no mass). Residual uncertainty: bile-acid malabsorption can COEXIST after cholecystectomy and the SeHCAT/7α-C4 was non-diagnostic, so if budesonide gives an incomplete response a bile-acid-sequestrant trial is still reasonable. Separately, name her concurrent problems — hypokalemia with a hyperchloremic non-gap metabolic acidosis and mild pre-renal AKI from stool losses, and a mildly elevated TSH from erratic levothyroxine absorption — none of which is the primary cause but each needs addressing.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -296,48 +301,53 @@
         "penalties": []
       },
       "mustNotMiss": [
+        "Bile-acid malabsorption diarrhea after cholecystectomy (competing diagnosis)",
         "Infectious diarrhea including C. difficile",
         "Colorectal neoplasm"
       ],
       "acceptableAlternatives": [
         "Celiac disease",
-        "Medication-induced diarrhea (NSAID/PPI/SSRI)"
+        "Drug-induced diarrhea (NSAID/PPI/SSRI)"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH chronic diarrhea/microscopic colitis: budesonide first-line to induce remission (CANT-MISS,7); stop/swap culprit medications — NSAID, PPI, SSRI (4); supportive care — rehydration and repletion of electrolytes/potassium (3); smoking cessation counseling (2); antidiarrheal (loperamide) for mild symptoms (3); GI follow-up and consider maintenance/relapse plan (2); reassure benign course but treat to control symptoms (2). PENALTY: starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection (-2); ignoring symptomatic hypokalemia (-2).",
-      "idealAnswer": "Microscopic colitis: oral budesonide (e.g., 9 mg daily, tapered) is first-line to induce remission. Discontinue or switch likely culprit drugs — NSAID, PPI, SSRI. Rehydrate and replete electrolytes (correct hypokalemia). Counsel on smoking cessation (smoking is a risk/relapse factor). Loperamide can help mild symptoms. Arrange GI follow-up with a plan for relapse (re-treat with budesonide; consider maintenance). Reassure that it is a benign, non-malignant condition while treating symptoms.",
+      "prompt": "What is your management plan, including disposition? Is it safe to send her home, and what do you arrange to do so?",
+      "rubric": "Per MGH chronic diarrhea/microscopic colitis: budesonide first-line to induce remission (CANT-MISS,6); correct her hypokalemia and non-gap acidosis and rehydrate (replete K and Mg, IV/oral fluids), recheck the EKG (CANT-MISS,4); stop/swap culprit medications — NSAID, PPI, SSRI — via med reconciliation (3); empiric bile-acid sequestrant trial if response to budesonide is incomplete, addressing the competitor (2); smoking-cessation counseling and loperamide for breakthrough symptoms (2); SAFE-DISCHARGE/disposition — confirm she is hemodynamically stable and not orthostatic, arrange GI follow-up with a relapse/maintenance plan, repeat electrolytes, daughter/caregiver education, home-safety check given she lives alone on a second floor, and return precautions (CANT-MISS,4); reassure benign, non-malignant course (2). PENALTY: discharging while still hypokalemic/orthostatic or starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection (-3).",
+      "idealAnswer": "Microscopic colitis: oral budesonide (e.g., 9 mg daily, tapered) is first-line to induce remission. Correct the electrolyte/acid-base problem first — replete potassium and magnesium, rehydrate (oral/IV), recheck the EKG to confirm the hypokalemic changes resolve, and recheck renal function. Perform medication reconciliation and discontinue or switch the likely culprit drugs — NSAID, PPI, SSRI (coordinate the SSRI change with her prescriber for her depression). Because bile-acid malabsorption can coexist after cholecystectomy, add an empiric bile-acid sequestrant (e.g., cholestyramine) if the budesonide response is incomplete. Loperamide for breakthrough symptoms; counsel on smoking cessation (a relapse factor). Disposition / safe discharge: she can go home ONLY once she is hemodynamically stable, no longer orthostatic, and her potassium is corrected — otherwise admit/observe for repletion. Arrange close GI follow-up with a documented relapse/maintenance plan, a repeat metabolic panel, education for the patient and her daughter, a home-safety/PT assessment given she lives alone on a second-floor walk-up, and clear return precautions. Reassure her that microscopic colitis is a benign, non-malignant condition while we treat the symptoms.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Budesonide first-line to induce remission",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Correct hypokalemia and non-gap acidosis, rehydrate, recheck EKG",
+            "points": 4
+          },
+          {
+            "item": "Arrange safe discharge: confirm stable/non-orthostatic, GI follow-up with relapse plan, repeat electrolytes, caregiver education, home-safety eval, return precautions",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Stop/swap culprit medications (NSAID, PPI, SSRI)",
-            "points": 4
-          },
-          {
-            "item": "Rehydration and electrolyte/potassium repletion",
+            "item": "Medication reconciliation: stop/swap culprit medications (NSAID, PPI, SSRI)",
             "points": 3
           },
           {
-            "item": "Loperamide for mild symptoms",
-            "points": 3
-          },
-          {
-            "item": "Smoking cessation counseling",
+            "item": "Empiric bile-acid sequestrant trial if budesonide response incomplete",
             "points": 2
           },
           {
-            "item": "GI follow-up with relapse/maintenance plan",
+            "item": "Loperamide for breakthrough symptoms",
+            "points": 2
+          },
+          {
+            "item": "Smoking cessation counseling",
             "points": 2
           }
         ],
@@ -349,29 +359,30 @@
         ],
         "penalties": [
           {
-            "item": "Starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection",
-            "points": -2
+            "item": "Discharging while still hypokalemic/orthostatic, or starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Budesonide first-line to induce remission"
+        "Budesonide first-line to induce remission",
+        "Correct hypokalemia and non-gap acidosis, rehydrate, recheck EKG",
+        "Arrange safe discharge: confirm stable/non-orthostatic, GI follow-up with relapse plan, repeat electrolytes, caregiver education, home-safety eval, return precautions"
       ],
       "optionalActions": [
-        "Stop/swap culprit medications (NSAID, PPI, SSRI)",
-        "Rehydration and electrolyte/potassium repletion",
-        "Loperamide for mild symptoms",
+        "Medication reconciliation: stop/swap culprit medications (NSAID, PPI, SSRI)",
+        "Empiric bile-acid sequestrant trial if budesonide response incomplete",
+        "Loperamide for breakthrough symptoms",
         "Smoking cessation counseling",
-        "GI follow-up with relapse/maintenance plan",
         "Reassure benign, non-malignant course while treating symptoms"
       ],
       "unsafeActions": [
-        "Starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection"
+        "Discharging while still hypokalemic/orthostatic, or starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection"
       ],
       "consults": [
         "Gastroenterology"
       ],
-      "disposition": "Discharge with GI follow-up",
+      "disposition": "Discharge with GI follow-up once potassium corrected and not orthostatic; admit/observe if not stable",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Chronic Diarrhea (Microscopic Colitis)",
@@ -386,12 +397,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "living_situation"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
     "affect": "63-year-old woman, tired and a bit anxious about the persistence of her symptoms. Good historian, polite.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (smoking, living situation, prior surgery, medications) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -409,7 +421,7 @@
         "ever smoked",
         "former smoker"
       ],
-      "response": "I quit smoking about five years ago, but before that I smoked for a long time — roughly a pack a day for twenty years.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -425,7 +437,7 @@
         "what does the stool look like",
         "character of stool"
       ],
-      "response": "It's very watery, no blood and no mucus that I can see. I'm going maybe six to ten times a day, and it's loose every time.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -439,7 +451,7 @@
         "diarrhea at night",
         "wakes you from sleep"
       ],
-      "response": "Yes, it wakes me up at night and I have to rush to the bathroom — that's part of why I'm so worn out.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -453,10 +465,26 @@
         "how long",
         "duration"
       ],
-      "response": "It's been going on for about four to six months now, and it hasn't really let up.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_surgery",
+      "category": "pmh",
+      "triggerConcepts": [
+        "prior surgery",
+        "any operations",
+        "gallbladder",
+        "cholecystectomy",
+        "abdominal surgery",
+        "did anything change before it started"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
     },
     {
       "id": "fasting_response",
@@ -468,7 +496,7 @@
         "diarrhea while fasting",
         "stop eating"
       ],
-      "response": "I tried not eating for a day or two when I was really sick, and the diarrhea still kept going even though I had eaten nothing.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -485,11 +513,28 @@
         "ibuprofen",
         "antacid",
         "ppi",
-        "antidepressant"
+        "antidepressant",
+        "laxatives"
       ],
-      "response": "I take ibuprofen pretty often for my knee, an omeprazole for heartburn, a levothyroxine for my thyroid, and recently my doctor raised the dose of my sertraline.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "volume_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "dizzy",
+        "lightheaded",
+        "dizziness when standing",
+        "urine output",
+        "dark urine",
+        "how much are you urinating"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -501,7 +546,7 @@
         "appetite",
         "any other symptoms"
       ],
-      "response": "I've lost about six pounds, but I think that's mostly because I've been eating less to try to avoid the diarrhea.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -517,7 +562,7 @@
         "fever",
         "anyone else sick"
       ],
-      "response": "No, I haven't traveled anywhere, no one around me has been sick, I haven't been on antibiotics, and I haven't had any fevers.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -532,7 +577,23 @@
         "autoimmune",
         "bowel disease in family"
       ],
-      "response": "My sister has celiac disease, and I think there's some thyroid trouble that runs in the family.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "living_situation",
+      "category": "social",
+      "triggerConcepts": [
+        "live alone",
+        "who is at home",
+        "home situation",
+        "support at home",
+        "stairs",
+        "who helps you"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -541,7 +602,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: soft, mild diffuse/lower abdominal tenderness, NO rebound or guarding (would suggest an acute abdomen/perforation).",
+      "finding": "Abdomen: soft, well-healed laparoscopic port scars, mild diffuse/lower abdominal tenderness, NO rebound or guarding (would suggest an acute abdomen/perforation).",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
@@ -550,7 +611,17 @@
       "normalIfNotPresent": "No rebound tenderness."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_2",
+      "id": "obtain_orthostatic_vitals_finding_2",
+      "finding": "Orthostatic vitals: HR rises and she reports lightheadedness on standing, consistent with volume depletion from chronic diarrhea — relevant to safe discharge.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic change."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_3",
       "finding": "Abdomen: active (mildly hyperactive) bowel sounds; no masses or organomegaly.",
       "revealedBy": [
         "auscultate_bowel_sounds"
@@ -560,7 +631,7 @@
       "normalIfNotPresent": "Normal active bowel sounds."
     },
     {
-      "id": "assess_mucous_membranes_finding_3",
+      "id": "assess_mucous_membranes_finding_4",
       "finding": "HEENT: mucous membranes slightly dry, consistent with mild dehydration from chronic diarrhea.",
       "revealedBy": [
         "assess_mucous_membranes"
@@ -570,7 +641,7 @@
       "normalIfNotPresent": "Mucous membranes moist."
     },
     {
-      "id": "assess_skin_turgor_finding_4",
+      "id": "assess_skin_turgor_finding_5",
       "finding": "Skin: mildly decreased turgor, consistent with mild volume depletion from chronic diarrhea.",
       "revealedBy": [
         "assess_skin_turgor"
@@ -578,6 +649,16 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "Skin turgor normal."
+    },
+    {
+      "id": "inspect_abdomen_finding_6",
+      "finding": "Abdomen: well-healed laparoscopic cholecystectomy port scars; not distended; no visible masses.",
+      "revealedBy": [
+        "inspect_abdomen"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen not distended."
     }
   ],
   "overallScoring": {
@@ -590,16 +671,19 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Microscopic colitis",
-    "diagnosticFramework": "63F presents with several months of chronic, non-bloody watery diarrhea, including nocturnal stools, with mild weight loss and a normal-appearing colonoscopy. The diagnosis is Microscopic colitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "63F with osteoarthritis, GERD, hypothyroidism, depression, and a remote cholecystectomy presents with several months of chronic, non-bloody watery diarrhea, including nocturnal stools, on a polypharmacy regimen (NSAID, PPI, SSRI), with mild weight loss, orthostatic volume depletion, hypokalemia with a hyperchloremic non-gap metabolic acidosis and mild pre-renal AKI, and a grossly normal colonoscopy. The diagnosis is Microscopic colitis (collagenous subtype), separated from the strongest competitor — bile-acid malabsorption after cholecystectomy — by diagnostic histology, and reached by eliciting the focused history (including the prior surgery and culprit medications), performing the targeted exam (including orthostatic vitals), interpreting the patient's OWN hypokalemic EKG, and excluding the must-not-miss alternatives (infection/C. diff, colorectal neoplasm).",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: soft, mild diffuse/lower abdominal tenderness, NO rebound or guarding (would suggest an acute abdomen/perforation).",
+      "Abdomen: soft, well-healed laparoscopic port scars, mild diffuse/lower abdominal tenderness, NO rebound or guarding (would suggest an acute abdomen/perforation).",
+      "Orthostatic vitals: HR rises and she reports lightheadedness on standing, consistent with volume depletion from chronic diarrhea — relevant to safe discharge.",
       "Abdomen: active (mildly hyperactive) bowel sounds; no masses or organomegaly.",
       "HEENT: mucous membranes slightly dry, consistent with mild dehydration from chronic diarrhea.",
-      "Skin: mildly decreased turgor, consistent with mild volume depletion from chronic diarrhea."
+      "Skin: mildly decreased turgor, consistent with mild volume depletion from chronic diarrhea.",
+      "Abdomen: well-healed laparoscopic cholecystectomy port scars; not distended; no visible masses."
     ],
     "keyDiagnosticFindings": [
       "CBC",
+      "BMP",
       "StoolStudies",
       "InflammatoryAndCeliac",
       "FecalCalprotectin",
@@ -607,49 +691,57 @@
       "Histology"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Microscopic colitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Microscopic colitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the polypharmacy and the recent cholecystectomy.",
+      "Elicit the focused history, including the prior surgery, culprit medications, smoking, fasting response, and living situation only on direct questioning.",
+      "Perform the targeted physical exam maneuvers — including orthostatic vitals — to reveal volume depletion and the cholecystectomy scars.",
+      "Build a differential led by Microscopic colitis with bile-acid malabsorption as the genuine competitor, while excluding infection/C. diff and colorectal neoplasm and naming three secretory mechanisms.",
+      "Order a focused, order-sensitive workup; interpret the patient's OWN hypokalemic EKG and the normal CXR, and read the multi-system labs (hypokalemia, non-gap acidosis, AKI, TSH drift).",
+      "Commit to Microscopic colitis using diagnostic histology to separate it from bile-acid diarrhea, then manage with electrolyte correction, budesonide, med reconciliation, and a safe-discharge disposition."
     ],
     "commonPitfalls": [
+      "Anchoring on a single diagnosis without considering bile-acid malabsorption after cholecystectomy",
+      "Stopping at a normal-appearing colonoscopy without random biopsies",
+      "Discharging the patient while still hypokalemic/orthostatic",
       "Starting immunosuppression/antibiotics without histologic confirmation and exclusion of infection"
     ],
     "managementPearls": [
-      "Budesonide first-line to induce remission"
+      "Budesonide first-line to induce remission",
+      "Correct hypokalemia and non-gap acidosis and confirm she is not orthostatic before discharge"
     ],
     "criticalHistoryItems": [
       "stool_character",
+      "prior_surgery",
       "medications"
     ],
     "criticalExamItems": [
-      "assess_rebound_tenderness"
+      "assess_rebound_tenderness",
+      "obtain_orthostatic_vitals"
     ],
     "criticalWorkupItems": [
-      "Stool studies (cultures, O&P, C. difficile toxin, occult blood) to exclude infection/bleeding",
-      "Colonoscopy with random biopsies of normal-appearing mucosa"
+      "Stool studies (cultures, O&P, C. difficile toxin, occult blood, osmotic-gap/secretory profile) to exclude infection/bleeding",
+      "Colonoscopy with random biopsies of normal-appearing right and left colon"
     ],
     "criticalInterpretationItems": [
-      "Sinus rhythm with hypokalemic changes (flattened T waves, U waves).",
+      "Sinus rhythm with hypokalemic changes — flattened/inverted T waves and prominent U waves from K 3.0.",
       "No acute cardiopulmonary process; no free air."
     ],
     "criticalManagementItems": [
-      "Budesonide first-line to induce remission"
+      "Budesonide first-line to induce remission",
+      "Correct hypokalemia and non-gap acidosis, rehydrate, recheck EKG",
+      "Arrange safe discharge: confirm stable/non-orthostatic, GI follow-up with relapse plan, repeat electrolytes, caregiver education, home-safety eval, return precautions"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus rhythm with hypokalemic changes (flattened T waves, U waves).",
+      "Sinus rhythm with hypokalemic changes — flattened/inverted T waves and prominent U waves from K 3.0.",
       "No acute cardiopulmonary process; no free air."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus rhythm with hypokalemic changes (flattened T waves, U waves).",
+      "Sinus rhythm with hypokalemic changes — flattened/inverted T waves and prominent U waves from K 3.0.",
       "No acute cardiopulmonary process; no free air."
     ],
     "imageInterpretationPearls": [
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Flattened T waves with prominent U waves are hypokalemia, not ischemia — tie the tracing to the patient's potassium.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -679,8 +771,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read — patient's own hypokalemic EKG (LITFL study 6)",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

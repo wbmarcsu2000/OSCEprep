@@ -2,50 +2,52 @@
   "id": "ams-09",
   "category": "Altered Mental Status",
   "difficulty": "hard",
-  "title": "Agitation, fever, and a racing heart",
+  "title": "Agitation, fever, and a racing irregular heart in a patient on amiodarone",
   "diagnosis": "Thyroid storm",
   "chart": {
-    "ageSex": "38F",
+    "ageSex": "44F",
     "cc": "Confused and agitated",
-    "oneLiner": "38F with a goiter presents with agitation, high fever, and a rapid irregular pulse after a recent flu-like illness.",
+    "oneLiner": "44F with Graves disease and paroxysmal atrial fibrillation on amiodarone presents with agitation, high fever, and a rapid irregular pulse after a recent flu-like illness; she had stopped her methimazole weeks ago.",
     "vitals": {
-      "BP": "152/68",
-      "HR": "148",
+      "BP": "158/64",
+      "HR": "146",
       "RR": "26",
-      "Temp": "40.1°C",
+      "Temp": "40.0°C",
       "SpO2": "97% RA"
     },
     "timer": 180
   },
   "opening": "My heart is pounding and I feel like I'm burning up… I can't sit still or think clearly.",
-  "patientFile": "PERSONA: 38-year-old woman, agitated, flushed, diaphoretic, tremulous. Restless and anxious, intermittently confused but able to give some history.\n\nCOLLATERAL (provide ONLY if the student asks family/chart/medication list): Over the past 2 weeks she has had weight loss, heat intolerance, palpitations, and tremor. She was diagnosed with Graves disease about a year ago and is supposed to take methimazole but stopped it 6 weeks ago because she 'felt better' (medication nonadherence — reveal only if asked). Developed a flu-like respiratory illness a few days ago with cough and low-grade fever, which then escalated sharply today with high fever and agitation (infectious precipitant). NO recent iodinated contrast, NO new amiodarone.\n\nHPI (from patient): pounding heart, feeling hot and sweaty, shaky, anxious, hard to focus. Loose stools the last day. NO chest pain, NO focal weakness, NO neck stiffness, NO headache, NO photophobia.\nPMH: Graves disease (hyperthyroidism). MEDS: methimazole (not taking). SOCIAL: occasional alcohol, no drugs. ALLERGIES: none. LMP: regular.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: agitated, flushed, warm and diaphoretic, fine resting tremor.\n- Vitals: BP 152/68 (wide pulse pressure), HR 148 irregularly irregular, RR 26, Temp 40.1°C, SpO2 97% RA.\n- Neck: diffuse, smooth goiter; soft thyroid bruit (if auscultated/palpated).\n- Cardiac: tachycardic, irregularly irregular rhythm (atrial fibrillation with rapid ventricular response).\n- Neuro: agitated/anxious, hyperreflexic with brisk reflexes, no focal deficit, no neck stiffness.\n- Skin: warm, moist/diaphoretic; no rash, no jaundice.\n- Eyes: mild proptosis/lid retraction (Graves) if inspected.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the missed methimazole, the prior Graves diagnosis, or the recent illness unless asked about medications, medical history, adherence, or recent infections.\n- The goiter and thyroid bruit are revealed only if the neck/thyroid is examined; hyperreflexia only if reflexes are tested.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 44-year-old woman, agitated, flushed, diaphoretic, tremulous. Restless and anxious, intermittently confused but able to give some history when redirected.\n\nCOLLATERAL (provide ONLY if the student asks family/chart/medication list): Over the past 2–3 weeks she has had weight loss, heat intolerance, palpitations, and tremor. She was diagnosed with Graves disease about two years ago and is supposed to take methimazole but stopped it 7 weeks ago because she 'felt fine' (medication nonadherence — reveal only if asked). She also has paroxysmal atrial fibrillation and was started on AMIODARONE by cardiology about 4 months ago for rhythm control (reveal only if the medication list or cardiac history is asked) — this is an iodine-rich drug. Developed a flu-like respiratory illness a few days ago with cough and low-grade fever, which then escalated sharply today with high fever and agitation (infectious precipitant). NO recent iodinated CT contrast.\n\nHPI (from patient): pounding heart, feeling hot and sweaty, shaky, anxious, hard to focus. Loose stools the last day. NO chest pain, NO focal weakness, NO neck stiffness, NO headache, NO photophobia.\nPMH: Graves disease (hyperthyroidism); paroxysmal atrial fibrillation; hypertension. MEDS: methimazole (NOT taking — stopped 7 weeks ago); amiodarone 200 mg daily (taking); lisinopril; occasional ibuprofen for headaches; no anticoagulant yet (recently started amiodarone, AF was thought paroxysmal/low burden). SOCIAL: occasional alcohol, no drugs, no tobacco. ALLERGIES: none. LMP: regular.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: agitated, flushed, warm and diaphoretic, fine resting tremor.\n- Vitals: BP 158/64 (wide pulse pressure), HR 146 irregularly irregular, RR 26, Temp 40.0°C, SpO2 97% RA.\n- Neck: diffuse, smooth goiter; soft thyroid bruit (if auscultated/palpated) — argues for vascular Graves gland rather than a quiet amiodarone-destruction gland.\n- Cardiac: tachycardic, irregularly irregular rhythm (atrial fibrillation with rapid ventricular response).\n- Neuro: agitated/anxious, hyperreflexic with brisk reflexes, no focal deficit, no neck stiffness.\n- Skin: warm, moist/diaphoretic; no rash, no jaundice.\n- Eyes: mild proptosis/lid retraction (Graves) if inspected.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the missed methimazole, the prior Graves diagnosis, the atrial fibrillation, the amiodarone, or the recent illness unless asked about medications, medical history, adherence, the heart rhythm, or recent infections.\n- The goiter and thyroid bruit are revealed only if the neck/thyroid is examined; hyperreflexia only if reflexes are tested; the irregular rhythm only if the heart is auscultated.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "TFTs": "TSH undetectable (<0.01); free T4 markedly elevated; free T3 markedly elevated — overt biochemical hyperthyroidism.",
-      "BMP": "Na 138, K 4.0, BUN 18, Cr 0.9, Glucose 132 (mild hyperglycemia); calcium mildly elevated.",
-      "CBC": "Mild leukocytosis with left shift (stress/infection); Hgb normal, Plt normal.",
-      "LFTs": "Mildly elevated transaminases and bilirubin (common in thyroid storm; baseline for antithyroid drug safety).",
-      "Cultures": "Sepsis screen for precipitant — blood cultures, UA, respiratory viral panel; lactate mildly elevated.",
-      "TSI": "Thyroid-stimulating immunoglobulin / TRAb POSITIVE — confirms underlying Graves disease."
+      "TFTs": "TSH undetectable (<0.01); free T4 markedly elevated; free T3 also elevated (the T3 elevation favors Graves/hyperfunction over a pure amiodarone destructive thyroiditis, where T3 tends to be relatively lower) — overt biochemical thyrotoxicosis.",
+      "BMP": "Na 134, K 3.6, Cl 101, HCO3 20, BUN 30, Cr 1.4 (mild prerenal AKI from GI losses/diaphoresis; baseline Cr 0.8). Anion gap = 134 − (101 + 20) = 13 (mild, consistent with elevated lactate). Glucose 168 (stress hyperglycemia); corrected calcium mildly elevated at 10.8.",
+      "CBC": "WBC 14.8 with left shift (stress/infection); Hgb 12.6, Plt 240.",
+      "LFTs": "AST 78, ALT 65, total bilirubin 2.1 — mild hepatic dysfunction (seen in thyroid storm AND with amiodarone; establishes a baseline before antithyroid drugs).",
+      "Cultures": "Sepsis screen for the precipitant — blood cultures pending, UA bland, respiratory viral panel sent; venous lactate 2.6 (mildly elevated), consistent with the small anion gap.",
+      "TSI": "Thyroid-stimulating immunoglobulin / TRAb POSITIVE — confirms underlying autoimmune Graves disease (helps resolve the amiodarone-induced thyrotoxicosis vs Graves-relapse fork toward Graves)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Atrial fibrillation with rapid ventricular response, rate ~145–150; irregularly irregular, no discrete P waves, no acute ischemic ST-T changes.",
-      "verify": "Source a study matching: Atrial fibrillation with rapid ventricular response, rate ~145–150; irregularly irregular, no discrete P waves, no acute ischemic ST-T changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Atrial fibrillation with rapid ventricular response, rate ~145; irregularly irregular, no discrete P waves. QT/QTc appears prolonged (amiodarone effect) but no acute ischemic ST-T changes.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response, rate ~145, irregularly irregular, no discrete P waves, with a prolonged QT (amiodarone). Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response",
+      "integrated": true,
+      "litflStudyN": 2,
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and a prolonged QT interval",
       "searchTerms": [
         "atrial fibrillation rapid ventricular response ECG",
-        "AF RVR irregularly irregular no P waves"
+        "AF RVR irregularly irregular prolonged QT amiodarone"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 38-year-old woman with hyperthyroidism presents with agitation, tremor, heat intolerance, and a rapid irregular pulse."
+      "clinicalVignette": "A 44-year-old woman with hyperthyroidism and amiodarone-treated atrial fibrillation presents with agitation, tremor, heat intolerance, and a rapid irregular pulse."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,7 +63,7 @@
         "clear chest radiograph no infiltrate"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 38-year-old woman presents with agitation and palpitations, and a film is taken to screen for pneumonia or pulmonary edema."
+      "clinicalVignette": "A 44-year-old woman presents with agitation and palpitations, and a film is taken to screen for pneumonia or pulmonary edema."
     }
   },
   "revealKeys": [
@@ -84,30 +86,38 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this agitated, febrile, tachycardic patient (note your leading diagnosis).",
-      "rubric": "Thyroid storm / thyrotoxicosis (leading,7). Sepsis / severe infection (CANT-MISS to exclude,4). Sympathomimetic toxidrome / stimulant or anticholinergic toxicity (CANT-MISS,3). Neuroleptic malignant syndrome / serotonin syndrome (CANT-MISS,3). Alcohol/sedative withdrawal (core,2). Pheochromocytoma (core,2). Names hyperthermia + tachyarrhythmia + agitation in a known Graves patient and the imperative to exclude sepsis and toxidromes (core,4).",
-      "idealAnswer": "Leading diagnosis: Thyroid storm (decompensated thyrotoxicosis). Must-not-miss diagnoses to exclude: Sepsis/severe infection; Sympathomimetic or anticholinergic toxidrome; Neuroleptic malignant syndrome / serotonin syndrome. Also reasonable: Alcohol/sedative withdrawal; Pheochromocytoma.",
+      "prompt": "Based on your history and physical for this agitated, febrile, tachycardic patient, list your differential (note your leading diagnosis). Within thyrotoxicosis, explicitly name THREE distinct etiologies/mechanisms that could be driving it in this specific patient, and name the must-not-miss non-thyroid mimics you have to exclude.",
+      "rubric": "Thyroid storm / decompensated thyrotoxicosis (leading,6). COMPETING FORK — names amiodarone-induced thyrotoxicosis (AIT) vs Graves relapse as the two genuinely competing thyrotoxicosis mechanisms here (CANT-MISS to resolve,4). Sepsis / severe infection (CANT-MISS,3). Sympathomimetic / anticholinergic toxidrome (CANT-MISS,2). Neuroleptic malignant syndrome / serotonin syndrome (CANT-MISS,2). Names THREE distinct etiologies/mechanisms of thyrotoxicosis in this patient — e.g. (1) Graves relapse from stopping methimazole, (2) amiodarone-induced thyrotoxicosis type 1 (iodine-induced hyperfunction) or type 2 (destructive thyroiditis), (3) infection/illness as the precipitant tipping compensated thyrotoxicosis into storm (core,4). Alcohol/sedative withdrawal (core,2). Pheochromocytoma (core,2). PENALTY: anchoring on Graves alone without considering the amiodarone contribution (-2).",
+      "idealAnswer": "Leading diagnosis: Thyroid storm (decompensated thyrotoxicosis). The genuine fork is the MECHANISM of the thyrotoxicosis: Graves relapse after stopping methimazole versus amiodarone-induced thyrotoxicosis (AIT) — this patient is on amiodarone, an iodine-rich drug. Three distinct etiologies/mechanisms operating here: (1) Graves disease relapse from methimazole nonadherence; (2) amiodarone-induced thyrotoxicosis — type 1 (iodine load driving an autonomous/Graves gland to overproduce) or type 2 (amiodarone-induced destructive thyroiditis dumping stored hormone); (3) a recent infection/illness acting as the precipitant that tipped compensated thyrotoxicosis into storm. Must-not-miss non-thyroid mimics to exclude: Sepsis/severe infection; Sympathomimetic or anticholinergic toxidrome; Neuroleptic malignant syndrome / serotonin syndrome. Also reasonable: alcohol/sedative withdrawal and pheochromocytoma.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Thyroid storm / thyrotoxicosis",
-            "points": 7
+            "item": "Thyroid storm / decompensated thyrotoxicosis (leading)",
+            "points": 6
           },
           {
-            "item": "Sepsis / severe infection",
+            "item": "Competing fork: amiodarone-induced thyrotoxicosis vs Graves relapse",
             "points": 4
           },
           {
-            "item": "Sympathomimetic / anticholinergic toxidrome",
+            "item": "Sepsis / severe infection",
             "points": 3
           },
           {
+            "item": "Sympathomimetic / anticholinergic toxidrome",
+            "points": 2
+          },
+          {
             "item": "Neuroleptic malignant syndrome / serotonin syndrome",
-            "points": 3
+            "points": 2
           }
         ],
         "coreActions": [
+          {
+            "item": "Names three distinct thyrotoxicosis etiologies/mechanisms (Graves relapse, amiodarone-induced thyrotoxicosis type 1/2, infection as precipitant)",
+            "points": 4
+          },
           {
             "item": "Alcohol/sedative withdrawal",
             "points": 2
@@ -115,19 +125,21 @@
           {
             "item": "Pheochromocytoma",
             "points": 2
-          },
-          {
-            "item": "Names hyperthermia + tachyarrhythmia + agitation in a known Graves patient and the imperative to exclude sepsis and toxidromes",
-            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on Graves alone without considering the amiodarone contribution",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
         "Sepsis / severe infection",
         "Sympathomimetic / anticholinergic toxidrome",
-        "Neuroleptic malignant syndrome / serotonin syndrome"
+        "Neuroleptic malignant syndrome / serotonin syndrome",
+        "Amiodarone-induced thyrotoxicosis"
       ],
       "acceptableAlternatives": [
         "Alcohol/sedative withdrawal",
@@ -140,8 +152,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Thyroid function tests — TSH, free T4, free T3 (CANT-MISS,4). BMP/electrolytes + glucose + calcium (3). CBC and search for precipitant — blood cultures, UA, viral panel (CANT-MISS,3). LFTs as baseline before antithyroid drugs (2). EKG for the tachyarrhythmia (2). TSI/TRAb to confirm Graves (1). PENALTY: giving iodine BEFORE a thionamide (can worsen thyrotoxicosis if given first) (-2).",
-      "idealAnswer": "Order: EKG; CXR; Thyroid function tests; BMP; CBC; LFTs; Cultures; Thyroid-stimulating immunoglobulin.",
+      "rubric": "Thyroid function tests — TSH, free T4, free T3 (CANT-MISS,4). BMP/electrolytes + glucose + calcium (covers the Na 134, K 3.6, the AKI, and the small anion gap) (3). CBC and search for precipitant — blood cultures, UA, viral panel, lactate (CANT-MISS,3). LFTs as baseline before antithyroid drugs and to track amiodarone hepatotoxicity (2). EKG for the tachyarrhythmia and the QT (1). TSI/TRAb to confirm Graves and help resolve the AIT-vs-Graves fork (1). CXR to screen for a precipitant (1). BONUS: thyroid ultrasound with Doppler to subtype AIT (hypervascular type 1 vs avascular type 2) (1). PENALTY: ordering a radioactive iodine uptake scan in a critically ill patient recently loaded with amiodarone iodine — it will be uninterpretable/low (-2); giving iodine BEFORE a thionamide (-2).",
+      "idealAnswer": "Order: EKG; CXR; Thyroid function tests (TSH, free T4, free T3); BMP with glucose and calcium; CBC; LFTs; blood cultures/UA/viral panel and lactate; Thyroid-stimulating immunoglobulin/TRAb. A thyroid ultrasound with Doppler can help subtype amiodarone-induced thyrotoxicosis (hypervascular type 1 vs avascular type 2). Avoid a radioactive iodine uptake scan acutely — the recent amiodarone iodine load makes it uninterpretable.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -150,34 +162,43 @@
             "points": 4
           },
           {
-            "item": "CBC and infectious precipitant workup (cultures, UA, viral panel)",
+            "item": "CBC and infectious precipitant workup (cultures, UA, viral panel, lactate)",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "BMP/electrolytes, glucose, calcium",
+            "item": "BMP/electrolytes, glucose, calcium (covers Na, K, AKI, anion gap)",
             "points": 3
           },
           {
-            "item": "LFTs before antithyroid drugs",
+            "item": "LFTs before antithyroid drugs / amiodarone baseline",
             "points": 2
           },
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "TSI/TRAb to confirm Graves",
+            "item": "TSI/TRAb to confirm Graves and resolve the AIT-vs-Graves fork",
             "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Thyroid ultrasound with Doppler to subtype amiodarone-induced thyrotoxicosis",
+            "points": 1
+          }
+        ],
         "penalties": [
+          {
+            "item": "Radioactive iodine uptake scan acutely after amiodarone iodine load",
+            "points": -2
+          },
           {
             "item": "Giving iodine before a thionamide",
             "points": -2
@@ -186,15 +207,18 @@
       },
       "requiredTests": [
         "Thyroid function tests (TSH, free T4, free T3)",
-        "CBC and infectious precipitant workup (cultures, UA, viral panel)"
+        "CBC and infectious precipitant workup (cultures, UA, viral panel, lactate)"
       ],
       "optionalTests": [
-        "BMP/electrolytes, glucose, calcium",
-        "LFTs before antithyroid drugs",
+        "BMP/electrolytes, glucose, calcium (covers Na, K, AKI, anion gap)",
+        "LFTs before antithyroid drugs / amiodarone baseline",
         "EKG",
-        "TSI/TRAb to confirm Graves"
+        "TSI/TRAb to confirm Graves and resolve the AIT-vs-Graves fork",
+        "CXR",
+        "Thyroid ultrasound with Doppler to subtype amiodarone-induced thyrotoxicosis"
       ],
       "contraindicatedTests": [
+        "Radioactive iodine uptake scan acutely after amiodarone iodine load",
         "Giving iodine before a thionamide"
       ],
       "orderSensitiveActions": [
@@ -207,33 +231,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = atrial fibrillation with rapid ventricular response; no acute ischemia. CREDIT: identifies irregularly irregular rhythm with no discrete P waves (7); names AF with RVR and rate (5); no acute ischemic changes / systematic read (3). PENALTY: over-calling ischemia or calling it sinus tachycardia (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and state how they change your management.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (~145) AND a prolonged QT interval from amiodarone; no acute ischemia. CREDIT: identifies irregularly irregular rhythm with no discrete P waves at a rapid rate (5); recognizes the PROLONGED QT and attributes it to amiodarone (7); links it to management — avoid additional QT-prolonging drugs (e.g. no haloperidol/ondansetron for agitation/nausea), repletes K/Mg, and uses rate control cautiously (3). PENALTY: calling it sinus tachycardia, missing the irregular irregularity, OR missing the long QT and over-calling ischemia (-3).",
       "keyFindings": [
-        "irregularly irregular rhythm with no discrete P waves",
-        "rapid ventricular rate (~145–150)"
+        "atrial fibrillation with rapid ventricular response (~145), irregularly irregular, no discrete P waves",
+        "prolonged QT interval attributable to amiodarone, with torsades risk if further QT-prolonging drugs are added"
       ],
       "criticalFindings": [
-        "Atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves, rate >100)."
+        "Atrial fibrillation with rapid ventricular response AND a prolonged QT (amiodarone effect) — avoid further QT-prolonging agents and replete K/Mg."
       ],
       "commonMistakes": [
         "calling it sinus tachycardia and missing the irregular irregularity",
+        "overlooking the prolonged QT and its amiodarone cause",
         "over-calling ischemia from rate-related ST-T changes"
       ],
-      "idealAnswer": "Atrial fibrillation with rapid ventricular response: irregularly irregular, no discrete P waves, rate ~145–150; no acute ischemic changes.",
+      "idealAnswer": "Atrial fibrillation with rapid ventricular response at ~145: irregularly irregular, no discrete P waves. There is also a prolonged QT interval, attributable to her amiodarone, with no acute ischemic ST-T changes. This changes management: I will AVOID additional QT-prolonging drugs for her agitation and GI symptoms (no haloperidol, no ondansetron), aggressively replete potassium and magnesium to lower torsades risk, and rate-control the AF cautiously — beta-blockade (propranolol/esmolol) is both the thyroid-storm and the rate-control treatment here. The amiodarone itself is a likely contributor to the thyrotoxicosis (iodine load), which factors into stopping/reviewing it with cardiology.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves, rate >100)."
+          "Atrial fibrillation with rapid ventricular response AND a prolonged QT (amiodarone effect) — avoid further QT-prolonging agents and replete K/Mg."
         ],
         "coreActions": [
-          "irregularly irregular rhythm with no discrete P waves",
-          "rapid ventricular rate (~145–150)"
+          "atrial fibrillation with rapid ventricular response (~145), irregularly irregular, no discrete P waves",
+          "prolonged QT interval attributable to amiodarone, with torsades risk if further QT-prolonging drugs are added"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls it sinus tachycardia / misses the irregular irregularity or the long QT",
             "points": -3
           }
         ]
@@ -246,7 +271,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = essentially clear film. CREDIT: identifies a normal film (6); notes it screens for a precipitating pneumonia or thyrotoxic heart-failure pulmonary edema (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = essentially clear film. CREDIT: identifies a normal film (6); notes it screens for a precipitating pneumonia or thyrotoxic high-output / amiodarone-related cardiopulmonary process and pulmonary edema (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
         "identifies an essentially clear film",
         "notes it screens for pneumonia precipitant or pulmonary edema"
@@ -257,7 +282,7 @@
       "commonMistakes": [
         "inventing an infiltrate or effusion"
       ],
-      "idealAnswer": "Essentially clear film; screens for a precipitating pneumonia or thyrotoxic high-output failure pulmonary edema — none seen here.",
+      "idealAnswer": "Essentially clear film; screens for a precipitating pneumonia or for thyrotoxic high-output failure / amiodarone-related pulmonary edema — none seen here.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -285,9 +310,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "TSH is undetectable with markedly elevated free T4 and T3, in a known Graves patient who stopped methimazole and now has fever, AF with RVR, and agitation. What is your diagnosis and what did you rule out?",
-      "rubric": "Thyroid storm (decompensated thyrotoxicosis), e.g. high Burch-Wartofsky score (6). Cites biochemical thyrotoxicosis plus end-organ decompensation (CNS, cardiovascular, hyperthermia) and explicitly excludes sepsis and toxidromes as the primary driver (4).",
-      "idealAnswer": "Thyroid storm (decompensated thyrotoxicosis) — biochemical thyrotoxicosis (undetectable TSH with markedly elevated free T4/T3) plus end-organ decompensation (CNS agitation, AF with RVR, hyperthermia) in a Graves patient who stopped methimazole, consistent with a high Burch-Wartofsky score. Sepsis and the sympathomimetic/anticholinergic toxidromes are excluded as the primary driver, though infection can be a precipitant.",
+      "prompt": "TSH is undetectable with markedly elevated free T4 and T3, TSI/TRAb is positive, and the EKG shows AF with RVR and a prolonged QT in a Graves patient on amiodarone who stopped methimazole and now has fever and agitation. Commit to a diagnosis, state the discriminating test, and address the residual ambiguity between Graves relapse and amiodarone-induced thyrotoxicosis.",
+      "rubric": "Thyroid storm (decompensated thyrotoxicosis), e.g. high Burch-Wartofsky score (5). Commits and names the discriminators: positive TSI/TRAb, a vascular goiter with bruit, and a still-elevated free T3 point toward Graves (with amiodarone acting as an iodine load / type-1 contributor) rather than a pure type-2 destructive thyroiditis; names thyroid Doppler ultrasound (hypervascular type 1 vs avascular type 2) as the discriminating test and acknowledges the residual ambiguity does not change the immediate stabilization (3). Cites biochemical thyrotoxicosis plus end-organ decompensation (CNS, cardiovascular AF/RVR, hyperthermia) and explicitly excludes sepsis and toxidromes as the primary driver while keeping infection as a precipitant (2).",
+      "idealAnswer": "Thyroid storm (decompensated thyrotoxicosis) — biochemical thyrotoxicosis (undetectable TSH with markedly elevated free T4/T3) plus end-organ decompensation (CNS agitation, AF with RVR, hyperthermia) in a Graves patient who stopped methimazole, consistent with a high Burch-Wartofsky score. Resolving the mechanism fork: the positive TSI/TRAb, the vascular goiter with a bruit, and a still-elevated free T3 favor Graves-predominant disease, with the amiodarone acting as an iodine load (type-1 amiodarone-induced thyrotoxicosis physiology) rather than a pure type-2 destructive thyroiditis. The discriminating test is thyroid ultrasound with Doppler (hypervascular type 1 / Graves vs avascular type 2); a radioactive iodine uptake is uninterpretable acutely after amiodarone. The residual type-1-vs-type-2 ambiguity does NOT change immediate stabilization (it mainly affects whether glucocorticoids vs thionamide dominate later). Sepsis and the sympathomimetic/anticholinergic and neuroleptic-malignant/serotonin toxidromes are excluded as the primary driver, though the recent infection is a precipitant.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -297,9 +322,11 @@
       },
       "mustNotMiss": [
         "Sepsis / severe infection",
-        "Sympathomimetic / anticholinergic toxidrome"
+        "Sympathomimetic / anticholinergic toxidrome",
+        "Pure type-2 amiodarone destructive thyroiditis (alters later therapy)"
       ],
       "acceptableAlternatives": [
+        "Amiodarone-induced thyrotoxicosis (type 1) in a Graves gland",
         "Compensated thyrotoxicosis without storm"
       ]
     },
@@ -307,15 +334,15 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH thyroid storm: beta-blockade — propranolol (or esmolol) to control adrenergic symptoms and rate (CANT-MISS,6); thionamide — PTU (preferred in storm) or methimazole to block synthesis (CANT-MISS,5); iodine (e.g. SSKI/Lugol) at least 1 hour AFTER the thionamide to block release (4); glucocorticoids — hydrocortisone/dexamethasone (3); aggressive supportive care — cooling, IV fluids, treat the precipitating infection (3); endocrinology consult and ICU admission (2). BONUS: cholestyramine / consider plasmapheresis if refractory (2). PENALTY: giving iodine before the thionamide (-3); using aspirin to control fever (displaces T4, worsens thyrotoxicosis) (-2).",
-      "idealAnswer": "Thyroid storm: ABCs and continuous monitoring in the ICU. Beta-blockade with propranolol (or esmolol infusion) for rate and adrenergic symptoms. Thionamide (PTU preferred in storm as it also blocks peripheral T4→T3 conversion; methimazole alternative) to block hormone synthesis. At least 1 hour LATER, give inorganic iodine (SSKI/Lugol) to block hormone release. Glucocorticoids (hydrocortisone or dexamethasone) to reduce T4→T3 conversion and treat possible adrenal insufficiency. Aggressive supportive care: active cooling and acetaminophen (avoid aspirin), IV fluids, identify and treat the precipitant (here the infection). Endocrinology consult. Consider cholestyramine and, if refractory, plasmapheresis.",
+      "prompt": "What is your management plan, including disposition and what is required before this patient could ever be safely discharged?",
+      "rubric": "Per MGH thyroid storm: beta-blockade — propranolol (or esmolol) to control adrenergic symptoms and the AF rate (CANT-MISS,5); thionamide — PTU (preferred in storm) or methimazole to block synthesis (CANT-MISS,5); iodine (SSKI/Lugol) at least 1 hour AFTER the thionamide to block release — but recognize iodine is less useful/avoided if this is amiodarone type-2 destruction (3); glucocorticoids — hydrocortisone/dexamethasone, especially important in amiodarone type-2 thyroiditis (3); aggressive supportive care — cooling with acetaminophen, IV fluids for the AKI, treat the precipitating infection, replete K/Mg given the prolonged QT (3); STOP/review amiodarone with cardiology and avoid further QT-prolonging or iodine-containing agents (2); endocrinology consult and ICU admission (1). SAFE DISCHARGE/DISPOSITION: not dischargeable now — admit to ICU; before any future discharge needs resolution of storm, a restarted/confirmed antithyroid regimen with adherence plan, endocrine and cardiology follow-up, and definitive-therapy planning (1). BONUS: cholestyramine / consider plasmapheresis or thyroidectomy if refractory (2). PENALTY: giving iodine before the thionamide (-3); using aspirin to control fever (displaces T4) (-2); adding a QT-prolonging antiemetic/antipsychotic (e.g. ondansetron/haloperidol) given the long QT (-2); discharging the patient (-3).",
+      "idealAnswer": "Thyroid storm: ABCs and continuous monitoring in the ICU. Beta-blockade with propranolol (or an esmolol infusion) for rate control of the AF and adrenergic symptoms. Thionamide (PTU preferred in storm — it also blocks peripheral T4→T3 conversion; methimazole alternative) to block synthesis. At least 1 hour LATER, inorganic iodine (SSKI/Lugol) to block release — but iodine is of limited use and generally avoided if this proves to be amiodarone type-2 destructive thyroiditis. Glucocorticoids (hydrocortisone or dexamethasone) to reduce T4→T3 conversion and treat possible adrenal insufficiency — and they are first-line for amiodarone type-2 thyroiditis, so they are doubly indicated here. Aggressive supportive care: active cooling with acetaminophen (NOT aspirin), IV fluids for the prerenal AKI, identify and treat the precipitating infection, and replete potassium and magnesium given the prolonged QT to lower torsades risk; AVOID additional QT-prolonging agents (no haloperidol or ondansetron). Stop/review the amiodarone with cardiology (iodine source and QT prolonger) and arrange anticoagulation assessment for the AF. Endocrinology consult. Consider cholestyramine and, if refractory, plasmapheresis or urgent thyroidectomy. DISPOSITION: this patient is NOT safe for discharge — admit to the ICU. Before any eventual discharge she needs the storm resolved, a confirmed antithyroid regimen with an adherence plan (she stopped methimazole), a decided amiodarone disposition, and close endocrinology + cardiology follow-up with definitive-therapy planning.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Beta-blockade (propranolol or esmolol)",
-            "points": 6
+            "item": "Beta-blockade (propranolol or esmolol) for rate and adrenergic control",
+            "points": 5
           },
           {
             "item": "Thionamide (PTU preferred, or methimazole)",
@@ -324,25 +351,33 @@
         ],
         "coreActions": [
           {
-            "item": "Iodine (SSKI/Lugol) at least 1 hour after thionamide",
-            "points": 4
-          },
-          {
-            "item": "Glucocorticoids (hydrocortisone/dexamethasone)",
+            "item": "Iodine (SSKI/Lugol) at least 1 hour after thionamide; recognize it is avoided in amiodarone type-2 destruction",
             "points": 3
           },
           {
-            "item": "Supportive care: cooling, IV fluids, treat precipitant",
+            "item": "Glucocorticoids (hydrocortisone/dexamethasone), first-line in amiodarone type-2 thyroiditis",
             "points": 3
+          },
+          {
+            "item": "Supportive care: cooling/acetaminophen, IV fluids for AKI, treat precipitant, replete K/Mg for the long QT",
+            "points": 3
+          },
+          {
+            "item": "Stop/review amiodarone with cardiology; avoid further QT-prolonging/iodine agents",
+            "points": 2
           },
           {
             "item": "Endocrinology consult and ICU admission",
-            "points": 2
+            "points": 1
+          },
+          {
+            "item": "Safe disposition: admit to ICU now; before any discharge need storm resolution, confirmed antithyroid regimen with adherence plan, amiodarone disposition, and endocrine/cardiology follow-up",
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Cholestyramine / consider plasmapheresis if refractory",
+            "item": "Cholestyramine / consider plasmapheresis or thyroidectomy if refractory",
             "points": 2
           }
         ],
@@ -352,28 +387,41 @@
             "points": -3
           },
           {
+            "item": "Discharging the patient",
+            "points": -3
+          },
+          {
             "item": "Using aspirin to control fever",
+            "points": -2
+          },
+          {
+            "item": "Adding a QT-prolonging antiemetic/antipsychotic (ondansetron/haloperidol) given the long QT",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Beta-blockade (propranolol or esmolol)",
+        "Beta-blockade (propranolol or esmolol) for rate and adrenergic control",
         "Thionamide (PTU preferred, or methimazole)"
       ],
       "optionalActions": [
-        "Iodine (SSKI/Lugol) at least 1 hour after thionamide",
-        "Glucocorticoids (hydrocortisone/dexamethasone)",
-        "Supportive care: cooling, IV fluids, treat precipitant",
+        "Iodine (SSKI/Lugol) at least 1 hour after thionamide; recognize it is avoided in amiodarone type-2 destruction",
+        "Glucocorticoids (hydrocortisone/dexamethasone), first-line in amiodarone type-2 thyroiditis",
+        "Supportive care: cooling/acetaminophen, IV fluids for AKI, treat precipitant, replete K/Mg for the long QT",
+        "Stop/review amiodarone with cardiology; avoid further QT-prolonging/iodine agents",
         "Endocrinology consult and ICU admission",
-        "Cholestyramine / consider plasmapheresis if refractory"
+        "Safe disposition: admit to ICU now; before any discharge need storm resolution, confirmed antithyroid regimen with adherence plan, amiodarone disposition, and endocrine/cardiology follow-up",
+        "Cholestyramine / consider plasmapheresis or thyroidectomy if refractory"
       ],
       "unsafeActions": [
         "Giving iodine before the thionamide",
-        "Using aspirin to control fever"
+        "Discharging the patient",
+        "Using aspirin to control fever",
+        "Adding a QT-prolonging antiemetic/antipsychotic (ondansetron/haloperidol) given the long QT"
       ],
       "consults": [
-        "Endocrinology"
+        "Endocrinology",
+        "Cardiology"
       ],
       "disposition": "Admit; ICU often required",
       "mghReference": {
@@ -393,9 +441,10 @@
       "medication_nonadherence"
     ],
     "communicationStyle": "restless and distractible; gives short answers and is intermittently hard to redirect",
-    "affect": "38-year-old woman, agitated, flushed, diaphoretic, tremulous. Restless and anxious, intermittently confused.",
+    "affect": "44-year-old woman, agitated, flushed, diaphoretic, tremulous. Restless and anxious, intermittently confused.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (stopped methimazole) unless directly asked",
+      "Do not volunteer the atrial fibrillation or the amiodarone unless asked about the heart rhythm or medications",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -412,7 +461,24 @@
         "ran out of medication",
         "medication adherence"
       ],
-      "response": "I stopped my thyroid pill — the methimazole — about six weeks ago. I felt better, so I figured I didn't need it anymore.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "amiodarone_af",
+      "category": "meds",
+      "triggerConcepts": [
+        "what medications do you take",
+        "medication list",
+        "amiodarone",
+        "heart rhythm medicine",
+        "irregular heartbeat",
+        "atrial fibrillation",
+        "any heart problems"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 4,
       "hiddenUntilAsked": true
@@ -427,9 +493,9 @@
         "hyperthyroidism",
         "past medical history"
       ],
-      "response": "I was told I have Graves disease — an overactive thyroid — about a year ago. That's what the pill was for.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
-      "points": 4,
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -442,7 +508,7 @@
         "been sick recently",
         "trigger or precipitant"
       ],
-      "response": "I caught something flu-like a few days ago — cough and a low fever — and then today it got much worse with the high fever and feeling crazed.",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": true
@@ -457,7 +523,7 @@
         "tremor or shakiness",
         "any other symptoms"
       ],
-      "response": "I've lost weight over the last couple of weeks, I can't stand the heat, my heart races, and my hands shake.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -471,7 +537,7 @@
         "how long",
         "duration"
       ],
-      "response": "The racing heart and feeling hot have been building for a couple of weeks, but it got severe and scary just today.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -486,7 +552,7 @@
         "bowel movements",
         "nausea"
       ],
-      "response": "I've had loose stools since yesterday. No vomiting.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -501,7 +567,7 @@
         "neck stiffness",
         "headache"
       ],
-      "response": "No chest pain, no weakness, no stiff neck, and no bad headache — just the pounding and the shakiness.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -512,11 +578,10 @@
       "triggerConcepts": [
         "recent CT contrast",
         "iodine or dye",
-        "amiodarone",
         "new medications",
         "drug use or stimulants"
       ],
-      "response": "No recent scans with dye, no amiodarone, no new medicines, and no street drugs.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -531,7 +596,7 @@
         "drug use",
         "stimulants or cocaine"
       ],
-      "response": "I drink a glass of wine now and then, nothing heavy, and no drugs.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -540,13 +605,13 @@
   "physicalExamMappings": [
     {
       "id": "assess_thyroid_finding_1",
-      "finding": "Neck: diffuse, smooth goiter; soft thyroid bruit.",
+      "finding": "Neck: diffuse, smooth goiter; soft thyroid bruit (suggests a vascular Graves gland rather than a quiet amiodarone-destruction gland).",
       "revealedBy": [
         "assess_thyroid"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "Thyroid not enlarged, no nodules."
+      "normalIfNotPresent": "Thyroid not enlarged, no nodules, no bruit."
     },
     {
       "id": "assess_reflexes_finding_2",
@@ -611,14 +676,15 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Thyroid storm",
-    "diagnosticFramework": "38F with known Graves disease who stopped methimazole presents after a flu-like illness with agitation, hyperthermia, and atrial fibrillation with rapid ventricular response. The diagnosis is Thyroid storm, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "44F with known Graves disease and paroxysmal atrial fibrillation on amiodarone who stopped methimazole presents after a flu-like illness with agitation, hyperthermia, and atrial fibrillation with rapid ventricular response. The diagnosis is Thyroid storm. The case carries a genuine mechanism fork — amiodarone-induced thyrotoxicosis versus Graves relapse — resolved toward Graves (positive TSI/TRAb, vascular goiter, elevated T3) with amiodarone as an iodine-load contributor. It is reached by eliciting the focused history (including the stopped methimazole and the amiodarone), performing the targeted exam, interpreting an integrated EKG that shows AF with RVR and an amiodarone-related prolonged QT, and the directed workup while excluding the must-not-miss mimics.",
     "keyHistoryClues": [
       "medication nonadherence (stopped methimazole)",
+      "amiodarone for atrial fibrillation (iodine source / QT prolonger)",
       "known Graves disease",
       "recent precipitating infection"
     ],
     "keyPhysicalExamFindings": [
-      "Neck: diffuse, smooth goiter; soft thyroid bruit.",
+      "Neck: diffuse, smooth goiter; soft thyroid bruit (suggests a vascular Graves gland rather than a quiet amiodarone-destruction gland).",
       "Neuro: agitated/anxious, hyperreflexic with brisk reflexes, no focal deficit, no neck stiffness.",
       "Cardiac: tachycardic, irregularly irregular rhythm (atrial fibrillation with rapid ventricular response).",
       "General: agitated, flushed, warm and diaphoretic, fine resting tremor."
@@ -633,14 +699,16 @@
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Thyroid storm while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Thyroid storm and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the stopped methimazole and the amiodarone, only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (vascular goiter, irregular rhythm).",
+      "Build a differential led by Thyroid storm, name three thyrotoxicosis mechanisms (Graves relapse, amiodarone-induced, infection precipitant), and exclude the must-not-miss mimics.",
+      "Order a focused, order-sensitive workup and interpret the integrated EKG (AF with RVR + amiodarone long QT), CXR, and labs.",
+      "Commit to Thyroid storm, resolve the amiodarone-vs-Graves fork, and manage with stabilization, definitive treatment, amiodarone/cardiology disposition, and safe-discharge planning."
     ],
     "commonPitfalls": [
+      "Anchoring on Graves alone and missing the amiodarone contribution",
       "Giving iodine before the thionamide",
+      "Adding a QT-prolonging antiemetic/antipsychotic despite the long QT",
       "Using aspirin to control fever"
     ],
     "managementPearls": [
@@ -649,6 +717,7 @@
     ],
     "criticalHistoryItems": [
       "medication_nonadherence",
+      "amiodarone_af",
       "thyroid_history",
       "recent_infection"
     ],
@@ -658,10 +727,10 @@
     ],
     "criticalWorkupItems": [
       "Thyroid function tests (TSH, free T4, free T3)",
-      "CBC and infectious precipitant workup (cultures, UA, viral panel)"
+      "CBC and infectious precipitant workup (cultures, UA, viral panel, lactate)"
     ],
     "criticalInterpretationItems": [
-      "Atrial fibrillation with rapid ventricular response; no acute ischemia.",
+      "Atrial fibrillation with rapid ventricular response AND a prolonged QT from amiodarone; no acute ischemia.",
       "Essentially clear film; screens for a precipitating pneumonia or pulmonary edema."
     ],
     "criticalManagementItems": [
@@ -669,17 +738,17 @@
       "Thionamide (PTU preferred, or methimazole)"
     ],
     "keyImageInterpretationFindings": [
-      "Atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves, rate >100).",
+      "Atrial fibrillation with rapid ventricular response AND a prolonged QT (amiodarone effect).",
       "Screen for pneumonia/pulmonary edema as a precipitant or complication; here essentially clear."
     ],
     "criticalImageInterpretationFindings": [
-      "Atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves, rate >100).",
+      "Atrial fibrillation with rapid ventricular response AND a prolonged QT (amiodarone effect) — avoid further QT-prolonging agents and replete K/Mg.",
       "Screen for pneumonia/pulmonary edema as a precipitant or complication; here essentially clear."
     ],
     "imageInterpretationPearls": [
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "On this tracing the second hit is the amiodarone-related long QT hiding behind the AF with RVR — find it before you reach for QT-prolonging sedatives or antiemetics.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -709,8 +778,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

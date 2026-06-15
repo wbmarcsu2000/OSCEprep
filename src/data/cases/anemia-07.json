@@ -2,57 +2,61 @@
   "id": "anemia-07",
   "category": "Anemia",
   "difficulty": "hard",
-  "title": "Sudden fatigue and dark urine after starting a new medication",
+  "title": "Fatigue, dark urine, and a peaked-T-wave EKG after a new sulfa antibiotic",
   "diagnosis": "G6PD deficiency hemolysis",
   "chart": {
     "ageSex": "28M",
     "cc": "Tiredness and very dark urine",
-    "oneLiner": "28M of Mediterranean descent presents with two days of fatigue, jaundice, and dark (cola-colored) urine that began shortly after starting a new antibiotic for a urinary tract infection.",
+    "oneLiner": "28M of Mediterranean descent with HIV on antiretrovirals and recently switched PCP prophylaxis presents with two days of fatigue, jaundice, and cola-colored urine that began shortly after starting trimethoprim-sulfamethoxazole for a urinary tract infection; he is tachycardic with a peaked-T-wave EKG and a rising creatinine.",
     "vitals": {
-      "BP": "122/74",
-      "HR": "108",
-      "RR": "18",
-      "Temp": "37.2°C",
-      "SpO2": "99% RA"
+      "BP": "118/72",
+      "HR": "110",
+      "RR": "20",
+      "Temp": "37.3°C",
+      "SpO2": "98% RA"
     },
     "timer": 180
   },
   "opening": "I've felt wiped out and short of breath for a couple of days, my eyes look a bit yellow, and my urine has turned almost like cola.",
-  "patientFile": "PERSONA: 28-year-old man of Mediterranean (Greek) descent, mildly jaundiced and tired-appearing. Cooperative, mildly anxious about the dark urine.\n\nHPI: Acute onset over 48 hours of fatigue, dyspnea on exertion, and lightheadedness. Noticed scleral yellowing and dark cola-colored urine. Symptoms started two to three days after beginning a new antibiotic for a urinary tract infection (only volunteer the antibiotic if asked about recent medications/new drugs). Mild back/flank discomfort with the dark urine. NO frank red blood in urine, NO dysuria now, NO black/bloody stools, NO trauma. Reports a similar but milder episode years ago after eating fava beans, which he otherwise avoids (only if asked about prior episodes or diet/food triggers).\nPMH: otherwise healthy; episode of neonatal jaundice per his mother (only if asked). A maternal uncle has 'a blood problem with certain drugs' (family history, only if asked). MEDS: recently started antibiotic for UTI — when asked, identify it as a sulfa antibiotic (trimethoprim-sulfamethoxazole). No regular medications. ALLERGIES: none known. SOCIAL: occasional alcohol; non-smoker; no IV drugs; recently ate at a relative's home (fava beans served — only if asked about diet).\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired-appearing, mildly jaundiced, not in distress.\n- Vitals: BP 122/74, HR 108, RR 18, 37.2°C, SpO2 99% RA.\n- HEENT: scleral icterus; conjunctival pallor.\n- Abdomen: soft; spleen tip only minimally palpable / generally not enlarged; no marked tenderness.\n- Cardiac: tachycardic, regular, soft systolic flow murmur. No petechiae/purpura; no focal neuro deficit.\n- Skin: no petechiae, no purpura, no rash.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the new antibiotic, the fava bean exposure, the neonatal jaundice, or the family history unless asked about recent medications, diet/food, prior episodes, or family history respectively.\n- The spleen finding is revealed only if the abdomen/spleen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 28-year-old man of Mediterranean (Greek) descent, mildly jaundiced and tired-appearing. Cooperative, mildly anxious about the dark urine. Speaks in lay terms.\n\nHPI: Acute onset over 48 hours of fatigue, dyspnea on exertion, and lightheadedness. Noticed scleral yellowing and dark cola-colored urine, with the volume of urine seeming to drop over the last day. Symptoms started two to three days after beginning trimethoprim-sulfamethoxazole (a sulfa antibiotic) for a urinary tract infection (only volunteer the antibiotic if asked about recent medications/new drugs). Mild back/flank discomfort with the dark urine. NO frank red blood in urine, NO dysuria now, NO black/bloody stools, NO trauma, NO chest pain or palpitations. Reports a similar but milder episode years ago after eating fava beans, which he otherwise avoids (only if asked about prior episodes or diet/food triggers).\nPMH: HIV diagnosed 3 years ago, well controlled on antiretroviral therapy with an undetectable viral load and a CD4 around 350 (only if asked about medical conditions/HIV). Episode of neonatal jaundice per his mother (only if asked). A maternal uncle has 'a blood problem with certain drugs' (family history, only if asked).\nMEDS (reveal the list only when asked what medicines he takes / any new medicines): (1) bictegravir/emtricitabine/tenofovir alafenamide once daily for HIV — long-standing, no recent change; (2) trimethoprim-sulfamethoxazole started 2-3 days ago for a UTI (the NEW drug); (3) his PCP-prophylaxis was switched a few weeks ago from atovaquone to DAPSONE because of cost — he has been taking dapsone daily (only if specifically asked about prophylaxis or all medications, including 'anything for prevention'); (4) occasional over-the-counter ibuprofen. ALLERGIES: none known. SOCIAL: occasional alcohol; non-smoker; no IV drugs; recently ate at a relative's home where fava beans were served (only if asked about diet). FAMILY: maternal uncle with a drug-related blood problem; mother recalls his neonatal jaundice.\nROS: as above; denies fevers, confusion, headache, diarrhea, easy bruising, nosebleeds, or melena.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired-appearing, mildly jaundiced, not in distress.\n- Vitals: BP 118/72, HR 110, RR 20, 37.3°C, SpO2 98% RA.\n- HEENT: scleral icterus; conjunctival pallor.\n- Abdomen: soft; spleen tip only minimally palpable / generally not enlarged; no marked tenderness; no flank mass.\n- Cardiac: tachycardic, regular, soft systolic flow murmur; no rub.\n- Skin: no petechiae, no purpura, no rash; no track marks. No focal neuro deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the new antibiotic, the dapsone prophylaxis, the fava bean exposure, the neonatal jaundice, the HIV, or the family history unless asked about recent medications, prophylaxis/preventive medicines, diet/food, prior episodes, medical history, or family history respectively.\n- The dapsone is easy to miss: only disclose it if the student asks specifically about ALL medications, preventive/prophylactic medicines, or recent medication changes.\n- The spleen finding is revealed only if the abdomen/spleen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+  ,
   "dx": {
     "labs": {
-      "CBC": "Hgb 8.4, MCV 88 (normocytic), WBC normal, Plt 265 (NORMAL platelets — important to exclude TTP/HUS).",
-      "Reticulocyte": "Elevated reticulocyte count (appropriate marrow response to hemolysis).",
-      "Smear": "Bite cells and blister cells; with supravital stain Heinz bodies present; NO schistocytes (argues against microangiopathy); polychromasia.",
-      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH, haptoglobin LOW, plasma/urine free hemoglobin present — an intravascular hemolytic pattern.",
-      "Coombs": "Direct antiglobulin (Coombs) test NEGATIVE — argues against autoimmune hemolysis.",
-      "G6PD": "G6PD enzyme activity LOW once the acute episode/reticulocytosis settles (may be falsely normal during the acute crisis because young reticulocytes are enzyme-replete — repeat in 2–3 months)."
+      "CBC": "Hgb 7.9, MCV 89 (normocytic), WBC 8.6 (normal), Plt 248 (NORMAL platelets — important to exclude TTP/HUS). No leukoerythroblastic picture.",
+      "Reticulocyte": "Reticulocyte count ELEVATED (~7%) — an appropriate marrow response to hemolysis.",
+      "Smear": "Bite cells and blister cells; with supravital (crystal violet) stain Heinz bodies present; polychromasia; NO schistocytes (argues against a microangiopathic process).",
+      "Hemolysis": "LDH HIGH, indirect (unconjugated) bilirubin HIGH (total bili 4.2 / direct 0.6), haptoglobin LOW, plasma free hemoglobin present, urine dipstick positive for blood with NO red cells on micro (pigment = hemoglobinuria) — an intravascular hemolytic pattern.",
+      "BMP": "Na 138, K 6.1 (HIGH), Cl 103, HCO3 19 → anion gap = 138 − (103 + 19) = 16 (mildly elevated); BUN 38, Cr 2.1 (baseline ~0.9) — acute kidney injury from pigment (hemoglobinuria) nephropathy; the hyperkalemia reflects both the AKI and potassium released by intravascular red-cell lysis.",
+      "Coombs": "Direct antiglobulin (Coombs) test NEGATIVE for both IgG and C3 — argues AGAINST drug-induced IMMUNE (warm-autoimmune-type) hemolysis from the sulfa.",
+      "G6PD": "G6PD enzyme activity LOW once the acute episode/reticulocytosis settles (may be falsely NORMAL during the acute crisis because young reticulocytes are enzyme-replete — repeat in 2–3 months)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia with no acute ischemic changes (compensatory response to anemia).",
-      "verify": "Source a study matching: sinus tachycardia with no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 3,
+      "findings": "Sinus tachycardia with tall, narrow, symmetrically PEAKED T waves (best seen in the precordial leads) and early PR prolongation — changes of hyperkalemia (K 6.1) from acute kidney injury and intravascular hemolysis; no acute ischemic ST depression or convex ST elevation.",
+      "verify": "Source a study matching: peaked/tented T waves of hyperkalemia on a background of sinus tachycardia, without QRS widening to a sine-wave. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia, otherwise unremarkable",
+      "imageDescription": "12-lead showing sinus tachycardia with tall, tented, peaked T waves of hyperkalemia",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead normal"
+        "hyperkalemia peaked T waves ECG",
+        "tented T waves potassium 6 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 30-year-old man presents with fatigue, palpitations, and pallor after a recent febrile illness."
+      "clinicalVignette": "A young man with brisk intravascular hemolysis and a rising creatinine has a 12-lead obtained; the tracing shows tall, tented T waves."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "No acute cardiopulmonary process; clear lungs with normal cardiac silhouette.",
+      "findings": "No acute cardiopulmonary process; clear lungs with a normal cardiac silhouette and no pulmonary edema — argues against a cardiopulmonary cause of the dyspnea, which is from the anemia.",
       "verify": "Source a study matching: normal chest radiograph with no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
       "imageDescription": "normal chest radiograph, clear lungs",
@@ -61,7 +65,7 @@
         "normal chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 28-year-old man presents with weakness and dark urine, and a chest film is obtained to exclude other causes."
+      "clinicalVignette": "A 28-year-old man with weakness and dark urine has a chest film obtained to exclude a cardiopulmonary cause of his dyspnea."
     }
   },
   "revealKeys": [
@@ -69,6 +73,7 @@
     "Reticulocyte",
     "Smear",
     "Hemolysis",
+    "BMP",
     "Coombs",
     "G6PD",
     "ekg",
@@ -77,55 +82,65 @@
   "essential": [
     "Smear",
     "Coombs",
-    "G6PD"
+    "G6PD",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this acute anemia (note your leading diagnosis).",
-      "rubric": "Acute hemolytic anemia — oxidative/drug- or food-triggered (G6PD deficiency) (leading,7). Microangiopathic hemolysis — TTP/HUS (CANT-MISS to exclude,5). Autoimmune hemolytic anemia (core,3). Drug-induced hemolysis (other mechanisms) (core,3). Hemoglobinuria from other causes (e.g., rhabdomyolysis, transfusion) (core,2). Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS (core,5).",
-      "idealAnswer": "Leading diagnosis: Acute hemolytic anemia from oxidative stress (G6PD deficiency) triggered by a new drug/fava beans. Must-not-miss diagnoses to exclude: Microangiopathic hemolysis — TTP/HUS. Also reasonable: Autoimmune hemolytic anemia; Drug-induced hemolysis by other mechanisms; Other causes of hemoglobinuria.",
+      "prompt": "Based on your history and physical, list your differential for this acute anemia (note your leading diagnosis). This man started a sulfa antibiotic days before the dark urine, so explicitly weigh oxidative versus immune drug-related hemolysis. Also NAME THREE distinct mechanisms/triggers of Coombs-negative oxidative hemolysis in someone like him.",
+      "rubric": "Acute oxidative hemolytic anemia (G6PD deficiency) triggered by a new oxidant drug/fava beans (leading,6). Drug-induced IMMUNE (autoimmune-type) hemolysis from the sulfa antibiotic — the genuine competing diagnosis to resolve with a Coombs test (CANT-MISS to distinguish,5). Microangiopathic hemolysis — TTP/HUS — must be excluded (CANT-MISS,4). Autoimmune hemolytic anemia (warm/cold) (core,2). Hemoglobinuria from other causes (rhabdomyolysis, transfusion reaction) (core,1). Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS (core,3). Names THREE distinct oxidant mechanisms/triggers — e.g. sulfa antibiotics (TMP-SMX), dapsone, fava beans (favism), other oxidants such as primaquine/nitrofurantoin/rasburicase/naphthalene (core,4). PENALTY: anchoring on a single drug mechanism without sending a Coombs to separate immune from oxidative hemolysis (-3).",
+      "idealAnswer": "Leading diagnosis: Acute OXIDATIVE hemolytic anemia from G6PD deficiency, triggered by a new oxidant exposure (the sulfa antibiotic and/or dapsone, layered on recent fava beans). The genuine competing diagnosis given the temporal link to the sulfa is DRUG-INDUCED IMMUNE hemolytic anemia (a Coombs-positive, autoimmune-type reaction to the drug) — the discriminating test is the direct antiglobulin (Coombs) test. Must-not-miss: Microangiopathic hemolysis (TTP/HUS) — look for schistocytes, thrombocytopenia, and renal/neuro involvement. Also reasonable: warm/cold autoimmune hemolytic anemia; hemoglobinuria from rhabdomyolysis or a transfusion reaction. Three distinct mechanisms/triggers of Coombs-negative oxidative hemolysis here: (1) sulfonamide antibiotics (TMP-SMX); (2) dapsone (his switched PCP prophylaxis); (3) fava beans / favism — with other classic oxidants being primaquine, nitrofurantoin, rasburicase, and naphthalene.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute hemolytic anemia — oxidative/drug- or food-triggered (G6PD deficiency)",
-            "points": 7
+            "item": "Acute oxidative hemolytic anemia — G6PD deficiency triggered by a new oxidant drug/fava beans",
+            "points": 6
+          },
+          {
+            "item": "Drug-induced IMMUNE hemolysis from the sulfa antibiotic — the competing diagnosis resolved by a Coombs test",
+            "points": 5
           },
           {
             "item": "Microangiopathic hemolysis — TTP/HUS",
-            "points": 5
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "Autoimmune hemolytic anemia",
-            "points": 3
-          },
-          {
-            "item": "Drug-induced hemolysis (other mechanisms)",
-            "points": 3
-          },
-          {
-            "item": "Hemoglobinuria from other causes (rhabdomyolysis, transfusion reaction)",
+            "item": "Autoimmune hemolytic anemia (warm/cold)",
             "points": 2
           },
           {
+            "item": "Hemoglobinuria from other causes (rhabdomyolysis, transfusion reaction)",
+            "points": 1
+          },
+          {
             "item": "Names hemolysis and the imperative to look for schistocytes/thrombocytopenia to exclude TTP/HUS",
-            "points": 5
+            "points": 3
+          },
+          {
+            "item": "Names THREE distinct oxidant mechanisms/triggers (e.g. sulfa antibiotics, dapsone, fava beans, primaquine/nitrofurantoin/rasburicase)",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a single drug mechanism without sending a Coombs to separate immune from oxidative hemolysis",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
+        "Drug-induced IMMUNE hemolysis from the sulfa antibiotic",
         "Microangiopathic hemolysis — TTP/HUS"
       ],
       "acceptableAlternatives": [
-        "Autoimmune hemolytic anemia",
-        "Drug-induced hemolysis (other mechanisms)",
+        "Autoimmune hemolytic anemia (warm/cold)",
         "Hemoglobinuria from other causes (rhabdomyolysis, transfusion reaction)"
       ]
     },
@@ -135,8 +150,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes (CANT-MISS,4). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, urine hemoglobin (2). Direct antiglobulin (Coombs) test — expected NEGATIVE (CANT-MISS,3). G6PD enzyme assay (confirmatory, repeat after acute episode) plus renal function/platelets to exclude TTP/HUS (3). PENALTY: relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; Reticulocyte count; Peripheral smear; Hemolysis labs; Coombs (DAT); G 6 PD.",
+      "rubric": "CBC + reticulocyte count (CANT-MISS,3). Peripheral smear — bite/blister cells, Heinz bodies vs schistocytes (CANT-MISS,4). Direct antiglobulin (Coombs) test to separate oxidative from immune drug hemolysis — expected NEGATIVE (CANT-MISS,3). BMP for potassium/renal function (the AKI + hyperkalemia drive the EKG) (2). Hemolysis labs — LDH, haptoglobin, indirect bilirubin, urine hemoglobin (1). G6PD enzyme assay (confirmatory, repeat after the acute episode) (1). EKG and CXR (1). PENALTY: relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis (-2); failing to send a BMP/potassium in a brisk intravascular hemolysis with dark urine (-2).",
+      "idealAnswer": "Order: CBC; Reticulocyte count; Peripheral smear (bite/blister cells, Heinz bodies vs schistocytes); Direct antiglobulin (Coombs) test to separate oxidative from immune drug hemolysis; BMP (the rising creatinine and hyperkalemia from AKI/cell lysis are what produce the peaked-T-wave EKG); Hemolysis labs (LDH, haptoglobin, indirect bilirubin, urine hemoglobin); G6PD enzyme assay (confirmatory — repeat 2–3 months after recovery as it can be falsely normal during reticulocytosis); EKG; CXR.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -155,26 +170,30 @@
         ],
         "coreActions": [
           {
-            "item": "G6PD enzyme assay (repeat after acute episode) plus platelets/renal function to exclude TTP/HUS",
-            "points": 3
-          },
-          {
-            "item": "EKG",
+            "item": "BMP for potassium and renal function",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "Hemolysis labs (LDH, haptoglobin, indirect bilirubin, urine hemoglobin)",
+            "points": 1
           },
           {
-            "item": "Hemolysis labs",
-            "points": 2
+            "item": "G6PD enzyme assay (repeat after acute episode)",
+            "points": 1
+          },
+          {
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
             "item": "relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis",
+            "points": -2
+          },
+          {
+            "item": "failing to send a BMP/potassium in brisk intravascular hemolysis with dark urine",
             "points": -2
           }
         ]
@@ -185,7 +204,8 @@
         "Direct antiglobulin (Coombs) test"
       ],
       "optionalTests": [
-        "G6PD enzyme assay (repeat after acute episode) plus platelets/renal function to exclude TTP/HUS"
+        "BMP for potassium and renal function",
+        "G6PD enzyme assay (repeat after acute episode)"
       ],
       "contraindicatedTests": [
         "relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis"
@@ -200,32 +220,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes (compensatory tachycardia from anemia) (5); systematic read (3). PENALTY: over-calling ischemia (-3).",
+      "prompt": "Here is THIS patient's own 12-lead EKG, obtained because of his dark urine and rising creatinine. Describe your findings and their relevance to his management.",
+      "rubric": "Findings = sinus tachycardia with tall, narrow, symmetrically PEAKED/tented T waves of HYPERKALEMIA (K 6.1) from the AKI and intravascular hemolysis, without sine-wave QRS widening; no acute ischemia. CREDIT: identifies the peaked/tented T waves as hyperkalemia (7); links the hyperkalemia to the pigment-nephropathy AKI and potassium released by red-cell lysis, and notes there is not yet QRS widening (5); systematic read with rate/rhythm and pertinent negatives (3). PENALTY: calling the tracing normal/ischemic or missing the peaked T waves as hyperkalemia (-3).",
       "keyFindings": [
-        "sinus tachycardia",
-        "no acute ischemic ST/T changes (compensatory for anemia)"
+        "tall, narrow, symmetrically peaked/tented T waves of hyperkalemia",
+        "sinus tachycardia; no QRS sine-wave widening yet; no acute ischemia"
       ],
       "criticalFindings": [
-        "Sinus tachycardia; no acute ischemic changes."
+        "Sinus tachycardia with peaked/tented T waves of hyperkalemia (K 6.1) from AKI and hemolysis."
       ],
       "commonMistakes": [
-        "over-calling ischemia from rate-related ST/T changes"
+        "calling the tracing normal or over-reading the T waves as ischemia",
+        "missing that the peaked T waves signal a dangerous, treatable hyperkalemia"
       ],
-      "idealAnswer": "Sinus tachycardia with no acute ischemic changes — a compensatory response to anemia.",
+      "idealAnswer": "Sinus tachycardia with tall, narrow, symmetrically peaked (tented) T waves, best seen in the precordial leads, with early PR prolongation — the EKG signature of HYPERKALEMIA (here K 6.1). There is no QRS sine-wave widening yet and no acute ischemic ST change. This is his own potassium of 6.1, driven by the acute kidney injury from pigment (hemoglobinuria) nephropathy and by potassium released from the intravascular red-cell lysis. It is directly relevant: he needs urgent potassium management (cardiac membrane stabilization with calcium if there are EKG changes, insulin/glucose, and treatment of the AKI/hemolysis), and any further oxidant exposure or worsening hemolysis could push the potassium higher.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia; no acute ischemic changes."
+          "Sinus tachycardia with peaked/tented T waves of hyperkalemia (K 6.1) from AKI and hemolysis."
         ],
         "coreActions": [
-          "sinus tachycardia",
-          "no acute ischemic ST/T changes (compensatory for anemia)"
+          "tall, narrow, symmetrically peaked/tented T waves of hyperkalemia",
+          "sinus tachycardia; no QRS sine-wave widening yet; no acute ischemia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls ischemia / misreads the tracing",
+            "label": "calls the study normal/ischemic or misses the hyperkalemic peaked T waves",
             "points": -3
           }
         ]
@@ -238,10 +259,10 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it helps exclude an alternate cause of dyspnea (pneumonia, effusion) (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes it helps exclude an alternate cause of dyspnea — pneumonia, effusion, pulmonary edema — leaving the anemia as the explanation (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
         "identifies a normal chest film",
-        "notes it excludes pneumonia/effusion as a cause of dyspnea"
+        "notes it excludes pneumonia/effusion/edema as a cause of dyspnea"
       ],
       "criticalFindings": [
         "No acute cardiopulmonary process."
@@ -249,7 +270,7 @@
       "commonMistakes": [
         "inventing an infiltrate or effusion that is not present"
       ],
-      "idealAnswer": "No acute cardiopulmonary process; clear lungs and normal cardiac silhouette, excluding pneumonia or effusion as the cause of dyspnea.",
+      "idealAnswer": "No acute cardiopulmonary process; clear lungs and a normal cardiac silhouette with no pulmonary edema. This excludes pneumonia, effusion, or heart failure as the cause of his dyspnea, leaving the anemia as the explanation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -257,7 +278,7 @@
         ],
         "coreActions": [
           "identifies a normal chest film",
-          "notes it excludes pneumonia/effusion as a cause of dyspnea"
+          "notes it excludes pneumonia/effusion/edema as a cause of dyspnea"
         ],
         "bonusActions": [],
         "penalties": [
@@ -272,9 +293,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, bite cells and Heinz bodies, NO schistocytes, normal platelets, a NEGATIVE Coombs, and a recent oxidant drug/fava bean exposure. What is your diagnosis and what did you rule out?",
-      "rubric": "G6PD deficiency with acute oxidative hemolysis (6). Cites bite cells/Heinz bodies with a NEGATIVE DAT and an oxidant trigger; explicitly rules out TTP/HUS via the absence of schistocytes, normal platelets, and normal renal function, and rules out autoimmune hemolysis via the negative Coombs (4).",
-      "idealAnswer": "G6PD deficiency causing acute oxidative (drug/fava-bean triggered) hemolysis, supported by bite cells and Heinz bodies with hemolysis markers after an oxidant exposure. TTP/HUS was ruled out by the absence of schistocytes, normal platelets, and normal renal function, and autoimmune hemolysis was ruled out by the negative Coombs.",
+      "prompt": "You now have: reticulocytosis, low haptoglobin, high LDH/indirect bilirubin, bite cells and Heinz bodies, NO schistocytes, normal platelets, a NEGATIVE Coombs, an oxidant drug/fava-bean exposure, AND a BMP showing K 6.1 with Cr 2.1 plus peaked T waves on EKG. Commit to a diagnosis, name the discriminating test, state what you ruled out, and explain the second active problem the labs reveal.",
+      "rubric": "G6PD deficiency with acute OXIDATIVE intravascular hemolysis (5). Names the NEGATIVE Coombs as the discriminator that excludes drug-induced IMMUNE/autoimmune hemolysis, and cites bite cells/Heinz bodies plus the oxidant trigger to favor oxidative G6PD hemolysis; rules out TTP/HUS via absent schistocytes, normal platelets (3). Recognizes the SECOND concurrent problem — hyperkalemia and AKI from pigment (hemoglobinuria) nephropathy and cell lysis, shown by the peaked-T-wave EKG — as a separate, urgent issue, and acknowledges G6PD can be falsely normal during the crisis so it must be repeated after recovery (2).",
+      "idealAnswer": "G6PD deficiency causing acute OXIDATIVE, intravascular, drug/fava-bean-triggered hemolysis. The discriminating test is the direct antiglobulin (Coombs) test: it is NEGATIVE, which excludes the competing drug-induced IMMUNE hemolysis and autoimmune hemolysis; bite cells and Heinz bodies with hemolysis markers after an oxidant exposure clinch the oxidative mechanism. TTP/HUS is excluded by the absence of schistocytes and the normal platelet count. The labs reveal a SECOND, concurrent and urgent problem: acute kidney injury with hyperkalemia (K 6.1, Cr 2.1) from pigment (hemoglobinuria) nephropathy and potassium released by red-cell lysis — this is what produces the peaked T waves on his EKG and must be treated in parallel. Note that the G6PD assay can be falsely normal during the acute reticulocytosis, so it should be repeated 2–3 months after recovery to confirm.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -283,44 +304,52 @@
         "penalties": []
       },
       "mustNotMiss": [
+        "Drug-induced IMMUNE hemolysis from the sulfa antibiotic",
         "Microangiopathic hemolysis — TTP/HUS"
       ],
       "acceptableAlternatives": [
-        "Autoimmune hemolytic anemia",
-        "Drug-induced hemolysis (other mechanisms)"
+        "Autoimmune hemolytic anemia (warm/cold)"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH hemolytic anemia: immediately STOP/avoid the offending oxidant drug and counsel on triggers (CANT-MISS,7); supportive care with hydration to protect kidneys from hemoglobinuria and monitor Hgb/renal function (4); transfuse if symptomatic/severe anemia (4); folate supplementation (3); patient education + provide an avoid-list of oxidant drugs/foods and screen family (3); hematology consult, confirm with repeat G6PD assay after recovery (2). PENALTY: continuing or re-prescribing the oxidant drug or giving another oxidant (e.g., nitrofurantoin, dapsone, rasburicase, primaquine) (-3); reflexively starting steroids as if this were autoimmune hemolysis (-1).",
-      "idealAnswer": "G6PD oxidative hemolysis: immediately discontinue and avoid the offending oxidant drug (here a sulfa antibiotic) and remove other triggers (fava beans, naphthalene). Supportive care: IV hydration to maintain urine output and protect against hemoglobinuria-related renal injury; serial Hgb and renal monitoring. Transfuse packed red cells if anemia is severe or symptomatic. Folate supplementation. Patient education with a written list of oxidant drugs/foods to avoid, and consider screening at-risk family members. Hematology consult; confirm with a repeat G6PD enzyme assay 2–3 months after the acute episode (it can be falsely normal during reticulocytosis). Most episodes are self-limited as older RBCs are cleared.",
+      "prompt": "What is your management plan, including how you will handle his potassium and his disposition/safe-discharge plan?",
+      "rubric": "Per MGH hemolytic anemia + hyperkalemia: immediately STOP/avoid the offending oxidants — the sulfa antibiotic AND the dapsone prophylaxis — and counsel on triggers (CANT-MISS,6); treat the HYPERKALEMIA driving the peaked-T-wave EKG — calcium for membrane stabilization given EKG changes, insulin/glucose +/- albuterol to shift, and address the underlying AKI/hemolysis (CANT-MISS,5); supportive care with IV hydration to protect the kidneys from hemoglobinuria and serial Hgb/renal/potassium monitoring (3); transfuse if anemia is severe/symptomatic (2); folate supplementation (1); patient education with a written oxidant avoid-list and screen at-risk family (2); ADMIT given active hemolysis, AKI, and hyperkalemia — do NOT discharge until the potassium and creatinine are improving, the offending drugs are stopped and reconciled, a non-oxidant PCP-prophylaxis (e.g. atovaquone) is substituted with hematology/HIV follow-up arranged (CANT-MISS safe disposition,4); confirm with a repeat G6PD assay after recovery (bonus,2). PENALTY: continuing/re-prescribing the sulfa or dapsone or giving another oxidant (nitrofurantoin, primaquine, rasburicase) (-3); discharging home with an unstable potassium/active hemolysis (-3); reflexively starting steroids as if this were autoimmune hemolysis (-1).",
+      "idealAnswer": "G6PD oxidative hemolysis with concurrent AKI and hyperkalemia. (1) Immediately discontinue and avoid BOTH offending oxidants — the sulfa antibiotic AND the dapsone prophylaxis — and remove other triggers (fava beans, naphthalene); reconcile the full med list. (2) Treat the hyperkalemia producing the peaked-T-wave EKG: IV calcium (gluconate/chloride) for cardiac membrane stabilization because there are EKG changes, then insulin with glucose +/- nebulized albuterol to shift potassium intracellularly, and treat the underlying driver (the AKI and ongoing hemolysis); recheck the EKG and potassium. (3) Supportive care: IV hydration to maintain urine output and protect against hemoglobinuria-related renal injury, with serial Hgb, creatinine, and potassium. (4) Transfuse packed red cells if the anemia is severe or symptomatic. (5) Folate supplementation. (6) Patient education with a written list of oxidant drugs/foods to avoid, and screen at-risk family members. (7) DISPOSITION/SAFE DISCHARGE: ADMIT — he has active intravascular hemolysis, AKI, and a dangerous potassium; do not discharge until the potassium and creatinine are trending down, hemolysis is settling, the offending drugs are stopped and clearly documented as adverse reactions, and his PCP prophylaxis is switched back to a non-oxidant agent (e.g. atovaquone). Arrange close hematology and HIV/ID follow-up and confirm with a repeat G6PD enzyme assay 2–3 months after recovery (it can be falsely normal during reticulocytosis). Most episodes are self-limited as the older RBCs are cleared.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Stop/avoid the offending oxidant drug and counsel on triggers",
-            "points": 7
+            "item": "Stop/avoid BOTH offending oxidants (the sulfa antibiotic AND dapsone) and counsel on triggers",
+            "points": 6
+          },
+          {
+            "item": "Treat the hyperkalemia — calcium for EKG changes, insulin/glucose +/- albuterol, address AKI/hemolysis",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Supportive care — hydration to protect kidneys, monitor Hgb/renal function",
-            "points": 4
+            "item": "Supportive care — IV hydration to protect kidneys, serial Hgb/renal/potassium monitoring",
+            "points": 3
           },
           {
             "item": "Transfuse if anemia severe/symptomatic",
-            "points": 4
+            "points": 2
           },
           {
             "item": "Folate supplementation",
-            "points": 3
+            "points": 1
           },
           {
             "item": "Patient education with oxidant avoid-list; screen at-risk family",
-            "points": 3
+            "points": 2
+          },
+          {
+            "item": "Safe disposition — ADMIT until K/Cr improving, oxidant drugs stopped/reconciled, non-oxidant PCP prophylaxis substituted, hematology/HIV follow-up arranged",
+            "points": 4
           }
         ],
         "bonusActions": [
@@ -331,31 +360,39 @@
         ],
         "penalties": [
           {
-            "item": "Continuing or re-prescribing the oxidant drug / giving another oxidant",
+            "item": "Continuing or re-prescribing the sulfa/dapsone / giving another oxidant",
+            "points": -3
+          },
+          {
+            "item": "Discharging home with an unstable potassium / active hemolysis",
             "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Stop/avoid the offending oxidant drug and counsel on triggers"
+        "Stop/avoid BOTH offending oxidants (the sulfa antibiotic AND dapsone) and counsel on triggers",
+        "Treat the hyperkalemia — calcium for EKG changes, insulin/glucose +/- albuterol, address AKI/hemolysis"
       ],
       "optionalActions": [
-        "Supportive care — hydration to protect kidneys, monitor Hgb/renal function",
+        "Supportive care — IV hydration to protect kidneys, serial Hgb/renal/potassium monitoring",
         "Transfuse if anemia severe/symptomatic",
         "Folate supplementation",
         "Patient education with oxidant avoid-list; screen at-risk family",
+        "Safe disposition — ADMIT until K/Cr improving, oxidant drugs stopped/reconciled, non-oxidant PCP prophylaxis substituted, hematology/HIV follow-up arranged",
         "Hematology consult; confirm with repeat G6PD assay after recovery"
       ],
       "unsafeActions": [
-        "Continuing or re-prescribing the oxidant drug / giving another oxidant"
+        "Continuing or re-prescribing the sulfa/dapsone / giving another oxidant",
+        "Discharging home with an unstable potassium / active hemolysis"
       ],
       "consults": [
-        "Hematology"
+        "Hematology",
+        "Infectious Disease / HIV"
       ],
       "disposition": "Admit",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Pancytopenia & Anemia (Hemolytic Anemia — G6PD Deficiency)",
+        "section": "Pancytopenia & Anemia (Hemolytic Anemia — G6PD Deficiency); Hyperkalemia",
         "page": 138
       }
     }
@@ -367,12 +404,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "hiv_status"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
     "affect": "28-year-old man of Mediterranean descent, mildly jaundiced and tired. Cooperative, mildly anxious about the dark urine.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (HIV, full medication list, prophylaxis) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -389,9 +427,25 @@
         "antibiotic",
         "recently started a medication"
       ],
-      "response": "Yes — I just started an antibiotic a couple of days ago for a bladder infection. I think it was a sulfa one.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "all_medications_prophylaxis",
+      "category": "meds",
+      "triggerConcepts": [
+        "all of your medications",
+        "everything you take",
+        "any preventive or prophylaxis medicines",
+        "anything to prevent infection",
+        "dapsone",
+        "did any medication change recently"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
       "hiddenUntilAsked": true
     },
     {
@@ -404,9 +458,24 @@
         "diet",
         "what have you eaten recently"
       ],
-      "response": "Now that you mention it, I had some fava beans at a relative's house a few days ago. I usually steer clear of them.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
-      "points": 4,
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medical_history_hiv",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical conditions",
+        "any chronic illnesses",
+        "hiv",
+        "immune system"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -418,7 +487,7 @@
         "first time",
         "ever had dark urine before"
       ],
-      "response": "Something like this happened once years ago, milder, after I ate those beans. It went away on its own.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -432,7 +501,7 @@
         "relatives with blood problems",
         "inherited condition"
       ],
-      "response": "An uncle on my mom's side has some kind of blood problem with certain drugs. My mom said I was yellow as a newborn.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -444,9 +513,10 @@
         "describe your urine",
         "what color is your urine",
         "blood in urine",
-        "dark urine"
+        "dark urine",
+        "how much urine"
       ],
-      "response": "It's dark, almost like cola or strong tea. I don't see actual red blood in it, and it doesn't burn anymore.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -460,7 +530,7 @@
         "how long",
         "duration"
       ],
-      "response": "It came on fast — over the last two days, right after I started the antibiotic.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -472,9 +542,11 @@
         "any other symptoms",
         "associated symptoms",
         "anything else",
-        "shortness of breath"
+        "shortness of breath",
+        "chest pain",
+        "palpitations"
       ],
-      "response": "I'm short of breath when I move around and a bit lightheaded. Some dull ache in my back. No chest pain.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -489,7 +561,7 @@
         "bruising",
         "nosebleeds"
       ],
-      "response": "No, I haven't had any black or bloody stools, no nosebleeds, and I'm not bruising.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -504,7 +576,7 @@
         "headache",
         "diarrhea"
       ],
-      "response": "No real fevers, no confusion, no bad headaches, and no diarrhea.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -519,7 +591,7 @@
         "etoh",
         "alcohol use"
       ],
-      "response": "Just the occasional drink, nothing heavy.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -549,7 +621,7 @@
     },
     {
       "id": "auscultate_aortic_area_finding_3",
-      "finding": "Cardiac: tachycardic, regular, soft systolic flow murmur. No focal neuro deficit.",
+      "finding": "Cardiac: tachycardic, regular, soft systolic flow murmur; no rub. No focal neuro deficit.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -590,17 +662,18 @@
   },
   "caseSummary": {
     "finalDiagnosis": "G6PD deficiency hemolysis",
-    "diagnosticFramework": "28M of Mediterranean descent presents with two days of fatigue, jaundice, and cola-colored urine after starting a new oxidant drug. The diagnosis is G6PD deficiency with acute oxidative hemolysis, reached by eliciting the trigger history, performing the targeted exam, and interpreting the directed workup (bite cells/Heinz bodies, negative Coombs, hemolytic markers) while excluding the must-not-miss alternative TTP/HUS.",
+    "diagnosticFramework": "28M of Mediterranean descent with HIV on antiretrovirals and a recently switched (cost-driven) dapsone PCP prophylaxis presents with two days of fatigue, jaundice, and cola-colored urine after starting trimethoprim-sulfamethoxazole for a UTI. The diagnosis is G6PD deficiency with acute oxidative intravascular hemolysis, reached by eliciting the layered oxidant-trigger history, performing the targeted exam, and interpreting the directed workup (bite cells/Heinz bodies, NEGATIVE Coombs, hemolytic markers). The genuine competing diagnosis is drug-induced IMMUNE hemolysis from the sulfa, resolved by the negative Coombs; TTP/HUS is the must-not-miss excluded by normal platelets and absent schistocytes. A concurrent, urgent second problem — hyperkalemia (K 6.1) with AKI (Cr 2.1) from pigment nephropathy and cell lysis — produces the peaked-T-wave EKG and must be treated in parallel.",
     "keyHistoryClues": [
-      "Recent new oxidant drug (sulfa antibiotic) two to three days before symptoms",
-      "Fava bean ingestion and prior milder self-limited episode",
+      "New sulfa antibiotic (TMP-SMX) two to three days before symptoms",
+      "Recently switched PCP prophylaxis to DAPSONE — a second oxidant that is easy to miss",
+      "Fava bean ingestion and a prior milder self-limited episode",
       "Mediterranean ancestry, neonatal jaundice, and X-linked family history",
       "Cola-colored urine without frank hematuria (intravascular hemolysis/hemoglobinuria)"
     ],
     "keyPhysicalExamFindings": [
       "HEENT: scleral icterus; conjunctival pallor.",
       "HEENT: conjunctival pallor consistent with anemia.",
-      "Cardiac: tachycardic, regular, soft systolic flow murmur. No focal neuro deficit.",
+      "Cardiac: tachycardic, regular, soft systolic flow murmur; no rub. No focal neuro deficit.",
       "Skin: no petechiae, no purpura, no rash (pertinent negative against TTP/HUS).",
       "Abdomen: soft; spleen tip only minimally palpable / generally not enlarged; no marked tenderness."
     ],
@@ -609,29 +682,35 @@
       "Reticulocyte",
       "Smear",
       "Hemolysis",
+      "BMP",
       "Coombs",
       "G6PD"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, drawing out the oxidant drug/fava bean trigger, ancestry, and family history only on direct questioning.",
+      "Elicit the focused history, drawing out BOTH oxidant drugs (the new sulfa antibiotic and the switched dapsone prophylaxis), the fava bean trigger, ancestry, HIV status, and family history only on direct questioning.",
       "Perform the targeted physical exam maneuvers to reveal jaundice, pallor, and the pertinent-negative absence of petechiae/purpura.",
-      "Build a differential led by G6PD oxidative hemolysis while explicitly excluding must-not-miss TTP/HUS.",
-      "Order a focused workup (CBC + retic, smear for bite cells/Heinz bodies, Coombs, G6PD assay) and interpret EKG/CXR and labs, recognizing G6PD can be falsely normal during the crisis.",
-      "Commit to G6PD deficiency hemolysis and manage by stopping the trigger, supportive hydration, selective transfusion, education, and hematology follow-up."
+      "Build a differential with a real fork — oxidative G6PD hemolysis versus drug-induced IMMUNE hemolysis from the sulfa — while explicitly excluding must-not-miss TTP/HUS, and name three oxidant mechanisms.",
+      "Order a focused workup (CBC + retic, smear for bite cells/Heinz bodies, Coombs, BMP for potassium/renal function, G6PD assay), interpret the patient's own hyperkalemic peaked-T-wave EKG and the normal CXR, and recognize G6PD can be falsely normal during the crisis.",
+      "Commit to G6PD deficiency hemolysis, recognize the concurrent AKI/hyperkalemia, and manage by stopping BOTH oxidant drugs, treating the hyperkalemia, supportive hydration, selective transfusion, education, a safe-discharge/disposition plan, and hematology/HIV follow-up."
     ],
     "commonPitfalls": [
+      "Anchoring on the sulfa as immune hemolysis without sending a Coombs, or missing the dapsone as a second oxidant",
       "Continuing or re-prescribing the oxidant drug / giving another oxidant",
+      "Missing the hyperkalemia/AKI behind the peaked-T-wave EKG and discharging with an unstable potassium",
       "Relying on a single normal G6PD level drawn during the acute crisis to exclude the diagnosis",
       "Reflexively starting steroids as if this were autoimmune hemolysis"
     ],
     "managementPearls": [
-      "Stop/avoid the offending oxidant drug and counsel on triggers",
+      "Stop BOTH offending oxidants (the sulfa antibiotic and dapsone) and counsel on triggers",
+      "Treat the hyperkalemia driving the peaked T waves — calcium for EKG changes, then insulin/glucose, and fix the AKI/hemolysis",
       "Supportive hydration protects against hemoglobinuria-related renal injury",
+      "Safe discharge means admitting until K/Cr improve, drugs are reconciled, and non-oxidant prophylaxis is substituted",
       "Repeat the G6PD assay 2–3 months after recovery to confirm"
     ],
     "criticalHistoryItems": [
       "new_medication",
+      "all_medications_prophylaxis",
       "food_triggers"
     ],
     "criticalExamItems": [
@@ -643,24 +722,25 @@
       "Direct antiglobulin (Coombs) test"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
-      "No acute cardiopulmonary process (excludes pneumonia/effusion as a cause of dyspnea)."
+      "Sinus tachycardia with peaked/tented T waves of hyperkalemia (K 6.1) from AKI and hemolysis.",
+      "No acute cardiopulmonary process (excludes pneumonia/effusion/edema as a cause of dyspnea)."
     ],
     "criticalManagementItems": [
-      "Stop/avoid the offending oxidant drug and counsel on triggers"
+      "Stop/avoid BOTH offending oxidants (the sulfa antibiotic AND dapsone) and counsel on triggers",
+      "Treat the hyperkalemia — calcium for EKG changes, insulin/glucose +/- albuterol, address AKI/hemolysis"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Sinus tachycardia with peaked/tented T waves of hyperkalemia (K 6.1).",
       "No acute cardiopulmonary process."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Sinus tachycardia with peaked/tented T waves of hyperkalemia (K 6.1) from AKI and hemolysis.",
       "No acute cardiopulmonary process."
     ],
     "imageInterpretationPearls": [
-      "A near-normal study is an interpretation task in its own right — name what is and is not present, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "The patient's own EKG is part of the puzzle — peaked, tented T waves on a hemolysis/AKI patient are hyperkalemia and demand action, not just description.",
+      "Read every study systematically before committing; state pertinent negatives, not just positives.",
+      "A normal chest film is itself an interpretation task — name what is excluded (pneumonia, effusion, edema) and the remaining explanation (anemia)."
     ]
   },
   "communicationScoring": {
@@ -675,7 +755,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (HIV, medications)",
         "points": 1
       },
       {
@@ -690,8 +770,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "pathology-forward integrated interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

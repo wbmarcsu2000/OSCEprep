@@ -1,31 +1,32 @@
 {
   "id": "abdo-01",
   "category": "Abdominal Pain",
-  "difficulty": "easy",
-  "title": "Migrating right lower quadrant pain",
+  "difficulty": "hard",
+  "title": "Migrating right lower quadrant pain in a reproductive-age woman",
   "diagnosis": "Acute appendicitis",
   "chart": {
-    "ageSex": "22M",
+    "ageSex": "26F",
     "cc": "Abdominal pain",
-    "oneLiner": "22M presents with ~18 hours of abdominal pain that began around the umbilicus and migrated to the right lower quadrant, with nausea and anorexia.",
+    "oneLiner": "26F with PCOS, a copper IUD, and a prior treated chlamydial PID presents with ~20 hours of abdominal pain that began around the umbilicus and migrated to the right lower quadrant, with anorexia, nausea, and low-grade fever; her last period was uncertain (~7 weeks ago) and her cycles are irregular.",
     "vitals": {
-      "BP": "126/74",
-      "HR": "96",
-      "RR": "16",
-      "Temp": "37.9°C",
+      "BP": "118/72",
+      "HR": "102",
+      "RR": "18",
+      "Temp": "38.0°C",
       "SpO2": "99% RA"
     },
     "timer": 180
   },
-  "opening": "It started around my belly button yesterday and now it's settled down on my lower right side.",
-  "patientFile": "PERSONA: 22-year-old man, lying still (movement worsens pain). Cooperative.\n\nHPI: Pain began ~18h ago, dull and periumbilical, then over hours MIGRATED to the right lower quadrant where it is now sharp and constant. Anorexia (didn't want dinner — classic), nausea, one episode of vomiting. Low-grade fever. Worse with movement, coughing, the car ride in. NO diarrhea, NO dysuria, NO prior similar episodes.\nPMH: none. MEDS: none. SOCIAL: college student, social alcohol, no drugs.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, lying still.\n- Vitals: BP 126/74, HR 96, RR 16, 37.9°C, SpO2 99% RA.\n- Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.\n- Bowel sounds present. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the migration pattern unless asked how/where the pain started and moved.\n- The peritoneal signs are revealed only if the abdomen is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "It started up around my belly button yesterday morning, and now it's all moved down to my lower right side and it really hurts.",
+  "patientFile": "PERSONA: 26-year-old woman, lying still on the stretcher (movement and the car ride worsened the pain). Anxious but cooperative; worried because she is not sure when her last period was.\n\nHPI: Pain began ~20h ago, dull and periumbilical, then over several hours MIGRATED to the right lower quadrant where it is now sharp and constant. Anorexia (skipped dinner and breakfast — nothing sounds good), nausea, two episodes of vomiting. Subjective low-grade fevers/chills. Worse with movement, coughing, and going over bumps in the car. NO diarrhea. NO dysuria, frequency, or flank pain. NO vaginal bleeding and NO abnormal discharge today. NO sudden severe pelvic pain that came and went (no intermittent twisting/colicky pelvic pain). The pain did NOT start in the pelvis or one ovary — it started up high near the navel and walked down.\nGYN/REPRODUCTIVE (reveal these only when asked the relevant question): Last menstrual period UNCERTAIN — she thinks about 7 weeks ago, but her periods are irregular so she is not sure. Cycles irregular and unpredictable (known PCOS). Has a copper (non-hormonal) IUD placed ~2 years ago, never checked the strings. Sexually active with one partner, inconsistent barrier use. Could she be pregnant? — she assumed not because of the IUD, but admits she can't rule it out. Treated for chlamydia with pelvic infection (PID) about 3 years ago with antibiotics; no surgeries.\nPMH: PCOS; prior chlamydial pelvic inflammatory disease (treated). No diabetes. MEDS: metformin for PCOS; occasional ibuprofen; no hormonal contraception (copper IUD only); no anticoagulants. ALLERGIES: none. SOCIAL: works as a barista, social alcohol on weekends, no tobacco, no drugs. FAMILY: noncontributory. ROS: as above; no urinary symptoms, no vaginal bleeding/discharge today, no shoulder-tip pain, no lightheadedness/syncope.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: uncomfortable, lying still, mild distress.\n- Vitals: BP 118/72, HR 102, RR 18, 38.0°C, SpO2 99% RA.\n- Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No CVA tenderness. No distension.\n- Pelvic/adnexal (if the student elicits the need for a bimanual/pelvic exam in history): right adnexal/lower-quadrant tenderness; NO adnexal mass, NO cervical motion tenderness, NO vaginal bleeding, NO purulent cervical discharge. (Findings argue against torsion mass and against active PID/abscess.)\n- Bowel sounds present. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the migration pattern unless asked how/where the pain started and moved.\n- Do NOT volunteer the LMP, IUD, possible-pregnancy concern, or prior PID unless asked about periods, contraception, pregnancy, or gynecologic/sexual history.\n- The peritoneal and pelvic signs are revealed only if the relevant exam is performed/raised.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 14.2 with neutrophil predominance, Hgb 15.0, Plt 260.",
-      "BMP": "Within normal limits.",
-      "UA": "Trace leukocytes, no nitrites, no significant hematuria.",
+      "CBC": "WBC 15.1 with left shift (neutrophil predominance, bands present), Hgb 11.5, Plt 281.",
+      "BMP": "Within normal limits; normal renal function and electrolytes.",
+      "UA": "A few WBCs, no nitrites, no significant hematuria, no bacteria; urine hCG not relied upon — serum hCG sent.",
       "Lipase": "Normal.",
-      "CT_abdomen": "CT abdomen/pelvis: dilated, fluid-filled appendix (~10 mm) with periappendiceal fat stranding; no abscess or free air."
+      "betaHCG": "Serum beta-hCG POSITIVE but low at 350 mIU/mL — confirms pregnancy; the level alone cannot localize it, so imaging must locate the pregnancy.",
+      "pelvic_ultrasound": "Transvaginal/pelvic ultrasound (chosen over CT given the positive pregnancy test): a single small INTRAUTERINE gestational sac confirming an early intrauterine pregnancy (lowers ectopic); NORMAL bilateral ovarian arterial AND venous flow with normal-volume ovaries and no adnexal mass (lowers torsion); no significant free fluid. In the right lower quadrant there is a dilated, non-compressible, blind-ending tubular structure measuring ~9 mm with surrounding hyperemia, consistent with acute appendicitis."
     }
   },
   "images": {
@@ -34,33 +35,33 @@
       "asset": null,
       "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Irregularly irregular rhythm, absent P waves, fibrillatory baseline; ventricular rate ~110.",
-      "verify": "Source a study matching: Irregularly irregular rhythm, absent P waves, fibrillatory baseline; ventricular rate ~110. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia at ~102 bpm; normal axis and intervals; no acute ischemic changes.",
+      "verify": "Source a study matching: Sinus tachycardia at ~102 bpm; normal axis and intervals; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing atrial fibrillation with RVR",
+      "imageDescription": "12-lead showing sinus tachycardia without acute ischemic changes",
       "searchTerms": [
-        "atrial fibrillation 12 lead ECG",
-        "AF rapid ventricular response ECG"
+        "sinus tachycardia 12 lead ECG",
+        "normal axis sinus tachycardia ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 72-year-old man reports palpitations and lightheadedness, with an irregular, rapid pulse on examination."
+      "clinicalVignette": "A young adult with abdominal pain, dehydration, and low-grade fever has a fast but regular pulse on examination."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA%20upright&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Small dense calcified granuloma with possible calcified hilar node (old healed granulomatous disease).",
-      "verify": "Source a study matching: Small dense calcified granuloma with possible calcified hilar node (old healed granulomatous disease). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Clear lung fields; no free air under the diaphragm; normal cardiomediastinal silhouette.",
+      "verify": "Source a study matching: Clear lung fields; no free air under the diaphragm; normal cardiomediastinal silhouette. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing calcified granuloma",
+      "imageDescription": "chest radiograph with clear lungs and no subdiaphragmatic free air",
       "searchTerms": [
-        "calcified granuloma chest x-ray",
-        "calcified lung nodule benign radiograph"
+        "normal upright PA chest x-ray",
+        "no free air under diaphragm chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 58-year-old woman has a routine pre-operative film showing an incidental calcified lung nodule."
+      "clinicalVignette": "A young adult with acute abdominal pain has a screening upright chest film to exclude free air."
     }
   },
   "revealKeys": [
@@ -68,67 +69,83 @@
     "BMP",
     "UA",
     "Lipase",
-    "CT_abdomen",
+    "betaHCG",
+    "pelvic_ultrasound",
     "ekg",
     "cxr"
   ],
   "essential": [
     "CBC",
-    "CT_abdomen"
+    "betaHCG",
+    "pelvic_ultrasound"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute appendicitis (leading,8). Mesenteric adenitis (core,2). Gastroenteritis (core,2). Ureteric colic / UTI (core,3). Inflammatory bowel disease (bonus,2). Testicular torsion / epididymitis (CANT-MISS to consider in a young male,3). Named leading dx w/ justification — migration, anorexia, peritoneal signs (core,5).",
-      "idealAnswer": "Leading diagnosis: Acute appendicitis. Must-not-miss diagnoses to exclude: Testicular torsion / epididymitis. Also reasonable: Mesenteric adenitis; Gastroenteritis; Ureteric colic / UTI.",
+      "prompt": "Based on your history and physical in this reproductive-age woman, list your differential diagnosis (note your leading diagnosis). Explicitly name three must-not-miss diagnoses for right-lower-quadrant pain in a reproductive-age woman.",
+      "rubric": "Acute appendicitis (leading,5). Ectopic pregnancy — must-not-miss given uncertain LMP and IUD (CANT-MISS,4). Ovarian torsion — must-not-miss (CANT-MISS,4). Ruptured hemorrhagic ovarian cyst — must-not-miss (CANT-MISS,2). Pelvic inflammatory disease / tubo-ovarian abscess given prior chlamydial PID (CANT-MISS,2). UTI / pyelonephritis (core,1). Nephrolithiasis / ureteric colic (core,1). Names leading dx w/ justification — ~20h migration, anorexia, peritoneal signs (core,4). Explicitly states a pregnancy test is mandatory before committing in any reproductive-age woman with RLQ pain (core,3). PENALTY: anchors on appendicitis without considering pregnancy/gynecologic emergencies (-3).",
+      "idealAnswer": "Leading diagnosis: Acute appendicitis (classic ~20h migratory periumbilical-to-RLQ pain with anorexia and peritoneal signs). Three (or more) must-not-miss diagnoses for RLQ pain in a reproductive-age woman: Ectopic pregnancy, Ovarian torsion, and Ruptured hemorrhagic ovarian cyst — plus Pelvic inflammatory disease / tubo-ovarian abscess given her prior chlamydial PID. The uncertain LMP and copper IUD do NOT exclude pregnancy, so a serum beta-hCG is mandatory before committing. Also reasonable: UTI/pyelonephritis and nephrolithiasis.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Acute appendicitis",
-            "points": 8
+            "points": 5
           },
           {
-            "item": "Testicular torsion / epididymitis",
-            "points": 3
+            "item": "Ectopic pregnancy",
+            "points": 4
+          },
+          {
+            "item": "Ovarian torsion",
+            "points": 4
+          },
+          {
+            "item": "Ruptured hemorrhagic ovarian cyst",
+            "points": 2
+          },
+          {
+            "item": "Pelvic inflammatory disease / tubo-ovarian abscess",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Mesenteric adenitis",
-            "points": 2
+            "item": "UTI / pyelonephritis",
+            "points": 1
           },
           {
-            "item": "Gastroenteritis",
-            "points": 2
-          },
-          {
-            "item": "Ureteric colic / UTI",
-            "points": 3
+            "item": "Nephrolithiasis / ureteric colic",
+            "points": 1
           },
           {
             "item": "Named leading dx w/ justification — migration, anorexia, peritoneal signs",
-            "points": 5
-          }
-        ],
-        "bonusActions": [
+            "points": 4
+          },
           {
-            "item": "Inflammatory bowel disease",
-            "points": 2
+            "item": "States a pregnancy test is mandatory in any reproductive-age woman with RLQ pain",
+            "points": 3
           }
         ],
-        "penalties": []
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchors on appendicitis without considering pregnancy/gynecologic emergencies",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Testicular torsion / epididymitis"
+        "Ectopic pregnancy",
+        "Ovarian torsion",
+        "Ruptured hemorrhagic ovarian cyst",
+        "Pelvic inflammatory disease / tubo-ovarian abscess"
       ],
       "acceptableAlternatives": [
-        "Mesenteric adenitis",
-        "Gastroenteritis",
-        "Ureteric colic / UTI"
+        "UTI / pyelonephritis",
+        "Nephrolithiasis / ureteric colic"
       ]
     },
     {
@@ -137,49 +154,49 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "CBC (CANT-MISS,4). CT abdomen/pelvis (or ultrasound) (CANT-MISS,5). BMP (2). Urinalysis to exclude urinary cause (2). Lipase (1). Genital/testicular exam in a young male (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Urinalysis; Lipase; CT abdomen/pelvis.",
+      "rubric": "Serum beta-hCG FIRST in any reproductive-age woman with abdominal pain (CANT-MISS,4). Pelvic/transvaginal ULTRASOUND as imaging of choice — avoid CT radiation given possible/confirmed pregnancy (CANT-MISS,4). CBC (3). BMP (1). Urinalysis to exclude urinary cause (1). Lipase (1). Pelvic exam +/- cervical NAAT/wet prep given prior PID (bonus,1). PENALTY: ordering CT abdomen/pelvis before a pregnancy test (-2); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: serum beta-hCG FIRST; CBC; BMP; Urinalysis; Lipase; pelvic/transvaginal ultrasound as the imaging of choice (defer/avoid CT given a possible pregnancy and the radiation to ovaries/fetus); EKG; CXR. Consider a pelvic exam with cervical NAAT given her prior chlamydial PID.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "CBC",
+            "item": "Serum beta-hCG",
             "points": 4
           },
           {
-            "item": "CT abdomen/pelvis (or ultrasound)",
-            "points": 5
+            "item": "Pelvic / transvaginal ultrasound (avoid CT given possible pregnancy)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
+            "item": "CBC",
+            "points": 3
           },
           {
             "item": "BMP",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Urinalysis",
-            "points": 2
+            "points": 1
           },
           {
             "item": "Lipase",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Genital/testicular exam in a young male",
+            "item": "Pelvic exam +/- cervical NAAT given prior PID",
             "points": 1
           }
         ],
         "penalties": [
+          {
+            "item": "Ordering CT abdomen/pelvis before a pregnancy test",
+            "points": -2
+          },
           {
             "item": "shotgun panel w/ no reasoning",
             "points": -2
@@ -187,14 +204,17 @@
         ]
       },
       "requiredTests": [
-        "CBC",
-        "CT abdomen/pelvis (or ultrasound)"
+        "Serum beta-hCG",
+        "Pelvic / transvaginal ultrasound (avoid CT given possible pregnancy)"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
+        "Ordering CT abdomen/pelvis before a pregnancy test",
         "shotgun panel w/ no reasoning"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "Serum beta-hCG"
+      ]
     },
     {
       "id": "ekg_read",
@@ -203,32 +223,32 @@
       "type": "read",
       "image": "ekg",
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = atrial fibrillation with rapid ventricular response (irregularly irregular rhythm, absent P waves, fibrillatory baseline, ventricular rate ~110). CREDIT: rate & rhythm — identifies the irregularly irregular rhythm (7); recognizes atrial fibrillation with RVR and absent P waves (5); systematic read (3). PENALTY: calling it normal sinus / missing the abnormality (-3).",
+      "rubric": "Findings = sinus tachycardia (~102 bpm) with normal axis and intervals and no acute ischemic changes; the tachycardia is explained by pain, fever, and dehydration. CREDIT: identifies sinus tachycardia (7); recognizes normal intervals/axis with no acute ischemia (5); systematic read (3). PENALTY: over-reading a benign sinus tachycardia as a primary cardiac event (-3).",
       "keyFindings": [
-        "irregularly irregular rhythm",
-        "absence of organized P waves"
+        "sinus tachycardia",
+        "no acute ischemic changes"
       ],
       "criticalFindings": [
-        "Atrial fibrillation with rapid ventricular response."
+        "Sinus tachycardia with no acute ischemic changes."
       ],
       "commonMistakes": [
-        "calling it sinus when the rhythm is irregularly irregular",
-        "missing the absent P waves"
+        "calling sinus tachycardia a primary arrhythmia",
+        "over-reading benign T-wave changes as ischemia"
       ],
-      "idealAnswer": "Atrial fibrillation with rapid ventricular response (rate ~110); irregularly irregular, no discernible P waves.",
+      "idealAnswer": "Sinus tachycardia at ~102 bpm with normal axis and intervals and no acute ST/T changes — consistent with pain, fever, and volume depletion rather than a primary cardiac process.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Atrial fibrillation with rapid ventricular response."
+          "Sinus tachycardia with no acute ischemic changes."
         ],
         "coreActions": [
-          "irregularly irregular rhythm",
-          "absence of organized P waves"
+          "sinus tachycardia",
+          "no acute ischemic changes"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "over-reads a benign sinus tachycardia as a primary cardiac event",
             "points": -3
           }
         ]
@@ -241,31 +261,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = a small dense calcified granuloma (with possible calcified hilar node) — old healed granulomatous disease. CREDIT: identifies the calcified granuloma (5); recognizes it as a benign healed finding rather than working it up as malignancy (5). PENALTY: missing the nodule / calling the film entirely normal, or working up a clearly calcified benign nodule as cancer (-3).",
+      "rubric": "Findings = clear lungs, NO free air under the diaphragm, normal cardiomediastinal silhouette. CREDIT: recognizes a normal film (5); specifically states there is no subdiaphragmatic free air to suggest a perforated viscus (5). PENALTY: missing the absence of free air as a deliberate pertinent negative, or inventing pathology (-3).",
       "keyFindings": [
-        "identifies a calcified granuloma",
-        "recognizes it as a benign healed finding"
+        "clear lung fields",
+        "no free air under the diaphragm"
       ],
       "criticalFindings": [
-        "Calcified granuloma (benign, old granulomatous disease)."
+        "No subdiaphragmatic free air; otherwise normal chest film."
       ],
       "commonMistakes": [
-        "working up a clearly calcified benign nodule as malignancy"
+        "failing to comment on the absence of free air",
+        "inventing an infiltrate on a clear film"
       ],
-      "idealAnswer": "Calcified granuloma — a benign sequela of old granulomatous infection; dense uniform calcification.",
+      "idealAnswer": "Clear lung fields, normal cardiomediastinal silhouette, and — importantly — no free air under the diaphragm to suggest a perforated viscus.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Calcified granuloma (benign, old granulomatous disease)."
+          "No subdiaphragmatic free air; otherwise normal chest film."
         ],
         "coreActions": [
-          "identifies a calcified granuloma",
-          "recognizes it as a benign healed finding"
+          "clear lung fields",
+          "no free air under the diaphragm"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study abnormal / invents pathology",
             "points": -3
           }
         ]
@@ -275,9 +296,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the CT findings, what is your diagnosis and reasoning?",
-      "rubric": "Acute appendicitis (6). Cites dilated appendix with fat stranding + leukocytosis + classic exam (4).",
-      "idealAnswer": "Acute appendicitis — CT shows a dilated, fluid-filled appendix (~10 mm) with periappendiceal fat stranding, supported by the leukocytosis (WBC 14.2) and the classic migratory pain with anorexia and peritoneal signs.",
+      "prompt": "Given the beta-hCG and ultrasound findings, what is your diagnosis and reasoning? Address how the pregnancy reframes your imaging and which gynecologic emergencies you have now excluded.",
+      "rubric": "Acute appendicitis confirmed on ultrasound (dilated, non-compressible, blind-ending tubular RLQ structure ~9 mm with hyperemia), now occurring in a confirmed early INTRAUTERINE pregnancy (6). Explains the positive beta-hCG drove ultrasound-over-CT and mandates OB involvement; names the discriminators that excluded the must-not-miss alternatives — intrauterine sac lowers ectopic, normal bilateral ovarian arterial+venous flow lowers torsion, no adnexal mass/free fluid argues against ruptured cyst, no cervical motion tenderness/discharge argues against active PID (4).",
+      "idealAnswer": "Acute appendicitis — ultrasound shows a dilated, non-compressible, blind-ending tubular structure (~9 mm) with hyperemia in the RLQ, supported by the leukocytosis with left shift (WBC 15.1) and the classic ~20h migratory pain with anorexia and peritoneal signs. The picture is reframed by a POSITIVE beta-hCG (350 mIU/mL): she has a confirmed early intrauterine pregnancy on ultrasound. Commit to appendicitis. The positive pregnancy test is exactly why ultrasound was chosen over CT (avoid fetal/ovarian radiation) and why OB must be involved. Discriminators that excluded the gynecologic must-not-misses: the intrauterine gestational sac makes ectopic very unlikely; normal bilateral ovarian arterial AND venous flow with normal ovaries and no mass excludes torsion; no adnexal mass or significant free fluid argues against a ruptured hemorrhagic cyst; and no cervical motion tenderness or purulent discharge argues against active PID/tubo-ovarian abscess.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -290,85 +311,103 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH abdominal pain / surgical abdomen: NPO + IV fluids (CANT-MISS,5); broad-spectrum antibiotics (ceftriaxone + metronidazole) (5); urgent surgery consult for appendectomy (CANT-MISS,6); analgesia + antiemetics (4); serial abdominal exams (3). PENALTY: discharging a surgical abdomen (-4); delaying surgical consult / source control (-2).",
-      "idealAnswer": "NPO, IV fluids, analgesia, antiemetics. Broad-spectrum antibiotics (e.g. ceftriaxone + metronidazole). Urgent surgical consultation for appendectomy. Serial abdominal exams.",
+      "prompt": "What is your management plan, including disposition and counseling for this pregnant patient?",
+      "rubric": "Per MGH abdominal pain / surgical abdomen in pregnancy: NPO + IV fluids (CANT-MISS,4); urgent general surgery consult for appendectomy WITH OB/obstetrics co-management (CANT-MISS,6); pregnancy-appropriate antibiotics (2); pregnancy-safe analgesia + antiemetics (3); imaging-choice rationale — ultrasound over CT to avoid fetal/ovarian radiation (3); check Rh status and give RhoGAM if Rh-negative (2); serial abdominal exams (2); safe-discharge/perioperative counseling for the pregnancy + close OB follow-up (3). PENALTY: discharging a surgical abdomen (-4); managing without OB involvement / ignoring the pregnancy (-3); ordering CT now that an IUP is confirmed (-2).",
+      "idealAnswer": "NPO, IV fluids. URGENT general surgery consultation for appendectomy WITH OB/obstetrics co-management given the confirmed early intrauterine pregnancy. Pregnancy-appropriate antibiotics (e.g., a beta-lactam regimen safe in pregnancy). Pregnancy-safe analgesia and antiemetics. Continue ultrasound-based imaging and avoid CT radiation now that an IUP is confirmed. Check Rh status and give RhoGAM if Rh-negative. Serial abdominal exams. Counsel the patient on the operative plan, anesthetic/fetal safety, and the importance of close OB follow-up for the pregnancy after appendectomy.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "NPO and IV fluids",
-            "points": 5
+            "points": 4
           },
           {
-            "item": "Surgery consult for appendectomy",
+            "item": "Urgent surgery consult for appendectomy with OB/obstetrics co-management",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "Broad-spectrum antibiotics",
-            "points": 5
+            "item": "Pregnancy-appropriate antibiotics",
+            "points": 2
           },
           {
-            "item": "Analgesia and antiemetics",
-            "points": 4
+            "item": "Pregnancy-safe analgesia and antiemetics",
+            "points": 3
+          },
+          {
+            "item": "Ultrasound over CT to avoid fetal/ovarian radiation",
+            "points": 3
+          },
+          {
+            "item": "Check Rh status and give RhoGAM if Rh-negative",
+            "points": 2
           },
           {
             "item": "Serial abdominal exams",
+            "points": 2
+          },
+          {
+            "item": "Safe-discharge/perioperative counseling for the pregnancy and close OB follow-up",
             "points": 3
           }
         ],
-        "bonusActions": [
-          {
-            "item": "Type and screen pre-op",
-            "points": 1
-          }
-        ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Discharging a surgical abdomen",
             "points": -4
+          },
+          {
+            "item": "Managing without OB involvement / ignoring the pregnancy",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
         "NPO and IV fluids",
-        "Surgery consult for appendectomy"
+        "Urgent surgery consult for appendectomy with OB/obstetrics co-management"
       ],
       "optionalActions": [
-        "Broad-spectrum antibiotics",
-        "Analgesia and antiemetics",
+        "Pregnancy-appropriate antibiotics",
+        "Pregnancy-safe analgesia and antiemetics",
+        "Ultrasound over CT to avoid fetal/ovarian radiation",
+        "Check Rh status and give RhoGAM if Rh-negative",
         "Serial abdominal exams",
-        "Type and screen pre-op"
+        "Safe-discharge/perioperative counseling for the pregnancy and close OB follow-up"
       ],
       "unsafeActions": [
-        "Discharging a surgical abdomen"
+        "Discharging a surgical abdomen",
+        "Managing without OB involvement / ignoring the pregnancy"
       ],
       "consults": [
-        "Surgery"
+        "Surgery",
+        "Obstetrics/Gynecology"
       ],
-      "disposition": "Admit; OR",
+      "disposition": "Admit; OR with OB co-management",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Abdominal Pain (Appendicitis)",
+        "section": "Abdominal Pain (Appendicitis in Pregnancy)",
         "page": 72
       }
     }
   ],
   "standardizedPatient": {
-    "demeanor": "fatigued",
-    "emotionalState": "concerned",
+    "demeanor": "uncomfortable",
+    "emotionalState": "anxious",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "sexual_history",
+      "pregnancy_possibility",
+      "contraception",
+      "prior_sti"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "22-year-old man, lying still (movement worsens pain). Cooperative.",
+    "affect": "26-year-old woman, lying still (movement worsens pain), anxious about a possible pregnancy. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sexual history, pregnancy concern, contraception, or prior STI unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -376,14 +415,49 @@
   },
   "historyTriggers": [
     {
-      "id": "alcohol_use",
-      "category": "substance_use",
+      "id": "lmp_pregnancy",
+      "category": "gyn",
       "triggerConcepts": [
-        "alcohol",
-        "drinking",
-        "how much do you drink",
-        "etoh",
-        "alcohol use"
+        "last menstrual period",
+        "lmp",
+        "when was your last period",
+        "could you be pregnant",
+        "pregnancy",
+        "are you pregnant"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "contraception",
+      "category": "gyn",
+      "triggerConcepts": [
+        "contraception",
+        "birth control",
+        "iud",
+        "do you use protection",
+        "any contraception"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "sexual_sti_history",
+      "category": "gyn",
+      "triggerConcepts": [
+        "sexual history",
+        "sexually active",
+        "sti",
+        "infection",
+        "chlamydia",
+        "pid",
+        "pelvic infection",
+        "vaginal discharge",
+        "vaginal bleeding"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -411,7 +485,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "where did it start",
+        "did it move"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -437,7 +513,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "nausea",
+        "vomiting",
+        "urinary symptoms",
+        "dysuria"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -464,7 +545,8 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "pcos"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -477,7 +559,8 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "metformin"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -490,7 +573,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "intermittent twisting pelvic pain"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -501,7 +585,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
@@ -511,7 +595,7 @@
     },
     {
       "id": "assess_guarding_finding_2",
-      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
       "revealedBy": [
         "assess_guarding"
       ],
@@ -521,7 +605,7 @@
     },
     {
       "id": "perform_rovsing_sign_finding_3",
-      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
       "revealedBy": [
         "perform_rovsing_sign"
       ],
@@ -531,7 +615,7 @@
     },
     {
       "id": "perform_psoas_sign_finding_4",
-      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
       "revealedBy": [
         "perform_psoas_sign"
       ],
@@ -541,7 +625,7 @@
     },
     {
       "id": "palpate_rlq_finding_5",
-      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
       "revealedBy": [
         "palpate_rlq"
       ],
@@ -550,8 +634,28 @@
       "normalIfNotPresent": "No RLQ tenderness."
     },
     {
-      "id": "inspect_abdomen_finding_6",
-      "finding": "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "id": "assess_suprapubic_tenderness_finding_6",
+      "finding": "Mild suprapubic and right lower-quadrant tenderness; no rigidity. (Raises the need to consider a pelvic/adnexal source.)",
+      "revealedBy": [
+        "assess_suprapubic_tenderness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No suprapubic tenderness."
+    },
+    {
+      "id": "assess_cva_tenderness_finding_7",
+      "finding": "No costovertebral angle tenderness (argues against pyelonephritis/renal colic).",
+      "revealedBy": [
+        "assess_cva_tenderness"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No CVA tenderness."
+    },
+    {
+      "id": "inspect_abdomen_finding_8",
+      "finding": "Abdomen not distended; no surgical scars; no visible masses.",
       "revealedBy": [
         "inspect_abdomen"
       ],
@@ -560,7 +664,7 @@
       "normalIfNotPresent": "Abdomen not distended."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_7",
+      "id": "auscultate_bowel_sounds_finding_9",
       "finding": "Bowel sounds present. Cardiac/lungs: normal.",
       "revealedBy": [
         "auscultate_bowel_sounds"
@@ -580,15 +684,17 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute appendicitis",
-    "diagnosticFramework": "22M presents with ~18 hours of abdominal pain that began around the umbilicus and migrated to the right lower quadrant, with nausea and anorexia. The diagnosis is Acute appendicitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "26F with PCOS, a copper IUD, and a prior treated chlamydial PID presents with ~20 hours of abdominal pain that began around the umbilicus and migrated to the right lower quadrant, with anorexia, nausea, and low-grade fever, on a background of an uncertain LMP (~7 weeks ago). The diagnosis is Acute appendicitis, confirmed on ultrasound, but reframed by an incidental positive beta-hCG showing an early intrauterine pregnancy. It is reached by eliciting the focused history (including the reproductive/sexual history), performing the targeted exam, sending a mandatory pregnancy test, choosing ultrasound over CT, and excluding the gynecologic must-not-miss alternatives (ectopic, ovarian torsion, ruptured cyst, PID).",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
-      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
-      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
-      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
-      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
-      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. No distension.",
+      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
+      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
+      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
+      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
+      "Abdomen: maximal tenderness at McBurney's point (RLQ) with voluntary guarding and rebound tenderness; positive Rovsing sign; positive psoas sign. Mild suprapubic tenderness. No distension.",
+      "Mild suprapubic and right lower-quadrant tenderness; no rigidity. (Raises the need to consider a pelvic/adnexal source.)",
+      "No costovertebral angle tenderness (argues against pyelonephritis/renal colic).",
+      "Abdomen not distended; no surgical scars; no visible masses.",
       "Bowel sounds present. Cardiac/lungs: normal."
     ],
     "keyDiagnosticFindings": [
@@ -596,22 +702,26 @@
       "BMP",
       "UA",
       "Lipase",
-      "CT_abdomen"
+      "betaHCG",
+      "pelvic_ultrasound"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute appendicitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute appendicitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the reproductive/sexual history (LMP, contraception, prior PID) only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings, and recognize the need for a pelvic/adnexal assessment.",
+      "Build a differential led by Acute appendicitis while explicitly naming the gynecologic must-not-miss causes (ectopic, ovarian torsion, ruptured cyst, PID).",
+      "Send a mandatory serum beta-hCG and choose pelvic ultrasound over CT; interpret EKG/CXR and labs.",
+      "Commit to Acute appendicitis reframed by a confirmed intrauterine pregnancy, and manage with stabilization, appendectomy under OB co-management, RhoGAM if Rh-negative, and disposition."
     ],
     "commonPitfalls": [
-      "Discharging a surgical abdomen"
+      "Anchoring on appendicitis without sending a pregnancy test",
+      "Ordering CT before/after confirming pregnancy and irradiating an early IUP",
+      "Discharging a surgical abdomen",
+      "Managing without OB involvement"
     ],
     "managementPearls": [
       "NPO and IV fluids",
-      "Surgery consult for appendectomy"
+      "Urgent surgery consult for appendectomy with OB/obstetrics co-management"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -619,29 +729,29 @@
       "palpate_rlq"
     ],
     "criticalWorkupItems": [
-      "CBC",
-      "CT abdomen/pelvis (or ultrasound)"
+      "Serum beta-hCG",
+      "Pelvic / transvaginal ultrasound (avoid CT given possible pregnancy)"
     ],
     "criticalInterpretationItems": [
-      "Atrial fibrillation with rapid ventricular response (irregularly irregular, absent P waves, rate ~110).",
-      "Calcified granuloma — a benign, old healed granulomatous finding."
+      "Sinus tachycardia with no acute ischemic changes — consistent with pain, fever, and volume depletion.",
+      "Normal chest film with no subdiaphragmatic free air to suggest a perforated viscus."
     ],
     "criticalManagementItems": [
       "NPO and IV fluids",
-      "Surgery consult for appendectomy"
+      "Urgent surgery consult for appendectomy with OB/obstetrics co-management"
     ],
     "keyImageInterpretationFindings": [
-      "Atrial fibrillation with rapid ventricular response.",
-      "Calcified granuloma (benign, old granulomatous disease)."
+      "Sinus tachycardia with no acute ischemic changes.",
+      "No subdiaphragmatic free air; otherwise normal chest film."
     ],
     "criticalImageInterpretationFindings": [
-      "Atrial fibrillation with rapid ventricular response.",
-      "Calcified granuloma (benign, old granulomatous disease)."
+      "Sinus tachycardia with no acute ischemic changes.",
+      "No subdiaphragmatic free air; otherwise normal chest film."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A fast but regular rhythm in a febrile, dehydrated, painful patient is sinus tachycardia — explain it, do not over-work it up.",
+      "On an abdominal-pain chest film, the deliberate pertinent negative is the absence of free air under the diaphragm.",
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -656,7 +766,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive sexual/reproductive questions",
         "points": 1
       },
       {
@@ -671,7 +781,7 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
+    "appliedOn": "2026-06-14",
     "imagePolicy": "pathology-forward standalone interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,

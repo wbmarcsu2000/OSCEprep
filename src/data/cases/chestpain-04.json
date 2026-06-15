@@ -1,31 +1,31 @@
 {
   "id": "chestpain-04",
   "category": "Chest Pain",
-  "difficulty": "moderate",
-  "title": "Sharp positional chest pain after a viral illness",
+  "difficulty": "hard",
+  "title": "Pleuritic chest pain in a dialysis patient who missed his last two sessions",
   "diagnosis": "Acute pericarditis",
   "chart": {
-    "ageSex": "30M",
-    "cc": "Sharp chest pain",
-    "oneLiner": "30M presents with 2 days of sharp central chest pain that is worse lying flat and better leaning forward, one week after a viral upper respiratory illness.",
+    "ageSex": "58M",
+    "cc": "Sharp chest pain and feeling unwell",
+    "oneLiner": "58M with ESRD on hemodialysis (recently non-adherent), type 2 diabetes, hypertension, and prior CABG presents with 3 days of sharp, positional, pleuritic central chest pain that is worse lying flat and better leaning forward, after missing his last two dialysis sessions.",
     "vitals": {
-      "BP": "124/78",
-      "HR": "98",
-      "RR": "16",
-      "Temp": "37.6°C",
-      "SpO2": "99% RA"
+      "BP": "158/92",
+      "HR": "104",
+      "RR": "20",
+      "Temp": "37.7°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I've got this sharp pain in the middle of my chest. It's worse when I lie down and eases up when I sit forward.",
-  "patientFile": "PERSONA: 30-year-old man, uncomfortable but not in severe distress, sitting leaning forward. Cooperative.\n\nHPI:\n- Sharp, central/retrosternal chest pain for 2 days.\n- POSITIONAL: worse lying supine, better sitting up and leaning forward. PLEURITIC: worse with deep breath.\n- Sometimes radiates to the left trapezius ridge (only if asked).\n- Had a viral upper respiratory illness (cough, runny nose, low-grade fevers) about a week ago that has mostly resolved (only if asked about recent illness).\n- NO exertional trigger, NO pressure/heaviness, NO diaphoresis, NO tearing quality, NO leg swelling, NO recent travel.\n\nOLDCARTS: onset 2 days ago; central chest; constant with pleuritic/positional exacerbation; sharp; worse supine and with inspiration, better leaning forward; severity 5/10.\n\nPMH: none. MEDICATIONS: none. ALLERGIES: none. FAMILY: noncontributory. SOCIAL: nonsmoker, social alcohol, graduate student.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: alert, comfortable when leaning forward.\n- Vitals: BP 124/78, HR 98, RR 16, 37.6°C, SpO2 99% RA.\n- Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward; normal S1/S2, no murmur.\n- Lungs: clear bilaterally.\n- Chest wall: NO reproducible tenderness.\n- Neck: JVP normal, no pulsus paradoxus appreciated.\n- Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the recent viral illness or the trapezius radiation unless asked about recent illness or where the pain travels.\n- The friction rub is only revealed if the student auscultates the heart (ideally with the patient leaning forward).\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had this sharp pain in the middle of my chest for a few days. It's worse when I lie down, and it eases up if I sit forward. I haven't been able to get to my dialysis the last couple of times.",
+  "patientFile": "PERSONA: 58-year-old man, looks tired and a little puffy, sitting leaning forward on the stretcher. Cooperative but worried because the pain reminds him of his heart bypass years ago.\n\nHPI:\n- Sharp, central/retrosternal chest pain for 3 days.\n- POSITIONAL: worse lying supine, better sitting up and leaning forward. PLEURITIC: worse with deep breath and with coughing.\n- Sometimes radiates to the left trapezius ridge / top of the left shoulder (only if asked where it travels).\n- NOT the same as his old angina before bypass: that was a dull pressure with exertion that went away with rest; THIS is sharp, constant, and unrelated to walking (only if asked to compare).\n- Missed his last TWO dialysis sessions (about a week without dialysis) — he was traveling for a family funeral and could not get a chair (reveal only if asked about dialysis schedule/adherence or recent changes).\n- Mild shortness of breath and his legs/face feel more swollen than usual; has been more fatigued and a bit nauseated (only if asked about associated symptoms).\n- Had a head-cold a couple of weeks ago that resolved (only if asked about recent illness).\n- NO tearing/ripping pain to the back, NO syncope, NO unilateral leg swelling or calf pain, NO recent long travel by car/plane beyond the bus to the funeral, NO hemoptysis.\n\nOLDCARTS: onset 3 days ago; central chest; constant with pleuritic/positional exacerbation; sharp; worse supine and with inspiration, better leaning forward; severity 6/10; associated with mild dyspnea, increased edema, nausea, fatigue.\n\nPMH: End-stage renal disease on hemodialysis (Mon/Wed/Fri, via a left-arm AV fistula) for ~4 years, secondary to diabetic nephropathy. Type 2 diabetes (~15 years). Hypertension. Coronary artery disease s/p CABG 6 years ago. Hyperlipidemia. Anemia of CKD. NO known autoimmune disease.\nMEDICATIONS (polypharmacy — reveal the list if asked what he takes): aspirin 81 mg daily; metoprolol; lisinopril; atorvastatin; insulin glargine + lispro; sevelamer (phosphate binder); calcitriol; erythropoietin injections at dialysis; recently started naproxen (an over-the-counter NSAID) for knee pain about 10 days ago. He sometimes skips his evening meds when he travels. NO warfarin or DOAC.\nALLERGIES: none. SOCIAL: former smoker (quit 8 years ago, ~30 pack-years), rare alcohol, retired bus mechanic, lives with his wife. FAMILY: father had an MI in his 60s. ROS: as above; mild dyspnea and increased edema; no fever chills beyond feeling warm; no urinary output to speak of (anuric on dialysis).\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: tired-appearing, mildly volume-overloaded, more comfortable leaning forward.\n- Vitals: BP 158/92, HR 104, RR 20, 37.7°C, SpO2 96% RA.\n- Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward in end-expiration; normal S1/S2, no new murmur; PMI not displaced.\n- Neck/JVP: JVP mildly elevated (~9 cm); check for pulsus paradoxus — only a borderline/normal pulsus (<10 mmHg) is appreciated, no clear tamponade physiology.\n- Lungs: a few bibasilar crackles; otherwise clear; no consolidation.\n- Chest wall: NO reproducible tenderness over the sternum or costochondral joints; healed midline sternotomy scar.\n- Access: left-forearm AV fistula with a palpable thrill and audible bruit (patent).\n- Extremities: mild-to-moderate bilateral pitting pedal edema (chronic, slightly worse); no unilateral swelling, no calf tenderness. Abdomen: soft, nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- Answer only what is asked.\n- Do NOT volunteer the missed dialysis sessions, the recent naproxen, the trapezius radiation, or the comparison to his old angina unless asked the relevant question (dialysis schedule/adherence, medications, where the pain travels, or how it compares to prior chest pain).\n- The friction rub is only revealed if the student auscultates the heart (ideally with the patient leaning forward).\n- Reveal the elevated JVP / pulsus check only if the student examines the neck / checks for pulsus paradoxus.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 9.8 (mildly elevated), Hgb 14.6, Plt 260.",
-      "BMP": "Within normal limits.",
-      "Troponin": "Mildly elevated at 0.10 ng/mL (suggesting some myocardial involvement — myopericarditis).",
-      "Inflammatory": "ESR and CRP elevated.",
-      "echo": "Trivial pericardial effusion, normal biventricular function, no tamponade physiology."
+      "CBC": "WBC 11.2 (mildly elevated), Hgb 9.4 (chronic anemia of CKD, at his baseline), Plt 244.",
+      "BMP": "Na 138, K 6.2 (HIGH), Cl 100, HCO3 16 (LOW), BUN 92, Cr 7.8 (up from his dialysis baseline of ~6.0), glucose 184. Calculated anion gap = Na − (Cl + HCO3) = 138 − (100 + 16) = 22 (ELEVATED, high-anion-gap metabolic acidosis from missed dialysis / uremia).",
+      "Troponin": "High-sensitivity troponin mildly elevated and STABLE on serial draws (0.09 then 0.10 ng/mL) without a rising/falling pattern — consistent with myopericardial involvement (myopericarditis) and chronic elevation from CKD, NOT a dynamic ACS curve.",
+      "Inflammatory": "ESR and CRP elevated. Phosphate high at 6.8, corrected calcium 8.1 (low-normal) — consistent with missed dialysis.",
+      "echo": "Small-to-moderate circumferential pericardial effusion WITHOUT echocardiographic tamponade (no RV diastolic collapse, IVC not plethoric, respiratory mitral inflow variation <25%); normal-to-mildly reduced LV function with old inferior wall-motion abnormality from prior CABG; no new regional wall-motion abnormality to suggest acute coronary occlusion."
     }
   },
   "revealKeys": [
@@ -33,12 +33,13 @@
     "BMP",
     "Troponin",
     "Inflammatory",
+    "echo",
     "ekg",
-    "cxr",
-    "echo"
+    "cxr"
   ],
   "essential": [
     "ekg",
+    "BMP",
     "Troponin"
   ],
   "steps": [
@@ -46,50 +47,60 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute pericarditis (leading, 9; accepts pericarditis/myopericarditis). Acute coronary syndrome (CANT-MISS,5). Pulmonary embolism (CANT-MISS,3). Pneumonia/pleuritis (core,2). Musculoskeletal (core,2). GERD (bonus,1). Names pericarditis with supporting features — positional pleuritic pain, friction rub, recent viral illness (core,4).",
-      "idealAnswer": "Leading diagnosis: Acute pericarditis. Must-not-miss diagnoses to exclude: Acute coronary syndrome; Pulmonary embolism. Also reasonable: Pneumonia/pleuritis; Musculoskeletal.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). Then name three distinct etiologies/mechanisms of acute pericarditis that you would specifically consider in THIS patient.",
+      "rubric": "Acute pericarditis / myopericarditis (leading, accepts pericarditis; 7). Acute coronary syndrome / NSTEMI — must-not-miss given prior CABG, diabetes, mild troponin rise, and an EKG that can mimic STEMI (CANT-MISS, 5). Pulmonary embolism — must-not-miss given pleuritic pain and immobility (CANT-MISS, 3). Aortic dissection (CANT-MISS, 1). Pneumonia/pleuritis (core, 1). Names pericarditis with supporting features — positional pleuritic pain, friction rub, missed dialysis/uremia (core, 3). Names THREE distinct etiologies/mechanisms relevant here — e.g. UREMIC (missed dialysis), viral/idiopathic (recent URI), post-cardiac-injury/Dressler after prior CABG, autoimmune, NSAID-related is NOT an etiology (core, 5). PENALTY: anchors on simple viral pericarditis and ignores the uremic/ACS picture (-3).",
+      "idealAnswer": "Leading diagnosis: Acute pericarditis with myocardial involvement (myopericarditis). Must-not-miss diagnoses to exclude: Acute coronary syndrome / NSTEMI (he has prior CABG, diabetes, and a mild troponin rise, and the EKG can mimic STEMI); Pulmonary embolism; Aortic dissection. Also reasonable: pneumonia/pleuritis. Three etiologies/mechanisms to consider specifically in this man: (1) UREMIC pericarditis from missed dialysis / accumulated uremic toxins; (2) viral or idiopathic pericarditis following his recent upper-respiratory illness; (3) post-cardiac-injury syndrome (Dressler-type) given his prior CABG, or an autoimmune/connective-tissue process.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute coronary syndrome",
+            "item": "Acute coronary syndrome / NSTEMI",
             "points": 5
           },
           {
             "item": "Pulmonary embolism",
             "points": 3
+          },
+          {
+            "item": "Aortic dissection",
+            "points": 1
           }
         ],
         "coreActions": [
           {
             "item": "Pneumonia/pleuritis",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Musculoskeletal",
-            "points": 2
+            "item": "Names pericarditis with supporting features — positional pleuritic pain, friction rub, missed dialysis/uremia",
+            "points": 3
           },
           {
-            "item": "Names pericarditis with supporting features — positional pleuritic pain, friction rub, recent viral illness",
-            "points": 4
+            "item": "Names three distinct etiologies/mechanisms — uremic (missed dialysis), viral/idiopathic, post-cardiac-injury (Dressler) / autoimmune",
+            "points": 5
           }
         ],
         "bonusActions": [
           {
-            "item": "GERD",
+            "item": "GERD / esophageal source",
             "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on simple viral pericarditis and ignores the uremic/ACS picture",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute coronary syndrome",
-        "Pulmonary embolism"
+        "Acute coronary syndrome / NSTEMI",
+        "Pulmonary embolism",
+        "Aortic dissection"
       ],
       "acceptableAlternatives": [
         "Pneumonia/pleuritis",
-        "Musculoskeletal"
+        "GERD / esophageal source"
       ]
     },
     {
@@ -97,46 +108,46 @@
       "label": "Workup",
       "max": 15,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "EKG (CANT-MISS,4). Troponin to assess myocardial involvement (core,3). CXR (core,2). Inflammatory markers ESR/CRP (core,2). CBC (core,2). Echocardiogram to assess for effusion/tamponade (bonus,1). PENALTY: no EKG (-2).",
+      "rubric": "EKG immediately (CANT-MISS, 4). BMP / electrolytes — he missed dialysis, look for hyperkalemia and acidosis (CANT-MISS, 3). SERIAL troponins to distinguish myopericarditis/chronic CKD elevation from a dynamic ACS curve (core, 2). Echocardiogram to assess for effusion/tamponade (core, 2). Inflammatory markers ESR/CRP (core, 1). CBC (core, 1). CXR (core, 1). PENALTY: no EKG (-2); reflexively giving an NSAID before reviewing renal function/potassium (-2).",
       "reveal": true,
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Troponin; Inflammatory markers; Echocardiogram.",
+      "idealAnswer": "Order: EKG immediately; BMP/electrolytes (hyperkalemia and metabolic acidosis are expected after two missed dialysis sessions); SERIAL high-sensitivity troponins (a flat, non-dynamic curve favors myopericarditis/chronic CKD elevation over ACS); CBC; ESR/CRP; phosphate/calcium; CXR; transthoracic echocardiogram to look for an effusion and tamponade physiology. Notify the renal/dialysis team early.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "EKG",
             "points": 4
+          },
+          {
+            "item": "BMP / electrolytes (hyperkalemia and acidosis after missed dialysis)",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Troponin to assess myocardial involvement",
-            "points": 3
+            "item": "Serial troponins to distinguish myopericarditis/CKD elevation from ACS",
+            "points": 2
           },
           {
-            "item": "CXR",
+            "item": "Echocardiogram for effusion/tamponade",
             "points": 2
           },
           {
             "item": "Inflammatory markers ESR/CRP",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CBC",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Echocardiogram",
-            "points": 2
+            "item": "CXR",
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Echocardiogram to assess for effusion/tamponade",
+            "item": "Notify renal/dialysis team early",
             "points": 1
           }
         ],
@@ -144,29 +155,38 @@
           {
             "item": "no EKG",
             "points": -2
+          },
+          {
+            "item": "Gives an NSAID before checking renal function/potassium",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "EKG"
+        "EKG",
+        "BMP / electrolytes (hyperkalemia and acidosis after missed dialysis)"
       ],
       "optionalTests": [
-        "Troponin to assess myocardial involvement",
-        "CXR",
+        "Serial troponins to distinguish myopericarditis/CKD elevation from ACS",
+        "Echocardiogram for effusion/tamponade",
         "Inflammatory markers ESR/CRP",
-        "CBC"
+        "CBC",
+        "CXR"
       ],
       "contraindicatedTests": [
-        "no EKG"
+        "no EKG",
+        "Gives an NSAID before checking renal function/potassium"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "EKG"
+      ]
     },
     {
       "id": "ekg_read",
       "label": "Read EKG",
       "max": 15,
       "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = diffuse concave-upward ST elevation with PR-segment depression; reciprocal change in aVR. CREDIT: rate & rhythm (3); identifies WIDESPREAD (non-territorial) ST elevation with PR depression (6); distinguishes from STEMI - diffuse rather than a single coronary territory (4); systematic read (2). PENALTY: misreading as an acute STEMI and activating the cath lab (-3).",
+      "rubric": "Findings = diffuse concave-upward ST elevation with PR-segment depression and PR elevation/reciprocal change in aVR (Spodick's down-sloping TP segment may be seen); rate ~104, sinus. CREDIT: rate & rhythm (3); identifies WIDESPREAD (non-territorial) ST elevation with PR depression (6); distinguishes from STEMI - diffuse rather than a single coronary territory, no reciprocal ST depression except aVR/V1 (4); systematic read, comments on T waves given the hyperkalemia (2). PENALTY: misreading as an acute STEMI and activating the cath lab (-3).",
       "type": "read",
       "image": "ekg",
       "keyFindings": [
@@ -176,17 +196,18 @@
         "systematic read"
       ],
       "criticalFindings": [
-        "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR."
+        "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; PR elevation / reciprocal change in aVR; sinus tachycardia."
       ],
       "commonMistakes": [
-        "misreading as an acute STEMI and activating the cath lab"
+        "misreading as an acute STEMI and activating the cath lab",
+        "missing peaked T waves of hyperkalemia in a patient who skipped dialysis"
       ],
-      "idealAnswer": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "idealAnswer": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; PR elevation with reciprocal change in aVR; Spodick's sign (down-sloping TP segment) may be present. Sinus tachycardia at ~104. In a patient who missed dialysis, also scrutinize the T waves for peaking from hyperkalemia.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Recognizes: Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+            "item": "Recognizes: Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal change in aVR.",
             "points": 6
           }
         ],
@@ -222,29 +243,29 @@
       "label": "Read CXR",
       "max": 10,
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = cardiogenic pulmonary edema: bilateral perihilar 'bat-wing' alveolar opacities with vascular redistribution. CREDIT: identifies the bilateral perihilar alveolar opacities (6); recognizes cephalization / signs of pulmonary edema (4). PENALTY: calling the study normal / missing the abnormality (-3).",
+      "rubric": "Findings = enlarged, globular ('water-bottle') cardiac silhouette consistent with a pericardial effusion, with mild pulmonary vascular congestion/small effusions from volume overload after missed dialysis; clear of focal consolidation. CREDIT: identifies the enlarged globular cardiac silhouette suggesting a pericardial effusion (6); recognizes signs of volume overload / vascular congestion in a missed-dialysis patient (4). PENALTY: calling the study normal / missing the abnormality (-3).",
       "type": "read",
       "image": "cxr",
       "keyFindings": [
-        "bilateral perihilar alveolar opacities",
-        "cephalization / signs of pulmonary edema"
+        "enlarged globular cardiac silhouette (pericardial effusion)",
+        "volume overload / mild vascular congestion"
       ],
       "criticalFindings": [
-        "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+        "Enlarged globular ('water-bottle') cardiac silhouette consistent with a pericardial effusion, with mild congestion from volume overload."
       ],
       "commonMistakes": [
-        "mistaking edema for bilateral pneumonia",
-        "missing upper-lobe vascular redistribution"
+        "mistaking the effusion silhouette for simple cardiomegaly",
+        "calling the film normal in a fluid-overloaded dialysis patient"
       ],
-      "idealAnswer": "Cardiogenic pulmonary edema: bilateral perihilar bat-wing opacities with vascular redistribution.",
+      "idealAnswer": "Enlarged, globular 'water-bottle' cardiac silhouette consistent with a pericardial effusion, with mild pulmonary vascular congestion and small pleural effusions reflecting volume overload after missed dialysis; no focal consolidation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+          "Enlarged globular ('water-bottle') cardiac silhouette consistent with a pericardial effusion, with mild congestion from volume overload."
         ],
         "coreActions": [
-          "bilateral perihilar alveolar opacities",
-          "cephalization / signs of pulmonary edema"
+          "enlarged globular cardiac silhouette (pericardial effusion)",
+          "volume overload / mild vascular congestion"
         ],
         "bonusActions": [],
         "penalties": [
@@ -259,9 +280,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the diffuse ST elevation with PR depression and mild troponin rise, what is your diagnosis and how do you distinguish it from STEMI?",
-      "rubric": "Acute pericarditis (with myocardial involvement / myopericarditis given mild troponin) (8). Distinguishes from STEMI: DIFFUSE (not territorial) ST elevation, PR depression, no reciprocal changes except aVR, friction rub (5). Notes the small effusion without tamponade (2).",
-      "idealAnswer": "Acute pericarditis. ",
+      "prompt": "Given the diffuse ST elevation with PR depression on the pinned EKG, the stable mild troponin, the hyperkalemia and anion-gap acidosis, and the small effusion on echo, what is your single most likely diagnosis? Name the test that best discriminates it from your top competitor, and state any residual uncertainty.",
+      "rubric": "Commits to acute pericarditis with myocardial involvement (myopericarditis), MOST LIKELY UREMIC given two missed dialysis sessions with hyperkalemia and high-anion-gap acidosis (8). Names the discriminator from ACS — diffuse (non-territorial) ST elevation with PR depression on the EKG plus a FLAT serial troponin (no rise/fall) and no new regional wall-motion abnormality on echo, rather than a dynamic ACS curve (5). Notes the small effusion without tamponade, and acknowledges residual uncertainty — overlapping viral/idiopathic or post-CABG (Dressler) etiology, and that a clearly dynamic troponin would still mandate ACS workup (3).",
+      "idealAnswer": "Acute pericarditis with myocardial involvement (myopericarditis), most likely UREMIC given two missed hemodialysis sessions with hyperkalemia (K 6.2) and a high-anion-gap metabolic acidosis (AG 22). The diffuse concave ST elevation with PR depression on the pinned pericarditis EKG, together with a FLAT (non-dynamic) serial troponin and no new regional wall-motion abnormality on echo, discriminate it from ACS/NSTEMI; the absence of RV diastolic collapse and IVC plethora confirms a small effusion WITHOUT tamponade. Residual uncertainty: a viral/idiopathic contribution from his recent URI or a post-cardiac-injury (Dressler) component from prior CABG cannot be fully excluded, and a clearly rising/falling troponin would still mandate an ischemic workup.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -274,76 +295,84 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH pericardial disease: NSAID (high-dose ibuprofen/ASA) (CANT-MISS,6); colchicine added to NSAID, reduces recurrence (CANT-MISS,6); PPI gastroprotection (2); activity restriction (2); echocardiogram to assess for effusion/tamponade (3); treat underlying cause (2). PENALTY: corticosteroids first-line (increase recurrence) (-3); anticoagulation with a pericardial effusion (-3).",
-      "idealAnswer": "High-dose NSAID (ibuprofen/aspirin) PLUS colchicine as first-line therapy, with a PPI for gastric protection. Activity restriction. Treat the underlying cause; avoid anticoagulation. Echocardiography to exclude effusion/tamponade. Reserve corticosteroids for refractory or specific etiologies.",
+      "prompt": "What is your management plan? Address how the uremic etiology and his renal failure change first-line therapy, and state your disposition — specifically whether this patient is safe for discharge.",
+      "rubric": "Per MGH pericardial / dialysis pericarditis: URGENT/INTENSIFIED hemodialysis as the definitive treatment of uremic pericarditis — arrange dialysis now (CANT-MISS, 7); treat the hyperkalemia (calcium gluconate to stabilize the membrane, insulin/dextrose, and dialysis) (CANT-MISS, 5); recognize that high-dose NSAIDs are RELATIVELY CONTRAINDICATED in ESRD/uremic pericarditis and that colchicine must be dose-reduced/often avoided in renal failure (core, 4); echocardiography and serial exams to watch for tamponade (core, 3); reconcile medications — STOP the recently started naproxen (core, 2); ADMIT — this patient is NOT safe for discharge: pericarditis with myocardial involvement + an effusion + uremia + hyperkalemia are high-risk features requiring inpatient dialysis and monitoring; safe-discharge planning only after dialysis, with nephrology follow-up and dialysis-adherence counseling (core, 3). PENALTY: discharging this high-risk patient (-4); high-dose NSAID/colchicine as if normal renal function (-3); corticosteroids first-line (-2).",
+      "idealAnswer": "The definitive treatment of UREMIC pericarditis is URGENT, INTENSIFIED hemodialysis — arrange dialysis now (he has missed two sessions). Treat the hyperkalemia in parallel: IV calcium gluconate to stabilize the myocardium, insulin with dextrose (and a beta-agonist) to shift potassium, and dialysis for definitive removal; recheck the potassium. Do NOT reach for high-dose NSAIDs — they are relatively contraindicated in ESRD/uremic pericarditis — and use colchicine cautiously or not at all because it requires dose reduction and accumulates in renal failure; reserve corticosteroids for refractory/specific etiologies. Reconcile his medications and STOP the recently started naproxen. Echocardiography and serial exams to monitor for tamponade. DISPOSITION: ADMIT — this patient is NOT safe for discharge. Pericarditis with myocardial involvement, a pericardial effusion, hyperkalemia, and uremia from missed dialysis are high-risk features that mandate inpatient dialysis and cardiac monitoring. Plan safe discharge only after dialysis and clinical improvement, with close nephrology/cardiology follow-up and counseling on dialysis adherence.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "NSAID (high-dose ibuprofen/ASA)",
-            "points": 6
+            "item": "Urgent/intensified hemodialysis as definitive treatment of uremic pericarditis",
+            "points": 7
           },
           {
-            "item": "Colchicine",
-            "points": 6
+            "item": "Treat hyperkalemia (calcium gluconate, insulin/dextrose, dialysis)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Echocardiogram for effusion/tamponade",
+            "item": "Recognizes NSAIDs relatively contraindicated and colchicine must be dose-reduced/avoided in renal failure",
+            "points": 4
+          },
+          {
+            "item": "Echocardiography and serial exams to monitor for tamponade",
             "points": 3
           },
           {
-            "item": "PPI gastroprotection",
+            "item": "Medication reconciliation — stop the recently started naproxen",
             "points": 2
           },
           {
-            "item": "Activity restriction",
-            "points": 2
-          },
-          {
-            "item": "Treat underlying cause",
-            "points": 2
+            "item": "Admit — NOT safe for discharge; high-risk features; safe-discharge planning only after dialysis with nephrology follow-up and adherence counseling",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Outpatient follow-up",
+            "item": "Treat underlying cause / address dialysis-adherence barriers",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Corticosteroids first-line",
+            "item": "Discharging this high-risk patient",
+            "points": -4
+          },
+          {
+            "item": "High-dose NSAID/colchicine as if normal renal function",
             "points": -3
           },
           {
-            "item": "Anticoagulation with effusion",
-            "points": -3
+            "item": "Corticosteroids first-line",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "NSAID (high-dose ibuprofen/ASA)",
-        "Colchicine"
+        "Urgent/intensified hemodialysis as definitive treatment of uremic pericarditis",
+        "Treat hyperkalemia (calcium gluconate, insulin/dextrose, dialysis)"
       ],
       "optionalActions": [
-        "Echocardiogram for effusion/tamponade",
-        "PPI gastroprotection",
-        "Activity restriction",
-        "Treat underlying cause",
-        "Outpatient follow-up"
+        "Recognizes NSAIDs relatively contraindicated and colchicine must be dose-reduced/avoided in renal failure",
+        "Echocardiography and serial exams to monitor for tamponade",
+        "Medication reconciliation — stop the recently started naproxen",
+        "Admit — NOT safe for discharge; high-risk features; safe-discharge planning only after dialysis with nephrology follow-up and adherence counseling",
+        "Treat underlying cause / address dialysis-adherence barriers"
       ],
       "unsafeActions": [
-        "Corticosteroids first-line",
-        "Anticoagulation with effusion"
+        "Discharging this high-risk patient",
+        "High-dose NSAID/colchicine as if normal renal function",
+        "Corticosteroids first-line"
       ],
-      "consults": [],
-      "disposition": "Usually outpatient; admit if high-risk features",
+      "consults": [
+        "Nephrology",
+        "Cardiology"
+      ],
+      "disposition": "Admit for inpatient dialysis and cardiac monitoring; not safe for discharge",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Pericardial Disease",
+        "section": "Pericardial Disease (Uremic Pericarditis)",
         "page": 34
       }
     }
@@ -352,34 +381,36 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
+      "litflStudyN": 32,
+      "integrated": true,
       "source": "https://litfl.com/pericarditis-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
-      "verify": "From the LITFL 'Pericarditis' library page - download a tracing matching: Diffuse concave-upward ST-segment elevation across multiple leads with PR-segmen ... self-host with credit to litfl.com.",
+      "findings": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; PR elevation / reciprocal change in aVR; Spodick's sign (down-sloping TP segment) may be present; sinus tachycardia.",
+      "verify": "From the LITFL 'Pericarditis' library page (ECG case 032) - download a tracing matching: diffuse concave-upward ST elevation with PR depression and reciprocal change in aVR; self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
+      "imageDescription": "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal change in aVR.",
       "searchTerms": [
-        "12-lead EKG Diffuse concave-upward ST-segment elevation"
+        "12-lead EKG diffuse concave ST elevation PR depression pericarditis"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 32-year-old man presents with sharp pleuritic chest pain that eases when leaning forward after a viral illness."
+      "clinicalVignette": "A 58-year-old man on hemodialysis who missed his last two sessions presents with sharp pleuritic chest pain that eases when leaning forward, with a friction rub on exam."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=pericardial%20effusion%20chest%20xray%20water%20bottle&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons - verify file license",
-      "findings": "Bilateral perihilar 'bat-wing' alveolar opacities, vascular redistribution, peribronchial cuffing.",
-      "verify": "Source a study matching: Bilateral perihilar 'bat-wing' alveolar opacities, vascular redistribution, peribronchial cuffing. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Enlarged, globular 'water-bottle' cardiac silhouette consistent with a pericardial effusion, with mild pulmonary vascular congestion and small pleural effusions from volume overload; no focal consolidation.",
+      "verify": "Source a study matching: enlarged globular 'water-bottle' cardiac silhouette with mild vascular congestion. Self-host with appropriate credit; do not reuse the prior tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing pulmonary edema bat wing",
+      "imageDescription": "chest radiograph showing enlarged globular water-bottle cardiac silhouette of a pericardial effusion with mild congestion",
       "searchTerms": [
-        "pulmonary edema chest x-ray",
-        "bat wing pulmonary oedema radiograph"
+        "pericardial effusion chest x-ray water bottle silhouette",
+        "globular cardiac silhouette pericardial effusion radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 70-year-old man presents with progressive breathlessness, orthopnea, and frothy pink sputum overnight."
+      "clinicalVignette": "A dialysis patient who missed sessions presents with pleuritic chest pain, mild dyspnea, and an enlarged globular cardiac silhouette on the chest film."
     }
   },
   "standardizedPatient": {
@@ -390,12 +421,14 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "dialysis_adherence",
+      "medication_adherence"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "30-year-old man, uncomfortable but not in severe distress, sitting leaning forward. Cooperative.",
+    "affect": "58-year-old man on dialysis, tired and mildly volume-overloaded, more comfortable leaning forward, worried the pain is his heart again. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal missed dialysis sessions, recent naproxen use, or non-adherence unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -432,6 +465,39 @@
       "hiddenUntilAsked": true
     },
     {
+      "id": "dialysis_adherence",
+      "category": "hpi",
+      "triggerConcepts": [
+        "dialysis schedule",
+        "when was your last dialysis",
+        "missed dialysis",
+        "did you go to dialysis",
+        "are you on dialysis",
+        "kidney treatment"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "any new medications",
+        "naproxen",
+        "painkillers",
+        "over the counter"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
       "id": "onset",
       "category": "hpi",
       "triggerConcepts": [
@@ -452,7 +518,10 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "where does it travel",
+        "does it move",
+        "compare to before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -478,7 +547,11 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "shortness of breath",
+        "swelling",
+        "nausea",
+        "fever"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -492,7 +565,24 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "lying down",
+        "leaning forward"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "recent_illness",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent illness",
+        "recent cold",
+        "viral illness",
+        "been sick",
+        "infection recently"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -505,20 +595,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "heart bypass",
+        "diabetes",
+        "kidney"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -531,7 +611,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "old angina"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -542,7 +623,7 @@
   "physicalExamMappings": [
     {
       "id": "auscultate_aortic_area_finding_1",
-      "finding": "Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward; normal S1/S2, no murmur.",
+      "finding": "Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward in end-expiration; normal S1/S2, no new murmur; PMI not displaced.",
       "revealedBy": [
         "auscultate_aortic_area",
         "auscultate_mitral_area"
@@ -553,17 +634,27 @@
     },
     {
       "id": "assess_jvp_finding_2",
-      "finding": "Neck: JVP normal, no pulsus paradoxus appreciated.",
+      "finding": "Neck/JVP: JVP mildly elevated (~9 cm); pulsus paradoxus borderline/normal (<10 mmHg), no clear tamponade physiology.",
       "revealedBy": [
         "assess_jvp"
       ],
       "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "JVP not elevated."
+      "points": 3,
+      "normalIfNotPresent": "JVP not clearly elevated."
     },
     {
-      "id": "assess_edema_finding_3",
-      "finding": "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.",
+      "id": "auscultate_posterior_lungs_finding_3",
+      "finding": "Lungs: a few bibasilar crackles consistent with mild volume overload; otherwise clear, no consolidation.",
+      "revealedBy": [
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear to auscultation."
+    },
+    {
+      "id": "assess_edema_finding_4",
+      "finding": "Extremities: mild-to-moderate bilateral pitting pedal edema (chronic, slightly worse); no unilateral swelling, no calf tenderness.",
       "revealedBy": [
         "assess_edema"
       ],
@@ -572,14 +663,14 @@
       "normalIfNotPresent": "No peripheral edema."
     },
     {
-      "id": "assess_calf_tenderness_finding_4",
-      "finding": "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.",
+      "id": "palpate_chest_wall_finding_5",
+      "finding": "Chest wall: NO reproducible tenderness over the sternum or costochondral joints; healed midline sternotomy scar.",
       "revealedBy": [
-        "assess_calf_tenderness"
+        "palpate_chest_wall"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No calf tenderness."
+      "normalIfNotPresent": "No chest-wall tenderness."
     }
   ],
   "overallScoring": {
@@ -592,13 +683,14 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute pericarditis",
-    "diagnosticFramework": "30M presents with 2 days of sharp central chest pain that is worse lying flat and better leaning forward, one week after a viral upper respiratory illness. The diagnosis is Acute pericarditis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58M with ESRD on hemodialysis (recently non-adherent — missed his last two sessions), type 2 diabetes, hypertension, and prior CABG presents with 3 days of sharp, positional, pleuritic chest pain better leaning forward, with a friction rub. The diagnosis is Acute pericarditis with myocardial involvement (myopericarditis), most likely UREMIC, on a background of hyperkalemia and a high-anion-gap metabolic acidosis from missed dialysis. It is reached by eliciting the focused history (including dialysis adherence and the recently started naproxen), performing the targeted exam, ordering electrolytes and serial troponins, interpreting a pericarditis EKG and a 'water-bottle' CXR, and excluding the must-not-miss alternatives (ACS/NSTEMI, PE, dissection) — then treating with urgent dialysis rather than the usual NSAID/colchicine because of his renal failure.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward; normal S1/S2, no murmur.",
-      "Neck: JVP normal, no pulsus paradoxus appreciated.",
-      "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender.",
-      "Extremities: no edema, no calf tenderness. Abdomen: soft, nontender."
+      "Cardiac: a three-component PERICARDIAL FRICTION RUB is audible at the left lower sternal border, best with the patient leaning forward in end-expiration; normal S1/S2, no new murmur; PMI not displaced.",
+      "Neck/JVP: JVP mildly elevated (~9 cm); pulsus paradoxus borderline/normal (<10 mmHg), no clear tamponade physiology.",
+      "Lungs: a few bibasilar crackles consistent with mild volume overload; otherwise clear, no consolidation.",
+      "Extremities: mild-to-moderate bilateral pitting pedal edema (chronic, slightly worse); no unilateral swelling, no calf tenderness.",
+      "Chest wall: NO reproducible tenderness over the sternum or costochondral joints; healed midline sternotomy scar."
     ],
     "keyDiagnosticFindings": [
       "CBC",
@@ -609,47 +701,50 @@
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute pericarditis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute pericarditis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including dialysis adherence, recent NSAID use, and the comparison to prior angina, only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the friction rub, JVP, and volume status.",
+      "Build a differential led by acute pericarditis (myopericarditis) while explicitly excluding ACS/NSTEMI, PE, and dissection, and name uremic vs viral/idiopathic vs post-injury etiologies.",
+      "Order electrolytes and serial troponins, choose echocardiography, and interpret the pericarditis EKG and the 'water-bottle' CXR.",
+      "Commit to uremic pericarditis and manage with urgent dialysis and hyperkalemia treatment — NOT high-dose NSAIDs/colchicine — and admit (not safe for discharge)."
     ],
     "commonPitfalls": [
-      "Corticosteroids first-line",
-      "Anticoagulation with effusion"
+      "Anchoring on simple viral pericarditis and missing the uremic/ACS picture",
+      "Reflexively giving high-dose NSAIDs or full-dose colchicine in renal failure",
+      "Discharging a high-risk dialysis patient with an effusion and hyperkalemia",
+      "Misreading the diffuse ST elevation as a STEMI and activating the cath lab"
     ],
     "managementPearls": [
-      "NSAID (high-dose ibuprofen/ASA)",
-      "Colchicine"
+      "Urgent/intensified hemodialysis as definitive treatment of uremic pericarditis",
+      "Treat hyperkalemia (calcium gluconate, insulin/dextrose, dialysis)"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "auscultate_aortic_area"
     ],
     "criticalWorkupItems": [
-      "EKG"
+      "EKG",
+      "BMP / electrolytes (hyperkalemia and acidosis after missed dialysis)"
     ],
     "criticalInterpretationItems": [
-      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
-      "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal change in aVR.",
+      "Enlarged globular ('water-bottle') cardiac silhouette consistent with a pericardial effusion, with mild congestion from volume overload."
     ],
     "criticalManagementItems": [
-      "NSAID (high-dose ibuprofen/ASA)",
-      "Colchicine"
+      "Urgent/intensified hemodialysis as definitive treatment of uremic pericarditis",
+      "Treat hyperkalemia (calcium gluconate, insulin/dextrose, dialysis)"
     ],
     "keyImageInterpretationFindings": [
-      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
-      "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal change in aVR.",
+      "Enlarged globular ('water-bottle') cardiac silhouette consistent with a pericardial effusion, with mild congestion from volume overload."
     ],
     "criticalImageInterpretationFindings": [
-      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal changes in aVR.",
-      "Pulmonary edema (bilateral alveolar opacities, vascular redistribution)."
+      "Diffuse concave-upward ST-segment elevation across multiple leads with PR-segment depression; reciprocal change in aVR.",
+      "Enlarged globular ('water-bottle') cardiac silhouette consistent with a pericardial effusion, with mild congestion from volume overload."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Diffuse (non-territorial) ST elevation with PR depression is pericarditis, not a STEMI — confirm with the clinical picture before activating the cath lab.",
+      "In a missed-dialysis patient, scrutinize the T waves for hyperkalemic peaking even when the dominant pattern is pericarditic.",
+      "An enlarged globular 'water-bottle' heart on CXR suggests a pericardial effusion; read every study systematically and state pertinent negatives."
     ]
   },
   "communicationScoring": {
@@ -660,11 +755,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's concern that this is his heart again",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks non-judgmentally about dialysis adherence and missed sessions",
         "points": 1
       },
       {
@@ -679,7 +774,7 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
+    "appliedOn": "2026-06-14",
     "imagePolicy": "pathology-forward standalone interpretation",
     "ekgReplaced": false,
     "cxrReplaced": true,

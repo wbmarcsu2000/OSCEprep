@@ -1,67 +1,70 @@
 {
   "id": "anemia-02",
   "category": "Anemia",
-  "difficulty": "moderate",
-  "title": "Dizziness with black tarry stools",
+  "difficulty": "hard",
+  "title": "Lightheadedness and melena in an anticoagulated drinker on NSAIDs",
   "diagnosis": "Acute upper GI bleed",
   "chart": {
-    "ageSex": "60M",
+    "ageSex": "66M",
     "cc": "Dizziness and black stools",
-    "oneLiner": "60M presents with lightheadedness, fatigue, and several days of black tarry stools; he takes daily NSAIDs and drinks alcohol regularly.",
+    "oneLiner": "66M with CAD (drug-eluting stent on aspirin + clopidogrel), atrial fibrillation on apixaban, HFpEF, and heavy daily alcohol use presents with several days of black tarry stools, fatigue, and near-syncope; he also takes daily over-the-counter ibuprofen for back pain.",
     "vitals": {
-      "BP": "104/66",
-      "HR": "110",
-      "RR": "18",
-      "Temp": "36.9°C",
-      "SpO2": "98% RA"
+      "BP": "98/62",
+      "HR": "118",
+      "RR": "20",
+      "Temp": "36.8°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I've been dizzy and worn out, and my stools have turned black.",
-  "patientFile": "PERSONA: 60-year-old man, pale, mildly tachycardic, fatigued. Good historian once asked.\n\nHPI: Several days of BLACK, TARRY stools (melena) and worsening fatigue/lightheadedness. Epigastric burning pain for weeks (only if asked). One episode of coffee-ground emesis (only if asked). Takes ibuprofen daily for back pain; drinks 4–5 beers most nights. NO bright red blood per rectum, NO weight loss mentioned.\nPMH: osteoarthritis, hypertension. MEDS: daily ibuprofen, occasional antacids. SOCIAL: regular alcohol, former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, fatigued, mild distress.\n- Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked.\n- Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).\n- STOOL (documented on chart/nursing): melena (black, tarry stool) — surfaced in the diagnostic results; no sensitive exam is required. Conjunctival pallor if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the NSAID/alcohol use, epigastric pain, or coffee-ground emesis unless asked about medications/alcohol, abdominal symptoms, or vomiting.\n- The melena finding is provided in the diagnostic results (stool evaluation) and does NOT require a student-performed sensitive exam.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've been so dizzy I almost passed out, and my stools have turned black and tarry.",
+  "patientFile": "PERSONA: 66-year-old man, pale and diaphoretic, mildly tachycardic, tired. Cooperative and a good historian once asked, but he downplays his drinking and his over-the-counter pill use.\n\nHPI: Several days of BLACK, TARRY stools (melena) with worsening fatigue and lightheadedness; nearly fainted standing up this morning. Weeks of EPIGASTRIC BURNING pain, worse on an empty stomach and after alcohol (only if asked about belly pain). Two episodes of COFFEE-GROUND emesis over the last day (only if asked about vomiting). NO bright red blood per rectum, NO hematemesis of fresh red blood, NO abdominal distension, NO confusion. He has NOT been vomiting repeatedly before the blood appeared (argues against a Mallory-Weiss precipitant). He has NO known liver disease and has never been told he has cirrhosis or varices.\nMEDICATIONS/SUBSTANCE (reveal only when asked the relevant question): Takes APIXABAN twice daily for atrial fibrillation; takes ASPIRIN and CLOPIDOGREL after a heart-stent two years ago; takes daily over-the-counter IBUPROFEN (often 600-800 mg several times a day) for chronic low-back pain and buys it himself, so it is 'not really a medication' to him. Started SERTRALINE (an SSRI) a few months ago for low mood. Uses occasional antacids. Drinks 5-6 beers most nights and more on weekends; has done so for years, but minimizes it ('just a few with the game'). Former smoker, quit 5 years ago.\nPMH: coronary artery disease with a drug-eluting stent (~2 years ago) on dual antiplatelet therapy; atrial fibrillation (CHA2DS2-VASc elevated) on apixaban; HFpEF with prior mild leg swelling; hypertension; osteoarthritis; he denies any diagnosis of liver disease. SOCIAL: heavy regular alcohol, former smoker, lives with his wife. FAMILY: father had a 'stomach ulcer'. ROS: as above; no chest pain at rest, no fever, no jaundice, no abdominal swelling, no leg swelling worse than baseline, no black-out with loss of awareness beyond the near-faint.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: pale, diaphoretic, fatigued, mild distress.\n- Vitals: BP 98/62, HR 118 (irregularly irregular), RR 20, 36.8C, SpO2 96% RA; significant orthostatic drop if checked.\n- HEENT: conjunctival pallor if examined; mucous membranes dry; NO scleral icterus.\n- Cardiac: irregularly irregular rhythm, tachycardic; no murmur radiation; no stigmata of endocarditis.\n- Abdomen: mild epigastric tenderness, NO rebound/guarding, NO distension; NO shifting dullness/ascites; liver edge not enlarged; NO splenomegaly; NO caput medusae or other stigmata of chronic liver disease.\n- Skin: NO spider angiomata, NO palmar erythema, NO jaundice (pertinent negatives against decompensated cirrhosis); no petechiae/purpura.\n- STOOL (documented on chart/nursing): melena (black, tarry stool) - surfaced in the diagnostic results; no sensitive exam is required.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the apixaban, aspirin/clopidogrel, ibuprofen, sertraline, the amount of alcohol, the epigastric pain, or the coffee-ground emesis unless asked about medications, blood thinners, over-the-counter pills, alcohol, abdominal symptoms, or vomiting. He considers the ibuprofen 'not a medication' and minimizes the alcohol until pressed.\n- The melena finding is provided in the diagnostic results (stool evaluation) and does NOT require a student-performed sensitive exam.\n- Reveal exam findings only when the relevant maneuver is performed; give the pertinent NEGATIVES (no ascites, no stigmata of liver disease) only when those exams are done.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "Hgb 8.0 (may be falsely reassuring early), MCV normal, Plt 250.",
-      "BMP": "BUN 44, Cr 1.0 — elevated BUN:Cr ratio supports an upper GI source.",
-      "Coags": "INR normal (not anticoagulated).",
-      "LFTs": "Normal (argues against variceal source from cirrhosis).",
-      "TypeCross": "Type and crossmatch sent.",
-      "StoolEvaluation": "Melena (black, tarry stool) is documented on the chart — consistent with an upper GI source. Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
+      "CBC": "Hgb 7.6 (down from a baseline of 13), MCV 78 (microcytic, suggesting chronic/iron-deficient blood loss superimposed on an acute bleed), Plt 240, WBC 9.0.",
+      "BMP": "BUN 52, Cr 1.6 (baseline 1.0) - an elevated BUN:Cr ratio (>30) supports an UPPER GI source AND there is a mild acute kidney injury from hypovolemia/pre-renal azotemia; Na 138, K 4.2, HCO3 19.",
+      "Coags": "INR 1.2, PTT 34 - NOT markedly coagulopathic; apixaban is a direct factor Xa inhibitor, so a near-normal INR does NOT exclude a meaningful drug effect (anti-Xa level pending). No spontaneous coagulopathy of liver disease.",
+      "LFTs": "AST 30, ALT 26, alk phos 78, total bilirubin 0.8, albumin 4.0 - essentially NORMAL synthetic function, arguing AGAINST cirrhosis/portal hypertension as the source despite the alcohol history.",
+      "Lactate": "Lactate 2.8 mmol/L (mildly elevated) - reflects hypoperfusion from blood loss, not yet shock; trend it with resuscitation.",
+      "TypeCross": "Type and crossmatch sent; 2 units pRBC ordered to bedside.",
+      "StoolEvaluation": "Melena (black, tarry stool) documented on the chart - consistent with an UPPER GI source. Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 2,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Right axis deviation, dominant R in V1, right atrial enlargement (peaked P).",
-      "verify": "Source a study matching: Right axis deviation, dominant R in V1, right atrial enlargement (peaked P). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Atrial fibrillation with a rapid ventricular response (~118 bpm): irregularly irregular QRS complexes, absent discrete P waves, fibrillatory baseline; no acute ST-elevation, no new ischemic ST-depression at this rate.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves) without acute ST-elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing right ventricular hypertrophy",
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response",
       "searchTerms": [
-        "right ventricular hypertrophy ECG",
-        "RVH dominant R V1"
+        "atrial fibrillation rapid ventricular response ECG",
+        "irregularly irregular no P waves ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 59-year-old man with longstanding lung disease presents with worsening breathlessness and leg swelling."
+      "clinicalVignette": "A 66-year-old man on apixaban for atrial fibrillation presents pale and tachycardic with melena and near-syncope."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=Kerley%20B%20lines%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Short horizontal peripheral septal (Kerley B) lines at the bases with mild interstitial prominence.",
-      "verify": "Source a study matching: Short horizontal peripheral septal (Kerley B) lines at the bases with mild interstitial prominence. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Mild interstitial prominence with short horizontal peripheral septal (Kerley B) lines at the bases and a borderline cardiac silhouette; no focal consolidation, no pneumothorax, no free air under the diaphragm.",
+      "verify": "Source a study matching: Kerley B lines at the bases with mild interstitial prominence (early interstitial pulmonary edema). Self-host with appropriate credit.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing Kerley B lines",
+      "imageDescription": "chest radiograph showing Kerley B lines / mild interstitial edema",
       "searchTerms": [
         "Kerley B lines chest x-ray",
-        "septal lines interstitial edema radiograph"
+        "septal lines interstitial pulmonary edema radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 65-year-old woman presents with worsening exertional dyspnea and a dry cough over several days."
+      "clinicalVignette": "A 66-year-old man with HFpEF has a chest film during resuscitation for a GI bleed; the bases show subtle septal lines."
     }
   },
   "revealKeys": [
@@ -69,10 +72,11 @@
     "BMP",
     "Coags",
     "LFTs",
+    "Lactate",
     "TypeCross",
+    "StoolEvaluation",
     "ekg",
-    "cxr",
-    "StoolEvaluation"
+    "cxr"
   ],
   "essential": [
     "CBC",
@@ -84,49 +88,58 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Acute upper GI bleed — peptic ulcer (leading & CANT-MISS,8). Variceal bleed (CANT-MISS,4). Gastritis/erosions (core,3). Malignancy (CANT-MISS to consider,3). Lower GI source (core,2). Connects melena + elevated BUN:Cr + NSAID/alcohol to an upper GI source (core,5).",
-      "idealAnswer": "Leading diagnosis: Acute upper GI bleed — peptic ulcer. Must-not-miss diagnoses to exclude: Variceal bleed; Malignancy. Also reasonable: Gastritis/erosions; Lower GI source.",
+      "prompt": "Based on your history and physical, list your differential for this melena (note your leading diagnosis). Then NAME THREE distinct mechanisms/etiologies by which THIS patient's medications and habits could be driving an upper GI bleed.",
+      "rubric": "Acute upper GI bleed — NSAID/antiplatelet-related PEPTIC ULCER (leading & CANT-MISS,6). Variceal bleed from occult alcoholic cirrhosis/portal hypertension — the genuine competitor that must be excluded because it changes management (CANT-MISS,5). Gastritis/erosions (core,2). Malignancy (CANT-MISS to consider,2). Mallory-Weiss / Dieulafoy / lower GI source (core,1). Names THREE mechanisms among: NSAID mucosal injury/ulcer, antiplatelet (ASA+clopidogrel) impaired clotting, apixaban anticoagulation, alcohol-induced gastritis/portal hypertension, SSRI-related platelet dysfunction (core, up to 6). Connects melena + BUN:Cr>30 + microcytosis + the drug list to an upper GI source (core,3). PENALTY: anchoring on a variceal bleed and missing the peptic/drug story, OR ignoring the anticoagulation as a driver (-3).",
+      "idealAnswer": "Leading diagnosis: Acute upper GI bleed — most likely an NSAID/antiplatelet-related PEPTIC ULCER. The single most important competitor to exclude is a VARICEAL bleed from occult alcoholic cirrhosis/portal hypertension, because it would change management (octreotide + ceftriaxone, different endoscopic therapy). Also consider gastritis/erosions, gastric malignancy, and a Mallory-Weiss tear or lower GI source. THREE mechanisms by which this patient's exposures drive the bleed: (1) daily NSAID (ibuprofen) causes direct gastric mucosal injury and peptic ulceration; (2) dual antiplatelet therapy (aspirin + clopidogrel) impairs platelet plug formation so any erosion bleeds more; (3) apixaban anticoagulation (a factor Xa inhibitor) prevents clotting at the bleeding site — with alcohol-related gastritis/portal hypertension and SSRI-related platelet dysfunction as further contributors. The melena, BUN:Cr >30, and microcytic anemia all point to a brisk upper GI source on a background of chronic slow loss.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute upper GI bleed — peptic ulcer",
-            "points": 8
+            "item": "Acute upper GI bleed — NSAID/antiplatelet peptic ulcer (leading)",
+            "points": 6
           },
           {
-            "item": "Variceal bleed",
-            "points": 4
+            "item": "Variceal bleed from occult alcoholic cirrhosis / portal hypertension (must exclude)",
+            "points": 5
           },
           {
-            "item": "Malignancy",
-            "points": 3
+            "item": "Gastric malignancy",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Gastritis/erosions",
-            "points": 3
-          },
-          {
-            "item": "Lower GI source",
+            "item": "Gastritis / erosions",
             "points": 2
           },
           {
-            "item": "Connects melena + elevated BUN:Cr + NSAID/alcohol to an upper GI source",
-            "points": 5
+            "item": "Mallory-Weiss / Dieulafoy / lower GI source",
+            "points": 1
+          },
+          {
+            "item": "Names three drug/habit mechanisms (NSAID, antiplatelet, anticoagulant, alcohol, SSRI)",
+            "points": 6
+          },
+          {
+            "item": "Connects melena + BUN:Cr>30 + microcytosis + drug list to an upper GI source",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on variceal bleed missing the peptic/drug story, or ignores anticoagulation as a driver",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Variceal bleed",
-        "Malignancy"
+        "Variceal bleed from occult alcoholic cirrhosis / portal hypertension",
+        "Gastric malignancy"
       ],
       "acceptableAlternatives": [
-        "Gastritis/erosions",
-        "Lower GI source"
+        "Gastritis / erosions",
+        "Mallory-Weiss / Dieulafoy / lower GI source"
       ]
     },
     {
@@ -134,9 +147,9 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want? (Include the bedside.)",
-      "rubric": "CBC (CANT-MISS,3). Recognizes GI bleeding and reviews the documented stool finding / melena (CANT-MISS,3). BMP — BUN:Cr (2). Coags (2). Type and crossmatch (3). LFTs to assess for variceal/liver cause (1). Risk score e.g. Glasgow-Blatchford (1). PENALTY: not resuscitating or omitting type & cross in active bleeding (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Coagulation studies; LFTs; Type & crossmatch; Stool studies.",
+      "prompt": "What initial workup do you want? Include the bedside, and say what you would order to settle the peptic-versus-variceal question and to characterize this patient's anticoagulation.",
+      "rubric": "CBC (CANT-MISS,3). Recognizes active GI bleeding and reviews the documented stool/melena (CANT-MISS,3). BMP for BUN:Cr and the AKI (2). Coags AND a drug-specific anti-Xa / apixaban level — INR alone does NOT capture a DOAC (2). Type & crossmatch (2). LFTs/albumin/INR to assess for cirrhosis/variceal source (1). Lactate to gauge hypoperfusion (1). Risk score (Glasgow-Blatchford) (1). PENALTY: not resuscitating or omitting type & cross in active bleeding (-2); checking only an INR and assuming the apixaban is irrelevant (-2).",
+      "idealAnswer": "Order: CBC; BMP (BUN:Cr and AKI); Coagulation studies INCLUDING a drug-specific anti-Xa / apixaban level (a normal INR does not exclude a meaningful DOAC effect); LFTs/albumin/INR to look for cirrhosis driving a variceal source; Lactate; Type & crossmatch with 2 units to bedside; EKG; CXR; and review the documented melena. Calculate a Glasgow-Blatchford score. Bedside: two large-bore IVs, place the patient on a monitor, recheck orthostatic vitals.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -151,34 +164,38 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "BMP (BUN:Cr, AKI)",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Coagulation studies",
-            "points": 2
-          },
-          {
-            "item": "LFTs",
+            "item": "Coags plus drug-specific anti-Xa / apixaban level",
             "points": 2
           },
           {
             "item": "Type & crossmatch",
             "points": 2
+          },
+          {
+            "item": "LFTs/albumin/INR to assess for cirrhosis/variceal source",
+            "points": 1
+          },
+          {
+            "item": "Lactate",
+            "points": 1
+          },
+          {
+            "item": "EKG and CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "not resuscitating or omitting type & cross in active bleeding",
+            "item": "Not resuscitating or omitting type & cross in active bleeding",
+            "points": -2
+          },
+          {
+            "item": "Checking only an INR and assuming the apixaban is irrelevant",
             "points": -2
           }
         ]
@@ -189,7 +206,8 @@
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "not resuscitating or omitting type & cross in active bleeding"
+        "Not resuscitating or omitting type & cross in active bleeding",
+        "Checking only an INR and assuming the apixaban is irrelevant"
       ],
       "orderSensitiveActions": []
     },
@@ -199,32 +217,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = right ventricular hypertrophy pattern. CREDIT: recognizes the RVH pattern (6); identifies right axis deviation with a dominant R in V1 (5); notes right atrial enlargement (peaked P) (2); systematic read (2). PENALTY: mistaking dominant R in V1 for posterior MI / calling it normal (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG, obtained on arrival. Describe your findings and say how they affect your management of this bleed.",
+      "rubric": "Findings = ATRIAL FIBRILLATION with a rapid ventricular response (~118 bpm): irregularly irregular, absent P waves, fibrillatory baseline; NO acute ST-elevation. CREDIT: identifies atrial fibrillation with RVR (6); notes the absence of acute ischemic ST changes at this rate (3); recognizes the tachycardia is partly DEMAND from anemia/hypovolemia so the priority is to treat the bleed and transfuse rather than aggressively rate-control or anticoagulate (4); systematic read (2). PENALTY: calling it sinus tachycardia or a primary arrhythmia needing cardioversion/anticoagulation while actively bleeding (-3).",
       "keyFindings": [
-        "right axis deviation with dominant R in V1",
-        "right atrial enlargement"
+        "atrial fibrillation with rapid ventricular response",
+        "no acute ischemic ST changes"
       ],
       "criticalFindings": [
-        "Right ventricular hypertrophy pattern."
+        "Atrial fibrillation with rapid ventricular response (~118 bpm), no acute ST-elevation."
       ],
       "commonMistakes": [
-        "mistaking dominant R in V1 for posterior MI or RBBB"
+        "calling the irregularly irregular rhythm sinus tachycardia",
+        "rate-controlling or anticoagulating an actively bleeding patient instead of treating hypovolemia"
       ],
-      "idealAnswer": "Right ventricular hypertrophy: right axis deviation, tall R in V1, signs of right atrial enlargement.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (~118 bpm): irregularly irregular QRS complexes, no discrete P waves, a fibrillatory baseline, and no acute ST-elevation. This is the patient's OWN arrhythmia — it explains why he is on apixaban (the anticoagulant that is worsening this bleed) and his elevated stroke risk. The fast rate here is largely a DEMAND response to anemia and hypovolemia, so the priority is to resuscitate and transfuse rather than to aggressively rate-control or anticoagulate; do not cardiovert or re-anticoagulate an actively bleeding patient.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Right ventricular hypertrophy pattern."
+          "Atrial fibrillation with rapid ventricular response (~118 bpm), no acute ST-elevation."
         ],
         "coreActions": [
-          "right axis deviation with dominant R in V1",
-          "right atrial enlargement"
+          "atrial fibrillation with rapid ventricular response",
+          "no acute ischemic ST changes",
+          "recognizes the tachycardia is demand from anemia/hypovolemia and resuscitation is the priority"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls it sinus tachycardia / treats as a primary arrhythmia needing cardioversion or anticoagulation while bleeding",
             "points": -3
           }
         ]
@@ -236,33 +256,33 @@
       "max": 10,
       "type": "read",
       "image": "cxr",
-      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = Kerley B lines (interstitial edema). CREDIT: identifies Kerley B lines — short horizontal peripheral septal lines at the bases (6); links the septal lines to interstitial fluid/edema (4). PENALTY: calling the study normal / missing the septal lines (-2).",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings and how they constrain your resuscitation.",
+      "rubric": "Findings = mild interstitial edema with Kerley B lines at the bases (early volume overload in a HFpEF patient); NO consolidation, NO free air. CREDIT: identifies Kerley B lines / mild interstitial edema (5); links the septal lines to interstitial fluid and recognizes that this HFpEF patient is prone to TACO/pulmonary edema, so transfuse cautiously with attention to volume (4); notes no free air/consolidation (1). PENALTY: calling the study normal / missing the septal lines, or ignoring the volume implication and over-resuscitating (-2).",
       "keyFindings": [
-        "identifies Kerley B lines",
-        "links septal lines to interstitial edema"
+        "Kerley B lines / mild interstitial edema",
+        "no consolidation or free air"
       ],
       "criticalFindings": [
-        "Kerley B lines (interstitial edema)."
+        "Kerley B lines (early interstitial pulmonary edema) in a HFpEF patient — transfuse cautiously to avoid TACO."
       ],
       "commonMistakes": [
-        "overlooking subtle septal lines",
-        "confusing them with fibrosis"
+        "overlooking subtle septal lines and calling the film normal",
+        "ignoring the volume-overload implication and over-resuscitating"
       ],
-      "idealAnswer": "Kerley B lines: short horizontal peripheral septal lines reflecting interstitial fluid.",
+      "idealAnswer": "Mild interstitial prominence with short horizontal peripheral septal (Kerley B) lines at the bases — early interstitial pulmonary edema — with no focal consolidation, no pneumothorax, and no free air under the diaphragm. In this HFpEF patient it signals that he is already volume-borderline, so resuscitate and transfuse CAUTIOUSLY (give blood/crystalloid in measured aliquots, watch for transfusion-associated circulatory overload, consider furosemide between units if he develops pulmonary edema) while still correcting the life-threatening anemia.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Kerley B lines (interstitial edema)."
+          "Kerley B lines (early interstitial pulmonary edema) in a HFpEF patient — transfuse cautiously to avoid TACO."
         ],
         "coreActions": [
-          "identifies Kerley B lines",
-          "links septal lines to interstitial edema"
+          "Kerley B lines / mild interstitial edema",
+          "links septal lines to interstitial fluid and tempers resuscitation to avoid overload"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the septal lines or over-resuscitates despite the edema",
             "points": -3
           }
         ]
@@ -272,9 +292,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Hgb 8.0 with elevated BUN:Cr and melena. What is your diagnosis and likely cause?",
-      "rubric": "Acute upper GI bleed, likely NSAID-related peptic ulcer (6). Cites melena + BUN:Cr + NSAID use; normal LFTs make a variceal source less likely (4).",
-      "idealAnswer": "Acute upper GI bleed, most likely an NSAID-related peptic ulcer. Supported by melena and an elevated BUN:Cr ratio in a daily NSAID user; normal LFTs make a variceal/cirrhotic source less likely.",
+      "prompt": "Hgb 7.6 (microcytic), BUN:Cr >30 with a new AKI, normal LFTs/albumin/INR, melena, atrial fibrillation on the EKG, and Kerley B lines on the film — in a heavy drinker on NSAIDs, DAPT, and apixaban. Commit to a diagnosis and likely source, name the ONE test that settles peptic-versus-variceal, and state the residual uncertainty.",
+      "rubric": "Acute upper GI bleed, most likely an NSAID/antiplatelet PEPTIC ULCER rather than a variceal bleed (6). Uses the discriminators: NORMAL LFTs/albumin/INR and NO exam stigmata of chronic liver disease argue against cirrhosis/varices despite the alcohol; integrates the AF/apixaban (anticoagulation worsening the bleed) and the Kerley B lines (limits resuscitation). Names UPPER ENDOSCOPY (EGD) as the test that both localizes the source and discriminates ulcer from varices, and states the residual uncertainty — occult cirrhosis/varices cannot be fully excluded until EGD, so cover empirically until then (4).",
+      "idealAnswer": "Acute upper GI bleed, most likely an NSAID/antiplatelet-related PEPTIC ULCER. Discriminators favoring a non-variceal source: normal LFTs, albumin, and INR with no exam stigmata of chronic liver disease make occult alcoholic cirrhosis/portal hypertension less likely despite the heavy drinking; the microcytic anemia and BUN:Cr >30 fit chronic-on-acute upper GI loss. The bleed is amplified by his anticoagulation (apixaban) and dual antiplatelet therapy, and the EKG confirms the atrial fibrillation that is the reason he is anticoagulated. The Kerley B lines warn that his HFpEF limits how fast I can resuscitate. The ONE test that settles peptic-versus-variceal AND localizes/treats the source is upper endoscopy (EGD). RESIDUAL UNCERTAINTY: a variceal source is not formally excluded until EGD, so I will keep variceal therapy (octreotide + ceftriaxone) on the table and not fully drop it until endoscopy proves an ulcer.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -287,70 +307,81 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH upper GI bleed: resuscitate – 2 large-bore IVs + crystalloid + type & screen (CANT-MISS,5); transfuse pRBC restrictive Hgb>7 (>8 if CAD) (CANT-MISS,5); IV PPI pantoprazole (4); GI consult for EGD <24 h (4); correct coagulopathy (plt>50, PCC for INR>2) (3); octreotide + ceftriaxone if cirrhosis (2). PENALTY: liberal/over-transfusion raising portal pressure (-2); transfusion threshold set too high (-2).",
-      "idealAnswer": "Resuscitate: 2 large-bore IVs, isotonic crystalloid, type & screen; transfuse pRBCs to a restrictive threshold (Hgb >7, or >8 if CAD). Correct coagulopathy (platelets >50k; PCC for INR >2; avoid FFP in cirrhosis). IV PPI (pantoprazole). If cirrhosis: octreotide + ceftriaxone prophylaxis. GI consult for EGD within 24 h. Hold/reverse anticoagulants.",
+      "prompt": "What is your management plan? Address resuscitation, his anticoagulation/antiplatelets, the competing variceal possibility, and — once he stabilizes — the DISPOSITION and safe-discharge plan (who admits, what gets reconciled, follow-up).",
+      "rubric": "Per MGH upper GI bleed: resuscitate — 2 large-bore IVs + measured crystalloid + type & cross, CAUTIOUS volume given HFpEF/Kerley B (CANT-MISS,5); transfuse pRBC to a RESTRICTIVE threshold Hgb>7 (>8 if active CAD/ischemia), watch for TACO (CANT-MISS,4); IV PPI infusion pantoprazole (3); HOLD aspirin/clopidogrel and apixaban; REVERSE apixaban (andexanet alfa or 4-factor PCC) given life-threatening bleeding (CANT-MISS,4); GI consult for urgent EGD <24h (3); EMPIRIC octreotide + ceftriaxone until a variceal source is excluded at EGD (2); safe discharge/disposition — admit (ICU if unstable), reconcile meds (stop the OTC NSAID, plan when/whether to restart DAPT and apixaban with cardiology, H. pylori testing/eradication, start oral PPI), counsel on alcohol cessation, arrange GI and PCP follow-up (3). PENALTY: liberal/over-transfusion precipitating pulmonary edema (-2); restarting/continuing anticoagulation or antiplatelets during active bleeding, or discharging without med reconciliation/follow-up (-3).",
+      "idealAnswer": "Resuscitate: two large-bore IVs, isotonic crystalloid in measured aliquots (his HFpEF and Kerley B lines mean cautious volume), type & cross with blood to bedside, continuous monitoring. Transfuse pRBCs to a RESTRICTIVE threshold (Hgb >7, or >8 given his active CAD), watching for transfusion-associated circulatory overload and giving furosemide between units if needed. Start an IV PPI infusion (pantoprazole). Address the bleeding diathesis: HOLD aspirin, clopidogrel, and apixaban, and REVERSE the apixaban for this life-threatening bleed (andexanet alfa, or 4-factor PCC if unavailable). Until a variceal source is excluded at endoscopy, cover EMPIRICALLY with octreotide and ceftriaxone. GI consult for urgent upper endoscopy within 24 hours (diagnostic and therapeutic). DISPOSITION / SAFE DISCHARGE once stabilized and scoped: admit (ICU if hemodynamically unstable or ongoing bleeding); medication reconciliation — STOP the over-the-counter NSAID permanently, test and treat for H. pylori, continue an oral PPI, and coordinate WITH cardiology the timing of restarting dual antiplatelet therapy and apixaban (balancing stent/stroke risk against rebleed); counsel on alcohol cessation with resources; arrange GI and primary-care follow-up and clear return precautions.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
+            "item": "Resuscitate (2 large-bore IVs, measured crystalloid, T&C) with cautious volume given HFpEF",
             "points": 5
           },
           {
-            "item": "Transfuse to restrictive threshold (Hgb>7)",
-            "points": 5
+            "item": "Transfuse to restrictive threshold (Hgb>7, >8 if CAD), watch for TACO",
+            "points": 4
+          },
+          {
+            "item": "Hold antiplatelets/anticoagulant and REVERSE apixaban (andexanet or 4-factor PCC)",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "IV PPI (pantoprazole)",
-            "points": 4
-          },
-          {
-            "item": "GI consult for EGD",
-            "points": 4
-          },
-          {
-            "item": "Correct coagulopathy",
+            "item": "IV PPI infusion (pantoprazole)",
             "points": 3
           },
           {
-            "item": "Octreotide + ceftriaxone if cirrhosis",
+            "item": "GI consult for urgent EGD <24h",
+            "points": 3
+          },
+          {
+            "item": "Empiric octreotide + ceftriaxone until variceal source excluded",
             "points": 2
+          },
+          {
+            "item": "Safe discharge/disposition: admit, med reconciliation (stop NSAID, H. pylori, restart DAPT/apixaban with cardiology), alcohol counseling, GI/PCP follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Hold/reverse anticoagulants",
+            "item": "Calculate a risk score (Glasgow-Blatchford) to guide disposition",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Over-transfusion",
+            "item": "Over-transfusion / liberal fluids precipitating pulmonary edema in HFpEF",
             "points": -2
+          },
+          {
+            "item": "Continuing/restarting anticoagulation or antiplatelets during active bleeding, or discharging without med reconciliation/follow-up",
+            "points": -3
           }
         ]
       },
       "requiredActions": [
-        "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-        "Transfuse to restrictive threshold (Hgb>7)"
+        "Resuscitate (2 large-bore IVs, measured crystalloid, T&C) with cautious volume given HFpEF",
+        "Transfuse to restrictive threshold (Hgb>7, >8 if CAD), watch for TACO",
+        "Hold antiplatelets/anticoagulant and REVERSE apixaban (andexanet or 4-factor PCC)"
       ],
       "optionalActions": [
-        "IV PPI (pantoprazole)",
-        "GI consult for EGD",
-        "Correct coagulopathy",
-        "Octreotide + ceftriaxone if cirrhosis",
-        "Hold/reverse anticoagulants"
+        "IV PPI infusion (pantoprazole)",
+        "GI consult for urgent EGD <24h",
+        "Empiric octreotide + ceftriaxone until variceal source excluded",
+        "Safe discharge/disposition: admit, med reconciliation (stop NSAID, H. pylori, restart DAPT/apixaban with cardiology), alcohol counseling, GI/PCP follow-up",
+        "Calculate a risk score (Glasgow-Blatchford) to guide disposition"
       ],
       "unsafeActions": [
-        "Over-transfusion"
+        "Over-transfusion / liberal fluids precipitating pulmonary edema in HFpEF",
+        "Continuing/restarting anticoagulation or antiplatelets during active bleeding, or discharging without med reconciliation/follow-up"
       ],
       "consults": [
-        "Gastroenterology"
+        "Gastroenterology",
+        "Cardiology"
       ],
-      "disposition": "Admit; ICU if unstable",
+      "disposition": "Admit; ICU if unstable or ongoing bleeding",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Upper GI Bleeding",
@@ -366,12 +397,14 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "otc_nsaid_use",
+      "anticoagulant_use"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "60-year-old man, pale, mildly tachycardic, fatigued. Good historian once asked.",
+    "communicationStyle": "answers directly but minimizes alcohol and does not consider over-the-counter ibuprofen a 'real' medication",
+    "affect": "66-year-old man, pale, diaphoretic, mildly tachycardic, fatigued. Good historian once asked, but downplays drinking and OTC pill use.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal alcohol amount, OTC ibuprofen, anticoagulant/antiplatelet use, or the SSRI unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -386,10 +419,49 @@
         "drinking",
         "how much do you drink",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "beer"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language; minimize until pressed.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "anticoagulant_antiplatelet_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "blood thinner",
+        "anticoagulant",
+        "apixaban",
+        "eliquos",
+        "eliquis",
+        "aspirin",
+        "clopidogrel",
+        "plavix",
+        "antiplatelet",
+        "stent medications"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "core",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "otc_nsaid_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "over the counter",
+        "ibuprofen",
+        "advil",
+        "motrin",
+        "nsaid",
+        "painkillers",
+        "anything for pain",
+        "anything you buy yourself"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; he considers it 'not a medication'.]",
+      "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -404,7 +476,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -428,7 +500,10 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "abdominal pain",
+        "belly pain",
+        "stomach pain"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -454,7 +529,13 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "vomiting",
+        "coffee ground",
+        "throwing up",
+        "blood in vomit",
+        "lightheaded",
+        "passed out"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -468,7 +549,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "empty stomach"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -481,7 +563,12 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "heart",
+        "stent",
+        "atrial fibrillation",
+        "liver disease",
+        "cirrhosis"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -494,7 +581,11 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "prescriptions",
+        "antidepressant",
+        "sertraline",
+        "ssri"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -507,7 +598,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "ulcer before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -517,18 +609,18 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "palpate_all_quadrants_finding_1",
-      "finding": "Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).",
+      "id": "obtain_orthostatic_vitals_finding_1",
+      "finding": "Vitals: BP 98/62, HR 118 (irregularly irregular), RR 20, 36.8C, SpO2 96% RA; significant orthostatic drop if checked.",
       "revealedBy": [
-        "palpate_all_quadrants"
+        "obtain_orthostatic_vitals"
       ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "No epigastric tenderness."
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic drop."
     },
     {
       "id": "inspect_conjunctiva_finding_2",
-      "finding": "HEENT: conjunctival pallor if examined.",
+      "finding": "HEENT: conjunctival pallor if examined; mucous membranes dry; no scleral icterus.",
       "revealedBy": [
         "inspect_conjunctiva"
       ],
@@ -537,14 +629,34 @@
       "normalIfNotPresent": "No conjunctival pallor."
     },
     {
-      "id": "obtain_orthostatic_vitals_finding_3",
-      "finding": "Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked.",
+      "id": "palpate_all_quadrants_finding_3",
+      "finding": "Abdomen: mild epigastric tenderness, no rebound/guarding, no distension; liver edge not enlarged; no splenomegaly.",
       "revealedBy": [
-        "obtain_orthostatic_vitals"
+        "palpate_all_quadrants"
       ],
-      "importance": "critical",
-      "points": 5,
-      "normalIfNotPresent": "No orthostatic drop."
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No epigastric tenderness."
+    },
+    {
+      "id": "inspect_skin_finding_4",
+      "finding": "Skin: no spider angiomata, no palmar erythema, no jaundice, no petechiae/purpura (pertinent negatives against decompensated chronic liver disease).",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No spider angiomata, palmar erythema, or jaundice."
+    },
+    {
+      "id": "assess_shifting_dullness_finding_5",
+      "finding": "Abdomen: no shifting dullness and no ascites; no caput medusae (argues against portal hypertension/cirrhosis).",
+      "revealedBy": [
+        "assess_shifting_dullness"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No shifting dullness / no ascites."
     }
   ],
   "overallScoring": {
@@ -557,35 +669,42 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute upper GI bleed",
-    "diagnosticFramework": "60M presents with lightheadedness, fatigue, and several days of black tarry stools; he takes daily NSAIDs and drinks alcohol regularly. The diagnosis is Acute upper GI bleed, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "66M with CAD on dual antiplatelet therapy, atrial fibrillation on apixaban, HFpEF, and heavy daily alcohol use presents with melena, microcytic anemia (Hgb 7.6), an elevated BUN:Cr with a new AKI, near-syncope, and orthostatic hypotension. The diagnosis is Acute upper GI bleed, most likely an NSAID/antiplatelet peptic ulcer; the genuine competing fork is a variceal bleed from occult alcoholic cirrhosis, resolved toward a non-variceal source by normal LFTs/albumin/INR and no exam stigmata of chronic liver disease, with upper endoscopy as the discriminating test. His own EKG shows atrial fibrillation (the reason he is anticoagulated) and the chest film shows Kerley B lines that temper resuscitation in his HFpEF. Management integrates restrictive transfusion, reversal of apixaban and holding antiplatelets, IV PPI, empiric variceal cover until EGD, and a safe-discharge plan with medication reconciliation and alcohol counseling.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: mild epigastric tenderness, no peritonism; no stigmata of chronic liver disease (or note if present).",
-      "HEENT: conjunctival pallor if examined.",
-      "Vitals: BP 104/66, HR 110, RR 18, 36.9°C, SpO2 98% RA; orthostatic if checked."
+      "Vitals: BP 98/62, HR 118 (irregularly irregular), RR 20, 36.8C, SpO2 96% RA; significant orthostatic drop if checked.",
+      "HEENT: conjunctival pallor if examined; mucous membranes dry; no scleral icterus.",
+      "Abdomen: mild epigastric tenderness, no rebound/guarding, no distension; liver edge not enlarged; no splenomegaly.",
+      "Skin: no spider angiomata, no palmar erythema, no jaundice, no petechiae/purpura (pertinent negatives against decompensated chronic liver disease).",
+      "Abdomen: no shifting dullness and no ascites; no caput medusae (argues against portal hypertension/cirrhosis)."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
       "Coags",
       "LFTs",
+      "Lactate",
       "TypeCross",
       "StoolEvaluation"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute upper GI bleed while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute upper GI bleed and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the unstable presentation from the chart and vitals (orthostatic, irregularly irregular tachycardia, near-syncope).",
+      "Elicit the focused history, including the minimized alcohol, the OTC NSAID, and the anticoagulant/antiplatelet load only on direct questioning.",
+      "Perform the targeted physical exam, eliciting orthostasis, pallor, and the pertinent NEGATIVES against chronic liver disease.",
+      "Build a differential led by an NSAID/antiplatelet peptic ulcer while keeping a variceal bleed as the must-not-miss competitor; name three drug/habit mechanisms.",
+      "Order a focused workup (including a drug-specific anti-Xa and LFTs to settle peptic-vs-variceal); read the patient's own AF on EKG and the Kerley B lines on CXR.",
+      "Commit to a non-variceal upper GI bleed with EGD as the discriminator; manage with cautious restrictive transfusion, apixaban reversal, holding antiplatelets, IV PPI, empiric variceal cover, and a safe-discharge/med-reconciliation plan with cardiology and GI follow-up."
     ],
     "commonPitfalls": [
-      "Over-transfusion"
+      "Anchoring on a variceal bleed because of the alcohol history and missing the peptic/drug story",
+      "Checking only an INR and assuming the apixaban is irrelevant",
+      "Over-transfusing and precipitating pulmonary edema in a HFpEF patient",
+      "Restarting or continuing anticoagulation/antiplatelets during active bleeding",
+      "Discharging without medication reconciliation, H. pylori testing, or follow-up"
     ],
     "managementPearls": [
-      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-      "Transfuse to restrictive threshold (Hgb>7)"
+      "Resuscitate with cautious volume and transfuse to a restrictive threshold, watching for TACO in HFpEF",
+      "Hold antiplatelets and reverse apixaban for a life-threatening bleed; cover empirically for varices until EGD"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
@@ -596,25 +715,25 @@
       "Recognizes GI bleeding and reviews the documented stool finding / melena"
     ],
     "criticalInterpretationItems": [
-      "Right ventricular hypertrophy pattern (right axis deviation, dominant R in V1, right atrial enlargement).",
-      "Kerley B lines (interstitial edema)."
+      "Atrial fibrillation with rapid ventricular response (~118 bpm), no acute ST-elevation — the patient's own arrhythmia and the reason for anticoagulation.",
+      "Kerley B lines (early interstitial pulmonary edema) in a HFpEF patient — transfuse cautiously to avoid TACO."
     ],
     "criticalManagementItems": [
-      "Resuscitate (2 large-bore IVs, crystalloid, T&S)",
-      "Transfuse to restrictive threshold (Hgb>7)"
+      "Resuscitate (2 large-bore IVs, measured crystalloid, T&C) with cautious volume given HFpEF",
+      "Hold antiplatelets/anticoagulant and REVERSE apixaban (andexanet or 4-factor PCC)"
     ],
     "keyImageInterpretationFindings": [
-      "Right ventricular hypertrophy pattern.",
-      "Kerley B lines (interstitial edema)."
+      "Atrial fibrillation with rapid ventricular response (~118 bpm), no acute ST-elevation.",
+      "Kerley B lines (early interstitial pulmonary edema) in a HFpEF patient — transfuse cautiously to avoid TACO."
     ],
     "criticalImageInterpretationFindings": [
-      "Right ventricular hypertrophy pattern.",
-      "Kerley B lines (interstitial edema)."
+      "Atrial fibrillation with rapid ventricular response (~118 bpm), no acute ST-elevation.",
+      "Kerley B lines (early interstitial pulmonary edema) in a HFpEF patient — transfuse cautiously to avoid TACO."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When the EKG is the patient's OWN study, name the rhythm and then reason about what it implies (here: AF explains the anticoagulation that is worsening the bleed).",
+      "A fast irregularly irregular rate in an anemic, hypovolemic patient is demand on top of AF — treat the bleed before the rhythm.",
+      "Subtle Kerley B lines change the resuscitation plan: correct the anemia but avoid circulatory overload."
     ]
   },
   "communicationScoring": {
@@ -629,7 +748,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions about alcohol and medications without judgment",
         "points": 1
       },
       {
@@ -644,8 +763,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG; pathology-forward CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

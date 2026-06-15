@@ -1,51 +1,55 @@
 {
   "id": "diarrhea-06",
   "category": "Diarrhea",
-  "difficulty": "moderate",
-  "title": "Two weeks of greasy, foul-smelling diarrhea and bloating",
+  "difficulty": "hard",
+  "title": "Three weeks of greasy, foul diarrhea and weight loss in a man with diabetes and hypothyroidism",
   "diagnosis": "Giardiasis",
   "chart": {
-    "ageSex": "34M",
-    "cc": "Prolonged diarrhea and bloating",
-    "oneLiner": "34M presents with about two weeks of greasy, foul-smelling diarrhea, bloating, excessive gas, cramps, and a few pounds of weight loss after a backcountry camping trip.",
+    "ageSex": "44M",
+    "cc": "Prolonged diarrhea, bloating, and weight loss",
+    "oneLiner": "44M with type 2 diabetes, hypothyroidism, and reflux (on metformin, levothyroxine, and a long-term PPI) presents with about three weeks of greasy, foul-smelling, floating diarrhea, marked bloating, sulfur burps, cramps, and roughly 10 lb of weight loss after a backcountry camping trip; he has felt weak and his recent labs show a rising TSH.",
     "vitals": {
-      "BP": "122/76",
-      "HR": "84",
-      "RR": "14",
-      "Temp": "37.0°C",
+      "BP": "118/74",
+      "HR": "88",
+      "RR": "16",
+      "Temp": "37.1°C",
       "SpO2": "99% RA"
     },
     "timer": 180
   },
-  "opening": "I've had this awful diarrhea for a couple of weeks now — it's really greasy and smells terrible, and I'm so bloated and gassy I can't get comfortable.",
-  "patientFile": "PERSONA: 34-year-old man, mildly tired but well-appearing, a bit thinner than usual. Good historian, slightly embarrassed about the gas and smell.\n\nHPI: About 2 weeks of loose, greasy, foul-smelling, sometimes floating stools (4–6x/day), with marked bloating, belching, sulfur-tasting ('rotten egg') burps, abdominal cramping, and a lot of flatulence. Reports roughly 3–4 lb (1.5 kg) of weight loss and reduced appetite. Symptoms are subacute and persistent (NOT acute and self-limited). Went on a week-long backcountry hiking/camping trip ~3 weeks ago and drank water from a mountain stream filtered only with a basic cloth, not boiled or treated (only if asked about travel/outdoor exposure/water source). No daycare contact but has a toddler nephew he sees often (only if asked about sick contacts/childcare). NO blood in stool, NO mucus, NO high fever, NO nocturnal diarrhea waking him, NO recent antibiotics, NO international travel, NO immunosuppression/HIV risk factors. Lactose intolerance has worsened — dairy now makes the bloating much worse (only if asked about diet/triggers).\nPMH: none significant. MEDS: none; no recent antibiotics; takes occasional ibuprofen for headaches. SOCIAL: drinks 2–3 beers on weekends; non-smoker; works in IT; monogamous, no high-risk sexual exposures. FAMILY: no IBD or celiac disease known.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: well-appearing, mildly fatigued, slightly thin; afebrile.\n- Vitals: BP 122/76, HR 84, RR 14, 37.0°C, SpO2 99% RA.\n- Mucous membranes: slightly dry but no severe dehydration.\n- Abdomen: soft, mildly distended/bloated with hyperactive bowel sounds and mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the camping trip or untreated stream water unless asked about travel, the outdoors, or water source/exposures.\n- Do NOT volunteer the toddler nephew unless asked about sick contacts or childcare exposure.\n- Do NOT volunteer the worsened dairy intolerance unless asked about diet or what makes symptoms worse.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had this awful greasy diarrhea for about three weeks now — it smells terrible, I'm bloated and gassy all the time, and I've lost almost ten pounds. Lately I just feel weak and washed out.",
+  "patientFile": "PERSONA: 44-year-old man, fatigued and a bit thinner than usual, mildly embarrassed about the gas and smell. Reasonable historian but worried because he keeps losing weight despite the doctor recently adjusting his thyroid pill.\n\nHPI: About 3 weeks of loose, greasy, pale, foul-smelling, frequently floating stools (4–7x/day), with marked bloating, belching, sulfur-tasting ('rotten egg') burps, crampy abdominal pain, and a lot of flatulence. Reports roughly 10 lb of weight loss and poor appetite. Symptoms are subacute and persistent (NOT acute and self-limited). Feels generally weak, with mild muscle cramps and palpitations over the last week (only mention the weakness/cramps/palpitations if asked about other symptoms, energy, or the heart). Went on a week-long backcountry fishing/camping trip ~4 weeks ago and drank water from a mountain stream filtered only with a basic pump filter, not boiled or chemically treated (only if asked about travel/outdoor exposure/water source). No daycare contact but helps care for a toddler granddaughter on weekends and changes her diapers (only if asked about sick contacts/childcare). NO blood in stool, NO mucus, NO high fever, NO nocturnal diarrhea waking him, NO recent antibiotics, NO international travel, NO known immunosuppression/HIV risk factors. Dairy now makes the bloating and gas much worse — milk and ice cream really set him off, more than before (only if asked about diet/triggers).\n\nPMH: Type 2 diabetes (~6 years, last A1c ~7.2%); hypothyroidism (Hashimoto's, on replacement for years); GERD with long-standing reflux. A primary-care visit two weeks ago checked labs and found his TSH had crept up, so his levothyroxine dose was increased, but he does not feel better. MEDS: metformin 1000 mg twice daily; levothyroxine 100 mcg daily (recently increased from 88 mcg); omeprazole 40 mg daily (on it for years for reflux); occasional ibuprofen for back pain. He often takes the levothyroxine WITH breakfast and his coffee (only mention timing if asked how he takes his thyroid pill). NO recent antibiotics. ALLERGIES: none. SOCIAL: drinks 3–4 beers on weekends; non-smoker; works as an electrician; monogamous, no high-risk sexual exposures. FAMILY: a sister has celiac disease (only if asked about family history of bowel disease/celiac). No known IBD.\n\nROS: as above — fatigue, weakness, mild muscle cramps, occasional palpitations; no chest pain, no syncope, no fevers/chills, no rashes, no joint pains, no melena/hematochezia.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: fatigued, slightly thin, mildly pale; afebrile, no acute distress.\n- Vitals: BP 118/74, HR 88, RR 16, 37.1°C, SpO2 99% RA.\n- Mucous membranes / skin: mucous membranes slightly dry; skin turgor mildly reduced; no severe dehydration.\n- Conjunctiva/palms: mild conjunctival pallor.\n- Abdomen: soft, mildly distended/bloated with hyperactive bowel sounds and mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly.\n- Neuro: mildly diminished vibration sense at the great toes; no focal deficit (reveal only if a neuro/sensory exam is done).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the camping trip or untreated stream water unless asked about travel, the outdoors, or water source/exposures.\n- Do NOT volunteer the toddler granddaughter unless asked about sick contacts or childcare exposure.\n- Do NOT volunteer the worsened dairy intolerance unless asked about diet or what makes symptoms worse.\n- Do NOT volunteer the family history of celiac unless asked about family bowel/celiac disease.\n- Do NOT volunteer the weakness, muscle cramps, or palpitations unless asked about energy/other symptoms or the heart.\n- Do NOT volunteer how/when you take the levothyroxine unless asked specifically about the thyroid medication or its timing.\n- Reveal exam findings only when the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "StoolOvaParasites": "Stool ova & parasites: Giardia lamblia trophozoites and cysts seen on microscopy (sensitivity improves with repeat sampling).",
-      "StoolGiardiaAntigen": "Stool Giardia antigen (EIA/immunoassay) POSITIVE — confirms giardiasis (more sensitive than single O&P).",
-      "StoolCultureAndPanel": "Routine bacterial stool culture NEGATIVE; multiplex GI pathogen panel positive for Giardia, negative for Salmonella/Shigella/Campylobacter/STEC.",
-      "FecalLeukocytesAndCdiff": "Fecal leukocytes ABSENT and fecal occult blood NEGATIVE (non-inflammatory diarrhea); C. difficile toxin NEGATIVE.",
-      "CBC": "WBC normal (no significant eosinophilia), Hgb 14.6, Plt 255 — no leukocytosis.",
-      "BMP": "Na 139, K 4.0, BUN 16, Cr 0.9 — mild dehydration only, normal renal function."
+      "StoolOvaParasites": "Stool ova & parasites: Giardia lamblia trophozoites and cysts seen on microscopy (sensitivity improves with repeat sampling; intermittent cyst shedding).",
+      "StoolGiardiaAntigen": "Stool Giardia antigen (EIA/immunoassay) POSITIVE — confirms giardiasis (more sensitive than a single O&P).",
+      "StoolCultureAndPanel": "Routine bacterial stool culture NEGATIVE; multiplex GI pathogen panel POSITIVE for Giardia, NEGATIVE for Salmonella/Shigella/Campylobacter/STEC/Cryptosporidium; fecal elastase normal (exocrine pancreatic function intact).",
+      "FecalLeukocytesAndCdiff": "Fecal leukocytes ABSENT and fecal occult blood NEGATIVE (non-inflammatory diarrhea); C. difficile toxin NEGATIVE; stool fat qualitatively increased (steatorrhea consistent with small-bowel malabsorption).",
+      "CBC": "WBC 6.8 (no eosinophilia), Hgb 11.4 with MCV 104 (macrocytic anemia), Plt 240 — no leukocytosis.",
+      "BMP": "Na 137, K 2.9 (low), Cl 110 (high), HCO3 17 (low), BUN 22, Cr 1.0, glucose 148. Anion gap = Na − (Cl + HCO3) = 137 − (110 + 17) = 10 → a NORMAL anion gap; this is a hypokalemic, hyperchloremic (NON-anion-gap) metabolic acidosis from GI bicarbonate and potassium losses.",
+      "MicronutrientPanel": "Vitamin B12 LOW at 165 pg/mL; 25-OH vitamin D LOW at 14 ng/mL; magnesium 1.5 (low-normal); albumin 3.4 — pattern of fat-soluble-vitamin and B12 malabsorption (long-term PPI and diarrhea both contribute to low B12).",
+      "ThyroidAndCeliac": "TSH 9.8 (HIGH) with low-normal free T4 despite a recent levothyroxine dose increase — under-replacement from impaired absorption. tTG-IgA mildly elevated at 24 U/mL (weak positive; total IgA normal) — a non-specific finding that can occur with giardiasis-related mucosal injury and must be re-checked after treatment."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 6,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Normal sinus rhythm at ~80 bpm; normal axis and intervals; no acute ischemic changes or chamber abnormality.",
-      "verify": "Source a study matching: Normal sinus rhythm at ~80 bpm; normal axis and intervals; no acute ischemic changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm ~88 bpm with flattened T waves, prominent U waves (best seen in V2–V3), mild ST depression, and a long apparent QU interval — the classic EKG signature of hypokalemia; no acute ischemia.",
+      "verify": "Source a study matching: sinus rhythm with flat T waves, prominent U waves, ST depression and long QU interval consistent with hypokalemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing normal sinus rhythm without acute changes",
+      "imageDescription": "12-lead showing flattened T waves with prominent U waves and ST depression consistent with hypokalemia",
       "searchTerms": [
-        "normal sinus rhythm ECG",
-        "normal 12-lead ECG"
+        "hypokalemia ECG U waves",
+        "U waves flat T waves hypokalemia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 28-year-old man with prolonged watery diarrhea and bloating after camping has a routine tracing before evaluation."
+      "clinicalVignette": "A 44-year-old man with three weeks of greasy malabsorptive diarrhea, weakness, and palpitations has an EKG obtained because of his electrolyte abnormalities."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -61,7 +65,7 @@
         "normal chest radiograph no acute process"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 32-year-old woman with chronic loose stools and mild abdominal discomfort has a screening film performed during her workup."
+      "clinicalVignette": "A 44-year-old man with chronic loose stools and weight loss has a screening film performed during his malabsorption workup."
     }
   },
   "revealKeys": [
@@ -71,62 +75,72 @@
     "FecalLeukocytesAndCdiff",
     "CBC",
     "BMP",
+    "MicronutrientPanel",
+    "ThyroidAndCeliac",
     "ekg",
     "cxr"
   ],
   "essential": [
     "StoolGiardiaAntigen",
     "StoolOvaParasites",
-    "FecalLeukocytesAndCdiff"
+    "FecalLeukocytesAndCdiff",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this prolonged diarrhea (note your leading diagnosis).",
-      "rubric": "Giardiasis / protozoal parasitic diarrhea after untreated water (leading,7). Inflammatory bowel disease — Crohn's/UC (CANT-MISS to exclude,4). Celiac disease / malabsorption (CANT-MISS to exclude,3). Other parasites (Cryptosporidium, Cyclospora, Entamoeba) (core,3). Post-infectious IBS / secondary lactose intolerance (core,3). Names a non-inflammatory malabsorptive diarrhea with water/outdoor exposure and the imperative to exclude IBD and celiac (core,5).",
-      "idealAnswer": "Leading diagnosis: Giardiasis (protozoal parasitic diarrhea after untreated stream water). Must-not-miss diagnoses to exclude: Inflammatory bowel disease (Crohn's/UC); Celiac disease/malabsorption. Also reasonable: other parasites (Cryptosporidium, Cyclospora, Entamoeba); post-infectious IBS or secondary lactose intolerance.",
+      "prompt": "Based on your history and physical, list your differential for this prolonged greasy diarrhea with weight loss (note your leading diagnosis). Also name three mechanisms by which a small-bowel process like this produces malabsorptive/steatorrheic diarrhea.",
+      "rubric": "Giardiasis / protozoal parasitic diarrhea after untreated water — leading (leading,6). Celiac disease / sprue — genuine competitor given malabsorption, macrocytosis, low B12/vitamin D, weakly positive tTG, and a sister with celiac (CANT-MISS,5). Inflammatory bowel disease — Crohn's (CANT-MISS,3). Other parasites (Cryptosporidium, Cyclospora) or small-intestinal bacterial overgrowth, and chronic pancreatic exocrine insufficiency (core,3). Three mechanisms of malabsorptive/steatorrheic diarrhea — e.g. mucosal villous injury/reduced absorptive surface, osmotic load from unabsorbed solute (incl. secondary lactase deficiency), and fat malabsorption from impaired micelle handling/luminal disruption (core,5). Frames a non-inflammatory malabsorptive small-bowel diarrhea and the need to exclude celiac and IBD (core,3). PENALTY: anchoring on giardiasis and ignoring celiac/malabsorption mimics (-3).",
+      "idealAnswer": "Leading diagnosis: Giardiasis (subacute non-inflammatory malabsorptive diarrhea after untreated stream water, with sulfur burps and floating stools). Genuine competing must-not-miss: Celiac disease — it produces the same malabsorptive picture (steatorrhea, weight loss, macrocytosis, low B12/vitamin D), he has a weakly positive tTG-IgA and a sister with celiac. Also must-not-miss: inflammatory bowel disease (Crohn's). Also reasonable: other parasites (Cryptosporidium, Cyclospora), small-intestinal bacterial overgrowth, chronic pancreatic exocrine insufficiency, and secondary lactose intolerance. Three mechanisms of malabsorptive/steatorrheic diarrhea: (1) mucosal villous injury reducing absorptive surface area; (2) an osmotic load from unabsorbed solute (including secondary lactase deficiency) drawing water into the lumen; (3) fat malabsorption from disrupted micelle formation/luminal digestion producing steatorrhea.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Giardiasis / protozoal parasitic diarrhea",
-            "points": 7
+            "item": "Giardiasis / protozoal parasitic diarrhea (leading)",
+            "points": 6
           },
           {
-            "item": "Inflammatory bowel disease (Crohn's/UC)",
-            "points": 4
+            "item": "Celiac disease / sprue as a genuine competing malabsorptive diagnosis",
+            "points": 5
           },
           {
-            "item": "Celiac disease / malabsorption",
+            "item": "Inflammatory bowel disease (Crohn's)",
             "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Other parasites (Cryptosporidium, Cyclospora, Entamoeba)",
+            "item": "Other parasites / SIBO / pancreatic exocrine insufficiency",
             "points": 3
           },
           {
-            "item": "Post-infectious IBS / secondary lactose intolerance",
-            "points": 3
-          },
-          {
-            "item": "Names a non-inflammatory malabsorptive diarrhea with water/outdoor exposure and the need to exclude IBD and celiac",
+            "item": "Names three mechanisms of malabsorptive/steatorrheic diarrhea (villous injury, osmotic load, fat malabsorption)",
             "points": 5
+          },
+          {
+            "item": "Frames a non-inflammatory malabsorptive small-bowel diarrhea needing celiac and IBD exclusion",
+            "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on giardiasis and ignores celiac/malabsorption mimics",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Inflammatory bowel disease (Crohn's/UC)",
-        "Celiac disease / malabsorption"
+        "Celiac disease / sprue",
+        "Inflammatory bowel disease (Crohn's)"
       ],
       "acceptableAlternatives": [
-        "Other parasites (Cryptosporidium, Cyclospora, Entamoeba)",
-        "Post-infectious IBS / secondary lactose intolerance"
+        "Other parasites (Cryptosporidium, Cyclospora)",
+        "Small-intestinal bacterial overgrowth (SIBO)",
+        "Chronic pancreatic exocrine insufficiency",
+        "Secondary lactose intolerance"
       ]
     },
     {
@@ -135,39 +149,39 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Stool Giardia antigen (EIA) and/or stool ova & parasites (CANT-MISS,5). Stool studies — culture and multiplex GI pathogen panel to exclude bacterial causes (3). Fecal leukocytes / occult blood and C. difficile toxin to characterize as non-inflammatory (2). CBC (1). BMP for hydration/electrolytes (2). Consider celiac serologies (tTG-IgA) if symptoms persist (1). Consider O&P x3 or repeat antigen given intermittent shedding (1). PENALTY: empiric broad-spectrum antibiotics or steroids before stool testing (-2).",
-      "idealAnswer": "Order: EKG; CXR; Stool ova & parasites; Stool Giardia antigen; Stool culture & pathogen panel; Fecal leukocytes & C. difficile; CBC; BMP.",
+      "rubric": "Stool Giardia antigen (EIA) and/or stool ova & parasites (CANT-MISS,4). BMP — he has weakness/palpitations and likely electrolyte losses; check K/HCO3/anion gap (CANT-MISS,3). Stool culture and multiplex GI pathogen panel +/- fecal elastase to exclude bacterial causes and pancreatic insufficiency (core,2). Fecal leukocytes/occult blood and C. difficile toxin to characterize as non-inflammatory (core,2). Celiac serology (tTG-IgA with total IgA) given the malabsorptive/macrocytic picture and family history (core,2). CBC and micronutrients — B12, vitamin D, magnesium — and TSH to explain macrocytosis, malabsorption, and the rising thyroid level (core,3). EKG given hypokalemia symptoms (core,2). CXR (core,1). PENALTY: empiric broad-spectrum antibiotics or steroids before stool testing (-2); CT/colonoscopy first-line before basic stool studies (-1).",
+      "idealAnswer": "Order: EKG (he has weakness/palpitations and likely hypokalemia); CXR; BMP (potassium, bicarbonate, anion gap); Stool ova & parasites; Stool Giardia antigen; Stool culture & multiplex pathogen panel with fecal elastase; Fecal leukocytes/occult blood & C. difficile; CBC; a micronutrient panel (B12, vitamin D, magnesium, albumin); TSH/free T4; and celiac serology (tTG-IgA with total IgA).",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Stool Giardia antigen (EIA) and/or stool ova & parasites",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "BMP for potassium/bicarbonate/anion gap",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "Stool culture and multiplex GI pathogen panel",
-            "points": 3
+            "item": "Stool culture and multiplex GI pathogen panel +/- fecal elastase",
+            "points": 2
           },
           {
             "item": "Fecal leukocytes/occult blood and C. difficile toxin",
             "points": 2
           },
           {
-            "item": "BMP for hydration/electrolytes",
-            "points": 2
-          },
-          {
-            "item": "CBC",
+            "item": "Celiac serology (tTG-IgA with total IgA)",
             "points": 1
           },
           {
-            "item": "EKG",
-            "points": 2
+            "item": "CBC, micronutrients (B12/vitamin D/magnesium) and TSH",
+            "points": 1
           },
           {
-            "item": "CXR",
+            "item": "EKG given hypokalemia symptoms",
             "points": 2
           }
         ],
@@ -177,7 +191,7 @@
             "points": 1
           },
           {
-            "item": "Celiac serologies (tTG-IgA) if symptoms persist",
+            "item": "CXR",
             "points": 1
           }
         ],
@@ -185,22 +199,27 @@
           {
             "item": "Empiric broad-spectrum antibiotics or steroids before stool testing",
             "points": -2
+          },
+          {
+            "item": "CT abdomen or colonoscopy first-line before basic stool studies",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
-        "Stool Giardia antigen (EIA) and/or stool ova & parasites"
+        "Stool Giardia antigen (EIA) and/or stool ova & parasites",
+        "BMP for potassium/bicarbonate/anion gap"
       ],
       "optionalTests": [
-        "Stool culture and multiplex GI pathogen panel",
+        "Stool culture and multiplex GI pathogen panel +/- fecal elastase",
         "Fecal leukocytes/occult blood and C. difficile toxin",
-        "BMP for hydration/electrolytes",
-        "CBC",
-        "Repeat O&P x3 or repeat antigen given intermittent cyst shedding",
-        "Celiac serologies (tTG-IgA) if symptoms persist"
+        "Celiac serology (tTG-IgA with total IgA)",
+        "CBC, micronutrients (B12/vitamin D/magnesium) and TSH",
+        "Repeat O&P x3 or repeat antigen given intermittent cyst shedding"
       ],
       "contraindicatedTests": [
-        "Empiric broad-spectrum antibiotics or steroids before stool testing"
+        "Empiric broad-spectrum antibiotics or steroids before stool testing",
+        "CT abdomen or colonoscopy first-line before basic stool studies"
       ],
       "orderSensitiveActions": [
         "Empiric broad-spectrum antibiotics or steroids before stool testing"
@@ -212,33 +231,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = normal sinus rhythm, no acute ischemia. CREDIT: rate & rhythm (7); no acute ischemic changes or electrolyte effect (5); systematic read (3). PENALTY: inventing pathology / over-calling ischemia (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG, obtained because of his weakness and palpitations. Describe your findings and tie them to his presentation.",
+      "rubric": "Findings = sinus rhythm with flattened/inverted T waves, PROMINENT U waves (esp. V2–V3), ST depression, and a long apparent QU interval — the hallmark of HYPOKALEMIA; recognizes this is his K of 2.9 from GI losses and confers arrhythmia risk. CREDIT: identifies U waves / flat T waves as the key abnormality (7); attributes them to hypokalemia from the diarrhea and links to K 2.9 / palpitations (5); systematic read with rate/rhythm and no acute ischemia (3). PENALTY: missing the U waves or calling the ST/T changes acute ischemia (-3); ignoring the electrolyte cause (-2).",
       "keyFindings": [
-        "normal sinus rhythm at ~80 bpm with normal axis and intervals",
-        "no acute ischemic changes; comments on absence of electrolyte effect"
+        "prominent U waves (especially V2–V3) with flattened T waves and ST depression",
+        "long apparent QU interval consistent with hypokalemia; no acute ischemia"
       ],
       "criticalFindings": [
-        "Normal sinus rhythm; no acute ischemic or electrolyte abnormality."
+        "Hypokalemic EKG: prominent U waves with flat T waves and ST depression from a potassium of 2.9 due to GI losses."
       ],
       "commonMistakes": [
-        "over-calling nonspecific changes as ischemia",
-        "failing to comment on electrolyte effects in a patient with GI losses"
+        "mistaking the U waves for part of the T wave and missing hypokalemia",
+        "over-calling the ST/T changes as acute ischemia",
+        "failing to connect the EKG to the diarrheal potassium losses"
       ],
-      "idealAnswer": "Normal sinus rhythm at ~80 bpm, normal axis and intervals, no acute ischemic changes; a useful baseline and screen for electrolyte effects given GI losses.",
+      "idealAnswer": "Sinus rhythm at ~88 bpm with flattened T waves, prominent U waves best seen in V2–V3, mild ST depression, and a long apparent QU interval — the classic EKG of hypokalemia, matching his measured potassium of 2.9 from GI (diarrheal) losses. This is not acute ischemia; the importance is that the hypokalemia (compounded by low-normal magnesium) raises his arrhythmia risk and must be repleted as part of management.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Normal sinus rhythm; no acute ischemic or electrolyte abnormality."
+          "Hypokalemic EKG: prominent U waves with flat T waves and ST depression from a potassium of 2.9 due to GI losses."
         ],
         "coreActions": [
-          "normal sinus rhythm at ~80 bpm with normal axis and intervals",
-          "no acute ischemic changes; comments on absence of electrolyte effect"
+          "prominent U waves (especially V2–V3) with flattened T waves and ST depression",
+          "long apparent QU interval consistent with hypokalemia; no acute ischemia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "invents pathology / over-calls ischemia",
+            "label": "misses U waves / over-calls ischemia / ignores the electrolyte cause",
             "points": -3
           }
         ]
@@ -251,7 +271,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield in this presentation and absence of free air (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = no acute process. CREDIT: identifies a normal film (6); notes low yield in this presentation and absence of free air (4). PENALTY: inventing pathology (-3).",
       "keyFindings": [
         "clear lungs, normal cardiomediastinal silhouette",
         "no free air under the diaphragm; low yield in this presentation"
@@ -263,7 +283,7 @@
         "inventing an infiltrate or effusion on a normal film",
         "ordering it reflexively without a clear indication"
       ],
-      "idealAnswer": "Normal chest film: clear lungs, normal cardiomediastinal silhouette, and no free air under the diaphragm; low yield in a non-toxic patient with diarrhea but reassuring against a surgical abdomen.",
+      "idealAnswer": "Normal chest film: clear lungs, normal cardiomediastinal silhouette, and no free air under the diaphragm; low yield in a non-toxic patient with chronic diarrhea but reassuring against a surgical abdomen.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -286,9 +306,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Stool shows a positive Giardia antigen with cysts/trophozoites on O&P, absent fecal leukocytes, no occult blood, negative bacterial culture, and negative C. difficile. What is your diagnosis and what did you rule out?",
-      "rubric": "Giardiasis (6). Cites the positive Giardia antigen/O&P with a non-inflammatory pattern (absent fecal leukocytes, no occult blood) and explicitly rules out bacterial gastroenteritis and inflammatory causes (IBD); notes celiac remains a consideration only if symptoms persist after treatment (4).",
-      "idealAnswer": "Giardiasis. Supported by the positive Giardia antigen and cysts/trophozoites on O&P with a non-inflammatory pattern (absent fecal leukocytes, no occult blood). This rules out bacterial gastroenteritis and inflammatory causes (IBD); celiac remains a consideration only if symptoms persist after treatment.",
+      "prompt": "Stool shows a positive Giardia antigen with cysts/trophozoites on O&P, absent fecal leukocytes, no occult blood, negative bacterial culture, and negative C. difficile. His BMP shows K 2.9 with a normal-anion-gap acidosis, his EKG shows U waves, his B12 and vitamin D are low, his TSH is up at 9.8, and his tTG-IgA is weakly positive (24) with a normal total IgA. Commit to a diagnosis, state how you discriminate it from celiac disease, and account for the other abnormalities.",
+      "rubric": "Commits to GIARDIASIS as the unifying diagnosis (positive antigen + cysts/trophozoites, non-inflammatory pattern, clear water exposure) (4). Discriminates from celiac: the directly positive parasite testing makes giardiasis the answer, while the weakly positive tTG and malabsorption can be SECONDARY to Giardia mucosal injury — so the discriminating test is to TREAT, then RE-CHECK tTG-IgA (and consider duodenal biopsy) only if symptoms or serology persist (3). Accounts for the multi-system findings as ONE malabsorptive process: hypokalemic non-anion-gap acidosis and U waves from GI losses, low B12/vitamin D and macrocytic anemia from small-bowel malabsorption (PPI compounds B12), and the rising TSH from impaired levothyroxine absorption (worsened by taking it with coffee) (3). Names residual uncertainty — celiac not fully excluded until post-treatment re-check (bonus).",
+      "idealAnswer": "Diagnosis: Giardiasis. The positive Giardia antigen plus cysts/trophozoites on O&P with a non-inflammatory pattern (absent fecal leukocytes, no occult blood, negative culture/C. difficile) and the untreated-stream-water exposure make this the unifying answer. Discriminating it from celiac: giardiasis itself causes small-bowel mucosal injury that produces malabsorption and can transiently raise tTG-IgA, so the weakly positive tTG (24, normal total IgA) is likely secondary — the discriminating step is to treat the Giardia and RE-CHECK tTG-IgA afterward, pursuing duodenal biopsy only if symptoms or serology persist. The other abnormalities are one malabsorptive story: the hypokalemic, normal-anion-gap (hyperchloremic) metabolic acidosis with U waves on EKG reflects GI potassium and bicarbonate losses; the low B12 and vitamin D with macrocytic anemia reflect small-bowel malabsorption (his long-term PPI compounds the low B12); and the rising TSH (9.8) despite a recent dose increase reflects impaired absorption of levothyroxine, worsened by taking it with coffee/breakfast. Residual uncertainty: celiac disease is not fully excluded until the post-treatment re-check.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -301,66 +321,81 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH diarrhea/parasitic infection: first-line anti-Giardia therapy — tinidazole single dose or metronidazole 5–7 days (nitazoxanide alternative) (CANT-MISS,7); oral rehydration and electrolyte repletion (4); counsel to avoid alcohol with metronidazole/tinidazole (disulfiram-like reaction) (3); treat transient lactose intolerance with temporary dairy avoidance (3); public health/exposure counseling — water treatment (boil/filter/treat), hand hygiene to prevent fecal-oral spread (3); arrange follow-up and re-treat or test for resistance if symptoms persist (2). PENALTY: empiric fluoroquinolone/antibacterial as if bacterial (-2); prescribing metronidazole/tinidazole without alcohol-avoidance counseling (-2).",
-      "idealAnswer": "Treat with anti-Giardia therapy: tinidazole 2 g single dose (or metronidazole 250 mg TID for 5–7 days; nitazoxanide is an alternative, especially in children). Provide oral rehydration and electrolyte repletion. Counsel strict alcohol avoidance during and for 3 days after metronidazole/tinidazole (disulfiram-like reaction). Advise temporary dairy avoidance for the transient post-Giardia lactose intolerance. Give exposure/public-health counseling: treat or boil backcountry water, good hand hygiene, and care around the toddler to prevent fecal-oral spread. Arrange follow-up; if symptoms persist, re-treat (consider an alternate agent for resistance) and reconsider celiac disease.",
+      "prompt": "What is your management plan, including treatment, the electrolyte/EKG issue, his other medications, and safe disposition with follow-up?",
+      "rubric": "Per MGH diarrhea/parasitic infection: first-line anti-Giardia therapy — tinidazole single dose or metronidazole 5–7 days (nitazoxanide alternative) (CANT-MISS,6); correct the hypokalemia and address the U waves — oral/IV potassium repletion AND replace magnesium (K will not correct with low Mg), with oral rehydration and bicarbonate/volume restoration (CANT-MISS,5); counsel strict alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction) (3); medication reconciliation — separate levothyroxine from coffee/food and re-check TSH after recovery, and recognize the long-term PPI's contribution to low B12 (3); repletion of B12 and vitamin D and temporary dairy avoidance for transient lactose intolerance (2); exposure/public-health counseling — water treatment (boil/filter/treat) and hand hygiene around the toddler (2); arrange SAFE DISCHARGE/disposition — outpatient management with close follow-up, return precautions for worsening weakness/palpitations, and a planned tTG-IgA re-check (and GI referral) if symptoms persist (CANT-MISS,4). PENALTY: empiric fluoroquinolone/antibacterial as if bacterial (-2); discharging without repleting potassium/magnesium in a symptomatic hypokalemic patient with U waves (-3); prescribing metronidazole/tinidazole without alcohol-avoidance counseling (-2).",
+      "idealAnswer": "Treat the Giardia: tinidazole 2 g single dose (or metronidazole 250 mg TID for 5–7 days; nitazoxanide is an alternative). Correct the electrolyte problem driving the U waves: replete potassium (oral, or IV if symptomatic) AND replace magnesium first/concurrently because hypokalemia will not correct while magnesium is low; give oral rehydration and restore volume/bicarbonate. Counsel strict alcohol avoidance during and for 3 days after metronidazole/tinidazole (disulfiram-like reaction). Reconcile his medications: have him take levothyroxine on an empty stomach separated from coffee/food and re-check TSH once he has recovered, and recognize that the long-term PPI plus malabsorption explains the low B12. Replete B12 and vitamin D, and advise temporary dairy avoidance for transient post-Giardia lactose intolerance. Give exposure/public-health counseling: treat or boil backcountry water, hand hygiene, and care around the toddler granddaughter to prevent fecal-oral spread. Disposition: safe for outpatient management with close follow-up; give clear return precautions for worsening weakness, palpitations, or syncope; recheck the potassium and arrange a post-treatment tTG-IgA re-check with GI referral (and duodenal biopsy) if diarrhea or serology persist.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Correct hypokalemia (potassium AND magnesium repletion) plus rehydration, addressing the U waves",
+            "points": 5
+          },
+          {
+            "item": "Arrange safe discharge/disposition: outpatient with close follow-up, return precautions, and post-treatment tTG-IgA re-check / GI referral if persistent",
+            "points": 4
           }
         ],
         "coreActions": [
-          {
-            "item": "Oral rehydration and electrolyte repletion",
-            "points": 4
-          },
           {
             "item": "Counsel alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction)",
             "points": 3
           },
           {
-            "item": "Temporary dairy avoidance for transient lactose intolerance",
+            "item": "Medication reconciliation — separate levothyroxine from coffee/food, re-check TSH; recognize PPI's role in low B12",
             "points": 3
           },
           {
-            "item": "Exposure/public-health counseling — water treatment and hand hygiene",
-            "points": 3
-          }
-        ],
-        "bonusActions": [
+            "item": "Replete B12/vitamin D and advise temporary dairy avoidance",
+            "points": 2
+          },
           {
-            "item": "Follow-up and re-treatment / resistance consideration if symptoms persist",
+            "item": "Exposure/public-health counseling — water treatment and hand hygiene",
             "points": 2
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Empiric antibacterial therapy as if bacterial gastroenteritis",
+            "points": -2
+          },
+          {
+            "item": "Discharging without repleting potassium/magnesium in a symptomatic hypokalemic patient with U waves",
+            "points": -3
+          },
+          {
+            "item": "Prescribing metronidazole/tinidazole without alcohol-avoidance counseling",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)"
+        "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)",
+        "Correct hypokalemia (potassium AND magnesium repletion) plus rehydration, addressing the U waves",
+        "Arrange safe discharge/disposition: outpatient with close follow-up, return precautions, and post-treatment tTG-IgA re-check / GI referral if persistent"
       ],
       "optionalActions": [
-        "Oral rehydration and electrolyte repletion",
         "Counsel alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction)",
-        "Temporary dairy avoidance for transient lactose intolerance",
-        "Exposure/public-health counseling — water treatment and hand hygiene",
-        "Follow-up and re-treatment / resistance consideration if symptoms persist"
+        "Medication reconciliation — separate levothyroxine from coffee/food, re-check TSH; recognize PPI's role in low B12",
+        "Replete B12/vitamin D and advise temporary dairy avoidance",
+        "Exposure/public-health counseling — water treatment and hand hygiene"
       ],
       "unsafeActions": [
-        "Empiric antibacterial therapy as if bacterial gastroenteritis"
+        "Empiric antibacterial therapy as if bacterial gastroenteritis",
+        "Discharging without repleting potassium/magnesium in a symptomatic hypokalemic patient with U waves"
       ],
-      "consults": [],
-      "disposition": "Outpatient",
+      "consults": [
+        "Gastroenterology (if symptoms or celiac serology persist after treatment)"
+      ],
+      "disposition": "Outpatient with close follow-up and return precautions",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Diarrhea (Parasitic / Giardiasis)",
+        "section": "Diarrhea (Parasitic / Giardiasis) and Electrolytes (Hypokalemia)",
         "page": 78
       }
     }
@@ -375,12 +410,13 @@
       "alcohol_use",
       "sexual_history"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information; slightly embarrassed about gas and odor",
-    "affect": "34-year-old man, mildly tired but well-appearing, slightly thin. Good historian, a bit embarrassed.",
+    "communicationStyle": "answers directly but does not volunteer extra information; slightly embarrassed about gas and odor; worried about ongoing weight loss",
+    "affect": "44-year-old man, fatigued and slightly thin, mildly pale. Reasonable historian, a bit embarrassed and discouraged.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer the camping/water exposure, family history of celiac, weakness/palpitations, or levothyroxine timing unless asked the relevant question",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -394,7 +430,7 @@
         "onset",
         "duration"
       ],
-      "response": "It's been going on for about two weeks now — it just won't quit.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -410,7 +446,7 @@
         "character of the diarrhea",
         "does it float"
       ],
-      "response": "It's loose and really greasy — kind of pale and it sometimes floats, and it smells absolutely terrible. There's no blood or slime in it, though.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -427,7 +463,7 @@
         "flatulence",
         "associated symptoms"
       ],
-      "response": "I'm hugely bloated and gassy, and I keep getting these awful burps that taste like rotten eggs or sulfur. The cramps come and go.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 3,
       "hiddenUntilAsked": false
@@ -445,9 +481,26 @@
         "untreated water",
         "where did you get your water"
       ],
-      "response": "I did a week-long backcountry camping trip about three weeks ago. I drank water straight from a mountain stream — I only ran it through a cloth, I didn't boil or treat it.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "weakness_palpitations",
+      "category": "ros",
+      "triggerConcepts": [
+        "energy",
+        "weakness",
+        "tired",
+        "muscle cramps",
+        "palpitations",
+        "heart racing",
+        "any other symptoms"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -460,7 +513,7 @@
         "children",
         "childcare exposure"
       ],
-      "response": "No daycare myself, but I babysit my toddler nephew a lot — I change his diapers sometimes. No one else has been sick that I know of.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -475,7 +528,21 @@
         "food triggers",
         "aggravating"
       ],
-      "response": "Dairy seems to make the bloating and gas way worse lately — milk and cheese really set me off, more than they used to.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_celiac",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "celiac in the family",
+        "bowel disease in family",
+        "any family illnesses"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -489,7 +556,7 @@
         "have you lost weight",
         "eating less"
       ],
-      "response": "I've lost maybe three or four pounds and I just don't feel that hungry.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": false
@@ -504,23 +571,27 @@
         "waking at night",
         "high fever"
       ],
-      "response": "No real fever, no blood in the stool, and it doesn't wake me up at night.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
     },
     {
-      "id": "medications",
+      "id": "medications_levothyroxine_timing",
       "category": "meds",
       "triggerConcepts": [
         "medications",
         "recent antibiotics",
         "what do you take",
-        "any new drugs"
+        "thyroid medication",
+        "how do you take your levothyroxine",
+        "when do you take your thyroid pill",
+        "ppi or omeprazole",
+        "metformin"
       ],
-      "response": "I don't take anything regular and I haven't had any antibiotics. Just the odd ibuprofen for a headache.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
-      "points": 1,
+      "points": 2,
       "hiddenUntilAsked": false
     },
     {
@@ -533,7 +604,7 @@
         "sexual history",
         "hiv risk"
       ],
-      "response": "I have two or three beers on the weekend. I'm in a monogamous relationship — no risky sexual stuff, and no reason to think I'd have HIV.",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": true
@@ -542,7 +613,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_general_appearance_finding_1",
-      "finding": "General: well-appearing, mildly fatigued, slightly thin; afebrile.",
+      "finding": "General: fatigued, slightly thin, mildly pale; afebrile, no acute distress.",
       "revealedBy": [
         "assess_general_appearance"
       ],
@@ -551,8 +622,19 @@
       "normalIfNotPresent": "Well-appearing, no distress."
     },
     {
-      "id": "assess_mucous_membranes_finding_2",
-      "finding": "Mucous membranes: slightly dry but no severe dehydration.",
+      "id": "inspect_conjunctiva_finding_2",
+      "finding": "Mild conjunctival pallor (consistent with anemia).",
+      "revealedBy": [
+        "inspect_conjunctiva",
+        "inspect_palms_and_soles"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Conjunctivae pink; no pallor."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_3",
+      "finding": "Mucous membranes slightly dry; skin turgor mildly reduced; no severe dehydration.",
       "revealedBy": [
         "assess_mucous_membranes",
         "assess_skin_turgor"
@@ -562,7 +644,7 @@
       "normalIfNotPresent": "Moist mucous membranes, well hydrated."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_3",
+      "id": "auscultate_bowel_sounds_finding_4",
       "finding": "Abdomen: hyperactive bowel sounds with mild distension/bloating.",
       "revealedBy": [
         "auscultate_bowel_sounds",
@@ -573,7 +655,7 @@
       "normalIfNotPresent": "Normal bowel sounds; abdomen flat."
     },
     {
-      "id": "palpate_all_quadrants_finding_4",
+      "id": "palpate_all_quadrants_finding_5",
       "finding": "Abdomen: soft with mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly.",
       "revealedBy": [
         "palpate_all_quadrants",
@@ -582,6 +664,17 @@
       "importance": "critical",
       "points": 5,
       "normalIfNotPresent": "Soft, non-tender, no peritoneal signs."
+    },
+    {
+      "id": "assess_sensation_finding_6",
+      "finding": "Neuro: mildly diminished vibration sense at the great toes (consistent with B12 deficiency); no focal deficit.",
+      "revealedBy": [
+        "assess_sensation",
+        "assess_reflexes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal sensation and reflexes."
     }
   ],
   "overallScoring": {
@@ -594,19 +687,22 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Giardiasis",
-    "diagnosticFramework": "34M presents with about two weeks of greasy, foul-smelling diarrhea, bloating, sulfur burps, cramps, and weight loss after a backcountry camping trip with untreated stream water. The diagnosis is Giardiasis, reached by eliciting the focused history (subacute non-inflammatory malabsorptive diarrhea with a clear water exposure), performing the targeted abdominal/hydration exam, and interpreting the directed stool workup while excluding the must-not-miss alternatives (IBD and celiac disease).",
+    "diagnosticFramework": "44M with type 2 diabetes, hypothyroidism, and chronic PPI use presents with about three weeks of greasy, foul-smelling, floating diarrhea, bloating, sulfur burps, cramps, and ~10 lb weight loss after a backcountry camping trip with untreated stream water. The diagnosis is Giardiasis, but it presents as a layered malabsorption syndrome: a competing celiac picture (steatorrhea, macrocytosis, low B12/vitamin D, weakly positive tTG, family history) that resolves toward giardiasis on direct stool testing, plus multi-system abnormalities — a hypokalemic non-anion-gap acidosis with U waves on his own EKG, micronutrient malabsorption, and a rising TSH from impaired levothyroxine absorption. It is reached by eliciting the focused exposure/medication history, the targeted exam, an integrated EKG read, and a directed stool/malabsorption workup while keeping celiac as a post-treatment re-check.",
     "keyHistoryClues": [
       "Subacute (>1 week) greasy, foul-smelling, floating stools without blood or mucus",
       "Marked bloating, flatulence, and sulfur/rotten-egg belching",
-      "Untreated mountain stream water on a backcountry trip ~3 weeks ago",
-      "Weight loss with new/worsened dairy (lactose) intolerance suggesting malabsorption",
-      "Absence of fever, blood, and nocturnal diarrhea"
+      "Untreated mountain stream water on a backcountry trip ~4 weeks ago",
+      "~10 lb weight loss with new/worsened dairy intolerance suggesting malabsorption",
+      "Weakness, muscle cramps, and palpitations (hypokalemia) and a rising TSH despite a recent levothyroxine increase",
+      "Family history of celiac and chronic PPI use as confounders"
     ],
     "keyPhysicalExamFindings": [
-      "General: well-appearing, mildly fatigued, slightly thin; afebrile.",
-      "Mucous membranes: slightly dry but no severe dehydration.",
+      "General: fatigued, slightly thin, mildly pale; afebrile.",
+      "Mild conjunctival pallor.",
+      "Mucous membranes slightly dry; skin turgor mildly reduced.",
       "Abdomen: hyperactive bowel sounds with mild distension/bloating.",
-      "Abdomen: soft with mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly."
+      "Abdomen: soft with mild diffuse tenderness; NO guarding, NO rebound, NO peritonism, NO organomegaly.",
+      "Neuro: mildly diminished vibration sense at the great toes."
     ],
     "keyDiagnosticFindings": [
       "StoolOvaParasites",
@@ -614,27 +710,31 @@
       "StoolCultureAndPanel",
       "FecalLeukocytesAndCdiff",
       "CBC",
-      "BMP"
+      "BMP",
+      "MicronutrientPanel",
+      "ThyroidAndCeliac"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including the water/outdoor exposure and dietary triggers only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal a soft, non-peritoneal, bloated abdomen and mild dehydration.",
-      "Build a differential led by Giardiasis while explicitly excluding must-not-miss causes (IBD and celiac disease).",
-      "Order a focused, order-sensitive workup (stool Giardia antigen/O&P, bacterial studies, fecal leukocytes) and interpret EKG/CXR and labs.",
-      "Commit to Giardiasis and manage with anti-Giardia therapy, rehydration, alcohol/dairy counseling, exposure prevention, and follow-up."
+      "Frame the presentation from the chart and vitals, noting the diabetes/hypothyroid/PPI comorbidities.",
+      "Elicit the focused history, including the water/outdoor exposure, dietary triggers, weakness/palpitations, family celiac history, and levothyroxine timing only on direct questioning.",
+      "Perform the targeted physical exam to reveal a soft, non-peritoneal, bloated abdomen, mild dehydration, pallor, and a B12-type sensory finding.",
+      "Build a differential led by Giardiasis with celiac disease as a genuine competing malabsorptive diagnosis, plus IBD, and name three mechanisms of malabsorptive diarrhea.",
+      "Order a focused workup (stool Giardia antigen/O&P, BMP, fecal markers, micronutrients, TSH, celiac serology) and read the patient's own EKG as integrated (hypokalemia with U waves).",
+      "Commit to Giardiasis, discriminate it from celiac (treat then re-check tTG), unify the multi-system labs, and manage with anti-Giardia therapy, potassium/magnesium repletion, medication reconciliation, exposure counseling, and safe outpatient disposition."
     ],
     "commonPitfalls": [
+      "Anchoring on giardiasis and ignoring the competing celiac/malabsorption picture",
       "Empiric antibacterial therapy as if bacterial gastroenteritis",
-      "Prescribing metronidazole/tinidazole without counseling alcohol avoidance (disulfiram-like reaction)",
+      "Missing the U waves on the EKG or failing to replete potassium AND magnesium",
+      "Prescribing metronidazole/tinidazole without counseling alcohol avoidance",
       "Sending a single O&P and stopping when negative despite intermittent cyst shedding",
-      "Missing the water/outdoor exposure history",
-      "Failing to consider celiac/IBD as persistent-symptom mimics"
+      "Over-reading the weakly positive tTG as definite celiac rather than re-checking after treatment"
     ],
     "managementPearls": [
       "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)",
-      "Counsel alcohol avoidance with metronidazole/tinidazole (disulfiram-like reaction)",
-      "Temporary dairy avoidance for transient post-Giardia lactose intolerance"
+      "Replete potassium AND magnesium — hypokalemia will not correct while magnesium is low",
+      "Separate levothyroxine from coffee/food and re-check TSH; recognize the PPI's role in low B12",
+      "Treat the Giardia, then re-check tTG-IgA before committing to celiac disease"
     ],
     "criticalHistoryItems": [
       "stool_character",
@@ -645,25 +745,28 @@
       "palpate_all_quadrants"
     ],
     "criticalWorkupItems": [
-      "Stool Giardia antigen (EIA) and/or stool ova & parasites"
+      "Stool Giardia antigen (EIA) and/or stool ova & parasites",
+      "BMP for potassium/bicarbonate/anion gap"
     ],
     "criticalInterpretationItems": [
-      "Normal sinus rhythm; no acute ischemic or electrolyte abnormality.",
-      "No acute cardiopulmonary process; no free air (low yield)."
+      "Hypokalemic EKG with prominent U waves and ST depression from GI potassium losses.",
+      "No acute cardiopulmonary process on CXR; no free air (low yield)."
     ],
     "criticalManagementItems": [
-      "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)"
+      "First-line anti-Giardia therapy (tinidazole/metronidazole; nitazoxanide alternative)",
+      "Correct hypokalemia (potassium AND magnesium repletion)",
+      "Arrange safe discharge/disposition with follow-up and post-treatment tTG-IgA re-check"
     ],
     "keyImageInterpretationFindings": [
-      "Normal sinus rhythm; no acute ischemic or electrolyte abnormality.",
+      "Hypokalemic EKG: prominent U waves with flat T waves and ST depression.",
       "No acute cardiopulmonary process; no free air."
     ],
     "criticalImageInterpretationFindings": [
-      "Normal sinus rhythm; no acute ischemic or electrolyte abnormality.",
+      "Hypokalemic EKG: prominent U waves with flat T waves and ST depression from a potassium of 2.9 due to GI losses.",
       "No acute cardiopulmonary process; no free air."
     ],
     "imageInterpretationPearls": [
-      "A normal study is an interpretation task in its own right — confirm it systematically and state its relevance.",
+      "When a diarrheal patient is weak with palpitations, look for the hypokalemia signature — flat T waves and prominent U waves — and tie it to the measured potassium.",
       "Read every study systematically before committing.",
       "State pertinent negatives, not just positives."
     ]
@@ -688,15 +791,15 @@
         "points": 1
       },
       {
-        "item": "Checks understanding and counsels on exposure prevention",
+        "item": "Checks understanding and counsels on exposure prevention and follow-up",
         "points": 1
       }
     ]
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

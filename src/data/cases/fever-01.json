@@ -1,138 +1,163 @@
 {
   "id": "fever-01",
   "category": "Fever",
-  "difficulty": "easy",
-  "title": "Fever with flank pain and dysuria",
+  "difficulty": "hard",
+  "title": "Fever and flank pain in an older diabetic woman with a new irregular pulse",
   "diagnosis": "Pyelonephritis",
   "chart": {
-    "ageSex": "35F",
-    "cc": "Fever and flank pain",
-    "oneLiner": "35F presents with 2 days of fever, chills, right flank pain, and urinary frequency and burning, with nausea and vomiting.",
+    "ageSex": "71F",
+    "cc": "Fever and right flank pain",
+    "oneLiner": "71F with type 2 diabetes, hypertension, CKD stage 3, and prior nephrolithiasis presents with 2 days of fevers, rigors, right flank pain, dysuria and frequency, with nausea and vomiting; her pulse is noted to be irregular and fast on arrival, and she takes lisinopril, hydrochlorothiazide, spironolactone, metformin, empagliflozin, and chronic ibuprofen for knee pain.",
     "vitals": {
-      "BP": "110/68",
-      "HR": "104",
-      "RR": "18",
-      "Temp": "38.9°C",
-      "SpO2": "98% RA"
+      "BP": "98/58",
+      "HR": "126",
+      "RR": "22",
+      "Temp": "39.2°C",
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "I've had a high fever and chills, pain in my back on the right, and it burns when I pee.",
-  "patientFile": "PERSONA: 35-year-old woman, febrile, uncomfortable. Good historian.\n\nHPI: 2 days of fever, rigors, right flank/back pain, urinary frequency, urgency, and dysuria; nausea with a couple episodes of vomiting. Started as lower urinary symptoms that ascended. NO vaginal discharge, NO recent instrumentation, NO known kidney stones (only if asked). Last menstrual period normal (if asked).\nPMH: prior uncomplicated UTIs. MEDS: none. SOCIAL: sexually active.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: febrile, mildly ill-appearing.\n- Vitals: BP 110/68, HR 104, RR 18, 38.9°C, SpO2 98% RA.\n- Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.\n- No peritonism. Cardiac/lungs: normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- CVA tenderness is revealed only if the back/flanks are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've had shaking chills and a high fever for two days, my right side and back are killing me, and it burns when I pass water. My heart's been racing too.",
+  "patientFile": "PERSONA: 71-year-old woman, febrile, tired and a bit short of breath, but able to give her own history. Mildly anxious about her racing heartbeat.\n\nHPI: 2 days of fevers up to 39-plus with hard shaking chills (rigors). Started 4-5 days ago as burning and frequency when passing water (lower urinary symptoms), then over the last 2 days the pain climbed up into the RIGHT side and back and she began the fevers and rigors. Nausea with 3-4 episodes of vomiting; not keeping much fluid or food down. Feels her heart pounding and irregular since yesterday; mildly more short of breath when walking to the bathroom. NO chest pain. NO cough, NO sputum, NO pleuritic pain. Has had kidney stones twice before and says THIS flank pain feels different from her old stone pain — it is a steady deep ache and soreness rather than the old come-and-go cramping waves (reveal the comparison only if asked how it compares to prior stones). She has not been able to take her usual morning pills for 2 days because of vomiting (reveal only if asked about medication adherence). Urinating less than usual over the past day (reveal only if asked about urine output).\nPMH: type 2 diabetes (~12 years, last A1c 8.6%); hypertension; chronic kidney disease stage 3 (baseline creatinine ~1.4 mg/dL, told this last clinic visit); recurrent calcium-oxalate kidney stones (2 prior, one needed a stent years ago); osteoarthritis of both knees; remote paroxysmal palpitations never worked up. NO known prior atrial fibrillation and NOT on any blood thinner.\nMEDS (reveal the list only when asked about medications; reveal individual drugs if asked specifically): lisinopril 20 mg daily; hydrochlorothiazide 25 mg daily; spironolactone 25 mg daily (added a few months ago for blood pressure); metformin 1000 mg twice daily; empagliflozin 10 mg daily (an SGLT2 \"sugar\" pill); ibuprofen 600 mg two to three times daily for chronic knee pain (takes it most days). No insulin. No anticoagulant, no aspirin. ALLERGIES: none.\nSOCIAL: retired teacher, widow, lives alone in a two-story house, no caregiver in the home, drives herself. Independent in daily activities at baseline. No tobacco, rare alcohol, no drugs.\nFAMILY: mother had diabetes and a stroke.\nROS: as above — fevers, rigors, flank pain, dysuria, frequency, nausea/vomiting, palpitations, mild exertional breathlessness, reduced urine output. NO vaginal discharge or bleeding. NO recent urinary instrumentation or catheter. NO diarrhea. NO confusion at baseline (oriented now). NO leg swelling that is new.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: febrile, flushed, ill-appearing and mildly short of breath but alert and oriented.\n- Vitals: BP 98/58, HR 126 and irregularly irregular, RR 22, 39.2 C, SpO2 96% RA.\n- Mucous membranes/skin: dry mucous membranes, reduced skin turgor (volume depleted).\n- Heart: irregularly irregular, tachycardic, no murmur; no raised JVP.\n- Abdomen: soft; RIGHT costovertebral angle (CVA) tenderness; mild suprapubic tenderness; no rebound, no guarding, no rigidity; bowel sounds present.\n- Lungs: clear, no crackles.\n- Legs: no edema, calves nontender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- CVA tenderness is revealed only if the back/flanks are examined; the irregular pulse and dry membranes are revealed only on the relevant exam.\n- Do NOT volunteer the medication list, the missed-doses/adherence detail, the reduced urine output, or the \"feels different from my old stones\" comparison unless the relevant question is asked.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "UA": "Cloudy; large leukocyte esterase, positive nitrites, many WBCs and bacteria; WBC casts.",
-      "UrineCulture": "Sent; pending (gram-negative rods likely).",
-      "CBC": "WBC 16.0 with left shift.",
-      "BMP": "Cr 1.0 — normal renal function.",
-      "Lactate": "1.7 — mildly elevated.",
-      "BloodCultures": "Drawn given systemic illness; pending.",
-      "Pregnancy": "Negative."
+      "UA": "Cloudy; large leukocyte esterase, positive nitrites, >50 WBC/hpf with WBC casts and many bacteria; trace ketones; glucose 3+ (expected on an SGLT2 inhibitor); no significant hematuria.",
+      "UrineCulture": "Sent before antibiotics; Gram stain shows gram-negative rods; culture pending.",
+      "BloodCultures": "Two sets drawn before antibiotics given systemic illness; pending.",
+      "CBC": "WBC 18.4 (10^9/L) with left shift and bandemia; Hgb 11.8; Plt 244.",
+      "BMP": "Na 134, K 5.6, Cl 99, HCO3 18, BUN 42, Cr 2.3 (baseline ~1.4 — acute-on-chronic kidney injury), glucose 268. Anion gap = Na - (Cl + HCO3) = 134 - (99 + 18) = 17 (elevated).",
+      "Lactate": "3.4 mmol/L — elevated, consistent with sepsis and hypoperfusion.",
+      "VBG": "pH 7.31, pCO2 33, HCO3 17 — mild metabolic acidosis with partial respiratory compensation.",
+      "betaHydroxybutyrate": "0.9 mmol/L — mildly elevated but NOT in the DKA range (rules against euglycemic/established DKA as the dominant process).",
+      "Troponin": "High-sensitivity troponin 38 ng/L then 41 ng/L (mildly elevated, near-flat trend) — demand-type, no dynamic rise.",
+      "Pregnancy": "Not applicable (post-menopausal); not sent."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Irregularly irregular rhythm, absent P waves, fibrillatory baseline; ventricular rate ~110.",
-      "verify": "Source a study matching: Irregularly irregular rhythm, absent P waves, fibrillatory baseline; ventricular rate ~110. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Atrial fibrillation with rapid ventricular response at ~125; irregularly irregular, absent organized P waves with a fibrillatory baseline; rate-related horizontal ST depression in the lateral leads (I, aVL, V5-V6) consistent with demand ischemia; no ST elevation.",
+      "verify": "Source a study matching: atrial fibrillation with rapid ventricular response, irregularly irregular, absent P waves, with rate-related lateral ST depression. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing atrial fibrillation with RVR",
+      "integrated": true,
+      "litflStudyN": 2,
+      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and lateral ST depression",
       "searchTerms": [
-        "atrial fibrillation 12 lead ECG",
-        "AF rapid ventricular response ECG"
+        "atrial fibrillation rapid ventricular response 12 lead ECG",
+        "AF with rate related ST depression ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 72-year-old woman presents with fever and flank pain, and her pulse feels irregular and rapid."
+      "clinicalVignette": "A 71-year-old febrile, volume-depleted woman with fever and flank pain has a fast, irregular pulse; this is HER tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "No consolidation (obtained to exclude pneumonia as the fever source).",
+      "findings": "Clear lung fields; no consolidation; no pulmonary edema; normal cardiomediastinal silhouette (obtained to exclude pneumonia and pulmonary edema as the fever/dyspnea source).",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "No consolidation (obtained to exclude pneumonia as the fever source).",
+      "imageDescription": "Clear lungs, no consolidation, no edema (obtained to exclude a pneumonic source and to assess the dyspnea).",
       "searchTerms": [
         "normal PA chest radiograph",
         "clear lung fields chest x-ray"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 68-year-old man with fever and dysuria has a film obtained to rule out a pneumonic source."
+      "clinicalVignette": "An older woman with fever, dysuria, and mild breathlessness has a film obtained to exclude a pneumonic source and pulmonary edema."
     }
   },
   "revealKeys": [
     "UA",
     "UrineCulture",
+    "BloodCultures",
     "CBC",
     "BMP",
     "Lactate",
-    "BloodCultures",
+    "VBG",
+    "betaHydroxybutyrate",
+    "Troponin",
     "Pregnancy",
     "ekg",
     "cxr"
   ],
   "essential": [
     "UA",
-    "CBC"
+    "CBC",
+    "BMP",
+    "Lactate",
+    "ekg"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Acute pyelonephritis (leading,8). Lower UTI / cystitis (core,3). Obstructing stone with infection (CANT-MISS,4). Pelvic inflammatory disease (core,3). Appendicitis (CANT-MISS to consider,2). Nephrolithiasis (core,2). Names pyelonephritis with supporting features — fever + CVA tenderness + pyuria (core,3).",
-      "idealAnswer": "Leading diagnosis: Acute pyelonephritis. Must-not-miss diagnoses to exclude: Obstructing stone with infection; Appendicitis. Also reasonable: Lower UTI / cystitis; Pelvic inflammatory disease; Nephrolithiasis.",
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis). This woman has had kidney stones before and her flank pain feels different this time — explicitly name THREE mechanisms or etiologies by which an upper urinary tract infection can become a complicated/obstructive emergency, and say what would change your urgency.",
+      "rubric": "Acute pyelonephritis (leading,6). Obstructing ureteral stone with superimposed infection / obstructive pyelonephritis-urosepsis — must-not-miss given stone history and a 'different' steady ache (CANT-MISS,5). Sepsis/septic shock from a urinary source (CANT-MISS,3). Emphysematous pyelonephritis or renal/perinephric abscess in a poorly controlled diabetic (CANT-MISS,2). Lower UTI / cystitis alone (core,1). Names three mechanisms of complicated/obstructive upper UTI — e.g. stone causing obstruction with pyonephrosis, diabetes causing gas-forming/emphysematous infection, structural abnormality/stent/instrumentation or immunocompromise (core,4). Names pyelonephritis with supporting features — fever + rigors + CVA tenderness + pyuria with WBC casts (core,2). PENALTY: anchoring on simple cystitis and missing obstruction/sepsis (-3); calling it 'just renal colic' and ignoring the infection (-2).",
+      "idealAnswer": "Leading diagnosis: Acute (complicated) pyelonephritis — fever, rigors, right CVA tenderness, and pyuria with WBC casts and nitrites in an older diabetic woman. Must-not-miss: an OBSTRUCTING ureteral stone with superimposed infection (obstructive pyelonephritis / pyonephrosis) given her stone history and a flank pain that feels different (steady ache rather than colicky waves) — this needs emergent decompression; sepsis/septic shock from a urinary source (she is hypotensive, tachycardic, lactate up); and emphysematous pyelonephritis or a renal/perinephric abscess in a poorly controlled diabetic. Three mechanisms by which an upper UTI becomes a complicated/obstructive emergency: (1) ureteral obstruction by a stone causing pyonephrosis and rising back-pressure; (2) gas-forming infection in a diabetic (emphysematous pyelonephritis); (3) an underlying structural/foreign-body or immunocompromised state (stent, prior instrumentation, immunosuppression). What changes urgency: hypotension/sepsis, evidence of obstruction on imaging, gas in the collecting system, or failure to improve — any of these mandates urgent imaging and source control/decompression rather than antibiotics alone.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute pyelonephritis",
-            "points": 8
+            "item": "Acute (complicated) pyelonephritis",
+            "points": 6
           },
           {
-            "item": "Obstructing stone with infection",
-            "points": 4
+            "item": "Obstructing ureteral stone with superimposed infection / obstructive pyelonephritis",
+            "points": 5
           },
           {
-            "item": "Appendicitis",
+            "item": "Sepsis / septic shock from a urinary source",
+            "points": 3
+          },
+          {
+            "item": "Emphysematous pyelonephritis or renal/perinephric abscess in a diabetic",
             "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Lower UTI / cystitis",
-            "points": 3
+            "item": "Lower UTI / cystitis alone",
+            "points": 1
           },
           {
-            "item": "Pelvic inflammatory disease",
-            "points": 3
+            "item": "Names three mechanisms of complicated/obstructive upper UTI (obstruction/pyonephrosis, gas-forming/diabetic, structural-foreign-body/immunocompromise)",
+            "points": 4
           },
           {
-            "item": "Nephrolithiasis",
+            "item": "Names pyelonephritis with supporting features — fever + rigors + CVA tenderness + pyuria with WBC casts",
             "points": 2
-          },
-          {
-            "item": "Names pyelonephritis with supporting features — fever + CVA tenderness + pyuria",
-            "points": 3
           }
         ],
-        "bonusActions": [],
-        "penalties": []
+        "bonusActions": [
+          {
+            "item": "Notes new atrial fibrillation as likely sepsis-triggered rather than a primary cardiac diagnosis",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Anchors on simple cystitis and misses obstruction/sepsis",
+            "points": -3
+          },
+          {
+            "item": "Calls it 'just renal colic' and ignores the infection",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
-        "Obstructing stone with infection",
-        "Appendicitis"
+        "Obstructing ureteral stone with superimposed infection / obstructive pyelonephritis",
+        "Sepsis / septic shock from a urinary source",
+        "Emphysematous pyelonephritis or renal/perinephric abscess in a diabetic"
       ],
       "acceptableAlternatives": [
-        "Lower UTI / cystitis",
-        "Pelvic inflammatory disease",
-        "Nephrolithiasis"
+        "Lower UTI / cystitis alone",
+        "Nephrolithiasis without infection"
       ]
     },
     {
@@ -141,70 +166,83 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "Urinalysis (CANT-MISS,4) and urine culture (3). CBC (2). BMP (1). Lactate (1). Blood cultures if systemically ill (2). Pregnancy test in a woman of childbearing age (1). Imaging (CT/US) if obstruction/stone suspected or not improving (1). PENALTY: shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; Urinalysis; Urine culture; CBC; BMP; Lactate; Blood cultures; Pregnancy.",
+      "rubric": "Urinalysis with microscopy (CANT-MISS,3) and urine culture + Gram stain BEFORE antibiotics (2). Blood cultures x2 before antibiotics in a septic patient (2). CBC (1). BMP to assess AKI/electrolytes (2). Lactate (1). VBG/anion gap given the diabetic on an SGLT2 inhibitor (1). EKG given the irregular tachycardia (1). CT abdomen/pelvis (non-contrast or per renal function) to look for obstructing stone/hydronephrosis/gas, given stone history and a 'different' pain (CANT-MISS,2). CXR to assess fever source and dyspnea (1). Beta-hydroxybutyrate/glucose given SGLT2 inhibitor and ketones on UA (bonus,1). PENALTY: starting empiric antibiotics BEFORE drawing cultures (-2); large IV contrast load without checking renal function (-1); shotgun panel with no reasoning (-2).",
+      "idealAnswer": "Order: Urinalysis with microscopy; urine culture and Gram stain; two sets of blood cultures BEFORE antibiotics; CBC; BMP (assess the AKI and potassium); Lactate; a VBG with anion gap (she is diabetic on an SGLT2 inhibitor, so check for euglycemic ketoacidosis); beta-hydroxybutyrate and glucose; high-sensitivity troponin given the new AF and demand on the heart; an EKG for the irregular tachycardia; a CXR for the fever source and dyspnea; and CT abdomen/pelvis (imaging of choice given prior stones and a flank pain that feels different) to exclude an obstructing stone, hydronephrosis, gas, or abscess — mind contrast load with her AKI.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Urinalysis",
-            "points": 4
+            "item": "Urinalysis with microscopy",
+            "points": 3
+          },
+          {
+            "item": "CT abdomen/pelvis to exclude obstructing stone/hydronephrosis/gas",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Urine culture",
-            "points": 3
-          },
-          {
-            "item": "CBC",
+            "item": "Urine culture and Gram stain before antibiotics",
             "points": 2
           },
           {
-            "item": "BMP",
+            "item": "Blood cultures x2 before antibiotics",
+            "points": 2
+          },
+          {
+            "item": "CBC",
             "points": 1
+          },
+          {
+            "item": "BMP to assess AKI/electrolytes",
+            "points": 2
           },
           {
             "item": "Lactate",
             "points": 1
           },
           {
-            "item": "Blood cultures if systemically ill",
-            "points": 2
-          },
-          {
-            "item": "Pregnancy test",
+            "item": "VBG / anion gap given SGLT2 inhibitor",
             "points": 1
           },
           {
-            "item": "Imaging (CT/US) if obstruction/stone suspected or not improving",
+            "item": "EKG and CXR",
             "points": 1
-          },
-          {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Beta-hydroxybutyrate / glucose and troponin given SGLT2 inhibitor and new AF",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "shotgun panel w/ no reasoning",
+            "item": "Starting empiric antibiotics before drawing cultures",
+            "points": -2
+          },
+          {
+            "item": "Large IV contrast load without checking renal function",
+            "points": -1
+          },
+          {
+            "item": "Shotgun panel with no reasoning",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Urinalysis"
+        "Urinalysis with microscopy",
+        "CT abdomen/pelvis to exclude obstructing stone/hydronephrosis/gas"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "shotgun panel w/ no reasoning"
+        "Starting empiric antibiotics before drawing cultures",
+        "Shotgun panel with no reasoning"
       ],
-      "orderSensitiveActions": []
+      "orderSensitiveActions": [
+        "Blood cultures x2 before antibiotics"
+      ]
     },
     {
       "id": "ekg_read",
@@ -212,33 +250,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = atrial fibrillation with rapid ventricular response. CREDIT: irregularly irregular rhythm (7); absence of organized P waves (5); systematic read with rate ~110 (3). PENALTY: calling it sinus / missing the AF (-3).",
+      "prompt": "Here is the patient's own 12-lead EKG, taken because her pulse was fast and irregular. Describe your findings and say what they mean for her management.",
+      "rubric": "Findings = atrial fibrillation with rapid ventricular response (~125), irregularly irregular with no organized P waves, AND rate-related horizontal ST depression in the lateral leads (I, aVL, V5-V6) reflecting demand ischemia, with NO ST elevation. CREDIT: identifies AF with RVR (6); recognizes the lateral ST depression as rate-related/demand rather than an acute coronary occlusion in the setting of sepsis (4); systematic read with rate ~125 and absent P waves (3). PENALTY: calling it sinus / missing the AF, OR calling the ST depression a STEMI-equivalent demanding immediate cath while she is septic and tachycardic (-3).",
       "keyFindings": [
-        "irregularly irregular rhythm",
-        "absence of organized P waves"
+        "irregularly irregular rhythm with no organized P waves",
+        "rate-related lateral ST depression (demand ischemia), no ST elevation"
       ],
       "criticalFindings": [
-        "Atrial fibrillation with rapid ventricular response."
+        "Atrial fibrillation with rapid ventricular response (~125) and rate-related lateral ST depression consistent with demand ischemia, not an acute coronary occlusion."
       ],
       "commonMistakes": [
         "calling it sinus when the rhythm is irregularly irregular",
-        "missing the absent P waves"
+        "over-calling the rate-related ST depression as an acute STEMI in a septic, very tachycardic patient"
       ],
-      "idealAnswer": "Atrial fibrillation with rapid ventricular response (rate ~110); irregularly irregular, no discernible P waves.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response at ~125: irregularly irregular, fibrillatory baseline, no discernible P waves. There is horizontal ST depression in the lateral leads (I, aVL, V5-V6) with no ST elevation — this is rate-related/demand ischemia driven by the tachycardia, sepsis, anemia, and volume depletion, not a primary acute coronary occlusion (supported by a mildly elevated but near-flat troponin). The priority is to treat the sepsis and the precipitants and control the rate, not to rush to the cath lab.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Atrial fibrillation with rapid ventricular response."
+          "Atrial fibrillation with rapid ventricular response (~125) and rate-related lateral ST depression consistent with demand ischemia, not an acute coronary occlusion."
         ],
         "coreActions": [
-          "irregularly irregular rhythm",
-          "absence of organized P waves"
+          "irregularly irregular rhythm with no organized P waves",
+          "rate-related lateral ST depression (demand ischemia), no ST elevation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal/sinus, OR over-calls the ST depression as an acute STEMI needing immediate cath in a septic patient",
             "points": -3
           }
         ]
@@ -251,23 +289,24 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = no consolidation. CREDIT: identifies a normal film (6); notes it excludes pneumonia as the fever source (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = clear lungs, no consolidation, no pulmonary edema, normal cardiomediastinal silhouette. CREDIT: identifies a normal film (6); notes it excludes pneumonia as the fever source AND argues against pulmonary edema as the cause of her mild dyspnea (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
-        "identifies a normal film",
-        "notes it excludes pneumonia as the fever source"
+        "clear lung fields, no consolidation",
+        "no pulmonary edema; excludes a pneumonic source for the fever and dyspnea"
       ],
       "criticalFindings": [
-        "No consolidation (obtained to exclude pneumonia as the fever source)."
+        "Clear film: no consolidation and no pulmonary edema (obtained to exclude pneumonia as the fever source and to assess the dyspnea)."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing an infiltrate on a clear film",
+        "attributing the dyspnea to the chest film when it is from sepsis/tachycardia"
       ],
-      "idealAnswer": "No consolidation (obtained to exclude pneumonia as the fever source).",
+      "idealAnswer": "Clear lung fields with no consolidation, no pulmonary edema, and a normal cardiomediastinal silhouette — this excludes pneumonia as the fever source and argues against pulmonary edema as the cause of her mild breathlessness, which is better explained by sepsis and the rapid AF.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: No consolidation (obtained to exclude pneumonia as the fever source).",
+            "item": "Recognizes: clear film, no consolidation and no pulmonary edema (excludes pneumonia and edema as causes).",
             "points": 6
           }
         ],
@@ -277,7 +316,7 @@
             "points": 6
           },
           {
-            "item": "notes it excludes pneumonia as the fever source",
+            "item": "notes it excludes pneumonia as the fever source and argues against pulmonary edema",
             "points": 4
           }
         ],
@@ -294,9 +333,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Pyuria with WBC casts, nitrites, leukocytosis, and CVA tenderness. What is your diagnosis?",
-      "rubric": "Acute pyelonephritis (6). Cites upper-tract features — CVA tenderness, systemic illness, WBC casts (4).",
-      "idealAnswer": "Acute pyelonephritis — supported by CVA tenderness, systemic illness, and pyuria with WBC casts and positive nitrites.",
+      "prompt": "Putting it together — pyuria with WBC casts and gram-negative rods, leukocytosis, acute-on-chronic kidney injury, an elevated anion gap, hyperkalemia, an elevated lactate, and new atrial fibrillation with rapid ventricular response on EKG. Commit to your diagnosis, name the single test that most changes management, and state the residual uncertainty you must still resolve.",
+      "rubric": "Acute complicated pyelonephritis with urosepsis in a diabetic, with multiple concurrent problems integrated rather than lumped: acute-on-chronic AKI (NSAID + ACE inhibitor + volume depletion on CKD), a sepsis/hypoperfusion lactic acidosis raising the anion gap (with a contribution from mild ketosis on the SGLT2 inhibitor but NOT DKA-range beta-hydroxybutyrate), hyperkalemia from AKI plus ACE inhibitor and spironolactone, and NEW sepsis-triggered AF with RVR causing demand ST changes (6). Names the discriminating test that most changes management — CT abdomen/pelvis to confirm or exclude an OBSTRUCTING stone/pyonephrosis (decompression vs antibiotics alone) (3). States residual uncertainty — whether the kidney is obstructed, whether the AF persists/needs anticoagulation once stabilized, and final culture/susceptibility (1).",
+      "idealAnswer": "Commit to acute COMPLICATED pyelonephritis with early urosepsis in a poorly controlled diabetic. The other lab abnormalities are concurrent, related problems rather than a single unifying diagnosis: acute-on-chronic kidney injury (chronic NSAID plus ACE inhibitor on a background of CKD, worsened by vomiting and sepsis); an elevated anion gap of 17 driven mainly by a sepsis/hypoperfusion lactic acidosis (lactate 3.4) with a minor contribution from mild ketosis on her SGLT2 inhibitor, but the beta-hydroxybutyrate of 0.9 is NOT DKA-range so this is not established DKA; hyperkalemia (K 5.6) from the AKI plus her ACE inhibitor and spironolactone; and NEW atrial fibrillation with rapid ventricular response that is sepsis/volume-depletion-triggered, producing rate-related demand ST depression rather than an acute coronary occlusion. The single test that most changes management is a CT abdomen/pelvis to confirm or exclude an OBSTRUCTING stone or pyonephrosis — obstruction mandates emergent decompression, not antibiotics alone. Residual uncertainty: whether the kidney is obstructed, whether the AF persists after the sepsis is treated (and the later need for anticoagulation once she is no longer bleeding/AKI risk), and the final urine/blood culture susceptibilities.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -309,89 +348,112 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH empiric antibiotics (pyelonephritis): urine + blood cultures before antibiotics (CANT-MISS,4); empiric IV antibiotics ceftriaxone (CANT-MISS,6); IV fluids (3); admit if septic/unable to tolerate PO/pregnant/complicated (3); de-escalate by culture, treat 7-14 d (3); imaging if obstruction/abscess suspected (2). PENALTY: nitrofurantoin/fosfomycin for pyelonephritis (no tissue levels) (-3); no cultures before antibiotics (-2).",
-      "idealAnswer": "Obtain blood and urine cultures, then empiric IV antibiotics – ceftriaxone (cover resistant GNR/enterococcus if complicated or prior resistance). IV fluids. Admit if unable to tolerate PO, septic, pregnant, or complicated; otherwise a fluoroquinolone may treat select outpatients. De-escalate per culture/susceptibility; treat 7–14 days. Image (CT) if obstruction/abscess suspected or not improving.",
+      "prompt": "What is your management plan? Address antibiotics, source control, the new rapid atrial fibrillation, her electrolyte and medication issues, and disposition — including whether this patient could ever be safely discharged and what she would need if so.",
+      "rubric": "Per MGH sepsis / pyelonephritis: cultures (urine + 2 blood sets) BEFORE antibiotics, then empiric broad-spectrum IV antibiotics — ceftriaxone, or piperacillin-tazobactam/carbapenem if risk for resistant organisms (CANT-MISS,5). Resuscitate sepsis with IV crystalloid and reassess perfusion/lactate (CANT-MISS,4). Urgent CT and emergent urology consult for decompression (ureteral stent or percutaneous nephrostomy) IF obstruction is found — source control (CANT-MISS,4). Manage hyperkalemia and HOLD the nephrotoxins/RAAS agents — stop ibuprofen, lisinopril, spironolactone, hydrochlorothiazide; hold metformin and empagliflozin (lactic acidosis / euglycemic DKA risk) (3). Rate-control the AF treating the underlying sepsis first; cautious agents given hypotension; do NOT reflexively anticoagulate while septic/AKI/possible procedure but document CHA2DS2-VASc for later (3). Admit — septic, hypotensive, AKI, hyperkalemia, vomiting, new AF; ICU/step-down if not improving (3). SAFE-DISCHARGE/disposition reasoning: she is NOT dischargeable now; outline what safe discharge would require — clinical and hemodynamic stability, tolerating oral intake and oral antibiotics, no obstruction (or decompressed), improving renal function and resolved hyperkalemia, controlled rate, a reconciled medication list, and close follow-up with arranged labs given she lives alone (3). PENALTY: discharging this septic/obstructed patient (-4); antibiotics before cultures (-2); nitrofurantoin/fosfomycin for pyelonephritis (no tissue levels) (-2); giving IV potassium or continuing the ACE inhibitor/spironolactone/NSAID (-2); aggressively cardioverting/anticoagulating a septic patient without addressing the cause (-2).",
+      "idealAnswer": "Obtain urine and two sets of blood cultures, THEN start empiric broad-spectrum IV antibiotics — ceftriaxone for uncomplicated cases, but given her diabetes, recent illness, and severity, piperacillin-tazobactam or a carbapenem is reasonable to cover resistant gram-negatives/enterococcus; de-escalate by culture and treat ~7-14 days. Resuscitate the sepsis with IV crystalloid (judicious given CKD) and reassess perfusion and lactate. Get the CT and consult urology emergently for decompression — ureteral stent or percutaneous nephrostomy — IF an obstructing stone/pyonephrosis is found; antibiotics alone will not treat an obstructed, infected kidney. Treat the hyperkalemia (K 5.6 with EKG already abnormal — calcium for membrane stabilization, insulin/dextrose, and address the cause) and STOP the nephrotoxins and RAAS agents: hold ibuprofen, lisinopril, spironolactone, and hydrochlorothiazide; hold metformin and empagliflozin (lactic acidosis and euglycemic-DKA risk in acute illness). For the new AF with RVR, treat the sepsis and volume depletion FIRST because that is the driver; use rate control cautiously given hypotension; do not reflexively cardiovert or anticoagulate a septic patient with AKI and a possible upcoming procedure, but calculate and document CHA2DS2-VASc for an anticoagulation decision once she is stable. Antipyretics/analgesia and antiemetics. Admit — she is septic, hypotensive, has AKI and hyperkalemia, cannot keep fluids down, and has new AF — with ICU/step-down if she does not improve. Disposition/safe-discharge: she is NOT safe for discharge now; safe discharge would later require hemodynamic and clinical stability, tolerating oral intake and a culture-directed oral antibiotic, no obstruction (or a decompressed/treated kidney), improving creatinine and resolved hyperkalemia, an acceptable controlled rate, a reconciled medication list (clear instructions on which home meds to resume or stop), and close follow-up with arranged repeat labs and support given that she lives alone with no caregiver.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Urine and blood cultures",
+            "item": "Cultures before empiric broad-spectrum IV antibiotics",
+            "points": 5
+          },
+          {
+            "item": "Resuscitate sepsis with IV fluids and reassess perfusion/lactate",
             "points": 4
           },
           {
-            "item": "Empiric IV antibiotics",
-            "points": 6
+            "item": "Emergent urology decompression (stent/nephrostomy) if obstruction found — source control",
+            "points": 4
           }
         ],
         "coreActions": [
           {
-            "item": "IV fluids",
+            "item": "Treat hyperkalemia and hold nephrotoxins/RAAS agents (ibuprofen, lisinopril, spironolactone, HCTZ) and hold metformin/empagliflozin",
             "points": 3
           },
           {
-            "item": "Admit if septic/complicated",
+            "item": "Rate-control AF by treating the underlying sepsis first; do not reflexively anticoagulate/cardiovert while septic",
             "points": 3
           },
           {
-            "item": "De-escalate by culture; 7-14 day course",
+            "item": "Admit (septic, hypotensive, AKI, hyperkalemia, new AF); escalate to ICU/step-down if not improving",
             "points": 3
           },
           {
-            "item": "Imaging if obstruction/abscess suspected",
-            "points": 2
+            "item": "Safe-discharge reasoning: not dischargeable now; states what safe discharge would require (stability, tolerating PO antibiotics, no obstruction, improved renal function/K, med reconciliation, close follow-up given she lives alone)",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Antipyretics/analgesia",
+            "item": "Antipyretics/analgesia and antiemetics; document CHA2DS2-VASc for later anticoagulation decision",
             "points": 1
           }
         ],
         "penalties": [
           {
+            "item": "Discharging this septic/possibly obstructed patient",
+            "points": -4
+          },
+          {
+            "item": "Antibiotics before cultures",
+            "points": -2
+          },
+          {
             "item": "Nitrofurantoin/fosfomycin for pyelonephritis",
-            "points": -3
+            "points": -2
+          },
+          {
+            "item": "Giving IV potassium or continuing ACE inhibitor/spironolactone/NSAID",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Urine and blood cultures",
-        "Empiric IV antibiotics"
+        "Cultures before empiric broad-spectrum IV antibiotics",
+        "Resuscitate sepsis with IV fluids and reassess perfusion/lactate",
+        "Emergent urology decompression (stent/nephrostomy) if obstruction found — source control"
       ],
       "optionalActions": [
-        "IV fluids",
-        "Admit if septic/complicated",
-        "De-escalate by culture; 7-14 day course",
-        "Imaging if obstruction/abscess suspected",
-        "Antipyretics/analgesia"
+        "Treat hyperkalemia and hold nephrotoxins/RAAS agents (ibuprofen, lisinopril, spironolactone, HCTZ) and hold metformin/empagliflozin",
+        "Rate-control AF by treating the underlying sepsis first; do not reflexively anticoagulate/cardiovert while septic",
+        "Admit (septic, hypotensive, AKI, hyperkalemia, new AF); escalate to ICU/step-down if not improving",
+        "Safe-discharge reasoning: not dischargeable now; states what safe discharge would require",
+        "Antipyretics/analgesia and antiemetics; document CHA2DS2-VASc for later anticoagulation decision"
       ],
       "unsafeActions": [
-        "Nitrofurantoin/fosfomycin for pyelonephritis"
+        "Discharging this septic/possibly obstructed patient",
+        "Antibiotics before cultures",
+        "Nitrofurantoin/fosfomycin for pyelonephritis",
+        "Giving IV potassium or continuing ACE inhibitor/spironolactone/NSAID"
       ],
-      "consults": [],
-      "disposition": "Admit if complicated; else treat outpatient",
+      "consults": [
+        "Urology",
+        "Cardiology (if AF does not settle with sepsis treatment)"
+      ],
+      "disposition": "Admit (ICU/step-down if not improving); not safe for discharge until stable, tolerating PO antibiotics, unobstructed, K and renal function improving, with med reconciliation and close follow-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
-        "section": "Empiric Antibiotics & Antibiogram (Pyelonephritis)",
+        "section": "Empiric Antibiotics & Antibiogram (Pyelonephritis / Urosepsis)",
         "page": 113
       }
     }
   ],
   "standardizedPatient": {
     "demeanor": "uncomfortable",
-    "emotionalState": "concerned",
+    "emotionalState": "anxious",
     "healthLiteracy": "average",
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "sexual_history",
-      "pregnancy_possibility"
+      "medication_adherence",
+      "living_situation"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "35-year-old woman, febrile, uncomfortable. Good historian.",
+    "communicationStyle": "answers directly but does not volunteer the medication list, missed doses, reduced urine output, or how the pain compares to prior stones unless asked",
+    "affect": "71-year-old woman, febrile, ill-appearing and mildly short of breath, anxious about her racing heart. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal the full medication list, missed doses, reduced urine output, or the 'feels different from my old stones' comparison unless the relevant question is asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -399,14 +461,14 @@
   },
   "historyTriggers": [
     {
-      "id": "sexual_history",
-      "category": "sexual_history",
+      "id": "medication_adherence",
+      "category": "meds",
       "triggerConcepts": [
-        "sexual history",
-        "sexually active",
-        "new partners",
-        "protection",
-        "tattoo"
+        "medication adherence",
+        "have you been taking your pills",
+        "missed doses",
+        "able to keep medications down",
+        "stopped any medications"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -414,17 +476,31 @@
       "hiddenUntilAsked": true
     },
     {
-      "id": "pregnancy_possibility",
-      "category": "ob_gyn",
+      "id": "stone_comparison",
+      "category": "hpi",
       "triggerConcepts": [
-        "pregnancy",
-        "could you be pregnant",
-        "last menstrual period",
-        "lmp"
+        "how does this compare to your prior stones",
+        "is this like your old stone pain",
+        "different from before",
+        "colicky waves or steady"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "urine_output",
+      "category": "ros",
+      "triggerConcepts": [
+        "urine output",
+        "how much are you urinating",
+        "passing less water",
+        "making urine"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -474,7 +550,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "palpitations",
+        "shortness of breath",
+        "chest pain"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -501,7 +580,10 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "kidney",
+        "stones"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -514,7 +596,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "ibuprofen",
+        "blood pressure pills",
+        "diabetes pills"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -527,7 +612,24 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior kidney stones",
+        "prior infections"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "social_living",
+      "category": "social",
+      "triggerConcepts": [
+        "who is at home",
+        "do you live alone",
+        "living situation",
+        "support at home",
+        "caregiver"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -538,7 +640,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_cva_tenderness_finding_1",
-      "finding": "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.",
+      "finding": "Abdomen soft; RIGHT costovertebral angle (CVA) tenderness; mild suprapubic tenderness; no rebound, no guarding.",
       "revealedBy": [
         "assess_cva_tenderness"
       ],
@@ -548,13 +650,73 @@
     },
     {
       "id": "assess_suprapubic_tenderness_finding_2",
-      "finding": "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.",
+      "finding": "Mild suprapubic tenderness; no rebound, no guarding.",
       "revealedBy": [
         "assess_suprapubic_tenderness"
       ],
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No suprapubic tenderness."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Heart: irregularly irregular and tachycardic at ~126, no murmur — a new, fast, irregular rhythm.",
+      "revealedBy": [
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 4,
+      "normalIfNotPresent": "Regular rate and rhythm."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_4",
+      "finding": "Dry mucous membranes and reduced skin turgor — volume depleted.",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes."
+    },
+    {
+      "id": "assess_skin_turgor_finding_5",
+      "finding": "Reduced skin turgor with dry mucous membranes — volume depleted.",
+      "revealedBy": [
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal skin turgor."
+    },
+    {
+      "id": "assess_jvp_finding_6",
+      "finding": "JVP not elevated (low-normal), consistent with hypovolemia rather than heart failure.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_posterior_lungs_finding_7",
+      "finding": "Lungs clear posteriorly; no crackles (argues against pneumonia and pulmonary edema).",
+      "revealedBy": [
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Clear lungs."
+    },
+    {
+      "id": "assess_edema_finding_8",
+      "finding": "No peripheral edema; calves nontender.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No edema."
     }
   ],
   "overallScoring": {
@@ -567,63 +729,79 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Pyelonephritis",
-    "diagnosticFramework": "35F presents with 2 days of fever, chills, right flank pain, and urinary frequency and burning, with nausea and vomiting. The diagnosis is Pyelonephritis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "71F with type 2 diabetes, hypertension, CKD stage 3, prior nephrolithiasis, and polypharmacy (chronic NSAID, ACE inhibitor, thiazide, spironolactone, metformin, SGLT2 inhibitor) presents with 2 days of fevers, rigors, right flank pain, dysuria, and vomiting, and is hypotensive and tachycardic with a new irregular pulse. The diagnosis is acute complicated Pyelonephritis with early urosepsis, reached by eliciting the focused history (including medication adherence, living situation, and how the pain compares to her prior stones), performing the targeted exam (CVA tenderness, an irregular tachycardia, volume depletion), and integrating multi-system labs — pyuria with WBC casts, leukocytosis, acute-on-chronic AKI, an elevated anion gap from lactic acidosis with mild SGLT2-related ketosis (not DKA-range), hyperkalemia from AKI plus RAAS blockade, and new AF with rapid ventricular response on her own EKG — while excluding the must-not-miss obstructing stone/pyonephrosis with a CT.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness.",
-      "Abdomen: suprapubic tenderness; RIGHT costovertebral angle (CVA) tenderness."
+      "Abdomen soft; RIGHT costovertebral angle (CVA) tenderness; mild suprapubic tenderness; no rebound, no guarding.",
+      "Mild suprapubic tenderness; no rebound, no guarding.",
+      "Heart: irregularly irregular and tachycardic at ~126, no murmur — a new, fast, irregular rhythm.",
+      "Dry mucous membranes and reduced skin turgor — volume depleted.",
+      "Reduced skin turgor with dry mucous membranes — volume depleted.",
+      "JVP not elevated (low-normal), consistent with hypovolemia rather than heart failure.",
+      "Lungs clear posteriorly; no crackles (argues against pneumonia and pulmonary edema).",
+      "No peripheral edema; calves nontender."
     ],
     "keyDiagnosticFindings": [
       "UA",
       "UrineCulture",
+      "BloodCultures",
       "CBC",
       "BMP",
       "Lactate",
-      "BloodCultures",
-      "Pregnancy"
+      "VBG",
+      "betaHydroxybutyrate",
+      "Troponin"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Pyelonephritis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Pyelonephritis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals — note the hypotension, tachycardia, and irregular pulse.",
+      "Elicit the focused history including medication adherence, polypharmacy, urine output, living situation, and how this flank pain compares to her prior stones, only on direct questioning.",
+      "Perform the targeted physical exam to reveal CVA tenderness, the new irregular tachycardia, and volume depletion.",
+      "Build a differential led by complicated Pyelonephritis while explicitly naming the must-not-miss obstructing stone/pyonephrosis, urosepsis, and emphysematous pyelonephritis, and listing three mechanisms of complicated upper UTI.",
+      "Order a focused workup including CT to exclude obstruction, and interpret HER EKG (AF with RVR and demand ST depression) and the labs as multiple concurrent problems.",
+      "Commit to Pyelonephritis with urosepsis, name CT as the management-changing test, and manage with cultures-then-antibiotics, sepsis resuscitation, source control if obstructed, hyperkalemia/medication correction, cautious AF rate control, admission, and safe-discharge planning."
     ],
     "commonPitfalls": [
-      "Nitrofurantoin/fosfomycin for pyelonephritis"
+      "Anchoring on simple cystitis and missing obstruction/sepsis",
+      "Calling it 'just renal colic' and ignoring the infection",
+      "Over-calling the rate-related ST depression as an acute STEMI in a septic patient",
+      "Starting antibiotics before cultures",
+      "Continuing the ACE inhibitor/spironolactone/NSAID with hyperkalemia and AKI",
+      "Discharging a septic, possibly obstructed patient"
     ],
     "managementPearls": [
-      "Urine and blood cultures",
-      "Empiric IV antibiotics"
+      "Cultures before empiric broad-spectrum IV antibiotics",
+      "Source control: emergent decompression if the infected kidney is obstructed"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
-      "assess_cva_tenderness"
+      "assess_cva_tenderness",
+      "auscultate_mitral_area"
     ],
     "criticalWorkupItems": [
-      "Urinalysis"
+      "Urinalysis with microscopy",
+      "CT abdomen/pelvis to exclude obstructing stone/hydronephrosis/gas"
     ],
     "criticalInterpretationItems": [
-      "Atrial fibrillation with rapid ventricular response.",
-      "No consolidation (obtained to exclude pneumonia as the fever source)."
+      "Atrial fibrillation with rapid ventricular response (~125) and rate-related lateral ST depression consistent with demand ischemia, not an acute coronary occlusion.",
+      "Clear film: no consolidation and no pulmonary edema (obtained to exclude pneumonia as the fever source and to assess the dyspnea)."
     ],
     "criticalManagementItems": [
-      "Urine and blood cultures",
-      "Empiric IV antibiotics"
+      "Cultures before empiric broad-spectrum IV antibiotics",
+      "Resuscitate sepsis with IV fluids and reassess perfusion/lactate",
+      "Emergent urology decompression (stent/nephrostomy) if obstruction found — source control"
     ],
     "keyImageInterpretationFindings": [
-      "Atrial fibrillation with rapid ventricular response.",
-      "No consolidation (obtained to exclude pneumonia as the fever source)."
+      "Atrial fibrillation with rapid ventricular response (~125) and rate-related lateral ST depression consistent with demand ischemia.",
+      "Clear film: no consolidation and no pulmonary edema."
     ],
     "criticalImageInterpretationFindings": [
-      "Atrial fibrillation with rapid ventricular response.",
-      "No consolidation (obtained to exclude pneumonia as the fever source)."
+      "Atrial fibrillation with rapid ventricular response (~125) and rate-related lateral ST depression consistent with demand ischemia, not an acute coronary occlusion.",
+      "Clear film: no consolidation and no pulmonary edema (obtained to exclude pneumonia as the fever source and to assess the dyspnea)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "When the EKG is the patient's own, the read is part of the puzzle: new AF with RVR in a septic patient is usually driven by the illness — treat the cause and control the rate before reaching for cardioversion.",
+      "Rate-related horizontal ST depression in a very tachycardic, septic patient is demand ischemia, not an automatic call to the cath lab — corroborate with a near-flat troponin.",
+      "On a fever/dyspnea chest film, the deliberate pertinent negatives are no consolidation and no pulmonary edema."
     ]
   },
   "communicationScoring": {
@@ -634,11 +812,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's concern about her racing heart and pain",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (medications, living situation)",
         "points": 1
       },
       {
@@ -653,8 +831,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

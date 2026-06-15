@@ -2,58 +2,61 @@
   "id": "liver-08",
   "category": "Abnormal Liver Enzymes",
   "difficulty": "hard",
-  "title": "Sudden sky-high liver enzymes after a cardiac arrest",
+  "title": "Sky-high transaminases after a cardiac arrest — shock liver or a hidden Tylenol overdose?",
   "diagnosis": "Ischemic hepatitis (shock liver)",
   "chart": {
     "ageSex": "68M",
     "cc": "Abnormal liver tests after collapse",
-    "oneLiner": "68M with heart failure, admitted after a witnessed cardiac arrest and prolonged hypotension, now with markedly elevated transaminases noted on labs 24 hours later.",
+    "oneLiner": "68M with ischemic cardiomyopathy (EF ~25%), CKD3, and diabetes, admitted after a witnessed cardiac arrest with prolonged hypotension, now with markedly elevated transaminases — complicated by an empty bottle of his acetaminophen-codeine knee pills found at the scene and a polypharmacy list that includes amiodarone and a statin.",
     "vitals": {
       "BP": "92/58",
       "HR": "104",
-      "RR": "20",
-      "Temp": "36.8°C",
+      "RR": "22",
+      "Temp": "36.7°C",
       "SpO2": "94% on 2L NC"
     },
     "timer": 180
   },
-  "opening": "I'm wiped out and a bit short of breath since my heart stopped yesterday — now the nurses say my liver numbers are way off.",
-  "patientFile": "PERSONA: 68-year-old man, fatigued and mildly breathless, recovering on a monitored floor after resuscitation. Cooperative but tires easily; defers technical detail to the chart.\n\nHPI: Yesterday he collapsed at home with a witnessed cardiac arrest from his known heart failure; bystander CPR, EMS found him in a low-output state and he was profoundly hypotensive (SBP in the 60s) for roughly 30–45 minutes before perfusion was restored. Since then he has been weak, slightly breathless, and mildly nauseated, with reduced urine output overnight (only if asked). NO abdominal pain to speak of, NO right-upper-quadrant pain, NO dark urine, NO fevers or chills, NO recent travel, NO new sexual contacts, NO IV drug use. He has NOT taken any extra acetaminophen and denies any large overdose (only if asked about Tylenol/paracetamol/overdose). NO heavy alcohol use (a beer at holidays). NO prior liver disease, NO known hepatitis, NO blood transfusions, NO mushroom ingestion or new herbal supplements.\nPMH: ischemic cardiomyopathy with HFrEF (EF ~25%), prior MI, CKD stage 3, hypertension, type 2 diabetes. MEDS: furosemide, carvedilol, lisinopril, atorvastatin, aspirin, metformin; occasional acetaminophen for knees (a couple of tablets, not recently). SOCIAL: retired, lives with wife, minimal alcohol, never smoker, no recreational drugs.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired, mildly breathless, no acute distress at rest; not jaundiced.\n- Vitals: BP 92/58, HR 104, RR 20, 36.8°C, SpO2 94% on 2L; orthostatic/marginal perfusion if checked.\n- Cardiac: elevated JVP, soft S3 gallop; cool extremities with delayed capillary refill if examined; thready peripheral pulses.\n- Abdomen: soft; mild non-tender hepatomegaly possible; NO RUQ tenderness, NO Murphy sign, NO ascites.\n- Extremities: mild lower-limb edema; cool to touch.\n- Neuro: alert and oriented; no asterixis.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the duration of hypotension, the low urine output, or the acetaminophen detail unless asked about the arrest/blood pressure, urine output, or medications/overdose respectively.\n- Stigmata of low cardiac output (cool extremities, delayed capillary refill, elevated JVP, S3) and hepatomegaly are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I'm wiped out and a bit short of breath since my heart stopped yesterday — now the nurses say my liver numbers are way off, and they keep asking me about my pain pills.",
+  "patientFile": "PERSONA: 68-year-old man, fatigued and mildly breathless, recovering on a monitored floor after resuscitation. Cooperative but tires easily; defers technical detail to the chart. A little defensive when asked about his pain pills.\n\nHPI: Yesterday he collapsed at home with a witnessed cardiac arrest from his known heart failure; his wife called EMS and started bystander CPR. EMS found him in a low-output state, profoundly hypotensive (SBP in the 60s) for roughly 30–45 minutes before perfusion was restored after a brief code. Since then he has been weak, slightly breathless, and mildly nauseated, with reduced urine output overnight (only if asked). NO abdominal pain to speak of, NO right-upper-quadrant pain, NO dark urine, NO fevers or chills, NO recent travel, NO new sexual contacts, NO IV drug use, NO new herbal supplements or mushrooms.\nACETAMINOPHEN / OVERDOSE (reveal ONLY when asked about Tylenol/paracetamol/pain pills/overdose): His knee pain pills are 'Tylenol with codeine' (acetaminophen-codeine). The medics brought in a nearly empty bottle that the wife thinks was fuller a few days ago. He insists he did NOT try to harm himself and did NOT take a big handful at once — but admits that over the last several days his knees were bad and he 'kept taking them, maybe more than I should have, a few extra here and there.' He cannot give an exact number and is not sure of the timing. He denies any single large ingestion. (This raises a possible STAGGERED/therapeutic-excess acetaminophen exposure — a genuine competitor to be excluded.)\nALCOHOL: NO heavy alcohol use (a beer at holidays). NO prior liver disease, NO known hepatitis, NO blood transfusions.\nPMH: ischemic cardiomyopathy with HFrEF (EF ~25%), prior anterior MI, paroxysmal atrial fibrillation, CKD stage 3 (baseline Cr ~1.5), hypertension, type 2 diabetes. MEDS: furosemide, carvedilol, lisinopril, amiodarone (started ~4 months ago for AF), atorvastatin 80 mg, aspirin, metformin; 'Tylenol #3' (acetaminophen-codeine) for knees, recently taken more often than prescribed. SOCIAL: retired machinist, lives with wife, minimal alcohol, never smoker, no recreational drugs. FAMILY: noncontributory.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired, mildly breathless, no acute distress at rest; not jaundiced; no asterixis; alert and fully oriented.\n- Vitals: BP 92/58, HR 104, RR 22, 36.7°C, SpO2 94% on 2L; marginal perfusion if reassessed.\n- Cardiac: elevated JVP, soft S3 gallop; cool extremities with delayed capillary refill if examined; thready peripheral pulses; irregularly irregular pulse at times (known AF).\n- Abdomen: soft; mild non-tender hepatomegaly possible; NO RUQ tenderness, NO Murphy sign, NO ascites, NO fluid wave.\n- Extremities: mild lower-limb edema; cool to touch.\n- Neuro: alert and oriented x3; NO asterixis; no flap (argues against established hepatic encephalopathy / fulminant failure at this point).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the duration of hypotension, the low urine output, or the acetaminophen/Tylenol-bottle detail unless asked about the arrest/blood pressure, urine output, or pain pills/Tylenol/overdose respectively.\n- When asked about the pain pills, be initially vague and a little defensive, then admit to taking 'a few extra' over several days for his knees but deny a single big overdose and deny self-harm intent.\n- Stigmata of low cardiac output (cool extremities, delayed capillary refill, elevated JVP, S3) and hepatomegaly are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "LFTs": "AST 4200, ALT 3100 — massive transaminase elevation (>25–50x ULN) that rose rapidly and on repeat 48–72h later falls rapidly toward baseline once perfusion restored; alkaline phosphatase only mildly up.",
-      "Bilirubin": "Total bilirubin mildly elevated (~2.5 mg/dL) — disproportionately low relative to the huge transaminases.",
-      "LDH": "LDH markedly elevated; ALT:LDH ratio LOW (<1.5) — favors ischemic over viral injury.",
-      "Acetaminophen": "Acetaminophen level UNDETECTABLE (excludes APAP toxicity — the key mimic).",
-      "ViralHepNAT": "Hepatitis A IgM, B surface antigen/core IgM, and C viral load all NEGATIVE (excludes acute viral hepatitis).",
-      "RenalCoags": "Cr risen from baseline (acute kidney injury); INR transiently prolonged; lactate elevated — consistent with the same hypoperfusion insult."
+      "LFTs": "AST 4400, ALT 3300 — massive transaminase elevation (>25–50x ULN). On the repeat drawn this morning the values are already FALLING (AST down from a peak ~5200), and they fall rapidly toward baseline once perfusion is restored. Alkaline phosphatase only mildly up at 140.",
+      "Bilirubin": "Total bilirubin mildly elevated at 2.6 mg/dL (direct 1.4) — disproportionately LOW relative to the huge transaminases (a hyperacute hepatocellular pattern, not cholestatic).",
+      "LDH": "LDH markedly elevated at 5800. ALT:LDH ratio LOW (~0.57, <1.5) — favors ischemic/hypoxic hepatitis over acetaminophen or viral injury (in APAP and viral hepatitis the ratio is typically >1.5).",
+      "Acetaminophen": "Acetaminophen (4-hour and repeat) levels UNDETECTABLE (<10 mcg/mL); no detectable APAP-protein adducts available on send-out. With an undetectable level and an INR only mildly up, a clinically significant acute APAP toxicity is excluded despite the bottle history — but a single level does not by itself exclude a very late/staggered ingestion, so the LOW ALT:LDH ratio and the falling trend are the discriminators.",
+      "ViralHepNAT": "Hepatitis A IgM, B surface antigen / core IgM, and C viral load (NAT) all NEGATIVE (excludes acute viral hepatitis).",
+      "RenalLytes": "Na 139, K 6.4 (peaked T waves on EKG — see read), Cl 99, HCO3 14 → ANION GAP = 139 − (99 + 14) = 26 (high-anion-gap metabolic acidosis). Cr 3.4 (baseline ~1.5 → AKI), BUN 58. Lactate 7.1 (elevated). The high gap is largely lactate-driven from hypoperfusion; metformin and the AKI compound it.",
+      "Coags_Gluc": "INR 1.7 and mild factor consumption (transient hepatic synthetic stress, not yet fulminant failure); fibrinogen preserved. Glucose 48 mg/dL — HYPOGLYCEMIA, a recognized complication of severe acute hepatocellular injury and impaired gluconeogenesis (a separate problem to treat)."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia with low QRS voltage and old anteroseptal Q waves (prior MI); no acute ST-elevation.",
-      "verify": "Source a study matching: Sinus tachycardia with low QRS voltage and old anteroseptal Q waves (prior MI); no acute ST-elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "integrated": true,
+      "litflStudyN": 3,
+      "findings": "Tall, narrow, peaked (tented) T waves with a short QT, most prominent in the precordial leads — hyperkalemia (K 6.4 from the AKI); background sinus tachycardia with low QRS voltage and old anteroseptal Q waves from prior MI; no acute ST-elevation.",
+      "verify": "Source a study matching: peaked/tented T waves of hyperkalemia on a background of sinus tachycardia, low voltage, and old anteroseptal Q waves; no acute ST-elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia, low voltage, old anteroseptal Q waves",
+      "imageDescription": "12-lead showing peaked tented T waves of hyperkalemia with sinus tachycardia, low voltage, and old anteroseptal Q waves",
       "searchTerms": [
-        "sinus tachycardia low voltage ECG",
-        "old anteroseptal infarction Q waves ECG"
+        "hyperkalemia peaked T waves ECG",
+        "tented T waves short QT hyperkalemia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 72-year-old man recovering from profound hypotension has sinus tachycardia, low voltage, and old anteroseptal Q waves."
+      "clinicalVignette": "A 68-year-old man with acute kidney injury after profound hypotension has tall, tented precordial T waves on his post-arrest EKG."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=cardiomegaly%20pulmonary%20edema%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — pulmonary edema/congestion.",
-      "verify": "Source a study matching: Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — pulmonary edema/congestion. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Cardiomegaly with pulmonary vascular redistribution, perihilar haziness, and small bilateral effusions — cardiogenic pulmonary edema/congestion; no focal consolidation.",
+      "verify": "Source a study matching: Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — pulmonary edema/congestion. Self-host with appropriate credit.",
       "assetNeeded": true,
       "imageDescription": "chest radiograph cardiomegaly pulmonary edema small effusions",
       "searchTerms": [
@@ -61,7 +64,7 @@
         "cardiogenic pulmonary congestion radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 75-year-old man with worsening breathlessness has cardiomegaly with vascular redistribution and small bilateral pleural effusions."
+      "clinicalVignette": "A 68-year-old man with worsening breathlessness and a failing heart has cardiomegaly with vascular redistribution and small bilateral pleural effusions."
     }
   },
   "revealKeys": [
@@ -70,29 +73,31 @@
     "LDH",
     "Acetaminophen",
     "ViralHepNAT",
-    "RenalCoags",
+    "RenalLytes",
+    "Coags_Gluc",
     "ekg",
     "cxr"
   ],
   "essential": [
     "LFTs",
     "LDH",
-    "Acetaminophen"
+    "Acetaminophen",
+    "RenalLytes"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for these markedly elevated transaminases (note your leading diagnosis).",
-      "rubric": "Ischemic hepatitis (shock liver) (leading,7). Acetaminophen hepatotoxicity (CANT-MISS to exclude,5). Acute viral hepatitis (CANT-MISS,3). Acute Budd-Chiari/venous outflow obstruction (CANT-MISS,3). Autoimmune hepatitis / drug-induced (toxin) injury (core,2). Acute biliary obstruction (core,2). Names the picture as hypoperfusion injury — massive transaminases with low ALT:LDH ratio after a hemodynamic insult (core,3).",
-      "idealAnswer": "Leading diagnosis: Ischemic hepatitis (shock liver). Must-not-miss diagnoses to exclude: Acetaminophen hepatotoxicity; Acute viral hepatitis; Acute Budd-Chiari/venous outflow obstruction. Also reasonable: Autoimmune/drug-induced (toxin) hepatitis; Acute biliary obstruction.",
+      "prompt": "Based on your history and physical, give your differential for these markedly elevated transaminases (note your leading diagnosis). This man has an empty bottle of acetaminophen-codeine from the scene AND a documented period of profound hypotension — name at least three distinct mechanisms/etiologies of an AST/ALT in the thousands and say which you favor and why.",
+      "rubric": "Ischemic hepatitis (shock liver) (leading,6). Acetaminophen hepatotoxicity — the genuine competitor given the empty Tylenol-codeine bottle and staggered-use history (CANT-MISS,5). Acute viral hepatitis (CANT-MISS,3). Acute Budd-Chiari / hepatic venous-outflow / congestive (cardiac) hepatopathy given HFrEF (CANT-MISS,2). Drug-induced liver injury — amiodarone and/or statin (toxin/DILI) as a polypharmacy confounder (core,2). Autoimmune hepatitis or acute biliary obstruction (core,1). Names ≥3 distinct MECHANISMS of transaminases in the thousands: ischemia/hypoxia, drug/toxin (APAP/DILI), acute viral, venous congestion/outflow obstruction (core,3). Notes that ischemic and APAP injury can look identical on enzymes and the ALT:LDH ratio + APAP level + trajectory discriminate (core,3). PENALTY: anchoring on shock liver without taking the acetaminophen exposure seriously / not checking a level (-3).",
+      "idealAnswer": "Leading diagnosis: Ischemic hepatitis (shock liver) — massive transaminases appearing within ~24h of a documented prolonged hypotensive/low-output insult, with disproportionately mild bilirubin and a low ALT:LDH ratio. The genuine competitor that must be excluded is Acetaminophen hepatotoxicity, because medics returned a nearly empty bottle of his acetaminophen-codeine knee pills and he admits to taking 'a few extra' over several days (a possible staggered/therapeutic-excess ingestion). Other must-not-miss causes: Acute viral hepatitis and acute Budd-Chiari / hepatic venous-outflow obstruction (and congestive cardiac hepatopathy from his HFrEF). Polypharmacy DILI from amiodarone or high-dose atorvastatin is a reasonable confounder. At least three distinct MECHANISMS of an AST/ALT in the thousands: (1) ischemia/hypoxia (shock liver), (2) drug/toxin (acetaminophen or other DILI), (3) acute viral hepatitis, (4) acute venous congestion/outflow obstruction. Ischemic and acetaminophen injury are nearly indistinguishable on the enzymes alone — the acetaminophen level, the low ALT:LDH ratio, and the rapid downtrend are the discriminators.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Ischemic hepatitis (shock liver)",
-            "points": 7
+            "points": 6
           },
           {
             "item": "Acetaminophen hepatotoxicity",
@@ -103,35 +108,44 @@
             "points": 3
           },
           {
-            "item": "Acute Budd-Chiari/venous outflow obstruction",
-            "points": 3
+            "item": "Acute Budd-Chiari / hepatic venous-outflow obstruction / congestive cardiac hepatopathy",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Autoimmune/drug-induced (toxin) hepatitis",
+            "item": "Drug-induced liver injury (amiodarone / statin) as a polypharmacy confounder",
             "points": 2
           },
           {
-            "item": "Acute biliary obstruction",
-            "points": 2
+            "item": "Autoimmune hepatitis or acute biliary obstruction",
+            "points": 1
           },
           {
-            "item": "Names the picture as hypoperfusion injury (massive transaminases with low ALT:LDH ratio after a hemodynamic insult)",
+            "item": "Names three distinct mechanisms of transaminases in the thousands (ischemia/hypoxia, drug/toxin, viral, venous congestion/outflow)",
+            "points": 3
+          },
+          {
+            "item": "Notes ischemic vs APAP injury look identical on enzymes; ALT:LDH ratio + APAP level + trajectory discriminate",
             "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on shock liver without taking the acetaminophen exposure seriously / not checking a level",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "Acetaminophen hepatotoxicity",
         "Acute viral hepatitis",
-        "Acute Budd-Chiari/venous outflow obstruction"
+        "Acute Budd-Chiari / hepatic venous-outflow obstruction / congestive cardiac hepatopathy"
       ],
       "acceptableAlternatives": [
-        "Autoimmune/drug-induced (toxin) hepatitis",
-        "Acute biliary obstruction"
+        "Drug-induced liver injury (amiodarone / statin)",
+        "Autoimmune hepatitis or acute biliary obstruction"
       ]
     },
     {
@@ -140,8 +154,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial workup do you want to order?",
-      "rubric": "LFTs with AST/ALT trend and LDH (ALT:LDH ratio) (CANT-MISS,3). Acetaminophen level (CANT-MISS,3). Viral hepatitis serologies/NAT (2). Bilirubin and INR/albumin — synthetic function (2). Renal function and lactate — assess the perfusion insult (2). RUQ ultrasound with Doppler — exclude Budd-Chiari/biliary obstruction (2). Repeat LFTs to confirm rapid downtrend (1). PENALTY: anchoring on shock liver without checking an acetaminophen level / excluding viral causes (-2).",
-      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; LDH; Acetaminophen; Viral hep NAT; Renal coags.",
+      "rubric": "LFTs with AST/ALT trend and LDH (ALT:LDH ratio) (CANT-MISS,3). Acetaminophen level — and repeat/serial given a possible staggered ingestion (CANT-MISS,3). RUQ ultrasound with Doppler — exclude Budd-Chiari/biliary obstruction and assess hepatic venous flow (CANT-MISS,2). Viral hepatitis serologies/NAT (1). Bilirubin, INR/albumin and GLUCOSE — synthetic function and hypoglycemia (2). Renal panel with electrolytes, lactate, and a venous/arterial gas — assess the perfusion insult, AKI, hyperkalemia, and the anion gap (2). EKG and CXR (1). Repeat LFTs to confirm rapid downtrend (1). PENALTY: anchoring on shock liver without an acetaminophen level / without excluding viral causes (-2); missing the potassium / not ordering electrolytes despite AKI (-1).",
+      "idealAnswer": "Order: EKG; CXR; LFTs with serial AST/ALT trend; Bilirubin; LDH (for the ALT:LDH ratio); Acetaminophen level (and a repeat, since a single level cannot fully exclude a staggered ingestion); Viral hepatitis serologies/NAT; Renal panel with electrolytes (the potassium matters), lactate, and a blood gas to characterize the high-anion-gap acidosis; INR/albumin and a glucose; and a RUQ ultrasound with Doppler to assess hepatic venous outflow and exclude Budd-Chiari/biliary obstruction. Repeat LFTs to confirm the expected rapid downtrend.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -150,7 +164,7 @@
             "points": 3
           },
           {
-            "item": "Acetaminophen level",
+            "item": "Acetaminophen level (with repeat/serial given possible staggered ingestion)",
             "points": 3
           },
           {
@@ -160,45 +174,49 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
+            "item": "Viral hep NAT/serologies",
+            "points": 1
+          },
+          {
+            "item": "Bilirubin, INR/albumin and glucose (synthetic function + hypoglycemia)",
             "points": 2
           },
           {
-            "item": "CXR",
+            "item": "Renal panel with electrolytes, lactate, and blood gas (AKI, hyperkalemia, anion gap)",
             "points": 2
           },
           {
-            "item": "Bilirubin",
-            "points": 2
+            "item": "EKG and CXR",
+            "points": 1
           },
           {
-            "item": "Viral hep NAT",
-            "points": 2
-          },
-          {
-            "item": "Renal coags",
-            "points": 2
+            "item": "Repeat LFTs to confirm rapid downtrend",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "anchoring on shock liver without checking an acetaminophen level / excluding viral causes",
+            "item": "Anchoring on shock liver without an acetaminophen level / without excluding viral causes",
             "points": -2
+          },
+          {
+            "item": "Missing the potassium / not ordering electrolytes despite AKI",
+            "points": -1
           }
         ]
       },
       "requiredTests": [
         "LFTs with AST/ALT trend and LDH (ALT:LDH ratio)",
-        "Acetaminophen level",
+        "Acetaminophen level (with repeat/serial given possible staggered ingestion)",
         "RUQ ultrasound with Doppler"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "anchoring on shock liver without checking an acetaminophen level / excluding viral causes"
+        "Anchoring on shock liver without an acetaminophen level / without excluding viral causes"
       ],
       "orderSensitiveActions": [
-        "anchoring on shock liver without checking an acetaminophen level / excluding viral causes"
+        "Anchoring on shock liver without an acetaminophen level / without excluding viral causes"
       ]
     },
     {
@@ -207,32 +225,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, low voltage, old anteroseptal Q waves, no acute STEMI. CREDIT: rate & rhythm (7); recognizes old infarct/low voltage and absence of acute ST-elevation (5); systematic read (3). PENALTY: over-calling an acute STEMI / missing the old infarct (-3).",
+      "prompt": "Here is the patient's own post-arrest 12-lead EKG. Describe your findings and say what you would do about them.",
+      "rubric": "Findings = tall, narrow, PEAKED/tented T waves of HYPERKALEMIA (K 6.4 from the AKI), on a background of sinus tachycardia, low QRS voltage, and old anteroseptal Q waves from prior MI; no acute ST-elevation. CREDIT: recognizes peaked/tented T waves and names hyperkalemia (7); reads rate/rhythm and recognizes old infarct/low voltage with no acute STEMI (4); states hyperkalemia is a life-threat needing immediate treatment and a stat potassium (4). PENALTY: missing the hyperkalemic T waves / calling the EKG just sinus tach (-3); over-calling an acute STEMI on the old Q waves (-2).",
       "keyFindings": [
-        "sinus tachycardia with low QRS voltage",
-        "old anteroseptal Q waves without acute ST-elevation"
+        "tall, narrow, peaked (tented) T waves of hyperkalemia",
+        "sinus tachycardia with low voltage and old anteroseptal Q waves, no acute ST-elevation"
       ],
       "criticalFindings": [
-        "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation."
+        "Peaked/tented T waves of hyperkalemia (K 6.4 from AKI) on a background of sinus tachycardia, low voltage, and old anteroseptal Q waves; no acute ST-elevation — a life-threat requiring immediate treatment."
       ],
       "commonMistakes": [
+        "missing the peaked hyperkalemic T waves and reading only sinus tachycardia",
         "calling the old anteroseptal Q waves an acute STEMI"
       ],
-      "idealAnswer": "Sinus tachycardia with low QRS voltage and old anteroseptal Q waves from prior MI; no acute ST-elevation.",
+      "idealAnswer": "Tall, narrow, peaked (tented) T waves with a short QT — hyperkalemia, fitting the K of 6.4 from his AKI — on a background of sinus tachycardia, low QRS voltage, and old anteroseptal Q waves from prior MI, with no acute ST-elevation. The hyperkalemia is an immediate life-threat: confirm with a stat potassium and treat empirically (calcium for membrane stabilization, insulin/dextrose, etc.) while addressing the underlying AKI.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation."
+          "Peaked/tented T waves of hyperkalemia (K 6.4 from AKI) on a background of sinus tachycardia, low voltage, and old anteroseptal Q waves; no acute ST-elevation — a life-threat requiring immediate treatment."
         ],
         "coreActions": [
-          "sinus tachycardia with low QRS voltage",
-          "old anteroseptal Q waves without acute ST-elevation"
+          "tall, narrow, peaked (tented) T waves of hyperkalemia",
+          "sinus tachycardia with low voltage and old anteroseptal Q waves, no acute ST-elevation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "misses the hyperkalemic T waves / calls the study just sinus tachycardia or normal",
             "points": -3
           }
         ]
@@ -245,31 +264,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = cardiomegaly with pulmonary congestion. CREDIT: identifies cardiomegaly with pulmonary edema/effusions (6); links congestion to the low-output state driving the liver injury (4). PENALTY: calling the film normal / inventing a pneumonia (-2).",
+      "rubric": "Findings = cardiomegaly with pulmonary congestion. CREDIT: identifies cardiomegaly with pulmonary edema/vascular redistribution and small bilateral effusions (6); links the congestion to the low-output/cardiogenic state that is driving the hepatic hypoperfusion (4). PENALTY: calling the film normal / inventing a focal pneumonia (-2).",
       "keyFindings": [
         "cardiomegaly with pulmonary vascular redistribution",
-        "small bilateral effusions consistent with congestion"
+        "small bilateral effusions consistent with cardiogenic congestion"
       ],
       "criticalFindings": [
-        "Cardiomegaly with pulmonary edema/congestion and small effusions."
+        "Cardiomegaly with pulmonary edema/congestion and small bilateral effusions."
       ],
       "commonMistakes": [
-        "mistaking pulmonary congestion for multifocal pneumonia"
+        "mistaking pulmonary congestion for multifocal pneumonia",
+        "calling the film normal"
       ],
-      "idealAnswer": "Cardiomegaly with pulmonary vascular redistribution and small bilateral effusions — cardiogenic congestion, consistent with the low-output state.",
+      "idealAnswer": "Cardiomegaly with pulmonary vascular redistribution, perihilar haziness, and small bilateral effusions — cardiogenic congestion, consistent with the failing, low-output heart that drove the hepatic hypoperfusion.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Cardiomegaly with pulmonary edema/congestion and small effusions."
+          "Cardiomegaly with pulmonary edema/congestion and small bilateral effusions."
         ],
         "coreActions": [
           "cardiomegaly with pulmonary vascular redistribution",
-          "small bilateral effusions consistent with congestion"
+          "small bilateral effusions consistent with cardiogenic congestion"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / invents a focal pneumonia",
             "points": -3
           }
         ]
@@ -279,9 +299,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Massive transaminases (AST 4200/ALT 3100) with disproportionately mild bilirubin, markedly elevated LDH with a low ALT:LDH ratio, undetectable acetaminophen, negative viral serologies, AKI/elevated lactate, and a documented period of profound hypotension. What is your diagnosis and what did you rule out?",
-      "rubric": "Ischemic hepatitis (shock liver) (6). Cites the hypoperfusion insult with massive transaminases, low ALT:LDH ratio, and disproportionately mild bilirubin; explicitly excludes acetaminophen toxicity (undetectable level) and acute viral hepatitis (negative serologies), and expects a rapid downtrend with restored perfusion (4).",
-      "idealAnswer": "Ischemic hepatitis (shock liver): the hypoperfusion insult explains the massive transaminases, low ALT:LDH ratio, and disproportionately mild bilirubin, and the LFTs should downtrend rapidly once perfusion is restored. Ruled out acetaminophen toxicity (undetectable level) and acute viral hepatitis (negative serologies).",
+      "prompt": "Putting it together: AST 4400/ALT 3300 already falling, bilirubin only 2.6, LDH 5800 with a low ALT:LDH ratio (~0.57), UNDETECTABLE acetaminophen, negative viral serologies, AKI with K 6.4 and a high-anion-gap (26) lactic acidosis, INR 1.7, glucose 48, and a documented ~30–45 min of profound hypotension — all despite the empty Tylenol-codeine bottle. What is your diagnosis, what did you rule out, what single test most discriminates it from the chief competitor, and what residual uncertainty remains?",
+      "rubric": "Ischemic hepatitis (shock liver) (6). Cites the hypoperfusion insult with massive but already-DOWNTRENDING transaminases, low ALT:LDH ratio (~0.57), and disproportionately mild bilirubin; explicitly EXCLUDES acetaminophen toxicity (undetectable level + low ALT:LDH ratio + falling trend, even with the bottle history) and acute viral hepatitis (negative serologies); names the discriminating test (the acetaminophen level, supported by the ALT:LDH ratio) and the residual uncertainty (a single level cannot fully exclude a very late staggered ingestion, so serial trend/clinical course settles it); recognizes the AKI/hyperkalemia, anion-gap lactic acidosis, and hypoglycemia as concurrent problems of the same hypoperfusion insult, not separate liver diseases (4).",
+      "idealAnswer": "Ischemic hepatitis (shock liver). The hypoperfusion insult explains the massive transaminases that are ALREADY downtrending, the low ALT:LDH ratio (~0.57, <1.5), and the disproportionately mild bilirubin; the same insult explains the AKI with hyperkalemia, the high-anion-gap (26) lactic acidosis, the mildly elevated INR, and the hypoglycemia — these are concurrent consequences of shock, not separate primary liver diseases. Ruled out: acetaminophen toxicity (undetectable level, low ALT:LDH ratio, and a rapidly falling trend, despite the empty bottle) and acute viral hepatitis (negative serologies); Budd-Chiari/outflow obstruction is assessed by the Doppler ultrasound. The single most discriminating test versus the chief competitor (APAP) is the acetaminophen level, backed by the low ALT:LDH ratio. Residual uncertainty: one undetectable level cannot completely exclude a very late or staggered ingestion, so I would follow serial levels and the LFT trajectory — a rapid downtrend with restored perfusion confirms ischemic hepatitis. If any doubt remained I would keep NAC running until APAP is fully excluded.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -292,82 +312,81 @@
       "mustNotMiss": [
         "Acetaminophen hepatotoxicity",
         "Acute viral hepatitis",
-        "Acute Budd-Chiari/venous outflow obstruction"
+        "Acute Budd-Chiari / hepatic venous-outflow obstruction / congestive cardiac hepatopathy"
       ],
       "acceptableAlternatives": [
-        "Autoimmune/drug-induced (toxin) hepatitis",
-        "Acute biliary obstruction"
+        "Drug-induced liver injury (amiodarone / statin)",
+        "Autoimmune hepatitis or acute biliary obstruction"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH acute liver injury / shock physiology: restore and optimize hepatic perfusion — treat the underlying cardiogenic shock/low-output state (CANT-MISS,7); supportive care and serial LFT/INR/lactate monitoring expecting rapid improvement (4); avoid/adjust hepatotoxic and renally-cleared drugs, hold nephrotoxins (4); treat precipitants and decompensated heart failure with cardiology input (4); monitor for and manage acute kidney injury and hypoglycemia (3); hepatology consult and avoid unnecessary steroids/empiric NAC unless APAP not yet excluded (3). PENALTY: giving fluids/pressors blindly without addressing the cardiac low-output cause, worsening congestion (-3); attributing the liver injury to a primary hepatic disease and delaying hemodynamic resuscitation (-2).",
-      "idealAnswer": "The liver injury is a marker of hypoperfusion — the priority is to restore hepatic perfusion by treating the underlying cardiogenic shock/low-output heart failure (inotropic/afterload support as appropriate, optimize cardiac output, correct hypoxemia and anemia) with cardiology. Provide supportive care with serial LFTs, INR, and lactate, expecting a rapid downtrend. Avoid and dose-adjust hepatotoxic/renally-cleared drugs, hold nephrotoxins, and monitor for AKI and hypoglycemia. Hepatology consult; avoid empiric steroids and reserve NAC for cases where acetaminophen has not been excluded.",
+      "prompt": "What is your management plan — including how you handle the EKG finding, and the disposition/safe-discharge plan for when he is ready to leave?",
+      "rubric": "Per MGH acute liver injury / shock physiology: restore and optimize hepatic perfusion — treat the underlying cardiogenic shock/low-output state (inotropic/afterload support, optimize cardiac output, correct hypoxemia) with cardiology (CANT-MISS,6); treat the HYPERKALEMIA from the EKG urgently — calcium, insulin/dextrose (dextrose also covers the hypoglycemia), and address the AKI (CANT-MISS,5); supportive care with serial LFT/INR/lactate/glucose monitoring expecting rapid improvement, treat the hypoglycemia (3); reconcile and hold/adjust hepatotoxic and renally-cleared drugs — hold metformin (lactic acidosis in AKI), hold/avoid amiodarone and high-dose statin, hold nephrotoxins/ACE-inhibitor, dose-adjust for renal function (3); hepatology consult and keep NAC running until acetaminophen is fully excluded given the bottle history; avoid empiric steroids (3); SAFE-DISCHARGE / DISPOSITION: admit to a monitored bed now, and at discharge perform medication reconciliation, document the LFT/renal/potassium recovery to baseline, arrange a poison-control/psychiatry screen for the unintentional excess and counsel on a hard acetaminophen ceiling, optimize HF with close cardiology and PCP follow-up (5). PENALTY: giving fluids/pressors blindly without addressing the cardiac low-output cause, worsening congestion (-3); restarting/continuing metformin and amiodarone unchanged or discharging without med reconciliation and acetaminophen counseling (-2).",
+      "idealAnswer": "The liver injury is a marker of hypoperfusion — the priority is to restore hepatic perfusion by treating the underlying cardiogenic shock/low-output heart failure (inotropic and afterload support as appropriate, optimize cardiac output, correct hypoxemia) with cardiology. Treat the hyperkalemia seen on the EKG urgently: IV calcium for membrane stabilization, insulin with dextrose (the dextrose simultaneously treats his glucose of 48), and manage the AKI driving it. Provide supportive care with serial LFTs, INR, lactate, and glucose, expecting a rapid downtrend; treat the hypoglycemia. Reconcile medications and hold/adjust the confounders: hold metformin (lactic acidosis with AKI), hold or avoid amiodarone and high-dose atorvastatin (DILI), hold nephrotoxins and the ACE-inhibitor, and renally dose-adjust everything. Hepatology consult; given the empty acetaminophen-codeine bottle, keep NAC running until acetaminophen is fully excluded, and avoid empiric steroids. Disposition: admit to a monitored bed now. Safe-discharge plan when stable: full medication reconciliation, document recovery of LFTs/renal function/potassium toward baseline, a poison-control and psychiatry/safety screen for the unintentional acetaminophen excess with counseling on a strict acetaminophen ceiling and pill-count safety, and close cardiology and PCP follow-up to optimize his heart failure.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state",
-            "points": 7
+            "points": 6
+          },
+          {
+            "item": "Treat the hyperkalemia urgently (calcium, insulin/dextrose) and address the AKI",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Supportive care with serial LFT/INR/lactate monitoring",
-            "points": 4
-          },
-          {
-            "item": "Avoid/adjust hepatotoxic and renally-cleared drugs; hold nephrotoxins",
-            "points": 4
-          },
-          {
-            "item": "Treat precipitants and decompensated heart failure with cardiology input",
-            "points": 4
-          },
-          {
-            "item": "Monitor for and manage AKI and hypoglycemia",
-            "points": 2
-          },
-          {
-            "item": "Hepatology consult",
+            "item": "Supportive care with serial LFT/INR/lactate/glucose monitoring; treat hypoglycemia",
             "points": 3
-          }
-        ],
-        "bonusActions": [
+          },
           {
-            "item": "Reserve NAC for cases where acetaminophen has not been excluded",
-            "points": 1
+            "item": "Medication reconciliation: hold metformin, hold/avoid amiodarone and high-dose statin, hold nephrotoxins/ACE-inhibitor, renally dose-adjust",
+            "points": 3
+          },
+          {
+            "item": "Hepatology consult; keep NAC running until acetaminophen fully excluded; avoid empiric steroids",
+            "points": 3
+          },
+          {
+            "item": "Safe discharge/disposition: admit to monitored bed; at discharge do med reconciliation, document LFT/renal/K recovery, poison-control/psychiatry safety screen with acetaminophen counseling, close cardiology and PCP follow-up",
+            "points": 5
           }
         ],
+        "bonusActions": [],
         "penalties": [
           {
             "item": "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)",
             "points": -3
+          },
+          {
+            "item": "Continuing metformin/amiodarone unchanged or discharging without med reconciliation and acetaminophen counseling",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state"
+        "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state",
+        "Treat the hyperkalemia urgently (calcium, insulin/dextrose) and address the AKI"
       ],
       "optionalActions": [
-        "Supportive care with serial LFT/INR/lactate monitoring",
-        "Avoid/adjust hepatotoxic and renally-cleared drugs; hold nephrotoxins",
-        "Treat precipitants and decompensated heart failure with cardiology input",
-        "Monitor for and manage AKI and hypoglycemia",
-        "Hepatology consult",
-        "Reserve NAC for cases where acetaminophen has not been excluded"
+        "Supportive care with serial LFT/INR/lactate/glucose monitoring; treat hypoglycemia",
+        "Medication reconciliation: hold metformin, hold/avoid amiodarone and high-dose statin, hold nephrotoxins/ACE-inhibitor, renally dose-adjust",
+        "Hepatology consult; keep NAC running until acetaminophen fully excluded; avoid empiric steroids",
+        "Safe discharge/disposition: admit to monitored bed; at discharge do med reconciliation, document LFT/renal/K recovery, poison-control/psychiatry safety screen with acetaminophen counseling, close cardiology and PCP follow-up"
       ],
       "unsafeActions": [
-        "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)"
+        "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)",
+        "Continuing metformin/amiodarone unchanged or discharging without med reconciliation and acetaminophen counseling"
       ],
       "consults": [
         "Cardiology",
         "Hepatology"
       ],
-      "disposition": "Admit",
+      "disposition": "Admit to monitored bed; safe discharge once hemodynamics, potassium, glucose, renal function, and LFTs recover, with med reconciliation, acetaminophen safety counseling, and close cardiology/PCP follow-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Acute Liver Injury & Failure (Ischemic Hepatitis)",
@@ -382,14 +401,17 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "acetaminophen_overdose",
+      "self_harm"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "68-year-old man, fatigued and mildly breathless, recovering after resuscitation. Cooperative but tires easily.",
+    "communicationStyle": "answers directly but does not volunteer extra information; a little defensive about the pain pills",
+    "affect": "68-year-old man, fatigued and mildly breathless, recovering after resuscitation. Cooperative but tires easily; guarded when asked about his Tylenol use.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (alcohol, acetaminophen excess, self-harm intent) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
+      "When asked about pain pills, be initially vague then admit to taking a few extra over several days, denying a single big overdose or self-harm",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -419,11 +441,29 @@
         "paracetamol",
         "did you take an overdose",
         "pain pills",
-        "how many tablets"
+        "how many tablets",
+        "tylenol with codeine",
+        "knee pills",
+        "did you take extra"
       ],
-      "response": "[Reveal the acetaminophen detail from patientFile only when asked about Tylenol/paracetamol/overdose; phrase in lay language.]",
+      "response": "[Reveal the acetaminophen-codeine bottle and staggered-excess detail from patientFile only when asked about Tylenol/paracetamol/pain pills/overdose; be initially vague then admit a few extra over days; phrase in lay language.]",
       "importance": "critical",
       "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "self_harm_intent",
+      "category": "social",
+      "triggerConcepts": [
+        "did you mean to hurt yourself",
+        "self harm",
+        "suicidal",
+        "intentional overdose",
+        "trying to harm yourself"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly — he denies any self-harm intent; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -494,7 +534,8 @@
         "heart failure",
         "prior heart attack",
         "past medical history",
-        "cardiac history"
+        "cardiac history",
+        "atrial fibrillation"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -509,7 +550,10 @@
         "what do you take",
         "drugs you take",
         "supplements",
-        "herbal remedies"
+        "herbal remedies",
+        "amiodarone",
+        "statin",
+        "metformin"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -557,7 +601,7 @@
     },
     {
       "id": "assess_jvp_finding_3",
-      "finding": "Cardiac: elevated JVP with a soft S3 gallop — volume overload/low-output heart failure.",
+      "finding": "Cardiac: elevated JVP with a soft S3 gallop and an irregularly irregular rhythm (known AF) — volume overload/low-output heart failure.",
       "revealedBy": [
         "assess_jvp",
         "auscultate_mitral_area"
@@ -578,7 +622,18 @@
       "normalIfNotPresent": "Abdomen soft and non-tender; no hepatomegaly."
     },
     {
-      "id": "inspect_sclera_finding_5",
+      "id": "assess_asterixis_finding_5",
+      "finding": "Neuro: alert and oriented x3; NO asterixis/flap — argues against established hepatic encephalopathy / fulminant failure at this point.",
+      "revealedBy": [
+        "assess_asterixis",
+        "assess_mental_status"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No asterixis; mentation intact."
+    },
+    {
+      "id": "inspect_sclera_finding_6",
       "finding": "General: not jaundiced; only mild scleral changes if any.",
       "revealedBy": [
         "inspect_sclera",
@@ -599,13 +654,14 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Ischemic hepatitis (shock liver)",
-    "diagnosticFramework": "68M with heart failure, admitted after a witnessed cardiac arrest and prolonged hypotension, now with markedly elevated transaminases noted on labs 24 hours later. The diagnosis is Ischemic hepatitis (shock liver), reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68M with ischemic cardiomyopathy (EF ~25%), CKD3, and diabetes, admitted after a witnessed cardiac arrest with ~30–45 minutes of profound hypotension, now with massive but already-downtrending transaminases. The diagnosis is Ischemic hepatitis (shock liver), but the picture is deliberately ambiguous: medics returned a nearly empty bottle of his acetaminophen-codeine knee pills (a genuine acetaminophen-toxicity competitor) and his polypharmacy includes amiodarone and high-dose atorvastatin (DILI confounders). It is resolved toward shock liver by the undetectable acetaminophen level, the low ALT:LDH ratio (~0.57), the disproportionately mild bilirubin, and the rapid downtrend with restored perfusion. Concurrent multi-system problems from the same insult — AKI with hyperkalemia (peaked T waves on the integrated EKG), a high-anion-gap (26) lactic acidosis, mild INR elevation, and hypoglycemia (glucose 48) — must be recognized and managed.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Vitals: BP 92/58, HR 104, marginal perfusion; persistent low-output state on reassessment.",
       "Cardiac/extremities: cool extremities with delayed capillary refill and thready peripheral pulses — low-output perfusion.",
-      "Cardiac: elevated JVP with a soft S3 gallop — volume overload/low-output heart failure.",
-      "Abdomen: soft with mild non-tender hepatomegaly; NO RUQ tenderness, NO Murphy sign, NO ascites."
+      "Cardiac: elevated JVP with a soft S3 gallop and an irregularly irregular rhythm (known AF) — volume overload/low-output heart failure.",
+      "Abdomen: soft with mild non-tender hepatomegaly; NO RUQ tenderness, NO Murphy sign, NO ascites.",
+      "Neuro: alert and oriented x3; NO asterixis/flap — argues against established hepatic encephalopathy."
     ],
     "keyDiagnosticFindings": [
       "LFTs",
@@ -613,21 +669,27 @@
       "LDH",
       "Acetaminophen",
       "ViralHepNAT",
-      "RenalCoags"
+      "RenalLytes",
+      "Coags_Gluc"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Ischemic hepatitis (shock liver) while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Ischemic hepatitis (shock liver) and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including the acetaminophen-codeine bottle and staggered-excess detail only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the low-output state and the absence of jaundice/asterixis.",
+      "Build a differential with a genuine fork — shock liver vs acetaminophen hepatotoxicity (plus viral, venous-outflow/congestive, and amiodarone/statin DILI) — and name distinct mechanisms of transaminases in the thousands.",
+      "Order a focused, order-sensitive workup (acetaminophen level, ALT:LDH ratio, electrolytes/gas, Doppler US) and interpret the integrated hyperkalemic EKG and the congestive CXR.",
+      "Commit to Ischemic hepatitis, naming the acetaminophen level + low ALT:LDH ratio as the discriminators and the residual staggered-ingestion uncertainty.",
+      "Manage by restoring perfusion, treating the hyperkalemia/AKI and hypoglycemia, reconciling hepatotoxic/renally-cleared meds, and arranging safe discharge with acetaminophen counseling and cardiology follow-up."
     ],
     "commonPitfalls": [
-      "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)"
+      "Anchoring on shock liver without taking the acetaminophen bottle seriously / not checking a level",
+      "Missing the hyperkalemic T waves on the EKG",
+      "Fluids/pressors without addressing the cardiac low-output cause (worsening congestion)",
+      "Continuing metformin/amiodarone unchanged or discharging without med reconciliation and acetaminophen counseling"
     ],
     "managementPearls": [
-      "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state"
+      "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state",
+      "Treat the hyperkalemia urgently (calcium, insulin/dextrose) and address the AKI"
     ],
     "criticalHistoryItems": [
       "arrest_hypotension",
@@ -639,27 +701,28 @@
     ],
     "criticalWorkupItems": [
       "LFTs with AST/ALT trend and LDH (ALT:LDH ratio)",
-      "Acetaminophen level",
+      "Acetaminophen level (with repeat/serial given possible staggered ingestion)",
       "RUQ ultrasound with Doppler"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation.",
-      "Cardiomegaly with pulmonary edema/congestion and small effusions."
+      "Peaked/tented T waves of hyperkalemia (K 6.4 from AKI) on a background of sinus tachycardia, low voltage, and old anteroseptal Q waves; no acute ST-elevation — a life-threat requiring immediate treatment.",
+      "Cardiomegaly with pulmonary edema/congestion and small bilateral effusions."
     ],
     "criticalManagementItems": [
-      "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state"
+      "Restore hepatic perfusion by treating the underlying cardiogenic shock/low-output state",
+      "Treat the hyperkalemia urgently (calcium, insulin/dextrose) and address the AKI"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation.",
-      "Cardiomegaly with pulmonary edema/congestion and small effusions."
+      "Peaked/tented T waves of hyperkalemia (K 6.4 from AKI) on a background of sinus tachycardia, low voltage, and old anteroseptal Q waves; no acute ST-elevation.",
+      "Cardiomegaly with pulmonary edema/congestion and small bilateral effusions."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia with low voltage and old anteroseptal Q waves; no acute ST-elevation.",
-      "Cardiomegaly with pulmonary edema/congestion and small effusions."
+      "Peaked/tented T waves of hyperkalemia (K 6.4 from AKI) on a background of sinus tachycardia, low voltage, and old anteroseptal Q waves; no acute ST-elevation.",
+      "Cardiomegaly with pulmonary edema/congestion and small bilateral effusions."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
+      "On a post-arrest EKG with AKI, look first for the peaked T waves of hyperkalemia — it is the life-threat to treat before anything else.",
+      "Old infarct Q waves are not an acute STEMI — read rate, rhythm, and the T waves systematically before committing.",
       "State pertinent negatives, not just positives."
     ]
   },
@@ -675,7 +738,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission and is non-judgmental before sensitive questions (pain-pill use, self-harm)",
         "points": 1
       },
       {
@@ -690,8 +753,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated pathology-forward interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

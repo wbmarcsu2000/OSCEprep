@@ -1,51 +1,55 @@
 {
   "id": "abdo-03",
   "category": "Abdominal Pain",
-  "difficulty": "moderate",
-  "title": "Epigastric pain radiating to the back",
+  "difficulty": "hard",
+  "title": "Epigastric pain radiating to the back in a poorly-controlled diabetic",
   "diagnosis": "Acute pancreatitis",
   "chart": {
     "ageSex": "50M",
     "cc": "Severe epigastric pain",
-    "oneLiner": "50M presents with 8 hours of severe constant epigastric pain radiating to the back, with nausea and vomiting, on a background of heavy alcohol use.",
+    "oneLiner": "50M with poorly-controlled type 2 diabetes, hypertriglyceridemia, and hypertension presents with 8 hours of severe constant epigastric pain radiating to the back, with nausea and vomiting, on a background of a recent alcohol binge and several missed doses of his triglyceride-lowering medication.",
     "vitals": {
-      "BP": "126/78",
-      "HR": "108",
-      "RR": "20",
+      "BP": "108/70",
+      "HR": "116",
+      "RR": "24",
       "Temp": "37.9°C",
-      "SpO2": "96% RA"
+      "SpO2": "95% RA"
     },
     "timer": 180
   },
   "opening": "I've got this terrible pain in the pit of my stomach that bores straight through to my back.",
-  "patientFile": "PERSONA: 50-year-old man, in significant pain, sitting forward/curled up. Cooperative but distracted by pain.\n\nHPI: 8h of severe, constant epigastric pain boring through to the back, WORSE lying flat, somewhat better leaning forward. Persistent nausea and vomiting. Drank heavily over the weekend (only volunteers heavy alcohol if asked about alcohol). NO hematemesis, NO black stools, NO chest pain radiating to arm/jaw.\nPMH: prior similar admission; hypertriglyceridemia (if asked). MEDS: none regularly. SOCIAL: drinks ~6–8 beers most days, escalating recently; smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: distressed, diaphoretic, tachycardic.\n- Vitals: BP 126/78, HR 108, RR 20, 37.9°C, SpO2 96% RA.\n- Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.\n- Cardiac: tachycardic, regular. Lungs: clear (reduced left base if examined).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the heavy alcohol use or hypertriglyceridemia unless asked about alcohol, diet, or medical history.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 50-year-old man, in significant pain, sitting forward/curled up, breathing a bit fast. Cooperative but distracted by pain.\n\nHPI: 8h of severe, constant epigastric pain boring through to the back, WORSE lying flat, somewhat better leaning forward. Persistent nausea and several episodes of vomiting. The pain came on a few hours after a weekend of heavy drinking. NO hematemesis, NO black/tarry stools, NO chest pressure or pain radiating to the arm/jaw, NO tearing/ripping back pain, NO sudden collapse or feeling faint. Bowels last opened yesterday, passing gas. He feels his heart racing and is breathing hard because of the pain.\nPMH: type 2 diabetes for ~10 years, poorly controlled (last A1c he was told was 'high, around 10'); high triglycerides/cholesterol; high blood pressure; one prior admission a few years ago for 'pancreas inflammation' after a binge. NO known gallstones, NO prior abdominal surgery. (Reveal these only if asked about medical history.)\nMEDS (reveal only if asked what he takes, and which ones he actually takes): metformin (often skips it); fenofibrate for triglycerides — RAN OUT about three weeks ago and has not refilled it; hydrochlorothiazide and lisinopril for blood pressure; an over-the-counter 'fat-burner / weight-loss' supplement a friend gave him. NO regular NSAIDs, NO steroids, NO new antibiotics. ALLERGIES: none.\nSOCIAL: drinks ~6–8 beers most days, escalating over the past month, and binged heavily this weekend; smokes half a pack a day; eats a lot of fast food, admits poor diet. Works as a long-haul driver. (Reveal alcohol/tobacco/diet only if asked about them.)\nFAMILY: father had diabetes; no family pancreatic or aortic disease. ROS: nausea/vomiting as above; no fevers/chills volunteered; no urinary symptoms; no leg swelling; no recent diarrhea; subjectively passing less urine today and feeling very thirsty.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: distressed, diaphoretic, tachypneic, dry-looking.\n- Vitals: BP 108/70, HR 116, RR 24, 37.9°C, SpO2 95% RA. (If orthostatics checked: HR rises >20 and BP drops on standing — volume down.)\n- Mucous membranes/skin: dry mucous membranes, poor skin turgor (volume depletion).\n- Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; NO rebound or rigidity elsewhere; no palpable pulsatile mass. No flank (Grey Turner) or periumbilical (Cullen) ecchymosis.\n- Cardiac: tachycardic, regular, no murmur. Lungs: clear but reduced air entry/dullness at the left base if examined.\n- Peripheral pulses: symmetric femoral and pedal pulses (no asymmetry to suggest dissection).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the heavy alcohol use, the missed fenofibrate, the diabetes/triglyceride history, the thiazide, the weight-loss supplement, or the poor diet unless asked about alcohol, diet, medical history, or specific medications.\n- Reveal exam findings only when that exam is performed; otherwise give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Lipase": "Lipase >3x the upper limit of normal — markedly elevated.",
-      "CBC": "WBC 15.0, Hgb 16.0 (hemoconcentration), Plt 230.",
-      "BMP": "BUN 26, Cr 1.3 (prerenal), glucose 180, calcium low-normal.",
-      "LFTs": "AST 70, ALT 60, bilirubin normal (alcohol pattern; ALT not >150 so gallstone cause less likely).",
-      "Triglycerides": "Elevated.",
-      "CT_abdomen": "CT (if obtained, usually not needed early): pancreatic edema/peripancreatic stranding; no necrosis on initial scan."
+      "Lipase": "Lipase ~2.5x the upper limit of normal — elevated, but note it is NOT dramatically high; in hypertriglyceridemia-induced pancreatitis the assay can be falsely lowered by the lipemic sample, so a only-modestly-elevated lipase does NOT exclude severe pancreatitis. Diagnosis still met (≥3x not required when pain is characteristic and imaging supports).",
+      "Triglycerides": "Triglycerides markedly elevated at 4200 mg/dL (>1000 strongly implicates hypertriglyceridemia as the precipitant; serum grossly lipemic).",
+      "CBC": "WBC 16.5, Hgb 17.5 / Hct 53% (hemoconcentration from third-spacing), Plt 240. Hemoconcentration is an early severity marker.",
+      "BMP": "Na 138, K 4.2, Cl 100, HCO3 16, BUN 34, Cr 1.6 (baseline ~0.9 → acute kidney injury, prerenal). Glucose 410. Calculated anion gap = 138 − (100 + 16) = 22 (elevated anion-gap metabolic acidosis).",
+      "Calcium": "Total calcium 7.4 mg/dL (low; albumin normal so truly hypocalcemic) — from fat saponification; contributes to a prolonged QT on the EKG.",
+      "VBG_lactate": "VBG: pH 7.28, HCO3 16, anion-gap metabolic acidosis; lactate 3.6 mmol/L (hypoperfusion/third-spacing). A mild ketosis/early DKA picture is possible given glucose 410 — check beta-hydroxybutyrate.",
+      "LFTs": "AST 95, ALT 70, alkaline phosphatase normal, total bilirubin normal. ALT is NOT >150 and ALP/bilirubin are normal, arguing AGAINST a gallstone (biliary) cause.",
+      "CT_abdomen": "CT (deferred early; obtained only if diagnosis unclear or no improvement): diffuse pancreatic enlargement with peripancreatic fat stranding and a small amount of peripancreatic fluid; NO necrosis or organized collection on this early scan; aorta normal caliber with no aneurysm/dissection; no free air."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 23,
+      "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS.",
-      "verify": "Source a study matching: Tall peaked symmetric T waves, flattening/loss of P waves, broadening QRS. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia with a prolonged QT interval (long QTc) from hypocalcemia; ST/T morphology otherwise non-ischemic. No inferior ST elevation to suggest an inferior MI mimicking the pain.",
+      "verify": "Source a study matching: sinus tachycardia with a markedly prolonged QT interval; no acute inferior ST-elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing hyperkalemia peaked T waves",
+      "imageDescription": "12-lead showing sinus tachycardia with a long QT interval and no acute ischemic ST elevation",
       "searchTerms": [
-        "hyperkalemia peaked T waves ECG",
-        "hyperkalaemia ECG sine wave"
+        "long QT hypocalcemia ECG",
+        "prolonged QT interval 12 lead ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 55-year-old man with known kidney disease presents with weakness and muscle cramps."
+      "clinicalVignette": "A man with severe pancreatitis and a low serum calcium has a fast rhythm with a stretched-out QT interval on his EKG."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
@@ -61,41 +65,45 @@
         "basal atelectasis upright chest radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 60-year-old man with upper abdominal pain and shortness of breath has an upright chest film."
+      "clinicalVignette": "A man with upper abdominal pain and fast breathing has an upright chest film."
     }
   },
   "revealKeys": [
     "Lipase",
+    "Triglycerides",
     "CBC",
     "BMP",
+    "Calcium",
+    "VBG_lactate",
     "LFTs",
-    "Triglycerides",
     "CT_abdomen",
     "ekg",
     "cxr"
   ],
   "essential": [
     "Lipase",
-    "BMP"
+    "Triglycerides",
+    "BMP",
+    "Calcium"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute pancreatitis (leading,8). Perforated peptic ulcer (CANT-MISS,4). Acute cholecystitis / choledocholithiasis (core,3). Inferior MI (CANT-MISS,3). Mesenteric ischemia (CANT-MISS,3). Ruptured AAA (bonus,2). Named leading dx w/ justification — epigastric-to-back pain, alcohol (core,2).",
-      "idealAnswer": "Leading diagnosis: Acute pancreatitis. Must-not-miss diagnoses to exclude: Perforated peptic ulcer; Inferior MI; Mesenteric ischemia. Also reasonable: Acute cholecystitis / choledocholithiasis.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). Also explicitly name three distinct etiologies/mechanisms of acute pancreatitis you would want to sort out in THIS patient.",
+      "rubric": "Acute pancreatitis (leading,7). Perforated peptic ulcer (CANT-MISS,3). Inferior MI (CANT-MISS,3). Mesenteric ischemia (CANT-MISS,2). Ruptured/leaking AAA or aortic dissection (CANT-MISS,2). Acute cholecystitis / choledocholithiasis (core,1). DKA presenting as abdominal pain (core,2). Names ≥3 etiologies of pancreatitis relevant here — alcohol, hypertriglyceridemia (TG>1000), drug-induced (thiazide/HCTZ), gallstones (core,3). Named leading dx w/ justification — epigastric-to-back pain, binge + missed fibrate, prior episode (core,2). PENALTY: anchoring on alcohol alone and ignoring the triglyceride/drug precipitant (-2); calling it definitely gallstone without biliary labs (-1).",
+      "idealAnswer": "Leading diagnosis: Acute pancreatitis. Must-not-miss alternatives to exclude with the EKG/CXR/labs: Perforated peptic ulcer, Inferior MI, Mesenteric ischemia, and a Ruptured/leaking AAA or aortic dissection (back pain). Also consider acute cholecystitis/choledocholithiasis and DKA presenting as abdominal pain (glucose 410). Three etiologies/mechanisms to sort out in HIM specifically: (1) alcohol (weekend binge, daily use); (2) hypertriglyceridemia — he ran out of fenofibrate ~3 weeks ago and has a TG >1000; (3) drug-induced — hydrochlorothiazide both raises triglycerides and is itself a recognized cause; gallstones are less likely given normal ALT/ALP/bilirubin. The competing fork is alcohol-induced vs hypertriglyceridemia-induced pancreatitis — both are defensible until the triglyceride level returns.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Acute pancreatitis",
-            "points": 8
+            "points": 7
           },
           {
             "item": "Perforated peptic ulcer",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Inferior MI",
@@ -103,34 +111,52 @@
           },
           {
             "item": "Mesenteric ischemia",
-            "points": 3
+            "points": 2
+          },
+          {
+            "item": "Ruptured/leaking AAA or aortic dissection",
+            "points": 2
           }
         ],
         "coreActions": [
           {
             "item": "Acute cholecystitis / choledocholithiasis",
+            "points": 1
+          },
+          {
+            "item": "DKA presenting as abdominal pain",
+            "points": 2
+          },
+          {
+            "item": "Names ≥3 etiologies of pancreatitis — alcohol, hypertriglyceridemia, thiazide/drug, gallstones",
             "points": 3
           },
           {
-            "item": "Named leading dx w/ justification — epigastric-to-back pain, alcohol",
+            "item": "Named leading dx w/ justification — epigastric-to-back pain, binge + missed fibrate, prior episode",
             "points": 2
           }
         ],
-        "bonusActions": [
+        "bonusActions": [],
+        "penalties": [
           {
-            "item": "Ruptured AAA",
-            "points": 2
+            "item": "Anchoring on alcohol alone and ignoring the triglyceride/drug precipitant",
+            "points": -2
+          },
+          {
+            "item": "Calling it definitely gallstone without biliary labs",
+            "points": -1
           }
-        ],
-        "penalties": []
+        ]
       },
       "mustNotMiss": [
         "Perforated peptic ulcer",
         "Inferior MI",
-        "Mesenteric ischemia"
+        "Mesenteric ischemia",
+        "Ruptured/leaking AAA or aortic dissection"
       ],
       "acceptableAlternatives": [
-        "Acute cholecystitis / choledocholithiasis"
+        "Acute cholecystitis / choledocholithiasis",
+        "DKA presenting as abdominal pain"
       ]
     },
     {
@@ -139,60 +165,74 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Lipase (CANT-MISS,5). CBC (2). BMP incl. calcium/glucose (3). LFTs (2). Triglycerides (1). Right upper quadrant ultrasound to assess gallstone etiology (1). EKG (1). PENALTY: routine early CT in clear-cut mild pancreatitis (low yield) (-1); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; Lipase; CBC; BMP; LFTs; Triglycerides; CT abdomen/pelvis.",
+      "rubric": "Lipase (CANT-MISS,4). Triglyceride level — given the picture, essential to confirm the precipitant (CANT-MISS,3). BMP incl. calcium/glucose + VBG/lactate to catch AKI, anion-gap acidosis, hypocalcemia (core,3). CBC for hemoconcentration (core,1). LFTs to assess biliary cause (core,1). EKG (1). CXR (1). RUQ ultrasound for gallstones (bonus,1). Beta-hydroxybutyrate given glucose 410 (bonus,1). PENALTY: routine early CT in a clear-cut clinical/biochemical diagnosis (low yield) (-1); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: EKG; CXR; Lipase; Triglycerides; CBC; BMP (with calcium and glucose); a VBG with lactate and a beta-hydroxybutyrate (glucose 410); LFTs; right-upper-quadrant ultrasound to look for gallstones. Defer CT abdomen/pelvis early — reserve it for diagnostic uncertainty or failure to improve. Be aware that a lipemic sample can falsely LOWER the measured lipase in hypertriglyceridemia, so a only-modestly-elevated lipase does not exclude the diagnosis.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
             "item": "Lipase",
-            "points": 5
+            "points": 4
+          },
+          {
+            "item": "Triglycerides",
+            "points": 3
           }
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
+            "item": "BMP with calcium/glucose + VBG/lactate",
+            "points": 3
           },
           {
             "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
+            "points": 1
           },
           {
             "item": "LFTs",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Triglycerides",
-            "points": 2
+            "item": "EKG",
+            "points": 1
           },
           {
-            "item": "CT abdomen/pelvis",
-            "points": 2
+            "item": "CXR",
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "RUQ ultrasound for gallstones",
+            "points": 1
+          },
+          {
+            "item": "Beta-hydroxybutyrate given glucose 410",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "routine early CT in clear-cut mild pancreatitis (low yield)",
+            "item": "routine early CT in a clear-cut clinical/biochemical diagnosis (low yield)",
             "points": -1
+          },
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Lipase"
+        "Lipase",
+        "Triglycerides"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "RUQ ultrasound for gallstones",
+        "Beta-hydroxybutyrate given glucose 410"
+      ],
       "contraindicatedTests": [
-        "routine early CT in clear-cut mild pancreatitis (low yield)"
+        "routine early CT in a clear-cut clinical/biochemical diagnosis (low yield)",
+        "shotgun panel w/ no reasoning"
       ],
       "orderSensitiveActions": []
     },
@@ -202,33 +242,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = a hyperkalemia pattern — tall peaked symmetric T waves, P-wave flattening/loss, and a broadening QRS. CREDIT: identifies the peaked T waves and QRS widening (7); recognizes this as a time-critical hyperkalemia pattern requiring urgent treatment (5); systematic read (3). PENALTY: calling the study normal / dismissing peaked T waves as a normal variant / missing the abnormality (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and relate them to his labs.",
+      "rubric": "Findings = sinus tachycardia with a PROLONGED QT interval (long QTc) from hypocalcemia, and — importantly — NO acute inferior ST-elevation to suggest the inferior MI that was on the differential. CREDIT: identifies sinus tachycardia and the long QT (7); attributes the long QT to hypocalcemia (low calcium 7.4 from saponification) and flags torsades risk (5); explicitly states there is no acute ischemia/inferior STEMI, excluding the cardiac mimic (3). PENALTY: missing the prolonged QT / calling the tracing normal (-3); over-reading it as an acute MI (-2).",
       "keyFindings": [
-        "peaked T waves",
-        "recognizes a hyperkalemia pattern as urgent"
+        "sinus tachycardia with a prolonged QT interval",
+        "no acute ischemic ST elevation"
       ],
       "criticalFindings": [
-        "Hyperkalemia pattern: peaked T waves with QRS widening."
+        "Sinus tachycardia with a prolonged QT (long QTc) from hypocalcemia; no acute inferior ST-elevation."
       ],
       "commonMistakes": [
-        "dismissing peaked T waves as a normal variant",
-        "missing the loss of P waves"
+        "missing the prolonged QT interval",
+        "over-reading the tracing as an acute inferior MI",
+        "not linking the long QT to the low calcium"
       ],
-      "idealAnswer": "Hyperkalemia: tall peaked T waves, P-wave flattening, widening QRS — a time-critical pattern.",
+      "idealAnswer": "Sinus tachycardia with a prolonged QT interval (long QTc). The QT prolongation fits his hypocalcemia (calcium 7.4 from fat saponification in pancreatitis) and puts him at risk for torsades — correct the calcium and avoid further QT-prolonging drugs. Critically, there is NO acute inferior ST-elevation or other ischemic change, which argues against the inferior MI on the differential as the cause of his epigastric pain.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Hyperkalemia pattern: peaked T waves with QRS widening."
+          "Sinus tachycardia with a prolonged QT (long QTc) from hypocalcemia; no acute inferior ST-elevation."
         ],
         "coreActions": [
-          "peaked T waves",
-          "recognizes a hyperkalemia pattern as urgent"
+          "sinus tachycardia with a prolonged QT interval",
+          "no acute ischemic ST elevation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "misses the prolonged QT / calls the tracing normal / over-reads as MI",
             "points": -3
           }
         ]
@@ -241,28 +282,30 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = small basal/left effusion or atelectasis; NO free air. CREDIT: identifies a small effusion/atelectasis or a normal film (5); specifically excludes free air (perforation) (5). PENALTY: missing the importance of excluding free air (-1).",
+      "rubric": "Findings = small basal/left pleural effusion or atelectasis (a recognized finding in pancreatitis); NO free air under the diaphragm. CREDIT: identifies a small left effusion/basal atelectasis or a normal film (5); specifically excludes free air (perforated viscus) (5). PENALTY: missing the importance of excluding free air, or inventing pathology (-1).",
       "keyFindings": [
-        "identifies a small effusion/atelectasis or a normal film"
+        "identifies a small left effusion/atelectasis or a normal film",
+        "no free air under the diaphragm"
       ],
       "criticalFindings": [
         "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
       ],
       "commonMistakes": [
-        "missing the importance of excluding free air"
+        "missing the importance of excluding free air",
+        "inventing an infiltrate on a clear film"
       ],
-      "idealAnswer": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+      "idealAnswer": "Possible small left pleural effusion and basal atelectasis — a recognized sympathetic finding in acute pancreatitis. Importantly, there is no free air under the diaphragm to suggest a perforated viscus.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes: Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
+            "item": "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm.",
             "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "identifies a small effusion/atelectasis or a normal film",
+            "item": "identifies a small effusion/atelectasis or a normal film and excludes free air",
             "points": 5
           }
         ],
@@ -279,19 +322,14 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the labs, what is your diagnosis and how do you assess severity?",
-      "rubric": "Acute pancreatitis, likely alcohol-induced (5). Diagnosis = 2 of 3: characteristic pain, lipase >3x ULN, imaging (3). Assesses severity (BUN/creatinine, hemoconcentration, SIRS) (bonus,2).",
-      "idealAnswer": "Acute pancreatitis, likely alcohol-induced — diagnosis by the characteristic epigastric-to-back pain plus a lipase >3x the upper limit of normal (2 of 3 criteria). Assess severity with markers of volume depletion and end-organ stress: rising BUN/creatinine (BUN 26, Cr 1.3), hemoconcentration (Hgb 16), and SIRS.",
+      "prompt": "Given the labs and EKG, what is your diagnosis, what is the most likely etiology, and how do you assess severity? Name the discriminating test and any residual ambiguity.",
+      "rubric": "Acute pancreatitis, most likely HYPERTRIGLYCERIDEMIA-induced (TG 4200, missed fenofibrate) with alcohol as a contributing precipitant (5). States the diagnosis is met by 2 of 3 (characteristic pain + lipase + imaging) and that the discriminating test was the triglyceride level — and notes the lipemic-sample pitfall that can falsely lower lipase (3). Assesses severity and the concurrent problems: AKI (BUN 34/Cr 1.6), hemoconcentration (Hct 53), anion-gap metabolic acidosis with lactate, hypocalcemia driving the long QT, hyperglycemia/possible early DKA, SIRS (2).",
+      "idealAnswer": "Acute pancreatitis — most likely hypertriglyceridemia-induced given a triglyceride of 4200 mg/dL after running out of fenofibrate, with the weekend alcohol binge and his thiazide as contributing precipitants. The diagnosis is met by 2 of 3 criteria (characteristic epigastric-to-back pain plus supportive lipase and CT findings); the discriminating test that resolved the alcohol-vs-triglyceride fork was the triglyceride level. Residual ambiguity: a lipemic sample can falsely lower the measured lipase, so the only-modestly-elevated lipase should NOT have been falsely reassuring; and gallstones, though unlikely with normal ALT/ALP/bilirubin, are formally excluded by RUQ ultrasound. This is NOT mild disease: he has multi-system involvement — AKI (BUN 34, Cr 1.6) and hemoconcentration (Hct 53) marking severity, an anion-gap metabolic acidosis (gap 22) with a lactate of 3.6, hypocalcemia (7.4) that explains the prolonged QT on his EKG, hyperglycemia (410) with possible early DKA, and SIRS physiology.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Assesses severity (BUN/creatinine, hemoconcentration, SIRS)",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       }
     },
@@ -299,42 +337,50 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH pancreatitis (WATERFALL): controlled IV fluids – lactated Ringer's, titrate to BUN/HCT (CANT-MISS,7); analgesia (4); antiemetics (2); early enteral nutrition as tolerated (4); treat underlying cause / ERCP if gallstone + cholangitis (4); monitor for severity (SIRS, organ failure) (2). PENALTY: prophylactic antibiotics in uncomplicated pancreatitis (-3); prolonged NPO / over-aggressive late fluids (-2).",
-      "idealAnswer": "Aggressive but controlled IV fluid resuscitation – lactated Ringer's preferred (avoid LR if hypercalcemia), ~3–4 L in first 24 h titrated to keep BUN/HCT from rising; avoid over-resuscitation after 24–48 h. Analgesia and antiemetics. Early enteral feeding as tolerated. Treat the cause (e.g. ERCP for gallstone pancreatitis with cholangitis). No prophylactic antibiotics.",
+      "prompt": "What is your management plan, including how you would treat the underlying cause and your disposition/safe-discharge thinking?",
+      "rubric": "Per MGH pancreatitis: goal-directed IV fluid resuscitation — lactated Ringer's, titrated to BUN/HCT and urine output, avoiding over-resuscitation after 24–48h (CANT-MISS,6). Analgesia (3); antiemetics (2); early enteral nutrition as tolerated (2). Treat the underlying cause — lower triglycerides (insulin infusion +/- apheresis for TG>1000 with end-organ injury; restart fibrate once eating), manage hyperglycemia/possible DKA, hold the thiazide and the weight-loss supplement, counsel alcohol cessation (CANT-MISS,5). Correct hypocalcemia and monitor the QT / telemetry (2). Monitor for severity / organ failure, ICU if worsening (2). Disposition: ADMIT (not safe to discharge) — med reconciliation (stop HCTZ/supplement, restart fibrate, diabetes regimen), alcohol-cessation support, dietitian/lipid follow-up, close PCP follow-up (3). PENALTY: prophylactic antibiotics without infection (-3); discharging this patient home (-3); giving a QT-prolonging antiemetic without checking/correcting calcium (-2).",
+      "idealAnswer": "Goal-directed IV fluid resuscitation with lactated Ringer's, titrated to BUN/HCT, lactate clearance, and urine output, with reassessment to avoid over-resuscitation after the first 24–48h. Analgesia and antiemetics (be cautious with QT-prolonging antiemetics given his long QT/low calcium — correct calcium and use telemetry). Early enteral nutrition as tolerated. TREAT THE CAUSE: lower the triglycerides — an insulin infusion (with glucose monitoring) and/or plasmapheresis for a triglyceride >1000 with end-organ injury, then restart fenofibrate once he is eating; manage the hyperglycemia/possible early DKA; HOLD the hydrochlorothiazide (worsens triglycerides) and stop the weight-loss supplement; counsel and support alcohol cessation. Correct the hypocalcemia and monitor the QT on telemetry. Monitor severity (SIRS, organ failure, AKI) and escalate to ICU if he worsens. Disposition: ADMIT — this is not safe to discharge given AKI, acidosis, hemoconcentration, and a long QT. Safe-discharge planning for later: medication reconciliation (stop HCTZ and the supplement, restart the fibrate, optimize the diabetes regimen), alcohol-cessation resources, dietitian/lipid-clinic referral, and close primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "IV fluid resuscitation (lactated Ringer's)",
-            "points": 7
+            "item": "Goal-directed IV fluid resuscitation (lactated Ringer's, titrated to BUN/HCT/urine output)",
+            "points": 6
+          },
+          {
+            "item": "Treat the cause — lower triglycerides (insulin infusion +/- apheresis), hold thiazide/supplement, alcohol cessation",
+            "points": 5
           }
         ],
         "coreActions": [
           {
             "item": "Analgesia",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Early enteral nutrition as tolerated",
-            "points": 4
-          },
-          {
-            "item": "Treat underlying cause / ERCP if indicated",
-            "points": 4
-          },
-          {
-            "item": "Antiemetics",
             "points": 2
           },
           {
-            "item": "Monitor severity (SIRS/organ failure)",
+            "item": "Antiemetics (caution with QT-prolonging agents)",
             "points": 2
+          },
+          {
+            "item": "Correct hypocalcemia and monitor QT on telemetry",
+            "points": 2
+          },
+          {
+            "item": "Monitor severity (SIRS/organ failure/AKI); ICU if worsening",
+            "points": 2
+          },
+          {
+            "item": "Admit with safe-discharge planning: med reconciliation, alcohol-cessation support, dietitian/lipid + close PCP follow-up",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Lipid/triglyceride or calcium workup if indicated",
+            "item": "Manage hyperglycemia / treat possible early DKA",
             "points": 1
           }
         ],
@@ -342,25 +388,37 @@
           {
             "item": "Prophylactic antibiotics without infection",
             "points": -3
+          },
+          {
+            "item": "Discharging this patient home",
+            "points": -3
+          },
+          {
+            "item": "QT-prolonging antiemetic without checking/correcting calcium",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "IV fluid resuscitation (lactated Ringer's)"
+        "Goal-directed IV fluid resuscitation (lactated Ringer's, titrated to BUN/HCT/urine output)",
+        "Treat the cause — lower triglycerides (insulin infusion +/- apheresis), hold thiazide/supplement, alcohol cessation"
       ],
       "optionalActions": [
         "Analgesia",
         "Early enteral nutrition as tolerated",
-        "Treat underlying cause / ERCP if indicated",
-        "Antiemetics",
-        "Monitor severity (SIRS/organ failure)",
-        "Lipid/triglyceride or calcium workup if indicated"
+        "Antiemetics (caution with QT-prolonging agents)",
+        "Correct hypocalcemia and monitor QT on telemetry",
+        "Monitor severity (SIRS/organ failure/AKI); ICU if worsening",
+        "Admit with safe-discharge planning: med reconciliation, alcohol-cessation support, dietitian/lipid + close PCP follow-up",
+        "Manage hyperglycemia / treat possible early DKA"
       ],
       "unsafeActions": [
-        "Prophylactic antibiotics without infection"
+        "Prophylactic antibiotics without infection",
+        "Discharging this patient home",
+        "QT-prolonging antiemetic without checking/correcting calcium"
       ],
       "consults": [],
-      "disposition": "Admit; ICU if severe",
+      "disposition": "Admit; ICU if severe (AKI, acidosis, organ failure)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Pancreatitis",
@@ -376,12 +434,14 @@
     "cooperativeness": "high",
     "sensitiveTopics": [
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "medication_nonadherence",
+      "diet"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "50-year-old man, in significant pain, sitting forward/curled up. Cooperative but distracted by pain.",
+    "affect": "50-year-old man, in significant pain, sitting forward/curled up, breathing fast. Cooperative but distracted by pain.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal alcohol/tobacco/diet, the missed fenofibrate, the thiazide, or the weight-loss supplement unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -396,7 +456,8 @@
         "drinking",
         "how much do you drink",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "binge"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -414,7 +475,22 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diet",
+      "category": "social",
+      "triggerConcepts": [
+        "diet",
+        "what do you eat",
+        "fatty food",
+        "fast food",
+        "nutrition"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -438,7 +514,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "radiate",
+        "tearing"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -464,7 +542,12 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "nausea",
+        "vomiting",
+        "chest pain",
+        "thirsty",
+        "urinating"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -478,7 +561,9 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "lying flat",
+        "leaning forward"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -491,7 +576,11 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "triglycerides",
+        "cholesterol",
+        "blood pressure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -504,11 +593,18 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "fenofibrate",
+        "fibrate",
+        "hydrochlorothiazide",
+        "water pill",
+        "supplement",
+        "missed any doses",
+        "ran out"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
-      "points": 1,
+      "points": 2,
       "hiddenUntilAsked": false
     },
     {
@@ -517,7 +613,8 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "pancreatitis before"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -528,7 +625,7 @@
   "physicalExamMappings": [
     {
       "id": "assess_rebound_tenderness_finding_1",
-      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
       "revealedBy": [
         "assess_rebound_tenderness"
       ],
@@ -538,7 +635,7 @@
     },
     {
       "id": "assess_guarding_finding_2",
-      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
       "revealedBy": [
         "assess_guarding"
       ],
@@ -548,7 +645,7 @@
     },
     {
       "id": "palpate_all_quadrants_finding_3",
-      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
       "revealedBy": [
         "palpate_all_quadrants"
       ],
@@ -557,18 +654,28 @@
       "normalIfNotPresent": "No epigastric tenderness."
     },
     {
-      "id": "inspect_abdomen_finding_4",
-      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "id": "assess_mucous_membranes_finding_4",
+      "finding": "Dry mucous membranes and poor skin turgor, consistent with volume depletion from third-spacing and vomiting.",
       "revealedBy": [
-        "inspect_abdomen"
+        "assess_mucous_membranes"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "Abdomen not distended."
+      "normalIfNotPresent": "Mucous membranes moist."
     },
     {
-      "id": "auscultate_bowel_sounds_finding_5",
-      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
+      "id": "obtain_orthostatic_vitals_finding_5",
+      "finding": "Orthostatic: HR rises >20 bpm and BP drops on standing — volume depletion.",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No orthostatic change."
+    },
+    {
+      "id": "auscultate_bowel_sounds_finding_6",
+      "finding": "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
       "revealedBy": [
         "auscultate_bowel_sounds"
       ],
@@ -577,14 +684,24 @@
       "normalIfNotPresent": "Normal bowel sounds."
     },
     {
-      "id": "assess_general_appearance_finding_6",
-      "finding": "General: distressed, diaphoretic, tachycardic.",
+      "id": "assess_peripheral_pulses_finding_7",
+      "finding": "Symmetric femoral and pedal pulses; no asymmetry or pulse deficit to suggest aortic dissection.",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Symmetric peripheral pulses."
+    },
+    {
+      "id": "assess_general_appearance_finding_8",
+      "finding": "General: distressed, diaphoretic, tachypneic, dry-looking.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No tremor or diaphoresis."
+      "normalIfNotPresent": "No distress or diaphoresis."
     }
   ],
   "overallScoring": {
@@ -597,64 +714,75 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute pancreatitis",
-    "diagnosticFramework": "50M presents with 8 hours of severe constant epigastric pain radiating to the back, with nausea and vomiting, on a background of heavy alcohol use. The diagnosis is Acute pancreatitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "50M with poorly-controlled type 2 diabetes, hypertriglyceridemia, and hypertension presents with 8 hours of severe constant epigastric pain radiating to the back, with nausea and vomiting, after a weekend alcohol binge and ~3 weeks off his fenofibrate. The diagnosis is Acute pancreatitis — most likely hypertriglyceridemia-induced (TG 4200) with alcohol and a thiazide as contributing precipitants — reached by eliciting the focused history (alcohol, missed fibrate, thiazide, diet), performing the targeted exam, interpreting a directed workup (lipase, triglycerides, BMP/calcium/VBG), and recognizing the concurrent multi-system problems (AKI, anion-gap acidosis, hypocalcemia with a long QT, hyperglycemia) while excluding the must-not-miss alternatives (perforated ulcer, inferior MI, mesenteric ischemia, AAA/dissection).",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
-      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
-      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
-      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
-      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; no rebound elsewhere; mild distension. No flank/periumbilical ecchymosis.",
-      "General: distressed, diaphoretic, tachycardic."
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
+      "Dry mucous membranes and poor skin turgor, consistent with volume depletion from third-spacing and vomiting.",
+      "Orthostatic: HR rises >20 bpm and BP drops on standing — volume depletion.",
+      "Abdomen: marked epigastric tenderness with voluntary guarding; reduced bowel sounds; mild distension; no rebound or rigidity elsewhere; no palpable pulsatile mass. No flank/periumbilical ecchymosis.",
+      "Symmetric femoral and pedal pulses; no asymmetry or pulse deficit to suggest aortic dissection.",
+      "General: distressed, diaphoretic, tachypneic, dry-looking."
     ],
     "keyDiagnosticFindings": [
       "Lipase",
+      "Triglycerides",
       "CBC",
       "BMP",
+      "Calcium",
+      "VBG_lactate",
       "LFTs",
-      "Triglycerides",
       "CT_abdomen"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute pancreatitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute pancreatitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (tachycardia, tachypnea, narrowing BP).",
+      "Elicit the focused history, including alcohol, the missed fenofibrate, the thiazide, and diet only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal epigastric peritonism, volume depletion, and symmetric pulses.",
+      "Build a differential led by Acute pancreatitis while explicitly excluding perforated ulcer, inferior MI, mesenteric ischemia, and AAA/dissection, and name three etiologies of pancreatitis.",
+      "Order a focused workup (lipase, triglycerides, BMP/calcium/VBG) and interpret the long-QT EKG, the CXR, and the multi-system labs.",
+      "Commit to hypertriglyceridemia-induced acute pancreatitis, assess severity, and manage with goal-directed fluids, cause-directed therapy (lower triglycerides, hold thiazide, alcohol cessation), QT/calcium correction, admission, and safe-discharge planning."
     ],
     "commonPitfalls": [
+      "Anchoring on alcohol alone and missing the triglyceride/drug precipitant",
+      "Being falsely reassured by an only-modestly-elevated lipase in a lipemic sample",
+      "Discharging this patient home despite AKI, acidosis, and a long QT",
+      "Giving a QT-prolonging antiemetic without correcting calcium",
       "Prophylactic antibiotics without infection"
     ],
     "managementPearls": [
-      "IV fluid resuscitation (lactated Ringer's)"
+      "Goal-directed IV fluid resuscitation (lactated Ringer's, titrated to BUN/HCT/urine output)",
+      "Treat the cause — lower triglycerides (insulin infusion +/- apheresis), hold thiazide, alcohol cessation"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "assess_rebound_tenderness"
     ],
     "criticalWorkupItems": [
-      "Lipase"
+      "Lipase",
+      "Triglycerides"
     ],
     "criticalInterpretationItems": [
-      "Hyperkalemia pattern: tall peaked T waves with P-wave flattening and QRS widening — time-critical.",
+      "Sinus tachycardia with a prolonged QT (long QTc) from hypocalcemia; no acute inferior ST-elevation.",
       "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
     ],
     "criticalManagementItems": [
-      "IV fluid resuscitation (lactated Ringer's)"
+      "Goal-directed IV fluid resuscitation (lactated Ringer's, titrated to BUN/HCT/urine output)",
+      "Treat the cause — lower triglycerides (insulin infusion +/- apheresis), hold thiazide/supplement, alcohol cessation"
     ],
     "keyImageInterpretationFindings": [
-      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Sinus tachycardia with a prolonged QT (long QTc) from hypocalcemia; no acute inferior ST-elevation.",
       "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
     ],
     "criticalImageInterpretationFindings": [
-      "Hyperkalemia pattern: peaked T waves with QRS widening.",
+      "Sinus tachycardia with a prolonged QT (long QTc) from hypocalcemia; no acute inferior ST-elevation.",
       "Possible small left pleural effusion and basal atelectasis; no free air under the diaphragm."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "A prolonged QT in a pancreatitis patient should prompt a look at the serum calcium — saponification causes hypocalcemia.",
+      "On an abdominal-pain EKG, the deliberate pertinent negative is the absence of an acute inferior STEMI mimicking the pain.",
+      "On the chest film, exclude free air under the diaphragm and note a sympathetic basal effusion."
     ]
   },
   "communicationScoring": {
@@ -665,11 +793,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's pain and concern",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions (alcohol, adherence)",
         "points": 1
       },
       {
@@ -684,8 +812,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated case-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

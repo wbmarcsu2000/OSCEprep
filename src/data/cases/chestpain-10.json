@@ -1,0 +1,802 @@
+{
+  "id": "chestpain-10",
+  "category": "Chest Pain",
+  "difficulty": "hard",
+  "title": "Crushing substernal chest pain and an anterior STEMI-pattern EKG hours after sudden bereavement",
+  "diagnosis": "Takotsubo (stress) cardiomyopathy",
+  "chart": {
+    "ageSex": "68F",
+    "cc": "Chest pain",
+    "oneLiner": "68F with HTN, COPD on a recent prednisone burst, depression on citalopram, and osteoporosis presents with ~2 hours of crushing substernal chest pressure, dyspnea, and diaphoresis that began acutely while she was at her husband's funeral arrangements — he died unexpectedly two days ago. The EKG shows an anterior ST-elevation-pattern with evolving deep precordial T-wave inversions and a markedly prolonged QT, and the troponin is only mildly elevated.",
+    "vitals": {
+      "BP": "148/86",
+      "HR": "104",
+      "RR": "22",
+      "Temp": "36.9°C",
+      "SpO2": "94% RA"
+    },
+    "timer": 180
+  },
+  "opening": "It feels like something is sitting on my chest and squeezing — it came on all at once while I was making the arrangements. I lost my husband two days ago and now this. I can't catch my breath.",
+  "patientFile": "PERSONA: 68-year-old recently widowed woman, tearful and frightened, clutching her chest. Cooperative but emotionally overwhelmed; apologizes for crying. Speaks in plain language, no medical training.\n\nHPI: ~2 hours of CRUSHING, heavy substernal chest PRESSURE, like a weight sitting on the breastbone, with radiation up into the throat and jaw. Came on ABRUPTLY while she was at the funeral home arranging her husband's service — he died suddenly of a heart attack two days ago and she found him. Associated SHORTNESS OF BREATH, diaphoresis (broke out in a cold sweat), nausea, lightheadedness. Pain is constant, not pleuritic, not positional, not reproducible by pressing on the chest, no relation to swallowing or food. She took one of her old nitroglycerin-type tablets a neighbor gave her with only slight, brief relief. NO tearing/ripping pain radiating to the back; NO migrating pain; NO syncope; NO calf pain or swelling; NO recent immobilization, long flights, or surgery; NO hemoptysis; NO fever or productive cough beyond her baseline COPD; NO vomiting of blood; NO recent forceful vomiting. She has never had pain like this before. She keeps saying the timing — right after her husband died of a heart attack — terrifies her that she is having one too.\nPMH: Hypertension; COPD (former smoker, 30 pack-years, quit 8 years ago) with a flare last week treated with a 5-day PREDNISONE burst (on her last day of it) and increased albuterol; major depressive disorder; osteoporosis; no known coronary disease, no prior MI, no diabetes, no prior heart failure, no kidney disease.\nMEDS: amlodipine 5 mg daily; citalopram 20 mg daily (a QT-prolonging SSRI); tiotropium and albuterol inhalers; recently finishing a prednisone taper; alendronate weekly; ondansetron 4 mg as-needed for nausea (also QT-prolonging — she took one this morning); a calcium/vitamin-D supplement. She admits she has been skipping meals and barely drinking since her husband died, and has had loose stools from grief/anxiety for two days. ALLERGIES: none.\nSOCIAL: Lives alone now; one daughter lives two hours away and is on her way. Former smoker (quit 8y). Rare alcohol. No drug use, specifically NO cocaine or stimulants. Was fully independent before this.\nFAMILY: Husband just died of an MI; father had a heart attack in his 70s. No known sudden cardiac death or arrhythmia syndromes.\nROS: Profound grief, poor sleep, poor appetite, near-fasting and poor fluid intake for 2 days with loose stools (relevant to potassium/magnesium). No palpitations before today. No fevers, no leg swelling, no orthopnea before today.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, tearful, mildly diaphoretic, in moderate distress, breathing a little fast.\n- Vitals: BP 148/86, HR 104, RR 22, 36.9°C, SpO2 94% RA.\n- Cardiac: tachycardic, regular; a soft S4; NO loud murmur of dissection, NO friction rub, NO pericardial knock. (If a dynamic LV-outflow murmur is specifically sought later it can be a soft late-systolic murmur, but at presentation the exam is unremarkable except S4.)\n- Pulses: equal and symmetric radial and femoral pulses bilaterally; NO blood-pressure differential between arms; NO pulse deficit. (Argues against aortic dissection.)\n- Lungs: a few bibasilar crackles and mild end-expiratory wheeze; no large effusion; no absent breath sounds; no subcutaneous crepitus over the chest/neck (argues against Boerhaave/pneumomediastinum).\n- Neck: JVP mildly elevated (~9 cm); no tracheal deviation.\n- Chest wall: NON-tender to palpation; pressing on the chest does NOT reproduce the pain (argues against costochondritis).\n- Extremities: warm, no calf tenderness, no unilateral leg swelling or cords (argues against DVT/PE).\n- Abdomen: soft, non-tender.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the emotional trigger (husband's sudden death two days ago / arranging the funeral) unless asked about what she was doing when it started, recent life events, stress, or losses — then disclose it, tearfully.\n- Do NOT volunteer the near-fasting state, poor fluid intake, loose stools, prednisone burst, ondansetron, or citalopram unless asked about diet/intake, recent illness, or her medications.\n- Reveal exam findings only when the relevant maneuver is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "Troponin": "High-sensitivity troponin T MILDLY elevated at 0.18 ng/mL (ULN 0.014) and rising only modestly on the 3-hour repeat to 0.22 — a rise/fall is present (so not a benign chronic elevation), but the magnitude is DISPROPORTIONATELY LOW for the extent of anterior EKG changes and the large wall-motion abnormality, a classic Takotsubo discriminator from a large anterior STEMI where troponin is usually much higher.",
+      "BNP": "NT-proBNP markedly elevated at 2,950 pg/mL — out of proportion to the modest troponin, reflecting acute LV dysfunction and wall stress (typical of Takotsubo, where natriuretic peptides rise disproportionately to troponin).",
+      "BMP": "Na 139, K 3.1 (LOW), Cl 100, HCO3 26, BUN 24, Cr 0.9, glucose 118. Anion gap = Na − (Cl + HCO3) = 139 − (100 + 26) = 13 (upper-normal). The HYPOKALEMIA (K 3.1) reflects 2 days of near-fasting, poor intake, loose stools, and recent steroid/beta-agonist use, and — together with hypomagnesemia and QT-prolonging drugs — drives the long QT and arrhythmia risk.",
+      "Magnesium": "Magnesium LOW at 1.4 mg/dL (poor intake, GI losses) — compounds the hypokalemia and the QT prolongation; must be repleted alongside potassium to protect against torsades.",
+      "CBC": "WBC 11.8 (mild stress leukocytosis, partly steroid-related), Hgb 13.2, Plt 250 — no anemia, no leukocytosis to suggest infection/sepsis.",
+      "TSH": "TSH 2.1 (normal) — thyroid storm/hyperthyroidism excluded as a catecholamine-surge mimic.",
+      "UDS": "Urine drug screen NEGATIVE — specifically NO cocaine/amphetamines, excluding stimulant-induced vasospasm/ACS as the catecholamine source.",
+      "coronary_angiogram": "Urgent coronary angiography (taken to the cath lab for a presumed anterior STEMI): NORMAL epicardial coronary arteries with NO obstructive disease, NO culprit lesion, NO thrombus, NO dissection flap. Left ventriculography and bedside echo show AKINESIS/BALLOONING of the LV APEX with preserved basal contraction ('apical ballooning'), LVEF reduced to ~35%, in a pattern that does NOT match a single coronary territory. Findings confirm Takotsubo (stress) cardiomyopathy rather than an occlusive anterior STEMI."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "litflStudyN": 23,
+      "integrated": true,
+      "source": "https://litfl.com/qt-interval-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia with an anterior injury pattern (ST-segment elevation across the precordial leads V2–V5) EVOLVING into deep, symmetric T-wave inversions in the anterior/anterolateral leads, together with MARKED QT/QTc PROLONGATION — the characteristic Takotsubo tracing that mimics an anterior STEMI but with diffuse precordial TWI and a strikingly long QT out of proportion to any single coronary territory.",
+      "verify": "From the LITFL ECG library, source a tracing showing MARKED QT prolongation with deep, widespread precordial T-wave inversions (the long-QT / drug-and-stress pattern); self-host with credit to litfl.com. The pinned study (litflStudyN 23) supplies the long-QT/deep-TWI morphology that fits Takotsubo's evolving EKG.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing an anterior ST-elevation pattern evolving to deep diffuse precordial T-wave inversions with markedly prolonged QT",
+      "searchTerms": [
+        "Takotsubo ECG deep T wave inversion long QT",
+        "marked QT prolongation diffuse precordial T-wave inversion 12-lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 68-year-old widow with crushing chest pain two days after her husband's sudden death has an anterior STEMI-pattern EKG with deep diffuse T-wave inversions and a strikingly long QT, but only a modestly elevated troponin."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=mild%20pulmonary%20edema%20chest%20xray&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Mild interstitial pulmonary edema with upper-lobe vascular redistribution and small bilateral effusions reflecting acute LV dysfunction; NORMAL mediastinal width (no widening to suggest dissection); NO pneumomediastinum or pleural air/effusion to suggest esophageal rupture; hyperinflation consistent with known COPD.",
+      "verify": "Source a study matching: mild interstitial pulmonary edema with a normal mediastinal silhouette and no pneumomediastinum, on a hyperinflated COPD chest. Self-host with appropriate credit.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph with mild pulmonary edema, normal mediastinal width, no pneumomediastinum, hyperinflated lungs",
+      "searchTerms": [
+        "mild cardiogenic pulmonary edema chest x-ray",
+        "normal mediastinum no pneumomediastinum chest radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "An older woman with acute chest pain and new dyspnea has a portable chest film showing mild pulmonary congestion with a normal-width mediastinum."
+    }
+  },
+  "revealKeys": [
+    "Troponin",
+    "BNP",
+    "BMP",
+    "Magnesium",
+    "CBC",
+    "TSH",
+    "UDS",
+    "coronary_angiogram",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "ekg",
+    "Troponin",
+    "coronary_angiogram",
+    "BMP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your focused history and exam in this acutely bereaved woman with crushing chest pain and an anterior-injury-pattern EKG, give your differential and your leading diagnosis. Explicitly name the must-not-miss life-threatening causes of acute chest pain you are committed to excluding, and explain why this presentation is NOT yet cleanly a STEMI.",
+      "rubric": "Acute coronary syndrome / anterior STEMI — the must-not-miss that drives immediate management (CANT-MISS,6). Takotsubo (stress) cardiomyopathy — strongly suggested by an intense emotional trigger, anterior EKG changes with deep diffuse TWI and long QT, and a troponin too low for the EKG/wall-motion extent (leading,6). Aortic dissection — radiation, pulses, BP differential to be checked (CANT-MISS,3). Pulmonary embolism — dyspnea, hypoxia, tachycardia (CANT-MISS,2). Acute pericarditis / myocarditis (core,1). Esophageal rupture (Boerhaave) / esophageal spasm (core,1). Names the leading dx with justification — catecholamine surge from acute grief, EKG/troponin mismatch (core,3). Explicitly states ACS cannot be excluded clinically and the patient must be treated as ACS until coronary anatomy is known (core,3). PENALTY: anchoring on Takotsubo and NOT treating as possible STEMI before the angiogram (-4); ignoring the EKG entirely (-2).",
+      "idealAnswer": "Leading diagnosis: Takotsubo (stress) cardiomyopathy — an abrupt catecholamine-mediated apical ballooning syndrome triggered by the acute, severe emotional stress of her husband's sudden death, supported by the anterior EKG changes with deep diffuse T-wave inversions and a markedly long QT, and a troponin that is rising but DISPROPORTIONATELY LOW for the extent of anterior changes. BUT this cannot be distinguished from an anterior STEMI at the bedside, so Acute coronary syndrome / anterior STEMI is the must-not-miss that dictates immediate management. Other must-not-miss causes to actively exclude: Aortic dissection (check inter-arm BP and pulses, mediastinal width), Pulmonary embolism (dyspnea, hypoxia), and — given the chest film — pericarditis/myocarditis and esophageal rupture. The honest position is that you treat her as ACS and take her for urgent coronary angiography; Takotsubo is confirmed only when the cath shows clean coronaries with apical ballooning.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Acute coronary syndrome / anterior STEMI",
+            "points": 6
+          },
+          {
+            "item": "Takotsubo (stress) cardiomyopathy",
+            "points": 6
+          },
+          {
+            "item": "Aortic dissection",
+            "points": 3
+          },
+          {
+            "item": "Pulmonary embolism",
+            "points": 2
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Acute pericarditis / myocarditis",
+            "points": 1
+          },
+          {
+            "item": "Esophageal rupture (Boerhaave) / esophageal spasm",
+            "points": 1
+          },
+          {
+            "item": "Named leading dx w/ justification — catecholamine surge from acute grief, EKG/troponin mismatch",
+            "points": 3
+          },
+          {
+            "item": "States ACS cannot be excluded clinically and must be treated as ACS until coronary anatomy is known",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchoring on Takotsubo and NOT treating as possible STEMI before the angiogram",
+            "points": -4
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Acute coronary syndrome / anterior STEMI",
+        "Aortic dissection",
+        "Pulmonary embolism",
+        "Acute pericarditis / myocarditis",
+        "Esophageal rupture (Boerhaave)"
+      ],
+      "acceptableAlternatives": [
+        "Coronary vasospasm",
+        "Esophageal spasm / GERD"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order, and in what priority, for this acute chest pain?",
+      "rubric": "STAT 12-lead EKG read immediately and serial EKGs (CANT-MISS,4). Serial high-sensitivity troponin AND activate the cardiac-cath pathway / urgent coronary angiography for an anterior-injury-pattern EKG (CANT-MISS,4). BMP with potassium AND magnesium given the long QT and arrhythmia risk (core,2). NT-proBNP (core,1). CBC, TSH, urine drug screen to exclude infection, thyroid surge, and stimulant use (core,1). Portable CXR to assess for edema, mediastinal width, pneumomediastinum (core,1). Bedside echocardiogram looking for a regional wall-motion abnormality / apical ballooning (bonus,2). PENALTY: thrombolytics/anticoagulation reflexively without addressing dissection risk first (-2); ordering only a single troponin and discharging (-2).",
+      "idealAnswer": "Immediate STAT 12-lead EKG (and serial EKGs) — already shows an anterior injury pattern with deep diffuse TWI and a long QT — and activate the cardiac catheterization pathway for urgent coronary angiography to define coronary anatomy. Serial high-sensitivity troponins (the rise/fall and magnitude help separate Takotsubo from a large STEMI). BMP including potassium and magnesium (repletion targets given the long QT), NT-proBNP, CBC, TSH, and a urine drug screen (exclude stimulant-induced ACS). Portable CXR (edema, mediastinal width, pneumomediastinum). Bedside echo to look for apical ballooning / a wall-motion abnormality. Check inter-arm blood pressures and pulses before committing to anticoagulation, to keep dissection on the radar.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "STAT and serial 12-lead EKG read immediately",
+            "points": 4
+          },
+          {
+            "item": "Serial high-sensitivity troponin AND urgent coronary angiography for the anterior-injury EKG",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "BMP with potassium and magnesium given the long QT",
+            "points": 2
+          },
+          {
+            "item": "NT-proBNP",
+            "points": 1
+          },
+          {
+            "item": "CBC, TSH, urine drug screen",
+            "points": 1
+          },
+          {
+            "item": "Portable CXR for edema / mediastinal width / pneumomediastinum",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Bedside echocardiogram for apical ballooning / wall-motion abnormality",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Thrombolytics/anticoagulation reflexively without addressing dissection risk first",
+            "points": -2
+          },
+          {
+            "item": "Ordering only a single troponin and discharging",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "STAT and serial 12-lead EKG read immediately",
+        "Serial high-sensitivity troponin AND urgent coronary angiography for the anterior-injury EKG"
+      ],
+      "optionalTests": [
+        "Bedside echocardiogram for apical ballooning / wall-motion abnormality"
+      ],
+      "contraindicatedTests": [
+        "Thrombolytics/anticoagulation reflexively without addressing dissection risk first",
+        "Ordering only a single troponin and discharging"
+      ],
+      "orderSensitiveActions": [
+        "STAT and serial 12-lead EKG read immediately"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Interpret it systematically, then state how it fits — and how it complicates — the clinical picture.",
+      "rubric": "Findings = sinus tachycardia with an anterior injury pattern (precordial ST elevation V2–V5) EVOLVING to deep, symmetric, diffuse anterior/anterolateral T-wave inversions with MARKED QT/QTc prolongation. CREDIT: identifies the anterior ST-elevation/injury pattern that mandates treating as a STEMI; identifies the deep diffuse precordial T-wave inversions; identifies the markedly prolonged QT and recognizes the torsades risk amplified by hypokalemia/hypomagnesemia and QT-prolonging drugs (citalopram, ondansetron); recognizes the diffuse TWI + long QT out of proportion to one coronary territory as a Takotsubo clue; systematic read. PENALTY: missing the long QT / arrhythmia risk (-3); calling it a clean single-territory STEMI and forgetting Takotsubo as the alternative (-2).",
+      "keyFindings": [
+        "anterior ST-elevation / injury pattern (V2–V5)",
+        "deep diffuse anterior/anterolateral T-wave inversions",
+        "markedly prolonged QT/QTc with torsades risk amplified by low K/Mg and QT-prolonging drugs",
+        "diffuse TWI + long QT out of proportion to a single coronary territory (Takotsubo clue)",
+        "systematic read"
+      ],
+      "criticalFindings": [
+        "Anterior ST-elevation pattern evolving to deep diffuse precordial T-wave inversions with markedly prolonged QT — mimics anterior STEMI but with a long QT and diffuse TWI out of proportion to one coronary territory."
+      ],
+      "commonMistakes": [
+        "missing the markedly prolonged QT and the torsades risk",
+        "calling it a clean single-territory STEMI and forgetting Takotsubo"
+      ],
+      "idealAnswer": "Sinus tachycardia with an anterior injury pattern — ST-segment elevation across V2–V5 — that is evolving into deep, symmetric T-wave inversions across the anterior/anterolateral precordial leads, together with a MARKEDLY prolonged QT/QTc. This is an anterior-STEMI-pattern EKG that mandates treating her as ACS, but the deep diffuse TWI and the strikingly long QT are out of proportion to any single coronary territory and are characteristic of Takotsubo. The long QT, compounded by her hypokalemia, hypomagnesemia, and QT-prolonging citalopram/ondansetron, puts her at risk for torsades de pointes — repletion of K and Mg and review of QT-prolonging drugs is urgent.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Anterior ST-elevation pattern evolving to deep diffuse precordial T-wave inversions with markedly prolonged QT — mimics anterior STEMI but with a long QT and diffuse TWI out of proportion to one coronary territory."
+        ],
+        "coreActions": [
+          "anterior ST-elevation / injury pattern (V2–V5)",
+          "deep diffuse anterior/anterolateral T-wave inversions",
+          "markedly prolonged QT/QTc with torsades risk amplified by low K/Mg and QT-prolonging drugs",
+          "diffuse TWI + long QT out of proportion to a single coronary territory (Takotsubo clue)",
+          "systematic read"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "misses the markedly prolonged QT / torsades risk, or calls it a clean single-territory STEMI and forgets Takotsubo",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's portable chest X-ray. Describe your findings and the pertinent negatives.",
+      "rubric": "Findings = mild interstitial pulmonary edema with upper-lobe vascular redistribution and small effusions (acute LV dysfunction), a NORMAL-width mediastinum (no dissection), NO pneumomediastinum/pleural air (no esophageal rupture), and hyperinflation of known COPD. CREDIT: recognizes mild pulmonary edema reflecting new LV dysfunction (4); states the mediastinum is NOT widened as a deliberate pertinent negative against dissection (3); states there is no pneumomediastinum to suggest esophageal rupture (3). PENALTY: missing the pulmonary edema, or inventing a widened mediastinum / large effusion (-3).",
+      "keyFindings": [
+        "mild interstitial pulmonary edema reflecting acute LV dysfunction",
+        "normal mediastinal width (no dissection)",
+        "no pneumomediastinum (no esophageal rupture)"
+      ],
+      "criticalFindings": [
+        "Mild pulmonary edema with a normal-width mediastinum and no pneumomediastinum — supports acute LV dysfunction while arguing against dissection and esophageal rupture."
+      ],
+      "commonMistakes": [
+        "missing the mild pulmonary edema of new LV dysfunction",
+        "inventing a widened mediastinum or large effusion"
+      ],
+      "idealAnswer": "Mild interstitial pulmonary edema with upper-lobe vascular redistribution and small bilateral effusions, reflecting acute LV dysfunction — consistent with new Takotsubo cardiomyopathy. Importantly, the mediastinum is NOT widened (a pertinent negative against aortic dissection) and there is NO pneumomediastinum or pleural air (against esophageal rupture). The lungs are hyperinflated consistent with her known COPD.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Mild pulmonary edema with a normal-width mediastinum and no pneumomediastinum — supports acute LV dysfunction while arguing against dissection and esophageal rupture."
+        ],
+        "coreActions": [
+          "mild interstitial pulmonary edema reflecting acute LV dysfunction",
+          "normal mediastinal width (no dissection)",
+          "no pneumomediastinum (no esophageal rupture)"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "misses the pulmonary edema, or invents a widened mediastinum / large effusion",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "The coronary angiogram and ventriculogram/echo are back. What is your diagnosis and reasoning now? Address how the cath result reframes the case, what residual ambiguity remains, and name THREE mechanisms by which acute emotional stress is thought to produce this syndrome.",
+      "rubric": "Takotsubo (stress) cardiomyopathy confirmed: NORMAL coronaries with NO culprit lesion, plus apical ballooning (apical akinesis with preserved base, LVEF ~35%) NOT confined to one coronary territory, in the setting of an acute severe emotional trigger and a troponin/BNP pattern (low troponin, high BNP) that fit Takotsubo (6). Names the discriminating test (coronary angiography ± ventriculography/echo) and the residual ambiguity that it could have been a spontaneously-recanalized STEMI or coexisting CAD, which is why cath was mandatory (2). Names THREE mechanisms of stress cardiomyopathy: catecholamine surge with direct myocardial/contraction-band toxicity; microvascular dysfunction/spasm; and apical vs basal differential adrenoceptor density / catecholamine sensitivity (also acceptable: epicardial multivessel spasm; estrogen-deficiency susceptibility in post-menopausal women) (2).",
+      "idealAnswer": "Takotsubo (stress) cardiomyopathy. The coronary angiogram shows NORMAL epicardial arteries with no culprit lesion or thrombus, while the ventriculogram/echo show apical akinesis with a ballooning apex and preserved basal contraction (LVEF ~35%) in a pattern that crosses coronary territories — the signature of Takotsubo, in a woman with an acute, severe emotional trigger (her husband's sudden death) and a telling biomarker mismatch (only mildly elevated troponin but markedly elevated NT-proBNP). The discriminating test was urgent coronary angiography with ventriculography/echo; the residual ambiguity it resolved was a spontaneously recanalized anterior STEMI or coexisting obstructive CAD, which is exactly why she had to be treated as ACS and taken to cath. Three proposed mechanisms of stress cardiomyopathy: (1) an acute catecholamine surge causing direct catecholamine/contraction-band myocardial toxicity; (2) catecholamine-mediated coronary microvascular dysfunction and/or multivessel epicardial spasm; and (3) a higher density of beta-adrenoceptors / greater catecholamine sensitivity at the LV apex than the base, producing the apical ballooning pattern (post-menopausal estrogen deficiency increasing susceptibility is also accepted).",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan, including immediate stabilization, the QT/arrhythmia issue, heart-failure therapy, and disposition/safe-discharge planning for this newly widowed woman who lives alone?",
+      "rubric": "Per MGH chest-pain / cardiomyopathy pathway: treat as ACS until coronary anatomy is known — ASA, telemetry, and urgent coronary angiography (CANT-MISS,5); supportive HEART-FAILURE management of LV dysfunction — gentle diuresis for pulmonary edema, beta-blocker and ACE-inhibitor as BP/perfusion allow once obstructive CAD is excluded (CANT-MISS,5); CORRECT the QT — replete potassium to >4.0 and magnesium, and STOP/hold QT-prolonging drugs (citalopram, ondansetron) with continuous telemetry for torsades (core,4); AVOID/limit catecholamines and inotropes/pressors if possible given the catecholamine-driven mechanism — beware dynamic LV outflow obstruction (core,3); anticoagulation consideration for apical akinesis/LV thrombus risk (core,2); reassure that Takotsubo LV function usually RECOVERS over weeks with a repeat echo to confirm (core,2); arrange SAFE DISCHARGE/disposition — admit to telemetry now, and plan med reconciliation (remove QT offenders), bereavement/psychiatric and social-work support, a home-safety check given she lives alone, and close cardiology follow-up with repeat echo (core,4). PENALTY: discharging an active anterior-injury EKG with a positive troponin (-5); giving a catecholamine/inotrope or continuing QT-prolonging drugs without telemetry (-3).",
+      "idealAnswer": "Until the coronary anatomy is known, manage as ACS: aspirin, continuous telemetry, and urgent coronary angiography. Once obstructive CAD is excluded and Takotsubo is confirmed, shift to supportive heart-failure care of the acute LV dysfunction — gentle diuresis for the pulmonary edema, and a beta-blocker plus ACE-inhibitor as blood pressure and perfusion allow. Aggressively correct the QT substrate: replete potassium to >4.0 mmol/L and magnesium, and hold the QT-prolonging citalopram and ondansetron, with continuous telemetry watching for torsades. Avoid catecholamines/inotropes and pressors where possible because the syndrome is catecholamine-driven, and beware dynamic LV outflow obstruction; consider anticoagulation for the akinetic ballooning apex given LV-thrombus risk. Counsel her that Takotsubo LV function typically RECOVERS over days to weeks, with a repeat echo planned. For disposition: admit to telemetry now; plan medication reconciliation (remove the QT offenders), bereavement and psychiatric/social-work support given the acute grief, a home-safety assessment and supports since she lives alone and her daughter is two hours away, and close cardiology follow-up with a repeat echocardiogram.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Treat as ACS until coronary anatomy known — ASA, telemetry, urgent coronary angiography",
+            "points": 5
+          },
+          {
+            "item": "Supportive heart-failure management — gentle diuresis, beta-blocker and ACE-inhibitor as tolerated",
+            "points": 5
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Correct the QT — replete K >4.0 and Mg, stop QT-prolonging citalopram/ondansetron, telemetry for torsades",
+            "points": 4
+          },
+          {
+            "item": "Avoid/limit catecholamines and inotropes/pressors; beware dynamic LV outflow obstruction",
+            "points": 3
+          },
+          {
+            "item": "Consider anticoagulation for apical akinesis / LV thrombus risk",
+            "points": 2
+          },
+          {
+            "item": "Reassure that Takotsubo LV function usually recovers; plan repeat echo",
+            "points": 2
+          },
+          {
+            "item": "Arrange safe discharge/disposition: med reconciliation, bereavement/social-work support, home-safety check (lives alone), close cardiology follow-up",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Discharging an active anterior-injury EKG with a positive troponin",
+            "points": -5
+          },
+          {
+            "item": "Giving a catecholamine/inotrope or continuing QT-prolonging drugs without telemetry",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Treat as ACS until coronary anatomy known — ASA, telemetry, urgent coronary angiography",
+        "Supportive heart-failure management — gentle diuresis, beta-blocker and ACE-inhibitor as tolerated"
+      ],
+      "optionalActions": [
+        "Correct the QT — replete K >4.0 and Mg, stop QT-prolonging citalopram/ondansetron, telemetry for torsades",
+        "Avoid/limit catecholamines and inotropes/pressors; beware dynamic LV outflow obstruction",
+        "Consider anticoagulation for apical akinesis / LV thrombus risk",
+        "Reassure that Takotsubo LV function usually recovers; plan repeat echo",
+        "Arrange safe discharge/disposition: med reconciliation, bereavement/social-work support, home-safety check (lives alone), close cardiology follow-up"
+      ],
+      "unsafeActions": [
+        "Discharging an active anterior-injury EKG with a positive troponin",
+        "Giving a catecholamine/inotrope or continuing QT-prolonging drugs without telemetry"
+      ],
+      "consults": [
+        "Cardiology",
+        "Psychiatry / Social Work"
+      ],
+      "disposition": "Admit to telemetry/cardiology; cardiac cath; psychiatric and social-work support for bereavement",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Chest Pain / Stress (Takotsubo) Cardiomyopathy",
+        "page": 24
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "tearful and frightened",
+    "emotionalState": "acutely grieving and anxious",
+    "healthLiteracy": "average",
+    "verbosity": "moderate",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "recent_bereavement",
+      "husband_sudden_death",
+      "depression",
+      "poor_self_care_since_loss"
+    ],
+    "communicationStyle": "emotionally overwhelmed; answers questions asked, tears up when the recent loss is raised, does not volunteer diagnostic clues",
+    "affect": "68-year-old recently widowed woman, tearful and frightened, clutching her chest, terrified she is having a heart attack like her husband. Cooperative.",
+    "disclosureRules": [
+      "Do not reveal the emotional trigger (husband's sudden death two days ago / arranging the funeral) unless asked about what she was doing when symptoms started, recent stress, or recent losses",
+      "Do not reveal near-fasting, poor fluid intake, loose stools, the prednisone burst, ondansetron, or citalopram unless asked about diet/intake, recent illness, or medications",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "emotional_trigger",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what were you doing when it started",
+        "any recent stress",
+        "recent life events",
+        "any losses",
+        "what happened recently",
+        "anything stressful",
+        "how have things been"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase tearfully in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "diet_intake_gi",
+      "category": "ros",
+      "triggerConcepts": [
+        "have you been eating",
+        "appetite",
+        "drinking fluids",
+        "diarrhea",
+        "loose stools",
+        "vomiting",
+        "how much have you eaten"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "any new medicines",
+        "steroids",
+        "prednisone",
+        "antidepressant",
+        "citalopram",
+        "nausea medicine",
+        "ondansetron"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration",
+        "how did it come on"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the pain",
+        "what does it feel like",
+        "character",
+        "quality",
+        "where does it go",
+        "radiate"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "shortness of breath",
+        "sweating",
+        "nausea",
+        "lightheaded",
+        "palpitations"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "dissection_pe_redflags",
+      "category": "hpi",
+      "triggerConcepts": [
+        "tearing pain",
+        "ripping pain",
+        "pain to the back",
+        "calf pain",
+        "leg swelling",
+        "recent travel",
+        "recent surgery",
+        "coughing blood"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "positional",
+        "with breathing",
+        "with eating",
+        "pressing on the chest",
+        "nitroglycerin"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "conditions",
+        "copd",
+        "high blood pressure",
+        "depression"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "social_substance",
+      "category": "social",
+      "triggerConcepts": [
+        "smoking",
+        "alcohol",
+        "drugs",
+        "cocaine",
+        "stimulants",
+        "who do you live with",
+        "support at home"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "heart problems in family",
+        "sudden death",
+        "father",
+        "husband heart attack"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "auscultate_mitral_area_finding_1",
+      "finding": "Cardiac: tachycardic, regular; a soft S4; NO loud murmur of dissection, NO friction rub, NO pericardial knock.",
+      "revealedBy": [
+        "auscultate_mitral_area",
+        "auscultate_aortic_area",
+        "palpate_pmi"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Heart sounds normal, no murmur."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_2",
+      "finding": "Pulses equal and symmetric in both arms and femorals; NO blood-pressure differential between arms; NO pulse deficit (argues against aortic dissection).",
+      "revealedBy": [
+        "assess_peripheral_pulses",
+        "repeat_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Pulses symmetric, no inter-arm BP differential."
+    },
+    {
+      "id": "auscultate_anterior_lungs_finding_3",
+      "finding": "Lungs: a few bibasilar crackles and mild end-expiratory wheeze; no large effusion; no subcutaneous crepitus over the chest/neck (argues against Boerhaave/pneumomediastinum).",
+      "revealedBy": [
+        "auscultate_anterior_lungs",
+        "auscultate_posterior_lungs"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Lungs clear bilaterally."
+    },
+    {
+      "id": "assess_jvp_finding_4",
+      "finding": "Neck: JVP mildly elevated (~9 cm); no tracheal deviation (supports new LV dysfunction).",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "palpate_chest_wall_finding_5",
+      "finding": "Chest wall NON-tender to palpation; pressing does NOT reproduce the pain (argues against costochondritis).",
+      "revealedBy": [
+        "palpate_chest_wall"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Chest wall non-tender."
+    },
+    {
+      "id": "assess_calf_tenderness_finding_6",
+      "finding": "Extremities warm; no calf tenderness, no unilateral leg swelling or cords (argues against DVT/PE).",
+      "revealedBy": [
+        "assess_calf_tenderness",
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No calf tenderness or leg swelling."
+    },
+    {
+      "id": "assess_general_appearance_finding_7",
+      "finding": "General: anxious, tearful, mildly diaphoretic, in moderate distress, breathing a little fast.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Appears comfortable."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Takotsubo (stress) cardiomyopathy",
+    "diagnosticFramework": "68F with HTN, COPD on a recent prednisone burst, depression on citalopram, and osteoporosis presents with ~2 hours of crushing substernal chest pain, dyspnea, and diaphoresis that began acutely while she arranged her husband's funeral — he died suddenly two days ago. The EKG shows an anterior injury pattern evolving to deep diffuse precordial T-wave inversions with a markedly prolonged QT, the troponin is only mildly elevated while NT-proBNP is markedly elevated, and she has hypokalemia and hypomagnesemia. The diagnosis is Takotsubo (stress) cardiomyopathy, but it cannot be separated from an anterior STEMI at the bedside, so she is treated as ACS and taken for urgent coronary angiography, which shows clean coronaries with apical ballooning. The path requires eliciting the emotional trigger, recognizing the EKG/troponin mismatch and the long-QT arrhythmia substrate, excluding dissection and PE, and managing the LV dysfunction, the QT, and the bereavement.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Cardiac: tachycardic, regular; a soft S4; NO loud murmur of dissection, NO friction rub, NO pericardial knock.",
+      "Pulses equal and symmetric in both arms and femorals; NO blood-pressure differential between arms; NO pulse deficit (argues against aortic dissection).",
+      "Lungs: a few bibasilar crackles and mild end-expiratory wheeze; no large effusion; no subcutaneous crepitus over the chest/neck (argues against Boerhaave/pneumomediastinum).",
+      "Neck: JVP mildly elevated (~9 cm); no tracheal deviation (supports new LV dysfunction).",
+      "Chest wall NON-tender to palpation; pressing does NOT reproduce the pain (argues against costochondritis).",
+      "Extremities warm; no calf tenderness, no unilateral leg swelling or cords (argues against DVT/PE).",
+      "General: anxious, tearful, mildly diaphoretic, in moderate distress, breathing a little fast."
+    ],
+    "keyDiagnosticFindings": [
+      "Troponin",
+      "BNP",
+      "BMP",
+      "Magnesium",
+      "CBC",
+      "TSH",
+      "UDS",
+      "coronary_angiogram"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals — crushing chest pain with an anterior-injury EKG in a recently bereaved woman.",
+      "Elicit the focused history, especially the acute emotional trigger (husband's sudden death) and the medication/diet history (QT-prolonging drugs, near-fasting, GI losses) only on direct questioning.",
+      "Perform the targeted exam to support new LV dysfunction and to exclude dissection, PE, costochondritis, and esophageal rupture.",
+      "Build a differential that treats anterior STEMI/ACS as the must-not-miss while naming Takotsubo as the leading explanation, plus dissection and PE.",
+      "Order serial EKGs and troponins, electrolytes with K and Mg, NT-proBNP, and activate coronary angiography; read the long-QT/anterior-injury EKG and the mild-edema CXR.",
+      "Commit to Takotsubo once cath shows clean coronaries with apical ballooning; manage the LV dysfunction, correct the QT, support bereavement, and arrange safe disposition."
+    ],
+    "commonPitfalls": [
+      "Anchoring on Takotsubo and failing to treat as a possible STEMI before the angiogram",
+      "Missing the markedly prolonged QT and the torsades risk amplified by low K/Mg and QT-prolonging drugs",
+      "Discharging an active anterior-injury EKG with a positive troponin",
+      "Giving catecholamines/inotropes or continuing QT-prolonging drugs without telemetry"
+    ],
+    "managementPearls": [
+      "Treat as ACS until coronary anatomy is known — ASA, telemetry, urgent coronary angiography",
+      "Correct the QT (replete K and Mg, stop QT-prolonging drugs) and support the LV dysfunction"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "auscultate_mitral_area",
+      "assess_peripheral_pulses"
+    ],
+    "criticalWorkupItems": [
+      "STAT and serial 12-lead EKG read immediately",
+      "Serial high-sensitivity troponin AND urgent coronary angiography for the anterior-injury EKG"
+    ],
+    "criticalInterpretationItems": [
+      "Anterior ST-elevation pattern evolving to deep diffuse precordial T-wave inversions with markedly prolonged QT — mimics anterior STEMI but with diffuse TWI and a long QT out of proportion to one coronary territory.",
+      "Mild pulmonary edema with a normal-width mediastinum and no pneumomediastinum — supports acute LV dysfunction while arguing against dissection and esophageal rupture."
+    ],
+    "criticalManagementItems": [
+      "Treat as ACS until coronary anatomy known — ASA, telemetry, urgent coronary angiography",
+      "Supportive heart-failure management — gentle diuresis, beta-blocker and ACE-inhibitor as tolerated"
+    ],
+    "keyImageInterpretationFindings": [
+      "Anterior ST-elevation pattern evolving to deep diffuse precordial T-wave inversions with markedly prolonged QT.",
+      "Mild pulmonary edema with a normal-width mediastinum and no pneumomediastinum."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Anterior ST-elevation pattern evolving to deep diffuse precordial T-wave inversions with markedly prolonged QT.",
+      "Mild pulmonary edema with a normal-width mediastinum and no pneumomediastinum."
+    ],
+    "imageInterpretationPearls": [
+      "An anterior STEMI-pattern EKG with deep diffuse precordial T-wave inversions and a strikingly long QT, out of proportion to one coronary territory, should raise Takotsubo — but you still treat as STEMI until cath.",
+      "A markedly prolonged QT plus hypokalemia, hypomagnesemia, and QT-prolonging drugs is a torsades substrate — replete and monitor.",
+      "On a chest-pain film, the deliberate pertinent negatives are a non-widened mediastinum (dissection) and no pneumomediastinum (esophageal rupture)."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Acknowledges the recent loss and shows empathy for her grief and fear",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before exploring the sensitive bereavement / emotional history",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps (urgent EKG, cath) in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding and offers reassurance about recovery",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "pathology-forward integrated interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

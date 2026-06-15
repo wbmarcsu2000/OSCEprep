@@ -1,68 +1,72 @@
 {
   "id": "liver-02",
   "category": "Abnormal Liver Enzymes",
-  "difficulty": "moderate",
-  "title": "Jaundice and RUQ tenderness with heavy drinking",
+  "difficulty": "hard",
+  "title": "Jaundice, RUQ tenderness, and fever in a heavy drinker on multiple medications",
   "diagnosis": "Alcoholic hepatitis",
   "chart": {
-    "ageSex": "50M",
-    "cc": "Jaundice and abdominal discomfort",
-    "oneLiner": "50M with heavy alcohol use presents with 2 weeks of jaundice, right upper quadrant tenderness, anorexia, and low-grade fever.",
+    "ageSex": "52M",
+    "cc": "Jaundice, abdominal pain, and fever",
+    "oneLiner": "52M with alcohol use disorder, hypertension on a thiazide, and type 2 diabetes on metformin presents with ~2 weeks of progressive jaundice, right upper quadrant pain, anorexia, and low-grade fever following a recent heavy binge, with vomiting and reduced oral intake for several days.",
     "vitals": {
-      "BP": "126/78",
-      "HR": "98",
-      "RR": "16",
-      "Temp": "38.0°C",
-      "SpO2": "98% RA"
+      "BP": "104/68",
+      "HR": "108",
+      "RR": "18",
+      "Temp": "38.2°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
-  "opening": "I've gone yellow, my belly's tender on the right, and I've had no appetite for weeks.",
-  "patientFile": "PERSONA: 50-year-old man, jaundiced, mildly ill. Good historian once asked.\n\nHPI: 2 weeks of progressive jaundice, RUQ discomfort, nausea, anorexia, and low-grade fevers, following a recent heavy drinking binge on a background of years of daily alcohol use (only quantifies alcohol if asked). NO large acetaminophen use (verify). NO confusion at baseline (watch for encephalopathy).\nPMH: alcohol use disorder; possible early cirrhosis. MEDS: none regularly; occasional acetaminophen (confirm). SOCIAL: drinks a pint of spirits daily for years.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: jaundiced, ill-appearing.\n- Vitals: BP 126/78, HR 98, RR 16, 38.0°C, SpO2 98% RA.\n- Abdomen: tender hepatomegaly; possible ascites (shifting dullness) if examined; spider angiomata/palmar erythema if examined.\n- Neuro: alert; check for asterixis (encephalopathy) if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the quantity/duration of alcohol use or acetaminophen use unless asked about alcohol or medications.\n- Stigmata of chronic liver disease and asterixis are revealed only if examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "I've gone yellow, my belly's sore on the right, and I've been running a fever — I just can't keep anything down.",
+  "patientFile": "PERSONA: 52-year-old man, jaundiced, mildly ill and uncomfortable. Cooperative and a reasonable historian once asked, but does not volunteer the embarrassing details (drinking, medication misuse). Tachycardic and at the low end of his usual blood pressure.\n\nHPI: ~2 weeks of progressive yellowing of the eyes and skin, a dull constant ache in the right upper belly, nausea, near-total loss of appetite, and subjective low-grade fevers. This came on after a particularly heavy week of drinking. For the last 4-5 days he has been vomiting most of what he eats or drinks and has barely been eating — \"living on a bit of juice and spirits.\" NO black or bloody stools and NO vomiting of blood (verify if asked). NO severe colicky pain radiating to the back, and the pain did NOT come in sudden waves after fatty meals (this was a steady ache, not classic biliary colic). The whites of his eyes and his urine darkened gradually, not overnight. He has NOT travelled, has no tattoos, no new sexual partners, no IV drug use. NO baseline confusion, but his partner says he has seemed a bit \"slow and forgetful\" the last day or two (watch for early encephalopathy).\nALCOHOL (reveal only when asked about drinking): drinks roughly a pint (about 25 oz) of spirits a day, most days, for over 15 years; the last 2 weeks were heavier than usual; last drink was this morning. Has had the shakes and sweats on previous attempts to stop (prior withdrawal). No prior seizures or DTs that he knows of.\nMEDICATIONS / SUBSTANCE (reveal only when asked about medicines): hydrochlorothiazide for blood pressure; metformin for diabetes (has kept taking it despite not eating and vomiting); lisinopril; omeprazole. Takes ibuprofen \"a few times a week\" for headaches and an aching back. Over the last week, because of the belly pain and fevers, he has ALSO been taking acetaminophen — \"a couple of tablets every few hours\" — he is not sure of the total, maybe up to 4-5 grams on the worst days, but not a single large overdose and no intent to harm himself.\nPMH: alcohol use disorder; hypertension; type 2 diabetes; possible early cirrhosis (told once his liver was \"a bit scarred\" on a scan). No known viral hepatitis. SOCIAL: lives with his partner; former smoker; works intermittently as a painter. FAMILY: father drank heavily. ROS: as above — fatigue, anorexia, dark urine, pale-ish stools; no chest pain; no cough or sputum; no dysuria; reduced urine output the last day or two.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: jaundiced, ill-appearing, mildly diaphoretic, a fine tremor of the outstretched hands.\n- Vitals: BP 104/68, HR 108, RR 18, 38.2°C, SpO2 97% RA. Mildly orthostatic if checked (dry).\n- HEENT/skin: scleral icterus; spider angiomata on the chest and palmar erythema if inspected; dry mucous membranes.\n- Abdomen: tender, smooth hepatomegaly in the right upper quadrant; mild fullness; shifting dullness suggesting modest ascites if examined; NO Murphy sign and NO localized peritonitis; bowel sounds present.\n- Neuro: alert but slightly inattentive; ASTERIXIS present if specifically tested (early encephalopathy).\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the quantity/duration of alcohol use, the acetaminophen use, the ibuprofen, or the full medication list unless asked about drinking, medications, or painkillers specifically.\n- Stigmata of chronic liver disease, ascites, dry membranes/orthostasis, and asterixis are revealed only if the relevant exam is performed.\n- The pain is a STEADY ache, not colicky biliary pain — only clarify the character if asked.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "LFTs": "AST 240, ALT 95 — AST:ALT ratio >2:1 (typical of alcohol); both usually <300–400. GGT high.",
-      "Bilirubin": "Total bilirubin markedly elevated.",
-      "INR": "Prolonged; albumin low (impaired synthetic function).",
-      "CBC": "Leukocytosis with neutrophilia; macrocytosis; thrombocytopenia.",
-      "Acetaminophen": "Acetaminophen level not elevated (still checked).",
-      "ViralSerologies": "Negative (excludes viral hepatitis).",
-      "Severity": "Maddrey discriminant function / MELD calculated to grade severity."
+      "LFTs": "AST 268 U/L, ALT 102 U/L (AST:ALT 2.6:1, classic for alcohol; both <300-400 rather than the thousands of ischemic/viral injury), ALP 162 U/L, GGT markedly elevated. Modest transaminitis with a hepatocellular, alcohol pattern — NOT the >1000 surge of ischemic hepatitis or acute viral hepatitis.",
+      "Bilirubin": "Total bilirubin 14.8 mg/dL, direct 9.6 mg/dL — marked conjugated hyperbilirubinemia driving the deep jaundice.",
+      "INR": "INR 1.9 and albumin 2.6 g/dL — impaired hepatic synthetic function (not corrected by vitamin K).",
+      "CBC": "WBC 16.4 with neutrophilia (no clear source of infection identified — partly the inflammatory response of alcoholic hepatitis itself), Hgb 12.1 with MCV 104 (macrocytosis), platelets 92 (thrombocytopenia of chronic liver disease/alcohol).",
+      "BMP_renal": "Na 128 mmol/L, K 2.8 mmol/L, Cl 88, HCO3 30 mmol/L (anion gap = 128 - (88 + 30) = 10, NORMAL gap — a contraction/vomiting-related metabolic alkalosis with hypokalemia, NOT a high-gap acidosis). Creatinine 1.7 mg/dL (baseline ~0.9) with BUN 38 — prerenal/early hepatorenal AKI from vomiting, poor intake, the thiazide, and the ACE inhibitor. Glucose 96. Magnesium 1.2 mg/dL (low).",
+      "Acetaminophen": "Serum acetaminophen 22 mcg/mL — detectable from therapeutic-range supratherapeutic dosing but well below a single-overdose nomogram line; checked because of the reported daily acetaminophen-plus-alcohol use (staggered hepatotoxicity is possible but the AST is far too low and the pattern wrong for dominant APAP injury).",
+      "ViralSerologies": "Hepatitis A IgM negative; HBsAg and anti-HBc IgM negative; hepatitis C antibody and RNA negative; HIV negative — excludes acute viral hepatitis.",
+      "RUQ_ultrasound": "Coarse, mildly enlarged echogenic liver consistent with steatosis/early cirrhosis; modest ascites; patent vessels; NO intra- or extra-hepatic biliary duct dilatation and NO gallstones or pericholecystic fluid — argues strongly AGAINST biliary obstruction or ascending cholangitis.",
+      "Severity": "Maddrey discriminant function = 4.6 x (PT - control) + total bilirubin = with this INR/bilirubin, DF is well above 32 (severe); MELD elevated. Severe alcoholic hepatitis."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "litflStudyN": 6,
+      "integrated": true,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Left axis deviation with qR in aVL and rS in inferior leads; normal QRS duration.",
-      "verify": "Source a study matching: Left axis deviation with qR in aVL and rS in inferior leads; normal QRS duration. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia with flattened T waves, prominent U waves, and a long QU/QT interval — the electrocardiographic signature of hypokalaemia (K 2.8) and hypomagnesaemia in this vomiting, thiazide-treated, malnourished patient.",
+      "verify": "Source a study matching: sinus tachycardia with flattened T waves, prominent U waves, and prolonged QU interval consistent with hypokalaemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing left anterior fascicular block",
+      "imageDescription": "12-lead showing hypokalaemia — flat T waves, U waves, long QU interval",
       "searchTerms": [
-        "left anterior fascicular block ECG",
-        "LAFB left axis deviation"
+        "hypokalemia ECG U waves",
+        "long QT hypokalemia flattened T waves"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 62-year-old man presenting with palpitations has a tracing showing left axis deviation consistent with left anterior fascicular block."
+      "clinicalVignette": "A malnourished man with weeks of vomiting on a thiazide diuretic has a tracing with flattened T waves and prominent U waves."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=small%20right%20pleural%20effusion%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Borderline cardiomegaly with an unfolded thoracic aorta; lungs clear.",
-      "verify": "Source a study matching: Borderline cardiomegaly with an unfolded thoracic aorta; lungs clear. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Small right-sided pleural effusion with blunting of the right costophrenic angle and mild basal atelectasis; NO lobar consolidation; normal cardiomediastinal silhouette.",
+      "verify": "Source a study matching: small right pleural effusion with costophrenic-angle blunting and basal atelectasis, no consolidation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph borderline cardiomegaly unfolded aorta",
+      "imageDescription": "chest radiograph small right pleural effusion blunted costophrenic angle no consolidation",
       "searchTerms": [
-        "borderline cardiomegaly x-ray",
-        "unfolded aorta chest radiograph"
+        "small right pleural effusion chest x-ray",
+        "blunted costophrenic angle hepatic hydrothorax"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 67-year-old man with longstanding hypertension has a film showing borderline cardiomegaly and an unfolded thoracic aorta."
+      "clinicalVignette": "A man with chronic liver disease, ascites, and hypoalbuminemia has a film showing a small right pleural effusion with no consolidation."
     }
   },
   "revealKeys": [
@@ -70,8 +74,10 @@
     "Bilirubin",
     "INR",
     "CBC",
+    "BMP_renal",
     "Acetaminophen",
     "ViralSerologies",
+    "RUQ_ultrasound",
     "Severity",
     "ekg",
     "cxr"
@@ -79,61 +85,71 @@
   "essential": [
     "LFTs",
     "Bilirubin",
-    "INR"
+    "INR",
+    "RUQ_ultrasound"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Alcoholic hepatitis (leading,7). Acute viral hepatitis (CANT-MISS to exclude,4). Acetaminophen injury (CANT-MISS,3). Biliary obstruction/cholangitis (CANT-MISS,3). Ischemic hepatitis (core,2). Decompensated cirrhosis (core,3). Names alcoholic hepatitis with the AST:ALT >2:1 pattern in context of heavy alcohol use (core,3).",
-      "idealAnswer": "Leading diagnosis: Alcoholic hepatitis. Must-not-miss diagnoses to exclude: Acute viral hepatitis; Acetaminophen injury; Biliary obstruction/cholangitis. Also reasonable: Ischemic hepatitis; Decompensated cirrhosis.",
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis). This man has RUQ pain, jaundice, AND fever — explicitly name THREE mechanisms/causes of his fever and elevated liver enzymes that you must distinguish, and say which one leads.",
+      "rubric": "Alcoholic hepatitis (leading,6). Ascending cholangitis / biliary obstruction — must-not-miss given RUQ pain + fever + jaundice (Charcot triad mimic) (CANT-MISS,4). Acetaminophen (staggered/therapeutic-misadventure with alcohol) hepatotoxicity (CANT-MISS,3). Acute viral hepatitis (CANT-MISS,2). Ischemic hepatitis ('shock liver') from the binge/hypotension (core,2). Decompensated cirrhosis with spontaneous bacterial peritonitis as a fever source (core,2). Names alcoholic hepatitis with the AST:ALT >2:1, transaminases <300-400 pattern and a steady (non-colicky) ache (core,3). Explicitly names three mechanisms/causes of the fever+transaminitis to distinguish — e.g. alcoholic hepatitis inflammation, biliary infection, drug (APAP) injury, viral, ischemic, SBP (core,3). PENALTY: anchoring on alcoholic hepatitis and ignoring the cholangitis/infection or APAP possibilities (-3).",
+      "idealAnswer": "Leading diagnosis: Alcoholic hepatitis — steady RUQ ache, deep jaundice, low-grade fever, and a classic alcohol pattern (AST:ALT >2:1 with transaminases in the hundreds, not thousands) after a heavy binge. Because he has RUQ pain + fever + jaundice, the dangerous mimics to distinguish are: (1) ascending cholangitis / biliary obstruction (a Charcot-triad picture — but his pain is steady not colicky and imaging is needed to exclude duct dilation/stones); (2) acetaminophen hepatotoxicity from repeated therapeutic-range dosing combined with alcohol and fasting (a real staggered-overdose risk here); and (3) acute viral hepatitis. Also consider ischemic ('shock') liver from the binge and hypotension, and decompensated cirrhosis with spontaneous bacterial peritonitis as an alternative fever source. The fever and neutrophilia could be the inflammatory response of alcoholic hepatitis ITSELF or a concurrent infection — both must be pursued.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Alcoholic hepatitis",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Acute viral hepatitis",
+            "item": "Ascending cholangitis / biliary obstruction",
             "points": 4
           },
           {
-            "item": "Acetaminophen injury",
+            "item": "Acetaminophen hepatotoxicity (staggered/with alcohol)",
             "points": 3
           },
           {
-            "item": "Biliary obstruction/cholangitis",
-            "points": 3
+            "item": "Acute viral hepatitis",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Ischemic hepatitis",
+            "item": "Ischemic hepatitis ('shock liver')",
             "points": 2
           },
           {
-            "item": "Decompensated cirrhosis",
+            "item": "Decompensated cirrhosis with SBP as a fever source",
+            "points": 2
+          },
+          {
+            "item": "Names alcoholic hepatitis with the AST:ALT >2:1, transaminases <300-400 pattern and a steady non-colicky ache",
             "points": 3
           },
           {
-            "item": "Names alcoholic hepatitis with the AST:ALT >2:1 pattern in context of heavy alcohol use",
+            "item": "Explicitly names three mechanisms/causes of the fever and transaminitis to distinguish",
             "points": 3
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on alcoholic hepatitis and ignores cholangitis/infection or APAP possibilities",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute viral hepatitis",
-        "Acetaminophen injury",
-        "Biliary obstruction/cholangitis"
+        "Ascending cholangitis / biliary obstruction",
+        "Acetaminophen hepatotoxicity (staggered/with alcohol)",
+        "Acute viral hepatitis"
       ],
       "acceptableAlternatives": [
-        "Ischemic hepatitis",
-        "Decompensated cirrhosis"
+        "Ischemic hepatitis ('shock liver')",
+        "Decompensated cirrhosis with SBP as a fever source"
       ]
     },
     {
@@ -141,14 +157,18 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order?",
-      "rubric": "LFTs incl. AST:ALT ratio and GGT (CANT-MISS,3). Bilirubin (2). INR and albumin — synthetic function (3). CBC (1). Acetaminophen level (CANT-MISS,2). Viral hepatitis serologies (2). RUQ ultrasound (1). Calculate severity — Maddrey/MELD (1). PENALTY: not excluding viral/acetaminophen causes (-2).",
-      "idealAnswer": "Order: EKG; CXR; LFTs; Bilirubin; INR; CBC; Acetaminophen; Viral serologies; Severity.",
+      "prompt": "What initial workup do you want to order to separate these possibilities?",
+      "rubric": "LFTs incl. AST:ALT ratio, ALP and GGT (CANT-MISS,3). RUQ ultrasound to exclude biliary obstruction/cholangitis (CANT-MISS,3). Acetaminophen level (CANT-MISS,2). Bilirubin, INR, and albumin — synthetic function (2). CBC (1). BMP/electrolytes, renal function, magnesium — given vomiting, thiazide, AKI (2). Viral hepatitis serologies (1). Calculate severity — Maddrey/MELD (1). EKG and CXR (1). PENALTY: not imaging the biliary tree before committing, or not checking acetaminophen (-2).",
+      "idealAnswer": "Order: LFTs with AST:ALT ratio, ALP and GGT; RUQ ultrasound (to exclude biliary dilatation/stones/cholangitis — the key discriminator); serum acetaminophen level; bilirubin; INR and albumin; CBC; a BMP/electrolyte panel with creatinine and magnesium (he is vomiting, on a thiazide and ACE-inhibitor, and likely has an AKI and hypokalemia); viral hepatitis serologies; EKG and CXR; and calculate the Maddrey discriminant function / MELD to grade severity. Consider blood cultures and a diagnostic paracentesis (cell count + culture) to look for SBP given the ascites and fever.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "AST:ALT ratio and GGT",
+            "item": "AST:ALT ratio, ALP and GGT",
+            "points": 3
+          },
+          {
+            "item": "RUQ ultrasound to exclude biliary obstruction/cholangitis",
             "points": 3
           },
           {
@@ -158,53 +178,42 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "LFTs",
-            "points": 2
-          },
-          {
-            "item": "Bilirubin",
-            "points": 2
-          },
-          {
-            "item": "INR",
+            "item": "Bilirubin, INR and albumin",
             "points": 2
           },
           {
             "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "BMP/electrolytes, creatinine and magnesium",
             "points": 2
           },
           {
             "item": "Viral serologies",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Severity",
-            "points": 2
+            "item": "Severity (Maddrey/MELD) and EKG/CXR",
+            "points": 1
           }
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "not excluding viral/acetaminophen causes",
+            "item": "Not imaging the biliary tree or not checking acetaminophen before committing",
             "points": -2
           }
         ]
       },
       "requiredTests": [
-        "AST:ALT ratio and GGT",
+        "AST:ALT ratio, ALP and GGT",
+        "RUQ ultrasound to exclude biliary obstruction/cholangitis",
         "Acetaminophen level"
       ],
       "optionalTests": [],
       "contraindicatedTests": [
-        "not excluding viral/acetaminophen causes"
+        "Not imaging the biliary tree or not checking acetaminophen before committing"
       ],
       "orderSensitiveActions": []
     },
@@ -214,32 +223,33 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = left anterior fascicular block (marked left axis deviation, qR in aVL, rS inferiorly, near-normal QRS width). CREDIT: systematic rate & rhythm read (6); identifies the marked left axis deviation (4); recognizes left anterior fascicular block (3); distinguishes it from inferior MI (2). PENALTY: calling the study normal / missing the abnormality (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and explain how they fit his clinical picture and bloodwork.",
+      "rubric": "Findings = sinus tachycardia with flattened/low T waves, prominent U waves, and a prolonged QU/QT interval — the signature of hypokalaemia (K 2.8) and hypomagnesaemia in a vomiting, thiazide-treated, malnourished man. CREDIT: systematic rate & rhythm read (4); identifies the flattened T waves and prominent U waves (4); names hypokalaemia +/- hypomagnesaemia as the cause and links it to vomiting/thiazide/poor intake (4); recognizes the long QU/QT and the resulting arrhythmia risk (e.g. torsades), to be corrected before/with treatment (3). PENALTY: calling the study normal / missing the U waves and QT (-3).",
       "keyFindings": [
-        "marked left axis deviation",
-        "qR in aVL with rS inferiorly"
+        "flattened T waves with prominent U waves",
+        "prolonged QU/QT interval"
       ],
       "criticalFindings": [
-        "Left anterior fascicular block."
+        "Hypokalaemia (with hypomagnesaemia): flattened T waves, prominent U waves, and a long QU/QT interval — arrhythmia (torsades) risk."
       ],
       "commonMistakes": [
-        "attributing the left axis to inferior MI instead of LAFB"
+        "mistaking the U wave for a normal T wave and calling the QT normal",
+        "missing the link between the EKG, the K of 2.8, and the vomiting/thiazide"
       ],
-      "idealAnswer": "Left anterior fascicular block: left axis deviation, qR in aVL, rS in the inferior leads, near-normal QRS width.",
+      "idealAnswer": "Sinus tachycardia with flattened, low-amplitude T waves, prominent U waves, and a prolonged QU/QT interval — the classic electrocardiographic picture of hypokalaemia (his K is 2.8), compounded by hypomagnesaemia, from weeks of vomiting, poor intake, and a thiazide diuretic. This matters: the long QT puts him at risk of torsades de pointes, so the potassium AND magnesium must be aggressively repleted, with cardiac monitoring, before and during his other treatment.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Left anterior fascicular block."
+          "Hypokalaemia (with hypomagnesaemia): flattened T waves, prominent U waves, and a long QU/QT interval — arrhythmia (torsades) risk."
         ],
         "coreActions": [
-          "marked left axis deviation",
-          "qR in aVL with rS inferiorly"
+          "flattened T waves with prominent U waves",
+          "prolonged QU/QT interval"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the U waves and QT prolongation",
             "points": -3
           }
         ]
@@ -252,31 +262,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = borderline cardiomegaly with an unfolded thoracic aorta; lungs clear. CREDIT: notes borderline cardiomegaly (6); notes the unfolded aorta as a chronic change (4). PENALTY: calling the study normal / missing the abnormality (-3).",
+      "rubric": "Findings = small right pleural effusion (blunted right costophrenic angle) with mild basal atelectasis; NO lobar consolidation; normal cardiomediastinal silhouette. CREDIT: identifies the small right pleural effusion / blunted costophrenic angle (6); states there is no lobar consolidation, so pneumonia is not the obvious fever source (4). PENALTY: calling the study normal / missing the effusion, or over-calling a pneumonia (-3).",
       "keyFindings": [
-        "notes borderline cardiomegaly",
-        "notes the unfolded aorta as chronic"
+        "small right pleural effusion / blunted costophrenic angle",
+        "no lobar consolidation"
       ],
       "criticalFindings": [
-        "Borderline cardiomegaly with an unfolded aorta."
+        "Small right pleural effusion with no consolidation (consistent with hepatic hydrothorax/atelectasis, not pneumonia)."
       ],
       "commonMistakes": [
-        "over-calling borderline heart size on a portable film"
+        "over-calling a basal effusion/atelectasis as pneumonia",
+        "missing the small effusion and calling the film normal"
       ],
-      "idealAnswer": "Borderline cardiomegaly with an unfolded thoracic aorta — chronic changes, lungs clear.",
+      "idealAnswer": "A small right-sided pleural effusion blunting the right costophrenic angle, with mild basal atelectasis and no lobar consolidation; the heart and mediastinum are normal. The effusion fits a hepatic hydrothorax/sympathetic effusion in a man with ascites and hypoalbuminemia, and the absence of consolidation makes pneumonia an unlikely source of his fever.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Borderline cardiomegaly with an unfolded aorta."
+          "Small right pleural effusion with no consolidation (consistent with hepatic hydrothorax/atelectasis, not pneumonia)."
         ],
         "coreActions": [
-          "notes borderline cardiomegaly",
-          "notes the unfolded aorta as chronic"
+          "small right pleural effusion / blunted costophrenic angle",
+          "no lobar consolidation"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / over-calls a pneumonia",
             "points": -3
           }
         ]
@@ -286,9 +297,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "AST:ALT >2:1, high bilirubin, prolonged INR, negative viral/APAP workup, heavy alcohol use. What is your diagnosis and how do you grade severity?",
-      "rubric": "Alcoholic hepatitis (6). Grades severity with the Maddrey discriminant function (or MELD) to guide steroid use (4).",
-      "idealAnswer": "Alcoholic hepatitis. Grade severity with the Maddrey discriminant function (or MELD) to guide corticosteroid use (DF >=32 indicates severe disease).",
+      "prompt": "Putting it together — AST 268 / ALT 102 (ratio 2.6:1), bilirubin 14.8, INR 1.9, ultrasound with NO biliary dilatation or stones, acetaminophen sub-nomogram, negative viral serologies, plus Na 128, K 2.8, Cr 1.7, and a hypokalaemic EKG — what is your diagnosis, what discriminates it from the mimics, and what residual ambiguity remains?",
+      "rubric": "Commits to severe alcoholic hepatitis. Names the discriminators: AST:ALT >2:1 with transaminases in the hundreds (not thousands) argues for alcohol over ischemic/viral; a normal biliary tree on ultrasound (no dilation/stones) excludes cholangitis/obstruction; sub-nomogram acetaminophen with too-low an AST argues against dominant APAP injury; negative serologies exclude viral. Grades severity with Maddrey DF (>32 = severe) / MELD to guide steroids. Acknowledges residual ambiguity — fever/neutrophilia could still be a concurrent infection (SBP) so culture/paracentesis before steroids; and a staggered-APAP and hepatorenal AKI component coexist.",
+      "idealAnswer": "Severe alcoholic hepatitis. Discriminators: the AST:ALT ratio of 2.6:1 with transaminases only in the hundreds is the alcohol signature (ischemic and viral hepatitis push AST/ALT into the thousands); the ultrasound shows NO biliary dilatation or stones, which effectively excludes the Charcot-triad mimic of ascending cholangitis/obstruction; the acetaminophen level is below the nomogram and the transaminitis is far too modest for dominant APAP toxicity (though a staggered/therapeutic-misadventure contribution can coexist); and the viral serologies are negative. Grade severity with the Maddrey discriminant function (DF >32 here = severe) / MELD to decide on corticosteroids. Residual ambiguity that must be resolved BEFORE committing to steroids: the fever and neutrophilia could represent a concurrent infection (notably SBP given the ascites) rather than the hepatitis itself, so obtain blood cultures and a diagnostic paracentesis; and there is a coexisting prerenal/early hepatorenal AKI and a hypokalaemic, long-QT EKG that must be corrected in parallel.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -301,65 +312,80 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH acute liver injury (alcoholic hepatitis): alcohol cessation + supportive care/nutrition (CANT-MISS,6); thiamine/vitamins + manage withdrawal (4); risk-stratify with discriminant function/MELD (3); corticosteroids if severe (DF≥32) after excluding infection/bleed (4); screen for and treat infection (3); hepatology consult (2). PENALTY: steroids with untreated infection/active GI bleed (-3); ongoing alcohol/hepatotoxins (-2).",
-      "idealAnswer": "Alcohol cessation and supportive care: nutrition (high protein/calorie), thiamine and vitamins, treat the alcohol withdrawal, and manage volume/electrolytes. Calculate discriminant function/MELD; if severe (DF ≥32), corticosteroids (prednisolone) after excluding active infection/GI bleed, reassess with Lille score. Screen for and treat infection. Hepatology consult; avoid further hepatotoxins.",
+      "prompt": "What is your management plan, including how you would handle his electrolytes and EKG, his potential infection, and — looking ahead — what must be in place before he is safe to discharge?",
+      "rubric": "Per MGH acute liver injury (alcoholic hepatitis): alcohol cessation + supportive care/high-calorie high-protein nutrition (CANT-MISS,5); correct the hypokalaemia AND hypomagnesaemia with cardiac monitoring given the long-QT EKG, and treat the hyponatraemia/AKI (hold thiazide, ACE-inhibitor, NSAIDs and nephrotoxins; cautious volume resuscitation) (CANT-MISS,5); thiamine BEFORE glucose and manage alcohol withdrawal (CIWA) (3); risk-stratify with Maddrey DF/MELD (2); corticosteroids (prednisolone) only if severe AND after excluding/treating infection and GI bleed, reassess with Lille at day 7 (3); screen for and treat infection — blood cultures, diagnostic paracentesis for SBP (3); hepatology consult (1). SAFE-DISCHARGE/DISPOSITION: admit now; before discharge ensure resolved/treated infection and stable renal/electrolytes, medication reconciliation (stop NSAIDs, restart/adjust antihypertensives and metformin appropriately), documented alcohol-cessation support/rehab referral, and close hepatology/PCP follow-up (3). PENALTY: steroids with untreated infection or active GI bleed (-3); giving glucose before thiamine, or continuing the thiazide/ACE-inhibitor/NSAIDs/nephrotoxins (-2).",
+      "idealAnswer": "Admit. Alcohol cessation and supportive care with aggressive high-calorie, high-protein nutrition. Correct the electrolytes urgently: replete potassium AND magnesium with continuous cardiac monitoring because the EKG shows hypokalaemia with a long QT (torsades risk); treat the hyponatraemia and AKI by holding the thiazide, ACE-inhibitor, and all NSAIDs/nephrotoxins and giving cautious volume resuscitation. Give thiamine BEFORE any glucose, and manage alcohol withdrawal on a CIWA protocol (he has prior withdrawal symptoms). Risk-stratify with the Maddrey discriminant function/MELD; since he is severe, consider corticosteroids (prednisolone) — but ONLY after screening for and treating infection (blood cultures, diagnostic paracentesis for SBP) and excluding GI bleeding, then reassess response with the Lille score at day 7. Hepatology consult; monitor for hepatorenal syndrome and encephalopathy. SAFE DISCHARGE: he is not dischargeable now; before discharge he needs his infection treated, renal function and electrolytes stabilized, full medication reconciliation (permanently stop NSAIDs, reconsider the thiazide/ACE-inhibitor and metformin given the AKI), structured alcohol-cessation support and rehab referral, and close hepatology and primary-care follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Alcohol cessation and supportive nutrition",
-            "points": 6
+            "item": "Alcohol cessation and supportive high-calorie/high-protein nutrition",
+            "points": 5
+          },
+          {
+            "item": "Correct hypokalaemia AND hypomagnesaemia with cardiac monitoring (long-QT EKG), treat hyponatraemia/AKI and stop nephrotoxins",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Thiamine/vitamins and manage withdrawal",
-            "points": 4
-          },
-          {
-            "item": "Corticosteroids if severe (after excluding infection/bleed)",
-            "points": 4
-          },
-          {
-            "item": "Risk-stratify (discriminant function/MELD)",
+            "item": "Thiamine before glucose and manage alcohol withdrawal (CIWA)",
             "points": 3
           },
           {
-            "item": "Screen for and treat infection",
+            "item": "Corticosteroids only if severe and after excluding/treating infection and bleed (reassess with Lille)",
+            "points": 3
+          },
+          {
+            "item": "Risk-stratify (Maddrey DF/MELD)",
+            "points": 2
+          },
+          {
+            "item": "Screen for and treat infection — blood cultures, diagnostic paracentesis for SBP",
+            "points": 3
+          },
+          {
+            "item": "Arrange safe discharge: med reconciliation (stop NSAIDs/reassess thiazide-ACEi-metformin), alcohol-cessation/rehab referral, close hepatology/PCP follow-up",
             "points": 3
           },
           {
             "item": "Hepatology consult",
-            "points": 2
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Monitor for hepatorenal syndrome",
+            "item": "Monitor for hepatorenal syndrome and encephalopathy",
             "points": 1
           }
         ],
         "penalties": [
           {
-            "item": "Steroids with untreated infection or GI bleed",
+            "item": "Steroids with untreated infection or active GI bleed",
             "points": -3
+          },
+          {
+            "item": "Glucose before thiamine, or continuing the thiazide/ACE-inhibitor/NSAIDs/nephrotoxins",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Alcohol cessation and supportive nutrition"
+        "Alcohol cessation and supportive high-calorie/high-protein nutrition",
+        "Correct hypokalaemia AND hypomagnesaemia with cardiac monitoring (long-QT EKG), treat hyponatraemia/AKI and stop nephrotoxins"
       ],
       "optionalActions": [
-        "Thiamine/vitamins and manage withdrawal",
-        "Corticosteroids if severe (after excluding infection/bleed)",
-        "Risk-stratify (discriminant function/MELD)",
-        "Screen for and treat infection",
+        "Thiamine before glucose and manage alcohol withdrawal (CIWA)",
+        "Corticosteroids only if severe and after excluding/treating infection and bleed (reassess with Lille)",
+        "Risk-stratify (Maddrey DF/MELD)",
+        "Screen for and treat infection — blood cultures, diagnostic paracentesis for SBP",
+        "Arrange safe discharge: med reconciliation (stop NSAIDs/reassess thiazide-ACEi-metformin), alcohol-cessation/rehab referral, close hepatology/PCP follow-up",
         "Hepatology consult",
-        "Monitor for hepatorenal syndrome"
+        "Monitor for hepatorenal syndrome and encephalopathy"
       ],
       "unsafeActions": [
-        "Steroids with untreated infection or GI bleed"
+        "Steroids with untreated infection or active GI bleed",
+        "Glucose before thiamine, or continuing the thiazide/ACE-inhibitor/NSAIDs/nephrotoxins"
       ],
       "consults": [
         "Hepatology"
@@ -379,12 +405,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "medication_misuse"
     ],
-    "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "50-year-old man, jaundiced, mildly ill. Good historian once asked.",
+    "communicationStyle": "answers directly but does not volunteer the drinking, painkiller, or full medication details",
+    "affect": "52-year-old man, jaundiced and mildly ill, with a fine hand tremor. Cooperative; a reasonable historian once asked, but embarrassed about his drinking and painkiller use.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal alcohol quantity/duration, acetaminophen use, ibuprofen, or the full medication list unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -399,10 +426,33 @@
         "drinking",
         "how much do you drink",
         "etoh",
-        "alcohol use"
+        "alcohol use",
+        "last drink",
+        "withdrawal"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
-      "importance": "core",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications_painkillers",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "painkillers",
+        "acetaminophen",
+        "tylenol",
+        "paracetamol",
+        "ibuprofen",
+        "nsaid",
+        "metformin",
+        "water pill",
+        "diuretic"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
       "hiddenUntilAsked": true
     },
@@ -427,7 +477,10 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "colicky",
+        "does it come in waves",
+        "radiate"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -453,7 +506,13 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "vomiting",
+        "urine",
+        "stool",
+        "blood",
+        "confusion"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -467,7 +526,8 @@
         "what makes it worse",
         "what makes it better",
         "aggravating",
-        "alleviating"
+        "alleviating",
+        "fatty meals"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -480,7 +540,11 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "blood pressure",
+        "liver",
+        "cirrhosis"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -488,12 +552,16 @@
       "hiddenUntilAsked": false
     },
     {
-      "id": "medications",
-      "category": "meds",
+      "id": "exposures_risk",
+      "category": "social",
       "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "travel",
+        "tattoos",
+        "iv drug use",
+        "needles",
+        "sexual history",
+        "hepatitis exposure",
+        "sick contacts"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -517,17 +585,28 @@
   "physicalExamMappings": [
     {
       "id": "assess_shifting_dullness_finding_1",
-      "finding": "Abdomen: tender hepatomegaly; possible ascites (shifting dullness) if examined; spider angiomata/palmar erythema if examined.",
+      "finding": "Abdomen: tender, smooth hepatomegaly in the right upper quadrant with modest ascites (shifting dullness) if examined; no localized peritonitis.",
       "revealedBy": [
         "assess_shifting_dullness"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No ascites."
+      "normalIfNotPresent": "No shifting dullness."
     },
     {
-      "id": "inspect_sclera_finding_2",
-      "finding": "General: jaundiced, ill-appearing.",
+      "id": "assess_hepatomegaly_finding_2",
+      "finding": "Abdomen: tender, smooth hepatomegaly in the right upper quadrant; bowel sounds present; no Murphy sign.",
+      "revealedBy": [
+        "assess_hepatomegaly",
+        "palpate_ruq"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No hepatomegaly or RUQ tenderness."
+    },
+    {
+      "id": "inspect_sclera_finding_3",
+      "finding": "General: scleral icterus and jaundice, ill-appearing; spider angiomata and palmar erythema if inspected.",
       "revealedBy": [
         "inspect_sclera",
         "assess_for_jaundice"
@@ -537,8 +616,19 @@
       "normalIfNotPresent": "No jaundice."
     },
     {
-      "id": "assess_asterixis_finding_3",
-      "finding": "Neuro: alert; check for asterixis (encephalopathy) if examined.",
+      "id": "assess_mucous_membranes_finding_4",
+      "finding": "Dry mucous membranes; mildly orthostatic — consistent with volume depletion from vomiting and poor intake.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes; no orthostasis."
+    },
+    {
+      "id": "assess_asterixis_finding_5",
+      "finding": "Neuro: alert but slightly inattentive; ASTERIXIS present if specifically tested — early hepatic encephalopathy.",
       "revealedBy": [
         "assess_asterixis"
       ],
@@ -557,63 +647,74 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Alcoholic hepatitis",
-    "diagnosticFramework": "50M with heavy alcohol use presents with 2 weeks of jaundice, right upper quadrant tenderness, anorexia, and low-grade fever. The diagnosis is Alcoholic hepatitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "52M with alcohol use disorder, hypertension on a thiazide, and type 2 diabetes on metformin presents with 2 weeks of progressive jaundice, RUQ pain, anorexia, and low-grade fever after a heavy binge, with several days of vomiting. The diagnosis is severe alcoholic hepatitis, but the picture is layered: RUQ pain + fever + jaundice forces exclusion of ascending cholangitis (normal biliary tree on ultrasound), a staggered acetaminophen-with-alcohol injury (sub-nomogram level, too-modest transaminitis), and viral hepatitis (negative serologies); meanwhile vomiting + a thiazide + an ACE-inhibitor have produced hyponatremia, a hypokalaemic long-QT EKG, hypomagnesaemia, and a prerenal/early hepatorenal AKI that must be managed concurrently.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Abdomen: tender hepatomegaly; possible ascites (shifting dullness) if examined; spider angiomata/palmar erythema if examined.",
-      "General: jaundiced, ill-appearing.",
-      "Neuro: alert; check for asterixis (encephalopathy) if examined."
+      "Abdomen: tender, smooth hepatomegaly in the right upper quadrant with modest ascites (shifting dullness) if examined; no localized peritonitis.",
+      "Abdomen: tender, smooth hepatomegaly in the right upper quadrant; bowel sounds present; no Murphy sign.",
+      "General: scleral icterus and jaundice, ill-appearing; spider angiomata and palmar erythema if inspected.",
+      "Dry mucous membranes; mildly orthostatic — consistent with volume depletion from vomiting and poor intake.",
+      "Neuro: alert but slightly inattentive; ASTERIXIS present if specifically tested — early hepatic encephalopathy."
     ],
     "keyDiagnosticFindings": [
       "LFTs",
       "Bilirubin",
       "INR",
       "CBC",
+      "BMP_renal",
       "Acetaminophen",
       "ViralSerologies",
+      "RUQ_ultrasound",
       "Severity"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Alcoholic hepatitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Alcoholic hepatitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (tachycardic, low-normal BP, febrile).",
+      "Elicit the focused history, drawing out the alcohol quantity, the acetaminophen/ibuprofen use, and the full medication list only on direct questioning.",
+      "Perform the targeted physical exam to reveal hepatomegaly, ascites, dehydration, and asterixis.",
+      "Build a differential led by alcoholic hepatitis while explicitly distinguishing cholangitis/obstruction, staggered APAP injury, and viral hepatitis, and naming three mechanisms of the fever and transaminitis.",
+      "Order a focused workup — AST:ALT/GGT, RUQ ultrasound, acetaminophen level, electrolytes/renal/magnesium, serologies — and interpret the hypokalaemic long-QT EKG and the small pleural effusion on CXR.",
+      "Commit to severe alcoholic hepatitis, grade with Maddrey/MELD, exclude/treat infection before steroids, correct the electrolytes and AKI, and arrange a safe disposition."
     ],
     "commonPitfalls": [
-      "Steroids with untreated infection or GI bleed"
+      "Anchoring on alcoholic hepatitis and missing cholangitis or a concurrent infection",
+      "Missing the staggered acetaminophen-plus-alcohol contribution",
+      "Giving corticosteroids before excluding/treating infection",
+      "Overlooking the hypokalaemic long-QT EKG or giving glucose before thiamine",
+      "Continuing the thiazide/ACE-inhibitor/NSAIDs and worsening the AKI"
     ],
     "managementPearls": [
-      "Alcohol cessation and supportive nutrition"
+      "Alcohol cessation and supportive high-calorie/high-protein nutrition",
+      "Correct potassium AND magnesium with cardiac monitoring given the long-QT EKG; thiamine before glucose"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "assess_asterixis"
     ],
     "criticalWorkupItems": [
-      "AST:ALT ratio and GGT",
+      "AST:ALT ratio, ALP and GGT",
+      "RUQ ultrasound to exclude biliary obstruction/cholangitis",
       "Acetaminophen level"
     ],
     "criticalInterpretationItems": [
-      "Left anterior fascicular block.",
-      "Borderline cardiomegaly with an unfolded aorta."
+      "Hypokalaemia (with hypomagnesaemia): flattened T waves, prominent U waves, and a long QU/QT interval — arrhythmia (torsades) risk.",
+      "Small right pleural effusion with no consolidation (consistent with hepatic hydrothorax/atelectasis, not pneumonia)."
     ],
     "criticalManagementItems": [
-      "Alcohol cessation and supportive nutrition"
+      "Alcohol cessation and supportive high-calorie/high-protein nutrition",
+      "Correct hypokalaemia AND hypomagnesaemia with cardiac monitoring (long-QT EKG), treat hyponatraemia/AKI and stop nephrotoxins"
     ],
     "keyImageInterpretationFindings": [
-      "Left anterior fascicular block.",
-      "Borderline cardiomegaly with an unfolded aorta."
+      "Hypokalaemia (with hypomagnesaemia): flattened T waves, prominent U waves, and a long QU/QT interval.",
+      "Small right pleural effusion with no consolidation."
     ],
     "criticalImageInterpretationFindings": [
-      "Left anterior fascicular block.",
-      "Borderline cardiomegaly with an unfolded aorta."
+      "Hypokalaemia (with hypomagnesaemia): flattened T waves, prominent U waves, and a long QU/QT interval — arrhythmia (torsades) risk.",
+      "Small right pleural effusion with no consolidation (consistent with hepatic hydrothorax/atelectasis, not pneumonia)."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Flattened T waves with prominent U waves and a long QU interval are hypokalaemia until proven otherwise — correct the K and the Mg together.",
+      "A long QT in a vomiting, malnourished, thiazide-treated patient is an arrhythmia risk that changes management.",
+      "Read every study systematically and state pertinent negatives — here, no consolidation makes pneumonia an unlikely fever source."
     ]
   },
   "communicationScoring": {
@@ -628,7 +729,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions about drinking and medication use",
         "points": 1
       },
       {
@@ -643,8 +744,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated-read where clinically natural; pathology-forward standalone otherwise",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

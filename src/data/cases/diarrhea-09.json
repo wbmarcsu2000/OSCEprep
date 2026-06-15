@@ -1,0 +1,758 @@
+{
+  "id": "diarrhea-09",
+  "category": "Diarrhea",
+  "difficulty": "hard",
+  "title": "High-volume watery diarrhea that persists with fasting, with profound weakness",
+  "diagnosis": "VIPoma (pancreatic neuroendocrine tumor — WDHA syndrome)",
+  "chart": {
+    "ageSex": "54F",
+    "cc": "Months of large-volume watery diarrhea and severe weakness",
+    "oneLiner": "54F with mild hypertension presents with ~5 months of progressively profuse, watery, tea-colored, non-bloody diarrhea (often several liters a day) that does NOT stop when she fasts, now with profound muscle weakness, cramps, palpitations, lightheadedness, and ~12 lb weight loss.",
+    "vitals": {
+      "BP": "98/60",
+      "HR": "108",
+      "RR": "18",
+      "Temp": "36.8°C",
+      "SpO2": "98% RA"
+    },
+    "timer": 180
+  },
+  "opening": "I've had this watery diarrhea for months — it just pours out of me even when I haven't eaten anything, and now I'm so weak I can barely stand.",
+  "patientFile": "PERSONA: 54-year-old woman, looks tired, mildly dry, sitting on the stretcher feeling weak and a bit shaky. Cooperative, frightened by how much fluid she is losing and how weak she has become. Good historian.\n\nHPI: About 5 months of WATERY, voluminous, NON-bloody, NON-greasy diarrhea — she describes it as 'pouring water,' often several large watery movements totaling what feels like liters a day, sometimes tea/weak-tea colored. The KEY feature (reveal when asked about fasting or whether food matters): it does NOT stop when she stops eating — she tried a full day of clear liquids and even fasting and the watery stool kept coming, which surprised her. No abdominal pain to speak of, no urgency-relieved cramps, just the volume. Over the same months: profound MUSCLE WEAKNESS and cramps (legs give out climbing stairs), intermittent PALPITATIONS, lightheadedness/near-fainting on standing, increased thirst, and ~12 lb unintentional weight loss. She has noticed occasional facial FLUSHING but it is minor and not the dominant feature. NO blood or mucus in stool, NO nocturnal sweats/fevers, NO recent antibiotics, NO recent travel, NO sick contacts, NO new foods, and (reveal only if asked) NO laxative or 'detox/colon-cleanse' or weight-loss product use at all. NO heartburn or epigastric ulcer-type pain (pertinent negative against gastrinoma — only if asked).\nPMH: mild essential hypertension. No diabetes, no thyroid disease, no known pancreatic disease, no prior GI surgery. MEDS: amlodipine 5 mg daily ONLY. Specifically: NO laxatives, NO PPIs, NO antibiotics recently, NO herbal/OTC weight-loss or 'cleanse' products (she is emphatic she has not used any laxatives if asked). ALLERGIES: none. SOCIAL: retired teacher, lives with her spouse, rare alcohol, never smoked, no recreational drugs; she is NOT trying to lose weight and denies any eating-disorder or surreptitious laxative behavior if gently asked. FAMILY: no known endocrine tumors, no MEN syndrome, no pituitary/parathyroid/pancreatic tumors that she knows of (only if asked). ROS: weakness, cramps, palpitations, thirst, constipation never; no flushing-triggered wheeze; no bone pain; no kidney stones known.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: tired, mildly ill-appearing, looks volume-depleted; resting on the stretcher.\n- Vitals: BP 98/60, HR 108, RR 18, 36.8°C, SpO2 98% RA. Orthostatic if checked: drops to 84/54 with HR rise to 124 on standing (significant orthostasis).\n- Skin/mucous membranes: dry mucous membranes, poor skin turgor (dehydration). Occasional faint facial flush, not dramatic.\n- Cardiac: tachycardic, regular; no murmur.\n- Lungs: clear.\n- Abdomen: soft, NON-tender, no rebound/guarding, no organomegaly palpable, normoactive-to-increased bowel sounds; no mass appreciated on routine exam.\n- Neuro/MSK: diffuse proximal muscle weakness and hyporeflexia consistent with profound hypokalemia if motor strength/reflexes tested; no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the single most important clue (that the diarrhea PERSISTS WITH FASTING) unless asked whether fasting/not eating changes it or whether food affects it.\n- Do NOT volunteer the laxative/cleanse-product negative, the family history, or the flushing unless asked.\n- Dehydration signs, orthostasis, and the muscle weakness/hyporeflexia are revealed ONLY if the relevant exam/maneuver is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
+  "dx": {
+    "labs": {
+      "BMP": "Na 138, K 2.4 (profound hypokalemia), Cl 116, HCO3 14, BUN 34, Cr 1.6 (prerenal AKI from volume loss), glucose 122. Anion gap = Na − (Cl + HCO3) = 138 − (116 + 14) = 8 — a NORMAL/low anion gap NON-anion-gap (hyperchloremic) metabolic acidosis from stool bicarbonate loss, NOT a high-gap acidosis.",
+      "Calcium": "Total calcium 11.6 mg/dL (HYPERcalcemia), albumin 3.9 (corrected ~11.7), ionized calcium elevated — fits VIPoma (hypercalcemia) and argues AGAINST the hypocalcemia of malabsorption.",
+      "Magnesium": "Mg 1.5 mg/dL (mildly low), phosphate low-normal — coexisting electrolyte losses that worsen the hypokalemia and arrhythmia risk.",
+      "StoolStudies": "Stool volume >1 L/day and PERSISTS during a supervised 48-hour fast (secretory pattern). Stool osmotic gap LOW (~30 mOsm/kg; gap = 290 − 2×[stool Na + stool K]) — confirms a SECRETORY (not osmotic) diarrhea. Stool laxative screen (including bisacodyl/senna/magnesium) NEGATIVE; stool cultures, C. difficile toxin/PCR, and ova & parasites NEGATIVE; fecal fat not increased.",
+      "VIP": "Fasting plasma vasoactive intestinal peptide (VIP) MARKEDLY ELEVATED — clinches a VIP-secreting neuroendocrine tumor (WDHA / Verner–Morrison syndrome). Plasma chromogranin A also elevated (neuroendocrine marker). Gastrin NORMAL (argues against Zollinger–Ellison/gastrinoma); fasting glucose only mildly high.",
+      "Imaging": "CT/MRI pancreas: a ~3 cm hypervascular mass in the pancreatic TAIL with a few small hypervascular liver lesions; 68Ga-DOTATATE PET shows somatostatin-receptor-avid uptake in the pancreatic mass and hepatic lesions — a well-differentiated pancreatic neuroendocrine tumor."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Sinus tachycardia at ~108 bpm with the electrocardiographic signature of profound hypokalemia (K 2.4): prominent U waves, flattened/inverted T waves, ST depression, and an apparent long QT/QU interval; the PR is normal. A torsades-de-pointes / ventricular-arrhythmia substrate driven by her secretory potassium losses (her hypercalcemia tends to shorten the true QT, so the long QU is the hypokalemia/U-wave fusion).",
+      "integrated": true,
+      "litflStudyN": 6,
+      "verify": "Source a study matching: sinus tachycardia with prominent U waves, flattened T waves, ST depression and apparent long QU (severe hypokalemia). Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing sinus tachycardia with prominent U waves, flat T waves and ST depression of severe hypokalemia",
+      "searchTerms": [
+        "hypokalemia U waves ECG",
+        "severe hypokalemia flat T waves ST depression 12 lead"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 54-year-old woman with months of high-volume secretory diarrhea, profound weakness, and palpitations has an EKG drawn after her potassium returns at 2.4 mmol/L."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA%20upright&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Clear lung fields; normal cardiomediastinal silhouette; no free air, effusion, or infiltrate — a normal screening film in a dehydrated patient with a metabolic, not pulmonary, problem.",
+      "verify": "Source a study matching: clear lungs, normal cardiomediastinal silhouette, no acute process. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "assetNeeded": true,
+      "imageDescription": "chest radiograph with clear lungs and no acute process",
+      "searchTerms": [
+        "normal upright PA chest x-ray",
+        "clear lungs normal cardiomediastinal silhouette radiograph"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A volume-depleted woman with chronic secretory diarrhea has a screening chest film during her metabolic workup."
+    }
+  },
+  "revealKeys": [
+    "BMP",
+    "Calcium",
+    "Magnesium",
+    "StoolStudies",
+    "VIP",
+    "Imaging",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "BMP",
+    "StoolStudies",
+    "VIP"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on your history and physical, give your differential for this chronic high-volume watery diarrhea (note your leading diagnosis). Explicitly state how you would distinguish a SECRETORY from an OSMOTIC diarrhea, and name the must-not-miss secretory causes.",
+      "rubric": "VIPoma / WDHA (Verner–Morrison) secretory diarrhea — leading (leading,7). Competing must-not-miss: SURREPTITIOUS laxative abuse / factitious diarrhea — must be actively excluded (CANT-MISS,4). Carcinoid syndrome (other secretory neuroendocrine tumor) (CANT-MISS,3). Zollinger–Ellison / gastrinoma and other islet-cell tumors; medullary thyroid carcinoma (core,3). Distinguishes secretory vs osmotic: secretory diarrhea PERSISTS WITH FASTING and has a LOW stool osmotic gap (<50), osmotic diarrhea STOPS with fasting and has a HIGH gap (>100) (core,5). Exclude chronic infection incl. C. difficile / Giardia, and other endocrine causes (hyperthyroidism) (core,3). PENALTY: anchoring on infectious gastroenteritis or ordering empiric antibiotics without recognizing a months-long secretory, fasting-persistent picture (-3); failing to consider factitious/laxative diarrhea (-2).",
+      "idealAnswer": "Leading diagnosis: a VIPoma causing WDHA (Watery Diarrhea, Hypokalemia, Achlorhydria — Verner–Morrison) syndrome — a high-volume SECRETORY diarrhea. The key discriminator is that her diarrhea PERSISTS with fasting and is huge in volume. To distinguish SECRETORY from OSMOTIC diarrhea: a secretory diarrhea continues during a fast and has a LOW stool osmotic gap (<50 mOsm/kg; gap = 290 − 2×[stool Na + K]), whereas an osmotic diarrhea STOPS with fasting and has a HIGH gap (>100). Must-not-miss competitors I must actively exclude: surreptitious laxative abuse / factitious diarrhea (stool laxative screen), carcinoid syndrome and other secretory neuroendocrine tumors (gastrinoma/Zollinger–Ellison, medullary thyroid carcinoma). Also exclude chronic infection (C. difficile, Giardia) and hyperthyroidism. The profound hypokalemia, dehydration, and weight loss raise the urgency.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "VIPoma / WDHA (Verner–Morrison) secretory diarrhea (leading)",
+            "points": 7
+          },
+          {
+            "item": "Surreptitious laxative abuse / factitious diarrhea — actively exclude",
+            "points": 4
+          },
+          {
+            "item": "Carcinoid syndrome (other secretory neuroendocrine tumor)",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Gastrinoma / Zollinger–Ellison and other islet-cell tumors; medullary thyroid carcinoma",
+            "points": 3
+          },
+          {
+            "item": "Distinguishes secretory (persists with fasting, low stool osmotic gap) from osmotic (stops with fasting, high gap)",
+            "points": 5
+          },
+          {
+            "item": "Exclude chronic infection (C. difficile, Giardia) and hyperthyroidism",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Anchors on infectious gastroenteritis / empiric antibiotics despite a months-long fasting-persistent secretory picture",
+            "points": -3
+          },
+          {
+            "item": "Fails to consider factitious/laxative diarrhea",
+            "points": -2
+          }
+        ]
+      },
+      "mustNotMiss": [
+        "Surreptitious laxative abuse / factitious diarrhea — actively exclude",
+        "Carcinoid syndrome (other secretory neuroendocrine tumor)",
+        "Gastrinoma / Zollinger–Ellison and other islet-cell tumors; medullary thyroid carcinoma"
+      ],
+      "acceptableAlternatives": [
+        "Chronic infection (C. difficile, Giardia)",
+        "Hyperthyroidism"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "BMP — capture the hypokalemia, non-anion-gap (hyperchloremic) metabolic acidosis, and AKI (CANT-MISS,3). Stool studies: measure stool volume + OSMOTIC GAP and document persistence during a supervised fast; stool LAXATIVE screen; stool cultures/C. difficile/O&P to exclude infection (CANT-MISS,4). Fasting plasma VIP (and chromogranin A) — the confirmatory secretory-tumor marker (CANT-MISS,3). Serum calcium and magnesium (multi-system electrolytes; hypercalcemia supports VIPoma) (core,2). Cross-sectional pancreatic imaging (CT/MRI) ± DOTATATE PET to localize the tumor (core,2). Gastrin and TSH to exclude gastrinoma and thyroid disease (core,1). PENALTY: ordering empiric antibiotics or sending a colonoscopy first without measuring stool osmotic gap / VIP, or repleting nothing while working up (-2).",
+      "idealAnswer": "Order: EKG and CXR; BMP (hypokalemia, hyperchloremic non-anion-gap acidosis, AKI); serum calcium and magnesium; stool studies — stool volume and stool osmotic gap with documentation that diarrhea persists during a supervised fast, a stool laxative screen, plus stool cultures, C. difficile toxin/PCR, and ova & parasites to exclude infection and factitious causes; fasting plasma VIP and chromogranin A as the confirmatory markers; gastrin and TSH to exclude gastrinoma and thyroid disease; and CT/MRI of the pancreas ± 68Ga-DOTATATE PET to localize the neuroendocrine tumor.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "BMP — hypokalemia, non-anion-gap (hyperchloremic) acidosis, AKI",
+            "points": 3
+          },
+          {
+            "item": "Stool studies: volume + osmotic gap, fasting test, laxative screen, infectious panel",
+            "points": 4
+          },
+          {
+            "item": "Fasting plasma VIP (and chromogranin A)",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Serum calcium and magnesium",
+            "points": 2
+          },
+          {
+            "item": "Cross-sectional pancreatic imaging (CT/MRI) ± DOTATATE PET",
+            "points": 2
+          },
+          {
+            "item": "Gastrin and TSH to exclude gastrinoma and thyroid disease",
+            "points": 1
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Empiric antibiotics or colonoscopy-first without stool osmotic gap / VIP, or repleting nothing while working up",
+            "points": -2
+          }
+        ]
+      },
+      "requiredTests": [
+        "BMP — hypokalemia, non-anion-gap (hyperchloremic) acidosis, AKI",
+        "Stool studies: volume + osmotic gap, fasting test, laxative screen, infectious panel",
+        "Fasting plasma VIP (and chromogranin A)"
+      ],
+      "optionalTests": [
+        "Serum calcium and magnesium",
+        "Cross-sectional pancreatic imaging (CT/MRI) ± DOTATATE PET",
+        "Gastrin and TSH to exclude gastrinoma and thyroid disease"
+      ],
+      "contraindicatedTests": [
+        "Empiric antibiotics or colonoscopy-first without stool osmotic gap / VIP, or repleting nothing while working up"
+      ],
+      "orderSensitiveActions": [
+        "Stool studies: volume + osmotic gap, fasting test, laxative screen, infectious panel"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG, drawn after her potassium returned at 2.4 mmol/L. Describe your findings and tie them to her presentation.",
+      "rubric": "Findings = sinus tachycardia (~108) with prominent U waves, flattened/inverted T waves, ST depression, and an apparent long QT/QU — the electrocardiographic signature of PROFOUND HYPOKALEMIA. CREDIT: identifies sinus tachycardia and the U waves / flat T waves / ST depression of hypokalemia (6); recognizes the apparent long QU as a torsades-de-pointes / ventricular-arrhythmia substrate (5); links the picture to her secretory potassium (and magnesium) losses and the need for urgent telemetry + K/Mg repletion (4). PENALTY: calling the tracing normal or missing the hypokalemia / arrhythmia risk (-3).",
+      "keyFindings": [
+        "sinus tachycardia with prominent U waves and flattened/inverted T waves",
+        "ST depression and apparent long QT/QU interval of severe hypokalemia",
+        "links it to secretory potassium/magnesium loss and torsades risk"
+      ],
+      "criticalFindings": [
+        "Prominent U waves with flat/inverted T waves, ST depression and apparent long QU on a background of sinus tachycardia — the signature of profound hypokalemia (K 2.4) and a torsades substrate."
+      ],
+      "commonMistakes": [
+        "calling the tracing normal",
+        "mistaking the U waves for T waves and missing the hypokalemia",
+        "missing the torsades / ventricular-arrhythmia risk"
+      ],
+      "idealAnswer": "Sinus tachycardia at ~108 bpm with prominent U waves, flattened/inverted T waves, ST depression, and an apparent long QT/QU interval. This is the classic footprint of PROFOUND HYPOKALEMIA (K 2.4) — driven by her high-volume secretory potassium losses and worsened by the low magnesium — and it is a torsades-de-pointes / ventricular-arrhythmia substrate that explains her palpitations. (Her coexisting hypercalcemia tends to shorten the true QT, so the long interval is the U-wave/QU fusion of hypokalemia.) It mandates continuous telemetry with urgent, careful potassium AND magnesium repletion.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Prominent U waves with flat/inverted T waves, ST depression and apparent long QU on a background of sinus tachycardia — the signature of profound hypokalemia (K 2.4) and a torsades substrate."
+        ],
+        "coreActions": [
+          "sinus tachycardia with prominent U waves and flattened/inverted T waves",
+          "ST depression and apparent long QT/QU interval of severe hypokalemia",
+          "links it to secretory potassium/magnesium loss and torsades risk"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the hypokalemia and arrhythmia risk",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = clear lungs, normal cardiomediastinal silhouette, no acute process — a normal screening film; the problem is metabolic, not pulmonary. CREDIT: recognizes a normal film (6); states the pertinent negatives (no infiltrate, effusion, or free air) and that it does not explain the diarrhea/electrolyte derangement (4). PENALTY: inventing pathology on a clear film (-3).",
+      "keyFindings": [
+        "clear lung fields, normal cardiomediastinal silhouette",
+        "no acute process — screening film, problem is metabolic not pulmonary"
+      ],
+      "criticalFindings": [
+        "Normal chest film: clear lungs, normal cardiomediastinal silhouette, no acute process."
+      ],
+      "commonMistakes": [
+        "inventing an infiltrate or effusion on a clear film",
+        "failing to state pertinent negatives"
+      ],
+      "idealAnswer": "Clear lung fields with a normal cardiomediastinal silhouette and no infiltrate, effusion, or free air — a normal screening chest film. It confirms there is no pulmonary cause and reinforces that this is a metabolic/secretory problem, not a thoracic one.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          "Normal chest film: clear lungs, normal cardiomediastinal silhouette, no acute process."
+        ],
+        "coreActions": [
+          "clear lung fields, normal cardiomediastinal silhouette",
+          "no acute process — screening film, problem is metabolic not pulmonary"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study abnormal / invents pathology",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "The stool osmotic gap is low and the diarrhea persisted through a supervised fast, the laxative screen and infectious studies are negative, fasting plasma VIP is markedly elevated with high chromogranin A and a normal gastrin, and imaging shows a hypervascular DOTATATE-avid pancreatic-tail mass with small liver lesions. What is your diagnosis, and what did you rule out? Name three mechanisms by which this tumor produces its electrolyte and acid–base picture.",
+      "rubric": "VIPoma (pancreatic neuroendocrine tumor) causing WDHA / Verner–Morrison syndrome (6). Cites the markedly elevated fasting VIP with a SECRETORY profile (low stool osmotic gap, persists with fasting) and DOTATATE-avid pancreatic mass; explicitly excludes factitious laxative diarrhea (negative laxative screen), infection (negative stool studies), and gastrinoma (normal gastrin). Names three mechanisms: (1) VIP-driven intestinal secretion of water and electrolytes → massive watery diarrhea and dehydration/AKI; (2) profound fecal POTASSIUM loss → hypokalemia; (3) fecal BICARBONATE loss → non-anion-gap (hyperchloremic) metabolic acidosis; (also achlorhydria from VIP-inhibited gastric acid, and tumor-associated hypercalcemia) (4).",
+      "idealAnswer": "VIPoma — a VIP-secreting pancreatic neuroendocrine tumor causing WDHA (Verner–Morrison) syndrome. It is confirmed by a markedly elevated fasting plasma VIP with high chromogranin A in the setting of a SECRETORY diarrhea (low stool osmotic gap that persists through a supervised fast) and a hypervascular, DOTATATE-avid pancreatic-tail mass with hepatic lesions. This rules out factitious/laxative diarrhea (negative laxative screen), chronic infection (negative cultures/C. difficile/O&P), and gastrinoma/Zollinger–Ellison (normal gastrin). Three mechanisms producing her electrolyte/acid–base picture: (1) VIP stimulates massive intestinal secretion of water and electrolytes, producing the high-volume watery diarrhea with dehydration and prerenal AKI; (2) profuse fecal potassium loss causes the profound hypokalemia (K 2.4) and muscle weakness; (3) fecal bicarbonate loss causes a non-anion-gap (hyperchloremic) metabolic acidosis (gap 8). Additional features: VIP-induced inhibition of gastric acid causes achlorhydria/hypochlorhydria (the 'A' of WDHA), and the tumor is associated with hypercalcemia.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Surreptitious laxative abuse / factitious diarrhea",
+        "Gastrinoma / Zollinger–Ellison"
+      ],
+      "acceptableAlternatives": [
+        "Other secretory islet-cell / neuroendocrine tumor",
+        "Carcinoid syndrome"
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan, including stabilization, definitive therapy, consults, and disposition/counseling?",
+      "rubric": "Per MGH neuroendocrine tumor / secretory diarrhea: aggressive IV fluid RESUSCITATION for the large secretory losses with close ins/outs (CANT-MISS,5); urgent, careful POTASSIUM repletion (with MAGNESIUM repletion first/alongside) on continuous telemetry given the EKG hypokalemia/torsades substrate (CANT-MISS,6); correct the non-anion-gap acidosis and address hypercalcemia as volume is restored (core,2); start a SOMATOSTATIN ANALOG (octreotide/lanreotide) to suppress VIP and control the secretory diarrhea (core,4); cross-sectional/DOTATATE staging with surgical resection of the pancreatic NET (curative if localized) and oncology/endocrine-surgery referral, with hepatic-directed therapy/PRRT for metastatic disease (core,4); admit (not discharge) the dehydrated, severely hypokalemic patient and arrange close follow-up; counsel on the diagnosis and that antidiarrheals/antibiotics alone will not control a hormone-driven secretory diarrhea (core,4). PENALTY: discharging or giving oral rehydration alone for a severely hypokalemic, volume-depleted patient (-4); repleting potassium without magnesium or without telemetry (-3); treating empirically as infectious/IBD with antibiotics or steroids and missing the secretory tumor (-2).",
+      "idealAnswer": "Stabilize first: admit and give aggressive IV crystalloid resuscitation for the massive secretory fluid losses with strict ins/outs and serial electrolytes. Place on continuous telemetry and urgently but carefully replete POTASSIUM, repleting MAGNESIUM alongside (hypomagnesemia makes hypokalemia refractory) — her EKG shows a profound-hypokalemia/torsades substrate. Correct the non-anion-gap (hyperchloremic) metabolic acidosis as volume and potassium are restored, and treat the hypercalcemia with volume. Start a SOMATOSTATIN ANALOG (octreotide, then long-acting lanreotide) to suppress VIP and control the secretory diarrhea — antidiarrheals/antibiotics alone will not control a hormone-driven diarrhea. Stage with CT/MRI and 68Ga-DOTATATE PET and refer to endocrine surgery and oncology: surgical resection of the pancreatic-tail neuroendocrine tumor is potentially curative if localized; for hepatic metastases consider cytoreduction, hepatic-artery embolization, or peptide receptor radionuclide therapy (PRRT). Counsel the patient on the diagnosis and the plan, and arrange close oncology/endocrine follow-up — do NOT discharge this dehydrated, severely hypokalemic patient.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Aggressive IV fluid resuscitation for large secretory losses with strict ins/outs",
+            "points": 5
+          },
+          {
+            "item": "Urgent careful potassium (with magnesium) repletion on continuous telemetry",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Somatostatin analog (octreotide/lanreotide) to suppress VIP and control diarrhea",
+            "points": 4
+          },
+          {
+            "item": "Staging + surgical resection of pancreatic NET; oncology/endocrine-surgery referral (PRRT/embolization if metastatic)",
+            "points": 4
+          },
+          {
+            "item": "Admit, not discharge; counsel that antidiarrheals/antibiotics alone won't control a hormone-driven secretory diarrhea; close follow-up",
+            "points": 4
+          },
+          {
+            "item": "Correct the non-anion-gap acidosis and hypercalcemia as volume/potassium are restored",
+            "points": 2
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "Discharging or giving oral rehydration alone for a severely hypokalemic, volume-depleted patient",
+            "points": -4
+          },
+          {
+            "item": "Repleting potassium without magnesium or without telemetry",
+            "points": -3
+          },
+          {
+            "item": "Empiric antibiotics/steroids as if infectious/IBD, missing the secretory tumor",
+            "points": -2
+          }
+        ]
+      },
+      "requiredActions": [
+        "Aggressive IV fluid resuscitation for large secretory losses with strict ins/outs",
+        "Urgent careful potassium (with magnesium) repletion on continuous telemetry"
+      ],
+      "optionalActions": [
+        "Somatostatin analog (octreotide/lanreotide) to suppress VIP and control diarrhea",
+        "Staging + surgical resection of pancreatic NET; oncology/endocrine-surgery referral (PRRT/embolization if metastatic)",
+        "Admit, not discharge; counsel that antidiarrheals/antibiotics alone won't control a hormone-driven secretory diarrhea; close follow-up",
+        "Correct the non-anion-gap acidosis and hypercalcemia as volume/potassium are restored"
+      ],
+      "unsafeActions": [
+        "Discharging or giving oral rehydration alone for a severely hypokalemic, volume-depleted patient",
+        "Repleting potassium without magnesium or without telemetry",
+        "Empiric antibiotics/steroids as if infectious/IBD, missing the secretory tumor"
+      ],
+      "consults": [
+        "Oncology",
+        "Endocrine Surgery"
+      ],
+      "disposition": "Admit",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Diarrhea (Secretory Diarrhea / VIPoma — Neuroendocrine Tumor)",
+        "page": 78
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "fatigued",
+    "emotionalState": "frightened",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "laxative_use",
+      "weight_loss_products",
+      "eating_disorder_screen"
+    ],
+    "communicationStyle": "answers directly but does not volunteer extra information",
+    "affect": "54-year-old woman, tired and mildly dehydrated, weak and a bit shaky, frightened by the volume of fluid she is losing. Cooperative, good historian.",
+    "disclosureRules": [
+      "Do not reveal that the diarrhea persists with fasting unless asked whether fasting or food changes it",
+      "Do not reveal the laxative/cleanse-product negative, family history, or flushing unless asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "fasting_effect",
+      "category": "hpi",
+      "triggerConcepts": [
+        "does fasting change it",
+        "does it stop when you don't eat",
+        "does food affect it",
+        "what happens when you skip meals",
+        "diarrhea when not eating"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "stool_character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the diarrhea",
+        "what do the stools look like",
+        "blood in stool",
+        "watery or greasy",
+        "how much volume",
+        "character"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "onset_duration",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "laxative_cleanse_use",
+      "category": "meds",
+      "triggerConcepts": [
+        "laxatives",
+        "stool softeners",
+        "colon cleanse",
+        "detox products",
+        "weight loss pills",
+        "diet supplements"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "weakness_palpitations",
+      "category": "ros",
+      "triggerConcepts": [
+        "weakness",
+        "muscle cramps",
+        "palpitations",
+        "lightheaded",
+        "dizzy on standing",
+        "any other symptoms"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "flushing",
+      "category": "ros",
+      "triggerConcepts": [
+        "flushing",
+        "face turning red",
+        "warm flushed feeling",
+        "skin redness"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "weight_loss",
+      "category": "ros",
+      "triggerConcepts": [
+        "weight loss",
+        "losing weight",
+        "appetite",
+        "constitutional symptoms"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "infectious_exposures",
+      "category": "hpi",
+      "triggerConcepts": [
+        "recent travel",
+        "sick contacts",
+        "new foods",
+        "antibiotics recently",
+        "well water",
+        "camping"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "reflux_ulcer_negatives",
+      "category": "ros",
+      "triggerConcepts": [
+        "heartburn",
+        "epigastric pain",
+        "ulcer symptoms",
+        "stomach pain after eating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "family_history",
+      "category": "family",
+      "triggerConcepts": [
+        "family history",
+        "endocrine tumors in the family",
+        "men syndrome",
+        "relatives with tumors"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "amlodipine"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_mucous_membranes_finding_1",
+      "finding": "Skin/mucous membranes: dry mucous membranes and poor skin turgor consistent with volume depletion; occasional faint facial flush.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Mucous membranes moist; skin turgor normal."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_2",
+      "finding": "Significant orthostasis: BP drops to 84/54 with HR rising to 124 on standing (volume depletion from large secretory losses).",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic change in blood pressure or heart rate."
+    },
+    {
+      "id": "assess_motor_strength_finding_3",
+      "finding": "Neuro/MSK: diffuse proximal muscle weakness from profound hypokalemia; no focal deficit.",
+      "revealedBy": [
+        "assess_motor_strength"
+      ],
+      "importance": "core",
+      "points": 3,
+      "normalIfNotPresent": "Normal motor strength throughout."
+    },
+    {
+      "id": "assess_reflexes_finding_4",
+      "finding": "Neuro: hyporeflexia consistent with profound hypokalemia; no focal deficit.",
+      "revealedBy": [
+        "assess_reflexes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Reflexes normal and symmetric."
+    },
+    {
+      "id": "palpate_all_quadrants_finding_5",
+      "finding": "Abdomen: soft, non-tender, no rebound/guarding, no palpable mass or organomegaly; normoactive-to-increased bowel sounds.",
+      "revealedBy": [
+        "palpate_all_quadrants",
+        "auscultate_bowel_sounds"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Abdomen soft and non-tender."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: tired, mildly ill-appearing and volume-depleted; tachycardic at rest.",
+      "revealedBy": [
+        "assess_general_appearance"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Appears well and in no distress."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "VIPoma (pancreatic neuroendocrine tumor — WDHA syndrome)",
+    "diagnosticFramework": "54F presents with ~5 months of high-volume, watery, NON-bloody secretory diarrhea that PERSISTS with fasting, plus profound muscle weakness, palpitations, dehydration, and weight loss. The diagnosis is a VIPoma causing WDHA (Verner–Morrison) syndrome — confirmed by a low stool osmotic gap that persists through a supervised fast, a markedly elevated fasting plasma VIP, and a DOTATATE-avid pancreatic-tail neuroendocrine tumor. It is reached by eliciting the fasting-persistence clue, distinguishing secretory from osmotic diarrhea, recognizing the multi-system metabolic derangement (profound hypokalemia, non-anion-gap acidosis, hypercalcemia, prerenal AKI), and excluding factitious laxative diarrhea, infection, carcinoid, and gastrinoma.",
+    "keyHistoryClues": [
+      "High-volume watery diarrhea that does NOT stop with fasting (secretory pattern)",
+      "Profound muscle weakness, cramps, palpitations and orthostatic lightheadedness from potassium loss",
+      "Unintentional weight loss with minor, non-dominant facial flushing",
+      "No laxative/cleanse-product use, no recent antibiotics, travel, or sick contacts"
+    ],
+    "keyPhysicalExamFindings": [
+      "Skin/mucous membranes: dry mucous membranes and poor skin turgor consistent with volume depletion; occasional faint facial flush.",
+      "Significant orthostasis: BP drops to 84/54 with HR rising to 124 on standing (volume depletion from large secretory losses).",
+      "Neuro/MSK: diffuse proximal muscle weakness from profound hypokalemia; no focal deficit.",
+      "Neuro: hyporeflexia consistent with profound hypokalemia; no focal deficit.",
+      "Abdomen: soft, non-tender, no rebound/guarding, no palpable mass or organomegaly; normoactive-to-increased bowel sounds."
+    ],
+    "keyDiagnosticFindings": [
+      "BMP",
+      "Calcium",
+      "Magnesium",
+      "StoolStudies",
+      "VIP",
+      "Imaging"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals (tachycardia, low-normal BP, weight loss).",
+      "Elicit the focused history — critically, that the diarrhea persists with fasting — and the laxative/infectious negatives only on direct questioning.",
+      "Perform the targeted exam to reveal dehydration, orthostasis, and the hypokalemic weakness/hyporeflexia.",
+      "Build a differential led by VIPoma/WDHA, distinguishing secretory from osmotic diarrhea and naming the must-not-miss competitors (factitious laxative abuse, carcinoid, gastrinoma).",
+      "Order a focused workup — BMP, calcium/magnesium, stool osmotic gap with a fasting test and laxative/infectious screen, fasting VIP, and pancreatic imaging — and read the hypokalemic EKG and normal CXR.",
+      "Commit to VIPoma, name the mechanisms of the electrolyte/acid–base picture, and manage with resuscitation, telemetry-guided K/Mg repletion, a somatostatin analog, and surgical/oncologic definitive therapy."
+    ],
+    "commonPitfalls": [
+      "Anchoring on infectious gastroenteritis and giving empiric antibiotics for a months-long secretory diarrhea",
+      "Failing to consider or exclude surreptitious laxative abuse",
+      "Repleting potassium without magnesium or without telemetry in profound hypokalemia",
+      "Discharging or oral-rehydrating a severely hypokalemic, volume-depleted patient"
+    ],
+    "managementPearls": [
+      "Aggressive IV fluid resuscitation for large secretory losses with strict ins/outs",
+      "Urgent careful potassium (with magnesium) repletion on continuous telemetry",
+      "Somatostatin analog (octreotide/lanreotide) to suppress VIP and control diarrhea"
+    ],
+    "criticalHistoryItems": [
+      "fasting_effect",
+      "stool_character"
+    ],
+    "criticalExamItems": [
+      "assess_mucous_membranes",
+      "obtain_orthostatic_vitals"
+    ],
+    "criticalWorkupItems": [
+      "BMP — hypokalemia, non-anion-gap (hyperchloremic) acidosis, AKI",
+      "Stool studies: volume + osmotic gap, fasting test, laxative screen, infectious panel",
+      "Fasting plasma VIP (and chromogranin A)"
+    ],
+    "criticalInterpretationItems": [
+      "Prominent U waves with flat/inverted T waves, ST depression and apparent long QU on sinus tachycardia — profound hypokalemia (K 2.4) and a torsades substrate.",
+      "Normal chest film: clear lungs, normal cardiomediastinal silhouette, no acute process."
+    ],
+    "criticalManagementItems": [
+      "Aggressive IV fluid resuscitation for large secretory losses with strict ins/outs",
+      "Urgent careful potassium (with magnesium) repletion on continuous telemetry"
+    ],
+    "keyImageInterpretationFindings": [
+      "Prominent U waves with flat/inverted T waves, ST depression and apparent long QU on sinus tachycardia — profound hypokalemia (K 2.4) and a torsades substrate.",
+      "Normal chest film: clear lungs, normal cardiomediastinal silhouette, no acute process."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Prominent U waves with flat/inverted T waves, ST depression and apparent long QU on sinus tachycardia — profound hypokalemia (K 2.4) and a torsades substrate.",
+      "Normal chest film: clear lungs, normal cardiomediastinal silhouette, no acute process."
+    ],
+    "imageInterpretationPearls": [
+      "Read the EKG against the chemistry — prominent U waves with flat T waves and ST depression are the signature of severe hypokalemia.",
+      "Replete magnesium alongside potassium; hypomagnesemia makes hypokalemia refractory and torsades more likely.",
+      "A normal CXR is a deliberate pertinent negative that redirects you to a metabolic/secretory cause."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the patient's fear about her fluid losses and weakness",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions (laxative/cleanse use, eating habits)",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": true,
+    "backwardCompatible": true
+  }
+}

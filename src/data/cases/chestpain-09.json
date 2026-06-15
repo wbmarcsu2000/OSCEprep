@@ -2,50 +2,52 @@
   "id": "chestpain-09",
   "category": "Chest Pain",
   "difficulty": "hard",
-  "title": "Sudden severe chest pressure in a young adult",
+  "title": "Sudden severe chest pressure in a young adult after a party",
   "diagnosis": "Cocaine-associated chest pain with coronary vasospasm",
   "chart": {
     "ageSex": "34M",
     "cc": "Chest pain",
-    "oneLiner": "34M with no cardiac history presents with 1 hour of severe substernal chest pressure that began at a party, with palpitations, anxiety, and diaphoresis.",
+    "oneLiner": "34M with HIV on antiretrovirals and treated depression presents with 1 hour of severe substernal chest pressure that began at a party, with palpitations, anxiety, and diaphoresis; he is agitated, tachycardic, and hypertensive.",
     "vitals": {
-      "BP": "168/98",
-      "HR": "116",
-      "RR": "20",
-      "Temp": "37.6°C",
-      "SpO2": "98% RA"
+      "BP": "176/102",
+      "HR": "122",
+      "RR": "22",
+      "Temp": "38.1°C",
+      "SpO2": "97% RA"
     },
     "timer": 180
   },
   "opening": "My chest suddenly got really tight and heavy, my heart is racing, and I feel like I can't calm down.",
-  "patientFile": "PERSONA: 34-year-old man, anxious and restless, fidgety and hyperalert, speaking quickly. Mildly defensive when asked about drugs. Cooperative once reassured of confidentiality.\n\nHPI:\n- Substernal chest PRESSURE/tightness (\"like a band around my chest\") that began about 1 hour ago at a party. Came on suddenly while he was sitting, NOT with exertion.\n- Associated palpitations, a racing heart, anxiety, sweating, and a feeling of dread. Mild shortness of breath.\n- Used cocaine (insufflated/snorted, several lines) about 1-2 hours before the pain started — only admits this if asked specifically and non-judgmentally about recreational/illicit drug use. Also drank several beers tonight.\n- The pain has waxed and waned; partially eased after he sat down and tried to relax.\n- NO pleuritic/positional quality, NO tearing or ripping quality, NO pain radiating to the back, NO fever, NO cough, NO leg swelling or calf pain, NO recent long travel/immobility, NO trauma.\n\nOLDCARTS: sudden onset ~1h ago at rest; substernal; waxing/waning; pressure/tightness with palpitations; not clearly exertional; severity 7/10.\n\nPMH: none; occasional anxiety. No known CAD, HTN, or diabetes.\nMEDICATIONS: none regular; no daily aspirin.\nALLERGIES: none. FAMILY: no early MI or sudden death that he knows of. SOCIAL: uses cocaine occasionally on weekends (snorts it); smokes ~half a pack/day; drinks socially; no IV drug use; works in construction.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, restless, diaphoretic, mildly agitated and hyperalert; no acute distress at rest.\n- Vitals: BP 168/98, HR 116 regular, RR 20, 37.6°C, SpO2 98% RA. Pupils mildly dilated.\n- Cardiac: tachycardic, regular, normal S1/S2, no murmur, no rub, no gallop.\n- Lungs: clear bilaterally; no wheeze.\n- Chest wall: NO reproducible tenderness on palpation.\n- Skin/extremities: diaphoretic; NO track marks or injection sites; no edema, no calf tenderness, symmetric pulses (equal in both arms).\n- Nose: dried blood/irritation at the nasal septum if inspected.\n- Abdomen: soft, nontender. Neuro: alert, grossly intact, no focal deficit. \n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the cocaine use, the alcohol, the smoking, or the nasal findings unless asked specifically about recreational/illicit drug use, alcohol, smoking, or the relevant exam.\n- The cocaine history is sensitive: only disclose if asked directly and non-judgmentally; be initially guarded but truthful when reassured.\n- Track marks, nasal findings, and pupil findings are revealed only if those areas are examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 34-year-old man, anxious and restless, fidgety and hyperalert, speaking quickly and pacing words. Mildly defensive when asked about drugs. Cooperative once reassured of confidentiality.\n\nHPI:\n- Substernal chest PRESSURE/tightness (\"like a band around my chest\") that began about 1 hour ago at a party. Came on suddenly while he was sitting, NOT with exertion.\n- Associated palpitations, a racing heart, anxiety, sweating, and a feeling of dread. Mild shortness of breath.\n- Used cocaine (insufflated/snorted, several lines) about 1-2 hours before the pain started — only admits this if asked specifically and non-judgmentally about recreational/illicit drug use. Also drank several beers tonight.\n- The pain has waxed and waned; partially eased after he sat down and tried to relax, then came back.\n- NO pleuritic/positional quality, NO tearing or ripping quality, NO pain radiating to the back, NO cough, NO leg swelling or calf pain, NO recent long travel/immobility, NO trauma. He does feel feverish and his muscles ache all over.\n\nOLDCARTS: sudden onset ~1h ago at rest; substernal; waxing/waning; pressure/tightness with palpitations; not clearly exertional; severity 8/10.\n\nPMH: HIV (diagnosed 6 years ago, takes his medicines, last viral load undetectable); depression; occasional anxiety. No known CAD, no diabetes; was told once his blood pressure was 'a little high.'\nMEDICATIONS (reveal each only if asked about that medicine or about medications generally): efavirenz/tenofovir/emtricitabine single-pill antiretroviral once daily; citalopram for depression; over-the-counter pseudoephedrine (decongestant) he has been taking the last few days for a cold; an energy-drink habit; no daily aspirin; no anticoagulant.\nALLERGIES: none. FAMILY: no early MI or sudden death that he knows of. SOCIAL: uses cocaine occasionally on weekends (snorts it); smokes ~half a pack/day; drinks socially; no IV drug use; works in construction; drinks several caffeinated energy drinks a day.\n\nPHYSICAL EXAM (report ONLY the system/maneuver requested; give normals when asked):\n- General: anxious, restless, diaphoretic, mildly agitated and hyperalert; tremulous; no acute distress at rest. Pupils mildly dilated.\n- Vitals: BP 176/102, HR 122 regular, RR 22, 38.1°C, SpO2 97% RA.\n- Cardiac: tachycardic, regular, normal S1/S2, no murmur, no rub, no gallop.\n- Lungs: clear bilaterally; no wheeze.\n- Chest wall: NO reproducible tenderness on palpation.\n- Skin/extremities: diaphoretic and warm; NO track marks or injection sites; no edema, no calf tenderness, symmetric pulses (equal in both arms). Diffuse muscle tenderness if the limbs are examined.\n- Nose: dried blood/irritation at the nasal septum if inspected.\n- Abdomen: soft, nontender. Neuro: alert, grossly intact, mild fine tremor, no focal deficit.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the cocaine use, the alcohol, the smoking, the energy drinks, the over-the-counter decongestant, the antiretrovirals, or the nasal findings unless asked specifically about recreational/illicit drug use, alcohol, smoking, caffeine, medications, or the relevant exam.\n- The cocaine history is sensitive: only disclose if asked directly and non-judgmentally; be initially guarded but truthful when reassured. The HIV status is also sensitive: only disclose if asked about medical history or medications.\n- Track marks, nasal findings, muscle tenderness, and pupil findings are revealed only if those areas are examined.\n- If asked something not in this file, give a reasonable normal/negative answer. Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Troponin": "0.02 ng/mL initial, 0.03 ng/mL on 3-hour repeat — not significantly elevated (argues against completed infarction).",
-      "ECG_serial": "Initial sinus tachycardia with subtle ST changes that NORMALIZE on repeat as pain resolves — consistent with transient vasospasm rather than fixed occlusion.",
-      "BMP": "Na 139, K 4.0, Cr 0.9, Glu 108 — unremarkable; no renal injury.",
+      "Troponin": "0.04 ng/mL initial, 0.06 ng/mL on 3-hour repeat (upper reference 0.04) — a small troponin rise that does NOT meet a STEMI/large-infarct pattern but indicates mild demand/vasospasm-related myocardial injury; trend with serials.",
+      "ECG_serial": "Initial sinus tachycardia with a prolonged QTc (~490 ms) and subtle ST changes that NORMALIZE on repeat as the pain resolves — transient changes consistent with vasospasm rather than fixed occlusion; the long QT persists and is multifactorial (sympathomimetic + QT-prolonging meds).",
+      "BMP": "Na 140, K 5.1, Cl 100, HCO3 18, BUN 24, Cr 1.6, Glu 168. Anion gap = 140 − (100 + 18) = 22 (elevated). Picture: an elevated-anion-gap metabolic acidosis with mild hyperkalemia, hyperglycemia, and a mildly elevated creatinine (baseline Cr was 0.9).",
+      "VBG_lactate": "Venous pH 7.30, lactate 5.2 mmol/L — a lactic (elevated-anion-gap) acidosis explaining most of the gap, driven by the sympathomimetic/cocaine state; no ketones, glucose not high enough for DKA.",
       "UDS": "Urine toxicology POSITIVE for cocaine; otherwise negative — confirms recent cocaine exposure.",
-      "CBC": "WBC 9.4, Hgb 14.8, Plt 232 — unremarkable.",
-      "CK_CKMB": "CK mildly elevated, CK-MB normal; no rhabdomyolysis pattern."
+      "CBC": "WBC 12.6 (mild leukocytosis, stress demargination), Hgb 14.8, Plt 235 — no anemia or thrombocytopenia.",
+      "CK_CKMB": "Total CK markedly elevated at ~4200 U/L with a NORMAL CK-MB fraction and urine positive for blood without RBCs — rhabdomyolysis (cocaine-related), not myocardial; this, with the acidosis, explains the mild creatinine bump and hyperkalemia."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
+      "litflStudyN": 23,
       "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia with subtle, diffuse upsloping ST changes and no ST-segment elevation; transient and resolving — no fixed STEMI pattern.",
-      "verify": "Source a study matching: sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus tachycardia with a PROLONGED QTc and subtle, non-specific ST changes and no ST-segment elevation; the ST changes are transient and resolve on serial tracing while the long QT persists — no fixed STEMI pattern.",
+      "verify": "Source a study matching: sinus tachycardia with QT prolongation and subtle, non-specific ST changes and NO ST-segment elevation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia with subtle non-specific ST changes, no ST elevation",
+      "imageDescription": "12-lead showing sinus tachycardia with a prolonged QT interval and subtle non-specific ST changes, no ST elevation",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "nonspecific ST changes no ST elevation ECG"
+        "drug-induced long QT ECG",
+        "sinus tachycardia prolonged QT no ST elevation ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 30-year-old man presents with chest pain and palpitations shortly after recreational stimulant use."
+      "clinicalVignette": "A 34-year-old man presents with chest pain and palpitations shortly after recreational stimulant use, on a QT-prolonging antidepressant and antiretroviral."
     },
     "cxr": {
       "label": "Chest X-ray",
@@ -68,6 +70,7 @@
     "Troponin",
     "ECG_serial",
     "BMP",
+    "VBG_lactate",
     "UDS",
     "CBC",
     "CK_CKMB",
@@ -84,18 +87,18 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential for this chest pain (note your leading diagnosis).",
-      "rubric": "Cocaine-associated chest pain / coronary vasospasm (leading,7; accepts cocaine-induced ischemia/vasospasm/ACS). Acute coronary syndrome / cocaine-associated MI (CANT-MISS,5). Aortic dissection (CANT-MISS,3). Pulmonary embolism (CANT-MISS,2). Panic/anxiety (core,2). GERD/musculoskeletal (core,1). Names that a sympathomimetic toxidrome can cause vasospasm/ischemia and demand a drug history (core,5).",
-      "idealAnswer": "Leading diagnosis: Cocaine-associated chest pain with coronary vasospasm. Must-not-miss diagnoses to exclude: Cocaine-associated ACS/MI; Aortic dissection; Pulmonary embolism. Also reasonable: Panic/anxiety; GERD/musculoskeletal.",
+      "prompt": "Based on your history and physical, list your differential for this chest pain (note your leading diagnosis). As part of your answer, name three distinct mechanisms by which cocaine can cause chest pain or cardiac injury.",
+      "rubric": "Cocaine-associated chest pain / coronary vasospasm (leading,6; accepts cocaine-induced ischemia/vasospasm). Cocaine-associated ACS / type 1 or type 2 MI — a genuine competitor given the troponin (CANT-MISS,5). Aortic dissection — cocaine is a real dissection risk factor (CANT-MISS,3). Pulmonary embolism (CANT-MISS,2). Panic/anxiety or sympathomimetic toxidrome (core,1). GERD/musculoskeletal (core,1). Names three mechanisms by which cocaine injures the heart — e.g. coronary vasospasm, accelerated thrombosis/platelet activation, increased myocardial oxygen demand from sympathomimetic tachycardia/hypertension, direct myocardial toxicity, or accelerated atherosclerosis (core,5). PENALTY: anchoring on benign anxiety and dismissing the cardiac/dissection emergencies (-3).",
+      "idealAnswer": "Leading diagnosis: Cocaine-associated chest pain with coronary vasospasm. The genuine competing diagnosis is cocaine-associated ACS / myocardial infarction (the small troponin rise keeps this alive until serials and the resolving ECG argue for transient vasospasm). Other must-not-miss diagnoses to exclude: Aortic dissection (cocaine is a real risk factor) and Pulmonary embolism. Also reasonable: panic/anxiety or a sympathomimetic toxidrome, GERD/musculoskeletal. Three mechanisms by which cocaine causes chest pain/cardiac injury: (1) coronary artery vasospasm; (2) increased myocardial oxygen demand from sympathomimetic tachycardia and hypertension; (3) accelerated thrombosis via platelet activation and a procoagulant state (also accepted: direct myocardial toxicity, accelerated atherosclerosis, aortic dissection).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Cocaine-associated chest pain / coronary vasospasm",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Cocaine-associated ACS/MI",
+            "item": "Cocaine-associated ACS/MI (competing diagnosis)",
             "points": 5
           },
           {
@@ -109,20 +112,25 @@
         ],
         "coreActions": [
           {
-            "item": "Panic/anxiety",
-            "points": 2
+            "item": "Panic/anxiety or sympathomimetic toxidrome",
+            "points": 1
           },
           {
             "item": "GERD/musculoskeletal",
             "points": 1
           },
           {
-            "item": "Names that a sympathomimetic toxidrome can cause vasospasm/ischemia and demands a drug history",
+            "item": "Names three distinct mechanisms by which cocaine causes chest pain/cardiac injury (vasospasm, increased demand, thrombosis/platelet activation, direct toxicity, accelerated atherosclerosis)",
             "points": 5
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on benign anxiety and dismisses the cardiac/dissection emergencies",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "Cocaine-associated ACS/MI",
@@ -130,7 +138,7 @@
         "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
-        "Panic/anxiety",
+        "Panic/anxiety or sympathomimetic toxidrome",
         "GERD/musculoskeletal"
       ]
     },
@@ -140,13 +148,13 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "EKG, ideally immediately, with serial tracings (CANT-MISS,4). Serial troponin (CANT-MISS,4). Urine toxicology / drug screen (core,2). CXR to screen for dissection/pneumothorax (core,2). BMP (core,1). CBC (core,1). PENALTY: no EKG/troponin ordered (-3); giving a beta blocker as part of the workup before excluding cocaine (-2).",
-      "idealAnswer": "Order: EKG; CXR; Troponin; ECG serial; BMP; Urine drug screen; CBC; CK / CK-MB.",
+      "rubric": "EKG immediately, with serial tracings and attention to the QT (CANT-MISS,4). Serial troponin (CANT-MISS,4). Urine toxicology / drug screen (core,2). CXR to screen for dissection/pneumothorax (core,1). BMP with attention to potassium and the anion gap (core,1). VBG/lactate to characterize the acidosis (core,1). CK ± urine myoglobin for rhabdomyolysis (core,1). CBC (core,1). PENALTY: no EKG/troponin ordered (-3); giving a beta blocker as part of the workup before excluding cocaine (-2).",
+      "idealAnswer": "Order: EKG immediately with serial tracings (read the QTc); serial troponin; CXR; BMP (watch K and the anion gap); VBG with lactate; total CK / CK-MB with a urine dip for myoglobin; urine drug screen; CBC. The labs are multi-system on purpose — expect a small troponin rise, an elevated-anion-gap lactic acidosis, hyperkalemia, a rhabdomyolysis-range CK, and a prolonged QTc.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "EKG, ideally immediately, with serial tracings",
+            "item": "EKG immediately, with serial tracings and attention to the QT",
             "points": 4
           },
           {
@@ -161,23 +169,23 @@
           },
           {
             "item": "CXR",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "BMP",
+            "item": "BMP (potassium and anion gap)",
+            "points": 1
+          },
+          {
+            "item": "VBG / lactate",
+            "points": 1
+          },
+          {
+            "item": "CK / CK-MB and urine myoglobin for rhabdomyolysis",
             "points": 1
           },
           {
             "item": "CBC",
             "points": 1
-          },
-          {
-            "item": "ECG serial",
-            "points": 2
-          },
-          {
-            "item": "CK / CK-MB",
-            "points": 2
           }
         ],
         "bonusActions": [],
@@ -193,13 +201,15 @@
         ]
       },
       "requiredTests": [
-        "EKG, ideally immediately, with serial tracings",
+        "EKG immediately, with serial tracings and attention to the QT",
         "Serial troponin"
       ],
       "optionalTests": [
         "Urine toxicology / drug screen",
         "CXR",
-        "BMP",
+        "BMP (potassium and anion gap)",
+        "VBG / lactate",
+        "CK / CK-MB and urine myoglobin for rhabdomyolysis",
         "CBC"
       ],
       "contraindicatedTests": [
@@ -215,36 +225,37 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation, resolving on serial tracing. CREDIT: rate & rhythm — sinus tachycardia (4); identifies only subtle/non-specific ST changes with NO ST elevation (6); recognizes transient/resolving pattern consistent with vasospasm rather than fixed occlusion (3); systematic read (2). PENALTY: over-calling a STEMI / activating thrombolytics for non-specific ST changes (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings, including the QT interval, and state how they fit the clinical picture.",
+      "rubric": "Findings = sinus tachycardia with a PROLONGED QTc and subtle, non-specific ST changes and NO ST-segment elevation; the ST changes resolve on serial tracing while the long QT persists. CREDIT: rate & rhythm — sinus tachycardia (3); identifies the PROLONGED QT/QTc and links it to torsades risk (5); identifies only subtle/non-specific ST changes with NO ST elevation (4); systematic read (3). PENALTY: over-calling a STEMI / activating thrombolytics for non-specific ST changes (-3); missing the long QT (-2).",
       "keyFindings": [
         "rate & rhythm — sinus tachycardia",
-        "identifies only subtle/non-specific ST changes with NO ST elevation",
-        "recognizes the transient/resolving pattern consistent with vasospasm",
+        "prolonged QT/QTc with torsades risk",
+        "subtle/non-specific ST changes with NO ST elevation",
         "systematic read"
       ],
       "criticalFindings": [
-        "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation."
+        "Sinus tachycardia with a prolonged QTc and subtle, non-specific ST changes and NO ST-segment elevation."
       ],
       "commonMistakes": [
-        "over-calling a STEMI / activating thrombolytics for non-specific ST changes"
+        "over-calling a STEMI / activating thrombolytics for non-specific ST changes",
+        "missing the prolonged QT and its torsades risk"
       ],
-      "idealAnswer": "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation; the changes resolve on serial tracing as the pain settles, consistent with transient vasospasm.",
+      "idealAnswer": "Sinus tachycardia with a PROLONGED QTc (~490 ms) and subtle, non-specific ST changes and NO ST-segment elevation. The ST changes resolve on serial tracing as the pain settles (consistent with transient vasospasm), while the long QT persists and is multifactorial — sympathomimetic effect plus QT-prolonging medications (citalopram, efavirenz) — putting the patient at risk for torsades, so the QT-prolonging drugs must be stopped and potassium and magnesium kept repleted.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation."
+          "Sinus tachycardia with a prolonged QTc and subtle, non-specific ST changes and NO ST-segment elevation."
         ],
         "coreActions": [
           "rate & rhythm — sinus tachycardia",
-          "identifies only subtle/non-specific ST changes with NO ST elevation",
-          "recognizes the transient/resolving pattern consistent with vasospasm",
+          "prolonged QT/QTc with torsades risk",
+          "subtle/non-specific ST changes with NO ST elevation",
           "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls a STEMI / activates thrombolytics for non-specific ST changes",
+            "label": "over-calls a STEMI / activates thrombolytics for non-specific ST changes, or misses the long QT",
             "points": -3
           }
         ]
@@ -291,9 +302,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "The patient reports recent cocaine use, the troponin stays flat, the ECG changes resolve as the pain settles, the urine screen is positive for cocaine, and the CXR is unremarkable. What is your diagnosis and what did you rule out?",
-      "rubric": "Cocaine-associated chest pain with coronary vasospasm (6; accepts cocaine-induced chest pain/vasospasm). Cites the recent cocaine use with a positive drug screen, transient resolving ECG changes, and flat troponin; explicitly rules out completed MI (flat troponin), aortic dissection (normal mediastinum, equal pulses, no tearing/back pain), and PE (no risk factors, normal SpO2) (4).",
-      "idealAnswer": "Cocaine-associated chest pain with coronary vasospasm.",
+      "prompt": "The patient reports recent cocaine use; the troponin rises only minimally (0.04→0.06) and plateaus; the ECG ST changes resolve as the pain settles but the QTc stays prolonged; the urine screen is positive for cocaine; the BMP shows an anion-gap acidosis with K 5.1, the lactate is 5.2, the CK is ~4200 with a normal CK-MB, and the CXR is unremarkable. Commit to a single diagnosis, name the test that best discriminates it from its main competitor, and state any residual uncertainty.",
+      "rubric": "Cocaine-associated chest pain with coronary vasospasm (accepts cocaine-induced chest pain/vasospasm). Discriminator: SERIAL troponin and serial ECG — the flat/minimally-rising troponin with resolving ST changes favors transient vasospasm over a completed cocaine-associated MI (the main competitor). Integrates the multi-system labs as SEPARATE concurrent problems: rhabdomyolysis (CK ~4200, normal CK-MB) with a mild rise in creatinine, an elevated-anion-gap LACTIC acidosis (gap 22, lactate 5.2), hyperkalemia, and a persistent prolonged QTc (sympathomimetic plus citalopram/efavirenz) carrying torsades risk. Rules out completed large MI (troponin pattern), aortic dissection (normal mediastinum, equal pulses, no tearing/back pain), and PE (no risk factors, normal SpO2). Residual uncertainty: a small type 2 MI from demand/vasospasm cannot be fully excluded, so serials and observation are needed.",
+      "idealAnswer": "Cocaine-associated chest pain with coronary vasospasm. The discriminating tests are the SERIAL troponin and SERIAL ECG: the minimally-rising, plateauing troponin together with ST changes that resolve as the pain settles favors transient vasospasm over the main competitor, a completed cocaine-associated MI. The other labs are concurrent, separate problems to name explicitly: rhabdomyolysis (CK ~4200 with a normal CK-MB fraction) explaining the hyperkalemia and the mild creatinine bump; an elevated-anion-gap (22) LACTIC acidosis (lactate 5.2) from the sympathomimetic state; and a persistently prolonged QTc that is multifactorial (cocaine/sympathomimetic plus QT-prolonging citalopram and efavirenz) and carries torsades risk. Excluded: a completed large MI (troponin pattern), aortic dissection (normal mediastinum, equal pulses, no tearing/back pain), and PE (no risk factors, normal SpO2). Residual uncertainty: a small type 2 (demand/vasospasm) MI cannot be fully excluded, so serial troponins, serial ECGs, and a period of telemetry observation are required before disposition.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -307,7 +318,7 @@
         "Pulmonary embolism"
       ],
       "acceptableAlternatives": [
-        "Panic/anxiety",
+        "Panic/anxiety or sympathomimetic toxidrome",
         "GERD/musculoskeletal"
       ]
     },
@@ -315,9 +326,9 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH cocaine-associated chest pain: benzodiazepines first-line for agitation/tachycardia/hypertension and to relieve ischemia (CANT-MISS,6); aspirin (4); nitrates for ischemic pain (3); calcium channel blocker / phentolamine for refractory hypertension or vasospasm (3); serial ECG and troponin with telemetry monitoring (3); counseling on cocaine cessation and addiction resources (2); cardiology consult if true ACS/positive troponin (2). PENALTY: giving a non-selective beta blocker (unopposed alpha stimulation/worsened vasospasm) (-4); discharging without observation or substance-use counseling (-2).",
-      "idealAnswer": "Benzodiazepine (e.g., lorazepam/diazepam) first-line to reduce sympathetic drive, agitation, tachycardia, hypertension, and ischemia; aspirin; nitroglycerin for ongoing ischemic pain; calcium channel blocker or phentolamine for refractory hypertension/vasospasm; AVOID beta blockers due to unopposed alpha-mediated vasoconstriction; telemetry with serial ECG and troponin; cardiology consult if troponin positive or true ACS; counsel on cocaine cessation and offer addiction/substance-use resources.",
+      "prompt": "What is your management plan? Include your disposition decision — state explicitly whether this patient is safe for discharge and what must be in place first.",
+      "rubric": "Per MGH cocaine-associated chest pain: benzodiazepines first-line for agitation/tachycardia/hypertension and to relieve ischemia (CANT-MISS,6); aspirin (3); nitrates for ischemic pain (2); calcium channel blocker / phentolamine for refractory hypertension or vasospasm (2); AVOID beta blockers and address the concurrent problems — IV fluids for rhabdomyolysis, correct/monitor potassium and magnesium given the prolonged QTc, hold QT-prolonging citalopram, telemetry with serial ECG and troponin (4); disposition: NOT safe for immediate discharge — observe on telemetry until pain-free with non-rising troponins and a stable/normalizing QT, then arrange safe discharge with cocaine-cessation counseling, addiction/substance-use resources, medication reconciliation, and close follow-up (4); cardiology consult if true ACS/positive troponin trend (bonus,2); HIV/ART continuity (bonus,2). PENALTY: giving a non-selective beta blocker (unopposed alpha stimulation/worsened vasospasm) (-4); discharging now without observation, a normalized QT, or substance-use counseling (-3).",
+      "idealAnswer": "Benzodiazepine (e.g., lorazepam/diazepam) first-line to reduce sympathetic drive, agitation, tachycardia, hypertension, and ischemia; aspirin; nitroglycerin for ongoing ischemic pain; calcium channel blocker or phentolamine for refractory hypertension/vasospasm; AVOID beta blockers due to unopposed alpha-mediated vasoconstriction. Treat the concurrent problems: IV fluids for the rhabdomyolysis (CK ~4200) and to protect the kidneys; check and correct potassium and magnesium and hold the QT-prolonging citalopram given the prolonged QTc (torsades risk); telemetry with serial ECG and troponin. Disposition: this patient is NOT safe for immediate discharge — observe on telemetry until he is pain-free with non-rising serial troponins, a resolved sympathomimetic state, and a stable/normalizing QT; only then arrange a safe discharge with cocaine-cessation counseling and addiction/substance-use referral, medication reconciliation (decongestant/energy-drink and citalopram review), HIV/ART continuity, and close primary-care/cardiology follow-up. Cardiology consult if the troponin trend or ECG indicates a true ACS.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
@@ -329,28 +340,32 @@
         "coreActions": [
           {
             "item": "Aspirin",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Nitrates for ischemic pain",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Calcium channel blocker / phentolamine for refractory hypertension or vasospasm",
-            "points": 3
-          },
-          {
-            "item": "Telemetry with serial ECG and troponin",
-            "points": 3
-          },
-          {
-            "item": "Cocaine cessation counseling / addiction resources",
             "points": 2
+          },
+          {
+            "item": "Avoid beta blockers; treat concurrent problems — IV fluids for rhabdomyolysis, correct K/Mg and hold QT-prolonging citalopram for the prolonged QTc, telemetry with serial ECG and troponin",
+            "points": 4
+          },
+          {
+            "item": "Disposition: NOT safe for immediate discharge — observe on telemetry until pain-free with non-rising troponins and stable QT, then safe discharge with cocaine-cessation counseling, addiction resources, med reconciliation, and close follow-up",
+            "points": 4
           }
         ],
         "bonusActions": [
           {
-            "item": "Cardiology consult if positive troponin / true ACS",
+            "item": "Cardiology consult if positive troponin trend / true ACS",
+            "points": 2
+          },
+          {
+            "item": "HIV/ART continuity and primary-care linkage",
             "points": 2
           }
         ],
@@ -358,6 +373,10 @@
           {
             "item": "Non-selective beta blocker (unopposed alpha stimulation)",
             "points": -4
+          },
+          {
+            "item": "Discharging now without observation, a normalized QT, or substance-use counseling",
+            "points": -3
           }
         ]
       },
@@ -368,17 +387,19 @@
         "Aspirin",
         "Nitrates for ischemic pain",
         "Calcium channel blocker / phentolamine for refractory hypertension or vasospasm",
-        "Telemetry with serial ECG and troponin",
-        "Cocaine cessation counseling / addiction resources",
-        "Cardiology consult if positive troponin / true ACS"
+        "Avoid beta blockers; treat concurrent problems — IV fluids for rhabdomyolysis, correct K/Mg and hold QT-prolonging citalopram for the prolonged QTc, telemetry with serial ECG and troponin",
+        "Disposition: NOT safe for immediate discharge — observe on telemetry until pain-free with non-rising troponins and stable QT, then safe discharge with cocaine-cessation counseling, addiction resources, med reconciliation, and close follow-up",
+        "Cardiology consult if positive troponin trend / true ACS",
+        "HIV/ART continuity and primary-care linkage"
       ],
       "unsafeActions": [
-        "Non-selective beta blocker (unopposed alpha stimulation)"
+        "Non-selective beta blocker (unopposed alpha stimulation)",
+        "Discharging now without observation, a normalized QT, or substance-use counseling"
       ],
       "consults": [
         "Cardiology"
       ],
-      "disposition": "Observe on telemetry with serial troponin/ECG",
+      "disposition": "Observe on telemetry with serial troponin/ECG until pain-free with non-rising troponins and a stable QT; then safe discharge with substance-use counseling and close follow-up",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Acute Coronary Syndrome (Cocaine-Associated Chest Pain)",
@@ -395,15 +416,17 @@
     "sensitiveTopics": [
       "drug_use",
       "alcohol_use",
-      "tobacco_use"
+      "tobacco_use",
+      "hiv_status"
     ],
-    "communicationStyle": "answers questions asked without volunteering diagnostic clues; initially guarded about drug use",
-    "affect": "34-year-old man, anxious and restless, fidgety and hyperalert, speaking quickly; mildly defensive about drugs.",
+    "communicationStyle": "answers questions asked without volunteering diagnostic clues; initially guarded about drug use and HIV status",
+    "affect": "34-year-old man, anxious and restless, fidgety and hyperalert, tremulous, speaking quickly; mildly defensive about drugs.",
     "disclosureRules": [
       "Do not reveal sensitive history unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Disclose drug use only if asked directly and non-judgmentally, after reassurance of confidentiality",
+      "Disclose HIV status and antiretrovirals only if asked about medical history or medications",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -436,7 +459,7 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language. He had several beers tonight.]",
       "importance": "core",
-      "points": 2,
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -449,6 +472,40 @@
         "do you smoke"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language. He smokes about half a pack a day.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "do you take aspirin",
+        "drugs you take",
+        "decongestant",
+        "cold medicine",
+        "energy drinks",
+        "caffeine"
+      ],
+      "response": "[Reveal the relevant details from patientFile only when asked about medications or the specific item; phrase in lay language. He takes a single-pill HIV medicine (efavirenz-based) once daily and citalopram for depression, and has been taking an over-the-counter decongestant (pseudoephedrine) for a cold plus several energy drinks a day; no daily aspirin.]",
+      "importance": "critical",
+      "points": 3,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "heart problems",
+        "conditions",
+        "hiv",
+        "depression"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked about medical history; phrase in lay language. He has HIV (on treatment, last viral load undetectable) and depression; no known heart disease or diabetes, told once his blood pressure was a little high.]",
       "importance": "core",
       "points": 2,
       "hiddenUntilAsked": true
@@ -505,37 +562,11 @@
         "associated symptoms",
         "palpitations",
         "shortness of breath",
+        "muscle aches",
+        "fever",
         "anything else"
       ],
-      "response": "[Answer from patientFile: palpitations, racing heart, sweating, anxiety, mild shortness of breath; no fever, no cough, no leg swelling.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "pmh",
-      "category": "pmh",
-      "triggerConcepts": [
-        "past medical history",
-        "medical problems",
-        "heart problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile: no known heart disease, high blood pressure, or diabetes; occasional anxiety.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "do you take aspirin",
-        "drugs you take"
-      ],
-      "response": "[Answer from patientFile: takes no regular medications and no daily aspirin.]",
+      "response": "[Answer from patientFile: palpitations, racing heart, sweating, anxiety, mild shortness of breath, feverish, diffuse muscle aches; no cough, no leg swelling.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -568,13 +599,13 @@
     },
     {
       "id": "assess_general_appearance_finding_2",
-      "finding": "General: anxious, restless, diaphoretic, mildly agitated and hyperalert; pupils mildly dilated.",
+      "finding": "General: anxious, restless, diaphoretic, mildly agitated and hyperalert; tremulous; pupils mildly dilated.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No agitation, diaphoresis, or pupillary changes."
+      "normalIfNotPresent": "No agitation, diaphoresis, tremor, or pupillary changes."
     },
     {
       "id": "auscultate_aortic_area_finding_3",
@@ -606,6 +637,16 @@
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "Symmetric, equal peripheral pulses."
+    },
+    {
+      "id": "assess_motor_strength_finding_6",
+      "finding": "Diffuse muscle tenderness and aching on examination of the limbs (fits the rhabdomyolysis); strength grossly intact.",
+      "revealedBy": [
+        "assess_motor_strength"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "No muscle tenderness; strength intact."
     }
   ],
   "overallScoring": {
@@ -618,66 +659,73 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Cocaine-associated chest pain with coronary vasospasm",
-    "diagnosticFramework": "34M with no cardiac history presents with 1 hour of severe substernal chest pressure that began at a party, with palpitations, anxiety, and diaphoresis. The diagnosis is Cocaine-associated chest pain with coronary vasospasm, reached by eliciting the focused history (including a non-judgmental drug history), performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "34M with HIV on an efavirenz-based regimen and treated depression presents with 1 hour of severe substernal chest pressure that began at a party, with palpitations, anxiety, diaphoresis, agitation, tachycardia, and hypertension. The diagnosis is Cocaine-associated chest pain with coronary vasospasm, reached by eliciting a non-judgmental drug and medication history, performing the targeted exam, and interpreting an order-sensitive workup. The picture is layered: a genuine competing diagnosis of cocaine-associated MI (kept alive by a small troponin rise), and concurrent multi-system problems — rhabdomyolysis, an elevated-anion-gap lactic acidosis with hyperkalemia, and a polypharmacy-driven prolonged QTc — must be recognized as separate issues while the must-not-miss dissection and PE are excluded.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Skin/extremities: diaphoretic; NO track marks or injection sites.",
-      "General: anxious, restless, diaphoretic, mildly agitated and hyperalert; pupils mildly dilated.",
+      "General: anxious, restless, diaphoretic, mildly agitated and hyperalert; tremulous; pupils mildly dilated.",
       "Cardiac: tachycardic, regular, normal S1/S2, no murmur, no rub, no gallop.",
-      "Extremities: symmetric pulses, equal in both arms (argues against dissection)."
+      "Extremities: symmetric pulses, equal in both arms (argues against dissection).",
+      "Diffuse muscle tenderness and aching on examination of the limbs (fits the rhabdomyolysis)."
     ],
     "keyDiagnosticFindings": [
       "Troponin",
       "ECG_serial",
       "BMP",
+      "VBG_lactate",
       "UDS",
       "CBC",
       "CK_CKMB"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items (especially drug use) only on direct, non-judgmental questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Cocaine-associated chest pain with coronary vasospasm while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Cocaine-associated chest pain with coronary vasospasm and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals (agitated, tachycardic, hypertensive, febrile).",
+      "Elicit the focused history, including sensitive items (drug use, HIV status, the QT-prolonging and sympathomimetic medications) only on direct, non-judgmental questioning.",
+      "Perform the targeted physical exam maneuvers to reveal the toxidrome, the dissection-excluding pulses, and the muscle tenderness of rhabdomyolysis.",
+      "Build a differential led by cocaine-associated vasospasm with a genuine competing diagnosis of cocaine-associated MI, while excluding aortic dissection and PE.",
+      "Order an order-sensitive workup and integrate multi-system labs (small troponin rise, anion-gap lactic acidosis, hyperkalemia, rhabdomyolysis-range CK) and a prolonged QTc on the EKG.",
+      "Commit to cocaine-associated chest pain with vasospasm using serial troponin/ECG as the discriminator, then stabilize, manage the concurrent problems, avoid beta blockers, and make a safe-discharge/observation disposition with substance-use counseling."
     ],
     "commonPitfalls": [
-      "Non-selective beta blocker (unopposed alpha stimulation)"
+      "Non-selective beta blocker (unopposed alpha stimulation)",
+      "Discharging before observation, a normalized QT, or substance-use counseling",
+      "Missing the prolonged QT and its torsades risk",
+      "Mistaking the rhabdomyolysis CK rise for myocardial injury"
     ],
     "managementPearls": [
-      "Benzodiazepine first-line"
+      "Benzodiazepine first-line",
+      "Avoid beta blockers; correct K/Mg and hold QT-prolonging citalopram",
+      "Observe on telemetry, then arrange safe discharge with addiction resources"
     ],
     "criticalHistoryItems": [
-      "drug_use"
+      "drug_use",
+      "medications"
     ],
     "criticalExamItems": [
       "assess_general_appearance",
       "auscultate_aortic_area"
     ],
     "criticalWorkupItems": [
-      "EKG, ideally immediately, with serial tracings",
+      "EKG immediately, with serial tracings and attention to the QT",
       "Serial troponin"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation.",
+      "Sinus tachycardia with a prolonged QTc and subtle, non-specific ST changes and NO ST-segment elevation.",
       "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
     ],
     "criticalManagementItems": [
       "Benzodiazepine first-line"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation.",
+      "Sinus tachycardia with a prolonged QTc and subtle, non-specific ST changes and NO ST-segment elevation.",
       "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia with subtle, non-specific ST changes and NO ST-segment elevation.",
+      "Sinus tachycardia with a prolonged QTc and subtle, non-specific ST changes and NO ST-segment elevation.",
       "No acute cardiopulmonary process; normal mediastinum; no pneumothorax."
     ],
     "imageInterpretationPearls": [
       "A near-normal study is an interpretation task in its own right — state the pertinent negatives that exclude STEMI, dissection, and pneumothorax.",
-      "Read every study systematically before committing, and use serial tracings to capture transient vasospasm.",
-      "State pertinent negatives, not just positives."
+      "Read the QT on every tox/chest-pain tracing: a long QT in a patient on citalopram and efavirenz with a sympathomimetic state carries torsades risk.",
+      "Use serial tracings to capture transient vasospasm — the ST changes resolve while the QT prolongation persists."
     ]
   },
   "communicationScoring": {
@@ -692,7 +740,7 @@
         "points": 1
       },
       {
-        "item": "Asks about drug use in a non-judgmental, confidential manner",
+        "item": "Asks about drug use and HIV status in a non-judgmental, confidential manner",
         "points": 1
       },
       {
@@ -707,8 +755,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "pathology-forward integrated interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

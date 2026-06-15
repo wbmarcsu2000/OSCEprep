@@ -1,0 +1,753 @@
+{
+  "id": "ams-10",
+  "category": "Altered Mental Status",
+  "difficulty": "hard",
+  "title": "Progressive confusion in an elderly woman with a heart condition",
+  "diagnosis": "Chronic digoxin toxicity precipitated by diuretic-induced hypokalemia and renal impairment",
+  "chart": {
+    "ageSex": "79F",
+    "cc": "Confusion and lethargy (brought by son)",
+    "oneLiner": "79F with atrial fibrillation, HFrEF and CKD is brought in by her son with several days of nausea, anorexia, blurred yellow-green vision, and now worsening confusion and lethargy; her furosemide was uptitrated two weeks ago.",
+    "vitals": {
+      "BP": "104/62",
+      "HR": "50",
+      "RR": "16",
+      "Temp": "36.8°C",
+      "SpO2": "97% RA"
+    },
+    "timer": 180
+  },
+  "opening": "Doctor, I'm her son — Mom just isn't herself. She's been off her food for days, getting muddled, and now she's saying her telly looks all yellow-green. I'm really worried.",
+  "patientFile": "PERSONA (INFORMANT): You are the patient's son, ~50 years old, anxious and attentive, the primary informant. Your mother (79F) is in the room but is lethargic and confused; SHE answers only briefly and vaguely ('I'm tired'… 'I don't feel right'… 'everything looks a bit yellow') and cannot give a clear timeline. YOU provide the actual history when asked.\n\nHPI (from the son, reveal only what is asked): Over the last 4-5 days she has had nausea, poor appetite, and increasing tiredness. Two or three days ago she started saying her vision looked 'yellow-green' and a bit blurry, especially around lights. In the last day or two she has become more confused and lethargic, sleeping a lot, and twice complained her heart was 'fluttering' or 'racing.' No chest pain that she mentioned, no fever, no cough, no urinary symptoms, no diarrhea, no obvious falls or head injury. No black or bloody stools. No recent travel.\nKEY SETUP (reveal if asked about recent medication changes / what the doctor did recently / why the swelling): About two weeks ago her GP increased her 'water pill' (furosemide) because her legs and ankles were swelling up. Since then she has been passing a lot more urine and has been off her food. No other new medicines, no over-the-counter additions, no herbal remedies. She has not missed her usual heart pills as far as you know.\nPMH (reveal if asked): atrial fibrillation, heart failure with weak pump function, high blood pressure, chronic kidney disease (the GP said 'stage 3'). No known thyroid problem; recent thyroid check was normal. No diabetes.\nMEDS (reveal the full list if asked for medications): digoxin (a heart-rhythm tablet she's taken for years), furosemide ('water pill,' dose recently increased), lisinopril, metoprolol, atorvastatin. She takes them herself with a weekly pillbox; you think she's been taking them as usual.\nSOCIAL (reveal if asked): lives alone in her own flat, you visit most days; widowed; independent with most activities at baseline; does not smoke; rare alcohol; no recreational drugs.\nFAMILY (reveal if asked): father had heart disease; nothing else relevant.\nROS (reveal if asked): nausea and poor appetite yes; yellow-green/blurry vision yes; palpitations yes; confusion/lethargy yes. No fever, chills, cough, dysuria, frequency beyond the extra water-pill effect, no diarrhea or vomiting blood, no weakness or numbness on one side, no slurred speech, no seizure, no neck stiffness, no headache.\n\nPHYSICAL EXAM (report ONLY the maneuver requested; give normals otherwise):\n- General: elderly woman, drowsy and slow to respond, oriented to self but not reliably to place/time; not in acute distress; mucous membranes a little dry.\n- Vitals: BP 104/62, HR ~50 and irregularly irregular, RR 16, 36.8°C, SpO2 97% RA.\n- Mental status: lethargic, inattentive, disoriented to time and place; no focal language deficit.\n- Cranial nerves: grossly intact; pupils equal and reactive; no facial droop; extraocular movements intact (she reports colors look yellow-green).\n- Motor: no focal weakness, moves all four limbs; mildly diffusely weak in keeping with age/illness.\n- Reflexes: symmetric, no clonus, no pronator drift.\n- JVP: mildly elevated.\n- Cardiac: irregularly irregular, bradycardic (~50); no loud murmurs; soft.\n- Mitral area on auscultation: irregular rhythm, no new murmur.\n- Edema: trace residual ankle edema, improved from before the water-pill increase.\n- Mucous membranes: slightly dry.\n- Lungs: clear, no crackles.\n- Neuro otherwise non-focal; no neck stiffness.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis (do not say 'digoxin,' 'toxicity,' 'level too high,' etc.).\n- The PATIENT herself answers only vaguely and is confused; the SON is the informant and gives the real history, but only what is explicitly asked.\n- Do not volunteer the recent furosemide increase, the medication list, or the visual symptom unless the relevant question is asked (med changes, meds, vision/ROS, HPI).\n- Reveal exam findings only when that maneuver is performed; otherwise give the stated normal.\n- Use lay language; the son is not medically trained ('water pill,' 'heart-rhythm tablet,' 'looks yellow-green').\n- If asked something not covered here, give a reasonable normal/negative answer."
+,
+  "dx": {
+    "labs": {
+      "DigoxinLevel": "Serum digoxin 3.2 ng/mL — markedly elevated (therapeutic 0.5-0.9 ng/mL).",
+      "BMP": "Na 132 (mild hyponatremia), K 3.0 (hypokalemia), Cl 96, HCO3 26, BUN 42, Cr 2.1 (baseline ~1.3 — acute-on-chronic kidney injury, eGFR ~24), Glucose 98.",
+      "Magnesium": "Mg 1.4 mg/dL — low (hypomagnesemia).",
+      "TSH": "TSH 2.1 — normal (no hypothyroidism).",
+      "UA": "Bland — no significant leukocyte esterase, negative nitrites, no pyuria; not suggestive of infection.",
+      "Troponin": "High-sensitivity troponin not significantly elevated; no dynamic rise — not an acute coronary syndrome.",
+      "CBC": "WBC 7.8 (no leukocytosis), Hgb 11.6, Plt 220."
+    }
+  },
+  "images": {
+    "ekg": {
+      "label": "12-lead EKG",
+      "asset": null,
+      "litflStudyN": 30,
+      "integrated": true,
+      "source": "https://litfl.com/digoxin-toxicity-ecg-library/",
+      "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
+      "findings": "Slow, regularized ventricular response with junctional features and the down-sloping 'scooped' (Salvador Dalí sagging) ST depression of digoxin effect, plus frequent ventricular ectopy (PVCs) — consistent with digoxin toxicity.",
+      "verify": "Source a study matching: regularized/junctional rhythm in the setting of AF with scooped (reverse-tick / Salvador Dalí) ST depression and frequent PVCs — digoxin toxicity. Self-host with appropriate credit.",
+      "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
+      "assetNeeded": true,
+      "imageDescription": "12-lead showing digoxin toxicity: regularized/junctional rhythm with scooped ST depression and frequent PVCs",
+      "searchTerms": [
+        "digoxin toxicity ECG",
+        "regularized junctional rhythm atrial fibrillation digoxin",
+        "scooped Salvador Dali ST depression digoxin effect PVCs"
+      ],
+      "recommendedSource": "LITFL ECG Library (litfl.com)",
+      "clinicalVignette": "A 79-year-old woman with atrial fibrillation on digoxin presents with nausea, yellow-green vision, and confusion, and her tracing shows a slow regularized rhythm with scooped ST depression and frequent ectopy."
+    },
+    "cxr": {
+      "label": "Chest X-ray",
+      "asset": null,
+      "source": "https://commons.wikimedia.org/w/index.php?search=mild%20cardiomegaly%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "license": "Wikimedia Commons — verify file license",
+      "findings": "Stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema (obtained to exclude pneumonia/decompensated heart failure as a cause of the presentation).",
+      "verify": "Pick a CC chest film showing mild cardiomegaly without acute consolidation or florid edema.",
+      "assetNeeded": true,
+      "imageDescription": "Mild stable cardiomegaly without acute consolidation, effusion, or florid pulmonary edema.",
+      "searchTerms": [
+        "mild cardiomegaly PA chest radiograph no consolidation",
+        "stable cardiomegaly chest xray no acute infiltrate"
+      ],
+      "recommendedSource": "Radiopaedia.org",
+      "clinicalVignette": "A 79-year-old woman with heart failure and confusion has a film obtained to exclude pneumonia and decompensated heart failure as the cause of her presentation."
+    }
+  },
+  "revealKeys": [
+    "DigoxinLevel",
+    "BMP",
+    "Magnesium",
+    "TSH",
+    "UA",
+    "Troponin",
+    "CBC",
+    "ekg",
+    "cxr"
+  ],
+  "essential": [
+    "DigoxinLevel",
+    "BMP",
+    "Magnesium"
+  ],
+  "steps": [
+    {
+      "id": "differential",
+      "label": "Differential",
+      "max": 25,
+      "prompt": "Based on the collateral history from her son and your assessment, list your differential for this elderly woman's progressive confusion, lethargy, and bradycardia (note your leading diagnosis).",
+      "rubric": "Digoxin toxicity (leading,7). Life-threatening digoxin-induced arrhythmia / bradyarrhythmia (CANT-MISS,4). Stroke/intracranial process (CANT-MISS,3). Acute coronary syndrome (CANT-MISS,3). Uremic encephalopathy / electrolyte derangement from CKD + diuretic (core,3). Infection-related delirium (core,2). Named leading dx w/ justification — AF on digoxin, recent furosemide uptitration, nausea/anorexia, xanthopsia, bradycardia, CKD (core,3).",
+      "idealAnswer": "Leading diagnosis: Chronic digoxin toxicity (AF on digoxin, recent furosemide uptitration causing hypokalemia, worsening renal function reducing clearance, plus nausea/anorexia, xanthopsia (yellow-green vision), confusion, and bradycardia). Must-not-miss diagnoses to exclude: life-threatening digoxin-induced arrhythmia/bradyarrhythmia; stroke/intracranial process; acute coronary syndrome. Also reasonable contributors: uremic encephalopathy / electrolyte derangement (hypokalemia, hypomagnesemia, hyponatremia) from CKD and the diuretic; infection-related delirium.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Digoxin toxicity",
+            "points": 7
+          },
+          {
+            "item": "Life-threatening digoxin-induced arrhythmia / bradyarrhythmia",
+            "points": 4
+          },
+          {
+            "item": "Stroke/intracranial process",
+            "points": 3
+          },
+          {
+            "item": "Acute coronary syndrome",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Uremic encephalopathy / electrolyte derangement from CKD and diuretic",
+            "points": 3
+          },
+          {
+            "item": "Infection-related delirium",
+            "points": 2
+          },
+          {
+            "item": "Named leading dx w/ justification — AF on digoxin, recent furosemide uptitration, nausea/anorexia, xanthopsia, bradycardia, CKD",
+            "points": 3
+          }
+        ],
+        "bonusActions": [],
+        "penalties": []
+      },
+      "mustNotMiss": [
+        "Life-threatening digoxin-induced arrhythmia / bradyarrhythmia",
+        "Stroke/intracranial process",
+        "Acute coronary syndrome"
+      ],
+      "acceptableAlternatives": [
+        "Uremic encephalopathy / electrolyte derangement from CKD and diuretic",
+        "Infection-related delirium"
+      ]
+    },
+    {
+      "id": "workup",
+      "label": "Workup",
+      "max": 15,
+      "reveal": true,
+      "prompt": "What initial diagnostic workup do you want to order?",
+      "rubric": "Serum digoxin level (CANT-MISS,4). BMP — K, Cr/renal function, Na (CANT-MISS,3). Magnesium (core,2). EKG / continuous telemetry (core,2). Troponin to exclude ACS (core,1). UA to exclude infection (1). TSH (1). CBC (1). CXR (bonus,1). PENALTY: giving IV calcium for hyperkalemia or anchoring on infection/stroke without checking the digoxin level and potassium (-3).",
+      "idealAnswer": "Order: Serum digoxin level; BMP (potassium, creatinine/renal function, sodium); Magnesium; EKG with continuous telemetry; Troponin; UA; TSH; CBC; CXR.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          {
+            "item": "Serum digoxin level",
+            "points": 4
+          },
+          {
+            "item": "BMP (potassium, creatinine/renal function, sodium)",
+            "points": 3
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Magnesium",
+            "points": 2
+          },
+          {
+            "item": "EKG / continuous telemetry",
+            "points": 2
+          },
+          {
+            "item": "Troponin to exclude ACS",
+            "points": 1
+          },
+          {
+            "item": "UA to exclude infection",
+            "points": 1
+          },
+          {
+            "item": "TSH",
+            "points": 1
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "CXR",
+            "points": 1
+          }
+        ],
+        "penalties": [
+          {
+            "item": "giving IV calcium for hyperkalemia or anchoring on infection/stroke without checking the digoxin level and potassium",
+            "points": -3
+          }
+        ]
+      },
+      "requiredTests": [
+        "Serum digoxin level",
+        "BMP (potassium, creatinine/renal function, sodium)"
+      ],
+      "optionalTests": [],
+      "contraindicatedTests": [
+        "giving IV calcium for hyperkalemia or anchoring on infection/stroke without checking the digoxin level and potassium"
+      ],
+      "orderSensitiveActions": [
+        "giving IV calcium for hyperkalemia or anchoring on infection/stroke without checking the digoxin level and potassium"
+      ]
+    },
+    {
+      "id": "ekg_read",
+      "label": "Read EKG",
+      "max": 15,
+      "type": "read",
+      "image": "ekg",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
+      "rubric": "Findings = digoxin toxicity: slow, regularized ventricular response/junctional rhythm in AF, scooped (Salvador Dalí) ST depression of digoxin effect, frequent PVCs. CREDIT: recognizes the scooped/down-sloping 'reverse-tick' ST depression of digoxin effect (7); notes the slow regularized/junctional rhythm and/or frequent ventricular ectopy (5); links the tracing to digoxin toxicity rather than simple digoxin effect (3). PENALTY: calling the study normal / missing the toxic rhythm (-3).",
+      "keyFindings": [
+        "scooped (Salvador Dalí) down-sloping ST depression of digoxin effect",
+        "slow regularized / junctional rhythm with frequent PVCs",
+        "links the tracing to digoxin toxicity"
+      ],
+      "criticalFindings": [
+        "Digoxin toxicity: regularized/junctional rhythm with scooped ST depression and frequent PVCs."
+      ],
+      "commonMistakes": [
+        "calling the tracing normal",
+        "mistaking the scooped ST depression for ischemia only",
+        "missing the regularized/junctional rhythm or the PVCs"
+      ],
+      "idealAnswer": "Digoxin toxicity: a slow, regularized ventricular response (junctional rhythm) in a patient with underlying atrial fibrillation, the scooped 'Salvador Dalí' down-sloping ST depression of digoxin effect, and frequent PVCs — distinguishing toxicity from benign digoxin effect.",
+      "scoring": {
+        "maxPoints": 15,
+        "criticalActions": [
+          "Digoxin toxicity: regularized/junctional rhythm with scooped ST depression and frequent PVCs."
+        ],
+        "coreActions": [
+          "scooped (Salvador Dalí) down-sloping ST depression of digoxin effect",
+          "slow regularized / junctional rhythm with frequent PVCs"
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "label": "calls the study normal / misses the abnormality",
+            "points": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cxr_read",
+      "label": "Read CXR",
+      "max": 10,
+      "type": "read",
+      "image": "cxr",
+      "prompt": "Here is the patient's chest X-ray. Describe your findings.",
+      "rubric": "Findings = stable mild cardiomegaly, no acute consolidation/effusion/florid edema. CREDIT: identifies stable mild cardiomegaly without acute pathology (6); notes it excludes pneumonia and decompensated heart failure as the cause (4). PENALTY: inventing pathology (-2).",
+      "keyFindings": [
+        "stable mild cardiomegaly without acute consolidation or effusion",
+        "notes it excludes pneumonia and decompensated heart failure as the cause"
+      ],
+      "criticalFindings": [
+        "Stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema (excludes pneumonia/decompensated heart failure as the source)."
+      ],
+      "commonMistakes": [
+        "inventing pathology",
+        "overcalling florid pulmonary edema"
+      ],
+      "idealAnswer": "Stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema — obtained to exclude pneumonia and decompensated heart failure as the cause of the presentation.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [
+          {
+            "item": "Recognizes stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema.",
+            "points": 6
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "notes it excludes pneumonia and decompensated heart failure as the cause",
+            "points": 4
+          }
+        ],
+        "bonusActions": [],
+        "penalties": [
+          {
+            "item": "inventing pathology",
+            "points": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "revised",
+      "label": "Revised Dx",
+      "max": 10,
+      "prompt": "Given the serum digoxin of 3.2 ng/mL, K 3.0, Mg 1.4, Cr 2.1 (up from ~1.3), and the EKG, what is your unifying diagnosis? Commit, name the discriminators, and list three factors that potentiate digoxin toxicity.",
+      "rubric": "Chronic digoxin toxicity driven by diuretic-induced hypokalemia and renal impairment (6). Cites the discriminators — supratherapeutic digoxin level 3.2, hypokalemia, and the digoxin-toxicity EKG, with troponin/UA arguing against ACS and infection (2). Names three potentiating factors — hypokalemia, hypomagnesemia, renal failure, hypercalcemia, hypothyroidism, or interacting drugs (e.g. amiodarone, verapamil) (1). Notes ongoing risk of life-threatening arrhythmia (bonus,1).",
+      "idealAnswer": "Chronic digoxin toxicity precipitated by diuretic-induced hypokalemia and renal impairment. Commit to this: the supratherapeutic digoxin level (3.2 ng/mL vs therapeutic 0.5-0.9), the hypokalemia (K 3.0) and hypomagnesemia (Mg 1.4) from the recently uptitrated furosemide, and the acute-on-chronic kidney injury (Cr 2.1 from ~1.3) reducing digoxin clearance all converge, and the EKG shows the digoxin-toxicity pattern (regularized/junctional rhythm with scooped ST depression and PVCs). Discriminators: the digoxin level, the potassium and magnesium, and the EKG; the unremarkable troponin and bland UA argue against ACS and infection. Three factors that potentiate digoxin toxicity: hypokalemia, hypomagnesemia, renal failure (also hypercalcemia, hypothyroidism, or interacting drugs such as amiodarone or verapamil). She remains at risk for a life-threatening arrhythmia.",
+      "scoring": {
+        "maxPoints": 10,
+        "criticalActions": [],
+        "coreActions": [],
+        "bonusActions": [
+          {
+            "item": "Notes ongoing risk of life-threatening arrhythmia",
+            "points": 1
+          }
+        ],
+        "penalties": []
+      }
+    },
+    {
+      "id": "management",
+      "label": "Management",
+      "max": 25,
+      "prompt": "What is your management plan? Include immediate stabilization, the indications for digoxin-immune Fab, a key electrolyte pitfall, and a safe-discharge plan.",
+      "rubric": "Hold digoxin AND furosemide (CANT-MISS,5). Continuous telemetry / consider ICU for the toxic rhythm seen on EKG (CANT-MISS,4). Correct potassium and magnesium (core,4). Digoxin-immune Fab (DigiFab) for life-threatening arrhythmia, hyperkalemia >5 in acute toxicity, or hemodynamic instability (core,4). Treat symptomatic bradycardia (atropine; Fab; pacing as needed) (core,2). Safe-discharge plan — med reconciliation, renal dosing + digoxin-level monitoring, diuretic re-titration with electrolyte checks, family education, cardiology + PCP follow-up (CANT-MISS,4). Serial EKG/electrolytes (bonus,2). PENALTY: giving IV calcium for hyperkalemia in digoxin toxicity ('stone heart') (-5). PENALTY: continuing or re-dosing digoxin/furosemide (-3).",
+      "idealAnswer": "Stop the offending drugs: hold digoxin AND furosemide. Place on continuous telemetry and consider ICU given the digoxin-toxicity rhythm on EKG and bradycardia. Correct the potassium (K 3.0) and magnesium (Mg 1.4), since hypokalemia and hypomagnesemia worsen digoxin toxicity. Give digoxin-immune Fab (DigiFab) for life-threatening arrhythmia, hyperkalemia >5 mmol/L in acute toxicity, or hemodynamic instability. Treat symptomatic bradycardia (atropine; DigiFab; transcutaneous/transvenous pacing if needed). CRITICAL PITFALL: avoid IV calcium for hyperkalemia in digoxin toxicity ('stone heart' risk). Serial EKGs and electrolytes. SAFE DISCHARGE: medication reconciliation, renal-adjusted digoxin dosing with a digoxin-level monitoring plan, careful diuretic re-titration with scheduled electrolyte checks, family/caregiver education on toxicity symptoms, and close cardiology + PCP follow-up.",
+      "scoring": {
+        "maxPoints": 25,
+        "criticalActions": [
+          {
+            "item": "Hold digoxin AND furosemide",
+            "points": 5
+          },
+          {
+            "item": "Continuous telemetry / consider ICU for the toxic rhythm on EKG",
+            "points": 4
+          },
+          {
+            "item": "Safe discharge: med reconciliation, renal dosing + digoxin-level monitoring, diuretic re-titration with electrolyte checks, family education, cardiology + PCP follow-up",
+            "points": 4
+          }
+        ],
+        "coreActions": [
+          {
+            "item": "Correct potassium and magnesium",
+            "points": 4
+          },
+          {
+            "item": "Digoxin-immune Fab (DigiFab) for life-threatening arrhythmia, hyperkalemia >5 in acute toxicity, or hemodynamic instability",
+            "points": 4
+          },
+          {
+            "item": "Treat symptomatic bradycardia (atropine; Fab; pacing as needed)",
+            "points": 2
+          }
+        ],
+        "bonusActions": [
+          {
+            "item": "Serial EKG/electrolytes",
+            "points": 2
+          }
+        ],
+        "penalties": [
+          {
+            "item": "Giving IV calcium for hyperkalemia in digoxin toxicity ('stone heart')",
+            "points": -5
+          },
+          {
+            "item": "Continuing or re-dosing digoxin/furosemide",
+            "points": -3
+          }
+        ]
+      },
+      "requiredActions": [
+        "Hold digoxin AND furosemide",
+        "Continuous telemetry / consider ICU for the toxic rhythm on EKG",
+        "Safe discharge: med reconciliation, renal dosing + digoxin-level monitoring, diuretic re-titration with electrolyte checks, family education, cardiology + PCP follow-up"
+      ],
+      "optionalActions": [
+        "Correct potassium and magnesium",
+        "Digoxin-immune Fab (DigiFab) for life-threatening arrhythmia, hyperkalemia >5 in acute toxicity, or hemodynamic instability",
+        "Treat symptomatic bradycardia (atropine; Fab; pacing as needed)",
+        "Serial EKG/electrolytes"
+      ],
+      "unsafeActions": [
+        "Giving IV calcium for hyperkalemia in digoxin toxicity ('stone heart')",
+        "Continuing or re-dosing digoxin/furosemide"
+      ],
+      "consults": [
+        "Cardiology",
+        "Medical toxicology / Poison Control"
+      ],
+      "disposition": "Admit to telemetry; ICU if unstable arrhythmia or hemodynamic instability",
+      "mghReference": {
+        "manual": "MGH Housestaff Manual 2024–2025",
+        "section": "Toxicology — Digoxin toxicity",
+        "page": 412
+      }
+    }
+  ],
+  "standardizedPatient": {
+    "demeanor": "calm",
+    "emotionalState": "concerned",
+    "healthLiteracy": "average",
+    "verbosity": "brief",
+    "cooperativeness": "high",
+    "sensitiveTopics": [
+      "functional_status",
+      "medication_changes"
+    ],
+    "communicationStyle": "collateral history: the patient is lethargic and confused and answers only vaguely; the son is the informant and gives the real history when asked",
+    "affect": "79-year-old woman, drowsy and confused, a poor historian; her anxious adult son provides the collateral history.",
+    "disclosureRules": [
+      "The patient answers only vaguely and is confused; rely on the son for collateral",
+      "Do not reveal the recent furosemide increase, medication list, or visual symptom unless the relevant question is asked",
+      "Do not mention or hint at the diagnosis",
+      "Do not volunteer hidden exam or diagnostic findings",
+      "Use lay language; avoid medical jargon and textbook phrasing"
+    ]
+  },
+  "historyTriggers": [
+    {
+      "id": "functional_status",
+      "category": "social_history",
+      "triggerConcepts": [
+        "where does she live",
+        "baseline function",
+        "who looks after her",
+        "independent at home"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language as the son.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_changes",
+      "category": "meds",
+      "triggerConcepts": [
+        "any recent medication changes",
+        "new medications",
+        "dose changes",
+        "what did the GP change",
+        "why the swelling"
+      ],
+      "response": "[Reveal the recent furosemide (water-pill) uptitration only when asked directly; phrase in lay language as the son.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "onset",
+      "category": "hpi",
+      "triggerConcepts": [
+        "when did it start",
+        "onset",
+        "how long",
+        "duration"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "character",
+      "category": "hpi",
+      "triggerConcepts": [
+        "describe the",
+        "what is she experiencing",
+        "character",
+        "quality",
+        "vision changes"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "severity",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how bad",
+        "severity",
+        "how confused"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "associated_symptoms",
+      "category": "ros",
+      "triggerConcepts": [
+        "any other symptoms",
+        "associated symptoms",
+        "anything else",
+        "palpitations",
+        "nausea or appetite"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "aggravating_alleviating",
+      "category": "hpi",
+      "triggerConcepts": [
+        "what makes it worse",
+        "what makes it better",
+        "aggravating",
+        "alleviating"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "pmh",
+      "category": "pmh",
+      "triggerConcepts": [
+        "past medical history",
+        "medical problems",
+        "heart condition",
+        "kidney"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "what medications does she take",
+        "medication list",
+        "her pills",
+        "drugs she takes"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    },
+    {
+      "id": "prior_episodes",
+      "category": "hpi",
+      "triggerConcepts": [
+        "happened before",
+        "prior episodes",
+        "first time"
+      ],
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": false
+    }
+  ],
+  "physicalExamMappings": [
+    {
+      "id": "assess_mental_status_finding_1",
+      "finding": "Mental status: lethargic, inattentive, disoriented to time and place; no focal language deficit.",
+      "revealedBy": [
+        "assess_mental_status"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Alert and oriented."
+    },
+    {
+      "id": "assess_cranial_nerves_finding_2",
+      "finding": "Cranial nerves grossly intact; pupils equal and reactive; no facial droop; extraocular movements intact (she reports colors look yellow-green).",
+      "revealedBy": [
+        "assess_cranial_nerves"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Cranial nerves intact."
+    },
+    {
+      "id": "assess_motor_strength_finding_3",
+      "finding": "Motor: no focal weakness, moves all four limbs; mildly diffusely weak in keeping with age/illness.",
+      "revealedBy": [
+        "assess_motor_strength"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No focal motor deficit."
+    },
+    {
+      "id": "assess_reflexes_finding_4",
+      "finding": "Reflexes symmetric, no clonus, no pronator drift.",
+      "revealedBy": [
+        "assess_reflexes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Reflexes normal and symmetric."
+    },
+    {
+      "id": "assess_jvp_finding_5",
+      "finding": "JVP mildly elevated.",
+      "revealedBy": [
+        "assess_jvp"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "JVP not elevated."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_6",
+      "finding": "Cardiac: irregularly irregular, bradycardic (~50); soft, no new murmur.",
+      "revealedBy": [
+        "auscultate_mitral_area"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "Regular rate and rhythm, no murmur."
+    },
+    {
+      "id": "assess_edema_finding_7",
+      "finding": "Trace residual ankle edema, improved from before the water-pill increase.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_8",
+      "finding": "Mucous membranes slightly dry.",
+      "revealedBy": [
+        "assess_mucous_membranes"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Mucous membranes moist."
+    }
+  ],
+  "overallScoring": {
+    "history": 20,
+    "physicalExam": 15,
+    "differential": 15,
+    "workup": 15,
+    "imageInterpretation": 15,
+    "management": 20
+  },
+  "caseSummary": {
+    "finalDiagnosis": "Chronic digoxin toxicity precipitated by diuretic-induced hypokalemia and renal impairment",
+    "diagnosticFramework": "79F with atrial fibrillation on digoxin, HFrEF, hypertension, and CKD is brought in by her son with several days of nausea, anorexia, yellow-green (xanthopsic) vision, and progressive confusion, lethargy, and bradycardia after her furosemide was uptitrated two weeks earlier. The diagnosis is chronic digoxin toxicity precipitated by diuretic-induced hypokalemia and renal impairment, reached by eliciting the collateral history, performing the targeted exam, and interpreting the directed workup (supratherapeutic digoxin level, hypokalemia, hypomagnesemia, acute-on-chronic kidney injury, and the digoxin-toxicity EKG) while excluding the must-not-miss alternatives.",
+    "keyHistoryClues": [],
+    "keyPhysicalExamFindings": [
+      "Mental status: lethargic, inattentive, disoriented to time and place; no focal language deficit.",
+      "Cranial nerves grossly intact; pupils equal and reactive; no facial droop; extraocular movements intact (she reports colors look yellow-green).",
+      "Motor: no focal weakness, moves all four limbs; mildly diffusely weak in keeping with age/illness.",
+      "Reflexes symmetric, no clonus, no pronator drift.",
+      "JVP mildly elevated.",
+      "Cardiac: irregularly irregular, bradycardic (~50); soft, no new murmur.",
+      "Trace residual ankle edema, improved from before the water-pill increase.",
+      "Mucous membranes slightly dry."
+    ],
+    "keyDiagnosticFindings": [
+      "DigoxinLevel",
+      "BMP",
+      "Magnesium",
+      "TSH",
+      "UA",
+      "Troponin",
+      "CBC"
+    ],
+    "reasoningPathway": [
+      "Frame the presentation from the chart and vitals.",
+      "Elicit the collateral history from the son, including the recent furosemide uptitration and the visual symptom only on direct questioning.",
+      "Perform the targeted physical exam maneuvers to reveal key findings (bradycardic irregular rhythm, non-focal neuro exam).",
+      "Build a differential led by digoxin toxicity while explicitly excluding must-not-miss causes (arrhythmia, stroke, ACS).",
+      "Order a focused, order-sensitive workup and interpret the digoxin-toxicity EKG and the multi-system labs.",
+      "Commit to chronic digoxin toxicity precipitated by diuretic-induced hypokalemia and renal impairment, and manage with drug withdrawal, electrolyte correction, telemetry/DigiFab, avoidance of IV calcium, and a safe-discharge plan."
+    ],
+    "commonPitfalls": [
+      "Giving IV calcium for hyperkalemia in digoxin toxicity ('stone heart')",
+      "Continuing or re-dosing digoxin/furosemide"
+    ],
+    "managementPearls": [
+      "Hold digoxin AND furosemide",
+      "Continuous telemetry / consider ICU for the toxic rhythm on EKG",
+      "Safe discharge: med reconciliation, renal dosing + digoxin-level monitoring, diuretic re-titration with electrolyte checks, family education, cardiology + PCP follow-up"
+    ],
+    "criticalHistoryItems": [],
+    "criticalExamItems": [
+      "assess_mental_status",
+      "assess_motor_strength",
+      "auscultate_mitral_area"
+    ],
+    "criticalWorkupItems": [
+      "Serum digoxin level",
+      "BMP (potassium, creatinine/renal function, sodium)"
+    ],
+    "criticalInterpretationItems": [
+      "Digoxin toxicity: regularized/junctional rhythm with scooped ST depression and frequent PVCs.",
+      "Stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema (excludes pneumonia/decompensated heart failure as the source)."
+    ],
+    "criticalManagementItems": [
+      "Hold digoxin AND furosemide",
+      "Continuous telemetry / consider ICU for the toxic rhythm on EKG",
+      "Safe discharge: med reconciliation, renal dosing + digoxin-level monitoring, diuretic re-titration with electrolyte checks, family education, cardiology + PCP follow-up"
+    ],
+    "keyImageInterpretationFindings": [
+      "Digoxin toxicity: regularized/junctional rhythm with scooped ST depression and frequent PVCs.",
+      "Stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema (excludes pneumonia/decompensated heart failure as the source)."
+    ],
+    "criticalImageInterpretationFindings": [
+      "Digoxin toxicity: regularized/junctional rhythm with scooped ST depression and frequent PVCs.",
+      "Stable mild cardiomegaly without acute consolidation, effusion, or florid pulmonary edema (excludes pneumonia/decompensated heart failure as the source)."
+    ],
+    "imageInterpretationPearls": [
+      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
+      "Read every study systematically before committing.",
+      "State pertinent negatives, not just positives."
+    ]
+  },
+  "communicationScoring": {
+    "maxPoints": 5,
+    "items": [
+      {
+        "item": "Uses an open-ended opening question with the son (informant)",
+        "points": 1
+      },
+      {
+        "item": "Shows empathy for the son's and patient's concern",
+        "points": 1
+      },
+      {
+        "item": "Asks permission before sensitive questions",
+        "points": 1
+      },
+      {
+        "item": "Explains next steps in patient/family-friendly language",
+        "points": 1
+      },
+      {
+        "item": "Checks understanding",
+        "points": 1
+      }
+    ]
+  },
+  "libraryUpgrade": {
+    "schemaVersion": "2.1",
+    "appliedOn": "2026-06-14",
+    "imagePolicy": "pathology-forward standalone interpretation",
+    "ekgReplaced": true,
+    "cxrReplaced": false,
+    "backwardCompatible": true
+  }
+}

@@ -2,69 +2,74 @@
   "id": "ams-05",
   "category": "Altered Mental Status",
   "difficulty": "hard",
-  "title": "Confusion, nausea, and a recent medication change",
+  "title": "Confusion and nausea in an older woman on several new medications",
   "diagnosis": "Severe hyponatremia",
   "chart": {
-    "ageSex": "65F",
+    "ageSex": "68F",
     "cc": "Confusion and nausea",
-    "oneLiner": "65F presents with 2 days of worsening confusion, headache, and nausea, a few weeks after starting a new blood-pressure medication.",
+    "oneLiner": "68F with hypertension, depression, and osteoarthritis presents with 3 days of worsening confusion, headache, nausea, and unsteadiness, on a background of several recent medication changes.",
     "vitals": {
-      "BP": "128/78",
-      "HR": "88",
+      "BP": "108/66",
+      "HR": "92",
       "RR": "16",
-      "Temp": "36.9°C",
+      "Temp": "36.8°C",
       "SpO2": "98% RA"
     },
     "timer": 180
   },
-  "opening": "My head hurts and I feel sick… and I'm a bit muddled.",
-  "patientFile": "PERSONA: 65-year-old woman, mildly confused, nauseated, slowed. Partial historian.\n\nCOLLATERAL (provide ONLY if the student asks family/chart/medication list): Over 2 days she's become confused with headache and nausea; one episode of vomiting. A thiazide diuretic (hydrochlorothiazide) was started ~3 weeks ago for blood pressure. She has been drinking a lot of water and tea. No seizures yet (a severe drop could cause one). No diarrhea, no diuretic abuse. MEDS: hydrochlorothiazide (new), amlodipine.\n\nHPI (from patient — limited): headache, nausea, foggy. Denies focal weakness.\nPMH: hypertension. SOCIAL: lives with spouse, social drinker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mildly confused, slowed responses, looks roughly euvolemic to mildly hypovolemic.\n- Vitals: BP 128/78, HR 88, RR 16, 36.9°C, SpO2 98% RA.\n- Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.\n- Volume: mucous membranes slightly dry; JVP low-normal.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis.\n- The patient is confused: brief vague answers. Provide COLLATERAL (new thiazide, high water intake) only when explicitly asked about medications/recent changes/what happened.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My head hurts and I feel sick to my stomach… and my daughter says I've been all muddled.",
+  "patientFile": "PERSONA: 68-year-old woman, mildly confused, nauseated, slowed. Partial historian — answers briefly and vaguely; her adult daughter is at the bedside and can fill in the collateral when the student asks.\n\nHPI (from the patient — limited): pounding headache, nausea, feels foggy and 'off.' Reports the room feels unsteady when she walks. Denies focal weakness, chest pain, or shortness of breath. Cannot give a clear timeline herself.\n\nCOLLATERAL (from the daughter — provide ONLY if the student asks family/chart/what happened/medication list): Over about 3 days mom has become progressively confused with a headache and nausea; she vomited once this morning. About 4 weeks ago her primary doctor added a water pill (hydrochlorothiazide) for her blood pressure. About 3 weeks ago her dose of sertraline was increased for low mood. She has been drinking lots of water, herbal tea, and 'diet' drinks because she felt thirsty and queasy. No falls with head injury, no fevers, no cough, no urinary burning. No seizures witnessed (a severe drop could cause one). No diarrhea, no laxative or diuretic misuse. She has NOT had any weight loss, night sweats, or known cancer; she quit smoking 15 years ago after ~20 pack-years.\n\nPMH: hypertension; major depressive disorder; osteoarthritis of the knees; mild chronic kidney disease (baseline creatinine ~0.9). SOCIAL: lives with her daughter; 1-2 glasses of wine on weekends; former smoker (~20 pack-years, quit 15 years ago). FAMILY: mother had a stroke in her 70s; no known familial sudden cardiac death. ROS: headache, nausea, one episode of vomiting, gait unsteadiness; otherwise negative as above.\n\nMEDS (reveal when asked about medications/recent changes): hydrochlorothiazide 25 mg daily (STARTED ~4 weeks ago); sertraline (dose INCREASED ~3 weeks ago); amlodipine 5 mg daily; ibuprofen 400 mg a few times a week for knee pain; omeprazole 20 mg daily; occasional acetaminophen. No anticoagulants, no recent antibiotics. ALLERGIES: none.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: mildly confused, slowed responses; looks roughly euvolemic to mildly hypovolemic; in no acute distress.\n- Vitals: BP 108/66, HR 92, RR 16, 36.8°C, SpO2 98% RA. Orthostatic vitals if checked: HR rises ~16 bpm and BP drops ~14 mmHg systolic on standing, with lightheadedness (suggests mild volume depletion).\n- Mucous membranes: slightly dry. Skin turgor: mildly reduced.\n- Neck/JVP: JVP low-normal (flat at 30°).\n- Neuro: disoriented to date and place, attention impaired; NO focal motor deficit, NO pronator drift; no neck stiffness; gait unsteady and cautious if tested. Reflexes normal.\n- Cardiac/lungs: regular rhythm, no murmur; lungs clear. No peripheral edema.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis or the name of any electrolyte problem.\n- The patient is confused: give brief, vague answers. Provide COLLATERAL (new thiazide, increased sertraline, high free-water intake, mild CKD) only when explicitly asked about medications, recent changes, dietary/fluid intake, or what happened — and frame it as the daughter speaking.\n- Reveal exam findings (orthostatics, dry membranes, low JVP, gait) only when that specific maneuver is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Glucose": "Fingerstick glucose 102 — normal.",
-      "BMP": "Na 112 mmol/L (severe), K 3.4, Cl 78, HCO3 26, BUN 12, Cr 0.7, Glu 102.",
-      "SerumOsm": "Low serum osmolality (~240) — true hypotonic hyponatremia.",
-      "UrineStudies": "Urine osmolality elevated; urine sodium elevated — consistent with thiazide effect.",
-      "Endocrine": "TSH normal; AM cortisol normal."
+      "Glucose": "Fingerstick glucose 98 mg/dL — normal; excludes hypoglycemia as the cause of confusion.",
+      "BMP": "Na 110 mmol/L (critically low), K 2.9 mmol/L (low), Cl 70 mmol/L, HCO3 30 mmol/L (mildly elevated), BUN 24, Cr 1.3 (up from baseline ~0.9 → mild AKI), Glu 98. Anion gap = Na − (Cl + HCO3) = 110 − (70 + 30) = 10 → NORMAL anion gap; the picture is hyponatremia + hypokalemia + a contraction (hypochloremic, hypokalemic) metabolic alkalosis with a mild prerenal AKI — a classic thiazide signature, NOT an anion-gap acidosis.",
+      "Magnesium": "Mg 1.3 mg/dL (low) — concurrent thiazide-associated hypomagnesemia; compounds the hypokalemia and the QT prolongation.",
+      "SerumOsm": "Serum osmolality 232 mOsm/kg (low) — confirms TRUE hypotonic hyponatremia (measured value tracks 2×Na + BUN/2.8 + glucose/18 ≈ 2×110 + 24/2.8 + 98/18 ≈ 234). Pseudohyponatremia and hyperglycemic/translocational causes are excluded.",
+      "UrineStudies": "Urine osmolality 410 mOsm/kg (inappropriately concentrated) and urine sodium 48 mmol/L. In a patient on a thiazide these are NOT reliable to separate SIADH from thiazide effect (the thiazide raises urine Na and impairs dilution), so they cannot by themselves confirm SIADH.",
+      "Endocrine": "TSH normal and AM cortisol normal — exclude hypothyroidism and adrenal insufficiency as drivers of the hyponatremia."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
+      "litflStudyN": 6,
+      "integrated": true,
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Markedly prolonged QTc (~520 ms) with broad T waves.",
-      "verify": "Source a study matching: Markedly prolonged QTc (~520 ms) with broad T waves. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Sinus rhythm with flattened T waves, prominent U waves, and a long QU/apparent QT — the hypokalemia/hypomagnesemia pattern; QT-with-U measures ~520 ms, a torsades de pointes substrate.",
+      "verify": "Source a study matching: flattened T waves with prominent U waves and a long QT/QU from hypokalemia and hypomagnesemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing long QT interval",
+      "imageDescription": "12-lead showing flattened T waves, prominent U waves, and a long QT/QU interval of hypokalemia",
       "searchTerms": [
-        "long QT interval ECG",
-        "prolonged QTc 12 lead"
+        "hypokalemia U waves ECG",
+        "long QT hypokalemia hypomagnesemia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 64-year-old woman presents with confusion, nausea, and unsteadiness, and her tracing shows a markedly prolonged QT."
+      "clinicalVignette": "A 68-year-old woman on a recently started thiazide presents confused and unsteady; her tracing shows flattened T waves, prominent U waves, and a long QT."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here.",
+      "findings": "Clear — obtained to screen for an SIADH source (e.g., lung malignancy or pneumonia) given her former smoking; no mass, infiltrate, or effusion seen.",
       "verify": "Pick a CC normal PA chest film.",
       "assetNeeded": true,
-      "imageDescription": "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here.",
+      "imageDescription": "Clear PA chest radiograph; no mass, infiltrate, or effusion",
       "searchTerms": [
-        "chest radiograph Clear obtained screen SIADH"
+        "normal PA chest x-ray",
+        "clear chest radiograph no mass"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 64-year-old woman presents confused, and a film is obtained to screen for an occult lung source of her sodium derangement."
+      "clinicalVignette": "A 68-year-old former smoker presents confused, and a film is obtained to screen for an occult lung source of her sodium derangement."
     }
   },
   "revealKeys": [
     "Glucose",
     "BMP",
+    "Magnesium",
     "SerumOsm",
     "UrineStudies",
     "Endocrine",
@@ -81,15 +86,15 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your assessment, list your differential for this confusion (note your leading diagnosis).",
-      "rubric": "Symptomatic severe hyponatremia (leading,7). Hypoglycemia (CANT-MISS to exclude,3). Intracranial process / stroke (CANT-MISS,3). Other electrolyte/metabolic (core,3). Infection (core,2). For the hyponatremia itself: thiazide-induced vs SIADH vs hypovolemic (core,5). Named leading dx w/ justification — new thiazide, high water intake, neuro symptoms (core,2).",
-      "idealAnswer": "Leading diagnosis: Symptomatic severe hyponatremia. Must-not-miss diagnoses to exclude: Hypoglycemia; Intracranial process / stroke. Also reasonable: Other electrolyte/metabolic; Infection; For the hyponatremia itself: thiazide-induced vs SIADH vs hypovolemic.",
+      "prompt": "Based on your history and exam, list your differential for this confusion (note your leading diagnosis). Then, for the sodium problem itself, name THREE distinct etiologies/mechanisms you must distinguish between in THIS patient.",
+      "rubric": "Symptomatic severe hyponatremia (leading,5). Hypoglycemia — must-not-miss to exclude (CANT-MISS,3). Intracranial process / stroke — must-not-miss given headache + AMS (CANT-MISS,3). Names THREE mechanisms of the hyponatremia: thiazide-induced; SIADH (incl. SSRI-associated / occult lung source); hypovolemic / primary polydipsia from high free-water intake (core, 6 = 2 each). Other electrolyte/metabolic contributors — hypokalemia/hypomagnesemia (core,2). Infection / sepsis (core,1). Named leading dx w/ justification — new thiazide + uptitrated SSRI, high free-water intake, low osm, neuro symptoms (core,2). PENALTY: anchoring on 'just dehydration' or 'just SIADH' without separating the thiazide and free-water contributions (-2).",
+      "idealAnswer": "Leading diagnosis: Symptomatic severe hypotonic hyponatremia. Must-not-miss diagnoses to exclude first: Hypoglycemia and an Intracranial process / stroke (she has headache, confusion, and unsteadiness). Three distinct mechanisms of the hyponatremia to distinguish in HER: (1) Thiazide-induced (HCTZ started ~4 weeks ago — impairs urinary dilution and causes volume contraction); (2) SIADH (her sertraline was just uptitrated, an SSRI cause, and she is a former smoker so an occult lung source must be screened); (3) Hypovolemic / free-water excess — mild volume depletion plus a large intake of water, tea, and diet drinks. Also reasonable: concurrent hypokalemia/hypomagnesemia as separate problems, and infection. Justify the lead with the new thiazide, the uptitrated SSRI, the heavy free-water intake, the low serum osmolality, and the neurologic symptoms.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Symptomatic severe hyponatremia",
-            "points": 7
+            "points": 5
           },
           {
             "item": "Hypoglycemia",
@@ -102,33 +107,48 @@
         ],
         "coreActions": [
           {
-            "item": "Other electrolyte/metabolic",
-            "points": 3
-          },
-          {
-            "item": "Infection",
+            "item": "Mechanism 1 — thiazide-induced hyponatremia",
             "points": 2
           },
           {
-            "item": "For the hyponatremia itself: thiazide-induced vs SIADH vs hypovolemic",
-            "points": 5
+            "item": "Mechanism 2 — SIADH (SSRI-associated / occult lung source)",
+            "points": 2
           },
           {
-            "item": "Named leading dx w/ justification — new thiazide, high water intake, neuro symptoms",
+            "item": "Mechanism 3 — hypovolemic / free-water excess (polydipsia)",
+            "points": 2
+          },
+          {
+            "item": "Other electrolyte/metabolic contributors — hypokalemia/hypomagnesemia",
+            "points": 2
+          },
+          {
+            "item": "Infection / sepsis",
+            "points": 1
+          },
+          {
+            "item": "Named leading dx w/ justification — new thiazide, uptitrated SSRI, high free-water intake, neuro symptoms",
             "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchoring on 'just dehydration' or 'just SIADH' without separating the thiazide and free-water contributions",
+            "points": -2
+          }
+        ]
       },
       "mustNotMiss": [
         "Hypoglycemia",
         "Intracranial process / stroke"
       ],
       "acceptableAlternatives": [
-        "Other electrolyte/metabolic",
-        "Infection",
-        "For the hyponatremia itself: thiazide-induced vs SIADH vs hypovolemic"
+        "Thiazide-induced hyponatremia",
+        "SIADH (SSRI-associated / occult lung source)",
+        "Hypovolemic / free-water excess (polydipsia)",
+        "Other electrolyte/metabolic contributors — hypokalemia/hypomagnesemia",
+        "Infection / sepsis"
       ]
     },
     {
@@ -137,8 +157,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Glucose (CANT-MISS,2). BMP/serum sodium (CANT-MISS,3). Serum osmolality (3). Urine osmolality + urine sodium to classify (3). Volume-status assessment (2). TSH and cortisol (1). Review medications (thiazide) (1). PENALTY: ordering nothing to classify the hyponatremia before treating (-2).",
-      "idealAnswer": "Order: EKG; CXR; Glucose; BMP; Serum osmolality; Urine studies; Endocrine workup.",
+      "rubric": "Glucose (CANT-MISS,2). BMP/serum sodium (CANT-MISS,3). Serum osmolality to confirm true hypotonic hyponatremia (2). Urine osmolality + urine sodium to classify — noting they are LESS interpretable on a thiazide (2). Magnesium (and the rest of an electrolyte panel) (1). Volume-status assessment incl. orthostatics (1). TSH and cortisol (1). EKG to look for hypokalemia/QT changes (1). CXR to screen for an SIADH source (1). Review medications — thiazide + SSRI (1). PENALTY: ordering nothing to classify the hyponatremia before treating (-2); CT head as the FIRST and only step while ignoring an immediate sodium (-1).",
+      "idealAnswer": "Order: fingerstick Glucose; BMP/serum sodium STAT; serum osmolality; urine osmolality and urine sodium (interpreted cautiously because she is on a thiazide); Magnesium (and recheck K); assess volume status including orthostatic vitals; TSH and AM cortisol; an EKG to look for hypokalemia/QT changes; a CXR to screen for an occult SIADH source given former smoking; and a careful medication review (HCTZ, uptitrated sertraline, ibuprofen). A CT head is reasonable to exclude an intracranial cause but must not delay the sodium and glucose.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -153,24 +173,36 @@
         ],
         "coreActions": [
           {
-            "item": "EKG",
-            "points": 2
-          },
-          {
-            "item": "CXR",
-            "points": 2
-          },
-          {
             "item": "Serum osmolality",
             "points": 2
           },
           {
-            "item": "Urine studies",
+            "item": "Urine studies (osmolality + sodium)",
             "points": 2
           },
           {
-            "item": "Endocrine workup",
-            "points": 2
+            "item": "Magnesium / extended electrolytes",
+            "points": 1
+          },
+          {
+            "item": "EKG",
+            "points": 1
+          },
+          {
+            "item": "CXR",
+            "points": 1
+          },
+          {
+            "item": "Endocrine workup (TSH, cortisol)",
+            "points": 1
+          },
+          {
+            "item": "Volume-status assessment / orthostatics",
+            "points": 1
+          },
+          {
+            "item": "Medication review (thiazide + SSRI)",
+            "points": 1
           }
         ],
         "bonusActions": [],
@@ -178,6 +210,10 @@
           {
             "item": "ordering nothing to classify the hyponatremia before treating",
             "points": -2
+          },
+          {
+            "item": "CT head as the first and only step while ignoring an immediate sodium",
+            "points": -1
           }
         ]
       },
@@ -185,7 +221,16 @@
         "Glucose",
         "BMP/serum sodium"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Serum osmolality",
+        "Urine studies (osmolality + sodium)",
+        "Magnesium / extended electrolytes",
+        "EKG",
+        "CXR",
+        "Endocrine workup (TSH, cortisol)",
+        "Volume-status assessment / orthostatics",
+        "Medication review (thiazide + SSRI)"
+      ],
       "contraindicatedTests": [
         "ordering nothing to classify the hyponatremia before treating"
       ],
@@ -199,33 +244,34 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = markedly prolonged QTc. CREDIT: measures and corrects the QT, recognizing a markedly prolonged QTc (~520 ms) (8); identifies it as a torsades de pointes substrate (5); systematic read (2). PENALTY: calling the tracing normal / missing the prolonged QT (-3).",
+      "prompt": "Here is the patient's OWN 12-lead EKG. Describe your findings and state how they fit the clinical picture.",
+      "rubric": "Findings = the EKG of hypokalemia/hypomagnesemia: flattened T waves, prominent U waves, and a long QT/QU (~520 ms) — a torsades de pointes substrate. CREDIT: recognizes flattened T waves with prominent U waves as the hypokalemia pattern (5); measures the QT/QU and identifies a markedly prolonged interval (~520 ms), being careful NOT to mis-include the U wave when correcting (4); names the combined hypokalemia + hypomagnesemia as a TORSADES substrate that mandates aggressive K and Mg repletion and telemetry (4); systematic read with no acute ischemia (2). PENALTY: calling the tracing normal / missing the prolonged QT and U waves (-3).",
       "keyFindings": [
-        "measures and corrects the QT (QTc)",
-        "recognizes prolonged QTc as a torsades risk"
+        "flattened T waves with prominent U waves (hypokalemia pattern)",
+        "long QT/QU (~520 ms) — torsades de pointes substrate"
       ],
       "criticalFindings": [
-        "Prolonged QTc (~520 ms)."
+        "Flattened T waves with prominent U waves and a long QT/QU (~520 ms) from hypokalemia and hypomagnesemia — a torsades de pointes substrate."
       ],
       "commonMistakes": [
-        "not correcting QT for rate",
-        "including the U wave and over/under-measuring"
+        "mistaking the U wave for a normal T wave and under-reading the QT",
+        "including the U wave when measuring/correcting the QT",
+        "calling the tracing normal"
       ],
-      "idealAnswer": "Prolonged QT interval (QTc ~520 ms) — a substrate for torsades de pointes.",
+      "idealAnswer": "Sinus rhythm with flattened T waves, prominent U waves, and a markedly long QT/QU (~520 ms) — the electrocardiographic signature of hypokalemia compounded by hypomagnesemia. No acute ischemic ST changes. This is a torsades de pointes substrate: it ties the EKG directly to her thiazide-driven hypokalemia (K 2.9) and hypomagnesemia (Mg 1.3) and mandates urgent potassium and magnesium repletion with continuous telemetry.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Prolonged QTc (~520 ms)."
+          "Flattened T waves with prominent U waves and a long QT/QU (~520 ms) from hypokalemia and hypomagnesemia — a torsades de pointes substrate."
         ],
         "coreActions": [
-          "measures and corrects the QT (QTc)",
-          "recognizes prolonged QTc as a torsades risk"
+          "flattened T waves with prominent U waves (hypokalemia pattern)",
+          "long QT/QU (~520 ms) — torsades de pointes substrate that mandates K and Mg repletion"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the prolonged QT and U waves",
             "points": -3
           }
         ]
@@ -238,29 +284,29 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear film. CREDIT: identifies a normal film (6); notes it screens for an SIADH source such as a lung mass or pneumonia (4). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = clear film. CREDIT: identifies a normal film with no mass, infiltrate, or effusion (6); states it was obtained to screen for an occult SIADH source (lung malignancy/pneumonia) given her former smoking, and that a clear film makes an occult lung-driven SIADH less likely (4). PENALTY: inventing pathology (-2).",
       "keyFindings": [
-        "identifies a normal film",
-        "notes it screens for an SIADH source such as a lung mass or pneumonia"
+        "clear film, no mass/infiltrate/effusion",
+        "screens for an occult SIADH source (lung malignancy/pneumonia)"
       ],
       "criticalFindings": [
-        "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here."
+        "Clear film with no mass, infiltrate, or effusion — obtained to screen for an occult SIADH source (lung malignancy/pneumonia) in a former smoker; none seen, which lowers a lung-driven SIADH."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing an infiltrate or mass on a clear film"
       ],
-      "idealAnswer": "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here.",
+      "idealAnswer": "Clear lung fields with no mass, infiltrate, or effusion and a normal cardiomediastinal silhouette. It was obtained to screen for an occult SIADH source (lung malignancy or pneumonia) given her former smoking; a clear film makes a lung-driven SIADH less likely and supports the thiazide-and-free-water explanation.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
           {
-            "item": "Recognizes a clear film, obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here.",
+            "item": "Recognizes a clear film with no mass/infiltrate/effusion, obtained to screen for an occult SIADH source",
             "points": 6
           }
         ],
         "coreActions": [
           {
-            "item": "notes it screens for an SIADH source such as a lung mass or pneumonia",
+            "item": "notes it screens for an SIADH source such as a lung mass or pneumonia and that a clear film lowers a lung-driven SIADH",
             "points": 4
           }
         ],
@@ -277,9 +323,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Na is 112 with low serum osm and elevated urine osm/Na after a new thiazide. What is your diagnosis and what is the major treatment hazard?",
-      "rubric": "Severe, symptomatic, thiazide-associated hypotonic hyponatremia (6). Identifies the danger of OVER-rapid correction causing osmotic demyelination (4).",
-      "idealAnswer": "Severe, symptomatic, thiazide-associated hypotonic hyponatremia (Na 112 with low serum osm and inappropriately elevated urine osm/Na). The major treatment hazard is over-rapid correction, which can cause osmotic demyelination syndrome; limit the rise to roughly 6–8 mEq/L per 24 hours.",
+      "prompt": "Na is 110 with a low serum osm, K 2.9, Mg 1.3, a mild contraction alkalosis, and a small AKI, ~4 weeks after a new thiazide and ~3 weeks after an SSRI uptitration; urine osm/Na are 'inappropriately' elevated and the EKG shows U waves with a long QT. Commit to a diagnosis, name the discriminating test that resolves thiazide vs SIADH, and state the major treatment hazard.",
+      "rubric": "Severe, symptomatic, thiazide-associated hypotonic hyponatremia with concurrent hypokalemia/hypomagnesemia and a mild contraction alkalosis (commit, 5). Recognizes that urine osm/Na cannot separate thiazide from SIADH WHILE on the drug, so the discriminating step is to stop the thiazide (and reassess the SSRI), correct volume/electrolytes, and recheck — true SIADH would persist after the thiazide is removed and volume is restored (3). Identifies the major hazard: OVER-rapid correction causing osmotic demyelination, with extra risk here because of hypokalemia, malnutrition risk, and the fall in ADH once the thiazide and hypovolemia are corrected (2).",
+      "idealAnswer": "Commit to severe, symptomatic, THIAZIDE-ASSOCIATED hypotonic hyponatremia (Na 110, serum osm 232) with concurrent hypokalemia (K 2.9), hypomagnesemia (Mg 1.3), and a mild hypochloremic contraction alkalosis — exactly the thiazide signature — superimposed on heavy free-water intake; the uptitrated SSRI and former smoking kept SIADH on the differential. The urine osmolality and urine sodium are NOT discriminating while she remains on the thiazide, so the resolving test is to STOP the thiazide, hold/reassess the sertraline, restore volume and repletion, and RECHECK: thiazide-and-volume hyponatremia corrects, whereas true SIADH would persist. The major treatment hazard is OVER-rapid sodium correction causing osmotic demyelination syndrome — and she is high-risk because correcting the volume depletion and stopping the thiazide will switch off ADH and trigger a brisk aquaresis; limit the rise to roughly 6–8 mEq/L per 24 h and watch for autocorrection.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -292,32 +338,36 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH sodium disorders: 3% hypertonic saline 100 mL bolus for severe symptoms (CANT-MISS,7); limit correction to 6-8 mEq/L per 24 h, avoid ODS (CANT-MISS,6); frequent Na monitoring q2-4h (4); treat underlying cause by volume status (3); DDAVP clamp / relower if overcorrecting (3); nephrology consult for 3% saline (2). PENALTY: overcorrecting >8 mEq/24h / rapid correction (-4); fluid-restricting a seizing patient instead of hypertonic saline (-2).",
-      "idealAnswer": "Severe symptomatic hyponatremia (seizure/AMS): 3% hypertonic saline 100 mL bolus over 10 min, repeat up to 3× until symptoms resolve or Na rises 4–6. Correct no faster than 6–8 mEq/L per 24 h to avoid osmotic demyelination; check Na q2–4h. Treat the underlying cause by volume status (SIADH vs hypovolemia). Use a DDAVP clamp if overcorrecting. Nephrology consult for 3% saline.",
+      "prompt": "What is your management plan, including how you will use the EKG findings, where this patient should be monitored, and your criteria for safe discharge?",
+      "rubric": "Per MGH sodium disorders: 3% hypertonic saline 100 mL bolus for severe symptoms (CANT-MISS,6); limit correction to 6-8 mEq/L per 24 h and avoid ODS, anticipating autocorrection after stopping the thiazide/restoring volume (CANT-MISS,5); repkete K and Mg aggressively and treat the long-QT/torsades substrate seen on the integrated EKG, on telemetry (4); STOP the thiazide and hold/reassess the SSRI; frequent Na monitoring q2-4h (3); treat underlying cause by volume status and use a DDAVP clamp / re-lower if overcorrecting (2); admit to a monitored/step-down bed, NOT discharge while Na 110 and symptomatic — define safe-discharge criteria: sodium safely corrected and stable off the offending drugs, QT normalized, mentation back to baseline, med reconciliation done, and close PCP follow-up with a repeat BMP arranged (3); nephrology consult for 3% saline (bonus,2). PENALTY: overcorrecting >8 mEq/24h / rapid correction (-4); discharging a symptomatic patient with Na 110 (-3); repleting sodium while ignoring the K/Mg and the QT (-2).",
+      "idealAnswer": "Severe symptomatic hyponatremia (AMS): give 3% hypertonic saline 100 mL IV over ~10 min, repeat up to 3× until symptoms improve or Na rises 4-6 mEq/L. Cap the total rise at 6-8 mEq/L per 24 h to avoid osmotic demyelination, and ANTICIPATE autocorrection — once the thiazide is stopped and volume is restored, ADH falls and a brisk water diuresis can overshoot; use a DDAVP clamp and/or re-lower with D5W if correcting too fast. Use the integrated EKG: the U waves and long QT (~520 ms) reflect the hypokalemia (K 2.9) and hypomagnesemia (Mg 1.3), a torsades substrate — replete potassium and magnesium aggressively (magnesium first, as it is needed to correct the potassium) on continuous telemetry. STOP the hydrochlorothiazide and hold/reassess the sertraline. Check Na q2-4h. Treat the underlying cause by volume status. Disposition: admit to a monitored/step-down (or ICU) bed for 3% saline and telemetry — do NOT discharge a confused patient with Na 110. Safe-discharge criteria: sodium safely and steadily corrected off the offending drugs, potassium/magnesium and QT normalized, mentation returned to baseline, formal medication reconciliation (off the thiazide, with an alternative antihypertensive plan and SSRI review), caregiver/daughter education on fluid intake and warning signs, and close PCP follow-up with a repeat BMP within a few days. Nephrology consult for the 3% saline.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "3% hypertonic saline for severe symptoms",
-            "points": 7
+            "points": 6
           },
           {
-            "item": "Limit sodium correction rate (avoid ODS)",
-            "points": 6
+            "item": "Limit sodium correction rate and anticipate autocorrection (avoid ODS)",
+            "points": 5
           }
         ],
         "coreActions": [
           {
-            "item": "Frequent sodium monitoring",
+            "item": "Replete K and Mg and treat the long-QT/torsades substrate on telemetry",
             "points": 4
           },
           {
-            "item": "Treat underlying cause by volume status",
+            "item": "Stop the thiazide and hold/reassess the SSRI; frequent sodium monitoring",
             "points": 3
           },
           {
-            "item": "DDAVP clamp / relower if overcorrecting",
+            "item": "Treat underlying cause by volume status; DDAVP clamp / re-lower if overcorrecting",
+            "points": 2
+          },
+          {
+            "item": "Admit to a monitored bed and arrange safe discharge — Na corrected and stable off offending drugs, QT normalized, mentation at baseline, med reconciliation, caregiver education, close PCP follow-up with repeat BMP",
             "points": 3
           }
         ],
@@ -331,26 +381,36 @@
           {
             "item": "Overcorrecting sodium too fast",
             "points": -4
+          },
+          {
+            "item": "Discharging a symptomatic patient with Na 110",
+            "points": -3
+          },
+          {
+            "item": "Repleting sodium while ignoring the K/Mg and the QT",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
         "3% hypertonic saline for severe symptoms",
-        "Limit sodium correction rate (avoid ODS)"
+        "Limit sodium correction rate and anticipate autocorrection (avoid ODS)"
       ],
       "optionalActions": [
-        "Frequent sodium monitoring",
-        "Treat underlying cause by volume status",
-        "DDAVP clamp / relower if overcorrecting",
+        "Replete K and Mg and treat the long-QT/torsades substrate on telemetry",
+        "Stop the thiazide and hold/reassess the SSRI; frequent sodium monitoring",
+        "Treat underlying cause by volume status; DDAVP clamp / re-lower if overcorrecting",
+        "Admit to a monitored bed and arrange safe discharge — Na corrected and stable off offending drugs, QT normalized, mentation at baseline, med reconciliation, caregiver education, close PCP follow-up with repeat BMP",
         "Nephrology consult"
       ],
       "unsafeActions": [
-        "Overcorrecting sodium too fast"
+        "Overcorrecting sodium too fast",
+        "Discharging a symptomatic patient with Na 110"
       ],
       "consults": [
         "Nephrology"
       ],
-      "disposition": "Admit; ICU/step-down for 3% saline",
+      "disposition": "Admit; ICU/step-down for 3% saline and telemetry",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Sodium Disorders (Hyponatremia)",
@@ -365,14 +425,16 @@
     "verbosity": "very brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "alcohol_use"
+      "alcohol_use",
+      "mood_depression"
     ],
-    "communicationStyle": "confused; gives limited, vague answers and needs collateral",
-    "affect": "65-year-old woman, mildly confused, nauseated, slowed. Partial historian.",
+    "communicationStyle": "confused; gives limited, vague answers; defers to her daughter at the bedside for collateral",
+    "affect": "68-year-old woman, mildly confused, nauseated, slowed. Partial historian with her daughter present.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
-      "Do not mention or hint at the diagnosis",
+      "Do not reveal sensitive history (alcohol, mood) unless directly asked",
+      "Do not mention or hint at the diagnosis or any electrolyte problem",
       "Do not volunteer hidden exam or diagnostic findings",
+      "Provide medication and fluid-intake collateral only when asked, framed as the daughter speaking",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -389,7 +451,58 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications_recent_changes",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "drugs you take",
+        "recent medication change",
+        "new medication",
+        "water pill",
+        "diuretic",
+        "antidepressant",
+        "sertraline",
+        "hydrochlorothiazide"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language as the daughter.]",
+      "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "fluid_intake",
+      "category": "hpi",
+      "triggerConcepts": [
+        "how much are you drinking",
+        "water intake",
+        "fluid intake",
+        "drinking a lot of water",
+        "diet",
+        "what have you been eating or drinking"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "mood_depression",
+      "category": "psych",
+      "triggerConcepts": [
+        "mood",
+        "depression",
+        "feeling down",
+        "are you sad",
+        "psychiatric history"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -439,7 +552,10 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "seizure",
+        "weakness",
+        "vomiting"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -466,20 +582,8 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "kidney"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -502,8 +606,29 @@
   ],
   "physicalExamMappings": [
     {
-      "id": "assess_jvp_finding_1",
-      "finding": "Volume: mucous membranes slightly dry; JVP low-normal.",
+      "id": "obtain_orthostatic_vitals_finding_1",
+      "finding": "Orthostatic vitals: HR rises ~16 bpm and systolic BP drops ~14 mmHg on standing with lightheadedness — suggests mild volume depletion (favors a hypovolemic/thiazide contribution over euvolemic SIADH).",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "critical",
+      "points": 5,
+      "normalIfNotPresent": "No orthostatic change."
+    },
+    {
+      "id": "assess_mucous_membranes_finding_2",
+      "finding": "Mucous membranes slightly dry; skin turgor mildly reduced — mild volume depletion.",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Moist mucous membranes, normal turgor."
+    },
+    {
+      "id": "assess_jvp_finding_3",
+      "finding": "JVP low-normal (flat at 30°) — not elevated; argues against a hypervolemic cause.",
       "revealedBy": [
         "assess_jvp"
       ],
@@ -512,8 +637,8 @@
       "normalIfNotPresent": "JVP not elevated."
     },
     {
-      "id": "assess_neck_stiffness_finding_2",
-      "finding": "Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.",
+      "id": "assess_neck_stiffness_finding_4",
+      "finding": "No neck stiffness; no meningismus.",
       "revealedBy": [
         "assess_neck_stiffness"
       ],
@@ -522,18 +647,8 @@
       "normalIfNotPresent": "No nuchal rigidity."
     },
     {
-      "id": "assess_gait_finding_3",
-      "finding": "Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.",
-      "revealedBy": [
-        "assess_gait"
-      ],
-      "importance": "core",
-      "points": 2,
-      "normalIfNotPresent": "Normal gait."
-    },
-    {
-      "id": "assess_motor_strength_finding_4",
-      "finding": "Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.",
+      "id": "assess_motor_strength_finding_5",
+      "finding": "Neuro: disoriented with impaired attention but NO focal motor deficit and NO pronator drift — argues against a focal stroke.",
       "revealedBy": [
         "assess_motor_strength",
         "assess_pronator_drift"
@@ -543,8 +658,18 @@
       "normalIfNotPresent": "No focal motor deficit."
     },
     {
-      "id": "assess_mental_status_finding_5",
-      "finding": "General: mildly confused, slowed responses, looks roughly euvolemic to mildly hypovolemic.",
+      "id": "assess_gait_finding_6",
+      "finding": "Gait unsteady and cautious if tested.",
+      "revealedBy": [
+        "assess_gait"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Normal gait."
+    },
+    {
+      "id": "assess_mental_status_finding_7",
+      "finding": "General: mildly confused, slowed responses, disoriented to date and place; looks roughly euvolemic to mildly hypovolemic.",
       "revealedBy": [
         "assess_mental_status"
       ],
@@ -563,39 +688,47 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Severe hyponatremia",
-    "diagnosticFramework": "65F presents with 2 days of worsening confusion, headache, and nausea, a few weeks after starting a new blood-pressure medication. The diagnosis is Severe hyponatremia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "68F with hypertension, depression, osteoarthritis, and mild CKD presents with 3 days of worsening confusion, headache, nausea, and unsteadiness on a background of several recent medication changes. The diagnosis is Severe hyponatremia — specifically severe, symptomatic, thiazide-associated hypotonic hyponatremia (Na 110, serum osm 232) with concurrent hypokalemia, hypomagnesemia, and a mild contraction alkalosis. It is reached by collateral history from her daughter (a thiazide started ~4 weeks ago, an SSRI uptitrated ~3 weeks ago, and heavy free-water intake), a volume-status exam, and a directed workup, while distinguishing the competing mechanisms (thiazide vs SSRI-associated SIADH vs hypovolemic/free-water excess) and excluding hypoglycemia and an intracranial process. The patient's own EKG shows the U waves and long QT of her hypokalemia/hypomagnesemia, a torsades substrate that must be repleted.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Volume: mucous membranes slightly dry; JVP low-normal.",
-      "Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.",
-      "Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.",
-      "Neuro: disoriented, no focal deficit, no neck stiffness; gait unsteady if tested.",
-      "General: mildly confused, slowed responses, looks roughly euvolemic to mildly hypovolemic."
+      "Orthostatic vitals: HR rises ~16 bpm and systolic BP drops ~14 mmHg on standing with lightheadedness — suggests mild volume depletion (favors a hypovolemic/thiazide contribution over euvolemic SIADH).",
+      "Mucous membranes slightly dry; skin turgor mildly reduced — mild volume depletion.",
+      "JVP low-normal (flat at 30°) — not elevated; argues against a hypervolemic cause.",
+      "No neck stiffness; no meningismus.",
+      "Neuro: disoriented with impaired attention but NO focal motor deficit and NO pronator drift — argues against a focal stroke.",
+      "Gait unsteady and cautious if tested.",
+      "General: mildly confused, slowed responses, disoriented to date and place; looks roughly euvolemic to mildly hypovolemic."
     ],
     "keyDiagnosticFindings": [
       "Glucose",
       "BMP",
+      "Magnesium",
       "SerumOsm",
       "UrineStudies",
       "Endocrine"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Severe hyponatremia while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Severe hyponatremia and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history via collateral from the daughter — recent thiazide, uptitrated SSRI, and high free-water intake — only on direct questioning.",
+      "Perform the targeted volume-status and neuro exam (orthostatics, membranes, JVP, focal deficit, neck stiffness) to reveal key findings.",
+      "Build a differential led by severe symptomatic hyponatremia while naming three competing mechanisms (thiazide, SIADH, hypovolemic/free-water) and excluding hypoglycemia and an intracranial process.",
+      "Order a focused workup (glucose, BMP, serum/urine osmolality, magnesium, endocrine, EKG, CXR) and interpret the integrated EKG (hypokalemia U waves with long QT), CXR, and the multi-system labs.",
+      "Commit to severe thiazide-associated hyponatremia, name the resolving test (stop the thiazide and recheck), and manage with 3% saline, controlled correction, K/Mg repletion, telemetry, drug discontinuation, monitored admission, and safe-discharge planning."
     ],
     "commonPitfalls": [
-      "Overcorrecting sodium too fast"
+      "Overcorrecting sodium too fast and causing osmotic demyelination",
+      "Anchoring on 'just dehydration' or 'just SIADH' without separating the thiazide and free-water contributions",
+      "Repleting sodium while ignoring the hypokalemia/hypomagnesemia and the long QT",
+      "Discharging a symptomatic patient with Na 110"
     ],
     "managementPearls": [
       "3% hypertonic saline for severe symptoms",
-      "Limit sodium correction rate (avoid ODS)"
+      "Limit sodium correction rate and anticipate autocorrection (avoid ODS)",
+      "Replete magnesium and potassium to treat the torsades substrate"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
+      "obtain_orthostatic_vitals",
       "assess_neck_stiffness"
     ],
     "criticalWorkupItems": [
@@ -603,25 +736,25 @@
       "BMP/serum sodium"
     ],
     "criticalInterpretationItems": [
-      "Prolonged QTc (~520 ms).",
-      "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here."
+      "Flattened T waves with prominent U waves and a long QT/QU (~520 ms) from hypokalemia and hypomagnesemia — a torsades de pointes substrate.",
+      "Clear film with no mass, infiltrate, or effusion — obtained to screen for an occult SIADH source (lung malignancy/pneumonia) in a former smoker; none seen, which lowers a lung-driven SIADH."
     ],
     "criticalManagementItems": [
       "3% hypertonic saline for severe symptoms",
-      "Limit sodium correction rate (avoid ODS)"
+      "Limit sodium correction rate and anticipate autocorrection (avoid ODS)"
     ],
     "keyImageInterpretationFindings": [
-      "Prolonged QTc (~520 ms).",
-      "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here."
+      "Flattened T waves with prominent U waves and a long QT/QU (~520 ms) from hypokalemia and hypomagnesemia — a torsades de pointes substrate.",
+      "Clear film with no mass, infiltrate, or effusion — obtained to screen for an occult SIADH source (lung malignancy/pneumonia); none seen."
     ],
     "criticalImageInterpretationFindings": [
-      "Prolonged QTc (~520 ms).",
-      "Clear — obtained to screen for an SIADH source (e.g., lung malignancy/pneumonia); none seen here."
+      "Flattened T waves with prominent U waves and a long QT/QU (~520 ms) from hypokalemia and hypomagnesemia — a torsades de pointes substrate.",
+      "Clear film with no mass, infiltrate, or effusion — obtained to screen for an occult SIADH source; none seen."
     ],
     "imageInterpretationPearls": [
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "On a hypokalemia tracing, do not mistake the U wave for the T wave or include it when correcting the QT.",
+      "State pertinent negatives — a clear chest film helps lower an occult lung-driven SIADH."
     ]
   },
   "communicationScoring": {
@@ -636,7 +769,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive questions and engages the daughter for collateral",
         "points": 1
       },
       {
@@ -651,8 +784,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG read",
     "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true

@@ -1,133 +1,157 @@
 {
   "id": "fever-02",
   "category": "Fever",
-  "difficulty": "easy",
-  "title": "Fever with a red, painful leg",
+  "difficulty": "hard",
+  "title": "Fever with a red, hot, painful lower leg in a diabetic on multiple medications",
   "diagnosis": "Cellulitis",
   "chart": {
-    "ageSex": "60M",
+    "ageSex": "64M",
     "cc": "Red, painful, swollen leg",
-    "oneLiner": "60M presents with 2 days of an expanding red, warm, painful area on the lower left leg, with fever.",
+    "oneLiner": "64M with type 2 diabetes, CHF, chronic venous insufficiency, gout, and AF on warfarin presents with 2 days of an expanding red, warm, painful area on the lower left leg with low-grade fever; he is on a thiazide, an ACE inhibitor, and allopurinol, and he stopped the allopurinol last week.",
     "vitals": {
-      "BP": "132/80",
-      "HR": "96",
+      "BP": "138/82",
+      "HR": "92",
       "RR": "16",
       "Temp": "38.3°C",
-      "SpO2": "98% RA"
+      "SpO2": "96% RA"
     },
     "timer": 180
   },
-  "opening": "My lower leg has gone red, hot, and painful, and it's been spreading.",
-  "patientFile": "PERSONA: 60-year-old man, uncomfortable, limping. Good historian.\n\nHPI: 2 days of an expanding area of redness, warmth, swelling, and pain over the left shin, with fever. A small cut/scratch from gardening a few days ago served as a portal of entry (only if asked). Has athlete's foot between the toes (only if asked/examined). NO severe pain out of proportion, NO skin necrosis/bullae, NO crepitus, NO rapidly advancing margins by the hour (these would suggest necrotizing infection).\nPMH: type 2 diabetes, venous insufficiency. MEDS: metformin. SOCIAL: nonsmoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable except for the leg.\n- Vitals: BP 132/80, HR 96, RR 16, 38.3°C, SpO2 98% RA.\n- Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO cord/severe calf tenderness (helps distinguish DVT).\n- Tinea/maceration between the toes if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gardening cut or athlete's foot unless asked about skin breaks/portal of entry or foot problems.\n- The absence of necrotizing features and the portal of entry are revealed only if examined/asked.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My lower leg has gone red, hot, and painful over the last couple of days, and the redness keeps creeping up.",
+  "patientFile": "PERSONA: 64-year-old man, uncomfortable, limping. Good historian, a little worried because he has had gout in this leg before and is not sure if this is 'the gout coming back' or something new.\n\nHPI: 2 days of an expanding area of redness, warmth, swelling, and pain over the left shin and calf, with subjective low-grade fever. The redness has a fairly defined upper edge that has been CREEPING UP the shin over the two days, not centered on a single joint. A small cut/scrape from catching his leg on a garden bed a few days ago is the likely portal of entry (only if asked). Has athlete's foot with cracked, macerated skin between the toes (only if asked/examined). Some baseline ankle/leg swelling from his heart and vein problems that is now worse and warmer on the left. NO severe pain out of proportion to exam, NO skin necrosis or blisters/bullae, NO crepitus or 'crackling', NO margins visibly advancing by the hour, NO black or dusky skin (these would suggest a necrotizing infection). He has NOT had the classic gout he gets in the big toe; this does not feel like his usual gout, which is a single hot swollen joint.\nGOUT/JOINT (reveal only when asked the relevant question): He has had gout flares before, usually the left big toe, very painful for a few days, helped by his pills. He stopped his allopurinol about a week ago because he ran out and did not refill it. This time the pain and redness are spread over the SHIN and CALF, not in one joint, and the ankle and toe joints themselves move okay and are not the worst spot.\nPMH: type 2 diabetes (on insulin + metformin), heart failure with reduced ejection fraction, atrial fibrillation, chronic venous insufficiency, gout, hypertension, prior stasis dermatitis. MEDS (reveal on med history): metformin; insulin glargine; lisinopril; hydrochlorothiazide; furosemide; metoprolol; warfarin (for AF); allopurinol (recently STOPPED, ran out ~1 week ago); occasional ibuprofen for joint aches; atorvastatin. ALLERGIES: none. SOCIAL: nonsmoker, rare alcohol, retired. FAMILY: noncontributory. ROS: low-grade fevers/chills; NO chest pain, NO worsening orthopnea today beyond baseline, NO calf pain at rest that is severe, NO recent long immobility or travel, NO prior DVT, NO weakness/numbness, NO palpitations or syncope.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: comfortable except for the leg; alert, oriented.\n- Vitals: BP 138/82, HR 92 (irregularly irregular), RR 16, 38.3°C, SpO2 96% RA.\n- Left lower leg: warm, erythematous, tender area over the shin and calf with a somewhat ill-defined but UPWARD-CREEPING upper border and mild-to-moderate non-pitting-over-pitting swelling; tender to touch diffusely over the red area; NO fluctuance or pointing abscess, NO crepitus, NO bullae or skin necrosis, NO dusky/black skin; calf soft, NO palpable cord, NO severe focal calf tenderness (helps distinguish DVT).\n- Joints: left ankle and first MTP (big-toe joint) move freely with NO joint-line warmth, effusion, or maximal tenderness AT the joint (argues against an acute gouty/septic joint as the driver); the tenderness is over the soft tissue, not the joint.\n- Skin: tinea with cracked, macerated skin between the left toes if examined; chronic venous stasis changes (hemosiderin/brawny skin) bilaterally at baseline.\n- Edema: chronic bilateral lower-leg edema, worse and warmer on the left.\n- Cardiac: irregularly irregular rhythm, no new murmur; JVP mildly elevated at baseline; lungs with trace bibasilar crackles at baseline.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the gardening cut, athlete's foot, the stopped allopurinol, or prior gout unless asked about skin breaks/portal of entry, foot problems, joint/gout history, or medications.\n- The absence of necrotizing features, the joint exam, and the portal of entry are revealed only if examined/asked.\n- Describe the rhythm as 'irregular' only if the pulse/heart is examined; do not announce 'atrial fibrillation'.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "CBC": "WBC 13.0 with neutrophilia.",
-      "BMP": "Glucose 180; renal function normal.",
-      "Lactate": "1.5 — normal (a high lactate/toxicity would raise concern for necrotizing infection).",
-      "BloodCultures": "Drawn given fever; low yield in uncomplicated cellulitis.",
-      "Imaging": "Ultrasound if abscess or DVT suspected — here no drainable collection, no DVT."
+      "CBC": "WBC 14.6 with neutrophilia and a mild left shift; Hgb 12.8; Plt 244.",
+      "BMP": "Na 130 (low — patient is on a thiazide), K 3.1 (low — thiazide/loop diuretic), Cl 98, HCO3 24, BUN 28, Creatinine 1.4 (baseline ~1.0 — mild AKI on ACEi + diuretics), Glucose 224. Anion gap = Na − (Cl + HCO3) = 130 − (98 + 24) = 8, which is NORMAL (no anion-gap acidosis).",
+      "UricAcid": "5.8 mg/dL — NORMAL serum uric acid (does not support an acute gout flare; note urate is often normal or low DURING a flare, so this is supportive but not definitive).",
+      "Lactate": "1.6 mmol/L — normal (a high lactate/systemic toxicity would raise concern for necrotizing infection or sepsis).",
+      "INR": "2.4 — therapeutic on warfarin (relevant before any incision/drainage or procedure).",
+      "CRP": "9.2 mg/dL — elevated, consistent with a bacterial soft-tissue infection.",
+      "BloodCultures": "Drawn given fever and comorbidity; low yield in uncomplicated cellulitis but reasonable here.",
+      "Imaging": "Point-of-care ultrasound of the leg: NO drainable fluid collection/abscess and NO non-compressible deep vein to suggest DVT; cobblestoning of subcutaneous tissue consistent with cellulitis/edema."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/normal-sinus-rhythm-ecg-library/",
+      "source": "https://litfl.com/hypokalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus bradycardia ~46 with subtle J-point elevation; otherwise no acute changes.",
-      "verify": "Source a study matching: Sinus bradycardia ~46 with subtle J-point elevation; otherwise no acute changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "The patient's own tracing: atrial fibrillation (irregularly irregular, no P waves) at a controlled rate with flattened T waves, prominent U waves, and a long QU interval — the hypokalemia from his thiazide/loop diuretics (serum K 3.1).",
+      "integrated": true,
+      "litflStudyN": 6,
+      "verify": "Source a study matching: atrial fibrillation with hypokalemic changes — flattened T waves, prominent U waves, long QU. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus bradycardia",
+      "imageDescription": "12-lead showing atrial fibrillation with hypokalemic U waves",
       "searchTerms": [
-        "sinus bradycardia ECG",
-        "sinus bradycardia 12 lead"
+        "hypokalemia U waves ECG",
+        "atrial fibrillation hypokalemia 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 58-year-old man with a red, warm, tender leg and fever has a slow heart rate on monitoring."
+      "clinicalVignette": "A 64-year-old man with AF on diuretics and a febrile cellulitis has flattened T waves and prominent U waves on his tracing."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
-      "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
+      "source": "https://commons.wikimedia.org/w/index.php?search=small%20pleural%20effusion%20chest%20xray&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Blunting of the costophrenic angle with a meniscus and homogeneous basal opacity.",
-      "verify": "Source a study matching: Blunting of the costophrenic angle with a meniscus and homogeneous basal opacity. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Mild cardiomegaly with small bilateral pleural effusions (blunted costophrenic angles) and mild upper-lobe vascular redistribution — chronic-appearing congestive changes; NO focal consolidation to suggest pneumonia.",
+      "verify": "Source a study matching: mild cardiomegaly with small bilateral pleural effusions and mild congestion, no focal consolidation. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
-      "imageDescription": "chest radiograph showing pleural effusion meniscus",
+      "imageDescription": "chest radiograph with cardiomegaly and small bilateral pleural effusions",
       "searchTerms": [
-        "pleural effusion chest x-ray",
-        "costophrenic angle blunting radiograph"
+        "small bilateral pleural effusions chest x-ray",
+        "cardiomegaly congestive heart failure radiograph"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 64-year-old woman with fever and pleuritic right-sided chest discomfort undergoes a chest film."
+      "clinicalVignette": "A 64-year-old man with heart failure and a leg infection has a screening chest film showing chronic congestive changes."
     }
   },
   "revealKeys": [
     "CBC",
     "BMP",
+    "UricAcid",
     "Lactate",
+    "INR",
+    "CRP",
     "BloodCultures",
     "Imaging",
     "ekg",
     "cxr"
   ],
   "essential": [
-    "CBC"
+    "CBC",
+    "UricAcid",
+    "Imaging"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis).",
-      "rubric": "Cellulitis (leading,7). NECROTIZING fasciitis (CANT-MISS — exclude,5). Abscess requiring drainage (CANT-MISS,3). Deep vein thrombosis (CANT-MISS to distinguish,4). Stasis dermatitis / contact dermatitis (core,2). Gout/septic arthritis (core,2). Names cellulitis while explicitly screening for necrotizing features and abscess/DVT (core,2).",
-      "idealAnswer": "Leading diagnosis: Cellulitis. Must-not-miss diagnoses to exclude: NECROTIZING fasciitis; Abscess requiring drainage; Deep vein thrombosis. Also reasonable: Stasis dermatitis / contact dermatitis; Gout/septic arthritis.",
+      "prompt": "Based on your history and physical, list your differential (note your leading diagnosis). This diabetic patient with prior gout who recently stopped his allopurinol has a red, hot, swollen leg — explicitly weigh cellulitis against an acute gout flare, and name three predisposing factors/portals of entry for lower-limb cellulitis.",
+      "rubric": "Cellulitis (leading,5). ACUTE GOUT FLARE — the genuine competitor given prior gout and stopped allopurinol (critical fork,4). NECROTIZING fasciitis (CANT-MISS — exclude,4). Deep vein thrombosis (CANT-MISS to distinguish,3). Abscess requiring drainage (CANT-MISS,2). Septic arthritis (core,1). Stasis dermatitis / acute lipodermatosclerosis (core,1). Names three predisposing factors/portals for lower-limb cellulitis — e.g. tinea pedis/skin break, chronic edema/venous insufficiency, diabetes, lymphedema, prior cellulitis (core,3). Justifies cellulitis over gout — soft-tissue (not joint-line) tenderness, upward-creeping border, portal of entry (core,2). PENALTY: anchoring on cellulitis or on gout without explicitly weighing the other and screening for necrotizing infection (-3).",
+      "idealAnswer": "Leading diagnosis: Cellulitis. The genuine competing diagnosis is an ACUTE GOUT FLARE, which is plausible here because he has prior gout in this leg and stopped his allopurinol about a week ago (a classic flare trigger). Must-not-miss diagnoses to exclude: NECROTIZING fasciitis, Deep vein thrombosis, and Abscess requiring drainage; also consider Septic arthritis and stasis dermatitis. Three predisposing factors/portals of entry for lower-limb cellulitis: a skin break (his gardening scrape), tinea pedis with macerated interdigital skin, and chronic edema from venous insufficiency/heart failure (diabetes and prior cellulitis also count). The picture favors cellulitis over gout because the tenderness is over the soft tissue with an upward-creeping erythematous border rather than maximal at a single joint, and there is an identifiable portal of entry.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Cellulitis",
-            "points": 7
-          },
-          {
-            "item": "NECROTIZING fasciitis",
             "points": 5
           },
           {
-            "item": "Abscess requiring drainage",
-            "points": 3
+            "item": "Acute gout flare",
+            "points": 4
+          },
+          {
+            "item": "NECROTIZING fasciitis",
+            "points": 4
           },
           {
             "item": "Deep vein thrombosis",
-            "points": 4
+            "points": 3
+          },
+          {
+            "item": "Abscess requiring drainage",
+            "points": 2
           }
         ],
         "coreActions": [
           {
-            "item": "Stasis dermatitis / contact dermatitis",
-            "points": 2
+            "item": "Septic arthritis",
+            "points": 1
           },
           {
-            "item": "Gout/septic arthritis",
-            "points": 2
+            "item": "Stasis dermatitis / acute lipodermatosclerosis",
+            "points": 1
           },
           {
-            "item": "Names cellulitis while explicitly screening for necrotizing features and abscess/DVT",
+            "item": "Names three predisposing factors/portals for lower-limb cellulitis (skin break, tinea, edema/venous insufficiency, diabetes, prior cellulitis)",
+            "points": 3
+          },
+          {
+            "item": "Justifies cellulitis over gout (soft-tissue not joint-line tenderness, creeping border, portal of entry)",
             "points": 2
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on one diagnosis without weighing the gout/cellulitis fork or screening for necrotizing infection",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
         "NECROTIZING fasciitis",
-        "Abscess requiring drainage",
-        "Deep vein thrombosis"
+        "Deep vein thrombosis",
+        "Abscess requiring drainage"
       ],
       "acceptableAlternatives": [
-        "Stasis dermatitis / contact dermatitis",
-        "Gout/septic arthritis"
+        "Acute gout flare",
+        "Septic arthritis",
+        "Stasis dermatitis / acute lipodermatosclerosis"
       ]
     },
     {
@@ -135,66 +159,72 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order? (Cellulitis is largely a clinical diagnosis.)",
-      "rubric": "Recognizes cellulitis is mainly CLINICAL; mark the borders to track progression (4). CBC (2). Assess for necrotizing features and abscess at the bedside (4). Ultrasound if abscess/DVT suspected (3). Blood cultures only if systemically ill (2). PENALTY: routine broad imaging/cultures in uncomplicated cellulitis (-2).",
-      "idealAnswer": "Order: EKG; CXR; CBC; BMP; Lactate; Blood cultures; Imaging.",
+      "prompt": "What initial workup do you want to order? (Cellulitis is largely a clinical diagnosis, but he has comorbidities and a competing gout flare to address.)",
+      "rubric": "Recognizes cellulitis is mainly CLINICAL; mark the borders to track progression (3). Assess for necrotizing features and abscess at the bedside (3). CBC (1). BMP to check electrolytes/renal function given his diuretics + ACEi (2). Serum uric acid — note it can be normal during a flare, so it cannot exclude gout (1). Point-of-care ultrasound for abscess/DVT (2). INR before any procedure given warfarin (1). EKG/CXR given comorbidity (1). Lactate/blood cultures if systemically ill (1). PENALTY: routine broad imaging/cultures with no reasoning in uncomplicated cellulitis (-2); arthrocentesis of a non-effused, non-joint-centered process (-1).",
+      "idealAnswer": "Order: EKG; CXR; CBC; BMP (electrolytes and renal function are important on a thiazide/loop diuretic + ACE inhibitor); serum uric acid (remembering it is frequently normal or low DURING a gout flare, so a normal value does not exclude gout); Lactate; INR (he is on warfarin — needed before any incision/drainage); CRP; blood cultures (reasonable given fever and comorbidity); and point-of-care ultrasound of the leg to look for a drainable abscess and for DVT. Cellulitis itself is mainly a clinical diagnosis — mark the borders to track progression and reassess for necrotizing features. Arthrocentesis would only be indicated if a joint effusion/septic arthritis were suspected.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [],
         "coreActions": [
           {
             "item": "Recognizes cellulitis is mainly clinical; mark the borders to track progression",
-            "points": 4
-          },
-          {
-            "item": "Assess for necrotizing features and abscess at the bedside",
-            "points": 4
-          },
-          {
-            "item": "Ultrasound if abscess/DVT suspected",
             "points": 3
           },
           {
-            "item": "CBC",
+            "item": "Assess for necrotizing features and abscess at the bedside",
+            "points": 3
+          },
+          {
+            "item": "BMP to check electrolytes/renal function given diuretics + ACEi",
             "points": 2
           },
           {
-            "item": "Blood cultures only if systemically ill",
+            "item": "Point-of-care ultrasound for abscess/DVT",
             "points": 2
+          },
+          {
+            "item": "CBC",
+            "points": 1
+          },
+          {
+            "item": "Serum uric acid (noting it can be normal during a flare)",
+            "points": 1
+          },
+          {
+            "item": "INR before any procedure given warfarin",
+            "points": 1
           },
           {
             "item": "EKG",
-            "points": 2
+            "points": 1
           },
           {
             "item": "CXR",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
-          },
-          {
-            "item": "Lactate",
-            "points": 2
-          },
-          {
-            "item": "Imaging",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Lactate / blood cultures if systemically ill",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
-            "item": "routine broad imaging/cultures in uncomplicated cellulitis",
+            "item": "Routine broad imaging/cultures with no reasoning in uncomplicated cellulitis",
             "points": -2
+          },
+          {
+            "item": "Arthrocentesis of a non-effused, non-joint-centered process",
+            "points": -1
           }
         ]
       },
       "requiredTests": [],
       "optionalTests": [],
       "contraindicatedTests": [
-        "routine broad imaging/cultures in uncomplicated cellulitis"
+        "Routine broad imaging/cultures with no reasoning in uncomplicated cellulitis",
+        "Arthrocentesis of a non-effused, non-joint-centered process"
       ],
       "orderSensitiveActions": []
     },
@@ -204,32 +234,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus bradycardia (~46) with benign J-point elevation, no acute ischemia. CREDIT: recognizes the slow rate / sinus bradycardia (7); no acute ischemic changes (5); systematic read (3). PENALTY: missing the slow rate / over-reading (-2).",
+      "prompt": "Here is the patient's own 12-lead EKG. Describe your findings and their relevance to his presentation and medications.",
+      "rubric": "Findings = atrial fibrillation (irregularly irregular, no discrete P waves) at a controlled rate WITH hypokalemic changes — flattened/inverted T waves, prominent U waves, and a long QU interval — explained by his thiazide + loop diuretic (serum K 3.1). CREDIT: recognizes atrial fibrillation (4); identifies hypokalemic changes (flat T waves, U waves, long QU) (6); links them to the diuretics/low K and flags the arrhythmia risk (3). PENALTY: calling it a normal tracing, missing the U waves, or mislabeling the long QU as a primary long-QT/ischemia (-3).",
       "keyFindings": [
-        "recognizes sinus bradycardia",
-        "systematic read confirming no ischemia"
+        "atrial fibrillation (irregularly irregular, no P waves)",
+        "flattened T waves with prominent U waves and a long QU interval (hypokalemia)",
+        "links the U waves/long QU to diuretic-induced hypokalemia (K 3.1)"
       ],
       "criticalFindings": [
-        "Sinus bradycardia."
+        "Atrial fibrillation with hypokalemic changes — flattened T waves, prominent U waves, and a long QU interval from diuretic-induced hypokalemia (K 3.1)."
       ],
       "commonMistakes": [
-        "pathologizing benign sinus bradycardia / missing the slow rate"
+        "calling the tracing normal / missing the prominent U waves",
+        "mislabeling the long QU as a primary long-QT or as ischemia",
+        "missing the irregularly irregular rhythm / atrial fibrillation"
       ],
-      "idealAnswer": "Sinus bradycardia (~46) with benign J-point elevation; no acute ischemic change.",
+      "idealAnswer": "Atrial fibrillation (irregularly irregular rhythm with no discrete P waves) at a reasonably controlled rate, WITH the hallmarks of hypokalemia: flattened/inverted T waves, prominent U waves, and an apparently long QU interval. This is his own tracing and the hypokalemia (serum K 3.1) is driven by his thiazide and loop diuretic. It matters because hypokalemia in a patient with AF and structural heart disease predisposes to ventricular arrhythmia — the potassium must be repleted before he is safely discharged.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus bradycardia."
+          "Atrial fibrillation with hypokalemic changes — flattened T waves, prominent U waves, and a long QU interval from diuretic-induced hypokalemia (K 3.1)."
         ],
         "coreActions": [
-          "recognizes sinus bradycardia",
-          "systematic read confirming no ischemia"
+          "atrial fibrillation (irregularly irregular, no P waves)",
+          "flattened T waves with prominent U waves and a long QU interval (hypokalemia)",
+          "links the U waves/long QU to diuretic-induced hypokalemia and flags the arrhythmia risk"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / misses the U waves / mislabels as primary long-QT or ischemia",
             "points": -3
           }
         ]
@@ -242,32 +276,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = pleural effusion (costophrenic-angle blunting with a meniscus). CREDIT: identifies the blunted costophrenic angle with a meniscus (6); names a pleural effusion (4). PENALTY: calling the film normal / missing the effusion (-2).",
+      "rubric": "Findings = mild cardiomegaly with small bilateral pleural effusions and mild vascular congestion (chronic congestive changes), and NO focal consolidation to suggest pneumonia. CREDIT: identifies cardiomegaly with small bilateral effusions / congestive changes (6); explicitly states there is no focal consolidation/pneumonia (4). PENALTY: calling the film normal, or over-reading the effusions/congestion as a new pneumonia (-2).",
       "keyFindings": [
-        "blunted costophrenic angle with meniscus",
-        "identifies a pleural effusion"
+        "mild cardiomegaly with small bilateral pleural effusions and vascular congestion",
+        "no focal consolidation to suggest pneumonia"
       ],
       "criticalFindings": [
-        "Pleural effusion (meniscus, costophrenic-angle blunting)."
+        "Mild cardiomegaly with small bilateral pleural effusions and congestive changes; no focal consolidation."
       ],
       "commonMistakes": [
-        "mistaking effusion for basal consolidation",
-        "missing a small effusion"
+        "mistaking congestive effusions/redistribution for a new pneumonia",
+        "calling the film normal and missing the effusions"
       ],
-      "idealAnswer": "Pleural effusion: costophrenic-angle blunting with a meniscus sign.",
+      "idealAnswer": "Mild cardiomegaly with small bilateral pleural effusions (blunted costophrenic angles) and mild upper-lobe vascular redistribution — chronic-appearing congestive changes consistent with his heart failure. Importantly there is no focal consolidation to suggest pneumonia, so the fever is attributable to the leg, not a chest source.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          "Pleural effusion (meniscus, costophrenic-angle blunting)."
+          "Mild cardiomegaly with small bilateral pleural effusions and congestive changes; no focal consolidation."
         ],
         "coreActions": [
-          "blunted costophrenic angle with meniscus",
-          "identifies a pleural effusion"
+          "mild cardiomegaly with small bilateral pleural effusions and vascular congestion",
+          "no focal consolidation to suggest pneumonia"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "calls the study normal / misses the abnormality",
+            "label": "calls the study normal / over-reads congestion as a new pneumonia",
             "points": -3
           }
         ]
@@ -277,9 +311,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Spreading erythema/warmth/tenderness with a portal of entry, no necrotizing features. What is your diagnosis and what did you rule out?",
-      "rubric": "Cellulitis (6). Explicitly excludes necrotizing fasciitis (no pain out of proportion, crepitus, bullae, or systemic toxicity) and abscess/DVT (4).",
-      "idealAnswer": "Cellulitis. Necrotizing fasciitis is argued against by the absence of pain out of proportion, crepitus, bullae, skin necrosis, and systemic toxicity; no fluctuant abscess and no cord/calf findings to suggest DVT.",
+      "prompt": "Spreading erythema/warmth/tenderness over the shin and calf with a portal of entry, soft-tissue (not joint-line) tenderness, a normal serum urate, and no necrotizing features. Commit to a diagnosis: what is it, how did you resolve the gout-versus-cellulitis fork, what is the single most discriminating test, and what residual uncertainty remains? Also list the separate non-infectious lab problems you must address.",
+      "rubric": "Cellulitis (commits) (4). Resolves the gout fork — tenderness is over soft tissue not maximal at a joint, the erythema creeps upward from a portal of entry rather than centering on a joint, and there is no joint effusion; names that the MOST discriminating step if a joint were involved would be ARTHROCENTESIS with crystal analysis, while acknowledging a normal serum urate does NOT exclude gout during a flare (3). Recognizes the concurrent multi-system problems to manage separately: hypokalemia (K 3.1) and hyponatremia (Na 130) from his diuretics and mild AKI (Cr 1.4) on the ACE inhibitor (3).",
+      "idealAnswer": "Cellulitis of the left lower leg. The gout-versus-cellulitis fork resolves toward cellulitis because the maximal tenderness is over the soft tissue with an upward-creeping erythematous border arising from a portal of entry (gardening scrape, interdigital tinea), rather than being centered on and maximal at a single joint, and the ankle/first-MTP joints move freely with no effusion. The single most discriminating test — were a joint truly involved — is arthrocentesis with synovial crystal analysis and Gram stain/culture; note that a normal serum uric acid (5.8) does NOT exclude gout because urate is often normal or low during an acute flare, so a normal urate is supportive but not definitive. Residual uncertainty: a concurrent low-grade gout flare cannot be entirely excluded by labs alone. Separately, I must address his concurrent non-infectious lab abnormalities: hypokalemia (K 3.1, seen on the EKG as U waves) and hyponatremia (Na 130) from his thiazide/loop diuretic, and mild AKI (Cr 1.4 from ~1.0 baseline) on the ACE inhibitor plus diuretics.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -292,42 +326,66 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH SSTI: antibiotics by purulence – cephalexin/cefazolin nonpurulent, add MRSA coverage if purulent (CANT-MISS,7); incision & drainage of any abscess (CANT-MISS,5); mark borders and elevate limb (3); treat predisposing factor – tinea/edema (3); ~5-day course (2). PENALTY: broad MRSA coverage for simple nonpurulent cellulitis (-2); missing an abscess that needs drainage (-3).",
-      "idealAnswer": "Nonpurulent cellulitis: cover streptococci/MSSA – cephalexin or cefazolin (IV if systemic). Purulent cellulitis/abscess: incision & drainage PLUS MRSA coverage (TMP-SMX or doxycycline PO; vancomycin IV if severe). Elevate and mark the borders; treat the predisposing factor (tinea, edema). Antibiotics for ~5 days. Blood cultures only if systemic toxicity/immunocompromise.",
+      "prompt": "What is your management plan, including the disposition decision (admit vs safe discharge) and what you must address before sending him home?",
+      "rubric": "Per MGH SSTI: antibiotics by purulence — cephalexin/cefazolin for nonpurulent cellulitis covering strep/MSSA, add MRSA coverage only if purulent/abscess (CANT-MISS,6); incision & drainage of any abscess, holding/reversing anticoagulation as needed given INR 2.4 on warfarin (CANT-MISS,4); mark borders and elevate the limb (2); treat predisposing factors — tinea pedis and edema (2); REPLETE potassium (K 3.1) and recheck electrolytes/renal function, review the diuretic doses given hyponatremia + AKI (3); restart/refill the allopurinol he stopped — but NOT during the acute flare unless already established and continued (1); disposition decision with explicit safe-discharge criteria — admit for IV antibiotics given diabetes, heart failure, hypokalemia needing repletion, and systemic features, OR discharge only after K repleted, abscess excluded, borders marked, oral regimen and close follow-up arranged with med reconciliation (CANT-MISS,5); ~5-day course reassessed clinically (1). PENALTY: discharging without correcting hypokalemia or arranging follow-up (-3); broad MRSA coverage for simple nonpurulent cellulitis (-2); incision/drainage without addressing the supratherapeutic-for-procedure INR (-2); missing an abscess needing drainage (-3).",
+      "idealAnswer": "Antibiotics by purulence: nonpurulent cellulitis is covered with a beta-lactam against streptococci/MSSA (cephalexin PO, or cefazolin/IV if admitted); add MRSA coverage (TMP-SMX or doxycycline, or vancomycin IV) ONLY if there is purulence or an abscess. Incision and drainage of any abscess — and because he is on warfarin with an INR of 2.4, plan the procedure around his anticoagulation (hold/assess reversal as needed). Mark the borders and elevate the leg; treat the predisposing factors (topical antifungal for the tinea pedis, optimize edema). Address the concurrent lab problems: replete potassium for the hypokalemia (K 3.1) shown by the EKG U waves and recheck electrolytes; reassess the thiazide/loop diuretic given the hyponatremia (Na 130) and mild AKI (Cr 1.4) on the ACE inhibitor. Refill the allopurinol he ran out of, but do not start/uptitrate urate-lowering therapy mid-flare. DISPOSITION/safe discharge: given diabetes, heart failure, fever, and hypokalemia requiring repletion, admission for IV antibiotics and monitoring is reasonable; if discharged, do so only after the potassium is repleted, an abscess is excluded by exam/ultrasound, the erythema borders are marked, an oral regimen and clear return precautions are given, medications are reconciled (including restarting allopurinol and adjusting diuretics), and close primary-care/wound follow-up is arranged. Treat for ~5 days and extend based on clinical response.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Antibiotics appropriate to purulence",
-            "points": 7
+            "item": "Antibiotics appropriate to purulence (beta-lactam for nonpurulent; add MRSA coverage only if purulent/abscess)",
+            "points": 6
           },
           {
-            "item": "Incision & drainage of abscess",
+            "item": "Incision & drainage of any abscess, accounting for warfarin/INR 2.4 before the procedure",
+            "points": 4
+          },
+          {
+            "item": "Disposition decision with explicit safe-discharge criteria: admit for IV antibiotics given comorbidity/hypokalemia, or discharge only after K repleted, abscess excluded, borders marked, oral regimen, med reconciliation, and close follow-up",
             "points": 5
           }
         ],
         "coreActions": [
           {
+            "item": "Replete potassium (K 3.1) and recheck electrolytes/renal function; review diuretic dosing given hyponatremia + AKI",
+            "points": 3
+          },
+          {
             "item": "Mark borders and elevate limb",
-            "points": 3
-          },
-          {
-            "item": "Treat predisposing factor (tinea/edema)",
-            "points": 3
-          },
-          {
-            "item": "Appropriate duration (~5 days)",
             "points": 2
+          },
+          {
+            "item": "Treat predisposing factors (tinea pedis, edema)",
+            "points": 2
+          },
+          {
+            "item": "Refill allopurinol but do not start/uptitrate urate-lowering therapy mid-flare",
+            "points": 1
+          },
+          {
+            "item": "Appropriate duration (~5 days), reassessed clinically",
+            "points": 1
           }
         ],
         "bonusActions": [
           {
-            "item": "Blood cultures if systemic toxicity",
+            "item": "Blood cultures if systemic toxicity / immunocompromise",
             "points": 1
           }
         ],
         "penalties": [
+          {
+            "item": "Discharging without correcting hypokalemia or arranging follow-up",
+            "points": -3
+          },
+          {
+            "item": "Broad MRSA coverage for simple nonpurulent cellulitis",
+            "points": -2
+          },
+          {
+            "item": "Incision/drainage without addressing the warfarin/INR",
+            "points": -2
+          },
           {
             "item": "Missing an abscess needing drainage",
             "points": -3
@@ -335,20 +393,24 @@
         ]
       },
       "requiredActions": [
-        "Antibiotics appropriate to purulence",
-        "Incision & drainage of abscess"
+        "Antibiotics appropriate to purulence (beta-lactam for nonpurulent; add MRSA coverage only if purulent/abscess)",
+        "Incision & drainage of any abscess, accounting for warfarin/INR 2.4 before the procedure",
+        "Disposition decision with explicit safe-discharge criteria: admit for IV antibiotics given comorbidity/hypokalemia, or discharge only after K repleted, abscess excluded, borders marked, oral regimen, med reconciliation, and close follow-up"
       ],
       "optionalActions": [
+        "Replete potassium (K 3.1) and recheck electrolytes/renal function; review diuretic dosing given hyponatremia + AKI",
         "Mark borders and elevate limb",
-        "Treat predisposing factor (tinea/edema)",
-        "Appropriate duration (~5 days)",
-        "Blood cultures if systemic toxicity"
+        "Treat predisposing factors (tinea pedis, edema)",
+        "Refill allopurinol but do not start/uptitrate urate-lowering therapy mid-flare",
+        "Appropriate duration (~5 days), reassessed clinically",
+        "Blood cultures if systemic toxicity / immunocompromise"
       ],
       "unsafeActions": [
+        "Discharging without correcting hypokalemia or arranging follow-up",
         "Missing an abscess needing drainage"
       ],
       "consults": [],
-      "disposition": "Outpatient; admit if systemic toxicity",
+      "disposition": "Admit for IV antibiotics given comorbidity and hypokalemia; outpatient only if safe-discharge criteria met",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Skin & Soft Tissue Infections (Cellulitis)",
@@ -363,12 +425,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
     "communicationStyle": "answers directly but does not volunteer extra information",
-    "affect": "60-year-old man, uncomfortable, limping. Good historian.",
+    "affect": "64-year-old man, uncomfortable, limping; worried whether this is 'the gout coming back' or something new. Good historian.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal medication non-adherence (stopped allopurinol), prior gout, or skin breaks unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -383,6 +446,56 @@
         "tobacco",
         "cigarettes",
         "do you smoke"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "gout_joint_history",
+      "category": "pmh",
+      "triggerConcepts": [
+        "gout",
+        "joint problems",
+        "had this before",
+        "history of gout",
+        "is it in a joint",
+        "big toe"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medication_adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "did you stop any medication",
+        "ran out",
+        "miss any pills",
+        "stopped taking",
+        "allopurinol",
+        "adherence"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "skin_break_portal",
+      "category": "hpi",
+      "triggerConcepts": [
+        "skin break",
+        "cut",
+        "scratch",
+        "injury",
+        "portal of entry",
+        "wound",
+        "athlete's foot",
+        "feet"
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
@@ -410,7 +523,9 @@
         "describe the",
         "what does it feel like",
         "character",
-        "quality"
+        "quality",
+        "where is it worst",
+        "is it spreading"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -436,7 +551,9 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "fever",
+        "chills"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -463,7 +580,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
+        "conditions",
+        "diabetes",
+        "heart failure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -476,7 +595,10 @@
       "triggerConcepts": [
         "medications",
         "what do you take",
-        "drugs you take"
+        "drugs you take",
+        "water pill",
+        "blood thinner",
+        "warfarin"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -489,7 +611,9 @@
       "triggerConcepts": [
         "happened before",
         "prior episodes",
-        "first time"
+        "first time",
+        "prior cellulitis",
+        "prior dvt"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -500,13 +624,53 @@
   "physicalExamMappings": [
     {
       "id": "assess_calf_tenderness_finding_1",
-      "finding": "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO cord/severe calf tenderness (helps distinguish DVT).",
+      "finding": "Left lower leg: warm, erythematous, tender area over the shin and calf with an ill-defined, upward-creeping upper border and mild-to-moderate swelling; tender diffusely over the red area; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis, NO dusky/black skin; calf soft, NO palpable cord, NO severe focal calf tenderness (helps distinguish DVT).",
       "revealedBy": [
         "assess_calf_tenderness"
       ],
       "importance": "core",
       "points": 2,
       "normalIfNotPresent": "No calf tenderness."
+    },
+    {
+      "id": "inspect_skin_finding_2",
+      "finding": "Left shin/calf: confluent erythema with an upward-creeping border arising near a healing gardening scrape; tinea with cracked, macerated skin between the left toes; chronic venous stasis (hemosiderin/brawny) changes bilaterally. NO bullae, NO skin necrosis, NO dusky/black skin.",
+      "revealedBy": [
+        "inspect_skin"
+      ],
+      "importance": "critical",
+      "points": 3,
+      "normalIfNotPresent": "Skin intact without rash, breaks, or stasis changes."
+    },
+    {
+      "id": "assess_edema_finding_3",
+      "finding": "Chronic bilateral lower-leg edema, worse and warmer on the left.",
+      "revealedBy": [
+        "assess_edema"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No peripheral edema."
+    },
+    {
+      "id": "assess_peripheral_pulses_finding_4",
+      "finding": "Distal pulses palpable; irregularly irregular peripheral pulse (consistent with his atrial fibrillation). No critical limb ischemia.",
+      "revealedBy": [
+        "assess_peripheral_pulses"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Distal pulses palpable and regular."
+    },
+    {
+      "id": "auscultate_mitral_area_finding_5",
+      "finding": "Irregularly irregular rhythm with no new murmur; JVP mildly elevated at baseline; trace bibasilar crackles (baseline congestive changes).",
+      "revealedBy": [
+        "auscultate_mitral_area"
+      ],
+      "importance": "core",
+      "points": 1,
+      "normalIfNotPresent": "Regular rhythm, no murmur."
     }
   ],
   "overallScoring": {
@@ -519,56 +683,69 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Cellulitis",
-    "diagnosticFramework": "60M presents with 2 days of an expanding red, warm, painful area on the lower left leg, with fever. The diagnosis is Cellulitis, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "64M with type 2 diabetes, heart failure, atrial fibrillation on warfarin, chronic venous insufficiency, and gout (allopurinol recently stopped) presents with 2 days of an expanding red, warm, painful area over the left shin and calf with low-grade fever. The diagnosis is Cellulitis, reached by eliciting the focused history (including the gout history, stopped allopurinol, and portal of entry), performing the targeted exam (soft-tissue rather than joint-line tenderness, upward-creeping border, tinea/edema), and interpreting a directed workup. The case forks genuinely between cellulitis and an acute gout flare and is resolved toward cellulitis, while concurrent multi-system lab abnormalities (hypokalemia, hyponatremia, mild AKI) from his diuretics/ACE inhibitor must be managed separately and corrected before safe discharge.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
-      "Left lower leg: warm, erythematous, tender area with somewhat ill-defined borders and mild swelling; tender to touch; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO cord/severe calf tenderness (helps distinguish DVT)."
+      "Left lower leg: warm, erythematous, tender area over the shin and calf with an ill-defined, upward-creeping upper border and mild-to-moderate swelling; NO fluctuance/abscess, NO crepitus, NO bullae or skin necrosis; calf soft, NO palpable cord, NO severe focal calf tenderness (helps distinguish DVT).",
+      "Left shin/calf: confluent erythema with an upward-creeping border arising near a healing gardening scrape; tinea with cracked, macerated skin between the left toes; chronic venous stasis changes bilaterally.",
+      "Chronic bilateral lower-leg edema, worse and warmer on the left.",
+      "Distal pulses palpable; irregularly irregular peripheral pulse (consistent with atrial fibrillation).",
+      "Irregularly irregular rhythm with no new murmur; JVP mildly elevated at baseline; trace bibasilar crackles."
     ],
     "keyDiagnosticFindings": [
       "CBC",
       "BMP",
+      "UricAcid",
       "Lactate",
+      "INR",
+      "CRP",
       "BloodCultures",
       "Imaging"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Cellulitis while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Cellulitis and manage with stabilization, definitive treatment, consults, and disposition."
+      "Frame the presentation from the chart and vitals, noting the diabetic, polypharmacy background.",
+      "Elicit the focused history, including the gout history, the recently stopped allopurinol, and the portal of entry, only on direct questioning.",
+      "Perform the targeted physical exam to reveal soft-tissue (not joint-line) tenderness, the upward-creeping border, tinea, and edema.",
+      "Build a differential led by Cellulitis that explicitly weighs an acute gout flare and excludes necrotizing fasciitis, DVT, and abscess.",
+      "Order a focused workup (electrolytes/renal function given diuretics + ACEi, urate, INR, ultrasound) and interpret the patient's own EKG (AF with hypokalemic U waves) and CXR (congestive changes).",
+      "Commit to Cellulitis, resolve the gout fork, correct the concurrent hypokalemia/hyponatremia/AKI, and make a disposition decision with explicit safe-discharge criteria."
     ],
     "commonPitfalls": [
+      "Anchoring on cellulitis or gout without weighing the other",
+      "Missing the diuretic-induced hypokalemia on the EKG",
+      "Discharging without correcting hypokalemia or arranging follow-up",
+      "Incision/drainage without addressing the warfarin/INR",
       "Missing an abscess needing drainage"
     ],
     "managementPearls": [
       "Antibiotics appropriate to purulence",
-      "Incision & drainage of abscess"
+      "Correct hypokalemia and reconcile medications before safe discharge"
     ],
     "criticalHistoryItems": [],
-    "criticalExamItems": [],
+    "criticalExamItems": [
+      "inspect_skin"
+    ],
     "criticalWorkupItems": [],
     "criticalInterpretationItems": [
-      "Sinus bradycardia (~46) with benign J-point elevation; no acute ischemic changes.",
-      "Pleural effusion (meniscus, costophrenic-angle blunting)."
+      "Atrial fibrillation with hypokalemic changes (flattened T waves, prominent U waves, long QU) from diuretic-induced hypokalemia (K 3.1).",
+      "Mild cardiomegaly with small bilateral pleural effusions and congestive changes; no focal consolidation."
     ],
     "criticalManagementItems": [
       "Antibiotics appropriate to purulence",
-      "Incision & drainage of abscess"
+      "Disposition decision with explicit safe-discharge criteria"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus bradycardia.",
-      "Pleural effusion (meniscus, costophrenic-angle blunting)."
+      "Atrial fibrillation with hypokalemic changes — flattened T waves, prominent U waves, and a long QU interval from diuretic-induced hypokalemia (K 3.1).",
+      "Mild cardiomegaly with small bilateral pleural effusions and congestive changes; no focal consolidation."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus bradycardia.",
-      "Pleural effusion (meniscus, costophrenic-angle blunting)."
+      "Atrial fibrillation with hypokalemic changes — flattened T waves, prominent U waves, and a long QU interval from diuretic-induced hypokalemia (K 3.1).",
+      "Mild cardiomegaly with small bilateral pleural effusions and congestive changes; no focal consolidation."
     ],
     "imageInterpretationPearls": [
+      "Prominent U waves with flattened T waves in a patient on diuretics are hypokalemia — correct the potassium, do not just watch it.",
       "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Read every study systematically and state pertinent negatives, not just positives."
     ]
   },
   "communicationScoring": {
@@ -579,11 +756,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's concern about whether the gout is back",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks non-judgmentally about medication adherence (the stopped allopurinol)",
         "points": 1
       },
       {
@@ -598,8 +775,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-own EKG with pathology-forward CXR",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true

@@ -2,66 +2,70 @@
   "id": "abdo-06",
   "category": "Abdominal Pain",
   "difficulty": "hard",
-  "title": "Severe pain out of proportion to exam",
+  "title": "Severe pain out of proportion to exam in atrial fibrillation",
   "diagnosis": "Acute mesenteric ischemia",
   "chart": {
     "ageSex": "72F",
     "cc": "Severe abdominal pain",
-    "oneLiner": "72F with atrial fibrillation presents with sudden, severe, diffuse abdominal pain that seems out of proportion to a relatively benign abdominal exam.",
+    "oneLiner": "72F with atrial fibrillation, CKD, and a recent heart-failure admission presents with sudden, severe, diffuse abdominal pain out of proportion to a relatively benign abdominal exam; she stopped her blood thinner two weeks ago and was recently over-diuresed.",
     "vitals": {
-      "BP": "108/66",
-      "HR": "118 (irregular)",
-      "RR": "22",
-      "Temp": "37.6°C",
-      "SpO2": "96% RA"
+      "BP": "104/64",
+      "HR": "122 (irregular)",
+      "RR": "24",
+      "Temp": "37.7°C",
+      "SpO2": "95% RA"
     },
     "timer": 180
   },
   "opening": "The pain came on all of a sudden and it's unbearable — but the doctor barely pressing on my belly doesn't seem to match how bad it feels.",
-  "patientFile": "PERSONA: 72-year-old woman, in severe distress from pain, restless. Cooperative.\n\nHPI: SUDDEN onset of severe, diffuse, constant abdominal pain ~3h ago, far worse than the exam findings suggest. Associated nausea, vomiting, and one loose (later bloody) stool. Known atrial fibrillation; admits she stopped her blood thinner a couple weeks ago (only if asked about medications/anticoagulation).\nPMH: atrial fibrillation, hypertension, prior TIA. MEDS: was on apixaban — self-discontinued; metoprolol; amlodipine. SOCIAL: former smoker.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: distressed, pale, diaphoretic.\n- Vitals: BP 108/66, HR 118 IRREGULARLY irregular, RR 22, 37.6°C, SpO2 96% RA.\n- Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop late once infarction occurs.)\n- Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the stopped anticoagulation unless asked about medications, blood thinners, or adherence.\n- The irregular pulse and the pain-out-of-proportion discrepancy are key — reveal the rhythm if the pulse/heart is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "patientFile": "PERSONA: 72-year-old woman, in severe distress from pain, restless and frightened. Cooperative but answers briefly because the pain is so bad.\n\nHPI: SUDDEN onset of severe, diffuse, constant abdominal pain ~3h ago, far worse than the exam findings suggest — she keeps saying it is a 10/10 even though pressing barely changes it. Associated nausea, several episodes of vomiting, and one loose stool that she later noticed had some blood in it. No fever or urinary symptoms. She has felt her heart 'racing and skipping' since the pain began. (Reveal the bloody stool only if asked about her bowel movements/stool.)\nPMH: atrial fibrillation, hypertension, chronic kidney disease (baseline creatinine around 1.3), prior TIA, and heart failure — she was hospitalized about 3 weeks ago for fluid overload and was sent home on stronger water pills, and since then she has felt dry, dizzy on standing, and has not been drinking much (only if asked about recent hospitalizations / how she has been feeling since).\nMEDS (reveal only if asked about medications, blood thinners, or how she takes them): she was on apixaban (a blood thinner) but STOPPED it on her own about two weeks ago because of a minor nosebleed and never restarted it; metoprolol; digoxin (started at the recent heart-failure admission); furosemide, dose recently INCREASED; amlodipine. She is not always sure she takes them the same way every day. No NSAIDs.\nSOCIAL: former smoker (quit ~10 years ago), lives alone, a daughter helps with groceries. FAMILY: noncontributory. ROS: as above; the racing/skipping heartbeat, the lightheadedness on standing since the diuretic was increased, and the one bloody stool are the notable positives.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: distressed, pale, diaphoretic, looks dry.\n- Vitals: BP 104/64, HR 122 IRREGULARLY irregular, RR 24, 37.7°C, SpO2 95% RA. Orthostatic if checked: drops to 88/58 with HR rise on standing (volume depletion).\n- Mucous membranes/skin: dry mucous membranes, poor skin turgor.\n- Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop late once transmural infarction occurs.)\n- Cardiac: irregularly irregular rhythm, tachycardic, no murmur, no S3, JVP not elevated (she is dry, not congested now). Rectal: occult/frank blood if examined.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the stopped anticoagulation, the digoxin, or the recently increased water pill unless asked about medications, blood thinners, adherence, or recent hospitalizations.\n- Do NOT volunteer the bloody stool unless asked about bowel movements / stool.\n- The irregular pulse, the volume depletion (dry, orthostatic), and the pain-out-of-proportion discrepancy are key — reveal the rhythm and the dryness only if the relevant exam is performed.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing."
+,
   "dx": {
     "labs": {
-      "Lactate": "Elevated (e.g., 4.5) — a critical clue to bowel ischemia.",
-      "CBC": "WBC 18.0 with left shift, Hgb 13.5, Plt 250.",
-      "BMP": "HCO3 low with metabolic acidosis; Cr 1.3.",
-      "LFTs": "Mild elevations.",
-      "CTA_abdomen": "CT angiography of the abdomen: filling defect/occlusion of the superior mesenteric artery; segmental bowel wall changes; no free air yet.",
-      "StoolEvaluation": "Blood in the stool is documented (consistent with mucosal ischemia). Provided as a clinical/diagnostic finding; no sensitive exam is required of the student."
+      "Lactate": "Elevated at 5.2 mmol/L (ref <2.0) — a critical clue to evolving bowel ischemia; rising on serial draws.",
+      "CBC": "WBC 18.4 with left shift and bandemia, Hgb 15.1 and Hct 47% (hemoconcentration from volume depletion), Plt 255.",
+      "BMP": "Na 138, K 5.6 (high), Cl 100, HCO3 14 (low) → anion gap = 138 − (100 + 14) = 24 (high anion gap metabolic acidosis); BUN 52, Cr 2.1 (acute kidney injury on a CKD baseline of ~1.3); glucose 132.",
+      "LFTs": "Mildly elevated AST/ALT and a borderline alkaline phosphatase; bilirubin normal — nonspecific, consistent with early splanchnic ischemia and hypoperfusion.",
+      "DigoxinLevel": "Serum digoxin 2.6 ng/mL (supratherapeutic; therapeutic ~0.5–0.9 in heart failure) — explained by the AKI reducing renal clearance; a confounder that can both cause GI symptoms and produce digoxin effect on the EKG, and a relative risk for nonocclusive low-flow ischemia.",
+      "CTA_abdomen": "CT angiography of the abdomen/pelvis: abrupt filling defect/occlusion of the superior mesenteric artery a few centimeters from its origin with a sharp meniscus (embolic pattern), distal SMA branch non-opacification, and segmental small-bowel wall changes; no pneumatosis or portal venous gas yet and no free air. The aorta is normal caliber with no aneurysm and no dissection flap.",
+      "StoolEvaluation": "Stool/rectal exam positive for blood (consistent with mucosal ischemia). Provided as a clinical/diagnostic finding."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
+      "litflStudyN": 30,
+      "integrated": true,
+      "source": "https://litfl.com/digoxin-effect-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
-      "verify": "From the LITFL 'Atrial Fibrillation' library page — download an example tracing that matches: Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic sour … and self-host with credit to litfl.com.",
+      "findings": "Atrial fibrillation with a rapid ventricular response (irregularly irregular, no discrete P waves, rate ~120s) — the likely embolic source — WITH digoxin effect: down-sloping 'scooped'/sagging ST-segment depressions (Salvador Dalí sign) and T-wave changes, consistent with the supratherapeutic digoxin level. NO acute ST-segment elevation.",
+      "verify": "From the LITFL 'Digoxin effect / toxicity' library page, source a tracing showing atrial fibrillation with the characteristic scooped/sagging ST depression (digoxin effect) and no ST elevation; self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead EKG showing atrial fibrillation (irregularly irregular, no discrete P waves)",
+      "imageDescription": "12-lead EKG showing atrial fibrillation with rapid ventricular response and digoxin effect (scooped/sagging ST depressions), no ST elevation",
       "searchTerms": [
-        "atrial fibrillation 12-lead ECG",
-        "irregularly irregular no P waves ECG"
+        "atrial fibrillation digoxin effect 12-lead ECG",
+        "scooped sagging ST depression digoxin Salvador Dali sign ECG"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 75-year-old woman presents with palpitations and an irregularly irregular pulse on examination."
+      "clinicalVignette": "A 72-year-old woman with atrial fibrillation on digoxin and worsening renal function presents with an irregularly irregular tachycardia."
     },
     "cxr": {
       "label": "Chest X-ray (upright)",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20upright&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
-      "verify": "Pick a CC normal upright chest film (no subdiaphragmatic free air).",
+      "findings": "Nonspecific; no acute infiltrate, and importantly NO free air under the diaphragm early (free air would indicate perforation from infarcted bowel). Heart size upper-normal; lungs no longer congested after recent diuresis.",
+      "verify": "Pick a CC normal upright chest film (no subdiaphragmatic free air, no overt pulmonary edema).",
       "assetNeeded": true,
-      "imageDescription": "nonspecific upright chest radiograph with no free air under the diaphragm",
+      "imageDescription": "nonspecific upright chest radiograph with no free air under the diaphragm and no pulmonary edema",
       "searchTerms": [
         "normal upright chest x-ray no free air",
         "upright chest radiograph no subdiaphragmatic free air"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "An 80-year-old man with severe abdominal pain out of proportion to exam has an upright chest film."
+      "clinicalVignette": "An elderly woman with severe abdominal pain out of proportion to exam has an upright chest film to exclude free air."
     }
   },
   "revealKeys": [
@@ -69,34 +73,35 @@
     "CBC",
     "BMP",
     "LFTs",
+    "DigoxinLevel",
     "CTA_abdomen",
+    "StoolEvaluation",
     "ekg",
-    "cxr",
-    "StoolEvaluation"
+    "cxr"
   ],
   "essential": [
     "Lactate",
-    "ekg",
-    "CTA_abdomen"
+    "CTA_abdomen",
+    "ekg"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Acute mesenteric ischemia (leading & CANT-MISS,9; accepts mesenteric ischemia/SMA embolus). Perforated viscus (CANT-MISS,4). Ruptured AAA (CANT-MISS,3). Bowel obstruction (core,2). Pancreatitis (core,2). Names mesenteric ischemia with the key clue — pain out of proportion + AF + embolic risk (core,5).",
-      "idealAnswer": "Leading diagnosis: Acute mesenteric ischemia. Must-not-miss diagnoses to exclude: Perforated viscus; Ruptured AAA. Also reasonable: Bowel obstruction; Pancreatitis.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). Also name three distinct etiologies/mechanisms of acute mesenteric ischemia and say which one this presentation fits best.",
+      "rubric": "Acute mesenteric ischemia (leading & CANT-MISS,7; accepts mesenteric ischemia/SMA embolus). Perforated viscus (CANT-MISS,3). Ruptured AAA (CANT-MISS,3). Nonocclusive mesenteric ischemia / low-flow given over-diuresis + digoxin (core competing fork,2). Bowel obstruction (core,1). Pancreatitis (core,1). Names mesenteric ischemia with the key clue — pain out of proportion + AF + stopped anticoagulation (core,4). Names THREE mechanisms of AMI — SMA embolism (AF), SMA thrombosis (atherosclerosis), mesenteric venous thrombosis, and nonocclusive/low-flow — and picks embolic as the best fit (core,4). PENALTY: anchoring on a benign cause and discharging pain out of proportion (-4).",
+      "idealAnswer": "Leading diagnosis: Acute mesenteric ischemia — the genuine fork is whether this is an OCCLUSIVE SMA embolus (most likely: abrupt pain, AF, self-stopped apixaban → cardioembolic source) versus NONOCCLUSIVE/low-flow ischemia (NOMI) from her recent over-diuresis, volume depletion, and digoxin (a splanchnic vasoconstrictor) — the abrupt onset and embolic risk favor embolus, to be resolved by CTA. Must-not-miss alternatives to exclude: Perforated viscus and Ruptured AAA. Three mechanisms/etiologies of AMI: (1) arterial EMBOLISM to the SMA (atrial fibrillation — best fit here); (2) arterial THROMBOSIS of the SMA on pre-existing atherosclerosis; (3) mesenteric VENOUS thrombosis (hypercoagulable states); plus (4) NONOCCLUSIVE low-flow ischemia from shock/vasoconstrictors. Also reasonable: bowel obstruction; pancreatitis.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "Acute mesenteric ischemia",
-            "points": 9
+            "points": 7
           },
           {
             "item": "Perforated viscus",
-            "points": 4
+            "points": 3
           },
           {
             "item": "Ruptured AAA",
@@ -105,26 +110,40 @@
         ],
         "coreActions": [
           {
-            "item": "Bowel obstruction",
+            "item": "Nonocclusive / low-flow mesenteric ischemia (NOMI) given over-diuresis and digoxin",
             "points": 2
+          },
+          {
+            "item": "Bowel obstruction",
+            "points": 1
           },
           {
             "item": "Pancreatitis",
-            "points": 2
+            "points": 1
           },
           {
-            "item": "Names mesenteric ischemia with the key clue — pain out of proportion + AF + embolic risk",
-            "points": 5
+            "item": "Names mesenteric ischemia with the key clue — pain out of proportion + AF + stopped anticoagulation",
+            "points": 4
+          },
+          {
+            "item": "Names three mechanisms of AMI (SMA embolism, SMA thrombosis, venous thrombosis / NOMI) and picks embolic as best fit",
+            "points": 4
           }
         ],
         "bonusActions": [],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on a benign cause and discharges pain out of proportion",
+            "points": -4
+          }
+        ]
       },
       "mustNotMiss": [
         "Perforated viscus",
         "Ruptured AAA"
       ],
       "acceptableAlternatives": [
+        "Nonocclusive / low-flow mesenteric ischemia (NOMI)",
         "Bowel obstruction",
         "Pancreatitis"
       ]
@@ -135,18 +154,18 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial diagnostic workup do you want to order?",
-      "rubric": "Serum lactate (CANT-MISS,4). CT angiography of the abdomen (CANT-MISS,5). EKG (3). CBC (2). BMP / blood gas for acidosis (1). PENALTY: relying on plain films alone or delaying CTA (-3); shotgun panel w/ no reasoning (-2).",
-      "idealAnswer": "Order: EKG; CXR; Lactate; CBC; BMP; LFTs; CTA abdomen; Stool studies.",
+      "rubric": "CT angiography of the abdomen as the test that distinguishes occlusive embolus from low-flow NOMI (CANT-MISS,5). Serum lactate (CANT-MISS,3). EKG (2). CBC (1). BMP / VBG for acidosis, AKI, and potassium (2). Digoxin level given the supratherapeutic risk and AKI (bonus,1). LFTs (1). PENALTY: relying on plain films alone or delaying CTA (-3); shotgun panel w/ no reasoning (-2).",
+      "idealAnswer": "Order: EKG; CXR; serum lactate (and serial); CBC; BMP and a VBG (for the anion-gap acidosis, AKI, and hyperkalemia); digoxin level (supratherapeutic risk with AKI); LFTs; type and screen and coags; and — the key test — CTA of the abdomen/pelvis, which both confirms mesenteric ischemia and distinguishes an occlusive SMA embolus from nonocclusive low-flow disease. Stool/rectal for blood.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
           {
-            "item": "Serum lactate",
-            "points": 4
-          },
-          {
             "item": "CT angiography of the abdomen",
             "points": 5
+          },
+          {
+            "item": "Serum lactate",
+            "points": 3
           }
         ],
         "coreActions": [
@@ -155,39 +174,42 @@
             "points": 2
           },
           {
-            "item": "CXR",
+            "item": "BMP / VBG for acidosis, AKI, and potassium",
             "points": 2
           },
           {
             "item": "CBC",
-            "points": 2
-          },
-          {
-            "item": "BMP",
-            "points": 2
+            "points": 1
           },
           {
             "item": "LFTs",
-            "points": 2
-          },
-          {
-            "item": "Stool studies",
-            "points": 2
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Digoxin level given supratherapeutic risk with AKI",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
             "item": "relying on plain films alone or delaying CTA",
             "points": -3
+          },
+          {
+            "item": "shotgun panel w/ no reasoning",
+            "points": -2
           }
         ]
       },
       "requiredTests": [
-        "Serum lactate",
-        "CT angiography of the abdomen"
+        "CT angiography of the abdomen",
+        "Serum lactate"
       ],
-      "optionalTests": [],
+      "optionalTests": [
+        "Digoxin level given supratherapeutic risk with AKI"
+      ],
       "contraindicatedTests": [
         "relying on plain films alone or delaying CTA"
       ],
@@ -199,47 +221,39 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = atrial fibrillation (irregularly irregular, no P waves); no acute ST elevation. CREDIT: identifies atrial fibrillation (7); recognizes it as the likely embolic source for mesenteric ischemia (4); no acute STEMI (2); systematic read (2). PENALTY: missing/ misidentifying the AF (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Interpret it systematically, then state how it fits the clinical picture.",
+      "rubric": "Findings = atrial fibrillation with a rapid ventricular response (irregularly irregular, no P waves, rate ~120s) WITH digoxin effect (scooped/sagging ST depressions, the Salvador Dalí sign); NO acute ST elevation. CREDIT: identifies atrial fibrillation with RVR (5); recognizes AF as the likely embolic source for the mesenteric ischemia (4); identifies the scooped/sagging ST depression as DIGOXIN EFFECT — not ischemia — and links it to the supratherapeutic digoxin level with AKI (3); states there is no acute STEMI (1); systematic read (2). PENALTY: missing/misidentifying the AF, or calling the digoxin effect a STEMI/acute ischemia (-3).",
       "keyFindings": [
-        "identifies atrial fibrillation",
-        "recognizes it as the likely embolic source for mesenteric ischemia",
+        "atrial fibrillation with rapid ventricular response",
+        "recognizes AF as the likely embolic source for mesenteric ischemia",
+        "scooped/sagging ST depression is digoxin effect, not ischemia, with supratherapeutic digoxin and AKI",
         "no acute STEMI",
         "systematic read"
       ],
       "criticalFindings": [
-        "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation."
+        "Atrial fibrillation with rapid ventricular response (irregularly irregular, no discrete P waves) — the likely embolic source — WITH digoxin effect: scooped/sagging ST-segment depressions (Salvador Dalí sign), consistent with the supratherapeutic digoxin level. No acute ST elevation."
       ],
       "commonMistakes": [
-        "missing/ misidentifying the AF"
+        "missing/misidentifying the atrial fibrillation",
+        "calling the scooped digoxin-effect ST depression an acute STEMI or ischemia"
       ],
-      "idealAnswer": "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
+      "idealAnswer": "Atrial fibrillation with a rapid ventricular response (irregularly irregular, no discrete P waves, rate ~120s) — this AF is the likely cardioembolic source for her mesenteric ischemia, especially after she self-stopped her apixaban. There are down-sloping 'scooped'/sagging ST-segment depressions (the Salvador Dalí sign) with T-wave changes; these are DIGOXIN EFFECT given her supratherapeutic digoxin level (2.6) on a background of AKI, NOT acute ischemia. There is NO ST-segment elevation. The read therefore both confirms the embolic source and flags digoxin toxicity that must be managed.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          {
-            "item": "Recognizes: Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
-            "points": 7
-          }
+          "Atrial fibrillation with rapid ventricular response (irregularly irregular, no discrete P waves) — the likely embolic source — WITH digoxin effect: scooped/sagging ST-segment depressions (Salvador Dalí sign), consistent with the supratherapeutic digoxin level. No acute ST elevation."
         ],
         "coreActions": [
-          {
-            "item": "recognizes it as the likely embolic source for mesenteric ischemia",
-            "points": 4
-          },
-          {
-            "item": "no acute STEMI",
-            "points": 2
-          },
-          {
-            "item": "systematic read",
-            "points": 2
-          }
+          "atrial fibrillation with rapid ventricular response",
+          "recognizes AF as the likely embolic source for mesenteric ischemia",
+          "scooped/sagging ST depression is digoxin effect, not ischemia, with supratherapeutic digoxin and AKI",
+          "no acute STEMI",
+          "systematic read"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "missing/ misidentifying the AF",
+            "label": "missing/misidentifying the AF, or calling the digoxin-effect ST depression an acute STEMI/ischemia",
             "points": -3
           }
         ]
@@ -252,35 +266,32 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = nonspecific/normal; no free air early. CREDIT: identifies a normal/nonspecific film (5); explicitly looks for and excludes free air (perforation) (5). PENALTY: inventing pathology (-2).",
+      "rubric": "Findings = nonspecific/normal; no pulmonary edema after recent diuresis; no free air early. CREDIT: identifies a normal/nonspecific film with no pulmonary edema (5); explicitly looks for and excludes free air (perforation) under the diaphragm (5). PENALTY: inventing pathology (-2).",
       "keyFindings": [
-        "identifies a normal/nonspecific film"
+        "identifies a normal/nonspecific film with no pulmonary edema",
+        "explicitly excludes subdiaphragmatic free air"
       ],
       "criticalFindings": [
-        "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+        "Nonspecific upright film: no pulmonary edema (recently diuresed) and — importantly — NO free air under the diaphragm early (free air would indicate perforation from infarcted bowel)."
       ],
       "commonMistakes": [
-        "inventing pathology"
+        "inventing pathology",
+        "failing to comment on the absence of free air"
       ],
-      "idealAnswer": "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
+      "idealAnswer": "A nonspecific upright chest film. The lungs are no longer congested after her recent diuresis (no pulmonary edema), heart size is upper-normal, and — the deliberate pertinent negative — there is NO free air under the diaphragm, so no evidence yet of a perforated viscus from infarcted bowel.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
-          {
-            "item": "Recognizes: Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel).",
-            "points": 5
-          }
+          "Nonspecific upright film: no pulmonary edema (recently diuresed) and — importantly — NO free air under the diaphragm early (free air would indicate perforation from infarcted bowel)."
         ],
         "coreActions": [
-          {
-            "item": "identifies a normal/nonspecific film",
-            "points": 5
-          }
+          "identifies a normal/nonspecific film with no pulmonary edema",
+          "explicitly excludes subdiaphragmatic free air"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "item": "inventing pathology",
+            "label": "inventing pathology / missing the absence of free air as a pertinent negative",
             "points": -2
           }
         ]
@@ -290,9 +301,9 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Given the elevated lactate and CTA, what is your diagnosis and reasoning?",
-      "rubric": "Acute mesenteric ischemia, likely embolic (SMA) (6). Links AF + stopped anticoagulation → embolus; lactate + acidosis indicate ischemia (4).",
-      "idealAnswer": "Acute mesenteric ischemia, likely embolic — the atrial fibrillation with self-discontinued apixaban is the embolic source, and CTA shows an SMA filling defect/occlusion with segmental bowel-wall changes. The elevated lactate (~4.5) and metabolic acidosis confirm evolving bowel ischemia.",
+      "prompt": "Given the elevated lactate, the CTA, the EKG, and the digoxin level, what is your diagnosis and reasoning? Name the discriminating finding that resolves the embolus-vs-low-flow question, and state any residual ambiguity.",
+      "rubric": "Acute mesenteric ischemia, OCCLUSIVE and EMBOLIC (SMA) (6). Names the CTA discriminator — an abrupt SMA filling defect with a sharp meniscus a few cm from the origin and a normal aorta = embolus, which resolves it AWAY from nonocclusive low-flow despite the over-diuresis/digoxin; links AF + self-stopped apixaban as the embolic source; the elevated lactate + high-anion-gap acidosis confirm evolving ischemia; the scooped ST depression is digoxin effect (supratherapeutic with AKI), not ischemia; residual ambiguity = bowel viability/extent until laparotomy (4).",
+      "idealAnswer": "Acute mesenteric ischemia, occlusive and embolic. The discriminating finding is the CTA: an abrupt SMA filling defect with a sharp meniscus a few centimeters from the vessel origin and distal branch non-opacification, with a NORMAL-caliber aorta and no dissection — that pattern is an embolus and resolves the fork away from nonocclusive low-flow (NOMI), even though her recent over-diuresis, volume depletion, and supratherapeutic digoxin would otherwise have raised low-flow ischemia. The embolic source is her atrial fibrillation after she self-stopped apixaban two weeks ago. The elevated lactate (5.2) with the high anion-gap metabolic acidosis (AG 24) confirms evolving bowel ischemia, and her AKI on CKD explains both the acidosis and the supratherapeutic digoxin (whose scooped ST depression on the EKG is digoxin effect, not acute coronary ischemia). Residual ambiguity: the extent and viability of bowel — and whether transmural infarction has occurred — cannot be fully judged on CTA and may only be settled at laparotomy.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
@@ -305,71 +316,81 @@
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH abdominal pain (vascular infarct, 'can't-miss'): aggressive IV fluid resuscitation (CANT-MISS,5); STAT surgery + vascular/IR consult for revascularization (CANT-MISS,6); broad-spectrum antibiotics (4); systemic anticoagulation/heparin (4); NPO + NG decompression (3); CT angiography (2). PENALTY: discharging 'pain out of proportion' (-4); splanchnic vasoconstrictors worsening ischemia (-2).",
-      "idealAnswer": "Surgical/vascular emergency: pain out of proportion to exam. Aggressive IV fluid resuscitation, broad-spectrum antibiotics, NPO, NG decompression. Systemic anticoagulation (heparin). STAT surgery and vascular/IR consults for revascularization or resection. CT angiography. Avoid vasopressors that worsen splanchnic flow.",
+      "prompt": "What is your management plan, including disposition? Explicitly state whether this patient can be safely discharged and what the safe disposition is.",
+      "rubric": "Per MGH abdominal pain (vascular infarct, 'can't-miss'): aggressive IV fluid resuscitation to restore splanchnic perfusion (CANT-MISS,4); STAT surgery + vascular/IR consult for revascularization (embolectomy/thrombectomy) +/- resection (CANT-MISS,6); systemic anticoagulation/heparin once not contraindicated (4); broad-spectrum antibiotics (3); NPO + NG decompression (2); correct the confounders — hold digoxin and treat the supratherapeutic level/hyperkalemia, and address the AKI (2); safe disposition — ADMIT emergently to the OR, do NOT discharge pain out of proportion, with med reconciliation (restart anticoagulation plan, hold/adjust digoxin and diuretic) (2). PENALTY: discharging 'pain out of proportion' (-5); splanchnic vasoconstrictors/pressors that worsen ischemia (-2).",
+      "idealAnswer": "This is a surgical/vascular emergency — pain out of proportion to exam with an embolic SMA occlusion. She CANNOT be safely discharged; the safe disposition is emergent admission to the OR. Aggressive IV crystalloid resuscitation to restore splanchnic perfusion (she is also volume-depleted from over-diuresis). STAT general surgery and vascular surgery/IR consults for revascularization — SMA embolectomy/thrombectomy (open or endovascular) with resection of any non-viable bowel. Start systemic anticoagulation with IV heparin once there is no contraindication. Broad-spectrum antibiotics, NPO, NG decompression. Correct the confounders: hold digoxin and treat the supratherapeutic level and the hyperkalemia, manage the AKI, and avoid vasopressors/splanchnic vasoconstrictors that worsen mesenteric flow. Safe-disposition / med reconciliation: admit (do NOT discharge), reconcile her medications — plan to restart appropriate anticoagulation for her AF after surgery (the self-stopped apixaban is what set off the embolus), hold or re-dose the digoxin and the recently increased diuretic, and counsel her and her daughter on the perioperative course and follow-up. Serial lactate and abdominal exams.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Aggressive IV fluid resuscitation",
-            "points": 5
+            "item": "Aggressive IV fluid resuscitation to restore splanchnic perfusion",
+            "points": 4
           },
           {
-            "item": "STAT surgery / vascular consult for revascularization",
+            "item": "STAT surgery / vascular consult for revascularization (embolectomy) +/- resection",
             "points": 6
           }
         ],
         "coreActions": [
           {
+            "item": "Systemic anticoagulation (IV heparin) once not contraindicated",
+            "points": 4
+          },
+          {
             "item": "Broad-spectrum antibiotics",
-            "points": 4
-          },
-          {
-            "item": "Systemic anticoagulation (heparin)",
-            "points": 4
-          },
-          {
-            "item": "NPO and NG decompression",
             "points": 3
           },
           {
-            "item": "CT angiography",
+            "item": "NPO and NG decompression",
+            "points": 2
+          },
+          {
+            "item": "Hold digoxin, treat supratherapeutic level/hyperkalemia, address AKI",
+            "points": 2
+          },
+          {
+            "item": "Safe disposition: admit emergently to OR (do NOT discharge), med reconciliation and anticoagulation/diuretic plan",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Serial lactate monitoring",
-            "points": 1
+            "item": "Serial lactate and serial abdominal exams",
+            "points": 2
           }
         ],
         "penalties": [
           {
             "item": "Discharging pain out of proportion",
-            "points": -4
+            "points": -5
+          },
+          {
+            "item": "Vasopressors / splanchnic vasoconstrictors that worsen ischemia",
+            "points": -2
           }
         ]
       },
       "requiredActions": [
-        "Aggressive IV fluid resuscitation",
-        "STAT surgery / vascular consult for revascularization"
+        "Aggressive IV fluid resuscitation to restore splanchnic perfusion",
+        "STAT surgery / vascular consult for revascularization (embolectomy) +/- resection"
       ],
       "optionalActions": [
+        "Systemic anticoagulation (IV heparin) once not contraindicated",
         "Broad-spectrum antibiotics",
-        "Systemic anticoagulation (heparin)",
         "NPO and NG decompression",
-        "CT angiography",
-        "Serial lactate monitoring"
+        "Hold digoxin, treat supratherapeutic level/hyperkalemia, address AKI",
+        "Safe disposition: admit emergently to OR (do NOT discharge), med reconciliation and anticoagulation/diuretic plan",
+        "Serial lactate and serial abdominal exams"
       ],
       "unsafeActions": [
-        "Discharging pain out of proportion"
+        "Discharging pain out of proportion",
+        "Vasopressors / splanchnic vasoconstrictors that worsen ischemia"
       ],
       "consults": [
         "Surgery",
         "Vascular Surgery / IR"
       ],
-      "disposition": "Emergent; OR",
+      "disposition": "Emergent; admit to OR (no discharge)",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Abdominal Pain (Mesenteric Ischemia)",
@@ -384,14 +405,15 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "tobacco_use"
+      "tobacco_use",
+      "medication_adherence"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "72-year-old woman, in severe distress from pain, restless. Cooperative.",
+    "affect": "72-year-old woman, in severe distress from pain, restless and frightened. Cooperative.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal stopped anticoagulation, digoxin, or the increased diuretic unless asked about medications, blood thinners, adherence, or recent hospitalizations",
       "Do not mention or hint at the diagnosis",
-      "Do not volunteer hidden exam or diagnostic findings",
+      "Do not volunteer hidden exam or diagnostic findings (bloody stool, orthostatic drop, dry membranes)",
       "Use lay language; avoid medical jargon and textbook phrasing"
     ]
   },
@@ -407,7 +429,56 @@
       ],
       "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
       "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "blood thinner",
+        "anticoagulation",
+        "apixaban",
+        "digoxin",
+        "water pill",
+        "diuretic"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "critical",
       "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "adherence",
+      "category": "meds",
+      "triggerConcepts": [
+        "do you take them as prescribed",
+        "adherence",
+        "miss any doses",
+        "stopped any medication",
+        "still taking"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 2,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "recent_hospitalization",
+      "category": "pmh",
+      "triggerConcepts": [
+        "recent hospitalization",
+        "admitted recently",
+        "in the hospital",
+        "heart failure",
+        "fluid overload",
+        "how have you been feeling"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
       "hiddenUntilAsked": true
     },
     {
@@ -457,12 +528,30 @@
       "triggerConcepts": [
         "any other symptoms",
         "associated symptoms",
-        "anything else"
+        "anything else",
+        "nausea",
+        "vomiting",
+        "palpitations"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
+    },
+    {
+      "id": "stool_bleeding",
+      "category": "ros",
+      "triggerConcepts": [
+        "bowel movements",
+        "stool",
+        "diarrhea",
+        "blood in stool",
+        "rectal bleeding"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language.]",
+      "importance": "core",
+      "points": 1,
+      "hiddenUntilAsked": true
     },
     {
       "id": "aggravating_alleviating",
@@ -484,20 +573,9 @@
       "triggerConcepts": [
         "past medical history",
         "medical problems",
-        "conditions"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take"
+        "conditions",
+        "atrial fibrillation",
+        "kidney"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -540,25 +618,46 @@
       "normalIfNotPresent": "Normal bowel sounds."
     },
     {
-      "id": "auscultate_aortic_area_finding_3",
-      "finding": "Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.",
+      "id": "auscultate_mitral_area_finding_3",
+      "finding": "Cardiac: irregularly irregular rhythm, tachycardic, no murmur, no S3, JVP not elevated. Rectal: occult/frank blood if examined.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
       ],
       "importance": "critical",
       "points": 5,
-      "normalIfNotPresent": "No murmur appreciated."
+      "normalIfNotPresent": "No murmur appreciated; rhythm not assessed."
     },
     {
-      "id": "assess_general_appearance_finding_4",
-      "finding": "General: distressed, pale, diaphoretic.",
+      "id": "assess_mucous_membranes_finding_4",
+      "finding": "Dry mucous membranes and poor skin turgor (volume depletion from recently increased diuretic).",
+      "revealedBy": [
+        "assess_mucous_membranes",
+        "assess_skin_turgor"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "Mucous membranes moist."
+    },
+    {
+      "id": "obtain_orthostatic_vitals_finding_5",
+      "finding": "Orthostatic vitals positive: BP drops to 88/58 with a rise in heart rate on standing (volume depletion).",
+      "revealedBy": [
+        "obtain_orthostatic_vitals"
+      ],
+      "importance": "core",
+      "points": 2,
+      "normalIfNotPresent": "No orthostatic change."
+    },
+    {
+      "id": "assess_general_appearance_finding_6",
+      "finding": "General: distressed, pale, diaphoretic, looks dry.",
       "revealedBy": [
         "assess_general_appearance"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No tremor or diaphoresis."
+      "normalIfNotPresent": "No distress or diaphoresis."
     }
   ],
   "overallScoring": {
@@ -571,65 +670,71 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Acute mesenteric ischemia",
-    "diagnosticFramework": "72F with atrial fibrillation presents with sudden, severe, diffuse abdominal pain that seems out of proportion to a relatively benign abdominal exam. The diagnosis is Acute mesenteric ischemia, reached by eliciting the focused history, performing the targeted exam, and interpreting the directed workup while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "72F with atrial fibrillation, CKD, and a recent heart-failure admission (now on digoxin and a recently increased diuretic, and having self-stopped her apixaban) presents with sudden, severe, diffuse abdominal pain out of proportion to a benign abdominal exam. The diagnosis is Acute mesenteric ischemia — embolic SMA occlusion — reached by eliciting the medication/adherence and recent-hospitalization history, recognizing volume depletion and the pain-out-of-proportion discrepancy, and using CTA to resolve the genuine fork between an occlusive embolus and nonocclusive low-flow ischemia while excluding perforation and ruptured AAA. The supratherapeutic digoxin (from AKI) is a confounder seen as digoxin effect on the EKG.",
     "keyHistoryClues": [],
     "keyPhysicalExamFindings": [
       "Abdomen: soft, mild diffuse tenderness EARLY without rebound or rigidity (pain out of proportion to exam); bowel sounds reduced. (Peritoneal signs would develop late once infarction occurs.)",
-      "Cardiac: irregularly irregular rhythm, no murmur. Rectal: occult/frank blood if examined.",
-      "General: distressed, pale, diaphoretic."
+      "Cardiac: irregularly irregular rhythm, tachycardic, no murmur, no S3, JVP not elevated. Rectal: occult/frank blood if examined.",
+      "Dry mucous membranes and poor skin turgor (volume depletion from recently increased diuretic).",
+      "Orthostatic vitals positive: BP drops to 88/58 with a rise in heart rate on standing (volume depletion).",
+      "General: distressed, pale, diaphoretic, looks dry."
     ],
     "keyDiagnosticFindings": [
       "Lactate",
       "CBC",
       "BMP",
       "LFTs",
+      "DigoxinLevel",
       "CTA_abdomen",
       "StoolEvaluation"
     ],
     "reasoningPathway": [
       "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Acute mesenteric ischemia while explicitly excluding must-not-miss causes.",
-      "Order a focused, order-sensitive workup and interpret EKG/CXR and labs.",
-      "Commit to Acute mesenteric ischemia and manage with stabilization, definitive treatment, consults, and disposition."
+      "Elicit the focused history, including medications, adherence (self-stopped anticoagulation), and the recent heart-failure hospitalization only on direct questioning.",
+      "Perform the targeted physical exam to reveal pain out of proportion, the irregular rhythm, and volume depletion.",
+      "Build a differential led by Acute mesenteric ischemia, name three mechanisms, and weigh occlusive embolus versus nonocclusive low-flow while excluding perforation and ruptured AAA.",
+      "Order CTA as the discriminating test plus lactate, BMP/VBG, and a digoxin level; interpret the EKG (AF with digoxin effect) and CXR.",
+      "Commit to embolic mesenteric ischemia and manage with resuscitation, revascularization, anticoagulation, correction of the digoxin/electrolyte confounders, and a safe emergent OR disposition (no discharge)."
     ],
     "commonPitfalls": [
-      "Discharging pain out of proportion"
+      "Discharging pain out of proportion",
+      "Calling the scooped digoxin-effect ST depression an acute STEMI",
+      "Anchoring on nonocclusive low-flow and missing the embolus",
+      "Missing the self-stopped anticoagulation as the embolic source"
     ],
     "managementPearls": [
-      "Aggressive IV fluid resuscitation",
-      "STAT surgery / vascular consult for revascularization"
+      "Aggressive IV fluid resuscitation to restore splanchnic perfusion",
+      "STAT surgery / vascular consult for revascularization (embolectomy) +/- resection"
     ],
     "criticalHistoryItems": [],
     "criticalExamItems": [
       "assess_rebound_tenderness",
-      "auscultate_aortic_area"
+      "auscultate_mitral_area"
     ],
     "criticalWorkupItems": [
-      "Serum lactate",
-      "CT angiography of the abdomen"
+      "CT angiography of the abdomen",
+      "Serum lactate"
     ],
     "criticalInterpretationItems": [
-      "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
-      "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+      "Atrial fibrillation with rapid ventricular response — the likely embolic source — with digoxin effect (scooped ST depression), no acute ST elevation.",
+      "Nonspecific upright film with no pulmonary edema and no subdiaphragmatic free air."
     ],
     "criticalManagementItems": [
-      "Aggressive IV fluid resuscitation",
-      "STAT surgery / vascular consult for revascularization"
+      "Aggressive IV fluid resuscitation to restore splanchnic perfusion",
+      "STAT surgery / vascular consult for revascularization (embolectomy) +/- resection"
     ],
     "keyImageInterpretationFindings": [
-      "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
-      "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+      "Atrial fibrillation with rapid ventricular response — the likely embolic source — with digoxin effect (scooped ST depression), no acute ST elevation.",
+      "Nonspecific upright film with no pulmonary edema and no subdiaphragmatic free air."
     ],
     "criticalImageInterpretationFindings": [
-      "Atrial fibrillation (irregularly irregular, no discrete P waves) — the likely embolic source. No acute ST elevation.",
-      "Nonspecific; importantly NO free air early (free air would indicate perforation from infarcted bowel)."
+      "Atrial fibrillation with rapid ventricular response — the likely embolic source — with digoxin effect (scooped ST depression), no acute ST elevation.",
+      "Nonspecific upright film with no pulmonary edema and no subdiaphragmatic free air."
     ],
     "imageInterpretationPearls": [
-      "An incidental abnormality is an interpretation task in its own right — name it, then judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives."
+      "Scooped/sagging ST depression in a patient on digoxin is digoxin EFFECT, not ischemia — confirm with the drug level and the clinical picture.",
+      "Atrial fibrillation on the tracing is the embolic source to name out loud, not an incidental finding.",
+      "On an abdominal-pain chest film, the deliberate pertinent negative is the absence of free air under the diaphragm."
     ]
   },
   "communicationScoring": {
@@ -640,11 +745,11 @@
         "points": 1
       },
       {
-        "item": "Shows empathy for the patient's concern",
+        "item": "Shows empathy for the patient's severe pain and fear",
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks about medication adherence non-judgmentally",
         "points": 1
       },
       {
@@ -659,9 +764,9 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
-    "ekgReplaced": false,
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated read (patient's own EKG: AF with digoxin effect)",
+    "ekgReplaced": true,
     "cxrReplaced": false,
     "backwardCompatible": true
   }

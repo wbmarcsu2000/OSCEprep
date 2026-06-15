@@ -1,57 +1,61 @@
 {
   "id": "dyspnea-07",
   "category": "Dyspnea",
+  "file": "dyspnea-07.json",
   "difficulty": "hard",
-  "title": "Sudden breathlessness, throat tightness, and a body rash",
+  "title": "Sudden breathlessness, throat swelling, and shock in a woman on a beta-blocker and an ACE inhibitor",
   "diagnosis": "Anaphylaxis",
   "chart": {
-    "ageSex": "32F",
-    "cc": "Trouble breathing and an itchy rash",
-    "oneLiner": "32F with sudden difficulty breathing, throat tightness, and a spreading hives rash minutes after eating at a restaurant.",
+    "ageSex": "58F",
+    "cc": "Throat swelling and trouble breathing",
+    "oneLiner": "58F with hypertension, type 2 diabetes, and atrial fibrillation on metoprolol, lisinopril, metformin, and apixaban, who developed sudden throat/lip swelling, wheeze, a spreading hives rash, and near-syncope within minutes of starting a meal at a wedding, now hypotensive with only a modestly elevated heart rate.",
     "vitals": {
-      "BP": "86/54",
-      "HR": "124",
-      "RR": "26",
-      "Temp": "37.0°C",
-      "SpO2": "91% RA"
+      "BP": "78/46",
+      "HR": "96",
+      "RR": "28",
+      "Temp": "36.9°C",
+      "SpO2": "90% RA"
     },
     "timer": 180
   },
-  "opening": "My throat feels like it's closing up, I can't catch my breath, and I'm covered in this itchy rash.",
-  "patientFile": "PERSONA: 32-year-old woman, anxious and distressed, speaking in short phrases, scratching at hives on her arms and chest. Cooperative but frightened.\n\nHPI: About 15-20 minutes ago, partway through dinner at a restaurant, she developed sudden generalized itching and hives, a tight/swollen sensation in her throat and lips, wheeze, breathlessness, and a feeling of light-headedness as if she might pass out. She also has crampy abdominal pain and one episode of vomiting. Symptoms came on FAST and are still worsening. She thinks the dish may have contained nuts (only if asked about what she ate / possible triggers). NO chest pain, NO fevers, NO recent immobility/long travel, NO calf pain or leg swelling, NO prior cardiac or lung disease.\nPMH: seasonal allergies and mild eczema; one prior milder reaction to nuts years ago (if asked). MEDS: occasional cetirizine; NO regular medications; she does NOT carry an epinephrine auto-injector (admits this only if asked). ALLERGIES: tree nuts (known, if asked). SOCIAL: nonsmoker, social alcohol, works as a teacher. FAMILY: father has food allergies.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, flushed, mild-moderate respiratory distress, speaking in short phrases.\n- Vitals: BP 86/54, HR 124, RR 26, 37.0°C, SpO2 91% RA.\n- Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.\n- HEENT: swollen lips and tongue (angioedema); audible inspiratory stridor at the throat; oropharynx without exudate.\n- Lungs: diffuse expiratory WHEEZE bilaterally with a prolonged expiratory phase.\n- Cardiac: tachycardic, regular, no murmur; extremities warm, no edema, no calf tenderness.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the nut exposure, the prior reaction, or that she has no epinephrine auto-injector unless asked about triggers/diet, prior episodes, or her medications/allergy plan.\n- Angioedema and stridor are revealed only if the mouth/throat is examined; urticaria only if the skin is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.",
+  "opening": "My lips and throat are swelling up, I can't get a good breath, and I came over so dizzy I nearly went down.",
+  "patientFile": "PERSONA: 58-year-old woman, frightened and short of breath, speaking in short phrases, scratching at hives on her arms and chest, swollen lips making her words a little muffled. Cooperative but distressed and worried she is going to choke.\n\nHPI: About 10-15 minutes ago, a few bites into the meal at a relative's wedding, she developed sudden generalized itching and a spreading hives rash, a tight and swollen feeling in her throat, lips, and tongue, wheezing, breathlessness, and a wave of light-headedness so severe she nearly fainted. She also has crampy belly pain and felt nauseated with one episode of dry heaving. It all came on FAST and is still getting worse. The dish was a shrimp-and-peanut stir-fry and she thinks it had shellfish and possibly nuts in it (only if asked about what she ate / possible triggers). She has had milder lip tingling with shellfish once before but never anything like this (if asked). NO chest pain or pressure, NO palpitations beyond her usual irregular heartbeat, NO fevers, NO recent immobility or long travel, NO calf pain or leg swelling, NO cough productive of blood.\nKEY CONFOUNDERS (reveal only when asked the relevant question): She takes a daily 'water/blood-pressure pill for my heart rhythm' that slows her pulse (metoprolol, a beta-blocker) and another blood-pressure pill she has taken for years (lisinopril, an ACE inhibitor). She is NOT sure if she missed any doses today. She has had occasional mild lip/tongue puffiness in the past that she blamed on 'dry air,' never severe (if asked specifically about prior swelling episodes — this is a deliberate ACE-inhibitor angioedema red herring). She does NOT own or carry an epinephrine auto-injector and has no allergy action plan (admits only if asked).\nPMH: hypertension; type 2 diabetes; atrial fibrillation (rate-controlled); seasonal allergies; one prior mild shellfish reaction (if asked). MEDS: metoprolol (beta-blocker) daily; lisinopril (ACE inhibitor) daily; metformin; apixaban (a blood thinner for her atrial fibrillation); occasional cetirizine. ALLERGIES: shellfish (known, if asked); no known drug allergies. SOCIAL: nonsmoker, rare alcohol, retired bookkeeper, lives with her husband. FAMILY: a brother with food allergies; no family history of unexplained recurrent swelling without hives.\n\nPHYSICAL EXAM (report ONLY what is requested; give normals when asked):\n- General: anxious, flushed, moderate respiratory distress, speaking in short phrases.\n- Vitals: BP 78/46, HR 96 (note: only modestly elevated despite shock — she is on a beta-blocker), RR 28, 36.9°C, SpO2 90% RA.\n- Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura. (The presence of hives points toward a mast-cell / allergic process rather than isolated ACE-inhibitor angioedema.)\n- HEENT: swollen lips and tongue (angioedema); audible inspiratory stridor at the throat; oropharynx without exudate.\n- Lungs: diffuse expiratory WHEEZE bilaterally with a prolonged expiratory phase.\n- Cardiac: irregularly irregular rhythm (known atrial fibrillation), no murmur; extremities warm early then cool/clammy as she decompensates; no edema, no calf tenderness.\n- Mucous membranes: dry; capillary refill ~3-4 s peripherally as she becomes hypoperfused.\n\nHIDDEN RULES:\n- NEVER state or hint at a diagnosis. Answer only what is asked.\n- Do NOT volunteer the shellfish/peanut exposure, the prior reaction, the beta-blocker/ACE-inhibitor, the prior mild lip puffiness, or that she has no epinephrine auto-injector unless asked about triggers/diet, prior episodes, medications, prior swelling, or her allergy plan.\n- Angioedema and stridor are revealed only if the mouth/throat is examined; urticaria only if the skin is examined; the irregular rhythm only if the heart is examined.\n- If asked something not in this file, give a reasonable normal/negative answer.\n- Use lay language; avoid medical jargon and textbook phrasing.",
   "dx": {
     "labs": {
-      "Tryptase": "Serum tryptase ELEVATED, drawn within 1-2 h of onset (supports mast-cell activation; a normal level does NOT exclude anaphylaxis).",
-      "CBC": "WBC 11.0, Hgb 13.8, Plt 260 — no leukocytosis to suggest infection.",
-      "BMP": "Within normal limits; bicarbonate at the low-normal range with the acute illness.",
-      "Troponin": "NEGATIVE — no evidence of acute coronary ischemia driving the hypotension.",
-      "Lactate": "Mildly elevated, consistent with hypoperfusion/distributive shock; expected to clear with treatment."
+      "Tryptase": "Serum tryptase ELEVATED at 28 ng/mL drawn within 1-2 h of onset (normal <11.4); strongly supports mast-cell activation / anaphylaxis. A normal level would NOT exclude anaphylaxis, and an elevated level argues AGAINST isolated bradykinin-mediated (ACE-inhibitor) angioedema.",
+      "CBC": "WBC 12.4, Hgb 13.6, Plt 244 — mild stress leukocytosis, no left shift or bandemia to suggest infection.",
+      "BMP": "Na 138, K 5.4 (mildly elevated), Cl 100, HCO3 16, BUN 34, Creatinine 1.6 (baseline ~0.9 — acute kidney injury), glucose 188. Anion gap = 138 - (100 + 16) = 22 (elevated; normal 8-12), consistent with a lactic (high-anion-gap) metabolic acidosis from shock. The AKI and mild hyperkalemia reflect hypoperfusion on a background of lisinopril and apixaban.",
+      "Troponin": "High-sensitivity troponin MILDLY elevated at 48 ng/L (ref <14) without a classic rise-and-fall yet — consistent with type 2 (demand) ischemia from hypotension and tachy-dysrhythmia, NOT a primary plaque-rupture ACS driving the picture.",
+      "Lactate": "Elevated at 4.2 mmol/L (ref <2.0), consistent with hypoperfusion / distributive shock and explaining the elevated anion gap; expected to clear with epinephrine and fluids.",
+      "VBG": "Venous blood gas: pH 7.28, pCO2 38, HCO3 16 — a metabolic acidosis with inadequate respiratory compensation given the bronchospasm and fatigue, flagging impending respiratory failure."
     }
   },
   "images": {
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "source": "https://litfl.com/sinus-tachycardia-ecg-library/",
+      "integrated": true,
+      "litflStudyN": 2,
+      "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "findings": "Sinus tachycardia at ~124 bpm with no acute ST-segment or T-wave changes; normal axis and intervals.",
-      "verify": "Source a study matching: Sinus tachycardia at ~124 bpm with no acute ST-segment or T-wave changes. Self-host with appropriate credit; do not reuse the prior normal tracing.",
+      "findings": "Atrial fibrillation (irregularly irregular, no discrete P waves) with a ventricular rate of ~96-110 bpm — strikingly controlled for the degree of shock because she is on metoprolol; no acute ST-elevation, with only minor rate-related/demand ST-segment changes and no convincing primary ischemic pattern.",
+      "verify": "Source a study matching: atrial fibrillation with a controlled/modestly elevated ventricular response and no acute ST-elevation. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing sinus tachycardia without ischemia",
+      "imageDescription": "12-lead showing atrial fibrillation with a controlled ventricular response and no acute ST-elevation",
       "searchTerms": [
-        "sinus tachycardia ECG",
-        "sinus tachycardia 12 lead normal axis"
+        "atrial fibrillation ECG",
+        "atrial fibrillation controlled ventricular response 12 lead"
       ],
       "recommendedSource": "LITFL ECG Library (litfl.com)",
-      "clinicalVignette": "A 35-year-old woman presents with sudden breathlessness, throat tightness, and hives after a known allergen exposure."
+      "clinicalVignette": "A 58-year-old woman with rate-controlled atrial fibrillation on a beta-blocker presents in distributive shock with a heart rate that is only modestly elevated."
     },
     "cxr": {
       "label": "Chest X-ray",
       "asset": null,
       "source": "https://commons.wikimedia.org/w/index.php?search=normal%20chest%20xray%20PA&title=Special:MediaSearch&type=image",
       "license": "Wikimedia Commons — verify file license",
-      "findings": "Clear lung fields with no consolidation, effusion, pneumothorax, or pulmonary edema; normal cardiac silhouette.",
+      "findings": "Clear lung fields with no consolidation, effusion, pneumothorax, or pulmonary edema; normal cardiac silhouette and no widened mediastinum.",
       "verify": "Source a study matching: Clear lung fields with no consolidation, effusion, pneumothorax, or pulmonary edema. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "assetNeeded": true,
       "imageDescription": "normal chest radiograph clear lungs",
@@ -60,7 +64,7 @@
         "normal chest radiograph clear lungs"
       ],
       "recommendedSource": "Radiopaedia.org",
-      "clinicalVignette": "A 40-year-old man presents with acute dyspnea, urticaria, and wheeze shortly after a bee sting."
+      "clinicalVignette": "A 58-year-old woman presents with acute dyspnea, urticaria, angioedema, and wheeze shortly after eating shellfish."
     }
   },
   "revealKeys": [
@@ -69,62 +73,77 @@
     "BMP",
     "Troponin",
     "Lactate",
+    "VBG",
     "ekg",
     "cxr"
   ],
   "essential": [
     "Tryptase",
-    "Troponin"
+    "Troponin",
+    "BMP"
   ],
   "steps": [
     {
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis).",
-      "rubric": "Anaphylaxis (leading,8; accepts anaphylactic reaction). Acute asthma/bronchospasm (CANT-MISS to consider,4). Angioedema (ACE-inhibitor/hereditary) without anaphylaxis (CANT-MISS,4). Vasovagal/septic/other distributive shock (core,3). Acute coronary syndrome causing shock (core,2). Panic attack (bonus,2). Named leading dx w/ recognition that this is a clinical, time-critical diagnosis (core,2).",
-      "idealAnswer": "Leading diagnosis: Anaphylaxis. Must-not-miss diagnoses to consider/exclude: severe acute asthma/bronchospasm; isolated angioedema (ACE-inhibitor or hereditary). Also reasonable: other distributive/septic shock; acute coronary syndrome; panic attack.",
+      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). This woman is on both a beta-blocker and an ACE inhibitor — name three distinct mechanisms/etiologies that could cause acute upper-airway swelling and explain why you favor your leading diagnosis over them.",
+      "rubric": "Anaphylaxis (leading,7; accepts anaphylactic shock). Name three mechanisms of acute angioedema/airway swelling: (1) ACE-inhibitor / bradykinin-mediated angioedema given lisinopril (CANT-MISS competitor,4); (2) mast-cell / IgE allergic (histaminergic) angioedema; (3) hereditary/acquired C1-esterase-inhibitor deficiency (each etiology named, up to 3). Severe acute asthma / bronchospasm as a mimic (CANT-MISS,3). Other distributive/septic shock or scombroid poisoning (core,2). Primary cardiac event / type 2 MI given AF + troponin as a confounder to exclude (core,2). Recognizes hives + multisystem involvement + temporal allergen link favor ANAPHYLAXIS over isolated ACE-inhibitor angioedema (which classically lacks urticaria/bronchospasm) (core,3). PENALTY: anchoring on ACE-inhibitor angioedema and withholding epinephrine because she takes lisinopril (-3).",
+      "idealAnswer": "Leading diagnosis: Anaphylaxis (anaphylactic shock) — diffuse urticaria, angioedema, stridor, bronchospasm, hypotension, and GI symptoms within minutes of a shellfish/peanut meal. The closest competitor is ACE-inhibitor (bradykinin-mediated) angioedema from her lisinopril, but that classically causes isolated lip/tongue/airway swelling WITHOUT urticaria, wheeze, or shock — the hives, bronchospasm, multisystem involvement, and clear food trigger favor anaphylaxis. Three mechanisms of acute airway swelling to name: (1) bradykinin-mediated (ACE-inhibitor) angioedema; (2) mast-cell/IgE histaminergic (allergic) angioedema; (3) C1-esterase-inhibitor deficiency (hereditary or acquired) angioedema. Also consider severe acute asthma/bronchospasm, other distributive/septic shock or scombroid, and a primary cardiac event/type 2 MI (her AF and mildly elevated troponin are confounders to exclude, not the driver).",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
-            "item": "Acute asthma / bronchospasm",
+            "item": "ACE-inhibitor / bradykinin-mediated angioedema (lisinopril) as the leading competitor",
             "points": 4
           },
           {
-            "item": "Angioedema (ACE-inhibitor / hereditary) without anaphylaxis",
-            "points": 4
+            "item": "Severe acute asthma / bronchospasm",
+            "points": 3
+          },
+          {
+            "item": "Anaphylaxis named as leading, time-critical clinical diagnosis",
+            "points": 7
           }
         ],
         "coreActions": [
           {
-            "item": "Vasovagal / septic / other distributive shock",
+            "item": "Names three mechanisms of angioedema (bradykinin/ACE-I, mast-cell/IgE, C1-esterase-inhibitor deficiency)",
             "points": 3
           },
           {
-            "item": "Acute coronary syndrome causing shock",
+            "item": "Other distributive / septic shock or scombroid poisoning",
             "points": 2
           },
           {
-            "item": "Named leading dx w/ recognition that this is a clinical, time-critical diagnosis",
+            "item": "Primary cardiac event / type 2 MI given AF + troponin (confounder to exclude)",
             "points": 2
+          },
+          {
+            "item": "Recognizes hives + multisystem + allergen link favor anaphylaxis over isolated ACE-I angioedema",
+            "points": 3
           }
         ],
         "bonusActions": [
           {
-            "item": "Panic attack",
-            "points": 2
+            "item": "Panic attack / vocal-cord dysfunction as a mimic",
+            "points": 1
           }
         ],
-        "penalties": []
+        "penalties": [
+          {
+            "item": "Anchors on ACE-inhibitor angioedema and withholds epinephrine because she takes lisinopril",
+            "points": -3
+          }
+        ]
       },
       "mustNotMiss": [
-        "Acute asthma / bronchospasm",
-        "Angioedema (ACE-inhibitor / hereditary) without anaphylaxis"
+        "ACE-inhibitor / bradykinin-mediated angioedema (lisinopril) as the leading competitor",
+        "Severe acute asthma / bronchospasm"
       ],
       "acceptableAlternatives": [
-        "Vasovagal / septic / other distributive shock",
-        "Acute coronary syndrome causing shock"
+        "Other distributive / septic shock or scombroid poisoning",
+        "Primary cardiac event / type 2 MI given AF + troponin (confounder to exclude)"
       ]
     },
     {
@@ -133,8 +152,8 @@
       "max": 15,
       "reveal": true,
       "prompt": "What initial assessment/workup do you want? (Consider what changes management — and what should NOT delay treatment.)",
-      "rubric": "Recognize that anaphylaxis is a CLINICAL diagnosis and treat immediately — do NOT wait for labs (CANT-MISS,5). Continuous pulse oximetry and cardiac monitoring (3). Serum tryptase within 1-2 h to support the diagnosis (3). IV access + bloods (CBC, BMP, lactate, troponin) to assess shock/exclude mimics (2). ECG given hypotension/tachycardia (2). PENALTY: delaying epinephrine to obtain a CXR/CT or to await tryptase results (-3).",
-      "idealAnswer": "Order: EKG; CXR; Tryptase; CBC; BMP; Troponin; Lactate.",
+      "rubric": "Recognize that anaphylaxis is a CLINICAL diagnosis and treat immediately — do NOT wait for labs (CANT-MISS,5). Continuous pulse oximetry and cardiac monitoring (esp. with AF on a beta-blocker) (2). Serum tryptase within 1-2 h to support the diagnosis and help separate it from ACE-inhibitor angioedema (2). IV access + bloods: CBC, BMP (assess AKI/K+), lactate, troponin, VBG (2). EKG given hypotension, AF, and a troponin (2). CXR to exclude pulmonary mimics (1). Recheck a baseline/convalescent tryptase later to exclude a mast-cell disorder (bonus,1). PENALTY: delaying epinephrine to obtain a CXR/CT or to await tryptase results (-3).",
+      "idealAnswer": "Order: Tryptase (within 1-2 h, and plan a convalescent baseline later); CBC; BMP (look for AKI and hyperkalemia given lisinopril); Lactate; Troponin; VBG; EKG; CXR. But emphasize that anaphylaxis is a CLINICAL diagnosis — give epinephrine NOW and do not let any test delay it. Put her on continuous pulse oximetry and cardiac monitoring given her atrial fibrillation and beta-blocker.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
@@ -145,31 +164,36 @@
         ],
         "coreActions": [
           {
-            "item": "Continuous pulse oximetry and cardiac monitoring",
-            "points": 3
+            "item": "Continuous pulse oximetry and cardiac monitoring (AF on a beta-blocker)",
+            "points": 2
           },
           {
             "item": "Serum tryptase within 1-2 h",
-            "points": 3
-          },
-          {
-            "item": "IV access + bloods (CBC, BMP, lactate, troponin)",
             "points": 2
           },
           {
-            "item": "ECG given hypotension/tachycardia",
+            "item": "IV access + bloods (CBC, BMP, lactate, troponin, VBG)",
             "points": 2
           },
           {
-            "item": "EKG",
+            "item": "EKG given hypotension, AF, and troponin",
             "points": 2
           },
           {
-            "item": "CXR",
-            "points": 2
+            "item": "CXR to exclude pulmonary mimics",
+            "points": 1
+          },
+          {
+            "item": "BMP to assess AKI and hyperkalemia",
+            "points": 1
           }
         ],
-        "bonusActions": [],
+        "bonusActions": [
+          {
+            "item": "Plan a convalescent baseline tryptase to exclude a mast-cell disorder",
+            "points": 1
+          }
+        ],
         "penalties": [
           {
             "item": "Delaying epinephrine to obtain imaging or await tryptase results",
@@ -181,10 +205,11 @@
         "Recognize anaphylaxis is a clinical diagnosis — treat immediately, do not wait for labs"
       ],
       "optionalTests": [
-        "Continuous pulse oximetry and cardiac monitoring",
+        "Continuous pulse oximetry and cardiac monitoring (AF on a beta-blocker)",
         "Serum tryptase within 1-2 h",
-        "IV access + bloods (CBC, BMP, lactate, troponin)",
-        "ECG given hypotension/tachycardia"
+        "IV access + bloods (CBC, BMP, lactate, troponin, VBG)",
+        "EKG given hypotension, AF, and troponin",
+        "CXR to exclude pulmonary mimics"
       ],
       "contraindicatedTests": [
         "Delaying epinephrine to obtain imaging or await tryptase results"
@@ -199,33 +224,36 @@
       "max": 15,
       "type": "read",
       "image": "ekg",
-      "prompt": "Here is the patient's 12-lead EKG. Describe your findings.",
-      "rubric": "Findings = sinus tachycardia, no acute ischemia. CREDIT: rate & rhythm — sinus tachycardia (7); no acute ischemic ST/T changes, normal axis/intervals (5); systematic read (3). PENALTY: over-calling ischemia or attributing the hypotension to a primary cardiac cause (-3).",
+      "prompt": "Here is the patient's 12-lead EKG. Describe your findings and how the rhythm and rate inform her physiology and your treatment.",
+      "rubric": "Findings = atrial fibrillation (irregularly irregular, no discrete P waves) with a ventricular rate (~96-110) that is CONTROLLED/only modestly elevated for the degree of shock because of her metoprolol; no acute ST-elevation, only minor rate-related/demand ST changes. CREDIT: identifies atrial fibrillation as the rhythm (6); recognizes the rate is inappropriately controlled for shock and attributes it to beta-blockade — which predicts a blunted response to epinephrine and the possible need for glucagon (5); no acute ST-elevation / no primary ischemic pattern, attributes the troponin to type 2 demand ischemia (4). PENALTY: over-calling a primary STEMI/ACS as the driver of the shock or missing that this is atrial fibrillation (-3).",
       "keyFindings": [
-        "identifies sinus tachycardia",
-        "states there are no acute ischemic ST/T changes"
+        "identifies atrial fibrillation (irregularly irregular, no P waves)",
+        "recognizes the ventricular rate is controlled/blunted for shock due to beta-blockade",
+        "no acute ST-elevation; troponin is type 2 demand ischemia, not primary ACS"
       ],
       "criticalFindings": [
-        "Sinus tachycardia without acute ischemic changes."
+        "Atrial fibrillation with a ventricular rate that is inappropriately controlled for the degree of shock because of beta-blockade — predicting a blunted epinephrine response and possible need for glucagon."
       ],
       "commonMistakes": [
-        "over-calling rate-related ST changes as ischemia",
-        "attributing the shock to a primary cardiac event rather than distributive shock"
+        "missing that the rhythm is atrial fibrillation and calling it sinus",
+        "over-calling a primary STEMI/ACS as the cause of the hypotension",
+        "failing to connect the modest heart rate to beta-blockade and refractory anaphylaxis"
       ],
-      "idealAnswer": "Sinus tachycardia at ~124 bpm with no acute ST-segment or T-wave changes and normal axis/intervals — consistent with compensatory tachycardia from distributive shock, not primary ischemia.",
+      "idealAnswer": "Atrial fibrillation — irregularly irregular with no discrete P waves — at a ventricular rate of only ~96-110 bpm, which is strikingly CONTROLLED for someone in distributive shock. That blunted rate is the metoprolol (beta-blockade) at work, and it warns you she may respond poorly to standard epinephrine and need a glucagon bolus. There is no acute ST-elevation and no convincing primary ischemic pattern; the mildly elevated troponin is best explained by type 2 (demand) ischemia from hypotension and the dysrhythmia, not a primary ACS driving the picture.",
       "scoring": {
         "maxPoints": 15,
         "criticalActions": [
-          "Sinus tachycardia without acute ischemic changes."
+          "Atrial fibrillation with a ventricular rate that is inappropriately controlled for the degree of shock because of beta-blockade — predicting a blunted epinephrine response and possible need for glucagon."
         ],
         "coreActions": [
-          "identifies sinus tachycardia",
-          "states there are no acute ischemic ST/T changes"
+          "identifies atrial fibrillation (irregularly irregular, no P waves)",
+          "recognizes the ventricular rate is controlled/blunted for shock due to beta-blockade",
+          "no acute ST-elevation; troponin is type 2 demand ischemia, not primary ACS"
         ],
         "bonusActions": [],
         "penalties": [
           {
-            "label": "over-calls ischemia / attributes shock to a primary cardiac cause",
+            "label": "over-calls primary STEMI/ACS or misses atrial fibrillation",
             "points": -3
           }
         ]
@@ -238,7 +266,7 @@
       "type": "read",
       "image": "cxr",
       "prompt": "Here is the patient's chest X-ray. Describe your findings.",
-      "rubric": "Findings = clear film, no acute process. CREDIT: correctly identifies a normal/clear film (6); explicitly excludes pneumothorax, consolidation, effusion, and pulmonary edema as mimics (4). PENALTY: inventing pathology or letting the CXR delay treatment (-2).",
+      "rubric": "Findings = clear film, no acute process. CREDIT: correctly identifies a normal/clear film (6); explicitly excludes pneumothorax, consolidation, effusion, and pulmonary edema as mimics — and notes a clear film argues against a primary pulmonary or cardiac cause of the hypoxia/shock (4). PENALTY: inventing pathology or letting the CXR delay treatment (-2).",
       "keyFindings": [
         "identifies a clear/normal film",
         "explicitly excludes pneumothorax, consolidation, effusion, and pulmonary edema"
@@ -250,7 +278,7 @@
         "inventing infiltrates or edema to fit a respiratory complaint",
         "delaying epinephrine to obtain or scrutinize the film"
       ],
-      "idealAnswer": "Clear lung fields with a normal cardiac silhouette; no consolidation, effusion, pneumothorax, or pulmonary edema — the CXR is to exclude mimics and should not delay treatment.",
+      "idealAnswer": "Clear lung fields with a normal cardiac silhouette and no widened mediastinum; no consolidation, effusion, pneumothorax, or pulmonary edema — the CXR is to exclude pulmonary/cardiac mimics of her hypoxia and should not delay treatment.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [
@@ -273,70 +301,73 @@
       "id": "revised",
       "label": "Revised Dx",
       "max": 10,
-      "prompt": "Sudden urticaria, angioedema, stridor and wheeze, hypotension, and GI symptoms minutes after a likely nut exposure, with an elevated tryptase, a negative troponin, and a near-normal EKG/CXR. What is your diagnosis and what did you rule out?",
-      "rubric": "Anaphylaxis — multi-system involvement (skin/mucosa + respiratory + cardiovascular + GI) after a likely allergen (6). Cites the supportive elevated tryptase while noting a normal tryptase would not exclude it; explicitly excludes a primary cardiac event (negative troponin, no ischemia on EKG) and isolated angioedema/asthma (4).",
-      "idealAnswer": "Anaphylaxis. ",
+      "prompt": "Putting it together: sudden urticaria, angioedema, stridor and wheeze, hypotension, and GI symptoms minutes after a shellfish/peanut meal; tryptase elevated; troponin only mildly up; the EKG shows atrial fibrillation with a controlled rate; BMP shows an AKI with a high anion gap and mild hyperkalemia. What is your committed diagnosis, what is your single best discriminating test versus the closest competitor, and what residual ambiguity remains?",
+      "rubric": "Anaphylaxis (anaphylactic shock) — multi-system involvement (skin/mucosa + respiratory + cardiovascular + GI) within minutes of a food allergen, with an elevated tryptase (6). Names the discriminating test/feature vs the closest competitor: the URTICARIA + bronchospasm + an ELEVATED tryptase distinguish histaminergic anaphylaxis from isolated ACE-inhibitor (bradykinin) angioedema (which lacks hives and has a normal tryptase) — while noting a normal tryptase would NOT have excluded anaphylaxis; explains the troponin/AKI/anion-gap acidosis/hyperkalemia as secondary to shock (and lisinopril) rather than separate primary diagnoses, and explicitly excludes a primary ACS (4).",
+      "idealAnswer": "Anaphylaxis (anaphylactic shock). The multisystem picture — diffuse urticaria, lip/tongue angioedema with stridor, bilateral wheeze, hypotension, and GI cramping minutes after a shellfish/peanut meal — together with an elevated serum tryptase commits the diagnosis. The single best discriminator versus the closest competitor (ACE-inhibitor/bradykinin-mediated angioedema from her lisinopril) is the combination of urticaria + bronchospasm + an ELEVATED tryptase: ACE-inhibitor angioedema is bradykinin-mediated, classically has NO hives and a NORMAL tryptase. Residual ambiguity: a normal tryptase would not have excluded anaphylaxis, so a convalescent baseline tryptase is needed to exclude an underlying mast-cell disorder, and her lisinopril may still have lowered her threshold/worsened the angioedema. The secondary derangements — mildly elevated troponin (type 2 demand ischemia, not primary ACS, supported by AF without ST-elevation), the AKI with a high-anion-gap lactic acidosis, and the mild hyperkalemia — are all consequences of shock on a background of lisinopril/apixaban, not separate primary diagnoses.",
       "scoring": {
         "maxPoints": 10,
         "criticalActions": [],
         "coreActions": [],
-        "bonusActions": [
-          {
-            "item": "Notes a normal tryptase would not exclude anaphylaxis",
-            "points": 2
-          }
-        ],
+        "bonusActions": [],
         "penalties": []
       },
       "mustNotMiss": [
-        "Acute asthma / bronchospasm",
-        "Angioedema (ACE-inhibitor / hereditary) without anaphylaxis"
+        "ACE-inhibitor / bradykinin-mediated angioedema (lisinopril) as the leading competitor",
+        "Severe acute asthma / bronchospasm"
       ],
       "acceptableAlternatives": [
-        "Vasovagal / septic / other distributive shock",
-        "Acute coronary syndrome causing shock"
+        "Other distributive / septic shock or scombroid poisoning",
+        "Primary cardiac event / type 2 MI given AF + troponin (confounder to exclude)"
       ]
     },
     {
       "id": "management",
       "label": "Management",
       "max": 25,
-      "prompt": "What is your management plan?",
-      "rubric": "Per MGH anaphylaxis: IM epinephrine 0.3-0.5 mg (1:1000) into the anterolateral thigh, repeat q5-15 min PRN — FIRST-LINE (CANT-MISS,8); position supine with legs elevated and give high-flow oxygen (3); aggressive IV crystalloid bolus for hypotension (3); protect the airway / prepare for early intubation given stridor & angioedema (3); adjuncts H1/H2 antihistamines and corticosteroids as SECOND-LINE only (2); start an epinephrine infusion / glucagon if refractory (esp. on beta-blockers) (2); observe for biphasic reaction, prescribe an epinephrine auto-injector, allergy referral, and avoidance counseling at discharge (2). PENALTY: giving antihistamines/steroids INSTEAD of or BEFORE epinephrine (-3); discharging without an epinephrine auto-injector / observation (-2).",
-      "idealAnswer": "Give IM epinephrine 0.3-0.5 mg of 1:1000 into the anterolateral thigh immediately and repeat every 5-15 min as needed — this is first-line and the only treatment that reverses the reaction. Place supine with legs elevated, give high-flow oxygen, and bolus IV crystalloid for hypotension. Protect the airway and prepare for early intubation given stridor and angioedema. Add H1/H2 antihistamines and corticosteroids as second-line adjuncts only. For refractory shock start an epinephrine infusion (consider glucagon if on a beta-blocker). Observe for a biphasic reaction (typically up to 4-6+ h), then discharge with an epinephrine auto-injector prescription, allergy/immunology referral, and trigger-avoidance counseling.",
+      "prompt": "What is your management plan, including how the beta-blocker changes your approach and your disposition/safe-discharge plan?",
+      "rubric": "Per MGH anaphylaxis: IM epinephrine 0.3-0.5 mg (1:1000) into the anterolateral thigh, repeat q5-15 min PRN — FIRST-LINE (CANT-MISS,7); because she is on a BETA-BLOCKER and may be refractory to epinephrine, give IV GLUCAGON 1-5 mg and start an epinephrine infusion early (CANT-MISS,4); position supine with legs elevated and give high-flow oxygen (2); aggressive IV crystalloid bolus for hypotension (2); protect the airway / prepare for early intubation (difficult airway given angioedema) (2); STOP the lisinopril as a contributor and hold further ACE-inhibitor (2); adjuncts H1/H2 antihistamines and corticosteroids as SECOND-LINE only (2); SAFE DISPOSITION: admit/observe for a biphasic reaction (prolonged given beta-blockade), prescribe and TEACH an epinephrine auto-injector, allergy/immunology referral, replace the ACE inhibitor with a different antihypertensive class, document shellfish/nut allergy, and arrange close follow-up (2). PENALTY: giving antihistamines/steroids INSTEAD of or BEFORE epinephrine (-3); withholding epinephrine because she is hypotensive/on a beta-blocker/elderly (-3); discharging without an epinephrine auto-injector, observation, or stopping the ACE inhibitor (-2).",
+      "idealAnswer": "Give IM epinephrine 0.3-0.5 mg of 1:1000 into the anterolateral thigh IMMEDIATELY and repeat every 5-15 min as needed — it is first-line and the only treatment that reverses the reaction; never withhold it because she is hypotensive, elderly, or on a beta-blocker. Anticipate a BLUNTED response from her metoprolol: give IV glucagon 1-5 mg and start an epinephrine infusion early for refractory shock. Place supine with legs elevated, give high-flow oxygen, and bolus IV crystalloid. Prepare for a difficult airway and early intubation given the angioedema and stridor. Stop the lisinopril (a contributor to angioedema and the AKI/hyperkalemia) and add H1/H2 antihistamines and corticosteroids as second-line adjuncts only. SAFE DISPOSITION/DISCHARGE: admit and observe for a prolonged biphasic reaction (longer monitoring given beta-blockade); before discharge, prescribe AND demonstrate an epinephrine auto-injector (two devices), give an allergy action plan, refer to allergy/immunology, replace the ACE inhibitor with a different antihypertensive class, document the shellfish/nut allergy prominently, counsel strict avoidance, and arrange close primary-care/allergy follow-up.",
       "scoring": {
         "maxPoints": 25,
         "criticalActions": [
           {
             "item": "IM epinephrine into the anterolateral thigh (first-line), repeat PRN",
-            "points": 8
+            "points": 7
+          },
+          {
+            "item": "IV glucagon and early epinephrine infusion for beta-blocker-refractory shock",
+            "points": 4
           }
         ],
         "coreActions": [
           {
             "item": "Supine with legs elevated + high-flow oxygen",
-            "points": 3
+            "points": 2
           },
           {
             "item": "Aggressive IV crystalloid bolus for hypotension",
-            "points": 3
+            "points": 2
           },
           {
-            "item": "Protect airway / prepare for early intubation",
-            "points": 3
+            "item": "Protect airway / prepare for early intubation (difficult airway)",
+            "points": 2
+          },
+          {
+            "item": "Stop the lisinopril (ACE inhibitor) as a contributor",
+            "points": 2
           },
           {
             "item": "H1/H2 antihistamines and corticosteroids as second-line adjuncts",
             "points": 2
           },
           {
-            "item": "Epinephrine infusion / glucagon if refractory",
+            "item": "Safe disposition: admit/observe for biphasic reaction, prescribe and teach an auto-injector, allergy referral, replace ACE inhibitor, document allergy, close follow-up",
             "points": 2
           }
         ],
         "bonusActions": [
           {
-            "item": "Observe for biphasic reaction; discharge with auto-injector, allergy referral, avoidance counseling",
+            "item": "Plan a convalescent baseline tryptase to exclude a mast-cell disorder",
             "points": 2
           }
         ],
@@ -346,30 +377,36 @@
             "points": -3
           },
           {
-            "item": "Discharging without an epinephrine auto-injector / observation",
+            "item": "Withholding epinephrine because she is hypotensive / on a beta-blocker / elderly",
+            "points": -3
+          },
+          {
+            "item": "Discharging without an epinephrine auto-injector / observation / stopping the ACE inhibitor",
             "points": -2
           }
         ]
       },
       "requiredActions": [
-        "IM epinephrine into the anterolateral thigh (first-line), repeat PRN"
+        "IM epinephrine into the anterolateral thigh (first-line), repeat PRN",
+        "IV glucagon and early epinephrine infusion for beta-blocker-refractory shock"
       ],
       "optionalActions": [
         "Supine with legs elevated + high-flow oxygen",
         "Aggressive IV crystalloid bolus for hypotension",
-        "Protect airway / prepare for early intubation",
+        "Protect airway / prepare for early intubation (difficult airway)",
+        "Stop the lisinopril (ACE inhibitor) as a contributor",
         "H1/H2 antihistamines and corticosteroids as second-line adjuncts",
-        "Epinephrine infusion / glucagon if refractory",
-        "Observe for biphasic reaction; discharge with auto-injector, allergy referral, avoidance counseling"
+        "Safe disposition: admit/observe for biphasic reaction, prescribe and teach an auto-injector, allergy referral, replace ACE inhibitor, document allergy, close follow-up"
       ],
       "unsafeActions": [
         "Antihistamines/steroids instead of or before epinephrine",
-        "Discharging without an epinephrine auto-injector / observation"
+        "Withholding epinephrine because she is hypotensive / on a beta-blocker / elderly",
+        "Discharging without an epinephrine auto-injector / observation / stopping the ACE inhibitor"
       ],
       "consults": [
         "Allergy/Immunology"
       ],
-      "disposition": "Admit/observe; ICU if refractory shock or airway compromise",
+      "disposition": "Admit/observe with cardiac monitoring; ICU if refractory shock or airway compromise",
       "mghReference": {
         "manual": "MGH Housestaff Manual 2024–2025",
         "section": "Allergy & Anaphylaxis",
@@ -384,12 +421,13 @@
     "verbosity": "brief",
     "cooperativeness": "high",
     "sensitiveTopics": [
-      "medication_nonadherence"
+      "medication_nonadherence",
+      "polypharmacy"
     ],
     "communicationStyle": "answers questions asked without volunteering diagnostic clues",
-    "affect": "32-year-old woman, anxious and distressed, speaking in short phrases, scratching at hives on her arms and chest. Cooperative but frightened.",
+    "affect": "58-year-old woman, anxious and short of breath, speaking in short phrases with muffled speech from lip swelling, scratching at hives on her arms and chest. Cooperative but frightened she will choke.",
     "disclosureRules": [
-      "Do not reveal sensitive history unless directly asked",
+      "Do not reveal sensitive history (medications, prior swelling, allergy plan) unless directly asked",
       "Do not mention or hint at the diagnosis",
       "Do not volunteer hidden exam or diagnostic findings",
       "Use lay language; avoid medical jargon and textbook phrasing"
@@ -403,14 +441,49 @@
         "what did you eat",
         "any new foods",
         "allergic to anything",
+        "shellfish",
+        "nuts",
         "bee sting",
         "new medication",
         "possible trigger",
         "exposure"
       ],
-      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language — the dish may have had nuts.]",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; phrase in lay language — the dish was a shrimp-and-peanut stir-fry.]",
       "importance": "critical",
       "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "medications_betablocker_acei",
+      "category": "meds",
+      "triggerConcepts": [
+        "medications",
+        "what do you take",
+        "blood pressure pill",
+        "beta blocker",
+        "metoprolol",
+        "ace inhibitor",
+        "lisinopril",
+        "blood thinner"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; she takes a heart-rate pill, a long-standing blood-pressure pill, a diabetes pill, and a blood thinner.]",
+      "importance": "critical",
+      "points": 4,
+      "hiddenUntilAsked": true
+    },
+    {
+      "id": "prior_swelling_aceI_redherring",
+      "category": "hpi",
+      "triggerConcepts": [
+        "prior swelling",
+        "swelling before",
+        "lip or tongue swelling",
+        "angioedema before",
+        "puffiness"
+      ],
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; occasional mild lip/tongue puffiness in the past she blamed on dry air.]",
+      "importance": "core",
+      "points": 2,
       "hiddenUntilAsked": true
     },
     {
@@ -423,7 +496,7 @@
         "allergy action plan",
         "rescue medication"
       ],
-      "response": "[Reveal the relevant detail from patientFile only when asked directly; she does not carry an auto-injector.]",
+      "response": "[Reveal the relevant detail from patientFile only when asked directly; she does not carry an auto-injector and has no allergy action plan.]",
       "importance": "critical",
       "points": 4,
       "hiddenUntilAsked": true
@@ -482,7 +555,7 @@
         "first time",
         "ever reacted before"
       ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply — one milder nut reaction years ago.]",
+      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply — one milder shellfish reaction before.]",
       "importance": "core",
       "points": 1,
       "hiddenUntilAsked": false
@@ -492,6 +565,7 @@
       "category": "ros",
       "triggerConcepts": [
         "chest pain",
+        "palpitations",
         "leg swelling",
         "calf pain",
         "recent travel",
@@ -510,21 +584,9 @@
         "past medical history",
         "medical problems",
         "conditions",
-        "allergies or asthma"
-      ],
-      "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
-      "importance": "core",
-      "points": 1,
-      "hiddenUntilAsked": false
-    },
-    {
-      "id": "medications",
-      "category": "meds",
-      "triggerConcepts": [
-        "medications",
-        "what do you take",
-        "drugs you take",
-        "beta blocker"
+        "atrial fibrillation",
+        "diabetes",
+        "high blood pressure"
       ],
       "response": "[Answer from patientFile if applicable; otherwise a normal/negative reply.]",
       "importance": "core",
@@ -565,26 +627,26 @@
       "normalIfNotPresent": "No wheezing."
     },
     {
-      "id": "auscultate_aortic_area_finding_4",
-      "finding": "Cardiac: tachycardic, regular, no murmur; extremities warm, no edema, no calf tenderness.",
+      "id": "auscultate_mitral_area_finding_4",
+      "finding": "Cardiac: irregularly irregular rhythm (known atrial fibrillation), no murmur; extremities cool/clammy as she decompensates; no edema, no calf tenderness.",
       "revealedBy": [
-        "auscultate_aortic_area",
-        "auscultate_mitral_area"
+        "auscultate_mitral_area",
+        "auscultate_aortic_area"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No murmur appreciated; rate at the upper limit of normal."
+      "normalIfNotPresent": "No murmur appreciated; rhythm irregular at her baseline."
     },
     {
-      "id": "assess_for_purpura_finding_5",
-      "finding": "Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.",
+      "id": "assess_capillary_refill_finding_5",
+      "finding": "Mucous membranes dry; capillary refill prolonged at ~3-4 s peripherally, consistent with hypoperfusion despite only a modestly elevated heart rate (beta-blockade).",
       "revealedBy": [
-        "assess_for_purpura",
-        "assess_for_petechiae"
+        "assess_capillary_refill",
+        "assess_mucous_membranes"
       ],
       "importance": "core",
       "points": 2,
-      "normalIfNotPresent": "No purpura or petechiae."
+      "normalIfNotPresent": "Capillary refill brisk; mucous membranes moist."
     }
   ],
   "overallScoring": {
@@ -597,41 +659,49 @@
   },
   "caseSummary": {
     "finalDiagnosis": "Anaphylaxis",
-    "diagnosticFramework": "32F with sudden difficulty breathing, throat tightness, and a spreading hives rash minutes after eating at a restaurant. The diagnosis is Anaphylaxis, reached by recognizing acute multi-system involvement (skin/mucosa, respiratory, cardiovascular, GI) after a likely allergen, performing the targeted exam, and treating immediately while excluding the must-not-miss alternatives.",
+    "diagnosticFramework": "58F with hypertension, type 2 diabetes, and atrial fibrillation on metoprolol, lisinopril, metformin, and apixaban, who developed sudden throat/lip swelling, urticaria, wheeze, GI symptoms, and shock within minutes of a shellfish/peanut meal. The diagnosis is Anaphylaxis (anaphylactic shock), reached by recognizing acute multi-system involvement after a likely allergen and an elevated tryptase, and by distinguishing it from the closest competitor — ACE-inhibitor (bradykinin-mediated) angioedema from her lisinopril, which classically lacks urticaria, bronchospasm, and a tryptase rise. The beta-blocker explains a heart rate that is only modestly elevated for the degree of shock (seen as a controlled ventricular response in atrial fibrillation on the EKG) and predicts refractoriness requiring glucagon. Concurrent secondary derangements — AKI with a high-anion-gap lactic acidosis, mild hyperkalemia, and a mildly elevated troponin (type 2 demand ischemia) — are consequences of shock on a background of lisinopril/apixaban, not separate primary diagnoses.",
     "keyHistoryClues": [
-      "what did you eat / possible trigger",
-      "epinephrine auto-injector / allergy action plan"
+      "what did you eat / possible trigger (shrimp-and-peanut)",
+      "medications — beta-blocker (metoprolol) and ACE inhibitor (lisinopril)",
+      "no epinephrine auto-injector / no allergy action plan"
     ],
     "keyPhysicalExamFindings": [
       "Skin: diffuse urticaria (raised wheals) over the trunk and arms with flushing; no petechiae or purpura.",
       "HEENT: swollen lips and tongue (angioedema); audible inspiratory stridor at the throat; oropharynx without exudate.",
       "Lungs: diffuse expiratory WHEEZE bilaterally with a prolonged expiratory phase.",
-      "Cardiac: tachycardic, regular, no murmur; extremities warm, no edema, no calf tenderness."
+      "Cardiac: irregularly irregular rhythm (known atrial fibrillation), no murmur; extremities cool/clammy as she decompensates.",
+      "Mucous membranes dry; capillary refill prolonged at ~3-4 s despite only a modestly elevated heart rate (beta-blockade)."
     ],
     "keyDiagnosticFindings": [
       "Tryptase",
       "CBC",
       "BMP",
       "Troponin",
-      "Lactate"
+      "Lactate",
+      "VBG"
     ],
     "reasoningPathway": [
-      "Frame the presentation from the chart and vitals.",
-      "Elicit the focused history, including sensitive items only on direct questioning.",
-      "Perform the targeted physical exam maneuvers to reveal key findings.",
-      "Build a differential led by Anaphylaxis while explicitly excluding must-not-miss causes.",
-      "Recognize anaphylaxis as a clinical diagnosis and treat immediately; order a focused workup and interpret EKG/CXR and labs without delaying treatment.",
-      "Commit to Anaphylaxis and manage with IM epinephrine, stabilization, adjuncts, consults, and disposition."
+      "Frame the presentation from the chart and vitals — note the heart rate is only modestly elevated for the degree of shock.",
+      "Elicit the focused history, including the food trigger, the beta-blocker/ACE-inhibitor, prior swelling, and the absence of an auto-injector, only on direct questioning.",
+      "Perform the targeted physical exam to reveal urticaria, angioedema/stridor, wheeze, the irregular rhythm, and hypoperfusion.",
+      "Build a differential led by Anaphylaxis while naming three mechanisms of angioedema and explicitly distinguishing ACE-inhibitor (bradykinin) angioedema and severe asthma.",
+      "Recognize anaphylaxis as a clinical diagnosis and treat immediately; interpret the EKG (atrial fibrillation with a beta-blocker-controlled rate), CXR, and the multisystem labs without delaying treatment.",
+      "Commit to Anaphylaxis, give IM epinephrine, add glucagon/epinephrine infusion for beta-blocker refractoriness, stop the ACE inhibitor, and arrange a safe disposition with an auto-injector, allergy referral, and close follow-up."
     ],
     "commonPitfalls": [
+      "Anchoring on ACE-inhibitor angioedema and withholding epinephrine because she takes lisinopril",
+      "Withholding epinephrine because she is hypotensive, elderly, or on a beta-blocker",
+      "Missing that the EKG rhythm is atrial fibrillation and over-calling a primary ACS",
       "Antihistamines/steroids instead of or before epinephrine",
-      "Discharging without an epinephrine auto-injector / observation"
+      "Discharging without an epinephrine auto-injector, observation, or stopping the ACE inhibitor"
     ],
     "managementPearls": [
-      "IM epinephrine into the anterolateral thigh (first-line), repeat PRN"
+      "IM epinephrine into the anterolateral thigh (first-line), repeat PRN",
+      "IV glucagon and an early epinephrine infusion for beta-blocker-refractory shock"
     ],
     "criticalHistoryItems": [
       "trigger_exposure",
+      "medications_betablocker_acei",
       "no_epipen"
     ],
     "criticalExamItems": [
@@ -642,24 +712,25 @@
       "Recognize anaphylaxis is a clinical diagnosis — treat immediately, do not wait for labs"
     ],
     "criticalManagementItems": [
-      "IM epinephrine into the anterolateral thigh (first-line), repeat PRN"
+      "IM epinephrine into the anterolateral thigh (first-line), repeat PRN",
+      "IV glucagon and early epinephrine infusion for beta-blocker-refractory shock"
     ],
     "criticalInterpretationItems": [
-      "Sinus tachycardia; no acute ischemic changes.",
+      "Atrial fibrillation with a ventricular rate inappropriately controlled for shock due to beta-blockade; no acute ST-elevation.",
       "Clear film; NO consolidation, effusion, pneumothorax, or pulmonary edema. (CXR mainly to exclude mimics.)"
     ],
     "keyImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes.",
+      "Atrial fibrillation with a beta-blocker-controlled ventricular response; no acute ischemic ST-elevation.",
       "Clear lung fields with no acute cardiopulmonary process."
     ],
     "criticalImageInterpretationFindings": [
-      "Sinus tachycardia without acute ischemic changes.",
+      "Atrial fibrillation with a ventricular rate inappropriately controlled for the degree of shock because of beta-blockade — predicting a blunted epinephrine response and possible need for glucagon.",
       "Clear lung fields with no acute cardiopulmonary process."
     ],
     "imageInterpretationPearls": [
-      "A near-normal study is an interpretation task in its own right — confirm it is clean and judge its relevance.",
-      "Read every study systematically before committing.",
-      "State pertinent negatives, not just positives.",
+      "A heart rate that is 'too slow for the shock' on a beta-blocker is itself a finding — it predicts a blunted epinephrine response and the need for glucagon.",
+      "Read the rhythm before the rate: irregularly irregular with no P waves is atrial fibrillation, not sinus.",
+      "A near-normal CXR is an interpretation task in its own right — confirm it is clean and use it to exclude pulmonary mimics.",
       "Do not let confirmatory imaging delay a time-critical, clinical treatment."
     ]
   },
@@ -675,7 +746,7 @@
         "points": 1
       },
       {
-        "item": "Asks permission before sensitive questions",
+        "item": "Asks permission before sensitive medication/history questions",
         "points": 1
       },
       {
@@ -690,8 +761,8 @@
   },
   "libraryUpgrade": {
     "schemaVersion": "2.1",
-    "appliedOn": "2026-06-10",
-    "imagePolicy": "pathology-forward standalone interpretation",
+    "appliedOn": "2026-06-15",
+    "imagePolicy": "integrated patient-specific interpretation",
     "ekgReplaced": true,
     "cxrReplaced": true,
     "backwardCompatible": true
