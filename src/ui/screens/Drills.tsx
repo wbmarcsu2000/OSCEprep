@@ -673,10 +673,17 @@ function WorkupDrill({
   const [steerGrading, setSteerGrading] = useState(false);
   const [steerMatched, setSteerMatched] = useState<Set<string>>(new Set());
 
-  const groups = [
-    { group: "Labs", items: category.workupMenu.labs.map((l) => l.test) },
-    { group: "Imaging & other", items: category.workupMenu.imaging.map((i) => i.test) },
-  ];
+  // The work-up answer key is THIS presentation's targeted work-up when the stem
+  // has one (e.g. cortisol/ACTH for an adrenal crisis) — not just the broad
+  // category menu, which can omit scenario-critical tests. Fall back to the
+  // broad menu for the generic "a patient presents with X" prompt.
+  const targetedWorkup = stem?.workup ?? [];
+  const groups = targetedWorkup.length
+    ? [{ group: "Targeted work-up for this patient", items: targetedWorkup }]
+    : [
+        { group: "Labs", items: category.workupMenu.labs.map((l) => l.test) },
+        { group: "Imaging & other", items: category.workupMenu.imaging.map((i) => i.test) },
+      ];
 
   const doGrade = async () => {
     setGrading(true);
@@ -753,7 +760,20 @@ function WorkupDrill({
               <ResultChip named={result.named} total={result.total} />
             </div>
             <ScoreBar named={result.named} total={result.total} label="Work-up coverage" />
-            <CoverageView title="Broad work-up menu" coverage={result.coverage} />
+            <CoverageView
+              title={targetedWorkup.length ? "Work-up for this presentation" : "Broad work-up menu"}
+              coverage={result.coverage}
+            />
+            {targetedWorkup.length > 0 && (
+              <div className="text-[12px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
+                <span className="font-semibold">
+                  Broad {category.category.toLowerCase()} menu —{" "}
+                </span>
+                {[...category.workupMenu.labs, ...category.workupMenu.imaging]
+                  .map((t) => t.test)
+                  .join(" · ")}
+              </div>
+            )}
             <AiCoachNote
               prompt={workupPrompt}
               studentAnswer={workup}
