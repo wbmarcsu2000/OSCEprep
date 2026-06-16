@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../data/curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
 import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/managementDrills";
+import { EKG_DRILLS, CXR_DRILLS, type ImageDrillProblem } from "../../data/imageDrills";
 import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
 import { ManualRefs } from "../components/ManualRefs";
@@ -20,7 +21,7 @@ import { VisualGuide } from "../components/VisualGuide";
  * Grading is semantic (AI) when a key is set, else a lenient keyword match —
  * both via the store's gradeCoverage so the same call works everywhere.
  */
-type DrillType = "differential" | "workup" | "management" | "skills";
+type DrillType = "differential" | "workup" | "management" | "skills" | "ekg" | "cxr";
 
 interface Coverage {
   group: string;
@@ -69,6 +70,7 @@ export function Drills() {
   const [workup, setWorkup] = useState("");
   const [managementAnswer, setManagementAnswer] = useState("");
   const [skillAnswer, setSkillAnswer] = useState("");
+  const [imageAnswer, setImageAnswer] = useState("");
   const [graded, setGraded] = useState(false);
 
   const category = useMemo(
@@ -100,12 +102,20 @@ export function Drills() {
       ? managementPool[stemIdx % managementPool.length]
       : null;
 
+  // EKG / CXR reading drills: a LITFL study bank, rotated by stemIdx.
+  const imagePool = type === "ekg" ? EKG_DRILLS : type === "cxr" ? CXR_DRILLS : [];
+  const imageProblem: ImageDrillProblem | null =
+    (type === "ekg" || type === "cxr") && imagePool.length > 0
+      ? imagePool[stemIdx % imagePool.length]
+      : null;
+
   const reset = () => {
     setDdx("");
     setQuestions("");
     setWorkup("");
     setManagementAnswer("");
     setSkillAnswer("");
+    setImageAnswer("");
     setGraded(false);
   };
 
@@ -160,6 +170,8 @@ export function Drills() {
             { value: "differential", label: "🧠 Differential" },
             { value: "workup", label: "🧪 Work-up" },
             { value: "management", label: "🩺 Management" },
+            { value: "ekg", label: "🫀 EKG" },
+            { value: "cxr", label: "🩻 CXR" },
             { value: "skills", label: "📐 Skills" },
           ]}
           value={type}
@@ -186,6 +198,10 @@ export function Drills() {
               ))}
             </select>
           </label>
+        ) : type === "ekg" || type === "cxr" ? (
+          <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+            Study {imageProblem ? (stemIdx % imagePool.length) + 1 : 0} / {imagePool.length} · LITFL Top 100
+          </span>
         ) : (
           <label className="text-sm flex items-center gap-2">
             <span className="panel-label">Complaint</span>
@@ -209,11 +225,11 @@ export function Drills() {
           onClick={() => {
             // Skills + management rotate within the current filter; differential
             // and work-up jump to a random complaint for variety.
-            if (type === "skills" || type === "management") newRep(type);
+            if (type === "skills" || type === "management" || type === "ekg" || type === "cxr") newRep(type);
             else newRep(type, CURRICULUM[(Date.now() >>> 0) % CURRICULUM.length].category);
           }}
         >
-          🎲 {type === "skills" ? "Next problem" : type === "management" ? "Next case" : "Random rep"}
+          🎲 {type === "skills" ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : "Random rep"}
         </button>
       </div>
 
@@ -265,6 +281,19 @@ export function Drills() {
           graded={graded}
           onGrade={() => setGraded(true)}
           onNew={() => newRep("skills")}
+          onRetry={retry}
+        />
+      )}
+      {(type === "ekg" || type === "cxr") && (
+        <ImageReadDrill
+          key={`${type}:${stemIdx}`}
+          kind={type}
+          problem={imageProblem}
+          answer={imageAnswer}
+          setAnswer={setImageAnswer}
+          graded={graded}
+          onGrade={() => setGraded(true)}
+          onNew={() => newRep(type)}
           onRetry={retry}
         />
       )}
@@ -1005,6 +1034,176 @@ function ManagementDrill({
           {problem.manual.page > 0 && <ManualRefs manual={[problem.manual]} compact />}
         </div>
       )}
+    </div>
+  );
+}
+
+/** In-app enlarge for a study image (no tab switch). */
+function ImgLightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+  return (
+    <div
+      className="scrim cursor-zoom-out"
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${alt} enlarged`}
+      onClick={onClose}
+      style={{ background: "rgba(20,16,44,.82)", padding: "1.5rem" }}
+    >
+      <img src={src} alt={alt} className="rounded-lg bg-white" style={{ maxWidth: "94vw", maxHeight: "90vh", objectFit: "contain" }} />
+      <button
+        autoFocus
+        className="btn absolute top-4 right-4 border-none"
+        style={{ background: "rgba(255,255,255,.92)" }}
+        onClick={onClose}
+        aria-label="Close enlarged view"
+      >
+        ✕ Close
+      </button>
+    </div>
+  );
+}
+
+/** EKG / CXR reading drill: read a real LITFL study, graded against its
+ *  hallmark findings + diagnosis, with the authoritative LITFL read as teaching. */
+function ImageReadDrill({
+  kind,
+  problem,
+  answer,
+  setAnswer,
+  graded,
+  onGrade,
+  onNew,
+  onRetry,
+}: {
+  kind: "ekg" | "cxr";
+  problem: ImageDrillProblem | null;
+  answer: string;
+  setAnswer: (v: string) => void;
+  graded: boolean;
+  onGrade: () => void;
+  onNew: () => void;
+  onRetry: () => void;
+}) {
+  const grader = useGrader();
+  const [grading, setGrading] = useState(false);
+  const [matched, setMatched] = useState<Set<string>>(new Set());
+  const [zoom, setZoom] = useState<string | null>(null);
+
+  if (!problem) {
+    return (
+      <div className="card p-4">
+        <p className="muted text-center">No {kind === "ekg" ? "EKG" : "CXR"} studies available.</p>
+      </div>
+    );
+  }
+
+  const modality = kind === "ekg" ? "12-lead EKG" : "chest X-ray";
+  const groups = [
+    { group: "Diagnosis", items: [problem.diagnosis] },
+    { group: "Key findings", items: problem.findings },
+  ];
+  const doGrade = async () => {
+    setGrading(true);
+    track("drill", { drillType: kind });
+    try {
+      setMatched(await grader(answer, groups));
+      onGrade();
+    } finally {
+      setGrading(false);
+    }
+  };
+  const result = buildCoverage(groups, matched);
+  const imgs = [problem.img, problem.img2].filter((s): s is string => !!s);
+
+  return (
+    <div className="space-y-3">
+      <div className="card p-4 space-y-2.5">
+        <div className="panel-label">Interpret this {modality}</div>
+        <p className="text-[13px]" style={{ color: "var(--color-exam-muted)" }}>
+          Read it systematically, then commit to a diagnosis.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-2">
+          {imgs.map((src, i) => (
+            <button
+              key={i}
+              type="button"
+              className="block flex-1 rounded-lg border overflow-hidden bg-white cursor-zoom-in p-0 relative group"
+              style={{ borderColor: "var(--color-exam-border-strong)" }}
+              onClick={() => setZoom(src)}
+              title="Enlarge"
+            >
+              <img src={src} alt={`${modality}${i > 0 ? " (additional view)" : ""}`} loading="lazy" className="w-full max-h-[460px] object-contain" />
+              <span
+                className="absolute bottom-1.5 right-1.5 text-[10.5px] font-semibold px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity"
+                style={{ background: "rgba(42,34,83,.8)", color: "#fff" }}
+              >
+                🔍 enlarge
+              </span>
+            </button>
+          ))}
+        </div>
+        <p className="hint flex items-center justify-between gap-2 flex-wrap">
+          <span>LITFL {kind === "ekg" ? "ECG" : "CXR"} Library · © Life in the Fast Lane, CC BY-NC-SA 4.0</span>
+          <a className="underline" style={{ color: "var(--color-exam-accent)" }} href={problem.url} target="_blank" rel="noopener noreferrer">
+            View on LITFL ↗
+          </a>
+        </p>
+      </div>
+
+      <div className="card p-4 space-y-3">
+        <div className="panel-label">Your read</div>
+        <textarea
+          className="input w-full resize-y leading-relaxed"
+          rows={4}
+          value={answer}
+          onChange={(e) => setAnswer(e.target.value)}
+          placeholder={kind === "ekg" ? "Rate, rhythm, axis, intervals, ST/T… then your diagnosis" : "Systematic read (RIP-ABCDE)… then your diagnosis"}
+          aria-label="Your read"
+        />
+        <GradeButton
+          graded={graded}
+          grading={grading}
+          disabled={!answer.trim()}
+          onGrade={doGrade}
+          onNew={onNew}
+          onRetry={onRetry}
+          newLabel="Next study →"
+        />
+      </div>
+
+      {graded && (
+        <div className="card p-4 space-y-4 pop-in">
+          <div className="flex items-center justify-between gap-3">
+            <div className="panel-label">Coverage</div>
+            <ResultChip named={result.named} total={result.total} />
+          </div>
+          <ScoreBar named={result.named} total={result.total} label="Findings + diagnosis" />
+          <CoverageView title="Model answer" coverage={result.coverage} />
+          {problem.read && (
+            <div>
+              <div className="panel-label mb-1">Expert read — {problem.diagnosis}</div>
+              <p className="text-[13px] leading-relaxed whitespace-pre-line" style={{ color: "var(--color-exam-muted)" }}>
+                {problem.read}
+              </p>
+            </div>
+          )}
+          <AiCoachNote
+            prompt={`Interpret this ${modality}. Read systematically and commit to a diagnosis.`}
+            studentAnswer={answer}
+            idealAnswer={`Diagnosis: ${problem.diagnosis}. Key findings: ${problem.findings.join("; ")}.`}
+            rubric={problem.read || `${problem.diagnosis}: ${problem.findings.join("; ")}`}
+          />
+        </div>
+      )}
+
+      {zoom && <ImgLightbox src={zoom} alt={modality} onClose={() => setZoom(null)} />}
     </div>
   );
 }
