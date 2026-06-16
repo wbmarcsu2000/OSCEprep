@@ -147,7 +147,7 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order to confirm C. difficile and to settle the C. diff-versus-ischemic-colitis question, and to assess her multiple concurrent abnormalities?",
+      "prompt": "What initial workup do you want to order to confirm your leading diagnosis and to settle it against the competing must-not-miss mimic, and to assess her multiple concurrent abnormalities?",
       "rubric": "Stool C. difficile two-step testing (GDH + toxin EIA, NAAT/PCR if discordant) (CANT-MISS,4). CBC — WBC as a severity marker (2). BMP — K, anion gap, renal function/AKI on CKD (3). Magnesium (and other electrolytes) (1). Lactate to gauge perfusion / screen for ischemia (1). Coags/INR given apixaban (1). Abdominal imaging (upright film/CT) to assess megacolon and to look for ischemic thumbprinting/pneumatosis (2). Other stool studies / occult blood (1). PENALTY: ordering antimotility agents as workup (-2 — addressed in management); CT angiography/aggressive ischemia hunt while ignoring the obvious C. diff test (-1).",
       "idealAnswer": "Order: EKG; abdominal X-ray (upright) — and low threshold for CT abdomen/pelvis to assess megacolon and look for ischemic thumbprinting/pneumatosis; stool C. difficile two-step testing (GDH antigen + toxin EIA, reflex NAAT/PCR if discordant); CBC; BMP (potassium, anion gap, renal function); magnesium; lactate; coags/INR (she is on apixaban); other stool studies with occult blood.",
       "scoring": {

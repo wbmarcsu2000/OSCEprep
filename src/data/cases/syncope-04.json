@@ -152,7 +152,7 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial workup do you want to order to adjudicate aortic stenosis versus an arrhythmic cause, and to assess his comorbidities?",
+      "prompt": "What initial workup do you want to order to adjudicate your leading diagnosis versus an arrhythmic cause, and to assess his comorbidities?",
       "rubric": "EKG — looks for LVH/strain AND conduction disease/AV block (CANT-MISS,4). Echocardiogram — the key test to grade the valve (CANT-MISS,5). Continuous telemetry / cardiac monitoring to capture an arrhythmia (CANT-MISS,3). BMP to assess renal function and potassium (core,2). Serum digoxin level given the brady-risk and renal decline (core,2). Troponin (core,1). BNP (core,1). CBC given anemia/anticoagulation (core,1). CXR (core,1). PENALTY: discharging an exertional syncope with a concerning murmur without an echo (-3); failing to place the patient on monitoring (-2).",
       "idealAnswer": "Order: EKG (LVH/strain and, importantly, look for AV block or other conduction disease); continuous telemetry / cardiac monitoring to capture an intermittent arrhythmia; Echocardiogram to grade the valve; BMP (renal function and potassium); serum digoxin level (borderline-high risk with worsening renal function); Troponin; BNP; CBC (anemia on apixaban); CXR.",
       "scoring": {

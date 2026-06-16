@@ -89,7 +89,7 @@
       "id": "differential",
       "label": "Differential",
       "max": 25,
-      "prompt": "Based on your history and physical, list your differential diagnosis (note your leading diagnosis). She has new bilateral ankle swelling, so explicitly address heart failure. Also name THREE common triggers/precipitants of a COPD exacerbation that you would look for.",
+      "prompt": "Based on your history and physical, list your differential diagnosis for her worsening breathlessness (note your leading diagnosis). She has new bilateral ankle swelling, so explicitly address heart failure. Also name THREE common triggers/precipitants of your leading diagnosis that you would look for.",
       "rubric": "COPD exacerbation (leading,6; accepts AECOPD/COPD flare). Acute decompensated heart failure — the main competing diagnosis given new bilateral edema and a mildly elevated BNP (CANT-MISS/competing,5). Pulmonary embolism — must-not-miss (CANT-MISS,4). Pneumonia (core,2). Acute coronary syndrome (core,2). Names leading dx w/ justification — lapsed maintenance inhaler, purulent sputum, viral prodrome, diffuse wheeze with hyperresonance (core,2). Names THREE triggers of a COPD exacerbation, e.g. viral/bacterial respiratory infection, air pollution/smoke exposure, medication non-adherence, or a concurrent illness/PE (core,4). PENALTY: anchoring on heart failure and missing the COPD flare, or anchoring on COPD without addressing the edema/CHF (-3).",
       "idealAnswer": "Leading diagnosis: COPD exacerbation (lapsed maintenance tiotropium, viral prodrome, purulent sputum, diffuse expiratory wheeze with hyperresonance and acute-on-chronic hypercapnia). Main competing diagnosis to resolve: Acute decompensated heart failure — she has NEW bilateral ankle edema and a mildly elevated BNP, so it must be addressed, though the symmetric amlodipine-pattern edema, absent orthopnea/PND, non-elevated JVP, and no S3 argue against it. Must-not-miss: Pulmonary embolism. Also reasonable: Pneumonia; Acute coronary syndrome. THREE triggers of a COPD exacerbation to look for: (1) viral or bacterial respiratory infection, (2) medication non-adherence (her lapsed maintenance inhaler), and (3) environmental/pollutant or ongoing tobacco-smoke exposure — with PE and ACS as other precipitants to consider.",
       "scoring": {
@@ -144,7 +144,7 @@
       "label": "Workup",
       "max": 15,
       "reveal": true,
-      "prompt": "What initial diagnostic workup do you want to order to separate a COPD exacerbation from heart failure and the other must-not-miss causes?",
+      "prompt": "What initial diagnostic workup do you want to order to separate your leading diagnosis from heart failure and the other must-not-miss causes of her breathlessness?",
       "rubric": "CXR to look for hyperinflation vs pulmonary edema/consolidation (CANT-MISS,4). ABG / VBG for acute-on-chronic hypercapnia (core,3). EKG — she is tachycardic and irregular (core,2). BNP to weigh heart failure (core,2). CBC (core,1). BMP (core,1). Troponin (core,1). Add electrolytes magnesium given the arrhythmia and diuretic/beta-agonist (bonus,1). PENALTY: shotgun panel w/ no reasoning (-2); committing to empiric heart-failure diuresis before imaging/BNP (-2).",
       "idealAnswer": "Order: CXR; ABG (or VBG); EKG; BNP; CBC; BMP; Troponin; and a magnesium level given the arrhythmia and her diuretic/beta-agonist use. Use the CXR and BNP plus the exam to weigh heart failure against a COPD flare before committing to diuresis.",
       "scoring": {
