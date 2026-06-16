@@ -40,7 +40,6 @@
       "source": "https://litfl.com/ecg-changes-in-pulmonary-embolism/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "integrated": true,
-      "litflStudyN": 7,
       "findings": "Atrial fibrillation with rapid ventricular response (~125–130 bpm, irregularly irregular, no organized P waves); right-heart-strain pattern — S1Q3T3 with T-wave inversions in V1–V3 (right precordial) and a partial/incomplete RBBB morphology; NO ST-segment elevation and NO territorial ST-depression to suggest acute coronary occlusion.",
       "verify": "From the LITFL 'ECG Changes in Pulmonary Embolism' library page — use a tracing showing AF with RVR plus right-heart-strain (S1Q3T3, V1–V3 TWI / RBBB) and self-host with credit to litfl.com.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",

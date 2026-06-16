@@ -77,6 +77,29 @@ function SeparateStudyBanner({ label }: { label: string }) {
   );
 }
 
+/** For an INTEGRATED read, the study is THIS patient's own — it must read as
+ *  part of the case, not a different-patient drill. We can't source a fictional
+ *  patient's actual film, so we show a representative teaching-library study that
+ *  matches their pattern, and say so honestly (no "different patient" warning). */
+function IntegratedStudyNote({ label }: { label: string }) {
+  return (
+    <div
+      role="note"
+      className="rounded-lg border px-3.5 py-2.5 flex items-start gap-2.5"
+      style={{ background: "var(--color-exam-soft)", borderColor: "var(--color-exam-border)" }}
+    >
+      <span className="text-[18px] leading-none shrink-0" aria-hidden>
+        🫀
+      </span>
+      <div className="text-[12.5px] leading-snug" style={{ color: "var(--color-exam-ink)" }}>
+        <span className="font-bold">This patient&rsquo;s {label}.</span> A representative teaching-library
+        image illustrating their findings — read it as part of this case (sourced from LITFL; not the actual
+        patient&rsquo;s film).
+      </div>
+    </div>
+  );
+}
+
 /** The presenting context for the (representative, different-patient) teaching
  *  study — gives the read a clinical question to answer, the way a teaching
  *  library captions its cases. */
@@ -110,7 +133,7 @@ export function StudyImage({ image }: { image: RawImage }) {
     const viewUrl = viewableUrl(image);
     return (
       <figure className="space-y-2">
-        <SeparateStudyBanner label={image.label} />
+        {image.integrated ? <IntegratedStudyNote label={image.label} /> : <SeparateStudyBanner label={image.label} />}
         {image.clinicalVignette && <VignetteNote text={image.clinicalVignette} />}
         <div className="flex flex-col sm:flex-row gap-2">
           {[image.asset, image.asset2].filter(Boolean).map((src, i) => {
@@ -162,7 +185,7 @@ export function StudyImage({ image }: { image: RawImage }) {
   const openLabel = isLitfl ? `Open ${studyName} ↗` : `Open a representative ${image.label} ↗`;
   return (
     <div className="space-y-2">
-      <SeparateStudyBanner label={image.label} />
+      {image.integrated ? <IntegratedStudyNote label={image.label} /> : <SeparateStudyBanner label={image.label} />}
       {image.clinicalVignette && <VignetteNote text={image.clinicalVignette} />}
       <div
         className="rounded-lg border-2 border-dashed px-6 py-8 text-center space-y-2"

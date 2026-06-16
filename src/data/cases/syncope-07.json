@@ -35,7 +35,7 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 23,
+      "litflStudyN": 31,
       "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Sinus rhythm at ~82 bpm with a markedly prolonged QT interval (QTc ~530 ms), broad-based notched T waves and prominent U waves — drug- and electrolyte-aggravated long QT, the substrate for torsades de pointes.",

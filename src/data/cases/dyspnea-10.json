@@ -35,7 +35,6 @@
   "images": {
     "ekg": {
       "label": "12-lead EKG",
-      "litflStudyN": 2,
       "integrated": true,
       "asset": "https://litfl.com/wp-content/uploads/2018/08/Atrial-fibrillation-rapid-ventricular-response.jpg",
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",

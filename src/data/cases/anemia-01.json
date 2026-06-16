@@ -38,7 +38,6 @@
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "integrated": true,
-      "litflStudyN": 2,
       "findings": "Atrial fibrillation: irregularly irregular narrow-complex rhythm at ~90–100 bpm with absent P waves and a fibrillating baseline; controlled ventricular response. No acute ischemic ST/T changes. This is the patient's OWN known atrial fibrillation — relevant because she is anticoagulated on apixaban, which bears on her GI blood loss.",
       "verify": "Source a study matching: atrial fibrillation, irregularly irregular, absent P waves, controlled rate, no acute ischemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",

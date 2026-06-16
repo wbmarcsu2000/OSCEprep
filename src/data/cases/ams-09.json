@@ -40,8 +40,7 @@
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
       "integrated": true,
-      "litflStudyN": 2,
-      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and a prolonged QT interval",
+      "imageDescription": "12-lead showing narrow-complex atrial fibrillation with rapid ventricular response (~145) and a prolonged QT interval (amiodarone), no acute ischemia",
       "searchTerms": [
         "atrial fibrillation rapid ventricular response ECG",
         "AF RVR irregularly irregular prolonged QT amiodarone"

@@ -36,7 +36,7 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 37,
+      "litflStudyN": 2,
       "source": "https://litfl.com/pre-excitation-syndromes-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Two-part tracing. PRESENTING rhythm strip: a very rapid (~230 bpm), grossly IRREGULAR, broad-complex tachycardia with beat-to-beat variation in QRS WIDTH and morphology (fusion of conducted and pre-excited beats) and NO organized P waves — pre-excited atrial fibrillation conducting antegrade down an accessory pathway. After chemical/electrical conversion to SINUS rhythm: a SHORT PR interval (<120 ms) with a slurred upstroke of the QRS (DELTA wave) and a widened QRS — the Wolff-Parkinson-White pattern (here a type-B morphology with a predominantly negative delta/QRS in V1). No primary ST-elevation MI pattern; the broad complexes are due to pre-excitation, not ischemia or hyperkalemia.",

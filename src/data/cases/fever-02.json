@@ -39,7 +39,6 @@
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "The patient's own tracing: atrial fibrillation (irregularly irregular, no P waves) at a controlled rate with flattened T waves, prominent U waves, and a long QU interval — the hypokalemia from his thiazide/loop diuretics (serum K 3.1).",
       "integrated": true,
-      "litflStudyN": 6,
       "verify": "Source a study matching: atrial fibrillation with hypokalemic changes — flattened T waves, prominent U waves, long QU. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,

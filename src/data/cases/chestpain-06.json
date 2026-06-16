@@ -362,7 +362,6 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "litflStudyN": 6,
       "integrated": true,
       "source": "https://litfl.com/ecg-case-006/",
       "license": "CC BY-NC-SA 4.0 (LITFL) - NonCommercial",

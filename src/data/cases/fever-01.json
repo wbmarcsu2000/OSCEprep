@@ -44,8 +44,7 @@
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
       "integrated": true,
-      "litflStudyN": 2,
-      "imageDescription": "12-lead showing atrial fibrillation with rapid ventricular response and lateral ST depression",
+      "imageDescription": "12-lead showing narrow-complex atrial fibrillation with rapid ventricular response (~125) and rate-related lateral ST depression, no ST elevation",
       "searchTerms": [
         "atrial fibrillation rapid ventricular response 12 lead ECG",
         "AF with rate related ST depression ECG"

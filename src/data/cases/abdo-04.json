@@ -34,7 +34,6 @@
       "asset": null,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "litflStudyN": 2,
       "integrated": true,
       "findings": "Atrial fibrillation with a moderately rapid ventricular response (~108 bpm); irregularly irregular R-R intervals with no discernible P waves; superimposed hypokalemic changes (flattened T waves and U waves, mild QT prolongation) from her electrolyte loss; no acute ST-elevation or territorial ischemic pattern.",
       "verify": "From the LITFL 'Atrial fibrillation' library page — download an example tracing showing atrial fibrillation with a rapid/moderate ventricular response (irregularly irregular, absent P waves); self-host with credit to litfl.com.",

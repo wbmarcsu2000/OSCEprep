@@ -37,7 +37,6 @@
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "integrated": true,
-      "litflStudyN": 2,
       "findings": "Atrial fibrillation with a rapid ventricular response (~135–140 bpm): irregularly irregular QRS complexes with no discernible P waves, plus rate-related horizontal ST-segment depression in the lateral leads (I, aVL, V5–V6) — demand ischemia from the tachyarrhythmia and hypoperfusion, not a primary thrombotic STEMI. This is the patient's OWN tracing and is part of the puzzle: new/poorly-controlled AF raises the competing question of embolic mesenteric ischemia.",
       "verify": "Source a study matching: atrial fibrillation with rapid ventricular response and rate-related lateral ST depression. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",

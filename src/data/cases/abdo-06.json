@@ -35,7 +35,6 @@
     "ekg": {
       "label": "12-lead EKG",
       "asset": null,
-      "litflStudyN": 30,
       "integrated": true,
       "source": "https://litfl.com/digoxin-effect-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",

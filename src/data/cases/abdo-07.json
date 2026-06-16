@@ -36,7 +36,6 @@
       "asset": null,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "litflStudyN": 2,
       "integrated": true,
       "findings": "Atrial fibrillation with rapid ventricular response (~125 bpm): irregularly irregular QRS complexes with no organized P waves and a fibrillatory baseline; narrow QRS; no acute ST-elevation. The rapid AF reflects this anticoagulated patient's known paroxysmal atrial fibrillation now driven faster by pain and hypovolemia, NOT a primary ACS.",
       "verify": "From the LITFL 'Atrial Fibrillation' library page — use an example tracing showing atrial fibrillation with rapid ventricular response (irregularly irregular, no P waves) without acute ST-elevation; self-host with credit to litfl.com.",

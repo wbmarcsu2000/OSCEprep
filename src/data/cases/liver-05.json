@@ -38,12 +38,11 @@
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "integrated": true,
-      "litflStudyN": 2,
       "findings": "Atrial fibrillation: irregularly irregular R-R intervals with no discrete P waves and a fibrillatory baseline; controlled ventricular rate (~70–80) on amiodarone; QTc is at the upper limit / mildly prolonged (amiodarone effect) but no acute ischemic ST changes.",
       "verify": "Source a study matching: atrial fibrillation with controlled ventricular response, irregularly irregular rhythm, absent P waves; mild QT prolongation acceptable. Self-host with appropriate credit; do not reuse the prior normal tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing atrial fibrillation with a controlled ventricular response",
+      "imageDescription": "12-lead showing narrow-complex atrial fibrillation (irregularly irregular, no P waves, fibrillatory baseline) at a controlled ventricular rate (~70-80 bpm) with mild QT prolongation and no acute ischemic ST changes",
       "searchTerms": [
         "atrial fibrillation controlled ventricular response 12 lead ECG",
         "irregularly irregular no P waves amiodarone ECG"

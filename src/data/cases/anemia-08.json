@@ -36,7 +36,6 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 3,
       "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Sinus tachycardia at ~120 bpm with PEAKED, narrow-based, tented T-waves (most prominent in the precordial leads) and slight PR prolongation — changes of HYPERKALEMIA (K 5.9) on a background of AKI; no acute ischemic ST-segment changes.",

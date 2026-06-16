@@ -36,7 +36,6 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 2,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Atrial fibrillation with a rapid ventricular response (~115–120 bpm) — irregularly irregular, no organized P waves. Voltage criteria for LVH (S in V1 + R in V5/V6 >35 mm) with a lateral strain pattern (downsloping ST depression / T-wave inversion in I, aVL, V5–V6). No acute ST elevation; the repolarization changes are the chronic LVH-strain pattern, NOT an acute STEMI.",

@@ -40,8 +40,7 @@
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
       "integrated": true,
-      "litflStudyN": 23,
-      "imageDescription": "12-lead sinus rhythm with a markedly prolonged QTc and broad T waves (drug/electrolyte-induced long QT)",
+      "imageDescription": "12-lead sinus rhythm at a normal rate with a markedly prolonged QTc and broad/notched T waves (drug/electrolyte-induced long QT); no ischemia, pre-excitation, Brugada morphology, or AV block",
       "searchTerms": [
         "drug induced long QT ECG",
         "prolonged QTc broad T waves 12 lead"

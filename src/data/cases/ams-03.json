@@ -32,7 +32,6 @@
   "images": {
     "ekg": {
       "label": "12-lead EKG",
-      "litflStudyN": 2,
       "integrated": true,
       "asset": null,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",

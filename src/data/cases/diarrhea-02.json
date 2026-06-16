@@ -35,14 +35,13 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 3,
       "source": "https://litfl.com/hyperkalaemia-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Tall, peaked, narrow-based symmetric T waves (best seen in the precordial leads) with the underlying atrial fibrillation; early hyperkalemia pattern at K 5.8 with AKI on an ACE inhibitor.",
       "verify": "Source a study matching: tall peaked symmetric T waves of hyperkalemia in a patient in atrial fibrillation. Self-host with appropriate credit; do not reuse the prior tracing.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",
       "assetNeeded": true,
-      "imageDescription": "12-lead showing tall peaked T waves of hyperkalemia",
+      "imageDescription": "12-lead in atrial fibrillation with tall, peaked, narrow-based symmetric T waves and a narrow QRS — early hyperkalemia (K 5.8).",
       "searchTerms": [
         "hyperkalemia ECG peaked T waves",
         "tall tented T waves potassium ECG"

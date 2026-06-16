@@ -35,7 +35,6 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 2,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Atrial fibrillation with a rapid ventricular response (~118 bpm): irregularly irregular QRS complexes, absent discrete P waves, fibrillatory baseline; no acute ST-elevation, no new ischemic ST-depression at this rate.",

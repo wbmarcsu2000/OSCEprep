@@ -32,7 +32,7 @@
   "images": {
     "ekg": {
       "label": "12-lead EKG",
-      "litflStudyN": 6,
+      "litflStudyN": 31,
       "integrated": true,
       "asset": null,
       "source": "https://litfl.com/hypokalaemia-ecg-library/",

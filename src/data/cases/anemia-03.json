@@ -36,7 +36,6 @@
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "integrated": true,
-      "litflStudyN": 2,
       "findings": "Atrial fibrillation: irregularly irregular RR intervals with absent P waves and a fibrillatory baseline; ventricular rate ~80–90; narrow QRS; no acute ischemic ST/T changes.",
       "verify": "Source a study matching: atrial fibrillation with irregularly irregular RR intervals, absent P waves, fibrillatory baseline, controlled ventricular rate, no acute ischemia. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",

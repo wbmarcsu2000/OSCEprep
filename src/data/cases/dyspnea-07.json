@@ -35,7 +35,6 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 2,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Atrial fibrillation (irregularly irregular, no discrete P waves) with a ventricular rate of ~96-110 bpm — strikingly controlled for the degree of shock because she is on metoprolol; no acute ST-elevation, with only minor rate-related/demand ST-segment changes and no convincing primary ischemic pattern.",

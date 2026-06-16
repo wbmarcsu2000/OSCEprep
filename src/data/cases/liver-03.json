@@ -34,7 +34,7 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 23,
+      "litflStudyN": 22,
       "source": "https://litfl.com/ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Sinus tachycardia at ~112 bpm with a prolonged QT interval (QTc ~490 ms) and no acute ST-elevation; the prolonged QT is driven by her metabolic derangement (acidosis, AKI) plus QT-prolonging citalopram.",

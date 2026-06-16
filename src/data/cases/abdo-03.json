@@ -36,7 +36,7 @@
       "label": "12-lead EKG",
       "asset": null,
       "integrated": true,
-      "litflStudyN": 23,
+      "litflStudyN": 22,
       "source": "https://litfl.com/qt-interval-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "findings": "Sinus tachycardia with a prolonged QT interval (long QTc) from hypocalcemia; ST/T morphology otherwise non-ischemic. No inferior ST elevation to suggest an inferior MI mimicking the pain.",

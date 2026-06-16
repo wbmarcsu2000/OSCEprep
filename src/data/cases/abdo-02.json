@@ -38,7 +38,6 @@
       "source": "https://litfl.com/digoxin-toxicity-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
       "integrated": true,
-      "litflStudyN": 30,
       "findings": "Atrial fibrillation with a slow, regularized ventricular response (~54 bpm) and down-sloping 'scooped'/sagging ST-segment depression (Salvador Dalí sign) with the digoxin effect; no acute ST-elevation MI pattern. In context (supratherapeutic digoxin level, AKI, hyperkalemia, GI symptoms, visual changes) this is concerning for DIGOXIN TOXICITY rather than benign digoxin effect.",
       "verify": "Source a study matching: atrial fibrillation with slow/regularized ventricular response and sagging 'scooped' ST depression (digoxin effect/toxicity); no STEMI. Self-host with appropriate credit.",
       "attribution": "LITFL ECG Library (litfl.com) — © Life in the Fast Lane, CC BY-NC-SA 4.0. Educational/not-for-profit use, credit litfl.com; skip any image labelled third-party.",

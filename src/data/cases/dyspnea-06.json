@@ -35,7 +35,6 @@
       "asset": null,
       "source": "https://litfl.com/atrial-fibrillation-ecg-library/",
       "license": "CC BY-NC-SA 4.0 (LITFL) — NonCommercial",
-      "litflStudyN": 2,
       "integrated": true,
       "findings": "Atrial fibrillation (irregularly irregular, no organized P waves) at ~96 bpm with diffusely LOW QRS voltage (limb leads <5 mm, precordial <10 mm); no acute ST-elevation, no PE-pattern S1Q3T3 or new RBBB.",
       "verify": "Source a study matching: atrial fibrillation with diffusely low QRS voltage. Self-host with appropriate credit.",
