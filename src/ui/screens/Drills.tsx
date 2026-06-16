@@ -1126,6 +1126,15 @@ function ImageReadDrill({
     <div className="space-y-3">
       <div className="card p-4 space-y-2.5">
         <div className="panel-label">Interpret this {modality}</div>
+        {problem.vignette && (
+          <div
+            className="rounded-lg border px-3 py-2 text-[13px] leading-snug"
+            style={{ background: "var(--color-exam-soft)", borderColor: "var(--color-exam-border)", color: "var(--color-exam-ink)" }}
+          >
+            <span className="font-bold">Clinical context: </span>
+            {problem.vignette}
+          </div>
+        )}
         <p className="text-[13px]" style={{ color: "var(--color-exam-muted)" }}>
           Read it systematically, then commit to a diagnosis.
         </p>

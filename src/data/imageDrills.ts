@@ -10,6 +10,7 @@
  */
 import { LITFL_ECG_STUDIES, LITFL_CXR_STUDIES, litflStudyUrl } from "./litflStudies";
 import { LITFL_MEDIA } from "./litflMedia";
+import { ECG_VIGNETTES, CXR_VIGNETTES } from "./imageVignettes";
 
 export interface ImageDrillProblem {
   kind: "ekg" | "cxr";
@@ -17,6 +18,8 @@ export interface ImageDrillProblem {
   n: number;
   diagnosis: string;
   findings: string[];
+  /** Presenting clinical context, read BEFORE the image (no diagnosis named). */
+  vignette: string;
   /** Real inline image (hotlinked from LITFL). */
   img: string;
   img2: string | null;
@@ -32,6 +35,7 @@ function build(
   media: Record<number, { img: string | null; img2: string | null; read: string }>,
 ): ImageDrillProblem[] {
   const litflKind: "ecg" | "cxr" = kind === "ekg" ? "ecg" : "cxr";
+  const vignettes = kind === "ekg" ? ECG_VIGNETTES : CXR_VIGNETTES;
   const out: ImageDrillProblem[] = [];
   for (const s of studies) {
     const m = media[s.n];
@@ -41,6 +45,7 @@ function build(
       n: s.n,
       diagnosis: s.diagnosis,
       findings: s.findings,
+      vignette: vignettes[s.n] ?? "",
       img: m.img,
       img2: m.img2 ?? null,
       read: m.read ?? "",
