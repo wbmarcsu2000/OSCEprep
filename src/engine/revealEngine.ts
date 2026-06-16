@@ -64,25 +64,35 @@ function asksForCollateral(question: string): boolean {
 export function triggerMatchesQuestion(
   question: string,
   trigger: HistoryTriggerModel,
+  /** When the LLM has already classified intent (AI on), keep only the
+   *  HIGH-PRECISION tiers (1 exact-concept, 4 id-token) as a backstop and drop
+   *  the loose tiers (2 single-token synonym, 3 partial, 5 content-token) — the
+   *  loose tiers cause false-positive collisions (e.g. "how long" matching a
+   *  "long-haul driver" trigger) that the LLM's classification should suppress,
+   *  not be forced to union with. */
+  strictOnly = false,
 ): boolean {
-  // 1. Exact / all-token concept match.
+  // 1. Exact / all-token concept match. (high precision — always on)
   for (const concept of trigger.concepts) {
     if (matchesConcept(question, concept)) return true;
   }
   const questionToks = expandStems(stemmedTokenSet(question));
-  for (const concept of trigger.concepts) {
-    const conceptToks = [...stemmedTokenSet(concept)];
-    // 2. Single-token concepts match via lay/medical synonyms ("beer"→alcohol)
-    //    with typo tolerance ("aggravatiang" → aggravating).
-    if (conceptToks.length === 1 && fuzzyHas(questionToks, conceptToks[0])) return true;
-    // 3. Longer concepts tolerate a missing filler word:
-    //    "medical history?" ≈ "past medical history".
-    if (conceptToks.length >= 3) {
-      const hit = conceptToks.filter((t) => fuzzyHas(questionToks, t)).length;
-      if (hit / conceptToks.length >= 0.66) return true;
+  if (!strictOnly) {
+    for (const concept of trigger.concepts) {
+      const conceptToks = [...stemmedTokenSet(concept)];
+      // 2. Single-token concepts match via lay/medical synonyms ("beer"→alcohol)
+      //    with typo tolerance ("aggravatiang" → aggravating).
+      if (conceptToks.length === 1 && fuzzyHas(questionToks, conceptToks[0])) return true;
+      // 3. Longer concepts tolerate a missing filler word:
+      //    "medical history?" ≈ "past medical history".
+      if (conceptToks.length >= 3) {
+        const hit = conceptToks.filter((t) => fuzzyHas(questionToks, t)).length;
+        if (hit / conceptToks.length >= 0.66) return true;
+      }
     }
   }
   // 4. Id-token match: "pmh", "medications", "prior episodes" typed directly.
+  //    (high precision — always on)
   const idToks = trigger.id
     .split("_")
     .map(stem)
@@ -93,7 +103,7 @@ export function triggerMatchesQuestion(
   //    → the PMH hypertension line). Sensitive topics keep strict
   //    concept/id-based matching so disclosure rules can't be sidestepped via
   //    incidental vocabulary.
-  if (!trigger.sensitive) {
+  if (!strictOnly && !trigger.sensitive) {
     for (const seg of trigger.fileSegments) {
       for (const tok of stemmedTokenSet(seg)) {
         if (tok.length >= 5 && !COMMON_CONTENT_TOKENS.has(tok) && questionToks.has(tok)) {
@@ -162,10 +172,14 @@ export function askHistoryQuestion(
 ): HistoryRevealResult {
   const validIds = new Set(caseModel.historyTriggers.map((t) => t.id));
   const classified = (classifiedTriggerIds ?? []).filter((id) => validIds.has(id));
+  // When the LLM successfully classified intent (AI on), it is authoritative:
+  // union its ids with only the HIGH-PRECISION deterministic tiers so the loose
+  // keyword tiers can't force a false-positive segment the LLM didn't pick.
+  const aiClassified = classifiedTriggerIds !== undefined;
 
   const matched: HistoryTriggerModel[] = [];
   for (const trigger of caseModel.historyTriggers) {
-    if (classified.includes(trigger.id) || triggerMatchesQuestion(question, trigger)) {
+    if (classified.includes(trigger.id) || triggerMatchesQuestion(question, trigger, aiClassified)) {
       matched.push(trigger);
     }
   }

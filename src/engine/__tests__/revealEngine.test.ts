@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { adaptCase } from "../schemaAdapter";
-import { askHistoryQuestion, performManeuver } from "../revealEngine";
+import { askHistoryQuestion, performManeuver, triggerMatchesQuestion } from "../revealEngine";
+import type { HistoryTriggerModel } from "../types";
 import { chestpain01, dyspnea01 } from "./fixtures";
 
 const cp01 = adaptCase(chestpain01);
@@ -56,6 +57,26 @@ describe("history reveal gating (§11.1)", () => {
   it("classified trigger ids from outside are validated against the case", () => {
     const r = askHistoryQuestion("hello", cp01, [], ["nonexistent_trigger", "tobacco_use"]);
     expect(r.matchedTriggerIds).toEqual(["tobacco_use"]);
+  });
+
+  it("when AI has classified intent, loose keyword tiers are dropped so collisions don't leak", () => {
+    // A trigger whose file content shares an incidental word ("weekend") with an
+    // unrelated question — the loose content-token tier (5) would false-match it.
+    const trigger = {
+      id: "social_alcohol",
+      concepts: ["alcohol", "drinking"],
+      fileSegments: ["He drinks heavily every weekend."],
+      sensitive: false,
+      authoredResponse: null,
+    } as unknown as HistoryTriggerModel;
+    const q = "What do you do on the weekend for exercise?";
+    // No LLM classification (AI off) → the loose tier produces a false positive.
+    expect(triggerMatchesQuestion(q, trigger, false)).toBe(true);
+    // LLM has classified (AI on) → only high-precision tiers run, so the
+    // collision is suppressed and the model's decision stands.
+    expect(triggerMatchesQuestion(q, trigger, true)).toBe(false);
+    // A genuine, on-topic question still matches under strict mode (tier 1).
+    expect(triggerMatchesQuestion("Do you drink alcohol?", trigger, true)).toBe(true);
   });
 
   it("newlyUnlocked excludes already-unlocked triggers", () => {
