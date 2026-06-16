@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { adaptCase, parsePatientFile } from "../schemaAdapter";
+import { adaptCase, parsePatientFile, stripStageDirections } from "../schemaAdapter";
 import {
   createSession,
   transition,
@@ -12,6 +12,28 @@ import { MANEUVERS } from "../maneuvers";
 import { chestpain01, dyspnea01, asOriginalSchema, SCORE_BANDS } from "./fixtures";
 
 const T0 = 1_700_000_000_000;
+
+describe("stripStageDirections — never leak author instructions to the student", () => {
+  it("drops verb-led / instruction parentheticals but keeps clinical ones", () => {
+    expect(stripStageDirections("(Reveal these only if asked about medical history.)")).toBe("");
+    expect(
+      stripStageDirections("Type 2 diabetes (last A1c ~10). (Reveal these only if asked about PMH.)"),
+    ).toBe("Type 2 diabetes (last A1c ~10).");
+    expect(stripStageDirections("Chest pain (do not volunteer the cocaine use unless asked).")).toBe(
+      "Chest pain.",
+    );
+    // clinical parentheticals are preserved
+    expect(stripStageDirections("Metformin (often skips it).")).toBe("Metformin (often skips it).");
+    expect(stripStageDirections("Pain 8/10 (worse leaning back).")).toBe("Pain 8/10 (worse leaning back).");
+  });
+
+  it("a revealed patient-file segment never contains a stage direction", () => {
+    const segs = parsePatientFile(
+      "HPI: pain started 8h ago.\nPMH: diabetes (last A1c ~10). (Reveal only if asked about medical history.)",
+    ).historySegments;
+    expect(segs.some((s) => /reveal|only if asked|do not/i.test(s.text))).toBe(false);
+  });
+});
 
 describe("schema adapter (§11.6)", () => {
   it("an upgraded case uses the richer fields", () => {

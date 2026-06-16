@@ -49,6 +49,16 @@ export function stripStageDirections(text: string): string {
     .replace(/\s*[—–-]\s*only (mentions?|reveals?|discloses?|if)[^.;]*[.;]?\s*$/i, "")
     .replace(/\s*\((?:only )?(?:if|unless|when) (?:asked|prompted)[^)]*\)/gi, "")
     .replace(/\s*\(only [^)]*\)/gi, "")
+    // Any parenthetical that READS as an author instruction to the actor —
+    // catches notes that start with a verb ("(Reveal these only if asked …)",
+    // "(do not volunteer …)") which the patterns above miss. Clinical
+    // parentheticals ("(often skips it)", "(last A1c ~10)") have none of these
+    // instruction words and are kept.
+    .replace(
+      /\s*\([^)]*\b(?:reveals?|disclos\w+|volunteer\w*|hidden|if asked|unless asked|when asked|do not|don['’]t|never (?:mention|reveal|say|volunteer))\b[^)]*\)/gi,
+      "",
+    )
+    .replace(/\s{2,}/g, " ")
     .trim();
 }
 
