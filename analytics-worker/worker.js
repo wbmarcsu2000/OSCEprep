@@ -135,6 +135,17 @@ async function qSafe(env, sql) {
   }
 }
 
+/** Whether a column exists on `events` — lets the dashboard work before the
+ *  drill-performance migration has been applied. */
+async function columnExists(env, col) {
+  try {
+    await env.DB.prepare(`SELECT ${col} FROM events LIMIT 1`).all();
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function esc(s) {
   return String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 }
@@ -176,6 +187,11 @@ function aggUa(rows) {
 
 async function dashboard(env) {
   const sinceDays = (n) => `(strftime('%s','now')-${n}*86400)*1000`;
+  // Only select `pct` in the recent feed once the column exists, so an
+  // un-migrated DB renders the dashboard instead of erroring.
+  const hasPct = await columnExists(env, "pct");
+  const recentSql = `SELECT received, event, screen, category, mode, band, difficulty, drilltype, ${hasPct ? "pct," : ""} provider, country, lang, ua
+              FROM events ORDER BY received DESC LIMIT 40`;
   const [
     totals, d1, d7, d30, today,
     daily, hourly, eventsByType,
@@ -214,8 +230,7 @@ async function dashboard(env) {
     q(env, `SELECT CASE WHEN sessions>1 THEN 'Returning' ELSE 'One visit' END label, count(*) devices
               FROM (SELECT device, count(DISTINCT session) sessions FROM events WHERE device<>'' GROUP BY device)
               GROUP BY label ORDER BY devices DESC`),
-    q(env, `SELECT received, event, screen, category, mode, band, difficulty, drilltype, pct, provider, country, lang, ua
-              FROM events ORDER BY received DESC LIMIT 40`),
+    q(env, recentSql),
     // Drill performance (tolerant of an un-migrated DB via qSafe).
     qSafe(env, `SELECT drilltype, round(avg(pct)) avg, count(*) n FROM events
                   WHERE event='drill' AND pct IS NOT NULL AND drilltype<>'' GROUP BY drilltype ORDER BY n DESC`),
