@@ -43,35 +43,58 @@ export default {
         return new Response(null, { status: 204, headers: CORS });
       }
       const p = e.props || {};
+      const country = clip((request.cf && request.cf.country) || "");
+      const ua = clip(request.headers.get("user-agent") || "", 256);
+      const pct =
+        p.pct == null || p.pct === "" || isNaN(Number(p.pct))
+          ? null
+          : Math.max(0, Math.min(100, Math.round(Number(p.pct))));
+      const advanced = p.advanced === true || p.advanced === 1 || p.advanced === "true" ? 1 : p.advanced == null ? null : 0;
+      // Legacy column set (DBs not yet migrated for drill performance).
+      const base = [
+        Date.now(),
+        Number(e.ts) || null,
+        clip(e.event),
+        clip(p.screen),
+        clip(p.category),
+        clip(p.mode),
+        clip(p.band),
+        clip(p.difficulty),
+        clip(p.drillType),
+      ];
+      const tail = [
+        clip(p.provider),
+        clip(e.deviceId, 48),
+        clip(e.sessionId, 48),
+        country,
+        ua,
+        clip(e.ref),
+        clip(e.lang, 12),
+        clip(e.app, 24),
+      ];
       try {
         await env.DB.prepare(
           `INSERT INTO events
-             (received, ts, event, screen, category, mode, band, difficulty, drilltype, provider,
+             (received, ts, event, screen, category, mode, band, difficulty, drilltype, pct, advanced, provider,
               device, session, country, ua, ref, lang, app)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
         )
-          .bind(
-            Date.now(),
-            Number(e.ts) || null,
-            clip(e.event),
-            clip(p.screen),
-            clip(p.category),
-            clip(p.mode),
-            clip(p.band),
-            clip(p.difficulty),
-            clip(p.drillType),
-            clip(p.provider),
-            clip(e.deviceId, 48),
-            clip(e.sessionId, 48),
-            clip((request.cf && request.cf.country) || ""),
-            clip(request.headers.get("user-agent") || "", 256),
-            clip(e.ref),
-            clip(e.lang, 12),
-            clip(e.app, 24),
-          )
+          .bind(...base, pct, advanced, ...tail)
           .run();
       } catch {
-        // never fail the beacon
+        // DB not yet migrated for pct/advanced — fall back so the event still lands.
+        try {
+          await env.DB.prepare(
+            `INSERT INTO events
+               (received, ts, event, screen, category, mode, band, difficulty, drilltype, provider,
+                device, session, country, ua, ref, lang, app)
+             VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+          )
+            .bind(...base, ...tail)
+            .run();
+        } catch {
+          // never fail the beacon
+        }
       }
       return new Response(null, { status: 204, headers: CORS });
     }
@@ -100,6 +123,16 @@ export default {
 async function q(env, sql) {
   const res = await env.DB.prepare(sql).all();
   return res.results || [];
+}
+
+/** Like q(), but tolerates a missing column (e.g. pre-migration `pct`) so the
+ *  whole dashboard never 500s on the newer drill-performance queries. */
+async function qSafe(env, sql) {
+  try {
+    return await q(env, sql);
+  } catch {
+    return [];
+  }
 }
 
 function esc(s) {
@@ -149,6 +182,7 @@ async function dashboard(env) {
     screens, startsByCat, completesByCat, funnel,
     bands, difficulty, modes, drills, aiProv, aiDevices,
     countries, langs, refs, apps, uaRows, retention, recent,
+    drillPerf, drillDist, drillOverall, diffMode,
   ] = await Promise.all([
     q(env, `SELECT count(*) n, count(DISTINCT device) devices, count(DISTINCT session) sessions FROM events`),
     q(env, `SELECT count(DISTINCT device) d FROM events WHERE received >= ${sinceDays(1)}`),
@@ -180,13 +214,22 @@ async function dashboard(env) {
     q(env, `SELECT CASE WHEN sessions>1 THEN 'Returning' ELSE 'One visit' END label, count(*) devices
               FROM (SELECT device, count(DISTINCT session) sessions FROM events WHERE device<>'' GROUP BY device)
               GROUP BY label ORDER BY devices DESC`),
-    q(env, `SELECT received, event, screen, category, mode, band, difficulty, drilltype, provider, country, lang, ua
+    q(env, `SELECT received, event, screen, category, mode, band, difficulty, drilltype, pct, provider, country, lang, ua
               FROM events ORDER BY received DESC LIMIT 40`),
+    // Drill performance (tolerant of an un-migrated DB via qSafe).
+    qSafe(env, `SELECT drilltype, round(avg(pct)) avg, count(*) n FROM events
+                  WHERE event='drill' AND pct IS NOT NULL AND drilltype<>'' GROUP BY drilltype ORDER BY n DESC`),
+    qSafe(env, `SELECT CASE WHEN pct>=70 THEN 'Strong (70-100)' WHEN pct>=40 THEN 'Partial (40-69)' ELSE 'Weak (0-39)' END bucket,
+                  count(*) n FROM events WHERE event='drill' AND pct IS NOT NULL GROUP BY bucket`),
+    qSafe(env, `SELECT round(avg(pct)) avg, count(*) n, count(DISTINCT device) devices FROM events WHERE event='drill' AND pct IS NOT NULL`),
+    qSafe(env, `SELECT CASE WHEN advanced=1 THEN 'Advanced' ELSE 'Core' END m, count(*) n, round(avg(pct)) avg
+                  FROM events WHERE event='drill' AND drilltype='differential' AND pct IS NOT NULL GROUP BY m`),
   ]);
 
   const t = totals[0] || { n: 0, devices: 0, sessions: 0 };
   const fn = funnel[0] || { opens: 0, starts: 0, completes: 0 };
   const aiDev = (aiDevices[0] || { d: 0 }).d;
+  const dOverall = drillOverall[0] || { avg: 0, n: 0, devices: 0 };
   const ua = aggUa(uaRows);
   const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
   const num = (x) => (x == null ? 0 : x);
@@ -202,6 +245,7 @@ async function dashboard(env) {
     ["Completion", `${pct(fn.completes, fn.starts)}%`, `${num(fn.completes)} of ${num(fn.starts)} starts`],
     ["Events / session", t.sessions ? (t.n / t.sessions).toFixed(1) : "0", "engagement depth"],
     ["Sessions / device", t.devices ? (t.sessions / t.devices).toFixed(1) : "0", "stickiness"],
+    ["Avg drill score", dOverall.n ? `${num(dOverall.avg)}%` : "—", `${num(dOverall.n)} graded reps`],
   ];
 
   // Data injected for client-side Chart.js.
@@ -218,6 +262,9 @@ async function dashboard(env) {
     difficulty: pairs(difficulty, "difficulty", "n"),
     mode: pairs(modes, "mode", "n"),
     drills: pairs(drills, "drilltype", "n"),
+    drillperf: pairs(drillPerf, "drilltype", "avg"),
+    drilldist: pairs(drillDist, "bucket", "n"),
+    diffmode: pairs(diffMode, "m", "avg"),
     ai: pairs(aiProv, "provider", "n"),
     country: pairs(countries, "country", "devices"),
     lang: pairs(langs, "lang", "devices"),
@@ -239,7 +286,8 @@ async function dashboard(env) {
     ? recent.map((r) => {
         const { browser, os } = parseUa(r.ua);
         const when = new Date(Number(r.received)).toISOString().slice(0, 16).replace("T", " ");
-        const detail = [r.screen, r.category, r.mode, r.difficulty, r.band, r.drilltype, r.provider].filter(Boolean).join(" · ");
+        const score = r.pct != null && r.pct !== "" ? `${r.pct}%` : "";
+        const detail = [r.screen, r.category, r.mode, r.difficulty, r.band, r.drilltype, score, r.provider].filter(Boolean).join(" · ");
         return `<tr><td>${esc(when)}</td><td><span class="tag">${esc(r.event)}</span></td><td>${esc(detail)}</td><td>${esc(r.country)}</td><td>${esc(browser)} / ${esc(os)}</td></tr>`;
       }).join("")
     : `<tr><td colspan="5" class="muted">No events yet — use the app (and accept analytics) to populate this.</td></tr>`;
@@ -297,7 +345,10 @@ th{font-size:11px;color:#6b6786;text-transform:uppercase;letter-spacing:.04em}
   ${card("c_bands", "Score bands")}
   ${card("c_diff", "Difficulty attempted")}
   ${card("c_mode", "Mode")}
-  ${card("c_drills", "Drills")}
+  ${card("c_drills", "Drills · reps by type")}
+  ${card("c_drillperf", "Drill performance · avg coverage %")}
+  ${card("c_drilldist", "Drill score distribution")}
+  ${card("c_diffmode", "Differential · core vs advanced (avg %)")}
   ${card("c_ai", "AI provider")}
   ${card("c_ref", "Referrers")}
   <div class="card wide"><h2>Recent activity</h2>
@@ -347,6 +398,9 @@ dough('c_bands',DATA.bands);
 dough('c_diff',DATA.difficulty);
 dough('c_mode',DATA.mode);
 bar('c_drills',DATA.drills,true);
+bar('c_drillperf',DATA.drillperf,true);
+dough('c_drilldist',DATA.drilldist);
+bar('c_diffmode',DATA.diffmode);
 dough('c_ai',DATA.ai);
 bar('c_ref',DATA.ref,true);
 </script>

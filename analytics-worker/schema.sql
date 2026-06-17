@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS events (
   band       TEXT,
   difficulty TEXT,
   drilltype  TEXT,
+  pct        INTEGER,            -- drill coverage score 0-100 (event='drill')
+  advanced   INTEGER,            -- differential drill: 1=advanced list, 0=core
   provider   TEXT,
   device     TEXT,                 -- anonymous persistent id
   session    TEXT,

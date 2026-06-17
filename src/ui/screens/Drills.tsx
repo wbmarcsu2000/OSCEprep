@@ -5,6 +5,19 @@ import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/manag
 import { EKG_DRILLS, CXR_DRILLS, type ImageDrillProblem } from "../../data/imageDrills";
 import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
+import { useDrillProgress } from "../useDrillProgress";
+import {
+  drillCatalog,
+  drillKey,
+  isMastered,
+  isSeen,
+  summarize,
+  skillDrillId,
+  DRILL_TYPE_LABELS,
+  type DrillProgress,
+  type DrillProgressMap,
+  type DrillManual,
+} from "../../data/drillProgress";
 import { ManualRefs } from "../components/ManualRefs";
 import { Segmented } from "../components/Segmented";
 import { VisualGuide } from "../components/VisualGuide";
@@ -58,6 +71,154 @@ function useGrader() {
   };
 }
 
+/** mm:ss for the stopwatch. */
+function fmtTime(sec: number): string {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+/** Status of the currently-served problem (mastered / seen / needs-work / new). */
+function SeenChip({ entry }: { entry?: DrillProgress }) {
+  if (!entry || entry.attempts === 0) return <span className="chip">✦ New</span>;
+  if (isMastered(entry)) return <span className="chip chip-ok">✓ Mastered</span>;
+  if (entry.manual === "review") return <span className="chip chip-warn">⚑ Needs work</span>;
+  return <span className="chip">Seen · best {entry.bestPct}%</span>;
+}
+
+/** Mark-mastered / needs-work controls + a one-line history, shown after grading. */
+function MasteryControls({ entry, onSetManual }: { entry?: DrillProgress; onSetManual: (m: DrillManual) => void }) {
+  const manual = entry?.manual ?? "none";
+  const auto = (entry?.bestPct ?? 0) >= 80 && manual !== "review";
+  return (
+    <div className="flex items-center gap-2 flex-wrap border-t pt-3" style={{ borderColor: "var(--color-exam-border)" }}>
+      <span className="hint">
+        {entry
+          ? `Seen ${entry.attempts}× · best ${entry.bestPct}%${auto ? " · mastered" : ""}`
+          : "First attempt — now saved to your progress"}
+      </span>
+      <div className="ml-auto flex items-center gap-1.5">
+        <button
+          type="button"
+          className={`btn ${manual === "mastered" ? "btn-primary" : "btn-ghost"} py-1 px-2.5 text-[12px]`}
+          aria-pressed={manual === "mastered"}
+          onClick={() => onSetManual(manual === "mastered" ? "none" : "mastered")}
+        >
+          {manual === "mastered" ? "✓ Mastered" : "Mark mastered"}
+        </button>
+        <button
+          type="button"
+          className="btn btn-ghost py-1 px-2.5 text-[12px]"
+          aria-pressed={manual === "review"}
+          style={manual === "review" ? { color: "var(--color-exam-warn)" } : undefined}
+          onClick={() => onSetManual(manual === "review" ? "none" : "review")}
+        >
+          {manual === "review" ? "⚑ Needs work" : "Needs work"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/** Browsable list of every problem in the current drill type, with status, so a
+ *  problem is never lost: jump straight to any one. Spoiler-safe — the answer is
+ *  only shown for problems already attempted. */
+function DrillBrowser({
+  type,
+  progress,
+  currentId,
+  onPick,
+}: {
+  type: DrillType;
+  progress: DrillProgressMap;
+  currentId: string | null;
+  onPick: (id: string) => void;
+}) {
+  const [filter, setFilter] = useState<"all" | "unseen" | "review" | "mastered">("all");
+  const items = useMemo(() => drillCatalog(type), [type]);
+  const filtered = items.filter((it) => {
+    const p = progress[drillKey(type, it.id)];
+    if (filter === "unseen") return !isSeen(p);
+    if (filter === "review") return p?.manual === "review";
+    if (filter === "mastered") return isMastered(p);
+    return true;
+  });
+  const FILTERS: { k: typeof filter; label: string }[] = [
+    { k: "all", label: "All" },
+    { k: "unseen", label: "Unseen" },
+    { k: "review", label: "Needs work" },
+    { k: "mastered", label: "Mastered" },
+  ];
+  return (
+    <div className="card p-3 space-y-2 pop-in">
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="panel-label">All {DRILL_TYPE_LABELS[type].toLowerCase()} problems</span>
+        <div className="ml-auto flex items-center gap-1">
+          {FILTERS.map((f) => (
+            <button
+              key={f.k}
+              type="button"
+              className={`btn ${filter === f.k ? "btn-primary" : "btn-ghost"} py-0.5 px-2 text-[11.5px]`}
+              onClick={() => setFilter(f.k)}
+            >
+              {f.label}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="max-h-80 overflow-auto px-0.5 space-y-1">
+        {filtered.length === 0 ? (
+          <p className="hint py-2 text-center">Nothing here yet.</p>
+        ) : (
+          filtered.map((it) => {
+            const p = progress[drillKey(type, it.id)];
+            const seen = isSeen(p);
+            const mastered = isMastered(p);
+            const review = p?.manual === "review";
+            const icon = mastered ? "✓" : review ? "⚑" : seen ? "•" : "○";
+            const tone = mastered
+              ? "var(--color-exam-ok)"
+              : review
+                ? "var(--color-exam-warn)"
+                : seen
+                  ? "var(--color-exam-accent)"
+                  : "var(--color-exam-muted)";
+            const isCurrent = it.id === currentId;
+            return (
+              <button
+                key={it.id}
+                type="button"
+                onClick={() => onPick(it.id)}
+                className="w-full text-left rounded-lg border px-2.5 py-1.5 flex items-center gap-2 text-[12.5px]"
+                style={{
+                  borderColor: isCurrent ? "var(--color-exam-accent)" : "var(--color-exam-border)",
+                  background: isCurrent ? "var(--color-exam-accent-soft)" : "transparent",
+                }}
+              >
+                <span style={{ color: tone, width: "1rem" }} aria-hidden>
+                  {icon}
+                </span>
+                <span className="min-w-0 flex-1 truncate">
+                  {it.group && <span className="font-semibold">{it.group}: </span>}
+                  {it.label}
+                  {seen && it.answer && (
+                    <span style={{ color: "var(--color-exam-muted)" }}> — {it.answer}</span>
+                  )}
+                </span>
+                {seen && (
+                  <span className="font-mono tabular-nums" style={{ color: "var(--color-exam-muted)" }}>
+                    {p!.bestPct}%
+                  </span>
+                )}
+              </button>
+            );
+          })
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function Drills() {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
@@ -74,6 +235,8 @@ export function Drills() {
   const [skillAnswer, setSkillAnswer] = useState("");
   const [imageAnswer, setImageAnswer] = useState("");
   const [graded, setGraded] = useState(false);
+  const { progress, record, setManual } = useDrillProgress();
+  const [browsing, setBrowsing] = useState(false);
 
   const category = useMemo(
     () => CURRICULUM.find((c) => c.category === categoryName)!,
@@ -111,6 +274,32 @@ export function Drills() {
       ? imagePool[stemIdx % imagePool.length]
       : null;
 
+  // Stable id of the problem currently on screen (per drill type), for progress.
+  const activeId: string | null =
+    type === "differential"
+      ? categoryName
+      : type === "workup"
+        ? stem
+          ? `${categoryName}#${category.practiceCases.indexOf(stem)}`
+          : null
+        : type === "management"
+          ? managementProblem?.caseId ?? null
+          : type === "skills"
+            ? skillProblem
+              ? skillDrillId(skillProblem)
+              : null
+            : imageProblem
+              ? String(imageProblem.n)
+              : null;
+  const activeProgress = activeId ? progress[drillKey(type, activeId)] : undefined;
+  const summary = useMemo(() => summarize(type, progress), [type, progress]);
+  const recordCurrent = (pct: number) => {
+    if (activeId) record(type, activeId, pct);
+  };
+  const setManualCurrent = (m: DrillManual) => {
+    if (activeId) setManual(type, activeId, m);
+  };
+
   const reset = () => {
     setDdx("");
     setWorkup("");
@@ -128,15 +317,57 @@ export function Drills() {
     reset();
   };
 
-  /** Cycle to the next curriculum category so "New rep" serves a fresh prompt
-   *  instead of re-serving the one just graded. */
-  const nextCategory = () => {
-    const idx = CURRICULUM.findIndex((c) => c.category === categoryName);
-    return CURRICULUM[(idx + 1) % CURRICULUM.length].category;
-  };
-
   /** Re-attempt the same prompt: keep the typed answer, just re-open grading. */
   const retry = () => setGraded(false);
+
+  /** Jump the drill to a specific problem (from the browser or smart-next). */
+  const goToProblem = (t: DrillType, id: string) => {
+    setType(t);
+    if (t === "differential") {
+      setCategoryName(id);
+    } else if (t === "workup") {
+      const h = id.lastIndexOf("#");
+      setCategoryName(id.slice(0, h));
+      setStemIdx(parseInt(id.slice(h + 1), 10) || 0);
+    } else if (t === "management") {
+      const prob = MANAGEMENT_DRILLS.find((p) => p.caseId === id);
+      if (prob) {
+        setCategoryName(prob.category);
+        const pool = MANAGEMENT_DRILLS.filter((p) => p.category === prob.category);
+        setStemIdx(Math.max(0, pool.findIndex((p) => p.caseId === id)));
+      }
+    } else if (t === "skills") {
+      const prob = SKILL_DRILLS.find((p) => skillDrillId(p) === id);
+      if (prob) {
+        setSkillFilter(prob.skill);
+        const pool = SKILL_DRILLS.filter((p) => p.skill === prob.skill);
+        setStemIdx(Math.max(0, pool.findIndex((p) => skillDrillId(p) === id)));
+      }
+    } else {
+      const pool = t === "ekg" ? EKG_DRILLS : CXR_DRILLS;
+      setStemIdx(Math.max(0, pool.findIndex((p) => String(p.n) === id)));
+    }
+    setBrowsing(false);
+    reset();
+  };
+
+  /** Next problem to serve: prefer unseen, then unmastered, else just advance. */
+  const pickNext = (t: DrillType): string | null => {
+    const items = drillCatalog(t);
+    if (items.length === 0) return null;
+    const cur = items.findIndex((it) => it.id === activeId);
+    const order = [...items.slice(cur + 1), ...items.slice(0, cur + 1)];
+    const unseen = order.find((it) => !isSeen(progress[drillKey(t, it.id)]));
+    if (unseen) return unseen.id;
+    const unmastered = order.find((it) => !isMastered(progress[drillKey(t, it.id)]));
+    return (unmastered ?? order[0] ?? items[0]).id;
+  };
+
+  const nextProblem = () => {
+    const id = pickNext(type);
+    if (id) goToProblem(type, id);
+    else newRep(type);
+  };
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
@@ -221,18 +452,27 @@ export function Drills() {
             </select>
           </label>
         )}
-        <button
-          className="btn ml-auto"
-          onClick={() => {
-            // Skills + management rotate within the current filter; differential
-            // and work-up jump to a random complaint for variety.
-            if (type === "skills" || type === "management" || type === "ekg" || type === "cxr") newRep(type);
-            else newRep(type, CURRICULUM[(Date.now() >>> 0) % CURRICULUM.length].category);
-          }}
-        >
-          🎲 {type === "skills" ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : "Random rep"}
+        <button className="btn ml-auto" onClick={nextProblem} title="Prefers a problem you haven't mastered yet">
+          ➜ {type === "skills" ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : "Next rep"}
         </button>
       </div>
+
+      {/* Progress for this drill type + browse-all (revisit any problem) */}
+      <div className="card px-4 py-2.5 flex items-center gap-2 flex-wrap text-[13px]">
+        <span className="panel-label">Progress</span>
+        <span className="font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+          Seen {summary.seen}/{summary.total} · {summary.mastered} mastered
+          {summary.needsWork ? ` · ${summary.needsWork} to review` : ""}
+          {summary.seen ? ` · avg ${summary.avgBestPct}%` : ""}
+        </span>
+        <SeenChip entry={activeProgress} />
+        <button className="btn btn-ghost ml-auto py-1 px-2.5 text-[12px]" onClick={() => setBrowsing((b) => !b)}>
+          {browsing ? "Hide list" : `📋 Browse all (${summary.total})`}
+        </button>
+      </div>
+      {browsing && (
+        <DrillBrowser type={type} progress={progress} currentId={activeId} onPick={(id) => goToProblem(type, id)} />
+      )}
 
       {type === "differential" && (
         <DifferentialDrill
@@ -248,8 +488,11 @@ export function Drills() {
           }}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep("differential", nextCategory())}
+          onNew={nextProblem}
           onRetry={retry}
+          onRecord={recordCurrent}
+          progressEntry={activeProgress}
+          onSetManual={setManualCurrent}
         />
       )}
       {type === "workup" && (
@@ -261,8 +504,11 @@ export function Drills() {
           setWorkup={setWorkup}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep("workup", nextCategory())}
+          onNew={nextProblem}
           onRetry={retry}
+          onRecord={recordCurrent}
+          progressEntry={activeProgress}
+          onSetManual={setManualCurrent}
         />
       )}
       {type === "management" && (
@@ -273,8 +519,11 @@ export function Drills() {
           setAnswer={setManagementAnswer}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep("management")}
+          onNew={nextProblem}
           onRetry={retry}
+          onRecord={recordCurrent}
+          progressEntry={activeProgress}
+          onSetManual={setManualCurrent}
         />
       )}
       {type === "skills" && (
@@ -285,8 +534,11 @@ export function Drills() {
           setAnswer={setSkillAnswer}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep("skills")}
+          onNew={nextProblem}
           onRetry={retry}
+          onRecord={recordCurrent}
+          progressEntry={activeProgress}
+          onSetManual={setManualCurrent}
         />
       )}
       {(type === "ekg" || type === "cxr") && (
@@ -298,8 +550,11 @@ export function Drills() {
           setAnswer={setImageAnswer}
           graded={graded}
           onGrade={() => setGraded(true)}
-          onNew={() => newRep(type)}
+          onNew={nextProblem}
           onRetry={retry}
+          onRecord={recordCurrent}
+          progressEntry={activeProgress}
+          onSetManual={setManualCurrent}
         />
       )}
 
@@ -480,6 +735,9 @@ function DifferentialDrill({
   onGrade,
   onNew,
   onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
 }: {
   category: CategoryCurriculum;
   ddx: string;
@@ -490,13 +748,25 @@ function DifferentialDrill({
   onGrade: () => void;
   onNew: () => void;
   onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
   const [ddxMatched, setDdxMatched] = useState<Set<string>>(new Set());
   // After grading, the model answer shows by default (side-by-side with the
-  // student's answer); this covers it again for active-recall self-review.
+  // live input); this covers it again for active-recall self-review.
   const [answersHidden, setAnswersHidden] = useState(false);
+
+  // Stopwatch: counts up while answering, freezes once graded, resets on remount
+  // (a new category / rep remounts via the `key` prop in the parent).
+  const [seconds, setSeconds] = useState(0);
+  useEffect(() => {
+    if (graded) return;
+    const t = setInterval(() => setSeconds((s) => s + 1), 1000);
+    return () => clearInterval(t);
+  }, [graded]);
 
   // Core list by default; the opt-in Advanced toggle grades against the full
   // (broadened) differential. Advanced falls back to core if none is defined.
@@ -506,9 +776,13 @@ function DifferentialDrill({
 
   const doGrade = async () => {
     setGrading(true);
-    track("drill", { drillType: "differential", advanced });
     try {
-      setDdxMatched(await grader(ddx, ddxGroups));
+      const matched = await grader(ddx, ddxGroups);
+      setDdxMatched(matched);
+      const r = buildCoverage(ddxGroups, matched);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType: "differential", advanced, pct });
+      onRecord(pct);
       setAnswersHidden(false); // reveal the model answer on each fresh grade
       onGrade();
     } finally {
@@ -520,9 +794,19 @@ function DifferentialDrill({
 
   return (
     <div className="space-y-3">
+      {/* Prompt — depth toggle + stopwatch (full width) */}
       <div className="card p-4">
         <div className="flex items-start justify-between gap-3">
-          <div className="panel-label mb-1">Prompt</div>
+          <div className="flex items-center gap-2">
+            <div className="panel-label">Prompt</div>
+            <span
+              className="chip font-mono tabular-nums"
+              style={{ background: "var(--color-exam-soft)" }}
+              title="Time on this rep"
+            >
+              ⏱ {fmtTime(seconds)}
+            </span>
+          </div>
           <Segmented
             label="Differential depth"
             options={[
@@ -533,7 +817,7 @@ function DifferentialDrill({
             onChange={(v) => onToggleAdvanced(v === "advanced")}
           />
         </div>
-        <p className="text-[15px] font-semibold">
+        <p className="text-[15px] font-semibold mt-1">
           A patient presents with{" "}
           <span style={{ color: "var(--color-exam-accent-deep)" }}>{category.category.toLowerCase()}</span>.
         </p>
@@ -547,33 +831,33 @@ function DifferentialDrill({
         </p>
       </div>
 
-      <div className="card p-4 space-y-3">
-        <div>
-          <div className="panel-label mb-1.5">Your differential</div>
+      {/* Your input and the model answer sit side-by-side once graded — the live
+          textarea IS your answer (no re-paste), so there's nothing to scroll past. */}
+      <div className={graded ? "grid gap-3 lg:grid-cols-2 items-start" : "space-y-3"}>
+        <div className="card p-4 space-y-3">
+          <div className="panel-label">Your differential</div>
           <textarea
             className="input w-full resize-y leading-relaxed"
-            rows={5}
+            rows={graded ? 7 : 5}
             value={ddx}
             onChange={(e) => setDdx(e.target.value)}
             placeholder="List as many plausible causes as you can, ideally grouped…"
             aria-label="Your differential"
           />
+          <GradeButton
+            graded={graded}
+            grading={grading}
+            disabled={!ddx.trim()}
+            onGrade={doGrade}
+            onNew={onNew}
+            onRetry={onRetry}
+            newLabel="New rep →"
+          />
         </div>
-        <GradeButton
-          graded={graded}
-          grading={grading}
-          disabled={!ddx.trim()}
-          onGrade={doGrade}
-          onNew={onNew}
-          onRetry={onRetry}
-          newLabel="New rep →"
-        />
-      </div>
 
-      {graded && (
-        <div className="card p-4 space-y-4 pop-in">
-          <div className="space-y-2">
-            <div className="flex items-center justify-between gap-3">
+        {graded && (
+          <div className="card p-4 space-y-3 pop-in">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
               <div className="panel-label">Coverage</div>
               <div className="flex items-center gap-2">
                 <ResultChip named={ddxResult.named} total={ddxResult.total} />
@@ -589,56 +873,37 @@ function DifferentialDrill({
               </div>
             </div>
             <ScoreBar named={ddxResult.named} total={ddxResult.total} label="Differential coverage" />
-          </div>
 
-          {/* Side-by-side: the student's own answer next to the model list, so
-              differences are immediate. The model side covers for self-review. */}
-          <div className="grid gap-3 sm:grid-cols-2 items-start">
-            <div>
-              <div className="panel-label mb-1.5">Your answer</div>
-              <div
-                className="rounded-lg border p-3 text-[13px] leading-relaxed whitespace-pre-wrap"
-                style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)", minHeight: "5rem" }}
-              >
-                {ddx.trim() ? (
-                  ddx
-                ) : (
-                  <span style={{ color: "var(--color-exam-muted)" }}>(you left this blank)</span>
-                )}
-              </div>
-            </div>
             {answersHidden ? (
               <button
                 type="button"
                 onClick={() => setAnswersHidden(false)}
-                className="rounded-lg border border-dashed p-3 text-[13px] font-semibold flex items-center justify-center gap-2 w-full"
-                style={{ borderColor: "var(--color-exam-border-strong)", color: "var(--color-exam-muted)", minHeight: "5rem" }}
+                className="rounded-lg border border-dashed p-4 text-[13px] font-semibold flex items-center justify-center gap-2 w-full"
+                style={{ borderColor: "var(--color-exam-border-strong)", color: "var(--color-exam-muted)", minHeight: "6rem" }}
                 aria-label="Show the model differential"
               >
                 🙈 Answers hidden — tap to reveal
               </button>
             ) : (
-              <CoverageView
-                title={advanced ? "Model differential — advanced" : "Model differential — core"}
-                coverage={ddxResult.coverage}
-              />
+              <>
+                <CoverageView
+                  title={advanced ? "Model differential — advanced" : "Model differential — core"}
+                  coverage={ddxResult.coverage}
+                />
+                <div>
+                  <div className="panel-label mb-1">Schema</div>
+                  <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
+                    {category.framework} {category.strategy}
+                  </p>
+                </div>
+                <ManualRefs manual={category.manual} compact />
+              </>
             )}
-          </div>
 
-          {!answersHidden && (
-            <>
-              <div>
-                <div className="panel-label mb-1">Schema</div>
-                <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
-                  {category.framework} {category.strategy}
-                </p>
-              </div>
-              <VisualGuide category={category.category} view="differential" open />
-              <ManualRefs manual={category.manual} compact />
-            </>
-          )}
-        </div>
-      )}
+            <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -651,6 +916,9 @@ function SkillDrill({
   onGrade,
   onNew,
   onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
 }: {
   problem: SkillDrillProblem | null;
   answer: string;
@@ -659,6 +927,9 @@ function SkillDrill({
   onGrade: () => void;
   onNew: () => void;
   onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -668,9 +939,13 @@ function SkillDrill({
 
   const doGrade = async () => {
     setGrading(true);
-    track("drill", { drillType: "skills" });
     try {
-      setMatched(await grader(answer, groups));
+      const m = await grader(answer, groups);
+      setMatched(m);
+      const r = buildCoverage(groups, m);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType: "skills", pct });
+      onRecord(pct);
       onGrade();
     } finally {
       setGrading(false);
@@ -725,6 +1000,7 @@ function SkillDrill({
               {problem.explanation}
             </p>
           </div>
+          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
         </div>
       )}
     </div>
@@ -740,6 +1016,9 @@ function WorkupDrill({
   onGrade,
   onNew,
   onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
 }: {
   category: CategoryCurriculum;
   stem: PracticeCase | null;
@@ -749,6 +1028,9 @@ function WorkupDrill({
   onGrade: () => void;
   onNew: () => void;
   onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -773,9 +1055,13 @@ function WorkupDrill({
 
   const doGrade = async () => {
     setGrading(true);
-    track("drill", { drillType: "workup" });
     try {
-      setMatched(await grader(workup, groups));
+      const m = await grader(workup, groups);
+      setMatched(m);
+      const r = buildCoverage(groups, m);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType: "workup", pct });
+      onRecord(pct);
       onGrade();
     } finally {
       setGrading(false);
@@ -946,6 +1232,7 @@ function WorkupDrill({
 
           <VisualGuide category={category.category} view="workup" open />
           <ManualRefs manual={category.manual} compact />
+          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
         </>
       )}
     </div>
@@ -960,6 +1247,9 @@ function ManagementDrill({
   onGrade,
   onNew,
   onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
 }: {
   problem: ManagementDrillProblem | null;
   answer: string;
@@ -968,6 +1258,9 @@ function ManagementDrill({
   onGrade: () => void;
   onNew: () => void;
   onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -977,9 +1270,13 @@ function ManagementDrill({
 
   const doGrade = async () => {
     setGrading(true);
-    track("drill", { drillType: "management" });
     try {
-      setMatched(await grader(answer, groups));
+      const m = await grader(answer, groups);
+      setMatched(m);
+      const r = buildCoverage(groups, m);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType: "management", pct });
+      onRecord(pct);
       onGrade();
     } finally {
       setGrading(false);
@@ -1089,6 +1386,7 @@ function ManagementDrill({
 
           <VisualGuide category={problem.category} view="management" open />
           {problem.manual.page > 0 && <ManualRefs manual={[problem.manual]} compact />}
+          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
         </div>
       )}
     </div>
@@ -1138,6 +1436,9 @@ function ImageReadDrill({
   onGrade,
   onNew,
   onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
 }: {
   kind: "ekg" | "cxr";
   problem: ImageDrillProblem | null;
@@ -1147,6 +1448,9 @@ function ImageReadDrill({
   onGrade: () => void;
   onNew: () => void;
   onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -1168,9 +1472,13 @@ function ImageReadDrill({
   ];
   const doGrade = async () => {
     setGrading(true);
-    track("drill", { drillType: kind });
     try {
-      setMatched(await grader(answer, groups));
+      const m = await grader(answer, groups);
+      setMatched(m);
+      const r = buildCoverage(groups, m);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType: kind, pct });
+      onRecord(pct);
       onGrade();
     } finally {
       setGrading(false);
@@ -1266,6 +1574,7 @@ function ImageReadDrill({
             idealAnswer={`Diagnosis: ${problem.diagnosis}. Key findings: ${problem.findings.join("; ")}.`}
             rubric={problem.read || `${problem.diagnosis}: ${problem.findings.join("; ")}`}
           />
+          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
         </div>
       )}
 

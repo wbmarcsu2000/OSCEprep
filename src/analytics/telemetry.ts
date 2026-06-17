@@ -44,7 +44,7 @@ const ALLOWED_EVENTS = new Set([
 
 /** Prop keys we will ever send. Anything not here is dropped — this is the
  *  hard guarantee that no free text / answer / key can leak. */
-const ALLOWED_PROPS = new Set(["screen", "category", "mode", "band", "difficulty", "drillType", "provider", "advanced"]);
+const ALLOWED_PROPS = new Set(["screen", "category", "mode", "band", "difficulty", "drillType", "provider", "advanced", "pct"]);
 
 // ---------------------------------------------------------------------------
 // Consent

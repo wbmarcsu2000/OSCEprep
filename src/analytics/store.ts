@@ -5,6 +5,7 @@
 
 import type { CaseModel, EngineState, Mode, ScoreReport } from "../engine/types";
 import { SESSION_STORAGE_KEY } from "../engine/stateMachine";
+import { DRILL_PROGRESS_KEY } from "../data/drillProgress";
 
 export const ANALYTICS_STORAGE_KEY = "osce.analytics.v1";
 /** Full per-case review payloads (last attempt wins), keyed by case id. */
@@ -138,7 +139,7 @@ export function recordAttempt(caseModel: CaseModel, engine: EngineState): void {
 
 // ---- Data management ---------------------------------------------------------
 
-const ALL_KEYS = [ANALYTICS_STORAGE_KEY, REVIEW_STORAGE_KEY, SESSION_STORAGE_KEY];
+const ALL_KEYS = [ANALYTICS_STORAGE_KEY, REVIEW_STORAGE_KEY, SESSION_STORAGE_KEY, DRILL_PROGRESS_KEY];
 
 /** All progress as a single portable JSON document. */
 export function exportAllData(): string {

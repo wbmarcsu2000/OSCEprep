@@ -11,6 +11,16 @@ import { DOMAIN_LABELS } from "../../engine/types";
 import { MANEUVER_BY_ID } from "../../engine/maneuvers";
 import { manifest } from "../../data/loader";
 import { badges, levelFor, recommendNext, streakDays, streakAtRisk, totalXp } from "../gamification";
+import {
+  loadDrillProgress,
+  drillCatalog,
+  drillKey,
+  isMastered,
+  isSeen,
+  summarize,
+  DRILL_TYPE_ORDER,
+  DRILL_TYPE_LABELS,
+} from "../../data/drillProgress";
 import { useMountNow } from "../useMountNow";
 import { useAppStore } from "../store";
 
@@ -167,6 +177,87 @@ function DataManagement() {
           {importStatus.text}
         </p>
       )}
+    </div>
+  );
+}
+
+/** Longitudinal progress + performance across the six Framework Drills. */
+function DrillProgressSection() {
+  const progress = useMemo(() => loadDrillProgress(), []);
+  const rows = DRILL_TYPE_ORDER.map((t) => summarize(t, progress));
+  const grand = rows.reduce(
+    (a, s) => ({
+      seen: a.seen + s.seen,
+      total: a.total + s.total,
+      mastered: a.mastered + s.mastered,
+      attempts: a.attempts + s.attempts,
+    }),
+    { seen: 0, total: 0, mastered: 0, attempts: 0 },
+  );
+  // Attempt-weighted mean of best-coverage across drills that have been tried.
+  const seenAvg = (() => {
+    let sum = 0;
+    let n = 0;
+    for (const s of rows) {
+      if (s.seen) {
+        sum += s.avgBestPct * s.seen;
+        n += s.seen;
+      }
+    }
+    return n ? Math.round(sum / n) : 0;
+  })();
+
+  return (
+    <div className="card p-4">
+      <div className="flex items-center justify-between gap-2 flex-wrap mb-3">
+        <div className="panel-label">Drill progress &amp; performance</div>
+        <span className="hint">
+          {grand.attempts} attempt{grand.attempts === 1 ? "" : "s"} · {grand.seen}/{grand.total} problems tried ·{" "}
+          {grand.mastered} mastered{grand.seen ? ` · avg ${seenAvg}% coverage` : ""}
+        </span>
+      </div>
+      <div className="space-y-3">
+        {rows.map((s) => (
+          <div key={s.type}>
+            <div className="grid grid-cols-[96px_1fr_auto] items-center gap-2 text-[13px]">
+              <span className="font-semibold">{DRILL_TYPE_LABELS[s.type]}</span>
+              <div className="progress-track" style={{ height: "0.625rem" }}>
+                <div className="progress-fill" style={{ width: `${s.total ? (s.seen / s.total) * 100 : 0}%` }} />
+              </div>
+              <span className="font-mono text-[12px] tabular-nums" style={{ color: "var(--color-exam-muted)" }}>
+                {s.seen}/{s.total} · {s.mastered}✓{s.seen ? ` · ${s.avgBestPct}%` : ""}
+              </span>
+            </div>
+            <div className="mt-1.5 flex flex-wrap gap-1" aria-hidden>
+              {drillCatalog(s.type).map((it) => {
+                const p = progress[drillKey(s.type, it.id)];
+                const mastered = isMastered(p);
+                const seen = isSeen(p);
+                const review = p?.manual === "review";
+                const bg = mastered
+                  ? "var(--color-exam-ok)"
+                  : review
+                    ? "var(--color-exam-warn)"
+                    : seen
+                      ? "var(--color-exam-accent)"
+                      : "var(--color-exam-border-strong)";
+                return (
+                  <span
+                    key={it.id}
+                    title={`${it.group ? it.group + ": " : ""}${it.label}${seen ? ` — best ${p!.bestPct}%` : " — unseen"}`}
+                    style={{ width: "0.6rem", height: "0.6rem", borderRadius: "2px", background: bg, opacity: seen || mastered || review ? 1 : 0.35 }}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="hint mt-3">
+        Tracked locally on this device. Squares: <span style={{ color: "var(--color-exam-ok)" }}>■</span> mastered ·{" "}
+        <span style={{ color: "var(--color-exam-accent)" }}>■</span> seen ·{" "}
+        <span style={{ color: "var(--color-exam-warn)" }}>■</span> needs work · <span style={{ opacity: 0.4 }}>■</span> unseen.
+      </p>
     </div>
   );
 }
@@ -338,6 +429,8 @@ export function Analytics() {
           </>
         )}
       </div>
+
+      <DrillProgressSection />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="card p-4">
