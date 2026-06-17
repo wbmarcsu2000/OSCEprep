@@ -16,6 +16,17 @@ describe("teaching curriculum", () => {
       expect(c.strategy.length).toBeGreaterThan(0);
       expect(c.cantMiss.length).toBeGreaterThan(0);
       expect(c.differential.length).toBeGreaterThan(0);
+      // The advanced differential must be a strict superset of the core list:
+      // every core bucket present, and every core diagnosis still included.
+      expect(c.differentialAdvanced.length).toBeGreaterThanOrEqual(c.differential.length);
+      const advByGroup = new Map(c.differentialAdvanced.map((g) => [g.group, new Set(g.items)]));
+      for (const g of c.differential) {
+        const advItems = advByGroup.get(g.group);
+        expect(advItems, `${c.category}: advanced missing core bucket "${g.group}"`).toBeDefined();
+        for (const item of g.items) {
+          expect(advItems!.has(item), `${c.category}/${g.group}: advanced missing "${item}"`).toBe(true);
+        }
+      }
       expect(c.keyQuestions.length).toBeGreaterThan(0);
       expect(c.workupMenu.labs.length).toBeGreaterThan(0);
       expect(c.workupMenu.imaging.length).toBeGreaterThan(0);

@@ -108,7 +108,12 @@ export interface CategoryCurriculum {
   /** One-line strategy: how to frame this complaint on entry. */
   strategy: string;
   cantMiss: string[];
+  /** Core differential shown by default — the concise, must-know buckets. */
   differential: DiffGroup[];
+  /** Expanded "advanced" differential (a superset of `differential`) for the
+   *  opt-in Advanced mode of the Differential drill. Same buckets, broadened
+   *  with high-yield + can't-miss causes drawn from the MGH Housestaff Manual. */
+  differentialAdvanced: DiffGroup[];
   keyQuestions: QuestionTheme[];
   examFocus: string[];
   workupMenu: WorkupMenu;
@@ -166,6 +171,14 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "GI", items: ["GERD / esophageal spasm", "Peptic ulcer / perforation", "Biliary disease", "Pancreatitis"] },
       { group: "MSK / Skin", items: ["Costochondritis", "Muscle strain", "Rib injury", "Herpes zoster"] },
       { group: "Other", items: ["Anxiety / panic", "Anemia (demand ischemia)"] },
+    ],
+    differentialAdvanced: [
+      { group: "Cardiac", items: ["ACS", "Stable / vasospastic angina", "Pericarditis / myocarditis", "Aortic stenosis", "Heart failure", "Takotsubo (stress) cardiomyopathy", "HOCM (dynamic LVOT obstruction)", "Cocaine-induced vasospasm / MI"] },
+      { group: "Vascular", items: ["Aortic dissection", "Acute aortic syndrome (IMH / penetrating ulcer)"] },
+      { group: "Pulmonary", items: ["PE", "Pneumothorax", "Pneumonia / pleurisy", "Pleural effusion / empyema", "Pulmonary hypertension / cor pulmonale", "Malignancy (lung / mediastinal)"] },
+      { group: "GI", items: ["GERD / esophageal spasm", "Peptic ulcer / perforation", "Biliary disease", "Pancreatitis", "Boerhaave (esophageal rupture)", "Esophagitis (pill / infectious / eosinophilic)"] },
+      { group: "MSK / Skin", items: ["Costochondritis", "Muscle strain", "Rib injury", "Herpes zoster", "Sternal / vertebral compression fracture"] },
+      { group: "Other", items: ["Anxiety / panic", "Anemia (demand ischemia)", "Acute chest syndrome (sickle cell)"] },
     ],
     keyQuestions: [
       OLDCARTS,
@@ -296,6 +309,16 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Diffuse / vascular", items: ["SBO", "Mesenteric ischemia", "Ruptured AAA", "Peritonitis / SBP"] },
       { group: "Medical mimics", items: ["DKA", "Adrenal crisis", "Lower-lobe pneumonia", "Pyelonephritis / stone"] },
     ],
+    differentialAdvanced: [
+      { group: "RUQ", items: ["Cholecystitis / biliary colic", "Cholangitis", "Hepatitis", "Hepatic abscess", "Budd-Chiari / portal vein thrombosis", "Fitz-Hugh-Curtis (perihepatitis)"] },
+      { group: "Epigastric", items: ["Pancreatitis", "PUD ± perforation", "Gastritis", "Referred MI", "GERD / esophagitis", "Gastroparesis / functional dyspepsia", "Boerhaave (esophageal rupture)", "Gastric outlet obstruction"] },
+      { group: "RLQ", items: ["Appendicitis", "Ectopic / ovarian torsion", "PID", "Crohn's", "Mesenteric / ileocolic lymphadenitis", "Cecal volvulus"] },
+      { group: "LLQ", items: ["Diverticulitis", "Sigmoid volvulus", "Colitis", "Ischemic colitis", "Constipation / fecal impaction"] },
+      { group: "LUQ", items: ["Splenic infarct / rupture"] },
+      { group: "Suprapubic / GU", items: ["Cystitis / urinary retention", "Prostatitis", "Epididymo-orchitis / testicular torsion"] },
+      { group: "Diffuse / vascular", items: ["SBO", "Mesenteric ischemia", "Ruptured AAA", "Peritonitis / SBP", "Incarcerated / strangulated hernia", "Gastroenteritis", "Bowel perforation (free air)", "Aortic dissection", "Toxic megacolon"] },
+      { group: "Medical mimics", items: ["DKA", "Adrenal crisis", "Lower-lobe pneumonia", "Pyelonephritis / stone", "Hypercalcemia", "Acute intermittent porphyria", "HSP / IgA vasculitis", "Sickle cell vaso-occlusive crisis"] },
+    ],
     keyQuestions: [
       OLDCARTS,
       {
@@ -414,6 +437,13 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Cardiac — structural/obstructive", items: ["Aortic stenosis", "HOCM", "PE", "Tamponade", "Dissection"] },
       { group: "Mimics", items: ["Seizure", "Hypoglycemia", "Stroke/TIA (rare)", "Psychogenic"] },
     ],
+    differentialAdvanced: [
+      { group: "Reflex (neurally mediated)", items: ["Vasovagal", "Situational", "Carotid sinus"] },
+      { group: "Orthostatic", items: ["Volume depletion", "Drug-induced", "Autonomic failure (Parkinson's, DM)", "Acute hemorrhage (GI bleed, ruptured AAA, ectopic)", "Adrenal insufficiency", "POTS"] },
+      { group: "Cardiac — arrhythmic", items: ["AV block / bradycardia", "VT/VF", "SVT / AFib", "Channelopathy (long QT, Brugada)", "Sick sinus syndrome / sinus pause", "WPW / pre-excited AFib", "ARVC"] },
+      { group: "Cardiac — structural/obstructive", items: ["Aortic stenosis", "HOCM", "PE", "Tamponade", "Dissection", "Pulmonary hypertension / RV failure", "Acute MI / ischemia", "Atrial myxoma / ball-valve thrombus"] },
+      { group: "Mimics", items: ["Seizure", "Hypoglycemia", "Stroke/TIA (rare)", "Psychogenic", "Hypoxia / hypercarbia", "Intoxication (alcohol, sedatives, CO)"] },
+    ],
     keyQuestions: [
       {
         theme: "The event — before, during, after",
@@ -530,6 +560,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Structural", items: ["Stroke / ICH", "Subdural", "Seizure / postictal", "NPH", "Raised ICP"] },
       { group: "Toxic", items: ["Alcohol intox/withdrawal", "Opioids / sedatives", "Stimulants", "CO", "Serotonin syndrome"] },
       { group: "Oxygenation/perfusion", items: ["Hypoxia", "Hypercapnia", "Shock"] },
+    ],
+    differentialAdvanced: [
+      { group: "Metabolic", items: ["Hypo/hyperglycemia", "Hypo/hypernatremia", "Uremia", "Hepatic encephalopathy", "Thyroid (storm/myxedema)", "B12/thiamine", "DKA / HHS", "Hypercalcemia", "Hypomagnesemia / hypophosphatemia", "Adrenal insufficiency / Addisonian crisis", "Acute liver failure (cerebral edema)"] },
+      { group: "Infectious", items: ["Sepsis (UTI/pneumonia in elderly)", "Meningitis / encephalitis", "Brain abscess", "Neurosyphilis / HIV (incl. PML)"] },
+      { group: "Structural", items: ["Stroke / ICH", "Subdural", "Seizure / postictal", "NPH", "Raised ICP", "SAH", "Brain tumor / metastasis", "Non-convulsive status epilepticus", "Acute obstructive hydrocephalus", "Autoimmune encephalitis (anti-NMDA, paraneoplastic)"] },
+      { group: "Toxic", items: ["Alcohol intox/withdrawal", "Opioids / sedatives", "Stimulants", "CO", "Serotonin syndrome", "Salicylate toxicity", "TCA / anticholinergic toxidrome", "Lithium toxicity", "Benzodiazepine / barbiturate withdrawal", "Toxic alcohols (methanol, ethylene glycol)"] },
+      { group: "Oxygenation/perfusion", items: ["Hypoxia", "Hypercapnia", "Shock", "Hypertensive encephalopathy / PRES"] },
+      { group: "Psychiatric / iatrogenic", items: ["Delirium / sundowning (multifactorial)", "Polypharmacy / medication effect (Beers-list drugs)", "Primary psychiatric (psychosis, catatonia, depression)"] },
+      { group: "Thermal", items: ["Heat stroke / hyperthermia", "Hypothermia"] },
     ],
     keyQuestions: [
       {
@@ -648,6 +687,13 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Vascular", items: ["Pulmonary embolism"] },
       { group: "Other", items: ["Anemia", "Metabolic acidosis", "Anxiety", "Neuromuscular weakness"] },
     ],
+    differentialAdvanced: [
+      { group: "Cardiac", items: ["Acute decompensated HF", "ACS", "Tamponade", "Valvular disease", "Arrhythmia (tachy/brady) with low output", "Cardiomyopathy / myocarditis"] },
+      { group: "Pulmonary — airway", items: ["Asthma", "COPD exacerbation", "Upper-airway obstruction (foreign body, mucus plugging)", "Bronchiectasis (incl. ABPA)", "Vocal cord dysfunction"] },
+      { group: "Pulmonary — parenchyma/pleura", items: ["Pneumonia", "Pleural effusion", "Pneumothorax", "ILD", "ARDS", "Aspiration pneumonitis", "Diffuse alveolar hemorrhage (DAH)", "Atelectasis", "Lung cancer / lymphangitic spread"] },
+      { group: "Vascular", items: ["Pulmonary embolism", "Pulmonary hypertension / RV failure"] },
+      { group: "Other", items: ["Anemia", "Metabolic acidosis", "Anxiety", "Neuromuscular weakness", "Sepsis", "DKA", "Salicylate toxicity", "CO poisoning / methemoglobinemia", "Anaphylaxis / angioedema", "Thyrotoxicosis", "Deconditioning / obesity-hypoventilation syndrome"] },
+    ],
     keyQuestions: [
       {
         theme: "Onset & pattern",
@@ -749,6 +795,17 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Intra-abdominal", items: ["Cholangitis", "Diverticulitis", "Abscess"] },
       { group: "Non-infectious", items: ["VTE", "Drug fever", "Inflammatory / malignancy"] },
     ],
+    differentialAdvanced: [
+      { group: "Respiratory", items: ["Pneumonia", "Influenza / COVID", "Empyema", "Tuberculosis (pulmonary)", "PJP / opportunistic infection", "Aspiration pneumonia / lung abscess"] },
+      { group: "Genitourinary", items: ["Pyelonephritis", "Complicated UTI", "Prostatitis", "Perinephric / renal abscess", "Epididymo-orchitis"] },
+      { group: "Skin / soft tissue", items: ["Cellulitis", "Abscess", "Necrotizing fasciitis"] },
+      { group: "CNS", items: ["Meningitis", "Encephalitis", "Brain abscess", "Septic cavernous sinus thrombosis"] },
+      { group: "Cardiovascular", items: ["Endocarditis", "Line/device infection", "Septic thrombophlebitis / Lemierre", "Myocarditis / pericarditis"] },
+      { group: "Intra-abdominal", items: ["Cholangitis", "Diverticulitis", "Abscess", "Cholecystitis", "Appendicitis", "C diff colitis", "SBP"] },
+      { group: "Bone / joint", items: ["Septic arthritis", "Osteomyelitis (incl. vertebral / discitis)"] },
+      { group: "Travel / zoonotic / tick-borne", items: ["Malaria", "Tick-borne (Lyme / anaplasmosis / babesiosis / RMSF)", "Enteric (typhoid) / dengue", "Acute HIV / seroconversion", "EBV / CMV mononucleosis"] },
+      { group: "Non-infectious", items: ["VTE", "Drug fever", "Inflammatory / malignancy", "Febrile neutropenia", "Crystal arthropathy (gout / pseudogout)", "Vasculitis / GCA", "DRESS", "Transfusion reaction (AHTR / FNHTR)", "Thyroid storm", "Adrenal crisis", "Adult-onset Still / autoinflammatory"] },
+    ],
     keyQuestions: [
       {
         theme: "Localize the source (review of systems)",
@@ -841,6 +898,13 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Normocytic", items: ["Acute blood loss", "Anemia of chronic disease", "Renal (low EPO)", "Mixed deficiency"] },
       { group: "Macrocytic", items: ["B12/folate deficiency", "Alcohol / liver disease", "Hypothyroid", "MDS", "Drugs"] },
       { group: "Hemolytic", items: ["Autoimmune", "Microangiopathic (TTP/HUS)", "Hereditary (sickle, G6PD, spherocytosis)"] },
+    ],
+    differentialAdvanced: [
+      { group: "Microcytic", items: ["Iron deficiency (often occult GI loss)", "Thalassemia", "Anemia of chronic disease (late)", "Sideroblastic (lead, alcohol, INH)"] },
+      { group: "Normocytic", items: ["Acute blood loss", "Anemia of chronic disease", "Renal (low EPO)", "Mixed deficiency", "Endocrine (hypopituitary, hypoadrenal, hypogonadism)", "Pure red cell aplasia (parvovirus B19, thymoma)", "Hypersplenism / sequestration", "Dilutional (pregnancy, volume overload)"] },
+      { group: "Macrocytic", items: ["B12/folate deficiency", "Alcohol / liver disease", "Hypothyroid", "MDS", "Drugs", "Pernicious anemia (anti-IF / autoimmune gastritis)", "Reticulocytosis (brisk hemolysis / blood loss)", "Copper deficiency (zinc excess / bariatric)"] },
+      { group: "Hemolytic", items: ["Autoimmune", "Microangiopathic (TTP/HUS)", "Hereditary (sickle, G6PD, spherocytosis)", "PNH (paroxysmal nocturnal hemoglobinuria)", "DIC", "Infection (malaria, babesia, Clostridium)", "Drug-induced / oxidant", "Spur-cell (advanced liver disease)", "Mechanical (prosthetic valve, ECMO/MCS)", "Transfusion reaction (acute / delayed hemolytic)"] },
+      { group: "Marrow infiltration / failure", items: ["Acute leukemia", "Myelophthisic (marrow metastasis, myelofibrosis)", "Multiple myeloma / plasma cell disorder", "Aplastic anemia", "Marrow-suppressive infection (HIV, parvovirus, TB, EBV/CMV)"] },
     ],
     keyQuestions: [
       {
@@ -937,6 +1001,13 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Malabsorptive / chronic", items: ["Celiac disease", "Pancreatic insufficiency", "Bile-acid", "IBS"] },
       { group: "Other", items: ["Medication / laxative", "Hyperthyroid", "Overflow from constipation"] },
     ],
+    differentialAdvanced: [
+      { group: "Acute infectious", items: ["Viral", "Bacterial (Salmonella, Shigella, Campylobacter, EHEC)", "C. difficile", "Parasitic", "Traveler's diarrhea (ETEC)", "Vibrio / Yersinia", "Entamoeba histolytica (amebic dysentery)", "Cryptosporidium / Cyclospora", "Giardia", "CMV colitis (AIDS / immunocompromised)"] },
+      { group: "Inflammatory", items: ["UC / Crohn's flare", "Ischemic colitis", "Microscopic colitis", "Diverticular / segmental colitis", "Checkpoint inhibitor colitis", "Radiation enteritis / proctitis", "Eosinophilic gastroenteritis"] },
+      { group: "Malabsorptive / chronic", items: ["Celiac disease", "Pancreatic insufficiency", "Bile-acid", "IBS", "SIBO", "Lactose / disaccharidase deficiency", "Whipple disease", "Short-gut / post-resection"] },
+      { group: "Other", items: ["Medication / laxative", "Hyperthyroid", "Overflow from constipation", "Colorectal cancer / villous adenoma", "Diabetic autonomic neuropathy", "Sorbitol / mannitol (sugar-alcohol osmotic)", "Alcohol / chronic EtOH"] },
+      { group: "Secretory / endocrine", items: ["VIPoma", "Carcinoid syndrome", "Gastrinoma (Zollinger-Ellison)", "Medullary thyroid carcinoma", "Addison's (adrenal insufficiency)", "Systemic mastocytosis"] },
+    ],
     keyQuestions: [
       {
         theme: "Characterize the stool & course",
@@ -1031,6 +1102,15 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { group: "Cholestatic", items: ["Choledocholithiasis", "Malignant obstruction", "PBC / PSC", "Drug-induced cholestasis"] },
       { group: "Infiltrative (isolated ALP)", items: ["Malignancy", "Granulomatous disease"] },
       { group: "Non-hepatic ALP", items: ["Bone disease", "Pregnancy"] },
+    ],
+    differentialAdvanced: [
+      { group: "Hepatocellular", items: ["Viral hepatitis (A/B/C/E)", "Drug-induced (acetaminophen)", "Alcoholic hepatitis", "NAFLD/NASH", "Autoimmune", "Ischemic", "Hemochromatosis (iron overload)", "Wilson disease", "Alpha-1 antitrypsin deficiency", "EBV / CMV / HSV hepatitis", "DILI (non-APAP: INH, statins, amiodarone, MTX)"] },
+      { group: "Cholestatic", items: ["Choledocholithiasis", "Malignant obstruction", "PBC / PSC", "Drug-induced cholestasis", "Sepsis-associated cholestasis", "TPN-associated cholestasis", "Postoperative (benign) jaundice", "Mirizzi syndrome"] },
+      { group: "Infiltrative (isolated ALP)", items: ["Malignancy", "Granulomatous disease", "Hepatic amyloidosis"] },
+      { group: "Non-hepatic ALP", items: ["Bone disease", "Pregnancy", "Hyperthyroidism"] },
+      { group: "Vascular / congestive", items: ["Congestive hepatopathy (right heart failure / tricuspid disease)", "Budd-Chiari (hepatic vein thrombosis)", "Sinusoidal obstruction syndrome / VOD (post-HSCT)"] },
+      { group: "Pregnancy-related", items: ["HELLP syndrome", "Acute fatty liver of pregnancy", "Intrahepatic cholestasis of pregnancy"] },
+      { group: "Non-hepatic AST/ALT source", items: ["Muscle injury / rhabdomyolysis", "Hemolysis", "Strenuous exercise / macro-AST"] },
     ],
     keyQuestions: [
       {

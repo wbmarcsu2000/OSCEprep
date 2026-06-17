@@ -11,8 +11,8 @@ import { VisualGuide } from "../components/VisualGuide";
 
 /**
  * Standalone learning drills (no full case). Get reps on the frameworks:
- *  - Differential & history: given a chief complaint, write the broad
- *    differential + key questions; graded vs the buckets/themes.
+ *  - Differential: given a chief complaint, write the broad differential;
+ *    graded vs the category buckets.
  *  - Work-up: write the work-up, then enter how the results steer you.
  *  - Management: given the scenario + working diagnosis, write the management
  *    plan; graded against the case's expected actions (one drill per case).
@@ -66,7 +66,9 @@ export function Drills() {
   const [skillFilter, setSkillFilter] = useState<string>("All");
   const [stemIdx, setStemIdx] = useState(0);
   const [ddx, setDdx] = useState("");
-  const [questions, setQuestions] = useState("");
+  // Differential drill depth: false = core (default), true = full "advanced" list.
+  // Lives here so the choice persists across category changes / new reps.
+  const [ddxAdvanced, setDdxAdvanced] = useState(false);
   const [workup, setWorkup] = useState("");
   const [managementAnswer, setManagementAnswer] = useState("");
   const [skillAnswer, setSkillAnswer] = useState("");
@@ -111,7 +113,6 @@ export function Drills() {
 
   const reset = () => {
     setDdx("");
-    setQuestions("");
     setWorkup("");
     setManagementAnswer("");
     setSkillAnswer("");
@@ -153,7 +154,7 @@ export function Drills() {
               Framework Drills
             </h2>
             <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-              Quick reps on the differential, key questions, work-up, and management — no full
+              Quick reps on the differential, work-up, and management — no full
               station. Graded instantly against the category framework.
             </p>
           </div>
@@ -239,8 +240,12 @@ export function Drills() {
           category={category}
           ddx={ddx}
           setDdx={setDdx}
-          questions={questions}
-          setQuestions={setQuestions}
+          advanced={ddxAdvanced}
+          onToggleAdvanced={(v) => {
+            setDdxAdvanced(v);
+            // Re-open grading so the answer is re-scored against the new list.
+            setGraded(false);
+          }}
           graded={graded}
           onGrade={() => setGraded(true)}
           onNew={() => newRep("differential", nextCategory())}
@@ -469,8 +474,8 @@ function DifferentialDrill({
   category,
   ddx,
   setDdx,
-  questions,
-  setQuestions,
+  advanced,
+  onToggleAdvanced,
   graded,
   onGrade,
   onNew,
@@ -479,8 +484,8 @@ function DifferentialDrill({
   category: CategoryCurriculum;
   ddx: string;
   setDdx: (v: string) => void;
-  questions: string;
-  setQuestions: (v: string) => void;
+  advanced: boolean;
+  onToggleAdvanced: (v: boolean) => void;
   graded: boolean;
   onGrade: () => void;
   onNew: () => void;
@@ -489,18 +494,18 @@ function DifferentialDrill({
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
   const [ddxMatched, setDdxMatched] = useState<Set<string>>(new Set());
-  const [qMatched, setQMatched] = useState<Set<string>>(new Set());
 
-  const ddxGroups = category.differential.map((g) => ({ group: g.group, items: g.items }));
-  const qGroups = category.keyQuestions.map((q) => ({ group: q.theme, items: q.questions }));
+  // Core list by default; the opt-in Advanced toggle grades against the full
+  // (broadened) differential. Advanced falls back to core if none is defined.
+  const activeDifferential = advanced ? category.differentialAdvanced ?? category.differential : category.differential;
+  const ddxGroups = activeDifferential.map((g) => ({ group: g.group, items: g.items }));
+  const itemCount = activeDifferential.reduce((n, g) => n + g.items.length, 0);
 
   const doGrade = async () => {
     setGrading(true);
-    track("drill", { drillType: "differential" });
+    track("drill", { drillType: "differential", advanced });
     try {
-      const [d, q] = await Promise.all([grader(ddx, ddxGroups), grader(questions, qGroups)]);
-      setDdxMatched(d);
-      setQMatched(q);
+      setDdxMatched(await grader(ddx, ddxGroups));
       onGrade();
     } finally {
       setGrading(false);
@@ -508,18 +513,33 @@ function DifferentialDrill({
   };
 
   const ddxResult = buildCoverage(ddxGroups, ddxMatched);
-  const qResult = buildCoverage(qGroups, qMatched);
 
   return (
     <div className="space-y-3">
       <div className="card p-4">
-        <div className="panel-label mb-1">Prompt</div>
+        <div className="flex items-start justify-between gap-3">
+          <div className="panel-label mb-1">Prompt</div>
+          <Segmented
+            label="Differential depth"
+            options={[
+              { value: "core", label: "Core" },
+              { value: "advanced", label: "Advanced" },
+            ]}
+            value={advanced ? "advanced" : "core"}
+            onChange={(v) => onToggleAdvanced(v === "advanced")}
+          />
+        </div>
         <p className="text-[15px] font-semibold">
           A patient presents with{" "}
           <span style={{ color: "var(--color-exam-accent-deep)" }}>{category.category.toLowerCase()}</span>.
         </p>
         <p className="text-[13px] mt-0.5" style={{ color: "var(--color-exam-muted)" }}>
-          Write your broad differential (by buckets) and the key questions you'd ask.
+          Write your broad differential, organized by buckets.
+        </p>
+        <p className="hint mt-1">
+          {advanced
+            ? `Advanced — the full list (${itemCount} causes), incl. can't-miss & uncommon. Switch to Core to keep it focused.`
+            : `Core — the must-know causes (${itemCount}). Switch to Advanced for the full broadened list.`}
         </p>
       </div>
 
@@ -528,28 +548,17 @@ function DifferentialDrill({
           <div className="panel-label mb-1.5">Your differential</div>
           <textarea
             className="input w-full resize-y leading-relaxed"
-            rows={4}
+            rows={5}
             value={ddx}
             onChange={(e) => setDdx(e.target.value)}
             placeholder="List as many plausible causes as you can, ideally grouped…"
             aria-label="Your differential"
           />
         </div>
-        <div>
-          <div className="panel-label mb-1.5">Key questions you'd ask</div>
-          <textarea
-            className="input w-full resize-y leading-relaxed"
-            rows={4}
-            value={questions}
-            onChange={(e) => setQuestions(e.target.value)}
-            placeholder="Onset, character, risk factors, red flags…"
-            aria-label="Key questions"
-          />
-        </div>
         <GradeButton
           graded={graded}
           grading={grading}
-          disabled={!ddx.trim() && !questions.trim()}
+          disabled={!ddx.trim()}
           onGrade={doGrade}
           onNew={onNew}
           onRetry={onRetry}
@@ -562,16 +571,14 @@ function DifferentialDrill({
           <div className="space-y-2">
             <div className="flex items-center justify-between gap-3">
               <div className="panel-label">Coverage</div>
-              <ResultChip
-                named={ddxResult.named + qResult.named}
-                total={ddxResult.total + qResult.total}
-              />
+              <ResultChip named={ddxResult.named} total={ddxResult.total} />
             </div>
             <ScoreBar named={ddxResult.named} total={ddxResult.total} label="Differential coverage" />
-            <ScoreBar named={qResult.named} total={qResult.total} label="Key-question coverage" />
           </div>
-          <CoverageView title="Broad differential" coverage={ddxResult.coverage} />
-          <CoverageView title="Key questions" coverage={qResult.coverage} />
+          <CoverageView
+            title={advanced ? "Broad differential — advanced" : "Broad differential — core"}
+            coverage={ddxResult.coverage}
+          />
           <div>
             <div className="panel-label mb-1">Schema</div>
             <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
