@@ -760,13 +760,15 @@ function DifferentialDrill({
   const [answersHidden, setAnswersHidden] = useState(false);
 
   // Stopwatch: counts up while answering, freezes once graded, resets on remount
-  // (a new category / rep remounts via the `key` prop in the parent).
+  // (a new category / rep remounts via the `key` prop in the parent). Can be
+  // paused/resumed manually with the button beside it.
   const [seconds, setSeconds] = useState(0);
+  const [running, setRunning] = useState(true);
   useEffect(() => {
-    if (graded) return;
+    if (graded || !running) return;
     const t = setInterval(() => setSeconds((s) => s + 1), 1000);
     return () => clearInterval(t);
-  }, [graded]);
+  }, [graded, running]);
 
   // Core list by default; the opt-in Advanced toggle grades against the full
   // (broadened) differential. Advanced falls back to core if none is defined.
@@ -797,15 +799,27 @@ function DifferentialDrill({
       {/* Prompt — depth toggle + stopwatch (full width) */}
       <div className="card p-4">
         <div className="flex items-start justify-between gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <div className="panel-label">Prompt</div>
             <span
               className="chip font-mono tabular-nums"
-              style={{ background: "var(--color-exam-soft)" }}
+              style={{ background: "var(--color-exam-soft)", opacity: running || graded ? 1 : 0.6 }}
               title="Time on this rep"
             >
               ⏱ {fmtTime(seconds)}
             </span>
+            {!graded && (
+              <button
+                type="button"
+                className="btn btn-ghost py-0.5 px-2 text-[13px] leading-none"
+                onClick={() => setRunning((r) => !r)}
+                aria-pressed={!running}
+                aria-label={running ? "Pause stopwatch" : "Resume stopwatch"}
+                title={running ? "Pause the stopwatch" : "Resume the stopwatch"}
+              >
+                {running ? "⏸" : "▶"}
+              </button>
+            )}
           </div>
           <Segmented
             label="Differential depth"
