@@ -80,6 +80,23 @@ export function shouldAskConsent(): boolean {
   return analyticsConfigured() && consentState() === "unset";
 }
 
+/** Hard gate: the app is unusable until the visitor accepts analytics (there is
+ *  no decline). True when analytics is configured, the browser is NOT sending
+ *  Do-Not-Track — which we honor, so those visitors are never tracked and never
+ *  gated — and the visitor hasn't already accepted. A previous "Decline" no
+ *  longer counts as accepted, so returning decliners are re-prompted. Storage
+ *  errors fall through to "no gate" so a broken-storage browser is never
+ *  permanently locked out. */
+export function consentGateRequired(): boolean {
+  if (!analyticsConfigured()) return false;
+  if (doNotTrack()) return false;
+  try {
+    return localStorage.getItem(CONSENT_KEY) !== "granted";
+  } catch {
+    return false;
+  }
+}
+
 export function setConsent(granted: boolean): void {
   try {
     localStorage.setItem(CONSENT_KEY, granted ? "granted" : "denied");

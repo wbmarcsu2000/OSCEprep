@@ -13,8 +13,8 @@ import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
 import { loadAttempts } from "./analytics/store";
-import { initTelemetry } from "./analytics/telemetry";
-import { ConsentBanner } from "./ui/components/ConsentBanner";
+import { initTelemetry, consentGateRequired } from "./analytics/telemetry";
+import { ConsentGate } from "./ui/components/ConsentGate";
 import { levelFor, totalXp, streakDays } from "./ui/gamification";
 import { useMountNow } from "./ui/useMountNow";
 
@@ -129,6 +129,9 @@ export default function App() {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
   const setView = useAppStore((s) => s.setView);
   const [confirmExit, setConfirmExit] = useState(false);
+  // Hard gate: accepting analytics is required to use the app (no-op when
+  // analytics isn't configured or the browser sends Do-Not-Track).
+  const [gatePassed, setGatePassed] = useState(() => !consentGateRequired());
 
   const inStation = view === "station" && caseModel && engine;
   const stationLive = !!inStation && engine.currentState !== "FEEDBACK";
@@ -176,6 +179,11 @@ export default function App() {
       document.removeEventListener("visibilitychange", onVisible);
     };
   }, [tick, stationLive]);
+
+  // Must accept analytics before anything else is reachable.
+  if (!gatePassed) {
+    return <ConsentGate onAccept={() => setGatePassed(true)} />;
+  }
 
   return (
     <div className="h-full flex flex-col">
@@ -296,7 +304,6 @@ export default function App() {
         <span>Fictional cases · no real patient data</span>
       </footer>
 
-      <ConsentBanner />
       {import.meta.env.DEV && <DevTools />}
     </div>
   );
