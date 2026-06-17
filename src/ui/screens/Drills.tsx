@@ -494,6 +494,9 @@ function DifferentialDrill({
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
   const [ddxMatched, setDdxMatched] = useState<Set<string>>(new Set());
+  // After grading, the model answer shows by default (side-by-side with the
+  // student's answer); this covers it again for active-recall self-review.
+  const [answersHidden, setAnswersHidden] = useState(false);
 
   // Core list by default; the opt-in Advanced toggle grades against the full
   // (broadened) differential. Advanced falls back to core if none is defined.
@@ -506,6 +509,7 @@ function DifferentialDrill({
     track("drill", { drillType: "differential", advanced });
     try {
       setDdxMatched(await grader(ddx, ddxGroups));
+      setAnswersHidden(false); // reveal the model answer on each fresh grade
       onGrade();
     } finally {
       setGrading(false);
@@ -571,22 +575,68 @@ function DifferentialDrill({
           <div className="space-y-2">
             <div className="flex items-center justify-between gap-3">
               <div className="panel-label">Coverage</div>
-              <ResultChip named={ddxResult.named} total={ddxResult.total} />
+              <div className="flex items-center gap-2">
+                <ResultChip named={ddxResult.named} total={ddxResult.total} />
+                <button
+                  type="button"
+                  className="btn btn-ghost py-1 px-2.5 text-[12px]"
+                  onClick={() => setAnswersHidden((h) => !h)}
+                  aria-pressed={answersHidden}
+                  title={answersHidden ? "Reveal the model answer" : "Cover the model answer to self-test"}
+                >
+                  {answersHidden ? "👁 Show answers" : "🙈 Cover answers"}
+                </button>
+              </div>
             </div>
             <ScoreBar named={ddxResult.named} total={ddxResult.total} label="Differential coverage" />
           </div>
-          <CoverageView
-            title={advanced ? "Broad differential — advanced" : "Broad differential — core"}
-            coverage={ddxResult.coverage}
-          />
-          <div>
-            <div className="panel-label mb-1">Schema</div>
-            <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
-              {category.framework} {category.strategy}
-            </p>
+
+          {/* Side-by-side: the student's own answer next to the model list, so
+              differences are immediate. The model side covers for self-review. */}
+          <div className="grid gap-3 sm:grid-cols-2 items-start">
+            <div>
+              <div className="panel-label mb-1.5">Your answer</div>
+              <div
+                className="rounded-lg border p-3 text-[13px] leading-relaxed whitespace-pre-wrap"
+                style={{ borderColor: "var(--color-exam-border)", background: "var(--color-exam-soft)", minHeight: "5rem" }}
+              >
+                {ddx.trim() ? (
+                  ddx
+                ) : (
+                  <span style={{ color: "var(--color-exam-muted)" }}>(you left this blank)</span>
+                )}
+              </div>
+            </div>
+            {answersHidden ? (
+              <button
+                type="button"
+                onClick={() => setAnswersHidden(false)}
+                className="rounded-lg border border-dashed p-3 text-[13px] font-semibold flex items-center justify-center gap-2 w-full"
+                style={{ borderColor: "var(--color-exam-border-strong)", color: "var(--color-exam-muted)", minHeight: "5rem" }}
+                aria-label="Show the model differential"
+              >
+                🙈 Answers hidden — tap to reveal
+              </button>
+            ) : (
+              <CoverageView
+                title={advanced ? "Model differential — advanced" : "Model differential — core"}
+                coverage={ddxResult.coverage}
+              />
+            )}
           </div>
-          <VisualGuide category={category.category} view="differential" open />
-          <ManualRefs manual={category.manual} compact />
+
+          {!answersHidden && (
+            <>
+              <div>
+                <div className="panel-label mb-1">Schema</div>
+                <p className="text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
+                  {category.framework} {category.strategy}
+                </p>
+              </div>
+              <VisualGuide category={category.category} view="differential" open />
+              <ManualRefs manual={category.manual} compact />
+            </>
+          )}
         </div>
       )}
     </div>
