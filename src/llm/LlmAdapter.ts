@@ -837,7 +837,6 @@ export const MODELS_BY_PROVIDER: Record<ProviderKind, ModelOption[]> = {
   anthropic: [
     { id: "claude-haiku-4-5", label: "Fast (Claude Haiku 4.5)", note: "quickest & cheapest — recommended" },
     { id: "claude-sonnet-4-6", label: "Balanced (Claude Sonnet 4.6)", note: "more capable, slower" },
-    { id: "claude-opus-4-8", label: "Most capable (Claude Opus 4.8)", note: "highest quality, priciest" },
   ],
   openai: [
     { id: "gpt-4o-mini", label: "Fast (GPT-4o mini)", note: "quickest & cheapest — recommended" },
