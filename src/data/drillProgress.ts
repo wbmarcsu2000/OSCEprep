@@ -9,10 +9,22 @@ import { CURRICULUM } from "./curriculum";
 import { SKILL_DRILLS, type SkillDrillProblem } from "./skillDrills";
 import { MANAGEMENT_DRILLS } from "./managementDrills";
 import { EKG_DRILLS, CXR_DRILLS } from "./imageDrills";
+import { SCORE_DRILLS } from "./scoreDrills";
 
 export const DRILL_PROGRESS_KEY = "osce.drills.v1";
 
-export type DrillType = "differential" | "workup" | "management" | "ekg" | "cxr" | "skills";
+export type DrillType =
+  | "differential"
+  | "cantmiss"
+  | "exam"
+  | "oneliner"
+  | "mechanisms"
+  | "workup"
+  | "management"
+  | "ekg"
+  | "cxr"
+  | "scores"
+  | "skills";
 
 /** Student override layered on top of the score-based mastery signal. */
 export type DrillManual = "none" | "mastered" | "review";
@@ -34,19 +46,29 @@ export const MASTERY_PCT = 80;
 
 export const DRILL_TYPE_ORDER: DrillType[] = [
   "differential",
+  "cantmiss",
+  "exam",
+  "oneliner",
+  "mechanisms",
   "workup",
   "management",
   "ekg",
   "cxr",
+  "scores",
   "skills",
 ];
 
 export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
   differential: "Differential",
+  cantmiss: "Can't-miss",
+  exam: "Exam",
+  oneliner: "One-liner",
+  mechanisms: "Mechanisms",
   workup: "Work-up",
   management: "Management",
   ekg: "EKG",
   cxr: "CXR",
+  scores: "Scores",
   skills: "Skills",
 };
 
@@ -131,6 +153,14 @@ const SKILL_SLUG: Record<SkillDrillProblem["skill"], string> = {
   "Ascitic (SAAG)": "saag",
   "Pleural (Light's)": "pleural",
   PFT: "pft",
+  CSF: "csf",
+  "Iron studies": "iron",
+  LFTs: "lft",
+  Hyponatremia: "hypona",
+  "Synovial fluid": "synovial",
+  TFTs: "tft",
+  Urinalysis: "ua",
+  Coags: "coags",
 };
 
 // Stable per-skill ordinal id, computed once from the (static) bank order.
@@ -155,7 +185,14 @@ function truncate(s: string, n = 64): string {
 export function drillCatalog(type: DrillType): DrillCatalogItem[] {
   switch (type) {
     case "differential":
+    case "cantmiss":
+    case "exam":
+    case "oneliner":
+    case "mechanisms":
+      // All complaint-based: one problem per chief-complaint category.
       return CURRICULUM.map((c) => ({ type, id: c.category, label: c.category, group: c.category }));
+    case "scores":
+      return SCORE_DRILLS.map((p) => ({ type, id: p.id, label: p.name, group: p.category }));
     case "workup":
       return CURRICULUM.flatMap((c) =>
         c.practiceCases.map((pc, i) => ({
