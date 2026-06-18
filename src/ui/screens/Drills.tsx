@@ -4,7 +4,6 @@ import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../d
 import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/managementDrills";
 import { EKG_DRILLS, CXR_DRILLS, type ImageDrillProblem } from "../../data/imageDrills";
 import { SCORE_DRILLS, type ScoreDrillProblem } from "../../data/scoreDrills";
-import { oneLinerFor, mechanismFor } from "../../data/approachDrills";
 import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
 import { useDrillProgress } from "../useDrillProgress";
@@ -15,6 +14,8 @@ import {
   isSeen,
   summarize,
   skillDrillId,
+  labSkillForType,
+  LAB_TABS,
   DRILL_TYPE_LABELS,
   type DrillType,
   type DrillProgress,
@@ -36,8 +37,8 @@ import { VisualGuide } from "../components/VisualGuide";
  *    full worked explanations.
  * Grading is semantic (AI) when a key is set, else a lenient keyword match —
  * both via the store's gradeCoverage so the same call works everywhere.
- * DrillType (incl. can't-miss / exam / one-liner / mechanisms / scores) is
- * shared with the progress store in ../../data/drillProgress.
+ * DrillType (incl. scores + the per-skill lab tabs) is shared with the progress
+ * store in ../../data/drillProgress.
  */
 
 interface Coverage {
@@ -238,7 +239,6 @@ export function Drills() {
   const [managementAnswer, setManagementAnswer] = useState("");
   const [skillAnswer, setSkillAnswer] = useState("");
   const [imageAnswer, setImageAnswer] = useState("");
-  const [approachAnswer, setApproachAnswer] = useState(""); // can't-miss / exam / one-liner / mechanisms
   const [scoreAnswer, setScoreAnswer] = useState("");
   const [graded, setGraded] = useState(false);
   const { progress, record, setManual } = useDrillProgress();
@@ -254,13 +254,19 @@ export function Drills() {
       ? category.practiceCases[stemIdx % category.practiceCases.length]
       : null;
 
-  // Skills drill: filtered problem pool, rotated by stemIdx.
-  const skillPool = useMemo(
-    () => (skillFilter === "All" ? SKILL_DRILLS : SKILL_DRILLS.filter((p) => p.skill === skillFilter)),
-    [skillFilter],
-  );
+  // Skills + lab tabs share the SkillDrill component over a filtered pool. The
+  // combined Skills tab uses the skill-filter dropdown (ABG/SAAG/Pleural/PFT);
+  // each lab tab (CSF, iron, …) pins to its own skill.
+  const labSkill = labSkillForType(type);
+  const skillPool = useMemo(() => {
+    if (labSkill) return SKILL_DRILLS.filter((p) => p.skill === labSkill);
+    const dropdown = new Set<string>(SKILL_DRILL_TYPES);
+    return skillFilter === "All"
+      ? SKILL_DRILLS.filter((p) => dropdown.has(p.skill))
+      : SKILL_DRILLS.filter((p) => p.skill === skillFilter);
+  }, [labSkill, skillFilter]);
   const skillProblem: SkillDrillProblem | null =
-    type === "skills" && skillPool.length > 0 ? skillPool[stemIdx % skillPool.length] : null;
+    (type === "skills" || labSkill) && skillPool.length > 0 ? skillPool[stemIdx % skillPool.length] : null;
 
   // Management drills: one per case, filtered to the selected complaint and
   // rotated by stemIdx.
@@ -283,18 +289,12 @@ export function Drills() {
   // Scores drill: a flat bank rotated by stemIdx.
   const scoreProblem: ScoreDrillProblem | null =
     type === "scores" && SCORE_DRILLS.length > 0 ? SCORE_DRILLS[stemIdx % SCORE_DRILLS.length] : null;
-  // One-liner / mechanisms content for the selected complaint.
-  const oneLiner = oneLinerFor(categoryName);
-  const mech = mechanismFor(categoryName);
 
   // Stable id of the problem currently on screen (per drill type), for progress.
   const activeId: string | null = (() => {
+    if (labSkill) return skillProblem ? skillDrillId(skillProblem) : null;
     switch (type) {
       case "differential":
-      case "cantmiss":
-      case "exam":
-      case "oneliner":
-      case "mechanisms":
         return categoryName;
       case "workup":
         return stem ? `${categoryName}#${category.practiceCases.indexOf(stem)}` : null;
@@ -307,6 +307,8 @@ export function Drills() {
       case "ekg":
       case "cxr":
         return imageProblem ? String(imageProblem.n) : null;
+      default:
+        return null;
     }
   })();
   const activeProgress = activeId ? progress[drillKey(type, activeId)] : undefined;
@@ -324,7 +326,6 @@ export function Drills() {
     setManagementAnswer("");
     setSkillAnswer("");
     setImageAnswer("");
-    setApproachAnswer("");
     setScoreAnswer("");
     setGraded(false);
   };
@@ -343,8 +344,12 @@ export function Drills() {
   /** Jump the drill to a specific problem (from the browser or smart-next). */
   const goToProblem = (t: DrillType, id: string) => {
     setType(t);
-    if (t === "differential" || t === "cantmiss" || t === "exam" || t === "oneliner" || t === "mechanisms") {
+    const lab = labSkillForType(t);
+    if (t === "differential") {
       setCategoryName(id);
+    } else if (lab) {
+      const pool = SKILL_DRILLS.filter((p) => p.skill === lab);
+      setStemIdx(Math.max(0, pool.findIndex((p) => skillDrillId(p) === id)));
     } else if (t === "scores") {
       setStemIdx(Math.max(0, SCORE_DRILLS.findIndex((p) => p.id === id)));
     } else if (t === "workup") {
@@ -407,8 +412,8 @@ export function Drills() {
               Framework Drills
             </h2>
             <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-              Quick reps across the workflow — differential, can't-miss, exam, one-liner, mechanisms,
-              work-up, management, scores, EKG/CXR, and lab interpretation. Graded instantly, no full station.
+              Quick reps across the workflow — differential, work-up, management, scores, EKG/CXR, and
+              lab interpretation (CSF, iron, LFTs, and more). Graded instantly, no full station.
             </p>
           </div>
         </div>
@@ -422,16 +427,13 @@ export function Drills() {
           label="Drill type"
           options={[
             { value: "differential", label: "🧠 Differential" },
-            { value: "cantmiss", label: "🚩 Can't-miss" },
-            { value: "exam", label: "🔎 Exam" },
-            { value: "oneliner", label: "📝 One-liner" },
-            { value: "mechanisms", label: "⚙️ Mechanisms" },
             { value: "workup", label: "🧪 Work-up" },
             { value: "management", label: "🩺 Management" },
             { value: "ekg", label: "🫀 EKG" },
             { value: "cxr", label: "🩻 CXR" },
             { value: "scores", label: "🔢 Scores" },
             { value: "skills", label: "📐 Skills" },
+            ...LAB_TABS.map((l) => ({ value: l.type, label: `${l.emoji} ${DRILL_TYPE_LABELS[l.type]}` })),
           ]}
           value={type}
           onChange={(t: DrillType) => {
@@ -457,6 +459,10 @@ export function Drills() {
               ))}
             </select>
           </label>
+        ) : labSkill ? (
+          <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+            {labSkill} · {skillProblem ? (stemIdx % skillPool.length) + 1 : 0} / {skillPool.length}
+          </span>
         ) : type === "ekg" || type === "cxr" ? (
           <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
             Study {imageProblem ? (stemIdx % imagePool.length) + 1 : 0} / {imagePool.length} · LITFL Top 100
@@ -484,7 +490,7 @@ export function Drills() {
           </label>
         )}
         <button className="btn ml-auto" onClick={nextProblem} title="Prefers a problem you haven't mastered yet">
-          ➜ {type === "skills" ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : type === "scores" ? "Next score" : "Next rep"}
+          ➜ {type === "skills" || labSkill ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : type === "scores" ? "Next score" : "Next rep"}
         </button>
       </div>
 
@@ -557,9 +563,9 @@ export function Drills() {
           onSetManual={setManualCurrent}
         />
       )}
-      {type === "skills" && (
+      {(type === "skills" || labSkill) && (
         <SkillDrill
-          key={`${skillFilter}:${stemIdx}`}
+          key={`${type}:${skillFilter}:${stemIdx}`}
           problem={skillProblem}
           answer={skillAnswer}
           setAnswer={setSkillAnswer}
@@ -579,94 +585,6 @@ export function Drills() {
           problem={imageProblem}
           answer={imageAnswer}
           setAnswer={setImageAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "cantmiss" && (
-        <ComplaintCoverageDrill
-          key={`cm:${categoryName}`}
-          drillType="cantmiss"
-          manual={category.manual}
-          promptText={`A patient presents with ${category.category.toLowerCase()}.`}
-          subPrompt="List the can't-miss — immediately dangerous — causes you must actively rule out."
-          placeholder="The dangerous causes you'd exclude first…"
-          items={category.cantMiss}
-          coverageTitle="Can't-miss diagnoses"
-          answer={approachAnswer}
-          setAnswer={setApproachAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "exam" && (
-        <ComplaintCoverageDrill
-          key={`ex:${categoryName}`}
-          drillType="exam"
-          manual={category.manual}
-          promptText={`A patient presents with ${category.category.toLowerCase()}.`}
-          subPrompt="What focused exam would you perform? Name the components and what each looks for."
-          placeholder="Vitals, focused system exam, special maneuvers…"
-          items={category.examFocus}
-          coverageTitle="Targeted exam"
-          answer={approachAnswer}
-          setAnswer={setApproachAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "oneliner" && (
-        <ComplaintCoverageDrill
-          key={`ol:${categoryName}`}
-          drillType="oneliner"
-          manual={category.manual}
-          promptText={oneLiner?.vignette ?? `A patient presents with ${category.category.toLowerCase()}.`}
-          subPrompt="Compress this into a one-sentence problem representation — semantic qualifiers, no premature diagnosis."
-          placeholder="One sentence: age/sex · tempo/onset · key features · relevant risk factors…"
-          items={oneLiner?.qualifiers ?? []}
-          coverageTitle="Key qualifiers"
-          idealAnswer={oneLiner?.idealAnswer}
-          idealLabel="Model one-liner"
-          answer={approachAnswer}
-          setAnswer={setApproachAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "mechanisms" && (
-        <ComplaintCoverageDrill
-          key={`me:${categoryName}`}
-          drillType="mechanisms"
-          manual={category.manual}
-          promptText={mech?.topic ?? `A patient presents with ${category.category.toLowerCase()}.`}
-          subPrompt={mech?.prompt ?? "Name the distinct mechanisms."}
-          placeholder="Name the distinct mechanisms…"
-          items={mech?.mechanisms ?? []}
-          coverageTitle="Mechanisms"
-          idealAnswer={mech?.explanation}
-          idealLabel="Pathophysiology"
-          answer={approachAnswer}
-          setAnswer={setApproachAnswer}
           graded={graded}
           onGrade={() => setGraded(true)}
           onNew={nextProblem}
@@ -1052,143 +970,6 @@ function DifferentialDrill({
           </div>
         )}
       </div>
-    </div>
-  );
-}
-
-/** Generic complaint-based coverage drill — powers Can't-miss, Exam, One-liner,
- *  and Mechanisms. Type a free-text answer; graded by coverage of `items`, with
- *  an optional model answer + AI coach note and the category's manual refs. */
-function ComplaintCoverageDrill({
-  drillType,
-  manual,
-  promptText,
-  subPrompt,
-  placeholder,
-  items,
-  coverageTitle,
-  idealAnswer,
-  idealLabel,
-  answer,
-  setAnswer,
-  graded,
-  onGrade,
-  onNew,
-  onRetry,
-  onRecord,
-  progressEntry,
-  onSetManual,
-}: {
-  drillType: DrillType;
-  manual: CategoryCurriculum["manual"];
-  promptText: string;
-  subPrompt: string;
-  placeholder: string;
-  items: string[];
-  coverageTitle: string;
-  idealAnswer?: string;
-  idealLabel?: string;
-  answer: string;
-  setAnswer: (v: string) => void;
-  graded: boolean;
-  onGrade: () => void;
-  onNew: () => void;
-  onRetry: () => void;
-  onRecord: (pct: number) => void;
-  progressEntry?: DrillProgress;
-  onSetManual: (m: DrillManual) => void;
-}) {
-  const grader = useGrader();
-  const [grading, setGrading] = useState(false);
-  const [matched, setMatched] = useState<Set<string>>(new Set());
-
-  if (items.length === 0) {
-    return (
-      <div className="card p-4">
-        <p className="muted text-center">No content for this complaint yet.</p>
-      </div>
-    );
-  }
-  const groups = [{ group: coverageTitle, items }];
-
-  const doGrade = async () => {
-    setGrading(true);
-    try {
-      const m = await grader(answer, groups);
-      setMatched(m);
-      const r = buildCoverage(groups, m);
-      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
-      track("drill", { drillType, pct });
-      onRecord(pct);
-      onGrade();
-    } finally {
-      setGrading(false);
-    }
-  };
-
-  const result = buildCoverage(groups, matched);
-
-  return (
-    <div className="space-y-3">
-      <div className="card p-4">
-        <div className="panel-label mb-1">Prompt</div>
-        <p className="text-[15px] font-semibold leading-relaxed">{promptText}</p>
-        <p className="text-[13px] mt-0.5" style={{ color: "var(--color-exam-muted)" }}>
-          {subPrompt}
-        </p>
-      </div>
-
-      <div className="card p-4 space-y-3">
-        <textarea
-          className="input w-full resize-y leading-relaxed"
-          rows={4}
-          value={answer}
-          onChange={(e) => setAnswer(e.target.value)}
-          placeholder={placeholder}
-          aria-label="Your answer"
-        />
-        <GradeButton
-          graded={graded}
-          grading={grading}
-          disabled={!answer.trim()}
-          onGrade={doGrade}
-          onNew={onNew}
-          onRetry={onRetry}
-          newLabel="New rep →"
-        />
-      </div>
-
-      {graded && (
-        <div className="card p-4 space-y-4 pop-in">
-          <div className="flex items-center justify-between gap-3">
-            <div className="panel-label">Coverage</div>
-            <ResultChip named={result.named} total={result.total} />
-          </div>
-          <ScoreBar named={result.named} total={result.total} label={coverageTitle} />
-          <CoverageView title={coverageTitle} coverage={result.coverage} />
-          {idealAnswer && (
-            <div>
-              <div className="panel-label mb-1">{idealLabel ?? "Model answer"}</div>
-              <p
-                className="rounded-lg border p-3 text-[13px] leading-relaxed"
-                style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
-              >
-                {idealAnswer}
-              </p>
-            </div>
-          )}
-          {idealAnswer && (
-            <AiCoachNote
-              prompt={`${promptText} ${subPrompt}`}
-              studentAnswer={answer}
-              idealAnswer={idealAnswer}
-              rubric={`Should cover: ${items.join("; ")}.`}
-            />
-          )}
-          {manual.length > 0 && <ManualRefs manual={manual} compact />}
-          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
-        </div>
-      )}
     </div>
   );
 }

@@ -613,4 +613,7 @@ export const SKILL_DRILLS: SkillDrillProblem[] = [
   },
 ];
 
-export const SKILL_DRILL_TYPES = ["ABG", "Ascitic (SAAG)", "Pleural (Light's)", "PFT", "CSF", "Iron studies", "LFTs", "Hyponatremia", "Synovial fluid", "TFTs", "Urinalysis", "Coags"] as const;
+/** Skills shown in the combined "Skills" drill dropdown. The other interpretation
+ *  banks (CSF, iron, LFTs, …) are surfaced as their own tabs — see LAB_TABS in
+ *  drillProgress.ts — so they're not listed here. */
+export const SKILL_DRILL_TYPES = ["ABG", "Ascitic (SAAG)", "Pleural (Light's)", "PFT"] as const;

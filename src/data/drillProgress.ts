@@ -6,7 +6,7 @@
  * coverage %, an attempt count, and timestamps against stable problem ids).
  */
 import { CURRICULUM } from "./curriculum";
-import { SKILL_DRILLS, type SkillDrillProblem } from "./skillDrills";
+import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "./skillDrills";
 import { MANAGEMENT_DRILLS } from "./managementDrills";
 import { EKG_DRILLS, CXR_DRILLS } from "./imageDrills";
 import { SCORE_DRILLS } from "./scoreDrills";
@@ -15,16 +15,36 @@ export const DRILL_PROGRESS_KEY = "osce.drills.v1";
 
 export type DrillType =
   | "differential"
-  | "cantmiss"
-  | "exam"
-  | "oneliner"
-  | "mechanisms"
   | "workup"
   | "management"
   | "ekg"
   | "cxr"
   | "scores"
-  | "skills";
+  | "skills"
+  | "lab-csf"
+  | "lab-iron"
+  | "lab-lfts"
+  | "lab-hypona"
+  | "lab-synovial"
+  | "lab-tfts"
+  | "lab-ua"
+  | "lab-coags";
+
+/** Lab-interpretation banks that each get their own drill tab (vs the combined
+ *  "Skills" tab for ABG/SAAG/Pleural/PFT). Maps the tab's drill type to its skill
+ *  in SKILL_DRILLS. */
+export const LAB_TABS: { type: DrillType; skill: SkillDrillProblem["skill"]; emoji: string }[] = [
+  { type: "lab-csf", skill: "CSF", emoji: "💧" },
+  { type: "lab-iron", skill: "Iron studies", emoji: "🩸" },
+  { type: "lab-lfts", skill: "LFTs", emoji: "🟠" },
+  { type: "lab-hypona", skill: "Hyponatremia", emoji: "🧂" },
+  { type: "lab-synovial", skill: "Synovial fluid", emoji: "🦴" },
+  { type: "lab-tfts", skill: "TFTs", emoji: "🦋" },
+  { type: "lab-ua", skill: "Urinalysis", emoji: "🧫" },
+  { type: "lab-coags", skill: "Coags", emoji: "🩹" },
+];
+export const labSkillForType = (t: DrillType): SkillDrillProblem["skill"] | undefined =>
+  LAB_TABS.find((l) => l.type === t)?.skill;
 
 /** Student override layered on top of the score-based mastery signal. */
 export type DrillManual = "none" | "mastered" | "review";
@@ -46,30 +66,38 @@ export const MASTERY_PCT = 80;
 
 export const DRILL_TYPE_ORDER: DrillType[] = [
   "differential",
-  "cantmiss",
-  "exam",
-  "oneliner",
-  "mechanisms",
   "workup",
   "management",
   "ekg",
   "cxr",
   "scores",
   "skills",
+  "lab-csf",
+  "lab-iron",
+  "lab-lfts",
+  "lab-hypona",
+  "lab-synovial",
+  "lab-tfts",
+  "lab-ua",
+  "lab-coags",
 ];
 
 export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
   differential: "Differential",
-  cantmiss: "Can't-miss",
-  exam: "Exam",
-  oneliner: "One-liner",
-  mechanisms: "Mechanisms",
   workup: "Work-up",
   management: "Management",
   ekg: "EKG",
   cxr: "CXR",
   scores: "Scores",
   skills: "Skills",
+  "lab-csf": "CSF",
+  "lab-iron": "Iron studies",
+  "lab-lfts": "LFTs",
+  "lab-hypona": "Hyponatremia",
+  "lab-synovial": "Synovial fluid",
+  "lab-tfts": "TFTs",
+  "lab-ua": "Urinalysis",
+  "lab-coags": "Coags",
 };
 
 export function drillKey(type: DrillType, id: string): string {
@@ -183,13 +211,18 @@ function truncate(s: string, n = 64): string {
 }
 
 export function drillCatalog(type: DrillType): DrillCatalogItem[] {
+  // Lab-interpretation tabs: one problem per study in that skill's bank.
+  const labSkill = labSkillForType(type);
+  if (labSkill) {
+    return SKILL_DRILLS.filter((p) => p.skill === labSkill).map((p) => ({
+      type,
+      id: skillDrillId(p),
+      label: truncate(p.stem, 56),
+      group: labSkill,
+    }));
+  }
   switch (type) {
     case "differential":
-    case "cantmiss":
-    case "exam":
-    case "oneliner":
-    case "mechanisms":
-      // All complaint-based: one problem per chief-complaint category.
       return CURRICULUM.map((c) => ({ type, id: c.category, label: c.category, group: c.category }));
     case "scores":
       return SCORE_DRILLS.map((p) => ({ type, id: p.id, label: p.name, group: p.category }));
@@ -210,17 +243,22 @@ export function drillCatalog(type: DrillType): DrillCatalogItem[] {
         group: p.category,
         answer: p.diagnosis,
       }));
-    case "skills":
-      return SKILL_DRILLS.map((p) => ({
+    case "skills": {
+      // Combined Skills tab: only the dropdown skills (the labs are own tabs).
+      const dropdown = new Set<string>(SKILL_DRILL_TYPES);
+      return SKILL_DRILLS.filter((p) => dropdown.has(p.skill)).map((p) => ({
         type,
         id: skillDrillId(p),
         label: truncate(p.stem, 56),
         group: p.skill,
       }));
+    }
     case "ekg":
       return EKG_DRILLS.map((p) => ({ type, id: String(p.n), label: `EKG #${p.n}`, answer: p.diagnosis }));
     case "cxr":
       return CXR_DRILLS.map((p) => ({ type, id: String(p.n), label: `CXR #${p.n}`, answer: p.diagnosis }));
+    default:
+      return []; // lab-* types handled above
   }
 }
 
