@@ -193,15 +193,19 @@ function sendEndpoint(event: string, props: Record<string, string | number | boo
       vh: window.innerHeight,
       app: APP_VERSION,
     });
+    // Send as text/plain (a CORS-safelisted content-type) so the cross-origin
+    // request stays a "simple" request and needs no preflight. application/json
+    // would force a preflight that sendBeacon can't perform → the beacon fails
+    // silently (net::ERR_FAILED). The worker reads request.json(), which parses
+    // the body regardless of the declared content-type, so JSON still arrives.
     if (navigator.sendBeacon) {
-      navigator.sendBeacon(ENDPOINT, new Blob([body], { type: "application/json" }));
+      navigator.sendBeacon(ENDPOINT, new Blob([body], { type: "text/plain;charset=UTF-8" }));
     } else {
       void fetch(ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "text/plain;charset=UTF-8" },
         body,
         keepalive: true,
-        mode: "no-cors",
       }).catch(() => {});
     }
   } catch {
