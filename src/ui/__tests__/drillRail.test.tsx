@@ -17,7 +17,7 @@ describe("DrillTypeRail", () => {
   it("exposes every drill type as a button so none is clipped off-screen", () => {
     render(<DrillTypeRail type="differential" progress={{}} onSelect={() => {}} />);
     const nav = screen.getByRole("navigation", { name: /drill type/i });
-    expect(ALL_TYPES.length).toBe(15);
+    expect(ALL_TYPES.length).toBe(17);
     for (const t of ALL_TYPES) {
       expect(
         within(nav).getByRole("button", { name: new RegExp(DRILL_TYPE_LABELS[t], "i") }),
@@ -68,5 +68,19 @@ describe("Drills screen", () => {
     expect(screen.getByRole("navigation", { name: /drill type/i })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: /framework drills/i })).toBeInTheDocument();
     expect(screen.getByLabelText(/your differential/i)).toBeInTheDocument();
+  });
+
+  it("opens the High-Yield deck and renders an integrated case", () => {
+    render(<Drills />);
+    fireEvent.click(screen.getByRole("button", { name: /high-yield/i }));
+    expect(screen.getByText(/crushing substernal chest pressure/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/your answer/i)).toBeInTheDocument();
+  });
+
+  it("opens the Antibiotics bank and renders a scenario", () => {
+    render(<Drills />);
+    fireEvent.click(screen.getByRole("button", { name: /^antibiotics/i }));
+    expect(screen.getByText(/productive cough/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/your answer/i)).toBeInTheDocument();
   });
 });

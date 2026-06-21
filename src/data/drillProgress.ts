@@ -10,13 +10,17 @@ import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "./skill
 import { MANAGEMENT_DRILLS } from "./managementDrills";
 import { EKG_DRILLS, CXR_DRILLS } from "./imageDrills";
 import { SCORE_DRILLS } from "./scoreDrills";
+import { ANTIBIOTIC_DRILLS } from "./antibioticDrills";
+import { HIGH_YIELD_DRILLS, highYieldGroup } from "./highYieldDrills";
 
 export const DRILL_PROGRESS_KEY = "osce.drills.v1";
 
 export type DrillType =
+  | "high-yield"
   | "differential"
   | "workup"
   | "management"
+  | "antibiotics"
   | "ekg"
   | "cxr"
   | "scores"
@@ -65,9 +69,11 @@ export type DrillProgressMap = Record<string, DrillProgress>;
 export const MASTERY_PCT = 80;
 
 export const DRILL_TYPE_ORDER: DrillType[] = [
+  "high-yield",
   "differential",
   "workup",
   "management",
+  "antibiotics",
   "ekg",
   "cxr",
   "scores",
@@ -83,9 +89,11 @@ export const DRILL_TYPE_ORDER: DrillType[] = [
 ];
 
 export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
+  "high-yield": "High-Yield",
   differential: "Differential",
   workup: "Work-up",
   management: "Management",
+  antibiotics: "Antibiotics",
   ekg: "EKG",
   cxr: "CXR",
   scores: "Scores",
@@ -103,9 +111,11 @@ export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
 /** Emoji marker per drill type — the single source for the drill-type rail (lab
  *  emojis intentionally mirror LAB_TABS so the two never drift). */
 export const DRILL_TYPE_EMOJI: Record<DrillType, string> = {
+  "high-yield": "⭐",
   differential: "🧠",
   workup: "🧪",
   management: "🩺",
+  antibiotics: "💊",
   ekg: "🫀",
   cxr: "🩻",
   scores: "🔢",
@@ -123,7 +133,8 @@ export const DRILL_TYPE_EMOJI: Record<DrillType, string> = {
 /** Sectioned drill types for the side rail: the workflow frameworks vs the
  *  per-bank lab-interpretation tabs. Order matches DRILL_TYPE_ORDER. */
 export const DRILL_TAB_GROUPS: { label: string; types: DrillType[] }[] = [
-  { label: "Frameworks", types: ["differential", "workup", "management", "ekg", "cxr", "scores", "skills"] },
+  { label: "Exam prep", types: ["high-yield"] },
+  { label: "Frameworks", types: ["differential", "workup", "management", "antibiotics", "ekg", "cxr", "scores", "skills"] },
   { label: "Lab interpretation", types: LAB_TABS.map((l) => l.type) },
 ];
 
@@ -253,6 +264,10 @@ export function drillCatalog(type: DrillType): DrillCatalogItem[] {
       return CURRICULUM.map((c) => ({ type, id: c.category, label: c.category, group: c.category }));
     case "scores":
       return SCORE_DRILLS.map((p) => ({ type, id: p.id, label: p.name, group: p.category }));
+    case "antibiotics":
+      return ANTIBIOTIC_DRILLS.map((p) => ({ type, id: p.id, label: p.name, group: p.category }));
+    case "high-yield":
+      return HIGH_YIELD_DRILLS.map((p) => ({ type, id: p.id, label: p.name, group: highYieldGroup(p) }));
     case "workup":
       return CURRICULUM.flatMap((c) =>
         c.practiceCases.map((pc, i) => ({

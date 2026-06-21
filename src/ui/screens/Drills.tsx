@@ -4,6 +4,8 @@ import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../d
 import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/managementDrills";
 import { EKG_DRILLS, CXR_DRILLS, type ImageDrillProblem } from "../../data/imageDrills";
 import { SCORE_DRILLS, type ScoreDrillProblem } from "../../data/scoreDrills";
+import { ANTIBIOTIC_DRILLS, type AntibioticDrillProblem } from "../../data/antibioticDrills";
+import { HIGH_YIELD_DRILLS, type HighYieldDrillProblem } from "../../data/highYieldDrills";
 import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
 import { useDrillProgress } from "../useDrillProgress";
@@ -241,6 +243,8 @@ export function Drills() {
   const [skillAnswer, setSkillAnswer] = useState("");
   const [imageAnswer, setImageAnswer] = useState("");
   const [scoreAnswer, setScoreAnswer] = useState("");
+  const [antibioticAnswer, setAntibioticAnswer] = useState("");
+  const [highYieldAnswer, setHighYieldAnswer] = useState("");
   const [graded, setGraded] = useState(false);
   const { progress, record, setManual } = useDrillProgress();
   const [browsing, setBrowsing] = useState(false);
@@ -291,6 +295,19 @@ export function Drills() {
   const scoreProblem: ScoreDrillProblem | null =
     type === "scores" && SCORE_DRILLS.length > 0 ? SCORE_DRILLS[stemIdx % SCORE_DRILLS.length] : null;
 
+  // Antibiotics drill: a flat MGH-grounded bank rotated by stemIdx.
+  const antibioticProblem: AntibioticDrillProblem | null =
+    type === "antibiotics" && ANTIBIOTIC_DRILLS.length > 0
+      ? ANTIBIOTIC_DRILLS[stemIdx % ANTIBIOTIC_DRILLS.length]
+      : null;
+
+  // High-Yield deck: a flat mixed bank rotated by stemIdx; references into the
+  // other banks are resolved to the underlying problem at render time.
+  const highYieldProblem: HighYieldDrillProblem | null =
+    type === "high-yield" && HIGH_YIELD_DRILLS.length > 0
+      ? HIGH_YIELD_DRILLS[stemIdx % HIGH_YIELD_DRILLS.length]
+      : null;
+
   // Stable id of the problem currently on screen (per drill type), for progress.
   const activeId: string | null = (() => {
     if (labSkill) return skillProblem ? skillDrillId(skillProblem) : null;
@@ -305,6 +322,10 @@ export function Drills() {
         return skillProblem ? skillDrillId(skillProblem) : null;
       case "scores":
         return scoreProblem?.id ?? null;
+      case "antibiotics":
+        return antibioticProblem?.id ?? null;
+      case "high-yield":
+        return highYieldProblem?.id ?? null;
       case "ekg":
       case "cxr":
         return imageProblem ? String(imageProblem.n) : null;
@@ -328,6 +349,8 @@ export function Drills() {
     setSkillAnswer("");
     setImageAnswer("");
     setScoreAnswer("");
+    setAntibioticAnswer("");
+    setHighYieldAnswer("");
     setGraded(false);
   };
 
@@ -353,6 +376,10 @@ export function Drills() {
       setStemIdx(Math.max(0, pool.findIndex((p) => skillDrillId(p) === id)));
     } else if (t === "scores") {
       setStemIdx(Math.max(0, SCORE_DRILLS.findIndex((p) => p.id === id)));
+    } else if (t === "antibiotics") {
+      setStemIdx(Math.max(0, ANTIBIOTIC_DRILLS.findIndex((p) => p.id === id)));
+    } else if (t === "high-yield") {
+      setStemIdx(Math.max(0, HIGH_YIELD_DRILLS.findIndex((p) => p.id === id)));
     } else if (t === "workup") {
       const h = id.lastIndexOf("#");
       setCategoryName(id.slice(0, h));
@@ -473,6 +500,14 @@ export function Drills() {
               <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
                 {scoreProblem ? `${scoreProblem.name} · ${(stemIdx % SCORE_DRILLS.length) + 1} / ${SCORE_DRILLS.length}` : "No scores yet"}
               </span>
+            ) : type === "antibiotics" ? (
+              <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+                {antibioticProblem ? `${antibioticProblem.name} · ${(stemIdx % ANTIBIOTIC_DRILLS.length) + 1} / ${ANTIBIOTIC_DRILLS.length}` : "No drills yet"}
+              </span>
+            ) : type === "high-yield" ? (
+              <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+                {highYieldProblem ? `${highYieldProblem.name} · ${(stemIdx % HIGH_YIELD_DRILLS.length) + 1} / ${HIGH_YIELD_DRILLS.length}` : "No drills yet"}
+              </span>
             ) : (
               <label className="text-sm flex items-center gap-2">
                 <span className="panel-label">Complaint</span>
@@ -492,7 +527,7 @@ export function Drills() {
               </label>
             )}
             <button className="btn ml-auto" onClick={nextProblem} title="Prefers a problem you haven't mastered yet">
-              ➜ {type === "skills" || labSkill ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : type === "scores" ? "Next score" : "Next rep"}
+              ➜ {type === "skills" || labSkill ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : type === "scores" ? "Next score" : type === "antibiotics" ? "Next drill" : type === "high-yield" ? "Next" : "Next rep"}
             </button>
           </div>
 
@@ -602,6 +637,36 @@ export function Drills() {
               problem={scoreProblem}
               answer={scoreAnswer}
               setAnswer={setScoreAnswer}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {type === "antibiotics" && (
+            <AntibioticDrill
+              key={`abx:${stemIdx}`}
+              problem={antibioticProblem}
+              answer={antibioticAnswer}
+              setAnswer={setAntibioticAnswer}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {type === "high-yield" && (
+            <HighYieldDrill
+              key={`hy:${highYieldProblem?.id ?? stemIdx}`}
+              problem={highYieldProblem}
+              answer={highYieldAnswer}
+              setAnswer={setHighYieldAnswer}
               graded={graded}
               onGrade={() => setGraded(true)}
               onNew={nextProblem}
@@ -1085,6 +1150,244 @@ function ScoreDrill({
         </div>
       )}
     </div>
+  );
+}
+
+/** Generic coverage-graded free-text drill (vignette → answer key → explanation),
+ *  shared by the antibiotics bank and the High-Yield integrated cases. */
+function CoverageDrill({
+  drillType,
+  title,
+  badge,
+  vignette,
+  ask,
+  items,
+  coverageLabel,
+  expectedTitle,
+  explanation,
+  explanationLabel,
+  placeholder,
+  newLabel,
+  answer,
+  setAnswer,
+  graded,
+  onGrade,
+  onNew,
+  onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
+}: {
+  drillType: DrillType;
+  title: string;
+  badge: string;
+  vignette: string;
+  ask?: string;
+  items: string[];
+  coverageLabel: string;
+  expectedTitle: string;
+  explanation: string;
+  explanationLabel: string;
+  placeholder: string;
+  newLabel: string;
+  answer: string;
+  setAnswer: (v: string) => void;
+  graded: boolean;
+  onGrade: () => void;
+  onNew: () => void;
+  onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
+}) {
+  const grader = useGrader();
+  const [grading, setGrading] = useState(false);
+  const [matched, setMatched] = useState<Set<string>>(new Set());
+  const groups = [{ group: title, items }];
+
+  const doGrade = async () => {
+    setGrading(true);
+    try {
+      const m = await grader(answer, groups);
+      setMatched(m);
+      const r = buildCoverage(groups, m);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType, pct });
+      onRecord(pct);
+      onGrade();
+    } finally {
+      setGrading(false);
+    }
+  };
+
+  const result = buildCoverage(groups, matched);
+  return (
+    <div className="space-y-3">
+      <div className="card p-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="panel-label">{title}</div>
+          <span className="chip chip-accent">{badge}</span>
+        </div>
+        <p className="text-[15px] font-semibold leading-relaxed mt-1">{vignette}</p>
+        {ask && (
+          <p className="text-[13px] mt-0.5" style={{ color: "var(--color-exam-muted)" }}>
+            {ask}
+          </p>
+        )}
+      </div>
+
+      <div className="card p-4 space-y-3">
+        <textarea
+          className="input w-full resize-y leading-relaxed"
+          rows={4}
+          value={answer}
+          onChange={(e) => setAnswer(e.target.value)}
+          placeholder={placeholder}
+          aria-label="Your answer"
+        />
+        <GradeButton
+          graded={graded}
+          grading={grading}
+          disabled={!answer.trim()}
+          onGrade={doGrade}
+          onNew={onNew}
+          onRetry={onRetry}
+          newLabel={newLabel}
+        />
+      </div>
+
+      {graded && (
+        <div className="card p-4 space-y-4 pop-in">
+          <div className="flex items-center justify-between gap-3">
+            <div className="panel-label">Coverage</div>
+            <ResultChip named={result.named} total={result.total} />
+          </div>
+          <ScoreBar named={result.named} total={result.total} label={coverageLabel} />
+          <CoverageView title={expectedTitle} coverage={result.coverage} />
+          <div>
+            <div className="panel-label mb-1">{explanationLabel}</div>
+            <p
+              className="rounded-lg border p-3 text-[13px] leading-relaxed whitespace-pre-line"
+              style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
+            >
+              {explanation}
+            </p>
+          </div>
+          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** Empiric-antibiotics drill — coverage-graded "what would you start?". Reused
+ *  inside the High-Yield deck via the drillType/newLabel overrides. */
+function AntibioticDrill({
+  problem,
+  drillType = "antibiotics",
+  newLabel = "Next drill →",
+  ...rest
+}: {
+  problem: AntibioticDrillProblem | null;
+  drillType?: DrillType;
+  newLabel?: string;
+  answer: string;
+  setAnswer: (v: string) => void;
+  graded: boolean;
+  onGrade: () => void;
+  onNew: () => void;
+  onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
+}) {
+  if (!problem) {
+    return (
+      <div className="card p-4">
+        <p className="muted text-center">No antibiotic drills available yet.</p>
+      </div>
+    );
+  }
+  const spectrum = problem.mode === "spectrum";
+  return (
+    <CoverageDrill
+      drillType={drillType}
+      title={problem.name}
+      badge={spectrum ? "spectrum & coverage" : problem.category}
+      vignette={problem.vignette}
+      ask={spectrum ? "Name what it covers and the key gaps." : "Name the preferred empiric regimen and the key reasoning."}
+      items={problem.answer}
+      coverageLabel={spectrum ? "Coverage points" : "Regimen coverage"}
+      expectedTitle={spectrum ? "Covers / misses" : "Preferred regimen + key points"}
+      explanation={problem.explanation}
+      explanationLabel={spectrum ? "Teaching" : "Worked solution"}
+      placeholder={spectrum ? "What it covers, and the notable gaps…" : "The antibiotic(s) you'd start, and why…"}
+      newLabel={newLabel}
+      {...rest}
+    />
+  );
+}
+
+/** High-Yield deck dispatcher: integrated cases render a coverage drill;
+ *  referenced items (ekg/cxr/score/antibiotics) render their native bank's
+ *  component. Progress is keyed under the High-Yield item id because the
+ *  parent drill type is "high-yield". */
+function HighYieldDrill({
+  problem,
+  ...shared
+}: {
+  problem: HighYieldDrillProblem | null;
+  answer: string;
+  setAnswer: (v: string) => void;
+  graded: boolean;
+  onGrade: () => void;
+  onNew: () => void;
+  onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
+}) {
+  if (!problem) {
+    return (
+      <div className="card p-4">
+        <p className="muted text-center">No high-yield drills available yet.</p>
+      </div>
+    );
+  }
+  if (problem.modality === "ekg" || problem.modality === "cxr") {
+    const n = problem.modality === "ekg" ? problem.ekgN : problem.cxrN;
+    const pool = problem.modality === "ekg" ? EKG_DRILLS : CXR_DRILLS;
+    const img = pool.find((p) => p.n === n) ?? null;
+    return <ImageReadDrill kind={problem.modality} problem={img} {...shared} />;
+  }
+  if (problem.modality === "score") {
+    const sc = SCORE_DRILLS.find((p) => p.id === problem.scoreId) ?? null;
+    return <ScoreDrill problem={sc} {...shared} />;
+  }
+  if (problem.modality === "antibiotics") {
+    const abx = ANTIBIOTIC_DRILLS.find((p) => p.id === problem.antibioticId) ?? null;
+    return <AntibioticDrill problem={abx} drillType="high-yield" newLabel="Next →" {...shared} />;
+  }
+  if (problem.modality === "skill") {
+    const sk = SKILL_DRILLS.find((p) => skillDrillId(p) === problem.skillRef) ?? null;
+    return <SkillDrill problem={sk} {...shared} />;
+  }
+  // integrated authored case
+  return (
+    <CoverageDrill
+      drillType="high-yield"
+      title={problem.name}
+      badge={problem.category}
+      vignette={problem.vignette ?? ""}
+      items={problem.answer ?? []}
+      coverageLabel="Key actions"
+      expectedTitle="High-yield answer"
+      explanation={`${problem.explanation ?? ""}${problem.manualPage ? `\n\n(${problem.manualPage})` : ""}`}
+      explanationLabel="Teaching"
+      placeholder="Your diagnosis and immediate management…"
+      newLabel="Next →"
+      {...shared}
+    />
   );
 }
 
@@ -1646,25 +1949,36 @@ function ImageReadDrill({
   }
 
   const modality = kind === "ekg" ? "12-lead EKG" : "chest X-ray";
-  const groups = [
-    { group: "Diagnosis", items: [problem.diagnosis] },
-    { group: "Key findings", items: problem.findings },
-  ];
+  // Grade the WRITE-UP first: the systematic read (the hallmark findings a good
+  // structured interpretation surfaces) is weighted 70% and the punchline
+  // diagnosis 30% — the method matters more than just naming the answer. The
+  // read group is listed first so it leads the model-answer display.
+  const readGroup = { group: "Systematic read", items: problem.findings };
+  const dxGroup = { group: "Diagnosis", items: [problem.diagnosis] };
+  const groups = [readGroup, dxGroup];
+  const READ_WEIGHT = 0.7;
+  const weightedPct = (m: Set<string>): number => {
+    const read = buildCoverage([readGroup], m);
+    const dx = buildCoverage([dxGroup], m);
+    const readFrac = read.total ? read.named / read.total : 0;
+    const dxFrac = dx.total ? dx.named / dx.total : 0;
+    return Math.round((READ_WEIGHT * readFrac + (1 - READ_WEIGHT) * dxFrac) * 100);
+  };
   const doGrade = async () => {
     setGrading(true);
     try {
       const m = await grader(answer, groups);
       setMatched(m);
-      const r = buildCoverage(groups, m);
-      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
-      track("drill", { drillType: kind, pct });
-      onRecord(pct);
+      track("drill", { drillType: kind, pct: weightedPct(m) });
+      onRecord(weightedPct(m));
       onGrade();
     } finally {
       setGrading(false);
     }
   };
   const result = buildCoverage(groups, matched);
+  const readResult = buildCoverage([readGroup], matched);
+  const dxResult = buildCoverage([dxGroup], matched);
   const imgs = [problem.img, problem.img2].filter((s): s is string => !!s);
 
   return (
@@ -1738,8 +2052,9 @@ function ImageReadDrill({
             <div className="panel-label">Coverage</div>
             <ResultChip named={result.named} total={result.total} />
           </div>
-          <ScoreBar named={result.named} total={result.total} label="Findings + diagnosis" />
-          <CoverageView title="Model answer" coverage={result.coverage} />
+          <ScoreBar named={readResult.named} total={readResult.total} label="Systematic read · 70%" />
+          <ScoreBar named={dxResult.named} total={dxResult.total} label="Diagnosis · 30%" />
+          <CoverageView title="Model answer — read it systematically first" coverage={result.coverage} />
           {problem.read && (
             <div>
               <div className="panel-label mb-1">Expert read — {problem.diagnosis}</div>
