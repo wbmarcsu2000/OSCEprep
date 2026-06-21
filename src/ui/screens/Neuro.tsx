@@ -2,7 +2,39 @@ import { useState } from "react";
 import { NEURO_SESSIONS } from "../../data/neuro/sessions";
 import { NEURO_STEP_META, type NeuroCase, type NeuroSession, type NeuroStep } from "../../data/neuro/types";
 import { looseCovered } from "../../engine/textMatch";
+import { useReadAloud } from "../useSpeech";
 import { useAppStore } from "../store";
+
+/** Speaker button for read-aloud. Renders nothing where speech synthesis is
+ *  unsupported (Firefox/jsdom). `id` must be unique within the case so the row
+ *  shows the right play/stop state. */
+function SpeakButton({
+  id,
+  text,
+  label,
+  reader,
+}: {
+  id: string;
+  text: string;
+  label: string;
+  reader: ReturnType<typeof useReadAloud>;
+}) {
+  if (!reader.supported) return null;
+  const active = reader.speakingId === id;
+  return (
+    <button
+      type="button"
+      className="btn btn-ghost shrink-0 px-2.5 py-1 text-[12px] gap-1.5"
+      onClick={() => reader.toggle(id, text)}
+      aria-pressed={active}
+      aria-label={active ? `Stop reading ${label}` : `Read ${label} aloud`}
+      title={active ? "Stop" : "Read aloud"}
+    >
+      <span aria-hidden>{active ? "⏹" : "🔊"}</span>
+      {active ? "Stop" : "Listen"}
+    </button>
+  );
+}
 
 const SESSION_GRADS = [
   "var(--grad-primary)",
@@ -140,6 +172,9 @@ function SessionView({
 }
 
 function CaseWalkthrough({ session, c, onBack }: { session: NeuroSession; c: NeuroCase; onBack: () => void }) {
+  const reader = useReadAloud();
+  const presentationText = `${c.vignette} On examination: ${c.exam}`;
+  const pearlsText = `Teaching pearls. ${c.pearls.join(". ")}`;
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="flex items-center justify-between gap-4">
@@ -156,10 +191,11 @@ function CaseWalkthrough({ session, c, onBack }: { session: NeuroSession; c: Neu
 
       {/* Presentation */}
       <div className="card p-5 space-y-3">
-        <div>
+        <div className="flex items-start justify-between gap-3">
           <div className="panel-label mb-1">Presentation</div>
-          <p className="text-[14.5px] leading-relaxed">{c.vignette}</p>
+          <SpeakButton id="presentation" text={presentationText} label="the presentation and exam" reader={reader} />
         </div>
+        <p className="text-[14.5px] leading-relaxed">{c.vignette}</p>
         <div>
           <div className="panel-label mb-1">Exam</div>
           <p className="text-[14px] leading-relaxed" style={{ color: "var(--color-exam-ink)" }}>
@@ -171,10 +207,11 @@ function CaseWalkthrough({ session, c, onBack }: { session: NeuroSession; c: Neu
       <p className="hint">
         Answer each step, then reveal the model answer. Self-check is a keyword match — phrased
         differently? Trust your read.
+        {reader.supported && " Tap 🔊 to have any section read aloud."}
       </p>
 
       {c.steps.map((step, i) => (
-        <StepCard key={`${c.id}-${step.key}-${i}`} step={step} />
+        <StepCard key={`${c.id}-${step.key}-${i}`} step={step} stepIndex={i} reader={reader} />
       ))}
 
       {/* Pearls */}
@@ -182,8 +219,11 @@ function CaseWalkthrough({ session, c, onBack }: { session: NeuroSession; c: Neu
         className="card p-5"
         style={{ borderColor: "var(--color-exam-accent-line)", background: "var(--color-exam-accent-soft)" }}
       >
-        <div className="panel-label mb-2" style={{ color: "var(--color-exam-accent-deep)" }}>
-          💡 Teaching pearls
+        <div className="flex items-start justify-between gap-3 mb-2">
+          <div className="panel-label" style={{ color: "var(--color-exam-accent-deep)" }}>
+            💡 Teaching pearls
+          </div>
+          <SpeakButton id="pearls" text={pearlsText} label="the teaching pearls" reader={reader} />
         </div>
         <ul className="space-y-1.5 text-[13.5px] leading-relaxed" style={{ color: "var(--color-exam-accent-deep)" }}>
           {c.pearls.map((p, i) => (
@@ -198,7 +238,7 @@ function CaseWalkthrough({ session, c, onBack }: { session: NeuroSession; c: Neu
   );
 }
 
-function StepCard({ step }: { step: NeuroStep }) {
+function StepCard({ step, stepIndex, reader }: { step: NeuroStep; stepIndex: number; reader: ReturnType<typeof useReadAloud> }) {
   const [answer, setAnswer] = useState("");
   const [revealed, setRevealed] = useState(false);
   const meta = NEURO_STEP_META[step.key];
@@ -217,6 +257,8 @@ function StepCard({ step }: { step: NeuroStep }) {
           {meta.icon}
         </span>
         <div className="text-[15px] font-bold tracking-tight">{step.label}</div>
+        <span className="grow" />
+        <SpeakButton id={`step-${stepIndex}-prompt`} text={step.prompt} label={`the ${step.label} prompt`} reader={reader} />
       </div>
       <p className="text-[14px] font-medium leading-relaxed">{step.prompt}</p>
       <textarea
@@ -244,8 +286,11 @@ function StepCard({ step }: { step: NeuroStep }) {
               </p>
             </div>
             <div>
-              <div className="panel-label mb-1.5" style={{ color: "var(--color-exam-ok)" }}>
-                Model answer
+              <div className="flex items-center justify-between gap-2 mb-1.5">
+                <div className="panel-label" style={{ color: "var(--color-exam-ok)" }}>
+                  Model answer
+                </div>
+                <SpeakButton id={`step-${stepIndex}-answer`} text={step.idealAnswer} label={`the ${step.label} model answer`} reader={reader} />
               </div>
               <p
                 className="rounded-xl border p-3 text-[13.5px] leading-relaxed"

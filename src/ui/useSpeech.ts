@@ -262,3 +262,67 @@ export function useTts() {
 
   return { supported: ttsSupported, enabled, setEnabled, speaking, speak, cancel };
 }
+
+/** Split text into sentence-sized chunks. Chrome silently cuts a single
+ *  utterance off after ~15s; queueing several short utterances sidesteps that
+ *  and lets cancel() stop the whole read instantly. */
+function splitForSpeech(text: string): string[] {
+  const parts = text.match(/[^.!?\n]+[.!?]*\s*/g);
+  const chunks = (parts ?? [text]).map((s) => s.trim()).filter(Boolean);
+  return chunks.length ? chunks : [text.trim()];
+}
+
+/** On-demand read-aloud for study content (the Neurology walkthrough). Unlike
+ *  `useTts`, this owns no persisted toggle — each call reads one labelled item.
+ *  `speakingId` tracks WHICH item is in flight so a row of speaker buttons can
+ *  show play/stop independently; starting a new item cancels the previous one,
+ *  so only one thing is ever read at a time. */
+export function useReadAloud() {
+  const [speakingId, setSpeakingId] = useState<string | null>(null);
+  const voiceRef = useRef<SpeechSynthesisVoice | null>(null);
+  useEffect(() => {
+    if (!ttsSupported) return;
+    const load = () => {
+      voiceRef.current = pickNaturalVoice(window.speechSynthesis.getVoices());
+    };
+    load();
+    window.speechSynthesis.addEventListener("voiceschanged", load);
+    return () => window.speechSynthesis.removeEventListener("voiceschanged", load);
+  }, []);
+
+  const stop = useCallback(() => {
+    if (ttsSupported) window.speechSynthesis.cancel();
+    setSpeakingId(null);
+  }, []);
+
+  const toggle = useCallback(
+    (id: string, text: string) => {
+      if (!ttsSupported || !text.trim()) return;
+      // Cancelling clears any queued chunks (including a different item's read).
+      window.speechSynthesis.cancel();
+      if (speakingId === id) {
+        setSpeakingId(null);
+        return;
+      }
+      const chunks = splitForSpeech(text);
+      chunks.forEach((chunk, i) => {
+        const u = new SpeechSynthesisUtterance(chunk);
+        if (voiceRef.current) u.voice = voiceRef.current;
+        u.lang = voiceRef.current?.lang ?? "en-US";
+        u.rate = 1;
+        u.pitch = 1;
+        const clear = () => setSpeakingId((c) => (c === id ? null : c));
+        if (i === chunks.length - 1) u.onend = clear;
+        u.onerror = clear;
+        window.speechSynthesis.speak(u);
+      });
+      setSpeakingId(id);
+    },
+    [speakingId],
+  );
+
+  // Stop reading if the component unmounts (leaving the tab / case).
+  useEffect(() => () => stop(), [stop]);
+
+  return { supported: ttsSupported, speakingId, toggle, stop };
+}
