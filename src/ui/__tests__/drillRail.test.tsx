@@ -83,4 +83,17 @@ describe("Drills screen", () => {
     expect(screen.getByText(/productive cough/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/your answer/i)).toBeInTheDocument();
   });
+
+  it("filters the High-Yield deck to a single category", () => {
+    render(<Drills />);
+    fireEvent.click(screen.getByRole("button", { name: /high-yield/i }));
+    // Default ("All") opens on the first integrated case.
+    expect(screen.getByText(/crushing substernal chest pressure/i)).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText(/high-yield category/i), {
+      target: { value: "Empiric antibiotics" },
+    });
+    // Now the deck is scoped to antibiotics — the integrated STEMI case is gone.
+    expect(screen.queryByText(/crushing substernal chest pressure/i)).not.toBeInTheDocument();
+    expect(screen.getByText(/admitted for pneumonia/i)).toBeInTheDocument();
+  });
 });

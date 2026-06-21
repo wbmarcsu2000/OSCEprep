@@ -570,3 +570,19 @@ export const HIGH_YIELD_DRILLS: HighYieldDrillProblem[] = [
     skillRef: r.skillRef,
   })),
 ];
+
+/** Distinct browse/filter sections, in deck order — backs the High-Yield
+ *  category filter so a student can separate out and drill one section at a
+ *  time (e.g. just EKG reads, just Cardiology, just Skills & labs). */
+export const HIGH_YIELD_CATEGORIES: string[] = (() => {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const p of HIGH_YIELD_DRILLS) {
+    const g = highYieldGroup(p);
+    if (!seen.has(g)) {
+      seen.add(g);
+      out.push(g);
+    }
+  }
+  return out;
+})();

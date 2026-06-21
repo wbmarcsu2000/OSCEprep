@@ -5,7 +5,7 @@ import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/manag
 import { EKG_DRILLS, CXR_DRILLS, type ImageDrillProblem } from "../../data/imageDrills";
 import { SCORE_DRILLS, type ScoreDrillProblem } from "../../data/scoreDrills";
 import { ANTIBIOTIC_DRILLS, type AntibioticDrillProblem } from "../../data/antibioticDrills";
-import { HIGH_YIELD_DRILLS, type HighYieldDrillProblem } from "../../data/highYieldDrills";
+import { HIGH_YIELD_DRILLS, HIGH_YIELD_CATEGORIES, highYieldGroup, type HighYieldDrillProblem } from "../../data/highYieldDrills";
 import { track } from "../../analytics/telemetry";
 import { useAppStore } from "../store";
 import { useDrillProgress } from "../useDrillProgress";
@@ -233,6 +233,7 @@ export function Drills() {
   const [type, setType] = useState<DrillType>("differential");
   const [categoryName, setCategoryName] = useState(CURRICULUM[0].category);
   const [skillFilter, setSkillFilter] = useState<string>("All");
+  const [highYieldFilter, setHighYieldFilter] = useState<string>("All");
   const [stemIdx, setStemIdx] = useState(0);
   const [ddx, setDdx] = useState("");
   // Differential drill depth: false = core (default), true = full "advanced" list.
@@ -303,9 +304,17 @@ export function Drills() {
 
   // High-Yield deck: a flat mixed bank rotated by stemIdx; references into the
   // other banks are resolved to the underlying problem at render time.
+  // Optional category filter so a student can separate out one section.
+  const highYieldPool = useMemo(
+    () =>
+      highYieldFilter === "All"
+        ? HIGH_YIELD_DRILLS
+        : HIGH_YIELD_DRILLS.filter((p) => highYieldGroup(p) === highYieldFilter),
+    [highYieldFilter],
+  );
   const highYieldProblem: HighYieldDrillProblem | null =
-    type === "high-yield" && HIGH_YIELD_DRILLS.length > 0
-      ? HIGH_YIELD_DRILLS[stemIdx % HIGH_YIELD_DRILLS.length]
+    type === "high-yield" && highYieldPool.length > 0
+      ? highYieldPool[stemIdx % highYieldPool.length]
       : null;
 
   // Stable id of the problem currently on screen (per drill type), for progress.
@@ -379,7 +388,13 @@ export function Drills() {
     } else if (t === "antibiotics") {
       setStemIdx(Math.max(0, ANTIBIOTIC_DRILLS.findIndex((p) => p.id === id)));
     } else if (t === "high-yield") {
-      setStemIdx(Math.max(0, HIGH_YIELD_DRILLS.findIndex((p) => p.id === id)));
+      const prob = HIGH_YIELD_DRILLS.find((p) => p.id === id);
+      if (prob) {
+        const grp = highYieldGroup(prob);
+        setHighYieldFilter(grp);
+        const pool = HIGH_YIELD_DRILLS.filter((p) => highYieldGroup(p) === grp);
+        setStemIdx(Math.max(0, pool.findIndex((p) => p.id === id)));
+      }
     } else if (t === "workup") {
       const h = id.lastIndexOf("#");
       setCategoryName(id.slice(0, h));
@@ -418,7 +433,25 @@ export function Drills() {
     return (unmastered ?? order[0] ?? items[0]).id;
   };
 
+  /** Advance within the current High-Yield category, preferring unseen. */
+  const nextHighYield = () => {
+    const pool = highYieldPool;
+    if (pool.length === 0) return;
+    const cur = ((stemIdx % pool.length) + pool.length) % pool.length;
+    const ordered = [...pool.slice(cur + 1), ...pool.slice(0, cur + 1)];
+    const target =
+      ordered.find((p) => !isSeen(progress[drillKey("high-yield", p.id)])) ??
+      ordered.find((p) => !isMastered(progress[drillKey("high-yield", p.id)])) ??
+      ordered[0];
+    setStemIdx(Math.max(0, pool.findIndex((p) => p.id === target.id)));
+    reset();
+  };
+
   const nextProblem = () => {
+    if (type === "high-yield") {
+      nextHighYield();
+      return;
+    }
     const id = pickNext(type);
     if (id) goToProblem(type, id);
     else newRep(type);
@@ -505,9 +538,29 @@ export function Drills() {
                 {antibioticProblem ? `${antibioticProblem.name} · ${(stemIdx % ANTIBIOTIC_DRILLS.length) + 1} / ${ANTIBIOTIC_DRILLS.length}` : "No drills yet"}
               </span>
             ) : type === "high-yield" ? (
-              <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
-                {highYieldProblem ? `${highYieldProblem.name} · ${(stemIdx % HIGH_YIELD_DRILLS.length) + 1} / ${HIGH_YIELD_DRILLS.length}` : "No drills yet"}
-              </span>
+              <>
+                <label className="text-sm flex items-center gap-2">
+                  <span className="panel-label">Category</span>
+                  <select
+                    className="input text-[13px] py-1.5"
+                    value={highYieldFilter}
+                    onChange={(e) => {
+                      setHighYieldFilter(e.target.value);
+                      setStemIdx(0);
+                      reset();
+                    }}
+                    aria-label="High-yield category"
+                  >
+                    <option>All</option>
+                    {HIGH_YIELD_CATEGORIES.map((c) => (
+                      <option key={c}>{c}</option>
+                    ))}
+                  </select>
+                </label>
+                <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+                  {highYieldProblem ? `${(stemIdx % highYieldPool.length) + 1} / ${highYieldPool.length}` : "No drills yet"}
+                </span>
+              </>
             ) : (
               <label className="text-sm flex items-center gap-2">
                 <span className="panel-label">Complaint</span>
