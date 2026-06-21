@@ -463,6 +463,8 @@ const EKG_REFS: { ekgN: number; category: string }[] = [
   { ekgN: 37, category: "Arrhythmia (pre-excitation)" },
   { ekgN: 44, category: "Conduction block" },
   { ekgN: 29, category: "Conduction block" },
+  { ekgN: 101, category: "Conduction block (LBBB)" },
+  { ekgN: 102, category: "Conduction block (RBBB)" },
   { ekgN: 3, category: "Electrolytes" },
   { ekgN: 6, category: "Electrolytes" },
   { ekgN: 32, category: "Pericardial" },

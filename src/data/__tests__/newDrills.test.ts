@@ -63,3 +63,22 @@ describe("high-yield deck", () => {
     }
   });
 });
+
+describe("conduction-block EKG reads (LBBB / RBBB)", () => {
+  it("adds LBBB and RBBB image reads to the EKG bank, with tracings + findings", () => {
+    const lbbb = EKG_DRILLS.find((d) => /left bundle/i.test(d.diagnosis));
+    const rbbb = EKG_DRILLS.find((d) => /right bundle/i.test(d.diagnosis));
+    for (const d of [lbbb, rbbb]) {
+      expect(d, "LBBB/RBBB present").toBeTruthy();
+      expect(d!.img).toMatch(/^https:\/\/litfl\.com\//);
+      expect(d!.findings.length).toBeGreaterThan(2);
+      expect(d!.read.length).toBeGreaterThan(20);
+    }
+  });
+
+  it("surfaces LBBB and RBBB in the High-Yield EKG section", () => {
+    const ekgNs = new Set(HIGH_YIELD_DRILLS.filter((p) => p.modality === "ekg").map((p) => p.ekgN));
+    expect(ekgNs.has(101)).toBe(true);
+    expect(ekgNs.has(102)).toBe(true);
+  });
+});

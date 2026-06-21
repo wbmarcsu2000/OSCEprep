@@ -55,5 +55,52 @@ function build(
   return out;
 }
 
-export const EKG_DRILLS: ImageDrillProblem[] = build("ekg", LITFL_ECG_STUDIES, LITFL_MEDIA.ecg);
+/**
+ * Conduction-block reads (LBBB / RBBB) added beyond the scraped LITFL Top-100
+ * bank: there is no standalone bundle-branch-block case in LITFL_ECG_STUDIES
+ * (it caps at the curated 50), so these are assembled directly as drill problems
+ * from the LITFL ECG library pages (real tracings, © LITFL CC BY-NC-SA 4.0).
+ * Numbered 101+ to stay clear of the 1-50 case numbering.
+ */
+const EXTRA_ECG_DRILLS: ImageDrillProblem[] = [
+  {
+    kind: "ekg",
+    n: 101,
+    diagnosis: "Left bundle branch block (LBBB)",
+    findings: [
+      "QRS duration >=120 ms",
+      "dominant S wave (broad rS / QS) in V1",
+      "broad, notched / 'M-shaped' monophasic R wave in lateral leads I, aVL, V5-6 (no septal Q waves)",
+      "appropriate discordance: ST-segment / T-wave deviation opposite the dominant QRS",
+    ],
+    vignette:
+      "68F with exertional dyspnea and a known cardiomyopathy; routine clinic 12-lead. HR 78, BP 132/80, no chest pain. Read the ECG systematically.",
+    img: "https://litfl.com/wp-content/uploads/2021/01/Left-Bundle-Branch-Block-LBBB-ECG-Strip-LITFL.png",
+    img2: null,
+    read: "Broad QRS (>=120 ms) with a dominant S wave in V1 and a broad, notched monophasic R wave in the lateral leads (I, aVL, V5-6) with loss of the normal septal Q waves: left bundle branch block. Expect appropriate discordance — ST/T deviation directed opposite the main QRS vector. A new LBBB with ischaemic symptoms should prompt the Sgarbossa / modified-Sgarbossa criteria, since LBBB otherwise obscures STEMI diagnosis. (LITFL ECG Library, CC BY-NC-SA 4.0)",
+    url: "https://litfl.com/left-bundle-branch-block-lbbb-ecg-library/",
+  },
+  {
+    kind: "ekg",
+    n: 102,
+    diagnosis: "Right bundle branch block (RBBB)",
+    findings: [
+      "QRS duration >=120 ms",
+      "RSR' ('M-shaped' / rabbit-ear) complex in the right precordial leads V1-3",
+      "wide, slurred S wave in lateral leads I, aVL, V5-6",
+      "appropriate discordance: ST depression / T-wave inversion in V1-3",
+    ],
+    vignette:
+      "59M for a pre-operative 12-lead, asymptomatic. HR 72, BP 128/76, no chest pain or dyspnea. Read the ECG systematically.",
+    img: "https://litfl.com/wp-content/uploads/2018/08/Right-Bundle-Branch-Block-RBBB-ECG-Strip-LITFL.png",
+    img2: null,
+    read: "Broad QRS (>=120 ms) with an RSR' ('M-shaped', rabbit-ear) complex in the right precordial leads (V1-3) and a wide, slurred S wave in the lateral leads (I, aVL, V5-6): right bundle branch block. Appropriate discordance gives ST depression and T-wave inversion in V1-3. Unlike LBBB, RBBB does NOT obscure STEMI — concordant ST elevation remains diagnostic. (LITFL ECG Library, CC BY-NC-SA 4.0)",
+    url: "https://litfl.com/right-bundle-branch-block-rbbb-ecg-library/",
+  },
+];
+
+export const EKG_DRILLS: ImageDrillProblem[] = [
+  ...build("ekg", LITFL_ECG_STUDIES, LITFL_MEDIA.ecg),
+  ...EXTRA_ECG_DRILLS,
+];
 export const CXR_DRILLS: ImageDrillProblem[] = build("cxr", LITFL_CXR_STUDIES, LITFL_MEDIA.cxr);
