@@ -96,4 +96,19 @@ describe("Drills screen", () => {
     expect(screen.queryByText(/crushing substernal chest pressure/i)).not.toBeInTheDocument();
     expect(screen.getByText(/admitted for pneumonia/i)).toBeInTheDocument();
   });
+
+  it("filters the High-Yield deck by mastery status", () => {
+    // Seed the DKA case as mastered (best% >= mastery threshold).
+    localStorage.setItem(
+      "osce.drills.v1",
+      JSON.stringify({
+        "high-yield:hy-dka": { attempts: 1, bestPct: 92, lastPct: 92, lastSeenAt: 0, manual: "none" },
+      }),
+    );
+    render(<Drills />);
+    fireEvent.click(screen.getByRole("button", { name: /high-yield/i }));
+    fireEvent.change(screen.getByLabelText(/high-yield status/i), { target: { value: "mastered" } });
+    // Jumps to the only mastered item — the DKA case.
+    expect(screen.getByText(/glucose 480/i)).toBeInTheDocument();
+  });
 });

@@ -234,6 +234,7 @@ export function Drills() {
   const [categoryName, setCategoryName] = useState(CURRICULUM[0].category);
   const [skillFilter, setSkillFilter] = useState<string>("All");
   const [highYieldFilter, setHighYieldFilter] = useState<string>("All");
+  const [highYieldStatus, setHighYieldStatus] = useState<"all" | "unseen" | "working" | "mastered">("all");
   const [stemIdx, setStemIdx] = useState(0);
   const [ddx, setDdx] = useState("");
   // Differential drill depth: false = core (default), true = full "advanced" list.
@@ -316,6 +317,14 @@ export function Drills() {
     type === "high-yield" && highYieldPool.length > 0
       ? highYieldPool[stemIdx % highYieldPool.length]
       : null;
+  // Mastery status of a High-Yield item, for the unseen/working/mastered filter.
+  const hyStatusOf = (p: HighYieldDrillProblem): "unseen" | "working" | "mastered" => {
+    const e = progress[drillKey("high-yield", p.id)];
+    if (!isSeen(e)) return "unseen";
+    return isMastered(e) ? "mastered" : "working";
+  };
+  const hyMatchesStatus = (p: HighYieldDrillProblem) =>
+    highYieldStatus === "all" || hyStatusOf(p) === highYieldStatus;
 
   // Stable id of the problem currently on screen (per drill type), for progress.
   const activeId: string | null = (() => {
@@ -433,13 +442,16 @@ export function Drills() {
     return (unmastered ?? order[0] ?? items[0]).id;
   };
 
-  /** Advance within the current High-Yield category, preferring unseen. */
+  /** Advance within the current High-Yield category. Honors the status filter
+   *  (unseen/working/mastered); falls back to the smart default so Next never
+   *  dead-ends. */
   const nextHighYield = () => {
     const pool = highYieldPool;
     if (pool.length === 0) return;
     const cur = ((stemIdx % pool.length) + pool.length) % pool.length;
     const ordered = [...pool.slice(cur + 1), ...pool.slice(0, cur + 1)];
     const target =
+      (highYieldStatus !== "all" ? ordered.find(hyMatchesStatus) : undefined) ??
       ordered.find((p) => !isSeen(progress[drillKey("high-yield", p.id)])) ??
       ordered.find((p) => !isMastered(progress[drillKey("high-yield", p.id)])) ??
       ordered[0];
@@ -545,8 +557,12 @@ export function Drills() {
                     className="input text-[13px] py-1.5"
                     value={highYieldFilter}
                     onChange={(e) => {
-                      setHighYieldFilter(e.target.value);
-                      setStemIdx(0);
+                      const cat = e.target.value;
+                      setHighYieldFilter(cat);
+                      const pool =
+                        cat === "All" ? HIGH_YIELD_DRILLS : HIGH_YIELD_DRILLS.filter((p) => highYieldGroup(p) === cat);
+                      const i = highYieldStatus === "all" ? 0 : pool.findIndex((p) => hyStatusOf(p) === highYieldStatus);
+                      setStemIdx(i >= 0 ? i : 0);
                       reset();
                     }}
                     aria-label="High-yield category"
@@ -557,8 +573,35 @@ export function Drills() {
                     ))}
                   </select>
                 </label>
+                <label className="text-sm flex items-center gap-2">
+                  <span className="panel-label">Status</span>
+                  <select
+                    className="input text-[13px] py-1.5"
+                    value={highYieldStatus}
+                    onChange={(e) => {
+                      const st = e.target.value as typeof highYieldStatus;
+                      setHighYieldStatus(st);
+                      const i = st === "all" ? 0 : highYieldPool.findIndex((p) => hyStatusOf(p) === st);
+                      setStemIdx(i >= 0 ? i : 0);
+                      reset();
+                    }}
+                    aria-label="High-yield status"
+                  >
+                    <option value="all">All</option>
+                    <option value="unseen">Unseen</option>
+                    <option value="working">Still working</option>
+                    <option value="mastered">Mastered</option>
+                  </select>
+                </label>
                 <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
-                  {highYieldProblem ? `${(stemIdx % highYieldPool.length) + 1} / ${highYieldPool.length}` : "No drills yet"}
+                  {highYieldProblem
+                    ? `${(stemIdx % highYieldPool.length) + 1} / ${highYieldPool.length}` +
+                      (highYieldStatus !== "all"
+                        ? ` · ${highYieldPool.filter(hyMatchesStatus).length} ${
+                            highYieldStatus === "working" ? "still working" : highYieldStatus
+                          }`
+                        : "")
+                    : "No drills yet"}
                 </span>
               </>
             ) : (
