@@ -15,8 +15,8 @@ import {
   summarize,
   skillDrillId,
   labSkillForType,
-  LAB_TABS,
   DRILL_TYPE_LABELS,
+  DRILL_TYPE_EMOJI,
   type DrillType,
   type DrillProgress,
   type DrillProgressMap,
@@ -24,6 +24,7 @@ import {
 } from "../../data/drillProgress";
 import { ManualRefs } from "../components/ManualRefs";
 import { Segmented } from "../components/Segmented";
+import { DrillTypeRail } from "../components/DrillTypeRail";
 import { VisualGuide } from "../components/VisualGuide";
 
 /**
@@ -397,7 +398,7 @@ export function Drills() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="flex items-start justify-between gap-6">
         <div className="flex items-start gap-3">
           <span className="icon-tile" style={{ background: "var(--grad-teal)" }} aria-hidden="true">
@@ -422,199 +423,202 @@ export function Drills() {
         </button>
       </div>
 
-      <div className="card px-4 py-3 flex flex-wrap items-center gap-x-5 gap-y-3">
-        <Segmented
-          label="Drill type"
-          options={[
-            { value: "differential", label: "🧠 Differential" },
-            { value: "workup", label: "🧪 Work-up" },
-            { value: "management", label: "🩺 Management" },
-            { value: "ekg", label: "🫀 EKG" },
-            { value: "cxr", label: "🩻 CXR" },
-            { value: "scores", label: "🔢 Scores" },
-            { value: "skills", label: "📐 Skills" },
-            ...LAB_TABS.map((l) => ({ value: l.type, label: `${l.emoji} ${DRILL_TYPE_LABELS[l.type]}` })),
-          ]}
-          value={type}
-          onChange={(t: DrillType) => {
+      <div className="grid lg:grid-cols-[232px_minmax(0,1fr)] gap-5 items-start">
+        <DrillTypeRail
+          type={type}
+          progress={progress}
+          onSelect={(t) => {
             setType(t);
             reset();
           }}
         />
-        {type === "skills" ? (
-          <label className="text-sm flex items-center gap-2">
-            <span className="panel-label">Skill</span>
-            <select
-              className="input text-[13px] py-1.5"
-              value={skillFilter}
-              onChange={(e) => {
-                setSkillFilter(e.target.value);
-                reset();
+
+        <div className="space-y-4 min-w-0">
+          <div className="card px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-3">
+            <div className="flex items-center gap-2">
+              <span aria-hidden className="text-[18px] leading-none">
+                {DRILL_TYPE_EMOJI[type]}
+              </span>
+              <span className="font-extrabold text-[15px]" style={{ color: "var(--color-exam-header)" }}>
+                {DRILL_TYPE_LABELS[type]}
+              </span>
+            </div>
+            {type === "skills" ? (
+              <label className="text-sm flex items-center gap-2">
+                <span className="panel-label">Skill</span>
+                <select
+                  className="input text-[13px] py-1.5"
+                  value={skillFilter}
+                  onChange={(e) => {
+                    setSkillFilter(e.target.value);
+                    reset();
+                  }}
+                  aria-label="Skill"
+                >
+                  <option>All</option>
+                  {SKILL_DRILL_TYPES.map((s) => (
+                    <option key={s}>{s}</option>
+                  ))}
+                </select>
+              </label>
+            ) : labSkill ? (
+              <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+                {labSkill} · {skillProblem ? (stemIdx % skillPool.length) + 1 : 0} / {skillPool.length}
+              </span>
+            ) : type === "ekg" || type === "cxr" ? (
+              <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+                Study {imageProblem ? (stemIdx % imagePool.length) + 1 : 0} / {imagePool.length} · LITFL Top 100
+              </span>
+            ) : type === "scores" ? (
+              <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+                {scoreProblem ? `${scoreProblem.name} · ${(stemIdx % SCORE_DRILLS.length) + 1} / ${SCORE_DRILLS.length}` : "No scores yet"}
+              </span>
+            ) : (
+              <label className="text-sm flex items-center gap-2">
+                <span className="panel-label">Complaint</span>
+                <select
+                  className="input text-[13px] py-1.5"
+                  value={categoryName}
+                  onChange={(e) => {
+                    setCategoryName(e.target.value);
+                    reset();
+                  }}
+                  aria-label="Chief complaint"
+                >
+                  {CURRICULUM.map((c) => (
+                    <option key={c.category}>{c.category}</option>
+                  ))}
+                </select>
+              </label>
+            )}
+            <button className="btn ml-auto" onClick={nextProblem} title="Prefers a problem you haven't mastered yet">
+              ➜ {type === "skills" || labSkill ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : type === "scores" ? "Next score" : "Next rep"}
+            </button>
+          </div>
+
+          {/* Progress for this drill type + browse-all (revisit any problem) */}
+          <div className="card px-4 py-2.5 flex items-center gap-2 flex-wrap text-[13px]">
+            <span className="panel-label">Progress</span>
+            <span className="font-semibold" style={{ color: "var(--color-exam-muted)" }}>
+              Seen {summary.seen}/{summary.total} · {summary.mastered} mastered
+              {summary.needsWork ? ` · ${summary.needsWork} to review` : ""}
+              {summary.seen ? ` · avg ${summary.avgBestPct}%` : ""}
+            </span>
+            <SeenChip entry={activeProgress} />
+            <button className="btn btn-ghost ml-auto py-1 px-2.5 text-[12px]" onClick={() => setBrowsing((b) => !b)}>
+              {browsing ? "Hide list" : `📋 Browse all (${summary.total})`}
+            </button>
+          </div>
+          {browsing && (
+            <DrillBrowser type={type} progress={progress} currentId={activeId} onPick={(id) => goToProblem(type, id)} />
+          )}
+
+          {type === "differential" && (
+            <DifferentialDrill
+              key={categoryName}
+              category={category}
+              ddx={ddx}
+              setDdx={setDdx}
+              advanced={ddxAdvanced}
+              onToggleAdvanced={(v) => {
+                setDdxAdvanced(v);
+                // Re-open grading so the answer is re-scored against the new list.
+                setGraded(false);
               }}
-              aria-label="Skill"
-            >
-              <option>All</option>
-              {SKILL_DRILL_TYPES.map((s) => (
-                <option key={s}>{s}</option>
-              ))}
-            </select>
-          </label>
-        ) : labSkill ? (
-          <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
-            {labSkill} · {skillProblem ? (stemIdx % skillPool.length) + 1 : 0} / {skillPool.length}
-          </span>
-        ) : type === "ekg" || type === "cxr" ? (
-          <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
-            Study {imageProblem ? (stemIdx % imagePool.length) + 1 : 0} / {imagePool.length} · LITFL Top 100
-          </span>
-        ) : type === "scores" ? (
-          <span className="text-[13px] font-semibold" style={{ color: "var(--color-exam-muted)" }}>
-            {scoreProblem ? `${scoreProblem.name} · ${(stemIdx % SCORE_DRILLS.length) + 1} / ${SCORE_DRILLS.length}` : "No scores yet"}
-          </span>
-        ) : (
-          <label className="text-sm flex items-center gap-2">
-            <span className="panel-label">Complaint</span>
-            <select
-              className="input text-[13px] py-1.5"
-              value={categoryName}
-              onChange={(e) => {
-                setCategoryName(e.target.value);
-                reset();
-              }}
-              aria-label="Chief complaint"
-            >
-              {CURRICULUM.map((c) => (
-                <option key={c.category}>{c.category}</option>
-              ))}
-            </select>
-          </label>
-        )}
-        <button className="btn ml-auto" onClick={nextProblem} title="Prefers a problem you haven't mastered yet">
-          ➜ {type === "skills" || labSkill ? "Next problem" : type === "management" ? "Next case" : type === "ekg" || type === "cxr" ? "Next study" : type === "scores" ? "Next score" : "Next rep"}
-        </button>
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {type === "workup" && (
+            <WorkupDrill
+              key={`${categoryName}:${stemIdx}`}
+              category={category}
+              stem={stem}
+              workup={workup}
+              setWorkup={setWorkup}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {type === "management" && (
+            <ManagementDrill
+              key={`${categoryName}:${stemIdx}`}
+              problem={managementProblem}
+              answer={managementAnswer}
+              setAnswer={setManagementAnswer}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {(type === "skills" || labSkill) && (
+            <SkillDrill
+              key={`${type}:${skillFilter}:${stemIdx}`}
+              problem={skillProblem}
+              answer={skillAnswer}
+              setAnswer={setSkillAnswer}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {(type === "ekg" || type === "cxr") && (
+            <ImageReadDrill
+              key={`${type}:${stemIdx}`}
+              kind={type}
+              problem={imageProblem}
+              answer={imageAnswer}
+              setAnswer={setImageAnswer}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+          {type === "scores" && (
+            <ScoreDrill
+              key={`sc:${stemIdx}`}
+              problem={scoreProblem}
+              answer={scoreAnswer}
+              setAnswer={setScoreAnswer}
+              graded={graded}
+              onGrade={() => setGraded(true)}
+              onNew={nextProblem}
+              onRetry={retry}
+              onRecord={recordCurrent}
+              progressEntry={activeProgress}
+              onSetManual={setManualCurrent}
+            />
+          )}
+
+          <p className="hint text-center">
+            {llmEnabled
+              ? "Graded semantically by AI — use the framework/explanation to self-check anything it misses."
+              : "Graded by lenient keyword match — enable AI for semantic grading. A thorough answer phrased differently may not register every item; use the framework/explanation to self-check."}
+          </p>
+        </div>
       </div>
-
-      {/* Progress for this drill type + browse-all (revisit any problem) */}
-      <div className="card px-4 py-2.5 flex items-center gap-2 flex-wrap text-[13px]">
-        <span className="panel-label">Progress</span>
-        <span className="font-semibold" style={{ color: "var(--color-exam-muted)" }}>
-          Seen {summary.seen}/{summary.total} · {summary.mastered} mastered
-          {summary.needsWork ? ` · ${summary.needsWork} to review` : ""}
-          {summary.seen ? ` · avg ${summary.avgBestPct}%` : ""}
-        </span>
-        <SeenChip entry={activeProgress} />
-        <button className="btn btn-ghost ml-auto py-1 px-2.5 text-[12px]" onClick={() => setBrowsing((b) => !b)}>
-          {browsing ? "Hide list" : `📋 Browse all (${summary.total})`}
-        </button>
-      </div>
-      {browsing && (
-        <DrillBrowser type={type} progress={progress} currentId={activeId} onPick={(id) => goToProblem(type, id)} />
-      )}
-
-      {type === "differential" && (
-        <DifferentialDrill
-          key={categoryName}
-          category={category}
-          ddx={ddx}
-          setDdx={setDdx}
-          advanced={ddxAdvanced}
-          onToggleAdvanced={(v) => {
-            setDdxAdvanced(v);
-            // Re-open grading so the answer is re-scored against the new list.
-            setGraded(false);
-          }}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "workup" && (
-        <WorkupDrill
-          key={`${categoryName}:${stemIdx}`}
-          category={category}
-          stem={stem}
-          workup={workup}
-          setWorkup={setWorkup}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "management" && (
-        <ManagementDrill
-          key={`${categoryName}:${stemIdx}`}
-          problem={managementProblem}
-          answer={managementAnswer}
-          setAnswer={setManagementAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {(type === "skills" || labSkill) && (
-        <SkillDrill
-          key={`${type}:${skillFilter}:${stemIdx}`}
-          problem={skillProblem}
-          answer={skillAnswer}
-          setAnswer={setSkillAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {(type === "ekg" || type === "cxr") && (
-        <ImageReadDrill
-          key={`${type}:${stemIdx}`}
-          kind={type}
-          problem={imageProblem}
-          answer={imageAnswer}
-          setAnswer={setImageAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-      {type === "scores" && (
-        <ScoreDrill
-          key={`sc:${stemIdx}`}
-          problem={scoreProblem}
-          answer={scoreAnswer}
-          setAnswer={setScoreAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={retry}
-          onRecord={recordCurrent}
-          progressEntry={activeProgress}
-          onSetManual={setManualCurrent}
-        />
-      )}
-
-      <p className="hint text-center">
-        {llmEnabled
-          ? "Graded semantically by AI — use the framework/explanation to self-check anything it misses."
-          : "Graded by lenient keyword match — enable AI for semantic grading. A thorough answer phrased differently may not register every item; use the framework/explanation to self-check."}
-      </p>
     </div>
   );
 }

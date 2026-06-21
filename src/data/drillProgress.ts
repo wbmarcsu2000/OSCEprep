@@ -100,6 +100,33 @@ export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
   "lab-coags": "Coags",
 };
 
+/** Emoji marker per drill type — the single source for the drill-type rail (lab
+ *  emojis intentionally mirror LAB_TABS so the two never drift). */
+export const DRILL_TYPE_EMOJI: Record<DrillType, string> = {
+  differential: "🧠",
+  workup: "🧪",
+  management: "🩺",
+  ekg: "🫀",
+  cxr: "🩻",
+  scores: "🔢",
+  skills: "📐",
+  "lab-csf": "💧",
+  "lab-iron": "🩸",
+  "lab-lfts": "🟠",
+  "lab-hypona": "🧂",
+  "lab-synovial": "🦴",
+  "lab-tfts": "🦋",
+  "lab-ua": "🧫",
+  "lab-coags": "🩹",
+};
+
+/** Sectioned drill types for the side rail: the workflow frameworks vs the
+ *  per-bank lab-interpretation tabs. Order matches DRILL_TYPE_ORDER. */
+export const DRILL_TAB_GROUPS: { label: string; types: DrillType[] }[] = [
+  { label: "Frameworks", types: ["differential", "workup", "management", "ekg", "cxr", "scores", "skills"] },
+  { label: "Lab interpretation", types: LAB_TABS.map((l) => l.type) },
+];
+
 export function drillKey(type: DrillType, id: string): string {
   return `${type}:${id}`;
 }
