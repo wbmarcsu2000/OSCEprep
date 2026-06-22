@@ -60,7 +60,7 @@ let providerKind: ProviderKind | null;
 // (silent; DNT still wins; no-op without an analytics endpoint).
 if (llmEnabled) requireConsentForAi();
 
-export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills" | "neuro";
+export type View = "home" | "select" | "station" | "analytics" | "review" | "skills" | "drills" | "neuro" | "differentials";
 
 /** Last-chosen station mode, persisted so a chosen mode sticks. Defaults to
  *  Practice (the guided reveal+teach tutor) until the user explicitly picks
@@ -163,6 +163,7 @@ const VIEW_HASH: Record<View, string> = {
   home: "#/",
   select: "#/stations",
   drills: "#/drills",
+  differentials: "#/differentials",
   neuro: "#/neuro",
   skills: "#/skills",
   analytics: "#/performance",

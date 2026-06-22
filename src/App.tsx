@@ -8,6 +8,7 @@ import { Feedback, ReviewScreen } from "./ui/screens/Feedback";
 import { Analytics } from "./ui/screens/Analytics";
 import { Skills } from "./ui/screens/Skills";
 import { Drills } from "./ui/screens/Drills";
+import { Differentials } from "./ui/screens/Differentials";
 import { Neuro } from "./ui/screens/Neuro";
 import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
@@ -21,6 +22,7 @@ import { useMountNow } from "./ui/useMountNow";
 const NAV: { label: string; view: View }[] = [
   { label: "OSCE Cases", view: "select" },
   { label: "Drills", view: "drills" },
+  { label: "Differentials", view: "differentials" },
   { label: "Neuro", view: "neuro" },
   { label: "Skills", view: "skills" },
   { label: "Performance", view: "analytics" },
@@ -284,6 +286,7 @@ export default function App() {
         {view === "analytics" && <Analytics />}
         {view === "skills" && <Skills />}
         {view === "drills" && <Drills />}
+        {view === "differentials" && <Differentials />}
         {view === "neuro" && <Neuro />}
         {view === "review" && <ReviewScreen />}
         {inStation && engine.currentState === "CHART_REVIEW" && <ChartReview caseModel={caseModel} />}
