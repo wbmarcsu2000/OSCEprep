@@ -1188,6 +1188,207 @@ const RAW_CURRICULUM: RawCurriculum[] = [
       { label: "Calculators (MELD, Maddrey)", source: "MDCalc", url: MDCALC },
     ],
   },
+
+  // ----------------------------------------------------------------- Joint Pain
+  {
+    category: "Joint Pain",
+    framework:
+      "Two axes organize joint pain: (1) inflammatory vs non-inflammatory (morning stiffness >30-60 min, swelling/warmth, systemic features → inflammatory) and (2) the joint count/pattern — monoarticular vs oligo- vs polyarticular, symmetric vs asymmetric. The can't-miss is acute monoarthritis = septic arthritis until the tap proves otherwise.",
+    strategy:
+      "First decide inflammatory vs not and how many joints; an acute hot single joint is septic arthritis until arthrocentesis says otherwise.",
+    cantMiss: [
+      "Septic (bacterial) arthritis",
+      "Disseminated gonococcal infection",
+      "Crystal arthritis with concurrent joint infection",
+      "Systemic disease flare with organ involvement (lupus, vasculitis)",
+    ],
+    differential: [
+      { group: "Monoarticular — acute", items: ["Septic arthritis", "Gout", "Pseudogout (CPPD)", "Hemarthrosis / trauma"] },
+      { group: "Polyarticular — inflammatory", items: ["Rheumatoid arthritis", "Viral arthritis (parvovirus, hepatitis)", "Psoriatic / reactive arthritis", "SLE / connective tissue disease"] },
+      { group: "Non-inflammatory", items: ["Osteoarthritis", "Fibromyalgia", "Mechanical / overuse"] },
+    ],
+    differentialAdvanced: [
+      { group: "Monoarticular — acute", items: ["Septic arthritis", "Gout", "Pseudogout (CPPD)", "Hemarthrosis / trauma", "Gonococcal arthritis", "Lyme arthritis", "Avascular necrosis", "Reactive arthritis (early)"] },
+      { group: "Polyarticular — inflammatory", items: ["Rheumatoid arthritis", "Viral arthritis (parvovirus, hepatitis)", "Psoriatic / reactive arthritis", "SLE / connective tissue disease", "Spondyloarthritis (ankylosing)", "Polyarticular gout / CPPD", "Adult-onset Still's disease", "Vasculitis", "Sarcoid arthropathy", "Post-streptococcal / rheumatic fever"] },
+      { group: "Non-inflammatory", items: ["Osteoarthritis", "Fibromyalgia", "Mechanical / overuse", "Hypothyroid arthropathy", "Hemochromatosis", "Neuropathic (Charcot) joint"] },
+      { group: "Periarticular / referred", items: ["Bursitis / tendinitis", "Overlying cellulitis", "Referred pain (hip → knee)"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Inflammatory vs mechanical",
+        questions: [
+          "Morning stiffness duration (>30-60 min suggests inflammatory)",
+          "Swelling, warmth, redness; gel phenomenon after rest",
+          "Better with activity (inflammatory) or worse with use (mechanical)",
+        ],
+      },
+      {
+        theme: "Pattern & triggers",
+        questions: [
+          "Number and distribution of joints; symmetric or asymmetric",
+          "Fever, rash, recent GI/GU infection, tick exposure, sexual history",
+          "Prior gout, psoriasis, IBD, uveitis; family history",
+        ],
+      },
+    ],
+    examFocus: [
+      "Vitals incl. temperature (septic joint)",
+      "Effusion, warmth, erythema, and range of motion of the affected joint(s)",
+      "Skin (psoriasis, tophi, rash), nails, enthesitis/dactylitis",
+      "Survey other joints and the spine; signs of systemic disease",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "Arthrocentesis — synovial fluid cell count, crystals, Gram stain & culture", indication: "any acute monoarthritis — the key test" },
+        { test: "CBC, ESR, CRP", indication: "inflammation / infection" },
+        { test: "Serum urate", indication: "gout (often normal during an acute flare)" },
+        { test: "Blood cultures", indication: "suspected septic arthritis" },
+        { test: "RF, anti-CCP, ANA", indication: "suspected RA / connective tissue disease" },
+      ],
+      imaging: [
+        { test: "Plain radiographs of the joint", indication: "erosions, chondrocalcinosis, fracture, OA" },
+        { test: "MRI", indication: "osteomyelitis, avascular necrosis, occult fracture" },
+      ],
+    },
+    tools: [
+      "Synovial WBC: >50k → septic, 2-50k inflammatory, <2k non-inflammatory",
+      "Crystals: negatively birefringent needles = gout; positively birefringent rhomboids = CPPD",
+      "ACR/EULAR criteria (RA, gout)",
+    ],
+    practiceCases: [
+      {
+        vignette: "58 M with diabetes, 2 days of a hot, swollen, exquisitely painful right knee and fever 38.7 C; can barely move the joint.",
+        ddx: ["Septic arthritis", "Gout", "Pseudogout", "Reactive arthritis"],
+        workup: ["Arthrocentesis (cell count, crystals, Gram stain, culture)", "Blood cultures", "CBC, ESR, CRP", "Serum urate", "Knee radiograph"],
+        twist: "Synovial fluid WBC 80,000 with neutrophil predominance and Gram-positive cocci on Gram stain.",
+        updatedDdx: ["Bacterial (likely staphylococcal) septic arthritis"],
+        nextStep:
+          "Urgent orthopedics for joint washout/drainage; empiric IV vancomycin (add ceftriaxone or cefepime per risk); blood and joint cultures before antibiotics. Antibiotics alone are insufficient — drainage is definitive.",
+      },
+      {
+        vignette: "52 M with hypertension on a thiazide, sudden overnight pain, redness, and swelling of the first MTP joint.",
+        ddx: ["Gout", "Septic arthritis", "Pseudogout", "Cellulitis"],
+        workup: ["Arthrocentesis with crystal analysis", "Serum urate", "Joint radiograph", "CBC, CRP"],
+      },
+      {
+        vignette: "44 F with 8 weeks of symmetric pain and swelling of the MCPs/PIPs and wrists, with >1 h of morning stiffness.",
+        ddx: ["Rheumatoid arthritis", "Viral (parvovirus) arthritis", "SLE", "Psoriatic arthritis"],
+        workup: ["RF, anti-CCP", "ESR, CRP", "ANA", "Parvovirus serology", "Hand radiographs"],
+      },
+    ],
+    quickManagement: [
+      { scenario: "Acute hot monoarthritis", plan: "Arthrocentesis BEFORE antibiotics; if septic → urgent joint drainage/washout + empiric IV vancomycin (± gram-negative coverage). Never settle on gout/CPPD without excluding infection." },
+      { scenario: "Acute gout flare", plan: "NSAID, colchicine, or corticosteroid (intra-articular or oral). Do not start or stop urate-lowering therapy during the flare — but continue it if already established." },
+    ],
+    references: [
+      { label: "Septic arthritis (approach to monoarthritis)", source: "ACR / IDSA septic arthritis guidance" },
+      { label: "Gout management", source: "ACR 2020 Gout Guideline" },
+      { label: "Rheumatoid arthritis classification", source: "ACR/EULAR 2010 RA Criteria" },
+      { label: "Synovial fluid interpretation", source: "MGH Housestaff Manual — Arthritis" },
+    ],
+  },
+
+  // ------------------------------------------------------------------ Back Pain
+  {
+    category: "Back Pain",
+    framework:
+      "Triage back pain by red flags first (neuro-emergencies and systemic causes), then sort the rest into mechanical/degenerative vs inflammatory vs referred/visceral. Cauda equina, epidural abscess/cord compression, and aortic catastrophe drive immediate imaging.",
+    strategy:
+      "Screen for red flags (neuro deficit, fever/immunocompromise, cancer history, trauma, vascular risk); with none, most acute back pain is mechanical and self-limited — and needs no imaging.",
+    cantMiss: [
+      "Cauda equina syndrome",
+      "Spinal epidural abscess / vertebral osteomyelitis",
+      "Epidural metastasis / cord compression",
+      "Aortic aneurysm or dissection (referred)",
+      "Unstable vertebral fracture",
+    ],
+    differential: [
+      { group: "Mechanical / degenerative", items: ["Lumbar strain", "Degenerative disc disease / spondylosis", "Herniated disc with radiculopathy", "Spinal stenosis", "Vertebral compression fracture"] },
+      { group: "Inflammatory", items: ["Ankylosing spondylitis / axial spondyloarthritis", "Sacroiliitis"] },
+      { group: "Infection / malignancy (red flag)", items: ["Vertebral osteomyelitis / discitis", "Spinal epidural abscess", "Metastatic / primary spinal tumor", "Multiple myeloma"] },
+      { group: "Referred / visceral", items: ["Aortic aneurysm / dissection", "Pyelonephritis / nephrolithiasis", "Pancreatitis", "Pelvic / retroperitoneal process"] },
+    ],
+    differentialAdvanced: [
+      { group: "Mechanical / degenerative", items: ["Lumbar strain", "Degenerative disc disease / spondylosis", "Herniated disc with radiculopathy", "Spinal stenosis", "Vertebral compression fracture", "Spondylolisthesis", "Facet arthropathy", "Sacroiliac joint dysfunction"] },
+      { group: "Inflammatory", items: ["Ankylosing spondylitis / axial spondyloarthritis", "Sacroiliitis", "Reactive / psoriatic / IBD-associated spondyloarthritis", "DISH"] },
+      { group: "Infection / malignancy (red flag)", items: ["Vertebral osteomyelitis / discitis", "Spinal epidural abscess", "Metastatic / primary spinal tumor", "Multiple myeloma", "Tuberculous spondylitis (Pott disease)", "Lymphoma / leukemia"] },
+      { group: "Referred / visceral", items: ["Aortic aneurysm / dissection", "Pyelonephritis / nephrolithiasis", "Pancreatitis", "Pelvic / retroperitoneal process", "Endometriosis", "Posterior peptic ulcer", "Herpes zoster (pre-eruptive)"] },
+      { group: "Neurologic emergency", items: ["Cauda equina syndrome", "Conus medullaris syndrome", "Epidural cord compression"] },
+    ],
+    keyQuestions: [
+      {
+        theme: "Red flags",
+        questions: [
+          "Saddle anesthesia, urinary retention/incontinence, bowel changes, bilateral leg weakness (cauda equina)",
+          "Fever, IV drug use, immunocompromise, recent bacteremia/procedure (infection)",
+          "History of cancer, unexplained weight loss, night/rest pain, age >50 (malignancy)",
+          "Significant trauma, osteoporosis, chronic steroids (fracture); vascular risk + tearing pain (aorta)",
+        ],
+      },
+      {
+        theme: "Pain character",
+        questions: [
+          "Mechanical (worse with activity, better with rest) vs inflammatory (worse at rest, morning stiffness >30 min, improves with exercise, onset <40 y)",
+          "Radiation below the knee in a dermatomal pattern (radiculopathy)",
+          "Neurogenic claudication relieved by flexion/sitting (spinal stenosis)",
+        ],
+      },
+    ],
+    examFocus: [
+      "Vitals incl. temperature; focal spinal or CVA tenderness",
+      "Straight-leg raise; lower-limb motor, sensory, and reflex exam",
+      "Saddle sensation, anal tone, post-void residual if cauda equina suspected",
+      "Pulses and abdominal exam (AAA / visceral referral)",
+    ],
+    workupMenu: {
+      labs: [
+        { test: "ESR, CRP, CBC", indication: "suspected infection or malignancy (red flags)" },
+        { test: "Blood cultures", indication: "suspected vertebral osteomyelitis / epidural abscess" },
+        { test: "Urinalysis", indication: "renal/visceral cause (pyelonephritis, stone)" },
+        { test: "SPEP/UPEP, serum calcium", indication: "suspected myeloma in an older patient" },
+      ],
+      imaging: [
+        { test: "Urgent MRI of the spine (with contrast if infection/tumor)", indication: "red flags — cauda equina, epidural abscess, cord compression" },
+        { test: "Plain radiographs", indication: "fracture, alignment, chronic degenerative change" },
+        { test: "CT angiography of the aorta", indication: "suspected AAA / dissection" },
+      ],
+    },
+    tools: [
+      "Red-flag screen: neuro deficit, infection, cancer, fracture, vascular",
+      "Inflammatory back pain criteria (ASAS)",
+      "Straight-leg raise + focused neuro exam",
+    ],
+    practiceCases: [
+      {
+        vignette: "55 M with severe low back pain radiating down both legs, new urinary retention, and numbness around the perineum for 1 day.",
+        ddx: ["Cauda equina syndrome", "Large central disc herniation", "Epidural abscess", "Epidural metastasis"],
+        workup: ["Post-void residual / bladder scan", "Digital rectal exam (tone)", "Urgent MRI lumbosacral spine", "Neurosurgery consult"],
+        twist: "MRI shows a large central disc herniation compressing the cauda equina; post-void residual 400 mL.",
+        updatedDdx: ["Cauda equina syndrome from a central disc herniation"],
+        nextStep:
+          "Emergent neurosurgical decompression — outcomes depend on time to decompression; do not delay for further workup. IV dexamethasone if a compressive tumor is the cause.",
+      },
+      {
+        vignette: "62 M who injects drugs, 2 weeks of worsening focal thoracic back pain, fever, and now mild leg weakness.",
+        ddx: ["Spinal epidural abscess", "Vertebral osteomyelitis / discitis", "Metastatic cord compression", "Mechanical back pain"],
+        workup: ["ESR, CRP, CBC", "Blood cultures", "Urgent MRI spine with contrast", "Neurosurgery and ID consults"],
+        twist: "MRI shows an epidural collection with early cord compression; blood cultures grow S. aureus.",
+        updatedDdx: ["Spinal epidural abscess with early cord compression"],
+        nextStep:
+          "Emergent neurosurgical evaluation for decompression/drainage; empiric IV vancomycin plus a gram-negative agent (e.g., cefepime); blood cultures before antibiotics; serial neuro exams.",
+      },
+    ],
+    quickManagement: [
+      { scenario: "Acute low back pain without red flags", plan: "No imaging; stay active, NSAIDs/acetaminophen, reassurance — most resolve in 4-6 weeks. Image only with red flags or failure to improve." },
+      { scenario: "Cauda equina or epidural compression", plan: "Emergent MRI + neurosurgery; decompress urgently. For epidural abscess add empiric vancomycin + gram-negative coverage and draw blood cultures." },
+    ],
+    references: [
+      { label: "Low back pain — evaluation & imaging", source: "ACP Low Back Pain Guideline (Ann Intern Med 2017)" },
+      { label: "Cauda equina / red flags", source: "Standard neurosurgical guidance" },
+      { label: "Spinal epidural abscess / vertebral osteomyelitis", source: "IDSA native vertebral osteomyelitis guidance" },
+      { label: "Axial spondyloarthritis", source: "ASAS classification criteria" },
+    ],
+  },
 ];
 
 /**
@@ -1283,6 +1484,24 @@ const MANUAL_BY_CATEGORY: Record<string, { manual: ManualRef[]; pearlPages: numb
       { section: "MASLD / NAFLD", page: 92 },
     ],
     pearlPages: [89, 88],
+  },
+  "Joint Pain": {
+    manual: [
+      { section: "Approach to Rheumatic Disease", page: 172 },
+      { section: "Arthritis", page: 173 },
+      { section: "Septic Arthritis (Empiric Antibiotics)", page: 113 },
+      { section: "Rheumatologic Medications", page: 180 },
+    ],
+    pearlPages: [113, 173],
+  },
+  "Back Pain": {
+    manual: [
+      { section: "MSK Pain", page: 229 },
+      { section: "CNS Emergencies", page: 201 },
+      { section: "Osteomyelitis (Empiric Antibiotics)", page: 113 },
+      { section: "Aortic Disease", page: 35 },
+    ],
+    pearlPages: [229, 201],
   },
 };
 

@@ -4,7 +4,7 @@ import { HIGH_YIELD_DRILLS } from "../highYieldDrills";
 import { SCORE_DRILLS } from "../scoreDrills";
 import { EKG_DRILLS, CXR_DRILLS } from "../imageDrills";
 import { SKILL_DRILLS } from "../skillDrills";
-import { skillDrillId } from "../drillProgress";
+import { skillDrillId, drillCatalog } from "../drillProgress";
 
 describe("antibiotic drills", () => {
   it("each problem has a vignette, answer key, explanation, and category", () => {
@@ -80,5 +80,13 @@ describe("conduction-block EKG reads (LBBB / RBBB)", () => {
     const ekgNs = new Set(HIGH_YIELD_DRILLS.filter((p) => p.modality === "ekg").map((p) => p.ekgN));
     expect(ekgNs.has(101)).toBe(true);
     expect(ekgNs.has(102)).toBe(true);
+  });
+});
+
+describe("differential drill complaints", () => {
+  it("includes Joint Pain and Back Pain", () => {
+    const ids = new Set(drillCatalog("differential").map((it) => it.id));
+    expect(ids.has("Joint Pain")).toBe(true);
+    expect(ids.has("Back Pain")).toBe(true);
   });
 });

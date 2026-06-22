@@ -2320,6 +2320,63 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
       "section": "Tachyarrhythmias (Pre-excited AF / WPW)",
       "page": 39
     }
+  },
+  {
+    "caseId": "joint-01",
+    "category": "Joint Pain",
+    "diagnosis": "Septic arthritis",
+    "vignette": "58M with diabetes presents with 2 days of a hot, swollen, exquisitely tender right knee and fever; synovial fluid WBC is 80,000 with a neutrophil predominance and Gram-positive cocci.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Urgent joint drainage / washout (orthopedics)",
+      "Blood and synovial fluid cultures before antibiotics",
+      "Empiric IV vancomycin (MRSA coverage)",
+      "Add a gram-negative agent (ceftriaxone, or cefepime if Pseudomonas risk) per host",
+      "Serial joint exams and analgesia; tailor antibiotics to cultures"
+    ],
+    "unsafe": [
+      "Treating with antibiotics alone without joint drainage",
+      "Injecting intra-articular steroids into a possibly infected joint",
+      "Calling it gout without excluding infection"
+    ],
+    "disposition": "Admit",
+    "consults": [
+      "Orthopedics",
+      "Infectious Disease"
+    ],
+    "idealAnswer": "Aspirate and send synovial fluid (cell count, crystals, Gram stain, culture) and blood cultures before antibiotics. Start empiric IV vancomycin for MRSA, adding a gram-negative agent (ceftriaxone, or cefepime if Pseudomonas risk). Definitive treatment is urgent surgical joint drainage/washout — antibiotics alone are insufficient. Admit with orthopedics ± ID, perform serial joint exams, and narrow antibiotics to culture (typically 3-4 weeks total).",
+    "manual": {
+      "section": "Septic Arthritis (Empiric Antibiotics)",
+      "page": 113
+    }
+  },
+  {
+    "caseId": "back-01",
+    "category": "Back Pain",
+    "diagnosis": "Cauda equina syndrome",
+    "vignette": "55M with severe low back pain radiating down both legs, new urinary retention, saddle anesthesia, and bilateral leg weakness for one day.",
+    "prompt": "What is your management plan?",
+    "actions": [
+      "Emergent MRI of the lumbosacral spine",
+      "Stat neurosurgery consult for decompression",
+      "Check post-void residual / bladder scan and digital rectal tone",
+      "IV dexamethasone if a compressive malignancy is suspected",
+      "Do not delay decompression — outcomes are time-dependent"
+    ],
+    "unsafe": [
+      "Discharging as 'mechanical back pain'",
+      "Delaying MRI or neurosurgery for an outpatient workup",
+      "Relying on plain films to exclude it"
+    ],
+    "disposition": "Admit; emergent OR",
+    "consults": [
+      "Neurosurgery"
+    ],
+    "idealAnswer": "Recognize the cauda equina red flags (saddle anesthesia, urinary retention, bilateral leg weakness/areflexia) and obtain an emergent lumbosacral MRI with a stat neurosurgery consult for surgical decompression — outcomes depend on time to decompression. Check a post-void residual and rectal tone. Give IV dexamethasone if a compressive malignancy is the cause. This is a surgical emergency, not mechanical back pain.",
+    "manual": {
+      "section": "CNS Emergencies / MSK Pain",
+      "page": 201
+    }
   }
 ];
 
