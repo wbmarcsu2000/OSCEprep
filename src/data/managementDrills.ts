@@ -38,7 +38,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "actions": [
       "NPO and IV fluids",
       "Surgery consult for appendectomy",
-      "Broad-spectrum antibiotics",
+      "Ceftriaxone + metronidazole (enteric GNRs + anaerobes)",
       "Analgesia and antiemetics",
       "Serial abdominal exams"
     ],
@@ -63,7 +63,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "prompt": "What is your management plan?",
     "actions": [
       "NPO and IV fluids",
-      "Antibiotics",
+      "Ceftriaxone + metronidazole (or piperacillin-tazobactam if severe/nosocomial)",
       "Early laparoscopic cholecystectomy",
       "Surgery consult",
       "Analgesia"
@@ -140,7 +140,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "vignette": "58M presents with 3 days of constant left lower quadrant pain, low-grade fever, and a change in bowel habits.",
     "prompt": "What is your management plan?",
     "actions": [
-      "Antibiotics",
+      "Ceftriaxone + metronidazole (enteric GNRs + anaerobes)",
       "Bowel rest / diet advancement",
       "CT and drainage/surgery if complicated",
       "Analgesia",
@@ -166,7 +166,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "actions": [
       "Aggressive IV fluid resuscitation",
       "STAT surgery / vascular consult for revascularization",
-      "Broad-spectrum antibiotics",
+      "Piperacillin-tazobactam (bowel translocation coverage)",
       "Systemic anticoagulation (heparin)",
       "NPO and NG decompression",
       "CT angiography"
@@ -249,7 +249,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "actions": [
       "NPO, IV access, aggressive fluid resuscitation",
       "Urgent surgical consult for operative repair",
-      "Broad-spectrum IV antibiotics covering gut flora",
+      "Piperacillin-tazobactam (or ceftriaxone + metronidazole) for gut flora",
       "Nasogastric decompression and IV PPI",
       "Analgesia, antiemetics, type & screen, monitoring"
     ],
@@ -300,7 +300,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "vignette": "80F from a nursing facility is brought in with one day of acute confusion, decreased oral intake, and fever.",
     "prompt": "What is your management plan?",
     "actions": [
-      "Empiric broad-spectrum antibiotics",
+      "Ceftriaxone (cefepime or piperacillin-tazobactam if MDRO/Pseudomonas risk)",
       "IV crystalloid resuscitation",
       "Blood and urine cultures before antibiotics",
       "Norepinephrine first-line if MAP<65",
@@ -896,7 +896,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "vignette": "54M with a heavy alcohol binge presents with sudden, severe lower chest and epigastric pain that began immediately after a bout of forceful retching and vomiting 3 hours ago.",
     "prompt": "What is your management plan?",
     "actions": [
-      "Broad-spectrum IV antibiotics plus antifungal coverage",
+      "Piperacillin-tazobactam plus an antifungal (e.g., fluconazole) for mediastinitis",
       "STAT thoracic / general surgery consult for early operative repair",
       "Keep strictly NPO",
       "Aggressive IV fluid resuscitation (pressors if septic)",
@@ -978,7 +978,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "actions": [
       "Volume and electrolyte repletion",
       "Avoid antibiotics if STEC suspected (HUS risk)",
-      "Selective empiric antibiotics for severe/high-risk",
+      "Azithromycin or ciprofloxacin only for severe/high-risk (avoid if STEC suspected)",
       "Antimotility only if no fever/blood",
       "Stool studies if severe/bloody/high-risk"
     ],
@@ -1054,7 +1054,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "prompt": "What is your management plan?",
     "actions": [
       "Supportive care (bowel rest, IV fluids)",
-      "Broad-spectrum antibiotics",
+      "Ceftriaxone + metronidazole (translocating gut flora)",
       "Optimize perfusion / stop vasoconstrictors",
       "Surgery consult + CT if peritonitis/gangrene",
       "Serial exams and lactate"
@@ -1186,7 +1186,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "actions": [
       "Bronchodilators (albuterol + ipratropium)",
       "Systemic corticosteroids",
-      "Antibiotics if increased sputum/purulence",
+      "Azithromycin or doxycycline (or amox-clav) if increased sputum purulence",
       "Controlled O2 to SpO2 88-92%",
       "NIV (BiPAP) if hypercapnic failure"
     ],
@@ -1208,7 +1208,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "vignette": "55M presents with 3 days of fever, productive cough, right-sided pleuritic chest pain, and increasing breathlessness.",
     "prompt": "What is your management plan?",
     "actions": [
-      "Empiric antibiotics",
+      "Ceftriaxone + azithromycin (or levofloxacin monotherapy) for inpatient CAP",
       "Broaden to vanc+cefepime if MRSA/PsA risk",
       "Cultures / MRSA swab to de-escalate",
       "Supplemental oxygen",
@@ -1397,7 +1397,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "prompt": "What is your management plan?",
     "actions": [
       "Urine and blood cultures",
-      "Empiric IV antibiotics",
+      "IV ceftriaxone (cefepime if Pseudomonas concern; carbapenem if ESBL risk)",
       "IV fluids",
       "Admit if septic/complicated",
       "De-escalate by culture; 7-14 day course",
@@ -1421,7 +1421,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "vignette": "60M presents with 2 days of an expanding red, warm, painful area on the lower left leg, with fever.",
     "prompt": "What is your management plan?",
     "actions": [
-      "Antibiotics appropriate to purulence",
+      "Cefazolin/cephalexin if non-purulent (strep); add vancomycin + I&D if purulent (MRSA)",
       "Incision & drainage of abscess",
       "Mark borders and elevate limb",
       "Treat predisposing factor (tinea/edema)",
@@ -1473,7 +1473,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "vignette": "74F is brought in with 3 days of fever, productive cough, and breathlessness, and new confusion noted by family today.",
     "prompt": "What is your management plan?",
     "actions": [
-      "Empiric antibiotics",
+      "Ceftriaxone + azithromycin (or levofloxacin monotherapy)",
       "Broaden to vanc+cefepime if MRSA/PsA risk",
       "Cultures / MRSA swab to de-escalate",
       "Supplemental oxygen",
@@ -1690,7 +1690,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "prompt": "What is your management plan?",
     "actions": [
       "NPO and IV fluids",
-      "Broad-spectrum antibiotics",
+      "Ceftriaxone + metronidazole (or piperacillin-tazobactam if severe)",
       "Urgent ERCP for decompression",
       "Percutaneous drainage if ERCP not feasible",
       "Interval cholecystectomy",
@@ -2123,7 +2123,7 @@ export const MANAGEMENT_DRILLS: ManagementDrillProblem[] = [
     "actions": [
       "Urgent hematology/oncology referral for risk stratification (IPSS-R) and disease-directed therapy (hypomethylating agent; transplant candidacy)",
       "Transfusion support with an ischemia-adjusted threshold (RBCs for symptomatic/ischemic anemia; platelets for severe thrombocytopenia or bleeding)",
-      "Treat any fever as a neutropenic emergency (cultures + empiric broad-spectrum antibiotics)",
+      "Treat any fever as a neutropenic emergency (cultures + empiric cefepime within 1 h)",
       "Reconcile meds — stop marrow-suppressive agents (e.g. trimethoprim-sulfamethoxazole); reassess antiplatelets given thrombocytopenia",
       "Supportive care: iron-overload monitoring/chelation in chronically transfused patients, folate, growth factors where appropriate",
       "Admit with hematology co-management; bleeding precautions; prognosis/goals-of-care discussion"
