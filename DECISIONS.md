@@ -388,3 +388,24 @@ case id/category/difficulty, so the dashboard cost grows with attempts, not libr
     talks + MGH PDF deep-links (differential→framework, workup→work-up menu,
     revised→narrowing chalk talk, management→pearls+manual). Strict OSCE is
     unchanged (timed; answers only at feedback). 176 tests.
+48. **Round 11 — ClerkTools rebrand, Question Bank, clerkship navigation.**
+    Renamed the app OSCEPREP → "ClerkTools" in the UI (the GitHub repo + deploy
+    URL stay OSCEprep). Added a Question Bank (`src/ui/screens/Qbank.tsx`, view
+    `mcq`): 512 single-best-answer MCQs in `src/data/shelfMcq.ts`, generated from
+    a high-yield IM shelf review and adversarially fact-checked question-by-
+    question (per-system generate → gap-fill → verify workflows; every keyed
+    answer, distractor, and explanation checked). The quiz shows one item at a
+    time with instant feedback + explanation, filters by system and all/unseen/
+    missed, shuffles questions AND options at runtime (the generators bias the
+    key toward option A; the shuffle hides it), and persists per-question
+    progress (`osce.mcq.v1`). The item topic is revealed only AFTER answering —
+    it names the diagnosis and would otherwise give away the key.
+    Navigation was restructured around **clerkships** so the app scales as
+    rotations are added: `src/ui/clerkships.ts` (`CLERKSHIPS`) is the single
+    source of truth. The header is two tiers — clerkship tabs (IM, Neuro) over a
+    sub-nav of the active clerkship's tools — and the home page groups its cards
+    by clerkship. IM owns the full toolkit; Neuro is its own clerkship.
+    `clerkshipForView` maps a view to its clerkship. To add a rotation, append
+    one `CLERKSHIPS` entry; to add a tool, register its view in store.ts +
+    App.tsx then list it under a clerkship (see the doc comment in
+    clerkships.ts). 259 tests.

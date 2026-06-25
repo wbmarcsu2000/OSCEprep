@@ -2,10 +2,32 @@ import type { View } from "./store";
 
 /**
  * Clerkship structure for ClerkTools. The app is organized by clerkship (the
- * top-level tabs); each clerkship owns a set of tools (the sub-nav and the home
- * cards). Internal Medicine holds the full toolkit; Neurology is its own
- * clerkship. New clerkships are added by appending to CLERKSHIPS — the header
- * tabs, sub-nav, and home page all derive from this list.
+ * top-level header tabs); each clerkship owns a set of tools (the tool sub-nav
+ * and the home-page cards). Internal Medicine holds the full toolkit; Neurology
+ * is its own clerkship. The header tabs, the sub-nav, and the home page all
+ * derive from the CLERKSHIPS list below — it is the single source of truth.
+ *
+ * ─────────────────────────────────────────────────────────────────────────────
+ * ADDING A CLERKSHIP (e.g., Surgery, Pediatrics, OB/GYN)
+ *   Append one entry to CLERKSHIPS:
+ *     { id: "surg", short: "Surgery", full: "Surgery", tools: [ …tools… ] }
+ *   That's all the navigation needs — the tab, sub-nav, and a home section
+ *   appear automatically. Each tool's `view` must be a registered view (below).
+ *
+ * ADDING A TOOL (a new screen)
+ *   1. Build the screen component in src/ui/screens/.
+ *   2. Register its view in src/ui/store.ts: add the name to the `View` union
+ *      AND a "#/route" entry to VIEW_HASH (the Record is exhaustive — TS fails
+ *      if you miss it).
+ *   3. Render it in src/App.tsx:  {view === "myview" && <MyScreen />}
+ *   4. Add a tool entry { view: "myview", label, icon, grad, blurb } to the
+ *      target clerkship's `tools` here.
+ *   Reusing an existing view across clerkships is fine — just list it in both.
+ *
+ * `grad` is a gradient token from src/index.css (--grad-primary/teal/sky/coral/
+ * sun/pink/header). `icon` is a single emoji. `clerkshipForView` maps a view
+ * back to its owning clerkship (drives the active tab + sub-nav visibility).
+ * ─────────────────────────────────────────────────────────────────────────────
  */
 
 export interface ClerkshipTool {
