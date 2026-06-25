@@ -38,7 +38,16 @@ const NAV: { label: string; view: View }[] = [
 function HeaderNav({ view }: { view: View }) {
   const setView = useAppStore((s) => s.setView);
   return (
-    <nav className="flex items-center gap-0.5 sm:gap-1 overflow-x-auto scroll-quiet" aria-label="Sections">
+    <nav
+      className="flex flex-1 min-w-0 items-center gap-0.5 sm:gap-1 overflow-x-auto scroll-quiet"
+      aria-label="Sections"
+      style={{
+        // Fade the right edge so a scrolled-off tab reads as "more this way"
+        // rather than an abrupt cut against the stats chip.
+        maskImage: "linear-gradient(to right, #000 calc(100% - 20px), transparent)",
+        WebkitMaskImage: "linear-gradient(to right, #000 calc(100% - 20px), transparent)",
+      }}
+    >
       {NAV.map((it) => {
         const active = view === it.view;
         return (
@@ -46,7 +55,7 @@ function HeaderNav({ view }: { view: View }) {
             key={it.label}
             onClick={() => setView(it.view)}
             aria-current={active ? "page" : undefined}
-            className="text-[12.5px] font-bold rounded-full px-2.5 sm:px-3.5 py-1.5 whitespace-nowrap transition-colors"
+            className="text-[12.5px] font-bold rounded-full px-2.5 sm:px-3.5 py-1.5 whitespace-nowrap shrink-0 transition-colors"
             style={{
               background: active ? "rgba(255,255,255,0.22)" : "transparent",
               color: active ? "#fff" : "rgba(255,255,255,0.72)",
@@ -75,7 +84,7 @@ function HeaderStats({ view }: { view: View }) {
   }, [view]);
   return (
     <button
-      className="hidden sm:flex items-center gap-2 rounded-full px-3 py-1 text-[12px] font-bold transition-colors hover:bg-white/10"
+      className="hidden sm:flex shrink-0 items-center gap-2 rounded-full px-3 py-1 text-[12px] font-bold transition-colors hover:bg-white/10"
       style={{ background: "rgba(255,255,255,0.1)" }}
       onClick={() => setView("analytics")}
       title={`Level ${level.level} · ${level.xp} XP — view performance`}
@@ -196,91 +205,89 @@ export default function App() {
   return (
     <div className="h-full flex flex-col">
       <header
-        className="px-5 py-2.5 flex items-center justify-between text-white shrink-0"
+        className="px-5 py-2.5 flex items-center gap-3 sm:gap-4 text-white shrink-0"
         style={{ background: "var(--grad-header)" }}
       >
-        <div className="flex items-center gap-3.5 min-w-0">
-          <button
-            className="flex items-center gap-3.5 min-w-0 text-left disabled:cursor-default"
-            onClick={() => setView("home")}
-            disabled={!!inStation}
-            title={inStation ? undefined : "Home"}
+        {/* Brand — fixed; never compressed by the nav. */}
+        <button
+          className="flex items-center gap-3 text-left disabled:cursor-default shrink-0"
+          onClick={() => setView("home")}
+          disabled={!!inStation}
+          title={inStation ? undefined : "Home"}
+        >
+          <span
+            className="flex h-7 w-7 items-center justify-center rounded-lg text-[13px] font-extrabold shrink-0"
+            style={{ background: "var(--grad-primary)", boxShadow: "0 2px 8px rgba(0,0,0,0.25)" }}
+            aria-hidden
           >
-            <span
-              className="flex h-7 w-7 items-center justify-center rounded-lg text-[13px] font-extrabold shrink-0"
-              style={{ background: "var(--grad-primary)", boxShadow: "0 2px 8px rgba(0,0,0,0.25)" }}
-              aria-hidden
-            >
-              ✚
-            </span>
-            <div className="leading-tight min-w-0">
-              <div className="font-extrabold text-[13.5px] tracking-wide">ClerkTools</div>
-              <div className="text-[11px] opacity-60">Internal Medicine Clerkship</div>
-            </div>
-          </button>
-          {inStation && (
-            <span
-              className="ml-3 pl-4 text-[13px] opacity-85 truncate hidden sm:inline"
-              style={{ borderLeft: "1px solid rgba(255,255,255,0.18)" }}
-            >
-              {caseModel.chart.ageSex} — {caseModel.chart.cc}
-            </span>
-          )}
-        </div>
-        {/* Persistent section nav (outside a station). */}
-        {!inStation && (
-          <div className="flex items-center gap-2 sm:gap-3">
-            <HeaderNav view={view} />
-            <HeaderStats view={view} />
+            ✚
+          </span>
+          <div className="leading-tight">
+            <div className="font-extrabold text-[13.5px] tracking-wide">ClerkTools</div>
+            <div className="text-[11px] opacity-60 whitespace-nowrap">Internal Medicine Clerkship</div>
           </div>
+        </button>
+        {inStation && (
+          <span
+            className="pl-4 text-[13px] opacity-85 truncate hidden sm:inline min-w-0"
+            style={{ borderLeft: "1px solid rgba(255,255,255,0.18)" }}
+          >
+            {caseModel.chart.ageSex} — {caseModel.chart.cc}
+          </span>
         )}
-        {inStation &&
-          (engine.currentState === "FEEDBACK" ? (
-            <button
-              className="text-[12.5px] font-bold rounded-full px-3 py-1.5 transition-colors"
-              style={{ background: "rgba(255,255,255,0.12)" }}
-              onClick={exitToSelect}
-            >
-              Exit case
-            </button>
-          ) : confirmExit ? (
-            <span
-              className="flex items-center gap-2 text-[12.5px]"
-              role="alertdialog"
-              aria-label="Confirm exit"
-              onKeyDown={(e) => {
-                if (e.key === "Escape") setConfirmExit(false);
-              }}
-            >
-              <span className="opacity-80">Exit and lose progress?</span>
+        {/* Section nav (outside a station) — fills the middle and scrolls if needed. */}
+        {!inStation && <HeaderNav view={view} />}
+        {!inStation && <HeaderStats view={view} />}
+        {inStation && (
+          <div className="ml-auto shrink-0 flex items-center">
+            {engine.currentState === "FEEDBACK" ? (
               <button
-                className="font-bold rounded-full px-2.5 py-1.5"
-                style={{ background: "var(--color-exam-danger-deep)" }}
-                onClick={() => {
-                  setConfirmExit(false);
-                  exitToSelect();
+                className="text-[12.5px] font-bold rounded-full px-3 py-1.5 transition-colors"
+                style={{ background: "rgba(255,255,255,0.12)" }}
+                onClick={exitToSelect}
+              >
+                Exit case
+              </button>
+            ) : confirmExit ? (
+              <span
+                className="flex items-center gap-2 text-[12.5px]"
+                role="alertdialog"
+                aria-label="Confirm exit"
+                onKeyDown={(e) => {
+                  if (e.key === "Escape") setConfirmExit(false);
                 }}
               >
-                Exit
-              </button>
+                <span className="opacity-80">Exit and lose progress?</span>
+                <button
+                  className="font-bold rounded-full px-2.5 py-1.5"
+                  style={{ background: "var(--color-exam-danger-deep)" }}
+                  onClick={() => {
+                    setConfirmExit(false);
+                    exitToSelect();
+                  }}
+                >
+                  Exit
+                </button>
+                <button
+                  autoFocus
+                  className="font-bold rounded-full px-2.5 py-1.5"
+                  style={{ background: "rgba(255,255,255,0.12)" }}
+                  onClick={() => setConfirmExit(false)}
+                >
+                  Stay
+                </button>
+              </span>
+            ) : (
               <button
-                autoFocus
-                className="font-bold rounded-full px-2.5 py-1.5"
+                className="text-[12.5px] font-bold rounded-full px-3 py-1.5 transition-colors"
                 style={{ background: "rgba(255,255,255,0.12)" }}
-                onClick={() => setConfirmExit(false)}
+                onClick={() => setConfirmExit(true)}
               >
-                Stay
+                Exit case
               </button>
-            </span>
-          ) : (
-            <button
-              className="text-[12.5px] font-bold rounded-full px-3 py-1.5 transition-colors"
-              style={{ background: "rgba(255,255,255,0.12)" }}
-              onClick={() => setConfirmExit(true)}
-            >
-              Exit case
-            </button>
-          ))}
+            )}
+          </div>
+        )}
       </header>
 
       {!inStation && <ResumeBanner />}
