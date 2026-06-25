@@ -214,7 +214,7 @@ export default function App() {
               ✚
             </span>
             <div className="leading-tight min-w-0">
-              <div className="font-extrabold text-[13.5px] tracking-wide">OSCEPREP</div>
+              <div className="font-extrabold text-[13.5px] tracking-wide">ClerkTools</div>
               <div className="text-[11px] opacity-60">Internal Medicine Clerkship</div>
             </div>
           </button>

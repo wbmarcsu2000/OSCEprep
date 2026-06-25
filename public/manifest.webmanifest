@@ -1,7 +1,7 @@
 {
-  "name": "OSCEprep \u2014 IM OSCE Simulator",
-  "short_name": "OSCEprep",
-  "description": "Practice Internal Medicine clerkship OSCE cases end-to-end, with feedback, teaching, and drills. For medical education only.",
+  "name": "ClerkTools \u2014 IM Clerkship Toolkit",
+  "short_name": "ClerkTools",
+  "description": "An Internal Medicine clerkship toolkit: OSCE cases, drills, shelf MCQs, differentials, work-up & management, and skill references \u2014 with feedback and teaching. For medical education only.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

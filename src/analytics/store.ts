@@ -159,7 +159,7 @@ export function exportAllData(): string {
 export function importAllData(json: string): number {
   let imported = 0;
   const parsed: unknown = JSON.parse(json); // caller handles throw
-  if (!parsed || typeof parsed !== "object") throw new Error("Not an OSCEprep export");
+  if (!parsed || typeof parsed !== "object") throw new Error("Not a ClerkTools export");
   const doc = parsed as Record<string, unknown>;
   for (const key of ALL_KEYS) {
     const value = doc[key];

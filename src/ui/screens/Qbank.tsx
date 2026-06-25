@@ -324,9 +324,10 @@ export function Qbank() {
       </div>
 
       <div className="card p-5 space-y-4">
+        {/* Only the system is shown up front — the topic names the diagnosis and
+            would give away the answer, so it's revealed in the feedback below. */}
         <div className="flex items-center gap-2 flex-wrap">
           <span className="chip chip-accent">{current.system}</span>
-          <span className="chip">{current.topic}</span>
         </div>
         <p className="text-[15.5px] font-semibold leading-relaxed">{current.stem}</p>
 
@@ -362,8 +363,11 @@ export function Qbank() {
               chosen === current.answerIndex ? "var(--color-exam-ok-soft)" : "var(--color-exam-danger-soft)",
           }}
         >
-          <div className="panel-label">
-            {chosen === current.answerIndex ? "✓ Correct" : "✗ Incorrect"} — {LETTERS[current.answerIndex]} is right
+          <div className="flex items-center justify-between gap-2 flex-wrap">
+            <div className="panel-label">
+              {chosen === current.answerIndex ? "✓ Correct" : "✗ Incorrect"} — {LETTERS[current.answerIndex]} is right
+            </div>
+            <span className="chip">{current.topic}</span>
           </div>
           <p className="text-[13.5px] leading-relaxed">{current.explanation}</p>
         </div>

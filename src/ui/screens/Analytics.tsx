@@ -115,7 +115,7 @@ function DataManagement() {
       setImportStatus({ kind: "ok", text: `Imported ${n} data set${n === 1 ? "" : "s"} — reloading…` });
       location.reload();
     } catch (e) {
-      const msg = e instanceof Error ? e.message : "not a valid OSCEprep export";
+      const msg = e instanceof Error ? e.message : "not a valid ClerkTools export";
       setImportStatus({ kind: "error", text: `Import failed: ${msg}` });
     }
   };
