@@ -4,26 +4,15 @@ import { SHELF_MCQS } from "../../data/shelfMcq";
 import { loadAttempts } from "../../analytics/store";
 import { levelFor, totalXp, streakDays } from "../gamification";
 import { useMountNow } from "../useMountNow";
-import { useAppStore, type View } from "../store";
+import { useAppStore } from "../store";
+import { CLERKSHIPS } from "../clerkships";
 
 /**
- * Landing page for ClerkTools. The header nav doubles as the toolkit, so the
- * home page lays the same tools out as a grid of cards — each with a one-line
- * description — so a student can scan what's here and pick one. AI setup stays
- * a single optional bar below; the rest is a disclaimer.
+ * Landing page for ClerkTools. Tools are grouped by clerkship — the same
+ * structure as the header tabs — so the page scales as clerkships are added.
+ * Internal Medicine carries the full toolkit; Neurology is its own clerkship.
+ * AI setup stays a single optional bar below; the rest is a disclaimer.
  */
-
-interface Tool {
-  view: View;
-  name: string;
-  icon: string;
-  /** Background gradient token for the icon tile. */
-  grad: string;
-  /** One-sentence description of the tool. */
-  blurb: string;
-  /** Optional small status line (counts, progress). */
-  meta?: string;
-}
 
 export function Home() {
   const setView = useAppStore((s) => s.setView);
@@ -40,81 +29,15 @@ export function Home() {
     };
   }, [now]);
 
-  const tools: Tool[] = [
-    {
-      view: "select",
-      name: "OSCE Cases",
-      icon: "🩺",
-      grad: "var(--grad-primary)",
-      blurb:
-        "Work a full clinical case end to end — interview and examine the patient, then commit to a differential, work-up, EKG/CXR reads, and management, scored by domain with teaching.",
-      meta: `${manifest.cases.length} cases · ${stats.done} done`,
-    },
-    {
-      view: "drills",
-      name: "Drills",
-      icon: "🎯",
-      grad: "var(--grad-teal)",
-      blurb:
-        "Short, repeatable reps on one piece at a time — differentials, work-ups, management, EKG/CXR, scores, and lab interpretation — with instant feedback.",
-    },
-    {
-      view: "differentials",
-      name: "Differentials",
-      icon: "🌳",
-      grad: "var(--grad-sky)",
-      blurb: "The differential for every chief complaint, organized into buckets, with a Core ⟷ Advanced toggle.",
-    },
-    {
-      view: "management",
-      name: "Work-up & Mgmt",
-      icon: "🧪",
-      grad: "var(--grad-coral)",
-      blurb:
-        "Per complaint, the work-up to order and the first-line management of its key diagnoses — hidden behind a reveal so you commit before looking.",
-    },
-    {
-      view: "shelf",
-      name: "Shelf Study",
-      icon: "📕",
-      grad: "var(--grad-sun)",
-      blurb:
-        "Think-first cards for high-yield IM conditions — presentation, diagnosis, treatment, risk factors, and the key drug side effects.",
-    },
-    {
-      view: "mcq",
-      name: "Question Bank",
-      icon: "❓",
-      grad: "var(--grad-pink)",
-      blurb:
-        "Single-best-answer MCQs with instant feedback and explanations — cram by system and redo the ones you miss.",
-      meta: `${SHELF_MCQS.length} questions`,
-    },
-    {
-      view: "neuro",
-      name: "Neuro",
-      icon: "🧠",
-      grad: "var(--grad-sky)",
-      blurb: "Localize the lesion with focused neurology exam sessions and high-yield neuro cases.",
-    },
-    {
-      view: "skills",
-      name: "Skills",
-      icon: "📖",
-      grad: "var(--grad-teal)",
-      blurb: "Systematic reads and lab interpretation — EKG, CXR, ABG/acid–base, PFTs, and ascitic & pleural fluid.",
-    },
-    {
-      view: "analytics",
-      name: "Performance",
-      icon: "📊",
-      grad: "var(--grad-header)",
-      blurb: "Track your scores, streaks, mastery, and progress across every tool.",
-    },
-  ];
+  // Small status line for a couple of tools.
+  const metaFor = (view: string): string | undefined => {
+    if (view === "select") return `${manifest.cases.length} cases · ${stats.done} done`;
+    if (view === "mcq") return `${SHELF_MCQS.length} questions`;
+    return undefined;
+  };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-7">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-8">
       {/* Header */}
       <header className="flex items-end justify-between gap-4 flex-wrap">
         <div className="space-y-1">
@@ -125,7 +48,7 @@ export function Home() {
             ClerkTools
           </h1>
           <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            Your Internal Medicine clerkship toolkit — pick a tool to start.
+            Your clerkship toolkit — pick a clerkship, then a tool.
           </p>
         </div>
         {stats.streak > 0 && (
@@ -135,31 +58,50 @@ export function Home() {
         )}
       </header>
 
-      {/* The toolkit */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
-        {tools.map((t) => (
-          <button
-            key={t.view}
-            onClick={() => setView(t.view)}
-            className="card p-5 flex flex-col gap-2.5 text-left transition-transform hover:-translate-y-0.5"
-          >
-            <span className="icon-tile" style={{ background: t.grad }} aria-hidden>
-              {t.icon}
-            </span>
-            <h2 className="text-[17px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-              {t.name}
+      {/* One section per clerkship */}
+      {CLERKSHIPS.map((clerk) => (
+        <section key={clerk.id} className="space-y-3">
+          <div className="flex items-center gap-3">
+            <h2 className="text-[15px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
+              {clerk.full}
             </h2>
-            <p className="text-[13px] leading-relaxed flex-1" style={{ color: "var(--color-exam-muted)" }}>
-              {t.blurb}
-            </p>
-            {t.meta && (
-              <span className="text-[12px] font-semibold" style={{ color: "var(--color-exam-faint)" }}>
-                {t.meta}
-              </span>
-            )}
-          </button>
-        ))}
-      </div>
+            <span className="h-px flex-1" style={{ background: "var(--color-exam-border)" }} />
+            <span className="panel-label">
+              {clerk.tools.length} tool{clerk.tools.length === 1 ? "" : "s"}
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+            {clerk.tools.map((t) => {
+              const meta = metaFor(t.view);
+              return (
+                <button
+                  key={t.view}
+                  onClick={() => setView(t.view)}
+                  className="card p-5 flex flex-col gap-2.5 text-left transition-transform hover:-translate-y-0.5"
+                >
+                  <span className="icon-tile" style={{ background: t.grad }} aria-hidden>
+                    {t.icon}
+                  </span>
+                  <h3
+                    className="text-[17px] font-extrabold tracking-tight"
+                    style={{ color: "var(--color-exam-header)" }}
+                  >
+                    {t.label}
+                  </h3>
+                  <p className="text-[13px] leading-relaxed flex-1" style={{ color: "var(--color-exam-muted)" }}>
+                    {t.blurb}
+                  </p>
+                  {meta && (
+                    <span className="text-[12px] font-semibold" style={{ color: "var(--color-exam-faint)" }}>
+                      {meta}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </section>
+      ))}
 
       {/* Turn AI on — optional; every tool works fully without it. */}
       <button

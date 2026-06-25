@@ -21,51 +21,71 @@ import { initTelemetry, consentGateRequired } from "./analytics/telemetry";
 import { ConsentGate } from "./ui/components/ConsentGate";
 import { levelFor, totalXp, streakDays } from "./ui/gamification";
 import { useMountNow } from "./ui/useMountNow";
+import { CLERKSHIPS, clerkshipForView, type Clerkship } from "./ui/clerkships";
 
-const NAV: { label: string; view: View }[] = [
-  { label: "OSCE Cases", view: "select" },
-  { label: "Drills", view: "drills" },
-  { label: "Differentials", view: "differentials" },
-  { label: "Work-up & Mgmt", view: "management" },
-  { label: "Shelf", view: "shelf" },
-  { label: "Questions", view: "mcq" },
-  { label: "Neuro", view: "neuro" },
-  { label: "Skills", view: "skills" },
-  { label: "Performance", view: "analytics" },
-];
-
-/** Persistent section nav shown in the header outside a station. */
-function HeaderNav({ view }: { view: View }) {
+/** Top-level clerkship tabs (IM, Neuro, …) in the header outside a station. */
+function ClerkshipTabs({ view }: { view: View }) {
   const setView = useAppStore((s) => s.setView);
+  const active = clerkshipForView(view);
   return (
     <nav
-      className="flex flex-1 min-w-0 items-center gap-0.5 sm:gap-1 overflow-x-auto scroll-quiet"
-      aria-label="Sections"
+      className="flex flex-1 min-w-0 items-center gap-1 overflow-x-auto scroll-quiet"
+      aria-label="Clerkships"
       style={{
-        // Fade the right edge so a scrolled-off tab reads as "more this way"
-        // rather than an abrupt cut against the stats chip.
+        // Fade the right edge so scrolled-off clerkships read as "more this way".
         maskImage: "linear-gradient(to right, #000 calc(100% - 20px), transparent)",
         WebkitMaskImage: "linear-gradient(to right, #000 calc(100% - 20px), transparent)",
       }}
     >
-      {NAV.map((it) => {
-        const active = view === it.view;
+      {CLERKSHIPS.map((c) => {
+        const isActive = active?.id === c.id;
         return (
           <button
-            key={it.label}
-            onClick={() => setView(it.view)}
-            aria-current={active ? "page" : undefined}
-            className="text-[12.5px] font-bold rounded-full px-2.5 sm:px-3.5 py-1.5 whitespace-nowrap shrink-0 transition-colors"
+            key={c.id}
+            onClick={() => setView(c.tools[0].view)}
+            aria-current={isActive ? "page" : undefined}
+            className="text-[13px] font-extrabold rounded-full px-4 py-1.5 whitespace-nowrap shrink-0 transition-colors"
             style={{
-              background: active ? "rgba(255,255,255,0.22)" : "transparent",
-              color: active ? "#fff" : "rgba(255,255,255,0.72)",
+              background: isActive ? "rgba(255,255,255,0.22)" : "transparent",
+              color: isActive ? "#fff" : "rgba(255,255,255,0.72)",
             }}
           >
-            {it.label}
+            {c.short}
           </button>
         );
       })}
     </nav>
+  );
+}
+
+/** Sub-nav of the active clerkship's tools — a slim bar beneath the header. */
+function ToolSubnav({ clerkship, view }: { clerkship: Clerkship; view: View }) {
+  const setView = useAppStore((s) => s.setView);
+  return (
+    <div
+      className="shrink-0 border-b"
+      style={{ background: "var(--color-exam-panel)", borderColor: "var(--color-exam-border)" }}
+    >
+      <nav className="px-4 sm:px-5 flex items-center gap-1 overflow-x-auto scroll-quiet" aria-label={`${clerkship.full} tools`}>
+        {clerkship.tools.map((t) => {
+          const isActive = view === t.view;
+          return (
+            <button
+              key={t.view}
+              onClick={() => setView(t.view)}
+              aria-current={isActive ? "page" : undefined}
+              className="text-[13px] font-bold px-3 py-2.5 -mb-px whitespace-nowrap shrink-0 border-b-2 transition-colors"
+              style={{
+                borderColor: isActive ? "var(--color-exam-accent)" : "transparent",
+                color: isActive ? "var(--color-exam-accent-deep)" : "var(--color-exam-muted)",
+              }}
+            >
+              {t.label}
+            </button>
+          );
+        })}
+      </nav>
+    </div>
   );
 }
 
@@ -152,6 +172,9 @@ export default function App() {
 
   const inStation = view === "station" && caseModel && engine;
   const stationLive = !!inStation && engine.currentState !== "FEEDBACK";
+  // The clerkship that owns the current view (undefined on home/review) drives
+  // the active header tab and whether the tool sub-nav shows.
+  const activeClerkship = clerkshipForView(view);
 
   // Restore an interrupted session (as an offer) and honor a deep link.
   useEffect(() => {
@@ -224,7 +247,9 @@ export default function App() {
           </span>
           <div className="leading-tight">
             <div className="font-extrabold text-[13.5px] tracking-wide">ClerkTools</div>
-            <div className="text-[11px] opacity-60 whitespace-nowrap">Internal Medicine Clerkship</div>
+            <div className="text-[11px] opacity-60 whitespace-nowrap">
+              {activeClerkship ? activeClerkship.full : "Clerkship toolkit"}
+            </div>
           </div>
         </button>
         {inStation && (
@@ -236,7 +261,7 @@ export default function App() {
           </span>
         )}
         {/* Section nav (outside a station) — fills the middle and scrolls if needed. */}
-        {!inStation && <HeaderNav view={view} />}
+        {!inStation && <ClerkshipTabs view={view} />}
         {!inStation && <HeaderStats view={view} />}
         {inStation && (
           <div className="ml-auto shrink-0 flex items-center">
@@ -290,6 +315,7 @@ export default function App() {
         )}
       </header>
 
+      {!inStation && activeClerkship && <ToolSubnav clerkship={activeClerkship} view={view} />}
       {!inStation && <ResumeBanner />}
       {inStation && <PhaseHeader caseModel={caseModel} engine={engine} />}
 
