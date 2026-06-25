@@ -10,7 +10,7 @@ import {
 import { DOMAIN_LABELS } from "../../engine/types";
 import { MANEUVER_BY_ID } from "../../engine/maneuvers";
 import { manifest } from "../../data/loader";
-import { badges, levelFor, recommendNext, streakDays, streakAtRisk, totalXp } from "../gamification";
+import { recommendNext } from "../gamification";
 import {
   loadDrillProgress,
   drillCatalog,
@@ -21,7 +21,6 @@ import {
   DRILL_TYPE_ORDER,
   DRILL_TYPE_LABELS,
 } from "../../data/drillProgress";
-import { useMountNow } from "../useMountNow";
 import { useAppStore } from "../store";
 
 /** Station titles by case id — caseIds are internal, titles are what users know. */
@@ -268,13 +267,6 @@ export function Analytics() {
   const startCase = useAppStore((s) => s.startCase);
   const preferredMode = useAppStore((s) => s.preferredMode);
   const attempts = useMemo(() => loadAttempts(), []);
-  const now = useMountNow();
-
-  const level = levelFor(totalXp(attempts));
-  const streak = streakDays(attempts, now);
-  const atRisk = streakAtRisk(attempts, now);
-  const allBadges = badges(attempts, manifest.cases, now);
-  const earnedCount = allBadges.filter((b) => b.earned).length;
   const rec = useMemo(() => recommendNext(attempts, manifest.cases), [attempts]);
 
   const domainAverages = useMemo(() => {
@@ -311,46 +303,6 @@ export function Analytics() {
         </button>
       </div>
 
-      {/* Level / streak / XP hero */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div className="card relative overflow-hidden p-4 text-white" style={{ background: "var(--grad-header)", border: "none" }}>
-          <div className="text-[11px] font-extrabold uppercase tracking-widest text-white/70">Level {level.level}</div>
-          <div className="text-[24px] font-extrabold leading-tight">{level.title}</div>
-          <div className="mt-2 h-2 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.25)" }}>
-            <div
-              className="h-full rounded-full"
-              style={{ width: `${Math.round(level.progress * 100)}%`, background: "#fff", transition: "width 700ms ease" }}
-            />
-          </div>
-          <div className="mt-1.5 text-[12px] font-bold text-white/85 tabular-nums">
-            {level.xp} XP{level.toNext > 0 ? ` · ${level.toNext - level.intoLevel} to ${level.level + 1}` : " · max level"}
-          </div>
-        </div>
-        <div className="card p-4 flex items-center gap-4">
-          <span className={`text-4xl ${streak > 0 ? "flame" : "opacity-40"}`} aria-hidden>🔥</span>
-          <div>
-            <div className="text-[24px] font-extrabold leading-tight tabular-nums">{streak}</div>
-            <div className="text-[12.5px] font-bold" style={{ color: "var(--color-exam-muted)" }}>
-              day streak
-            </div>
-            <div className="hint">
-              {atRisk ? "Practice today to keep it alive!" : streak > 0 ? "Going strong" : "Complete a case to start one"}
-            </div>
-          </div>
-        </div>
-        <div className="card p-4 flex items-center gap-4">
-          <span className="text-4xl" aria-hidden>🏆</span>
-          <div>
-            <div className="text-[24px] font-extrabold leading-tight tabular-nums">
-              {earnedCount} / {allBadges.length}
-            </div>
-            <div className="text-[12.5px] font-bold" style={{ color: "var(--color-exam-muted)" }}>
-              badges earned
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* What to practice next, straight from the attempt history */}
       {rec && (
         <div
@@ -369,22 +321,6 @@ export function Analytics() {
           </button>
         </div>
       )}
-
-      {/* Badge wall */}
-      <div className="card p-4">
-        <div className="panel-label mb-3">Badges</div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 gap-2">
-          {allBadges.map((b) => (
-            <div key={b.id} className={`badge-tile ${b.earned ? "earned" : "locked"}`} title={b.desc}>
-              <span className="text-2xl" aria-hidden>{b.emoji}</span>
-              <span className="text-[11px] font-extrabold leading-tight">{b.name}</span>
-              <span className="text-[9.5px] leading-tight" style={{ color: "var(--color-exam-muted)" }}>
-                {b.desc}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* Score over time */}
       <div className="card p-4">

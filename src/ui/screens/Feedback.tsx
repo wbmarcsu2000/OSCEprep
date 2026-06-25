@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import type { CreditedItem, Mode, ScoreReport, SectionResult } from "../../engine/types";
 import { Scorecard } from "../components/Scorecard";
-import { Confetti } from "../components/Confetti";
 import { CategoryApproach } from "../components/CategoryApproach";
 import { MANEUVER_BY_ID } from "../../engine/maneuvers";
 import { itemMatches } from "../../engine/textMatch";
@@ -11,8 +10,6 @@ import { manifest } from "../../data/loader";
 import { mghPdfUrl } from "../../data/mghManual";
 import { TEACHIM_BY_CASE } from "../../data/teachim";
 import { loadAttempts } from "../../analytics/store";
-import { newlyEarnedBadges, streakDays, xpForAttempt, type Badge } from "../gamification";
-import { useMountNow } from "../useMountNow";
 import { useAppStore } from "../store";
 
 interface BreadthCoverage {
@@ -269,22 +266,19 @@ interface HeroTone {
   /** Foreground for EVERY text node in the hero. White only on the deep-violet
    *  gradient; the light teal/sun/sky gradients take dark ink (WCAG body text). */
   fg: string;
-  /** Pill background behind XP/streak/badge chips, tuned per gradient. */
-  chipBg: string;
   emoji: string;
   headline: string;
-  confetti: boolean;
 }
 
-/** Band-toned celebration: every score gets energy, only good scores get confetti. */
+/** Band-toned header: the gradient + headline reflect the score band. */
 function heroToneFor(overall: number): HeroTone {
   if (overall >= 85)
-    return { grad: "var(--grad-header)", fg: "#fff", chipBg: "rgba(255,255,255,0.2)", emoji: "🏆", headline: "Outstanding case!", confetti: true };
+    return { grad: "var(--grad-header)", fg: "#fff", emoji: "🏆", headline: "Outstanding case!" };
   if (overall >= 70)
-    return { grad: "var(--grad-teal)", fg: "#073f37", chipBg: "rgba(255,255,255,0.45)", emoji: "🎉", headline: "Nice work!", confetti: true };
+    return { grad: "var(--grad-teal)", fg: "#073f37", emoji: "🎉", headline: "Nice work!" };
   if (overall >= 55)
-    return { grad: "var(--grad-sun)", fg: "#4a2d00", chipBg: "rgba(255,255,255,0.45)", emoji: "💪", headline: "Solid effort — keep building", confetti: false };
-  return { grad: "var(--grad-sky)", fg: "#0b2e55", chipBg: "rgba(255,255,255,0.45)", emoji: "🌱", headline: "Growth round — the misses below are the lesson", confetti: false };
+    return { grad: "var(--grad-sun)", fg: "#4a2d00", emoji: "💪", headline: "Solid effort — keep building" };
+  return { grad: "var(--grad-sky)", fg: "#0b2e55", emoji: "🌱", headline: "Growth round — the misses below are the lesson" };
 }
 
 function CelebrationHero({ data }: { data: FeedbackData }) {
@@ -301,18 +295,6 @@ function CelebrationHero({ data }: { data: FeedbackData }) {
     color: tone.fg,
   };
 
-  // The just-recorded attempt is the last one; derive XP/streak/badges from it.
-  const now = useMountNow();
-  const { xp, streak, fresh } = useMemo((): { xp: number; streak: number; fresh: Badge[] } => {
-    const attempts = loadAttempts();
-    return {
-      xp: xpForAttempt({ overall: report.overall, criticalMissCount: report.criticalMisses.length }),
-      streak: streakDays(attempts, now),
-      fresh: newlyEarnedBadges(attempts, manifest.cases, now),
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   const randomNext = () => {
     const done = new Set(loadAttempts().map((a) => a.caseId));
     const unattempted = manifest.cases.filter((c) => !done.has(c.id)).map((c) => c.id);
@@ -325,7 +307,6 @@ function CelebrationHero({ data }: { data: FeedbackData }) {
       className="card relative overflow-hidden p-6 pop-in"
       style={{ background: tone.grad, border: "none", color: tone.fg }}
     >
-      {tone.confetti && <Confetti />}
       <div className="relative flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
         <div className="space-y-1 min-w-0">
           <div className="text-[12px] font-extrabold uppercase tracking-widest">
@@ -337,26 +318,6 @@ function CelebrationHero({ data }: { data: FeedbackData }) {
           <p className="text-[13.5px]">
             {data.title} — final diagnosis: <span className="font-bold">{data.diagnosis}</span>
           </p>
-          <div className="flex items-center gap-2 pt-1.5 flex-wrap">
-            <span className="rounded-full px-3 py-1 text-[12.5px] font-extrabold" style={{ background: tone.chipBg }}>
-              +{xp} XP
-            </span>
-            {streak > 0 && (
-              <span className="rounded-full px-3 py-1 text-[12.5px] font-extrabold" style={{ background: tone.chipBg }}>
-                <span className="flame inline-block" aria-hidden>🔥</span> day {streak}
-              </span>
-            )}
-            {fresh.map((b) => (
-              <span
-                key={b.id}
-                className="rounded-full px-3 py-1 text-[12.5px] font-extrabold pop-in"
-                style={{ background: tone.chipBg }}
-                title={b.desc}
-              >
-                {b.emoji} {b.name} unlocked!
-              </span>
-            ))}
-          </div>
         </div>
         <div className="flex gap-2 shrink-0 flex-wrap">
           <button

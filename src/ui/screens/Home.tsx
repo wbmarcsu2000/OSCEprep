@@ -2,8 +2,6 @@ import { useMemo } from "react";
 import { manifest } from "../../data/loader";
 import { SHELF_MCQS } from "../../data/shelfMcq";
 import { loadAttempts } from "../../analytics/store";
-import { levelFor, totalXp, streakDays } from "../gamification";
-import { useMountNow } from "../useMountNow";
 import { useAppStore } from "../store";
 import { CLERKSHIPS } from "../clerkships";
 
@@ -19,19 +17,11 @@ export function Home() {
   const showEnableAi = useAppStore((s) => s.showEnableAi);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
 
-  const now = useMountNow();
-  const stats = useMemo(() => {
-    const attempts = loadAttempts();
-    return {
-      done: new Set(attempts.map((a) => a.caseId)).size,
-      streak: streakDays(attempts, now),
-      level: levelFor(totalXp(attempts)),
-    };
-  }, [now]);
+  const done = useMemo(() => new Set(loadAttempts().map((a) => a.caseId)).size, []);
 
   // Small status line for a couple of tools.
   const metaFor = (view: string): string | undefined => {
-    if (view === "select") return `${manifest.cases.length} cases · ${stats.done} done`;
+    if (view === "select") return `${manifest.cases.length} cases · ${done} done`;
     if (view === "mcq") return `${SHELF_MCQS.length} questions`;
     return undefined;
   };
@@ -39,23 +29,16 @@ export function Home() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-8">
       {/* Header */}
-      <header className="flex items-end justify-between gap-4 flex-wrap">
-        <div className="space-y-1">
-          <h1
-            className="text-[26px] sm:text-[32px] font-extrabold tracking-tight leading-tight"
-            style={{ color: "var(--color-exam-header)" }}
-          >
-            ClerkTools
-          </h1>
-          <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            Your clerkship toolkit — pick a clerkship, then a tool.
-          </p>
-        </div>
-        {stats.streak > 0 && (
-          <div className="chip chip-accent" style={{ textTransform: "none", letterSpacing: "normal" }}>
-            🔥 {stats.streak}-day streak · Level {stats.level.level}
-          </div>
-        )}
+      <header className="space-y-1">
+        <h1
+          className="text-[26px] sm:text-[32px] font-extrabold tracking-tight leading-tight"
+          style={{ color: "var(--color-exam-header)" }}
+        >
+          ClerkTools
+        </h1>
+        <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
+          Your clerkship toolkit — pick a clerkship, then a tool.
+        </p>
       </header>
 
       {/* One section per clerkship */}

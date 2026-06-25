@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAppStore, applyHash, type View } from "./ui/store";
 import { CaseSelect } from "./ui/screens/CaseSelect";
 import { ChartReview } from "./ui/screens/ChartReview";
@@ -16,11 +16,8 @@ import { Neuro } from "./ui/screens/Neuro";
 import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
-import { loadAttempts } from "./analytics/store";
 import { initTelemetry, consentGateRequired } from "./analytics/telemetry";
 import { ConsentGate } from "./ui/components/ConsentGate";
-import { levelFor, totalXp, streakDays } from "./ui/gamification";
-import { useMountNow } from "./ui/useMountNow";
 import { CLERKSHIPS, clerkshipForView, type Clerkship } from "./ui/clerkships";
 
 /** Top-level clerkship tabs (IM, Neuro, …) in the header outside a station. */
@@ -86,34 +83,6 @@ function ToolSubnav({ clerkship, view }: { clerkship: Clerkship; view: View }) {
         })}
       </nav>
     </div>
-  );
-}
-
-/** Streak + level at a glance, persistent in the header outside a station. */
-function HeaderStats({ view }: { view: View }) {
-  const setView = useAppStore((s) => s.setView);
-  const now = useMountNow();
-  // Re-read whenever the view changes — attempts only change inside a station.
-  const { streak, level } = useMemo(() => {
-    const attempts = loadAttempts();
-    return {
-      streak: streakDays(attempts, now),
-      level: levelFor(totalXp(attempts)),
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [view]);
-  return (
-    <button
-      className="hidden sm:flex shrink-0 items-center gap-2 rounded-full px-3 py-1 text-[12px] font-bold transition-colors hover:bg-white/10"
-      style={{ background: "rgba(255,255,255,0.1)" }}
-      onClick={() => setView("analytics")}
-      title={`Level ${level.level} · ${level.xp} XP — view performance`}
-    >
-      <span className={streak > 0 ? "flame" : "opacity-50"} aria-hidden>🔥</span>
-      <span className="tabular-nums">{streak}</span>
-      <span className="opacity-40">·</span>
-      <span className="text-white/90">Lv {level.level} {level.title}</span>
-    </button>
   );
 }
 
@@ -245,12 +214,7 @@ export default function App() {
           >
             ✚
           </span>
-          <div className="leading-tight">
-            <div className="font-extrabold text-[13.5px] tracking-wide">ClerkTools</div>
-            <div className="text-[11px] opacity-60 whitespace-nowrap">
-              {activeClerkship ? activeClerkship.full : "Clerkship toolkit"}
-            </div>
-          </div>
+          <div className="font-extrabold text-[15px] tracking-wide">ClerkTools</div>
         </button>
         {inStation && (
           <span
@@ -262,7 +226,6 @@ export default function App() {
         )}
         {/* Section nav (outside a station) — fills the middle and scrolls if needed. */}
         {!inStation && <ClerkshipTabs view={view} />}
-        {!inStation && <HeaderStats view={view} />}
         {inStation && (
           <div className="ml-auto shrink-0 flex items-center">
             {engine.currentState === "FEEDBACK" ? (
