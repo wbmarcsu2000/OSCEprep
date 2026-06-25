@@ -11,6 +11,7 @@ import { Drills } from "./ui/screens/Drills";
 import { Differentials } from "./ui/screens/Differentials";
 import { WorkupManagement } from "./ui/screens/WorkupManagement";
 import { Shelf } from "./ui/screens/Shelf";
+import { Qbank } from "./ui/screens/Qbank";
 import { Neuro } from "./ui/screens/Neuro";
 import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
@@ -27,6 +28,7 @@ const NAV: { label: string; view: View }[] = [
   { label: "Differentials", view: "differentials" },
   { label: "Work-up & Mgmt", view: "management" },
   { label: "Shelf", view: "shelf" },
+  { label: "Questions", view: "mcq" },
   { label: "Neuro", view: "neuro" },
   { label: "Skills", view: "skills" },
   { label: "Performance", view: "analytics" },
@@ -293,6 +295,7 @@ export default function App() {
         {view === "differentials" && <Differentials />}
         {view === "management" && <WorkupManagement />}
         {view === "shelf" && <Shelf />}
+        {view === "mcq" && <Qbank />}
         {view === "neuro" && <Neuro />}
         {view === "review" && <ReviewScreen />}
         {inStation && engine.currentState === "CHART_REVIEW" && <ChartReview caseModel={caseModel} />}
