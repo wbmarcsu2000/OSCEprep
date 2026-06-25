@@ -392,21 +392,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "cardiology-24",
     system: "Cardiology",
-    topic: "Constrictive pericarditis",
-    stem: "A 49-year-old man with a history of treated tuberculosis presents with dyspnea and peripheral edema. Examination shows a positive Kussmaul sign, and imaging reveals pericardial calcifications. Which of the following is the most appropriate management?",
-    options: [
-      "Pericardiectomy plus diuretics",
-      "NSAIDs with colchicine",
-      "Urgent hemodialysis",
-      "Pericardiocentesis",
-      "Lifelong anticoagulation",
-    ],
-    answerIndex: 0,
-    explanation: "A history of TB, pericardial calcifications, and a positive Kussmaul sign indicate constrictive pericarditis, definitively treated with pericardiectomy plus diuretics for symptom relief. Anti-inflammatory agents do not relieve the fixed constriction.",
-  },
-  {
-    id: "cardiology-25",
-    system: "Cardiology",
     topic: "Post-MI pericarditis",
     stem: "A 66-year-old man develops sharp pleuritic chest pain with a friction rub 1 day after a myocardial infarction. Which of the following is the most appropriate management?",
     options: [
@@ -420,7 +405,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pericarditis occurring within a day of MI (peri-infarction pericarditis) is treated with acetaminophen and high-dose aspirin; non-aspirin NSAIDs are avoided because they may impair myocardial healing. This distinguishes it from idiopathic and Dressler pericarditis, which use NSAIDs/colchicine.",
   },
   {
-    id: "cardiology-26",
+    id: "cardiology-25",
     system: "Cardiology",
     topic: "Chronic HFrEF mortality benefit",
     stem: "A 60-year-old man has chronic heart failure with an ejection fraction of 30%. Which of the following combinations of medications has been shown to reduce mortality in his condition?",
@@ -435,7 +420,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic HFrEF management uses the ABCs that reduce mortality: ARNI/ACEi/ARB, Beta-blockers, mineraloCorticoid receptor antagonists, and SGLT2 inhibitors. Loop diuretics relieve symptoms but do not reduce mortality, and calcium channel blockers/digoxin are not part of the mortality-reducing regimen.",
   },
   {
-    id: "cardiology-27",
+    id: "cardiology-26",
     system: "Cardiology",
     topic: "Acute HFrEF management",
     stem: "A 68-year-old man with known systolic heart failure presents with orthopnea, bilateral pulmonary crackles, and bilateral leg edema. He is dyspneic with an oxygen saturation of 89%. Which of the following is contraindicated in this acute decompensated setting?",
@@ -450,22 +435,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute decompensated heart failure is managed with the LMNOP approach (loop diuretics, modify meds, nitrates, oxygen, position); beta-blockers are contraindicated in the acute decompensated state because their negative inotropy can worsen congestion. They are part of chronic, not acute, management.",
   },
   {
-    id: "cardiology-28",
-    system: "Cardiology",
-    topic: "Causes of HFrEF",
-    stem: "A 55-year-old man is found to have an ejection fraction of 35% with eccentric ventricular hypertrophy and volume overload on imaging. Which of the following is the most likely underlying cause of his heart failure?",
-    options: [
-      "Ischemic heart disease",
-      "Uncontrolled hypertension",
-      "Obesity with a sedentary lifestyle",
-      "Restrictive cardiomyopathy",
-      "Acromegaly with diastolic dysfunction",
-    ],
-    answerIndex: 0,
-    explanation: "Systolic heart failure (HFrEF, EF less than 55%) results from eccentric hypertrophy with volume overload; the leading causes are ischemic heart disease (CAD/MI) and dilated cardiomyopathy. Uncontrolled HTN, obesity, restrictive cardiomyopathy, and acromegaly cause diastolic (HFpEF) failure from concentric hypertrophy and pressure overload.",
-  },
-  {
-    id: "cardiology-29",
+    id: "cardiology-27",
     system: "Cardiology",
     topic: "Causes of HFrEF",
     stem: "A 55-year-old man is found to have an ejection fraction of 35% with eccentric ventricular hypertrophy and volume overload on imaging. Which of the following is the most likely underlying cause of his heart failure?",
@@ -480,7 +450,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Systolic heart failure (HFrEF, EF less than 55%) results from eccentric hypertrophy with volume overload; the leading causes are ischemic heart disease (CAD/MI) and dilated cardiomyopathy. Uncontrolled hypertension, obesity, restrictive cardiomyopathy, and acromegaly instead cause diastolic (HFpEF) failure via concentric hypertrophy and pressure overload, so they do not fit this eccentric, volume-overloaded, reduced-EF pattern.",
   },
   {
-    id: "cardiology-30",
+    id: "cardiology-28",
     system: "Cardiology",
     topic: "Chronic HFpEF management",
     stem: "A 72-year-old woman with long-standing hypertension and obesity is found to have heart failure with an ejection fraction of 60% and concentric left ventricular hypertrophy. In addition to loop diuretics and blood pressure control, which of the following medication classes has been shown to reduce heart failure hospitalizations in this condition?",
@@ -495,7 +465,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is classic heart failure with preserved ejection fraction (HFpEF): elderly hypertensive, obese patient with normal EF and concentric LVH from pressure overload. Among the listed options, only SGLT2 inhibitors have been shown to reduce heart failure hospitalizations in HFpEF, and they are recommended alongside loop diuretics, antihypertensives, weight loss, and cardiac rehabilitation. Beta-blockers and digoxin are central to HFrEF management and have no proven hospitalization or mortality benefit in HFpEF; nondihydropyridine calcium channel blockers and class III antiarrhythmics are used for rate/rhythm control of arrhythmias, not for reducing HFpEF hospitalizations.",
   },
   {
-    id: "cardiology-31",
+    id: "cardiology-29",
     system: "Cardiology",
     topic: "Causes of HFpEF",
     stem: "A 70-year-old woman has dyspnea on exertion with an ejection fraction of 62% and concentric left ventricular hypertrophy. Which of the following is the most likely contributing cause of her heart failure?",
@@ -510,7 +480,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "HFpEF arises from concentric hypertrophy and pressure overload; recognized causes include uncontrolled HTN, obesity, atrial fibrillation, comorbidities like diabetes, restrictive cardiomyopathy, and acromegaly. Prior MI and dilated cardiomyopathy cause systolic (HFrEF) failure, not preserved-EF failure.",
   },
   {
-    id: "cardiology-32",
+    id: "cardiology-30",
     system: "Cardiology",
     topic: "Unstable organized arrhythmia",
     stem: "A 64-year-old woman presents with palpitations and a regular narrow-complex tachycardia. Her blood pressure is 72/40 mm Hg, she is confused, and her skin is cool and clammy. There is a palpable pulse. Which of the following is the most appropriate immediate management?",
@@ -525,7 +495,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An unstable patient with an organized rhythm and a pulse requires synchronized cardioversion. Defibrillation (unsynchronized) is reserved for disorganized or pulseless rhythms, and CPR with epinephrine is for a patient with no pulse and organized electrical activity (PEA).",
   },
   {
-    id: "cardiology-33",
+    id: "cardiology-31",
     system: "Cardiology",
     topic: "Stable SVT management",
     stem: "A 28-year-old woman presents with a sudden-onset regular narrow-complex tachycardia at 180/min. She is hemodynamically stable, and the rhythm is not consistent with atrial fibrillation, flutter, or WPW. Which of the following is the most appropriate initial management?",
@@ -540,7 +510,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For most stable SVTs (not WPW, a-fib, or flutter), first-line therapy is vagal maneuvers (e.g., carotid massage) followed by adenosine, an AV nodal blocker. Synchronized cardioversion is reserved for unstable patients.",
   },
   {
-    id: "cardiology-34",
+    id: "cardiology-32",
     system: "Cardiology",
     topic: "WPW management",
     stem: "A 24-year-old man with Wolff-Parkinson-White syndrome presents with a stable wide-complex tachycardia and irregular rhythm. Which of the following is the most appropriate management?",
@@ -555,22 +525,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In WPW with a tachyarrhythmia, AV nodal blockers (adenosine, calcium channel blockers, digoxin, beta-blockers) are contraindicated because they can promote conduction down the accessory pathway and precipitate ventricular fibrillation. The correct agents are procainamide or ibutilide.",
   },
   {
-    id: "cardiology-35",
-    system: "Cardiology",
-    topic: "Stable SVT management",
-    stem: "A 28-year-old woman presents with a sudden-onset regular narrow-complex tachycardia at 180/min. She is hemodynamically stable, and the rhythm is not consistent with atrial fibrillation, flutter, or WPW. Which of the following is the most appropriate initial management?",
-    options: [
-      "Vagal maneuvers followed by IV adenosine",
-      "Immediate synchronized cardioversion",
-      "IV procainamide",
-      "IV diltiazem infusion for rate control",
-      "Anticoagulation for 3 weeks before treatment",
-    ],
-    answerIndex: 0,
-    explanation: "For most stable SVTs (not WPW, a-fib, or flutter), first-line therapy is vagal maneuvers (e.g., carotid massage) followed by adenosine, an AV nodal blocker. Synchronized cardioversion is reserved for unstable patients.",
-  },
-  {
-    id: "cardiology-36",
+    id: "cardiology-33",
     system: "Cardiology",
     topic: "A-fib cardioversion safety",
     stem: "A 65-year-old man with atrial fibrillation that has been present for 4 days is hemodynamically stable and wishes to undergo cardioversion to restore sinus rhythm. Which of the following is the most appropriate step before elective cardioversion?",
@@ -585,22 +540,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "When atrial fibrillation has been present for more than 48 hours and the patient is stable and desires cardioversion, a TEE to exclude left atrial thrombus or 3+ weeks of anticoagulation is required first to prevent thromboembolism. Immediate cardioversion would risk dislodging a thrombus and causing stroke.",
   },
   {
-    id: "cardiology-37",
-    system: "Cardiology",
-    topic: "WPW management",
-    stem: "A 24-year-old man with Wolff-Parkinson-White syndrome presents with a stable wide-complex tachycardia and irregular rhythm. Which of the following is the most appropriate management?",
-    options: [
-      "Procainamide or ibutilide",
-      "IV adenosine",
-      "IV diltiazem",
-      "Digoxin",
-      "Metoprolol",
-    ],
-    answerIndex: 0,
-    explanation: "In WPW with a tachyarrhythmia, AV nodal blockers (adenosine, calcium channel blockers, digoxin, beta-blockers) are contraindicated because they can promote conduction down the accessory pathway and precipitate ventricular fibrillation. The correct agents are procainamide or ibutilide.",
-  },
-  {
-    id: "cardiology-38",
+    id: "cardiology-34",
     system: "Cardiology",
     topic: "Mobitz I AV block",
     stem: "A 68-year-old asymptomatic man has an ECG showing progressive PR-interval prolongation until a QRS complex is dropped, then the cycle repeats. His heart rate is 62/min and he feels well. Which of the following is the most appropriate management?",
@@ -615,7 +555,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This describes Mobitz type I (Wenckebach) second-degree AV block, which requires no treatment when asymptomatic. Permanent pacemakers are indicated for Mobitz type II, third-degree AV block, and sick sinus syndrome.",
   },
   {
-    id: "cardiology-39",
+    id: "cardiology-35",
     system: "Cardiology",
     topic: "Mobitz II pacemaker",
     stem: "A 72-year-old woman is found to have intermittent non-conducted P waves with an otherwise constant PR interval on her ECG, consistent with Mobitz type II second-degree AV block. She is currently hemodynamically stable. Which of the following is the most appropriate definitive management?",
@@ -630,7 +570,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Mobitz type II AV block, like third-degree AV block and sick sinus syndrome, requires a permanent pacemaker once the patient is stabilized because of the high risk of progression to complete heart block. Mobitz type I, in contrast, requires no treatment, so observation is incorrect. IV atropine and transcutaneous pacing are acute/temporizing measures for symptomatic or unstable bradyarrhythmias, not definitive management. Beta-blockers slow AV nodal conduction and would worsen the block.",
   },
   {
-    id: "cardiology-40",
+    id: "cardiology-36",
     system: "Cardiology",
     topic: "Symptomatic bradycardia",
     stem: "A 70-year-old man presents with lightheadedness and a heart rate of 38/min due to sinus bradycardia. His blood pressure is 84/50 mm Hg. Which of the following is the most appropriate initial pharmacologic therapy?",
@@ -645,7 +585,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Symptomatic or unstable bradyarrhythmias are first treated with IV atropine; if refractory, IV epinephrine or dopamine or transcutaneous pacing is used. Cardioversion and adenosine are for tachyarrhythmias, not bradycardia.",
   },
   {
-    id: "cardiology-41",
+    id: "cardiology-37",
     system: "Cardiology",
     topic: "Stable monomorphic VT",
     stem: "A 64-year-old man with a recent myocardial infarction develops a regular wide-complex monomorphic tachycardia. He is alert with a blood pressure of 118/72 mm Hg. Which of the following antiarrhythmic agents is most appropriate?",
@@ -660,7 +600,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For stable monomorphic VT, lidocaine is preferred in the setting of acute MI (whereas amiodarone is favored in heart failure). Adenosine, diltiazem, and verapamil are AV nodal agents not appropriate for ventricular tachycardia.",
   },
   {
-    id: "cardiology-42",
+    id: "cardiology-38",
     system: "Cardiology",
     topic: "ACLS drug sequencing",
     stem: "A patient in pulseless ventricular fibrillation has received two defibrillation shocks and high-quality CPR without return of spontaneous circulation. Which of the following medications should be administered at this point?",
@@ -675,22 +615,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In a shockable arrest, epinephrine is given after the 2nd shock, and an antiarrhythmic (amiodarone or lidocaine) is added after the 3rd shock. Therefore, epinephrine is the correct agent at this stage.",
   },
   {
-    id: "cardiology-43",
-    system: "Cardiology",
-    topic: "ACLS drug sequencing",
-    stem: "A patient in pulseless ventricular fibrillation has received two defibrillation shocks and high-quality CPR without return of spontaneous circulation. Which of the following medications should be administered at this point?",
-    options: [
-      "Epinephrine",
-      "Amiodarone",
-      "Lidocaine",
-      "Atropine",
-      "Adenosine",
-    ],
-    answerIndex: 0,
-    explanation: "In a shockable arrest, epinephrine is given after the 2nd shock, and an antiarrhythmic (amiodarone or lidocaine) is added after the 3rd shock. Therefore, epinephrine is the correct agent at this stage.",
-  },
-  {
-    id: "cardiology-44",
+    id: "cardiology-39",
     system: "Cardiology",
     topic: "PVC management",
     stem: "A 40-year-old man reports occasional palpitations. Holter monitoring shows frequent premature ventricular complexes, but his echocardiogram is normal and he is otherwise asymptomatic. Which of the following is the most appropriate management?",
@@ -705,7 +630,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Isolated PVCs/atrial premature beats in an asymptomatic patient are managed with reassurance and trigger avoidance; beta-blockers are reserved for refractory or symptomatic cases. Ablation and pacemakers are not first-line.",
   },
   {
-    id: "cardiology-45",
+    id: "cardiology-40",
     system: "Cardiology",
     topic: "Hypertensive urgency",
     stem: "A 62-year-old man has a blood pressure of 195/118 mm Hg but no symptoms and no evidence of end-organ damage on evaluation. Which of the following is the most appropriate management?",
@@ -720,7 +645,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hypertensive urgency (markedly elevated BP without end-organ damage) is managed by adjusting outpatient medications and continuing them as an outpatient. Aggressive IV therapy and rapid normalization are reserved for hypertensive emergency with end-organ damage.",
   },
   {
-    id: "cardiology-46",
+    id: "cardiology-41",
     system: "Cardiology",
     topic: "Stage 1 HTN therapy",
     stem: "A 55-year-old non-African American man has persistently elevated blood pressures averaging 134/86 mm Hg despite lifestyle modification. Which of the following is the most appropriate first-line antihypertensive?",
@@ -735,7 +660,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stage 1 hypertension (130-139/80-89) is treated first-line with an ACE inhibitor or ARB. The combination of an ACEi/ARB plus a CCB or chlorthalidone is reserved for stage 2 hypertension.",
   },
   {
-    id: "cardiology-47",
+    id: "cardiology-42",
     system: "Cardiology",
     topic: "Stage 2 HTN therapy",
     stem: "A 58-year-old man has a blood pressure of 152/96 mm Hg confirmed on repeat measurement. He is not of African American descent. Which of the following is the most appropriate initial pharmacologic regimen?",
@@ -750,7 +675,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stage 2 hypertension (greater than or equal to 140/90) warrants combination therapy: an ACEi/ARB plus a CCB or chlorthalidone. ACEi/ARB monotherapy is appropriate for stage 1, not stage 2.",
   },
   {
-    id: "cardiology-48",
+    id: "cardiology-43",
     system: "Cardiology",
     topic: "Aortic dissection diagnosis",
     stem: "A 58-year-old hypertensive man presents with sudden tearing chest pain radiating to his back. He has a 25 mm Hg blood pressure difference between his arms, and a chest radiograph shows a widened mediastinum. He is hemodynamically stable. Which of the following is the most appropriate diagnostic test?",
@@ -765,7 +690,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Tearing chest pain radiating to the back with an inter-arm BP difference and widened mediastinum indicates aortic dissection; in a stable patient the diagnostic test is CT angiography. TEE is used when the patient is unstable.",
   },
   {
-    id: "cardiology-49",
+    id: "cardiology-44",
     system: "Cardiology",
     topic: "Hypertensive emergency BP goal",
     stem: "A 60-year-old man presents with a blood pressure of 220/130 mm Hg, blurry vision, and an elevated creatinine consistent with acute kidney injury. Which of the following best describes the appropriate blood pressure goal?",
@@ -780,7 +705,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In hypertensive emergency (end-organ damage present), blood pressure should be lowered by a maximum of 25% in the first hour and then toward 160/110 mm Hg within 6 hours. Aggressively normalizing the pressure risks ischemia; aortic dissection is the exception where faster reduction is needed.",
   },
   {
-    id: "cardiology-50",
+    id: "cardiology-45",
     system: "Cardiology",
     topic: "Symptomatic TAA management",
     stem: "A 60-year-old man with Marfan syndrome and a known thoracic aortic aneurysm returns with new substernal chest pain and hoarseness. He is hemodynamically stable. Which of the following is the most appropriate management?",
@@ -795,7 +720,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A thoracic aortic aneurysm that becomes symptomatic (here, chest pain plus hoarseness from recurrent laryngeal nerve compression) signals impending rupture or rapid expansion and requires urgent surgical repair. Surveillance imaging and beta-blocker therapy are appropriate only for asymptomatic aneurysms, an elective 1-month delay is unacceptable once symptoms develop (and endovascular repair is generally avoided in connective-tissue disease), and cilostazol with exercise is treatment for peripheral arterial disease.",
   },
   {
-    id: "cardiology-51",
+    id: "cardiology-46",
     system: "Cardiology",
     topic: "Secondary HTN in young woman",
     stem: "A 26-year-old woman is found to have newly elevated blood pressure on routine examination. She has been taking combined oral contraceptive pills for the past 2 years and has no other identifiable cause. Which of the following is the most appropriate management?",
@@ -810,7 +735,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "OCPs are the most common cause of secondary hypertension in a young female; management is to discontinue the OCPs and consider an alternative contraceptive method. Pharmacotherapy and further secondary workup are not first-line when a reversible cause is evident.",
   },
   {
-    id: "cardiology-52",
+    id: "cardiology-47",
     system: "Cardiology",
     topic: "Thoracic aortic aneurysm",
     stem: "A 68-year-old man with long-standing hypertension presents with chest discomfort and hoarseness. A chest radiograph shows a widened mediastinum and a prominent aortic knob. Which of the following is the most appropriate diagnostic test?",
@@ -825,22 +750,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chest discomfort and hoarseness (recurrent laryngeal nerve compression) with a widened mediastinum and prominent aortic knob suggest a thoracic aortic aneurysm, diagnosed with CTA. Risk factors include HTN, bicuspid aortic valve, connective tissue disease, and tertiary syphilis.",
   },
   {
-    id: "cardiology-53",
-    system: "Cardiology",
-    topic: "Symptomatic TAA management",
-    stem: "A 60-year-old man with Marfan syndrome is found to have a thoracic aortic aneurysm. He now reports new chest pain and hoarseness. Which of the following is the most appropriate management?",
-    options: [
-      "Emergency surgery",
-      "Surveillance imaging in 6 months",
-      "Beta-blocker and serial echocardiography",
-      "Endovascular aneurysm repair scheduled electively in 1 month",
-      "Cilostazol and supervised exercise",
-    ],
-    answerIndex: 0,
-    explanation: "A symptomatic thoracic aortic aneurysm requires emergency surgery. Surveillance is appropriate only for asymptomatic aneurysms; the development of symptoms signals impending rupture or expansion.",
-  },
-  {
-    id: "cardiology-54",
+    id: "cardiology-48",
     system: "Cardiology",
     topic: "AAA screening",
     stem: "A 70-year-old man with a 40-pack-year smoking history asks whether he needs any screening for vascular disease. He has never been screened for an abdominal aortic aneurysm. Which of the following is the most appropriate screening recommendation?",
@@ -855,7 +765,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Screening guidelines recommend a one-time abdominal ultrasound for men aged 65-75 who have ever smoked. CT angiography and echocardiography are not screening modalities for AAA in asymptomatic patients.",
   },
   {
-    id: "cardiology-55",
+    id: "cardiology-49",
     system: "Cardiology",
     topic: "Large asymptomatic AAA",
     stem: "A 72-year-old man is found to have a 6.0-cm asymptomatic infrarenal abdominal aortic aneurysm on surveillance ultrasound. He is hemodynamically stable. Which of the following is the most appropriate management?",
@@ -870,7 +780,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Large asymptomatic AAAs (greater than 5 cm in women / 5.5 cm in men), rapidly expanding AAAs (greater than 0.5 cm in 6 months), or symptomatic AAAs are repaired with endovascular aneurysm repair. Risk-factor modification with 6-month follow-up ultrasound is for smaller asymptomatic aneurysms; emergency surgery is for unstable patients.",
   },
   {
-    id: "cardiology-56",
+    id: "cardiology-50",
     system: "Cardiology",
     topic: "Ruptured AAA",
     stem: "A 74-year-old man with a known abdominal aortic aneurysm presents with sudden severe abdominal pain, a pulsatile abdominal mass, and a blood pressure of 80/50 mm Hg. Which of the following is the most appropriate management?",
@@ -885,22 +795,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A hypotensive patient with a known AAA and a tender pulsatile mass has a ruptured aneurysm and requires emergency surgery without delay for imaging. CTA is appropriate only in stable patients.",
   },
   {
-    id: "cardiology-57",
-    system: "Cardiology",
-    topic: "Aortic dissection diagnosis",
-    stem: "A 58-year-old hypertensive man presents with sudden tearing chest pain radiating to his back. He has a 25 mm Hg blood pressure difference between his arms, and a chest radiograph shows a widened mediastinum. He is hemodynamically stable. Which of the following is the most appropriate diagnostic test?",
-    options: [
-      "CT angiography",
-      "Transesophageal echocardiography",
-      "Exercise stress echocardiography",
-      "Ankle-brachial index",
-      "Coronary angiography",
-    ],
-    answerIndex: 0,
-    explanation: "Tearing chest pain radiating to the back with an inter-arm BP difference and widened mediastinum indicates aortic dissection; in a stable patient the diagnostic test is CT angiography. TEE is used when the patient is unstable.",
-  },
-  {
-    id: "cardiology-58",
+    id: "cardiology-51",
     system: "Cardiology",
     topic: "Aortic dissection BP control",
     stem: "A 60-year-old man presents with the abrupt onset of tearing chest pain radiating to his back. CT angiography confirms an aortic dissection. His heart rate is 105/min and his blood pressure is 190/110 mm Hg. Which of the following is the most appropriate initial pharmacologic management?",
@@ -915,7 +810,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Aortic dissection is managed first with IV labetalol (a combined alpha/beta-blocker), which lowers both blood pressure and heart rate to reduce aortic wall shear stress (dP/dt). It is the exception to the usual inpatient rule of lowering BP by no more than 25% in the first hour, since BP must be reduced more rapidly. Pure vasodilators without rate control are wrong: IV hydralazine alone (B) and sublingual nifedipine (C) cause reflex tachycardia that increases shear stress, and starting IV nitroprusside before beta-blockade (D) similarly triggers reflex tachycardia and propagation of the dissection (a beta-blocker must be given first). IV furosemide (E) treats volume overload and has no role in acute dissection control.",
   },
   {
-    id: "cardiology-59",
+    id: "cardiology-52",
     system: "Cardiology",
     topic: "Stanford classification treatment",
     stem: "A 62-year-old man with an aortic dissection involving the ascending aorta (Stanford type A) has his blood pressure controlled with IV beta-blockade. Which of the following is the most appropriate definitive management?",
@@ -930,7 +825,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stanford type A dissections (involving the ascending aorta) require emergency surgical repair. Stanford type B dissections (descending only) are managed medically with IV beta-blockers. Medical management alone is therefore inadequate for type A.",
   },
   {
-    id: "cardiology-60",
+    id: "cardiology-53",
     system: "Cardiology",
     topic: "Peripheral arterial disease",
     stem: "A 66-year-old man who smokes reports calf pain that occurs reproducibly when walking and resolves with rest. On examination, his left leg is cool and hairless with diminished pulses. Which of the following is the best initial diagnostic test?",
@@ -945,7 +840,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Claudication with a cool, hairless leg and diminished pulses is peripheral arterial disease, and the best initial diagnostic test is the ankle-brachial index (an ABI less than 0.9 is diagnostic). Angiography is reserved for planning revascularization, not initial diagnosis.",
   },
   {
-    id: "cardiology-61",
+    id: "cardiology-54",
     system: "Cardiology",
     topic: "Claudication treatment ladder",
     stem: "A 68-year-old man with peripheral arterial disease has intermittent claudication. He has already been counseled on smoking cessation and started on a statin and aspirin. Which of the following is the most appropriate next step for his claudication symptoms?",
@@ -960,7 +855,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For intermittent claudication, supervised exercise therapy is the next step; cilostazol is added for persistent claudication, and revascularization is reserved for refractory symptoms or critical limb ischemia. All PAD patients also receive statins and antiplatelet therapy for prevention.",
   },
   {
-    id: "cardiology-62",
+    id: "cardiology-55",
     system: "Cardiology",
     topic: "PAD risk reduction",
     stem: "A 70-year-old man is newly diagnosed with peripheral arterial disease. In addition to symptom-directed therapy, which of the following should be prescribed to all patients with PAD to reduce cardiovascular events?",
@@ -975,7 +870,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "All patients with PAD should receive a statin plus antiplatelet therapy (aspirin or clopidogrel) because PAD confers an increased risk of MI. Cilostazol is symptom-directed (for persistent claudication), not universal, and warfarin is not first-line.",
   },
   {
-    id: "cardiology-63",
+    id: "cardiology-56",
     system: "Cardiology",
     topic: "Acute limb ischemia diagnosis",
     stem: "A 72-year-old man with peripheral arterial disease develops sudden severe pain, pallor, paresthesias, and a pulseless, cool left leg. Which of the following is the best initial diagnostic test?",
@@ -990,7 +885,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute limb ischemia (sudden pain with the 6 P's) is evaluated with arterial or venous Doppler as the best initial test; digital subtraction angiography is the best confirmatory test. ABI is the initial test for chronic PAD, not acute limb ischemia.",
   },
   {
-    id: "cardiology-64",
+    id: "cardiology-57",
     system: "Cardiology",
     topic: "Acute limb ischemia therapy",
     stem: "A 70-year-old man with a recent MI develops sudden severe pain, pallor, and pulselessness of the right leg. Doppler studies confirm acute arterial occlusion. He does not have valvular atrial fibrillation. Which of the following is the most appropriate immediate medical therapy?",
@@ -1005,7 +900,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute limb ischemia is managed with immediate IV heparin to prevent thrombus propagation; warfarin is used initially if the patient has valvular atrial fibrillation. Heparin is followed by revascularization depending on limb viability.",
   },
   {
-    id: "cardiology-65",
+    id: "cardiology-58",
     system: "Cardiology",
     topic: "Threatened limb timing",
     stem: "A 68-year-old man presents with acute limb ischemia. Doppler studies show a positive venous signal but absent arterial signal, indicating a threatened but viable limb. After IV heparin is started, which of the following is the most appropriate next step?",
@@ -1020,7 +915,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A threatened limb (positive venous Doppler, negative arterial Doppler) requires revascularization within 6 hours. Amputation is reserved for a nonviable limb (absent both arterial and venous signals), and angiography with non-urgent revascularization is for a limb that is not threatened.",
   },
   {
-    id: "cardiology-66",
+    id: "cardiology-59",
     system: "Cardiology",
     topic: "Nonviable limb",
     stem: "A 75-year-old man presents with acute limb ischemia. Doppler examination reveals absent arterial and absent venous signals, and the limb is mottled and insensate. Which of the following is the most appropriate management?",
@@ -1035,7 +930,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Absent both arterial and venous Doppler signals indicates a nonviable limb, which requires amputation. Revascularization within 6 hours is appropriate only when the limb is still viable (positive venous, negative arterial signal).",
   },
   {
-    id: "cardiology-67",
+    id: "cardiology-60",
     system: "Cardiology",
     topic: "Chronic venous disease diagnosis",
     stem: "A 58-year-old woman presents with a dull aching, edema, and warm, hyperpigmented lower legs with visible varicosities. Which of the following must be obtained before initiating any treatment?",
@@ -1050,7 +945,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic venous disease (stasis dermatitis, varicosities, edema) requires a venous duplex ultrasound before any treatment. This identifies reflux and excludes DVT, which would contraindicate certain interventions.",
   },
   {
-    id: "cardiology-68",
+    id: "cardiology-61",
     system: "Cardiology",
     topic: "Mild CVD management",
     stem: "A 35-year-old pregnant woman has lower-extremity varicose veins and mild edema without skin changes. Venous duplex confirms superficial venous reflux without deep vein thrombosis. Which of the following is the most appropriate management?",
@@ -1065,7 +960,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Mild chronic venous disease (varicose veins or edema only) and pregnant patients are managed with compression stockings. Endovenous thermal ablation is reserved for advanced CVD with skin changes and is contraindicated with DVT or PAD.",
   },
   {
-    id: "cardiology-69",
+    id: "cardiology-62",
     system: "Cardiology",
     topic: "Advanced CVD management",
     stem: "A 60-year-old woman has chronic venous disease with stasis dermatitis and lipodermatosclerosis. Venous duplex confirms reflux without deep vein thrombosis, and she has a normal ankle-brachial index. Which of the following is the most appropriate management?",
@@ -1080,7 +975,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Advanced chronic venous disease with skin changes is treated with endovenous thermal ablation, provided there is no DVT or PAD (which would be contraindications). Compression stockings alone are for mild disease without skin changes.",
   },
   {
-    id: "cardiology-70",
+    id: "cardiology-63",
     system: "Cardiology",
     topic: "Infective endocarditis workup",
     stem: "A 45-year-old man presents with fever, a new heart murmur, petechiae with splinter hemorrhages, and splenomegaly. Which of the following is the most appropriate initial step in evaluation?",
@@ -1095,7 +990,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This presentation suggests infective endocarditis; the initial steps are to obtain 3 sets of blood cultures from different sites, start empiric IV vancomycin, and order an echocardiogram. Cultures must be drawn before or as antibiotics are started to identify the organism.",
   },
   {
-    id: "cardiology-71",
+    id: "cardiology-64",
     system: "Cardiology",
     topic: "IE empiric antibiotics",
     stem: "A 50-year-old man with suspected infective endocarditis has had three sets of blood cultures drawn from separate sites. Which of the following is the most appropriate empiric antibiotic to start while awaiting results?",
@@ -1110,7 +1005,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "After obtaining 3 sets of blood cultures, empiric therapy for infective endocarditis is IV vancomycin, followed by ordering an echocardiogram. Amoxicillin is the prophylaxis agent given before procedures, not empiric treatment of established endocarditis.",
   },
   {
-    id: "cardiology-72",
+    id: "cardiology-65",
     system: "Cardiology",
     topic: "Endocarditis prophylaxis indications",
     stem: "A patient asks his physician whether he needs antibiotics before an upcoming dental cleaning. Which of the following patients most clearly requires infective endocarditis prophylaxis?",
@@ -1125,7 +1020,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Endocarditis prophylaxis is indicated for patients with prosthetic heart valves, transplanted hearts with structural valve abnormality, and unrepaired cyanotic congenital heart disease. Mitral valve prolapse and repaired ASD are not indications, and prophylaxis is not needed for colonoscopy.",
   },
   {
-    id: "cardiology-73",
+    id: "cardiology-66",
     system: "Cardiology",
     topic: "Prophylaxis procedures/timing",
     stem: "A patient with a prosthetic heart valve is scheduled for a high-risk dental extraction. Which of the following best describes appropriate endocarditis prophylaxis?",
@@ -1140,7 +1035,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Prophylaxis (e.g., amoxicillin) is given 30-60 minutes before high-risk procedures such as dental work. Prophylaxis is needed for dental, respiratory, infected-skin surgery, and GI/GU procedures only with active infection; it is not needed for routine colonoscopy.",
   },
   {
-    id: "cardiology-74",
+    id: "cardiology-67",
     system: "Cardiology",
     topic: "Perivalvular abscess",
     stem: "A 52-year-old man with aortic valve infective endocarditis develops new third-degree AV block on telemetry. Echocardiography shows perivalvular thickening with an adjacent echolucent cavity. Which of the following best explains these findings?",
@@ -1155,7 +1050,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A new conduction abnormality (AV block) in a patient with infective endocarditis points to a perivalvular abscess, which most often complicates aortic valve endocarditis because the conduction system runs adjacent to the aortic annulus. On echocardiography it appears as perivalvular thickening with an echolucent cavity. Lyme carditis also causes AV block, but it characteristically spares the valves (no murmur and no perivalvular echolucency), which distinguishes it here. LV aneurysm, Dressler pericarditis, and papillary muscle rupture are post-MI complications and do not produce a perivalvular echolucent cavity with AV block.",
   },
   {
-    id: "cardiology-75",
+    id: "cardiology-68",
     system: "Cardiology",
     topic: "Lyme vs perivalvular abscess",
     stem: "A 30-year-old man from a Lyme-endemic area presents with an erythema migrans rash followed by high-grade AV block. Cardiac auscultation reveals no murmur. Which of the following findings is expected in this patient rather than in a patient with a perivalvular abscess?",
@@ -1170,7 +1065,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The patient has Lyme carditis (erythema migrans plus high-grade AV block in an endemic area). Lyme carditis causes conduction disease but typically spares the cardiac valves, so no murmur is heard. In contrast, a perivalvular abscess complicates aortic infective endocarditis (suspected when IE is accompanied by AV block) and is characterized by valvular involvement with a murmur, an echolucent perivalvular cavity on echocardiography, vegetations, and positive blood cultures (e.g., gram-positive cocci). Valve sparing with absence of a murmur is the finding that points to Lyme rather than abscess.",
   },
   {
-    id: "cardiology-76",
+    id: "cardiology-69",
     system: "Cardiology",
     topic: "Splenic abscess in IE",
     stem: "A 48-year-old man with infective endocarditis develops a triad of high fever, leukocytosis, and tender splenomegaly. Which of the following is the most appropriate diagnostic test?",
@@ -1185,7 +1080,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In infective endocarditis, the triad of high fever, leukocytosis, and tender splenomegaly suggests a splenic abscess, diagnosed by CT scan. Treatment is antibiotics plus splenectomy.",
   },
   {
-    id: "cardiology-77",
+    id: "cardiology-70",
     system: "Cardiology",
     topic: "Splenic abscess treatment",
     stem: "A 49-year-old man with infective endocarditis is found on CT to have a splenic abscess. Which of the following is the most appropriate treatment?",
@@ -1200,7 +1095,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A splenic abscess complicating infective endocarditis is treated with antibiotics plus splenectomy. Antibiotics alone are insufficient for an established abscess, which requires source control via splenectomy.",
   },
   {
-    id: "cardiology-78",
+    id: "cardiology-71",
     system: "Cardiology",
     topic: "Torsades de pointes treatment",
     stem: "A 58-year-old woman is admitted for treatment of a urinary tract infection and is started on an antibiotic. On hospital day 2 she becomes lightheaded. Telemetry shows a wide-complex tachycardia in which the QRS complexes twist around the baseline, varying in amplitude. Her blood pressure is 96/60 mm Hg and she is awake. Which of the following is the most appropriate initial treatment?",
@@ -1215,7 +1110,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A polymorphic ventricular tachycardia with QRS complexes that twist around the baseline is torsades de pointes, for which the first step is IV magnesium. Amiodarone and adenosine are used for monomorphic VT and SVT respectively, not torsades; synchronized cardioversion is reserved for hemodynamic instability, which this patient does not have.",
   },
   {
-    id: "cardiology-79",
+    id: "cardiology-72",
     system: "Cardiology",
     topic: "Atrial fibrillation triggers",
     stem: "A 34-year-old woman comes to the office because of a 2-week history of palpitations, heat intolerance, and a 4-kg weight loss despite increased appetite. She has fine tremor and warm, moist skin. Her pulse is 124/min and irregularly irregular, and an ECG shows no discernible P waves with an irregular ventricular response. Which of the following underlying conditions is the most likely precipitant of her arrhythmia?",
@@ -1230,7 +1125,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An irregularly irregular rhythm with absent P waves and an irregular ventricular response indicates atrial fibrillation. The constellation of heat intolerance, weight loss despite increased appetite, fine tremor, and warm, moist skin in a young woman is classic for thyrotoxicosis, and hyperthyroidism is a well-recognized precipitant of AFib (catecholamine sensitivity and direct thyroid hormone effects on atrial myocardium). Iron deficiency and B12 deficiency cause anemia, not AFib, and do not explain the hypermetabolic findings. Chronic kidney disease is associated with AFib but nothing in the vignette suggests it. Adrenal insufficiency causes weight loss and fatigue but presents with hyperpigmentation, hypotension, and salt craving rather than heat intolerance, tremor, and AFib.",
   },
   {
-    id: "cardiology-80",
+    id: "cardiology-73",
     system: "Cardiology",
     topic: "AFib anticoagulation decision",
     stem: "A 76-year-old woman with hypertension and heart failure is found to have asymptomatic atrial fibrillation on a routine ECG. She is hemodynamically stable with a controlled ventricular rate. Her CHA2DS2-VASc score is calculated to be 5 (age ≥75 = 2, female sex = 1, hypertension = 1, heart failure = 1). Which of the following is the most appropriate long-term management to reduce her risk of thromboembolism?",
@@ -1245,7 +1140,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In atrial fibrillation, a CHA2DS2-VASc score of at least 2 in a woman warrants long-term oral anticoagulation for thromboembolism prevention (this patient's score is 5, well above threshold). Aspirin monotherapy is inadequate for stroke prevention in AF, synchronized cardioversion addresses rhythm rather than stroke risk and is reserved for hemodynamic instability, withholding therapy is unsafe at this score, and an ICD has no role in this stable patient.",
   },
   {
-    id: "cardiology-81",
+    id: "cardiology-74",
     system: "Cardiology",
     topic: "Aortic dissection imaging unstable",
     stem: "A 70-year-old man with longstanding hypertension presents with sudden severe tearing chest pain radiating to his back. Blood pressure is 80/50 mm Hg in the right arm with asymmetric pulses between extremities, and a chest radiograph shows a widened mediastinum. He is diaphoretic and hypotensive. Which of the following is the most appropriate next diagnostic test?",
@@ -1260,7 +1155,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This presentation is aortic dissection, and in a hemodynamically unstable patient the deck specifies transesophageal echocardiography as the imaging test of choice because it can be performed at the bedside without moving the patient. CT angiography is preferred only when the patient is hemodynamically stable; the other tests do not evaluate for dissection.",
   },
   {
-    id: "cardiology-82",
+    id: "cardiology-75",
     system: "Cardiology",
     topic: "Aortic dissection associated syndromes",
     stem: "A 24-year-old man with a tall, thin build, long fingers, and a history of lens dislocation presents with sudden severe tearing chest pain radiating to the back. Blood pressure differs between his arms, and imaging confirms an ascending aortic dissection. An inherited connective tissue disorder is suspected. Which of the following conditions is most strongly associated with his presentation?",
@@ -1275,7 +1170,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Tall stature, arachnodactyly, and lens dislocation in a young patient with aortic dissection indicate Marfan syndrome, which the deck lists among the syndromes (with Ehlers-Danlos and Turner) predisposing to dissection. The other disorders are not deck-listed aortic dissection associations.",
   },
   {
-    id: "cardiology-83",
+    id: "cardiology-76",
     system: "Cardiology",
     topic: "Acute pericarditis treatment",
     stem: "A 30-year-old man comes to the office with several days of sharp retrosternal chest pain that is worse when lying flat and relieved by sitting forward. He recently recovered from a viral upper respiratory infection. A scratchy friction rub is heard at the left lower sternal border, and an echocardiogram shows a small pericardial effusion. Renal function and autoimmune workup are unremarkable. Which of the following is the most appropriate treatment?",
@@ -1290,7 +1185,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is idiopathic/viral acute pericarditis, for which the deck specifies NSAIDs (including aspirin) plus colchicine as first-line therapy. Corticosteroids are reserved for autoimmune etiologies such as lupus; pericardiocentesis is for tamponade, and antibiotics and anticoagulation are not indicated.",
   },
   {
-    id: "cardiology-84",
+    id: "cardiology-77",
     system: "Cardiology",
     topic: "Pericarditis next imaging",
     stem: "A 45-year-old woman presents with pleuritic retrosternal chest pain relieved by leaning forward, and a scratchy friction rub is auscultated at the left lower sternal border. The clinical diagnosis of acute pericarditis is made. Which of the following is the most appropriate next imaging study?",
@@ -1305,7 +1200,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "After a clinical diagnosis of acute pericarditis, transthoracic echocardiography is the recommended next imaging step to evaluate for a pericardial effusion and assess for tamponade (per ESC guidelines, echo is recommended in all patients with suspected or confirmed acute pericarditis). Cardiac catheterization, CT angiography, V/Q scanning, and carotid duplex do not assess for pericardial effusion and are used for other indications (coronary/hemodynamic assessment, PE/dissection, PE, and cerebrovascular disease, respectively).",
   },
   {
-    id: "cardiology-85",
+    id: "cardiology-78",
     system: "Cardiology",
     topic: "Acute vs subacute endocarditis organism",
     stem: "A 32-year-old man who injects heroin intravenously presents with a 3-day history of high fevers, chills, and weakness. He has a new murmur, and exam shows tender nodules and small hemorrhages. Blood cultures are drawn. Which of the following organisms is the most likely cause of his acute presentation?",
@@ -1320,7 +1215,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute bacterial endocarditis, particularly in an injection drug user with a rapidly progressive febrile illness, is most commonly caused by Staphylococcus aureus per the deck. The viridans streptococci (S. sanguinis, mutans, salivarius, mitis) cause subacute endocarditis, typically in patients with pre-existing valve damage.",
   },
   {
-    id: "cardiology-86",
+    id: "cardiology-79",
     system: "Cardiology",
     topic: "Strep gallolyticus colonoscopy",
     stem: "A 68-year-old man with subacute fever, weight loss, and a new murmur is found to have infective endocarditis. Blood cultures grow Streptococcus gallolyticus (formerly S. bovis). Which of the following is the most appropriate next step in management?",
@@ -1335,7 +1230,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Streptococcus gallolyticus (bovis) endocarditis is strongly associated with colorectal neoplasia, so the deck specifies colonoscopy as the next step to evaluate for an underlying colonic lesion. The other studies do not address this well-established association.",
   },
   {
-    id: "cardiology-87",
+    id: "cardiology-80",
     system: "Cardiology",
     topic: "Endocarditis TEE escalation",
     stem: "A 55-year-old woman with a prosthetic aortic valve has fever, weight loss, and a new regurgitant murmur, raising high clinical suspicion for infective endocarditis. Blood cultures are obtained and a transthoracic echocardiogram shows no vegetation. Which of the following is the most appropriate next step?",
@@ -2027,21 +1922,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "pulmonology-46",
     system: "Pulmonology",
-    topic: "DOAC preference rationale",
-    stem: "A 55-year-old man with a newly confirmed proximal DVT and normal renal function is being started on a direct oral factor Xa inhibitor rather than warfarin. Which of the following best explains why a direct oral anticoagulant is preferred over warfarin in this patient?",
-    options: [
-      "No heparin bridge is needed and INR monitoring is not required",
-      "It can be reversed more rapidly than any other anticoagulant",
-      "It is the only option safe to use in pregnancy",
-      "It has a delayed onset that allows safer initiation",
-      "It is the preferred agent in patients with a mechanical heart valve",
-    ],
-    answerIndex: 0,
-    explanation: "DOACs are preferred over warfarin because they require no heparin bridge, do not require INR monitoring, and have a rapid onset (2-4 hours). They are contraindicated in pregnancy and in mechanical valves (which require warfarin bridged with heparin), making those distractors wrong.",
-  },
-  {
-    id: "pulmonology-47",
-    system: "Pulmonology",
     topic: "Chronic bronchitis definition",
     stem: "A 64-year-old man with a 40-pack-year smoking history presents with a productive cough that he has had on most days for the past 4 months, and he notes he had similar prolonged cough last year as well. He also reports progressive exertional dyspnea. Spirometry confirms an obstructive pattern. Which of the following clinical features is most consistent with the diagnosis of chronic bronchitis in this patient?",
     options: [
@@ -2055,22 +1935,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic bronchitis is clinically defined as a productive cough for at least 3 months in each of 2 consecutive years, which this patient meets. A restrictive spirometry pattern is wrong because COPD/chronic bronchitis produces an obstructive pattern; fully reversible wheezing describes asthma, not COPD.",
   },
   {
-    id: "pulmonology-48",
-    system: "Pulmonology",
-    topic: "Unstable PE — TTE role",
-    stem: "A 61-year-old man presents with pleuritic chest pain, dyspnea, hypotension, and hypoxia, with a modified Wells' score of 7. IV heparin is started immediately. Before a CT angiogram is obtained, which of the following bedside studies is most appropriate to assess right ventricular function?",
-    options: [
-      "Transthoracic echocardiography",
-      "Lower extremity compression ultrasound",
-      "D-dimer",
-      "Pulmonary function testing",
-      "Serum BNP alone",
-    ],
-    answerIndex: 0,
-    explanation: "In an unstable patient with suspected PE, IV heparin is started immediately and a transthoracic echocardiogram is obtained to assess RV function, with CT angiography performed afterward if time permits. Compression ultrasound and D-dimer do not assess RV function and would not change the immediate hemodynamic management.",
-  },
-  {
-    id: "pulmonology-49",
+    id: "pulmonology-47",
     system: "Pulmonology",
     topic: "HIT type 2 timing window",
     stem: "A 62-year-old woman is on day 7 of unfractionated heparin therapy when her platelet count drops by more than 50% and she develops a new arterial thrombosis. Which of the following features best distinguishes this immune-mediated complication from the non-immune drop in platelets seen earlier in heparin therapy?",
@@ -2085,7 +1950,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "HIT type 2 is immune-mediated, occurs 5-14 days after heparin exposure, and is characterized by thrombosis (arterial or venous) with a >50% platelet drop. An onset within the first 4 days with a <30% non-immune, self-limiting platelet drop describes HIT type 1, which is the distractor being contrasted.",
   },
   {
-    id: "pulmonology-50",
+    id: "pulmonology-48",
     system: "Pulmonology",
     topic: "Tension pneumothorax — definitive step",
     stem: "A 38-year-old man with a tension pneumothorax has just undergone emergent needle decompression with clinical improvement. Which of the following is the most appropriate next step in management?",
@@ -2100,37 +1965,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Needle decompression is a temporizing measure for tension pneumothorax and must be followed by definitive chest tube placement. Observation is appropriate only for a small (<3 cm) spontaneous pneumothorax, not after decompressing a tension pneumothorax.",
   },
   {
-    id: "pulmonology-51",
-    system: "Pulmonology",
-    topic: "Transudative effusion causes",
-    stem: "A 67-year-old man with decompensated heart failure has a pleural effusion. Thoracentesis shows a pleural fluid protein/serum protein ratio of 0.3, a pleural fluid LDH/serum LDH ratio of 0.4, and a pleural fluid LDH below two-thirds of the upper limit of normal serum LDH. Which of the following additional conditions could produce the same type of effusion?",
-    options: [
-      "Cirrhosis",
-      "Pneumonia",
-      "Tuberculosis",
-      "Malignancy",
-      "Pulmonary embolism",
-    ],
-    answerIndex: 0,
-    explanation: "This effusion meets none of Light's criteria and is therefore transudative; cirrhosis (along with heart failure and nephrotic syndrome) causes transudative effusions. Pneumonia, TB, malignancy, and PE all cause exudative effusions and are incorrect.",
-  },
-  {
-    id: "pulmonology-52",
-    system: "Pulmonology",
-    topic: "HIT type 2 alternative anticoagulant",
-    stem: "A 60-year-old man with confirmed immune-mediated heparin-induced thrombocytopenia has had all heparin products discontinued. Which of the following is the most appropriate anticoagulant to start next?",
-    options: [
-      "Argatroban",
-      "Warfarin",
-      "Low-molecular-weight heparin",
-      "Rivaroxaban",
-      "Aspirin",
-    ],
-    answerIndex: 0,
-    explanation: "After stopping heparin in HIT type 2, a direct thrombin inhibitor such as argatroban (or bivalirudin/dabigatran) or fondaparinux is used. Warfarin should not be started acutely in HIT because of the risk of warfarin-induced skin necrosis, and LMWH is also a heparin product that must be avoided.",
-  },
-  {
-    id: "pulmonology-53",
+    id: "pulmonology-49",
     system: "Pulmonology",
     topic: "Pancoast syndrome",
     stem: "A 64-year-old man with a 40-pack-year smoking history comes to the physician because of 6 weeks of right shoulder and medial arm pain. He has noticed weakness and numbness along the ulnar aspect of his right hand. On examination, the right upper eyelid is drooping, the right pupil is constricted, and there is decreased sweating on the right side of the face. A chest radiograph shows a mass at the right lung apex. Which of the following is the most likely diagnosis?",
@@ -2145,7 +1980,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An apical lung tumor invading the brachial plexus (C8-T1) produces ulnar-distribution arm pain and weakness, and disruption of the sympathetic chain causes Horner syndrome (ptosis, miosis, anhidrosis), defining a Pancoast tumor. SVC syndrome instead causes face/arm swelling and JVD rather than Horner syndrome, and the apical mass with Horner findings distinguishes this from a benign radiculopathy or neuritis.",
   },
   {
-    id: "pulmonology-54",
+    id: "pulmonology-50",
     system: "Pulmonology",
     topic: "SVC syndrome",
     stem: "A 60-year-old man with known lung cancer comes to the emergency department because of progressive facial and bilateral arm swelling and shortness of breath over several days. On examination there is facial plethora and distended jugular veins that do not collapse, with dilated veins over the upper chest. Which of the following best explains his presentation?",
@@ -2160,7 +1995,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Face and arm swelling, JVD, dyspnea, and dilated chest wall collaterals in a lung cancer patient indicate superior vena cava syndrome from tumor compression of the SVC. SIADH produces hyponatremia rather than venous congestion, and Pancoast/brachial plexus involvement causes shoulder-arm pain and Horner syndrome rather than upper-body edema.",
   },
   {
-    id: "pulmonology-55",
+    id: "pulmonology-51",
     system: "Pulmonology",
     topic: "Lung cancer paraneoplastic",
     stem: "A 58-year-old man with a heavy smoking history is found to have a central lung mass. Laboratory studies show a serum sodium of 122 mEq/L with concentrated urine, and he is noted to have proximal muscle weakness that improves with repeated effort. Which of the following lung cancer histologies is most likely responsible?",
@@ -2175,7 +2010,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Small cell lung carcinoma is the classic cause of SIADH (hyponatremia), ectopic ACTH, and Lambert-Eaton myasthenic syndrome (weakness improving with use). Squamous cell carcinoma instead secretes PTHrP causing hypercalcemia, and adenocarcinoma is associated with hypertrophic osteoarthropathy.",
   },
   {
-    id: "pulmonology-56",
+    id: "pulmonology-52",
     system: "Pulmonology",
     topic: "Squamous cell paraneoplastic",
     stem: "A 66-year-old man with a long smoking history and a centrally located cavitary lung mass is found to have a serum calcium of 12.6 mg/dL with a low parathyroid hormone level. Which of the following mechanisms best explains his hypercalcemia?",
@@ -2190,7 +2025,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Squamous cell carcinoma of the lung classically produces PTHrP, causing hypercalcemia with a suppressed native PTH. SIADH and ectopic ACTH are features of small cell carcinoma, and elevated 1,25-vitamin D-mediated hypercalcemia is a feature of granulomatous disease such as sarcoidosis rather than squamous cell cancer.",
   },
   {
-    id: "pulmonology-57",
+    id: "pulmonology-53",
     system: "Pulmonology",
     topic: "Hypercalcemia of malignancy",
     stem: "A 62-year-old man with metastatic lung cancer presents with 2 days of malaise and lethargy. He appears cachectic but is alert and oriented. Pulse is 103/min and blood pressure is 105/78 mm Hg; examination shows decreased skin turgor. Serum calcium is 11.8 mg/dL, creatinine is 0.9 mg/dL, and albumin is 2.9 g/dL. Which of the following is the most appropriate initial pharmacotherapy?",
@@ -2205,7 +2040,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Isotonic saline is always first-line for hypercalcemia, especially in this volume-depleted patient with decreased skin turgor and tachycardia. Bisphosphonates such as zoledronic acid provide durable control but act over days, and calcitonin is reserved as adjunct short-term therapy when calcium exceeds 14 mg/dL.",
   },
   {
-    id: "pulmonology-58",
+    id: "pulmonology-54",
     system: "Pulmonology",
     topic: "Sarcoidosis diagnosis",
     stem: "A 34-year-old woman comes to the physician because of several weeks of dry cough, mild chest discomfort, and tender red nodules on her shins. A chest radiograph shows bilateral hilar lymphadenopathy. Laboratory studies show a serum calcium of 11.2 mg/dL and an elevated angiotensin-converting enzyme level. A lymph node biopsy is most likely to show which of the following?",
@@ -2220,7 +2055,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Bilateral hilar adenopathy, erythema nodosum, hypercalcemia, and elevated ACE in a young adult are classic for sarcoidosis, whose pathologic hallmark is noncaseating granulomas. Caseating granulomas with acid-fast bacilli would indicate tuberculosis, and Reed-Sternberg cells would indicate Hodgkin lymphoma.",
   },
   {
-    id: "pulmonology-59",
+    id: "pulmonology-55",
     system: "Pulmonology",
     topic: "Sarcoidosis hypercalcemia",
     stem: "A 38-year-old woman with biopsy-confirmed sarcoidosis is found to have hypercalcemia and hypercalciuria. Which of the following best explains the elevated serum calcium in this patient?",
@@ -2235,7 +2070,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In sarcoidosis, activated macrophages within granulomas express 1-alpha-hydroxylase and convert 25-hydroxyvitamin D to active 1,25-dihydroxyvitamin D, increasing intestinal calcium absorption and causing hypercalcemia and hypercalciuria. PTHrP is a paraneoplastic mechanism of squamous cell lung cancer, and the PTH level is suppressed rather than elevated in sarcoidosis.",
   },
   {
-    id: "pulmonology-60",
+    id: "pulmonology-56",
     system: "Pulmonology",
     topic: "Latent TB diagnosis",
     stem: "A 62-year-old US-born woman undergoes a PPD skin test before beginning hospital volunteer work. She has type 2 diabetes and osteoarthritis and no known tuberculosis contacts. The test produces 6 mm of induration at 48 hours. A chest radiograph shows no abnormalities and liver function tests are normal. Which of the following is the most appropriate next step in management?",
@@ -2250,7 +2085,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This patient actually falls into the 10-mm cutoff category for a positive PPD, for two reasons: she will work in a hospital (a healthcare/congregate setting) and she has diabetes mellitus (a high-risk clinical condition). The 5-mm cutoff is reserved for the highest-risk groups (HIV, recent close contact with active TB, fibrotic changes on chest radiograph, organ transplant or other significant immunosuppression), and the 15-mm cutoff applies only to persons with no risk factors. Her induration of 6 mm is below the applicable 10-mm threshold, so the test is negative, no latent or active TB treatment is indicated, and she can be cleared to begin volunteer work. Isoniazid plus rifampin (or another latent-TB regimen) would be used only for a positive test, RIPE therapy and sputum AFB only if active disease were suspected, and repeat/two-step testing is used for serial screening of a negative baseline rather than as the next step here.",
   },
   {
-    id: "pulmonology-61",
+    id: "pulmonology-57",
     system: "Pulmonology",
     topic: "Latent TB treatment",
     stem: "A 30-year-old recent immigrant has a PPD with 12 mm of induration. He is asymptomatic, and a chest radiograph shows no infiltrate, cavitation, or adenopathy. Which of the following is the most appropriate treatment?",
@@ -2265,7 +2100,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A positive PPD with a normal chest radiograph and no symptoms indicates latent tuberculosis, treated with isoniazid and rifampin (a recommended short-course regimen). Four-drug RIPE therapy is reserved for active tuberculosis, which would show radiographic findings such as an apical infiltrate or cavitation.",
   },
   {
-    id: "pulmonology-62",
+    id: "pulmonology-58",
     system: "Pulmonology",
     topic: "Isoniazid neuropathy",
     stem: "A 45-year-old man being treated for tuberculosis develops symmetric numbness, tingling, and burning in both feet several weeks into therapy. Supplementation with which of the following would most likely have prevented this complication?",
@@ -2280,7 +2115,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Isoniazid causes peripheral neuropathy by inducing functional pyridoxine (vitamin B6) deficiency, which is prevented with B6 co-administration. Vitamin B12 and folate deficiencies cause different syndromes, and thiamine deficiency is linked to Wernicke encephalopathy rather than isoniazid toxicity.",
   },
   {
-    id: "pulmonology-63",
+    id: "pulmonology-59",
     system: "Pulmonology",
     topic: "TB screening before biologics",
     stem: "A 52-year-old woman with rheumatoid arthritis is to begin a tumor necrosis factor-alpha inhibitor such as infliximab. Which of the following should be performed before starting this medication?",
@@ -2295,7 +2130,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "TNF-alpha is essential for maintaining granulomas that contain Mycobacterium tuberculosis, so TNF-alpha inhibitors markedly increase the risk of reactivating latent tuberculosis. Before initiation, patients must be screened for latent TB infection with a tuberculin skin test (PPD) or an interferon-gamma release assay; a positive result prompts a chest radiograph to distinguish latent from active disease and treatment of latent infection before starting the biologic. (Hepatitis B serologies are also typically checked.) Echocardiography, bone marrow biopsy, colonoscopy, and pulmonary function testing do not address the principal infectious risk associated with these agents and are not routine pre-treatment requirements.",
   },
   {
-    id: "pulmonology-64",
+    id: "pulmonology-60",
     system: "Pulmonology",
     topic: "Community-acquired pneumonia antibiotics",
     stem: "A 45-year-old previously healthy man is diagnosed with community-acquired pneumonia in the outpatient clinic. He has no comorbidities, has not taken antibiotics recently, and is well enough to be treated as an outpatient. Which of the following is the most appropriate antibiotic choice?",
@@ -2310,7 +2145,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For an otherwise healthy outpatient with community-acquired pneumonia, amoxicillin, doxycycline, or a macrolide is appropriate empiric therapy. Ceftriaxone plus azithromycin is reserved for inpatients, and broad agents like vancomycin or piperacillin-tazobactam are not indicated for uncomplicated outpatient CAP.",
   },
   {
-    id: "pulmonology-65",
+    id: "pulmonology-61",
     system: "Pulmonology",
     topic: "Inpatient pneumonia antibiotics",
     stem: "A 70-year-old man with community-acquired pneumonia is admitted to a general medical ward (non-ICU) because of hypoxemia and dehydration. He has no history of MRSA or Pseudomonas infection and no recent hospitalization. Which of the following is the most appropriate empiric antibiotic regimen?",
@@ -2325,7 +2160,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For a patient with community-acquired pneumonia admitted to a non-ICU ward, the IDSA/ATS-recommended empiric regimen is a beta-lactam (such as the third-generation cephalosporin ceftriaxone) PLUS a macrolide (azithromycin); a respiratory fluoroquinolone alone is an alternative. Vancomycin plus piperacillin-tazobactam is reserved for patients with risk factors for MRSA or Pseudomonas (e.g., prior isolation of these organisms, recent IV antibiotics, or hospitalization), which this patient lacks, so it represents unnecessarily broad coverage. Oral amoxicillin or oral amoxicillin-clavulanate monotherapy is appropriate only for low-risk outpatients and provides inadequate atypical coverage and the wrong route for a hypoxemic, dehydrated admitted patient. Nitrofurantoin treats cystitis and achieves no meaningful lung tissue levels, so it does not treat pneumonia.",
   },
   {
-    id: "pulmonology-66",
+    id: "pulmonology-62",
     system: "Pulmonology",
     topic: "Aspiration pneumonia antibiotics",
     stem: "A 68-year-old man with dysphagia after a stroke has a witnessed choking episode while eating. Three days later he develops fever and productive cough, and a chest radiograph shows a new right lower lobe opacity. He is admitted for treatment. Which of the following is the most appropriate antibiotic?",
@@ -2340,7 +2175,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Aspiration pneumonia requires coverage of oral anaerobes; for an inpatient, ampicillin-sulbactam is the recommended agent (amoxicillin-clavulanate is the outpatient equivalent). A macrolide or single-agent ceftriaxone does not reliably cover the anaerobic flora implicated after an aspiration event.",
   },
   {
-    id: "pulmonology-67",
+    id: "pulmonology-63",
     system: "Pulmonology",
     topic: "Empyema management",
     stem: "A 55-year-old man hospitalized for pneumonia remains febrile despite antibiotics. Thoracentesis of an associated pleural effusion returns frankly purulent fluid with a pH of 7.0 and a low glucose. Which of the following is the most appropriate next step in management?",
@@ -2355,7 +2190,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A complicated parapneumonic effusion or empyema (purulent fluid, low pH, low glucose) requires source control with tube thoracostomy drainage in addition to antibiotics; antibiotics alone are insufficient. Observation or delayed repeat tap would allow ongoing sepsis, and pleurodesis is used for recurrent malignant effusions rather than infected ones.",
   },
   {
-    id: "pulmonology-68",
+    id: "pulmonology-64",
     system: "Pulmonology",
     topic: "Asthma initial diagnostic test",
     stem: "A 25-year-old woman reports episodic wheezing, cough, and chest tightness. Her symptoms and lung examination are currently normal. Which of the following is the most appropriate initial test to confirm a diagnosis of asthma?",
@@ -2370,7 +2205,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Spirometry demonstrating an obstructive pattern with bronchodilator reversibility is the initial study for suspected asthma. A methacholine challenge is reserved for cases in which spirometry is normal but asthma is still suspected, and CT or bronchoscopy is not part of the routine diagnostic workup.",
   },
   {
-    id: "pulmonology-69",
+    id: "pulmonology-65",
     system: "Pulmonology",
     topic: "Asthma vs COPD reversibility",
     stem: "A 50-year-old patient with chronic dyspnea has spirometry showing an FEV1/FVC ratio of 0.6. After administration of an inhaled bronchodilator, the FEV1 improves substantially toward normal. Which of the following best explains this finding?",
@@ -2385,7 +2220,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Both asthma and COPD show an obstructive pattern (FEV1/FVC below 0.7), but significant reversibility with a bronchodilator indicates asthma. COPD characteristically demonstrates fixed, largely irreversible obstruction, and a restrictive defect would show a preserved or increased ratio with reduced volumes.",
   },
   {
-    id: "pulmonology-70",
+    id: "pulmonology-66",
     system: "Pulmonology",
     topic: "GPA diagnosis",
     stem: "A 48-year-old man presents with chronic sinusitis, nasal crusting with a saddle-nose deformity, hemoptysis, and new hematuria. Laboratory studies show an elevated creatinine, and urinalysis shows red cell casts. Serologic testing is positive for c-ANCA (anti-PR3). A lung biopsy is most likely to show which of the following?",
@@ -2400,7 +2235,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Upper airway involvement, pulmonary hemorrhage, glomerulonephritis, and c-ANCA (anti-PR3) positivity define granulomatosis with polyangiitis, whose biopsy shows necrotizing granulomatous inflammation. Eosinophilic GPA features asthma and eosinophilia with p-ANCA, and microscopic polyangiitis is p-ANCA positive without granulomas.",
   },
   {
-    id: "pulmonology-71",
+    id: "pulmonology-67",
     system: "Pulmonology",
     topic: "EGPA diagnosis",
     stem: "A 44-year-old man with a history of adult-onset asthma and chronic sinusitis develops fever, a mononeuritis, and pulmonary infiltrates. Laboratory studies show marked peripheral eosinophilia, and serology is positive for p-ANCA (anti-MPO). Which of the following is the most likely diagnosis?",
@@ -2507,21 +2342,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "gi-7",
     system: "Gastroenterology",
-    topic: "Biliary imaging",
-    stem: "A 40-year-old woman presents with intermittent right upper quadrant pain after fatty meals. The clinician wants to evaluate her biliary system for stones. Which of the following is the most appropriate initial imaging study?",
-    options: [
-      "Abdominal ultrasound",
-      "Abdominal CT with IV contrast",
-      "MRCP",
-      "ERCP",
-      "HIDA scan",
-    ],
-    answerIndex: 0,
-    explanation: "Ultrasound is the imaging modality of choice for visualizing the biliary system and detecting gallstones. ERCP is reserved for stones in the ducts and is therapeutic, not the initial screening test.",
-  },
-  {
-    id: "gi-8",
-    system: "Gastroenterology",
     topic: "Primary biliary cholangitis",
     stem: "A 52-year-old woman presents with fatigue and pruritus. Labs show elevated alkaline phosphatase and GGT with normal transaminases, and imaging shows dilated intrahepatic ducts only without systemic symptoms. Antimitochondrial antibodies are positive, and biopsy shows florid duct granulomas. Which of the following is the most appropriate treatment?",
     options: [
@@ -2535,7 +2355,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is primary biliary cholangitis: positive AMA, granulomatous florid duct lesions, elevated ALP/GGT with normal transaminases, and dilated intrahepatic ducts only. The treatment is ursodeoxycholic acid; cholestyramine is the supportive treatment associated with PSC and post-cholecystectomy diarrhea.",
   },
   {
-    id: "gi-9",
+    id: "gi-8",
     system: "Gastroenterology",
     topic: "PBC complications",
     stem: "A 55-year-old woman with AMA-positive cholestatic liver disease and dilated intrahepatic ducts is counseled about long-term complications. In addition to hepatocellular carcinoma risk, which of the following conditions is she at increased risk of developing?",
@@ -2550,7 +2370,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Primary biliary cholangitis carries an increased risk of HCC and osteoporosis. Cholangiocarcinoma is the malignancy associated with PSC, not PBC, making it the key distractor.",
   },
   {
-    id: "gi-10",
+    id: "gi-9",
     system: "Gastroenterology",
     topic: "Primary sclerosing cholangitis",
     stem: "A 35-year-old man with ulcerative colitis presents with fatigue and jaundice. Imaging shows dilated intra- and extrahepatic ducts with short annular strictures alternating with normal segments giving a beaded appearance, and biopsy shows periductal fibrosis. p-ANCA is positive. Which of the following is the most likely diagnosis?",
@@ -2565,7 +2385,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "PSC is associated with ulcerative colitis, p-ANCA positivity, periductal fibrosis, and a beads-on-a-string pattern of strictures in both intra- and extrahepatic ducts. PBC is AMA-positive with intrahepatic ducts only and no UC association.",
   },
   {
-    id: "gi-11",
+    id: "gi-10",
     system: "Gastroenterology",
     topic: "PSC management",
     stem: "A 38-year-old man with ulcerative colitis is diagnosed with primary sclerosing cholangitis on the basis of beaded biliary strictures and periductal fibrosis. He reports bothersome pruritus. Which of the following is the most appropriate treatment?",
@@ -2580,7 +2400,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "PSC is treated with supportive care, with cholestyramine used for symptomatic relief such as pruritus/diarrhea. Ursodeoxycholic acid is the treatment for PBC, not PSC, making that the key distractor.",
   },
   {
-    id: "gi-12",
+    id: "gi-11",
     system: "Gastroenterology",
     topic: "PSC malignancy risk",
     stem: "A 40-year-old man with primary sclerosing cholangitis and ulcerative colitis asks about cancers for which he is at increased risk. Which of the following malignancies is most specifically associated with his biliary disease?",
@@ -2595,7 +2415,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "PSC carries an increased risk of cholangiocarcinoma. HCC is the malignancy emphasized with PBC and cirrhosis, making it the tempting but incorrect choice for PSC.",
   },
   {
-    id: "gi-13",
+    id: "gi-12",
     system: "Gastroenterology",
     topic: "Symptomatic cholelithiasis",
     stem: "A 44-year-old woman presents with recurrent RUQ pain after fatty meals. Ultrasound shows gallstones with acoustic shadowing and no gallbladder wall thickening; she is afebrile with a normal white count. Which of the following is the most appropriate management?",
@@ -2610,7 +2430,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Symptomatic biliary colic from cholelithiasis without signs of inflammation is treated with ursodeoxycholic acid or elective cholecystectomy. Antibiotics plus cholecystectomy are reserved for acute cholecystitis, which requires fever, leukocytosis, and a positive Murphy sign with wall thickening.",
   },
   {
-    id: "gi-14",
+    id: "gi-13",
     system: "Gastroenterology",
     topic: "Asymptomatic gallstones",
     stem: "A 60-year-old man undergoes abdominal ultrasound for an unrelated complaint and is incidentally found to have gallstones. He has no abdominal pain or other symptoms. Which of the following is the most appropriate management?",
@@ -2625,7 +2445,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asymptomatic incidentally discovered cholelithiasis requires no treatment. Ursodeoxycholic acid or elective cholecystectomy is reserved for symptomatic biliary colic, not asymptomatic stones.",
   },
   {
-    id: "gi-15",
+    id: "gi-14",
     system: "Gastroenterology",
     topic: "Acute calculous cholecystitis",
     stem: "A 50-year-old woman presents with fever, RUQ pain, and leukocytosis. Examination reveals a positive Murphy sign, and ultrasound shows gallbladder wall thickening with stones. Which of the following is the most appropriate management?",
@@ -2640,7 +2460,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, leukocytosis, RUQ pain, a positive Murphy sign, and gallbladder wall thickening indicate acute calculous cholecystitis, which is treated with antibiotics plus cholecystectomy. ERCP is reserved for stones in the bile ducts, not for cholecystitis.",
   },
   {
-    id: "gi-16",
+    id: "gi-15",
     system: "Gastroenterology",
     topic: "Acalculous cholecystitis",
     stem: "A 68-year-old critically ill man in the ICU on mechanical ventilation develops fever, RUQ pain, and leukocytosis. Ultrasound shows a distended gallbladder without stones. Which of the following is the most likely diagnosis?",
@@ -2655,7 +2475,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A critically ill ICU patient with fever, RUQ pain, leukocytosis, and a distended gallbladder without stones has acute acalculous cholecystitis. Calculous cholecystitis would show stones, and cholangitis would feature jaundice with dilated ducts.",
   },
   {
-    id: "gi-17",
+    id: "gi-16",
     system: "Gastroenterology",
     topic: "Acute cholangitis",
     stem: "A 62-year-old man presents with fever, jaundice, and RUQ pain along with hypotension and confusion. Labs show elevated alkaline phosphatase, GGT, and direct bilirubin, and imaging shows dilated bile ducts. Which of the following is the most appropriate management?",
@@ -2670,7 +2490,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, jaundice, RUQ pain (Charcot triad) with hypotension and altered mental status (Reynolds pentad) plus dilated ducts indicate acute cholangitis, managed with IV fluids, antibiotics, and emergent ERCP. Cholecystitis would not produce jaundice with dilated ducts and is treated with cholecystectomy rather than emergent ERCP.",
   },
   {
-    id: "gi-18",
+    id: "gi-17",
     system: "Gastroenterology",
     topic: "Choledocholithiasis",
     stem: "A 47-year-old woman presents with RUQ pain. She is afebrile, and labs show elevated alkaline phosphatase, GGT, and direct bilirubin. Ultrasound shows common bile duct dilation. Which of the following is the most appropriate treatment?",
@@ -2685,7 +2505,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "RUQ pain with elevated ALP/GGT/bilirubin and CBD dilation but no fever indicates choledocholithiasis, diagnosed with ultrasound and treated with ERCP to remove the ductal stone. Without fever there is no cholangitis, but the obstructing duct stone still requires ERCP.",
   },
   {
-    id: "gi-19",
+    id: "gi-18",
     system: "Gastroenterology",
     topic: "Post-cholecystectomy diarrhea",
     stem: "A 49-year-old woman who underwent cholecystectomy 3 months ago presents with persistent diarrhea and intermittent RUQ discomfort. Workup is otherwise unremarkable. Which of the following is the most appropriate treatment for her diarrhea?",
@@ -2700,7 +2520,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Post-cholecystectomy syndrome with diarrhea is treated with cholestyramine, which binds excess bile acids. Ursodeoxycholic acid is used for gallstones/PBC and would not address bile-acid diarrhea.",
   },
   {
-    id: "gi-20",
+    id: "gi-19",
     system: "Gastroenterology",
     topic: "Cirrhosis surveillance",
     stem: "A 58-year-old man with a long history of alcohol use is diagnosed with cirrhosis based on jaundice, ascites, spider angiomas, palmar erythema, and a nodular shrunken liver. Which of the following surveillance strategies is most appropriate?",
@@ -2715,7 +2535,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Cirrhotic patients should be screened for esophageal varices annually with endoscopy and for hepatocellular carcinoma every 6 months with abdominal ultrasound. The other intervals and modalities are incorrect for cirrhosis surveillance.",
   },
   {
-    id: "gi-21",
+    id: "gi-20",
     system: "Gastroenterology",
     topic: "Bleeding esophageal varices",
     stem: "A 60-year-old man with cirrhosis presents with sudden hematemesis, melena, and hypotension. Endoscopy reveals large dilated esophageal veins that are actively bleeding. Which of the following is the most appropriate management?",
@@ -2730,7 +2550,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Actively bleeding esophageal varices are managed with IV fluids, octreotide, and antibiotics, followed by endoscopic band ligation. Non-selective beta-blockers are used to prevent bleeding in non-bleeding varices, not to treat acute hemorrhage.",
   },
   {
-    id: "gi-22",
+    id: "gi-21",
     system: "Gastroenterology",
     topic: "Non-bleeding varices prophylaxis",
     stem: "A 57-year-old man with cirrhosis is found on screening endoscopy to have medium-sized esophageal varices that are not bleeding. Which of the following is the most appropriate management to prevent variceal hemorrhage?",
@@ -2745,7 +2565,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Non-bleeding esophageal varices are managed with non-selective beta-blockers for primary prophylaxis. Octreotide and antibiotics are part of the acute bleeding regimen, not primary prophylaxis. Emergent band ligation applies to active hemorrhage; elective ligation can be an alternative for prophylaxis but is not the emergent procedure described here. Cholestyramine treats cholestatic pruritus and is unrelated.",
   },
   {
-    id: "gi-23",
+    id: "gi-22",
     system: "Gastroenterology",
     topic: "GERD without alarm features",
     stem: "A 36-year-old man presents with chronic heartburn occurring after meals and when lying down. He has no weight loss, dysphagia, anemia, or GI bleeding, and his examination is normal. Which of the following is the most appropriate next step in management?",
@@ -2760,7 +2580,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "GERD with typical symptoms and no alarm features is managed with lifestyle modification and an empiric PPI trial. Endoscopy is reserved for alarm features such as weight loss, dysphagia, anemia, or bleeding.",
   },
   {
-    id: "gi-24",
+    id: "gi-23",
     system: "Gastroenterology",
     topic: "GERD alarm features",
     stem: "A 63-year-old man with heartburn now reports unintentional weight loss, iron deficiency anemia, and difficulty swallowing solids. Which of the following is the most appropriate next step in management?",
@@ -2775,7 +2595,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Heartburn with alarm features (weight loss, anemia, dysphagia, GI bleeding, or new symptoms over age 60) warrants upper endoscopy rather than an empiric PPI trial. An empiric PPI trial is appropriate only without alarm features.",
   },
   {
-    id: "gi-25",
+    id: "gi-24",
     system: "Gastroenterology",
     topic: "Barrett esophagus",
     stem: "A 58-year-old man with long-standing GERD now reports progressive dysphagia. Endoscopy is performed and shows intestinal metaplasia of the distal esophagus. Which of the following is required for all patients with this finding?",
@@ -2790,7 +2610,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Barrett esophagus (intestinal metaplasia) found on endoscopy in long-standing GERD requires PPIs in all patients. Endoscopic radiofrequency ablation is reserved specifically for high-grade dysplasia, not for all patients.",
   },
   {
-    id: "gi-26",
+    id: "gi-25",
     system: "Gastroenterology",
     topic: "Suspected peptic ulcer",
     stem: "A 45-year-old man presents with epigastric pain and dyspepsia, and a peptic ulcer is suspected. Which of the following is the most appropriate test to obtain?",
@@ -2805,7 +2625,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "When a peptic ulcer is suspected, H. pylori testing should be performed. The other tests target biliary, motility, or pancreatic disease and are not the appropriate workup for suspected peptic ulcer disease.",
   },
   {
-    id: "gi-27",
+    id: "gi-26",
     system: "Gastroenterology",
     topic: "High-grade Barrett dysplasia",
     stem: "A 60-year-old man with Barrett esophagus undergoes surveillance endoscopy with biopsy showing high-grade dysplasia. Which of the following is the most appropriate treatment?",
@@ -2820,7 +2640,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "High-grade dysplasia in Barrett esophagus is treated with endoscopic radiofrequency ablation. PPI therapy alone is appropriate for Barrett without high-grade dysplasia but is insufficient once high-grade dysplasia is present.",
   },
   {
-    id: "gi-28",
+    id: "gi-27",
     system: "Gastroenterology",
     topic: "Esophageal cancer risk factors",
     stem: "A 55-year-old man with a 30-pack-year smoking history and heavy alcohol use, who frequently drinks very hot beverages, is found to have an esophageal malignancy. Which of the following types of esophageal cancer is most consistent with his risk-factor profile?",
@@ -2835,7 +2655,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Smoking, alcohol, and hot beverages are risk factors for esophageal squamous cell carcinoma. Adenocarcinoma is instead associated with obesity and GERD/Barrett esophagus, making it the key distractor.",
   },
   {
-    id: "gi-29",
+    id: "gi-28",
     system: "Gastroenterology",
     topic: "Esophageal adenocarcinoma risk",
     stem: "A 62-year-old obese man with long-standing GERD and Barrett esophagus develops an esophageal malignancy. Which of the following types of esophageal cancer is most consistent with his risk-factor profile?",
@@ -2850,7 +2670,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Obesity and GERD are risk factors for esophageal adenocarcinoma. Squamous cell carcinoma is instead linked to smoking, alcohol, and hot beverages, making it the tempting but incorrect choice.",
   },
   {
-    id: "gi-30",
+    id: "gi-29",
     system: "Gastroenterology",
     topic: "Diverticulosis",
     stem: "A 70-year-old asymptomatic man with a history of chronic constipation presents with painless hematochezia. Which of the following is the most appropriate diagnostic test?",
@@ -2865,7 +2685,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Painless hematochezia in an older adult with constipation suggests diverticulosis, diagnosed with colonoscopy. CT with contrast is the diagnostic test for diverticulitis, where colonoscopy is contraindicated acutely.",
   },
   {
-    id: "gi-31",
+    id: "gi-30",
     system: "Gastroenterology",
     topic: "Diverticulosis management",
     stem: "A 68-year-old man is diagnosed with diverticulosis after an episode of painless hematochezia. Which of the following is the most appropriate long-term management?",
@@ -2880,7 +2700,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Diverticulosis is managed with a high-fiber diet and physical activity. Antibiotics and surgery are not indicated for uncomplicated asymptomatic diverticulosis.",
   },
   {
-    id: "gi-32",
+    id: "gi-31",
     system: "Gastroenterology",
     topic: "Uncomplicated diverticulitis",
     stem: "A 60-year-old woman presents with LLQ pain, low-grade fever, and leukocytosis, and CT shows pericolic fat stranding without abscess, perforation, or obstruction. Which of the following is the most appropriate management?",
@@ -2895,7 +2715,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Uncomplicated diverticulitis is treated conservatively. Surgery is reserved for complicated disease, and colonoscopy is contraindicated during the acute episode.",
   },
   {
-    id: "gi-33",
+    id: "gi-32",
     system: "Gastroenterology",
     topic: "Colovesical fistula",
     stem: "A 66-year-old man with a history of recurrent diverticulitis presents with recurrent urinary tract infections, passage of air in the urine, and fecal material in the urine. Which of the following is the most appropriate diagnostic test?",
@@ -2910,22 +2730,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Recurrent UTIs with pneumaturia and fecaluria after diverticulitis indicate a colovesical fistula, diagnosed with CT abdomen using oral contrast. This complication is also seen in Crohn disease.",
   },
   {
-    id: "gi-34",
-    system: "Gastroenterology",
-    topic: "Diverticulitis diagnosis",
-    stem: "A 64-year-old man presents with LLQ abdominal pain, fever, and leukocytosis. Digital rectal exam reveals a tender palpable mass. Which of the following is the most appropriate diagnostic test?",
-    options: [
-      "CT abdomen with contrast",
-      "Colonoscopy",
-      "Abdominal ultrasound",
-      "ERCP",
-      "Barium enema",
-    ],
-    answerIndex: 0,
-    explanation: "Acute diverticulitis is diagnosed with CT of the abdomen with contrast; colonoscopy is contraindicated in the acute setting due to perforation risk. The clinical picture of LLQ pain, fever, and leukocytosis with pericolic fat stranding fits diverticulitis.",
-  },
-  {
-    id: "gi-35",
+    id: "gi-33",
     system: "Gastroenterology",
     topic: "Crohn disease",
     stem: "A 26-year-old man presents with chronic diarrhea, RLQ abdominal pain, weight loss, and perianal fistulizing disease. Colonoscopy shows skip lesions with transmural inflammation. Which of the following is a recognized risk factor for this condition?",
@@ -2940,7 +2745,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This presentation is classic for Crohn disease, for which smoking is a recognized risk factor. Notably, smoking is protective in ulcerative colitis, making this a high-yield discriminator.",
   },
   {
-    id: "gi-36",
+    id: "gi-34",
     system: "Gastroenterology",
     topic: "Colovesical fistula treatment",
     stem: "A 67-year-old man is diagnosed with a colovesical fistula complicating recurrent diverticulitis, confirmed on CT with oral contrast. Which of the following best describes the appropriate treatment?",
@@ -2955,7 +2760,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A colovesical fistula is treated with antibiotics, bowel rest, and surgical repair. Antibiotics alone or dietary measures will not close the fistula.",
   },
   {
-    id: "gi-37",
+    id: "gi-35",
     system: "Gastroenterology",
     topic: "Crohn surgical principle",
     stem: "A 30-year-old woman with Crohn disease complicated by a stricture requires surgical intervention. Which of the following best describes the appropriate surgical approach?",
@@ -2970,7 +2775,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Surgical management of Crohn disease should be as bowel-sparing as possible because of the risk of recurrent disease and short-bowel syndrome with repeated resections. Total proctocolectomy is curative for ulcerative colitis, not Crohn disease.",
   },
   {
-    id: "gi-38",
+    id: "gi-36",
     system: "Gastroenterology",
     topic: "UC cancer surveillance",
     stem: "A 34-year-old man was diagnosed with ulcerative colitis 8 years ago and remains in remission. Which of the following is the most appropriate cancer surveillance strategy?",
@@ -2985,7 +2790,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Colonoscopy surveillance in ulcerative colitis begins 8 years after diagnosis and is repeated every 1 to 3 years due to elevated colorectal cancer risk. Waiting 20 years or forgoing surveillance would miss colorectal cancer.",
   },
   {
-    id: "gi-39",
+    id: "gi-37",
     system: "Gastroenterology",
     topic: "Ulcerative colitis",
     stem: "A 28-year-old man presents with bloody diarrhea, fecal urgency, and tenesmus. Colonoscopy reveals continuous mucosal inflammation extending proximally from the rectum without skip areas. Which of the following is the most likely diagnosis?",
@@ -3000,22 +2805,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Bloody diarrhea, urgency, tenesmus, and continuous mucosal inflammation starting at the rectum indicate ulcerative colitis. Crohn disease instead shows skip lesions with transmural inflammation and perianal disease.",
   },
   {
-    id: "gi-40",
-    system: "Gastroenterology",
-    topic: "Early feeding in pancreatitis",
-    stem: "A 50-year-old man is admitted with acute alcoholic pancreatitis and treated with intravenous fluids and analgesia. By hospital day 2 his nausea has resolved and he reports feeling hungry, with only mild residual epigastric tenderness and a stable hemodynamic status. Which of the following is the most appropriate approach to nutrition in this patient?",
-    options: [
-      "Begin oral feeding as soon as it is tolerated",
-      "Maintain strict bowel rest until lipase normalizes",
-      "Keep the patient nil per os and start total parenteral nutrition",
-      "Place a nasojejunal tube for enteral feeding for at least 1 week",
-      "Withhold all nutrition until repeat CT shows resolution",
-    ],
-    answerIndex: 0,
-    explanation: "In acute pancreatitis, early oral feeding as soon as it is tolerated is recommended rather than prolonged bowel rest, which improves outcomes. Maintaining the patient nil per os pending lipase normalization or imaging reflects the outdated belief that the pancreas must be 'rested,' and parenteral or routine tube feeding is unnecessary when oral intake is tolerated.",
-  },
-  {
-    id: "gi-41",
+    id: "gi-38",
     system: "Gastroenterology",
     topic: "Diagnosing choledocholithiasis",
     stem: "A 47-year-old woman presents with right upper quadrant pain. She is afebrile, and laboratory studies show elevated alkaline phosphatase, GGT, and direct bilirubin. A stone in the common bile duct is suspected. Which of the following is the most appropriate initial diagnostic test?",
@@ -3030,7 +2820,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For suspected choledocholithiasis, the biliary system is first evaluated with transabdominal ultrasound, which can demonstrate common bile duct dilation; ERCP is reserved for treatment (stone removal) rather than the initial diagnostic step. Choosing ERCP first is a classic error because it is invasive and therapeutic, not the first-line imaging study.",
   },
   {
-    id: "gi-42",
+    id: "gi-39",
     system: "Gastroenterology",
     topic: "UC curative treatment",
     stem: "A 40-year-old woman with long-standing ulcerative colitis has refractory disease and is found to have a high risk of colorectal cancer. Which of the following is considered the curative treatment for her condition?",
@@ -3045,7 +2835,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Proctocolectomy is curative for ulcerative colitis and also eliminates the high colorectal cancer risk. Bowel-sparing resection is the principle for Crohn disease, which is not cured by surgery.",
   },
   {
-    id: "gi-43",
+    id: "gi-40",
     system: "Gastroenterology",
     topic: "Dilated duct differential",
     stem: "A 64-year-old man presents with painless jaundice and weight loss. Laboratory studies show a cholestatic pattern, and imaging reveals dilation of both the intrahepatic and extrahepatic bile ducts. He has no history of inflammatory bowel disease, and p-ANCA and antimitochondrial antibodies are negative. Which of the following is the most likely cause of his biliary obstruction?",
@@ -3060,7 +2850,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Dilation of both intrahepatic and extrahepatic ducts narrows the differential to PSC, pancreatic head cancer, and choledocholithiasis; with painless jaundice, weight loss, and negative p-ANCA/AMA, pancreatic head cancer is the most likely cause. PBC causes dilation of intrahepatic ducts only and is AMA-positive, and PSC is typically p-ANCA-positive and associated with ulcerative colitis.",
   },
   {
-    id: "gi-44",
+    id: "gi-41",
     system: "Gastroenterology",
     topic: "Colonoscopy contraindicated in diverticulitis",
     stem: "A 63-year-old man presents with left lower quadrant pain, low-grade fever, and leukocytosis. CT of the abdomen with contrast shows pericolic fat stranding consistent with acute diverticulitis. A resident proposes performing colonoscopy during this admission to confirm the diagnosis. Which of the following best describes why colonoscopy should be avoided at this time?",
@@ -3075,7 +2865,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In acute diverticulitis the diagnosis is made by CT of the abdomen with contrast, and colonoscopy is contraindicated in the acute setting because insufflation and instrumentation increase the risk of perforation of the inflamed colon. Colonoscopy is appropriate later (after resolution) to exclude malignancy, but not during the acute episode.",
   },
   {
-    id: "gi-45",
+    id: "gi-42",
     system: "Gastroenterology",
     topic: "Ulcerative colitis treatment",
     stem: "A 27-year-old woman comes to the office because of a 1-week history of moderate abdominal cramps and bloody diarrhea. She has no history of serious illness, takes no medications, and has no family history of gastrointestinal disease. She has not traveled recently or had sick contacts. Temperature is 37.3 C (99.1 F), pulse is 100/min, and blood pressure is 100/60 mm Hg. The abdomen is soft with mild diffuse tenderness. Hematocrit is 34% and WBC is 13,000/mm3. Stool cultures are negative. Colonoscopy shows inflamed, erythematous, raised mucosa over the rectum and sigmoid with the remainder of the colon appearing normal. Biopsy shows crypt branching and crypt abscesses. Which of the following is the most appropriate initial pharmacotherapy?",
@@ -3090,7 +2880,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Continuous inflammation beginning at the rectum (here limited to the rectum and sigmoid, i.e., proctosigmoiditis) with crypt branching/distortion and crypt abscesses indicates ulcerative colitis. For mild-to-moderate distal UC, first-line therapy to induce remission is a 5-aminosalicylate such as mesalamine (topical and/or oral); this is the most appropriate initial agent. Corticosteroids are escalated to when 5-ASA fails or for more severe/extensive disease. Infliximab and mercaptopurine are reserved for moderate-to-severe, steroid-refractory, or maintenance therapy, and methotrexate is not a first-line agent for inducing remission in UC. Active bloody diarrhea requires treatment, so withholding pharmacotherapy is inappropriate.",
   },
   {
-    id: "gi-46",
+    id: "gi-43",
     system: "Gastroenterology",
     topic: "IBD initial workup",
     stem: "A 27-year-old woman comes to the physician because of a 3-month history of fever, fatigue, intermittent diarrhea with some blood, and weight loss. Examination shows diffuse abdominal tenderness and increased bowel sounds. A fecal occult blood test is positive. Inflammatory bowel disease is suspected. Which of the following is the most appropriate next step in diagnosis?",
@@ -3105,7 +2895,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "When inflammatory bowel disease is suspected, colonoscopy is the next best step because it allows direct visualization and biopsy to establish the diagnosis. Elevated ESR/CRP and fecal calprotectin are supportive but nonspecific, and treatment should not be started before the diagnosis is confirmed.",
   },
   {
-    id: "gi-47",
+    id: "gi-44",
     system: "Gastroenterology",
     topic: "Crohn vs UC features",
     stem: "A 30-year-old man with chronic diarrhea and weight loss undergoes colonoscopy with biopsy. The biopsy report describes noncaseating granulomas and transmural inflammation, and endoscopy shows segments of normal mucosa interspersed with areas of inflammation. Which of the following findings is most consistent with this patient's diagnosis?",
@@ -3120,7 +2910,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Noncaseating granulomas, transmural inflammation, and skip lesions indicate Crohn disease, which characteristically produces strictures and fistulas. Continuous rectal involvement, mucosa-limited pseudopolyps, toxic megacolon, and primary sclerosing cholangitis association are features of ulcerative colitis.",
   },
   {
-    id: "gi-48",
+    id: "gi-45",
     system: "Gastroenterology",
     topic: "UC complication association",
     stem: "A 35-year-old man with a long history of ulcerative colitis develops fatigue, pruritus, and a cholestatic pattern on liver function tests. Which of the following is the gastrointestinal diagnosis most strongly associated with his colonic disease?",
@@ -3135,7 +2925,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Primary sclerosing cholangitis is the hepatobiliary condition classically associated with ulcerative colitis. Granulomas, strictures/fistulas, skip lesions, and perianal abscesses are features associated with Crohn disease rather than ulcerative colitis.",
   },
   {
-    id: "gi-49",
+    id: "gi-46",
     system: "Gastroenterology",
     topic: "Spontaneous bacterial peritonitis",
     stem: "A 58-year-old man with a history of cirrhosis comes to the emergency department because of abdominal pain. Temperature is 37.8 C (100 F). Examination shows ascites and altered mental status consistent with encephalopathy. Which of the following is the most appropriate next step in diagnosis?",
@@ -3150,7 +2940,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A cirrhotic patient with fever, ascites, abdominal pain, and encephalopathy must be evaluated for spontaneous bacterial peritonitis, which is diagnosed by paracentesis showing an ascitic fluid neutrophil count greater than 250/mm3. Imaging and endoscopy do not establish the diagnosis, and treatment should follow diagnostic paracentesis.",
   },
   {
-    id: "gi-50",
+    id: "gi-47",
     system: "Gastroenterology",
     topic: "SBP antibiotic treatment",
     stem: "A 60-year-old man with cirrhosis and ascites undergoes diagnostic paracentesis that shows an ascitic fluid neutrophil count of 480/mm3. He has abdominal pain and a temperature of 38.0 C (100.4 F). Which of the following is the most appropriate antibiotic therapy?",
@@ -3165,7 +2955,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An ascitic neutrophil count above 250/mm3 in this clinical setting confirms spontaneous bacterial peritonitis, for which a third-generation cephalosporin such as ceftriaxone is first-line therapy. Vancomycin, metronidazole, nitrofurantoin, and azithromycin do not provide appropriate empiric coverage for SBP.",
   },
   {
-    id: "gi-51",
+    id: "gi-48",
     system: "Gastroenterology",
     topic: "Hepatic encephalopathy treatment",
     stem: "A 62-year-old man with cirrhosis is brought in with confusion and asterixis. Infection and gastrointestinal bleeding have been excluded. Which of the following is the most appropriate first-line pharmacotherapy?",
@@ -3180,22 +2970,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Lactulose is the first-line treatment for hepatic encephalopathy, with rifaximin added or used when lactulose alone is insufficient. Propranolol is used for variceal prophylaxis, octreotide for active variceal bleeding, and ceftriaxone for spontaneous bacterial peritonitis.",
   },
   {
-    id: "gi-52",
-    system: "Gastroenterology",
-    topic: "Variceal bleed management",
-    stem: "A 55-year-old man with cirrhosis presents with hematemesis and hypotension. After airway protection and resuscitation with IV fluids and packed red blood cells, which of the following pharmacologic agents is most appropriate to control the bleeding source and reduce infectious complications?",
-    options: [
-      "Octreotide plus ceftriaxone",
-      "Propranolol plus lactulose",
-      "Vancomycin plus rifaximin",
-      "Metoprolol plus omeprazole",
-      "Diltiazem plus azithromycin",
-    ],
-    answerIndex: 0,
-    explanation: "Management of an active variceal bleed includes octreotide to reduce splanchnic blood flow and prophylactic ceftriaxone to lower infection risk, alongside resuscitation. Nonselective beta-blockers like propranolol are used for prophylaxis, not acute bleeding, and the other combinations do not address variceal hemorrhage.",
-  },
-  {
-    id: "gi-53",
+    id: "gi-49",
     system: "Gastroenterology",
     topic: "Pancreatitis prognosis",
     stem: "A 50-year-old man is admitted with acute pancreatitis confirmed by epigastric pain radiating to the back and an elevated serum lipase. Which of the following laboratory findings is most indicative of a poor prognosis?",
@@ -3210,7 +2985,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An elevated BUN and hypocalcemia are recognized poor prognostic markers in acute pancreatitis. The degree of lipase or amylase elevation does not correlate with severity, and hypercalcemia (rather than a poor-prognosis finding) is a cause rather than a prognostic marker.",
   },
   {
-    id: "gi-54",
+    id: "gi-50",
     system: "Gastroenterology",
     topic: "Hypertriglyceridemic pancreatitis",
     stem: "A 45-year-old man presents with acute pancreatitis and is found to have a serum triglyceride level greater than 1000 mg/dL, with no gallstones on imaging and no alcohol use. In addition to supportive care, which of the following is the most appropriate treatment directed at the underlying cause?",
@@ -3225,7 +3000,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hypertriglyceridemia-induced pancreatitis is treated with measures that lower triglycerides such as an insulin infusion, fibrates, or apheresis. Cholecystectomy and ERCP target gallstone disease, while enzyme supplementation addresses chronic pancreatic insufficiency.",
   },
   {
-    id: "gi-55",
+    id: "gi-51",
     system: "Gastroenterology",
     topic: "C. difficile colitis",
     stem: "A 68-year-old woman develops new-onset, unremitting watery diarrhea shortly after completing a course of antibiotics for a respiratory infection. Which of the following is the most appropriate treatment?",
@@ -3240,7 +3015,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "New unremitting diarrhea after a recent antibiotic course indicates Clostridioides difficile infection, which is treated with oral vancomycin or fidaxomicin. Broad-spectrum antibiotics like ceftriaxone or amoxicillin-clavulanate would worsen the condition, and antimotility agents alone are not appropriate management.",
   },
   {
-    id: "gi-56",
+    id: "gi-52",
     system: "Gastroenterology",
     topic: "S. gallolyticus and colon cancer",
     stem: "A 70-year-old man is found to have subacute bacterial endocarditis, and blood cultures grow Streptococcus gallolyticus (formerly S. bovis). Which of the following is the most appropriate next step in management?",
@@ -3407,21 +3182,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "nephrology-11",
     system: "Nephrology",
-    topic: "Acute tubular necrosis",
-    stem: "A 70-year-old man develops acute kidney injury two days after a prolonged hypotensive episode during surgery. Urinalysis reveals muddy brown granular casts. Which of the following is the most likely diagnosis?",
-    options: [
-      "Acute tubular necrosis",
-      "Acute interstitial nephritis",
-      "Prerenal azotemia",
-      "Postobstructive uropathy",
-      "Renal vein thrombosis",
-    ],
-    answerIndex: 0,
-    explanation: "AKI following ischemia or nephrotoxins with muddy brown granular casts is the classic finding of acute tubular necrosis. AIN would show WBC casts and eosinophilia, while prerenal azotemia shows bland sediment with hyaline casts.",
-  },
-  {
-    id: "nephrology-12",
-    system: "Nephrology",
     topic: "Acute interstitial nephritis",
     stem: "A 45-year-old man develops oliguria, malaise, polyarthralgias, and a maculopapular rash one week after starting a new medication. Laboratory studies show peripheral eosinophilia. Urinalysis is positive for leukocyte esterase and reveals white blood cell casts. Which of the following is the most appropriate next step in management?",
     options: [
@@ -3435,22 +3195,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Rash, fever/arthralgias, eosinophilia, leukocyte esterase, and WBC casts indicate acute interstitial nephritis, usually drug-induced; the key step is stopping the offending agent. Antibiotics treat infection (suggested falsely by leukocyte esterase) but would not address this hypersensitivity reaction.",
   },
   {
-    id: "nephrology-13",
-    system: "Nephrology",
-    topic: "Rhabdomyolysis diagnosis",
-    stem: "A 24-year-old man is found down after extended immobilization. He reports diffuse muscle pain and notes dark, tea-colored urine. Urine dipstick is strongly positive for blood, but microscopic examination shows no red blood cells. Which of the following is the most likely diagnosis?",
-    options: [
-      "Rhabdomyolysis",
-      "Glomerulonephritis",
-      "Nephrolithiasis",
-      "Acute interstitial nephritis",
-      "Bladder carcinoma",
-    ],
-    answerIndex: 0,
-    explanation: "Muscle pain, dark urine, and a dipstick positive for blood without RBCs on microscopy indicates myoglobinuria from rhabdomyolysis, which can cause ATN. True hematuria from glomerulonephritis or a stone would show RBCs on microscopy.",
-  },
-  {
-    id: "nephrology-14",
+    id: "nephrology-12",
     system: "Nephrology",
     topic: "Rhabdomyolysis management",
     stem: "A 30-year-old man is diagnosed with rhabdomyolysis after being found down. In addition to aggressive fluid resuscitation, which of the following is the most important immediate step in evaluating this patient?",
@@ -3465,7 +3210,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Muscle breakdown in rhabdomyolysis releases potassium, so checking serum potassium and obtaining an ECG to detect life-threatening hyperkalemia is essential. Biopsy, antibiotics, anticoagulation, and CT do not address the immediate electrolyte risk.",
   },
   {
-    id: "nephrology-15",
+    id: "nephrology-13",
     system: "Nephrology",
     topic: "Renal vein thrombosis",
     stem: "A 48-year-old man with membranous nephropathy presents with the sudden onset of left flank pain and gross hematuria. Laboratory studies show an elevated LDH. Which of the following is the most likely diagnosis?",
@@ -3480,7 +3225,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In a patient with nephrotic syndrome (membranous nephropathy), sudden flank pain, hematuria, and elevated LDH point to renal vein thrombosis from a hypercoagulable state. Pyelonephritis would present with fever and CVA tenderness rather than acute thrombotic infarction findings.",
   },
   {
-    id: "nephrology-16",
+    id: "nephrology-14",
     system: "Nephrology",
     topic: "Nephrotic hypercoagulability",
     stem: "A 50-year-old woman with nephrotic syndrome develops renal vein thrombosis. Which of the following best explains the hypercoagulable state in nephrotic syndrome?",
@@ -3495,7 +3240,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Nephrotic syndrome causes urinary loss of antithrombin III, producing a hypercoagulable state predisposing to renal vein thrombosis. The liver actually increases protein synthesis (including lipoproteins), so decreased hepatic synthesis is incorrect.",
   },
   {
-    id: "nephrology-17",
+    id: "nephrology-15",
     system: "Nephrology",
     topic: "ATN clinical phases",
     stem: "A 66-year-old woman recovering from acute tubular necrosis enters a phase in which she begins urinating uncontrollably and develops hypokalemia and dehydration. Which phase of acute tubular necrosis does this represent?",
@@ -3510,7 +3255,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The recovery phase of ATN is characterized by uncontrolled diuresis leading to hypokalemia and dehydration as tubular function returns before concentrating ability recovers. The maintenance phase instead causes anuria with hyperkalemia, and the initial phase shows a creatinine rise with unchanged urine output.",
   },
   {
-    id: "nephrology-18",
+    id: "nephrology-16",
     system: "Nephrology",
     topic: "Nephrotic hyperlipidemia",
     stem: "A 52-year-old man with nephrotic syndrome is found to have markedly elevated serum cholesterol and triglycerides. Which of the following best explains this finding and its clinical consequence?",
@@ -3525,7 +3270,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In nephrotic syndrome, hypoalbuminemia stimulates the liver to increase lipoprotein production, causing hyperlipidemia and an increased risk of atherosclerosis and MI (nephrology source). Antithrombin III loss explains the hypercoagulable state and thrombosis, not the dyslipidemia. Urinary protein loss raises (not lowers) cardiovascular risk, impaired vitamin D hydroxylation causes hypocalcemia/renal osteodystrophy, and decreased erythropoietin causes anemia, none of which produce hyperlipidemia.",
   },
   {
-    id: "nephrology-19",
+    id: "nephrology-17",
     system: "Nephrology",
     topic: "Renal vein thrombosis treatment",
     stem: "A 47-year-old man with membranous nephropathy and nephrotic-range proteinuria develops acute left flank pain and gross hematuria. CT venography confirms left renal vein thrombosis. Which of the following is the most appropriate treatment?",
@@ -3540,7 +3285,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Nephrotic syndrome causes a hypercoagulable state (largely from urinary loss of antithrombin III), and the resulting renal vein thrombosis is treated with systemic anticoagulation (warfarin). Corticosteroids treat the underlying glomerular disease but do not address an established clot. Antiplatelet monotherapy (aspirin) is inadequate for venous thromboembolism, IV fluids do not treat thrombosis, and there is no infection to warrant antibiotics.",
   },
   {
-    id: "nephrology-20",
+    id: "nephrology-18",
     system: "Nephrology",
     topic: "Contrast nephropathy prevention",
     stem: "A 69-year-old man with mild chronic kidney disease is scheduled to undergo a contrast-enhanced CT scan. Which of the following is the most appropriate intervention to prevent contrast-induced nephropathy?",
@@ -3555,7 +3300,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Adequate hydration is the key preventive measure for contrast-induced nephropathy by maintaining renal perfusion and diluting the contrast load. Diuretics and prophylactic dialysis are not standard preventive measures.",
   },
   {
-    id: "nephrology-21",
+    id: "nephrology-19",
     system: "Nephrology",
     topic: "Contrast nephropathy",
     stem: "A 71-year-old woman develops a rise in serum creatinine 48 hours after undergoing CT angiography. Her urine output is preserved, she is normotensive, and she has no rash, fever, or skin findings. Which of the following is the most likely diagnosis?",
@@ -3570,7 +3315,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A non-oliguric rise in creatinine appearing within 24-48 hours of an iodinated contrast study (e.g., CT angiography) is the classic presentation of contrast-induced nephropathy; creatinine typically peaks at 3-5 days and recovers in 1-2 weeks, and prevention is with hydration. Acute interstitial nephritis usually follows a drug exposure with rash, fever, or eosinophilia, none of which are present. Atheroembolic disease tends to follow arterial catheterization (not contrast alone), has a more delayed/subacute course, and is accompanied by systemic embolic signs (livedo reticularis, blue toes, eosinophilia, hypocomplementemia). Prerenal azotemia and postrenal obstruction lack supporting clinical clues here, and the tight temporal link to contrast exposure points to contrast-induced nephropathy.",
   },
   {
-    id: "nephrology-22",
+    id: "nephrology-20",
     system: "Nephrology",
     topic: "Hemodialysis indications",
     stem: "A 58-year-old man with acute kidney injury develops pericarditis, encephalopathy, and a bleeding diathesis that persist despite optimal medical therapy. Which of the following is the most appropriate next step in management?",
@@ -3585,7 +3330,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe uremic complications such as pericarditis, encephalopathy, and bleeding that are refractory to medical therapy are indications for hemodialysis (the AEIOU mnemonic: Acidosis, Electrolytes, Ingestions, Overload, Uremia). Diuretics and fluids cannot reverse established uremic syndrome.",
   },
   {
-    id: "nephrology-23",
+    id: "nephrology-21",
     system: "Nephrology",
     topic: "Hyperkalemia (mild chronic)",
     stem: "A 60-year-old man with chronic kidney disease is found to have a serum potassium of 5.6 mEq/L on routine testing. He is asymptomatic and his ECG is normal. Which of the following is the most appropriate management?",
@@ -3600,7 +3345,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Mild chronic hyperkalemia is managed with diuretics, a cation exchange medication such as patiromer, and dietary potassium restriction. IV calcium plus insulin/glucose is reserved for severe hyperkalemia, and dialysis only when refractory.",
   },
   {
-    id: "nephrology-24",
+    id: "nephrology-22",
     system: "Nephrology",
     topic: "ADPKD diagnosis",
     stem: "A 42-year-old man with long-standing hypertension is found to have palpable, bilateral, non-tender masses in the upper abdomen. His history is notable for hepatic cysts, and his mother had a cerebral aneurysm. Which of the following is the most likely diagnosis?",
@@ -3615,7 +3360,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Bilateral palpable flank masses with hepatic cysts and a family history of cerebral aneurysm in a hypertensive adult is classic for ADPKD. Renal cell carcinoma is typically unilateral and not associated with this constellation of cysts and aneurysms.",
   },
   {
-    id: "nephrology-25",
+    id: "nephrology-23",
     system: "Nephrology",
     topic: "Severe hyperkalemia",
     stem: "A 64-year-old woman with acute kidney injury has a serum potassium of 6.8 mEq/L with peaked T waves on ECG. Which of the following is the most appropriate immediate management?",
@@ -3630,7 +3375,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe hyperkalemia (>6.5 mEq/L) with ECG changes requires IV calcium gluconate to stabilize the myocardium followed by insulin with glucose to shift potassium intracellularly. Cation exchange agents and dietary measures act too slowly for this emergency, and dialysis is reserved for refractory cases.",
   },
   {
-    id: "nephrology-26",
+    id: "nephrology-24",
     system: "Nephrology",
     topic: "ADPKD management",
     stem: "A 45-year-old man with autosomal dominant polycystic kidney disease and hypertension has progressive decline in renal function. Which of the following best describes appropriate management of his condition?",
@@ -3645,7 +3390,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "ADPKD is managed with blood pressure control using ACE inhibitors and, with progression to end-stage disease, renal transplantation. Routine nephrectomy and cyst aspiration are not standard management.",
   },
   {
-    id: "nephrology-27",
+    id: "nephrology-25",
     system: "Nephrology",
     topic: "ADPKD diagnostic test",
     stem: "A 38-year-old woman with a family history of polycystic kidney disease and new hypertension undergoes evaluation for bilateral flank masses. Which of the following is the most appropriate diagnostic test?",
@@ -3660,7 +3405,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Ultrasound is the diagnostic test of choice for ADPKD, demonstrating multiple bilateral renal cysts noninvasively. Biopsy is unnecessary and inappropriate for a cystic, hereditary disorder diagnosed by imaging.",
   },
   {
-    id: "nephrology-28",
+    id: "nephrology-26",
     system: "Nephrology",
     topic: "ADPKD associations",
     stem: "A 40-year-old woman with autosomal dominant polycystic kidney disease is being counseled about associated conditions. Which of the following is a recognized association of this disorder?",
@@ -3675,7 +3420,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "ADPKD is associated with mitral valve prolapse, aortic regurgitation, colonic diverticulosis, berry (intracranial) aneurysms, and increased hemoglobin due to increased erythropoietin production by the cysts. Thus mitral valve prolapse plus elevated EPO/hemoglobin (option A) is correct. The valvular lesions of ADPKD are mitral valve prolapse and aortic regurgitation, not aortic/pulmonic/tricuspid stenosis or a bicuspid valve. ADPKD raises (not lowers) EPO and hemoglobin, so the anemia-based distractors are wrong.",
   },
   {
-    id: "nephrology-29",
+    id: "nephrology-27",
     system: "Nephrology",
     topic: "Complicated cystitis in men",
     stem: "A 48-year-old man presents with dysuria and urinary frequency without fever or flank pain. Which of the following is the most appropriate management?",
@@ -3690,7 +3435,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "All UTIs in men are considered complicated, so a urine culture should be obtained and empiric antibiotics started. Short-course single-agent therapy without culture, used for uncomplicated cystitis in women, is inappropriate in men.",
   },
   {
-    id: "nephrology-30",
+    id: "nephrology-28",
     system: "Nephrology",
     topic: "Uncomplicated cystitis",
     stem: "A 26-year-old woman presents with 2 days of dysuria and urinary frequency. She has no fever, flank pain, or vaginal discharge. Urinalysis is positive for nitrites and leukocyte esterase. Which of the following is the most appropriate treatment?",
@@ -3705,7 +3450,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Dysuria and frequency without fever or flank pain in a young woman is uncomplicated cystitis, treated empirically with nitrofurantoin for 5 days (or TMP-SMX for 3 days or single-dose fosfomycin). Fluoroquinolones and ceftriaxone are reserved for pyelonephritis or complicated infections.",
   },
   {
-    id: "nephrology-31",
+    id: "nephrology-29",
     system: "Nephrology",
     topic: "Pyelonephritis empiric therapy",
     stem: "A 32-year-old woman presents with fever, right flank pain, and costovertebral angle tenderness. She is hemodynamically stable and tolerating oral intake. Which of the following is the most appropriate empiric treatment?",
@@ -3720,7 +3465,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, flank pain, and CVA tenderness indicate pyelonephritis; a mild/moderate, stable patient is treated with an oral fluoroquinolone for 5-7 days. IV ceftriaxone is reserved for severe disease, pregnancy, or inpatients, and nitrofurantoin does not achieve adequate renal tissue levels.",
   },
   {
-    id: "nephrology-32",
+    id: "nephrology-30",
     system: "Nephrology",
     topic: "Pyelonephritis oral switch",
     stem: "A 40-year-old woman admitted with severe pyelonephritis was started on intravenous ceftriaxone. After 48 hours she is afebrile and clinically improving, and culture susceptibilities are available. Which of the following is the most appropriate next step?",
@@ -3735,7 +3480,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Patients with pyelonephritis who improve after 48 hours can be switched to oral antibiotics guided by culture results. CT for abscess is indicated only when there is no improvement, typically after 72 hours of therapy.",
   },
   {
-    id: "nephrology-33",
+    id: "nephrology-31",
     system: "Nephrology",
     topic: "Severe pyelonephritis",
     stem: "A 35-year-old woman presents with fever, flank pain, vomiting, a blood pressure of 88/54 mm Hg, and a pulse of 118/min. Which of the following is the most appropriate empiric treatment?",
@@ -3750,7 +3495,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe pyelonephritis with hypotension, tachycardia, and vomiting (or pregnancy) requires inpatient IV ceftriaxone. Oral regimens are inadequate for a septic, unstable patient who cannot reliably tolerate oral intake.",
   },
   {
-    id: "nephrology-34",
+    id: "nephrology-32",
     system: "Nephrology",
     topic: "Asymptomatic bacteriuria",
     stem: "An 80-year-old woman residing in a nursing home has a urine culture growing greater than 100,000 CFU/mL of E. coli. She has no dysuria, frequency, fever, or flank pain. Which of the following is the most appropriate management?",
@@ -3765,7 +3510,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asymptomatic bacteriuria in the general population, including elderly patients, should not be treated with antibiotics. Treatment is reserved for pregnant women, patients before urologic procedures, and renal transplant recipients within 3 months.",
   },
   {
-    id: "nephrology-35",
+    id: "nephrology-33",
     system: "Nephrology",
     topic: "Refractory pyelonephritis workup",
     stem: "A 36-year-old non-pregnant woman with pyelonephritis remains febrile with persistent flank pain despite 72 hours of appropriate antibiotic therapy. Which of the following is the most appropriate next step?",
@@ -3780,7 +3525,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pyelonephritis refractory to treatment after 72 hours warrants CT with contrast to evaluate for an abscess (ultrasound is used instead if the patient is pregnant). Simply switching or repeating urinalysis would miss a drainable abscess.",
   },
   {
-    id: "nephrology-36",
+    id: "nephrology-34",
     system: "Nephrology",
     topic: "When to treat bacteriuria",
     stem: "A 28-year-old pregnant woman at 12 weeks' gestation has a screening urine culture growing E. coli at greater than 100,000 CFU/mL. She has no urinary symptoms. Which of the following is the most appropriate management?",
@@ -3795,7 +3540,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Although asymptomatic bacteriuria is generally not treated, pregnant women are a specific exception (along with patients before urologic procedures and recent renal transplant recipients) because of the risk of pyelonephritis and obstetric complications. Therefore antibiotic treatment is indicated.",
   },
   {
-    id: "nephrology-37",
+    id: "nephrology-35",
     system: "Nephrology",
     topic: "Perinephric vs renal abscess",
     stem: "A 50-year-old man with persistent pyelonephritis is found to have flank pain that worsens specifically with leaning, movement, and walking. Which of the following is the most likely diagnosis?",
@@ -3810,7 +3555,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A perinephric abscess classically causes flank pain that worsens with leaning, movement, and walking. A renal abscess causes constant pain unrelated to movement, while a psoas abscess produces pain extending to the groin or thigh that worsens with hip extension.",
   },
   {
-    id: "nephrology-38",
+    id: "nephrology-36",
     system: "Nephrology",
     topic: "Nephrolithiasis diagnosis",
     stem: "A 44-year-old man presents with sudden, severe right flank pain radiating to the groin, gross hematuria, and nausea. He is afebrile and writhing in pain, unable to find a comfortable position. Which of the following is the most likely diagnosis?",
@@ -3825,7 +3570,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Sudden severe unilateral flank pain radiating to the groin with hematuria and restlessness, in the absence of fever, is the classic presentation of nephrolithiasis. Pyelonephritis would present with fever and CVA tenderness rather than colicky, position-independent restlessness.",
   },
   {
-    id: "nephrology-39",
+    id: "nephrology-37",
     system: "Nephrology",
     topic: "Psoas abscess",
     stem: "A 55-year-old man with complicated urinary infection develops flank pain radiating to the groin and thigh that is reproducibly worsened by hip extension. Which of the following is the most likely diagnosis?",
@@ -3840,7 +3585,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Flank pain extending to the groin or thigh and worsened by hip extension (the psoas sign) localizes to a psoas abscess. A perinephric abscess instead worsens with leaning and walking, and a renal abscess causes constant, movement-independent pain.",
   },
   {
-    id: "nephrology-40",
+    id: "nephrology-38",
     system: "Nephrology",
     topic: "Nephrolithiasis imaging",
     stem: "A 47-year-old man presents with sudden severe right flank pain radiating to the groin and gross hematuria, suggestive of a kidney stone. Which of the following is the most appropriate next step to confirm the diagnosis?",
@@ -3855,7 +3600,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Noncontrast abdominal CT is the next step to diagnose nephrolithiasis in most adults. Ultrasound is preferred only in children and pregnant women to avoid radiation; contrast is not needed to visualize stones.",
   },
   {
-    id: "nephrology-41",
+    id: "nephrology-39",
     system: "Nephrology",
     topic: "Stone imaging in pregnancy",
     stem: "A 29-year-old woman at 18 weeks' gestation presents with severe left flank pain radiating to the groin and hematuria. Which of the following is the most appropriate initial imaging study?",
@@ -3870,7 +3615,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In pregnant women (and children), ultrasound is the preferred imaging study for suspected nephrolithiasis to avoid ionizing radiation. Noncontrast CT, the standard for nonpregnant adults, is avoided here because of fetal radiation exposure.",
   },
   {
-    id: "nephrology-42",
+    id: "nephrology-40",
     system: "Nephrology",
     topic: "Stone prevention diet",
     stem: "A 40-year-old man with recurrent calcium oxalate stones asks how to prevent future stones. Which of the following dietary recommendations is most appropriate?",
@@ -3885,7 +3630,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stone prevention emphasizes increased fluid intake with reduced sodium, oxalate, and animal protein, plus increased citrate, potassium, and dietary calcium. Severe calcium restriction is counterproductive, and vitamin C is metabolized to oxalate and increases stone risk.",
   },
   {
-    id: "nephrology-43",
+    id: "nephrology-41",
     system: "Nephrology",
     topic: "Obstructing stone with sepsis",
     stem: "A 52-year-old man with a known obstructing ureteral stone develops fever, hypotension, and tachycardia consistent with systemic infection. Which of the following is the most appropriate next step in management?",
@@ -3900,7 +3645,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An obstructing ureteral stone with systemic signs of infection (fever, hypotension, tachycardia) is a urologic emergency. The infected, obstructed collecting system must be urgently decompressed with percutaneous nephrostomy (or retrograde ureteral stent) for drainage. Definitive stone-removal procedures (ESWL, ureterorenoscopy, percutaneous nephrolithotomy) and conservative passage strategies (hydration plus an alpha blocker, used for stones <10 mm) are all deferred until the infection and obstruction are controlled.",
   },
   {
-    id: "nephrology-44",
+    id: "nephrology-42",
     system: "Nephrology",
     topic: "Thiazides for stones",
     stem: "A 45-year-old woman with recurrent calcium stones and hypercalciuria is started on a medication to reduce stone formation. Which of the following best describes the mechanism of a thiazide diuretic in this setting?",
@@ -3915,7 +3660,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Thiazides increase renal tubular calcium reabsorption, thereby lowering urinary calcium and reducing calcium stone formation. Increasing urinary citrate is the mechanism of potassium citrate, not thiazides.",
   },
   {
-    id: "nephrology-45",
+    id: "nephrology-43",
     system: "Nephrology",
     topic: "Vitamin C and stones",
     stem: "A 38-year-old man with a history of calcium oxalate stones reports taking high-dose vitamin C supplements daily. Which of the following best explains why this is a risk factor for his stones?",
@@ -3930,7 +3675,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "High vitamin C intake increases stone risk because vitamin C is metabolized to oxalate, raising urinary oxalate available to form calcium oxalate stones. It does not act primarily by changing urinary calcium or citrate.",
   },
   {
-    id: "nephrology-46",
+    id: "nephrology-44",
     system: "Nephrology",
     topic: "Potassium citrate for stones",
     stem: "A 50-year-old man with recurrent calcium stones is prescribed potassium citrate. Which of the following best explains how this agent prevents stone formation?",
@@ -3945,7 +3690,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Potassium citrate increases urinary citrate, which binds calcium in the urine and prevents calcium crystal aggregation into stones. Increased renal calcium reabsorption is the mechanism of thiazides, not potassium citrate.",
   },
   {
-    id: "nephrology-47",
+    id: "nephrology-45",
     system: "Nephrology",
     topic: "Small stone management",
     stem: "A 36-year-old man is found to have a 6-mm distal ureteral stone with normal vital signs and no signs of infection. Which of the following is the most appropriate management?",
@@ -3960,7 +3705,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stones smaller than 10 mm are likely to pass spontaneously and are managed with hydration and an alpha blocker (medical expulsive therapy). Invasive procedures are reserved for larger stones or those that fail to pass.",
   },
   {
-    id: "nephrology-48",
+    id: "nephrology-46",
     system: "Nephrology",
     topic: "Proximal large stone",
     stem: "A 49-year-old woman with a normal BMI has a 13-mm proximal ureteral stone that has not passed. She is afebrile and stable. Which of the following is the most appropriate management?",
@@ -3975,7 +3720,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Proximal stones larger than 10 mm are treated with extracorporeal shock wave lithotripsy. Medical expulsive therapy is reserved for stones under 10 mm, and lithotripsy is contraindicated in class 3 obesity (BMI >40), which this patient does not have.",
   },
   {
-    id: "nephrology-49",
+    id: "nephrology-47",
     system: "Nephrology",
     topic: "Lithotripsy contraindication",
     stem: "A 46-year-old man with a BMI of 44 kg/m2 has a 12-mm proximal ureteral stone. The team is selecting a stone removal procedure. Which of the following is a contraindication to extracorporeal shock wave lithotripsy in this patient?",
@@ -3990,7 +3735,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Extracorporeal shock wave lithotripsy is contraindicated in class 3 obesity (BMI >40) because the increased skin-to-stone distance reduces efficacy. An alternative approach such as ureterorenoscopy or nephrolithotomy would be selected instead.",
   },
   {
-    id: "nephrology-50",
+    id: "nephrology-48",
     system: "Nephrology",
     topic: "Very large stone management",
     stem: "A 53-year-old woman is found to have a 22-mm stone in the renal pelvis. She is stable and afebrile. Which of the following is the most appropriate management?",
@@ -4005,7 +3750,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stones larger than 20 mm are best treated with percutaneous nephrolithotomy, which removes a large stone burden directly. Shock wave lithotripsy and ureterorenoscopy are suited to smaller stones.",
   },
   {
-    id: "nephrology-51",
+    id: "nephrology-49",
     system: "Nephrology",
     topic: "Middle/distal large stone",
     stem: "A 41-year-old man has a 14-mm stone lodged in the distal ureter. He is hemodynamically stable without infection. Which of the following is the most appropriate management?",
@@ -4020,7 +3765,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Middle and distal stones larger than 10 mm are best managed with ureterorenoscopy. Shock wave lithotripsy is favored for large proximal stones, while medical expulsive therapy is reserved for stones under 10 mm.",
   },
   {
-    id: "nephrology-52",
+    id: "nephrology-50",
     system: "Nephrology",
     topic: "Dialysis for volume overload",
     stem: "A 59-year-old man with acute kidney injury develops progressive shortness of breath, pulmonary edema, and hypoxemia. He remains markedly volume overloaded despite high-dose intravenous loop diuretics. Which of the following is the most appropriate next step in management?",
@@ -4035,7 +3780,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Refractory volume overload is one of the classic indications for hemodialysis (mnemonic: Ingestions, Volume overload, Uremia, Acidosis, Electrolytes) when it does not respond to medical therapy such as diuretics. Giving more saline would worsen the overload, and an ACE inhibitor does not acutely remove the excess volume.",
   },
   {
-    id: "nephrology-53",
+    id: "nephrology-51",
     system: "Nephrology",
     topic: "Dialysis for toxic ingestion",
     stem: "A 47-year-old man is brought to the emergency department after a methanol overdose. Despite fomepizole, fluid resuscitation, and bicarbonate therapy, he develops a worsening, refractory high anion gap metabolic acidosis with an arterial pH of 7.05. Which of the following is the most appropriate next step in management?",
@@ -4050,37 +3795,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Both a dialyzable toxic ingestion (e.g., methanol) and a refractory high anion gap metabolic acidosis are indications for hemodialysis per the AEIOU mnemonic (Acidosis, Electrolytes, Ingestions, Overload of volume, Uremia) when medical therapy fails; HD also directly removes the toxin and corrects the acidosis. Intravenous insulin with glucose and sodium polystyrene sulfonate treat hyperkalemia, not the ingestion or acidosis, and the resin cannot remove a dialyzable toxin. Additional saline will not correct a refractory acidosis, and oral potassium citrate is a slow chronic alkali therapy inappropriate for acute severe acidosis.",
   },
   {
-    id: "nephrology-54",
-    system: "Nephrology",
-    topic: "Bacteriuria post renal transplant",
-    stem: "A 52-year-old woman who underwent renal transplantation 6 weeks ago has a surveillance urine culture growing greater than 100,000 CFU/mL of E. coli. She has no urinary symptoms, fever, or graft tenderness. Which of the following is the most appropriate management?",
-    options: [
-      "Treat with antibiotics",
-      "No treatment, as she is asymptomatic",
-      "Reduce immunosuppression",
-      "Obtain a renal biopsy",
-      "Start chronic antibiotic suppression",
-    ],
-    answerIndex: 0,
-    explanation: "Patients within 3 months of renal transplant are an exception to the rule of not treating asymptomatic bacteriuria and should be treated, similar to pregnant women and those undergoing urologic procedures. Withholding treatment applies only to the general population, not to recently transplanted patients.",
-  },
-  {
-    id: "nephrology-55",
-    system: "Nephrology",
-    topic: "Bacteriuria before urologic procedure",
-    stem: "A 70-year-old man is scheduled for a transurethral procedure on his prostate. A preoperative urine culture grows greater than 100,000 CFU/mL of E. coli, but he has no dysuria, frequency, fever, or flank pain. Which of the following is the most appropriate management?",
-    options: [
-      "Treat with antibiotics before the procedure",
-      "No antibiotics, as he is asymptomatic",
-      "Repeat the urine culture in 3 months",
-      "Obtain a renal ultrasound",
-      "Begin chronic suppressive antibiotics",
-    ],
-    answerIndex: 0,
-    explanation: "Asymptomatic bacteriuria is generally not treated, but patients about to undergo a urologic procedure are one of the exceptions (along with pregnant women and patients within 3 months of renal transplant) and should receive antibiotics. Withholding treatment is correct for the general population but not for a patient facing instrumentation of the urinary tract.",
-  },
-  {
-    id: "nephrology-56",
+    id: "nephrology-52",
     system: "Nephrology",
     topic: "Mild pyelonephritis duration",
     stem: "A 30-year-old woman with mild pyelonephritis is hemodynamically stable, tolerating oral intake, and is being treated as an outpatient with an oral fluoroquinolone. Which of the following is the most appropriate duration of therapy?",
@@ -4095,7 +3810,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Mild to moderate outpatient pyelonephritis is treated with an oral fluoroquinolone for 5 to 7 days. A single dose and a 3-day course are regimens used for uncomplicated cystitis (fosfomycin and TMP-SMX, respectively), not pyelonephritis.",
   },
   {
-    id: "nephrology-57",
+    id: "nephrology-53",
     system: "Nephrology",
     topic: "ADPKD erythrocytosis",
     stem: "A 44-year-old man with autosomal dominant polycystic kidney disease is found to have an elevated hemoglobin and hematocrit on routine laboratory testing. Which of the following best explains this finding?",
@@ -4110,22 +3825,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "ADPKD is associated with erythrocytosis because the cysts produce increased erythropoietin, raising hemoglobin. This contrasts with most other chronic kidney diseases, in which decreased EPO production causes anemia.",
   },
   {
-    id: "nephrology-58",
-    system: "Nephrology",
-    topic: "Obstructing stone drainage",
-    stem: "A 50-year-old man with an obstructing ureteral stone develops fever, hypotension, and tachycardia. After starting broad-spectrum antibiotics and fluids, the team plans urgent decompression of the obstructed collecting system. Which of the following procedures is most appropriate for drainage in this setting?",
-    options: [
-      "Percutaneous nephrostomy",
-      "Extracorporeal shock wave lithotripsy",
-      "Ureterorenoscopy with stone extraction",
-      "Percutaneous nephrolithotomy",
-      "Open ureterolithotomy",
-    ],
-    answerIndex: 0,
-    explanation: "An obstructing stone with systemic infection requires emergent decompression, typically with percutaneous nephrostomy for drainage, before any attempt at definitive stone removal. Lithotripsy and ureteroscopy aim to fragment or extract the stone and are deferred until the infection is controlled.",
-  },
-  {
-    id: "nephrology-59",
+    id: "nephrology-54",
     system: "Nephrology",
     topic: "ATN urine casts",
     stem: "A 58-year-old man is admitted to the ICU with septic shock and develops acute kidney injury. His serum creatinine rises from 0.9 to 2.8 mg/dL over 48 hours. Urinalysis is performed. Which of the following urinary findings is most consistent with acute tubular necrosis?",
@@ -4140,7 +3840,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute tubular necrosis, especially in the setting of sepsis or ischemia, classically produces muddy brown granular casts and renal tubular epithelial cell casts on urinalysis. RBC casts with dysmorphic erythrocytes indicate a nephritic (glomerular) process; fatty casts with oval fat bodies and lipiduria indicate nephrotic syndrome; WBC casts with urine eosinophils suggest acute interstitial nephritis; and hyaline casts are nonspecific (seen in prerenal states and in healthy, concentrated urine) rather than diagnostic of ATN.",
   },
   {
-    id: "nephrology-60",
+    id: "nephrology-55",
     system: "Nephrology",
     topic: "AIN urinalysis",
     stem: "A 64-year-old woman develops rising creatinine one week after starting a new medication. Urinalysis shows white blood cell casts and urine eosinophils. Which of the following is the most likely diagnosis?",
@@ -4155,7 +3855,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "White blood cell casts together with urine eosinophils are characteristic of acute interstitial nephritis, often drug-induced. Muddy brown granular casts indicate ATN, fatty casts indicate nephrotic syndrome, and RBC casts indicate a nephritic process.",
   },
   {
-    id: "nephrology-61",
+    id: "nephrology-56",
     system: "Nephrology",
     topic: "Nephritic vs nephrotic casts",
     stem: "A 30-year-old man presents with hypertension, hematuria, and edema. Urinalysis is most likely to show which of the following findings, indicating a nephritic process?",
@@ -4170,7 +3870,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Red blood cell (RBC) casts are the hallmark urinary finding of a nephritic process (glomerulonephritis), consistent with this patient's hypertension, hematuria, and edema. Fatty casts (with oval fat bodies) indicate nephrotic syndrome; muddy brown granular casts indicate acute tubular necrosis (ATN); WBC casts suggest interstitial nephritis or pyelonephritis; and broad waxy casts indicate advanced chronic kidney disease.",
   },
   {
-    id: "nephrology-62",
+    id: "nephrology-57",
     system: "Nephrology",
     topic: "Nephrotic syndrome casts",
     stem: "A 45-year-old woman has 4.5 g of proteinuria per 24 hours, hypoalbuminemia, and peripheral edema. Which of the following urinary findings is most consistent with her diagnosis?",
@@ -4185,7 +3885,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Nephrotic syndrome (proteinuria greater than 3.5 g/24 hr, hypoalbuminemia, edema) is associated with fatty casts on urinalysis. RBC casts indicate a nephritic process, muddy brown casts indicate ATN, and WBC casts suggest interstitial nephritis.",
   },
   {
-    id: "nephrology-63",
+    id: "nephrology-58",
     system: "Nephrology",
     topic: "Prerenal AKI FeNa",
     stem: "A 72-year-old man is admitted with poor oral intake and is found to have an elevated creatinine. His BUN:creatinine ratio is greater than 20. Which of the following additional findings would most support a prerenal cause of his acute kidney injury?",
@@ -4200,7 +3900,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Prerenal azotemia is characterized by a BUN:creatinine ratio greater than 20 along with avid sodium retention, producing a fractional excretion of sodium less than 1% and urine sodium less than 20. High FeNa, high urine sodium, and muddy brown casts instead indicate established tubular injury (ATN).",
   },
   {
-    id: "nephrology-64",
+    id: "nephrology-59",
     system: "Nephrology",
     topic: "Postrenal AKI catheter",
     stem: "A 70-year-old man with several hours of minimal urine output is evaluated. A bladder scan shows a markedly elevated post-void residual volume. Which of the following is the most appropriate next step in management?",
@@ -4215,7 +3915,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Limited urine output with an elevated bladder scan indicates bladder outlet obstruction, and bladder catheterization is both diagnostic and therapeutic, relieving the post-renal obstruction immediately. Fluids, diuretics, and dialysis do not address the obstruction, and imaging is unnecessary before decompressing a clearly distended bladder.",
   },
   {
-    id: "nephrology-65",
+    id: "nephrology-60",
     system: "Nephrology",
     topic: "Nephrotic infection risk",
     stem: "A 40-year-old man with nephrotic syndrome is at increased risk for serious bacterial infections. Which of the following best explains this increased risk?",
@@ -4230,7 +3930,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In nephrotic syndrome, urinary loss of immunoglobulins impairs humoral immunity and increases the risk of infection. Loss of antithrombin III explains the hypercoagulable state, and increased hepatic lipoprotein synthesis explains the hypercholesterolemia, but neither accounts for the infection risk.",
   },
   {
-    id: "nephrology-66",
+    id: "nephrology-61",
     system: "Nephrology",
     topic: "Rhabdomyolysis dipstick",
     stem: "A 68-year-old man is brought in after being found on the floor at the bottom of his stairs. Labs show acute kidney injury and a creatine kinase greater than 20,000 U/L. Urinalysis shows 2+ blood but no red blood cells on microscopy. Which of the following best explains this urinalysis finding?",
@@ -4532,21 +4232,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "id-20",
     system: "Infectious Diseases",
-    topic: "Outpatient CAP with comorbidities",
-    stem: "A 58-year-old man with diabetes presents as an outpatient with fever and cough consistent with community-acquired pneumonia. He is clinically stable. Which of the following is the most appropriate treatment?",
-    options: [
-      "Respiratory fluoroquinolone, or a beta-lactam plus a macrolide",
-      "Amoxicillin alone",
-      "Doxycycline alone",
-      "Vancomycin plus piperacillin-tazobactam",
-      "Cefepime monotherapy",
-    ],
-    answerIndex: 0,
-    explanation: "In outpatients with comorbidities such as diabetes or malignancy, CAP is treated with a respiratory fluoroquinolone or a beta-lactam plus a macrolide. Amoxicillin or doxycycline monotherapy is reserved for previously healthy patients without comorbidities.",
-  },
-  {
-    id: "id-21",
-    system: "Infectious Diseases",
     topic: "CURB-65 disposition",
     stem: "A 72-year-old man presents with community-acquired pneumonia. He is confused, and his blood pressure is 95/60 mm Hg. Using CURB-65 to guide disposition, which of the following is the most appropriate next step?",
     options: [
@@ -4560,7 +4245,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "With confusion plus age 65 or older, his CURB-65 score is at least 2 (BP 95/60 does not meet the <90/60 criterion), warranting floor admission; an ICU is reserved for a score of 3 or more. CURB-65 criteria are confusion, urea >20, RR at least 30, BP <90/60, and age at least 65.",
   },
   {
-    id: "id-22",
+    id: "id-21",
     system: "Infectious Diseases",
     topic: "Inpatient CAP antibiotics",
     stem: "A 70-year-old man is admitted to the general medical floor for community-acquired pneumonia after his CURB-65 score indicated the need for hospitalization. Which of the following antibiotic regimens is most appropriate?",
@@ -4575,7 +4260,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hospitalized (non-ICU) CAP is treated with a respiratory fluoroquinolone or a beta-lactam plus a macrolide. Vancomycin plus cefepime targets hospital-acquired pneumonia, and the dual beta-lactam plus fluoroquinolone combination is reserved for severe (ICU-level) CAP.",
   },
   {
-    id: "id-23",
+    id: "id-22",
     system: "Infectious Diseases",
     topic: "Severe CAP antibiotics",
     stem: "A 66-year-old man with CAP has a respiratory rate of 34/min, PaO2 of 55 mm Hg on 6 L of oxygen, and a blood pressure of 88/54 mm Hg, requiring ICU admission. Which of the following is the most appropriate antibiotic regimen?",
@@ -4590,7 +4275,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe CAP requiring ICU care is treated with a beta-lactam plus either a fluoroquinolone or a macrolide. Monotherapy or oral outpatient regimens are inadequate for ICU-level disease.",
   },
   {
-    id: "id-24",
+    id: "id-23",
     system: "Infectious Diseases",
     topic: "Typical vs atypical pneumonia CXR",
     stem: "A previously healthy 45-year-old man presents with fever and cough, and a chest radiograph is obtained as the next step. The radiograph shows a dense lobar consolidation. Which of the following does this radiographic pattern most strongly suggest?",
@@ -4605,7 +4290,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Lobar consolidation indicates typical pneumococcal pneumonia, whereas diffuse interstitial infiltrates suggest atypical pneumonia. The consolidation pattern is the discriminating radiographic feature.",
   },
   {
-    id: "id-25",
+    id: "id-24",
     system: "Infectious Diseases",
     topic: "Hospital-acquired pneumonia",
     stem: "A 65-year-old man hospitalized for 5 days for an unrelated condition develops fever, purulent cough, and a new infiltrate on chest radiograph. Which of the following is the most appropriate treatment?",
@@ -4620,7 +4305,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pneumonia developing after 48 hours in the hospital is hospital-acquired pneumonia and requires broad coverage including MRSA and Pseudomonas, such as vancomycin plus cefepime or piperacillin-tazobactam. Standard CAP regimens do not cover these resistant organisms.",
   },
   {
-    id: "id-26",
+    id: "id-25",
     system: "Infectious Diseases",
     topic: "Empyema management",
     stem: "A 55-year-old man being treated for suspected community-acquired pneumonia shows no improvement after 72 hours of antibiotics, and imaging now reveals a loculated pleural effusion. Which of the following is the most appropriate next step in management?",
@@ -4635,7 +4320,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Failure to improve with a new pleural effusion suggests empyema, which requires drainage plus anaerobic coverage such as clindamycin or ampicillin-sulbactam. Simply continuing or de-escalating antibiotics without drainage will not resolve an empyema.",
   },
   {
-    id: "id-27",
+    id: "id-26",
     system: "Infectious Diseases",
     topic: "Latent TB short-course therapy",
     stem: "An asymptomatic 30-year-old man without HIV has a positive IGRA and a normal chest radiograph. Which of the following is the most appropriate treatment?",
@@ -4650,7 +4335,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A positive IGRA or PPD with a negative chest radiograph and no symptoms defines latent TB, which in a non-HIV patient can be treated with isoniazid plus rifapentine weekly for 3 months. The full RIPE regimen is reserved for active disease.",
   },
   {
-    id: "id-28",
+    id: "id-27",
     system: "Infectious Diseases",
     topic: "Active TB workup and treatment",
     stem: "A 44-year-old man presents with several weeks of fever, productive cough, and night sweats. After collecting an acid-fast bacillus smear, culture, and NAAT, which of the following treatment regimens is most appropriate?",
@@ -4665,7 +4350,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Symptomatic, confirmed active TB is treated with the RIPE regimen (rifampin, isoniazid, pyrazinamide, ethambutol) for 2 months followed by rifampin-isoniazid for 4 months. The isoniazid-rifapentine and isoniazid-pyridoxine regimens are for latent TB, not active disease.",
   },
   {
-    id: "id-29",
+    id: "id-28",
     system: "Infectious Diseases",
     topic: "When to use IGRA over PPD",
     stem: "A clinician is deciding whether to use IGRA rather than a tuberculin skin test for TB screening. For which of the following patient groups is IGRA specifically preferred?",
@@ -4680,22 +4365,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "IGRA is preferred in HIV patients (who may lack enough CD4 cells to mount a PPD response) and in those with prior BCG vaccination (to avoid false-positive PPDs). Symptomatic patients require AFB smear, culture, and NAAT rather than a screening test.",
   },
   {
-    id: "id-30",
-    system: "Infectious Diseases",
-    topic: "TB isolation precautions",
-    stem: "A patient with suspected active pulmonary tuberculosis is being admitted and must be transported to radiology. Which of the following is the most appropriate infection control measure?",
-    options: [
-      "Place in an airborne infection isolation room and have the patient wear a surgical mask during transport",
-      "Use contact precautions with gown and gloves only",
-      "Place in a standard private room with droplet precautions",
-      "Allow a shared room with a non-immunocompromised patient",
-      "No precautions are needed once antibiotics are started",
-    ],
-    answerIndex: 0,
-    explanation: "Active TB requires airborne precautions: the patient must be in an airborne infection isolation room and wear a surgical mask during transport. This is why a patient with active TB cannot share a room with another patient.",
-  },
-  {
-    id: "id-31",
+    id: "id-29",
     system: "Infectious Diseases",
     topic: "Ventilator-associated pneumonia",
     stem: "A patient in the ICU who was recently extubated develops fever, cough with purulent sputum, and a new infiltrate on chest radiograph within 48 hours of extubation. Which of the following is the most appropriate next step in management?",
@@ -4710,7 +4380,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This presentation is ventilator-associated pneumonia, and the next step is Gram stain and culture of respiratory secretions, which is obtained to identify the organism and guide targeted broad-spectrum IV therapy (e.g., vancomycin plus an antipseudomonal beta-lactam). Empiric oral amoxicillin is inappropriate for this high-risk, resistant-organism setting; CT pulmonary angiography evaluates pulmonary embolism, not pneumonia; re-intubation is not indicated absent respiratory failure; and bronchoscopic pleural drainage applies to empyema, not VAP.",
   },
   {
-    id: "id-32",
+    id: "id-30",
     system: "Infectious Diseases",
     topic: "TB drug-induced liver injury",
     stem: "A 35-year-old woman on RIPE therapy for active tuberculosis presents with jaundice, right upper quadrant pain, and markedly elevated transaminases. Which of the following is the most appropriate next step in management?",
@@ -4725,7 +4395,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Drug-induced liver injury from TB therapy requires stopping the regimen and, after liver function normalizes, restarting a non-hepatotoxic regimen such as ethambutol, streptomycin, and fluoroquinolones. Rifampin, isoniazid, and pyrazinamide are the hepatotoxic agents (RIP your liver), whereas ethambutol is safe.",
   },
   {
-    id: "id-33",
+    id: "id-31",
     system: "Infectious Diseases",
     topic: "Rocky Mountain spotted fever",
     stem: "A 12-year-old girl from North Carolina presents with fever, severe headache, hyponatremia, thrombocytopenia, and a petechial rash on her wrists and ankles. Which of the following is the most appropriate treatment?",
@@ -4740,7 +4410,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, headache, hyponatremia, thrombocytopenia, and a centripetal petechial rash starting on the wrists and ankles indicate Rocky Mountain spotted fever, treated with doxycycline even in children under 8 for short courses. Withholding doxycycline due to age is a classic error. Chloramphenicol is the historical alternative but is inferior (higher mortality, aplastic anemia risk); ceftriaxone, amoxicillin, and azithromycin are not effective against Rickettsia rickettsii.",
   },
   {
-    id: "id-34",
+    id: "id-32",
     system: "Infectious Diseases",
     topic: "Blastomycosis",
     stem: "A 42-year-old construction worker from Wisconsin presents with cough, fever, violaceous verrucous skin lesions, and lytic bone lesions. Which of the following is the most appropriate treatment for his mild-to-moderate disease?",
@@ -4755,7 +4425,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Verrucous skin lesions and lytic bone lesions in a patient from the upper Midwest indicate blastomycosis, treated with oral itraconazole for mild-to-moderate disease. IV amphotericin B is reserved for severe disease or immunocompromised patients.",
   },
   {
-    id: "id-35",
+    id: "id-33",
     system: "Infectious Diseases",
     topic: "Severe blastomycosis",
     stem: "A 50-year-old immunocompromised man from Wisconsin presents with severe disseminated blastomycosis involving the lungs, skin, and bone. Which of the following is the most appropriate treatment?",
@@ -4770,7 +4440,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For severe disease or immunocompromised patients, blastomycosis is treated with IV amphotericin B. Oral itraconazole is reserved for mild-to-moderate disease in immunocompetent patients.",
   },
   {
-    id: "id-36",
+    id: "id-34",
     system: "Infectious Diseases",
     topic: "Ehrlichiosis",
     stem: "A 35-year-old hiker from Arkansas presents with high fever, malaise, leukopenia, thrombocytopenia, and elevated LFTs, but notably no rash. A peripheral smear shows intracytoplasmic morulae within monocytes. Which of the following is the most appropriate next step in management?",
@@ -4785,7 +4455,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This spotless RMSF-like illness with intracytoplasmic morulae in monocytes is ehrlichiosis, and empiric doxycycline should be started before testing is confirmed. The absence of rash distinguishes it from classic RMSF, but treatment is still doxycycline and should not be delayed.",
   },
   {
-    id: "id-37",
+    id: "id-35",
     system: "Infectious Diseases",
     topic: "Disseminated histoplasmosis",
     stem: "A 35-year-old woman presents with fever, weight loss, oral ulcers, hepatosplenomegaly, bilateral hilar lymphadenopathy with central calcification, pancytopenia, and elevated transaminases. Which of the following is the most appropriate treatment?",
@@ -4800,7 +4470,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Disseminated histoplasmosis is treated with IV amphotericin B for 1-2 weeks followed by oral itraconazole for at least 1 year. Single-agent oral itraconazole is insufficient for severe disseminated disease.",
   },
   {
-    id: "id-38",
+    id: "id-36",
     system: "Infectious Diseases",
     topic: "Disseminated gonococcal infection",
     stem: "A 22-year-old woman presents with fever, migratory polyarthralgias, tenosynovitis, and scattered painless vesiculopustular lesions on her extremities. After NAAT confirms the diagnosis, which of the following is the most appropriate treatment?",
@@ -4815,7 +4485,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The triad of polyarthralgia/tenosynovitis with painless pustular skin lesions (arthritis-dermatitis syndrome) indicates disseminated gonococcal infection, diagnosed by NAAT and treated with a third-generation cephalosporin (e.g., ceftriaxone). Doxycycline or azithromycin alone is inadequate for disseminated gonococcal disease, and N. gonorrhoeae is now widely resistant to penicillin G; vancomycin targets gram-positive organisms and is irrelevant here.",
   },
   {
-    id: "id-39",
+    id: "id-37",
     system: "Infectious Diseases",
     topic: "P. vivax/ovale malaria",
     stem: "A 35-year-old man from Brazil presents with fevers occurring every 48 hours, and a peripheral smear shows Schuffner's dots within infected red cells. Which of the following is the most appropriate treatment?",
@@ -4830,7 +4500,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Tertian fevers (every 48 hours) with Schuffner's dots indicate P. vivax or P. ovale, treated with chloroquine plus primaquine; primaquine eliminates the hepatic hypnozoites to prevent relapse. Chloroquine alone fails to eradicate the dormant liver forms.",
   },
   {
-    id: "id-40",
+    id: "id-38",
     system: "Infectious Diseases",
     topic: "Early localized Lyme disease",
     stem: "A 32-year-old hiker from Connecticut presents with fever, fatigue, and a single erythema migrans rash on her upper thigh. Which of the following is the most appropriate next step in management?",
@@ -4845,7 +4515,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A single erythema migrans lesion is diagnostic of early Lyme disease, so treatment with doxycycline should begin immediately without serology. Serologic testing (ELISA then Western blot) is reserved for later/disseminated disease, not classic erythema migrans.",
   },
   {
-    id: "id-41",
+    id: "id-39",
     system: "Infectious Diseases",
     topic: "Severe malaria",
     stem: "A traveler returning from West Africa presents with fever, confusion, hemoglobinuria, thrombocytopenia, pulmonary edema, metabolic acidosis, and severe hypoglycemia. Which of the following is the most appropriate treatment, and what test should precede it?",
@@ -4860,7 +4530,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is severe (likely falciparum) malaria, treated with artesunate; every patient should be screened for G6PD deficiency first because the drug increases the risk of hemolytic anemia. Chloroquine is inadequate for severe falciparum disease.",
   },
   {
-    id: "id-42",
+    id: "id-40",
     system: "Infectious Diseases",
     topic: "Severe dengue management",
     stem: "A 24-year-old woman returning from Puerto Rico presents with high fever, diffuse myalgias, mucosal bleeding, abdominal pain, a rising hematocrit, and thrombocytopenia below 50,000/microL. Which of the following is the most appropriate next step in management?",
@@ -4875,7 +4545,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe dengue with plasma leakage (rising hematocrit), bleeding, and thrombocytopenia requires aggressive IV fluids to prevent death from shock. Platelet transfusion is not the priority and does not address the capillary leak that drives mortality.",
   },
   {
-    id: "id-43",
+    id: "id-41",
     system: "Infectious Diseases",
     topic: "Amebic liver abscess",
     stem: "A 30-year-old man who returned 1 week ago from Mexico presents with fever, several days of bloody diarrhea, and right upper quadrant pain. Ultrasound shows a single hypoechoic lesion in the right lobe of the liver. He continues to have active diarrhea. Which of the following is the most appropriate next diagnostic step, followed by the correct treatment?",
@@ -4890,7 +4560,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, bloody diarrhea, RUQ pain, and a solitary right-lobe liver lesion after travel to an endemic area indicate invasive Entamoeba histolytica (amebic colitis with liver abscess). Because the patient has active diarrhea, stool PCR is the highest-yield diagnostic test (microscopy/O&P cannot distinguish E. histolytica from nonpathogenic E. dispar). Treatment is a tissue agent, metronidazole, followed by a luminal agent (paromomycin) to eradicate intraluminal cysts and prevent relapse. Percutaneous drainage is reserved for large abscesses, impending rupture, left-lobe lesions, or failure of medical therapy, not uncomplicated abscesses. Albendazole (hydatid/helminths) and praziquantel (flukes/schistosomes) target the wrong organism, and blood cultures plus vancomycin address a pyogenic abscess, which would not explain the bloody diarrhea.",
   },
   {
-    id: "id-44",
+    id: "id-42",
     system: "Infectious Diseases",
     topic: "Early disseminated Lyme disease",
     stem: "A 28-year-old man from Massachusetts presents with multiple erythema migrans lesions, a new facial nerve palsy, and evidence of carditis. After confirming the diagnosis with ELISA and Western blot, which of the following is the most appropriate treatment?",
@@ -4905,7 +4575,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Early disseminated Lyme with neurologic involvement and carditis is confirmed by serology (ELISA plus Western blot) and treated with IV ceftriaxone. Oral doxycycline is appropriate for early localized disease (single erythema migrans), not for disseminated disease with cardiac or significant neurologic involvement.",
   },
   {
-    id: "id-45",
+    id: "id-43",
     system: "Infectious Diseases",
     topic: "Live influenza vaccine in HIV",
     stem: "A 30-year-old man with HIV and a CD4 count of 450 cells/mm3 presents for routine care during influenza season. He requests immunization to reduce his risk of influenza. Which of the following statements regarding influenza vaccination in this patient is correct?",
@@ -4920,7 +4590,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Live attenuated (intranasal) influenza vaccine is never given to patients with HIV; the inactivated injectable vaccine should be used instead. The CD4-threshold logic (option B) applies to MMR/varicella live vaccines, but live influenza vaccine is an absolute exception regardless of CD4 count.",
   },
   {
-    id: "id-46",
+    id: "id-44",
     system: "Infectious Diseases",
     topic: "CMV vs HSV esophagitis ulcers",
     stem: "A 31-year-old man with HIV and severe odynophagia and no oral thrush undergoes upper endoscopy, which reveals large, deep, linear (longitudinal) esophageal ulcers. Which of the following is the most appropriate treatment?",
@@ -4935,7 +4605,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In viral esophagitis, CMV classically produces linear (longitudinal) ulcers and is treated with ganciclovir, whereas HSV produces shallow circular/round ulcers treated with acyclovir. The linear ulcer morphology keys CMV, making acyclovir the tempting but incorrect HSV-directed choice.",
   },
   {
-    id: "id-47",
+    id: "id-45",
     system: "Infectious Diseases",
     topic: "Fluoroquinolone avoidance in elderly",
     stem: "A 78-year-old man is admitted with community-acquired pneumonia. The team is choosing an antibiotic regimen and wishes to minimize adverse drug effects given his age. Which of the following adverse effects is the primary reason to avoid fluoroquinolones in this elderly patient?",
@@ -4950,22 +4620,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fluoroquinolones are avoided in the elderly because of the risk of C. difficile infection, tendon rupture, and aortic dissection/aneurysm. Optic neuritis and color vision changes (option D) are characteristic of ethambutol, not fluoroquinolones.",
   },
   {
-    id: "id-48",
-    system: "Infectious Diseases",
-    topic: "Active TB treatment duration",
-    stem: "A 46-year-old man with symptomatic pulmonary tuberculosis confirmed by acid-fast smear, culture, and NAAT is started on standard four-drug therapy. Which of the following correctly describes the appropriate duration and phasing of his treatment regimen?",
-    options: [
-      "Rifampin, isoniazid, pyrazinamide, and ethambutol for 2 months, then rifampin and isoniazid for 4 months",
-      "Isoniazid and rifapentine weekly for 3 months",
-      "Rifampin, isoniazid, pyrazinamide, and ethambutol for 6 months continuously",
-      "Isoniazid and pyridoxine for 9 months",
-      "Rifampin and isoniazid for 2 months, then all four drugs for 4 months",
-    ],
-    answerIndex: 0,
-    explanation: "Active TB is treated with RIPE (rifampin, isoniazid, pyrazinamide, ethambutol) for 2 months, followed by rifampin and isoniazid for 4 months. Isoniazid/rifapentine weekly for 3 months (option B) is a latent TB regimen, not treatment for active disease.",
-  },
-  {
-    id: "id-49",
+    id: "id-46",
     system: "Infectious Diseases",
     topic: "Doxycycline Lyme prophylaxis",
     stem: "A healthy 35-year-old man from Connecticut removes an engorged Ixodes scapularis tick from his thigh while hiking; he estimates it had been attached for approximately 48 hours. He has no rash, fever, or other symptoms. Doxycycline is not contraindicated. Which of the following is the most appropriate next step in management?",
@@ -4980,22 +4635,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This bite meets every IDSA criterion for post-exposure prophylaxis: an identified Ixodes tick, attachment for at least 36 hours (engorged, ~48 h), removal within the 72-hour treatment window, a highly endemic area (Connecticut), and no contraindication to doxycycline. A single 200-mg dose of doxycycline is therefore indicated, which is why simple reassurance (E) is wrong despite the patient being asymptomatic. Amoxicillin for 2 weeks (B) and IV ceftriaxone (D) are treatments for established early localized and disseminated Lyme disease, respectively, not prophylaxis, and this patient has no signs of infection. Serologic testing (C) is not useful this early because antibodies take 2-6 weeks to develop and would be falsely negative.",
   },
   {
-    id: "id-50",
-    system: "Infectious Diseases",
-    topic: "TB drug-induced liver injury safe drug",
-    stem: "A 35-year-old woman on RIPE therapy for active tuberculosis develops jaundice and markedly elevated transaminases, and her regimen is stopped. Once her liver function normalizes, a new regimen is constructed. Which of the following first-line agents is the LEAST hepatotoxic and may be safely retained?",
-    options: [
-      "Ethambutol",
-      "Isoniazid",
-      "Rifampin",
-      "Pyrazinamide",
-      "Rifapentine",
-    ],
-    answerIndex: 0,
-    explanation: "Among the RIPE drugs, rifampin, isoniazid, and pyrazinamide ('RIP your liver') are hepatotoxic, whereas ethambutol is hepatically safe and can be retained or used in a reconstructed regimen (along with streptomycin and fluoroquinolones). Isoniazid (option B) is one of the most hepatotoxic of the group and is the classic wrong choice here.",
-  },
-  {
-    id: "id-51",
+    id: "id-47",
     system: "Infectious Diseases",
     topic: "TB airborne isolation rooming",
     stem: "A 50-year-old man with active pulmonary tuberculosis is being admitted to the hospital and requests a shared room because he gets bored alone. Which of the following is the most appropriate response regarding his room assignment?",
@@ -5010,7 +4650,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Active pulmonary TB requires airborne precautions, mandating a single-occupancy negative-pressure airborne infection isolation room (AIIR); a shared room is not permitted. The source explicitly addresses this exact scenario (TB patient wanting a roommate because he is bored) and states the patient must be placed in an AIIR and wear a surgical mask during transport. Droplet precautions (B), surgical-mask sharing (C), and contact precautions (E) are insufficient because TB is transmitted by airborne droplet nuclei. Forty-eight hours of therapy (D) is far too short; infectivity persists until roughly 2 weeks of effective therapy with clinical improvement and serial negative smears, and an AIIR is still required until then.",
   },
   {
-    id: "id-52",
+    id: "id-48",
     system: "Infectious Diseases",
     topic: "Culture-directed septic arthritis therapy",
     stem: "A 58-year-old man comes to the emergency department because of 2 days of severe pain and swelling of the right knee and fever. Temperature is 38.7 C (101.7 F). The knee is warm, erythematous, and exquisitely tender with a large effusion. Arthrocentesis yields cloudy fluid with a leukocyte count of 68,000/mm3. Gram stain of the synovial fluid shows gram-positive cocci in clusters. Which of the following is the most appropriate treatment?",
@@ -5025,7 +4665,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Synovial fluid leukocytes >50,000/mm3 with fever indicate septic arthritis, and gram-positive cocci in clusters identify Staphylococcus, treated with vancomycin. Penicillin targets gram-positive cocci in chains (Streptococcus) and ceftriaxone targets gram-negative diplococci (gonococcus); colchicine and allopurinol treat gout, which would show crystals rather than organisms.",
   },
   {
-    id: "id-53",
+    id: "id-49",
     system: "Infectious Diseases",
     topic: "Acute vs subacute endocarditis organism",
     stem: "A 24-year-old man who uses intravenous heroin is admitted because of 5 days of high fevers, chills, and malaise. Temperature is 39.2 C (102.6 F). Cardiac examination reveals a new murmur, and there are small nontender erythematous macules on the palms and soles. Blood cultures are pending. Which of the following organisms is the most likely cause of this patient's infection?",
@@ -5040,7 +4680,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is acute bacterial endocarditis: an intravenous drug user with a rapidly progressive febrile illness over days, a new murmur, and nontender macular lesions on the palms/soles (Janeway lesions, from septic emboli). The most likely organism is Staphylococcus aureus, which is the leading cause of acute endocarditis and the classic pathogen in IV drug users (often affecting the tricuspid valve). The viridans streptococci (S. sanguinis, S. mutans, S. salivarius) cause subacute endocarditis, typically in patients with pre-existing valve damage and over a more indolent course; their immune-complex findings (e.g., tender Osler nodes) develop over weeks. S. gallolyticus (formerly S. bovis) causes endocarditis associated with colonic pathology and warrants colonoscopy. None of the streptococcal options fits this acute IVDU presentation.",
   },
   {
-    id: "id-54",
+    id: "id-50",
     system: "Infectious Diseases",
     topic: "S. gallolyticus endocarditis workup",
     stem: "A 68-year-old man is admitted with subacute fever, fatigue, and weight loss over 6 weeks. Echocardiography shows a vegetation on the mitral valve, and blood cultures grow Streptococcus gallolyticus (formerly S. bovis). After starting appropriate antibiotics, which of the following is the most appropriate next step in management?",
@@ -5055,7 +4695,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Streptococcus gallolyticus bacteremia and endocarditis are strongly associated with colorectal neoplasia, so colonoscopy is indicated to evaluate for an underlying colonic lesion. Transesophageal echocardiography is used when transthoracic imaging is negative but suspicion remains, not after a vegetation has already been confirmed.",
   },
   {
-    id: "id-55",
+    id: "id-51",
     system: "Infectious Diseases",
     topic: "Culture-negative endocarditis imaging",
     stem: "A 55-year-old woman with a prosthetic aortic valve has 3 weeks of fever, weight loss, and a new regurgitant murmur. Findings strongly suggest infective endocarditis. Three sets of blood cultures are negative, and transthoracic echocardiography does not show a vegetation. Which of the following is the most appropriate next step in management?",
@@ -5070,7 +4710,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "When clinical suspicion for endocarditis is high but transthoracic echocardiography and cultures are unrevealing, especially with a prosthetic valve, transesophageal echocardiography is the next step because of its superior sensitivity for vegetations. Colonoscopy applies specifically to S. gallolyticus infection.",
   },
   {
-    id: "id-56",
+    id: "id-52",
     system: "Infectious Diseases",
     topic: "Post-splenectomy vaccination",
     stem: "A 38-year-old man is being discharged 2 weeks after a splenectomy for traumatic splenic laceration. At the time of injury he received tetanus toxoid. He takes no medications and has no current concerns; vital signs and examination are unremarkable. Which of the following vaccinations is most appropriate at this time?",
@@ -5085,7 +4725,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asplenic patients are at high risk for infection with encapsulated organisms (S. pneumoniae, H. influenzae, N. meningitidis) and require the meningococcal conjugate vaccine along with pneumococcal and Hib vaccines. He already received tetanus toxoid at injury, so additional tetanus products are unnecessary.",
   },
   {
-    id: "id-57",
+    id: "id-53",
     system: "Infectious Diseases",
     topic: "Needle-stick post-exposure management",
     stem: "A 44-year-old laboratory technician comes to the emergency department 15 minutes after pricking himself with a visibly contaminated needle. He washed the area immediately. He is unsure of his tetanus booster history but received the hepatitis B vaccine 2 years ago. The puncture wound is clean and not bleeding. Which of the following is the most appropriate management?",
@@ -5100,7 +4740,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "With an unclear tetanus vaccination history and a clean wound, a tetanus booster (Tdap) is indicated. Because he was vaccinated against hepatitis B 2 years ago and is presumed to have adequate titers, hepatitis B immune globulin is not needed, and antibiotic prophylaxis is not routinely given for a needle stick.",
   },
   {
-    id: "id-58",
+    id: "id-54",
     system: "Infectious Diseases",
     topic: "Meningococcal exposure prophylaxis",
     stem: "A 20-year-old college student shared a dormitory room with a roommate who was just diagnosed with Neisseria meningitidis meningitis. The student is asymptomatic, was previously vaccinated against meningococcus, and has normal vital signs. Which of the following is the most appropriate management?",
@@ -5115,7 +4755,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Close contacts of a patient with N. meningitidis require antibiotic chemoprophylaxis (rifampin, ceftriaxone, or ciprofloxacin) regardless of vaccination status, because the vaccine does not reliably prevent nasopharyngeal carriage or cover all serogroups (the conjugate ACWY vaccine does not cover serogroup B). A dorm roommate is a close contact. Vaccination alone, a booster alone, reassurance, LP (no symptoms), and admission (asymptomatic) are all inappropriate here.",
   },
   {
-    id: "id-59",
+    id: "id-55",
     system: "Infectious Diseases",
     topic: "Pertussis exposure prophylaxis",
     stem: "A 30-year-old woman is the primary caregiver for her infant nephew, who was just diagnosed with Bordetella pertussis. She is asymptomatic and is up to date on her Tdap vaccination. Which of the following is the most appropriate management for this contact?",
@@ -5130,7 +4770,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Close contacts of a patient with pertussis should receive macrolide chemoprophylaxis (e.g., azithromycin) regardless of vaccination status, because immunity wanes and the vaccine does not prevent transmission reliably. A macrolide, not a fluoroquinolone, is the agent of choice for pertussis.",
   },
   {
-    id: "id-60",
+    id: "id-56",
     system: "Infectious Diseases",
     topic: "Gonococcal urethritis treatment",
     stem: "A 28-year-old man comes to the clinic with 3 days of dysuria and mucopurulent penile discharge. Gram stain of the discharge shows numerous neutrophils with intracellular gram-negative diplococci. Nucleic acid testing for chlamydia is pending. Which of the following is the most appropriate treatment for the identified organism?",
@@ -5145,7 +4785,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Gram-negative intracellular diplococci identify Neisseria gonorrhoeae, which is treated with ceftriaxone. Doxycycline or azithromycin treats chlamydia; because co-infection is common, clinicians often treat both, but the gonococcus-specific agent is ceftriaxone.",
   },
   {
-    id: "id-61",
+    id: "id-57",
     system: "Infectious Diseases",
     topic: "Nongonococcal (chlamydial) urethritis",
     stem: "A 23-year-old man comes to the clinic with 5 days of dysuria and a thin watery urethral discharge. Gram stain of the discharge shows numerous neutrophils but no organisms. Which of the following is the most appropriate treatment?",
@@ -5160,7 +4800,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Neutrophils on Gram stain without visible organisms and a watery discharge indicate Chlamydia trachomatis urethritis, treated with doxycycline (or azithromycin). Ceftriaxone targets gonorrhea, which would show intracellular gram-negative diplococci.",
   },
   {
-    id: "id-62",
+    id: "id-58",
     system: "Infectious Diseases",
     topic: "Reactive arthritis",
     stem: "A 25-year-old man comes to the clinic with bilateral knee pain, redness of both eyes, and dysuria that began about 3 weeks after a Chlamydia infection. Examination shows conjunctival injection, an inflamed urethral meatus, and a swollen warm knee. Synovial fluid is sterile on culture. Which of the following is the most likely diagnosis?",
@@ -5175,7 +4815,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The classic triad of conjunctivitis, urethritis, and arthritis (can't see, can't pee, can't climb a tree) following a chlamydial infection with sterile synovial fluid is reactive arthritis. Disseminated gonococcal infection would yield gram-negative diplococci and a pustular dermatitis rather than this post-infectious triad.",
   },
   {
-    id: "id-63",
+    id: "id-59",
     system: "Infectious Diseases",
     topic: "Syphilis treatment",
     stem: "A 30-year-old man comes to the clinic with a painless genital ulcer, low-grade fever, and a maculopapular rash involving the palms and soles. Rapid plasma reagin testing is reactive. Which of the following is the most appropriate treatment?",
@@ -5190,7 +4830,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A painless chancre with a palm-and-sole maculopapular rash and reactive RPR is syphilis, for which penicillin G is the treatment of choice across all stages and is the single best answer absent a documented penicillin allergy. Doxycycline is only a second-line alternative reserved for penicillin-allergic, non-pregnant patients with early syphilis, so it is not 'most appropriate' here. Azithromycin is discouraged because of widespread macrolide resistance, and ceftriaxone is used for gonorrhea (and only as an alternative regimen for syphilis). Acyclovir treats HSV, which classically causes painful ulcers rather than the painless chancre seen here.",
   },
   {
-    id: "id-64",
+    id: "id-60",
     system: "Infectious Diseases",
     topic: "Jarisch-Herxheimer reaction",
     stem: "A 32-year-old man with a reactive VDRL is treated with intramuscular penicillin for syphilis. About 24 hours later he develops fever, chills, myalgias, and headache, which resolve over the next day. Vital signs are otherwise stabilizing. Which of the following is the most appropriate management?",
@@ -5205,7 +4845,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, chills, and myalgias within 24 hours of treating syphilis represent the Jarisch-Herxheimer reaction, caused by cytokine release from killed spirochetes, and it is self-limited and managed supportively. It is not an allergic reaction, so penicillin should be continued and epinephrine is unnecessary.",
   },
   {
-    id: "id-65",
+    id: "id-61",
     system: "Infectious Diseases",
     topic: "Tuberculin skin test threshold",
     stem: "A 62-year-old woman, born in the United States with type 2 diabetes and osteoarthritis, undergoes tuberculin skin testing before starting hospital volunteer work. She has no known tuberculosis exposures. The PPD produces 6 mm of induration at 48 hours. Chest radiograph is normal. Which of the following is the most appropriate next step?",
@@ -5220,7 +4860,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Tuberculin skin test cutoffs are individualized by risk. The most relevant threshold for this patient is 10 mm, because both diabetes mellitus and being a healthcare worker/volunteer place her in the intermediate-risk category (the 15-mm cutoff applies only to persons with no risk factors, and the 5-mm cutoff applies to HIV, recent close contacts, fibrotic CXR changes, and immunosuppression such as TNF-inhibitor use). Her 6 mm of induration is below every applicable cutoff, so the test is negative. With a negative PPD and a normal chest radiograph, there is no latent or active tuberculosis to treat and no need for sputum studies; she can be cleared for volunteer work. Treatment for latent TB (isoniazid plus rifampin) or active TB (RIPE) and sputum AFB testing would only be considered with a positive test or findings suggesting active disease. Two-step (repeat) testing is used to detect the booster phenomenon at baseline in serial-testing programs, not to re-interpret a clearly negative single result.",
   },
   {
-    id: "id-66",
+    id: "id-62",
     system: "Infectious Diseases",
     topic: "Clostridioides difficile colitis",
     stem: "A 70-year-old woman develops new-onset profuse, unremitting watery diarrhea 1 week after completing a course of clindamycin for a dental infection. Temperature is 38.1 C (100.6 F) and the abdomen is mildly tender. Which of the following is the most appropriate treatment?",
@@ -5235,7 +4875,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "New-onset unremitting watery diarrhea after recent antibiotics (clindamycin is a classic offender) points to Clostridioides difficile infection. Per current IDSA/SHEA guidelines, oral vancomycin or fidaxomicin is the preferred first-line treatment for an initial episode; oral metronidazole is now only an acceptable alternative when neither preferred agent is available, so it is not the single best answer here. Intravenous vancomycin is ineffective because it does not reach adequate luminal colonic concentrations (IV metronidazole, not IV vancomycin, is added in fulminant disease). Antimotility agents such as loperamide should be avoided because they can precipitate ileus and toxic megacolon. Azithromycin has no role in C. difficile treatment.",
   },
   {
-    id: "id-67",
+    id: "id-63",
     system: "Infectious Diseases",
     topic: "Acute bacterial prostatitis",
     stem: "A 67-year-old man comes to the clinic with 2 days of fever, dysuria, and perineal discomfort. On digital rectal examination the prostate is swollen, boggy, and exquisitely tender. He also reports painful ejaculation. Which of the following is the most appropriate treatment?",
@@ -5250,7 +4890,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, dysuria, and a swollen, boggy, exquisitely tender prostate indicate acute bacterial prostatitis, which in older men is usually caused by gram-negative enteric organisms (e.g., E. coli). First-line therapy is a fluoroquinolone or trimethoprim-sulfamethoxazole for a prolonged course (typically 2-6 weeks); since no fluoroquinolone is offered, TMP-SMX is the best choice. Alpha-blockers (tamsulosin) and 5-alpha-reductase inhibitors (finasteride) treat benign prostatic hyperplasia, not infection. A single intramuscular dose of ceftriaxone is the regimen for gonococcal urethritis, not prostatitis, and would never provide the prolonged tissue-penetrating coverage prostatitis requires. Vancomycin targets gram-positive organisms such as MRSA and does not cover the gram-negative enterics responsible here.",
   },
   {
-    id: "id-68",
+    id: "id-64",
     system: "Infectious Diseases",
     topic: "Spinal epidural abscess",
     stem: "A 48-year-old man who injects intravenous drugs comes to the emergency department with fever and severe focal low back pain for 4 days. He now reports bilateral leg weakness and difficulty urinating. Temperature is 38.6 C (101.5 F), and erythrocyte sedimentation rate is markedly elevated. Which of the following is the most appropriate next step in management?",
@@ -5265,7 +4905,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, focal back pain, elevated ESR, and new neurologic deficits in an injection drug user indicate a spinal epidural abscess, which requires immediate MRI along with blood cultures and IV antibiotics. Plain radiographs are insufficient to detect the abscess and would delay decompression.",
   },
   {
-    id: "id-69",
+    id: "id-65",
     system: "Infectious Diseases",
     topic: "Aspiration pneumonia antibiotics",
     stem: "A 72-year-old nursing-home resident with dysphagia after a stroke has a witnessed aspiration event. Three days later she develops fever and productive cough, and chest radiograph shows a new right lower lobe opacity. She is admitted to the hospital. Which of the following is the most appropriate antibiotic therapy?",
@@ -5280,7 +4920,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An inpatient aspiration pneumonia is appropriately treated with ampicillin-sulbactam, which covers oral anaerobes and typical organisms (outpatients receive amoxicillin-clavulanate). Ceftriaxone plus azithromycin is the regimen for standard inpatient community-acquired pneumonia rather than an aspiration event.",
   },
   {
-    id: "id-70",
+    id: "id-66",
     system: "Infectious Diseases",
     topic: "Spontaneous bacterial peritonitis",
     stem: "A 56-year-old man with cirrhosis and ascites comes to the emergency department with fever, diffuse abdominal pain, and worsening confusion. Temperature is 38.0 C (100.4 F). Diagnostic paracentesis shows an ascitic fluid neutrophil count of 480/mm3. Which of the following is the most appropriate treatment?",
@@ -5582,21 +5222,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "neurology-20",
     system: "Neurology",
-    topic: "Conus vs cauda equina",
-    stem: "A neurology team is distinguishing conus medullaris syndrome from cauda equina syndrome in two patients with leg weakness. Which of the following features is most characteristic of conus medullaris syndrome rather than cauda equina syndrome?",
-    options: [
-      "Symmetric findings with upper motor neuron signs and early incontinence",
-      "Asymmetric findings with areflexia",
-      "Purely lower motor neuron signs",
-      "Late onset of urinary retention",
-      "Absence of any sphincter involvement",
-    ],
-    answerIndex: 0,
-    explanation: "The conus medullaris is higher up and is part of the spinal cord, so it produces UMN signs in addition to LMN findings, is symmetric, and causes early bladder/fecal incontinence. Cauda equina syndrome produces only LMN signs and is asymmetric.",
-  },
-  {
-    id: "neurology-21",
-    system: "Neurology",
     topic: "Idiopathic intracranial hypertension",
     stem: "A 28-year-old obese woman presents with chronic headaches, transient episodes of vision loss, pulsatile tinnitus, and papilledema on funduscopy. Which of the following is the most appropriate next step to confirm the diagnosis?",
     options: [
@@ -5610,7 +5235,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The picture suggests idiopathic intracranial hypertension. MRI is obtained (to exclude mass/venous thrombosis), then lumbar puncture; an opening pressure greater than 200 mm confirms the diagnosis. Treatment is weight loss plus acetazolamide.",
   },
   {
-    id: "neurology-22",
+    id: "neurology-21",
     system: "Neurology",
     topic: "IIH treatment",
     stem: "A 28-year-old obese woman is diagnosed with idiopathic intracranial hypertension after MRI and a lumbar puncture showing an opening pressure above 200 mm. Which of the following is the most appropriate treatment?",
@@ -5625,7 +5250,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Idiopathic intracranial hypertension is managed with weight loss and acetazolamide (a carbonic anhydrase inhibitor that reduces CSF production). The other regimens treat unrelated conditions such as SAH vasospasm, MS flares, or headaches.",
   },
   {
-    id: "neurology-23",
+    id: "neurology-22",
     system: "Neurology",
     topic: "Guillain-Barre diagnosis",
     stem: "A 32-year-old man develops rapidly ascending symmetric weakness and areflexia one week after a diarrheal illness. Which of the following findings on lumbar puncture would best support the suspected diagnosis?",
@@ -5640,7 +5265,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Ascending symmetric weakness with areflexia after a diarrheal illness suggests Guillain-Barre syndrome, in which LP classically shows albuminocytologic dissociation (high protein, normal cell count). Lymphocytic pleocytosis with low glucose suggests bacterial/other meningitis, not GBS.",
   },
   {
-    id: "neurology-24",
+    id: "neurology-23",
     system: "Neurology",
     topic: "GBS treatment",
     stem: "A 32-year-old man with ascending weakness, areflexia, and CSF showing albuminocytologic dissociation is diagnosed with Guillain-Barre syndrome. Which of the following is the most appropriate treatment?",
@@ -5655,7 +5280,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Guillain-Barre syndrome is treated with IVIG or plasmapheresis. Glucocorticoids, which are used in MS flares, are not effective in GBS.",
   },
   {
-    id: "neurology-25",
+    id: "neurology-24",
     system: "Neurology",
     topic: "Multiple sclerosis diagnosis",
     stem: "A 29-year-old woman has recurrent episodes of blurry vision, limb weakness, and numbness that resolve and then recur. Examination shows optic neuritis and internuclear ophthalmoplegia, and MRI reveals periventricular white-matter plaques. Which of the following is the most likely diagnosis?",
@@ -5668,6 +5293,21 @@ export const SHELF_MCQS: McqQuestion[] = [
     ],
     answerIndex: 0,
     explanation: "Relapsing-remitting neurologic deficits separated in time and space, with optic neuritis, internuclear ophthalmoplegia, and periventricular white-matter plaques on MRI, are classic for multiple sclerosis. GBS is monophasic and presents with ascending weakness rather than these CNS findings.",
+  },
+  {
+    id: "neurology-25",
+    system: "Neurology",
+    topic: "MS natalizumab side effect",
+    stem: "A 31-year-old woman with relapsing-remitting multiple sclerosis is being considered for natalizumab, an alpha-4 integrin inhibitor, for chronic disease modification. Which of the following adverse effects is most specifically associated with this agent?",
+    options: [
+      "Progressive multifocal leukoencephalopathy",
+      "Gastritis",
+      "Optic neuritis",
+      "Aplastic anemia",
+      "Pulmonary fibrosis",
+    ],
+    answerIndex: 0,
+    explanation: "Natalizumab, an alpha-4 integrin inhibitor, carries a characteristic risk of progressive multifocal leukoencephalopathy (PML) due to JC virus reactivation. The other listed effects are not the signature toxicity of natalizumab.",
   },
   {
     id: "neurology-26",
@@ -5687,95 +5327,20 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "neurology-27",
     system: "Neurology",
-    topic: "MS natalizumab side effect",
-    stem: "A 31-year-old woman with relapsing-remitting multiple sclerosis is being considered for natalizumab, an alpha-4 integrin inhibitor, for chronic disease modification. Which of the following adverse effects is most specifically associated with this agent?",
+    topic: "Cluster headache prophylaxis",
+    stem: "A 45-year-old man with recurrent nightly attacks of severe unilateral periorbital pain, tearing, and nasal congestion is diagnosed with cluster headache. Which of the following is the most appropriate prophylactic agent?",
     options: [
-      "Progressive multifocal leukoencephalopathy",
-      "Gastritis",
-      "Optic neuritis",
-      "Aplastic anemia",
-      "Pulmonary fibrosis",
+      "Verapamil",
+      "Topiramate",
+      "Amitriptyline",
+      "Propranolol",
+      "Valproate",
     ],
     answerIndex: 0,
-    explanation: "Natalizumab, an alpha-4 integrin inhibitor, carries a characteristic risk of progressive multifocal leukoencephalopathy (PML) due to JC virus reactivation. The other listed effects are not the signature toxicity of natalizumab.",
+    explanation: "Verapamil is the prophylactic agent of choice for cluster headache. Topiramate, amitriptyline, propranolol, and valproate are options used for migraine prophylaxis, not cluster headache.",
   },
   {
     id: "neurology-28",
-    system: "Neurology",
-    topic: "MS natalizumab side effect",
-    stem: "A 31-year-old woman with relapsing-remitting multiple sclerosis is being considered for natalizumab, an alpha-4 integrin inhibitor, for chronic disease modification. Which of the following adverse effects is most specifically associated with this agent?",
-    options: [
-      "Progressive multifocal leukoencephalopathy",
-      "Gastritis",
-      "Optic neuritis",
-      "Aplastic anemia",
-      "Pulmonary fibrosis",
-    ],
-    answerIndex: 0,
-    explanation: "Natalizumab, an alpha-4 integrin inhibitor, carries a characteristic risk of progressive multifocal leukoencephalopathy (PML) due to JC virus reactivation. The other listed effects are not the signature toxicity of natalizumab.",
-  },
-  {
-    id: "neurology-29",
-    system: "Neurology",
-    topic: "MS interferon mechanism",
-    stem: "A 33-year-old woman with relapsing-remitting multiple sclerosis is started on interferon beta for chronic disease modification. Which of the following best describes its mechanism of action?",
-    options: [
-      "Decreases blood-brain barrier permeability",
-      "Acts as a myelin basic protein analog shifting Th1 to Th2",
-      "Inhibits alpha-4 integrin",
-      "Suppresses CSF production at the choroid plexus",
-      "Blocks voltage-gated calcium channels",
-    ],
-    answerIndex: 0,
-    explanation: "Interferon beta works in MS by decreasing blood-brain barrier permeability. The Th1-to-Th2 shift describes glatiramer, and alpha-4 integrin inhibition describes natalizumab.",
-  },
-  {
-    id: "neurology-30",
-    system: "Neurology",
-    topic: "Cluster headache prophylaxis",
-    stem: "A 45-year-old man with recurrent nightly attacks of severe unilateral periorbital pain, tearing, and nasal congestion is diagnosed with cluster headache. Which of the following is the most appropriate prophylactic agent?",
-    options: [
-      "Verapamil",
-      "Topiramate",
-      "Amitriptyline",
-      "Propranolol",
-      "Valproate",
-    ],
-    answerIndex: 0,
-    explanation: "Verapamil is the prophylactic agent of choice for cluster headache. Topiramate, amitriptyline, propranolol, and valproate are options used for migraine prophylaxis, not cluster headache.",
-  },
-  {
-    id: "neurology-31",
-    system: "Neurology",
-    topic: "Migraine prophylaxis with botulinum",
-    stem: "A 28-year-old woman with recurrent unilateral throbbing headaches, photophobia, and nausea reports more than three disabling attacks per month despite lifestyle changes. Which of the following prophylactic options is specifically indicated for patients with more than three attacks per month?",
-    options: [
-      "Botulinum toxin",
-      "Acetaminophen",
-      "100% oxygen",
-      "Verapamil",
-      "Dihydroergotamine",
-    ],
-    answerIndex: 0,
-    explanation: "For migraine, botulinum toxin is a prophylactic option indicated for patients with more than three attacks per month. Dihydroergotamine is an abortive agent, and verapamil/oxygen are cluster headache treatments.",
-  },
-  {
-    id: "neurology-32",
-    system: "Neurology",
-    topic: "Cluster headache prophylaxis",
-    stem: "A 45-year-old man with recurrent nightly attacks of severe unilateral periorbital pain, tearing, and nasal congestion is diagnosed with cluster headache. Which of the following is the most appropriate prophylactic agent?",
-    options: [
-      "Verapamil",
-      "Topiramate",
-      "Amitriptyline",
-      "Propranolol",
-      "Valproate",
-    ],
-    answerIndex: 0,
-    explanation: "Verapamil is the prophylactic agent of choice for cluster headache. Topiramate, amitriptyline, propranolol, and valproate are options used for migraine prophylaxis, not cluster headache.",
-  },
-  {
-    id: "neurology-33",
     system: "Neurology",
     topic: "Migraine prophylaxis with botulinum",
     stem: "A 28-year-old woman has recurrent unilateral throbbing headaches with photophobia and nausea and now reports more than three disabling attacks per month despite lifestyle modification. Several prophylactic agents could reduce her attack frequency. Which of the following is the option specifically indicated for migraine patients with more than three attacks per month?",
@@ -5790,7 +5355,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Migraine prophylactic options include lifestyle changes, beta blockers (e.g., propranolol), amitriptyline, topiramate, valproate, and botulinum toxin. Of these, botulinum toxin is the agent specifically indicated for patients with more than three attacks per month, making it the best answer here. Propranolol is a legitimate migraine prophylactic but is not tied to that specific threshold, so it is the key parallel distractor. Dihydroergotamine is an abortive (not prophylactic) migraine agent, and 100% oxygen and verapamil are cluster headache treatments.",
   },
   {
-    id: "neurology-34",
+    id: "neurology-29",
     system: "Neurology",
     topic: "Pediatric migraine treatment",
     stem: "A 10-year-old child has recurrent unilateral throbbing headaches with photophobia and nausea consistent with migraine. Which of the following is the most appropriate first-line treatment in this child?",
@@ -5805,7 +5370,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "NSAIDs are first-line for the acute treatment of migraine in children. Ergot derivatives and the prophylactic agents listed are not first-line acute therapy for pediatric migraine.",
   },
   {
-    id: "neurology-35",
+    id: "neurology-30",
     system: "Neurology",
     topic: "Migraine abortive therapy",
     stem: "A 28-year-old woman with recurrent unilateral throbbing headaches, photophobia, and nausea presents during an acute attack and asks about treatment options to abort the headache. Which of the following is an appropriate abortive therapy for migraine?",
@@ -5820,7 +5385,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute migraine is aborted with agents such as NSAIDs, triptans, dihydroergotamine, and antiemetics. Verapamil, TCAs, beta blockers, and botulinum toxin are prophylactic agents, not abortive treatments.",
   },
   {
-    id: "neurology-36",
+    id: "neurology-31",
     system: "Neurology",
     topic: "Tension headache",
     stem: "A 34-year-old woman reports bilateral band-like pressure headaches worsened by stress, without photophobia or nausea, occurring intermittently. Which of the following is the most appropriate abortive treatment?",
@@ -5835,7 +5400,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The bilateral band-like, stress-related pressure without photophobia or nausea is a tension headache, treated acutely with acetaminophen or NSAIDs. Oxygen and triptans are used for cluster and migraine headaches, respectively.",
   },
   {
-    id: "neurology-37",
+    id: "neurology-32",
     system: "Neurology",
     topic: "Comorbid HTN and migraine",
     stem: "A 50-year-old woman with hypertension also has frequent migraines and needs a single prophylactic agent that addresses both conditions. Which of the following is the most appropriate choice?",
@@ -5850,7 +5415,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For a patient with both hypertension and migraine, a beta blocker (e.g., propranolol or metoprolol) is preferred because it is a first-line migraine preventive that also lowers blood pressure, treating both conditions with one agent. Topiramate, amitriptyline, and valproate are migraine preventives but do not treat hypertension. Verapamil is the tempting distractor because as a calcium channel blocker it does lower blood pressure, but it is a cluster headache prophylactic rather than a standard migraine preventive, so it does not address the migraine indication here.",
   },
   {
-    id: "neurology-38",
+    id: "neurology-33",
     system: "Neurology",
     topic: "Central retinal vein occlusion",
     stem: "A 70-year-old woman presents with acute painless monocular vision loss. Funduscopy shows dilated tortuous veins, diffuse 'blood and thunder' hemorrhages, cotton-wool spots, and disc swelling. Which of the following is the most appropriate treatment?",
@@ -5865,22 +5430,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Dilated tortuous veins with diffuse 'blood and thunder' hemorrhages, cotton-wool spots, and disc swelling indicate central retinal vein occlusion, treated with panretinal photocoagulation and VEGF inhibitors. Ocular massage with carbogen is for arterial, not venous, occlusion.",
   },
   {
-    id: "neurology-39",
-    system: "Neurology",
-    topic: "Comorbid HTN and migraine",
-    stem: "A 50-year-old woman with hypertension also has frequent migraines and needs a single daily prophylactic agent that treats both conditions. Which of the following is the most appropriate choice?",
-    options: [
-      "Beta blocker",
-      "Topiramate",
-      "Amitriptyline",
-      "Valproate",
-      "Verapamil",
-    ],
-    answerIndex: 0,
-    explanation: "For a patient with both hypertension and migraine, a beta blocker (e.g., propranolol, metoprolol) is preferred because it is both a guideline migraine prophylactic and an effective antihypertensive, addressing both problems with one drug. Topiramate, amitriptyline, and valproate are all established migraine prophylactics but have no antihypertensive role. Verapamil does lower blood pressure, but it is the prophylactic agent for cluster headache, not migraine, so it does not address the migraine component and is therefore not the best single agent here.",
-  },
-  {
-    id: "neurology-40",
+    id: "neurology-34",
     system: "Neurology",
     topic: "Central retinal artery occlusion",
     stem: "A 68-year-old man presents with sudden painless monocular vision loss described as a 'curtain coming down.' Funduscopy shows a pale retina with a cherry-red spot. Which of the following is the most appropriate treatment?",
@@ -5895,7 +5445,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A pale retina with a cherry-red spot and sudden painless monocular vision loss indicates central retinal artery occlusion, treated with ocular massage and carbogen therapy to attempt to dislodge the embolus and increase perfusion. Emergency surgery is for retinal detachment, and photocoagulation/VEGF inhibitors are for vein occlusion.",
   },
   {
-    id: "neurology-41",
+    id: "neurology-35",
     system: "Neurology",
     topic: "Cluster headache treatment",
     stem: "A 45-year-old man reports severe unilateral periorbital pain with ipsilateral tearing and nasal congestion occurring nightly for the past week. Which of the following is the most appropriate first-line abortive treatment?",
@@ -5910,22 +5460,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is a cluster headache (unilateral periorbital pain with autonomic features in nightly clusters). First-line abortive therapy is 100% oxygen, with triptans as second line. Verapamil is used for prophylaxis, not acute treatment.",
   },
   {
-    id: "neurology-42",
-    system: "Neurology",
-    topic: "Charcot-Bouchard aneurysm",
-    stem: "A 65-year-old man with longstanding uncontrolled hypertension presents with a sudden focal neurologic deficit, and noncontrast head CT shows a deep hemorrhage in the basal ganglia. Rupture of which of the following is the most likely source of this bleed?",
-    options: [
-      "Charcot-Bouchard aneurysm",
-      "Saccular (berry) aneurysm",
-      "Arteriovenous malformation",
-      "Cerebral amyloid angiopathy",
-      "Cavernous malformation",
-    ],
-    answerIndex: 0,
-    explanation: "Chronic hypertension causes lipohyalinosis of the small lenticulostriate vessels in the basal ganglia/thalamus, producing Charcot-Bouchard microaneurysms that rupture and bleed deeply. Saccular (berry) aneurysms are wrong because they arise at circle-of-Willis branch points and rupture into the subarachnoid space, not the deep basal ganglia parenchyma.",
-  },
-  {
-    id: "neurology-43",
+    id: "neurology-36",
     system: "Neurology",
     topic: "Open-angle glaucoma treatment",
     stem: "A 65-year-old man has gradual peripheral vision loss with elevated intraocular pressure and cupping of the optic disc on funduscopy. Which of the following is the most appropriate first-line treatment?",
@@ -5940,22 +5475,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Open-angle glaucoma is treated first line with prostaglandin analogs, which increase uveoscleral outflow. Mannitol and acetazolamide are reserved for the acute angle-closure emergency.",
   },
   {
-    id: "neurology-44",
-    system: "Neurology",
-    topic: "Cluster headache treatment",
-    stem: "A 45-year-old man reports severe unilateral periorbital pain with ipsilateral tearing and nasal congestion occurring nightly for the past week. Which of the following is the most appropriate first-line abortive treatment?",
-    options: [
-      "100% oxygen",
-      "Oral triptan",
-      "Verapamil",
-      "Acetaminophen",
-      "Indomethacin",
-    ],
-    answerIndex: 0,
-    explanation: "This is a cluster headache (unilateral periorbital pain with autonomic features in nightly clusters). First-line abortive therapy is 100% oxygen, with triptans as second line. Verapamil is used for prophylaxis, not acute treatment.",
-  },
-  {
-    id: "neurology-45",
+    id: "neurology-37",
     system: "Neurology",
     topic: "Angle-closure contraindication",
     stem: "A 59-year-old woman is being treated for acute angle-closure glaucoma. Which of the following medications is contraindicated in this condition?",
@@ -5970,7 +5490,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Epinephrine is contraindicated in acute angle-closure glaucoma because its mydriatic effect can worsen the closed angle. Mannitol and acetazolamide are part of the immediate therapy.",
   },
   {
-    id: "neurology-46",
+    id: "neurology-38",
     system: "Neurology",
     topic: "TIA antiplatelet regimen",
     stem: "A 69-year-old man is evaluated for a 20-minute episode of right-hand weakness that has fully resolved. Noncontrast head CT is normal and he has no atrial fibrillation. The team starts secondary prevention with dual antiplatelet therapy. For how long should clopidogrel be continued in addition to indefinite aspirin?",
@@ -5985,7 +5505,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For TIA/minor stroke, the regimen is aspirin indefinitely plus clopidogrel for 21 days, after which clopidogrel is stopped to limit bleeding risk while aspirin continues. Continuing clopidogrel indefinitely (the most tempting distractor) is wrong because prolonged dual antiplatelet therapy increases hemorrhage without added stroke-prevention benefit.",
   },
   {
-    id: "neurology-47",
+    id: "neurology-39",
     system: "Neurology",
     topic: "Malignant otitis externa",
     stem: "An elderly diabetic man presents with severe ear pain, granulation tissue in the canal, purulent drainage, and a facial nerve palsy. Which of the following is the most appropriate treatment?",
@@ -6000,7 +5520,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Malignant otitis externa in a diabetic with granulation tissue and possible CN VII palsy is caused by Pseudomonas aeruginosa and treated with IV ciprofloxacin. The other options do not provide antipseudomonal coverage.",
   },
   {
-    id: "neurology-48",
+    id: "neurology-40",
     system: "Neurology",
     topic: "Malignant otitis externa organism",
     stem: "An elderly diabetic patient is diagnosed with malignant otitis externa. Which of the following organisms is the most likely cause?",
@@ -6015,7 +5535,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Malignant (necrotizing) otitis externa is classically caused by Pseudomonas aeruginosa, particularly in elderly diabetics, which is why IV ciprofloxacin is used. The other organisms are not the typical cause.",
   },
   {
-    id: "neurology-49",
+    id: "neurology-41",
     system: "Neurology",
     topic: "Meniere disease",
     stem: "A 50-year-old woman has recurrent episodes of vertigo lasting 20 minutes to 12 hours, accompanied by unilateral sensorineural hearing loss and tinnitus. Which of the following is the most likely diagnosis?",
@@ -6030,7 +5550,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Vertigo lasting 20 minutes to 12 hours with unilateral sensorineural hearing loss and tinnitus is classic for Meniere disease, due to endolymphatic hydrops. BPPV causes brief positional vertigo without hearing loss.",
   },
   {
-    id: "neurology-50",
+    id: "neurology-42",
     system: "Neurology",
     topic: "Open-angle glaucoma mechanism",
     stem: "A 65-year-old man with gradual peripheral vision loss, elevated intraocular pressure, and optic-disc cupping is started on a topical prostaglandin analog as first-line therapy for open-angle glaucoma. Which of the following best describes how this agent lowers intraocular pressure?",
@@ -6045,7 +5565,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Prostaglandin analogs are first-line in open-angle glaucoma because they increase uveoscleral outflow of aqueous humor, lowering intraocular pressure. Decreasing aqueous production (the mechanism of carbonic anhydrase inhibitors and beta-blockers) is wrong, as that is not how prostaglandin analogs act.",
   },
   {
-    id: "neurology-51",
+    id: "neurology-43",
     system: "Neurology",
     topic: "BPPV treatment",
     stem: "A 55-year-old man has brief episodes of vertigo lasting less than 90 seconds that are triggered by head movement, without any hearing loss. Which of the following is the most appropriate treatment?",
@@ -6060,7 +5580,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Brief vertigo (under 90 seconds) triggered by head movement without hearing loss is benign paroxysmal positional vertigo, caused by dislodged otoliths and treated with the Epley maneuver. Salt restriction and diuretics are used for Meniere disease.",
   },
   {
-    id: "neurology-52",
+    id: "neurology-44",
     system: "Neurology",
     topic: "Lacunar stroke vessel",
     stem: "A 66-year-old man with longstanding uncontrolled hypertension develops pure motor hemiparesis without sensory loss, visual field deficit, or cortical signs. Imaging is consistent with a lacunar infarct in the posterior limb of the internal capsule. Lipohyalinosis and occlusion of which of the following vessels best explains this finding?",
@@ -6075,7 +5595,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Lacunar infarcts result from lipohyalinosis (hyaline-deposition narrowing of small penetrating vessels) of the deep lenticulostriate arteries, producing a pure motor deficit in the posterior limb of the internal capsule without cortical signs. Middle cerebral artery (M1) occlusion is wrong because it causes large cortical-territory infarcts with cortical signs such as aphasia or neglect, not an isolated pure motor lacunar syndrome; the anterior cerebral, posterior cerebral, and basilar arteries supply territories (medial frontal/parasagittal, occipital/medial temporal, and brainstem/posterior fossa, respectively) that do not produce an isolated posterior internal capsule lacune.",
   },
   {
-    id: "neurology-53",
+    id: "neurology-45",
     system: "Neurology",
     topic: "Labyrinthitis",
     stem: "A 42-year-old woman develops vertigo for several days following a viral illness, now accompanied by sensorineural hearing loss but no tinnitus. Which of the following is the most likely diagnosis?",
@@ -6090,7 +5610,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Post-viral vertigo for hours to days accompanied by SNHL (without tinnitus) indicates labyrinthitis. Vestibular neuritis is the same picture but without hearing loss. Treatment of labyrinthitis is supportive.",
   },
   {
-    id: "neurology-54",
+    id: "neurology-46",
     system: "Neurology",
     topic: "Cerebellopontine angle tumor",
     stem: "A 52-year-old woman presents with several months of progressive unilateral tinnitus and sensorineural hearing loss, mild imbalance (not true vertigo), and a decreased corneal reflex on the same side. Which of the following is the most appropriate diagnostic test?",
@@ -6105,7 +5625,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Progressive unilateral SNHL and tinnitus with imbalance and an ipsilateral decreased corneal reflex (CN V involvement) suggests a cerebellopontine angle tumor, best diagnosed with MRI. Treatment is resection or stereotactic radiosurgery.",
   },
   {
-    id: "neurology-55",
+    id: "neurology-47",
     system: "Neurology",
     topic: "CPA tumor treatment",
     stem: "A 53-year-old woman is found on MRI to have a cerebellopontine angle tumor causing progressive unilateral hearing loss, tinnitus, and a diminished corneal reflex. Which of the following is the most appropriate treatment?",
@@ -6120,37 +5640,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A cerebellopontine angle tumor is treated with surgical resection or stereotactic radiosurgery. Diuretics, the Epley maneuver, and supportive care apply to inner-ear vertigo syndromes, not a CPA mass.",
   },
   {
-    id: "neurology-56",
-    system: "Neurology",
-    topic: "Open-angle glaucoma mechanism",
-    stem: "A 65-year-old man with gradual peripheral vision loss, elevated intraocular pressure, and optic-disc cupping is started on a topical prostaglandin analog as first-line therapy for open-angle glaucoma. Which of the following best describes how this agent lowers intraocular pressure?",
-    options: [
-      "Increases uveoscleral outflow of aqueous humor",
-      "Decreases aqueous humor production by the ciliary body",
-      "Constricts the pupil to open the trabecular meshwork",
-      "Osmotically draws fluid out of the vitreous",
-      "Increases trabecular outflow by contracting the ciliary muscle",
-    ],
-    answerIndex: 0,
-    explanation: "Prostaglandin analogs are first-line in open-angle glaucoma because they increase uveoscleral outflow of aqueous humor, lowering intraocular pressure. Decreasing aqueous production (the mechanism of carbonic anhydrase inhibitors and beta-blockers) is wrong, as that is not how prostaglandin analogs act.",
-  },
-  {
-    id: "neurology-57",
-    system: "Neurology",
-    topic: "Lacunar stroke vessel",
-    stem: "A 66-year-old man with longstanding uncontrolled hypertension develops pure motor hemiparesis without sensory loss, visual field deficit, or cortical signs. Imaging is consistent with a lacunar infarct in the posterior limb of the internal capsule. Occlusion of which of the following vessels best explains this finding?",
-    options: [
-      "Lenticulostriate arteries",
-      "Anterior cerebral artery",
-      "Middle cerebral artery (M1 segment)",
-      "Posterior cerebral artery",
-      "Anterior choroidal artery",
-    ],
-    answerIndex: 0,
-    explanation: "Lacunar infarcts result from lipohyalinosis (hyaline deposition narrowing small vessels) of the deep penetrating lenticulostriate arteries, producing a pure motor deficit in the posterior internal capsule. Middle cerebral artery (M1) occlusion is wrong because it causes large cortical territory infarcts with cortical signs such as aphasia or neglect, not an isolated pure motor lacunar syndrome.",
-  },
-  {
-    id: "neurology-58",
+    id: "neurology-48",
     system: "Neurology",
     topic: "Charcot-Bouchard aneurysm",
     stem: "A 65-year-old man with longstanding uncontrolled hypertension presents with a sudden focal neurologic deficit, and noncontrast head CT shows a deep hemorrhage in the basal ganglia. Rupture of which of the following is the most likely source of this bleed?",
@@ -6165,22 +5655,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic hypertension causes lipohyalinosis of the small lenticulostriate vessels in the basal ganglia/thalamus, producing Charcot-Bouchard microaneurysms that rupture and bleed deeply. Saccular (berry) aneurysms are wrong because they arise at circle-of-Willis branch points and rupture into the subarachnoid space, not the deep basal ganglia parenchyma. Cerebral amyloid angiopathy is excluded because it classically causes lobar (not deep) hemorrhages in elderly patients without a hypertension history.",
   },
   {
-    id: "neurology-59",
-    system: "Neurology",
-    topic: "Open-angle glaucoma mechanism",
-    stem: "A 65-year-old man with gradual peripheral vision loss, elevated intraocular pressure, and optic-disc cupping is started on a topical prostaglandin analog as first-line therapy for open-angle glaucoma. Which of the following best describes how this agent lowers intraocular pressure?",
-    options: [
-      "Increases uveoscleral outflow of aqueous humor",
-      "Decreases aqueous humor production by the ciliary body",
-      "Constricts the pupil to open the trabecular meshwork",
-      "Osmotically draws fluid out of the vitreous",
-      "Increases trabecular outflow by contracting the ciliary muscle",
-    ],
-    answerIndex: 0,
-    explanation: "Prostaglandin analogs are first-line in open-angle glaucoma because they increase uveoscleral outflow of aqueous humor, lowering intraocular pressure. Decreasing aqueous production (the mechanism of carbonic anhydrase inhibitors and beta-blockers) is wrong, as that is not how prostaglandin analogs act.",
-  },
-  {
-    id: "neurology-60",
+    id: "neurology-49",
     system: "Neurology",
     topic: "Wernicke encephalopathy",
     stem: "A 54-year-old man is brought to the emergency department after being found confused. There is a strong odor of alcohol on his breath. On examination he has horizontal nystagmus, an unsteady ataxic gait, and altered mental status. Fingerstick blood glucose is markedly low. Which of the following is the most appropriate next step in management?",
@@ -6195,7 +5670,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The triad of nystagmus/ophthalmoplegia, ataxia, and altered mental status in a patient with alcohol use indicates Wernicke encephalopathy; thiamine must be given before glucose because administering glucose without thiamine can precipitate or worsen the encephalopathy. Giving dextrose first is the classic error this stem tests against.",
   },
   {
-    id: "neurology-61",
+    id: "neurology-50",
     system: "Neurology",
     topic: "Wernicke-Korsakoff syndrome",
     stem: "A 58-year-old man with a long history of heavy alcohol use was treated for confusion, nystagmus, and ataxia. Weeks later he continues to have both retrograde and anterograde amnesia and fabricates detailed but untrue accounts of recent events. Which of the following brain regions is most likely to show atrophy on imaging?",
@@ -6210,7 +5685,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Persistent anterograde/retrograde amnesia with confabulation following Wernicke encephalopathy indicates Wernicke-Korsakoff syndrome, which characteristically shows atrophy of the mammillary bodies (and dorsomedial thalamic nuclei). Caudate atrophy is seen in Huntington disease, substantia nigra degeneration in Parkinson disease, hippocampal CA1 loss in global ischemia/Alzheimer disease, and diffuse frontal atrophy in frontotemporal dementia or generalized alcohol-related cortical atrophy.",
   },
   {
-    id: "neurology-62",
+    id: "neurology-51",
     system: "Neurology",
     topic: "Pancoast/Horner syndrome",
     stem: "A 64-year-old man with a 40-pack-year smoking history presents with right shoulder pain and new numbness along the medial aspect of his right forearm and hand. On examination he has ptosis, miosis, and anhidrosis of the right side of the face. Which of the following is the most likely diagnosis?",
@@ -6225,7 +5700,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An apical (Pancoast) lung tumor disrupts the brachial plexus (C8-T2), producing shoulder pain and ulnar-distribution sensory loss, and compresses the sympathetic chain to cause the Horner triad of ptosis, miosis, and anhidrosis. SVC syndrome causes facial/arm swelling and JVD rather than a Horner triad, and Lambert-Eaton causes proximal weakness without these focal findings.",
   },
   {
-    id: "neurology-63",
+    id: "neurology-52",
     system: "Neurology",
     topic: "Spinal epidural abscess",
     stem: "A 48-year-old man who injects drugs presents with fever and severe focal back pain. He reports new lower extremity weakness and difficulty controlling his bladder. ESR is elevated. Which of the following is the most appropriate next step in management?",
@@ -6240,7 +5715,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, IV drug use, focal back pain, elevated ESR, and bowel/bladder and motor changes point to a spinal epidural abscess, which requires immediate MRI along with blood cultures, IV antibiotics, and decompression. Lumbar puncture risks seeding the subarachnoid space and plain films lack sensitivity for early abscess.",
   },
   {
-    id: "neurology-64",
+    id: "neurology-53",
     system: "Neurology",
     topic: "Neurosyphilis tabes dorsalis",
     stem: "A 50-year-old man with a history of an untreated painless genital ulcer years ago presents with a progressively unsteady, broad-based gait and difficulty sensing the position of his feet. Examination shows absent deep tendon reflexes and loss of vibration sense in the lower extremities. Which of the following is the most appropriate treatment?",
@@ -6255,7 +5730,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Sensory ataxia with loss of deep tendon reflexes and vibration sense in a patient with prior untreated syphilis indicates tabes dorsalis, a late neurologic sequela of syphilis; the treatment of choice is penicillin (IV aqueous crystalline penicillin G for neurosyphilis). The other agents do not reliably treat neurosyphilis: doxycycline is only an alternative for early syphilis in penicillin-allergic patients; ceftriaxone is a limited-data alternative but not first-line (desensitization to penicillin is preferred); azithromycin has documented treponemal resistance; and acyclovir treats HSV, not syphilis.",
   },
   {
-    id: "neurology-65",
+    id: "neurology-54",
     system: "Neurology",
     topic: "Isoniazid peripheral neuropathy",
     stem: "A 35-year-old man being treated for latent tuberculosis develops numbness and tingling in a stocking-glove distribution several weeks after starting therapy. Deficiency of which of the following vitamins is the most likely cause of his symptoms?",
@@ -6437,21 +5912,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "endocrinology-12",
     system: "Endocrinology",
-    topic: "Nodule size threshold",
-    stem: "A 48-year-old woman is incidentally found to have a 1.6-cm solid thyroid nodule on ultrasound. Her TSH is normal. Which of the following is the most appropriate next step?",
-    options: [
-      "Fine-needle aspiration",
-      "Thyroid scintigraphy",
-      "Radioactive iodine ablation",
-      "Serum calcitonin measurement",
-      "Annual ultrasound surveillance only",
-    ],
-    answerIndex: 0,
-    explanation: "A nodule greater than 1 cm warrants fine-needle aspiration immediately. Scintigraphy is reserved for nodules with a low TSH, which this patient does not have.",
-  },
-  {
-    id: "endocrinology-13",
-    system: "Endocrinology",
     topic: "Conn syndrome treatment",
     stem: "A 52-year-old woman with confirmed primary hyperaldosteronism undergoes adrenal CT, which demonstrates benign bilateral adrenal hyperplasia. Which of the following is the most appropriate treatment?",
     options: [
@@ -6465,7 +5925,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Benign bilateral disease in Conn syndrome is treated medically with aldosterone antagonists. Surgical resection is reserved for unilateral disease, such as an aldosterone-producing adenoma.",
   },
   {
-    id: "endocrinology-14",
+    id: "endocrinology-13",
     system: "Endocrinology",
     topic: "Primary hyperaldosteronism workup",
     stem: "A 48-year-old woman has resistant hypertension and episodes of muscle weakness. Laboratory testing reveals an aldosterone-to-renin ratio greater than 20, consistent with Conn syndrome. Which of the following is the most appropriate next step in management?",
@@ -6480,7 +5940,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "After confirming primary hyperaldosteronism, adrenal CT is obtained to characterize the lesion and assess for malignancy. Empiric medical or surgical therapy is premature before imaging localizes the source.",
   },
   {
-    id: "endocrinology-15",
+    id: "endocrinology-14",
     system: "Endocrinology",
     topic: "Cushing syndrome initial test",
     stem: "A 35-year-old woman presents with truncal obesity, abdominal striae, and easy bruising, raising suspicion for Cushing syndrome. Which of the following is the best initial test?",
@@ -6495,7 +5955,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The 24-hour urine free cortisol is the best initial screening test for Cushing syndrome, along with late-night salivary cortisol and the overnight low-dose dexamethasone suppression test. ACTH and imaging are obtained only after hypercortisolism is biochemically confirmed.",
   },
   {
-    id: "endocrinology-16",
+    id: "endocrinology-15",
     system: "Endocrinology",
     topic: "Conn syndrome treatment",
     stem: "A 46-year-old man with resistant hypertension and a confirmed aldosterone-to-renin ratio greater than 20 undergoes adrenal CT, which reveals a benign unilateral adrenal adenoma. Which of the following is the most appropriate treatment?",
@@ -6510,7 +5970,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Unilateral aldosterone-producing adenomas are managed with surgical resection (unilateral adrenalectomy). Lifelong aldosterone antagonist therapy is reserved for benign bilateral adrenal hyperplasia, which is not the case here. Bilateral adrenalectomy is inappropriate and would cause iatrogenic adrenal insufficiency; glucocorticoid replacement and fludrocortisone (a mineralocorticoid) treat adrenal insufficiency, the opposite of the aldosterone excess seen in Conn syndrome.",
   },
   {
-    id: "endocrinology-17",
+    id: "endocrinology-16",
     system: "Endocrinology",
     topic: "Confirming hypercortisolism",
     stem: "A woman with suspected Cushing syndrome undergoes screening with 24-hour urine free cortisol, late-night salivary cortisol, and an overnight low-dose dexamethasone suppression test. Two of these tests are abnormal. Which of the following is the most appropriate next step?",
@@ -6525,7 +5985,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "When at least 2 screening tests are positive, hypercortisolism is confirmed, and the next step is to measure ACTH to determine the source. Treatment is not initiated before the etiology is localized.",
   },
   {
-    id: "endocrinology-18",
+    id: "endocrinology-17",
     system: "Endocrinology",
     topic: "Nelson syndrome",
     stem: "A 42-year-old woman who underwent bilateral adrenalectomy for Cushing disease now develops progressive skin hyperpigmentation, headaches, and a rising ACTH level. Which of the following is the most likely diagnosis?",
@@ -6540,7 +6000,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Nelson syndrome occurs after bilateral adrenalectomy when a corticotroph pituitary tumor enlarges, producing hyperpigmentation, headaches, and rising ACTH. The clinical context of prior adrenalectomy with rising ACTH distinguishes it from primary adrenal disease.",
   },
   {
-    id: "endocrinology-19",
+    id: "endocrinology-18",
     system: "Endocrinology",
     topic: "Cushing syndrome treatment",
     stem: "A 40-year-old woman has confirmed Cushing syndrome with localization of the cortisol excess. Which of the following is an appropriate treatment option?",
@@ -6555,7 +6015,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Cushing syndrome (hypercortisolism) is managed with adrenalectomy/resection or cortisol-lowering drugs such as ketoconazole and metyrapone (steroidogenesis inhibitors). Fludrocortisone (a mineralocorticoid) and cosyntropin (synthetic ACTH used for the stimulation test) are tools for adrenal insufficiency and would worsen hypercortisolism. Spironolactone targets aldosterone (hyperaldosteronism), and levothyroxine treats hypothyroidism; neither lowers cortisol.",
   },
   {
-    id: "endocrinology-20",
+    id: "endocrinology-19",
     system: "Endocrinology",
     topic: "Adrenal insufficiency diagnosis",
     stem: "A 29-year-old woman presents with fatigue, weight loss, skin hyperpigmentation, hyponatremia, and hyperkalemia. Adrenal insufficiency is suspected. Which of the following is an appropriate test to establish the diagnosis?",
@@ -6570,7 +6030,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Diagnosis of adrenal insufficiency uses morning serum cortisol, morning plasma ACTH, and the cosyntropin stimulation test. Urine free cortisol and dexamethasone suppression are tests for cortisol excess, not deficiency.",
   },
   {
-    id: "endocrinology-21",
+    id: "endocrinology-20",
     system: "Endocrinology",
     topic: "Nelson syndrome management",
     stem: "A 42-year-old woman who had bilateral adrenalectomy for Cushing disease develops hyperpigmentation, headaches, and rising ACTH consistent with Nelson syndrome. Which of the following is the most appropriate next step in management?",
@@ -6585,7 +6045,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Nelson syndrome is treated with transsphenoidal resection of the enlarging corticotroph adenoma. Medical cortisol-lowering agents do not address the pituitary tumor that is the source of the problem.",
   },
   {
-    id: "endocrinology-22",
+    id: "endocrinology-21",
     system: "Endocrinology",
     topic: "Primary adrenal insufficiency treatment",
     stem: "A 29-year-old woman is diagnosed with primary adrenal insufficiency after presenting with fatigue, hyperpigmentation, hyponatremia, and hyperkalemia. In addition to glucocorticoids, which of the following should be included in her treatment?",
@@ -6600,7 +6060,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Primary adrenal insufficiency requires mineralocorticoid replacement with fludrocortisone in addition to glucocorticoids, because the adrenal cortex cannot produce aldosterone. Fludrocortisone is not needed in secondary (central) adrenal insufficiency.",
   },
   {
-    id: "endocrinology-23",
+    id: "endocrinology-22",
     system: "Endocrinology",
     topic: "Hyperosmolar hyperglycemic state",
     stem: "A 72-year-old man with type 2 diabetes is brought in confused and severely dehydrated. His glucose is greater than 600 mg/dL and serum osmolality is greater than 320 mOsm/kg, without significant ketoacidosis. Which of the following is the most likely diagnosis?",
@@ -6615,7 +6075,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Marked hyperglycemia (>600 mg/dL) with high serum osmolality (>320) and altered mentation in a type 2 diabetic indicates hyperosmolar hyperglycemic state. DKA, in contrast, presents with high anion gap acidosis and ketosis, usually in type 1 diabetes.",
   },
   {
-    id: "endocrinology-24",
+    id: "endocrinology-23",
     system: "Endocrinology",
     topic: "Diabetic ketoacidosis diagnosis",
     stem: "A 19-year-old woman with type 1 diabetes presents with abdominal pain, deep labored breathing, and fruity-smelling breath. Her glucose is 300 mg/dL with a high anion gap metabolic acidosis. Which of the following is the most likely diagnosis?",
@@ -6630,7 +6090,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Kussmaul breathing, fruity breath, and a high anion gap metabolic acidosis with hyperglycemia in a type 1 diabetic are classic for DKA. HHS lacks significant ketoacidosis and occurs at much higher glucose and osmolality.",
   },
   {
-    id: "endocrinology-25",
+    id: "endocrinology-24",
     system: "Endocrinology",
     topic: "Potassium before insulin in DKA",
     stem: "A patient with diabetic ketoacidosis has received intravenous fluids, and the potassium level returns at 3.0 mEq/L. Which of the following is the most appropriate next step?",
@@ -6645,7 +6105,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "With a potassium below 3.3 mEq/L, potassium must be repleted first and insulin withheld for about 2 hours, because insulin drives potassium intracellularly and can precipitate dangerous hypokalemia. Starting insulin now would worsen the hypokalemia.",
   },
   {
-    id: "endocrinology-26",
+    id: "endocrinology-25",
     system: "Endocrinology",
     topic: "DKA/HHS first step",
     stem: "A 19-year-old woman with type 1 diabetes is diagnosed with diabetic ketoacidosis. Which of the following is the most appropriate first step in management?",
@@ -6660,7 +6120,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Management of DKA and HHS begins with intravenous fluids, after which potassium is checked to guide insulin therapy. Insulin is not the very first intervention and depends on the potassium level.",
   },
   {
-    id: "endocrinology-27",
+    id: "endocrinology-26",
     system: "Endocrinology",
     topic: "Potassium-guided insulin in DKA",
     stem: "A patient with diabetic ketoacidosis has received fluids, and the serum potassium returns at 5.8 mEq/L. Which of the following is the most appropriate next step?",
@@ -6675,7 +6135,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "With potassium above 5.2 mEq/L, insulin is given alone (no added potassium) because insulin will shift the already elevated potassium intracellularly. Adding potassium here risks dangerous hyperkalemia.",
   },
   {
-    id: "endocrinology-28",
+    id: "endocrinology-27",
     system: "Endocrinology",
     topic: "Potassium-guided insulin in DKA",
     stem: "A patient with diabetic ketoacidosis has received fluids, and the serum potassium is 4.5 mEq/L. Which of the following is the most appropriate next step?",
@@ -6690,7 +6150,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "With potassium in the 3.3-5.2 mEq/L range, potassium and insulin are given together so that the insulin-driven intracellular shift does not cause hypokalemia. Insulin alone is reserved for potassium above 5.2.",
   },
   {
-    id: "endocrinology-29",
+    id: "endocrinology-28",
     system: "Endocrinology",
     topic: "Cerebral edema in DKA",
     stem: "A pediatric patient with diabetic ketoacidosis is being corrected. The team is cautioned to avoid lowering glucose and osmolality too rapidly. Which complication is this caution intended to prevent?",
@@ -6705,7 +6165,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Correcting hyperglycemia and osmolality too quickly in DKA/HHS can precipitate cerebral edema due to rapid osmotic shifts. The other complications are not the classic consequence of overly rapid correction.",
   },
   {
-    id: "endocrinology-30",
+    id: "endocrinology-29",
     system: "Endocrinology",
     topic: "Diabetes diagnostic criteria",
     stem: "A 50-year-old asymptomatic man is being evaluated for diabetes. Which of the following single laboratory results meets the diagnostic threshold for diabetes mellitus?",
@@ -6720,7 +6180,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An A1c of 6.5% or greater meets the diagnostic criterion for diabetes. The other values fall below their respective thresholds (fasting >=126, 2-hour OGTT >=200, or random >=200 with classic symptoms).",
   },
   {
-    id: "endocrinology-31",
+    id: "endocrinology-30",
     system: "Endocrinology",
     topic: "Diabetic retinopathy screening",
     stem: "A 55-year-old man with newly diagnosed type 2 diabetes asks how his eyes should be monitored. Which of the following is the most appropriate screening recommendation?",
@@ -6735,7 +6195,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Retinopathy is screened with an annual dilated eye examination. The albumin-to-creatinine ratio screens for nephropathy and foot exams screen for neuropathy, not retinal disease.",
   },
   {
-    id: "endocrinology-32",
+    id: "endocrinology-31",
     system: "Endocrinology",
     topic: "Diabetic nephropathy screening",
     stem: "A 60-year-old woman with type 2 diabetes has an annual urine albumin-to-creatinine ratio performed, which shows an albumin level greater than 30 mg/g. Which of the following is the most appropriate management?",
@@ -6750,7 +6210,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Albuminuria greater than 30 mg/g in a diabetic warrants starting an ACE inhibitor or ARB for renoprotection. The other measures do not address the underlying nephropathy.",
   },
   {
-    id: "endocrinology-33",
+    id: "endocrinology-32",
     system: "Endocrinology",
     topic: "Diabetic neuropathy treatment",
     stem: "A 62-year-old man with long-standing type 2 diabetes reports burning, painful numbness in both feet. Foot examination confirms a symmetric distal sensory neuropathy. Which of the following is the most appropriate treatment for his symptoms?",
@@ -6765,7 +6225,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Painful diabetic peripheral neuropathy is treated with agents such as duloxetine or pregabalin (the source lists both as first-line). Metformin and insulin glargine improve glycemic control but do not specifically relieve neuropathic pain; lisinopril (an ACE inhibitor) is used for diabetic nephropathy with albuminuria, not neuropathy; and NSAIDs such as ibuprofen are ineffective for neuropathic pain.",
   },
   {
-    id: "endocrinology-34",
+    id: "endocrinology-33",
     system: "Endocrinology",
     topic: "Diabetic foot osteomyelitis",
     stem: "A 70-year-old man with chronic diabetes has a deep foot ulcer that probes to bone and continues to be painful despite a course of oral antibiotics. Which of the following is the most appropriate next step to establish the diagnosis?",
@@ -6780,7 +6240,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A diabetic foot ulcer that probes to bone with persistent symptoms despite antibiotics indicates osteomyelitis, which requires bone biopsy for definitive diagnosis and to guide pathogen-directed therapy. A superficial wound swab does not reliably identify the causative organisms in deep bone infection. Plain films lack sensitivity (and 'alone' is inadequate here), empiric vancomycin is treatment not diagnosis (and the patient already failed antibiotics), and Doppler ultrasound assesses vascular disease rather than osteomyelitis.",
   },
   {
-    id: "endocrinology-35",
+    id: "endocrinology-34",
     system: "Endocrinology",
     topic: "Diabetic foot osteomyelitis treatment",
     stem: "A 70-year-old diabetic man is diagnosed with osteomyelitis underlying a chronic foot ulcer. The infection is polymicrobial. Which of the following best describes appropriate management?",
@@ -6795,7 +6255,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Diabetic foot osteomyelitis is a polymicrobial, contact-acquired infection treated with surgical debridement plus antibiotics that cover pseudomonas. Narrow MRSA-only coverage without debridement is inadequate for this polymicrobial deep infection.",
   },
   {
-    id: "endocrinology-36",
+    id: "endocrinology-35",
     system: "Endocrinology",
     topic: "Proliferative retinopathy treatment",
     stem: "A 58-year-old diabetic man is diagnosed with proliferative diabetic retinopathy after fundoscopy shows neovascularization. Which of the following is the most appropriate treatment?",
@@ -6810,7 +6270,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Proliferative diabetic retinopathy is treated with laser photocoagulation or intravitreal bevacizumab to halt neovascularization. Glucocorticoids and pressure-lowering drops do not address the proliferative vascular disease.",
   },
   {
-    id: "endocrinology-37",
+    id: "endocrinology-36",
     system: "Endocrinology",
     topic: "Retinopathy complication",
     stem: "A patient with proliferative diabetic retinopathy and extensive retinal neovascularization is at risk for an acute complication from the fragile new vessels. Which of the following is the most likely complication?",
@@ -6825,7 +6285,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The fragile new vessels of proliferative diabetic retinopathy are prone to bleeding, causing vitreous hemorrhage. The other listed conditions are not the characteristic complication of neovascularization.",
   },
   {
-    id: "endocrinology-38",
+    id: "endocrinology-37",
     system: "Endocrinology",
     topic: "Proliferative diabetic retinopathy",
     stem: "A 58-year-old man with long-standing type 2 diabetes develops patchy vision loss. Fundoscopy reveals microaneurysms, hard exudates, retinal hemorrhages, and new abnormal blood vessel formation. Which of the following is the most likely diagnosis?",
@@ -6840,7 +6300,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The presence of neovascularization defines proliferative diabetic retinopathy, distinguishing it from the nonproliferative form, which shows microaneurysms and hemorrhages but no new vessels. Neovascularization is the key discriminator.",
   },
   {
-    id: "endocrinology-39",
+    id: "endocrinology-38",
     system: "Endocrinology",
     topic: "Hot nodule next step",
     stem: "A 57-year-old woman with a palpable thyroid nodule and a suppressed TSH undergoes thyroid scintigraphy, which shows a nodule that avidly takes up tracer (a hot nodule). Which of the following is the most appropriate next step?",
@@ -6855,22 +6315,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "On the low-TSH scintigraphy pathway, a hot (tracer-avid) nodule is autonomously functioning and is essentially never malignant, so the next step is to evaluate for and treat the hyperthyroidism rather than biopsy. FNA is reserved for cold nodules, which do not take up tracer and carry malignant potential; performing FNA on a hot nodule is the classic error this distractor tests.",
   },
   {
-    id: "endocrinology-40",
-    system: "Endocrinology",
-    topic: "Purpose of adrenal CT in Conn",
-    stem: "A 50-year-old woman with resistant hypertension and an aldosterone-to-renin ratio greater than 20 has confirmed primary hyperaldosteronism. Adrenal CT is ordered as the next step. Which of the following is the primary purpose of obtaining this imaging study?",
-    options: [
-      "To determine whether the lesion is malignant and whether disease is unilateral or bilateral",
-      "To measure the size of the pituitary gland",
-      "To assess renal artery stenosis as a cause of hypertension",
-      "To confirm the diagnosis of hyperaldosteronism",
-      "To detect coexisting cortisol-secreting adenomas",
-    ],
-    answerIndex: 0,
-    explanation: "After biochemical confirmation, adrenal CT characterizes the lesion to determine if it is malignant and whether the process is unilateral (favoring surgical resection) or bilateral (favoring aldosterone antagonists), directly guiding therapy. The diagnosis is already established biochemically by the elevated ARR, so confirming the diagnosis is not the imaging's purpose.",
-  },
-  {
-    id: "endocrinology-41",
+    id: "endocrinology-39",
     system: "Endocrinology",
     topic: "Normal-TSH nodule pathway",
     stem: "A 49-year-old woman is found to have a thyroid nodule on neck ultrasound, and her serum TSH returns within the normal range. Which of the following is the most appropriate next step in management?",
@@ -6885,7 +6330,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "With a normal (or elevated) TSH, the nodule cannot be autonomously functioning, so thyroid scintigraphy adds nothing; the workup proceeds along ultrasound features to fine-needle aspiration as indicated. Scintigraphy is reserved for the suppressed-TSH pathway to distinguish a hot (autonomous) nodule, which is evaluated for hyperthyroidism, from a cold nodule, which is biopsied. Ordering scintigraphy with a normal TSH is the tempting but incorrect step. Serum thyroglobulin is a post-thyroidectomy surveillance marker, not a nodule diagnostic; empiric ablation and reassurance both skip the required tissue/feature assessment.",
   },
   {
-    id: "endocrinology-42",
+    id: "endocrinology-40",
     system: "Endocrinology",
     topic: "Antipsychotic-triggered hyperglycemic crisis",
     stem: "An 80-year-old man with type 2 diabetes is brought from his nursing home confused and severely dehydrated with a glucose of 700 mg/dL and serum osmolality of 335 mOsm/kg without acidosis. His medication list was recently changed. Which of the following medications most likely precipitated this hyperglycemic crisis?",
@@ -6900,7 +6345,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Atypical antipsychotics such as olanzapine and clozapine impair glucose handling and can trigger a hyperosmolar hyperglycemic crisis, particularly in elderly patients. The other listed agents are not classically associated with precipitating hyperosmolar hyperglycemic state, making the antipsychotic the key culprit.",
   },
   {
-    id: "endocrinology-43",
+    id: "endocrinology-41",
     system: "Endocrinology",
     topic: "DKA vs HHS distinction",
     stem: "A 70-year-old man with type 2 diabetes is brought in confused with a glucose of 650 mg/dL and serum osmolality of 330 mOsm/kg, but only minimal ketones and a near-normal anion gap. A medical student asks why this presentation differs from diabetic ketoacidosis. Which of the following best explains the absence of significant ketoacidosis in this patient?",
@@ -6915,22 +6360,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hyperosmolar hyperglycemic state occurs in type 2 diabetics who retain enough endogenous insulin to suppress ketogenesis, so they develop profound hyperglycemia and hyperosmolality without significant ketoacidosis. The complete insulin deficiency that drives unchecked lipolysis and high-anion-gap ketoacidosis is the mechanism of DKA, not HHS.",
   },
   {
-    id: "endocrinology-44",
-    system: "Endocrinology",
-    topic: "Pseudomonas coverage in diabetic osteomyelitis",
-    stem: "A 68-year-old man with long-standing diabetes has biopsy-confirmed osteomyelitis underlying a chronic foot ulcer that he has been walking on. After debridement, empiric antibiotics are selected. Which of the following organisms must the chosen regimen specifically cover in this contact-acquired infection?",
-    options: [
-      "Pseudomonas aeruginosa",
-      "Mycobacterium tuberculosis",
-      "Salmonella species",
-      "Bartonella henselae",
-      "Pasteurella multocida",
-    ],
-    answerIndex: 0,
-    explanation: "Diabetic foot osteomyelitis is typically polymicrobial and acquired by direct contact through the ulcer, so empiric coverage must include Pseudomonas aeruginosa in addition to debridement. Salmonella osteomyelitis is the classic association in sickle cell disease, not the contact-acquired diabetic foot infection described here.",
-  },
-  {
-    id: "endocrinology-45",
+    id: "endocrinology-42",
     system: "Endocrinology",
     topic: "Hypercalcemia of malignancy treatment",
     stem: "A 62-year-old man with metastatic lung cancer presents with malaise and lethargy for 2 days. He appears cachectic but is alert and oriented. Temperature is 97.6 F, pulse is 103/min, respirations are 16/min, and blood pressure is 105/78 mm Hg. Examination shows decreased skin turgor. Laboratory studies show serum sodium 136 mEq/L, potassium 3.6 mEq/L, calcium 11.8 mg/dL, BUN 22 mg/dL, creatinine 0.9 mg/dL, and albumin 2.9 g/dL. Which of the following is the most appropriate initial pharmacotherapy?",
@@ -6945,7 +6375,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "IV isotonic fluids are always the first-line treatment for hypercalcemia, and this patient is volume-depleted (decreased skin turgor, tachycardia). Calcitonin and bisphosphonates such as zoledronic acid are added for severe hypercalcemia (calcium >14) or longer-term control, not as the initial step. Hydrocortisone is not indicated here.",
   },
   {
-    id: "endocrinology-46",
+    id: "endocrinology-43",
     system: "Endocrinology",
     topic: "Severe hypercalcemia management",
     stem: "A 58-year-old woman with metastatic breast cancer is admitted for confusion and constipation. She is volume-depleted on examination. Serum calcium is 15.2 mg/dL. After confirming the value, which of the following is the most appropriate short-term regimen?",
@@ -6960,7 +6390,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For calcium greater than 14, short-term management is IV fluids plus calcitonin for rapid calcium lowering, while a bisphosphonate is used for longer-term control. Fluids alone are insufficient at this severity, and a bisphosphonate alone has a delayed onset. Hydrocortisone is not the deck's recommended short-term therapy.",
   },
   {
-    id: "endocrinology-47",
+    id: "endocrinology-44",
     system: "Endocrinology",
     topic: "Paraneoplastic hypercalcemia",
     stem: "A 66-year-old man with a history of heavy smoking is found to have a central lung mass and serum calcium of 12.6 mg/dL with no bony metastases on imaging. Which of the following best explains the hypercalcemia?",
@@ -6975,7 +6405,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Squamous cell carcinoma of the lung classically produces PTH-related peptide (PTHrP), causing hypercalcemia without bony metastases. Ectopic ACTH and ADH (SIADH) are associated with small cell lung cancer and do not cause hypercalcemia. Erythropoietin and Lambert-Eaton antibodies do not raise calcium.",
   },
   {
-    id: "endocrinology-48",
+    id: "endocrinology-45",
     system: "Endocrinology",
     topic: "Prolactinoma diagnosis",
     stem: "A 34-year-old man presents with gynecomastia, erectile dysfunction, and decreased libido. MRI of the brain demonstrates a pituitary mass. Which of the following is the most likely diagnosis?",
@@ -6990,7 +6420,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A pituitary mass with gynecomastia, erectile dysfunction, and decreased libido in a man is the classic presentation of a prolactinoma. Hyperprolactinemia suppresses GnRH, producing central hypogonadism (low libido, erectile dysfunction) and gynecomastia; prolactinoma is also the most common functioning pituitary adenoma. An ACTH-producing adenoma causes Cushing disease (hypertension, striae, weight gain) rather than hypogonadism. A GH-secreting adenoma causes acromegaly. Craniopharyngioma and nonfunctioning adenomas may cause only mild stalk-effect hyperprolactinemia or mass-effect hypopituitarism, not this classic hyperprolactinemic syndrome.",
   },
   {
-    id: "endocrinology-49",
+    id: "endocrinology-46",
     system: "Endocrinology",
     topic: "Prolactinoma treatment",
     stem: "A 30-year-old woman is diagnosed with a prolactin-secreting pituitary adenoma causing amenorrhea and galactorrhea. Which of the following is the most appropriate initial treatment?",
@@ -7005,7 +6435,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Prolactinomas are treated first-line with a dopamine agonist such as cabergoline (or bromocriptine), which shrinks the tumor and normalizes prolactin. Surgery and radiation are reserved for medication failure or intolerance. Octreotide and levothyroxine do not treat prolactinomas.",
   },
   {
-    id: "endocrinology-50",
+    id: "endocrinology-47",
     system: "Endocrinology",
     topic: "Pituitary adenoma genetics",
     stem: "A 28-year-old man is found to have a prolactinoma. He also has a history of recurrent kidney stones from hypercalcemia and episodes of hypoglycemia attributed to a pancreatic islet-cell tumor. Which of the following inherited syndromes best explains these findings?",
@@ -7020,7 +6450,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pituitary adenoma, parathyroid hyperplasia (hypercalcemia), and pancreatic tumors are the three P's of MEN1. MEN2A and MEN2B involve medullary thyroid carcinoma and pheochromocytoma rather than this combination. The other syndromes do not feature this triad of endocrine tumors.",
   },
   {
-    id: "endocrinology-51",
+    id: "endocrinology-48",
     system: "Endocrinology",
     topic: "Ectopic ACTH source",
     stem: "A 60-year-old man with hypertension, hyperglycemia, and proximal muscle weakness is found to have markedly elevated ACTH that fails to suppress with high-dose dexamethasone. He has a history of heavy smoking and a central lung mass. Which of the following is the most likely source of his hypercortisolism?",
@@ -7217,21 +6647,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "hemeonc-13",
     system: "Hematology / Oncology",
-    topic: "Acute hemolytic transfusion reaction",
-    stem: "Thirty minutes into a blood transfusion, a patient develops fever, flank pain, hemoglobinuria, and signs of disseminated intravascular coagulation. Which of the following is the most likely cause?",
-    options: [
-      "ABO incompatibility",
-      "Donor leukocyte cytokines",
-      "Antibodies to IgA",
-      "Antibodies to minor RBC antigens",
-      "Volume overload",
-    ],
-    answerIndex: 0,
-    explanation: "Fever, flank pain, hemoglobinuria, and DIC occurring early in a transfusion indicate an acute hemolytic transfusion reaction from ABO incompatibility. Donor leukocyte cytokines cause a benign febrile nonhemolytic reaction without hemolysis or DIC.",
-  },
-  {
-    id: "hemeonc-14",
-    system: "Hematology / Oncology",
     topic: "Urticarial transfusion reaction",
     stem: "During a transfusion, a patient develops itching and hives but has no fever, hypotension, or respiratory symptoms. Which of the following is the most appropriate management?",
     options: [
@@ -7245,7 +6660,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An isolated urticarial/allergic reaction with itching and hives but no systemic symptoms is treated with antihistamines. Epinephrine is reserved for anaphylaxis with hypotension and airway involvement.",
   },
   {
-    id: "hemeonc-15",
+    id: "hemeonc-14",
     system: "Hematology / Oncology",
     topic: "TRALI vs TACO",
     stem: "Within 6 hours of a transfusion, a patient develops acute dyspnea, hypoxia, and bilateral pulmonary infiltrates consistent with non-cardiogenic pulmonary edema. Which of the following is the most likely diagnosis?",
@@ -7260,7 +6675,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute dyspnea and hypoxia with non-cardiogenic pulmonary edema within 6 hours of transfusion is TRALI. TACO is distinguished by signs of fluid overload and cardiogenic edema rather than non-cardiogenic edema.",
   },
   {
-    id: "hemeonc-16",
+    id: "hemeonc-15",
     system: "Hematology / Oncology",
     topic: "TACO recognition",
     stem: "A patient develops dyspnea and hypoxia shortly after a transfusion. Examination shows jugular venous distention, an S3 gallop, and pulmonary edema consistent with a cardiogenic, fluid-overloaded picture. Which of the following is the most likely diagnosis?",
@@ -7275,7 +6690,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fluid overload with cardiogenic pulmonary edema after transfusion indicates TACO. TRALI, by contrast, produces non-cardiogenic pulmonary edema without volume overload.",
   },
   {
-    id: "hemeonc-17",
+    id: "hemeonc-16",
     system: "Hematology / Oncology",
     topic: "Delayed hemolytic reaction",
     stem: "One to two weeks after a transfusion, a patient develops jaundice, dark urine, and a gradually falling hemoglobin. Which of the following best explains these findings?",
@@ -7290,37 +6705,22 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A delayed hemolytic transfusion reaction occurs 1-2 weeks later due to a response to minor RBC antigens (Duffy, Kidd) and is self-limiting. ABO incompatibility instead causes an acute, severe hemolytic reaction within the first hour.",
   },
   {
+    id: "hemeonc-17",
+    system: "Hematology / Oncology",
+    topic: "Transfusion-associated GVHD",
+    stem: "One to two weeks after a transfusion, a patient develops diarrhea, jaundice, hepatomegaly, and a maculopapular rash. Which of the following is the most likely diagnosis?",
+    options: [
+      "Transfusion-associated graft-versus-host disease",
+      "Delayed hemolytic transfusion reaction",
+      "Acute hemolytic transfusion reaction",
+      "Transfusion-related acute lung injury",
+      "Febrile nonhemolytic transfusion reaction",
+    ],
+    answerIndex: 0,
+    explanation: "Diarrhea, jaundice, hepatomegaly, and a maculopapular rash 1-2 weeks after transfusion are classic for graft-versus-host disease from donor lymphocytes. A delayed hemolytic reaction causes jaundice and falling hemoglobin but not rash and diarrhea.",
+  },
+  {
     id: "hemeonc-18",
-    system: "Hematology / Oncology",
-    topic: "Transfusion-associated GVHD",
-    stem: "One to two weeks after a transfusion, a patient develops diarrhea, jaundice, hepatomegaly, and a maculopapular rash. Which of the following is the most likely diagnosis?",
-    options: [
-      "Transfusion-associated graft-versus-host disease",
-      "Delayed hemolytic transfusion reaction",
-      "Acute hemolytic transfusion reaction",
-      "Transfusion-related acute lung injury",
-      "Febrile nonhemolytic transfusion reaction",
-    ],
-    answerIndex: 0,
-    explanation: "Diarrhea, jaundice, hepatomegaly, and a maculopapular rash 1-2 weeks after transfusion are classic for graft-versus-host disease from donor lymphocytes. A delayed hemolytic reaction causes jaundice and falling hemoglobin but not rash and diarrhea.",
-  },
-  {
-    id: "hemeonc-19",
-    system: "Hematology / Oncology",
-    topic: "Transfusion-associated GVHD",
-    stem: "One to two weeks after a transfusion, a patient develops diarrhea, jaundice, hepatomegaly, and a maculopapular rash. Which of the following is the most likely diagnosis?",
-    options: [
-      "Transfusion-associated graft-versus-host disease",
-      "Delayed hemolytic transfusion reaction",
-      "Acute hemolytic transfusion reaction",
-      "Transfusion-related acute lung injury",
-      "Febrile nonhemolytic transfusion reaction",
-    ],
-    answerIndex: 0,
-    explanation: "Diarrhea, jaundice, hepatomegaly, and a maculopapular rash 1-2 weeks after transfusion are classic for graft-versus-host disease from donor lymphocytes. A delayed hemolytic reaction causes jaundice and falling hemoglobin but not rash and diarrhea.",
-  },
-  {
-    id: "hemeonc-20",
     system: "Hematology / Oncology",
     topic: "Non-muscle-invasive bladder cancer",
     stem: "A 70-year-old man with painless hematuria undergoes cystoscopy that reveals a papillary bladder tumor. Pathology confirms urothelial carcinoma without muscle invasion. Which of the following is the most appropriate management?",
@@ -7335,7 +6735,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Non-muscle-invasive bladder cancer is treated with transurethral resection (TURBT) plus intravesical chemotherapy or BCG. Radical cystectomy and systemic cisplatin are reserved for muscle-invasive disease.",
   },
   {
-    id: "hemeonc-21",
+    id: "hemeonc-19",
     system: "Hematology / Oncology",
     topic: "Muscle-invasive bladder cancer",
     stem: "A man with urothelial bladder carcinoma is found on resection to have tumor invading the detrusor muscle, without evidence of distant metastasis. Which of the following is the most appropriate management?",
@@ -7350,7 +6750,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Muscle-invasive bladder cancer requires radical cystectomy plus systemic cisplatin-based chemotherapy. TURBT with BCG is appropriate only for non-muscle-invasive disease, and chemotherapy with immunotherapy is reserved for metastatic disease.",
   },
   {
-    id: "hemeonc-22",
+    id: "hemeonc-20",
     system: "Hematology / Oncology",
     topic: "Papillary thyroid carcinoma",
     stem: "A 32-year-old woman with a history of childhood neck radiation presents with a neck mass. Fine-needle aspiration shows nuclei with an empty, ground-glass appearance (Orphan Annie-eye nuclei) and psammoma bodies. Which of the following is the most likely diagnosis?",
@@ -7365,7 +6765,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Orphan Annie-eye nuclei and psammoma bodies are diagnostic of papillary thyroid carcinoma, which is also associated with prior radiation exposure. Follicular carcinoma lacks these nuclear features and cannot be diagnosed by FNA cytology alone.",
   },
   {
-    id: "hemeonc-23",
+    id: "hemeonc-21",
     system: "Hematology / Oncology",
     topic: "Papillary carcinoma surgery",
     stem: "A 32-year-old woman with prior childhood neck radiation is diagnosed with papillary thyroid carcinoma after fine-needle aspiration. Which of the following is the most appropriate surgical management?",
@@ -7380,7 +6780,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Because of the prior history of ionizing radiation, hemithyroidectomy is contraindicated due to risk of recurrence in the remaining lobe, so total thyroidectomy is required. Hemithyroidectomy is reserved for small low-risk tumors without a radiation history.",
   },
   {
-    id: "hemeonc-24",
+    id: "hemeonc-22",
     system: "Hematology / Oncology",
     topic: "Follicular lesion of undetermined significance",
     stem: "A 45-year-old woman with no history of radiation has a solitary thyroid nodule. Fine-needle aspiration returns a follicular lesion of undetermined significance, with cytology insufficient to distinguish adenoma from carcinoma. Which of the following is the most appropriate next step?",
@@ -7395,7 +6795,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A follicular lesion of undetermined significance, like a thyroid carcinoma under 1 cm with no nodal or distant disease, is managed with hemithyroidectomy (which also provides definitive histology). Total thyroidectomy would be required only with a radiation history or confirmed higher-risk malignancy.",
   },
   {
-    id: "hemeonc-25",
+    id: "hemeonc-23",
     system: "Hematology / Oncology",
     topic: "Gastric adenocarcinoma",
     stem: "A 62-year-old man presents with early satiety, unintentional weight loss, and epigastric discomfort. Examination reveals an enlarged left supraclavicular lymph node. Which of the following is the most appropriate initial diagnostic test?",
@@ -7410,22 +6810,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Early satiety, weight loss, and a left supraclavicular (Virchow) node suggest gastric adenocarcinoma, and upper endoscopy is the initial diagnostic test, with abdominopelvic CT done afterward to assess nodal metastasis. Imaging is staging, not the primary diagnostic step.",
   },
   {
-    id: "hemeonc-26",
-    system: "Hematology / Oncology",
-    topic: "Muscle-invasive bladder cancer",
-    stem: "A man with urothelial bladder carcinoma is found on resection to have tumor invading the detrusor muscle, without evidence of distant metastasis. Which of the following is the most appropriate management?",
-    options: [
-      "Radical cystectomy with systemic cisplatin-based chemotherapy",
-      "Transurethral resection with intravesical BCG",
-      "Systemic chemotherapy plus immunotherapy",
-      "Intravesical chemotherapy alone",
-      "Observation with surveillance cystoscopy",
-    ],
-    answerIndex: 0,
-    explanation: "Muscle-invasive bladder cancer requires radical cystectomy plus systemic cisplatin-based chemotherapy. TURBT with BCG is appropriate only for non-muscle-invasive disease, and chemotherapy with immunotherapy is reserved for metastatic disease.",
-  },
-  {
-    id: "hemeonc-27",
+    id: "hemeonc-24",
     system: "Hematology / Oncology",
     topic: "Testicular mass next step",
     stem: "A 24-year-old man presents with a painless, firm testicular mass that does not transilluminate. Scrotal ultrasound shows a solid intratesticular lesion. Which of the following is the most appropriate next step?",
@@ -7440,7 +6825,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A solid intratesticular mass is presumed malignant and managed with radical inguinal orchiectomy; biopsy is avoided because of the risk of tumor seeding. Observation or aspiration would inappropriately delay treatment and risk spread.",
   },
   {
-    id: "hemeonc-28",
+    id: "hemeonc-25",
     system: "Hematology / Oncology",
     topic: "Seminoma staging treatment",
     stem: "A 24-year-old man undergoes radical inguinal orchiectomy for a testicular mass. Pathology shows a seminoma, and tumor markers reveal an isolated elevation of beta-hCG with a normal AFP. Staging shows tumor confined to the testis (stage 1). Which of the following is the most appropriate management?",
@@ -7455,7 +6840,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Stage 1 seminoma is managed with surveillance; an elevated beta-hCG with normal AFP is consistent with seminoma. Radiation is for stage 2 and BEP chemotherapy for stage 3 disease.",
   },
   {
-    id: "hemeonc-29",
+    id: "hemeonc-26",
     system: "Hematology / Oncology",
     topic: "Non-seminoma markers/treatment",
     stem: "A 26-year-old man undergoes radical inguinal orchiectomy for a testicular mass. Tumor markers show elevation of both beta-hCG and AFP, and pathology confirms a nonseminomatous germ cell tumor. Which of the following is the most appropriate management?",
@@ -7470,22 +6855,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Nonseminomatous germ cell tumors are marked by elevation of both beta-hCG and AFP (AFP indicates nonseminoma) and are treated with retroperitoneal lymph node dissection plus BEP chemotherapy (bleomycin, etoposide, cisplatin). Surveillance and radiation alone are seminoma-specific strategies.",
   },
   {
-    id: "hemeonc-30",
-    system: "Hematology / Oncology",
-    topic: "Non-seminoma markers/treatment",
-    stem: "A 26-year-old man undergoes radical inguinal orchiectomy for a testicular mass. Tumor markers show elevation of both beta-hCG and AFP, and pathology confirms a nonseminomatous germ cell tumor. Which of the following is the most appropriate management?",
-    options: [
-      "Retroperitoneal lymph node dissection plus BEP chemotherapy",
-      "Surveillance alone",
-      "Radiation therapy alone",
-      "Bleomycin monotherapy",
-      "Repeat orchiectomy of the contralateral side",
-    ],
-    answerIndex: 0,
-    explanation: "Nonseminomatous germ cell tumors are marked by elevation of both beta-hCG and AFP (AFP indicates nonseminoma) and are treated with retroperitoneal lymph node dissection plus BEP chemotherapy (bleomycin, etoposide, cisplatin). Surveillance and radiation alone are seminoma-specific strategies.",
-  },
-  {
-    id: "hemeonc-31",
+    id: "hemeonc-27",
     system: "Hematology / Oncology",
     topic: "Pancreatic body/tail presentation",
     stem: "A thin 70-year-old man presents with several months of unintentional weight loss and new-onset (secondary) diabetes mellitus, but no jaundice. A pancreatic neoplasm is suspected. Which of the following is the most appropriate initial imaging study to establish the diagnosis?",
@@ -7500,22 +6870,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A body/tail pancreatic adenocarcinoma classically presents in a thin older patient with new secondary diabetes and weight loss but NO jaundice (tumors here do not obstruct the bile duct). Contrast-enhanced CT is the preferred initial imaging study to detect and stage a pancreatic mass. Transabdominal ultrasound is the discriminator distractor: it is favored first for a pancreatic HEAD tumor presenting with obstructive jaundice (to visualize the dilated biliary tree), but is poorly sensitive for the body and tail because of overlying bowel gas. A plain radiograph cannot image a soft-tissue pancreatic mass, tagged RBC scintigraphy evaluates GI bleeding, and voiding cystourethrography is a bladder/urethral study.",
   },
   {
-    id: "hemeonc-32",
-    system: "Hematology / Oncology",
-    topic: "Pancreatic body/tail presentation",
-    stem: "A thin 70-year-old man presents with weight loss and new-onset (secondary) diabetes mellitus but no jaundice. A pancreatic tumor is suspected. Which of the following is the most appropriate imaging study to establish the diagnosis?",
-    options: [
-      "CT scan",
-      "Ultrasound",
-      "Hemoglobin electrophoresis",
-      "Cystoscopy",
-      "Plain abdominal radiograph",
-    ],
-    answerIndex: 0,
-    explanation: "A body/tail pancreatic adenocarcinoma presents in a thin older patient with secondary diabetes and no jaundice, and CT is the preferred diagnostic imaging. Ultrasound is favored for head tumors presenting with obstructive jaundice.",
-  },
-  {
-    id: "hemeonc-33",
+    id: "hemeonc-28",
     system: "Hematology / Oncology",
     topic: "Resectable pancreatic head tumor",
     stem: "A man with a pancreatic adenocarcinoma localized to the head of the pancreas has no evidence of metastatic disease. Which of the following is the most appropriate surgical procedure?",
@@ -7530,7 +6885,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A resectable pancreatic head tumor without metastases is treated with a Whipple procedure (pancreaticoduodenectomy). Distal pancreatectomy with splenectomy is used for body and tail tumors.",
   },
   {
-    id: "hemeonc-34",
+    id: "hemeonc-29",
     system: "Hematology / Oncology",
     topic: "Pancreatic body/tail resection",
     stem: "A patient has a resectable adenocarcinoma confined to the body and tail of the pancreas, without evidence of metastatic disease. Which of the following is the most appropriate surgical management?",
@@ -7545,7 +6900,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Tumors of the pancreatic body and tail are resected by removing the left (distal) side of the pancreas along with the spleen (distal pancreatectomy with splenectomy). The Whipple procedure (pancreaticoduodenectomy) is reserved for resectable tumors of the pancreatic head. Total pancreatectomy is not the standard approach for a localized body/tail lesion, and biliary stenting and celiac ganglion block are palliative measures for obstructive jaundice and refractory pain, not curative resections.",
   },
   {
-    id: "hemeonc-35",
+    id: "hemeonc-30",
     system: "Hematology / Oncology",
     topic: "Refractory pancreatic cancer pain",
     stem: "A patient with advanced pancreatic adenocarcinoma has severe abdominal pain that is refractory to standard analgesics. Which of the following interventions is most appropriate for pain control?",
@@ -7560,22 +6915,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Refractory abdominal pain in pancreatic cancer is managed with a celiac ganglion (plexus) block. Biliary stenting addresses pruritus and obstruction, not refractory pain.",
   },
   {
-    id: "hemeonc-36",
-    system: "Hematology / Oncology",
-    topic: "Pancreatic body/tail presentation",
-    stem: "A thin 70-year-old man presents with weight loss and new-onset (secondary) diabetes mellitus but no jaundice. A pancreatic tumor is suspected. Which of the following is the most appropriate imaging study to establish the diagnosis?",
-    options: [
-      "CT scan",
-      "Ultrasound",
-      "Hemoglobin electrophoresis",
-      "Cystoscopy",
-      "Plain abdominal radiograph",
-    ],
-    answerIndex: 0,
-    explanation: "A body/tail pancreatic adenocarcinoma presents in a thin older patient with secondary diabetes and no jaundice, and CT is the preferred diagnostic imaging. Ultrasound is favored for head tumors presenting with obstructive jaundice.",
-  },
-  {
-    id: "hemeonc-37",
+    id: "hemeonc-31",
     system: "Hematology / Oncology",
     topic: "Polycythemia vera treatment",
     stem: "A 55-year-old man with JAK2-positive polycythemia vera has an elevated hemoglobin and symptoms of hyperviscosity. Which of the following is the most appropriate treatment?",
@@ -7590,22 +6930,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Polycythemia vera is treated with repeated phlebotomy, with hydroxyurea added for high-risk patients. Transfusion would worsen the hyperviscosity, and the chemotherapy regimens listed apply to CLL and myeloma.",
   },
   {
-    id: "hemeonc-38",
-    system: "Hematology / Oncology",
-    topic: "CLL hemolytic complication",
-    stem: "A 70-year-old man with chronic lymphocytic leukemia develops a new anemia. A direct antiglobulin test is positive, and the smear shows spherocytes consistent with warm autoimmune hemolytic anemia. Which of the following is the most appropriate treatment for this complication?",
-    options: [
-      "Oral corticosteroids",
-      "Repeated phlebotomy",
-      "Intravesical BCG",
-      "Bortezomib",
-      "Splenectomy as first-line therapy",
-    ],
-    answerIndex: 0,
-    explanation: "Warm autoimmune hemolytic anemia complicating CLL is treated first with oral corticosteroids. Phlebotomy and bortezomib treat polycythemia vera and myeloma, respectively, not autoimmune hemolysis.",
-  },
-  {
-    id: "hemeonc-39",
+    id: "hemeonc-32",
     system: "Hematology / Oncology",
     topic: "CLL diagnosis",
     stem: "A 72-year-old man presents with painless lymphadenopathy, recurrent infections, and lymphocytosis. The peripheral smear shows smudge cells. Which of the following is the most appropriate test to confirm the diagnosis?",
@@ -7620,7 +6945,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic lymphocytic leukemia is suggested by lymphocytosis with smudge cells and is confirmed by flow cytometry. Excisional node biopsy is the diagnostic test for Hodgkin lymphoma, not CLL.",
   },
   {
-    id: "hemeonc-40",
+    id: "hemeonc-33",
     system: "Hematology / Oncology",
     topic: "CLL hemolytic complication",
     stem: "A 70-year-old man with chronic lymphocytic leukemia develops a new anemia. A direct antiglobulin test is positive, and the smear shows spherocytes consistent with warm autoimmune hemolytic anemia. Which of the following is the most appropriate treatment for this complication?",
@@ -7635,7 +6960,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Warm autoimmune hemolytic anemia complicating CLL (IgG-mediated, DAT-positive, with spherocytes) is treated first-line with oral corticosteroids. Splenectomy is a genuine treatment for warm AIHA but is reserved for steroid-refractory or relapsing disease, so 'first-line' makes it incorrect here. Repeated phlebotomy and bortezomib treat polycythemia vera and multiple myeloma, respectively, and intravesical BCG treats bladder cancer—none address autoimmune hemolysis.",
   },
   {
-    id: "hemeonc-41",
+    id: "hemeonc-34",
     system: "Hematology / Oncology",
     topic: "Asymptomatic CLL management",
     stem: "A 74-year-old man is incidentally found to have chronic lymphocytic leukemia. He has no symptoms, no significant cytopenias, and stable adenopathy. Which of the following is the most appropriate management?",
@@ -7650,22 +6975,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asymptomatic CLL is managed with observation. Chemoimmunotherapy is reserved for symptomatic disease (extreme fatigue, painful nodes, hepatosplenomegaly, or thrombocytopenia).",
   },
   {
-    id: "hemeonc-42",
-    system: "Hematology / Oncology",
-    topic: "Asymptomatic CLL management",
-    stem: "A 74-year-old man is incidentally found to have chronic lymphocytic leukemia. He has no symptoms, no significant cytopenias, and stable adenopathy. Which of the following is the most appropriate management?",
-    options: [
-      "Observation",
-      "Fludarabine, cyclophosphamide, and rituximab",
-      "Oral corticosteroids",
-      "Allogeneic stem cell transplantation",
-      "Repeated phlebotomy",
-    ],
-    answerIndex: 0,
-    explanation: "Asymptomatic CLL is managed with observation. Chemoimmunotherapy is reserved for symptomatic disease (extreme fatigue, painful nodes, hepatosplenomegaly, or thrombocytopenia).",
-  },
-  {
-    id: "hemeonc-43",
+    id: "hemeonc-35",
     system: "Hematology / Oncology",
     topic: "Hodgkin lymphoma diagnosis",
     stem: "A 24-year-old man presents with a painless enlarged cervical lymph node, pruritus, night sweats, and weight loss. Biopsy planning is underway after Reed-Sternberg cells are suspected. Which of the following is the most appropriate diagnostic test?",
@@ -7680,7 +6990,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hodgkin lymphoma is diagnosed by excisional lymph node biopsy, which preserves nodal architecture needed to identify Reed-Sternberg cells. Flow cytometry is used for CLL, not Hodgkin lymphoma.",
   },
   {
-    id: "hemeonc-44",
+    id: "hemeonc-36",
     system: "Hematology / Oncology",
     topic: "Hodgkin lymphoma prognosis",
     stem: "A 24-year-old man is diagnosed with Hodgkin lymphoma after an excisional node biopsy reveals Reed-Sternberg cells. Which of the following histologic features indicates the best prognosis?",
@@ -7695,7 +7005,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In Hodgkin lymphoma, a high lymphocyte content is the best prognostic indicator. Lymphocyte-depleted histology carries a worse prognosis.",
   },
   {
-    id: "hemeonc-45",
+    id: "hemeonc-37",
     system: "Hematology / Oncology",
     topic: "Hodgkin classic associations",
     stem: "A 24-year-old man with biopsy-proven Hodgkin lymphoma notes that his involved lymph nodes become painful shortly after he drinks alcohol. Beyond this classic finding, which of the following long-term risks is most characteristic of survivors of Hodgkin lymphoma?",
@@ -7710,7 +7020,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Alcohol-induced nodal pain is a classic Hodgkin lymphoma feature, and long-term survivors carry an increased risk of a second malignancy (a non-Hodgkin cancer, such as a radiation-related solid tumor or a chemotherapy-related leukemia/lymphoma) later in life. Progression to CLL, development of polycythemia vera, transformation into multiple myeloma, and acquired IgA deficiency are not recognized associations of Hodgkin lymphoma.",
   },
   {
-    id: "hemeonc-46",
+    id: "hemeonc-38",
     system: "Hematology / Oncology",
     topic: "Multiple myeloma diagnosis",
     stem: "A 68-year-old man presents with bone pain, fatigue, constipation, and recurrent infections. Labs show hypercalcemia, anemia, and an elevated total protein. Which of the following is the most appropriate initial diagnostic step?",
@@ -7725,22 +7035,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Multiple myeloma evaluation begins with serum and urine protein electrophoresis (SPEP and UPEP) to detect the monoclonal protein. Bone marrow biopsy (showing greater than 10% plasma cells) and whole-body CT come afterward for confirmation and staging.",
   },
   {
-    id: "hemeonc-47",
-    system: "Hematology / Oncology",
-    topic: "Multiple myeloma diagnosis",
-    stem: "A 68-year-old man presents with bone pain, fatigue, constipation, and recurrent infections. Labs show hypercalcemia, anemia, and an elevated total protein. Which of the following is the most appropriate initial diagnostic step?",
-    options: [
-      "Serum and urine protein electrophoresis",
-      "Bone marrow biopsy",
-      "Whole-body CT scan",
-      "Excisional lymph node biopsy",
-      "Flow cytometry of peripheral blood",
-    ],
-    answerIndex: 0,
-    explanation: "Multiple myeloma evaluation begins with serum and urine protein electrophoresis (SPEP and UPEP) to detect the monoclonal protein. Bone marrow biopsy (showing greater than 10% plasma cells) and whole-body CT come afterward for confirmation and staging.",
-  },
-  {
-    id: "hemeonc-48",
+    id: "hemeonc-39",
     system: "Hematology / Oncology",
     topic: "Multiple myeloma confirmation",
     stem: "A 68-year-old man with bone pain, anemia, hypercalcemia, and an elevated total protein has a monoclonal spike on serum protein electrophoresis. Which of the following findings on bone marrow biopsy confirms the diagnosis of multiple myeloma?",
@@ -7755,22 +7050,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Multiple myeloma is confirmed by a bone marrow biopsy showing greater than 10% plasma cells. Greater than 10% clonal B cells defines Waldenstrom macroglobulinemia, a different entity.",
   },
   {
-    id: "hemeonc-49",
-    system: "Hematology / Oncology",
-    topic: "Multiple myeloma confirmation",
-    stem: "A 68-year-old man with bone pain, anemia, hypercalcemia, and an elevated total protein has a monoclonal spike on serum protein electrophoresis. Which of the following findings on bone marrow biopsy confirms the diagnosis of multiple myeloma?",
-    options: [
-      "Greater than 10% plasma cells",
-      "Greater than 10% clonal B cells",
-      "Reed-Sternberg cells",
-      "Smudge cells",
-      "t(14;18) translocation",
-    ],
-    answerIndex: 0,
-    explanation: "Multiple myeloma is confirmed by a bone marrow biopsy showing greater than 10% plasma cells. Greater than 10% clonal B cells defines Waldenstrom macroglobulinemia, a different entity.",
-  },
-  {
-    id: "hemeonc-50",
+    id: "hemeonc-40",
     system: "Hematology / Oncology",
     topic: "Myeloma hypercalcemia mechanism",
     stem: "A 68-year-old man with multiple myeloma has hypercalcemia. Which of the following best explains the mechanism?",
@@ -7785,7 +7065,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In multiple myeloma, malignant plasma cells release osteoclast-activating factors such as TNF-alpha and IL-1, driving bone resorption and hypercalcemia. The 1-alpha-hydroxylase (macrophage/calcitriol) pathway driven by Reed-Sternberg cytokines is the Hodgkin lymphoma mechanism. PTHrP secretion causes hypercalcemia of malignancy in solid tumors (e.g., squamous cell, renal cell), not myeloma. Secondary hyperparathyroidism from renal failure produces hypocalcemia or normocalcemia, not hypercalcemia, and vitamin D excess is not myeloma-specific.",
   },
   {
-    id: "hemeonc-51",
+    id: "hemeonc-41",
     system: "Hematology / Oncology",
     topic: "Myeloma infections mechanism",
     stem: "A 68-year-old man with multiple myeloma has recurrent bacterial infections despite a markedly elevated total serum protein. Which of the following best explains his susceptibility to infection?",
@@ -7800,7 +7080,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In multiple myeloma the elevated protein is monoclonal and nonfunctional; the malignant plasma cells crowd out normal plasma cells and cannot make effective immunoglobulins, predisposing to infection. The high total protein is therefore misleading regarding immune competence.",
   },
   {
-    id: "hemeonc-52",
+    id: "hemeonc-42",
     system: "Hematology / Oncology",
     topic: "Waldenstrom macroglobulinemia",
     stem: "A 72-year-old man presents with fatigue, weight loss, hyperviscosity symptoms (blurred vision, headaches, and epistaxis), and hepatosplenomegaly. Labs show an elevated IgM level, and bone marrow biopsy shows greater than 10% clonal B cells. Which of the following is the most likely diagnosis?",
@@ -7815,7 +7095,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hyperviscosity symptoms with an elevated IgM and greater than 10% clonal B cells on bone marrow biopsy define Waldenstrom macroglobulinemia. Multiple myeloma is confirmed by greater than 10% plasma cells (not clonal B cells) and is not driven by IgM hyperviscosity.",
   },
   {
-    id: "hemeonc-53",
+    id: "hemeonc-43",
     system: "Hematology / Oncology",
     topic: "Total thyroidectomy rationale",
     stem: "A 32-year-old woman with a history of childhood neck irradiation is diagnosed with papillary thyroid carcinoma. Total thyroidectomy rather than hemithyroidectomy is planned. Which of the following best explains why a lobe-sparing (hemithyroidectomy) approach is contraindicated in this patient?",
@@ -7830,7 +7110,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A history of prior ionizing radiation contraindicates hemithyroidectomy because radiation predisposes the remaining lobe to develop a second (recurrent) carcinoma, so the entire gland must be removed. Hematogenous spread is wrong because papillary carcinoma classically spreads via lymphatics, and that is not the reason a lobe-sparing operation is avoided here.",
   },
   {
-    id: "hemeonc-54",
+    id: "hemeonc-44",
     system: "Hematology / Oncology",
     topic: "PNH thrombotic complication",
     stem: "A 34-year-old woman with dark, morning-predominant urine is diagnosed with paroxysmal nocturnal hemoglobinuria. Which of the following is the characteristic complication most likely to develop in this disorder?",
@@ -7845,22 +7125,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Thrombosis (classically at unusual sites such as the hepatic veins, causing Budd-Chiari syndrome) is the hallmark and most feared complication of PNH and a leading cause of death. Iron overload is wrong because chronic intravascular hemolysis with hemoglobinuria actually causes urinary iron loss and iron deficiency, not overload.",
   },
   {
-    id: "hemeonc-55",
-    system: "Hematology / Oncology",
-    topic: "PNH thrombotic complication",
-    stem: "A 34-year-old woman with dark, morning-predominant urine is diagnosed with paroxysmal nocturnal hemoglobinuria. Which of the following is the characteristic complication most likely to develop in this disorder?",
-    options: [
-      "Thrombosis",
-      "Iron overload",
-      "Aplastic crisis",
-      "Splenic sequestration",
-      "Cold agglutinin disease",
-    ],
-    answerIndex: 0,
-    explanation: "Thrombosis (classically at unusual sites such as the hepatic veins, causing Budd-Chiari syndrome) is the hallmark and most feared complication of PNH and a leading cause of death. Iron overload is wrong because chronic intravascular hemolysis with hemoglobinuria actually causes urinary iron loss and iron deficiency, not overload.",
-  },
-  {
-    id: "hemeonc-56",
+    id: "hemeonc-45",
     system: "Hematology / Oncology",
     topic: "Metastatic bladder cancer treatment",
     stem: "A 70-year-old man with a long smoking history and painless gross hematuria is found on imaging and biopsy to have urothelial carcinoma with distant metastatic disease. Which of the following is the most appropriate management?",
@@ -7875,22 +7140,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Metastatic urothelial carcinoma is treated with systemic chemotherapy combined with immunotherapy, since localized surgical options cannot address disseminated disease. Radical cystectomy with cisplatin is the treatment for muscle-invasive (not metastatic) disease, and TURBT with BCG is reserved for non-muscle-invasive tumors.",
   },
   {
-    id: "hemeonc-57",
-    system: "Hematology / Oncology",
-    topic: "Total thyroidectomy rationale",
-    stem: "A 32-year-old woman with a history of childhood neck irradiation is diagnosed with papillary thyroid carcinoma. Total thyroidectomy rather than hemithyroidectomy is planned. Which of the following best explains why a lobe-sparing (hemithyroidectomy) approach is contraindicated in this patient?",
-    options: [
-      "Prior ionizing radiation increases the risk of carcinoma recurrence in the contralateral lobe",
-      "Papillary carcinoma metastasizes hematogenously to the contralateral lobe",
-      "Hemithyroidectomy precludes postoperative radioactive iodine therapy",
-      "The tumor is too large to be removed by a single-lobe resection",
-      "Hemithyroidectomy carries a higher risk of recurrent laryngeal nerve injury",
-    ],
-    answerIndex: 0,
-    explanation: "A history of prior ionizing radiation contraindicates hemithyroidectomy because radiation predisposes the remaining lobe to develop a second (recurrent) carcinoma, so the entire gland must be removed. Hematogenous spread is wrong because papillary carcinoma classically spreads via lymphatics, and that is not the reason a lobe-sparing operation is avoided here.",
-  },
-  {
-    id: "hemeonc-58",
+    id: "hemeonc-46",
     system: "Hematology / Oncology",
     topic: "Gastric cancer staging step",
     stem: "A 62-year-old man with early satiety, weight loss, and a left supraclavicular node undergoes upper endoscopy with biopsy that confirms gastric adenocarcinoma. Which of the following is the most appropriate next step to guide management?",
@@ -7905,7 +7155,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "After tissue diagnosis by endoscopy, abdominopelvic CT is the next step to evaluate for lymph node and distant metastases and to determine resectability. Proceeding directly to gastrectomy is wrong because surgery is reserved for localized disease, which can only be established after staging CT.",
   },
   {
-    id: "hemeonc-59",
+    id: "hemeonc-47",
     system: "Hematology / Oncology",
     topic: "Pancreatic head initial imaging",
     stem: "A 67-year-old man presents with painless jaundice, pruritus, dark urine, weight loss, and a non-tender palpable gallbladder. A mass in the head of the pancreas is suspected. Which of the following is the most appropriate initial imaging study?",
@@ -7920,7 +7170,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "For a suspected pancreatic head tumor presenting with obstructive jaundice, ultrasound is the appropriate initial imaging study to evaluate the dilated biliary tree. CT is the preferred initial study for suspected body/tail tumors (which present without jaundice), making it the classic distractor in this head-versus-body distinction.",
   },
   {
-    id: "hemeonc-60",
+    id: "hemeonc-48",
     system: "Hematology / Oncology",
     topic: "Stage 3 seminoma treatment",
     stem: "A 27-year-old man with a previously resected seminoma is found on restaging to have distant (stage 3) metastatic disease. Which of the following is the most appropriate management?",
@@ -7935,22 +7185,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Advanced (stage 3) seminoma with distant metastases is treated with systemic BEP (bleomycin, etoposide, cisplatin) chemotherapy. Radiation is wrong here because it is used for limited nodal (stage 2) disease, not disseminated disease that requires systemic therapy.",
   },
   {
-    id: "hemeonc-61",
-    system: "Hematology / Oncology",
-    topic: "Stage 3 seminoma treatment",
-    stem: "A 27-year-old man with a previously resected seminoma is found on restaging to have distant (stage 3) metastatic disease. Which of the following is the most appropriate management?",
-    options: [
-      "BEP combination chemotherapy",
-      "Radiation therapy to the metastatic sites",
-      "Active surveillance",
-      "Retroperitoneal lymph node dissection",
-      "Total body irradiation",
-    ],
-    answerIndex: 0,
-    explanation: "Advanced (stage 3) seminoma with distant metastases is treated with systemic BEP (bleomycin, etoposide, cisplatin) chemotherapy. Radiation is wrong here because it is used for limited nodal (stage 2) disease, not disseminated disease that requires systemic therapy.",
-  },
-  {
-    id: "hemeonc-62",
+    id: "hemeonc-49",
     system: "Hematology / Oncology",
     topic: "Stage 2 seminoma treatment",
     stem: "A 25-year-old man undergoes radical inguinal orchiectomy revealing a seminoma with an isolated beta-hCG elevation and a normal AFP. Staging shows spread to retroperitoneal lymph nodes (stage 2). Which of the following is the most appropriate management?",
@@ -7965,7 +7200,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Seminomas are exquisitely radiosensitive, so stage 2 disease with regional nodal involvement is treated with radiation therapy. Active surveillance is wrong because it applies to stage 1 disease confined to the testis, not nodal (stage 2) disease.",
   },
   {
-    id: "hemeonc-63",
+    id: "hemeonc-50",
     system: "Hematology / Oncology",
     topic: "Hemithyroidectomy indication",
     stem: "A 45-year-old woman with no history of radiation has a solitary 0.8-cm papillary thyroid carcinoma with no involved lymph nodes and no evidence of metastasis. Which of the following is the most appropriate surgical management?",
@@ -7980,7 +7215,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A papillary carcinoma smaller than 1 cm with no nodal involvement and no metastases in a patient without prior radiation can be managed with hemithyroidectomy. Total thyroidectomy is reserved for larger tumors, nodal/metastatic disease, or a history of ionizing radiation, none of which are present here.",
   },
   {
-    id: "hemeonc-64",
+    id: "hemeonc-51",
     system: "Hematology / Oncology",
     topic: "Malignancy hypercalcemia treatment",
     stem: "A 62-year-old man with metastatic lung cancer presents with 2 days of malaise and lethargy. Medications include acetaminophen and metoprolol. He appears cachectic but is alert and oriented. Temperature is 36.4°C (97.6°F), pulse is 103/min, respirations are 16/min, and blood pressure is 105/78 mm Hg. Examination shows decreased skin turgor. Laboratory studies show serum Ca 11.8 mg/dL, Na 136 mEq/L, K 3.6 mEq/L, BUN 22 mg/dL, Cr 0.9 mg/dL, and albumin 2.9 g/dL. Which of the following is the most appropriate initial pharmacotherapy?",
@@ -7995,7 +7230,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "IV isotonic saline is always first-line for hypercalcemia, especially in this volume-depleted patient (decreased skin turgor, tachycardia) with only moderate elevation (Ca <14; albumin-corrected ~12.7). Calcitonin is added to fluids only when Ca >14, and bisphosphonates such as zoledronic acid are for longer-term control after volume repletion, not the initial step. Plicamycin is an obsolete, toxic agent, and hydrocortisone is reserved for vitamin D-mediated hypercalcemia (granulomatous disease/lymphoma).",
   },
   {
-    id: "hemeonc-65",
+    id: "hemeonc-52",
     system: "Hematology / Oncology",
     topic: "Severe malignancy hypercalcemia",
     stem: "A 70-year-old woman with metastatic breast cancer presents with confusion and lethargy. Examination shows dry mucous membranes. Serum calcium is 15.6 mg/dL. After confirming the value, which of the following is the most appropriate management to achieve rapid lowering of her calcium?",
@@ -8010,7 +7245,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This patient has severe, symptomatic hypercalcemia of malignancy (Ca >14 mg/dL). The cornerstone of acute management is aggressive volume repletion with IV isotonic saline plus calcitonin, which lowers calcium within hours (though tachyphylaxis limits it to ~48 hours). A bisphosphonate such as zoledronic acid is given concurrently for sustained control but takes 2-4 days to take effect, so it cannot provide the needed rapid lowering on its own. Loop diuretics are no longer recommended for calcium lowering and are reserved for managing fluid overload after repletion; using one in a dehydrated patient worsens hypovolemia. Glucocorticoids lower calcium only in steroid-responsive causes (lymphoma, granulomatous disease, vitamin D toxicity), not in metastatic breast cancer. Hemodialysis is reserved for severe hypercalcemia with renal failure or hemodynamic instability refractory to medical therapy, not as the initial step in a stable patient.",
   },
   {
-    id: "hemeonc-66",
+    id: "hemeonc-53",
     system: "Hematology / Oncology",
     topic: "Pancoast syndrome",
     stem: "A 64-year-old man with a 40-pack-year smoking history presents with several weeks of right shoulder pain. He has developed numbness and tingling along the medial aspect of his right forearm and hand. Examination shows right-sided ptosis, miosis, and decreased sweating of the right face. Which of the following best explains this patient's findings?",
@@ -8025,7 +7260,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An apical (Pancoast) lung tumor disrupts the lower brachial plexus (C8–T2), producing ulnar-distribution neuropathy and shoulder pain, and invades the sympathetic chain to cause Horner syndrome (ptosis, miosis, anhidrosis). SVC compression causes face/arm swelling and JVD rather than Horner syndrome, and PTHrP causes hypercalcemia.",
   },
   {
-    id: "hemeonc-67",
+    id: "hemeonc-54",
     system: "Hematology / Oncology",
     topic: "SVC syndrome",
     stem: "A 58-year-old man with a history of heavy smoking presents with progressive facial and arm swelling and shortness of breath. Examination shows distended neck veins and facial plethora that worsen when he raises his arms. A chest mass is suspected. Which of the following is the most likely cause of his presentation?",
@@ -8040,7 +7275,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Face and arm swelling with jugular venous distention and dyspnea in a smoker reflects superior vena cava syndrome from tumor compression of the SVC. Brachial plexus/sympathetic invasion produces Pancoast/Horner findings, while ectopic ADH and PTHrP cause hyponatremia and hypercalcemia respectively rather than venous congestion.",
   },
   {
-    id: "hemeonc-68",
+    id: "hemeonc-55",
     system: "Hematology / Oncology",
     topic: "Lung cancer paraneoplastic syndromes",
     stem: "A 67-year-old man with a long smoking history is found to have a hilar lung mass. Laboratory studies reveal serum sodium of 122 mEq/L, and he is also noted to have proximal muscle weakness that improves with repeated effort. Which of the following lung cancer subtypes is most likely responsible for this presentation?",
@@ -8055,7 +7290,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Small cell lung cancer is associated with SIADH (hyponatremia), ectopic ACTH, and Lambert-Eaton myasthenic syndrome (weakness improving with use). Squamous cell carcinoma classically causes hypercalcemia via PTHrP, and adenocarcinoma is associated with hypertrophic osteoarthropathy, not this constellation.",
   },
   {
-    id: "hemeonc-69",
+    id: "hemeonc-56",
     system: "Hematology / Oncology",
     topic: "Squamous cell paraneoplastic",
     stem: "A 66-year-old man with a 50-pack-year smoking history is found to have a centrally located lung mass. Laboratory studies show serum calcium of 13.2 mg/dL with a suppressed parathyroid hormone level. Which of the following mediators is most likely responsible for this finding?",
@@ -8070,7 +7305,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Squamous cell lung carcinoma classically secretes PTH-related peptide, producing hypercalcemia with a suppressed native PTH. Ectopic ADH and ACTH (associated with small cell cancer) cause hyponatremia and Cushing syndrome respectively, not hypercalcemia.",
   },
   {
-    id: "hemeonc-70",
+    id: "hemeonc-57",
     system: "Hematology / Oncology",
     topic: "CML diagnosis",
     stem: "A 55-year-old man presents with fatigue and early satiety. Examination shows marked splenomegaly. Complete blood count shows leukocytosis with a left shift including mature neutrophil precursors and basophilia. The leukocyte alkaline phosphatase score is low. Which of the following genetic abnormalities is most likely present?",
@@ -8085,7 +7320,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Leukocytosis with basophilia, a low leukocyte alkaline phosphatase score, and splenomegaly point to chronic myeloid leukemia, driven by the BCR-ABL1 fusion from the t(9;22) Philadelphia chromosome. JAK2 mutation underlies polycythemia vera, and a low LAP distinguishes CML from a leukemoid reaction, which has an elevated LAP.",
   },
   {
-    id: "hemeonc-71",
+    id: "hemeonc-58",
     system: "Hematology / Oncology",
     topic: "Leukemoid reaction vs CML",
     stem: "A 48-year-old man with a severe pneumonia has a white blood cell count of 52,000/mm³ with a predominance of mature neutrophils and bands. The leukocyte alkaline phosphatase score is elevated. There is no basophilia and no splenomegaly. Which of the following is the most likely explanation for the leukocytosis?",
@@ -8100,7 +7335,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An elevated leukocyte alkaline phosphatase score with mature neutrophil precursors in the setting of infection indicates a reactive leukemoid reaction. Chronic myeloid leukemia is distinguished by a low LAP score, basophilia, and splenomegaly.",
   },
   {
-    id: "hemeonc-72",
+    id: "hemeonc-59",
     system: "Hematology / Oncology",
     topic: "CLL identification",
     stem: "A 68-year-old man is found to have a markedly elevated lymphocyte count on routine bloodwork. He reports recurrent infections, and examination shows splenomegaly. The peripheral blood smear shows numerous smudge cells. Which of the following is the most likely diagnosis?",
@@ -8115,7 +7350,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Smudge cells with marked lymphocytosis, splenomegaly, and recurrent infections are classic for chronic lymphocytic leukemia. Chronic myeloid leukemia shows a myeloid left shift with basophilia and a low LAP rather than mature lymphocytosis with smudge cells.",
   },
   {
-    id: "hemeonc-73",
+    id: "hemeonc-60",
     system: "Hematology / Oncology",
     topic: "Polycythemia vera workup",
     stem: "A 56-year-old man presents with headache, blurred vision, and intense itching after hot showers. He also reports a recent gout flare and burning pain in his fingertips. Hemoglobin is 19.5 g/dL. Which of the following findings is most consistent with the underlying diagnosis?",
@@ -8130,7 +7365,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Aquagenic pruritus, erythromelalgia, gout, and erythrocytosis describe polycythemia vera, which is characterized by a low erythropoietin level and a JAK2 mutation in about 98% of cases. A high erythropoietin level instead suggests secondary polycythemia from hypoxia (OSA, COPD) or renal cell carcinoma.",
   },
   {
-    id: "hemeonc-74",
+    id: "hemeonc-61",
     system: "Hematology / Oncology",
     topic: "Secondary polycythemia",
     stem: "A 60-year-old man is found to have a hemoglobin of 18.8 g/dL. He denies pruritus and has no splenomegaly. Serum erythropoietin is elevated. Which of the following is the most likely underlying cause?",
@@ -8145,7 +7380,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "An elevated erythropoietin level indicates secondary polycythemia, which can be driven by hypoxia (OSA, COPD) or an EPO-producing tumor such as renal cell carcinoma. Polycythemia vera characteristically has a low erythropoietin level and a JAK2 mutation.",
   },
   {
-    id: "hemeonc-75",
+    id: "hemeonc-62",
     system: "Hematology / Oncology",
     topic: "Heparin-induced thrombocytopenia",
     stem: "A 64-year-old man admitted 5 days ago for a hip fracture and started on subcutaneous heparin for thromboprophylaxis is found to have a platelet count that has fallen from 240,000/mm³ to 95,000/mm³. He has a new tender, swollen right calf. Which of the following is the most appropriate next step in management?",
@@ -8160,7 +7395,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A greater than 50% platelet drop several days after starting heparin with new thrombosis indicates heparin-induced thrombocytopenia, which requires stopping all heparin and starting a non-heparin anticoagulant such as a direct thrombin inhibitor, DOAC, or fondaparinux. Platelet transfusion and starting warfarin during acute HIT are both contraindicated, and observation alone leaves the prothrombotic state untreated.",
   },
   {
-    id: "hemeonc-76",
+    id: "hemeonc-63",
     system: "Hematology / Oncology",
     topic: "Thrombotic thrombocytopenic purpura",
     stem: "A 41-year-old woman presents with fatigue, confusion, and fever. Laboratory studies show hemoglobin 8.1 g/dL, platelets 22,000/mm³, and creatinine 2.4 mg/dL with hematuria. Coagulation studies (PT and aPTT) are normal. Which of the following is the most likely diagnosis?",
@@ -8175,7 +7410,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The pentad of fever, anemia, thrombocytopenia, renal failure, and neurologic symptoms with normal coagulation studies is classic for thrombotic thrombocytopenic purpura. Disseminated intravascular coagulation would show prolonged PT/aPTT, low fibrinogen, and elevated D-dimer.",
   },
   {
-    id: "hemeonc-77",
+    id: "hemeonc-64",
     system: "Hematology / Oncology",
     topic: "Disseminated intravascular coagulation",
     stem: "A 58-year-old woman with gram-negative sepsis develops oozing from venipuncture sites. Laboratory studies show thrombocytopenia, prolonged PT and aPTT, decreased fibrinogen, and an elevated D-dimer. Which of the following is the most likely diagnosis?",
@@ -8190,7 +7425,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Thrombocytopenia with prolonged PT/aPTT, low fibrinogen, elevated D-dimer, and bleeding in a septic patient indicates disseminated intravascular coagulation. Thrombotic thrombocytopenic purpura and immune thrombocytopenic purpura have normal coagulation parameters.",
   },
   {
-    id: "hemeonc-78",
+    id: "hemeonc-65",
     system: "Hematology / Oncology",
     topic: "Immune thrombocytopenic purpura",
     stem: "A 34-year-old man with HIV presents with petechiae and easy bruising. Platelet count is 18,000/mm³, but hemoglobin and white blood cell count are normal. PT and aPTT are normal, and the peripheral smear shows reduced numbers of platelets with otherwise normal morphology. Which of the following is the most likely diagnosis?",
@@ -8205,7 +7440,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Isolated thrombocytopenia with normal coagulation tests and normal platelet morphology in a patient with HIV is consistent with immune thrombocytopenic purpura, a diagnosis of exclusion. TTP would show microangiopathic hemolytic anemia (anemia with schistocytes) and often neurologic/renal involvement; DIC would show prolonged PT/aPTT, low fibrinogen, and elevated D-dimer; HIT requires recent heparin exposure, which is absent; and Rocky Mountain spotted fever presents with fever and a centrally spreading rash with transaminitis and hyponatremia rather than isolated thrombocytopenia.",
   },
   {
-    id: "hemeonc-79",
+    id: "hemeonc-66",
     system: "Hematology / Oncology",
     topic: "Hyperacute transplant rejection",
     stem: "Minutes after a kidney transplant is reperfused, the graft becomes mottled and cyanotic. Histology shows thrombosis of graft vessels with ischemic necrosis. Which of the following best explains this finding?",
@@ -8220,7 +7455,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hyperacute rejection occurs within minutes due to preexisting recipient antibodies against the graft, causing vessel thrombosis and necrosis (type II hypersensitivity). Cellular vasculitis with lymphocytic infiltrates characterizes acute rejection over weeks to months, and arteriosclerosis/fibrosis defines chronic rejection over months to years.",
   },
   {
-    id: "hemeonc-80",
+    id: "hemeonc-67",
     system: "Hematology / Oncology",
     topic: "Graft-versus-host disease",
     stem: "Three weeks after an allogeneic bone marrow transplant, a patient develops a diffuse rash, jaundice, and profuse watery diarrhea. Which of the following is the most likely diagnosis?",
@@ -8372,51 +7607,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "msk-10",
     system: "Musculoskeletal",
-    topic: "Muscle relaxant for back strain",
-    stem: "A 38-year-old man presents with acute low back pain that began yesterday after moving furniture. He has paraspinal muscle tenderness and spasm on examination. The pain does not radiate below the knee, straight-leg raise testing is negative, and the neurologic examination is normal. He is started on an NSAID. Which of the following is the most appropriate additional medication to add for symptom relief?",
-    options: [
-      "A muscle relaxant",
-      "A long-term opioid",
-      "An oral corticosteroid",
-      "A gabapentinoid",
-      "A bisphosphonate",
-    ],
-    answerIndex: 0,
-    explanation: "Lumbosacral strain with paraspinal tenderness and spasm is managed with NSAIDs plus a muscle relaxant, which directly targets the muscle spasm. Oral corticosteroids are not first-line for uncomplicated mechanical strain, and long-term opioids should be avoided in acute mechanical back pain.",
-  },
-  {
-    id: "msk-11",
-    system: "Musculoskeletal",
-    topic: "NSAID trial duration",
-    stem: "A 45-year-old man with shooting low back pain radiating down the posterior left leg is diagnosed with lumbosacral radiculopathy. He has no bowel or bladder dysfunction, no saddle anesthesia, and no progressive weakness. He is started on conservative therapy. For approximately how long should a trial of NSAIDs be continued before escalating management?",
-    options: [
-      "4 to 6 weeks",
-      "24 to 48 hours",
-      "3 to 5 days",
-      "6 to 12 months",
-      "Indefinitely",
-    ],
-    answerIndex: 0,
-    explanation: "For radiculopathy and spinal stenosis without high-risk neurologic features, a conservative NSAID trial is given for 4 to 6 weeks before escalation. A 24 to 48 hour or 3 to 5 day course is too short to judge response in radiculopathy, and only red-flag neurologic symptoms warrant earlier imaging.",
-  },
-  {
-    id: "msk-12",
-    system: "Musculoskeletal",
-    topic: "Spinal cord compression steroids",
-    stem: "A 68-year-old man with metastatic prostate cancer develops severe back pain with new bilateral leg weakness and urinary retention over two days. Examination shows hyperreflexia and a sensory level. The team is arranging an urgent MRI. Which of the following interventions should be initiated without delay while imaging is being obtained?",
-    options: [
-      "High-dose intravenous corticosteroids",
-      "Intravenous antibiotics",
-      "Therapeutic anticoagulation",
-      "Intravenous bisphosphonate infusion",
-      "A muscle relaxant",
-    ],
-    answerIndex: 0,
-    explanation: "In suspected malignant spinal cord compression, high-dose IV corticosteroids should be started immediately to reduce edema, in parallel with urgent MRI, rather than waiting for imaging. Antibiotics would be appropriate only if epidural abscess were suspected, and bisphosphonates and anticoagulation do not address acute cord compression.",
-  },
-  {
-    id: "msk-13",
-    system: "Musculoskeletal",
     topic: "Escalation after failed NSAIDs",
     stem: "A 47-year-old man with lumbosacral radiculopathy has had persistent radicular pain despite a 5-week trial of NSAIDs. He still has no bowel or bladder dysfunction, no saddle anesthesia, and no progressive weakness, and his examination is otherwise unchanged. Which of the following is the most appropriate next step in management?",
     options: [
@@ -8430,7 +7620,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "When a conservative NSAID trial fails but no high-risk neurologic symptoms are present, the source specifies adding steroids as the next step for severe or persistent symptoms. MRI without contrast is reserved for red-flag findings such as bowel/bladder dysfunction, saddle anesthesia, or progressive weakness, none of which this patient has.",
   },
   {
-    id: "msk-14",
+    id: "msk-11",
     system: "Musculoskeletal",
     topic: "Osteoarthritis treatment",
     stem: "A 78-year-old woman comes to her physician because of a 3-week history of mild left knee pain that is worse when she climbs stairs. She also reports brief morning stiffness in the knee. She enjoys neighborhood walks but has had to stop because of the pain. Vital signs are within normal limits. On examination, active and passive range of motion of the left knee is full; there is moderate crepitus and no effusion, erythema, or warmth. Which of the following is the most appropriate pharmacotherapy?",
@@ -8445,7 +7635,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Insidious knee pain with crepitus, brief morning stiffness, and no warmth, erythema, or effusion is classic osteoarthritis, for which first-line therapy is acetaminophen or NSAIDs. Prednisone and colchicine target inflammatory arthritis, and opioids such as hydrocodone are not first-line for OA.",
   },
   {
-    id: "msk-15",
+    id: "msk-12",
     system: "Musculoskeletal",
     topic: "Septic arthritis pathogen-directed therapy",
     stem: "A 55-year-old man comes to the emergency department because of severe pain and swelling of his right knee and fever. The joint is warm and erythematous with a large effusion. Arthrocentesis yields cloudy fluid with a synovial white blood cell count greater than 50,000/mm3, and Gram stain shows gram-positive cocci in clusters. Which of the following is the most appropriate antibiotic therapy?",
@@ -8460,7 +7650,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A synovial WBC count over 50,000/mm3 with fever indicates septic arthritis, and gram-positive cocci in clusters indicate Staphylococcus, which is treated with vancomycin. Penicillin targets streptococci (chains) and ceftriaxone targets gonococcal (gram-negative diplococci) infection; colchicine and allopurinol are gout therapies.",
   },
   {
-    id: "msk-16",
+    id: "msk-13",
     system: "Musculoskeletal",
     topic: "RA preoperative C-spine evaluation",
     stem: "A 58-year-old woman with long-standing rheumatoid arthritis is scheduled for an elective procedure requiring general anesthesia and intubation. Examination shows ulnar deviation and swan-neck deformities of the hands. Before proceeding with surgery, evaluation for which of the following is the most important consideration in this patient?",
@@ -8475,7 +7665,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Rheumatoid arthritis can cause atlantoaxial (C1-C2) instability, which risks spinal cord injury during neck manipulation for intubation, so cervical spine imaging is obtained before surgery. Heberden nodes are an osteoarthritis finding, and tophi and chondrocalcinosis relate to crystal arthropathies.",
   },
   {
-    id: "msk-17",
+    id: "msk-14",
     system: "Musculoskeletal",
     topic: "Gout diagnosis",
     stem: "A 52-year-old man comes to the emergency department because of acute severe pain, swelling, and redness of his first metatarsophalangeal joint. Examination shows a firm nodular deposit over the joint. Arthrocentesis is performed, and polarized light microscopy of the synovial fluid shows needle-shaped, negatively birefringent crystals. Which of the following is the most likely diagnosis?",
@@ -8490,7 +7680,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Needle-shaped, negatively birefringent crystals with a tophus are diagnostic of gout (monosodium urate). Pseudogout shows rhomboid, positively birefringent crystals; the absence of a high-WBC purulent effusion and crystal findings exclude septic arthritis.",
   },
   {
-    id: "msk-18",
+    id: "msk-15",
     system: "Musculoskeletal",
     topic: "Pseudogout associated disease",
     stem: "A 60-year-old man comes to the physician because of pain and swelling of his right knee. Radiographs show chondrocalcinosis, and arthrocentesis reveals rhomboid-shaped, positively birefringent crystals in the synovial fluid. This patient's crystal arthropathy is most strongly associated with which of the following underlying conditions?",
@@ -8505,7 +7695,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Rhomboid, positively birefringent crystals with chondrocalcinosis indicate calcium pyrophosphate deposition disease (pseudogout), which is classically associated with hemochromatosis. The other conditions are not the characteristic association for CPPD.",
   },
   {
-    id: "msk-19",
+    id: "msk-16",
     system: "Musculoskeletal",
     topic: "Chronic gout management",
     stem: "A 50-year-old man has had three episodes of acute monoarticular arthritis of the first toe over the past year, each confirmed by arthrocentesis showing negatively birefringent crystals. He is currently asymptomatic. Which of the following is the most appropriate long-term pharmacotherapy to prevent recurrence?",
@@ -8520,7 +7710,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Recurrent gout attacks warrant chronic urate-lowering therapy with allopurinol. Colchicine, NSAIDs such as indomethacin, and steroids treat acute flares but do not lower urate for long-term prevention.",
   },
   {
-    id: "msk-20",
+    id: "msk-17",
     system: "Musculoskeletal",
     topic: "Polymyalgia rheumatica",
     stem: "A 72-year-old woman recently diagnosed with giant cell arteritis reports several weeks of bilateral stiffness and pain in her shoulders and hips with restricted range of motion. She denies true weakness. Laboratory studies show an elevated erythrocyte sedimentation rate and a normal creatine kinase. Which of the following is the most likely diagnosis?",
@@ -8535,7 +7725,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Bilateral proximal stiffness and pain without weakness, elevated ESR, normal CK, and association with giant cell arteritis define polymyalgia rheumatica. Polymyositis causes true weakness with elevated CK; steroid-induced and statin myopathy do not fit the GCA association and lab pattern.",
   },
   {
-    id: "msk-21",
+    id: "msk-18",
     system: "Musculoskeletal",
     topic: "Polymyositis",
     stem: "A 47-year-old woman with recently diagnosed interstitial lung disease presents with several weeks of progressive, symmetric proximal muscle weakness involving the shoulders and hips. She reports no muscle pain or tenderness. Laboratory studies show an elevated erythrocyte sedimentation rate and an elevated creatine kinase. There is no skin rash. Which of the following is the most likely diagnosis?",
@@ -8550,7 +7740,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Symmetric proximal weakness without pain, elevated CK and ESR, and associated interstitial lung disease indicate polymyositis. Polymyalgia rheumatica has pain without weakness and normal CK, and dermatomyositis would additionally show a characteristic rash, which is absent here.",
   },
   {
-    id: "msk-22",
+    id: "msk-19",
     system: "Musculoskeletal",
     topic: "Dermatomyositis",
     stem: "A 49-year-old woman presents with several weeks of progressive symmetric proximal muscle weakness without muscle pain. Examination shows a purplish discoloration of the upper eyelids. Laboratory studies show an elevated erythrocyte sedimentation rate and an elevated creatine kinase. Which of the following is the most likely diagnosis?",
@@ -8565,7 +7755,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Proximal weakness with elevated CK and ESR plus a heliotrope (purplish periorbital) rash is dermatomyositis. Polymyositis has the same muscle and lab findings but lacks the rash; PMR and fibromyalgia have a normal CK.",
   },
   {
-    id: "msk-23",
+    id: "msk-20",
     system: "Musculoskeletal",
     topic: "Statin-induced myopathy",
     stem: "A 60-year-old man comes to the physician because of one week of muscle aches and mild weakness. He was diagnosed with hyperlipidemia and started on a new medication three weeks ago. Laboratory studies show a normal erythrocyte sedimentation rate and a mildly elevated creatine kinase. Which of the following is the most likely diagnosis?",
@@ -8580,7 +7770,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Muscle pain with mild weakness, a mildly elevated CK, normal ESR, and recent initiation of lipid-lowering therapy point to statin-induced myopathy. Polymyositis causes higher CK with an elevated ESR and no pain, and PMR and fibromyalgia have a normal CK.",
   },
   {
-    id: "msk-24",
+    id: "msk-21",
     system: "Musculoskeletal",
     topic: "Steroid-induced myopathy",
     stem: "A 45-year-old woman who was recently treated for a lupus flare presents with proximal muscle weakness. She has no muscle pain or tenderness. Laboratory studies show a normal erythrocyte sedimentation rate and a normal creatine kinase. Which of the following is the most likely diagnosis?",
@@ -8595,7 +7785,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Weakness without pain in the setting of recent corticosteroid treatment, with normal CK and ESR, indicates steroid-induced myopathy. Polymyositis would show an elevated CK, and PMR and fibromyalgia present with pain rather than isolated weakness.",
   },
   {
-    id: "msk-25",
+    id: "msk-22",
     system: "Musculoskeletal",
     topic: "Fibromyalgia",
     stem: "A 38-year-old woman with a history of depression and anxiety comes to the physician because of chronic fatigue and asymmetric pain at multiple sites. She reports no muscle weakness. Laboratory studies show a normal creatine kinase and a normal erythrocyte sedimentation rate. Which of the following is the most likely diagnosis?",
@@ -8610,7 +7800,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Widespread asymmetric pain with fatigue, no weakness, normal CK and ESR, and a psychiatric comorbidity are characteristic of fibromyalgia. PMR has an elevated ESR, and polymyositis has weakness with an elevated CK.",
   },
   {
-    id: "msk-26",
+    id: "msk-23",
     system: "Musculoskeletal",
     topic: "Disseminated gonococcal arthritis",
     stem: "A 26-year-old man comes to the emergency department because of fever, muscle aches, pain in both knees, and pain in his right wrist and forearm, along with a diffuse rash. Temperature is 38.3°C (100.9°F). Examination shows effusions of both knees and scattered pustular skin lesions. Which of the following is the most likely causal pathogen?",
@@ -8625,7 +7815,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The triad of migratory polyarthritis, tenosynovitis (wrist/forearm), and pustular dermatitis with fever is classic for disseminated gonococcal infection caused by Neisseria gonorrhoeae. Chlamydia causes reactive arthritis without pustular lesions, and the other pathogens do not produce this septic arthritis-dermatitis syndrome.",
   },
   {
-    id: "msk-27",
+    id: "msk-24",
     system: "Musculoskeletal",
     topic: "Granulomatosis with polyangiitis",
     stem: "A 45-year-old man comes to the physician because of cough, hemoptysis, and chronic nasal crusting with ulcers inside the nose. He also reports inspiratory stridor. Laboratory studies show an active urine sediment consistent with glomerulonephritis. A biopsy shows granulomas, and serologic testing is positive for c-ANCA. Which of the following is the most likely diagnosis?",
@@ -8640,7 +7830,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Upper airway involvement (nasal ulcers, stridor) plus glomerulonephritis, granulomas on biopsy, and c-ANCA positivity define granulomatosis with polyangiitis. Eosinophilic GPA features asthma and eosinophilia with p-ANCA, and microscopic polyangiitis lacks upper airway disease and granulomas and is p-ANCA positive.",
   },
   {
-    id: "msk-28",
+    id: "msk-25",
     system: "Musculoskeletal",
     topic: "Eosinophilic granulomatosis with polyangiitis",
     stem: "A 40-year-old man with a history of asthma comes to the physician because of chronic sinusitis and hemoptysis. Laboratory studies show marked peripheral eosinophilia. A biopsy shows granulomas, and serologic testing is positive for p-ANCA. Which of the following is the most likely diagnosis?",
@@ -8655,7 +7845,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asthma, eosinophilia, sinusitis, granulomas, and p-ANCA positivity are characteristic of eosinophilic granulomatosis with polyangiitis. GPA is c-ANCA positive with nasal ulceration, and microscopic polyangiitis lacks asthma, eosinophilia, and granulomas.",
   },
   {
-    id: "msk-29",
+    id: "msk-26",
     system: "Musculoskeletal",
     topic: "Microscopic polyangiitis",
     stem: "A 55-year-old man comes to the physician because of cough, shortness of breath, and hemoptysis. Laboratory studies show an active urine sediment consistent with glomerulonephritis. There is no upper airway involvement. A biopsy shows no granulomas, and serologic testing is positive for p-ANCA. Which of the following is the most likely diagnosis?",
@@ -8670,7 +7860,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pulmonary-renal involvement with hemoptysis and glomerulonephritis, no upper airway disease, no granulomas, and p-ANCA positivity define microscopic polyangiitis. GPA shows granulomas, upper airway ulceration, and c-ANCA, while eosinophilic GPA includes asthma and eosinophilia.",
   },
   {
-    id: "msk-30",
+    id: "msk-27",
     system: "Musculoskeletal",
     topic: "Reactive arthritis",
     stem: "A 28-year-old man comes to the physician because of asymmetric joint pain, painful urination, and red, irritated eyes. He had a chlamydial genitourinary infection several weeks earlier. Which of the following is the most likely diagnosis?",
@@ -8777,21 +7967,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "dermatology-7",
     system: "Dermatology",
-    topic: "Seborrheic keratosis",
-    stem: "A 65-year-old man has multiple waxy, well-circumscribed brown papules and plaques on his trunk that appear greasy and 'stuck-on.' Which of the following is the most likely diagnosis?",
-    options: [
-      "Seborrheic keratosis",
-      "Melanoma",
-      "Solar lentigines",
-      "Actinic keratosis",
-      "Basal cell carcinoma",
-    ],
-    answerIndex: 0,
-    explanation: "Waxy, greasy, 'stuck-on,' well-circumscribed brown papules and plaques are characteristic of benign seborrheic keratoses. Solar lentigines are flat, uniformly pigmented macules on sun-exposed skin and lack the raised, greasy stuck-on appearance.",
-  },
-  {
-    id: "dermatology-8",
-    system: "Dermatology",
     topic: "SCC precursor lesion",
     stem: "A 70-year-old farmer has multiple rough, scaly, sandpaper-like erythematous papules on his bald scalp and dorsal hands. These lesions are best described as the precursor to which malignancy?",
     options: [
@@ -8805,7 +7980,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Actinic keratoses are rough, scaly, sandpaper-like erythematous papules or plaques on sun-exposed skin and are the precursor lesion to squamous cell carcinoma. They are not precursors to basal cell carcinoma or melanoma.",
   },
   {
-    id: "dermatology-9",
+    id: "dermatology-8",
     system: "Dermatology",
     topic: "SCC treatment",
     stem: "A 72-year-old man has a biopsy-proven squamous cell carcinoma on his lower lip. Which of the following is the most appropriate treatment?",
@@ -8820,7 +7995,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Squamous cell carcinoma is treated with surgical excision or Mohs micrographic surgery. Topical metronidazole (rosacea) and oral glucocorticoids (lichen planus) treat unrelated dermatologic conditions and have no role here.",
   },
   {
-    id: "dermatology-10",
+    id: "dermatology-9",
     system: "Dermatology",
     topic: "BCC molecular pathogenesis",
     stem: "A 58-year-old man has a pearly papule on his nose confirmed to be basal cell carcinoma. Which of the following molecular events underlies this malignancy?",
@@ -8835,7 +8010,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Basal cell carcinoma is driven by inactivating mutations in PTCH1, which removes inhibition of and thereby activates the Sonic Hedgehog pathway. BRAF V600E mutations are associated with melanoma, not basal cell carcinoma.",
   },
   {
-    id: "dermatology-11",
+    id: "dermatology-10",
     system: "Dermatology",
     topic: "BCC surgical margins",
     stem: "A 60-year-old woman has a basal cell carcinoma on her cheek. Which of the following is the most appropriate treatment?",
@@ -8850,7 +8025,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Basal cell carcinoma is treated with full-thickness surgical excision using 4-5 mm margins, or with Mohs surgery for cosmetically sensitive or high-risk areas. The very wide 2 cm margins and sentinel node biopsy described are appropriate for melanoma, not basal cell carcinoma.",
   },
   {
-    id: "dermatology-12",
+    id: "dermatology-11",
     system: "Dermatology",
     topic: "Rosacea management",
     stem: "A 48-year-old woman with central facial erythema, telangiectasias, and inflammatory papules without comedones is diagnosed with rosacea. Which of the following is the most appropriate management?",
@@ -8865,7 +8040,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Metronidazole (topical) is a first-line treatment for rosacea. Topical corticosteroids should be avoided because they can worsen or precipitate rosacea, and high-dose oral glucocorticoids are used for lichen planus, not rosacea.",
   },
   {
-    id: "dermatology-13",
+    id: "dermatology-12",
     system: "Dermatology",
     topic: "Seborrheic dermatitis associations",
     stem: "A 50-year-old man with Parkinson disease has erythematous patches with greasy, yellow scales on his scalp, eyebrows, and nasolabial folds that flare with stress. Which of the following is the most likely diagnosis?",
@@ -8880,7 +8055,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Greasy, yellow scaling over the scalp, eyebrows, nasolabial folds, and chest that flares with stress is characteristic of seborrheic dermatitis, which is associated with Parkinson disease and HIV. Psoriasis classically produces silvery, well-demarcated plaques on extensor surfaces rather than greasy yellow scale in the seborrheic distribution.",
   },
   {
-    id: "dermatology-14",
+    id: "dermatology-13",
     system: "Dermatology",
     topic: "Rosacea diagnosis",
     stem: "A 45-year-old woman reports facial flushing worsened by alcohol and hot drinks. Examination shows telangiectasias and inflammatory papules but no comedones. Which of the following is the most likely diagnosis?",
@@ -8895,7 +8070,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Facial flushing with telangiectasias and inflammatory papules in the absence of comedones, triggered by alcohol and hot drinks, is classic for rosacea. The absence of comedones distinguishes it from acne vulgaris, in which comedones are a hallmark.",
   },
   {
-    id: "dermatology-15",
+    id: "dermatology-14",
     system: "Dermatology",
     topic: "Solar lentigines",
     stem: "A 70-year-old man has multiple well-demarcated, uniformly pigmented brown macules on his face, hands, and shoulders. The lesions are flat and have developed gradually over years of sun exposure. Which of the following is the most likely diagnosis?",
@@ -8910,7 +8085,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Well-demarcated, uniformly pigmented, flat brown macules on sun-exposed areas in an older adult due to chronic UV exposure are benign solar lentigines. Unlike melanoma, they are uniform in color and well-demarcated; unlike seborrheic keratoses, they are flat rather than raised and greasy.",
   },
   {
-    id: "dermatology-16",
+    id: "dermatology-15",
     system: "Dermatology",
     topic: "Seborrheic dermatitis HIV link",
     stem: "A 35-year-old man presents with new-onset, severe greasy yellow scaling of the scalp, eyebrows, and nasolabial folds. Given the distribution and severity, evaluation for which underlying condition is most appropriate?",
@@ -8925,7 +8100,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe or extensive seborrheic dermatitis is associated with HIV infection (as well as Parkinson disease), so testing for HIV is appropriate in a young patient with abrupt, severe disease. The other listed conditions are not classically linked to seborrheic dermatitis.",
   },
   {
-    id: "dermatology-17",
+    id: "dermatology-16",
     system: "Dermatology",
     topic: "Hidradenitis suppurativa",
     stem: "A 32-year-old woman with obesity reports a 4-year history of recurrent, painful, red nodules and draining abscesses involving both axillae and the inguinal folds. Examination shows tender subcutaneous nodules, several interconnected scarred draining tracts, and double-headed open comedones. She has had no fever, and the lesions repeatedly flare and partially heal in the same intertriginous sites. Which of the following is the most likely diagnosis?",
@@ -8940,7 +8115,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic, recurrent painful nodules and abscesses with interconnecting sinus (draining) tracts and scarring localized to apocrine gland-bearing intertriginous areas (axillae, groin), often with double comedones, are characteristic of hidradenitis suppurativa. Folliculitis produces superficial follicular pustules without sinus tracts; cellulitis is an acute, diffuse spreading erythema rather than recurrent discrete nodules; furunculosis causes isolated deep follicular abscesses but not the chronic relapsing sinus-tract/scarring pattern in these sites; and lichen planus presents with pruritic, violaceous, flat-topped papules and Wickham striae, not abscesses.",
   },
   {
-    id: "dermatology-18",
+    id: "dermatology-17",
     system: "Dermatology",
     topic: "Lichen planus treatment",
     stem: "A 52-year-old woman has biopsy-confirmed lichen planus with widespread pruritic violaceous papules and painful oral involvement. Which of the following is the most appropriate treatment?",
@@ -8955,7 +8130,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Severe or widespread lichen planus is treated with high-dose oral glucocorticoids. Topical metronidazole treats rosacea and has no role in lichen planus.",
   },
   {
-    id: "dermatology-19",
+    id: "dermatology-18",
     system: "Dermatology",
     topic: "Lichen planus diagnosis",
     stem: "A 50-year-old woman presents with pruritic, purple, polygonal, flat-topped papules on her wrists and ankles. Examination of the oral mucosa reveals fine white reticulated lines. Which of the following is the most likely diagnosis?",
@@ -8970,7 +8145,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pruritic, purple, polygonal, planar papules on the wrists and ankles with Wickham striae (white reticulated lines) on the oral mucosa are the classic 'P' features of lichen planus. The oral Wickham striae and violaceous flat-topped papules distinguish it from psoriasis.",
   },
   {
-    id: "dermatology-20",
+    id: "dermatology-19",
     system: "Dermatology",
     topic: "Keratoacanthoma management",
     stem: "A 65-year-old man presents with a rapidly growing, dome-shaped, volcano-like nodule with a central keratotic plug on his cheek that appeared over a few weeks. Which of the following is the most appropriate next step in management?",
@@ -8985,7 +8160,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "A keratoacanthoma is a rapidly growing, dome-shaped, volcano-like nodule with a central keratotic plug, but it must be biopsied because it closely resembles squamous cell carcinoma. Reassurance or observation without biopsy is inappropriate because malignancy cannot be excluded clinically.",
   },
   {
-    id: "dermatology-21",
+    id: "dermatology-20",
     system: "Dermatology",
     topic: "Melanoma definitive treatment",
     stem: "A 47-year-old man undergoes excisional biopsy of a changing pigmented lesion on his back, and pathology confirms cutaneous melanoma. The lesion was asymmetric with irregular borders and variegated color. Which of the following is the most appropriate treatment?",
@@ -9000,7 +8175,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Definitive treatment of cutaneous melanoma is surgical excision with wide margins to remove residual tumor and achieve clear margins. Topical 5-FU and cryotherapy are used for superficial keratinocyte lesions such as actinic keratoses, not invasive melanoma, and observation alone is inadequate for a confirmed malignancy.",
   },
   {
-    id: "dermatology-22",
+    id: "dermatology-21",
     system: "Dermatology",
     topic: "Drug-induced lichen planus",
     stem: "A 60-year-old man develops pruritic, violaceous, flat-topped papules on his wrists several weeks after starting a new medication for hypertension. Which of the following medications is most likely responsible?",
@@ -9015,7 +8190,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Lichen planus and lichenoid drug eruptions are associated with thiazides, ACE inhibitors, beta blockers, and hydroxychloroquine. Among the listed antihypertensives, the thiazide hydrochlorothiazide is the recognized trigger, whereas the others are not classically implicated.",
   },
   {
-    id: "dermatology-23",
+    id: "dermatology-22",
     system: "Dermatology",
     topic: "Seborrheic keratosis management",
     stem: "A 66-year-old man is found to have multiple waxy, well-circumscribed, greasy brown papules and plaques on his trunk that appear 'stuck-on.' The lesions are asymptomatic and have not changed in size or color. Which of the following is the most appropriate management?",
@@ -9030,7 +8205,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Seborrheic keratoses are benign 'stuck-on' epidermal growths that require only reassurance, with removal reserved for cosmetic or symptomatic reasons. Wide excision and sentinel node biopsy are treatments for melanoma; the benign, stable, classic appearance here does not warrant aggressive intervention.",
   },
   {
-    id: "dermatology-24",
+    id: "dermatology-23",
     system: "Dermatology",
     topic: "Psoriasis diagnosis",
     stem: "A 34-year-old man comes to the office because of an itchy rash on his elbows and knees that has persisted for several months. Examination shows well-demarcated erythematous plaques with overlying silvery scale on the extensor surfaces of both elbows and both knees. There is no involvement of the flexural creases. Which of the following is the most likely diagnosis?",
@@ -9045,7 +8220,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Well-demarcated plaques with silvery scale localized to the extensor surfaces (elbows, knees) are characteristic of psoriasis. Atopic dermatitis instead favors the flexural surfaces; lichen planus presents as pruritic purple polygonal papules rather than scaly extensor plaques.",
   },
   {
-    id: "dermatology-25",
+    id: "dermatology-24",
     system: "Dermatology",
     topic: "Psoriasis treatment",
     stem: "A 40-year-old woman has a 6-month history of well-demarcated erythematous plaques with silvery scale on her elbows and knees. A clinical diagnosis of psoriasis is made. Which of the following is the most appropriate initial treatment?",
@@ -9060,7 +8235,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Psoriasis is a clinical diagnosis treated initially with topical corticosteroids. Selenium sulfide is used for seborrheic dermatitis, and antifungals/antivirals do not treat this immune-mediated condition.",
   },
   {
-    id: "dermatology-26",
+    id: "dermatology-25",
     system: "Dermatology",
     topic: "Psoriasis and HIV",
     stem: "A 29-year-old man develops sudden-onset, extensive, well-demarcated erythematous plaques with silvery scale over his trunk and extremities. He has no prior history of skin disease and no family history of psoriasis. Which of the following underlying conditions should most strongly be considered in this patient?",
@@ -9075,7 +8250,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "New-onset or abruptly severe psoriasis, especially in a young patient without prior personal or family history, should prompt evaluation for underlying HIV infection; HIV is classically associated with explosive-onset, severe, and treatment-refractory psoriasis. While psoriasis shares immune-mediated comorbidity with inflammatory bowel disease, and metabolic syndrome/diabetes are recognized associations, none of these causes sudden new-onset psoriasis in this way. Hemochromatosis and hypothyroidism are not linked to psoriasis onset.",
   },
   {
-    id: "dermatology-27",
+    id: "dermatology-26",
     system: "Dermatology",
     topic: "Psoriasis nail findings",
     stem: "A 45-year-old man with chronic scaly plaques on his extensor surfaces is noted on examination to have separation of several fingernails from the underlying nail beds. Which of the following skin conditions is most likely responsible for this nail finding?",
@@ -9090,7 +8265,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Onycholysis (separation of the nail from the nail bed) is a common nail manifestation of psoriasis, which also produces scaly extensor-surface plaques. The other listed conditions are not characteristically associated with onycholysis.",
   },
   {
-    id: "dermatology-28",
+    id: "dermatology-27",
     system: "Dermatology",
     topic: "Atopic dermatitis diagnosis",
     stem: "A 22-year-old woman comes to the office because of a chronic, intensely itchy rash. Examination shows erythematous, scaly, lichenified patches localized to the antecubital and popliteal fossae. The extensor surfaces are spared. Which of the following is the most likely diagnosis?",
@@ -9105,7 +8280,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Atopic dermatitis (eczema) characteristically involves the flexural surfaces (antecubital and popliteal fossae), in contrast to psoriasis, which favors the extensor surfaces. Diagnosis is clinical.",
   },
   {
-    id: "dermatology-29",
+    id: "dermatology-28",
     system: "Dermatology",
     topic: "Atopic dermatitis treatment",
     stem: "A 19-year-old man is diagnosed with atopic dermatitis after presenting with itchy, scaly plaques in the flexural creases of his elbows and knees. Which of the following is the most appropriate initial treatment?",
@@ -9120,7 +8295,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "First-line management of atopic dermatitis is emollients (moisturizers), with topical corticosteroids reserved for when emollients are insufficient. Systemic steroids, antifungals, and antibiotics are not initial therapy.",
   },
   {
-    id: "dermatology-30",
+    id: "dermatology-29",
     system: "Dermatology",
     topic: "Hidradenitis suppurativa treatment",
     stem: "A 30-year-old woman who smokes has recurrent painful, draining nodules and abscesses in both axillae and the groin, with sinus tract formation. A clinical diagnosis of hidradenitis suppurativa is made. Which of the following is the most appropriate pharmacotherapy?",
@@ -9135,7 +8310,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hidradenitis suppurativa is managed with antibiotics such as clindamycin or tetracyclines along with pain control. Antivirals, antifungals, and allopurinol have no role in this inflammatory follicular occlusion disorder.",
   },
   {
-    id: "dermatology-31",
+    id: "dermatology-30",
     system: "Dermatology",
     topic: "Seborrheic dermatitis treatment",
     stem: "A 38-year-old man has a 2-month history of greasy, yellowish scaling involving the scalp, eyebrows, and nasolabial folds. A clinical diagnosis of seborrheic dermatitis is made. Which of the following is the most appropriate treatment?",
@@ -9150,7 +8325,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Seborrheic dermatitis presents with greasy yellow scales in sebaceous-rich areas and is treated with antifungals such as selenium sulfide (and/or topical steroids). The other options do not address this condition.",
   },
   {
-    id: "dermatology-32",
+    id: "dermatology-31",
     system: "Dermatology",
     topic: "Lip carcinoma localization",
     stem: "A 70-year-old man with extensive sun exposure has an ulcerated lesion on his lower lip. A separate patient, a 68-year-old man, has a pearly papule with central ulceration on his upper lip. Which of the following best describes the most likely diagnoses for the lower-lip and upper-lip lesions, respectively?",
@@ -9302,21 +8477,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "rheumatology-10",
     system: "Rheumatology",
-    topic: "RA systemic associations",
-    stem: "A 55-year-old woman with a 10-year history of rheumatoid arthritis is being evaluated before elective surgery requiring intubation. Because of a recognized skeletal complication of her disease, which of the following structures is at greatest risk during neck manipulation?",
-    options: [
-      "Atlantoaxial joint",
-      "Sacroiliac joint",
-      "Distal interphalangeal joints",
-      "Hip joint",
-      "Sternoclavicular joint",
-    ],
-    answerIndex: 0,
-    explanation: "Rheumatoid arthritis is associated with atlantoaxial instability, placing the cervical spine at risk of subluxation during neck manipulation such as intubation. RA also causes osteopenia/osteoporosis, but the joint specifically threatened during airway manipulation is the atlantoaxial joint.",
-  },
-  {
-    id: "rheumatology-11",
-    system: "Rheumatology",
     topic: "SLE diagnosis",
     stem: "A 27-year-old woman presents with a malar rash, photosensitivity, painless oral ulcers, and migratory joint pain. Laboratory studies show anemia and proteinuria, with positive ANA, anti-double-stranded DNA, and anti-Smith antibodies. Which of the following is the most likely diagnosis?",
     options: [
@@ -9330,7 +8490,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The combination of malar rash, photosensitivity, oral ulcers, arthritis, cytopenias, renal involvement, and positive anti-dsDNA and anti-Smith antibodies is diagnostic of SLE; anti-dsDNA and anti-Smith are highly specific. Rheumatoid arthritis and the other conditions lack this multisystem antibody profile.",
   },
   {
-    id: "rheumatology-12",
+    id: "rheumatology-11",
     system: "Rheumatology",
     topic: "SLE acute exacerbation",
     stem: "A 29-year-old woman with systemic lupus erythematosus presents with a severe flare of arthritis, rash, and serositis. Which of the following is the most appropriate treatment for this acute exacerbation?",
@@ -9345,7 +8505,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Acute SLE exacerbations are treated with glucocorticoids. Hydroxychloroquine is for long-term maintenance, and cyclophosphamide followed by mycophenolate is reserved specifically for active lupus glomerulonephritis.",
   },
   {
-    id: "rheumatology-13",
+    id: "rheumatology-12",
     system: "Rheumatology",
     topic: "Glucocorticoid complication",
     stem: "A 34-year-old woman with systemic lupus erythematosus has required repeated high-dose glucocorticoid courses for flares over several years. She now reports progressive groin pain and limited hip range of motion. Which of the following complications is most likely responsible?",
@@ -9360,7 +8520,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Long-term glucocorticoid use, common in SLE management, can cause avascular (osteonecrosis) of the femoral head, presenting with groin/hip pain and reduced motion. Bull's eye maculopathy is a hydroxychloroquine toxicity affecting the eyes, not the hip.",
   },
   {
-    id: "rheumatology-14",
+    id: "rheumatology-13",
     system: "Rheumatology",
     topic: "SLE maintenance therapy",
     stem: "A 30-year-old woman with systemic lupus erythematosus is started on long-term hydroxychloroquine for disease control. Which of the following monitoring measures is most appropriate given a known toxicity of this drug?",
@@ -9375,7 +8535,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Hydroxychloroquine can cause bull's eye maculopathy, so yearly eye examinations are required to detect retinal toxicity. PPD testing is relevant for TNF inhibitors, and the other studies do not address hydroxychloroquine's characteristic ocular adverse effect.",
   },
   {
-    id: "rheumatology-15",
+    id: "rheumatology-14",
     system: "Rheumatology",
     topic: "Lupus nephritis treatment",
     stem: "A 26-year-old woman with systemic lupus erythematosus develops active glomerulonephritis with worsening proteinuria and an elevated creatinine. Which of the following is the most appropriate treatment regimen for her renal disease?",
@@ -9390,7 +8550,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Active lupus glomerulonephritis is treated with IV cyclophosphamide for induction, then transition to oral mycophenolate mofetil for maintenance. Hydroxychloroquine and NSAIDs do not control active nephritis, and methotrexate is not the regimen for lupus renal disease.",
   },
   {
-    id: "rheumatology-16",
+    id: "rheumatology-15",
     system: "Rheumatology",
     topic: "Psoriatic arthritis",
     stem: "A 40-year-old man with a long history of psoriasis develops asymmetric joint pain, diffuse swelling of a finger giving a 'sausage digit' appearance, nail pitting, and inflammation at tendon insertion sites. Radiographs show a 'pencil-in-cup' deformity. Which of the following is the most likely diagnosis?",
@@ -9405,7 +8565,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asymmetric arthritis with dactylitis (sausage digits), nail pitting, enthesitis, and the pathognomonic pencil-in-cup deformity in a patient with psoriasis is psoriatic arthritis. Rheumatoid arthritis is symmetric with erosions and lacks dactylitis, nail pitting, and the pencil-in-cup finding.",
   },
   {
-    id: "rheumatology-17",
+    id: "rheumatology-16",
     system: "Rheumatology",
     topic: "Sjogren syndrome",
     stem: "A 52-year-old woman reports dry eyes, dry mouth, and difficulty swallowing dry crackers without water. Examination reveals bilateral parotid enlargement. Antibody testing is positive for anti-SSA (Ro) and anti-SSB (La). Which of the following is the most likely diagnosis?",
@@ -9420,7 +8580,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Sicca symptoms (dry eyes and mouth), difficulty swallowing dry food, parotid enlargement, and positive anti-SSA (Ro) and anti-SSB (La) antibodies define Sjogren syndrome. While anti-SSA/SSB can appear in SLE, the combination of sicca symptoms and parotid enlargement is specific for Sjogren.",
   },
   {
-    id: "rheumatology-18",
+    id: "rheumatology-17",
     system: "Rheumatology",
     topic: "Sjogren complications",
     stem: "A 55-year-old woman with established Sjogren syndrome develops persistent unilateral parotid swelling that has progressively enlarged over several weeks. Which of the following complications is she at greatest risk of developing?",
@@ -9435,7 +8595,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Sjogren syndrome carries an increased risk of MALT lymphoma (as well as corneal ulcers from severe dry eye), and a persistently enlarging parotid mass raises this concern. Scleroderma renal crisis and PAH are complications of systemic sclerosis, not Sjogren.",
   },
   {
-    id: "rheumatology-19",
+    id: "rheumatology-18",
     system: "Rheumatology",
     topic: "Diffuse systemic sclerosis",
     stem: "A 45-year-old woman presents with progressive skin tightening of the face and trunk, Raynaud phenomenon, dysphagia, and dyspnea with bibasilar crackles. Pulmonary findings are consistent with interstitial lung disease. Laboratory testing is positive for anti-topoisomerase I (anti-Scl-70) antibody. Which of the following is the most likely diagnosis?",
@@ -9450,7 +8610,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Diffuse skin involvement (face and trunk) with Raynaud, dysphagia, interstitial lung disease, and positive anti-Scl-70 (anti-topoisomerase I) antibody is diffuse systemic sclerosis. CREST (limited scleroderma) is associated with anti-centromere antibody and PAH rather than diffuse skin disease and anti-Scl-70.",
   },
   {
-    id: "rheumatology-20",
+    id: "rheumatology-19",
     system: "Rheumatology",
     topic: "CREST syndrome",
     stem: "A 50-year-old woman has Raynaud phenomenon, subcutaneous calcium deposits, telangiectasias, and esophageal dysmotility. Antibody testing is positive for anti-centromere antibodies. Which of the following complications is she at greatest risk of developing?",
@@ -9465,7 +8625,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This patient has CREST (limited systemic sclerosis) with anti-centromere antibodies, and its characteristic complication is pulmonary arterial hypertension. Interstitial lung disease and scleroderma renal crisis are more characteristic of diffuse systemic sclerosis (anti-Scl-70).",
   },
   {
-    id: "rheumatology-21",
+    id: "rheumatology-20",
     system: "Rheumatology",
     topic: "Scleroderma renal crisis",
     stem: "A 47-year-old woman with diffuse systemic sclerosis presents with sudden-onset acute kidney injury and severe, malignant-range hypertension. The underlying mechanism involves increased vascular permeability, activation of the coagulation cascade, and increased renin secretion. Which of the following is the most appropriate treatment?",
@@ -9480,7 +8640,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Scleroderma renal crisis is driven by increased renin secretion causing malignant hypertension and acute renal failure, and ACE inhibitors are the treatment of choice because they directly counter the renin-angiotensin activation. Glucocorticoids can actually precipitate renal crisis and are not the treatment, and the other agents do not target the renin-driven mechanism.",
   },
   {
-    id: "rheumatology-22",
+    id: "rheumatology-21",
     system: "Rheumatology",
     topic: "Scleroderma renal crisis mechanism",
     stem: "A 49-year-old woman with diffuse systemic sclerosis develops abrupt renal failure with malignant hypertension. Which of the following best describes the sequence of events underlying her renal crisis?",
@@ -9495,7 +8655,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Scleroderma renal crisis results from increased vascular permeability that activates the coagulation cascade and triggers increased renin secretion, producing sudden renal failure and malignant hypertension. This renin-driven mechanism explains why ACE inhibitors are the treatment, distinguishing it from immune-complex glomerulonephritis seen in lupus.",
   },
   {
-    id: "rheumatology-23",
+    id: "rheumatology-22",
     system: "Rheumatology",
     topic: "RA genetic association",
     stem: "A 42-year-old woman is evaluated for a 4-month history of symmetric pain and swelling of the small joints of both hands with morning stiffness lasting more than 1 hour. Examination shows sparing of the distal interphalangeal joints and firm subcutaneous nodules at the elbows. Laboratory studies show an elevated ESR and positive anti-cyclic citrullinated peptide antibodies. Which of the following human leukocyte antigen alleles is most strongly associated with her condition?",
@@ -9510,7 +8670,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This presentation (symmetric small-joint polyarthritis sparing the DIPs, rheumatoid nodules, anti-CCP positivity) is rheumatoid arthritis, which is associated with HLA-DR4. HLA-B27 is associated with the seronegative spondyloarthropathies such as psoriatic and reactive arthritis, not RA.",
   },
   {
-    id: "rheumatology-24",
+    id: "rheumatology-23",
     system: "Rheumatology",
     topic: "OA refractory management",
     stem: "A 72-year-old woman with osteoarthritis of the knees has persistent, disabling, use-related joint pain despite an ongoing structured exercise program, weight loss, and a sustained trial of topical and oral NSAIDs. Her pain now substantially limits her daily activities. Which of the following is the most appropriate next step in management?",
@@ -9525,7 +8685,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Osteoarthritis management is stepwise: exercise and weight loss first, then topical/oral NSAIDs, and finally surgery or chronic pain management when conservative measures and NSAIDs fail. DMARDs such as methotrexate, hydroxychloroquine, and TNF inhibitors treat inflammatory arthritis (e.g., RA), not the non-inflammatory degenerative process of OA.",
   },
   {
-    id: "rheumatology-25",
+    id: "rheumatology-24",
     system: "Rheumatology",
     topic: "Sjogren corneal complication",
     stem: "A 56-year-old woman with established Sjogren syndrome reports a gritty, foreign-body sensation in both eyes and worsening eye pain over several days. She has chronically dry eyes due to her underlying disease. Which of the following ocular complications is she at greatest risk of developing?",
@@ -9540,7 +8700,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Chronic keratoconjunctivitis sicca from Sjogren syndrome predisposes to corneal ulcers (in addition to the lymphoproliferative risk of MALT lymphoma). Bull's eye maculopathy is a toxicity of hydroxychloroquine, not an intrinsic complication of Sjogren syndrome.",
   },
   {
-    id: "rheumatology-26",
+    id: "rheumatology-25",
     system: "Rheumatology",
     topic: "CREST vs diffuse sclerosis",
     stem: "A 50-year-old woman presents with longstanding Raynaud phenomenon, subcutaneous calcium deposits over her fingers, scattered telangiectasias, and esophageal dysmotility. Her skin involvement is limited, and antibody testing is positive for anti-centromere antibodies and negative for anti-topoisomerase I (anti-Scl-70). Which of the following is the most likely diagnosis?",
@@ -9555,7 +8715,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The combination of calcinosis, Raynaud phenomenon, esophageal dysmotility, and telangiectasias with anti-centromere antibodies defines CREST (limited cutaneous systemic sclerosis). Diffuse systemic sclerosis instead shows truncal/facial skin tightening with anti-Scl-70 antibodies, which are absent here.",
   },
   {
-    id: "rheumatology-27",
+    id: "rheumatology-26",
     system: "Rheumatology",
     topic: "Diffuse sclerosis complications",
     stem: "A 46-year-old woman has diffuse systemic sclerosis with skin tightening of the face and trunk, Raynaud phenomenon, and dysphagia. She is positive for anti-topoisomerase I (anti-Scl-70) antibody. She is counseled about organ complications. Which of the following pulmonary complications is she at greatest risk of developing?",
@@ -9570,7 +8730,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Diffuse systemic sclerosis (anti-Scl-70 positive) is characteristically complicated by interstitial lung disease, as well as scleroderma renal crisis. Isolated pulmonary arterial hypertension is more typical of the limited cutaneous (CREST) form, whereas bronchiectasis and thromboembolism are not characteristic complications of diffuse disease.",
   },
   {
-    id: "rheumatology-28",
+    id: "rheumatology-27",
     system: "Rheumatology",
     topic: "SLE-specific antibody",
     stem: "A 27-year-old woman presents with a malar rash, photosensitivity, painless oral ulcers, and migratory arthralgias. Laboratory studies show anemia, proteinuria, and a positive antinuclear antibody. Additional serologic testing is ordered to confirm the diagnosis. Which of the following antibodies is most specific for her condition?",
@@ -9585,7 +8745,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "In systemic lupus erythematosus, the anti-Smith antibody (along with anti-dsDNA) is highly specific for the diagnosis, whereas the ANA is sensitive but nonspecific. Anti-SSA (Ro) is associated with Sjogren syndrome and anti-centromere with CREST, neither of which is specific for SLE.",
   },
   {
-    id: "rheumatology-29",
+    id: "rheumatology-28",
     system: "Rheumatology",
     topic: "Gout diagnosis",
     stem: "A 54-year-old man comes to the emergency department because of severe pain and swelling of his right first toe that began overnight. Examination shows a warm, erythematous, exquisitely tender first metatarsophalangeal joint with an overlying firm nodule. Arthrocentesis is performed. Which of the following synovial fluid findings is most consistent with the most likely diagnosis?",
@@ -9600,7 +8760,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The tophus (firm nodule) and acute podagra point to gout, which shows needle-shaped, negatively birefringent monosodium urate crystals on arthrocentesis. Rhomboid, positively birefringent crystals indicate pseudogout (CPPD); a leukocyte count over 50,000 with gram-positive cocci indicates septic arthritis; gram-negative diplococci suggest gonococcal arthritis; fatty casts are a urinary finding seen in nephrotic syndrome and are irrelevant to synovial fluid.",
   },
   {
-    id: "rheumatology-30",
+    id: "rheumatology-29",
     system: "Rheumatology",
     topic: "Acute gout treatment",
     stem: "A 58-year-old man presents with acute onset of a hot, swollen, painful first metatarsophalangeal joint. Arthrocentesis confirms needle-shaped, negatively birefringent crystals, and Gram stain and culture are negative. Which of the following is the most appropriate initial treatment?",
@@ -9615,7 +8775,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "This is an acute gout flare (podagra with needle-shaped, negatively birefringent monosodium urate crystals; septic arthritis excluded by negative Gram stain and culture). Acute flares are aborted with an NSAID such as indomethacin, colchicine, or glucocorticoids. Allopurinol is a urate-lowering agent for chronic maintenance and should NOT be started during an acute flare, as initiating it can precipitate or prolong the attack. Vancomycin and ceftriaxone treat septic arthritis, which is excluded here. Methotrexate has no role in acute gout.",
   },
   {
-    id: "rheumatology-31",
+    id: "rheumatology-30",
     system: "Rheumatology",
     topic: "Chronic gout management",
     stem: "A 60-year-old man has had four episodes of acute monoarticular arthritis of the great toe over the past year, each with synovial fluid showing negatively birefringent needle-shaped crystals. He is currently asymptomatic. Which of the following is the most appropriate long-term pharmacotherapy?",
@@ -9630,7 +8790,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Recurrent gout flares are an indication for chronic urate-lowering therapy, and allopurinol is first-line for long-term management. NSAIDs, colchicine, and steroids treat acute flares but do not lower the urate burden that drives recurrence.",
   },
   {
-    id: "rheumatology-32",
+    id: "rheumatology-31",
     system: "Rheumatology",
     topic: "Pseudogout (CPPD)",
     stem: "A 68-year-old man presents with acute pain and swelling of the right knee. Radiographs show chondrocalcinosis, and arthrocentesis reveals rhomboid-shaped, positively birefringent crystals. Which of the following underlying conditions is most strongly associated with this disorder?",
@@ -9645,7 +8805,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Rhomboid, positively birefringent crystals with chondrocalcinosis indicate pseudogout (CPPD), which is classically associated with hemochromatosis. The other conditions are not the deck's named association for CPPD.",
   },
   {
-    id: "rheumatology-33",
+    id: "rheumatology-32",
     system: "Rheumatology",
     topic: "Septic arthritis treatment",
     stem: "A 45-year-old man presents with fever and a severely painful, swollen knee. Arthrocentesis yields cloudy fluid with a leukocyte count greater than 50,000/mm3. Gram stain shows gram-positive cocci in clusters. Which of the following is the most appropriate antibiotic?",
@@ -9660,7 +8820,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Gram-positive cocci in clusters indicate Staphylococcus, treated empirically with vancomycin. Gram-positive cocci in chains (Streptococcus) are treated with penicillin, and gram-negative diplococci (gonococcus) with ceftriaxone.",
   },
   {
-    id: "rheumatology-34",
+    id: "rheumatology-33",
     system: "Rheumatology",
     topic: "RA atlantoaxial instability",
     stem: "A 59-year-old woman with long-standing rheumatoid arthritis is scheduled for elective abdominal surgery under general anesthesia requiring endotracheal intubation. Which of the following preoperative studies is most appropriate to evaluate a complication of her disease that could be worsened by airway manipulation during intubation?",
@@ -9675,7 +8835,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Long-standing rheumatoid arthritis causes inflammatory pannus and ligamentous erosion at the C1-C2 (atlantoaxial) joint, producing atlantoaxial instability. Neck hyperextension during laryngoscopy and intubation can precipitate subluxation and spinal cord compression, so cervical spine radiographs (including lateral flexion/extension views) are obtained preoperatively. Echocardiography, pulmonary function testing, renal ultrasonography, and bone marrow biopsy do not assess this cervical instability and would not change airway-management planning.",
   },
   {
-    id: "rheumatology-35",
+    id: "rheumatology-34",
     system: "Rheumatology",
     topic: "Polymyalgia rheumatica",
     stem: "A 72-year-old woman with recently diagnosed giant cell arteritis reports bilateral stiffness and aching pain in her shoulders and hips with restricted motion. There is no true muscle weakness. Laboratory studies show an elevated ESR and a normal creatine kinase level. Which of the following is the most likely diagnosis?",
@@ -9690,7 +8850,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Bilateral shoulder and hip pain and stiffness without true weakness, an elevated ESR, a normal CK, and a strong association with giant cell arteritis define polymyalgia rheumatica. Polymyositis causes true proximal weakness with an elevated CK. Steroid-induced and statin-induced myopathies produce weakness and require the corresponding trigger (recent corticosteroid use or a statin), and statin myopathy typically elevates CK. Fibromyalgia presents with widespread, often asymmetric pain but a normal ESR and normal CK, distinguishing it from this patient's elevated ESR.",
   },
   {
-    id: "rheumatology-36",
+    id: "rheumatology-35",
     system: "Rheumatology",
     topic: "Polymyositis",
     stem: "A 48-year-old woman presents with several weeks of progressive, symmetric proximal muscle weakness without muscle pain or tenderness. She was recently diagnosed with interstitial lung disease. Laboratory studies show an elevated ESR and elevated creatine kinase. Which of the following is the most likely diagnosis?",
@@ -9705,7 +8865,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Symmetric proximal weakness without pain, elevated CK and ESR, and associated interstitial lung disease indicate polymyositis. Polymyalgia rheumatica and fibromyalgia produce pain without weakness and a normal CK; steroid-induced myopathy has a normal CK; statin myopathy is preceded by recent statin use and has prominent pain.",
   },
   {
-    id: "rheumatology-37",
+    id: "rheumatology-36",
     system: "Rheumatology",
     topic: "Dermatomyositis",
     stem: "A 50-year-old woman has several weeks of progressive symmetric proximal muscle weakness with an elevated creatine kinase and elevated ESR. Examination also reveals a purplish discoloration of the skin over the upper eyelids. Which of the following is the most likely diagnosis?",
@@ -9720,7 +8880,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Proximal weakness with elevated CK plus a heliotrope (purplish periorbital) rash identifies dermatomyositis. Polymyositis has the same muscle findings but lacks the heliotrope rash; the other options do not produce this combination.",
   },
   {
-    id: "rheumatology-38",
+    id: "rheumatology-37",
     system: "Rheumatology",
     topic: "Statin-induced myopathy",
     stem: "A 62-year-old man presents with one week of muscle pain and mild weakness. Three weeks ago he was started on a medication for newly diagnosed hyperlipidemia. Laboratory studies show a normal ESR and a mildly elevated creatine kinase. Which of the following is the most likely diagnosis?",
@@ -9735,7 +8895,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Recent initiation of a lipid-lowering agent (statin) followed by muscle pain, a mildly elevated CK, and a normal ESR is the classic picture of statin-induced myopathy. Polymyositis typically causes a markedly elevated CK with little or no muscle pain, so a mildly elevated CK accompanied by pain argues against it. Polymyalgia rheumatica and fibromyalgia both have a normal CK (and PMR has an elevated ESR), excluding them here. Steroid-induced myopathy follows recent corticosteroid use and shows a normal CK, neither of which fits this patient.",
   },
   {
-    id: "rheumatology-39",
+    id: "rheumatology-38",
     system: "Rheumatology",
     topic: "Steroid-induced myopathy",
     stem: "A 40-year-old woman who was recently treated with high-dose corticosteroids for a lupus flare now reports muscle weakness. She has no muscle pain or tenderness. Laboratory studies show a normal ESR and a normal creatine kinase. Which of the following is the most likely diagnosis?",
@@ -9750,7 +8910,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Painless weakness with a normal CK and normal ESR after recent corticosteroid treatment indicates steroid-induced myopathy. Polymyositis would show an elevated CK; statin myopathy follows statin use with pain; polymyalgia rheumatica has an elevated ESR; fibromyalgia causes pain rather than weakness.",
   },
   {
-    id: "rheumatology-40",
+    id: "rheumatology-39",
     system: "Rheumatology",
     topic: "Fibromyalgia",
     stem: "A 35-year-old woman presents with asymmetric pain at multiple body sites and fatigue. She has a history of depression and anxiety. There is no muscle weakness. Laboratory studies show a normal creatine kinase and a normal ESR. Which of the following is the most likely diagnosis?",
@@ -9765,7 +8925,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Multisite pain without weakness, normal CK and ESR, and a psychiatric comorbidity are characteristic of fibromyalgia. Polymyalgia rheumatica has an elevated ESR; polymyositis has weakness with elevated CK; the medication-induced myopathies follow specific drug exposures.",
   },
   {
-    id: "rheumatology-41",
+    id: "rheumatology-40",
     system: "Rheumatology",
     topic: "Granulomatosis with polyangiitis",
     stem: "A 50-year-old man presents with cough, hemoptysis, and nasal ulcers. Urinalysis shows hematuria with red cell casts consistent with glomerulonephritis. Serologic testing is positive for c-ANCA (anti-PR3), and biopsy shows granulomas. Which of the following is the most likely diagnosis?",
@@ -9780,7 +8940,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Upper airway (nasal) ulceration, pulmonary hemorrhage, glomerulonephritis, granulomas on biopsy, and c-ANCA/anti-PR3 positivity define granulomatosis with polyangiitis. Microscopic polyangiitis lacks granulomas and upper airway disease and is p-ANCA positive; eosinophilic GPA features asthma and eosinophilia.",
   },
   {
-    id: "rheumatology-42",
+    id: "rheumatology-41",
     system: "Rheumatology",
     topic: "Eosinophilic GPA",
     stem: "A 45-year-old man with a history of asthma presents with sinusitis and hemoptysis. Laboratory studies show marked eosinophilia, and biopsy reveals granulomas. Serologic testing is positive for p-ANCA (anti-MPO). Which of the following is the most likely diagnosis?",
@@ -9795,7 +8955,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Asthma, eosinophilia, sinus involvement, granulomas, and p-ANCA (anti-MPO) positivity indicate eosinophilic granulomatosis with polyangiitis. Granulomatosis with polyangiitis is c-ANCA positive with nasal ulceration but no asthma/eosinophilia; microscopic polyangiitis lacks granulomas and asthma.",
   },
   {
-    id: "rheumatology-43",
+    id: "rheumatology-42",
     system: "Rheumatology",
     topic: "Microscopic polyangiitis",
     stem: "A 55-year-old man presents with cough, shortness of breath, and hemoptysis. Urinalysis shows red cell casts consistent with glomerulonephritis. There is no upper airway involvement. Biopsy shows no granulomas, and serologic testing is positive for p-ANCA (anti-MPO). Which of the following is the most likely diagnosis?",
@@ -9810,7 +8970,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Pulmonary hemorrhage and glomerulonephritis without upper airway involvement, no granulomas on biopsy, and p-ANCA (anti-MPO) positivity define microscopic polyangiitis. Granulomatosis with polyangiitis has nasal ulceration, granulomas, and c-ANCA; eosinophilic GPA has asthma and eosinophilia.",
   },
   {
-    id: "rheumatology-44",
+    id: "rheumatology-43",
     system: "Rheumatology",
     topic: "Anti-Jo-1 antibody",
     stem: "A 47-year-old woman is being evaluated for several weeks of symmetric proximal muscle weakness with an elevated creatine kinase, and a muscle biopsy shows inflammatory infiltrates. Which of the following autoantibodies is most specifically associated with her condition?",
@@ -9825,7 +8985,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Anti-Jo-1 antibodies are associated with dermatomyositis/polymyositis. Anti-centromere and anti-Scl-70 indicate systemic sclerosis, anti-dsDNA indicates lupus, and anti-smooth muscle antibodies indicate autoimmune hepatitis.",
   },
   {
-    id: "rheumatology-45",
+    id: "rheumatology-44",
     system: "Rheumatology",
     topic: "Gonococcal arthritis",
     stem: "A 26-year-old man comes to the emergency department with fever, myalgias, pain in both knees and the right wrist, and a pustular rash. Examination shows effusions of both knees. He also reports dysuria with a mucopurulent urethral discharge. Synovial fluid analysis is most likely to reveal which of the following?",
@@ -9840,7 +9000,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Fever, migratory polyarthritis, tenosynovitis, a pustular rash, and an antecedent genitourinary infection indicate disseminated gonococcal infection, whose synovial fluid shows gram-negative diplococci. Gram-positive clusters suggest Staphylococcus, and the crystal findings indicate gout or pseudogout.",
   },
   {
-    id: "rheumatology-46",
+    id: "rheumatology-45",
     system: "Rheumatology",
     topic: "Reactive arthritis",
     stem: "A 28-year-old man develops asymmetric arthritis of the knees and ankles, conjunctivitis, and dysuria several weeks after a chlamydial genitourinary infection. Synovial fluid is sterile. Which of the following is the most likely diagnosis?",
@@ -9872,21 +9032,6 @@ export const SHELF_MCQS: McqQuestion[] = [
   {
     id: "biostatistics-2",
     system: "Biostatistics",
-    topic: "Positive predictive value",
-    stem: "A 37-year-old woman comes to her physician for a second opinion regarding a positive Chlamydia trachomatis DNA hybridization test obtained 2 weeks ago. She has been in a mutually monogamous relationship for 7 years and disbelieves the result. The physician notes that the prevalence of C. trachomatis infection in her age group is less than 1%, the sensitivity of the test is 80%, and the specificity is 97%. Which of the following parameters best explains to the patient the likelihood that her positive result reflects true infection?",
-    options: [
-      "Positive predictive value",
-      "Negative predictive value",
-      "Positive likelihood ratio",
-      "Negative likelihood ratio",
-      "Accuracy",
-    ],
-    answerIndex: 0,
-    explanation: "The patient is asking whether her positive test is a true positive, which is exactly the positive predictive value (probability of disease given a positive test). Because prevalence is very low (<1%), even a fairly specific test yields a low PPV (about 21% at 1% prevalence), so many positives are false positives. Likelihood ratios and accuracy do not directly express the chance that this individual's positive result is genuine.",
-  },
-  {
-    id: "biostatistics-3",
-    system: "Biostatistics",
     topic: "Number needed to harm",
     stem: "A new antiemetic is compared with standard care in 1000 patients with nausea who are randomly assigned to one of the two groups. The new drug relieves nausea more effectively, but new-onset type 2 diabetes develops in 2.4% of patients receiving the new drug compared with 1.6% of patients receiving standard care. Which of the following best represents the number needed to harm for the new drug to cause new-onset type 2 diabetes in one patient?",
     options: [
@@ -9900,7 +9045,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "The absolute risk increase is 2.4% - 1.6% = 0.8% (0.008), and NNH = 1/ARI = 1/0.008 = 125. Choosing 25, 50, 110, or 150 reflects errors in computing or inverting the absolute risk increase.",
   },
   {
-    id: "biostatistics-4",
+    id: "biostatistics-3",
     system: "Biostatistics",
     topic: "Prevalence and PPV",
     stem: "A 37-year-old woman with no medical history presents for a second opinion after a positive Neisseria gonorrhoeae test obtained 1 week ago. She has been in a mutually monogamous relationship for 15 years and disbelieves the result. The prevalence of N. gonorrhoeae infection in her age group is less than 1%, the test sensitivity is 82%, and the specificity is 98%. Which of the following best explains why her positive result is more likely to be a false positive than a true positive?",
@@ -9915,7 +9060,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Positive predictive value falls as disease prevalence decreases; in a population with less than 1% prevalence, even a highly specific test produces a low PPV, so a positive result is frequently a false positive. Working it out: among 10,000 people at 1% prevalence, true positives = 100 x 0.82 = 82 and false positives = 9,900 x 0.02 = 198, giving a PPV of 82/280 (about 29%) - so most positives are false. Sensitivity (82%) and the negative likelihood ratio do not drive down the PPV, and the test's specificity (98%) and accuracy are actually high; the low pretest probability (prevalence) is the dominant reason the positive result is most likely a false positive.",
   },
   {
-    id: "biostatistics-5",
+    id: "biostatistics-4",
     system: "Biostatistics",
     topic: "Sensitivity definition",
     stem: "An investigator is evaluating a new screening test and wants to report the proportion of patients who truly have the disease that are correctly identified as positive by the test. Which of the following test characteristics is the investigator describing?",
@@ -9930,7 +9075,7 @@ export const SHELF_MCQS: McqQuestion[] = [
     explanation: "Sensitivity is the proportion of patients WITH the disease who test positive (true positives among the diseased). Specificity instead describes disease-free patients who test negative, and predictive values condition on the test result rather than on true disease status.",
   },
   {
-    id: "biostatistics-6",
+    id: "biostatistics-5",
     system: "Biostatistics",
     topic: "Negative predictive value",
     stem: "A clinician wants to know, among all patients whose new screening test result is negative, what proportion truly do not have the disease. Which of the following parameters provides this information?",
@@ -9943,21 +9088,6 @@ export const SHELF_MCQS: McqQuestion[] = [
     ],
     answerIndex: 0,
     explanation: "Negative predictive value is the proportion of patients with a negative test who are truly disease-free, conditioning on the negative result. Specificity instead conditions on disease-free status (those without disease who test negative), and so does not answer the clinician's question.",
-  },
-  {
-    id: "biostatistics-7",
-    system: "Biostatistics",
-    topic: "Absolute risk reduction",
-    stem: "In a randomized trial, a new drug to relieve nausea is compared with standard care. New-onset type 2 diabetes occurs in 2.4% of patients in the new-drug group and 1.6% of patients in the standard-care group. Which of the following best represents the absolute risk increase for new-onset type 2 diabetes with the new drug?",
-    options: [
-      "0.8%",
-      "1.5%",
-      "8%",
-      "33%",
-      "60%",
-    ],
-    answerIndex: 0,
-    explanation: "Absolute risk increase is the simple difference in event rates between groups: 2.4% - 1.6% = 0.8%. The other values reflect relative comparisons or arithmetic errors rather than the absolute difference in risk.",
   },
   {
     id: "general-1",
