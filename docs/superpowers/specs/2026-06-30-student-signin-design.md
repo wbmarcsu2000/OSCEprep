@@ -62,8 +62,8 @@ This is **identity-attributed analytics**, not cloud accounts: no per-user data 
 2. **`src/ui/components/LoginGate.tsx` (new)** — the sign-in screen (modeled on `ConsentGate.tsx`).
    - Fields: Name, Northwestern email, Class password.
    - **Consent block**: plain-language disclosure + a required checkbox: *"I understand and agree that my name, email, and how I use this tool are collected and visible to the course instructor."*
-   - Submit disabled until: name non-empty, email passes `validateEmail`, password non-empty, **consent checked**.
-   - On submit → `POST ${endpoint}/auth` with `{ password, name, email }`.
+   - **Consent is a hard precondition of sign-in itself.** Submit is disabled until: name non-empty, email passes `validateEmail`, password non-empty, **and consent is checked**. A student who does not consent cannot sign in — the `/auth` request is never sent, no identity is created, and there is no fallback/anonymous path into the tool. Declining consent = no access, full stop.
+   - On submit → `POST ${endpoint}/auth` with `{ password, name, email, consent: true }`.
      - 200 → `setStudent(...)`, set consent granted, call store `setStudent`, invoke `onSignedIn()` to pass the gate.
      - 401 → inline "Incorrect class password."
      - Network/Worker error → inline "Can't reach the sign-in server. Check your connection and try again."
@@ -85,10 +85,11 @@ This is **identity-attributed analytics**, not cloud accounts: no per-user data 
 ### Backend (`analytics-worker/`)
 
 7. **`worker.js` (modified)**
-   - **`POST /auth`** — body `{ password, name, email }`.
+   - **`POST /auth`** — body `{ password, name, email, consent }`.
+     - **Require `consent === true`** (defense in depth — even if the client is bypassed, no consent means no registration). Missing/false → `403 { ok: false, error: "consent_required" }`. The student is **not** added to `students` and gets no identity.
      - Validate `password === env.CLASS_PASSWORD` (Cloudflare secret). Mismatch → `401 { ok: false, error: "bad_password" }`.
      - Re-validate email domain server-side (defense in depth). Bad → `400 { ok: false, error: "bad_email" }`.
-     - Upsert into `students` (email PK; update `name`, `last_seen`, `device`, `country`, `ua`).
+     - Upsert into `students` (email PK; update `name`, `last_seen`, `consent_at`, `device`, `country`, `ua`).
      - Success → `200 { ok: true }`.
      - CORS headers consistent with the existing handlers.
    - **`POST /` (ingest)** — add `student_email`, `student_name` to the accepted/stored columns (allowlisted, clipped like other strings). Backward compatible: payloads without them store `NULL`.
@@ -96,7 +97,7 @@ This is **identity-attributed analytics**, not cloud accounts: no per-user data 
    - Password-check and email-validation logic factored into small **pure functions** so they're unit-testable.
 
 8. **`schema.sql` (modified)** — fresh-DB schema gains:
-   - New table `students(email TEXT PRIMARY KEY, name TEXT, first_seen INTEGER, last_seen INTEGER, device TEXT, country TEXT, ua TEXT)`.
+   - New table `students(email TEXT PRIMARY KEY, name TEXT, first_seen INTEGER, last_seen INTEGER, consent_at INTEGER, device TEXT, country TEXT, ua TEXT)` — `consent_at` records when the student affirmatively consented (a row only exists if they did).
    - `events` gains `student_email TEXT` and `student_name TEXT` (nullable). Index `(student_email, received)`.
 
 9. **`migrations/002_student_identity.sql` (new)** — for the **live** DB: `ALTER TABLE events ADD COLUMN student_email TEXT; ALTER TABLE events ADD COLUMN student_name TEXT;` + `CREATE TABLE IF NOT EXISTS students (...)` + the new index. (User runs `wrangler d1 execute` / `wrangler deploy` — I cannot run wrangler.)
@@ -120,8 +121,8 @@ The payoff. Existing aggregate charts stay; new sections added:
 ## Data Flow
 
 1. Student opens the URL → `App` sees no signed-in student → renders `LoginGate`.
-2. Student enters name + Northwestern email + class password, checks consent, submits.
-3. `LoginGate` → `POST ${endpoint}/auth`. Worker validates password (secret) + email domain, upserts `students`, returns 200.
+2. Student enters name + Northwestern email + class password. **If they do not check the consent box, Submit stays disabled — they cannot proceed.** With consent checked + fields valid, they submit.
+3. `LoginGate` → `POST ${endpoint}/auth` with `consent: true`. Worker requires `consent === true` (else 403, no registration), then validates password (secret) + email domain, upserts `students` (with `consent_at`), returns 200.
 4. `LoginGate` persists `osce.user.v1`, sets consent granted, updates store, passes the gate. App renders.
 5. As the student uses the app, `telemetry.track()` → `sendEndpoint()` posts events **with** `student_email`/`student_name` → Worker stores them in `events`.
 6. Instructor opens `/stats?key=STATS_KEY` → sees the roster and per-student usage.
@@ -133,7 +134,8 @@ The payoff. Existing aggregate charts stay; new sections added:
 |---|---|
 | Wrong class password | Inline error; stay on gate |
 | Email not a Northwestern domain / malformed | Inline error; submit disabled |
-| Consent unchecked | Submit disabled with helper text |
+| Consent unchecked (client) | Submit disabled with helper text; `/auth` never called |
+| Consent absent/false (server) | `403 consent_required`; no `students` row, no identity issued |
 | Worker unreachable (first sign-in) | "Can't reach the sign-in server, retry." First sign-in needs connectivity. |
 | Offline after first sign-in | Identity cached locally → app works offline; events queue/send per existing behavior |
 | `VITE_ANALYTICS_ENDPOINT` unset (dev/test) | Gate bypassed (local-only), app usable without server |
@@ -157,9 +159,9 @@ Events remain fire-and-forget `sendBeacon` and are **not** cryptographically sig
 - `identity` module: set/get/signout round-trip; hydration from `localStorage`; corrupt-storage falls through safely.
 - `telemetry`: payload includes `student_email`/`student_name` when signed in; omits them when not.
 - `store`: `student` hydrates from `localStorage`; `setStudent`/`signOut` update state.
-- `LoginGate` logic: submit enabled only when name + valid email + password + consent are all present; error states for 401 / network.
+- `LoginGate` logic: submit enabled **only** when name + valid email + password + consent are all present; without consent the `/auth` request is never issued; error states for 401 / 403 / network.
 
-**Worker:** password-check and email-validation pure functions unit-tested. Manual verification steps documented (`curl` `/auth` with right/wrong password; confirm `students` row and enriched `events` via `wrangler d1 execute`; load `/stats` and confirm per-student section).
+**Worker:** password-check, email-validation, and **consent-enforcement** pure functions unit-tested (consent absent/false ⇒ no registration). Manual verification steps documented (`curl` `/auth` with right/wrong password and with/without `consent`; confirm a `students` row is created **only** with consent and enriched `events` via `wrangler d1 execute`; load `/stats` and confirm per-student section).
 
 **Regression:** all 249 existing tests stay green.
 
