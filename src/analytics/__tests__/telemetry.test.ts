@@ -7,7 +7,10 @@ import {
   consentState,
   setConsent,
   track,
+  studentIdentityProps,
+  effectiveConsent,
 } from "../telemetry";
+import { setStudent, signOut } from "../../auth/identity";
 
 describe("telemetry privacy backstop", () => {
   it("keeps only allowlisted prop keys", () => {
@@ -69,5 +72,29 @@ describe("telemetry consent gating", () => {
     expect(consentState()).toBe("granted");
     setConsent(false);
     expect(consentState()).toBe("denied");
+  });
+});
+
+describe("telemetry identity stamping", () => {
+  beforeEach(() => localStorage.clear());
+
+  it("omits identity props when not signed in", () => {
+    expect(studentIdentityProps()).toEqual({});
+  });
+
+  it("includes student email + name when signed in", () => {
+    setStudent({ name: "Jane Doe", email: "jane@u.northwestern.edu", consentAt: "", version: 1 });
+    expect(studentIdentityProps()).toEqual({
+      student_email: "jane@u.northwestern.edu",
+      student_name: "Jane Doe",
+    });
+  });
+
+  it("treats a signed-in student as consented (overrides DNT/unset)", () => {
+    expect(effectiveConsent()).toBe("unset");
+    setStudent({ name: "Jane", email: "jane@northwestern.edu", consentAt: "", version: 1 });
+    expect(effectiveConsent()).toBe("granted");
+    signOut();
+    expect(effectiveConsent()).toBe("unset");
   });
 });

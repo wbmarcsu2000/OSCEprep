@@ -19,6 +19,8 @@
  *   VITE_PLAUSIBLE_DOMAIN    — use Plausible's events API instead
  */
 
+import { getCurrentStudent } from "../auth/identity";
+
 type Provider = "endpoint" | "plausible" | "none";
 
 const ENDPOINT = ((import.meta.env.VITE_ANALYTICS_ENDPOINT as string | undefined) ?? "").trim();
@@ -72,6 +74,29 @@ export function consentState(): "granted" | "denied" | "unset" {
   } catch {
     return "unset";
   }
+}
+
+/** Coarse identity attached to every event once a student has signed in. Empty
+ *  when anonymous. The two fields are the only PII this app ever transmits. */
+export function studentIdentityProps(): Record<string, string> {
+  const s = getCurrentStudent();
+  return s ? { student_email: s.email, student_name: s.name } : {};
+}
+
+/** Consent that actually governs sending. Signing in is an explicit, mandatory,
+ *  informed opt-in (the gate's required checkbox), so a signed-in student counts
+ *  as "granted" even if the browser sends Do-Not-Track — otherwise a DNT student
+ *  could pass the gate yet emit nothing. Anonymous visitors fall back to the
+ *  stored/DNT-derived consent state. */
+export function effectiveConsent(): "granted" | "denied" | "unset" {
+  if (getCurrentStudent()) return "granted";
+  return consentState();
+}
+
+/** True when events POST to a configured Worker endpoint (drives the sign-in
+ *  gate; the gate needs the Worker's /auth route). */
+export function analyticsEndpointConfigured(): boolean {
+  return PROVIDER === "endpoint";
 }
 
 /** Show the consent banner only when analytics is configured, DNT is off, and
@@ -184,6 +209,7 @@ function sendEndpoint(event: string, props: Record<string, string | number | boo
     const body = JSON.stringify({
       event,
       props,
+      ...studentIdentityProps(),
       deviceId: deviceId(),
       sessionId: SESSION_ID,
       ts: Date.now(),
@@ -245,7 +271,7 @@ export function track(event: string, props: Record<string, unknown> = {}): void 
   try {
     if (PROVIDER === "none") return;
     if (!ALLOWED_EVENTS.has(event)) return;
-    if (consentState() !== "granted") return;
+    if (effectiveConsent() !== "granted") return;
     const clean = sanitizeEventProps(props);
     if (PROVIDER === "endpoint") sendEndpoint(event, clean);
     else if (PROVIDER === "plausible") sendPlausible(event, clean);
@@ -257,5 +283,5 @@ export function track(event: string, props: Record<string, unknown> = {}): void 
 /** Called once on app mount: emits app_open for already-consented returning
  *  visitors (new visitors emit it when they accept the banner). */
 export function initTelemetry(): void {
-  if (consentState() === "granted") track("app_open", {});
+  if (effectiveConsent() === "granted") track("app_open", {});
 }
