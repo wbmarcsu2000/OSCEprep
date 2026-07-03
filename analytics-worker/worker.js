@@ -247,6 +247,30 @@ async function dashboard(env) {
   const hasPct = await columnExists(env, "pct");
   const recentSql = `SELECT received, event, screen, category, mode, band, difficulty, drilltype, ${hasPct ? "pct," : ""} provider, country, lang, ua
               FROM events ORDER BY received DESC LIMIT 40`;
+
+  // Per-student data (guarded so an un-migrated DB simply omits the section).
+  const hasStudent = await columnExists(env, "student_email");
+  const roster = hasStudent
+    ? await qSafe(
+        env,
+        `SELECT s.email, s.name, s.first_seen, s.last_seen,
+            (SELECT count(*) FROM events e WHERE e.student_email = s.email) events,
+            (SELECT count(DISTINCT e.session) FROM events e WHERE e.student_email = s.email) sessions,
+            (SELECT count(*) FROM events e WHERE e.student_email = s.email AND e.event='case_complete') completes,
+            (SELECT count(*) FROM events e WHERE e.student_email = s.email AND e.event='drill') drills,
+            (SELECT round(avg(e.pct)) FROM events e
+               WHERE e.student_email = s.email AND e.event='drill' AND e.pct IS NOT NULL) avg_drill
+          FROM students s ORDER BY (last_seen IS NULL), last_seen DESC`,
+      )
+    : [];
+  const usageMatrix = hasStudent
+    ? await qSafe(
+        env,
+        `SELECT student_email, event, count(*) n FROM events
+           WHERE student_email IS NOT NULL AND student_email<>''
+           GROUP BY student_email, event`,
+      )
+    : [];
   const [
     totals, d1, d7, d30, today,
     daily, hourly, eventsByType,
@@ -362,6 +386,44 @@ async function dashboard(env) {
       }).join("")
     : `<tr><td colspan="5" class="muted">No events yet — use the app (and accept analytics) to populate this.</td></tr>`;
 
+  const EVENT_COLS = ["app_open", "screen_view", "case_start", "case_complete", "drill", "ai_enabled"];
+  const usageByEmail = {};
+  for (const r of usageMatrix) {
+    (usageByEmail[r.student_email] = usageByEmail[r.student_email] || {})[r.event] = Number(r.n) || 0;
+  }
+  const fmtDate = (ms) => (ms ? new Date(Number(ms)).toISOString().slice(0, 10) : "—");
+
+  const rosterRows = roster.length
+    ? roster
+        .map((r) => {
+          const cells = EVENT_COLS.map((ev) => `<td>${esc((usageByEmail[r.email] || {})[ev] || 0)}</td>`).join("");
+          return `<tr>
+            <td><b>${esc(r.name || "—")}</b><div class="muted2">${esc(r.email)}</div></td>
+            <td>${esc(fmtDate(r.first_seen))}</td>
+            <td>${esc(fmtDate(r.last_seen))}</td>
+            <td>${esc(r.sessions || 0)}</td>
+            <td>${esc(r.events || 0)}</td>
+            <td>${esc(r.completes || 0)}</td>
+            <td>${esc(r.drills || 0)}</td>
+            <td>${r.avg_drill == null ? "—" : esc(r.avg_drill) + "%"}</td>
+            ${cells}
+          </tr>`;
+        })
+        .join("")
+    : `<tr><td colspan="${8 + EVENT_COLS.length}" class="muted">No students have signed in yet.</td></tr>`;
+
+  const studentSection = hasStudent
+    ? `<div class="card wide"><h2>Students (named) · ${esc(roster.length)} registered</h2>
+        <div style="overflow-x:auto">
+        <table><thead><tr>
+          <th>Student</th><th>First seen</th><th>Last seen</th><th>Sessions</th><th>Events</th>
+          <th>Completes</th><th>Drills</th><th>Avg drill</th>
+          ${EVENT_COLS.map((c) => `<th>${esc(c.replace("_", " "))}</th>`).join("")}
+        </tr></thead><tbody>${rosterRows}</tbody></table></div>
+        <p class="muted2" style="margin-top:8px">Per-student feature usage. Events without a name (anonymous or pre-sign-in) are not shown here but still count in the aggregate charts above.</p>
+      </div>`
+    : "";
+
   const json = JSON.stringify(data).replace(/</g, "\\u003c");
 
   return `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -392,6 +454,7 @@ th,td{text-align:left;padding:7px 9px;border-bottom:1px solid #efeef8}
 th{font-size:11px;color:#6b6786;text-transform:uppercase;letter-spacing:.04em}
 .tag{background:#f0ebff;color:#5634e0;border-radius:6px;padding:1px 7px;font-size:11px;font-weight:700}
 .muted{color:#9b97b5;text-align:center}
+.muted2{color:#9b97b5;font-size:11px}
 .foot{color:#9b97b5;font-size:12px;margin-top:18px;text-align:center}
 </style></head><body><div class="wrap">
 <h1>OSCE usage stats</h1>
@@ -421,6 +484,7 @@ th{font-size:11px;color:#6b6786;text-transform:uppercase;letter-spacing:.04em}
   ${card("c_diffmode", "Differential · core vs advanced (avg %)")}
   ${card("c_ai", "AI provider")}
   ${card("c_ref", "Referrers")}
+  ${studentSection}
   <div class="card wide"><h2>Recent activity</h2>
     <table><thead><tr><th>When (UTC)</th><th>Event</th><th>Detail</th><th>Country</th><th>Browser / OS</th></tr></thead>
     <tbody>${recentRows}</tbody></table>
