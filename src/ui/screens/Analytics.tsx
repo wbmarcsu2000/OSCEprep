@@ -7,6 +7,7 @@ import {
   importAllData,
   clearAllData,
 } from "../../analytics/store";
+import { getCurrentStudent, signOut } from "../../auth/identity";
 import { DOMAIN_LABELS } from "../../engine/types";
 import { MANEUVER_BY_ID } from "../../engine/maneuvers";
 import { manifest } from "../../data/loader";
@@ -88,6 +89,32 @@ function FreqTable({
           </tbody>
         </table>
       )}
+    </div>
+  );
+}
+
+/** Who you're signed in as + a sign-out control. Exported for tests. Renders
+ *  nothing when the visitor isn't signed in (e.g. local dev with no endpoint). */
+export function AccountSection() {
+  const student = getCurrentStudent();
+  if (!student) return null;
+  return (
+    <div className="card p-4">
+      <div className="panel-label mb-2">Account</div>
+      <p className="hint mb-3">
+        Signed in as <span className="font-bold">{student.name}</span> ({student.email}). Your usage
+        is shared with the course instructor. Signing out returns you to the sign-in screen on this
+        device; it does not remove data already collected.
+      </p>
+      <button
+        className="btn"
+        onClick={() => {
+          signOut();
+          location.reload();
+        }}
+      >
+        Sign out
+      </button>
     </div>
   );
 }
@@ -436,6 +463,7 @@ export function Analytics() {
         />
       </div>
 
+      <AccountSection />
       <DataManagement />
     </div>
   );
