@@ -16,8 +16,9 @@ import { Neuro } from "./ui/screens/Neuro";
 import { Home } from "./ui/screens/Home";
 import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
-import { initTelemetry, consentGateRequired } from "./analytics/telemetry";
-import { ConsentGate } from "./ui/components/ConsentGate";
+import { initTelemetry, analyticsEndpointConfigured } from "./analytics/telemetry";
+import { LoginGate } from "./ui/components/LoginGate";
+import { isSignedIn } from "./auth/identity";
 import { CLERKSHIPS, clerkshipForView, type Clerkship } from "./ui/clerkships";
 
 /** Top-level clerkship tabs (IM, Neuro, …) in the header outside a station. */
@@ -135,9 +136,10 @@ export default function App() {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
   const setView = useAppStore((s) => s.setView);
   const [confirmExit, setConfirmExit] = useState(false);
-  // Hard gate: accepting analytics is required to use the app (no-op when
-  // analytics isn't configured or the browser sends Do-Not-Track).
-  const [gatePassed, setGatePassed] = useState(() => !consentGateRequired());
+  // Hard gate: signing in is required to use the app whenever an analytics
+  // Worker is configured. With no endpoint (local dev / tests) the gate is
+  // bypassed so the app is usable without a server.
+  const [signedIn, setSignedIn] = useState(() => !analyticsEndpointConfigured() || isSignedIn());
 
   const inStation = view === "station" && caseModel && engine;
   const stationLive = !!inStation && engine.currentState !== "FEEDBACK";
@@ -189,9 +191,9 @@ export default function App() {
     };
   }, [tick, stationLive]);
 
-  // Must accept analytics before anything else is reachable.
-  if (!gatePassed) {
-    return <ConsentGate onAccept={() => setGatePassed(true)} />;
+  // Must sign in before anything else is reachable.
+  if (!signedIn) {
+    return <LoginGate onSignedIn={() => setSignedIn(true)} />;
   }
 
   return (
