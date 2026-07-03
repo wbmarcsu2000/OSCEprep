@@ -8,11 +8,19 @@
  * plus the visitor's country (from IP) and user-agent. See ../ANALYTICS.md.
  */
 
+import { evaluateAuth } from "./auth.js";
+
 const CORS = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type",
 };
+
+const json = (obj, status = 200) =>
+  new Response(JSON.stringify(obj), {
+    status,
+    headers: { ...CORS, "Content-Type": "application/json" },
+  });
 
 const ALLOWED_EVENTS = new Set([
   "app_open",
@@ -30,6 +38,38 @@ export default {
     const url = new URL(request.url);
 
     if (request.method === "OPTIONS") return new Response(null, { headers: CORS });
+
+    // ---- sign-in (register a student) ---------------------------------------
+    if (request.method === "POST" && url.pathname === "/auth") {
+      let body;
+      try {
+        body = await request.json();
+      } catch {
+        body = null;
+      }
+      const verdict = evaluateAuth(body, env.CLASS_PASSWORD);
+      if (!verdict.ok) return json({ ok: false, error: verdict.error }, verdict.status);
+
+      const now = Date.now();
+      const email = String(body.email).trim().toLowerCase();
+      const name = String(body.name).trim().slice(0, 120);
+      const country = clip((request.cf && request.cf.country) || "");
+      const ua = clip(request.headers.get("user-agent") || "", 256);
+      try {
+        await env.DB.prepare(
+          `INSERT INTO students (email, name, first_seen, last_seen, consent_at, device, country, ua)
+             VALUES (?,?,?,?,?,?,?,?)
+           ON CONFLICT(email) DO UPDATE SET
+             name=excluded.name, last_seen=excluded.last_seen,
+             consent_at=excluded.consent_at, country=excluded.country, ua=excluded.ua`,
+        )
+          .bind(email, name, now, now, now, "", country, ua)
+          .run();
+      } catch {
+        // students table not migrated yet — still let the user in so the app works.
+      }
+      return json({ ok: true }, 200);
+    }
 
     // ---- ingest --------------------------------------------------------------
     if (request.method === "POST") {
@@ -50,6 +90,8 @@ export default {
           ? null
           : Math.max(0, Math.min(100, Math.round(Number(p.pct))));
       const advanced = p.advanced === true || p.advanced === 1 || p.advanced === "true" ? 1 : p.advanced == null ? null : 0;
+      const sEmail = clip(e.student_email, 160);
+      const sName = clip(e.student_name, 120);
       // Legacy column set (DBs not yet migrated for drill performance).
       const base = [
         Date.now(),
@@ -73,27 +115,40 @@ export default {
         clip(e.app, 24),
       ];
       try {
+        // Fully migrated: drill performance + student identity.
         await env.DB.prepare(
           `INSERT INTO events
              (received, ts, event, screen, category, mode, band, difficulty, drilltype, pct, advanced, provider,
-              device, session, country, ua, ref, lang, app)
-           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+              device, session, country, ua, ref, lang, app, student_email, student_name)
+           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
         )
-          .bind(...base, pct, advanced, ...tail)
+          .bind(...base, pct, advanced, ...tail, sEmail, sName)
           .run();
       } catch {
-        // DB not yet migrated for pct/advanced — fall back so the event still lands.
         try {
+          // Drill-performance migrated, but no student columns yet.
           await env.DB.prepare(
             `INSERT INTO events
-               (received, ts, event, screen, category, mode, band, difficulty, drilltype, provider,
+               (received, ts, event, screen, category, mode, band, difficulty, drilltype, pct, advanced, provider,
                 device, session, country, ua, ref, lang, app)
-             VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+             VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
           )
-            .bind(...base, ...tail)
+            .bind(...base, pct, advanced, ...tail)
             .run();
         } catch {
-          // never fail the beacon
+          try {
+            // Legacy DB (neither migration applied).
+            await env.DB.prepare(
+              `INSERT INTO events
+                 (received, ts, event, screen, category, mode, band, difficulty, drilltype, provider,
+                  device, session, country, ua, ref, lang, app)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+            )
+              .bind(...base, ...tail)
+              .run();
+          } catch {
+            // never fail the beacon
+          }
         }
       }
       return new Response(null, { status: 204, headers: CORS });
