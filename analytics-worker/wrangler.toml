@@ -6,7 +6,11 @@
 #   2. wrangler d1 create osce-analytics
 #      -> copy the printed database_id into the [[d1_databases]] block below
 #   3. wrangler d1 execute osce-analytics --remote --file=./schema.sql
-#   4. wrangler secret put STATS_KEY        # a password you choose for the dashboard
+#      (existing DB? also run the migrations:)
+#      wrangler d1 execute osce-analytics --remote --file=./migrations/001_drill_performance.sql
+#      wrangler d1 execute osce-analytics --remote --file=./migrations/002_student_identity.sql
+#   4. wrangler secret put STATS_KEY        # password for the /stats dashboard
+#      wrangler secret put CLASS_PASSWORD   # the class sign-in password you share with students
 #   5. wrangler deploy
 #   6. Copy the deployed URL (https://osce-analytics.<you>.workers.dev) and set it
 #      as the GitHub repo VARIABLE named ANALYTICS_ENDPOINT (Settings → Secrets and
