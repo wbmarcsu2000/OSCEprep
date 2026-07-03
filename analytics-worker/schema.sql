@@ -20,8 +20,23 @@ CREATE TABLE IF NOT EXISTS events (
   ua         TEXT,                 -- user-agent (truncated)
   ref        TEXT,
   lang       TEXT,
-  app        TEXT
+  app        TEXT,
+  student_email TEXT,                 -- named sign-in (NULL for anonymous/pre-sign-in events)
+  student_name  TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_events_event ON events(event);
 CREATE INDEX IF NOT EXISTS idx_events_received ON events(received);
 CREATE INDEX IF NOT EXISTS idx_events_device ON events(device);
+
+-- Registered students (one row per Northwestern email that has signed in).
+CREATE TABLE IF NOT EXISTS students (
+  email      TEXT PRIMARY KEY,
+  name       TEXT,
+  first_seen INTEGER,
+  last_seen  INTEGER,
+  consent_at INTEGER,                 -- when they affirmatively consented
+  device     TEXT,
+  country    TEXT,
+  ua         TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_events_student ON events(student_email, received);
