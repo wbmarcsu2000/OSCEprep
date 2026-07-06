@@ -1,13 +1,17 @@
 # Family Medicine Q-bank + FM clerkship section
 
 **Date:** 2026-07-05
-**Status:** BUILT — 1,607 questions across 14 systems; 281 tests + prod build pass.
+**Status:** BUILT — 1,860 questions across 14 systems (1,607 source-driven + 253 gap-fill);
+281 tests + prod build pass.
 
 ## Outcome (as built)
-- **1,607** single-best-answer questions, 14 FM systems (Cardiology 153 · Pulmonology 111 ·
-  Renal & GU 60 · Gastroenterology 155 · Heme/Onc 103 · Repro & OB-GYN 129 · Dermatology 94 ·
-  Neurology 199 · Psychiatry 158 · Ophthalmology 49 · MSK & Sports Med 188 ·
-  Immunizations & Allergy 36 · Endocrinology 114 · Health Maintenance & Prevention 58).
+- **1,860** single-best-answer questions, 14 FM systems (Cardiology 169 · Pulmonology 134 ·
+  Renal & GU 81 · Gastroenterology 173 · Heme/Onc 120 · Repro & OB-GYN 152 · Dermatology 115 ·
+  Neurology 216 · Psychiatry 172 · Ophthalmology 63 · MSK & Sports Med 205 ·
+  Immunizations & Allergy 54 · Endocrinology 131 · Health Maintenance & Prevention 75).
+- **1,607** from the three sources + **253** gap-fill questions covering the 219 topics the
+  sources under-covered (`docs/family-med-qbank-gaps.md`), standard current-guideline content,
+  de-duplicated against the source-driven set.
 - **No cap** (per user); de-duplicated to zero repeated concepts *within* FM (1,986 extracted →
   1,589 after semantic curation → 1,607 questions after generation; build drops same-topic+same-answer dups).
 - IM bank NOT referenced (overlap with IM is fine, per user).
