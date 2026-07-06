@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { SHELF_MCQS, MCQ_SYSTEMS, type McqQuestion } from "../../data/shelfMcq";
+import { type McqQuestion } from "../../data/shelfMcq";
+import { IM_BANK, type McqBank } from "../../data/mcqBank";
 import {
   loadMcqProgress,
   recordMcqAnswer,
@@ -15,6 +16,10 @@ import { useAppStore } from "../store";
  * commit to an answer, get immediate color-coded feedback plus the teaching
  * explanation, and review a score breakdown at the end. Per-question progress
  * persists so you can keep redoing the ones you miss.
+ *
+ * Generic over an `McqBank` (defaults to the Internal Medicine bank), so the
+ * same screen serves multiple banks (IM, Family Medicine, …) — each with its
+ * own question set, system list, and progress storage key.
  */
 
 type Subset = "all" | "unseen" | "incorrect";
@@ -51,8 +56,10 @@ function inSubset(q: McqQuestion, subset: Subset, progress: McqProgress): boolea
 
 const LETTERS = ["A", "B", "C", "D", "E"];
 
-export function Qbank() {
+export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
+  const questions = bank.questions;
+  const storageKey = bank.storageKey;
 
   const [phase, setPhase] = useState<Phase>("setup");
   const [system, setSystem] = useState<string>("All");
@@ -60,16 +67,24 @@ export function Qbank() {
   const [shuffleQs, setShuffleQs] = useState(true);
 
   // Snapshot progress on mount and after each answer so subset counts/mastery update.
-  const [progress, setProgress] = useState<McqProgress>(() => loadMcqProgress());
+  const [progress, setProgress] = useState<McqProgress>(() => loadMcqProgress(storageKey));
 
   // Active run state.
   const [queue, setQueue] = useState<RunQuestion[]>([]);
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<(number | null)[]>([]);
 
+  // Reset to a clean setup screen whenever the bank changes.
+  useEffect(() => {
+    setPhase("setup");
+    setSystem("All");
+    setSubset("all");
+    setProgress(loadMcqProgress(storageKey));
+  }, [storageKey]);
+
   const pool = useMemo(
-    () => (system === "All" ? SHELF_MCQS : SHELF_MCQS.filter((q) => q.system === system)),
-    [system],
+    () => (system === "All" ? questions : questions.filter((q) => q.system === system)),
+    [system, questions],
   );
   const eligible = useMemo(
     () => pool.filter((q) => inSubset(q, subset, progress)),
@@ -94,13 +109,13 @@ export function Qbank() {
         if (prev[idx] != null) return prev; // already answered — lock it
         const q = queue[idx];
         const correct = choice === q.answerIndex;
-        setProgress(recordMcqAnswer(q.id, correct));
+        setProgress(recordMcqAnswer(q.id, correct, storageKey));
         const next = prev.slice();
         next[idx] = choice;
         return next;
       });
     },
-    [idx, queue],
+    [idx, queue, storageKey],
   );
 
   const current = queue[idx];
@@ -149,13 +164,13 @@ export function Qbank() {
 
   // ---------------------------------------------------------------- Setup
   if (phase === "setup") {
-    const total = SHELF_MCQS.length;
-    const mastered = SHELF_MCQS.filter((q) => progress[q.id]?.lastCorrect).length;
+    const total = questions.length;
+    const mastered = questions.filter((q) => progress[q.id]?.lastCorrect).length;
     const unseenCount = pool.filter((q) => inSubset(q, "unseen", progress)).length;
     const incorrectCount = pool.filter((q) => inSubset(q, "incorrect", progress)).length;
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-        <Header exit={exitToSelect} />
+        <Header exit={exitToSelect} bank={bank} />
 
         <div className="card p-5 space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">
@@ -168,7 +183,7 @@ export function Qbank() {
                 aria-label="System"
               >
                 <option>All</option>
-                {MCQ_SYSTEMS.map((s) => (
+                {bank.systems.map((s) => (
                   <option key={s}>{s}</option>
                 ))}
               </select>
@@ -216,13 +231,13 @@ export function Qbank() {
 
         <div className="card p-4 flex flex-wrap items-center gap-x-6 gap-y-2">
           <Stat label="Questions in bank" value={String(total)} />
-          <Stat label="Systems" value={String(MCQ_SYSTEMS.length)} />
+          <Stat label="Systems" value={String(bank.systems.length)} />
           <Stat label="Mastered" value={`${mastered} / ${total}`} />
           {mastered > 0 && (
             <button
               className="btn btn-ghost ml-auto text-[12.5px] py-1"
               onClick={() => {
-                resetMcqProgress();
+                resetMcqProgress(storageKey);
                 setProgress({});
               }}
             >
@@ -253,7 +268,7 @@ export function Qbank() {
       pct >= 80 ? "var(--color-exam-ok)" : pct >= 60 ? "var(--color-exam-warn)" : "var(--color-exam-danger)";
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-        <Header exit={exitToSelect} />
+        <Header exit={exitToSelect} bank={bank} />
         <div className="card p-6 text-center space-y-2 pop-in">
           <div className="panel-label">Quiz complete</div>
           <div className="text-[40px] font-extrabold tabular-nums" style={{ color: band }}>
@@ -299,7 +314,7 @@ export function Qbank() {
   if (!current) return null;
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-      <Header exit={exitToSelect} compact />
+      <Header exit={exitToSelect} bank={bank} compact />
 
       {/* Progress + score bar */}
       <div className="flex items-center justify-between gap-3 text-[13px] font-semibold">
@@ -318,7 +333,7 @@ export function Qbank() {
           className="h-full transition-all"
           style={{
             width: `${((idx + (answered ? 1 : 0)) / queue.length) * 100}%`,
-            background: "var(--grad-primary)",
+            background: bank.grad,
           }}
         />
       </div>
@@ -444,13 +459,13 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-function Header({ exit, compact }: { exit: () => void; compact?: boolean }) {
+function Header({ exit, bank, compact }: { exit: () => void; bank: McqBank; compact?: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   if (compact) {
     return (
       <div ref={ref} className="flex items-center justify-between gap-4">
         <h2 className="text-[18px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-          Question Bank
+          {bank.title}
         </h2>
         <button className="btn btn-ghost shrink-0" onClick={exit}>
           Case list →
@@ -461,17 +476,16 @@ function Header({ exit, compact }: { exit: () => void; compact?: boolean }) {
   return (
     <div className="flex items-start justify-between gap-6">
       <div className="flex items-start gap-3">
-        <span className="icon-tile" style={{ background: "var(--grad-primary)" }} aria-hidden="true">
-          ❓
+        <span className="icon-tile" style={{ background: bank.grad }} aria-hidden="true">
+          {bank.icon}
         </span>
         <div className="space-y-0.5">
-          <div className="panel-label">Shelf exam</div>
+          <div className="panel-label">{bank.eyebrow}</div>
           <h2 className="text-[24px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-            Question Bank
+            {bank.title}
           </h2>
           <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            Single-best-answer MCQs from the high-yield IM review. Commit to an answer, get instant feedback and the
-            teaching point, and redo the ones you miss.
+            {bank.blurb}
           </p>
         </div>
       </div>

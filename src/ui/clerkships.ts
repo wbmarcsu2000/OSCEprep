@@ -120,6 +120,21 @@ export const CLERKSHIPS: Clerkship[] = [
     ],
   },
   {
+    id: "fm",
+    short: "FM",
+    full: "Family Medicine",
+    tools: [
+      {
+        view: "fmmcq",
+        label: "Questions",
+        icon: "🩹",
+        grad: "var(--grad-teal)",
+        blurb:
+          "Single-best-answer MCQs for the Family Medicine shelf — comprehensive high-yield coverage plus USPSTF prevention, with instant feedback and explanations. Cram by system and redo the ones you miss.",
+      },
+    ],
+  },
+  {
     id: "neuro",
     short: "Neuro",
     full: "Neurology",

@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { manifest } from "../../data/loader";
 import { SHELF_MCQS } from "../../data/shelfMcq";
+import { FM_MCQS } from "../../data/familyMedMcq";
 import { loadAttempts } from "../../analytics/store";
 import { useAppStore } from "../store";
 import { CLERKSHIPS } from "../clerkships";
@@ -23,6 +24,7 @@ export function Home() {
   const metaFor = (view: string): string | undefined => {
     if (view === "select") return `${manifest.cases.length} cases · ${done} done`;
     if (view === "mcq") return `${SHELF_MCQS.length} questions`;
+    if (view === "fmmcq") return `${FM_MCQS.length} questions`;
     return undefined;
   };
 
