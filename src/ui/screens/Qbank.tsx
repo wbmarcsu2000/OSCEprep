@@ -70,7 +70,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
 
   const [phase, setPhase] = useState<Phase>("setup");
   const [system, setSystem] = useState<string>("All");
-  const [subset, setSubset] = useState<Subset>("all");
+  const [subset, setSubset] = useState<Subset>("unseen");
   const [shuffleQs, setShuffleQs] = useState(true);
   // Session length: cap how many eligible questions a single run draws, so a
   // 1,800-question bank can be tackled in chunks. "all" = the whole subset.
@@ -88,7 +88,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   useEffect(() => {
     setPhase("setup");
     setSystem("All");
-    setSubset("all");
+    setSubset("unseen");
     setProgress(loadMcqProgress(storageKey));
   }, [storageKey]);
 
