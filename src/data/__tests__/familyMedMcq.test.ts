@@ -76,7 +76,7 @@ describe("Family Medicine MCQ bank (data)", () => {
           expect(c.trim().length, `${q.id} scoreComponents item`).toBeGreaterThan(0);
         }
       }
-      for (const field of ["discriminator", "examTrap", "mnemonic"] as const) {
+      for (const field of ["discriminator", "mnemonic"] as const) {
         const v = q[field];
         if (v !== undefined) {
           expect(typeof v, `${q.id} ${field} type`).toBe("string");

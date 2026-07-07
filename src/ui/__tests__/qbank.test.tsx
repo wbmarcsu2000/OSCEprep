@@ -90,16 +90,26 @@ describe("Question Bank screen", () => {
     expect(screen.queryByText(/CONCEPT_TEXT/)).not.toBeInTheDocument();
     expect(screen.queryByText(/RULE_BULLET/)).not.toBeInTheDocument();
 
-    fireEvent.click(screen.getAllByRole("button", { name: /^Option [A-E]$/ })[0]);
+    // Answer correctly (click the correct option by its text).
+    fireEvent.click(screen.getByText("Start two agents"));
 
-    // After answering: both option rationales, the concept blurb, and the rule bullet.
-    expect(screen.getByText(/RATIONALE_CORRECT/)).toBeInTheDocument();
-    expect(screen.getByText(/RATIONALE_WRONG/)).toBeInTheDocument();
+    // Concept block + rule show; the redundant top explanation is hidden when a
+    // concept exists (it just restated the question).
     expect(screen.getByText(/CONCEPT_TEXT/)).toBeInTheDocument();
     expect(screen.getByText(/RULE_BULLET/)).toBeInTheDocument();
+    expect(screen.queryByText(/Stage 2 hypertension warrants two agents/)).not.toBeInTheDocument();
+
+    // The correct option's rationale auto-opens; the distractor stays collapsed
+    // until clicked (no info overload).
+    expect(screen.getByText(/RATIONALE_CORRECT/)).toBeInTheDocument();
+    expect(screen.queryByText(/RATIONALE_WRONG/)).not.toBeInTheDocument();
+
+    // Clicking the distractor reveals its rationale on demand.
+    fireEvent.click(screen.getByText("Reassure and recheck yearly"));
+    expect(screen.getByText(/RATIONALE_WRONG/)).toBeInTheDocument();
   });
 
-  it("reveals score components, discriminator, exam trap, and mnemonic only after answering", () => {
+  it("reveals score components, discriminator, and mnemonic only after answering", () => {
     const q: McqQuestion = {
       id: "teach-2",
       system: "Pulmonology",
@@ -113,7 +123,6 @@ describe("Question Bank screen", () => {
         "SCORE_ALT_DX: PE is #1 diagnosis (+3)",
       ],
       discriminator: "DISCRIMINATOR_TEXT: tachycardia plus pleuritic pain favors PE over MSK pain.",
-      examTrap: "EXAMTRAP_TEXT: a normal chest x-ray is dangled to falsely reassure.",
       mnemonic: "MNEMONIC_TEXT: Wells — DVT signs, alt dx, HR, immobilization, prior VTE, hemoptysis, cancer.",
     };
     const bank: McqBank = {
@@ -133,7 +142,6 @@ describe("Question Bank screen", () => {
     // Nothing enhancement-related before answering.
     expect(screen.queryByText(/SCORE_CLINICAL_DVT/)).not.toBeInTheDocument();
     expect(screen.queryByText(/DISCRIMINATOR_TEXT/)).not.toBeInTheDocument();
-    expect(screen.queryByText(/EXAMTRAP_TEXT/)).not.toBeInTheDocument();
     expect(screen.queryByText(/MNEMONIC_TEXT/)).not.toBeInTheDocument();
 
     fireEvent.click(screen.getAllByRole("button", { name: /^Option [A-E]$/ })[0]);
@@ -144,8 +152,6 @@ describe("Question Bank screen", () => {
     expect(screen.getByText(/SCORE_ALT_DX/)).toBeInTheDocument();
     expect(screen.getByText(/Key discriminator/)).toBeInTheDocument();
     expect(screen.getByText(/DISCRIMINATOR_TEXT/)).toBeInTheDocument();
-    expect(screen.getByText(/Exam trap/)).toBeInTheDocument();
-    expect(screen.getByText(/EXAMTRAP_TEXT/)).toBeInTheDocument();
     expect(screen.getByText(/Mnemonic/)).toBeInTheDocument();
     expect(screen.getByText(/MNEMONIC_TEXT/)).toBeInTheDocument();
   });

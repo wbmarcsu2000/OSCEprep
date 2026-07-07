@@ -36,8 +36,6 @@ export interface McqQuestion {
   scoreComponents?: string[];
   /** One line naming the feature that clinches the answer over its nearest mimic. */
   discriminator?: string;
-  /** One line on the classic wrong-answer bait the exam uses for this item. */
-  examTrap?: string;
   /** A standard mnemonic for the concept, when a well-known one exists. */
   mnemonic?: string;
 }

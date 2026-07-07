@@ -83,6 +83,8 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   const [queue, setQueue] = useState<RunQuestion[]>([]);
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<(number | null)[]>([]);
+  // Which option rationales are expanded on the current question (indices into options).
+  const [expanded, setExpanded] = useState<Set<number>>(new Set());
 
   // Reset to a clean setup screen whenever the bank changes.
   useEffect(() => {
@@ -134,6 +136,29 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   const current = queue[idx];
   const chosen = answers[idx] ?? null;
   const answered = chosen != null;
+
+  // Per-option rationales collapse by default once answered — showing all of
+  // them at once is info overload. Auto-open just the key comparison: the
+  // correct option, plus the user's own pick when they got it wrong. Any other
+  // option can be clicked to reveal its rationale on demand.
+  useEffect(() => {
+    if (!current || chosen == null) {
+      setExpanded(new Set());
+      return;
+    }
+    const open = new Set<number>([current.answerIndex]);
+    if (chosen !== current.answerIndex) open.add(chosen);
+    setExpanded(open);
+  }, [idx, chosen, current]);
+
+  const toggleExpand = useCallback((i: number) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (next.has(i)) next.delete(i);
+      else next.add(i);
+      return next;
+    });
+  }, []);
 
   const goNext = useCallback(() => {
     if (idx + 1 >= queue.length) setPhase("results");
@@ -417,9 +442,10 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
                       ? "wrong"
                       : "muted"
               }
-              rationale={answered ? current.optionRationales?.[i] : undefined}
-              disabled={answered}
-              onClick={() => answer(i)}
+              rationale={current.optionRationales?.[i]}
+              answered={answered}
+              expanded={expanded.has(i)}
+              onClick={() => (answered ? toggleExpand(i) : answer(i))}
             />
           ))}
         </div>
@@ -441,7 +467,10 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             </div>
             <span className="chip">{current.topic}</span>
           </div>
-          {current.explanation && (
+          {/* The top explanation often just restates the stem/answer; when a
+              richer Concept block exists (FM teaching bank) we drop it and let
+              the concept carry the point. Banks without a concept (IM) keep it. */}
+          {current.explanation && !current.concept && (
             <p className="text-[13.5px] leading-relaxed">{current.explanation}</p>
           )}
           {(current.concept ||
@@ -485,7 +514,6 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             </div>
           )}
           {current.discriminator && <TeachRow icon="🔑" label="Key discriminator" text={current.discriminator} />}
-          {current.examTrap && <TeachRow icon="⚠️" label="Exam trap" text={current.examTrap} />}
           {current.mnemonic && <TeachRow icon="🧠" label="Mnemonic" text={current.mnemonic} />}
         </div>
       )}
@@ -520,15 +548,18 @@ function OptionButton({
   text,
   state,
   rationale,
-  disabled,
+  answered,
+  expanded,
   onClick,
 }: {
   letter: string;
   text: string;
   state: "idle" | "correct" | "wrong" | "muted";
-  /** One-line teaching rationale, shown beneath the option once answered. */
+  /** One-line teaching rationale, revealed beneath the option on click once answered. */
   rationale?: string;
-  disabled: boolean;
+  answered: boolean;
+  /** Whether this option's rationale is currently shown. */
+  expanded: boolean;
   onClick: () => void;
 }) {
   const styles: Record<typeof state, React.CSSProperties> = {
@@ -545,12 +576,17 @@ function OptionButton({
       : state === "wrong"
         ? "var(--color-exam-danger)"
         : "var(--color-exam-muted)";
+  // Once answered, tapping an option reveals its rationale (no re-answering).
+  const hasRationale = answered && !!rationale;
+  // After answering, options with no rationale have nothing to do — disable them.
+  const disabled = answered && !rationale;
   return (
     <button
       type="button"
       disabled={disabled}
       onClick={onClick}
       aria-label={`Option ${letter}`}
+      aria-expanded={hasRationale ? expanded : undefined}
       className="w-full flex items-start gap-3 rounded-xl border px-3.5 py-2.5 text-left text-[14px] leading-relaxed transition-colors disabled:cursor-default enabled:hover:border-[var(--color-exam-accent-line)]"
       style={styles[state]}
     >
@@ -561,9 +597,20 @@ function OptionButton({
       >
         {badge}
       </span>
-      <span className="min-w-0">
-        <span>{text}</span>
-        {rationale && (
+      <span className="min-w-0 flex-1">
+        <span className="flex items-start justify-between gap-2">
+          <span>{text}</span>
+          {hasRationale && (
+            <span
+              className="shrink-0 text-[11px] font-bold mt-0.5 whitespace-nowrap"
+              style={{ color: "var(--color-exam-muted)" }}
+              aria-hidden
+            >
+              {expanded ? "Hide ▴" : "Why? ▾"}
+            </span>
+          )}
+        </span>
+        {hasRationale && expanded && (
           <span
             className="block mt-1 text-[12.5px] leading-snug font-normal"
             style={{ color: "var(--color-exam-muted)" }}
