@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { type McqQuestion } from "../../data/shelfMcq";
 import { IM_BANK, type McqBank } from "../../data/mcqBank";
 import {
@@ -8,7 +8,6 @@ import {
   type McqProgress,
 } from "../../data/mcqProgress";
 import { Segmented } from "../components/Segmented";
-import { useAppStore } from "../store";
 
 /**
  * Question Bank — single-best-answer MCQs drilled one at a time for shelf-exam
@@ -64,7 +63,6 @@ function inSubset(q: McqQuestion, subset: Subset, progress: McqProgress): boolea
 const LETTERS = ["A", "B", "C", "D", "E"];
 
 export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
-  const exitToSelect = useAppStore((s) => s.exitToSelect);
   const questions = bank.questions;
   const storageKey = bank.storageKey;
 
@@ -210,7 +208,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
     const runCount = sessionLen === "all" ? eligible.length : Math.min(sessionLen, eligible.length);
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-        <Header exit={exitToSelect} bank={bank} />
+        <Header bank={bank} />
 
         <div className="card p-5 space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">
@@ -349,7 +347,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
       pct >= 80 ? "var(--color-exam-ok)" : pct >= 60 ? "var(--color-exam-warn)" : "var(--color-exam-danger)";
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-        <Header exit={exitToSelect} bank={bank} />
+        <Header bank={bank} />
         <div className="card p-6 text-center space-y-2 pop-in">
           <div className="panel-label">Quiz complete</div>
           <div className="text-[40px] font-extrabold tabular-nums" style={{ color: band }}>
@@ -395,7 +393,8 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   if (!current) return null;
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-      <Header exit={exitToSelect} bank={bank} compact />
+      {/* No screen header here — the "Questions" nav tab labels the screen, and
+          the Exit/progress bar below carries the quiz context. */}
 
       {/* Progress + score bar */}
       <div className="flex items-center justify-between gap-3 text-[13px] font-semibold">
@@ -634,39 +633,25 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-function Header({ exit, bank, compact }: { exit: () => void; bank: McqBank; compact?: boolean }) {
-  const ref = useRef<HTMLDivElement>(null);
-  if (compact) {
-    return (
-      <div ref={ref} className="flex items-center justify-between gap-4">
-        <h2 className="text-[18px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-          {bank.title}
-        </h2>
-        <button className="btn btn-ghost shrink-0" onClick={exit}>
-          Case list →
-        </button>
-      </div>
-    );
-  }
+/**
+ * Screen header — leads with the bank's shelf identity + blurb. The generic
+ * "Question Bank" title is intentionally omitted: the "Questions" nav tab
+ * already labels the screen, so repeating it here is redundant.
+ */
+function Header({ bank }: { bank: McqBank }) {
   return (
-    <div className="flex items-start justify-between gap-6">
-      <div className="flex items-start gap-3">
-        <span className="icon-tile" style={{ background: bank.grad }} aria-hidden="true">
-          {bank.icon}
-        </span>
-        <div className="space-y-0.5">
-          <div className="panel-label">{bank.eyebrow}</div>
-          <h2 className="text-[24px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-            {bank.title}
-          </h2>
-          <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-            {bank.blurb}
-          </p>
-        </div>
+    <div className="flex items-start gap-3">
+      <span className="icon-tile" style={{ background: bank.grad }} aria-hidden="true">
+        {bank.icon}
+      </span>
+      <div className="space-y-0.5">
+        <h2 className="text-[22px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
+          {bank.eyebrow}
+        </h2>
+        <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
+          {bank.blurb}
+        </p>
       </div>
-      <button className="btn btn-ghost shrink-0" onClick={exit}>
-        Case list →
-      </button>
     </div>
   );
 }
