@@ -37,6 +37,7 @@ export const OB_MCQ_SYSTEM_ORDER = [
   "Breast Disorders",
   "Gynecologic Infections & STIs",
   "Cervical Dysplasia & Screening",
+  "Pharmacology",
 ] as const;
 
 export const OB_MCQS: McqQuestion[] = [
@@ -9940,6 +9941,1471 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "The key distinction after hysterectomy is whether the cervix was removed. Supracervical (subtotal) hysterectomy retains the cervix, so patients require ongoing routine cervical cancer screening; total hysterectomy removes the cervix, which may allow discontinuation of screening if criteria are met.",
     "discriminator": "The presence or absence of the cervix itself (supracervical vs total hysterectomy) determines whether screening continues, not the reason for the hysterectomy."
+  },
+  {
+    "id": "ob-pharmacology-1",
+    "system": "Pharmacology",
+    "topic": "Antenatal corticosteroid window",
+    "stem": "A single course of betamethasone is most appropriately offered to a woman at risk of preterm delivery within which gestational age window?",
+    "options": [
+      "16-20 weeks",
+      "20-23 weeks",
+      "24-34 weeks",
+      "35-40 weeks",
+      "Any gestational age"
+    ],
+    "answerIndex": 2,
+    "explanation": "Antenatal corticosteroids (betamethasone or dexamethasone) are indicated between 24 0/7 and 33 6/7 weeks (extended to 34 6/7 in many protocols) for women at risk of delivery within 7 days.",
+    "optionRationales": [
+      "Too early; fetal viability and benefit data support later gestational ages.",
+      "Still generally before the standard window of proven benefit.",
+      "Correct — this is the standard window (24-34 weeks) for maximal fetal lung maturation benefit.",
+      "By this point the fetal lung is largely mature and steroids offer little added benefit; late preterm (34-36 6/7) steroids are a separate, more selective indication.",
+      "Steroids are not given empirically outside the window of demonstrated benefit and risk of delivery."
+    ],
+    "concept": "Antenatal corticosteroids accelerate fetal lung maturation by inducing surfactant protein and enzyme production in type II pneumocytes, reducing neonatal respiratory distress syndrome, intraventricular hemorrhage, and mortality. The classic window of benefit is 24-34 weeks gestation in women at risk of preterm delivery within 7 days.",
+    "conceptRule": [
+      "24-34 weeks + risk of delivery in 7 days -> give betamethasone/dexamethasone course"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-2",
+    "system": "Pharmacology",
+    "topic": "Antibiotics in pregnancy: tetracyclines and fluoroquinolones",
+    "stem": "A pregnant woman with a urinary tract infection is prescribed an antibiotic. Which choice should be avoided because of a well-established fetal/pediatric toxicity?",
+    "options": [
+      "Doxycycline, due to deposition in developing teeth and bone causing tooth discoloration and enamel hypoplasia",
+      "Cephalexin, due to fetal ototoxicity",
+      "Amoxicillin, due to fetal hepatotoxicity",
+      "Nitrofurantoin, due to fetal cardiac malformations",
+      "Fosfomycin, due to fetal neural tube defects"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tetracyclines (including doxycycline) chelate calcium and deposit in developing fetal teeth and bone, causing permanent tooth discoloration and enamel hypoplasia, and are avoided in pregnancy.",
+    "optionRationales": [
+      "Correct: this is the classic tetracycline fetal/pediatric toxicity and the reason tetracyclines are avoided in pregnancy and young children.",
+      "Cephalexin is considered safe in pregnancy and is not associated with fetal ototoxicity; ototoxicity is a concern with aminoglycosides.",
+      "Amoxicillin is a first-line safe antibiotic in pregnancy and is not hepatotoxic to the fetus.",
+      "Nitrofurantoin is generally considered safe for UTI treatment in pregnancy (though sometimes avoided near term due to theoretical hemolysis risk in G6PD-deficient neonates), not associated with cardiac malformations.",
+      "Fosfomycin is generally considered an acceptable option for UTI in pregnancy and is not linked to neural tube defects."
+    ],
+    "concept": "Tetracyclines (including doxycycline and minocycline) are avoided after the first trimester and in young children because they chelate calcium in mineralizing tissue, causing permanent tooth staining and inhibited bone growth; penicillins, cephalosporins, and nitrofurantoin (except near term) are generally preferred safe choices for treating infections in pregnancy.",
+    "conceptRule": [
+      "Tetracyclines after ~week 14 -> avoid; use alternative antibiotic",
+      "Fluoroquinolones in pregnancy -> avoid due to cartilage/tendon toxicity risk"
+    ],
+    "discriminator": "Fluoroquinolones are avoided for a different reason: risk of cartilage and tendon damage (arthropathy) demonstrated in juvenile animal studies, distinct from the dental/bone chelation mechanism of tetracyclines."
+  },
+  {
+    "id": "ob-pharmacology-3",
+    "system": "Pharmacology",
+    "topic": "Antibiotics near term: sulfonamides",
+    "stem": "Why are sulfonamide antibiotics (e.g., trimethoprim-sulfamethoxazole) generally avoided in the third trimester, particularly close to delivery?",
+    "options": [
+      "Sulfonamides cause fetal limb reduction defects",
+      "Sulfonamides displace bilirubin from albumin, increasing the risk of neonatal kernicterus",
+      "Sulfonamides cause gray baby syndrome in the neonate",
+      "Sulfonamides cause irreversible fetal ototoxicity",
+      "Sulfonamides inhibit fetal thyroid function, causing goiter"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sulfonamides compete with bilirubin for albumin binding sites, and near term this can increase free (unconjugated) bilirubin in the neonate, raising the risk of kernicterus, so they are avoided close to delivery.",
+    "optionRationales": [
+      "Limb reduction defects are classically linked to thalidomide, not sulfonamides.",
+      "Correct: this bilirubin-albumin displacement mechanism is the classic reason sulfonamides are avoided near term.",
+      "Gray baby syndrome is caused by chloramphenicol, not sulfonamides.",
+      "Ototoxicity is characteristic of aminoglycosides, not sulfonamides.",
+      "Sulfonamides are not characteristically linked to fetal thyroid suppression; that concern applies more to iodine-containing agents and antithyroid drugs."
+    ],
+    "concept": "Trimethoprim-sulfamethoxazole is generally avoided in the first trimester (trimethoprim is a folate antagonist, risking neural tube defects) and in the third trimester near delivery, when sulfonamide displacement of bilirubin from albumin can precipitate neonatal hyperbilirubinemia and kernicterus.",
+    "conceptRule": [
+      "Sulfonamide use near term -> avoid due to kernicterus risk from bilirubin displacement",
+      "Trimethoprim use in 1st trimester -> avoid/supplement folate due to antifolate teratogenicity"
+    ],
+    "discriminator": "This contrasts with tetracyclines, whose fetal toxicity is dental/skeletal rather than related to bilirubin metabolism."
+  },
+  {
+    "id": "ob-pharmacology-4",
+    "system": "Pharmacology",
+    "topic": "Aromatase inhibitor vs tamoxifen",
+    "stem": "A 58-year-old postmenopausal woman is diagnosed with ER-positive breast cancer. Compared with tamoxifen, which is the main reason an aromatase inhibitor (e.g., anastrozole) is preferred as first-line adjuvant therapy in this patient?",
+    "options": [
+      "Aromatase inhibitors are safe and effective in premenopausal women with intact ovarian function",
+      "Aromatase inhibitors prevent osteoporosis whereas tamoxifen causes bone loss",
+      "Aromatase inhibitors have no risk of endometrial hyperplasia or cancer",
+      "Aromatase inhibitors have a lower cost and better side-effect profile in all age groups",
+      "Aromatase inhibitors block peripheral conversion of androgens to estrogen, which is the dominant estrogen source after menopause, and are more effective than tamoxifen in postmenopausal women"
+    ],
+    "answerIndex": 4,
+    "explanation": "After menopause, the ovaries stop producing estrogen and peripheral aromatization of adrenal androgens becomes the main estrogen source, so blocking aromatase is more effective than blocking the estrogen receptor alone.",
+    "optionRationales": [
+      "Aromatase inhibitors are ineffective in premenopausal women because ongoing ovarian estrogen production overwhelms peripheral aromatase blockade unless ovarian suppression is added.",
+      "True that aromatase inhibitors cause bone loss/osteoporosis (opposite of what is stated) while tamoxifen has estrogen agonist effects on bone; this option has the risk backwards.",
+      "Aromatase inhibitors do avoid the endometrial stimulation seen with tamoxifen, but this is a safety advantage, not the reason for superior efficacy in this population.",
+      "Cost and tolerability are not the reason for the menopausal-status-based choice; the mechanism of estrogen production is.",
+      "Correct: this is the pharmacologic basis for preferring aromatase inhibitors specifically in postmenopausal women."
+    ],
+    "concept": "Aromatase inhibitors (anastrozole, letrozole, exemestane) block peripheral conversion of androgens to estrogens and are first-line in postmenopausal ER+ breast cancer, since peripheral aromatization is the dominant estrogen source after ovarian failure. In premenopausal women, ovaries continue to make estrogen independent of aromatase, so tamoxifen (a selective estrogen receptor modulator) is preferred unless combined with ovarian suppression.",
+    "discriminator": "Tamoxifen is a SERM effective regardless of menopausal status but carries endometrial cancer and VTE risk; aromatase inhibitors are effective only when ovarian estrogen production has ceased and instead risk osteoporosis and arthralgias."
+  },
+  {
+    "id": "ob-pharmacology-5",
+    "system": "Pharmacology",
+    "topic": "Betamethasone mechanism",
+    "stem": "Antenatal betamethasone reduces neonatal respiratory distress syndrome primarily through which mechanism?",
+    "options": [
+      "Stimulation of fetal adrenal cortisol synthesis",
+      "Induction of fetal type II pneumocyte surfactant production",
+      "Inhibition of prostaglandin synthesis in the myometrium",
+      "Direct instillation of exogenous surfactant into fetal lungs",
+      "Relaxation of uterine smooth muscle to delay delivery"
+    ],
+    "answerIndex": 1,
+    "explanation": "Betamethasone crosses the placenta and accelerates maturation of fetal type II pneumocytes, increasing surfactant protein synthesis and lung compliance.",
+    "optionRationales": [
+      "Betamethasone acts directly on fetal tissue via the glucocorticoid receptor, not by stimulating the fetal adrenal gland.",
+      "Correct — glucocorticoids induce structural and biochemical maturation of type II pneumocytes, boosting surfactant production.",
+      "This describes the mechanism of NSAID tocolytics (e.g., indomethacin), not corticosteroids.",
+      "That describes exogenous surfactant therapy given to the neonate after birth, not antenatal steroids.",
+      "Betamethasone is not a tocolytic; it does not relax the myometrium."
+    ],
+    "concept": "Exogenous glucocorticoids mimic the natural surge of fetal cortisol that occurs near term, driving maturation of the fetal lung, gut, and other organs. The key pharmacologic target for RDS prevention is the type II pneumocyte and its surfactant-producing machinery.",
+    "discriminator": "Unlike tocolytics (e.g., nifedipine, indomethacin, magnesium), betamethasone does not stop contractions; it matures fetal organs in anticipation of preterm delivery."
+  },
+  {
+    "id": "ob-pharmacology-6",
+    "system": "Pharmacology",
+    "topic": "Carboprost contraindication",
+    "stem": "A postpartum patient with uterine atony and a history of poorly controlled asthma is being considered for a second-line uterotonic. Which agent should be avoided?",
+    "options": [
+      "Tranexamic acid",
+      "Carboprost tromethamine",
+      "Methylergonovine",
+      "Oxytocin",
+      "Misoprostol"
+    ],
+    "answerIndex": 1,
+    "explanation": "Carboprost is a prostaglandin F2-alpha analog that can cause bronchoconstriction and is contraindicated in patients with asthma.",
+    "optionRationales": [
+      "Tranexamic acid is an antifibrinolytic with no bronchospasm risk.",
+      "Correct — carboprost's PGF2-alpha activity can trigger severe bronchospasm and is contraindicated in asthmatics.",
+      "Methylergonovine is contraindicated in hypertension, not asthma, though it is still a reasonable alternative to consider case by case.",
+      "Oxytocin is first-line for atony and is not contraindicated in asthma.",
+      "Misoprostol (a PGE1 analog) does not carry the same bronchospasm risk and is actually safe in asthma."
+    ],
+    "concept": "Carboprost (15-methyl PGF2-alpha) is a potent uterotonic used for refractory postpartum hemorrhage but is contraindicated in patients with asthma because prostaglandin F2-alpha analogs can provoke bronchoconstriction. It can also cause diarrhea, fever, and flushing.",
+    "discriminator": "Carboprost is avoided in asthma, whereas misoprostol (PGE1) is considered safe in asthmatic patients and is preferred in that setting."
+  },
+  {
+    "id": "ob-pharmacology-7",
+    "system": "Pharmacology",
+    "topic": "Clomiphene mechanism",
+    "stem": "Clomiphene citrate induces ovulation primarily through which mechanism?",
+    "options": [
+      "Blocking hypothalamic estrogen receptors to increase GnRH and gonadotropin release",
+      "Suppressing pituitary LH release to prevent premature luteinization",
+      "Increasing insulin sensitivity to restore normal ovulatory cycles",
+      "Inhibiting aromatase to reduce peripheral estrogen synthesis",
+      "Direct stimulation of ovarian follicles via FSH receptor agonism"
+    ],
+    "answerIndex": 0,
+    "explanation": "Clomiphene is a selective estrogen receptor modulator that antagonizes hypothalamic estrogen receptors, blunting negative feedback and increasing GnRH pulsatility, which raises FSH/LH and drives follicular development.",
+    "optionRationales": [
+      "Correct: clomiphene blocks hypothalamic estrogen receptors, tricking the hypothalamus into perceiving low estrogen, which increases GnRH and gonadotropin secretion.",
+      "Clomiphene increases, not suppresses, gonadotropin release.",
+      "Improving insulin sensitivity describes metformin's role in PCOS, not clomiphene's mechanism.",
+      "Aromatase inhibition is letrozole's mechanism, which lowers estrogen synthesis directly rather than blocking its receptor.",
+      "Clomiphene does not act directly on the ovary or FSH receptors; its effect is centrally mediated."
+    ],
+    "concept": "Clomiphene citrate is a SERM that antagonizes estrogen receptors in the hypothalamus, disrupting normal negative feedback and increasing endogenous FSH/LH secretion to stimulate follicular growth and ovulation. Because it blocks estrogen receptors throughout the cycle, it can also produce unwanted antiestrogenic effects on cervical mucus and endometrial lining.",
+    "discriminator": "Clomiphene works by blocking estrogen receptors centrally, whereas letrozole works by inhibiting estrogen synthesis via aromatase inhibition, avoiding clomiphene's peripheral antiestrogenic effects."
+  },
+  {
+    "id": "ob-pharmacology-8",
+    "system": "Pharmacology",
+    "topic": "COC contraindication - migraine",
+    "stem": "A 32-year-old woman requests combined oral contraceptives. Which history is an absolute contraindication (US MEC category 4)?",
+    "options": [
+      "Well-controlled migraine without aura in a nonsmoker under 35",
+      "Migraine headache with aura",
+      "Controlled hypothyroidism on levothyroxine",
+      "History of mild, resolved preeclampsia in a prior pregnancy",
+      "Family history of breast cancer in a distant relative"
+    ],
+    "answerIndex": 1,
+    "explanation": "Migraine with aura confers an increased baseline stroke risk, and estrogen further increases that risk; combined hormonal contraceptives are absolutely contraindicated (MEC 4) regardless of age or smoking status.",
+    "optionRationales": [
+      "Incorrect: migraine without aura in a young nonsmoker is generally MEC category 2 (benefits outweigh risks), not an absolute contraindication.",
+      "Correct: migraine with aura at any age is a MEC category 4 (absolute) contraindication to estrogen-containing contraception due to stroke risk.",
+      "Incorrect: controlled hypothyroidism does not contraindicate combined hormonal contraception.",
+      "Incorrect: resolved preeclampsia in a prior pregnancy is not itself an absolute contraindication to future COC use.",
+      "Incorrect: a distant family history of breast cancer is not a contraindication to COCs."
+    ],
+    "concept": "Estrogen-containing contraceptives are absolutely contraindicated in women with migraine with aura because of a synergistic increase in ischemic stroke risk. Migraine without aura is not an absolute contraindication but still warrants caution, especially with additional risk factors like smoking or age >=35.",
+    "conceptRule": [
+      "Migraine with aura, any age -> COC absolutely contraindicated (MEC 4); consider progestin-only method",
+      "Migraine without aura, age <35, nonsmoker -> COC generally acceptable (MEC 2), reassess if aura develops"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-9",
+    "system": "Pharmacology",
+    "topic": "COC contraindication - smoking/age",
+    "stem": "For which patient are combined hormonal contraceptives absolutely contraindicated due to thrombotic risk?",
+    "options": [
+      "A 38-year-old woman who smokes 15 cigarettes per day",
+      "A 25-year-old with a family history of type 2 diabetes",
+      "A 33-year-old with a history of gestational diabetes, now normoglycemic",
+      "A 30-year-old nonsmoker with a body mass index of 32",
+      "A 40-year-old nonsmoker with well-controlled hypertension on a single agent"
+    ],
+    "answerIndex": 0,
+    "explanation": "Women who are 35 years or older and smoke are at markedly increased risk of myocardial infarction and thromboembolic events with estrogen-containing contraceptives; this combination is a US MEC category 4 absolute contraindication.",
+    "optionRationales": [
+      "Correct: age >=35 plus smoking is an absolute contraindication (MEC 4) to combined hormonal contraception due to synergistic cardiovascular/thrombotic risk.",
+      "Incorrect: family history of diabetes is not a contraindication to combined hormonal contraception.",
+      "Incorrect: prior gestational diabetes without current disease is not a contraindication.",
+      "Incorrect: obesity alone is not an absolute contraindication, though it is a relative risk factor (MEC 2).",
+      "Incorrect: well-controlled hypertension on one medication in a nonsmoker is generally MEC 3 (risks usually outweigh benefits) rather than an absolute MEC 4 contraindication."
+    ],
+    "concept": "Combined hormonal contraceptives are absolutely contraindicated in smokers age 35 or older because estrogen synergizes with smoking-related vascular effects to markedly raise the risk of myocardial infarction, stroke, and venous thromboembolism. Age or smoking alone confers lower relative risk than the combination.",
+    "conceptRule": [
+      "Age >=35 AND current smoker -> COC absolutely contraindicated (MEC 4)",
+      "Age >=35, nonsmoker, no other risk factors -> COC generally acceptable (MEC 2)"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-10",
+    "system": "Pharmacology",
+    "topic": "COC contraindication - VTE",
+    "stem": "A patient with a personal history of unprovoked deep vein thrombosis asks about starting combined oral contraceptives. What is the most appropriate counseling regarding estrogen-containing methods?",
+    "options": [
+      "Combined oral contraceptives are acceptable with routine coagulation monitoring",
+      "Combined oral contraceptives are acceptable if she is a nonsmoker",
+      "Combined oral contraceptives are safe as long as she takes low-dose aspirin",
+      "Combined oral contraceptives are safe if the DVT occurred more than 5 years ago",
+      "Combined hormonal contraceptives are absolutely contraindicated; recommend a progestin-only or nonhormonal method instead"
+    ],
+    "answerIndex": 4,
+    "explanation": "A personal history of VTE (current or past) is a US MEC category 4 absolute contraindication to estrogen-containing contraceptives because estrogen increases hepatic clotting factor synthesis and recurrence risk; progestin-only or nonhormonal methods are preferred.",
+    "optionRationales": [
+      "Incorrect: there is no monitoring protocol that makes estrogen-containing contraception safe in a patient with prior VTE; the method itself is avoided.",
+      "Incorrect: smoking status does not change the absolute contraindication conferred by a personal VTE history.",
+      "Incorrect: aspirin does not mitigate the estrogen-driven hypercoagulable state enough to make COCs safe in this setting.",
+      "Incorrect: the contraindication applies to any personal history of VTE, not only recent events.",
+      "Correct: personal history of VTE is an absolute contraindication to combined hormonal contraception regardless of time elapsed or concurrent aspirin."
+    ],
+    "concept": "A personal history of venous thromboembolism is an absolute contraindication to estrogen-containing contraceptives at any time point, because ethinyl estradiol increases hepatic procoagulant synthesis and recurrence risk. Progestin-only methods (pill, DMPA, implant, hormonal IUD) do not carry this same estrogen-driven thrombotic risk and are preferred alternatives.",
+    "conceptRule": [
+      "Personal history of VTE (any time) -> combined hormonal contraception absolutely contraindicated (MEC 4); use progestin-only or nonhormonal method"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-11",
+    "system": "Pharmacology",
+    "topic": "COC estrogen side effects",
+    "stem": "Which adverse effect of combined oral contraceptives is attributed primarily to the estrogen component rather than the progestin component?",
+    "options": [
+      "Acne improvement",
+      "Decreased libido",
+      "Reduced HDL and increased LDL cholesterol",
+      "Irregular breakthrough bleeding",
+      "Increased risk of venous thromboembolism via increased hepatic clotting factor synthesis"
+    ],
+    "answerIndex": 4,
+    "explanation": "Ethinyl estradiol increases hepatic synthesis of clotting factors (including fibrinogen and factors VII, VIII, X) and SHBG, raising VTE risk; this is the classic estrogen-attributable adverse effect tested on exams.",
+    "optionRationales": [
+      "Incorrect: acne improvement results from estrogen-induced increase in SHBG lowering free testosterone, which is a benefit, not the classic 'adverse effect' being tested here.",
+      "Incorrect: decreased libido is generally attributed to progestin/antiandrogenic effects, not estrogen.",
+      "Incorrect: adverse lipid changes (lower HDL, higher LDL) are more characteristic of androgenic progestins, not estrogen.",
+      "Incorrect: breakthrough bleeding is more often related to progestin-dominant or low-estrogen formulations affecting endometrial stability.",
+      "Correct: the prothrombotic hepatic effect (increased clotting factors) is estrogen-driven."
+    ],
+    "concept": "Ethinyl estradiol in combined contraceptives increases hepatic synthesis of procoagulant factors and SHBG, underlying the VTE risk and the antiandrogenic acne benefit. Progestin components instead determine bleeding patterns, mood, and lipid/androgenic side effects, depending on the specific progestin generation used.",
+    "discriminator": "Estrogen drives thrombosis risk via hepatic clotting factor synthesis; progestin drives bleeding pattern and androgenic side effects."
+  },
+  {
+    "id": "ob-pharmacology-12",
+    "system": "Pharmacology",
+    "topic": "COC noncontraceptive benefits",
+    "stem": "Combined oral contraceptives reduce the long-term risk of which malignancy through suppression of ovulation and endometrial proliferation?",
+    "options": [
+      "Melanoma",
+      "Cervical cancer",
+      "Hepatocellular carcinoma",
+      "Ovarian and endometrial cancer",
+      "Breast cancer"
+    ],
+    "answerIndex": 3,
+    "explanation": "COCs suppress ovulation (reducing 'incessant ovulation' risk for ovarian cancer) and oppose unopposed estrogen effects on the endometrium (reducing endometrial hyperplasia/cancer risk); this protection persists for years after discontinuation.",
+    "optionRationales": [
+      "Incorrect: COCs have no established protective effect against melanoma.",
+      "Incorrect: COCs are associated with a slightly increased risk of cervical cancer with long-term use, not a decreased risk.",
+      "Incorrect: COCs are associated with rare benign hepatic adenomas and do not reduce hepatocellular carcinoma risk.",
+      "Correct: reduced ovarian and endometrial cancer risk is a well-established noncontraceptive benefit of COCs.",
+      "Incorrect: COC use has been associated with a small increase, not decrease, in breast cancer risk while actively used."
+    ],
+    "concept": "Combined oral contraceptives lower lifetime risk of ovarian and endometrial cancer by suppressing ovulation and continuous endometrial proliferation, a protective effect that persists for years after stopping the pill. This is a key noncontraceptive counseling point distinct from their small increased risk of breast and cervical cancer.",
+    "discriminator": "COCs protect against ovarian/endometrial cancer but slightly increase breast and cervical cancer risk—opposite directions for different cancers."
+  },
+  {
+    "id": "ob-pharmacology-13",
+    "system": "Pharmacology",
+    "topic": "Copper IUD vs hormonal EC contraindications",
+    "stem": "A patient requests emergency contraception but has active pelvic inflammatory disease. Which emergency contraception option should be avoided in this setting?",
+    "options": [
+      "All are equally safe to use",
+      "Oral levonorgestrel",
+      "Oral ulipristal acetate",
+      "Yuzpe combined regimen",
+      "Copper IUD placement"
+    ],
+    "answerIndex": 4,
+    "explanation": "IUD placement (copper or hormonal) is contraindicated in the setting of active pelvic infection due to risk of worsening infection or causing complications; oral emergency contraceptives are preferred instead.",
+    "optionRationales": [
+      "The options are not equally safe; IUD placement specifically carries infection-related risk in active PID.",
+      "Oral levonorgestrel has no interaction with pelvic infection and remains an option, though efficacy depends on timing/weight.",
+      "Oral ulipristal is not contraindicated by pelvic infection.",
+      "The Yuzpe regimen is not contraindicated by pelvic infection, though it is less preferred due to side effects.",
+      "Correct: active PID or untreated cervicitis is a contraindication to IUD insertion because of the risk of ascending infection."
+    ],
+    "concept": "While the copper IUD is the most effective emergency contraceptive, it requires intrauterine device placement and is therefore contraindicated in situations like active pelvic infection, undiagnosed abnormal bleeding, or distorted uterine cavity, where oral levonorgestrel or ulipristal acetate should be used instead.",
+    "discriminator": "Oral emergency contraceptives avoid the instrumentation risk that makes copper IUD placement unsafe in active pelvic infection."
+  },
+  {
+    "id": "ob-pharmacology-14",
+    "system": "Pharmacology",
+    "topic": "DMPA bleeding and weight",
+    "stem": "Which combination of side effects is most characteristic of depot medroxyprogesterone acetate (DMPA) use?",
+    "options": [
+      "Immediate amenorrhea from the first injection with no initial irregular bleeding",
+      "Irregular unpredictable bleeding initially, progressing to amenorrhea with continued use, plus modest weight gain",
+      "Heavy, predictable monthly withdrawal bleeding and weight loss",
+      "Cyclic breast tenderness with no effect on bleeding pattern",
+      "Increased menstrual flow and worsening dysmenorrhea"
+    ],
+    "answerIndex": 1,
+    "explanation": "DMPA commonly causes irregular spotting/breakthrough bleeding in the first several months that evolves into amenorrhea with continued use (common by one year), and it is associated with modest weight gain in many users, both important counseling points.",
+    "optionRationales": [
+      "Incorrect: amenorrhea typically develops gradually over months of use, not immediately after the first injection.",
+      "Correct: irregular bleeding evolving to amenorrhea, plus weight gain, are the classic DMPA side effect profile.",
+      "Incorrect: DMPA does not produce a predictable withdrawal bleed, and weight loss is not typical (weight gain is more common).",
+      "Incorrect: DMPA characteristically alters bleeding pattern significantly (irregular bleeding then amenorrhea), not 'no effect.'",
+      "Incorrect: DMPA typically decreases menstrual flow and dysmenorrhea over time, opposite of this description."
+    ],
+    "concept": "DMPA typically causes irregular, unpredictable spotting or bleeding in the first few months of use, which progresses to amenorrhea in most users by about one year of continued use. Modest weight gain is another commonly counseled side effect, distinct from the reversible bone density loss seen with long-term use.",
+    "discriminator": "DMPA's bleeding pattern evolves over time (irregular then amenorrhea), unlike the predictable withdrawal bleeding of cyclic combined contraceptives."
+  },
+  {
+    "id": "ob-pharmacology-15",
+    "system": "Pharmacology",
+    "topic": "DMPA bone density",
+    "stem": "Long-term use of depot medroxyprogesterone acetate (DMPA) is most associated with which reversible adverse effect?",
+    "options": [
+      "Hypertension requiring routine blood pressure medication",
+      "Significant increase in HDL cholesterol",
+      "Decreased bone mineral density that generally recovers after discontinuation",
+      "Increased risk of venous thromboembolism equivalent to combined oral contraceptives",
+      "Permanent infertility after stopping the injection"
+    ],
+    "answerIndex": 2,
+    "explanation": "DMPA suppresses ovarian estrogen production, leading to reversible loss of bone mineral density with prolonged use; bone density generally recovers after discontinuation, but caution is advised with long-term use, especially in adolescents.",
+    "optionRationales": [
+      "Incorrect: DMPA is not classically associated with a requirement for routine antihypertensive therapy.",
+      "Incorrect: progestin-only methods like DMPA are more often associated with neutral or slightly adverse lipid effects, not a significant HDL increase.",
+      "Correct: hypoestrogenism from DMPA causes measurable, generally reversible bone density loss with prolonged use.",
+      "Incorrect: DMPA, a progestin-only method, does not carry the same estrogen-driven VTE risk as combined oral contraceptives.",
+      "Incorrect: fertility returns after discontinuation, though return to ovulation can be delayed (up to several months to a year), it is not permanent infertility."
+    ],
+    "concept": "DMPA's progestin-only, hypoestrogenic effect suppresses ovarian estrogen production, causing reversible bone mineral density loss with prolonged use; the FDA carries a boxed warning advising against use beyond 2 years without reassessing risks/benefits, though bone density typically recovers after discontinuation.",
+    "discriminator": "DMPA's hypoestrogenism causes reversible bone loss; combined OCPs, which contain estrogen, do not."
+  },
+  {
+    "id": "ob-pharmacology-16",
+    "system": "Pharmacology",
+    "topic": "Emergency contraception mechanisms",
+    "stem": "A 22-year-old requests emergency contraception 60 hours after unprotected intercourse. She has a BMI of 35. Which agent is most effective for her at this time point and weight?",
+    "options": [
+      "Levonorgestrel 1.5 mg oral",
+      "Ulipristal acetate 30 mg oral",
+      "Combined estrogen-progestin (Yuzpe method)",
+      "Copper IUD",
+      "Progestin-only pill continued daily"
+    ],
+    "answerIndex": 3,
+    "explanation": "The copper IUD is the most effective emergency contraceptive at any point up to 120 hours and is not affected by obesity, working primarily by a direct toxic effect on sperm and ova that impairs fertilization.",
+    "optionRationales": [
+      "Levonorgestrel's efficacy declines beyond 72 hours and is reduced in patients with BMI >30 because it depends on delaying ovulation via the LH surge.",
+      "Ulipristal is effective to 120 hours and better than levonorgestrel in obesity, but is still less effective overall than the copper IUD.",
+      "The Yuzpe method is an older, less effective regimen with more nausea/vomiting, largely replaced by dedicated EC agents.",
+      "The copper IUD is correct: effective through 120 hours, unaffected by BMI, and also provides ongoing contraception.",
+      "Progestin-only pills taken as ongoing contraception are not an emergency contraception method."
+    ],
+    "concept": "Emergency contraception options include levonorgestrel, ulipristal acetate, and the copper IUD. Levonorgestrel and ulipristal work primarily by delaying or inhibiting ovulation (suppressing the LH surge), so their efficacy weakens as intercourse-to-treatment time increases and in obese patients. The copper IUD acts independently of ovulation timing via direct gamete toxicity, making it the most effective option regardless of timing (up to 120 hours) or body weight.",
+    "discriminator": "Unlike levonorgestrel and ulipristal, which lose efficacy with obesity and delayed timing because they depend on blocking the LH surge, the copper IUD's mechanism is ovulation-independent."
+  },
+  {
+    "id": "ob-pharmacology-17",
+    "system": "Pharmacology",
+    "topic": "GnRH agonist hypoestrogenic side effects",
+    "stem": "A woman on leuprolide therapy for endometriosis for the past 4 months develops which characteristic adverse effect related to the drug's hypoestrogenic state?",
+    "options": [
+      "Hyperprolactinemia and galactorrhea",
+      "Hirsutism and acne",
+      "Deep vein thrombosis",
+      "Endometrial hyperplasia",
+      "Decreased bone mineral density"
+    ],
+    "answerIndex": 4,
+    "explanation": "The sustained hypoestrogenic state induced by GnRH agonists causes bone resorption and decreased bone mineral density, limiting use typically to 6 months or requiring add-back therapy for longer courses.",
+    "optionRationales": [
+      "Leuprolide does not typically cause hyperprolactinemia; that is more associated with dopamine antagonists or pituitary prolactinomas.",
+      "Hirsutism and acne reflect androgen excess, not the hypoestrogenic effects of GnRH agonists.",
+      "GnRH agonists are not classically associated with increased VTE risk the way estrogen-containing contraceptives are.",
+      "Endometrial hyperplasia results from unopposed estrogen excess (e.g., tamoxifen, unopposed estrogen therapy), not the hypoestrogenic state from GnRH agonists.",
+      "Correct: prolonged hypoestrogenism from GnRH agonist therapy accelerates bone loss, which is why therapy is generally limited to about 6 months or paired with add-back hormonal therapy."
+    ],
+    "concept": "The hypoestrogenic state produced by GnRH agonists mimics menopause, causing hot flashes, vaginal dryness, and importantly bone demineralization with prolonged use. This limits treatment duration (typically ≤6 months) unless low-dose estrogen/progestin 'add-back' therapy is used to protect bone while preserving symptom control.",
+    "mnemonic": "GnRH agonists cause a 'medical menopause'—expect hot flashes and bone loss."
+  },
+  {
+    "id": "ob-pharmacology-18",
+    "system": "Pharmacology",
+    "topic": "GnRH agonist mechanism/flare",
+    "stem": "A patient starts leuprolide for symptomatic uterine fibroids. Which statement best explains why symptoms may transiently worsen during the first 1-2 weeks of therapy?",
+    "options": [
+      "Leuprolide causes an acute surge in prolactin secretion",
+      "Continuous GnRH agonism initially causes a flare of LH/FSH and estrogen before pituitary receptor downregulation suppresses gonadotropins",
+      "Leuprolide is metabolized to an active androgenic compound",
+      "Leuprolide competitively blocks estrogen receptors in the myometrium initially",
+      "Leuprolide directly stimulates fibroid growth via progesterone receptors"
+    ],
+    "answerIndex": 1,
+    "explanation": "GnRH agonists initially stimulate the pituitary, causing a transient 'flare' surge in LH, FSH, and estrogen before continuous receptor occupancy leads to downregulation and a hypoestrogenic state after about 2 weeks.",
+    "optionRationales": [
+      "Leuprolide does not primarily act on prolactin secretion.",
+      "Correct: the initial agonist flare transiently raises gonadotropins and estrogen, which can worsen fibroid-related symptoms before sustained downregulation produces hypoestrogenism.",
+      "Leuprolide is not metabolized to an androgen; it is a synthetic GnRH decapeptide analog.",
+      "Leuprolide does not directly block estrogen receptors; it acts upstream at the pituitary GnRH receptor.",
+      "Leuprolide's fibroid-shrinking effect comes from later hypoestrogenism, not direct progesterone receptor stimulation."
+    ],
+    "concept": "GnRH agonists like leuprolide, when given continuously (rather than in pulsatile fashion), initially cause a 'flare' effect—transient increase in gonadotropins and sex steroids—followed by pituitary GnRH receptor downregulation and a sustained hypoestrogenic, hypogonadotropic state within about 2-4 weeks, useful for shrinking fibroids and treating endometriosis.",
+    "conceptRule": [
+      "Weeks 0-2 of GnRH agonist therapy -> expect transient flare (worsened symptoms, possible flare bleeding), not treatment failure",
+      "After ~4 weeks -> sustained hypoestrogenic state achieved, therapeutic effect on fibroids/endometriosis expected"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-19",
+    "system": "Pharmacology",
+    "topic": "GnRH agonist uses",
+    "stem": "Preoperative leuprolide is sometimes given before myomectomy for large fibroids primarily to achieve which effect?",
+    "options": [
+      "Shrink fibroid size and reduce vascularity to decrease intraoperative blood loss",
+      "Increase uterine blood flow to facilitate surgical dissection",
+      "Induce ovulation prior to surgery for fertility preservation",
+      "Prevent postoperative adhesion formation",
+      "Permanently eliminate fibroid tissue to avoid surgery altogether"
+    ],
+    "answerIndex": 0,
+    "explanation": "By inducing a hypoestrogenic state, leuprolide shrinks fibroids and reduces their vascularity, which can decrease intraoperative blood loss and operative time during myomectomy.",
+    "optionRationales": [
+      "Correct: preoperative GnRH agonist therapy shrinks fibroids and reduces vascularity, easing surgical resection and reducing blood loss.",
+      "Leuprolide decreases, not increases, uterine blood flow due to hypoestrogenism.",
+      "Leuprolide suppresses, not induces, ovulation via pituitary downregulation.",
+      "GnRH agonists have no established role in preventing surgical adhesions.",
+      "GnRH agonist effects are reversible; fibroids typically regrow after therapy is stopped, so it does not replace surgery."
+    ],
+    "concept": "GnRH agonists are used preoperatively to shrink fibroids and reduce their vascularity before myomectomy or hysterectomy, easing surgery, and are also used medically to suppress endometriosis-related pain by inducing a hypoestrogenic, hypogonadotropic state that reduces ectopic endometrial tissue activity.",
+    "discriminator": "Unlike surgical fibroid removal, GnRH agonist shrinkage is temporary—fibroids regrow once therapy is discontinued and estrogen levels recover."
+  },
+  {
+    "id": "ob-pharmacology-20",
+    "system": "Pharmacology",
+    "topic": "Indomethacin fetal effects",
+    "stem": "Indomethacin used for tocolysis beyond 32 weeks gestation poses the greatest risk of which fetal complication?",
+    "options": [
+      "Fetal macrosomia",
+      "Neonatal hypoglycemia",
+      "Fetal goiter and hypothyroidism",
+      "Neural tube defects",
+      "Premature closure of the ductus arteriosus and oligohydramnios"
+    ],
+    "answerIndex": 4,
+    "explanation": "Indomethacin inhibits fetal prostaglandin synthesis, which can cause premature constriction/closure of the ductus arteriosus and reduced fetal renal blood flow leading to oligohydramnios; risk rises sharply after 32 weeks.",
+    "optionRationales": [
+      "Indomethacin is not associated with fetal macrosomia; that is linked to maternal diabetes.",
+      "Neonatal hypoglycemia is more classically associated with maternal diabetes or beta-blocker/beta-agonist exposure, not indomethacin.",
+      "Fetal goiter/hypothyroidism is associated with maternal antithyroid drugs or iodine exposure, not indomethacin.",
+      "Neural tube defects are associated with folate deficiency or antiepileptics like valproate, not indomethacin.",
+      "Correct: prostaglandins keep the ductus arteriosus patent and support fetal renal perfusion, so indomethacin's COX inhibition risks ductal closure and oligohydramnios, especially with prolonged use after 32 weeks."
+    ],
+    "concept": "Indomethacin (a nonselective COX inhibitor) crosses the placenta and blocks fetal prostaglandin synthesis. Prostaglandins are required to keep the ductus arteriosus open and to maintain fetal renal blood flow, so indomethacin use risks ductal constriction and oligohydramnios (from decreased fetal urine output), especially with use beyond 32 weeks gestation.",
+    "conceptRule": [
+      "Gestational age <32 weeks -> indomethacin generally acceptable for short-term tocolysis with monitoring",
+      "Gestational age >=32 weeks -> avoid indomethacin due to high risk of ductal constriction/closure",
+      "Prolonged use (>48-72 hours) at any gestational age -> monitor amniotic fluid volume for oligohydramnios"
+    ],
+    "discriminator": "Unlike nifedipine or terbutaline (which act on smooth muscle calcium/beta-receptors), indomethacin's fetal risks stem specifically from prostaglandin inhibition affecting the ductus arteriosus and fetal kidneys."
+  },
+  {
+    "id": "ob-pharmacology-21",
+    "system": "Pharmacology",
+    "topic": "Indomethacin gestational age limit",
+    "stem": "A patient at 34 weeks gestation presents in preterm labor. Why is indomethacin not an appropriate tocolytic choice at this gestational age?",
+    "options": [
+      "Maternal renal failure occurs universally when indomethacin is used after 32 weeks",
+      "Indomethacin loses its tocolytic efficacy after 32 weeks gestation",
+      "The drug is teratogenic only in the third trimester",
+      "The fetal ductus arteriosus becomes increasingly sensitive to prostaglandin inhibition after 32 weeks, raising the risk of premature closure",
+      "Indomethacin causes maternal agranulocytosis exclusively in the third trimester"
+    ],
+    "answerIndex": 3,
+    "explanation": "As pregnancy advances, particularly after 32 weeks, the fetal ductus arteriosus becomes more sensitive to prostaglandin inhibition, so indomethacin carries an unacceptable risk of premature ductal closure and is avoided at this gestational age.",
+    "optionRationales": [
+      "Maternal renal failure is not a universal or primary concern; the described risk is fetal, not an inevitable maternal outcome.",
+      "Indomethacin's tocolytic mechanism (COX inhibition reducing uterine prostaglandins) does not lose efficacy with gestational age; the concern is fetal safety, not efficacy.",
+      "Teratogenicity refers to structural malformations from first-trimester exposure; the ductal closure risk is a late-pregnancy functional effect, not teratogenicity.",
+      "Correct: increased fetal ductal sensitivity to prostaglandin inhibition after 32 weeks is the reason indomethacin is avoided at this gestational age, regardless of tocolytic efficacy.",
+      "Agranulocytosis is not a characteristic or gestational-age-specific side effect of indomethacin in this context."
+    ],
+    "concept": "Tocolytic drug choice must account for fetal, not just maternal, risk profiles that change with gestational age. Indomethacin is generally restricted to use before 32 weeks because the fetal ductus arteriosus becomes progressively more responsive to prostaglandin inhibition as gestation advances, increasing the risk of premature closure and secondary pulmonary hypertension.",
+    "conceptRule": [
+      "<32 weeks -> indomethacin may be used short-term (<48-72h) with fluid/ductus monitoring",
+      ">=32 weeks -> avoid indomethacin; consider nifedipine or other tocolytic instead"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-22",
+    "system": "Pharmacology",
+    "topic": "Letrozole vs clomiphene for PCOS",
+    "stem": "Compared with clomiphene citrate, letrozole is now preferred as first-line ovulation induction in women with PCOS primarily because it:",
+    "options": [
+      "Has a longer half-life allowing once-monthly dosing",
+      "Directly increases pituitary FSH receptor sensitivity",
+      "Produces higher live birth rates with less antiestrogenic effect on the endometrium",
+      "Requires no monitoring of ovulation or endometrial thickness",
+      "Eliminates the risk of multiple gestation entirely"
+    ],
+    "answerIndex": 2,
+    "explanation": "Letrozole, an aromatase inhibitor, lowers estrogen without blocking its receptors, avoiding the thin endometrium and adverse cervical mucus effects seen with clomiphene, and studies show improved live birth rates in PCOS.",
+    "optionRationales": [
+      "Letrozole actually has a shorter half-life than clomiphene, which limits peripheral antiestrogenic effects; it is not given for prolonged receptor blockade.",
+      "Letrozole works by inhibiting aromatase to lower estrogen, not by sensitizing FSH receptors.",
+      "Correct: letrozole's short half-life and lack of receptor antagonism spare the endometrium and cervical mucus, and trials (e.g., the Legro NEJM study) showed higher live birth rates in PCOS with letrozole versus clomiphene.",
+      "Ovulation induction with either agent still requires monitoring for response and risk of multiple pregnancy.",
+      "Both agents still carry a risk of multiple gestation, though letrozole's risk is somewhat lower than clomiphene's."
+    ],
+    "concept": "Letrozole (an aromatase inhibitor) has replaced clomiphene as first-line ovulation induction in PCOS because it lowers estrogen production without antagonizing estrogen receptors peripherally, preserving endometrial thickness and cervical mucus quality, and is associated with higher live birth rates in randomized trials.",
+    "discriminator": "Letrozole reduces estrogen synthesis (aromatase inhibition) while clomiphene blocks estrogen receptors, which is why clomiphene—but not letrozole—commonly causes thin endometrium and hostile cervical mucus."
+  },
+  {
+    "id": "ob-pharmacology-23",
+    "system": "Pharmacology",
+    "topic": "Magnesium sulfate indications",
+    "stem": "Besides seizure prophylaxis in preeclampsia/eclampsia, magnesium sulfate is also administered for which additional obstetric indication?",
+    "options": [
+      "Reversal of oxytocin-induced uterine tachysystole",
+      "Treatment of chorioamnionitis",
+      "Fetal neuroprotection when given to mothers in preterm labor before 32 weeks gestation",
+      "Induction of labor at term",
+      "Prevention of postpartum hemorrhage"
+    ],
+    "answerIndex": 2,
+    "explanation": "Antenatal magnesium sulfate given to women in preterm labor before ~32 weeks reduces the risk and severity of cerebral palsy in the neonate, a use known as fetal neuroprotection.",
+    "optionRationales": [
+      "Magnesium is not a standard treatment for tachysystole; interventions include reducing/stopping oxytocin or using terbutaline.",
+      "Chorioamnionitis is treated with antibiotics and delivery, not magnesium sulfate.",
+      "Correct: magnesium sulfate given for fetal neuroprotection prior to anticipated preterm delivery (typically <32 weeks) reduces the risk of cerebral palsy.",
+      "Oxytocin, not magnesium, is used for labor induction; magnesium actually has a tocolytic/uterine-relaxing effect.",
+      "Uterotonics like oxytocin, methylergonovine, or carboprost are used to prevent/treat postpartum hemorrhage, not magnesium."
+    ],
+    "concept": "Magnesium sulfate has two major evidence-based obstetric uses: (1) seizure prophylaxis/treatment in preeclampsia with severe features or eclampsia, and (2) fetal neuroprotection when given to women at risk of imminent preterm delivery before approximately 32 weeks, which reduces the incidence and severity of cerebral palsy.",
+    "discriminator": "Unlike its anticonvulsant use tied to blood pressure/seizure risk, the neuroprotection indication is tied to gestational age and imminent preterm birth risk, independent of preeclampsia status."
+  },
+  {
+    "id": "ob-pharmacology-24",
+    "system": "Pharmacology",
+    "topic": "Magnesium sulfate mechanism",
+    "stem": "Magnesium sulfate reduces neuromuscular excitability and seizure risk in preeclampsia primarily through which mechanism?",
+    "options": [
+      "Inhibition of cyclooxygenase and prostaglandin synthesis",
+      "Potentiation of GABA-A receptor chloride channels",
+      "Beta-2 adrenergic receptor agonism causing smooth muscle relaxation",
+      "Blockade of voltage-gated sodium channels in neuronal membranes",
+      "Competitive antagonism of calcium at the neuromuscular junction and NMDA receptors, decreasing acetylcholine release"
+    ],
+    "answerIndex": 4,
+    "explanation": "Magnesium acts as a physiologic calcium antagonist, blocking calcium influx at the presynaptic neuromuscular junction and NMDA receptors, which reduces acetylcholine release and neuronal excitability.",
+    "optionRationales": [
+      "COX inhibition describes NSAIDs like indomethacin, unrelated to magnesium's anticonvulsant action.",
+      "GABA-A potentiation describes benzodiazepines and barbiturates, not magnesium.",
+      "Beta-2 agonism describes terbutaline's tocolytic mechanism, not magnesium's.",
+      "Sodium channel blockade describes drugs like phenytoin or local anesthetics, not magnesium's primary mechanism.",
+      "Correct: magnesium competes with calcium at the neuromuscular junction and NMDA glutamate receptors, decreasing excitatory neurotransmission."
+    ],
+    "concept": "Magnesium sulfate is a physiologic calcium channel antagonist that decreases presynaptic acetylcholine release and blocks NMDA receptor-mediated excitotoxicity, explaining both its tocolytic and anticonvulsant effects. This distinct mechanism (rather than GABA or sodium channel effects) is why it is preferred over standard antiepileptics in eclampsia."
+  },
+  {
+    "id": "ob-pharmacology-25",
+    "system": "Pharmacology",
+    "topic": "Magnesium toxicity monitoring",
+    "stem": "A woman on IV magnesium sulfate for preeclampsia is found to have absent patellar (deep tendon) reflexes on routine check, though she is still breathing normally. Which is the most appropriate next step?",
+    "options": [
+      "Intubate immediately for anticipated respiratory arrest",
+      "Stop the magnesium infusion and give IV calcium gluconate",
+      "Switch to IV phenytoin for seizure prophylaxis",
+      "Continue the infusion at the same rate and recheck reflexes in 4 hours",
+      "Increase the magnesium infusion rate to achieve therapeutic seizure prophylaxis"
+    ],
+    "answerIndex": 1,
+    "explanation": "Loss of deep tendon reflexes is an early sign of magnesium toxicity (occurring before respiratory depression); the infusion should be stopped and calcium gluconate given as the antidote.",
+    "optionRationales": [
+      "Intubation is reserved for actual respiratory depression/arrest, not for isolated loss of reflexes; toxicity should be reversed first.",
+      "Correct: loss of DTRs signals rising magnesium levels, so the infusion is stopped and calcium gluconate (which antagonizes magnesium at the neuromuscular junction) is given.",
+      "Phenytoin is not used for eclampsia prophylaxis and does not address existing magnesium toxicity.",
+      "Continuing unchanged risks progression to respiratory depression and cardiac arrest as magnesium levels climb further.",
+      "Increasing the dose would worsen toxicity, not improve seizure prophylaxis safely."
+    ],
+    "concept": "Magnesium toxicity progresses in a predictable order as serum levels rise: loss of deep tendon reflexes occurs first (~9-12 mg/dL), followed by respiratory depression (~12-18 mg/dL), then cardiac arrest (>24-30 mg/dL). Reflexes are checked serially as a bedside surrogate for serum level. Calcium gluconate is the antidote because it competes with magnesium at the neuromuscular junction.",
+    "conceptRule": [
+      "Loss of patellar (deep tendon) reflexes -> stop infusion, check level, give IV calcium gluconate",
+      "Respiratory depression/decreased respiratory rate -> stop infusion, give calcium gluconate, support ventilation",
+      "Cardiac arrest -> aggressive resuscitation, calcium gluconate"
+    ],
+    "discriminator": "Unlike phenytoin or benzodiazepines, magnesium's toxicity is monitored clinically via reflexes and respiratory rate rather than by a narrow therapeutic drug level alone."
+  },
+  {
+    "id": "ob-pharmacology-26",
+    "system": "Pharmacology",
+    "topic": "Magnesium vs antiepileptics for eclampsia",
+    "stem": "In a randomized trial comparing seizure prophylaxis agents in preeclampsia, magnesium sulfate was superior to phenytoin for preventing eclamptic seizures. What best explains why magnesium, rather than a standard antiepileptic like phenytoin, is the drug of choice for eclampsia prophylaxis?",
+    "options": [
+      "Magnesium sulfate treats the underlying vasospasm of preeclampsia while phenytoin has no antihypertensive effect, making it the preferred choice for that reason alone",
+      "Magnesium has demonstrated superior efficacy in preventing eclamptic seizures with a favorable maternal-fetal safety profile compared to phenytoin",
+      "Magnesium sulfate has a longer half-life allowing once-daily oral dosing",
+      "Phenytoin is absolutely contraindicated in all pregnant patients regardless of indication",
+      "Phenytoin causes more severe hypotension than magnesium when given intravenously"
+    ],
+    "answerIndex": 1,
+    "explanation": "Randomized trial data (e.g., Lucas et al., NEJM 1995) established magnesium sulfate as more effective than phenytoin at reducing eclamptic seizures, with an acceptable safety profile, making it the evidence-based standard of care.",
+    "optionRationales": [
+      "While magnesium does have some vasodilatory/tocolytic properties, the primary evidence-based reason for its selection is superior seizure-prevention efficacy demonstrated in trials, not its antihypertensive action.",
+      "Correct: head-to-head trial data show magnesium is more effective than phenytoin for eclampsia seizure prevention, which is why it is the standard rather than a class effect of 'antiepileptics.'",
+      "Magnesium is given as a continuous IV infusion (not once-daily oral dosing) during acute management of preeclampsia/eclampsia.",
+      "Phenytoin is not absolutely contraindicated in pregnancy (it is used for other seizure disorders); the issue is comparative efficacy for eclampsia specifically, not an absolute contraindication.",
+      "Hypotension is not the key differentiating factor cited in trials comparing these agents for eclampsia prophylaxis."
+    ],
+    "concept": "Magnesium sulfate, not phenytoin or other conventional antiepileptics, is the evidence-based agent for eclampsia seizure prophylaxis and treatment, based on randomized trial data (including Lucas et al., NEJM 1995, comparing magnesium sulfate with phenytoin) showing superior seizure prevention. Its mechanism (calcium antagonism/NMDA blockade) differs fundamentally from GABAergic or sodium-channel-based antiepileptics.",
+    "discriminator": "Phenytoin and benzodiazepines act via sodium channel blockade or GABA potentiation and were shown in trials to be inferior to magnesium specifically for eclamptic seizure prevention."
+  },
+  {
+    "id": "ob-pharmacology-27",
+    "system": "Pharmacology",
+    "topic": "Menopausal hormone therapy: unopposed estrogen",
+    "stem": "A 52-year-old woman with an intact uterus wants hormone therapy for hot flashes. Which regimen is contraindicated because of increased cancer risk?",
+    "options": [
+      "Combined continuous estrogen plus progestin",
+      "Estrogen alone without a progestin",
+      "Low-dose vaginal estrogen cream",
+      "Combined oral estrogen-progestin taken cyclically",
+      "Transdermal estradiol with cyclic progestin"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unopposed estrogen in a woman with an intact uterus causes endometrial hyperplasia and significantly increases endometrial cancer risk; a progestin must always be added to protect the endometrium.",
+    "optionRationales": [
+      "Adding a progestin opposes the estrogen's proliferative effect on the endometrium and is the standard, safe regimen for women with a uterus.",
+      "Correct: estrogen alone stimulates endometrial proliferation unchecked, markedly raising endometrial cancer risk in women who have not had a hysterectomy.",
+      "Low-dose vaginal estrogen has minimal systemic absorption and is not associated with significant endometrial stimulation.",
+      "Cyclic combined regimens also include a progestin and are endometrium-protective.",
+      "Cyclic progestin combined with estrogen protects the endometrium and is an accepted regimen."
+    ],
+    "concept": "In women with an intact uterus, estrogen therapy must always be combined with a progestin to prevent endometrial hyperplasia and cancer; estrogen-only therapy is reserved for women who have had a hysterectomy.",
+    "conceptRule": [
+      "Intact uterus -> estrogen + progestin (combined therapy)",
+      "Prior hysterectomy -> estrogen alone is acceptable"
+    ],
+    "discriminator": "Women without a uterus can safely receive estrogen alone, and in the Women's Health Initiative this group actually showed a trend toward reduced breast cancer risk compared with combined therapy."
+  },
+  {
+    "id": "ob-pharmacology-28",
+    "system": "Pharmacology",
+    "topic": "Metformin in PCOS",
+    "stem": "In a woman with PCOS and insulin resistance, metformin improves ovulatory function primarily by which mechanism?",
+    "options": [
+      "Stimulating pituitary FSH secretion directly",
+      "Directly inhibiting ovarian aromatase activity",
+      "Decreasing hepatic gluconeogenesis and peripheral insulin resistance, lowering hyperinsulinemia-driven ovarian androgen production",
+      "Inhibiting 5-alpha reductase conversion of testosterone to DHT",
+      "Blocking androgen receptors in hair follicles"
+    ],
+    "answerIndex": 2,
+    "explanation": "Metformin reduces hepatic glucose output and improves peripheral insulin sensitivity; lowering hyperinsulinemia decreases insulin-stimulated ovarian theca cell androgen production, which can help restore ovulation.",
+    "optionRationales": [
+      "Metformin does not directly stimulate FSH secretion; its ovulatory benefit is indirect via improved insulin sensitivity.",
+      "Metformin does not act on aromatase; that is letrozole's mechanism.",
+      "Correct: metformin's insulin-sensitizing effect reduces the hyperinsulinemia that drives excess ovarian androgen synthesis and disrupts folliculogenesis in PCOS.",
+      "5-alpha reductase inhibition describes finasteride, not metformin.",
+      "Metformin does not block androgen receptors; that describes agents like spironolactone."
+    ],
+    "concept": "Metformin is an insulin-sensitizing biguanide used as an adjunct in PCOS management, particularly in insulin-resistant patients. By reducing hyperinsulinemia, it lowers insulin-driven ovarian androgen production, which can improve menstrual regularity and ovulation, but it is less effective than letrozole as a primary ovulation-induction agent.",
+    "discriminator": "Metformin treats the underlying insulin resistance driving anovulation in PCOS, whereas letrozole and clomiphene act more directly on the hypothalamic-pituitary-ovarian axis to trigger ovulation."
+  },
+  {
+    "id": "ob-pharmacology-29",
+    "system": "Pharmacology",
+    "topic": "Methotrexate contraindications for ectopic",
+    "stem": "Which finding is an absolute contraindication to methotrexate therapy for ectopic pregnancy?",
+    "options": [
+      "Absence of fetal cardiac activity on ultrasound",
+      "Serum creatinine within normal limits",
+      "Ectopic mass size of 2 cm on ultrasound",
+      "Evidence of ruptured ectopic with hemoperitoneum and hemodynamic instability",
+      "Initial beta-hCG level of 3,000 mIU/mL"
+    ],
+    "answerIndex": 3,
+    "explanation": "Ruptured ectopic pregnancy with hemodynamic instability is an absolute contraindication to methotrexate; it requires immediate surgical intervention, not medical therapy.",
+    "optionRationales": [
+      "Absent cardiac activity is actually a favorable prognostic factor for methotrexate success, not a contraindication.",
+      "Normal renal function is required (not contraindicated) since methotrexate is renally cleared; abnormal creatinine would be the contraindication.",
+      "A small mass size (typically <3.5-4 cm) favors methotrexate success rather than contraindicating it.",
+      "Correct — hemodynamic instability from rupture is a surgical emergency and an absolute contraindication to medical management.",
+      "A beta-hCG of 3,000 is well within the favorable range for methotrexate success, not a contraindication."
+    ],
+    "concept": "Methotrexate for ectopic pregnancy is reserved for hemodynamically stable patients with an unruptured ectopic mass, no fetal cardiac activity is favorable, and relatively low hCG/mass size predict success. Absolute contraindications include hemodynamic instability/rupture, breastfeeding, immunodeficiency, hepatic/renal/hematologic disease, active pulmonary disease, and peptic ulcer disease.",
+    "conceptRule": [
+      "Ruptured ectopic/hemodynamic instability -> absolute contraindication, go to surgery",
+      "Beta-hCG > ~5,000 mIU/mL or mass > 3.5-4 cm with cardiac activity -> relative contraindication, lower success rate"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-30",
+    "system": "Pharmacology",
+    "topic": "Methotrexate mechanism for ectopic",
+    "stem": "Methotrexate is effective in the medical management of an unruptured ectopic pregnancy because of which mechanism?",
+    "options": [
+      "Induction of apoptosis via topoisomerase II inhibition",
+      "Competitive antagonism of progesterone receptors",
+      "Direct cytolysis of trophoblastic tissue via complement activation",
+      "Inhibition of hCG receptor binding",
+      "Inhibition of dihydrofolate reductase, blocking DNA synthesis in rapidly dividing trophoblastic cells"
+    ],
+    "answerIndex": 4,
+    "explanation": "Methotrexate is a folate antagonist that inhibits dihydrofolate reductase, blocking purine/thymidylate synthesis and halting DNA replication in rapidly dividing trophoblastic cells.",
+    "optionRationales": [
+      "Topoisomerase II inhibition describes drugs like etoposide, not methotrexate.",
+      "Progesterone receptor antagonism describes mifepristone's mechanism, not methotrexate's.",
+      "Methotrexate does not act via complement-mediated cytolysis.",
+      "Methotrexate does not block hCG receptor binding; falling hCG levels reflect trophoblastic cell death, not receptor blockade.",
+      "Correct — methotrexate is an antifolate that inhibits dihydrofolate reductase, arresting DNA synthesis in the rapidly proliferating trophoblast."
+    ],
+    "concept": "Methotrexate is a folic acid antagonist that inhibits dihydrofolate reductase, depleting reduced folate cofactors needed for purine and thymidylate synthesis. This selectively impairs rapidly dividing cells such as trophoblast, making it effective for medical management of early, unruptured, hemodynamically stable ectopic pregnancy.",
+    "conceptRule": [
+      "Antifolate mechanism -> rapidly dividing trophoblast most affected -> effective in early unruptured ectopic"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-31",
+    "system": "Pharmacology",
+    "topic": "Methotrexate monitoring for ectopic",
+    "stem": "After single-dose methotrexate therapy for ectopic pregnancy, which laboratory parameter is monitored to confirm treatment success?",
+    "options": [
+      "Serial beta-hCG levels on days 4 and 7, expecting at least a 15% decline between them",
+      "Serial serum progesterone levels weekly until zero",
+      "Serial pelvic ultrasounds daily until the mass resolves",
+      "Serial complete blood counts every 6 hours",
+      "Urine pregnancy test converting to negative within 48 hours"
+    ],
+    "answerIndex": 0,
+    "explanation": "Treatment success after single-dose methotrexate is assessed by comparing beta-hCG on day 4 and day 7; a decline of at least 15% between these values indicates adequate response, after which weekly hCG is followed until undetectable.",
+    "optionRationales": [
+      "Correct — the standard protocol checks beta-hCG on days 4 and 7, requiring a ≥15% drop to confirm response before continuing weekly monitoring.",
+      "Progesterone is not used to monitor methotrexate response for ectopic pregnancy.",
+      "Ultrasound is not the primary monitoring tool for treatment response; hCG trend is used, and the mass may persist despite successful treatment.",
+      "Serial CBCs are not the monitoring standard for treatment response, though baseline labs are checked before dosing.",
+      "A urine pregnancy test remains positive for weeks after successful treatment since hCG declines slowly; it is not the monitoring method used."
+    ],
+    "concept": "After single-dose methotrexate for ectopic pregnancy, beta-hCG is measured on days 4 and 7 post-treatment; failure to decline by at least 15% between these values indicates treatment failure and may prompt a repeat dose or surgical management. Once an adequate decline is confirmed, weekly hCG monitoring continues until the level is undetectable.",
+    "conceptRule": [
+      "Day 4 to day 7 hCG decline <15% -> treatment failure, consider repeat MTX dose or surgery",
+      "Day 4 to day 7 hCG decline >=15% -> continue weekly hCG monitoring until undetectable"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-32",
+    "system": "Pharmacology",
+    "topic": "Methylergonovine contraindication",
+    "stem": "Which of the following is a contraindication to using methylergonovine for postpartum hemorrhage due to uterine atony?",
+    "options": [
+      "Diabetes mellitus",
+      "Hypothyroidism",
+      "Peptic ulcer disease",
+      "Asthma",
+      "Chronic hypertension"
+    ],
+    "answerIndex": 4,
+    "explanation": "Methylergonovine is an ergot alkaloid that causes generalized vasoconstriction and can precipitate severe hypertension, so it is contraindicated in patients with hypertension or preeclampsia.",
+    "optionRationales": [
+      "Diabetes is not a contraindication to methylergonovine.",
+      "Hypothyroidism does not contraindicate methylergonovine use.",
+      "Peptic ulcer disease is not a specific contraindication to methylergonovine.",
+      "Asthma is a contraindication to carboprost (a prostaglandin F2-alpha analog), not methylergonovine.",
+      "Correct — methylergonovine's vasoconstrictive effect can cause dangerous hypertensive crisis and is contraindicated in hypertensive patients."
+    ],
+    "concept": "Methylergonovine is an ergot alkaloid uterotonic used for postpartum hemorrhage from atony. Its generalized vasoconstrictive activity makes it contraindicated in hypertension, preeclampsia, and cardiovascular disease because of the risk of severe hypertension, stroke, or myocardial infarction.",
+    "conceptRule": [
+      "Hypertension/preeclampsia -> avoid methylergonovine (vasoconstriction risk)"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-33",
+    "system": "Pharmacology",
+    "topic": "MHT risks: VTE and breast cancer",
+    "stem": "Which risk is most specifically increased by adding a progestin to estrogen in menopausal hormone therapy, based on Women's Health Initiative data?",
+    "options": [
+      "Venous thromboembolism risk, which occurs only with combined therapy and not estrogen alone",
+      "Endometrial cancer risk, compared with estrogen alone",
+      "Breast cancer risk, compared with estrogen alone",
+      "Ovarian cancer risk, which is unique to combined therapy",
+      "Stroke risk, which occurs only with combined therapy and not estrogen alone"
+    ],
+    "answerIndex": 2,
+    "explanation": "WHI data showed combined estrogen-progestin therapy increased breast cancer risk compared with estrogen alone, whereas estrogen alone did not show the same increase (and showed a trend toward decreased risk) in hysterectomized women.",
+    "optionRationales": [
+      "VTE risk is increased by estrogen itself (oral route in particular) and is not specific to adding a progestin; estrogen-alone therapy also increases VTE risk.",
+      "Progestin is added specifically to reduce, not increase, endometrial cancer risk compared with unopposed estrogen.",
+      "Correct: the added progestin component is specifically linked to increased breast cancer risk beyond that seen with estrogen alone.",
+      "MHT is not established to specifically increase ovarian cancer risk in this comparative fashion.",
+      "Stroke risk is increased by estrogen-containing therapy generally, not specifically attributable to the progestin component."
+    ],
+    "concept": "Menopausal hormone therapy carries increased risks of VTE and stroke attributable mainly to the estrogen component, while the addition of a progestin (needed for endometrial protection) is the factor most associated with increased breast cancer risk in WHI combined-therapy data.",
+    "discriminator": "This contrasts with unopposed estrogen therapy, which raises endometrial cancer risk but was not associated with the same increase in breast cancer risk seen with combined regimens."
+  },
+  {
+    "id": "ob-pharmacology-34",
+    "system": "Pharmacology",
+    "topic": "Mifepristone mechanism",
+    "stem": "Mifepristone terminates early pregnancy primarily through which mechanism?",
+    "options": [
+      "Inhibition of prostaglandin synthase, lowering endogenous prostaglandin levels",
+      "Competitive antagonism at progesterone receptors, disrupting decidual support of the pregnancy",
+      "Cytotoxic effect on trophoblast cells",
+      "Suppression of hypothalamic GnRH pulsatility",
+      "Direct oxytocic stimulation of myometrial contractions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mifepristone is a progesterone (and glucocorticoid) receptor antagonist; blocking progesterone action destabilizes the decidua and cervix, priming the uterus for expulsion, typically followed by misoprostol.",
+    "optionRationales": [
+      "Incorrect: mifepristone does not inhibit prostaglandin synthase; if anything it sensitizes the uterus to prostaglandins.",
+      "Correct: mifepristone blocks the progesterone receptor, withdrawing progesterone support of the pregnancy.",
+      "Incorrect: it is a receptor antagonist, not a cytotoxic agent.",
+      "Incorrect: mifepristone acts on peripheral progesterone receptors, not hypothalamic GnRH secretion.",
+      "Incorrect: mifepristone itself has little direct contractile effect; misoprostol provides the uterotonic action."
+    ],
+    "concept": "Mifepristone is a progesterone-receptor antagonist that destabilizes the decidua and softens/dilates the cervix; it is given first in medical abortion regimens, followed 24-48 hours later by misoprostol to induce uterine contractions and expulsion.",
+    "discriminator": "Mifepristone primes the uterus by removing progesterone support; misoprostol is the agent that actually triggers contractions."
+  },
+  {
+    "id": "ob-pharmacology-35",
+    "system": "Pharmacology",
+    "topic": "Misoprostol uses",
+    "stem": "A prostaglandin E1 analog used for cervical ripening, labor induction, medical abortion, and treatment of postpartum hemorrhage is:",
+    "options": [
+      "Nifedipine",
+      "Misoprostol",
+      "Carboprost tromethamine",
+      "Terbutaline",
+      "Methylergonovine"
+    ],
+    "answerIndex": 1,
+    "explanation": "Misoprostol (PGE1 analog) is inexpensive, heat-stable, and versatile: cervical ripening/induction, medical abortion (with mifepristone), and PPH treatment (off-label, can be used even with asthma unlike carboprost).",
+    "optionRationales": [
+      "Incorrect: nifedipine is a calcium channel blocker tocolytic, not a uterotonic/ripening agent.",
+      "Correct: misoprostol's broad utility across ripening, abortion, and PPH is a hallmark exam fact.",
+      "Incorrect: carboprost (PGF2alpha analog) treats PPH but is contraindicated in asthma and not used for ripening/abortion in the same standard way as misoprostol.",
+      "Incorrect: terbutaline is a beta-agonist tocolytic, the opposite clinical use.",
+      "Incorrect: methylergonovine is an ergot alkaloid used only for PPH, contraindicated in hypertension."
+    ],
+    "concept": "Misoprostol is a versatile PGE1 analog: it ripens the cervix and induces labor, is combined with mifepristone for medical abortion, and treats postpartum hemorrhage. Unlike carboprost, it is safe to use in patients with asthma.",
+    "discriminator": "Misoprostol is asthma-safe and multi-indication; carboprost (PGF2alpha) is PPH-only and contraindicated in asthma."
+  },
+  {
+    "id": "ob-pharmacology-36",
+    "system": "Pharmacology",
+    "topic": "Nifedipine mechanism and use",
+    "stem": "Nifedipine is used both as a tocolytic in preterm labor and for acute treatment of severe hypertension in pregnancy. What is its mechanism of action?",
+    "options": [
+      "Inhibits prostaglandin synthesis via cyclooxygenase blockade",
+      "Blocks oxytocin receptors on the uterus",
+      "Blocks L-type calcium channels in vascular and uterine smooth muscle, causing relaxation",
+      "Stimulates beta-2 adrenergic receptors on the myometrium",
+      "Competitively antagonizes calcium at the neuromuscular junction"
+    ],
+    "answerIndex": 2,
+    "explanation": "Nifedipine is a dihydropyridine calcium channel blocker that inhibits L-type calcium channels, relaxing both vascular smooth muscle (lowering blood pressure) and uterine smooth muscle (tocolysis).",
+    "optionRationales": [
+      "Cyclooxygenase inhibition describes indomethacin's mechanism, not nifedipine's.",
+      "Oxytocin receptor blockade describes atosiban (not available in the US), not nifedipine.",
+      "Correct: nifedipine blocks L-type calcium channels, decreasing intracellular calcium entry and relaxing smooth muscle in both vasculature and myometrium.",
+      "Beta-2 receptor stimulation describes terbutaline, a different class of tocolytic.",
+      "Calcium antagonism at the neuromuscular junction describes magnesium sulfate's mechanism, not nifedipine's."
+    ],
+    "concept": "Nifedipine, a dihydropyridine calcium channel blocker, relaxes smooth muscle by blocking L-type calcium channels, giving it dual utility as a tocolytic (relaxing myometrium) and as an antihypertensive (relaxing vascular smooth muscle) in pregnancy.",
+    "discriminator": "Unlike indomethacin (COX inhibition) or terbutaline (beta-agonism), nifedipine's smooth muscle relaxation comes from direct calcium channel blockade, giving it a different side-effect profile (reflex tachycardia, flushing, headache from vasodilation)."
+  },
+  {
+    "id": "ob-pharmacology-37",
+    "system": "Pharmacology",
+    "topic": "Nifedipine side effects",
+    "stem": "A pregnant patient started on oral nifedipine for tocolysis reports flushing, headache, and palpitations shortly after each dose. These side effects are best explained by which pharmacologic effect?",
+    "options": [
+      "Prostaglandin-mediated closure of the ductus arteriosus",
+      "Magnesium-induced neuromuscular blockade",
+      "Direct cardiac beta-1 receptor stimulation",
+      "Reflex tachycardia and cutaneous vasodilation from peripheral calcium channel blockade",
+      "Anticholinergic effects causing tachycardia and dry flushing"
+    ],
+    "answerIndex": 3,
+    "explanation": "Nifedipine's peripheral vasodilation (from blocking calcium channels in vascular smooth muscle) triggers reflex sympathetic activation, causing flushing, headache, and palpitations/tachycardia.",
+    "optionRationales": [
+      "Ductus arteriosus closure is a fetal effect of indomethacin, unrelated to maternal flushing/headache from nifedipine.",
+      "These symptoms are not related to magnesium, which was not the drug described in this scenario.",
+      "Nifedipine does not directly stimulate beta-1 receptors; its cardiovascular effects are due to vasodilation and reflex sympathetic response.",
+      "Correct: vasodilation from calcium channel blockade lowers peripheral resistance, triggering baroreceptor-mediated reflex tachycardia and causing flushing/headache.",
+      "Nifedipine is not an anticholinergic agent; its side effects stem from vasodilation, not muscarinic receptor blockade."
+    ],
+    "concept": "Dihydropyridine calcium channel blockers like nifedipine cause peripheral vasodilation, which is the basis for common side effects: flushing, headache, and reflex tachycardia/palpitations. These are expected pharmacologic effects, not signs of toxicity, though significant maternal hypotension should be monitored for."
+  },
+  {
+    "id": "ob-pharmacology-38",
+    "system": "Pharmacology",
+    "topic": "Oxytocin mechanism and use",
+    "stem": "Oxytocin used for labor induction and augmentation acts primarily by which mechanism?",
+    "options": [
+      "Blocking prostaglandin synthesis to soften the cervix",
+      "Stimulating beta-2 adrenergic receptors on the myometrium",
+      "Binding myometrial oxytocin receptors to increase intracellular calcium and stimulate rhythmic uterine contraction",
+      "Inhibiting acetylcholinesterase at the neuromuscular junction",
+      "Directly activating prostaglandin E2 receptors on the cervix"
+    ],
+    "answerIndex": 2,
+    "explanation": "Oxytocin binds G-protein-coupled oxytocin receptors on myometrial cells, raising intracellular calcium and triggering coordinated, rhythmic uterine contractions.",
+    "optionRationales": [
+      "Prostaglandins (e.g., misoprostol, dinoprostone) ripen the cervix; that is not oxytocin's mechanism.",
+      "Beta-2 agonists (e.g., terbutaline) relax, not contract, the myometrium.",
+      "Correct — oxytocin receptor binding raises intracellular calcium, producing coordinated myometrial contraction.",
+      "This describes drugs like neostigmine used for reversal of neuromuscular blockade, unrelated to oxytocin.",
+      "Oxytocin does not act on prostaglandin receptors; its receptor is distinct."
+    ],
+    "concept": "Oxytocin is a nonapeptide hormone released from the posterior pituitary that binds myometrial oxytocin receptors, which increase in density as pregnancy progresses. It is the mainstay agent for labor induction/augmentation and for prevention/treatment of postpartum hemorrhage.",
+    "conceptRule": [
+      "Oxytocin receptors upregulate near term -> uterus becomes increasingly sensitive to oxytocin as labor approaches"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-39",
+    "system": "Pharmacology",
+    "topic": "Oxytocin toxicity",
+    "stem": "A patient receiving a prolonged high-dose oxytocin infusion for labor augmentation develops seizures and is found to be hyponatremic. What is the mechanism underlying this complication?",
+    "options": [
+      "Oxytocin has structural similarity to antidiuretic hormone and produces an ADH-like effect causing free water retention",
+      "Oxytocin causes profound vomiting leading to sodium loss",
+      "Oxytocin directly depletes serum sodium through renal wasting",
+      "Oxytocin causes third-spacing of sodium into the amniotic fluid",
+      "Oxytocin triggers SIADH via direct pituitary stimulation of ADH release"
+    ],
+    "answerIndex": 0,
+    "explanation": "Oxytocin is structurally similar to vasopressin (ADH) and, especially with large volumes of dilute IV fluid, can produce an antidiuretic effect leading to water intoxication and dilutional hyponatremia.",
+    "optionRationales": [
+      "Correct — oxytocin's structural homology to ADH gives it intrinsic antidiuretic activity, causing water retention and dilutional hyponatremia at high doses/prolonged infusion.",
+      "Vomiting is not the mechanism of oxytocin-associated hyponatremia.",
+      "The mechanism is water retention/dilution, not direct renal sodium wasting.",
+      "Sodium is diluted in the vascular space, not shifted into amniotic fluid.",
+      "Oxytocin itself has direct antidiuretic activity; it does not require stimulating separate ADH release."
+    ],
+    "concept": "Oxytocin and antidiuretic hormone (ADH) are structurally related nonapeptides synthesized in the hypothalamus. At high doses, oxytocin exerts a weak but clinically significant antidiuretic effect, and prolonged infusions with large volumes of hypotonic fluid can cause water intoxication, hyponatremia, and seizures.",
+    "conceptRule": [
+      "Prolonged high-dose oxytocin + hypotonic IV fluids -> water intoxication/hyponatremia -> use isotonic fluids and limit total dose/duration"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-40",
+    "system": "Pharmacology",
+    "topic": "Oxytocin-induced tachysystole",
+    "stem": "During oxytocin augmentation of labor, the fetal monitor shows more than 5 contractions in 10 minutes with recurrent late decelerations. What is the most appropriate immediate pharmacologic step?",
+    "options": [
+      "Increase the oxytocin infusion rate to complete labor faster",
+      "Administer intravenous methylergonovine",
+      "Discontinue or decrease the oxytocin infusion",
+      "Start a magnesium sulfate infusion for neuroprotection",
+      "Administer misoprostol to augment further"
+    ],
+    "answerIndex": 2,
+    "explanation": "Tachysystole with a nonreassuring fetal heart tracing from oxytocin is managed by stopping or reducing the infusion, since oxytocin has a short half-life and effects resolve quickly once discontinued.",
+    "optionRationales": [
+      "Increasing the dose would worsen tachysystole and fetal compromise.",
+      "Methylergonovine is a postpartum uterotonic for atony, not used to manage tachysystole during labor, and would worsen contraction frequency.",
+      "Correct — decreasing or stopping oxytocin is first-line since its short half-life allows rapid resolution of excessive uterine activity.",
+      "Magnesium for neuroprotection is unrelated to managing tachysystole in this setting.",
+      "Misoprostol would further stimulate the uterus and worsen tachysystole."
+    ],
+    "concept": "Oxytocin has a short plasma half-life (~3-6 minutes), so uterine tachysystole caused by an oxytocin infusion typically resolves quickly after the infusion is decreased or stopped, distinguishing it pharmacokinetically from longer-acting uterotonics.",
+    "discriminator": "Unlike misoprostol or methylergonovine, oxytocin's effect can be titrated and rapidly reversed by stopping the infusion because of its short half-life."
+  },
+  {
+    "id": "ob-pharmacology-41",
+    "system": "Pharmacology",
+    "topic": "Paroxetine in pregnancy",
+    "stem": "Which SSRI is preferably avoided in the first trimester of pregnancy due to an associated increased risk of fetal cardiac malformations?",
+    "options": [
+      "Paroxetine",
+      "Citalopram",
+      "Escitalopram",
+      "Fluoxetine",
+      "Sertraline"
+    ],
+    "answerIndex": 0,
+    "explanation": "Paroxetine has been associated with a small increased risk of fetal cardiac defects (particularly septal defects) when used in the first trimester and is generally avoided in favor of other SSRIs in pregnancy.",
+    "optionRationales": [
+      "Correct: paroxetine carries the strongest signal among SSRIs for first-trimester cardiac teratogenicity and is generally avoided in pregnancy.",
+      "Citalopram does not carry the specific cardiac teratogenicity signal associated with paroxetine.",
+      "Escitalopram does not carry the specific cardiac teratogenicity signal associated with paroxetine.",
+      "Fluoxetine is not specifically linked to cardiac malformation risk and is commonly used in pregnancy when indicated.",
+      "Sertraline is considered one of the preferred SSRIs in pregnancy given its more favorable safety data."
+    ],
+    "concept": "While SSRIs as a class are not major teratogens, paroxetine is the one most consistently associated with a small increase in fetal cardiac septal defects when taken in the first trimester, so clinicians generally choose sertraline or another SSRI when treating depression in pregnancy.",
+    "discriminator": "Sertraline is often favored in pregnancy and lactation due to low placental transfer and low levels in breast milk, contrasting with paroxetine's cardiac risk signal."
+  },
+  {
+    "id": "ob-pharmacology-42",
+    "system": "Pharmacology",
+    "topic": "PPH uterotonic first-line choice",
+    "stem": "Which uterotonic agent is recommended as first-line therapy for both prevention and initial treatment of postpartum hemorrhage due to uterine atony?",
+    "options": [
+      "Carboprost tromethamine",
+      "Methylergonovine",
+      "Tranexamic acid",
+      "Misoprostol",
+      "Oxytocin"
+    ],
+    "answerIndex": 4,
+    "explanation": "Oxytocin is the first-line uterotonic for both prophylaxis and treatment of postpartum hemorrhage due to its rapid onset, favorable side-effect profile, and low cost.",
+    "optionRationales": [
+      "Carboprost is reserved as a second/third-line agent for refractory atony given its side-effect profile.",
+      "Methylergonovine is second-line, limited by hypertension risk.",
+      "Tranexamic acid is an adjunct antifibrinolytic, not a uterotonic, and is added when hemorrhage continues despite uterotonics.",
+      "Misoprostol is a reasonable alternative, especially where IV access or refrigeration is limited, but it is not first-line when oxytocin is available.",
+      "Correct — oxytocin is the standard first-line uterotonic for active management of the third stage of labor and initial PPH treatment."
+    ],
+    "concept": "Active management of the third stage of labor with prophylactic oxytocin reduces the incidence of postpartum hemorrhage. When atony causes PPH, oxytocin remains first-line, with methylergonovine, carboprost, and misoprostol reserved as second-line agents chosen based on contraindications (hypertension, asthma, respectively).",
+    "conceptRule": [
+      "Atony PPH -> oxytocin first-line; if refractory, choose second-line agent based on contraindications (avoid methylergonovine in HTN, carboprost in asthma)"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-43",
+    "system": "Pharmacology",
+    "topic": "Progestin-only pill",
+    "stem": "Compared to combined oral contraceptives, the progestin-only pill ('minipill') is preferred in which clinical situation because of its pharmacologic profile?",
+    "options": [
+      "Women with a history of estrogen-responsive migraine without aura who want minimal headache risk difference",
+      "Women seeking maximal ovulation suppression as the primary mechanism",
+      "Breastfeeding women, because it does not suppress milk production the way estrogen can",
+      "Women desiring a highly predictable, regular monthly bleeding pattern",
+      "Women who have difficulty with strict daily dosing timing"
+    ],
+    "answerIndex": 2,
+    "explanation": "Progestin-only pills lack estrogen, which can otherwise suppress lactation, making them the preferred oral contraceptive choice for breastfeeding women; they must be taken at the same time daily (narrow window) since ovulation suppression is inconsistent.",
+    "optionRationales": [
+      "Incorrect: while it avoids estrogen entirely, it is not specifically indicated for migraine without aura over other options; combined pills are already acceptable in that scenario.",
+      "Incorrect: unlike DMPA or implants, the progestin-only pill does not reliably suppress ovulation in all users; its primary contraceptive effect is thickening cervical mucus.",
+      "Correct: avoiding estrogen preserves milk supply, making the minipill the preferred oral option while breastfeeding.",
+      "Incorrect: progestin-only pills are notorious for irregular, unpredictable bleeding, not regular monthly cycles.",
+      "Incorrect: the minipill requires strict same-time daily dosing (within a narrow window, e.g. 3 hours) to maintain effectiveness, making it less forgiving of timing than combined pills."
+    ],
+    "concept": "The progestin-only pill avoids estrogen's suppressive effect on lactation, making it the preferred oral contraceptive during breastfeeding. Its main mechanism is thickening cervical mucus rather than consistent ovulation suppression, so it requires strict, consistent daily timing to remain effective.",
+    "discriminator": "Minipills spare lactation (no estrogen) but demand stricter timing than combined pills, whose forgiveness window is longer."
+  },
+  {
+    "id": "ob-pharmacology-44",
+    "system": "Pharmacology",
+    "topic": "RhoGAM mechanism",
+    "stem": "Anti-D immunoglobulin prevents maternal alloimmunization in Rh-negative women by which mechanism?",
+    "options": [
+      "Directly neutralizing maternal anti-D antibodies already formed",
+      "Suppressing maternal bone marrow B-cell production globally",
+      "Binding and clearing fetal Rh-positive red cells from maternal circulation before the maternal immune system can mount a primary antibody response",
+      "Blocking Rh antigen expression on fetal red cells",
+      "Cross-linking fetal Rh antigen to prevent placental transfer"
+    ],
+    "answerIndex": 2,
+    "explanation": "Anti-D IgG is passive antibody that opsonizes/clears fetal Rh(D)-positive erythrocytes that enter maternal circulation, preventing maternal B cells from recognizing the antigen and mounting a sensitizing primary immune response.",
+    "optionRationales": [
+      "Incorrect: RhoGAM is given prophylactically before antibodies form; it is not a treatment once alloimmunization has already occurred.",
+      "Incorrect: it does not cause generalized immunosuppression of the bone marrow.",
+      "Correct: it works by antibody-mediated clearance of fetal RBCs before maternal sensitization occurs.",
+      "Incorrect: it does not alter fetal red cell antigen expression.",
+      "Incorrect: it does not act at the level of placental transfer."
+    ],
+    "concept": "Anti-D immunoglobulin is passive immunoprophylaxis: it clears fetal Rh(D)-positive cells from the maternal circulation before the maternal immune system can be primed, preventing formation of anti-D IgG that could cause hemolytic disease in future pregnancies. It is ineffective once alloimmunization has already occurred.",
+    "conceptRule": [
+      "Rh-negative, unsensitized, no anti-D antibodies -> give anti-D immunoglobulin at 28 weeks and within 72 hours postpartum if infant is Rh-positive",
+      "Any potentially sensitizing event (ectopic, abortion, amniocentesis, trauma, antepartum bleeding) -> give anti-D immunoglobulin",
+      "Anti-D antibody already detected on indirect Coombs -> RhoGAM is not indicated (already sensitized)"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-45",
+    "system": "Pharmacology",
+    "topic": "RhoGAM timing/indications",
+    "stem": "A 27-year-old Rh-negative woman with a negative antibody screen presents at 28 weeks gestation for routine prenatal care. What is the most appropriate management regarding Rh alloimmunization prophylaxis?",
+    "options": [
+      "Withhold anti-D immunoglobulin until delivery since no sensitizing event has occurred",
+      "Give anti-D immunoglobulin only if amniocentesis is planned",
+      "Check paternal Rh status before giving anti-D immunoglobulin",
+      "Administer anti-D immunoglobulin only if the indirect Coombs test becomes positive",
+      "Administer anti-D immunoglobulin now, and again postpartum if the infant is confirmed Rh-positive"
+    ],
+    "answerIndex": 4,
+    "explanation": "Standard practice is routine antepartum anti-D immunoglobulin at 28 weeks in unsensitized Rh-negative women, plus a postpartum dose if the neonate is Rh-positive, because low-level fetomaternal hemorrhage can occur even without an overt sensitizing event.",
+    "optionRationales": [
+      "Incorrect: waiting until delivery misses the antepartum window during which silent fetomaternal microtransfusion can sensitize the mother.",
+      "Incorrect: anti-D immunoglobulin is also indicated for routine antepartum prophylaxis, not only before invasive procedures.",
+      "Incorrect: while paternal typing can sometimes be informative, it is not required before routine prophylaxis and would delay standard care.",
+      "Incorrect: if the Coombs test is already positive, alloimmunization has occurred and RhoGAM will not help.",
+      "Correct: 28-week antepartum dosing plus postpartum dosing is the standard prophylactic protocol."
+    ],
+    "concept": "Unsensitized Rh-negative women receive anti-D immunoglobulin prophylactically at 28 weeks gestation and again within 72 hours postpartum if the newborn is Rh-positive, in addition to after any potentially sensitizing event (bleeding, trauma, invasive procedures, abortion).",
+    "conceptRule": [
+      "28 weeks gestation, Rh-negative, antibody-negative -> give anti-D immunoglobulin",
+      "Delivery of Rh-positive infant -> give anti-D immunoglobulin within 72 hours postpartum",
+      "Antibody screen already positive for anti-D -> do not give (patient already sensitized)"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-46",
+    "system": "Pharmacology",
+    "topic": "SSRIs for PMDD",
+    "stem": "Which feature distinguishes SSRI use for premenstrual dysphoric disorder (PMDD) from typical SSRI use in major depressive disorder?",
+    "options": [
+      "SSRIs can be dosed intermittently (luteal-phase only) for PMDD, unlike the continuous daily dosing required for depression",
+      "SSRIs must be combined with an oral contraceptive to treat PMDD",
+      "Only fluoxetine is effective for PMDD, while all other SSRIs are ineffective",
+      "SSRIs require 6-8 weeks to show benefit in PMDD, similar to depression",
+      "Higher doses of SSRIs are required for PMDD than for depression"
+    ],
+    "answerIndex": 0,
+    "explanation": "Unlike depression, PMDD symptoms can respond rapidly, allowing intermittent luteal-phase-only dosing (starting ~14 days before menses) in addition to continuous dosing, reflecting a distinct, faster onset of action in this indication.",
+    "optionRationales": [
+      "Correct: intermittent luteal-phase dosing is a treatment option unique to PMDD, reflecting more rapid symptom response than typically seen in depression.",
+      "SSRIs are effective for PMDD as monotherapy; combined OCPs are an alternative/adjunct option, not a requirement.",
+      "Multiple SSRIs (fluoxetine, sertraline, paroxetine, citalopram) have evidence for PMDD, not just fluoxetine.",
+      "SSRIs typically show benefit for PMDD within days, much faster than the weeks required for antidepressant effect in MDD.",
+      "Standard antidepressant doses are typically used; higher doses are not specifically required for PMDD."
+    ],
+    "concept": "PMDD is one of the few psychiatric conditions where SSRIs can be given intermittently (luteal-phase dosing, 14 days before menses through onset of menses) rather than continuously, because symptom relief occurs much faster than the delayed onset typical of SSRI treatment for major depression.",
+    "discriminator": "In contrast, SSRIs for major depressive disorder require continuous daily dosing and 4-8 weeks for full effect."
+  },
+  {
+    "id": "ob-pharmacology-47",
+    "system": "Pharmacology",
+    "topic": "Tamoxifen adverse effect",
+    "stem": "A woman on adjuvant tamoxifen for breast cancer reports new-onset postmenopausal-type bleeding. Which mechanism explains this drug's endometrial effect?",
+    "options": [
+      "Tamoxifen causes endometrial bleeding through direct cytotoxic endometrial injury",
+      "Tamoxifen depletes vitamin K-dependent clotting factors, causing withdrawal bleeding",
+      "Tamoxifen stimulates aromatase in adipose tissue, raising systemic estrogen levels",
+      "Tamoxifen acts as an estrogen receptor agonist in the endometrium while acting as an antagonist in breast tissue",
+      "Tamoxifen directly suppresses pituitary FSH, causing endometrial atrophy"
+    ],
+    "answerIndex": 3,
+    "explanation": "Tamoxifen is a selective estrogen receptor modulator with tissue-specific effects: antagonist in breast tissue (therapeutic) but agonist in the endometrium, which increases risk of endometrial hyperplasia and cancer.",
+    "optionRationales": [
+      "The bleeding results from estrogenic stimulation and hyperplasia, not direct cytotoxic injury.",
+      "This describes warfarin's mechanism, not tamoxifen's.",
+      "Tamoxifen does not act via increasing aromatase activity; its tissue-selective receptor activity explains the endometrial findings.",
+      "Correct: this mixed agonist/antagonist activity is the hallmark of SERMs and explains the increased endometrial cancer risk requiring monitoring for abnormal bleeding.",
+      "Tamoxifen's endometrial effect is not mediated through FSH suppression or atrophy; in fact it causes proliferative/hyperplastic changes, not atrophy."
+    ],
+    "concept": "Tamoxifen's clinical utility and toxicity both stem from its tissue-selective SERM activity: antiestrogenic in breast (reduces recurrence) but proestrogenic in endometrium (hyperplasia, polyps, and endometrial cancer risk), so any abnormal uterine bleeding on tamoxifen warrants endometrial evaluation.",
+    "discriminator": "Raloxifene, another SERM, is antiestrogenic in both breast and endometrium, so it does not carry the endometrial cancer risk that tamoxifen does."
+  },
+  {
+    "id": "ob-pharmacology-48",
+    "system": "Pharmacology",
+    "topic": "Tamoxifen bone effect vs breast",
+    "stem": "Which of the following correctly contrasts tamoxifen's effect on bone versus its effect on breast tissue?",
+    "options": [
+      "No significant effect on bone; pure antagonist in breast only",
+      "Antagonist in bone, causing osteoporosis; antagonist in breast, inhibiting tumor growth",
+      "Antagonist in bone; agonist in breast, promoting tumor growth",
+      "Agonist (estrogenic) in bone, helping preserve bone density; antagonist (antiestrogenic) in breast, inhibiting tumor growth",
+      "Agonist in bone and agonist in breast, both promoting growth"
+    ],
+    "answerIndex": 3,
+    "explanation": "Tamoxifen's tissue-selective pharmacology makes it an estrogenic agonist in bone (preserving bone mineral density) while acting as an antiestrogenic antagonist in breast tissue (blocking tumor growth).",
+    "optionRationales": [
+      "Tamoxifen does have a significant bone effect—it acts as an estrogen agonist there, unlike a pure antiestrogen.",
+      "Tamoxifen is actually bone-protective (agonist), not bone-depleting; aromatase inhibitors like letrozole are more associated with bone loss.",
+      "Tamoxifen does not promote breast tumor growth; it antagonizes ER in the breast, which is the basis for its use in ER-positive breast cancer.",
+      "Correct: this is the hallmark tissue-selective profile of tamoxifen—bone-protective agonism paired with breast-antagonism that underlies its therapeutic use in ER-positive breast cancer.",
+      "Tamoxifen antagonizes, not stimulates, estrogen receptors in breast tissue, which is its therapeutic mechanism against breast cancer."
+    ],
+    "concept": "Tamoxifen's clinical utility and side-effect profile stem entirely from its mixed agonist/antagonist SERM activity: antagonist in breast (anticancer effect), agonist in endometrium (increased endometrial cancer risk), and agonist in bone (bone-protective, unlike aromatase inhibitors which increase fracture risk).",
+    "discriminator": "Aromatase inhibitors (e.g., letrozole, anastrozole) used in breast cancer instead cause bone loss because they globally suppress estrogen rather than acting as tissue-selective SERMs."
+  },
+  {
+    "id": "ob-pharmacology-49",
+    "system": "Pharmacology",
+    "topic": "Tamoxifen tissue-specific SERM effects",
+    "stem": "Tamoxifen is used in breast cancer treatment because of its estrogen receptor antagonist activity in breast tissue, but it carries an increased risk of endometrial cancer because it acts as an estrogen receptor:",
+    "options": [
+      "Antagonist in the liver, altering estrogen metabolism",
+      "Agonist in the ovary, increasing estrogen production",
+      "Antagonist in the endometrium, causing endometrial atrophy",
+      "Agonist in the endometrium, promoting endometrial proliferation",
+      "Agonist in bone only, with no endometrial receptor activity"
+    ],
+    "answerIndex": 3,
+    "explanation": "Tamoxifen is a selective estrogen receptor modulator that antagonizes estrogen receptors in breast tissue but acts as a partial agonist in the endometrium, promoting endometrial proliferation, hyperplasia, and increased risk of endometrial cancer.",
+    "optionRationales": [
+      "Tamoxifen's endometrial cancer risk arises from direct endometrial receptor agonism, not hepatic estrogen metabolism changes.",
+      "Tamoxifen does not act on the ovary to increase estrogen production; its clinically relevant tissue-selective effects are in breast, bone, and endometrium.",
+      "Tamoxifen is an agonist, not antagonist, in the endometrium, which is precisely why endometrial cancer risk is increased.",
+      "Correct: tamoxifen's tissue-selective agonist activity in the endometrium stimulates proliferation, explaining the increased risk of endometrial hyperplasia and cancer with long-term use.",
+      "Tamoxifen also has agonist activity in the endometrium, not just bone; endometrial receptor activity is the basis of the cancer risk."
+    ],
+    "concept": "Tamoxifen is a SERM with tissue-specific activity: it is an estrogen receptor antagonist in breast tissue (useful in ER-positive breast cancer treatment/prevention) but acts as a partial agonist in the endometrium and bone. This endometrial agonism increases risk of endometrial hyperplasia, polyps, and cancer, while the bone agonism helps preserve bone mineral density (unlike aromatase inhibitors).",
+    "conceptRule": [
+      "Postmenopausal woman on tamoxifen with abnormal uterine bleeding -> evaluate endometrium (transvaginal ultrasound/endometrial biopsy) to rule out hyperplasia or cancer"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-50",
+    "system": "Pharmacology",
+    "topic": "Teratogens: ACE inhibitors",
+    "stem": "A woman taking lisinopril for chronic hypertension continues it through the second and third trimester. Which fetal effect is most characteristic of this exposure?",
+    "options": [
+      "Neural tube defects",
+      "Limb reduction defects",
+      "Fetal renal dysgenesis with oligohydramnios and hypocalvaria",
+      "Ebstein anomaly of the tricuspid valve",
+      "Vaginal clear cell adenocarcinoma in adulthood"
+    ],
+    "answerIndex": 2,
+    "explanation": "ACE inhibitors and ARBs used in the second/third trimester cause fetopathy via reduced fetal renal perfusion, producing renal dysgenesis/failure, oligohydramnios (with resultant limb contractures/pulmonary hypoplasia), and skull ossification defects.",
+    "optionRationales": [
+      "Neural tube defects are classically associated with valproate and folate antagonists, not ACE inhibitors.",
+      "Limb reduction defects are classically associated with thalidomide, not ACE inhibitors.",
+      "Correct: this is the classic ACE inhibitor fetopathy from disrupted fetal renin-angiotensin system function and renal blood flow.",
+      "Ebstein anomaly is classically associated with lithium exposure, not ACE inhibitors.",
+      "Vaginal clear cell adenocarcinoma is associated with in utero diethylstilbestrol (DES) exposure, not ACE inhibitors."
+    ],
+    "concept": "ACE inhibitors and ARBs are safe in the first trimester regarding this specific fetopathy but must be stopped once pregnancy is confirmed and definitely avoided in the second/third trimester, when they cause fetal renal dysgenesis, oligohydramnios, pulmonary hypoplasia, and calvarial hypoplasia by disrupting the fetal renin-angiotensin-aldosterone system.",
+    "conceptRule": [
+      "ACE inhibitor/ARB use 2nd-3rd trimester -> stop immediately; fetal renal ultrasound surveillance"
+    ],
+    "discriminator": "Unlike first-trimester structural teratogens (e.g., isotretinoin, valproate), ACE inhibitor toxicity is a later-pregnancy functional fetopathy driven by impaired fetal renal perfusion."
+  },
+  {
+    "id": "ob-pharmacology-51",
+    "system": "Pharmacology",
+    "topic": "Teratogens: isotretinoin and valproate",
+    "stem": "Which pairing of a teratogenic drug with its characteristic fetal anomaly is correct?",
+    "options": [
+      "Isotretinoin - limb reduction defects; valproate - craniofacial malformations only",
+      "Isotretinoin - neural tube defects; valproate - limb reduction defects",
+      "Isotretinoin - craniofacial and CNS malformations; valproate - neural tube defects",
+      "Isotretinoin - Ebstein anomaly; valproate - vaginal clear cell carcinoma",
+      "Isotretinoin - warfarin embryopathy pattern; valproate - ototoxicity"
+    ],
+    "answerIndex": 2,
+    "explanation": "Isotretinoin causes craniofacial, cardiac, thymic, and CNS malformations (retinoic acid embryopathy), while valproate is strongly associated with neural tube defects (spina bifida) as well as craniofacial anomalies.",
+    "optionRationales": [
+      "Limb reduction defects are classically linked to thalidomide, not isotretinoin.",
+      "This reverses the associations; neural tube defects are linked to valproate, and isotretinoin is not linked to limb reduction defects.",
+      "Correct: these are the classic, high-yield fetal effects associated with each drug.",
+      "Ebstein anomaly is linked to lithium and vaginal clear cell carcinoma to DES, not to isotretinoin or valproate.",
+      "This describes warfarin and aminoglycoside effects, not isotretinoin or valproate."
+    ],
+    "concept": "Isotretinoin is an absolute contraindication in pregnancy (requires two forms of contraception and monthly pregnancy testing via the iPLEDGE program) due to its high risk of craniofacial, cardiac, thymic, and CNS malformations, while valproate use in pregnancy is associated with neural tube defects and should be avoided or replaced with an alternative antiepileptic when possible, with high-dose folic acid supplementation if unavoidable.",
+    "conceptRule": [
+      "Isotretinoin + reproductive-age patient -> mandatory contraception + monthly pregnancy testing (iPLEDGE)",
+      "Valproate needed in pregnancy -> high-dose folic acid, prefer alternative antiepileptic if possible"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-52",
+    "system": "Pharmacology",
+    "topic": "Teratogens: methotrexate",
+    "stem": "A woman is inadvertently continued on methotrexate for rheumatoid arthritis into an unrecognized early pregnancy. Which mechanism underlies its teratogenic and abortifacient effects?",
+    "options": [
+      "Methotrexate blocks fetal thyroid hormone synthesis",
+      "Methotrexate inhibits fetal angiotensin-converting enzyme",
+      "Methotrexate inhibits dihydrofolate reductase, depleting folate needed for rapid fetal cell division and DNA synthesis",
+      "Methotrexate inhibits fetal cyclooxygenase, causing premature ductus arteriosus closure",
+      "Methotrexate crosses the placenta and directly damages fetal renal tubules"
+    ],
+    "answerIndex": 2,
+    "explanation": "Methotrexate is a folate antagonist (inhibits dihydrofolate reductase) that impairs DNA synthesis in rapidly dividing cells, causing pregnancy loss and a characteristic pattern of craniofacial, limb, and CNS malformations (fetal methotrexate/aminopterin syndrome) if pregnancy continues.",
+    "optionRationales": [
+      "Methotrexate's teratogenicity is due to folate antagonism, not thyroid effects.",
+      "ACE inhibition describes lisinopril's mechanism, not methotrexate's.",
+      "Correct: folate antagonism underlies both its use to terminate ectopic pregnancies and its teratogenic/abortifacient effects in an ongoing intrauterine pregnancy.",
+      "COX inhibition and ductal closure describes NSAID toxicity in pregnancy, not methotrexate.",
+      "This describes aminoglycoside/renal toxicity mechanisms, not methotrexate's teratogenic mechanism."
+    ],
+    "concept": "Methotrexate is a folate antagonist used therapeutically to end ectopic pregnancies, but if an intrauterine pregnancy is inadvertently exposed, it causes pregnancy loss or a distinct fetal methotrexate syndrome (craniofacial dysmorphism, limb defects, CNS anomalies) due to impaired folate-dependent DNA synthesis in rapidly dividing fetal cells.",
+    "discriminator": "Unlike valproate, which causes neural tube defects primarily via a different mechanism, methotrexate's antifolate action broadly impairs DNA synthesis, producing a distinct multi-system malformation syndrome."
+  },
+  {
+    "id": "ob-pharmacology-53",
+    "system": "Pharmacology",
+    "topic": "Teratogens: warfarin vs heparin",
+    "stem": "A pregnant woman with a mechanical heart valve requires anticoagulation. Why is warfarin generally avoided, especially in the first trimester, in favor of heparin-based agents?",
+    "options": [
+      "Warfarin causes ototoxicity in the fetus, whereas heparin does not cross the placenta",
+      "Heparin is more effective than warfarin at preventing valve thrombosis",
+      "Warfarin is only dangerous in the third trimester, so first-trimester use is safe",
+      "Warfarin crosses the placenta and can cause nasal hypoplasia and skeletal stippling (warfarin embryopathy), whereas heparins do not cross the placenta",
+      "Warfarin causes neural tube defects, whereas heparin does not cross the placenta"
+    ],
+    "answerIndex": 3,
+    "explanation": "Warfarin is a small molecule that crosses the placenta and, when used in the first trimester, causes warfarin embryopathy (nasal hypoplasia, stippled epiphyses, limb hypoplasia); low molecular weight or unfractionated heparin does not cross the placenta and is preferred.",
+    "optionRationales": [
+      "Warfarin embryopathy is characterized by nasal hypoplasia and skeletal stippling, not ototoxicity (which is associated with aminoglycosides).",
+      "Efficacy for maternal valve thrombosis is not the reason for the switch; the placental transfer and teratogenicity difference is.",
+      "Warfarin is most teratogenic in the first trimester (weeks 6-9), not exclusively the third trimester; it also carries fetal hemorrhage risk in the third trimester.",
+      "Correct: this placental transfer difference explains why heparins are substituted for warfarin, particularly in the first trimester.",
+      "Warfarin embryopathy is characterized by nasal/skeletal abnormalities, not neural tube defects."
+    ],
+    "concept": "Warfarin is teratogenic because it is a small lipophilic molecule that freely crosses the placenta, causing warfarin embryopathy in the first trimester and fetal/neonatal hemorrhage later in pregnancy; heparins (unfractionated and low molecular weight) are large, negatively charged molecules that do not cross the placenta and are the anticoagulants of choice throughout pregnancy.",
+    "discriminator": "Direct oral anticoagulants (DOACs) are also avoided in pregnancy due to limited safety data and are not substituted for warfarin in this setting."
+  },
+  {
+    "id": "ob-pharmacology-54",
+    "system": "Pharmacology",
+    "topic": "Terbutaline cardiac contraindication",
+    "stem": "Terbutaline should be used with caution or avoided in a pregnant patient with which maternal condition due to risk of serious cardiac side effects?",
+    "options": [
+      "Asthma",
+      "Chronic hypertension",
+      "Underlying maternal cardiac disease or arrhythmia, due to risk of tachycardia and myocardial ischemia",
+      "Gestational diabetes controlled on diet",
+      "Hypothyroidism"
+    ],
+    "answerIndex": 2,
+    "explanation": "Terbutaline's beta-agonist activity can cause maternal tachycardia, arrhythmias, and myocardial ischemia/pulmonary edema, so it carries an FDA boxed warning against prolonged use and caution in patients with cardiac disease.",
+    "optionRationales": [
+      "Asthma is actually a condition where beta-2 agonists like terbutaline provide bronchodilation, not a contraindication.",
+      "Chronic hypertension alone is not the specific contraindication being tested here; the key concern is cardiac disease/arrhythmia risk from beta-agonism.",
+      "Correct: beta-agonist stimulation increases heart rate and myocardial oxygen demand, posing a significant risk in women with underlying cardiac disease or arrhythmias, which is why terbutaline carries cardiac warnings.",
+      "Diet-controlled gestational diabetes is not a specific contraindication to terbutaline, though beta-agonists can transiently raise glucose in general.",
+      "Hypothyroidism is not a cardiac contraindication related to terbutaline's mechanism."
+    ],
+    "concept": "Because terbutaline is a beta-adrenergic agonist, it increases heart rate and myocardial oxygen demand, risking tachyarrhythmias, myocardial ischemia, and pulmonary edema. It carries an FDA warning against use for prolonged tocolysis (beyond 48-72 hours) or outpatient use, and is used cautiously or avoided in women with cardiac disease.",
+    "conceptRule": [
+      "Maternal cardiac disease/arrhythmia -> avoid or use terbutaline with extreme caution",
+      "Use beyond 48-72 hours or outpatient/oral use -> avoid due to FDA boxed warning for maternal cardiovascular events"
+    ],
+    "discriminator": "Unlike magnesium (neuromuscular toxicity) or indomethacin (fetal ductal effects), terbutaline's major safety concern is maternal cardiovascular stimulation from beta-agonism."
+  },
+  {
+    "id": "ob-pharmacology-55",
+    "system": "Pharmacology",
+    "topic": "Terbutaline mechanism",
+    "stem": "Terbutaline is used as a tocolytic agent. Which mechanism accounts for its uterine relaxant effect?",
+    "options": [
+      "Competitive antagonism of oxytocin receptors",
+      "Antagonism of calcium at the neuromuscular junction",
+      "Inhibition of cyclooxygenase-mediated prostaglandin synthesis",
+      "Blockade of L-type calcium channels in the myometrium",
+      "Beta-2 adrenergic receptor agonism, increasing cAMP and decreasing intracellular calcium in myometrial cells"
+    ],
+    "answerIndex": 4,
+    "explanation": "Terbutaline is a beta-2 adrenergic agonist that increases intracellular cAMP, which lowers intracellular calcium and promotes myometrial smooth muscle relaxation.",
+    "optionRationales": [
+      "Oxytocin receptor antagonism describes atosiban, not terbutaline.",
+      "Neuromuscular junction calcium antagonism describes magnesium sulfate, not terbutaline.",
+      "COX inhibition describes indomethacin's mechanism, not terbutaline's.",
+      "Calcium channel blockade describes nifedipine's mechanism, not terbutaline's.",
+      "Correct: beta-2 agonism raises cAMP, activating protein kinase A and reducing free intracellular calcium available for uterine contraction, producing relaxation."
+    ],
+    "concept": "Terbutaline is a beta-2 adrenergic agonist; receptor activation increases cAMP, which decreases intracellular calcium and myosin light-chain kinase activity, relaxing uterine smooth muscle. Its non-selectivity for beta-2 over beta-1 receptors accounts for its cardiac side effects."
+  },
+  {
+    "id": "ob-pharmacology-56",
+    "system": "Pharmacology",
+    "topic": "Tranexamic acid contraindication",
+    "stem": "Tranexamic acid should be used with caution or avoided in which of the following clinical situations because of its mechanism of action?",
+    "options": [
+      "Heavy menstrual bleeding in a woman with no thrombotic history",
+      "Active postpartum hemorrhage",
+      "Uterine atony refractory to oxytocin",
+      "Menorrhagia due to fibroids",
+      "Active thromboembolic disease, such as a current deep vein thrombosis"
+    ],
+    "answerIndex": 4,
+    "explanation": "Because tranexamic acid inhibits fibrinolysis, it stabilizes clots and can theoretically promote thrombus persistence or growth, so it is contraindicated in patients with active or recent thromboembolic disease.",
+    "optionRationales": [
+      "This is a standard, approved indication for oral tranexamic acid.",
+      "This is an approved, evidence-based use of tranexamic acid (WOMAN trial).",
+      "TXA is an appropriate adjunct here, alongside additional uterotonics.",
+      "This is an approved indication for tranexamic acid.",
+      "Correct — by preventing clot breakdown, TXA is contraindicated in patients with active thromboembolic disease due to theoretical risk of promoting clot stability/growth."
+    ],
+    "concept": "Because tranexamic acid works by inhibiting fibrinolysis (clot breakdown), it should be avoided or used cautiously in patients with active thromboembolic disease, since it could theoretically stabilize existing thrombi and impair the body's ability to break them down.",
+    "conceptRule": [
+      "Active DVT/PE or thrombophilia -> avoid or use tranexamic acid cautiously (antifibrinolytic risk of clot stabilization)"
+    ]
+  },
+  {
+    "id": "ob-pharmacology-57",
+    "system": "Pharmacology",
+    "topic": "Tranexamic acid mechanism",
+    "stem": "Tranexamic acid reduces bleeding in postpartum hemorrhage through which mechanism of action?",
+    "options": [
+      "Inhibition of platelet aggregation to reduce microthrombi formation",
+      "Activation of the extrinsic coagulation cascade via tissue factor",
+      "Direct stimulation of myometrial contraction",
+      "Direct vasoconstriction of uterine spiral arteries",
+      "Reversible blockade of lysine binding sites on plasminogen, inhibiting fibrinolysis"
+    ],
+    "answerIndex": 4,
+    "explanation": "Tranexamic acid is a synthetic lysine analog that reversibly binds plasminogen, preventing its conversion to plasmin and thereby inhibiting clot breakdown (antifibrinolytic effect).",
+    "optionRationales": [
+      "TXA promotes clot stability by blocking fibrinolysis; it does not inhibit platelet aggregation (that would worsen bleeding).",
+      "TXA does not activate coagulation factors; it works downstream by preventing clot breakdown.",
+      "Tranexamic acid is not a uterotonic and does not act on the myometrium; it is used as an adjunct, not a replacement for uterotonics.",
+      "TXA has no direct vasoconstrictive activity on uterine vessels.",
+      "Correct — TXA blocks lysine-binding sites on plasminogen/plasmin, inhibiting fibrinolysis and stabilizing clot."
+    ],
+    "concept": "Tranexamic acid is a synthetic antifibrinolytic that competitively inhibits plasminogen activation, preventing premature clot breakdown. It is used as an adjunct to uterotonics in postpartum hemorrhage (reducing death from bleeding) and as a treatment for heavy menstrual bleeding (menorrhagia).",
+    "discriminator": "Unlike uterotonics, tranexamic acid does not cause the uterus to contract; it works purely on the coagulation/fibrinolytic system and is given as an adjunct alongside uterotonics."
+  },
+  {
+    "id": "ob-pharmacology-58",
+    "system": "Pharmacology",
+    "topic": "Ulipristal vs levonorgestrel mechanism",
+    "stem": "What is the mechanism of action of ulipristal acetate when used for emergency contraception?",
+    "options": [
+      "Direct spermicidal effect via copper ion toxicity",
+      "GnRH receptor downregulation causing hypogonadotropic hypogonadism",
+      "Irreversible aromatase inhibition",
+      "Competitive antagonism at the estrogen receptor in the endometrium",
+      "Selective progesterone receptor modulator that delays or inhibits ovulation"
+    ],
+    "answerIndex": 4,
+    "explanation": "Ulipristal acetate is a selective progesterone receptor modulator (SPRM) that blocks or delays the LH surge, thereby inhibiting or delaying ovulation.",
+    "optionRationales": [
+      "Copper ion toxicity to sperm and ova describes the copper IUD's mechanism, not a pill.",
+      "GnRH receptor downregulation describes leuprolide, not ulipristal.",
+      "Aromatase inhibition describes letrozole's mechanism, not ulipristal's.",
+      "Ulipristal acts on progesterone receptors, not estrogen receptors.",
+      "Correct: ulipristal is a SPRM that suppresses/delays the LH surge and follicular rupture, working even after the LH surge has begun (unlike levonorgestrel)."
+    ],
+    "concept": "Levonorgestrel and ulipristal both aim to prevent ovulation, but ulipristal is a progesterone receptor modulator that can still delay ovulation even when given closer to the LH surge, giving it a longer effective window (up to 120 hours) compared to levonorgestrel (most effective within 72 hours).",
+    "discriminator": "Ulipristal can still block ovulation even after the LH surge has started to rise, whereas levonorgestrel loses effectiveness once the LH surge is underway."
   }
 ];
 
