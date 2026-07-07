@@ -5,6 +5,7 @@ import {
   loadMcqProgress,
   recordMcqAnswer,
   resetMcqProgress,
+  wasEverMissed,
   type McqProgress,
 } from "../../data/mcqProgress";
 import { Segmented } from "../components/Segmented";
@@ -56,7 +57,9 @@ function shuffleOptions(q: McqQuestion): RunQuestion {
 function inSubset(q: McqQuestion, subset: Subset, progress: McqProgress): boolean {
   const stat = progress[q.id];
   if (subset === "unseen") return !stat || stat.seen === 0;
-  if (subset === "incorrect") return !!stat && stat.seen > 0 && !stat.lastCorrect;
+  // "Missed" is a sticky long-term review pool: any question ever answered
+  // wrong stays here even after it's later answered correctly (e.g. in a redo).
+  if (subset === "incorrect") return wasEverMissed(stat);
   return true;
 }
 
