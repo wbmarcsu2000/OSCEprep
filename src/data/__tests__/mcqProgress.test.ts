@@ -30,9 +30,9 @@ describe("mcqProgress — sticky Missed pool", () => {
     expect(isMastered(p.q1)).toBe(false);
   });
 
-  it("keeps a question in Missed after it is later answered correctly (sticky)", () => {
+  it("keeps a question in Missed after a plain correct answer (redo-incorrects flow, sticky)", () => {
     recordMcqAnswer("q1", false, KEY);
-    const p = recordMcqAnswer("q1", true, KEY); // redo, now correct
+    const p = recordMcqAnswer("q1", true, KEY); // redo button, now correct
 
     // The answer updates seen/correct/lastCorrect/mastery...
     expect(p.q1.seen).toBe(2);
@@ -40,6 +40,21 @@ describe("mcqProgress — sticky Missed pool", () => {
     expect(p.q1.lastCorrect).toBe(true);
     expect(isMastered(p.q1)).toBe(true);
     // ...but does NOT remove it from the long-term Missed pool.
+    expect(wasEverMissed(p.q1)).toBe(true);
+  });
+
+  it("clears a question from Missed when answered right in a Missed-review run", () => {
+    recordMcqAnswer("q1", false, KEY);
+    expect(wasEverMissed(loadMcqProgress(KEY).q1)).toBe(true);
+
+    const p = recordMcqAnswer("q1", true, KEY, { clearMissedOnCorrect: true });
+    expect(p.q1.lastCorrect).toBe(true);
+    expect(wasEverMissed(p.q1)).toBe(false); // reviewed and correct → leaves Missed
+  });
+
+  it("keeps it missed if answered wrong again during a Missed-review run", () => {
+    recordMcqAnswer("q1", false, KEY);
+    const p = recordMcqAnswer("q1", false, KEY, { clearMissedOnCorrect: true });
     expect(wasEverMissed(p.q1)).toBe(true);
   });
 

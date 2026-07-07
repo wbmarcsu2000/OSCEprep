@@ -86,6 +86,9 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   // Which option rationales are expanded on the current question (indices into options).
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
+  // True when the active run is a deliberate Missed-subset review — a correct
+  // answer then clears the question from the long-term Missed pool.
+  const [reviewingMissed, setReviewingMissed] = useState(false);
 
   // Reset to a clean setup screen whenever the bank changes.
   useEffect(() => {
@@ -105,7 +108,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   );
 
   const startRun = useCallback(
-    (questions: McqQuestion[], limit?: number) => {
+    (questions: McqQuestion[], limit?: number, reviewMissed = false) => {
       const prepared = questions.map(shuffleOptions);
       const ordered = shuffleQs ? shuffle(prepared) : prepared;
       // Slice AFTER shuffling so a capped session is a random draw from the pool
@@ -114,6 +117,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
       setQueue(run);
       setAnswers(new Array(run.length).fill(null));
       setIdx(0);
+      setReviewingMissed(reviewMissed);
       setPhase("quiz");
     },
     [shuffleQs],
@@ -125,13 +129,15 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
         if (prev[idx] != null) return prev; // already answered — lock it
         const q = queue[idx];
         const correct = choice === q.answerIndex;
-        setProgress(recordMcqAnswer(q.id, correct, storageKey));
+        setProgress(
+          recordMcqAnswer(q.id, correct, storageKey, { clearMissedOnCorrect: reviewingMissed }),
+        );
         const next = prev.slice();
         next[idx] = choice;
         return next;
       });
     },
-    [idx, queue, storageKey],
+    [idx, queue, storageKey, reviewingMissed],
   );
 
   const current = queue[idx];
@@ -297,7 +303,13 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             <button
               className="btn btn-primary"
               disabled={eligible.length === 0}
-              onClick={() => startRun(eligible, sessionLen === "all" ? undefined : sessionLen)}
+              onClick={() =>
+                startRun(
+                  eligible,
+                  sessionLen === "all" ? undefined : sessionLen,
+                  subset === "incorrect",
+                )
+              }
             >
               {eligible.length === 0
                 ? "No questions in this subset"

@@ -50,18 +50,35 @@ function save(p: McqProgress, key: string): void {
   }
 }
 
-/** Record an answer for a question; returns the updated map. */
-export function recordMcqAnswer(id: string, correct: boolean, key: string = DEFAULT_KEY): McqProgress {
+/**
+ * Record an answer for a question; returns the updated map.
+ *
+ * `everWrong` (the long-term "Missed" flag) is sticky by default: once wrong it
+ * stays set through later correct answers, so casual re-encounters and the
+ * immediate "Redo incorrects" flow don't quietly empty the review pool. Pass
+ * `clearMissedOnCorrect` for a deliberate Missed-review run — there, answering
+ * correctly means the student has reviewed the item and clears it from Missed.
+ */
+export function recordMcqAnswer(
+  id: string,
+  correct: boolean,
+  key: string = DEFAULT_KEY,
+  opts?: { clearMissedOnCorrect?: boolean },
+): McqProgress {
   const p = loadMcqProgress(key);
   const prev = p[id] ?? { seen: 0, correct: 0, lastCorrect: false };
-  // everWrong is sticky: once wrong, always wrong (until progress reset). Derive
-  // it for pre-migration stats that predate the flag from their last-known state.
+  // Derive the flag for pre-migration stats that predate it from last state.
   const prevEverWrong = prev.everWrong ?? (prev.seen > 0 && !prev.lastCorrect);
+  const everWrong = correct
+    ? opts?.clearMissedOnCorrect
+      ? false // reviewed in a Missed quiz and got it right → leaves the pool
+      : prevEverWrong // sticky elsewhere
+    : true; // any wrong answer (re)adds it to the pool
   p[id] = {
     seen: prev.seen + 1,
     correct: prev.correct + (correct ? 1 : 0),
     lastCorrect: correct,
-    everWrong: prevEverWrong || !correct,
+    everWrong,
   };
   save(p, key);
   return p;
