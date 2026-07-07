@@ -47,6 +47,45 @@ describe("Family Medicine MCQ bank (data)", () => {
     expect(FM_MCQ_SYSTEMS).toEqual(present);
   });
 
+  it("teaching-mode fields are well-formed when present", () => {
+    for (const q of FM_MCQS) {
+      if (q.optionRationales !== undefined) {
+        expect(q.optionRationales.length, `${q.id} optionRationales length`).toBe(q.options.length);
+        for (const r of q.optionRationales) {
+          expect(r.trim().length, `${q.id} rationale text`).toBeGreaterThan(0);
+        }
+      }
+      if (q.concept !== undefined) {
+        expect(q.concept.trim().length, `${q.id} concept`).toBeGreaterThan(0);
+      }
+      if (q.conceptRule !== undefined) {
+        expect(Array.isArray(q.conceptRule), `${q.id} conceptRule is array`).toBe(true);
+        for (const b of q.conceptRule) {
+          expect(b.trim().length, `${q.id} conceptRule bullet`).toBeGreaterThan(0);
+        }
+      }
+    }
+  });
+
+  it("enhancement fields (score/discriminator/trap/mnemonic) are well-formed when present", () => {
+    for (const q of FM_MCQS) {
+      if (q.scoreComponents !== undefined) {
+        expect(Array.isArray(q.scoreComponents), `${q.id} scoreComponents is array`).toBe(true);
+        expect(q.scoreComponents.length, `${q.id} scoreComponents non-empty`).toBeGreaterThan(0);
+        for (const c of q.scoreComponents) {
+          expect(c.trim().length, `${q.id} scoreComponents item`).toBeGreaterThan(0);
+        }
+      }
+      for (const field of ["discriminator", "examTrap", "mnemonic"] as const) {
+        const v = q[field];
+        if (v !== undefined) {
+          expect(typeof v, `${q.id} ${field} type`).toBe("string");
+          expect(v.trim().length, `${q.id} ${field} text`).toBeGreaterThan(0);
+        }
+      }
+    }
+  });
+
   it("has no near-duplicate stems within a system (concept-level de-dup)", () => {
     const bySys = new Map<string, string[]>();
     for (const q of FM_MCQS) {

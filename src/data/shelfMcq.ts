@@ -22,6 +22,24 @@ export interface McqQuestion {
   answerIndex: number;
   /** Why the key is right + why the best distractor is wrong. */
   explanation: string;
+  /**
+   * Optional teaching-mode extras (present on the Family Medicine bank). All
+   * optional so banks without them render the classic explanation-only view.
+   */
+  /** One sentence per option, aligned 1:1 to `options` — why right / why wrong / when it'd be right. */
+  optionRationales?: string[];
+  /** 2-4 sentence generalizable teaching point for the concept. */
+  concept?: string;
+  /** Compact "threshold → action" bullets for guideline/score topics (omitted otherwise). */
+  conceptRule?: string[];
+  /** What a named score/scale is composed of (e.g. Wells criteria), when one is central. */
+  scoreComponents?: string[];
+  /** One line naming the feature that clinches the answer over its nearest mimic. */
+  discriminator?: string;
+  /** One line on the classic wrong-answer bait the exam uses for this item. */
+  examTrap?: string;
+  /** A standard mnemonic for the concept, when a well-known one exists. */
+  mnemonic?: string;
 }
 
 /** Canonical system display order (drives the filter + grouping). */

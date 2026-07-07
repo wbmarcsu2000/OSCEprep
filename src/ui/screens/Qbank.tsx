@@ -40,11 +40,18 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-/** Copy a question with its options shuffled and the answer index remapped. */
+/**
+ * Copy a question with its options shuffled and the answer index remapped.
+ * When per-option rationales are present, they ride along with their option
+ * (one permutation applied to both) so a rationale can never desync.
+ */
 function shuffleOptions(q: McqQuestion): RunQuestion {
-  const correct = q.options[q.answerIndex];
-  const options = shuffle(q.options);
-  return { ...q, options, answerIndex: options.indexOf(correct) };
+  const order = shuffle(q.options.map((_, i) => i));
+  const options = order.map((i) => q.options[i]);
+  const optionRationales = q.optionRationales
+    ? order.map((i) => q.optionRationales![i])
+    : undefined;
+  return { ...q, options, optionRationales, answerIndex: order.indexOf(q.answerIndex) };
 }
 
 function inSubset(q: McqQuestion, subset: Subset, progress: McqProgress): boolean {
@@ -361,6 +368,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
                       ? "wrong"
                       : "muted"
               }
+              rationale={answered ? current.optionRationales?.[i] : undefined}
               disabled={answered}
               onClick={() => answer(i)}
             />
@@ -384,7 +392,52 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             </div>
             <span className="chip">{current.topic}</span>
           </div>
-          <p className="text-[13.5px] leading-relaxed">{current.explanation}</p>
+          {current.explanation && (
+            <p className="text-[13.5px] leading-relaxed">{current.explanation}</p>
+          )}
+          {(current.concept ||
+            (current.scoreComponents && current.scoreComponents.length > 0) ||
+            (current.conceptRule && current.conceptRule.length > 0)) && (
+            <div
+              className="rounded-xl border px-3.5 py-3 space-y-1.5"
+              style={{ borderColor: "var(--color-exam-accent-line)", background: "var(--color-exam-bg)" }}
+            >
+              <div className="panel-label" style={{ color: "var(--color-exam-accent)" }}>
+                💡 Concept
+              </div>
+              {current.concept && <p className="text-[13px] leading-relaxed">{current.concept}</p>}
+              {current.scoreComponents && current.scoreComponents.length > 0 && (
+                <div className="mt-1">
+                  <span className="text-[11.5px] font-bold uppercase tracking-wide" style={{ color: "var(--color-exam-muted)" }}>
+                    Components
+                  </span>
+                  <ul className="mt-0.5 space-y-0.5">
+                    {current.scoreComponents.map((c, i) => (
+                      <li key={i} className="flex gap-2 text-[12.5px] leading-snug">
+                        <span aria-hidden style={{ color: "var(--color-exam-accent)" }}>·</span>
+                        <span>{c}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {current.conceptRule && current.conceptRule.length > 0 && (
+                <ul className="mt-1 space-y-0.5">
+                  {current.conceptRule.map((r, i) => (
+                    <li key={i} className="flex gap-2 text-[12.5px] leading-snug">
+                      <span aria-hidden style={{ color: "var(--color-exam-accent)" }}>
+                        •
+                      </span>
+                      <span className="tabular-nums">{r}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
+          {current.discriminator && <TeachRow icon="🔑" label="Key discriminator" text={current.discriminator} />}
+          {current.examTrap && <TeachRow icon="⚠️" label="Exam trap" text={current.examTrap} />}
+          {current.mnemonic && <TeachRow icon="🧠" label="Mnemonic" text={current.mnemonic} />}
         </div>
       )}
 
@@ -400,16 +453,32 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   );
 }
 
+/** Compact icon + label + one-line teaching row (discriminator / trap / mnemonic). */
+function TeachRow({ icon, label, text }: { icon: string; label: string; text: string }) {
+  return (
+    <div className="flex gap-2 text-[12.5px] leading-snug">
+      <span aria-hidden>{icon}</span>
+      <span>
+        <span className="font-bold">{label}:</span>{" "}
+        <span style={{ color: "var(--color-exam-ink)" }}>{text}</span>
+      </span>
+    </div>
+  );
+}
+
 function OptionButton({
   letter,
   text,
   state,
+  rationale,
   disabled,
   onClick,
 }: {
   letter: string;
   text: string;
   state: "idle" | "correct" | "wrong" | "muted";
+  /** One-line teaching rationale, shown beneath the option once answered. */
+  rationale?: string;
   disabled: boolean;
   onClick: () => void;
 }) {
@@ -417,7 +486,7 @@ function OptionButton({
     idle: { borderColor: "var(--color-exam-border)" },
     correct: { borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" },
     wrong: { borderColor: "var(--color-exam-danger-line)", background: "var(--color-exam-danger-soft)" },
-    muted: { borderColor: "var(--color-exam-border)", opacity: 0.55 },
+    muted: { borderColor: "var(--color-exam-border)", opacity: 0.7 },
   };
   const badge =
     state === "correct" ? "✓" : state === "wrong" ? "✗" : letter;
@@ -443,7 +512,17 @@ function OptionButton({
       >
         {badge}
       </span>
-      <span>{text}</span>
+      <span className="min-w-0">
+        <span>{text}</span>
+        {rationale && (
+          <span
+            className="block mt-1 text-[12.5px] leading-snug font-normal"
+            style={{ color: "var(--color-exam-muted)" }}
+          >
+            {rationale}
+          </span>
+        )}
+      </span>
     </button>
   );
 }
