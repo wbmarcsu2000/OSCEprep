@@ -36,10 +36,7 @@ describe("Question Bank screen", () => {
 
   it("starts a quiz and reveals feedback only after answering", () => {
     render(<Qbank />);
-    // The header leads with the shelf identity (not a redundant "Question Bank"
-    // title, which the nav tab already provides).
-    expect(screen.getByRole("heading", { name: /internal medicine shelf/i })).toBeInTheDocument();
-
+    // No in-screen header — the setup screen goes straight to the controls.
     // Start the quiz from the setup screen.
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
     expect(screen.getByText(/question 1 of/i)).toBeInTheDocument();

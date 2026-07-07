@@ -208,8 +208,6 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
     const runCount = sessionLen === "all" ? eligible.length : Math.min(sessionLen, eligible.length);
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-        <Header bank={bank} />
-
         <div className="card p-5 space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">
             <label className="space-y-1.5 block">
@@ -347,7 +345,6 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
       pct >= 80 ? "var(--color-exam-ok)" : pct >= 60 ? "var(--color-exam-warn)" : "var(--color-exam-danger)";
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
-        <Header bank={bank} />
         <div className="card p-6 text-center space-y-2 pop-in">
           <div className="panel-label">Quiz complete</div>
           <div className="text-[40px] font-extrabold tabular-nums" style={{ color: band }}>
@@ -633,25 +630,3 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-/**
- * Screen header — leads with the bank's shelf identity + blurb. The generic
- * "Question Bank" title is intentionally omitted: the "Questions" nav tab
- * already labels the screen, so repeating it here is redundant.
- */
-function Header({ bank }: { bank: McqBank }) {
-  return (
-    <div className="flex items-start gap-3">
-      <span className="icon-tile" style={{ background: bank.grad }} aria-hidden="true">
-        {bank.icon}
-      </span>
-      <div className="space-y-0.5">
-        <h2 className="text-[22px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-          {bank.eyebrow}
-        </h2>
-        <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-          {bank.blurb}
-        </p>
-      </div>
-    </div>
-  );
-}
