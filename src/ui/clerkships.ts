@@ -135,6 +135,21 @@ export const CLERKSHIPS: Clerkship[] = [
     ],
   },
   {
+    id: "obgyn",
+    short: "OB/GYN",
+    full: "Obstetrics & Gynecology",
+    tools: [
+      {
+        view: "obmcq",
+        label: "Questions",
+        icon: "🤰",
+        grad: "var(--grad-coral)",
+        blurb:
+          "Single-best-answer MCQs for the OB/GYN shelf — comprehensive obstetrics and gynecology with instant feedback and explanations. Cram by domain and redo the ones you miss.",
+      },
+    ],
+  },
+  {
     id: "neuro",
     short: "Neuro",
     full: "Neurology",

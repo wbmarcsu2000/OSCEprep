@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { manifest } from "../../data/loader";
 import { SHELF_MCQS } from "../../data/shelfMcq";
 import { FM_MCQS } from "../../data/familyMedMcq";
+import { OB_MCQS } from "../../data/obgynMcq";
 import { loadAttempts } from "../../analytics/store";
 import { useAppStore } from "../store";
 import { CLERKSHIPS } from "../clerkships";
@@ -25,6 +26,7 @@ export function Home() {
     if (view === "select") return `${manifest.cases.length} cases · ${done} done`;
     if (view === "mcq") return `${SHELF_MCQS.length} questions`;
     if (view === "fmmcq") return `${FM_MCQS.length} questions`;
+    if (view === "obmcq") return `${OB_MCQS.length} questions`;
     return undefined;
   };
 

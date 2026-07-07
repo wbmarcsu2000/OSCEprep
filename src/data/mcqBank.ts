@@ -7,6 +7,7 @@
 
 import { SHELF_MCQS, MCQ_SYSTEMS, type McqQuestion } from "./shelfMcq";
 import { FM_MCQS, FM_MCQ_SYSTEMS } from "./familyMedMcq";
+import { OB_MCQS, OB_MCQ_SYSTEMS } from "./obgynMcq";
 
 export interface McqBank {
   id: string;
@@ -51,4 +52,17 @@ export const FM_BANK: McqBank = {
   questions: FM_MCQS,
   systems: FM_MCQ_SYSTEMS,
   storageKey: "osce.fmmcq.v1",
+};
+
+export const OB_BANK: McqBank = {
+  id: "ob",
+  title: "Question Bank",
+  eyebrow: "OB/GYN shelf",
+  blurb:
+    "Single-best-answer MCQs for the OB/GYN shelf — comprehensive high-yield obstetrics and gynecology, with instant feedback and explanations. Quick vignettes, redo the ones you miss.",
+  icon: "🤰",
+  grad: "var(--grad-coral)",
+  questions: OB_MCQS,
+  systems: OB_MCQ_SYSTEMS,
+  storageKey: "osce.obmcq.v1",
 };
