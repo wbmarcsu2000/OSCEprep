@@ -72,6 +72,9 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   const [system, setSystem] = useState<string>("All");
   const [subset, setSubset] = useState<Subset>("all");
   const [shuffleQs, setShuffleQs] = useState(true);
+  // Session length: cap how many eligible questions a single run draws, so a
+  // 1,800-question bank can be tackled in chunks. "all" = the whole subset.
+  const [sessionLen, setSessionLen] = useState<number | "all">(20);
 
   // Snapshot progress on mount and after each answer so subset counts/mastery update.
   const [progress, setProgress] = useState<McqProgress>(() => loadMcqProgress(storageKey));
@@ -99,9 +102,12 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   );
 
   const startRun = useCallback(
-    (questions: McqQuestion[]) => {
+    (questions: McqQuestion[], limit?: number) => {
       const prepared = questions.map(shuffleOptions);
-      const run = shuffleQs ? shuffle(prepared) : prepared;
+      const ordered = shuffleQs ? shuffle(prepared) : prepared;
+      // Slice AFTER shuffling so a capped session is a random draw from the pool
+      // (with shuffle off it's the next sequential chunk in bank order).
+      const run = typeof limit === "number" ? ordered.slice(0, limit) : ordered;
       setQueue(run);
       setAnswers(new Array(run.length).fill(null));
       setIdx(0);
@@ -175,6 +181,8 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
     const mastered = questions.filter((q) => progress[q.id]?.lastCorrect).length;
     const unseenCount = pool.filter((q) => inSubset(q, "unseen", progress)).length;
     const incorrectCount = pool.filter((q) => inSubset(q, "incorrect", progress)).length;
+    // How many this run will actually draw (capped by what's eligible).
+    const runCount = sessionLen === "all" ? eligible.length : Math.min(sessionLen, eligible.length);
     return (
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7 space-y-4">
         <Header exit={exitToSelect} bank={bank} />
@@ -210,6 +218,47 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             </div>
           </div>
 
+          <div className="space-y-1.5">
+            <span className="panel-label">Questions this session</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <Segmented
+                label="Questions this session"
+                options={[
+                  { value: "10", label: "10" },
+                  { value: "20", label: "20" },
+                  { value: "50", label: "50" },
+                  { value: "100", label: "100" },
+                  { value: "all", label: "All" },
+                ]}
+                value={sessionLen === "all" ? "all" : String(sessionLen)}
+                onChange={(v) => setSessionLen(v === "all" ? "all" : Number(v))}
+              />
+              <label className="flex items-center gap-1.5 text-[13px] font-semibold">
+                <span style={{ color: "var(--color-exam-muted)" }}>Custom</span>
+                <input
+                  type="number"
+                  min={1}
+                  value={sessionLen === "all" ? "" : sessionLen}
+                  onChange={(e) => {
+                    const n = parseInt(e.target.value, 10);
+                    setSessionLen(Number.isFinite(n) && n > 0 ? n : "all");
+                  }}
+                  className="input w-20 text-[14px]"
+                  aria-label="Custom session length"
+                  placeholder="all"
+                />
+              </label>
+            </div>
+            {eligible.length > 0 && (
+              <p className="hint">
+                Draws {runCount} of the {eligible.length} in this subset
+                {runCount < eligible.length
+                  ? " — repeat an Unseen session to walk the bank in fresh chunks."
+                  : "."}
+              </p>
+            )}
+          </div>
+
           <label className="flex items-center gap-2 text-[13.5px] font-semibold cursor-pointer w-fit">
             <input
               type="checkbox"
@@ -224,11 +273,11 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             <button
               className="btn btn-primary"
               disabled={eligible.length === 0}
-              onClick={() => startRun(eligible)}
+              onClick={() => startRun(eligible, sessionLen === "all" ? undefined : sessionLen)}
             >
               {eligible.length === 0
                 ? "No questions in this subset"
-                : `Start quiz · ${eligible.length} question${eligible.length === 1 ? "" : "s"} →`}
+                : `Start quiz · ${runCount} question${runCount === 1 ? "" : "s"} →`}
             </button>
             {subset === "incorrect" && incorrectCount === 0 && (
               <span className="hint">Nothing missed here yet — answer some questions first.</span>

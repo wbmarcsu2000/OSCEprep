@@ -149,4 +149,39 @@ describe("Question Bank screen", () => {
     expect(screen.getByText(/Mnemonic/)).toBeInTheDocument();
     expect(screen.getByText(/MNEMONIC_TEXT/)).toBeInTheDocument();
   });
+
+  it("caps a session to the chosen number of questions (chunked test mode)", () => {
+    // A bank of 8 questions; the session-length picker should bound the run.
+    const questions: McqQuestion[] = Array.from({ length: 8 }, (_, i) => ({
+      id: `chunk-${i}`,
+      system: "Cardiology",
+      topic: `Topic ${i}`,
+      stem: `This is question number ${i} with a sufficiently long stem to be valid.`,
+      options: ["Option one", "Option two", "Option three", "Option four"],
+      answerIndex: 0,
+      explanation: "Because this is the best answer for the purposes of the test.",
+    }));
+    const bank: McqBank = {
+      id: "chunk",
+      title: "Question Bank",
+      eyebrow: "Test",
+      blurb: "test bank",
+      icon: "❓",
+      grad: "var(--grad-teal)",
+      questions,
+      systems: ["Cardiology"],
+      storageKey: "osce.chunk.test",
+    };
+    render(<Qbank bank={bank} />);
+
+    // Default is 20, but only 8 are eligible → the button offers all 8.
+    expect(screen.getByRole("button", { name: /start quiz · 8 questions/i })).toBeInTheDocument();
+
+    // Choose a chunk of 3 via the custom input; the button and the quiz follow.
+    fireEvent.change(screen.getByLabelText(/custom session length/i), { target: { value: "3" } });
+    expect(screen.getByRole("button", { name: /start quiz · 3 questions/i })).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
+    expect(screen.getByText(/question 1 of 3/i)).toBeInTheDocument();
+  });
 });
