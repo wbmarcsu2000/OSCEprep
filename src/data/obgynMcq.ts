@@ -28,6 +28,7 @@ export const OB_MCQ_SYSTEM_ORDER = [
   "Medical Complications of Pregnancy",
   "Labor & Delivery",
   "Postpartum",
+  "Newborn & Neonatal",
   "Menstrual Disorders",
   "Reproductive Endocrinology & Infertility",
   "Contraception",
@@ -37,12 +38,61 @@ export const OB_MCQ_SYSTEM_ORDER = [
   "Breast Disorders",
   "Gynecologic Infections & STIs",
   "Cervical Dysplasia & Screening",
+  "Sexual Health & Assault",
   "Pharmacology",
+  "Ethics & Social Sciences",
 ] as const;
 
 export const OB_MCQS: McqQuestion[] = [
   {
     "id": "ob-prenatal-care-normal-pregnancy-1",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "ACE inhibitor fetopathy",
+    "stem": "A woman inadvertently continued lisinopril into the second trimester before her pregnancy was recognized. Which fetal complication is most classically associated with this exposure?",
+    "options": [
+      "Ebstein anomaly",
+      "Oligohydramnios and fetal renal failure",
+      "Vaginal clear cell adenocarcinoma in the offspring",
+      "Neural tube defects",
+      "Limb reduction defects"
+    ],
+    "answerIndex": 1,
+    "explanation": "Second- and third-trimester ACE inhibitor exposure causes fetal renal dysgenesis and reduced fetal urine output, leading to oligohydramnios, along with skull ossification defects and growth restriction.",
+    "optionRationales": [
+      "Incorrect: Ebstein anomaly is classically associated with lithium exposure, not ACE inhibitors.",
+      "Correct: ACE inhibitors impair fetal renal perfusion and function, producing oligohydramnios and renal failure, classically called ACE inhibitor fetopathy.",
+      "Incorrect: vaginal clear cell adenocarcinoma is associated with in utero diethylstilbestrol (DES) exposure, not ACE inhibitors.",
+      "Incorrect: neural tube defects are associated with folate antagonists (e.g., valproic acid, methotrexate), not ACE inhibitors.",
+      "Incorrect: limb reduction defects are associated with agents such as thalidomide and misoprostol, not ACE inhibitors."
+    ],
+    "concept": "ACE inhibitor/ARB exposure later in pregnancy causes fetal renal dysgenesis, oligohydramnios, pulmonary hypoplasia, and skull ossification defects, collectively termed ACE inhibitor fetopathy — reinforcing why these agents must be stopped before conception.",
+    "discriminator": "Unlike lithium (Ebstein anomaly) or valproate (neural tube defects), ACE inhibitors cause a distinct fetopathy centered on renal dysgenesis and oligohydramnios from impaired fetal renal blood flow."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-2",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "ACE inhibitor switch preconception",
+    "stem": "A 33-year-old woman with chronic hypertension controlled on lisinopril presents for preconception counseling and states she plans to conceive within the next few months. Which of the following is the most appropriate management of her antihypertensive regimen?",
+    "options": [
+      "Switch to labetalol or nifedipine before conception",
+      "Discontinue all antihypertensive medication with no substitute",
+      "Add a thiazide diuretic to the current regimen",
+      "Continue lisinopril unchanged through pregnancy",
+      "Switch to warfarin for blood pressure control"
+    ],
+    "answerIndex": 0,
+    "explanation": "ACE inhibitors are teratogenic (associated with fetal renal dysgenesis, oligohydramnios, and other anomalies when used in the second and third trimesters) and should be switched to a pregnancy-safe agent such as labetalol or nifedipine before conception.",
+    "optionRationales": [
+      "Correct: labetalol and nifedipine are pregnancy-compatible antihypertensives appropriate to substitute before conception.",
+      "Stopping all treatment risks uncontrolled hypertension, which itself carries maternal and fetal risk; a safe alternative should be substituted, not omitted.",
+      "Adding a thiazide does not address the teratogenic risk of the ACE inhibitor itself.",
+      "ACE inhibitors are contraindicated in pregnancy due to fetal renal toxicity and should not be continued.",
+      "Warfarin is an anticoagulant, not an antihypertensive, and is itself teratogenic; it is not an appropriate substitution here."
+    ],
+    "concept": "Preconception medication review should identify teratogenic drugs used for chronic conditions (e.g., ACE inhibitors/ARBs for hypertension) and transition patients to pregnancy-compatible alternatives before conception whenever feasible."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-3",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "ACE inhibitor teratogenicity",
     "stem": "A 32-year-old woman with chronic hypertension controlled on lisinopril presents for preconception counseling because she is planning to conceive. Which of the following is the most appropriate next step regarding her antihypertensive regimen?",
@@ -65,7 +115,7 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "ACE inhibitors and ARBs are teratogenic, causing fetal renal dysgenesis, oligohydramnios, pulmonary hypoplasia, and skull ossification defects, especially with second- and third-trimester exposure. Patients of reproductive age on these agents should be counseled to switch to pregnancy-safe antihypertensives (labetalol, nifedipine, hydralazine, methyldopa) before or as soon as pregnancy is confirmed."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-2",
+    "id": "ob-prenatal-care-normal-pregnancy-4",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Asymptomatic bacteriuria screening",
     "stem": "A 25-year-old woman at 10 weeks gestation has a routine urine culture at her first prenatal visit that grows greater than 100,000 CFU/mL of Escherichia coli. She reports no dysuria, urgency, or flank pain, and her vital signs are normal. Which of the following is the most appropriate next step?",
@@ -93,7 +143,31 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "Pregnancy status is the key factor that mandates treatment of asymptomatic bacteriuria, in contrast to standard practice in nonpregnant adults where it is not treated."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-3",
+    "id": "ob-prenatal-care-normal-pregnancy-5",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Beta-blocker choice in chronic hypertension",
+    "stem": "A woman with chronic hypertension controlled on atenolol is being counseled preconception. Which of the following is the most appropriate management of her antihypertensive regimen?",
+    "options": [
+      "Switch from atenolol to labetalol before conception",
+      "Continue atenolol unchanged, as all beta-blockers are equally safe in pregnancy",
+      "Increase the atenolol dose to further lower blood pressure before conception",
+      "Discontinue atenolol with no replacement therapy prior to conception",
+      "Add hydrochlorothiazide to the atenolol regimen before conception"
+    ],
+    "answerIndex": 0,
+    "explanation": "Atenolol has been associated with fetal growth restriction and is generally avoided in pregnancy; labetalol is the preferred beta-blocker given its more favorable fetal safety profile.",
+    "optionRationales": [
+      "Correct: switching from atenolol to labetalol before conception avoids early pregnancy exposure to an agent linked with fetal growth restriction.",
+      "Incorrect: not all beta-blockers carry the same fetal safety profile — atenolol specifically has been linked with growth restriction, unlike labetalol.",
+      "Incorrect: increasing the atenolol dose would increase, not mitigate, the fetal risk associated with this specific agent.",
+      "Incorrect: chronic hypertension should remain treated with a pregnancy-safe substitute, not left untreated, to avoid maternal and fetal complications of uncontrolled blood pressure.",
+      "Incorrect: adding a thiazide diuretic does not address the specific concern with atenolol and thiazides are not preferred first-line in pregnancy."
+    ],
+    "concept": "Atenolol is associated with fetal growth restriction and is avoided in pregnancy; labetalol is the preferred beta-blocker for chronic hypertension in women who are pregnant or planning conception.",
+    "discriminator": "Both are beta-blockers, but atenolol (unlike labetalol) is specifically linked to fetal growth restriction, making labetalol the preferred agent preconception and in pregnancy."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-6",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "beta-hCG discriminatory zone",
     "stem": "A 28-year-old woman with a positive urine pregnancy test presents with mild lower abdominal pain and no vaginal bleeding. She is hemodynamically stable. Serum beta-hCG is 2200 mIU/mL, and transvaginal ultrasound shows no intrauterine or adnexal gestational sac and no free fluid. Which of the following is the most appropriate next step?",
@@ -122,7 +196,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "Hemodynamic stability is what separates watchful serial testing from emergent surgical evaluation, not the absolute hCG value alone."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-4",
+    "id": "ob-prenatal-care-normal-pregnancy-7",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "beta-hCG rise pattern, ectopic vs normal",
     "stem": "A 24-year-old woman with a positive pregnancy test has a serum beta-hCG of 800 mIU/mL. Two days later it is 1050 mIU/mL. Which of the following statements best characterizes this trend?",
@@ -150,7 +224,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-5",
+    "id": "ob-prenatal-care-normal-pregnancy-8",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Cardiac output changes in pregnancy",
     "stem": "A 24-year-old woman at 28 weeks gestation undergoes routine cardiovascular assessment. Compared to her pre-pregnancy baseline, which of the following changes is expected?",
@@ -174,7 +248,30 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "Falling systemic vascular resistance alongside rising cardiac output (rather than a compensatory rise in resistance) is the hallmark that distinguishes normal pregnancy physiology from a hypertensive process."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-6",
+    "id": "ob-prenatal-care-normal-pregnancy-9",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Carrier screening result counseling",
+    "stem": "A couple undergoes preconception carrier screening. The woman is found to be a carrier for cystic fibrosis. Which of the following is the most appropriate next step?",
+    "options": [
+      "Recommend she avoid pregnancy entirely",
+      "Proceed directly to chorionic villus sampling without partner testing",
+      "No further testing is needed since carrier status alone does not affect the fetus",
+      "Offer partner (reproductive partner) testing for the same condition to assess risk to future offspring",
+      "Reassure the couple that autosomal recessive conditions cannot be passed to offspring if only one parent is a carrier symptomatically"
+    ],
+    "answerIndex": 3,
+    "explanation": "When one partner is found to be a carrier of an autosomal recessive condition, the reproductive partner should be offered testing for the same condition; if both are carriers, the couple faces a 25% risk per pregnancy of an affected offspring and can be counseled on options including prenatal diagnosis, preimplantation genetic testing, or donor gametes.",
+    "optionRationales": [
+      "A single carrier result does not mean pregnancy should be avoided; risk depends on the partner's carrier status.",
+      "Invasive prenatal diagnostic testing like CVS should follow partner testing and genetic counseling, not precede it, and is unnecessary if the partner is not a carrier.",
+      "Carrier status is highly relevant to reproductive risk if the partner is also a carrier, so further evaluation is warranted, not dismissal.",
+      "Correct: partner testing is the appropriate next step to determine whether the couple is at risk for having an affected child.",
+      "This statement is incorrect reasoning; a couple where both partners are carriers of the same autosomal recessive condition does have a 25% risk of an affected child per pregnancy."
+    ],
+    "concept": "Carrier screening results are interpreted as a couple, not an individual; a positive result in one partner should prompt testing of the reproductive partner to calculate accurate reproductive risk and guide genetic counseling."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-10",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Cell-free DNA aneuploidy screening",
     "stem": "A 37-year-old woman at 11 weeks gestation wants noninvasive screening for fetal aneuploidy given her age. Cell-free fetal DNA testing returns a high-risk result for trisomy 21. Which of the following is the most appropriate next step?",
@@ -201,7 +298,53 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-7",
+    "id": "ob-prenatal-care-normal-pregnancy-11",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Chronic hypertension BP treatment threshold",
+    "stem": "A woman with chronic hypertension is being counseled before conception. According to current guidance, at what blood pressure threshold should antihypertensive therapy be initiated or continued to reduce adverse pregnancy outcomes?",
+    "options": [
+      "Blood pressure ≥140/90 mmHg",
+      "Blood pressure ≥150/100 mmHg only in women with diabetes",
+      "Blood pressure ≥130/80 mmHg only if proteinuria is present",
+      "Blood pressure ≥160/110 mmHg only",
+      "Treatment should be withheld until the third trimester regardless of blood pressure"
+    ],
+    "answerIndex": 0,
+    "explanation": "Current evidence (including the CHAP trial) supports treating chronic hypertension in pregnancy to a target blood pressure below 140/90 mmHg to reduce risk of preeclampsia, preterm birth, and other adverse outcomes, and this target should guide preconception medication planning.",
+    "optionRationales": [
+      "Correct: treatment to a target of <140/90 mmHg improves pregnancy outcomes compared with reserving therapy for severe-range hypertension.",
+      "Incorrect: the treatment threshold applies broadly to chronic hypertension in pregnancy, not only to women with comorbid diabetes.",
+      "Incorrect: treatment decisions are not contingent on proteinuria, which reflects superimposed preeclampsia rather than chronic hypertension control.",
+      "Incorrect: older practice reserved treatment for severe hypertension (≥160/110), but current guidance supports treating at the lower ≥140/90 threshold.",
+      "Incorrect: chronic hypertension should be managed continuously from preconception through pregnancy, not deferred to the third trimester."
+    ],
+    "concept": "Contemporary guidance supports initiating or continuing antihypertensive therapy for chronic hypertension in pregnancy at a threshold of 140/90 mmHg, rather than waiting for severe-range blood pressures, to reduce risk of preeclampsia and other adverse outcomes."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-12",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Chronic hypertension medication switch",
+    "stem": "A 34-year-old woman with chronic hypertension controlled on lisinopril presents for preconception counseling because she plans to conceive within 3 months. Which is the most appropriate next step regarding her antihypertensive therapy?",
+    "options": [
+      "Add an angiotensin receptor blocker to improve blood pressure control before conception",
+      "Discontinue all antihypertensive therapy prior to conception",
+      "Switch to labetalol before she attempts to conceive",
+      "Continue lisinopril throughout pregnancy since it is safe in the first trimester",
+      "Continue lisinopril and only switch medications once pregnancy is confirmed"
+    ],
+    "answerIndex": 2,
+    "explanation": "ACE inhibitors are teratogenic (fetal renal and other malformations) and should be switched to a pregnancy-compatible agent such as labetalol before conception, since organogenesis begins before pregnancy is typically recognized.",
+    "optionRationales": [
+      "Incorrect: ARBs share the same teratogenic risk profile as ACE inhibitors and should not be used in or near pregnancy.",
+      "Incorrect: chronic hypertension should remain treated, not abruptly stopped, to avoid maternal complications from uncontrolled blood pressure.",
+      "Correct: transitioning to a safe agent like labetalol before conception avoids early fetal exposure to a teratogenic ACE inhibitor.",
+      "Incorrect: ACE inhibitors are contraindicated in pregnancy due to risk of fetal renal dysgenesis, oligohydramnios, and skull ossification defects, including in later first trimester.",
+      "Incorrect: waiting until pregnancy is confirmed risks fetal exposure during the earliest, most vulnerable weeks of organogenesis."
+    ],
+    "concept": "ACE inhibitors and ARBs are teratogenic and should be discontinued and replaced with a pregnancy-safe antihypertensive (labetalol, nifedipine, or methyldopa) before conception, since fetal organ development begins before pregnancy is clinically recognized."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-13",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Elevated MSAFP interpretation",
     "stem": "A 28-year-old G2P1 woman at 16 weeks gestation by last menstrual period has a maternal serum AFP level of 2.6 times the median for gestational age. Which of the following is the most appropriate next step?",
@@ -225,7 +368,30 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The single most common explanation for any abnormal AFP result is incorrect gestational age, which is why ultrasound (not repeat labs or amniocentesis) is always the next step."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-8",
+    "id": "ob-prenatal-care-normal-pregnancy-14",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Fetal alcohol spectrum disorder significance",
+    "stem": "As part of preconception counseling, a physician explains the importance of alcohol cessation before pregnancy. Which statement best supports this counseling?",
+    "options": [
+      "Fetal alcohol effects are limited to the third trimester of pregnancy",
+      "Alcohol-related birth defects occur only with daily heavy use exceeding 5 drinks",
+      "Moderate alcohol use preconception has been shown to improve fertility",
+      "Fetal alcohol syndrome is the leading preventable cause of intellectual disability in the United States",
+      "Fetal alcohol syndrome features resolve completely by early childhood"
+    ],
+    "answerIndex": 3,
+    "explanation": "Fetal alcohol syndrome, characterized by growth restriction, characteristic facial features, and central nervous system abnormalities, is the leading preventable cause of intellectual disability in the United States, underscoring the importance of complete abstinence.",
+    "optionRationales": [
+      "Incorrect: the embryo/fetus is vulnerable to alcohol teratogenicity throughout pregnancy, including the earliest weeks of organogenesis.",
+      "Incorrect: alcohol-related fetal harm can occur with lower or intermittent intake, not only with heavy daily use.",
+      "Incorrect: alcohol use has no established fertility benefit and instead poses reproductive and fetal risk.",
+      "Correct: this fact underlies why complete alcohol avoidance is emphasized in preconception and prenatal counseling.",
+      "Incorrect: the growth, facial, and neurocognitive effects of fetal alcohol syndrome are permanent, not resolving with age."
+    ],
+    "concept": "Fetal alcohol syndrome causes permanent growth restriction, characteristic craniofacial features (smooth philtrum, thin vermilion border, small palpebral fissures), and neurodevelopmental impairment, making it the leading preventable cause of intellectual disability in the U.S."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-15",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "First prenatal visit infection screening",
     "stem": "A 19-year-old woman with multiple sexual partners presents for her first prenatal visit at 10 weeks gestation. In addition to standard first-trimester labs, which of the following is specifically indicated given her risk profile?",
@@ -253,7 +419,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-9",
+    "id": "ob-prenatal-care-normal-pregnancy-16",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "First prenatal visit lab panel",
     "stem": "A 27-year-old woman, G2P1, presents for her first prenatal visit at 8 weeks gestation. Which of the following laboratory tests should be routinely obtained at this visit to screen for maternal alloimmunization risk?",
@@ -276,7 +442,7 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "The first prenatal visit includes a standard panel: CBC (for anemia), blood type and Rh(D) status, indirect Coombs (antibody) screen, infection screening (HIV, hepatitis B/C, syphilis, chlamydia/gonorrhea if indicated), rubella and varicella immunity, and a urine culture. Rh-negative women require repeat antibody screening later in pregnancy and RhoGAM at 28 weeks if unsensitized."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-10",
+    "id": "ob-prenatal-care-normal-pregnancy-17",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "First prenatal visit labs",
     "stem": "A 25-year-old G1P0 woman presents for her first prenatal visit at 8 weeks gestation. Which of the following is part of the routine laboratory workup performed at this initial visit?",
@@ -304,7 +470,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-11",
+    "id": "ob-prenatal-care-normal-pregnancy-18",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "First-trimester combined screen interpretation",
     "stem": "A 32-year-old woman undergoes first-trimester combined screening at 12 weeks gestation. Results show increased nuchal translucency, increased beta-hCG, and decreased PAPP-A. Which of the following aneuploidies is most consistent with this pattern?",
@@ -333,7 +499,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The direction of the beta-hCG change (increased vs decreased) is what distinguishes the trisomy 21 pattern from the trisomy 18 pattern, since both share increased NT and decreased PAPP-A."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-12",
+    "id": "ob-prenatal-care-normal-pregnancy-19",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Folate supplementation for NTD prevention",
     "stem": "A 30-year-old woman with well-controlled epilepsy on valproic acid is planning to conceive. Which of the following is the most appropriate recommendation regarding folic acid supplementation before conception?",
@@ -360,7 +526,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-13",
+    "id": "ob-prenatal-care-normal-pregnancy-20",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Fundal height at umbilicus = 20 weeks",
     "stem": "A 22-year-old G1P0 woman presents at 16 weeks gestation by last menstrual period with new hypertension and proteinuria. On examination, the fundal height is palpated at the level of the umbilicus. Which of the following is the most likely diagnosis?",
@@ -384,7 +550,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "Onset of hypertension/proteinuria before 20 weeks gestation with a large-for-dates uterus excludes preeclampsia and points to molar pregnancy."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-14",
+    "id": "ob-prenatal-care-normal-pregnancy-21",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Fundal height correlates with gestational age",
     "stem": "A 34-year-old G2P1 woman with poorly controlled pregestational diabetes is at 32 weeks gestation by last menstrual period, confirmed by an early first-trimester ultrasound. On examination, her fundal height measures 37 cm. Which of the following is the most likely explanation for this finding?",
@@ -413,7 +579,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The clinical context of poorly controlled maternal diabetes with confirmed dating points to polyhydramnios rather than a dating error or growth restriction."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-15",
+    "id": "ob-prenatal-care-normal-pregnancy-22",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "GBS screening timing",
     "stem": "A healthy 26-year-old G1P0 woman presents for a routine prenatal visit at 34 weeks gestation. According to current guidelines, when should she undergo screening for group B Streptococcus colonization?",
@@ -442,7 +608,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-16",
+    "id": "ob-prenatal-care-normal-pregnancy-23",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Gestational weight gain by BMI",
     "stem": "A 27-year-old woman with a pre-pregnancy BMI of 32 kg/m^2 (obese) presents for her first prenatal visit. Which of the following is the most appropriate recommended total weight gain for this pregnancy?",
@@ -471,7 +637,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-17",
+    "id": "ob-prenatal-care-normal-pregnancy-24",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Hematologic changes: platelets and WBC",
     "stem": "A 31-year-old asymptomatic woman at 34 weeks gestation has a platelet count of 128,000/uL on routine labs; it was 240,000/uL prior to pregnancy. She has no bleeding, bruising, or hypertension, and prior prenatal labs have shown a similar gradual decline. Which of the following is the most likely explanation?",
@@ -495,7 +661,31 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The absence of hypertension, elevated liver enzymes, hemolysis, or bleeding symptoms distinguishes benign gestational thrombocytopenia from pathologic causes like HELLP or ITP."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-18",
+    "id": "ob-prenatal-care-normal-pregnancy-25",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "High-dose folic acid, prior NTD",
+    "stem": "A 31-year-old woman had a prior pregnancy complicated by fetal spina bifida and is now planning another pregnancy. She takes no medications and has no other medical problems. Which folic acid regimen most effectively reduces her risk of recurrent neural tube defect in this pregnancy?",
+    "options": [
+      "4 mg daily starting at least 1 month before conception",
+      "800 mcg daily starting at least 1 month before conception",
+      "4 mg daily starting only during the second trimester",
+      "1 mg daily starting at conception",
+      "400 mcg daily starting after conception is confirmed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Women with a prior pregnancy affected by a neural tube defect should take the high-dose 4 mg folic acid daily, beginning 1-3 months before conception and continuing through the first trimester, to substantially reduce recurrence risk.",
+    "optionRationales": [
+      "Correct: 4 mg daily starting preconceptionally is the recommended high-risk regimen for women with a prior NTD-affected pregnancy.",
+      "800 mcg is an intermediate dose sometimes used in other contexts but is not the evidence-based recurrence-prevention dose for this history.",
+      "Starting in the second trimester is far too late, since neural tube closure occurs by about 4 weeks gestation.",
+      "1 mg is neither the correct high-risk dose nor sufficient to maximize recurrence risk reduction in this population.",
+      "This is the standard low-risk dose and starting after conception is also too late for the critical closure window."
+    ],
+    "concept": "A prior pregnancy affected by a neural tube defect increases recurrence risk roughly tenfold; high-dose folic acid (4 mg/day) started before conception meaningfully lowers this risk.",
+    "discriminator": "Unlike average-risk women who use 400 mcg, women with a personal history of an NTD-affected pregnancy require the tenfold higher 4 mg dose."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-26",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Inactivated influenza vaccine safety",
     "stem": "A 30-year-old G1P0 woman at 18 weeks gestation presents in October for a routine prenatal visit. She asks whether it is safe to receive her annual influenza vaccine while pregnant. Which of the following is the most appropriate response?",
@@ -519,7 +709,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "Vaccine formulation (inactivated injectable vs live intranasal) is the key distinguishing feature, not gestational age."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-19",
+    "id": "ob-prenatal-care-normal-pregnancy-27",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Indirect Coombs test at prenatal intake",
     "stem": "A 33-year-old G3P2 woman with blood type B negative presents for her first prenatal visit of her third pregnancy. She received RhoGAM appropriately during both of her prior two pregnancies. Which of the following is the most appropriate next step?",
@@ -543,7 +733,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The indirect Coombs test screens maternal serum for antibodies; the direct Coombs test instead detects antibody already bound to RBCs and is used in the neonate, not as a maternal antenatal screen."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-20",
+    "id": "ob-prenatal-care-normal-pregnancy-28",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Intrapartum GBS prophylaxis regimen",
     "stem": "A 30-year-old G2P1 woman in active labor at 39 weeks is found to be GBS-positive on her 36-week screening culture. She reports a history of a mild, non-anaphylactic rash to penicillin as a child. Which of the following is the most appropriate intrapartum antibiotic?",
@@ -572,7 +762,30 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-21",
+    "id": "ob-prenatal-care-normal-pregnancy-29",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Isotretinoin preconception counseling",
+    "stem": "A 22-year-old woman using isotretinoin for severe cystic acne asks her physician about pregnancy planning. Which of the following is the most appropriate counseling regarding isotretinoin and conception?",
+    "options": [
+      "She should wait 12 months after stopping isotretinoin before attempting conception",
+      "She only needs to stop isotretinoin once she confirms a positive pregnancy test",
+      "She may conceive at any time while continuing isotretinoin",
+      "Isotretinoin has no established teratogenic effects",
+      "She should use two forms of contraception during treatment and avoid conception for at least 1 month after stopping isotretinoin"
+    ],
+    "answerIndex": 4,
+    "explanation": "Isotretinoin is highly teratogenic (causing craniofacial, cardiac, and CNS anomalies), so effective contraception is required during use, and conception should be avoided for at least one month after discontinuation given the drug's washout period.",
+    "optionRationales": [
+      "A 12-month wait is longer than necessary given isotretinoin's relatively short half-life; about 1 month is the standard recommendation.",
+      "Waiting until a positive pregnancy test is far too late, as organogenesis would already be underway with drug exposure.",
+      "Isotretinoin is a potent teratogen; conception should not occur while taking it.",
+      "Isotretinoin has clear, well-documented teratogenic effects, making this statement false.",
+      "Correct: strict contraception during treatment and a one-month waiting period after discontinuation reflect the drug's teratogenicity and pharmacokinetics."
+    ],
+    "concept": "Preconception medication review should identify teratogens with strict reproductive precautions, such as isotretinoin, which requires mandatory contraception during treatment (per REMS programs) and a defined washout period before attempting conception."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-30",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Isotretinoin pregnancy contraindication",
     "stem": "A 19-year-old woman with severe cystic acne is being considered for isotretinoin therapy. Which of the following is required before initiating this medication given its reproductive risk profile?",
@@ -595,7 +808,7 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "Isotretinoin is a severe teratogen causing craniofacial anomalies, cardiac defects, CNS malformations, and thymic abnormalities with even brief first-trimester exposure. Its use in women of reproductive potential requires strict pregnancy prevention measures (dual contraception, serial pregnancy testing) under regulatory programs like iPLEDGE."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-22",
+    "id": "ob-prenatal-care-normal-pregnancy-31",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Live vaccine contraindication in pregnancy",
     "stem": "A 24-year-old G1P0 woman at 10 weeks gestation is found to be non-immune to rubella on routine first-trimester serology. She is otherwise healthy and asymptomatic. Which of the following is the most appropriate next step regarding rubella immunization?",
@@ -625,7 +838,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The vaccine type (live-attenuated vs inactivated) determines safety in pregnancy, not the patient's trimester or immune status."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-23",
+    "id": "ob-prenatal-care-normal-pregnancy-32",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Low MSAFP and aneuploidy risk",
     "stem": "A 36-year-old G1P0 woman undergoes second-trimester quad screen at 17 weeks gestation. Results show low AFP, low estriol, elevated beta-hCG, and elevated inhibin A. Which of the following is the most likely diagnosis?",
@@ -655,7 +868,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The directionality of hCG and inhibin A (elevated in trisomy 21 vs decreased in trisomy 18) distinguishes the two despite both showing low AFP and low estriol."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-24",
+    "id": "ob-prenatal-care-normal-pregnancy-33",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Naegele's rule for EDD",
     "stem": "A 26-year-old woman presents for her first prenatal visit. Her last menstrual period began on April 10, and she reports regular 28-day cycles. Using Naegele's rule, which of the following is her estimated date of delivery?",
@@ -679,7 +892,7 @@ export const OB_MCQS: McqQuestion[] = [
     "mnemonic": "Naegele's rule: LMP + 7 days - 3 months + 1 year"
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-25",
+    "id": "ob-prenatal-care-normal-pregnancy-34",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Physiologic anemia and dilution",
     "stem": "A 29-year-old woman at 30 weeks gestation has a hemoglobin of 10.4 g/dL and MCV of 88 fL on routine prenatal labs. Ferritin is normal. Which of the following best explains this finding?",
@@ -703,7 +916,169 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "A normal MCV with normal ferritin in the setting of pregnancy points to dilutional physiology rather than a true nutritional or hemoglobinopathy-related anemia."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-26",
+    "id": "ob-prenatal-care-normal-pregnancy-35",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception A1c target in diabetes",
+    "stem": "A 29-year-old woman with type 1 diabetes mellitus is planning conception. Her most recent hemoglobin A1c is 9.2%. Which of the following is the most appropriate next step in her preconception management?",
+    "options": [
+      "Advise her that current glycemic control is acceptable to conceive now",
+      "Switch her immediately to oral metformin monotherapy and attempt conception",
+      "Recommend delaying conception until hemoglobin A1c is under approximately 6.5%",
+      "Recommend delaying conception until hemoglobin A1c is under approximately 10%",
+      "Advise that A1c is not relevant to pregnancy outcomes and she may proceed"
+    ],
+    "answerIndex": 2,
+    "explanation": "Optimizing glycemic control to an A1c under approximately 6.5% (ideally as close to normal as safely achievable) before conception reduces the risk of congenital malformations, miscarriage, and other adverse outcomes associated with periconceptional hyperglycemia.",
+    "optionRationales": [
+      "An A1c of 9.2% carries significantly elevated risk of congenital anomalies and should be optimized before conception, not accepted.",
+      "Switching to metformin is not the standard first step for type 1 diabetes, which requires insulin; the priority is optimizing glycemic control, not changing regimens reflexively.",
+      "Correct: achieving an A1c under about 6.5% preconception minimizes the risk of hyperglycemia-related birth defects and miscarriage.",
+      "An A1c of under 10% is still well above the goal and would leave malformation risk substantially elevated.",
+      "Periconceptional hyperglycemia strongly correlates with congenital malformation risk, making A1c highly relevant to counseling."
+    ],
+    "concept": "Elevated hemoglobin A1c around the time of conception, particularly with organogenesis occurring in the first 8 weeks, is directly associated with increased risk of major congenital anomalies (especially cardiac and neural tube defects) and miscarriage."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-36",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception alcohol counseling",
+    "stem": "A 30-year-old woman who drinks wine socially on weekends is planning to conceive. She asks how much alcohol is safe to continue drinking while trying to become pregnant. Which is the most appropriate response?",
+    "options": [
+      "No amount of alcohol consumption has been established as safe, so she should abstain completely while trying to conceive",
+      "Binge drinking is harmful, but daily light drinking preconception carries no risk",
+      "Up to one glass of wine per week is considered safe during the preconception period",
+      "Alcohol is only teratogenic after the first trimester, so preconception drinking is not a concern",
+      "She may continue her usual drinking pattern until a pregnancy test is positive"
+    ],
+    "answerIndex": 0,
+    "explanation": "No safe threshold of alcohol use in pregnancy (or in the periconceptional period, given early unrecognized pregnancy) has been identified, so complete abstinence is recommended when trying to conceive.",
+    "optionRationales": [
+      "Correct: complete abstinence is recommended because no safe amount or timing of alcohol exposure has been established.",
+      "Incorrect: even light, regular alcohol use can contribute to fetal alcohol spectrum disorder; there is no established safe pattern.",
+      "Incorrect: no quantity of alcohol, including small weekly amounts, has been proven safe.",
+      "Incorrect: the embryo is highly vulnerable to alcohol-related teratogenesis during early organogenesis, before pregnancy may even be recognized.",
+      "Incorrect: because pregnancy is often unrecognized in the first weeks, abstinence should begin at conception attempts, not after a positive test."
+    ],
+    "concept": "There is no known safe amount, pattern, or timing of alcohol use during pregnancy or the preconception period. Because early pregnancy is often unrecognized, women trying to conceive should be counseled to abstain from alcohol entirely."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-37",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception diabetes counseling, risks",
+    "stem": "A 34-year-old woman with poorly controlled type 2 diabetes (A1c 10.5%) presents asking about pregnancy risks if she were to conceive now, before improving glycemic control. Which fetal complication is most strongly associated with periconceptional hyperglycemia specifically during the period of organogenesis?",
+    "options": [
+      "Neonatal respiratory distress syndrome",
+      "Fetal alcohol spectrum disorder",
+      "Placenta previa",
+      "Postterm pregnancy",
+      "Congenital cardiac and neural tube malformations"
+    ],
+    "answerIndex": 4,
+    "explanation": "Hyperglycemia during early pregnancy, while the fetal organs are forming (organogenesis, roughly weeks 3-8), is strongly linked to major congenital malformations, especially cardiac defects and neural tube defects, underscoring the importance of preconception glycemic optimization.",
+    "optionRationales": [
+      "Respiratory distress syndrome is more related to poor glycemic control later in pregnancy and prematurity, not primarily periconceptional hyperglycemia.",
+      "Fetal alcohol spectrum disorder results from alcohol exposure, unrelated to maternal glucose control.",
+      "Placenta previa is not associated with glycemic control at conception.",
+      "Postterm pregnancy is not a recognized consequence of periconceptional hyperglycemia.",
+      "Correct: periconceptional hyperglycemia during organogenesis is the strongest known teratogenic risk in pregestational diabetes."
+    ],
+    "concept": "The teratogenic effects of maternal hyperglycemia are time-limited to organogenesis; this is why preconception (not just early prenatal) glycemic control is emphasized for women with pregestational diabetes."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-38",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception evaluation for chronic hypertension",
+    "stem": "A 36-year-old woman with a 5-year history of chronic hypertension presents for preconception counseling. In addition to optimizing her antihypertensive regimen, which baseline evaluation is most appropriate before she attempts to conceive?",
+    "options": [
+      "Assessment of renal function and screening for end-organ damage",
+      "Empiric initiation of low-dose aspirin starting at the preconception visit",
+      "Genetic carrier screening for cystic fibrosis regardless of family history or ethnicity",
+      "Baseline fetal echocardiogram",
+      "Diagnostic pelvic MRI to rule out uterine anomalies"
+    ],
+    "answerIndex": 0,
+    "explanation": "Preconception evaluation for chronic hypertension should include assessment of baseline renal function (and other end-organ effects) to establish a baseline, guide medication choice, and stratify risk for superimposed preeclampsia.",
+    "optionRationales": [
+      "Correct: baseline renal function and end-organ assessment inform prognosis, medication safety, and monitoring plans during pregnancy.",
+      "Incorrect: low-dose aspirin for preeclampsia prophylaxis is initiated during pregnancy (typically 12-28 weeks), not at the preconception visit.",
+      "Incorrect: cystic fibrosis carrier screening is offered based on standard prenatal genetic screening practice, not specifically as part of chronic hypertension evaluation.",
+      "Incorrect: there is no fetus present preconception, so fetal echocardiography is not applicable at this visit.",
+      "Incorrect: pelvic MRI for uterine anomalies is not part of routine chronic hypertension preconception workup."
+    ],
+    "concept": "Preconception counseling for chronic hypertension should include baseline assessment of renal function and end-organ status, review and adjustment of antihypertensive medications to pregnancy-safe agents, and counseling on increased risk of superimposed preeclampsia and fetal growth restriction."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-39",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception obesity management approach",
+    "stem": "A 33-year-old woman with a BMI of 31 kg/m² is seen for a preconception visit. She has no other medical problems. Which is the most appropriate initial recommendation regarding her weight before attempting conception?",
+    "options": [
+      "Recommend she conceive as soon as possible regardless of weight status",
+      "Delay all preconception counseling until after she becomes pregnant",
+      "Prescribe orlistat for weight loss prior to conception",
+      "Immediate initiation of a GLP-1 receptor agonist for rapid weight loss",
+      "Referral to a structured diet and exercise program targeting gradual weight loss"
+    ],
+    "answerIndex": 4,
+    "explanation": "First-line preconception management of overweight/obesity is structured lifestyle modification (diet and exercise) for gradual, sustained weight loss; pharmacologic weight-loss agents are generally avoided when pregnancy is imminent given limited safety data.",
+    "optionRationales": [
+      "Incorrect: unaddressed obesity increases risk of gestational diabetes, preeclampsia, and fetal anomalies, so counseling should precede conception.",
+      "Incorrect: preconception counseling should occur before pregnancy, not deferred until after conception, to modify risk proactively.",
+      "Incorrect: orlistat may impair absorption of fat-soluble vitamins and is not recommended in the preconception period.",
+      "Incorrect: GLP-1 agonists lack reproductive safety data and should be discontinued well before attempting conception.",
+      "Correct: lifestyle modification is the safe, first-line approach to preconception weight optimization."
+    ],
+    "concept": "Preconception weight management should rely on lifestyle interventions rather than pharmacotherapy, since most weight-loss medications either lack safety data in pregnancy or must be stopped well in advance of conception."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-40",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception smoking cessation",
+    "stem": "A 27-year-old woman who smokes one pack of cigarettes daily is planning to conceive in 6 months. Which is the most appropriate first-line approach to smoking cessation in this preconception visit?",
+    "options": [
+      "Immediate initiation of varenicline as first-line therapy",
+      "Behavioral counseling, escalating to nicotine replacement therapy if counseling alone is insufficient",
+      "Advise her to quit only after she becomes pregnant",
+      "Recommend electronic cigarettes as a safe substitute during pregnancy",
+      "Reassurance that smoking has no significant effect on fetal outcomes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Behavioral counseling is first-line for smoking cessation, with nicotine replacement therapy considered if counseling alone fails, since the benefit of quitting outweighs the theoretical risks of nicotine replacement.",
+    "optionRationales": [
+      "Incorrect: varenicline is not first-line and has more limited pregnancy safety data than behavioral counseling or NRT.",
+      "Correct: stepwise behavioral counseling with pharmacologic escalation (NRT) as needed is the standard first-line approach.",
+      "Incorrect: cessation counseling should begin preconception to maximize benefit before organogenesis and implantation.",
+      "Incorrect: e-cigarettes are not proven safe in pregnancy and are not recommended as a cessation substitute.",
+      "Incorrect: smoking significantly increases risk of fetal growth restriction, placental abruption, preterm birth, and low birth weight."
+    ],
+    "concept": "Preconception smoking cessation reduces risks of fetal growth restriction, preterm birth, placental abruption, and stillbirth. First-line treatment is behavioral counseling; nicotine replacement therapy may be added if counseling alone is unsuccessful, since continued smoking carries greater fetal risk than nicotine exposure."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-41",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Preconception weight counseling",
+    "stem": "A 29-year-old woman with a BMI of 34 kg/m² presents for preconception counseling; she plans to conceive within the next year. Which of the following is the most accurate counseling regarding her weight?",
+    "options": [
+      "Bariatric surgery should be performed immediately before she attempts to conceive for the fastest results",
+      "BMI has no effect on pregnancy outcomes once prenatal care is initiated in the first trimester",
+      "A very-low-calorie crash diet is the preferred method of preconception weight loss",
+      "Weight loss prior to conception reduces her risk of gestational diabetes and preeclampsia",
+      "Weight loss is not recommended before pregnancy because it may cause fetal nutrient deficiencies"
+    ],
+    "answerIndex": 3,
+    "explanation": "Obesity is an independent, modifiable risk factor for gestational diabetes, preeclampsia, fetal macrosomia, and cesarean delivery, so preconception weight loss through gradual lifestyle modification improves pregnancy outcomes.",
+    "optionRationales": [
+      "Incorrect: bariatric surgery, if pursued, requires a delay of 12-18 months before conception to allow weight stabilization and avoid malabsorptive nutrient deficiencies during pregnancy.",
+      "Incorrect: elevated pre-pregnancy BMI continues to independently increase risk regardless of when prenatal care begins.",
+      "Incorrect: rapid or very-low-calorie diets risk nutrient deficiency and are not recommended; gradual lifestyle-based loss is preferred.",
+      "Correct: preconception weight optimization lowers risk of hypertensive and metabolic complications of pregnancy.",
+      "Incorrect: gradual, supervised weight loss before pregnancy is beneficial, not harmful, when done through balanced nutrition."
+    ],
+    "concept": "Obesity is a modifiable preconception risk factor associated with gestational diabetes, preeclampsia, fetal macrosomia, neural tube defects, and cesarean delivery. Preconception counseling should emphasize gradual weight loss through diet and exercise, ideally achieving a healthier BMI before conception rather than during pregnancy.",
+    "discriminator": "Unlike bariatric surgery (which requires a delay before conception to avoid nutritional depletion during pregnancy), lifestyle-based gradual weight loss can be pursued right up until conception."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-42",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Quad screen and elevated AFP workup",
     "stem": "A 30-year-old woman at 16 weeks gestation undergoes a quad screen that shows an alpha-fetoprotein level 2.5 times the upper limit of normal, with normal beta-hCG, estriol, and inhibin A. Which of the following is the most appropriate next step?",
@@ -733,7 +1108,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-27",
+    "id": "ob-prenatal-care-normal-pregnancy-43",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Recurrent UTI vs untreated bacteriuria complication",
     "stem": "A 29-year-old woman at 26 weeks gestation was found to have asymptomatic bacteriuria at her first prenatal visit but was lost to follow-up and never treated. She now presents with fever, flank pain, nausea, and costovertebral angle tenderness. Which of the following complications has most likely occurred as a result of the untreated bacteriuria?",
@@ -756,7 +1131,7 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "This is exactly why asymptomatic bacteriuria is screened for and treated in every pregnancy: left untreated, it progresses to acute pyelonephritis in a substantial proportion of pregnant women, which increases risks of preterm labor, sepsis, and adverse fetal outcomes."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-28",
+    "id": "ob-prenatal-care-normal-pregnancy-44",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Renal physiology of pregnancy",
     "stem": "A 27-year-old woman at 20 weeks gestation has a serum creatinine of 0.5 mg/dL on routine labs, compared to her pre-pregnancy baseline of 0.8 mg/dL. Which of the following best explains this change?",
@@ -780,7 +1155,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "A creatinine below the normal non-pregnant range (rather than elevated) points to expected pregnancy-related renal hyperfiltration rather than any renal pathology."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-29",
+    "id": "ob-prenatal-care-normal-pregnancy-45",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Respiratory physiology of pregnancy",
     "stem": "A 25-year-old woman at 32 weeks gestation reports mild dyspnea with exertion but denies chest pain, cough, or orthopnea. Vital signs and oxygen saturation are normal. Which of the following ventilatory changes is expected in normal pregnancy and best explains her symptom?",
@@ -804,7 +1179,7 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "Normal oxygen saturation and the absence of chest pain, cough, or hypoxia distinguish physiologic dyspnea of pregnancy from pathologic causes such as pulmonary embolism."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-30",
+    "id": "ob-prenatal-care-normal-pregnancy-46",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "RhoGAM after sensitizing event",
     "stem": "A 29-year-old G3P2 woman with blood type A negative and a negative antibody screen is at 12 weeks gestation. She presents to the emergency department after a motor vehicle collision with mild abdominal trauma but no vaginal bleeding, and fetal heart tones are reassuring. Which of the following is the most appropriate management regarding Rh prophylaxis?",
@@ -831,7 +1206,7 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-31",
+    "id": "ob-prenatal-care-normal-pregnancy-47",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "RhoGAM timing at 28 weeks",
     "stem": "A 26-year-old G1P0 woman with blood type O negative presents at 28 weeks gestation for a routine prenatal visit. Her antibody screen is negative and the father's blood type is unknown. Which of the following is the most appropriate next step?",
@@ -860,7 +1235,76 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-32",
+    "id": "ob-prenatal-care-normal-pregnancy-48",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Rubella immunity check preconception",
+    "stem": "A 28-year-old woman presents for a preconception visit. Rubella IgG serology is checked and returns nonimmune. Which of the following is the most appropriate next step?",
+    "options": [
+      "Administer rubella immune globulin instead of vaccine",
+      "Delay any vaccination until the postpartum period regardless of current plans",
+      "Administer MMR vaccine immediately after conception is confirmed",
+      "Administer MMR vaccine now and advise avoiding conception for at least 1 month",
+      "Reassure her that nonimmunity poses no risk and no action is needed"
+    ],
+    "answerIndex": 3,
+    "explanation": "MMR is a live attenuated vaccine and is contraindicated during pregnancy, so nonimmune women should be vaccinated preconceptionally and advised to avoid conception for at least one month (some guidance says 4 weeks) after vaccination.",
+    "optionRationales": [
+      "Immune globulin is not a substitute for vaccination in preventing rubella infection in this preconception context.",
+      "Waiting until postpartum leaves her susceptible to rubella infection and congenital rubella syndrome throughout the pregnancy if she conceives now; vaccination should occur before conception when nonimmunity is identified preconceptionally.",
+      "MMR cannot be given during pregnancy since it is a live attenuated vaccine with theoretical teratogenic risk.",
+      "Correct: MMR should be given preconceptionally with contraception advised for at least a month afterward because it is a live vaccine.",
+      "Congenital rubella syndrome causes serious fetal anomalies (cataracts, deafness, cardiac defects), so nonimmunity is clinically significant and requires action."
+    ],
+    "concept": "Preconception visits should include screening for rubella and varicella immunity; nonimmune patients should receive the appropriate live vaccine before conception, since congenital rubella syndrome and severe varicella infection both carry major fetal risk and these vaccines cannot be given during pregnancy."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-49",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Safe antihypertensive agents preconception",
+    "stem": "A woman with chronic hypertension is being counseled preconception about medication choices. Which of the following antihypertensive agents is considered safe to continue into pregnancy?",
+    "options": [
+      "Chlorthalidone as first-line monotherapy",
+      "Spironolactone",
+      "Losartan",
+      "Lisinopril",
+      "Methyldopa"
+    ],
+    "answerIndex": 4,
+    "explanation": "Methyldopa, along with labetalol and nifedipine, is a well-established, pregnancy-compatible antihypertensive with a long track record of fetal safety.",
+    "optionRationales": [
+      "Incorrect: thiazide diuretics are not first-line in pregnancy and are generally avoided as initial therapy due to concerns about volume contraction affecting placental perfusion.",
+      "Incorrect: spironolactone has anti-androgenic effects and is avoided in pregnancy due to concern for fetal genital anomalies.",
+      "Incorrect: losartan is an ARB with the same class-related teratogenic risk as ACE inhibitors.",
+      "Incorrect: lisinopril is an ACE inhibitor and is teratogenic; it must be discontinued before conception.",
+      "Correct: methyldopa has an extensive history of safe use in pregnancy and is a preferred preconception/pregnancy agent."
+    ],
+    "concept": "Pregnancy-compatible antihypertensives include methyldopa, labetalol, and nifedipine. ACE inhibitors, ARBs, direct renin inhibitors, and spironolactone are contraindicated due to teratogenic or fetal risk."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-50",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Standard preconception folic acid dose",
+    "stem": "A 27-year-old woman with no significant medical or obstetric history presents for preconception counseling before attempting to conceive. She has no personal or family history of neural tube defects. Which of the following is the most appropriate folic acid supplementation recommendation?",
+    "options": [
+      "400 mcg daily starting at least 1 month before conception",
+      "4 mg daily starting at least 1 month before conception",
+      "4 mg daily starting at 12 weeks gestation",
+      "1 mg daily starting after a positive pregnancy test",
+      "No supplementation needed if diet is well balanced"
+    ],
+    "answerIndex": 0,
+    "explanation": "Average-risk women should take 400 mcg of folic acid daily beginning at least one month before conception and continuing through the first trimester to reduce neural tube defect risk.",
+    "optionRationales": [
+      "Correct: this is the standard low-risk dose and timing recommended by ACOG.",
+      "4 mg is the high-risk dose reserved for women with a prior neural tube defect–affected pregnancy, not average risk.",
+      "Starting at 12 weeks is far too late, as the neural tube closes by around day 28 post-conception.",
+      "Waiting until a positive pregnancy test misses the critical early neural tube closure window (by 4 weeks post-conception).",
+      "Dietary folate alone is insufficient to reliably reduce neural tube defect risk; supplementation is recommended for all reproductive-age women."
+    ],
+    "concept": "All women of reproductive age capable of pregnancy should take 400 mcg of folic acid daily, ideally starting at least one month before conception, because the neural tube closes very early (by about 4 weeks gestation), often before pregnancy is recognized."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-51",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Tdap timing in pregnancy",
     "stem": "A 27-year-old G2P1 woman at 29 weeks gestation presents for a routine prenatal visit. Her last Tdap vaccination was 4 years ago, prior to this pregnancy. Which of the following is the most appropriate vaccination recommendation at this visit?",
@@ -887,7 +1331,30 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-33",
+    "id": "ob-prenatal-care-normal-pregnancy-52",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Universal carrier screening offer",
+    "stem": "A 30-year-old woman with no significant family history presents for a preconception visit and asks about genetic carrier screening. Which of the following is the most appropriate counseling regarding carrier screening?",
+    "options": [
+      "Carrier screening is not recommended in the preconception period, only after pregnancy is confirmed",
+      "Carrier screening for conditions such as cystic fibrosis and spinal muscular atrophy should be offered to all women regardless of family history",
+      "Carrier screening should only be offered if there is a known family history of a genetic condition",
+      "Carrier screening is only indicated for couples of Ashkenazi Jewish descent",
+      "Carrier screening is unnecessary since most genetic conditions are detected on routine prenatal ultrasound"
+    ],
+    "answerIndex": 1,
+    "explanation": "Current guidelines recommend offering carrier screening for conditions such as cystic fibrosis and spinal muscular atrophy to all women regardless of ethnicity or family history, ideally before conception so results can inform reproductive decision-making.",
+    "optionRationales": [
+      "Screening is best performed preconceptionally, when results can meaningfully inform reproductive planning, including options like preimplantation genetic testing.",
+      "Correct: universal carrier screening for conditions such as cystic fibrosis and spinal muscular atrophy is recommended for all women regardless of ethnicity or family history.",
+      "Universal screening for select conditions like cystic fibrosis and SMA is now recommended for all patients, not restricted to those with a positive family history.",
+      "While certain conditions have higher prevalence in specific ethnic groups, current guidelines support offering pan-ethnic universal screening rather than restricting testing by ethnicity.",
+      "Carrier status for single-gene recessive conditions is not detectable by ultrasound; only DNA-based carrier testing identifies these mutations."
+    ],
+    "concept": "Preconception (or early prenatal) carrier screening allows identification of couples at risk for having a child with an autosomal recessive or X-linked condition, enabling informed decisions about testing, donor gametes, or preimplantation genetic diagnosis; current recommendations favor offering universal screening rather than ethnicity- or history-based screening alone."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-53",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "US dating overrides LMP dating",
     "stem": "A 30-year-old woman presents for her first prenatal visit at what she calculates to be 9 weeks gestation by last menstrual period, noting her cycles are irregular. A transvaginal ultrasound with crown-rump length measurement estimates the gestational age at 7 weeks 3 days. Which of the following is the most appropriate gestational age to use going forward?",
@@ -910,7 +1377,7 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "First-trimester ultrasound crown-rump length is the most accurate method of pregnancy dating (within about 5-7 days), and it should be used to establish the estimated due date when it differs significantly from LMP-based dating or when LMP is unreliable. Once dating is established in the first trimester, the date should generally not be changed by later ultrasounds, which are used instead to evaluate fetal growth."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-34",
+    "id": "ob-prenatal-care-normal-pregnancy-54",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Valproate teratogenicity",
     "stem": "A 26-year-old woman with epilepsy controlled on valproic acid presents for preconception counseling. Which of the following fetal anomalies is she at increased risk of if valproate is continued during the first trimester?",
@@ -933,7 +1400,54 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "Valproic acid is teratogenic and most notably increases the risk of neural tube defects, along with craniofacial abnormalities and neurodevelopmental delay. Women of reproductive age requiring antiepileptic therapy should be counseled on alternative agents when possible and given high-dose folic acid if valproate cannot be avoided."
   },
   {
-    "id": "ob-prenatal-care-normal-pregnancy-35",
+    "id": "ob-prenatal-care-normal-pregnancy-55",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Varicella immunity check preconception",
+    "stem": "A 25-year-old woman planning pregnancy reports she is unsure whether she had chickenpox as a child and has never been vaccinated. Varicella IgG is checked and is negative. Which is the most appropriate management before she attempts conception?",
+    "options": [
+      "No action needed since varicella exposure in adulthood is rare",
+      "Administer a single dose of varicella vaccine on the day of conception",
+      "Administer the two-dose varicella vaccine series and delay conception for at least 1 month after the final dose",
+      "Administer varicella-zoster immune globulin now as prophylaxis",
+      "Wait until she is pregnant, then vaccinate in the first trimester"
+    ],
+    "answerIndex": 2,
+    "explanation": "Nonimmune women should receive the two-dose varicella vaccine series before conception, with pregnancy avoided for at least one month after the final dose, since it is a live attenuated vaccine and cannot be given during pregnancy; primary varicella infection during pregnancy can cause serious maternal and fetal disease.",
+    "optionRationales": [
+      "Nonimmune status still carries risk of primary varicella infection during pregnancy, which can cause severe maternal pneumonia and congenital varicella syndrome, so action is warranted.",
+      "Varicella vaccine requires two doses spaced several weeks apart for adequate immunity, and vaccination should not coincide with attempted conception.",
+      "Correct: the two-dose series should be completed preconceptionally with contraception for at least a month after the last dose.",
+      "Varicella-zoster immune globulin is used for postexposure prophylaxis in susceptible pregnant patients, not as a preconception immunization strategy.",
+      "Live vaccines including varicella are contraindicated during pregnancy and should be given before conception, not during the first trimester."
+    ],
+    "concept": "Because varicella vaccine is live-attenuated and contraindicated in pregnancy, and congenital varicella syndrome can cause limb hypoplasia, skin scarring, and CNS anomalies, preconception screening and vaccination of nonimmune women is an important component of prenatal risk reduction.",
+    "discriminator": "Unlike rubella vaccination which is a single dose, complete varicella immunization preconceptionally requires two doses of vaccine before conception is attempted."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-56",
+    "system": "Prenatal Care & Normal Pregnancy",
+    "topic": "Warfarin and valproate preconception switch",
+    "stem": "A 26-year-old woman with a mechanical mitral valve on warfarin and a seizure disorder managed with valproic acid presents for preconception counseling before trying to conceive. Which statement about her medications is most accurate?",
+    "options": [
+      "Only valproic acid needs to be changed; warfarin has no teratogenic risk",
+      "Both medications should simply be stopped with no substitution before conception",
+      "Both warfarin and valproic acid are safe to continue unchanged throughout pregnancy",
+      "Only warfarin needs to be changed; valproic acid has no teratogenic risk",
+      "Warfarin should be transitioned to a pregnancy-compatible anticoagulant and valproic acid switched to a lower-risk antiepileptic before conception"
+    ],
+    "answerIndex": 4,
+    "explanation": "Warfarin is associated with embryopathy (nasal hypoplasia, skeletal defects) and should be transitioned to low molecular weight heparin, and valproic acid carries high risk of neural tube defects and should be switched to a lower-risk antiepileptic (e.g., lamotrigine or levetiracetam) before conception when clinically feasible.",
+    "optionRationales": [
+      "Warfarin is also teratogenic (warfarin embryopathy) and requires transition, so this statement is incomplete.",
+      "Abruptly stopping either medication without substitution risks valve thrombosis or breakthrough seizures, both dangerous; safer alternatives should be substituted, not simply withdrawn.",
+      "Both drugs carry well-established teratogenic risk and should not be continued unchanged if a safer alternative exists.",
+      "Valproic acid is strongly associated with neural tube defects and also requires transition, so this statement is incomplete.",
+      "Correct: both agents are teratogenic and preconception counseling should address transitioning each to a safer alternative."
+    ],
+    "concept": "Preconception counseling should proactively identify chronic teratogenic medications (anticoagulants, antiepileptics, ACE inhibitors, isotretinoin) and coordinate a switch to safer alternatives before conception whenever the underlying condition allows."
+  },
+  {
+    "id": "ob-prenatal-care-normal-pregnancy-57",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Warfarin embryopathy",
     "stem": "A 29-year-old woman with a mechanical mitral valve on chronic warfarin therapy discovers she is 6 weeks pregnant. She is counseled about the teratogenic risks of continuing warfarin during the first trimester. Which of the following fetal abnormalities is most classically associated with first-trimester warfarin exposure?",
@@ -4829,6 +5343,913 @@ export const OB_MCQS: McqQuestion[] = [
       "Refractory to all medical measures -> B-Lynch suture/laparotomy or hysterectomy"
     ],
     "discriminator": "The stem's asthma history is the clue that eliminates carboprost specifically, distinguishing it from methylergonovine (avoided in hypertension) as the drug to withhold."
+  },
+  {
+    "id": "ob-newborn-neonatal-1",
+    "system": "Newborn & Neonatal",
+    "topic": "APGAR score and resuscitation",
+    "stem": "A term newborn is delivered by uncomplicated vaginal delivery. At 1 minute of life the infant has a heart rate of 80/min, weak and irregular respiratory effort, some flexion of the extremities, grimace with nasal suctioning, and acrocyanosis. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Administer intravenous epinephrine",
+      "Administer positive-pressure ventilation",
+      "Begin chest compressions",
+      "Obtain umbilical cord blood gas",
+      "Continue routine drying and observation"
+    ],
+    "answerIndex": 1,
+    "explanation": "A heart rate below 100/min with inadequate respiratory effort is an indication for positive-pressure ventilation per the neonatal resuscitation algorithm, regardless of the total Apgar score.",
+    "optionRationales": [
+      "Incorrect - epinephrine is reserved for a heart rate below 60/min despite adequate ventilation and chest compressions.",
+      "Correct - heart rate under 100/min with inadequate respirations mandates positive-pressure ventilation.",
+      "Incorrect - chest compressions are added only if the heart rate remains below 60/min despite 30 seconds of effective ventilation.",
+      "Incorrect - resuscitation takes priority over obtaining diagnostic labs in an infant with inadequate heart rate and respirations.",
+      "Incorrect - a heart rate under 100/min with poor respiratory effort requires active intervention, not simple observation."
+    ],
+    "concept": "The Apgar score is assigned at 1 and 5 minutes to document the newborn's condition and response to resuscitation, but real-time resuscitation decisions are driven by heart rate and respiratory effort per the neonatal resuscitation algorithm, not by waiting to tabulate a full score.",
+    "scoreComponents": [
+      "Appearance (color): 0 = blue/pale, 1 = acrocyanosis, 2 = pink",
+      "Pulse (heart rate): 0 = absent, 1 = <100/min, 2 = ≥100/min",
+      "Grimace (reflex irritability): 0 = none, 1 = grimace, 2 = cry/cough/sneeze",
+      "Activity (tone): 0 = limp, 1 = some flexion, 2 = active motion",
+      "Respiration: 0 = absent, 1 = weak/irregular, 2 = strong cry"
+    ],
+    "discriminator": "Management decisions are triggered by heart rate and respiratory effort in real time, not by the calculated Apgar total, which is only assigned afterward at 1 and 5 minutes."
+  },
+  {
+    "id": "ob-newborn-neonatal-2",
+    "system": "Newborn & Neonatal",
+    "topic": "APGAR score prognostic limits",
+    "stem": "A term newborn has Apgar scores of 4 at 1 minute and 9 at 5 minutes after brief bag-mask ventilation. The parents ask about the infant's long-term prognosis. Which of the following is the most accurate response?",
+    "options": [
+      "The infant requires an urgent MRI to determine prognosis before discharge",
+      "The 5-minute score of 9 confirms the infant will have normal long-term neurodevelopment",
+      "The Apgar score is a poor predictor of long-term neurologic outcome and should not be used alone for this purpose",
+      "A 5-minute score below 10 always warrants NICU admission",
+      "A low 1-minute score is diagnostic of hypoxic-ischemic encephalopathy"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Apgar score was designed to assess the need for resuscitation at birth and response to it, not to predict long-term neurologic outcome, which correlates poorly with the score.",
+    "optionRationales": [
+      "Incorrect - an asymptomatic, improving infant does not require an urgent MRI for prognosis.",
+      "Incorrect - a reassuring 5-minute score does not guarantee normal long-term outcome, as the Apgar score was not designed for long-term prognostication.",
+      "Correct - the Apgar score identifies infants needing resuscitation and tracks response to it, but correlates poorly with long-term neurodevelopmental outcome.",
+      "Incorrect - many infants with 5-minute scores of 7-9 due to isolated acrocyanosis do not require NICU admission.",
+      "Incorrect - a single low score reflects the infant's condition at that moment, often from transient factors, and does not by itself diagnose hypoxic-ischemic encephalopathy, which requires additional clinical and laboratory criteria."
+    ],
+    "concept": "The Apgar score is a rapid clinical tool for assessing the need for resuscitation and the response to it; it should not be used in isolation to predict long-term neurodevelopmental outcome, which requires ongoing clinical assessment.",
+    "discriminator": "A low 1-minute Apgar score that improves by 5 minutes reflects successful transition or resuscitation rather than permanent neurologic injury."
+  },
+  {
+    "id": "ob-newborn-neonatal-3",
+    "system": "Newborn & Neonatal",
+    "topic": "Caput succedaneum vs cephalohematoma",
+    "stem": "A newborn delivered vaginally after a prolonged second stage has a soft, poorly demarcated scalp swelling that crosses suture lines and is present at birth. It gradually decreases in size over the next 48 hours. Which of the following best explains this finding?",
+    "options": [
+      "Traumatic disruption of a bridging vein with rapid expansion",
+      "Diffuse edema of the presenting scalp from pressure against the cervix",
+      "Subperiosteal hemorrhage limited by suture lines",
+      "Bleeding beneath the aponeurosis that can cross suture lines",
+      "Osteogenesis imperfecta causing skull deformity"
+    ],
+    "answerIndex": 1,
+    "explanation": "Caput succedaneum is diffuse subcutaneous scalp edema from pressure during passage through the cervix/vaginal canal; it crosses suture lines and is present at birth, resolving within days.",
+    "optionRationales": [
+      "Subgaleal hemorrhage from bridging vein rupture is more dangerous and expansile, not this benign finding.",
+      "Correct: caput succedaneum is edema of the presenting part, crosses suture lines, present at birth, and resolves quickly.",
+      "This describes cephalohematoma, which is confined by sutures, not a swelling that crosses them.",
+      "This describes subgaleal hemorrhage, which is more diffuse, can cross sutures, but is often larger and can be life-threatening, not the benign self-limited swelling described.",
+      "Osteogenesis imperfecta does not cause a soft, resolving scalp swelling at birth."
+    ],
+    "concept": "Caput succedaneum is diffuse edema of the scalp that crosses suture lines, is present at birth, and resolves within days; it results from pressure of the presenting part against the cervix. Cephalohematoma is subperiosteal bleeding that does NOT cross suture lines, appears hours after birth, and can take weeks to resolve, carrying a risk of hyperbilirubinemia."
+  },
+  {
+    "id": "ob-newborn-neonatal-4",
+    "system": "Newborn & Neonatal",
+    "topic": "Caput succedaneum vs cephalohematoma",
+    "stem": "A newborn delivered via vacuum-assisted vaginal delivery develops a firm, well-demarcated scalp swelling over the right parietal bone that appears 6 hours after birth and does not cross the sagittal suture. Over the next 2 weeks the infant develops worsening jaundice. Which of the following best explains the scalp finding and its complication?",
+    "options": [
+      "Caput succedaneum with resolution of trapped extracellular fluid causing jaundice",
+      "Craniosynostosis causing increased intracranial pressure",
+      "Subgaleal hemorrhage with ongoing blood loss causing anemia and jaundice",
+      "Cephalohematoma with resorption of extravasated blood contributing to indirect hyperbilirubinemia",
+      "ABO incompatibility unrelated to the scalp finding"
+    ],
+    "answerIndex": 3,
+    "explanation": "Cephalohematoma is subperiosteal hemorrhage confined by suture lines that appears after birth (bleeding accumulates); resorption of the sequestered blood increases the bilirubin load and can cause indirect hyperbilirubinemia over the following days to weeks.",
+    "optionRationales": [
+      "Caput succedaneum crosses suture lines and is present at birth, not delayed and suture-limited as described.",
+      "Craniosynostosis is a fixed skull deformity present from birth, not an acute vascular swelling.",
+      "Subgaleal hemorrhage crosses suture lines and typically presents with a boggy, spreading swelling and signs of hypovolemia, not a well-demarcated suture-limited mass.",
+      "Correct: cephalohematoma is subperiosteal blood confined by sutures, appearing hours after birth, and its breakdown contributes to indirect hyperbilirubinemia.",
+      "The scalp finding (cephalohematoma) is the most direct explanation for the jaundice via bilirubin load from resorbing blood, not an unrelated process."
+    ],
+    "concept": "Cephalohematoma results from rupture of blood vessels between the skull and periosteum, is limited strictly to one cranial bone (does not cross sutures), and appears hours to days after birth as blood accumulates. Resorption of the sequestered blood can exacerbate physiologic jaundice by increasing bilirubin production.",
+    "discriminator": "Unlike caput succedaneum, cephalohematoma is confined by suture lines, appears after a delay rather than at birth, and resolves over weeks rather than days."
+  },
+  {
+    "id": "ob-newborn-neonatal-5",
+    "system": "Newborn & Neonatal",
+    "topic": "Chlamydial neonatal conjunctivitis",
+    "stem": "A 10-day-old infant presents with mild eyelid swelling and watery-to-mucopurulent discharge from the right eye. The mother had no prenatal care. Giemsa stain of conjunctival scrapings shows intracytoplasmic inclusion bodies. Which of the following is the most appropriate treatment?",
+    "options": [
+      "Single dose of intramuscular ceftriaxone",
+      "No treatment needed, self-limited",
+      "Oral erythromycin for 14 days",
+      "Topical erythromycin ointment alone",
+      "Topical ceftriaxone drops"
+    ],
+    "answerIndex": 2,
+    "explanation": "Chlamydial conjunctivitis typically presents at 5-14 days of life and requires systemic oral erythromycin (or azithromycin) because topical therapy does not eradicate nasopharyngeal colonization and does not prevent chlamydial pneumonia.",
+    "optionRationales": [
+      "Ceftriaxone is used for gonococcal, not chlamydial, infection.",
+      "Untreated chlamydial conjunctivitis can progress to chlamydial pneumonia at 4-12 weeks of age, so treatment is necessary.",
+      "Correct: oral erythromycin (or azithromycin) is required for chlamydial conjunctivitis to treat systemic colonization and prevent pneumonia.",
+      "Topical therapy alone does not eradicate concurrent nasopharyngeal chlamydial colonization and risks progression to chlamydial pneumonia.",
+      "Topical ceftriaxone is not a standard or effective treatment for either gonococcal or chlamydial neonatal conjunctivitis."
+    ],
+    "concept": "Chlamydial ophthalmia neonatorum presents later than gonococcal disease (typically days 5-14) with a milder, watery-to-mucopurulent discharge. Because Chlamydia trachomatis colonizes the nasopharynx, systemic oral erythromycin or azithromycin is required to prevent chlamydial pneumonia, not topical therapy alone.",
+    "discriminator": "Unlike gonococcal conjunctivitis (days 2-5, severe purulent discharge, gram-negative diplococci), chlamydial conjunctivitis presents later (days 5-14) with a milder discharge and intracytoplasmic inclusion bodies on Giemsa stain."
+  },
+  {
+    "id": "ob-newborn-neonatal-6",
+    "system": "Newborn & Neonatal",
+    "topic": "Congenital hypothyroidism screening",
+    "stem": "A newborn's routine metabolic screen shows an elevated TSH. The infant currently appears clinically well without jaundice, macroglossia, or umbilical hernia. Which of the following best explains the rationale for universal newborn screening for this condition?",
+    "options": [
+      "The condition resolves spontaneously without treatment",
+      "Untreated congenital hypothyroidism is a leading preventable cause of intellectual disability, and infants are often asymptomatic at birth",
+      "The condition is untreatable, so screening only informs prognosis",
+      "Screening allows early diagnosis of maternal thyroid disease",
+      "Clinical signs are always present at birth, so screening is done for confirmation only"
+    ],
+    "answerIndex": 1,
+    "explanation": "Most affected infants are clinically silent at birth because of residual transplacental maternal thyroid hormone; early levothyroxine treatment prevents irreversible intellectual disability, making universal screening essential.",
+    "optionRationales": [
+      "Incorrect - untreated congenital hypothyroidism does not resolve spontaneously and leads to permanent neurodevelopmental impairment.",
+      "Correct - congenital hypothyroidism is often clinically silent at birth, and early levothyroxine therapy prevents irreversible intellectual disability, making universal screening essential.",
+      "Incorrect - congenital hypothyroidism is readily treatable with levothyroxine replacement.",
+      "Incorrect - newborn screening evaluates the infant's own thyroid function, not maternal thyroid status.",
+      "Incorrect - most affected infants appear clinically normal at birth because maternal thyroid hormone crosses the placenta; signs develop over weeks if untreated."
+    ],
+    "concept": "Congenital hypothyroidism is usually asymptomatic in the newborn period due to transplacental maternal thyroid hormone, but delayed treatment causes irreversible intellectual disability; universal screening enables early levothyroxine therapy and normal development."
+  },
+  {
+    "id": "ob-newborn-neonatal-7",
+    "system": "Newborn & Neonatal",
+    "topic": "Down syndrome cardiac screening",
+    "stem": "A newborn with clinical features suggestive of trisomy 21 is confirmed by karyotype to have an extra chromosome 21. Prior to hospital discharge, which of the following should be performed to screen for the most common cardiac anomaly associated with this condition?",
+    "options": [
+      "Chest radiograph",
+      "Cardiac catheterization",
+      "Renal ultrasound",
+      "Electrocardiogram",
+      "Echocardiogram"
+    ],
+    "answerIndex": 4,
+    "explanation": "All infants with Down syndrome should have an echocardiogram to screen for congenital heart disease, most commonly complete atrioventricular septal (canal) defect, even in the absence of a murmur.",
+    "optionRationales": [
+      "Chest radiograph can suggest cardiomegaly but is not sensitive or specific enough to screen for structural heart disease.",
+      "Cardiac catheterization is invasive and reserved for further workup after echocardiography identifies a defect, not as initial screening.",
+      "Renal ultrasound is not the standard screening test for the cardiac anomalies associated with trisomy 21.",
+      "ECG can show axis abnormalities associated with AV canal defects but does not define structural anatomy the way echocardiography does.",
+      "Echocardiogram is the recommended screening test for all newborns with Down syndrome because atrioventricular septal defects are common and may be clinically silent at birth."
+    ],
+    "concept": "Roughly 40-50% of infants with Down syndrome have congenital heart disease, most commonly a complete atrioventricular septal (endocardial cushion) defect, followed by ventricular septal defect. Because auscultation can miss significant lesions, all newborns with Down syndrome should undergo echocardiography before discharge regardless of exam findings.",
+    "conceptRule": [
+      "Confirmed or suspected trisomy 21 -> obtain echocardiogram before discharge regardless of murmur",
+      "AV canal defect suspected -> refer to pediatric cardiology for surgical planning"
+    ]
+  },
+  {
+    "id": "ob-newborn-neonatal-8",
+    "system": "Newborn & Neonatal",
+    "topic": "Down syndrome GI anomaly",
+    "stem": "A newborn with dysmorphic features consistent with trisomy 21 develops bilious vomiting on the first day of life. Antenatal ultrasound had noted polyhydramnios. An abdominal radiograph shows two distinct gas-filled bubbles in the upper abdomen with no distal bowel gas. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Hirschsprung disease",
+      "Meconium ileus",
+      "Malrotation with volvulus",
+      "Pyloric stenosis",
+      "Duodenal atresia"
+    ],
+    "answerIndex": 4,
+    "explanation": "The classic \"double bubble\" sign on abdominal radiograph, together with antenatal polyhydramnios and bilious vomiting in the first day of life, is diagnostic of duodenal atresia, which occurs with increased frequency in trisomy 21.",
+    "optionRationales": [
+      "Hirschsprung disease presents with delayed passage of meconium and abdominal distension, not a double bubble sign.",
+      "Meconium ileus presents with distal small bowel obstruction and a \"soap bubble\" appearance, associated with cystic fibrosis, not trisomy 21.",
+      "Malrotation with volvulus can cause bilious vomiting but typically shows a partial or complete obstruction pattern rather than a clean double bubble, and presents later than birth.",
+      "Pyloric stenosis presents at 3-6 weeks with nonbilious projectile vomiting, not bilious vomiting on day one with a double bubble.",
+      "Duodenal atresia produces the double bubble sign (dilated stomach and proximal duodenum) with no distal gas and is strongly associated with trisomy 21."
+    ],
+    "concept": "Duodenal atresia results from failed recanalization of the duodenal lumen during fetal development and is strongly associated with trisomy 21 (about 30% of duodenal atresia cases occur in Down syndrome). It classically presents with polyhydramnios prenatally and bilious emesis with a double bubble sign on abdominal radiograph after birth.",
+    "discriminator": "The double bubble radiographic sign with absent distal gas distinguishes duodenal atresia from malrotation/volvulus, which usually shows some distal bowel gas or a corkscrew appearance on contrast study."
+  },
+  {
+    "id": "ob-newborn-neonatal-9",
+    "system": "Newborn & Neonatal",
+    "topic": "Down syndrome newborn exam",
+    "stem": "A term newborn has a flat facial profile, upslanting palpebral fissures, small low-set ears, a single transverse palmar crease bilaterally, and marked hypotonia with a wide gap between the first and second toes. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Trisomy 13 (Patau syndrome)",
+      "Trisomy 21 (Down syndrome)",
+      "Fetal alcohol syndrome",
+      "Trisomy 18 (Edwards syndrome)",
+      "Turner syndrome"
+    ],
+    "answerIndex": 1,
+    "explanation": "The combination of flat facies, upslanting palpebral fissures, single palmar crease, sandal-gap toes, and central hypotonia is the classic newborn phenotype of trisomy 21.",
+    "optionRationales": [
+      "Trisomy 13 typically features cleft lip/palate, microphthalmia, polydactyly, and scalp defects.",
+      "This constellation of hypotonic, flat-faced newborn with a single palmar crease and sandal-gap toes is textbook trisomy 21.",
+      "Fetal alcohol syndrome causes smooth philtrum, thin vermilion border, and short palpebral fissures rather than upslanting fissures and a single palmar crease.",
+      "Trisomy 18 classically presents with clenched fists with overlapping fingers, rocker-bottom feet, and micrognathia, not this phenotype.",
+      "Turner syndrome occurs in phenotypic females and presents with lymphedema of the hands/feet and webbed neck, not these facial and hand findings."
+    ],
+    "concept": "Newborns with trisomy 21 classically show hypotonia, a flat occiput and facial profile, upslanting palpebral fissures with epicanthal folds, Brushfield spots, a single transverse palmar crease, and a wide sandal gap between the first and second toes. Clinical suspicion should prompt confirmatory karyotype and screening for associated cardiac and GI anomalies.",
+    "discriminator": "Unlike trisomy 18 (clenched overlapping fingers, rocker-bottom feet) or trisomy 13 (midline facial/scalp defects, polydactyly), trisomy 21 is marked by hypotonia and a single palmar crease rather than severe structural limb or midline anomalies."
+  },
+  {
+    "id": "ob-newborn-neonatal-10",
+    "system": "Newborn & Neonatal",
+    "topic": "Empiric therapy for early-onset GBS sepsis",
+    "stem": "A term male infant is born to a mother who was GBS-positive on 36-week screening but received no intrapartum antibiotics because she delivered precipitously. At 18 hours of life the infant develops tachypnea, grunting, and temperature instability. A complete blood count and blood culture are obtained. Which of the following is the most appropriate empiric antibiotic regimen while cultures are pending?",
+    "options": [
+      "Vancomycin and cefepime",
+      "Ampicillin and gentamicin",
+      "Azithromycin alone",
+      "Oral amoxicillin",
+      "Ceftriaxone monotherapy"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ampicillin plus an aminoglycoside (gentamicin) is the standard empiric regimen for suspected early-onset neonatal sepsis, covering GBS and other common early-onset pathogens such as E. coli and Listeria.",
+    "optionRationales": [
+      "Incorrect: vancomycin/cefepime targets late-onset, nosocomial, or resistant organisms rather than the typical early-onset pathogens.",
+      "Correct: ampicillin plus gentamicin covers GBS, E. coli, and Listeria, the leading causes of early-onset neonatal sepsis, and is the standard empiric choice.",
+      "Incorrect: azithromycin does not adequately cover GBS, E. coli, or Listeria and is not used for suspected neonatal sepsis.",
+      "Incorrect: a septic-appearing neonate requires parenteral, not oral, antibiotic therapy.",
+      "Incorrect: ceftriaxone is generally avoided in neonates due to risk of kernicterus from bilirubin displacement and does not cover Listeria."
+    ],
+    "concept": "Early-onset neonatal sepsis (within 72 hours of birth) is most commonly caused by GBS and E. coli, with Listeria monocytogenes less common but classically covered. Empiric therapy is ampicillin plus gentamicin pending blood culture results, narrowed once the organism and sensitivities are known.",
+    "discriminator": "Ceftriaxone and cefepime-based regimens are reserved for late-onset or resistant infections and are avoided as first-line early-onset empiric therapy because they do not reliably cover Listeria and carry a kernicterus risk in neonates."
+  },
+  {
+    "id": "ob-newborn-neonatal-11",
+    "system": "Newborn & Neonatal",
+    "topic": "Erb palsy from shoulder dystocia",
+    "stem": "A macrosomic infant is delivered vaginally after a difficult delivery complicated by shoulder dystocia requiring McRoberts maneuver and suprapubic pressure. On newborn exam the right arm is adducted and internally rotated at the shoulder, extended at the elbow, and pronated at the forearm, with the fingers able to move (\"waiter's tip\" posture). Which of the following best describes this injury and its expected course?",
+    "options": [
+      "Phrenic nerve palsy causing diaphragmatic paralysis and respiratory distress",
+      "Total brachial plexus palsy involving C5-T1 with a flail, insensate limb requiring urgent surgery",
+      "Facial nerve palsy from forceps compression",
+      "Klumpke palsy from C8-T1 nerve root injury; typically requires immediate surgical repair",
+      "Erb palsy from C5-C6 nerve root injury; most cases resolve spontaneously within weeks to months"
+    ],
+    "answerIndex": 4,
+    "explanation": "The waiter's tip posture (arm adducted, internally rotated, elbow extended, forearm pronated, with intact hand/finger function) is classic for Erb-Duchenne palsy from injury to the upper brachial plexus (C5-C6), most cases of which resolve spontaneously with observation and physical therapy.",
+    "optionRationales": [
+      "Incorrect: phrenic nerve palsy causes respiratory distress from diaphragmatic paralysis and is not represented by this arm posture.",
+      "Incorrect: a total plexus palsy would produce a flail, insensate limb affecting the entire arm and hand, not the isolated proximal findings with preserved finger movement described here.",
+      "Incorrect: facial nerve palsy causes asymmetric facial movement/crying, not an arm posture abnormality.",
+      "Incorrect: Klumpke palsy involves the lower plexus (C8-T1) and presents with a claw hand and possible Horner syndrome, not the waiter's tip posture described, and is not typically managed with immediate surgery.",
+      "Correct: this waiter's tip posture with preserved hand function is the classic presentation of Erb (C5-C6) palsy, and most cases resolve spontaneously without surgery."
+    ],
+    "concept": "Erb (Erb-Duchenne) palsy results from excessive lateral traction on the neck during a difficult delivery (often with shoulder dystocia), injuring the upper brachial plexus (C5-C6). It produces the characteristic 'waiter's tip' posture. Most cases resolve spontaneously within weeks to a few months; persistent deficits beyond 3-6 months warrant referral for further evaluation.",
+    "discriminator": "Erb palsy spares hand/finger function and involves the proximal arm (waiter's tip), whereas Klumpke palsy spares the shoulder/elbow but produces a claw hand from lower plexus (C8-T1) involvement."
+  },
+  {
+    "id": "ob-newborn-neonatal-12",
+    "system": "Newborn & Neonatal",
+    "topic": "Erythromycin eye prophylaxis",
+    "stem": "Immediately after an uncomplicated vaginal delivery, the newborn receives erythromycin ointment applied to both eyes. This intervention is primarily intended to prevent which of the following?",
+    "options": [
+      "Congenital rubella syndrome ocular findings",
+      "Retinopathy of prematurity",
+      "Neonatal conjunctivitis caused by Neisseria gonorrhoeae",
+      "Congenital cataracts",
+      "Dacryostenosis"
+    ],
+    "answerIndex": 2,
+    "explanation": "Erythromycin ointment is applied prophylactically to prevent gonococcal ophthalmia neonatorum, which can rapidly cause corneal scarring and blindness if untreated.",
+    "optionRationales": [
+      "Incorrect - congenital rubella ocular findings arise from in utero infection and are not prevented by postnatal topical therapy.",
+      "Incorrect - retinopathy of prematurity results from abnormal retinal vascularization related to prematurity and oxygen exposure, unrelated to topical antibiotics.",
+      "Correct - erythromycin ointment prevents gonococcal ophthalmia neonatorum, a rapidly progressive infection that can cause corneal scarring and blindness.",
+      "Incorrect - cataracts are not prevented by topical antibiotics and result from structural, genetic, or infectious causes such as congenital rubella.",
+      "Incorrect - dacryostenosis is a structural nasolacrimal duct obstruction not prevented by antibiotic ointment."
+    ],
+    "concept": "Erythromycin ointment is applied to the eyes of all newborns shortly after birth primarily to prevent gonococcal ophthalmia neonatorum; it is less reliably effective against chlamydial conjunctivitis, which is more common in the US and requires systemic (oral) therapy if it occurs.",
+    "discriminator": "Erythromycin ointment reliably prevents gonococcal but not chlamydial conjunctivitis; chlamydial conjunctivitis that develops despite prophylaxis requires oral, not topical, erythromycin."
+  },
+  {
+    "id": "ob-newborn-neonatal-13",
+    "system": "Newborn & Neonatal",
+    "topic": "Exchange transfusion and kernicterus",
+    "stem": "A 4-day-old term newborn has a total serum bilirubin markedly above the exchange transfusion threshold for age and is lethargic with increased tone and a high-pitched cry despite ongoing intensive phototherapy. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Continue intensive phototherapy alone and reassess in 24 hours",
+      "Perform exchange transfusion",
+      "Obtain outpatient audiology referral",
+      "Start oral phenobarbital",
+      "Increase oral fluid intake and observe"
+    ],
+    "answerIndex": 1,
+    "explanation": "Markedly elevated bilirubin with clinical signs of acute bilirubin encephalopathy despite intensive phototherapy is an indication for emergent exchange transfusion to rapidly lower bilirubin and prevent kernicterus.",
+    "optionRationales": [
+      "Incorrect - continuing phototherapy alone is inadequate once bilirubin exceeds the exchange transfusion threshold or signs of acute bilirubin encephalopathy are present.",
+      "Correct - markedly elevated bilirubin with signs of acute bilirubin encephalopathy despite intensive phototherapy is an emergency requiring exchange transfusion to rapidly lower bilirubin and prevent kernicterus.",
+      "Incorrect - audiology referral addresses sequelae of kernicterus such as sensorineural hearing loss but is not the acute management step.",
+      "Incorrect - phenobarbital may modestly induce bilirubin conjugation but acts too slowly for this emergent presentation.",
+      "Incorrect - increasing oral fluids does not lower bilirubin quickly enough to prevent neurologic injury in this urgent scenario."
+    ],
+    "concept": "Signs of acute bilirubin encephalopathy (lethargy, hypertonia, high-pitched cry, poor feeding) with markedly elevated bilirubin represent a neonatal emergency; exchange transfusion is indicated to rapidly reduce circulating bilirubin and prevent kernicterus, which causes permanent sequelae including choreoathetoid cerebral palsy, sensorineural hearing loss, and upward gaze palsy.",
+    "discriminator": "Phototherapy is used for elevated but sub-threshold bilirubin without encephalopathy signs, whereas exchange transfusion is reserved for bilirubin exceeding critical thresholds or overt neurologic signs of bilirubin toxicity."
+  },
+  {
+    "id": "ob-newborn-neonatal-14",
+    "system": "Newborn & Neonatal",
+    "topic": "Fetal alcohol syndrome associated anomalies",
+    "stem": "A newborn with confirmed heavy prenatal alcohol exposure and features consistent with fetal alcohol syndrome is found to have a holosystolic murmur on newborn examination. Which of the following congenital cardiac defects is most commonly associated with this condition?",
+    "options": [
+      "Ventricular septal defect",
+      "Ebstein anomaly",
+      "Transposition of the great arteries",
+      "Total anomalous pulmonary venous return",
+      "Truncus arteriosus"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ventricular septal defect is the most common congenital heart defect associated with fetal alcohol syndrome, consistent with a holosystolic murmur on examination.",
+    "optionRationales": [
+      "Correct: VSD is the most commonly associated cardiac anomaly in fetal alcohol syndrome and classically presents with a holosystolic murmur.",
+      "Incorrect: Ebstein anomaly is classically associated with in utero lithium exposure, not alcohol exposure.",
+      "Incorrect: transposition of the great arteries is classically associated with maternal diabetes, not fetal alcohol exposure, and presents with cyanosis, not a holosystolic murmur.",
+      "Incorrect: total anomalous pulmonary venous return is not a classic association with fetal alcohol syndrome.",
+      "Incorrect: truncus arteriosus is associated with 22q11 deletion syndrome, not fetal alcohol syndrome."
+    ],
+    "concept": "Fetal alcohol syndrome can be associated with congenital cardiac defects, most commonly septal defects (particularly VSD), in addition to the classic facial dysmorphism, growth restriction, and CNS/behavioral abnormalities (including intellectual disability and attention/behavioral problems)."
+  },
+  {
+    "id": "ob-newborn-neonatal-15",
+    "system": "Newborn & Neonatal",
+    "topic": "Fetal alcohol syndrome diagnostic features",
+    "stem": "A 3-year-old is brought in for developmental delay. The mother admits to heavy alcohol use throughout pregnancy. On examination the child has microcephaly, short palpebral fissures, a smooth philtrum, and a thin vermillion border of the upper lip, along with growth restriction. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Fetal alcohol syndrome",
+      "Down syndrome",
+      "Fragile X syndrome",
+      "Williams syndrome",
+      "DiGeorge syndrome"
+    ],
+    "answerIndex": 0,
+    "explanation": "The triad of characteristic facial features (short palpebral fissures, smooth philtrum, thin vermillion border), growth restriction, and CNS abnormalities (microcephaly, developmental delay) in the setting of prenatal alcohol exposure is diagnostic of fetal alcohol syndrome.",
+    "optionRationales": [
+      "Correct: the classic facial triad plus growth restriction and CNS involvement, with a history of maternal alcohol use, is diagnostic of fetal alcohol syndrome.",
+      "Incorrect: Down syndrome features include upslanting palpebral fissures, epicanthal folds, and a flat facial profile, not a smooth philtrum and thin vermillion border, and is not linked to alcohol exposure.",
+      "Incorrect: Fragile X syndrome presents with a long face, large ears, and macroorchidism, typically identified later, not with the facial triad described here.",
+      "Incorrect: Williams syndrome presents with an elfin facies, hypercalcemia, and cardiovascular abnormalities (supravalvular aortic stenosis), not this facial pattern.",
+      "Incorrect: DiGeorge syndrome features conotruncal cardiac defects, hypocalcemia, and immunodeficiency, not the described craniofacial triad."
+    ],
+    "concept": "Fetal alcohol syndrome is the leading preventable cause of intellectual disability in the United States. It results from prenatal alcohol exposure, particularly with heavy or binge drinking, and there is no known safe amount or safe trimester of alcohol use in pregnancy.",
+    "mnemonic": "FAS triad: Facial anomalies (short palpebral fissures, smooth philtrum, thin vermillion border), growth restriction, and CNS/developmental abnormalities."
+  },
+  {
+    "id": "ob-newborn-neonatal-16",
+    "system": "Newborn & Neonatal",
+    "topic": "Galactosemia recognition",
+    "stem": "A 5-day-old breastfed newborn develops jaundice, vomiting, lethargy, and hepatomegaly. Laboratory studies show elevated conjugated bilirubin, elevated transaminases, and Escherichia coli bacteremia. Newborn screening results are pending. Which of the following is the most appropriate immediate step in management?",
+    "options": [
+      "Continue breastfeeding and reassess in 1 week",
+      "Start phototherapy alone",
+      "Discontinue milk/lactose-containing feeds and switch to a lactose-free, soy-based formula",
+      "Administer levothyroxine",
+      "Begin high-dose vitamin K"
+    ],
+    "answerIndex": 2,
+    "explanation": "Classic galactosemia presents after initiation of milk feeding with jaundice, hepatomegaly, vomiting, and E. coli sepsis; immediate elimination of galactose/lactose is essential while confirmatory testing is completed.",
+    "optionRationales": [
+      "Incorrect - continuing lactose-containing feeds perpetuates toxic metabolite accumulation and worsens hepatic and infectious complications.",
+      "Incorrect - phototherapy treats unconjugated hyperbilirubinemia and does not address the underlying metabolic defect or the conjugated hyperbilirubinemia seen here.",
+      "Correct - suspected galactosemia requires immediate elimination of galactose/lactose from the diet with a soy-based formula while confirmatory testing is pursued.",
+      "Incorrect - levothyroxine treats congenital hypothyroidism, not galactosemia.",
+      "Incorrect - vitamin K treats hemorrhagic disease of the newborn, which is unrelated to this presentation."
+    ],
+    "concept": "Classic galactosemia (galactose-1-phosphate uridyltransferase deficiency) presents after milk feeding begins with jaundice, vomiting, hepatomegaly, and increased susceptibility to E. coli sepsis; treatment requires immediate lifelong elimination of galactose and lactose from the diet.",
+    "discriminator": "Unlike physiologic jaundice, galactosemia causes conjugated hyperbilirubinemia with hepatomegaly and systemic illness, signaling a pathologic process that requires dietary elimination rather than phototherapy."
+  },
+  {
+    "id": "ob-newborn-neonatal-17",
+    "system": "Newborn & Neonatal",
+    "topic": "Gastroschisis vs omphalocele",
+    "stem": "A newborn is delivered with bowel loops protruding through a full-thickness abdominal wall defect located to the right of an intact, normally inserted umbilical cord. There is no covering membrane, and the exposed bowel appears matted and edematous. Compared with omphalocele, this condition is best characterized by which of the following?",
+    "options": [
+      "The herniated organs are covered by a peritoneal sac derived from the umbilical cord",
+      "It is more strongly associated with other congenital anomalies and chromosomal abnormalities",
+      "It is more strongly associated with young maternal age and maternal smoking or drug use",
+      "The umbilical cord inserts directly into the apex of the defect",
+      "It is typically diagnosed by a normal maternal serum alpha-fetoprotein level"
+    ],
+    "answerIndex": 2,
+    "explanation": "Gastroschisis is a paraumbilical, uncovered abdominal wall defect (bowel not protected by a sac) strongly associated with young maternal age and maternal smoking/vasoactive drug use (e.g., cocaine), unlike omphalocele, which is midline, sac-covered, and more strongly associated with chromosomal anomalies and other structural defects.",
+    "optionRationales": [
+      "A covering peritoneal sac is characteristic of omphalocele; gastroschisis has no covering membrane, leaving bowel directly exposed to amniotic fluid.",
+      "Omphalocele, not gastroschisis, is more strongly associated with other congenital anomalies and chromosomal abnormalities (e.g., trisomy 13, 18); gastroschisis is usually an isolated defect.",
+      "Correct: gastroschisis is associated with young maternal age and maternal smoking or vasoactive substance use (e.g., cocaine), thought to relate to vascular disruption of the omphalomesenteric artery.",
+      "In omphalocele the umbilical cord inserts at the apex of the sac-covered defect; in gastroschisis the defect is paraumbilical (typically to the right) with a normally inserted, intact umbilical cord.",
+      "Both gastroschisis and omphalocele are associated with elevated, not normal, maternal serum alpha-fetoprotein due to exposed fetal tissue/organs."
+    ],
+    "concept": "Gastroschisis is a paraumbilical full-thickness abdominal wall defect (usually right-sided) with uncovered, exposed bowel and a normal umbilical cord insertion; it is associated with young maternal age and smoking/vasoactive drug exposure, and is usually an isolated anomaly. Omphalocele is a midline defect at the umbilical ring with herniated organs covered by a peritoneal sac and the cord inserting at the defect's apex; it is strongly associated with chromosomal abnormalities and other congenital anomalies (cardiac, renal). Both elevate maternal serum AFP.",
+    "discriminator": "The presence of a covering sac and cord insertion at the defect's apex indicates omphalocele (with higher risk of associated anomalies), while an uncovered defect lateral to a normally inserted cord indicates gastroschisis."
+  },
+  {
+    "id": "ob-newborn-neonatal-18",
+    "system": "Newborn & Neonatal",
+    "topic": "GBS intrapartum prophylaxis indications",
+    "stem": "A 29-year-old G2P1 at 30 weeks' gestation is found to have group B streptococcus on a routine urine culture obtained for evaluation of urinary frequency, with a colony count of 50,000 CFU/mL. She is treated for the bacteriuria. At 36 weeks she declines vaginal-rectal GBS screening. She presents in labor at 39 weeks. Which of the following is the most appropriate approach to intrapartum GBS prophylaxis?",
+    "options": [
+      "Treat with oral amoxicillin as outpatient therapy prior to admission",
+      "Administer intrapartum penicillin because GBS bacteriuria during this pregnancy is an indication for prophylaxis regardless of the 36-week culture",
+      "Withhold antibiotics because a negative screening culture was never obtained",
+      "Administer prophylaxis only if she develops a fever in labor",
+      "Obtain a rapid intrapartum PCR test and treat only if positive"
+    ],
+    "answerIndex": 1,
+    "explanation": "GBS bacteriuria at any colony count during the current pregnancy, or a prior infant with invasive GBS disease, is itself an indication for intrapartum antibiotic prophylaxis, superseding the need for a 36-week culture.",
+    "optionRationales": [
+      "Incorrect: prophylaxis must be given intravenously during labor, not as oral outpatient therapy, to achieve adequate fetal drug levels.",
+      "Correct: GBS bacteriuria in the current pregnancy is a standing indication for intrapartum IV penicillin (or ampicillin) prophylaxis regardless of the late culture result.",
+      "Incorrect: a documented history of GBS bacteriuria this pregnancy is itself sufficient indication for prophylaxis, independent of screening culture status.",
+      "Incorrect: prophylaxis should be given because of known bacteriuria, not withheld until intrapartum fever develops.",
+      "Incorrect: intrapartum GBS prophylaxis decisions are not based on rapid intrapartum PCR in routine practice when a clear indication already exists."
+    ],
+    "concept": "Indications for intrapartum GBS prophylaxis include a positive vaginal-rectal culture at 36-37 weeks, GBS bacteriuria at any colony count during the current pregnancy, a previous infant with invasive GBS disease, or unknown GBS status with a risk factor (preterm labor, ROM ≥18 hours, or intrapartum fever). IV penicillin G is first-line, given at least 4 hours before delivery for adequate efficacy.",
+    "discriminator": "Unlike a routine positive 36-week screening culture, GBS bacteriuria during pregnancy is a standing indication regardless of later culture results and does not require repeat screening to confirm."
+  },
+  {
+    "id": "ob-newborn-neonatal-19",
+    "system": "Newborn & Neonatal",
+    "topic": "Gonococcal neonatal conjunctivitis",
+    "stem": "A 3-day-old infant born via vaginal delivery presents with bilateral eyelid swelling and copious purulent yellow-green discharge from both eyes. Gram stain of the discharge shows gram-negative intracellular diplococci. Which of the following is the most appropriate treatment?",
+    "options": [
+      "Oral azithromycin single dose",
+      "Topical trimethoprim-polymyxin drops",
+      "Single dose of intramuscular or intravenous ceftriaxone",
+      "Oral erythromycin for 14 days",
+      "Topical erythromycin ointment alone"
+    ],
+    "answerIndex": 2,
+    "explanation": "Gonococcal ophthalmia neonatorum typically presents on days 2-5 of life with severe purulent discharge and requires systemic therapy (single-dose ceftriaxone) plus eye irrigation, as topical therapy alone is inadequate and untreated infection risks corneal perforation and systemic dissemination.",
+    "optionRationales": [
+      "Azithromycin is not first-line therapy for neonatal gonococcal infection; ceftriaxone is preferred due to resistance concerns and severity of disease.",
+      "Topical antibiotic drops are inadequate monotherapy for gonococcal disease, which requires systemic treatment.",
+      "Correct: a single dose of ceftriaxone (IM or IV) is the recommended systemic treatment for gonococcal ophthalmia neonatorum, given the risk of invasive disease.",
+      "Oral erythromycin for 14 days is the treatment for chlamydial conjunctivitis or pneumonia, not gonococcal infection.",
+      "Topical therapy alone is insufficient for gonococcal ophthalmia neonatorum because of the risk of systemic dissemination and corneal damage; systemic antibiotics are required."
+    ],
+    "concept": "Neonatal gonococcal conjunctivitis classically presents 2-5 days after birth with severe, copious purulent discharge and lid edema due to intrapartum exposure to infected maternal secretions. It requires prompt systemic antibiotic treatment (ceftriaxone) plus saline eye irrigation to prevent corneal ulceration, perforation, and disseminated gonococcal infection.",
+    "discriminator": "Gonococcal conjunctivitis presents earlier (days 2-5) with more severe, copious purulent discharge than chlamydial conjunctivitis, which presents later (days 5-14) with milder mucopurulent discharge."
+  },
+  {
+    "id": "ob-newborn-neonatal-20",
+    "system": "Newborn & Neonatal",
+    "topic": "Macrosomia and birth trauma risk in IDM",
+    "stem": "A woman with pregestational diabetes and an estimated fetal weight of 4600 g at 39 weeks undergoes a trial of vaginal delivery. After delivery of the fetal head, the shoulders fail to deliver with routine traction. This scenario places the neonate at greatest risk for which combination of injuries?",
+    "options": [
+      "Cephalohematoma and subgaleal hemorrhage",
+      "Meconium aspiration syndrome and persistent pulmonary hypertension",
+      "Necrotizing enterocolitis and intraventricular hemorrhage",
+      "Erb palsy and clavicular fracture",
+      "Choanal atresia and cleft palate"
+    ],
+    "answerIndex": 3,
+    "explanation": "Macrosomia from maternal diabetes increases the risk of shoulder dystocia, which classically causes brachial plexus injury (Erb palsy) from lateral traction on the neck and clavicular fracture from the impacted anterior shoulder.",
+    "optionRationales": [
+      "Incorrect: cephalohematoma and subgaleal hemorrhage are associated with vacuum/forceps-assisted delivery and head trauma, not shoulder dystocia specifically.",
+      "Incorrect: meconium aspiration and persistent pulmonary hypertension relate to intrapartum hypoxia/meconium-stained fluid, not shoulder dystocia mechanics.",
+      "Incorrect: necrotizing enterocolitis and intraventricular hemorrhage are complications primarily of prematurity, not of macrosomia or shoulder dystocia.",
+      "Correct: shoulder dystocia in a macrosomic IDM classically causes brachial plexus stretch injury (Erb palsy) and/or clavicular fracture from the impacted shoulder.",
+      "Incorrect: choanal atresia and cleft palate are congenital structural anomalies unrelated to shoulder dystocia."
+    ],
+    "concept": "Macrosomia (birth weight often defined as >4000-4500 g) is a major complication of poorly controlled maternal diabetes and increases the risk of shoulder dystocia, a true obstetric emergency. Shoulder dystocia classically results in brachial plexus injury and clavicular fracture due to excessive traction and impaction of the anterior shoulder against the maternal symphysis."
+  },
+  {
+    "id": "ob-newborn-neonatal-21",
+    "system": "Newborn & Neonatal",
+    "topic": "Meconium aspiration syndrome",
+    "stem": "A 41-week infant is delivered through thick meconium-stained amniotic fluid. At birth the infant is vigorous with good respiratory effort. Over the next hour the infant develops respiratory distress with grunting, nasal flaring, and a barrel-shaped, hyperinflated chest. Chest x-ray shows patchy, asymmetric infiltrates with areas of hyperinflation and flattened diaphragms. Which of the following best describes the underlying pathophysiology?",
+    "options": [
+      "Delayed clearance of fetal lung fluid",
+      "Diffuse alveolar hemorrhage from birth trauma",
+      "Airway obstruction and chemical pneumonitis from aspirated meconium causing a ball-valve effect",
+      "Bacterial pneumonia acquired transplacentally",
+      "Deficiency of pulmonary surfactant in an immature lung"
+    ],
+    "answerIndex": 2,
+    "explanation": "Meconium aspiration syndrome occurs in term/post-term infants exposed to meconium-stained fluid; aspirated meconium causes airway obstruction (partial obstruction creates a ball-valve effect with air trapping/hyperinflation), chemical pneumonitis, and surfactant inactivation, producing patchy infiltrates with hyperinflation.",
+    "optionRationales": [
+      "Delayed fetal lung fluid clearance describes TTN, which shows perihilar streaking and resolves rapidly without this obstructive hyperinflation pattern.",
+      "There is no history of birth trauma or signs of hemorrhage described in this vignette.",
+      "Correct: aspirated meconium obstructs airways (causing air trapping/hyperinflation via a ball-valve mechanism) and triggers chemical pneumonitis and surfactant inactivation, producing the patchy infiltrates and hyperinflation described.",
+      "There is no indication of transplacental bacterial infection; the history of meconium-stained fluid points directly to aspiration.",
+      "Surfactant deficiency from prematurity causes RDS with diffuse ground-glass opacities, not the patchy, hyperinflated pattern seen here in a post-term infant."
+    ],
+    "concept": "Meconium aspiration syndrome occurs in term or post-term infants who aspirate meconium-stained amniotic fluid in utero or during delivery, causing airway obstruction, chemical pneumonitis, and surfactant inactivation/dysfunction. Chest x-ray classically shows patchy asymmetric infiltrates with hyperinflation, distinguishing it from RDS and TTN.",
+    "discriminator": "Meconium aspiration occurs in term/post-term infants with meconium-stained fluid and shows patchy infiltrates with hyperinflation, unlike the diffuse ground-glass pattern of RDS (preterm) or the rapidly resolving perihilar streaking of TTN (term, no labor)."
+  },
+  {
+    "id": "ob-newborn-neonatal-22",
+    "system": "Newborn & Neonatal",
+    "topic": "NAS onset timing and first-line treatment",
+    "stem": "A newborn whose mother was maintained on methadone throughout pregnancy is being monitored for neonatal abstinence syndrome. Compared to an infant exposed to heroin in utero, which of the following is most characteristic of methadone-associated withdrawal, and what is the first-line pharmacologic treatment if withdrawal becomes severe?",
+    "options": [
+      "No difference in onset compared to heroin; first-line treatment is phenobarbital alone",
+      "Earlier onset within the first 12 hours; first-line treatment is IV naloxone",
+      "Symptoms present only in premature infants; first-line treatment is clonidine monotherapy",
+      "Later and more prolonged onset of symptoms (days to weeks); first-line treatment is oral morphine or methadone",
+      "Onset delayed until after 1 month of age; treatment is supportive care only, medication is never indicated"
+    ],
+    "answerIndex": 3,
+    "explanation": "Because methadone has a longer half-life than heroin, withdrawal onset is typically delayed and symptoms may be more prolonged; first-line pharmacologic therapy for significant opioid-type NAS is an opioid replacement such as oral morphine or methadone, tapered gradually.",
+    "optionRationales": [
+      "Incorrect: onset timing does differ based on the drug's half-life, and phenobarbital is not first-line for opioid-predominant withdrawal (it is used adjunctively or for non-opioid/polysubstance withdrawal).",
+      "Incorrect: naloxone is contraindicated in NAS as it can precipitate severe withdrawal and seizures.",
+      "Incorrect: NAS occurs in both term and preterm infants exposed in utero, not exclusively preterm infants, and clonidine is an adjunct, not first-line monotherapy.",
+      "Correct: methadone's longer half-life delays and prolongs withdrawal compared to shorter-acting heroin, and opioid replacement (oral morphine or methadone) is first-line pharmacotherapy for opioid-type NAS.",
+      "Incorrect: severe NAS does require pharmacologic treatment when supportive measures (swaddling, low stimulation, frequent small feeds) are insufficient."
+    ],
+    "concept": "Non-pharmacologic measures (dim, quiet environment, swaddling, frequent small-volume feeds, rooming-in) are first-line for mild NAS. When symptoms are severe (per standardized scoring), pharmacologic treatment with an opioid (oral morphine or methadone) is used, with the specific drug and taper individualized to the exposure and hospital protocol."
+  },
+  {
+    "id": "ob-newborn-neonatal-23",
+    "system": "Newborn & Neonatal",
+    "topic": "Neonatal abstinence syndrome recognition",
+    "stem": "A newborn delivered at term to a mother with untreated heroin use disorder develops high-pitched crying, tremors, poor feeding, and loose stools at 36 hours of life. Vital signs are stable and there is no fever. Which of the following is the most appropriate initial step in management?",
+    "options": [
+      "Begin scoring the infant with a standardized withdrawal scale (e.g., Finnegan score) to guide further management",
+      "Obtain an emergent head CT to evaluate for intracranial hemorrhage",
+      "Perform a septic workup and start empiric ampicillin and gentamicin before any other intervention",
+      "Discharge home with outpatient follow-up in one week",
+      "Start naloxone immediately to reverse opioid effects"
+    ],
+    "answerIndex": 0,
+    "explanation": "Neonatal abstinence syndrome is diagnosed clinically based on characteristic signs of withdrawal in an infant with known in utero opioid exposure; a standardized scoring tool such as the Finnegan score is used serially to assess severity and determine whether pharmacologic treatment is needed.",
+    "optionRationales": [
+      "Correct: standardized withdrawal scoring (e.g., Finnegan) is used to objectively assess symptom severity and trend over time, guiding the decision for pharmacologic versus supportive therapy.",
+      "Incorrect: there is no focal neurologic finding suggesting intracranial hemorrhage; the presentation is classic for opioid withdrawal, not a mass or bleed.",
+      "Incorrect: while sepsis can mimic withdrawal, the clinical picture (onset within 24-72 hours, known maternal opioid use, classic irritability/GI symptoms) is most consistent with NAS, and scoring should guide initial management before broad empiric antibiotics unless sepsis is specifically suspected.",
+      "Incorrect: an infant with active withdrawal symptoms requires continued inpatient observation and possible treatment, not discharge.",
+      "Incorrect: naloxone is contraindicated in neonates with suspected in utero opioid exposure because it can precipitate acute, severe withdrawal and seizures."
+    ],
+    "concept": "Neonatal abstinence syndrome (NAS) results from in utero exposure to opioids (or other substances) with abrupt cessation of transplacental supply at birth. It presents with CNS irritability (tremors, high-pitched cry, poor sleep), GI dysfunction (poor feeding, vomiting, diarrhea), and autonomic signs (sweating, temperature instability), typically within 24-72 hours for short-acting opioids like heroin.",
+    "mnemonic": "Withdrawal from opioids affects three systems: CNS irritability, GI dysfunction, and autonomic instability."
+  },
+  {
+    "id": "ob-newborn-neonatal-24",
+    "system": "Newborn & Neonatal",
+    "topic": "Neonatal clavicular fracture",
+    "stem": "A term newborn delivered vaginally after a shoulder dystocia is noted on day 1 to have decreased spontaneous movement of the left arm and an asymmetric Moro reflex. There is palpable crepitus and swelling over the mid-clavicle, but the hand grip and finger movements are normal. Which of the following is the most appropriate management?",
+    "options": [
+      "Immediate cast application to the entire upper extremity",
+      "Observation only, with no need to limit arm movement",
+      "Gentle immobilization of the arm against the body (e.g., pinning the sleeve) and reassurance, as most heal without intervention",
+      "Emergent orthopedic surgical fixation of the clavicle",
+      "MRI of the brachial plexus before any further management"
+    ],
+    "answerIndex": 2,
+    "explanation": "Neonatal clavicular fracture, the most common birth-related fracture, is usually managed conservatively with gentle immobilization (e.g., pinning the sleeve to the clothing) for comfort, and heals well without long-term sequelae; surgery is not indicated.",
+    "optionRationales": [
+      "Incorrect: full upper extremity casting is unnecessary and impractical in a neonate; simple gentle immobilization suffices.",
+      "Incorrect: some degree of arm immobilization improves comfort and reduces further movement-related pain, so completely unrestricted movement without any supportive measure is not the preferred initial approach.",
+      "Correct: clavicular fractures in newborns are managed conservatively with gentle immobilization for comfort; healing occurs spontaneously with excellent prognosis.",
+      "Incorrect: surgical fixation is not indicated for uncomplicated neonatal clavicular fractures, which heal well with conservative management.",
+      "Incorrect: normal hand and finger movement argues against a brachial plexus injury, so an MRI is not the immediate next step; clinical diagnosis with exam and possibly plain radiograph is sufficient."
+    ],
+    "concept": "Clavicular fracture is the most common birth injury and is often associated with macrosomia and shoulder dystocia. It presents with decreased arm movement (pseudoparalysis), an asymmetric Moro reflex, and palpable crepitus/swelling over the clavicle, but normal hand function distinguishes it from a brachial plexus injury. Prognosis is excellent with conservative management.",
+    "discriminator": "Unlike brachial plexus (Erb) palsy, clavicular fracture preserves normal distal motor function once pain is controlled and shows localized bony tenderness/crepitus rather than a fixed abnormal arm posture."
+  },
+  {
+    "id": "ob-newborn-neonatal-25",
+    "system": "Newborn & Neonatal",
+    "topic": "Neonatal conjunctivitis prophylaxis",
+    "stem": "A term newborn receives erythromycin ophthalmic ointment shortly after birth as standard prophylaxis. This intervention is primarily intended to prevent which of the following?",
+    "options": [
+      "Gonococcal ophthalmia neonatorum",
+      "Chemical conjunctivitis",
+      "Chlamydial pneumonia",
+      "Herpes simplex keratitis",
+      "Congenital cataracts"
+    ],
+    "answerIndex": 0,
+    "explanation": "Universal erythromycin ointment prophylaxis at birth is administered specifically to prevent gonococcal ophthalmia neonatorum and its complications (corneal scarring, perforation), and is required by law in most US states.",
+    "optionRationales": [
+      "Correct: neonatal ocular prophylaxis with erythromycin ointment is given specifically to prevent gonococcal ophthalmia neonatorum, historically a major cause of infant blindness.",
+      "Chemical conjunctivitis was historically caused by silver nitrate prophylaxis itself, not prevented by erythromycin.",
+      "Erythromycin ointment prophylaxis is not reliably effective at preventing chlamydial disease, which requires maternal screening/treatment and systemic therapy of the infant if infected.",
+      "Herpes keratitis is prevented by cesarean delivery in mothers with active genital lesions and antiviral therapy, not ocular ointment.",
+      "Ocular prophylaxis has no role in preventing congenital cataracts, which are due to congenital infections (e.g., rubella) or genetic causes."
+    ],
+    "concept": "Universal neonatal ocular prophylaxis with erythromycin ointment is administered shortly after birth to all newborns to prevent gonococcal ophthalmia neonatorum, a historically major cause of neonatal blindness from untreated maternal gonorrhea."
+  },
+  {
+    "id": "ob-newborn-neonatal-26",
+    "system": "Newborn & Neonatal",
+    "topic": "Neonatal hypoglycemia in IDM",
+    "stem": "A 3.9-hour-old infant born at 39 weeks to a mother with poorly controlled gestational diabetes is noted to be jittery and irritable. Point-of-care glucose is 24 mg/dL. The infant is tolerating oral feeds and has no respiratory distress. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Administer glucagon intramuscularly",
+      "Transfer to NICU for exchange transfusion",
+      "Oral or enteral feeding with recheck of glucose in 30-60 minutes",
+      "Reassurance only, as jitteriness in infants of diabetic mothers is expected and does not require glucose monitoring",
+      "Immediate IV dextrose bolus followed by continuous infusion"
+    ],
+    "answerIndex": 2,
+    "explanation": "In an infant of a diabetic mother with mild asymptomatic-to-mildly-symptomatic hypoglycemia who is able to feed, initial management is enteral feeding (breast milk or formula) with a recheck of glucose shortly after; IV dextrose is reserved for infants who cannot feed, fail to respond, or have severe/symptomatic hypoglycemia (e.g., seizures).",
+    "optionRationales": [
+      "Incorrect: glucagon is not standard first-line therapy in neonatal hypoglycemia and is reserved for specific refractory situations under specialist guidance.",
+      "Incorrect: exchange transfusion is used for severe polycythemia/hyperviscosity, not for isolated hypoglycemia.",
+      "Correct: because the infant can feed and has only mild symptoms, enteral feeding with a glucose recheck is the appropriate first-line management.",
+      "Incorrect: hypoglycemia in infants of diabetic mothers is common but still requires monitoring and treatment, as untreated hypoglycemia can cause neurologic injury.",
+      "Incorrect: IV dextrose is reserved for infants who cannot tolerate feeds, have severe symptomatic hypoglycemia (seizures, lethargy), or fail to respond to feeding, not as the first step here."
+    ],
+    "concept": "Fetal hyperinsulinemia develops in response to maternal hyperglycemia; after delivery the maternal glucose supply is abruptly removed while fetal insulin remains elevated, causing neonatal hypoglycemia, typically within the first few hours of life. Management is stepwise: enteral feeding first, IV dextrose for infants who cannot feed or have severe/refractory hypoglycemia."
+  },
+  {
+    "id": "ob-newborn-neonatal-27",
+    "system": "Newborn & Neonatal",
+    "topic": "Neonatal polycythemia in IDM",
+    "stem": "A term infant of a diabetic mother appears plethoric on day of life 1 and is mildly tachypneic. A venous hematocrit is 68%. Which of the following best explains the underlying mechanism of this finding?",
+    "options": [
+      "Neonatal dehydration from poor feeding falsely elevates the hematocrit",
+      "Maternal Rh sensitization causes fetal hemolysis and reactive erythropoiesis",
+      "Delayed cord clamping alone accounts for the elevated hematocrit",
+      "Chronic fetal hypoxia from placental insufficiency stimulates erythropoietin production, leading to increased red cell mass",
+      "Twin-to-twin transfusion causes volume overload in the recipient twin"
+    ],
+    "answerIndex": 3,
+    "explanation": "In infants of diabetic mothers, fetal hyperinsulinemia increases oxygen consumption and can cause relative intrauterine hypoxia, stimulating erythropoietin production and polycythemia, which increases blood viscosity and risk of complications like hypoglycemia, hyperbilirubinemia, and vascular sludging.",
+    "optionRationales": [
+      "Incorrect: dehydration can cause hemoconcentration but is not the primary described mechanism of polycythemia in infants of diabetic mothers.",
+      "Incorrect: there is no indication of Rh sensitization or hemolysis in this vignette; hemolysis would cause anemia, not polycythemia, along with hyperbilirubinemia.",
+      "Incorrect: while delayed cord clamping increases hematocrit modestly, it does not fully account for polycythemia in this classic diabetic-pregnancy context.",
+      "Correct: fetal hyperinsulinemia raises fetal metabolic demand and oxygen consumption, producing relative hypoxia that stimulates erythropoietin and increased red cell mass, a well-described mechanism in IDM.",
+      "Incorrect: this infant is a singleton IDM, not a twin gestation, so twin-to-twin transfusion is not the mechanism."
+    ],
+    "concept": "Infants of diabetic mothers are at risk for a characteristic cluster of complications from fetal hyperinsulinemia: macrosomia, hypoglycemia after delivery, polycythemia/hyperviscosity (from relative intrauterine hypoxia), hypocalcemia, hyperbilirubinemia, and increased risk of respiratory distress syndrome and congenital anomalies (e.g., caudal regression, cardiac defects)."
+  },
+  {
+    "id": "ob-newborn-neonatal-28",
+    "system": "Newborn & Neonatal",
+    "topic": "Neural tube defects",
+    "stem": "A woman who did not take prenatal vitamins presents for a routine second-trimester anatomy ultrasound. The maternal serum alpha-fetoprotein was elevated. Ultrasound reveals a lumbosacral defect with a herniated sac containing neural tissue and cerebrospinal fluid, along with the \"lemon sign\" and \"banana sign\" of the skull and cerebellum. Which of the following best explains these ultrasound findings?",
+    "options": [
+      "Encephalocele from a cranial defect",
+      "Anencephaly from failure of cranial neuropore closure",
+      "Myelomeningocele with associated Chiari II malformation",
+      "Spina bifida occulta with no herniation of neural elements",
+      "Meningocele with an intact neural placode"
+    ],
+    "answerIndex": 2,
+    "explanation": "Myelomeningocele (open spina bifida) involves herniation of both neural tissue and meninges through a vertebral defect and is associated with Chiari II malformation, producing the characteristic lemon sign (frontal bone scalloping) and banana sign (abnormal cerebellar shape) on prenatal ultrasound, along with elevated maternal serum AFP.",
+    "optionRationales": [
+      "Encephalocele is herniation of brain tissue through a cranial (not lumbosacral) defect.",
+      "Anencephaly involves absence of the cranial vault and brain, not a lumbosacral sac with neural tissue as described.",
+      "Correct: myelomeningocele contains neural tissue within the herniated sac and is classically associated with Chiari II malformation, producing the lemon and banana signs.",
+      "Spina bifida occulta is a closed defect with no herniation and normal maternal serum AFP, inconsistent with this presentation.",
+      "Meningocele contains only meninges and CSF without neural tissue, and does not typically produce the lemon/banana signs associated with Chiari II malformation."
+    ],
+    "concept": "Neural tube defects arise from failure of neural tube closure and are associated with folic acid deficiency; risk is reduced by periconceptional folic acid supplementation. Elevated maternal serum AFP screens for open defects (myelomeningocele, anencephaly), and myelomeningocele is associated with Chiari II malformation, producing the lemon and banana signs on ultrasound.",
+    "mnemonic": "Lemon and banana signs on ultrasound suggest myelomeningocele with Chiari II malformation."
+  },
+  {
+    "id": "ob-newborn-neonatal-29",
+    "system": "Newborn & Neonatal",
+    "topic": "Newborn screen timing",
+    "stem": "A newborn is discharged home 12 hours after an uncomplicated vaginal delivery, and the routine newborn metabolic screen is drawn before discharge. Which of the following is the most appropriate next step?",
+    "options": [
+      "Repeat the newborn screen at 24-48 hours of age or at a follow-up visit",
+      "Cancel the hearing screen since metabolic screening was already performed",
+      "Order a confirmatory serum phenylalanine level immediately",
+      "Delay all screening until 2 weeks of age",
+      "No further action is needed; the screen is valid"
+    ],
+    "answerIndex": 0,
+    "explanation": "Screening performed before 24 hours of age and before adequate protein intake can yield false-negative results for conditions like phenylketonuria, so the screen should be repeated at 24-48 hours or at follow-up.",
+    "optionRationales": [
+      "Correct - if the initial screen is obtained too early, it should be repeated at 24-48 hours of age or at the first outpatient visit to accurately detect conditions like phenylketonuria that depend on protein intake.",
+      "Incorrect - the hearing screen is a separate test using otoacoustic emissions or auditory brainstem response and is not replaced by metabolic screening.",
+      "Incorrect - a confirmatory serum level is not the first step; repeat screening per protocol is appropriate first.",
+      "Incorrect - delaying screening to 2 weeks risks missing the early diagnosis and treatment window for conditions like congenital hypothyroidism.",
+      "Incorrect - screening obtained too early, before adequate protein/milk intake, risks a false-negative result, particularly for phenylketonuria."
+    ],
+    "concept": "Newborn metabolic screening should ideally be performed after the infant has had adequate protein intake, typically at 24-48 hours of age; screening performed too early may require repeat testing to avoid false negatives."
+  },
+  {
+    "id": "ob-newborn-neonatal-30",
+    "system": "Newborn & Neonatal",
+    "topic": "Pathologic jaundice onset <24h",
+    "stem": "A newborn develops visible jaundice at 18 hours of life. The mother's blood type is O positive and the infant's blood type is A positive. Which of the following is the most appropriate next step?",
+    "options": [
+      "Reassurance; this is normal physiologic jaundice",
+      "Obtain a total and direct bilirubin, hematocrit, reticulocyte count, and direct Coombs test",
+      "Discharge home with outpatient follow-up in 1 week",
+      "Start empiric phototherapy without further workup",
+      "Begin exchange transfusion immediately"
+    ],
+    "answerIndex": 1,
+    "explanation": "Jaundice appearing within the first 24 hours of life is always pathologic and, given the ABO setup, raises concern for hemolytic disease requiring prompt laboratory evaluation.",
+    "optionRationales": [
+      "Incorrect - jaundice appearing within the first 24 hours of life is never physiologic and requires prompt evaluation.",
+      "Correct - jaundice in the first 24 hours raises concern for hemolytic disease such as ABO incompatibility; evaluation includes bilirubin fractionation, hematocrit, reticulocyte count, and Coombs testing.",
+      "Incorrect - discharging without evaluation risks missing a rapidly progressive hemolytic process and the risk of kernicterus.",
+      "Incorrect - phototherapy may ultimately be needed, but the bilirubin level and cause should be assessed first to guide management and rule out hemolysis.",
+      "Incorrect - exchange transfusion is reserved for severe hyperbilirubinemia or signs of acute bilirubin encephalopathy, not as an immediate first step without laboratory data."
+    ],
+    "concept": "Jaundice within the first 24 hours of life is never physiologic and warrants immediate laboratory evaluation for hemolytic causes (blood type incompatibility, G6PD deficiency, hereditary spherocytosis) because of the risk of rapidly rising bilirubin and kernicterus.",
+    "discriminator": "Timing is the key differentiator: onset before 24 hours points to hemolysis or another pathologic cause, whereas onset after 24 hours with a benign course suggests physiologic jaundice."
+  },
+  {
+    "id": "ob-newborn-neonatal-31",
+    "system": "Newborn & Neonatal",
+    "topic": "Phototherapy threshold",
+    "stem": "A term, otherwise healthy 48-hour-old newborn has a total serum bilirubin that plots in the high-intermediate risk zone on the hour-specific bilirubin nomogram, with no evidence of hemolysis. Which of the following is the most appropriate management?",
+    "options": [
+      "Administer intravenous immunoglobulin",
+      "Reassure the parents and discharge with no follow-up",
+      "Start phenobarbital",
+      "Perform immediate exchange transfusion",
+      "Initiate phototherapy"
+    ],
+    "answerIndex": 4,
+    "explanation": "Bilirubin levels in the high-intermediate to high-risk zones on the hour-specific nomogram warrant initiation of phototherapy to reduce unconjugated bilirubin and prevent progression to dangerous levels.",
+    "optionRationales": [
+      "Incorrect - intravenous immunoglobulin is an adjunct used in Rh or ABO hemolytic disease with significant hemolysis, which is not present here.",
+      "Incorrect - discharging without intervention or follow-up risks progression to severe hyperbilirubinemia and kernicterus.",
+      "Incorrect - phenobarbital is not standard therapy for neonatal hyperbilirubinemia.",
+      "Incorrect - exchange transfusion is reserved for bilirubin levels far exceeding phototherapy thresholds or with signs of acute bilirubin encephalopathy, not for high-intermediate risk levels.",
+      "Correct - bilirubin in the high-intermediate risk zone without hemolysis warrants phototherapy to convert unconjugated bilirubin into water-soluble photoisomers for excretion."
+    ],
+    "concept": "Management of neonatal hyperbilirubinemia is guided by hour-specific bilirubin nomograms that account for gestational age and risk factors; phototherapy is initiated at defined bilirubin thresholds to convert unconjugated bilirubin into water-soluble photoisomers for excretion, preventing progression to levels associated with kernicterus."
+  },
+  {
+    "id": "ob-newborn-neonatal-32",
+    "system": "Newborn & Neonatal",
+    "topic": "Physiologic neonatal jaundice",
+    "stem": "A term newborn is noted to have mild jaundice on day 3 of life. The infant is breastfeeding well, has normal vital signs, and had no jaundice on day 1. Total bilirubin is mildly elevated and predominantly unconjugated. Which of the following best explains this presentation?",
+    "options": [
+      "Biliary atresia",
+      "ABO hemolytic disease of the newborn",
+      "Physiologic jaundice due to increased bilirubin production and immature hepatic conjugation",
+      "Breast milk jaundice syndrome",
+      "Sepsis-associated cholestasis"
+    ],
+    "answerIndex": 2,
+    "explanation": "Physiologic jaundice appears after 24 hours, peaks around day 3-5, and results from higher neonatal red cell turnover combined with transient immaturity of hepatic bilirubin conjugation.",
+    "optionRationales": [
+      "Incorrect - biliary atresia causes progressive conjugated hyperbilirubinemia typically presenting after 2 weeks of life, not mild unconjugated hyperbilirubinemia at day 3.",
+      "Incorrect - hemolytic disease from ABO or Rh incompatibility typically presents with jaundice within the first 24 hours of life, not on day 3.",
+      "Correct - physiologic jaundice appears after 24 hours, peaks by day 3-5, and reflects increased red cell turnover with immature UGT1A1-mediated conjugation.",
+      "Incorrect - breast milk jaundice typically develops later, around 1-2 weeks of life, and persists longer; this timing better fits physiologic jaundice.",
+      "Incorrect - sepsis-associated cholestasis causes conjugated hyperbilirubinemia and is accompanied by systemic signs of illness, which are absent here."
+    ],
+    "concept": "Physiologic jaundice is a diagnosis of exclusion characterized by unconjugated hyperbilirubinemia that appears after the first 24 hours of life, peaks by day 3-5, and resolves by 1-2 weeks; it reflects normal neonatal red cell turnover and transient hepatic conjugation immaturity."
+  },
+  {
+    "id": "ob-newborn-neonatal-33",
+    "system": "Newborn & Neonatal",
+    "topic": "Prematurity risk factors and complications",
+    "stem": "A 26-week premature infant in the NICU is found to have abdominal distension, bloody stools, and feeding intolerance on day 10 of life. Abdominal x-ray shows pneumatosis intestinalis. This complication is most strongly associated with which of the following features of prematurity?",
+    "options": [
+      "Deficient surfactant production in the lungs",
+      "Patency of the ductus arteriosus",
+      "Immature intestinal mucosal barrier and dysregulated blood flow",
+      "Germinal matrix fragility",
+      "Immature hepatic glucuronyl transferase activity"
+    ],
+    "answerIndex": 2,
+    "explanation": "Necrotizing enterocolitis (NEC), suggested by pneumatosis intestinalis, results from an immature and vulnerable intestinal mucosa combined with ischemia/reperfusion injury and bacterial invasion, a complication strongly linked to prematurity.",
+    "optionRationales": [
+      "Surfactant deficiency causes RDS, not the gastrointestinal findings described here.",
+      "A patent ductus arteriosus can cause hemodynamic instability but does not directly explain pneumatosis intestinalis.",
+      "Correct: prematurity is associated with an immature gut mucosal barrier and impaired intestinal blood flow regulation, predisposing to NEC.",
+      "Germinal matrix fragility predisposes to intraventricular hemorrhage, a separate complication of prematurity.",
+      "Immature glucuronyl transferase causes physiologic/unconjugated hyperbilirubinemia, unrelated to pneumatosis intestinalis."
+    ],
+    "concept": "Necrotizing enterocolitis is a major complication of prematurity caused by immaturity of the gut barrier, dysregulated mesenteric perfusion, and abnormal bacterial colonization, leading to mucosal injury, pneumatosis intestinalis, and risk of perforation. Management includes bowel rest, nasogastric decompression, and broad-spectrum antibiotics."
+  },
+  {
+    "id": "ob-newborn-neonatal-34",
+    "system": "Newborn & Neonatal",
+    "topic": "RDS and surfactant deficiency",
+    "stem": "A male infant is delivered at 31 weeks' gestation to a mother who did not receive antenatal corticosteroids. Within minutes of birth he develops tachypnea, grunting, nasal flaring, and subcostal retractions. Chest x-ray shows a diffuse fine reticulogranular \"ground-glass\" pattern with air bronchograms. Which of the following best explains the underlying pathophysiology?",
+    "options": [
+      "Delayed clearance of fetal lung fluid due to lack of labor",
+      "Persistent elevation of pulmonary vascular resistance after birth",
+      "Aspiration of meconium-stained amniotic fluid causing airway obstruction",
+      "Deficiency of pulmonary surfactant leading to alveolar collapse",
+      "In utero pulmonary infection with group B Streptococcus"
+    ],
+    "answerIndex": 3,
+    "explanation": "Neonatal RDS results from insufficient surfactant production by immature type II pneumocytes, causing increased alveolar surface tension, diffuse atelectasis, and the classic ground-glass/air bronchogram pattern; risk rises with prematurity, especially without antenatal steroids.",
+    "optionRationales": [
+      "This describes transient tachypnea of the newborn, which shows fluid in fissures/perihilar streaking rather than a ground-glass reticulogranular pattern.",
+      "Persistent pulmonary hypertension of the newborn presents with severe hypoxemia out of proportion to x-ray findings, not this classic ground-glass pattern.",
+      "Meconium aspiration occurs in term/post-term infants with meconium-stained fluid and produces patchy infiltrates with hyperinflation, not this presentation.",
+      "Correct: surfactant deficiency in a premature infant causes diffuse alveolar collapse producing the ground-glass appearance with air bronchograms.",
+      "GBS pneumonia can mimic RDS radiographically but the vignette gives no maternal GBS risk factors and specifically emphasizes prematurity without steroids, pointing to surfactant deficiency."
+    ],
+    "concept": "Surfactant, produced by type II pneumocytes, reduces alveolar surface tension and prevents alveolar collapse at end-expiration. Surfactant production becomes adequate around 34-36 weeks; prematurity and lack of antenatal corticosteroids are the key risk factors for RDS.",
+    "discriminator": "RDS classically shows a diffuse fine reticulogranular ground-glass pattern with air bronchograms in a preterm infant, distinguishing it from the coarse perihilar streaking of TTN or the patchy asymmetric infiltrates of meconium aspiration."
+  },
+  {
+    "id": "ob-newborn-neonatal-35",
+    "system": "Newborn & Neonatal",
+    "topic": "RDS management and prevention",
+    "stem": "A woman at 29 weeks' gestation presents in preterm labor with cervical dilation of 4 cm and is expected to deliver within 48 hours. Which of the following interventions most directly reduces the risk of respiratory distress syndrome in the neonate?",
+    "options": [
+      "Maternal administration of betamethasone",
+      "Maternal administration of indomethacin",
+      "Maternal antibiotic prophylaxis with ampicillin",
+      "Maternal administration of magnesium sulfate",
+      "Immediate cesarean delivery"
+    ],
+    "answerIndex": 0,
+    "explanation": "Antenatal corticosteroids (betamethasone or dexamethasone) accelerate fetal surfactant production and significantly reduce the incidence and severity of neonatal RDS when given to mothers at risk of preterm delivery between 24-34 weeks.",
+    "optionRationales": [
+      "Correct: antenatal corticosteroids directly stimulate fetal type II pneumocyte surfactant synthesis, reducing RDS incidence and severity.",
+      "Indomethacin is a tocolytic that can delay delivery but does not directly mature fetal lungs and carries fetal risks (oligohydramnios, ductal constriction) with prolonged use.",
+      "Antibiotics are used for GBS prophylaxis or in preterm premature rupture of membranes to prevent infection, not to prevent RDS.",
+      "Magnesium sulfate is given for fetal neuroprotection to reduce cerebral palsy risk, not to prevent RDS.",
+      "Immediate delivery would not allow time for lung maturation and is not indicated here without an obstetric emergency."
+    ],
+    "concept": "Antenatal corticosteroids given to mothers at risk of preterm birth between 24 0/7 and 34 0/7 weeks gestation accelerate fetal lung maturation by inducing surfactant protein synthesis, reducing rates of RDS, intraventricular hemorrhage, and neonatal death."
+  },
+  {
+    "id": "ob-newborn-neonatal-36",
+    "system": "Newborn & Neonatal",
+    "topic": "Transient tachypnea of the newborn",
+    "stem": "A term infant delivered by scheduled cesarean section without labor develops mild tachypnea, mild retractions, and grunting within 1 hour of birth. Oxygen requirement is minimal. Chest x-ray shows prominent perihilar streaking and fluid in the interlobar fissures with normal lung volumes. Symptoms resolve completely by 36 hours of age. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Meconium aspiration syndrome",
+      "Transient tachypnea of the newborn",
+      "Congenital pneumonia",
+      "Persistent pulmonary hypertension of the newborn",
+      "Respiratory distress syndrome"
+    ],
+    "answerIndex": 1,
+    "explanation": "TTN results from delayed clearance of fetal lung fluid, is more common after cesarean delivery without labor, and presents with mild, self-limited tachypnea that resolves within 24-72 hours, with x-ray showing perihilar streaking and fluid in fissures rather than the diffuse ground-glass pattern of RDS.",
+    "optionRationales": [
+      "Meconium aspiration occurs with meconium-stained fluid in term/post-term infants and shows patchy infiltrates with hyperinflation, not this benign, rapidly resolving picture.",
+      "Correct: TTN is caused by delayed resorption of fetal lung fluid, is associated with cesarean delivery without labor, and resolves within 24-72 hours with the described benign x-ray findings.",
+      "Congenital pneumonia typically presents with additional signs of infection (fever, elevated inflammatory markers) and does not resolve as rapidly or predictably.",
+      "PPHN causes severe, labile hypoxemia disproportionate to mild x-ray findings, not this mild, self-resolving presentation.",
+      "RDS occurs primarily in preterm infants and shows a diffuse reticulogranular ground-glass pattern with air bronchograms, not perihilar streaking with rapid resolution."
+    ],
+    "concept": "Transient tachypnea of the newborn is caused by delayed clearance of fetal lung fluid, particularly after cesarean delivery without labor (labor promotes catecholamine-driven fluid resorption). It is a mild, self-limited condition that resolves within 24-72 hours and is a diagnosis of exclusion after ruling out more serious causes of neonatal respiratory distress.",
+    "discriminator": "TTN is distinguished from RDS by term gestation, rapid resolution within 1-3 days, and x-ray showing perihilar streaking/fluid in fissures rather than diffuse ground-glass opacities with air bronchograms."
+  },
+  {
+    "id": "ob-newborn-neonatal-37",
+    "system": "Newborn & Neonatal",
+    "topic": "Universal hearing screen follow-up",
+    "stem": "A newborn fails the initial hearing screen performed by otoacoustic emissions prior to hospital discharge. Which of the following is the most appropriate next step?",
+    "options": [
+      "Reassure the parents that this is a normal finding requiring no follow-up",
+      "Delay all further hearing evaluation until age 3 years",
+      "Immediately begin cochlear implant evaluation",
+      "Refer for repeat/diagnostic audiologic testing within the first 1-3 months of life",
+      "Repeat the metabolic newborn screen"
+    ],
+    "answerIndex": 3,
+    "explanation": "Infants who fail the initial hearing screen should undergo diagnostic audiologic testing, ideally completed by 3 months of age, so intervention can begin by 6 months if hearing loss is confirmed.",
+    "optionRationales": [
+      "Incorrect - a failed screen requires follow-up; it does not confirm hearing loss but cannot be dismissed without evaluation.",
+      "Incorrect - delaying evaluation to age 3 misses the critical window for early intervention in speech and language development.",
+      "Incorrect - cochlear implantation is considered only after confirmed severe-profound hearing loss and appropriate trials of amplification, not immediately after a failed screen.",
+      "Correct - infants who fail the initial screen require diagnostic audiologic testing, ideally completed by 3 months of age, to confirm hearing status and enable timely intervention.",
+      "Incorrect - the metabolic screen evaluates unrelated conditions and does not assess hearing."
+    ],
+    "concept": "Universal newborn hearing screening aims to identify congenital hearing loss early; infants who fail the initial screen require timely diagnostic audiologic evaluation, ideally by 3 months of age, so intervention can begin by 6 months if hearing loss is confirmed, optimizing speech and language outcomes."
+  },
+  {
+    "id": "ob-newborn-neonatal-38",
+    "system": "Newborn & Neonatal",
+    "topic": "Vitamin K prophylaxis",
+    "stem": "A healthy term newborn receives an intramuscular injection shortly after birth as part of routine newborn care. Which of the following best describes the purpose of this medication?",
+    "options": [
+      "Prevention of retinopathy of prematurity",
+      "Prevention of hemolytic disease of the newborn",
+      "Prevention of neonatal hypoglycemia",
+      "Prevention of neonatal sepsis",
+      "Prevention of vitamin K deficiency bleeding due to physiologically low levels of vitamin K-dependent clotting factors"
+    ],
+    "answerIndex": 4,
+    "explanation": "Newborns have low vitamin K stores due to poor placental transfer, a sterile gut, and hepatic immaturity, placing them at risk for hemorrhagic disease of the newborn; a single IM dose of vitamin K corrects factors II, VII, IX, and X deficiency.",
+    "optionRationales": [
+      "Incorrect - retinopathy of prematurity relates to oxygen exposure and prematurity, not vitamin K status.",
+      "Incorrect - hemolytic disease of the newborn is prevented by maternal Rh immunoglobulin (RhoGAM), not neonatal vitamin K.",
+      "Incorrect - vitamin K has no role in neonatal glucose homeostasis.",
+      "Incorrect - vitamin K has no antimicrobial activity and does not prevent sepsis.",
+      "Correct - vitamin K crosses the placenta poorly and the neonatal gut is initially sterile, so IM vitamin K prevents hemorrhagic disease of the newborn from deficient clotting factors."
+    ],
+    "concept": "All newborns receive a single intramuscular dose of vitamin K shortly after birth to prevent vitamin K deficiency bleeding, since vitamin K crosses the placenta poorly, the neonatal gut cannot yet synthesize it, and breast milk is a poor source."
   },
   {
     "id": "ob-menstrual-disorders-1",
@@ -9943,6 +11364,575 @@ export const OB_MCQS: McqQuestion[] = [
     "discriminator": "The presence or absence of the cervix itself (supracervical vs total hysterectomy) determines whether screening continues, not the reason for the hysterectomy."
   },
   {
+    "id": "ob-sexual-health-assault-1",
+    "system": "Sexual Health & Assault",
+    "topic": "Consent for forensic evidence collection",
+    "stem": "A 22-year-old woman presents to the emergency department 6 hours after a sexual assault. She agrees to a medical evaluation and treatment but is unsure whether she wants to report the assault to police. Which of the following best describes the appropriate approach to consent for the forensic evidence exam?",
+    "options": [
+      "She must decide immediately whether to pursue prosecution before any evidence can be collected",
+      "A parent or guardian must provide consent regardless of her age",
+      "She can consent to forensic evidence collection independent of her decision to report to police",
+      "Consent for the medical exam automatically implies consent for police notification",
+      "Evidence collection cannot proceed unless she agrees to file a police report"
+    ],
+    "answerIndex": 2,
+    "explanation": "Patients can consent to a forensic medical exam and evidence collection (often stored anonymously) without committing to report the assault to law enforcement, preserving patient autonomy and the option to report later.",
+    "optionRationales": [
+      "Patients are not required to decide about prosecution at the time of the exam; evidence can be collected and held pending a later decision.",
+      "A competent adult patient provides her own consent; a guardian is not required unless she is a minor per state law.",
+      "Evidence collection and medical care can be consented to and performed independent of any decision about police reporting, allowing evidence to be preserved even if reporting occurs later or not at all.",
+      "Consent for medical treatment and consent for police involvement are separate and must be addressed independently.",
+      "Evidence collection does not require an immediate or concurrent police report; many jurisdictions allow anonymous evidence kits."
+    ],
+    "concept": "The forensic medical exam should be offered as a patient-centered, autonomy-preserving process: consent for the medical exam, evidence collection, and law enforcement reporting are each separate decisions the patient can make independently.",
+    "discriminator": "This differs from routine medical consent because forensic evidence collection has an additional layer — reporting to authorities — that remains entirely the patient's separate choice."
+  },
+  {
+    "id": "ob-sexual-health-assault-2",
+    "system": "Sexual Health & Assault",
+    "topic": "Emergency contraception selection",
+    "stem": "A 27-year-old woman with a BMI of 34 kg/m2 presents 60 hours after unprotected sexual assault and requests emergency contraception. She wants the most effective option available and does not desire ongoing contraception. Which of the following is the best choice?",
+    "options": [
+      "Copper intrauterine device",
+      "Combined estrogen-progestin regimen (Yuzpe method)",
+      "Levonorgestrel oral tablet",
+      "Oral doxycycline",
+      "Progestin-only pill taken daily"
+    ],
+    "answerIndex": 0,
+    "explanation": "The copper IUD is the most effective form of emergency contraception, is not reduced in efficacy by elevated BMI, and remains effective up to 5 days after intercourse.",
+    "optionRationales": [
+      "The copper IUD has the lowest failure rate of all emergency contraception options and maintains efficacy regardless of body weight or BMI, and up to 120 hours after intercourse.",
+      "The Yuzpe method is an older, less effective regimen with more side effects and is not preferred when a copper IUD is available.",
+      "Levonorgestrel efficacy declines significantly in patients with elevated BMI and is less effective than ulipristal acetate or the copper IUD in this setting.",
+      "Doxycycline is an antibiotic used for STI prophylaxis, not for pregnancy prevention.",
+      "Daily progestin-only pills are used for ongoing contraception, not as a one-time emergency contraception method."
+    ],
+    "concept": "The copper IUD is the most effective emergency contraceptive option, effective up to 5 days after intercourse and unaffected by patient body weight, making it preferable to oral levonorgestrel in patients with obesity who desire maximum efficacy.",
+    "discriminator": "Unlike levonorgestrel, whose efficacy is reduced in patients with higher BMI, the copper IUD's contraceptive efficacy is essentially unaffected by weight."
+  },
+  {
+    "id": "ob-sexual-health-assault-3",
+    "system": "Sexual Health & Assault",
+    "topic": "Endometriosis-related dyspareunia",
+    "stem": "A 29-year-old nulligravid woman reports deep pelvic pain with intercourse, particularly with deep penetration, along with progressively worsening dysmenorrhea and 18 months of infertility. Pelvic exam reveals a fixed, retroverted uterus and tenderness along the uterosacral ligaments. Which of the following is the most likely cause of her dyspareunia?",
+    "options": [
+      "Provoked vestibulodynia",
+      "Endometriosis",
+      "Vaginismus",
+      "Pelvic inflammatory disease",
+      "Inadequate lubrication"
+    ],
+    "answerIndex": 1,
+    "explanation": "Deep dyspareunia with dysmenorrhea, infertility, uterosacral nodularity/tenderness, and a fixed retroverted uterus is characteristic of endometriosis.",
+    "optionRationales": [
+      "Incorrect: vestibulodynia causes superficial entry pain reproduced by vestibular touch, not deep pain with a fixed uterus.",
+      "Correct: the triad of deep dyspareunia, dysmenorrhea, and infertility with uterosacral tenderness and uterine fixation strongly suggests endometriosis.",
+      "Incorrect: vaginismus causes involuntary spasm preventing penetration, not deep pain in a patient able to attempt intercourse.",
+      "Incorrect: PID typically presents acutely with fever, discharge, and cervical motion tenderness rather than a chronic progressive pattern with infertility.",
+      "Incorrect: inadequate lubrication causes superficial friction-related pain, not deep pain associated with dysmenorrhea and infertility."
+    ],
+    "concept": "Deep dyspareunia should prompt evaluation for endometriosis, adenomyosis, PID, or pelvic mass. Endometriosis classically presents with cyclic pelvic pain, dysmenorrhea, dyspareunia, and infertility, sometimes with a fixed retroverted uterus or uterosacral nodularity on exam.",
+    "discriminator": "Unlike PID, endometriosis-related dyspareunia is chronic and cyclic without fever, purulent discharge, or acute cervical motion tenderness."
+  },
+  {
+    "id": "ob-sexual-health-assault-4",
+    "system": "Sexual Health & Assault",
+    "topic": "Female arousal disorder",
+    "stem": "A 31-year-old woman reports that despite having normal sexual desire and wanting to be intimate with her partner, she experiences minimal genital lubrication and swelling during sexual activity, leading to reduced sensation and difficulty becoming physically excited. This has been persistent for several months and causes her distress. Pelvic exam and hormone levels are normal. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Female orgasmic disorder",
+      "Female sexual arousal disorder",
+      "Hypoactive sexual desire disorder",
+      "Genitourinary syndrome of menopause",
+      "Vaginismus"
+    ],
+    "answerIndex": 1,
+    "explanation": "Persistent inability to attain or maintain adequate genital lubrication/swelling response despite normal desire, causing distress, defines female sexual arousal disorder.",
+    "optionRationales": [
+      "Incorrect: orgasmic disorder is difficulty reaching climax despite adequate arousal, which is not what is described here.",
+      "Correct: intact desire with impaired physiologic arousal response (lubrication/swelling) defines female sexual arousal disorder.",
+      "Incorrect: HSDD involves deficient desire itself, but this patient explicitly has normal desire.",
+      "Incorrect: GSM is a hypoestrogenic, typically menopausal condition, but this patient has normal hormone levels and exam.",
+      "Incorrect: vaginismus involves involuntary muscular spasm preventing penetration, not a failure of the lubrication/arousal response."
+    ],
+    "concept": "Female sexual arousal disorder involves a persistent or recurrent inability to attain or maintain sufficient physiologic arousal (lubrication, genital swelling, sensation) despite adequate desire and stimulation, causing distress. It is distinguished from HSDD by preserved desire.",
+    "discriminator": "The key distinguishing feature from HSDD is that desire is intact in arousal disorder; the deficit is in the physiologic arousal response itself."
+  },
+  {
+    "id": "ob-sexual-health-assault-5",
+    "system": "Sexual Health & Assault",
+    "topic": "Female orgasmic disorder",
+    "stem": "A 25-year-old woman reports that she has never been able to achieve orgasm despite normal desire, adequate arousal and lubrication, and what she describes as sufficient and prolonged stimulation with her partner. She finds this distressing. There is no history of trauma, and pelvic exam is normal. Which of the following is the most appropriate first-line treatment?",
+    "options": [
+      "Pelvic floor Botox injection",
+      "Progressive vaginal dilators",
+      "Low-dose vaginal estrogen",
+      "Flibanserin",
+      "Directed masturbation training"
+    ],
+    "answerIndex": 4,
+    "explanation": "Directed masturbation training, which teaches a woman to identify and increase effective self-stimulation techniques, is the first-line, most effective treatment for primary anorgasmia.",
+    "optionRationales": [
+      "Incorrect: pelvic floor Botox is not standard therapy for orgasmic disorder.",
+      "Incorrect: dilators are used for vaginismus to address penetration difficulty, not orgasmic dysfunction.",
+      "Incorrect: vaginal estrogen addresses atrophic changes, not a primary orgasmic disorder in a normally estrogenized woman.",
+      "Incorrect: flibanserin is indicated for hypoactive sexual desire disorder, not for isolated orgasmic dysfunction with normal desire.",
+      "Correct: directed masturbation is the best-studied and most effective first-line therapy for lifelong (primary) female orgasmic disorder."
+    ],
+    "concept": "Female orgasmic disorder is marked delay, infrequency, or absence of orgasm despite adequate sexual stimulation and arousal, causing distress. First-line treatment for primary (lifelong) anorgasmia is directed masturbation training, often combined with sex education and cognitive-behavioral techniques.",
+    "discriminator": "Unlike arousal disorder, orgasmic disorder occurs despite intact desire and adequate physiologic arousal—the deficit is specifically in achieving climax."
+  },
+  {
+    "id": "ob-sexual-health-assault-6",
+    "system": "Sexual Health & Assault",
+    "topic": "Follow-up testing after sexual assault",
+    "stem": "A 25-year-old woman was evaluated in the emergency department after a sexual assault and received empiric STI prophylaxis, emergency contraception, and HIV PEP. Which of the following is the most appropriate follow-up plan?",
+    "options": [
+      "A single HIV test at the initial visit is sufficient with no further follow-up",
+      "No further testing is needed since prophylaxis was given",
+      "Repeat HIV testing at 6 weeks, 3 months, and 6 months, along with a follow-up pregnancy test in 2-3 weeks",
+      "Schedule follow-up only for psychological counseling, with no repeat laboratory testing",
+      "Repeat testing is only needed if she becomes symptomatic"
+    ],
+    "answerIndex": 2,
+    "explanation": "Because prophylaxis does not guarantee prevention of infection or pregnancy, survivors need scheduled follow-up including serial HIV testing (baseline, 6 weeks, 3 months, 6 months) and a pregnancy test in 2-3 weeks if EC was given.",
+    "optionRationales": [
+      "A single baseline HIV test cannot capture a delayed seroconversion, which requires testing over subsequent months.",
+      "Prophylaxis reduces but does not eliminate risk, so scheduled follow-up testing remains necessary.",
+      "Serial HIV testing over 6 months and an interval pregnancy test are standard follow-up to confirm prophylaxis efficacy and detect any breakthrough infection or pregnancy.",
+      "While psychological support and counseling follow-up are important, they do not replace the need for scheduled laboratory follow-up testing.",
+      "Waiting for symptoms would miss asymptomatic infections and delayed pregnancy detection; scheduled testing is preferred."
+    ],
+    "concept": "Follow-up care after sexual assault should include structured laboratory follow-up (repeat HIV testing at 6 weeks, 3 months, and 6 months; syphilis and hepatitis serologies as indicated; pregnancy testing in 2-3 weeks) in addition to ongoing psychosocial support and counseling referral."
+  },
+  {
+    "id": "ob-sexual-health-assault-7",
+    "system": "Sexual Health & Assault",
+    "topic": "Forensic exam evidence collection window",
+    "stem": "A 30-year-old woman presents 90 hours after a sexual assault requesting evaluation. She reports no bathing since the event and is wearing the same clothing. Which of the following is the most appropriate next step?",
+    "options": [
+      "Recommend she return only if she develops symptoms of infection",
+      "Offer a forensic medical exam with evidence collection",
+      "Decline evidence collection because more than 72 hours have elapsed",
+      "Refer her directly to police without a medical evaluation",
+      "Perform only a urine pregnancy test and discharge her"
+    ],
+    "answerIndex": 1,
+    "explanation": "Forensic evidence collection can still be valuable up to 120 hours (5 days) after an assault, and medical evaluation, prophylaxis, and support should always be offered regardless of exact timing.",
+    "optionRationales": [
+      "Medical evaluation, STI/pregnancy prophylaxis, and psychosocial support should be offered promptly, not deferred until symptoms develop.",
+      "Many protocols allow evidence collection up to 120 hours post-assault, and a full medical evaluation with prophylaxis should be offered regardless.",
+      "The commonly used evidence collection window extends well beyond 72 hours, up to 120 hours in most protocols.",
+      "Medical evaluation and support should proceed regardless of the patient's decision about police involvement; referral to police is not required or a substitute for care.",
+      "A pregnancy test alone is insufficient; a full history, exam, prophylaxis, and evidence collection should be offered."
+    ],
+    "concept": "Forensic evidence collection kits remain useful and are typically offered up to 120 hours (5 days) after an assault, though yield decreases with time; regardless of timing, survivors should always receive prompt medical evaluation, prophylaxis, and support services."
+  },
+  {
+    "id": "ob-sexual-health-assault-8",
+    "system": "Sexual Health & Assault",
+    "topic": "GSM diagnosis and treatment",
+    "stem": "A 58-year-old woman who is 6 years postmenopausal reports progressive vaginal dryness, burning, and dyspareunia over the past year, along with increased urinary urgency and occasional dysuria. Pelvic exam shows pale, thin, friable vaginal mucosa with loss of rugae and a narrowed introitus. Which of the following is the most appropriate first-line treatment?",
+    "options": [
+      "Directed masturbation training",
+      "Systemic combined hormone therapy",
+      "Low-dose vaginal estrogen",
+      "Oral flibanserin",
+      "Progressive vaginal dilator therapy"
+    ],
+    "answerIndex": 2,
+    "explanation": "Low-dose vaginal (local) estrogen is first-line therapy for genitourinary syndrome of menopause, directly reversing atrophic changes with minimal systemic absorption.",
+    "optionRationales": [
+      "Incorrect: directed masturbation training treats orgasmic disorder, not atrophic dyspareunia.",
+      "Incorrect: systemic hormone therapy carries greater risks and is not necessary when symptoms are localized to the genitourinary tract alone.",
+      "Correct: local vaginal estrogen effectively restores vaginal epithelial thickness and lubrication with minimal systemic exposure, making it first-line for GSM.",
+      "Incorrect: flibanserin treats hypoactive sexual desire disorder, not the anatomic/atrophic changes of GSM.",
+      "Incorrect: dilator therapy addresses vaginismus-type muscular spasm, not the atrophic mucosal changes seen here."
+    ],
+    "concept": "Genitourinary syndrome of menopause results from estrogen deficiency causing thinning, pallor, and loss of rugae of the vaginal mucosa along with urinary symptoms such as urgency and dysuria. First-line treatment is low-dose local vaginal estrogen, with nonhormonal moisturizers/lubricants as adjuncts or alternatives.",
+    "discriminator": "Unlike vestibulodynia in young estrogenized women, GSM occurs in a hypoestrogenic state with diffuse atrophic changes (pallor, thinning, loss of rugae) rather than a focal tender point."
+  },
+  {
+    "id": "ob-sexual-health-assault-9",
+    "system": "Sexual Health & Assault",
+    "topic": "GSM in breast cancer survivor",
+    "stem": "A 52-year-old woman with a history of estrogen receptor-positive breast cancer currently taking an aromatase inhibitor reports severe vaginal dryness and dyspareunia that has led her to avoid intimacy with her partner. Exam shows atrophic vaginal mucosa consistent with genitourinary syndrome of menopause. Which of the following is the most appropriate initial treatment?",
+    "options": [
+      "Nonhormonal vaginal moisturizers and lubricants",
+      "Ospemifene",
+      "Low-dose vaginal estrogen cream",
+      "Testosterone patch",
+      "Systemic oral estrogen therapy"
+    ],
+    "answerIndex": 0,
+    "explanation": "In women with hormone receptor-positive breast cancer, nonhormonal vaginal moisturizers and lubricants are the preferred initial treatment for GSM given concerns about even minimal systemic estrogen absorption.",
+    "optionRationales": [
+      "Correct: nonhormonal moisturizers and lubricants avoid any hormonal exposure and are the recommended first step in hormone-sensitive cancer survivors.",
+      "Incorrect: ospemifene is a SERM with estrogen agonist activity on the vagina and is generally avoided in breast cancer survivors due to uncertain safety.",
+      "Incorrect: vaginal estrogen, while low-dose, still carries some systemic absorption and is generally reserved for cases refractory to nonhormonal therapy after discussion with oncology.",
+      "Incorrect: testosterone is not standard first-line therapy for GSM and has not been established as safe in this population.",
+      "Incorrect: systemic estrogen is contraindicated in a patient with estrogen receptor-positive breast cancer."
+    ],
+    "concept": "In women with a history of hormone receptor-positive breast cancer, nonhormonal vaginal moisturizers and lubricants are first-line for GSM symptoms; hormonal options are considered only after nonhormonal measures fail and in consultation with the patient's oncologist.",
+    "discriminator": "This differs from routine postmenopausal GSM management, where vaginal estrogen is first-line, because breast cancer history shifts the risk-benefit calculus toward nonhormonal options first."
+  },
+  {
+    "id": "ob-sexual-health-assault-10",
+    "system": "Sexual Health & Assault",
+    "topic": "Hepatitis B prophylaxis after assault",
+    "stem": "A 19-year-old woman who has never received the hepatitis B vaccine series presents after a sexual assault by an assailant of unknown hepatitis B status. Which of the following is the most appropriate hepatitis B prophylaxis?",
+    "options": [
+      "Administer both hepatitis B immune globulin and the vaccine series",
+      "No hepatitis B prophylaxis is indicated in sexual assault",
+      "Test for hepatitis B surface antibody and treat only if negative in six months",
+      "Initiate the hepatitis B vaccine series without hepatitis B immune globulin",
+      "Administer hepatitis B immune globulin alone without vaccination"
+    ],
+    "answerIndex": 3,
+    "explanation": "For an unvaccinated survivor whose assailant's hepatitis B status is unknown, initiating the standard hepatitis B vaccine series (without immune globulin) is recommended, since HBIG is reserved for cases where the source is known to be HBsAg-positive.",
+    "optionRationales": [
+      "Hepatitis B immune globulin is added only when the assailant is known to be HBsAg-positive, which is not the case here.",
+      "Hepatitis B prophylaxis is a standard component of post-assault care for unvaccinated survivors.",
+      "Waiting six months to test before initiating any prophylaxis would forgo the window of effective post-exposure vaccination.",
+      "Current guidance recommends starting the hepatitis B vaccine series in unvaccinated survivors, without immune globulin, unless the source is known to be HBsAg-positive.",
+      "Immune globulin alone would not confer lasting immunity; vaccination is the mainstay of prophylaxis in this scenario."
+    ],
+    "concept": "Hepatitis B prophylaxis after sexual assault depends on the survivor's vaccination status and the known status of the assailant: unvaccinated survivors should start the vaccine series, with hepatitis B immune globulin added only if the source is known to be HBsAg-positive."
+  },
+  {
+    "id": "ob-sexual-health-assault-11",
+    "system": "Sexual Health & Assault",
+    "topic": "HIV post-exposure prophylaxis",
+    "stem": "A 21-year-old woman presents 30 hours after a sexual assault by an unknown assailant whose HIV status is unavailable. She is otherwise healthy. Which of the following is the most appropriate approach regarding HIV prophylaxis?",
+    "options": [
+      "Offer a single dose of antiretroviral therapy only",
+      "Withhold prophylaxis until the assailant's HIV status is confirmed",
+      "Test the patient for HIV and start prophylaxis only if she tests positive",
+      "Offer a 28-day course of combination antiretroviral post-exposure prophylaxis",
+      "Defer any discussion of HIV prophylaxis to a follow-up visit in one week"
+    ],
+    "answerIndex": 3,
+    "explanation": "When the assailant's HIV status is unknown, HIV PEP with a 28-day multidrug antiretroviral regimen should be offered as soon as possible (ideally within 72 hours) given the potential risk of transmission.",
+    "optionRationales": [
+      "A single dose is inadequate; effective PEP requires a sustained 28-day multidrug regimen.",
+      "Prophylaxis should not be delayed pending assailant testing, which is often unavailable and would forgo the time-sensitive benefit of early initiation.",
+      "PEP is meant to prevent seroconversion after exposure; it should be offered regardless of the patient's baseline HIV status, which should be tested but does not need to be positive to justify PEP.",
+      "Because source status is unknown and risk cannot be excluded, a full 28-day multidrug antiretroviral PEP course should be offered promptly within the 72-hour window.",
+      "HIV PEP loses effectiveness the longer it is delayed and should be initiated as soon as possible, not deferred to a later visit."
+    ],
+    "concept": "HIV post-exposure prophylaxis should be offered after sexual assault when source status is unknown or positive, ideally started within 72 hours, using a 28-day combination antiretroviral regimen, alongside baseline and follow-up HIV testing of the survivor."
+  },
+  {
+    "id": "ob-sexual-health-assault-12",
+    "system": "Sexual Health & Assault",
+    "topic": "HSDD management options",
+    "stem": "A 38-year-old premenopausal woman is diagnosed with hypoactive sexual desire disorder after a thorough evaluation excludes depression, relationship conflict, and medication side effects. She and her partner wish to pursue pharmacologic treatment. Which of the following medications is FDA-approved for this condition in premenopausal women?",
+    "options": [
+      "Ospemifene",
+      "Testosterone patch",
+      "Flibanserin",
+      "Low-dose vaginal estrogen",
+      "Sertraline"
+    ],
+    "answerIndex": 2,
+    "explanation": "Flibanserin (or as-needed bremelanotide) is FDA-approved specifically for hypoactive sexual desire disorder in premenopausal women.",
+    "optionRationales": [
+      "Incorrect: ospemifene is a SERM approved for dyspareunia due to vulvovaginal atrophy, not desire disorders.",
+      "Incorrect: testosterone therapy is used off-label in some cases but is not FDA-approved for HSDD in the US.",
+      "Correct: flibanserin is FDA-approved for acquired, generalized HSDD in premenopausal women.",
+      "Incorrect: vaginal estrogen treats local atrophic symptoms (GSM), not desire disorders.",
+      "Incorrect: sertraline is an SSRI that can actually worsen desire and is not indicated to treat HSDD; it may cause sexual dysfunction as a side effect."
+    ],
+    "concept": "Flibanserin, a serotonin receptor agonist/antagonist taken daily, and bremelanotide, an as-needed melanocortin receptor agonist, are the FDA-approved pharmacologic options for premenopausal HSDD after psychosocial causes have been addressed. Non-pharmacologic therapy (counseling, sex therapy) remains foundational.",
+    "discriminator": "Unlike testosterone (off-label, not FDA-approved for this indication in the US) or SSRIs (which can worsen libido), flibanserin has a specific FDA indication for premenopausal HSDD."
+  },
+  {
+    "id": "ob-sexual-health-assault-13",
+    "system": "Sexual Health & Assault",
+    "topic": "Hypoactive sexual desire disorder",
+    "stem": "A 34-year-old premenopausal woman reports a persistent, distressing lack of interest in sexual activity for the past year that is causing significant strain in her marriage. She has a stable relationship, no history of depression, normal thyroid function, and is not on any new medications. Pelvic exam is unremarkable, and she reports no pain with attempted intercourse. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Female orgasmic disorder",
+      "Vaginismus",
+      "Genitourinary syndrome of menopause",
+      "Provoked vestibulodynia",
+      "Hypoactive sexual desire disorder"
+    ],
+    "answerIndex": 4,
+    "explanation": "Persistent, distressing loss of sexual desire not attributable to another medical, psychiatric, or relationship cause defines hypoactive sexual desire disorder.",
+    "optionRationales": [
+      "Incorrect: orgasmic disorder involves difficulty reaching orgasm despite normal desire and arousal, which is not described here.",
+      "Incorrect: vaginismus involves involuntary muscle spasm preventing penetration, not simply diminished desire.",
+      "Incorrect: GSM is a menopausal, hypoestrogenic condition causing atrophic changes and dyspareunia, not applicable to this premenopausal woman with a normal exam.",
+      "Incorrect: vestibulodynia causes localized pain on vestibular touch, not a primary desire disturbance.",
+      "Correct: chronic distressing low desire without an identifiable medical, psychiatric, or situational cause is diagnostic of HSDD."
+    ],
+    "concept": "Hypoactive sexual desire disorder is defined as persistently or recurrently deficient sexual thoughts/desire causing personal distress, after excluding depression, relationship discord, medication effects, and other medical causes. It is one of the most common female sexual dysfunctions.",
+    "discriminator": "Unlike arousal or orgasmic disorders, HSDD involves absence of desire itself rather than difficulty with physiologic arousal or reaching climax once aroused."
+  },
+  {
+    "id": "ob-sexual-health-assault-14",
+    "system": "Sexual Health & Assault",
+    "topic": "Inadequate lubrication dyspareunia",
+    "stem": "A 26-year-old woman reports mild burning discomfort with intercourse that resolves quickly after penetration. She notes the pain is worse when intercourse begins soon after minimal foreplay and improves when more time is spent on arousal beforehand. She has normal pelvic and vestibular exams with no focal tenderness, normal estrogen status, and no relationship distress. Which of the following is the most appropriate initial management?",
+    "options": [
+      "Initiate low-dose vaginal estrogen",
+      "Begin flibanserin",
+      "Refer for pelvic floor physical therapy",
+      "Order pelvic ultrasound for suspected endometriosis",
+      "Counsel on extended foreplay and use of a water-based lubricant"
+    ],
+    "answerIndex": 4,
+    "explanation": "Superficial dyspareunia limited to the start of intercourse with a normal exam in an estrogenized woman suggests inadequate lubrication, best managed with education on extended foreplay and lubricant use.",
+    "optionRationales": [
+      "Incorrect: vaginal estrogen is indicated for hypoestrogenic atrophy (GSM), not for a normally estrogenized woman with a normal exam.",
+      "Incorrect: flibanserin treats hypoactive sexual desire disorder, not pain due to insufficient lubrication with normal desire.",
+      "Incorrect: pelvic floor physical therapy is used for vaginismus or pelvic floor hypertonicity, not simple inadequate lubrication.",
+      "Incorrect: there are no findings of deep pain, dysmenorrhea, or infertility to suggest endometriosis.",
+      "Correct: this pattern of pain reflects insufficient arousal/lubrication, which responds to education on foreplay and use of lubricants rather than medical therapy."
+    ],
+    "concept": "Inadequate lubrication is one of the most common and easily correctable causes of superficial dyspareunia and should be considered when the exam is normal and pain is confined to initiation of intercourse. Simple behavioral counseling and lubricant use are first-line before pursuing further workup.",
+    "discriminator": "Unlike vestibulodynia, pain from inadequate lubrication is not reproduced by focal cotton-swab testing and improves with behavioral changes alone."
+  },
+  {
+    "id": "ob-sexual-health-assault-15",
+    "system": "Sexual Health & Assault",
+    "topic": "Intimate partner violence screening",
+    "stem": "A 33-year-old woman presents for a routine well-woman visit. Per current recommendations, which of the following is the most appropriate approach to intimate partner violence in this encounter?",
+    "options": [
+      "Screen only if she has visible signs of physical injury",
+      "Defer screening unless she volunteers a history of abuse",
+      "Screen only patients who are pregnant",
+      "Screen her directly for intimate partner violence using a validated tool, in private without her partner present",
+      "Ask her partner directly whether abuse is occurring in the relationship"
+    ],
+    "answerIndex": 3,
+    "explanation": "Routine, universal screening for intimate partner violence using a validated tool, conducted privately without the partner present, is recommended for all women of reproductive age regardless of presenting symptoms.",
+    "optionRationales": [
+      "Waiting for visible injury misses most IPV, which frequently causes no visible physical findings.",
+      "Relying on unprompted disclosure misses most cases; proactive screening substantially increases detection.",
+      "Screening should be universal for women of reproductive age, not limited to pregnancy, since IPV risk exists outside of pregnancy as well.",
+      "Universal screening in a private setting ensures safety and increases disclosure, and is recommended at periodic visits for all women of reproductive age.",
+      "Asking the partner directly breaches confidentiality and safety and could endanger the patient; screening must be done privately with the patient alone."
+    ],
+    "concept": "Guidelines recommend universal, periodic screening for intimate partner violence in all women of reproductive age using a validated instrument, performed in a private setting without the partner present to protect patient safety and encourage honest disclosure."
+  },
+  {
+    "id": "ob-sexual-health-assault-16",
+    "system": "Sexual Health & Assault",
+    "topic": "IPV safety planning",
+    "stem": "A 28-year-old woman discloses that her partner has been physically and emotionally abusive and that she is considering leaving the relationship but fears retaliation. Which of the following is the most appropriate component of safety planning to discuss with her?",
+    "options": [
+      "Advising her to confront her partner immediately about the abuse",
+      "Contacting her partner to discuss the allegations",
+      "Insisting she leave the relationship before the visit ends",
+      "Identifying a safe place to go and packing an emergency bag with essential documents",
+      "Recommending couples counseling with her partner"
+    ],
+    "answerIndex": 3,
+    "explanation": "Safety planning empowers the patient with practical strategies — such as identifying a safe location, packing essential items, and having a plan for a quick exit — while respecting her autonomy over the timing and decision to leave.",
+    "optionRationales": [
+      "Confrontation can escalate danger and is not part of recommended safety planning.",
+      "Contacting the partner breaches confidentiality and could place the patient at serious risk.",
+      "The decision and timing of leaving must remain with the patient, since leaving is often the most dangerous time in an abusive relationship.",
+      "Practical, concrete safety planning (safe location, packed bag, important documents, code word) is the core of an effective safety plan and respects patient autonomy.",
+      "Couples counseling is contraindicated in the setting of intimate partner violence, as it can increase danger to the survivor."
+    ],
+    "concept": "Safety planning involves collaborative, practical steps such as identifying a safe place to go, preparing an emergency bag with essentials and documents, arranging a code word with trusted contacts, and providing resources (hotline numbers, shelters), all while allowing the patient to control decisions and timing.",
+    "discriminator": "Leaving an abusive relationship is often the highest-risk period for escalation, so safety planning empowers rather than pressures the patient toward a specific decision or timeline."
+  },
+  {
+    "id": "ob-sexual-health-assault-17",
+    "system": "Sexual Health & Assault",
+    "topic": "PID-related dyspareunia",
+    "stem": "A 22-year-old sexually active woman presents with 3 days of lower abdominal pain, fever, and pain with intercourse. She has a new sexual partner and uses no barrier contraception. Exam shows temperature 38.3°C (100.9°F), bilateral lower abdominal tenderness, cervical motion tenderness, and mucopurulent cervical discharge. Which of the following is the most likely cause of her dyspareunia?",
+    "options": [
+      "Vaginismus",
+      "Vestibulodynia",
+      "Pelvic inflammatory disease",
+      "Endometriosis",
+      "Genitourinary syndrome of menopause"
+    ],
+    "answerIndex": 2,
+    "explanation": "Fever, cervical motion tenderness, adnexal/abdominal tenderness, and mucopurulent discharge in a sexually active woman are classic for PID, which commonly causes deep dyspareunia.",
+    "optionRationales": [
+      "Incorrect: vaginismus is muscular spasm preventing penetration, not an infectious process with fever and discharge.",
+      "Incorrect: vestibulodynia causes chronic superficial pain without fever or cervicitis.",
+      "Correct: acute fever with cervical motion tenderness and purulent discharge in a sexually active woman defines PID, a common cause of deep dyspareunia.",
+      "Incorrect: endometriosis is a chronic, afebrile condition without purulent discharge or cervical motion tenderness.",
+      "Incorrect: GSM occurs in hypoestrogenic states and does not present with fever or purulent discharge."
+    ],
+    "concept": "PID is a key infectious cause of acute deep dyspareunia and should be suspected with fever, cervical motion tenderness, adnexal tenderness, and discharge, typically from ascending Chlamydia or Neisseria gonorrhoeae infection. Prompt antibiotic treatment prevents complications like tubo-ovarian abscess and infertility.",
+    "discriminator": "The presence of fever and cervical motion tenderness distinguishes PID from the chronic, afebrile deep dyspareunia of endometriosis."
+  },
+  {
+    "id": "ob-sexual-health-assault-18",
+    "system": "Sexual Health & Assault",
+    "topic": "Provoked vestibulodynia diagnosis",
+    "stem": "A 24-year-old woman reports severe pain with vaginal penetration and inability to tolerate tampon use for the past year. She has never had dyspareunia-free intercourse. Pelvic exam shows no lesions, erythema, or discharge. Gentle touch with a cotton swab at the vaginal introitus reproduces sharp, localized pain; the vagina and cervix are nontender to deep palpation. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Lichen sclerosus",
+      "Vaginismus",
+      "Interstitial cystitis",
+      "Pudendal neuralgia",
+      "Provoked vestibulodynia"
+    ],
+    "answerIndex": 4,
+    "explanation": "Localized, reproducible pain to light touch at the vulvar vestibule on cotton-swab testing, with an otherwise normal-appearing exam, is the classic finding in provoked vestibulodynia.",
+    "optionRationales": [
+      "Lichen sclerosus produces visible white, atrophic plaques and architectural changes, which are absent here.",
+      "Vaginismus is involuntary pelvic floor muscle spasm preventing penetration, not a localized allodynia to light touch found on swab testing.",
+      "Interstitial cystitis causes bladder-related urinary urgency/frequency and suprapubic pain, not isolated vestibular touch pain.",
+      "Pudendal neuralgia typically causes burning pain in the nerve distribution that worsens with sitting, not a focal positive cotton-swab test.",
+      "The positive cotton-swab test localizing pain to the vestibule with a normal-appearing mucosa is diagnostic of provoked vestibulodynia."
+    ],
+    "concept": "Provoked vestibulodynia is diagnosed clinically by history of pain with contact (intercourse, tampons) plus a positive cotton-swab test showing focal tenderness at the vestibule, with an otherwise normal-appearing exam. It is a diagnosis of exclusion after ruling out infection, dermatoses, and other causes of vulvar pain.",
+    "discriminator": "Unlike vaginismus, which is a muscular/involuntary spasm response, vestibulodynia is a sensory allodynia localized to the vestibule on light cotton-swab touch."
+  },
+  {
+    "id": "ob-sexual-health-assault-19",
+    "system": "Sexual Health & Assault",
+    "topic": "Reporting and support after assault",
+    "stem": "A competent 35-year-old woman discloses a recent sexual assault and explicitly states she does not want the event reported to law enforcement. Which of the following is the most appropriate response by the physician?",
+    "options": [
+      "Report the assault to police regardless of her wishes",
+      "Contact her family to make the reporting decision on her behalf",
+      "Respect her decision, provide care and support, and document her wishes, since reporting is generally her choice as a competent adult",
+      "Refuse to provide medical care unless she agrees to a police report",
+      "Delay all treatment until she changes her mind about reporting"
+    ],
+    "answerIndex": 2,
+    "explanation": "For competent adult patients, the decision to report a sexual assault to law enforcement belongs to the patient (absent specific state mandatory-reporting circumstances such as certain injury types or minor status), and care should proceed regardless of that decision.",
+    "optionRationales": [
+      "Overriding a competent adult's explicit wish not to report violates her autonomy and is not required unless specific state mandatory-reporting laws apply (e.g., certain injuries, minors).",
+      "A competent adult retains decision-making authority; family members should not be given authority over her reporting decision without her consent.",
+      "Respecting patient autonomy regarding reporting, while still providing full medical care, evaluation, and support, is the appropriate standard of care for competent adults.",
+      "Medical care, prophylaxis, and evidence collection should never be conditioned on the patient's agreement to report to police.",
+      "Treatment, including time-sensitive prophylaxis, should not be delayed pending a reporting decision, since delay can reduce efficacy of interventions like EC and HIV PEP."
+    ],
+    "concept": "For competent adult sexual assault survivors, the decision to involve law enforcement generally rests with the patient, and medical evaluation, prophylaxis, evidence collection, and psychosocial support should be offered and provided independent of that decision, except where state-specific mandatory reporting laws apply (e.g., minors, certain weapon-related injuries).",
+    "discriminator": "This differs from mandatory reporting situations (e.g., minors or gunshot/stab wounds in some states), where reporting is legally required regardless of patient preference."
+  },
+  {
+    "id": "ob-sexual-health-assault-20",
+    "system": "Sexual Health & Assault",
+    "topic": "STI prophylaxis regimen after assault",
+    "stem": "A 26-year-old woman presents 4 hours after a sexual assault involving vaginal penetration. She has no known drug allergies. Which of the following empiric antimicrobial regimens is most appropriate for STI prophylaxis?",
+    "options": [
+      "Fluconazole as a single oral dose",
+      "Penicillin G benzathine IM as a single dose",
+      "Azithromycin alone as a single oral dose",
+      "Doxycycline alone for 7 days",
+      "Ceftriaxone IM plus doxycycline and metronidazole orally"
+    ],
+    "answerIndex": 4,
+    "explanation": "Standard empiric prophylaxis after sexual assault covers gonorrhea (ceftriaxone), chlamydia (doxycycline), and trichomonas (metronidazole), given the high likelihood of exposure and the difficulty ensuring follow-up.",
+    "optionRationales": [
+      "Fluconazole treats candidiasis, which is not a sexually transmitted infection requiring post-assault prophylaxis.",
+      "Benzathine penicillin treats syphilis, which is not part of routine empiric prophylaxis after assault (syphilis serology is instead checked at follow-up).",
+      "Azithromycin alone does not adequately cover gonorrhea or trichomoniasis and is not the recommended empiric regimen.",
+      "Doxycycline alone covers chlamydia but leaves gonorrhea and trichomoniasis untreated.",
+      "This combination provides empiric coverage against gonorrhea, chlamydia, and trichomoniasis, the standard regimen recommended after sexual assault."
+    ],
+    "concept": "Empiric STI prophylaxis after sexual assault targets the most common and consequential infections: a single IM dose of ceftriaxone for gonorrhea, a course of doxycycline for chlamydia, and metronidazole for trichomoniasis, given the difficulty of ensuring follow-up testing and treatment."
+  },
+  {
+    "id": "ob-sexual-health-assault-21",
+    "system": "Sexual Health & Assault",
+    "topic": "Vaginismus diagnosis",
+    "stem": "A 23-year-old woman presents because she and her husband have been unable to consummate their marriage despite multiple attempts over 6 months. She reports intense fear and involuntary tightening whenever penetration is attempted, preventing insertion of a penis, tampon, or even a finger. Pelvic exam cannot be completed due to reflexive contraction of the perineal and vaginal muscles when the exam begins. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Vaginismus",
+      "Hypoactive sexual desire disorder",
+      "Genitourinary syndrome of menopause",
+      "Provoked vestibulodynia",
+      "Female orgasmic disorder"
+    ],
+    "answerIndex": 0,
+    "explanation": "Involuntary, reflexive contraction of the perivaginal and pelvic floor muscles that prevents any vaginal penetration is the hallmark of vaginismus.",
+    "optionRationales": [
+      "Correct: involuntary muscle spasm preventing penetration of any object, including a speculum or finger, defines vaginismus.",
+      "Incorrect: HSDD is a disorder of desire, not an involuntary physical barrier to penetration.",
+      "Incorrect: GSM occurs with estrogen deficiency and causes atrophic changes, not primary muscular spasm in a young reproductive-age woman.",
+      "Incorrect: vestibulodynia produces focal pain on touch but does not typically prevent exam completion via reflexive muscle spasm.",
+      "Incorrect: orgasmic disorder involves difficulty achieving orgasm despite adequate arousal and successful penetration, not an inability to be penetrated."
+    ],
+    "concept": "Vaginismus is characterized by involuntary spasm of the pelvic floor and perivaginal musculature that prevents vaginal penetration, often with associated fear or anxiety about penetration. It can be primary (lifelong) or secondary and is diagnosed clinically based on history and exam findings.",
+    "discriminator": "Unlike vestibulodynia, which causes pain on contact but does not necessarily block instrumentation, vaginismus physically prevents penetration through muscle spasm."
+  },
+  {
+    "id": "ob-sexual-health-assault-22",
+    "system": "Sexual Health & Assault",
+    "topic": "Vaginismus first-line treatment",
+    "stem": "A 27-year-old woman is diagnosed with vaginismus after presenting with an inability to tolerate vaginal penetration due to involuntary pelvic floor muscle spasm. Pelvic anatomy is normal and there is no evidence of infection, atrophy, or other structural pathology. Which of the following is the most appropriate first-line treatment?",
+    "options": [
+      "Oral flibanserin",
+      "Surgical vestibulectomy",
+      "Low-dose vaginal estrogen cream",
+      "Empiric antibiotics for presumed pelvic infection",
+      "Progressive vaginal dilator therapy with pelvic floor physical therapy"
+    ],
+    "answerIndex": 4,
+    "explanation": "First-line management of vaginismus is progressive desensitization using vaginal dilators combined with pelvic floor physical therapy and often cognitive-behavioral/sex therapy.",
+    "optionRationales": [
+      "Incorrect: flibanserin is used for hypoactive sexual desire disorder, not for involuntary muscle spasm preventing penetration.",
+      "Incorrect: vestibulectomy is reserved for refractory localized vestibulodynia, not vaginismus, and is not first-line therapy.",
+      "Incorrect: vaginal estrogen treats atrophic/hypoestrogenic causes of dyspareunia, not muscular spasm in a normally estrogenized woman.",
+      "Incorrect: there is no evidence of infection here, so antibiotics are not indicated.",
+      "Correct: graduated dilator use with pelvic floor physical therapy retrains the pelvic floor muscles and reduces involuntary spasm, forming first-line therapy."
+    ],
+    "concept": "Vaginismus is treated with a stepwise, non-invasive approach: patient education, pelvic floor physical therapy, and progressive vaginal dilator use, often paired with psychotherapy to address associated anxiety or fear. Surgery is not first-line.",
+    "discriminator": "Dilator therapy targets the involuntary muscular component specific to vaginismus, distinguishing it from hormonal treatments used for atrophy-related dyspareunia."
+  },
+  {
+    "id": "ob-sexual-health-assault-23",
+    "system": "Sexual Health & Assault",
+    "topic": "Vestibulodynia vs atrophy",
+    "stem": "A 24-year-old woman reports burning pain at the vaginal opening every time she attempts intercourse or inserts a tampon, present for 8 months. She has normal estrogen status and regular menses. On exam, light touch with a cotton swab at the vulvar vestibule reproduces sharp, localized pain; the vagina appears pink and well estrogenized with normal lubrication. Which of the following is the most likely diagnosis?",
+    "options": [
+      "Pelvic inflammatory disease",
+      "Endometriosis",
+      "Provoked vestibulodynia",
+      "Vaginismus",
+      "Genitourinary syndrome of menopause"
+    ],
+    "answerIndex": 2,
+    "explanation": "Localized, provoked pain at the vestibule reproduced by cotton-swab testing in a woman with normal estrogenization is classic for provoked vestibulodynia.",
+    "optionRationales": [
+      "Incorrect: PID presents with pelvic/abdominal pain, cervical motion tenderness, and often fever or discharge, not isolated vestibular allodynia.",
+      "Incorrect: endometriosis classically causes deep dyspareunia with dysmenorrhea, not superficial entry-point pain.",
+      "Correct: cotton-swab-reproducible focal vestibular pain with normal-appearing, well-estrogenized tissue is diagnostic of provoked vestibulodynia.",
+      "Incorrect: vaginismus involves involuntary vaginal/pelvic floor muscle spasm preventing penetration rather than a focal tender vestibular trigger point.",
+      "Incorrect: GSM occurs with hypoestrogenism and shows pale, thin, dry vaginal tissue, not present in this normally estrogenized young woman."
+    ],
+    "concept": "Dyspareunia is classified as superficial (entry) versus deep, which narrows the differential. Superficial pain reproducible with light vestibular touch in an estrogenized patient points to vestibulodynia, while superficial pain with a pale, dry, hypoestrogenic vagina points to GSM/atrophy.",
+    "discriminator": "Unlike GSM, vestibulodynia occurs in normally estrogenized tissue with a focal, reproducible tender point rather than diffuse atrophic changes."
+  },
+  {
+    "id": "ob-sexual-health-assault-24",
+    "system": "Sexual Health & Assault",
+    "topic": "Vulvodynia first-line management",
+    "stem": "A 29-year-old woman is diagnosed with localized provoked vestibulodynia after a positive cotton-swab test and normal exam otherwise. She has already tried lifestyle modification (avoiding irritants, cotton underwear) without relief. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Vestibulectomy",
+      "Long-term oral opioid therapy",
+      "Botulinum toxin injection into the vestibule",
+      "Pelvic floor physical therapy with topical lidocaine",
+      "Systemic corticosteroids"
+    ],
+    "answerIndex": 3,
+    "explanation": "First-line therapy for provoked vestibulodynia after failed conservative measures is multimodal, including pelvic floor physical therapy and topical lidocaine or other topical agents, before escalating to more invasive options.",
+    "optionRationales": [
+      "Vestibulectomy is reserved for severe, refractory cases after multiple lines of conservative and medical therapy have failed.",
+      "Chronic opioids are not appropriate or effective first-line therapy for vestibulodynia and carry significant risks.",
+      "Botulinum toxin is an option only after failure of first-line conservative and topical/physical therapy measures.",
+      "Pelvic floor PT combined with topical lidocaine is the recommended first-line escalation for persistent provoked vestibulodynia.",
+      "Systemic corticosteroids are not standard therapy for provoked vestibulodynia, which is not primarily an inflammatory process."
+    ],
+    "concept": "Management of provoked vestibulodynia is stepwise: patient education and irritant avoidance, then topical lidocaine and pelvic floor physical therapy, followed by tricyclic antidepressants or other neuromodulating agents, with surgery (vestibulectomy) reserved for refractory cases."
+  },
+  {
     "id": "ob-pharmacology-1",
     "system": "Pharmacology",
     "topic": "Antenatal corticosteroid window",
@@ -11406,6 +13396,543 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Levonorgestrel and ulipristal both aim to prevent ovulation, but ulipristal is a progesterone receptor modulator that can still delay ovulation even when given closer to the LH surge, giving it a longer effective window (up to 120 hours) compared to levonorgestrel (most effective within 72 hours).",
     "discriminator": "Ulipristal can still block ovulation even after the LH surge has started to rise, whereas levonorgestrel loses effectiveness once the LH surge is underway."
+  },
+  {
+    "id": "ob-ethics-social-sciences-1",
+    "system": "Ethics & Social Sciences",
+    "topic": "Advance refusal vs. family override",
+    "stem": "A 34-year-old woman with eclampsia becomes unresponsive after a seizure and requires emergency cesarean delivery complicated by severe hemorrhage. Earlier that day, while fully alert and oriented, she signed an advance directive card refusing all blood transfusions due to her religious beliefs. Her husband, now at bedside, demands that the team transfuse blood to save her life. Which of the following is the most appropriate action?",
+    "options": [
+      "Transfuse blood because she is now unconscious and cannot object",
+      "Continue to honor the patient's prior competent refusal and avoid blood products",
+      "Transfuse blood because the husband's authorization supersedes the prior directive",
+      "Transfuse a reduced volume of blood as a compromise",
+      "Delay all treatment until a court can rule on the conflict"
+    ],
+    "answerIndex": 1,
+    "explanation": "A valid advance directive expressing refusal of blood products, made while the patient had capacity, remains binding even after she loses capacity and even over family objection.",
+    "optionRationales": [
+      "Loss of consciousness does not invalidate a previously documented competent refusal; it is precisely the situation the directive anticipated.",
+      "Correct: the prior competent refusal remains in effect and governs care even though the patient is now incapacitated.",
+      "A surrogate or family member cannot consent to treatment the patient explicitly refused in a valid advance directive.",
+      "Any transfusion, even in reduced amount, violates the patient's clearly stated refusal of blood products.",
+      "Emergent care should proceed according to the known directive without unnecessary delay for legal proceedings."
+    ],
+    "concept": "Advance directives that specify treatment refusals made while a patient has decision-making capacity remain in force after the patient becomes incapacitated and take precedence over the wishes of family members or surrogates."
+  },
+  {
+    "id": "ob-ethics-social-sciences-2",
+    "system": "Ethics & Social Sciences",
+    "topic": "Assessing decision-making capacity",
+    "stem": "A physician is evaluating whether a patient has the capacity to consent to a recommended hysterectomy for uterine cancer. Which of the following best reflects the appropriate framework for assessing decision-making capacity?",
+    "options": [
+      "The patient's age and educational level",
+      "Ability to understand relevant information, appreciate her situation and its consequences, reason about treatment options, and communicate a clear choice",
+      "Whether the patient can recite the exact medical terminology used by the physician",
+      "Whether the patient agrees with the physician's recommendation",
+      "Presence or absence of a formal psychiatric diagnosis"
+    ],
+    "answerIndex": 1,
+    "explanation": "Decision-making capacity is assessed using four components: understanding the relevant medical information, appreciating how it applies to one's own situation, reasoning through the options logically, and communicating a consistent choice.",
+    "optionRationales": [
+      "Incorrect: age and education level are not direct measures of decision-making capacity in adults.",
+      "Correct: this is the standard four-part framework for assessing capacity.",
+      "Incorrect: capacity does not require memorizing medical terminology, only functional understanding.",
+      "Incorrect: capacity is about the decision-making process, not whether the patient agrees with the physician.",
+      "Incorrect: a psychiatric diagnosis alone does not determine capacity; many patients with mental illness retain capacity."
+    ],
+    "concept": "Decision-making capacity is a clinical, decision-specific assessment based on the patient's ability to understand, appreciate, reason, and express a choice. It is distinct from competence, which is a legal determination made by a court, and it should never be assumed absent simply because a patient refuses recommended treatment."
+  },
+  {
+    "id": "ob-ethics-social-sciences-3",
+    "system": "Ethics & Social Sciences",
+    "topic": "Autonomy in declining prenatal testing",
+    "stem": "A 38-year-old woman at 12 weeks' gestation is offered first-trimester screening and diagnostic testing given her advanced maternal age and increased risk of fetal aneuploidy. After counseling on the risks, benefits, and implications of results, she declines all prenatal genetic screening and diagnostic testing, stating she would continue the pregnancy regardless of results. Which of the following is the most appropriate response?",
+    "options": [
+      "Respect her decision, document the informed refusal, and continue routine prenatal care",
+      "Perform testing without her explicit consent since it is standard of care",
+      "Discharge her from the practice for declining recommended testing",
+      "Insist on testing because advanced maternal age mandates screening",
+      "Refer her for a mental health evaluation to determine competence"
+    ],
+    "answerIndex": 0,
+    "explanation": "Prenatal genetic screening and diagnostic testing are offered, not mandatory; a competent patient may decline after adequate counseling, and her decision should be respected and documented.",
+    "optionRationales": [
+      "Correct: after providing appropriate counseling, the physician should respect her informed refusal, document it, and continue routine care.",
+      "Performing any test without consent violates patient autonomy and constitutes an ethical and legal violation.",
+      "Discharging a patient for declining optional testing is not an appropriate or ethical response.",
+      "No prenatal test is mandatory; patients have the right to decline screening or diagnostic testing after informed counseling.",
+      "Declining an optional test is not, by itself, evidence of impaired decision-making capacity."
+    ],
+    "concept": "Prenatal genetic screening and diagnostic testing are elective and must be offered with nondirective counseling. Patients retain full autonomy to decline any or all testing, and their informed refusal should be respected and documented without altering the standard of subsequent care."
+  },
+  {
+    "id": "ob-ethics-social-sciences-4",
+    "system": "Ethics & Social Sciences",
+    "topic": "Capacity vs treatment refusal",
+    "stem": "A woman with a history of schizophrenia, currently stable on medication, refuses a recommended cesarean delivery for a nonreassuring fetal heart tracing after a thorough discussion of risks and benefits. She clearly explains her reasoning and understands the potential consequences to herself and the fetus. What is the most appropriate interpretation of this situation?",
+    "options": [
+      "She should be presumed to have decision-making capacity based on her understanding and reasoning, and her refusal should be respected pending further assessment",
+      "Cesarean delivery should proceed immediately without her consent given fetal risk",
+      "A court order should be obtained before any further discussion occurs",
+      "Her refusal should be overridden because the physician disagrees with her choice",
+      "Her psychiatric diagnosis automatically means she lacks capacity to refuse the procedure"
+    ],
+    "answerIndex": 0,
+    "explanation": "Capacity is decision-specific and based on demonstrated understanding, appreciation, and reasoning, not on the presence of a psychiatric diagnosis; a patient who understands the situation and articulates coherent reasoning should generally have her refusal respected.",
+    "optionRationales": [
+      "Correct: demonstrated understanding and coherent reasoning support intact capacity, and refusal should be respected.",
+      "Incorrect: performing surgery without consent on a patient with intact capacity would violate patient autonomy except in true emergencies without any opportunity for discussion.",
+      "Incorrect: obtaining a court order is not the immediate next step when capacity appears intact after assessment.",
+      "Incorrect: disagreement with a patient's informed, autonomous choice is not sufficient grounds to override it.",
+      "Incorrect: a psychiatric diagnosis alone does not equate to lack of capacity."
+    ],
+    "concept": "A patient's disagreement with medical advice, or a psychiatric diagnosis, does not by itself indicate lack of decision-making capacity. Capacity must be assessed based on the patient's actual understanding, appreciation, and reasoning about the specific decision at hand.",
+    "discriminator": "Unlike a patient who is delirious, psychotic, or unable to explain her reasoning, this patient demonstrates intact understanding and coherent reasoning, which supports retained capacity despite her underlying diagnosis."
+  },
+  {
+    "id": "ob-ethics-social-sciences-5",
+    "system": "Ethics & Social Sciences",
+    "topic": "Confidentiality with parent present",
+    "stem": "A 17-year-old girl is brought to clinic by her mother for a well visit. The mother insists on remaining in the room for the entire visit and wants to be told everything discussed. The physician suspects the patient may be sexually active. What is the most appropriate approach?",
+    "options": [
+      "Avoid asking about sexual activity to prevent conflict with the mother",
+      "Have the patient sign a waiver releasing the physician from confidentiality obligations",
+      "Refuse to see the patient until the mother agrees not to be present at all",
+      "Ask the mother to step out so the physician can speak with the patient privately about sensitive topics",
+      "Disclose all information the patient shares to the mother, since she is a minor"
+    ],
+    "answerIndex": 3,
+    "explanation": "Adolescents should be offered private time with the clinician, separate from parents, to allow honest disclosure of sensitive information such as sexual activity, substance use, and mental health concerns.",
+    "optionRationales": [
+      "Incorrect: avoiding sensitive screening questions compromises care quality.",
+      "Incorrect: a waiver is not a standard or necessary part of adolescent confidentiality practice.",
+      "Incorrect: refusing care altogether is unnecessary and not patient-centered.",
+      "Correct: private time supports confidential discussion of sensitive adolescent health issues.",
+      "Incorrect: routine disclosure to parents undermines confidentiality protections adolescents are entitled to."
+    ],
+    "concept": "Best practice in adolescent care includes routinely offering the patient private time without the parent present, which increases disclosure of sensitive health behaviors and supports trust in the physician-patient relationship."
+  },
+  {
+    "id": "ob-ethics-social-sciences-6",
+    "system": "Ethics & Social Sciences",
+    "topic": "Emancipated minor doctrine",
+    "stem": "A 16-year-old girl is legally married and living independently from her parents. She presents for an annual gynecologic exam and wishes to make all decisions about her own care without parental involvement. Which of the following best describes her legal status regarding medical decision-making?",
+    "options": [
+      "Her husband must provide consent on her behalf",
+      "She is an emancipated minor and may consent to her own medical care as an adult would",
+      "She still requires parental consent for all medical decisions because she is under 18",
+      "She may consent only to reproductive health care, not general medical care",
+      "She must obtain a court order for each medical decision"
+    ],
+    "answerIndex": 1,
+    "explanation": "Marriage is a classic criterion establishing emancipated minor status, which grants the minor the same legal rights as an adult to consent to all medical care.",
+    "optionRationales": [
+      "Incorrect: her spouse has no special authority to consent on her behalf; she consents for herself.",
+      "Correct: emancipated minors (e.g., due to marriage, military service, financial independence) can consent to care as adults.",
+      "Incorrect: emancipation removes the general requirement for parental consent.",
+      "Incorrect: emancipation grants full decision-making authority, not just for reproductive care.",
+      "Incorrect: no case-by-case court order is needed once emancipated status is established."
+    ],
+    "concept": "Emancipated minors are legally recognized as adults for medical decision-making purposes. Common criteria include marriage, active military service, financial self-sufficiency and living independently, or having a child of their own."
+  },
+  {
+    "id": "ob-ethics-social-sciences-7",
+    "system": "Ethics & Social Sciences",
+    "topic": "Emergency exception to consent",
+    "stem": "A 28-year-old woman is brought to the emergency department unconscious after a motor vehicle collision. She is found to have massive intra-abdominal hemorrhage from a ruptured ectopic pregnancy requiring immediate surgery. No family members are present or reachable, and no advance directive exists. What is the most appropriate course of action regarding consent for surgery?",
+    "options": [
+      "Delay surgery until a family member can be located to provide consent",
+      "Withhold surgery because consent cannot legally be obtained",
+      "Obtain a court order before proceeding with surgery",
+      "Proceed with emergency surgery under the emergency exception to informed consent",
+      "Consult the hospital ethics committee before any intervention"
+    ],
+    "answerIndex": 3,
+    "explanation": "The emergency exception to informed consent permits treatment without explicit consent when a patient faces an immediate, life-threatening condition and is unable to consent, and no surrogate is available, based on the presumption that a reasonable person would consent to lifesaving treatment.",
+    "optionRationales": [
+      "Incorrect: delaying lifesaving surgery to locate family risks the patient's life and is not required under the emergency exception.",
+      "Incorrect: withholding necessary emergency care would violate the standard of care and patient welfare.",
+      "Incorrect: a court order is not needed for emergency, lifesaving intervention.",
+      "Correct: the emergency exception allows immediate treatment to prevent death or serious harm when consent cannot be obtained.",
+      "Incorrect: ethics committee consultation is not required before addressing an acute life-threatening emergency."
+    ],
+    "concept": "Informed consent is not required when a delay in treatment to obtain consent would seriously jeopardize the life or health of a patient who cannot consent and no surrogate decision-maker is immediately available. This emergency exception is grounded in the presumption of implied consent for necessary lifesaving care."
+  },
+  {
+    "id": "ob-ethics-social-sciences-8",
+    "system": "Ethics & Social Sciences",
+    "topic": "Expedited partner therapy",
+    "stem": "A 22-year-old woman tests positive for chlamydia on routine screening. She reports her male partner has not had a recent medical evaluation and is unlikely to seek care promptly. Which of the following is the most appropriate strategy to reduce reinfection and further transmission?",
+    "options": [
+      "Treat only the patient and provide no partner-directed intervention",
+      "Provide the patient with medication or a prescription to give to her partner without requiring his own clinical examination",
+      "Withhold treatment for the patient until her partner is also evaluated",
+      "Report the partner's name to public health authorities for mandatory treatment",
+      "Advise the patient to avoid all sexual contact permanently"
+    ],
+    "answerIndex": 1,
+    "explanation": "Expedited partner therapy allows treatment of sex partners of patients diagnosed with chlamydia or gonorrhea without a prior clinical evaluation of the partner, reducing reinfection risk.",
+    "optionRationales": [
+      "Failing to address the partner leaves a high risk of reinfection for the patient and continued transmission.",
+      "Correct: expedited partner therapy is recommended for chlamydia (and gonorrhea) to treat partners promptly and reduce reinfection when the partner is unlikely to seek independent care.",
+      "Delaying the patient's own treatment increases her risk of complications and is not appropriate.",
+      "There is no requirement or mechanism to report partner names to authorities for chlamydia treatment.",
+      "Permanent abstinence is not a practical or evidence-based recommendation; treatment and safe resumption of activity after treatment completion is the goal."
+    ],
+    "concept": "Expedited partner therapy (EPT) allows clinicians to provide prescriptions or medications for the sexual partners of patients diagnosed with certain STIs, particularly chlamydia, without requiring the partner to be independently examined, improving treatment rates and reducing reinfection."
+  },
+  {
+    "id": "ob-ethics-social-sciences-9",
+    "system": "Ethics & Social Sciences",
+    "topic": "HIV partner notification and confidentiality",
+    "stem": "A 30-year-old woman is newly diagnosed with HIV during prenatal screening. She discloses that she has a steady sexual partner who is unaware of her diagnosis and asks the physician not to tell anyone, including her partner. Which of the following best describes the physician's obligation regarding her partner?",
+    "options": [
+      "The physician should refuse to continue her care until she agrees to tell her partner",
+      "The physician must report the partner's identity to law enforcement",
+      "The physician must personally contact and inform the partner directly",
+      "The physician has no further obligation once the patient declines to disclose",
+      "The physician should maintain the patient's confidentiality but counsel her on partner notification and involve public health partner notification services as permitted by law"
+    ],
+    "answerIndex": 4,
+    "explanation": "Physicians should encourage voluntary disclosure and use confidential public health partner notification services (which protect the index patient's identity) rather than personally and unilaterally informing the partner.",
+    "optionRationales": [
+      "Refusing care is coercive and not an appropriate response to a confidentiality concern.",
+      "There is no legal basis or public health rationale for reporting an HIV diagnosis or partner information to law enforcement.",
+      "Physicians generally do not personally contact partners directly; this is handled through confidential public health mechanisms.",
+      "Physicians retain an ethical role in encouraging notification and connecting patients with partner notification resources.",
+      "Correct: the physician should counsel the patient on the importance of notification and can refer to health department partner services, which notify partners while protecting confidentiality."
+    ],
+    "concept": "HIV diagnoses trigger a balance between patient confidentiality and partner protection. Most jurisdictions handle this through confidential health department partner notification services that inform partners of exposure without revealing the index patient's identity, rather than requiring the treating physician to disclose directly."
+  },
+  {
+    "id": "ob-ethics-social-sciences-10",
+    "system": "Ethics & Social Sciences",
+    "topic": "Informed consent required elements",
+    "stem": "A patient is being counseled prior to elective laparoscopic sterilization. Which of the following elements is required for the consent process to be considered legally and ethically adequate?",
+    "options": [
+      "A signed consent form alone, regardless of the discussion that took place",
+      "A psychiatric evaluation prior to any elective procedure",
+      "Confirmation that the patient has told her partner about the decision",
+      "Documentation that the patient watched an educational video, without a verbal discussion",
+      "Discussion of the nature of the procedure, its risks and benefits, reasonable alternatives, and the right to refuse"
+    ],
+    "answerIndex": 4,
+    "explanation": "Valid informed consent requires disclosure of the diagnosis and nature of the proposed procedure, its risks and benefits, reasonable alternatives (including no treatment), and the patient's right to refuse, ensuring a voluntary and informed decision.",
+    "optionRationales": [
+      "Incorrect: a signed form is documentation of consent, not a substitute for the substantive discussion.",
+      "Incorrect: routine psychiatric evaluation is not required unless there is a specific concern about capacity.",
+      "Incorrect: partner notification is not a legal or ethical requirement for a competent adult patient's own decision.",
+      "Incorrect: passive educational materials alone do not fulfill the requirement for an interactive discussion addressing the patient's questions.",
+      "Correct: these are the core required elements of a valid informed consent discussion."
+    ],
+    "concept": "Informed consent requires that the patient receive and understand information about the diagnosis, proposed intervention, material risks and benefits, reasonable alternatives, and consequences of declining treatment, and that the decision be made voluntarily by a patient with adequate decision-making capacity."
+  },
+  {
+    "id": "ob-ethics-social-sciences-11",
+    "system": "Ethics & Social Sciences",
+    "topic": "Limits of adolescent confidentiality",
+    "stem": "During a confidential visit, a 15-year-old discloses that she has been having suicidal thoughts with a specific plan. She asks the physician not to tell her parents. What is the most appropriate action?",
+    "options": [
+      "Break confidentiality and involve the patient's parents and appropriate mental health resources",
+      "Maintain strict confidentiality because she is a minor with legal right to confidential care",
+      "Ask her to promise not to act on the thoughts and continue the visit unchanged",
+      "Refer her to counseling only if she agrees to parental notification first",
+      "Document the disclosure but take no further action"
+    ],
+    "answerIndex": 0,
+    "explanation": "Confidentiality has limits, and imminent risk of harm to self or others (such as active suicidal ideation with a plan) requires breaking confidentiality to ensure patient safety.",
+    "optionRationales": [
+      "Correct: safety concerns such as suicidality override confidentiality protections.",
+      "Incorrect: confidentiality is not absolute when there is imminent risk of harm.",
+      "Incorrect: a verbal safety contract is not an adequate substitute for appropriate intervention.",
+      "Incorrect: emergent safety intervention should not be delayed pending patient agreement.",
+      "Incorrect: documentation alone is insufficient given the safety risk."
+    ],
+    "concept": "Adolescent confidentiality is protected but not unlimited. Exceptions include risk of serious harm to self or others, suspected abuse or neglect, and certain reportable conditions, all of which require disclosure regardless of the patient's wishes."
+  },
+  {
+    "id": "ob-ethics-social-sciences-12",
+    "system": "Ethics & Social Sciences",
+    "topic": "Mandatory child abuse reporting",
+    "stem": "A 28-year-old woman brings her 3-year-old daughter to her postpartum visit. The physician notices multiple bruises in different stages of healing on the child's back and buttocks. The mother becomes evasive when asked about the marks and insists no report be filed. Which of the following is the physician's next best action?",
+    "options": [
+      "Respect the mother's wishes and document the findings only in the chart",
+      "Take no action unless the child discloses abuse directly",
+      "Ask the mother to bring the child to a pediatrician for follow-up",
+      "Report the suspected abuse to child protective services regardless of parental consent",
+      "Contact the child's other parent before making a decision"
+    ],
+    "answerIndex": 3,
+    "explanation": "Physicians are mandatory reporters of suspected child abuse; a report to child protective services must be made regardless of parental objection or consent.",
+    "optionRationales": [
+      "Documenting alone does not fulfill the legal duty to report suspected abuse.",
+      "A report is required based on reasonable suspicion, not only direct disclosure by the child.",
+      "Referral without reporting delays protection and does not satisfy the mandatory reporting duty.",
+      "Correct: suspected child abuse must be reported to the appropriate authorities irrespective of parental wishes.",
+      "Reporting obligations do not depend on obtaining consent or input from another parent."
+    ],
+    "concept": "Physicians are mandatory reporters of suspected child abuse in every U.S. state. The duty to report is triggered by reasonable suspicion, not proof, and overrides parental refusal or objection. Reporting is made to child protective services or law enforcement, not merely documented."
+  },
+  {
+    "id": "ob-ethics-social-sciences-13",
+    "system": "Ethics & Social Sciences",
+    "topic": "Mandatory elder abuse reporting",
+    "stem": "A 78-year-old woman with mild dementia is brought to clinic by her daughter/caregiver for a routine visit. The physician notes unexplained bruising on her upper arms in a pattern suggestive of grip marks and observes the daughter answering all questions for the patient. When interviewed alone, the patient appears fearful and gives inconsistent explanations for the bruising. The daughter declines any further evaluation or intervention. Which of the following is the most appropriate next step?",
+    "options": [
+      "Comply with the daughter's wishes since she is the primary caregiver",
+      "Schedule a follow-up visit in one month to reassess",
+      "Order an ethics consultation before taking any action",
+      "Take no action because the patient did not explicitly disclose abuse",
+      "Report suspected elder abuse to adult protective services"
+    ],
+    "answerIndex": 4,
+    "explanation": "Reasonable suspicion of elder abuse triggers a mandatory report to adult protective services, independent of the caregiver's objection.",
+    "optionRationales": [
+      "The caregiver's preference does not override the legal duty to report suspected abuse.",
+      "Delaying evaluation risks ongoing harm and does not satisfy the mandatory reporting obligation.",
+      "An ethics consultation is not required before fulfilling a clear legal reporting duty.",
+      "Reasonable suspicion based on examination findings is sufficient to trigger reporting; explicit disclosure is not required.",
+      "Correct: suspected elder abuse must be reported to adult protective services when there is reasonable suspicion, regardless of caregiver or patient objection to intervention."
+    ],
+    "concept": "Like child abuse, suspected abuse of a vulnerable or elderly adult is mandatorily reportable to adult protective services in most jurisdictions based on reasonable suspicion. This duty exists independent of whether the patient or caregiver consents to reporting."
+  },
+  {
+    "id": "ob-ethics-social-sciences-14",
+    "system": "Ethics & Social Sciences",
+    "topic": "Maternal autonomy vs. fetal benefit",
+    "stem": "A 31-year-old woman at 37 weeks' gestation has a known complete placenta previa confirmed on ultrasound. Her physician recommends scheduled cesarean delivery to prevent life-threatening hemorrhage for both her and the fetus. After a thorough discussion of risks, she declines surgery and requests to await spontaneous labor, understanding the risks explained to her. She has full decision-making capacity. Which of the following is the most appropriate course of action?",
+    "options": [
+      "Discharge her from care since she is declining recommended treatment",
+      "Proceed with cesarean delivery once she goes into labor regardless of her refusal",
+      "Obtain a court order to compel cesarean delivery",
+      "Respect her informed refusal and continue to counsel and monitor her closely",
+      "Involve child protective services because she is endangering the fetus"
+    ],
+    "answerIndex": 3,
+    "explanation": "A competent pregnant patient has the right to refuse recommended interventions, including cesarean delivery, even when the fetus may be harmed; forced surgery is not ethically or legally permitted.",
+    "optionRationales": [
+      "Abandoning her care is unethical; the physician should continue to provide appropriate care despite the disagreement.",
+      "Performing surgery against her will constitutes battery, regardless of labor status.",
+      "Courts have generally declined to compel surgery on a competent, refusing pregnant patient, and doing so violates bodily autonomy.",
+      "Correct: maternal autonomy must be respected for a competent patient's informed refusal, while the physician continues to provide counseling, monitoring, and support.",
+      "A fetus does not have independent legal standing that authorizes protective services intervention against a competent mother's medical decisions in this context."
+    ],
+    "concept": "Competent pregnant patients retain the right to refuse recommended medical or surgical interventions, including cesarean delivery, even when refusal poses risk to the fetus. Coercing or forcing treatment violates patient autonomy and is not legally supported in the United States.",
+    "discriminator": "Unlike cases involving an incompetent or incapacitated patient, a competent pregnant woman's informed refusal of a recommended intervention—even one intended to benefit the fetus—must be honored."
+  },
+  {
+    "id": "ob-ethics-social-sciences-15",
+    "system": "Ethics & Social Sciences",
+    "topic": "Mature minor doctrine",
+    "stem": "A 16-year-old presents for treatment of a straightforward, low-risk medical condition. She is not legally emancipated but demonstrates a clear understanding of her diagnosis, the proposed treatment, and its risks and benefits, and expresses a consistent, reasoned preference. Her physician is considering allowing her to consent to treatment herself. This scenario best illustrates which concept?",
+    "options": [
+      "The mature minor doctrine",
+      "Substituted judgment",
+      "The emancipated minor doctrine",
+      "Therapeutic privilege",
+      "Implied consent"
+    ],
+    "answerIndex": 0,
+    "explanation": "The mature minor doctrine allows an adolescent who demonstrates sufficient cognitive and emotional maturity to understand and appreciate the consequences of a decision to consent to certain treatments, even without formal emancipation, though its legal recognition varies by state and by the risk level of the treatment.",
+    "optionRationales": [
+      "Correct: demonstrated maturity and understanding without formal emancipation defines the mature minor doctrine.",
+      "Incorrect: substituted judgment applies to surrogate decision-making for incapacitated patients, not self-consent by a minor.",
+      "Incorrect: emancipation requires an independent legal status (e.g., marriage, military service), not just demonstrated maturity.",
+      "Incorrect: therapeutic privilege refers to withholding information that could seriously harm the patient, not minor consent.",
+      "Incorrect: implied consent applies to emergencies when explicit consent cannot be obtained."
+    ],
+    "concept": "The mature minor doctrine is a case-by-case legal principle, not uniformly codified, that permits an adolescent who shows adequate understanding and reasoning capacity to consent to their own care, particularly for lower-risk treatments. It differs from emancipation, which confers a broader, formal adult legal status.",
+    "discriminator": "Unlike the emancipated minor doctrine, which confers full adult status based on an independent legal criterion (marriage, military, self-support), the mature minor doctrine is an individualized, treatment-specific assessment of the minor's decisional capacity."
+  },
+  {
+    "id": "ob-ethics-social-sciences-16",
+    "system": "Ethics & Social Sciences",
+    "topic": "Minor confidentiality for STI care",
+    "stem": "A 16-year-old girl presents to clinic alone requesting testing and treatment for a suspected sexually transmitted infection. She explicitly asks that her parents not be informed of the visit or diagnosis. She is otherwise a healthy, mature minor. Which of the following is the most appropriate approach?",
+    "options": [
+      "Refer her to child protective services for engaging in sexual activity",
+      "Refuse to evaluate her without parental consent because she is a minor",
+      "Notify her parents immediately because minors cannot consent to their own STI care",
+      "Treat her only if she agrees to have a parent informed within 24 hours",
+      "Evaluate and treat her confidentially without requiring parental notification or consent"
+    ],
+    "answerIndex": 4,
+    "explanation": "In nearly all U.S. states, minors can independently consent to confidential diagnosis and treatment of sexually transmitted infections without parental involvement.",
+    "optionRationales": [
+      "Consensual sexual activity between similarly aged adolescents seeking STI care is not, by itself, a mandatory reporting trigger.",
+      "Requiring parental consent would deter minors from seeking necessary STI care, contrary to public health and legal standards.",
+      "This is factually incorrect; minor consent laws specifically carve out STI care as independently consentable.",
+      "Conditioning treatment on future parental disclosure undermines the confidentiality protections intended to encourage minors to seek care.",
+      "Correct: minors are legally permitted to consent to confidential STI testing and treatment in virtually all states without parental notification."
+    ],
+    "concept": "Most states allow minors to independently consent to confidential diagnosis and treatment of sexually transmitted infections without parental notification, recognizing that requiring parental involvement would discourage adolescents from seeking timely care."
+  },
+  {
+    "id": "ob-ethics-social-sciences-17",
+    "system": "Ethics & Social Sciences",
+    "topic": "Minor consent for contraception",
+    "stem": "A 15-year-old girl presents to clinic alone requesting a prescription for oral contraceptives. She asks that her parents not be informed. She is otherwise healthy and has no contraindications to combined hormonal contraception. Which of the following is the most appropriate next step?",
+    "options": [
+      "Require a court order authorizing treatment",
+      "Contact her parents to obtain consent before prescribing",
+      "Refuse to prescribe until a parent provides consent",
+      "Prescribe the contraceptive without requiring parental notification or consent",
+      "Prescribe only if she agrees to tell her parents within 30 days"
+    ],
+    "answerIndex": 3,
+    "explanation": "In all US states, minors can legally consent to contraceptive services without parental involvement, reflecting the recognized public health benefit of confidential access to contraception for adolescents.",
+    "optionRationales": [
+      "Incorrect: no judicial involvement is needed for routine contraceptive counseling.",
+      "Incorrect: contacting parents without the patient's permission breaches her right to confidential care.",
+      "Incorrect: parental consent is not legally required for contraceptive services.",
+      "Correct: minor consent laws uniformly permit adolescents to independently consent to contraceptive care.",
+      "Incorrect: conditioning care on future disclosure is not required and undermines confidentiality."
+    ],
+    "concept": "Every US state allows minors to consent to contraceptive services without parental knowledge or approval. This reflects the goal of reducing barriers to care that could otherwise lead to unintended adolescent pregnancy."
+  },
+  {
+    "id": "ob-ethics-social-sciences-18",
+    "system": "Ethics & Social Sciences",
+    "topic": "Minor consent for STI/pregnancy care",
+    "stem": "A 16-year-old girl comes to the clinic without a parent and reports she is sexually active and wants to be tested for sexually transmitted infections. She is worried her parents will find out. Which statement about her ability to consent to this evaluation is correct?",
+    "options": [
+      "She may independently consent to STI testing and treatment without parental involvement",
+      "She may consent to testing but not to treatment if results are positive",
+      "State law requires a physician co-signature from a guardian before any testing",
+      "Parental consent is required because she is under 18",
+      "A parent must be notified only if the test is positive"
+    ],
+    "answerIndex": 0,
+    "explanation": "All states permit minors to consent independently to diagnosis and treatment of sexually transmitted infections, along with pregnancy-related care, without parental involvement.",
+    "optionRationales": [
+      "Correct: minors can legally consent to both STI testing and treatment on their own.",
+      "Incorrect: consent extends to treatment as well as testing.",
+      "Incorrect: no guardian co-signature is required by law for STI care.",
+      "Incorrect: age alone does not require parental consent for STI services.",
+      "Incorrect: a positive result does not trigger mandatory parental notification for STIs."
+    ],
+    "concept": "Similar to contraception, minors nationwide can consent to their own diagnosis and treatment for sexually transmitted infections and to pregnancy-related (prenatal) care, since requiring parental consent would deter adolescents from seeking necessary care."
+  },
+  {
+    "id": "ob-ethics-social-sciences-19",
+    "system": "Ethics & Social Sciences",
+    "topic": "Refusal of blood transfusion",
+    "stem": "A 26-year-old Jehovah's Witness at 39 weeks' gestation develops postpartum hemorrhage after vaginal delivery, with blood loss estimated at 1800 mL and worsening tachycardia. Before delivery, she clearly stated, while competent, that she refuses blood products under any circumstances even if life-threatening. She remains conscious and reiterates this refusal as her hemoglobin drops. Which of the following is the most appropriate management?",
+    "options": [
+      "Honor her refusal and use non-blood measures such as uterotonics, tranexamic acid, and volume resuscitation with crystalloid",
+      "Obtain an emergency court order to override her refusal",
+      "Transfuse blood without her knowledge since it is medically necessary",
+      "Administer blood transfusion because maternal mortality is imminent",
+      "Transfuse blood only if her husband consents"
+    ],
+    "answerIndex": 0,
+    "explanation": "A competent adult's informed refusal of blood products must be respected even in a life-threatening emergency; care proceeds with all available non-blood alternatives.",
+    "optionRationales": [
+      "Correct: competent patient autonomy takes precedence, so the team should pursue aggressive non-blood interventions to manage the hemorrhage.",
+      "Courts generally uphold a competent adult's informed refusal of treatment; an emergency override is not appropriate here.",
+      "Transfusing without consent, let alone without her knowledge, is a battery and violates patient autonomy.",
+      "Overriding a competent, informed refusal violates patient autonomy regardless of the severity of the emergency.",
+      "A spouse cannot consent to override the competent patient's own informed refusal."
+    ],
+    "concept": "Competent adults have the right to refuse medical treatment, including blood transfusion, even when refusal carries a risk of death. Physicians must honor a clear, informed refusal made while the patient had decision-making capacity and instead optimize alternative therapies."
+  },
+  {
+    "id": "ob-ethics-social-sciences-20",
+    "system": "Ethics & Social Sciences",
+    "topic": "Scope of mandatory reporting",
+    "stem": "A 32-year-old competent, cognitively intact woman presents for a routine gynecologic visit. She discloses that her husband frequently hits her but insists she does not want the police or any agency involved and only wants information on local shelters. There are no children in the home and she has no visible acute injuries requiring emergency care. Which of the following is the most appropriate response?",
+    "options": [
+      "Refuse to continue caring for the patient until she agrees to report",
+      "Notify her husband's employer",
+      "Contact adult protective services as with elder abuse cases",
+      "Report the abuse to the police despite her objection",
+      "Respect her autonomy, provide resources, and document the disclosure without reporting against her wishes"
+    ],
+    "answerIndex": 4,
+    "explanation": "Unlike suspected child or elder abuse, intimate partner violence in a competent adult without other mandated triggers (such as a weapon-inflicted injury) is generally not subject to mandatory reporting, so patient autonomy governs.",
+    "optionRationales": [
+      "Withholding care coerces the patient and is not an appropriate response to her disclosure.",
+      "There is no basis or duty to involve a third party's employer.",
+      "Adult protective services reporting mandates apply to vulnerable or impaired adults, not competent adults reporting intimate partner violence.",
+      "Reporting against the wishes of a competent adult victim is not required and can undermine safety and trust.",
+      "Correct: for a competent adult without children in the home or a legally mandated trigger, the physician should respect autonomy, offer resources, and support the patient's choices."
+    ],
+    "concept": "Mandatory reporting laws for child and elder/vulnerable adult abuse differ from those for intimate partner violence in competent adults. Absent specific triggers (e.g., certain weapon injuries required by state law), physicians should honor a competent adult's autonomy regarding whether to involve authorities and instead offer counseling and resources."
+  },
+  {
+    "id": "ob-ethics-social-sciences-21",
+    "system": "Ethics & Social Sciences",
+    "topic": "State variation in abortion consent laws",
+    "stem": "A 16-year-old presents requesting a pregnancy termination in a state that requires parental consent for minors seeking abortion, though she was previously able to obtain contraception and prenatal care confidentially at the same clinic. Which statement best explains this discrepancy?",
+    "options": [
+      "This represents a clinic error, since all reproductive health services require identical consent rules",
+      "Parental consent laws for abortion also apply uniformly to contraception in that state",
+      "Many states have specific parental consent or notification laws for abortion that do not apply to contraception, STI care, or prenatal care",
+      "Minors can never obtain an abortion regardless of state law",
+      "The judicial bypass process applies equally to contraceptive care"
+    ],
+    "answerIndex": 2,
+    "explanation": "Unlike contraception, STI care, and prenatal care, which minors can universally consent to independently, many states have separate laws requiring parental consent or notification (or a judicial bypass option) specifically for a minor seeking an abortion.",
+    "optionRationales": [
+      "Incorrect: this differing legal treatment across services is expected law, not a clinic error.",
+      "Incorrect: parental consent laws for abortion are distinct from and do not extend to contraceptive care.",
+      "Correct: abortion-specific parental involvement laws exist in many states independent of the broader minor consent framework for other reproductive services.",
+      "Incorrect: minors can still obtain abortions through parental consent/notification or a judicial bypass process where required.",
+      "Incorrect: judicial bypass is a mechanism specific to abortion consent laws, not applicable to contraception."
+    ],
+    "concept": "While minor consent to contraception, STI treatment, and prenatal care is protected nationwide, many states have distinct statutes requiring parental consent, parental notification, or a judicial bypass procedure specifically for minors seeking abortion, creating an important legal distinction within reproductive health care."
+  },
+  {
+    "id": "ob-ethics-social-sciences-22",
+    "system": "Ethics & Social Sciences",
+    "topic": "Sterilization consent waiting period",
+    "stem": "A 29-year-old woman on Medicaid delivers her third child and requests postpartum bilateral tubal ligation before discharge. Review of her chart shows she signed the federal sterilization consent form on the day of admission, 6 hours before delivery. She is otherwise an appropriate candidate with no emergency indication for immediate sterilization. Which of the following is the most appropriate next step?",
+    "options": [
+      "Perform a hysterectomy instead to avoid the waiting period requirement",
+      "Defer the sterilization procedure because the mandatory 30-day waiting period after signing the consent form has not been met",
+      "Proceed with tubal ligation only if her partner co-signs the form",
+      "Proceed with tubal ligation since she has provided written consent",
+      "Proceed with tubal ligation since she is postpartum and desires no further children"
+    ],
+    "answerIndex": 1,
+    "explanation": "Federal Medicaid regulations require at least 30 days (and no more than 180 days, except in specific emergency exceptions) between signing the sterilization consent form and the procedure to safeguard against coercion.",
+    "optionRationales": [
+      "Hysterectomy is a much higher-risk procedure and is never substituted solely to bypass sterilization consent rules, and it is not exempt from ethical consent standards.",
+      "Correct: the federal sterilization consent form requires a minimum 30-day waiting period before the procedure, which was not met here.",
+      "Partner or spousal co-signature is not a legal requirement for sterilization consent.",
+      "Written consent alone is insufficient; the mandated waiting period must also be satisfied for Medicaid-funded sterilization.",
+      "Desire for no further children does not exempt a Medicaid patient from the mandated waiting period."
+    ],
+    "concept": "Federal regulations mandate a waiting period (generally at least 30 days, up to 180 days) between signing an informed sterilization consent form and performing the procedure for Medicaid-funded sterilizations, intended to prevent coercive or rushed decisions, particularly around the time of delivery.",
+    "conceptRule": [
+      "Signed sterilization consent < 30 days before procedure (non-emergency) -> procedure must be deferred",
+      "Consent signed 30-180 days prior -> requirement satisfied, may proceed",
+      "Emergency abdominal surgery or premature delivery -> shortened interval exceptions may apply (varies by circumstance)"
+    ]
+  },
+  {
+    "id": "ob-ethics-social-sciences-23",
+    "system": "Ethics & Social Sciences",
+    "topic": "Sterilization decisional capacity",
+    "stem": "A 24-year-old woman with mild intellectual disability who lives independently and manages her own medical decisions requests permanent sterilization after her second pregnancy. She demonstrates a clear understanding of the procedure's permanence, risks, benefits, and alternatives during counseling. Her mother insists that a legal guardian must provide consent before any decision is made. Which of the following is the most appropriate approach?",
+    "options": [
+      "Require a court order regardless of her demonstrated capacity",
+      "Deny the request because permanent sterilization in patients with any cognitive impairment is not permitted",
+      "Assess the patient's own decision-making capacity and, if intact, proceed with her informed consent alone",
+      "Require her mother's consent because of the patient's intellectual disability",
+      "Require her husband or partner's consent in addition to hers"
+    ],
+    "answerIndex": 2,
+    "explanation": "Capacity for informed consent is decision-specific; if the patient demonstrates adequate understanding of the sterilization procedure, her own informed consent is sufficient regardless of a general intellectual disability diagnosis.",
+    "optionRationales": [
+      "A court order is not required when the patient has demonstrated decisional capacity for this choice.",
+      "Blanket denial based on a disability label is discriminatory and inconsistent with a demonstrated ability to consent.",
+      "Correct: capacity is decision-specific, and a patient who understands the nature, risks, and permanence of sterilization can provide her own informed consent.",
+      "A diagnosis of intellectual disability alone does not negate decisional capacity or require third-party consent when capacity for this specific decision is demonstrated.",
+      "Spousal or partner consent is not a legal requirement for sterilization in a capacitated adult."
+    ],
+    "concept": "Informed consent capacity is assessed on a decision-specific basis, not by diagnostic label. A patient with intellectual disability who demonstrates understanding of the nature, risks, benefits, and permanence of a procedure can provide valid autonomous consent without requiring guardian, spousal, or family authorization."
   }
 ];
 
