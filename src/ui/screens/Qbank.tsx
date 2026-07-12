@@ -9,6 +9,7 @@ import {
   type McqProgress,
 } from "../../data/mcqProgress";
 import { Segmented } from "../components/Segmented";
+import { MCQ_IMAGES, mcqImageUrl } from "../../data/mcqImages";
 
 /**
  * Question Bank — single-best-answer MCQs drilled one at a time for shelf-exam
@@ -437,6 +438,26 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
           <span className="chip chip-accent">{current.system}</span>
         </div>
         <p className="text-[15.5px] font-semibold leading-relaxed">{current.stem}</p>
+
+        {(() => {
+          // Curated teaching image for visual-diagnosis questions (keyed by id).
+          const img = MCQ_IMAGES[current.id];
+          const src = img && mcqImageUrl(img.file);
+          if (!img || !src) return null;
+          return (
+            <figure className="space-y-1">
+              <img
+                src={src}
+                alt={img.alt}
+                loading="lazy"
+                className="w-full max-h-[22rem] object-contain rounded-xl border border-[var(--color-exam-border)] bg-[var(--color-exam-panel)]"
+              />
+              <figcaption className="text-[11px] text-[var(--color-exam-muted)]">
+                {img.credit}
+              </figcaption>
+            </figure>
+          );
+        })()}
 
         <div className="space-y-2">
           {current.options.map((opt, i) => (
