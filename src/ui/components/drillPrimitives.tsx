@@ -13,6 +13,7 @@ import {
   type DrillManual,
   type DrillProgressMap,
 } from "../../data/drillProgressCore";
+import { track } from "../../analytics/telemetry";
 
 export interface Coverage {
   group: string;
@@ -352,6 +353,148 @@ export function GradeButton({
         {grading ? "Grading…" : "Grade my answer"}
       </button>
       <span className="hint">{llmEnabled ? "AI grading" : "keyword grading (enable AI for smarter grading)"}</span>
+    </div>
+  );
+}
+
+/** Cued grouped free-recall drill: a prompt, a grouped answer key, coverage
+ *  grading (AI or keyword), and a grouped model-answer reveal + pearls. Shared
+ *  by the FM guideline drills; generalizes the Differential drill's grouped
+ *  coverage without the differential-specific depth toggle. */
+export function GroupedCoverageDrill({
+  prompt,
+  keyPoints,
+  pearls,
+  badge,
+  answer,
+  setAnswer,
+  graded,
+  onGrade,
+  onNew,
+  onRetry,
+  onRecord,
+  progressEntry,
+  onSetManual,
+  newLabel,
+  drillType,
+}: {
+  prompt: string;
+  keyPoints: { group: string; items: string[] }[];
+  pearls?: string;
+  badge?: string;
+  answer: string;
+  setAnswer: (v: string) => void;
+  graded: boolean;
+  onGrade: () => void;
+  onNew: () => void;
+  onRetry: () => void;
+  onRecord: (pct: number) => void;
+  progressEntry?: DrillProgress;
+  onSetManual: (m: DrillManual) => void;
+  newLabel: string;
+  drillType: string;
+}) {
+  const grader = useGrader();
+  const [grading, setGrading] = useState(false);
+  const [matched, setMatched] = useState<Set<string>>(new Set());
+  const [answersHidden, setAnswersHidden] = useState(false);
+  const groups = keyPoints.map((g) => ({ group: g.group, items: g.items }));
+
+  const doGrade = async () => {
+    setGrading(true);
+    try {
+      const m = await grader(answer, groups);
+      setMatched(m);
+      const r = buildCoverage(groups, m);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType, pct });
+      onRecord(pct);
+      setAnswersHidden(false);
+      onGrade();
+    } finally {
+      setGrading(false);
+    }
+  };
+
+  const result = buildCoverage(groups, matched);
+  return (
+    <div className="space-y-3">
+      <div className="card p-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="panel-label">Prompt</div>
+          {badge && <span className="chip chip-accent">{badge}</span>}
+        </div>
+        <p className="text-[15px] font-semibold leading-relaxed mt-1">{prompt}</p>
+      </div>
+
+      <div className={graded ? "grid gap-3 lg:grid-cols-2 items-start" : "space-y-3"}>
+        <div className="card p-4 space-y-3">
+          <div className="panel-label">Your recall</div>
+          <textarea
+            className="input w-full resize-y leading-relaxed"
+            rows={graded ? 8 : 6}
+            value={answer}
+            onChange={(e) => setAnswer(e.target.value)}
+            placeholder="Write everything you remember, grouped if you can…"
+            aria-label="Your recall"
+          />
+          <GradeButton
+            graded={graded}
+            grading={grading}
+            disabled={!answer.trim()}
+            onGrade={doGrade}
+            onNew={onNew}
+            onRetry={onRetry}
+            newLabel={newLabel}
+          />
+        </div>
+
+        {graded && (
+          <div className="card p-4 space-y-3 pop-in">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <div className="panel-label">Coverage</div>
+              <div className="flex items-center gap-2">
+                <ResultChip named={result.named} total={result.total} />
+                <button
+                  type="button"
+                  className="btn btn-ghost py-1 px-2.5 text-[12px]"
+                  onClick={() => setAnswersHidden((h) => !h)}
+                  aria-pressed={answersHidden}
+                >
+                  {answersHidden ? "👁 Show answers" : "🙈 Cover answers"}
+                </button>
+              </div>
+            </div>
+            <ScoreBar named={result.named} total={result.total} label="Key points" />
+            {answersHidden ? (
+              <button
+                type="button"
+                onClick={() => setAnswersHidden(false)}
+                className="rounded-lg border border-dashed p-4 text-[13px] font-semibold flex items-center justify-center gap-2 w-full"
+                style={{ borderColor: "var(--color-exam-border-strong)", color: "var(--color-exam-muted)", minHeight: "6rem" }}
+              >
+                🙈 Answers hidden — tap to reveal
+              </button>
+            ) : (
+              <>
+                <CoverageView title="Guideline key points" coverage={result.coverage} />
+                {pearls && (
+                  <div>
+                    <div className="panel-label mb-1">Pearls</div>
+                    <p
+                      className="rounded-lg border p-3 text-[13px] leading-relaxed whitespace-pre-line"
+                      style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
+                    >
+                      {pearls}
+                    </p>
+                  </div>
+                )}
+              </>
+            )}
+            <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
