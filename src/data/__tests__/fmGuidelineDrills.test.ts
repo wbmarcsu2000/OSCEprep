@@ -9,7 +9,7 @@ import {
 
 describe("FM guideline drills (data)", () => {
   it("every drill is well-formed", () => {
-    expect(FM_GUIDELINE_DRILLS.length).toBeGreaterThanOrEqual(9);
+    expect(FM_GUIDELINE_DRILLS.length).toBeGreaterThanOrEqual(35);
     const ids = FM_GUIDELINE_DRILLS.map((d) => d.id);
     expect(new Set(ids).size, "unique ids").toBe(ids.length);
     const domains = new Set<FmDrillDomain>(FM_DOMAIN_ORDER);
