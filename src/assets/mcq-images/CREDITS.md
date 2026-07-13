@@ -2,25 +2,48 @@
 
 All images are used under an open license that permits redistribution (public domain / CC0 / CC BY / CC BY-SA), sourced from Wikimedia Commons and visually verified. If any attribution needs correction, update this file and the `credit` field in `src/data/mcqImages.ts`.
 
-- **atrial-flutter-ecg.jpg** (fm-cardiology-20) — Ewingdo, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:ECG_Atrial_Flutter_294_bpm.jpg
-- **pericarditis-ecg.jpg** (fm-cardiology-7) — James Heilman, MD, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Acute_pericarditis.jpg
 - **melanoma.jpg** (fm-dermatology-1) — Dermanonymous, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Malignant_Melanoma,_vertex_scalp.jpg
-- **tinea.jpg** (fm-dermatology-103) — CDC/ Dr. Lucille K. Georg, Public domain. Source: https://commons.wikimedia.org/wiki/File:Ringworm_on_the_arm,_or_tinea_corporis_due_to_Trichophyton_mentagrophytes_PHIL_2938_lores.jpg
-- **basal-cell-carcinoma.jpg** (fm-dermatology-12) — Dermanonymous, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Basal_Cell_Carcinoma_Left_Upper_Back_nodular_and_micronodular.jpg
-- **dermatitis-herpetiformis.jpg** (fm-dermatology-24) — BallenaBlanca, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Dermatitis_Herpetiforme_2.jpg
-- **erythema-multiforme.jpg** (fm-dermatology-29) — James Heilman, MD, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Erythema_multiforme_minor_of_the_hand.jpg
+- **tinea-versicolor.jpg** (fm-dermatology-107) — Photo Credit: Content Providers(s): Uploaded to commons by: user:Dr.sa, Public domain. Source: https://commons.wikimedia.org/wiki/File:PityriasisOnChest.jpg
+- **atopic-dermatitis.jpg** (fm-dermatology-11) — The original uploader was Eisfelder at German Wikipedia, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Atopic_dermatitis_child.JPG
+- **vitiligo.jpg** (fm-dermatology-113) — Produnis, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Vitiligo03.jpg
+- **basal-cell-carcinoma.jpg** (fm-dermatology-12) — M. Sand, D. Sand, C. Thrandorf, V. Paech, P. Altmeyer, F. G. Bechara, CC BY 2.0. Source: https://commons.wikimedia.org/wiki/File:BCC_Nodular_type.jpg
+- **acanthosis-nigricans.jpg** (fm-dermatology-2) — Mark F. Brady; Prashanth Rawla, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Acanthosis_nigricans.jpg
+- **dermatitis-herpetiformis.jpg** (fm-dermatology-24) — Weinstock, Leonard &amp; myers, trisha &amp; Steinhoff, Martin &amp…, CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Dermatitis_herpetiformis.jpg
+- **erysipelas.jpg** (fm-dermatology-28) — CDC/Dr. Thomas F. Sellers/Emory University, Public domain. Source: https://commons.wikimedia.org/wiki/File:Facial_erysipelas.jpg
+- **fifth-disease.png** (fm-dermatology-33) — Gzzz, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Slapped_cheek_Erythema_Infectiosum.png
 - **guttate-psoriasis.jpg** (fm-dermatology-35) — Richard Keatinge, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Guttate_psoriasis_66_year_old_male.jpg
-- **herpes-zoster.png** (fm-dermatology-37) — Fisle, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Herpes_zoster_chest.png
-- **erythema-migrans.jpg** (fm-dermatology-55) — James Gathany, Public domain. Source: https://commons.wikimedia.org/wiki/File:Bullseye_rash_linked_to_Lyme_disease.jpg
-- **actinic-keratosis.jpg** (fm-dermatology-6) — C.Morice, A. Acher, N. Soufir, M.Michel, F. Comoz, D. Leroy, and L.…, CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Actinic_keratosis_of_the_scalp.jpg
-- **molluscum-contagiosum.jpg** (fm-dermatology-63) — E van Herk, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Molluscaklein.jpg
-- **scabies.jpg** (fm-dermatology-90) — Wikimedia Commons contributor, Public domain. Source: https://commons.wikimedia.org/wiki/File:ScabiesD08.JPG
+- **herpes-zoster.png** (fm-dermatology-37) — Fisle, CC BY-SA 3.0. Source: Wikimedia Commons
+- **cafe-au-lait.jpg** (fm-dermatology-44) — Denise Nepraunig, Public domain. Source: https://commons.wikimedia.org/wiki/File:Cafe_au_lait_fleck.jpg
+- **keratoacanthoma.jpg** (fm-dermatology-49) — The Armed Forces Institute of Pathology, Public domain. Source: https://commons.wikimedia.org/wiki/File:Keratoacanthoma.jpg
+- **lichen-planus.jpg** (fm-dermatology-53) — George Henry Fox, Public domain. Source: https://commons.wikimedia.org/wiki/File:Lichen_planus_2.jpg
+- **erythema-migrans.jpg** (fm-dermatology-55) — James Gathany, Public domain. Source: https://commons.wikimedia.org/wiki/File:Solid_erythema_migrans_rash_on_the_neck_of_a_woman_with_Lyme_disease.jpg
+- **actinic-keratosis.jpg** (fm-dermatology-6) — C.Morice, A. Acher, N. Soufir, M.Michel, F. Comoz, D. Leroy, and L.…, CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Xeroderma_pigmentosum_02.jpg
+- **molluscum-contagiosum.jpg** (fm-dermatology-63) — E van Herk, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Molluscum_contagiousum_virus.jpg
+- **contact-dermatitis.jpg** (fm-dermatology-7) — Britannic124, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Poison_ivy_contact_dermatitis.jpg
+- **onychomycosis.jpg** (fm-dermatology-71) — Commons contributor, Public domain. Source: https://commons.wikimedia.org/wiki/File:Onychomycosis_due_to_Trichophyton_rubrum,_right_and_left_great_toe_PHIL_579_lores.jpg
+- **pityriasis-rosea.jpg** (fm-dermatology-78) — Aceofhearts1968, Public domain. Source: https://commons.wikimedia.org/wiki/File:Pityriasis_rosea-4.jpg
+- **plaque-psoriasis.jpg** (fm-dermatology-80) — Marnanel, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Psoriasis_on_back.jpg
+- **rosacea.jpg** (fm-dermatology-87) — M. Sand, D. Sand, C. Thrandorf, V. Paech, P. Altmeyer, F. G. Bechara, CC BY 2.0. Source: https://commons.wikimedia.org/wiki/File:Rosacea_01.jpg
+- **roseola.jpg** (fm-dermatology-88) — Emiliano Burzagli, Public domain. Source: https://commons.wikimedia.org/wiki/File:Sestamalattia_(2).JPG
+- **scabies.jpg** (fm-dermatology-90) — Wikimedia Commons contributor, Public domain. Source: https://commons.wikimedia.org/wiki/File:Scabies_hand_and_fingers_2.jpg
 - **seborrheic-keratosis.jpg** (fm-dermatology-93) — James Heilman, MD, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Seborrheic_keratosis_on_human_back.jpg
+- **sjs-ten.jpg** (fm-dermatology-96) — Dr. Thomas Habif, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Stevens-johnson-syndrome.jpg
 - **kawasaki.jpg** (fm-gastroenterology-102) — Kawasaki_symptoms.jpg: Dong Soo Kim derivative work: Natr (talk), CC BY 2.0. Source: https://commons.wikimedia.org/wiki/File:Kawasaki_symptoms_B.jpg
 - **measles-koplik.jpg** (fm-gastroenterology-107) — CDC, Public domain. Source: https://commons.wikimedia.org/wiki/File:Koplik_spots,_measles_6111_lores.jpg
 - **hypersegmented-neutrophil.jpg** (fm-gastroenterology-129) — Ed Uthman from Houston, TX, USA, CC BY 2.0. Source: https://commons.wikimedia.org/wiki/File:Hypersegmented_neutrophil.jpg
-- **schistocytes.jpg** (fm-gastroenterology-57) — Erhabor Osaro (Associate Professor), CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Microangiopathic_haemolytic_anaemia_(Schistocytes_and_spherocytes).jpg
-- **impetigo.jpg** (fm-gastroenterology-98) — Masryyy, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Impetigo_new_photo_for_help_diagnoses.jpg
+- **scarlet-fever.jpg** (fm-gastroenterology-142) — The original uploader was Estreya at English Wikipedia, CC BY 2.5. Source: https://commons.wikimedia.org/wiki/File:Scarlet_fever_2.jpg
+- **schistocytes.jpg** (fm-gastroenterology-57) — Erhabor Osaro (Associate Professor), CC BY-SA 3.0. Source: Wikimedia Commons
+- **impetigo.jpg** (fm-gastroenterology-98) — Evanherk at Dutch Wikipedia, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Impetigo_elbow.jpg
+- **smudge-cells.jpg** (fm-heme-onc-24) — Mikael Häggström, M.D, CC0. Source: https://commons.wikimedia.org/wiki/File:Smudge_cell_in_a_peripheral_blood_smear.jpg
+- **basophilic-stippling.jpg** (fm-heme-onc-67) — Herbert L. Fred, MD and Hendrik A. van Dijk, CC BY 2.0. Source: https://commons.wikimedia.org/wiki/File:Lead_poisoning_-_blood_film.jpg
+- **teardrop-cells.jpg** (fm-heme-onc-91) — Paulo Henrique Orlandi Mourao, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Teardrop_Cells_smear_2009-09-22.JPG
+- **cataract.png** (fm-ophthalmology-11) — Rakesh Ahuja, MD, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Cataract_in_human_eye.png
 - **crao.jpg** (fm-ophthalmology-12) — Dr. Gopal Bisht, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Cherry_red_spot_in_patient_with_central_retinal_artery_occlusion_(CRAO).jpg
-- **hordeolum.jpg** (fm-ophthalmology-13) — Andre Riemann, Public domain. Source: https://commons.wikimedia.org/wiki/File:Stye02.jpg
-- **diabetic-retinopathy.png** (fm-ophthalmology-27) — Shaofeng Hao, Changyan Liu, Na Li, Yanrong Wu, Dongdong Li, Qingyue…, CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Fundus_-_diabetic_retinopathy.png
+- **corneal-abrasion.jpg** (fm-ophthalmology-24) — James Heilman, MD, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Corneal_Abrasion_with_Fluorescein_Staining.jpg
+- **diabetic-retinopathy.jpg** (fm-ophthalmology-27) — Commons contributor, Public domain. Source: https://commons.wikimedia.org/wiki/File:Fundus_Proliferative_retinopathy_EDA01.JPG
+- **viral-conjunctivitis.jpg** (fm-ophthalmology-3) — Joyhill09, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:An_eye_with_viral_conjunctivitis.jpg
+- **hz-ophthalmicus.jpg** (fm-ophthalmology-38) — Burntfingers, CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Day07_shingles_or_Herpes_Zoster_Virus_attacking_forehead_and_eye.jpg
+- **hordeolum.jpg** (fm-ophthalmology-39) — Andre Riemann, Public domain. Source: https://commons.wikimedia.org/wiki/File:Stye02.jpg
+- **pterygium.jpg** (fm-ophthalmology-55) — Originally created by Jonathan Trobe, M.D., University of Michigan …, CC BY 3.0. Source: https://commons.wikimedia.org/wiki/File:Pterygium_(from_Michigan_Uni_site,_CC-BY).jpg
+- **subconjunctival-hemorrhage.jpg** (fm-ophthalmology-61) — Daniel Flather, CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Subconjunctival_hemorrhage_eye.JPG
+- **secondary-syphilis.jpg** (fm-repro-ob-gyn-123) — CDC/ Robert Sumpter, Public domain. Source: https://commons.wikimedia.org/wiki/File:Secondary_Syphilis_on_palms_CDC_6809_lores.rsh.jpg
