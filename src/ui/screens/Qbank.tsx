@@ -85,6 +85,11 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   const [queue, setQueue] = useState<RunQuestion[]>([]);
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<(number | null)[]>([]);
+  // Per-question "guessed" flags. A guessed question is logged as a miss even
+  // when the picked option is correct, so it stays in the long-term Missed pool.
+  const [guesses, setGuesses] = useState<boolean[]>([]);
+  // Whether the current, not-yet-answered question is flagged as a guess.
+  const [guessing, setGuessing] = useState(false);
   // Which option rationales are expanded on the current question (indices into options).
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
   // True when the active run is a deliberate Missed-subset review — a correct
@@ -117,6 +122,8 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
       const run = typeof limit === "number" ? ordered.slice(0, limit) : ordered;
       setQueue(run);
       setAnswers(new Array(run.length).fill(null));
+      setGuesses(new Array(run.length).fill(false));
+      setGuessing(false);
       setIdx(0);
       setReviewingMissed(reviewMissed);
       setPhase("quiz");
@@ -130,20 +137,36 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
         if (prev[idx] != null) return prev; // already answered — lock it
         const q = queue[idx];
         const correct = choice === q.answerIndex;
+        // A guess is logged as a miss regardless of whether the pick was right,
+        // so the question stays in (or enters) the long-term Missed pool.
         setProgress(
-          recordMcqAnswer(q.id, correct, storageKey, { clearMissedOnCorrect: reviewingMissed }),
+          recordMcqAnswer(q.id, guessing ? false : correct, storageKey, {
+            clearMissedOnCorrect: reviewingMissed,
+          }),
         );
+        setGuesses((g) => {
+          const n = g.slice();
+          n[idx] = guessing;
+          return n;
+        });
         const next = prev.slice();
         next[idx] = choice;
         return next;
       });
     },
-    [idx, queue, storageKey, reviewingMissed],
+    [idx, queue, storageKey, reviewingMissed, guessing],
   );
 
   const current = queue[idx];
   const chosen = answers[idx] ?? null;
   const answered = chosen != null;
+  const wasGuess = guesses[idx] ?? false;
+
+  // Sync the guess toggle to the current question: reflect a stored guess when
+  // revisiting an answered question, and reset to off on a fresh unanswered one.
+  useEffect(() => {
+    setGuessing(guesses[idx] ?? false);
+  }, [idx, guesses]);
 
   // Per-option rationales collapse by default once answered — showing all of
   // them at once is info overload. Auto-open just the key comparison: the
@@ -183,6 +206,9 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
       if (n >= 1 && n <= (current?.options.length ?? 0)) {
         if (!answered) answer(n - 1);
         e.preventDefault();
+      } else if ((e.key === "g" || e.key === "G") && !answered) {
+        setGuessing((g) => !g);
+        e.preventDefault();
       } else if (e.key === "Enter" || e.key === "ArrowRight") {
         if (answered) goNext();
         e.preventDefault();
@@ -202,11 +228,12 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
       const a = answers[i];
       if (a != null) {
         done++;
-        if (a === q.answerIndex) correct++;
+        // A guessed question never counts toward the score, even if picked right.
+        if (a === q.answerIndex && !guesses[i]) correct++;
       }
     });
     return { correct, done };
-  }, [queue, answers]);
+  }, [queue, answers, guesses]);
 
   // ---------------------------------------------------------------- Setup
   if (phase === "setup") {
@@ -340,7 +367,7 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
         </div>
 
         <p className="hint text-center">
-          Tip: while answering, press 1-5 to pick, then Enter or → for the next question.
+          Tip: press 1-5 to pick, g to mark a guess, then Enter or → for the next question.
         </p>
       </div>
     );
@@ -349,12 +376,13 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   // ---------------------------------------------------------------- Results
   if (phase === "results") {
     const pct = queue.length ? Math.round((score.correct / queue.length) * 100) : 0;
-    const wrong = queue.filter((q, i) => answers[i] !== q.answerIndex);
+    // A guessed question counts as missed here too, so it lands in "Redo missed".
+    const wrong = queue.filter((q, i) => !(answers[i] === q.answerIndex && !guesses[i]));
     const bySystem = new Map<string, { correct: number; total: number }>();
     queue.forEach((q, i) => {
       const e = bySystem.get(q.system) ?? { correct: 0, total: 0 };
       e.total++;
-      if (answers[i] === q.answerIndex) e.correct++;
+      if (answers[i] === q.answerIndex && !guesses[i]) e.correct++;
       bySystem.set(q.system, e);
     });
     const band =
@@ -459,6 +487,29 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
           );
         })()}
 
+        {!answered && (
+          <div className="flex justify-end">
+            <button
+              type="button"
+              aria-pressed={guessing}
+              onClick={() => setGuessing((g) => !g)}
+              title="Log this question as missed even if you pick the right answer (press g)"
+              className="inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-[12.5px] font-semibold transition-colors"
+              style={
+                guessing
+                  ? {
+                      borderColor: "var(--color-exam-warn-line)",
+                      background: "var(--color-exam-warn-soft)",
+                      color: "var(--color-exam-warn)",
+                    }
+                  : { borderColor: "var(--color-exam-border)", color: "var(--color-exam-muted)" }
+              }
+            >
+              🎲 {guessing ? "Guessing — counts as missed" : "Mark as a guess"}
+            </button>
+          </div>
+        )}
+
         <div className="space-y-2">
           {current.options.map((opt, i) => (
             <OptionButton
@@ -487,15 +538,26 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
         <div
           className="card p-4 space-y-2 pop-in"
           style={{
-            borderColor:
-              chosen === current.answerIndex ? "var(--color-exam-ok-line)" : "var(--color-exam-danger-line)",
-            background:
-              chosen === current.answerIndex ? "var(--color-exam-ok-soft)" : "var(--color-exam-danger-soft)",
+            borderColor: wasGuess
+              ? "var(--color-exam-warn-line)"
+              : chosen === current.answerIndex
+                ? "var(--color-exam-ok-line)"
+                : "var(--color-exam-danger-line)",
+            background: wasGuess
+              ? "var(--color-exam-warn-soft)"
+              : chosen === current.answerIndex
+                ? "var(--color-exam-ok-soft)"
+                : "var(--color-exam-danger-soft)",
           }}
         >
           <div className="flex items-center justify-between gap-2 flex-wrap">
             <div className="panel-label">
-              {chosen === current.answerIndex ? "✓ Correct" : "✗ Incorrect"} — {LETTERS[current.answerIndex]} is right
+              {wasGuess
+                ? `🎲 Guessed — logged as a miss${chosen === current.answerIndex ? " (your pick was right)" : ""}`
+                : chosen === current.answerIndex
+                  ? "✓ Correct"
+                  : "✗ Incorrect"}{" "}
+              — {LETTERS[current.answerIndex]} is right
             </div>
             <span className="chip">{current.topic}</span>
           </div>

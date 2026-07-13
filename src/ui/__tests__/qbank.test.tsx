@@ -189,4 +189,73 @@ describe("Question Bank screen", () => {
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
     expect(screen.getByText(/question 1 of 3/i)).toBeInTheDocument();
   });
+
+  it("the guess button logs a question as missed even when the pick is correct", () => {
+    const q: McqQuestion = {
+      id: "guess-1",
+      system: "Cardiology",
+      topic: "Guess topic",
+      stem: "A sufficiently long stem for a single-best-answer question used to test guessing.",
+      options: ["Right answer", "Wrong answer"],
+      answerIndex: 0,
+      explanation: "The first option is the correct answer for this guessing scenario.",
+    };
+    const bank: McqBank = {
+      id: "guess",
+      title: "Question Bank",
+      eyebrow: "Test",
+      blurb: "test bank",
+      icon: "❓",
+      grad: "var(--grad-teal)",
+      questions: [q],
+      systems: ["Cardiology"],
+      storageKey: "osce.guess.test",
+    };
+    render(<Qbank bank={bank} />);
+    fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
+
+    // Flag the question as a guess, then pick the CORRECT option.
+    fireEvent.click(screen.getByRole("button", { name: /mark as a guess/i }));
+    fireEvent.click(screen.getByText("Right answer"));
+
+    // The pick was right, but it is logged as a miss, and the score reflects it.
+    expect(screen.getByText(/guessed — logged as a miss/i)).toBeInTheDocument();
+    expect(screen.getByText(/your pick was right/i)).toBeInTheDocument();
+    expect(screen.getByText(/0 \/ 1 correct/)).toBeInTheDocument();
+
+    // Finishing the run, the guessed question lands in the "Redo missed" pile.
+    fireEvent.click(screen.getByRole("button", { name: /(next|finish) →/i }));
+    expect(screen.getByRole("button", { name: /redo 1 missed/i })).toBeInTheDocument();
+  });
+
+  it("without the guess flag a correct pick still counts as correct", () => {
+    const q: McqQuestion = {
+      id: "nog-1",
+      system: "Cardiology",
+      topic: "No-guess topic",
+      stem: "A sufficiently long stem for a single-best-answer question used to test scoring.",
+      options: ["Right answer", "Wrong answer"],
+      answerIndex: 0,
+      explanation: "The first option is the correct answer for this scoring scenario.",
+    };
+    const bank: McqBank = {
+      id: "nog",
+      title: "Question Bank",
+      eyebrow: "Test",
+      blurb: "test bank",
+      icon: "❓",
+      grad: "var(--grad-teal)",
+      questions: [q],
+      systems: ["Cardiology"],
+      storageKey: "osce.noguess.test",
+    };
+    render(<Qbank bank={bank} />);
+    fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
+    fireEvent.click(screen.getByText("Right answer"));
+
+    expect(screen.getByText(/✓ Correct/)).toBeInTheDocument();
+    expect(screen.getByText(/1 \/ 1 correct/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /(next|finish) →/i }));
+    expect(screen.queryByRole("button", { name: /redo .* missed/i })).not.toBeInTheDocument();
+  });
 });
