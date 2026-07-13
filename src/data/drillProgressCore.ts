@@ -17,6 +17,9 @@ export interface DrillProgress {
   manual: DrillManual;
 }
 
+/** Per-problem progress keyed by `type:id` (see {@link drillKey}). */
+export type DrillProgressMap = Record<string, DrillProgress>;
+
 /** Coverage at/above which a problem auto-counts as mastered. */
 export const MASTERY_PCT = 80;
 
