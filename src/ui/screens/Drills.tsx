@@ -30,7 +30,6 @@ import { VisualGuide } from "../components/VisualGuide";
 import {
   useGrader,
   buildCoverage,
-  type Coverage,
   CoverageView,
   ScoreBar,
   ResultChip,

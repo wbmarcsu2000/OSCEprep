@@ -12,6 +12,7 @@ import { Differentials } from "./ui/screens/Differentials";
 import { WorkupManagement } from "./ui/screens/WorkupManagement";
 import { Shelf } from "./ui/screens/Shelf";
 import { Qbank } from "./ui/screens/Qbank";
+import { FmDrills } from "./ui/screens/FmDrills";
 import { IM_BANK, FM_BANK, OB_BANK } from "./data/mcqBank";
 import { Neuro } from "./ui/screens/Neuro";
 import { Home } from "./ui/screens/Home";
@@ -296,6 +297,7 @@ export default function App() {
         {view === "shelf" && <Shelf />}
         {view === "mcq" && <Qbank bank={IM_BANK} />}
         {view === "fmmcq" && <Qbank bank={FM_BANK} />}
+        {view === "fmdrills" && <FmDrills />}
         {view === "obmcq" && <Qbank bank={OB_BANK} />}
         {view === "neuro" && <Neuro />}
         {view === "review" && <ReviewScreen />}

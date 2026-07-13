@@ -132,6 +132,14 @@ export const CLERKSHIPS: Clerkship[] = [
         blurb:
           "Single-best-answer MCQs for the Family Medicine shelf — comprehensive high-yield coverage plus USPSTF prevention, with instant feedback and explanations. Cram by system and redo the ones you miss.",
       },
+      {
+        view: "fmdrills",
+        label: "Drills",
+        icon: "🎯",
+        grad: "var(--grad-teal)",
+        blurb:
+          "Master one guideline at a time — screening (USPSTF), immunizations (ACIP), and chronic-disease management (GOLD, GINA, ADA, ACC/AHA) — by recalling the key facts, graded instantly.",
+      },
     ],
   },
   {
