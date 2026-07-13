@@ -108,12 +108,14 @@ export function DrillBrowser({
   progress,
   currentId,
   onPick,
+  title = "All problems",
 }: {
   items: { id: string; label: string; group?: string; answer?: string }[];
   keyOf: (id: string) => string;
   progress: DrillProgressMap;
   currentId: string | null;
   onPick: (id: string) => void;
+  title?: string;
 }) {
   const [filter, setFilter] = useState<"all" | "unseen" | "review" | "mastered">("all");
   const filtered = items.filter((it) => {
@@ -132,7 +134,7 @@ export function DrillBrowser({
   return (
     <div className="card p-3 space-y-2 pop-in">
       <div className="flex items-center gap-2 flex-wrap">
-        <span className="panel-label">All problems</span>
+        <span className="panel-label">{title}</span>
         <div className="ml-auto flex items-center gap-1">
           {FILTERS.map((f) => (
             <button

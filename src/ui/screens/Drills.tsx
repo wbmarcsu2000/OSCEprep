@@ -476,6 +476,7 @@ export function Drills() {
               progress={progress}
               currentId={activeId}
               onPick={(id) => goToProblem(type, id)}
+              title={`All ${DRILL_TYPE_LABELS[type].toLowerCase()} problems`}
             />
           )}
 
