@@ -12,6 +12,20 @@ import { EKG_DRILLS, CXR_DRILLS } from "./imageDrills";
 import { SCORE_DRILLS } from "./scoreDrills";
 import { ANTIBIOTIC_DRILLS } from "./antibioticDrills";
 import { HIGH_YIELD_DRILLS, highYieldGroup } from "./highYieldDrills";
+import {
+  type DrillProgress,
+  type DrillManual,
+  MASTERY_PCT,
+  isMastered,
+  isSeen,
+  drillKey as coreDrillKey,
+  applyAttempt,
+  applyManual,
+} from "./drillProgressCore";
+
+export { type DrillProgress, type DrillManual, MASTERY_PCT, isMastered, isSeen };
+export type DrillProgressMap = Record<string, DrillProgress>;
+export const drillKey = (type: DrillType, id: string): string => coreDrillKey(type, id);
 
 export const DRILL_PROGRESS_KEY = "osce.drills.v1";
 
@@ -49,24 +63,6 @@ export const LAB_TABS: { type: DrillType; skill: SkillDrillProblem["skill"]; emo
 ];
 export const labSkillForType = (t: DrillType): SkillDrillProblem["skill"] | undefined =>
   LAB_TABS.find((l) => l.type === t)?.skill;
-
-/** Student override layered on top of the score-based mastery signal. */
-export type DrillManual = "none" | "mastered" | "review";
-
-export interface DrillProgress {
-  attempts: number;
-  /** Best coverage %, 0-100. */
-  bestPct: number;
-  /** Most recent coverage %, 0-100. */
-  lastPct: number;
-  lastSeenAt: number;
-  manual: DrillManual;
-}
-
-export type DrillProgressMap = Record<string, DrillProgress>;
-
-/** Coverage at/above which a problem auto-counts as mastered. */
-export const MASTERY_PCT = 80;
 
 export const DRILL_TYPE_ORDER: DrillType[] = [
   "high-yield",
@@ -138,10 +134,6 @@ export const DRILL_TAB_GROUPS: { label: string; types: DrillType[] }[] = [
   { label: "Lab interpretation", types: LAB_TABS.map((l) => l.type) },
 ];
 
-export function drillKey(type: DrillType, id: string): string {
-  return `${type}:${id}`;
-}
-
 export function loadDrillProgress(): DrillProgressMap {
   try {
     const raw = localStorage.getItem(DRILL_PROGRESS_KEY);
@@ -165,15 +157,7 @@ function save(map: DrillProgressMap): void {
 export function recordDrillAttempt(type: DrillType, id: string, pct: number): DrillProgress {
   const map = loadDrillProgress();
   const key = drillKey(type, id);
-  const prev = map[key];
-  const clamped = Math.max(0, Math.min(100, Math.round(pct)));
-  const entry: DrillProgress = {
-    attempts: (prev?.attempts ?? 0) + 1,
-    bestPct: Math.max(prev?.bestPct ?? 0, clamped),
-    lastPct: clamped,
-    lastSeenAt: Date.now(),
-    manual: prev?.manual ?? "none",
-  };
+  const entry = applyAttempt(map[key], pct, Date.now());
   map[key] = entry;
   save(map);
   return entry;
@@ -182,23 +166,8 @@ export function recordDrillAttempt(type: DrillType, id: string, pct: number): Dr
 export function setDrillManual(type: DrillType, id: string, manual: DrillManual): void {
   const map = loadDrillProgress();
   const key = drillKey(type, id);
-  const prev = map[key];
-  map[key] = prev
-    ? { ...prev, manual }
-    : { attempts: 0, bestPct: 0, lastPct: 0, lastSeenAt: Date.now(), manual };
+  map[key] = applyManual(map[key], manual, Date.now());
   save(map);
-}
-
-/** Mastery = explicit student "mastered", else (not flagged "review" and best ≥ threshold). */
-export function isMastered(p: DrillProgress | undefined): boolean {
-  if (!p) return false;
-  if (p.manual === "mastered") return true;
-  if (p.manual === "review") return false;
-  return p.bestPct >= MASTERY_PCT;
-}
-
-export function isSeen(p: DrillProgress | undefined): boolean {
-  return !!p && p.attempts > 0;
 }
 
 // ---- Catalog: the full ordered set of problems per drill type ----------------
