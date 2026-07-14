@@ -400,7 +400,10 @@ export function GroupedCoverageDrill({
   const [grading, setGrading] = useState(false);
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [answersHidden, setAnswersHidden] = useState(false);
+  const [hintOpen, setHintOpen] = useState(false);
+  const [revealed, setRevealed] = useState(false);
   const groups = keyPoints.map((g) => ({ group: g.group, items: g.items }));
+  const showAnswer = graded || revealed;
 
   const doGrade = async () => {
     setGrading(true);
@@ -418,6 +421,23 @@ export function GroupedCoverageDrill({
     }
   };
 
+  /** Give up and show the answer key without grading. Logged as an attempt so
+   *  the guideline counts as "seen"; bestPct is unchanged (max), so revealing
+   *  never grants mastery — nor permanently blocks it (a later good recall
+   *  still can). */
+  const doReveal = () => {
+    setHintOpen(false);
+    setRevealed(true);
+    track("drill", { drillType, pct: 0, revealed: true });
+    onRecord(0);
+  };
+
+  const handleRetry = () => {
+    setRevealed(false);
+    setMatched(new Set());
+    onRetry();
+  };
+
   const result = buildCoverage(groups, matched);
   return (
     <div className="space-y-3">
@@ -429,69 +449,118 @@ export function GroupedCoverageDrill({
         <p className="text-[15px] font-semibold leading-relaxed mt-1">{prompt}</p>
       </div>
 
-      <div className={graded ? "grid gap-3 lg:grid-cols-2 items-start" : "space-y-3"}>
+      <div className={showAnswer ? "grid gap-3 lg:grid-cols-2 items-start" : "space-y-3"}>
         <div className="card p-4 space-y-3">
           <div className="panel-label">Your recall</div>
+          {hintOpen && !showAnswer && (
+            <div className="flex flex-wrap gap-1.5" aria-label="Categories to recall">
+              {keyPoints.map((g) => (
+                <span key={g.group} className="chip">{g.group}</span>
+              ))}
+            </div>
+          )}
           <textarea
             className="input w-full resize-y leading-relaxed"
-            rows={graded ? 8 : 6}
+            rows={showAnswer ? 8 : 6}
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
             placeholder="Write everything you remember, grouped if you can…"
             aria-label="Your recall"
           />
-          <GradeButton
-            graded={graded}
-            grading={grading}
-            disabled={!answer.trim()}
-            onGrade={doGrade}
-            onNew={onNew}
-            onRetry={onRetry}
-            newLabel={newLabel}
-          />
-        </div>
-
-        {graded && (
-          <div className="card p-4 space-y-3 pop-in">
-            <div className="flex items-center justify-between gap-2 flex-wrap">
-              <div className="panel-label">Coverage</div>
-              <div className="flex items-center gap-2">
-                <ResultChip named={result.named} total={result.total} />
+          <div className="flex items-center gap-2 flex-wrap">
+            <GradeButton
+              graded={showAnswer}
+              grading={grading}
+              disabled={!answer.trim()}
+              onGrade={doGrade}
+              onNew={onNew}
+              onRetry={handleRetry}
+              newLabel={newLabel}
+            />
+            {!showAnswer && (
+              <>
                 <button
                   type="button"
                   className="btn btn-ghost py-1 px-2.5 text-[12px]"
-                  onClick={() => setAnswersHidden((h) => !h)}
-                  aria-pressed={answersHidden}
+                  aria-pressed={hintOpen}
+                  onClick={() => setHintOpen((h) => !h)}
                 >
-                  {answersHidden ? "👁 Show answers" : "🙈 Cover answers"}
+                  💡 {hintOpen ? "Hide categories" : "Show categories"}
                 </button>
-              </div>
-            </div>
-            <ScoreBar named={result.named} total={result.total} label="Key points" />
-            {answersHidden ? (
-              <button
-                type="button"
-                onClick={() => setAnswersHidden(false)}
-                className="rounded-lg border border-dashed p-4 text-[13px] font-semibold flex items-center justify-center gap-2 w-full"
-                style={{ borderColor: "var(--color-exam-border-strong)", color: "var(--color-exam-muted)", minHeight: "6rem" }}
-              >
-                🙈 Answers hidden — tap to reveal
-              </button>
-            ) : (
+                <button
+                  type="button"
+                  className="btn btn-ghost py-1 px-2.5 text-[12px]"
+                  onClick={doReveal}
+                >
+                  👁 Reveal answer
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+
+        {showAnswer && (
+          <div className="card p-4 space-y-3 pop-in">
+            {graded ? (
               <>
-                <CoverageView title="Guideline key points" coverage={result.coverage} />
-                {pearls && (
-                  <div>
-                    <div className="panel-label mb-1">Pearls</div>
-                    <p
-                      className="rounded-lg border p-3 text-[13px] leading-relaxed whitespace-pre-line"
-                      style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <div className="panel-label">Coverage</div>
+                  <div className="flex items-center gap-2">
+                    <ResultChip named={result.named} total={result.total} />
+                    <button
+                      type="button"
+                      className="btn btn-ghost py-1 px-2.5 text-[12px]"
+                      onClick={() => setAnswersHidden((h) => !h)}
+                      aria-pressed={answersHidden}
                     >
-                      {pearls}
-                    </p>
+                      {answersHidden ? "👁 Show answers" : "🙈 Cover answers"}
+                    </button>
                   </div>
+                </div>
+                <ScoreBar named={result.named} total={result.total} label="Key points" />
+                {answersHidden ? (
+                  <button
+                    type="button"
+                    onClick={() => setAnswersHidden(false)}
+                    className="rounded-lg border border-dashed p-4 text-[13px] font-semibold flex items-center justify-center gap-2 w-full"
+                    style={{ borderColor: "var(--color-exam-border-strong)", color: "var(--color-exam-muted)", minHeight: "6rem" }}
+                  >
+                    🙈 Answers hidden — tap to reveal
+                  </button>
+                ) : (
+                  <CoverageView title="Guideline key points" coverage={result.coverage} />
                 )}
               </>
+            ) : (
+              <>
+                <div className="flex items-center justify-between gap-2 flex-wrap">
+                  <div className="panel-label">Answer</div>
+                  <span className="chip chip-warn">👁 Revealed · logged as seen</span>
+                </div>
+                <div className="space-y-2.5">
+                  {keyPoints.map((g) => (
+                    <div key={g.group}>
+                      <div className="panel-label mb-0.5">{g.group}</div>
+                      <ul className="list-disc pl-5 space-y-0.5 text-[13px] leading-relaxed">
+                        {g.items.map((it) => (
+                          <li key={it}>{it}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+            {pearls && !answersHidden && (
+              <div>
+                <div className="panel-label mb-1">Pearls</div>
+                <p
+                  className="rounded-lg border p-3 text-[13px] leading-relaxed whitespace-pre-line"
+                  style={{ borderColor: "var(--color-exam-ok-line)", background: "var(--color-exam-ok-soft)" }}
+                >
+                  {pearls}
+                </p>
+              </div>
             )}
             <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
           </div>
