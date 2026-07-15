@@ -400,7 +400,7 @@ export function GroupedCoverageDrill({
   const [grading, setGrading] = useState(false);
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [answersHidden, setAnswersHidden] = useState(false);
-  const [hintOpen, setHintOpen] = useState(false);
+  const [hintOpen, setHintOpen] = useState(true);
   const [revealed, setRevealed] = useState(false);
   const groups = keyPoints.map((g) => ({ group: g.group, items: g.items }));
   const showAnswer = graded || revealed;

@@ -40,14 +40,15 @@ describe("GroupedCoverageDrill", () => {
     expect(screen.getByText(/PEARL_TEXT/)).toBeInTheDocument();
   });
 
-  it("'Show categories' reveals the group names as a cue without showing the answer items", () => {
+  it("shows the group-name categories as a cue by default, without showing the answer items, and can hide them", () => {
     render(<Harness />);
-    expect(screen.queryByText("Who")).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: /show categories/i }));
-    // the group name appears as a cue...
+    // categories are shown by default as a cue...
     expect(screen.getByText("Who")).toBeInTheDocument();
     // ...but the actual facts stay hidden
     expect(screen.queryByText(/start age 45/)).not.toBeInTheDocument();
+    // and they can be hidden
+    fireEvent.click(screen.getByRole("button", { name: /hide categories/i }));
+    expect(screen.queryByText("Who")).not.toBeInTheDocument();
   });
 
   it("'Reveal answer' shows the full key + pearls without grading and logs the drill as seen (onRecord 0)", () => {
