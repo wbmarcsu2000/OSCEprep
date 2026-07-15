@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Segmented } from "../components/Segmented";
 import { DrillBrowser, GroupedCoverageDrill, SeenChip } from "../components/drillPrimitives";
+import { CategoryRecallDrill, FlashcardDrill } from "../components/drillModes";
 import { useFmDrillProgress } from "../useFmDrillProgress";
 import { useAppStore } from "../store";
 import {
@@ -14,6 +15,14 @@ import {
 import { fmDrillKey, fmSummarize } from "../../data/fmDrillProgress";
 import { isMastered, isSeen } from "../../data/drillProgressCore";
 
+type DrillMode = "recall" | "category" | "flashcard";
+
+const DRILL_MODES: { value: DrillMode; label: string }[] = [
+  { value: "recall", label: "✍️ Full recall" },
+  { value: "category", label: "🗂 By category" },
+  { value: "flashcard", label: "🃏 Flashcard" },
+];
+
 /**
  * Family Medicine guideline drills. One drill = one guideline; the student does
  * cued grouped free-recall, graded by coverage against the guideline's key
@@ -26,6 +35,7 @@ export function FmDrills() {
   const { progress, record, setManual } = useFmDrillProgress();
 
   const [domain, setDomain] = useState<FmDrillDomain>("screening");
+  const [mode, setMode] = useState<DrillMode>("category");
   const [idx, setIdx] = useState(0);
   const [answer, setAnswer] = useState("");
   const [graded, setGraded] = useState(false);
@@ -44,6 +54,11 @@ export function FmDrills() {
   const changeDomain = (d: FmDrillDomain) => {
     setDomain(d);
     setIdx(0);
+    reset();
+  };
+
+  const changeMode = (m: DrillMode) => {
+    setMode(m);
     reset();
   };
 
@@ -98,6 +113,18 @@ export function FmDrills() {
         </button>
       </div>
 
+      <div className="card px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <span className="panel-label">Mode</span>
+        <Segmented label="Drill mode" options={DRILL_MODES} value={mode} onChange={changeMode} />
+        <span className="hint ml-auto">
+          {mode === "recall"
+            ? "Recall everything at once"
+            : mode === "category"
+              ? "One category at a time"
+              : "Flip & self-rate — no typing"}
+        </span>
+      </div>
+
       <div className="card px-4 py-2.5 flex items-center gap-2 flex-wrap text-[13px]">
         <span className="panel-label">Progress</span>
         <span className="font-semibold" style={{ color: "var(--color-exam-muted)" }}>
@@ -122,32 +149,61 @@ export function FmDrills() {
       )}
 
       {current ? (
-        <GroupedCoverageDrill
-          key={`${domain}:${current.id}`}
-          prompt={current.prompt}
-          keyPoints={current.keyPoints}
-          pearls={current.pearls}
-          badge={`${current.org}`}
-          answer={answer}
-          setAnswer={setAnswer}
-          graded={graded}
-          onGrade={() => setGraded(true)}
-          onNew={nextProblem}
-          onRetry={() => setGraded(false)}
-          onRecord={(pct) => record(domain, current.id, pct)}
-          progressEntry={activeEntry}
-          onSetManual={(m) => setManual(domain, current.id, m)}
-          newLabel="Next guideline →"
-          drillType={`fm-${domain}`}
-        />
+        mode === "flashcard" ? (
+          <FlashcardDrill
+            key={`flashcard:${domain}:${current.id}`}
+            prompt={current.prompt}
+            keyPoints={current.keyPoints}
+            pearls={current.pearls}
+            badge={current.org}
+            onRecord={(pct) => record(domain, current.id, pct)}
+            onNew={nextProblem}
+            drillType={`fm-${domain}`}
+          />
+        ) : mode === "category" ? (
+          <CategoryRecallDrill
+            key={`category:${domain}:${current.id}`}
+            prompt={current.prompt}
+            keyPoints={current.keyPoints}
+            pearls={current.pearls}
+            badge={current.org}
+            onRecord={(pct) => record(domain, current.id, pct)}
+            onNew={nextProblem}
+            progressEntry={activeEntry}
+            onSetManual={(m) => setManual(domain, current.id, m)}
+            newLabel="Next guideline →"
+            drillType={`fm-${domain}`}
+          />
+        ) : (
+          <GroupedCoverageDrill
+            key={`recall:${domain}:${current.id}`}
+            prompt={current.prompt}
+            keyPoints={current.keyPoints}
+            pearls={current.pearls}
+            badge={current.org}
+            answer={answer}
+            setAnswer={setAnswer}
+            graded={graded}
+            onGrade={() => setGraded(true)}
+            onNew={nextProblem}
+            onRetry={() => setGraded(false)}
+            onRecord={(pct) => record(domain, current.id, pct)}
+            progressEntry={activeEntry}
+            onSetManual={(m) => setManual(domain, current.id, m)}
+            newLabel="Next guideline →"
+            drillType={`fm-${domain}`}
+          />
+        )
       ) : (
         <div className="card p-4"><p className="muted text-center">No guidelines in this domain yet.</p></div>
       )}
 
       <p className="hint text-center">
-        {llmEnabled
-          ? "Graded semantically by AI — use the guideline card to self-check anything it misses."
-          : "Graded by lenient keyword match — enable AI for smarter grading. Use the guideline card to self-check anything it misses."}
+        {mode === "flashcard"
+          ? "Flashcard mode — flip and rate yourself; no grading."
+          : llmEnabled
+            ? "Graded semantically by AI — use the guideline card to self-check anything it misses."
+            : "Graded by lenient keyword match — enable AI for smarter grading. Use the guideline card to self-check anything it misses."}
       </p>
     </div>
   );
