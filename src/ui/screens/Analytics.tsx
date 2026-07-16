@@ -22,6 +22,15 @@ import {
   DRILL_TYPE_ORDER,
   DRILL_TYPE_LABELS,
 } from "../../data/drillProgress";
+import { loadFmProgress, fmDrillKey, fmSummarize } from "../../data/fmDrillProgress";
+import {
+  FM_DOMAIN_ORDER,
+  FM_DOMAIN_LABELS,
+  FM_DOMAIN_EMOJI,
+  fmDrillCatalog,
+} from "../../data/fmGuidelineDrills";
+import { MCQ_BANKS } from "../../data/mcqBank";
+import { loadMcqProgress, wasEverMissed, isMastered as mcqIsMastered } from "../../data/mcqProgress";
 import { useAppStore } from "../store";
 
 /** Station titles by case id — caseIds are internal, titles are what users know. */
@@ -288,6 +297,149 @@ function DrillProgressSection() {
   );
 }
 
+/** Longitudinal progress across the Family Medicine guideline drills — the FM
+ *  drill store (osce.fmdrills.v1), which the IM drill section above never reads. */
+function FmDrillProgressSection() {
+  const progress = useMemo(() => loadFmProgress(), []);
+  const rows = FM_DOMAIN_ORDER.map((domain) => ({ domain, summary: fmSummarize(domain, progress) }));
+  const grand = rows.reduce(
+    (a, r) => ({
+      seen: a.seen + r.summary.seen,
+      total: a.total + r.summary.total,
+      mastered: a.mastered + r.summary.mastered,
+      needsWork: a.needsWork + r.summary.needsWork,
+    }),
+    { seen: 0, total: 0, mastered: 0, needsWork: 0 },
+  );
+  // Coverage average weighted by how many guidelines have been tried in each domain.
+  const seenAvg = (() => {
+    let sum = 0;
+    let n = 0;
+    for (const r of rows) {
+      if (r.summary.seen) {
+        sum += r.summary.avgBestPct * r.summary.seen;
+        n += r.summary.seen;
+      }
+    }
+    return n ? Math.round(sum / n) : 0;
+  })();
+
+  return (
+    <div className="card p-4">
+      <div className="flex items-center justify-between gap-2 flex-wrap mb-3">
+        <div className="panel-label">Guideline drills (Family Medicine)</div>
+        <span className="hint">
+          {grand.seen}/{grand.total} guidelines tried · {grand.mastered} mastered
+          {grand.needsWork ? ` · ${grand.needsWork} to review` : ""}
+          {grand.seen ? ` · avg ${seenAvg}% coverage` : ""}
+        </span>
+      </div>
+      <div className="space-y-3">
+        {rows.map(({ domain, summary }) => (
+          <div key={domain}>
+            <div className="grid grid-cols-[128px_1fr_auto] items-center gap-2 text-[13px]">
+              <span className="font-semibold">
+                {FM_DOMAIN_EMOJI[domain]} {FM_DOMAIN_LABELS[domain]}
+              </span>
+              <div className="progress-track" style={{ height: "0.625rem" }}>
+                <div className="progress-fill" style={{ width: `${summary.total ? (summary.seen / summary.total) * 100 : 0}%` }} />
+              </div>
+              <span className="font-mono text-[12px] tabular-nums" style={{ color: "var(--color-exam-muted)" }}>
+                {summary.seen}/{summary.total} · {summary.mastered}✓{summary.seen ? ` · ${summary.avgBestPct}%` : ""}
+              </span>
+            </div>
+            <div className="mt-1.5 flex flex-wrap gap-1" aria-hidden>
+              {fmDrillCatalog(domain).map((it) => {
+                const p = progress[fmDrillKey(domain, it.id)];
+                const mastered = isMastered(p);
+                const seen = isSeen(p);
+                const review = p?.manual === "review";
+                const bg = mastered
+                  ? "var(--color-exam-ok)"
+                  : review
+                    ? "var(--color-exam-warn)"
+                    : seen
+                      ? "var(--color-exam-accent)"
+                      : "var(--color-exam-border-strong)";
+                return (
+                  <span
+                    key={it.id}
+                    title={`${it.group ? it.group + ": " : ""}${it.label}${seen ? ` — best ${p!.bestPct}%` : " — unseen"}`}
+                    style={{ width: "0.6rem", height: "0.6rem", borderRadius: "2px", background: bg, opacity: seen || mastered || review ? 1 : 0.35 }}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="hint mt-3">Tracked locally on this device — one guideline mastered at a time.</p>
+    </div>
+  );
+}
+
+/** Per-bank question-bank progress (osce.mcq.v1 / osce.fmmcq.v1 / osce.obmcq.v1),
+ *  none of which the drill sections above account for. */
+function QbankProgressSection() {
+  const rows = useMemo(
+    () =>
+      MCQ_BANKS.map((bank) => {
+        const p = loadMcqProgress(bank.storageKey);
+        let seen = 0;
+        let mastered = 0;
+        let missed = 0;
+        for (const q of bank.questions) {
+          const s = p[q.id];
+          if (s && s.seen > 0) seen += 1;
+          if (mcqIsMastered(s)) mastered += 1;
+          if (wasEverMissed(s)) missed += 1;
+        }
+        return { bank, total: bank.questions.length, seen, mastered, missed };
+      }),
+    [],
+  );
+  const grand = rows.reduce(
+    (a, r) => ({
+      seen: a.seen + r.seen,
+      total: a.total + r.total,
+      mastered: a.mastered + r.mastered,
+      missed: a.missed + r.missed,
+    }),
+    { seen: 0, total: 0, mastered: 0, missed: 0 },
+  );
+
+  return (
+    <div className="card p-4">
+      <div className="flex items-center justify-between gap-2 flex-wrap mb-3">
+        <div className="panel-label">Question banks</div>
+        <span className="hint">
+          {grand.seen}/{grand.total} questions attempted · {grand.mastered} mastered
+          {grand.missed ? ` · ${grand.missed} in the missed pool` : ""}
+        </span>
+      </div>
+      <div className="space-y-3">
+        {rows.map(({ bank, total, seen, mastered, missed }) => (
+          <div key={bank.id} className="grid grid-cols-[150px_1fr_auto] items-center gap-2 text-[13px]">
+            <span className="font-semibold">
+              {bank.icon} {bank.eyebrow}
+            </span>
+            <div className="progress-track" style={{ height: "0.625rem" }}>
+              <div className="progress-fill" style={{ width: `${total ? (seen / total) * 100 : 0}%`, background: bank.grad }} />
+            </div>
+            <span className="font-mono text-[12px] tabular-nums" style={{ color: "var(--color-exam-muted)" }}>
+              {seen}/{total} · {mastered}✓{missed ? ` · ${missed}✗` : ""}
+            </span>
+          </div>
+        ))}
+      </div>
+      <p className="hint mt-3">
+        <span style={{ color: "var(--color-exam-ok)" }}>✓ mastered</span> = last answer correct ·{" "}
+        <span style={{ color: "var(--color-exam-danger)" }}>✗ missed</span> = ever answered wrong (sticky review pool).
+      </p>
+    </div>
+  );
+}
+
 export function Analytics() {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
   const openReview = useAppStore((s) => s.openReview);
@@ -394,6 +546,8 @@ export function Analytics() {
       </div>
 
       <DrillProgressSection />
+      <FmDrillProgressSection />
+      <QbankProgressSection />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="card p-4">

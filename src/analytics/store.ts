@@ -6,6 +6,8 @@
 import type { CaseModel, EngineState, Mode, ScoreReport } from "../engine/types";
 import { SESSION_STORAGE_KEY } from "../engine/stateMachine";
 import { DRILL_PROGRESS_KEY } from "../data/drillProgress";
+import { FM_DRILL_PROGRESS_KEY } from "../data/fmDrillProgress";
+import { MCQ_STORAGE_KEYS } from "../data/mcqBank";
 
 export const ANALYTICS_STORAGE_KEY = "osce.analytics.v1";
 /** Full per-case review payloads (last attempt wins), keyed by case id. */
@@ -139,7 +141,18 @@ export function recordAttempt(caseModel: CaseModel, engine: EngineState): void {
 
 // ---- Data management ---------------------------------------------------------
 
-const ALL_KEYS = [ANALYTICS_STORAGE_KEY, REVIEW_STORAGE_KEY, SESSION_STORAGE_KEY, DRILL_PROGRESS_KEY];
+// Every localStorage key that holds user progress. Export/import/reset all walk
+// this list, so a new progress store is backed up and cleared the moment its key
+// is added here — the drill and question-bank stores were silently missing, so
+// backups dropped them and "Reset all progress" left them behind.
+const ALL_KEYS = [
+  ANALYTICS_STORAGE_KEY,
+  REVIEW_STORAGE_KEY,
+  SESSION_STORAGE_KEY,
+  DRILL_PROGRESS_KEY,
+  FM_DRILL_PROGRESS_KEY,
+  ...MCQ_STORAGE_KEYS,
+];
 
 /** All progress as a single portable JSON document. */
 export function exportAllData(): string {

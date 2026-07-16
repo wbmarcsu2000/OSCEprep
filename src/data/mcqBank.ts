@@ -66,3 +66,11 @@ export const OB_BANK: McqBank = {
   systems: OB_MCQ_SYSTEMS,
   storageKey: "osce.obmcq.v1",
 };
+
+/** Every question bank, in display order. Single source of truth so any surface
+ *  that must account for all banks (Analytics progress, export/import/reset)
+ *  can't silently miss one when a new bank is added. */
+export const MCQ_BANKS: McqBank[] = [IM_BANK, FM_BANK, OB_BANK];
+
+/** localStorage keys for every bank's per-question progress. */
+export const MCQ_STORAGE_KEYS: string[] = MCQ_BANKS.map((b) => b.storageKey);
