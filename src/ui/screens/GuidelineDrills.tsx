@@ -1,19 +1,13 @@
+// src/ui/screens/GuidelineDrills.tsx
 import { useMemo, useState } from "react";
 import { Segmented } from "../components/Segmented";
 import { DrillBrowser, GroupedCoverageDrill, SeenChip } from "../components/drillPrimitives";
 import { CategoryRecallDrill, FlashcardDrill } from "../components/drillModes";
-import { useFmDrillProgress } from "../useFmDrillProgress";
+import { useDrillBankProgress } from "../useDrillBankProgress";
 import { useAppStore } from "../store";
-import {
-  FM_DOMAIN_ORDER,
-  FM_DOMAIN_LABELS,
-  FM_DOMAIN_EMOJI,
-  fmDrillsForDomain,
-  fmDrillCatalog,
-  type FmDrillDomain,
-} from "../../data/fmGuidelineDrills";
-import { fmDrillKey, fmSummarize } from "../../data/fmDrillProgress";
-import { isMastered, isSeen } from "../../data/drillProgressCore";
+import { type DrillBank, drillsForDomain, drillCatalog } from "../../data/guidelineDrillBank";
+import { summarizeDrillDomain } from "../../data/guidelineDrillProgress";
+import { drillKey, isMastered, isSeen } from "../../data/drillProgressCore";
 
 type DrillMode = "recall" | "category" | "flashcard";
 
@@ -24,34 +18,34 @@ const DRILL_MODES: { value: DrillMode; label: string }[] = [
 ];
 
 /**
- * Family Medicine guideline drills. One drill = one guideline; the student does
+ * Bank-driven guideline drills. One drill = one guideline; the student does
  * cued grouped free-recall, graded by coverage against the guideline's key
- * facts (reusing GroupedCoverageDrill). Three domain tabs: Screening,
- * Immunizations, Chronic Disease. Progress is FM-specific (osce.fmdrills.v1).
+ * facts (reusing GroupedCoverageDrill). Domain tabs, copy, drills, and the
+ * progress storage key all come from the DrillBank descriptor (FM, OB/GYN, …).
  */
-export function FmDrills() {
+export function GuidelineDrills({ bank }: { bank: DrillBank }) {
   const exitToSelect = useAppStore((s) => s.exitToSelect);
   const llmEnabled = useAppStore((s) => s.llmEnabled);
-  const { progress, record, setManual } = useFmDrillProgress();
+  const { progress, record, setManual } = useDrillBankProgress(bank.storageKey);
 
-  const [domain, setDomain] = useState<FmDrillDomain>("screening");
+  const [domain, setDomain] = useState<string>(bank.domains[0].id);
   const [mode, setMode] = useState<DrillMode>("category");
   const [idx, setIdx] = useState(0);
   const [answer, setAnswer] = useState("");
   const [graded, setGraded] = useState(false);
   const [browsing, setBrowsing] = useState(false);
 
-  const pool = useMemo(() => fmDrillsForDomain(domain), [domain]);
+  const pool = useMemo(() => drillsForDomain(bank, domain), [bank, domain]);
   const current = pool.length > 0 ? pool[idx % pool.length] : null;
-  const activeEntry = current ? progress[fmDrillKey(domain, current.id)] : undefined;
-  const summary = useMemo(() => fmSummarize(domain, progress), [domain, progress]);
+  const activeEntry = current ? progress[drillKey(domain, current.id)] : undefined;
+  const summary = useMemo(() => summarizeDrillDomain(bank, domain, progress), [bank, domain, progress]);
 
   const reset = () => {
     setAnswer("");
     setGraded(false);
   };
 
-  const changeDomain = (d: FmDrillDomain) => {
+  const changeDomain = (d: string) => {
     setDomain(d);
     setIdx(0);
     reset();
@@ -67,9 +61,9 @@ export function FmDrills() {
     if (pool.length === 0) return;
     const cur = idx % pool.length;
     const order = [...pool.slice(cur + 1), ...pool.slice(0, cur + 1)];
-    const unseen = order.find((d) => !isSeen(progress[fmDrillKey(domain, d.id)]));
+    const unseen = order.find((d) => !isSeen(progress[drillKey(domain, d.id)]));
     const target =
-      unseen ?? order.find((d) => !isMastered(progress[fmDrillKey(domain, d.id)])) ?? order[0];
+      unseen ?? order.find((d) => !isMastered(progress[drillKey(domain, d.id)])) ?? order[0];
     setIdx(pool.findIndex((d) => d.id === target.id));
     reset();
   };
@@ -85,15 +79,14 @@ export function FmDrills() {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-7 space-y-4">
       <div className="flex items-start justify-between gap-6">
         <div className="flex items-start gap-3">
-          <span className="icon-tile" style={{ background: "var(--grad-teal)" }} aria-hidden="true">🎯</span>
+          <span className="icon-tile" style={{ background: bank.grad }} aria-hidden="true">{bank.icon}</span>
           <div className="space-y-0.5">
             <div className="panel-label">Learning tool</div>
             <h2 className="text-[24px] font-extrabold tracking-tight" style={{ color: "var(--color-exam-header)" }}>
-              Guideline Drills
+              {bank.title}
             </h2>
             <p className="text-sm" style={{ color: "var(--color-exam-muted)" }}>
-              Master one guideline at a time — recall its key facts, graded instantly. Screening,
-              immunizations, and chronic-disease management for the Family Medicine shelf.
+              {bank.blurb}
             </p>
           </div>
         </div>
@@ -103,7 +96,7 @@ export function FmDrills() {
       <div className="card px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-3">
         <Segmented
           label="Guideline domain"
-          options={FM_DOMAIN_ORDER.map((d) => ({ value: d, label: `${FM_DOMAIN_EMOJI[d]} ${FM_DOMAIN_LABELS[d]}` }))}
+          options={bank.domains.map((d) => ({ value: d.id, label: `${d.emoji} ${d.label}` }))}
           value={domain}
           onChange={changeDomain}
         />
@@ -140,8 +133,8 @@ export function FmDrills() {
 
       {browsing && (
         <DrillBrowser
-          items={fmDrillCatalog(domain)}
-          keyOf={(id) => fmDrillKey(domain, id)}
+          items={drillCatalog(bank, domain)}
+          keyOf={(id) => drillKey(domain, id)}
           progress={progress}
           currentId={current?.id ?? null}
           onPick={goToProblem}
@@ -158,7 +151,7 @@ export function FmDrills() {
             badge={current.org}
             onRecord={(pct) => record(domain, current.id, pct)}
             onNew={nextProblem}
-            drillType={`fm-${domain}`}
+            drillType={`${bank.id}-${domain}`}
           />
         ) : mode === "category" ? (
           <CategoryRecallDrill
@@ -172,7 +165,7 @@ export function FmDrills() {
             progressEntry={activeEntry}
             onSetManual={(m) => setManual(domain, current.id, m)}
             newLabel="Next guideline →"
-            drillType={`fm-${domain}`}
+            drillType={`${bank.id}-${domain}`}
           />
         ) : (
           <GroupedCoverageDrill
@@ -191,7 +184,7 @@ export function FmDrills() {
             progressEntry={activeEntry}
             onSetManual={(m) => setManual(domain, current.id, m)}
             newLabel="Next guideline →"
-            drillType={`fm-${domain}`}
+            drillType={`${bank.id}-${domain}`}
           />
         )
       ) : (

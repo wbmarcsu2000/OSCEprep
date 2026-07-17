@@ -1,12 +1,13 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { FmDrills } from "../screens/FmDrills";
+import { GuidelineDrills } from "../screens/GuidelineDrills";
+import { FM_DRILL_BANK } from "../../data/guidelineDrillBank";
 
 describe("FmDrills screen", () => {
   beforeEach(() => localStorage.clear());
 
   it("full-recall mode grades a recall answer and records progress", async () => {
-    render(<FmDrills />);
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
     // default is category mode; switch to full recall for this flow
     fireEvent.click(screen.getByRole("button", { name: /full recall/i }));
 
@@ -23,7 +24,7 @@ describe("FmDrills screen", () => {
   });
 
   it("defaults to category mode: grades one category at a time", async () => {
-    render(<FmDrills />);
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
     expect(screen.getByText(/Category 1 of/)).toBeInTheDocument();
 
     fireEvent.change(screen.getByRole("textbox", { name: /your recall/i }), {
@@ -37,7 +38,7 @@ describe("FmDrills screen", () => {
   });
 
   it("flashcard mode flips to the answer and self-rating advances", () => {
-    render(<FmDrills />);
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
     fireEvent.click(screen.getByRole("button", { name: /flashcard/i }));
     expect(screen.getByText(/Tap to flip/)).toBeInTheDocument();
 
@@ -50,7 +51,7 @@ describe("FmDrills screen", () => {
   });
 
   it("switches domains via the segmented control", () => {
-    render(<FmDrills />);
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
     fireEvent.click(screen.getByRole("button", { name: /Immunizations/ }));
     expect(screen.getByText(/Prompt/)).toBeInTheDocument();
   });
