@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { GuidelineDrills } from "../screens/GuidelineDrills";
-import { FM_DRILL_BANK } from "../../data/guidelineDrillBank";
+import { FM_DRILL_BANK, OB_DRILL_BANK } from "../../data/guidelineDrillBank";
 
 describe("FmDrills screen", () => {
   beforeEach(() => localStorage.clear());
@@ -54,5 +54,20 @@ describe("FmDrills screen", () => {
     render(<GuidelineDrills bank={FM_DRILL_BANK} />);
     fireEvent.click(screen.getByRole("button", { name: /Immunizations/ }));
     expect(screen.getByText(/Prompt/)).toBeInTheDocument();
+  });
+});
+
+describe("GuidelineDrills screen (OB bank)", () => {
+  beforeEach(() => localStorage.clear());
+
+  it("renders the OB domains and first drill without touching FM state", () => {
+    render(<GuidelineDrills bank={OB_DRILL_BANK} />);
+    expect(screen.getByRole("button", { name: /Prenatal & Routine/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Complications/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Labor & Monitoring/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /GYN/ })).toBeInTheDocument();
+    // default mode is category — a prompt card is on screen
+    expect(screen.getByText(/Category 1 of/)).toBeInTheDocument();
+    expect(localStorage.getItem("osce.fmdrills.v1")).toBeNull();
   });
 });

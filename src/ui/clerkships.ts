@@ -155,6 +155,14 @@ export const CLERKSHIPS: Clerkship[] = [
         blurb:
           "Single-best-answer MCQs for the OB/GYN shelf — comprehensive obstetrics and gynecology with instant feedback and explanations. Cram by domain and redo the ones you miss.",
       },
+      {
+        view: "obdrills",
+        label: "Drills",
+        icon: "🎯",
+        grad: "var(--grad-coral)",
+        blurb:
+          "Master one guideline at a time — prenatal care, obstetric emergencies, labor & fetal monitoring, and gynecology (ACOG, ASCCP, CDC) — by recalling the key facts, graded instantly.",
+      },
     ],
   },
   {

@@ -13,7 +13,7 @@ import { WorkupManagement } from "./ui/screens/WorkupManagement";
 import { Shelf } from "./ui/screens/Shelf";
 import { Qbank } from "./ui/screens/Qbank";
 import { GuidelineDrills } from "./ui/screens/GuidelineDrills";
-import { FM_DRILL_BANK } from "./data/guidelineDrillBank";
+import { FM_DRILL_BANK, OB_DRILL_BANK } from "./data/guidelineDrillBank";
 import { IM_BANK, FM_BANK, OB_BANK } from "./data/mcqBank";
 import { Neuro } from "./ui/screens/Neuro";
 import { Home } from "./ui/screens/Home";
@@ -300,6 +300,7 @@ export default function App() {
         {view === "fmmcq" && <Qbank bank={FM_BANK} />}
         {view === "fmdrills" && <GuidelineDrills key="fm" bank={FM_DRILL_BANK} />}
         {view === "obmcq" && <Qbank bank={OB_BANK} />}
+        {view === "obdrills" && <GuidelineDrills key="ob" bank={OB_DRILL_BANK} />}
         {view === "neuro" && <Neuro />}
         {view === "review" && <ReviewScreen />}
         {inStation && engine.currentState === "CHART_REVIEW" && <ChartReview caseModel={caseModel} />}
