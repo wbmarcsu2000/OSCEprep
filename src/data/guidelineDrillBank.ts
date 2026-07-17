@@ -12,6 +12,7 @@ import {
   FM_DOMAIN_LABELS,
   FM_DOMAIN_EMOJI,
 } from "./fmGuidelineDrills";
+import { OB_DOMAINS, OB_GUIDELINE_DRILLS } from "./obGuidelineDrills";
 
 export interface GuidelineDrill {
   id: string;
@@ -63,7 +64,20 @@ export const FM_DRILL_BANK: DrillBank = {
   storageKey: "osce.fmdrills.v1",
 };
 
-export const GUIDELINE_DRILL_BANKS: DrillBank[] = [FM_DRILL_BANK];
+export const OB_DRILL_BANK: DrillBank = {
+  id: "ob",
+  title: "Guideline Drills",
+  blurb:
+    "Master one guideline at a time — recall its key facts, graded instantly. Prenatal care, OB complications, labor & fetal monitoring, and gynecology for the OB/GYN shelf.",
+  icon: "🎯",
+  grad: "var(--grad-coral)",
+  clerkshipLabel: "OB/GYN",
+  domains: OB_DOMAINS,
+  drills: OB_GUIDELINE_DRILLS,
+  storageKey: "osce.obdrills.v1",
+};
+
+export const GUIDELINE_DRILL_BANKS: DrillBank[] = [FM_DRILL_BANK, OB_DRILL_BANK];
 
 /** Single source of truth for export/import/reset (analytics ALL_KEYS). */
 export const DRILL_STORAGE_KEYS: string[] = GUIDELINE_DRILL_BANKS.map((b) => b.storageKey);
