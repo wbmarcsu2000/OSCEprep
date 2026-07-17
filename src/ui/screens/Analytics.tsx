@@ -22,13 +22,9 @@ import {
   DRILL_TYPE_ORDER,
   DRILL_TYPE_LABELS,
 } from "../../data/drillProgress";
-import { loadFmProgress, fmDrillKey, fmSummarize } from "../../data/fmDrillProgress";
-import {
-  FM_DOMAIN_ORDER,
-  FM_DOMAIN_LABELS,
-  FM_DOMAIN_EMOJI,
-  fmDrillCatalog,
-} from "../../data/fmGuidelineDrills";
+import { loadDrillBankProgress, summarizeDrillDomain } from "../../data/guidelineDrillProgress";
+import { GUIDELINE_DRILL_BANKS, drillCatalog as bankDrillCatalog, type DrillBank } from "../../data/guidelineDrillBank";
+import { drillKey as bankDrillKey } from "../../data/drillProgressCore";
 import { MCQ_BANKS } from "../../data/mcqBank";
 import { loadMcqProgress, wasEverMissed, isMastered as mcqIsMastered } from "../../data/mcqProgress";
 import { useAppStore } from "../store";
@@ -297,11 +293,11 @@ function DrillProgressSection() {
   );
 }
 
-/** Longitudinal progress across the Family Medicine guideline drills — the FM
- *  drill store (osce.fmdrills.v1), which the IM drill section above never reads. */
-function FmDrillProgressSection() {
-  const progress = useMemo(() => loadFmProgress(), []);
-  const rows = FM_DOMAIN_ORDER.map((domain) => ({ domain, summary: fmSummarize(domain, progress) }));
+/** Longitudinal progress across one clerkship's guideline drills — the bank's own
+ *  drill store (bank.storageKey), which the IM drill section above never reads. */
+function GuidelineDrillBankSection({ bank }: { bank: DrillBank }) {
+  const progress = useMemo(() => loadDrillBankProgress(bank.storageKey), [bank.storageKey]);
+  const rows = bank.domains.map((dom) => ({ dom, summary: summarizeDrillDomain(bank, dom.id, progress) }));
   const grand = rows.reduce(
     (a, r) => ({
       seen: a.seen + r.summary.seen,
@@ -327,7 +323,7 @@ function FmDrillProgressSection() {
   return (
     <div className="card p-4">
       <div className="flex items-center justify-between gap-2 flex-wrap mb-3">
-        <div className="panel-label">Guideline drills (Family Medicine)</div>
+        <div className="panel-label">Guideline drills ({bank.clerkshipLabel})</div>
         <span className="hint">
           {grand.seen}/{grand.total} guidelines tried · {grand.mastered} mastered
           {grand.needsWork ? ` · ${grand.needsWork} to review` : ""}
@@ -335,11 +331,11 @@ function FmDrillProgressSection() {
         </span>
       </div>
       <div className="space-y-3">
-        {rows.map(({ domain, summary }) => (
-          <div key={domain}>
+        {rows.map(({ dom, summary }) => (
+          <div key={dom.id}>
             <div className="grid grid-cols-[128px_1fr_auto] items-center gap-2 text-[13px]">
               <span className="font-semibold">
-                {FM_DOMAIN_EMOJI[domain]} {FM_DOMAIN_LABELS[domain]}
+                {dom.emoji} {dom.label}
               </span>
               <div className="progress-track" style={{ height: "0.625rem" }}>
                 <div className="progress-fill" style={{ width: `${summary.total ? (summary.seen / summary.total) * 100 : 0}%` }} />
@@ -349,8 +345,8 @@ function FmDrillProgressSection() {
               </span>
             </div>
             <div className="mt-1.5 flex flex-wrap gap-1" aria-hidden>
-              {fmDrillCatalog(domain).map((it) => {
-                const p = progress[fmDrillKey(domain, it.id)];
+              {bankDrillCatalog(bank, dom.id).map((it) => {
+                const p = progress[bankDrillKey(dom.id, it.id)];
                 const mastered = isMastered(p);
                 const seen = isSeen(p);
                 const review = p?.manual === "review";
@@ -546,7 +542,9 @@ export function Analytics() {
       </div>
 
       <DrillProgressSection />
-      <FmDrillProgressSection />
+      {GUIDELINE_DRILL_BANKS.map((b) => (
+        <GuidelineDrillBankSection key={b.id} bank={b} />
+      ))}
       <QbankProgressSection />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

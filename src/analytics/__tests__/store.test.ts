@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { exportAllData, importAllData, clearAllData } from "../store";
 import { DRILL_PROGRESS_KEY } from "../../data/drillProgress";
-import { FM_DRILL_PROGRESS_KEY } from "../../data/fmDrillProgress";
+import { DRILL_STORAGE_KEYS, FM_DRILL_BANK } from "../../data/guidelineDrillBank";
 import { MCQ_BANKS, MCQ_STORAGE_KEYS } from "../../data/mcqBank";
 
 /**
@@ -11,12 +11,12 @@ import { MCQ_BANKS, MCQ_STORAGE_KEYS } from "../../data/mcqBank";
  */
 
 // Every progress store that a full backup / reset must account for.
-const PROGRESS_KEYS = [DRILL_PROGRESS_KEY, FM_DRILL_PROGRESS_KEY, ...MCQ_STORAGE_KEYS];
+const PROGRESS_KEYS = [DRILL_PROGRESS_KEY, ...DRILL_STORAGE_KEYS, ...MCQ_STORAGE_KEYS];
 
 function seedEveryProgressKey() {
   const drillEntry = { "screening:x": { attempts: 1, bestPct: 90, lastPct: 90, lastSeenAt: 1, manual: "none" } };
   localStorage.setItem(DRILL_PROGRESS_KEY, JSON.stringify(drillEntry));
-  localStorage.setItem(FM_DRILL_PROGRESS_KEY, JSON.stringify(drillEntry));
+  localStorage.setItem(FM_DRILL_BANK.storageKey, JSON.stringify(drillEntry));
   for (const key of MCQ_STORAGE_KEYS) {
     localStorage.setItem(key, JSON.stringify({ q1: { seen: 1, correct: 1, lastCorrect: true, everWrong: false } }));
   }

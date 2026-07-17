@@ -1,7 +1,8 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Analytics } from "../screens/Analytics";
-import { recordFmAttempt } from "../../data/fmDrillProgress";
+import { recordDrillBankAttempt } from "../../data/guidelineDrillProgress";
+import { FM_DRILL_BANK } from "../../data/guidelineDrillBank";
 import { recordMcqAnswer } from "../../data/mcqProgress";
 import { IM_BANK } from "../../data/mcqBank";
 
@@ -14,7 +15,7 @@ describe("Analytics reflects FM drills and question-bank progress", () => {
   beforeEach(() => localStorage.clear());
 
   it("surfaces the FM guideline-drill store", () => {
-    recordFmAttempt("screening", "screen-colorectal", 100);
+    recordDrillBankAttempt(FM_DRILL_BANK.storageKey, "screening", "screen-colorectal", 100);
     render(<Analytics />);
     expect(screen.getByText(/Guideline drills \(Family Medicine\)/)).toBeInTheDocument();
     expect(screen.getByText(/guidelines tried/)).toBeInTheDocument();
