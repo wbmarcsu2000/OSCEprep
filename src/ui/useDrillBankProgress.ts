@@ -8,7 +8,13 @@ import {
 } from "../data/guidelineDrillProgress";
 import { drillKey, type DrillManual } from "../data/drillProgressCore";
 
-/** React wrapper over a bank's drill-progress store — mirrors useDrillProgress. */
+/**
+ * React wrapper over a bank's drill-progress store — mirrors useDrillProgress.
+ * `storageKey` must be stable for the lifetime of a mounted instance: the
+ * initial state loads it once and does not reload on change. Render one bank
+ * per component instance and key the component by bank (App.tsx keys each
+ * bank's route) so switching banks remounts rather than reusing stale state.
+ */
 export function useDrillBankProgress(storageKey: string) {
   const [progress, setProgress] = useState<DrillBankProgressMap>(() => loadDrillBankProgress(storageKey));
 

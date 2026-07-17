@@ -1,6 +1,7 @@
 /**
  * Storage-agnostic drill-progress logic, shared by the IM drill store
- * (drillProgress.ts) and the FM drill store (fmDrillProgress.ts). Pure — no
+ * (drillProgress.ts) and the bank-driven guideline-drill store
+ * (guidelineDrillProgress.ts, used by the FM and OB/GYN banks). Pure — no
  * React, no localStorage, no PHI (only coverage %, attempt count, timestamps).
  */
 
