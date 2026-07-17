@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Analytics } from "../screens/Analytics";
 import { recordDrillBankAttempt } from "../../data/guidelineDrillProgress";
-import { FM_DRILL_BANK } from "../../data/guidelineDrillBank";
+import { FM_DRILL_BANK, OB_DRILL_BANK } from "../../data/guidelineDrillBank";
 import { recordMcqAnswer } from "../../data/mcqProgress";
 import { IM_BANK } from "../../data/mcqBank";
 
@@ -18,7 +18,13 @@ describe("Analytics reflects FM drills and question-bank progress", () => {
     recordDrillBankAttempt(FM_DRILL_BANK.storageKey, "screening", "screen-colorectal", 100);
     render(<Analytics />);
     expect(screen.getByText(/Guideline drills \(Family Medicine\)/)).toBeInTheDocument();
-    expect(screen.getByText(/guidelines tried/)).toBeInTheDocument();
+    expect(screen.getAllByText(/guidelines tried/).length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("surfaces the OB/GYN guideline-drill store", () => {
+    recordDrillBankAttempt(OB_DRILL_BANK.storageKey, "gyn", "gyn-pid", 100);
+    render(<Analytics />);
+    expect(screen.getByText(/Guideline drills \(OB\/GYN\)/)).toBeInTheDocument();
   });
 
   it("surfaces per-bank question-bank progress", () => {
