@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { loadRawCase } from "../../data/loader";
 import { adaptCase } from "../schemaAdapter";
 import { gradeStep } from "../scoringEngine";
-import { itemMatches, penaltyMatches } from "../textMatch";
+import { itemMatches, penaltyMatches, isNegatedIn } from "../textMatch";
 import type { CaseModel, StepModel } from "../types";
 
 /**
@@ -10,6 +10,9 @@ import type { CaseModel, StepModel } from "../types";
  * here was reproduced against the real engine and shipped case library before
  * the fix, so these are the exact wrong marks students were getting.
  */
+
+/** Mirrors the avoidance set penaltyMatches uses internally (not exported). */
+const AVOIDANCE_FOR_TEST = new Set(["avoid", "hold", "never", "withhold"]);
 
 const cache = new Map<string, CaseModel>();
 async function step(caseId: string, stepId: string): Promise<StepModel> {
@@ -58,6 +61,35 @@ describe("penalty matching treats avoidance as avoidance, not assertion", () => 
     ["Start anticoagulation now", "Starting anticoagulation"],
   ])("still penalizes %j, which does assert the action", (answer, penalty) => {
     expect(penaltyMatches(answer, penalty, [])).toBe(true);
+  });
+});
+
+describe("avoidance governs its whole object phrase", () => {
+  it("does not penalize a long avoidance clause on its far end", async () => {
+    // Real answer from the review; the penalty is about IV calcium in digoxin
+    // toxicity OR large fluid boluses, and this answer refuses both while
+    // correctly treating the digoxin toxicity.
+    const management = await step("abdo-02", "management");
+    const answer =
+      "Admit. Treat digoxin toxicity with digoxin-specific Fab. AVOID IV calcium for the " +
+      "hyperkalemia because of the digoxin toxicity, and avoid large fluid boluses given her congestion.";
+    const result = gradeStep(management, answer, {}, "Acute cholecystitis");
+    expect(result.penaltiesApplied.map((p) => p.item)).toEqual([]);
+  });
+
+  it("is not defeated by non-idempotent stemming of a plural", () => {
+    // stem("boluses") is "bolus" but stem("bolus") is "bolu". penaltyMatches
+    // passes already-stemmed tokens, so re-stemming inside isNegatedIn lost the
+    // token entirely and the negation check silently no-opped.
+    expect(isNegatedIn("avoid large fluid boluses", "bolus", 4, AVOIDANCE_FOR_TEST)).toBe(true);
+    expect(isNegatedIn("give large fluid boluses", "bolus", 4, AVOIDANCE_FOR_TEST)).toBe(false);
+    // The ordinary (non-avoidance) path must keep working on plurals too.
+    expect(isNegatedIn("no fluid boluses", "bolus")).toBe(true);
+  });
+
+  it("still penalizes the action when a later clause asserts it", () => {
+    expect(penaltyMatches("Avoid beta blockers. Give nitroglycerin now.", "Giving nitroglycerin", []))
+      .toBe(true);
   });
 });
 

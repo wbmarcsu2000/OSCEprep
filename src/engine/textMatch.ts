@@ -408,7 +408,15 @@ export function isNegatedIn(
   window = 4,
   extra?: Set<string>,
 ): boolean {
-  const phraseToks = tokens(phrase).map(stem);
+  // Match on EITHER the token or its stem. `penaltyMatches` passes tokens that
+  // are already stemmed, and stemming is not idempotent — stem("boluses") is
+  // "bolus", but stem("bolus") is "bolu", which appears nowhere in the text. The
+  // token was therefore never found, `sawToken` stayed false, and the whole
+  // negation check silently no-opped for any word ending in "s" after one pass
+  // (so "avoid large fluid boluses" still fired a fluid-bolus penalty).
+  const phraseToks = tokens(phrase).map((t) => [t, stem(t)] as const);
+  const matchesAt = (i: number, raw: string[], stems: string[], cands: readonly string[]): boolean =>
+    cands.includes(raw[i]) || cands.includes(stems[i]);
   const hit = (i: number, raw: string[], stems: string[]): boolean =>
     NEGATORS.has(raw[i]) ||
     NEGATORS.has(stems[i]) ||
@@ -423,12 +431,29 @@ export function isNegatedIn(
   for (const clause of text.split(/[.;!?,\n]+/)) {
     const raw = normalize(clause).split(/[\s/-]+/).filter(Boolean);
     const stems = raw.map(stem);
-    for (const pt of phraseToks) {
-      let idx = stems.indexOf(pt);
+    for (const cands of phraseToks) {
+      const nextIdx = (from: number): number => {
+        for (let i = from; i < raw.length; i++) if (matchesAt(i, raw, stems, cands)) return i;
+        return -1;
+      };
+      let idx = nextIdx(0);
       while (idx >= 0) {
         sawToken = true;
         let negated = false;
-        for (let i = Math.max(0, idx - window); i < idx; i++) {
+        // An avoidance verb governs its whole object phrase, not just the next
+        // few words: "avoid IV calcium for the hyperkalemia because of the
+        // digoxin toxicity" avoids all of it. So `extra` negators are scanned
+        // from the start of the clause, while ordinary negators keep the narrow
+        // window (a pertinent negative must NOT swallow later positives).
+        if (extra) {
+          for (let i = 0; i < idx; i++) {
+            if (extra.has(raw[i]) || extra.has(stems[i])) {
+              negated = true;
+              break;
+            }
+          }
+        }
+        for (let i = Math.max(0, idx - window); !negated && i < idx; i++) {
           if (hit(i, raw, stems)) {
             negated = true;
             break;
@@ -450,7 +475,7 @@ export function isNegatedIn(
             negated = true;
         }
         if (!negated) return false; // at least one positive assertion
-        idx = stems.indexOf(pt, idx + 1);
+        idx = nextIdx(idx + 1);
       }
     }
   }
