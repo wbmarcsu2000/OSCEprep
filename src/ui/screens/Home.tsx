@@ -1,8 +1,6 @@
 import { useMemo } from "react";
 import { manifest } from "../../data/loader";
-import { SHELF_MCQS } from "../../data/shelfMcq";
-import { FM_MCQS } from "../../data/familyMedMcq";
-import { OB_MCQS } from "../../data/obgynMcq";
+import { IM_BANK, FM_BANK, OB_BANK } from "../../data/mcqBank";
 import { loadAttempts } from "../../analytics/store";
 import { useAppStore } from "../store";
 import { CLERKSHIPS } from "../clerkships";
@@ -24,9 +22,12 @@ export function Home() {
   // Small status line for a couple of tools.
   const metaFor = (view: string): string | undefined => {
     if (view === "select") return `${manifest.cases.length} cases · ${done} done`;
-    if (view === "mcq") return `${SHELF_MCQS.length} questions`;
-    if (view === "fmmcq") return `${FM_MCQS.length} questions`;
-    if (view === "obmcq") return `${OB_MCQS.length} questions`;
+    // bank.total comes from mcqBankMeta, so rendering these counts does NOT
+    // pull 7.8 MB of question data into the entry chunk the way importing
+    // SHELF_MCQS/FM_MCQS/OB_MCQS just to read `.length` used to.
+    if (view === "mcq") return `${IM_BANK.total} questions`;
+    if (view === "fmmcq") return `${FM_BANK.total} questions`;
+    if (view === "obmcq") return `${OB_BANK.total} questions`;
     return undefined;
   };
 

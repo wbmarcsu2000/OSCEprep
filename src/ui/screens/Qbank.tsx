@@ -1,5 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { type McqQuestion } from "../../data/shelfMcq";
+// `import type`, not `import { type ... }`: under verbatimModuleSyntax the
+// inline-modifier form leaves a runtime `import "../../data/shelfMcq"` behind,
+// which pinned the 2.49 MB IM bank into the entry chunk and defeated the
+// dynamic import in mcqBank.ts (rolldown reports INEFFECTIVE_DYNAMIC_IMPORT).
+import type { McqQuestion } from "../../data/mcqBank";
 import { IM_BANK, type McqBank } from "../../data/mcqBank";
 import {
   loadMcqProgress,
@@ -66,9 +70,35 @@ function inSubset(q: McqQuestion, subset: Subset, progress: McqProgress): boolea
 
 const LETTERS = ["A", "B", "C", "D", "E"];
 
+/** Stable empty array so the pool/eligible memos don't rerun while loading. */
+const EMPTY_QUESTIONS: McqQuestion[] = [];
+
 export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
-  const questions = bank.questions;
   const storageKey = bank.storageKey;
+
+  // The bank's questions are code-split (see mcqBank.ts) and fetched on mount.
+  // null = still loading; the setup screen waits rather than reporting an empty
+  // bank. The chunk is cached by the module registry and the service worker, so
+  // this only ever waits once per bank per session.
+  const [loaded, setLoaded] = useState<McqQuestion[] | null>(null);
+  const [loadFailed, setLoadFailed] = useState(false);
+  useEffect(() => {
+    let alive = true;
+    setLoaded(null);
+    setLoadFailed(false);
+    bank
+      .load()
+      .then((qs) => {
+        if (alive) setLoaded(qs);
+      })
+      .catch(() => {
+        if (alive) setLoadFailed(true);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [bank]);
+  const questions = loaded ?? EMPTY_QUESTIONS;
 
   const [phase, setPhase] = useState<Phase>("setup");
   const [system, setSystem] = useState<string>("All");
@@ -234,6 +264,24 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
     });
     return { correct, done };
   }, [queue, answers, guesses]);
+
+  // ------------------------------------------------------- Bank still loading
+  if (loaded === null) {
+    return (
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-7">
+        <div className="card p-5 space-y-2" role="status" aria-live="polite">
+          <p className="text-[14px] font-bold">
+            {loadFailed ? "Couldn't load these questions" : `Loading ${bank.total} questions…`}
+          </p>
+          <p className="hint">
+            {loadFailed
+              ? "Check your connection and reopen this tab — the bank is fetched on first use, then kept offline."
+              : "Downloaded once, then available offline."}
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   // ---------------------------------------------------------------- Setup
   if (phase === "setup") {

@@ -384,17 +384,21 @@ function QbankProgressSection() {
   const rows = useMemo(
     () =>
       MCQ_BANKS.map((bank) => {
+        // Counted from the progress map, not from the questions: the banks are
+        // code-split (mcqBank.ts) and iterating bank.questions here would drag
+        // all three multi-megabyte chunks into this screen. A progress entry
+        // only ever exists for a question the student has answered, so every
+        // count below is derivable — and bank.total supplies the denominator.
         const p = loadMcqProgress(bank.storageKey);
         let seen = 0;
         let mastered = 0;
         let missed = 0;
-        for (const q of bank.questions) {
-          const s = p[q.id];
+        for (const s of Object.values(p)) {
           if (s && s.seen > 0) seen += 1;
           if (mcqIsMastered(s)) mastered += 1;
           if (wasEverMissed(s)) missed += 1;
         }
-        return { bank, total: bank.questions.length, seen, mastered, missed };
+        return { bank, total: bank.total, seen, mastered, missed };
       }),
     [],
   );

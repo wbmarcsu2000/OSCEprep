@@ -20,8 +20,9 @@ describe("Analytics reflects FM drills and question-bank progress", () => {
     expect(screen.getByText(/guidelines tried/)).toBeInTheDocument();
   });
 
-  it("surfaces per-bank question-bank progress", () => {
-    recordMcqAnswer(IM_BANK.questions[0].id, true, IM_BANK.storageKey);
+  it("surfaces per-bank question-bank progress", async () => {
+    const [firstQuestion] = await IM_BANK.load();
+    recordMcqAnswer(firstQuestion.id, true, IM_BANK.storageKey);
     render(<Analytics />);
     expect(screen.getByText(/Question banks/)).toBeInTheDocument();
     expect(screen.getByText(/questions attempted/)).toBeInTheDocument();

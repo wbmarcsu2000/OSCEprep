@@ -3,11 +3,20 @@
  * over one of these, so a single UI serves multiple banks (Internal Medicine,
  * Family Medicine, …). Each bank carries its own question set, system order,
  * and localStorage key, so progress never collides between banks.
+ *
+ * The questions are loaded ON DEMAND via `load()`. This module used to import
+ * all three arrays statically, which put every question in the entry chunk —
+ * 7.8 MB of the 8.8 MB main bundle, so a student opening an OSCE case still
+ * downloaded 1,860 Family Medicine questions first. Each `load()` is a dynamic
+ * import, so Vite emits one chunk per bank and a bank arrives only when its tab
+ * is opened (then stays in the service-worker cache). Anything needed before
+ * that — counts, the systems filter list — comes from `mcqBankMeta.ts`.
  */
 
-import { SHELF_MCQS, MCQ_SYSTEMS, type McqQuestion } from "./shelfMcq";
-import { FM_MCQS, FM_MCQ_SYSTEMS } from "./familyMedMcq";
-import { OB_MCQS, OB_MCQ_SYSTEMS } from "./obgynMcq";
+import type { McqQuestion } from "./shelfMcq";
+import { MCQ_BANK_META } from "./mcqBankMeta";
+
+export type { McqQuestion };
 
 export interface McqBank {
   id: string;
@@ -21,11 +30,18 @@ export interface McqBank {
   icon: string;
   /** Background gradient token (from src/index.css) for the icon tile + progress bar. */
   grad: string;
-  questions: McqQuestion[];
+  /** Question count, known without loading the bank. */
+  total: number;
   /** Systems that have at least one question (drives the filter list). */
   systems: string[];
   /** localStorage key for this bank's per-question progress. */
   storageKey: string;
+  /**
+   * Load this bank's questions. Resolves from a module-level cache after the
+   * first call, so switching away from a bank and back does not re-parse a
+   * multi-megabyte array.
+   */
+  load: () => Promise<McqQuestion[]>;
 }
 
 export const IM_BANK: McqBank = {
@@ -36,9 +52,10 @@ export const IM_BANK: McqBank = {
     "Single-best-answer MCQs from the high-yield IM review. Commit to an answer, get instant feedback and the teaching point, and redo the ones you miss.",
   icon: "❓",
   grad: "var(--grad-pink)",
-  questions: SHELF_MCQS,
-  systems: MCQ_SYSTEMS,
+  total: MCQ_BANK_META.im.total,
+  systems: MCQ_BANK_META.im.systems,
   storageKey: "osce.mcq.v1",
+  load: () => import("./shelfMcq").then((m) => m.SHELF_MCQS),
 };
 
 export const FM_BANK: McqBank = {
@@ -49,9 +66,10 @@ export const FM_BANK: McqBank = {
     "Single-best-answer MCQs from a comprehensive high-yield Family Medicine review plus the USPSTF preventive-care guidelines. Quick vignettes, instant feedback, redo the ones you miss.",
   icon: "🩹",
   grad: "var(--grad-teal)",
-  questions: FM_MCQS,
-  systems: FM_MCQ_SYSTEMS,
+  total: MCQ_BANK_META.fm.total,
+  systems: MCQ_BANK_META.fm.systems,
   storageKey: "osce.fmmcq.v1",
+  load: () => import("./familyMedMcq").then((m) => m.FM_MCQS),
 };
 
 export const OB_BANK: McqBank = {
@@ -62,9 +80,10 @@ export const OB_BANK: McqBank = {
     "Single-best-answer MCQs for the OB/GYN shelf — comprehensive high-yield obstetrics and gynecology, with instant feedback and explanations. Quick vignettes, redo the ones you miss.",
   icon: "🤰",
   grad: "var(--grad-coral)",
-  questions: OB_MCQS,
-  systems: OB_MCQ_SYSTEMS,
+  total: MCQ_BANK_META.ob.total,
+  systems: MCQ_BANK_META.ob.systems,
   storageKey: "osce.obmcq.v1",
+  load: () => import("./obgynMcq").then((m) => m.OB_MCQS),
 };
 
 /** Every question bank, in display order. Single source of truth so any surface

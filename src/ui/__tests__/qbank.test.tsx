@@ -5,7 +5,7 @@ import { SHELF_MCQS, MCQ_SYSTEM_ORDER, type McqQuestion } from "../../data/shelf
 import type { McqBank } from "../../data/mcqBank";
 
 describe("Shelf MCQ bank (data)", () => {
-  it("every question is well-formed single-best-answer", () => {
+  it("every question is well-formed single-best-answer", async () => {
     expect(SHELF_MCQS.length).toBeGreaterThanOrEqual(5);
     const ids = SHELF_MCQS.map((q) => q.id);
     expect(new Set(ids).size, "unique ids").toBe(ids.length);
@@ -34,8 +34,10 @@ describe("Question Bank screen", () => {
     }
   });
 
-  it("names each option by its answer text and announces the result", () => {
+  it("names each option by its answer text and announces the result", async () => {
     render(<Qbank />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
 
     // An aria-label of "Option A" used to REPLACE the option's contents, so a
@@ -55,8 +57,10 @@ describe("Question Bank screen", () => {
     expect(live?.textContent).toMatch(/right answer is [A-E]:/);
   });
 
-  it("starts a quiz and reveals feedback only after answering", () => {
+  it("starts a quiz and reveals feedback only after answering", async () => {
     render(<Qbank />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
     // No in-screen header — the setup screen goes straight to the controls.
     // Start the quiz from the setup screen.
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
@@ -75,7 +79,7 @@ describe("Question Bank screen", () => {
     expect(screen.getByRole("button", { name: /(next|finish) →/i })).toBeEnabled();
   });
 
-  it("reveals per-option rationales and the concept block only after answering", () => {
+  it("reveals per-option rationales and the concept block only after answering", async () => {
     const q: McqQuestion = {
       id: "teach-1",
       system: "Cardiology",
@@ -98,11 +102,14 @@ describe("Question Bank screen", () => {
       blurb: "test bank",
       icon: "❓",
       grad: "var(--grad-teal)",
-      questions: [q],
+      total: [q].length,
+      load: async () => [q],
       systems: ["Cardiology"],
       storageKey: "osce.teach.test",
     };
     render(<Qbank bank={bank} />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
 
     // Nothing teaching-related before answering.
@@ -129,7 +136,7 @@ describe("Question Bank screen", () => {
     expect(screen.getByText(/RATIONALE_WRONG/)).toBeInTheDocument();
   });
 
-  it("reveals score components, discriminator, and mnemonic only after answering", () => {
+  it("reveals score components, discriminator, and mnemonic only after answering", async () => {
     const q: McqQuestion = {
       id: "teach-2",
       system: "Pulmonology",
@@ -152,11 +159,14 @@ describe("Question Bank screen", () => {
       blurb: "test bank",
       icon: "❓",
       grad: "var(--grad-teal)",
-      questions: [q],
+      total: [q].length,
+      load: async () => [q],
       systems: ["Pulmonology"],
       storageKey: "osce.teach.test2",
     };
     render(<Qbank bank={bank} />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
 
     // Nothing enhancement-related before answering.
@@ -176,7 +186,7 @@ describe("Question Bank screen", () => {
     expect(screen.getByText(/MNEMONIC_TEXT/)).toBeInTheDocument();
   });
 
-  it("caps a session to the chosen number of questions (chunked test mode)", () => {
+  it("caps a session to the chosen number of questions (chunked test mode)", async () => {
     // A bank of 8 questions; the session-length picker should bound the run.
     const questions: McqQuestion[] = Array.from({ length: 8 }, (_, i) => ({
       id: `chunk-${i}`,
@@ -194,11 +204,14 @@ describe("Question Bank screen", () => {
       blurb: "test bank",
       icon: "❓",
       grad: "var(--grad-teal)",
-      questions,
+      total: questions.length,
+      load: async () => questions,
       systems: ["Cardiology"],
       storageKey: "osce.chunk.test",
     };
     render(<Qbank bank={bank} />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
 
     // Default is 20, but only 8 are eligible → the button offers all 8.
     expect(screen.getByRole("button", { name: /start quiz · 8 questions/i })).toBeInTheDocument();
@@ -211,7 +224,7 @@ describe("Question Bank screen", () => {
     expect(screen.getByText(/question 1 of 3/i)).toBeInTheDocument();
   });
 
-  it("the guess button logs a question as missed even when the pick is correct", () => {
+  it("the guess button logs a question as missed even when the pick is correct", async () => {
     const q: McqQuestion = {
       id: "guess-1",
       system: "Cardiology",
@@ -228,11 +241,14 @@ describe("Question Bank screen", () => {
       blurb: "test bank",
       icon: "❓",
       grad: "var(--grad-teal)",
-      questions: [q],
+      total: [q].length,
+      load: async () => [q],
       systems: ["Cardiology"],
       storageKey: "osce.guess.test",
     };
     render(<Qbank bank={bank} />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
 
     // Flag the question as a guess, then pick the CORRECT option.
@@ -249,7 +265,7 @@ describe("Question Bank screen", () => {
     expect(screen.getByRole("button", { name: /redo 1 missed/i })).toBeInTheDocument();
   });
 
-  it("without the guess flag a correct pick still counts as correct", () => {
+  it("without the guess flag a correct pick still counts as correct", async () => {
     const q: McqQuestion = {
       id: "nog-1",
       system: "Cardiology",
@@ -266,11 +282,14 @@ describe("Question Bank screen", () => {
       blurb: "test bank",
       icon: "❓",
       grad: "var(--grad-teal)",
-      questions: [q],
+      total: [q].length,
+      load: async () => [q],
       systems: ["Cardiology"],
       storageKey: "osce.noguess.test",
     };
     render(<Qbank bank={bank} />);
+    // The bank is code-split; wait for load() before driving the setup screen.
+    await screen.findByRole("button", { name: /start quiz/i });
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
     fireEvent.click(screen.getByText("Right answer"));
 
