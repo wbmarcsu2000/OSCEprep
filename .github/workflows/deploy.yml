@@ -31,6 +31,9 @@ jobs:
           # Set repository variable ANALYTICS_ENDPOINT to your Cloudflare Worker
           # URL to turn on usage analytics. Unset = analytics stays off (no-op).
           VITE_ANALYTICS_ENDPOINT: ${{ vars.ANALYTICS_ENDPOINT }}
+          # Without this every production event is stamped app:"dev", so you
+          # cannot tell which build a student was on when they report something.
+          VITE_APP_VERSION: ${{ github.sha }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

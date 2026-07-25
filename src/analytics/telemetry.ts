@@ -8,11 +8,14 @@
  *  - Respects Do-Not-Track (treated as a decline).
  *  - Sends ONLY an allowlist of coarse usage events with an allowlist of prop
  *    keys, values type-checked and length-capped. It is structurally impossible
- *    to leak free text, exam answers, exact identity, or API keys through here.
- *  - "Who they are" is coarse + anonymous: a persistent random device id (so you
- *    can see returning users / retention) plus whatever the receiving endpoint
- *    derives from the request (country via IP, device/browser via user-agent).
- *    No name, email, or login.
+ *    to leak free text, exam answers, or API keys through here.
+ *  - Identity: a persistent random device id (so you can see returning users /
+ *    retention), plus whatever the receiving endpoint derives from the request
+ *    (country via IP, device/browser via user-agent). When the student has
+ *    signed in, `studentIdentityProps()` also attaches their NAME and EMAIL to
+ *    every event, so the course instructor can attribute usage — this is NOT
+ *    anonymous, and LoginGate's consent copy says so explicitly. Consent is a
+ *    hard precondition for any send.
  *
  * Configure via build-time env (see ANALYTICS.md):
  *   VITE_ANALYTICS_ENDPOINT  — POST events here (custom endpoint / Cloudflare Worker)
