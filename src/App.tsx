@@ -30,7 +30,10 @@ function ClerkshipTabs({ view }: { view: View }) {
   const active = clerkshipForView(view);
   return (
     <nav
-      className="flex flex-1 min-w-0 items-center gap-1 overflow-x-auto scroll-quiet"
+      // pr-5 gives the last tab somewhere to scroll past the fade below.
+      // Without it the mask sits on the scroll container's own box, so the
+      // rightmost clerkship stayed half-erased even when scrolled fully right.
+      className="flex flex-1 min-w-0 items-center gap-1 overflow-x-auto scroll-quiet pr-5"
       aria-label="Clerkships"
       style={{
         // Fade the right edge so scrolled-off clerkships read as "more this way".
@@ -45,7 +48,7 @@ function ClerkshipTabs({ view }: { view: View }) {
             key={c.id}
             onClick={() => setView(c.tools[0].view)}
             aria-current={isActive ? "page" : undefined}
-            className="text-[13px] font-extrabold rounded-full px-4 py-1.5 whitespace-nowrap shrink-0 transition-colors"
+            className="text-[13px] font-extrabold rounded-full px-4 py-2 min-h-11 whitespace-nowrap shrink-0 transition-colors"
             style={{
               background: isActive ? "rgba(255,255,255,0.22)" : "transparent",
               color: isActive ? "#fff" : "rgba(255,255,255,0.72)",
@@ -75,7 +78,7 @@ function ToolSubnav({ clerkship, view }: { clerkship: Clerkship; view: View }) {
               key={t.view}
               onClick={() => setView(t.view)}
               aria-current={isActive ? "page" : undefined}
-              className="text-[13px] font-bold px-3 py-2.5 -mb-px whitespace-nowrap shrink-0 border-b-2 transition-colors"
+              className="text-[13px] font-bold px-3 py-2.5 min-h-11 -mb-px whitespace-nowrap shrink-0 border-b-2 transition-colors"
               style={{
                 borderColor: isActive ? "var(--color-exam-accent)" : "transparent",
                 color: isActive ? "var(--color-exam-accent-deep)" : "var(--color-exam-muted)",
