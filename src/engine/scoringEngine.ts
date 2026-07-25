@@ -18,7 +18,7 @@ import type {
   DomainKey,
 } from "./types";
 import { DOMAIN_KEYS } from "./types";
-import { bestOverlap, isNegatedIn, itemMatches, penaltyMatches, tokens } from "./textMatch";
+import { bestOverlap, isNegatedIn, itemMatches, overlapRatio, penaltyMatches, tokens } from "./textMatch";
 import { stepDomain } from "./schemaAdapter";
 import { MANEUVER_BY_ID } from "./maneuvers";
 
@@ -38,7 +38,10 @@ function omissionPenaltyApplies(answer: string, item: string): boolean {
     .replace(/\b(ordered|orders?|given|done|performed|obtained|checked)\b/gi, " ");
   const alternatives = stripped.split(/[/,]| or /i).filter((a) => tokens(a).length > 0);
   if (alternatives.length === 0) return false;
-  return alternatives.every((alt) => bestOverlap(answer, alt) < 0.6);
+  // expandSynonyms MUST be on: without it "ECG" does not match the authored
+  // "EKG" (nor "chest x-ray" the authored "CXR"), and the engine penalizes the
+  // student for omitting something they explicitly ordered.
+  return alternatives.every((alt) => bestOverlap(answer, alt, true) < 0.6);
 }
 
 function llmMatched(llm: string[] | undefined, item: string): boolean {
@@ -100,7 +103,10 @@ export function gradeStep(
     critical.reduce((a, b) => a + b.points, 0) + core.reduce((a, b) => a + b.points, 0);
   const remainder = Math.max(0, max - itemizedMax);
   if (remainder > 0 && step.idealAnswer && answer.length > 0) {
-    const ratio = bestOverlap(answer, step.idealAnswer);
+    // overlapRatio, not bestOverlap: the ideal answer is prose, so a "/" in it
+    // is punctuation. expandSynonyms so the score does not depend on whether
+    // the student wrote "ECG" or "EKG".
+    const ratio = overlapRatio(answer, step.idealAnswer, true);
     const pts = Math.round(ratio * remainder);
     if (pts > 0) {
       earned += pts;

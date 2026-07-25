@@ -315,7 +315,85 @@ export function bestOverlap(
   return best;
 }
 
-const NEGATORS = ["no", "not", "without", "denies", "unlikely", "rule", "r/o", "ruled", "isn't", "wasn't", "non", "negative", "excludes", "excluded"];
+/**
+ * Overlap against the phrase taken as ONE phrase — here "/" is punctuation, not
+ * an alternatives delimiter.
+ *
+ * Use this for prose (a step's `idealAnswer`), never for a rubric item. Grading
+ * a 96-token ideal answer through `bestOverlap` split it on any incidental
+ * slash ("ALP/AST", "CT/echo"), and the short fragment between two slashes
+ * became a 1-token "alternative" that scored a full 1.0 for anyone who typed
+ * that single word — handing over the whole section remainder. Measured across
+ * the library: 414 ideal answers contain a slash (median 96 significant
+ * tokens), against 1,422 slashed rubric items of at most 31, so the two uses
+ * genuinely need different rules.
+ */
+export function overlapRatio(
+  studentText: string,
+  phrase: string,
+  expandSynonyms = false,
+): number {
+  const textToks = expandSynonyms
+    ? expandStems(stemmedTokenSet(studentText))
+    : stemmedTokenSet(studentText);
+  const toks = tokens(phrase.replace(/\(.*?\)/g, " ")).map(stem);
+  if (toks.length === 0) return 0;
+  return toks.filter((t) => textToks.has(t)).length / toks.length;
+}
+
+/** Words that negate the item that follows them, in any grading path.
+ *
+ *  Deliberately does NOT contain "rule"/"ruled": in a differential "rule out PE"
+ *  means the student IS carrying PE, so treating it as an exclusion denied
+ *  credit for the commonest phrasing there is. Past-tense exclusion is handled
+ *  by EXCLUSION_PAIRS below. ("r/o" was also listed here and was dead code —
+ *  `tokens()` splits on "/" and drops 1-char tokens, so it never matched.)
+ *
+ *  Kept as exact literals, NOT stem-expanded: stemming "excludes" yields
+ *  "exclude", which would make "must exclude aortic dissection" negate the very
+ *  differentials the student is correctly carrying. */
+const NEGATORS = new Set([
+  "no", "not", "without", "denies", "unlikely", "isn't", "wasn't", "non",
+  "negative", "excludes", "excluded",
+]);
+
+/** Two-token exclusions: "the CTA ruled out PE" really does exclude PE, while
+ *  the bare infinitive "to rule out PE" includes it. */
+const EXCLUSION_PAIRS: [string, string][] = [
+  ["ruled", "out"],
+  ["rules", "out"],
+];
+
+/** Avoidance verbs — opt-in, via the `extra` argument.
+ *
+ *  For a PENALTY, "avoid IV calcium" names the dangerous action precisely in
+ *  order not to do it, so it must not count as asserting it. For CREDIT these
+ *  must stay off: plenty of rubric items ARE "hold the beta blocker" / "hold
+ *  anticoagulation", and treating "hold" as a negator there would deny credit
+ *  for doing exactly the right thing. */
+const AVOIDANCE_NEGATORS = negatorSet([
+  "avoid", "avoids", "avoided", "avoiding", "hold", "holds", "holding", "held",
+  "withhold", "withholds", "withholding", "withheld", "never", "defer",
+  "defers", "deferred", "deferring", "contraindicated", "contraindication",
+  "refrain", "skip", "skips", "omit", "omits",
+]);
+
+/** Both the literal and its stem, since the scan compares against raw tokens
+ *  and stemmed tokens (stemming is lossy: "withheld" does not stem to
+ *  "withhold", "deferred" stems to "deferr"). */
+function negatorSet(words: string[]): Set<string> {
+  const out = new Set<string>();
+  for (const w of words) {
+    out.add(w);
+    out.add(stem(w));
+  }
+  return out;
+}
+
+/** Copulas allowed between an item and a trailing avoidance verb, so
+ *  "nitroglycerin is contraindicated" reads as avoidance while
+ *  "give nitroglycerin and avoid beta blockers" does not. */
+const COPULAS = new Set(["is", "was", "are", "were", "be", "been", "being", "gets", "get"]);
 
 /**
  * True when every occurrence of the phrase's tokens in `text` is preceded
@@ -324,10 +402,25 @@ const NEGATORS = ["no", "not", "without", "denies", "unlikely", "rule", "r/o", "
  * "…not a STEMI. Rate 90, sinus rhythm" still credits "rate & rhythm"
  * (negation never crosses a sentence boundary).
  */
-export function isNegatedIn(text: string, phrase: string, window = 4): boolean {
+export function isNegatedIn(
+  text: string,
+  phrase: string,
+  window = 4,
+  extra?: Set<string>,
+): boolean {
   const phraseToks = tokens(phrase).map(stem);
+  const hit = (i: number, raw: string[], stems: string[]): boolean =>
+    NEGATORS.has(raw[i]) ||
+    NEGATORS.has(stems[i]) ||
+    (!!extra && (extra.has(raw[i]) || extra.has(stems[i])));
   let sawToken = false;
-  for (const clause of text.split(/[.;!?\n]+/)) {
+  // The comma is a clause boundary: a student writing "No fever, chest pain
+  // radiating to the jaw" is asserting the chest pain, but a comma-blind
+  // look-back window reached over it and denied credit. The cost is that an
+  // unrepeated list ("no fever, chills, cough") now reads its tail as positive
+  // — clinicians repeat the negator ("no fever, no chills"), and crediting a
+  // little too freely beats penalizing a correct answer.
+  for (const clause of text.split(/[.;!?,\n]+/)) {
     const raw = normalize(clause).split(/[\s/-]+/).filter(Boolean);
     const stems = raw.map(stem);
     for (const pt of phraseToks) {
@@ -336,10 +429,25 @@ export function isNegatedIn(text: string, phrase: string, window = 4): boolean {
         sawToken = true;
         let negated = false;
         for (let i = Math.max(0, idx - window); i < idx; i++) {
-          if (NEGATORS.includes(raw[i]) || NEGATORS.includes(stems[i])) {
+          if (hit(i, raw, stems)) {
             negated = true;
             break;
           }
+          // "…ruled out PE" excludes PE; "…to rule out PE" carries it.
+          if (EXCLUSION_PAIRS.some(([a, b]) => raw[i] === a && raw[i + 1] === b)) {
+            negated = true;
+            break;
+          }
+        }
+        // Trailing avoidance, but only across a copula, so "nitroglycerin is
+        // contraindicated" counts while "give nitroglycerin and avoid beta
+        // blockers" keeps asserting the nitroglycerin.
+        if (!negated && extra) {
+          const next = raw[idx + 1];
+          const after = raw[idx + 2];
+          if (next && (extra.has(next) || extra.has(stems[idx + 1]))) negated = true;
+          else if (next && COPULAS.has(next) && after && (extra.has(after) || extra.has(stems[idx + 2])))
+            negated = true;
         }
         if (!negated) return false; // at least one positive assertion
         idx = stems.indexOf(pt, idx + 1);
@@ -424,11 +532,12 @@ export function penaltyMatches(
     const distinctive = altToks.filter((t) => !contextToks.has(t));
     if (distinctive.length === 0) {
       // No distinctive token — require the whole phrase, unnegated.
-      if (bestOverlap(answer, alt) === 1 && !isNegatedIn(answer, alt)) return true;
+      if (bestOverlap(answer, alt) === 1 && !isNegatedIn(answer, alt, 4, AVOIDANCE_NEGATORS))
+        return true;
       continue;
     }
     for (const t of distinctive) {
-      if (answerToks.has(t) && !isNegatedIn(answer, t)) return true;
+      if (answerToks.has(t) && !isNegatedIn(answer, t, 4, AVOIDANCE_NEGATORS)) return true;
     }
   }
   return false;
