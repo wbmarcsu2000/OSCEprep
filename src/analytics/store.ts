@@ -6,7 +6,7 @@
 import type { CaseModel, EngineState, Mode, ScoreReport } from "../engine/types";
 import { SESSION_STORAGE_KEY } from "../engine/stateMachine";
 import { DRILL_PROGRESS_KEY } from "../data/drillProgress";
-import { FM_DRILL_PROGRESS_KEY } from "../data/fmDrillProgress";
+import { DRILL_STORAGE_KEYS } from "../data/guidelineDrillBank";
 import { MCQ_STORAGE_KEYS } from "../data/mcqBank";
 
 export const ANALYTICS_STORAGE_KEY = "osce.analytics.v1";
@@ -150,7 +150,7 @@ const ALL_KEYS = [
   REVIEW_STORAGE_KEY,
   SESSION_STORAGE_KEY,
   DRILL_PROGRESS_KEY,
-  FM_DRILL_PROGRESS_KEY,
+  ...DRILL_STORAGE_KEYS,
   ...MCQ_STORAGE_KEYS,
 ];
 
