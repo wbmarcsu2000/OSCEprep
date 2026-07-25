@@ -510,6 +510,19 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
           </div>
         )}
 
+        {/* Permanently mounted, so assistive tech is already watching when the
+            result text appears. A live region that mounts together with its own
+            content is frequently missed. Answering otherwise announced nothing
+            at all: the result block below just appears, and the ✓/✗ is colour
+            plus an aria-hidden badge. */}
+        <p className="sr-only" role="status" aria-live="polite">
+          {answered
+            ? `${chosen === current.answerIndex ? "Correct." : "Incorrect."} The right answer is ${
+                LETTERS[current.answerIndex]
+              }: ${current.options[current.answerIndex]}.`
+            : ""}
+        </p>
+
         <div className="space-y-2">
           {current.options.map((opt, i) => (
             <OptionButton
@@ -679,7 +692,10 @@ function OptionButton({
       type="button"
       disabled={disabled}
       onClick={onClick}
-      aria-label={`Option ${letter}`}
+      // No aria-label here: an aria-label wins over the element's contents, so
+      // labelling this "Option A" made the answer text itself unreadable to a
+      // screen reader — every choice announced as just its letter. The letter
+      // and the correct/incorrect state live in the sr-only span below instead.
       aria-expanded={hasRationale ? expanded : undefined}
       className="w-full flex items-start gap-3 rounded-xl border px-3.5 py-2.5 text-left text-[14px] leading-relaxed transition-colors disabled:cursor-default enabled:hover:border-[var(--color-exam-accent-line)]"
       style={styles[state]}
@@ -692,6 +708,16 @@ function OptionButton({
         {badge}
       </span>
       <span className="min-w-0 flex-1">
+        {/* The ✓/✗ badge is aria-hidden and correctness is otherwise conveyed
+            by colour alone, so state has to reach assistive tech as text. */}
+        <span className="sr-only">
+          {`Option ${letter}`}
+          {state === "correct"
+            ? ", correct answer. "
+            : state === "wrong"
+              ? ", your answer, incorrect. "
+              : ". "}
+        </span>
         <span className="flex items-start justify-between gap-2">
           <span>{text}</span>
           {hasRationale && (
