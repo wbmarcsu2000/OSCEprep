@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Agent scratch + git worktrees live here; never part of the app.
+.claude/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
