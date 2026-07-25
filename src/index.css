@@ -239,6 +239,19 @@ body {
   box-shadow: 0 0 0 3px rgba(109, 74, 255, 0.14);
 }
 
+/* iOS Safari force-zooms the page whenever a focused field is under 16px, so
+ * every tap into the patient-question box zoomed and re-laid out the screen
+ * mid-station. Touch devices only, so the desktop type scale is untouched.
+ * !important because a dozen call sites pin text-[13px]/text-[14px] on the
+ * same element, and a utility class outranks .input's own font-size. */
+@media (pointer: coarse) {
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
 /* ---- Chips & badges ----------------------------------------------------- */
 
 .chip {

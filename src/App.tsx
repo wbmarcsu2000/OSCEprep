@@ -20,6 +20,7 @@ import { PhaseHeader } from "./ui/components/PhaseHeader";
 import { DevTools } from "./ui/components/DevTools";
 import { initTelemetry, analyticsEndpointConfigured } from "./analytics/telemetry";
 import { LoginGate } from "./ui/components/LoginGate";
+import { ErrorBoundary } from "./ui/components/ErrorBoundary";
 import { isSignedIn } from "./auth/identity";
 import { CLERKSHIPS, clerkshipForView, type Clerkship } from "./ui/clerkships";
 
@@ -202,7 +203,12 @@ export default function App() {
     <div className="h-full flex flex-col">
       <header
         className="px-5 py-2.5 flex items-center gap-3 sm:gap-4 text-white shrink-0"
-        style={{ background: "var(--grad-header)" }}
+        style={{
+          background: "var(--grad-header)",
+          // index.html opts into viewport-fit=cover, so honor the notch insets.
+          paddingLeft: "max(1.25rem, env(safe-area-inset-left))",
+          paddingRight: "max(1.25rem, env(safe-area-inset-right))",
+        }}
       >
         {/* Brand — fixed; never compressed by the nav. */}
         <button
@@ -286,7 +292,12 @@ export default function App() {
       {!inStation && <ResumeBanner />}
       {inStation && <PhaseHeader caseModel={caseModel} engine={engine} />}
 
+      {/* Keyed on the view so React remounts the boundary on navigation, which
+          clears a crashed screen for free: the shell and nav stay alive and the
+          student just taps another tool, instead of the whole app going blank
+          and needing a reload (which re-downloads the entire bundle). */}
       <main className="flex-1 min-h-0 overflow-y-auto scroll-quiet">
+        <ErrorBoundary key={inStation ? `station-${engine.currentState}` : view}>
         {view === "home" && <Home />}
         {view === "select" && <CaseSelect />}
         {view === "analytics" && <Analytics />}
@@ -305,6 +316,7 @@ export default function App() {
         {inStation && engine.currentState === "PATIENT_ENCOUNTER" && <Encounter caseModel={caseModel} />}
         {inStation && engine.currentState === "POST_ENCOUNTER" && <PostEncounter caseModel={caseModel} />}
         {inStation && engine.currentState === "FEEDBACK" && <Feedback />}
+        </ErrorBoundary>
       </main>
 
       <footer
@@ -313,6 +325,8 @@ export default function App() {
           borderColor: "var(--color-exam-border)",
           color: "var(--color-exam-faint)",
           background: "#fff",
+          // Keep the disclaimer clear of the home indicator on notched iPhones.
+          paddingBottom: "max(0.375rem, env(safe-area-inset-bottom))",
         }}
       >
         <span>For medical education and OSCE practice only. Not for clinical decision-making.</span>
