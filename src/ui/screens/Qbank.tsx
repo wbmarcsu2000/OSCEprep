@@ -13,7 +13,7 @@ import {
   type McqProgress,
 } from "../../data/mcqProgress";
 import { Segmented } from "../components/Segmented";
-import { MCQ_IMAGES, mcqImageUrl } from "../../data/mcqImages";
+import { MCQ_IMAGES, mcqImageUrl, mcqImagePromptAlt } from "../../data/mcqImages";
 
 /**
  * Question Bank — single-best-answer MCQs drilled one at a time for shelf-exam
@@ -80,24 +80,33 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
   // null = still loading; the setup screen waits rather than reporting an empty
   // bank. The chunk is cached by the module registry and the service worker, so
   // this only ever waits once per bank per session.
-  const [loaded, setLoaded] = useState<McqQuestion[] | null>(null);
-  const [loadFailed, setLoadFailed] = useState(false);
+  // Stamped with the bank it belongs to, so switching banks reads as "loading"
+  // by derivation rather than by resetting state inside the effect (which would
+  // cascade a render, and which react-hooks/set-state-in-effect rightly flags).
+  const [loadState, setLoadState] = useState<{
+    bankId: string;
+    questions: McqQuestion[] | null;
+    failed: boolean;
+  }>({ bankId: bank.id, questions: null, failed: false });
+
   useEffect(() => {
     let alive = true;
-    setLoaded(null);
-    setLoadFailed(false);
     bank
       .load()
       .then((qs) => {
-        if (alive) setLoaded(qs);
+        if (alive) setLoadState({ bankId: bank.id, questions: qs, failed: false });
       })
       .catch(() => {
-        if (alive) setLoadFailed(true);
+        if (alive) setLoadState({ bankId: bank.id, questions: null, failed: true });
       });
     return () => {
       alive = false;
     };
   }, [bank]);
+
+  const forThisBank = loadState.bankId === bank.id;
+  const loaded = forThisBank ? loadState.questions : null;
+  const loadFailed = forThisBank && loadState.failed;
   const questions = loaded ?? EMPTY_QUESTIONS;
 
   const [phase, setPhase] = useState<Phase>("setup");
@@ -524,8 +533,15 @@ export function Qbank({ bank = IM_BANK }: { bank?: McqBank } = {}) {
             <figure className="space-y-1">
               <img
                 src={src}
-                alt={img.alt}
+                // Before answering, describe only what is visible: the authored
+                // alt names the diagnosis, and alt text is read aloud and shown
+                // in place of an image that fails to load, so it was giving away
+                // visual-diagnosis answers. Full caption once answered.
+                alt={answered ? img.alt : mcqImagePromptAlt(img.alt)}
                 loading="lazy"
+                decoding="async"
+                // Reserve the box so the stem doesn't jump when the image lands.
+                style={{ aspectRatio: "4 / 3" }}
                 className="w-full max-h-[22rem] object-contain rounded-xl border border-[var(--color-exam-border)] bg-[var(--color-exam-panel)]"
               />
               <figcaption className="text-[11px] text-[var(--color-exam-muted)]">

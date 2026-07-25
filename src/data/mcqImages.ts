@@ -39,6 +39,40 @@ export function mcqImageUrl(file: string): string | undefined {
   return byBasename[file];
 }
 
+/** Phrases that introduce the diagnosis at the end of an alt string. */
+const DX_CLAUSE =
+  /,?\s*\b(characteristic of|consistent with|diagnostic of|typical of|pathognomonic (?:for|of)|suggestive of|in a patient with|seen in)\b.*$/i;
+
+/**
+ * The alt text to use BEFORE the student has answered.
+ *
+ * Every authored `alt` names the diagnosis — "…characteristic of melanoma",
+ * "(seborrheic keratosis)" — because it doubles as the teaching caption. But
+ * `alt` is not private: a screen-reader user hears it up front, and iOS Safari
+ * renders it in place of an image that failed to load, which on ward wifi is
+ * common. Either way the answer to a visual-diagnosis question was being handed
+ * over. The screen already hides `question.topic` until after answering for
+ * exactly this reason.
+ *
+ * So strip the diagnosis and keep the morphology: parentheticals go, and so
+ * does any trailing "characteristic of …" clause. What remains still describes
+ * what is visible ("Asymmetric pigmented lesion with irregular borders and
+ * colour variation"), which is what a blind student needs in order to reason
+ * about the question rather than be told the answer. Derived rather than stored
+ * so a regenerated MCQ_IMAGES map needs no follow-up edit.
+ */
+export function mcqImagePromptAlt(alt: string): string {
+  const findings = alt
+    .replace(/\s*\([^)]*\)/g, "")
+    .replace(DX_CLAUSE, "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/[\s,;:—-]+$/, "")
+    .trim();
+  // If stripping left too little to be useful, say nothing specific rather than
+  // risk a misleading fragment.
+  return findings.length >= 18 ? findings : "Clinical image for this question";
+}
+
 /** Question id -> curated teaching image (shown above the stem). */
 export const MCQ_IMAGES: Record<string, McqImage> = {
   "fm-dermatology-1": {
