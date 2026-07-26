@@ -65,7 +65,7 @@ export const MCQ_BANK_META: Record<"im" | "fm" | "ob", McqBankMeta> = {
     ],
   },
   ob: {
-    total: 556,
+    total: 536,
     systems: [
       "Prenatal Care & Normal Pregnancy",
       "Early Pregnancy Complications",
