@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-# ARCHIVED COPY. Two things here are load-bearing and must stay in version
-# control: RETIRED_IDS (a rebuild without it silently reintroduces the 20
-# questions retired as redundant) and the id ledger at LEDGER_PATH. The per-batch
-# source JSON lives in the generation workspace at OBWORK; if that is gone, this
+# ARCHIVED COPY. RETIRED_IDS and the ledger at LEDGER_PATH are load-bearing: a
+# rebuild without them silently reintroduces retired duplicates and renumbers
+# every question, which reattaches students' saved progress to the wrong items.
+# Per-batch source JSON lives in the workspace at OBWORK; if that is gone, this
 # file records what the build did and src/data/obgynMcq.ts is the source of truth.
 """Assemble the OB/GYN MCQ bank from the generation workflow's per-batch JSON.
 

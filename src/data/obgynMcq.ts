@@ -83,13 +83,13 @@ export const OB_MCQS: McqQuestion[] = [
     "answerIndex": 0,
     "explanation": "ACE inhibitors are teratogenic (associated with fetal renal dysgenesis, oligohydramnios, and other anomalies when used in the second and third trimesters) and should be switched to a pregnancy-safe agent such as labetalol or nifedipine before conception.",
     "optionRationales": [
-      "Correct: labetalol and nifedipine are pregnancy-compatible antihypertensives appropriate to substitute before conception.",
+      "Correct: labetalol and nifedipine are pregnancy-compatible antihypertensives appropriate to substitute before conception; her chronic hypertension also makes her a candidate for low-dose aspirin 81 mg daily starting at 12-16 weeks for preeclampsia prophylaxis.",
       "Stopping all treatment risks uncontrolled hypertension, which itself carries maternal and fetal risk; a safe alternative should be substituted, not omitted.",
       "Adding a thiazide does not address the teratogenic risk of the ACE inhibitor itself.",
       "ACE inhibitors are contraindicated in pregnancy due to fetal renal toxicity and should not be continued.",
       "Warfarin is an anticoagulant, not an antihypertensive, and is itself teratogenic; it is not an appropriate substitution here."
     ],
-    "concept": "Preconception medication review should identify teratogenic drugs used for chronic conditions (e.g., ACE inhibitors/ARBs for hypertension) and transition patients to pregnancy-compatible alternatives before conception whenever feasible."
+    "concept": "Preconception medication review should identify teratogenic drugs used for chronic conditions (e.g., ACE inhibitors/ARBs for hypertension) and transition patients to pregnancy-compatible alternatives before conception whenever feasible. Chronic hypertension also shapes the rest of her prenatal plan: it is a high-risk indication for low-dose aspirin preeclampsia prophylaxis, and antihypertensive therapy in pregnancy is now targeted to a blood pressure below 140/90 mm Hg (ACOG 2022, following the CHAP trial)."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-3",
@@ -290,12 +290,13 @@ export const OB_MCQS: McqQuestion[] = [
       "Repeating the same screening test does not provide diagnostic confirmation; a diagnostic test with karyotype/chromosomal analysis is required.",
       "The quad screen is a second-trimester screening test and is not used to confirm a first-trimester cfDNA screening result; it does not provide a diagnosis either.",
       "An abnormal screening result cannot be dismissed without diagnostic confirmation, given the significant implications of a true trisomy 21 diagnosis.",
-      "Correct: cfDNA screening results, whether high- or low-risk, require confirmation with a diagnostic invasive test before acting on the diagnosis.",
+      "Correct: cfDNA is a screening test with a substantial false-positive rate (low positive predictive value, especially for rarer trisomies), so a HIGH-RISK result must be confirmed by CVS or amniocentesis before any diagnosis or irreversible decision. A low-risk result needs no invasive confirmation.",
       "Definitive counseling and decisions should not be based on a screening test alone; diagnosis must first be confirmed invasively."
     ],
     "concept": "Cell-free fetal DNA (available from about 10 weeks gestation) is a highly sensitive noninvasive screening test for common aneuploidies (trisomy 21, 18, 13) using placental DNA fragments in maternal blood, but it remains a screening test. Any abnormal result must be confirmed with a diagnostic procedure (CVS or amniocentesis) that provides a fetal karyotype.",
     "conceptRule": [
       "cfDNA abnormal at ≥10 weeks -> confirm with CVS (10-14 weeks) or amniocentesis (>15 weeks)",
+      "cfDNA low-risk (negative) -> no invasive confirmation needed; do not expose to procedure-related loss risk",
       "Maternal age ≥35 -> major risk factor prompting aneuploidy screening discussion"
     ]
   },
@@ -409,14 +410,15 @@ export const OB_MCQS: McqQuestion[] = [
     "optionRationales": [
       "Hemoglobin electrophoresis is used to evaluate microcytic anemia unresponsive to iron, unrelated to infection risk screening.",
       "Colonoscopy is unrelated to prenatal infectious disease screening and is not part of routine pregnancy care in a young patient.",
-      "HPV DNA testing is part of cervical cancer screening protocols in nonpregnant women over 30, not a standard prenatal infection screen.",
+      "HPV DNA testing is a cervical cancer screening tool, not an STI screen, and at 19 she is below the age at which any cervical cancer screening begins (21 with cytology, or 25 with primary HPV testing). Pregnancy itself does not defer age-appropriate cervical screening - only endocervical curettage and excisional procedures are deferred.",
       "MMR is a live vaccine and is contraindicated during pregnancy; nonimmune patients are vaccinated postpartum instead.",
       "Correct: high-risk features such as multiple sexual partners warrant chlamydia/gonorrhea screening at the first prenatal visit and again in the third trimester if risk persists."
     ],
-    "concept": "Routine prenatal STI screening includes chlamydia and gonorrhea testing for women who are 24 years old or younger, or who have other risk factors (new/multiple partners, prior STI, sex work). High-risk patients should have repeat STI screening in the third trimester as well.",
+    "concept": "Routine prenatal STI screening includes chlamydia and gonorrhea testing for women who are 24 years old or younger, or who have other risk factors (new/multiple partners, prior STI, sex work); repeat third-trimester chlamydia/gonorrhea testing is risk-based. Syphilis screening, by contrast, is universal rather than risk-based: because of the rise in congenital syphilis, ACOG (2024) recommends testing every pregnant patient three times - at the first prenatal visit, again early in the third trimester, and at birth.",
     "conceptRule": [
       "Age ≤24 or high-risk features -> screen for chlamydia/gonorrhea at first visit",
-      "High-risk patients -> repeat STI screening in third trimester",
+      "High-risk features persist -> repeat chlamydia/gonorrhea screening in the third trimester",
+      "Syphilis -> screen ALL pregnant patients at the first prenatal visit, again early in the third trimester (about 28 weeks), and at birth (universal, not risk-based)",
       "Live vaccines (MMR, varicella, live attenuated influenza) -> contraindicated during pregnancy; give postpartum if nonimmune. HPV vaccine is inactivated/recombinant (not live) but is simply deferred until after pregnancy and can be resumed postpartum"
     ]
   },
@@ -545,11 +547,11 @@ export const OB_MCQS: McqQuestion[] = [
       "Incorrect: a fundal height at the umbilicus at only 16 weeks gestation is a significant discrepancy, not a normal finding.",
       "Incorrect: chronic hypertension would be present before pregnancy or diagnosed before 20 weeks without proteinuria or uterine size discrepancy as the key finding here.",
       "Incorrect: gestational hypertension is diagnosed after 20 weeks without proteinuria, which does not fit this presentation.",
-      "Incorrect: preeclampsia is defined as occurring after 20 weeks gestation; hypertension and proteinuria at 16 weeks with a large-for-dates uterus points instead to molar pregnancy.",
+      "Incorrect as the single best answer: preeclampsia is diagnosed after 20 weeks in a normal singleton pregnancy, so at 16 weeks with a large-for-dates uterus the mole is the better answer. Note that a molar pregnancy produces a genuine preeclampsia-like syndrome, so early hypertension and proteinuria do not so much exclude preeclampsia as mandate a search for trophoblastic disease.",
       "Correct: molar pregnancy classically causes a uterus that is large for gestational age and can present with hypertension and proteinuria before 20 weeks, which would otherwise be atypical for preeclampsia."
     ],
-    "concept": "A fundal height at the umbilicus corresponds to approximately 20 weeks gestation and serves as a useful landmark. Hypertension and proteinuria occurring before 20 weeks gestation, especially with a uterus large for dates, should raise suspicion for hydatidiform mole rather than preeclampsia, which by definition occurs after 20 weeks.",
-    "discriminator": "Onset of hypertension/proteinuria before 20 weeks gestation with a large-for-dates uterus excludes preeclampsia and points to molar pregnancy."
+    "concept": "A fundal height at the umbilicus corresponds to approximately 20 weeks gestation and serves as a useful landmark. Hypertension and proteinuria before 20 weeks, especially with a uterus large for dates, should raise suspicion for a hydatidiform mole: preeclampsia essentially never arises before 20 weeks in an otherwise normal singleton pregnancy, and gestational trophoblastic disease is the classic cause of a preeclampsia-like syndrome this early (other causes of early-onset disease include multifetal gestation and underlying renal or autoimmune disease such as antiphospholipid syndrome).",
+    "discriminator": "Preeclampsia essentially never arises before 20 weeks in an otherwise normal singleton pregnancy, so hypertension and proteinuria this early with a large-for-dates uterus should prompt a search for a hydatidiform mole, the classic cause of a preeclampsia-like syndrome before 20 weeks."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-21",
@@ -651,16 +653,16 @@ export const OB_MCQS: McqQuestion[] = [
       "HELLP syndrome"
     ],
     "answerIndex": 0,
-    "explanation": "Gestational thrombocytopenia is a benign, dilutional decline in platelet count (typically to no lower than about 100,000-150,000/uL) that occurs in an otherwise asymptomatic pregnant woman and requires no treatment.",
+    "explanation": "Gestational thrombocytopenia is a benign decline in platelet count from hemodilution and increased platelet turnover, appearing in the second half of pregnancy, usually not falling below 100,000/uL (most such counts sit between 100,000 and 150,000/uL) in an otherwise asymptomatic pregnant woman, and requiring no treatment.",
     "optionRationales": [
       "Correct: gestational thrombocytopenia is a mild, asymptomatic decline in platelets (usually staying above 100,000/uL) due to hemodilution and increased platelet turnover, and it resolves postpartum.",
       "DIC presents with coagulopathy, bleeding, and schistocytes in the setting of an inciting event (e.g., abruption, sepsis), not an isolated mild platelet decline in an asymptomatic patient.",
       "TTP presents with microangiopathic hemolytic anemia, severe thrombocytopenia, neurologic symptoms, and renal dysfunction, which are absent here.",
-      "ITP is typically more severe, often present before pregnancy or with more significant thrombocytopenia, and can cause bleeding symptoms; it is a diagnosis of exclusion, less likely than the benign gestational pattern described here.",
+      "ITP typically produces a lower platelet count, is often present before pregnancy or appears in the first trimester rather than late in gestation, and can cause bleeding or bruising as well as neonatal thrombocytopenia from transplacental antiplatelet antibodies; the mild late decline in this asymptomatic woman fits the gestational pattern.",
       "HELLP syndrome presents with hemolysis, elevated liver enzymes, and low platelets, usually accompanied by hypertension and RUQ pain, none of which are present in this patient."
     ],
-    "concept": "Platelet counts commonly decline mildly during normal pregnancy due to hemodilution and increased consumption, termed gestational thrombocytopenia when the count remains above roughly 100,000-150,000/uL in an asymptomatic patient without hypertension or other abnormal findings; this is a diagnosis of exclusion but is the most common cause of thrombocytopenia in pregnancy.",
-    "discriminator": "The absence of hypertension, elevated liver enzymes, hemolysis, or bleeding symptoms distinguishes benign gestational thrombocytopenia from pathologic causes like HELLP or ITP."
+    "concept": "Platelet counts fall mildly in normal pregnancy because of hemodilution and increased platelet turnover. Gestational thrombocytopenia is that benign pattern: an asymptomatic woman in the second half of pregnancy with a platelet count usually >=100,000/uL (most 100,000-150,000/uL), normal blood pressure, and no bleeding. It is the most common cause of thrombocytopenia in pregnancy, requires no treatment, and resolves within weeks after delivery; it is a clinical diagnosis reached by excluding preeclampsia/HELLP, ITP, and the microangiopathies.",
+    "discriminator": "A count above 100,000/uL that declined only during the second half of pregnancy, with no hypertension, hemolysis, elevated liver enzymes, or bleeding, separates benign gestational thrombocytopenia from HELLP and from ITP (which produces lower counts and typically predates pregnancy or appears in the first trimester)."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-25",
@@ -852,22 +854,23 @@ export const OB_MCQS: McqQuestion[] = [
       "Normal pregnancy with dating error"
     ],
     "answerIndex": 3,
-    "explanation": "The classic quad screen pattern of low AFP, low estriol, high hCG, and high inhibin A is associated with trisomy 21.",
+    "explanation": "The classic quad screen pattern of low AFP, low estriol, high hCG, and high inhibin A is associated with trisomy 21. Trisomy 18 instead shows low AFP, low estriol, and low hCG with a normal inhibin A.",
     "optionRationales": [
-      "Trisomy 18 classically shows all four analytes decreased (low AFP, low estriol, low hCG, low inhibin A), not an elevated hCG and inhibin A.",
+      "Trisomy 18 shows low AFP, low estriol, and low hCG with a NORMAL inhibin A, not the elevated hCG and elevated inhibin A described here.",
       "Neural tube defects are associated with an elevated, not decreased, AFP.",
       "Gastroschisis is associated with an elevated AFP, not a decreased one.",
       "Correct: low AFP with elevated hCG and elevated inhibin A, plus low estriol, is the classic quad screen pattern for Down syndrome.",
       "A dating error would not selectively alter each analyte in this specific directional pattern; the pattern described is characteristic of trisomy 21."
     ],
-    "concept": "Low maternal serum AFP is a marker for fetal aneuploidy rather than structural defects. In the classic quad screen, trisomy 21 shows low AFP, low estriol, high hCG, and high inhibin A, while trisomy 18 shows all four markers decreased.",
+    "concept": "Low maternal serum AFP is a marker for fetal aneuploidy rather than for structural defects. In the classic quad screen, trisomy 21 shows low AFP, low estriol, high hCG, and high inhibin A, while trisomy 18 shows low AFP, low estriol, and low hCG with a normal (unchanged) inhibin A.",
     "conceptRule": [
       "High AFP -> think neural tube defect, abdominal wall defect, dating error, or multiple gestation; confirm with ultrasound",
       "Low AFP + low estriol + high hCG + high inhibin A -> trisomy 21",
-      "Low AFP + low estriol + low hCG + low inhibin A -> trisomy 18",
-      "Any abnormal screen -> confirm with diagnostic testing (CVS or amniocentesis), not treat as diagnostic"
+      "Low AFP + low estriol + low hCG + normal inhibin A -> trisomy 18",
+      "Quad screen window -> 15-22 weeks (optimally 16-18 weeks); accurate dating is required before interpreting any analyte",
+      "Any abnormal screen -> confirm with diagnostic testing (CVS at 10-13 weeks, amniocentesis at >=15 weeks); screening results are never diagnostic"
     ],
-    "discriminator": "The directionality of hCG and inhibin A (elevated in trisomy 21 vs decreased in trisomy 18) distinguishes the two despite both showing low AFP and low estriol."
+    "discriminator": "hCG and inhibin A are both elevated in trisomy 21, whereas in trisomy 18 hCG is low and inhibin A is normal; both share a low AFP and low estriol."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-59",
@@ -1063,12 +1066,12 @@ export const OB_MCQS: McqQuestion[] = [
     "explanation": "Preconception evaluation for chronic hypertension should include assessment of baseline renal function (and other end-organ effects) to establish a baseline, guide medication choice, and stratify risk for superimposed preeclampsia.",
     "optionRationales": [
       "Correct: baseline renal function and end-organ assessment inform prognosis, medication safety, and monitoring plans during pregnancy.",
-      "Incorrect: low-dose aspirin for preeclampsia prophylaxis is initiated during pregnancy (typically 12-28 weeks), not at the preconception visit.",
+      "Incorrect as the baseline evaluation, but aspirin is not irrelevant here: chronic hypertension is by itself a high-risk indication for low-dose aspirin 81 mg daily, started between 12 and 28 weeks of gestation and ideally before 16 weeks. It is planned at this preconception visit and begun once she is pregnant.",
       "Incorrect: cystic fibrosis carrier screening is offered based on standard prenatal genetic screening practice, not specifically as part of chronic hypertension evaluation.",
       "Incorrect: there is no fetus present preconception, so fetal echocardiography is not applicable at this visit.",
       "Incorrect: pelvic MRI for uterine anomalies is not part of routine chronic hypertension preconception workup."
     ],
-    "concept": "Preconception counseling for chronic hypertension should include baseline assessment of renal function and end-organ status, review and adjustment of antihypertensive medications to pregnancy-safe agents, and counseling on increased risk of superimposed preeclampsia and fetal growth restriction."
+    "concept": "Preconception counseling for chronic hypertension should include baseline assessment of renal function and end-organ status, review and adjustment of antihypertensive medications to pregnancy-safe agents (labetalol or extended-release nifedipine first-line), counseling on the increased risk of superimposed preeclampsia and fetal growth restriction, and a plan to begin low-dose aspirin 81 mg daily once pregnant, since chronic hypertension alone qualifies her as high risk."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-39",
@@ -1144,25 +1147,26 @@ export const OB_MCQS: McqQuestion[] = [
     "id": "ob-prenatal-care-normal-pregnancy-42",
     "system": "Prenatal Care & Normal Pregnancy",
     "topic": "Quad screen and elevated AFP workup",
-    "stem": "A 30-year-old woman at 16 weeks gestation undergoes a quad screen that shows an alpha-fetoprotein level 2.5 times the upper limit of normal, with normal beta-hCG, estriol, and inhibin A. Which of the following is the most appropriate next step?",
+    "stem": "A 30-year-old woman at 16 weeks gestation undergoes a quad screen that shows an alpha-fetoprotein level of 2.5 multiples of the median (MoM) for gestational age, with normal beta-hCG, estriol, and inhibin A. Which of the following is the most appropriate next step?",
     "options": [
-      "Order fetal echocardiography",
       "Reassure the patient that this is a normal variant requiring no further workup",
-      "Immediate amniocentesis for AFP and acetylcholinesterase",
       "Repeat the quad screen in 2 weeks",
+      "Immediate amniocentesis for AFP and acetylcholinesterase",
+      "Order fetal echocardiography",
       "Repeat ultrasound to confirm gestational age"
     ],
     "answerIndex": 4,
     "explanation": "The most common cause of an abnormal AFP result is a dating error, so the first step is to repeat ultrasound to confirm gestational age (and rule out twins or fetal demise) before proceeding to more invasive testing.",
     "optionRationales": [
-      "Fetal echocardiography is not the standard next step for an isolated elevated AFP; ultrasound for anatomic survey and dating is performed first.",
-      "An AFP significantly elevated above the normal range should not be dismissed without further evaluation, as it can indicate neural tube defects, abdominal wall defects, or multiple gestation.",
-      "Amniocentesis is reserved for cases where ultrasound does not identify an explanation (such as a neural tube defect) for the elevated AFP; it is not the first step.",
+      "An AFP elevated to this degree should not be dismissed without further evaluation, as it can indicate a neural tube defect, an abdominal wall defect, multiple gestation, or simply inaccurate dating.",
       "Repeating the same biochemical test does not address the most likely explanation (dating error) and delays appropriate workup.",
+      "Amniocentesis is reserved for cases where ultrasound does not identify an explanation (such as a neural tube defect) for the elevated AFP; it is not the first step.",
+      "Fetal echocardiography is not the standard next step for an isolated elevated AFP; ultrasound for anatomic survey and dating is performed first.",
       "Correct: because dating error is the most common cause of an abnormal AFP, ultrasound should be repeated first to confirm accurate gestational age, multiple gestation, and fetal viability."
     ],
     "concept": "An abnormal AFP result on quad screening is most commonly due to a dating error, so ultrasound to confirm gestational age (and evaluate for multiple gestation or fetal demise) is the appropriate first step. If ultrasound identifies a structural defect (e.g., neural tube defect, abdominal wall defect), it is considered diagnostic; if no cause is found, amniocentesis for AFP and acetylcholinesterase can be pursued.",
     "conceptRule": [
+      "MSAFP is reported in multiples of the median (MoM), never as a multiple of an upper limit of normal: ≥2.0-2.5 MoM (lab-specific cutoff) -> elevated, requires workup",
       "Abnormal AFP -> first repeat ultrasound to confirm dates/rule out twins or demise",
       "Structural defect seen on US -> ultrasound is diagnostic, no amniocentesis needed",
       "No defect seen on US but AFP still abnormal -> amniocentesis for AFP + acetylcholinesterase",
@@ -1364,15 +1368,15 @@ export const OB_MCQS: McqQuestion[] = [
       "Methyldopa"
     ],
     "answerIndex": 4,
-    "explanation": "Methyldopa, along with labetalol and nifedipine, is a well-established, pregnancy-compatible antihypertensive with a long track record of fetal safety.",
+    "explanation": "Methyldopa is pregnancy-compatible and may be continued, although ACOG's first-line agents for hypertension in pregnancy are labetalol and extended-release nifedipine. Every other option listed is teratogenic or is not appropriate as initial therapy in pregnancy.",
     "optionRationales": [
       "Incorrect: thiazide diuretics are not first-line in pregnancy and are generally avoided as initial therapy due to concerns about volume contraction affecting placental perfusion.",
       "Incorrect: spironolactone has anti-androgenic effects and is avoided in pregnancy due to concern for fetal genital anomalies.",
       "Incorrect: losartan is an ARB with the same class-related teratogenic risk as ACE inhibitors.",
       "Incorrect: lisinopril is an ACE inhibitor and is teratogenic; it must be discontinued before conception.",
-      "Correct: methyldopa has an extensive history of safe use in pregnancy and is a preferred preconception/pregnancy agent."
+      "Correct: methyldopa has a long record of safe use in pregnancy and can be continued, though labetalol and extended-release nifedipine are the current first-line agents; methyldopa is a weaker antihypertensive and is now regarded as an alternative."
     ],
-    "concept": "Pregnancy-compatible antihypertensives include methyldopa, labetalol, and nifedipine. ACE inhibitors, ARBs, direct renin inhibitors, and spironolactone are contraindicated due to teratogenic or fetal risk."
+    "concept": "First-line antihypertensives for pregnancy are labetalol and extended-release nifedipine; methyldopa is a pregnancy-safe alternative with the longest safety record but weaker blood pressure control. ACE inhibitors, ARBs, direct renin inhibitors, and spironolactone are avoided because of teratogenic or fetal risk, and thiazides are not used as initial therapy."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-50",
@@ -1530,15 +1534,15 @@ export const OB_MCQS: McqQuestion[] = [
       "Warfarin should be transitioned to a pregnancy-compatible anticoagulant and valproic acid switched to a lower-risk antiepileptic before conception"
     ],
     "answerIndex": 4,
-    "explanation": "Warfarin is associated with embryopathy (nasal hypoplasia, skeletal defects) and should be transitioned to low molecular weight heparin, and valproic acid carries high risk of neural tube defects and should be switched to a lower-risk antiepileptic (e.g., lamotrigine or levetiracetam) before conception when clinically feasible.",
+    "explanation": "Warfarin causes embryopathy (nasal hypoplasia, stippled epiphyses) with first-trimester exposure, and valproic acid carries a high risk of neural tube defects and neurodevelopmental harm, so both regimens should be revisited before conception rather than carried unchanged into pregnancy. Valproate is switched to a lower-risk antiepileptic (e.g., lamotrigine or levetiracetam). Anticoagulation for a mechanical valve, however, is individualized with cardiology rather than switched wholesale: warfarin is recommended in the second and third trimesters, and first-trimester options are continued warfarin at <=5 mg/day or dose-adjusted LMWH with anti-Xa monitoring.",
     "optionRationales": [
       "Warfarin is also teratogenic (warfarin embryopathy) and requires transition, so this statement is incomplete.",
       "Abruptly stopping either medication without substitution risks valve thrombosis or breakthrough seizures, both dangerous; safer alternatives should be substituted, not simply withdrawn.",
       "Both drugs carry well-established teratogenic risk and should not be continued unchanged if a safer alternative exists.",
       "Valproic acid is strongly associated with neural tube defects and also requires transition, so this statement is incomplete.",
-      "Correct: both agents are teratogenic and preconception counseling should address transitioning each to a safer alternative."
+      "Correct: both agents carry established teratogenic risk and preconception counseling should plan a safer regimen for each. With a mechanical valve the anticoagulation change is not a wholesale switch to LMWH: first-trimester options are dose-adjusted LMWH with anti-Xa monitoring or continued warfarin at <=5 mg/day, and warfarin is used in the second and third trimesters under cardiology co-management."
     ],
-    "concept": "Preconception counseling should proactively identify chronic teratogenic medications (anticoagulants, antiepileptics, ACE inhibitors, isotretinoin) and coordinate a switch to safer alternatives before conception whenever the underlying condition allows."
+    "concept": "Preconception counseling should proactively identify chronic teratogenic medications (anticoagulants, antiepileptics, ACE inhibitors, isotretinoin) and coordinate a switch to safer alternatives before conception whenever the underlying condition allows. A mechanical heart valve is the classic exception to a simple switch: warfarin is recommended in the second and third trimesters, and first-trimester options are continued warfarin (dose <=5 mg/day) or dose-adjusted LMWH with anti-Xa monitoring, because LMWH dosed without anti-Xa guidance carries a documented risk of valve thrombosis and maternal death."
   },
   {
     "id": "ob-prenatal-care-normal-pregnancy-57",
@@ -1553,7 +1557,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Aplasia cutis congenita"
     ],
     "answerIndex": 2,
-    "explanation": "Warfarin embryopathy classically presents with nasal hypoplasia and stippled epiphyses (chondrodysplasia punctata) when exposure occurs during the first trimester; heparin or low-molecular-weight heparin should be substituted during pregnancy.",
+    "explanation": "Warfarin embryopathy classically presents with nasal hypoplasia and stippled epiphyses (chondrodysplasia punctata) when exposure occurs during the first trimester. In most indications warfarin is replaced by heparin or LMWH in pregnancy, but with a mechanical valve the anticoagulation plan is individualized with cardiology rather than switched wholesale.",
     "optionRationales": [
       "Incorrect: Ebstein anomaly is associated with lithium exposure during pregnancy, not warfarin.",
       "Incorrect: neural tube defects are classically associated with valproate exposure, not warfarin.",
@@ -1561,7 +1565,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Incorrect: limb reduction defects are classically associated with thalidomide, not warfarin.",
       "Incorrect: aplasia cutis congenita is associated with methimazole exposure in the first trimester, not warfarin."
     ],
-    "concept": "Warfarin crosses the placenta and is teratogenic, particularly in the first trimester, causing warfarin embryopathy characterized by nasal hypoplasia and stippled epiphyses. Anticoagulation in pregnancy should be managed with heparin or low-molecular-weight heparin, which do not cross the placenta.",
+    "concept": "Warfarin crosses the placenta and is teratogenic, particularly with first-trimester exposure, causing warfarin embryopathy characterized by nasal hypoplasia and stippled epiphyses. Anticoagulation is switched to heparin/LMWH (which do not cross the placenta) in most pregnancies, but a mechanical heart valve is a major exception: warfarin is recommended in the second and third trimesters, and first-trimester options are continued warfarin at a dose <=5 mg/day or dose-adjusted LMWH with anti-Xa monitoring, chosen in co-management with cardiology, because LMWH dosed without anti-Xa guidance carries a documented risk of valve thrombosis and maternal death.",
     "discriminator": "Nasal hypoplasia with stippled (punctate) epiphyses is the classic warfarin-specific pattern, distinguishing it from other anticoagulant or teratogen exposures."
   },
   {
@@ -1604,15 +1608,21 @@ export const OB_MCQS: McqQuestion[] = [
       "No risk of malignant transformation"
     ],
     "answerIndex": 3,
-    "explanation": "Complete moles, being entirely paternal in origin with more extensive trophoblastic proliferation, carry a substantially higher risk of progression to malignant gestational trophoblastic neoplasia (including choriocarcinoma) than partial moles.",
+    "explanation": "Complete moles, being entirely paternal in origin with diffuse trophoblastic proliferation, carry a substantially higher risk of persistent gestational trophoblastic neoplasia (about 15-20%, most often invasive mole) and of choriocarcinoma (roughly 2-3%) than partial moles, which progress in about 1-5% and rarely to choriocarcinoma.",
     "optionRationales": [
       "This reverses the relationship; complete moles have a higher, not lower, risk of malignant transformation compared to partial moles.",
       "Rh status is unrelated to the risk of malignant transformation of a mole; that risk instead relates to the karyotype/type of mole.",
       "The risks are not equal; complete moles carry a distinctly higher malignant potential than partial moles.",
-      "Complete moles have diffuse trophoblastic hyperplasia and are entirely paternal in origin, conferring a meaningfully higher risk (roughly 15-20%) of progressing to persistent or malignant GTN compared to partial moles (a few percent).",
+      "Correct: complete moles have diffuse trophoblastic hyperplasia and are entirely paternal in origin. About 15-20% progress to persistent gestational trophoblastic neoplasia, most often invasive mole, and roughly 2-3% develop choriocarcinoma; partial moles progress in only about 1-5%, and choriocarcinoma after a partial mole is rare.",
       "Both complete and partial moles carry some risk of malignant transformation, so there is not zero risk."
     ],
-    "concept": "The type of hydatidiform mole predicts malignant potential: complete moles have a higher risk of progressing to persistent gestational trophoblastic disease or choriocarcinoma than partial moles, which is why all molar pregnancies require rigorous beta-hCG surveillance after evacuation regardless of type."
+    "concept": "The type of hydatidiform mole predicts malignant potential: about 15-20% of complete moles develop persistent gestational trophoblastic neoplasia - usually invasive mole, with choriocarcinoma in roughly 2-3% - versus about 1-5% of partial moles. Because neither risk is zero, every molar pregnancy needs serial beta-hCG surveillance after evacuation regardless of type.",
+    "conceptRule": [
+      "Complete mole -> 15-20% persistent GTN (mostly invasive mole), ~2-3% choriocarcinoma",
+      "Partial mole -> ~1-5% persistent GTN, choriocarcinoma rare",
+      "After evacuation -> weekly beta-hCG until undetectable on 3 consecutive weeks, then monthly monitoring with reliable contraception throughout",
+      "Plateau or rise in beta-hCG after evacuation -> diagnose GTN and stage/treat with chemotherapy"
+    ]
   },
   {
     "id": "ob-early-pregnancy-complications-3",
@@ -1699,23 +1709,24 @@ export const OB_MCQS: McqQuestion[] = [
       "Empiric methotrexate administration"
     ],
     "answerIndex": 2,
-    "explanation": "At a β-hCG below the discriminatory zone (~3500 mIU/mL), an empty uterus on ultrasound does not confirm ectopic or nonviable pregnancy; serial β-hCG (expecting ≥35% rise in 48 hours) and repeat imaging are needed before intervening.",
+    "explanation": "At a beta-hCG below the discriminatory threshold of 3500 mIU/mL, an empty uterus on ultrasound does not confirm ectopic or nonviable pregnancy: 2200 mIU/mL is below 3500, so serial beta-hCG 48 hours apart (expecting a >=35% rise) with repeat transvaginal ultrasound is needed before any intervention.",
     "optionRationales": [
-      "D&C is used when location of pregnancy is unknown after failed serial hCG rise, not as a first step here.",
+      "Uterine aspiration has a role in a pregnancy of unknown location - to look for chorionic villi once the hCG pattern shows the pregnancy is nonviable - but not as a first step in a stable patient whose pregnancy may still be viable.",
       "Bleeding and an empty uterus above baseline risk warrant further workup, not reassurance alone.",
-      "Correct: below the discriminatory threshold, a normal early intrauterine pregnancy may simply not yet be visible, so serial hCG and repeat imaging avoid inappropriately treating a wanted viable pregnancy as ectopic.",
+      "Correct: 2200 mIU/mL is below the 3500 mIU/mL discriminatory threshold, so a normal early intrauterine pregnancy may simply not be visible yet; serial hCG and repeat imaging avoid treating a wanted viable pregnancy as an ectopic.",
       "Too invasive and premature in a stable patient with no diagnosis yet; laparoscopy is reserved for suspected rupture or hemodynamic instability.",
       "Methotrexate should only be given once ectopic pregnancy is confirmed or highly suspected, not empirically in an undiagnosed stable patient."
     ],
-    "concept": "Below the β-hCG discriminatory zone (roughly 1500-3500 mIU/mL, assay-dependent), a normal early intrauterine pregnancy may not yet be visible on ultrasound, so an empty uterus is not diagnostic of ectopic or failed pregnancy. Serial β-hCG measured 48 hours apart (expecting a ≥35% rise in a normal early pregnancy) combined with repeat ultrasound is the appropriate next step in a hemodynamically stable patient.",
+    "concept": "ACOG uses a single beta-hCG discriminatory threshold of 3500 mIU/mL, chosen deliberately high so that a viable intrauterine pregnancy is not interrupted. Below 3500 an empty uterus is uninformative, because a normal early intrauterine pregnancy may not yet be visible, so serial beta-hCG 48 hours apart (expecting a >=35% rise) plus repeat transvaginal ultrasound is the next step in a stable patient. At or above 3500 with an empty uterus, a normal singleton intrauterine pregnancy is very unlikely and the workup shifts toward establishing nonviability and treating.",
     "conceptRule": [
-      "β-hCG < discriminatory zone + empty uterus -> repeat β-hCG in 48h",
-      "β-hCG > discriminatory zone (~1500-3500) + empty uterus -> concerning for ectopic, repeat TVUS/hCG in 2 days",
-      "Normal early IUP -> β-hCG rises ≥35% every 48 hours",
-      "Slower-than-expected rise -> ectopic or nonviable pregnancy",
-      "Faster-than-expected rise -> consider molar pregnancy"
+      "beta-hCG <3500 mIU/mL + empty uterus -> viable early IUP still possible; repeat beta-hCG in 48h with repeat TVUS before any intervention",
+      "beta-hCG >=3500 mIU/mL + empty uterus -> normal singleton IUP very unlikely; manage as a pregnancy of unknown location with serial hCG, then uterine aspiration for chorionic villi or presumptive ectopic treatment once a nonviable pattern is documented",
+      "Normal early IUP -> beta-hCG rises >=35% every 48 hours",
+      "Rise <35% in 48h or a plateau -> ectopic or nonviable pregnancy",
+      "Rise faster than expected -> consider molar pregnancy",
+      "Hemodynamic instability or peritoneal signs -> surgery regardless of the hCG level"
     ],
-    "discriminator": "The β-hCG level (2200) is below the discriminatory zone, so a visualized empty uterus cannot yet distinguish early normal pregnancy from ectopic/nonviable pregnancy."
+    "discriminator": "2200 mIU/mL is below the 3500 mIU/mL discriminatory threshold, so the empty uterus cannot yet separate an early normal intrauterine pregnancy from an ectopic or failing one - which is why the answer is serial testing rather than any definitive intervention."
   },
   {
     "id": "ob-early-pregnancy-complications-8",
@@ -1730,16 +1741,22 @@ export const OB_MCQS: McqQuestion[] = [
       "Laboratory error requiring immediate repeat testing"
     ],
     "answerIndex": 0,
-    "explanation": "A normal early intrauterine pregnancy shows a serum β-hCG rise of at least 53% every 48 hours; a rise from 900 to 1050 (~17%) is subnormal and suggests an ectopic or nonviable (failing) pregnancy.",
+    "explanation": "The slowest 48-hour rise in serum β-hCG still compatible with a viable intrauterine pregnancy is about 35% (the average rise is closer to 50-60%). A rise from 900 to 1050 mIU/mL is only ~17%, which is subnormal and points to an ectopic or nonviable (failing) pregnancy.",
     "optionRationales": [
       "Correct: a slower-than-expected rise in β-hCG is classic for an ectopic pregnancy or an early pregnancy loss.",
-      "A normal IUP requires a rise of ≥53% every ~2 days in the first 10 weeks; this rise is too slow.",
+      "A viable IUP rises by at least ~35% over 48 hours, with a mean rise nearer 50-60%; a 17% rise is too slow to be a normal intrauterine pregnancy.",
       "Twin gestation also causes a faster-than-normal rise in β-hCG, not a slow rise.",
       "Molar pregnancy and choriocarcinoma cause a β-hCG rise that is faster than normal, not slower.",
       "The trend itself (measured 48 hours apart per protocol) is diagnostic; there is no indication the value is spurious."
     ],
-    "concept": "Serum β-hCG normally rises by at least 53% every 48 hours during the first 10 weeks of a viable intrauterine pregnancy. A slower rise suggests an ectopic or nonviable pregnancy, while an abnormally rapid rise suggests a molar pregnancy/choriocarcinoma or a multiple gestation.",
-    "discriminator": "A subnormal (<53%) 48-hour rise points to ectopic/nonviable pregnancy, whereas a supranormal rise points to molar pregnancy or twins."
+    "concept": "In a viable early intrauterine pregnancy, serum β-hCG rises by a minimum of about 35% over 48 hours (ACOG Practice Bulletin 193, from the Barnhart/Seeber data); the mean rise is closer to 50-60%, and the older 53%/66% figures were means rather than minimums, so treating them as requirements misclassifies normal pregnancies as abnormal. A rise slower than ~35% suggests an ectopic or nonviable pregnancy, while an abnormally rapid rise or a level far higher than expected for gestational age suggests molar pregnancy/choriocarcinoma or a multiple gestation. hCG kinetics never localize a pregnancy on their own — an abnormal trend directs further ultrasound and surveillance, not immediate treatment.",
+    "conceptRule": [
+      "48-hour β-hCG rise ≥35% -> within the range of a viable IUP -> continue surveillance until ultrasound is diagnostic",
+      "48-hour β-hCG rise <35% -> abnormal pregnancy of unknown location (ectopic or early loss) -> repeat ultrasound/hCG; do not give methotrexate or aspirate on the trend alone",
+      "β-hCG above the discriminatory zone (~3,500 mIU/mL) with no intrauterine gestational sac -> presume abnormal (ectopic or nonviable) pregnancy",
+      "Rise faster than expected or level disproportionate to dates -> consider molar pregnancy or multiple gestation -> ultrasound"
+    ],
+    "discriminator": "A subnormal 48-hour rise (<~35%) points to ectopic/nonviable pregnancy, whereas a supranormal rise points to molar pregnancy or twins."
   },
   {
     "id": "ob-early-pregnancy-complications-9",
@@ -1762,7 +1779,11 @@ export const OB_MCQS: McqQuestion[] = [
       "Isolated free fluid can occur with a ruptured corpus luteum cyst or normal early pregnancy and is less specific than an actual adnexal mass.",
       "Correct: a mass separate from the ovary with no intrauterine pregnancy is the classic and most specific sonographic sign of ectopic pregnancy."
     ],
-    "concept": "Prior pelvic inflammatory disease, tubal surgery, prior ectopic pregnancy, and IUD use are major risk factors for ectopic pregnancy. On ultrasound, the most specific finding is an adnexal mass separate from the ovary in the absence of an intrauterine gestational sac.",
+    "concept": "The major risk factors for ectopic pregnancy are prior pelvic inflammatory disease or salpingitis, a previous ectopic pregnancy, tubal surgery including tubal ligation, and conception by assisted reproductive technology. An IUD is not a risk factor - it lowers the absolute risk of ectopic pregnancy because it prevents pregnancy in the first place - but a pregnancy that does occur with an IUD in situ is more likely to be ectopic, so any positive test in an IUD user needs prompt localization. On ultrasound, the most specific finding is an adnexal mass separate from the ovary in the absence of an intrauterine gestational sac.",
+    "conceptRule": [
+      "Prior PID, prior ectopic, tubal surgery/ligation, or ART conception -> high pretest probability of ectopic; localize the pregnancy early",
+      "Positive pregnancy test with an IUD in situ -> absolute ectopic risk is low, but the proportion of ectopics is high; obtain prompt TVUS to localize"
+    ],
     "discriminator": "The adnexal mass being distinctly separate from the ovary, not simply free fluid or a corpus luteum cyst, is what makes it specific for ectopic pregnancy."
   },
   {
@@ -2200,29 +2221,31 @@ export const OB_MCQS: McqQuestion[] = [
     "id": "ob-early-pregnancy-complications-27",
     "system": "Early Pregnancy Complications",
     "topic": "Rh immunoglobulin in bleeding",
-    "stem": "A 25-year-old woman, blood type O negative, presents at 8 weeks gestation with light vaginal spotting. Ultrasound confirms a viable intrauterine pregnancy with a closed cervical os. In addition to routine follow-up, which of the following is most appropriate at this visit?",
+    "stem": "A 25-year-old woman, blood type O negative, presents at 16 weeks gestation with light vaginal spotting. Ultrasound confirms a viable intrauterine pregnancy with a closed cervical os. In addition to routine follow-up, which of the following is most appropriate at this visit?",
     "options": [
-      "Schedule elective termination",
       "Perform immediate dilation and curettage",
+      "Start empiric antibiotics",
       "Administer Rh(D) immunoglobulin",
-      "Begin low-dose aspirin",
-      "Start empiric antibiotics"
+      "Schedule elective termination",
+      "Begin low-dose aspirin"
     ],
     "answerIndex": 2,
-    "explanation": "Rh-negative women with any vaginal bleeding in pregnancy should receive Rh(D) immunoglobulin to prevent alloimmunization from potential fetomaternal hemorrhage.",
+    "explanation": "An Rh(D)-negative, unsensitized patient who bleeds at or after 12 weeks of gestation should receive Rh(D) immune globulin 300 mcg IM within 72 hours to prevent alloimmunization. Before 12 weeks, ACOG's 2024 update no longer recommends it after spontaneous or induced abortion, and it is optional at best for threatened abortion.",
     "optionRationales": [
+      "D&C is not indicated for a viable pregnancy with a closed os; this is a threatened pregnancy loss managed expectantly.",
+      "There are no signs of infection (fever, uterine tenderness) to warrant empiric antibiotics.",
+      "Correct: bleeding at 16 weeks in an Rh(D)-negative, unsensitized patient is an indication for Rh(D) immune globulin 300 mcg within 72 hours, in addition to her routine dose at 28 weeks.",
       "There is no indication for termination in a patient desiring pregnancy continuation with a viable, closed-os threatened abortion.",
-      "D&C is not indicated for a viable pregnancy with a closed os; this is a threatened abortion managed expectantly.",
-      "Correct: any bleeding episode in an Rh-negative, unsensitized patient warrants Rh(D) immunoglobulin to prevent maternal alloimmunization.",
-      "Low-dose aspirin is used for preeclampsia prophylaxis in high-risk patients, not indicated for first-trimester bleeding management.",
-      "There are no signs of infection (fever, uterine tenderness) to warrant empiric antibiotics."
+      "Low-dose aspirin is for preeclampsia prophylaxis in patients with a high-risk indication, none of which is described here, and it is not a treatment for bleeding."
     ],
-    "concept": "Rh(D)-negative patients who experience any vaginal bleeding during pregnancy (or undergo an invasive procedure) should receive Rh(D) immunoglobulin to prevent maternal sensitization to fetal Rh-positive blood, which could cause hemolytic disease in current or future pregnancies.",
+    "concept": "Rh(D)-negative, unsensitized patients receive Rh(D) immune globulin for bleeding or uterine instrumentation at or after 12 weeks of gestation, routinely at 28 weeks, and again postpartum if the newborn is Rh(D)-positive. ACOG's 2024 clinical practice update states that Rh(D) immune globulin is not recommended for spontaneous or induced abortion or early pregnancy loss before 12 weeks, because fetomaternal hemorrhage volumes at that gestational age are far below the sensitizing dose (Rh testing for that indication is likewise unnecessary); for threatened abortion before 12 weeks it remains optional.",
     "conceptRule": [
-      "Rh-negative + unsensitized + any bleeding episode -> give Rh(D) immunoglobulin",
-      "Rh-negative + routine antepartum prophylaxis -> RhoGAM at 28 weeks and again postpartum if infant is Rh-positive"
+      "Rh(D)-negative + unsensitized + bleeding or uterine instrumentation at >=12 weeks -> give Rh(D) immune globulin 300 mcg within 72 hours",
+      "Rh(D)-negative + spontaneous or induced abortion at <12 weeks -> Rh(D) immune globulin not recommended (ACOG 2024); optional for threatened abortion at <12 weeks",
+      "Rh(D)-negative + unsensitized -> routine 300 mcg at 28 weeks, repeated postpartum if the newborn is Rh(D)-positive",
+      "Suspected large fetomaternal hemorrhage (abdominal trauma, abruption) -> quantify with Kleihauer-Betke or flow cytometry and dose accordingly"
     ],
-    "discriminator": "The patient's Rh-negative status, not the bleeding severity, is what specifically triggers the need for Rh(D) immunoglobulin."
+    "discriminator": "It is Rh(D)-negative status combined with bleeding at or beyond 12 weeks that triggers immune globulin; the same spotting before 12 weeks would not be an indication under current ACOG guidance."
   },
   {
     "id": "ob-early-pregnancy-complications-28",
@@ -2334,18 +2357,24 @@ export const OB_MCQS: McqQuestion[] = [
       "Emergency cerclage",
       "Misoprostol administration",
       "Vacuum aspiration",
-      "Bed rest and expectant management with reassurance"
+      "Expectant management with reassurance and repeat ultrasound"
     ],
     "answerIndex": 4,
-    "explanation": "A threatened abortion is defined as vaginal bleeding with a closed cervical os and a viable intrauterine pregnancy; management is conservative (pelvic rest, reassurance, and observation), since many of these pregnancies continue normally.",
+    "explanation": "A threatened abortion is vaginal bleeding with a closed cervical os and a viable intrauterine pregnancy; management is expectant — reassurance, anticipatory guidance about what bleeding to report, and a follow-up ultrasound — because most of these pregnancies continue normally and no intervention has been shown to prevent loss.",
     "optionRationales": [
       "Methotrexate is used to treat ectopic pregnancy, not an intrauterine pregnancy with bleeding.",
       "Cerclage is used for cervical insufficiency (painless dilation without contractions/bleeding at a later gestational age), not for a threatened abortion.",
       "Misoprostol is used to complete an already nonviable or incomplete pregnancy loss, not a viable pregnancy with a closed cervix.",
       "Vacuum aspiration is used for confirmed pregnancy loss (inevitable/incomplete abortion), not for a threatened abortion with a live, closed-cervix pregnancy.",
-      "Correct: with a closed os and viable pregnancy, conservative management with rest and reassurance is appropriate."
+      "Correct: with a closed os and documented cardiac activity, expectant management with reassurance and a repeat ultrasound is appropriate. Note what is deliberately absent — bed rest is not part of management, because it does not reduce the risk of loss."
     ],
-    "concept": "Threatened abortion is vaginal bleeding in early pregnancy with a closed cervical os and a viable intrauterine pregnancy on ultrasound. It is managed expectantly, since it does not necessarily progress to pregnancy loss.",
+    "concept": "Threatened abortion is vaginal bleeding in early pregnancy with a closed cervical os and a viable intrauterine pregnancy on ultrasound; roughly half of these pregnancies continue, so it is managed expectantly with reassurance and follow-up ultrasound. A commonly tested point is what NOT to do: bed rest and pelvic rest do not reduce the risk of loss and should not be recommended — bed rest also adds real harm (VTE risk, deconditioning, lost income). Rh(D)-negative patients should have Rh status addressed per institutional protocol, and worsening pain or heavy bleeding warrants reassessment.",
+    "conceptRule": [
+      "Bleeding + closed os + live intrauterine pregnancy -> threatened abortion -> expectant management, reassurance, repeat ultrasound",
+      "Bed rest or pelvic rest prescribed for threatened abortion -> no reduction in pregnancy loss (and adds VTE/deconditioning risk) -> do not recommend",
+      "Bleeding + open os or products at the os -> inevitable/incomplete abortion -> expectant, misoprostol, or uterine aspiration",
+      "Bleeding + closed os + no intrauterine pregnancy seen with hCG above the discriminatory zone -> evaluate for ectopic pregnancy"
+    ],
     "discriminator": "A closed cervical os with confirmed fetal cardiac activity distinguishes threatened abortion from inevitable or incomplete abortion, where the os is open."
   },
   {
@@ -2647,11 +2676,14 @@ export const OB_MCQS: McqQuestion[] = [
       "Correct: hypertension identified before 20 weeks gestation is classified as chronic hypertension, even if first discovered during early prenatal care.",
       "Eclampsia requires a seizure, which is not present."
     ],
-    "concept": "Chronic hypertension in pregnancy is hypertension present before pregnancy or diagnosed before 20 weeks gestation. Gestational hypertension arises after 20 weeks without proteinuria/end-organ damage, and preeclampsia is gestational hypertension plus proteinuria or end-organ dysfunction. Chronic hypertension increases the risk of superimposed preeclampsia.",
+    "concept": "Chronic hypertension in pregnancy is hypertension present before pregnancy or diagnosed before 20 weeks gestation. Gestational hypertension arises after 20 weeks without proteinuria/end-organ damage, and preeclampsia is gestational hypertension plus proteinuria or end-organ dysfunction. Chronic hypertension increases the risk of superimposed preeclampsia, fetal growth restriction, and abruption. Since the CHAP trial and the resulting ACOG 2022 practice advisory, chronic hypertension in pregnancy is treated rather than observed: start or continue an antihypertensive at a sustained BP ≥140/90 mmHg and treat to a target below 140/90, using labetalol or extended-release nifedipine (methyldopa is an alternative) and stopping ACE inhibitors and ARBs because of fetal renal toxicity. Severe-range BP (≥160 systolic or ≥110 diastolic) sustained for 15 minutes or more is a hypertensive emergency requiring treatment within 30-60 minutes with IV labetalol, IV hydralazine, or oral immediate-release nifedipine, plus magnesium sulfate for seizure prophylaxis when preeclampsia with severe features is suspected. Low-dose aspirin 81 mg daily is also indicated from 12-28 weeks (ideally before 16 weeks) for preeclampsia prophylaxis in chronic hypertension.",
     "conceptRule": [
       "HTN before pregnancy or <20 wks -> chronic hypertension",
       "New HTN ≥20 wks, no proteinuria/end-organ damage -> gestational hypertension",
-      "New HTN ≥20 wks + proteinuria or end-organ dysfunction -> preeclampsia"
+      "New HTN ≥20 wks + proteinuria or end-organ dysfunction -> preeclampsia",
+      "Chronic HTN in pregnancy, sustained BP ≥140/90 -> start/continue labetalol or extended-release nifedipine, target <140/90 (ACOG 2022, post-CHAP); stop ACE inhibitors/ARBs",
+      "Severe-range BP ≥160/110 sustained ≥15 min -> IV labetalol, IV hydralazine, or oral immediate-release nifedipine within 30-60 min",
+      "Chronic HTN (a high-risk factor) -> low-dose aspirin 81 mg daily started at 12-28 wks, ideally before 16 wks, continued to delivery"
     ],
     "discriminator": "Gestational age at onset (<20 weeks vs ≥20 weeks) is the key feature separating chronic hypertension from gestational hypertension/preeclampsia."
   },
@@ -2802,19 +2834,19 @@ export const OB_MCQS: McqQuestion[] = [
       "Overt (pregestational) diabetes is diagnosed"
     ],
     "answerIndex": 1,
-    "explanation": "Gestational diabetes is diagnosed on the 100-gram 3-hour OGTT when 2 or more of the four values (fasting >95, 1-hr >180, 2-hr >155, 3-hr >140 mg/dL) are abnormal; here fasting (98) and 1-hour (185) are both elevated.",
+    "explanation": "Gestational diabetes is diagnosed on the 100-gram 3-hour OGTT when 2 or more of the four values (fasting ≥95, 1-hr ≥180, 2-hr ≥155, 3-hr ≥140 mg/dL by Carpenter-Coustan) meet or exceed threshold; here fasting (98) and 1-hour (185) are both elevated.",
     "optionRationales": [
-      "Two values exceed the diagnostic thresholds (fasting >95 and 1-hour >180), so this is not a normal result.",
-      "Correct: fasting (98 >95) and 1-hour (185 >180) are both abnormal, meeting the criterion of ≥2 abnormal values for GDM diagnosis.",
+      "Two values meet or exceed the diagnostic thresholds (fasting ≥95 and 1-hour ≥180), so this is not a normal result.",
+      "Correct: fasting (98, threshold ≥95) and 1-hour (185, threshold ≥180) are both abnormal, meeting the criterion of 2 or more abnormal values for a GDM diagnosis.",
       "'Impaired glucose tolerance' with a repeat test is not the standard diagnostic category used for the 3-hour OGTT in pregnancy.",
       "The test is technically valid; the results simply meet diagnostic criteria for gestational diabetes.",
       "Overt diabetes would require fasting glucose ≥126 mg/dL or random glucose ≥200 mg/dL with symptoms, or an elevated A1c; this fasting value does not meet that threshold."
     ],
-    "concept": "The 100-gram 3-hour OGTT diagnoses gestational diabetes when at least 2 of the 4 measured values (fasting, 1-hour, 2-hour, 3-hour) exceed threshold. Insulin is preferred for management because doses can be more easily titrated around labor compared with oral agents.",
+    "concept": "The 100-gram 3-hour OGTT (Carpenter-Coustan criteria) diagnoses gestational diabetes when at least 2 of the 4 measured values (fasting, 1-hour, 2-hour, 3-hour) meet or exceed threshold. Insulin is the preferred pharmacotherapy when nutritional therapy and exercise fail to achieve glycemic targets, because it does not cross the placenta; metformin and glyburide both cross the placenta, have limited long-term offspring data, and are second-line.",
     "conceptRule": [
-      "100-g 3-hr OGTT thresholds: fasting >95, 1-hr >180, 2-hr >155, 3-hr >140 mg/dL",
+      "100-g 3-hr OGTT (Carpenter-Coustan) thresholds: fasting ≥95, 1-hr ≥180, 2-hr ≥155, 3-hr ≥140 mg/dL - a value that meets or exceeds threshold is abnormal",
       "≥2 abnormal values -> gestational diabetes diagnosed",
-      "Management -> insulin preferred (easier titration around labor)"
+      "Nutritional therapy/exercise fails -> insulin first line because it does not cross the placenta; metformin and glyburide cross the placenta and are second-line"
     ],
     "discriminator": "Meeting or exceeding 2 (not just 1) of the 4 threshold values on the 3-hour test is what confirms the diagnosis, distinguishing it from an isolated abnormal value."
   },
@@ -2975,19 +3007,19 @@ export const OB_MCQS: McqQuestion[] = [
       "cART should be discontinued now that the viral load is undetectable"
     ],
     "answerIndex": 2,
-    "explanation": "When viral load is under 50 copies/mL with good adherence, intrapartum IV zidovudine can be omitted and vaginal delivery is appropriate.",
+    "explanation": "For a patient on ART with HIV RNA ≤1000 copies/mL near delivery - here fully suppressed - intrapartum IV zidovudine is not required and vaginal delivery is appropriate.",
     "optionRationales": [
-      "IV zidovudine can be safely omitted specifically when the viral load is <50 copies/mL with good adherence; it is not a universal requirement in that scenario.",
+      "IV zidovudine is not a universal requirement: current DHHS guidance recommends it only when HIV RNA is >1000 copies/mL or unknown near delivery, so it can be omitted here.",
       "Cesarean delivery is reserved for viral loads >1000 copies/mL near term, not required when the viral load is undetectable.",
-      "Correct: an undetectable viral load (<50 copies/mL) with good adherence allows vaginal delivery without the need for intrapartum IV zidovudine.",
-      "In resource-rich settings such as the US, breastfeeding is generally still discouraged for HIV-positive mothers regardless of viral load due to residual transmission risk.",
+      "Correct: on ART with HIV RNA ≤1000 copies/mL near delivery, and certainly at <50 copies/mL, vaginal delivery is appropriate and intrapartum IV zidovudine is not required.",
+      "Breastfeeding is no longer discouraged across the board. Since the 2023 DHHS perinatal HIV guidelines, endorsed by ACOG, a patient on ART with sustained viral suppression should be counseled through shared decision-making that breastfeeding carries less than 1% transmission risk and is a reasonable option. What makes this choice wrong is 'fully safe without any additional precautions': it requires continued ART with documented ongoing suppression, maternal and infant virologic monitoring, a decision about infant antiretroviral prophylaxis, and strict avoidance of mixed feeding.",
       "cART should be continued throughout pregnancy, delivery, and postpartum regardless of viral load to maintain suppression and prevent transmission."
     ],
-    "concept": "When maternal HIV viral load is suppressed below 50 copies/mL with excellent adherence to cART, intrapartum IV zidovudine can be omitted and vaginal delivery is obstetrically appropriate, reflecting the very low risk of vertical transmission at this level of viral suppression.",
+    "concept": "For a patient on cART with HIV RNA ≤1000 copies/mL near delivery, intrapartum IV zidovudine is not required and vaginal delivery is obstetrically appropriate, reflecting the very low risk of vertical transmission with suppression. Infant feeding is now a shared decision rather than a prohibition: with sustained suppression on ART, breastfeeding carries less than 1% transmission risk and is a supported option, provided ART and viral monitoring continue, infant prophylaxis is addressed, and mixed feeding is avoided. Replacement feeding remains the only option with no transmission risk at all.",
     "conceptRule": [
-      "Viral load >1000 copies/mL near delivery -> scheduled cesarean delivery at 38 weeks + intrapartum IV zidovudine",
-      "Viral load <1000 copies/mL -> vaginal delivery is appropriate + intrapartum IV zidovudine",
-      "Viral load <50 copies/mL with good adherence -> intrapartum IV zidovudine not required"
+      "HIV RNA >1000 copies/mL or unknown near delivery -> scheduled cesarean at 38 0/7 weeks + intrapartum IV zidovudine",
+      "HIV RNA ≤1000 copies/mL on ART near delivery -> vaginal delivery appropriate, intrapartum IV zidovudine not required",
+      "Any viral load -> continue combination ART through pregnancy, delivery, and postpartum"
     ]
   },
   {
@@ -3006,16 +3038,16 @@ export const OB_MCQS: McqQuestion[] = [
     "explanation": "A viral load >1000 copies/mL near term warrants continuing cART, adding intrapartum IV zidovudine, and scheduling cesarean delivery at 38 weeks to minimize vertical transmission risk.",
     "optionRationales": [
       "There is no indication for emergent (rather than scheduled) cesarean based on viral load alone in an otherwise stable patient at 36 weeks.",
-      "Vaginal delivery without IV zidovudine is appropriate only when viral load is <1000 (or intrapartum zidovudine can be omitted only if <50 with good adherence), not at 1200 copies/mL.",
+      "Vaginal delivery without intrapartum IV zidovudine is the right plan for a patient on ART whose HIV RNA is ≤1000 copies/mL near delivery, but at 1200 copies/mL she is above that threshold and needs scheduled cesarean at 38 0/7 weeks plus IV zidovudine.",
       "Correct: viral load >1000 copies/mL near delivery is an indication for scheduled cesarean at 38 weeks plus intrapartum IV zidovudine, while continuing cART.",
       "cART should be continued throughout pregnancy and postpartum, not discontinued; stopping it would increase, not decrease, viral load and transmission risk.",
       "Intrapartum IV zidovudine alone without scheduling cesarean delivery is insufficient when viral load exceeds the 1000 copies/mL threshold."
     ],
-    "concept": "Elective cesarean delivery at 38 weeks reduces vertical transmission of HIV when the viral load is greater than 1000 copies/mL near delivery. cART is continued throughout pregnancy and intrapartum IV zidovudine is added unless the viral load is under 50 copies/mL with excellent adherence.",
+    "concept": "Scheduled cesarean delivery at 38 0/7 weeks reduces vertical transmission of HIV when the viral load is greater than 1000 copies/mL, or unknown, near delivery, and intrapartum IV zidovudine is added in that setting. cART is continued throughout. Current DHHS perinatal guidance is that a patient on ART with HIV RNA ≤1000 copies/mL near delivery does not need intrapartum IV zidovudine and may deliver vaginally.",
     "conceptRule": [
-      "Viral load >1000 copies/mL near delivery -> scheduled cesarean delivery at 38 weeks + intrapartum IV zidovudine",
-      "Viral load <1000 copies/mL -> vaginal delivery is appropriate + intrapartum IV zidovudine",
-      "Viral load <50 copies/mL with good adherence -> intrapartum IV zidovudine not required"
+      "HIV RNA >1000 copies/mL or unknown near delivery -> scheduled cesarean at 38 0/7 weeks + intrapartum IV zidovudine",
+      "HIV RNA ≤1000 copies/mL on ART near delivery -> vaginal delivery appropriate, intrapartum IV zidovudine not required",
+      "Any viral load -> continue combination ART through pregnancy, delivery, and postpartum"
     ]
   },
   {
@@ -3028,7 +3060,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Parvovirus B19 infection causing fetal red cell aplasia and severe anemia",
       "Rh alloimmunization from a prior pregnancy",
       "Alpha thalassemia major",
-      "Achondroplasia with pulmonary hypoplasia"
+      "Thanatophoric dysplasia with a severely restricted thorax"
     ],
     "answerIndex": 1,
     "explanation": "Maternal exposure to parvovirus B19 (erythema infectiosum, 'slapped cheek' disease) can cause fetal infection that suppresses erythropoiesis, leading to severe fetal anemia, high-output cardiac failure, and nonimmune hydrops fetalis.",
@@ -3037,9 +3069,9 @@ export const OB_MCQS: McqQuestion[] = [
       "Correct: parvovirus B19 infects fetal erythroid precursors, halting RBC production and causing severe anemia that leads to high-output heart failure and hydrops — the exposure history is the key clue.",
       "Rh alloimmunization causes immune hydrops but there is no history here of Rh sensitization or a prior pregnancy exposure; the clinical clue given is parvovirus exposure.",
       "Alpha thalassemia major causes severe fetal anemia and hydrops, but this requires a specific genetic/ethnic risk factor (commonly Southeast Asian ancestry), not an infectious exposure as described.",
-      "Achondroplasia causes hydrops via a small thorax and chronic hypoxia, but there is no skeletal finding described here, and the exposure history points to an infectious cause."
+      "Thanatophoric dysplasia is a genuine (if uncommon) cause of nonimmune hydrops — a lethal skeletal dysplasia with a markedly narrow thorax, short ribs, and micromelia — but no skeletal abnormality is described here and the exposure history points to an infectious cause. Note that achondroplasia, the non-lethal FGFR3 dysplasia, does not restrict the thorax and is not a cause of hydrops."
     ],
-    "concept": "Hydrops fetalis can be immune (Rh alloimmunization) or nonimmune (parvovirus B19, alpha thalassemia major, achondroplasia/skeletal dysplasias, cardiac anomalies); a history of exposure to a 'slapped cheek' rash illness in pregnancy should raise suspicion for parvovirus B19-induced fetal anemia and hydrops.",
+    "concept": "Hydrops fetalis can be immune (Rh or other red cell alloimmunization) or nonimmune (parvovirus B19, alpha thalassemia major, fetal structural cardiac disease, fetal tachyarrhythmia, chromosomal abnormalities, twin-twin transfusion, and the lethal skeletal dysplasias such as thanatophoric dysplasia or osteogenesis imperfecta type II); a history of exposure to a 'slapped cheek' rash illness in pregnancy should raise suspicion for parvovirus B19-induced fetal anemia and hydrops.",
     "discriminator": "The daycare exposure to a slapped-cheek rash is the distinguishing clue that points to parvovirus B19 over other nonimmune or immune causes of hydrops."
   },
   {
@@ -3134,19 +3166,20 @@ export const OB_MCQS: McqQuestion[] = [
       "Rifampin"
     ],
     "answerIndex": 0,
-    "explanation": "Ursodeoxycholic acid (ursodiol) is first-line therapy for intrahepatic cholestasis of pregnancy, improving pruritus and bile acid levels.",
+    "explanation": "Ursodeoxycholic acid (ursodiol, 10-15 mg/kg/day) is first-line therapy for the pruritus of intrahepatic cholestasis of pregnancy and lowers serum bile acids. Since the PITCHES trial (Lancet 2019) and the SMFM 2021 consult series it has not been shown to reduce stillbirth or other adverse perinatal outcomes — fetal risk is addressed by bile-acid-stratified timed delivery and antenatal surveillance.",
     "optionRationales": [
-      "Correct: ursodeoxycholic acid is the standard first-line treatment for ICP, reducing bile acid levels and symptoms.",
+      "Correct: ursodeoxycholic acid is the standard first-line treatment for ICP, reducing pruritus and serum bile acid levels. Important nuance: PITCHES (Lancet 2019) and the SMFM 2021 consult series found no reduction in stillbirth, meconium passage, preterm birth, or NICU admission, so UDCA is a maternal symptom-relief drug — the fetal risk of ICP is managed by bile-acid-stratified timed delivery and surveillance, not by UDCA.",
       "Not indicated; ICP is not an inflammatory or autoimmune skin process like pemphigoid gestationis, which may respond to steroids.",
       "An older, less effective agent for cholestatic pruritus; not first-line and can impair fat-soluble vitamin absorption.",
       "May provide mild symptomatic relief of pruritus but does not treat the underlying cholestasis or reduce fetal risk.",
       "Used for refractory cholestatic pruritus in non-pregnant patients, not a first-line option in pregnancy."
     ],
-    "concept": "ICP is not a benign itch — it carries an increased risk of stillbirth, meconium-stained fluid, and preterm birth, so treatment with ursodeoxycholic acid and consideration of earlier delivery (around 36-37 weeks depending on bile acid severity) are both important management priorities.",
+    "concept": "ICP is not a benign itch — it carries an increased risk of stillbirth, meconium-stained fluid, and preterm birth, with risk rising steeply once total bile acids reach 100 micromol/L. Ursodeoxycholic acid improves maternal pruritus and lowers bile acid levels but has NOT been shown to reduce stillbirth or other adverse perinatal outcomes (PITCHES 2019; SMFM 2021); fetal risk is addressed by bile-acid-stratified timed delivery, not by UDCA. Both threads therefore matter in management: UDCA for symptoms, and a planned delivery date set by the peak bile acid level.",
     "conceptRule": [
-      "Bile acids <100 micromol/L -> delivery at 36-37 weeks",
-      "Bile acids >=100 micromol/L (severe ICP) -> delivery at 36 weeks or earlier may be considered",
-      "First-line pharmacotherapy -> ursodeoxycholic acid"
+      "Pruritus of ICP -> ursodeoxycholic acid 10-15 mg/kg/day (maternal symptom relief and lower bile acids; no proven perinatal benefit)",
+      "Total bile acids <100 micromol/L -> deliver at 36 0/7 to 39 0/7 weeks",
+      "Total bile acids >=100 micromol/L (severe ICP) -> deliver at 36 0/7 weeks; earlier only for intractable pruritus, worsening liver tests, or a prior ICP stillbirth",
+      "Diagnosis made at term or beyond -> deliver rather than continue expectant management"
     ]
   },
   {
@@ -3965,30 +3998,6 @@ export const OB_MCQS: McqQuestion[] = [
     "mnemonic": "Virchow triad: stasis, hypercoagulability, endothelial injury"
   },
   {
-    "id": "ob-labor-delivery-1",
-    "system": "Labor & Delivery",
-    "topic": "Absent variability etiology",
-    "stem": "A fetal heart rate tracing during labor shows a baseline of 145 bpm with absent variability, no accelerations, and no decelerations. The mother received morphine for pain 15 minutes ago. Which of the following is the most likely explanation for this tracing?",
-    "options": [
-      "Maternal opioid administration causing transient CNS depression",
-      "Fetal hypoxia requiring immediate delivery",
-      "Uteroplacental insufficiency",
-      "Severe fetal anemia",
-      "Umbilical cord compression"
-    ],
-    "answerIndex": 0,
-    "explanation": "Absent/minimal variability can result from fetal sleep, prematurity, or maternal CNS depressant medications (such as opioids) in addition to fetal hypoxia; the temporal relationship to recent maternal morphine administration and absence of decelerations favor a benign, transient cause.",
-    "optionRationales": [
-      "Correct - maternal opioids readily cross the placenta and are a well-recognized benign cause of transient absent/minimal fetal variability.",
-      "Incorrect - while hypoxia is a cause of absent variability, the absence of concerning decelerations and clear temporal link to recent opioid administration make transient CNS depression far more likely in this vignette.",
-      "Incorrect - uteroplacental insufficiency classically produces late decelerations, which are not present here.",
-      "Incorrect - severe fetal anemia produces a sinusoidal pattern, a smooth wave-like tracing, not simply absent variability without decelerations.",
-      "Incorrect - cord compression classically produces variable decelerations, which are absent in this tracing."
-    ],
-    "concept": "Absent or minimal FHR variability has both benign and concerning causes: fetal sleep cycles, prematurity, and maternal CNS depressant medications (opioids, magnesium, benzodiazepines) can cause transient absent/minimal variability, whereas fetal hypoxia/acidemia is the concerning cause. Clinical context (recent medications, accompanying decelerations) helps distinguish benign from pathologic causes.",
-    "discriminator": "A clear temporal association with a maternal sedating medication, in the absence of accompanying late or variable decelerations, points to a benign pharmacologic cause rather than hypoxia."
-  },
-  {
     "id": "ob-labor-delivery-2",
     "system": "Labor & Delivery",
     "topic": "Absolute indication for cesarean",
@@ -4116,40 +4125,45 @@ export const OB_MCQS: McqQuestion[] = [
       "Incorrect - 3 cm dilation scores 2 points, a moderately favorable finding.",
       "Incorrect - 80% effacement scores the maximum 3 points, favoring induction."
     ],
-    "concept": "The Bishop score sums five components (dilation, effacement, station, consistency, position), each scored 0-3, to predict induction success. A cervix that is closed, firm, long (uneffaced), posterior, and high (station -3) scores near zero on every component and predicts a difficult induction requiring ripening.",
+    "concept": "The Bishop score sums five components, but they are not weighted equally: dilation, effacement and station each score 0-3, while consistency and position each score 0-2, for a maximum total of 13 (not 15). A cervix that is closed, firm, long (uneffaced), posterior and high (station -3) scores zero on every component and predicts a difficult induction that should be preceded by ripening.",
+    "conceptRule": [
+      "Dilation, effacement and station -> 0-3 points each; consistency and position -> 0-2 points each; maximum total 13",
+      "Bishop score <6 -> unfavorable cervix, ripen (prostaglandin or mechanical) before/with oxytocin; >=8 -> favorable, proceed with induction"
+    ],
     "scoreComponents": [
-      "Cervical dilation (closed, 1-2 cm, 3-4 cm, ≥5 cm)",
-      "Cervical effacement (0-30%, 40-50%, 60-70%, ≥80%)",
-      "Cervical consistency (firm, medium, soft)",
-      "Cervical position (posterior, mid, anterior)",
-      "Fetal station (-3, -2, -1/0, +1/+2)"
+      "Cervical dilation: closed = 0, 1-2 cm = 1, 3-4 cm = 2, >=5 cm = 3",
+      "Cervical effacement: 0-30% = 0, 40-50% = 1, 60-70% = 2, >=80% = 3",
+      "Fetal station: -3 = 0, -2 = 1, -1 to 0 = 2, +1 to +2 = 3",
+      "Cervical consistency: firm = 0, medium = 1, soft = 2",
+      "Cervical position: posterior = 0, mid = 1, anterior = 2"
     ]
   },
   {
     "id": "ob-labor-delivery-7",
     "system": "Labor & Delivery",
     "topic": "Bishop score for induction",
-    "stem": "A 40-year-old G3P2 at 41 weeks is being evaluated for labor induction due to post-term pregnancy. On exam, her cervix is long, closed, firm, and posterior. Her Bishop score is calculated at 2. Which of the following is the most appropriate next step prior to oxytocin administration?",
+    "stem": "A 40-year-old G3P2 at 41 weeks is being evaluated for labor induction due to late-term pregnancy. On exam, her cervix is long, closed, firm, and posterior. Her Bishop score is calculated at 2. Which of the following is the most appropriate next step prior to oxytocin administration?",
     "options": [
-      "Proceed directly with oxytocin infusion",
-      "Amniotomy",
       "Cervical ripening with a prostaglandin agent",
       "Expectant management with weekly follow-up",
-      "Cesarean delivery"
+      "Amniotomy",
+      "Cesarean delivery",
+      "Proceed directly with oxytocin infusion"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "explanation": "A low Bishop score (<6) indicates an unfavorable, unripe cervix; cervical ripening agents such as prostaglandins should be used before or alongside oxytocin to improve the chance of successful vaginal delivery.",
     "optionRationales": [
-      "Incorrect - oxytocin is far less effective and increases failed induction/cesarean risk when the cervix is unripe (low Bishop score); ripening should occur first.",
-      "Incorrect - amniotomy requires a cervix that is already dilated and effaced enough to reach the membranes, which is not the case with a closed, firm cervix.",
       "Correct - a Bishop score <6 indicates an unfavorable cervix; prostaglandins (e.g., misoprostol, dinoprostone) promote cervical ripening before induction.",
-      "Incorrect - post-term pregnancy at 41 weeks is itself an indication for delivery, not continued expectant management.",
-      "Incorrect - a low Bishop score alone is not an indication for cesarean delivery; it simply predicts a lower likelihood of successful induction and prompts ripening first."
+      "Incorrect - at 41 0/7 weeks (late term) induction is recommended, and delivery is indicated no later than 42 0/7 weeks, so continued weekly expectant management is inappropriate.",
+      "Incorrect - amniotomy requires a cervix that is already dilated and effaced enough to reach the membranes, which is not the case with a closed, firm cervix.",
+      "Incorrect - a low Bishop score alone is not an indication for cesarean delivery; it simply predicts a lower likelihood of successful induction and prompts ripening first.",
+      "Incorrect - oxytocin is far less effective and increases failed induction/cesarean risk when the cervix is unripe (low Bishop score); ripening should occur first."
     ],
     "concept": "The Bishop score predicts the likelihood of successful vaginal delivery with induction based on five cervical/fetal station findings. A score ≥8 predicts a favorable outcome similar to spontaneous labor, while a score <6 suggests the cervix is unripe and would benefit from a cervical ripening agent before or during oxytocin induction.",
     "conceptRule": [
-      "Bishop score ≥8 -> favorable cervix, high likelihood of successful induction/vaginal delivery",
-      "Bishop score <6 -> unfavorable cervix, cervical ripening agent recommended before/with induction"
+      "Bishop score >=8 -> favorable cervix, high likelihood of successful induction/vaginal delivery",
+      "Bishop score <6 -> unfavorable cervix, cervical ripening agent recommended before/with induction",
+      "Gestational-age nomenclature: 37 0/7-38 6/7 early term, 39 0/7-40 6/7 full term, 41 0/7-41 6/7 late term, >=42 0/7 post-term -> offer induction at 41 0/7 weeks and deliver by 42 0/7 weeks"
     ],
     "scoreComponents": [
       "Cervical dilation (closed, 1-2 cm, 3-4 cm, ≥5 cm)",
@@ -4253,7 +4267,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Incorrect - Category I requires a normal baseline with moderate variability, which is absent here.",
       "Correct - absent variability plus recurrent late decelerations (or recurrent variable decelerations, or bradycardia) defines Category III; if intrauterine resuscitation fails to correct it, urgent delivery is indicated."
     ],
-    "concept": "Category III tracings are defined by absent variability plus recurrent late decelerations, recurrent variable decelerations, bradycardia, or a sinusoidal pattern. They represent a high risk of fetal acidemia and require intrauterine resuscitation with urgent delivery if the pattern does not rapidly resolve. Category I (normal) requires moderate variability with a normal baseline; Category II is everything in between.",
+    "concept": "Category III tracings are defined by absent variability plus recurrent late decelerations, recurrent variable decelerations, bradycardia, or a sinusoidal pattern. They represent a high risk of fetal acidemia and require intrauterine resuscitation with urgent delivery if the pattern does not rapidly resolve. Category I (normal) requires moderate variability with a normal baseline; Category II is everything in between. Note that of the resuscitation measures, routine maternal supplemental oxygen has not been shown to improve umbilical artery pH or neonatal outcomes and is no longer recommended as a standard step; the evidence-based measures are lateral repositioning, an IV crystalloid bolus, stopping oxytocin, correcting hypotension, and considering tocolysis or amnioinfusion.",
     "conceptRule": [
       "Category I: normal baseline (110-160) + moderate variability, ± accelerations/early decels -> reassurance",
       "Category II: anything not meeting Category I or III criteria -> intrauterine resuscitation",
@@ -4308,30 +4322,6 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Cervical insufficiency is a clinical diagnosis of painless cervical dilation in the second trimester, often with a history of recurrent second-trimester losses, in the absence of contractions, infection, or bleeding. It differs from preterm labor, which involves painful, regular contractions.",
     "discriminator": "Painless cervical dilation without contractions distinguishes cervical insufficiency from preterm labor, where contractions drive cervical change."
-  },
-  {
-    "id": "ob-labor-delivery-14",
-    "system": "Labor & Delivery",
-    "topic": "Cesarean for arrest of labor",
-    "stem": "A 27-year-old G1P0 at 40 weeks is in active labor at 6 cm dilation with adequate contractions documented by intrauterine pressure catheter (>200 Montevideo units). Cervical dilation has not changed over the past 4 hours despite adequate uterine activity, and the fetal tracing is Category I. Which of the following is the most appropriate next step?",
-    "options": [
-      "Amnioinfusion",
-      "Administer terbutaline to relax the uterus",
-      "Continue expectant monitoring for another 8 hours",
-      "Cesarean delivery for arrest of active labor",
-      "Forceps-assisted vaginal delivery"
-    ],
-    "answerIndex": 3,
-    "explanation": "Arrest of active labor is defined as no cervical change for ≥4 hours despite adequate contractions (≥200 Montevideo units) at ≥6 cm dilation with ruptured membranes; this is an indication for cesarean delivery.",
-    "optionRationales": [
-      "Amnioinfusion treats variable decelerations from cord compression, not failure of cervical dilation with a Category I tracing.",
-      "Tocolysis would further impair labor progress and is not indicated when contractions are already adequate; the problem is failure to dilate despite good contractions.",
-      "By definition, adequate contractions for 4 hours without cervical change already meets the criterion for arrest; further prolonged observation is not the next step once arrest is diagnosed.",
-      "Adequate contractile force with no cervical change for 4 hours at ≥6 cm meets criteria for arrest of active labor, an indication for cesarean delivery.",
-      "Forceps require complete cervical dilation (10 cm) and an engaged fetal head; this patient is only 6 cm dilated, so instrumental delivery is not an option."
-    ],
-    "concept": "Arrest of active labor phase is defined as no cervical change for ≥4 hours with adequate contractions (≥200 Montevideo units) or ≥6 hours with inadequate contractions, once the patient is in the active phase (≥6 cm) with ruptured membranes. This is a standard indication for cesarean delivery after oxytocin augmentation has failed.",
-    "discriminator": "Documented adequate contractile force (Montevideo units) with a set time interval of no cervical change distinguishes true arrest of labor from a normally slow but still progressing labor pattern."
   },
   {
     "id": "ob-labor-delivery-15",
@@ -4545,7 +4535,7 @@ export const OB_MCQS: McqQuestion[] = [
     "topic": "Late decelerations management",
     "stem": "A 33-year-old G1P0 at 40 weeks in active labor develops recurrent decelerations that begin approximately 30 seconds after the onset of each contraction and return to baseline after the contraction ends. Variability is moderate. Which of the following is the most appropriate initial step in management?",
     "options": [
-      "Intrauterine resuscitation measures (repositioning, IV fluids, stop oxytocin, oxygen)",
+      "Intrauterine resuscitation measures (lateral repositioning, IV fluid bolus, stop oxytocin)",
       "Amnioinfusion",
       "Reassurance with no intervention needed",
       "Immediate operative vaginal delivery",
@@ -4554,16 +4544,17 @@ export const OB_MCQS: McqQuestion[] = [
     "answerIndex": 0,
     "explanation": "Recurrent late decelerations with otherwise moderate variability represent a Category II (indeterminate) tracing, which is managed with conservative intrauterine resuscitation measures first, reserving delivery for tracings that fail to improve or progress to Category III.",
     "optionRationales": [
-      "Correct - recurrent late decelerations with preserved (moderate) variability constitute a Category II tracing, managed initially with intrauterine resuscitation: maternal repositioning, IV fluid bolus, stopping oxytocin, correcting hypotension, and supplemental oxygen.",
+      "Correct - recurrent late decelerations with preserved (moderate) variability constitute a Category II tracing, managed initially with intrauterine resuscitation: lateral repositioning, an IV crystalloid bolus, stopping oxytocin, and correcting hypotension.",
       "Incorrect - amnioinfusion is used specifically for recurrent variable decelerations related to cord compression/oligohydramnios, not late decelerations.",
       "Incorrect - recurrent late decelerations reflect possible uteroplacental insufficiency and warrant intervention, not simple reassurance.",
       "Incorrect - operative vaginal delivery requires complete dilation and an appropriate station, and is not the first-line response to a Category II tracing.",
       "Incorrect - emergent cesarean is reserved for Category III tracings (absent variability plus recurrent late/variable decelerations or bradycardia) or those that fail to improve with resuscitative measures, not the first step here."
     ],
-    "concept": "Late decelerations reflect uteroplacental insufficiency and fetal hypoxia; they begin after the contraction starts and resolve after it ends (right-shifted). When recurrent but accompanied by moderate variability, the tracing is Category II and managed first with intrauterine resuscitation (repositioning, IV fluids, stopping uterotonics, correcting hypotension, oxygen); it becomes Category III (requiring urgent delivery) if variability is absent.",
+    "concept": "Late decelerations reflect uteroplacental insufficiency and fetal hypoxia; they begin after the contraction starts and resolve after it ends (right-shifted). When recurrent but accompanied by moderate variability the tracing is Category II and is managed first with intrauterine resuscitation; it becomes Category III (urgent delivery) if variability is absent. The evidence-based components are lateral repositioning, an IV crystalloid bolus, discontinuing oxytocin, correcting hypotension (ephedrine or phenylephrine), and considering tocolysis for tachysystole or amnioinfusion for cord compression. Routine maternal supplemental oxygen has not been shown to improve umbilical artery pH or neonatal outcomes and is no longer recommended as a standard step.",
     "conceptRule": [
-      "Late decelerations + moderate variability -> Category II -> intrauterine resuscitation",
-      "Late decelerations + absent variability (recurrent) -> Category III -> urgent delivery if not rapidly corrected"
+      "Late decelerations + moderate variability -> Category II -> intrauterine resuscitation (reposition, IV fluids, stop oxytocin, correct hypotension)",
+      "Late decelerations + absent variability (recurrent) -> Category III -> urgent delivery if not rapidly corrected",
+      "Category II tracing -> routine maternal supplemental oxygen is not recommended; it does not improve neonatal outcomes (reserve O2 for maternal hypoxemia)"
     ],
     "discriminator": "The presence of moderate variability alongside recurrent late decelerations keeps the tracing in the indeterminate Category II range, which is managed conservatively before escalating to delivery."
   },
@@ -4621,6 +4612,30 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Malpresentation (breech, transverse lie), prematurity, and low birth weight are major risk factors for umbilical cord prolapse because the presenting part fails to occlude the pelvic inlet, allowing the cord to prolapse ahead of the fetus after membrane rupture. This is an obstetric emergency requiring immediate elevation of the presenting part off the cord and emergent cesarean delivery.",
     "discriminator": "The temporal link between rupture of membranes and sudden fetal bradycardia in a breech fetus points to cord prolapse rather than the other bleeding or infectious complications."
+  },
+  {
+    "id": "ob-labor-delivery-1",
+    "system": "Labor & Delivery",
+    "topic": "Minimal variability etiology",
+    "stem": "A fetal heart rate tracing during labor shows a baseline of 145 bpm with minimal variability, no accelerations, and no decelerations. The mother received morphine for pain 15 minutes ago. Which of the following is the most likely explanation for this tracing?",
+    "options": [
+      "Umbilical cord compression",
+      "Uteroplacental insufficiency",
+      "Maternal opioid administration causing transient CNS depression",
+      "Fetal hypoxia requiring immediate delivery",
+      "Severe fetal anemia"
+    ],
+    "answerIndex": 2,
+    "explanation": "Minimal variability has benign as well as concerning causes: a fetal sleep cycle, prematurity, and maternal CNS depressants (opioids, magnesium, benzodiazepines) all blunt variability, and the close temporal relationship to morphine with no decelerations favors a transient pharmacologic cause. Absent variability is a different matter and is never simply attributed to medication.",
+    "optionRationales": [
+      "Incorrect - cord compression classically produces variable decelerations, which are absent in this tracing.",
+      "Incorrect - uteroplacental insufficiency classically produces late decelerations, which are not present here.",
+      "Correct - maternal opioids readily cross the placenta and classically produce transient MINIMAL variability with loss of accelerations, resolving as the drug effect wears off, while the tracing is monitored.",
+      "Incorrect - hypoxia does blunt variability, but with no decelerations of any kind and morphine given 15 minutes ago, a transient drug effect is far more likely; immediate delivery is not indicated for isolated minimal variability.",
+      "Incorrect - severe fetal anemia produces a sinusoidal pattern, a smooth wave-like tracing, not simply reduced variability without decelerations."
+    ],
+    "concept": "Minimal FHR variability (amplitude detectable but <=5 bpm) has benign as well as concerning causes: fetal sleep cycles, prematurity, and maternal CNS depressants (opioids, magnesium, benzodiazepines) versus fetal hypoxia/acidemia; clinical context and accompanying decelerations distinguish them, and the tracing is followed for recovery. ABSENT variability (undetectable amplitude) is never assumed to be a drug effect - it is at minimum a Category II tracing that requires evaluation for fetal acidemia even when a sedative was just given, and with recurrent late or variable decelerations or bradycardia it is Category III.",
+    "discriminator": "Sedating drugs blunt variability to MINIMAL, not absent. A clear temporal link to a maternal sedative with no late or variable decelerations points to a pharmacologic cause; absent variability, whatever the drug history, is treated as potential acidemia."
   },
   {
     "id": "ob-labor-delivery-25",
@@ -5060,27 +5075,58 @@ export const OB_MCQS: McqQuestion[] = [
     ]
   },
   {
+    "id": "ob-labor-delivery-52",
+    "system": "Labor & Delivery",
+    "topic": "Second-stage arrest - operative vaginal delivery",
+    "stem": "A 27-year-old G1P0 at 40 weeks has been pushing for 4 hours with an epidural in place. The cervix is completely dilated, contractions are adequate, and the fetal head has remained at +2 station in a direct occiput anterior position for the past hour. The pelvis is clinically adequate, the bladder is empty, the fetal tracing is Category I, and an experienced obstetrician is at the bedside. Which of the following is the most appropriate next step?",
+    "options": [
+      "Operative vaginal delivery with forceps or vacuum",
+      "Cesarean delivery for arrest of descent",
+      "Amnioinfusion",
+      "Administer terbutaline to relax the uterus",
+      "Continue expectant monitoring for another 4 hours"
+    ],
+    "answerIndex": 0,
+    "explanation": "A nullipara with an epidural meets criteria for a prolonged second stage at ≥4 hours of pushing. With the cervix fully dilated, the head engaged at +2 station in an occiput anterior position, a Category I tracing, and an experienced operator available, operative vaginal delivery is the appropriate next step; cesarean is reserved for cases where those conditions are not met.",
+    "optionRationales": [
+      "Correct: fully dilated cervix, engaged head at +2 station in a known OA position, adequate pelvis, empty bladder, Category I tracing, and an experienced operator — this is the classic setting for operative vaginal delivery for arrest of descent.",
+      "Cesarean is the answer for second-stage arrest when the head is above +2 station, the position is unknown or malrotated, the pelvis is inadequate, or no experienced operator is available — none of which applies here. With an engaged OA head at +2 and a reassuring tracing, operative vaginal delivery achieves delivery faster and with less maternal morbidity than cesarean at full dilation.",
+      "Amnioinfusion is used for recurrent variable decelerations from cord compression; the tracing is Category I and the problem is failure of descent.",
+      "Tocolysis would abolish the expulsive contractions needed for descent; contractions are already adequate.",
+      "Four hours of pushing with an epidural in a nullipara already satisfies the definition of a prolonged second stage; open-ended continued pushing without descent increases the risk of chorioamnionitis, postpartum hemorrhage, and neonatal morbidity."
+    ],
+    "concept": "ACOG defines a prolonged second stage as at least 3 hours of pushing in a nullipara (4 hours with an epidural) and at least 2 hours in a multipara (3 hours with an epidural); longer intervals may be individualized as long as descent is continuing and the tracing is reassuring. Once second-stage arrest is diagnosed, the decision is operative vaginal delivery versus cesarean, and it turns on station, fetal position, pelvic adequacy, the tracing, and operator experience. Operative vaginal delivery requires a completely dilated cervix, an engaged head at or below +2 station in a known position, adequate analgesia, an emptied bladder, and consent — contrast this with first-stage arrest at 6 cm, where the cervix is not dilated and cesarean is the only route.",
+    "conceptRule": [
+      "Nullipara pushing ≥3 h (≥4 h with epidural) without descent -> prolonged/arrested second stage",
+      "Multipara pushing ≥2 h (≥3 h with epidural) without descent -> prolonged/arrested second stage",
+      "Second-stage arrest + full dilation + OA head at ≥+2 station + Category I + experienced operator -> operative vaginal delivery",
+      "Second-stage arrest + head above +2 station, unknown position/malposition, or no experienced operator -> cesarean delivery",
+      "No cervical change ≥4 h with adequate contractions (≥200 MVU) or ≥6 h with inadequate contractions at ≥6 cm -> first-stage arrest -> cesarean delivery"
+    ],
+    "discriminator": "Cervical status separates the two arrests: no dilation change at ≥6 cm with adequate contractions is first-stage arrest, where cesarean is the only option, whereas failure of descent at complete dilation with the head at ≥+2 station is second-stage arrest, where operative vaginal delivery is available and usually preferable."
+  },
+  {
     "id": "ob-labor-delivery-37",
     "system": "Labor & Delivery",
     "topic": "Shoulder dystocia McRoberts maneuver",
     "stem": "A woman with poorly controlled gestational diabetes undergoes vaginal delivery. After delivery of the fetal head, the head retracts against the perineum (\"turtle sign\") and gentle traction fails to deliver the anterior shoulder. Which of the following should be performed first?",
     "options": [
-      "Suprapubic pressure with maternal hip flexion (McRoberts maneuver)",
+      "Maternal hip hyperflexion onto the abdomen (McRoberts maneuver)",
       "Immediate cesarean delivery",
       "Fundal pressure",
       "Symphysiotomy",
       "Zavanelli maneuver"
     ],
     "answerIndex": 0,
-    "explanation": "The McRoberts maneuver (sharply flexing the maternal hips onto the abdomen, often combined with suprapubic pressure) is the first-line maneuver for shoulder dystocia because it straightens the sacrum and rotates the pubic symphysis to free the impacted anterior shoulder.",
+    "explanation": "The McRoberts maneuver - sharp hyperflexion and abduction of the maternal hips onto the abdomen - is the first maneuver for shoulder dystocia because it flattens the sacral curve and rotates the pubic symphysis cephalad, freeing the impacted anterior shoulder. Suprapubic pressure is a separate adjunct, added next if McRoberts alone fails.",
     "optionRationales": [
-      "The McRoberts maneuver is the correct first-line intervention: hip flexion combined with suprapubic pressure widens the effective pelvic outlet and dislodges the impacted anterior shoulder.",
+      "The McRoberts maneuver is the correct first-line intervention: hyperflexing and abducting the maternal hips onto the abdomen rotates the symphysis cephalad and flattens the sacral curve, dislodging the impacted anterior shoulder. Suprapubic pressure is a distinct maneuver added as the next step, not part of McRoberts itself.",
       "Once the head has delivered, cesarean delivery is no longer feasible; shoulder dystocia must be managed with maneuvers to deliver the body.",
       "Fundal pressure is discouraged in shoulder dystocia because it can worsen impaction of the anterior shoulder against the pubic symphysis and increase risk of uterine rupture.",
       "Symphysiotomy is a rarely used, high-morbidity last-resort option, not an initial step.",
       "The Zavanelli maneuver (pushing the fetal head back in for emergent cesarean) is reserved for cases where all other maneuvers fail, not a first-line step."
     ],
-    "concept": "Shoulder dystocia occurs when the anterior fetal shoulder becomes impacted behind the maternal pubic symphysis after delivery of the head, classically signaled by the turtle sign. The McRoberts maneuver (hip hyperflexion plus suprapubic pressure) is the first-line intervention; fundal pressure should be avoided.",
+    "concept": "Shoulder dystocia occurs when the anterior fetal shoulder becomes impacted behind the maternal pubic symphysis after delivery of the head, classically signaled by the turtle sign. McRoberts (maternal hip hyperflexion and abduction, no pressure applied) is the first maneuver; if it is unsuccessful, add suprapubic pressure, then internal rotational maneuvers (Rubin II, Woods corkscrew), delivery of the posterior arm, and the Gaskin all-fours position. Fundal pressure is contraindicated.",
     "discriminator": "The turtle sign (head retraction against the perineum) after failed gentle traction is the classic presentation of shoulder dystocia, for which McRoberts is the first maneuver attempted.",
     "mnemonic": "HELPERR mnemonic for shoulder dystocia (Help, Episiotomy, Legs/McRoberts, suPrapubic pressure, Enter maneuvers, Remove posterior arm, Roll over)"
   },
@@ -5401,7 +5447,12 @@ export const OB_MCQS: McqQuestion[] = [
       "A normal urinalysis makes urinary tract infection unlikely despite the mild dysuria, which can be a nonspecific accompanying symptom of engorgement.",
       "Galactocele is a unilateral, non-tender to mildly tender fluctuant cystic mass, not bilateral diffuse firm swelling."
     ],
-    "concept": "Breast engorgement occurs from milk accumulation (common when breastfeeding is stopped or delayed) and presents with bilateral firm, swollen, tender breasts, sometimes with low-grade fever and nonspecific symptoms like dysuria that can be mistaken for infection; management is frequent milk removal/feeding, NSAIDs, and warm or cold compresses.",
+    "concept": "Breast engorgement comes from milk accumulation, common when breastfeeding is delayed, stopped, or never started, and presents with bilateral firm, swollen, tender breasts, sometimes with low-grade fever and nonspecific symptoms like dysuria that can be mistaken for infection. Management depends on her feeding intent. If she intends to breastfeed: frequent milk removal or feeding, NSAIDs, and cold compresses between feeds (brief warmth just before a feed can aid letdown). If she is not breastfeeding, as here: a firm supportive bra, cold compresses, and NSAIDs, while explicitly avoiding pumping, expression, and other nipple stimulation, which sustains prolactin-driven milk production and prolongs the engorgement; it settles over 24-48 hours as milk production involutes.",
+    "conceptRule": [
+      "Engorgement in a patient who intends to breastfeed -> frequent milk removal or feeding + NSAIDs + cold compresses between feeds",
+      "Engorgement in a patient who is not breastfeeding -> firm supportive bra + cold compresses + NSAIDs, and avoid pumping, expression, or nipple stimulation, which perpetuates lactation",
+      "Not breastfeeding, no focal findings -> expect resolution in 24-48 hours; persistent focal erythema or a fluctuant mass instead -> reassess for mastitis or abscess"
+    ],
     "discriminator": "Bilateral, diffuse involvement without a discrete fluctuant mass or focal erythema distinguishes engorgement from mastitis (unilateral, focal, wedge-shaped) and abscess (focal fluctuant mass)."
   },
   {
@@ -5661,7 +5712,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Atelectasis is the classic teaching cause of fever within the first 1-2 postoperative days and fits the bibasilar decreased breath sounds without other localizing signs.",
       "Wound infection typically presents later (postoperative day 4-7) with localized erythema, warmth, or drainage, none of which are described here."
     ],
-    "concept": "The classic timing mnemonic for postpartum/postoperative fever narrows the differential: postoperative day 1 favors atelectasis (breath sounds), days 2-3 favor urinary tract infection, days 3-5 favor endometritis or wound infection, and later fevers refractory to antibiotics raise concern for septic pelvic thrombophlebitis.",
+    "concept": "The classic timing mnemonic for postpartum/postoperative fever narrows the differential: postoperative day 1 favors atelectasis (breath sounds), days 2-3 favor urinary tract infection, days 3-5 favor endometritis or wound infection, and later fevers refractory to antibiotics raise concern for septic pelvic thrombophlebitis. Note that atelectasis is a mnemonic association rather than a proven cause: studies show no relationship between atelectasis and postoperative fever, and day-1 fever is usually the inflammatory cytokine (IL-6) response to surgical tissue injury. It stays the exam answer and a diagnosis of exclusion once UTI, endometritis and wound infection are ruled out, and the management (incentive spirometry, early ambulation) is the same either way.",
     "mnemonic": "Postpartum fever \"W's\": Wind (atelectasis, day 1), Water (UTI, day 2-3), Womb (endometritis, day 3-5), Wound (day 4-7), Walking (DVT), Wonder drugs (drug fever)"
   },
   {
@@ -5964,7 +6015,14 @@ export const OB_MCQS: McqQuestion[] = [
       "Embolization is reserved for refractory hemorrhage after medical and less invasive surgical measures fail.",
       "Carboprost is a second-line uterotonic reserved for refractory atony and is avoided in asthma."
     ],
-    "concept": "Uterine atony is the most common cause of postpartum hemorrhage and is treated stepwise: bimanual massage plus oxytocin first, then tranexamic acid, then methylergonovine or carboprost (per contraindications), then mechanical tamponade, then surgical management (B-Lynch, artery ligation, hysterectomy).",
+    "concept": "Uterine atony is the most common cause of postpartum hemorrhage and is treated stepwise: bimanual massage plus IV oxytocin first; if bleeding continues, a second-line uterotonic (methylergonovine unless she is hypertensive, carboprost unless she is asthmatic, misoprostol if both are contraindicated); then intrauterine balloon tamponade or a uterine vacuum-induced hemorrhage-control device; then surgical management (B-Lynch compression suture, uterine artery ligation or embolization, hysterectomy). Tranexamic acid 1 g IV is an early adjunct given within 3 hours of birth alongside these steps, not a substitute for a second uterotonic.",
+    "conceptRule": [
+      "Boggy fundus with brisk bleeding after placental delivery -> bimanual massage + IV oxytocin",
+      "Bleeding continues after massage + oxytocin -> second-line uterotonic: methylergonovine unless hypertensive, carboprost unless asthmatic, misoprostol if both are contraindicated",
+      "Still bleeding -> intrauterine balloon tamponade or uterine vacuum-induced hemorrhage-control device",
+      "Still bleeding -> B-Lynch compression suture, uterine artery ligation or embolization, then hysterectomy",
+      "Postpartum hemorrhage within 3 hours of birth -> tranexamic acid 1 g IV over 10 minutes as an adjunct alongside the uterotonics (repeat 1 g once if bleeding continues at 30 minutes or restarts within 24 hours)"
+    ],
     "discriminator": "A boggy, poorly contracted uterus on exam is the key finding that points to atony rather than laceration or retained tissue.",
     "mnemonic": "4 T's of PPH: Tone (atony), Trauma (laceration), Tissue (retained POC), Thrombin (coagulopathy)"
   },
@@ -6015,10 +6073,11 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Each second-line uterotonic has a specific contraindication that must be checked before administration: methylergonovine is avoided in hypertension/preeclampsia, and carboprost (a prostaglandin) is avoided in asthma because it can trigger bronchospasm.",
     "conceptRule": [
-      "Atony refractory to massage + oxytocin -> tranexamic acid",
+      "Atony refractory to massage + oxytocin -> give a second-line uterotonic next",
       "No hypertension -> methylergonovine may be used",
       "No asthma -> carboprost may be used",
       "Either contraindicated or bleeding continues -> misoprostol or balloon tamponade",
+      "Postpartum hemorrhage within 3 hours of birth -> tranexamic acid 1 g IV as an adjunct given alongside the uterotonics, never in place of a second agent",
       "Refractory to all medical measures -> B-Lynch suture/laparotomy or hysterectomy"
     ],
     "discriminator": "The stem's asthma history is the clue that eliminates carboprost specifically, distinguishing it from methylergonovine (avoided in hypertension) as the drug to withhold."
@@ -6077,6 +6136,30 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "The Apgar score is a rapid clinical tool for assessing the need for resuscitation and the response to it; it should not be used in isolation to predict long-term neurodevelopmental outcome, which requires ongoing clinical assessment.",
     "discriminator": "A low 1-minute Apgar score that improves by 5 minutes reflects successful transition or resuscitation rather than permanent neurologic injury."
+  },
+  {
+    "id": "ob-newborn-neonatal-31",
+    "system": "Newborn & Neonatal",
+    "topic": "Bilirubin risk zone vs phototherapy threshold",
+    "stem": "A term, otherwise healthy 48-hour-old newborn has a total serum bilirubin that plots in the high-intermediate risk zone on the hour-specific bilirubin nomogram, with no evidence of hemolysis. Which of the following is the most appropriate management?",
+    "options": [
+      "Administer intravenous immunoglobulin",
+      "Reassure the parents and discharge with no follow-up",
+      "Repeat the total serum bilirubin with clinical follow-up in 24-48 hours",
+      "Perform immediate exchange transfusion",
+      "Initiate phototherapy"
+    ],
+    "answerIndex": 2,
+    "explanation": "The hour-specific (Bhutani) risk-zone nomogram predicts the likelihood of later significant hyperbilirubinemia and sets the follow-up interval; it is not a treatment threshold. A high-intermediate zone value at 48 hours is roughly 11.5-15 mg/dL, several mg/dL below the AAP 2022 phototherapy threshold for a well infant at 38 weeks or more with no neurotoxicity risk factors (approximately 17-18 mg/dL at 48 hours). The correct step is a repeat bilirubin with timely follow-up, not phototherapy.",
+    "optionRationales": [
+      "Incorrect - intravenous immunoglobulin is an adjunct in isoimmune hemolytic disease when bilirubin keeps rising toward the exchange threshold despite intensive phototherapy; there is no hemolysis here.",
+      "Incorrect - discharge with no follow-up is unsafe: a value above the 75th percentile for age predicts a continued rise and mandates a scheduled recheck.",
+      "Correct - the high-intermediate risk zone identifies an infant likely to develop significant hyperbilirubinemia, so the appropriate step is a repeat total serum bilirubin with clinical follow-up within 24-48 hours; phototherapy starts only when the value reaches the gestational-age- and risk-specific AAP threshold.",
+      "Incorrect - exchange transfusion is reserved for a bilirubin at or above the age- and risk-specific exchange threshold or for any sign of acute bilirubin encephalopathy.",
+      "Incorrect - a risk-zone percentile predicts risk but does not set a treatment threshold; this value (roughly 11.5-15 mg/dL at 48 hours) is well below the AAP 2022 phototherapy threshold, and treating means unnecessary phototherapy, mother-infant separation, and interrupted breastfeeding."
+    ],
+    "concept": "Under AAP 2022, phototherapy is started when the total serum bilirubin reaches a threshold read off gestational-age-specific curves (35 weeks through 38 weeks or more), with a separate lower set of curves when neurotoxicity risk factors are present (isoimmune hemolytic disease, G6PD deficiency, asphyxia, sepsis, significant lethargy, temperature instability, acidosis, or albumin below 3.0 g/dL). The hour-specific risk-zone nomogram is a predictive tool - it estimates the chance of later significant hyperbilirubinemia and determines how soon to recheck - and does not itself define a treatment threshold.",
+    "discriminator": "The risk-zone percentile answers 'who will become significantly jaundiced, and when should I recheck'; the gestational-age- and risk-factor-specific threshold curve answers 'who needs phototherapy now'."
   },
   {
     "id": "ob-newborn-neonatal-3",
@@ -6324,30 +6407,6 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Erb (Erb-Duchenne) palsy results from excessive lateral traction on the neck during a difficult delivery (often with shoulder dystocia), injuring the upper brachial plexus (C5-C6). It produces the characteristic 'waiter's tip' posture. Most cases resolve spontaneously within weeks to a few months; persistent deficits beyond 3-6 months warrant referral for further evaluation.",
     "discriminator": "Erb palsy spares hand/finger function and involves the proximal arm (waiter's tip), whereas Klumpke palsy spares the shoulder/elbow but produces a claw hand from lower plexus (C8-T1) involvement."
-  },
-  {
-    "id": "ob-newborn-neonatal-12",
-    "system": "Newborn & Neonatal",
-    "topic": "Erythromycin eye prophylaxis",
-    "stem": "Immediately after an uncomplicated vaginal delivery, the newborn receives erythromycin ointment applied to both eyes. This intervention is primarily intended to prevent which of the following?",
-    "options": [
-      "Congenital rubella syndrome ocular findings",
-      "Retinopathy of prematurity",
-      "Neonatal conjunctivitis caused by Neisseria gonorrhoeae",
-      "Congenital cataracts",
-      "Dacryostenosis"
-    ],
-    "answerIndex": 2,
-    "explanation": "Erythromycin ointment is applied prophylactically to prevent gonococcal ophthalmia neonatorum, which can rapidly cause corneal scarring and blindness if untreated.",
-    "optionRationales": [
-      "Incorrect - congenital rubella ocular findings arise from in utero infection and are not prevented by postnatal topical therapy.",
-      "Incorrect - retinopathy of prematurity results from abnormal retinal vascularization related to prematurity and oxygen exposure, unrelated to topical antibiotics.",
-      "Correct - erythromycin ointment prevents gonococcal ophthalmia neonatorum, a rapidly progressive infection that can cause corneal scarring and blindness.",
-      "Incorrect - cataracts are not prevented by topical antibiotics and result from structural, genetic, or infectious causes such as congenital rubella.",
-      "Incorrect - dacryostenosis is a structural nasolacrimal duct obstruction not prevented by antibiotic ointment."
-    ],
-    "concept": "Erythromycin ointment is applied to the eyes of all newborns shortly after birth primarily to prevent gonococcal ophthalmia neonatorum; it is less reliably effective against chlamydial conjunctivitis, which is more common in the US and requires systemic (oral) therapy if it occurs.",
-    "discriminator": "Erythromycin ointment reliably prevents gonococcal but not chlamydial conjunctivitis; chlamydial conjunctivitis that develops despite prophylaxis requires oral, not topical, erythromycin."
   },
   {
     "id": "ob-newborn-neonatal-13",
@@ -6753,24 +6812,24 @@ export const OB_MCQS: McqQuestion[] = [
     "id": "ob-newborn-neonatal-26",
     "system": "Newborn & Neonatal",
     "topic": "Neonatal hypoglycemia in IDM",
-    "stem": "A 3.9-hour-old infant born at 39 weeks to a mother with poorly controlled gestational diabetes is noted to be jittery and irritable. Point-of-care glucose is 24 mg/dL. The infant is tolerating oral feeds and has no respiratory distress. Which of the following is the most appropriate next step in management?",
+    "stem": "A 4-hour-old infant born at 39 weeks to a mother with poorly controlled gestational diabetes is noted to be jittery and irritable. Point-of-care glucose is 24 mg/dL. The infant is tolerating oral feeds and has no respiratory distress. Which of the following is the most appropriate next step in management?",
     "options": [
-      "Administer glucagon intramuscularly",
-      "Transfer to NICU for exchange transfusion",
-      "Oral or enteral feeding with recheck of glucose in 30-60 minutes",
       "Reassurance only, as jitteriness in infants of diabetic mothers is expected and does not require glucose monitoring",
-      "Immediate IV dextrose bolus followed by continuous infusion"
+      "Transfer to NICU for exchange transfusion",
+      "Immediate IV dextrose bolus followed by continuous infusion",
+      "Administer glucagon intramuscularly",
+      "Oral or enteral feeding with recheck of glucose in 30-60 minutes"
     ],
     "answerIndex": 2,
-    "explanation": "In an infant of a diabetic mother with mild asymptomatic-to-mildly-symptomatic hypoglycemia who is able to feed, initial management is enteral feeding (breast milk or formula) with a recheck of glucose shortly after; IV dextrose is reserved for infants who cannot feed, fail to respond, or have severe/symptomatic hypoglycemia (e.g., seizures).",
+    "explanation": "This infant is symptomatic (jittery, irritable) with a glucose of 24 mg/dL. Symptomatic neonatal hypoglycemia with a glucose below 40 mg/dL is treated with IV dextrose: a 200 mg/kg bolus (2 mL/kg of D10W) followed by a continuous infusion at a glucose infusion rate of 5-8 mg/kg/min, while feeds continue and glucose is rechecked. Feed-and-recheck is the pathway for the ASYMPTOMATIC at-risk infant with a low screening glucose, not for an infant with neuroglycopenic signs.",
     "optionRationales": [
-      "Incorrect: glucagon is not standard first-line therapy in neonatal hypoglycemia and is reserved for specific refractory situations under specialist guidance.",
+      "Incorrect: jitteriness in an infant of a diabetic mother is a symptom of hypoglycemia, not an expected variant; at-risk infants require glucose screening and treatment because untreated hypoglycemia can cause neurologic injury.",
       "Incorrect: exchange transfusion is used for severe polycythemia/hyperviscosity, not for isolated hypoglycemia.",
-      "Correct: because the infant can feed and has only mild symptoms, enteral feeding with a glucose recheck is the appropriate first-line management.",
-      "Incorrect: hypoglycemia in infants of diabetic mothers is common but still requires monitoring and treatment, as untreated hypoglycemia can cause neurologic injury.",
-      "Incorrect: IV dextrose is reserved for infants who cannot tolerate feeds, have severe symptomatic hypoglycemia (seizures, lethargy), or fail to respond to feeding, not as the first step here."
+      "Correct: jitteriness and irritability are neuroglycopenic signs, and symptomatic hypoglycemia with a glucose <40 mg/dL calls for IV dextrose (2 mL/kg D10W bolus, then an infusion at 5-8 mg/kg/min) rather than feeding alone; feeds are continued and the glucose is rechecked in 30 minutes.",
+      "Incorrect: glucagon is not standard first-line therapy in neonatal hypoglycemia and is reserved for specific refractory situations under specialist guidance.",
+      "Incorrect: feed-and-recheck is the pathway for an ASYMPTOMATIC at-risk infant with a low screening glucose. Relying on enteral feeding alone in a symptomatic infant at 24 mg/dL delays correction of a glucose level associated with neurologic injury."
     ],
-    "concept": "Fetal hyperinsulinemia develops in response to maternal hyperglycemia; after delivery the maternal glucose supply is abruptly removed while fetal insulin remains elevated, causing neonatal hypoglycemia, typically within the first few hours of life. Management is stepwise: enteral feeding first, IV dextrose for infants who cannot feed or have severe/refractory hypoglycemia."
+    "concept": "Fetal hyperinsulinemia develops in response to maternal hyperglycemia; after delivery the maternal glucose supply is abruptly removed while fetal insulin remains high, so hypoglycemia appears within the first hours of life. Management is driven by symptoms first and the number second: an asymptomatic at-risk infant is fed and rechecked, whereas a symptomatic infant, one who cannot feed, or one who fails to respond to feeding receives IV dextrose. At-risk infants (infant of a diabetic mother, LGA, SGA, late preterm) are screened before feeds through the first 12-24 hours of life."
   },
   {
     "id": "ob-newborn-neonatal-27",
@@ -6781,19 +6840,19 @@ export const OB_MCQS: McqQuestion[] = [
       "Neonatal dehydration from poor feeding falsely elevates the hematocrit",
       "Maternal Rh sensitization causes fetal hemolysis and reactive erythropoiesis",
       "Delayed cord clamping alone accounts for the elevated hematocrit",
-      "Chronic fetal hypoxia from placental insufficiency stimulates erythropoietin production, leading to increased red cell mass",
-      "Twin-to-twin transfusion causes volume overload in the recipient twin"
+      "Fetal hyperinsulinemia increases metabolic rate and oxygen consumption, producing relative tissue hypoxia that stimulates erythropoietin and increases red cell mass",
+      "Chronic uteroplacental insufficiency causes fetal hypoxia and erythropoietin release, expanding red cell mass"
     ],
     "answerIndex": 3,
-    "explanation": "In infants of diabetic mothers, fetal hyperinsulinemia increases oxygen consumption and can cause relative intrauterine hypoxia, stimulating erythropoietin production and polycythemia, which increases blood viscosity and risk of complications like hypoglycemia, hyperbilirubinemia, and vascular sludging.",
+    "explanation": "In infants of diabetic mothers, fetal hyperinsulinemia raises metabolic rate and oxygen consumption, producing relative intrauterine hypoxia that drives erythropoietin release and polycythemia. The resulting hyperviscosity contributes to tachypnea, hypoglycemia, hyperbilirubinemia, and vascular sludging. The placenta in a diabetic pregnancy is characteristically large rather than insufficient; uteroplacental insufficiency is the hypoxic mechanism of polycythemia in growth restriction and preeclampsia, not in a well-grown infant of a diabetic mother.",
     "optionRationales": [
       "Incorrect: dehydration can cause hemoconcentration but is not the primary described mechanism of polycythemia in infants of diabetic mothers.",
       "Incorrect: there is no indication of Rh sensitization or hemolysis in this vignette; hemolysis would cause anemia, not polycythemia, along with hyperbilirubinemia.",
       "Incorrect: while delayed cord clamping increases hematocrit modestly, it does not fully account for polycythemia in this classic diabetic-pregnancy context.",
-      "Correct: fetal hyperinsulinemia raises fetal metabolic demand and oxygen consumption, producing relative hypoxia that stimulates erythropoietin and increased red cell mass, a well-described mechanism in IDM.",
-      "Incorrect: this infant is a singleton IDM, not a twin gestation, so twin-to-twin transfusion is not the mechanism."
+      "Correct: fetal hyperinsulinemia raises fetal metabolic demand and oxygen consumption, producing relative hypoxia that stimulates erythropoietin and increases red cell mass, the well-described mechanism in infants of diabetic mothers.",
+      "Incorrect: uteroplacental insufficiency is the hypoxic mechanism behind polycythemia in fetal growth restriction and preeclampsia. Diabetic pregnancies characteristically have large placentas and a well-grown or macrosomic fetus, so here the hypoxic stimulus comes from hyperinsulinemia-driven oxygen consumption instead."
     ],
-    "concept": "Infants of diabetic mothers are at risk for a characteristic cluster of complications from fetal hyperinsulinemia: macrosomia, hypoglycemia after delivery, polycythemia/hyperviscosity (from relative intrauterine hypoxia), hypocalcemia, hyperbilirubinemia, and increased risk of respiratory distress syndrome and congenital anomalies (e.g., caudal regression, cardiac defects)."
+    "concept": "Infants of diabetic mothers are at risk for a characteristic cluster of complications from fetal hyperinsulinemia: macrosomia, hypoglycemia after delivery, polycythemia/hyperviscosity (from hyperinsulinemia-driven oxygen consumption and relative intrauterine hypoxia), hypocalcemia, hyperbilirubinemia, and increased risk of respiratory distress syndrome and congenital anomalies (e.g., caudal regression, cardiac defects). Polycythemia is defined by a venous hematocrit above 65%; capillary samples read higher, so confirm centrally."
   },
   {
     "id": "ob-newborn-neonatal-28",
@@ -6818,6 +6877,30 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Neural tube defects arise from failure of neural tube closure and are associated with folic acid deficiency; risk is reduced by periconceptional folic acid supplementation. Elevated maternal serum AFP screens for open defects (myelomeningocele, anencephaly), and myelomeningocele is associated with Chiari II malformation, producing the lemon and banana signs on ultrasound.",
     "mnemonic": "Lemon and banana signs on ultrasound suggest myelomeningocele with Chiari II malformation."
+  },
+  {
+    "id": "ob-newborn-neonatal-47",
+    "system": "Newborn & Neonatal",
+    "topic": "Newborn exposed to untreated maternal gonorrhea",
+    "stem": "A newborn is delivered vaginally at 39 weeks to a mother whose cervical swab at 38 weeks grew Neisseria gonorrhoeae; she was never treated. The infant is well appearing at 2 hours of life, with clear conjunctivae and no discharge, and received erythromycin ophthalmic ointment in the delivery room. Which of the following is the most appropriate additional management?",
+    "options": [
+      "Erythromycin ophthalmic ointment four times daily for 14 days",
+      "A single dose of ceftriaxone 25-50 mg/kg IV or IM (maximum 250 mg)",
+      "Oral erythromycin base for 14 days",
+      "Intravenous penicillin G for 10 days",
+      "No further therapy, because the ointment already given is adequate"
+    ],
+    "answerIndex": 1,
+    "explanation": "An infant born to a mother with untreated gonococcal infection is at high risk of ophthalmia neonatorum and of disseminated disease. Erythromycin ointment is prophylaxis against acquisition at delivery only; it does not reliably prevent infection after a documented untreated maternal infection and does not treat established disease. The exposed but asymptomatic newborn therefore receives a single systemic dose of ceftriaxone, 25-50 mg/kg IV or IM (maximum 250 mg).",
+    "optionRationales": [
+      "Incorrect - prolonged topical therapy achieves no systemic concentrations; topical treatment is never adequate for gonococcal exposure or for established gonococcal ophthalmia.",
+      "Correct - CDC guidance for an asymptomatic infant born to a mother with untreated gonococcal infection is a single dose of ceftriaxone 25-50 mg/kg IV or IM, not to exceed 250 mg (cefotaxime is substituted if ceftriaxone is contraindicated, e.g. hyperbilirubinemia or concurrent calcium-containing IV fluids).",
+      "Incorrect - 14 days of oral erythromycin is the treatment for neonatal chlamydial conjunctivitis or pneumonia, not for gonococcal exposure.",
+      "Incorrect - a multi-day penicillin course is not the regimen; penicillin resistance is widespread, a single ceftriaxone dose suffices for exposure, and proven disseminated gonococcal infection is treated with 7 days of ceftriaxone or cefotaxime (10-14 days if meningitis).",
+      "Incorrect - topical ointment alone is not sufficient when the mother's gonococcal infection went untreated; these infants need a systemic single dose of ceftriaxone."
+    ],
+    "concept": "Erythromycin ophthalmic ointment is universal prophylaxis against gonococcal ophthalmia neonatorum, but it is prophylaxis only: it neither treats established infection nor covers an infant whose mother had untreated gonorrhea at delivery. Those infants receive a single systemic dose of ceftriaxone even when asymptomatic, and infants with culture- or NAAT-proven gonococcal ophthalmia or disseminated disease need a full systemic course plus saline eye irrigation. Ointment is also unreliable against Chlamydia trachomatis, which is treated with oral erythromycin or azithromycin.",
+    "discriminator": "Ointment prevents, it does not treat: documented maternal gonorrhea or confirmed gonococcal ophthalmia calls for systemic single-dose ceftriaxone, while neonatal chlamydial infection calls for a 14-day oral macrolide."
   },
   {
     "id": "ob-newborn-neonatal-29",
@@ -6897,29 +6980,6 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Jaundice within the first 24 hours of life is never physiologic and warrants immediate laboratory evaluation for hemolytic causes (blood type incompatibility, G6PD deficiency, hereditary spherocytosis) because of the risk of rapidly rising bilirubin and kernicterus.",
     "discriminator": "Timing is the key differentiator: onset before 24 hours points to hemolysis or another pathologic cause, whereas onset after 24 hours with a benign course suggests physiologic jaundice."
-  },
-  {
-    "id": "ob-newborn-neonatal-31",
-    "system": "Newborn & Neonatal",
-    "topic": "Phototherapy threshold",
-    "stem": "A term, otherwise healthy 48-hour-old newborn has a total serum bilirubin that plots in the high-intermediate risk zone on the hour-specific bilirubin nomogram, with no evidence of hemolysis. Which of the following is the most appropriate management?",
-    "options": [
-      "Administer intravenous immunoglobulin",
-      "Reassure the parents and discharge with no follow-up",
-      "Start phenobarbital",
-      "Perform immediate exchange transfusion",
-      "Initiate phototherapy"
-    ],
-    "answerIndex": 4,
-    "explanation": "Bilirubin levels in the high-intermediate to high-risk zones on the hour-specific nomogram warrant initiation of phototherapy to reduce unconjugated bilirubin and prevent progression to dangerous levels.",
-    "optionRationales": [
-      "Incorrect - intravenous immunoglobulin is an adjunct used in Rh or ABO hemolytic disease with significant hemolysis, which is not present here.",
-      "Incorrect - discharging without intervention or follow-up risks progression to severe hyperbilirubinemia and kernicterus.",
-      "Incorrect - phenobarbital is not standard therapy for neonatal hyperbilirubinemia.",
-      "Incorrect - exchange transfusion is reserved for bilirubin levels far exceeding phototherapy thresholds or with signs of acute bilirubin encephalopathy, not for high-intermediate risk levels.",
-      "Correct - bilirubin in the high-intermediate risk zone without hemolysis warrants phototherapy to convert unconjugated bilirubin into water-soluble photoisomers for excretion."
-    ],
-    "concept": "Management of neonatal hyperbilirubinemia is guided by hour-specific bilirubin nomograms that account for gestational age and risk factors; phototherapy is initiated at defined bilirubin thresholds to convert unconjugated bilirubin into water-soluble photoisomers for excretion, preventing progression to levels associated with kernicterus."
   },
   {
     "id": "ob-newborn-neonatal-32",
@@ -7178,6 +7238,35 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "All newborns receive a single intramuscular dose of vitamin K shortly after birth to prevent vitamin K deficiency bleeding, since vitamin K crosses the placenta poorly, the neonatal gut cannot yet synthesize it, and breast milk is a poor source."
   },
   {
+    "id": "ob-menstrual-disorders-39",
+    "system": "Menstrual Disorders",
+    "topic": "Adolescent heavy menstrual bleeding (AUB-C)",
+    "stem": "A 14-year-old girl reports heavy menstrual bleeding since menarche at age 12. Her cycles come every 28-30 days and last 8 days, and on her heaviest days she soaks a pad every 2 hours. She has frequent epistaxis and bled heavily after a dental extraction, and her mother had a postpartum hemorrhage. Hemoglobin is 9.8 g/dL with a ferritin of 6 ng/mL; platelet count, PT and aPTT are normal. Which of the following is the most appropriate next diagnostic step?",
+    "options": [
+      "Reassurance that heavy cycles are expected in the years after menarche",
+      "Pelvic MRI to evaluate for adenomyosis",
+      "Von Willebrand factor antigen, von Willebrand factor activity, and factor VIII level",
+      "Karyotype",
+      "Endometrial biopsy"
+    ],
+    "answerIndex": 2,
+    "explanation": "Heavy menstrual bleeding dating from menarche, with mucocutaneous bleeding (epistaxis, post-dental bleeding) and a family history of postpartum hemorrhage, points to an inherited bleeding disorder (AUB-C in the PALM-COEIN system). Von Willebrand disease is the most common and is found in roughly 5-20% of adolescents with heavy menstrual bleeding, and a normal aPTT does not exclude it. Testing is VWF antigen, VWF activity (ristocetin cofactor) and factor VIII, ideally drawn off hormonal therapy and not during acute stress, since all three are acute-phase reactants.",
+    "optionRationales": [
+      "Incorrect - irregular, unpredictable anovulatory bleeding is common in the first 1-2 years after menarche, but regular cycles this heavy, with iron-deficiency anemia and a positive bleeding history, are not physiologic and demand evaluation.",
+      "Incorrect - adenomyosis causes heavy, painful bleeding in older reproductive-age women and would not explain lifelong epistaxis, post-surgical bleeding, or the family history; MRI is not a first-line adolescent investigation.",
+      "Correct - regular but very heavy cycles since menarche plus a positive bleeding history and family history make von Willebrand disease the leading diagnosis; VWF antigen, VWF activity (ristocetin cofactor) and factor VIII are the initial specific tests, and a normal aPTT does not rule the disease out.",
+      "Incorrect - karyotype is used for suspected gonadal dysgenesis or a disorder of sex development presenting with amenorrhea or delayed puberty, not for heavy menstrual bleeding in a girl with regular ovulatory cycles.",
+      "Incorrect - endometrial biopsy assesses hyperplasia and carcinoma risk in women 45 or older, or younger women with prolonged unopposed-estrogen exposure or failed therapy; it has no role in a 14-year-old with regular cycles."
+    ],
+    "concept": "Heavy menstrual bleeding dating from the very first period is the classic presentation of an inherited bleeding disorder (AUB-C). ACOG recommends screening adolescents who have heavy menstrual bleeding - especially with a positive bleeding history (epistaxis, easy bruising, prolonged bleeding after surgery or dental work, or a family history of heavy bleeding or postpartum hemorrhage) - with CBC and platelet count, ferritin, PT/aPTT and von Willebrand studies, before attributing the bleeding to immature anovulatory cycles. Treatment of confirmed von Willebrand disease is combined hematology and gynecology care: tranexamic acid, combined hormonal contraception or the levonorgestrel IUD, desmopressin for type 1, and iron repletion.",
+    "conceptRule": [
+      "Heavy menstrual bleeding since menarche, or a positive bleeding screen (epistaxis, post-dental/post-surgical bleeding, family history of postpartum hemorrhage) -> CBC with platelets, ferritin, PT/aPTT, and von Willebrand studies (VWF antigen, VWF activity, factor VIII)",
+      "Normal aPTT -> does not exclude von Willebrand disease; draw specific VWF testing off hormonal therapy and when not acutely stressed, and repeat borderline results",
+      "Confirmed bleeding disorder with heavy menstrual bleeding -> tranexamic acid and/or hormonal therapy (combined pill or levonorgestrel IUD) plus iron, co-managed with hematology; desmopressin for type 1 disease"
+    ],
+    "discriminator": "Cycle regularity separates the two adolescent causes: irregular, unpredictable heavy bleeding in the first years after menarche suggests anovulation (AUB-O), whereas regular but very heavy cycles from the first period, with mucocutaneous bleeding, suggests von Willebrand disease (AUB-C)."
+  },
+  {
     "id": "ob-menstrual-disorders-1",
     "system": "Menstrual Disorders",
     "topic": "Anovulatory bleeding in adolescent",
@@ -7234,24 +7323,25 @@ export const OB_MCQS: McqQuestion[] = [
       "Diagnostic laparoscopy",
       "Empiric combined oral contraceptive pills",
       "Progestin withdrawal test",
-      "Transvaginal ultrasound with endometrial biopsy if endometrium is thickened"
+      "Endometrial biopsy, with transvaginal ultrasound to evaluate for structural causes"
     ],
     "answerIndex": 4,
-    "explanation": "In women 45 years and older presenting with abnormal uterine bleeding, endometrial cancer must be excluded, so transvaginal ultrasound (with biopsy if the endometrial stripe is thickened, generally >4 mm) or direct endometrial biopsy is the appropriate next step.",
+    "explanation": "In women 45 and older, abnormal uterine bleeding requires endometrial tissue sampling as part of the initial evaluation, regardless of endometrial thickness. The >4 mm endometrial stripe threshold is validated only for POSTmenopausal bleeding; in a premenopausal or perimenopausal woman a thin stripe does not exclude hyperplasia or carcinoma. Transvaginal ultrasound is still valuable for structural lesions (fibroids, polyps, adenomyosis) but complements rather than replaces the biopsy.",
     "optionRationales": [
       "While anovulatory bleeding is common in perimenopause, endometrial malignancy risk rises with age, so this bleeding pattern cannot simply be reassured away without evaluating the endometrium.",
       "Diagnostic laparoscopy is used to evaluate suspected endometriosis or unexplained infertility/pelvic pain, not as an initial step for AUB in this age group.",
       "Starting empiric hormonal therapy without first excluding endometrial malignancy would be inappropriate management in this age group.",
       "The progestin withdrawal test is used in the amenorrhea workup, not the initial evaluation of abnormal bleeding in a woman at risk for endometrial pathology.",
-      "Correct: age 45 and older with abnormal uterine bleeding warrants endometrial evaluation (ultrasound with biopsy if thickened, or direct biopsy) to rule out endometrial hyperplasia or carcinoma before assuming a benign anovulatory cause."
+      "Correct: at age 45 or older, abnormal uterine bleeding warrants endometrial biopsy as part of the initial workup to exclude hyperplasia or carcinoma, with ultrasound performed alongside it to look for structural causes. A thin endometrial stripe does not exclude malignancy before menopause, so sampling is not conditional on the ultrasound measurement."
     ],
-    "concept": "Age is the key branch point in abnormal uterine bleeding management: in women under 45 without risk factors, anovulation can often be managed empirically, but women 45 and older (or younger women with risk factors like obesity, PCOS, or unopposed estrogen exposure) require endometrial evaluation to exclude hyperplasia or carcinoma before or alongside empiric treatment.",
+    "concept": "Age is the key branch point in abnormal uterine bleeding: in women under 45 without risk factors, anovulatory bleeding can often be managed empirically, but women 45 and older (and younger women with risk factors such as obesity, PCOS, nulliparity, chronic anovulation, or unopposed estrogen exposure) require endometrial tissue sampling to exclude hyperplasia or carcinoma. Endometrial thickness cannot be used to decide whether to biopsy before menopause: the >4 mm stripe rule is a postmenopausal rule only.",
     "conceptRule": [
-      "AUB age <45, no risk factors -> may manage empirically as anovulation",
-      "AUB age >=45, or younger with risk factors (obesity, PCOS, nulliparity, chronic anovulation) -> endometrial evaluation (TVUS +/- biopsy)",
-      "Postmenopausal bleeding -> TVUS; endometrial stripe >4mm -> endometrial biopsy"
+      "AUB age <45 without risk factors -> may manage empirically as anovulation; sample the endometrium if bleeding persists or fails medical therapy",
+      "AUB age >=45 -> endometrial biopsy regardless of endometrial thickness; TVUS is complementary (structural causes such as fibroids or polyps), not a substitute for sampling",
+      "AUB age <45 with risk factors (obesity, PCOS, nulliparity, chronic anovulation, unopposed estrogen, Lynch syndrome) -> endometrial biopsy as well",
+      "Postmenopausal bleeding -> TVUS; endometrial stripe >4 mm, nondiagnostic imaging, or persistent bleeding -> endometrial biopsy. The 4 mm threshold applies only to POSTmenopausal bleeding"
     ],
-    "discriminator": "The patient's age of 48 (crossing the threshold where endometrial cancer risk mandates evaluation) is what distinguishes this from a younger patient who could be managed with empiric anovulation therapy."
+    "discriminator": "Her age of 48 crosses the threshold at which abnormal bleeding mandates endometrial sampling, unlike a younger woman without risk factors who could be treated empirically; and because she is still premenopausal, the endometrial-stripe shortcut used after menopause does not apply to her."
   },
   {
     "id": "ob-menstrual-disorders-4",
@@ -7520,29 +7610,6 @@ export const OB_MCQS: McqQuestion[] = [
     ],
     "concept": "Mullerian agenesis (Mayer-Rokitansky-Kuster-Hauser syndrome) results from failure of paramesonephric (Mullerian) duct development, causing absence of the uterus and upper vagina in a 46,XX individual with normal ovaries (and thus normal puberty, breast development, and androgen-driven hair pattern). It is a leading cause of primary amenorrhea with normal secondary sexual characteristics.",
     "discriminator": "Normal, coarse pubic/axillary hair distinguishes Mullerian agenesis from AIS, in which hair is sparse or absent."
-  },
-  {
-    "id": "ob-menstrual-disorders-15",
-    "system": "Menstrual Disorders",
-    "topic": "Mullerian agenesis renal anomalies",
-    "stem": "A 15-year-old girl is diagnosed with Mullerian agenesis after presenting with primary amenorrhea, normal secondary sexual characteristics, and an absent uterus with a blind vaginal pouch. Given the embryologic association of this condition, which of the following additional studies is most appropriate at this time?",
-    "options": [
-      "Karyotype for 45,X mosaicism",
-      "Renal ultrasound",
-      "Bone age radiograph",
-      "Echocardiogram for coarctation of the aorta",
-      "FSH and LH levels"
-    ],
-    "answerIndex": 1,
-    "explanation": "Because the paramesonephric (Mullerian) and mesonephric (Wolffian, which gives rise to the urinary system) ducts develop in close proximity, Mullerian agenesis is associated with a significant rate (roughly 30%) of renal anomalies (e.g., unilateral renal agenesis, ectopic kidney), warranting renal ultrasound screening.",
-    "optionRationales": [
-      "Karyotype in Mullerian agenesis is expected to be normal 46,XX; screening for Turner mosaicism is not routinely indicated here since ovarian function is normal.",
-      "Mullerian and renal (mesonephric-derived urinary tract) development are closely linked embryologically, so renal ultrasound is indicated to screen for anomalies such as unilateral renal agenesis.",
-      "Bone age is used to evaluate constitutional growth delay or precocious/delayed puberty, not relevant to the anatomic diagnosis of Mullerian agenesis.",
-      "Cardiac anomalies (e.g., coarctation, bicuspid aortic valve) are associated with Turner syndrome, not Mullerian agenesis.",
-      "FSH/LH are expected to be normal in Mullerian agenesis since ovarian function is intact; they are useful in distinguishing gonadal failure (e.g., Turner), not indicated as a routine follow-up here."
-    ],
-    "concept": "Because Mullerian (paramesonephric) and renal (mesonephric) duct systems develop concurrently and in close anatomic proximity, patients newly diagnosed with Mullerian agenesis should undergo renal ultrasound to screen for associated urinary tract anomalies, in addition to skeletal screening in some protocols."
   },
   {
     "id": "ob-menstrual-disorders-16",
@@ -8648,12 +8715,18 @@ export const OB_MCQS: McqQuestion[] = [
     "optionRationales": [
       "Incorrect: both procedures are intended as permanent, fertility-ending methods; neither preserves fertility.",
       "Incorrect: tubal ligation can also be performed at the time of cesarean delivery; salpingectomy is not the only option.",
-      "Correct: complete tubal removal essentially eliminates tubal pregnancy/failure risk and is associated with a reduction in ovarian cancer risk, particularly relevant for a BRCA1 carrier.",
+      "Correct: complete tubal removal essentially eliminates tubal pregnancy and contraceptive failure risk and lowers subsequent ovarian cancer risk, since most high-grade serous carcinomas arise in tubal epithelium. In a BRCA1 carrier, however, salpingectomy alone is NOT adequate risk reduction - risk-reducing bilateral salpingo-oophorectomy is the recommended operation once childbearing is complete.",
       "Incorrect: salpingectomy is even less reversible than tubal ligation since the tubes are entirely removed rather than just occluded/segmented.",
       "Incorrect: both procedures are typically performed under similar anesthesia (general, spinal, or with cesarean anesthesia); this is not a distinguishing advantage."
     ],
-    "concept": "Bilateral salpingectomy is increasingly preferred over segmental tubal ligation for permanent sterilization because it has a lower failure/ectopic pregnancy rate and is associated with reduced ovarian cancer risk, since many high-grade serous ovarian cancers arise from fallopian tube epithelium.",
-    "discriminator": "The BRCA1 mutation and desire to reduce future ovarian cancer risk specifically favors complete tube removal over simple tubal occlusion."
+    "concept": "Bilateral salpingectomy is increasingly preferred over segmental tubal ligation for permanent sterilization because it has a lower failure/ectopic pregnancy rate and is associated with reduced ovarian cancer risk, since many high-grade serous ovarian cancers arise from fallopian tube epithelium. In a BRCA1/2 carrier this is not the whole answer: salpingectomy alone is NOT sufficient risk reduction, because the ovary itself carries substantial risk (~40% lifetime ovarian cancer risk with BRCA1). Risk-reducing bilateral salpingo-oophorectomy (RRSO) is recommended at age 35-40 for BRCA1 and 40-45 for BRCA2 once childbearing is complete (NCCN/ACOG/SGO); interval salpingectomy with delayed oophorectomy is an option only for carriers who choose to defer oophorectomy, and it does not substitute for RRSO.",
+    "conceptRule": [
+      "BRCA1 carrier, childbearing complete -> risk-reducing bilateral salpingo-oophorectomy at age 35-40",
+      "BRCA2 carrier -> RRSO at age 40-45 (ovarian cancer onset is later than in BRCA1)",
+      "Carrier declining/deferring oophorectomy -> interval salpingectomy is a partial, non-equivalent option; RRSO remains the recommendation",
+      "Average-risk woman requesting sterilization -> bilateral salpingectomy preferred over tubal occlusion (lower failure rate, lower ovarian cancer risk)"
+    ],
+    "discriminator": "For an average-risk woman, salpingectomy beats tubal occlusion on both failure rate and ovarian cancer risk - that is what this question tests. Do not extend it to hereditary risk: in a BRCA1 carrier the risk-reducing operation is bilateral salpingo-oophorectomy at 35-40, not salpingectomy alone."
   },
   {
     "id": "ob-contraception-2",
@@ -9085,16 +9158,22 @@ export const OB_MCQS: McqQuestion[] = [
       "Progestin-only pills are ineffective unless taken with food"
     ],
     "answerIndex": 3,
-    "explanation": "Because progestin-only pills rely heavily on cervical mucus thickening (an effect that diminishes within hours), they must be taken at the same time daily, generally within a 3-hour window, unlike combined pills which have more forgiving timing.",
+    "explanation": "Norethindrone and norgestrel progestin-only pills rely heavily on cervical mucus thickening, an effect that wanes within hours, so they must be taken within about a 3-hour window each day. Combined pills are far more forgiving: a dose is only considered 'late' up to 24 hours, and backup contraception is needed once a dose is at least 48 hours overdue.",
     "optionRationales": [
       "Progestin-only pills do not carry meaningful VTE risk since they lack estrogen; timing does not affect thrombosis risk.",
       "The strict timing requirement applies for as long as the method is used, not just the first month.",
-      "It is combined pills that have the more forgiving ~12-hour window; progestin-only pills have a stricter ~3-hour window, the reverse of this statement.",
+      "This is wrong twice over: the strict ~3-hour window belongs to norethindrone/norgestrel progestin-only pills, and combined pills do not have a 12-hour window — a combined pill is merely 'late' up to 24 hours (take it and continue, no backup needed), with backup required only once a dose is >=48 hours overdue.",
       "Correct: the short half-life effect on cervical mucus means efficacy drops quickly if the pill is taken late, so strict same-time dosing (within about 3 hours) is required.",
       "There is no food requirement for efficacy of progestin-only pills."
     ],
-    "concept": "Progestin-only pills must be taken at the same time every day, within about a 3-hour window, because their contraceptive effect depends on maintaining thick cervical mucus, an effect that wanes quickly if a dose is delayed. This strict timing is a key counseling point distinguishing them from combined pills.",
-    "discriminator": "The short window for cervical mucus effect (versus ovulation suppression in combined pills) is what makes timing adherence uniquely critical for progestin-only pills."
+    "concept": "Norethindrone and norgestrel progestin-only pills must be taken at the same time every day, within about a 3-hour window, because their contraceptive effect depends on maintaining thick cervical mucus, which wanes quickly if a dose is delayed. The drospirenone-only pill is the exception — it suppresses ovulation more reliably and has a 24-hour missed-dose window. Combined pills are also forgiving, with a 24-hour late window and backup only after >=48 hours; this contrast in timing strictness is a key counseling point.",
+    "conceptRule": [
+      "Norethindrone or norgestrel POP taken >3 h late -> take it as soon as remembered and use backup contraception for 48 h (consider emergency contraception if there was intercourse in the interim)",
+      "Drospirenone-only pill (4 mg) missed by >24 h -> take one pill as soon as possible and use backup for 7 days",
+      "Combined pill <24 h late -> take it and continue; no backup needed",
+      "Combined pill >=48 h overdue (2 or more pills missed) -> take the most recent pill now, continue daily, use backup for 7 days, and consider emergency contraception if pills were missed in the first week"
+    ],
+    "discriminator": "The short-lived cervical mucus effect (versus ovulation suppression in combined pills and in the drospirenone-only pill) is what makes same-time dosing uniquely critical for norethindrone/norgestrel progestin-only pills."
   },
   {
     "id": "ob-contraception-18",
@@ -9169,16 +9248,22 @@ export const OB_MCQS: McqQuestion[] = [
       "Progestin-only pill"
     ],
     "answerIndex": 4,
-    "explanation": "Progestin-only pills avoid the estrogen-related reduction in milk supply and protein content seen with combined methods, making them the preferred hormonal option in early breastfeeding.",
+    "explanation": "Progestin-only methods have no adverse effect on lactation and, unlike combined hormonal contraception, carry no added venous thromboembolism risk in the early puerperium, so they can be started immediately postpartum — making the progestin-only pill the appropriate hormonal choice at 3 weeks postpartum in a breastfeeding woman.",
     "optionRationales": [
-      "Estrogen-containing pills decrease breastmilk protein content and milk supply and are contraindicated before 6 weeks postpartum.",
+      "Estrogen-containing pills may reduce milk volume, but the decisive problem this early is venous thromboembolism risk: for breastfeeding women combined hormonal contraception is US MEC Category 4 at <21 days postpartum and Category 3 from 21 to <30 days (Category 2 at 30-42 days without other VTE risk factors). At 3 weeks postpartum a progestin-only method is the better choice.",
       "Breastfeeding alone (lactational amenorrhea) is unreliable beyond strict criteria, and effective contraception should still be offered.",
       "The vaginal ring is a combined estrogen-progestin method and carries the same lactation and postpartum thrombosis concerns as combined pills.",
       "The patch is a combined estrogen-progestin method and is not preferred in early breastfeeding.",
-      "Correct: progestin-only pills do not contain estrogen, so they do not compromise milk volume or composition and are safe shortly after delivery in a breastfeeding woman."
+      "Correct: progestin-only pills contain no estrogen, so they do not affect milk volume and add no VTE risk; they are US MEC Category 1-2 at any time postpartum, including in breastfeeding women, and can be started immediately after delivery."
     ],
-    "concept": "Estrogen-containing contraceptives reduce breastmilk supply and protein content and are avoided in the first 6 weeks postpartum; progestin-only methods (pill, implant, DMPA, levonorgestrel IUD) are preferred choices for breastfeeding women who want hormonal contraception soon after delivery.",
-    "discriminator": "The absence of estrogen is what makes progestin-only pills compatible with breastfeeding, unlike any combined estrogen-progestin method."
+    "concept": "Combined hormonal contraceptives may reduce breastmilk volume (an inconsistent effect once lactation is established, and not a change in milk protein content), but the reason they are avoided in the early puerperium is venous thromboembolism risk: US MEC Category 4 at <21 days postpartum in breastfeeding women, Category 3 at 21 to <30 days, and Category 2 by 30-42 days if there are no other VTE risk factors. Progestin-only methods (pill, implant, DMPA, levonorgestrel IUD) have no adverse effect on lactation and no added thrombotic risk, so they are the preferred hormonal options soon after delivery.",
+    "conceptRule": [
+      "Breastfeeding and <21 days postpartum -> combined hormonal contraception is US MEC Category 4 (do not use); offer a progestin-only method",
+      "Breastfeeding and 21 to <30 days postpartum -> combined hormonal contraception is Category 3 (usually avoid); progestin-only pill, implant, DMPA, or LNG-IUD is preferred",
+      ">=30-42 days postpartum with no other VTE risk factors -> combined methods become Category 2 and may be used",
+      "Any time postpartum, breastfeeding or not -> progestin-only methods are Category 1-2 and can be started immediately"
+    ],
+    "discriminator": "The absence of estrogen is what makes progestin-only pills compatible with the early puerperium and with breastfeeding — it removes both the thrombotic risk and any effect on milk volume — unlike any combined estrogen-progestin method (pill, patch, or ring)."
   },
   {
     "id": "ob-contraception-20",
@@ -9435,7 +9520,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Low-dose vaginal estrogen has minimal systemic absorption and is not contraindicated by a history of VTE.",
       "Correct — a history of VTE is an absolute contraindication to systemic hormone therapy; non-hormonal therapy should be used for vasomotor symptoms.",
       "Both the estrogen and progestin components carry thrombotic risk; it is not solely a progestin effect.",
-      "Although transdermal estrogen carries somewhat lower VTE risk than oral estrogen, a personal history of VTE is still considered a contraindication to systemic hormone therapy of any route at the shelf-exam level.",
+      "Transdermal estradiol bypasses first-pass hepatic synthesis of clotting factors and does carry a lower VTE risk than oral estrogen, but a prior unprovoked VTE remains a contraindication to systemic hormone therapy by any route. Transdermal therapy is considered only in selected, severely symptomatic patients who remain on anticoagulation, with menopause-specialist input — it is not the appropriate initial answer here.",
       "Completing anticoagulation does not eliminate the increased baseline thrombosis risk that contraindicates systemic estrogen."
     ],
     "concept": "Absolute contraindications to systemic hormone therapy include a history of VTE/PE, prior stroke or MI, active or past hormone-sensitive breast cancer, undiagnosed vaginal bleeding, and active liver disease. Low-dose vaginal estrogen for isolated GSM is generally safe even in many of these patients because systemic absorption is minimal.",
@@ -9535,13 +9620,19 @@ export const OB_MCQS: McqQuestion[] = [
     "answerIndex": 1,
     "explanation": "Weight-bearing exercise provides the mechanical loading stimulus that most effectively preserves and builds bone mineral density, making it the single best lifestyle modification for osteoporosis prevention.",
     "optionRationales": [
-      "Smoking cessation is beneficial but is not the single best measure compared with weight-bearing exercise for building bone density.",
+      "She is not described as a smoker. Smoking cessation is important for bone (and everything else) in patients who smoke, but it does not supply the mechanical loading stimulus that bone requires, so it is not the best answer here.",
       "Correct — weight-bearing exercise, such as walking or resistance training, directly stimulates bone formation and is the best lifestyle intervention for prevention.",
       "Calcium and vitamin D are important adjuncts but are less effective than weight-bearing exercise as the single best modifiable measure to prevent bone loss.",
       "Swimming, though beneficial for cardiovascular health, is non-weight-bearing and provides minimal benefit to bone density.",
       "Bisphosphonates are pharmacologic treatment for established osteoporosis (T-score less than or equal to -2.5), not a first-line prevention lifestyle measure in a 45-year-old without osteoporosis."
     ],
-    "concept": "Weight-bearing exercise is the single most effective lifestyle measure for building and preserving bone mineral density and preventing osteoporosis, outperforming calcium/vitamin D supplementation alone. In elderly patients with existing osteoporosis, weight-bearing activities that minimize fall risk, such as walking, are preferred over higher-fall-risk activities like swimming."
+    "concept": "Bone remodels in response to mechanical loading, so weight-bearing and resistance exercise — walking, stair climbing, jogging, resistance training — build and preserve bone mineral density, whereas non-weight-bearing exercise such as swimming or cycling does not, even though both improve cardiovascular fitness. That, not fall risk, is why swimming is the wrong answer: swimming is in fact among the lowest-fall-risk forms of exercise. Adequate calcium and vitamin D, avoidance of tobacco and excess alcohol, and — in patients who already have osteoporosis — balance and strength training for fall prevention are important adjuncts, but loading exercise is the single best lifestyle measure for prevention.",
+    "conceptRule": [
+      "Weight-bearing/resistance exercise -> mechanical loading -> builds and preserves BMD; swimming or cycling -> no loading -> no BMD benefit (cardiovascular benefit only)",
+      "Women 51 and older -> calcium 1200 mg/day (diet first) + vitamin D 800 IU/day -> adjunct to loading exercise, not a substitute",
+      "Established osteoporosis in an older patient -> add balance and strength training and address home fall hazards, medications, and vision",
+      "T-score -2.5 or lower, or a prior hip/vertebral fragility fracture, or osteopenia with FRAX 10-year hip risk 3% or greater / major osteoporotic risk 20% or greater -> pharmacologic therapy (bisphosphonate first line)"
+    ]
   },
   {
     "id": "ob-menopause-11",
@@ -10336,10 +10427,10 @@ export const OB_MCQS: McqQuestion[] = [
       "Submucosal fibroids protrude into or distort the endometrial cavity, increasing surface area and disrupting normal hemostatic mechanisms of the endometrium, causing heavy bleeding.",
       "Intramural fibroids that do not distort the cavity are less likely to cause significant bleeding compared to submucosal ones.",
       "Cervical leiomyomas are uncommon and would more likely cause obstructive symptoms than characteristic heavy uterine bleeding.",
-      "Subserosal fibroids grow outward from the uterine serosa and typically cause bulk/pressure symptoms (globular uterus) rather than bleeding."
+      "Subserosal fibroids grow outward from the uterine serosa and typically cause bulk and pressure symptoms with an irregular, nodular uterine contour rather than abnormal bleeding."
     ],
-    "concept": "Leiomyoma location determines symptomatology: submucosal fibroids cause bleeding because they distort the endometrial cavity, while subserosal fibroids cause bulk/pressure symptoms with a globular uterus and typically no bleeding. Intramural fibroids can do either depending on their relationship to the cavity.",
-    "discriminator": "Cavity distortion (submucosal) drives bleeding, whereas an enlarged smooth/globular contour without cavity distortion (subserosal) drives bulk symptoms without bleeding."
+    "concept": "Leiomyoma location determines symptomatology: submucosal fibroids cause heavy bleeding because they distort the endometrial cavity, while subserosal fibroids cause bulk and pressure symptoms with an irregular, nodular uterine contour and typically little or no bleeding. Intramural fibroids can do either depending on their relationship to the cavity. Reserve the descriptor \"diffusely enlarged, globular, boggy, tender\" for adenomyosis, not for fibroids.",
+    "discriminator": "Cavity distortion (submucosal) drives bleeding, whereas an enlarged, irregularly contoured, nodular uterus without cavity distortion (subserosal) drives bulk symptoms without bleeding; a diffusely enlarged, globular, boggy uterus points instead to adenomyosis."
   },
   {
     "id": "ob-benign-gynecology-21",
@@ -10903,15 +10994,15 @@ export const OB_MCQS: McqQuestion[] = [
       "Inhibin B"
     ],
     "answerIndex": 4,
-    "explanation": "Sertoli-Leydig cell tumors are sex cord-stromal tumors that, like granulosa cell tumors, secrete inhibin, which serves as a useful serum marker for diagnosis and surveillance.",
+    "explanation": "Sertoli-Leydig cell tumors are sex cord-stromal tumors and, like granulosa cell tumors, may secrete inhibin, which is the only serum marker among the options useful for surveillance. In a virilizing tumor the marker actually followed after resection is the hormone the tumor produced — here the markedly elevated serum testosterone, which should normalize within days to weeks of resection and rise again with recurrence.",
     "optionRationales": [
       "CA 19-9 is associated with mucinous ovarian tumors and pancreatic cancer, not sex cord-stromal tumors.",
       "Alpha-fetoprotein is elevated in yolk sac tumors and some germ cell tumors, not sex cord-stromal tumors.",
       "CA-125 is a nonspecific marker most useful for epithelial ovarian cancers, not sex cord-stromal tumors.",
       "Beta-hCG is elevated in choriocarcinoma and some germ cell tumors, not sex cord-stromal tumors.",
-      "Inhibin is produced by sex cord-stromal tumors (both granulosa and Sertoli-Leydig cell tumors) and is used to monitor for recurrence."
+      "Correct (best of the options listed): inhibin is produced by sex cord-stromal tumors — consistently by granulosa cell tumors and variably by Sertoli-Leydig cell tumors — and is used to monitor for recurrence. Be aware that for a virilizing Sertoli-Leydig tumor the most informative marker is the tumor's own product, serum testosterone (and androstenedione), which is not offered here."
     ],
-    "concept": "Sex cord-stromal tumors (granulosa cell and Sertoli-Leydig cell tumors) secrete inhibin, which functions as a clinically useful tumor marker for both initial diagnosis and post-treatment surveillance for recurrence.",
+    "concept": "Sex cord-stromal tumors (granulosa cell and Sertoli-Leydig cell tumors) may secrete inhibin (and anti-Mullerian hormone), which serve as serum markers for diagnosis and post-treatment surveillance — most reliably in granulosa cell tumors, where inhibin B and AMH are the standard markers followed. For a hormonally active tumor the best marker is whatever the tumor secretes: testosterone (and androstenedione) in a virilizing Sertoli-Leydig tumor, estradiol/inhibin/AMH in a granulosa cell tumor. None of these tumors is tracked with CA-125, beta-hCG, AFP, or CA 19-9.",
     "discriminator": "Rapid-onset virilization (voice change, clitoromegaly, temporal balding) with an adnexal mass points to an androgen-secreting Sertoli-Leydig tumor rather than the estrogenic granulosa cell tumor."
   },
   {
@@ -11024,13 +11115,13 @@ export const OB_MCQS: McqQuestion[] = [
     "answerIndex": 0,
     "explanation": "Yolk sac (endodermal sinus) tumor is a highly malignant germ cell tumor that occurs primarily in children and young women and characteristically secretes alpha-fetoprotein, which serves as a useful marker for diagnosis and monitoring.",
     "optionRationales": [
-      "Yolk sac tumor is the classic pediatric/young-adult ovarian malignancy that produces Schiller-Duval bodies histologically and secretes AFP, matching this presentation.",
-      "Dysgerminoma is associated with elevated LDH, not AFP, and does not typically raise AFP.",
+      "Yolk sac (endodermal sinus) tumor is the AFP-secreting germ cell tumor of children and young women, shows Schiller-Duval bodies histologically, and grows rapidly, matching this presentation.",
+      "Dysgerminoma is the most common malignant ovarian germ cell tumor, including in children, but its marker is LDH (with hCG in some cases), not AFP, so it does not fit a markedly elevated AFP.",
       "Granulosa cell tumor is a sex cord-stromal tumor that produces estrogen (and inhibin), not AFP, and typically presents with precocious puberty in children or postmenopausal bleeding in adults, not marker elevation of AFP.",
       "Struma ovarii is a monodermal teratoma composed of thyroid tissue and does not secrete AFP.",
       "Mature cystic teratoma is a benign tumor and does not secrete AFP; it classically presents with a cystic mass containing hair, teeth, or sebaceous material rather than a rapidly growing solid mass with marker elevation."
     ],
-    "concept": "Yolk sac tumor is the second most common malignant ovarian germ cell tumor and the most common ovarian malignancy in children. It secretes AFP, which is used both diagnostically and to monitor for recurrence after treatment. This must be distinguished from granulosa cell tumor, an estrogen-secreting sex cord-stromal tumor, which can also present in children but with precocious puberty rather than AFP elevation.",
+    "concept": "Yolk sac tumor is the second most common malignant ovarian germ cell tumor - dysgerminoma is the most common, in children and adolescents as well as in adults - and it is the germ cell tumor that secretes AFP, used both diagnostically and to monitor for recurrence after treatment. This must be distinguished from granulosa cell tumor, an estrogen-secreting sex cord-stromal tumor, which can also present in children but with precocious puberty rather than AFP elevation.",
     "discriminator": "Marked AFP elevation in a child or young woman with a rapidly growing ovarian mass points to yolk sac tumor, as opposed to estrogen/precocious-puberty features seen with granulosa cell tumor."
   },
   {
@@ -11070,15 +11161,20 @@ export const OB_MCQS: McqQuestion[] = [
       "Increasing mammogram frequency to every 3 months"
     ],
     "answerIndex": 0,
-    "explanation": "Risk-reducing bilateral salpingo-oophorectomy, typically performed by age 35-40 or after childbearing is complete in BRCA carriers, substantially reduces both ovarian and breast cancer risk and mortality; ovarian cancer screening with ultrasound/CA-125 has not been shown to reduce mortality.",
+    "explanation": "Risk-reducing bilateral salpingo-oophorectomy, offered once childbearing is complete (age 35-40 in BRCA1, 40-45 in BRCA2), reduces the risk of ovarian/fallopian tube cancer by ~80-90% and improves all-cause mortality, because there is no effective screening test for ovarian cancer; ultrasound and CA-125 screening has never been shown to reduce ovarian cancer mortality.",
     "optionRationales": [
-      "Correct: risk-reducing salpingo-oophorectomy is the most effective intervention, lowering both ovarian cancer risk (~80-90%) and breast cancer risk (via decreased estrogen exposure) in BRCA carriers.",
+      "Correct: RRSO reduces ovarian/fallopian tube cancer risk by ~80-90% and carries an all-cause mortality benefit, the largest mortality effect among the listed options. Note that RRSO is not an established breast cancer risk-reduction strategy — the early ~50% estimates were confounded by immortal-time and selection bias, and prospective analyses show no significant breast cancer reduction in BRCA1 carriers; risk-reducing mastectomy is the intervention aimed at breast risk.",
       "OCPs modestly reduce ovarian cancer risk in the general population, but are not the primary or most effective risk-reduction strategy in confirmed BRCA carriers compared to surgery.",
       "Ultrasound and CA-125 screening has not been shown to reduce ovarian cancer mortality and is not a substitute for risk-reducing surgery in BRCA carriers.",
       "Tamoxifen reduces breast cancer risk somewhat but has a smaller mortality benefit than surgery and does not address ovarian cancer risk.",
       "More frequent mammography increases detection but does not reduce the underlying risk of developing cancer the way risk-reducing surgery does."
     ],
-    "concept": "In BRCA1/2 carriers who have completed childbearing, risk-reducing bilateral salpingo-oophorectomy (typically by age 35-40) is recommended and reduces both ovarian and breast cancer risk and overall mortality. Risk-reducing bilateral mastectomy is also offered and provides the greatest breast cancer risk reduction, but salpingo-oophorectomy has the largest impact on mortality due to the lack of effective ovarian cancer screening."
+    "concept": "In BRCA carriers who have completed childbearing, risk-reducing bilateral salpingo-oophorectomy is recommended at age 35-40 for BRCA1 and 40-45 for BRCA2. It reduces ovarian/fallopian tube cancer risk by ~80-90% and improves all-cause mortality, and it has the largest mortality impact of the available options precisely because there is no effective ovarian cancer screening. A breast cancer risk-reduction effect of RRSO is NOT established: the older ~50% figures came from analyses confounded by immortal-time and selection bias, and prospective cohorts have not confirmed a benefit, particularly in BRCA1. Breast risk is addressed separately, by risk-reducing bilateral mastectomy (~90-95% reduction) or by intensive surveillance with annual mammography plus breast MRI from age 25-30.",
+    "conceptRule": [
+      "BRCA1 carrier, childbearing complete -> RRSO at age 35-40 (BRCA2: 40-45) -> ~80-90% reduction in ovarian/tubal cancer + all-cause mortality benefit",
+      "Goal is breast cancer risk reduction -> risk-reducing bilateral mastectomy (~90-95%) or annual MRI + mammogram from age 25-30; RRSO is not an established breast risk-reduction strategy",
+      "Ovarian cancer screening with TVUS + CA-125 -> no mortality benefit -> not a substitute for RRSO"
+    ]
   },
   {
     "id": "ob-breast-disorders-3",
@@ -11383,7 +11479,8 @@ export const OB_MCQS: McqQuestion[] = [
     "concept": "BRCA1/2 mutation carriers have a lifetime breast cancer risk of roughly 45-70% (versus ~12% in the general population) and require enhanced surveillance with annual mammography and breast MRI starting at age 25-30, along with counseling regarding risk-reducing bilateral mastectomy and risk-reducing salpingo-oophorectomy.",
     "conceptRule": [
       "BRCA1/2 carrier -> annual mammogram + MRI starting age 25-30",
-      "BRCA carrier who has completed childbearing -> counsel on risk-reducing bilateral salpingo-oophorectomy (typically by age 35-40) to reduce ovarian cancer risk and breast cancer risk via reduced estrogen exposure"
+      "BRCA carrier who has completed childbearing -> counsel on risk-reducing bilateral salpingo-oophorectomy (age 35-40 for BRCA1, 40-45 for BRCA2) -> ~80-90% reduction in ovarian/fallopian tube cancer plus an all-cause mortality benefit; a breast cancer risk-reduction effect of RRSO is not established",
+      "Breast cancer risk reduction in a BRCA carrier -> risk-reducing bilateral mastectomy (~90-95% reduction), not oophorectomy"
     ]
   },
   {
@@ -11855,22 +11952,23 @@ export const OB_MCQS: McqQuestion[] = [
     "topic": "Genital wart topical treatment",
     "stem": "A 25-year-old woman is diagnosed with condylomata acuminata after a soft pink papillary lesion is identified on the labia minora. She desires a topical treatment applied directly to the wart. Which of the following is the most appropriate agent?",
     "options": [
-      "Podophyllum resin",
+      "Imiquimod 5% cream",
       "Topical nystatin",
       "Topical metronidazole",
-      "Topical clindamycin",
+      "Podophyllum resin",
       "Topical acyclovir"
     ],
     "answerIndex": 0,
-    "explanation": "Podophyllum resin is a classic topical antimitotic agent applied directly to genital warts caused by HPV (patient-applied options include podofilox and imiquimod).",
+    "explanation": "Imiquimod 5% cream is a patient-applied topical immune-response modifier for external anogenital warts. The CDC 2021 STI Treatment Guidelines list three patient-applied options - imiquimod 3.75% or 5% cream, podofilox 0.5% solution/gel, and sinecatechins 15% ointment. Podophyllin resin was dropped from the recommended regimens because of systemic toxicity and inconsistent standardization, and it was provider-applied only.",
     "optionRationales": [
-      "Podophyllum resin is a classic topical treatment for genital warts.",
+      "Correct: imiquimod 5% cream is applied by the patient at bedtime 3 nights per week for up to 16 weeks (or imiquimod 3.75% nightly for up to 8 weeks) and is a CDC-recommended patient-applied treatment for external anogenital warts; podofilox 0.5% and sinecatechins 15% are the other patient-applied options.",
       "Topical nystatin is an antifungal used for candidiasis, not warts.",
       "Topical metronidazole is used for bacterial vaginosis and trichomoniasis, not HPV warts.",
-      "Topical clindamycin is an antibacterial used for bacterial vaginosis, not warts.",
+      "Podophyllum (podophyllin) resin was removed from the CDC recommended regimens in 2021 because of systemic toxicity and inconsistent standardization of the preparation - and it was provider-applied only, so it does not meet her request for a self-applied topical.",
       "Topical acyclovir has minimal efficacy and is not used for genital warts, which are HPV-related, not HSV-related."
     ],
-    "concept": "Genital warts can be treated with topical antimitotic/immune-modulating agents such as podophyllin resin (provider-applied) or podofilox/imiquimod/sinecatechins (patient-applied), or with provider-administered therapies like cryotherapy or trichloroacetic acid."
+    "concept": "External anogenital warts (condylomata acuminata, usually HPV 6 and 11) are treated by chemically or physically destroying the lesion or by inducing a local immune response; treatment clears visible warts but does not eradicate HPV, and recurrence is common. CDC 2021 patient-applied options: imiquimod 3.75% or 5% cream, podofilox 0.5% solution/gel, and sinecatechins 15% ointment. Provider-administered options: cryotherapy with liquid nitrogen, surgical removal (excision, curettage, electrocautery, or laser), and trichloroacetic or bichloroacetic acid 80-90%. Podophyllin resin is no longer a recommended regimen. In pregnancy, imiquimod, podofilox, and sinecatechins are avoided - use cryotherapy, TCA, or surgical removal.",
+    "discriminator": "Note whether the question demands a self-applied agent: imiquimod, podofilox, and sinecatechins are patient-applied, whereas cryotherapy, TCA/BCA 80-90%, and surgical removal are provider-administered."
   },
   {
     "id": "ob-gynecologic-infections-stis-7",
@@ -12063,11 +12161,17 @@ export const OB_MCQS: McqQuestion[] = [
     "optionRationales": [
       "NAAT for gonorrhea/chlamydia would be used for mucopurulent cervicitis, not a painless genital ulcer.",
       "HSV PCR would be appropriate for a painful vesicular/ulcerative lesion, not a painless chancre.",
-      "RPR/VDRL is the correct initial screening test for suspected syphilis presenting as a chancre.",
+      "Correct: RPR or VDRL is the appropriate initial test to send when a chancre suggests primary syphilis - but it is non-reactive in roughly 20-30% of primary cases, so a negative result does not exclude the diagnosis.",
       "Wet mount is used to evaluate vaginal discharge (e.g., trichomoniasis, BV), not genital ulcers.",
       "Tzanck smear is a nonspecific test historically used for herpesvirus infections, not syphilis."
     ],
-    "concept": "Primary syphilis presents as a single, painless ulcer (chancre) with a clean base and nontender regional lymphadenopathy, typically 3 weeks after exposure. Diagnosis begins with a nontreponemal screening test (RPR/VDRL) and is confirmed with a treponemal test (FTA-ABS).",
+    "concept": "Primary syphilis presents as a single, painless ulcer (chancre) with a clean, indurated base and nontender regional lymphadenopathy, typically about 3 weeks after exposure (range 10-90 days). Serologic testing is the usual starting point: classically a nontreponemal test (RPR/VDRL) confirmed by a treponemal test (FTA-ABS or TP-PA), although most laboratories now run the reverse-sequence algorithm - an automated treponemal immunoassay (EIA/CIA) first, then RPR, with TP-PA to resolve discordant results. Critically, nontreponemal tests are non-reactive in roughly 20-30% of primary syphilis because antibody has not yet developed, so a negative RPR/VDRL with a classic chancre does not exclude syphilis: treat empirically and repeat serology in 2-4 weeks. Direct detection of organisms in the lesion (darkfield microscopy or lesion PCR) is the definitive test when available.",
+    "conceptRule": [
+      "Classic chancre + negative RPR/VDRL -> does not exclude primary syphilis (non-reactive in ~20-30%); treat empirically and repeat serology in 2-4 weeks",
+      "Lesion exudate available -> darkfield microscopy or lesion PCR is definitive/confirmatory",
+      "Most modern labs -> reverse-sequence algorithm: treponemal immunoassay first, then RPR, TP-PA for discordant results",
+      "Confirmed primary/secondary/early latent syphilis -> benzathine penicillin G 2.4 million units IM x 1"
+    ],
     "discriminator": "The painless nature of the ulcer with nontender lymphadenopathy distinguishes syphilis from the painful ulcers and tender lymphadenopathy of HSV or chancroid."
   },
   {
@@ -12467,20 +12571,27 @@ export const OB_MCQS: McqQuestion[] = [
     "options": [
       "Repeat excision in 6 weeks regardless of margin status",
       "Annual mammography",
-      "Pap smear and HPV co-testing at 1 and 2 years postoperatively",
+      "HPV-based testing at 6 months, then annually until 3 consecutive negative results, then at least every 3 years for 25 years",
       "Hysterectomy",
       "No further testing needed"
     ],
     "answerIndex": 2,
-    "explanation": "After excisional treatment of CIN 2/3 with clear margins, patients are followed with co-testing (Pap plus HPV) at 1 and 2 years postoperatively to detect recurrence.",
+    "explanation": "ASCCP 2019 post-treatment surveillance after excision of CIN 2/3 is HPV-based testing (HPV alone or co-testing) at 6 months, then annually until three consecutive negative results, then at least every 3 years for a minimum of 25 years — the same schedule whether margins are negative or positive, because the risk of recurrence and of subsequent cervical cancer stays elevated for decades.",
     "optionRationales": [
-      "Repeat excision is not routinely needed when margins are clear; it is considered when margins are positive.",
+      "Repeat excision is not indicated when margins are negative. Even with positive margins or a positive endocervical sample, ASCCP prefers HPV-based testing at 6 months, reserving repeat excision for an abnormal result or a patient who cannot be followed.",
       "Mammography is unrelated to cervical dysplasia surveillance.",
-      "Correct: standard post-excision surveillance for CIN 2/3 is co-testing at 1 and 2 years.",
-      "Hysterectomy is not first-line management after successful excision with clear margins.",
-      "Given the risk of recurrent or persistent disease, ongoing surveillance is required even after excision with clear margins."
+      "Correct: HPV-based testing at 6 months, then annually until 3 consecutive negatives, then at least every 3 years for a minimum of 25 years. This replaced the older 2012 schedule of co-testing at 1 and 2 years.",
+      "Hysterectomy is not management after excision with negative margins; it is considered only for persistent or recurrent CIN 2/3 when repeat excision is not feasible.",
+      "The risk of persistent or recurrent disease — and of invasive cervical cancer — remains elevated for at least 25 years after treatment, so surveillance is required even with negative margins."
     ],
-    "concept": "CIN 3 (severe dysplasia/carcinoma in situ) in a nonpregnant patient is treated with excision (LEEP or cold-knife cone). Clear margins reduce but do not eliminate recurrence risk, so structured co-testing surveillance follows treatment.",
+    "concept": "CIN 3 (severe dysplasia/carcinoma in situ) in a nonpregnant patient is treated with excision (LEEP or cold-knife cone). Negative margins lower but do not eliminate the risk of recurrence, and the excess risk of cervical cancer persists for decades, so ASCCP 2019 surveillance is HPV-based testing at 6 months, then annually until three consecutive negatives, then at least every 3 years for a minimum of 25 years — regardless of margin status, and continuing beyond age 65 if the patient is still within that window. Any abnormal surveillance result sends the patient back to colposcopy with endocervical sampling. Note the shift from the 2012 algorithm's co-testing at 1 and 2 years.",
+    "conceptRule": [
+      "Excision of CIN 2/3 -> HPV-based testing (HPV alone or co-test) at 6 months, regardless of margin status",
+      "Negative surveillance test -> repeat annually until 3 consecutive negatives -> then at least every 3 years for a minimum of 25 years",
+      "Any abnormal surveillance result -> colposcopy with endocervical sampling",
+      "Positive margins or positive endocervical sampling at excision -> still HPV-based testing at 6 months (preferred over immediate repeat excision)",
+      "Still within the 25-year window at age 65 -> continue surveillance; do not exit screening"
+    ],
     "mnemonic": "CIN grading: 1 = lower third, 2 = two-thirds, 3 = full-thickness dysplasia."
   },
   {
@@ -12636,36 +12747,51 @@ export const OB_MCQS: McqQuestion[] = [
     "optionRationales": [
       "Repeat cytology is inadequate for a high-grade lesion; this delays diagnosis of potential cancer.",
       "Correct: HSIL can be managed with colposcopic biopsy or immediate excisional treatment (see-and-treat), independent of HPV result.",
-      "HPV status does not change management of HSIL; action is required regardless of HPV result.",
+      "HPV testing is not what decides whether to act — HSIL requires colposcopy or excision no matter what the HPV result is, so a negative HPV test would not spare this patient further evaluation. (HPV genotype does refine which of the two is preferred; see the concept.)",
       "Reassurance is inappropriate given the high risk of CIN 2/3 or worse with HSIL.",
       "Endometrial biopsy is not the primary step for HSIL cytology; it is reserved for atypical glandular cells."
     ],
-    "concept": "HSIL indicates high risk of CIN 2/3 or cancer and mandates direct action rather than watchful waiting. Nonpregnant patients may proceed straight to excisional treatment (see-and-treat) without waiting for biopsy confirmation, unlike lower-grade results.",
-    "discriminator": "Unlike ASC-US/LSIL, HSIL management does not depend on HPV status — it always triggers colposcopy or immediate excision."
+    "concept": "HSIL cytology carries a high immediate risk of CIN 3+ and always requires colposcopy or excisional treatment — repeat cytology is never acceptable. Under ASCCP 2019 risk-based management, HPV results modulate which of the two is preferred rather than whether to act: expedited ('see-and-treat') excision is preferred when the immediate CIN 3+ risk is 60% or higher, as with HPV16-positive HSIL, and acceptable in the 25-59% band, whereas HPV-negative HSIL carries an immediate risk of roughly 25% and colposcopy is preferred. Expedited treatment is not recommended for patients younger than 25 or in pregnancy — both get colposcopy with biopsy of visible lesions — and shared decision-making applies for patients concerned about future pregnancy, since excision raises preterm birth risk.",
+    "conceptRule": [
+      "HSIL cytology -> colposcopy or excisional treatment; repeat cytology is never an option",
+      "Immediate CIN 3+ risk 60% or higher (e.g., HPV16-positive HSIL) -> expedited excision preferred",
+      "Immediate CIN 3+ risk 25-59% -> expedited excision or colposcopy both acceptable",
+      "HPV-negative HSIL (immediate CIN 3+ risk ~25%) -> colposcopy preferred",
+      "Age under 25, or pregnant -> colposcopy with biopsy, never expedited excision"
+    ],
+    "discriminator": "HSIL never permits repeat cytology, but HPV genotype decides which action is preferred: expedited excision for HPV16-positive HSIL, colposcopy when HPV-negative, and colposcopy rather than expedited treatment if the patient is under 25 or pregnant."
   },
   {
     "id": "ob-cervical-dysplasia-screening-11",
     "system": "Cervical Dysplasia & Screening",
-    "topic": "Indication for cold-knife cone over LEEP",
+    "topic": "Inadequate colposcopy - endocervical sampling",
     "stem": "A 32-year-old woman undergoes colposcopy for LSIL, but the entire squamocolumnar junction cannot be visualized due to the lesion extending into the endocervical canal. What is the most appropriate next step?",
     "options": [
       "Cold-knife cone biopsy",
       "Loop electrosurgical excision procedure",
       "Repeat colposcopy in 6 months",
       "Cryotherapy",
-      "Total hysterectomy"
+      "Endocervical sampling with endocervical curettage or endocervical brush"
     ],
-    "answerIndex": 0,
-    "explanation": "When the colposcopy is inadequate because the transformation zone or lesion margins cannot be fully visualized (e.g., extension into the endocervical canal), cold-knife conization is preferred because it provides a deeper, more precise specimen with intact margins for pathologic evaluation.",
+    "answerIndex": 4,
+    "explanation": "When the squamocolumnar junction or the upper border of the lesion cannot be seen, the colposcopic examination is inadequate and endocervical sampling (ECC or endocervical brush) is the recommended next step. For low-grade cytology such as LSIL this determines whether occult high-grade or glandular disease is hiding in the canal; diagnostic excision is reserved for HSIL/AGC cytology with an inadequate colposcopy, or for CIN 2+ / adenocarcinoma in situ found on that sampling.",
     "optionRationales": [
-      "Correct: an inadequate colposcopy (unvisualized squamocolumnar junction) or suspected endocervical extension favors cold-knife cone biopsy for better diagnostic yield and margin evaluation.",
-      "LEEP can distort or thermally damage the specimen margins, which is problematic when precise margin assessment of an endocervical lesion is needed.",
-      "Simply repeating colposcopy delays diagnosis when the exam is already known to be inadequate.",
-      "Cryotherapy is not appropriate when a lesion cannot be fully visualized or when high-grade/glandular disease is suspected.",
-      "Hysterectomy is not indicated without a definitive tissue diagnosis first."
+      "Cold-knife cone is likewise overtreatment for LSIL. ASCCP treats LEEP and cold-knife cone as acceptable alternatives when excision is indicated, with cold-knife cone favored specifically when adenocarcinoma in situ or microinvasion is suspected — neither is suggested here.",
+      "LEEP is a diagnostic/therapeutic excision, not the first step for LSIL with an inadequate colposcopy. Excising the canal in a 32-year-old for a low-grade lesion incurs cervical insufficiency and preterm birth risk with no histologic indication yet.",
+      "Repeating colposcopy in 6 months leaves the unvisualized canal unsampled; the examination is already known to be inadequate, so the canal should be sampled now.",
+      "Ablation is contraindicated when the lesion or the squamocolumnar junction cannot be fully visualized or the lesion extends into the canal, and cryotherapy destroys tissue without yielding a histologic diagnosis.",
+      "Correct: an inadequate colposcopy — squamocolumnar junction or upper lesion border not seen, lesion extending into the endocervical canal — calls for endocervical sampling with ECC or an endocervical brush, and the result then determines whether excision is needed."
     ],
-    "concept": "LEEP and cold-knife conization are both excisional treatments for CIN 2/3, but cold-knife cone is preferred when the colposcopy is inadequate (transformation zone not fully seen), when glandular disease (AGC/adenocarcinoma in situ) is suspected, or when microinvasion needs precise margin assessment, since electrocautery can obscure margins.",
-    "discriminator": "Inability to visualize the entire squamocolumnar junction/lesion is the specific trigger favoring cold-knife cone over LEEP."
+    "concept": "A colposcopic examination is inadequate when the squamocolumnar junction or the upper border of the lesion cannot be seen. Endocervical sampling (ECC or endocervical brush) is then recommended to evaluate the canal; it is also recommended for HSIL or AGC cytology and when no lesion is seen despite abnormal cytology (it is avoided in pregnancy). Diagnostic excision, rather than sampling alone, is indicated when cytology is HSIL or AGC with an inadequate colposcopy, when endocervical sampling shows CIN 2+ or adenocarcinoma in situ, or when cytology and histology are markedly discrepant. When excision is required, LEEP and cold-knife conization are acceptable alternatives, with cold-knife cone favored if adenocarcinoma in situ or microinvasion is suspected because electrosurgical artifact can obscure the margins.",
+    "conceptRule": [
+      "Squamocolumnar junction or upper lesion border not visualized -> inadequate colposcopy -> endocervical sampling (ECC or brush)",
+      "LSIL cytology + inadequate colposcopy -> sample the canal; do not proceed straight to conization",
+      "HSIL or AGC cytology + inadequate colposcopy, or CIN 2+ / AIS on endocervical sampling -> diagnostic excision",
+      "Suspected adenocarcinoma in situ or microinvasion -> cold-knife cone preferred over LEEP (no cautery artifact at the margins)",
+      "Lesion extends into the canal or squamocolumnar junction not seen -> ablative therapy (cryotherapy) contraindicated",
+      "Pregnant patient -> no endocervical curettage; biopsy visible lesions only"
+    ],
+    "discriminator": "Inability to see the squamocolumnar junction or the top of the lesion triggers endocervical sampling; the cytologic grade (LSIL versus HSIL/AGC) then decides whether excision is warranted, and suspicion of glandular disease or microinvasion is what favors cold-knife cone over LEEP."
   },
   {
     "id": "ob-cervical-dysplasia-screening-12",
@@ -12854,22 +12980,22 @@ export const OB_MCQS: McqQuestion[] = [
     "stem": "A 27-year-old woman with a BMI of 34 kg/m2 presents 60 hours after unprotected sexual assault and requests emergency contraception. She wants the most effective option available and does not desire ongoing contraception. Which of the following is the best choice?",
     "options": [
       "Copper intrauterine device",
-      "Combined estrogen-progestin regimen (Yuzpe method)",
+      "Ulipristal acetate 30 mg orally",
       "Levonorgestrel oral tablet",
       "Oral doxycycline",
       "Progestin-only pill taken daily"
     ],
     "answerIndex": 0,
-    "explanation": "The copper IUD is the most effective form of emergency contraception, is not reduced in efficacy by elevated BMI, and remains effective up to 5 days after intercourse.",
+    "explanation": "The copper IUD is the most effective emergency contraceptive, is not degraded by elevated BMI, and works up to 120 hours after intercourse, so it is the answer when the patient asks for the most effective option available. Ulipristal acetate 30 mg is the best oral alternative at BMI 34; oral levonorgestrel is the weakest choice in obesity.",
     "optionRationales": [
-      "The copper IUD has the lowest failure rate of all emergency contraception options and maintains efficacy regardless of body weight or BMI, and up to 120 hours after intercourse.",
-      "The Yuzpe method is an older, less effective regimen with more side effects and is not preferred when a copper IUD is available.",
-      "Levonorgestrel efficacy declines significantly in patients with elevated BMI and is less effective than ulipristal acetate or the copper IUD in this setting.",
-      "Doxycycline is an antibiotic used for STI prophylaxis, not for pregnancy prevention.",
-      "Daily progestin-only pills are used for ongoing contraception, not as a one-time emergency contraception method."
+      "Correct: the copper IUD has the lowest failure rate of any emergency contraceptive (well under 1%), works up to 120 hours after intercourse, and its efficacy is unaffected by body weight. Not wanting ongoing contraception is not a barrier, since it can be removed after her next menses; insertion should be offered rather than pressed as part of trauma-informed care after an assault.",
+      "Incorrect, but the best oral option: ulipristal acetate 30 mg is a progesterone-receptor modulator effective up to 120 hours and superior to levonorgestrel both in the 72-120 hour window and at higher BMI. It would be the choice if she declined an intrauterine device, but it is still less effective than the copper IUD, which is what \"the most effective option available\" asks for.",
+      "Incorrect: oral levonorgestrel 1.5 mg is the weakest of the reasonable choices here. It is licensed only to 72 hours and its efficacy falls at BMI >30, making it inferior to both ulipristal acetate and the copper IUD in this patient.",
+      "Incorrect: doxycycline is an antibiotic used for STI prophylaxis, not for pregnancy prevention.",
+      "Incorrect: daily progestin-only pills are used for ongoing contraception, not as a one-time emergency contraception method."
     ],
-    "concept": "The copper IUD is the most effective emergency contraceptive option, effective up to 5 days after intercourse and unaffected by patient body weight, making it preferable to oral levonorgestrel in patients with obesity who desire maximum efficacy.",
-    "discriminator": "Unlike levonorgestrel, whose efficacy is reduced in patients with higher BMI, the copper IUD's contraceptive efficacy is essentially unaffected by weight."
+    "concept": "The copper IUD is the most effective emergency contraceptive (failure well under 1%), works up to 120 hours after intercourse, and is unaffected by body weight; the 52 mg levonorgestrel IUD has since been shown to be noninferior to it for emergency contraception. Among oral agents, ulipristal acetate 30 mg outperforms levonorgestrel 1.5 mg, and levonorgestrel's efficacy declines at BMI >30, so it is the weakest choice in patients with obesity.",
+    "discriminator": "Levonorgestrel is the option whose efficacy is degraded by obesity; ulipristal's is degraded far less and the copper IUD's not at all, so at BMI 34 the ranking is copper IUD > ulipristal acetate > levonorgestrel."
   },
   {
     "id": "ob-sexual-health-assault-3",
@@ -12951,20 +13077,20 @@ export const OB_MCQS: McqQuestion[] = [
     "options": [
       "A single HIV test at the initial visit is sufficient with no further follow-up",
       "No further testing is needed since prophylaxis was given",
-      "Repeat HIV testing at 6 weeks, 3 months, and 6 months, along with a follow-up pregnancy test in 2-3 weeks",
+      "Repeat HIV antigen/antibody testing at 4-6 weeks and 3 months, syphilis serology at the same intervals, and a pregnancy test in 2-3 weeks",
       "Schedule follow-up only for psychological counseling, with no repeat laboratory testing",
       "Repeat testing is only needed if she becomes symptomatic"
     ],
     "answerIndex": 2,
-    "explanation": "Because prophylaxis does not guarantee prevention of infection or pregnancy, survivors need scheduled follow-up including serial HIV testing (baseline, 6 weeks, 3 months, 6 months) and a pregnancy test in 2-3 weeks if EC was given.",
+    "explanation": "Prophylaxis reduces but does not eliminate risk, so survivors need scheduled follow-up: baseline HIV antigen/antibody testing with repeat testing at 4-6 weeks and 3 months after exposure, syphilis serology at the same intervals, and a pregnancy test 2-3 weeks after emergency contraception. With fourth-generation Ag/Ab assays, routine 6-month HIV testing is no longer recommended.",
     "optionRationales": [
-      "A single baseline HIV test cannot capture a delayed seroconversion, which requires testing over subsequent months.",
+      "A single baseline HIV test cannot capture delayed seroconversion; repeat Ag/Ab testing at 4-6 weeks and 3 months is required.",
       "Prophylaxis reduces but does not eliminate risk, so scheduled follow-up testing remains necessary.",
-      "Serial HIV testing over 6 months and an interval pregnancy test are standard follow-up to confirm prophylaxis efficacy and detect any breakthrough infection or pregnancy.",
+      "Correct: baseline HIV Ag/Ab testing repeated at 4-6 weeks and 3 months (CDC nPEP guidance, carried into the 2021 STI treatment guidelines) detects essentially all seroconversions; syphilis serology is repeated on the same schedule, and a pregnancy test at 2-3 weeks catches EC failure. The older 6-week/3-month/6-month schedule predates fourth-generation assays and is no longer routine.",
       "While psychological support and counseling follow-up are important, they do not replace the need for scheduled laboratory follow-up testing.",
       "Waiting for symptoms would miss asymptomatic infections and delayed pregnancy detection; scheduled testing is preferred."
     ],
-    "concept": "Follow-up care after sexual assault should include structured laboratory follow-up (repeat HIV testing at 6 weeks, 3 months, and 6 months; syphilis and hepatitis serologies as indicated; pregnancy testing in 2-3 weeks) in addition to ongoing psychosocial support and counseling referral."
+    "concept": "Follow-up care after sexual assault should include structured laboratory follow-up (HIV antigen/antibody testing at baseline, 4-6 weeks, and 3 months; syphilis serology at 4-6 weeks and 3 months; hepatitis B serology and vaccination as indicated; pregnancy testing in 2-3 weeks) in addition to ongoing psychosocial support and counseling referral. Routine 6-month HIV testing was dropped once fourth-generation Ag/Ab assays became standard."
   },
   {
     "id": "ob-sexual-health-assault-7",
@@ -13405,17 +13531,20 @@ export const OB_MCQS: McqQuestion[] = [
       "Any gestational age"
     ],
     "answerIndex": 2,
-    "explanation": "Antenatal corticosteroids (betamethasone or dexamethasone) are indicated between 24 0/7 and 33 6/7 weeks (extended to 34 6/7 in many protocols) for women at risk of delivery within 7 days.",
+    "explanation": "A single course of antenatal corticosteroids (betamethasone 12 mg IM x2 24 hours apart, or dexamethasone 6 mg IM every 12 hours x4) is recommended from 24 0/7 through 33 6/7 weeks when delivery is anticipated within 7 days; benefit at 22 0/7-23 6/7 weeks is a periviable shared-decision consideration, and 34 0/7-36 6/7 weeks is a separate selective indication.",
     "optionRationales": [
-      "Too early; fetal viability and benefit data support later gestational ages.",
-      "Still generally before the standard window of proven benefit.",
-      "Correct — this is the standard window (24-34 weeks) for maximal fetal lung maturation benefit.",
-      "By this point the fetal lung is largely mature and steroids offer little added benefit; late preterm (34-36 6/7) steroids are a separate, more selective indication.",
-      "Steroids are not given empirically outside the window of demonstrated benefit and risk of delivery."
+      "Too early - this is before viability and before any demonstrated benefit; corticosteroids are not given at 16-20 weeks for fetal lung maturation.",
+      "A course may be CONSIDERED at 22 0/7-23 6/7 weeks when delivery is expected within 7 days and the family opts for neonatal resuscitation, but 24 0/7-33 6/7 weeks is the window of established benefit, so this is not the best answer.",
+      "Correct - 24 0/7 through 33 6/7 weeks, with delivery anticipated within 7 days, is the window of established benefit for a single course.",
+      "By 35-40 weeks the fetal lung is largely mature; a single course at 34 0/7-36 6/7 weeks is a separate, more selective indication (no prior course, delivery expected within 7 days, no clinical chorioamnionitis) and is not given for a scheduled cesarean at term.",
+      "Corticosteroids are not given empirically at any gestational age; both a gestational-age window and a real risk of delivery within 7 days are required."
     ],
-    "concept": "Antenatal corticosteroids accelerate fetal lung maturation by inducing surfactant protein and enzyme production in type II pneumocytes, reducing neonatal respiratory distress syndrome, intraventricular hemorrhage, and mortality. The classic window of benefit is 24-34 weeks gestation in women at risk of preterm delivery within 7 days.",
+    "concept": "Antenatal corticosteroids accelerate fetal lung maturation by inducing surfactant protein and enzyme production in type II pneumocytes, reducing neonatal respiratory distress syndrome, intraventricular hemorrhage, necrotizing enterocolitis, and mortality. The window of established benefit is 24 0/7 through 33 6/7 weeks in a woman at risk of delivery within 7 days. At 22 0/7-23 6/7 weeks a single course may be considered when delivery is expected within 7 days and the family has opted for neonatal resuscitation, and at 34 0/7-36 6/7 weeks a single course is a separate selective indication.",
     "conceptRule": [
-      "24-34 weeks + risk of delivery in 7 days -> give betamethasone/dexamethasone course"
+      "24 0/7-33 6/7 weeks + risk of delivery within 7 days -> single course of betamethasone 12 mg IM x2 (24 h apart) or dexamethasone 6 mg IM q12h x4",
+      "22 0/7-23 6/7 weeks + delivery expected within 7 days + family opts for neonatal resuscitation -> a single course may be considered after counseling",
+      "34 0/7-36 6/7 weeks + risk of delivery within 7 days + no prior course + no clinical chorioamnionitis -> single course may be given; not for a scheduled cesarean at term",
+      "Prior course given >=14 days ago (as early as 7 days if clinically indicated) + still <34 0/7 weeks + delivery again expected within 7 days -> single rescue course"
     ]
   },
   {
@@ -13972,21 +14101,22 @@ export const OB_MCQS: McqQuestion[] = [
       "Increase the magnesium infusion rate to achieve therapeutic seizure prophylaxis"
     ],
     "answerIndex": 1,
-    "explanation": "Loss of deep tendon reflexes is an early sign of magnesium toxicity (occurring before respiratory depression); the infusion should be stopped and calcium gluconate given as the antidote.",
+    "explanation": "Loss of deep tendon reflexes is the earliest sign of magnesium toxicity, preceding respiratory depression. The immediate step is to stop (or reduce) the infusion and send a serum magnesium level; IV calcium gluconate is the antidote and is reserved for respiratory depression, hypoventilation, cardiac instability, or a markedly elevated level.",
     "optionRationales": [
-      "Intubation is reserved for actual respiratory depression/arrest, not for isolated loss of reflexes; toxicity should be reversed first.",
-      "Correct: loss of DTRs signals rising magnesium levels, so the infusion is stopped and calcium gluconate (which antagonizes magnesium at the neuromuscular junction) is given.",
+      "Intubation is reserved for actual respiratory depression or arrest; with normal respirations, stopping the infusion, checking a level, and monitoring are sufficient.",
+      "Correct (and the only option that stops the drug): absent DTRs is the earliest sign of magnesium toxicity, so the infusion is stopped and a serum magnesium level is sent while respiratory rate and oxygen saturation are monitored closely. Note the nuance — calcium gluconate 1 g IV (10 mL of 10%) is the antidote but is indicated for respiratory depression, hypoventilation, cardiac instability, or a markedly elevated level; with isolated areflexia and normal respirations many clinicians stop the infusion, check a level, and observe, because calcium also transiently reverses seizure prophylaxis.",
       "Phenytoin is not used for eclampsia prophylaxis and does not address existing magnesium toxicity.",
       "Continuing unchanged risks progression to respiratory depression and cardiac arrest as magnesium levels climb further.",
       "Increasing the dose would worsen toxicity, not improve seizure prophylaxis safely."
     ],
-    "concept": "Magnesium toxicity progresses in a predictable order as serum levels rise: loss of deep tendon reflexes occurs first (~9-12 mg/dL), followed by respiratory depression (~12-18 mg/dL), then cardiac arrest (>24-30 mg/dL). Reflexes are checked serially as a bedside surrogate for serum level. Calcium gluconate is the antidote because it competes with magnesium at the neuromuscular junction.",
+    "concept": "Magnesium toxicity progresses in a predictable order as serum levels rise (therapeutic range 4.8-8.4 mg/dL): loss of deep tendon reflexes first (~9-12 mg/dL), then respiratory depression (~12-18 mg/dL), then cardiac conduction changes and arrest (>24-30 mg/dL). Reflexes and respiratory rate are checked serially as a bedside surrogate for the serum level. Calcium gluconate competes with magnesium at the neuromuscular junction and is the antidote, but it is given for respiratory or cardiac toxicity rather than for areflexia alone, since it also transiently reverses seizure prophylaxis. Magnesium is cleared renally, so oliguria or a rising creatinine is the usual reason levels climb.",
     "conceptRule": [
-      "Loss of patellar (deep tendon) reflexes -> stop infusion, check level, give IV calcium gluconate",
-      "Respiratory depression/decreased respiratory rate -> stop infusion, give calcium gluconate, support ventilation",
-      "Cardiac arrest -> aggressive resuscitation, calcium gluconate"
+      "Loss of patellar (deep tendon) reflexes, respirations normal (~9-12 mg/dL) -> stop the infusion, send a serum magnesium level, monitor respiratory rate and O2 saturation",
+      "Respiratory rate <12/min, hypoventilation, or desaturation (~12-18 mg/dL) -> stop the infusion, give calcium gluconate 1 g IV (10 mL of 10%) over 5-10 min, support ventilation",
+      "Cardiac conduction abnormality or arrest (>24-30 mg/dL) -> ACLS resuscitation plus IV calcium gluconate",
+      "Urine output <30 mL/h or rising creatinine -> reduce or stop the infusion and check a level (magnesium is renally cleared)"
     ],
-    "discriminator": "Unlike phenytoin or benzodiazepines, magnesium's toxicity is monitored clinically via reflexes and respiratory rate rather than by a narrow therapeutic drug level alone."
+    "discriminator": "Unlike phenytoin or benzodiazepines, magnesium's toxicity is tracked clinically by reflexes, respiratory rate, and urine output rather than by a narrow therapeutic drug level alone — and the first move in suspected toxicity is always to stop the infusion, not to reach for the antidote."
   },
   {
     "id": "ob-pharmacology-26",
@@ -14265,13 +14395,13 @@ export const OB_MCQS: McqQuestion[] = [
     "explanation": "Misoprostol (PGE1 analog) is inexpensive, heat-stable, and versatile: cervical ripening/induction, medical abortion (with mifepristone), and PPH treatment (off-label, can be used even with asthma unlike carboprost).",
     "optionRationales": [
       "Incorrect: nifedipine is a calcium channel blocker tocolytic, not a uterotonic/ripening agent.",
-      "Correct: misoprostol's broad utility across ripening, abortion, and PPH is a hallmark exam fact.",
+      "Correct: misoprostol's breadth across cervical ripening/induction, medical abortion, and postpartum hemorrhage is the hallmark exam fact, with the important caveat that it must not be used for ripening or induction in a woman with a prior cesarean or other uterine scar.",
       "Incorrect: carboprost (PGF2alpha analog) treats PPH but is contraindicated in asthma and not used for ripening/abortion in the same standard way as misoprostol.",
       "Incorrect: terbutaline is a beta-agonist tocolytic, the opposite clinical use.",
       "Incorrect: methylergonovine is an ergot alkaloid used only for PPH, contraindicated in hypertension."
     ],
-    "concept": "Misoprostol is a versatile PGE1 analog: it ripens the cervix and induces labor, is combined with mifepristone for medical abortion, and treats postpartum hemorrhage. Unlike carboprost, it is safe to use in patients with asthma.",
-    "discriminator": "Misoprostol is asthma-safe and multi-indication; carboprost (PGF2alpha) is PPH-only and contraindicated in asthma."
+    "concept": "Misoprostol is a versatile PGE1 analog: it ripens the cervix and induces labor, is combined with mifepristone for medical abortion, and treats postpartum hemorrhage. It is inexpensive and heat-stable, and unlike carboprost it is safe in asthma. Its critical safety limit is the scarred uterus: prostaglandin ripening or induction is contraindicated after a prior cesarean or other uterine incision because of a sharply increased risk of uterine rupture. Tachysystole is the dose-limiting adverse effect.",
+    "discriminator": "Misoprostol is asthma-safe and multi-indication; carboprost (PGF2alpha) is PPH-only and contraindicated in asthma. Neither misoprostol nor dinoprostone may be used to ripen or induce a uterus with a prior cesarean or other uterine scar."
   },
   {
     "id": "ob-pharmacology-36",
@@ -14294,7 +14424,13 @@ export const OB_MCQS: McqQuestion[] = [
       "Beta-2 receptor stimulation describes terbutaline, a different class of tocolytic.",
       "Calcium antagonism at the neuromuscular junction describes magnesium sulfate's mechanism, not nifedipine's."
     ],
-    "concept": "Nifedipine, a dihydropyridine calcium channel blocker, relaxes smooth muscle by blocking L-type calcium channels, giving it dual utility as a tocolytic (relaxing myometrium) and as an antihypertensive (relaxing vascular smooth muscle) in pregnancy.",
+    "concept": "Nifedipine, a dihydropyridine calcium channel blocker, relaxes smooth muscle by blocking L-type calcium channels, giving it dual utility as a tocolytic (relaxing myometrium) and as an antihypertensive (relaxing vascular smooth muscle) in pregnancy. For acute-onset severe-range hypertension the three first-line agents are IV labetalol, IV hydralazine, and oral immediate-release nifedipine — all three are acceptable, and the choice is driven by access (oral nifedipine when there is no IV) and comorbidity (avoid labetalol in asthma or bradycardia; hydralazine causes more maternal tachycardia and hypotension). For ongoing oral therapy of chronic hypertension in pregnancy, labetalol and extended-release nifedipine are first-line, methyldopa is second-line (less effective), and ACE inhibitors and ARBs are contraindicated.",
+    "conceptRule": [
+      "BP >=160 systolic or >=110 diastolic persisting >=15 min -> treat as soon as possible, ideally within 30-60 min, with IV labetalol 20 mg (repeat 40 then 80 mg q10 min, max cumulative 300 mg), IV hydralazine 5-10 mg q20-40 min (max ~20-30 mg), or oral immediate-release nifedipine 10 mg q20 min up to 3 doses",
+      "Severe-range BP persists after the maximum dose of one agent -> switch to a second first-line agent and consult critical care / maternal-fetal medicine",
+      "Chronic hypertension in pregnancy with BP >=140/90 (CHAP trial, NEJM 2022; ACOG 2022) -> start or continue antihypertensive therapy targeting <140/90, using labetalol or extended-release nifedipine",
+      "Any pregnant patient on an ACE inhibitor or ARB -> stop it and switch to labetalol or nifedipine XL (fetal renal injury, oligohydramnios)"
+    ],
     "discriminator": "Unlike indomethacin (COX inhibition) or terbutaline (beta-agonism), nifedipine's smooth muscle relaxation comes from direct calcium channel blockade, giving it a different side-effect profile (reflex tachycardia, flushing, headache from vasodilation)."
   },
   {
@@ -14569,9 +14705,11 @@ export const OB_MCQS: McqQuestion[] = [
       "Ebstein anomaly is classically associated with lithium exposure, not ACE inhibitors.",
       "Vaginal clear cell adenocarcinoma is associated with in utero diethylstilbestrol (DES) exposure, not ACE inhibitors."
     ],
-    "concept": "ACE inhibitors and ARBs are safe in the first trimester regarding this specific fetopathy but must be stopped once pregnancy is confirmed and definitely avoided in the second/third trimester, when they cause fetal renal dysgenesis, oligohydramnios, pulmonary hypoplasia, and calvarial hypoplasia by disrupting the fetal renin-angiotensin-aldosterone system.",
+    "concept": "The classic fetopathy - renal dysgenesis, oliguria with oligohydramnios, pulmonary hypoplasia, limb contractures, and calvarial hypoplasia - is a second- and third-trimester effect of blocking the fetal renin-angiotensin system and fetal renal perfusion. First-trimester safety is NOT established: malformation signals (cardiovascular and CNS) are conflicting and largely but not entirely explained by confounding from chronic hypertension itself. Accordingly, ACE inhibitors and ARBs should be switched preconception in reproductive-age women and stopped as soon as pregnancy is recognized, with labetalol or extended-release nifedipine substituted.",
     "conceptRule": [
-      "ACE inhibitor/ARB use 2nd-3rd trimester -> stop immediately; fetal renal ultrasound surveillance"
+      "ACE inhibitor/ARB use 2nd-3rd trimester -> stop immediately; assess amniotic fluid volume and fetal renal anatomy by ultrasound",
+      "Reproductive-age woman on an ACE inhibitor/ARB planning pregnancy -> switch preconception to labetalol or nifedipine XL (methyldopa an alternative)",
+      "Pregnancy recognized while still on an ACE inhibitor/ARB -> discontinue at once and substitute a pregnancy-compatible agent; first-trimester exposure is a reason for counseling and a detailed anatomy survey, not for termination"
     ],
     "discriminator": "Unlike first-trimester structural teratogens (e.g., isotretinoin, valproate), ACE inhibitor toxicity is a later-pregnancy functional fetopathy driven by impaired fetal renal perfusion."
   },
@@ -14642,13 +14780,19 @@ export const OB_MCQS: McqQuestion[] = [
     "explanation": "Warfarin is a small molecule that crosses the placenta and, when used in the first trimester, causes warfarin embryopathy (nasal hypoplasia, stippled epiphyses, limb hypoplasia); low molecular weight or unfractionated heparin does not cross the placenta and is preferred.",
     "optionRationales": [
       "Warfarin embryopathy is characterized by nasal hypoplasia and skeletal stippling, not ototoxicity (which is associated with aminoglycosides).",
-      "Efficacy for maternal valve thrombosis is not the reason for the switch; the placental transfer and teratogenicity difference is.",
+      "This is not the reason for the switch, and for a mechanical valve the reverse is true: heparin monotherapy carries a higher rate of valve thrombosis than dose-adjusted warfarin, which is why warfarin is commonly resumed for the second and third trimesters. The reason warfarin is avoided in the first trimester is placental transfer and embryopathy.",
       "Warfarin is most teratogenic in the first trimester (weeks 6-9), not exclusively the third trimester; it also carries fetal hemorrhage risk in the third trimester.",
       "Correct: this placental transfer difference explains why heparins are substituted for warfarin, particularly in the first trimester.",
       "Warfarin embryopathy is characterized by nasal/skeletal abnormalities, not neural tube defects."
     ],
-    "concept": "Warfarin is teratogenic because it is a small lipophilic molecule that freely crosses the placenta, causing warfarin embryopathy in the first trimester and fetal/neonatal hemorrhage later in pregnancy; heparins (unfractionated and low molecular weight) are large, negatively charged molecules that do not cross the placenta and are the anticoagulants of choice throughout pregnancy.",
-    "discriminator": "Direct oral anticoagulants (DOACs) are also avoided in pregnancy due to limited safety data and are not substituted for warfarin in this setting."
+    "concept": "Warfarin is a small lipophilic molecule that crosses the placenta, causing warfarin embryopathy (nasal hypoplasia, stippled epiphyses, limb hypoplasia) with first-trimester exposure - the risk concentrates at about 6-9 weeks - and fetal or neonatal intracranial hemorrhage later in pregnancy. Heparins (unfractionated and low molecular weight) are large, negatively charged molecules that do not cross the placenta, so for most indications (venous thromboembolism, thromboprophylaxis, antiphospholipid syndrome) heparin is the anticoagulant of choice for the whole pregnancy. Mechanical heart valves are the important exception: heparin monotherapy carries a materially higher rate of valve thrombosis and maternal death, so in that population anticoagulation is individualized and dose-adjusted warfarin is generally preferred for the second and third trimesters.",
+    "conceptRule": [
+      "Any indication other than a mechanical valve (VTE, thromboprophylaxis, antiphospholipid syndrome) -> LMWH or UFH throughout pregnancy; warfarin is not used",
+      "Mechanical heart valve, 1st trimester -> shared decision-making between continued warfarin (reasonable if the therapeutic dose is <=5 mg/day) and dose-adjusted anti-Xa-monitored LMWH or continuous UFH, weighing embryopathy risk against valve-thrombosis risk",
+      "Mechanical heart valve, 2nd-3rd trimester -> dose-adjusted INR-targeted warfarin is generally preferred, then switch to UFH or LMWH at about 36 weeks so that no warfarin is on board at delivery",
+      "Direct oral anticoagulants -> avoided at every gestational age in pregnancy (inadequate safety data, and ineffective/contraindicated for mechanical valves)"
+    ],
+    "discriminator": "Direct oral anticoagulants are avoided in pregnancy for lack of safety data and are never substituted for warfarin here; note also that the standard 'heparin throughout pregnancy' rule does not apply to mechanical valves, where valve-thrombosis risk drives the regimen."
   },
   {
     "id": "ob-pharmacology-54",
@@ -14699,7 +14843,7 @@ export const OB_MCQS: McqQuestion[] = [
       "Calcium channel blockade describes nifedipine's mechanism, not terbutaline's.",
       "Correct: beta-2 agonism raises cAMP, activating protein kinase A and reducing free intracellular calcium available for uterine contraction, producing relaxation."
     ],
-    "concept": "Terbutaline is a beta-2 adrenergic agonist; receptor activation increases cAMP, which decreases intracellular calcium and myosin light-chain kinase activity, relaxing uterine smooth muscle. Its non-selectivity for beta-2 over beta-1 receptors accounts for its cardiac side effects."
+    "concept": "Terbutaline is a beta-2 adrenergic agonist; receptor activation increases cAMP, which decreases intracellular calcium and myosin light-chain kinase activity, relaxing uterine smooth muscle. It is beta-2 selective, but selectivity is incomplete at the doses used for tocolysis; combined with beta-2-mediated peripheral vasodilation and reflex sympathetic activation, this produces maternal tachycardia, palpitations, hyperglycemia, hypokalemia, and rarely pulmonary edema or myocardial ischemia. Because of these effects the FDA warns against prolonged or repeated terbutaline tocolysis; its role is limited to short-term (<48-72 hour) or acute uterine tachysystole management."
   },
   {
     "id": "ob-pharmacology-56",
@@ -14955,10 +15099,10 @@ export const OB_MCQS: McqQuestion[] = [
       "Failing to address the partner leaves a high risk of reinfection for the patient and continued transmission.",
       "Correct: expedited partner therapy is recommended for chlamydia (and gonorrhea) to treat partners promptly and reduce reinfection when the partner is unlikely to seek independent care.",
       "Delaying the patient's own treatment increases her risk of complications and is not appropriate.",
-      "There is no requirement or mechanism to report partner names to authorities for chlamydia treatment.",
+      "Chlamydia is a reportable condition and health departments do run confidential partner services (contact tracing and notification), so this is not a matter of there being no mechanism — the error is \"mandatory treatment.\" Partners can be notified and offered care but cannot be compelled to accept it, and EPT is the faster, patient-initiated route when the partner is unlikely to present for care.",
       "Permanent abstinence is not a practical or evidence-based recommendation; treatment and safe resumption of activity after treatment completion is the goal."
     ],
-    "concept": "Expedited partner therapy (EPT) allows clinicians to provide prescriptions or medications for the sexual partners of patients diagnosed with certain STIs, particularly chlamydia, without requiring the partner to be independently examined, improving treatment rates and reducing reinfection."
+    "concept": "Expedited partner therapy (EPT) allows clinicians to provide medication or a prescription for the sexual partners of patients diagnosed with certain STIs — chlamydia and gonorrhea in particular — without requiring the partner to be examined first, which improves partner treatment rates and reduces reinfection. EPT is legally permissible in most US states (the CDC maintains a state-by-state list), so local law should be confirmed. It complements, rather than replaces, health-department partner services: chlamydia and gonorrhea are nationally notifiable and partner notification programs are confidential and voluntary — no partner can be compelled to accept treatment."
   },
   {
     "id": "ob-ethics-social-sciences-9",
@@ -15159,15 +15303,20 @@ export const OB_MCQS: McqQuestion[] = [
       "Prescribe only if she agrees to tell her parents within 30 days"
     ],
     "answerIndex": 3,
-    "explanation": "In all US states, minors can legally consent to contraceptive services without parental involvement, reflecting the recognized public health benefit of confidential access to contraception for adolescents.",
+    "explanation": "Minors may consent to contraceptive services in most states, and every Title X-funded clinic must provide confidential contraceptive care to minors regardless of state law, so prescribing here without parental consent or notification is appropriate.",
     "optionRationales": [
       "Incorrect: no judicial involvement is needed for routine contraceptive counseling.",
       "Incorrect: contacting parents without the patient's permission breaches her right to confidential care.",
       "Incorrect: parental consent is not legally required for contraceptive services.",
-      "Correct: minor consent laws uniformly permit adolescents to independently consent to contraceptive care.",
+      "Correct: parental consent is not required for contraceptive services in this setting, so she may consent for herself and receive the prescription confidentially.",
       "Incorrect: conditioning care on future disclosure is not required and undermines confidentiality."
     ],
-    "concept": "Every US state allows minors to consent to contraceptive services without parental knowledge or approval. This reflects the goal of reducing barriers to care that could otherwise lead to unintended adolescent pregnancy."
+    "concept": "Most states explicitly allow all minors to consent to contraceptive services, and federally funded Title X clinics must provide confidential contraceptive care to minors in every state. A minority of states permit minor consent only in specified circumstances (married, already a parent, a health risk from the pregnancy, or above a stated age) and a few have no explicit policy, so know your own state law. What is uniform is the principle: barriers to confidential contraception increase unintended adolescent pregnancy.",
+    "conceptRule": [
+      "Minor requests contraception at a Title X-funded clinic -> confidential services must be provided, with no parental consent or notification (federal requirement, every state)",
+      "Minor requests contraception outside Title X -> check state law: roughly half of states allow all minors to consent, about 20 only in specified circumstances (married, already parenting, health risk, or above a set age)",
+      "Minor asks that her parents not be told -> do not notify them without her permission and do not condition the prescription on future disclosure"
+    ]
   },
   {
     "id": "ob-ethics-social-sciences-18",
@@ -15182,7 +15331,7 @@ export const OB_MCQS: McqQuestion[] = [
       "A parent must be notified only if the test is positive"
     ],
     "answerIndex": 0,
-    "explanation": "All states permit minors to consent independently to diagnosis and treatment of sexually transmitted infections, along with pregnancy-related care, without parental involvement.",
+    "explanation": "All 50 states and DC permit minors to consent independently to diagnosis and treatment of sexually transmitted infections, so she may be both tested and treated without parental involvement.",
     "optionRationales": [
       "Correct: minors can legally consent to both STI testing and treatment on their own.",
       "Incorrect: consent extends to treatment as well as testing.",
@@ -15190,7 +15339,14 @@ export const OB_MCQS: McqQuestion[] = [
       "Incorrect: age alone does not require parental consent for STI services.",
       "Incorrect: a positive result does not trigger mandatory parental notification for STIs."
     ],
-    "concept": "Similar to contraception, minors nationwide can consent to their own diagnosis and treatment for sexually transmitted infections and to pregnancy-related (prenatal) care, since requiring parental consent would deter adolescents from seeking necessary care."
+    "concept": "All states allow minors to consent to STI diagnosis and treatment, and that consent covers treatment as well as testing; a positive result does not create a duty to tell the parents (reporting goes to the health department, not the family). Most - but not all - states also allow minors to consent to prenatal care, and those rules vary by state, sometimes by age or by service. The practical caveat is that confidentiality is usually broken outside the visit rather than inside it, most often by an insurance explanation of benefits mailed to the policyholder, which is why adolescents who need a visit kept private are offered a Title X clinic, state confidential-services billing, or self-pay.",
+    "conceptRule": [
+      "Minor requests STI testing or treatment -> independent consent permitted in all 50 states + DC, and it covers treatment, not just testing",
+      "Positive STI result in a minor -> report to the health department as required; no mandatory parental notification",
+      "Minor requests prenatal care -> permitted in most states but not all, so confirm state law",
+      "Minor needs the visit kept confidential -> address the insurance explanation of benefits (Title X clinic, confidential-services billing, or self-pay)"
+    ],
+    "discriminator": "This item tests the scope of minor consent rather than the decision to test: consent extends to treatment, and a positive result does not trigger parental notification. The residual threat to adolescent confidentiality is administrative (the insurance explanation of benefits), not legal."
   },
   {
     "id": "ob-ethics-social-sciences-19",

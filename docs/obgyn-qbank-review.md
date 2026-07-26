@@ -785,3 +785,53 @@ and recovers 4/4 of the hand-verified duplicates. Worth adding to `build_ob_mcq.
 - **drop `ob-pharmacology-15`** - Same point, same answer: ob-contraception-7 ("which counseling point regarding long-term use is most accurate" -> reversible decrease in bone mineral density) and ob-pharmacology-15 ("most associated with which reversible adverse effect" -> decreased bone mineral density that recovers after discontinuation). Keep ob-contraception-7 (counseling framing). Re-point the Pharmacology slot to a DMPA fac
 - **drop `ob-pharmacology-43`** - Same point, same answer: ob-contraception-19 (3 weeks postpartum, exclusively breastfeeding -> progestin-only pill) and ob-pharmacology-43 (POP preferred in which situation -> breastfeeding, because it does not suppress milk production). Keep ob-contraception-19. If the Pharmacology domain wants a POP item, test its distinguishing pharmacology instead - the strict 3-hour dosing window and cervical
 - **drop `ob-gynecologic-oncology-6`** - ob-gynecologic-oncology-6 duplicates ob-menstrual-disorders-20 from cluster 63 - same 47-year-old with cycles every 2-3 months, same biopsy result (proliferative endometrium without atypia), same keyed cyclic progestin. It also carries a content error: its topic is "Endometrial hyperplasia management" but proliferative endometrium is not hyperplasia, so as written it teaches a mislabel. Prefer rew
+
+
+---
+
+# Resolution (2026-07-26)
+
+Everything below was applied to the source batch JSON and the bank rebuilt. The bank went
+**556 -> 597 questions**.
+
+| Action | Count |
+|---|---|
+| Clinical items corrected in the first pass (verified by hand) | 4 |
+| Duplicates retired | 20 |
+| New questions closing verified gaps | 61 |
+| Further review findings applied | 62 |
+| Findings declined (see below) | 10 |
+| Gaps with zero coverage | 26 -> 0 |
+| Same-keyed-answer duplicate flags | 10 -> 3 |
+
+## Findings deliberately NOT applied
+
+Nearly all of these asked for a question to be **added or deleted**, which the fix pass was not allowed to do
+(adding shifts ids; deleting loses content). They remain open work:
+
+- **ob-pharmacology-19** — Finding asks for TWO NEW questions (low-dose aspirin 81 mg preeclampsia prophylaxis; intrapartum GBS penicillin G + 2019 penicillin-allergy branch). Hard constraint 4 forbids adding questions, and the named host item is a GnRH-agonist/fibroid myomectomy question - grafting aspirin or GBS teaching onto its concept would be off-topic noise that no student would find while studying either subject. Th
+- **ob-medical-complications-of-pregnancy-6** — Partially applied. The CHAP/ACOG-2022 treatment thresholds and the acute severe-range algorithm were added to this item's concept and conceptRule because they belong to a chronic-hypertension question. The finding's remaining asks - a separate acute severe-range item, a hepatitis B vertical-transmission item, and a gestational thrombocytopenia vs ITP item - require adding new questions, which hard
+- **ob-labor-delivery-11 / -15 / -29** — Finding asked to propagate the 'drop routine maternal O2' edit to these three items. By built id they are not in gen-010 (the only file in my spec that contains them would have shown the bundle wording); the only other item in gen-010 carrying the outdated bundle is array index 10, which I did fix. Editing other gen-*.json files is outside my spec, so those three ids need a separate pass.
+- **ob-menstrual-disorders-5 / ob-menstrual-disorders-28 / ob-menopause-15 / ob-menopause-16** — Same finding also asked to retire -5 and collapse the three POI-diagnosis items. Those questions live in files not named in my spec (only gen-019 was assigned), so I left them untouched.
+- **ob-newborn-neonatal-12 / ob-menstrual-disorders-15 (deletion part)** — Both findings said 'retire' the duplicate. Hard constraint 4 forbids removing questions, so I repurposed each in place to an uncovered topic instead of deleting — same slot count, duplication resolved.
+- **ob-early-pregnancy-complications-6** — Applied the main fix (single 3500 mIU/mL threshold; rules that now differ above vs below it). Did NOT apply the half of the finding directed at the 'paired question -7' (its rules and hemodynamic-stability discriminator): no question with that defect exists in the files named in my spec — the identical-action rule pair the reviewer quoted is actually this question's own conceptRule, which I rewrot
+- **ob-sexual-health-assault-2** — Rejected the re-key half of requested fix (b). Adding ulipristal and keying it would contradict the stem's 'wants the most effective option available' while the copper IUD sits in the option list, creating two defensible answers. Instead added ulipristal as the missing high-quality option (replacing the low-yield Yuzpe distractor), kept the copper IUD keyed, and used the rationales to resolve the 
+- **ob-ethics-social-sciences-18** — Applied the clinical half of this finding (the false 'prenatal care nationwide' claim) but declined the dedupe half — 'delete -18 or repurpose it'. Deleting is barred by the no-add/no-remove constraint, and repurposing to a new topic (insurance EOB / HIV-PrEP consent) would require rewriting the stem, which orphans students' saved progress for a low-severity redundancy. Instead I differentiated -1
+- **ob-pharmacology-36** — The finding's actual request is to ADD five new items (labetalol/hydralazine for severe-range BP, CHAP-era >=140/90 threshold, vaginal progesterone for short cervix with 17-OHP withdrawal, insulin first-line for GDM, doxylamine-pyridoxine for NVP). Hard constraint 4 forbids adding questions, so the additions were not made. I partially applied the intent in-place on the existing nifedipine item: it
+- **ob-prenatal-care-normal-pregnancy-2** — The finding's core request (collapse the near-duplicate lisinopril/preconception items Q2/Q3/Q12, merge Q16/Q17 and Q13/Q42, and repurpose the freed slots) cannot be executed: hard constraint 4 forbids adding or removing questions, and the duplicate siblings live outside the files in my spec (only gap-008 index 4 was assigned; the ACE-inhibitor twin gen-002 index 3 is a different file and is one o
+
+## Still open
+
+- The 3 remaining same-keyed-answer duplicate candidates the adjudicator judged acceptable:
+  `ob-postpartum-25`/`-26` (Sheehan), `ob-contraception-18`/`-19` (POP), `ob-breast-disorders-1`/`-15` (papilloma).
+- Domain weighting: Pharmacology 54 vs Cervical Dysplasia & Screening 19, which is inverted relative to shelf yield.
+- The over-weighting lists in the coverage section above (spontaneous-abortion nomenclature, Mullerian anomalies,
+  adolescent consent) — partially addressed, since three surplus items were repurposed rather than deleted.
+
+## Id stability
+
+Ids are now assigned from `src/data/obgynMcqIds.json` rather than by position, because students' progress
+(`osce.obmcq.v1`) is keyed by id. Verified across this whole change: no existing question ever silently changed id.
+Three questions were deliberately repurposed to new topics and correctly minted new ids; their vacated ids are
+reserved so nothing inherits their stale progress. Use `scripts/ob_remap_ids.py` after any stem edit, and
+`scripts/validate_ob_batch.py` before any rebuild.
