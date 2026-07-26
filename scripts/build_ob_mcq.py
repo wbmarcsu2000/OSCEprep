@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-# ARCHIVED COPY, kept in the repo because RETIRED_IDS below is load-bearing: a
-# rebuild without it silently reintroduces the 20 questions retired as redundant
-# in the 2026-07-25 review. The per-batch source JSON this reads still lives in
-# the generation workspace referenced by OBWORK; if that workspace is gone, this
-# file is the record of what the build did and why, and src/data/obgynMcq.ts is
-# the source of truth.
+# ARCHIVED COPY. Two things here are load-bearing and must stay in version
+# control: RETIRED_IDS (a rebuild without it silently reintroduces the 20
+# questions retired as redundant) and the id ledger at LEDGER_PATH. The per-batch
+# source JSON lives in the generation workspace at OBWORK; if that is gone, this
+# file records what the build did and src/data/obgynMcq.ts is the source of truth.
 """Assemble the OB/GYN MCQ bank from the generation workflow's per-batch JSON.
 
 Teaching fields (optionRationales/concept/conceptRule/scoreComponents/
@@ -22,8 +21,11 @@ DIR_PAIRS = [
     (f"{OBWORK}/ob_gen_out", f"{OBWORK}/ob_verified_out"),          # main 14 domains
     (f"{OBWORK}/ob_pharm_out", f"{OBWORK}/ob_pharm_verified_out"),  # Pharmacology domain
     (f"{OBWORK}/ob_gap_out", f"{OBWORK}/ob_gap_verified_out"),      # blueprint gap-fill (+ 3 domains)
+    (f"{OBWORK}/ob_gap2_out", f"{OBWORK}/ob_gap2_verified_out"),    # 2026-07 review gap-fill
 ]
 TS_PATH = "/Users/williamsaccount/osce-simulator/src/data/obgynMcq.ts"
+# Committed id ledger — see the "Stable ids" note in main().
+LEDGER_PATH = "/Users/williamsaccount/osce-simulator/src/data/obgynMcqIds.json"
 
 SYSTEM_ORDER = [
     "Prenatal Care & Normal Pregnancy",
@@ -89,6 +91,12 @@ def unescape(x):
 
 def norm_stem(s):
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", s.lower())).strip()
+
+
+def stem_hash(s):
+    """Identity of a question for the id ledger. Normalised so trivial whitespace
+    or punctuation edits do not mint a new id and orphan a student's progress."""
+    return hashlib.sha256(norm_stem(s).encode("utf-8")).hexdigest()[:16]
 
 
 def tokens(s):
@@ -194,18 +202,41 @@ def main():
         kept.append(q)
 
     kept.sort(key=lambda q: (SYSTEM_ORDER.index(q["system"]), q["topic"].lower()))
-    out, counters, retired = [], {}, 0
+
+    # ---- Stable ids -------------------------------------------------------
+    # Ids were previously the question's position in its domain's topic-sorted
+    # order. That is not stable: inserting one question shifts every later id in
+    # that domain (adding 61 questions moved 338 of 536). The app keys progress
+    # by id (localStorage osce.obmcq.v1), so shifting ids silently reattaches a
+    # student's seen/mastered/missed pools to different questions.
+    #
+    # So ids now come from a committed ledger keyed by normalised-stem hash: a
+    # question keeps its id forever, and a genuinely new question is appended
+    # after the highest number used in its domain. Retired ids stay reserved so
+    # they are never handed to a different question.
+    ledger_doc = json.load(open(LEDGER_PATH))
+    ledger = dict(ledger_doc["ids"])
+    reserved = set(ledger_doc.get("reserved", []))
+    used = set(ledger.values()) | reserved
+    next_n = {}
+    for qid in used:
+        m = re.match(r"^ob-(.+)-(\d+)$", qid)
+        if m:
+            next_n[m.group(1)] = max(next_n.get(m.group(1), 0), int(m.group(2)))
+
+    out, retired, minted = [], 0, []
     key_dist = {c: 0 for c in "ABCDE"}
     tf = {"optionRationales": 0, "concept": 0, "conceptRule": 0, "scoreComponents": 0, "discriminator": 0, "mnemonic": 0}
     for q in kept:
-        s = slug(q["system"]); counters[s] = counters.get(s, 0) + 1
-        # Retirement happens AFTER the counter increments, on purpose: ids are
-        # sequential per domain, so dropping a question earlier in the pipeline
-        # would renumber every later question in that domain — and the app keys
-        # per-question progress (osce.obmcq.v1) by id, so students' seen/mastered
-        # /missed pools would silently reattach to the wrong questions. Skipping
-        # here leaves every surviving id byte-identical to the previous build.
-        if f"ob-{s}-{counters[s]}" in RETIRED_IDS:
+        s = slug(q["system"])
+        hs = stem_hash(q["stem"])
+        qid = ledger.get(hs)
+        if qid is None:
+            next_n[s] = next_n.get(s, 0) + 1
+            qid = f"ob-{s}-{next_n[s]}"
+            ledger[hs] = qid
+            minted.append((qid, q["topic"]))
+        if qid in RETIRED_IDS:
             retired += 1
             continue
         perm = seeded_perm(len(q["options"]), q["stem"])
@@ -213,7 +244,7 @@ def main():
         ai = perm.index(q["answerIndex"])
         key_dist["ABCDE"[ai]] += 1
         rec = {
-            "id": f"ob-{s}-{counters[s]}",
+            "id": qid,
             "system": q["system"], "topic": q["topic"], "stem": q["stem"],
             "options": opts, "answerIndex": ai, "explanation": q["explanation"],
         }
@@ -277,6 +308,11 @@ export const OB_MCQ_SYSTEMS: string[] = OB_MCQ_SYSTEM_ORDER.filter((s) =>
     print(f"raw questions: {len(raw)}")
     print(f"dropped invalid: {dropped_invalid}")
     print(f"retired as redundant: {retired}")
+    ledger_doc["ids"] = dict(sorted(ledger.items(), key=lambda kv: kv[1]))
+    json.dump(ledger_doc, open(LEDGER_PATH, "w"), indent=1)
+    print(f"ids minted this build: {len(minted)}")
+    for qid, topic in minted[:80]:
+        print(f"    + {qid}  {topic}")
     print(f"dropped within-OB duplicates: {dropped_dup}")
     print(f"FINAL questions: {len(out)}")
     print(f"teaching fields: {tf}")
