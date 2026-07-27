@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { CURRICULUM, type CategoryCurriculum, type PracticeCase } from "../../data/curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "../../data/skillDrills";
 import { MANAGEMENT_DRILLS, type ManagementDrillProblem } from "../../data/managementDrills";
+import { EXAM_DRILLS, type ExamDrill } from "../../data/examDrills";
 import { EKG_DRILLS, CXR_DRILLS, type ImageDrillProblem } from "../../data/imageDrills";
 import { SCORE_DRILLS, type ScoreDrillProblem } from "../../data/scoreDrills";
 import { ANTIBIOTIC_DRILLS, type AntibioticDrillProblem } from "../../data/antibioticDrills";
@@ -39,6 +40,7 @@ import {
   AiCoachNote,
   DrillBrowser,
   fmtTime,
+  GroupedCoverageDrill,
 } from "../components/drillPrimitives";
 
 /**
@@ -76,6 +78,7 @@ export function Drills() {
   const [scoreAnswer, setScoreAnswer] = useState("");
   const [antibioticAnswer, setAntibioticAnswer] = useState("");
   const [highYieldAnswer, setHighYieldAnswer] = useState("");
+  const [examAnswer, setExamAnswer] = useState("");
   const [graded, setGraded] = useState(false);
   const { progress, record, setManual } = useDrillProgress();
   const [browsing, setBrowsing] = useState(false);
@@ -114,6 +117,14 @@ export function Drills() {
     type === "management" && managementPool.length > 0
       ? managementPool[stemIdx % managementPool.length]
       : null;
+
+  // Focused physical exam drills: authored per IM category, rotated by stemIdx.
+  const examPool = useMemo(
+    () => EXAM_DRILLS.filter((p) => p.category === categoryName),
+    [categoryName],
+  );
+  const examProblem: ExamDrill | null =
+    type === "exam" && examPool.length > 0 ? examPool[stemIdx % examPool.length] : null;
 
   // EKG / CXR reading drills: a LITFL study bank, rotated by stemIdx.
   const imagePool = type === "ekg" ? EKG_DRILLS : type === "cxr" ? CXR_DRILLS : [];
@@ -165,6 +176,8 @@ export function Drills() {
         return stem ? `${categoryName}#${category.practiceCases.indexOf(stem)}` : null;
       case "management":
         return managementProblem?.caseId ?? null;
+      case "exam":
+        return examProblem?.id ?? null;
       case "skills":
         return skillProblem ? skillDrillId(skillProblem) : null;
       case "scores":
@@ -198,6 +211,7 @@ export function Drills() {
     setScoreAnswer("");
     setAntibioticAnswer("");
     setHighYieldAnswer("");
+    setExamAnswer("");
     setGraded(false);
   };
 
@@ -243,6 +257,13 @@ export function Drills() {
         setCategoryName(prob.category);
         const pool = MANAGEMENT_DRILLS.filter((p) => p.category === prob.category);
         setStemIdx(Math.max(0, pool.findIndex((p) => p.caseId === id)));
+      }
+    } else if (t === "exam") {
+      const prob = EXAM_DRILLS.find((p) => p.id === id);
+      if (prob) {
+        setCategoryName(prob.category);
+        const pool = EXAM_DRILLS.filter((p) => p.category === prob.category);
+        setStemIdx(Math.max(0, pool.findIndex((p) => p.id === id)));
       }
     } else if (t === "skills") {
       const prob = SKILL_DRILLS.find((p) => skillDrillId(p) === id);
@@ -501,6 +522,32 @@ export function Drills() {
               onSetManual={setManualCurrent}
             />
           )}
+          {type === "exam" &&
+            (examProblem ? (
+              <GroupedCoverageDrill
+                key={`exam:${examProblem.id}`}
+                prompt={examProblem.vignette}
+                keyPoints={examProblem.keyPoints}
+                pearls={examProblem.pearls}
+                badge={examProblem.category}
+                answer={examAnswer}
+                setAnswer={setExamAnswer}
+                graded={graded}
+                onGrade={() => setGraded(true)}
+                onNew={nextProblem}
+                onRetry={retry}
+                onRecord={recordCurrent}
+                progressEntry={activeProgress}
+                onSetManual={setManualCurrent}
+                newLabel="Next presentation →"
+                drillType="exam"
+              />
+            ) : (
+              <div className="card p-4">
+                <p className="muted text-center">No focused-exam drills for this category yet.</p>
+              </div>
+            ))}
+
           {type === "workup" && (
             <WorkupDrill
               key={`${categoryName}:${stemIdx}`}

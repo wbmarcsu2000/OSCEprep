@@ -12,6 +12,7 @@ import {
   type DrillProgress,
   type DrillManual,
   type DrillProgressMap,
+  gradableItem,
 } from "../../data/drillProgressCore";
 import { track } from "../../analytics/telemetry";
 
@@ -408,7 +409,23 @@ export function GroupedCoverageDrill({
   const doGrade = async () => {
     setGrading(true);
     try {
-      const m = await grader(answer, groups);
+      // Grade the maneuver/fact, not the teaching clause after it. Items are
+      // written "<thing to recall> — <why it matters>", and the coverage matcher
+      // needs most of an item's tokens, so grading the whole string silently
+      // required the student to reproduce the explanation too. Measured on the
+      // focused-exam bank: typing the exact recall half scored 7% against full
+      // items and 100% against gradable halves. The full text is still what gets
+      // displayed and revealed; only the matching target changes.
+      const gradeGroups = keyPoints.map((g) => ({
+        group: g.group,
+        items: g.items.map(gradableItem),
+      }));
+      const rawMatched = await grader(answer, gradeGroups);
+      // Translate back to full item strings so the reveal highlights correctly.
+      const m = new Set<string>();
+      for (const g of keyPoints) {
+        for (const item of g.items) if (rawMatched.has(gradableItem(item))) m.add(item);
+      }
       setMatched(m);
       const r = buildCoverage(groups, m);
       const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;

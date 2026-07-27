@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from "vitest";
-import { render, screen, within, fireEvent } from "@testing-library/react";
+import { render, screen, within, fireEvent, waitFor } from "@testing-library/react";
 import { DrillTypeRail } from "../components/DrillTypeRail";
 import { Drills } from "../screens/Drills";
 import {
@@ -10,6 +10,7 @@ import {
   type DrillType,
   type DrillProgressMap,
 } from "../../data/drillProgress";
+import { EXAM_DRILLS } from "../../data/examDrills";
 
 const ALL_TYPES: DrillType[] = DRILL_TAB_GROUPS.flatMap((g) => g.types);
 
@@ -17,7 +18,7 @@ describe("DrillTypeRail", () => {
   it("exposes every drill type as a button so none is clipped off-screen", () => {
     render(<DrillTypeRail type="differential" progress={{}} onSelect={() => {}} />);
     const nav = screen.getByRole("navigation", { name: /drill type/i });
-    expect(ALL_TYPES.length).toBe(17);
+    expect(ALL_TYPES.length).toBe(18);
     for (const t of ALL_TYPES) {
       expect(
         within(nav).getByRole("button", { name: new RegExp(DRILL_TYPE_LABELS[t], "i") }),
@@ -110,5 +111,51 @@ describe("Drills screen", () => {
     fireEvent.change(screen.getByLabelText(/high-yield status/i), { target: { value: "mastered" } });
     // Jumps to the only mastered item — the DKA case.
     expect(screen.getByText(/glucose 480/i)).toBeInTheDocument();
+  });
+});
+
+describe("Focused exam drill", () => {
+  beforeEach(() => {
+    try {
+      localStorage.clear();
+    } catch {
+      /* ignore */
+    }
+  });
+
+  it("renders a vignette prompt with a grouped answer key, grades it, and persists the attempt", async () => {
+    render(<Drills />);
+    fireEvent.click(screen.getByRole("button", { name: /focused exam/i }));
+
+    // Whichever drill the screen opened on, the prompt is its vignette and the
+    // answer key must not be visible until it is graded.
+    const shown = EXAM_DRILLS.find((d) => screen.queryByText(d.vignette) !== null);
+    expect(shown, "an exam drill vignette is rendered").toBeTruthy();
+    const drill = shown!;
+    expect(screen.queryByText(drill.keyPoints[0].items[0])).not.toBeInTheDocument();
+
+    // Answer with two items verbatim, then grade.
+    const box = screen.getByRole("textbox");
+    const named = [drill.keyPoints[0].items[0], drill.keyPoints[0].items[1] ?? ""].filter(Boolean);
+    fireEvent.change(box, { target: { value: named.join("\n") } });
+    fireEvent.click(screen.getByRole("button", { name: /grade my answer/i }));
+
+    // Grading is async (the grader may be LLM-backed), so wait for the key to appear.
+    await waitFor(() => expect(localStorage.getItem("osce.drills.v1")).not.toBeNull());
+
+    // The attempt is recorded against this drill's own progress key.
+    const saved = JSON.parse(localStorage.getItem("osce.drills.v1")!) as DrillProgressMap;
+    const entry = saved[drillKey("exam", drill.id)];
+    expect(entry, `progress saved under ${drillKey("exam", drill.id)}`).toBeTruthy();
+    expect(entry.attempts).toBeGreaterThan(0);
+    // Two of ~12 items named should score above zero but well short of mastery.
+    expect(entry.bestPct).toBeGreaterThan(0);
+    expect(entry.bestPct).toBeLessThan(80);
+  });
+
+  it("lists every exam drill in the browser, grouped by category", () => {
+    const cat = drillCatalog("exam");
+    expect(cat.length).toBe(EXAM_DRILLS.length);
+    expect(new Set(cat.map((c) => c.group)).size).toBeGreaterThanOrEqual(8);
   });
 });

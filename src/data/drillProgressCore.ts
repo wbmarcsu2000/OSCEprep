@@ -58,3 +58,20 @@ export function isMastered(p: DrillProgress | undefined): boolean {
 export function isSeen(p: DrillProgress | undefined): boolean {
   return !!p && p.attempts > 0;
 }
+
+/**
+ * The part of an answer-key item a student is actually expected to write.
+ *
+ * Coverage items are authored as "<thing to recall> — <why it matters>" so the
+ * reveal teaches, but the coverage matcher needs most of an item's tokens to
+ * count it — so grading the whole string silently demanded the explanation too.
+ * Measured on the focused-exam bank: typing the exact recall half matched 7% of
+ * full items and 100% of gradable halves. Display still uses the full string.
+ *
+ * Splits only on a dash with whitespace on both sides, so hyphenated words and
+ * ranges ("38-year-old", "24-28 weeks") are left alone.
+ */
+export function gradableItem(item: string): string {
+  const head = item.split(/\s+[—–-]\s+/)[0].trim();
+  return head.length > 0 ? head : item;
+}

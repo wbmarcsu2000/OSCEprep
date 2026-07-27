@@ -5,6 +5,7 @@
  * lost the moment it rotates away. Pure module — no React, no PHI (only a
  * coverage %, an attempt count, and timestamps against stable problem ids).
  */
+import { EXAM_DRILLS } from "./examDrills";
 import { CURRICULUM } from "./curriculum";
 import { SKILL_DRILLS, SKILL_DRILL_TYPES, type SkillDrillProblem } from "./skillDrills";
 import { MANAGEMENT_DRILLS } from "./managementDrills";
@@ -32,6 +33,7 @@ export const DRILL_PROGRESS_KEY = "osce.drills.v1";
 export type DrillType =
   | "high-yield"
   | "differential"
+  | "exam"
   | "workup"
   | "management"
   | "antibiotics"
@@ -67,6 +69,7 @@ export const labSkillForType = (t: DrillType): SkillDrillProblem["skill"] | unde
 export const DRILL_TYPE_ORDER: DrillType[] = [
   "high-yield",
   "differential",
+  "exam",
   "workup",
   "management",
   "antibiotics",
@@ -87,6 +90,7 @@ export const DRILL_TYPE_ORDER: DrillType[] = [
 export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
   "high-yield": "High-Yield",
   differential: "Differential",
+  exam: "Focused exam",
   workup: "Work-up",
   management: "Management",
   antibiotics: "Antibiotics",
@@ -109,6 +113,7 @@ export const DRILL_TYPE_LABELS: Record<DrillType, string> = {
 export const DRILL_TYPE_EMOJI: Record<DrillType, string> = {
   "high-yield": "⭐",
   differential: "🧠",
+  exam: "🤲",
   workup: "🧪",
   management: "🩺",
   antibiotics: "💊",
@@ -130,7 +135,7 @@ export const DRILL_TYPE_EMOJI: Record<DrillType, string> = {
  *  per-bank lab-interpretation tabs. Order matches DRILL_TYPE_ORDER. */
 export const DRILL_TAB_GROUPS: { label: string; types: DrillType[] }[] = [
   { label: "Exam prep", types: ["high-yield"] },
-  { label: "Frameworks", types: ["differential", "workup", "management", "antibiotics", "ekg", "cxr", "scores", "skills"] },
+  { label: "Frameworks", types: ["differential", "exam", "workup", "management", "antibiotics", "ekg", "cxr", "scores", "skills"] },
   { label: "Lab interpretation", types: LAB_TABS.map((l) => l.type) },
 ];
 
@@ -231,6 +236,9 @@ export function drillCatalog(type: DrillType): DrillCatalogItem[] {
   switch (type) {
     case "differential":
       return CURRICULUM.map((c) => ({ type, id: c.category, label: c.category, group: c.category }));
+    case "exam":
+      // The vignette IS the prompt, so using it as the label leaks nothing.
+      return EXAM_DRILLS.map((p) => ({ type, id: p.id, label: truncate(p.vignette), group: p.category }));
     case "scores":
       return SCORE_DRILLS.map((p) => ({ type, id: p.id, label: p.name, group: p.category }));
     case "antibiotics":
