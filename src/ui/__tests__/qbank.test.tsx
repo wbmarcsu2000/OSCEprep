@@ -35,26 +35,51 @@ describe("Question Bank screen", () => {
   });
 
   it("names each option by its answer text and announces the result", async () => {
-    render(<Qbank />);
-    // The bank is code-split; wait for load() before driving the setup screen.
+    // A fixed one-question bank: the runtime shuffles questions and options, so
+    // asserting against whichever question happened to come up made this flaky.
+    const q: McqQuestion = {
+      id: "a11y-1",
+      system: "Cardiology",
+      topic: "Aspirin in ACS",
+      stem: "A patient presents with an acute coronary syndrome. What is the best next step?",
+      options: ["Give aspirin", "Reassure and discharge"],
+      answerIndex: 0,
+      explanation: "Aspirin is given immediately in ACS.",
+    };
+    const bank: McqBank = {
+      id: "a11y",
+      title: "Question Bank",
+      eyebrow: "Test",
+      blurb: "test bank",
+      icon: "\u2753",
+      grad: "var(--grad-teal)",
+      total: 1,
+      load: async () => [q],
+      systems: ["Cardiology"],
+      storageKey: "osce.a11y.test",
+    };
+    render(<Qbank bank={bank} />);
     await screen.findByRole("button", { name: /start quiz/i });
     fireEvent.click(screen.getByRole("button", { name: /start quiz/i }));
 
     // An aria-label of "Option A" used to REPLACE the option's contents, so a
-    // screen reader read four buttons as bare letters and the answers were
-    // unreachable. The accessible name must carry the answer text.
-    const options = screen.getAllByRole("button", { name: /^Option [A-E][.,]/ });
-    const firstName = options[0].textContent ?? "";
-    expect(firstName.length).toBeGreaterThan("Option A. ".length + 5);
+    // screen reader read the choices as bare letters. The accessible name must
+    // carry the answer text itself.
+    for (const text of q.options) {
+      expect(
+        screen.getByRole("button", { name: new RegExp(`^Option [A-E][.,].*${text}`) }),
+        `option "${text}" is named by its own text`,
+      ).toBeInTheDocument();
+    }
 
-    // The result is conveyed by border colour plus an aria-hidden ✓/✗ badge, so
-    // it has to reach assistive tech through a live region.
+    // Correctness is conveyed by border colour plus an aria-hidden badge, so it
+    // has to reach assistive tech through a live region.
     const live = document.querySelector('[role="status"][aria-live="polite"]');
     expect(live, "a live region is mounted before answering").not.toBeNull();
     expect(live?.textContent?.trim()).toBe("");
-    fireEvent.click(options[0]);
-    expect(live?.textContent).toMatch(/^(Correct|Incorrect)\./);
-    expect(live?.textContent).toMatch(/right answer is [A-E]:/);
+    fireEvent.click(screen.getByRole("button", { name: /Give aspirin/ }));
+    expect(live?.textContent).toMatch(/^Correct\./);
+    expect(live?.textContent).toMatch(/right answer is [A-E]: Give aspirin/);
   });
 
   it("starts a quiz and reveals feedback only after answering", async () => {

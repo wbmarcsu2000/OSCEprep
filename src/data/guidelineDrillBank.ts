@@ -68,7 +68,7 @@ export const OB_DRILL_BANK: DrillBank = {
   id: "ob",
   title: "Guideline Drills",
   blurb:
-    "Master one guideline at a time — recall its key facts, graded instantly. Prenatal care, OB complications, labor & fetal monitoring, and gynecology for the OB/GYN shelf.",
+    "Recall the key facts one topic at a time, graded instantly. Prenatal care, OB complications, labor & fetal monitoring, gynecology, and short-answer drills on the common benign gyn operations.",
   icon: "🎯",
   grad: "var(--grad-coral)",
   clerkshipLabel: "OB/GYN",
