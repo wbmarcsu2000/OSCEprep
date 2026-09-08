@@ -42,13 +42,22 @@ export function buildCoverage(
 }
 
 /** Hook: grade an answer against item groups via the store (AI or lenient),
- *  returning the set of matched items + a grading flag. */
+ *  returning the set of matched FULL item strings.
+ *
+ *  Grades the recall half, not the teaching clause after it. Items are written
+ *  "<thing to recall> — <why it matters>", and the coverage matcher needs most
+ *  of an item's tokens, so grading the whole string silently required the
+ *  student to reproduce the explanation too. Measured on the focused-exam bank:
+ *  typing the exact recall half scored 7% against full items and 100% against
+ *  gradable halves. Mapping here means every mode (full recall, by category)
+ *  grades the same way; the full text is still what gets displayed. */
 export function useGrader() {
   const grade = useAppStore((s) => s.gradeCoverage);
   return async (answer: string, groups: { items: string[] }[]): Promise<Set<string>> => {
     const items = groups.flatMap((g) => g.items);
-    const matched = await grade(answer, items);
-    return new Set(matched);
+    const heads = items.map(gradableItem);
+    const matchedHeads = new Set(await grade(answer, heads));
+    return new Set(items.filter((item) => matchedHeads.has(gradableItem(item))));
   };
 }
 
@@ -441,23 +450,8 @@ export function GroupedCoverageDrill({
   const doGrade = async () => {
     setGrading(true);
     try {
-      // Grade the maneuver/fact, not the teaching clause after it. Items are
-      // written "<thing to recall> — <why it matters>", and the coverage matcher
-      // needs most of an item's tokens, so grading the whole string silently
-      // required the student to reproduce the explanation too. Measured on the
-      // focused-exam bank: typing the exact recall half scored 7% against full
-      // items and 100% against gradable halves. The full text is still what gets
-      // displayed and revealed; only the matching target changes.
-      const gradeGroups = keyPoints.map((g) => ({
-        group: g.group,
-        items: g.items.map(gradableItem),
-      }));
-      const rawMatched = await grader(answer, gradeGroups);
-      // Translate back to full item strings so the reveal highlights correctly.
-      const m = new Set<string>();
-      for (const g of keyPoints) {
-        for (const item of g.items) if (rawMatched.has(gradableItem(item))) m.add(item);
-      }
+      // useGrader grades the "<recall> — <why>" head and returns full items.
+      const m = await grader(answer, keyPoints);
       setMatched(m);
       const r = buildCoverage(groups, m);
       const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;

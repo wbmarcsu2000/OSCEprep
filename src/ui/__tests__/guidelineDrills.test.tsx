@@ -59,10 +59,50 @@ describe("FmDrills screen", () => {
       expect(screen.getByText(g.group)).toBeInTheDocument();
     }
     expect(screen.getByText(/Seen 1\//)).toBeInTheDocument();
-    // back to a clean category 1
-    fireEvent.click(screen.getByRole("button", { name: /try it yourself/i }));
+    // back to where you were — category 1, untouched
+    fireEvent.click(screen.getByRole("button", { name: /^← Back$/ }));
     expect(screen.getByText(/Category 1 of/)).toBeInTheDocument();
     expect(screen.getByRole("textbox", { name: /your recall/i })).toHaveValue("");
+  });
+
+  it("a category reveal can be backed out of, keeping the draft", () => {
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
+    fireEvent.change(screen.getByRole("textbox", { name: /your recall/i }), { target: { value: "draft" } });
+    fireEvent.click(screen.getByRole("button", { name: /^👁 This category$/ }));
+    expect(screen.getByText(/Revealed · not credited/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /^← Back$/ }));
+    expect(screen.queryByText(/Revealed · not credited/)).not.toBeInTheDocument();
+    const box = screen.getByRole("textbox", { name: /your recall/i });
+    expect(box).not.toBeDisabled();
+    expect(box).toHaveValue("draft");
+    expect(screen.getByRole("button", { name: /grade this category/i })).toBeInTheDocument();
+  });
+
+  it("can step back to a graded category and forward again", async () => {
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
+    fireEvent.change(screen.getByRole("textbox", { name: /your recall/i }), { target: { value: "start at 45" } });
+    fireEvent.click(screen.getByRole("button", { name: /grade this category/i }));
+    await waitFor(() => expect(screen.getByRole("button", { name: /next category/i })).toBeInTheDocument());
+    fireEvent.click(screen.getByRole("button", { name: /next category/i }));
+    expect(screen.getByText(/Category 2 of/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /previous category/i }));
+    // category 1 comes back in its graded state with the original answer
+    expect(screen.getByText(/Category 1 of/)).toBeInTheDocument();
+    expect(screen.getByRole("textbox", { name: /your recall/i })).toHaveValue("start at 45");
+    expect(screen.getByRole("button", { name: /next category/i })).toBeInTheDocument();
+  });
+
+  it("Previous and Skip move through the drills in order, wrapping", () => {
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
+    const pool = FM_DRILL_BANK.drills.filter((d) => d.domain === FM_DRILL_BANK.domains[0].id);
+    const chip = (name: string) => screen.getByText(new RegExp(`^${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")} · `));
+    expect(chip(pool[0].name)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /^Skip →$/ }));
+    expect(chip(pool[1].name)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /^← Previous$/ }));
+    expect(chip(pool[0].name)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /^← Previous$/ }));
+    expect(chip(pool[pool.length - 1].name)).toBeInTheDocument();
   });
 
   it("flashcard mode flips to the answer and self-rating advances", () => {
@@ -87,6 +127,15 @@ describe("FmDrills screen", () => {
 
 describe("GuidelineDrills screen (OB bank)", () => {
   beforeEach(() => localStorage.clear());
+
+  it("category mode grades the recall head of a '<head> — <detail>' item", async () => {
+    render(<GuidelineDrills bank={OB_DRILL_BANK} />);
+    fireEvent.click(screen.getByRole("button", { name: /Case vignettes/ }));
+    fireEvent.change(screen.getByRole("textbox", { name: /your recall/i }), { target: { value: "ectopic" } });
+    fireEvent.click(screen.getByRole("button", { name: /grade this category/i }));
+    // the full item is displayed, but only its head had to be typed
+    await waitFor(() => expect(screen.getByText(/^✓ Ectopic — /)).toBeInTheDocument());
+  });
 
   it("renders the OB domains and first drill without touching FM state", () => {
     render(<GuidelineDrills bank={OB_DRILL_BANK} />);

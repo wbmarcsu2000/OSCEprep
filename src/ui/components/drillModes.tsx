@@ -56,7 +56,9 @@ function PearlsBlock({ pearls }: { pearls?: string }) {
 }
 
 /** By-category mode: recall one group at a time, grade each, then a combined
- *  summary. Records the OVERALL coverage % so mastery matches full recall. */
+ *  summary. Records the OVERALL coverage % so mastery matches full recall.
+ *  Per-category answers and grades are kept, so the student can step back to
+ *  a finished category, and either reveal can be backed out of. */
 export function CategoryRecallDrill({
   prompt,
   keyPoints,
@@ -73,25 +75,41 @@ export function CategoryRecallDrill({
   const grader = useGrader();
   const groups = keyPoints.map((g) => ({ group: g.group, items: g.items }));
   const [catIdx, setCatIdx] = useState(0);
-  const [answer, setAnswer] = useState("");
+  /** One draft per category, so going back never loses what was typed. */
+  const [answers, setAnswers] = useState<string[]>(() => groups.map(() => ""));
   const [grading, setGrading] = useState(false);
-  const [catGraded, setCatGraded] = useState(false);
+  /** Categories already graded (or revealed) — shown in their result state. */
+  const [gradedCats, setGradedCats] = useState<Set<number>>(new Set());
+  /** Categories shown without grading — nothing credited. */
+  const [revealedCats, setRevealedCats] = useState<Set<number>>(new Set());
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [done, setDone] = useState(false);
-  /** Current category shown without grading — nothing credited. */
-  const [catRevealed, setCatRevealed] = useState(false);
+  /** The overall % is recorded once per drill, even if the summary is revisited. */
+  const [recorded, setRecorded] = useState(false);
   /** Whole answer flow shown at once; logged as seen, never graded. */
   const [flowRevealed, setFlowRevealed] = useState(false);
 
   const group = groups[catIdx];
   const isLast = catIdx === groups.length - 1;
+  const answer = answers[catIdx];
+  const catGraded = gradedCats.has(catIdx);
+  const catRevealed = revealedCats.has(catIdx);
+
+  const setAnswer = (v: string) =>
+    setAnswers((prev) => prev.map((a, i) => (i === catIdx ? v : a)));
+  const withIdx = (set: Set<number>, add: boolean) => {
+    const next = new Set(set);
+    if (add) next.add(catIdx);
+    else next.delete(catIdx);
+    return next;
+  };
 
   const gradeCat = async () => {
     setGrading(true);
     try {
       const m = await grader(answer, [group]);
       setMatched((prev) => new Set([...prev, ...m]));
-      setCatGraded(true);
+      setGradedCats((prev) => withIdx(prev, true));
     } finally {
       setGrading(false);
     }
@@ -100,8 +118,14 @@ export function CategoryRecallDrill({
   /** Show this category's key points without grading; none are credited. */
   const revealCat = () => {
     track("drill", { drillType, pct: 0, revealed: true, mode: "category" });
-    setCatRevealed(true);
-    setCatGraded(true);
+    setRevealedCats((prev) => withIdx(prev, true));
+    setGradedCats((prev) => withIdx(prev, true));
+  };
+
+  /** Back out of a category reveal — the box is editable again, draft intact. */
+  const unrevealCat = () => {
+    setRevealedCats((prev) => withIdx(prev, false));
+    setGradedCats((prev) => withIdx(prev, false));
   };
 
   /** Show the entire answer flow in order. Logged as an attempt so the drill
@@ -112,28 +136,18 @@ export function CategoryRecallDrill({
     setFlowRevealed(true);
   };
 
-  /** Back to category 1 with a clean slate after a full reveal. */
-  const tryAgain = () => {
-    setFlowRevealed(false);
-    setCatIdx(0);
-    setAnswer("");
-    setCatGraded(false);
-    setCatRevealed(false);
-    setMatched(new Set());
-  };
-
   const advance = () => {
     if (!isLast) {
       setCatIdx((i) => i + 1);
-      setAnswer("");
-      setCatGraded(false);
-      setCatRevealed(false);
       return;
     }
-    const r = buildCoverage(groups, matched);
-    const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
-    track("drill", { drillType, pct, mode: "category" });
-    onRecord(pct);
+    if (!recorded) {
+      const r = buildCoverage(groups, matched);
+      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      track("drill", { drillType, pct, mode: "category" });
+      onRecord(pct);
+      setRecorded(true);
+    }
     setDone(true);
   };
 
@@ -174,7 +188,9 @@ export function CategoryRecallDrill({
           <PearlsBlock pearls={pearls} />
           <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
           <div className="flex items-center gap-2 flex-wrap">
-            <button className="btn" onClick={tryAgain}>↺ Try it yourself</button>
+            <button className="btn" onClick={() => setFlowRevealed(false)} title="Return to where you were">
+              ← Back
+            </button>
             <button className="btn btn-primary" onClick={onNew}>{newLabel}</button>
           </div>
         </div>
@@ -197,7 +213,12 @@ export function CategoryRecallDrill({
           <CoverageView title="Guideline key points" coverage={overall.coverage} />
           <PearlsBlock pearls={pearls} />
           <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
-          <button className="btn btn-primary" onClick={onNew}>{newLabel}</button>
+          <div className="flex items-center gap-2 flex-wrap">
+            <button className="btn" onClick={() => setDone(false)} title="Step back through the categories">
+              ← Back
+            </button>
+            <button className="btn btn-primary" onClick={onNew}>{newLabel}</button>
+          </div>
         </div>
       </div>
     );
@@ -217,10 +238,9 @@ export function CategoryRecallDrill({
                 style={{
                   width: 8,
                   height: 8,
-                  background:
-                    i < catIdx || (i === catIdx && catGraded)
-                      ? "var(--color-exam-accent)"
-                      : "var(--color-exam-border-strong)",
+                  background: gradedCats.has(i)
+                    ? "var(--color-exam-accent)"
+                    : "var(--color-exam-border-strong)",
                 }}
               />
             ))}
@@ -238,9 +258,16 @@ export function CategoryRecallDrill({
         />
         {!catGraded ? (
           <div className="space-y-2">
-            <button className="btn btn-primary" onClick={gradeCat} disabled={!answer.trim() || grading}>
-              {grading ? "Grading…" : "Grade this category"}
-            </button>
+            <div className="flex items-center gap-2 flex-wrap">
+              {catIdx > 0 && (
+                <button className="btn" onClick={() => setCatIdx((i) => i - 1)}>
+                  ← Previous category
+                </button>
+              )}
+              <button className="btn btn-primary" onClick={gradeCat} disabled={!answer.trim() || grading}>
+                {grading ? "Grading…" : "Grade this category"}
+              </button>
+            </div>
             <div className="flex items-center gap-2 flex-wrap border-t pt-2" style={{ borderColor: "var(--color-exam-border)" }}>
               <span className="panel-label">Reveal</span>
               <button type="button" className="btn btn-ghost py-1 px-2.5 text-[12px]" onClick={revealCat}>
@@ -260,9 +287,22 @@ export function CategoryRecallDrill({
               <ResultChip named={catCoverage.named} total={catCoverage.total} />
             )}
             <CoverageView title={group.group} coverage={catCoverage.coverage} />
-            <button className="btn btn-primary" onClick={advance}>
-              {isLast ? "See summary →" : "Next category →"}
-            </button>
+            <div className="flex items-center gap-2 flex-wrap">
+              {catRevealed ? (
+                <button className="btn" onClick={unrevealCat} title="Hide the answer and try this category">
+                  ← Back
+                </button>
+              ) : (
+                catIdx > 0 && (
+                  <button className="btn" onClick={() => setCatIdx((i) => i - 1)}>
+                    ← Previous category
+                  </button>
+                )
+              )}
+              <button className="btn btn-primary" onClick={advance}>
+                {isLast ? "See summary →" : "Next category →"}
+              </button>
+            </div>
           </div>
         )}
       </div>

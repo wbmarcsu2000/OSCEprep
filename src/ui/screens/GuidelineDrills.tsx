@@ -71,6 +71,18 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
     reset();
   };
 
+  /** Literal neighbours in the domain list (wrapping) — no unseen/unmastered preference. */
+  const prevProblem = () => {
+    if (pool.length === 0) return;
+    setIdx(((idx % pool.length) - 1 + pool.length) % pool.length);
+    reset();
+  };
+  const skipProblem = () => {
+    if (pool.length === 0) return;
+    setIdx(((idx % pool.length) + 1) % pool.length);
+    reset();
+  };
+
   const goToProblem = (id: string) => {
     const i = pool.findIndex((d) => d.id === id);
     if (i >= 0) setIdx(i);
@@ -104,9 +116,17 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
           onChange={changeDomain}
         />
         {current && <span className="chip chip-accent">{current.name} · {current.org}</span>}
-        <button className="btn ml-auto" onClick={nextProblem} title={`Prefers a ${noun} you haven't mastered yet`}>
-          ➜ Next {noun}
-        </button>
+        <div className="ml-auto flex items-center gap-1.5 flex-wrap">
+          <button className="btn btn-ghost" onClick={prevProblem} title={`Back to the previous ${noun}`}>
+            ← Previous
+          </button>
+          <button className="btn btn-ghost" onClick={skipProblem} title={`Skip to the next ${noun} in order`}>
+            Skip →
+          </button>
+          <button className="btn" onClick={nextProblem} title={`Prefers a ${noun} you haven't mastered yet`}>
+            ➜ Next {noun}
+          </button>
+        </div>
       </div>
 
       <div className="card px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-2">
