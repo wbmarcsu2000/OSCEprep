@@ -78,6 +78,10 @@ export function CategoryRecallDrill({
   const [catGraded, setCatGraded] = useState(false);
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [done, setDone] = useState(false);
+  /** Current category shown without grading — nothing credited. */
+  const [catRevealed, setCatRevealed] = useState(false);
+  /** Whole answer flow shown at once; logged as seen, never graded. */
+  const [flowRevealed, setFlowRevealed] = useState(false);
 
   const group = groups[catIdx];
   const isLast = catIdx === groups.length - 1;
@@ -93,11 +97,37 @@ export function CategoryRecallDrill({
     }
   };
 
+  /** Show this category's key points without grading; none are credited. */
+  const revealCat = () => {
+    track("drill", { drillType, pct: 0, revealed: true, mode: "category" });
+    setCatRevealed(true);
+    setCatGraded(true);
+  };
+
+  /** Show the entire answer flow in order. Logged as an attempt so the drill
+   *  counts as "seen"; bestPct is unchanged, so revealing never grants mastery. */
+  const revealFlow = () => {
+    track("drill", { drillType, pct: 0, revealed: true, mode: "flow" });
+    onRecord(0);
+    setFlowRevealed(true);
+  };
+
+  /** Back to category 1 with a clean slate after a full reveal. */
+  const tryAgain = () => {
+    setFlowRevealed(false);
+    setCatIdx(0);
+    setAnswer("");
+    setCatGraded(false);
+    setCatRevealed(false);
+    setMatched(new Set());
+  };
+
   const advance = () => {
     if (!isLast) {
       setCatIdx((i) => i + 1);
       setAnswer("");
       setCatGraded(false);
+      setCatRevealed(false);
       return;
     }
     const r = buildCoverage(groups, matched);
@@ -109,6 +139,48 @@ export function CategoryRecallDrill({
 
   const overall = buildCoverage(groups, matched);
   const catCoverage = buildCoverage([group], matched);
+
+  if (flowRevealed) {
+    return (
+      <div className="space-y-3">
+        <PromptCard prompt={prompt} badge={badge} />
+        <div className="card p-4 space-y-3 pop-in">
+          <div className="flex items-center justify-between gap-2 flex-wrap">
+            <div className="panel-label">Answer flow</div>
+            <span className="chip chip-warn">👁 Revealed · logged as seen</span>
+          </div>
+          <DrillFigure image={image} />
+          <ol className="space-y-3">
+            {keyPoints.map((g, i) => (
+              <li key={g.group} className="flex gap-3">
+                <span
+                  className="shrink-0 w-6 h-6 rounded-full text-[12px] font-bold flex items-center justify-center"
+                  style={{ background: "var(--color-exam-accent)", color: "#fff" }}
+                  aria-hidden="true"
+                >
+                  {i + 1}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <div className="text-[14px] font-semibold mb-0.5">{g.group}</div>
+                  <ul className="list-disc pl-5 space-y-0.5 text-[13px] leading-relaxed">
+                    {g.items.map((it) => (
+                      <li key={it}>{it}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <PearlsBlock pearls={pearls} />
+          <MasteryControls entry={progressEntry} onSetManual={onSetManual} />
+          <div className="flex items-center gap-2 flex-wrap">
+            <button className="btn" onClick={tryAgain}>↺ Try it yourself</button>
+            <button className="btn btn-primary" onClick={onNew}>{newLabel}</button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (done) {
     return (
@@ -165,12 +237,28 @@ export function CategoryRecallDrill({
           disabled={catGraded}
         />
         {!catGraded ? (
-          <button className="btn btn-primary" onClick={gradeCat} disabled={!answer.trim() || grading}>
-            {grading ? "Grading…" : "Grade this category"}
-          </button>
+          <div className="space-y-2">
+            <button className="btn btn-primary" onClick={gradeCat} disabled={!answer.trim() || grading}>
+              {grading ? "Grading…" : "Grade this category"}
+            </button>
+            <div className="flex items-center gap-2 flex-wrap border-t pt-2" style={{ borderColor: "var(--color-exam-border)" }}>
+              <span className="panel-label">Reveal</span>
+              <button type="button" className="btn btn-ghost py-1 px-2.5 text-[12px]" onClick={revealCat}>
+                👁 This category
+              </button>
+              <button type="button" className="btn btn-ghost py-1 px-2.5 text-[12px]" onClick={revealFlow}>
+                👁 Entire answer flow
+              </button>
+              <span className="hint">Revealed points are not credited</span>
+            </div>
+          </div>
         ) : (
           <div className="space-y-3">
-            <ResultChip named={catCoverage.named} total={catCoverage.total} />
+            {catRevealed ? (
+              <span className="chip chip-warn">👁 Revealed · not credited</span>
+            ) : (
+              <ResultChip named={catCoverage.named} total={catCoverage.total} />
+            )}
             <CoverageView title={group.group} coverage={catCoverage.coverage} />
             <button className="btn btn-primary" onClick={advance}>
               {isLast ? "See summary →" : "Next category →"}

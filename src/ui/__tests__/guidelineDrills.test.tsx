@@ -37,6 +37,34 @@ describe("FmDrills screen", () => {
     );
   });
 
+  it("category mode can reveal one category without credit, then continue", () => {
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
+    expect(screen.getByText(/Category 1 of/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /^👁 This category$/ }));
+    expect(screen.getByText(/Revealed · not credited/)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /next category/i })).toBeInTheDocument();
+    // revealing a category is not an attempt — nothing recorded yet
+    expect(screen.getByText(/Seen 0\//)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /next category/i }));
+    expect(screen.getByText(/Category 2 of/)).toBeInTheDocument();
+  });
+
+  it("category mode can reveal the entire answer flow, logged as seen", () => {
+    render(<GuidelineDrills bank={FM_DRILL_BANK} />);
+    fireEvent.click(screen.getByRole("button", { name: /entire answer flow/i }));
+    expect(screen.getByText(/^Answer flow$/)).toBeInTheDocument();
+    expect(screen.getByText(/Revealed · logged as seen/)).toBeInTheDocument();
+    // every category of the drill is shown in order
+    for (const g of FM_DRILL_BANK.drills[0].keyPoints) {
+      expect(screen.getByText(g.group)).toBeInTheDocument();
+    }
+    expect(screen.getByText(/Seen 1\//)).toBeInTheDocument();
+    // back to a clean category 1
+    fireEvent.click(screen.getByRole("button", { name: /try it yourself/i }));
+    expect(screen.getByText(/Category 1 of/)).toBeInTheDocument();
+    expect(screen.getByRole("textbox", { name: /your recall/i })).toHaveValue("");
+  });
+
   it("flashcard mode flips to the answer and self-rating advances", () => {
     render(<GuidelineDrills bank={FM_DRILL_BANK} />);
     fireEvent.click(screen.getByRole("button", { name: /flashcard/i }));
