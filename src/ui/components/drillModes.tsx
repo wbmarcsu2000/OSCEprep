@@ -8,6 +8,7 @@ import {
   ScoreBar,
   ResultChip,
   MasteryControls,
+  DrillFigure,
 } from "./drillPrimitives";
 
 /** Shared shape for the alternate drill interaction modes. All run off the same
@@ -16,6 +17,8 @@ interface ModeProps {
   prompt: string;
   keyPoints: { group: string; items: string[] }[];
   pearls?: string;
+  /** Teaching figure — shown only with the reveal, never beside the prompt. */
+  image?: { file: string; alt: string; credit: string };
   badge?: string;
   onRecord: (pct: number) => void;
   onNew: () => void;
@@ -32,7 +35,7 @@ function PromptCard({ prompt, badge }: { prompt: string; badge?: string }) {
         <div className="panel-label">Prompt</div>
         {badge && <span className="chip chip-accent">{badge}</span>}
       </div>
-      <p className="text-[15px] font-semibold leading-relaxed mt-1">{prompt}</p>
+      <p className="text-[15px] font-semibold leading-relaxed mt-1 whitespace-pre-line">{prompt}</p>
     </div>
   );
 }
@@ -58,6 +61,7 @@ export function CategoryRecallDrill({
   prompt,
   keyPoints,
   pearls,
+  image,
   badge,
   onRecord,
   onNew,
@@ -114,6 +118,7 @@ export function CategoryRecallDrill({
             <div className="panel-label">Summary · all categories</div>
             <ResultChip named={overall.named} total={overall.total} />
           </div>
+          <DrillFigure image={image} />
           <ScoreBar named={overall.named} total={overall.total} label="Key points" />
         </div>
         <div className="card p-4 space-y-3 pop-in">
@@ -183,11 +188,12 @@ export function FlashcardDrill({
   prompt,
   keyPoints,
   pearls,
+  image,
   badge,
   onRecord,
   onNew,
   drillType,
-}: Pick<ModeProps, "prompt" | "keyPoints" | "pearls" | "badge" | "onRecord" | "onNew" | "drillType">) {
+}: Pick<ModeProps, "prompt" | "keyPoints" | "pearls" | "badge" | "onRecord" | "onNew" | "drillType" | "image">) {
   const [flipped, setFlipped] = useState(false);
 
   const rate = (got: boolean) => {
@@ -217,6 +223,7 @@ export function FlashcardDrill({
             <div className="panel-label">Answer</div>
             <span className="chip">🃏 How did you do?</span>
           </div>
+          <DrillFigure image={image} />
           <div className="space-y-2.5">
             {keyPoints.map((g) => (
               <div key={g.group}>

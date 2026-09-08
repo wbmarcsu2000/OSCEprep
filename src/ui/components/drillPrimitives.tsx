@@ -15,6 +15,7 @@ import {
   gradableItem,
 } from "../../data/drillProgressCore";
 import { track } from "../../analytics/telemetry";
+import { drillImageUrl } from "../../data/drillImages";
 
 export interface Coverage {
   group: string;
@@ -49,6 +50,34 @@ export function useGrader() {
     const matched = await grade(answer, items);
     return new Set(matched);
   };
+}
+
+/**
+ * Teaching figure for a drill, rendered ONLY as part of the answer reveal.
+ *
+ * A labelled anatomy diagram beside the prompt would hand over the answer, so
+ * every caller places this with the answer key rather than the question.
+ * Renders nothing when the file is missing, so a drill whose image was dropped
+ * during curation degrades quietly instead of showing a broken image.
+ */
+export function DrillFigure({ image }: { image?: { file: string; alt: string; credit: string } }) {
+  const src = image && drillImageUrl(image.file);
+  if (!image || !src) return null;
+  return (
+    <figure className="space-y-1">
+      <img
+        src={src}
+        alt={image.alt}
+        loading="lazy"
+        decoding="async"
+        className="w-full max-h-[20rem] object-contain rounded-xl border bg-[var(--color-exam-panel)]"
+        style={{ borderColor: "var(--color-exam-border)" }}
+      />
+      <figcaption className="text-[11px]" style={{ color: "var(--color-exam-muted)" }}>
+        {image.credit}
+      </figcaption>
+    </figure>
+  );
 }
 
 /** mm:ss for the stopwatch. */
@@ -368,6 +397,7 @@ export function GroupedCoverageDrill({
   prompt,
   keyPoints,
   pearls,
+  image,
   badge,
   answer,
   setAnswer,
@@ -384,6 +414,8 @@ export function GroupedCoverageDrill({
   prompt: string;
   keyPoints: { group: string; items: string[] }[];
   pearls?: string;
+  /** Teaching figure — rendered with the answer key, never beside the prompt. */
+  image?: { file: string; alt: string; credit: string };
   badge?: string;
   answer: string;
   setAnswer: (v: string) => void;
@@ -463,7 +495,7 @@ export function GroupedCoverageDrill({
           <div className="panel-label">Prompt</div>
           {badge && <span className="chip chip-accent">{badge}</span>}
         </div>
-        <p className="text-[15px] font-semibold leading-relaxed mt-1">{prompt}</p>
+        <p className="text-[15px] font-semibold leading-relaxed mt-1 whitespace-pre-line">{prompt}</p>
       </div>
 
       <div className={showAnswer ? "grid gap-3 lg:grid-cols-2 items-start" : "space-y-3"}>
@@ -518,6 +550,7 @@ export function GroupedCoverageDrill({
 
         {showAnswer && (
           <div className="card p-4 space-y-3 pop-in">
+            <DrillFigure image={image} />
             {graded ? (
               <>
                 <div className="flex items-center justify-between gap-2 flex-wrap">

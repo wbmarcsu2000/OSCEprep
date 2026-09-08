@@ -36,6 +36,9 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
   const [browsing, setBrowsing] = useState(false);
 
   const pool = useMemo(() => drillsForDomain(bank, domain), [bank, domain]);
+  const domainDef = bank.domains.find((d) => d.id === domain);
+  const noun = domainDef?.noun ?? "guideline";
+  const nextLabel = `Next ${noun} →`;
   const current = pool.length > 0 ? pool[idx % pool.length] : null;
   const activeEntry = current ? progress[drillKey(domain, current.id)] : undefined;
   const summary = useMemo(() => summarizeDrillDomain(bank, domain, progress), [bank, domain, progress]);
@@ -101,8 +104,8 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
           onChange={changeDomain}
         />
         {current && <span className="chip chip-accent">{current.name} · {current.org}</span>}
-        <button className="btn ml-auto" onClick={nextProblem} title="Prefers a guideline you haven't mastered yet">
-          ➜ Next guideline
+        <button className="btn ml-auto" onClick={nextProblem} title={`Prefers a ${noun} you haven't mastered yet`}>
+          ➜ Next {noun}
         </button>
       </div>
 
@@ -131,6 +134,17 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
         </button>
       </div>
 
+      {domainDef?.intro && domainDef.intro.length > 0 && (
+        <div className="card px-4 py-3 space-y-1.5">
+          <div className="panel-label">How to attack any stem</div>
+          <ol className="list-decimal pl-5 space-y-0.5 text-[13px] leading-relaxed" style={{ color: "var(--color-exam-muted)" }}>
+            {domainDef.intro.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+        </div>
+      )}
+
       {browsing && (
         <DrillBrowser
           items={drillCatalog(bank, domain)}
@@ -148,6 +162,7 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
             prompt={current.prompt}
             keyPoints={current.keyPoints}
             pearls={current.pearls}
+            image={current.image}
             badge={current.org}
             onRecord={(pct) => record(domain, current.id, pct)}
             onNew={nextProblem}
@@ -159,12 +174,13 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
             prompt={current.prompt}
             keyPoints={current.keyPoints}
             pearls={current.pearls}
+            image={current.image}
             badge={current.org}
             onRecord={(pct) => record(domain, current.id, pct)}
             onNew={nextProblem}
             progressEntry={activeEntry}
             onSetManual={(m) => setManual(domain, current.id, m)}
-            newLabel="Next guideline →"
+            newLabel={nextLabel}
             drillType={`${bank.id}-${domain}`}
           />
         ) : (
@@ -173,6 +189,7 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
             prompt={current.prompt}
             keyPoints={current.keyPoints}
             pearls={current.pearls}
+            image={current.image}
             badge={current.org}
             answer={answer}
             setAnswer={setAnswer}
@@ -183,12 +200,12 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
             onRecord={(pct) => record(domain, current.id, pct)}
             progressEntry={activeEntry}
             onSetManual={(m) => setManual(domain, current.id, m)}
-            newLabel="Next guideline →"
+            newLabel={nextLabel}
             drillType={`${bank.id}-${domain}`}
           />
         )
       ) : (
-        <div className="card p-4"><p className="muted text-center">No guidelines in this domain yet.</p></div>
+        <div className="card p-4"><p className="muted text-center">No {noun}s in this domain yet.</p></div>
       )}
 
       <p className="hint text-center">

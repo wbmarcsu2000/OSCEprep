@@ -5,6 +5,7 @@ import { OB_COMPLICATION_DRILLS } from "./obComplicationDrills";
 import { OB_LABOR_DRILLS } from "./obLaborDrills";
 import { OB_GYN_DRILLS } from "./obGynDrills";
 import { OB_GYN_SURGERY_DRILLS } from "./obGynSurgeryDrills";
+import { OB_VIGNETTE_DRILLS } from "./obVignetteDrills";
 
 export const OB_DOMAINS: DrillDomainDef[] = [
   { id: "prenatal", label: "Prenatal & Routine", emoji: "🤰" },
@@ -12,6 +13,18 @@ export const OB_DOMAINS: DrillDomainDef[] = [
   { id: "labor", label: "Labor & Monitoring", emoji: "👶" },
   { id: "gyn", label: "GYN", emoji: "🌸" },
   { id: "gyn-surgery", label: "Benign gyn surgery", emoji: "🔪" },
+  {
+    id: "vignettes",
+    label: "Case vignettes",
+    emoji: "🩺",
+    noun: "vignette",
+    intro: [
+      "hCG first in any reproductive-age woman — it sorts the entire differential.",
+      "Name the can't-miss diagnosis explicitly, and the single order that excludes it.",
+      "Orders in sequence: labs → imaging → tissue.",
+      "Management branches stable vs unstable, and closes with one prevention or counseling pearl.",
+    ],
+  },
 ];
 
 export const OB_GUIDELINE_DRILLS: GuidelineDrill[] = [
@@ -20,4 +33,5 @@ export const OB_GUIDELINE_DRILLS: GuidelineDrill[] = [
   ...OB_LABOR_DRILLS,
   ...OB_GYN_DRILLS,
   ...OB_GYN_SURGERY_DRILLS,
+  ...OB_VIGNETTE_DRILLS,
 ];

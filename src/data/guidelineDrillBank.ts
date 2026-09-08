@@ -27,6 +27,12 @@ export interface GuidelineDrill {
   keyPoints: { group: string; items: string[] }[];
   /** High-yield notes shown on reveal. */
   pearls?: string;
+  /**
+   * Optional teaching figure, shown ONLY once the drill is graded or revealed.
+   * An anatomy diagram next to the prompt would hand over the answer, so it
+   * lives with the answer key. Basename of a file in src/assets/drill-images.
+   */
+  image?: { file: string; alt: string; credit: string };
   /** ISO date the facts were last verified against the guideline. */
   reviewed: string;
 }
@@ -35,6 +41,10 @@ export interface DrillDomainDef {
   id: string;
   label: string;
   emoji: string;
+  /** What one drill in this domain is called in the UI ("Next vignette →"). Defaults to "guideline". */
+  noun?: string;
+  /** Short method steps shown above the drill — how to attack every problem in this domain. */
+  intro?: string[];
 }
 
 export interface DrillBank {
@@ -68,7 +78,7 @@ export const OB_DRILL_BANK: DrillBank = {
   id: "ob",
   title: "Guideline Drills",
   blurb:
-    "Recall the key facts one topic at a time, graded instantly. Prenatal care, OB complications, labor & fetal monitoring, gynecology, and short-answer drills on the common benign gyn operations.",
+    "Recall the key facts one topic at a time, graded instantly. Prenatal care, OB complications, labor & fetal monitoring, gynecology, short-answer drills on the common benign gyn operations, and full case vignettes worked Differential → Orders → Management.",
   icon: "🎯",
   grad: "var(--grad-coral)",
   clerkshipLabel: "OB/GYN",
