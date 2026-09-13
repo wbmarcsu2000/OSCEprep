@@ -49,7 +49,7 @@ describe("OB/GYN guideline drills (data)", () => {
   it("OB bank is registered with its own storage key", () => {
     expect(OB_DRILL_BANK.id).toBe("ob");
     expect(OB_DRILL_BANK.storageKey).toBe("osce.obdrills.v1");
-    expect(OB_DRILL_BANK.domains.map((d) => d.id)).toEqual([...GUIDELINE_DOMAINS, "gyn-surgery", "vignettes"]);
+    expect(OB_DRILL_BANK.domains.map((d) => d.id)).toEqual([...GUIDELINE_DOMAINS, "gyn-surgery", "endo-tumors", "vignettes"]);
     expect(GUIDELINE_DRILL_BANKS.map((b) => b.id)).toEqual(["fm", "ob"]);
     expect(DRILL_STORAGE_KEYS).toContain("osce.obdrills.v1");
   });
