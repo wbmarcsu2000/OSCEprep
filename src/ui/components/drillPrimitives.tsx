@@ -4,8 +4,9 @@
  * drill type — nothing here knows about IM vs FM. Grading routes through the
  * store's gradeCoverage (AI when a key is set, else a lenient keyword match).
  */
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { useAppStore } from "../store";
+import { applyHintPenalty } from "../../data/drillLadder";
 import {
   isMastered,
   isSeen,
@@ -419,6 +420,7 @@ export function GroupedCoverageDrill({
   onSetManual,
   newLabel,
   drillType,
+  hintBar,
 }: {
   prompt: string;
   keyPoints: { group: string; items: string[] }[];
@@ -437,6 +439,11 @@ export function GroupedCoverageDrill({
   onSetManual: (m: DrillManual) => void;
   newLabel: string;
   drillType: string;
+  /** Optional hint bar rendered under the recall box until grading. Each hint
+   *  the student takes costs a few points off the recorded score
+   *  (applyHintPenalty), so hints lower the blank-page barrier without
+   *  handing over mastery. */
+  hintBar?: (hintsUsed: number, onHint: () => void) => ReactNode;
 }) {
   const grader = useGrader();
   const [grading, setGrading] = useState(false);
@@ -444,6 +451,7 @@ export function GroupedCoverageDrill({
   const [answersHidden, setAnswersHidden] = useState(false);
   const [hintOpen, setHintOpen] = useState(true);
   const [revealed, setRevealed] = useState(false);
+  const [hintsUsed, setHintsUsed] = useState(0);
   const groups = keyPoints.map((g) => ({ group: g.group, items: g.items }));
   const showAnswer = graded || revealed;
 
@@ -454,8 +462,9 @@ export function GroupedCoverageDrill({
       const m = await grader(answer, keyPoints);
       setMatched(m);
       const r = buildCoverage(groups, m);
-      const pct = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
-      track("drill", { drillType, pct });
+      const raw = r.total > 0 ? Math.round((r.named / r.total) * 100) : 0;
+      const pct = applyHintPenalty(raw, hintsUsed);
+      track("drill", { drillType, pct, ...(hintsUsed ? { mode: "hint" } : {}) });
       onRecord(pct);
       setAnswersHidden(false);
       onGrade();
@@ -510,6 +519,7 @@ export function GroupedCoverageDrill({
             placeholder="Write everything you remember, grouped if you can…"
             aria-label="Your recall"
           />
+          {hintBar && !showAnswer && hintBar(hintsUsed, () => setHintsUsed((n) => n + 1))}
           <div className="flex items-center gap-2 flex-wrap">
             <GradeButton
               graded={showAnswer}
@@ -562,6 +572,9 @@ export function GroupedCoverageDrill({
                   </div>
                 </div>
                 <ScoreBar named={result.named} total={result.total} label="Key points" />
+                {hintsUsed > 0 && (
+                  <p className="hint">{hintsUsed} hint{hintsUsed === 1 ? "" : "s"} used · recorded score reduced by {hintsUsed * 5}%</p>
+                )}
                 {answersHidden ? (
                   <button
                     type="button"

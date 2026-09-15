@@ -3,18 +3,25 @@ import { useMemo, useState } from "react";
 import { Segmented } from "../components/Segmented";
 import { DrillBrowser, GroupedCoverageDrill, SeenChip } from "../components/drillPrimitives";
 import { CategoryRecallDrill, FlashcardDrill } from "../components/drillModes";
+import { LearnTable, ClozeDrill, SortDrill, HintBar } from "../components/drillLadder";
+import { clozeAvailable } from "../../data/drillLadder";
 import { useDrillBankProgress } from "../useDrillBankProgress";
 import { useAppStore } from "../store";
 import { type DrillBank, drillsForDomain, drillCatalog } from "../../data/guidelineDrillBank";
 import { summarizeDrillDomain } from "../../data/guidelineDrillProgress";
 import { drillKey, isMastered, isSeen } from "../../data/drillProgressCore";
 
-type DrillMode = "recall" | "category" | "flashcard";
+type DrillMode = "learn" | "cloze" | "sort" | "category" | "recall" | "flashcard";
 
-const DRILL_MODES: { value: DrillMode; label: string }[] = [
-  { value: "recall", label: "✍️ Full recall" },
-  { value: "category", label: "🗂 By category" },
-  { value: "flashcard", label: "🃏 Flashcard" },
+/** The learning ladder, in order: study it, name it from clues, sort it, then
+ *  the two free-recall tests, then flashcards. */
+const DRILL_MODES: { value: DrillMode; label: string; hint: string }[] = [
+  { value: "learn", label: "📖 Learn", hint: "Study the key — cover a column to quiz yourself" },
+  { value: "cloze", label: "✏️ Cloze", hint: "Name each item from its clue" },
+  { value: "sort", label: "🧩 Sort", hint: "Put each answer in its category — no typing" },
+  { value: "category", label: "🗂 By category", hint: "One category at a time" },
+  { value: "recall", label: "✍️ Full recall", hint: "Recall everything at once — hints cost a little" },
+  { value: "flashcard", label: "🃏 Flashcard", hint: "Flip & self-rate — no typing" },
 ];
 
 /**
@@ -41,6 +48,10 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
   const nextLabel = `Next ${noun} →`;
   const current = pool.length > 0 ? pool[idx % pool.length] : null;
   const activeEntry = current ? progress[drillKey(domain, current.id)] : undefined;
+  /** Cloze needs a clue on every item; drills of bare facts hide it. */
+  const modes = DRILL_MODES.filter((m) => m.value !== "cloze" || (current ? clozeAvailable(current.keyPoints) : false));
+  const effectiveMode: DrillMode = modes.some((m) => m.value === mode) ? mode : "category";
+  const seed = current ? `${domain}:${current.id}` : "";
   const summary = useMemo(() => summarizeDrillDomain(bank, domain, progress), [bank, domain, progress]);
 
   const reset = () => {
@@ -131,14 +142,8 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
 
       <div className="card px-4 py-3 flex flex-wrap items-center gap-x-4 gap-y-2">
         <span className="panel-label">Mode</span>
-        <Segmented label="Drill mode" options={DRILL_MODES} value={mode} onChange={changeMode} />
-        <span className="hint ml-auto">
-          {mode === "recall"
-            ? "Recall everything at once"
-            : mode === "category"
-              ? "One category at a time"
-              : "Flip & self-rate — no typing"}
-        </span>
+        <Segmented label="Drill mode" options={modes} value={effectiveMode} onChange={changeMode} />
+        <span className="hint ml-auto">{modes.find((m) => m.value === effectiveMode)?.hint}</span>
       </div>
 
       <div className="card px-4 py-2.5 flex items-center gap-2 flex-wrap text-[13px]">
@@ -176,7 +181,52 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
       )}
 
       {current ? (
-        mode === "flashcard" ? (
+        effectiveMode === "learn" ? (
+          <LearnTable
+            key={`learn:${domain}:${current.id}`}
+            prompt={current.prompt}
+            keyPoints={current.keyPoints}
+            pearls={current.pearls}
+            image={current.image}
+            badge={current.org}
+            onRecord={(pct) => record(domain, current.id, pct)}
+            onNew={nextProblem}
+            newLabel={nextLabel}
+            drillType={`${bank.id}-${domain}`}
+          />
+        ) : effectiveMode === "cloze" ? (
+          <ClozeDrill
+            key={`cloze:${domain}:${current.id}`}
+            prompt={current.prompt}
+            keyPoints={current.keyPoints}
+            pearls={current.pearls}
+            image={current.image}
+            badge={current.org}
+            seed={seed}
+            onRecord={(pct) => record(domain, current.id, pct)}
+            onNew={nextProblem}
+            newLabel={nextLabel}
+            drillType={`${bank.id}-${domain}`}
+            progressEntry={activeEntry}
+            onSetManual={(m) => setManual(domain, current.id, m)}
+          />
+        ) : effectiveMode === "sort" ? (
+          <SortDrill
+            key={`sort:${domain}:${current.id}`}
+            prompt={current.prompt}
+            keyPoints={current.keyPoints}
+            pearls={current.pearls}
+            image={current.image}
+            badge={current.org}
+            seed={seed}
+            onRecord={(pct) => record(domain, current.id, pct)}
+            onNew={nextProblem}
+            newLabel={nextLabel}
+            drillType={`${bank.id}-${domain}`}
+            progressEntry={activeEntry}
+            onSetManual={(m) => setManual(domain, current.id, m)}
+          />
+        ) : effectiveMode === "flashcard" ? (
           <FlashcardDrill
             key={`flashcard:${domain}:${current.id}`}
             prompt={current.prompt}
@@ -188,7 +238,7 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
             onNew={nextProblem}
             drillType={`${bank.id}-${domain}`}
           />
-        ) : mode === "category" ? (
+        ) : effectiveMode === "category" ? (
           <CategoryRecallDrill
             key={`category:${domain}:${current.id}`}
             prompt={current.prompt}
@@ -222,6 +272,9 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
             onSetManual={(m) => setManual(domain, current.id, m)}
             newLabel={nextLabel}
             drillType={`${bank.id}-${domain}`}
+            hintBar={(used, onHint) => (
+              <HintBar keyPoints={current.keyPoints} seed={seed} hintsUsed={used} onHint={onHint} />
+            )}
           />
         )
       ) : (
@@ -229,8 +282,12 @@ export function GuidelineDrills({ bank }: { bank: DrillBank }) {
       )}
 
       <p className="hint text-center">
-        {mode === "flashcard"
+        {effectiveMode === "flashcard"
           ? "Flashcard mode — flip and rate yourself; no grading."
+          : effectiveMode === "learn"
+            ? "Learn mode — reading the key logs the drill as seen; switch to Cloze or Sort when you're ready to be tested."
+            : effectiveMode === "sort"
+              ? "Sort mode — placement is checked exactly; no grading model involved."
           : llmEnabled
             ? "Graded semantically by AI — use the guideline card to self-check anything it misses."
             : "Graded by lenient keyword match — enable AI for smarter grading. Use the guideline card to self-check anything it misses."}
