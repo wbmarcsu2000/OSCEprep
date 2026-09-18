@@ -88,7 +88,7 @@ export const MCQ_BANK_META: Record<"im" | "fm" | "ob" | "neuro", McqBankMeta> = 
     ],
   },
   neuro: {
-    total: 822,
+    total: 1138,
     systems: [
       "Stroke & Cerebrovascular",
       "Intracranial Hemorrhage, Trauma & ICP",
