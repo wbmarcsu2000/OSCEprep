@@ -3761,6 +3761,37 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Abrupt, instantaneous deterioration on day 0 points to rebleeding, whereas vasospasm causes a subacute focal deficit after day 4."
   },
   {
+    "id": "neuro-intracranial-hemorrhage-trauma-icp-87",
+    "system": "Intracranial Hemorrhage, Trauma & ICP",
+    "topic": "Respiratory failure risk after cervical cord injury",
+    "stem": "A 22-year-old man is brought in after a diving accident. He has no motor or sensory function below C6 and flaccid areflexia in all four limbs. MRI shows cord edema at C6 without transection. He is awake and speaking in full sentences, respiratory rate is 22/min, and oxygen saturation is 96% on room air, but his cough is weak, he cannot clear secretions, and the abdomen draws inward with each inspiration. Bedside forced vital capacity is 1.3 L (about 18 mL/kg). Which of the following is the most appropriate next step in respiratory management?",
+    "options": [
+      "Reassure the team that the diaphragm is innervated above the lesion, so ventilatory support will not be needed",
+      "Withhold airway intervention until the oxygen saturation falls below 90% on room air",
+      "Give high-dose intravenous methylprednisolone to prevent respiratory deterioration",
+      "Admit to the ICU for serial vital capacity and negative inspiratory force measurements, with elective intubation if they decline",
+      "Obtain an arterial blood gas and intervene only once hypercapnia is documented"
+    ],
+    "answerIndex": 3,
+    "explanation": "A C6 injury spares the phrenic nerves (C3-C5) but denervates the intercostal and abdominal muscles, so vital capacity and cough are already impaired; ascending cord edema, secretion retention, and diaphragmatic fatigue cause respiratory failure over the next hours to days, which is why serial vital capacity and negative inspiratory force are trended and the airway is secured electively before decompensation.",
+    "optionRationales": [
+      "The diaphragm alone cannot sustain ventilation once the intercostals and abdominals are paralyzed; this patient already has abdominal paradox, a weak cough, and a reduced vital capacity.",
+      "Desaturation is a late event in neuromuscular respiratory failure; waiting for it converts an elective intubation into an emergency one in a patient with an unstable cervical spine.",
+      "High-dose methylprednisolone is no longer recommended in acute traumatic spinal cord injury and confers no respiratory benefit while increasing infection and hyperglycemia.",
+      "Correct: serial bedside vital capacity and negative inspiratory force detect the progressive decline of a fatiguing, partially denervated respiratory pump and allow controlled intubation before a crash airway in an unstable cervical spine.",
+      "Hypercapnia, like hypoxemia, appears only after the respiratory pump has nearly failed; the decision to intubate is made on trended mechanics, not on a late blood gas."
+    ],
+    "concept": "In cervical cord injury the level predicts the respiratory course. Lesions above C3 abolish diaphragmatic function and require immediate ventilation. Lesions at C4-C7 spare the phrenic nerves (C3-C5) but denervate the intercostals (T1-T11) and abdominals (T6-T12), leaving a low vital capacity, an ineffective cough, atelectasis, and mucus plugging. Because cord edema ascends in the first 24-72 hours and the unsupported diaphragm fatigues, respiratory failure is typically delayed rather than immediate, so these patients are watched in an ICU with serial mechanics and intubated electively.",
+    "conceptRule": [
+      "Injury above C3 (phrenic nuclei lost) -> immediate intubation and mechanical ventilation",
+      "Injury C4-C7 with diaphragm intact -> ICU admission with serial vital capacity and negative inspiratory force",
+      "Vital capacity below about 15 mL/kg or 1 L, negative inspiratory force weaker than about -20 to -30 cm H2O, rising PaCO2, or an unclearable secretion burden -> elective intubation",
+      "Aggressive pulmonary toilet, assisted cough, and incentive spirometry for every cervical injury with a spared diaphragm"
+    ],
+    "discriminator": "Normal oxygen saturation with a weak cough, abdominal paradox, and a falling vital capacity means the respiratory pump is failing even though gas exchange still looks adequate.",
+    "mnemonic": "C3, 4, 5 keep the diaphragm alive - but the intercostals and abdominals below the lesion are what keep the cough alive."
+  },
+  {
     "id": "neuro-intracranial-hemorrhage-trauma-icp-45",
     "system": "Intracranial Hemorrhage, Trauma & ICP",
     "topic": "Return to play after concussion",
@@ -3935,30 +3966,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "Sheehan syndrome damages the anterior pituitary while the posterior pituitary is usually spared, so prolactin, gonadotropins, TSH, ACTH, and GH are lost while oxytocin and vasopressin are typically preserved. Because lactotrophs are hyperplastic and most numerous in the peripartum gland, prolactin deficiency is the first to manifest as failure of lactation, followed by amenorrhea, and later by hypothyroid and hypoadrenal features.",
     "discriminator": "Failure to produce any milk (prolactin) rather than failure of let-down (oxytocin) points to anterior pituitary necrosis."
-  },
-  {
-    "id": "neuro-intracranial-hemorrhage-trauma-icp-86",
-    "system": "Intracranial Hemorrhage, Trauma & ICP",
-    "topic": "Spinal shock prognosis timing",
-    "stem": "A 22-year-old man is brought in after a diving accident. He has no motor or sensory function below C6, flaccid tone, absent deep tendon reflexes in all four limbs, and an absent bulbocavernosus reflex. Blood pressure is 88/54 mm Hg with a pulse of 52/min. MRI shows cord edema at C6 without transection. The family asks whether he will ever walk again. Which of the following is the most appropriate response regarding his prognosis?",
-    "options": [
-      "Hypotension and bradycardia indicate that the injury is incomplete",
-      "Prognosis can be assigned once high-dose methylprednisolone has been given",
-      "The total areflexia below the lesion confirms a complete, permanent injury",
-      "Absence of cord transection on MRI predicts full motor recovery",
-      "A complete injury cannot be declared until the bulbocavernosus reflex returns and spinal shock resolves"
-    ],
-    "answerIndex": 4,
-    "explanation": "During spinal shock every reflex below the lesion is temporarily abolished, so the examination cannot distinguish complete from incomplete injury; return of the bulbocavernosus reflex marks the end of spinal shock and the point at which a reliable ASIA grade can be assigned.",
-    "optionRationales": [
-      "Hypotension with bradycardia reflects neurogenic shock from lost sympathetic outflow, a hemodynamic problem unrelated to injury completeness.",
-      "Steroids are not standard of care in acute cord injury and do not confer prognostic information.",
-      "Areflexia during spinal shock is transient and says nothing about whether descending tracts are anatomically interrupted.",
-      "Absence of visible transection does not exclude a physiologically complete injury; cord contusion alone can cause permanent deficit.",
-      "Correct: spinal shock produces transient global areflexia, and only after the bulbocavernosus reflex returns does the neurologic exam reliably grade completeness."
-    ],
-    "concept": "Spinal shock is a transient loss of all reflex activity below an acute cord lesion, with flaccid paralysis and areflexia lasting days to weeks. It is distinct from neurogenic shock, the hemodynamic consequence of a lesion at or above T6 interrupting sympathetic outflow, which causes hypotension with bradycardia. Return of the bulbocavernosus reflex signals resolution of spinal shock; only then can a complete versus incomplete injury be declared and prognosis discussed.",
-    "discriminator": "An absent bulbocavernosus reflex means the patient is still in spinal shock, so completeness cannot yet be graded."
   },
   {
     "id": "neuro-intracranial-hemorrhage-trauma-icp-80",
@@ -5240,30 +5247,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Because the sensory level does not reliably mark the compressed segment and multiple epidural deposits are common, the imaging must cover the whole spine rather than the symptomatic region alone."
   },
   {
-    "id": "neuro-spinal-cord-radiculopathy-33",
-    "system": "Spinal Cord & Radiculopathy",
-    "topic": "Mixed UMN/LMN with sensory signs",
-    "stem": "A 66-year-old man has 8 months of neck pain, clumsy hands, and unsteady gait. Examination shows atrophy of the intrinsic hand muscles, absent biceps and brachioradialis reflexes, numbness and tingling in both hands, brisk patellar reflexes, ankle clonus, and bilateral extensor plantar responses. Which of the following is the most likely diagnosis?",
-    "options": [
-      "Amyotrophic lateral sclerosis",
-      "Guillain-Barre syndrome",
-      "Cervical spondylotic myelopathy",
-      "Subacute combined degeneration",
-      "Bilateral carpal tunnel syndrome"
-    ],
-    "answerIndex": 2,
-    "explanation": "Cervical spondylotic myelopathy compresses roots at the level of the lesion (LMN signs in the arms) and the cord below it (UMN signs in the legs); the neck pain and sensory symptoms exclude ALS.",
-    "optionRationales": [
-      "ALS also gives mixed UMN/LMN findings, but any sensory symptom (numbness, paresthesias) or pain rules it out on the exam.",
-      "Guillain-Barre is an acute ascending areflexic polyneuropathy; it does not cause clonus or Babinski signs.",
-      "Correct: LMN signs at the cervical level plus UMN signs below it, with neck pain and sensory symptoms, is classic cervical spondylotic myelopathy.",
-      "B12 deficiency causes symmetric dorsal column and corticospinal degeneration (paresthesias, positive Romberg sign), and the neurologic disease can precede any macrocytosis; it does not cause focal cervical root atrophy with neck pain.",
-      "Carpal tunnel syndrome causes median-distribution numbness and thenar atrophy but never produces leg hyperreflexia or Babinski signs."
-    ],
-    "concept": "A compressive lesion of the cervical cord damages anterior horn cells and exiting roots at the level of the lesion (LMN signs in the arms) while interrupting descending corticospinal tracts to everything below (UMN signs in the legs). This 'LMN at the level, UMN below' pattern localizes to the cord; ALS is the mimic, but ALS has no sensory findings and no pain.",
-    "discriminator": "Sensory symptoms (or neck pain) in a patient with mixed UMN and LMN signs mean cervical myelopathy, not ALS."
-  },
-  {
     "id": "neuro-spinal-cord-radiculopathy-34",
     "system": "Spinal Cord & Radiculopathy",
     "topic": "Neurogenic vs vascular claudication",
@@ -5484,6 +5467,31 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Curve >45-50 degrees -> surgical fusion"
     ],
     "discriminator": "Absent abdominal reflexes with a left-sided thoracic curve is the classic clue to syringomyelia rather than idiopathic scoliosis."
+  },
+  {
+    "id": "neuro-spinal-cord-radiculopathy-85",
+    "system": "Spinal Cord & Radiculopathy",
+    "topic": "Reflex level localization in myelopathy",
+    "stem": "A 66-year-old man has 8 months of neck pain, clumsy hands, and unsteady gait. Examination shows absent biceps and brachioradialis reflexes bilaterally with numbness over the lateral forearms and thumbs, brisk triceps and patellar reflexes, sustained ankle clonus, and bilateral extensor plantar responses. MRI shows spondylotic compression of the cervical cord. The pattern of absent arm reflexes with brisk reflexes and clonus below best localizes the compression to which of the following levels?",
+    "options": [
+      "L1-L2",
+      "C3-C4",
+      "C5-C6",
+      "T4-T5",
+      "C7-T1"
+    ],
+    "answerIndex": 2,
+    "explanation": "A compressive cord lesion destroys the anterior horn cells and exiting roots at its own level (LMN signs, with loss of the reflex arcs of those segments) while interrupting the corticospinal tracts to everything below (UMN signs). The biceps reflex is C5 and the brachioradialis reflex is C6, so their loss with a preserved-to-brisk triceps (C7) reflex and hyperreflexia in the legs places the lesion at C5-C6.",
+    "optionRationales": [
+      "An L1-L2 lesion spares the arms entirely and, at the conus, tends to produce LMN leg findings with early sphincter involvement rather than clonus and extensor plantars.",
+      "A C3-C4 lesion is above both arc levels, so the biceps and brachioradialis reflexes would be brisk rather than absent, and diaphragmatic weakness would be a concern.",
+      "Correct: the biceps (C5) and brachioradialis (C6) arcs are the ones destroyed, and everything below C6 -- triceps, patellar, plantar -- is released and hyperactive, so the compression sits at C5-C6.",
+      "A mid-thoracic lesion cannot abolish any arm reflex; it would leave the upper limbs normal and produce a sensory level on the trunk with spastic paraparesis.",
+      "C7-T1 compression would abolish the triceps and finger flexor reflexes and spare the biceps and brachioradialis -- the opposite of this patient's pattern."
+    ],
+    "concept": "The level of a compressive myelopathy is read from the reflexes: the most rostral absent (LMN) reflex marks the segment destroyed, and every reflex below it is brisk from corticospinal interruption. Reflex arcs are biceps C5, brachioradialis C6, triceps C7 (C7-C8), finger flexors C8, patellar L3-L4, Achilles S1. An inverted supinator reflex (absent brachioradialis with brisk finger flexion) is the same principle in miniature and is nearly specific for compression at C5-C6.",
+    "discriminator": "Hyporeflexia at the level and hyperreflexia below it is what localizes a cord lesion; the highest absent reflex names the segment.",
+    "mnemonic": "Reflex arcs count 1-2-3-4-5-6-7-8: ankle S1-S2, knee L3-L4, biceps/brachioradialis C5-C6, triceps C7-C8."
   },
   {
     "id": "neuro-spinal-cord-radiculopathy-40",
@@ -6090,28 +6098,32 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "The falling vital capacity trend, not the reassuring oxygen saturation, dictates intubation in neuromuscular respiratory failure."
   },
   {
-    "id": "neuro-spinal-cord-radiculopathy-58",
+    "id": "neuro-spinal-cord-radiculopathy-84",
     "system": "Spinal Cord & Radiculopathy",
-    "topic": "West Nile poliomyelitis",
-    "stem": "A 52-year-old man in August develops fever, headache, and confusion, followed 3 days later by flaccid weakness of the right arm and left leg without sensory loss. Reflexes are absent in the weak limbs; sensation is normal. CSF shows 180 cells/uL (lymphocyte predominant), mildly elevated protein, normal glucose. Which structure is the site of injury?",
+    "topic": "West Nile neuroinvasive disease diagnosis",
+    "stem": "A 52-year-old man in late August develops fever, headache, and confusion, followed 3 days later by flaccid weakness of the right arm and left leg. Exam: areflexia in the weak limbs with entirely normal sensation. CSF shows 180 cells/uL (lymphocyte predominant), protein 78 mg/dL, and normal glucose; Gram stain and bacterial cultures are negative. MRI of the spine shows T2 hyperintensity in the anterior horns without cord compression. Which of the following tests is most likely to establish the diagnosis?",
     "options": [
-      "Anterior horn cells",
-      "Dorsal root ganglia",
-      "Neuromuscular junction",
-      "Peripheral nerve myelin",
-      "Lateral corticospinal tracts"
+      "Cerebrospinal fluid herpes simplex virus PCR",
+      "West Nile virus IgM antibody in cerebrospinal fluid",
+      "Serum anti-GM1 ganglioside antibodies",
+      "Stool culture for enterovirus and poliovirus",
+      "Serum West Nile virus reverse-transcriptase PCR"
     ],
-    "answerIndex": 0,
-    "explanation": "Acute asymmetric flaccid paralysis with areflexia and preserved sensation during a summer febrile encephalitis is West Nile virus poliomyelitis, in which the virus destroys anterior horn motor neurons.",
+    "answerIndex": 1,
+    "explanation": "A midsummer febrile encephalitis with asymmetric flaccid paralysis, areflexia, normal sensation, and a lymphocytic pleocytosis is West Nile poliomyelitis from anterior horn cell infection. It is confirmed serologically: IgM does not cross an intact blood-brain barrier, so West Nile IgM in CSF indicates intrathecal antibody production and neuroinvasive disease, and it is detectable in most patients within the first days of neurologic symptoms.",
     "optionRationales": [
-      "Correct: West Nile virus (like poliovirus) infects anterior horn cells, producing asymmetric lower motor neuron paralysis without sensory deficits.",
-      "Dorsal root ganglion disease causes sensory neuronopathy with ataxia, not weakness.",
-      "Neuromuscular junction disease does not fit: botulism causes descending paralysis with prominent pupillary and bulbar findings and normal CSF, and myasthenia causes fatigable weakness with normal reflexes and no CSF pleocytosis.",
-      "Demyelination of peripheral nerves is Guillain-Barre syndrome, which is symmetric, ascending, has sensory symptoms, and shows albuminocytologic dissociation (high protein, few cells) rather than pleocytosis.",
-      "Corticospinal lesions cause spastic weakness with hyperreflexia, the opposite of this flaccid areflexic picture."
+      "HSV-1 encephalitis causes fever and confusion with temporal lobe seizures and hemorrhagic temporal changes on MRI; it does not cause asymmetric flaccid limb paralysis with anterior horn signal change.",
+      "Correct: CSF West Nile virus IgM is the diagnostic test of choice for neuroinvasive disease, since intrathecal IgM is present in the great majority of patients by the time encephalopathy or weakness appears.",
+      "Anti-GM1 antibodies support the acute motor axonal variant of Guillain-Barre syndrome, which is symmetric and ascending and shows albuminocytologic dissociation (high protein, few cells) rather than this lymphocytic pleocytosis.",
+      "Stool studies address poliovirus and enterovirus D68, which produce an identical anterior horn syndrome but in unvaccinated or pediatric patients, and they would not explain this adult's late-summer arboviral encephalitis.",
+      "Tempting, but nucleic acid testing is insensitive here: viremia is brief and has usually cleared by the time neuroinvasive symptoms begin, so a negative serum or CSF RT-PCR does not exclude West Nile virus."
     ],
-    "concept": "Poliomyelitis-like acute flaccid paralysis (poliovirus, West Nile virus, enterovirus D68) reflects anterior horn cell infection: asymmetric flaccid weakness, areflexia, fasciculations, and no sensory loss, often with fever and CSF lymphocytic pleocytosis. This distinguishes it from GBS, which is symmetric, involves sensation, and has few CSF cells.",
-    "discriminator": "Asymmetric flaccid weakness with normal sensation and CSF pleocytosis in a febrile summer illness clinches anterior horn cell infection over Guillain-Barre syndrome."
+    "concept": "West Nile neuroinvasive disease peaks in late summer and takes three forms: meningitis, encephalitis, and a poliomyelitis-like acute flaccid paralysis from destruction of anterior horn motor neurons (asymmetric weakness, areflexia, normal sensation). Diagnosis rests on West Nile IgM antibody in CSF or serum rather than on nucleic acid amplification, because viremia clears before neuroinvasive symptoms appear. Treatment is supportive; there is no antiviral therapy.",
+    "conceptRule": [
+      "Late-summer febrile encephalitis + asymmetric flaccid weakness with normal sensation and CSF lymphocytic pleocytosis -> West Nile poliomyelitis (anterior horn cells)",
+      "Suspected neuroinvasive West Nile virus -> send West Nile IgM on CSF and serum; do not rely on RT-PCR, and do not let a negative PCR exclude the diagnosis"
+    ],
+    "discriminator": "A negative West Nile RT-PCR does not exclude neuroinvasive disease because viremia has already cleared at symptom onset; intrathecal IgM is what makes the diagnosis."
   },
   {
     "id": "neuro-peripheral-nerve-plexus-1",
@@ -10896,6 +10908,36 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Glaucoma, urinary retention, and coronary disease are the specific comorbidities that take a tricyclic off the table and select an SNRI."
   },
   {
+    "id": "neuro-neuropathy-demyelinating-disease-94",
+    "system": "Neuropathy & Demyelinating Disease",
+    "topic": "Paraneoplastic sensory neuronopathy workup",
+    "stem": "A 63-year-old woman with a 45-pack-year smoking history has 8 weeks of progressive numbness that began simultaneously in the fingertips, the left cheek, and the trunk, and now also involves the feet. She has lost 9 kg over the same period. Exam shows loss of vibration and joint position sense in all four limbs with pseudoathetosis of the outstretched hands, a positive Romberg sign, areflexia, and 5/5 strength throughout. Nerve conduction studies show absent sensory nerve action potentials with entirely normal motor studies. Serum anti-Hu (ANNA-1) antibody is positive. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "High-dose intravenous methylprednisolone",
+      "Sural nerve biopsy",
+      "Empiric intravenous immunoglobulin",
+      "CT of the chest to search for small cell lung cancer",
+      "MRI of the cervical spinal cord with contrast"
+    ],
+    "answerIndex": 3,
+    "explanation": "A subacute, non-length-dependent sensory neuronopathy with a positive anti-Hu (ANNA-1) antibody is paraneoplastic in the great majority of cases, and small cell lung cancer is by far the commonest culprit in a smoker with weight loss. The antibody is already positive, so the next step is to find and treat the tumor: CT of the chest first, then FDG-PET if the CT is unrevealing, with the search repeated every few months for up to 2 years if initially negative. Treating the cancer is the intervention most likely to arrest the neurologic decline.",
+    "optionRationales": [
+      "Corticosteroids likewise rarely reverse anti-Hu sensory neuronopathy and would delay the cancer hunt, which is the step that changes outcome.",
+      "Nerve biopsy is invasive and cannot establish a ganglionopathy or its cause; the electrodiagnostic pattern and the antibody have already made the diagnosis.",
+      "Immunotherapy is at best adjunctive in anti-Hu disease, which is driven by cytotoxic T cells and responds poorly to IVIG; starting it does not replace the obligatory tumor search.",
+      "Chest CT is the highest-yield first test for the underlying small cell lung cancer, and finding and treating the tumor is what best halts progression of an anti-Hu ganglionopathy.",
+      "Cervical cord imaging would be indicated if the sensory potentials were normal (a dorsal column lesion); absent sensory nerve action potentials place the lesion in the dorsal root ganglia, not the cord."
+    ],
+    "concept": "Once a sensory neuronopathy is identified, the task shifts from localization to etiology. Anti-Hu (ANNA-1) positivity makes the syndrome paraneoplastic until proven otherwise, and the tumor is small cell lung cancer in roughly 80% of cases; the neuropathy typically precedes the cancer diagnosis by months. Chest CT is the first imaging study, FDG-PET follows a negative CT, and surveillance continues for up to 2 years. The other classic ganglionopathy causes to sort through are Sjogren syndrome, cisplatin/oxaliplatin, and pyridoxine megadose.",
+    "conceptRule": [
+      "Non-length-dependent sensory loss + absent SNAPs with normal motor studies -> sensory neuronopathy; now look for the cause",
+      "Anti-Hu (ANNA-1) positive -> hunt for small cell lung cancer: chest CT, then FDG-PET if negative",
+      "Initial imaging negative -> repeat screening every 3-6 months for up to 2 years before calling it idiopathic",
+      "Treating the tumor stabilizes the neuropathy better than IVIG or steroids do"
+    ],
+    "discriminator": "A subacute ganglionopathy in a heavy smoker with weight loss and a positive anti-Hu antibody calls for a tumor search, not empiric immunotherapy."
+  },
+  {
     "id": "neuro-neuropathy-demyelinating-disease-42",
     "system": "Neuropathy & Demyelinating Disease",
     "topic": "Plasmapheresis for refractory relapse",
@@ -11186,30 +11228,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "Demyelinating neuropathies injure myelin one internode at a time (segmental demyelination) while initially sparing the axon, which is why conduction slows or blocks yet recovery can be rapid once Schwann cells remyelinate. In GBS the demyelination is inflammatory (T cells, antibodies, macrophages), and because Schwann cells regenerate, most patients recover; secondary axonal damage in severe cases predicts slower and incomplete recovery.",
     "discriminator": "Inflammatory cells stripping myelin from intact axons is what distinguishes acute inflammatory demyelinating polyneuropathy from an axonal or vasculitic neuropathy."
-  },
-  {
-    "id": "neuro-neuropathy-demyelinating-disease-86",
-    "system": "Neuropathy & Demyelinating Disease",
-    "topic": "Sensory neuronopathy localization",
-    "stem": "A 60-year-old man taking 1,500 mg of pyridoxine daily has subacute numbness that began simultaneously in the face, trunk, hands, and feet. Vibration and proprioception are lost diffusely, he is areflexic and markedly ataxic, but strength and pinprick are relatively preserved. Nerve conduction studies show absent sensory nerve action potentials with entirely normal motor studies. The lesion is best localized to which of the following structures?",
-    "options": [
-      "Dorsal root ganglia",
-      "Dorsal columns of the spinal cord",
-      "Anterior horn cells",
-      "Myelin of peripheral motor nerves",
-      "Distal sensory axon terminals"
-    ],
-    "answerIndex": 0,
-    "explanation": "Absent sensory nerve action potentials with normal motor studies and a non-length-dependent distribution (face and trunk numb as early as the feet) localize the lesion to the primary sensory cell bodies — the dorsal root ganglia, along with their cranial homolog the trigeminal ganglion — that is, a sensory neuronopathy (ganglionopathy).",
-    "optionRationales": [
-      "Dorsal root ganglion neurons are the sensory cell bodies whose loss abolishes sensory potentials everywhere at once; the trigeminal ganglion is their cranial counterpart and is attacked by the same process, which is why the face is numb as well.",
-      "A central dorsal column lesion spares the peripheral sensory nerve and leaves sensory nerve action potentials normal.",
-      "Anterior horn cell disease causes weakness, atrophy and fasciculations with entirely normal sensation.",
-      "Motor demyelination would produce weakness with slowed motor conduction; motor studies here are normal.",
-      "Distal axonal degeneration is length-dependent, starting in the toes and sparing the face, and would not abolish potentials diffusely at onset."
-    ],
-    "concept": "Sensory neuronopathy is localized by pattern, not by severity: non-length-dependent sensory loss (face, trunk, arms as early as the legs), areflexia, sensory ataxia, preserved strength, and absent sensory nerve action potentials with normal motor studies. Classic causes are pyridoxine megadose, cisplatin, Sjogren syndrome, and paraneoplastic anti-Hu with small cell lung cancer.",
-    "discriminator": "Facial or truncal sensory involvement at onset marks a ganglionopathy rather than a length-dependent axonal polyneuropathy."
   },
   {
     "id": "neuro-neuropathy-demyelinating-disease-87",
@@ -15779,30 +15797,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Seizure with a sodium under 120 after excessive water intake is a hyponatremic seizure that needs hypertonic saline, not an antiseizure drug."
   },
   {
-    "id": "neuro-seizures-epilepsy-25",
-    "system": "Seizures & Epilepsy",
-    "topic": "Hypsarrhythmia in tuberous sclerosis",
-    "stem": "A 6-month-old girl has clusters of sudden brief flexion of the trunk and arms on awakening, and her parents note she no longer smiles or tracks faces. She has several hypopigmented ash-leaf macules on her trunk. EEG shows chaotic high-amplitude slow waves with multifocal spikes and no organized background. Which of the following is the most appropriate first-line treatment?",
-    "options": [
-      "Levetiracetam",
-      "Ketogenic diet",
-      "Phenobarbital",
-      "Vigabatrin",
-      "Ethosuximide"
-    ],
-    "answerIndex": 3,
-    "explanation": "Infantile spasms with hypsarrhythmia and developmental regression (West syndrome) in a child with tuberous sclerosis are treated first-line with vigabatrin; in infants without tuberous sclerosis, ACTH or high-dose oral prednisolone is preferred.",
-    "optionRationales": [
-      "Levetiracetam is not effective for infantile spasms and delays definitive therapy.",
-      "Ketogenic diet is a later option for spasms refractory to hormonal therapy and vigabatrin.",
-      "Phenobarbital is used for neonatal seizures and is ineffective for infantile spasms.",
-      "Correct: vigabatrin is the drug of choice for infantile spasms due to tuberous sclerosis complex (with monitoring for retinal toxicity); ACTH or prednisolone is first-line in other etiologies.",
-      "Ethosuximide treats childhood absence epilepsy with 3-Hz spike-and-wave, not spasms."
-    ],
-    "concept": "Hypsarrhythmia (chaotic, high-amplitude, disorganized background with multifocal spikes) is the interictal EEG of infantile spasms (West syndrome), which presents at 3-12 months with clusters of flexor/extensor spasms and developmental regression. Treat urgently because outcome depends on rapid EEG normalization: ACTH or high-dose prednisolone for most etiologies, vigabatrin first-line when the cause is tuberous sclerosis complex. Other syndrome-defining EEG patterns: 3-Hz generalized spike-and-wave in childhood absence epilepsy, 4-6 Hz polyspike-and-wave in JME, slow (<2.5 Hz) spike-and-wave in Lennox-Gastaut, and burst suppression in neonatal Ohtahara syndrome, deep anesthesia, or post-anoxic injury.",
-    "discriminator": "Ash-leaf macules identify tuberous sclerosis, which flips the first-line agent from ACTH to vigabatrin."
-  },
-  {
     "id": "neuro-seizures-epilepsy-26",
     "system": "Seizures & Epilepsy",
     "topic": "Infantile spasms diagnosis",
@@ -16689,6 +16683,31 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Persists after benzodiazepine -> fosphenytoin, levetiracetam, or valproate IV",
       "Persists after second-line -> intubate, midazolam or propofol infusion, continuous EEG"
     ]
+  },
+  {
+    "id": "neuro-seizures-epilepsy-78",
+    "system": "Seizures & Epilepsy",
+    "topic": "Subependymal giant cell astrocytoma in tuberous sclerosis",
+    "stem": "A 13-year-old boy with tuberous sclerosis complex has focal seizures that have been well controlled on oxcarbazepine for 3 years. He has facial angiofibromas, hypomelanotic macules, and known cortical tubers. Over the past 6 months he has had intermittent mild morning headaches; he has had no vomiting, and his examination, including funduscopy and visual fields, is normal. Surveillance MRI shows avidly enhancing nodules at both foramina of Monro; the larger has grown from 0.8 cm to 1.9 cm over 12 months. The lateral ventricles are mildly enlarged without transependymal edema. Which of the following is the most appropriate treatment?",
+    "options": [
+      "Everolimus",
+      "Stereotactic radiosurgery to the larger lesion",
+      "Continue surveillance imaging alone with no change in therapy",
+      "Increase the oxcarbazepine dose and add vigabatrin",
+      "Bilateral transcallosal resection of both lesions"
+    ],
+    "answerIndex": 0,
+    "explanation": "An enhancing lesion at the foramen of Monro that enlarges on serial imaging in a patient with tuberous sclerosis is a subependymal giant cell astrocytoma (SEGA), which arises from a subependymal nodule during childhood and adolescence and obstructs CSF flow at the foramen of Monro. Loss of TSC1 or TSC2 removes inhibition of mTORC1, so the mTOR inhibitor everolimus (or sirolimus) shrinks SEGAs and is the treatment of choice for a growing SEGA that is not yet causing acute obstructive hydrocephalus, especially when lesions are bilateral; surgery is reserved for the acutely symptomatic tumor.",
+    "optionRationales": [
+      "Correct: everolimus blocks the constitutively active mTORC1 pathway that drives TSC lesions, producing at least 50% volume reduction in roughly half of SEGAs, and it spares this stable child a bilateral craniotomy while also treating renal angiomyolipomas and TSC-associated refractory seizures.",
+      "Radiosurgery is not used for SEGA: these are slow-growing WHO grade 1 lesions, and irradiating a child with a tumor-predisposition syndrome adds risks of secondary malignancy and radiation vasculopathy.",
+      "Documented interval growth with early ventriculomegaly means the lesion is no longer a static subependymal nodule; continued observation risks acute obstructive hydrocephalus, which can cause sudden deterioration or death.",
+      "His seizures are already controlled, and neither oxcarbazepine nor vigabatrin has any effect on SEGA growth; vigabatrin's role in tuberous sclerosis is first-line treatment of infantile spasms, not tumor control.",
+      "Resection is the answer for an acutely symptomatic SEGA with obstructive hydrocephalus (papilledema, vomiting, depressed consciousness); operating on both foramina of Monro in a neurologically intact child risks fornix and deep venous injury, and residual tumor can regrow."
+    ],
+    "concept": "Tuberous sclerosis complex arises from TSC1 (hamartin) or TSC2 (tuberin) loss with unrestrained mTORC1 signaling. Its CNS lesions are cortical tubers (epileptogenic), static calcified subependymal nodules along the caudothalamic groove, and SEGA, which is a nodule near the foramen of Monro that enhances and grows, typically between ages 5 and 20. Screen with brain MRI every 1 to 3 years until age 25. Treat a growing SEGA with an mTOR inhibitor (everolimus, sirolimus) and an acutely symptomatic SEGA with hydrocephalus by surgical resection with CSF diversion as needed. mTOR inhibitors also shrink renal angiomyolipomas and reduce TSC-associated seizures; vigabatrin remains first-line for infantile spasms in TSC.",
+    "discriminator": "Enhancement, a location at the foramen of Monro, and growth on serial MRI distinguish a SEGA from a static subependymal nodule, and mTOR inhibition treats it while hydrocephalus is not yet acute.",
+    "mnemonic": "TSC leaves mTOR stuck on, so the -limus drugs turn it off: everolimus shrinks SEGAs and angiomyolipomas."
   },
   {
     "id": "neuro-seizures-epilepsy-73",
@@ -22565,30 +22584,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Pure sensory loss with areflexia and normal strength, non-length-dependent (hands involved as early as feet), points to the dorsal root ganglion rather than a distal axon."
   },
   {
-    "id": "neuro-brain-tumors-neurocutaneous-syndromes-65",
-    "system": "Brain Tumors & Neurocutaneous Syndromes",
-    "topic": "Cisplatin vs paclitaxel neuropathy pattern",
-    "stem": "Two women on the gynecologic oncology service report new numbness. Patient A, receiving weekly paclitaxel, has symmetric burning numbness of the toes and fingertips with reduced pinprick in a stocking-glove distribution and absent ankle jerks only. Patient B finished cisplatin 2 months ago and has progressively worsened since; she has absent vibration and proprioception in all four limbs with a positive Romberg sign, diffuse areflexia, and Lhermitte sign, with normal strength. Which feature best identifies Patient B's neuropathy as a dorsal root ganglionopathy rather than a distal axonopathy?",
-    "options": [
-      "Reduced pinprick and temperature in a stocking-glove pattern",
-      "Symmetric distal burning pain in the feet",
-      "Non-length-dependent large-fiber sensory loss with sensory ataxia that worsened after the last dose",
-      "Loss of ankle reflexes with preserved knee reflexes",
-      "Distal weakness of toe extension"
-    ],
-    "answerIndex": 2,
-    "explanation": "Ganglionopathy kills sensory cell bodies, so deficits are non-length-dependent (arms as severe as legs), ataxic and large-fiber predominant, and classically 'coast' — progressing for weeks to months after chemotherapy stops.",
-    "optionRationales": [
-      "Stocking-glove pinprick loss describes the length-dependent taxane pattern; cisplatin relatively spares small fibers.",
-      "Distal burning pain is small-fiber and length-dependent, typical of paclitaxel's dying-back axonopathy — Patient A's picture, not Patient B's.",
-      "Sensory cell-body death produces diffuse, non-length-dependent proprioceptive loss with ataxia and post-treatment coasting — the signature of cisplatin ganglionopathy.",
-      "A distal-to-proximal reflex gradient (ankle lost, knee preserved) is the hallmark of length-dependent axonopathy; Patient B has global areflexia because the Ia afferent limb of the reflex arc is destroyed at the cell body in all four limbs, not just in the longest nerves.",
-      "Neither patient has weakness, and ganglionopathy spares motor neurons entirely, so a motor sign could never be the distinguishing feature; new weakness in a chemotherapy patient should prompt a search for another cause."
-    ],
-    "concept": "Chemotherapy-induced peripheral neuropathies split by where the drug hits. Taxanes and vinca alkaloids damage distal axons via microtubule disruption, giving length-dependent stocking-glove symptoms starting in the toes. Platinums damage the dorsal root ganglion cell body, giving non-length-dependent large-fiber sensory loss with ataxia, areflexia, and Lhermitte sign that can coast for months after the last dose. Recognizing the ganglionopathy pattern also prompts consideration of paraneoplastic anti-Hu disease, Sjogren syndrome, and pyridoxine (B6) excess.",
-    "discriminator": "Coasting after the last dose plus upper-limb proprioceptive loss equal to the legs marks a ganglionopathy; a clean toes-first gradient marks a distal axonopathy."
-  },
-  {
     "id": "neuro-brain-tumors-neurocutaneous-syndromes-8",
     "system": "Brain Tumors & Neurocutaneous Syndromes",
     "topic": "Colloid cyst obstruction",
@@ -23054,6 +23049,31 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "Prolactinoma is the most common functioning pituitary adenoma; it causes galactorrhea and hypogonadism (amenorrhea in women, low libido/impotence in men) and, when large, headache and bitemporal hemianopia. A prolactin far above 200 ng/mL with a macroadenoma essentially confirms prolactinoma. Unlike other pituitary tumors, first-line therapy is medical (cabergoline over bromocriptine) regardless of size, with transsphenoidal surgery for failures.",
     "discriminator": "Prolactin in the thousands with a sellar mass means the tumor itself secretes prolactin, so a dopamine agonist rather than surgery is first-line even with chiasmal compression."
+  },
+  {
+    "id": "neuro-brain-tumors-neurocutaneous-syndromes-84",
+    "system": "Brain Tumors & Neurocutaneous Syndromes",
+    "topic": "Management of painful taxane-induced peripheral neuropathy",
+    "stem": "Two women on the gynecologic oncology service report new numbness. Patient B finished cisplatin 2 months ago and has a non-length-dependent large-fiber sensory loss with Romberg sign and Lhermitte sign; she is referred to neurology. Patient A, a 61-year-old woman midway through weekly paclitaxel for ovarian cancer, has 6 weeks of symmetric burning pain and numbness of the toes and fingertips with reduced pinprick in a stocking-glove distribution and absent ankle jerks; strength is 5/5 and gait is stable. The pain now keeps her awake most nights and acetaminophen has not helped. Her oncologist wants to continue the taxane if possible. Which of the following is the most appropriate next step for Patient A?",
+    "options": [
+      "Give intravenous calcium and magnesium before each infusion to prevent progression",
+      "Start high-dose oral pyridoxine (vitamin B6)",
+      "Start duloxetine and modify the paclitaxel dose",
+      "Start gabapentin, which has proven benefit in chemotherapy-induced neuropathic pain",
+      "Start acetyl-L-carnitine supplementation"
+    ],
+    "answerIndex": 2,
+    "explanation": "Duloxetine is the only systemic agent with randomized-trial evidence for established painful chemotherapy-induced peripheral neuropathy, and dose reduction, delay, or discontinuation of the offending taxane is the only intervention that limits further nerve injury. No agent has proven preventive benefit.",
+    "optionRationales": [
+      "Calcium and magnesium infusions were studied for oxaliplatin-related symptoms and did not prevent neuropathy; they have no role with a taxane and do nothing for established pain.",
+      "High-dose pyridoxine is itself a cause of sensory neuronopathy and would add a second toxic insult rather than relieve her pain.",
+      "Duloxetine is the evidence-based first-line drug for painful chemotherapy-induced neuropathy, and pairing it with dose modification of the paclitaxel addresses both the pain and the ongoing nerve injury.",
+      "Gabapentin and pregabalin help other neuropathic pain syndromes but failed to beat placebo in randomized trials of chemotherapy-induced neuropathy, so they are not the evidence-based first choice here.",
+      "Acetyl-L-carnitine not only failed as prevention but made neuropathy worse than placebo in a randomized taxane trial, so it should not be offered."
+    ],
+    "concept": "For chemotherapy-induced peripheral neuropathy, prevention has repeatedly failed: no supplement or infusion (calcium/magnesium, acetyl-L-carnitine, glutathione, vitamin E, amifostine) is recommended, and acetyl-L-carnitine was actively harmful. Once painful neuropathy is established, the only agent supported by randomized data is duloxetine; gabapentinoids and topical compounds are at best second line. The single most effective maneuver for a patient still on treatment is dose reduction, delay, or switching the offending drug, decided with oncology against the tumor's response.",
+    "discriminator": "Painful, length-dependent neuropathy during ongoing taxane therapy: treat with duloxetine and modify the chemotherapy dose — no agent prevents chemotherapy-induced neuropathy.",
+    "mnemonic": "Chemo neuropathy: DULoxetine for the pain, DOSE change for the nerve — everything 'preventive' has failed."
   },
   {
     "id": "neuro-brain-tumors-neurocutaneous-syndromes-22",
@@ -23774,28 +23794,28 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Myokymic discharges on EMG in a painless plexopathy years after radiation clinch radiation injury over neoplastic infiltration."
   },
   {
-    "id": "neuro-brain-tumors-neurocutaneous-syndromes-46",
+    "id": "neuro-brain-tumors-neurocutaneous-syndromes-85",
     "system": "Brain Tumors & Neurocutaneous Syndromes",
     "topic": "Radiation-induced meningioma",
-    "stem": "A 34-year-old woman presents with 6 months of progressive headaches and new-onset focal seizures. As a child she received cranial irradiation as part of treatment for acute lymphoblastic leukemia. MRI shows a well-circumscribed, homogeneously enhancing extra-axial mass with a dural tail along the convexity. Which of the following is the most likely diagnosis?",
+    "stem": "A 34-year-old woman presents with 6 months of progressive headaches and new-onset focal seizures. As a child she received cranial irradiation as part of treatment for acute lymphoblastic leukemia. MRI shows a well-circumscribed, homogeneously enhancing extra-axial mass with a dural tail along the convexity, consistent with a meningioma. Compared with a sporadic meningioma, her tumor is most likely to show which of the following features?",
     "options": [
-      "Meningioma",
-      "Glioblastoma",
-      "Primary CNS lymphoma",
-      "Oligodendroglioma",
-      "Recurrent leukemic chloroma"
+      "Solitary lesion of WHO grade I histology with a low recurrence rate after gross total resection",
+      "Origin in the posterior fossa rather than over the cerebral convexity",
+      "Multiple lesions with more frequent atypical (WHO grade II) histology and a higher recurrence rate after resection",
+      "Latency of less than 5 years between the exposure and tumor detection",
+      "Derivation from Schwann cells rather than arachnoid cap cells"
     ],
-    "answerIndex": 0,
-    "explanation": "Meningioma is the most common radiation-induced intracranial tumor, typically arising decades after childhood cranial irradiation, and presents as a dural-based extra-axial enhancing mass.",
+    "answerIndex": 2,
+    "explanation": "Radiation-induced meningiomas differ from sporadic ones in biology and behavior: they are more often multiple, are more frequently atypical (WHO grade II) or anaplastic, present at a younger age after a latency of roughly 15-25 years, and recur more often after resection.",
     "optionRationales": [
-      "A dural-based, homogeneously enhancing extra-axial mass with a dural tail in a patient with prior cranial irradiation is a radiation-induced meningioma.",
-      "Glioblastoma is intra-axial and heterogeneous with necrosis; radiation-induced gliomas occur but are less common than meningiomas.",
-      "Primary CNS lymphoma is an intra-axial periventricular mass, classically ring-enhancing, rather than a dural-based extra-axial lesion with a dural tail.",
-      "Oligodendroglioma is an intra-axial frontal lobe tumor with calcifications, not a dural-based mass.",
-      "Chloroma (myeloid sarcoma) occurs with myeloid leukemia and would present far sooner, not decades after ALL remission."
+      "A solitary, benign WHO grade I tumor cured by gross total resection is the profile of a sporadic meningioma, not a radiation-induced one.",
+      "Radiation-induced meningiomas arise within the prior radiation field, which for cranial prophylaxis is the whole brain, and they remain most common over the convexity and along the skull base rather than shifting to the posterior fossa.",
+      "Multiplicity, a higher proportion of atypical WHO grade II histology, and a greater post-resection recurrence rate are the hallmarks that distinguish radiation-induced from sporadic meningiomas.",
+      "The latency is long, typically 15-25 years (shorter with higher radiation doses); a tumor appearing within 5 years of exposure would not be attributed to radiation.",
+      "Meningiomas of any cause arise from arachnoid cap cells; Schwann cell origin defines schwannomas, which radiation can also induce but which are a different tumor."
     ],
-    "concept": "Ionizing radiation to the head (childhood leukemia prophylaxis, tinea capitis irradiation in the mid-20th century, radiotherapy for prior tumors) predisposes to secondary tumors with a latency of 10-30 years. Meningioma is the most common radiation-induced brain tumor, followed by gliomas and sarcomas. Radiation-induced meningiomas are more often multiple, atypical, and recurrent than sporadic ones.",
-    "discriminator": "An extra-axial dural-based mass with a dural tail decades after childhood cranial irradiation identifies radiation-induced meningioma rather than an intra-axial glioma."
+    "concept": "Ionizing radiation to the head (childhood leukemia prophylaxis, tinea capitis irradiation in the mid-20th century, radiotherapy for prior tumors) predisposes to secondary tumors with a latency of 10-30 years, and meningioma is the most common radiation-induced brain tumor, followed by gliomas and sarcomas. Radiation-induced meningiomas behave more aggressively than sporadic ones: they are more often multiple, are more frequently atypical or anaplastic, appear at a younger age after a typical latency of 15-25 years, and recur more often after resection, so these patients need lifelong imaging surveillance rather than a single post-resection scan.",
+    "discriminator": "Multiplicity, atypical (WHO grade II) histology, and frequent recurrence after resection separate a radiation-induced meningioma from the solitary, benign grade I sporadic tumor."
   },
   {
     "id": "neuro-brain-tumors-neurocutaneous-syndromes-77",
@@ -26154,28 +26174,35 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "The mousy/musty body odor with hypopigmentation distinguishes PKU from other causes of infantile developmental delay and seizures."
   },
   {
-    "id": "neuro-pediatric-genetic-neurology-82",
+    "id": "neuro-pediatric-genetic-neurology-90",
     "system": "Pediatric & Genetic Neurology",
-    "topic": "Urea cycle defect confirmation",
-    "stem": "A 3-day-old boy becomes lethargic and hypotonic with rapid, deep breathing. Labs: pH 7.51, PCO2 26 mm Hg, bicarbonate 20 mEq/L, sodium 140, chloride 110, ammonia 480 mcg/dL. Serum glucose is normal and urine ketones are negative. Which additional laboratory finding would best support the most likely diagnosis?",
+    "topic": "Urea cycle defect inheritance counseling",
+    "stem": "A 3-day-old boy becomes lethargic and hypotonic with rapid, deep breathing. Labs show pH 7.51, PCO2 26 mm Hg, ammonia 480 mcg/dL, normal glucose, and negative urine ketones; urinary orotic acid is markedly elevated and plasma citrulline is low, establishing ornithine transcarbamylase deficiency. His 29-year-old mother has avoided meat and eggs since childhood because they \"make her foggy,\" and she has twice been hospitalized for vomiting and confusion after high-protein meals. The parents ask what this means for future pregnancies. Which of the following is the most appropriate counseling?",
     "options": [
-      "Elevated serum 17-hydroxyprogesterone",
-      "Elevated serum lactate with a lactate-to-pyruvate ratio above 25",
-      "Elevated urinary orotic acid",
-      "Elevated urinary methylmalonic acid",
-      "Elevated very-long-chain fatty acids"
+      "The disorder arose as a de novo mutation: the recurrence risk is negligible and no further family testing is needed",
+      "The disorder is autosomal recessive: each future child has a 25% chance of being affected, and the mother's episodes are coincidental",
+      "The disorder is autosomal dominant with variable expressivity: each future child has a 50% chance of being affected regardless of sex",
+      "The disorder is mitochondrially inherited: every future child of this mother will be affected",
+      "The disorder is X-linked: each future son has a 50% chance of being affected, and the mother should be evaluated as a symptomatic carrier"
     ],
-    "answerIndex": 2,
-    "explanation": "Hyperammonemia with respiratory alkalosis, a normal anion gap (10), and no ketones indicates a urea cycle defect; excess carbamoyl phosphate shunted into pyrimidine synthesis raises urinary orotic acid in the X-linked ornithine transcarbamylase form, the most common urea cycle defect.",
+    "answerIndex": 4,
+    "explanation": "Ornithine transcarbamylase deficiency is the only X-linked urea cycle defect; all the others are autosomal recessive. A heterozygous mother passes the mutant X to half of her sons, who are affected, and half of her daughters, who are carriers, and skewed X-inactivation makes many carrier women symptomatic — exactly the lifelong protein aversion with episodic hyperammonemic encephalopathy described here.",
     "optionRationales": [
-      "Elevated 17-hydroxyprogesterone indicates 21-hydroxylase deficiency, which does not cause hyperammonemia.",
-      "A high lactate with a lactate-to-pyruvate ratio above 25 indicates a mitochondrial respiratory chain disorder, which produces an anion gap lactic acidosis rather than the normal-gap respiratory alkalosis seen here.",
-      "Blocked ornithine transcarbamylase backs carbamoyl phosphate into the pyrimidine pathway, producing orotic aciduria — the classic confirmatory finding in this hyperammonemic, non-acidotic neonate.",
-      "Methylmalonic acid would be elevated in methylmalonic acidemia, which causes an anion gap acidosis with ketonuria, not this alkalotic picture.",
-      "Elevated VLCFAs indicate a peroxisomal disorder such as Zellweger or X-linked adrenoleukodystrophy, which do not present with acute hyperammonemic alkalosis."
+      "De novo mutations account for only a minority of cases, and this mother's protein intolerance with episodic confusion makes carrier status very likely, so dismissing recurrence risk and skipping family testing would be unsafe.",
+      "A 25% recurrence risk irrespective of sex fits the autosomal recessive urea cycle defects (CPS I, NAGS, citrullinemia, argininosuccinic aciduria, arginase deficiency), not OTC, and it leaves the mother's symptoms unexplained.",
+      "No urea cycle defect is autosomal dominant; quoting a 50% risk to every child regardless of sex misstates both the mechanism and the risk to daughters, who would be carriers rather than classically affected.",
+      "Urea cycle enzymes are nuclear-encoded, so transmission is not mitochondrial, and mitochondrial disease would not produce orotic aciduria with low citrulline.",
+      "Because OTC deficiency is X-linked, a carrier mother transmits the mutant allele to 50% of sons (affected) and 50% of daughters (carriers), and her protein aversion with recurrent confusion identifies her as a manifesting heterozygote who needs her own ammonia measurement, targeted molecular testing, and a metabolic care plan."
     ],
-    "concept": "Ammonia is a direct respiratory stimulant, so an untreated urea cycle defect produces tachypnea and a primary respiratory alkalosis with a normal anion gap and no ketones. Within the urea cycle, orotic aciduria separates the block at ornithine transcarbamylase (high orotate, low citrulline) from carbamoyl phosphate synthetase I deficiency (low orotate, low citrulline). Emergency management is the same: stop protein, run high-dose IV dextrose, and give nitrogen scavengers, with hemodialysis for very high ammonia.",
-    "discriminator": "Orotic aciduria places the block at ornithine transcarbamylase rather than at carbamoyl phosphate synthetase I, which is upstream and gives low orotate."
+    "concept": "Ornithine transcarbamylase deficiency is the single X-linked member of the urea cycle; carbamoyl phosphate synthetase I, N-acetylglutamate synthase, citrullinemia (ASS1), argininosuccinic aciduria (ASL), and arginase deficiency are all autosomal recessive. Hemizygous males present with catastrophic neonatal hyperammonemia, whereas heterozygous females range from asymptomatic to fully symptomatic depending on X-inactivation; the classic manifesting-carrier history is lifelong protein aversion with headaches, vomiting, and episodic confusion, sometimes first unmasked by the postpartum catabolic state, by valproate, or by high-dose steroids. Counseling therefore covers a 50% risk of an affected son and a 50% carrier risk for each daughter, cascade molecular testing once the family variant is known, and a protective plan for the mother.",
+    "conceptRule": [
+      "OTC deficiency -> X-linked; every other urea cycle defect -> autosomal recessive",
+      "Carrier mother -> 50% of sons affected, 50% of daughters carriers",
+      "Woman with protein aversion, headaches, or episodic confusion in such a family -> manifesting heterozygote; check ammonia and test for the family variant",
+      "Known or suspected carrier -> avoid valproate and prolonged fasting, and plan for the postpartum catabolic period"
+    ],
+    "discriminator": "Because OTC deficiency is the one X-linked urea cycle defect, an affected newborn boy with a protein-averse, episodically confused mother means carrier evaluation and a 50% risk to future sons, not the 25% recurrence risk of the autosomal recessive urea cycle defects.",
+    "mnemonic": "OTC is the Only Truly X-linked urea Cycle defect."
   },
   {
     "id": "neuro-pediatric-genetic-neurology-89",
