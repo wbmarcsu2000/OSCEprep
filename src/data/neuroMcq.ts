@@ -967,30 +967,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "A venous clot plus an early-appearing right-to-left shunt on bubble study is the pairing that proves paradoxical embolism."
   },
   {
-    "id": "neuro-stroke-cerebrovascular-37",
-    "system": "Stroke & Cerebrovascular",
-    "topic": "Paroxysmal AF after cryptogenic TIA",
-    "stem": "An 81-year-old woman had 30 minutes of expressive aphasia that resolved. BP is 118/72 mm Hg. Neurologic examination is normal, MRI shows no infarct, carotid duplex shows 20% bilateral stenosis, and ECG shows normal sinus rhythm. Which of the following is the most appropriate next step?",
-    "options": [
-      "CT angiography of the neck",
-      "Reassurance; no further workup",
-      "Extended ambulatory cardiac rhythm monitoring",
-      "Start warfarin empirically",
-      "Carotid endarterectomy"
-    ],
-    "answerIndex": 2,
-    "explanation": "An elderly patient with normal BP, a cortical TIA, insignificant carotid disease, and a normal single ECG most likely has paroxysmal atrial fibrillation, which requires Holter or longer ambulatory monitoring to detect.",
-    "optionRationales": [
-      "Duplex already showed only mild stenosis, so further carotid imaging adds nothing.",
-      "TIA carries a high early stroke risk; the embolic source must be sought.",
-      "Correct: a normal ECG does not exclude paroxysmal AF; Holter or extended monitoring is the next step.",
-      "Anticoagulation is started only once AF or another cardioembolic source is documented, and a DOAC rather than warfarin would be the agent for non-valvular AF.",
-      "Endarterectomy is for symptomatic stenosis >70%, not 20%."
-    ],
-    "concept": "TIA workup follows the likely source: hypertensive 50-60s patients get carotid duplex; elderly normotensive patients get an ECG for AF, and if the ECG is normal, Holter or extended monitoring because AF is often paroxysmal. Echocardiography evaluates structural cardiac sources. Roughly 8% of people over 80 have AF.",
-    "discriminator": "Advanced age with normal blood pressure and a normal single ECG points to paroxysmal AF rather than carotid disease."
-  },
-  {
     "id": "neuro-stroke-cerebrovascular-38",
     "system": "Stroke & Cerebrovascular",
     "topic": "PCA hemianopia with macular sparing",
@@ -1140,6 +1116,35 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Statins help but hypertension is the dominant risk factor here."
     ],
     "concept": "Hypertension is the most common and most important modifiable stroke risk factor in the population. The strong systolic impulse damages carotid endothelium (plaque formation) and causes lipohyalinosis of penetrating arteries (lacunes), so blood pressure control outranks smoking cessation for stroke prevention."
+  },
+  {
+    "id": "neuro-stroke-cerebrovascular-59",
+    "system": "Stroke & Cerebrovascular",
+    "topic": "Prolonged rhythm monitoring in cryptogenic stroke",
+    "stem": "A 79-year-old woman had 25 minutes of left facial droop and left arm weakness that resolved completely 2 days ago. Blood pressure is 132/76 mm Hg and the pulse is regular. MRI shows a small right parietal cortical infarct, carotid duplex shows no hemodynamically significant stenosis, and transthoracic echocardiography with agitated saline shows normal chambers and no shunt. Her admission ECG and a 24-hour Holter monitor both showed sinus rhythm throughout. She takes aspirin and a high-intensity statin. Which of the following is the most appropriate next step?",
+    "options": [
+      "Repeat 24-hour Holter monitoring in 6 months",
+      "No further cardiac evaluation; continue aspirin alone",
+      "Implantable cardiac loop recorder",
+      "Start empiric apixaban for presumed occult atrial fibrillation",
+      "Transesophageal echocardiography"
+    ],
+    "answerIndex": 2,
+    "explanation": "A negative 24-hour Holter does not exclude paroxysmal atrial fibrillation, because detection depends on how long the rhythm is recorded. When a cortical infarct remains unexplained after carotid imaging, echocardiography, and short-term monitoring, the next step is to extend the recording: an implantable loop recorder detects AF in roughly 1 in 10 such patients by 6 months and in more with continued monitoring, versus very few with repeated short studies. Anticoagulation follows documented AF rather than preceding it.",
+    "optionRationales": [
+      "Repeating the identical study records only one more day of rhythm, so its yield remains low; the deficiency is duration, not timing.",
+      "Stopping the search leaves a treatable cardioembolic source undetected, and documented AF would change therapy from aspirin to an anticoagulant.",
+      "Correct: monitoring yield rises with duration, so a loop recorder is the appropriate escalation once short-term monitoring has failed to explain a cortical infarct.",
+      "Empiric anticoagulation for embolic stroke of undetermined source has not outperformed aspirin in trials and causes more bleeding; anticoagulate once AF is captured.",
+      "TEE searches for structural sources such as left atrial appendage thrombus, aortic arch atheroma, or vegetations, but it cannot capture an intermittent arrhythmia."
+    ],
+    "concept": "A cortical infarct with no significant carotid stenosis and no structural cardiac source is cryptogenic (embolic stroke of undetermined source), and the leading occult cause is paroxysmal atrial fibrillation. Because the arrhythmia is intermittent, diagnostic yield tracks recording time: single ECG < 24-hour Holter < multiweek patch or event monitor < implantable loop recorder. A negative short study is therefore a reason to record longer, not a reason to stop, and anticoagulation is reserved for documented AF.",
+    "conceptRule": [
+      "Cortical infarct + no carotid or structural cardiac source -> suspect occult paroxysmal AF",
+      "Negative short-term monitor -> escalate recording duration (patch/event monitor -> implantable loop recorder), do not conclude the workup",
+      "AF captured -> switch antiplatelet to a DOAC; AF never captured -> continue antiplatelet"
+    ],
+    "discriminator": "The already-negative 24-hour Holter is the pivot: because a short recording excludes nothing, the decision is how much longer to record, not whether to treat empirically or stop looking."
   },
   {
     "id": "neuro-stroke-cerebrovascular-44",
@@ -2048,6 +2053,37 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "A biconvex collection that stops at suture lines after temporal trauma with a lucid interval points to the middle meningeal artery; a crescent that crosses sutures points to bridging veins."
   },
   {
+    "id": "neuro-intracranial-hemorrhage-trauma-icp-59",
+    "system": "Intracranial Hemorrhage, Trauma & ICP",
+    "topic": "Factor Xa inhibitor reversal in ICH",
+    "stem": "An 81-year-old man taking apixaban for atrial fibrillation is brought in 90 minutes after sudden headache, vomiting, and left hemiparesis; his last dose was 4 hours ago. INR is 1.1, aPTT is normal, and platelet count is 240,000/mm3. Non-contrast head CT shows a 25-mL right basal ganglia hemorrhage. A nicardipine infusion has been started for blood pressure control. Which of the following is the most appropriate immediate treatment?",
+    "options": [
+      "Idarucizumab",
+      "Platelet transfusion",
+      "Intravenous vitamin K alone",
+      "Andexanet alfa",
+      "Protamine sulfate"
+    ],
+    "answerIndex": 3,
+    "explanation": "Apixaban is a direct factor Xa inhibitor, so reversal requires andexanet alfa, a recombinant factor Xa decoy that sequesters the drug; 4-factor PCC is the substitute when andexanet alfa is unavailable.",
+    "optionRationales": [
+      "Idarucizumab is specific for dabigatran, a direct thrombin inhibitor, and has no activity against factor Xa inhibitors.",
+      "Platelets are normal and platelet transfusion cannot overcome circulating factor Xa inhibition; it is not indicated (and may be harmful) in anticoagulant- or antiplatelet-associated ICH.",
+      "Vitamin K only restores synthesis of factors II, VII, IX, and X depleted by a vitamin K antagonist; apixaban inhibits activated factor X directly, which is also why this patient's INR is normal.",
+      "Andexanet alfa is a modified recombinant factor Xa that binds and sequesters apixaban and rivaroxaban, restoring thrombin generation within minutes; it is the specific reversal agent for factor Xa inhibitor-associated ICH.",
+      "Protamine reverses unfractionated heparin (fully) and LMWH (partially), not oral factor Xa inhibitors."
+    ],
+    "concept": "Match the reversal agent to the drug: factor Xa inhibitors (apixaban, rivaroxaban, edoxaban) -> andexanet alfa, or 4-factor PCC if unavailable; dabigatran -> idarucizumab; warfarin -> IV vitamin K plus 4-factor PCC; heparin -> protamine. Routine coagulation tests are unreliable for the direct oral anticoagulants, so a normal INR and aPTT never exclude clinically important anticoagulation.",
+    "conceptRule": [
+      "Apixaban/rivaroxaban ICH -> andexanet alfa (4-factor PCC if unavailable)",
+      "Dabigatran ICH -> idarucizumab (hemodialysis is an adjunct)",
+      "Warfarin ICH -> IV vitamin K 10 mg + 4-factor PCC",
+      "Unfractionated heparin ICH -> protamine",
+      "Normal INR/aPTT -> does not exclude DOAC effect; reverse based on the drug and last dose"
+    ],
+    "discriminator": "A normal INR in an anticoagulated patient points to a direct oral anticoagulant rather than warfarin, so reversal is drug-specific (andexanet alfa) instead of vitamin K plus PCC."
+  },
+  {
     "id": "neuro-intracranial-hemorrhage-trauma-icp-22",
     "system": "Intracranial Hemorrhage, Trauma & ICP",
     "topic": "GCS intubation threshold",
@@ -2080,7 +2116,39 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Verbal: 5 oriented, 4 confused, 3 inappropriate words, 2 incomprehensible sounds, 1 none",
       "Motor: 6 obeys commands, 5 localizes pain, 4 withdraws, 3 abnormal flexion (decorticate), 2 extension (decerebrate), 1 none"
     ],
-    "mnemonic": "'Less than 8, intubate'"
+    "mnemonic": "'GCS 8 or less, intubate'"
+  },
+  {
+    "id": "neuro-intracranial-hemorrhage-trauma-icp-60",
+    "system": "Intracranial Hemorrhage, Trauma & ICP",
+    "topic": "Harm of excessive hyperventilation after TBI",
+    "stem": "A 27-year-old man is intubated after a motor vehicle collision for a Glasgow Coma Scale score of 6 due to severe diffuse traumatic brain injury. Intracranial pressure monitoring shows a pressure of 28 mm Hg, so the ventilator rate is increased; intracranial pressure falls. Over the next several hours the rate is increased further and PaCO2 is now 20 mm Hg. Blood pressure, hemoglobin, and arterial oxygen saturation are unchanged, but brain tissue oxygen tension has progressively declined. Which of the following best explains the fall in brain tissue oxygen tension?",
+    "options": [
+      "Alkalemia has drawn water osmotically into the brain parenchyma",
+      "Oxygen free radical injury to neurons has increased oxygen consumption",
+      "Respiratory alkalosis has dilated cerebral arterioles and increased cerebral blood volume",
+      "Hypocapnia has increased cerebrospinal fluid production at the choroid plexus",
+      "Excessive cerebral arteriolar vasoconstriction has reduced cerebral blood flow below metabolic demand"
+    ],
+    "answerIndex": 4,
+    "explanation": "Hyperventilation lowers intracranial pressure by hypocapnic cerebral vasoconstriction, but the same mechanism causes ischemia when it is overdone: at a PaCO2 of 20 mm Hg, arteriolar constriction drops cerebral blood flow below the metabolic demand of already injured brain, so brain tissue oxygen tension falls. Hyperventilation should be targeted to a PaCO2 of about 30-35 mm Hg and used only briefly.",
+    "optionRationales": [
+      "Osmotic shifts of brain water reflect plasma osmolality and are the mechanism of mannitol and hypertonic saline; alkalemia does not pull water into the brain.",
+      "Cerebral metabolic demand is not increased by this strategy; the deficit is on the supply side, and hyperoxia has little effect on cerebral blood flow.",
+      "Alkalosis constricts cerebral arterioles rather than dilating them; it is hypercapnia and acidosis that vasodilate and increase cerebral blood volume.",
+      "CSF production is not meaningfully altered by PaCO2, and the problem here is inadequate oxygen delivery, not an expanding CSF compartment.",
+      "Cerebral arteriolar tone tracks PaCO2 closely, with cerebral blood flow falling roughly 2-4 percent for every 1 mm Hg decrease; at a PaCO2 of 20 mm Hg the constriction is severe enough that flow no longer meets oxygen demand, producing ischemia and a falling tissue oxygen tension."
+    ],
+    "concept": "Hyperventilation reduces intracranial pressure by shrinking the intracranial blood compartment through CO2-mediated vasoconstriction, and that same vasoconstriction is its hazard. Because cerebral blood flow falls with PaCO2, profound hypocapnia (below about 25-30 mm Hg) can drive flow below metabolic demand and infarct injured brain, so the target is a PaCO2 of 30-35 mm Hg. The effect is also short-lived: over hours, CSF bicarbonate is adjusted, perivascular pH normalizes, and vessel tone returns toward baseline, so hyperventilation is a bridge to definitive therapy (craniotomy, osmotic agents, CSF drainage, head elevation) and is weaned gradually to avoid rebound vasodilation and an ICP spike.",
+    "conceptRule": [
+      "Hyperventilation target PaCO2 30-35 mmHg; PaCO2 < 25 mmHg risks ischemic injury",
+      "Use only as a brief bridge to craniotomy, osmotherapy, or CSF drainage, not as sustained therapy",
+      "Effect wanes over hours as CSF bicarbonate normalizes perivascular pH",
+      "Wean gradually: abrupt return to normocapnia causes rebound vasodilation and an ICP spike",
+      "Falling brain tissue oxygen or jugular venous saturation during hyperventilation -> back off the minute ventilation"
+    ],
+    "discriminator": "Benefit and harm share one mechanism: mild hypocapnia (PaCO2 30-35 mm Hg) shrinks cerebral blood volume and lowers ICP, whereas profound hypocapnia (PaCO2 about 20 mm Hg) cuts cerebral blood flow below demand and causes ischemia.",
+    "mnemonic": "Thirty to thirty-five: enough to shrink the blood, not enough to starve the brain."
   },
   {
     "id": "neuro-intracranial-hemorrhage-trauma-icp-23",
@@ -2158,30 +2226,6 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Epidural/subdural with mass effect -> emergent craniotomy",
       "PaCO2 <25 mm Hg or prolonged hyperventilation -> cerebral ischemia (avoid)"
     ]
-  },
-  {
-    "id": "neuro-intracranial-hemorrhage-trauma-icp-26",
-    "system": "Intracranial Hemorrhage, Trauma & ICP",
-    "topic": "Hyperventilation lowers ICP mechanism",
-    "stem": "A 70-year-old man with a large traumatic subdural hematoma is intubated in the emergency department and briefly hyperventilated while the operating room is prepared. Which of the following best explains how hyperventilation lowers intracranial pressure?",
-    "options": [
-      "Hyperoxia reduces cerebral metabolic demand",
-      "Hypocapnia increases CSF absorption at the arachnoid granulations",
-      "Increased intrathoracic pressure improves venous return from the head",
-      "Hypocapnia causes cerebral arteriolar vasoconstriction, decreasing cerebral blood volume",
-      "Respiratory alkalosis draws water out of the brain parenchyma osmotically"
-    ],
-    "answerIndex": 3,
-    "explanation": "Lowering PaCO2 constricts cerebral resistance vessels, reducing cerebral blood flow and blood volume, which drops ICP within minutes.",
-    "optionRationales": [
-      "Oxygen tension has little effect on cerebral blood flow within the normal range and does not meaningfully lower ICP.",
-      "CSF absorption is not acutely altered by PaCO2; ICP reduction from hyperventilation is a vascular, not a CSF, effect.",
-      "Positive-pressure ventilation actually raises intrathoracic pressure and can impede jugular venous drainage, which if anything raises ICP.",
-      "Cerebral vessels are exquisitely CO2-responsive; a fall in PaCO2 raises perivascular pH, constricting arterioles and shrinking the intracranial blood compartment.",
-      "Osmotic dehydration of brain tissue is the mechanism of mannitol and hypertonic saline, not of hyperventilation."
-    ],
-    "concept": "Intracranial contents are blood, CSF, and brain within a fixed skull (Monro-Kellie). Hyperventilation reduces the blood compartment by CO2-mediated vasoconstriction, giving a rapid but short-lived ICP drop; excessive or prolonged hyperventilation risks ischemia, so it is a bridge to definitive therapy. Mannitol and hypertonic saline shrink the brain compartment osmotically, and an EVD drains the CSF compartment.",
-    "discriminator": "Hyperventilation targets the blood compartment via CO2 vasoconstriction, whereas osmotic agents target brain water; the question asks about hyperventilation specifically."
   },
   {
     "id": "neuro-intracranial-hemorrhage-trauma-icp-27",
@@ -2493,7 +2537,7 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Admission is unnecessary for a low-risk child who is acting normally.",
       "Skull films neither exclude intracranial injury nor change management.",
       "MRI is not part of the acute evaluation of minor pediatric head trauma.",
-      "Absence of every PECARN predictor puts the risk of clinically important TBI below 0.02%; observation with return precautions is appropriate."
+      "Absence of every PECARN predictor puts the risk of clinically important TBI at about 0.05%; observation with return precautions is appropriate."
     ],
     "concept": "PECARN identifies children at very low risk of clinically important TBI in whom CT can be safely avoided. Under age 2: GCS 15, acting normally, no LOC >=5 s, no severe mechanism (fall >3 ft, MVC ejection, high-impact object), no non-frontal scalp hematoma, no palpable skull fracture. Age 2 and older: GCS 15, no altered mental status, no LOC, no vomiting, no severe headache, no severe mechanism (fall >5 ft), no signs of basilar skull fracture. Frontal hematomas do not count as a predictor. In adults, the Canadian CT Head Rule triggers CT for GCS <15 at 2 h, suspected open or basilar skull fracture, >=2 vomiting episodes, age >=65, amnesia >30 min, or a dangerous mechanism.",
     "conceptRule": [
@@ -2989,37 +3033,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Recurrent hydrocephalus symptoms in a shunted, afebrile child point to mechanical shunt failure rather than shunt infection."
   },
   {
-    "id": "neuro-intracranial-hemorrhage-trauma-icp-58",
-    "system": "Intracranial Hemorrhage, Trauma & ICP",
-    "topic": "Warfarin reversal in ICH",
-    "stem": "A 74-year-old woman on warfarin for atrial fibrillation is brought in with acute headache, confusion, and right arm weakness. INR is 3.4. Non-contrast head CT shows a left frontal lobar hemorrhage. In addition to BP control, which of the following is the most appropriate immediate treatment?",
-    "options": [
-      "Intravenous vitamin K plus 4-factor prothrombin complex concentrate",
-      "Protamine sulfate",
-      "Platelet transfusion",
-      "Fresh frozen plasma alone",
-      "Idarucizumab"
-    ],
-    "answerIndex": 0,
-    "explanation": "Warfarin-associated ICH is reversed immediately with 4-factor PCC (rapid factor replacement) plus IV vitamin K (sustained reversal).",
-    "optionRationales": [
-      "4-factor PCC restores factors II, VII, IX, X within minutes and IV vitamin K prevents INR rebound; this is first-line for warfarin ICH.",
-      "Protamine reverses heparin (fully) and LMWH (partially), not vitamin K antagonists.",
-      "Platelet transfusion does not correct a factor deficiency and is not beneficial (may be harmful) even in antiplatelet-associated ICH.",
-      "FFP works but requires large volumes and hours to correct INR; PCC is faster and preferred, and vitamin K is still needed for durable reversal.",
-      "Idarucizumab is the specific reversal agent for dabigatran, not warfarin."
-    ],
-    "concept": "Match the reversal agent to the drug: warfarin -> IV vitamin K + 4-factor PCC (FFP if PCC unavailable); dabigatran -> idarucizumab; factor Xa inhibitors -> andexanet alfa (or PCC); heparin -> protamine. Platelet transfusion is not indicated for antiplatelet-associated ICH unless a neurosurgical procedure is planned.",
-    "conceptRule": [
-      "Warfarin ICH -> IV vitamin K 10 mg + 4-factor PCC",
-      "Dabigatran ICH -> idarucizumab",
-      "Apixaban/rivaroxaban ICH -> andexanet alfa (or 4-factor PCC)",
-      "Unfractionated heparin ICH -> protamine",
-      "Antiplatelet ICH -> no routine platelet transfusion"
-    ],
-    "discriminator": "The elevated INR on warfarin points to vitamin K-dependent factor deficiency, which PCC plus vitamin K corrects fastest."
-  },
-  {
     "id": "neuro-spinal-cord-radiculopathy-1",
     "system": "Spinal Cord & Radiculopathy",
     "topic": "ALS diagnostic features",
@@ -3163,30 +3176,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "The anterior spinal artery supplies the anterior two-thirds of the spinal cord, so its infarct causes bilateral corticospinal (paralysis) and spinothalamic (pain/temperature) deficits below the lesion with preserved dorsal column function. The mid-thoracic cord is a watershed zone dependent on the artery of Adamkiewicz, making it vulnerable during aortic surgery, dissection, and systemic hypotension.",
     "discriminator": "Preserved vibration and proprioception in a paraplegic patient with pain/temperature loss clinches anterior cord syndrome over a complete transverse lesion."
-  },
-  {
-    "id": "neuro-spinal-cord-radiculopathy-7",
-    "system": "Spinal Cord & Radiculopathy",
-    "topic": "Anterior spinal artery infarction",
-    "stem": "A 68-year-old man undergoes open repair of a thoracoabdominal aortic aneurysm. On awakening he cannot move his legs. Examination shows flaccid paraplegia, absent patellar and Achilles reflexes, loss of pain and temperature sensation below T10, and urinary retention. Vibration and joint-position sense in the toes are preserved. Occlusion or hypoperfusion of which of the following vessels best explains these findings?",
-    "options": [
-      "Posterior spinal arteries",
-      "Posterior inferior cerebellar artery",
-      "Anterior spinal artery",
-      "Vertebral artery",
-      "Internal iliac artery"
-    ],
-    "answerIndex": 2,
-    "explanation": "Aortic cross-clamping compromises the artery of Adamkiewicz, the dominant radicular feeder of the lower thoracic anterior spinal artery, infarcting the anterior two-thirds of the cord (corticospinal and spinothalamic tracts, anterior horns) while sparing the dorsal columns.",
-    "optionRationales": [
-      "Posterior spinal artery infarction would abolish vibration and proprioception (dorsal columns) while sparing motor function and pain/temperature.",
-      "PICA occlusion produces Wallenberg syndrome with facial and crossed body sensory loss, dysphagia, and ataxia.",
-      "The anterior spinal artery supplies the anterior two-thirds of the cord; its infarction produces paraplegia, dissociated loss of pain/temperature, and sphincter dysfunction with preserved vibration and proprioception.",
-      "Vertebral artery occlusion causes brainstem/cerebellar (lateral medullary) syndromes, not an isolated thoracic cord level.",
-      "Internal iliac hypoperfusion causes buttock claudication or pelvic ischemia, not a spinal cord level."
-    ],
-    "concept": "Spinal cord infarction most often involves the anterior spinal artery territory, and the classic setting is aortic surgery, dissection, or profound hypotension that compromises the artery of Adamkiewicz (usually arising from T9-L2 on the left). The syndrome is acute flaccid paraplegia (later spastic), bilateral loss of pain and temperature below the level, and bladder dysfunction, with the dorsal columns spared because they are fed by the posterior spinal arteries.",
-    "discriminator": "Preserved vibration and proprioception with loss of everything else below a level is the signature of anterior spinal artery territory infarction."
   },
   {
     "id": "neuro-spinal-cord-radiculopathy-8",
@@ -3500,6 +3489,36 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Arm-predominant weakness reflects a central cord process, while leg-first weakness suggests external compression."
   },
   {
+    "id": "neuro-spinal-cord-radiculopathy-59",
+    "system": "Spinal Cord & Radiculopathy",
+    "topic": "Delayed spinal cord ischemia after aortic repair",
+    "stem": "A 68-year-old man underwent open repair of a thoracoabdominal aortic aneurysm 18 hours ago. He moved both legs normally in the recovery room. Over the past hour he has become unable to lift either leg and has lost pain and temperature sensation below the umbilicus, although vibration and joint-position sense in the toes are preserved. He is afebrile and alert. Vasopressors were weaned 2 hours ago and blood pressure is now 102/58 mm Hg (mean arterial pressure 73 mm Hg). A lumbar cerebrospinal fluid drain placed before surgery is still in place but has been clamped. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Raise the mean arterial pressure to 90-100 mm Hg with vasopressors and open the lumbar drain to lower cerebrospinal fluid pressure",
+      "Repeat CT angiography of the aorta",
+      "Intravenous thrombolysis with alteplase",
+      "Intravenous high-dose dexamethasone",
+      "Emergent decompressive laminectomy"
+    ],
+    "answerIndex": 0,
+    "explanation": "Delayed paraplegia after thoracoabdominal aortic repair is anterior spinal artery territory ischemia from loss of segmental and collateral perfusion, and it classically appears when the blood pressure falls as vasopressors are weaned. Because spinal cord perfusion pressure equals mean arterial pressure minus cerebrospinal fluid pressure, the rescue is hemodynamic: augment the MAP and drain CSF. Deficits treated within hours often reverse.",
+    "optionRationales": [
+      "Spinal cord perfusion pressure is mean arterial pressure minus cerebrospinal fluid pressure, so driving the MAP to 90-100 mm Hg while draining CSF to about 10 mm Hg or less reopens flow through the remaining collateral network and frequently reverses a delayed deficit.",
+      "Repeat aortic imaging documents graft patency but does not treat the cord, and the deficit comes from sacrificed segmental arteries that no imaging study will change; obtaining it first wastes the narrow window for reversal.",
+      "Thrombolysis has no role in spinal cord ischemia and is contraindicated hours after a major open aortic reconstruction.",
+      "Corticosteroids reduce the vasogenic edema of a compressive tumor; they have no established benefit in ischemic cord injury and would delay the maneuvers that actually restore perfusion.",
+      "Decompressive laminectomy treats a mechanical lesion such as an epidural hematoma; nothing is compressing this cord, and an operation does not raise cord perfusion pressure."
+    ],
+    "concept": "Spinal cord ischemia complicates open thoracoabdominal aortic repair because segmental arteries feeding the anterior spinal artery (the artery of Adamkiewicz usually arises from T9-L2 on the left) are sacrificed or hypoperfused. The deficit is anterior cord in pattern (paraplegia, loss of pain and temperature, sphincter dysfunction, spared dorsal columns) and may be immediate or delayed by hours to days, typically triggered by a fall in blood pressure. Management is to restore cord perfusion pressure: MAP augmentation, CSF drainage, correction of anemia and hypoxemia, and keeping the patient flat.",
+    "conceptRule": [
+      "New paraparesis after thoracoabdominal aortic repair -> assume spinal cord ischemia and act within hours",
+      "Spinal cord perfusion pressure = MAP - CSF pressure -> raise MAP to 90-100 mm Hg and drain CSF to <=10 mm Hg",
+      "Also optimize oxygen delivery (transfuse anemia, correct hypoxemia) and lie the patient flat",
+      "Deficit with severe back pain plus anticoagulation or a neuraxial catheter -> image urgently for epidural hematoma, which is treated by surgical decompression instead"
+    ],
+    "discriminator": "Paraplegia that appears as vasopressors are weaned after aortic repair marks a perfusion-dependent cord, so the answer is to raise cord perfusion pressure (MAP up, CSF pressure down) rather than to give steroids, operate, or re-image the aorta."
+  },
+  {
     "id": "neuro-spinal-cord-radiculopathy-21",
     "system": "Spinal Cord & Radiculopathy",
     "topic": "Dermatomal sensory level",
@@ -3769,34 +3788,34 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Back pain that worsens lying down in a patient with a known malignancy is the red flag that distinguishes epidural metastasis from benign mechanical back pain."
   },
   {
-    "id": "neuro-spinal-cord-radiculopathy-32",
+    "id": "neuro-spinal-cord-radiculopathy-60",
     "system": "Spinal Cord & Radiculopathy",
-    "topic": "Metastatic cord compression steroids",
-    "stem": "A 71-year-old man with metastatic prostate cancer has 3 weeks of midback pain that is worse when lying down and 2 days of progressive bilateral leg weakness. Examination shows 4/5 strength in both legs, brisk patellar reflexes, bilateral Babinski signs, and a sensory level at T10. Which of the following is the most appropriate next step in management?",
+    "topic": "Metastatic cord compression imaging extent",
+    "stem": "A 64-year-old woman with metastatic breast cancer comes to the emergency department with 2 weeks of interscapular back pain that is worse when she lies flat and 3 days of progressive leg weakness. Examination shows 4/5 strength in both legs, brisk patellar reflexes, bilateral Babinski signs, and a sensory level at T4. She has already received a dose of intravenous high-dose dexamethasone. Which of the following is the most appropriate next step in management?",
     "options": [
-      "Intravenous high-dose dexamethasone",
-      "Plain radiographs of the thoracic spine",
-      "Emergency surgical decompression",
-      "Radiation oncology consultation",
-      "MRI of the entire spine"
+      "MRI of the entire spine",
+      "CT myelography of the thoracic spine",
+      "Radionuclide bone scan",
+      "Plain radiographs of the entire spine",
+      "MRI of the thoracic spine alone"
     ],
     "answerIndex": 0,
-    "explanation": "Suspected malignant epidural spinal cord compression is a neurologic emergency; give IV dexamethasone immediately to reduce vasogenic cord edema, then obtain urgent MRI of the whole spine to define the level and plan radiation or surgery.",
+    "explanation": "Once steroids have been given for suspected malignant epidural spinal cord compression, the diagnostic study is MRI of the whole spine rather than the symptomatic region: roughly a third of patients have epidural tumor at additional, often clinically silent, levels, and the clinical sensory level is an unreliable marker of the compressed segment.",
     "optionRationales": [
-      "Corticosteroids are given first because a new neurologic deficit means vasogenic cord edema is already compromising the cord; dexamethasone begins reducing that edema within hours and is started while imaging is being arranged.",
-      "Plain films miss a substantial fraction of epidural disease and never substitute for MRI in a patient with a deficit.",
-      "Surgery (followed by radiation) is considered for a single-level compression in a patient with good functional status, but it is a definitive therapy chosen after imaging, not the first step.",
-      "Radiotherapy is the definitive treatment for radiosensitive tumors or non-surgical candidates, but it also follows steroids and MRI.",
-      "Whole-spine MRI is the diagnostic test of choice and is obtained emergently, but arranging it must not delay the first dose of dexamethasone in a patient who already has a deficit."
+      "Imaging the cervical, thoracic, and lumbosacral spine in one study finds the synchronous multilevel epidural deposits present in about one-third of patients, so the radiation port or operative plan covers the entire extent of disease.",
+      "CT myelography is the substitute only when MRI is contraindicated or unavailable; it is invasive and a complete block can prevent contrast from opacifying levels beyond the lesion.",
+      "Bone scintigraphy detects osteoblastic bone metastases but does not demonstrate epidural tumor or cord compression and cannot guide radiation planning.",
+      "Plain films miss a substantial fraction of epidural disease and cannot show the cord or the epidural space at all.",
+      "Imaging only the symptomatic region misses those additional levels, and the sensory level can lie several segments away from the true site of compression."
     ],
-    "concept": "Epidural spinal cord compression from vertebral metastases (prostate, breast, lung, myeloma, lymphoma) presents with back pain worse when recumbent followed by weakness, a sensory level, and sphincter dysfunction. Ambulatory status at presentation predicts outcome, so treatment is sequenced for speed: high-dose IV dexamethasone immediately, urgent whole-spine MRI, then definitive therapy with radiation and/or surgical decompression.",
+    "concept": "Malignant epidural spinal cord compression (prostate, breast, lung, myeloma, lymphoma) is treated in a fixed sequence: high-dose IV dexamethasone immediately when there is a neurologic deficit, then urgent MRI of the ENTIRE spine, then definitive therapy. Whole-spine imaging is mandatory because about one-third of patients harbor epidural tumor at more than one level, many of those levels are asymptomatic, and the clinical sensory level localizes poorly; the additional levels change the radiation field and the surgical plan.",
     "conceptRule": [
-      "Known cancer + back pain + new myelopathy -> IV dexamethasone immediately",
-      "After steroids -> urgent MRI of the entire spine (multiple levels are common)",
-      "Single-level compression, good functional status, expected survival >3 months -> surgical decompression then radiation",
-      "Radiosensitive tumor, multilevel disease, or poor surgical candidate -> radiation therapy"
+      "Known cancer + back pain + new myelopathy -> IV dexamethasone first, then imaging",
+      "Image the ENTIRE spine by MRI (cervical, thoracic, lumbosacral) - about one-third have additional, often silent, epidural levels",
+      "MRI contraindicated or unavailable -> CT myelography, accepting that a complete block limits what is seen beyond the lesion",
+      "After imaging -> radiation for radiosensitive tumors or multilevel disease; decompressive surgery then radiation for single-level compression with good functional status"
     ],
-    "discriminator": "Back pain that worsens when lying down in a patient with known cancer is the red flag for epidural metastasis rather than mechanical back pain."
+    "discriminator": "Because the sensory level does not reliably mark the compressed segment and multiple epidural deposits are common, the imaging must cover the whole spine rather than the symptomatic region alone."
   },
   {
     "id": "neuro-spinal-cord-radiculopathy-33",
@@ -4602,7 +4621,8 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Mild/moderate symptoms, no motor deficit -> nocturnal neutral wrist splint + activity modification",
       "Splinting fails -> corticosteroid injection into carpal tunnel",
       "Thenar atrophy / weakness / severe NCS / injection fails -> surgical carpal tunnel release",
-      "NSAIDs, oral steroids, diuretics -> not effective, wrong answer"
+      "NSAIDs, diuretics, pyridoxine -> no proven benefit, wrong answer",
+      "Oral steroids -> short-term benefit only; still the wrong answer because local injection into the carpal tunnel is preferred"
     ],
     "discriminator": "Absence of thenar atrophy or weakness keeps management conservative, so injection rather than surgery follows failed splinting."
   },
@@ -4655,28 +4675,28 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Because immobility drives CRPS, early graded mobilization, not rest or invasive sympathectomy, is the correct first step."
   },
   {
-    "id": "neuro-peripheral-nerve-plexus-10",
+    "id": "neuro-peripheral-nerve-plexus-55",
     "system": "Peripheral Nerve & Plexus",
     "topic": "Cubital tunnel syndrome treatment",
-    "stem": "A 34-year-old computer programmer has 3 months of numbness and tingling of the medial forearm, ring finger, and little finger, worse at night and when talking on the phone with the elbow bent. Examination shows decreased sensation over the palmar and dorsal surfaces of the ulnar hand and over the medial forearm, and mild weakness of finger abduction; tapping posterior to the medial epicondyle reproduces the paresthesias. Which of the following is the most appropriate initial treatment?",
+    "stem": "A 34-year-old computer programmer has 3 months of numbness and tingling of the ring finger and little finger, worse at night and when talking on the phone with the elbow bent. Examination shows decreased sensation over the palmar and dorsal surfaces of the ulnar hand and mild weakness of finger abduction; tapping posterior to the medial epicondyle reproduces the paresthesias. Which of the following is the most appropriate initial treatment?",
     "options": [
+      "Ulnar nerve transposition surgery",
+      "Nocturnal elbow extension splint",
       "Wrist splint in neutral position",
       "Triamcinolone injection into the carpal tunnel",
-      "Ulnar nerve transposition surgery",
-      "Oral gabapentin",
-      "Nocturnal elbow extension splint"
+      "Oral gabapentin"
     ],
-    "answerIndex": 4,
-    "explanation": "Ulnar paresthesias that include the dorsal ulnar hand and the medial forearm and are provoked by elbow flexion, with a positive Tinel sign behind the medial epicondyle, localize to cubital tunnel syndrome, treated first with activity modification and a nighttime elbow splint that prevents flexion.",
+    "answerIndex": 1,
+    "explanation": "Ulnar paresthesias that include the dorsal ulnar hand and are provoked by elbow flexion, with a positive Tinel sign behind the medial epicondyle, localize to cubital tunnel syndrome, treated first with activity modification and a nighttime elbow splint that prevents flexion.",
     "optionRationales": [
-      "A wrist splint is first-line for carpal tunnel syndrome (median nerve), which spares the ulnar digits, the dorsal hand, and the medial forearm.",
-      "Steroid injection into the carpal tunnel is the step after a failed wrist splint in carpal tunnel syndrome, not for an elbow lesion.",
       "Surgical decompression/transposition is reserved for refractory cases with progressive weakness or wasting, not the initial step.",
-      "Neuropathic pain medications do not treat the mechanical entrapment and are not first-line for a focal compression neuropathy.",
-      "Correct: keeping the elbow extended at night relieves traction/compression of the ulnar nerve in the cubital tunnel and is first-line on the shelf."
+      "Correct: keeping the elbow extended at night relieves traction/compression of the ulnar nerve in the cubital tunnel and is first-line on the shelf.",
+      "A wrist splint is first-line for carpal tunnel syndrome (median nerve), which spares the ulnar digits and the dorsal ulnar hand.",
+      "Steroid injection into the carpal tunnel is the step after a failed wrist splint in carpal tunnel syndrome, not for an elbow lesion.",
+      "Neuropathic pain medications do not treat the mechanical entrapment and are not first-line for a focal compression neuropathy."
     ],
-    "concept": "Cubital tunnel syndrome is ulnar nerve entrapment at the elbow: paresthesias of the 4th-5th digits, the dorsal ulnar hand (the dorsal cutaneous branch leaves the nerve about 5 cm above the wrist), and the medial forearm, worsened by prolonged elbow flexion. Think of it as \"carpal tunnel on the ulnar side\"; management parallels carpal tunnel (splint first, surgery last) but the splint goes on the elbow, not the wrist.",
-    "discriminator": "Ulnar-distribution symptoms that extend onto the dorsal ulnar hand and the medial forearm and worsen with elbow flexion point to the cubital tunnel rather than the wrist or the carpal tunnel."
+    "concept": "Cubital tunnel syndrome is ulnar nerve entrapment at the elbow: paresthesias of the 4th-5th digits and the dorsal ulnar hand (the dorsal cutaneous branch leaves the nerve about 5 cm above the wrist), worsened by prolonged elbow flexion; the medial forearm is supplied by the medial antebrachial cutaneous nerve off the medial cord and is spared, so medial forearm sensory loss indicates a lower trunk/C8-T1 lesion instead. Think of it as \"carpal tunnel on the ulnar side\"; management parallels carpal tunnel (splint first, surgery last) but the splint goes on the elbow, not the wrist.",
+    "discriminator": "Ulnar-distribution symptoms that extend onto the dorsal ulnar hand and worsen with elbow flexion point to the cubital tunnel rather than Guyon canal; sparing of the medial forearm excludes the lower trunk or C8 root."
   },
   {
     "id": "neuro-peripheral-nerve-plexus-11",
@@ -4813,16 +4833,16 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Lower trunk of the brachial plexus"
     ],
     "answerIndex": 1,
-    "explanation": "Ulnar sensory loss confined to the palmar 4th-5th digits and hypothenar area with a positive Froment sign, sparing the medial forearm and dorsal ulnar hand, localizes to the wrist (Guyon canal), classically from handlebar compression or hook of hamate fracture.",
+    "explanation": "Ulnar sensory loss confined to the palmar 4th-5th digits and hypothenar area with a positive Froment sign and a spared dorsal ulnar hand localizes to the wrist (Guyon canal), classically from handlebar compression or hook of hamate fracture; the normal medial forearm excludes a C8 root or lower trunk lesion.",
     "optionRationales": [
       "C8 radiculopathy would involve the medial forearm dermatome and often neck pain, and would not spare the dorsal hand.",
-      "Correct: the dorsal cutaneous and medial forearm territories are spared, so compression is distal at the wrist, typical of cyclists and hamate fractures.",
+      "Correct: the dorsal cutaneous branch territory is spared, so compression is distal at the wrist, typical of cyclists and hamate fractures.",
       "Carpal tunnel affects the lateral 3.5 digits and thenar region and would not cause a Froment sign.",
-      "A cubital tunnel lesion is proximal, so it would additionally numb the dorsum of the ulnar hand, because the dorsal cutaneous branch leaves the ulnar nerve about 5 cm above the wrist, and would produce medial forearm paresthesias.",
+      "A cubital tunnel lesion is proximal, so it would additionally numb the dorsum of the ulnar hand, because the dorsal cutaneous branch leaves the ulnar nerve about 5 cm above the wrist; it would still spare the medial forearm, which is supplied by the medial antebrachial cutaneous nerve.",
       "A lower trunk lesion (e.g., Klumpke) causes combined median- and ulnar-innervated intrinsic hand weakness with medial arm and forearm sensory loss."
     ],
-    "concept": "Localize ulnar lesions by the branches spared: the dorsal cutaneous branch leaves ~5 cm proximal to the wrist, so intact dorsal ulnar hand sensation (and intact medial forearm sensation) means a wrist-level lesion. Froment sign reflects adductor pollicis weakness, with the median-innervated flexor pollicis longus substituting.",
-    "discriminator": "Preserved sensation over the dorsal ulnar hand and medial forearm clinches Guyon canal (wrist) over cubital tunnel (elbow)."
+    "concept": "Localize ulnar lesions by the branches spared: the dorsal cutaneous branch leaves ~5 cm proximal to the wrist, so intact dorsal ulnar hand sensation means a wrist-level lesion. The medial forearm is supplied by the medial antebrachial cutaneous nerve off the medial cord, so it is spared by ulnar lesions at either the elbow or the wrist and its involvement instead points to a C8 root or lower trunk lesion. Froment sign reflects adductor pollicis weakness, with the median-innervated flexor pollicis longus substituting.",
+    "discriminator": "Preserved sensation over the dorsum of the ulnar hand is what clinches Guyon canal (wrist) over cubital tunnel (elbow); the medial forearm is spared in both and does not separate them."
   },
   {
     "id": "neuro-peripheral-nerve-plexus-17",
@@ -6604,28 +6624,28 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Infantile hypotonia plus massive cardiomegaly with a short PR interval distinguishes Pompe from spinal muscular atrophy, which has a floppy baby with tongue fasciculations but a normal heart."
   },
   {
-    "id": "neuro-neuromuscular-junction-muscle-37",
+    "id": "neuro-neuromuscular-junction-muscle-44",
     "system": "Neuromuscular Junction & Muscle",
     "topic": "Repetitive stimulation localization",
-    "stem": "A 63-year-old man with a 40-pack-year smoking history has 4 months of difficulty rising from a chair that improves after a few attempts, dry mouth, and absent knee reflexes that reappear after 10 seconds of quadriceps contraction. Low-frequency (3 Hz) repetitive nerve stimulation shows a decremental response; after 10 seconds of maximal voluntary contraction, the compound muscle action potential amplitude increases by 250%. Which of the following is the most likely site of the primary defect?",
+    "stem": "A 28-year-old woman has 3 months of drooping eyelids and double vision that are absent on waking and worst by evening. She has never smoked and has no dry mouth, constipation, or other autonomic symptoms. Examination shows fatigable bilateral ptosis after 60 seconds of sustained upgaze and a variable ocular misalignment; limb strength and deep tendon reflexes are normal throughout. Repetitive nerve stimulation of a facial nerve shows a normal baseline compound muscle action potential amplitude with a 22% decrement at 3 Hz; after 10 seconds of maximal voluntary contraction the decrement only partially repairs, and the CMAP amplitude never exceeds baseline. Which of the following is the most likely site of the primary defect?",
     "options": [
+      "Muscle membrane sodium channels",
       "Acetylcholinesterase in the synaptic cleft",
       "Postsynaptic nicotinic acetylcholine receptors",
-      "Muscle membrane sodium channels",
-      "Presynaptic voltage-gated calcium channels",
-      "Anterior horn cell"
+      "Anterior horn cell",
+      "Presynaptic voltage-gated calcium channels"
     ],
-    "answerIndex": 3,
-    "explanation": "Marked post-exercise facilitation (>100% CMAP increment), proximal weakness that improves with use, autonomic dry mouth, and facilitating reflexes indicate Lambert-Eaton myasthenic syndrome, caused by antibodies against presynaptic P/Q-type voltage-gated calcium channels, usually paraneoplastic from small cell lung cancer.",
+    "answerIndex": 2,
+    "explanation": "A normal baseline CMAP amplitude with a low-frequency (3 Hz) decrement that only partially repairs after brief maximal exercise, with no increment above baseline, localizes the lesion to the postsynaptic membrane; in a young woman with fatigable ptosis and diplopia and no autonomic features this is myasthenia gravis, an antibody-mediated loss of postsynaptic nicotinic acetylcholine receptors.",
     "optionRationales": [
-      "Acetylcholinesterase deficiency (congenital) or organophosphate poisoning causes repetitive CMAPs after a single stimulus and cholinergic excess, not marked facilitation.",
-      "Postsynaptic receptor loss (myasthenia gravis) gives a decremental response on low-frequency stimulation without a large post-exercise increment, and weakness worsens rather than improves with use.",
-      "Sodium channelopathies produce myotonia or periodic paralysis with a normal repetitive stimulation response between attacks.",
-      "Correct: reduced presynaptic calcium entry limits quantal ACh release; brief exercise or high-frequency stimulation accumulates calcium in the terminal and transiently restores release, producing the incremental response.",
-      "Anterior horn cell disease (ALS) produces fasciculations and denervation on EMG without a decrement-increment pattern on repetitive stimulation."
+      "Sodium channelopathies of the sarcolemma cause myotonia or episodic flaccid paralysis with normal repetitive stimulation between attacks, not fluctuating ptosis and diplopia.",
+      "Acetylcholinesterase deficiency (congenital endplate AChE deficiency) or organophosphate poisoning produces repetitive CMAPs after a single stimulus plus cholinergic excess (miosis, secretions, cramps), not an isolated fatigable ocular syndrome.",
+      "Correct: loss of postsynaptic acetylcholine receptors lowers the endplate safety factor, so the first CMAP is normal but successive 3 Hz stimuli decrement as presynaptic stores deplete, and brief exercise repairs the decrement only partially and never drives the amplitude above baseline.",
+      "Anterior horn cell disease produces fasciculations, denervation on needle EMG, and upper motor neuron signs rather than fatigable extraocular and eyelid weakness with a reversible decrement.",
+      "A presynaptic calcium channel defect (Lambert-Eaton) would give a low baseline CMAP that increments well above baseline after 10 seconds of exercise, plus autonomic symptoms such as dry mouth and reflexes that are absent but facilitate; none of that is present here."
     ],
-    "concept": "Repetitive nerve stimulation differentiates pre- from postsynaptic neuromuscular junction disorders. Both show a decrement at low frequency (3 Hz), but presynaptic disorders show facilitation after brief maximal exercise or high-frequency (20-50 Hz) stimulation because calcium accumulates in the terminal; the increment is marked in Lambert-Eaton (>100%, often far higher) and usually more modest in botulism, whereas postsynaptic myasthenia gravis shows only partial post-exercise repair of the decrement. Edrophonium improves MG dramatically but Lambert-Eaton only minimally.",
-    "discriminator": "A post-exercise CMAP increment greater than 100% is the electrophysiologic signature of a presynaptic defect and separates Lambert-Eaton from myasthenia gravis."
+    "concept": "Repetitive nerve stimulation separates postsynaptic from presynaptic neuromuscular junction disease. Postsynaptic disease (myasthenia gravis) shows a normal baseline CMAP, a decrement greater than 10% at 2-3 Hz, only partial repair after 10 seconds of maximal contraction (never an increment above baseline), and post-exercise exhaustion at 2-4 minutes. Presynaptic disease (Lambert-Eaton, botulism) shows a low baseline CMAP with a marked increment after brief exercise or 20-50 Hz stimulation. Single-fiber EMG is the most sensitive test in either case but is not specific for localization.",
+    "discriminator": "A normal baseline CMAP with a 3 Hz decrement that only partially repairs and never overshoots baseline is the signature of a postsynaptic receptor defect, whereas a low baseline CMAP that increments above baseline after exercise is presynaptic."
   },
   {
     "id": "neuro-neuromuscular-junction-muscle-38",
@@ -6974,20 +6994,20 @@ export const NEURO_MCQS: McqQuestion[] = [
     "topic": "CNS vs PNS remyelination",
     "stem": "A 34-year-old woman has two neurologic events 1 year apart: first, painful monocular vision loss that left her with a persistent afferent pupillary defect and reduced acuity, and later, an acute left facial droop involving the forehead that recovered fully within 3 months. Which statement best explains the difference in recovery?",
     "options": [
-      "The facial nerve lesion was cortical and recovered through cortical plasticity",
-      "Facial nerve axons regrow at 10 cm per day, allowing rapid recovery",
-      "The optic nerve has no blood supply of its own and cannot support repair",
-      "The optic nerve is myelinated by Schwann cells, which cannot proliferate after injury",
-      "The optic nerve is myelinated by oligodendrocytes, which regenerate myelin poorly, whereas the facial nerve is myelinated by Schwann cells, which remyelinate effectively"
+      "The optic nerve lesion was peripheral, whereas the facial lesion was cortical and recovered by plasticity",
+      "The optic nerve lacks its own blood supply, whereas the facial nerve is richly perfused",
+      "Facial nerve axons regrow at 10 cm daily, whereas optic nerve axons regrow at 1 mm",
+      "Optic nerve Schwann cells cannot proliferate, whereas facial nerve oligodendrocytes divide readily",
+      "Optic nerve oligodendrocytes remyelinate poorly, whereas facial nerve Schwann cells remyelinate and guide regrowth"
     ],
     "answerIndex": 4,
     "explanation": "The optic nerve is a CNS tract myelinated by oligodendrocytes, which regenerate myelin ineffectively, so optic neuritis can leave permanent deficits; the facial nerve is a peripheral nerve myelinated by Schwann cells, which remyelinate and support axonal regrowth.",
     "optionRationales": [
-      "Forehead involvement means the facial lesion was a lower motor neuron (peripheral) lesion, not cortical.",
-      "Peripheral axons regrow at roughly 1 mm per day, not 10 cm per day; recovery here is mainly from Schwann cell remyelination.",
-      "The optic nerve is supplied by the ophthalmic artery and its branches; vascular supply is not the reason for poor recovery.",
-      "The optic nerve is a CNS extension myelinated by oligodendrocytes, not Schwann cells.",
-      "Correct: oligodendrocyte-myelinated CNS pathways (optic nerve) recover poorly, whereas Schwann cell-myelinated peripheral nerves (facial nerve) remyelinate and regenerate."
+      "Both halves are wrong: the optic nerve is central, and forehead involvement makes the facial lesion lower motor neuron (peripheral) rather than cortical.",
+      "The optic nerve is supplied by branches of the ophthalmic artery; perfusion differs little between the two nerves and is not why recovery differed.",
+      "Peripheral axons regrow at roughly 1 mm per day, not 10 cm; the figures are inverted and optic nerve axons do not effectively regenerate at all.",
+      "Reversed: oligodendrocytes myelinate the optic nerve (a CNS tract) and Schwann cells myelinate the facial nerve, not the other way around.",
+      "Correct: the optic nerve is a CNS tract whose oligodendrocytes remyelinate poorly, while facial nerve Schwann cells remyelinate and guide axonal regrowth, so only the facial palsy resolved."
     ],
     "concept": "Regenerative capacity differs by myelinating cell: Schwann cells in the PNS proliferate, clear debris, remyelinate, and guide axonal regrowth (about 1 mm/day), so peripheral lesions such as Bell palsy or GBS can recover substantially. Oligodendrocytes in the CNS remyelinate poorly and CNS injury is followed by astrocytic gliosis, so lesions of the optic nerve (a CNS tract) and other central pathways tend to leave permanent deficits.",
     "discriminator": "Permanent visual loss after optic neuritis versus full recovery of a peripheral facial palsy in the same patient hinges on oligodendrocyte (CNS) versus Schwann cell (PNS) remyelination."
@@ -7070,20 +7090,20 @@ export const NEURO_MCQS: McqQuestion[] = [
     "topic": "Fingolimod first-dose monitoring",
     "stem": "A 30-year-old woman with relapsing-remitting multiple sclerosis is about to start fingolimod, an oral sphingosine-1-phosphate receptor modulator that sequesters lymphocytes in lymph nodes. She has no cardiac history and takes no rate-slowing medications. Which of the following is the most appropriate precaution when the first dose is given?",
     "options": [
-      "Check complete blood count for lymphopenia weekly",
-      "Administer prophylactic diphenhydramine and acetaminophen",
-      "Measure liver enzymes 2 hours after the dose",
-      "Obtain serum JC virus antibody titer",
-      "Observe in clinic for at least 6 hours with hourly pulse and blood pressure checks and an ECG before and after the dose"
+      "Serum liver enzymes drawn 2 hours after the first dose is given",
+      "JC virus antibody serology before dosing to stratify the risk of PML",
+      "Six hours of in-clinic observation with hourly vital signs and post-dose ECG",
+      "Premedication with diphenhydramine and acetaminophen to prevent an infusion reaction",
+      "Weekly complete blood counts for the first month to detect lymphopenia"
     ],
-    "answerIndex": 4,
+    "answerIndex": 2,
     "explanation": "Fingolimod activates S1P receptors on atrial myocytes, causing transient bradycardia and possible AV block after the first dose, so patients are monitored for at least 6 hours with ECG at baseline and end of observation.",
     "optionRationales": [
-      "Lymphopenia is expected with fingolimod (the mechanism), but it is monitored periodically, not weekly, and is not a first-dose concern.",
-      "Premedication for infusion reactions applies to monoclonal antibody infusions such as ocrelizumab.",
       "Hepatotoxicity is monitored with periodic liver tests over months, not hours after dosing.",
       "JC virus serology is the pre-treatment screen for natalizumab, not for fingolimod.",
-      "Correct: first-dose bradycardia and AV conduction slowing peak within about 6 hours of dosing, so the first dose is given with in-clinic observation for at least 6 hours plus pre- and post-dose ECGs."
+      "Correct: first-dose bradycardia and AV conduction slowing peak within about 6 hours of dosing, so the first dose is given with in-clinic observation for at least 6 hours plus pre- and post-dose ECGs.",
+      "Premedication for infusion reactions applies to monoclonal antibody infusions such as ocrelizumab.",
+      "Lymphopenia is expected with fingolimod (the mechanism), but it is monitored periodically, not weekly, and is not a first-dose concern."
     ],
     "concept": "Fingolimod is an S1P receptor modulator that traps lymphocytes in lymph nodes. Its testable adverse effects are first-dose bradycardia/heart block (6-hour cardiac monitoring; avoid in recent MI or high-grade heart block), macular edema (baseline and 3-4 month ophthalmologic exam), and increased infection risk including VZV; check varicella immunity before starting. Newer S1P modulators differ: ozanimod and ponesimod use dose titration instead of routine first-dose observation, and siponimod requires first-dose monitoring only with pre-existing cardiac conduction disease.",
     "discriminator": "Six-hour in-clinic cardiac observation with the first dose is specific to fingolimod; other MS disease-modifying drugs, including the titrated S1P modulators ozanimod and ponesimod, do not require it."
@@ -8896,7 +8916,7 @@ export const NEURO_MCQS: McqQuestion[] = [
       "14-3-3 protein supports CJD, a rapidly progressive dementia with myoclonus in adults.",
       "Juvenile myoclonic epilepsy causes morning myoclonic jerks in adolescents without opsoclonus or ataxia."
     ],
-    "concept": "Opsoclonus-myoclonus syndrome is an autoimmune brainstem-cerebellar disorder with chaotic saccadic eye movements, myoclonus, ataxia, and irritability. In children it is paraneoplastic from neuroblastoma; in adults it can accompany small cell lung or breast cancer or follow infection. Treatment is tumor removal plus immunotherapy (steroids, IVIG, rituximab).",
+    "concept": "Opsoclonus-myoclonus syndrome is an autoimmune brainstem-cerebellar disorder with chaotic saccadic eye movements, myoclonus, ataxia, and irritability. In children roughly half of cases are paraneoplastic from neuroblastoma; the rest are parainfectious or idiopathic. In adults it can accompany small cell lung or breast cancer or follow infection. Treatment is tumor removal plus immunotherapy (steroids, IVIG, rituximab).",
     "discriminator": "Opsoclonus (multidirectional chaotic saccades) accompanying myoclonus in a toddler is the feature that mandates a neuroblastoma search."
   },
   {
@@ -9534,11 +9554,11 @@ export const NEURO_MCQS: McqQuestion[] = [
     "optionRationales": [
       "Benzodiazepines worsen delirium in the elderly and are reserved for alcohol or benzodiazepine withdrawal.",
       "EEG would only show diffuse slowing, the nonspecific delirium pattern, and is used when nonconvulsive status is suspected, not to guide this decision.",
-      "Haloperidol is a rescue option for dangerous agitation but has its own anticholinergic and QT effects and does not remove the cause.",
+      "Haloperidol is a rescue option for dangerous agitation but has its own extrapyramidal and QT-prolonging effects and does not remove the cause.",
       "Physostigmine is reserved for severe anticholinergic toxicity (e.g., intentional overdose with hemodynamic instability or intractable agitation), not therapeutic-dose iatrogenic delirium, and it is avoided when a tricyclic is involved because of the risk of bradyasystole and seizures.",
       "Correct: first-generation antihistamines and tricyclics have strong antimuscarinic effects that precipitate confusion, urinary retention, and ileus in older adults; discontinuation is the treatment."
     ],
-    "concept": "Medications are the most common modifiable cause of delirium in the elderly; the highest-risk agents are anticholinergics (diphenhydramine, tricyclics, oxybutynin, antipsychotics), benzodiazepines, opioids, and corticosteroids. Anticholinergic delirium shows 'anti-DUMBBELSS' features, including dry mucosa, mydriasis, urinary retention, and ileus, and the management is medication withdrawal.",
+    "concept": "Medications are the most common modifiable cause of delirium in the elderly; the highest-risk agents are anticholinergics (diphenhydramine, tricyclics, oxybutynin, low-potency and sedating antipsychotics such as chlorpromazine, olanzapine, clozapine, quetiapine), benzodiazepines, opioids, and corticosteroids. Anticholinergic delirium shows 'anti-DUMBBELSS' features, including dry mucosa, mydriasis, urinary retention, and ileus, and the management is medication withdrawal.",
     "discriminator": "Dry flushed skin, mydriasis, ileus, and urinary retention accompanying the confusion point to an anticholinergic drug effect rather than infection or withdrawal.",
     "mnemonic": "Anti-DUMBBELSS: anticholinergics produce the opposite of cholinergic DUMBBELSS (Diarrhea, Urination, Miosis, Bradycardia, Bronchoconstriction, neuromuscular Excitation, Lacrimation, Salivation, Sweating), i.e. constipation/ileus, urinary retention, mydriasis, tachycardia, dry mouth and dry skin"
   },
@@ -9614,25 +9634,25 @@ export const NEURO_MCQS: McqQuestion[] = [
     "concept": "Genetically determined early-onset Alzheimer disease (<65) is driven by amyloid overproduction: extra APP gene dosage in trisomy 21, or autosomal dominant mutations in APP, PSEN1, or PSEN2 (presenilin is the catalytic core of the gamma-secretase that cleaves APP). Most early-onset cases are nonetheless sporadic. Late-onset sporadic disease is instead modulated by risk alleles, chiefly ApoE4 (ApoE2 is protective)."
   },
   {
-    "id": "neuro-dementia-delirium-encephalopathy-7",
+    "id": "neuro-dementia-delirium-encephalopathy-56",
     "system": "Dementia, Delirium & Encephalopathy",
     "topic": "ARIA with anti-amyloid antibody",
-    "stem": "A 73-year-old woman with early Alzheimer disease receiving infusions every 2 weeks of a monoclonal antibody directed against amyloid-beta develops headache, confusion, and visual blurring 8 weeks into treatment. Blood pressure is 126/78 mm Hg and she takes no immunosuppressants. MRI FLAIR shows new asymmetric vasogenic edema in the parieto-occipital cortex, and gradient echo reveals several new cortical microhemorrhages. Which of the following is the most likely diagnosis?",
+    "stem": "A 73-year-old woman with early Alzheimer disease receiving lecanemab infusions every 2 weeks develops headache, confusion, and visual blurring 8 weeks into treatment. Blood pressure is 126/78 mm Hg and she takes no immunosuppressants. MRI FLAIR shows new asymmetric vasogenic edema in the parieto-occipital cortex, and gradient echo reveals several new cortical microhemorrhages. Which of the following is the most likely diagnosis?",
     "options": [
       "Cerebral venous sinus thrombosis",
-      "Herpes simplex encephalitis",
-      "Amyloid-related imaging abnormalities",
       "Posterior reversible encephalopathy syndrome",
-      "Acute ischemic stroke"
+      "Herpes simplex encephalitis",
+      "Acute ischemic stroke",
+      "Amyloid-related imaging abnormalities"
     ],
-    "answerIndex": 2,
+    "answerIndex": 4,
     "explanation": "New vasogenic edema (ARIA-E) and microhemorrhages (ARIA-H) shortly after starting an anti-amyloid antibody (lecanemab, donanemab) are the signature complication, most common in ApoE4 homozygotes.",
     "optionRationales": [
       "Venous thrombosis causes edema and hemorrhage in a venous territory with a filling defect on venography, without the treatment link.",
-      "HSV encephalitis causes fever and medial temporal lobe involvement, not parieto-occipital edema tied to infusions.",
-      "Correct: edema plus microbleeds temporally linked to amyloid-clearing antibody therapy defines ARIA, which usually resolves with holding the drug.",
       "PRES produces similar posterior edema but requires a trigger such as severe hypertension, eclampsia, or a calcineurin inhibitor; she is normotensive on no such drug, and PRES does not cause new cortical microhemorrhages.",
-      "Ischemic stroke causes cytotoxic (restricted diffusion) rather than vasogenic edema and would not produce scattered microhemorrhages."
+      "HSV encephalitis causes fever and medial temporal lobe involvement, not parieto-occipital edema tied to infusions.",
+      "Ischemic stroke causes cytotoxic (restricted diffusion) rather than vasogenic edema and would not produce scattered microhemorrhages.",
+      "Correct: edema plus microbleeds temporally linked to amyloid-clearing antibody therapy defines ARIA, which usually resolves with holding the drug."
     ],
     "concept": "Anti-amyloid monoclonal antibodies modestly slow decline in early Alzheimer disease but cause amyloid-related imaging abnormalities: ARIA-E (vasogenic edema) and ARIA-H (microhemorrhage/siderosis). Risk is highest in ApoE4 homozygotes and with anticoagulation. Baseline and surveillance MRI are required; symptomatic ARIA warrants pausing therapy and sometimes corticosteroids.",
     "discriminator": "Vasogenic edema with new microhemorrhages appearing weeks after starting an amyloid-directed antibody is ARIA, whereas PRES requires a hypertensive or drug trigger."
@@ -10570,28 +10590,29 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Effort-dependent, inconsistent test performance (fails then succeeds when encouraged) plus overt mood symptoms clinches pseudodementia over Alzheimer disease."
   },
   {
-    "id": "neuro-dementia-delirium-encephalopathy-45",
+    "id": "neuro-dementia-delirium-encephalopathy-57",
     "system": "Dementia, Delirium & Encephalopathy",
-    "topic": "Pseudodementia of depression",
-    "stem": "A 76-year-old woman is brought by her daughter for 2 months of forgetfulness that began after her husband's death. She sleeps poorly, has lost 5 kg, and has stopped attending church. During testing she frequently answers 'I don't know' and gives up quickly; when asked to draw a clock she initially refuses but completes it correctly when encouraged. She recalls 0 of 3 objects spontaneously but identifies all 3 from a list of choices. Neurologic examination is normal. Which of the following is the most appropriate next step?",
+    "topic": "Pseudodementia: retrieval vs encoding deficit",
+    "stem": "A 76-year-old woman is brought by her daughter for 2 months of forgetfulness that began after her husband's death. She sleeps poorly, has lost 5 kg, and has stopped attending church. During cognitive testing she frequently answers 'I don't know' and gives up quickly. Her Mini-Mental State Examination score is 22/30: she recalls 0 of 3 objects spontaneously at 5 minutes but identifies all 3 correctly when given a list of choices. Neurologic examination is normal. Which of the following findings best distinguishes this patient's condition from Alzheimer disease?",
     "options": [
-      "Treat depression with an SSRI and reassess cognition",
-      "Start donepezil",
-      "Refer for neuropsychological testing for Alzheimer disease",
-      "Obtain MRI of the brain and CSF amyloid studies",
-      "Start memantine"
+      "A normal neurologic examination",
+      "Onset of symptoms after a bereavement",
+      "Inability to recall any of 3 objects spontaneously",
+      "Recall of all 3 objects when given a list of choices",
+      "Mini-Mental State Examination score of 22/30"
     ],
-    "answerIndex": 0,
-    "explanation": "Subacute cognitive complaints after a loss, with poor effort, 'I don't know' answers, and recall that normalizes with cueing or encouragement, indicate depressive pseudodementia; treating the depression restores cognition.",
+    "answerIndex": 3,
+    "explanation": "Free recall that normalizes on recognition testing shows the information was encoded and stored but could not be retrieved - the retrieval deficit of depressive pseudodementia. Alzheimer disease is a medial temporal encoding/storage failure, so cues and multiple-choice lists do not improve recall.",
     "optionRationales": [
-      "Correct: the cognitive deficit is a manifestation of major depression; antidepressant therapy (or psychotherapy) followed by re-testing is the appropriate step.",
-      "Donepezil is for Alzheimer disease, in which recall does not improve with cueing and the course is gradual over years.",
-      "Formal testing is not the first step when the history and bedside pattern already indicate depression; it also risks mislabeling a treatable condition.",
-      "Structural and biomarker workup is reasonable if deficits persist after mood treatment, but the pattern here points to depression rather than a neurodegenerative process.",
-      "Memantine is an NMDA antagonist for moderate to severe Alzheimer disease and has no role here."
+      "A normal neurologic examination is expected in both early Alzheimer disease and pseudodementia, so it does not discriminate.",
+      "A bereavement raises suspicion for depression but is not diagnostic: a stressful loss also commonly unmasks a previously compensated dementia.",
+      "Impaired spontaneous recall is present in both conditions; only the response to cueing separates them.",
+      "Correct: intact recognition with failed free recall localizes the deficit to retrieval (depression, and subcortical disease generally), whereas in Alzheimer disease the material is never consolidated, so cueing and recognition lists do not help.",
+      "An MMSE of 22/30 quantifies how impaired she is, not why; the identical score occurs in mild Alzheimer disease."
     ],
-    "concept": "Depression in older adults can present as cognitive decline (pseudodementia): abrupt onset with a clear precipitant, prominent mood and vegetative symptoms, poor effort with 'I don't know' responses, and a retrieval deficit that improves with cues or prompting. True dementia shows insidious onset, confabulation or minimization, an encoding deficit unaided by cueing, and progression. Treat the depression first and reassess before pursuing a dementia workup.",
-    "discriminator": "Recall that normalizes with cueing or multiple-choice recognition, along with a task completed once encouraged, marks depressive pseudodementia over Alzheimer disease, where cues do not help."
+    "concept": "Memory failure is localized by the response to cueing. A retrieval deficit (depressive pseudodementia, subcortical and frontal-subcortical disease) spares encoding, so free recall is poor but recognition or category cues restore performance. An encoding/storage deficit (Alzheimer disease, hippocampal injury) means the trace was never laid down, so recognition testing and cues fail as badly as free recall. Poor effort, 'I don't know' answers, prominent mood and vegetative symptoms, and a subacute onset with a precipitant support the depressive pattern.",
+    "discriminator": "Recall that normalizes with multiple-choice recognition marks a retrieval failure (depressive pseudodementia); recall that stays impaired despite cueing marks the encoding failure of Alzheimer disease.",
+    "mnemonic": "Cues help = retrieval problem (depression); cues don't help = encoding problem (Alzheimer)"
   },
   {
     "id": "neuro-dementia-delirium-encephalopathy-46",
@@ -11212,30 +11233,6 @@ export const NEURO_MCQS: McqQuestion[] = [
       "SV2A binding is the mechanism of levetiracetam."
     ],
     "concept": "The 3-Hz spike-and-wave of absence epilepsy is generated by thalamocortical circuits whose burst firing depends on T-type calcium channels. Ethosuximide is the classic T-type calcium channel blocker and the one antiseizure drug whose mechanism is routinely tested."
-  },
-  {
-    "id": "neuro-seizures-epilepsy-17",
-    "system": "Seizures & Epilepsy",
-    "topic": "Ethosuximide mechanism",
-    "stem": "A 7-year-old girl has multiple daily episodes of staring with eyelid fluttering lasting 10 seconds, provoked in clinic by hyperventilation. EEG shows generalized 3-Hz spike-and-wave discharges. The drug of choice for this condition acts primarily by which of the following mechanisms?",
-    "options": [
-      "Increased duration of GABA-A chloride channel opening",
-      "Inhibition of GABA transaminase",
-      "Binding to synaptic vesicle protein SV2A",
-      "Blockade of thalamic T-type calcium channels",
-      "Prolongation of sodium-channel inactivation"
-    ],
-    "answerIndex": 3,
-    "explanation": "Childhood absence epilepsy is treated first-line with ethosuximide, which blocks T-type calcium channels in thalamic relay neurons and disrupts the thalamocortical oscillations that generate 3-Hz spike-and-wave discharges.",
-    "optionRationales": [
-      "Barbiturates prolong GABA-A chloride channel opening; they are used for refractory status epilepticus, not absence.",
-      "Vigabatrin inhibits GABA transaminase and is used for infantile spasms; it aggravates absence seizures.",
-      "SV2A binding is the mechanism of levetiracetam, a broad-spectrum agent but not first-line for pure absence epilepsy.",
-      "Ethosuximide (first-line for absence) blocks thalamic T-type calcium currents; valproate shares this action among its multiple mechanisms.",
-      "Sodium-channel blockers such as phenytoin and carbamazepine are ineffective for absence and can worsen it."
-    ],
-    "concept": "Absence seizures arise from abnormal thalamocortical rhythms driven by T-type calcium channels in thalamic neurons. Ethosuximide is first-line for childhood absence epilepsy (fewer side effects than valproate); valproate is chosen when absence coexists with generalized tonic-clonic seizures. Lamotrigine is a third option.",
-    "mnemonic": "EThosuximide blocks T-type calcium channels in the thalamus - the T is in the name."
   },
   {
     "id": "neuro-seizures-epilepsy-18",
@@ -11993,6 +11990,28 @@ export const NEURO_MCQS: McqQuestion[] = [
     ]
   },
   {
+    "id": "neuro-seizures-epilepsy-59",
+    "system": "Seizures & Epilepsy",
+    "topic": "Responsive neurostimulation for bilateral temporal epilepsy",
+    "stem": "A 33-year-old man has focal impaired-awareness seizures 6-8 times a month despite adherent, adequately dosed trials of levetiracetam, lamotrigine, and lacosamide. MRI shows bilateral hippocampal atrophy with increased T2/FLAIR signal. Scalp video-EEG is nonlocalizing, so bilateral hippocampal depth electrodes are placed; over 10 days they capture nine habitual seizures, five beginning in the right hippocampus and four beginning independently in the left. Neuropsychological testing shows impairment of both verbal and visual memory. Which of the following is the most appropriate treatment?",
+    "options": [
+      "Corpus callosotomy",
+      "Addition of a fourth antiseizure drug",
+      "Responsive neurostimulation with bilateral hippocampal depth leads",
+      "Anterior temporal lobectomy with amygdalohippocampectomy on the side of the more frequent onsets"
+    ],
+    "answerIndex": 2,
+    "explanation": "Intracranial recording shows independent bilateral mesial temporal onsets, so there is no single resectable focus and resection would remove functioning memory tissue without stopping the contralateral generator. Responsive neurostimulation, in which depth leads in both hippocampi detect epileptiform onsets and deliver stimulation to abort them, is FDA-approved for drug-resistant focal epilepsy arising from one or two seizure-onset zones and is the appropriate option here; it is palliative, with median seizure reduction rising from roughly 45% at 1 year to 70-75% after several years, and it does not impair memory.",
+    "optionRationales": [
+      "Corpus callosotomy is a palliative disconnection for drop attacks (atonic and tonic seizures), typically in Lennox-Gastaut syndrome; it does not treat focal mesial temporal seizures.",
+      "He already meets the definition of drug-resistant epilepsy after two appropriate failed drugs, and a further agent yields seizure freedom in under 5% of such patients while surgical options exist.",
+      "Correct: when seizures arise independently from one or two non-resectable foci, responsive neurostimulation targets each onset zone directly with closed-loop stimulation, progressively reduces seizure frequency, and avoids the memory morbidity of bilateral mesial temporal surgery.",
+      "Resection requires a single, well-localized focus: with independent bilateral hippocampal onsets, removing one temporal lobe leaves the contralateral generator intact, and taking the remaining hippocampus in a patient who already has bilateral atrophy and bilateral memory impairment risks severe amnesia."
+    ],
+    "concept": "Once drug-resistant focal epilepsy is confirmed, presurgical evaluation asks whether a single resectable focus exists. If it does (for example unilateral mesial temporal sclerosis concordant with ictal EEG), resection is curative in 60-70%. If it does not - independent bilateral foci, multifocal onset, or a focus in eloquent cortex - treatment shifts to palliative neuromodulation: responsive neurostimulation for one or two identified onset zones (including bilateral hippocampi), deep brain stimulation of the anterior nucleus of the thalamus for more diffuse focal epilepsy, and vagus nerve stimulation when no onset zone can be localized at all. Neuromodulation reduces seizure frequency, with benefit that grows over years, but rarely produces seizure freedom.",
+    "discriminator": "Independent bilateral hippocampal onsets with bilateral memory impairment exclude resection, and responsive neurostimulation is the only listed option that can target both onset zones."
+  },
+  {
     "id": "neuro-seizures-epilepsy-49",
     "system": "Seizures & Epilepsy",
     "topic": "Routine EEG sensitivity after first seizure",
@@ -12109,30 +12128,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     ]
   },
   {
-    "id": "neuro-seizures-epilepsy-53",
-    "system": "Seizures & Epilepsy",
-    "topic": "Temporal lobectomy vs VNS",
-    "stem": "A 29-year-old woman with drug-resistant focal epilepsy undergoes video-EEG monitoring that captures five seizures, all arising from the left anterior temporal region. MRI shows left mesial temporal sclerosis, and Wada testing shows right-hemisphere language dominance with adequate right-sided memory support. Which of the following offers the greatest likelihood of long-term seizure freedom?",
-    "options": [
-      "Anterior temporal lobectomy with amygdalohippocampectomy",
-      "Addition of a third antiseizure drug",
-      "Responsive neurostimulation of the left hippocampus",
-      "Corpus callosotomy",
-      "Vagus nerve stimulation"
-    ],
-    "answerIndex": 0,
-    "explanation": "For mesial temporal lobe epilepsy with concordant MRI, EEG, and functional data, anterior temporal lobectomy yields seizure freedom in roughly 60-70% of patients (versus about 8% with continued medical therapy in randomized trials) and is the treatment of choice.",
-    "optionRationales": [
-      "Correct: a single, well-localized, resectable temporal focus with concordant testing makes resective surgery the most effective option.",
-      "Fewer than 5% of patients become seizure-free with further drug trials after two failures.",
-      "Responsive neurostimulation is used when the focus cannot be resected (eloquent cortex or bilateral independent temporal foci); it is palliative, not curative.",
-      "Callosotomy is a palliative procedure for drop attacks (atonic seizures), typically in Lennox-Gastaut syndrome, not for focal temporal epilepsy.",
-      "VNS reduces seizure frequency by about 50% in half of patients but rarely produces seizure freedom; it is reserved for patients who are not resection candidates."
-    ],
-    "concept": "When drug-resistant epilepsy has a single resectable focus concordant across MRI, ictal EEG, and neuropsychological/Wada data, resective surgery (most commonly anterior temporal lobectomy for mesial temporal sclerosis) is the most effective therapy. Neuromodulation (vagus nerve stimulation, responsive neurostimulation, deep brain stimulation) and callosotomy are palliative options for non-resectable, multifocal, or generalized epilepsies.",
-    "discriminator": "Concordant unilateral temporal findings with a safe memory/language profile favor resection over palliative stimulation devices."
-  },
-  {
     "id": "neuro-seizures-epilepsy-54",
     "system": "Seizures & Epilepsy",
     "topic": "Todd paralysis",
@@ -12227,6 +12222,31 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "Valproate adverse effects: hepatotoxicity (highest risk under age 2 and with polytherapy), pancreatitis, dose-related thrombocytopenia, tremor, weight gain, hair loss, PCOS features, neural tube defects, and hyperammonemic encephalopathy that can occur with normal transaminases. Check ammonia in any valproate-treated patient with new encephalopathy.",
     "discriminator": "Asterixis and encephalopathy with normal transaminases in a valproate user is hyperammonemia, not hepatotoxicity."
+  },
+  {
+    "id": "neuro-seizures-epilepsy-60",
+    "system": "Seizures & Epilepsy",
+    "topic": "Valproate versus ethosuximide in mixed generalized epilepsy",
+    "stem": "A 9-year-old girl with childhood absence epilepsy has had complete resolution of her staring spells on ethosuximide for the past 6 months. She is brought in after a witnessed generalized tonic-clonic seizure at school, her second in 3 months. Repeat EEG shows 3-Hz spike-and-wave discharges and, in addition, generalized polyspike-and-wave. Her neurologist plans to stop ethosuximide and start valproate. Which of the following best explains why valproate rather than ethosuximide suits her current seizure pattern?",
+    "options": [
+      "Ethosuximide lowers the seizure threshold by inhibiting GABA transaminase",
+      "Valproate suppresses the 3-Hz thalamocortical oscillation, which ethosuximide does not",
+      "Ethosuximide develops tachyphylaxis after several months of continuous use",
+      "Valproate adds sodium-channel and GABAergic actions, whereas ethosuximide blocks only thalamic T-type calcium channels",
+      "Valproate achieves higher central nervous system penetration than ethosuximide"
+    ],
+    "answerIndex": 3,
+    "explanation": "Ethosuximide's only clinically relevant action is blockade of T-type calcium currents in thalamic relay neurons, which aborts the thalamocortical oscillation underlying absence seizures but gives no protection against generalized tonic-clonic seizures. Valproate blocks T-type currents as well, but also prolongs sodium-channel inactivation and enhances GABAergic transmission, making it broad-spectrum and the drug of choice once absence and generalized tonic-clonic seizures coexist.",
+    "optionRationales": [
+      "GABA transaminase inhibition is the mechanism of vigabatrin, and ethosuximide does not lower the seizure threshold - it simply lacks efficacy against tonic-clonic seizures.",
+      "Ethosuximide is the prototypical suppressor of the 3-Hz thalamocortical oscillation and valproate shares that action, so this does not distinguish the two drugs.",
+      "Ethosuximide does not undergo tachyphylaxis, and her absence seizures remain fully controlled; the new problem is a seizure type the drug never covered.",
+      "Valproate's several mechanisms - T-type blockade plus sodium-channel inactivation and increased GABAergic transmission - cover generalized tonic-clonic seizures, while ethosuximide's isolated T-type action covers absence alone.",
+      "Both drugs reach therapeutic brain concentrations; breadth of mechanism, not central nervous system penetration, is what separates them."
+    ],
+    "concept": "Absence seizures are generated by T-type calcium-channel-driven thalamocortical rhythms, and ethosuximide is first-line for pure childhood absence epilepsy because it blocks those currents with fewer adverse effects than valproate. Ethosuximide is narrow-spectrum, however, so when absence coexists with generalized tonic-clonic seizures the broad-spectrum agent valproate is preferred; lamotrigine is an alternative, and levetiracetam or lamotrigine is favored over valproate in adolescent girls and women of childbearing potential because of valproate's teratogenicity, weight gain, and hepatotoxicity.",
+    "discriminator": "Ethosuximide treats absence only, so the appearance of a generalized tonic-clonic seizure - not loss of absence control - is what forces the switch to a broad-spectrum drug.",
+    "mnemonic": "EThosuximide covers the T-type channel and nothing else; VALproate adds VALue (sodium channels and GABA), so it covers tonic-clonic seizures too."
   },
   {
     "id": "neuro-seizures-epilepsy-58",
@@ -12448,6 +12468,37 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Temporal artery biopsy -> within 1-2 weeks of starting steroids; negative biopsy does not exclude GCA (skip lesions)"
     ],
     "discriminator": "Jaw claudication with a high ESR in a patient over 50 is the feature that separates giant cell arteritis from temporomandibular joint disorder and tension-type headache."
+  },
+  {
+    "id": "neuro-headache-facial-pain-44",
+    "system": "Headache & Facial Pain",
+    "topic": "Headache red flags: systemic symptoms and immunosuppression",
+    "stem": "A 41-year-old man with HIV who stopped antiretroviral therapy and all prophylaxis 2 years ago has 3 weeks of progressively worsening generalized headache with fevers to 38.7 C (101.7 F) and a 7-kg weight loss. Over the past 4 days he has become intermittently confused and has developed a left hemiparesis. CD4 count is 42/uL and Toxoplasma gondii IgG is positive. MRI with gadolinium shows three ring-enhancing lesions with surrounding edema, the largest in the right basal ganglia. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Whole-brain radiotherapy for primary CNS lymphoma",
+      "High-dose trimethoprim-sulfamethoxazole alone",
+      "Four-drug antituberculous therapy",
+      "Empiric pyrimethamine, sulfadiazine, and leucovorin with repeat MRI in 2 weeks",
+      "Stereotactic brain biopsy of the basal ganglia lesion"
+    ],
+    "answerIndex": 3,
+    "explanation": "Fever, weight loss, and immunosuppression are the systemic-symptom red flag that makes this headache secondary until proven otherwise, and contrast MRI has already been obtained. Multiple ring-enhancing lesions favoring the basal ganglia in a patient with AIDS (CD4 <100/uL) who is off prophylaxis and Toxoplasma IgG positive are cerebral toxoplasmosis; the standard approach is an empiric trial of pyrimethamine plus sulfadiazine with leucovorin and repeat imaging at about 2 weeks, reserving biopsy for lesions that fail to respond.",
+    "optionRationales": [
+      "Primary CNS lymphoma is the main alternative, but it is suggested by a solitary periventricular lesion in a patient who is Toxoplasma IgG negative or already taking trimethoprim-sulfamethoxazole prophylaxis, and it is never irradiated before tissue diagnosis or a failed empiric trial.",
+      "Trimethoprim-sulfamethoxazole is prophylaxis against toxoplasmosis (and Pneumocystis) once the CD4 count falls below 100-200/uL, not the treatment regimen for established cerebral toxoplasmosis.",
+      "A tuberculoma can also ring-enhance, but there is no exposure history, pulmonary disease, or basilar meningitis, and committing to antituberculous therapy would delay treatment of the far more likely toxoplasmosis.",
+      "Correct: pyrimethamine plus sulfadiazine (with leucovorin to prevent pyrimethamine-induced myelosuppression) is the treatment of cerebral toxoplasmosis, and clinical plus radiographic improvement on repeat MRI at roughly 2 weeks confirms the diagnosis without tissue.",
+      "Biopsy is the step only when the lesions fail to improve after about 2 weeks of empiric antitoxoplasma therapy, or when the picture already favors lymphoma; it is invasive and unnecessary when serology and lesion pattern point to a treatable infection."
+    ],
+    "concept": "The systemic limb of the headache red flags covers constitutional symptoms (fever, weight loss, night sweats) and secondary risk factors such as HIV, transplant immunosuppression, or known malignancy; any of these turns a new headache into a secondary headache requiring contrast-enhanced MRI. In advanced HIV the ring-enhancing lesion differential is toxoplasmosis versus primary CNS lymphoma: toxoplasmosis is typically multiple lesions in the basal ganglia or gray-white junction with positive Toxoplasma IgG in a patient off prophylaxis, and is treated empirically with pyrimethamine, sulfadiazine, and leucovorin; primary CNS lymphoma (EBV-driven, CD4 <100/uL) is typically a solitary lesion in a patient who is IgG negative or already on trimethoprim-sulfamethoxazole and is diagnosed by biopsy.",
+    "conceptRule": [
+      "New headache with fever, weight loss, or immunosuppression -> secondary headache; contrast MRI, never a primary-headache label",
+      "HIV + CD4 <100/uL + off prophylaxis + Toxo IgG positive + multiple ring-enhancing lesions -> empiric pyrimethamine + sulfadiazine + leucovorin",
+      "Repeat MRI at ~2 weeks: lesions shrink -> toxoplasmosis confirmed; no response -> stereotactic biopsy for CNS lymphoma",
+      "Solitary ring-enhancing lesion in a patient on trimethoprim-sulfamethoxazole or Toxo IgG negative -> primary CNS lymphoma"
+    ],
+    "discriminator": "Multiple ring-enhancing lesions with positive Toxoplasma serology in a patient off prophylaxis justify an empiric drug trial, whereas a solitary lesion in a patient already taking trimethoprim-sulfamethoxazole points to primary CNS lymphoma and biopsy.",
+    "mnemonic": "Toxo is treated, lymphoma is biopsied: multiple rings plus IgG positive -> treat and re-image at 2 weeks; no shrinkage -> tissue."
   },
   {
     "id": "neuro-headache-facial-pain-9",
@@ -12742,27 +12793,34 @@ export const NEURO_MCQS: McqQuestion[] = [
     "concept": "Migraine typically improves in pregnancy, but attacks that do occur are treated with acetaminophen first, adding metoclopramide for nausea; sumatriptan is considered a reasonable second-line option. NSAIDs are acceptable only before 20 weeks (most comfortably in the second trimester) and are avoided from 20 weeks onward because of oligohydramnios and, near term, premature ductus arteriosus closure; ergots, valproate, and topiramate are contraindicated. Any new or atypical headache in pregnancy, or any headache with elevated blood pressure, must be evaluated as secondary (preeclampsia, CVST, PRES, pituitary apoplexy) rather than treated as migraine."
   },
   {
-    "id": "neuro-headache-facial-pain-20",
+    "id": "neuro-headache-facial-pain-45",
     "system": "Headache & Facial Pain",
-    "topic": "Migraine in pregnancy",
-    "stem": "A 29-year-old woman at 10 weeks' gestation has a 12-year history of migraine without aura previously aborted with sumatriptan. She asks what she should take for an acute attack now. Which of the following is the most appropriate first-line agent?",
+    "topic": "Migraine prophylaxis in pregnancy",
+    "stem": "A 29-year-old woman at 10 weeks' gestation has a 12-year history of migraine without aura that she previously aborted with sumatriptan, which she stopped when she learned she was pregnant. Over the past month she has had 8 disabling attacks; two required intravenous fluids for vomiting, and acetaminophen with metoclopramide has not controlled them. Blood pressure is 118/72 mm Hg. Which of the following is the most appropriate preventive therapy?",
     "options": [
       "Valproate",
-      "Acetaminophen",
-      "Sumatriptan",
+      "Propranolol",
       "Ergotamine",
-      "Naproxen"
+      "Daily scheduled sumatriptan",
+      "Topiramate"
     ],
     "answerIndex": 1,
-    "explanation": "Acetaminophen is the first-line acute migraine treatment in pregnancy; NBME explicitly tests switching a woman from sumatriptan to acetaminophen once pregnant.",
+    "explanation": "When attacks are frequent or disabling despite acute therapy, prophylaxis is added; in pregnancy the preferred preventive is propranolol (low-dose amitriptyline is the alternative), because valproate and topiramate are teratogenic and triptans and ergots are avoided.",
     "optionRationales": [
-      "Valproate is teratogenic (neural tube defects) and is a prophylactic, not an abortive, agent.",
-      "Correct: acetaminophen is safe throughout pregnancy and is the preferred first-line analgesic, with metoclopramide added for nausea.",
-      "Triptans are generally avoided in pregnancy on the shelf (limited safety data, vasoconstriction), though sumatriptan may be considered if acetaminophen fails in real practice.",
-      "Ergot alkaloids are contraindicated in pregnancy because they are uterotonic and vasoconstrictive.",
-      "NSAIDs are avoided in the first trimester (miscarriage association) and after 20 weeks (ductus arteriosus constriction, oligohydramnios)."
+      "Valproate is the most teratogenic choice here, causing neural tube defects and impaired neurodevelopment, and is contraindicated in pregnancy.",
+      "Correct: propranolol is the preventive of choice for migraine in pregnancy, with the fetus monitored for growth restriction and the drug tapered near delivery to avoid neonatal bradycardia and hypoglycemia.",
+      "Ergot alkaloids are abortive rather than preventive and are contraindicated in pregnancy because they are uterotonic and vasoconstrictive.",
+      "Triptans are abortive agents, so scheduled daily dosing does not prevent attacks and causes medication-overuse headache; they are also generally avoided in pregnancy because of vasoconstriction and limited safety data.",
+      "Topiramate is avoided in pregnancy because of oral clefts and fetal growth restriction."
     ],
-    "concept": "Migraine usually improves in pregnancy, but attacks that occur are treated with acetaminophen first and metoclopramide for nausea. Avoid triptans and ergots (vasoconstriction), NSAIDs in the first trimester and after 20 weeks' gestation, and teratogenic prophylactics like valproate and topiramate. If prophylaxis is needed in pregnancy, propranolol or low-dose amitriptyline are the usual choices."
+    "concept": "Migraine usually improves as pregnancy advances, and acute attacks are treated with acetaminophen first, with metoclopramide for nausea. When attacks remain frequent or disabling, prophylaxis is warranted, and propranolol is first-line in pregnancy with low-dose amitriptyline as the alternative. Valproate (neural tube defects, impaired neurodevelopment) and topiramate (oral clefts, growth restriction) are contraindicated; triptans and ergots vasoconstrict and are avoided, and ergots are additionally uterotonic.",
+    "conceptRule": [
+      "Frequent or disabling attacks despite acute therapy -> add prophylaxis",
+      "Prophylaxis needed in pregnancy -> propranolol first-line, low-dose amitriptyline alternative",
+      "Valproate or topiramate in pregnancy -> contraindicated (teratogenic)",
+      "Triptans and ergots -> abortive, not preventive, and avoided in pregnancy"
+    ],
+    "discriminator": "The question asks for prevention rather than abortive therapy, so the pregnancy filter is applied to the prophylactic list, which eliminates valproate and topiramate and leaves propranolol."
   },
   {
     "id": "neuro-headache-facial-pain-21",
@@ -12815,38 +12873,8 @@ export const NEURO_MCQS: McqQuestion[] = [
       "The ring also contains estrogen and is contraindicated.",
       "The patch delivers estrogen and carries the same contraindication as the pill."
     ],
-    "concept": "Migraine with aura roughly doubles ischemic stroke risk, and combined hormonal contraception (pill, patch, ring) multiplies it further, so estrogen-containing methods are contraindicated (CDC MEC category 4) in any woman with migraine with aura. Progestin-only methods and the copper IUD remain acceptable. Migraine without aura is category 2 (benefits outweigh risks) under age 35 and category 3 at age 35 or older.",
+    "concept": "Migraine with aura roughly doubles ischemic stroke risk, and combined hormonal contraception (pill, patch, ring) multiplies it further, so estrogen-containing methods are contraindicated (CDC MEC category 4) in any woman with migraine with aura. Progestin-only methods and the copper IUD remain acceptable. Migraine without aura is category 2 for initiating combined hormonal contraception and category 3 for continuing it, with age >=35 and smoking adding further risk.",
     "discriminator": "The scintillating scotoma preceding the headache marks this as migraine with aura, which is what makes estrogen (not contraception in general) the problem."
-  },
-  {
-    "id": "neuro-headache-facial-pain-23",
-    "system": "Headache & Facial Pain",
-    "topic": "New headache over 50 with red flags",
-    "stem": "A 58-year-old man with no prior headache history has 6 weeks of progressively worsening dull headache that wakes him from sleep and is worst on rising in the morning, accompanied by vomiting. He denies jaw pain or scalp tenderness. Examination shows bilateral disc swelling and a mild left pronator drift. Which of the following is the most appropriate next step?",
-    "options": [
-      "Overnight polysomnography",
-      "Trial of amitriptyline for chronic tension-type headache",
-      "Erythrocyte sedimentation rate and temporal artery biopsy",
-      "Lumbar puncture with opening pressure",
-      "MRI brain with and without gadolinium"
-    ],
-    "answerIndex": 4,
-    "explanation": "New progressive headache after age 50 that wakes the patient, is worse in the morning with vomiting, and is accompanied by papilledema and a focal deficit meets multiple SNOOP red flags and demands contrast-enhanced MRI to find a mass lesion.",
-    "optionRationales": [
-      "Obstructive sleep apnea causes morning headache but not papilledema, vomiting, or a focal deficit.",
-      "Tension-type headache does not wake the patient, cause vomiting, or produce papilledema; a new headache after 50 should not be labeled primary without imaging.",
-      "Giant cell arteritis is a consideration in any new headache over 50, but jaw claudication, scalp tenderness, and visual loss are absent, and GCA does not cause bilateral papilledema with pronator drift.",
-      "LP is contraindicated before imaging when papilledema and a focal deficit are present because of herniation risk from a mass.",
-      "Correct: contrast MRI is the best test for an intracranial mass (tumor, metastasis, abscess) suggested by raised-ICP pattern headache plus papilledema and a focal sign."
-    ],
-    "concept": "SNOOP red flags convert a headache from primary to secondary until proven otherwise: Systemic symptoms or immunosuppression, Neurologic deficits, Onset thunderclap, Older age (>50) at onset, and Pattern change (progressive, positional, exertional, awakening from sleep) or pregnancy/postpartum. Any red flag warrants neuroimaging, with contrast MRI preferred for subacute or chronic presentations and noncontrast CT for acute thunderclap or trauma.",
-    "conceptRule": [
-      "Any SNOOP red flag -> neuroimaging before labeling a primary headache",
-      "Acute thunderclap or trauma -> noncontrast CT first",
-      "Subacute/progressive, focal deficit, papilledema, or immunosuppression -> MRI brain with gadolinium",
-      "Papilledema, focal deficit, seizure, or altered mentation -> image before any LP"
-    ],
-    "mnemonic": "SNOOP: Systemic symptoms, Neurologic deficits, Onset sudden, Older age >50, Pattern change/Positional/Progressive/Pregnancy"
   },
   {
     "id": "neuro-headache-facial-pain-24",
@@ -13375,28 +13403,29 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Oscillopsia with bilaterally abnormal head impulse tests and no vertigo identifies bilateral vestibulopathy, whereas a unilateral vestibular lesion causes vertigo with unidirectional nystagmus."
   },
   {
-    "id": "neuro-vertigo-hearing-cranial-nerves-2",
+    "id": "neuro-vertigo-hearing-cranial-nerves-57",
     "system": "Vertigo, Hearing & Cranial Nerves",
-    "topic": "Aminoglycoside vestibulotoxicity",
-    "stem": "A 62-year-old man in week 3 of gentamicin plus vancomycin for enterococcal endocarditis reports that the room spins when he turns his head and that he cannot read street signs while walking. Hearing is intact. Head-impulse test is abnormal bilaterally. Which of the following best explains his symptoms?",
+    "topic": "Aminoglycoside cochleotoxicity vs vestibulotoxicity",
+    "stem": "A 47-year-old man is in month 4 of an amikacin-containing regimen for multidrug-resistant pulmonary tuberculosis. He reports constant high-pitched ringing in both ears and says he can no longer hear his phone ringing or his grandchildren's voices, although conversation in a quiet room is still clear. He denies any spinning sensation, his gait is steady, and street signs stay sharp when he walks. Audiometry shows symmetric bilateral high-frequency sensorineural hearing loss; the head-impulse test is normal. Which of the following best explains his hearing loss?",
     "options": [
-      "Septic embolus to the labyrinthine artery",
-      "Toxic destruction of vestibular hair cells",
-      "Endolymphatic hydrops",
-      "Infarction of the cerebellar vermis",
-      "Otolith displacement into the posterior semicircular canal"
+      "Endolymphatic hydrops distending the cochlear duct",
+      "Compression of the cochlear nerve by a cerebellopontine angle mass",
+      "Toxic injury to vestibular hair cells in the cristae ampullares",
+      "Fixation of the stapes footplate at the oval window",
+      "Destruction of outer hair cells in the basal turn of the cochlea"
     ],
-    "answerIndex": 1,
-    "explanation": "Aminoglycosides accumulate in inner ear hair cells; gentamicin is predominantly vestibulotoxic, producing bilateral vestibular loss with oscillopsia (blurred vision with head movement) and imbalance, often before any hearing loss.",
+    "answerIndex": 4,
+    "explanation": "Aminoglycosides accumulate in inner ear hair cells and kill them irreversibly, but which end organ is hit depends on the drug: amikacin (like kanamycin and neomycin) is predominantly cochleotoxic, destroying outer hair cells in the basal turn of the cochlea, which encodes high frequencies. The result is bilateral, symmetric high-frequency SNHL with tinnitus and preserved vestibular function, so the head-impulse test is normal. Gentamicin and streptomycin instead damage vestibular hair cells and cause oscillopsia and imbalance with intact hearing.",
     "optionRationales": [
-      "A labyrinthine artery embolus would cause acute unilateral vertigo with deafness, not bilateral symmetric vestibular loss with preserved hearing.",
-      "Gentamicin kills vestibular hair cells; bilateral loss produces oscillopsia and a bilaterally positive head-impulse test, and vancomycin co-administration increases the risk.",
-      "Hydrops is Meniere disease, which causes episodic vertigo with fluctuating low-frequency hearing loss and aural fullness.",
-      "A cerebellar stroke would give truncal ataxia and central nystagmus, not a peripheral bilateral head-impulse abnormality.",
-      "Canalith displacement causes BPPV, brief positional vertigo with a positive Dix-Hallpike, not bilateral vestibular hypofunction on head-impulse testing."
+      "Hydrops (Meniere disease) causes episodic vertigo with fluctuating low-frequency hearing loss and aural fullness, not steady high-frequency loss during prolonged aminoglycoside therapy.",
+      "A cerebellopontine angle tumor causes unilateral progressive loss with word recognition disproportionately worse than the pure-tone loss, not symmetric bilateral high-frequency loss.",
+      "Vestibular hair-cell toxicity is the gentamicin and streptomycin pattern; it causes oscillopsia, imbalance, and a bilaterally abnormal head-impulse test, none of which this patient has.",
+      "Stapes fixation (otosclerosis) produces a conductive loss with bone conduction better than air conduction, typically beginning at low frequencies, not a symmetric high-frequency sensorineural loss.",
+      "Amikacin concentrates in cochlear hair cells and kills the outer hair cells of the basal turn first, so the earliest and most severe loss is bilateral, symmetric, and at high frequencies, with normal vestibular testing."
     ],
-    "concept": "Aminoglycoside ototoxicity is dose- and duration-dependent, irreversible, and potentiated by loop diuretics, vancomycin, and renal impairment. Gentamicin and streptomycin are mainly vestibulotoxic (oscillopsia, imbalance, bilateral head-impulse abnormality); amikacin, kanamycin, and neomycin are mainly cochleotoxic (high-frequency SNHL). Monitor trough levels and renal function and keep cumulative dose and duration as low as possible; extended-interval (once-daily) dosing lowers nephrotoxicity but does not reliably prevent ototoxicity.",
-    "discriminator": "Oscillopsia with a bilaterally abnormal head-impulse test and preserved hearing in a patient on prolonged gentamicin identifies vestibular hair-cell toxicity rather than BPPV or Meniere disease."
+    "concept": "Aminoglycoside ototoxicity is dose- and duration-dependent, irreversible, and potentiated by loop diuretics, vancomycin, and renal impairment. The drug predicts the end organ: gentamicin and streptomycin are mainly vestibulotoxic (oscillopsia, imbalance, bilaterally abnormal head-impulse test, hearing often preserved), while amikacin, kanamycin, and neomycin are mainly cochleotoxic (bilateral high-frequency SNHL and tinnitus with normal head-impulse testing). Cochlear injury starts in the basal (high-frequency) turn, so prolonged courses such as MDR tuberculosis therapy are monitored with baseline and serial audiometry. Monitor trough levels and renal function and keep cumulative dose and duration as low as possible; extended-interval (once-daily) dosing lowers nephrotoxicity but does not reliably prevent ototoxicity.",
+    "discriminator": "Bilateral high-frequency hearing loss with a normal head-impulse test and no oscillopsia identifies cochleotoxic amikacin, whereas oscillopsia with a bilaterally abnormal head-impulse test and intact hearing identifies vestibulotoxic gentamicin.",
+    "mnemonic": "Gentamicin and Streptomycin make you Stagger (vestibular); Amikacin, Kanamycin, and Neomycin make you Deaf (cochlear)."
   },
   {
     "id": "neuro-vertigo-hearing-cranial-nerves-3",
@@ -13615,30 +13644,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     "concept": "Peripheral vestibular nystagmus is unidirectional, horizontal-torsional, suppressed by visual fixation, and paired with an abnormal head-impulse test. Central nystagmus is vertical, purely torsional, or direction-changing with gaze, is not suppressed by fixation, and is accompanied by a normal head impulse or inability to stand. Any of these central features in acute vertigo mandates MRI-DWI for posterior circulation stroke.",
     "discriminator": "Nystagmus that reverses direction with gaze (or is vertical) plus a normal head-impulse test marks a central cause; vestibular neuritis never changes beat direction.",
     "mnemonic": "HINTS (Head Impulse, Nystagmus, Test of Skew): normal head impulse, direction-changing nystagmus, or skew deviation = central."
-  },
-  {
-    "id": "neuro-vertigo-hearing-cranial-nerves-12",
-    "system": "Vertigo, Hearing & Cranial Nerves",
-    "topic": "Central vertigo: MRI for stroke",
-    "stem": "A 71-year-old man with hypertension, diabetes, and atrial fibrillation has had 6 hours of severe vertigo, vomiting, and inability to stand without falling. He has nystagmus that beats to the right on rightward gaze and to the left on leftward gaze; the head impulse test is normal. Hearing is intact. Noncontrast head CT is unremarkable. Which of the following is the most appropriate next step?",
-    "options": [
-      "Oral meclizine and discharge with vestibular rehabilitation referral",
-      "Dix-Hallpike maneuver",
-      "Audiometry",
-      "Lumbar puncture",
-      "MRI of the brain with diffusion-weighted imaging"
-    ],
-    "answerIndex": 4,
-    "explanation": "Direction-changing (gaze-evoked) nystagmus, a normal head impulse test, and inability to stand in an elderly patient with vascular risk factors indicate a central cause (cerebellar/brainstem stroke); CT is insensitive for posterior fossa infarcts, so MRI with DWI is required.",
-    "optionRationales": [
-      "Treating as peripheral vertigo and discharging would miss a cerebellar infarct that can swell and cause fatal brainstem compression.",
-      "Dix-Hallpike diagnoses BPPV, which causes brief positional episodes, not hours of continuous vertigo with central nystagmus.",
-      "Audiometry is useful for Meniere disease or labyrinthitis, but hearing is normal and the concern here is stroke.",
-      "Lumbar puncture has no role; there is no fever, meningismus, or suspicion of infection or subarachnoid hemorrhage.",
-      "Correct: dangerous HINTS findings plus truncal ataxia in a high-risk patient warrant MRI/DWI because CT misses most acute posterior circulation strokes."
-    ],
-    "concept": "Central vertigo is suggested by direction-changing or purely vertical/torsional nystagmus, a normal head impulse test, skew deviation, inability to stand or walk, and accompanying brainstem signs (diplopia, dysarthria, dysphagia, crossed findings). Hearing loss favors a peripheral cause (the labyrinth), except in AICA-territory stroke. Elderly patients with vascular risk factors and any central feature need MRI with DWI, because CT misses the majority of acute cerebellar and brainstem infarcts.",
-    "discriminator": "Gaze-evoked direction-changing nystagmus with a normal head impulse test is central until proven otherwise; peripheral nystagmus is unidirectional regardless of gaze direction."
   },
   {
     "id": "neuro-vertigo-hearing-cranial-nerves-13",
@@ -14387,6 +14392,31 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Vertigo triggered by loud sound or Valsalva immediately after barotrauma points to a perilymphatic fistula; the same triggers in a chronic setting with autophony suggest superior canal dehiscence."
   },
   {
+    "id": "neuro-vertigo-hearing-cranial-nerves-58",
+    "system": "Vertigo, Hearing & Cranial Nerves",
+    "topic": "Persistent postural-perceptual dizziness",
+    "stem": "A 42-year-old woman reports 5 months of daily nonspinning dizziness and a swaying, unsteady feeling. It began during an episode of vestibular neuritis that resolved within 3 weeks, but the unsteadiness never went away. She feels worst when standing or walking, in supermarket aisles, and when scrolling on her phone, and she feels nearly normal when lying down. She has no headache, hearing loss, tinnitus, or focal weakness. Neurologic examination, head impulse testing, Dix-Hallpike testing, and audiometry are normal, and MRI of the brain obtained 2 months ago was unremarkable. Which of the following is the most appropriate management?",
+    "options": [
+      "Scheduled meclizine three times daily for long-term control",
+      "Vestibular rehabilitation combined with a selective serotonin reuptake inhibitor",
+      "Topiramate for migraine prophylaxis",
+      "Canalith repositioning (Epley) maneuver",
+      "Repeat MRI of the brain with diffusion-weighted imaging"
+    ],
+    "answerIndex": 1,
+    "explanation": "Months of daily nonspinning dizziness that began with an acute vestibular insult and is provoked by upright posture, self-motion, and complex visual stimuli, with a normal examination and normal testing, is persistent postural-perceptual dizziness; treatment is vestibular rehabilitation (habituation) plus a serotonin reuptake inhibitor, with cognitive behavioral therapy, and no further imaging.",
+    "optionRationales": [
+      "Chronic vestibular suppressants worsen this condition by blocking the sensory input needed for recompensation, and they cause sedation and falls; short courses are reserved for acute vertigo.",
+      "Correct: vestibular rehabilitation with habituation exercises plus an SSRI (or SNRI) is first-line for persistent postural-perceptual dizziness and reverses the maladaptive postural control and visual dependence that sustain symptoms.",
+      "Migraine prophylaxis is appropriate for vestibular migraine, which causes discrete episodes of vertigo lasting minutes to hours with migrainous features; she has continuous daily symptoms and no headache or migraine history.",
+      "Repositioning maneuvers treat posterior canal BPPV, which causes seconds-long vertigo on rolling over with a positive Dix-Hallpike; her Dix-Hallpike is normal and her dizziness is continuous.",
+      "The examination is normal, the syndrome is chronic rather than acute, and a prior MRI was normal; repeat imaging adds cost and reassurance that does not last, and DWI is for acute stroke, not months of positional-postural dizziness."
+    ],
+    "concept": "Persistent postural-perceptual dizziness (PPPD) is the leading cause of chronic dizziness in adults. Criteria: dizziness, unsteadiness, or nonspinning vertigo on most days for 3 months or longer; symptoms worsened by upright posture, active or passive motion, and exposure to moving or complex visual stimuli; and onset shortly after a precipitating event such as vestibular neuritis, BPPV, vestibular migraine, concussion, or a panic attack, which has since resolved. Examination and vestibular testing are normal or explained by the resolved trigger, so it is a positive clinical diagnosis rather than one of exclusion. Treatment is vestibular rehabilitation with habituation, an SSRI or SNRI, and cognitive behavioral therapy; vestibular suppressants and repeat imaging are counterproductive.",
+    "discriminator": "Daily nonspinning dizziness persisting for months after an acute vestibular insult has resolved, provoked by standing and by busy visual environments, with a normal examination, is PPPD and calls for rehabilitation and an SSRI rather than more imaging.",
+    "mnemonic": "PPPD is provoked by Posture, Passive/active motion, and Patterned (complex) visual stimuli"
+  },
+  {
     "id": "neuro-vertigo-hearing-cranial-nerves-44",
     "system": "Vertigo, Hearing & Cranial Nerves",
     "topic": "Phenytoin toxicity nystagmus",
@@ -14841,7 +14871,7 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Osmotic agents such as mannitol have no proven benefit here because the pressure comes from capsular polysaccharide obstructing CSF outflow rather than cytotoxic edema; removing CSF is what lowers it.",
       "Switching to fluconazole during induction weakens antifungal therapy and does not address pressure.",
       "Daily therapeutic LPs (removing CSF until pressure is under 20 cm H2O or halved) are the standard for opening pressure over 25 cm H2O; a lumbar drain or shunt is used if refractory.",
-      "Corticosteroids do not lower cryptococcal ICP and increased mortality in HIV-associated cryptococcal meningitis trials.",
+      "Corticosteroids do not lower cryptococcal ICP and in the CryptoDex trial caused more adverse events, slower fungal clearance and worse disability without any survival benefit.",
       "Acetazolamide has been associated with harm in cryptococcal meningitis and is not recommended."
     ],
     "concept": "Raised intracranial pressure is the major cause of early death in cryptococcal meningitis and results from yeast and capsular polysaccharide obstructing CSF outflow rather than from hydrocephalus. Management is serial therapeutic lumbar punctures, escalating to a lumbar drain or ventriculoperitoneal shunt if refractory; steroids, acetazolamide, and mannitol are not helpful. In HIV patients, ART is deferred several weeks after starting antifungals to reduce the risk of IRIS.",
@@ -15390,28 +15420,28 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Peripheral convexity subarachnoid blood in a bacteremic patient indicates a distal mycotic aneurysm, whereas basal-cistern blood indicates a proximal berry aneurysm."
   },
   {
-    "id": "neuro-cns-infections-29",
+    "id": "neuro-cns-infections-57",
     "system": "CNS Infections",
     "topic": "Naegleria route of entry",
-    "stem": "A 16-year-old boy develops severe headache, fever, vomiting, and altered smell 4 days after swimming and diving in a warm freshwater lake in Texas. Within 24 hours he becomes obtunded with nuchal rigidity. CSF is bloody with 2,000 cells/µL (mostly neutrophils), low glucose, and motile trophozoites on wet mount; Gram stain is negative. By which of the following routes did the organism most likely reach the brain?",
+    "stem": "A 16-year-old boy develops severe headache, fever, and vomiting 4 days after swimming and diving in a warm freshwater lake in Texas. Within 24 hours he becomes obtunded with nuchal rigidity. CSF is bloody with 2,000 cells/µL (mostly neutrophils), low glucose, and motile trophozoites on wet mount; Gram stain is negative. By which of the following routes did the organism most likely reach the brain?",
     "options": [
-      "Ingestion with penetration of the intestinal wall",
       "Hematogenous spread from a primary skin lesion",
       "Direct extension from the mastoid air cells",
       "Migration along the olfactory nerve through the cribriform plate",
+      "Ingestion with penetration of the intestinal wall",
       "Retrograde transport along the trigeminal nerve"
     ],
-    "answerIndex": 3,
+    "answerIndex": 2,
     "explanation": "Naegleria fowleri enters the nasal mucosa during freshwater exposure and migrates along the olfactory epithelium through the cribriform plate to cause a fulminant, hemorrhagic, neutrophilic primary amebic meningoencephalitis.",
     "optionRationales": [
-      "Ingestion is the route for Angiostrongylus (raw snails/slugs), which causes eosinophilic meningitis, not a fulminant neutrophilic picture.",
       "Hematogenous spread from skin or lungs is the route for Acanthamoeba, which causes a slow granulomatous encephalitis in immunocompromised hosts.",
       "Mastoid extension causes otogenic bacterial meningitis or brain abscess, which usually has a positive Gram stain and never shows motile trophozoites on wet mount.",
       "Correct: nasal instillation of warm freshwater (diving, nasal irrigation with tap water) lets the ameba ascend the olfactory nerve to the frontal lobes.",
+      "Ingestion is the route for Angiostrongylus (raw snails/slugs), which causes eosinophilic meningitis, not a fulminant neutrophilic picture.",
       "Trigeminal retrograde spread is not a recognized route for Naegleria."
     ],
     "concept": "Primary amebic meningoencephalitis from Naegleria fowleri follows warm freshwater exposure (lakes, hot springs, unchlorinated pools, neti pots with tap water) and progresses to death within about a week; CSF resembles bacterial meningitis (neutrophils, low glucose, often RBCs) but with a negative Gram stain and motile amebae on wet mount. Treatment is amphotericin B plus miltefosine and other agents, but mortality exceeds 95%. Contrast with Acanthamoeba (granulomatous amebic encephalitis in the immunocompromised, hematogenous spread, keratitis in contact lens users).",
-    "discriminator": "Freshwater diving plus early anosmia/altered smell and a Gram-negative purulent CSF with motile trophozoites is Naegleria, not bacterial meningitis."
+    "discriminator": "Warm-freshwater diving with a fulminant, Gram-stain-negative purulent CSF containing motile trophozoites is Naegleria, not bacterial meningitis; early anosmia, when present, reflects the olfactory-nerve route of entry."
   },
   {
     "id": "neuro-cns-infections-30",
@@ -16004,30 +16034,6 @@ export const NEURO_MCQS: McqQuestion[] = [
       "Antibiotics without hardware removal fail in most cases because organisms persist in catheter biofilm."
     ],
     "concept": "Infected CSF shunts are treated like any infected implanted device: remove all hardware, bridge with an external ventricular drain, give IV antibiotics (vancomycin empirically for staphylococci, plus gram-negative coverage such as cefepime or meropenem if suspected), and reimplant a new shunt after documented CSF sterility."
-  },
-  {
-    "id": "neuro-cns-infections-54",
-    "system": "CNS Infections",
-    "topic": "VP shunt infection organism",
-    "stem": "A 4-year-old boy with a ventriculoperitoneal shunt placed 6 weeks ago for congenital hydrocephalus develops low-grade fever, irritability, vomiting, and erythema along the shunt tubing over the neck. Which of the following organisms is the most likely cause?",
-    "options": [
-      "Staphylococcus epidermidis",
-      "Haemophilus influenzae type b",
-      "Listeria monocytogenes",
-      "Neisseria meningitidis",
-      "Streptococcus pneumoniae"
-    ],
-    "answerIndex": 0,
-    "explanation": "Most shunt infections occur within the first few months of placement and are caused by skin flora introduced at surgery, above all coagulase-negative staphylococci (S. epidermidis), which form biofilm on the catheter.",
-    "optionRationales": [
-      "Correct: coagulase-negative staphylococci are the most common cause of CSF shunt infection, followed by S. aureus, both from skin colonization of the hardware.",
-      "Hib meningitis occurs in unvaccinated young children and is not associated with shunts.",
-      "Listeria affects neonates, the elderly, pregnant women, and the immunocompromised via contaminated food; it is not a hardware infection.",
-      "Meningococcus causes community meningitis with petechiae in teenagers and young adults, not device-related infection.",
-      "Pneumococcus is the leading cause of community-acquired bacterial meningitis but rarely infects shunts, which are seeded by skin flora rather than hematogenously."
-    ],
-    "concept": "CSF shunt infections are device infections: organisms are skin commensals (coagulase-negative staphylococci most common, then S. aureus; Cutibacterium acnes and gram-negatives less often) that colonize the catheter at implantation and form biofilm. Presentation is often subtle (low-grade fever, shunt malfunction symptoms, erythema over the tract) rather than classic meningismus.",
-    "discriminator": "Infection of implanted CSF hardware is caused by skin flora such as S. epidermidis, whereas community meningitis is caused by encapsulated organisms."
   },
   {
     "id": "neuro-cns-infections-55",
@@ -16657,6 +16663,31 @@ export const NEURO_MCQS: McqQuestion[] = [
     "concept": "Standard glioblastoma treatment is maximal safe resection followed by radiation with concurrent and adjuvant temozolomide (Stupp protocol); median survival is still only about 15 months. Temozolomide is an oral alkylating agent that methylates DNA; the repair enzyme MGMT reverses this damage. When the MGMT promoter is methylated the enzyme is silenced, tumor cells cannot repair the lesions, and chemotherapy works better."
   },
   {
+    "id": "neuro-brain-tumors-neurocutaneous-syndromes-58",
+    "system": "Brain Tumors & Neurocutaneous Syndromes",
+    "topic": "MPNST diagnostic workup",
+    "stem": "A 32-year-old man with neurofibromatosis type 1 has had a plexiform neurofibroma along the left brachial plexus since childhood. Over 4 months it has become firm and has begun to ache at night, and he has new weakness of finger abduction. MRI shows the lesion has grown from 6 cm to 11 cm and is now heterogeneous, with an irregularly enhancing, necrotic-appearing area at its medial pole. Which of the following is the most appropriate next step in management?",
+    "options": [
+      "Begin external beam radiation to the brachial plexus",
+      "Whole-body FDG-PET/CT followed by biopsy of the most hypermetabolic focus",
+      "Excisional biopsy of the peripheral, soft portion of the mass",
+      "Repeat MRI in 6 months",
+      "Start selumetinib"
+    ],
+    "answerIndex": 1,
+    "explanation": "Plexiform neurofibromas that undergo malignant transformation contain malignant tissue interspersed with benign tumor, so a randomly placed biopsy is frequently falsely negative; FDG-PET/CT identifies the metabolically active focus (high SUV) and directs the biopsy needle to it, establishing the diagnosis of malignant peripheral nerve sheath tumor before any definitive therapy.",
+    "optionRationales": [
+      "Radiation is not given before a tissue diagnosis, and it is an adjunct to wide surgical resection rather than primary therapy.",
+      "Correct: FDG-PET/CT maps the hypermetabolic region within a large heterogeneous plexiform lesion and allows a targeted biopsy, which is the accepted way to confirm or exclude MPNST.",
+      "Sampling the soft periphery is exactly the error to avoid: benign-appearing tissue predominates there and yields a false-negative result while the malignant pole goes undiagnosed.",
+      "Rapid growth, new night pain, hardening and a new motor deficit are the red flags for malignant transformation; delaying 6 months allows a curable sarcoma to metastasize.",
+      "Selumetinib, a MEK inhibitor, is used for symptomatic inoperable benign plexiform neurofibromas; giving it without first excluding malignancy would leave an MPNST untreated."
+    ],
+    "concept": "About 8-13% of patients with NF1 develop a malignant peripheral nerve sheath tumor, almost always within a pre-existing plexiform neurofibroma. Red flags are rapid growth, new or persistent pain (especially at night), change from soft to firm, and a new neurologic deficit. Workup is contrast MRI plus FDG-PET/CT to find the hypermetabolic focus, then image-guided biopsy of that focus; confirmed MPNST is treated with wide local excision with negative margins plus radiation, and the prognosis is poor.",
+    "discriminator": "Because benign and malignant tissue coexist in a transforming plexiform neurofibroma, the biopsy must be aimed at the FDG-avid area; an untargeted or peripheral sample that returns 'neurofibroma' does not exclude MPNST.",
+    "mnemonic": "Plexiform red flags = PAIN GROWS: Pain (especially at night), Growth that is rapid, hardening, and a new neurologic deficit."
+  },
+  {
     "id": "neuro-brain-tumors-neurocutaneous-syndromes-25",
     "system": "Brain Tumors & Neurocutaneous Syndromes",
     "topic": "MPNST in NF1",
@@ -16679,30 +16710,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "The most serious complication of NF1 is malignant transformation of a plexiform neurofibroma into MPNST, a high-grade sarcoma. Any neurofibroma that enlarges rapidly, changes from soft to firm, causes persistent pain, or produces new neurologic deficit needs prompt FDG-PET/CT and biopsy; treatment is wide surgical excision.",
     "discriminator": "The change in an established plexiform neurofibroma (rapid growth, hardening, persistent pain, new deficit) is what distinguishes MPNST from ordinary neurofibroma growth."
-  },
-  {
-    "id": "neuro-brain-tumors-neurocutaneous-syndromes-26",
-    "system": "Brain Tumors & Neurocutaneous Syndromes",
-    "topic": "MPNST transformation",
-    "stem": "A 27-year-old woman with neurofibromatosis type 1 has had a large, soft, 'bag of worms' mass along the left sciatic nerve since childhood. Over 3 months it has doubled in size, become firm, and causes constant pain that wakes her at night; she has new foot drop. Which of the following is the most likely explanation?",
-    "options": [
-      "Malignant peripheral nerve sheath tumor",
-      "Lipoma adjacent to the nerve",
-      "Benign growth of the plexiform neurofibroma",
-      "Schwannoma arising in the neurofibroma",
-      "Intratumoral hemorrhage"
-    ],
-    "answerIndex": 0,
-    "explanation": "Rapid enlargement, new persistent pain, hardening and a new neurologic deficit in a long-standing plexiform neurofibroma signal malignant transformation to a malignant peripheral nerve sheath tumor, which occurs in about 10% of NF1 patients.",
-    "optionRationales": [
-      "Correct: plexiform neurofibromas carry a lifetime risk of transforming to MPNST; red flags are rapid growth, pain, firmness and new deficit, warranting urgent MRI/PET and biopsy.",
-      "A lipoma is soft, painless and would not cause foot drop.",
-      "Benign plexiform neurofibromas grow slowly and remain soft; abrupt change in growth and texture is not benign behavior.",
-      "Schwannomas are associated with NF2 and schwannomatosis and do not arise within neurofibromas.",
-      "Hemorrhage causes acute swelling and pain over hours to days, not progressive firm enlargement over months."
-    ],
-    "concept": "Plexiform neurofibromas (essentially pathognomonic for NF1) are diffuse nerve tumors involving multiple fascicles that usually cannot be completely excised. Unlike cutaneous neurofibromas, they can undergo malignant transformation to MPNST (about 8-13% lifetime risk in NF1). Any plexiform lesion with rapid growth, new or persistent pain, change from soft to hard, or new neurologic deficit needs imaging and biopsy; MPNST is treated with wide resection and has a poor prognosis.",
-    "discriminator": "A change in the behavior of a known plexiform neurofibroma (rapid growth, pain, firmness, deficit) rather than its mere presence is what signals malignant transformation."
   },
   {
     "id": "neuro-brain-tumors-neurocutaneous-syndromes-27",
@@ -16801,28 +16808,29 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "A juvenile posterior subcapsular cataract in a child with an NF2 parent is itself a manifestation of NF2, not an incidental finding, and triggers full tumor surveillance."
   },
   {
-    "id": "neuro-brain-tumors-neurocutaneous-syndromes-31",
+    "id": "neuro-brain-tumors-neurocutaneous-syndromes-59",
     "system": "Brain Tumors & Neurocutaneous Syndromes",
-    "topic": "NF2 merlin",
-    "stem": "A 22-year-old man has bilateral progressive hearing loss and tinnitus. MRI shows bilateral enhancing cerebellopontine angle masses extending into the internal auditory canals and a parasagittal dural-based mass. Slit-lamp examination shows bilateral posterior subcapsular cataracts. His father died of a brain tumor at 40. Loss of function of which of the following proteins is responsible for this condition?",
+    "topic": "NF2 vestibular schwannoma management",
+    "stem": "A 22-year-old man with neurofibromatosis type 2 has bilateral vestibular schwannomas that were followed for 2 years. Over the past 12 months both tumors have enlarged on serial MRI without brainstem compression, and audiometry shows that word recognition in his better (right) ear has fallen from 88% to 52%; he can no longer use the telephone. Facial strength and the corneal reflexes are normal. Which of the following is the most appropriate treatment?",
     "options": [
-      "VHL ubiquitin ligase",
-      "Neurofibromin",
-      "PTEN phosphatase",
-      "Merlin (schwannomin)",
-      "Hamartin"
+      "Continued observation with repeat MRI and audiometry in 12 months",
+      "Bilateral hearing aid fitting alone",
+      "Bevacizumab",
+      "Bilateral microsurgical resection of both tumors",
+      "Stereotactic radiosurgery to both tumors"
     ],
-    "answerIndex": 3,
-    "explanation": "Bilateral vestibular schwannomas with meningioma and juvenile cataracts define neurofibromatosis type 2, an autosomal dominant loss of the NF2 gene on chromosome 22 encoding the tumor suppressor merlin.",
+    "answerIndex": 2,
+    "explanation": "In NF2, growing bilateral vestibular schwannomas with declining but still serviceable hearing are treated medically: the anti-VEGF antibody bevacizumab shrinks these tumors and improves word recognition in a substantial fraction of patients, preserving hearing that bilateral surgery would destroy.",
     "optionRationales": [
-      "VHL loss causes hemangioblastomas, renal cell carcinoma and pheochromocytoma.",
-      "Neurofibromin (NF1, chromosome 17) loss causes cafe-au-lait spots, neurofibromas, Lisch nodules and optic gliomas, not bilateral acoustic tumors.",
-      "PTEN loss causes Cowden syndrome with Lhermitte-Duclos cerebellar dysplastic gangliocytoma.",
-      "Correct: NF2 (chromosome 22) encodes merlin, a cytoskeletal tumor suppressor; its loss causes bilateral vestibular schwannomas, meningiomas, ependymomas and posterior subcapsular cataracts.",
-      "Hamartin (TSC1) loss causes tuberous sclerosis with cortical tubers, subependymal giant cell astrocytomas and seizures."
+      "Observation is appropriate only while tumors and hearing are stable; documented growth with falling word recognition is the trigger to intervene.",
+      "Amplification cannot restore the speech discrimination lost from a retrocochlear lesion and does nothing about the enlarging tumors.",
+      "Correct: bevacizumab (anti-VEGF) produces radiographic tumor shrinkage and hearing improvement in roughly half of NF2 patients with progressive vestibular schwannomas, so it is the preferred treatment while hearing is still serviceable.",
+      "Removing both tumors reliably sacrifices the cochlear nerves and renders the patient deaf; surgery is reserved for large tumors compressing the brainstem or for an ear in which hearing is already lost.",
+      "Radiosurgery achieves lower tumor control and hearing preservation in NF2 than in sporadic schwannoma and risks additional malignancy in a tumor suppressor syndrome, so it is not first-line for bilateral progressive tumors with serviceable hearing."
     ],
-    "concept": "Bilateral vestibular schwannomas are essentially diagnostic of neurofibromatosis type 2 (autosomal dominant, NF2/merlin on chromosome 22), which also produces multiple meningiomas, spinal ependymomas and schwannomas, and juvenile posterior subcapsular cataracts. Unlike NF1, cutaneous findings are minimal. Screen at-risk relatives with MRI and audiometry; hearing preservation guides timing of surgery or radiosurgery.",
-    "discriminator": "Bilateral CN VIII tumors (rather than a single sporadic schwannoma) plus meningioma and juvenile cataract clinch NF2 over NF1, which is defined by cutaneous neurofibromas and optic gliomas."
+    "concept": "Neurofibromatosis type 2 (autosomal dominant, NF2/merlin on chromosome 22) causes bilateral vestibular schwannomas plus meningiomas, spinal ependymomas and juvenile posterior subcapsular cataracts. Management is organized around hearing preservation: serial MRI and audiometry while stable, bevacizumab for growing tumors with declining serviceable hearing, surgery for brainstem compression or an already deaf ear, and an auditory brainstem implant once both cochlear nerves are lost.",
+    "discriminator": "Documented tumor growth with falling word recognition in a still-serviceable ear is what selects systemic bevacizumab over bilateral surgery or radiosurgery, either of which would cost the patient the hearing that is being protected.",
+    "mnemonic": "NF2 = MISME: Multiple Inherited Schwannomas, Meningiomas and Ependymomas."
   },
   {
     "id": "neuro-brain-tumors-neurocutaneous-syndromes-32",
@@ -18214,6 +18222,36 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "Downward lens dislocation with thrombosis and intellectual disability clinches homocystinuria over Marfan syndrome."
   },
   {
+    "id": "neuro-pediatric-genetic-neurology-58",
+    "system": "Pediatric & Genetic Neurology",
+    "topic": "Hyperammonemic crisis management",
+    "stem": "A 10-month-old boy with mild developmental delay becomes lethargic and vomits repeatedly on day 2 of a febrile viral gastroenteritis. He is tachypneic and difficult to arouse. Labs: ammonia 410 µmol/L, glucose 82 mg/dL, pH 7.50, PCO2 26 mm Hg, bicarbonate 20 mEq/L, anion gap 12, urine ketones negative, urine orotic acid markedly elevated. Which is the most appropriate immediate management?",
+    "options": [
+      "Increase enteral protein to promote anabolism and reverse catabolic breakdown",
+      "Start oral lactulose and neomycin to lower ammonia",
+      "Give intravenous sodium bicarbonate to correct the acid-base disturbance",
+      "Give intramuscular hydroxocobalamin and restrict isoleucine and valine",
+      "Stop all protein intake, start intravenous 10% dextrose, and give intravenous sodium benzoate and sodium phenylacetate"
+    ],
+    "answerIndex": 4,
+    "explanation": "Hyperammonemia with respiratory alkalosis, a normal anion gap, normal glucose, and markedly elevated orotic acid identifies a urea cycle defect (OTC deficiency). Acute treatment is to remove the nitrogen load (no protein), reverse catabolism with a high-rate dextrose infusion, and give nitrogen-scavenging agents (sodium benzoate plus sodium phenylacetate) with intravenous arginine; hemodialysis is added if ammonia does not fall promptly or exceeds roughly 500 µmol/L.",
+    "optionRationales": [
+      "Protein must be withheld, not increased; more nitrogen worsens hyperammonemia. Small amounts of protein are reintroduced only after ammonia falls, within 24-48 hours, to prevent renewed catabolism.",
+      "Lactulose and neomycin target gut-bacteria-derived ammonia in hepatic encephalopathy; they do not clear the endogenous nitrogen load of a urea cycle defect and would delay scavenger therapy and dialysis.",
+      "The disturbance here is an ammonia-driven respiratory alkalosis, not acidosis; bicarbonate does not lower ammonia and further alkalinization favors the uncharged NH3 that crosses into the brain.",
+      "Hydroxocobalamin with isoleucine and valine restriction treats B12-responsive methylmalonic acidemia, an organic acidemia that causes high-anion-gap ketoacidosis rather than this normal-gap alkalotic picture with high orotic acid.",
+      "Correct: stopping protein removes exogenous nitrogen, IV dextrose (with insulin if needed) halts the catabolism driving the crisis, and benzoate/phenylacetate conjugate glycine and glutamine to excrete nitrogen by routes that bypass the blocked urea cycle."
+    ],
+    "concept": "An infant in hyperammonemic crisis is a metabolic emergency treated before the specific enzyme defect is known: stop all protein, run high-rate IV dextrose (± insulin) and lipids to shut off catabolism, and start nitrogen scavengers (sodium benzoate plus sodium phenylacetate) with IV arginine; hemodialysis clears ammonia fastest and is used for ammonia above roughly 500 µmol/L, coma, or failure to fall with scavengers. Protein is restarted in small amounts within 24-48 hours. The labs then name the defect: normal anion gap with respiratory alkalosis and high orotic acid = OTC deficiency; high-anion-gap acidosis with ketosis = organic acidemia; hypoketotic hypoglycemia = fatty acid oxidation defect.",
+    "conceptRule": [
+      "Ammonia high in an encephalopathic infant -> stop protein, IV dextrose to stop catabolism, call for scavengers immediately",
+      "Nitrogen scavengers = IV sodium benzoate + sodium phenylacetate, plus IV arginine",
+      "Ammonia >~500 µmol/L, coma, or no fall on scavengers -> hemodialysis",
+      "Restart low-dose protein within 24-48 hours once ammonia falls, or catabolism resumes"
+    ],
+    "discriminator": "Scavengers plus dextrose treat the endogenous nitrogen load of a urea cycle defect, whereas lactulose and neomycin only lower gut-derived ammonia in hepatic encephalopathy; dialysis, not bicarbonate, is the escalation when ammonia stays high."
+  },
+  {
     "id": "neuro-pediatric-genetic-neurology-32",
     "system": "Pediatric & Genetic Neurology",
     "topic": "Infant botulism treatment",
@@ -18429,10 +18467,10 @@ export const NEURO_MCQS: McqQuestion[] = [
       "ABCD1 dysfunction (X-linked adrenoleukodystrophy) impairs peroxisomal very-long-chain fatty acid breakdown and presents in school-age boys with behavioral and cognitive decline plus adrenal insufficiency, not toddler-onset spasticity with areflexia and markedly slowed conduction.",
       "Aspartoacylase deficiency (Canavan) causes macrocephaly with spongy white-matter degeneration in infancy, without prominent neuropathy.",
       "Hexosaminidase A deficiency (Tay-Sachs) is a gray-matter disease with cherry-red macula and exaggerated startle, not a leukodystrophy with neuropathy.",
-      "Galactocerebrosidase deficiency (Krabbe) also demyelinates peripheral nerves but classically presents at 3-6 months with extreme irritability, unexplained fevers, and opisthotonos, and spares white matter in the tigroid pattern seen here."
+      "Galactocerebrosidase deficiency (Krabbe) also demyelinates peripheral nerves but classically presents at 3-6 months with extreme irritability, unexplained fevers, and opisthotonos."
     ],
     "concept": "Leukodystrophies present as regression with upper motor neuron signs and symmetric white-matter disease on MRI. The clue that a leukodystrophy also involves peripheral nerves (absent reflexes, slowed conduction) points to metachromatic leukodystrophy or Krabbe; age and irritability separate the two.",
-    "discriminator": "Spasticity paired with absent reflexes and slowed nerve conduction in a toddler with regression is the signature of metachromatic leukodystrophy; the tigroid periventricular pattern and absence of early irritability argue against Krabbe."
+    "discriminator": "Spasticity paired with absent reflexes and slowed nerve conduction in a toddler with regression is the signature of metachromatic leukodystrophy; onset in a toddler rather than at 3-6 months, with no early irritability or unexplained fevers, argues against Krabbe."
   },
   {
     "id": "neuro-pediatric-genetic-neurology-41",
@@ -18751,30 +18789,6 @@ export const NEURO_MCQS: McqQuestion[] = [
     ],
     "concept": "Spina bifida occulta is usually asymptomatic but its cutaneous markers (sacral dimple above the gluteal cleft, hair tuft, hemangioma, lipoma) warrant spinal ultrasound in early infancy or MRI later. A tethered cord presents during growth spurts or after myelomeningocele repair with back pain, new bladder dysfunction, progressive foot deformity or scoliosis, and asymmetric leg findings; surgical release prevents further deficit.",
     "discriminator": "Progressive deficits during growth in a child with a lumbosacral cutaneous marker point to tethering rather than a primary neuropathy or myelopathy."
-  },
-  {
-    "id": "neuro-pediatric-genetic-neurology-54",
-    "system": "Pediatric & Genetic Neurology",
-    "topic": "Urea cycle defect decompensation",
-    "stem": "A 10-month-old boy with mild developmental delay becomes lethargic and vomits repeatedly on day 2 of a febrile viral gastroenteritis. He is tachypneic. Labs: ammonia 410 µmol/L, glucose 82 mg/dL, pH 7.50, PCO2 26 mm Hg, bicarbonate 20 mEq/L, anion gap 12, urine ketones negative, urine orotic acid markedly elevated. Which is the most likely underlying defect?",
-    "options": [
-      "Salicylate-induced mitochondrial injury",
-      "Propionyl-CoA carboxylase deficiency",
-      "Glucose-6-phosphatase deficiency",
-      "Medium-chain acyl-CoA dehydrogenase deficiency",
-      "Ornithine transcarbamylase deficiency"
-    ],
-    "answerIndex": 4,
-    "explanation": "Marked hyperammonemia with respiratory alkalosis, a normal anion gap, normal glucose, and elevated orotic acid during catabolic stress is the signature of a urea cycle defect, specifically OTC deficiency (X-linked, most common).",
-    "optionRationales": [
-      "Reye syndrome would need an aspirin exposure and shows hypoglycemia and elevated transaminases, without elevated orotic acid.",
-      "Propionic acidemia (an organic acidemia) produces hyperammonemia but with a high-anion-gap metabolic acidosis and ketosis, not alkalosis.",
-      "Glycogen storage disease type I causes fasting hypoglycemia with lactic acidosis, hyperuricemia, and hyperlipidemia, not hyperammonemia.",
-      "MCAD deficiency presents with hypoketotic hypoglycemia during fasting, with only mild ammonia elevation and normal orotic acid.",
-      "Correct: OTC deficiency causes isolated hyperammonemia (ammonia drives hyperventilation -> respiratory alkalosis) with carbamoyl phosphate shunted to orotic acid; illness-triggered protein catabolism unmasks partial deficiency."
-    ],
-    "concept": "Intercurrent illness (fever, fasting, vomiting) triggers protein and fat catabolism that unmasks partial inborn errors. Sort the encephalopathic infant by labs: hyperammonemia + respiratory alkalosis + normal gap = urea cycle defect; hyperammonemia + high-gap acidosis + ketosis = organic acidemia; hypoketotic hypoglycemia = fatty acid oxidation defect. Acute treatment stops protein intake, gives IV dextrose to halt catabolism, and uses ammonia scavengers or dialysis.",
-    "discriminator": "Respiratory alkalosis with a normal anion gap and elevated orotic acid separates OTC deficiency from organic acidemias, which also raise ammonia but cause anion-gap acidosis with ketosis."
   },
   {
     "id": "neuro-pediatric-genetic-neurology-55",
@@ -20138,33 +20152,33 @@ export const NEURO_MCQS: McqQuestion[] = [
     "discriminator": "A recent denervating or immobilizing condition (GBS, burns, spinal injury) is the flag that converts succinylcholine from routine to dangerous."
   },
   {
-    "id": "neuro-neuropharmacology-anesthesia-53",
+    "id": "neuro-neuropharmacology-anesthesia-59",
     "system": "Neuropharmacology & Anesthesia",
-    "topic": "TCA overdose treatment",
-    "stem": "A 24-year-old woman is brought to the emergency department 1 hour after ingesting a bottle of amitriptyline. She is obtunded, has dilated pupils, dry skin, and a generalized tonic-clonic seizure in the department. ECG shows sinus tachycardia with a QRS duration of 140 ms. Which of the following is the most appropriate next step?",
+    "topic": "TCA cardiotoxicity mechanism",
+    "stem": "A 24-year-old woman is brought to the emergency department 1 hour after ingesting a bottle of amitriptyline. She is obtunded with dilated pupils, dry flushed skin, and absent bowel sounds. Blood pressure is 86/54 mm Hg and pulse is 124/min. ECG shows sinus tachycardia with a QRS duration of 150 ms and a prominent terminal R wave in lead aVR. Which of the following actions of the drug best explains the widened QRS?",
     "options": [
-      "Intravenous procainamide",
-      "Intravenous physostigmine",
-      "Hemodialysis",
-      "Intravenous flumazenil",
-      "Intravenous sodium bicarbonate"
+      "Inhibition of norepinephrine and serotonin reuptake",
+      "Blockade of hERG potassium channels",
+      "Blockade of myocardial fast sodium channels",
+      "Blockade of peripheral alpha-1 adrenergic receptors",
+      "Antagonism of muscarinic acetylcholine receptors"
     ],
-    "answerIndex": 4,
-    "explanation": "TCA overdose causes coma, convulsions, and cardiotoxicity from fast sodium channel blockade; a QRS >100 ms is treated with IV sodium bicarbonate, which overcomes the sodium channel block and reduces free drug through alkalinization.",
+    "answerIndex": 2,
+    "explanation": "Tricyclics block voltage-gated (fast) sodium channels in myocardium and His-Purkinje tissue, slowing phase 0 depolarization. Conduction slows preferentially in the right bundle and the terminal QRS vector shifts rightward, producing a wide QRS with a terminal R wave in aVR. This is the lethal action of the drug: QRS widening predicts seizures and ventricular arrhythmia and is the indication for IV sodium bicarbonate, which supplies a sodium load and alkalinizes to overcome the channel block. The drug's other receptor effects explain the rest of the presentation but not the QRS.",
     "optionRationales": [
-      "Class IA antiarrhythmics worsen sodium channel blockade and are contraindicated.",
-      "Physostigmine can precipitate asystole and seizures in TCA overdose and is contraindicated.",
-      "TCAs are highly protein-bound with large volumes of distribution, so dialysis does not remove them.",
-      "Flumazenil reverses benzodiazepines and would lower the seizure threshold further in a co-ingestion; it has no role here.",
-      "Correct: sodium bicarbonate narrows the QRS and prevents ventricular arrhythmias in TCA poisoning."
+      "Inhibition of norepinephrine and serotonin reuptake is the therapeutic antidepressant and neuropathic-pain action and has no effect on cardiac conduction.",
+      "hERG potassium channel blockade delays repolarization and prolongs the QT interval (torsades risk); it does not slow phase 0 or widen the QRS.",
+      "Correct: fast sodium channel blockade slows phase 0 depolarization in the conduction system, widening the QRS and creating the rightward terminal vector seen as a terminal R wave in aVR.",
+      "Alpha-1 blockade explains this patient's vasodilatory hypotension; it lowers blood pressure without affecting depolarization or QRS duration.",
+      "Antimuscarinic blockade explains the dilated pupils, dry flushed skin, absent bowel sounds, and sinus tachycardia, but it does not alter ventricular conduction or QRS duration."
     ],
-    "concept": "TCA toxicity is the 'three Cs': coma, convulsions, cardiotoxicity, plus anticholinergic signs. The lethal mechanism is myocardial fast sodium channel blockade producing a wide QRS and ventricular arrhythmias. Treat with IV sodium bicarbonate; benzodiazepines for seizures; avoid class IA/IC antiarrhythmics and physostigmine.",
+    "concept": "Tricyclic overdose is the three Cs (coma, convulsions, cardiotoxicity) layered on an antimuscarinic toxidrome, and each feature maps to a different receptor: fast sodium channel blockade produces the wide QRS, terminal R wave in aVR, and ventricular arrhythmias; muscarinic blockade produces mydriasis, dry skin, ileus, and tachycardia; alpha-1 blockade produces hypotension; hERG blockade prolongs the QT; H1 blockade and central effects produce sedation and coma. Sodium channel blockade is the lethal one, and it is what IV sodium bicarbonate treats.",
     "conceptRule": [
-      "TCA overdose + QRS >100 ms or ventricular arrhythmia -> IV sodium bicarbonate boluses",
-      "TCA overdose + seizure -> IV benzodiazepine (avoid phenytoin)",
-      "TCA overdose + hypotension -> IV fluids, then norepinephrine"
+      "TCA overdose + QRS >100 ms or terminal R wave in aVR >3 mm -> sodium channel blockade is present; give IV sodium bicarbonate",
+      "QRS >100 ms predicts seizures; QRS >160 ms predicts ventricular arrhythmia",
+      "TCA overdose + hypotension (alpha-1 blockade) -> IV fluids, then norepinephrine"
     ],
-    "discriminator": "The widened QRS with anticholinergic toxidrome is the feature that separates TCA overdose from an isolated anticholinergic (diphenhydramine) ingestion."
+    "discriminator": "QRS duration, not the toxidrome, identifies sodium channel blockade: a pure antimuscarinic ingestion such as atropine or jimson weed produces identical pupils, dry skin, and tachycardia with a normal QRS and no terminal R wave in aVR."
   },
   {
     "id": "neuro-neuropharmacology-anesthesia-54",
