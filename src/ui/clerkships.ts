@@ -177,6 +177,21 @@ export const CLERKSHIPS: Clerkship[] = [
         grad: "var(--grad-sky)",
         blurb: "Localize the lesion with focused neurology exam sessions and high-yield neuro cases.",
       },
+      {
+        view: "neuromcq",
+        label: "Questions",
+        icon: "❓",
+        grad: "var(--grad-sky)",
+        blurb: "Neurology shelf MCQs from a high-yield review — localization, stroke, seizures, neuromuscular disease, infections, tumors and pharm — with instant feedback and explanations.",
+      },
+      {
+        view: "neurodrills",
+        label: "Drills",
+        icon: "🎯",
+        grad: "var(--grad-sky)",
+        blurb:
+          "Stroke syndromes, cord and nerve localization, dementia and movement, weakness, headache/vertigo/seizures, infections, bleeds and tumors, neuro pharm — learn each from its clues, then recall it.",
+      },
     ],
   },
 ];

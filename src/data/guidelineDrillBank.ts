@@ -13,6 +13,7 @@ import {
   FM_DOMAIN_EMOJI,
 } from "./fmGuidelineDrills";
 import { OB_DOMAINS, OB_GUIDELINE_DRILLS } from "./obGuidelineDrills";
+import { NEURO_DOMAINS, NEURO_GUIDELINE_DRILLS } from "./neuroGuidelineDrills";
 
 export interface GuidelineDrill {
   id: string;
@@ -87,7 +88,20 @@ export const OB_DRILL_BANK: DrillBank = {
   storageKey: "osce.obdrills.v1",
 };
 
-export const GUIDELINE_DRILL_BANKS: DrillBank[] = [FM_DRILL_BANK, OB_DRILL_BANK];
+export const NEURO_DRILL_BANK: DrillBank = {
+  id: "neuro",
+  title: "Neurology Drills",
+  blurb:
+    "Localize it, name the causes, match the drug — stroke syndromes, cord and nerve localization, dementia and movement, weakness, headache/vertigo/seizures, infections and toxins, bleeds and tumors, and neuro pharm. Learn each drill from its clues before you test yourself.",
+  icon: "🧠",
+  grad: "var(--grad-sky)",
+  clerkshipLabel: "Neurology",
+  domains: NEURO_DOMAINS,
+  drills: NEURO_GUIDELINE_DRILLS,
+  storageKey: "osce.neurodrills.v1",
+};
+
+export const GUIDELINE_DRILL_BANKS: DrillBank[] = [FM_DRILL_BANK, OB_DRILL_BANK, NEURO_DRILL_BANK];
 
 /** Single source of truth for export/import/reset (analytics ALL_KEYS). */
 export const DRILL_STORAGE_KEYS: string[] = GUIDELINE_DRILL_BANKS.map((b) => b.storageKey);

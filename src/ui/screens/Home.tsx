@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { manifest } from "../../data/loader";
-import { IM_BANK, FM_BANK, OB_BANK } from "../../data/mcqBank";
+import { IM_BANK, FM_BANK, OB_BANK, NEURO_BANK } from "../../data/mcqBank";
 import { loadAttempts } from "../../analytics/store";
 import { useAppStore } from "../store";
 import { CLERKSHIPS } from "../clerkships";
@@ -28,6 +28,7 @@ export function Home() {
     if (view === "mcq") return `${IM_BANK.total} questions`;
     if (view === "fmmcq") return `${FM_BANK.total} questions`;
     if (view === "obmcq") return `${OB_BANK.total} questions`;
+    if (view === "neuromcq") return `${NEURO_BANK.total} questions`;
     return undefined;
   };
 

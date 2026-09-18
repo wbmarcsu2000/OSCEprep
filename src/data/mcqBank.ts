@@ -89,7 +89,21 @@ export const OB_BANK: McqBank = {
 /** Every question bank, in display order. Single source of truth so any surface
  *  that must account for all banks (Analytics progress, export/import/reset)
  *  can't silently miss one when a new bank is added. */
-export const MCQ_BANKS: McqBank[] = [IM_BANK, FM_BANK, OB_BANK];
+export const NEURO_BANK: McqBank = {
+  id: "neuro",
+  title: "Question Bank",
+  eyebrow: "Neurology shelf",
+  blurb:
+    "Single-best-answer MCQs for the Neurology shelf — localization, stroke, seizures, neuromuscular disease, infections, tumors and neuro pharm, with instant feedback and explanations. Quick vignettes, redo the ones you miss.",
+  icon: "🧠",
+  grad: "var(--grad-sky)",
+  total: MCQ_BANK_META.neuro.total,
+  systems: MCQ_BANK_META.neuro.systems,
+  storageKey: "osce.neuromcq.v1",
+  load: () => import("./neuroMcq").then((m) => m.NEURO_MCQS),
+};
+
+export const MCQ_BANKS: McqBank[] = [IM_BANK, FM_BANK, OB_BANK, NEURO_BANK];
 
 /** localStorage keys for every bank's per-question progress. */
 export const MCQ_STORAGE_KEYS: string[] = MCQ_BANKS.map((b) => b.storageKey);

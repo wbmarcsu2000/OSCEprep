@@ -1,9 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { MCQ_BANK_META } from "../mcqBankMeta";
-import { MCQ_BANKS, IM_BANK, FM_BANK, OB_BANK } from "../mcqBank";
+import { MCQ_BANKS, IM_BANK, FM_BANK, OB_BANK, NEURO_BANK } from "../mcqBank";
 import { SHELF_MCQS, MCQ_SYSTEMS } from "../shelfMcq";
 import { FM_MCQS, FM_MCQ_SYSTEMS } from "../familyMedMcq";
 import { OB_MCQS, OB_MCQ_SYSTEMS } from "../obgynMcq";
+import { NEURO_MCQS, NEURO_MCQ_SYSTEMS } from "../neuroMcq";
 
 /**
  * mcqBankMeta.ts duplicates each bank's question count and system list so the
@@ -18,6 +19,7 @@ describe("MCQ bank metadata matches the real banks", () => {
     ["im", MCQ_BANK_META.im, SHELF_MCQS, MCQ_SYSTEMS],
     ["fm", MCQ_BANK_META.fm, FM_MCQS, FM_MCQ_SYSTEMS],
     ["ob", MCQ_BANK_META.ob, OB_MCQS, OB_MCQ_SYSTEMS],
+    ["neuro", MCQ_BANK_META.neuro, NEURO_MCQS, NEURO_MCQ_SYSTEMS],
   ])("%s: total and systems agree with the data", (_id, meta, questions, systems) => {
     expect(meta.total).toBe(questions.length);
     expect(meta.systems).toEqual(systems);
@@ -45,7 +47,7 @@ describe("MCQ bank metadata matches the real banks", () => {
   });
 
   it("keeps each bank's progress key distinct", () => {
-    const keys = [IM_BANK, FM_BANK, OB_BANK].map((b) => b.storageKey);
+    const keys = [IM_BANK, FM_BANK, OB_BANK, NEURO_BANK].map((b) => b.storageKey);
     expect(new Set(keys).size).toBe(keys.length);
   });
 });

@@ -1,7 +1,7 @@
 /**
  * Bank metadata that is known WITHOUT loading a bank's questions.
  *
- * The three question banks are 4.07 MB, 2.49 MB and 1.25 MB of generated
+ * The question banks are 4.07 MB, 2.49 MB and 1.25 MB of generated
  * source. They used to be statically imported by `mcqBank.ts`, which put all
  * ~3,500 questions in the entry chunk: an IM student downloaded the Family
  * Medicine and OB/GYN banks before the app painted. `mcqBank.ts` now loads each
@@ -23,7 +23,7 @@ export interface McqBankMeta {
   systems: string[];
 }
 
-export const MCQ_BANK_META: Record<"im" | "fm" | "ob", McqBankMeta> = {
+export const MCQ_BANK_META: Record<"im" | "fm" | "ob" | "neuro", McqBankMeta> = {
   im: {
     total: 1119,
     systems: [
@@ -85,6 +85,26 @@ export const MCQ_BANK_META: Record<"im" | "fm" | "ob", McqBankMeta> = {
       "Sexual Health & Assault",
       "Pharmacology",
       "Ethics & Social Sciences",
+    ],
+  },
+  neuro: {
+    total: 823,
+    systems: [
+      "Stroke & Cerebrovascular",
+      "Intracranial Hemorrhage, Trauma & ICP",
+      "Spinal Cord & Radiculopathy",
+      "Peripheral Nerve & Plexus",
+      "Neuromuscular Junction & Muscle",
+      "Neuropathy & Demyelinating Disease",
+      "Movement Disorders",
+      "Dementia, Delirium & Encephalopathy",
+      "Seizures & Epilepsy",
+      "Headache & Facial Pain",
+      "Vertigo, Hearing & Cranial Nerves",
+      "CNS Infections",
+      "Brain Tumors & Neurocutaneous Syndromes",
+      "Pediatric & Genetic Neurology",
+      "Neuropharmacology & Anesthesia",
     ],
   },
 };
